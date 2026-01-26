@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.scss';
+import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
 import styles from '@/styles/Layout.module.scss';
 
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
+        <Header />
         <div className={styles.container}>
           <Sidebar />
           <main className={styles.main}>
