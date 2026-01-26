@@ -1,4 +1,4 @@
-import { FeedbackItem, Task1State, Task2State } from "../types";
+import { FeedbackItem, Task1State, Task2State } from "@/types";
 
 export const countWords = (text: string) => {
   return text.trim().split(/\s+/).filter(w => w.length > 0).length;
@@ -19,7 +19,7 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
 
   // 2. Introduction check (Simple heuristic: check for line breaks early on or keywords)
   const lines = text.split('\n').filter(l => l.trim().length > 0);
-  const introProbablyExists = lines.length > 0 && lines[0].length > 20; 
+  const introProbablyExists = lines.length > 0 && lines[0].length > 20;
   feedback.push({
     id: 'intro-check',
     message: 'A primeira frase deve explicar quem é você e por que está escrevendo (Purpose).',
@@ -42,12 +42,12 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   const foundContractions = contractions.filter(c => lowerText.includes(c));
   const isFormal = state.formality === 'Formal';
   if (isFormal) {
-      feedback.push({
-        id: 'contractions-check',
-        message: 'Em emails formais, evite contrações (don\'t -> do not).',
-        severity: 'POLISH',
-        passed: foundContractions.length === 0
-      });
+    feedback.push({
+      id: 'contractions-check',
+      message: 'Em emails formais, evite contrações (don\'t -> do not).',
+      severity: 'POLISH',
+      passed: foundContractions.length === 0
+    });
   }
 
   // 5. Specific CTA
@@ -117,7 +117,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
     passed: lowerText.includes('example') || lowerText.includes('instance') || lowerText.includes('such as')
   });
 
-    // 6. Contractions
+  // 6. Contractions
   const contractions = ["don't", "can't", "i'm", "it's", "won't", "shouldn't"];
   const foundContractions = contractions.filter(c => lowerText.includes(c));
   feedback.push({
@@ -127,7 +127,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
     passed: foundContractions.length === 0
   });
 
-    // 7. Rhetorical questions
+  // 7. Rhetorical questions
   feedback.push({
     id: 'rhetorical-check',
     message: 'Evite começar parágrafos com perguntas retóricas (Ex: "Why is this good?").',

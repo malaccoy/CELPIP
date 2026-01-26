@@ -1,0 +1,654 @@
+// Dashboard Page
+.dashboardContainer {
+  > * + * {
+    margin-top: 2rem;
+  }
+}
+
+.dashboardHeader {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  
+  p {
+    color: #64748b;
+  }
+}
+
+.dashboardCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboardCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.taskCard {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border: 1px solid #e2e8f0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: border-color 150ms;
+  
+  &:hover {
+    border-color: #cbd5e1;
+  }
+  
+  &:hover .taskCardIcon {
+    transform: scale(1.1);
+  }
+}
+
+.taskCardIcon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: transform 150ms;
+}
+
+.taskCardIconBlue {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.taskCardIconPurple {
+  background-color: #faf5ff;
+  color: #9333ea;
+}
+
+.taskCardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.taskCardDescription {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.taskCardButton {
+  width: 100%;
+  justify-content: center;
+}
+
+// Session Stats Card
+.sessionStatsContainer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sessionStatsContainer {
+    width: 66.666667%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sessionStatsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .sessionStatsContent {
+    flex-direction: row;
+  }
+}
+
+.sessionStatsInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sessionStatsIcon {
+  padding: 0.75rem;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+}
+
+.sessionStatsLabel {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.sessionStatsValue {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.sessionStatsWords {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sessionStatsWords {
+    text-align: left;
+  }
+}
+
+.sessionStatsWordsLabel {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.sessionStatsWordsValue {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.sessionStatsDate {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sessionStatsDate {
+    text-align: right;
+  }
+}
+
+.sessionStatsDateValue {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.sessionStatsBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.sessionStatsBadgeIdeal {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.sessionStatsBadgeOutside {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.sessionStatsEmpty {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #94a3b8;
+  
+  p + p {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+}
+
+// Task Pages
+.taskContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskHeader {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskTitle {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  
+  p {
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.taskDeleteBtn {
+  color: #ef4444;
+  
+  &:hover {
+    color: #dc2626;
+    background-color: #fef2f2;
+  }
+}
+
+.taskGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  flex: 1;
+  min-height: 0;
+}
+
+@media (min-width: 1024px) {
+  .taskGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.taskColumn {
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  padding-bottom: 2.5rem;
+  
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.taskColumnFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+// Writing Card
+.writingCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.writingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.75rem;
+}
+
+.writingTitle {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.writingTextarea {
+  flex: 1;
+  width: 100%;
+  resize: none;
+  outline: none;
+  color: #1e293b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  padding: 0.5rem;
+  border: none;
+}
+
+.writingActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+// Form Elements
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formSelect {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.questionsContainer {
+  > * + * {
+    margin-top: 0.5rem;
+  }
+}
+
+.questionsLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+.questionInput {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.bodyStructure {
+  margin-bottom: 1rem;
+  
+  span {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.bodyStructureTags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bodyStructureTag {
+  padding: 0.25rem 0.5rem;
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+// Task 2 Specific
+.positionBox {
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.positionLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.positionButtons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.positionButton {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: background-color 150ms, color 150ms;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.positionButtonInactive {
+  background-color: white;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+.positionButtonActive {
+  background-color: #0f172a;
+  color: white;
+}
+
+.argumentsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.argumentsTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.argumentsActions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.argumentsButton {
+  padding: 0.25rem;
+  color: #475569;
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #f1f5f9;
+  }
+  
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+.argumentBlock {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+}
+
+.argumentNumber {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.conclusionNote {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #eff6ff;
+  color: #1e40af;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dbeafe;
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+// Library Page
+.libraryContainer {
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.libraryHeader {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  
+  p {
+    color: #64748b;
+  }
+}
+
+.libraryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .libraryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .libraryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sectionList {
+  > * + * {
+    margin-top: 0.5rem;
+  }
+}
+
+.sectionItem {
+  font-size: 0.875rem;
+  color: #475569;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+// Settings Page
+.settingsContainer {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.settingsTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.settingsSection {
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsRowContent {
+  h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #0f172a;
+  }
+  
+  p {
+    font-size: 0.75rem;
+    color: #64748b;
+  }
+}
+
+.settingsSelect {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.settingsDivider {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.5rem;
+}
+
+.settingsSlider {
+  width: 100%;
+  accent-color: #0f172a;
+}
+
+.settingsSliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.settingsModeButtons {
+  display: flex;
+  background-color: #f1f5f9;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.settingsModeButton {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.settingsModeButtonActive {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: #0f172a;
+}
+
+.settingsModeButtonInactive {
+  color: #94a3b8;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+.settingsDataSection {
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.settingsDataDescription {
+  font-size: 0.875rem;
+  color: #475569;
+}
