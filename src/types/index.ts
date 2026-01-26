@@ -7,7 +7,7 @@ export interface Task1State {
   recipient: string;
   formality: FormalLevel;
   questions: string[]; // 3-4 items
-  
+
   // Plan
   opening: string;
   whoAmI: string;
@@ -16,7 +16,7 @@ export interface Task1State {
   cta: string;
   pleaseLetMeKnow: string;
   signOff: string;
-  
+
   // Writing
   content: string;
 }
@@ -37,7 +37,7 @@ export interface Task2State {
   // Plan
   opinionLine: string;
   points: Task2Point[]; // 3 blocks
-  
+
   // Writing
   content: string;
 }
