@@ -33,33 +33,30 @@ const SidebarItem = ({ to, icon: Icon, label, isActive }: { to: string; icon: Re
 };
 
 export const Sidebar: React.FC = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const pathname = usePathname();
 
   React.useEffect(() => {
-    setIsMobileMenuOpen(false);
+    setIsSidebarOpen(false);
   }, [pathname]);
 
   return (
     <>
-      {/* Mobile Header */}
-      <div className={styles.mobileHeader}>
-        <h1 className={styles.mobileTitle}>CELPIP Coach</h1>
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className={styles.menuButton}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </button>
-      </div>
+      {/* Mobile Menu Toggle (shown in header area on mobile) */}
+      <button
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        className={styles.mobileMenuToggle}
+        aria-label={isSidebarOpen ? 'Fechar menu' : 'Abrir menu'}
+      >
+        {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
-      {/* Sidebar */}
+      {/* Sidebar - Optional on desktop, toggle on mobile */}
       <aside
-        className={`${styles.sidebar} ${isMobileMenuOpen ? styles.sidebarOpen : ''}`}
+        className={`${styles.sidebar} ${isSidebarOpen ? styles.sidebarOpen : ''}`}
       >
         <div className={styles.sidebarHeader}>
-          <h1 className={styles.sidebarTitle}>CELPIP Coach</h1>
-          <p className={styles.sidebarSubtitle}>Writing Mastery MVP</p>
+          <h2 className={styles.sidebarTitle}>Menu</h2>
         </div>
         <nav className={styles.nav}>
           {navItems.map((item) => (
@@ -75,10 +72,10 @@ export const Sidebar: React.FC = () => {
       </aside>
 
       {/* Overlay for mobile */}
-      {isMobileMenuOpen && (
+      {isSidebarOpen && (
         <div
           className={styles.overlay}
-          onClick={() => setIsMobileMenuOpen(false)}
+          onClick={() => setIsSidebarOpen(false)}
         />
       )}
     </>
