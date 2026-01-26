@@ -191,7 +191,7 @@ export default function Task2Page() {
               </div>
 
               <div className={styles.conclusionNote}>
-                <span>Conclusão Auto:</span> &quot;In conclusion... because [Point 1] and [Point 2].&quot;
+                <span>Conclusão Auto:</span> &ldquo;In conclusion... because [Point 1] and [Point 2].&rdquo;
               </div>
             </div>
           </Card>
