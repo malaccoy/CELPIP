@@ -107,40 +107,6 @@
   }
 }
 
-// Mobile Header
-.mobileHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #0f172a;
-  color: white;
-  z-index: 20;
-}
-
-@media (min-width: 768px) {
-  .mobileHeader {
-    display: none;
-  }
-}
-
-.mobileTitle {
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: -0.025em;
-}
-
-.menuButton {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 0.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 // Mobile Menu Toggle (inside header on mobile)
 .mobileMenuToggle {
   position: fixed;
