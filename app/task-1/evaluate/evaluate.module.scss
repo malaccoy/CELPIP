@@ -1,0 +1,367 @@
+// Task 1 Evaluation Page Styles
+
+// Grid Layout
+.evaluationGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  flex: 1;
+  min-height: 0;
+}
+
+@media (min-width: 1024px) {
+  .evaluationGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Input Section
+.inputSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.inputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.inputTitle {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.emailTextarea {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+  resize: none;
+  outline: none;
+  color: #1e293b;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  transition: border-color 150ms, box-shadow 150ms;
+
+  &:focus {
+    border-color: #64748b;
+    box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.15);
+  }
+
+  &::placeholder {
+    color: #94a3b8;
+  }
+}
+
+.inputActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.evaluateButton {
+  min-width: 160px;
+}
+
+// Results Section
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
+
+// Score Card
+.scoreCard {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: none;
+}
+
+.scoreContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.scoreMain {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.scoreValue {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+}
+
+.scoreMax {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-left: 0.25rem;
+}
+
+// Level Badge
+.levelBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.levelBadgeWeak {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.levelBadgeOk {
+  background-color: #fefce8;
+  color: #ca8a04;
+  border: 1px solid #fef08a;
+}
+
+.levelBadgeStrong {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+// Word Count Result
+.wordCountResult {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.wordCountLabel {
+  font-weight: 500;
+}
+
+.wordCountValue {
+  font-weight: 700;
+  color: white;
+}
+
+.wordCountRange {
+  font-size: 0.75rem;
+}
+
+// Feedback Cards
+.feedbackCard {
+  border-left: 4px solid #e2e8f0;
+}
+
+.feedbackHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.feedbackTitle {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  flex: 1;
+}
+
+.feedbackCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.feedbackList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li + li {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f8fafc;
+  }
+}
+
+.feedbackItemError,
+.feedbackItemWarning,
+.feedbackItemSuggestion {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.feedbackItemError {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.feedbackItemWarning {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fef3c7;
+}
+
+.feedbackItemSuggestion {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+}
+
+// Icons
+.errorIcon {
+  color: #dc2626;
+}
+
+.warningIcon {
+  color: #f59e0b;
+}
+
+.suggestionIcon {
+  color: #3b82f6;
+}
+
+// Success Card
+.successCard {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.successContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #166534;
+  font-weight: 500;
+}
+
+.successIcon {
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+// Empty State
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #fafafa;
+  border: 2px dashed #e2e8f0;
+}
+
+.emptyStateContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #334155;
+    margin: 1rem 0 0.5rem;
+  }
+
+  p {
+    color: #64748b;
+    font-size: 0.875rem;
+    max-width: 280px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.emptyStateIcon {
+  color: #cbd5e1;
+}
+
+// Mobile Adjustments
+@media (max-width: 767px) {
+  .evaluationGrid {
+    gap: 1rem;
+  }
+
+  .inputCard {
+    min-height: 300px;
+  }
+
+  .emailTextarea {
+    min-height: 200px;
+    font-size: 0.9375rem;
+  }
+
+  .scoreValue {
+    font-size: 3rem;
+  }
+
+  .scoreMax {
+    font-size: 1.25rem;
+  }
+
+  .levelBadge {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  .wordCountResult {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .feedbackHeader {
+    gap: 0.5rem;
+  }
+
+  .feedbackTitle {
+    font-size: 0.9375rem;
+  }
+
+  .emptyState {
+    min-height: 200px;
+  }
+}
