@@ -365,3 +365,75 @@
     min-height: 200px;
   }
 }
+
+// History Section
+.historyCard {
+  border-left: 4px solid #6366f1;
+}
+
+.historyHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.historyTitle {
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  flex: 1;
+}
+
+.historyIcon {
+  color: #6366f1;
+}
+
+.historyList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 150ms;
+  font-size: 0.875rem;
+
+  &:hover {
+    background-color: #f8fafc;
+  }
+
+  &:focus {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }
+
+  & + & {
+    margin-top: 0.5rem;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 0.75rem;
+  }
+}
+
+.historyDate {
+  color: #64748b;
+  min-width: 120px;
+}
+
+.historyScore {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.historyWordCount {
+  color: #94a3b8;
+  margin-left: auto;
+}
