@@ -33,6 +33,25 @@ const MAX_WORD_COUNT = 200;
 const MAX_SCORE = 12;
 const ERROR_PENALTY = 3;
 const WARNING_PENALTY = 1;
+const MIN_KEYWORD_LENGTH = 2;
+const MIN_CONNECTORS_FOR_POSITIVE = 2;
+const MAX_CONNECTORS_TO_DISPLAY = 3;
+
+// Common stop words to exclude from question keyword matching
+const STOP_WORDS = new Set([
+  'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+  'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+  'should', 'may', 'might', 'must', 'can', 'to', 'of', 'in', 'for',
+  'on', 'with', 'at', 'by', 'from', 'as', 'into', 'through', 'during',
+  'before', 'after', 'above', 'below', 'between', 'under', 'again',
+  'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why',
+  'how', 'all', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
+  'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very',
+  'just', 'and', 'but', 'if', 'or', 'because', 'until', 'while', 'what',
+  'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'it',
+  'its', 'your', 'you', 'they', 'them', 'their', 'we', 'us', 'our', 'i',
+  'me', 'my', 'he', 'him', 'his', 'she', 'her', '?'
+]);
 
 // Valid opening patterns (case-insensitive)
 const OPENING_PATTERNS = [
@@ -233,27 +252,11 @@ function checkQuestionCoverage(text: string, questions: string[]): { errors: str
   for (const question of validQuestions) {
     const lowerQuestion = question.toLowerCase().trim();
     
-    // Extract key words from the question (excluding common stop words)
-    const stopWords = new Set([
-      'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
-      'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
-      'should', 'may', 'might', 'must', 'can', 'to', 'of', 'in', 'for',
-      'on', 'with', 'at', 'by', 'from', 'as', 'into', 'through', 'during',
-      'before', 'after', 'above', 'below', 'between', 'under', 'again',
-      'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why',
-      'how', 'all', 'each', 'few', 'more', 'most', 'other', 'some', 'such',
-      'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very',
-      'just', 'and', 'but', 'if', 'or', 'because', 'until', 'while', 'what',
-      'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'it',
-      'its', 'your', 'you', 'they', 'them', 'their', 'we', 'us', 'our', 'i',
-      'me', 'my', 'he', 'him', 'his', 'she', 'her', '?'
-    ]);
-
-    // Extract meaningful keywords from the question
+    // Extract meaningful keywords from the question (excluding stop words)
     const keywords = lowerQuestion
       .replace(/[?.,!;:'"]/g, ' ')
       .split(/\s+/)
-      .filter(word => word.length > 2 && !stopWords.has(word));
+      .filter(word => word.length > MIN_KEYWORD_LENGTH && !STOP_WORDS.has(word));
 
     // Check if at least one keyword from the question appears in the text
     const isAddressed = keywords.some(keyword => lowerText.includes(keyword));
@@ -286,9 +289,9 @@ function checkConnectors(text: string): { suggestions: string[] } {
       'Consider adding "Firstly,", "Secondly,", "Moreover,", "Additionally,", or "Finally," ' +
       'to organize your points clearly.'
     );
-  } else if (connectorCount >= 2) {
+  } else if (connectorCount >= MIN_CONNECTORS_FOR_POSITIVE) {
     suggestions.push(
-      `Good use of connectors (${foundConnectors.slice(0, 3).join(', ')}). ` +
+      `Good use of connectors (${foundConnectors.slice(0, MAX_CONNECTORS_TO_DISPLAY).join(', ')}). ` +
       'This helps structure your email clearly.'
     );
   }
