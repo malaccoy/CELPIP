@@ -123,6 +123,65 @@ const CTA_KEYWORDS = [
   'awaiting your',
 ];
 
+// Common contractions with their full forms for formal writing warnings
+// Key: contraction pattern (lowercase), Value: suggested full form
+const CONTRACTIONS_MAP: Record<string, string> = {
+  "don't": "do not",
+  "can't": "cannot",
+  "won't": "will not",
+  "i'm": "I am",
+  "it's": "it is",
+  "you're": "you are",
+  "we've": "we have",
+  "they've": "they have",
+  "i'd": "I would",
+  "we'll": "we will",
+  "isn't": "is not",
+  "aren't": "are not",
+  "didn't": "did not",
+  "doesn't": "does not",
+  "couldn't": "could not",
+  "shouldn't": "should not",
+  "would've": "would have",
+  "could've": "could have",
+  "should've": "should have",
+  "must've": "must have",
+  "might've": "might have",
+  "i've": "I have",
+  "you've": "you have",
+  "he's": "he is",
+  "she's": "she is",
+  "that's": "that is",
+  "there's": "there is",
+  "here's": "here is",
+  "what's": "what is",
+  "who's": "who is",
+  "let's": "let us",
+  "wasn't": "was not",
+  "weren't": "were not",
+  "haven't": "have not",
+  "hasn't": "has not",
+  "hadn't": "had not",
+  "wouldn't": "would not",
+  "you'd": "you would",
+  "he'd": "he would",
+  "she'd": "she would",
+  "we'd": "we would",
+  "they'd": "they would",
+  "i'll": "I will",
+  "you'll": "you will",
+  "he'll": "he will",
+  "she'll": "she will",
+  "they'll": "they will",
+  "we're": "we are",
+  "they're": "they are",
+};
+
+// Regex pattern to match contractions with word boundaries
+// Uses word boundary \b to avoid matching partial words
+// The pattern matches common contraction forms like: word'not, word're, word've, etc.
+const CONTRACTION_REGEX = /\b(don't|can't|won't|i'm|it's|you're|we've|they've|i'd|we'll|isn't|aren't|didn't|doesn't|couldn't|shouldn't|would've|could've|should've|must've|might've|i've|you've|he's|she's|that's|there's|here's|what's|who's|let's|wasn't|weren't|haven't|hasn't|hadn't|wouldn't|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|they'll|we're|they're)\b/gi;
+
 // ============================================================
 // Helper Functions
 // ============================================================
@@ -530,6 +589,36 @@ function checkCTA(text: string): { suggestions: string[] } {
   return { suggestions };
 }
 
+/**
+ * Rule 8: Contraction Detection
+ * Detect contractions in formal email writing and warn the user.
+ * Returns a warning with deduplicated contractions and suggests full forms.
+ */
+function checkContractions(text: string): { warnings: string[] } {
+  const warnings: string[] = [];
+  
+  // Find all contractions using regex with word boundaries
+  const matches = text.match(CONTRACTION_REGEX);
+  
+  if (matches && matches.length > 0) {
+    // Deduplicate and normalize to lowercase for consistent display
+    const uniqueContractions = [...new Set(matches.map(m => m.toLowerCase()))];
+    
+    // Build examples of full forms for up to 3 contractions
+    const examples = uniqueContractions
+      .slice(0, 3)
+      .map(c => `${c} → ${CONTRACTIONS_MAP[c] || 'full form'}`)
+      .join(', ');
+    
+    warnings.push(
+      `Contractions detected: ${uniqueContractions.join(', ')}. ` +
+      `In formal writing, use the full form instead (e.g., ${examples}).`
+    );
+  }
+
+  return { warnings };
+}
+
 // ============================================================
 // Main Evaluation Function
 // ============================================================
@@ -592,6 +681,10 @@ export function evaluateTask1Email(
   // Rule 7: CTA / Request
   const ctaResult = checkCTA(text);
   suggestions.push(...ctaResult.suggestions);
+
+  // Rule 8: Contraction Detection
+  const contractionResult = checkContractions(text);
+  warnings.push(...contractionResult.warnings);
 
   // Calculate score
   // Start from 12, subtract 3 for each error, 1 for each warning
