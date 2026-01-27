@@ -60,12 +60,18 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     const results = generateTask1Feedback(state);
     setFeedback(results);
 
-    // Save minimal stats
-    localStorage.setItem('celpip_last_session', JSON.stringify({
-      lastWordCount: wordCount,
-      lastTask: 'TASK_1',
-      date: new Date().toISOString()
-    }));
+    // Save minimal stats (guard for SSR safety)
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('celpip_last_session', JSON.stringify({
+          lastWordCount: wordCount,
+          lastTask: 'TASK_1',
+          date: new Date().toISOString()
+        }));
+      } catch {
+        // Silently fail if localStorage is not available
+      }
+    }
   };
 
   const handleClear = () => {
