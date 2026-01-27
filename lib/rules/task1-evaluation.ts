@@ -22,6 +22,12 @@ export interface Task1EvaluationResult {
 
 export interface Task1EvaluationOptions {
   questions?: string[];  // Questions from the prompt that must be addressed
+  promptText?: string;   // Raw CELPIP prompt text to parse for bullets
+}
+
+export interface ParsedPrompt {
+  bullets: string[];
+  audienceHint?: string;
 }
 
 // ============================================================
@@ -152,6 +158,188 @@ function getLevel(score: number): EvaluationLevel {
   return 'strong';
 }
 
+/**
+ * Clean a bullet string by removing leading markers, extra whitespace, etc.
+ */
+function cleanBulletText(text: string): string {
+  return text
+    // Remove leading bullet markers
+    .replace(/^[-•●○▪▸►]\s*/, '')
+    // Remove leading numbered markers like "1)", "2.", "1:", etc.
+    .replace(/^\d+[.):\-]\s*/, '')
+    // Trim whitespace
+    .trim();
+}
+
+/**
+ * Patterns to detect audience hints in prompt text
+ */
+const AUDIENCE_PATTERNS = [
+  /write\s+(?:an?\s+)?(?:email|letter)\s+to\s+(?:your\s+)?([^.]+?)(?:\.|,|to\s+(?:explain|request|complain|inform|ask))/i,
+  /(?:address(?:ed)?\s+to|recipient[:\s]+)(?:your\s+)?([^.]+?)(?:\.|$)/i,
+  /(?:you are writing to|writing to)\s+(?:your\s+)?([^.]+?)(?:\.|,)/i,
+];
+
+/**
+ * Phrases that indicate following content describes what to include
+ */
+const INSTRUCTION_PHRASES = [
+  'in your email, you should:',
+  'in your email you should:',
+  'in your email, you should',
+  'in your email you should',
+  'your email should:',
+  'your email should',
+  'make sure to:',
+  'make sure to',
+  'be sure to:',
+  'be sure to',
+  'include:',
+  'you should:',
+  'you should',
+  'you need to:',
+  'you need to',
+];
+
+/**
+ * Parse a CELPIP Task 1 prompt and extract bullet points and audience hint.
+ * 
+ * @param promptText - Raw CELPIP prompt text
+ * @returns Parsed bullets and optional audience hint
+ */
+export function parseTask1Prompt(promptText: string): ParsedPrompt {
+  const bullets: string[] = [];
+  let audienceHint: string | undefined;
+
+  // Try to extract audience hint
+  for (const pattern of AUDIENCE_PATTERNS) {
+    const match = promptText.match(pattern);
+    if (match && match[1]) {
+      audienceHint = match[1].trim();
+      break;
+    }
+  }
+
+  // Split into lines for processing
+  const lines = promptText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+
+  // Strategy 1: Look for explicit bullet markers (-, •, or numbered 1), 2), 3))
+  const bulletLinePattern = /^(?:[-•●○▪▸►]|\d+[.):\-])\s*.+/;
+  const bulletLines = lines.filter(line => bulletLinePattern.test(line));
+
+  if (bulletLines.length >= 2) {
+    // Found explicit bullets
+    for (const line of bulletLines) {
+      const cleaned = cleanBulletText(line);
+      if (cleaned.length > 0) {
+        bullets.push(cleaned);
+      }
+    }
+    return { bullets, audienceHint };
+  }
+
+  // Strategy 2: Look for content after instruction phrases
+  const lowerPrompt = promptText.toLowerCase();
+  let instructionIndex = -1;
+  let matchedPhrase = '';
+
+  for (const phrase of INSTRUCTION_PHRASES) {
+    const idx = lowerPrompt.indexOf(phrase);
+    if (idx !== -1) {
+      instructionIndex = idx;
+      matchedPhrase = phrase;
+      break;
+    }
+  }
+
+  if (instructionIndex !== -1) {
+    // Extract text after the instruction phrase
+    const afterInstruction = promptText.substring(instructionIndex + matchedPhrase.length).trim();
+    
+    // Try to split by common delimiters or sentence patterns
+    // Look for patterns like "explain X, describe Y, and suggest Z"
+    const itemPatterns = afterInstruction.split(/[,;]\s*(?:and\s+)?|\band\s+/i)
+      .map(s => s.trim())
+      .filter(s => s.length > 5); // Filter out very short fragments
+
+    if (itemPatterns.length >= 2) {
+      for (const item of itemPatterns.slice(0, 4)) { // Limit to 4 items
+        // Clean the item: remove trailing punctuation
+        const cleaned = item.replace(/[.!]+$/, '').trim();
+        if (cleaned.length > 0) {
+          bullets.push(cleaned);
+        }
+      }
+      return { bullets, audienceHint };
+    }
+
+    // Fallback: try to split by period-separated sentences
+    const sentences = afterInstruction.split(/\.\s+/)
+      .map(s => s.trim().replace(/\.$/, ''))
+      .filter(s => s.length > 10 && /^[a-z]/i.test(s)); // Must start with letter and have reasonable length
+
+    if (sentences.length >= 2) {
+      for (const sentence of sentences.slice(0, 4)) {
+        bullets.push(sentence);
+      }
+      return { bullets, audienceHint };
+    }
+  }
+
+  // Strategy 3: If all else fails, return empty bullets
+  return { bullets, audienceHint };
+}
+
+/**
+ * Extract 2-5 meaningful keywords from a bullet/sentence using simple regex/token rules.
+ * Keywords are nouns and verbs (approximated by word characteristics).
+ * 
+ * @param text - The bullet text to extract keywords from
+ * @returns Array of 2-5 keywords
+ */
+function extractKeywords(text: string): string[] {
+  // Remove punctuation and convert to lowercase
+  const cleanedText = text.toLowerCase().replace(/[?.,!;:'"()[\]{}]/g, ' ');
+  
+  // Split into words
+  const words = cleanedText.split(/\s+/).filter(w => w.length > 0);
+  
+  // Filter for meaningful keywords (not stop words, sufficient length)
+  const candidates = words.filter(word => {
+    // Must be longer than MIN_KEYWORD_LENGTH characters
+    if (word.length <= MIN_KEYWORD_LENGTH) return false;
+    // Must not be a stop word
+    if (STOP_WORDS.has(word)) return false;
+    // Must start with a letter
+    if (!/^[a-z]/i.test(word)) return false;
+    return true;
+  });
+
+  // Remove duplicates while preserving order
+  const unique = [...new Set(candidates)];
+
+  // Return 2-5 keywords (prioritize first occurrences as they're often most important)
+  return unique.slice(0, 5);
+}
+
+/**
+ * Check if a bullet point is covered in the email text by keyword matching.
+ * A bullet is considered "covered" if at least one of its keywords appears in the email.
+ * 
+ * @param bullet - The bullet text
+ * @param emailText - The email body text
+ * @returns true if at least one keyword is found
+ */
+function isBulletCovered(bullet: string, emailText: string): boolean {
+  const keywords = extractKeywords(bullet);
+  if (keywords.length === 0) return true; // No keywords = can't evaluate = assume covered
+  
+  const lowerEmail = emailText.toLowerCase();
+  
+  // Check if at least one keyword appears in the email
+  return keywords.some(keyword => lowerEmail.includes(keyword));
+}
+
 // ============================================================
 // Rule Implementations
 // ============================================================
@@ -273,6 +461,28 @@ function checkQuestionCoverage(text: string, questions: string[]): { errors: str
 }
 
 /**
+ * Rule 5b: Bullet Coverage (for parsed prompts)
+ * Each bullet from the parsed prompt must be addressed using keyword matching
+ */
+function checkBulletCoverage(text: string, bullets: string[]): { errors: string[] } {
+  const errors: string[] = [];
+
+  // Filter out empty bullets
+  const validBullets = bullets.filter(b => b && b.trim().length > 0);
+
+  for (const bullet of validBullets) {
+    if (!isBulletCovered(bullet, text)) {
+      errors.push(
+        `Bullet point not addressed: "${bullet}". ` +
+        `Make sure to cover this point in your email.`
+      );
+    }
+  }
+
+  return { errors };
+}
+
+/**
  * Rule 6: Connectors (Quality Boost)
  * Count usage of connectors like "Firstly", "Secondly", etc.
  */
@@ -328,14 +538,14 @@ function checkCTA(text: string): { suggestions: string[] } {
  * Evaluate Task 1 (Email Writing) text using deterministic rules.
  * 
  * @param text - The email text to evaluate
- * @param options - Optional configuration including questions from the prompt
+ * @param options - Optional configuration including questions or promptText
  * @returns Structured evaluation result with score, level, and feedback
  */
 export function evaluateTask1Email(
   text: string,
   options: Task1EvaluationOptions = {}
 ): Task1EvaluationResult {
-  const { questions = [] } = options;
+  const { questions = [], promptText } = options;
   
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -361,9 +571,19 @@ export function evaluateTask1Email(
   const purposeResult = checkPurposeClarity(text);
   warnings.push(...purposeResult.warnings);
 
-  // Rule 5: Question Coverage
-  const questionResult = checkQuestionCoverage(text, questions);
-  errors.push(...questionResult.errors);
+  // Rule 5: Question/Bullet Coverage
+  // If promptText is provided, parse it and check bullet coverage
+  // Otherwise, use the questions array for backward compatibility
+  if (promptText) {
+    const parsedPrompt = parseTask1Prompt(promptText);
+    if (parsedPrompt.bullets.length > 0) {
+      const bulletResult = checkBulletCoverage(text, parsedPrompt.bullets);
+      errors.push(...bulletResult.errors);
+    }
+  } else if (questions.length > 0) {
+    const questionResult = checkQuestionCoverage(text, questions);
+    errors.push(...questionResult.errors);
+  }
 
   // Rule 6: Connectors
   const connectorResult = checkConnectors(text);
