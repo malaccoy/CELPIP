@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useMemo } from 'react';
 import { Card, Button, WordCounter } from '@/components/Common';
-import { evaluateTask1Email, Task1EvaluationResult, EvaluationLevel } from '@lib/rules/task1-evaluation';
-import { Send, AlertCircle, AlertTriangle, Lightbulb, CheckCircle, History } from 'lucide-react';
+import { evaluateTask1Email, parseTask1Prompt, Task1EvaluationResult, EvaluationLevel } from '@lib/rules/task1-evaluation';
+import { Send, AlertCircle, AlertTriangle, Lightbulb, CheckCircle, History, ClipboardList } from 'lucide-react';
 import styles from '@/styles/Pages.module.scss';
 import evaluationStyles from './evaluate.module.scss';
 import { Task1HistoryEntry } from '@/types';
@@ -11,10 +11,17 @@ import { loadTask1History, saveTask1HistoryEntry, generateHistoryId } from '@/ut
 
 export default function Task1EvaluationPage() {
   const [emailText, setEmailText] = useState('');
+  const [promptText, setPromptText] = useState('');
   const [result, setResult] = useState<Task1EvaluationResult | null>(null);
   const [history, setHistory] = useState<Task1HistoryEntry[]>([]);
 
   const wordCount = emailText.trim().split(/\s+/).filter(w => w.length > 0).length;
+
+  // Parse the prompt to show detected requirements in real-time
+  const parsedPrompt = useMemo(() => {
+    if (!promptText.trim()) return null;
+    return parseTask1Prompt(promptText);
+  }, [promptText]);
 
   // Load history on mount
   useEffect(() => {
@@ -24,7 +31,10 @@ export default function Task1EvaluationPage() {
   const handleEvaluate = useCallback(() => {
     if (emailText.trim().length === 0) return;
     
-    const evaluationResult = evaluateTask1Email(emailText);
+    // Pass promptText to the evaluation function
+    const evaluationResult = evaluateTask1Email(emailText, {
+      promptText: promptText.trim() || undefined,
+    });
     setResult(evaluationResult);
 
     // Save to history
@@ -42,16 +52,18 @@ export default function Task1EvaluationPage() {
     saveTask1HistoryEntry(historyEntry);
     // Update state directly instead of reloading from localStorage
     setHistory(prev => [historyEntry, ...prev].slice(0, 30));
-  }, [emailText]);
+  }, [emailText, promptText]);
 
   const handleHistoryItemClick = useCallback((entry: Task1HistoryEntry) => {
     if (entry.emailText) {
       setEmailText(entry.emailText);
-      // Re-evaluate to restore the result
-      const evaluationResult = evaluateTask1Email(entry.emailText);
+      // Re-evaluate to restore the result (without promptText from history)
+      const evaluationResult = evaluateTask1Email(entry.emailText, {
+        promptText: promptText.trim() || undefined,
+      });
       setResult(evaluationResult);
     }
-  }, []);
+  }, [promptText]);
 
   const formatDate = (dateISO: string): string => {
     const date = new Date(dateISO);
@@ -101,6 +113,42 @@ export default function Task1EvaluationPage() {
       <div className={evaluationStyles.evaluationGrid}>
         {/* Email Input Section */}
         <div className={evaluationStyles.inputSection}>
+          {/* Prompt Text Card */}
+          <Card className={evaluationStyles.promptCard}>
+            <div className={evaluationStyles.inputHeader}>
+              <h3 className={evaluationStyles.inputTitle}>Task Prompt (optional)</h3>
+            </div>
+            <textarea
+              className={evaluationStyles.promptTextarea}
+              placeholder="Paste the CELPIP task prompt here to check if you addressed all requirements..."
+              value={promptText}
+              onChange={e => setPromptText(e.target.value)}
+              aria-label="Task prompt input"
+            />
+            {/* Detected Requirements */}
+            {parsedPrompt && parsedPrompt.bullets.length > 0 && (
+              <div className={evaluationStyles.detectedRequirements}>
+                <div className={evaluationStyles.detectedHeader}>
+                  <ClipboardList size={16} className={evaluationStyles.detectedIcon} />
+                  <span className={evaluationStyles.detectedTitle}>Detected Requirements</span>
+                  {parsedPrompt.audienceHint && (
+                    <span className={evaluationStyles.audienceHint}>
+                      Audience: {parsedPrompt.audienceHint}
+                    </span>
+                  )}
+                </div>
+                <ul className={evaluationStyles.detectedList}>
+                  {parsedPrompt.bullets.map((bullet, index) => (
+                    <li key={index} className={evaluationStyles.detectedItem}>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </Card>
+
+          {/* Email Text Card */}
           <Card className={evaluationStyles.inputCard}>
             <div className={evaluationStyles.inputHeader}>
               <h3 className={evaluationStyles.inputTitle}>Your Email</h3>
