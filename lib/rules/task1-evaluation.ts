@@ -306,7 +306,7 @@ function extractKeywords(text: string): string[] {
   
   // Filter for meaningful keywords (not stop words, sufficient length)
   const candidates = words.filter(word => {
-    // Must be longer than 2 characters
+    // Must be longer than MIN_KEYWORD_LENGTH characters
     if (word.length <= MIN_KEYWORD_LENGTH) return false;
     // Must not be a stop word
     if (STOP_WORDS.has(word)) return false;
