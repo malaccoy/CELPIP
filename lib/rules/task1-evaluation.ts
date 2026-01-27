@@ -134,7 +134,7 @@ const CONTRACTIONS_MAP: Record<string, string> = {
   "you're": "you are",
   "we've": "we have",
   "they've": "they have",
-  "i'd": "I would",
+  "i'd": "I would/had",
   "we'll": "we will",
   "isn't": "is not",
   "aren't": "are not",
@@ -149,13 +149,13 @@ const CONTRACTIONS_MAP: Record<string, string> = {
   "might've": "might have",
   "i've": "I have",
   "you've": "you have",
-  "he's": "he is",
-  "she's": "she is",
+  "he's": "he is/has",
+  "she's": "she is/has",
   "that's": "that is",
   "there's": "there is",
   "here's": "here is",
   "what's": "what is",
-  "who's": "who is",
+  "who's": "who is/has",
   "let's": "let us",
   "wasn't": "was not",
   "weren't": "were not",
@@ -163,11 +163,11 @@ const CONTRACTIONS_MAP: Record<string, string> = {
   "hasn't": "has not",
   "hadn't": "had not",
   "wouldn't": "would not",
-  "you'd": "you would",
-  "he'd": "he would",
-  "she'd": "she would",
-  "we'd": "we would",
-  "they'd": "they would",
+  "you'd": "you would/had",
+  "he'd": "he would/had",
+  "she'd": "she would/had",
+  "we'd": "we would/had",
+  "they'd": "they would/had",
   "i'll": "I will",
   "you'll": "you will",
   "he'll": "he will",
@@ -178,9 +178,12 @@ const CONTRACTIONS_MAP: Record<string, string> = {
 };
 
 // Regex pattern to match contractions with word boundaries
-// Uses word boundary \b to avoid matching partial words
-// The pattern matches common contraction forms like: word'not, word're, word've, etc.
-const CONTRACTION_REGEX = /\b(don't|can't|won't|i'm|it's|you're|we've|they've|i'd|we'll|isn't|aren't|didn't|doesn't|couldn't|shouldn't|would've|could've|should've|must've|might've|i've|you've|he's|she's|that's|there's|here's|what's|who's|let's|wasn't|weren't|haven't|hasn't|hadn't|wouldn't|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|they'll|we're|they're)\b/gi;
+// Dynamically generated from CONTRACTIONS_MAP keys to avoid duplication
+// Uses word boundary \b to avoid matching partial words or possessives
+const CONTRACTION_REGEX = new RegExp(
+  '\\b(' + Object.keys(CONTRACTIONS_MAP).join('|') + ')\\b',
+  'gi'
+);
 
 // ============================================================
 // Helper Functions
@@ -607,7 +610,7 @@ function checkContractions(text: string): { warnings: string[] } {
     // Build examples of full forms for up to 3 contractions
     const examples = uniqueContractions
       .slice(0, 3)
-      .map(c => `${c} → ${CONTRACTIONS_MAP[c] || 'full form'}`)
+      .map(c => `${c} → ${CONTRACTIONS_MAP[c]}`)
       .join(', ');
     
     warnings.push(
