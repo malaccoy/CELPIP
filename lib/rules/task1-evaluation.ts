@@ -43,11 +43,6 @@ export interface Task1EvaluationOptions {
   questions?: string[];
 }
 
-export interface ParsedPrompt {
-  bullets: string[];
-  audienceHint?: string;
-}
-
 // ============================================================
 // Constants
 // ============================================================
@@ -57,11 +52,14 @@ const MAX_WORD_COUNT = 200;
 const MAX_SCORE = 12;
 const ERROR_PENALTY = 3;
 const WARNING_PENALTY = 1;
+// Note: MIN_KEYWORD_LENGTH = 2 is used for legacy question coverage
+// The new task1-prompt.ts uses MIN_KEYWORD_LENGTH = 4 for more precise bullet matching
 const MIN_KEYWORD_LENGTH = 2;
 const MIN_CONNECTORS_FOR_POSITIVE = 2;
 const MAX_CONNECTORS_TO_DISPLAY = 3;
 
 // Common stop words to exclude from question keyword matching
+// Note: task1-prompt.ts has its own STOPWORDS set optimized for bullet matching
 const STOP_WORDS = new Set([
   'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
   'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',

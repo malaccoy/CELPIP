@@ -21,6 +21,9 @@ export type ParsedTask1Prompt = {
 /**
  * Stop words to exclude from keyword extraction.
  * Common English words that don't carry significant meaning.
+ * 
+ * Note: This set is optimized for bullet point keyword extraction.
+ * task1-evaluation.ts has its own STOP_WORDS set for legacy question coverage.
  */
 export const STOPWORDS = new Set([
   'the', 'a', 'an', 'to', 'of', 'in', 'on', 'for', 'and', 'or',
@@ -41,6 +44,9 @@ export const STOPWORDS = new Set([
 
 /**
  * Minimum keyword length (prefer longer tokens as more meaningful).
+ * 
+ * Note: This is set to 4 for more precise bullet matching.
+ * task1-evaluation.ts uses MIN_KEYWORD_LENGTH = 2 for legacy question coverage.
  */
 const MIN_KEYWORD_LENGTH = 4;
 
