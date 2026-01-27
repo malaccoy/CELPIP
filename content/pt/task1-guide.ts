@@ -13,10 +13,22 @@ export const task1GuideContent = {
       tip: "Leia o enunciado com cuidado. Cada pergunta vale pontos."
     },
 
+    professorStrategy: {
+      title: "Estratégia do Professor: Reality Can Be Whatever You Want",
+      subtitle: "Você não precisa dizer a verdade. Invente detalhes que facilitem sua escrita.",
+      content: [
+        "O CELPIP não verifica fatos. Se o enunciado pede para reclamar de um barulho, invente os detalhes que precisar.",
+        "Não tem cachorro? Invente um. Nunca morou em apartamento? Finja que mora. O importante é construir um texto coerente.",
+        "Essa liberdade criativa permite que você use estruturas e vocabulário que já domina, em vez de lutar com situações reais complicadas.",
+        "Pense como um escritor de ficção: você está criando um personagem que precisa resolver um problema específico."
+      ],
+      keyPoint: "Liberdade criativa = menos bloqueio mental = texto mais fluido e natural."
+    },
+
     structure: {
-      title: "Estrutura do Email",
+      title: "Estrutura Obrigatória do Email",
       introduction: {
-        title: "Introdução (2-3 frases)",
+        title: "Abertura (Opening)",
         points: [
           "Saudação apropriada: 'Dear Mr. Smith,' ou 'Dear Manager,'",
           "Quem você é: 'I am a resident of Building B.'",
@@ -24,7 +36,7 @@ export const task1GuideContent = {
         ]
       },
       body: {
-        title: "Corpo (3 parágrafos curtos)",
+        title: "Propósito + Corpo (Purpose + Body)",
         points: [
           "Use conectores de sequência: First of all, Secondly, Thirdly, Finally",
           "Responda cada pergunta do enunciado em ordem",
@@ -32,13 +44,48 @@ export const task1GuideContent = {
         ]
       },
       closing: {
-        title: "Fechamento (2-3 frases)",
+        title: "CTA + Fechamento (Call-to-Action + Closing)",
         points: [
-          "Faça um pedido ou sugestão se apropriado",
+          "Faça um pedido ou sugestão se apropriado (CTA)",
           "Linha de fechamento: 'Please let me know if you require any further information.'",
           "Assinatura: 'Regards,' ou 'Sincerely,' seguido do seu nome"
         ]
       }
+    },
+
+    mandatoryElements: {
+      title: "Os 5 Elementos Obrigatórios",
+      subtitle: "Todo email Task 1 DEVE ter estes elementos. Faltar qualquer um prejudica sua nota.",
+      elements: [
+        {
+          name: "Opening (Abertura)",
+          description: "Saudação formal: 'Dear Mr./Ms. [Name],' ou 'Dear [Position],'",
+          example: "Dear Building Manager,"
+        },
+        {
+          name: "Purpose (Propósito)",
+          description: "Por que você está escrevendo — deve aparecer na primeira ou segunda frase.",
+          example: "I am writing to express my concern about the recent noise issues in our building."
+        },
+        {
+          name: "Body (Corpo)",
+          description: "Responda TODAS as perguntas do enunciado usando conectores de sequência.",
+          example: "First of all, the noise starts at... Secondly, this affects... Thirdly, I have already tried..."
+        },
+        {
+          name: "CTA (Call-to-Action)",
+          description: "Pedido, sugestão ou ação que você espera do destinatário.",
+          example: "I would kindly request that you speak with the residents involved."
+        },
+        {
+          name: "Closing (Fechamento)",
+          description: "Linha de fechamento formal + assinatura.",
+          example: `Please let me know if you require any further information.
+
+Regards,
+John Smith`
+        }
+      ]
     },
 
     scoring: {
@@ -90,6 +137,43 @@ export const task1GuideContent = {
         {
           mistake: "Esquecer a linha de fechamento",
           fix: "Sempre termine com uma frase como 'I look forward to hearing from you.'"
+        },
+        {
+          mistake: "Falta de CTA (Call-to-Action)",
+          fix: "Sempre inclua um pedido ou sugestão antes do fechamento."
+        }
+      ]
+    },
+
+    finalChecklist: {
+      title: "Checklist Final — Antes de Entregar",
+      items: [
+        {
+          category: "Estrutura",
+          checks: [
+            "Opening (Dear...) presente",
+            "Purpose (I am writing to...) claro",
+            "Body com conectores (First, Second, Third)",
+            "CTA (pedido ou sugestão)",
+            "Closing line + assinatura"
+          ]
+        },
+        {
+          category: "Conteúdo",
+          checks: [
+            "Todas as perguntas respondidas",
+            "Tom consistente (formal ou semi-formal)",
+            "Detalhes específicos incluídos"
+          ]
+        },
+        {
+          category: "Linguagem",
+          checks: [
+            "150-200 palavras (verificar contador)",
+            "Concordância verbal revisada",
+            "Artigos (a/an/the) revisados",
+            "Pontuação verificada"
+          ]
         }
       ]
     },

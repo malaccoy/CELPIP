@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Mail, PenTool, BookOpen, Settings } from 'lucide-react';
+import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, GraduationCap } from 'lucide-react';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -14,6 +14,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/guide', icon: GraduationCap, label: 'Guia' },
   { to: '/task-1', icon: Mail, label: 'Task 1' },
   { to: '/task-2', icon: PenTool, label: 'Task 2' },
   { to: '/library', icon: BookOpen, label: 'Biblioteca' },
@@ -22,6 +23,13 @@ const navItems: NavItem[] = [
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
+
+  const isActive = (to: string) => {
+    if (to === '/guide') {
+      return pathname === '/guide' || pathname.startsWith('/guide/');
+    }
+    return pathname === to;
+  };
 
   return (
     <header className={styles.header}>
@@ -35,12 +43,12 @@ export const Header: React.FC = () => {
         <nav className={styles.headerNav}>
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = pathname === item.to;
+            const active = isActive(item.to);
             return (
               <Link
                 key={item.to}
                 href={item.to}
-                className={`${styles.headerNavLink} ${isActive ? styles.headerNavLinkActive : ''}`}
+                className={`${styles.headerNavLink} ${active ? styles.headerNavLinkActive : ''}`}
               >
                 <Icon size={16} />
                 <span>{item.label}</span>

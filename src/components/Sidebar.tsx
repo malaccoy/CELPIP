@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, Menu, X, GraduationCap } from 'lucide-react';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -14,6 +14,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/guide', icon: GraduationCap, label: 'Guia' },
   { to: '/task-1', icon: Mail, label: 'Task 1 — Email' },
   { to: '/task-2', icon: PenTool, label: 'Task 2 — Survey' },
   { to: '/library', icon: BookOpen, label: 'Biblioteca' },
@@ -40,6 +41,13 @@ export const Sidebar: React.FC = () => {
     setIsSidebarOpen(false);
   }, [pathname]);
 
+  const isActive = (to: string) => {
+    if (to === '/guide') {
+      return pathname === '/guide' || pathname.startsWith('/guide/');
+    }
+    return pathname === to;
+  };
+
   return (
     <>
       {/* Mobile Menu Toggle (shown in header area on mobile) */}
@@ -65,7 +73,7 @@ export const Sidebar: React.FC = () => {
               to={item.to}
               icon={item.icon}
               label={item.label}
-              isActive={pathname === item.to}
+              isActive={isActive(item.to)}
             />
           ))}
         </nav>
