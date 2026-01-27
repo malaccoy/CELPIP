@@ -72,8 +72,8 @@ export function buildTask2Skeleton(plan: Task2Plan): string {
 
   // Conclusion paragraph
   const pointsSummary = points
-    .map((p, i) => p.point?.trim() || `[point ${i + 1}]`)
-    .filter((p) => p)
+    .map((p) => p.point?.trim())
+    .filter((p) => p && !p.startsWith('['))
     .slice(0, 2);
 
   if (pointsSummary.length >= 2) {

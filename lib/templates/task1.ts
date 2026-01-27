@@ -82,9 +82,13 @@ export function buildTask1Template(plan: Task1Plan): string {
   lines.push(closingLine);
   lines.push('');
 
-  // Sign-off
-  const signOff = plan.signOff?.trim() || 'Regards,\n[Your Full Name]';
-  lines.push(signOff);
+  // Sign-off (use separate lines for Regards and name)
+  if (plan.signOff?.trim()) {
+    lines.push(plan.signOff.trim());
+  } else {
+    lines.push('Regards,');
+    lines.push('[Your Full Name]');
+  }
 
   return lines.join('\n');
 }
