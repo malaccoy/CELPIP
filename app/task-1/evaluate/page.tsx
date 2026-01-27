@@ -40,7 +40,8 @@ export default function Task1EvaluationPage() {
       emailText: emailText,
     };
     saveTask1HistoryEntry(historyEntry);
-    setHistory(loadTask1History());
+    // Update state directly instead of reloading from localStorage
+    setHistory(prev => [historyEntry, ...prev].slice(0, 30));
   }, [emailText]);
 
   const handleHistoryItemClick = useCallback((entry: Task1HistoryEntry) => {
