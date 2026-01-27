@@ -56,3 +56,15 @@ export interface SessionStats {
   lastTask: TaskType;
   date: string;
 }
+
+export interface Task1HistoryEntry {
+  id: string;
+  dateISO: string;
+  wordCount: number;
+  score: number;
+  level: string;
+  errorsCount: number;
+  warningsCount: number;
+  suggestionsCount: number;
+  emailText?: string;
+}

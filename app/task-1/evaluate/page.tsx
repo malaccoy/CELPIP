@@ -1,24 +1,66 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Card, Button, WordCounter } from '@/components/Common';
 import { evaluateTask1Email, Task1EvaluationResult, EvaluationLevel } from '@lib/rules/task1-evaluation';
-import { Send, AlertCircle, AlertTriangle, Lightbulb, CheckCircle } from 'lucide-react';
+import { Send, AlertCircle, AlertTriangle, Lightbulb, CheckCircle, History } from 'lucide-react';
 import styles from '@/styles/Pages.module.scss';
 import evaluationStyles from './evaluate.module.scss';
+import { Task1HistoryEntry } from '@/types';
+import { loadTask1History, saveTask1HistoryEntry, generateHistoryId } from '@/utils/history';
 
 export default function Task1EvaluationPage() {
   const [emailText, setEmailText] = useState('');
   const [result, setResult] = useState<Task1EvaluationResult | null>(null);
+  const [history, setHistory] = useState<Task1HistoryEntry[]>([]);
 
   const wordCount = emailText.trim().split(/\s+/).filter(w => w.length > 0).length;
+
+  // Load history on mount
+  useEffect(() => {
+    setHistory(loadTask1History());
+  }, []);
 
   const handleEvaluate = useCallback(() => {
     if (emailText.trim().length === 0) return;
     
     const evaluationResult = evaluateTask1Email(emailText);
     setResult(evaluationResult);
+
+    // Save to history
+    const historyEntry: Task1HistoryEntry = {
+      id: generateHistoryId(),
+      dateISO: new Date().toISOString(),
+      wordCount: evaluationResult.wordCount,
+      score: evaluationResult.score,
+      level: evaluationResult.level,
+      errorsCount: evaluationResult.errors.length,
+      warningsCount: evaluationResult.warnings.length,
+      suggestionsCount: evaluationResult.suggestions.length,
+      emailText: emailText,
+    };
+    saveTask1HistoryEntry(historyEntry);
+    setHistory(loadTask1History());
   }, [emailText]);
+
+  const handleHistoryItemClick = useCallback((entry: Task1HistoryEntry) => {
+    if (entry.emailText) {
+      setEmailText(entry.emailText);
+      // Re-evaluate to restore the result
+      const evaluationResult = evaluateTask1Email(entry.emailText);
+      setResult(evaluationResult);
+    }
+  }, []);
+
+  const formatDate = (dateISO: string): string => {
+    const date = new Date(dateISO);
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  };
 
   const getLevelBadgeClass = (level: EvaluationLevel): string => {
     switch (level) {
@@ -178,6 +220,38 @@ export default function Task1EvaluationPage() {
                 <h3>Ready to Evaluate</h3>
                 <p>Paste your email in the text area and click &quot;Evaluate Email&quot; to receive feedback.</p>
               </div>
+            </Card>
+          )}
+
+          {/* History Section */}
+          {history.length > 0 && (
+            <Card className={evaluationStyles.historyCard}>
+              <div className={evaluationStyles.historyHeader}>
+                <History size={20} className={evaluationStyles.historyIcon} />
+                <h4 className={evaluationStyles.historyTitle}>History</h4>
+                <span className={evaluationStyles.feedbackCount}>{history.length}</span>
+              </div>
+              <ul className={evaluationStyles.historyList}>
+                {history.map((entry) => (
+                  <li
+                    key={entry.id}
+                    className={evaluationStyles.historyItem}
+                    onClick={() => handleHistoryItemClick(entry)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        handleHistoryItemClick(entry);
+                      }
+                    }}
+                  >
+                    <span className={evaluationStyles.historyDate}>{formatDate(entry.dateISO)}</span>
+                    <span className={evaluationStyles.historyScore}>Score: {entry.score}/12</span>
+                    <span className={evaluationStyles.historyWordCount}>{entry.wordCount} words</span>
+                  </li>
+                ))}
+              </ul>
             </Card>
           )}
         </div>
