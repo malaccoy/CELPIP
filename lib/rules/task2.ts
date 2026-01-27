@@ -4,6 +4,9 @@
 
 import { Issue, Suggestion, RuleResult } from './common';
 
+// Configuration constants
+const MIN_REQUIRED_REASONS = 2;
+
 /**
  * Check for forbidden "Option A" or "Option B" references
  */
@@ -153,7 +156,7 @@ export function checkReasons(text: string): RuleResult {
 
   const foundReasons = reasonIndicators.filter(indicator => lowerText.includes(indicator));
 
-  if (foundReasons.length < 2) {
+  if (foundReasons.length < MIN_REQUIRED_REASONS) {
     issues.push({
       code: 'INSUFFICIENT_REASONING',
       message: 'Provide clear reasons to support your points',

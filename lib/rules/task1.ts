@@ -4,6 +4,9 @@
 
 import { Issue, Suggestion, RuleResult } from './common';
 
+// Configuration constants
+const MIN_INTRO_LENGTH = 30;
+
 /**
  * Check if the email starts with "Dear ..."
  */
@@ -160,10 +163,11 @@ export function checkIntroduction(text: string): RuleResult {
   const lines = text.split('\n').filter(l => l.trim().length > 0);
   
   // First meaningful line after "Dear..." should be the intro
-  const introLineIndex = lines.findIndex(l => /^\s*dear/i.test(l)) + 1;
+  const dearLineIndex = lines.findIndex(l => /^\s*dear/i.test(l));
+  const introLineIndex = dearLineIndex >= 0 ? dearLineIndex + 1 : 0;
   const introLine = lines[introLineIndex] || '';
   
-  const hasProperIntro = introLine.length > 30 && 
+  const hasProperIntro = introLine.length > MIN_INTRO_LENGTH && 
     (lowerText.includes('writing to') || lowerText.includes('purpose') || 
      lowerText.includes('i am') || lowerText.includes('my name'));
 
