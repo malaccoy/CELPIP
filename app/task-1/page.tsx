@@ -16,6 +16,7 @@ const INITIAL_STATE: Task1State = {
   whoAmI: '',
   whyWriting: '',
   bodyStructure: ['First', 'Second', 'Third'],
+  bodyStructureNotes: ['', '', '', ''], // First, Second, Third (optional), Final/transition
   cta: '',
   pleaseLetMeKnow: 'Please let me know if you require any further information.',
   signOff: '',
@@ -36,6 +37,12 @@ export default function Task1Page() {
     const newQuestions = [...state.questions];
     newQuestions[index] = value;
     updateState('questions', newQuestions);
+  };
+
+  const updateBodyStructureNote = (index: number, value: string) => {
+    const newNotes = [...state.bodyStructureNotes];
+    newNotes[index] = value;
+    updateState('bodyStructureNotes', newNotes);
   };
 
   const generateTemplate = () => {
@@ -172,10 +179,48 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
             <div className={styles.bodyStructure}>
               <span>Estrutura do Corpo</span>
-              <div className={styles.bodyStructureTags}>
-                {["First", "Second", "Third", "Finally"].map(tag => (
-                  <span key={tag} className={styles.bodyStructureTag}>{tag}</span>
-                ))}
+              <p className={styles.bodyStructureHelper}>Notas para ajudar a estruturar o email (não serão avaliadas ou contadas)</p>
+              <div className={styles.bodyStructureNotes}>
+                <div className={styles.bodyStructureNoteItem}>
+                  <label className={styles.bodyStructureNoteLabel}>Ideia do primeiro parágrafo</label>
+                  <textarea
+                    className={styles.bodyStructureNoteTextarea}
+                    placeholder="Ex: abordar o problema de ruído..."
+                    rows={2}
+                    value={state.bodyStructureNotes[0]}
+                    onChange={e => updateBodyStructureNote(0, e.target.value)}
+                  />
+                </div>
+                <div className={styles.bodyStructureNoteItem}>
+                  <label className={styles.bodyStructureNoteLabel}>Ideia do segundo parágrafo</label>
+                  <textarea
+                    className={styles.bodyStructureNoteTextarea}
+                    placeholder="Ex: discutir problemas de estacionamento..."
+                    rows={2}
+                    value={state.bodyStructureNotes[1]}
+                    onChange={e => updateBodyStructureNote(1, e.target.value)}
+                  />
+                </div>
+                <div className={styles.bodyStructureNoteItem}>
+                  <label className={styles.bodyStructureNoteLabel}>Ideia do terceiro parágrafo (opcional)</label>
+                  <textarea
+                    className={styles.bodyStructureNoteTextarea}
+                    placeholder="Ex: mencionar questões de segurança..."
+                    rows={2}
+                    value={state.bodyStructureNotes[2]}
+                    onChange={e => updateBodyStructureNote(2, e.target.value)}
+                  />
+                </div>
+                <div className={styles.bodyStructureNoteItem}>
+                  <label className={styles.bodyStructureNoteLabel}>Ideia do parágrafo final / transição</label>
+                  <textarea
+                    className={styles.bodyStructureNoteTextarea}
+                    placeholder="Ex: resumir e solicitar ação..."
+                    rows={2}
+                    value={state.bodyStructureNotes[3]}
+                    onChange={e => updateBodyStructureNote(3, e.target.value)}
+                  />
+                </div>
               </div>
             </div>
 
