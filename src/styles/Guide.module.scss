@@ -1,64 +1,252 @@
-// Guide Page Styles
+// ============================================
+// 📚 GUIDE PAGE - MODERN GLASSMORPHISM DESIGN
+// ============================================
 
-// Variables
+// Variables (matching dashboard)
+$gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+$gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+$gradient-accent: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+$gradient-hero: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+
+$glass-bg: rgba(255, 255, 255, 0.8);
+$glass-border: rgba(255, 255, 255, 0.4);
+$glass-blur: blur(20px);
+
+$shadow-glow-primary: 0 0 20px rgba(99, 102, 241, 0.3);
+$shadow-glow-secondary: 0 0 20px rgba(139, 92, 246, 0.3);
+
+$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
 $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// ============================================
+// 📦 MAIN CONTAINER
+// ============================================
 
 .guideContainer {
   max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
+  animation: fadeIn 0.4s ease-out;
 
   > * + * {
     margin-top: 1.5rem;
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ============================================
+// 🦸 GUIDE HEADER - MINI HERO STYLE
+// ============================================
+
 .guideHeader {
+  position: relative;
+  background: $gradient-hero;
+  border-radius: 20px;
+  padding: 2rem 2rem;
   margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(49, 46, 129, 0.25),
+              0 0 40px rgba(99, 102, 241, 0.15);
+  text-align: center;
+  
+  // Subtle pattern overlay
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 30%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  
+  // Animated glow orb
+  &::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%);
+    top: -80px;
+    right: -40px;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: floatOrb 6s ease-in-out infinite;
+  }
 
   h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #0f172a;
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
 
   p {
-    color: #64748b;
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
-// Back Button
-.backButton {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0;
-  color: #64748b;
-  font-size: 0.875rem;
-  font-weight: 500;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: color 150ms;
-  margin-bottom: 0.5rem;
+@keyframes floatOrb {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
 
+// ============================================
+// 🃏 GLASS CARD (for guide sections)
+// ============================================
+
+.guideCard {
+  position: relative;
+  background: $glass-bg;
+  backdrop-filter: $glass-blur;
+  -webkit-backdrop-filter: $glass-blur;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
+              0 0 0 1px rgba(255, 255, 255, 0.7),
+              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid $glass-border;
+  padding: 1.5rem;
+  transition: all $transition-smooth;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(139, 92, 246, 0.03) 100%);
+    opacity: 0;
+    transition: opacity $transition-smooth;
+    pointer-events: none;
+    border-radius: 20px;
+  }
+  
   &:hover {
-    color: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.12),
+                0 0 0 1px rgba(99, 102, 241, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
-// Intro Section
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.cardIcon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $gradient-primary;
+  color: white;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  
+  svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: -0.01em;
+}
+
+// ============================================
+// 📝 INTRO SECTION
+// ============================================
+
 .introDescription {
   font-size: 0.9375rem;
   color: #475569;
   line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-// Guide Cards Grid
+// ============================================
+// 📋 CONTENT LIST - STYLED
+// ============================================
+
+.contentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > * + * {
+    margin-top: 0.75rem;
+  }
+}
+
+.contentItem {
+  font-size: 0.9375rem;
+  color: #334155;
+  padding: 0.75rem 1rem;
+  padding-left: 2.5rem;
+  position: relative;
+  line-height: 1.6;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.8) 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all $transition-fast;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background: $gradient-primary;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+  }
+  
+  &:hover {
+    background: linear-gradient(135deg, rgba(241, 245, 249, 1) 0%, rgba(226, 232, 240, 0.8) 100%);
+    border-color: rgba(99, 102, 241, 0.2);
+    transform: translateX(4px);
+  }
+}
+
+// ============================================
+// 🎴 GUIDE CARDS GRID (Task Cards)
+// ============================================
+
 .guideCardsGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -72,71 +260,118 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .guideTaskCard {
-  background-color: white;
-  border-radius: 0.75rem;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-  border: 1px solid #e2e8f0;
-  padding: 1.5rem;
+  position: relative;
+  background: $glass-bg;
+  backdrop-filter: $glass-blur;
+  -webkit-backdrop-filter: $glass-blur;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
+              0 0 0 1px rgba(255, 255, 255, 0.7),
+              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid $glass-border;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  transition: border-color 150ms, box-shadow 150ms;
+  transition: all $transition-smooth;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    opacity: 0;
+    transition: opacity $transition-smooth;
+    pointer-events: none;
+    border-radius: 24px;
+  }
 
   &:hover {
-    border-color: #cbd5e1;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15),
+                0 0 0 1px rgba(99, 102, 241, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    &::before {
+      opacity: 1;
+    }
+    
+    .guideTaskIcon {
+      transform: scale(1.1) rotate(3deg);
+    }
   }
 }
 
 .guideTaskIcon {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 0.75rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  transition: all $transition-smooth;
+  
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
 }
 
 .taskIconBlue {
-  background-color: #eff6ff;
-  color: #2563eb;
+  background: $gradient-primary;
+  color: white;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
 }
 
 .taskIconPurple {
-  background-color: #faf5ff;
-  color: #9333ea;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
 }
 
 .guideTaskTitle {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
+  letter-spacing: -0.02em;
 }
 
 .guideTaskDescription {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: #64748b;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .guideTaskFeatures {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1.5rem 0;
   flex: 1;
 
   li {
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.8125rem;
+    gap: 0.625rem;
+    font-size: 0.875rem;
     color: #475569;
-    padding: 0.375rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+    transition: all $transition-fast;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    &:hover {
+      color: #334155;
+      transform: translateX(4px);
+    }
 
     svg {
-      color: #16a34a;
+      color: #10b981;
       flex-shrink: 0;
       margin-top: 0.125rem;
     }
@@ -145,10 +380,43 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .guideTaskButton {
   width: 100%;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: $gradient-primary;
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  
+  svg {
+    transition: transform $transition-smooth;
+  }
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+    
+    svg {
+      transform: translateX(4px);
+    }
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
 }
 
-// General Tips Grid
+// ============================================
+// 💡 GENERAL TIPS GRID
+// ============================================
+
 .generalTipsGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -162,77 +430,139 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .generalTipItem {
-  padding: 1rem;
-  background-color: #f8fafc;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
   border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+    transform: translateY(-2px);
+  }
 
   h4 {
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #1e293b;
   }
 
   p {
     font-size: 0.8125rem;
     color: #475569;
-    line-height: 1.5;
-    margin-top: 0.375rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
   }
 }
 
 .generalTipHeader {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.25rem;
+  gap: 0.625rem;
+  margin-bottom: 0.375rem;
 
   svg {
     color: #f59e0b;
+    filter: drop-shadow(0 2px 4px rgba(245, 158, 11, 0.3));
   }
 }
 
-// Guide CTA
+// ============================================
+// 🎯 GUIDE CTA
+// ============================================
+
 .guideCta {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  padding: 1.5rem;
-  background-color: #f0fdf4;
-  border: 1px solid #dcfce7;
-  border-radius: 0.75rem;
+  gap: 0.875rem;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, rgba(220, 252, 231, 0.8) 0%, rgba(187, 247, 208, 0.8) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 16px;
   color: #166534;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.1);
 
   svg {
     color: #16a34a;
   }
 }
 
-// Section Subtitle
-.sectionSubtitle {
-  font-size: 0.9375rem;
+// ============================================
+// ⬅️ BACK BUTTON
+// ============================================
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
   color: #64748b;
-  font-style: italic;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all $transition-fast;
   margin-bottom: 1rem;
-  line-height: 1.5;
+
+  &:hover {
+    color: #6366f1;
+    border-color: rgba(99, 102, 241, 0.3);
+    background: white;
+    transform: translateX(-4px);
+  }
+  
+  svg {
+    transition: transform $transition-fast;
+  }
+  
+  &:hover svg {
+    transform: translateX(-2px);
+  }
 }
 
-// Key Point Box (similar to tipBox but different color)
-.keyPointBox {
-  margin-top: 1rem;
-  padding: 0.875rem 1rem;
-  background-color: #eff6ff;
-  border: 1px solid #dbeafe;
-  border-radius: 0.5rem;
+// ============================================
+// 📌 TIP BOX - HIGHLIGHT
+// ============================================
+
+.tipBox {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 14px;
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #92400e;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.15);
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    color: #f59e0b;
+  }
+}
+
+.keyPointBox {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
   font-size: 0.875rem;
   color: #1e40af;
   font-weight: 500;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 
   svg {
     flex-shrink: 0;
@@ -241,7 +571,83 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   }
 }
 
-// Elements Grid (for mandatory elements)
+// ============================================
+// 🔢 STRUCTURE GRID
+// ============================================
+
+.structureGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .structureGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.structureBlock {
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.structureBlockTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.875rem;
+}
+
+.structureNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: $gradient-primary;
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(99, 102, 241, 0.3);
+}
+
+.structureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 0.8125rem;
+    color: #475569;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+    line-height: 1.5;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// ============================================
+// 📊 ELEMENTS GRID
+// ============================================
+
 .elementsGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -261,34 +667,41 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .elementCard {
-  padding: 1rem;
-  background-color: #f8fafc;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
   border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+  }
 }
 
 .elementHeader {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.625rem;
+  gap: 0.625rem;
+  margin-bottom: 0.75rem;
 }
 
 .elementNumber {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #0f172a;
+  width: 1.625rem;
+  height: 1.625rem;
+  background: $gradient-primary;
   color: white;
   font-size: 0.75rem;
   font-weight: 700;
   border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
 }
 
 .elementName {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: #1e293b;
 }
@@ -296,86 +709,28 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .elementDescription {
   font-size: 0.8125rem;
   color: #475569;
-  line-height: 1.5;
-  margin-bottom: 0.625rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
 
 .elementExample {
-  padding: 0.5rem 0.75rem;
-  background-color: #f1f5f9;
-  border-radius: 0.375rem;
-
-  code {
-    font-size: 0.75rem;
-    color: #334155;
-    font-family: $font-mono;
-    word-break: break-word;
-  }
-}
-
-// PRE Structure Grid
-.preGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.preBlock {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #f8fafc;
+  padding: 0.625rem 0.875rem;
+  background: white;
+  border-radius: 10px;
   border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-}
-
-.preLetter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #2563eb;
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-radius: 0.5rem;
-  flex-shrink: 0;
-}
-
-.preContent {
-  flex: 1;
-}
-
-.preName {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 0.25rem;
-}
-
-.preDescription {
-  font-size: 0.8125rem;
-  color: #475569;
-  line-height: 1.5;
-  margin-bottom: 0.625rem;
-}
-
-.preExample {
-  padding: 0.5rem 0.75rem;
-  background-color: #f1f5f9;
-  border-radius: 0.375rem;
 
   code {
     font-size: 0.75rem;
     color: #334155;
     font-family: $font-mono;
     word-break: break-word;
-    line-height: 1.5;
   }
 }
 
-// Checklist Grid
+// ============================================
+// 📋 CHECKLIST GRID
+// ============================================
+
 .checklistGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -389,19 +744,25 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .checklistSection {
-  padding: 1rem;
-  background-color: #f8fafc;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
   border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.08);
+  }
 }
 
 .checklistCategory {
   font-size: 0.9375rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1e293b;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.2);
 }
 
 .checklistItems {
@@ -415,128 +776,26 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     gap: 0.5rem;
     font-size: 0.8125rem;
     color: #475569;
-    padding: 0.375rem 0;
+    padding: 0.5rem 0;
+    transition: all $transition-fast;
+    
+    &:hover {
+      color: #334155;
+      transform: translateX(4px);
+    }
 
     svg {
-      color: #16a34a;
+      color: #10b981;
       flex-shrink: 0;
       margin-top: 0.125rem;
     }
   }
 }
 
-// Content List
-.contentList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+// ============================================
+// ✅ CRITERIA GRID
+// ============================================
 
-  > * + * {
-    margin-top: 0.75rem;
-  }
-}
-
-.contentItem {
-  font-size: 0.9375rem;
-  color: #334155;
-  padding-left: 1.25rem;
-  position: relative;
-  line-height: 1.6;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    width: 0.375rem;
-    height: 0.375rem;
-    background-color: #2563eb;
-    border-radius: 50%;
-  }
-}
-
-// Tip Box
-.tipBox {
-  margin-top: 1rem;
-  padding: 0.875rem 1rem;
-  background-color: #fef3c7;
-  border: 1px solid #fde68a;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.625rem;
-  font-size: 0.875rem;
-  color: #92400e;
-
-  svg {
-    flex-shrink: 0;
-    margin-top: 0.125rem;
-  }
-}
-
-// Structure Section
-.structureGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .structureGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.structureBlock {
-  padding: 1rem;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-}
-
-.structureBlockTitle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 0.75rem;
-}
-
-.structureNumber {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #2563eb;
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 700;
-  border-radius: 50%;
-}
-
-.structureList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  li {
-    font-size: 0.8125rem;
-    color: #475569;
-    padding: 0.375rem 0;
-    border-bottom: 1px solid #e2e8f0;
-    line-height: 1.5;
-
-    &:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-  }
-}
-
-// Scoring Criteria
 .criteriaGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -550,50 +809,59 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .criteriaItem {
-  padding: 1rem;
-  background-color: #f0fdf4;
-  border: 1px solid #dcfce7;
-  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(220, 252, 231, 0.7) 0%, rgba(187, 247, 208, 0.7) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.15);
+  }
 }
 
 .criteriaName {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   color: #166534;
-  margin-bottom: 0.375rem;
+  margin-bottom: 0.5rem;
 
   svg {
-    color: #16a34a;
+    color: #10b981;
   }
 }
 
 .criteriaDescription {
   font-size: 0.8125rem;
   color: #475569;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-// Key Tips
+// ============================================
+// 💡 KEY TIPS
+// ============================================
+
 .keyTipsSection {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .keyTipsTitle {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-weight: 700;
   color: #1e293b;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 
   svg {
-    color: #2563eb;
+    color: #6366f1;
   }
 }
 
@@ -605,21 +873,31 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   li {
     font-size: 0.875rem;
     color: #475569;
-    padding: 0.5rem 0;
-    padding-left: 1rem;
+    padding: 0.625rem 0;
+    padding-left: 1.5rem;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.6;
+    transition: all $transition-fast;
 
     &::before {
       content: '→';
       position: absolute;
       left: 0;
-      color: #2563eb;
+      color: #6366f1;
+      font-weight: 600;
+    }
+    
+    &:hover {
+      color: #334155;
+      transform: translateX(4px);
     }
   }
 }
 
-// Common Mistakes
+// ============================================
+// ⚠️ COMMON MISTAKES
+// ============================================
+
 .mistakesList {
   > * + * {
     margin-top: 1rem;
@@ -627,20 +905,26 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .mistakeItem {
-  padding: 1rem;
-  background-color: #fefce8;
-  border: 1px solid #fef08a;
-  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #fefce8 0%, #fef08a 100%);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 15px rgba(250, 204, 21, 0.2);
+  }
 }
 
 .mistakeHeader {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-  margin-bottom: 0.625rem;
+  gap: 0.625rem;
+  margin-bottom: 0.75rem;
 
   svg {
-    color: #ca8a04;
+    color: #eab308;
     flex-shrink: 0;
     margin-top: 0.125rem;
   }
@@ -648,7 +932,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .mistakeText {
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #854d0e;
 }
 
@@ -656,18 +940,21 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 1.75rem;
   font-size: 0.8125rem;
   color: #166534;
 
   svg {
-    color: #16a34a;
+    color: #10b981;
     flex-shrink: 0;
     margin-top: 0.125rem;
   }
 }
 
-// Features Grid
+// ============================================
+// 🔧 FEATURES GRID
+// ============================================
+
 .featuresGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -681,30 +968,127 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 }
 
 .featureItem {
-  padding: 1rem;
-  background-color: #eff6ff;
-  border: 1px solid #dbeafe;
-  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+  }
 }
 
 .featureTitle {
   font-size: 0.9375rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1e40af;
-  margin-bottom: 0.375rem;
+  margin-bottom: 0.5rem;
 }
 
 .featureDescription {
   font-size: 0.8125rem;
   color: #475569;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-// Call to Action
+// ============================================
+// 📊 PRE STRUCTURE
+// ============================================
+
+.preGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.preBlock {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.08);
+    transform: translateX(4px);
+  }
+}
+
+.preLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: $gradient-primary;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.35);
+}
+
+.preContent {
+  flex: 1;
+}
+
+.preName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.375rem;
+}
+
+.preDescription {
+  font-size: 0.8125rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.preExample {
+  padding: 0.625rem 0.875rem;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+
+  code {
+    font-size: 0.75rem;
+    color: #334155;
+    font-family: $font-mono;
+    word-break: break-word;
+    line-height: 1.6;
+  }
+}
+
+// ============================================
+// 📍 SECTION SUBTITLE
+// ============================================
+
+.sectionSubtitle {
+  font-size: 0.9375rem;
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(99, 102, 241, 0.3);
+}
+
+// ============================================
+// 🔗 CTA SECTION
+// ============================================
+
 .ctaSection {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(99, 102, 241, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -722,6 +1106,35 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .ctaText {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #1e293b;
+}
+
+// ============================================
+// 📱 RESPONSIVE TWEAKS
+// ============================================
+
+@media (max-width: 640px) {
+  .guideHeader {
+    padding: 1.5rem;
+    border-radius: 16px;
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  .guideTaskCard {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .guideTaskIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }

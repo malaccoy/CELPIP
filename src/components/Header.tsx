@@ -36,8 +36,11 @@ export const Header: React.FC = () => {
       <div className={styles.headerContent}>
         <div className={styles.headerLogo}>
           <Link href="/" className={styles.logoLink}>
-            <span className={styles.logoText}>CELPIP Coach</span>
-            <span className={styles.logoSubtext}>Writing Mastery MVP</span>
+            <div className={styles.logoIcon}>✍️</div>
+            <div className={styles.logoTextWrapper}>
+              <span className={styles.logoText}>CELPIP Coach</span>
+              <span className={styles.logoSubtext}>Writing Mastery MVP</span>
+            </div>
           </Link>
         </div>
         <nav className={styles.headerNav}>

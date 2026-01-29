@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { Mail, PenTool, BarChart3, ArrowRight } from 'lucide-react';
+import { Mail, PenTool, BarChart3, ArrowRight, Sparkles } from 'lucide-react';
 import { Card, Button } from '@/components/Common';
 import { SessionStats } from '@/types';
 import styles from '@/styles/Pages.module.scss';
@@ -21,9 +21,22 @@ export default function Dashboard() {
 
   return (
     <div className={styles.dashboardContainer}>
+      {/* Hero Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <span className={styles.heroEmoji}>🚀</span>
+          <h1 className={styles.heroTitle}>
+            Domine a <span>Escrita do CELPIP</span>
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Pratique com feedback inteligente, melhore sua estrutura e conquiste a pontuação que você merece.
+          </p>
+        </div>
+      </section>
+
       <div className={styles.dashboardHeader}>
-        <h2>Dashboard</h2>
-        <p>Bem-vindo ao seu treinador de escrita CELPIP.</p>
+        <h2>Escolha sua <span>Prática</span></h2>
+        <p>Selecione uma tarefa abaixo para começar a treinar.</p>
       </div>
 
       <div className={styles.dashboardCards}>
@@ -51,12 +64,12 @@ export default function Dashboard() {
       </div>
 
       <div className={styles.sessionStatsContainer}>
-        <Card title="Sessão Atual">
+        <Card title="📊 Sessão Atual">
           {stats ? (
             <div className={styles.sessionStatsContent}>
               <div className={styles.sessionStatsInfo}>
                 <div className={styles.sessionStatsIcon}>
-                  <BarChart3 color="#475569" />
+                  <BarChart3 size={20} />
                 </div>
                 <div>
                   <p className={styles.sessionStatsLabel}>Última prática</p>
@@ -74,13 +87,13 @@ export default function Dashboard() {
                 <span className={`${styles.sessionStatsBadge} ${
                   stats.lastWordCount >= 150 && stats.lastWordCount <= 200 ? styles.sessionStatsBadgeIdeal : styles.sessionStatsBadgeOutside
                 }`}>
-                  {stats.lastWordCount >= 150 && stats.lastWordCount <= 200 ? 'Faixa Ideal' : 'Fora da faixa'}
+                  {stats.lastWordCount >= 150 && stats.lastWordCount <= 200 ? '✓ Faixa Ideal' : '⚠ Fora da faixa'}
                 </span>
               </div>
             </div>
           ) : (
             <div className={styles.sessionStatsEmpty}>
-              <p>Nenhuma sessão registrada ainda.</p>
+              <p>✨ Nenhuma sessão registrada ainda.</p>
               <p>Complete um exercício para ver suas estatísticas aqui.</p>
             </div>
           )}

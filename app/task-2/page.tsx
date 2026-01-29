@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2, Plus, Minus } from 'lucide-react';
-import styles from '@/styles/Pages.module.scss';
+import { Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ClipboardList } from 'lucide-react';
+import styles from '@/styles/TaskPages.module.scss';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -69,11 +69,17 @@ export default function Task2Page() {
   const handleEvaluate = () => {
     const results = generateTask2Feedback(state);
     setFeedback(results);
-    localStorage.setItem('celpip_last_session', JSON.stringify({
-      lastWordCount: wordCount,
-      lastTask: 'TASK_2',
-      date: new Date().toISOString()
-    }));
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('celpip_last_session', JSON.stringify({
+          lastWordCount: wordCount,
+          lastTask: 'TASK_2',
+          date: new Date().toISOString()
+        }));
+      } catch {
+        // Silently fail
+      }
+    }
   };
 
   const handleClear = () => {
@@ -83,41 +89,90 @@ export default function Task2Page() {
     }
   };
 
+  const getWordCounterClass = () => {
+    if (wordCount < 150) return styles.wordCounterLow;
+    if (wordCount <= 200) return styles.wordCounterGood;
+    return styles.wordCounterHigh;
+  };
+
+  // Map severity + passed to visual type
+  const getFeedbackItemClass = (item: FeedbackItem) => {
+    if (item.passed) return styles.feedbackItemSuccess;
+    switch (item.severity) {
+      case 'BLOCKER': return styles.feedbackItemError;
+      case 'IMPORTANT': return styles.feedbackItemWarning;
+      case 'POLISH': return styles.feedbackItemInfo;
+      default: return styles.feedbackItemInfo;
+    }
+  };
+
+  const getFeedbackIcon = (item: FeedbackItem) => {
+    if (item.passed) return <CheckCircle size={16} className="text-green-600" />;
+    switch (item.severity) {
+      case 'BLOCKER': return <AlertCircle size={16} className="text-red-600" />;
+      case 'IMPORTANT': return <AlertTriangle size={16} className="text-amber-600" />;
+      case 'POLISH': return <Info size={16} className="text-blue-600" />;
+      default: return <Info size={16} className="text-blue-600" />;
+    }
+  };
+
   return (
-    <div className={styles.taskContainer}>
-      <div className={styles.taskHeader}>
-        <div className={styles.taskTitle}>
-          <h2>Task 2 — Survey Response</h2>
-          <p>Tempo recomendado: 26 minutos</p>
-        </div>
-        <div className={styles.taskActions}>
-          <Button variant="ghost" onClick={handleClear} className={styles.taskDeleteBtn}>
-            <Trash2 size={16} /> Limpar
-          </Button>
-          <Button variant="outline" onClick={() => { }}>
-            <Save size={16} /> Salvar Rascunho
-          </Button>
+    <div className={styles.taskPageContainer}>
+      {/* Mini Hero Section */}
+      <div className={styles.miniHero}>
+        <div className={styles.miniHeroContent}>
+          <div className={styles.miniHeroLeft}>
+            <div className={styles.miniHeroIcon}>
+              <ClipboardList />
+            </div>
+            <div className={styles.miniHeroTitle}>
+              <h1>Task 2 — <span>Survey Response</span></h1>
+              <p><Clock size={14} style={{ display: 'inline', marginRight: 4 }} /> Tempo recomendado: 26 minutos</p>
+            </div>
+          </div>
+          <div className={styles.miniHeroActions}>
+            <button onClick={handleClear} className={`${styles.heroBtn} ${styles.heroBtnDanger}`}>
+              <Trash2 size={16} /> Limpar
+            </button>
+            <button className={`${styles.heroBtn} ${styles.heroBtnPrimary}`}>
+              <Save size={16} /> Salvar Rascunho
+            </button>
+          </div>
         </div>
       </div>
 
+      {/* Task Grid */}
       <div className={styles.taskGrid}>
-        {/* Col 1: Context */}
+        {/* Column 1: Context */}
         <div className={styles.taskColumn}>
-          <Card title="1. Contexto">
-            <Textarea
-              label="Enunciado (Survey)"
-              placeholder="Cole o enunciado..."
-              rows={4}
-              value={state.promptText}
-              onChange={e => updateState('promptText', e.target.value)}
-            />
+          <div className={styles.glassCard}>
+            <div className={styles.cardHeader}>
+              <div className={styles.cardIcon}>
+                <FileText />
+              </div>
+              <h3 className={styles.cardTitle}>1. Contexto</h3>
+            </div>
 
-            <Input
-              label="Quem vai ler? (Audience)"
-              placeholder="Ex: City Council, HR Department"
-              value={state.audience}
-              onChange={e => updateState('audience', e.target.value)}
-            />
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Enunciado (Survey)</label>
+              <textarea
+                className={styles.formTextarea}
+                placeholder="Cole o enunciado..."
+                rows={4}
+                value={state.promptText}
+                onChange={e => updateState('promptText', e.target.value)}
+              />
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Quem vai ler? (Audience)</label>
+              <input
+                className={styles.formInput}
+                placeholder="Ex: City Council, HR Department"
+                value={state.audience}
+                onChange={e => updateState('audience', e.target.value)}
+              />
+            </div>
 
             <div className={styles.positionBox}>
               <label className={styles.positionLabel}>Sua Posição</label>
@@ -135,57 +190,96 @@ export default function Task2Page() {
                   Opção B
                 </button>
               </div>
-              <Input
-                label="Tema escolhido (Keywords)"
-                placeholder="Ex: building a new park"
-                value={state.topic}
-                onChange={e => updateState('topic', e.target.value)}
-              />
+              <div className={styles.formGroup} style={{ marginBottom: 0 }}>
+                <label className={styles.formLabel}>Tema escolhido (Keywords)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="Ex: building a new park"
+                  value={state.topic}
+                  onChange={e => updateState('topic', e.target.value)}
+                />
+              </div>
             </div>
-          </Card>
+          </div>
         </div>
 
-        {/* Col 2: Planning (PRE) */}
+        {/* Column 2: Planning (PRE) */}
         <div className={styles.taskColumn}>
-          <Card title="2. Planejamento (PRE Structure)">
-            <Input
-              label="Opinion Line (Intro)"
-              value={state.opinionLine}
-              onChange={e => updateState('opinionLine', e.target.value)}
-              suggestions={["I would rather...", "I recommend that...", "I believe option A is better because..."]}
-              onSuggestionClick={val => updateState('opinionLine', val)}
-            />
+          <div className={styles.glassCard}>
+            <div className={styles.cardHeader}>
+              <div className={`${styles.cardIcon} ${styles.cardIconPurple}`}>
+                <PenTool />
+              </div>
+              <h3 className={styles.cardTitle}>2. Planejamento (PRE Structure)</h3>
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Opinion Line (Intro)</label>
+              <input
+                className={styles.formInput}
+                placeholder="I would rather..."
+                value={state.opinionLine}
+                onChange={e => updateState('opinionLine', e.target.value)}
+              />
+              <div className={styles.tagGroup}>
+                {["I would rather...", "I recommend that...", "I believe option A is better because..."].map(suggestion => (
+                  <button
+                    key={suggestion}
+                    className={styles.tag}
+                    onClick={() => updateState('opinionLine', suggestion)}
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
 
             <div style={{ marginTop: '1.5rem' }}>
               <div className={styles.argumentsHeader}>
                 <h4 className={styles.argumentsTitle}>Argumentos (Points)</h4>
                 <div className={styles.argumentsActions}>
-                  <button onClick={addPoint} disabled={state.points.length >= 3} className={styles.argumentsButton}><Plus size={16} /></button>
-                  <button onClick={removePoint} disabled={state.points.length <= 1} className={styles.argumentsButton}><Minus size={16} /></button>
+                  <button onClick={addPoint} disabled={state.points.length >= 3} className={styles.argumentsButton}>
+                    <Plus />
+                  </button>
+                  <button onClick={removePoint} disabled={state.points.length <= 1} className={styles.argumentsButton}>
+                    <Minus />
+                  </button>
                 </div>
               </div>
 
-              <div style={{ marginTop: '1rem' }}>
+              <div style={{ marginTop: '0.75rem' }}>
                 {state.points.map((p, idx) => (
-                  <div key={idx} className={styles.argumentBlock} style={{ marginTop: idx > 0 ? '1rem' : 0 }}>
-                    <p className={styles.argumentNumber}>Argumento {idx + 1}</p>
-                    <Input
-                      label="Point (Idea)"
-                      value={p.point}
-                      onChange={e => updatePoint(idx, 'point', e.target.value)}
-                    />
-                    <Textarea
-                      label="Reason (Why?)"
-                      rows={2}
-                      value={p.reason}
-                      onChange={e => updatePoint(idx, 'reason', e.target.value)}
-                    />
-                    <Textarea
-                      label="Example (Specific)"
-                      rows={2}
-                      value={p.example}
-                      onChange={e => updatePoint(idx, 'example', e.target.value)}
-                    />
+                  <div key={idx} className={styles.argumentBlock}>
+                    <span className={styles.argumentNumber}>Argumento {idx + 1}</span>
+                    <div className={styles.formGroup}>
+                      <label className={styles.formLabel}>Point (Idea)</label>
+                      <input
+                        className={styles.formInput}
+                        placeholder="Main point..."
+                        value={p.point}
+                        onChange={e => updatePoint(idx, 'point', e.target.value)}
+                      />
+                    </div>
+                    <div className={styles.formGroup}>
+                      <label className={styles.formLabel}>Reason (Why?)</label>
+                      <textarea
+                        className={styles.formTextarea}
+                        style={{ minHeight: '60px' }}
+                        placeholder="Because..."
+                        value={p.reason}
+                        onChange={e => updatePoint(idx, 'reason', e.target.value)}
+                      />
+                    </div>
+                    <div className={styles.formGroup} style={{ marginBottom: 0 }}>
+                      <label className={styles.formLabel}>Example (Specific)</label>
+                      <textarea
+                        className={styles.formTextarea}
+                        style={{ minHeight: '60px' }}
+                        placeholder="For example..."
+                        value={p.example}
+                        onChange={e => updatePoint(idx, 'example', e.target.value)}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -194,15 +288,23 @@ export default function Task2Page() {
                 <span>Conclusão Auto:</span> &ldquo;In conclusion... because [Point 1] and [Point 2].&rdquo;
               </div>
             </div>
-          </Card>
+          </div>
         </div>
 
-        {/* Col 3: Writing */}
-        <div className={styles.taskColumnFlex}>
-          <Card className={styles.writingCard}>
+        {/* Column 3: Writing */}
+        <div className={styles.taskColumn}>
+          <div className={`${styles.glassCard} ${styles.writingCard}`}>
             <div className={styles.writingHeader}>
-              <h3 className={styles.writingTitle}>3. Escrita</h3>
-              <WordCounter count={wordCount} />
+              <div className={styles.writingTitleGroup}>
+                <div className={`${styles.cardIcon} ${styles.cardIconCyan}`}>
+                  <PenTool />
+                </div>
+                <h3 className={styles.writingTitle}>3. Escrita</h3>
+              </div>
+              <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
+                <span className={styles.wordCounterIcon}>✍️</span>
+                <span>{wordCount} palavras</span>
+              </div>
             </div>
 
             <textarea
@@ -213,19 +315,37 @@ export default function Task2Page() {
             />
 
             <div className={styles.writingActions}>
-              <Button variant="secondary" onClick={generateStructure} title="Preencher esqueleto">
-                <Wand2 size={16} /> Gerar Estrutura
-              </Button>
-              <Button style={{ flex: 1 }} onClick={handleEvaluate}>
-                <RefreshCw size={16} /> Avaliar (Regras)
-              </Button>
+              <button className={`${styles.actionBtn} ${styles.actionBtnSecondary}`} onClick={generateStructure}>
+                <Wand2 /> Gerar Estrutura
+              </button>
+              <button className={`${styles.actionBtn} ${styles.actionBtnPrimary}`} onClick={handleEvaluate}>
+                <RefreshCw /> Avaliar (Regras)
+              </button>
             </div>
-          </Card>
+          </div>
 
+          {/* Feedback Panel */}
           {feedback.length > 0 && (
-            <Card title="Feedback" style={{ backgroundColor: '#f8fafc', borderColor: '#e2e8f0' }}>
-              <FeedbackList items={feedback} />
-            </Card>
+            <div className={styles.feedbackPanel}>
+              <div className={styles.feedbackHeader}>
+                <div className={styles.feedbackIcon}>
+                  <MessageSquare />
+                </div>
+                <h3 className={styles.feedbackTitle}>Feedback</h3>
+              </div>
+              <div className={styles.feedbackList}>
+                {feedback.map((item, index) => (
+                  <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
+                    <div className={styles.feedbackItemIcon}>
+                      {getFeedbackIcon(item)}
+                    </div>
+                    <div className={styles.feedbackItemContent}>
+                      <p>{item.message}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           )}
         </div>
       </div>

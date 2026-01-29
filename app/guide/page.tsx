@@ -1,9 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Card, Button } from '@/components/Common';
 import { guideMainContent } from '@content/pt/guide-main';
-import { ArrowRight, BookOpen, Lightbulb, CheckCircle, Mail, PenTool } from 'lucide-react';
+import { ArrowRight, BookOpen, Lightbulb, CheckCircle, Mail, PenTool, Sparkles } from 'lucide-react';
 import styles from '@/styles/Guide.module.scss';
 
 export default function GuidePage() {
@@ -12,20 +11,27 @@ export default function GuidePage() {
 
   return (
     <div className={styles.guideContainer}>
+      {/* Hero Header */}
       <div className={styles.guideHeader}>
-        <h1>{content.pageTitle}</h1>
+        <h1>📚 {content.pageTitle}</h1>
         <p>{content.pageSubtitle}</p>
       </div>
 
       {/* Intro Section */}
-      <Card title={content.intro.title}>
+      <div className={styles.guideCard}>
+        <div className={styles.cardHeader}>
+          <div className={styles.cardIcon}>
+            <Sparkles size={18} />
+          </div>
+          <h3 className={styles.cardTitle}>{content.intro.title}</h3>
+        </div>
         <p className={styles.introDescription}>{content.intro.description}</p>
         <ul className={styles.contentList}>
           {content.intro.tips.map((tip, index) => (
             <li key={index} className={styles.contentItem}>{tip}</li>
           ))}
         </ul>
-      </Card>
+      </div>
 
       {/* Task Cards */}
       <div className={styles.guideCardsGrid}>
@@ -50,16 +56,22 @@ export default function GuidePage() {
                 ))}
               </ul>
 
-              <Button onClick={() => router.push(task.link)} className={styles.guideTaskButton}>
+              <button onClick={() => router.push(task.link)} className={styles.guideTaskButton}>
                 {task.buttonText} <ArrowRight size={16} />
-              </Button>
+              </button>
             </div>
           );
         })}
       </div>
 
       {/* General Tips */}
-      <Card title={content.generalTips.title}>
+      <div className={styles.guideCard}>
+        <div className={styles.cardHeader}>
+          <div className={styles.cardIcon} style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)', boxShadow: '0 4px 12px rgba(245, 158, 11, 0.3)' }}>
+            <Lightbulb size={18} />
+          </div>
+          <h3 className={styles.cardTitle}>{content.generalTips.title}</h3>
+        </div>
         <div className={styles.generalTipsGrid}>
           {content.generalTips.tips.map((tip, index) => (
             <div key={index} className={styles.generalTipItem}>
@@ -71,7 +83,7 @@ export default function GuidePage() {
             </div>
           ))}
         </div>
-      </Card>
+      </div>
 
       {/* CTA Section */}
       <div className={styles.guideCta}>

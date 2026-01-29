@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2 } from 'lucide-react';
-import styles from '@/styles/Pages.module.scss';
+import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info } from 'lucide-react';
+import styles from '@/styles/TaskPages.module.scss';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -16,7 +16,6 @@ const INITIAL_STATE: Task1State = {
   whoAmI: '',
   whyWriting: '',
   bodyStructure: ['First', 'Second', 'Third'],
-  bodyStructureNotes: ['', '', '', ''], // First, Second, Third (optional), Final/transition
   cta: '',
   pleaseLetMeKnow: 'Please let me know if you require any further information.',
   signOff: '',
@@ -37,12 +36,6 @@ export default function Task1Page() {
     const newQuestions = [...state.questions];
     newQuestions[index] = value;
     updateState('questions', newQuestions);
-  };
-
-  const updateBodyStructureNote = (index: number, value: string) => {
-    const newNotes = [...state.bodyStructureNotes];
-    newNotes[index] = value;
-    updateState('bodyStructureNotes', newNotes);
   };
 
   const generateTemplate = () => {
@@ -67,7 +60,6 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     const results = generateTask1Feedback(state);
     setFeedback(results);
 
-    // Save minimal stats (guard for SSR safety)
     if (typeof window !== 'undefined') {
       try {
         localStorage.setItem('celpip_last_session', JSON.stringify({
@@ -76,7 +68,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
           date: new Date().toISOString()
         }));
       } catch {
-        // Silently fail if localStorage is not available
+        // Silently fail
       }
     }
   };
@@ -88,44 +80,93 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     }
   };
 
+  const getWordCounterClass = () => {
+    if (wordCount < 150) return styles.wordCounterLow;
+    if (wordCount <= 200) return styles.wordCounterGood;
+    return styles.wordCounterHigh;
+  };
+
+  // Map severity + passed to visual type
+  const getFeedbackItemClass = (item: FeedbackItem) => {
+    if (item.passed) return styles.feedbackItemSuccess;
+    switch (item.severity) {
+      case 'BLOCKER': return styles.feedbackItemError;
+      case 'IMPORTANT': return styles.feedbackItemWarning;
+      case 'POLISH': return styles.feedbackItemInfo;
+      default: return styles.feedbackItemInfo;
+    }
+  };
+
+  const getFeedbackIcon = (item: FeedbackItem) => {
+    if (item.passed) return <CheckCircle size={16} className="text-green-600" />;
+    switch (item.severity) {
+      case 'BLOCKER': return <AlertCircle size={16} className="text-red-600" />;
+      case 'IMPORTANT': return <AlertTriangle size={16} className="text-amber-600" />;
+      case 'POLISH': return <Info size={16} className="text-blue-600" />;
+      default: return <Info size={16} className="text-blue-600" />;
+    }
+  };
+
   return (
-    <div className={styles.taskContainer}>
-      <div className={styles.taskHeader}>
-        <div className={styles.taskTitle}>
-          <h2>Task 1 — Email Writing</h2>
-          <p>Tempo recomendado: 27 minutos</p>
-        </div>
-        <div className={styles.taskActions}>
-          <Button variant="ghost" onClick={handleClear} className={styles.taskDeleteBtn}>
-            <Trash2 size={16} /> Limpar
-          </Button>
-          <Button variant="outline" onClick={() => { /* Save draft logic placeholder */ }}>
-            <Save size={16} /> Salvar Rascunho
-          </Button>
+    <div className={styles.taskPageContainer}>
+      {/* Mini Hero Section */}
+      <div className={styles.miniHero}>
+        <div className={styles.miniHeroContent}>
+          <div className={styles.miniHeroLeft}>
+            <div className={styles.miniHeroIcon}>
+              <Mail />
+            </div>
+            <div className={styles.miniHeroTitle}>
+              <h1>Task 1 — <span>Email Writing</span></h1>
+              <p><Clock size={14} style={{ display: 'inline', marginRight: 4 }} /> Tempo recomendado: 27 minutos</p>
+            </div>
+          </div>
+          <div className={styles.miniHeroActions}>
+            <button onClick={handleClear} className={`${styles.heroBtn} ${styles.heroBtnDanger}`}>
+              <Trash2 size={16} /> Limpar
+            </button>
+            <button className={`${styles.heroBtn} ${styles.heroBtnPrimary}`}>
+              <Save size={16} /> Salvar Rascunho
+            </button>
+          </div>
         </div>
       </div>
 
+      {/* Task Grid */}
       <div className={styles.taskGrid}>
         {/* Column 1: Context */}
         <div className={styles.taskColumn}>
-          <Card title="1. Contexto do Enunciado">
-            <Textarea
-              label="Enunciado da Tarefa"
-              placeholder="Cole o enunciado aqui..."
-              rows={4}
-              value={state.promptText}
-              onChange={e => updateState('promptText', e.target.value)}
-            />
+          <div className={styles.glassCard}>
+            <div className={styles.cardHeader}>
+              <div className={styles.cardIcon}>
+                <FileText />
+              </div>
+              <h3 className={styles.cardTitle}>1. Contexto do Enunciado</h3>
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Enunciado da Tarefa</label>
+              <textarea
+                className={styles.formTextarea}
+                placeholder="Cole o enunciado aqui..."
+                rows={4}
+                value={state.promptText}
+                onChange={e => updateState('promptText', e.target.value)}
+              />
+            </div>
 
             <div className={styles.formGrid}>
-              <Input
-                label="Destinatário (WHO)"
-                placeholder="Ex: Manager, Mr. Smith"
-                value={state.recipient}
-                onChange={e => updateState('recipient', e.target.value)}
-              />
-              <div>
-                <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: '#334155', marginBottom: '0.25rem' }}>Formalidade</label>
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Destinatário (WHO)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="Ex: Manager, Mr. Smith"
+                  value={state.recipient}
+                  onChange={e => updateState('recipient', e.target.value)}
+                />
+              </div>
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Formalidade</label>
                 <select
                   className={styles.formSelect}
                   value={state.formality}
@@ -137,126 +178,141 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               </div>
             </div>
 
-            <div className={styles.questionsContainer}>
-              <label className={styles.questionsLabel}>Perguntas do Enunciado</label>
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Perguntas do Enunciado</label>
               {state.questions.map((q, i) => (
                 <input
                   key={i}
-                  className={styles.questionInput}
+                  className={styles.formInput}
+                  style={{ marginTop: i > 0 ? '0.5rem' : 0 }}
                   placeholder={`Pergunta ${i + 1}`}
                   value={q}
                   onChange={e => updateQuestion(i, e.target.value)}
                 />
               ))}
             </div>
-          </Card>
+          </div>
         </div>
 
         {/* Column 2: Planning */}
         <div className={styles.taskColumn}>
-          <Card title="2. Planejamento">
-            <Input
-              label="Abertura (Dear...)"
-              value={state.opening}
-              onChange={e => updateState('opening', e.target.value)}
-              suggestions={["Dear Mr. Silva,", "Dear Manager,", "To Whom It May Concern,"]}
-              onSuggestionClick={val => updateState('opening', val)}
-            />
+          <div className={styles.glassCard}>
+            <div className={styles.cardHeader}>
+              <div className={`${styles.cardIcon} ${styles.cardIconPurple}`}>
+                <PenTool />
+              </div>
+              <h3 className={styles.cardTitle}>2. Planejamento</h3>
+            </div>
 
-            <Input
-              label="Quem sou eu (1 frase)"
-              placeholder="Ex: I am a resident of building B."
-              value={state.whoAmI}
-              onChange={e => updateState('whoAmI', e.target.value)}
-            />
-
-            <Input
-              label="Por que estou escrevendo (Purpose)"
-              placeholder="Ex: I am writing to complain about..."
-              value={state.whyWriting}
-              onChange={e => updateState('whyWriting', e.target.value)}
-            />
-
-            <div className={styles.bodyStructure}>
-              <span>Estrutura do Corpo</span>
-              <p className={styles.bodyStructureHelper}>Notas para ajudar a estruturar o email (não serão avaliadas ou contadas)</p>
-              <div className={styles.bodyStructureNotes}>
-                <div className={styles.bodyStructureNoteItem}>
-                  <label className={styles.bodyStructureNoteLabel}>Ideia do primeiro parágrafo</label>
-                  <textarea
-                    className={styles.bodyStructureNoteTextarea}
-                    placeholder="Ex: abordar o problema de ruído..."
-                    rows={2}
-                    value={state.bodyStructureNotes[0]}
-                    onChange={e => updateBodyStructureNote(0, e.target.value)}
-                  />
-                </div>
-                <div className={styles.bodyStructureNoteItem}>
-                  <label className={styles.bodyStructureNoteLabel}>Ideia do segundo parágrafo</label>
-                  <textarea
-                    className={styles.bodyStructureNoteTextarea}
-                    placeholder="Ex: discutir problemas de estacionamento..."
-                    rows={2}
-                    value={state.bodyStructureNotes[1]}
-                    onChange={e => updateBodyStructureNote(1, e.target.value)}
-                  />
-                </div>
-                <div className={styles.bodyStructureNoteItem}>
-                  <label className={styles.bodyStructureNoteLabel}>Ideia do terceiro parágrafo (opcional)</label>
-                  <textarea
-                    className={styles.bodyStructureNoteTextarea}
-                    placeholder="Ex: mencionar questões de segurança..."
-                    rows={2}
-                    value={state.bodyStructureNotes[2]}
-                    onChange={e => updateBodyStructureNote(2, e.target.value)}
-                  />
-                </div>
-                <div className={styles.bodyStructureNoteItem}>
-                  <label className={styles.bodyStructureNoteLabel}>Ideia do parágrafo final / transição</label>
-                  <textarea
-                    className={styles.bodyStructureNoteTextarea}
-                    placeholder="Ex: resumir e solicitar ação..."
-                    rows={2}
-                    value={state.bodyStructureNotes[3]}
-                    onChange={e => updateBodyStructureNote(3, e.target.value)}
-                  />
-                </div>
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Abertura (Dear...)</label>
+              <input
+                className={styles.formInput}
+                placeholder="Dear Mr. Silva,"
+                value={state.opening}
+                onChange={e => updateState('opening', e.target.value)}
+              />
+              <div className={styles.tagGroup}>
+                {["Dear Mr. Silva,", "Dear Manager,", "To Whom It May Concern,"].map(suggestion => (
+                  <button
+                    key={suggestion}
+                    className={styles.tag}
+                    onClick={() => updateState('opening', suggestion)}
+                  >
+                    {suggestion}
+                  </button>
+                ))}
               </div>
             </div>
 
-            <Input
-              label="CTA / Pedido / Sugestão (Opcional)"
-              placeholder="I would suggest that..."
-              value={state.cta}
-              onChange={e => updateState('cta', e.target.value)}
-            />
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Quem sou eu (1 frase)</label>
+              <input
+                className={styles.formInput}
+                placeholder="Ex: I am a resident of building B."
+                value={state.whoAmI}
+                onChange={e => updateState('whoAmI', e.target.value)}
+              />
+            </div>
 
-            <Input
-              label="Closing Line (Obrigatório)"
-              value={state.pleaseLetMeKnow}
-              onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
-              suggestions={[
-                "Please let me know if you have any questions.",
-                "I look forward to hearing from you."
-              ]}
-              onSuggestionClick={val => updateState('pleaseLetMeKnow', val)}
-            />
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Por que estou escrevendo (Purpose)</label>
+              <input
+                className={styles.formInput}
+                placeholder="Ex: I am writing to complain about..."
+                value={state.whyWriting}
+                onChange={e => updateState('whyWriting', e.target.value)}
+              />
+            </div>
 
-            <Input
-              label="Assinatura"
-              placeholder="Regards, [Full Name]"
-              value={state.signOff}
-              onChange={e => updateState('signOff', e.target.value)}
-            />
-          </Card>
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Estrutura do Corpo</label>
+              <div className={styles.tagGroup}>
+                {["First", "Second", "Third", "Finally"].map(tag => (
+                  <span key={tag} className={`${styles.tag} ${styles.tagActive}`}>{tag}</span>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>CTA / Pedido / Sugestão (Opcional)</label>
+              <input
+                className={styles.formInput}
+                placeholder="I would suggest that..."
+                value={state.cta}
+                onChange={e => updateState('cta', e.target.value)}
+              />
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Closing Line (Obrigatório)</label>
+              <input
+                className={styles.formInput}
+                value={state.pleaseLetMeKnow}
+                onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
+              />
+              <div className={styles.tagGroup}>
+                {[
+                  "Please let me know if you have any questions.",
+                  "I look forward to hearing from you."
+                ].map(suggestion => (
+                  <button
+                    key={suggestion}
+                    className={styles.tag}
+                    onClick={() => updateState('pleaseLetMeKnow', suggestion)}
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.formGroup}>
+              <label className={styles.formLabel}>Assinatura</label>
+              <input
+                className={styles.formInput}
+                placeholder="Regards, [Full Name]"
+                value={state.signOff}
+                onChange={e => updateState('signOff', e.target.value)}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Column 3: Writing & Feedback */}
-        <div className={styles.taskColumnFlex}>
-          <Card className={styles.writingCard}>
+        <div className={styles.taskColumn}>
+          <div className={`${styles.glassCard} ${styles.writingCard}`}>
             <div className={styles.writingHeader}>
-              <h3 className={styles.writingTitle}>3. Escrita</h3>
-              <WordCounter count={wordCount} />
+              <div className={styles.writingTitleGroup}>
+                <div className={`${styles.cardIcon} ${styles.cardIconCyan}`}>
+                  <PenTool />
+                </div>
+                <h3 className={styles.writingTitle}>3. Escrita</h3>
+              </div>
+              <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
+                <span className={styles.wordCounterIcon}>✍️</span>
+                <span>{wordCount} palavras</span>
+              </div>
             </div>
 
             <textarea
@@ -267,20 +323,37 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             />
 
             <div className={styles.writingActions}>
-              <Button variant="secondary" onClick={generateTemplate} title="Preencher com base no plano">
-                <Wand2 size={16} /> Template
-              </Button>
-              <Button style={{ flex: 1 }} onClick={handleEvaluate}>
-                <RefreshCw size={16} /> Avaliar (Regras)
-              </Button>
+              <button className={`${styles.actionBtn} ${styles.actionBtnSecondary}`} onClick={generateTemplate}>
+                <Wand2 /> Template
+              </button>
+              <button className={`${styles.actionBtn} ${styles.actionBtnPrimary}`} onClick={handleEvaluate}>
+                <RefreshCw /> Avaliar (Regras)
+              </button>
             </div>
-          </Card>
+          </div>
 
           {/* Feedback Panel */}
           {feedback.length > 0 && (
-            <Card title="Feedback" style={{ backgroundColor: '#f8fafc', borderColor: '#e2e8f0' }}>
-              <FeedbackList items={feedback} />
-            </Card>
+            <div className={styles.feedbackPanel}>
+              <div className={styles.feedbackHeader}>
+                <div className={styles.feedbackIcon}>
+                  <MessageSquare />
+                </div>
+                <h3 className={styles.feedbackTitle}>Feedback</h3>
+              </div>
+              <div className={styles.feedbackList}>
+                {feedback.map((item, index) => (
+                  <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
+                    <div className={styles.feedbackItemIcon}>
+                      {getFeedbackIcon(item)}
+                    </div>
+                    <div className={styles.feedbackItemContent}>
+                      <p>{item.message}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           )}
         </div>
       </div>
