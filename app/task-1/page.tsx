@@ -1,14 +1,14 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
+import ThemePreview, { ThemeData } from '@/components/ThemePreview';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
 import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ArrowRight } from 'lucide-react';
 import styles from '@/styles/TaskPages.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
-import { useRef } from 'react';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -26,13 +26,19 @@ const INITIAL_STATE: Task1State = {
   content: ''
 };
 
+// Timing constants
+const SCROLL_DELAY_MS = 100;
+const MESSAGE_DISPLAY_MS = 3000;
+
 export default function Task1Page() {
   const [state, setState] = useState<Task1State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
   const [transferMessage, setTransferMessage] = useState<string>('');
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+  const [selectedTheme, setSelectedTheme] = useState<ThemeData | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const planningRef = useRef<HTMLDivElement>(null);
 
   // Load contexts from JSON
   useEffect(() => {
@@ -49,9 +55,50 @@ export default function Task1Page() {
   const handleContextSelect = (context: ContextItem) => {
     setSelectedContextId(context.id);
     if (context.category !== 'custom') {
+      // Set the selected theme for preview
+      setSelectedTheme(context as ThemeData);
       updateState('promptText', context.content);
+    } else {
+      // Clear selected theme for custom
+      setSelectedTheme(null);
     }
-    // If custom, just clear the selection visual but don't change content
+  };
+
+  // Apply theme to form fields
+  const handleApplyTheme = (theme: ThemeData) => {
+    // Set prompt text
+    updateState('promptText', theme.content);
+    
+    // Set recipient if provided
+    if (theme.recipient) {
+      updateState('recipient', theme.recipient);
+    }
+    
+    // Set formality if provided
+    if (theme.formality) {
+      updateState('formality', theme.formality);
+    }
+    
+    // Parse questions from content (bullet points) if not explicitly provided
+    let questions: string[] = [];
+    if (theme.questions && theme.questions.length > 0) {
+      questions = theme.questions;
+    } else {
+      // Extract bullet points from content
+      const bulletRegex = /[•\-\*]\s*(.+?)(?=\n|$)/g;
+      const matches = [...theme.content.matchAll(bulletRegex)];
+      questions = matches.map(m => m[1].trim()).slice(0, 4);
+    }
+    updateState('questions', questions);
+    
+    // Scroll to planning section after applying
+    setTimeout(() => {
+      planningRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, SCROLL_DELAY_MS);
+    
+    // Show confirmation message
+    setTransferMessage('✅ Theme applied to form successfully!');
+    setTimeout(() => setTransferMessage(''), MESSAGE_DISPLAY_MS);
   };
 
   const wordCount = countWords(state.content);
@@ -270,11 +317,38 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                 </select>
               </div>
             </div>
+
+            {/* Questions from the prompt (editable) */}
+            {state.questions.length > 0 && (
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Perguntas do Enunciado</label>
+                {state.questions.map((question, index) => (
+                  <input
+                    key={index}
+                    className={styles.formInput}
+                    style={{ marginBottom: index < state.questions.length - 1 ? '0.5rem' : 0 }}
+                    placeholder={`Pergunta ${index + 1}`}
+                    value={question}
+                    onChange={e => {
+                      const newQuestions = [...state.questions];
+                      newQuestions[index] = e.target.value;
+                      updateState('questions', newQuestions);
+                    }}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/* Theme Preview Card */}
+            <ThemePreview 
+              theme={selectedTheme} 
+              onApply={handleApplyTheme}
+            />
           </div>
         </div>
 
         {/* Column 2: Planning */}
-        <div className={styles.taskColumn}>
+        <div className={styles.taskColumn} ref={planningRef}>
           <div className={styles.glassCard}>
             <div className={styles.cardHeader}>
               <div className={`${styles.cardIcon} ${styles.cardIconPurple}`}>
