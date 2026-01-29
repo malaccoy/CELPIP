@@ -9,6 +9,9 @@ export interface ContextItem {
   title: string;
   content: string;
   category: string;
+  recipient?: string;
+  formality?: 'Formal' | 'Semi-formal';
+  questions?: string[];
 }
 
 interface ContextSelectorProps {

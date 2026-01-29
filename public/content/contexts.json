@@ -10,79 +10,170 @@
       "id": "t1-complaint-noise",
       "title": "Reclamação: Barulho do vizinho",
       "content": "You recently moved into a new apartment. Your neighbor has been making excessive noise late at night, affecting your sleep and work. Write an email to your building manager. In your email:\n• Describe the noise problem\n• Explain how it has affected you\n• Request a specific action to resolve the issue",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Building Manager",
+      "formality": "Formal",
+      "questions": [
+        "Describe the noise problem",
+        "Explain how it has affected you",
+        "Request a specific action to resolve the issue"
+      ]
     },
     {
       "id": "t1-complaint-product",
       "title": "Reclamação: Produto defeituoso",
       "content": "You recently purchased an electronic device from an online store. The product arrived damaged and is not working properly. Write an email to customer service. In your email:\n• Describe the product and the problem\n• Explain when and how you discovered the defect\n• Request a refund or replacement",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Customer Service",
+      "formality": "Formal",
+      "questions": [
+        "Describe the product and the problem",
+        "Explain when and how you discovered the defect",
+        "Request a refund or replacement"
+      ]
     },
     {
       "id": "t1-complaint-service",
       "title": "Reclamação: Serviço ruim em restaurante",
       "content": "You recently had a terrible experience at a restaurant where you celebrated a special occasion. The service was poor and the food was not as expected. Write an email to the restaurant manager. In your email:\n• Describe the occasion and your expectations\n• Explain what went wrong during your visit\n• Suggest how they can make it right",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Restaurant Manager",
+      "formality": "Formal",
+      "questions": [
+        "Describe the occasion and your expectations",
+        "Explain what went wrong during your visit",
+        "Suggest how they can make it right"
+      ]
     },
     {
       "id": "t1-complaint-gym",
       "title": "Reclamação: Academia com equipamentos quebrados",
       "content": "You are a member of a local gym. Several pieces of equipment have been broken for weeks, and the facility is not as clean as it used to be. Write an email to the gym management. In your email:\n• Describe the current state of the gym\n• Explain how this affects your workout routine\n• Request improvements or compensation",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Gym Management",
+      "formality": "Formal",
+      "questions": [
+        "Describe the current state of the gym",
+        "Explain how this affects your workout routine",
+        "Request improvements or compensation"
+      ]
     },
     {
       "id": "t1-complaint-delivery",
       "title": "Reclamação: Atraso na entrega",
       "content": "You ordered a package that was supposed to arrive two weeks ago, but it still hasn't been delivered. You have contacted the delivery company multiple times without success. Write an email to the company's customer service. In your email:\n• Provide order details and expected delivery date\n• Explain the inconvenience caused by the delay\n• Demand immediate action or compensation",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Customer Service",
+      "formality": "Formal",
+      "questions": [
+        "Provide order details and expected delivery date",
+        "Explain the inconvenience caused by the delay",
+        "Demand immediate action or compensation"
+      ]
     },
     {
       "id": "t1-complaint-hotel",
       "title": "Reclamação: Problemas no hotel",
       "content": "During your recent stay at a hotel, you experienced several problems including a dirty room, broken air conditioning, and rude staff. Write an email to the hotel manager. In your email:\n• Describe the issues you encountered\n• Explain how these problems affected your stay\n• Request a partial refund or future discount",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Hotel Manager",
+      "formality": "Formal",
+      "questions": [
+        "Describe the issues you encountered",
+        "Explain how these problems affected your stay",
+        "Request a partial refund or future discount"
+      ]
     },
     {
       "id": "t1-complaint-parking",
       "title": "Reclamação: Problema de estacionamento",
       "content": "You live in an apartment building where parking spaces are assigned. Another resident has been consistently parking in your designated spot. Write an email to the building administrator. In your email:\n• Explain the parking situation\n• Describe how often this happens and the inconvenience caused\n• Request enforcement of parking rules",
-      "category": "complaint"
+      "category": "complaint",
+      "recipient": "Building Administrator",
+      "formality": "Formal",
+      "questions": [
+        "Explain the parking situation",
+        "Describe how often this happens and the inconvenience caused",
+        "Request enforcement of parking rules"
+      ]
     },
     {
       "id": "t1-request-schedule",
       "title": "Solicitação: Mudança de horário de trabalho",
       "content": "You need to change your work schedule temporarily due to personal circumstances. Write an email to your supervisor. In your email:\n• Explain why you need to change your schedule\n• Propose the new schedule you would like\n• Assure them your work quality will not be affected",
-      "category": "request"
+      "category": "request",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Explain why you need to change your schedule",
+        "Propose the new schedule you would like",
+        "Assure them your work quality will not be affected"
+      ]
     },
     {
       "id": "t1-request-reference",
       "title": "Solicitação: Carta de recomendação",
       "content": "You are applying for a new job and need a reference letter from your former employer. Write an email to your previous manager. In your email:\n• Remind them who you are and when you worked together\n• Explain why you need the reference\n• Specify what aspects of your work you'd like them to highlight",
-      "category": "request"
+      "category": "request",
+      "recipient": "Previous Manager",
+      "formality": "Formal",
+      "questions": [
+        "Remind them who you are and when you worked together",
+        "Explain why you need the reference",
+        "Specify what aspects of your work you'd like them to highlight"
+      ]
     },
     {
       "id": "t1-request-extension",
       "title": "Solicitação: Extensão de prazo",
       "content": "You are working on an important project but need more time to complete it due to unexpected circumstances. Write an email to your project manager. In your email:\n• Explain the current status of your project\n• Describe why you need an extension\n• Propose a new deadline and how you will meet it",
-      "category": "request"
+      "category": "request",
+      "recipient": "Project Manager",
+      "formality": "Formal",
+      "questions": [
+        "Explain the current status of your project",
+        "Describe why you need an extension",
+        "Propose a new deadline and how you will meet it"
+      ]
     },
     {
       "id": "t1-request-vacation",
       "title": "Solicitação: Férias/Folga",
       "content": "You need to request time off from work for a family event. Write an email to your manager. In your email:\n• Explain the reason for your request\n• Specify the dates you need off\n• Describe how your responsibilities will be covered",
-      "category": "request"
+      "category": "request",
+      "recipient": "Manager",
+      "formality": "Formal",
+      "questions": [
+        "Explain the reason for your request",
+        "Specify the dates you need off",
+        "Describe how your responsibilities will be covered"
+      ]
     },
     {
       "id": "t1-request-transfer",
       "title": "Solicitação: Transferência de departamento",
       "content": "You would like to transfer to a different department within your company. Write an email to the Human Resources department. In your email:\n• Explain your current role and experience\n• Describe why you want to transfer\n• Highlight how you would contribute to the new department",
-      "category": "request"
+      "category": "request",
+      "recipient": "Human Resources",
+      "formality": "Formal",
+      "questions": [
+        "Explain your current role and experience",
+        "Describe why you want to transfer",
+        "Highlight how you would contribute to the new department"
+      ]
     },
     {
       "id": "t1-request-meeting",
       "title": "Solicitação: Reunião com o chefe",
       "content": "You need to schedule a meeting with your supervisor to discuss a work-related concern. Write an email to your supervisor. In your email:\n• State the purpose of the meeting\n• Suggest possible times that work for you\n• Briefly outline what you would like to discuss",
-      "category": "request"
+      "category": "request",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "State the purpose of the meeting",
+        "Suggest possible times that work for you",
+        "Briefly outline what you would like to discuss"
+      ]
     },
     {
       "id": "t1-request-wfh",
