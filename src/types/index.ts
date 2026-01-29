@@ -13,6 +13,7 @@ export interface Task1State {
   whoAmI: string;
   whyWriting: string;
   bodyStructure: string[]; // First, Second, etc.
+  bodyStructureNotes: string[]; // Notes for each paragraph (first, second, third, final)
   cta: string;
   pleaseLetMeKnow: string;
   signOff: string;
