@@ -14,7 +14,7 @@ const INITIAL_STATE: Task1State = {
   promptText: '',
   recipient: '',
   formality: 'Formal',
-  questions: ['', '', '', ''],
+  questions: [],
   opening: '',
   whoAmI: '',
   whyWriting: '',
@@ -60,12 +60,6 @@ export default function Task1Page() {
     setState(prev => ({ ...prev, [field]: value }));
   };
 
-  const updateQuestion = (index: number, value: string) => {
-    const newQuestions = [...state.questions];
-    newQuestions[index] = value;
-    updateState('questions', newQuestions);
-  };
-
   const updateBodyNote = (index: number, value: string) => {
     const newNotes = [...state.bodyStructureNotes];
     newNotes[index] = value;
@@ -77,11 +71,11 @@ export default function Task1Page() {
 
 I am writing to ${state.whyWriting || '[reason]'}. My name is ${state.whoAmI || '[Name]'} and I am a resident/customer...
 
-First of all, regarding ${state.questions[0] || 'the first point'}, I would like to say...
+First of all, regarding the first point, I would like to say...
 
-Secondly, ${state.questions[1] ? `about ${state.questions[1]}, ` : ''}...
+Secondly, ...
 
-Thirdly, ${state.questions[2] ? `concerning ${state.questions[2]}, ` : ''}...
+Thirdly, ...
 
 ${state.cta ? state.cta + '.' : ''} ${state.pleaseLetMeKnow}
 
@@ -275,20 +269,6 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   <option value="Semi-formal">Semi-formal</option>
                 </select>
               </div>
-            </div>
-
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Perguntas do Enunciado</label>
-              {state.questions.map((q, i) => (
-                <input
-                  key={i}
-                  className={styles.formInput}
-                  style={{ marginTop: i > 0 ? '0.5rem' : 0 }}
-                  placeholder={`Pergunta ${i + 1}`}
-                  value={q}
-                  onChange={e => updateQuestion(i, e.target.value)}
-                />
-              ))}
             </div>
           </div>
         </div>
