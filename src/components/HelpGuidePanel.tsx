@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { X, Lightbulb, CheckCircle, AlertTriangle, Target, BookOpen } from 'lucide-react';
 import styles from '@/styles/HelpGuidePanel.module.scss';
 
@@ -126,6 +126,31 @@ const task2Guide = {
 
 export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose, initialTab = 'task1' }) => {
   const [activeTab, setActiveTab] = useState<'task1' | 'task2'>(initialTab);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  // Sync activeTab with initialTab when panel opens
+  useEffect(() => {
+    if (isOpen) {
+      setActiveTab(initialTab);
+    }
+  }, [isOpen, initialTab]);
+
+  // Focus management and Escape key handling
+  useEffect(() => {
+    if (isOpen) {
+      // Focus the close button when panel opens
+      closeButtonRef.current?.focus();
+
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          onClose();
+        }
+      };
+
+      document.addEventListener('keydown', handleEscape);
+      return () => document.removeEventListener('keydown', handleEscape);
+    }
+  }, [isOpen, onClose]);
 
   const guide = activeTab === 'task1' ? task1Guide : task2Guide;
 
@@ -134,30 +159,36 @@ export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose,
   return (
     <>
       {/* Overlay */}
-      <div className={styles.overlay} onClick={onClose} />
+      <div className={styles.overlay} onClick={onClose} aria-hidden="true" />
       
       {/* Panel */}
-      <div className={styles.panel}>
+      <div className={styles.panel} role="dialog" aria-labelledby="help-guide-title" aria-modal="true">
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.headerTitle}>
             <BookOpen size={20} />
-            <h2>Writing Guide</h2>
+            <h2 id="help-guide-title">Writing Guide</h2>
           </div>
-          <button onClick={onClose} className={styles.closeButton} aria-label="Close panel">
+          <button ref={closeButtonRef} onClick={onClose} className={styles.closeButton} aria-label="Close panel">
             <X size={20} />
           </button>
         </div>
 
         {/* Tabs */}
-        <div className={styles.tabs}>
+        <div className={styles.tabs} role="tablist" aria-label="Guide sections">
           <button
+            role="tab"
+            aria-selected={activeTab === 'task1'}
+            aria-controls="task1-panel"
             className={`${styles.tab} ${activeTab === 'task1' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('task1')}
           >
             Task 1 – Email
           </button>
           <button
+            role="tab"
+            aria-selected={activeTab === 'task2'}
+            aria-controls="task2-panel"
             className={`${styles.tab} ${activeTab === 'task2' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('task2')}
           >
@@ -166,7 +197,7 @@ export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose,
         </div>
 
         {/* Content */}
-        <div className={styles.content}>
+        <div className={styles.content} role="tabpanel" id={`${activeTab}-panel`}>
           <h3 className={styles.guideTitle}>{guide.title}</h3>
 
           {/* Objective */}
@@ -185,12 +216,12 @@ export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose,
               <h4>{guide.structure.title}</h4>
             </div>
             <div className={styles.structureList}>
-              {guide.structure.sections.map((section, idx) => (
-                <div key={idx} className={styles.structureItem}>
+              {guide.structure.sections.map((section) => (
+                <div key={section.name} className={styles.structureItem}>
                   <h5 className={styles.structureName}>{section.name}</h5>
                   <ul className={styles.structurePoints}>
-                    {section.items.map((item, itemIdx) => (
-                      <li key={itemIdx}>{item}</li>
+                    {section.items.map((item) => (
+                      <li key={item}>{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -205,8 +236,8 @@ export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose,
               <h4>{guide.mistakes.title}</h4>
             </div>
             <div className={styles.mistakesList}>
-              {guide.mistakes.items.map((item, idx) => (
-                <div key={idx} className={styles.mistakeItem}>
+              {guide.mistakes.items.map((item) => (
+                <div key={item.mistake} className={styles.mistakeItem}>
                   <div className={styles.mistakeText}>
                     <span className={styles.mistakeLabel}>✗</span>
                     {item.mistake}
@@ -227,8 +258,8 @@ export const HelpGuidePanel: React.FC<HelpGuidePanelProps> = ({ isOpen, onClose,
               <h4>{guide.tips.title}</h4>
             </div>
             <ul className={styles.tipsList}>
-              {guide.tips.items.map((tip, idx) => (
-                <li key={idx}>
+              {guide.tips.items.map((tip) => (
+                <li key={tip}>
                   <CheckCircle size={14} />
                   <span>{tip}</span>
                 </li>
