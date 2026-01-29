@@ -1,0 +1,540 @@
+// ============================================
+// 📚 TASK HELP PANEL - SIDE PANEL / MODAL
+// ============================================
+
+// Variables (matching existing design)
+$gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+$gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+$gradient-hero: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+
+$glass-bg: rgba(255, 255, 255, 0.95);
+$glass-border: rgba(255, 255, 255, 0.4);
+$glass-blur: blur(20px);
+
+$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// ============================================
+// 🔘 HELP BUTTON
+// ============================================
+
+.helpButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 8px;
+  color: #6366f1;
+  cursor: pointer;
+  transition: all $transition-fast;
+  margin-left: 0.5rem;
+
+  &:hover {
+    background: $gradient-primary;
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  }
+}
+
+// ============================================
+// 🌑 OVERLAY
+// ============================================
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// ============================================
+// 📦 PANEL
+// ============================================
+
+.panel {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  background: $glass-bg;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+// ============================================
+// 🔝 PANEL HEADER
+// ============================================
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: $gradient-hero;
+  color: white;
+  flex-shrink: 0;
+}
+
+.panelTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  svg {
+    opacity: 0.9;
+  }
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+}
+
+// ============================================
+// 📑 TAB NAVIGATION
+// ============================================
+
+.tabNav {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.tabButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover:not(.tabButtonActive) {
+    background: #f8fafc;
+    color: #475569;
+    border-color: #cbd5e1;
+  }
+}
+
+.tabButtonActive {
+  background: $gradient-primary;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+// ============================================
+// 📜 PANEL CONTENT
+// ============================================
+
+.panelContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+
+  // Custom scrollbar
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.2);
+    border-radius: 3px;
+
+    &:hover {
+      background: rgba(99, 102, 241, 0.4);
+    }
+  }
+}
+
+// ============================================
+// 📋 SECTION
+// ============================================
+
+.section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+
+  h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+  }
+
+  svg {
+    color: #6366f1;
+  }
+}
+
+// ============================================
+// ✅ OBJECTIVE LIST
+// ============================================
+
+.objectiveList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: #334155;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+    transition: all $transition-fast;
+
+    &:hover {
+      transform: translateX(4px);
+    }
+
+    svg {
+      color: #10b981;
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+  }
+}
+
+// ============================================
+// 📊 STRUCTURE BLOCKS
+// ============================================
+
+.structureBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.structureBlock {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all $transition-fast;
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08);
+  }
+}
+
+.structureBlockHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.structureNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.375rem;
+  height: 1.375rem;
+  background: $gradient-primary;
+  color: white;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+}
+
+.structureName {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.structureExample {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #475569;
+  font-family: $font-mono;
+  word-break: break-word;
+  margin-bottom: 0.5rem;
+}
+
+.structureTip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+
+  svg {
+    color: #f59e0b;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+}
+
+// ============================================
+// ⚠️ MISTAKES LIST
+// ============================================
+
+.mistakesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.mistakeItem {
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  border-radius: 10px;
+  transition: all $transition-fast;
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.2);
+  }
+}
+
+.mistakeLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #854d0e;
+  margin-bottom: 0.375rem;
+}
+
+.mistakeBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: #ef4444;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.mistakeFix {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #166534;
+  padding-left: 1.625rem;
+}
+
+.fixBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: #10b981;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+// ============================================
+// 💡 TIPS LIST
+// ============================================
+
+.tipsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 0.8125rem;
+    color: #334155;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.5;
+    transition: all $transition-fast;
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+      font-weight: 600;
+    }
+
+    &:hover {
+      color: #1e293b;
+      transform: translateX(4px);
+    }
+  }
+}
+
+// ============================================
+// 📱 MOBILE RESPONSIVE
+// ============================================
+
+@media (max-width: 640px) {
+  .panel {
+    max-width: 100%;
+  }
+
+  .panelHeader {
+    padding: 1rem 1.25rem;
+  }
+
+  .panelTitle h2 {
+    font-size: 1rem;
+  }
+
+  .tabNav {
+    padding: 0.875rem 1rem;
+  }
+
+  .tabButton {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.75rem;
+
+    span {
+      display: none;
+    }
+
+    &::after {
+      content: attr(data-short);
+    }
+  }
+
+  // Show short labels on mobile
+  .tabButton:first-child::after {
+    content: 'Task 1';
+  }
+
+  .tabButton:last-child::after {
+    content: 'Task 2';
+  }
+
+  .panelContent {
+    padding: 1.25rem;
+  }
+
+  .structureBlock {
+    padding: 0.875rem;
+  }
+}
+
+// ============================================
+// 🎭 ANIMATIONS
+// ============================================
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

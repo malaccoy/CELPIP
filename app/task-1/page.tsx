@@ -7,6 +7,7 @@ import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
 import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ArrowRight } from 'lucide-react';
 import styles from '@/styles/TaskPages.module.scss';
+import TaskHelpPanel from '@/components/TaskHelpPanel';
 import { useRef } from 'react';
 
 const INITIAL_STATE: Task1State = {
@@ -300,6 +301,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                 <PenTool />
               </div>
               <h3 className={styles.cardTitle}>2. Planejamento</h3>
+              <TaskHelpPanel defaultTab="task1" />
             </div>
 
             <div className={styles.formGroup}>
