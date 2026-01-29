@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
+import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords } from '@/utils/feedback';
 import { Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ClipboardList } from 'lucide-react';
@@ -23,6 +24,27 @@ const INITIAL_STATE: Task2State = {
 export default function Task2Page() {
   const [state, setState] = useState<Task2State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
+  const [contexts, setContexts] = useState<ContextItem[]>([]);
+  const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+
+  // Load contexts from JSON
+  useEffect(() => {
+    fetch('/content/contexts.json')
+      .then(res => res.json())
+      .then(data => {
+        if (data.task2) {
+          setContexts(data.task2);
+        }
+      })
+      .catch(err => console.error('Failed to load contexts:', err));
+  }, []);
+
+  const handleContextSelect = (context: ContextItem) => {
+    setSelectedContextId(context.id);
+    if (context.category !== 'custom') {
+      updateState('promptText', context.content);
+    }
+  };
 
   const wordCount = countWords(state.content);
 
@@ -153,11 +175,21 @@ export default function Task2Page() {
               <h3 className={styles.cardTitle}>1. Contexto</h3>
             </div>
 
+            {/* Context Selector Dropdown */}
+            {contexts.length > 0 && (
+              <ContextSelector
+                contexts={contexts}
+                selectedId={selectedContextId}
+                onSelect={handleContextSelect}
+                placeholder="Escolha um tema pronto ou crie o seu..."
+              />
+            )}
+
             <div className={styles.formGroup}>
               <label className={styles.formLabel}>Enunciado (Survey)</label>
               <textarea
                 className={styles.formTextarea}
-                placeholder="Cole o enunciado..."
+                placeholder="Cole o enunciado ou selecione um tema acima..."
                 rows={4}
                 value={state.promptText}
                 onChange={e => updateState('promptText', e.target.value)}

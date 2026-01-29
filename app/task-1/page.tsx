@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
+import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info } from 'lucide-react';
+import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ArrowRight } from 'lucide-react';
 import styles from '@/styles/TaskPages.module.scss';
+import { useRef } from 'react';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -16,6 +18,7 @@ const INITIAL_STATE: Task1State = {
   whoAmI: '',
   whyWriting: '',
   bodyStructure: ['First', 'Second', 'Third'],
+  bodyStructureNotes: ['', '', '', ''],
   cta: '',
   pleaseLetMeKnow: 'Please let me know if you require any further information.',
   signOff: '',
@@ -25,6 +28,30 @@ const INITIAL_STATE: Task1State = {
 export default function Task1Page() {
   const [state, setState] = useState<Task1State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
+  const [transferMessage, setTransferMessage] = useState<string>('');
+  const [contexts, setContexts] = useState<ContextItem[]>([]);
+  const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+  const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
+
+  // Load contexts from JSON
+  useEffect(() => {
+    fetch('/content/contexts.json')
+      .then(res => res.json())
+      .then(data => {
+        if (data.task1) {
+          setContexts(data.task1);
+        }
+      })
+      .catch(err => console.error('Failed to load contexts:', err));
+  }, []);
+
+  const handleContextSelect = (context: ContextItem) => {
+    setSelectedContextId(context.id);
+    if (context.category !== 'custom') {
+      updateState('promptText', context.content);
+    }
+    // If custom, just clear the selection visual but don't change content
+  };
 
   const wordCount = countWords(state.content);
 
@@ -36,6 +63,12 @@ export default function Task1Page() {
     const newQuestions = [...state.questions];
     newQuestions[index] = value;
     updateState('questions', newQuestions);
+  };
+
+  const updateBodyNote = (index: number, value: string) => {
+    const newNotes = [...state.bodyStructureNotes];
+    newNotes[index] = value;
+    updateState('bodyStructureNotes', newNotes);
   };
 
   const generateTemplate = () => {
@@ -78,6 +111,61 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
       setState(INITIAL_STATE);
       setFeedback([]);
     }
+  };
+
+  const handleTransferPlanning = () => {
+    const paragraphs: string[] = [];
+    const notes = state.bodyStructureNotes;
+    
+    // P1 - First of all,
+    if (notes[0]?.trim()) {
+      paragraphs.push(`First of all, ${notes[0].trim()}`);
+    }
+    
+    // P2 - Additionally,
+    if (notes[1]?.trim()) {
+      paragraphs.push(`Additionally, ${notes[1].trim()}`);
+    }
+    
+    // P3 - Finally, (optional)
+    if (notes[2]?.trim()) {
+      paragraphs.push(`Finally, ${notes[2].trim()}`);
+    }
+    
+    // Closing - In conclusion,
+    if (notes[3]?.trim()) {
+      paragraphs.push(`In conclusion, ${notes[3].trim()}`);
+    }
+    
+    if (paragraphs.length === 0) {
+      setTransferMessage('⚠️ Nenhum planejamento preenchido para transferir.');
+      setTimeout(() => setTransferMessage(''), 3000);
+      return;
+    }
+    
+    const transferredContent = paragraphs.join('\n\n');
+    
+    // Append to existing content or set new content
+    const currentContent = state.content.trim();
+    const newContent = currentContent 
+      ? `${currentContent}\n\n${transferredContent}` 
+      : transferredContent;
+    
+    updateState('content', newContent);
+    
+    // Show success message
+    setTransferMessage('☑ Planejamento transferido para a escrita final.');
+    setTimeout(() => setTransferMessage(''), 3000);
+    
+    // Focus on writing textarea
+    setTimeout(() => {
+      writingTextareaRef.current?.focus();
+      // Move cursor to end
+      if (writingTextareaRef.current) {
+        writingTextareaRef.current.selectionStart = writingTextareaRef.current.value.length;
+        writingTextareaRef.current.selectionEnd = writingTextareaRef.current.value.length;
+      }
+    }, 100);
   };
 
   const getWordCounterClass = () => {
@@ -144,11 +232,21 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               <h3 className={styles.cardTitle}>1. Contexto do Enunciado</h3>
             </div>
 
+            {/* Context Selector Dropdown */}
+            {contexts.length > 0 && (
+              <ContextSelector
+                contexts={contexts}
+                selectedId={selectedContextId}
+                onSelect={handleContextSelect}
+                placeholder="Escolha um tema pronto ou crie o seu..."
+              />
+            )}
+
             <div className={styles.formGroup}>
               <label className={styles.formLabel}>Enunciado da Tarefa</label>
               <textarea
                 className={styles.formTextarea}
-                placeholder="Cole o enunciado aqui..."
+                placeholder="Cole o enunciado aqui ou selecione um tema acima..."
                 rows={4}
                 value={state.promptText}
                 onChange={e => updateState('promptText', e.target.value)}
@@ -254,6 +352,73 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               </div>
             </div>
 
+            {/* Paragraph Planning Section */}
+            <div className={styles.paragraphPlanningSection}>
+              <div className={styles.planningHeader}>
+                <span className={styles.planningHeaderIcon}>💡</span>
+                <span className={styles.planningHeaderText}>Ideias para os Parágrafos</span>
+                <span className={styles.planningHelperBadge}>Planejamento</span>
+              </div>
+              <p className={styles.planningHelperText}>
+                Use estes campos para organizar suas ideias antes de escrever. Não afetam a contagem de palavras.
+              </p>
+              
+              <div className={styles.planningNotesGrid}>
+                <div className={styles.planningNoteItem}>
+                  <label className={styles.planningNoteLabel}>
+                    <span className={styles.planningNoteBadge}>1º</span> Primeiro parágrafo
+                  </label>
+                  <textarea
+                    className={styles.planningNoteTextarea}
+                    placeholder="Ex: Apresentar o problema, mencionar quando começou..."
+                    value={state.bodyStructureNotes[0]}
+                    onChange={e => updateBodyNote(0, e.target.value)}
+                    rows={2}
+                  />
+                </div>
+
+                <div className={styles.planningNoteItem}>
+                  <label className={styles.planningNoteLabel}>
+                    <span className={styles.planningNoteBadge}>2º</span> Segundo parágrafo
+                  </label>
+                  <textarea
+                    className={styles.planningNoteTextarea}
+                    placeholder="Ex: Detalhar impactos, dar exemplos específicos..."
+                    value={state.bodyStructureNotes[1]}
+                    onChange={e => updateBodyNote(1, e.target.value)}
+                    rows={2}
+                  />
+                </div>
+
+                <div className={styles.planningNoteItem}>
+                  <label className={styles.planningNoteLabel}>
+                    <span className={`${styles.planningNoteBadge} ${styles.planningNoteBadgeOptional}`}>3º</span> Terceiro parágrafo
+                    <span className={styles.optionalTag}>opcional</span>
+                  </label>
+                  <textarea
+                    className={styles.planningNoteTextarea}
+                    placeholder="Ex: Argumento adicional ou contexto extra..."
+                    value={state.bodyStructureNotes[2]}
+                    onChange={e => updateBodyNote(2, e.target.value)}
+                    rows={2}
+                  />
+                </div>
+
+                <div className={styles.planningNoteItem}>
+                  <label className={styles.planningNoteLabel}>
+                    <span className={`${styles.planningNoteBadge} ${styles.planningNoteBadgeFinal}`}>✓</span> Fechamento / CTA
+                  </label>
+                  <textarea
+                    className={styles.planningNoteTextarea}
+                    placeholder="Ex: Pedido de ação, agradecimento, expectativa de resposta..."
+                    value={state.bodyStructureNotes[3]}
+                    onChange={e => updateBodyNote(3, e.target.value)}
+                    rows={2}
+                  />
+                </div>
+              </div>
+            </div>
+
             <div className={styles.formGroup}>
               <label className={styles.formLabel}>CTA / Pedido / Sugestão (Opcional)</label>
               <input
@@ -316,13 +481,28 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             </div>
 
             <textarea
+              ref={writingTextareaRef}
               className={styles.writingTextarea}
               placeholder="Comece a escrever aqui..."
               value={state.content}
               onChange={e => updateState('content', e.target.value)}
             />
 
+            {/* Transfer Message */}
+            {transferMessage && (
+              <div className={styles.transferMessage}>
+                {transferMessage}
+              </div>
+            )}
+
             <div className={styles.writingActions}>
+              <button 
+                className={`${styles.actionBtn} ${styles.actionBtnTransfer}`} 
+                onClick={handleTransferPlanning}
+                title="Transferir planejamento para a escrita"
+              >
+                <ArrowRight /> Transferir Planejamento
+              </button>
               <button className={`${styles.actionBtn} ${styles.actionBtnSecondary}`} onClick={generateTemplate}>
                 <Wand2 /> Template
               </button>

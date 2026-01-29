@@ -1,0 +1,336 @@
+{
+  "task1": [
+    {
+      "id": "t1-custom",
+      "title": "✏️ Criar Tema Personalizado",
+      "content": "",
+      "category": "custom"
+    },
+    {
+      "id": "t1-complaint-noise",
+      "title": "Reclamação: Barulho do vizinho",
+      "content": "You recently moved into a new apartment. Your neighbor has been making excessive noise late at night, affecting your sleep and work. Write an email to your building manager. In your email:\n• Describe the noise problem\n• Explain how it has affected you\n• Request a specific action to resolve the issue",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-product",
+      "title": "Reclamação: Produto defeituoso",
+      "content": "You recently purchased an electronic device from an online store. The product arrived damaged and is not working properly. Write an email to customer service. In your email:\n• Describe the product and the problem\n• Explain when and how you discovered the defect\n• Request a refund or replacement",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-service",
+      "title": "Reclamação: Serviço ruim em restaurante",
+      "content": "You recently had a terrible experience at a restaurant where you celebrated a special occasion. The service was poor and the food was not as expected. Write an email to the restaurant manager. In your email:\n• Describe the occasion and your expectations\n• Explain what went wrong during your visit\n• Suggest how they can make it right",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-gym",
+      "title": "Reclamação: Academia com equipamentos quebrados",
+      "content": "You are a member of a local gym. Several pieces of equipment have been broken for weeks, and the facility is not as clean as it used to be. Write an email to the gym management. In your email:\n• Describe the current state of the gym\n• Explain how this affects your workout routine\n• Request improvements or compensation",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-delivery",
+      "title": "Reclamação: Atraso na entrega",
+      "content": "You ordered a package that was supposed to arrive two weeks ago, but it still hasn't been delivered. You have contacted the delivery company multiple times without success. Write an email to the company's customer service. In your email:\n• Provide order details and expected delivery date\n• Explain the inconvenience caused by the delay\n• Demand immediate action or compensation",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-hotel",
+      "title": "Reclamação: Problemas no hotel",
+      "content": "During your recent stay at a hotel, you experienced several problems including a dirty room, broken air conditioning, and rude staff. Write an email to the hotel manager. In your email:\n• Describe the issues you encountered\n• Explain how these problems affected your stay\n• Request a partial refund or future discount",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-complaint-parking",
+      "title": "Reclamação: Problema de estacionamento",
+      "content": "You live in an apartment building where parking spaces are assigned. Another resident has been consistently parking in your designated spot. Write an email to the building administrator. In your email:\n• Explain the parking situation\n• Describe how often this happens and the inconvenience caused\n• Request enforcement of parking rules",
+      "category": "complaint"
+    },
+    {
+      "id": "t1-request-schedule",
+      "title": "Solicitação: Mudança de horário de trabalho",
+      "content": "You need to change your work schedule temporarily due to personal circumstances. Write an email to your supervisor. In your email:\n• Explain why you need to change your schedule\n• Propose the new schedule you would like\n• Assure them your work quality will not be affected",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-reference",
+      "title": "Solicitação: Carta de recomendação",
+      "content": "You are applying for a new job and need a reference letter from your former employer. Write an email to your previous manager. In your email:\n• Remind them who you are and when you worked together\n• Explain why you need the reference\n• Specify what aspects of your work you'd like them to highlight",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-extension",
+      "title": "Solicitação: Extensão de prazo",
+      "content": "You are working on an important project but need more time to complete it due to unexpected circumstances. Write an email to your project manager. In your email:\n• Explain the current status of your project\n• Describe why you need an extension\n• Propose a new deadline and how you will meet it",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-vacation",
+      "title": "Solicitação: Férias/Folga",
+      "content": "You need to request time off from work for a family event. Write an email to your manager. In your email:\n• Explain the reason for your request\n• Specify the dates you need off\n• Describe how your responsibilities will be covered",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-transfer",
+      "title": "Solicitação: Transferência de departamento",
+      "content": "You would like to transfer to a different department within your company. Write an email to the Human Resources department. In your email:\n• Explain your current role and experience\n• Describe why you want to transfer\n• Highlight how you would contribute to the new department",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-meeting",
+      "title": "Solicitação: Reunião com o chefe",
+      "content": "You need to schedule a meeting with your supervisor to discuss a work-related concern. Write an email to your supervisor. In your email:\n• State the purpose of the meeting\n• Suggest possible times that work for you\n• Briefly outline what you would like to discuss",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-wfh",
+      "title": "Solicitação: Trabalho remoto",
+      "content": "You would like to work from home for a certain period due to personal circumstances. Write an email to your manager. In your email:\n• Explain why you need to work from home\n• Specify the duration of your request\n• Assure them how you will maintain productivity",
+      "category": "request"
+    },
+    {
+      "id": "t1-request-training",
+      "title": "Solicitação: Participação em treinamento",
+      "content": "You have found a professional development course that would benefit your work. Write an email to your supervisor requesting approval to attend. In your email:\n• Describe the training program\n• Explain how it will benefit your work and the company\n• Request time off and/or financial support",
+      "category": "request"
+    },
+    {
+      "id": "t1-thanks-coworker",
+      "title": "Agradecimento: Ajuda de colega",
+      "content": "A coworker helped you significantly during a busy period at work. Write an email to thank them. In your email:\n• Describe what they helped you with\n• Explain how their help made a difference\n• Express your appreciation and offer to return the favor",
+      "category": "thanks"
+    },
+    {
+      "id": "t1-thanks-mentor",
+      "title": "Agradecimento: Mentor/Professor",
+      "content": "A teacher or mentor has made a significant positive impact on your life or career. Write an email to thank them. In your email:\n• Remind them of your relationship\n• Describe specifically how they helped you\n• Share what you have achieved thanks to their guidance",
+      "category": "thanks"
+    },
+    {
+      "id": "t1-thanks-neighbor",
+      "title": "Agradecimento: Vizinho prestativo",
+      "content": "Your neighbor helped you while you were away by taking care of your home and pets. Write an email to thank them. In your email:\n• Express your gratitude for their help\n• Mention specific things they did that you appreciated\n• Offer to do something nice in return",
+      "category": "thanks"
+    },
+    {
+      "id": "t1-thanks-interview",
+      "title": "Agradecimento: Entrevista de emprego",
+      "content": "You recently had a job interview and want to follow up with a thank-you email. Write an email to the hiring manager. In your email:\n• Thank them for the opportunity to interview\n• Mention something specific you enjoyed discussing\n• Reaffirm your interest in the position",
+      "category": "thanks"
+    },
+    {
+      "id": "t1-thanks-gift",
+      "title": "Agradecimento: Presente recebido",
+      "content": "A friend sent you a thoughtful gift for a special occasion. Write an email to thank them. In your email:\n• Express your appreciation for the gift\n• Describe what you like about it\n• Mention how or when you plan to use it",
+      "category": "thanks"
+    },
+    {
+      "id": "t1-apology-missed",
+      "title": "Desculpas: Compromisso perdido",
+      "content": "You missed an important appointment or meeting and need to apologize. Write an email to the person you were supposed to meet. In your email:\n• Apologize sincerely for missing the appointment\n• Explain briefly what happened\n• Request to reschedule and suggest new times",
+      "category": "apology"
+    },
+    {
+      "id": "t1-apology-deadline",
+      "title": "Desculpas: Prazo não cumprido",
+      "content": "You failed to meet an important deadline at work. Write an email to your supervisor. In your email:\n• Apologize for missing the deadline\n• Explain the circumstances that caused the delay\n• Outline your plan to complete the work and prevent future issues",
+      "category": "apology"
+    },
+    {
+      "id": "t1-apology-damage",
+      "title": "Desculpas: Dano acidental",
+      "content": "You accidentally damaged something belonging to a friend or neighbor. Write an email to apologize. In your email:\n• Describe what happened and take responsibility\n• Express your sincere apology\n• Offer to repair or replace the damaged item",
+      "category": "apology"
+    },
+    {
+      "id": "t1-info-event",
+      "title": "Informação: Evento comunitário",
+      "content": "You are organizing a community event and need to inform residents. Write an email to the neighborhood association. In your email:\n• Describe the event and its purpose\n• Provide details about date, time, and location\n• Explain how residents can participate or help",
+      "category": "information"
+    },
+    {
+      "id": "t1-info-absence",
+      "title": "Informação: Ausência no trabalho",
+      "content": "You will be absent from work unexpectedly and need to inform your team. Write an email to your supervisor. In your email:\n• Explain the reason for your absence\n• Specify how long you expect to be away\n• Describe arrangements for your current responsibilities",
+      "category": "information"
+    },
+    {
+      "id": "t1-suggest-improve",
+      "title": "Sugestão: Melhoria no local de trabalho",
+      "content": "You have ideas for improving efficiency or morale at your workplace. Write an email to your manager. In your email:\n• Describe the current situation or problem\n• Present your suggestion for improvement\n• Explain the benefits of implementing your idea",
+      "category": "suggestion"
+    },
+    {
+      "id": "t1-suggest-community",
+      "title": "Sugestão: Melhoria na comunidade",
+      "content": "You have noticed an issue in your neighborhood that needs attention. Write an email to the city council. In your email:\n• Describe the problem in your community\n• Suggest a specific solution\n• Explain how this change would benefit residents",
+      "category": "suggestion"
+    },
+    {
+      "id": "t1-invite-party",
+      "title": "Convite: Festa/Celebração",
+      "content": "You are organizing a party to celebrate a special occasion. Write an email to invite a friend who lives far away. In your email:\n• Explain the reason for the celebration\n• Provide event details (date, time, location)\n• Encourage them to attend and offer accommodation help",
+      "category": "invitation"
+    },
+    {
+      "id": "t1-invite-reunion",
+      "title": "Convite: Reunião de ex-colegas",
+      "content": "You are organizing a reunion with former classmates or colleagues. Write an email to invite them. In your email:\n• Explain the purpose of the reunion\n• Provide details about when and where it will be\n• Ask them to confirm attendance and suggest activities",
+      "category": "invitation"
+    }
+  ],
+  "task2": [
+    {
+      "id": "t2-custom",
+      "title": "✏️ Criar Tema Personalizado",
+      "content": "",
+      "category": "custom"
+    },
+    {
+      "id": "t2-park-transit",
+      "title": "Parque comunitário vs Transporte público",
+      "content": "Your city has received funding and is deciding how to use it. The options are:\n\nOption A: Build a new community park with sports facilities, playgrounds, and green spaces.\n\nOption B: Expand the public transportation system with new bus routes and improved schedules.\n\nChoose the option you prefer and explain why. Support your choice with reasons and examples.",
+      "category": "community"
+    },
+    {
+      "id": "t2-remote-office",
+      "title": "Trabalho remoto vs Escritório",
+      "content": "Your company is conducting a survey about work preferences. The options are:\n\nOption A: Continue working primarily from home with occasional office visits.\n\nOption B: Return to working full-time in the office.\n\nWhich option do you prefer? Explain your choice with specific reasons and examples.",
+      "category": "work"
+    },
+    {
+      "id": "t2-online-classroom",
+      "title": "Aulas online vs Presenciais",
+      "content": "A local college is surveying students about their learning preferences. The options are:\n\nOption A: Continue offering mostly online classes with recorded lectures and virtual discussions.\n\nOption B: Return to traditional in-person classes on campus.\n\nWhich format do you prefer? Provide reasons and examples to support your choice.",
+      "category": "education"
+    },
+    {
+      "id": "t2-library-tech",
+      "title": "Biblioteca física vs Centro de tecnologia",
+      "content": "Your neighborhood has space for a new public facility. The city council is asking residents to choose between:\n\nOption A: A traditional library with books, reading rooms, and study spaces.\n\nOption B: A modern technology center with computers, coding classes, and digital resources.\n\nWhich option would you prefer? Explain your reasons with specific examples.",
+      "category": "community"
+    },
+    {
+      "id": "t2-salary-benefits",
+      "title": "Salário maior vs Mais benefícios",
+      "content": "You are considering two job offers with similar responsibilities. The difference is:\n\nOption A: Higher salary but fewer benefits (basic health insurance, limited vacation time).\n\nOption B: Lower salary but excellent benefits (comprehensive health coverage, more vacation days, flexible hours).\n\nWhich would you choose? Support your decision with reasons and examples.",
+      "category": "work"
+    },
+    {
+      "id": "t2-small-big-company",
+      "title": "Empresa pequena vs Grande corporação",
+      "content": "You are deciding between two career paths. The options are:\n\nOption A: Work for a small startup company with more responsibilities and growth potential but less job security.\n\nOption B: Work for a large established corporation with more stability and resources but potentially slower advancement.\n\nWhich environment would you prefer? Explain your choice with specific reasons.",
+      "category": "work"
+    },
+    {
+      "id": "t2-house-apartment",
+      "title": "Casa vs Apartamento",
+      "content": "Your family is considering moving to a new home. The options are:\n\nOption A: Buy a house in the suburbs with a yard and more space, but farther from work and amenities.\n\nOption B: Rent an apartment downtown, closer to work and entertainment, but with less space.\n\nWhich option would you recommend? Provide reasons and examples to support your answer.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-new-used-car",
+      "title": "Carro novo vs Usado",
+      "content": "You need to purchase a vehicle and are considering your options:\n\nOption A: Buy a brand new car with a warranty and the latest features, but with higher monthly payments.\n\nOption B: Buy a reliable used car for a lower price, but without warranty and possibly older technology.\n\nWhich would you choose? Explain your reasoning with specific examples.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-travel-save",
+      "title": "Viajar agora vs Economizar",
+      "content": "You have received some extra money and are deciding what to do with it:\n\nOption A: Use the money to travel and have new experiences while you are young.\n\nOption B: Save the money for future security or investments.\n\nWhich approach do you prefer? Support your choice with reasons and examples.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-solo-group-travel",
+      "title": "Viajar sozinho vs Em grupo",
+      "content": "You are planning your next vacation and considering:\n\nOption A: Travel alone to have more freedom and personal discovery.\n\nOption B: Travel with a group of friends or family for shared experiences.\n\nWhich do you prefer? Explain your choice with specific reasons and examples.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-traditional-modern-edu",
+      "title": "Educação tradicional vs Moderna",
+      "content": "A school board is gathering opinions on teaching methods:\n\nOption A: Traditional teaching with lectures, textbooks, and standardized tests.\n\nOption B: Modern approaches with project-based learning, technology integration, and collaborative work.\n\nWhich educational approach do you support? Provide reasons and examples.",
+      "category": "education"
+    },
+    {
+      "id": "t2-homework-reduce",
+      "title": "Mais lição de casa vs Menos",
+      "content": "A school is reconsidering its homework policy. The options are:\n\nOption A: Keep the current amount of homework to ensure students practice and review.\n\nOption B: Significantly reduce homework to give students more free time for activities and rest.\n\nWhich policy do you support? Explain your position with specific reasons.",
+      "category": "education"
+    },
+    {
+      "id": "t2-uniforms-choice",
+      "title": "Uniforme escolar vs Roupa livre",
+      "content": "A school is debating its dress code policy:\n\nOption A: Require students to wear uniforms to promote equality and reduce distractions.\n\nOption B: Allow students to wear their own clothes to express individuality.\n\nWhich policy do you prefer? Support your opinion with reasons and examples.",
+      "category": "education"
+    },
+    {
+      "id": "t2-arts-stem",
+      "title": "Artes vs STEM na escola",
+      "content": "A school must decide where to allocate additional funding:\n\nOption A: Invest more in arts programs (music, art, drama, dance).\n\nOption B: Invest more in STEM programs (science, technology, engineering, math).\n\nWhich area should receive more funding? Explain your choice with specific reasons.",
+      "category": "education"
+    },
+    {
+      "id": "t2-plastic-ban",
+      "title": "Proibir plástico vs Educação ambiental",
+      "content": "The city is considering environmental policies:\n\nOption A: Ban single-use plastics immediately and require businesses to use alternatives.\n\nOption B: Focus on environmental education programs and gradual voluntary reduction.\n\nWhich approach do you support? Provide reasons and examples.",
+      "category": "environment"
+    },
+    {
+      "id": "t2-green-spaces",
+      "title": "Mais áreas verdes vs Desenvolvimento comercial",
+      "content": "Your city has vacant land available for development:\n\nOption A: Create more parks and green spaces for recreation and environmental benefits.\n\nOption B: Develop shopping centers and businesses to create jobs and economic growth.\n\nWhich development do you prefer? Support your choice with specific reasons.",
+      "category": "community"
+    },
+    {
+      "id": "t2-ev-subsidy",
+      "title": "Subsídio para carros elétricos vs Transporte público",
+      "content": "The government is deciding how to reduce transportation emissions:\n\nOption A: Provide subsidies for people to purchase electric vehicles.\n\nOption B: Invest in improving and expanding public transportation.\n\nWhich policy do you support? Explain your reasoning with examples.",
+      "category": "environment"
+    },
+    {
+      "id": "t2-tourism-growth",
+      "title": "Aumentar turismo vs Limitar visitantes",
+      "content": "Your city is known for its attractions and is considering:\n\nOption A: Promote tourism more aggressively to boost the economy.\n\nOption B: Limit the number of tourists to preserve the quality of life for residents.\n\nWhich approach do you prefer? Provide specific reasons and examples.",
+      "category": "community"
+    },
+    {
+      "id": "t2-senior-youth",
+      "title": "Centro para idosos vs Centro para jovens",
+      "content": "Your community has funding for one new facility:\n\nOption A: Build a senior center with health services, social activities, and support programs.\n\nOption B: Build a youth center with after-school programs, sports facilities, and mentorship.\n\nWhich would benefit the community more? Explain your choice.",
+      "category": "community"
+    },
+    {
+      "id": "t2-police-social",
+      "title": "Mais polícia vs Programas sociais",
+      "content": "Your city is addressing public safety concerns and considering:\n\nOption A: Increase police presence and security measures in public areas.\n\nOption B: Invest in social programs addressing root causes of crime (education, employment, mental health).\n\nWhich approach do you support? Provide reasons and examples.",
+      "category": "community"
+    },
+    {
+      "id": "t2-cashless-society",
+      "title": "Sociedade sem dinheiro físico vs Manter cédulas",
+      "content": "Banks and businesses are discussing the future of payments:\n\nOption A: Move toward a cashless society with digital payments only.\n\nOption B: Continue to maintain cash as a payment option alongside digital methods.\n\nWhich do you prefer? Support your position with specific reasons.",
+      "category": "technology"
+    },
+    {
+      "id": "t2-ai-jobs",
+      "title": "Aceitar automação vs Proteger empregos",
+      "content": "Companies are considering implementing AI and automation:\n\nOption A: Embrace AI and automation to increase efficiency, even if it reduces jobs.\n\nOption B: Limit automation to protect employment and traditional ways of working.\n\nWhich approach do you support? Explain with reasons and examples.",
+      "category": "technology"
+    },
+    {
+      "id": "t2-social-media-age",
+      "title": "Limitar redes sociais para menores vs Não restringir",
+      "content": "Lawmakers are considering regulations on social media use by minors:\n\nOption A: Require age verification and limit social media access for users under 16.\n\nOption B: Allow parents to decide and not impose government restrictions.\n\nWhich policy do you support? Provide specific reasons and examples.",
+      "category": "technology"
+    },
+    {
+      "id": "t2-screen-time",
+      "title": "Limitar tempo de tela vs Liberdade digital",
+      "content": "Schools are debating technology policies for students:\n\nOption A: Strictly limit screen time and device usage during school hours.\n\nOption B: Allow flexible use of devices for educational purposes throughout the day.\n\nWhich policy do you prefer? Explain your reasoning.",
+      "category": "education"
+    }
+  ]
+}
