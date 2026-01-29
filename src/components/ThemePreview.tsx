@@ -20,7 +20,8 @@ interface ThemePreviewProps {
   onApply: (theme: ThemeData) => void;
 }
 
-const EXCERPT_LENGTH = 250;
+// Show full content since the area is scrollable now
+const EXCERPT_LENGTH = 600;
 
 export default function ThemePreview({ theme, onApply }: ThemePreviewProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
