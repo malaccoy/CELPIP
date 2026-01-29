@@ -57,6 +57,7 @@ export default function ContextSelector({
   
   const dropdownRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const previewPanelRef = useRef<HTMLDivElement>(null);
 
   // Get the actual preview context based on clicked item
   const previewContext = useMemo(() => {
@@ -124,6 +125,17 @@ export default function ContextSelector({
       setClickedContextId(null);
     }
   }, [isOpen]);
+
+  // Scroll preview into view on mobile when it becomes visible
+  useEffect(() => {
+    if (previewContext && previewPanelRef.current && isTouch) {
+      // Small delay to allow the transition to start
+      const timer = setTimeout(() => {
+        previewPanelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [previewContext, isTouch]);
 
   const handleSelect = useCallback((context: ContextItem) => {
     onSelect(context);
@@ -245,7 +257,10 @@ export default function ContextSelector({
             </div>
 
             {/* Preview Panel */}
-            <div className={`${styles.previewPanel} ${previewContext ? styles.previewPanelVisible : ''}`}>
+            <div 
+              ref={previewPanelRef}
+              className={`${styles.previewPanel} ${previewContext ? styles.previewPanelVisible : ''}`}
+            >
               {previewContext ? (
                 <>
                   <div className={styles.previewHeader}>
