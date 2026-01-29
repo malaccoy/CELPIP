@@ -11,11 +11,19 @@
 .cardHeader {
   padding: 1rem 1.5rem;
   border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cardTitle {
   font-weight: 600;
   color: #1e293b;
+}
+
+.cardHeaderAction {
+  display: flex;
+  align-items: center;
 }
 
 .cardBody {

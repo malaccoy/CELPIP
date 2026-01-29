@@ -6,11 +6,12 @@ import { FeedbackItem } from '@/types';
 import styles from '@/styles/Common.module.scss';
 
 // --- Card ---
-export const Card: React.FC<{ title?: string; children: React.ReactNode; className?: string; style?: React.CSSProperties }> = ({ title, children, className = '', style }) => (
+export const Card: React.FC<{ title?: string; headerAction?: React.ReactNode; children: React.ReactNode; className?: string; style?: React.CSSProperties }> = ({ title, headerAction, children, className = '', style }) => (
   <div className={`${styles.card} ${className}`} style={style}>
     {title && (
       <div className={styles.cardHeader}>
         <h3 className={styles.cardTitle}>{title}</h3>
+        {headerAction && <div className={styles.cardHeaderAction}>{headerAction}</div>}
       </div>
     )}
     <div className={styles.cardBody}>

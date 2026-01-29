@@ -2,10 +2,12 @@
 
 import React, { useState } from 'react';
 import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
+import { HelpGuidePanel } from '@/components/HelpGuidePanel';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2 } from 'lucide-react';
+import { Save, RefreshCw, Wand2, Trash2, HelpCircle } from 'lucide-react';
 import styles from '@/styles/Pages.module.scss';
+import helpStyles from '@/styles/HelpGuidePanel.module.scss';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -26,6 +28,7 @@ const INITIAL_STATE: Task1State = {
 export default function Task1Page() {
   const [state, setState] = useState<Task1State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
 
   const wordCount = countWords(state.content);
 
@@ -154,7 +157,19 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
         {/* Column 2: Planning */}
         <div className={styles.taskColumn}>
-          <Card title="2. Planejamento">
+          <Card 
+            title="2. Planejamento"
+            headerAction={
+              <button
+                onClick={() => setIsHelpOpen(true)}
+                className={helpStyles.helpIconButton}
+                title="Ver guia de escrita"
+                aria-label="Abrir guia de escrita"
+              >
+                <HelpCircle size={16} />
+              </button>
+            }
+          >
             <Input
               label="Abertura (Dear...)"
               value={state.opening}
@@ -284,6 +299,13 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
           )}
         </div>
       </div>
+
+      {/* Help Guide Panel */}
+      <HelpGuidePanel
+        isOpen={isHelpOpen}
+        onClose={() => setIsHelpOpen(false)}
+        initialTab="task1"
+      />
     </div>
   );
 }
