@@ -37,26 +37,6 @@ const categoryLabels: Record<string, string> = {
   technology: '💻 Tecnologia'
 };
 
-// Debounce delay for hover events (ms)
-const HOVER_DEBOUNCE_DELAY = 150;
-
-// Custom hook for debounced value
-function useDebouncedValue<T>(value: T, delay: number): T {
-  const [debouncedValue, setDebouncedValue] = useState<T>(value);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-}
-
 // Detect touch device
 function isTouchDevice(): boolean {
   if (typeof window === 'undefined') return false;
@@ -71,24 +51,19 @@ export default function ContextSelector({
 }: ContextSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [hoveredContextId, setHoveredContextId] = useState<string | null>(null);
+  // Use clickedContextId for click-based preview (replaces hover-based preview)
+  const [clickedContextId, setClickedContextId] = useState<string | null>(null);
   const [isTouch, setIsTouch] = useState(false);
-  const [tappedContextId, setTappedContextId] = useState<string | null>(null);
   
   const dropdownRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
-  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Debounced hovered context for smooth preview transitions
-  const debouncedHoveredId = useDebouncedValue(hoveredContextId, HOVER_DEBOUNCE_DELAY);
-  
-  // Get the actual preview context based on debounced hover or tap
+  // Get the actual preview context based on clicked item
   const previewContext = useMemo(() => {
-    const previewId = isTouch ? tappedContextId : debouncedHoveredId;
-    if (!previewId) return null;
-    const context = contexts.find(c => c.id === previewId);
+    if (!clickedContextId) return null;
+    const context = contexts.find(c => c.id === clickedContextId);
     return context?.category !== 'custom' ? context : null;
-  }, [isTouch, tappedContextId, debouncedHoveredId, contexts]);
+  }, [clickedContextId, contexts]);
 
   const selectedContext = contexts.find(c => c.id === selectedId);
 
@@ -119,22 +94,12 @@ export default function ContextSelector({
     }, {} as Record<string, ContextItem[]>);
   }, [groupedContexts, searchTerm]);
 
-  // Cleanup timeout on unmount
-  useEffect(() => {
-    return () => {
-      if (hoverTimeoutRef.current) {
-        clearTimeout(hoverTimeoutRef.current);
-      }
-    };
-  }, []);
-
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
-        setHoveredContextId(null);
-        setTappedContextId(null);
+        setClickedContextId(null);
         setSearchTerm('');
       }
     };
@@ -153,79 +118,41 @@ export default function ContextSelector({
     }
   }, [isOpen, isTouch]);
 
-  // Reset hover states when dropdown closes
+  // Reset clicked state when dropdown closes
   useEffect(() => {
     if (!isOpen) {
-      setHoveredContextId(null);
-      setTappedContextId(null);
+      setClickedContextId(null);
     }
   }, [isOpen]);
 
   const handleSelect = useCallback((context: ContextItem) => {
     onSelect(context);
     setIsOpen(false);
-    setHoveredContextId(null);
-    setTappedContextId(null);
+    setClickedContextId(null);
     setSearchTerm('');
   }, [onSelect]);
 
-  // Debounced hover handler with cleanup
-  const handleMouseEnter = useCallback((contextId: string, isCustom: boolean) => {
-    if (isTouch || isCustom) return;
-    
-    // Clear any pending timeout
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
-      hoverTimeoutRef.current = null;
-    }
-    
-    setHoveredContextId(contextId);
-  }, [isTouch]);
-
-  const handleMouseLeave = useCallback(() => {
-    if (isTouch) return;
-    
-    // Clear any pending timeout
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
-    }
-    
-    // Debounce the leave to prevent flickering when moving between items
-    hoverTimeoutRef.current = setTimeout(() => {
-      setHoveredContextId(null);
-    }, 100);
-  }, [isTouch]);
-
-  // Touch handler for mobile - tap to preview, tap again to select
-  const handleTouchStart = useCallback((context: ContextItem, e: React.TouchEvent) => {
-    if (!isTouch) return;
-    
-    e.preventDefault();
-    
+  // Click handler - first click shows preview, second click selects
+  const handleItemClick = useCallback((context: ContextItem) => {
+    // Custom contexts select immediately (no preview needed)
     if (context.category === 'custom') {
-      // Custom contexts select immediately
       handleSelect(context);
       return;
     }
     
-    if (tappedContextId === context.id) {
-      // Second tap - select
+    // If already previewing this item, select it
+    if (clickedContextId === context.id) {
       handleSelect(context);
     } else {
-      // First tap - show preview
-      setTappedContextId(context.id);
+      // First click - show preview
+      setClickedContextId(context.id);
     }
-  }, [isTouch, tappedContextId, handleSelect]);
+  }, [clickedContextId, handleSelect]);
 
-  // Click handler - for non-touch or when preview is already shown
-  const handleItemClick = useCallback((context: ContextItem) => {
-    if (isTouch && context.category !== 'custom' && tappedContextId !== context.id) {
-      // On touch, first tap shows preview
-      setTappedContextId(context.id);
-      return;
-    }
-    handleSelect(context);
-  }, [isTouch, tappedContextId, handleSelect]);
+  // Close preview handler
+  const handleClosePreview = useCallback(() => {
+    setClickedContextId(null);
+  }, []);
 
   return (
     <div className={styles.contextSelector} ref={dropdownRef}>
@@ -283,9 +210,7 @@ export default function ContextSelector({
                     {categoryLabels[category] || category}
                   </div>
                   {items.map((item) => {
-                    const isHovered = !isTouch && hoveredContextId === item.id;
-                    const isTapped = isTouch && tappedContextId === item.id;
-                    const isActive = isHovered || isTapped;
+                    const isActive = clickedContextId === item.id;
                     
                     return (
                       <button
@@ -297,15 +222,12 @@ export default function ContextSelector({
                           isActive ? styles.optionItemActive : ''
                         }`}
                         onClick={() => handleItemClick(item)}
-                        onMouseEnter={() => handleMouseEnter(item.id, item.category === 'custom')}
-                        onMouseLeave={handleMouseLeave}
-                        onTouchStart={(e) => handleTouchStart(item, e)}
                         aria-selected={selectedId === item.id}
                       >
                         <span className={styles.optionTitle}>{item.title}</span>
                         {item.category !== 'custom' && (
                           <span className={styles.optionPreviewHint}>
-                            {isTouch ? (isTapped ? '✓' : '👁️') : '👁️'}
+                            {isActive ? '✓' : '👁️'}
                           </span>
                         )}
                       </button>
@@ -328,6 +250,14 @@ export default function ContextSelector({
                 <>
                   <div className={styles.previewHeader}>
                     <span className={styles.previewLabel}>Prévia do Enunciado</span>
+                    <button
+                      type="button"
+                      className={styles.previewCloseBtn}
+                      onClick={handleClosePreview}
+                      aria-label="Fechar prévia"
+                    >
+                      <X size={14} />
+                    </button>
                   </div>
                   <div className={styles.previewContent}>
                     <h4>{previewContext.title}</h4>
@@ -338,13 +268,13 @@ export default function ContextSelector({
                     className={styles.previewSelectBtn}
                     onClick={() => handleSelect(previewContext)}
                   >
-                    {isTouch ? 'Toque novamente para usar' : 'Usar este tema'}
+                    Usar este tema
                   </button>
                 </>
               ) : (
                 <div className={styles.previewPlaceholder}>
                   <span>👆</span>
-                  <p>{isTouch ? 'Toque em um tema para ver a prévia' : 'Passe o mouse sobre um tema para ver a prévia'}</p>
+                  <p>Clique em um tema para ver a prévia</p>
                 </div>
               )}
             </div>
