@@ -7,6 +7,7 @@ import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords } from '@/utils/feedback';
 import { Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ClipboardList } from 'lucide-react';
 import styles from '@/styles/TaskPages.module.scss';
+import TaskHelpPanel from '@/components/TaskHelpPanel';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -243,6 +244,7 @@ export default function Task2Page() {
                 <PenTool />
               </div>
               <h3 className={styles.cardTitle}>2. Planejamento (PRE Structure)</h3>
+              <TaskHelpPanel defaultTab="task2" />
             </div>
 
             <div className={styles.formGroup}>
