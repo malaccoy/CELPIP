@@ -8,7 +8,7 @@
     },
     {
       "id": "t1-complaint-noise",
-      "title": "Reclamação: Barulho do vizinho",
+      "title": "🔊 Barulho do vizinho",
       "content": "You recently moved into a new apartment. Your neighbor has been making excessive noise late at night, affecting your sleep and work. Write an email to your building manager. In your email:\n• Describe the noise problem\n• Explain how it has affected you\n• Request a specific action to resolve the issue",
       "category": "complaint",
       "recipient": "Building Manager",
@@ -21,7 +21,7 @@
     },
     {
       "id": "t1-complaint-product",
-      "title": "Reclamação: Produto defeituoso",
+      "title": "📦 Produto defeituoso",
       "content": "You recently purchased an electronic device from an online store. The product arrived damaged and is not working properly. Write an email to customer service. In your email:\n• Describe the product and the problem\n• Explain when and how you discovered the defect\n• Request a refund or replacement",
       "category": "complaint",
       "recipient": "Customer Service",
@@ -34,7 +34,7 @@
     },
     {
       "id": "t1-complaint-service",
-      "title": "Reclamação: Serviço ruim em restaurante",
+      "title": "🍽️ Serviço ruim em restaurante",
       "content": "You recently had a terrible experience at a restaurant where you celebrated a special occasion. The service was poor and the food was not as expected. Write an email to the restaurant manager. In your email:\n• Describe the occasion and your expectations\n• Explain what went wrong during your visit\n• Suggest how they can make it right",
       "category": "complaint",
       "recipient": "Restaurant Manager",
@@ -47,7 +47,7 @@
     },
     {
       "id": "t1-complaint-gym",
-      "title": "Reclamação: Academia com equipamentos quebrados",
+      "title": "🏋️ Academia com equipamentos quebrados",
       "content": "You are a member of a local gym. Several pieces of equipment have been broken for weeks, and the facility is not as clean as it used to be. Write an email to the gym management. In your email:\n• Describe the current state of the gym\n• Explain how this affects your workout routine\n• Request improvements or compensation",
       "category": "complaint",
       "recipient": "Gym Management",
@@ -60,7 +60,7 @@
     },
     {
       "id": "t1-complaint-delivery",
-      "title": "Reclamação: Atraso na entrega",
+      "title": "🚚 Atraso na entrega",
       "content": "You ordered a package that was supposed to arrive two weeks ago, but it still hasn't been delivered. You have contacted the delivery company multiple times without success. Write an email to the company's customer service. In your email:\n• Provide order details and expected delivery date\n• Explain the inconvenience caused by the delay\n• Demand immediate action or compensation",
       "category": "complaint",
       "recipient": "Customer Service",
@@ -73,7 +73,7 @@
     },
     {
       "id": "t1-complaint-hotel",
-      "title": "Reclamação: Problemas no hotel",
+      "title": "🏨 Problemas no hotel",
       "content": "During your recent stay at a hotel, you experienced several problems including a dirty room, broken air conditioning, and rude staff. Write an email to the hotel manager. In your email:\n• Describe the issues you encountered\n• Explain how these problems affected your stay\n• Request a partial refund or future discount",
       "category": "complaint",
       "recipient": "Hotel Manager",
@@ -86,7 +86,7 @@
     },
     {
       "id": "t1-complaint-parking",
-      "title": "Reclamação: Problema de estacionamento",
+      "title": "🚗 Problema de estacionamento",
       "content": "You live in an apartment building where parking spaces are assigned. Another resident has been consistently parking in your designated spot. Write an email to the building administrator. In your email:\n• Explain the parking situation\n• Describe how often this happens and the inconvenience caused\n• Request enforcement of parking rules",
       "category": "complaint",
       "recipient": "Building Administrator",
@@ -98,8 +98,34 @@
       ]
     },
     {
+      "id": "t1-complaint-internet",
+      "title": "📶 Internet instável",
+      "content": "Your internet service has been unreliable for the past month, with frequent disconnections affecting your work from home. Write an email to your internet service provider. In your email:\n• Describe the connectivity problems you've experienced\n• Explain how this has impacted your work and daily life\n• Request a technician visit and billing adjustment",
+      "category": "complaint",
+      "recipient": "Internet Service Provider",
+      "formality": "Formal",
+      "questions": [
+        "Describe the connectivity problems",
+        "Explain the impact on your work and life",
+        "Request technician visit and billing adjustment"
+      ]
+    },
+    {
+      "id": "t1-complaint-flight",
+      "title": "✈️ Voo cancelado",
+      "content": "Your flight was canceled at the last minute, causing you to miss an important event. The airline has not provided adequate compensation. Write an email to airline customer service. In your email:\n• Describe what happened with your flight\n• Explain the consequences of the cancellation\n• Request appropriate compensation",
+      "category": "complaint",
+      "recipient": "Airline Customer Service",
+      "formality": "Formal",
+      "questions": [
+        "Describe what happened with your flight",
+        "Explain the consequences of the cancellation",
+        "Request appropriate compensation"
+      ]
+    },
+    {
       "id": "t1-request-schedule",
-      "title": "Solicitação: Mudança de horário de trabalho",
+      "title": "⏰ Mudança de horário de trabalho",
       "content": "You need to change your work schedule temporarily due to personal circumstances. Write an email to your supervisor. In your email:\n• Explain why you need to change your schedule\n• Propose the new schedule you would like\n• Assure them your work quality will not be affected",
       "category": "request",
       "recipient": "Supervisor",
@@ -112,7 +138,7 @@
     },
     {
       "id": "t1-request-reference",
-      "title": "Solicitação: Carta de recomendação",
+      "title": "📝 Carta de recomendação",
       "content": "You are applying for a new job and need a reference letter from your former employer. Write an email to your previous manager. In your email:\n• Remind them who you are and when you worked together\n• Explain why you need the reference\n• Specify what aspects of your work you'd like them to highlight",
       "category": "request",
       "recipient": "Previous Manager",
@@ -125,7 +151,7 @@
     },
     {
       "id": "t1-request-extension",
-      "title": "Solicitação: Extensão de prazo",
+      "title": "📅 Extensão de prazo",
       "content": "You are working on an important project but need more time to complete it due to unexpected circumstances. Write an email to your project manager. In your email:\n• Explain the current status of your project\n• Describe why you need an extension\n• Propose a new deadline and how you will meet it",
       "category": "request",
       "recipient": "Project Manager",
@@ -138,7 +164,7 @@
     },
     {
       "id": "t1-request-vacation",
-      "title": "Solicitação: Férias/Folga",
+      "title": "🏖️ Férias/Folga",
       "content": "You need to request time off from work for a family event. Write an email to your manager. In your email:\n• Explain the reason for your request\n• Specify the dates you need off\n• Describe how your responsibilities will be covered",
       "category": "request",
       "recipient": "Manager",
@@ -151,7 +177,7 @@
     },
     {
       "id": "t1-request-transfer",
-      "title": "Solicitação: Transferência de departamento",
+      "title": "🔄 Transferência de departamento",
       "content": "You would like to transfer to a different department within your company. Write an email to the Human Resources department. In your email:\n• Explain your current role and experience\n• Describe why you want to transfer\n• Highlight how you would contribute to the new department",
       "category": "request",
       "recipient": "Human Resources",
@@ -164,7 +190,7 @@
     },
     {
       "id": "t1-request-meeting",
-      "title": "Solicitação: Reunião com o chefe",
+      "title": "🤝 Reunião com o chefe",
       "content": "You need to schedule a meeting with your supervisor to discuss a work-related concern. Write an email to your supervisor. In your email:\n• State the purpose of the meeting\n• Suggest possible times that work for you\n• Briefly outline what you would like to discuss",
       "category": "request",
       "recipient": "Supervisor",
@@ -177,99 +203,341 @@
     },
     {
       "id": "t1-request-wfh",
-      "title": "Solicitação: Trabalho remoto",
+      "title": "🏠 Trabalho remoto",
       "content": "You would like to work from home for a certain period due to personal circumstances. Write an email to your manager. In your email:\n• Explain why you need to work from home\n• Specify the duration of your request\n• Assure them how you will maintain productivity",
-      "category": "request"
+      "category": "request",
+      "recipient": "Manager",
+      "formality": "Formal",
+      "questions": [
+        "Explain why you need to work from home",
+        "Specify the duration of your request",
+        "Assure them how you will maintain productivity"
+      ]
     },
     {
       "id": "t1-request-training",
-      "title": "Solicitação: Participação em treinamento",
+      "title": "📚 Participação em treinamento",
       "content": "You have found a professional development course that would benefit your work. Write an email to your supervisor requesting approval to attend. In your email:\n• Describe the training program\n• Explain how it will benefit your work and the company\n• Request time off and/or financial support",
-      "category": "request"
+      "category": "request",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Describe the training program",
+        "Explain how it will benefit your work and the company",
+        "Request time off and/or financial support"
+      ]
+    },
+    {
+      "id": "t1-request-raise",
+      "title": "💰 Aumento de salário",
+      "content": "You believe you deserve a salary increase based on your performance and contributions. Write an email to your manager. In your email:\n• Highlight your achievements and contributions\n• Explain why you believe you deserve a raise\n• Request a meeting to discuss your compensation",
+      "category": "request",
+      "recipient": "Manager",
+      "formality": "Formal",
+      "questions": [
+        "Highlight your achievements and contributions",
+        "Explain why you deserve a raise",
+        "Request a meeting to discuss compensation"
+      ]
+    },
+    {
+      "id": "t1-request-equipment",
+      "title": "💻 Equipamento de trabalho",
+      "content": "You need new equipment or software to perform your job more effectively. Write an email to your supervisor. In your email:\n• Describe what equipment you need\n• Explain how it will improve your work\n• Provide cost information if available",
+      "category": "request",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Describe what equipment you need",
+        "Explain how it will improve your work",
+        "Provide cost information if available"
+      ]
     },
     {
       "id": "t1-thanks-coworker",
-      "title": "Agradecimento: Ajuda de colega",
+      "title": "🙏 Ajuda de colega",
       "content": "A coworker helped you significantly during a busy period at work. Write an email to thank them. In your email:\n• Describe what they helped you with\n• Explain how their help made a difference\n• Express your appreciation and offer to return the favor",
-      "category": "thanks"
+      "category": "thanks",
+      "recipient": "Coworker",
+      "formality": "Semi-formal",
+      "questions": [
+        "Describe what they helped you with",
+        "Explain how their help made a difference",
+        "Express appreciation and offer to return the favor"
+      ]
     },
     {
       "id": "t1-thanks-mentor",
-      "title": "Agradecimento: Mentor/Professor",
+      "title": "🎓 Mentor/Professor",
       "content": "A teacher or mentor has made a significant positive impact on your life or career. Write an email to thank them. In your email:\n• Remind them of your relationship\n• Describe specifically how they helped you\n• Share what you have achieved thanks to their guidance",
-      "category": "thanks"
+      "category": "thanks",
+      "recipient": "Teacher/Mentor",
+      "formality": "Semi-formal",
+      "questions": [
+        "Remind them of your relationship",
+        "Describe specifically how they helped you",
+        "Share what you have achieved thanks to their guidance"
+      ]
     },
     {
       "id": "t1-thanks-neighbor",
-      "title": "Agradecimento: Vizinho prestativo",
+      "title": "🏡 Vizinho prestativo",
       "content": "Your neighbor helped you while you were away by taking care of your home and pets. Write an email to thank them. In your email:\n• Express your gratitude for their help\n• Mention specific things they did that you appreciated\n• Offer to do something nice in return",
-      "category": "thanks"
+      "category": "thanks",
+      "recipient": "Neighbor",
+      "formality": "Informal",
+      "questions": [
+        "Express your gratitude for their help",
+        "Mention specific things they did",
+        "Offer to do something nice in return"
+      ]
     },
     {
       "id": "t1-thanks-interview",
-      "title": "Agradecimento: Entrevista de emprego",
+      "title": "💼 Entrevista de emprego",
       "content": "You recently had a job interview and want to follow up with a thank-you email. Write an email to the hiring manager. In your email:\n• Thank them for the opportunity to interview\n• Mention something specific you enjoyed discussing\n• Reaffirm your interest in the position",
-      "category": "thanks"
+      "category": "thanks",
+      "recipient": "Hiring Manager",
+      "formality": "Formal",
+      "questions": [
+        "Thank them for the opportunity",
+        "Mention something specific from the interview",
+        "Reaffirm your interest in the position"
+      ]
     },
     {
       "id": "t1-thanks-gift",
-      "title": "Agradecimento: Presente recebido",
+      "title": "🎁 Presente recebido",
       "content": "A friend sent you a thoughtful gift for a special occasion. Write an email to thank them. In your email:\n• Express your appreciation for the gift\n• Describe what you like about it\n• Mention how or when you plan to use it",
-      "category": "thanks"
+      "category": "thanks",
+      "recipient": "Friend",
+      "formality": "Informal",
+      "questions": [
+        "Express your appreciation",
+        "Describe what you like about it",
+        "Mention how you plan to use it"
+      ]
+    },
+    {
+      "id": "t1-thanks-hospital",
+      "title": "🏥 Equipe médica",
+      "content": "You or a family member received excellent care at a hospital. Write an email to the hospital administration to thank the staff. In your email:\n• Describe your experience at the hospital\n• Mention specific staff members who helped\n• Explain the impact of their care",
+      "category": "thanks",
+      "recipient": "Hospital Administration",
+      "formality": "Formal",
+      "questions": [
+        "Describe your experience at the hospital",
+        "Mention specific staff members who helped",
+        "Explain the impact of their care"
+      ]
     },
     {
       "id": "t1-apology-missed",
-      "title": "Desculpas: Compromisso perdido",
+      "title": "❌ Compromisso perdido",
       "content": "You missed an important appointment or meeting and need to apologize. Write an email to the person you were supposed to meet. In your email:\n• Apologize sincerely for missing the appointment\n• Explain briefly what happened\n• Request to reschedule and suggest new times",
-      "category": "apology"
+      "category": "apology",
+      "recipient": "Varies",
+      "formality": "Formal",
+      "questions": [
+        "Apologize sincerely for missing the appointment",
+        "Explain briefly what happened",
+        "Request to reschedule and suggest new times"
+      ]
     },
     {
       "id": "t1-apology-deadline",
-      "title": "Desculpas: Prazo não cumprido",
+      "title": "⏳ Prazo não cumprido",
       "content": "You failed to meet an important deadline at work. Write an email to your supervisor. In your email:\n• Apologize for missing the deadline\n• Explain the circumstances that caused the delay\n• Outline your plan to complete the work and prevent future issues",
-      "category": "apology"
+      "category": "apology",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Apologize for missing the deadline",
+        "Explain the circumstances",
+        "Outline your plan to complete and prevent future issues"
+      ]
     },
     {
       "id": "t1-apology-damage",
-      "title": "Desculpas: Dano acidental",
+      "title": "💔 Dano acidental",
       "content": "You accidentally damaged something belonging to a friend or neighbor. Write an email to apologize. In your email:\n• Describe what happened and take responsibility\n• Express your sincere apology\n• Offer to repair or replace the damaged item",
-      "category": "apology"
+      "category": "apology",
+      "recipient": "Friend/Neighbor",
+      "formality": "Semi-formal",
+      "questions": [
+        "Describe what happened and take responsibility",
+        "Express your sincere apology",
+        "Offer to repair or replace the item"
+      ]
+    },
+    {
+      "id": "t1-apology-behavior",
+      "title": "😔 Comportamento inadequado",
+      "content": "You behaved inappropriately at a social or work event and need to apologize. Write an email to your host or supervisor. In your email:\n• Acknowledge your behavior\n• Apologize sincerely\n• Explain how you will ensure it doesn't happen again",
+      "category": "apology",
+      "recipient": "Host/Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Acknowledge your behavior",
+        "Apologize sincerely",
+        "Explain how you will ensure it doesn't happen again"
+      ]
     },
     {
       "id": "t1-info-event",
-      "title": "Informação: Evento comunitário",
+      "title": "🎪 Evento comunitário",
       "content": "You are organizing a community event and need to inform residents. Write an email to the neighborhood association. In your email:\n• Describe the event and its purpose\n• Provide details about date, time, and location\n• Explain how residents can participate or help",
-      "category": "information"
+      "category": "information",
+      "recipient": "Neighborhood Association",
+      "formality": "Semi-formal",
+      "questions": [
+        "Describe the event and its purpose",
+        "Provide date, time, and location details",
+        "Explain how residents can participate"
+      ]
     },
     {
       "id": "t1-info-absence",
-      "title": "Informação: Ausência no trabalho",
+      "title": "📋 Ausência no trabalho",
       "content": "You will be absent from work unexpectedly and need to inform your team. Write an email to your supervisor. In your email:\n• Explain the reason for your absence\n• Specify how long you expect to be away\n• Describe arrangements for your current responsibilities",
-      "category": "information"
+      "category": "information",
+      "recipient": "Supervisor",
+      "formality": "Formal",
+      "questions": [
+        "Explain the reason for your absence",
+        "Specify how long you expect to be away",
+        "Describe arrangements for responsibilities"
+      ]
+    },
+    {
+      "id": "t1-info-moving",
+      "title": "🏠 Mudança de endereço",
+      "content": "You are moving to a new address and need to inform important contacts. Write an email to your bank/utility company. In your email:\n• Inform them of your upcoming move\n• Provide your new address and moving date\n• Request any necessary changes to your account",
+      "category": "information",
+      "recipient": "Bank/Utility Company",
+      "formality": "Formal",
+      "questions": [
+        "Inform them of your upcoming move",
+        "Provide new address and moving date",
+        "Request necessary account changes"
+      ]
     },
     {
       "id": "t1-suggest-improve",
-      "title": "Sugestão: Melhoria no local de trabalho",
+      "title": "💡 Melhoria no trabalho",
       "content": "You have ideas for improving efficiency or morale at your workplace. Write an email to your manager. In your email:\n• Describe the current situation or problem\n• Present your suggestion for improvement\n• Explain the benefits of implementing your idea",
-      "category": "suggestion"
+      "category": "suggestion",
+      "recipient": "Manager",
+      "formality": "Formal",
+      "questions": [
+        "Describe the current situation or problem",
+        "Present your suggestion",
+        "Explain the benefits"
+      ]
     },
     {
       "id": "t1-suggest-community",
-      "title": "Sugestão: Melhoria na comunidade",
+      "title": "🏘️ Melhoria na comunidade",
       "content": "You have noticed an issue in your neighborhood that needs attention. Write an email to the city council. In your email:\n• Describe the problem in your community\n• Suggest a specific solution\n• Explain how this change would benefit residents",
-      "category": "suggestion"
+      "category": "suggestion",
+      "recipient": "City Council",
+      "formality": "Formal",
+      "questions": [
+        "Describe the problem in your community",
+        "Suggest a specific solution",
+        "Explain how this change would benefit residents"
+      ]
+    },
+    {
+      "id": "t1-suggest-school",
+      "title": "🎒 Sugestão para escola",
+      "content": "You have an idea to improve your child's school. Write an email to the school principal. In your email:\n• Describe your suggestion\n• Explain why you think it would be beneficial\n• Offer to help implement the idea",
+      "category": "suggestion",
+      "recipient": "School Principal",
+      "formality": "Formal",
+      "questions": [
+        "Describe your suggestion",
+        "Explain why it would be beneficial",
+        "Offer to help implement the idea"
+      ]
     },
     {
       "id": "t1-invite-party",
-      "title": "Convite: Festa/Celebração",
+      "title": "🎉 Festa/Celebração",
       "content": "You are organizing a party to celebrate a special occasion. Write an email to invite a friend who lives far away. In your email:\n• Explain the reason for the celebration\n• Provide event details (date, time, location)\n• Encourage them to attend and offer accommodation help",
-      "category": "invitation"
+      "category": "invitation",
+      "recipient": "Friend",
+      "formality": "Informal",
+      "questions": [
+        "Explain the reason for the celebration",
+        "Provide event details",
+        "Encourage them to attend and offer help"
+      ]
     },
     {
       "id": "t1-invite-reunion",
-      "title": "Convite: Reunião de ex-colegas",
+      "title": "👥 Reunião de ex-colegas",
       "content": "You are organizing a reunion with former classmates or colleagues. Write an email to invite them. In your email:\n• Explain the purpose of the reunion\n• Provide details about when and where it will be\n• Ask them to confirm attendance and suggest activities",
-      "category": "invitation"
+      "category": "invitation",
+      "recipient": "Former Classmates/Colleagues",
+      "formality": "Semi-formal",
+      "questions": [
+        "Explain the purpose of the reunion",
+        "Provide when and where details",
+        "Ask them to confirm and suggest activities"
+      ]
+    },
+    {
+      "id": "t1-invite-wedding",
+      "title": "💒 Convite de casamento",
+      "content": "You are getting married and want to invite a close friend who lives abroad. Write an email to invite them. In your email:\n• Share the exciting news\n• Provide wedding details\n• Express how much their presence would mean to you",
+      "category": "invitation",
+      "recipient": "Friend",
+      "formality": "Semi-formal",
+      "questions": [
+        "Share the exciting news",
+        "Provide wedding details",
+        "Express how much their presence would mean"
+      ]
+    },
+    {
+      "id": "t1-cancel-reservation",
+      "title": "🚫 Cancelar reserva",
+      "content": "You need to cancel a reservation you made at a hotel or restaurant due to unexpected circumstances. Write an email to cancel. In your email:\n• Provide your reservation details\n• Explain why you need to cancel\n• Ask about refund or rescheduling options",
+      "category": "request",
+      "recipient": "Hotel/Restaurant",
+      "formality": "Formal",
+      "questions": [
+        "Provide your reservation details",
+        "Explain why you need to cancel",
+        "Ask about refund or rescheduling options"
+      ]
+    },
+    {
+      "id": "t1-inquiry-course",
+      "title": "🎓 Informações sobre curso",
+      "content": "You are interested in enrolling in a course or program. Write an email to the institution to request information. In your email:\n• Explain which course you are interested in\n• Ask specific questions about the program\n• Inquire about enrollment requirements and deadlines",
+      "category": "information",
+      "recipient": "Educational Institution",
+      "formality": "Formal",
+      "questions": [
+        "Explain which course you are interested in",
+        "Ask specific questions about the program",
+        "Inquire about requirements and deadlines"
+      ]
+    },
+    {
+      "id": "t1-volunteer-offer",
+      "title": "🤲 Oferecer voluntariado",
+      "content": "You want to volunteer for a local charity or organization. Write an email to offer your help. In your email:\n• Introduce yourself and express your interest\n• Describe your skills and availability\n• Ask how you can contribute",
+      "category": "request",
+      "recipient": "Charity/Organization",
+      "formality": "Formal",
+      "questions": [
+        "Introduce yourself and express interest",
+        "Describe your skills and availability",
+        "Ask how you can contribute"
+      ]
     }
   ],
   "task2": [
@@ -281,147 +549,195 @@
     },
     {
       "id": "t2-park-transit",
-      "title": "Parque comunitário vs Transporte público",
+      "title": "🌳 Parque vs Transporte público",
       "content": "Your city has received funding and is deciding how to use it. The options are:\n\nOption A: Build a new community park with sports facilities, playgrounds, and green spaces.\n\nOption B: Expand the public transportation system with new bus routes and improved schedules.\n\nChoose the option you prefer and explain why. Support your choice with reasons and examples.",
       "category": "community"
     },
     {
       "id": "t2-remote-office",
-      "title": "Trabalho remoto vs Escritório",
+      "title": "🏠 Trabalho remoto vs Escritório",
       "content": "Your company is conducting a survey about work preferences. The options are:\n\nOption A: Continue working primarily from home with occasional office visits.\n\nOption B: Return to working full-time in the office.\n\nWhich option do you prefer? Explain your choice with specific reasons and examples.",
       "category": "work"
     },
     {
       "id": "t2-online-classroom",
-      "title": "Aulas online vs Presenciais",
+      "title": "💻 Aulas online vs Presenciais",
       "content": "A local college is surveying students about their learning preferences. The options are:\n\nOption A: Continue offering mostly online classes with recorded lectures and virtual discussions.\n\nOption B: Return to traditional in-person classes on campus.\n\nWhich format do you prefer? Provide reasons and examples to support your choice.",
       "category": "education"
     },
     {
       "id": "t2-library-tech",
-      "title": "Biblioteca física vs Centro de tecnologia",
+      "title": "📚 Biblioteca vs Centro de tecnologia",
       "content": "Your neighborhood has space for a new public facility. The city council is asking residents to choose between:\n\nOption A: A traditional library with books, reading rooms, and study spaces.\n\nOption B: A modern technology center with computers, coding classes, and digital resources.\n\nWhich option would you prefer? Explain your reasons with specific examples.",
       "category": "community"
     },
     {
       "id": "t2-salary-benefits",
-      "title": "Salário maior vs Mais benefícios",
+      "title": "💵 Salário maior vs Mais benefícios",
       "content": "You are considering two job offers with similar responsibilities. The difference is:\n\nOption A: Higher salary but fewer benefits (basic health insurance, limited vacation time).\n\nOption B: Lower salary but excellent benefits (comprehensive health coverage, more vacation days, flexible hours).\n\nWhich would you choose? Support your decision with reasons and examples.",
       "category": "work"
     },
     {
       "id": "t2-small-big-company",
-      "title": "Empresa pequena vs Grande corporação",
+      "title": "🏢 Startup vs Grande empresa",
       "content": "You are deciding between two career paths. The options are:\n\nOption A: Work for a small startup company with more responsibilities and growth potential but less job security.\n\nOption B: Work for a large established corporation with more stability and resources but potentially slower advancement.\n\nWhich environment would you prefer? Explain your choice with specific reasons.",
       "category": "work"
     },
     {
       "id": "t2-house-apartment",
-      "title": "Casa vs Apartamento",
+      "title": "🏡 Casa vs Apartamento",
       "content": "Your family is considering moving to a new home. The options are:\n\nOption A: Buy a house in the suburbs with a yard and more space, but farther from work and amenities.\n\nOption B: Rent an apartment downtown, closer to work and entertainment, but with less space.\n\nWhich option would you recommend? Provide reasons and examples to support your answer.",
       "category": "lifestyle"
     },
     {
       "id": "t2-new-used-car",
-      "title": "Carro novo vs Usado",
+      "title": "🚗 Carro novo vs Usado",
       "content": "You need to purchase a vehicle and are considering your options:\n\nOption A: Buy a brand new car with a warranty and the latest features, but with higher monthly payments.\n\nOption B: Buy a reliable used car for a lower price, but without warranty and possibly older technology.\n\nWhich would you choose? Explain your reasoning with specific examples.",
       "category": "lifestyle"
     },
     {
       "id": "t2-travel-save",
-      "title": "Viajar agora vs Economizar",
+      "title": "✈️ Viajar agora vs Economizar",
       "content": "You have received some extra money and are deciding what to do with it:\n\nOption A: Use the money to travel and have new experiences while you are young.\n\nOption B: Save the money for future security or investments.\n\nWhich approach do you prefer? Support your choice with reasons and examples.",
       "category": "lifestyle"
     },
     {
       "id": "t2-solo-group-travel",
-      "title": "Viajar sozinho vs Em grupo",
+      "title": "🎒 Viajar sozinho vs Em grupo",
       "content": "You are planning your next vacation and considering:\n\nOption A: Travel alone to have more freedom and personal discovery.\n\nOption B: Travel with a group of friends or family for shared experiences.\n\nWhich do you prefer? Explain your choice with specific reasons and examples.",
       "category": "lifestyle"
     },
     {
       "id": "t2-traditional-modern-edu",
-      "title": "Educação tradicional vs Moderna",
+      "title": "📖 Educação tradicional vs Moderna",
       "content": "A school board is gathering opinions on teaching methods:\n\nOption A: Traditional teaching with lectures, textbooks, and standardized tests.\n\nOption B: Modern approaches with project-based learning, technology integration, and collaborative work.\n\nWhich educational approach do you support? Provide reasons and examples.",
       "category": "education"
     },
     {
       "id": "t2-homework-reduce",
-      "title": "Mais lição de casa vs Menos",
+      "title": "📝 Mais lição de casa vs Menos",
       "content": "A school is reconsidering its homework policy. The options are:\n\nOption A: Keep the current amount of homework to ensure students practice and review.\n\nOption B: Significantly reduce homework to give students more free time for activities and rest.\n\nWhich policy do you support? Explain your position with specific reasons.",
       "category": "education"
     },
     {
       "id": "t2-uniforms-choice",
-      "title": "Uniforme escolar vs Roupa livre",
+      "title": "👔 Uniforme vs Roupa livre",
       "content": "A school is debating its dress code policy:\n\nOption A: Require students to wear uniforms to promote equality and reduce distractions.\n\nOption B: Allow students to wear their own clothes to express individuality.\n\nWhich policy do you prefer? Support your opinion with reasons and examples.",
       "category": "education"
     },
     {
       "id": "t2-arts-stem",
-      "title": "Artes vs STEM na escola",
+      "title": "🎨 Artes vs STEM",
       "content": "A school must decide where to allocate additional funding:\n\nOption A: Invest more in arts programs (music, art, drama, dance).\n\nOption B: Invest more in STEM programs (science, technology, engineering, math).\n\nWhich area should receive more funding? Explain your choice with specific reasons.",
       "category": "education"
     },
     {
       "id": "t2-plastic-ban",
-      "title": "Proibir plástico vs Educação ambiental",
+      "title": "♻️ Proibir plástico vs Educação",
       "content": "The city is considering environmental policies:\n\nOption A: Ban single-use plastics immediately and require businesses to use alternatives.\n\nOption B: Focus on environmental education programs and gradual voluntary reduction.\n\nWhich approach do you support? Provide reasons and examples.",
       "category": "environment"
     },
     {
       "id": "t2-green-spaces",
-      "title": "Mais áreas verdes vs Desenvolvimento comercial",
+      "title": "🌿 Áreas verdes vs Comércio",
       "content": "Your city has vacant land available for development:\n\nOption A: Create more parks and green spaces for recreation and environmental benefits.\n\nOption B: Develop shopping centers and businesses to create jobs and economic growth.\n\nWhich development do you prefer? Support your choice with specific reasons.",
       "category": "community"
     },
     {
       "id": "t2-ev-subsidy",
-      "title": "Subsídio para carros elétricos vs Transporte público",
+      "title": "🔌 Carros elétricos vs Transporte público",
       "content": "The government is deciding how to reduce transportation emissions:\n\nOption A: Provide subsidies for people to purchase electric vehicles.\n\nOption B: Invest in improving and expanding public transportation.\n\nWhich policy do you support? Explain your reasoning with examples.",
       "category": "environment"
     },
     {
       "id": "t2-tourism-growth",
-      "title": "Aumentar turismo vs Limitar visitantes",
+      "title": "🗺️ Mais turismo vs Limitar",
       "content": "Your city is known for its attractions and is considering:\n\nOption A: Promote tourism more aggressively to boost the economy.\n\nOption B: Limit the number of tourists to preserve the quality of life for residents.\n\nWhich approach do you prefer? Provide specific reasons and examples.",
       "category": "community"
     },
     {
       "id": "t2-senior-youth",
-      "title": "Centro para idosos vs Centro para jovens",
+      "title": "👴 Centro para idosos vs jovens",
       "content": "Your community has funding for one new facility:\n\nOption A: Build a senior center with health services, social activities, and support programs.\n\nOption B: Build a youth center with after-school programs, sports facilities, and mentorship.\n\nWhich would benefit the community more? Explain your choice.",
       "category": "community"
     },
     {
       "id": "t2-police-social",
-      "title": "Mais polícia vs Programas sociais",
+      "title": "🚔 Mais polícia vs Programas sociais",
       "content": "Your city is addressing public safety concerns and considering:\n\nOption A: Increase police presence and security measures in public areas.\n\nOption B: Invest in social programs addressing root causes of crime (education, employment, mental health).\n\nWhich approach do you support? Provide reasons and examples.",
       "category": "community"
     },
     {
       "id": "t2-cashless-society",
-      "title": "Sociedade sem dinheiro físico vs Manter cédulas",
+      "title": "💳 Sem dinheiro físico vs Manter",
       "content": "Banks and businesses are discussing the future of payments:\n\nOption A: Move toward a cashless society with digital payments only.\n\nOption B: Continue to maintain cash as a payment option alongside digital methods.\n\nWhich do you prefer? Support your position with specific reasons.",
       "category": "technology"
     },
     {
       "id": "t2-ai-jobs",
-      "title": "Aceitar automação vs Proteger empregos",
+      "title": "🤖 Aceitar automação vs Proteger empregos",
       "content": "Companies are considering implementing AI and automation:\n\nOption A: Embrace AI and automation to increase efficiency, even if it reduces jobs.\n\nOption B: Limit automation to protect employment and traditional ways of working.\n\nWhich approach do you support? Explain with reasons and examples.",
       "category": "technology"
     },
     {
       "id": "t2-social-media-age",
-      "title": "Limitar redes sociais para menores vs Não restringir",
+      "title": "📱 Limitar redes sociais vs Não",
       "content": "Lawmakers are considering regulations on social media use by minors:\n\nOption A: Require age verification and limit social media access for users under 16.\n\nOption B: Allow parents to decide and not impose government restrictions.\n\nWhich policy do you support? Provide specific reasons and examples.",
       "category": "technology"
     },
     {
       "id": "t2-screen-time",
-      "title": "Limitar tempo de tela vs Liberdade digital",
+      "title": "📵 Limitar tempo de tela vs Liberdade",
       "content": "Schools are debating technology policies for students:\n\nOption A: Strictly limit screen time and device usage during school hours.\n\nOption B: Allow flexible use of devices for educational purposes throughout the day.\n\nWhich policy do you prefer? Explain your reasoning.",
       "category": "education"
+    },
+    {
+      "id": "t2-4day-workweek",
+      "title": "📆 Semana de 4 dias vs 5 dias",
+      "content": "Companies are experimenting with work schedules:\n\nOption A: Adopt a 4-day work week with longer hours each day.\n\nOption B: Keep the traditional 5-day work week with standard hours.\n\nWhich schedule do you prefer? Support your choice with reasons and examples.",
+      "category": "work"
+    },
+    {
+      "id": "t2-experience-degree",
+      "title": "🎓 Experiência vs Diploma",
+      "content": "Employers are reconsidering hiring practices:\n\nOption A: Prioritize candidates with practical work experience over formal education.\n\nOption B: Continue requiring university degrees for professional positions.\n\nWhich approach do you support? Explain your reasoning.",
+      "category": "work"
+    },
+    {
+      "id": "t2-rent-buy",
+      "title": "🔑 Alugar vs Comprar casa",
+      "content": "You are advising a friend on housing decisions:\n\nOption A: Rent a home to maintain flexibility and avoid large financial commitments.\n\nOption B: Buy a home to build equity and have long-term stability.\n\nWhich option would you recommend? Provide specific reasons.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-pet-policy",
+      "title": "🐕 Pets no trabalho vs Proibir",
+      "content": "Your workplace is considering a new pet policy:\n\nOption A: Allow employees to bring pets to work to improve morale.\n\nOption B: Maintain a pet-free workplace for professionalism and allergy concerns.\n\nWhich policy do you support? Explain with reasons and examples.",
+      "category": "work"
+    },
+    {
+      "id": "t2-city-country",
+      "title": "🏙️ Cidade vs Interior",
+      "content": "You are considering where to settle down:\n\nOption A: Live in a big city with career opportunities, entertainment, and diversity.\n\nOption B: Live in a small town or countryside with peace, nature, and lower costs.\n\nWhich lifestyle do you prefer? Support your choice with examples.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "t2-free-uni",
+      "title": "🎓 Universidade gratuita vs Paga",
+      "content": "The government is debating education funding:\n\nOption A: Make university education free for all citizens funded by taxes.\n\nOption B: Keep the current system where students pay tuition.\n\nWhich policy do you support? Provide reasons and examples.",
+      "category": "education"
+    },
+    {
+      "id": "t2-speed-limit",
+      "title": "🚦 Limite de velocidade menor vs Atual",
+      "content": "The city is considering traffic safety measures:\n\nOption A: Reduce speed limits in residential areas to improve safety.\n\nOption B: Keep current speed limits and invest in better road infrastructure.\n\nWhich approach do you prefer? Explain your reasoning.",
+      "category": "community"
+    },
+    {
+      "id": "t2-gym-outdoor",
+      "title": "🏋️ Academia vs Exercício ao ar livre",
+      "content": "You are advising a friend on fitness options:\n\nOption A: Join a gym with professional equipment and classes.\n\nOption B: Exercise outdoors through running, cycling, and park workouts.\n\nWhich option would you recommend? Support your choice with examples.",
+      "category": "lifestyle"
     }
   ]
 }

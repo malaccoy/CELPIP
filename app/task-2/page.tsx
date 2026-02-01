@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
+import ExamTimer from '@/components/ExamTimer';
+import DraftManager from '@/components/DraftManager';
+import ExamMode from '@/components/ExamMode';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords } from '@/utils/feedback';
 import { 
@@ -37,6 +40,7 @@ export default function Task2Page() {
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+  const [examModeActive, setExamModeActive] = useState(false);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Load contexts from JSON
@@ -185,13 +189,29 @@ export default function Task2Page() {
               <p><Clock size={14} /> 26 minutos recomendados</p>
             </div>
           </div>
+          <div className={styles.heroCenter}>
+            <ExamMode
+              taskType="task2"
+              totalMinutes={26}
+              isActive={examModeActive}
+              onStart={() => setCurrentStep(3)}
+              onEnd={(completed, timeUsed) => {
+                console.log('Exam ended:', { completed, timeUsed, words: wordCount });
+              }}
+              onToggle={setExamModeActive}
+            />
+            {!examModeActive && <ExamTimer totalMinutes={26} warningMinutes={5} />}
+          </div>
           <div className={styles.heroActions}>
             <button onClick={handleClear} className={styles.heroBtnDanger}>
               <Trash2 size={16} /> Limpar Tudo
             </button>
-            <button className={styles.heroBtnPrimary}>
-              <Save size={16} /> Salvar
-            </button>
+            <DraftManager 
+              task="task2"
+              currentData={state as unknown as Record<string, unknown>}
+              wordCount={wordCount}
+              onLoad={(data) => setState(data as unknown as Task2State)}
+            />
           </div>
         </div>
       </div>

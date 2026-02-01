@@ -1,104 +1,205 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Mail, PenTool, BarChart3, ArrowRight, Sparkles } from 'lucide-react';
-import { Card, Button } from '@/components/Common';
-import { SessionStats } from '@/types';
-import styles from '@/styles/Pages.module.scss';
+import { ArrowRight, Sparkles, Zap, Target, Trophy, ChevronDown } from 'lucide-react';
+import styles from '@/styles/Home.module.scss';
 
-export default function Dashboard() {
+export default function HomePage() {
   const router = useRouter();
-  const [stats, setStats] = React.useState<SessionStats | null>(null);
+  const [mounted, setMounted] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  React.useEffect(() => {
-    // Mock loading stats from local storage
-    const saved = localStorage.getItem('celpip_last_session');
-    if (saved) {
-      setStats(JSON.parse(saved));
-    }
+  useEffect(() => {
+    setMounted(true);
+    
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+    
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
-    <div className={styles.dashboardContainer}>
+    <div className={styles.homePage}>
+      {/* Cursor follower */}
+      <div 
+        className={styles.cursorGlow}
+        style={{ 
+          left: mousePos.x, 
+          top: mousePos.y,
+          opacity: mounted ? 1 : 0 
+        }}
+      />
+
+      {/* Floating elements */}
+      <div className={styles.floatingElements}>
+        <div className={styles.floatCircle1} />
+        <div className={styles.floatCircle2} />
+        <div className={styles.floatCircle3} />
+        <div className={styles.gridLines} />
+      </div>
+
       {/* Hero Section */}
-      <section className={styles.heroSection}>
+      <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <span className={styles.heroEmoji}>🚀</span>
+          <div className={styles.heroTag}>
+            <Sparkles size={14} />
+            <span>Treinamento Inteligente</span>
+          </div>
+          
           <h1 className={styles.heroTitle}>
-            Domine a <span>Escrita do CELPIP</span>
+            <span className={styles.heroTitleLine1}>Domine a</span>
+            <span className={styles.heroTitleLine2}>Escrita do</span>
+            <span className={styles.heroTitleAccent}>CELPIP</span>
           </h1>
+          
           <p className={styles.heroSubtitle}>
-            Pratique com feedback inteligente, melhore sua estrutura e conquiste a pontuação que você merece.
+            Pratique com feedback em tempo real, templates profissionais 
+            e simulados cronometrados. Sua aprovação começa aqui.
           </p>
+
+          <div className={styles.heroStats}>
+            <div className={styles.heroStat}>
+              <span className={styles.heroStatNumber}>43+</span>
+              <span className={styles.heroStatLabel}>Prompts Task 1</span>
+            </div>
+            <div className={styles.heroStatDivider} />
+            <div className={styles.heroStat}>
+              <span className={styles.heroStatNumber}>32+</span>
+              <span className={styles.heroStatLabel}>Prompts Task 2</span>
+            </div>
+            <div className={styles.heroStatDivider} />
+            <div className={styles.heroStat}>
+              <span className={styles.heroStatNumber}>∞</span>
+              <span className={styles.heroStatLabel}>Práticas</span>
+            </div>
+          </div>
+
+          <div className={styles.heroCTA}>
+            <button 
+              className={styles.ctaPrimary}
+              onClick={() => router.push('/task-1')}
+            >
+              Começar Agora
+              <ArrowRight size={18} />
+            </button>
+            <button 
+              className={styles.ctaSecondary}
+              onClick={() => router.push('/guide')}
+            >
+              Ver Guia Completo
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.scrollIndicator}>
+          <span>Explorar</span>
+          <ChevronDown size={20} />
         </div>
       </section>
 
-      <div className={styles.dashboardHeader}>
-        <h2>Escolha sua <span>Prática</span></h2>
-        <p>Selecione uma tarefa abaixo para começar a treinar.</p>
-      </div>
-
-      <div className={styles.dashboardCards}>
-        <div className={styles.taskCard}>
-          <div className={`${styles.taskCardIcon} ${styles.taskCardIconBlue}`}>
-            <Mail size={32} />
-          </div>
-          <h3 className={styles.taskCardTitle}>Task 1 — Email</h3>
-          <p className={styles.taskCardDescription}>Pratique emails formais e semi-formais. 150-200 palavras. Foco em tom, estrutura e solicitações.</p>
-          <Button onClick={() => router.push('/task-1')} className={styles.taskCardButton}>
-            Praticar Task 1 <ArrowRight size={16} />
-          </Button>
+      {/* Tasks Section */}
+      <section className={styles.tasksSection}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionTag}>Escolha sua prática</span>
+          <h2 className={styles.sectionTitle}>Duas Tasks,<br />Um Objetivo</h2>
         </div>
 
-        <div className={styles.taskCard}>
-          <div className={`${styles.taskCardIcon} ${styles.taskCardIconPurple}`}>
-            <PenTool size={32} />
-          </div>
-          <h3 className={styles.taskCardTitle}>Task 2 — Survey</h3>
-          <p className={styles.taskCardDescription}>Responda a pesquisas de opinião. Estrutura PRE (Point-Reason-Example). Argumentação sólida.</p>
-          <Button onClick={() => router.push('/task-2')} className={styles.taskCardButton}>
-            Praticar Task 2 <ArrowRight size={16} />
-          </Button>
+        <div className={styles.tasksGrid}>
+          {/* Task 1 Card */}
+          <article 
+            className={styles.taskCard}
+            onClick={() => router.push('/task-1')}
+          >
+            <div className={styles.taskCardNumber}>01</div>
+            <div className={styles.taskCardContent}>
+              <div className={styles.taskCardIcon}>✉️</div>
+              <h3 className={styles.taskCardTitle}>Email Writing</h3>
+              <p className={styles.taskCardDesc}>
+                Emails formais e semi-formais. Reclamações, pedidos, 
+                agradecimentos. 150-200 palavras em 27 minutos.
+              </p>
+              <ul className={styles.taskCardFeatures}>
+                <li><Zap size={14} /> Feedback instantâneo</li>
+                <li><Target size={14} /> Contador de palavras</li>
+                <li><Trophy size={14} /> Modo exame</li>
+              </ul>
+            </div>
+            <div className={styles.taskCardArrow}>
+              <ArrowRight size={24} />
+            </div>
+            <div className={styles.taskCardGlow} />
+          </article>
+
+          {/* Task 2 Card */}
+          <article 
+            className={styles.taskCard}
+            onClick={() => router.push('/task-2')}
+          >
+            <div className={styles.taskCardNumber}>02</div>
+            <div className={styles.taskCardContent}>
+              <div className={styles.taskCardIcon}>📋</div>
+              <h3 className={styles.taskCardTitle}>Survey Response</h3>
+              <p className={styles.taskCardDesc}>
+                Pesquisas de opinião. Argumentação PRE: Point, Reason, 
+                Example. 150-200 palavras em 26 minutos.
+              </p>
+              <ul className={styles.taskCardFeatures}>
+                <li><Zap size={14} /> Templates PRE</li>
+                <li><Target size={14} /> Estrutura guiada</li>
+                <li><Trophy size={14} /> Simulado real</li>
+              </ul>
+            </div>
+            <div className={styles.taskCardArrow}>
+              <ArrowRight size={24} />
+            </div>
+            <div className={styles.taskCardGlow} />
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div className={styles.sessionStatsContainer}>
-        <Card title="📊 Sessão Atual">
-          {stats ? (
-            <div className={styles.sessionStatsContent}>
-              <div className={styles.sessionStatsInfo}>
-                <div className={styles.sessionStatsIcon}>
-                  <BarChart3 size={20} />
-                </div>
-                <div>
-                  <p className={styles.sessionStatsLabel}>Última prática</p>
-                  <p className={styles.sessionStatsValue}>{stats.lastTask === 'TASK_1' ? 'Email Task' : 'Survey Task'}</p>
-                </div>
-              </div>
+      {/* Features Section */}
+      <section className={styles.featuresSection}>
+        <div className={styles.featuresGrid}>
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>⚡</div>
+            <h4>Feedback Inteligente</h4>
+            <p>Análise automática de estrutura, tom e gramática</p>
+          </div>
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>⏱️</div>
+            <h4>Timer Real</h4>
+            <p>Simule as condições exatas do exame</p>
+          </div>
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>📊</div>
+            <h4>Progresso</h4>
+            <p>Acompanhe sua evolução ao longo do tempo</p>
+          </div>
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>💾</div>
+            <h4>Rascunhos</h4>
+            <p>Salve e retome suas práticas a qualquer momento</p>
+          </div>
+        </div>
+      </section>
 
-              <div className={styles.sessionStatsWords}>
-                <p className={styles.sessionStatsWordsLabel}>Palavras</p>
-                <p className={styles.sessionStatsWordsValue}>{stats.lastWordCount}</p>
-              </div>
-
-              <div className={styles.sessionStatsDate}>
-                <p className={styles.sessionStatsDateValue}>{new Date(stats.date).toLocaleDateString()}</p>
-                <span className={`${styles.sessionStatsBadge} ${
-                  stats.lastWordCount >= 150 && stats.lastWordCount <= 200 ? styles.sessionStatsBadgeIdeal : styles.sessionStatsBadgeOutside
-                }`}>
-                  {stats.lastWordCount >= 150 && stats.lastWordCount <= 200 ? '✓ Faixa Ideal' : '⚠ Fora da faixa'}
-                </span>
-              </div>
-            </div>
-          ) : (
-            <div className={styles.sessionStatsEmpty}>
-              <p>✨ Nenhuma sessão registrada ainda.</p>
-              <p>Complete um exercício para ver suas estatísticas aqui.</p>
-            </div>
-          )}
-        </Card>
-      </div>
+      {/* Bottom CTA */}
+      <section className={styles.bottomCTA}>
+        <div className={styles.bottomCTAContent}>
+          <h3>Pronto para começar?</h3>
+          <p>Sua jornada para dominar o CELPIP Writing começa com um clique.</p>
+          <button 
+            className={styles.ctaPrimary}
+            onClick={() => router.push('/task-1')}
+          >
+            Iniciar Prática Gratuita
+            <ArrowRight size={18} />
+          </button>
+        </div>
+      </section>
     </div>
   );
 }

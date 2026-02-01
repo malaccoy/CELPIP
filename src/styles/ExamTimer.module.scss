@@ -1,0 +1,180 @@
+// ============================================
+// ⏱️ EXAM TIMER COMPONENT
+// ============================================
+
+$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.timerContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all $transition-smooth;
+  min-width: 200px;
+  
+  &.running {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    
+    .timerDisplay {
+      color: #059669;
+    }
+    
+    .timerProgress {
+      background: linear-gradient(90deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+    }
+  }
+  
+  &.paused {
+    border-color: #e2e8f0;
+    
+    .timerDisplay {
+      color: #64748b;
+    }
+    
+    .timerProgress {
+      background: rgba(148, 163, 184, 0.1);
+    }
+  }
+  
+  &.warning {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+    animation: pulse 1s ease-in-out infinite;
+    
+    .timerDisplay {
+      color: #d97706;
+      font-weight: 700;
+    }
+    
+    .timerProgress {
+      background: linear-gradient(90deg, rgba(245, 158, 11, 0.2) 0%, rgba(239, 68, 68, 0.15) 100%);
+    }
+  }
+  
+  &.ended {
+    border-color: #ef4444;
+    background: rgba(254, 242, 242, 0.95);
+    
+    .timerDisplay {
+      color: #dc2626;
+      font-weight: 700;
+    }
+    
+    .timerProgress {
+      background: rgba(239, 68, 68, 0.15);
+      width: 100% !important;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.25);
+  }
+}
+
+.timerProgress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: width 1s linear, background $transition-smooth;
+  pointer-events: none;
+}
+
+.timerContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.warningIcon {
+  color: #f59e0b;
+  animation: shake 0.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.timerDisplay {
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #334155;
+  letter-spacing: 0.05em;
+  transition: color $transition-fast;
+}
+
+.timerControls {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-left: auto;
+}
+
+.timerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all $transition-fast;
+  
+  &:hover:not(:disabled) {
+    border-color: #818cf8;
+    color: #4f46e5;
+    background: rgba(99, 102, 241, 0.05);
+  }
+  
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  &.muted {
+    color: #94a3b8;
+    border-color: #f1f5f9;
+    background: #f8fafc;
+  }
+}
+
+// ============================================
+// 📱 RESPONSIVE
+// ============================================
+
+@media (max-width: 640px) {
+  .timerContainer {
+    min-width: 160px;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .timerDisplay {
+    font-size: 1.125rem;
+  }
+  
+  .timerBtn {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}

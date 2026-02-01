@@ -90,6 +90,12 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
+.heroCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .heroActions {
   display: flex;
   gap: 0.75rem;

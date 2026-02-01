@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
+import ExamTimer from '@/components/ExamTimer';
+import DraftManager from '@/components/DraftManager';
+import ExamMode from '@/components/ExamMode';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
 import { 
@@ -41,6 +44,7 @@ export default function Task1Page() {
   const [transferMessage, setTransferMessage] = useState<string>('');
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+  const [examModeActive, setExamModeActive] = useState(false);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Load contexts from JSON
@@ -122,29 +126,62 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
   };
 
   const handleTransferPlanning = () => {
-    const paragraphs: string[] = [];
+    const parts: string[] = [];
     const notes = state.bodyStructureNotes;
     
-    if (notes[0]?.trim()) {
-      paragraphs.push(`First of all, ${notes[0].trim()}`);
-    }
-    if (notes[1]?.trim()) {
-      paragraphs.push(`Additionally, ${notes[1].trim()}`);
-    }
-    if (notes[2]?.trim()) {
-      paragraphs.push(`Finally, ${notes[2].trim()}`);
-    }
-    if (notes[3]?.trim()) {
-      paragraphs.push(`In conclusion, ${notes[3].trim()}`);
+    // Opening (Dear...) - só o que foi digitado
+    if (state.opening?.trim()) {
+      parts.push(state.opening.trim());
     }
     
-    if (paragraphs.length === 0) {
+    // Who I am - só o que foi digitado
+    if (state.whoAmI?.trim()) {
+      parts.push(state.whoAmI.trim());
+    }
+    
+    // Why I'm writing - só o que foi digitado
+    if (state.whyWriting?.trim()) {
+      parts.push(state.whyWriting.trim());
+    }
+    
+    // Body paragraphs - só o texto digitado, sem prefixos
+    if (notes[0]?.trim()) {
+      parts.push(notes[0].trim());
+    }
+    if (notes[1]?.trim()) {
+      parts.push(notes[1].trim());
+    }
+    if (notes[2]?.trim()) {
+      parts.push(notes[2].trim());
+    }
+    
+    // Conclusion - só o que foi digitado
+    if (notes[3]?.trim()) {
+      parts.push(notes[3].trim());
+    }
+    
+    // CTA - só o que foi digitado
+    if (state.cta?.trim()) {
+      parts.push(state.cta.trim());
+    }
+    
+    // Closing Line - só o que foi digitado
+    if (state.pleaseLetMeKnow?.trim()) {
+      parts.push(state.pleaseLetMeKnow.trim());
+    }
+    
+    // Sign off - só o que foi digitado
+    if (state.signOff?.trim()) {
+      parts.push(state.signOff.trim());
+    }
+    
+    if (parts.length === 0) {
       setTransferMessage('⚠️ Nenhum planejamento preenchido para transferir.');
       setTimeout(() => setTransferMessage(''), 3000);
       return;
     }
     
-    const transferredContent = paragraphs.join('\n\n');
+    const transferredContent = parts.join('\n\n');
     const currentContent = state.content.trim();
     const newContent = currentContent 
       ? `${currentContent}\n\n${transferredContent}` 
@@ -223,13 +260,29 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               <p><Clock size={14} /> 27 minutos recomendados</p>
             </div>
           </div>
+          <div className={styles.heroCenter}>
+            <ExamMode
+              taskType="task1"
+              totalMinutes={27}
+              isActive={examModeActive}
+              onStart={() => setCurrentStep(3)}
+              onEnd={(completed, timeUsed) => {
+                console.log('Exam ended:', { completed, timeUsed, words: wordCount });
+              }}
+              onToggle={setExamModeActive}
+            />
+            {!examModeActive && <ExamTimer totalMinutes={27} warningMinutes={5} />}
+          </div>
           <div className={styles.heroActions}>
             <button onClick={handleClear} className={styles.heroBtnDanger}>
               <Trash2 size={16} /> Limpar Tudo
             </button>
-            <button className={styles.heroBtnPrimary}>
-              <Save size={16} /> Salvar
-            </button>
+            <DraftManager 
+              task="task1"
+              currentData={state as unknown as Record<string, unknown>}
+              wordCount={wordCount}
+              onLoad={(data) => setState(data as unknown as Task1State)}
+            />
           </div>
         </div>
       </div>
