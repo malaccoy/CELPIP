@@ -3,8 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import { 
   BarChart3, Clock, FileText, TrendingUp, Calendar,
-  Target, Award, Flame, ChevronRight, Trash2
+  Target, Award, Flame, Trash2
 } from 'lucide-react';
+import GoalsManager from '@/components/GoalsManager';
+import ErrorReview from '@/components/ErrorReview';
+import DailyChallengeWidget from '@/components/DailyChallenge';
 import styles from '@/styles/Dashboard.module.scss';
 
 interface PracticeSession {
@@ -334,6 +337,21 @@ export default function Dashboard() {
                     ? '💪 Bom começo! Continue praticando!'
                     : '✏️ Comece a praticar para ver seu progresso aqui!'}
             </p>
+          </div>
+
+          {/* Daily Challenge Widget */}
+          <div className={styles.challengeWidget}>
+            <DailyChallengeWidget mode="compact" />
+          </div>
+
+          {/* Goals Widget */}
+          <div className={styles.goalsWidget}>
+            <GoalsManager mode="compact" />
+          </div>
+
+          {/* Errors Widget */}
+          <div className={styles.errorsWidget}>
+            <ErrorReview mode="compact" />
           </div>
         </div>
       )}

@@ -1,0 +1,322 @@
+// ============================================
+// 🎯 GOALS MANAGER STYLES
+// ============================================
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-primary);
+  
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.sectionDesc {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+}
+
+// Slider
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.slider {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  appearance: none;
+  cursor: pointer;
+  
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.sliderValue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.sliderNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  line-height: 1;
+}
+
+.sliderLabel {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+}
+
+// Score buttons
+.scoreButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.scoreButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid var(--border-primary);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+  }
+}
+
+.scoreButtonActive {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+// Date input
+.dateInput {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-primary);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+  }
+}
+
+// Exam countdown
+.examCountdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.examUrgent {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+  border-color: rgba(239, 68, 68, 0.3);
+  
+  .countdownNumber {
+    color: var(--accent-danger);
+  }
+}
+
+.countdownNumber {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+  line-height: 1;
+}
+
+.countdownLabel {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-top: 0.25rem;
+}
+
+.examToday {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-success);
+}
+
+.examPassed {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+// Days grid
+.daysGrid {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.dayButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid var(--border-primary);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: var(--accent-success);
+    color: var(--accent-success);
+  }
+}
+
+.dayButtonActive {
+  background: var(--accent-success);
+  border-color: transparent;
+  color: white;
+}
+
+// Progress preview
+.progressPreview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  
+  strong {
+    color: var(--accent-primary);
+  }
+}
+
+.goalAchieved {
+  color: var(--accent-success) !important;
+}
+
+// ============================================
+// 📊 COMPACT MODE (Dashboard)
+// ============================================
+
+.compactContainer {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+}
+
+.compactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+}
+
+.examBadge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 20px;
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.compactGoals {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compactGoal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compactGoalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.compactGoalValue {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progressScore {
+  background: linear-gradient(90deg, #f59e0b 0%, #22c55e 100%);
+}
+
+.progressComplete {
+  background: linear-gradient(90deg, var(--accent-success) 0%, #4ade80 100%);
+}
+
+.streakBadge {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(239, 68, 68, 0.1) 100%);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #f97316;
+}

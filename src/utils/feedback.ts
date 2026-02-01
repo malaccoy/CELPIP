@@ -137,3 +137,52 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
 
   return feedback;
 };
+
+// Calculate estimated CELPIP score based on feedback results
+export const calculateScore = (feedback: FeedbackItem[], wordCount: number): number => {
+  // Base score starts at 6
+  let score = 6;
+  
+  // Word count scoring
+  if (wordCount >= 150 && wordCount <= 200) {
+    score += 1.5; // Ideal range
+  } else if (wordCount >= 130 && wordCount < 150) {
+    score += 0.5; // Slightly under
+  } else if (wordCount > 200 && wordCount <= 220) {
+    score += 1; // Slightly over is okay
+  } else if (wordCount < 130) {
+    score -= 1; // Too short
+  }
+  // Over 220 stays neutral
+  
+  // Count passed/failed by severity
+  const blockers = feedback.filter(f => f.severity === 'BLOCKER');
+  const important = feedback.filter(f => f.severity === 'IMPORTANT');
+  const polish = feedback.filter(f => f.severity === 'POLISH');
+  
+  const blockersPassed = blockers.filter(f => f.passed).length;
+  const importantPassed = important.filter(f => f.passed).length;
+  const polishPassed = polish.filter(f => f.passed).length;
+  
+  // Blockers heavily impact score
+  if (blockers.length > 0) {
+    const blockerRatio = blockersPassed / blockers.length;
+    score += blockerRatio * 2; // Up to +2 for all blockers passed
+    if (blockerRatio < 0.5) score -= 2; // Major penalty if most blockers fail
+  }
+  
+  // Important items
+  if (important.length > 0) {
+    const importantRatio = importantPassed / important.length;
+    score += importantRatio * 1.5; // Up to +1.5
+  }
+  
+  // Polish items (minor impact)
+  if (polish.length > 0) {
+    const polishRatio = polishPassed / polish.length;
+    score += polishRatio * 1; // Up to +1
+  }
+  
+  // Clamp to CELPIP range (3-12)
+  return Math.max(3, Math.min(12, Math.round(score)));
+};

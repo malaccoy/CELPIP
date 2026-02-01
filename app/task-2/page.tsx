@@ -6,7 +6,9 @@ import ExamTimer from '@/components/ExamTimer';
 import DraftManager from '@/components/DraftManager';
 import ExamMode from '@/components/ExamMode';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
-import { generateTask2Feedback, countWords } from '@/utils/feedback';
+import { generateTask2Feedback, countWords, calculateScore } from '@/utils/feedback';
+import { recordPractice } from '@/components/DetailedStats';
+import { recordErrors } from '@/components/ErrorReview';
 import { 
   Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
@@ -107,11 +109,29 @@ export default function Task2Page() {
   const handleEvaluate = () => {
     const results = generateTask2Feedback(state);
     setFeedback(results);
+    
+    // Calculate score and record practice
+    const score = calculateScore(results, wordCount);
+    
+    // Estimate time (could be improved with actual timer tracking)
+    const estimatedMinutes = Math.max(5, Math.round(wordCount / 15));
+
     if (typeof window !== 'undefined') {
       try {
+        // Record to detailed stats
+        recordPractice('task2', wordCount, score, estimatedMinutes);
+        
+        // Record failed checks for error tracking
+        const failedIds = results.filter(r => !r.passed).map(r => r.id);
+        if (failedIds.length > 0) {
+          recordErrors(failedIds);
+        }
+        
+        // Keep legacy session storage for backwards compatibility
         localStorage.setItem('celpip_last_session', JSON.stringify({
           lastWordCount: wordCount,
           lastTask: 'TASK_2',
+          lastScore: score,
           date: new Date().toISOString()
         }));
       } catch {

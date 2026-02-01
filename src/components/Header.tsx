@@ -3,7 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, GraduationCap } from 'lucide-react';
+import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, GraduationCap, Flame } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeProvider';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -14,6 +15,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/challenge', icon: Flame, label: 'Desafio' },
   { to: '/guide', icon: GraduationCap, label: 'Guia' },
   { to: '/task-1', icon: Mail, label: 'Task 1' },
   { to: '/task-2', icon: PenTool, label: 'Task 2' },
@@ -58,6 +60,7 @@ export const Header: React.FC = () => {
               </Link>
             );
           })}
+          <ThemeToggle className={styles.themeToggle} />
         </nav>
       </div>
     </header>

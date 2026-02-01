@@ -454,6 +454,21 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
   color: #ef4444;
 }
 
+// Daily Challenge Widget
+.challengeWidget {
+  grid-column: 1 / -1;
+}
+
+// Goals Widget
+.goalsWidget {
+  grid-column: 1 / -1;
+}
+
+// Errors Widget
+.errorsWidget {
+  grid-column: 1 / -1;
+}
+
 // ============================================
 // 📱 RESPONSIVE
 // ============================================
