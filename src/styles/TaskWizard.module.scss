@@ -291,6 +291,99 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
 }
 
+// ============================================
+// 📋 CONTEXT CARD (Selected Theme)
+// ============================================
+
+.contextCard {
+  margin: 0 1.5rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-primary);
+}
+
+.contextCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contextCardChange {
+  margin-left: auto;
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+}
+
+.contextCardTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.375rem;
+}
+
+.contextCardSituation {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contextCardTasks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  
+  span {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    padding: 0.25rem 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+  }
+}
+
+.contextCardCompact {
+  padding: 0.75rem 1rem;
+  
+  .contextCardHeader {
+    margin-bottom: 0.25rem;
+  }
+  
+  .contextCardTitle {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .contextCardSituation {
+    font-size: 0.8rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
 .stepBody {
   padding: 2rem;
 }

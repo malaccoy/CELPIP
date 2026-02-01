@@ -47,6 +47,9 @@ export default function Task2Page() {
   const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
+  // Get selected context
+  const selectedContext = contexts.find(c => c.id === selectedContextId);
+
   // Load contexts from JSON
   useEffect(() => {
     fetch('/content/contexts.json')
@@ -405,6 +408,24 @@ export default function Task2Page() {
               <TaskHelpPanel defaultTab="task2" />
             </div>
 
+            {/* Selected Context Card */}
+            {selectedContext && (
+              <div className={styles.contextCard}>
+                <div className={styles.contextCardHeader}>
+                  <ClipboardList size={16} />
+                  <span>Tema Selecionado</span>
+                  <button 
+                    className={styles.contextCardChange}
+                    onClick={() => setCurrentStep(1)}
+                  >
+                    Trocar
+                  </button>
+                </div>
+                <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
+                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
+              </div>
+            )}
+
             <div className={styles.stepBody}>
               {/* Opinion Line */}
               <div className={styles.formSection}>
@@ -552,6 +573,17 @@ export default function Task2Page() {
                 ✍️ {wordCount} palavras
               </div>
             </div>
+
+            {/* Selected Context Card - Compact */}
+            {selectedContext && (
+              <div className={`${styles.contextCard} ${styles.contextCardCompact}`}>
+                <div className={styles.contextCardHeader}>
+                  <ClipboardList size={16} />
+                  <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
+                </div>
+                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
+              </div>
+            )}
 
             <div className={styles.stepBody}>
               {/* Writing Area */}
