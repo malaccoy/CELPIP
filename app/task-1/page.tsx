@@ -1,12 +1,15 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ArrowRight } from 'lucide-react';
-import styles from '@/styles/TaskPages.module.scss';
+import { 
+  Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, 
+  MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
+  Info, ArrowRight, ArrowLeft, ChevronRight
+} from 'lucide-react';
+import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 
 const INITIAL_STATE: Task1State = {
@@ -25,18 +28,20 @@ const INITIAL_STATE: Task1State = {
   content: ''
 };
 
-// Timing constants
-const SCROLL_DELAY_MS = 100;
-const MESSAGE_DISPLAY_MS = 3000;
+const STEPS = [
+  { id: 1, title: 'Contexto', icon: FileText, description: 'Entenda o enunciado' },
+  { id: 2, title: 'Planejamento', icon: PenTool, description: 'Organize suas ideias' },
+  { id: 3, title: 'Escrita', icon: Mail, description: 'Escreva seu email' },
+];
 
 export default function Task1Page() {
+  const [currentStep, setCurrentStep] = useState(1);
   const [state, setState] = useState<Task1State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
   const [transferMessage, setTransferMessage] = useState<string>('');
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
-  const planningRef = useRef<HTMLDivElement>(null);
 
   // Load contexts from JSON
   useEffect(() => {
@@ -54,6 +59,9 @@ export default function Task1Page() {
     setSelectedContextId(context.id);
     if (context.category !== 'custom') {
       updateState('promptText', context.content);
+      if (context.recipient) updateState('recipient', context.recipient);
+      if (context.formality) updateState('formality', context.formality);
+      if (context.questions) updateState('questions', context.questions);
     }
   };
 
@@ -105,9 +113,11 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
   };
 
   const handleClear = () => {
-    if (confirm('Tem certeza que deseja limpar tudo?')) {
+    if (confirm('Tem certeza que deseja limpar tudo e voltar ao início?')) {
       setState(INITIAL_STATE);
       setFeedback([]);
+      setSelectedContextId(null);
+      setCurrentStep(1);
     }
   };
 
@@ -115,22 +125,15 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     const paragraphs: string[] = [];
     const notes = state.bodyStructureNotes;
     
-    // P1 - First of all,
     if (notes[0]?.trim()) {
       paragraphs.push(`First of all, ${notes[0].trim()}`);
     }
-    
-    // P2 - Additionally,
     if (notes[1]?.trim()) {
       paragraphs.push(`Additionally, ${notes[1].trim()}`);
     }
-    
-    // P3 - Finally, (optional)
     if (notes[2]?.trim()) {
       paragraphs.push(`Finally, ${notes[2].trim()}`);
     }
-    
-    // Closing - In conclusion,
     if (notes[3]?.trim()) {
       paragraphs.push(`In conclusion, ${notes[3].trim()}`);
     }
@@ -142,23 +145,17 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     }
     
     const transferredContent = paragraphs.join('\n\n');
-    
-    // Append to existing content or set new content
     const currentContent = state.content.trim();
     const newContent = currentContent 
       ? `${currentContent}\n\n${transferredContent}` 
       : transferredContent;
     
     updateState('content', newContent);
-    
-    // Show success message
-    setTransferMessage('☑ Planejamento transferido para a escrita final.');
+    setTransferMessage('✅ Planejamento transferido!');
     setTimeout(() => setTransferMessage(''), 3000);
     
-    // Focus on writing textarea
     setTimeout(() => {
       writingTextareaRef.current?.focus();
-      // Move cursor to end
       if (writingTextareaRef.current) {
         writingTextareaRef.current.selectionStart = writingTextareaRef.current.value.length;
         writingTextareaRef.current.selectionEnd = writingTextareaRef.current.value.length;
@@ -172,7 +169,6 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     return styles.wordCounterHigh;
   };
 
-  // Map severity + passed to visual type
   const getFeedbackItemClass = (item: FeedbackItem) => {
     if (item.passed) return styles.feedbackItemSuccess;
     switch (item.severity) {
@@ -184,364 +180,454 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
   };
 
   const getFeedbackIcon = (item: FeedbackItem) => {
-    if (item.passed) return <CheckCircle size={16} className="text-green-600" />;
+    if (item.passed) return <CheckCircle size={16} />;
     switch (item.severity) {
-      case 'BLOCKER': return <AlertCircle size={16} className="text-red-600" />;
-      case 'IMPORTANT': return <AlertTriangle size={16} className="text-amber-600" />;
-      case 'POLISH': return <Info size={16} className="text-blue-600" />;
-      default: return <Info size={16} className="text-blue-600" />;
+      case 'BLOCKER': return <AlertCircle size={16} />;
+      case 'IMPORTANT': return <AlertTriangle size={16} />;
+      case 'POLISH': return <Info size={16} />;
+      default: return <Info size={16} />;
+    }
+  };
+
+  const goToStep = (step: number) => {
+    if (step >= 1 && step <= 3) {
+      setCurrentStep(step);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const nextStep = () => goToStep(currentStep + 1);
+  const prevStep = () => goToStep(currentStep - 1);
+
+  // Check if step has content (for progress indication)
+  const stepHasContent = (step: number): boolean => {
+    switch (step) {
+      case 1: return !!state.promptText.trim();
+      case 2: return !!state.opening.trim() || state.bodyStructureNotes.some(n => n.trim());
+      case 3: return !!state.content.trim();
+      default: return false;
     }
   };
 
   return (
-    <div className={styles.taskPageContainer}>
-      {/* Mini Hero Section */}
-      <div className={styles.miniHero}>
-        <div className={styles.miniHeroContent}>
-          <div className={styles.miniHeroLeft}>
-            <div className={styles.miniHeroIcon}>
+    <div className={styles.wizardContainer}>
+      {/* Hero Header */}
+      <div className={styles.wizardHero}>
+        <div className={styles.heroContent}>
+          <div className={styles.heroLeft}>
+            <div className={styles.heroIcon}>
               <Mail />
             </div>
-            <div className={styles.miniHeroTitle}>
+            <div className={styles.heroTitle}>
               <h1>Task 1 — <span>Email Writing</span></h1>
-              <p><Clock size={14} style={{ display: 'inline', marginRight: 4 }} /> Tempo recomendado: 27 minutos</p>
+              <p><Clock size={14} /> 27 minutos recomendados</p>
             </div>
           </div>
-          <div className={styles.miniHeroActions}>
-            <button onClick={handleClear} className={`${styles.heroBtn} ${styles.heroBtnDanger}`}>
-              <Trash2 size={16} /> Limpar
+          <div className={styles.heroActions}>
+            <button onClick={handleClear} className={styles.heroBtnDanger}>
+              <Trash2 size={16} /> Limpar Tudo
             </button>
-            <button className={`${styles.heroBtn} ${styles.heroBtnPrimary}`}>
-              <Save size={16} /> Salvar Rascunho
+            <button className={styles.heroBtnPrimary}>
+              <Save size={16} /> Salvar
             </button>
           </div>
         </div>
       </div>
 
-      {/* Task Grid */}
-      <div className={styles.taskGrid}>
-        {/* Column 1: Context */}
-        <div className={styles.taskColumn}>
-          <div className={styles.glassCard}>
-            <div className={styles.cardHeader}>
-              <div className={styles.cardIcon}>
-                <FileText />
+      {/* Progress Steps */}
+      <div className={styles.progressContainer}>
+        <div className={styles.progressSteps}>
+          {STEPS.map((step, index) => {
+            const StepIcon = step.icon;
+            const isActive = currentStep === step.id;
+            const isCompleted = currentStep > step.id || stepHasContent(step.id);
+            
+            return (
+              <React.Fragment key={step.id}>
+                <button
+                  className={`${styles.progressStep} ${isActive ? styles.progressStepActive : ''} ${isCompleted ? styles.progressStepCompleted : ''}`}
+                  onClick={() => goToStep(step.id)}
+                >
+                  <div className={styles.stepCircle}>
+                    {isCompleted && !isActive ? (
+                      <CheckCircle size={20} />
+                    ) : (
+                      <StepIcon size={20} />
+                    )}
+                  </div>
+                  <div className={styles.stepInfo}>
+                    <span className={styles.stepTitle}>{step.title}</span>
+                    <span className={styles.stepDesc}>{step.description}</span>
+                  </div>
+                </button>
+                {index < STEPS.length - 1 && (
+                  <div className={`${styles.progressLine} ${currentStep > step.id ? styles.progressLineActive : ''}`}>
+                    <ChevronRight size={20} />
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Step Content */}
+      <div className={styles.stepContent}>
+        {/* Step 1: Context */}
+        {currentStep === 1 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <FileText className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Contexto do Enunciado</h2>
+                <p>Leia e entenda o enunciado da tarefa. Identifique o destinatário e os pontos que precisa abordar.</p>
               </div>
-              <h3 className={styles.cardTitle}>1. Contexto do Enunciado</h3>
             </div>
 
-            {/* Context Selector Dropdown */}
-            {contexts.length > 0 && (
-              <ContextSelector
-                contexts={contexts}
-                selectedId={selectedContextId}
-                onSelect={handleContextSelect}
-                placeholder="Escolha um tema pronto ou crie o seu..."
-              />
-            )}
+            <div className={styles.stepBody}>
+              {/* Context Selector */}
+              {contexts.length > 0 && (
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Escolha um tema</label>
+                  <ContextSelector
+                    contexts={contexts}
+                    selectedId={selectedContextId}
+                    onSelect={handleContextSelect}
+                    placeholder="Selecione um tema pronto ou crie o seu..."
+                  />
+                </div>
+              )}
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Enunciado da Tarefa</label>
-              <textarea
-                className={styles.formTextarea}
-                placeholder="Cole o enunciado aqui ou selecione um tema acima..."
-                rows={4}
-                value={state.promptText}
-                onChange={e => updateState('promptText', e.target.value)}
-              />
-            </div>
-
-            <div className={styles.formGrid}>
-              <div className={styles.formGroup}>
-                <label className={styles.formLabel}>Destinatário (WHO)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="Ex: Manager, Mr. Smith"
-                  value={state.recipient}
-                  onChange={e => updateState('recipient', e.target.value)}
+              {/* Prompt Text */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Enunciado da Tarefa</label>
+                <textarea
+                  className={styles.formTextareaLarge}
+                  placeholder="Cole o enunciado aqui ou selecione um tema acima..."
+                  rows={6}
+                  value={state.promptText}
+                  onChange={e => updateState('promptText', e.target.value)}
                 />
               </div>
-              <div className={styles.formGroup}>
-                <label className={styles.formLabel}>Formalidade</label>
-                <select
-                  className={styles.formSelect}
-                  value={state.formality}
-                  onChange={e => updateState('formality', e.target.value as 'Formal' | 'Semi-formal')}
-                >
-                  <option value="Formal">Formal</option>
-                  <option value="Semi-formal">Semi-formal</option>
-                </select>
+
+              {/* Recipient & Formality */}
+              <div className={styles.formRow}>
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Destinatário (WHO)</label>
+                  <input
+                    className={styles.formInput}
+                    placeholder="Ex: Manager, Mr. Smith, Customer Service"
+                    value={state.recipient}
+                    onChange={e => updateState('recipient', e.target.value)}
+                  />
+                </div>
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Formalidade</label>
+                  <select
+                    className={styles.formSelect}
+                    value={state.formality}
+                    onChange={e => updateState('formality', e.target.value as 'Formal' | 'Semi-formal')}
+                  >
+                    <option value="Formal">Formal</option>
+                    <option value="Semi-formal">Semi-formal</option>
+                  </select>
+                </div>
               </div>
+
+              {/* Questions */}
+              {state.questions.length > 0 && (
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Pontos a Abordar</label>
+                  <div className={styles.questionsList}>
+                    {state.questions.map((question, index) => (
+                      <div key={index} className={styles.questionItem}>
+                        <span className={styles.questionBullet}>{index + 1}</span>
+                        <input
+                          className={styles.formInput}
+                          placeholder={`Ponto ${index + 1}`}
+                          value={question}
+                          onChange={e => {
+                            const newQuestions = [...state.questions];
+                            newQuestions[index] = e.target.value;
+                            updateState('questions', newQuestions);
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* Questions from the prompt (editable) */}
-            {state.questions.length > 0 && (
-              <div className={styles.formGroup}>
-                <label className={styles.formLabel}>Perguntas do Enunciado</label>
-                {state.questions.map((question, index) => (
-                  <input
-                    key={index}
-                    className={styles.formInput}
-                    style={{ marginBottom: index < state.questions.length - 1 ? '0.5rem' : 0 }}
-                    placeholder={`Pergunta ${index + 1}`}
-                    value={question}
-                    onChange={e => {
-                      const newQuestions = [...state.questions];
-                      newQuestions[index] = e.target.value;
-                      updateState('questions', newQuestions);
-                    }}
-                  />
-                ))}
-              </div>
-            )}
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <div></div>
+              <button className={styles.btnNext} onClick={nextStep}>
+                Próximo: Planejamento <ArrowRight size={18} />
+              </button>
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Column 2: Planning */}
-        <div className={styles.taskColumn} ref={planningRef}>
-          <div className={styles.glassCard}>
-            <div className={styles.cardHeader}>
-              <div className={`${styles.cardIcon} ${styles.cardIconPurple}`}>
-                <PenTool />
+        {/* Step 2: Planning */}
+        {currentStep === 2 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <PenTool className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Planejamento</h2>
+                <p>Organize suas ideias antes de escrever. Defina a abertura, estrutura e fechamento.</p>
               </div>
-              <h3 className={styles.cardTitle}>2. Planejamento</h3>
               <TaskHelpPanel defaultTab="task1" />
             </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Abertura (Dear...)</label>
-              <input
-                className={styles.formInput}
-                placeholder="Dear Mr. Silva,"
-                value={state.opening}
-                onChange={e => updateState('opening', e.target.value)}
-              />
-              <div className={styles.tagGroup}>
-                {["Dear Mr. Silva,", "Dear Manager,", "To Whom It May Concern,"].map(suggestion => (
-                  <button
-                    key={suggestion}
-                    className={styles.tag}
-                    onClick={() => updateState('opening', suggestion)}
-                  >
-                    {suggestion}
-                  </button>
-                ))}
+            <div className={styles.stepBody}>
+              {/* Opening */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Abertura (Dear...)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="Dear Mr. Silva,"
+                  value={state.opening}
+                  onChange={e => updateState('opening', e.target.value)}
+                />
+                <div className={styles.tagGroup}>
+                  {["Dear Mr. Silva,", "Dear Manager,", "To Whom It May Concern,"].map(suggestion => (
+                    <button
+                      key={suggestion}
+                      className={styles.tag}
+                      onClick={() => updateState('opening', suggestion)}
+                    >
+                      {suggestion}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Quem sou eu (1 frase)</label>
-              <input
-                className={styles.formInput}
-                placeholder="Ex: I am a resident of building B."
-                value={state.whoAmI}
-                onChange={e => updateState('whoAmI', e.target.value)}
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Por que estou escrevendo (Purpose)</label>
-              <input
-                className={styles.formInput}
-                placeholder="Ex: I am writing to complain about..."
-                value={state.whyWriting}
-                onChange={e => updateState('whyWriting', e.target.value)}
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Estrutura do Corpo</label>
-              <div className={styles.tagGroup}>
-                {["First", "Second", "Third", "Finally"].map(tag => (
-                  <span key={tag} className={`${styles.tag} ${styles.tagActive}`}>{tag}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* Paragraph Planning Section */}
-            <div className={styles.paragraphPlanningSection}>
-              <div className={styles.planningHeader}>
-                <span className={styles.planningHeaderIcon}>💡</span>
-                <span className={styles.planningHeaderText}>Ideias para os Parágrafos</span>
-                <span className={styles.planningHelperBadge}>Planejamento</span>
-              </div>
-              <p className={styles.planningHelperText}>
-                Use estes campos para organizar suas ideias antes de escrever. Não afetam a contagem de palavras.
-              </p>
-              
-              <div className={styles.planningNotesGrid}>
-                <div className={styles.planningNoteItem}>
-                  <label className={styles.planningNoteLabel}>
-                    <span className={styles.planningNoteBadge}>1º</span> Primeiro parágrafo
-                  </label>
-                  <textarea
-                    className={styles.planningNoteTextarea}
-                    placeholder="Ex: Apresentar o problema, mencionar quando começou..."
-                    value={state.bodyStructureNotes[0]}
-                    onChange={e => updateBodyNote(0, e.target.value)}
-                    rows={2}
+              {/* Who Am I & Why Writing */}
+              <div className={styles.formRow}>
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Quem sou eu (1 frase)</label>
+                  <input
+                    className={styles.formInput}
+                    placeholder="Ex: I am a resident of building B."
+                    value={state.whoAmI}
+                    onChange={e => updateState('whoAmI', e.target.value)}
                   />
                 </div>
-
-                <div className={styles.planningNoteItem}>
-                  <label className={styles.planningNoteLabel}>
-                    <span className={styles.planningNoteBadge}>2º</span> Segundo parágrafo
-                  </label>
-                  <textarea
-                    className={styles.planningNoteTextarea}
-                    placeholder="Ex: Detalhar impactos, dar exemplos específicos..."
-                    value={state.bodyStructureNotes[1]}
-                    onChange={e => updateBodyNote(1, e.target.value)}
-                    rows={2}
-                  />
-                </div>
-
-                <div className={styles.planningNoteItem}>
-                  <label className={styles.planningNoteLabel}>
-                    <span className={`${styles.planningNoteBadge} ${styles.planningNoteBadgeOptional}`}>3º</span> Terceiro parágrafo
-                    <span className={styles.optionalTag}>opcional</span>
-                  </label>
-                  <textarea
-                    className={styles.planningNoteTextarea}
-                    placeholder="Ex: Argumento adicional ou contexto extra..."
-                    value={state.bodyStructureNotes[2]}
-                    onChange={e => updateBodyNote(2, e.target.value)}
-                    rows={2}
-                  />
-                </div>
-
-                <div className={styles.planningNoteItem}>
-                  <label className={styles.planningNoteLabel}>
-                    <span className={`${styles.planningNoteBadge} ${styles.planningNoteBadgeFinal}`}>✓</span> Fechamento / CTA
-                  </label>
-                  <textarea
-                    className={styles.planningNoteTextarea}
-                    placeholder="Ex: Pedido de ação, agradecimento, expectativa de resposta..."
-                    value={state.bodyStructureNotes[3]}
-                    onChange={e => updateBodyNote(3, e.target.value)}
-                    rows={2}
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Por que estou escrevendo</label>
+                  <input
+                    className={styles.formInput}
+                    placeholder="Ex: I am writing to complain about..."
+                    value={state.whyWriting}
+                    onChange={e => updateState('whyWriting', e.target.value)}
                   />
                 </div>
               </div>
-            </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>CTA / Pedido / Sugestão (Opcional)</label>
-              <input
-                className={styles.formInput}
-                placeholder="I would suggest that..."
-                value={state.cta}
-                onChange={e => updateState('cta', e.target.value)}
-              />
-            </div>
+              {/* Body Structure Notes */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>
+                  <span>💡</span> Ideias para os Parágrafos
+                </label>
+                <p className={styles.formHint}>
+                  Anote suas ideias para cada parágrafo. Isso não afeta a contagem de palavras.
+                </p>
+                
+                <div className={styles.planningGrid}>
+                  <div className={styles.planningItem}>
+                    <div className={styles.planningLabel}>
+                      <span className={styles.planningBadge}>1º</span> Primeiro parágrafo
+                    </div>
+                    <textarea
+                      className={styles.planningTextarea}
+                      placeholder="Ex: Apresentar o problema, mencionar quando começou..."
+                      value={state.bodyStructureNotes[0]}
+                      onChange={e => updateBodyNote(0, e.target.value)}
+                      rows={3}
+                    />
+                  </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Closing Line (Obrigatório)</label>
-              <input
-                className={styles.formInput}
-                value={state.pleaseLetMeKnow}
-                onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
-              />
-              <div className={styles.tagGroup}>
-                {[
-                  "Please let me know if you have any questions.",
-                  "I look forward to hearing from you."
-                ].map(suggestion => (
-                  <button
-                    key={suggestion}
-                    className={styles.tag}
-                    onClick={() => updateState('pleaseLetMeKnow', suggestion)}
-                  >
-                    {suggestion}
-                  </button>
-                ))}
+                  <div className={styles.planningItem}>
+                    <div className={styles.planningLabel}>
+                      <span className={styles.planningBadge}>2º</span> Segundo parágrafo
+                    </div>
+                    <textarea
+                      className={styles.planningTextarea}
+                      placeholder="Ex: Detalhar impactos, dar exemplos específicos..."
+                      value={state.bodyStructureNotes[1]}
+                      onChange={e => updateBodyNote(1, e.target.value)}
+                      rows={3}
+                    />
+                  </div>
+
+                  <div className={styles.planningItem}>
+                    <div className={styles.planningLabel}>
+                      <span className={`${styles.planningBadge} ${styles.planningBadgeOptional}`}>3º</span> 
+                      Terceiro parágrafo
+                      <span className={styles.optionalTag}>opcional</span>
+                    </div>
+                    <textarea
+                      className={styles.planningTextarea}
+                      placeholder="Ex: Argumento adicional ou contexto extra..."
+                      value={state.bodyStructureNotes[2]}
+                      onChange={e => updateBodyNote(2, e.target.value)}
+                      rows={3}
+                    />
+                  </div>
+
+                  <div className={styles.planningItem}>
+                    <div className={styles.planningLabel}>
+                      <span className={`${styles.planningBadge} ${styles.planningBadgeFinal}`}>✓</span> 
+                      Fechamento / CTA
+                    </div>
+                    <textarea
+                      className={styles.planningTextarea}
+                      placeholder="Ex: Pedido de ação, agradecimento, expectativa de resposta..."
+                      value={state.bodyStructureNotes[3]}
+                      onChange={e => updateBodyNote(3, e.target.value)}
+                      rows={3}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA & Closing */}
+              <div className={styles.formRow}>
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>CTA / Pedido (Opcional)</label>
+                  <input
+                    className={styles.formInput}
+                    placeholder="I would suggest that..."
+                    value={state.cta}
+                    onChange={e => updateState('cta', e.target.value)}
+                  />
+                </div>
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Assinatura</label>
+                  <input
+                    className={styles.formInput}
+                    placeholder="Regards, [Full Name]"
+                    value={state.signOff}
+                    onChange={e => updateState('signOff', e.target.value)}
+                  />
+                </div>
+              </div>
+
+              {/* Closing Line */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Closing Line (Obrigatório)</label>
+                <input
+                  className={styles.formInput}
+                  value={state.pleaseLetMeKnow}
+                  onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
+                />
+                <div className={styles.tagGroup}>
+                  {[
+                    "Please let me know if you have any questions.",
+                    "I look forward to hearing from you."
+                  ].map(suggestion => (
+                    <button
+                      key={suggestion}
+                      className={styles.tag}
+                      onClick={() => updateState('pleaseLetMeKnow', suggestion)}
+                    >
+                      {suggestion}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Assinatura</label>
-              <input
-                className={styles.formInput}
-                placeholder="Regards, [Full Name]"
-                value={state.signOff}
-                onChange={e => updateState('signOff', e.target.value)}
-              />
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <button className={styles.btnPrev} onClick={prevStep}>
+                <ArrowLeft size={18} /> Voltar
+              </button>
+              <button className={styles.btnNext} onClick={nextStep}>
+                Próximo: Escrita <ArrowRight size={18} />
+              </button>
             </div>
           </div>
-        </div>
+        )}
 
-        {/* Column 3: Writing & Feedback */}
-        <div className={styles.taskColumn}>
-          <div className={`${styles.glassCard} ${styles.writingCard}`}>
-            <div className={styles.writingHeader}>
-              <div className={styles.writingTitleGroup}>
-                <div className={`${styles.cardIcon} ${styles.cardIconCyan}`}>
-                  <PenTool />
-                </div>
-                <h3 className={styles.writingTitle}>3. Escrita</h3>
+        {/* Step 3: Writing */}
+        {currentStep === 3 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <Mail className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Escrita Final</h2>
+                <p>Escreva seu email completo. Use o botão de transferir para trazer suas ideias do planejamento.</p>
               </div>
               <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                <span className={styles.wordCounterIcon}>✍️</span>
-                <span>{wordCount} palavras</span>
+                ✍️ {wordCount} palavras
               </div>
             </div>
 
-            <textarea
-              ref={writingTextareaRef}
-              className={styles.writingTextarea}
-              placeholder="Comece a escrever aqui..."
-              value={state.content}
-              onChange={e => updateState('content', e.target.value)}
-            />
+            <div className={styles.stepBody}>
+              {/* Writing Area */}
+              <div className={styles.writingSection}>
+                <textarea
+                  ref={writingTextareaRef}
+                  className={styles.writingTextarea}
+                  placeholder="Comece a escrever seu email aqui..."
+                  value={state.content}
+                  onChange={e => updateState('content', e.target.value)}
+                />
+                
+                {transferMessage && (
+                  <div className={styles.transferMessage}>
+                    {transferMessage}
+                  </div>
+                )}
 
-            {/* Transfer Message */}
-            {transferMessage && (
-              <div className={styles.transferMessage}>
-                {transferMessage}
+                <div className={styles.writingActions}>
+                  <button className={styles.btnTransfer} onClick={handleTransferPlanning}>
+                    <ArrowRight size={16} /> Transferir Planejamento
+                  </button>
+                  <button className={styles.btnTemplate} onClick={generateTemplate}>
+                    <Wand2 size={16} /> Gerar Template
+                  </button>
+                  <button className={styles.btnEvaluate} onClick={handleEvaluate}>
+                    <RefreshCw size={16} /> Avaliar
+                  </button>
+                </div>
               </div>
-            )}
 
-            <div className={styles.writingActions}>
-              <button 
-                className={`${styles.actionBtn} ${styles.actionBtnTransfer}`} 
-                onClick={handleTransferPlanning}
-                title="Transferir planejamento para a escrita"
-              >
-                <ArrowRight /> Transferir Planejamento
+              {/* Feedback Panel */}
+              {feedback.length > 0 && (
+                <div className={styles.feedbackPanel}>
+                  <div className={styles.feedbackHeader}>
+                    <MessageSquare size={20} />
+                    <h3>Feedback</h3>
+                  </div>
+                  <div className={styles.feedbackList}>
+                    {feedback.map((item, index) => (
+                      <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
+                        <div className={styles.feedbackItemIcon}>
+                          {getFeedbackIcon(item)}
+                        </div>
+                        <p>{item.message}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <button className={styles.btnPrev} onClick={prevStep}>
+                <ArrowLeft size={18} /> Voltar ao Planejamento
               </button>
-              <button className={`${styles.actionBtn} ${styles.actionBtnSecondary}`} onClick={generateTemplate}>
-                <Wand2 /> Template
-              </button>
-              <button className={`${styles.actionBtn} ${styles.actionBtnPrimary}`} onClick={handleEvaluate}>
-                <RefreshCw /> Avaliar (Regras)
+              <button className={styles.btnFinish}>
+                <CheckCircle size={18} /> Finalizar
               </button>
             </div>
           </div>
-
-          {/* Feedback Panel */}
-          {feedback.length > 0 && (
-            <div className={styles.feedbackPanel}>
-              <div className={styles.feedbackHeader}>
-                <div className={styles.feedbackIcon}>
-                  <MessageSquare />
-                </div>
-                <h3 className={styles.feedbackTitle}>Feedback</h3>
-              </div>
-              <div className={styles.feedbackList}>
-                {feedback.map((item, index) => (
-                  <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
-                    <div className={styles.feedbackItemIcon}>
-                      {getFeedbackIcon(item)}
-                    </div>
-                    <div className={styles.feedbackItemContent}>
-                      <p>{item.message}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );

@@ -1,12 +1,15 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { Card, Input, Textarea, Button, WordCounter, FeedbackList } from '@/components/Common';
+import React, { useState, useEffect, useRef } from 'react';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords } from '@/utils/feedback';
-import { Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, Info, ClipboardList } from 'lucide-react';
-import styles from '@/styles/TaskPages.module.scss';
+import { 
+  Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, 
+  MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
+  Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList
+} from 'lucide-react';
+import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
@@ -22,11 +25,19 @@ const INITIAL_STATE: Task2State = {
   content: ''
 };
 
+const STEPS = [
+  { id: 1, title: 'Contexto', icon: FileText, description: 'Entenda a pesquisa' },
+  { id: 2, title: 'Planejamento', icon: PenTool, description: 'Estruture seus argumentos' },
+  { id: 3, title: 'Escrita', icon: ClipboardList, description: 'Escreva sua resposta' },
+];
+
 export default function Task2Page() {
+  const [currentStep, setCurrentStep] = useState(1);
   const [state, setState] = useState<Task2State>(INITIAL_STATE);
   const [feedback, setFeedback] = useState<FeedbackItem[]>([]);
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
+  const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Load contexts from JSON
   useEffect(() => {
@@ -106,9 +117,11 @@ export default function Task2Page() {
   };
 
   const handleClear = () => {
-    if (confirm('Tem certeza que deseja limpar tudo?')) {
+    if (confirm('Tem certeza que deseja limpar tudo e voltar ao início?')) {
       setState(INITIAL_STATE);
       setFeedback([]);
+      setSelectedContextId(null);
+      setCurrentStep(1);
     }
   };
 
@@ -118,7 +131,6 @@ export default function Task2Page() {
     return styles.wordCounterHigh;
   };
 
-  // Map severity + passed to visual type
   const getFeedbackItemClass = (item: FeedbackItem) => {
     if (item.passed) return styles.feedbackItemSuccess;
     switch (item.severity) {
@@ -130,258 +142,408 @@ export default function Task2Page() {
   };
 
   const getFeedbackIcon = (item: FeedbackItem) => {
-    if (item.passed) return <CheckCircle size={16} className="text-green-600" />;
+    if (item.passed) return <CheckCircle size={16} />;
     switch (item.severity) {
-      case 'BLOCKER': return <AlertCircle size={16} className="text-red-600" />;
-      case 'IMPORTANT': return <AlertTriangle size={16} className="text-amber-600" />;
-      case 'POLISH': return <Info size={16} className="text-blue-600" />;
-      default: return <Info size={16} className="text-blue-600" />;
+      case 'BLOCKER': return <AlertCircle size={16} />;
+      case 'IMPORTANT': return <AlertTriangle size={16} />;
+      case 'POLISH': return <Info size={16} />;
+      default: return <Info size={16} />;
+    }
+  };
+
+  const goToStep = (step: number) => {
+    if (step >= 1 && step <= 3) {
+      setCurrentStep(step);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const nextStep = () => goToStep(currentStep + 1);
+  const prevStep = () => goToStep(currentStep - 1);
+
+  // Check if step has content (for progress indication)
+  const stepHasContent = (step: number): boolean => {
+    switch (step) {
+      case 1: return !!state.promptText.trim() || !!state.topic.trim();
+      case 2: return !!state.opinionLine.trim() || state.points.some(p => p.point.trim());
+      case 3: return !!state.content.trim();
+      default: return false;
     }
   };
 
   return (
-    <div className={styles.taskPageContainer}>
-      {/* Mini Hero Section */}
-      <div className={styles.miniHero}>
-        <div className={styles.miniHeroContent}>
-          <div className={styles.miniHeroLeft}>
-            <div className={styles.miniHeroIcon}>
+    <div className={styles.wizardContainer}>
+      {/* Hero Header */}
+      <div className={styles.wizardHero}>
+        <div className={styles.heroContent}>
+          <div className={styles.heroLeft}>
+            <div className={styles.heroIcon}>
               <ClipboardList />
             </div>
-            <div className={styles.miniHeroTitle}>
+            <div className={styles.heroTitle}>
               <h1>Task 2 — <span>Survey Response</span></h1>
-              <p><Clock size={14} style={{ display: 'inline', marginRight: 4 }} /> Tempo recomendado: 26 minutos</p>
+              <p><Clock size={14} /> 26 minutos recomendados</p>
             </div>
           </div>
-          <div className={styles.miniHeroActions}>
-            <button onClick={handleClear} className={`${styles.heroBtn} ${styles.heroBtnDanger}`}>
-              <Trash2 size={16} /> Limpar
+          <div className={styles.heroActions}>
+            <button onClick={handleClear} className={styles.heroBtnDanger}>
+              <Trash2 size={16} /> Limpar Tudo
             </button>
-            <button className={`${styles.heroBtn} ${styles.heroBtnPrimary}`}>
-              <Save size={16} /> Salvar Rascunho
+            <button className={styles.heroBtnPrimary}>
+              <Save size={16} /> Salvar
             </button>
           </div>
         </div>
       </div>
 
-      {/* Task Grid */}
-      <div className={styles.taskGrid}>
-        {/* Column 1: Context */}
-        <div className={styles.taskColumn}>
-          <div className={styles.glassCard}>
-            <div className={styles.cardHeader}>
-              <div className={styles.cardIcon}>
-                <FileText />
-              </div>
-              <h3 className={styles.cardTitle}>1. Contexto</h3>
-            </div>
-
-            {/* Context Selector Dropdown */}
-            {contexts.length > 0 && (
-              <ContextSelector
-                contexts={contexts}
-                selectedId={selectedContextId}
-                onSelect={handleContextSelect}
-                placeholder="Escolha um tema pronto ou crie o seu..."
-              />
-            )}
-
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Enunciado (Survey)</label>
-              <textarea
-                className={styles.formTextarea}
-                placeholder="Cole o enunciado ou selecione um tema acima..."
-                rows={4}
-                value={state.promptText}
-                onChange={e => updateState('promptText', e.target.value)}
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Quem vai ler? (Audience)</label>
-              <input
-                className={styles.formInput}
-                placeholder="Ex: City Council, HR Department"
-                value={state.audience}
-                onChange={e => updateState('audience', e.target.value)}
-              />
-            </div>
-
-            <div className={styles.positionBox}>
-              <label className={styles.positionLabel}>Sua Posição</label>
-              <div className={styles.positionButtons}>
+      {/* Progress Steps */}
+      <div className={styles.progressContainer}>
+        <div className={styles.progressSteps}>
+          {STEPS.map((step, index) => {
+            const StepIcon = step.icon;
+            const isActive = currentStep === step.id;
+            const isCompleted = currentStep > step.id || stepHasContent(step.id);
+            
+            return (
+              <React.Fragment key={step.id}>
                 <button
-                  onClick={() => updateState('position', 'A_FAVOR')}
-                  className={`${styles.positionButton} ${state.position === 'A_FAVOR' ? styles.positionButtonActive : styles.positionButtonInactive}`}
+                  className={`${styles.progressStep} ${isActive ? styles.progressStepActive : ''} ${isCompleted ? styles.progressStepCompleted : ''}`}
+                  onClick={() => goToStep(step.id)}
                 >
-                  Opção A
+                  <div className={styles.stepCircle}>
+                    {isCompleted && !isActive ? (
+                      <CheckCircle size={20} />
+                    ) : (
+                      <StepIcon size={20} />
+                    )}
+                  </div>
+                  <div className={styles.stepInfo}>
+                    <span className={styles.stepTitle}>{step.title}</span>
+                    <span className={styles.stepDesc}>{step.description}</span>
+                  </div>
                 </button>
-                <button
-                  onClick={() => updateState('position', 'CONTRA')}
-                  className={`${styles.positionButton} ${state.position === 'CONTRA' ? styles.positionButtonActive : styles.positionButtonInactive}`}
-                >
-                  Opção B
-                </button>
+                {index < STEPS.length - 1 && (
+                  <div className={`${styles.progressLine} ${currentStep > step.id ? styles.progressLineActive : ''}`}>
+                    <ChevronRight size={20} />
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Step Content */}
+      <div className={styles.stepContent}>
+        {/* Step 1: Context */}
+        {currentStep === 1 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <FileText className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Contexto da Pesquisa</h2>
+                <p>Leia o enunciado e identifique as opções. Escolha sua posição (Opção A ou B).</p>
               </div>
-              <div className={styles.formGroup} style={{ marginBottom: 0 }}>
-                <label className={styles.formLabel}>Tema escolhido (Keywords)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="Ex: building a new park"
-                  value={state.topic}
-                  onChange={e => updateState('topic', e.target.value)}
+            </div>
+
+            <div className={styles.stepBody}>
+              {/* Context Selector */}
+              {contexts.length > 0 && (
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Escolha um tema</label>
+                  <ContextSelector
+                    contexts={contexts}
+                    selectedId={selectedContextId}
+                    onSelect={handleContextSelect}
+                    placeholder="Selecione um tema pronto ou crie o seu..."
+                  />
+                </div>
+              )}
+
+              {/* Prompt Text */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Enunciado (Survey)</label>
+                <textarea
+                  className={styles.formTextareaLarge}
+                  placeholder="Cole o enunciado aqui ou selecione um tema acima..."
+                  rows={6}
+                  value={state.promptText}
+                  onChange={e => updateState('promptText', e.target.value)}
                 />
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Column 2: Planning (PRE) */}
-        <div className={styles.taskColumn}>
-          <div className={styles.glassCard}>
-            <div className={styles.cardHeader}>
-              <div className={`${styles.cardIcon} ${styles.cardIconPurple}`}>
-                <PenTool />
+              {/* Audience */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Quem vai ler? (Audience)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="Ex: City Council, HR Department, School Board"
+                  value={state.audience}
+                  onChange={e => updateState('audience', e.target.value)}
+                />
               </div>
-              <h3 className={styles.cardTitle}>2. Planejamento (PRE Structure)</h3>
-              <TaskHelpPanel defaultTab="task2" />
-            </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>Opinion Line (Intro)</label>
-              <input
-                className={styles.formInput}
-                placeholder="I would rather..."
-                value={state.opinionLine}
-                onChange={e => updateState('opinionLine', e.target.value)}
-              />
-              <div className={styles.tagGroup}>
-                {["I would rather...", "I recommend that...", "I believe option A is better because..."].map(suggestion => (
+              {/* Position Selection */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Sua Posição</label>
+                <div className={styles.positionButtons}>
                   <button
-                    key={suggestion}
-                    className={styles.tag}
-                    onClick={() => updateState('opinionLine', suggestion)}
+                    type="button"
+                    onClick={() => updateState('position', 'A_FAVOR')}
+                    className={`${styles.positionBtn} ${state.position === 'A_FAVOR' ? styles.positionBtnActive : ''}`}
                   >
-                    {suggestion}
+                    <span className={styles.positionBtnLetter}>A</span>
+                    <span>Opção A</span>
                   </button>
-                ))}
-              </div>
-            </div>
-
-            <div style={{ marginTop: '1.5rem' }}>
-              <div className={styles.argumentsHeader}>
-                <h4 className={styles.argumentsTitle}>Argumentos (Points)</h4>
-                <div className={styles.argumentsActions}>
-                  <button onClick={addPoint} disabled={state.points.length >= 3} className={styles.argumentsButton}>
-                    <Plus />
-                  </button>
-                  <button onClick={removePoint} disabled={state.points.length <= 1} className={styles.argumentsButton}>
-                    <Minus />
+                  <button
+                    type="button"
+                    onClick={() => updateState('position', 'CONTRA')}
+                    className={`${styles.positionBtn} ${state.position === 'CONTRA' ? styles.positionBtnActive : ''}`}
+                  >
+                    <span className={styles.positionBtnLetter}>B</span>
+                    <span>Opção B</span>
                   </button>
                 </div>
               </div>
 
-              <div style={{ marginTop: '0.75rem' }}>
+              {/* Topic Keywords */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Tema escolhido (Keywords)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="Ex: building a new park, remote work policy"
+                  value={state.topic}
+                  onChange={e => updateState('topic', e.target.value)}
+                />
+                <p className={styles.formHint}>
+                  Palavras-chave que resumem sua escolha. Serão usadas na introdução.
+                </p>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <div></div>
+              <button className={styles.btnNext} onClick={nextStep}>
+                Próximo: Planejamento <ArrowRight size={18} />
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Step 2: Planning */}
+        {currentStep === 2 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <PenTool className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Planejamento (Estrutura PRE)</h2>
+                <p>Use a estrutura <strong>P</strong>oint → <strong>R</strong>eason → <strong>E</strong>xample para cada argumento.</p>
+              </div>
+              <TaskHelpPanel defaultTab="task2" />
+            </div>
+
+            <div className={styles.stepBody}>
+              {/* Opinion Line */}
+              <div className={styles.formSection}>
+                <label className={styles.formLabel}>Opinion Line (Introdução)</label>
+                <input
+                  className={styles.formInput}
+                  placeholder="I would rather... / I recommend that..."
+                  value={state.opinionLine}
+                  onChange={e => updateState('opinionLine', e.target.value)}
+                />
+                <div className={styles.tagGroup}>
+                  {[
+                    "I would rather...",
+                    "I recommend that...",
+                    "I believe option A is better because..."
+                  ].map(suggestion => (
+                    <button
+                      key={suggestion}
+                      className={styles.tag}
+                      onClick={() => updateState('opinionLine', suggestion)}
+                    >
+                      {suggestion}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Arguments Header */}
+              <div className={styles.formSection}>
+                <div className={styles.argumentsHeader}>
+                  <label className={styles.formLabel}>
+                    <span>📝</span> Argumentos (PRE Structure)
+                  </label>
+                  <div className={styles.argumentsActions}>
+                    <button 
+                      type="button"
+                      onClick={removePoint} 
+                      disabled={state.points.length <= 1}
+                      className={styles.argumentsBtn}
+                      title="Remover argumento"
+                    >
+                      <Minus size={16} />
+                    </button>
+                    <span className={styles.argumentsCount}>{state.points.length}/3</span>
+                    <button 
+                      type="button"
+                      onClick={addPoint} 
+                      disabled={state.points.length >= 3}
+                      className={styles.argumentsBtn}
+                      title="Adicionar argumento"
+                    >
+                      <Plus size={16} />
+                    </button>
+                  </div>
+                </div>
+                <p className={styles.formHint}>
+                  Mínimo 2 argumentos. Cada um deve ter Point, Reason e Example.
+                </p>
+              </div>
+
+              {/* Arguments Grid */}
+              <div className={styles.argumentsGrid}>
                 {state.points.map((p, idx) => (
-                  <div key={idx} className={styles.argumentBlock}>
-                    <span className={styles.argumentNumber}>Argumento {idx + 1}</span>
-                    <div className={styles.formGroup}>
-                      <label className={styles.formLabel}>Point (Idea)</label>
+                  <div key={idx} className={styles.argumentCard}>
+                    <div className={styles.argumentCardHeader}>
+                      <span className={styles.argumentBadge}>
+                        {idx === 0 ? 'First' : idx === 1 ? 'Second' : 'Finally'}
+                      </span>
+                      <span className={styles.argumentTitle}>Argumento {idx + 1}</span>
+                    </div>
+                    
+                    <div className={styles.argumentField}>
+                      <label className={styles.argumentFieldLabel}>
+                        <span className={styles.preBadge}>P</span> Point (Ideia principal)
+                      </label>
                       <input
                         className={styles.formInput}
-                        placeholder="Main point..."
+                        placeholder="Ex: parks provide health benefits..."
                         value={p.point}
                         onChange={e => updatePoint(idx, 'point', e.target.value)}
                       />
                     </div>
-                    <div className={styles.formGroup}>
-                      <label className={styles.formLabel}>Reason (Why?)</label>
+                    
+                    <div className={styles.argumentField}>
+                      <label className={styles.argumentFieldLabel}>
+                        <span className={styles.preBadge}>R</span> Reason (Por quê?)
+                      </label>
                       <textarea
-                        className={styles.formTextarea}
-                        style={{ minHeight: '60px' }}
-                        placeholder="Because..."
+                        className={styles.planningTextarea}
+                        placeholder="Ex: because people can exercise outdoors..."
                         value={p.reason}
                         onChange={e => updatePoint(idx, 'reason', e.target.value)}
+                        rows={2}
                       />
                     </div>
-                    <div className={styles.formGroup} style={{ marginBottom: 0 }}>
-                      <label className={styles.formLabel}>Example (Specific)</label>
+                    
+                    <div className={styles.argumentField}>
+                      <label className={styles.argumentFieldLabel}>
+                        <span className={styles.preBadge}>E</span> Example (Exemplo específico)
+                      </label>
                       <textarea
-                        className={styles.formTextarea}
-                        style={{ minHeight: '60px' }}
-                        placeholder="For example..."
+                        className={styles.planningTextarea}
+                        placeholder="Ex: for instance, my neighbor started jogging..."
                         value={p.example}
                         onChange={e => updatePoint(idx, 'example', e.target.value)}
+                        rows={2}
                       />
                     </div>
                   </div>
                 ))}
               </div>
 
+              {/* Conclusion Note */}
               <div className={styles.conclusionNote}>
-                <span>Conclusão Auto:</span> &ldquo;In conclusion... because [Point 1] and [Point 2].&rdquo;
+                <span className={styles.conclusionIcon}>💡</span>
+                <div>
+                  <strong>Conclusão (auto-gerada):</strong>
+                  <p>"In conclusion, considering these reasons, I am convinced that this is the superior option."</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Column 3: Writing */}
-        <div className={styles.taskColumn}>
-          <div className={`${styles.glassCard} ${styles.writingCard}`}>
-            <div className={styles.writingHeader}>
-              <div className={styles.writingTitleGroup}>
-                <div className={`${styles.cardIcon} ${styles.cardIconCyan}`}>
-                  <PenTool />
-                </div>
-                <h3 className={styles.writingTitle}>3. Escrita</h3>
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <button className={styles.btnPrev} onClick={prevStep}>
+                <ArrowLeft size={18} /> Voltar
+              </button>
+              <button className={styles.btnNext} onClick={nextStep}>
+                Próximo: Escrita <ArrowRight size={18} />
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Step 3: Writing */}
+        {currentStep === 3 && (
+          <div className={styles.stepPanel}>
+            <div className={styles.stepHeader}>
+              <ClipboardList className={styles.stepHeaderIcon} />
+              <div>
+                <h2>Escrita Final</h2>
+                <p>Escreva sua resposta completa. Use "Gerar Estrutura" para criar um rascunho baseado no planejamento.</p>
               </div>
               <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                <span className={styles.wordCounterIcon}>✍️</span>
-                <span>{wordCount} palavras</span>
+                ✍️ {wordCount} palavras
               </div>
             </div>
 
-            <textarea
-              className={styles.writingTextarea}
-              placeholder="Comece a escrever aqui..."
-              value={state.content}
-              onChange={e => updateState('content', e.target.value)}
-            />
+            <div className={styles.stepBody}>
+              {/* Writing Area */}
+              <div className={styles.writingSection}>
+                <textarea
+                  ref={writingTextareaRef}
+                  className={styles.writingTextarea}
+                  placeholder="Comece a escrever sua resposta aqui..."
+                  value={state.content}
+                  onChange={e => updateState('content', e.target.value)}
+                />
 
-            <div className={styles.writingActions}>
-              <button className={`${styles.actionBtn} ${styles.actionBtnSecondary}`} onClick={generateStructure}>
-                <Wand2 /> Gerar Estrutura
+                <div className={styles.writingActions}>
+                  <button className={styles.btnTemplate} onClick={generateStructure}>
+                    <Wand2 size={16} /> Gerar Estrutura
+                  </button>
+                  <button className={styles.btnEvaluate} onClick={handleEvaluate}>
+                    <RefreshCw size={16} /> Avaliar
+                  </button>
+                </div>
+              </div>
+
+              {/* Feedback Panel */}
+              {feedback.length > 0 && (
+                <div className={styles.feedbackPanel}>
+                  <div className={styles.feedbackHeader}>
+                    <MessageSquare size={20} />
+                    <h3>Feedback</h3>
+                  </div>
+                  <div className={styles.feedbackList}>
+                    {feedback.map((item, index) => (
+                      <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
+                        <div className={styles.feedbackItemIcon}>
+                          {getFeedbackIcon(item)}
+                        </div>
+                        <p>{item.message}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Navigation */}
+            <div className={styles.stepNav}>
+              <button className={styles.btnPrev} onClick={prevStep}>
+                <ArrowLeft size={18} /> Voltar ao Planejamento
               </button>
-              <button className={`${styles.actionBtn} ${styles.actionBtnPrimary}`} onClick={handleEvaluate}>
-                <RefreshCw /> Avaliar (Regras)
+              <button className={styles.btnFinish}>
+                <CheckCircle size={18} /> Finalizar
               </button>
             </div>
           </div>
-
-          {/* Feedback Panel */}
-          {feedback.length > 0 && (
-            <div className={styles.feedbackPanel}>
-              <div className={styles.feedbackHeader}>
-                <div className={styles.feedbackIcon}>
-                  <MessageSquare />
-                </div>
-                <h3 className={styles.feedbackTitle}>Feedback</h3>
-              </div>
-              <div className={styles.feedbackList}>
-                {feedback.map((item, index) => (
-                  <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
-                    <div className={styles.feedbackItemIcon}>
-                      {getFeedbackIcon(item)}
-                    </div>
-                    <div className={styles.feedbackItemContent}>
-                      <p>{item.message}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );

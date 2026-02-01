@@ -259,13 +259,14 @@ export default function ContextSelector({
               )}
             </div>
 
-            {/* Preview Panel */}
+            {/* Preview Panel - key forces remount when theme changes for proper layout calculation */}
             <div 
               ref={previewPanelRef}
+              key={previewContext?.id ?? 'no-preview'}
               className={`${styles.previewPanel} ${previewContext ? styles.previewPanelVisible : ''}`}
             >
               {previewContext ? (
-                <>
+                <div className={styles.previewInner}>
                   <div className={styles.previewHeader}>
                     <span className={styles.previewLabel}>Prévia do Enunciado</span>
                     <button
@@ -281,14 +282,16 @@ export default function ContextSelector({
                     <h4>{previewContext.title}</h4>
                     <p>{previewContext.content}</p>
                   </div>
-                  <button
-                    type="button"
-                    className={styles.previewSelectBtn}
-                    onClick={() => handleSelect(previewContext)}
-                  >
-                    Usar este tema
-                  </button>
-                </>
+                  <div className={styles.previewFooter}>
+                    <button
+                      type="button"
+                      className={styles.previewSelectBtn}
+                      onClick={() => handleSelect(previewContext)}
+                    >
+                      Usar este tema
+                    </button>
+                  </div>
+                </div>
               ) : (
                 <div className={styles.previewPlaceholder}>
                   <span>👆</span>
