@@ -8,6 +8,7 @@ import {
 import GoalsManager from '@/components/GoalsManager';
 import ErrorReview from '@/components/ErrorReview';
 import DailyChallengeWidget from '@/components/DailyChallenge';
+import Achievements from '@/components/Achievements';
 import styles from '@/styles/Dashboard.module.scss';
 
 interface PracticeSession {
@@ -352,6 +353,11 @@ export default function Dashboard() {
           {/* Errors Widget */}
           <div className={styles.errorsWidget}>
             <ErrorReview mode="compact" />
+          </div>
+
+          {/* Achievements Widget */}
+          <div className={styles.achievementsWidget}>
+            <Achievements mode="compact" />
           </div>
         </div>
       )}

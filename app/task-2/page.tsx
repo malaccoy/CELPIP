@@ -9,6 +9,7 @@ import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords, calculateScore } from '@/utils/feedback';
 import { recordPractice } from '@/components/DetailedStats';
 import { recordErrors } from '@/components/ErrorReview';
+import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementToast, markAchievementSeen } from '@/components/Achievements';
 import { 
   Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
@@ -43,6 +44,7 @@ export default function Task2Page() {
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
   const [examModeActive, setExamModeActive] = useState(false);
+  const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Load contexts from JSON
@@ -127,6 +129,15 @@ export default function Task2Page() {
           recordErrors(failedIds);
         }
         
+        // Record achievements
+        const newlyUnlocked = recordPracticeForAchievements('task2', wordCount, score, estimatedMinutes, false);
+        if (newlyUnlocked.length > 0) {
+          const achievement = ACHIEVEMENTS.find(a => a.id === newlyUnlocked[0]);
+          if (achievement) {
+            setNewAchievement(achievement);
+          }
+        }
+        
         // Keep legacy session storage for backwards compatibility
         localStorage.setItem('celpip_last_session', JSON.stringify({
           lastWordCount: wordCount,
@@ -197,6 +208,17 @@ export default function Task2Page() {
 
   return (
     <div className={styles.wizardContainer}>
+      {/* Achievement Toast */}
+      {newAchievement && (
+        <AchievementToast 
+          achievement={newAchievement} 
+          onClose={() => {
+            markAchievementSeen(newAchievement.id);
+            setNewAchievement(null);
+          }} 
+        />
+      )}
+
       {/* Hero Header */}
       <div className={styles.wizardHero}>
         <div className={styles.heroContent}>

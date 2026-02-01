@@ -5,11 +5,12 @@ import { Card, Button } from '@/components/Common';
 import DetailedStats from '@/components/DetailedStats';
 import GoalsManager from '@/components/GoalsManager';
 import ErrorReview from '@/components/ErrorReview';
+import Achievements from '@/components/Achievements';
 import { useTheme } from '@/components/ThemeProvider';
 import styles from '@/styles/Pages.module.scss';
 
 export default function SettingsPage() {
-  const [activeTab, setActiveTab] = useState<'stats' | 'goals' | 'errors' | 'preferences' | 'data'>('stats');
+  const [activeTab, setActiveTab] = useState<'stats' | 'achievements' | 'goals' | 'errors' | 'preferences' | 'data'>('stats');
   const { theme, setTheme } = useTheme();
 
   const handleClearStats = () => {
@@ -32,6 +33,12 @@ export default function SettingsPage() {
           onClick={() => setActiveTab('stats')}
         >
           📊 Estatísticas
+        </button>
+        <button 
+          className={`${styles.settingsTab} ${activeTab === 'achievements' ? styles.settingsTabActive : ''}`}
+          onClick={() => setActiveTab('achievements')}
+        >
+          🏆 Conquistas
         </button>
         <button 
           className={`${styles.settingsTab} ${activeTab === 'goals' ? styles.settingsTabActive : ''}`}
@@ -63,6 +70,13 @@ export default function SettingsPage() {
       {activeTab === 'stats' && (
         <Card title="📊 Suas Estatísticas">
           <DetailedStats />
+        </Card>
+      )}
+
+      {/* Achievements Tab */}
+      {activeTab === 'achievements' && (
+        <Card title="🏆 Conquistas">
+          <Achievements mode="full" />
         </Card>
       )}
 

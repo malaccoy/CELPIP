@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, GraduationCap, Flame } from 'lucide-react';
+import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, GraduationCap, Flame, Home } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeProvider';
 import styles from '@/styles/Layout.module.scss';
 
@@ -14,12 +14,12 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/', icon: Home, label: 'Início' },
   { to: '/challenge', icon: Flame, label: 'Desafio' },
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/guide', icon: GraduationCap, label: 'Guia' },
   { to: '/task-1', icon: Mail, label: 'Task 1' },
   { to: '/task-2', icon: PenTool, label: 'Task 2' },
-  { to: '/library', icon: BookOpen, label: 'Biblioteca' },
   { to: '/settings', icon: Settings, label: 'Configurações' },
 ];
 

@@ -7,6 +7,8 @@ import { getTodayChallenge, getTodaySubmission, saveTodaySubmission, getTodayLea
 import { generateTask1Feedback, generateTask2Feedback, countWords, calculateScore } from '@/utils/feedback';
 import { recordPractice } from '@/components/DetailedStats';
 import { recordErrors } from '@/components/ErrorReview';
+import { recordPracticeForAchievements, getUnseenAchievements, markAchievementSeen, ACHIEVEMENTS, Achievement } from '@/components/Achievements';
+import { AchievementToast } from '@/components/Achievements';
 import { FeedbackItem } from '@/types';
 import styles from '@/styles/ChallengePlay.module.scss';
 
@@ -20,6 +22,7 @@ export default function ChallengePlayPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submissionResult, setSubmissionResult] = useState<ChallengeSubmission | null>(null);
   const [mounted, setMounted] = useState(false);
+  const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
   
   // Timer
   const [timeElapsed, setTimeElapsed] = useState(0);
@@ -111,6 +114,23 @@ export default function ChallengePlayPage() {
     const failedIds = results.filter(r => !r.passed).map(r => r.id);
     if (failedIds.length > 0) {
       recordErrors(failedIds);
+    }
+    
+    // Record achievements (isChallenge = true)
+    const newlyUnlocked = recordPracticeForAchievements(
+      challenge.task,
+      wordCount,
+      score,
+      Math.ceil(timeElapsed / 60),
+      true // This is a challenge
+    );
+    
+    // Show achievement toast if unlocked
+    if (newlyUnlocked.length > 0) {
+      const achievement = ACHIEVEMENTS.find(a => a.id === newlyUnlocked[0]);
+      if (achievement) {
+        setNewAchievement(achievement);
+      }
     }
     
     // Refresh leaderboard
@@ -265,6 +285,17 @@ export default function ChallengePlayPage() {
   // Challenge writing mode
   return (
     <div className={styles.container}>
+      {/* Achievement Toast */}
+      {newAchievement && (
+        <AchievementToast 
+          achievement={newAchievement} 
+          onClose={() => {
+            markAchievementSeen(newAchievement.id);
+            setNewAchievement(null);
+          }} 
+        />
+      )}
+
       {/* Header */}
       <div className={styles.header}>
         <button className={styles.backBtn} onClick={() => router.push('/challenge')}>

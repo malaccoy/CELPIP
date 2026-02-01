@@ -1,0 +1,384 @@
+// ============================================
+// 🏆 ACHIEVEMENTS STYLES
+// ============================================
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLeft {
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem;
+  }
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+// Progress Circle
+.progressCircle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+.progressBg {
+  fill: none;
+  stroke: var(--bg-tertiary);
+  stroke-width: 3;
+}
+
+.progressFill {
+  fill: none;
+  stroke: var(--accent-primary);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+// Categories
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.categoryBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+  
+  &.active {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    border-color: transparent;
+    color: white;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.achievementCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.2s ease;
+  
+  &.unlocked {
+    border-color: var(--accent-success);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, transparent 100%);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+    }
+  }
+  
+  &.locked {
+    opacity: 0.6;
+    
+    .achievementIcon {
+      filter: grayscale(1);
+    }
+  }
+}
+
+.achievementIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.achievementInfo {
+  flex: 1;
+  min-width: 0;
+  
+  h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+.unlockedDate {
+  display: block;
+  margin-top: 0.375rem;
+  font-size: 0.7rem;
+  color: var(--accent-success);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-success);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+// Stats Section
+.statsSection {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-primary);
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.statValue {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+// ============================================
+// 📦 COMPACT MODE
+// ============================================
+
+.compactContainer {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+}
+
+.compactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+  }
+}
+
+.count {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.compactProgress {
+  height: 6px;
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.compactProgressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.compactBadges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.compactBadge {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+
+.noBadges {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.moreBadges {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  padding: 0.25rem 0.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+// ============================================
+// 🎉 TOAST NOTIFICATION
+// ============================================
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
+  cursor: pointer;
+  z-index: 1000;
+  animation: slideIn 0.3s ease, pulse 2s infinite;
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4); }
+    50% { box-shadow: 0 8px 48px rgba(99, 102, 241, 0.6); }
+  }
+}
+
+.toastIcon {
+  font-size: 2.5rem;
+}
+
+.toastContent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.toastTitle {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.toastName {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.toastDesc {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+// ============================================
+// 📱 RESPONSIVE
+// ============================================
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .categories {
+    justify-content: center;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .toast {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

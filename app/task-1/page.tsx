@@ -9,6 +9,7 @@ import { Task1State, FeedbackItem } from '@/types';
 import { generateTask1Feedback, countWords, calculateScore } from '@/utils/feedback';
 import { recordPractice } from '@/components/DetailedStats';
 import { recordErrors } from '@/components/ErrorReview';
+import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementToast, markAchievementSeen } from '@/components/Achievements';
 import { 
   Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
@@ -47,6 +48,7 @@ export default function Task1Page() {
   const [contexts, setContexts] = useState<ContextItem[]>([]);
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
   const [examModeActive, setExamModeActive] = useState(false);
+  const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Load contexts from JSON
@@ -120,6 +122,15 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
         const failedIds = results.filter(r => !r.passed).map(r => r.id);
         if (failedIds.length > 0) {
           recordErrors(failedIds);
+        }
+        
+        // Record achievements
+        const newlyUnlocked = recordPracticeForAchievements('task1', wordCount, score, estimatedMinutes, false);
+        if (newlyUnlocked.length > 0) {
+          const achievement = ACHIEVEMENTS.find(a => a.id === newlyUnlocked[0]);
+          if (achievement) {
+            setNewAchievement(achievement);
+          }
         }
         
         // Keep legacy session storage for backwards compatibility
@@ -267,6 +278,17 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
   return (
     <div className={styles.wizardContainer}>
+      {/* Achievement Toast */}
+      {newAchievement && (
+        <AchievementToast 
+          achievement={newAchievement} 
+          onClose={() => {
+            markAchievementSeen(newAchievement.id);
+            setNewAchievement(null);
+          }} 
+        />
+      )}
+
       {/* Hero Header */}
       <div className={styles.wizardHero}>
         <div className={styles.heroContent}>
