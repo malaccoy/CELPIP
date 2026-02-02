@@ -15,7 +15,8 @@ import {
   checkContractions, 
   checkConnectors, 
   checkWordCount,
-  checkGenericPleaseLetMeKnow
+  checkGenericPleaseLetMeKnow,
+  checkRepeatedVocabulary
 } from './common';
 
 import {
@@ -23,7 +24,11 @@ import {
   checkWhoAmI,
   checkWhyWriting,
   checkRegardsAndName,
-  checkIntroduction
+  checkIntroduction,
+  checkCallToAction,
+  checkClosingLine,
+  checkParagraphStructure,
+  checkToneConsistency
 } from './task1';
 
 import {
@@ -32,7 +37,10 @@ import {
   checkConclusion,
   checkExamples,
   checkReasons,
-  checkRhetoricalQuestions
+  checkRhetoricalQuestions,
+  checkPREStructure,
+  checkFenceSitting,
+  checkConclusionQuality
 } from './task2';
 
 export interface EvaluationContext {
@@ -44,6 +52,64 @@ export interface EvaluationResult {
   scoreEstimate: number;
   issues: Issue[];
   suggestions: Suggestion[];
+  bonuses: string[];
+}
+
+/**
+ * Calculate bonuses for good practices
+ */
+function calculateBonuses(text: string, task: 'task1' | 'task2'): { bonuses: string[], bonusScore: number } {
+  const lowerText = text.toLowerCase();
+  const bonuses: string[] = [];
+  let bonusScore = 0;
+
+  // Word count in ideal range (160-190 is optimal)
+  const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+  if (wordCount >= 160 && wordCount <= 190) {
+    bonuses.push('✨ Contagem de palavras ideal (160-190)');
+    bonusScore += 0.3;
+  }
+
+  // Good variety of connectors
+  const connectors = ['first', 'second', 'third', 'finally', 'additionally', 'moreover', 'furthermore'];
+  const usedConnectors = connectors.filter(c => lowerText.includes(c));
+  if (usedConnectors.length >= 3) {
+    bonuses.push('✨ Excelente uso de conectores');
+    bonusScore += 0.3;
+  }
+
+  // Specific examples (numbers, names, places)
+  const hasSpecificDetails = /\d+%|\d+ years?|\d+ months?|last (year|month|week)|my (friend|neighbor|colleague|cousin)/i.test(text);
+  if (hasSpecificDetails) {
+    bonuses.push('✨ Exemplos específicos com detalhes');
+    bonusScore += 0.3;
+  }
+
+  // Task-specific bonuses
+  if (task === 'task1') {
+    // Check for polite language
+    const politeMarkers = ['kindly', 'would appreciate', 'grateful', 'thank you'];
+    const usedPolite = politeMarkers.filter(p => lowerText.includes(p));
+    if (usedPolite.length >= 2) {
+      bonuses.push('✨ Tom educado e profissional');
+      bonusScore += 0.2;
+    }
+  } else {
+    // Task 2: Strong opinion words
+    const strongOpinion = ['strongly believe', 'firmly believe', 'am convinced', 'without a doubt', 'certainly'];
+    if (strongOpinion.some(s => lowerText.includes(s))) {
+      bonuses.push('✨ Opinião expressa com confiança');
+      bonusScore += 0.2;
+    }
+
+    // Good conclusion with summary
+    if (lowerText.includes('in conclusion') && (lowerText.includes('because') || lowerText.includes('for these reasons'))) {
+      bonuses.push('✨ Conclusão bem estruturada');
+      bonusScore += 0.2;
+    }
+  }
+
+  return { bonuses, bonusScore };
 }
 
 /**
@@ -61,9 +127,13 @@ export function evaluateTask1(text: string, context: EvaluationContext = {}): Ev
     checkWhyWriting(text),
     checkRegardsAndName(text),
     checkIntroduction(text),
+    checkCallToAction(text),
+    checkClosingLine(text),
+    checkParagraphStructure(text),
+    checkToneConsistency(text),
     checkConnectors(text, 2),
     checkWordCount(text, 150, 200),
-    checkGenericPleaseLetMeKnow(text)
+    checkRepeatedVocabulary(text)
   ];
 
   // Check contractions only for formal emails
@@ -78,13 +148,19 @@ export function evaluateTask1(text: string, context: EvaluationContext = {}): Ev
     totalPenalty += result.penalty;
   }
 
-  // Calculate score estimate (starting from 12, which is the max CELPIP score)
-  const scoreEstimate = Math.max(4, Math.round((12 - totalPenalty) * 10) / 10);
+  // Calculate bonuses
+  const { bonuses, bonusScore } = calculateBonuses(text, 'task1');
+
+  // Calculate score estimate (starting from 12, max CELPIP score)
+  // Apply penalty then add bonus, cap between 4 and 12
+  const rawScore = 12 - totalPenalty + bonusScore;
+  const scoreEstimate = Math.min(12, Math.max(4, Math.round(rawScore * 10) / 10));
 
   return {
     scoreEstimate,
     issues,
-    suggestions
+    suggestions,
+    bonuses
   };
 }
 
@@ -101,12 +177,16 @@ export function evaluateTask2(text: string, context: EvaluationContext = {}): Ev
     checkOptionReferences(text),
     checkOpinionStatement(text),
     checkConclusion(text),
+    checkConclusionQuality(text),
+    checkPREStructure(text),
+    checkFenceSitting(text),
     checkConnectors(text, 2),
     checkExamples(text),
     checkReasons(text),
     checkRhetoricalQuestions(text),
     checkContractions(text),
-    checkWordCount(text, 150, 200)
+    checkWordCount(text, 150, 200),
+    checkRepeatedVocabulary(text)
   ];
 
   // Aggregate results
@@ -116,13 +196,18 @@ export function evaluateTask2(text: string, context: EvaluationContext = {}): Ev
     totalPenalty += result.penalty;
   }
 
+  // Calculate bonuses
+  const { bonuses, bonusScore } = calculateBonuses(text, 'task2');
+
   // Calculate score estimate
-  const scoreEstimate = Math.max(4, Math.round((12 - totalPenalty) * 10) / 10);
+  const rawScore = 12 - totalPenalty + bonusScore;
+  const scoreEstimate = Math.min(12, Math.max(4, Math.round(rawScore * 10) / 10));
 
   return {
     scoreEstimate,
     issues,
-    suggestions
+    suggestions,
+    bonuses
   };
 }
 

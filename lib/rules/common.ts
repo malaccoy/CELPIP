@@ -160,3 +160,60 @@ export function checkGenericPleaseLetMeKnow(text: string): RuleResult {
 
   return { issues, suggestions, penalty };
 }
+
+/**
+ * Check for repeated vocabulary (overused words)
+ */
+export function checkRepeatedVocabulary(text: string): RuleResult {
+  const lowerText = text.toLowerCase();
+  const issues: Issue[] = [];
+  const suggestions: Suggestion[] = [];
+  let penalty = 0;
+
+  // Common words to ignore
+  const stopWords = new Set([
+    'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+    'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'been',
+    'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+    'should', 'may', 'might', 'must', 'shall', 'can', 'this', 'that', 'these',
+    'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they', 'my', 'your', 'his',
+    'her', 'its', 'our', 'their', 'me', 'him', 'us', 'them', 'who', 'which',
+    'what', 'when', 'where', 'why', 'how', 'all', 'each', 'every', 'both',
+    'few', 'more', 'most', 'other', 'some', 'such', 'no', 'not', 'only',
+    'same', 'so', 'than', 'too', 'very', 'just', 'also', 'now', 'here',
+    'there', 'then', 'if', 'because', 'as', 'until', 'while', 'although',
+    'am', 'being', 'about', 'into', 'through', 'during', 'before', 'after'
+  ]);
+
+  // Extract words (only alphabetic, 4+ chars to filter out small words)
+  const words = lowerText.match(/\b[a-z]{4,}\b/g) || [];
+  
+  // Count word frequencies
+  const wordCount: Record<string, number> = {};
+  for (const word of words) {
+    if (!stopWords.has(word)) {
+      wordCount[word] = (wordCount[word] || 0) + 1;
+    }
+  }
+
+  // Find words repeated 4+ times (too much for a 150-200 word essay)
+  const overusedWords = Object.entries(wordCount)
+    .filter(([_, count]) => count >= 4)
+    .map(([word, count]) => `"${word}" (${count}x)`)
+    .slice(0, 3); // Show max 3
+
+  if (overusedWords.length > 0) {
+    issues.push({
+      code: 'REPEATED_VOCABULARY',
+      message: `Some words are overused: ${overusedWords.join(', ')}`,
+      severity: 'polish'
+    });
+    suggestions.push({
+      code: 'VARY_VOCABULARY',
+      message: 'Use synonyms to avoid repetition. Example: good → beneficial, excellent, positive, advantageous'
+    });
+    penalty = overusedWords.length * 0.3;
+  }
+
+  return { issues, suggestions, penalty };
+}

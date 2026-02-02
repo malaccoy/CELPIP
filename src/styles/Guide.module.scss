@@ -1138,3 +1138,166 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     height: 3.5rem;
   }
 }
+
+// ============================================
+// ⚡ EXAMPLES SECTION (Thanos Strategy)
+// ============================================
+
+.examplesSection {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(238, 242, 255, 0.8) 0%, rgba(224, 231, 255, 0.8) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+}
+
+.examplesTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4338ca;
+  margin-bottom: 1rem;
+
+  svg {
+    color: #6366f1;
+  }
+}
+
+.examplesList {
+  > * + * {
+    margin-top: 0.875rem;
+  }
+}
+
+.exampleItem {
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    transform: translateX(4px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
+  }
+}
+
+.exampleSituation {
+  font-size: 0.8125rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  
+  strong {
+    color: #475569;
+  }
+}
+
+.exampleInvention {
+  font-size: 0.875rem;
+  color: #1e293b;
+  padding-left: 1rem;
+  border-left: 3px solid #10b981;
+  
+  strong {
+    color: #059669;
+  }
+}
+
+// ============================================
+// 📝 PHRASES CONTAINER (Ready Phrases)
+// ============================================
+
+.phrasesContainer {
+  > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+.phraseCategory {
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.08);
+  }
+}
+
+.phraseCategoryTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 1rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  &::before {
+    content: '📌';
+    font-size: 0.875rem;
+  }
+}
+
+.phrasesList {
+  > * + * {
+    margin-top: 0.625rem;
+  }
+}
+
+.phraseItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  transition: all $transition-fast;
+  
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
+  }
+  
+  @media (min-width: 640px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+.phraseText {
+  font-family: $font-mono;
+  font-size: 0.8125rem;
+  color: #1e293b;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  padding: 0.375rem 0.625rem;
+  border-radius: 6px;
+  word-break: break-word;
+  
+  @media (min-width: 640px) {
+    flex: 1;
+  }
+}
+
+.phraseUsage {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-style: italic;
+  
+  @media (min-width: 640px) {
+    flex-shrink: 0;
+    max-width: 200px;
+    text-align: right;
+  }
+}

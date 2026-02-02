@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { Card, Button } from '@/components/Common';
 import { task1GuideContent } from '@content/pt/task1-guide';
-import { ArrowRight, ArrowLeft, CheckCircle, AlertTriangle, Lightbulb, BookOpen, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowLeft, CheckCircle, AlertTriangle, Lightbulb, BookOpen, Sparkles, Zap, Copy } from 'lucide-react';
 import styles from '@/styles/Guide.module.scss';
 
 export default function Task1GuidePage() {
@@ -36,7 +36,30 @@ export default function Task1GuidePage() {
         </div>
       </Card>
 
-      {/* Section: Professor Strategy */}
+      {/* Section: CSF Framework */}
+      <Card title={content.sections.csfFramework.title}>
+        <p className={styles.sectionSubtitle}>{content.sections.csfFramework.subtitle}</p>
+        <div className={styles.preGrid}>
+          {content.sections.csfFramework.blocks.map((block, index) => (
+            <div key={index} className={styles.preBlock}>
+              <div className={styles.preLetter}>{block.letter}</div>
+              <div className={styles.preContent}>
+                <h4 className={styles.preName}>{block.name}</h4>
+                <p className={styles.preDescription}>{block.description}</p>
+                <div className={styles.preExample}>
+                  <code>{block.example}</code>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className={styles.tipBox}>
+          <Lightbulb size={16} />
+          <span>{content.sections.csfFramework.tip}</span>
+        </div>
+      </Card>
+
+      {/* Section: Professor Strategy (Thanos) */}
       <Card title={content.sections.professorStrategy.title}>
         <p className={styles.sectionSubtitle}>{content.sections.professorStrategy.subtitle}</p>
         <ul className={styles.contentList}>
@@ -44,6 +67,27 @@ export default function Task1GuidePage() {
             <li key={index} className={styles.contentItem}>{item}</li>
           ))}
         </ul>
+        
+        {/* Thanos Examples */}
+        <div className={styles.examplesSection}>
+          <h4 className={styles.examplesTitle}>
+            <Zap size={16} />
+            Exemplos Práticos
+          </h4>
+          <div className={styles.examplesList}>
+            {content.sections.professorStrategy.examples.map((ex, index) => (
+              <div key={index} className={styles.exampleItem}>
+                <div className={styles.exampleSituation}>
+                  <strong>Situação:</strong> {ex.situation}
+                </div>
+                <div className={styles.exampleInvention}>
+                  <strong>Invente:</strong> {ex.invention}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className={styles.keyPointBox}>
           <Sparkles size={16} />
           <span>{content.sections.professorStrategy.keyPoint}</span>
@@ -149,6 +193,26 @@ export default function Task1GuidePage() {
               <div className={styles.mistakeFix}>
                 <CheckCircle size={14} />
                 <span>{item.fix}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* Section: Ready Phrases */}
+      <Card title={content.sections.readyPhrases.title}>
+        <p className={styles.sectionSubtitle}>{content.sections.readyPhrases.subtitle}</p>
+        <div className={styles.phrasesContainer}>
+          {content.sections.readyPhrases.categories.map((category, index) => (
+            <div key={index} className={styles.phraseCategory}>
+              <h4 className={styles.phraseCategoryTitle}>{category.name}</h4>
+              <div className={styles.phrasesList}>
+                {category.phrases.map((item, pIndex) => (
+                  <div key={pIndex} className={styles.phraseItem}>
+                    <code className={styles.phraseText}>{item.phrase}</code>
+                    <span className={styles.phraseUsage}>{item.usage}</span>
+                  </div>
+                ))}
               </div>
             </div>
           ))}

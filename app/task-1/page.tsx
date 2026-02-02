@@ -13,10 +13,11 @@ import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementTo
 import { 
   Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
-  Info, ArrowRight, ArrowLeft, ChevronRight
+  Info, ArrowRight, ArrowLeft, ChevronRight, Sparkles, Bot
 } from 'lucide-react';
 import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
+import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -49,6 +50,9 @@ export default function Task1Page() {
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
   const [examModeActive, setExamModeActive] = useState(false);
   const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
+  const [aiEvaluation, setAiEvaluation] = useState<any>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState<string | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Get selected context
@@ -149,10 +153,52 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     }
   };
 
+  const handleAIEvaluate = async () => {
+    if (wordCount < 50) {
+      setAiError('Escreva pelo menos 50 palavras para avaliação com IA.');
+      return;
+    }
+
+    setAiLoading(true);
+    setAiError(null);
+    setAiEvaluation(null);
+
+    try {
+      const response = await fetch('/api/evaluate/ai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          task: 'task1',
+          text: state.content,
+          prompt: state.promptText,
+          context: {
+            formality: state.formality.toLowerCase(),
+            recipient: state.recipient,
+            situation: selectedContext?.title || ''
+          }
+        })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erro ao avaliar');
+      }
+
+      setAiEvaluation(data.evaluation);
+    } catch (err: any) {
+      setAiError(err.message || 'Erro ao conectar com a IA');
+    } finally {
+      setAiLoading(false);
+    }
+  };
+
   const handleClear = () => {
     if (confirm('Tem certeza que deseja limpar tudo e voltar ao início?')) {
       setState(INITIAL_STATE);
       setFeedback([]);
+      setAiEvaluation(null);
+      setAiError(null);
       setSelectedContextId(null);
       setCurrentStep(1);
     }
@@ -717,13 +763,56 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     <Wand2 size={16} /> Gerar Template
                   </button>
                   <button className={styles.btnEvaluate} onClick={handleEvaluate}>
-                    <RefreshCw size={16} /> Avaliar
+                    <RefreshCw size={16} /> Checklist Rápido
+                  </button>
+                  <button 
+                    className={styles.btnAIEvaluate} 
+                    onClick={handleAIEvaluate}
+                    disabled={aiLoading || wordCount < 50}
+                  >
+                    <Sparkles size={16} /> {aiLoading ? 'Analisando...' : 'Avaliação com IA'}
                   </button>
                 </div>
               </div>
 
-              {/* Feedback Panel */}
-              {feedback.length > 0 && (
+              {/* AI Evaluation Error */}
+              {aiError && (
+                <div className={styles.aiErrorBox}>
+                  <AlertCircle size={18} />
+                  <span>{aiError}</span>
+                  <button onClick={() => setAiError(null)}>×</button>
+                </div>
+              )}
+
+              {/* AI Evaluation Loading */}
+              {aiLoading && (
+                <div className={styles.aiLoadingPanel}>
+                  <AIEvaluationLoading />
+                </div>
+              )}
+
+              {/* AI Evaluation Result */}
+              {aiEvaluation && !aiLoading && (
+                <div className={styles.aiResultPanel}>
+                  <div className={styles.aiResultHeader}>
+                    <Bot size={20} />
+                    <h3>Avaliação com Inteligência Artificial</h3>
+                    <button 
+                      className={styles.aiResultClose}
+                      onClick={() => setAiEvaluation(null)}
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <AIEvaluationResult 
+                    evaluation={aiEvaluation} 
+                    originalText={state.content}
+                  />
+                </div>
+              )}
+
+              {/* Feedback Panel (Quick Checklist) */}
+              {feedback.length > 0 && !aiEvaluation && (
                 <div className={styles.feedbackPanel}>
                   <div className={styles.feedbackHeader}>
                     <MessageSquare size={20} />
