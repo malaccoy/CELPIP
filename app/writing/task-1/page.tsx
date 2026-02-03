@@ -36,9 +36,9 @@ const INITIAL_STATE: Task1State = {
 };
 
 const STEPS = [
-  { id: 1, title: 'Contexto', icon: FileText, description: 'Entenda o enunciado' },
-  { id: 2, title: 'Planejamento', icon: PenTool, description: 'Organize suas ideias' },
-  { id: 3, title: 'Escrita', icon: Mail, description: 'Escreva seu email' },
+  { id: 1, title: 'Context', icon: FileText, description: 'Understand the prompt' },
+  { id: 2, title: 'Planning', icon: PenTool, description: 'Organize your ideas' },
+  { id: 3, title: 'Writing', icon: Mail, description: 'Write your email' },
 ];
 
 export default function Task1Page() {
@@ -155,7 +155,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
   const handleAIEvaluate = async () => {
     if (wordCount < 50) {
-      setAiError('Escreva pelo menos 50 palavras para avaliação com IA.');
+      setAiError('Escreva pelo menos 50 words para avaliação com IA.');
       return;
     }
 
@@ -182,19 +182,19 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || 'Erro ao avaliar');
+        throw new Error(data.error || 'Evaluation error');
       }
 
       setAiEvaluation(data.evaluation);
     } catch (err: any) {
-      setAiError(err.message || 'Erro ao conectar com a IA');
+      setAiError(err.message || 'Error connecting to AI');
     } finally {
       setAiLoading(false);
     }
   };
 
   const handleClear = () => {
-    if (confirm('Tem certeza que deseja limpar tudo e voltar ao início?')) {
+    if (confirm('Are you sure you want to clear everything and go back to the beginning?')) {
       setState(INITIAL_STATE);
       setFeedback([]);
       setAiEvaluation(null);
@@ -255,7 +255,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     }
     
     if (parts.length === 0) {
-      setTransferMessage('⚠️ Nenhum planejamento preenchido para transferir.');
+      setTransferMessage('⚠️ No planning filled to transfer.');
       setTimeout(() => setTransferMessage(''), 3000);
       return;
     }
@@ -267,7 +267,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
       : transferredContent;
     
     updateState('content', newContent);
-    setTransferMessage('✅ Planejamento transferido!');
+    setTransferMessage('✅ Planning transferred!');
     setTimeout(() => setTransferMessage(''), 3000);
     
     setTimeout(() => {
@@ -347,7 +347,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             </div>
             <div className={styles.heroTitle}>
               <h1>Task 1 — <span>Email Writing</span></h1>
-              <p><Clock size={14} /> 27 minutos recomendados</p>
+              <p><Clock size={14} /> 27 minutes recommended</p>
             </div>
           </div>
           <div className={styles.heroCenter}>
@@ -365,7 +365,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
           </div>
           <div className={styles.heroActions}>
             <button onClick={handleClear} className={styles.heroBtnDanger}>
-              <Trash2 size={16} /> Limpar Tudo
+              <Trash2 size={16} /> Clear All
             </button>
             <DraftManager 
               task="task1"
@@ -422,8 +422,8 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             <div className={styles.stepHeader}>
               <FileText className={styles.stepHeaderIcon} />
               <div>
-                <h2>Contexto do Enunciado</h2>
-                <p>Leia e entenda o enunciado da tarefa. Identifique o destinatário e os pontos que precisa abordar.</p>
+                <h2>Prompt Context</h2>
+                <p>Read and understand the task prompt. Identify the recipient and the points you need to address.</p>
               </div>
             </div>
 
@@ -431,22 +431,22 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* Context Selector */}
               {contexts.length > 0 && (
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Escolha um tema</label>
+                  <label className={styles.formLabel}>Choose a theme</label>
                   <ContextSelector
                     contexts={contexts}
                     selectedId={selectedContextId}
                     onSelect={handleContextSelect}
-                    placeholder="Selecione um tema pronto ou crie o seu..."
+                    placeholder="Select a ready theme or create your own..."
                   />
                 </div>
               )}
 
               {/* Prompt Text */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Enunciado da Tarefa</label>
+                <label className={styles.formLabel}>Task Prompt</label>
                 <textarea
                   className={styles.formTextareaLarge}
-                  placeholder="Cole o enunciado aqui ou selecione um tema acima..."
+                  placeholder="Paste the prompt here or select a theme above..."
                   rows={6}
                   value={state.promptText}
                   onChange={e => updateState('promptText', e.target.value)}
@@ -456,7 +456,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* Recipient & Formality */}
               <div className={styles.formRow}>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Destinatário (WHO)</label>
+                  <label className={styles.formLabel}>Recipient (WHO)</label>
                   <input
                     className={styles.formInput}
                     placeholder="Ex: Manager, Mr. Smith, Customer Service"
@@ -465,7 +465,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   />
                 </div>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Formalidade</label>
+                  <label className={styles.formLabel}>Formality</label>
                   <select
                     className={styles.formSelect}
                     value={state.formality}
@@ -480,14 +480,14 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* Questions */}
               {state.questions.length > 0 && (
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Pontos a Abordar</label>
+                  <label className={styles.formLabel}>Points to Address</label>
                   <div className={styles.questionsList}>
                     {state.questions.map((question, index) => (
                       <div key={index} className={styles.questionItem}>
                         <span className={styles.questionBullet}>{index + 1}</span>
                         <input
                           className={styles.formInput}
-                          placeholder={`Ponto ${index + 1}`}
+                          placeholder={`Point ${index + 1}`}
                           value={question}
                           onChange={e => {
                             const newQuestions = [...state.questions];
@@ -506,7 +506,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             <div className={styles.stepNav}>
               <div></div>
               <button className={styles.btnNext} onClick={nextStep}>
-                Próximo: Planejamento <ArrowRight size={18} />
+                Next: Planning <ArrowRight size={18} />
               </button>
             </div>
           </div>
@@ -518,8 +518,8 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             <div className={styles.stepHeader}>
               <PenTool className={styles.stepHeaderIcon} />
               <div>
-                <h2>Planejamento</h2>
-                <p>Organize suas ideias antes de escrever. Defina a abertura, estrutura e fechamento.</p>
+                <h2>Planning</h2>
+                <p>Organize your ideas before writing. Define the opening, structure and closing.</p>
               </div>
               <TaskHelpPanel defaultTab="task1" />
             </div>
@@ -529,12 +529,12 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               <div className={styles.contextCard}>
                 <div className={styles.contextCardHeader}>
                   <Mail size={16} />
-                  <span>Tema Selecionado</span>
+                  <span>Selected Theme</span>
                   <button 
                     className={styles.contextCardChange}
                     onClick={() => setCurrentStep(1)}
                   >
-                    Trocar
+                    Change
                   </button>
                 </div>
                 <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
@@ -545,7 +545,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             <div className={styles.stepBody}>
               {/* Opening */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Abertura (Dear...)</label>
+                <label className={styles.formLabel}>Opening (Dear...)</label>
                 <input
                   className={styles.formInput}
                   placeholder="Dear Mr. Silva,"
@@ -568,7 +568,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* Who Am I & Why Writing */}
               <div className={styles.formRow}>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Quem sou eu (1 frase)</label>
+                  <label className={styles.formLabel}>Who I am (1 sentence)</label>
                   <input
                     className={styles.formInput}
                     placeholder="Ex: I am a resident of building B."
@@ -577,7 +577,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   />
                 </div>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Por que estou escrevendo</label>
+                  <label className={styles.formLabel}>Why I am writing</label>
                   <input
                     className={styles.formInput}
                     placeholder="Ex: I am writing to complain about..."
@@ -590,16 +590,16 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* Body Structure Notes */}
               <div className={styles.formSection}>
                 <label className={styles.formLabel}>
-                  <span>💡</span> Ideias para os Parágrafos
+                  <span>💡</span> Ideas for Paragraphs
                 </label>
                 <p className={styles.formHint}>
-                  Anote suas ideias para cada parágrafo. Isso não afeta a contagem de palavras.
+                  Note your ideas for each paragraph. This does not affect word count.
                 </p>
                 
                 <div className={styles.planningGrid}>
                   <div className={styles.planningItem}>
                     <div className={styles.planningLabel}>
-                      <span className={styles.planningBadge}>1º</span> Primeiro parágrafo
+                      <span className={styles.planningBadge}>1º</span> First paragraph
                     </div>
                     <textarea
                       className={styles.planningTextarea}
@@ -612,7 +612,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
                   <div className={styles.planningItem}>
                     <div className={styles.planningLabel}>
-                      <span className={styles.planningBadge}>2º</span> Segundo parágrafo
+                      <span className={styles.planningBadge}>2º</span> Second paragraph
                     </div>
                     <textarea
                       className={styles.planningTextarea}
@@ -626,8 +626,8 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   <div className={styles.planningItem}>
                     <div className={styles.planningLabel}>
                       <span className={`${styles.planningBadge} ${styles.planningBadgeOptional}`}>3º</span> 
-                      Terceiro parágrafo
-                      <span className={styles.optionalTag}>opcional</span>
+                      Third paragraph
+                      <span className={styles.optionalTag}>optional</span>
                     </div>
                     <textarea
                       className={styles.planningTextarea}
@@ -641,7 +641,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   <div className={styles.planningItem}>
                     <div className={styles.planningLabel}>
                       <span className={`${styles.planningBadge} ${styles.planningBadgeFinal}`}>✓</span> 
-                      Fechamento / CTA
+                      Closing / CTA
                     </div>
                     <textarea
                       className={styles.planningTextarea}
@@ -657,7 +657,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               {/* CTA & Closing */}
               <div className={styles.formRow}>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>CTA / Pedido (Opcional)</label>
+                  <label className={styles.formLabel}>CTA / Request (Optional)</label>
                   <input
                     className={styles.formInput}
                     placeholder="I would suggest that..."
@@ -666,7 +666,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   />
                 </div>
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Assinatura</label>
+                  <label className={styles.formLabel}>Sign-off</label>
                   <input
                     className={styles.formInput}
                     placeholder="Regards, [Full Name]"
@@ -678,7 +678,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
               {/* Closing Line */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Closing Line (Obrigatório)</label>
+                <label className={styles.formLabel}>Closing Line (Required)</label>
                 <input
                   className={styles.formInput}
                   value={state.pleaseLetMeKnow}
@@ -704,10 +704,10 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             {/* Navigation */}
             <div className={styles.stepNav}>
               <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Voltar
+                <ArrowLeft size={18} /> Back
               </button>
               <button className={styles.btnNext} onClick={nextStep}>
-                Próximo: Escrita <ArrowRight size={18} />
+                Next: Writing <ArrowRight size={18} />
               </button>
             </div>
           </div>
@@ -719,11 +719,11 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             <div className={styles.stepHeader}>
               <Mail className={styles.stepHeaderIcon} />
               <div>
-                <h2>Escrita Final</h2>
-                <p>Escreva seu email completo. Use o botão de transferir para trazer suas ideias do planejamento.</p>
+                <h2>Final Writing</h2>
+                <p>Write your complete email. Use the transfer button to bring your ideas from planning.</p>
               </div>
               <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                ✍️ {wordCount} palavras
+                ✍️ {wordCount} words
               </div>
             </div>
 
@@ -744,7 +744,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                 <textarea
                   ref={writingTextareaRef}
                   className={styles.writingTextarea}
-                  placeholder="Comece a escrever seu email aqui..."
+                  placeholder="Start writing your email here..."
                   value={state.content}
                   onChange={e => updateState('content', e.target.value)}
                 />
@@ -757,20 +757,20 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
                 <div className={styles.writingActions}>
                   <button className={styles.btnTransfer} onClick={handleTransferPlanning}>
-                    <ArrowRight size={16} /> Transferir Planejamento
+                    <ArrowRight size={16} /> Transfer Planning
                   </button>
                   <button className={styles.btnTemplate} onClick={generateTemplate}>
-                    <Wand2 size={16} /> Gerar Template
+                    <Wand2 size={16} /> Generate Template
                   </button>
                   <button className={styles.btnEvaluate} onClick={handleEvaluate}>
-                    <RefreshCw size={16} /> Checklist Rápido
+                    <RefreshCw size={16} /> Quick Checklist
                   </button>
                   <button 
                     className={styles.btnAIEvaluate} 
                     onClick={handleAIEvaluate}
                     disabled={aiLoading || wordCount < 50}
                   >
-                    <Sparkles size={16} /> {aiLoading ? 'Analisando...' : 'Avaliação com IA'}
+                    <Sparkles size={16} /> {aiLoading ? 'Analyzing...' : 'AI Evaluation'}
                   </button>
                 </div>
               </div>
@@ -796,7 +796,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                 <div className={styles.aiResultPanel}>
                   <div className={styles.aiResultHeader}>
                     <Bot size={20} />
-                    <h3>Avaliação com Inteligência Artificial</h3>
+                    <h3>AI Evaluation</h3>
                     <button 
                       className={styles.aiResultClose}
                       onClick={() => setAiEvaluation(null)}
@@ -835,10 +835,10 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             {/* Navigation */}
             <div className={styles.stepNav}>
               <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Voltar ao Planejamento
+                <ArrowLeft size={18} /> Back ao Planejamento
               </button>
               <button className={styles.btnFinish}>
-                <CheckCircle size={18} /> Finalizar
+                <CheckCircle size={18} /> Finish
               </button>
             </div>
           </div>

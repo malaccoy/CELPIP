@@ -1,0 +1,312 @@
+// WritingHub.module.scss
+.writingHubContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.hubHeader {
+  margin-bottom: 3rem;
+}
+
+.hubHeaderContent {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hubIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 18px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.hubInfo {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(135deg, #10b981, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+}
+
+.tasksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.taskCard {
+  position: relative;
+  padding: 2.5rem;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &:hover {
+    border-color: var(--task-color);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+
+    .taskCardGlow {
+      opacity: 1;
+    }
+
+    .taskCardButton {
+      background: var(--task-color);
+      transform: translateX(4px);
+    }
+
+    .taskCardNumber {
+      color: var(--task-color);
+    }
+  }
+}
+
+.taskCardNumber {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--border-color);
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.taskCardHeader {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.taskIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--task-color);
+  border-radius: 18px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.taskInfo {
+  flex: 1;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.taskMeta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--input-bg);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+
+  svg {
+    color: var(--task-color);
+  }
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.featureDot {
+  width: 6px;
+  height: 6px;
+  background: var(--task-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.taskCardButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: var(--task-color);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+.taskCardGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--task-color) 0%, transparent 70%);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  filter: blur(60px);
+}
+
+.tipsSection {
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    color: var(--text-primary);
+  }
+}
+
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.tipCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--input-bg);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.tipEmoji {
+  font-size: 2rem;
+}
+
+.tipCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+
+  strong {
+    color: var(--text-primary);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .writingHubContainer {
+    padding: 1rem;
+  }
+
+  .hubHeaderContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hubInfo h1 {
+    font-size: 2rem;
+  }
+
+  .tasksGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .taskCard {
+    padding: 2rem;
+  }
+
+  .taskCardNumber {
+    font-size: 3rem;
+  }
+
+  .taskMeta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .tipsGrid {
+    grid-template-columns: 1fr;
+  }
+}

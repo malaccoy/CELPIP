@@ -21,23 +21,23 @@ interface ContextSelectorProps {
   placeholder?: string;
 }
 
-// Categorias com labels em português
+// Categories with English labels
 const categoryLabels: Record<string, string> = {
-  custom: '✨ Personalizado',
-  complaint: '😤 Reclamações',
-  request: '📝 Solicitações',
-  thanks: '🙏 Agradecimentos',
-  apology: '😔 Desculpas',
-  information: 'ℹ️ Informações',
-  suggestion: '💡 Sugestões',
-  invitation: '💌 Convites',
+  custom: '✨ PERSONALIZED',
+  complaint: '😤 COMPLAINTS',
+  request: '📝 REQUESTS',
+  thanks: '🙏 THANKS',
+  apology: '😔 APOLOGIES',
+  information: 'ℹ️ INFORMATION',
+  suggestion: '💡 SUGGESTIONS',
+  invitation: '💌 INVITATIONS',
   // Task 2 categories
-  community: '🏘️ Comunidade',
-  work: '💼 Trabalho',
-  education: '📚 Educação',
-  lifestyle: '🌟 Estilo de Vida',
-  environment: '🌱 Meio Ambiente',
-  technology: '💻 Tecnologia'
+  community: '🏘️ COMMUNITY',
+  work: '💼 WORK',
+  education: '📚 EDUCATION',
+  lifestyle: '🌟 LIFESTYLE',
+  environment: '🌱 ENVIRONMENT',
+  technology: '💻 TECHNOLOGY'
 };
 
 // Detect touch device
@@ -50,7 +50,7 @@ export default function ContextSelector({
   contexts,
   selectedId,
   onSelect,
-  placeholder = 'Selecione um tema ou crie o seu próprio'
+  placeholder = 'Select a theme or create your own'
 }: ContextSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -201,7 +201,7 @@ export default function ContextSelector({
               ref={searchInputRef}
               type="text"
               className={styles.searchInput}
-              placeholder="Buscar tema..."
+              placeholder="Search theme..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -254,7 +254,7 @@ export default function ContextSelector({
               {Object.keys(filteredGroups).length === 0 && (
                 <div className={styles.noResults}>
                   <span>🔍</span>
-                  <p>Nenhum tema encontrado</p>
+                  <p>No themes found</p>
                 </div>
               )}
             </div>
@@ -268,12 +268,12 @@ export default function ContextSelector({
               {previewContext ? (
                 <div className={styles.previewInner}>
                   <div className={styles.previewHeader}>
-                    <span className={styles.previewLabel}>Prévia do Enunciado</span>
+                    <span className={styles.previewLabel}>Prompt Preview</span>
                     <button
                       type="button"
                       className={styles.previewCloseBtn}
                       onClick={handleClosePreview}
-                      aria-label="Fechar prévia"
+                      aria-label="Close preview"
                     >
                       <X size={14} />
                     </button>
@@ -288,14 +288,14 @@ export default function ContextSelector({
                       className={styles.previewSelectBtn}
                       onClick={() => handleSelect(previewContext)}
                     >
-                      Usar este tema
+                      Use this theme
                     </button>
                   </div>
                 </div>
               ) : (
                 <div className={styles.previewPlaceholder}>
                   <span>👆</span>
-                  <p>Clique em um tema para ver a prévia</p>
+                  <p>Click on a theme to preview</p>
                 </div>
               )}
             </div>

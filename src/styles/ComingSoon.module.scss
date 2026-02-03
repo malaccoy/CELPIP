@@ -1,0 +1,345 @@
+// ComingSoon.module.scss
+.comingSoonContainer {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.backButton {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--input-bg);
+    color: var(--text-primary);
+    transform: translateX(-4px);
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+.contentWrapper {
+  max-width: 700px;
+  text-align: center;
+  animation: slideUp 0.6s ease;
+}
+
+.iconWrapper {
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+
+.iconGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.iconCircle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+.lockBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: white;
+  border: 3px solid var(--bg-primary);
+  border-radius: 50%;
+  color: #ef4444;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  [data-theme='dark'] & {
+    background: var(--card-bg);
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  line-height: 1.2;
+
+  span {
+    display: inline-block;
+  }
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin: 0 0 3rem 0;
+  line-height: 1.7;
+}
+
+.featuresList {
+  text-align: left;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    color: var(--text-primary);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+
+    svg {
+      color: var(--primary-color);
+      flex-shrink: 0;
+    }
+  }
+}
+
+.notifyBox {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
+  border: 2px solid rgba(139, 92, 246, 0.2);
+  border-radius: 16px;
+  text-align: left;
+  margin-bottom: 2rem;
+
+  > svg {
+    color: #8b5cf6;
+    flex-shrink: 0;
+  }
+}
+
+.notifyContent {
+  flex: 1;
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+.notifyForm {
+  display: flex;
+  gap: 0.75rem;
+
+  input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+  }
+
+  button {
+    padding: 0.875rem 1.75rem;
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+    }
+  }
+}
+
+.successMessage {
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 10px;
+  color: #10b981;
+  font-weight: 600;
+  text-align: center;
+}
+
+.progressIndicator {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progressLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.progressBar {
+  height: 12px;
+  background: var(--input-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  border-radius: 6px;
+  transition: width 0.6s ease;
+}
+
+.progressPercent {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .comingSoonContainer {
+    padding: 1rem;
+  }
+
+  .backButton {
+    position: static;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .iconCircle {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .notifyBox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .notifyForm {
+    flex-direction: column;
+  }
+}

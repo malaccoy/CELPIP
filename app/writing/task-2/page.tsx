@@ -13,10 +13,11 @@ import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementTo
 import { 
   Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
-  Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList
+  Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList, Sparkles, Bot
 } from 'lucide-react';
 import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
+import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -32,9 +33,9 @@ const INITIAL_STATE: Task2State = {
 };
 
 const STEPS = [
-  { id: 1, title: 'Contexto', icon: FileText, description: 'Entenda a pesquisa' },
-  { id: 2, title: 'Planejamento', icon: PenTool, description: 'Estruture seus argumentos' },
-  { id: 3, title: 'Escrita', icon: ClipboardList, description: 'Escreva sua resposta' },
+  { id: 1, title: 'Context', icon: FileText, description: 'Understand the survey' },
+  { id: 2, title: 'Planning', icon: PenTool, description: 'Structure your arguments' },
+  { id: 3, title: 'Writing', icon: ClipboardList, description: 'Write your response' },
 ];
 
 export default function Task2Page() {
@@ -45,6 +46,9 @@ export default function Task2Page() {
   const [selectedContextId, setSelectedContextId] = useState<string | null>(null);
   const [examModeActive, setExamModeActive] = useState(false);
   const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
+  const [aiEvaluation, setAiEvaluation] = useState<any>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState<string | null>(null);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Get selected context
@@ -154,10 +158,51 @@ export default function Task2Page() {
     }
   };
 
+  const handleAIEvaluate = async () => {
+    if (wordCount < 50) {
+      setAiError('Escreva pelo menos 50 words para avaliação com IA.');
+      return;
+    }
+
+    setAiLoading(true);
+    setAiError(null);
+    setAiEvaluation(null);
+
+    try {
+      const response = await fetch('/api/evaluate/ai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          task: 'task2',
+          text: state.content,
+          prompt: state.promptText,
+          context: {
+            situation: selectedContext?.title || state.topic || '',
+            audience: state.audience
+          }
+        })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Evaluation error');
+      }
+
+      setAiEvaluation(data.evaluation);
+    } catch (err: any) {
+      setAiError(err.message || 'Error connecting to AI');
+    } finally {
+      setAiLoading(false);
+    }
+  };
+
   const handleClear = () => {
-    if (confirm('Tem certeza que deseja limpar tudo e voltar ao início?')) {
+    if (confirm('Are you sure you want to clear everything and go back to the beginning?')) {
       setState(INITIAL_STATE);
       setFeedback([]);
+      setAiEvaluation(null);
+      setAiError(null);
       setSelectedContextId(null);
       setCurrentStep(1);
     }
@@ -231,7 +276,7 @@ export default function Task2Page() {
             </div>
             <div className={styles.heroTitle}>
               <h1>Task 2 — <span>Survey Response</span></h1>
-              <p><Clock size={14} /> 26 minutos recomendados</p>
+              <p><Clock size={14} /> 26 minutes recommended</p>
             </div>
           </div>
           <div className={styles.heroCenter}>
@@ -249,7 +294,7 @@ export default function Task2Page() {
           </div>
           <div className={styles.heroActions}>
             <button onClick={handleClear} className={styles.heroBtnDanger}>
-              <Trash2 size={16} /> Limpar Tudo
+              <Trash2 size={16} /> Clear All
             </button>
             <DraftManager 
               task="task2"
@@ -306,8 +351,8 @@ export default function Task2Page() {
             <div className={styles.stepHeader}>
               <FileText className={styles.stepHeaderIcon} />
               <div>
-                <h2>Contexto da Pesquisa</h2>
-                <p>Leia o enunciado e identifique as opções. Escolha sua posição (Opção A ou B).</p>
+                <h2>Survey Context</h2>
+                <p>Read the prompt and identify the options. Choose your position (Option A or B).</p>
               </div>
             </div>
 
@@ -315,22 +360,22 @@ export default function Task2Page() {
               {/* Context Selector */}
               {contexts.length > 0 && (
                 <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Escolha um tema</label>
+                  <label className={styles.formLabel}>Choose a theme</label>
                   <ContextSelector
                     contexts={contexts}
                     selectedId={selectedContextId}
                     onSelect={handleContextSelect}
-                    placeholder="Selecione um tema pronto ou crie o seu..."
+                    placeholder="Select a ready theme or create your own..."
                   />
                 </div>
               )}
 
               {/* Prompt Text */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Enunciado (Survey)</label>
+                <label className={styles.formLabel}>Prompt (Survey)</label>
                 <textarea
                   className={styles.formTextareaLarge}
-                  placeholder="Cole o enunciado aqui ou selecione um tema acima..."
+                  placeholder="Paste the prompt here or select a theme above..."
                   rows={6}
                   value={state.promptText}
                   onChange={e => updateState('promptText', e.target.value)}
@@ -339,7 +384,7 @@ export default function Task2Page() {
 
               {/* Audience */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Quem vai ler? (Audience)</label>
+                <label className={styles.formLabel}>Who will read? (Audience)</label>
                 <input
                   className={styles.formInput}
                   placeholder="Ex: City Council, HR Department, School Board"
@@ -350,7 +395,7 @@ export default function Task2Page() {
 
               {/* Position Selection */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Sua Posição</label>
+                <label className={styles.formLabel}>Your Position</label>
                 <div className={styles.positionButtons}>
                   <button
                     type="button"
@@ -358,7 +403,7 @@ export default function Task2Page() {
                     className={`${styles.positionBtn} ${state.position === 'A_FAVOR' ? styles.positionBtnActive : ''}`}
                   >
                     <span className={styles.positionBtnLetter}>A</span>
-                    <span>Opção A</span>
+                    <span>Option A</span>
                   </button>
                   <button
                     type="button"
@@ -366,14 +411,14 @@ export default function Task2Page() {
                     className={`${styles.positionBtn} ${state.position === 'CONTRA' ? styles.positionBtnActive : ''}`}
                   >
                     <span className={styles.positionBtnLetter}>B</span>
-                    <span>Opção B</span>
+                    <span>Option B</span>
                   </button>
                 </div>
               </div>
 
               {/* Topic Keywords */}
               <div className={styles.formSection}>
-                <label className={styles.formLabel}>Tema escolhido (Keywords)</label>
+                <label className={styles.formLabel}>Chosen theme (Keywords)</label>
                 <input
                   className={styles.formInput}
                   placeholder="Ex: building a new park, remote work policy"
@@ -381,7 +426,7 @@ export default function Task2Page() {
                   onChange={e => updateState('topic', e.target.value)}
                 />
                 <p className={styles.formHint}>
-                  Palavras-chave que resumem sua escolha. Serão usadas na introdução.
+                  Keywords that summarize your choice. Will be used in the introduction.
                 </p>
               </div>
             </div>
@@ -390,7 +435,7 @@ export default function Task2Page() {
             <div className={styles.stepNav}>
               <div></div>
               <button className={styles.btnNext} onClick={nextStep}>
-                Próximo: Planejamento <ArrowRight size={18} />
+                Next: Planning <ArrowRight size={18} />
               </button>
             </div>
           </div>
@@ -402,7 +447,7 @@ export default function Task2Page() {
             <div className={styles.stepHeader}>
               <PenTool className={styles.stepHeaderIcon} />
               <div>
-                <h2>Planejamento (Estrutura PRE)</h2>
+                <h2>Planning (PRE Structure)</h2>
                 <p>Use a estrutura <strong>P</strong>oint → <strong>R</strong>eason → <strong>E</strong>xample para cada argumento.</p>
               </div>
               <TaskHelpPanel defaultTab="task2" />
@@ -457,7 +502,7 @@ export default function Task2Page() {
               <div className={styles.formSection}>
                 <div className={styles.argumentsHeader}>
                   <label className={styles.formLabel}>
-                    <span>📝</span> Argumentos (PRE Structure)
+                    <span>📝</span> Arguments (PRE Structure)
                   </label>
                   <div className={styles.argumentsActions}>
                     <button 
@@ -465,7 +510,7 @@ export default function Task2Page() {
                       onClick={removePoint} 
                       disabled={state.points.length <= 1}
                       className={styles.argumentsBtn}
-                      title="Remover argumento"
+                      title="Remove argument"
                     >
                       <Minus size={16} />
                     </button>
@@ -475,14 +520,14 @@ export default function Task2Page() {
                       onClick={addPoint} 
                       disabled={state.points.length >= 3}
                       className={styles.argumentsBtn}
-                      title="Adicionar argumento"
+                      title="Add argument"
                     >
                       <Plus size={16} />
                     </button>
                   </div>
                 </div>
                 <p className={styles.formHint}>
-                  Mínimo 2 argumentos. Cada um deve ter Point, Reason e Example.
+                  Minimum 2 arguments. Each must have Point, Reason and Example.
                 </p>
               </div>
 
@@ -494,12 +539,12 @@ export default function Task2Page() {
                       <span className={styles.argumentBadge}>
                         {idx === 0 ? 'First' : idx === 1 ? 'Second' : 'Finally'}
                       </span>
-                      <span className={styles.argumentTitle}>Argumento {idx + 1}</span>
+                      <span className={styles.argumentTitle}>Argument {idx + 1}</span>
                     </div>
                     
                     <div className={styles.argumentField}>
                       <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>P</span> Point (Ideia principal)
+                        <span className={styles.preBadge}>P</span> Point (Main idea)
                       </label>
                       <input
                         className={styles.formInput}
@@ -511,7 +556,7 @@ export default function Task2Page() {
                     
                     <div className={styles.argumentField}>
                       <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>R</span> Reason (Por quê?)
+                        <span className={styles.preBadge}>R</span> Reason (Why?)
                       </label>
                       <textarea
                         className={styles.planningTextarea}
@@ -524,7 +569,7 @@ export default function Task2Page() {
                     
                     <div className={styles.argumentField}>
                       <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>E</span> Example (Exemplo específico)
+                        <span className={styles.preBadge}>E</span> Example (Specific example)
                       </label>
                       <textarea
                         className={styles.planningTextarea}
@@ -542,8 +587,8 @@ export default function Task2Page() {
               <div className={styles.conclusionNote}>
                 <span className={styles.conclusionIcon}>💡</span>
                 <div>
-                  <strong>Conclusão (auto-gerada):</strong>
-                  <p>"In conclusion, considering these reasons, I am convinced that this is the superior option."</p>
+                  <strong>Conclusion (auto-generated):</strong>
+                  <p>&ldquo;In conclusion, considering these reasons, I am convinced that this is the superior option.&rdquo;</p>
                 </div>
               </div>
             </div>
@@ -551,10 +596,10 @@ export default function Task2Page() {
             {/* Navigation */}
             <div className={styles.stepNav}>
               <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Voltar
+                <ArrowLeft size={18} /> Back
               </button>
               <button className={styles.btnNext} onClick={nextStep}>
-                Próximo: Escrita <ArrowRight size={18} />
+                Next: Writing <ArrowRight size={18} />
               </button>
             </div>
           </div>
@@ -566,11 +611,11 @@ export default function Task2Page() {
             <div className={styles.stepHeader}>
               <ClipboardList className={styles.stepHeaderIcon} />
               <div>
-                <h2>Escrita Final</h2>
-                <p>Escreva sua resposta completa. Use "Gerar Estrutura" para criar um rascunho baseado no planejamento.</p>
+                <h2>Final Writing</h2>
+                <p>Write your complete response. Use &ldquo;Generate Structure&rdquo; para criar um rascunho baseado no planejamento.</p>
               </div>
               <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                ✍️ {wordCount} palavras
+                ✍️ {wordCount} words
               </div>
             </div>
 
@@ -591,23 +636,66 @@ export default function Task2Page() {
                 <textarea
                   ref={writingTextareaRef}
                   className={styles.writingTextarea}
-                  placeholder="Comece a escrever sua resposta aqui..."
+                  placeholder="Start writing your response here..."
                   value={state.content}
                   onChange={e => updateState('content', e.target.value)}
                 />
 
                 <div className={styles.writingActions}>
                   <button className={styles.btnTemplate} onClick={generateStructure}>
-                    <Wand2 size={16} /> Gerar Estrutura
+                    <Wand2 size={16} /> Generate Structure
                   </button>
                   <button className={styles.btnEvaluate} onClick={handleEvaluate}>
-                    <RefreshCw size={16} /> Avaliar
+                    <RefreshCw size={16} /> Quick Checklist
+                  </button>
+                  <button 
+                    className={styles.btnAIEvaluate} 
+                    onClick={handleAIEvaluate}
+                    disabled={aiLoading || wordCount < 50}
+                  >
+                    <Sparkles size={16} /> {aiLoading ? 'Analyzing...' : 'AI Evaluation'}
                   </button>
                 </div>
               </div>
 
+              {/* AI Evaluation Error */}
+              {aiError && (
+                <div className={styles.aiErrorBox}>
+                  <AlertCircle size={18} />
+                  <span>{aiError}</span>
+                  <button onClick={() => setAiError(null)}>×</button>
+                </div>
+              )}
+
+              {/* AI Evaluation Loading */}
+              {aiLoading && (
+                <div className={styles.aiLoadingPanel}>
+                  <AIEvaluationLoading />
+                </div>
+              )}
+
+              {/* AI Evaluation Result */}
+              {aiEvaluation && !aiLoading && (
+                <div className={styles.aiResultPanel}>
+                  <div className={styles.aiResultHeader}>
+                    <Bot size={20} />
+                    <h3>Avaliação com Inteligência Artificial</h3>
+                    <button 
+                      className={styles.aiResultClose}
+                      onClick={() => setAiEvaluation(null)}
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <AIEvaluationResult 
+                    evaluation={aiEvaluation} 
+                    originalText={state.content}
+                  />
+                </div>
+              )}
+
               {/* Feedback Panel */}
-              {feedback.length > 0 && (
+              {feedback.length > 0 && !aiEvaluation && (
                 <div className={styles.feedbackPanel}>
                   <div className={styles.feedbackHeader}>
                     <MessageSquare size={20} />
@@ -630,10 +718,10 @@ export default function Task2Page() {
             {/* Navigation */}
             <div className={styles.stepNav}>
               <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Voltar ao Planejamento
+                <ArrowLeft size={18} /> Back to Planning
               </button>
               <button className={styles.btnFinish}>
-                <CheckCircle size={18} /> Finalizar
+                <CheckCircle size={18} /> Finish
               </button>
             </div>
           </div>
