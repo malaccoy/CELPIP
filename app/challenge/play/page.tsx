@@ -143,7 +143,7 @@ export default function ChallengePlayPage() {
     return (
       <div className={styles.loading}>
         <div className={styles.spinner} />
-        <p>Carregando desafio...</p>
+        <p>Loading challenge...</p>
       </div>
     );
   }
@@ -154,29 +154,29 @@ export default function ChallengePlayPage() {
       <div className={styles.container}>
         <div className={styles.alreadyCompleted}>
           <div className={styles.completedIcon}>✅</div>
-          <h2>Desafio de Hoje Completo!</h2>
-          <p>Você já completou o desafio diário. Volte amanhã para um novo!</p>
+          <h2>Today's Challenge Complete!</h2>
+          <p>You have already completed today's challenge. Come back tomorrow for a new one!</p>
           
           <div className={styles.resultCard}>
             <div className={styles.resultStats}>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{existingSubmission.score}</span>
-                <span className={styles.resultLabel}>Pontuação</span>
+                <span className={styles.resultLabel}>Score</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{existingSubmission.wordCount}</span>
-                <span className={styles.resultLabel}>Palavras</span>
+                <span className={styles.resultLabel}>Words</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{formatTime(existingSubmission.timeSeconds)}</span>
-                <span className={styles.resultLabel}>Tempo</span>
+                <span className={styles.resultLabel}>Time</span>
               </div>
             </div>
           </div>
 
           {leaderboard.length > 0 && (
             <div className={styles.leaderboard}>
-              <h4>🏆 Ranking do Dia</h4>
+              <h4>🏆 Today's Ranking</h4>
               <div className={styles.leaderboardList}>
                 {leaderboard.slice(0, 5).map((entry) => (
                   <div 
@@ -198,10 +198,10 @@ export default function ChallengePlayPage() {
           <div className={styles.actions}>
             <button className={styles.backButton} onClick={() => router.push('/dashboard')}>
               <ArrowLeft size={18} />
-              Voltar ao Dashboard
+              Back to Dashboard
             </button>
             <button className={styles.practiceButton} onClick={() => router.push(`/task-${challenge.task.replace('task', '')}`)}>
-              Praticar Mais
+              Practice More
             </button>
           </div>
         </div>
@@ -215,21 +215,21 @@ export default function ChallengePlayPage() {
       <div className={styles.container}>
         <div className={styles.submissionComplete}>
           <div className={styles.confetti}>🎉</div>
-          <h2>Desafio Completo!</h2>
+          <h2>Challenge Complete!</h2>
           
           <div className={styles.resultCard}>
             <div className={styles.resultStats}>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{submissionResult.score}</span>
-                <span className={styles.resultLabel}>Pontuação</span>
+                <span className={styles.resultLabel}>Score</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{submissionResult.wordCount}</span>
-                <span className={styles.resultLabel}>Palavras</span>
+                <span className={styles.resultLabel}>Words</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{formatTime(submissionResult.timeSeconds)}</span>
-                <span className={styles.resultLabel}>Tempo</span>
+                <span className={styles.resultLabel}>Time</span>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function ChallengePlayPage() {
 
           {leaderboard.length > 0 && (
             <div className={styles.leaderboard}>
-              <h4>🏆 Ranking do Dia</h4>
+              <h4>🏆 Today's Ranking</h4>
               <div className={styles.leaderboardList}>
                 {leaderboard.slice(0, 5).map((entry) => (
                   <div 
@@ -274,7 +274,7 @@ export default function ChallengePlayPage() {
           <div className={styles.actions}>
             <button className={styles.backButton} onClick={() => router.push('/dashboard')}>
               <ArrowLeft size={18} />
-              Voltar ao Dashboard
+              Back to Dashboard
             </button>
           </div>
         </div>
@@ -302,7 +302,7 @@ export default function ChallengePlayPage() {
           <ArrowLeft size={20} />
         </button>
         <div className={styles.headerCenter}>
-          <span className={styles.challengeBadge}>🔥 Desafio Diário</span>
+          <span className={styles.challengeBadge}>🔥 Daily Challenge</span>
           <span className={styles.taskBadge}>
             {challenge.task === 'task1' ? '✉️ Task 1' : '📋 Task 2'}
           </span>
@@ -318,12 +318,12 @@ export default function ChallengePlayPage() {
         <h2 className={styles.promptTitle}>{challenge.prompt.title}</h2>
         
         <div className={styles.situation}>
-          <strong>Situação:</strong>
+          <strong>Situation:</strong>
           <p>{challenge.prompt.situation}</p>
         </div>
 
         <div className={styles.instructions}>
-          <strong>Seu texto deve:</strong>
+          <strong>Your text should:</strong>
           <ul>
             {challenge.prompt.instructions.map((inst, i) => (
               <li key={i}>{inst}</li>
@@ -335,12 +335,12 @@ export default function ChallengePlayPage() {
       {/* Writing Area */}
       <div className={styles.writingArea}>
         <div className={styles.writingHeader}>
-          <span>Seu Texto</span>
+          <span>Your Text</span>
           <div className={styles.wordCount}>
             <span className={wordCount >= 150 && wordCount <= 200 ? styles.ideal : wordCount < 150 ? styles.low : styles.high}>
               {wordCount}
             </span>
-            <span className={styles.wordTarget}>/ 150-200 palavras</span>
+            <span className={styles.wordTarget}>/ 150-200 words</span>
           </div>
         </div>
         
@@ -349,8 +349,8 @@ export default function ChallengePlayPage() {
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder={challenge.task === 'task1' 
-            ? "Dear ...\n\nComece seu email aqui..." 
-            : "In my opinion...\n\nComece sua resposta aqui..."}
+            ? "Dear ...\n\nStart your email here..." 
+            : "In my opinion...\n\nStart your response here..."}
           autoFocus
         />
       </div>
@@ -363,10 +363,10 @@ export default function ChallengePlayPage() {
           disabled={wordCount < 50}
         >
           <Send size={20} />
-          Enviar Desafio
+          Submit Challenge
         </button>
         {wordCount < 50 && (
-          <p className={styles.minWords}>Mínimo de 50 palavras para enviar</p>
+          <p className={styles.minWords}>Minimum 50 words to submit</p>
         )}
       </div>
     </div>

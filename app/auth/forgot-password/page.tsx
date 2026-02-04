@@ -26,13 +26,13 @@ export default function ForgotPasswordPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || 'Erro ao enviar email');
+        setError(data.error || 'Error sending email');
         return;
       }
 
       setSuccess(true);
     } catch {
-      setError('Erro ao enviar email. Tente novamente.');
+      setError('Error sending email. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -46,15 +46,15 @@ export default function ForgotPasswordPage() {
             <div className={styles.successIcon}>
               <CheckCircle size={48} />
             </div>
-            <h2>Email Enviado! 📧</h2>
+            <h2>Email Sent! 📧</h2>
             <p>
-              Se o email <strong>{email}</strong> estiver cadastrado, você receberá um link para redefinir sua senha.
+              If the email <strong>{email}</strong> is registered, you will receive a link to reset your password.
             </p>
             <p className={styles.smallText}>
-              Verifique sua caixa de entrada e spam.
+              Check your inbox and spam folder.
             </p>
             <Link href="/auth/login" className={styles.submitButton}>
-              Voltar para Login
+              Back to Login
               <ArrowRight size={18} />
             </Link>
           </div>
@@ -68,12 +68,12 @@ export default function ForgotPasswordPage() {
       <div className={styles.authCard}>
         <Link href="/auth/login" className={styles.backLink}>
           <ArrowLeft size={16} />
-          Voltar para login
+          Back to login
         </Link>
 
         <div className={styles.authHeader}>
-          <h1>Recuperar Senha</h1>
-          <p>Digite seu email para receber um link de recuperação</p>
+          <h1>Reset Password</h1>
+          <p>Enter your email to receive a recovery link</p>
         </div>
 
         {error && (
@@ -91,7 +91,7 @@ export default function ForgotPasswordPage() {
               <input
                 id="email"
                 type="email"
-                placeholder="seu@email.com"
+                placeholder="your@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -104,11 +104,11 @@ export default function ForgotPasswordPage() {
             {loading ? (
               <>
                 <Loader2 size={18} className={styles.spinner} />
-                Enviando...
+                Sending...
               </>
             ) : (
               <>
-                Enviar Link de Recuperação
+                Send Recovery Link
                 <ArrowRight size={18} />
               </>
             )}

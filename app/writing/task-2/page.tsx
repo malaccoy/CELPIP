@@ -5,6 +5,7 @@ import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import ExamTimer from '@/components/ExamTimer';
 import DraftManager from '@/components/DraftManager';
 import ExamMode from '@/components/ExamMode';
+import SpellCheckTextarea from '@/components/SpellCheckTextarea';
 import { Task2State, FeedbackItem, Task2Point } from '@/types';
 import { generateTask2Feedback, countWords, calculateScore } from '@/utils/feedback';
 import { recordPractice } from '@/components/DetailedStats';
@@ -13,7 +14,7 @@ import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementTo
 import { 
   Save, RefreshCw, Wand2, Trash2, Plus, Minus, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
-  Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList, Sparkles, Bot
+  Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList, Sparkles, Bot, SpellCheck
 } from 'lucide-react';
 import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
@@ -49,6 +50,7 @@ export default function Task2Page() {
   const [aiEvaluation, setAiEvaluation] = useState<any>(null);
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
+  const [spellCheckEnabled, setSpellCheckEnabled] = useState(false);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Get selected context
@@ -633,12 +635,29 @@ export default function Task2Page() {
             <div className={styles.stepBody}>
               {/* Writing Area */}
               <div className={styles.writingSection}>
-                <textarea
-                  ref={writingTextareaRef}
-                  className={styles.writingTextarea}
-                  placeholder="Start writing your response here..."
+                {/* Spell Check Toggle */}
+                <div className={styles.spellCheckToggle}>
+                  <label className={styles.toggleSwitch}>
+                    <input
+                      type="checkbox"
+                      checked={spellCheckEnabled}
+                      onChange={(e) => setSpellCheckEnabled(e.target.checked)}
+                    />
+                    <span className={styles.toggleSlider}></span>
+                  </label>
+                  <span className={styles.toggleLabel}>
+                    <SpellCheck size={16} />
+                    Spell Check
+                  </span>
+                </div>
+
+                <SpellCheckTextarea
                   value={state.content}
-                  onChange={e => updateState('content', e.target.value)}
+                  onChange={(value) => updateState('content', value)}
+                  placeholder="Start writing your response here..."
+                  spellCheckEnabled={spellCheckEnabled}
+                  className={styles.writingTextareaContainer}
+                  minHeight="350px"
                 />
 
                 <div className={styles.writingActions}>

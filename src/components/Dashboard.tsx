@@ -139,7 +139,7 @@ export default function Dashboard() {
   };
 
   const clearHistory = () => {
-    if (confirm('Tem certeza que deseja apagar todo o histórico de práticas?')) {
+    if (confirm('Are you sure you want to delete all practice history?')) {
       localStorage.removeItem(STORAGE_KEY);
       setSessions([]);
       setStats(calculateStats([]));
@@ -147,7 +147,7 @@ export default function Dashboard() {
   };
 
   const formatDate = (isoString: string) => {
-    return new Date(isoString).toLocaleDateString('pt-BR', {
+    return new Date(isoString).toLocaleDateString('en-US', {
       day: '2-digit',
       month: '2-digit',
       year: '2-digit',
@@ -163,7 +163,7 @@ export default function Dashboard() {
   };
 
   const formatLastPractice = (isoString: string | null) => {
-    if (!isoString) return 'Nunca';
+    if (!isoString) return 'Never';
     
     const date = new Date(isoString);
     const now = new Date();
@@ -171,10 +171,10 @@ export default function Dashboard() {
     const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
     const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
     
-    if (diffHours < 1) return 'Agora há pouco';
-    if (diffHours < 24) return `Há ${diffHours}h`;
-    if (diffDays === 1) return 'Ontem';
-    if (diffDays < 7) return `Há ${diffDays} dias`;
+    if (diffHours < 1) return 'Just now';
+    if (diffHours < 24) return `${diffHours}h ago`;
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays} days ago`;
     return formatDate(isoString);
   };
 
@@ -184,8 +184,8 @@ export default function Dashboard() {
         <div className={styles.dashboardTitle}>
           <BarChart3 size={28} />
           <div>
-            <h1>Dashboard de Progresso</h1>
-            <p>Acompanhe sua evolução no CELPIP Writing</p>
+            <h1>Progress Dashboard</h1>
+            <p>Track your evolution in CELPIP Writing</p>
           </div>
         </div>
         <div className={styles.dashboardTabs}>
@@ -193,13 +193,13 @@ export default function Dashboard() {
             className={`${styles.tab} ${activeTab === 'overview' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('overview')}
           >
-            Visão Geral
+            Overview
           </button>
           <button 
             className={`${styles.tab} ${activeTab === 'history' ? styles.tabActive : ''}`}
             onClick={() => setActiveTab('history')}
           >
-            Histórico
+            History
           </button>
         </div>
       </div>
@@ -213,7 +213,7 @@ export default function Dashboard() {
             </div>
             <div className={styles.statInfo}>
               <span className={styles.statValue}>{stats.totalSessions}</span>
-              <span className={styles.statLabel}>Práticas Totais</span>
+              <span className={styles.statLabel}>Total Practices</span>
             </div>
           </div>
 
@@ -223,7 +223,7 @@ export default function Dashboard() {
             </div>
             <div className={styles.statInfo}>
               <span className={styles.statValue}>{stats.avgWordsPerSession}</span>
-              <span className={styles.statLabel}>Média de Palavras</span>
+              <span className={styles.statLabel}>Average Words</span>
             </div>
           </div>
 
@@ -233,7 +233,7 @@ export default function Dashboard() {
             </div>
             <div className={styles.statInfo}>
               <span className={styles.statValue}>{formatTime(stats.avgTimePerSession)}</span>
-              <span className={styles.statLabel}>Tempo Médio</span>
+              <span className={styles.statLabel}>Average Time</span>
             </div>
           </div>
 
@@ -243,7 +243,7 @@ export default function Dashboard() {
             </div>
             <div className={styles.statInfo}>
               <span className={styles.statValue}>{stats.completionRate}%</span>
-              <span className={styles.statLabel}>Taxa de Conclusão</span>
+              <span className={styles.statLabel}>Completion Rate</span>
             </div>
           </div>
 
@@ -253,11 +253,11 @@ export default function Dashboard() {
               <Flame className={styles.highlightIcon} />
               <div>
                 <span className={styles.highlightValue}>{stats.streak}</span>
-                <span className={styles.highlightLabel}>Dias de Streak</span>
+                <span className={styles.highlightLabel}>Day Streak</span>
               </div>
             </div>
             <p className={styles.highlightHint}>
-              Pratique todo dia para manter sua sequência!
+              Practice every day to keep your streak!
             </p>
           </div>
 
@@ -266,17 +266,17 @@ export default function Dashboard() {
               <Calendar className={styles.highlightIcon} />
               <div>
                 <span className={styles.highlightValue}>{formatLastPractice(stats.lastPractice)}</span>
-                <span className={styles.highlightLabel}>Última Prática</span>
+                <span className={styles.highlightLabel}>Last Practice</span>
               </div>
             </div>
             <p className={styles.highlightHint}>
-              {stats.lastPractice ? 'Continue praticando!' : 'Comece sua primeira prática!'}
+              {stats.lastPractice ? 'Keep practicing!' : 'Start your first practice!'}
             </p>
           </div>
 
           {/* Task Distribution */}
           <div className={styles.distributionCard}>
-            <h3><Award size={18} /> Distribuição por Task</h3>
+            <h3><Award size={18} /> Task Distribution</h3>
             <div className={styles.distributionBars}>
               <div className={styles.distributionItem}>
                 <span className={styles.distributionLabel}>Task 1 (Email)</span>
@@ -307,7 +307,7 @@ export default function Dashboard() {
                 <span className={styles.distributionValue}>{stats.task2Sessions}</span>
               </div>
               <div className={styles.distributionItem}>
-                <span className={styles.distributionLabel}>Modo Exame</span>
+                <span className={styles.distributionLabel}>Exam Mode</span>
                 <div className={styles.distributionBar}>
                   <div 
                     className={`${styles.distributionFill} ${styles.distributionFillGreen}`}
@@ -327,16 +327,16 @@ export default function Dashboard() {
           <div className={styles.totalCard}>
             <div className={styles.totalContent}>
               <span className={styles.totalValue}>{stats.totalWords.toLocaleString()}</span>
-              <span className={styles.totalLabel}>Palavras Escritas</span>
+              <span className={styles.totalLabel}>Words Written</span>
             </div>
             <p className={styles.totalHint}>
               {stats.totalWords >= 10000 
-                ? '🏆 Incrível! Você já escreveu mais de 10.000 palavras!'
+                ? '🏆 Amazing! You have written more than 10,000 words!'
                 : stats.totalWords >= 5000
-                  ? '🌟 Ótimo progresso! Continue assim!'
+                  ? '🌟 Great progress! Keep it up!'
                   : stats.totalWords >= 1000
-                    ? '💪 Bom começo! Continue praticando!'
-                    : '✏️ Comece a praticar para ver seu progresso aqui!'}
+                    ? '💪 Good start! Keep practicing!'
+                    : '✏️ Start practicing to see your progress here!'}
             </p>
           </div>
 
@@ -365,10 +365,10 @@ export default function Dashboard() {
       {activeTab === 'history' && (
         <div className={styles.historySection}>
           <div className={styles.historyHeader}>
-            <span>{sessions.length} práticas registradas</span>
+            <span>{sessions.length} practices recorded</span>
             {sessions.length > 0 && (
               <button className={styles.clearBtn} onClick={clearHistory}>
-                <Trash2 size={14} /> Limpar Histórico
+                <Trash2 size={14} /> Clear History
               </button>
             )}
           </div>
@@ -376,8 +376,8 @@ export default function Dashboard() {
           {sessions.length === 0 ? (
             <div className={styles.emptyHistory}>
               <FileText size={48} />
-              <h3>Nenhuma prática registrada</h3>
-              <p>Complete uma prática para ver seu histórico aqui.</p>
+              <h3>No practices recorded</h3>
+              <p>Complete a practice to see your history here.</p>
             </div>
           ) : (
             <div className={styles.historyList}>
@@ -389,14 +389,14 @@ export default function Dashboard() {
                   <div className={styles.historyItemInfo}>
                     <span className={styles.historyItemTitle}>
                       {session.task === 'task1' ? 'Task 1 — Email' : 'Task 2 — Survey'}
-                      {session.examMode && <span className={styles.examBadge}>EXAME</span>}
+                      {session.examMode && <span className={styles.examBadge}>EXAM</span>}
                     </span>
                     <span className={styles.historyItemMeta}>
                       {formatDate(session.date)}
                     </span>
                   </div>
                   <div className={styles.historyItemStats}>
-                    <span>{session.wordCount} palavras</span>
+                    <span>{session.wordCount} words</span>
                     <span>{formatTime(session.timeUsed)}</span>
                   </div>
                   <div className={`${styles.historyItemStatus} ${session.completed ? styles.completed : styles.incomplete}`}>

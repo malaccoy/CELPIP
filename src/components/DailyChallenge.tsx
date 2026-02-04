@@ -48,7 +48,7 @@ function getDateSeed(dateStr: string): number {
 const TASK1_PROMPTS = [
   {
     id: 't1_neighbor_noise',
-    title: 'Reclamação ao Vizinho',
+    title: 'Neighbor Complaint',
     situation: 'Your neighbor has been playing loud music late at night for the past week.',
     instructions: [
       'Explain the problem',
@@ -58,7 +58,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_gym_cancel',
-    title: 'Cancelamento de Academia',
+    title: 'Gym Cancellation',
     situation: 'You want to cancel your gym membership but the company is making it difficult.',
     instructions: [
       'State your request clearly',
@@ -68,7 +68,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_job_application',
-    title: 'Candidatura a Emprego',
+    title: 'Job Application',
     situation: 'You saw a job posting for your dream position at a local company.',
     instructions: [
       'Introduce yourself and your qualifications',
@@ -78,7 +78,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_landlord_repair',
-    title: 'Pedido de Reparo',
+    title: 'Repair Request',
     situation: 'The heating system in your apartment has been broken for two weeks.',
     instructions: [
       'Describe the problem in detail',
@@ -88,7 +88,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_thank_coworker',
-    title: 'Agradecimento a Colega',
+    title: 'Thank You Note',
     situation: 'A coworker helped you complete an important project while you were sick.',
     instructions: [
       'Express your gratitude',
@@ -98,7 +98,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_restaurant_complaint',
-    title: 'Reclamação de Restaurante',
+    title: 'Restaurant Complaint',
     situation: 'You had a terrible dining experience at a restaurant last weekend.',
     instructions: [
       'Describe what happened',
@@ -108,7 +108,7 @@ const TASK1_PROMPTS = [
   },
   {
     id: 't1_school_absence',
-    title: 'Justificativa de Ausência',
+    title: 'Absence Notification',
     situation: 'Your child will miss school next week for a family trip.',
     instructions: [
       'Inform about the absence dates',
@@ -122,7 +122,7 @@ const TASK1_PROMPTS = [
 const TASK2_PROMPTS = [
   {
     id: 't2_remote_work',
-    title: 'Trabalho Remoto',
+    title: 'Remote Work',
     situation: 'Your company is surveying employees about permanent remote work options.',
     instructions: [
       'State your opinion clearly',
@@ -132,7 +132,7 @@ const TASK2_PROMPTS = [
   },
   {
     id: 't2_public_transport',
-    title: 'Transporte Público Gratuito',
+    title: 'Free Public Transportation',
     situation: 'The city is considering making public transportation free for all residents.',
     instructions: [
       'State whether you support or oppose this',
@@ -142,7 +142,7 @@ const TASK2_PROMPTS = [
   },
   {
     id: 't2_social_media_age',
-    title: 'Idade Mínima para Redes Sociais',
+    title: 'Minimum Age for Social Media',
     situation: 'A new law proposes raising the minimum age for social media to 16.',
     instructions: [
       'Share your opinion on this proposal',
@@ -152,7 +152,7 @@ const TASK2_PROMPTS = [
   },
   {
     id: 't2_four_day_week',
-    title: 'Semana de 4 Dias',
+    title: 'Four-Day Work Week',
     situation: 'Your workplace is considering switching to a 4-day work week.',
     instructions: [
       'State your position',
@@ -162,7 +162,7 @@ const TASK2_PROMPTS = [
   },
   {
     id: 't2_plastic_ban',
-    title: 'Proibição de Plásticos',
+    title: 'Plastic Ban',
     situation: 'The government wants to ban all single-use plastics within 2 years.',
     instructions: [
       'Express your opinion',
@@ -235,7 +235,7 @@ function updateLeaderboard(submission: ChallengeSubmission): void {
     const existingIndex = leaderboard[submission.date].findIndex(e => e.isYou);
     const entry: DailyLeaderboardEntry = {
       rank: 0,
-      name: 'Você',
+      name: 'You',
       score: submission.score,
       wordCount: submission.wordCount,
       timeSeconds: submission.timeSeconds,
@@ -252,9 +252,9 @@ function updateLeaderboard(submission: ChallengeSubmission): void {
     if (leaderboard[submission.date].length === 1) {
       const simulatedScores = [
         { name: 'Maria S.', score: 8, wordCount: 175, timeSeconds: 1200 },
-        { name: 'João P.', score: 9, wordCount: 168, timeSeconds: 1100 },
-        { name: 'Ana L.', score: 7, wordCount: 182, timeSeconds: 1350 },
-        { name: 'Pedro M.', score: 10, wordCount: 195, timeSeconds: 1000 },
+        { name: 'John P.', score: 9, wordCount: 168, timeSeconds: 1100 },
+        { name: 'Anna L.', score: 7, wordCount: 182, timeSeconds: 1350 },
+        { name: 'Peter M.', score: 10, wordCount: 195, timeSeconds: 1000 },
         { name: 'Carla R.', score: 8, wordCount: 160, timeSeconds: 1250 },
       ];
       leaderboard[submission.date].push(...simulatedScores.map(s => ({ ...s, rank: 0 })));
@@ -351,7 +351,7 @@ export default function DailyChallengeWidget({ mode = 'compact' }: DailyChalleng
         <div className={styles.compactHeader}>
           <div className={styles.compactTitle}>
             <span className={styles.fireEmoji}>🔥</span>
-            <h4>Desafio Diário</h4>
+            <h4>Daily Challenge</h4>
           </div>
           <span className={styles.resetTimer}>⏰ {timeUntilReset}</span>
         </div>
@@ -365,21 +365,21 @@ export default function DailyChallengeWidget({ mode = 'compact' }: DailyChalleng
 
         {submission ? (
           <div className={styles.compactCompleted}>
-            <div className={styles.completedBadge}>✅ Completo!</div>
+            <div className={styles.completedBadge}>✅ Complete!</div>
             <div className={styles.completedStats}>
               <span>🎯 {submission.score}/12</span>
-              <span>📝 {submission.wordCount} palavras</span>
+              <span>📝 {submission.wordCount} words</span>
               <span>⏱️ {formatTime(submission.timeSeconds)}</span>
             </div>
             {leaderboard.length > 0 && (
               <div className={styles.yourRank}>
-                Sua posição: <strong>#{leaderboard.find(e => e.isYou)?.rank || '-'}</strong> de {leaderboard.length}
+                Your rank: <strong>#{leaderboard.find(e => e.isYou)?.rank || '-'}</strong> of {leaderboard.length}
               </div>
             )}
           </div>
         ) : (
           <button className={styles.startButton} onClick={handleStartChallenge}>
-            🚀 Começar Desafio
+            🚀 Start Challenge
           </button>
         )}
       </div>
@@ -393,12 +393,12 @@ export default function DailyChallengeWidget({ mode = 'compact' }: DailyChalleng
         <div className={styles.headerLeft}>
           <span className={styles.fireEmoji}>🔥</span>
           <div>
-            <h3>Desafio Diário</h3>
-            <p>Novo desafio em {timeUntilReset}</p>
+            <h3>Daily Challenge</h3>
+            <p>New challenge in {timeUntilReset}</p>
           </div>
         </div>
         <div className={styles.dateBadge}>
-          {new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'short' })}
+          {new Date().toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'short' })}
         </div>
       </div>
 
@@ -412,12 +412,12 @@ export default function DailyChallengeWidget({ mode = 'compact' }: DailyChalleng
         <h4 className={styles.challengeTitle}>{challenge.prompt.title}</h4>
         
         <div className={styles.situation}>
-          <strong>Situação:</strong>
+          <strong>Situation:</strong>
           <p>{challenge.prompt.situation}</p>
         </div>
 
         <div className={styles.instructions}>
-          <strong>Instruções:</strong>
+          <strong>Instructions:</strong>
           <ul>
             {challenge.prompt.instructions.map((inst, i) => (
               <li key={i}>{inst}</li>
@@ -429,33 +429,33 @@ export default function DailyChallengeWidget({ mode = 'compact' }: DailyChalleng
           <div className={styles.submissionResult}>
             <div className={styles.resultHeader}>
               <span className={styles.completedIcon}>✅</span>
-              <span>Desafio Completo!</span>
+              <span>Challenge Complete!</span>
             </div>
             <div className={styles.resultStats}>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{submission.score}</span>
-                <span className={styles.resultLabel}>Pontuação</span>
+                <span className={styles.resultLabel}>Score</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{submission.wordCount}</span>
-                <span className={styles.resultLabel}>Palavras</span>
+                <span className={styles.resultLabel}>Words</span>
               </div>
               <div className={styles.resultStat}>
                 <span className={styles.resultValue}>{formatTime(submission.timeSeconds)}</span>
-                <span className={styles.resultLabel}>Tempo</span>
+                <span className={styles.resultLabel}>Time</span>
               </div>
             </div>
           </div>
         ) : (
           <button className={styles.startButtonLarge} onClick={handleStartChallenge}>
-            🚀 Começar Desafio
+            🚀 Start Challenge
           </button>
         )}
       </div>
 
       {leaderboard.length > 0 && (
         <div className={styles.leaderboard}>
-          <h4>🏆 Ranking do Dia</h4>
+          <h4>🏆 Today's Ranking</h4>
           <div className={styles.leaderboardList}>
             {leaderboard.slice(0, 5).map((entry) => (
               <div 

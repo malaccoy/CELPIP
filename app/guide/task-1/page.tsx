@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { Card, Button } from '@/components/Common';
-import { task1GuideContent } from '@content/pt/task1-guide';
+import { task1GuideContent } from '@content/task1-guide';
 import { ArrowRight, ArrowLeft, CheckCircle, AlertTriangle, Lightbulb, BookOpen, Sparkles, Zap, Copy } from 'lucide-react';
 import styles from '@/styles/Guide.module.scss';
 
@@ -15,7 +15,7 @@ export default function Task1GuidePage() {
       {/* Back navigation */}
       <button onClick={() => router.push('/guide')} className={styles.backButton}>
         <ArrowLeft size={16} />
-        <span>Voltar ao Guia</span>
+        <span>Back to Guide</span>
       </button>
 
       <div className={styles.guideHeader}>
@@ -72,16 +72,16 @@ export default function Task1GuidePage() {
         <div className={styles.examplesSection}>
           <h4 className={styles.examplesTitle}>
             <Zap size={16} />
-            Exemplos Práticos
+            Practical Examples
           </h4>
           <div className={styles.examplesList}>
             {content.sections.professorStrategy.examples.map((ex, index) => (
               <div key={index} className={styles.exampleItem}>
                 <div className={styles.exampleSituation}>
-                  <strong>Situação:</strong> {ex.situation}
+                  <strong>Situation:</strong> {ex.situation}
                 </div>
                 <div className={styles.exampleInvention}>
-                  <strong>Invente:</strong> {ex.invention}
+                  <strong>Invent:</strong> {ex.invention}
                 </div>
               </div>
             ))}
@@ -171,7 +171,7 @@ export default function Task1GuidePage() {
         <div className={styles.keyTipsSection}>
           <h4 className={styles.keyTipsTitle}>
             <BookOpen size={16} />
-            Dicas Importantes
+            Important Tips
           </h4>
           <ul className={styles.keyTipsList}>
             {content.sections.scoring.keyTips.map((tip, index) => (

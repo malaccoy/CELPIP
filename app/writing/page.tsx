@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { Mail, ClipboardList, ArrowRight, Clock, Target, Sparkles } from 'lucide-react';
+import { Mail, ClipboardList, ArrowRight, Clock, Target, Sparkles, Gamepad2 } from 'lucide-react';
 import styles from '@/styles/WritingHub.module.scss';
 
 export default function WritingHubPage() {
@@ -113,6 +113,18 @@ export default function WritingHubPage() {
             </article>
           );
         })}
+      </div>
+
+      {/* Game Mode Banner */}
+      <div className={styles.gameBanner} onClick={() => router.push('/writing/game')}>
+        <div className={styles.gameBannerIcon}>
+          <Gamepad2 size={32} />
+        </div>
+        <div className={styles.gameBannerContent}>
+          <h3>🎮 Word Game</h3>
+          <p>Learn essential vocabulary for emails with a fun hangman game!</p>
+        </div>
+        <ArrowRight size={24} className={styles.gameBannerArrow} />
       </div>
 
       {/* Tips Section */}

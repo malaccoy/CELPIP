@@ -60,7 +60,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   
   // Challenge achievements
   { id: 'challenge_1', icon: '🎯', name: 'Desafiante', description: 'Complete seu primeiro desafio diário', category: 'challenge', requirement: 1 },
-  { id: 'challenge_7', icon: '🗓️', name: 'Semana de Desafios', description: 'Complete 7 desafios diários', category: 'challenge', requirement: 7 },
+  { id: 'challenge_7', icon: '🗓️', name: 'Challenge Week', description: 'Complete 7 daily challenges', category: 'challenge', requirement: 7 },
   { id: 'challenge_30', icon: '🏅', name: 'Campeão Mensal', description: 'Complete 30 desafios diários', category: 'challenge', requirement: 30 },
   
   // Special achievements
@@ -322,10 +322,10 @@ export default function Achievements({ mode = 'full' }: AchievementsProps) {
 
   const categories = [
     { id: 'all', label: 'Todas', icon: '🏆' },
-    { id: 'practice', label: 'Prática', icon: '✍️' },
+    { id: 'practice', label: 'Practice', icon: '✍️' },
     { id: 'streak', label: 'Streaks', icon: '🔥' },
     { id: 'score', label: 'Pontuação', icon: '⭐' },
-    { id: 'challenge', label: 'Desafios', icon: '🎯' },
+    { id: 'challenge', label: 'Challenges', icon: '🎯' },
     { id: 'special', label: 'Especiais', icon: '💎' },
   ];
 
@@ -471,7 +471,7 @@ export default function Achievements({ mode = 'full' }: AchievementsProps) {
             </div>
             <div className={styles.statItem}>
               <span className={styles.statValue}>{progress.challengesCompleted}</span>
-              <span className={styles.statLabel}>Desafios</span>
+              <span className={styles.statLabel}>Challenges</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statValue}>{progress.speedRuns}</span>

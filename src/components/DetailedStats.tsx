@@ -118,7 +118,7 @@ export function DetailedStats() {
   }, []);
 
   if (!mounted) {
-    return <div className={styles.statsLoading}>Carregando estatísticas...</div>;
+    return <div className={styles.statsLoading}>Loading statistics...</div>;
   }
 
   const weekDays = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
@@ -236,7 +236,7 @@ export function DetailedStats() {
         <div className={styles.emptyState}>
           <div className={styles.emptyIcon}>📊</div>
           <p>Nenhuma estatística ainda!</p>
-          <p className={styles.emptyHint}>Complete sua primeira prática para começar a acompanhar seu progresso.</p>
+          <p className={styles.emptyHint}>Complete your first practice to start tracking your progress.</p>
         </div>
       )}
     </div>

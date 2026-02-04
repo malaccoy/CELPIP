@@ -277,7 +277,7 @@ export default function GoalsManager({ mode = 'full' }: GoalsManagerProps) {
       </div>
 
       <div className={styles.section}>
-        <h4 className={styles.sectionTitle}>🔔 Dias de Prática</h4>
+        <h4 className={styles.sectionTitle}>🔔 Practice Days</h4>
         <p className={styles.sectionDesc}>Quais dias você pretende praticar?</p>
         
         <div className={styles.daysGrid}>

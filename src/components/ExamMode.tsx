@@ -204,7 +204,7 @@ export default function ExamMode({
               className={styles.examCancelBtn}
               onClick={() => onToggle(false)}
             >
-              <Unlock size={18} /> Cancelar
+              <Unlock size={18} /> Cancel
             </button>
             <button 
               className={styles.examStartBtn}

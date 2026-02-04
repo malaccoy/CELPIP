@@ -37,7 +37,7 @@ function LoginForm() {
         router.refresh();
       }
     } catch {
-      setError('Erro ao fazer login. Tente novamente.');
+      setError('Error signing in. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -48,7 +48,7 @@ function LoginForm() {
       {verified && (
         <div className={styles.successMessage}>
           <span>✅</span>
-          <span>Email verificado com sucesso! Faça login para continuar.</span>
+          <span>Email verified successfully! Sign in to continue.</span>
         </div>
       )}
 
@@ -67,7 +67,7 @@ function LoginForm() {
             <input
               id="email"
               type="email"
-              placeholder="seu@email.com"
+              placeholder="your@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -77,7 +77,7 @@ function LoginForm() {
         </div>
 
         <div className={styles.inputGroup}>
-          <label htmlFor="password">Senha</label>
+          <label htmlFor="password">Password</label>
           <div className={styles.inputWrapper}>
             <Lock size={18} />
             <input
@@ -93,18 +93,18 @@ function LoginForm() {
         </div>
 
         <Link href="/auth/forgot-password" className={styles.forgotLink}>
-          Esqueceu sua senha?
+          Forgot your password?
         </Link>
 
         <button type="submit" className={styles.submitButton} disabled={loading}>
           {loading ? (
             <>
               <Loader2 size={18} className={styles.spinner} />
-              Entrando...
+              Signing in...
             </>
           ) : (
             <>
-              Entrar
+              Sign In
               <ArrowRight size={18} />
             </>
           )}
@@ -119,8 +119,8 @@ export default function LoginPage() {
     <div className={styles.authContainer}>
       <div className={styles.authCard}>
         <div className={styles.authHeader}>
-          <h1>Entrar</h1>
-          <p>Acesse sua conta no CELPIP Writing Coach</p>
+          <h1>Sign In</h1>
+          <p>Access your CELPIP Writing Coach account</p>
         </div>
 
         <Suspense fallback={<div className={styles.loadingCard}><Loader2 size={32} className={styles.spinner} /></div>}>
@@ -129,8 +129,8 @@ export default function LoginPage() {
 
         <div className={styles.authFooter}>
           <p>
-            Não tem uma conta?{' '}
-            <Link href="/auth/register">Criar conta</Link>
+            Don't have an account?{' '}
+            <Link href="/auth/register">Create account</Link>
           </p>
         </div>
       </div>

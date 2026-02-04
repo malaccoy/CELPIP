@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { Card, Button } from '@/components/Common';
-import { task2GuideContent } from '@content/pt/task2-guide';
+import { task2GuideContent } from '@content/task2-guide';
 import { ArrowRight, ArrowLeft, CheckCircle, AlertTriangle, Lightbulb, BookOpen, Sparkles } from 'lucide-react';
 import styles from '@/styles/Guide.module.scss';
 
@@ -15,7 +15,7 @@ export default function Task2GuidePage() {
       {/* Back navigation */}
       <button onClick={() => router.push('/guide')} className={styles.backButton}>
         <ArrowLeft size={16} />
-        <span>Voltar ao Guia</span>
+        <span>Back to Guide</span>
       </button>
 
       <div className={styles.guideHeader}>

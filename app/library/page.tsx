@@ -15,13 +15,13 @@ export default function LibraryPage() {
   return (
     <div className={styles.libraryContainer}>
       <div className={styles.libraryHeader}>
-        <h2>Biblioteca de Recursos</h2>
-        <p>Frases úteis e estruturas para aumentar sua nota no CELPIP.</p>
+        <h2>Resource Library</h2>
+        <p>Useful phrases and structures to boost your CELPIP score.</p>
       </div>
 
       <div className={styles.libraryGrid}>
         <Section
-          title="Conectores de Sequência"
+          title="Sequence Connectors"
           items={[
             "First of all / Firstly / To begin with",
             "Secondly / Moreover / Furthermore",
@@ -30,11 +30,11 @@ export default function LibraryPage() {
           ]}
         />
         <Section
-          title="Task 1: Aberturas Formais"
+          title="Task 1: Formal Openings"
           items={[
             "Dear Mr. Smith,",
             "Dear Hiring Manager,",
-            "To Whom It May Concern, (somente se não souber o cargo)",
+            "To Whom It May Concern, (only if you don't know the title)",
             "Dear Resident,"
           ]}
         />
@@ -66,7 +66,7 @@ export default function LibraryPage() {
           ]}
         />
         <Section
-          title="Task 2: Conclusão"
+          title="Task 2: Conclusion"
           items={[
             "In conclusion, considering the reasons mentioned above...",
             "To summarize, I believe...",

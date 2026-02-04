@@ -24,13 +24,13 @@ export default function RegisterPage() {
 
     // Validation
     if (password !== confirmPassword) {
-      setError('As senhas não conferem');
+      setError('Passwords do not match');
       setLoading(false);
       return;
     }
 
     if (password.length < 6) {
-      setError('A senha deve ter pelo menos 6 caracteres');
+      setError('Password must be at least 6 characters');
       setLoading(false);
       return;
     }
@@ -45,13 +45,13 @@ export default function RegisterPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || 'Erro ao criar conta');
+        setError(data.error || 'Error creating account');
         return;
       }
 
       setSuccess(true);
     } catch {
-      setError('Erro ao criar conta. Tente novamente.');
+      setError('Error creating account. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -65,15 +65,15 @@ export default function RegisterPage() {
             <div className={styles.successIcon}>
               <CheckCircle size={48} />
             </div>
-            <h2>Conta criada com sucesso! 🎉</h2>
+            <h2>Account created successfully! 🎉</h2>
             <p>
-              Enviamos um email de verificação para <strong>{email}</strong>.
+              We sent a verification email to <strong>{email}</strong>.
             </p>
             <p>
-              Clique no link do email para ativar sua conta.
+              Click the link in the email to activate your account.
             </p>
             <Link href="/auth/login" className={styles.submitButton}>
-              Ir para Login
+              Go to Login
               <ArrowRight size={18} />
             </Link>
           </div>
@@ -86,8 +86,8 @@ export default function RegisterPage() {
     <div className={styles.authContainer}>
       <div className={styles.authCard}>
         <div className={styles.authHeader}>
-          <h1>Criar Conta</h1>
-          <p>Cadastre-se para salvar seu progresso</p>
+          <h1>Create Account</h1>
+          <p>Sign up to save your progress</p>
         </div>
 
         {error && (
@@ -99,13 +99,13 @@ export default function RegisterPage() {
 
         <form onSubmit={handleSubmit} className={styles.authForm}>
           <div className={styles.inputGroup}>
-            <label htmlFor="name">Nome</label>
+            <label htmlFor="name">Name</label>
             <div className={styles.inputWrapper}>
               <User size={18} />
               <input
                 id="name"
                 type="text"
-                placeholder="Seu nome"
+                placeholder="Your name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 disabled={loading}
@@ -120,7 +120,7 @@ export default function RegisterPage() {
               <input
                 id="email"
                 type="email"
-                placeholder="seu@email.com"
+                placeholder="your@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -130,13 +130,13 @@ export default function RegisterPage() {
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="password">Senha *</label>
+            <label htmlFor="password">Password *</label>
             <div className={styles.inputWrapper}>
               <Lock size={18} />
               <input
                 id="password"
                 type="password"
-                placeholder="Mínimo 6 caracteres"
+                placeholder="Minimum 6 characters"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -147,13 +147,13 @@ export default function RegisterPage() {
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="confirmPassword">Confirmar Senha *</label>
+            <label htmlFor="confirmPassword">Confirm Password *</label>
             <div className={styles.inputWrapper}>
               <Lock size={18} />
               <input
                 id="confirmPassword"
                 type="password"
-                placeholder="Digite a senha novamente"
+                placeholder="Enter password again"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
@@ -166,11 +166,11 @@ export default function RegisterPage() {
             {loading ? (
               <>
                 <Loader2 size={18} className={styles.spinner} />
-                Criando conta...
+                Creating account...
               </>
             ) : (
               <>
-                Criar Conta
+                Create Account
                 <ArrowRight size={18} />
               </>
             )}
@@ -179,8 +179,8 @@ export default function RegisterPage() {
 
         <div className={styles.authFooter}>
           <p>
-            Já tem uma conta?{' '}
-            <Link href="/auth/login">Fazer login</Link>
+            Already have an account?{' '}
+            <Link href="/auth/login">Sign in</Link>
           </p>
         </div>
       </div>

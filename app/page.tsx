@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, Sparkles, Zap, Target, Trophy, ChevronDown } from 'lucide-react';
+import { ArrowRight, Sparkles, Zap, Target, Trophy, ChevronDown, PenLine, Mic, BookOpen, Headphones } from 'lucide-react';
 import styles from '@/styles/Home.module.scss';
 
 export default function HomePage() {
@@ -46,50 +46,33 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <div className={styles.heroTag}>
             <Sparkles size={14} />
-            <span>Smart Training</span>
+            <span>CELPIP Preparation</span>
           </div>
           
           <h1 className={styles.heroTitle}>
-            <span className={styles.heroTitleLine1}>Master</span>
+            <span className={styles.heroTitleLine1}>Prepare for the</span>
             <span className={styles.heroTitleLine2}>CELPIP</span>
-            <span className={styles.heroTitleAccent}>Writing</span>
+            <span className={styles.heroTitleAccent}>Exam</span>
           </h1>
           
           <p className={styles.heroSubtitle}>
-            Practice with real-time feedback, professional templates 
-            and timed mock tests. Your approval starts here.
+            Practice with real exam-style questions, official timing, 
+            and AI-powered feedback to boost your score.
           </p>
-
-          <div className={styles.heroStats}>
-            <div className={styles.heroStat}>
-              <span className={styles.heroStatNumber}>43+</span>
-              <span className={styles.heroStatLabel}>Task 1 Prompts</span>
-            </div>
-            <div className={styles.heroStatDivider} />
-            <div className={styles.heroStat}>
-              <span className={styles.heroStatNumber}>32+</span>
-              <span className={styles.heroStatLabel}>Task 2 Prompts</span>
-            </div>
-            <div className={styles.heroStatDivider} />
-            <div className={styles.heroStat}>
-              <span className={styles.heroStatNumber}>∞</span>
-              <span className={styles.heroStatLabel}>Practices</span>
-            </div>
-          </div>
 
           <div className={styles.heroCTA}>
             <button 
               className={styles.ctaPrimary}
               onClick={() => router.push('/dashboard')}
             >
-              Start Now
+              Start Practicing Now
               <ArrowRight size={18} />
             </button>
             <button 
               className={styles.ctaSecondary}
               onClick={() => router.push('/guide')}
             >
-              View Complete Guide
+              View Study Guide
             </button>
           </div>
         </div>
@@ -100,11 +83,86 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Tasks Section */}
+      {/* Modules Overview Section */}
+      <section className={styles.modulesSection}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionTag}>Complete Preparation</span>
+          <h2 className={styles.sectionTitle}>All Four Skills</h2>
+        </div>
+
+        <div className={styles.modulesGrid}>
+          <article 
+            className={`${styles.moduleCard} ${styles.moduleActive}`}
+            onClick={() => router.push('/writing')}
+          >
+            <div className={styles.moduleIcon}>
+              <PenLine size={28} />
+            </div>
+            <h3 className={styles.moduleTitle}>Writing</h3>
+            <p className={styles.moduleDesc}>Real tasks · Timer · AI Feedback</p>
+            <div className={styles.moduleBadge}>Available</div>
+          </article>
+
+          <article 
+            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
+            onClick={() => router.push('/speaking')}
+          >
+            <div className={styles.moduleIcon}>
+              <Mic size={28} />
+            </div>
+            <h3 className={styles.moduleTitle}>Speaking</h3>
+            <p className={styles.moduleDesc}>Practice prompts · Recording</p>
+            <div className={styles.moduleBadge}>Coming Soon</div>
+          </article>
+
+          <article 
+            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
+            onClick={() => router.push('/reading')}
+          >
+            <div className={styles.moduleIcon}>
+              <BookOpen size={28} />
+            </div>
+            <h3 className={styles.moduleTitle}>Reading</h3>
+            <p className={styles.moduleDesc}>Exam-style questions</p>
+            <div className={styles.moduleBadge}>Coming Soon</div>
+          </article>
+
+          <article 
+            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
+            onClick={() => router.push('/listening')}
+          >
+            <div className={styles.moduleIcon}>
+              <Headphones size={28} />
+            </div>
+            <h3 className={styles.moduleTitle}>Listening</h3>
+            <p className={styles.moduleDesc}>Audio practice</p>
+            <div className={styles.moduleBadge}>Coming Soon</div>
+          </article>
+        </div>
+      </section>
+
+      {/* Writing Tasks Section */}
       <section className={styles.tasksSection}>
         <div className={styles.sectionHeader}>
-          <span className={styles.sectionTag}>Choose your practice</span>
+          <span className={styles.sectionTag}>Writing Module</span>
           <h2 className={styles.sectionTitle}>Two Tasks,<br />One Goal</h2>
+        </div>
+
+        <div className={styles.heroStats}>
+          <div className={styles.heroStat}>
+            <span className={styles.heroStatNumber}>43+</span>
+            <span className={styles.heroStatLabel}>Task 1 Prompts</span>
+          </div>
+          <div className={styles.heroStatDivider} />
+          <div className={styles.heroStat}>
+            <span className={styles.heroStatNumber}>32+</span>
+            <span className={styles.heroStatLabel}>Task 2 Prompts</span>
+          </div>
+          <div className={styles.heroStatDivider} />
+          <div className={styles.heroStat}>
+            <span className={styles.heroStatNumber}>∞</span>
+            <span className={styles.heroStatLabel}>Practices</span>
+          </div>
         </div>
 
         <div className={styles.tasksGrid}>
@@ -166,7 +224,7 @@ export default function HomePage() {
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>⚡</div>
             <h4>Smart Feedback</h4>
-            <p>Automatic analysis of structure, tone and grammar</p>
+            <p>AI-powered analysis of structure, tone and grammar</p>
           </div>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>⏱️</div>
@@ -190,7 +248,7 @@ export default function HomePage() {
       <section className={styles.bottomCTA}>
         <div className={styles.bottomCTAContent}>
           <h3>Ready to start?</h3>
-          <p>Your journey to master CELPIP Writing starts with one click.</p>
+          <p>Your journey to CELPIP success starts with one click.</p>
           <button 
             className={styles.ctaPrimary}
             onClick={() => router.push('/dashboard')}

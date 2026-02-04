@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { guideMainContent } from '@content/pt/guide-main';
+import { guideMainContent } from '@content/guide-main';
 import { ArrowRight, BookOpen, Lightbulb, CheckCircle, Mail, PenTool, Sparkles } from 'lucide-react';
 import styles from '@/styles/Guide.module.scss';
 
@@ -88,7 +88,7 @@ export default function GuidePage() {
       {/* CTA Section */}
       <div className={styles.guideCta}>
         <BookOpen size={24} />
-        <p>Escolha uma das tasks acima para começar a estudar!</p>
+        <p>Choose one of the tasks above to start studying!</p>
       </div>
     </div>
   );

@@ -90,10 +90,10 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
   };
 
   const loadDraft = (draft: Draft) => {
-    if (confirm(`Carregar "${draft.name}"? O conteúdo atual será substituído.`)) {
+    if (confirm(`Load "${draft.name}"? O conteúdo atual será substituído.`)) {
       onLoad(draft.data);
       setIsOpen(false);
-      setSaveMessage('✅ Carregado!');
+      setSaveMessage('✅ Loaded!');
       setTimeout(() => setSaveMessage(''), 2000);
     }
   };
@@ -139,10 +139,10 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
       <button 
         className={styles.saveBtn}
         onClick={handleQuickSave}
-        title="Salvar rascunho"
+        title="Save draft"
       >
         <Save size={16} />
-        {saveMessage || 'Salvar'}
+        {saveMessage || 'Save'}
       </button>
 
       {/* Load Button with Dropdown */}
@@ -150,10 +150,10 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
         <button 
           className={styles.loadBtn}
           onClick={() => setIsOpen(!isOpen)}
-          title="Carregar rascunho"
+          title="Load rascunho"
         >
           <FolderOpen size={16} />
-          <span>Carregar</span>
+          <span>Load</span>
           <ChevronDown size={14} className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`} />
         </button>
 
@@ -205,7 +205,7 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
         <div className={styles.modalOverlay} onClick={() => setShowSaveModal(false)}>
           <div className={styles.modal} onClick={e => e.stopPropagation()}>
             <div className={styles.modalHeader}>
-              <h3>Salvar Rascunho</h3>
+              <h3>Save Draft</h3>
               <button onClick={() => setShowSaveModal(false)}>
                 <X size={18} />
               </button>
@@ -222,10 +222,10 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
             </div>
             <div className={styles.modalFooter}>
               <button onClick={() => setShowSaveModal(false)} className={styles.cancelBtn}>
-                Cancelar
+                Cancel
               </button>
               <button onClick={() => saveDraft(draftName)} className={styles.confirmBtn}>
-                <Save size={16} /> Salvar
+                <Save size={16} /> Save
               </button>
             </div>
           </div>

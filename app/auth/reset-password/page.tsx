@@ -22,10 +22,10 @@ function ResetPasswordForm() {
         <div className={styles.errorIcon}>
           <XCircle size={48} />
         </div>
-        <h2>Link Inválido</h2>
-        <p>Este link de recuperação é inválido ou expirou.</p>
+        <h2>Invalid Link</h2>
+        <p>This recovery link is invalid or has expired.</p>
         <Link href="/auth/forgot-password" className={styles.submitButton}>
-          Solicitar Novo Link
+          Request New Link
           <ArrowRight size={18} />
         </Link>
       </div>
@@ -38,13 +38,13 @@ function ResetPasswordForm() {
     setError('');
 
     if (password !== confirmPassword) {
-      setError('As senhas não conferem');
+      setError('Passwords do not match');
       setLoading(false);
       return;
     }
 
     if (password.length < 6) {
-      setError('A senha deve ter pelo menos 6 caracteres');
+      setError('Password must be at least 6 characters');
       setLoading(false);
       return;
     }
@@ -59,13 +59,13 @@ function ResetPasswordForm() {
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || 'Erro ao redefinir senha');
+        setError(data.error || 'Error resetting password');
         return;
       }
 
       setSuccess(true);
     } catch {
-      setError('Erro ao redefinir senha. Tente novamente.');
+      setError('Error resetting password. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -77,10 +77,10 @@ function ResetPasswordForm() {
         <div className={styles.successIcon}>
           <CheckCircle size={48} />
         </div>
-        <h2>Senha Alterada! 🔐</h2>
-        <p>Sua senha foi redefinida com sucesso.</p>
+        <h2>Password Changed! 🔐</h2>
+        <p>Your password has been reset successfully.</p>
         <Link href="/auth/login" className={styles.submitButton}>
-          Fazer Login
+          Sign In
           <ArrowRight size={18} />
         </Link>
       </div>
@@ -90,8 +90,8 @@ function ResetPasswordForm() {
   return (
     <>
       <div className={styles.authHeader}>
-        <h1>Nova Senha</h1>
-        <p>Digite sua nova senha abaixo</p>
+        <h1>New Password</h1>
+        <p>Enter your new password below</p>
       </div>
 
       {error && (
@@ -103,13 +103,13 @@ function ResetPasswordForm() {
 
       <form onSubmit={handleSubmit} className={styles.authForm}>
         <div className={styles.inputGroup}>
-          <label htmlFor="password">Nova Senha</label>
+          <label htmlFor="password">New Password</label>
           <div className={styles.inputWrapper}>
             <Lock size={18} />
             <input
               id="password"
               type="password"
-              placeholder="Mínimo 6 caracteres"
+              placeholder="Minimum 6 characters"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -120,13 +120,13 @@ function ResetPasswordForm() {
         </div>
 
         <div className={styles.inputGroup}>
-          <label htmlFor="confirmPassword">Confirmar Nova Senha</label>
+          <label htmlFor="confirmPassword">Confirm New Password</label>
           <div className={styles.inputWrapper}>
             <Lock size={18} />
             <input
               id="confirmPassword"
               type="password"
-              placeholder="Digite a senha novamente"
+              placeholder="Enter password again"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
@@ -139,11 +139,11 @@ function ResetPasswordForm() {
           {loading ? (
             <>
               <Loader2 size={18} className={styles.spinner} />
-              Salvando...
+              Saving...
             </>
           ) : (
             <>
-              Salvar Nova Senha
+              Save New Password
               <ArrowRight size={18} />
             </>
           )}
