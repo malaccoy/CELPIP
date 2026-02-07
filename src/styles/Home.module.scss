@@ -1,34 +1,50 @@
-// Home.module.scss - Premium Dark Design
+// Home.module.scss - SuperDesign Pattern
+// Theme: Modern Dark (Vercel/Linear style)
+// Animations: fadeIn 400ms, hover 200ms, press 150ms
 
 // ============================================
-// 🎨 DESIGN TOKENS
+// 🎨 THEME (oklch colors)
 // ============================================
 
-$premium-bg: #0f1419;
-$premium-card: #1a1f2e;
-$premium-card-hover: #232938;
-$premium-accent: #8b5cf6;
-$premium-accent-light: #a78bfa;
-$premium-text: #f8fafc;
-$premium-text-muted: rgba(248, 250, 252, 0.6);
-$premium-text-dim: rgba(248, 250, 252, 0.4);
-$premium-border: rgba(139, 92, 246, 0.15);
-$premium-glow: rgba(139, 92, 246, 0.2);
+:root {
+  --home-bg: oklch(0.13 0.02 260);
+  --home-surface: oklch(0.18 0.02 260);
+  --home-surface-hover: oklch(0.22 0.02 260);
+  --home-border: oklch(0.25 0.02 260);
+  --home-text: oklch(0.95 0 0);
+  --home-text-muted: oklch(0.7 0 0);
+  --home-text-dim: oklch(0.5 0 0);
+  --home-accent: oklch(0.65 0.25 280);
+  --home-accent-light: oklch(0.75 0.2 280);
+  --home-glow: oklch(0.65 0.25 280 / 0.3);
+}
 
-$font-display: 'Playfair Display', Georgia, serif;
-$font-body: 'DM Sans', system-ui, sans-serif;
+// Skill colors
+$writing: oklch(0.65 0.2 160);
+$speaking: oklch(0.65 0.25 280);
+$reading: oklch(0.65 0.2 220);
+$listening: oklch(0.7 0.2 70);
 
-$ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+// Typography
+$font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+$font-display: 'Space Grotesk', system-ui, sans-serif;
+
+// Timing
+$ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 
 // ============================================
-// ✨ ANIMATIONS
+// 🎬 ANIMATIONS
+// fadeIn: 400ms ease-out [Y+20→0, α0→1]
+// slideIn: 350ms ease-out [X-100→0, α0→1]
+// hover: 200ms [Y0→-2, shadow↗]
+// press: 150ms [S1→0.98→1]
 // ============================================
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -36,150 +52,228 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 }
 
-@keyframes glow {
-  0%, 100% { box-shadow: 0 0 20px $premium-glow; }
-  50% { box-shadow: 0 0 35px $premium-glow, 0 0 50px rgba(139, 92, 246, 0.1); }
+@keyframes pulse {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 var(--home-glow);
+  }
+  50% { 
+    box-shadow: 0 0 24px 4px var(--home-glow);
+  }
 }
 
-// ============================================
-// 📱 CONTAINER
-// ============================================
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
 
-.premiumHome {
-  min-height: 100vh;
-  background: $premium-bg;
-  padding: 1rem 1rem 6rem;
-  
-  @media (min-width: 768px) {
-    padding: 2rem 2rem 4rem;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: brightness(1);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(1.2);
+    transform: scale(1.02);
   }
 }
 
 // ============================================
-// 🌟 HERO SECTION
+// 📱 LAYOUT
+// ============================================
+
+.home {
+  min-height: 100vh;
+  background: var(--home-bg);
+  padding: 1.5rem;
+  padding-bottom: 100px;
+
+  @media (min-width: 768px) {
+    padding: 2rem 3rem 4rem;
+  }
+}
+
+// ============================================
+// 🌟 HERO
 // ============================================
 
 .hero {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 3rem;
   text-align: center;
-  animation: fadeInUp 0.8s $ease-smooth;
 }
 
-.heroBadge {
+.heroContent {
+  animation: fadeInUp 600ms $ease-out;
+}
+
+.badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid $premium-border;
-  border-radius: 50px;
+  background: oklch(0.65 0.25 280 / 0.12);
+  border: 1px solid oklch(0.65 0.25 280 / 0.2);
+  border-radius: 100px;
   margin-bottom: 1.5rem;
   
   svg {
-    color: $premium-accent-light;
+    color: var(--home-accent-light);
   }
   
   span {
-    font-family: $font-body;
+    font-family: $font-sans;
     font-size: 0.8rem;
     font-weight: 600;
-    color: $premium-accent-light;
-    letter-spacing: 0.02em;
+    color: var(--home-accent-light);
+    letter-spacing: 0.01em;
   }
 }
 
-.heroTitle {
+.title {
   font-family: $font-display;
-  font-size: 2.75rem;
-  font-weight: 500;
-  color: $premium-text-muted;
-  line-height: 1.15;
-  margin-bottom: 1rem;
-  
-  @media (min-width: 768px) {
-    font-size: 3.5rem;
-  }
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  color: var(--home-text);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  letter-spacing: -0.03em;
 }
 
-.heroHighlight {
-  color: $premium-text;
-  font-weight: 600;
+.titleAccent {
+  display: inline;
+  background: linear-gradient(
+    90deg,
+    #a78bfa 0%,
+    #c4b5fd 25%,
+    #a78bfa 50%,
+    #8b5cf6 75%,
+    #a78bfa 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
 }
 
-.heroSubtitle {
-  font-family: $font-body;
-  font-size: 1rem;
-  color: $premium-text-dim;
-  max-width: 480px;
+.subtitle {
+  font-family: $font-sans;
+  font-size: 1.1rem;
+  color: var(--home-text-muted);
+  max-width: 520px;
   margin: 0 auto 2rem;
   line-height: 1.6;
 }
 
-// Stats Row
-.statsRow {
+// Feature Pills
+.features {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.statItem {
+.featurePill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: var(--home-surface);
+  border: 1px solid var(--home-border);
+  border-radius: 12px;
+  
+  svg {
+    color: var(--home-accent-light);
+    flex-shrink: 0;
+  }
+}
+
+.featureText {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
 }
 
-.statValue {
-  font-family: $font-display;
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: $premium-text;
+.featureLabel {
+  font-family: $font-sans;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--home-text);
 }
 
-.statLabel {
-  font-family: $font-body;
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: $premium-text-dim;
-  letter-spacing: 0.1em;
-}
-
-.statDivider {
-  width: 1px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+.featureDesc {
+  font-family: $font-sans;
+  font-size: 0.7rem;
+  color: var(--home-text-dim);
 }
 
 // CTA Button
-.ctaButton {
+.cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, $premium-accent, #7c3aed);
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--home-accent) 0%, oklch(0.55 0.25 290) 100%);
+  border: none;
   border-radius: 14px;
   text-decoration: none;
-  transition: all 0.3s $ease-bounce;
-  animation: glow 3s ease-in-out infinite;
+  cursor: pointer;
+  transition: all 200ms $ease-out;
+  animation: float 3s ease-in-out infinite, pulse 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    animation: shine 2.5s ease-in-out infinite;
+  }
   
   span {
-    font-family: $font-body;
+    font-family: $font-sans;
     font-size: 1rem;
     font-weight: 700;
     color: white;
+    position: relative;
+    z-index: 1;
   }
   
   svg {
     color: white;
-    transition: transform 0.3s $ease-bounce;
+    transition: transform 200ms $ease-bounce;
+    position: relative;
+    z-index: 1;
   }
   
   &:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.35);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 16px 40px var(--home-glow);
+    animation: none;
     
     svg {
       transform: translateX(4px);
@@ -187,7 +281,16 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   
   &:active {
-    transform: translateY(0) scale(0.98);
+    transform: translateY(-1px) scale(0.98);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
   }
 }
 
@@ -196,50 +299,32 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 // ============================================
 
 .skillsSection {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  animation: fadeInUp 0.8s $ease-smooth 0.2s both;
 }
 
-.sectionHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  margin-bottom: 0.5rem;
-}
-
-.sectionLabel {
-  font-family: $font-body;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: $premium-text-dim;
-  letter-spacing: 0.15em;
-}
-
-.sectionChevron {
-  color: $premium-text-dim;
-  animation: fadeInUp 0.5s ease 0.5s both;
-}
-
-.sectionTitle {
-  font-family: $font-display;
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: $premium-text;
-  margin: 0 0 0.5rem;
+.skillsHeader {
   text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInUp 600ms $ease-out 100ms both;
+  
+  h2 {
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--home-text);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  
+  p {
+    font-family: $font-sans;
+    font-size: 0.95rem;
+    color: var(--home-text-dim);
+    margin: 0;
+  }
 }
 
-.sectionSubtitle {
-  font-family: $font-body;
-  font-size: 0.9rem;
-  color: $premium-text-dim;
-  margin: 0 0 2rem;
-  text-align: center;
-}
-
-// Skills Grid
 .skillsGrid {
   display: grid;
   grid-template-columns: 1fr;
@@ -248,119 +333,141 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 900px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .skillCard {
   display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  background: $premium-card;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--home-surface);
+  border: 1px solid var(--home-border);
+  border-radius: 16px;
   text-decoration: none;
-  transition: all 0.4s $ease-smooth;
+  transition: all 200ms $ease-out;
+  animation: fadeInUp 400ms $ease-out var(--delay, 0ms) both;
+  cursor: pointer;
   
   &:hover {
-    background: $premium-card-hover;
-    border-color: var(--skill-color);
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: var(--home-surface-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px oklch(0 0 0 / 0.3);
     
-    .skillAction svg {
+    .skillArrow svg {
       transform: translateX(4px);
     }
   }
+  
+  &:active {
+    transform: translateY(-2px) scale(0.99);
+  }
 }
 
-.skillHeader {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.skillIconBox {
-  width: 52px;
-  height: 52px;
+.skillIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--skill-color);
+  width: 52px;
+  height: 52px;
   border-radius: 14px;
+  flex-shrink: 0;
   color: white;
-}
-
-.readyBadge {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.35rem 0.6rem;
-  background: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.25);
-  border-radius: 50px;
   
-  svg {
-    color: #22c55e;
+  &.writing {
+    background: linear-gradient(135deg, $writing 0%, oklch(0.55 0.2 170) 100%);
   }
   
-  span {
-    font-family: $font-body;
-    font-size: 0.6rem;
-    font-weight: 700;
-    color: #22c55e;
-    letter-spacing: 0.05em;
+  &.speaking {
+    background: linear-gradient(135deg, $speaking 0%, oklch(0.55 0.25 290) 100%);
+  }
+  
+  &.reading {
+    background: linear-gradient(135deg, $reading 0%, oklch(0.55 0.2 240) 100%);
+  }
+  
+  &.listening {
+    background: linear-gradient(135deg, $listening 0%, oklch(0.6 0.2 50) 100%);
   }
 }
 
-.skillTitle {
-  font-family: $font-body;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: $premium-text;
-  margin: 0 0 0.35rem;
-}
-
-.skillDesc {
-  font-family: $font-body;
-  font-size: 0.8rem;
-  color: $premium-text-muted;
-  margin: 0 0 1rem;
-  line-height: 1.5;
+.skillContent {
   flex: 1;
+  min-width: 0;
+  
+  h3 {
+    font-family: $font-display;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--home-text);
+    margin: 0 0 0.25rem;
+  }
+  
+  p {
+    font-family: $font-sans;
+    font-size: 0.85rem;
+    color: var(--home-text-muted);
+    margin: 0 0 0.5rem;
+    line-height: 1.4;
+  }
 }
 
-.skillTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
+.skillStats {
+  font-family: $font-sans;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--home-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.skillTag {
-  padding: 0.3rem 0.6rem;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 6px;
-  font-family: $font-body;
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: $premium-text-dim;
-}
-
-.skillAction {
+.skillArrow {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-family: $font-body;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--skill-color);
-  margin-top: auto;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: oklch(1 0 0 / 0.05);
+  border-radius: 10px;
+  color: var(--home-text-muted);
+  flex-shrink: 0;
   
   svg {
-    transition: transform 0.3s $ease-bounce;
+    transition: transform 200ms $ease-bounce;
   }
+}
+
+// ============================================
+// 📊 PROGRESS SECTION
+// ============================================
+
+.progressSection {
+  max-width: 500px;
+  margin: 3rem auto 0;
+  animation: fadeInUp 400ms $ease-out 400ms both;
+}
+
+.progressCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, oklch(0.7 0.2 40 / 0.1) 0%, oklch(0.6 0.2 30 / 0.05) 100%);
+  border: 1px solid oklch(0.7 0.2 40 / 0.2);
+  border-radius: 16px;
+  text-align: center;
+  
+  p {
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    color: var(--home-text-muted);
+    margin: 0;
+  }
+}
+
+.streakBadge {
+  font-family: $font-sans;
+  font-size: 1rem;
+  font-weight: 700;
+  color: oklch(0.75 0.2 50);
 }

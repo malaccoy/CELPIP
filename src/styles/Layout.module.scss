@@ -91,6 +91,21 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   color: $premium-text;
 }
 
+.logoAI {
+  background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 50%, #a78bfa 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-ai 3s linear infinite;
+  font-weight: 900;
+}
+
+@keyframes shimmer-ai {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
 .logoSubtext {
   font-family: $font-body;
   font-size: 0.6rem;

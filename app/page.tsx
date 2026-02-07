@@ -3,11 +3,36 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { 
-  Flame, ChevronRight, Sparkles, Star,
-  PenLine, Mic, BookOpen, Headphones,
-  Zap, Trophy, Check, ArrowRight
+  Sparkles, PenLine, Mic, BookOpen, Headphones,
+  ArrowRight, Zap, Target, TrendingUp
 } from 'lucide-react';
 import styles from '@/styles/Home.module.scss';
+
+/*
+┌─────────────────────────────────────────────────┐
+│              CELPIP Coach                       │
+│              Master All 4 Skills                │
+│                                                 │
+│   ┌─────┐  ┌─────┐  ┌─────┐                    │
+│   │ 4   │  │ AI  │  │ 12  │                    │
+│   │MOD  │  │FEED │  │SCORE│                    │
+│   └─────┘  └─────┘  └─────┘                    │
+│                                                 │
+│         [ Start Practicing → ]                  │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│  ┌──────────┐  ┌──────────┐                    │
+│  │ Writing  │  │ Speaking │                    │
+│  │ ✍️       │  │ 🎤       │                    │
+│  └──────────┘  └──────────┘                    │
+│                                                 │
+│  ┌──────────┐  ┌──────────┐                    │
+│  │ Reading  │  │Listening │                    │
+│  │ 📖       │  │ 🎧       │                    │
+│  └──────────┘  └──────────┘                    │
+│                                                 │
+└─────────────────────────────────────────────────┘
+*/
 
 interface DailyProgress {
   completed: number;
@@ -64,92 +89,97 @@ export default function HomePage() {
     {
       id: 'writing',
       title: 'Writing',
-      desc: 'Email & Survey tasks with AI feedback',
+      desc: 'Email & Survey responses with real-time AI feedback',
       icon: PenLine,
-      color: '#10b981',
-      tags: ['2 task types', 'AI scoring', '5+ tools'],
+      gradient: 'from-emerald-500 to-teal-600',
+      stats: '2 Tasks • AI Scoring',
       path: '/writing'
     },
     {
       id: 'speaking',
       title: 'Speaking',
-      desc: 'Record & get instant AI analysis',
+      desc: 'Record yourself and get instant pronunciation analysis',
       icon: Mic,
-      color: '#a855f7',
-      tags: ['8 parts', 'Whisper AI', 'Score 1-12'],
+      gradient: 'from-violet-500 to-purple-600',
+      stats: '8 Parts • Whisper AI',
       path: '/speaking'
     },
     {
       id: 'reading',
       title: 'Reading',
-      desc: 'Practice with real exam passages',
+      desc: 'Timed passages with authentic exam-style questions',
       icon: BookOpen,
-      color: '#06b6d4',
-      tags: ['4 parts', '38+ questions', 'Timed'],
+      gradient: 'from-cyan-500 to-blue-600',
+      stats: '4 Parts • 38 Questions',
       path: '/reading'
     },
     {
       id: 'listening',
       title: 'Listening',
-      desc: 'Audio plays once - like the real test',
+      desc: 'One-play audio — just like the real CELPIP test',
       icon: Headphones,
-      color: '#f59e0b',
-      tags: ['6 parts', 'TTS audio', 'One-play'],
+      gradient: 'from-amber-500 to-orange-600',
+      stats: '6 Parts • TTS Audio',
       path: '/listening'
     }
   ];
 
+  const features = [
+    { icon: Target, label: '4 Modules', desc: 'Complete coverage' },
+    { icon: Zap, label: 'AI Powered', desc: 'Smart feedback' },
+    { icon: TrendingUp, label: 'Score 1-12', desc: 'CELPIP scale' },
+  ];
+
   return (
-    <div className={styles.premiumHome}>
-      {/* Hero Section */}
+    <main className={styles.home}>
+      {/* Hero */}
       <section className={styles.hero}>
-        <div className={styles.heroBadge}>
-          <Sparkles size={14} />
-          <span>Complete CELPIP Prep</span>
-        </div>
-        
-        <h1 className={styles.heroTitle}>
-          Master All<br />
-          <span className={styles.heroHighlight}>4 Skills</span>
-        </h1>
-        
-        <p className={styles.heroSubtitle}>
-          Writing, Speaking, Reading & Listening — practice with AI feedback and real exam conditions.
-        </p>
+        <div className={styles.heroContent}>
+          {/* Badge */}
+          <div className={styles.badge}>
+            <Sparkles size={14} />
+            <span>Complete CELPIP Preparation</span>
+          </div>
 
-        {/* Stats Row */}
-        <div className={styles.statsRow}>
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>4</span>
-            <span className={styles.statLabel}>MODULES</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>22</span>
-            <span className={styles.statLabel}>PARTS</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>AI</span>
-            <span className={styles.statLabel}>POWERED</span>
-          </div>
-        </div>
+          {/* Title */}
+          <h1 className={styles.title}>
+            Master All
+            <span className={styles.titleAccent}> 4 Skills</span>
+          </h1>
 
-        {/* CTA Button */}
-        <Link href="/writing/task-1" className={styles.ctaButton}>
-          <span>Start Practicing</span>
-          <ArrowRight size={20} />
-        </Link>
+          {/* Subtitle */}
+          <p className={styles.subtitle}>
+            Practice Writing, Speaking, Reading & Listening with AI-powered feedback. 
+            Built to match real exam conditions.
+          </p>
+
+          {/* Feature Pills */}
+          <div className={styles.features}>
+            {features.map((feature, i) => (
+              <div key={i} className={styles.featurePill}>
+                <feature.icon size={16} />
+                <div className={styles.featureText}>
+                  <span className={styles.featureLabel}>{feature.label}</span>
+                  <span className={styles.featureDesc}>{feature.desc}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <Link href="/writing/task-1" className={styles.cta}>
+            <span>Start Practicing</span>
+            <ArrowRight size={20} />
+          </Link>
+        </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills Grid */}
       <section className={styles.skillsSection}>
-        <div className={styles.sectionHeader}>
-          <span className={styles.sectionLabel}>EXPLORE</span>
-          <ChevronRight size={14} className={styles.sectionChevron} />
+        <div className={styles.skillsHeader}>
+          <h2>Choose Your Focus</h2>
+          <p>All modules unlocked. Start anywhere you want.</p>
         </div>
-        <h2 className={styles.sectionTitle}>Choose Your Skill</h2>
-        <p className={styles.sectionSubtitle}>All modules available. Start anywhere.</p>
 
         <div className={styles.skillsGrid}>
           {skills.map((skill, index) => {
@@ -159,36 +189,38 @@ export default function HomePage() {
                 key={skill.id}
                 href={skill.path}
                 className={styles.skillCard}
-                style={{ '--skill-color': skill.color, '--delay': `${index * 0.1}s` } as React.CSSProperties}
+                style={{ '--delay': `${index * 80}ms` } as React.CSSProperties}
               >
-                <div className={styles.skillHeader}>
-                  <div className={styles.skillIconBox}>
-                    <IconComponent size={22} />
-                  </div>
-                  <div className={styles.readyBadge}>
-                    <Check size={12} />
-                    <span>READY</span>
-                  </div>
+                <div className={`${styles.skillIcon} ${styles[skill.id]}`}>
+                  <IconComponent size={24} strokeWidth={2} />
                 </div>
                 
-                <h3 className={styles.skillTitle}>{skill.title}</h3>
-                <p className={styles.skillDesc}>{skill.desc}</p>
-                
-                <div className={styles.skillTags}>
-                  {skill.tags.map((tag, i) => (
-                    <span key={i} className={styles.skillTag}>{tag}</span>
-                  ))}
+                <div className={styles.skillContent}>
+                  <h3>{skill.title}</h3>
+                  <p>{skill.desc}</p>
+                  <span className={styles.skillStats}>{skill.stats}</span>
                 </div>
-                
-                <div className={styles.skillAction}>
-                  <span>Practice Now</span>
-                  <ArrowRight size={16} />
+
+                <div className={styles.skillArrow}>
+                  <ArrowRight size={18} />
                 </div>
               </Link>
             );
           })}
         </div>
       </section>
-    </div>
+
+      {/* Daily Progress (if has activity) */}
+      {mounted && dailyProgress.streak > 0 && (
+        <section className={styles.progressSection}>
+          <div className={styles.progressCard}>
+            <div className={styles.streakBadge}>
+              🔥 {dailyProgress.streak} day streak
+            </div>
+            <p>Keep practicing daily to maintain your streak!</p>
+          </div>
+        </section>
+      )}
+    </main>
   );
 }

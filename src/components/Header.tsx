@@ -3,9 +3,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { LayoutDashboard, PenTool, BookOpen, Home, Headphones, Mic, User, LogOut, ChevronDown } from 'lucide-react';
+import { Home, Dumbbell, User, LogOut, ChevronDown } from 'lucide-react';
 import { useUser } from '@/hooks/useUser';
 import { createClient } from '@/lib/supabase/client';
+import { Logo } from '@/components/Logo';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -16,11 +17,8 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
-  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/writing', icon: PenTool, label: 'Writing' },
-  { to: '/listening', icon: Headphones, label: 'Listening' },
-  { to: '/reading', icon: BookOpen, label: 'Reading' },
-  { to: '/speaking', icon: Mic, label: 'Speaking' },
+  { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/profile', icon: User, label: 'Profile' },
 ];
 
 export const Header: React.FC = () => {
@@ -83,10 +81,9 @@ export const Header: React.FC = () => {
       <div className={styles.headerContent}>
         <div className={styles.headerLogo}>
           <Link href="/" className={styles.logoLink}>
-            <div className={styles.logoIcon}>✍️</div>
+            <Logo size={42} />
             <div className={styles.logoTextWrapper}>
-              <span className={styles.logoText}>CELPIP Coach</span>
-              <span className={styles.logoSubtext}>Writing Mastery MVP</span>
+              <span className={styles.logoText}>CELPIP <span className={styles.logoAI}>AI</span> Coach</span>
             </div>
           </Link>
         </div>

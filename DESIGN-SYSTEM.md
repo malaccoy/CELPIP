@@ -283,12 +283,109 @@ $transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
 ---
 
-## 🚀 Checklist Nova Página
+---
 
-- [ ] Background gradient aplicado
-- [ ] Ambient orbs (opcional)
-- [ ] Fonte Space Grotesk nos títulos
-- [ ] Animação de entrada (fadeInUp)
-- [ ] Cards com hover effect
-- [ ] Botões com sombra e hover lift
-- [ ] Testado no mobile
+## ♿ Accessibility (CRITICAL)
+
+| Regra | Requisito |
+|-------|-----------|
+| `color-contrast` | Mínimo 4.5:1 para texto normal |
+| `focus-states` | Focus rings visíveis em elementos interativos |
+| `alt-text` | Alt text descritivo para imagens |
+| `aria-labels` | aria-label para botões só com ícone |
+| `keyboard-nav` | Tab order igual à ordem visual |
+| `form-labels` | Label com `for` attribute |
+
+---
+
+## 👆 Touch & Interaction (CRITICAL)
+
+| Regra | Requisito |
+|-------|-----------|
+| `touch-target-size` | Mínimo **44x44px** touch targets |
+| `cursor-pointer` | Adicionar `cursor: pointer` em **todos** clickables |
+| `loading-buttons` | Desabilitar botão durante operações async |
+| `error-feedback` | Mensagens de erro claras perto do problema |
+| `hover-feedback` | Feedback visual (cor, sombra, borda) no hover |
+
+---
+
+## ⚡ Performance (HIGH)
+
+| Regra | Requisito |
+|-------|-----------|
+| `image-optimization` | WebP, srcset, lazy loading |
+| `reduced-motion` | Checar `prefers-reduced-motion` |
+| `content-jumping` | Reservar espaço para conteúdo async |
+| `transform-performance` | Usar transform/opacity, não width/height |
+
+---
+
+## 📐 Layout & Responsive (HIGH)
+
+| Regra | Requisito |
+|-------|-----------|
+| `viewport-meta` | `width=device-width initial-scale=1` |
+| `readable-font-size` | Mínimo **16px** body text no mobile |
+| `horizontal-scroll` | Garantir conteúdo cabe na viewport |
+| `z-index-management` | Escala definida: 10, 20, 30, 50 |
+| `line-length` | Limitar a 65-75 caracteres por linha |
+| `line-height` | Usar 1.5-1.75 para body text |
+
+---
+
+## 🎭 Animation (MEDIUM)
+
+| Regra | Requisito |
+|-------|-----------|
+| `duration-timing` | **150-300ms** para micro-interactions |
+| `transform-performance` | Usar transform/opacity, não width/height |
+| `loading-states` | Skeleton screens ou spinners |
+| `stable-hover` | Usar color/opacity transitions, não scale que desloca layout |
+
+---
+
+## 🚫 Anti-Patterns (Evitar!)
+
+| ❌ Don't | ✅ Do |
+|---------|-------|
+| Emojis como ícones (🎨 🚀 ⚙️) | SVG icons (Lucide, Heroicons) |
+| Scale transforms no hover que deslocam | Color/opacity transitions |
+| Cursor default em elementos clicáveis | `cursor-pointer` em tudo interativo |
+| Tamanhos de ícone inconsistentes | viewBox fixo (24x24) com tamanho uniforme |
+| Transições instantâneas ou >500ms | 150-300ms com easing |
+| `bg-white/10` em light mode | `bg-white/80` ou mais opaco |
+| Texto cinza claro em light mode | slate-900 para texto, slate-600 mínimo para muted |
+
+---
+
+## 🚀 Pre-Delivery Checklist
+
+### Visual Quality
+- [ ] No emojis como ícones (usar SVG)
+- [ ] Ícones do mesmo set (Lucide)
+- [ ] Hover states não causam layout shift
+- [ ] Cores do tema usadas diretamente
+
+### Interaction
+- [ ] Todos clickables têm `cursor-pointer`
+- [ ] Hover states dão feedback visual
+- [ ] Transitions suaves (150-300ms)
+- [ ] Focus states visíveis para keyboard nav
+
+### Dark Mode
+- [ ] Texto com contraste suficiente (4.5:1+)
+- [ ] Bordas visíveis
+- [ ] Testado antes de entregar
+
+### Layout
+- [ ] Elementos fixos têm spacing das bordas
+- [ ] Conteúdo não escondido atrás de navbars fixas
+- [ ] Responsive em 375px, 768px, 1024px, 1440px
+- [ ] Sem scroll horizontal no mobile
+
+### Accessibility
+- [ ] Todas imagens têm alt text
+- [ ] Inputs têm labels
+- [ ] Cor não é o único indicador
+- [ ] `prefers-reduced-motion` respeitado
