@@ -1,330 +1,10 @@
-// WritingHub.module.scss
-.writingHubContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  animation: fadeIn 0.3s ease;
-}
+// WritingHub.module.scss - Premium Design with Animations
 
-.hubHeader {
-  margin-bottom: 3rem;
-}
-
-.hubHeaderContent {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.hubIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  background: linear-gradient(135deg, #10b981, #059669);
-  border-radius: 18px;
-  color: white;
-  flex-shrink: 0;
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
-}
-
-.hubInfo {
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin: 0 0 0.5rem 0;
-    background: linear-gradient(135deg, #10b981, #059669);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  p {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin: 0;
-  }
-}
-
-.tasksGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.taskCard {
-  position: relative;
-  padding: 2.5rem;
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  overflow: hidden;
-
-  &:hover {
-    border-color: var(--task-color);
-    transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
-
-    .taskCardGlow {
-      opacity: 1;
-    }
-
-    .taskCardButton {
-      background: var(--task-color);
-      transform: translateX(4px);
-    }
-
-    .taskCardNumber {
-      color: var(--task-color);
-    }
-  }
-}
-
-.taskCardNumber {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 4rem;
-  font-weight: 900;
-  color: var(--border-color);
-  line-height: 1;
-  transition: all 0.3s ease;
-}
-
-.taskCardHeader {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.taskIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  background: var(--task-color);
-  border-radius: 18px;
-  color: white;
-  flex-shrink: 0;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-.taskInfo {
-  flex: 1;
-
-  h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin: 0 0 0.75rem 0;
-    color: var(--text-primary);
-  }
-
-  p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin: 0;
-    line-height: 1.6;
-  }
-}
-
-.taskMeta {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.metaItem {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
-  background: var(--input-bg);
-  border-radius: 10px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-
-  svg {
-    color: var(--task-color);
-  }
-}
-
-.featuresList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-
-.featureItem {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-}
-
-.featureDot {
-  width: 6px;
-  height: 6px;
-  background: var(--task-color);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.taskCardButton {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 1.25rem;
-  background: var(--task-color);
-  color: white;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  svg {
-    transition: transform 0.3s ease;
-  }
-}
-
-.taskCardGlow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, var(--task-color) 0%, transparent 70%);
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  filter: blur(60px);
-}
-
-// Game Banner
-.gameBanner {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1.5rem 2rem;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.15));
-  border: 2px solid rgba(139, 92, 246, 0.3);
-  border-radius: 16px;
-  margin-bottom: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    border-color: rgba(139, 92, 246, 0.5);
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(99, 102, 241, 0.2));
-    
-    .gameBannerArrow {
-      transform: translateX(4px);
-    }
-  }
-}
-
-.gameBannerIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
-  border-radius: 14px;
-  color: white;
-  flex-shrink: 0;
-}
-
-.gameBannerContent {
-  flex: 1;
-
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 0 0.25rem 0;
-    color: var(--text-primary);
-  }
-
-  p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin: 0;
-  }
-}
-
-.gameBannerArrow {
-  color: #8b5cf6;
-  transition: transform 0.2s ease;
-}
-
-.tipsSection {
-  padding: 2rem;
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 16px;
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 0 1.5rem 0;
-    color: var(--text-primary);
-  }
-}
-
-.tipsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.tipCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.75rem;
-  padding: 1.5rem;
-  background: var(--input-bg);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.tipEmoji {
-  font-size: 2rem;
-}
-
-.tipCard p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-
-  strong {
-    color: var(--text-primary);
-  }
-}
-
-@keyframes fadeIn {
+// Keyframes
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -332,39 +12,661 @@
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .writingHubContainer {
-    padding: 1rem;
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.4); }
+}
+
+.writingHubContainer {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0f1a 0%, #0f172a 25%, #1a1f3a 50%, #0f172a 75%, #0a0f1a 100%);
+  padding: 1.5rem 1rem 3rem;
+  position: relative;
+  overflow: hidden;
+
+  // Ambient glow orbs (subtle, no noise)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 8s ease-in-out infinite;
   }
 
-  .hubHeaderContent {
-    flex-direction: column;
-    text-align: center;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: -20%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 10s ease-in-out infinite 2s;
+  }
+}
+
+// Header with staggered animation
+.hubHeader {
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.6s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.hubHeaderContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.hubIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  border-radius: 18px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 
+    0 8px 24px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  animation: glowPulse 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(-5deg) scale(1.05);
+  }
+}
+
+.hubInfo {
+  flex: 1;
+  
+  h1 {
+    font-family: 'Space Grotesk', 'SF Pro Display', system-ui, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.hubSubtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+// Step Sections with stagger
+.stepSection {
+  margin-bottom: 2.25rem;
+  position: relative;
+  z-index: 1;
+
+  &:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out 0.1s both;
+  }
+
+  &:nth-child(3) {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+  }
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.1rem;
+  padding-left: 0.25rem;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.8rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.stepLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: -0.01em;
+}
+
+// Prep Cards (Step 1) with hover animations
+.prepCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  // Shimmer effect on hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateX(6px);
+    box-shadow: 
+      0 4px 16px rgba(0, 0, 0, 0.2),
+      0 0 0 1px rgba(99, 102, 241, 0.1);
+    
+    &::before {
+      left: 100%;
+    }
+
+    .prepCardIcon {
+      transform: scale(1.08);
+      background: rgba(99, 102, 241, 0.25);
+    }
+    
+    .prepCardAction {
+      color: #a5b4fc;
+      transform: translateX(3px);
+    }
+  }
+
+  // Staggered animation
+  &:nth-child(2) {
+    animation: fadeInUp 0.5s ease-out 0.15s both;
+  }
+
+  &:nth-child(3) {
+    animation: fadeInUp 0.5s ease-out 0.25s both;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Guide Card (Mastery Guide - highlighted)
+.guideCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.08));
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 16px;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease-out 0.05s both;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.08),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.22), rgba(99, 102, 241, 0.12));
+    border-color: rgba(139, 92, 246, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 
+      0 8px 24px rgba(139, 92, 246, 0.25),
+      0 0 0 1px rgba(139, 92, 246, 0.2);
+    
+    &::before {
+      left: 100%;
+    }
+
+    .guideCardIcon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+  }
+}
+
+.guideCardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  border-radius: 14px;
+  color: white;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.35);
+}
+
+.guideCardContent {
+  flex: 1;
+  min-width: 0;
+
+  h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+.guideCardBadge {
+  span {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+  }
+}
+
+.prepCardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(99, 102, 241, 0.12);
+  border-radius: 14px;
+  color: #a5b4fc;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+.prepCardContent {
+  flex: 1;
+  min-width: 0;
+
+  h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 0.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+  }
+}
+
+.prepCardAction {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+// Exam Cards (Step 2) - Premium style with depth
+.examCard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.6rem;
+  margin-bottom: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  // Gradient border effect
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 185, 129, 0) 0%,
+      rgba(16, 185, 129, 0.3) 50%,
+      rgba(16, 185, 129, 0) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(16, 185, 129, 0.05) 100%
+    );
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 60px rgba(16, 185, 129, 0.1);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .examCardIcon {
+      transform: scale(1.08) rotate(-3deg);
+      box-shadow: 0 12px 28px rgba(16, 185, 129, 0.4);
+    }
+
+    .examCardCta {
+      background: linear-gradient(135deg, #10b981, #059669);
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+      transform: translateX(4px);
+    }
+  }
+
+  // Staggered animation
+  &:nth-child(2) {
+    animation: fadeInScale 0.6s ease-out 0.3s both;
+  }
+
+  &:nth-child(3) {
+    animation: fadeInScale 0.6s ease-out 0.4s both;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.examCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.examCardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  border-radius: 16px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 
+    0 8px 20px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.examCardTitle {
+  flex: 1;
+
+  h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+}
+
+.taskBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #34d399;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.examCardDesc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  margin: 0 0 1.1rem;
+}
+
+.examCardMeta {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.35rem;
+}
+
+.metaChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+
+  svg {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+.examCardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.4rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34d399;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Guide Link with subtle animation
+.guideLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.1rem;
+  margin-top: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-style: solid;
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+
+    svg:last-child {
+      transform: translateX(4px);
+    }
+  }
+
+  svg:last-child {
+    transition: transform 0.3s ease;
+  }
+}
+
+// Responsive
+@media (min-width: 640px) {
+  .writingHubContainer {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
   }
 
   .hubInfo h1 {
     font-size: 2rem;
   }
 
-  .tasksGrid {
-    grid-template-columns: 1fr;
+  .hubIcon {
+    width: 64px;
+    height: 64px;
   }
 
-  .taskCard {
-    padding: 2rem;
+  .prepCard {
+    padding: 1.3rem 1.6rem;
   }
 
-  .taskCardNumber {
-    font-size: 3rem;
+  .examCard {
+    padding: 1.9rem;
   }
 
-  .taskMeta {
-    flex-direction: column;
-    gap: 0.75rem;
+  .examCardIcon {
+    width: 60px;
+    height: 60px;
   }
+}
 
-  .tipsGrid {
-    grid-template-columns: 1fr;
-  }
+// Legacy classes (keep for compatibility)
+.tasksGrid,
+.gameBanner,
+.gameBannerIcon,
+.gameBannerContent,
+.gameBannerArrow,
+.startersBanner,
+.startersBannerIcon,
+.startersBannerContent,
+.startersBannerBadge,
+.startersBannerArrow,
+.tipsSection,
+.tipsGrid,
+.tipCard,
+.tipEmoji,
+.taskCard,
+.taskCardNumber,
+.taskCardHeader,
+.taskIcon,
+.taskInfo,
+.taskMeta,
+.metaItem,
+.featuresList,
+.featureItem,
+.featureDot,
+.taskCardButton,
+.taskCardGlow {
+  display: none;
 }

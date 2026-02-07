@@ -19,6 +19,8 @@ import {
 import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
+import AIFeedback from '@/components/AIFeedback';
+import SentenceFeedback from '@/components/SentenceFeedback';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -767,6 +769,22 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   className={styles.writingTextareaContainer}
                   minHeight="350px"
                 />
+
+                {/* AI Score & Make It Real */}
+                <div className={styles.aiFeedbackSection}>
+                  <AIFeedback 
+                    task="task1" 
+                    text={state.content}
+                    onApplySuggestion={(original, replacement) => {
+                      const newContent = state.content.replace(original, replacement);
+                      updateState('content', newContent);
+                    }}
+                  />
+                  <SentenceFeedback 
+                    task="task1" 
+                    text={state.content}
+                  />
+                </div>
                 
                 {transferMessage && (
                   <div className={styles.transferMessage}>
@@ -784,54 +802,11 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   <button className={styles.btnEvaluate} onClick={handleEvaluate}>
                     <RefreshCw size={16} /> Quick Checklist
                   </button>
-                  <button 
-                    className={styles.btnAIEvaluate} 
-                    onClick={handleAIEvaluate}
-                    disabled={aiLoading || wordCount < 50}
-                  >
-                    <Sparkles size={16} /> {aiLoading ? 'Analyzing...' : 'AI Evaluation'}
-                  </button>
                 </div>
               </div>
 
-              {/* AI Evaluation Error */}
-              {aiError && (
-                <div className={styles.aiErrorBox}>
-                  <AlertCircle size={18} />
-                  <span>{aiError}</span>
-                  <button onClick={() => setAiError(null)}>×</button>
-                </div>
-              )}
-
-              {/* AI Evaluation Loading */}
-              {aiLoading && (
-                <div className={styles.aiLoadingPanel}>
-                  <AIEvaluationLoading />
-                </div>
-              )}
-
-              {/* AI Evaluation Result */}
-              {aiEvaluation && !aiLoading && (
-                <div className={styles.aiResultPanel}>
-                  <div className={styles.aiResultHeader}>
-                    <Bot size={20} />
-                    <h3>AI Evaluation</h3>
-                    <button 
-                      className={styles.aiResultClose}
-                      onClick={() => setAiEvaluation(null)}
-                    >
-                      ×
-                    </button>
-                  </div>
-                  <AIEvaluationResult 
-                    evaluation={aiEvaluation} 
-                    originalText={state.content}
-                  />
-                </div>
-              )}
-
               {/* Feedback Panel (Quick Checklist) */}
-              {feedback.length > 0 && !aiEvaluation && (
+              {feedback.length > 0 && (
                 <div className={styles.feedbackPanel}>
                   <div className={styles.feedbackHeader}>
                     <MessageSquare size={20} />
@@ -854,7 +829,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
             {/* Navigation */}
             <div className={styles.stepNav}>
               <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Back ao Planejamento
+                <ArrowLeft size={18} /> Back to Planning
               </button>
               <button className={styles.btnFinish}>
                 <CheckCircle size={18} /> Finish

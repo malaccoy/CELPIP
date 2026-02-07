@@ -1,0 +1,908 @@
+// Profile.module.scss - Unified Design System with CSS Variables
+@use 'design-system' as ds;
+
+.container {
+  min-height: 100vh;
+  padding: 1.5rem 1rem 6rem;
+  background: var(--bg-deep);
+  position: relative;
+  overflow-x: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background: radial-gradient(ellipse at 50% 0%, rgba(139, 92, 246, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+}
+
+// Header
+.header {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  cursor: pointer;
+  transition: all ds.$transition-smooth;
+  
+  &:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-border);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--accent-primary);
+  border-radius: ds.$radius-md;
+  color: white;
+  flex-shrink: 0;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+.profileInfo {
+  flex: 1;
+  
+  h1 {
+    font-family: ds.$font-display;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.2rem;
+  }
+  
+  p {
+    font-family: ds.$font-body;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+}
+
+.chevron {
+  color: var(--text-dim);
+}
+
+// Tabs
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: var(--bg-secondary);
+  border-radius: ds.$radius-lg;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all ds.$transition-base;
+  
+  svg {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+  
+  &:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  &.active {
+    background: var(--accent-bg);
+    color: var(--accent-primary-light);
+    border: 1px solid var(--accent-border);
+    
+    svg {
+      color: var(--accent-primary-light);
+    }
+  }
+}
+
+// Progress Tab
+.progressTab {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+// Stats Grid
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  transition: all ds.$transition-smooth;
+  
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-border);
+  }
+  
+  &.blue .statIcon { 
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa; 
+  }
+  
+  &.orange .statIcon { 
+    background: rgba(251, 146, 60, 0.15);
+    color: #fb923c; 
+  }
+  
+  &.red .statIcon { 
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171; 
+  }
+  
+  &.green .statIcon { 
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80; 
+  }
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: var(--accent-bg);
+  border-radius: ds.$radius-md;
+  flex-shrink: 0;
+  color: var(--accent-primary-light);
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-family: ds.$font-display;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-family: ds.$font-body;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// Weekly Section
+.weeklySection {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.1s both;
+  transition: all ds.$transition-smooth;
+  
+  &:hover {
+    border-color: var(--border-hover);
+  }
+  
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: ds.$font-body;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 1.25rem;
+    
+    svg {
+      color: var(--accent-primary-light);
+    }
+  }
+}
+
+.weeklyChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  gap: 0.5rem;
+}
+
+.dayColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.barContainer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bar {
+  width: 80%;
+  max-width: 30px;
+  min-height: 8px;
+  background: linear-gradient(to top, var(--accent-primary), #c4b5fd);
+  border-radius: 4px;
+  transition: height 0.5s ease;
+}
+
+.dayLabel {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.countLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+// Score Section
+.scoreSection {
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.2s both;
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+}
+
+.scoreCard {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-xl;
+  padding: 2rem;
+  text-align: center;
+}
+
+.scoreCircle {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 4px solid;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
+
+.scoreValue {
+  font-family: ds.$font-display;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.scoreMax {
+  font-size: 1.25rem;
+  color: var(--text-dim);
+}
+
+.scoreLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.scoreDisclaimer {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+// Radar Section (Skills Grid)
+.radarSection {
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.3s both;
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+  }
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  text-decoration: none;
+  transition: all ds.$transition-smooth;
+  
+  &:hover {
+    background: var(--bg-card-hover);
+    transform: translateY(-3px);
+    border-color: var(--skill-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.skillIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--skill-color);
+  border-radius: ds.$radius-md;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.skillInfo {
+  text-align: center;
+  margin-bottom: 0.35rem;
+}
+
+.skillName {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.skillScore {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.skillPractices {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+// Achievements Tab
+.achievementsTab {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.achievementsSummary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: ds.$radius-lg;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth;
+  
+  svg {
+    color: var(--accent-primary-light);
+  }
+  
+  span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-primary-light);
+  }
+}
+
+.achievementsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.achievementCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  animation: slideIn 0.4s ds.$ease-smooth;
+  animation-fill-mode: both;
+  
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.05}s;
+    }
+  }
+  
+  &.unlocked {
+    background: linear-gradient(135deg, var(--accent-bg), rgba(139, 92, 246, 0.02));
+    border-color: var(--accent-border);
+  }
+  
+  &.locked {
+    opacity: 0.5;
+  }
+}
+
+.achievementIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: ds.$radius-md;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  
+  .locked & {
+    color: var(--text-dim);
+  }
+}
+
+.achievementInfo {
+  flex: 1;
+  
+  h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.2rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+}
+
+// Goals Tab
+.goalsTab {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.dailyGoalSection {
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth;
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+}
+
+.goalCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-xl;
+}
+
+.goalRing {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 1rem;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+.goalBg {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.goalProgress {
+  stroke: var(--accent-primary);
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.goalText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goalCurrent {
+  font-family: ds.$font-display;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.goalTarget {
+  font-size: 1.25rem;
+  color: var(--text-dim);
+}
+
+.goalLabel {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.quickActions {
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.1s both;
+  
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+  }
+}
+
+.actionButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  font-family: ds.$font-body;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ds.$transition-smooth;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+}
+
+.suggestedSection {
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.2s both;
+  
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+    
+    svg {
+      color: var(--accent-primary-light);
+    }
+  }
+}
+
+.suggestionCard {
+  background: linear-gradient(145deg, var(--accent-bg), rgba(139, 92, 246, 0.02));
+  border: 1px solid var(--accent-border);
+  border-radius: ds.$radius-lg;
+  padding: 1.5rem;
+  
+  p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    
+    strong {
+      color: var(--accent-primary-light);
+    }
+  }
+}
+
+.suggestionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  border: none;
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-display;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ds.$transition-bounce;
+  box-shadow: var(--shadow-glow);
+  
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+  }
+}
+
+// ============================================
+// ⚙️ SETTINGS TAB
+// ============================================
+
+.settingsTab {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.settingsSection {
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth;
+  
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: ds.$font-body;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem;
+    
+    svg {
+      color: var(--accent-primary-light);
+    }
+  }
+}
+
+.settingsCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  padding: 1.25rem;
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  
+  &:first-child {
+    padding-top: 0;
+  }
+  
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.settingsInfo {
+  flex: 1;
+  
+  h3 {
+    font-family: ds.$font-body;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.2rem;
+  }
+  
+  p {
+    font-family: ds.$font-body;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+}
+
+.themeSwitcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.themeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all ds.$transition-base;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+  }
+  
+  &.active {
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    color: var(--accent-primary-light);
+  }
+}
+
+.dataInfo {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: ds.$radius-md;
+  margin-bottom: 1rem;
+  
+  p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-primary-light);
+  cursor: pointer;
+  transition: all ds.$transition-base;
+  
+  &:hover {
+    background: rgba(139, 92, 246, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+.dangerBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f87171;
+  cursor: pointer;
+  transition: all ds.$transition-base;
+  
+  &:hover {
+    background: rgba(239, 68, 68, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+// ============================================
+// 🎬 KEYFRAMES
+// ============================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+  }
+}

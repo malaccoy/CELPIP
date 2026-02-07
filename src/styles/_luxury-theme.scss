@@ -1,0 +1,25 @@
+// _luxury-theme.scss - Luxury/Refined Design Variables
+
+$luxury-bg-deep: #0d1117;
+$luxury-bg-card: #161b22;
+$luxury-bg-elevated: #1c2128;
+$luxury-gold: #c9a227;
+$luxury-gold-light: #e8d48a;
+$luxury-gold-dim: rgba(201, 162, 39, 0.12);
+$luxury-text-primary: #f0f3f6;
+$luxury-text-secondary: rgba(240, 243, 246, 0.7);
+$luxury-text-muted: rgba(240, 243, 246, 0.4);
+$luxury-border: rgba(201, 162, 39, 0.12);
+$luxury-border-hover: rgba(201, 162, 39, 0.25);
+
+$luxury-font-display: 'Playfair Display', Georgia, serif;
+$luxury-font-body: 'DM Sans', system-ui, sans-serif;
+
+$luxury-ease: cubic-bezier(0.4, 0, 0.2, 1);
+$luxury-transition: 350ms $luxury-ease;
+
+// Skill Colors (for accents on different modules)
+$luxury-writing: #10b981;
+$luxury-speaking: #a855f7;
+$luxury-reading: #06b6d4;
+$luxury-listening: #f59e0b;

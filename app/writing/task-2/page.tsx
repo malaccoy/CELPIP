@@ -19,6 +19,8 @@ import {
 import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
+import AIFeedback from '@/components/AIFeedback';
+import SentenceFeedback from '@/components/SentenceFeedback';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -660,6 +662,22 @@ export default function Task2Page() {
                   minHeight="350px"
                 />
 
+                {/* AI Score & Make It Real */}
+                <div className={styles.aiFeedbackSection}>
+                  <AIFeedback 
+                    task="task2" 
+                    text={state.content}
+                    onApplySuggestion={(original, replacement) => {
+                      const newContent = state.content.replace(original, replacement);
+                      updateState('content', newContent);
+                    }}
+                  />
+                  <SentenceFeedback 
+                    task="task2" 
+                    text={state.content}
+                  />
+                </div>
+
                 <div className={styles.writingActions}>
                   <button className={styles.btnTemplate} onClick={generateStructure}>
                     <Wand2 size={16} /> Generate Structure
@@ -667,54 +685,11 @@ export default function Task2Page() {
                   <button className={styles.btnEvaluate} onClick={handleEvaluate}>
                     <RefreshCw size={16} /> Quick Checklist
                   </button>
-                  <button 
-                    className={styles.btnAIEvaluate} 
-                    onClick={handleAIEvaluate}
-                    disabled={aiLoading || wordCount < 50}
-                  >
-                    <Sparkles size={16} /> {aiLoading ? 'Analyzing...' : 'AI Evaluation'}
-                  </button>
                 </div>
               </div>
 
-              {/* AI Evaluation Error */}
-              {aiError && (
-                <div className={styles.aiErrorBox}>
-                  <AlertCircle size={18} />
-                  <span>{aiError}</span>
-                  <button onClick={() => setAiError(null)}>×</button>
-                </div>
-              )}
-
-              {/* AI Evaluation Loading */}
-              {aiLoading && (
-                <div className={styles.aiLoadingPanel}>
-                  <AIEvaluationLoading />
-                </div>
-              )}
-
-              {/* AI Evaluation Result */}
-              {aiEvaluation && !aiLoading && (
-                <div className={styles.aiResultPanel}>
-                  <div className={styles.aiResultHeader}>
-                    <Bot size={20} />
-                    <h3>Avaliação com Inteligência Artificial</h3>
-                    <button 
-                      className={styles.aiResultClose}
-                      onClick={() => setAiEvaluation(null)}
-                    >
-                      ×
-                    </button>
-                  </div>
-                  <AIEvaluationResult 
-                    evaluation={aiEvaluation} 
-                    originalText={state.content}
-                  />
-                </div>
-              )}
-
               {/* Feedback Panel */}
-              {feedback.length > 0 && !aiEvaluation && (
+              {feedback.length > 0 && (
                 <div className={styles.feedbackPanel}>
                   <div className={styles.feedbackHeader}>
                     <MessageSquare size={20} />

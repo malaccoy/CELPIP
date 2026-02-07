@@ -1,0 +1,535 @@
+// ============================================
+// 🎨 CELPIP COACH - UNIFIED DESIGN SYSTEM
+// ============================================
+// Tom: Luxury/Refined com Purple/Indigo accent
+// Filosofia: Dark-first, premium, anti-AI-slop
+// ============================================
+
+// ============================================
+// 🔤 TIPOGRAFIA
+// ============================================
+// BANNED: Inter, Roboto, Arial, system fonts
+// USE: Space Grotesk (display) + DM Sans (body)
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+$font-display: 'Space Grotesk', system-ui, sans-serif;
+$font-body: 'DM Sans', system-ui, sans-serif;
+$font-mono: 'DM Mono', ui-monospace, monospace;
+
+// ============================================
+// 🎨 CORES - DARK FIRST
+// ============================================
+
+// Backgrounds
+$bg-deep: #0a0f1a;
+$bg-primary: #0f172a;
+$bg-secondary: #1e293b;
+$bg-card: #1a1f2e;
+$bg-card-hover: #232938;
+$bg-elevated: #2a3142;
+
+// Text
+$text-primary: #f8fafc;
+$text-secondary: rgba(248, 250, 252, 0.8);
+$text-muted: rgba(248, 250, 252, 0.6);
+$text-dim: rgba(248, 250, 252, 0.4);
+
+// Accent - Purple/Indigo (Primary)
+$accent-primary: #8b5cf6;
+$accent-primary-light: #a78bfa;
+$accent-primary-pale: #c4b5fd;
+$accent-primary-dark: #7c3aed;
+$accent-primary-deep: #6d28d9;
+$accent-glow: rgba(139, 92, 246, 0.25);
+$accent-border: rgba(139, 92, 246, 0.2);
+$accent-bg: rgba(139, 92, 246, 0.12);
+
+// Skill Colors (secondary accents)
+$skill-writing: #10b981;
+$skill-speaking: #a855f7;
+$skill-reading: #06b6d4;
+$skill-listening: #f59e0b;
+
+// Status Colors
+$success: #22c55e;
+$success-light: #4ade80;
+$success-bg: rgba(34, 197, 94, 0.12);
+$success-border: rgba(34, 197, 94, 0.25);
+
+$warning: #f59e0b;
+$warning-light: #fbbf24;
+$warning-bg: rgba(245, 158, 11, 0.12);
+$warning-border: rgba(245, 158, 11, 0.25);
+
+$error: #ef4444;
+$error-light: #f87171;
+$error-bg: rgba(239, 68, 68, 0.12);
+$error-border: rgba(239, 68, 68, 0.25);
+
+$info: #06b6d4;
+$info-bg: rgba(6, 182, 212, 0.12);
+$info-border: rgba(6, 182, 212, 0.25);
+
+// Borders
+$border-subtle: rgba(255, 255, 255, 0.05);
+$border-default: rgba(255, 255, 255, 0.08);
+$border-hover: rgba(255, 255, 255, 0.12);
+
+// ============================================
+// 🌈 GRADIENTES
+// ============================================
+
+$gradient-page: linear-gradient(180deg, $bg-deep 0%, $bg-primary 25%, #1a1f3a 50%, $bg-primary 75%, $bg-deep 100%);
+$gradient-hero: linear-gradient(135deg, $bg-primary 0%, #1e1b4b 40%, #312e81 70%, #4338ca 100%);
+$gradient-primary: linear-gradient(135deg, $accent-primary 0%, $accent-primary-dark 100%);
+$gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+// ============================================
+// ✨ ANIMAÇÕES
+// ============================================
+
+$ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+$ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+$ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+$transition-fast: 150ms $ease-smooth;
+$transition-base: 200ms $ease-smooth;
+$transition-smooth: 350ms $ease-smooth;
+$transition-bounce: 400ms $ease-bounce;
+
+// Keyframes
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px $accent-glow; }
+  50% { box-shadow: 0 0 35px $accent-glow, 0 0 50px rgba(139, 92, 246, 0.1); }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ============================================
+// 📐 ESPAÇAMENTO & LAYOUT
+// ============================================
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+$radius-full: 9999px;
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+$shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.35);
+$shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.4);
+$shadow-glow: 0 8px 24px $accent-glow;
+$shadow-glow-lg: 0 12px 36px rgba(139, 92, 246, 0.35);
+
+// ============================================
+// 🧩 MIXINS - COMPONENTES BASE
+// ============================================
+
+// Container principal
+@mixin page-container {
+  min-height: 100vh;
+  background: $gradient-page;
+  padding: 1rem 1rem 6rem;
+  position: relative;
+  overflow-x: hidden;
+  
+  @media (min-width: 768px) {
+    padding: 2rem 2rem 4rem;
+  }
+}
+
+// Ambient orb (glow de fundo)
+@mixin ambient-orb($color: $accent-primary, $position: 'top-left') {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulse 8s ease-in-out infinite;
+  
+  @if $position == 'top-left' {
+    top: 5%;
+    left: -15%;
+    background: radial-gradient(circle, rgba($color, 0.08) 0%, transparent 70%);
+  } @else if $position == 'bottom-right' {
+    bottom: 10%;
+    right: -15%;
+    background: radial-gradient(circle, rgba($color, 0.06) 0%, transparent 70%);
+    animation-delay: 2s;
+  } @else if $position == 'top-center' {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background: radial-gradient(ellipse at 50% 0%, rgba($color, 0.06) 0%, transparent 60%);
+  }
+}
+
+// Card base
+@mixin card-base {
+  background: $bg-card;
+  border: 1px solid $border-default;
+  border-radius: $radius-lg;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    background: $bg-card-hover;
+    border-color: $border-hover;
+    transform: translateY(-3px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Card com accent glow
+@mixin card-glow($color: $accent-primary) {
+  @include card-base;
+  
+  &:hover {
+    border-color: rgba($color, 0.3);
+    box-shadow: 0 12px 32px rgba($color, 0.15);
+  }
+}
+
+// Botão primário
+@mixin btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  background: $gradient-primary;
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-display;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all $transition-bounce;
+  box-shadow: $shadow-glow;
+  
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: $shadow-glow-lg;
+  }
+  
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+// Botão secundário/ghost
+@mixin btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid $border-default;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $text-muted;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all $transition-smooth;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: $border-hover;
+    color: $text-primary;
+  }
+}
+
+// Badge/Pill
+@mixin badge($color: $accent-primary) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba($color, 0.12);
+  border: 1px solid rgba($color, 0.25);
+  border-radius: $radius-full;
+  font-family: $font-body;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: $color;
+  letter-spacing: 0.02em;
+}
+
+// Icon box
+@mixin icon-box($color: $accent-primary, $size: 48px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $size;
+  height: $size;
+  background: $color;
+  border-radius: $radius-md;
+  color: white;
+  flex-shrink: 0;
+  transition: transform $transition-bounce;
+  
+  &:hover {
+    transform: scale(1.08) rotate(-3deg);
+  }
+}
+
+// Section header
+@mixin section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  .label {
+    font-family: $font-body;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: $text-dim;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-family: $font-display;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $text-primary;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+    
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .subtitle {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    color: $text-muted;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+// Input field
+@mixin input-field {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: $bg-secondary;
+  border: 1px solid $border-default;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  color: $text-primary;
+  transition: all $transition-base;
+  
+  &::placeholder {
+    color: $text-dim;
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: $accent-primary;
+    box-shadow: 0 0 0 3px $accent-bg;
+  }
+}
+
+// Tabs
+@mixin tabs-container {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: $bg-secondary;
+  border-radius: $radius-lg;
+  margin-bottom: 1.5rem;
+}
+
+@mixin tab-item($active: false) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-muted;
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  @if $active {
+    background: $accent-bg;
+    color: $accent-primary-light;
+  }
+  
+  &:hover {
+    color: $text-primary;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+// Stats card
+@mixin stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: $bg-card;
+  border: 1px solid $border-default;
+  border-radius: $radius-lg;
+  text-align: center;
+  
+  .icon {
+    margin-bottom: 0.75rem;
+    color: $accent-primary-light;
+  }
+  
+  .value {
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.25rem;
+  }
+  
+  .label {
+    font-family: $font-body;
+    font-size: 0.75rem;
+    color: $text-muted;
+  }
+}
+
+// Grid responsivo
+@mixin responsive-grid($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 4, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($cols-mobile, 1fr);
+  gap: $gap;
+  
+  @media (min-width: 640px) {
+    grid-template-columns: repeat($cols-tablet, 1fr);
+  }
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat($cols-desktop, 1fr);
+  }
+}
+
+// Animação de entrada escalonada
+@mixin stagger-children($delay: 0.1s, $base: 0s) {
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: $base + ($delay * ($i - 1));
+    }
+  }
+}
+
+// ============================================
+// 🌙 CSS VARIABLES (para uso em componentes)
+// ============================================
+
+:root {
+  // Cores principais
+  --bg-deep: #{$bg-deep};
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+  --bg-card: #{$bg-card};
+  --bg-card-hover: #{$bg-card-hover};
+  --bg-elevated: #{$bg-elevated};
+  
+  // Texto
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-muted: #{$text-muted};
+  --text-dim: #{$text-dim};
+  
+  // Accent
+  --accent-primary: #{$accent-primary};
+  --accent-primary-light: #{$accent-primary-light};
+  --accent-glow: #{$accent-glow};
+  --accent-bg: #{$accent-bg};
+  --accent-border: #{$accent-border};
+  
+  // Skills
+  --skill-writing: #{$skill-writing};
+  --skill-speaking: #{$skill-speaking};
+  --skill-reading: #{$skill-reading};
+  --skill-listening: #{$skill-listening};
+  
+  // Status
+  --success: #{$success};
+  --warning: #{$warning};
+  --error: #{$error};
+  --info: #{$info};
+  
+  // Borders
+  --border-subtle: #{$border-subtle};
+  --border-default: #{$border-default};
+  --border-hover: #{$border-hover};
+  
+  // Typography
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+  --font-mono: #{$font-mono};
+  
+  // Radius
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  
+  // Shadows
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --shadow-glow: #{$shadow-glow};
+}

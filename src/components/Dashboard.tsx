@@ -1,173 +1,147 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { 
-  BarChart3, Clock, FileText, TrendingUp, Calendar,
-  Target, Award, Flame, Trash2
+  BarChart3, Clock, TrendingUp, Flame, Calendar,
+  PenLine, Mic, BookOpen, Headphones, ArrowRight,
+  Target, Trophy, Sparkles
 } from 'lucide-react';
-import GoalsManager from '@/components/GoalsManager';
-import ErrorReview from '@/components/ErrorReview';
-import DailyChallengeWidget from '@/components/DailyChallenge';
-import Achievements from '@/components/Achievements';
 import styles from '@/styles/Dashboard.module.scss';
 
-interface PracticeSession {
-  id: string;
-  task: 'task1' | 'task2';
-  date: string;
-  wordCount: number;
-  timeUsed: number; // seconds
-  completed: boolean;
-  examMode: boolean;
+interface ModuleStats {
+  sessions: number;
+  lastPractice: string | null;
+  avgScore?: number;
 }
 
-interface DashboardStats {
+interface DashboardData {
+  writing: ModuleStats;
+  speaking: ModuleStats;
+  reading: ModuleStats;
+  listening: ModuleStats;
   totalSessions: number;
-  totalWords: number;
-  avgWordsPerSession: number;
-  avgTimePerSession: number;
-  task1Sessions: number;
-  task2Sessions: number;
-  examModeSessions: number;
-  completionRate: number;
   streak: number;
   lastPractice: string | null;
 }
 
-const STORAGE_KEY = 'celpip_practice_history';
-
-export function savePracticeSession(session: Omit<PracticeSession, 'id' | 'date'>) {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    const sessions: PracticeSession[] = stored ? JSON.parse(stored) : [];
-    
-    const newSession: PracticeSession = {
-      ...session,
-      id: `session_${Date.now()}`,
-      date: new Date().toISOString(),
-    };
-    
-    sessions.unshift(newSession);
-    
-    // Keep only last 100 sessions
-    const trimmed = sessions.slice(0, 100);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(trimmed));
-    
-    return newSession;
-  } catch (e) {
-    console.error('Failed to save practice session:', e);
-    return null;
-  }
-}
+const STORAGE_KEYS = {
+  writing: 'celpip_practice_history',
+  speaking: 'celpip_speaking_history',
+  reading: 'celpip_reading_history',
+  listening: 'celpip_listening_history',
+};
 
 export default function Dashboard() {
-  const [sessions, setSessions] = useState<PracticeSession[]>([]);
-  const [stats, setStats] = useState<DashboardStats | null>(null);
-  const [activeTab, setActiveTab] = useState<'overview' | 'history'>('overview');
+  const router = useRouter();
+  const [data, setData] = useState<DashboardData | null>(null);
 
   useEffect(() => {
-    loadData();
+    loadAllData();
   }, []);
 
-  const loadData = () => {
+  const loadAllData = () => {
     try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      const loadedSessions: PracticeSession[] = stored ? JSON.parse(stored) : [];
-      setSessions(loadedSessions);
-      setStats(calculateStats(loadedSessions));
+      const writing = loadModuleData('writing');
+      const speaking = loadModuleData('speaking');
+      const reading = loadModuleData('reading');
+      const listening = loadModuleData('listening');
+
+      const allDates = [
+        writing.lastPractice,
+        speaking.lastPractice,
+        reading.lastPractice,
+        listening.lastPractice,
+      ].filter(Boolean).sort((a, b) => 
+        new Date(b!).getTime() - new Date(a!).getTime()
+      );
+
+      setData({
+        writing,
+        speaking,
+        reading,
+        listening,
+        totalSessions: writing.sessions + speaking.sessions + reading.sessions + listening.sessions,
+        streak: calculateStreak(),
+        lastPractice: allDates[0] || null,
+      });
     } catch (e) {
-      console.error('Failed to load practice history:', e);
+      console.error('Failed to load dashboard data:', e);
     }
   };
 
-  const calculateStats = (sessions: PracticeSession[]): DashboardStats => {
-    if (sessions.length === 0) {
-      return {
-        totalSessions: 0,
-        totalWords: 0,
-        avgWordsPerSession: 0,
-        avgTimePerSession: 0,
-        task1Sessions: 0,
-        task2Sessions: 0,
-        examModeSessions: 0,
-        completionRate: 0,
-        streak: 0,
-        lastPractice: null,
-      };
-    }
-
-    const totalWords = sessions.reduce((sum, s) => sum + s.wordCount, 0);
-    const totalTime = sessions.reduce((sum, s) => sum + s.timeUsed, 0);
-    const completed = sessions.filter(s => s.completed).length;
-    
-    // Calculate streak
-    let streak = 0;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    const sortedByDate = [...sessions].sort((a, b) => 
-      new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
-    
-    let checkDate = new Date(today);
-    for (const session of sortedByDate) {
-      const sessionDate = new Date(session.date);
-      sessionDate.setHours(0, 0, 0, 0);
+  const loadModuleData = (module: keyof typeof STORAGE_KEYS): ModuleStats => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS[module]);
+      if (!stored) return { sessions: 0, lastPractice: null };
       
-      const diffDays = Math.floor((checkDate.getTime() - sessionDate.getTime()) / (1000 * 60 * 60 * 24));
-      
-      if (diffDays === 0 || diffDays === 1) {
-        streak++;
-        checkDate = sessionDate;
-      } else {
-        break;
+      const sessions = JSON.parse(stored);
+      if (!Array.isArray(sessions) || sessions.length === 0) {
+        return { sessions: 0, lastPractice: null };
       }
-    }
 
-    return {
-      totalSessions: sessions.length,
-      totalWords,
-      avgWordsPerSession: Math.round(totalWords / sessions.length),
-      avgTimePerSession: Math.round(totalTime / sessions.length),
-      task1Sessions: sessions.filter(s => s.task === 'task1').length,
-      task2Sessions: sessions.filter(s => s.task === 'task2').length,
-      examModeSessions: sessions.filter(s => s.examMode).length,
-      completionRate: Math.round((completed / sessions.length) * 100),
-      streak,
-      lastPractice: sessions[0]?.date || null,
-    };
-  };
-
-  const clearHistory = () => {
-    if (confirm('Are you sure you want to delete all practice history?')) {
-      localStorage.removeItem(STORAGE_KEY);
-      setSessions([]);
-      setStats(calculateStats([]));
+      return {
+        sessions: sessions.length,
+        lastPractice: sessions[0]?.date || null,
+        avgScore: sessions[0]?.score,
+      };
+    } catch {
+      return { sessions: 0, lastPractice: null };
     }
   };
 
-  const formatDate = (isoString: string) => {
-    return new Date(isoString).toLocaleDateString('en-US', {
-      day: '2-digit',
-      month: '2-digit',
-      year: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit',
-    });
+  const calculateStreak = (): number => {
+    // Simplified streak calculation
+    try {
+      const allSessions: { date: string }[] = [];
+      
+      Object.values(STORAGE_KEYS).forEach(key => {
+        const stored = localStorage.getItem(key);
+        if (stored) {
+          const sessions = JSON.parse(stored);
+          if (Array.isArray(sessions)) {
+            allSessions.push(...sessions);
+          }
+        }
+      });
+
+      if (allSessions.length === 0) return 0;
+
+      const sortedDates = allSessions
+        .map(s => new Date(s.date).toDateString())
+        .filter((v, i, a) => a.indexOf(v) === i)
+        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
+
+      let streak = 0;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      for (let i = 0; i < sortedDates.length; i++) {
+        const sessionDate = new Date(sortedDates[i]);
+        sessionDate.setHours(0, 0, 0, 0);
+        
+        const expectedDate = new Date(today);
+        expectedDate.setDate(expectedDate.getDate() - i);
+        
+        if (sessionDate.getTime() === expectedDate.getTime()) {
+          streak++;
+        } else {
+          break;
+        }
+      }
+
+      return streak;
+    } catch {
+      return 0;
+    }
   };
 
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins}m ${secs}s`;
-  };
-
-  const formatLastPractice = (isoString: string | null) => {
-    if (!isoString) return 'Never';
+  const formatLastPractice = (date: string | null): string => {
+    if (!date) return 'Never';
     
-    const date = new Date(isoString);
+    const d = new Date(date);
     const now = new Date();
-    const diffMs = now.getTime() - date.getTime();
+    const diffMs = now.getTime() - d.getTime();
     const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
     const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
     
@@ -175,239 +149,199 @@ export default function Dashboard() {
     if (diffHours < 24) return `${diffHours}h ago`;
     if (diffDays === 1) return 'Yesterday';
     if (diffDays < 7) return `${diffDays} days ago`;
-    return formatDate(isoString);
+    return d.toLocaleDateString();
   };
+
+  const modules = [
+    {
+      id: 'writing',
+      title: 'Writing',
+      icon: PenLine,
+      color: '#10b981',
+      path: '/writing',
+      stats: data?.writing,
+    },
+    {
+      id: 'speaking',
+      title: 'Speaking',
+      icon: Mic,
+      color: '#a855f7',
+      path: '/speaking',
+      stats: data?.speaking,
+    },
+    {
+      id: 'reading',
+      title: 'Reading',
+      icon: BookOpen,
+      color: '#06b6d4',
+      path: '/reading',
+      stats: data?.reading,
+    },
+    {
+      id: 'listening',
+      title: 'Listening',
+      icon: Headphones,
+      color: '#f59e0b',
+      path: '/listening',
+      stats: data?.listening,
+    },
+  ];
+
+  if (!data) {
+    return (
+      <div className={styles.dashboard}>
+        <div className={styles.loading}>Loading...</div>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.dashboard}>
-      <div className={styles.dashboardHeader}>
-        <div className={styles.dashboardTitle}>
-          <BarChart3 size={28} />
-          <div>
-            <h1>Progress Dashboard</h1>
-            <p>Track your evolution in CELPIP Writing</p>
+      {/* Header */}
+      <div className={styles.header}>
+        <div className={styles.headerContent}>
+          <div className={styles.headerIcon}>
+            <BarChart3 size={28} />
           </div>
-        </div>
-        <div className={styles.dashboardTabs}>
-          <button 
-            className={`${styles.tab} ${activeTab === 'overview' ? styles.tabActive : ''}`}
-            onClick={() => setActiveTab('overview')}
-          >
-            Overview
-          </button>
-          <button 
-            className={`${styles.tab} ${activeTab === 'history' ? styles.tabActive : ''}`}
-            onClick={() => setActiveTab('history')}
-          >
-            History
-          </button>
+          <div className={styles.headerInfo}>
+            <h1>Your Progress</h1>
+            <p>Track your CELPIP preparation across all skills</p>
+          </div>
         </div>
       </div>
 
-      {activeTab === 'overview' && stats && (
-        <div className={styles.overviewGrid}>
-          {/* Main Stats */}
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}>
-              <FileText />
-            </div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{stats.totalSessions}</span>
-              <span className={styles.statLabel}>Total Practices</span>
-            </div>
+      {/* Quick Stats */}
+      <div className={styles.quickStats}>
+        <div className={styles.quickStat}>
+          <div className={styles.quickStatIcon}>
+            <Target size={20} />
           </div>
-
-          <div className={styles.statCard}>
-            <div className={`${styles.statIcon} ${styles.statIconPurple}`}>
-              <TrendingUp />
-            </div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{stats.avgWordsPerSession}</span>
-              <span className={styles.statLabel}>Average Words</span>
-            </div>
+          <div className={styles.quickStatInfo}>
+            <span className={styles.quickStatValue}>{data.totalSessions}</span>
+            <span className={styles.quickStatLabel}>Total Practices</span>
           </div>
+        </div>
 
-          <div className={styles.statCard}>
-            <div className={`${styles.statIcon} ${styles.statIconCyan}`}>
-              <Clock />
-            </div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{formatTime(stats.avgTimePerSession)}</span>
-              <span className={styles.statLabel}>Average Time</span>
-            </div>
+        <div className={styles.quickStat}>
+          <div className={`${styles.quickStatIcon} ${styles.iconFlame}`}>
+            <Flame size={20} />
           </div>
-
-          <div className={styles.statCard}>
-            <div className={`${styles.statIcon} ${styles.statIconGreen}`}>
-              <Target />
-            </div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{stats.completionRate}%</span>
-              <span className={styles.statLabel}>Completion Rate</span>
-            </div>
+          <div className={styles.quickStatInfo}>
+            <span className={styles.quickStatValue}>{data.streak}</span>
+            <span className={styles.quickStatLabel}>Day Streak</span>
           </div>
+        </div>
 
-          {/* Streak & Last Practice */}
-          <div className={styles.highlightCard}>
-            <div className={styles.highlightContent}>
-              <Flame className={styles.highlightIcon} />
-              <div>
-                <span className={styles.highlightValue}>{stats.streak}</span>
-                <span className={styles.highlightLabel}>Day Streak</span>
-              </div>
-            </div>
-            <p className={styles.highlightHint}>
-              Practice every day to keep your streak!
-            </p>
+        <div className={styles.quickStat}>
+          <div className={`${styles.quickStatIcon} ${styles.iconCalendar}`}>
+            <Calendar size={20} />
           </div>
-
-          <div className={styles.highlightCard}>
-            <div className={styles.highlightContent}>
-              <Calendar className={styles.highlightIcon} />
-              <div>
-                <span className={styles.highlightValue}>{formatLastPractice(stats.lastPractice)}</span>
-                <span className={styles.highlightLabel}>Last Practice</span>
-              </div>
-            </div>
-            <p className={styles.highlightHint}>
-              {stats.lastPractice ? 'Keep practicing!' : 'Start your first practice!'}
-            </p>
+          <div className={styles.quickStatInfo}>
+            <span className={styles.quickStatValue}>{formatLastPractice(data.lastPractice)}</span>
+            <span className={styles.quickStatLabel}>Last Practice</span>
           </div>
+        </div>
+      </div>
 
-          {/* Task Distribution */}
-          <div className={styles.distributionCard}>
-            <h3><Award size={18} /> Task Distribution</h3>
-            <div className={styles.distributionBars}>
-              <div className={styles.distributionItem}>
-                <span className={styles.distributionLabel}>Task 1 (Email)</span>
-                <div className={styles.distributionBar}>
-                  <div 
-                    className={styles.distributionFill}
-                    style={{ 
-                      width: stats.totalSessions > 0 
-                        ? `${(stats.task1Sessions / stats.totalSessions) * 100}%` 
-                        : '0%' 
-                    }}
-                  />
+      {/* Module Cards */}
+      <div className={styles.modulesSection}>
+        <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+        
+        <div className={styles.modulesGrid}>
+          {modules.map((mod) => {
+            const IconComponent = mod.icon;
+            const sessions = mod.stats?.sessions || 0;
+            
+            return (
+              <div 
+                key={mod.id}
+                className={styles.moduleCard}
+                onClick={() => router.push(mod.path)}
+                style={{ '--module-color': mod.color } as React.CSSProperties}
+              >
+                <div className={styles.moduleCardHeader}>
+                  <div className={styles.moduleIcon}>
+                    <IconComponent size={24} />
+                  </div>
+                  {sessions > 0 && (
+                    <div className={styles.moduleProgress}>
+                      <Trophy size={12} />
+                      <span>{sessions}</span>
+                    </div>
+                  )}
                 </div>
-                <span className={styles.distributionValue}>{stats.task1Sessions}</span>
-              </div>
-              <div className={styles.distributionItem}>
-                <span className={styles.distributionLabel}>Task 2 (Survey)</span>
-                <div className={styles.distributionBar}>
-                  <div 
-                    className={`${styles.distributionFill} ${styles.distributionFillPurple}`}
-                    style={{ 
-                      width: stats.totalSessions > 0 
-                        ? `${(stats.task2Sessions / stats.totalSessions) * 100}%` 
-                        : '0%' 
-                    }}
-                  />
+
+                <h3 className={styles.moduleTitle}>{mod.title}</h3>
+                
+                <p className={styles.moduleStatus}>
+                  {sessions > 0 
+                    ? `${sessions} practice${sessions > 1 ? 's' : ''} completed`
+                    : 'Not started yet'
+                  }
+                </p>
+
+                <div className={styles.moduleCta}>
+                  <span>{sessions > 0 ? 'Continue' : 'Start'}</span>
+                  <ArrowRight size={16} />
                 </div>
-                <span className={styles.distributionValue}>{stats.task2Sessions}</span>
               </div>
-              <div className={styles.distributionItem}>
-                <span className={styles.distributionLabel}>Exam Mode</span>
-                <div className={styles.distributionBar}>
-                  <div 
-                    className={`${styles.distributionFill} ${styles.distributionFillGreen}`}
-                    style={{ 
-                      width: stats.totalSessions > 0 
-                        ? `${(stats.examModeSessions / stats.totalSessions) * 100}%` 
-                        : '0%' 
-                    }}
-                  />
-                </div>
-                <span className={styles.distributionValue}>{stats.examModeSessions}</span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
+        </div>
+      </div>
 
-          {/* Total Words */}
-          <div className={styles.totalCard}>
-            <div className={styles.totalContent}>
-              <span className={styles.totalValue}>{stats.totalWords.toLocaleString()}</span>
-              <span className={styles.totalLabel}>Words Written</span>
-            </div>
-            <p className={styles.totalHint}>
-              {stats.totalWords >= 10000 
-                ? '🏆 Amazing! You have written more than 10,000 words!'
-                : stats.totalWords >= 5000
-                  ? '🌟 Great progress! Keep it up!'
-                  : stats.totalWords >= 1000
-                    ? '💪 Good start! Keep practicing!'
-                    : '✏️ Start practicing to see your progress here!'}
-            </p>
-          </div>
-
-          {/* Daily Challenge Widget */}
-          <div className={styles.challengeWidget}>
-            <DailyChallengeWidget mode="compact" />
-          </div>
-
-          {/* Goals Widget */}
-          <div className={styles.goalsWidget}>
-            <GoalsManager mode="compact" />
-          </div>
-
-          {/* Errors Widget */}
-          <div className={styles.errorsWidget}>
-            <ErrorReview mode="compact" />
-          </div>
-
-          {/* Achievements Widget */}
-          <div className={styles.achievementsWidget}>
-            <Achievements mode="compact" />
+      {/* Motivation Section */}
+      {data.totalSessions === 0 && (
+        <div className={styles.motivationCard}>
+          <Sparkles size={24} />
+          <div className={styles.motivationContent}>
+            <h3>Ready to start?</h3>
+            <p>Pick any skill above and begin your CELPIP preparation journey!</p>
           </div>
         </div>
       )}
 
-      {activeTab === 'history' && (
-        <div className={styles.historySection}>
-          <div className={styles.historyHeader}>
-            <span>{sessions.length} practices recorded</span>
-            {sessions.length > 0 && (
-              <button className={styles.clearBtn} onClick={clearHistory}>
-                <Trash2 size={14} /> Clear History
-              </button>
-            )}
+      {data.totalSessions > 0 && data.streak === 0 && (
+        <div className={styles.motivationCard}>
+          <Flame size={24} />
+          <div className={styles.motivationContent}>
+            <h3>Start a new streak!</h3>
+            <p>Practice today to begin building your daily streak.</p>
           </div>
-          
-          {sessions.length === 0 ? (
-            <div className={styles.emptyHistory}>
-              <FileText size={48} />
-              <h3>No practices recorded</h3>
-              <p>Complete a practice to see your history here.</p>
-            </div>
-          ) : (
-            <div className={styles.historyList}>
-              {sessions.map(session => (
-                <div key={session.id} className={styles.historyItem}>
-                  <div className={styles.historyItemIcon}>
-                    {session.task === 'task1' ? '✉️' : '📋'}
-                  </div>
-                  <div className={styles.historyItemInfo}>
-                    <span className={styles.historyItemTitle}>
-                      {session.task === 'task1' ? 'Task 1 — Email' : 'Task 2 — Survey'}
-                      {session.examMode && <span className={styles.examBadge}>EXAM</span>}
-                    </span>
-                    <span className={styles.historyItemMeta}>
-                      {formatDate(session.date)}
-                    </span>
-                  </div>
-                  <div className={styles.historyItemStats}>
-                    <span>{session.wordCount} words</span>
-                    <span>{formatTime(session.timeUsed)}</span>
-                  </div>
-                  <div className={`${styles.historyItemStatus} ${session.completed ? styles.completed : styles.incomplete}`}>
-                    {session.completed ? '✓' : '✗'}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+        </div>
+      )}
+
+      {data.streak >= 3 && (
+        <div className={`${styles.motivationCard} ${styles.motivationSuccess}`}>
+          <Trophy size={24} />
+          <div className={styles.motivationContent}>
+            <h3>🔥 {data.streak} day streak!</h3>
+            <p>Amazing consistency! Keep it going!</p>
+          </div>
         </div>
       )}
     </div>
   );
+}
+
+// Export for backward compatibility
+export function savePracticeSession(session: { task: string; wordCount: number; timeUsed: number; completed: boolean; examMode: boolean }) {
+  try {
+    const stored = localStorage.getItem('celpip_practice_history');
+    const sessions = stored ? JSON.parse(stored) : [];
+    
+    const newSession = {
+      ...session,
+      id: `session_${Date.now()}`,
+      date: new Date().toISOString(),
+    };
+    
+    sessions.unshift(newSession);
+    localStorage.setItem('celpip_practice_history', JSON.stringify(sessions.slice(0, 100)));
+    
+    return newSession;
+  } catch (e) {
+    console.error('Failed to save practice session:', e);
+    return null;
+  }
 }

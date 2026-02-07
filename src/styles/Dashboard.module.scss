@@ -1,431 +1,276 @@
-// Dashboard.module.scss
-.dashboardContainer {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem;
-  animation: fadeIn 0.3s ease;
+// Dashboard.module.scss - Unified Design System
+@use 'design-system' as ds;
+
+.container {
+  @include ds.page-container;
+
+  &::before {
+    @include ds.ambient-orb(ds.$accent-primary, 'top-center');
+  }
 }
 
-.dashboardHeader {
+// Header
+.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-
-  .headerLeft {
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin: 0 0 0.5rem 0;
-      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: var(--text-secondary);
-      margin: 0;
-    }
-  }
-
-  .headerRight {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .statBadge {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.5rem;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-
-    svg {
-      color: var(--primary-color);
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .statValue {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .statLabel {
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-  }
-}
-
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.skillCard {
-  position: relative;
-  padding: 2rem;
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  overflow: hidden;
-
-  &:hover:not(.skillCardLocked) {
-    border-color: var(--skill-color);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-
-    .skillCardGlow {
-      opacity: 1;
-    }
-
-    .skillCardButton {
-      background: var(--skill-color);
-      transform: translateX(4px);
-    }
-  }
-
-  &.skillCardLocked {
-    opacity: 0.6;
-    cursor: not-allowed;
-
-    &:hover {
-      transform: none;
-    }
-  }
-}
-
-.lockBadge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #ef4444;
-
-  svg {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-.skillCardHeader {
-  display: flex;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 1rem;
   margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ds.$ease-smooth;
 }
 
-.skillIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: linear-gradient(135deg, var(--skill-color), var(--skill-color));
-  border-radius: 16px;
-  color: white;
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.headerIcon {
+  @include ds.icon-box(ds.$accent-primary, 56px);
+  background: ds.$gradient-primary;
+  animation: glowPulse 4s ease-in-out infinite;
 }
 
-.skillInfo {
+.headerText {
   flex: 1;
-
-  h3 {
-    font-size: 1.5rem;
+  
+  h1 {
+    font-family: ds.$font-display;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin: 0 0 0.5rem 0;
-    color: var(--text-primary);
+    color: ds.$text-primary;
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.02em;
   }
-
+  
   p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    font-family: ds.$font-body;
+    font-size: 0.85rem;
+    color: ds.$text-muted;
     margin: 0;
-    line-height: 1.5;
   }
 }
 
-.progressSection {
-  margin-bottom: 1.5rem;
-}
-
-.progressHeader {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-
-  .progressLabel {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .progressValue {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--skill-color);
-  }
-}
-
-.progressBar {
-  height: 8px;
-  background: var(--input-bg);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 0.5rem;
-}
-
-.progressFill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--skill-color), var(--skill-color));
-  border-radius: 4px;
-  transition: width 0.6s ease;
-}
-
-.progressPercentage {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  text-align: right;
-}
-
-.tasksList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.taskItem {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-
-  svg {
-    color: var(--skill-color);
-    flex-shrink: 0;
-  }
-}
-
-.skillCardButton {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  background: var(--skill-color);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:disabled {
-    background: var(--input-bg);
-    color: var(--text-secondary);
-    cursor: not-allowed;
-  }
-
-  svg {
-    transition: transform 0.3s ease;
-  }
-}
-
-.skillCardGlow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, var(--skill-color) 0%, transparent 70%);
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  filter: blur(40px);
-}
-
+// Quick Stats
 .quickStats {
-  margin-bottom: 3rem;
-}
-
-.quickStatsHeader {
   display: flex;
-  align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
-
-  svg {
-    color: var(--primary-color);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ds.$ease-smooth 0.1s both;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
   }
-
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-    color: var(--text-primary);
-  }
-}
-
-.quickStatsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
 }
 
 .statCard {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-
+  gap: 0.75rem;
+  padding: 1rem;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  transition: all ds.$transition-smooth;
+  scroll-snap-align: start;
+  min-width: 140px;
+  flex-shrink: 0;
+  
   &:hover {
+    border-color: ds.$accent-border;
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: ds.$shadow-md;
+  }
+  
+  @media (min-width: 500px) {
+    min-width: auto;
+    flex: 1;
   }
 }
 
-.statCardIcon {
+.statIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 12px;
-  color: white;
+  width: 40px;
+  height: 40px;
+  background: ds.$accent-bg;
+  border-radius: ds.$radius-md;
+  color: ds.$accent-primary-light;
   flex-shrink: 0;
+  
+  &.flame {
+    background: ds.$warning-bg;
+    color: ds.$warning;
+  }
+  
+  &.modules {
+    background: ds.$success-bg;
+    color: ds.$success;
+  }
 }
 
-.statCardContent {
+.statInfo {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  min-width: 0;
 }
 
-.statCardValue {
-  font-size: 1.5rem;
+.statValue {
+  font-family: ds.$font-display;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: ds.$text-primary;
+  line-height: 1.2;
 }
 
-.statCardLabel {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+.statLabel {
+  font-family: ds.$font-body;
+  font-size: 0.7rem;
+  color: ds.$text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.comingSoonBanner {
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
-  border: 2px solid rgba(139, 92, 246, 0.2);
-  border-radius: 16px;
+// Skills Section
+.skillsSection {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ds.$ease-smooth 0.2s both;
 }
 
-.bannerContent {
+.sectionTitle {
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: ds.$text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1rem;
+  padding-left: 0.25rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.skillCard {
+  @include ds.card-glow;
+  padding: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  
+  &:hover {
+    border-color: var(--skill-color, ds.$accent-primary);
+    
+    .skillAction svg {
+      transform: translateX(4px);
+    }
+  }
+}
+
+.skillIconBox {
+  width: 44px;
+  height: 44px;
+  border-radius: ds.$radius-md;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: var(--skill-color, ds.$accent-bg);
+  color: white;
+  transition: all ds.$transition-smooth;
+}
 
+.skillName {
+  font-family: ds.$font-body;
+  font-size: 1rem;
+  font-weight: 600;
+  color: ds.$text-primary;
+  margin-bottom: 0.25rem;
+}
+
+.skillDesc {
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  color: ds.$text-muted;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.skillAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: ds.$accent-primary-light;
+  transition: all ds.$transition-base;
+  
   svg {
-    color: #8b5cf6;
-    flex-shrink: 0;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-    color: var(--text-primary);
-  }
-
-  p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin: 0;
+    transition: transform ds.$transition-base;
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+// Skill Color Modifiers
+.writing {
+  --skill-color: #{ds.$skill-writing};
+  
+  .skillIconBox {
+    background: linear-gradient(135deg, #10b981, #059669);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .skillAction {
+    color: ds.$skill-writing;
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .dashboardContainer {
-    padding: 1rem;
+.speaking {
+  --skill-color: #{ds.$skill-speaking};
+  
+  .skillIconBox {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
   }
-
-  .dashboardHeader {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-
-    .headerLeft h1 {
-      font-size: 2rem;
-    }
-
-    .headerRight {
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .statBadge {
-      flex: 1;
-      justify-content: center;
-    }
+  
+  .skillAction {
+    color: ds.$skill-speaking;
   }
+}
 
-  .skillsGrid {
-    grid-template-columns: 1fr;
+.reading {
+  --skill-color: #{ds.$skill-reading};
+  
+  .skillIconBox {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
   }
-
-  .quickStatsGrid {
-    grid-template-columns: 1fr;
+  
+  .skillAction {
+    color: ds.$skill-reading;
   }
+}
 
-  .bannerContent {
-    flex-direction: column;
-    text-align: center;
+.listening {
+  --skill-color: #{ds.$skill-listening};
+  
+  .skillIconBox {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+  }
+  
+  .skillAction {
+    color: ds.$skill-listening;
   }
 }

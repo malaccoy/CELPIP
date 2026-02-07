@@ -6,7 +6,7 @@ import { ArrowLeft, Trophy, Target, Flame, RefreshCw, Lightbulb } from 'lucide-r
 import HangmanCanvas from '@/components/HangmanCanvas';
 import styles from '@/styles/HangmanGame.module.scss';
 
-// Word categories for CELPIP Writing
+// Word categories for CELPIP Writing (aligned with Sentence Starters)
 const WORD_CATEGORIES = {
   greetings: {
     name: 'Greetings & Closings',
@@ -16,6 +16,9 @@ const WORD_CATEGORIES = {
       { word: 'REGARDS', hint: 'Common email closing', example: 'Best ___,' },
       { word: 'RESPECTFULLY', hint: 'Very formal closing', example: '___ yours,' },
       { word: 'CORDIALLY', hint: 'Warm but professional closing', example: 'Yours ___,' },
+      { word: 'HESITATE', hint: 'Do not ___ to contact me', example: 'Please do not ___...' },
+      { word: 'FORWARD', hint: 'I look ___ to hearing from you', example: 'Looking ___...' },
+      { word: 'ATTENTION', hint: 'Thank you for your ___', example: 'Your ___ to this matter' },
     ]
   },
   connectors: {
@@ -29,6 +32,7 @@ const WORD_CATEGORIES = {
       { word: 'CONSEQUENTLY', hint: 'As a result of', example: '___, we need to act.' },
       { word: 'MEANWHILE', hint: 'At the same time', example: '___, I have been...' },
       { word: 'ADDITIONALLY', hint: 'In addition to', example: '___, I would like...' },
+      { word: 'ALTHOUGH', hint: 'Even though', example: '___ it seems attractive...' },
     ]
   },
   opinions: {
@@ -40,6 +44,8 @@ const WORD_CATEGORIES = {
       { word: 'CONVINCED', hint: 'Fully certain', example: 'I am ___ that...' },
       { word: 'PERSPECTIVE', hint: 'Point of view', example: 'From my ___,...' },
       { word: 'STANDPOINT', hint: 'Position on an issue', example: 'From this ___,...' },
+      { word: 'ARGUE', hint: 'Present a position', example: 'I would ___ that...' },
+      { word: 'FIRMLY', hint: 'With strong conviction', example: 'I ___ believe that...' },
     ]
   },
   requests: {
@@ -51,6 +57,8 @@ const WORD_CATEGORIES = {
       { word: 'REQUEST', hint: 'Ask formally', example: 'I would like to ___...' },
       { word: 'INQUIRE', hint: 'Ask about something', example: 'I am writing to ___...' },
       { word: 'ASSISTANCE', hint: 'Help', example: 'I need your ___...' },
+      { word: 'POSSIBLE', hint: 'Would it be ___ to...', example: 'If ___...' },
+      { word: 'WONDERING', hint: 'I was ___ if you could...', example: 'I was ___...' },
     ]
   },
   complaints: {
@@ -63,6 +71,8 @@ const WORD_CATEGORIES = {
       { word: 'DISSATISFIED', hint: 'Not happy with', example: 'I am ___ with the...' },
       { word: 'CONCERNED', hint: 'Worried about', example: 'I am ___ about...' },
       { word: 'FRUSTRATING', hint: 'Causing annoyance', example: 'This is very ___.' },
+      { word: 'EXPERIENCING', hint: 'I have been ___ issues', example: '___ difficulties...' },
+      { word: 'REGRET', hint: 'I ___ to inform you', example: 'I ___ that...' },
     ]
   },
   formal_phrases: {
@@ -74,6 +84,8 @@ const WORD_CATEGORIES = {
       { word: 'ACKNOWLEDGE', hint: 'Recognize/admit', example: 'I ___ that...' },
       { word: 'APOLOGIZE', hint: 'Say sorry formally', example: 'I ___ for the delay.' },
       { word: 'APPROPRIATE', hint: 'Suitable/proper', example: 'The ___ action would be...' },
+      { word: 'INFORM', hint: 'Tell formally', example: 'I am writing to ___ you...' },
+      { word: 'CONTACTING', hint: 'I am ___ you regarding...', example: '___ customer service' },
     ]
   },
   actions: {
@@ -85,6 +97,30 @@ const WORD_CATEGORIES = {
       { word: 'CONSIDER', hint: 'Think about', example: 'Please ___ my request.' },
       { word: 'RESOLVE', hint: 'Fix/solve', example: 'We need to ___ this issue.' },
       { word: 'ADDRESS', hint: 'Deal with', example: 'I would like to ___ this...' },
+      { word: 'BENEFICIAL', hint: 'It would be ___ to...', example: '___ for everyone' },
+      { word: 'PREFERABLE', hint: 'X is ___ to Y', example: 'The ___ option...' },
+    ]
+  },
+  comparison: {
+    name: 'Comparing Options',
+    words: [
+      { word: 'COMPARED', hint: '___ to the other option', example: '___ with last year...' },
+      { word: 'ADVANTAGE', hint: 'The main ___ is...', example: 'Key ___ of this...' },
+      { word: 'DRAWBACK', hint: 'A significant ___', example: 'One ___ is...' },
+      { word: 'OUTWEIGH', hint: 'Benefits ___ the costs', example: 'Pros ___ the cons' },
+      { word: 'WHEREAS', hint: 'While/in contrast', example: '___ option B...' },
+      { word: 'MERITS', hint: 'Both options have ___', example: 'Considering the ___...' },
+    ]
+  },
+  evidence: {
+    name: 'Supporting Evidence',
+    words: [
+      { word: 'EXAMPLE', hint: 'For ___...', example: 'A good ___ is...' },
+      { word: 'EVIDENT', hint: 'This is ___ in...', example: 'Clearly ___...' },
+      { word: 'RESEARCH', hint: '___ has shown that...', example: 'According to ___...' },
+      { word: 'ILLUSTRATE', hint: 'To ___ this point...', example: 'This ___s the issue' },
+      { word: 'STATISTICS', hint: '___ indicate that...', example: 'Based on ___...' },
+      { word: 'ATTRIBUTED', hint: 'This can be ___ to...', example: '___ to the change' },
     ]
   }
 };
@@ -327,8 +363,6 @@ export default function HangmanGamePage() {
             wrongGuesses={errors}
             width={180}
             height={220}
-            strokeColor="#e2e8f0"
-            lineWidth={5}
           />
           {/* Lives Bar */}
           <div className={styles.livesContainer}>

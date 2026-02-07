@@ -25,6 +25,7 @@ model User {
   verificationTokens VerificationToken[]
   passwordResets  PasswordReset[]
   practices       Practice[]
+  writingAnalyses WritingAnalysis[]
   
   @@map("users")
 }
@@ -101,4 +102,41 @@ model Practice {
 
   @@index([userId, createdAt])
   @@map("practices")
+}
+
+// AI Writing Analysis (for weakness tracking & progress)
+model WritingAnalysis {
+  id            String   @id @default(cuid())
+  oderId        String   @unique @default(cuid()) // for localStorage sync
+  sessionId     String?  // anonymous session tracking
+  userId        String?  // if logged in
+  taskType      String   // 'task1' or 'task2'
+  wordCount     Int
+  aiScore       Int      // 1-12
+  content       String   @db.Text
+  
+  // Weakness categories (count of issues)
+  grammarIssues     Int @default(0)
+  vocabularyIssues  Int @default(0)
+  structureIssues   Int @default(0)
+  contentIssues     Int @default(0)
+  styleIssues       Int @default(0)
+  
+  // Specific patterns detected
+  hasContractions   Boolean @default(false)
+  hasOrgWords       Boolean @default(true)
+  hasSpecificDetails Boolean @default(false)
+  hasProperClosing  Boolean @default(false)
+  
+  // Raw AI feedback for reference
+  sentenceFeedback  Json?
+  scoreFeedback     Json?
+  
+  createdAt     DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([sessionId, createdAt])
+  @@map("writing_analyses")
 }

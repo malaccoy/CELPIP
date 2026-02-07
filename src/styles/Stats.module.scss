@@ -1,6 +1,5 @@
-// ============================================
-// 📊 DETAILED STATS STYLES
-// ============================================
+// Stats.module.scss - Unified Design System
+@use 'design-system' as ds;
 
 .statsContainer {
   display: flex;
@@ -11,7 +10,7 @@
 .statsLoading {
   text-align: center;
   padding: 2rem;
-  color: #64748b;
+  color: ds.$text-muted;
 }
 
 // Stats Grid
@@ -26,51 +25,62 @@
 }
 
 .statCard {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-  border: 1px solid var(--border-primary);
-  border-radius: 16px;
-  padding: 1.25rem;
-  text-align: center;
-  transition: all 0.2s ease;
+  @include ds.stat-card;
   
   &:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    border-color: ds.$accent-border;
   }
 }
 
 .statIcon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: ds.$accent-primary-light;
 }
 
 .statValue {
+  font-family: ds.$font-display;
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: ds.$text-primary;
   line-height: 1.2;
 }
 
 .statLabel {
+  font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: var(--text-tertiary);
+  color: ds.$text-muted;
   margin-top: 0.25rem;
 }
 
 // Section Title
 .sectionTitle {
-  font-size: 1rem;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: ds.$text-primary;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, ds.$border-default, transparent);
+  }
 }
 
 // Scores Section
 .scoresSection {
-  background: var(--bg-card);
-  border: 1px solid var(--border-primary);
-  border-radius: 16px;
+  @include ds.card-base;
   padding: 1.25rem;
+  
+  &:hover {
+    transform: none;
+  }
 }
 
 .scoresGrid {
@@ -82,42 +92,48 @@
 .scoreCard {
   text-align: center;
   padding: 1rem;
-  background: var(--bg-secondary);
-  border-radius: 12px;
+  background: ds.$accent-bg;
+  border: 1px solid ds.$accent-border;
+  border-radius: ds.$radius-md;
 }
 
 .scoreTask {
+  font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: var(--text-tertiary);
+  color: ds.$text-muted;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
 }
 
 .scoreValue {
+  font-family: ds.$font-display;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-primary);
+  color: ds.$accent-primary-light;
   
   span {
+    font-family: ds.$font-body;
     font-size: 0.875rem;
-    color: var(--text-muted);
+    color: ds.$text-muted;
     font-weight: 400;
   }
 }
 
 .scoreCount {
   font-size: 0.7rem;
-  color: var(--text-muted);
+  color: ds.$text-muted;
   margin-top: 0.25rem;
 }
 
 // Weekly Activity
 .weeklySection {
-  background: var(--bg-card);
-  border: 1px solid var(--border-primary);
-  border-radius: 16px;
+  @include ds.card-base;
   padding: 1.25rem;
+  
+  &:hover {
+    transform: none;
+  }
 }
 
 .weeklyChart {
@@ -139,7 +155,7 @@
 .weeklyBarFill {
   width: 100%;
   max-width: 36px;
-  background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%);
+  background: linear-gradient(180deg, ds.$accent-primary 0%, ds.$accent-primary-dark 100%);
   border-radius: 6px 6px 0 0;
   min-height: 4px;
   position: relative;
@@ -150,6 +166,7 @@
 }
 
 .weeklyBarValue {
+  font-family: ds.$font-body;
   font-size: 0.625rem;
   color: white;
   font-weight: 600;
@@ -157,18 +174,21 @@
 }
 
 .weeklyBarLabel {
+  font-family: ds.$font-body;
   font-size: 0.625rem;
-  color: var(--text-tertiary);
+  color: ds.$text-muted;
   margin-top: 0.5rem;
   text-transform: uppercase;
 }
 
 // History Section
 .historySection {
-  background: var(--bg-card);
-  border: 1px solid var(--border-primary);
-  border-radius: 16px;
+  @include ds.card-base;
   padding: 1.25rem;
+  
+  &:hover {
+    transform: none;
+  }
 }
 
 .historyList {
@@ -181,45 +201,55 @@
   display: flex;
   align-items: center;
   padding: 0.75rem;
-  background: var(--bg-secondary);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-sm;
   gap: 1rem;
+  transition: all ds.$transition-base;
+  
+  &:hover {
+    background: ds.$accent-bg;
+    border-color: ds.$accent-border;
+  }
 }
 
 .historyDate {
+  font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: var(--text-tertiary);
+  color: ds.$text-muted;
   min-width: 60px;
 }
 
 .historyTask {
+  font-family: ds.$font-body;
   font-size: 0.875rem;
-  color: var(--text-primary);
+  color: ds.$text-primary;
   flex: 1;
 }
 
 .historyScore {
+  font-family: ds.$font-display;
   font-weight: 600;
   font-size: 0.875rem;
 }
 
 .scoreHigh {
-  color: #22c55e;
+  color: ds.$success;
 }
 
 .scoreMid {
-  color: #f59e0b;
+  color: ds.$warning;
 }
 
 .scoreLow {
-  color: #ef4444;
+  color: ds.$error;
 }
 
 // Empty State
 .emptyState {
   text-align: center;
   padding: 2rem;
-  color: var(--text-tertiary);
+  color: ds.$text-muted;
 }
 
 .emptyIcon {
@@ -229,7 +259,8 @@
 }
 
 .emptyHint {
+  font-family: ds.$font-body;
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: ds.$text-muted;
   margin-top: 0.5rem;
 }

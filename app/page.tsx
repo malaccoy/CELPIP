@@ -1,261 +1,192 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { ArrowRight, Sparkles, Zap, Target, Trophy, ChevronDown, PenLine, Mic, BookOpen, Headphones } from 'lucide-react';
+import Link from 'next/link';
+import { 
+  Flame, ChevronRight, Sparkles, Star,
+  PenLine, Mic, BookOpen, Headphones,
+  Zap, Trophy, Check, ArrowRight
+} from 'lucide-react';
 import styles from '@/styles/Home.module.scss';
 
+interface DailyProgress {
+  completed: number;
+  goal: number;
+  streak: number;
+}
+
 export default function HomePage() {
-  const router = useRouter();
   const [mounted, setMounted] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [dailyProgress, setDailyProgress] = useState<DailyProgress>({
+    completed: 0,
+    goal: 3,
+    streak: 0
+  });
 
   useEffect(() => {
     setMounted(true);
-    
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    loadDailyProgress();
   }, []);
 
+  const loadDailyProgress = () => {
+    if (typeof window === 'undefined') return;
+    
+    const today = new Date().toISOString().split('T')[0];
+    const allHistory = [
+      ...JSON.parse(localStorage.getItem('celpip_practice_history') || '[]'),
+      ...JSON.parse(localStorage.getItem('celpip_speaking_history') || '[]'),
+      ...JSON.parse(localStorage.getItem('celpip_reading_history') || '[]'),
+      ...JSON.parse(localStorage.getItem('celpip_listening_history') || '[]'),
+    ];
+    
+    const todayCount = allHistory.filter((p: { date: string }) => 
+      p.date?.startsWith(today)
+    ).length;
+    
+    let streak = 0;
+    const dates = [...new Set(allHistory.map((p: { date: string }) => p.date?.split('T')[0]))].sort().reverse();
+    const checkDate = new Date();
+    
+    for (const date of dates) {
+      const expected = checkDate.toISOString().split('T')[0];
+      if (date === expected) {
+        streak++;
+        checkDate.setDate(checkDate.getDate() - 1);
+      } else {
+        break;
+      }
+    }
+    
+    setDailyProgress({ completed: todayCount, goal: 3, streak });
+  };
+
+  const skills = [
+    {
+      id: 'writing',
+      title: 'Writing',
+      desc: 'Email & Survey tasks with AI feedback',
+      icon: PenLine,
+      color: '#10b981',
+      tags: ['2 task types', 'AI scoring', '5+ tools'],
+      path: '/writing'
+    },
+    {
+      id: 'speaking',
+      title: 'Speaking',
+      desc: 'Record & get instant AI analysis',
+      icon: Mic,
+      color: '#a855f7',
+      tags: ['8 parts', 'Whisper AI', 'Score 1-12'],
+      path: '/speaking'
+    },
+    {
+      id: 'reading',
+      title: 'Reading',
+      desc: 'Practice with real exam passages',
+      icon: BookOpen,
+      color: '#06b6d4',
+      tags: ['4 parts', '38+ questions', 'Timed'],
+      path: '/reading'
+    },
+    {
+      id: 'listening',
+      title: 'Listening',
+      desc: 'Audio plays once - like the real test',
+      icon: Headphones,
+      color: '#f59e0b',
+      tags: ['6 parts', 'TTS audio', 'One-play'],
+      path: '/listening'
+    }
+  ];
+
   return (
-    <div className={styles.homePage}>
-      {/* Cursor follower */}
-      <div 
-        className={styles.cursorGlow}
-        style={{ 
-          left: mousePos.x, 
-          top: mousePos.y,
-          opacity: mounted ? 1 : 0 
-        }}
-      />
-
-      {/* Floating elements */}
-      <div className={styles.floatingElements}>
-        <div className={styles.floatCircle1} />
-        <div className={styles.floatCircle2} />
-        <div className={styles.floatCircle3} />
-        <div className={styles.gridLines} />
-      </div>
-
+    <div className={styles.premiumHome}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <div className={styles.heroTag}>
-            <Sparkles size={14} />
-            <span>CELPIP Preparation</span>
-          </div>
-          
-          <h1 className={styles.heroTitle}>
-            <span className={styles.heroTitleLine1}>Prepare for the</span>
-            <span className={styles.heroTitleLine2}>CELPIP</span>
-            <span className={styles.heroTitleAccent}>Exam</span>
-          </h1>
-          
-          <p className={styles.heroSubtitle}>
-            Practice with real exam-style questions, official timing, 
-            and AI-powered feedback to boost your score.
-          </p>
+        <div className={styles.heroBadge}>
+          <Sparkles size={14} />
+          <span>Complete CELPIP Prep</span>
+        </div>
+        
+        <h1 className={styles.heroTitle}>
+          Master All<br />
+          <span className={styles.heroHighlight}>4 Skills</span>
+        </h1>
+        
+        <p className={styles.heroSubtitle}>
+          Writing, Speaking, Reading & Listening — practice with AI feedback and real exam conditions.
+        </p>
 
-          <div className={styles.heroCTA}>
-            <button 
-              className={styles.ctaPrimary}
-              onClick={() => router.push('/dashboard')}
-            >
-              Start Practicing Now
-              <ArrowRight size={18} />
-            </button>
-            <button 
-              className={styles.ctaSecondary}
-              onClick={() => router.push('/guide')}
-            >
-              View Study Guide
-            </button>
+        {/* Stats Row */}
+        <div className={styles.statsRow}>
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>4</span>
+            <span className={styles.statLabel}>MODULES</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>22</span>
+            <span className={styles.statLabel}>PARTS</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>AI</span>
+            <span className={styles.statLabel}>POWERED</span>
           </div>
         </div>
 
-        <div className={styles.scrollIndicator}>
-          <span>Explore</span>
-          <ChevronDown size={20} />
-        </div>
+        {/* CTA Button */}
+        <Link href="/writing/task-1" className={styles.ctaButton}>
+          <span>Start Practicing</span>
+          <ArrowRight size={20} />
+        </Link>
       </section>
 
-      {/* Modules Overview Section */}
-      <section className={styles.modulesSection}>
+      {/* Skills Section */}
+      <section className={styles.skillsSection}>
         <div className={styles.sectionHeader}>
-          <span className={styles.sectionTag}>Complete Preparation</span>
-          <h2 className={styles.sectionTitle}>All Four Skills</h2>
+          <span className={styles.sectionLabel}>EXPLORE</span>
+          <ChevronRight size={14} className={styles.sectionChevron} />
         </div>
+        <h2 className={styles.sectionTitle}>Choose Your Skill</h2>
+        <p className={styles.sectionSubtitle}>All modules available. Start anywhere.</p>
 
-        <div className={styles.modulesGrid}>
-          <article 
-            className={`${styles.moduleCard} ${styles.moduleActive}`}
-            onClick={() => router.push('/writing')}
-          >
-            <div className={styles.moduleIcon}>
-              <PenLine size={28} />
-            </div>
-            <h3 className={styles.moduleTitle}>Writing</h3>
-            <p className={styles.moduleDesc}>Real tasks · Timer · AI Feedback</p>
-            <div className={styles.moduleBadge}>Available</div>
-          </article>
-
-          <article 
-            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
-            onClick={() => router.push('/speaking')}
-          >
-            <div className={styles.moduleIcon}>
-              <Mic size={28} />
-            </div>
-            <h3 className={styles.moduleTitle}>Speaking</h3>
-            <p className={styles.moduleDesc}>Practice prompts · Recording</p>
-            <div className={styles.moduleBadge}>Coming Soon</div>
-          </article>
-
-          <article 
-            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
-            onClick={() => router.push('/reading')}
-          >
-            <div className={styles.moduleIcon}>
-              <BookOpen size={28} />
-            </div>
-            <h3 className={styles.moduleTitle}>Reading</h3>
-            <p className={styles.moduleDesc}>Exam-style questions</p>
-            <div className={styles.moduleBadge}>Coming Soon</div>
-          </article>
-
-          <article 
-            className={`${styles.moduleCard} ${styles.moduleComingSoon}`}
-            onClick={() => router.push('/listening')}
-          >
-            <div className={styles.moduleIcon}>
-              <Headphones size={28} />
-            </div>
-            <h3 className={styles.moduleTitle}>Listening</h3>
-            <p className={styles.moduleDesc}>Audio practice</p>
-            <div className={styles.moduleBadge}>Coming Soon</div>
-          </article>
-        </div>
-      </section>
-
-      {/* Writing Tasks Section */}
-      <section className={styles.tasksSection}>
-        <div className={styles.sectionHeader}>
-          <span className={styles.sectionTag}>Writing Module</span>
-          <h2 className={styles.sectionTitle}>Two Tasks,<br />One Goal</h2>
-        </div>
-
-        <div className={styles.heroStats}>
-          <div className={styles.heroStat}>
-            <span className={styles.heroStatNumber}>43+</span>
-            <span className={styles.heroStatLabel}>Task 1 Prompts</span>
-          </div>
-          <div className={styles.heroStatDivider} />
-          <div className={styles.heroStat}>
-            <span className={styles.heroStatNumber}>32+</span>
-            <span className={styles.heroStatLabel}>Task 2 Prompts</span>
-          </div>
-          <div className={styles.heroStatDivider} />
-          <div className={styles.heroStat}>
-            <span className={styles.heroStatNumber}>∞</span>
-            <span className={styles.heroStatLabel}>Practices</span>
-          </div>
-        </div>
-
-        <div className={styles.tasksGrid}>
-          {/* Task 1 Card */}
-          <article 
-            className={styles.taskCard}
-            onClick={() => router.push('/writing/task-1')}
-          >
-            <div className={styles.taskCardNumber}>01</div>
-            <div className={styles.taskCardContent}>
-              <div className={styles.taskCardIcon}>✉️</div>
-              <h3 className={styles.taskCardTitle}>Email Writing</h3>
-              <p className={styles.taskCardDesc}>
-                Formal and semi-formal emails. Complaints, requests, 
-                thank you notes. 150-200 words in 27 minutes.
-              </p>
-              <ul className={styles.taskCardFeatures}>
-                <li><Zap size={14} /> Instant feedback</li>
-                <li><Target size={14} /> Word counter</li>
-                <li><Trophy size={14} /> Exam mode</li>
-              </ul>
-            </div>
-            <div className={styles.taskCardArrow}>
-              <ArrowRight size={24} />
-            </div>
-            <div className={styles.taskCardGlow} />
-          </article>
-
-          {/* Task 2 Card */}
-          <article 
-            className={styles.taskCard}
-            onClick={() => router.push('/writing/task-2')}
-          >
-            <div className={styles.taskCardNumber}>02</div>
-            <div className={styles.taskCardContent}>
-              <div className={styles.taskCardIcon}>📋</div>
-              <h3 className={styles.taskCardTitle}>Survey Response</h3>
-              <p className={styles.taskCardDesc}>
-                Opinion surveys. PRE argumentation: Point, Reason, 
-                Example. 150-200 words in 26 minutes.
-              </p>
-              <ul className={styles.taskCardFeatures}>
-                <li><Zap size={14} /> PRE templates</li>
-                <li><Target size={14} /> Guided structure</li>
-                <li><Trophy size={14} /> Real mock test</li>
-              </ul>
-            </div>
-            <div className={styles.taskCardArrow}>
-              <ArrowRight size={24} />
-            </div>
-            <div className={styles.taskCardGlow} />
-          </article>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className={styles.featuresSection}>
-        <div className={styles.featuresGrid}>
-          <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>⚡</div>
-            <h4>Smart Feedback</h4>
-            <p>AI-powered analysis of structure, tone and grammar</p>
-          </div>
-          <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>⏱️</div>
-            <h4>Real Timer</h4>
-            <p>Simulate exact exam conditions</p>
-          </div>
-          <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>📊</div>
-            <h4>Progress</h4>
-            <p>Track your evolution over time</p>
-          </div>
-          <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>💾</div>
-            <h4>Drafts</h4>
-            <p>Save and resume your practices anytime</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className={styles.bottomCTA}>
-        <div className={styles.bottomCTAContent}>
-          <h3>Ready to start?</h3>
-          <p>Your journey to CELPIP success starts with one click.</p>
-          <button 
-            className={styles.ctaPrimary}
-            onClick={() => router.push('/dashboard')}
-          >
-            Start Free Practice
-            <ArrowRight size={18} />
-          </button>
+        <div className={styles.skillsGrid}>
+          {skills.map((skill, index) => {
+            const IconComponent = skill.icon;
+            return (
+              <Link 
+                key={skill.id}
+                href={skill.path}
+                className={styles.skillCard}
+                style={{ '--skill-color': skill.color, '--delay': `${index * 0.1}s` } as React.CSSProperties}
+              >
+                <div className={styles.skillHeader}>
+                  <div className={styles.skillIconBox}>
+                    <IconComponent size={22} />
+                  </div>
+                  <div className={styles.readyBadge}>
+                    <Check size={12} />
+                    <span>READY</span>
+                  </div>
+                </div>
+                
+                <h3 className={styles.skillTitle}>{skill.title}</h3>
+                <p className={styles.skillDesc}>{skill.desc}</p>
+                
+                <div className={styles.skillTags}>
+                  {skill.tags.map((tag, i) => (
+                    <span key={i} className={styles.skillTag}>{tag}</span>
+                  ))}
+                </div>
+                
+                <div className={styles.skillAction}>
+                  <span>Practice Now</span>
+                  <ArrowRight size={16} />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </div>

@@ -120,7 +120,7 @@ export default function LoginPage() {
       <div className={styles.authCard}>
         <div className={styles.authHeader}>
           <h1>Sign In</h1>
-          <p>Access your CELPIP Writing Coach account</p>
+          <p>Access your CELPIP Coach account</p>
         </div>
 
         <Suspense fallback={<div className={styles.loadingCard}><Loader2 size={32} className={styles.spinner} /></div>}>

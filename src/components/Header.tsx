@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, PenTool, BookOpen, Settings, GraduationCap, Flame, Home, Headphones, Mic } from 'lucide-react';
+import { LayoutDashboard, PenTool, BookOpen, Settings, GraduationCap, Flame, Home, Headphones, Mic, User } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeProvider';
 import styles from '@/styles/Layout.module.scss';
 
@@ -16,21 +16,17 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/guide', icon: GraduationCap, label: 'Guide' },
   { to: '/writing', icon: PenTool, label: 'Writing' },
   { to: '/listening', icon: Headphones, label: 'Listening' },
   { to: '/reading', icon: BookOpen, label: 'Reading' },
   { to: '/speaking', icon: Mic, label: 'Speaking' },
-  { to: '/settings', icon: Settings, label: 'Settings' },
+  { to: '/profile', icon: User, label: 'Profile' },
 ];
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
 
   const isActive = (to: string) => {
-    if (to === '/guide') {
-      return pathname === '/guide' || pathname.startsWith('/guide/');
-    }
     if (to === '/writing') {
       return pathname.startsWith('/writing');
     }
@@ -42,6 +38,9 @@ export const Header: React.FC = () => {
     }
     if (to === '/speaking') {
       return pathname.startsWith('/speaking');
+    }
+    if (to === '/profile') {
+      return pathname.startsWith('/profile');
     }
     return pathname === to;
   };
@@ -73,6 +72,12 @@ export const Header: React.FC = () => {
               </Link>
             );
           })}
+          <Link
+            href="/profile"
+            className={`${styles.profileBtn} ${isActive('/profile') ? styles.headerNavLinkActive : ''}`}
+          >
+            <User size={18} />
+          </Link>
           <ThemeToggle className={styles.themeToggle} />
         </nav>
       </div>

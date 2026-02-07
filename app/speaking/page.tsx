@@ -1,109 +1,110 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
-import { Mic, Lock, ArrowLeft, Sparkles, Bell } from 'lucide-react';
-import styles from '@/styles/ComingSoon.module.scss';
+import { 
+  Mic, ArrowRight, Clock, Sparkles
+} from 'lucide-react';
+import { speakingTasks } from '@content/speaking-guide';
+import styles from '@/styles/SpeakingHub.module.scss';
 
-export default function SpeakingPage() {
+export default function SpeakingHubPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleNotify = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      console.log('Notify email:', email);
-      setSubscribed(true);
-      setTimeout(() => {
-        setEmail('');
-        setSubscribed(false);
-      }, 3000);
-    }
-  };
-
-  const tasks = [
-    'Task 1: Giving Advice',
-    'Task 2: Talking about a Personal Experience',
-    'Task 3: Describing a Scene',
-    'Task 4: Making Predictions',
-    'Task 5: Comparing and Persuading',
-    'Task 6: Dealing with a Difficult Situation',
-    'Task 7: Expressing Opinions',
-    'Task 8: Describing an Unusual Situation'
-  ];
+  
+  const totalTime = speakingTasks.reduce((sum, t) => sum + t.prepTime + t.speakTime, 0);
 
   return (
-    <div className={styles.comingSoonContainer}>
-      <button className={styles.backButton} onClick={() => router.push('/dashboard')}>
-        <ArrowLeft size={20} />
-        <span>Back to Dashboard</span>
-      </button>
-
-      <div className={styles.contentWrapper}>
-        <div className={styles.iconWrapper}>
-          <div className={styles.iconGlow} style={{ background: 'radial-gradient(circle, rgba(239, 68, 68, 0.3) 0%, transparent 70%)' }} />
-          <div className={styles.iconCircle} style={{ background: 'linear-gradient(135deg, #ef4444, #dc2626)' }}>
-            <Mic size={64} />
+    <div className={styles.hubContainer}>
+      {/* Header */}
+      <div className={styles.hubHeader}>
+        <div className={styles.hubHeaderContent}>
+          <div className={styles.hubIcon}>
+            <Mic size={32} />
           </div>
-          <div className={styles.lockBadge}>
-            <Lock size={18} />
+          <div className={styles.hubInfo}>
+            <h1>Speaking Practice</h1>
+            <p className={styles.hubSubtitle}>Practice all 8 parts of the CELPIP Speaking test with AI feedback.</p>
           </div>
         </div>
+      </div>
 
-        <h1 className={styles.title}>
-          <span style={{ color: '#ef4444' }}>Speaking</span> is coming!
-        </h1>
-        
-        <p className={styles.description}>
-          Get ready! Soon you'll be able to record your answers, 
-          get AI feedback and practice all 8 CELPIP Speaking tasks.
-        </p>
-
-        <div className={styles.featuresList}>
-          <h3>What's coming:</h3>
-          <ul>
-            {tasks.map((task, idx) => (
-              <li key={idx}>
-                <Sparkles size={16} />
-                <span>{task}</span>
-              </li>
-            ))}
-          </ul>
+      {/* STEP 1 - Parts 1-4 */}
+      <section className={styles.stepSection}>
+        <div className={styles.stepHeader}>
+          <span className={styles.stepNumber}>Step 1</span>
+          <span className={styles.stepLabel}>Foundation Tasks</span>
         </div>
 
-        <div className={styles.notifyBox}>
-          <Bell size={24} />
-          <div className={styles.notifyContent}>
-            <h4>Be the first to know</h4>
-            <p>Get notified when Speaking is released</p>
-            
-            {!subscribed ? (
-              <form onSubmit={handleNotify} className={styles.notifyForm}>
-                <input
-                  type="email"
-                  placeholder="seu@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button type="submit">Notify me</button>
-              </form>
-            ) : (
-              <div className={styles.successMessage}>
-                ✅ You'll be notified soon!
+        {speakingTasks.slice(0, 4).map((task) => (
+          <div 
+            key={task.id} 
+            className={styles.prepCard}
+            onClick={() => router.push(`/speaking/practice/${task.id}`)}
+          >
+            <div className={styles.prepCardIcon}>
+              <span style={{ fontSize: '1.5rem' }}>{task.icon}</span>
+            </div>
+            <div className={styles.prepCardContent}>
+              <h3>Part {task.part}: {task.title}</h3>
+              <p>{task.prepTime}s prep • {task.speakTime}s speak</p>
+            </div>
+            <div className={styles.prepCardAction}>
+              <span>Practice</span>
+              <ArrowRight size={16} />
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* STEP 2 - Parts 5-8 */}
+      <section className={styles.stepSection}>
+        <div className={styles.stepHeader}>
+          <span className={styles.stepNumber}>Step 2</span>
+          <span className={styles.stepLabel}>Advanced Tasks</span>
+        </div>
+
+        {speakingTasks.slice(4).map((task) => (
+          <div 
+            key={task.id}
+            className={styles.examCard}
+            onClick={() => router.push(`/speaking/practice/${task.id}`)}
+          >
+            <div className={styles.examCardHeader}>
+              <div className={styles.examCardIcon}>
+                <span style={{ fontSize: '1.75rem' }}>{task.icon}</span>
               </div>
-            )}
-          </div>
-        </div>
+              <div className={styles.examCardTitle}>
+                <span className={styles.taskBadge}>Part {task.part}</span>
+                <h3>{task.title}</h3>
+              </div>
+            </div>
+            
+            <p className={styles.examCardDesc}>{task.description}</p>
 
-        <div className={styles.progressIndicator}>
-          <span className={styles.progressLabel}>Development progress:</span>
-          <div className={styles.progressBar}>
-            <div className={styles.progressFill} style={{ width: '5%' }} />
+            <div className={styles.examCardMeta}>
+              <div className={styles.metaChip}>
+                <Clock size={14} />
+                <span>{task.prepTime}s prep</span>
+              </div>
+              <div className={styles.metaChip}>
+                <Mic size={14} />
+                <span>{task.speakTime}s speak</span>
+              </div>
+            </div>
+
+            <div className={styles.examCardCta}>
+              <span>Start Practice</span>
+              <ArrowRight size={18} />
+            </div>
           </div>
-          <span className={styles.progressPercent}>5%</span>
-        </div>
+        ))}
+      </section>
+
+      {/* AI Feature Notice */}
+      <div className={styles.guideLink} onClick={() => router.push('/speaking/practice/giving-advice')}>
+        <Sparkles size={18} />
+        <span>Full Speaking Test • ~{Math.round(totalTime / 60)} min • AI Feedback</span>
+        <ArrowRight size={16} />
       </div>
     </div>
   );

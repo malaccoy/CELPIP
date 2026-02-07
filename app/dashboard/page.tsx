@@ -4,16 +4,14 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { 
   PenTool, Headphones, BookOpen, Mic, 
-  TrendingUp, Clock, Award, Lock,
-  ArrowRight, Sparkles, CheckCircle
+  TrendingUp, Clock, Award, ArrowRight, 
+  Sparkles, Target, Flame, BarChart3
 } from 'lucide-react';
 import styles from '@/styles/Dashboard.module.scss';
 
 interface SkillProgress {
-  completed: number;
-  total: number;
-  percentage: number;
-  lastPractice?: string;
+  sessions: number;
+  lastPractice: string | null;
 }
 
 interface DashboardStats {
@@ -25,44 +23,115 @@ interface DashboardStats {
   currentStreak: number;
 }
 
+const STORAGE_KEYS = {
+  writing: 'celpip_practice_history',
+  speaking: 'celpip_speaking_history',
+  reading: 'celpip_reading_history',
+  listening: 'celpip_listening_history',
+};
+
 export default function DashboardPage() {
   const router = useRouter();
   const [stats, setStats] = useState<DashboardStats>({
-    writing: { completed: 0, total: 75, percentage: 0 },
-    listening: { completed: 0, total: 38, percentage: 0 },
-    reading: { completed: 0, total: 35, percentage: 0 },
-    speaking: { completed: 0, total: 40, percentage: 0 },
+    writing: { sessions: 0, lastPractice: null },
+    listening: { sessions: 0, lastPractice: null },
+    reading: { sessions: 0, lastPractice: null },
+    speaking: { sessions: 0, lastPractice: null },
     totalPractices: 0,
     currentStreak: 0
   });
 
   useEffect(() => {
-    // Load stats from localStorage
-    if (typeof window !== 'undefined') {
-      try {
-        // Count writing practices (legacy + new format)
-        const detailedStatsStr = localStorage.getItem('celpip_detailed_stats');
-        let writingCount = 0;
-        
-        if (detailedStatsStr) {
-          const detailedStats = JSON.parse(detailedStatsStr);
-          writingCount = (detailedStats.task1?.length || 0) + (detailedStats.task2?.length || 0);
-        }
-
-        setStats(prev => ({
-          ...prev,
-          writing: {
-            ...prev.writing,
-            completed: writingCount,
-            percentage: Math.min(100, Math.round((writingCount / prev.writing.total) * 100))
-          },
-          totalPractices: writingCount
-        }));
-      } catch (err) {
-        console.error('Failed to load stats:', err);
-      }
-    }
+    loadStats();
   }, []);
+
+  const loadStats = () => {
+    if (typeof window === 'undefined') return;
+    
+    try {
+      const writing = loadModuleStats('writing');
+      const speaking = loadModuleStats('speaking');
+      const reading = loadModuleStats('reading');
+      const listening = loadModuleStats('listening');
+      
+      const total = writing.sessions + speaking.sessions + reading.sessions + listening.sessions;
+      
+      setStats({
+        writing,
+        speaking,
+        reading,
+        listening,
+        totalPractices: total,
+        currentStreak: calculateStreak()
+      });
+    } catch (err) {
+      console.error('Failed to load stats:', err);
+    }
+  };
+
+  const loadModuleStats = (module: keyof typeof STORAGE_KEYS): SkillProgress => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEYS[module]);
+      if (!stored) return { sessions: 0, lastPractice: null };
+      
+      const sessions = JSON.parse(stored);
+      if (!Array.isArray(sessions) || sessions.length === 0) {
+        return { sessions: 0, lastPractice: null };
+      }
+
+      return {
+        sessions: sessions.length,
+        lastPractice: sessions[0]?.date || null
+      };
+    } catch {
+      return { sessions: 0, lastPractice: null };
+    }
+  };
+
+  const calculateStreak = (): number => {
+    try {
+      const allSessions: { date: string }[] = [];
+      
+      Object.values(STORAGE_KEYS).forEach(key => {
+        const stored = localStorage.getItem(key);
+        if (stored) {
+          const sessions = JSON.parse(stored);
+          if (Array.isArray(sessions)) {
+            allSessions.push(...sessions);
+          }
+        }
+      });
+
+      if (allSessions.length === 0) return 0;
+
+      const sortedDates = allSessions
+        .map(s => new Date(s.date).toDateString())
+        .filter((v, i, a) => a.indexOf(v) === i)
+        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
+
+      let streak = 0;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      for (let i = 0; i < sortedDates.length; i++) {
+        const sessionDate = new Date(sortedDates[i]);
+        sessionDate.setHours(0, 0, 0, 0);
+        
+        const expectedDate = new Date(today);
+        expectedDate.setDate(expectedDate.getDate() - i);
+        
+        if (sessionDate.getTime() === expectedDate.getTime()) {
+          streak++;
+        } else {
+          break;
+        }
+      }
+
+      return streak;
+    } catch {
+      return 0;
+    }
+  };
 
   const skills = [
     {
@@ -70,217 +139,145 @@ export default function DashboardPage() {
       title: 'Writing',
       icon: PenTool,
       color: '#10b981',
-      description: 'Email Writing & Survey Response',
-      tasks: ['Task 1: Email', 'Task 2: Survey'],
-      status: 'active',
+      description: 'Email & Survey Response',
       route: '/writing',
-      progress: stats.writing
-    },
-    {
-      id: 'listening',
-      title: 'Listening',
-      icon: Headphones,
-      color: '#3b82f6',
-      description: '6 Parts: Problem Solving to Viewpoints',
-      tasks: ['Part 1-6: Audio comprehension'],
-      status: 'coming-soon',
-      route: '/listening',
-      progress: stats.listening
-    },
-    {
-      id: 'reading',
-      title: 'Reading',
-      icon: BookOpen,
-      color: '#f59e0b',
-      description: '4 Parts: Correspondence to Viewpoints',
-      tasks: ['Part 1-4: Reading comprehension'],
-      status: 'coming-soon',
-      route: '/reading',
-      progress: stats.reading
+      sessions: stats.writing.sessions
     },
     {
       id: 'speaking',
       title: 'Speaking',
       icon: Mic,
-      color: '#ef4444',
-      description: '8 Tasks: Advice to Unusual Situations',
-      tasks: ['Task 1-8: Speaking practice'],
-      status: 'coming-soon',
+      color: '#a855f7',
+      description: '8 Speaking Tasks',
       route: '/speaking',
-      progress: stats.speaking
+      sessions: stats.speaking.sessions
+    },
+    {
+      id: 'reading',
+      title: 'Reading',
+      icon: BookOpen,
+      color: '#06b6d4',
+      description: '4 Reading Parts',
+      route: '/reading',
+      sessions: stats.reading.sessions
+    },
+    {
+      id: 'listening',
+      title: 'Listening',
+      icon: Headphones,
+      color: '#f59e0b',
+      description: '6 Listening Parts',
+      route: '/listening',
+      sessions: stats.listening.sessions
     }
   ];
 
-  const handleSkillClick = (skill: typeof skills[0]) => {
-    if (skill.status === 'active') {
-      router.push(skill.route);
-    } else {
-      // Coming soon notification
-      alert(`${skill.title} is under development! 🚀\n\nYou'll soon be able to practice this skill.`);
-    }
-  };
-
   return (
-    <div className={styles.dashboardContainer}>
+    <div className={styles.container}>
       {/* Header */}
-      <div className={styles.dashboardHeader}>
-        <div className={styles.headerLeft}>
-          <h1>Study Dashboard</h1>
-          <p>Continue your journey to master CELPIP</p>
+      <header className={styles.header}>
+        <div className={styles.headerIcon}>
+          <BarChart3 size={28} />
         </div>
-        <div className={styles.headerRight}>
-          <div className={styles.statBadge}>
-            <Award size={18} />
-            <div>
-              <span className={styles.statValue}>{stats.totalPractices}</span>
-              <span className={styles.statLabel}>Practices</span>
-            </div>
-          </div>
-          <div className={styles.statBadge}>
-            <Clock size={18} />
-            <div>
-              <span className={styles.statValue}>{stats.currentStreak}</span>
-              <span className={styles.statLabel}>Day Streak</span>
-            </div>
-          </div>
+        <div className={styles.headerText}>
+          <h1>Your Progress</h1>
+          <p>Track your CELPIP preparation across all skills</p>
         </div>
-      </div>
+      </header>
 
-      {/* Skills Grid */}
-      <div className={styles.skillsGrid}>
-        {skills.map((skill) => {
-          const Icon = skill.icon;
-          const isLocked = skill.status === 'coming-soon';
-          
-          return (
-            <article 
-              key={skill.id}
-              className={`${styles.skillCard} ${isLocked ? styles.skillCardLocked : ''}`}
-              onClick={() => handleSkillClick(skill)}
-              style={{ '--skill-color': skill.color } as React.CSSProperties}
-            >
-              {/* Lock Badge */}
-              {isLocked && (
-                <div className={styles.lockBadge}>
-                  <Lock size={14} />
-                  <span>Coming Soon</span>
-                </div>
-              )}
-
-              {/* Card Content */}
-              <div className={styles.skillCardHeader}>
-                <div className={styles.skillIcon}>
-                  <Icon size={32} />
-                </div>
-                <div className={styles.skillInfo}>
-                  <h3>{skill.title}</h3>
-                  <p>{skill.description}</p>
-                </div>
-              </div>
-
-              {/* Progress Bar */}
-              <div className={styles.progressSection}>
-                <div className={styles.progressHeader}>
-                  <span className={styles.progressLabel}>Progress</span>
-                  <span className={styles.progressValue}>
-                    {skill.progress.completed} / {skill.progress.total}
-                  </span>
-                </div>
-                <div className={styles.progressBar}>
-                  <div 
-                    className={styles.progressFill}
-                    style={{ width: `${skill.progress.percentage}%` }}
-                  />
-                </div>
-                <div className={styles.progressPercentage}>
-                  {skill.progress.percentage}% complete
-                </div>
-              </div>
-
-              {/* Tasks List */}
-              <div className={styles.tasksList}>
-                {skill.tasks.map((task, idx) => (
-                  <div key={idx} className={styles.taskItem}>
-                    <CheckCircle size={14} />
-                    <span>{task}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Action Button */}
-              <button 
-                className={styles.skillCardButton}
-                disabled={isLocked}
-              >
-                {isLocked ? (
-                  <>
-                    <Lock size={16} />
-                    <span>In Development</span>
-                  </>
-                ) : (
-                  <>
-                    <span>Start</span>
-                    <ArrowRight size={16} />
-                  </>
-                )}
-              </button>
-
-              {/* Glow Effect */}
-              {!isLocked && <div className={styles.skillCardGlow} />}
-            </article>
-          );
-        })}
-      </div>
-
-      {/* Quick Stats Section */}
+      {/* Quick Stats */}
       <div className={styles.quickStats}>
-        <div className={styles.quickStatsHeader}>
-          <TrendingUp size={20} />
-          <h2>Quick Stats</h2>
+        <div className={styles.statCard}>
+          <div className={styles.statIcon}>
+            <Target size={20} />
+          </div>
+          <div className={styles.statInfo}>
+            <span className={styles.statValue}>{stats.totalPractices}</span>
+            <span className={styles.statLabel}>Total Practices</span>
+          </div>
         </div>
-        <div className={styles.quickStatsGrid}>
-          <div className={styles.statCard}>
-            <div className={styles.statCardIcon} style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
-              <PenTool size={24} />
-            </div>
-            <div className={styles.statCardContent}>
-              <span className={styles.statCardValue}>{stats.writing.completed}</span>
-              <span className={styles.statCardLabel}>Writing completed</span>
-            </div>
-          </div>
-          
-          <div className={styles.statCard}>
-            <div className={styles.statCardIcon} style={{ background: 'linear-gradient(135deg, #8b5cf6, #7c3aed)' }}>
-              <Sparkles size={24} />
-            </div>
-            <div className={styles.statCardContent}>
-              <span className={styles.statCardValue}>AI</span>
-              <span className={styles.statCardLabel}>Smart feedback</span>
-            </div>
-          </div>
 
-          <div className={styles.statCard}>
-            <div className={styles.statCardIcon} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
-              <Award size={24} />
-            </div>
-            <div className={styles.statCardContent}>
-              <span className={styles.statCardValue}>MVP</span>
-              <span className={styles.statCardLabel}>Beta Version</span>
-            </div>
+        <div className={styles.statCard}>
+          <div className={`${styles.statIcon} ${styles.flame}`}>
+            <Flame size={20} />
+          </div>
+          <div className={styles.statInfo}>
+            <span className={styles.statValue}>{stats.currentStreak}</span>
+            <span className={styles.statLabel}>Day Streak</span>
+          </div>
+        </div>
+
+        <div className={styles.statCard}>
+          <div className={`${styles.statIcon} ${styles.modules}`}>
+            <Sparkles size={20} />
+          </div>
+          <div className={styles.statInfo}>
+            <span className={styles.statValue}>4</span>
+            <span className={styles.statLabel}>Skills Ready</span>
           </div>
         </div>
       </div>
 
-      {/* Coming Soon Banner */}
-      <div className={styles.comingSoonBanner}>
-        <div className={styles.bannerContent}>
-          <Sparkles size={32} />
-          <div>
-            <h3>More features coming soon</h3>
-            <p>Listening, Reading and Speaking will be launched in the next updates!</p>
+      {/* Skills Section */}
+      <section className={styles.skillsSection}>
+        <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+        
+        <div className={styles.skillsGrid}>
+          {skills.map((skill) => {
+            const Icon = skill.icon;
+            
+            return (
+              <article 
+                key={skill.id}
+                className={styles.skillCard}
+                onClick={() => router.push(skill.route)}
+                style={{ '--skill-color': skill.color } as React.CSSProperties}
+              >
+                <div className={styles.skillHeader}>
+                  <div className={styles.skillIcon}>
+                    <Icon size={24} />
+                  </div>
+                  {skill.sessions > 0 && (
+                    <div className={styles.sessionBadge}>
+                      <Award size={12} />
+                      <span>{skill.sessions}</span>
+                    </div>
+                  )}
+                </div>
+
+                <h3 className={styles.skillTitle}>{skill.title}</h3>
+                <p className={styles.skillDesc}>{skill.description}</p>
+
+                <div className={styles.skillCta}>
+                  <span>{skill.sessions > 0 ? 'Continue' : 'Start'}</span>
+                  <ArrowRight size={16} />
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Motivation */}
+      {stats.totalPractices === 0 && (
+        <div className={styles.motivationCard}>
+          <Sparkles size={24} />
+          <div className={styles.motivationText}>
+            <h3>Ready to start?</h3>
+            <p>Pick any skill above and begin your CELPIP preparation!</p>
           </div>
         </div>
-      </div>
+      )}
+
+      {stats.currentStreak >= 3 && (
+        <div className={`${styles.motivationCard} ${styles.success}`}>
+          <Flame size={24} />
+          <div className={styles.motivationText}>
+            <h3>🔥 {stats.currentStreak} day streak!</h3>
+            <p>Amazing consistency! Keep it going!</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

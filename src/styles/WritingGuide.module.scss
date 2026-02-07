@@ -1,0 +1,673 @@
+// WritingGuide.module.scss - Premium Design
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+$transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0f1a 0%, #0f172a 25%, #1a1f3a 50%, #0f172a 75%, #0a0f1a 100%);
+  padding: 1rem;
+  padding-bottom: 120px;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 10s ease-in-out infinite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: -20%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 12s ease-in-out infinite 2s;
+  }
+}
+
+// Header
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  transition: all $transition-smooth;
+  flex-shrink: 0;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(-3px);
+  }
+}
+
+.headerContent {
+  flex: 1;
+  
+  h1 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.02em;
+    
+    span {
+      background: linear-gradient(135deg, #a5b4fc, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+  }
+}
+
+// Tab Navigation
+.tabNav {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+  position: relative;
+  z-index: 1;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  min-width: 52px;
+  flex-shrink: 0;
+  
+  // Hide label by default on mobile
+  span {
+    display: none;
+  }
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+  }
+  
+  &.active {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.15));
+    border-color: rgba(129, 140, 248, 0.4);
+    color: white;
+    min-width: auto;
+    padding: 0.75rem 1rem;
+    
+    // Show label only when active
+    span {
+      display: block;
+    }
+    
+    svg {
+      color: #818cf8;
+    }
+  }
+  
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  // On larger screens, show all labels
+  @media (min-width: 600px) {
+    min-width: 80px;
+    padding: 0.75rem 1rem;
+    
+    span {
+      display: block;
+    }
+  }
+}
+
+// Content Area
+.content {
+  animation: fadeInUp 0.5s ease-out 0.2s both;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionContent {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  
+  h2 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.01em;
+  }
+  
+  p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+}
+
+.sectionIcon {
+  font-size: 2rem;
+}
+
+.sectionBody {
+  padding: 1.5rem;
+}
+
+// Content Blocks
+.contentHeading {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  margin: 1.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contentText {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 1rem;
+}
+
+.tipBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 12px;
+  margin: 1rem 0;
+  
+  svg {
+    color: #34d399;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    color: #a7f3d0;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.warningBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 12px;
+  margin: 1rem 0;
+  
+  svg {
+    color: #fbbf24;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    color: #fde68a;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.exampleBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 12px;
+  margin: 1rem 0;
+  
+  svg {
+    color: #818cf8;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    color: #c7d2fe;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.formulaBox {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.listBlock {
+  margin: 1rem 0;
+  
+  .listIntro {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 0.5rem;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    
+    li {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+      
+      &::marker {
+        color: #818cf8;
+      }
+    }
+  }
+}
+
+.comparisonBox {
+  margin: 1rem 0;
+  
+  .comparisonIntro {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 0.75rem;
+  }
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.badExample, .goodExample {
+  padding: 0.875rem;
+  border-radius: 10px;
+  
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.badExample {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  
+  .label {
+    color: #f87171;
+  }
+  
+  p {
+    color: #fca5a5;
+  }
+}
+
+.goodExample {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  
+  .label {
+    color: #34d399;
+  }
+  
+  p {
+    color: #a7f3d0;
+  }
+}
+
+// Template Section
+.templateSection {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  
+  h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 1rem;
+  }
+}
+
+.templateBox {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.templateHeader {
+  padding: 0.75rem 1rem;
+  background: rgba(99, 102, 241, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  
+  span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a5b4fc;
+  }
+}
+
+.templateBox pre {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  margin: 0;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+// Checklist Section
+.checklistSection {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.checklistTabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1.5rem 1rem;
+  
+  button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all $transition-smooth;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+    
+    &.active {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.15));
+      border-color: rgba(129, 140, 248, 0.4);
+      color: white;
+    }
+  }
+}
+
+.checklistItems {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  
+  input {
+    display: none;
+  }
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  
+  &.checked {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.25);
+    
+    .checkbox {
+      background: linear-gradient(135deg, #10b981, #059669);
+      border-color: transparent;
+    }
+    
+    .itemText {
+      color: #a7f3d0;
+    }
+  }
+  
+  &.critical .criticalBadge {
+    display: inline-block;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: all $transition-smooth;
+  color: white;
+}
+
+.itemText {
+  flex: 1;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.criticalBadge {
+  display: none;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.4rem;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f87171;
+}
+
+.checklistProgress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  
+  span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+  }
+}
+
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+// Bottom CTA
+.bottomCta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.95) 30%);
+  backdrop-filter: blur(8px);
+  z-index: 50;
+}
+
+.ctaButton, .ctaButtonSecondary {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all $transition-smooth;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.45);
+  }
+}
+
+.ctaButtonSecondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}

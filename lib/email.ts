@@ -11,7 +11,7 @@ export async function sendVerificationEmail(email: string, token: string, name?:
   const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: email,
-    subject: 'Verifique sua conta - CELPIP Writing Coach',
+    subject: 'Verify your account - CELPIP Coach',
     html: `
       <!DOCTYPE html>
       <html>
@@ -23,35 +23,35 @@ export async function sendVerificationEmail(email: string, token: string, name?:
         <div style="max-width: 480px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden;">
           <!-- Header -->
           <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); padding: 32px; text-align: center;">
-            <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">✉️ CELPIP Writing Coach</h1>
+            <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">✉️ CELPIP Coach</h1>
           </div>
           
           <!-- Content -->
           <div style="padding: 32px;">
             <h2 style="color: #1e293b; margin: 0 0 16px; font-size: 20px;">
-              Olá${name ? `, ${name}` : ''}! 👋
+              Hi${name ? ` ${name}` : ''}! 👋
             </h2>
             <p style="color: #475569; line-height: 1.6; margin: 0 0 24px;">
-              Obrigado por se cadastrar no CELPIP Writing Coach! Clique no botão abaixo para verificar seu email e ativar sua conta:
+              Thank you for signing up for CELPIP Coach! Click the button below to verify your email and activate your account:
             </p>
             
             <a href="${verifyUrl}" style="display: block; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; text-decoration: none; padding: 16px 32px; border-radius: 12px; font-weight: 600; text-align: center; margin-bottom: 24px;">
-              Verificar minha conta
+              Verify My Account
             </a>
             
             <p style="color: #94a3b8; font-size: 14px; margin: 0 0 16px;">
-              Este link expira em 24 horas.
+              This link expires in 24 hours.
             </p>
             
             <p style="color: #94a3b8; font-size: 14px; margin: 0;">
-              Se você não criou esta conta, pode ignorar este email.
+              If you didn't create this account, you can safely ignore this email.
             </p>
           </div>
           
           <!-- Footer -->
           <div style="background: #f8fafc; padding: 24px; text-align: center; border-top: 1px solid #e2e8f0;">
             <p style="color: #94a3b8; font-size: 12px; margin: 0;">
-              © 2024 CELPIP Writing Coach. Todos os direitos reservados.
+              © 2024 CELPIP Coach. All rights reserved.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export async function sendPasswordResetEmail(email: string, token: string, name?
   const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: email,
-    subject: 'Recuperação de senha - CELPIP Writing Coach',
+    subject: 'Password Reset - CELPIP Coach',
     html: `
       <!DOCTYPE html>
       <html>
@@ -86,35 +86,35 @@ export async function sendPasswordResetEmail(email: string, token: string, name?
         <div style="max-width: 480px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden;">
           <!-- Header -->
           <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); padding: 32px; text-align: center;">
-            <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">🔐 Recuperação de Senha</h1>
+            <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">🔐 Password Reset</h1>
           </div>
           
           <!-- Content -->
           <div style="padding: 32px;">
             <h2 style="color: #1e293b; margin: 0 0 16px; font-size: 20px;">
-              Olá${name ? `, ${name}` : ''}!
+              Hi${name ? ` ${name}` : ''}!
             </h2>
             <p style="color: #475569; line-height: 1.6; margin: 0 0 24px;">
-              Recebemos uma solicitação para redefinir a senha da sua conta. Clique no botão abaixo para criar uma nova senha:
+              We received a request to reset your account password. Click the button below to create a new password:
             </p>
             
             <a href="${resetUrl}" style="display: block; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; text-decoration: none; padding: 16px 32px; border-radius: 12px; font-weight: 600; text-align: center; margin-bottom: 24px;">
-              Redefinir minha senha
+              Reset My Password
             </a>
             
             <p style="color: #94a3b8; font-size: 14px; margin: 0 0 16px;">
-              Este link expira em 1 hora.
+              This link expires in 1 hour.
             </p>
             
             <p style="color: #94a3b8; font-size: 14px; margin: 0;">
-              Se você não solicitou esta recuperação, pode ignorar este email. Sua senha permanecerá a mesma.
+              If you didn't request this reset, you can safely ignore this email. Your password will remain unchanged.
             </p>
           </div>
           
           <!-- Footer -->
           <div style="background: #f8fafc; padding: 24px; text-align: center; border-top: 1px solid #e2e8f0;">
             <p style="color: #94a3b8; font-size: 12px; margin: 0;">
-              © 2024 CELPIP Writing Coach. Todos os direitos reservados.
+              © 2024 CELPIP Coach. All rights reserved.
             </p>
           </div>
         </div>

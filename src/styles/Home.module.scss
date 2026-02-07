@@ -1,175 +1,34 @@
-// ============================================
-// 🏠 HOME PAGE - DISTINCTIVE DESIGN
-// ============================================
-// Aesthetic: Editorial + Futuristic
-// Typography: Bold, oversized, intentional
-// Layout: Asymmetric, generous whitespace
-// Motion: Orchestrated reveals, purposeful
-// ============================================
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
-
-// Design Tokens
-$font-display: 'Outfit', -apple-system, sans-serif;
-$font-mono: 'Space Mono', monospace;
-
-$color-bg: #0a0a0f;
-$color-surface: #12121a;
-$color-text: #f4f4f5;
-$color-text-muted: #71717a;
-$color-accent: #a855f7;
-$color-accent-alt: #22d3ee;
-$color-accent-warm: #fb923c;
-
-$gradient-hero: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #22d3ee 100%);
-$gradient-card: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-$gradient-glow: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
-
-$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-$ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+// Home.module.scss - Premium Dark Design
 
 // ============================================
-// 🎨 BASE STYLES
+// 🎨 DESIGN TOKENS
 // ============================================
 
-.homePage {
-  min-height: 100vh;
-  background: $color-bg;
-  color: $color-text;
-  font-family: $font-display;
-  position: relative;
-  overflow-x: hidden;
-  
-  // Noise texture overlay
-  &::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 1;
-  }
-}
+$premium-bg: #0f1419;
+$premium-card: #1a1f2e;
+$premium-card-hover: #232938;
+$premium-accent: #8b5cf6;
+$premium-accent-light: #a78bfa;
+$premium-text: #f8fafc;
+$premium-text-muted: rgba(248, 250, 252, 0.6);
+$premium-text-dim: rgba(248, 250, 252, 0.4);
+$premium-border: rgba(139, 92, 246, 0.15);
+$premium-glow: rgba(139, 92, 246, 0.2);
+
+$font-display: 'Playfair Display', Georgia, serif;
+$font-body: 'DM Sans', system-ui, sans-serif;
+
+$ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+$ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 
 // ============================================
-// ✨ CURSOR GLOW
+// ✨ ANIMATIONS
 // ============================================
 
-.cursorGlow {
-  position: fixed;
-  width: 400px;
-  height: 400px;
-  background: $gradient-glow;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-  z-index: 0;
-  
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-// ============================================
-// 🎈 FLOATING ELEMENTS
-// ============================================
-
-.floatingElements {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.floatCircle1,
-.floatCircle2,
-.floatCircle3 {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-}
-
-.floatCircle1 {
-  width: 600px;
-  height: 600px;
-  background: rgba(168, 85, 247, 0.08);
-  top: -200px;
-  right: -200px;
-  animation: float1 20s ease-in-out infinite;
-}
-
-.floatCircle2 {
-  width: 400px;
-  height: 400px;
-  background: rgba(34, 211, 238, 0.06);
-  bottom: 10%;
-  left: -100px;
-  animation: float2 25s ease-in-out infinite;
-}
-
-.floatCircle3 {
-  width: 300px;
-  height: 300px;
-  background: rgba(251, 146, 60, 0.05);
-  top: 50%;
-  right: 10%;
-  animation: float3 18s ease-in-out infinite;
-}
-
-@keyframes float1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(-50px, 50px) scale(1.1); }
-  66% { transform: translate(30px, -30px) scale(0.95); }
-}
-
-@keyframes float2 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(80px, -40px) rotate(180deg); }
-}
-
-@keyframes float3 {
-  0%, 100% { transform: translate(0, 0); opacity: 0.5; }
-  50% { transform: translate(-60px, 60px); opacity: 1; }
-}
-
-.gridLines {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
-}
-
-// ============================================
-// 🦸 HERO SECTION
-// ============================================
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-.heroContent {
-  text-align: center;
-  max-width: 900px;
-  animation: heroReveal 1.2s $ease-out-expo both;
-}
-
-@keyframes heroReveal {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -177,640 +36,331 @@ $ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 }
 
-.heroTag {
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px $premium-glow; }
+  50% { box-shadow: 0 0 35px $premium-glow, 0 0 50px rgba(139, 92, 246, 0.1); }
+}
+
+// ============================================
+// 📱 CONTAINER
+// ============================================
+
+.premiumHome {
+  min-height: 100vh;
+  background: $premium-bg;
+  padding: 1rem 1rem 6rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem 2rem 4rem;
+  }
+}
+
+// ============================================
+// 🌟 HERO SECTION
+// ============================================
+
+.hero {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  animation: fadeInUp 0.8s $ease-smooth;
+}
+
+.heroBadge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(168, 85, 247, 0.1);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 100px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: $color-accent;
-  margin-bottom: 2rem;
-  animation: heroReveal 1.2s $ease-out-expo 0.1s both;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid $premium-border;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
   
   svg {
-    animation: sparkle 2s ease-in-out infinite;
+    color: $premium-accent-light;
   }
-}
-
-@keyframes sparkle {
-  0%, 100% { transform: scale(1) rotate(0deg); }
-  50% { transform: scale(1.2) rotate(180deg); }
+  
+  span {
+    font-family: $font-body;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $premium-accent-light;
+    letter-spacing: 0.02em;
+  }
 }
 
 .heroTitle {
-  margin-bottom: 1.5rem;
-}
-
-.heroTitleLine1,
-.heroTitleLine2 {
-  display: block;
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.heroTitleLine1 {
-  animation: heroReveal 1.2s $ease-out-expo 0.2s both;
-}
-
-.heroTitleLine2 {
-  animation: heroReveal 1.2s $ease-out-expo 0.3s both;
-}
-
-.heroTitleAccent {
-  display: block;
-  font-size: clamp(4rem, 15vw, 10rem);
-  font-weight: 900;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
-  background: $gradient-hero;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: heroReveal 1.2s $ease-out-expo 0.4s both;
+  font-family: $font-display;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: $premium-text-muted;
+  line-height: 1.15;
+  margin-bottom: 1rem;
   
-  // Glow effect
-  filter: drop-shadow(0 0 60px rgba(168, 85, 247, 0.3));
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+.heroHighlight {
+  color: $premium-text;
+  font-weight: 600;
 }
 
 .heroSubtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  font-weight: 400;
-  color: $color-text-muted;
-  line-height: 1.7;
-  max-width: 600px;
-  margin: 0 auto 2.5rem;
-  animation: heroReveal 1.2s $ease-out-expo 0.5s both;
+  font-family: $font-body;
+  font-size: 1rem;
+  color: $premium-text-dim;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
 }
 
-.heroStats {
+// Stats Row
+.statsRow {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  animation: heroReveal 1.2s $ease-out-expo 0.6s both;
-  
-  @media (max-width: 640px) {
-    flex-direction: column;
-    gap: 1rem;
-  }
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.heroStat {
-  text-align: center;
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.heroStatNumber {
-  display: block;
-  font-family: $font-mono;
-  font-size: 2rem;
-  font-weight: 700;
-  color: $color-text;
+.statValue {
+  font-family: $font-display;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: $premium-text;
 }
 
-.heroStatLabel {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: $color-text-muted;
-  text-transform: uppercase;
+.statLabel {
+  font-family: $font-body;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: $premium-text-dim;
   letter-spacing: 0.1em;
 }
 
-.heroStatDivider {
+.statDivider {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.2), transparent);
-  
-  @media (max-width: 640px) {
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
-  }
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.heroCTA {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  animation: heroReveal 1.2s $ease-out-expo 0.7s both;
-  
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.ctaPrimary {
+// CTA Button
+.ctaButton {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
-  padding: 1rem 2rem;
-  background: $gradient-hero;
-  border: none;
-  border-radius: 100px;
-  font-family: $font-display;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  cursor: pointer;
-  transition: all 0.4s $ease-out-expo;
-  position: relative;
-  overflow: hidden;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, $premium-accent, #7c3aed);
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s $ease-bounce;
+  animation: glow 3s ease-in-out infinite;
   
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  span {
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  svg {
+    color: white;
+    transition: transform 0.3s $ease-bounce;
   }
   
   &:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(168, 85, 247, 0.4);
-    
-    &::before {
-      opacity: 1;
-    }
+    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.35);
     
     svg {
       transform: translateX(4px);
     }
   }
   
-  svg {
-    transition: transform 0.3s $ease-out-expo;
+  &:active {
+    transform: translateY(0) scale(0.98);
   }
-}
-
-.ctaSecondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 100px;
-  font-family: $font-display;
-  font-size: 1rem;
-  font-weight: 500;
-  color: $color-text-muted;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    border-color: rgba(255,255,255,0.3);
-    color: $color-text;
-    background: rgba(255,255,255,0.03);
-  }
-}
-
-.scrollIndicator {
-  position: absolute;
-  bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: $color-text-muted;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  animation: bounce 2s ease-in-out infinite;
-  
-  svg {
-    opacity: 0.5;
-  }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
 }
 
 // ============================================
-// 🧩 MODULES SECTION
+// 🎯 SKILLS SECTION
 // ============================================
 
-.modulesSection {
-  padding: 4rem 2rem 6rem;
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(to bottom, transparent, rgba(168, 85, 247, 0.02), transparent);
-}
-
-.modulesGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  max-width: 1000px;
+.skillsSection {
+  max-width: 1100px;
   margin: 0 auto;
-  
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.moduleCard {
-  position: relative;
-  padding: 2rem 1.5rem;
-  background: $gradient-card;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 20px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.4s $ease-out-expo;
-  overflow: hidden;
-  
-  &:hover {
-    transform: translateY(-6px);
-    border-color: rgba(255,255,255,0.12);
-  }
-}
-
-.moduleActive {
-  border-color: rgba(168, 85, 247, 0.3);
-  background: linear-gradient(145deg, rgba(168, 85, 247, 0.08) 0%, rgba(255,255,255,0.02) 100%);
-  
-  &:hover {
-    border-color: rgba(168, 85, 247, 0.5);
-    box-shadow: 0 12px 40px rgba(168, 85, 247, 0.2);
-  }
-  
-  .moduleIcon {
-    color: $color-accent;
-  }
-  
-  .moduleBadge {
-    background: rgba(168, 85, 247, 0.2);
-    color: $color-accent;
-  }
-}
-
-.moduleComingSoon {
-  opacity: 0.7;
-  
-  &:hover {
-    opacity: 0.85;
-  }
-  
-  .moduleIcon {
-    color: $color-text-muted;
-  }
-  
-  .moduleBadge {
-    background: rgba(255,255,255,0.06);
-    color: $color-text-muted;
-  }
-}
-
-.moduleIcon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.04);
-  border-radius: 16px;
-  transition: all 0.3s ease;
-}
-
-.moduleTitle {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: $color-text;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.01em;
-}
-
-.moduleDesc {
-  font-size: 0.8125rem;
-  color: $color-text-muted;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.moduleBadge {
-  display: inline-block;
-  padding: 0.35rem 0.75rem;
-  border-radius: 100px;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-// ============================================
-// 📋 TASKS SECTION
-// ============================================
-
-.tasksSection {
-  padding: 6rem 2rem;
-  position: relative;
-  z-index: 2;
+  animation: fadeInUp 0.8s $ease-smooth 0.2s both;
 }
 
 .sectionHeader {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.sectionTag {
-  display: inline-block;
-  font-family: $font-mono;
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: $color-accent;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 1rem;
-}
-
-.sectionTitle {
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  color: $color-text;
-}
-
-.tasksGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.taskCard {
-  position: relative;
-  background: $gradient-card;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 24px;
-  padding: 2.5rem;
-  cursor: pointer;
-  transition: all 0.5s $ease-out-expo;
-  overflow: hidden;
-  
-  &:hover {
-    transform: translateY(-8px);
-    border-color: rgba(168, 85, 247, 0.3);
-    
-    .taskCardGlow {
-      opacity: 1;
-    }
-    
-    .taskCardArrow {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    
-    .taskCardNumber {
-      color: $color-accent;
-    }
-  }
-}
-
-.taskCardGlow {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.1) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-}
-
-.taskCardNumber {
-  font-family: $font-mono;
-  font-size: 4rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.05);
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.taskCardContent {
-  position: relative;
-  z-index: 1;
-}
-
-.taskCardIcon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
-.taskCardTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $color-text;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
-}
-
-.taskCardDesc {
-  font-size: 0.9375rem;
-  color: $color-text-muted;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.taskCardFeatures {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  
-  li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8125rem;
-    color: $color-text-muted;
-    
-    svg {
-      color: $color-accent-alt;
-    }
-  }
-}
-
-.taskCardArrow {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 48px;
-  height: 48px;
-  background: rgba(168, 85, 247, 0.1);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $color-accent;
-  transform: translateX(-10px);
-  opacity: 0;
-  transition: all 0.4s $ease-out-expo;
-}
-
-// ============================================
-// ⚡ FEATURES SECTION
-// ============================================
-
-.featuresSection {
-  padding: 4rem 2rem 6rem;
-  position: relative;
-  z-index: 2;
-}
-
-.featuresGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.featureCard {
-  padding: 2rem;
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.04);
-  border-radius: 16px;
-  text-align: center;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    background: rgba(255,255,255,0.04);
-    border-color: rgba(255,255,255,0.08);
-    transform: translateY(-4px);
-  }
-}
-
-.featureIcon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.featureCard h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: $color-text;
+  gap: 0.35rem;
   margin-bottom: 0.5rem;
 }
 
-.featureCard p {
-  font-size: 0.8125rem;
-  color: $color-text-muted;
-  line-height: 1.5;
+.sectionLabel {
+  font-family: $font-body;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: $premium-text-dim;
+  letter-spacing: 0.15em;
 }
 
-// ============================================
-// 🎯 BOTTOM CTA
-// ============================================
-
-.bottomCTA {
-  padding: 6rem 2rem;
-  position: relative;
-  z-index: 2;
+.sectionChevron {
+  color: $premium-text-dim;
+  animation: fadeInUp 0.5s ease 0.5s both;
 }
 
-.bottomCTAContent {
-  max-width: 600px;
-  margin: 0 auto;
+.sectionTitle {
+  font-family: $font-display;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: $premium-text;
+  margin: 0 0 0.5rem;
   text-align: center;
-  padding: 4rem;
-  background: $gradient-card;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 32px;
-  position: relative;
-  overflow: hidden;
+}
+
+.sectionSubtitle {
+  font-family: $font-body;
+  font-size: 0.9rem;
+  color: $premium-text-dim;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+// Skills Grid
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.15) 0%, transparent 50%);
-    pointer-events: none;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  h3 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 700;
-    color: $color-text;
-    margin-bottom: 0.75rem;
-    position: relative;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: $color-text-muted;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
-  .ctaPrimary {
-    position: relative;
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-// ============================================
-// 📱 MOBILE OPTIMIZATIONS
-// ============================================
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: $premium-card;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.4s $ease-smooth;
+  
+  &:hover {
+    background: $premium-card-hover;
+    border-color: var(--skill-color);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    
+    .skillAction svg {
+      transform: translateX(4px);
+    }
+  }
+}
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 1.5rem;
-    min-height: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.skillHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skillIconBox {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--skill-color);
+  border-radius: 14px;
+  color: white;
+}
+
+.readyBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.6rem;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 50px;
+  
+  svg {
+    color: #22c55e;
   }
   
-  .heroTag {
-    margin-bottom: 1.5rem;
+  span {
+    font-family: $font-body;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #22c55e;
+    letter-spacing: 0.05em;
   }
+}
+
+.skillTitle {
+  font-family: $font-body;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $premium-text;
+  margin: 0 0 0.35rem;
+}
+
+.skillDesc {
+  font-family: $font-body;
+  font-size: 0.8rem;
+  color: $premium-text-muted;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.skillTag {
+  padding: 0.3rem 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  font-family: $font-body;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: $premium-text-dim;
+}
+
+.skillAction {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--skill-color);
+  margin-top: auto;
   
-  .heroSubtitle {
-    margin-bottom: 2rem;
-  }
-  
-  .heroStats {
-    margin-bottom: 2rem;
-  }
-  
-  .scrollIndicator {
-    display: none;
-  }
-  
-  .tasksSection {
-    padding: 4rem 1.5rem;
-  }
-  
-  .taskCard {
-    padding: 2rem;
-  }
-  
-  .taskCardNumber {
-    font-size: 3rem;
-  }
-  
-  .bottomCTAContent {
-    padding: 2.5rem 1.5rem;
+  svg {
+    transition: transform 0.3s $ease-bounce;
   }
 }

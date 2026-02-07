@@ -133,7 +133,7 @@ export default function ExamMode({
   };
 
   const handleFinishEarly = () => {
-    if (confirm('Tem certeza que deseja finalizar o exame agora?')) {
+    if (confirm('Are you sure you want to finish the exam now?')) {
       handleExamEnd(true);
     }
   };
@@ -167,10 +167,10 @@ export default function ExamMode({
           onClick={() => onToggle(true)}
         >
           <Lock size={18} />
-          <span>Ativar Modo Exame</span>
+          <span>Activate Exam Mode</span>
         </button>
         <p className={styles.examToggleHint}>
-          Simula condições reais do CELPIP: timer travado, sem pausas.
+          Simulates real CELPIP conditions: locked timer, no pauses.
         </p>
       </div>
     );
@@ -184,18 +184,18 @@ export default function ExamMode({
           <div className={styles.examStartIcon}>
             <Clock size={48} />
           </div>
-          <h2>Modo Exame Simulado</h2>
+          <h2>Exam Simulation Mode</h2>
           <p className={styles.examStartDesc}>
             {taskType === 'task1' ? 'Task 1 — Email Writing' : 'Task 2 — Survey Response'}
           </p>
           
           <div className={styles.examRules}>
-            <h3>⚠️ Regras do Modo Exame:</h3>
+            <h3>⚠️ Exam Mode Rules:</h3>
             <ul>
-              <li><Clock size={14} /> Timer de <strong>{totalMinutes} minutos</strong> — não pode pausar</li>
-              <li><Lock size={14} /> Sem voltar aos steps anteriores durante a escrita</li>
-              <li><AlertTriangle size={14} /> Aviso sonoro quando faltar 5 minutos</li>
-              <li><XCircle size={14} /> Se o tempo acabar, o exame termina automaticamente</li>
+              <li><Clock size={14} /> <strong>{totalMinutes} minutes</strong> timer — cannot pause</li>
+              <li><Lock size={14} /> Cannot go back to previous steps during writing</li>
+              <li><AlertTriangle size={14} /> Sound alert when 5 minutes remain</li>
+              <li><XCircle size={14} /> If time runs out, the exam ends automatically</li>
             </ul>
           </div>
 
@@ -210,7 +210,7 @@ export default function ExamMode({
               className={styles.examStartBtn}
               onClick={handleStartExam}
             >
-              <Play size={18} /> Iniciar Exame
+              <Play size={18} /> Start Exam
             </button>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function ExamMode({
         <div className={`${styles.examTimer} ${showWarning ? styles.examTimerWarning : ''} ${timeLeft <= 60 ? styles.examTimerCritical : ''}`}>
           <div className={styles.examTimerContent}>
             <span className={styles.examTimerLabel}>
-              {showWarning ? '⚠️ ATENÇÃO' : '🎯 MODO EXAME'}
+              {showWarning ? '⚠️ WARNING' : '🎯 EXAM MODE'}
             </span>
             <span className={styles.examTimerDisplay}>
               {formatTime(timeLeft)}
@@ -234,7 +234,7 @@ export default function ExamMode({
               className={styles.examFinishBtn}
               onClick={handleFinishEarly}
             >
-              <CheckCircle size={16} /> Finalizar
+              <CheckCircle size={16} /> Finish
             </button>
           </div>
           <div 
@@ -259,21 +259,21 @@ export default function ExamMode({
             {examStats?.completed ? <Trophy size={48} /> : <XCircle size={48} />}
           </div>
           
-          <h2>{examStats?.completed ? 'Exame Concluído!' : 'Tempo Esgotado!'}</h2>
+          <h2>{examStats?.completed ? 'Exam Completed!' : 'Time\'s Up!'}</h2>
           
           <div className={styles.examStats}>
             <div className={styles.examStatItem}>
-              <span className={styles.examStatLabel}>Tempo usado</span>
+              <span className={styles.examStatLabel}>Time used</span>
               <span className={styles.examStatValue}>
                 {examStats ? formatTimeUsed(examStats.timeUsed) : '--'}
               </span>
             </div>
             <div className={styles.examStatItem}>
-              <span className={styles.examStatLabel}>Tempo disponível</span>
+              <span className={styles.examStatLabel}>Time available</span>
               <span className={styles.examStatValue}>{totalMinutes}m</span>
             </div>
             <div className={styles.examStatItem}>
-              <span className={styles.examStatLabel}>Uso do tempo</span>
+              <span className={styles.examStatLabel}>Time usage</span>
               <span className={`${styles.examStatValue} ${isGoodTime ? styles.examStatGood : ''}`}>
                 {timeUsedPercent}%
               </span>
@@ -283,11 +283,11 @@ export default function ExamMode({
           <p className={styles.examResultTip}>
             {examStats?.completed 
               ? isGoodTime 
-                ? '✅ Ótimo gerenciamento de tempo!' 
+                ? '✅ Great time management!' 
                 : timeUsedPercent < 70 
-                  ? '💡 Você terminou rápido demais. Revise seu texto com calma!'
-                  : '⚠️ Cuidado! Você usou quase todo o tempo.'
-              : '💪 Não desista! Pratique mais para melhorar sua velocidade.'}
+                  ? '💡 You finished too quickly. Take time to review your text!'
+                  : '⚠️ Careful! You used almost all your time.'
+              : '💪 Don\'t give up! Practice more to improve your speed.'}
           </p>
 
           <div className={styles.examResultActions}>
@@ -295,13 +295,13 @@ export default function ExamMode({
               className={styles.examRestartBtn}
               onClick={handleRestart}
             >
-              <RotateCcw size={18} /> Tentar Novamente
+              <RotateCcw size={18} /> Try Again
             </button>
             <button 
               className={styles.examExitBtn}
               onClick={() => onToggle(false)}
             >
-              <Unlock size={18} /> Sair do Modo Exame
+              <Unlock size={18} /> Exit Exam Mode
             </button>
           </div>
         </div>

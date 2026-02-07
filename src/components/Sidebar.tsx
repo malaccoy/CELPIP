@@ -15,7 +15,6 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/guide', icon: GraduationCap, label: 'Guide' },
   { to: '/writing', icon: PenTool, label: 'Writing' },
   { to: '/listening', icon: Headphones, label: 'Listening' },
   { to: '/reading', icon: BookOpen, label: 'Reading' },
@@ -44,9 +43,6 @@ export const Sidebar: React.FC = () => {
   }, [pathname]);
 
   const isActive = (to: string) => {
-    if (to === '/guide') {
-      return pathname === '/guide' || pathname.startsWith('/guide/');
-    }
     if (to === '/writing') {
       return pathname.startsWith('/writing');
     }
