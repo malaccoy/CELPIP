@@ -372,21 +372,72 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   border-radius: 14px;
   flex-shrink: 0;
   color: white;
+  transition: all 0.35s $ease-out;
+  animation: iconFloat 3s ease-in-out infinite;
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
   
   &.writing {
-    background: linear-gradient(135deg, $writing 0%, oklch(0.55 0.2 170) 100%);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3),
+                0 0 20px rgba(16, 185, 129, 0.2);
   }
   
   &.speaking {
-    background: linear-gradient(135deg, $speaking 0%, oklch(0.55 0.25 290) 100%);
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3),
+                0 0 20px rgba(168, 85, 247, 0.2);
   }
   
   &.reading {
-    background: linear-gradient(135deg, $reading 0%, oklch(0.55 0.2 240) 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3),
+                0 0 20px rgba(6, 182, 212, 0.2);
   }
   
   &.listening {
-    background: linear-gradient(135deg, $listening 0%, oklch(0.6 0.2 50) 100%);
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3),
+                0 0 20px rgba(245, 158, 11, 0.2);
+  }
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.skillCard:hover .skillIcon {
+  transform: scale(1.1) rotate(-5deg);
+  
+  &.writing {
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4),
+                0 0 30px rgba(16, 185, 129, 0.3);
+  }
+  
+  &.speaking {
+    box-shadow: 0 8px 24px rgba(168, 85, 247, 0.4),
+                0 0 30px rgba(168, 85, 247, 0.3);
+  }
+  
+  &.reading {
+    box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4),
+                0 0 30px rgba(6, 182, 212, 0.3);
+  }
+  
+  &.listening {
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4),
+                0 0 30px rgba(245, 158, 11, 0.3);
+  }
+  
+  svg {
+    transform: scale(1.1);
   }
 }
 

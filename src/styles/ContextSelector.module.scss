@@ -3,7 +3,13 @@
 // ============================================
 
 $gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-$glass-bg: rgba(255, 255, 255, 0.95);
+$glass-bg: rgba(26, 31, 46, 0.98);
+$surface-dark: #1a1f2e;
+$surface-light: #232938;
+$text-primary: #f8fafc;
+$text-secondary: rgba(248, 250, 252, 0.7);
+$text-muted: rgba(248, 250, 252, 0.5);
+$border-color: rgba(139, 92, 246, 0.2);
 $transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -29,22 +35,22 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   gap: 0.75rem;
   width: 100%;
   padding: 0.875rem 1rem;
-  background: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);
-  border: 2px solid #e2e8f0;
+  background: linear-gradient(135deg, $surface-light 0%, $surface-dark 100%);
+  border: 2px solid $border-color;
   border-radius: 14px;
   cursor: pointer;
   transition: all $transition-smooth;
   text-align: left;
   
   &:hover {
-    border-color: #cbd5e1;
-    background: linear-gradient(135deg, rgba(241, 245, 249, 0.98) 0%, rgba(226, 232, 240, 0.98) 100%);
+    border-color: rgba(139, 92, 246, 0.4);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, $surface-dark 100%);
   }
   
   &:focus {
     outline: none;
     border-color: #818cf8;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
   }
 }
 
@@ -75,14 +81,14 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   flex: 1;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #334155;
+  color: rgba(248, 250, 252, 0.85);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .triggerChevron {
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   transition: transform $transition-fast;
   flex-shrink: 0;
 }
@@ -103,10 +109,10 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background: $glass-bg;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid $border-color;
   border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15),
-              0 0 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4),
+              0 0 0 1px rgba(139, 92, 246, 0.1);
   overflow: hidden;
   animation: slideDown 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: 100;
@@ -130,8 +136,8 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .searchContainer {
   position: relative;
   padding: 0.75rem;
-  border-bottom: 1px solid #e2e8f0;
-  background: rgba(248, 250, 252, 0.8);
+  border-bottom: 1px solid $border-color;
+  background: $surface-dark;
 }
 
 .searchIcon {
@@ -139,28 +145,28 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   left: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #94a3b8;
+  color: $text-muted;
   pointer-events: none;
 }
 
 .searchInput {
   width: 100%;
   padding: 0.625rem 2.5rem 0.625rem 2.5rem;
-  background: white;
-  border: 1.5px solid #e2e8f0;
+  background: $surface-light;
+  border: 1.5px solid $border-color;
   border-radius: 10px;
   font-size: 0.875rem;
-  color: #1e293b;
+  color: $text-primary;
   transition: all $transition-fast;
   
   &::placeholder {
-    color: #94a3b8;
+    color: $text-muted;
   }
   
   &:focus {
     outline: none;
     border-color: #818cf8;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
   }
 }
 
@@ -174,16 +180,16 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   justify-content: center;
   width: 1.25rem;
   height: 1.25rem;
-  background: #e2e8f0;
+  background: #2a3142;
   border: none;
   border-radius: 50%;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   cursor: pointer;
   transition: all $transition-fast;
   
   &:hover {
     background: #cbd5e1;
-    color: #334155;
+    color: rgba(248, 250, 252, 0.85);
   }
 }
 
@@ -231,7 +237,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 .categoryGroup {
   &:not(:last-child) {
-    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+    border-bottom: 1px solid $border-color;
   }
 }
 
@@ -242,10 +248,10 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0.75rem 1rem 0.5rem;
   font-size: 0.6875rem;
   font-weight: 700;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  background: rgba(248, 250, 252, 0.6);
+  background: rgba(26, 31, 46, 0.6);
   position: sticky;
   top: 0;
   z-index: 5;
@@ -284,20 +290,20 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .optionItemSelected {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.15) 100%);
   
   .optionTitle {
-    color: #4f46e5;
+    color: #a5b4fc;
     font-weight: 600;
   }
 }
 
 // Active state for hovered/tapped items showing preview
 .optionItemActive {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(139, 92, 246, 0.12) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.15) 100%);
   
   .optionTitle {
-    color: #4f46e5;
+    color: #a5b4fc;
   }
   
   .optionPreviewHint {
@@ -306,24 +312,24 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .optionItemCustom {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
   border-left: 3px solid #10b981;
   margin: 0.25rem 0.5rem;
   border-radius: 8px;
   
   &:hover {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
   }
   
   .optionTitle {
-    color: #059669;
+    color: #34d399;
     font-weight: 600;
   }
 }
 
 .optionTitle {
-  font-size: 0.8125rem;
-  color: #334155;
+  font-size: 0.875rem;
+  color: $text-primary;
   line-height: 1.4;
   transition: color $transition-fast;
 }
@@ -348,8 +354,8 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   min-width: 0;
   opacity: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%);
-  border-left: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, $surface-dark 0%, $surface-light 100%);
+  border-left: 1px solid $border-color;
   transition: 
     width $transition-preview,
     min-width $transition-preview,
@@ -382,15 +388,15 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e2e8f0;
-  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid $border-color;
+  background: rgba(26, 31, 46, 0.8);
   flex-shrink: 0;
 }
 
 .previewLabel {
   font-size: 0.6875rem;
   font-weight: 700;
-  color: #6366f1;
+  color: #a5b4fc;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -401,16 +407,16 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
-  background: rgba(226, 232, 240, 0.8);
+  background: rgba(139, 92, 246, 0.2);
   border: none;
   border-radius: 50%;
-  color: #64748b;
+  color: $text-secondary;
   cursor: pointer;
   transition: all $transition-fast;
   
   &:hover {
-    background: rgba(99, 102, 241, 0.15);
-    color: #4f46e5;
+    background: rgba(139, 92, 246, 0.4);
+    color: $text-primary;
   }
 }
 
@@ -448,7 +454,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   h4 {
     font-size: 0.875rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #f8fafc;
     margin: 0 0 0.75rem 0;
     line-height: 1.3;
     word-break: break-word;
@@ -457,7 +463,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   
   p {
     font-size: 0.75rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     line-height: 1.6;
     margin: 0;
     white-space: pre-wrap;
@@ -482,8 +488,8 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .previewFooter {
   flex-shrink: 0;
   padding: 0.75rem;
-  background: linear-gradient(180deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 1) 100%);
-  border-top: 1px solid rgba(226, 232, 240, 0.6);
+  background: linear-gradient(180deg, $surface-light 0%, $surface-dark 100%);
+  border-top: 1px solid $border-color;
 }
 
 .previewSelectBtn {
@@ -526,7 +532,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   
   p {
     font-size: 0.75rem;
-    color: #94a3b8;
+    color: rgba(248, 250, 252, 0.5);
     margin: 0;
     line-height: 1.5;
   }
@@ -552,7 +558,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   
   p {
     font-size: 0.875rem;
-    color: #64748b;
+    color: rgba(248, 250, 252, 0.6);
     margin: 0;
   }
 }
@@ -576,7 +582,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     width: 100% !important;
     min-width: 100% !important;
     border-left: none;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid $border-color;
     max-height: 0;
     overflow: hidden;
     transition: 

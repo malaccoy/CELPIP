@@ -183,8 +183,8 @@
 }
 
 .skillIconBox {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: ds.$radius-md;
   display: flex;
   align-items: center;
@@ -193,6 +193,32 @@
   background: var(--skill-color, ds.$accent-bg);
   color: white;
   transition: all ds.$transition-smooth;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2),
+              0 0 20px var(--skill-glow, rgba(139, 92, 246, 0.2));
+  animation: iconFloat 3s ease-in-out infinite;
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.skillCard:hover .skillIconBox {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
+              0 0 30px var(--skill-glow, rgba(139, 92, 246, 0.4));
+  
+  svg {
+    transform: scale(1.1);
+  }
 }
 
 .skillName {
@@ -229,9 +255,12 @@
 // Skill Color Modifiers
 .writing {
   --skill-color: #{ds.$skill-writing};
+  --skill-glow: rgba(16, 185, 129, 0.35);
   
   .skillIconBox {
     background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3),
+                0 0 20px rgba(16, 185, 129, 0.2);
   }
   
   .skillAction {
@@ -241,9 +270,12 @@
 
 .speaking {
   --skill-color: #{ds.$skill-speaking};
+  --skill-glow: rgba(168, 85, 247, 0.35);
   
   .skillIconBox {
     background: linear-gradient(135deg, #a855f7, #7c3aed);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3),
+                0 0 20px rgba(168, 85, 247, 0.2);
   }
   
   .skillAction {
@@ -253,9 +285,12 @@
 
 .reading {
   --skill-color: #{ds.$skill-reading};
+  --skill-glow: rgba(6, 182, 212, 0.35);
   
   .skillIconBox {
     background: linear-gradient(135deg, #06b6d4, #0891b2);
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3),
+                0 0 20px rgba(6, 182, 212, 0.2);
   }
   
   .skillAction {
@@ -265,9 +300,12 @@
 
 .listening {
   --skill-color: #{ds.$skill-listening};
+  --skill-glow: rgba(245, 158, 11, 0.35);
   
   .skillIconBox {
     background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3),
+                0 0 20px rgba(245, 158, 11, 0.2);
   }
   
   .skillAction {

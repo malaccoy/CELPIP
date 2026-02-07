@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, PenTool, BookOpen, Menu, X, Headphones, Mic, Home, User } from 'lucide-react';
+import { Home, Dumbbell, User, Menu, X } from 'lucide-react';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -14,11 +14,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
-  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/writing', icon: PenTool, label: 'Writing' },
-  { to: '/listening', icon: Headphones, label: 'Listening' },
-  { to: '/reading', icon: BookOpen, label: 'Reading' },
-  { to: '/speaking', icon: Mic, label: 'Speaking' },
+  { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
   { to: '/profile', icon: User, label: 'Profile' },
 ];
 

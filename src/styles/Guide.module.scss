@@ -122,7 +122,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   backdrop-filter: $glass-blur;
   -webkit-backdrop-filter: $glass-blur;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25),
               0 0 0 1px rgba(255, 255, 255, 0.7),
               inset 0 1px 0 rgba(255, 255, 255, 0.6);
   border: 1px solid $glass-border;
@@ -171,18 +171,31 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   justify-content: center;
   background: $gradient-primary;
   color: white;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3),
+              0 0 16px rgba(99, 102, 241, 0.15);
+  animation: iconFloat 3s ease-in-out infinite;
+  transition: all 0.3s ease;
   
   svg {
     width: 1.125rem;
     height: 1.125rem;
+    transition: transform 0.3s ease;
   }
+  
+  &:hover {
+    transform: scale(1.1) rotate(-5deg);
+  }
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
 .cardTitle {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
   letter-spacing: -0.01em;
 }
 
@@ -192,7 +205,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .introDescription {
   font-size: 0.9375rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   line-height: 1.7;
   margin-bottom: 1.25rem;
 }
@@ -213,14 +226,14 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .contentItem {
   font-size: 0.9375rem;
-  color: #334155;
+  color: rgba(248, 250, 252, 0.85);
   padding: 0.75rem 1rem;
   padding-left: 2.5rem;
   position: relative;
   line-height: 1.6;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.8) 100%);
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   transition: all $transition-fast;
 
   &::before {
@@ -265,7 +278,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   backdrop-filter: $glass-blur;
   -webkit-backdrop-filter: $glass-blur;
   border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25),
               0 0 0 1px rgba(255, 255, 255, 0.7),
               inset 0 1px 0 rgba(255, 255, 255, 0.6);
   border: 1px solid $glass-border;
@@ -333,14 +346,14 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .guideTaskTitle {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #f8fafc;
   margin-bottom: 0.625rem;
   letter-spacing: -0.02em;
 }
 
 .guideTaskDescription {
   font-size: 0.9375rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   line-height: 1.6;
   margin-bottom: 1.25rem;
 }
@@ -356,7 +369,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     align-items: flex-start;
     gap: 0.625rem;
     font-size: 0.875rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(226, 232, 240, 0.5);
     transition: all $transition-fast;
@@ -366,7 +379,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     }
     
     &:hover {
-      color: #334155;
+      color: rgba(248, 250, 252, 0.85);
       transform: translateX(4px);
     }
 
@@ -432,7 +445,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .generalTipItem {
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
 
@@ -445,12 +458,12 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   h4 {
     font-size: 0.9375rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #f8fafc;
   }
 
   p {
     font-size: 0.8125rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     line-height: 1.6;
     margin-top: 0.5rem;
   }
@@ -500,11 +513,11 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   font-size: 0.875rem;
   font-weight: 500;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 10px;
   cursor: pointer;
   transition: all $transition-fast;
@@ -513,7 +526,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   &:hover {
     color: #6366f1;
     border-color: rgba(99, 102, 241, 0.3);
-    background: white;
+    background: #1a1f2e;
     transform: translateX(-4px);
   }
   
@@ -590,7 +603,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .structureBlock {
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
   
@@ -607,7 +620,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   gap: 0.625rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
   margin-bottom: 0.875rem;
 }
 
@@ -632,7 +645,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
   li {
     font-size: 0.8125rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(226, 232, 240, 0.7);
     line-height: 1.5;
@@ -669,7 +682,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .elementCard {
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
   
@@ -703,25 +716,25 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .elementName {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #f8fafc;
 }
 
 .elementDescription {
   font-size: 0.8125rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
 
 .elementExample {
   padding: 0.625rem 0.875rem;
-  background: white;
+  background: #1a1f2e;
   border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
 
   code {
     font-size: 0.75rem;
-    color: #334155;
+    color: rgba(248, 250, 252, 0.85);
     font-family: $font-mono;
     word-break: break-word;
   }
@@ -746,7 +759,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .checklistSection {
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
   
@@ -759,7 +772,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .checklistCategory {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
   margin-bottom: 0.875rem;
   padding-bottom: 0.625rem;
   border-bottom: 2px solid rgba(99, 102, 241, 0.2);
@@ -775,12 +788,12 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     align-items: flex-start;
     gap: 0.5rem;
     font-size: 0.8125rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     padding: 0.5rem 0;
     transition: all $transition-fast;
     
     &:hover {
-      color: #334155;
+      color: rgba(248, 250, 252, 0.85);
       transform: translateX(4px);
     }
 
@@ -837,7 +850,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .criteriaDescription {
   font-size: 0.8125rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   line-height: 1.6;
 }
 
@@ -857,7 +870,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   gap: 0.625rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
   margin-bottom: 1rem;
 
   svg {
@@ -872,7 +885,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
   li {
     font-size: 0.875rem;
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
     padding: 0.625rem 0;
     padding-left: 1.5rem;
     position: relative;
@@ -888,7 +901,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
     }
     
     &:hover {
-      color: #334155;
+      color: rgba(248, 250, 252, 0.85);
       transform: translateX(4px);
     }
   }
@@ -989,7 +1002,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .featureDescription {
   font-size: 0.8125rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   line-height: 1.6;
 }
 
@@ -1008,7 +1021,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   gap: 1.25rem;
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
   
@@ -1041,26 +1054,26 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .preName {
   font-size: 1rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
   margin-bottom: 0.375rem;
 }
 
 .preDescription {
   font-size: 0.8125rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
 
 .preExample {
   padding: 0.625rem 0.875rem;
-  background: white;
+  background: #1a1f2e;
   border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
 
   code {
     font-size: 0.75rem;
-    color: #334155;
+    color: rgba(248, 250, 252, 0.85);
     font-family: $font-mono;
     word-break: break-word;
     line-height: 1.6;
@@ -1073,7 +1086,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .sectionSubtitle {
   font-size: 0.9375rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   font-style: italic;
   margin-bottom: 1.25rem;
   line-height: 1.6;
@@ -1107,7 +1120,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .ctaText {
   font-size: 1rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #f8fafc;
 }
 
 // ============================================
@@ -1173,9 +1186,9 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .exampleItem {
   padding: 1rem;
-  background: white;
+  background: #1a1f2e;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   transition: all $transition-smooth;
   
   &:hover {
@@ -1187,17 +1200,17 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .exampleSituation {
   font-size: 0.8125rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   margin-bottom: 0.5rem;
   
   strong {
-    color: #475569;
+    color: rgba(248, 250, 252, 0.7);
   }
 }
 
 .exampleInvention {
   font-size: 0.875rem;
-  color: #1e293b;
+  color: #f8fafc;
   padding-left: 1rem;
   border-left: 3px solid #10b981;
   
@@ -1219,7 +1232,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .phraseCategory {
   padding: 1.25rem;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 16px;
   transition: all $transition-smooth;
   
@@ -1257,9 +1270,9 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
   flex-direction: column;
   gap: 0.375rem;
   padding: 0.75rem 1rem;
-  background: white;
+  background: #1a1f2e;
   border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(139, 92, 246, 0.15);
   transition: all $transition-fast;
   
   &:hover {
@@ -1279,7 +1292,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 .phraseText {
   font-family: $font-mono;
   font-size: 0.8125rem;
-  color: #1e293b;
+  color: #f8fafc;
   background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
   padding: 0.375rem 0.625rem;
   border-radius: 6px;
@@ -1292,7 +1305,7 @@ $font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation M
 
 .phraseUsage {
   font-size: 0.75rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   font-style: italic;
   
   @media (min-width: 640px) {

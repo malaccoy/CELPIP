@@ -72,7 +72,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 .examResultCard {
   width: 100%;
   max-width: 500px;
-  background: white;
+  background: #1a1f2e;
   border-radius: 24px;
   padding: 2.5rem;
   text-align: center;
@@ -82,7 +82,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #f8fafc;
     margin: 1rem 0 0.5rem;
   }
 }
@@ -112,7 +112,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 
 .examStartDesc {
   font-size: 1rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
   margin: 0 0 1.5rem;
 }
 
@@ -175,11 +175,11 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 }
 
 .examCancelBtn {
-  background: #f1f5f9;
-  color: #64748b;
+  background: #232938;
+  color: rgba(248, 250, 252, 0.6);
   
   &:hover {
-    background: #e2e8f0;
+    background: #2a3142;
   }
 }
 
@@ -207,7 +207,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: #1a1f2e;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -282,7 +282,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
   font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
 }
 
 .examFinishBtn {
@@ -340,7 +340,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
   gap: 1rem;
   margin: 1.5rem 0;
   padding: 1.25rem;
-  background: #f8fafc;
+  background: #232938;
   border-radius: 12px;
 }
 
@@ -353,13 +353,13 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 
 .examStatLabel {
   font-size: 0.75rem;
-  color: #64748b;
+  color: rgba(248, 250, 252, 0.6);
 }
 
 .examStatValue {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f8fafc;
 }
 
 .examStatGood {
@@ -368,7 +368,7 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 
 .examResultTip {
   font-size: 0.9375rem;
-  color: #475569;
+  color: rgba(248, 250, 252, 0.7);
   margin: 0 0 1.5rem;
   padding: 1rem;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
@@ -408,11 +408,11 @@ $gradient-warning: linear-gradient(135deg, #f59e0b 0%, #eab308 100%);
 }
 
 .examExitBtn {
-  background: #f1f5f9;
-  color: #64748b;
+  background: #232938;
+  color: rgba(248, 250, 252, 0.6);
   
   &:hover {
-    background: #e2e8f0;
+    background: #2a3142;
   }
 }
 

@@ -229,12 +229,12 @@ export default function DashboardPage() {
             return (
               <article 
                 key={skill.id}
-                className={styles.skillCard}
+                className={`${styles.skillCard} ${styles[skill.id]}`}
                 onClick={() => router.push(skill.route)}
                 style={{ '--skill-color': skill.color } as React.CSSProperties}
               >
                 <div className={styles.skillHeader}>
-                  <div className={styles.skillIcon}>
+                  <div className={styles.skillIconBox}>
                     <Icon size={24} />
                   </div>
                   {skill.sessions > 0 && (
@@ -245,10 +245,10 @@ export default function DashboardPage() {
                   )}
                 </div>
 
-                <h3 className={styles.skillTitle}>{skill.title}</h3>
+                <h3 className={styles.skillName}>{skill.title}</h3>
                 <p className={styles.skillDesc}>{skill.description}</p>
 
-                <div className={styles.skillCta}>
+                <div className={styles.skillAction}>
                   <span>{skill.sessions > 0 ? 'Continue' : 'Start'}</span>
                   <ArrowRight size={16} />
                 </div>

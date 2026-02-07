@@ -11,7 +11,7 @@ $transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   padding: 0.625rem 1rem;
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(139, 92, 246, 0.2);
   border-radius: 12px;
   overflow: hidden;
   transition: all $transition-smooth;
@@ -31,7 +31,7 @@ $transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   &.paused {
-    border-color: #e2e8f0;
+    border-color: rgba(139, 92, 246, 0.15);
     
     .timerDisplay {
       color: #64748b;
@@ -134,7 +134,7 @@ $transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background: white;
+  background: #1a1f2e;
   border: 1.5px solid #e2e8f0;
   border-radius: 8px;
   color: #64748b;
@@ -155,7 +155,7 @@ $transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   &.muted {
     color: #94a3b8;
     border-color: #f1f5f9;
-    background: #f8fafc;
+    background: #232938;
   }
 }
 
