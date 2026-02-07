@@ -170,6 +170,150 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 }
 
+// User Menu
+.userMenu {
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.userMenuBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  padding-right: 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  color: $premium-text-muted;
+  cursor: pointer;
+  transition: all 200ms $ease-smooth;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  svg {
+    transition: transform 200ms $ease-smooth;
+    
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInitials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, $premium-accent 0%, #7c3aed 100%);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.userDropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background: $premium-card;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  animation: dropdownFadeIn 0.15s $ease-smooth;
+  z-index: 100;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.userInfo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.userName {
+  font-family: $font-display;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $premium-text;
+}
+
+.userEmail {
+  font-size: 0.8rem;
+  color: $premium-text-dim;
+}
+
+.dropdownDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: transparent;
+  border: none;
+  color: $premium-text-muted;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms $ease-smooth;
+  
+  &:hover {
+    background: rgba(139, 92, 246, 0.1);
+    color: $premium-accent-light;
+  }
+  
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.loginBtn {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, $premium-accent 0%, #7c3aed 100%);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 200ms $ease-bounce;
+  margin-left: 0.5rem;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+  }
+}
+
 // ============================================
 // 📦 CONTAINER
 // ============================================

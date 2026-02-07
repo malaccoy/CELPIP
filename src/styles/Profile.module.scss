@@ -61,6 +61,13 @@
   color: white;
   flex-shrink: 0;
   animation: glowPulse 4s ease-in-out infinite;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .profileInfo {
@@ -93,28 +100,39 @@
   padding: 0.25rem;
   background: var(--bg-secondary);
   border-radius: ds.$radius-lg;
-  max-width: 500px;
   margin: 0 auto 1.5rem;
   position: relative;
   z-index: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (min-width: 500px) {
+    max-width: 500px;
+  }
 }
 
 .tab {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
+  gap: 0.4rem;
+  padding: 0.75rem 0.85rem;
   background: transparent;
   border: none;
   border-radius: ds.$radius-md;
   font-family: ds.$font-body;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-muted);
   cursor: pointer;
   transition: all ds.$transition-base;
+  white-space: nowrap;
+  flex-shrink: 0;
   
   svg {
     flex-shrink: 0;
@@ -135,6 +153,12 @@
     svg {
       color: var(--accent-primary-light);
     }
+  }
+  
+  @media (min-width: 400px) {
+    flex: 1;
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
   }
 }
 
@@ -868,6 +892,54 @@
   
   &:hover {
     background: rgba(239, 68, 68, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+// Account Section
+.accountInfo {
+  padding: 0.75rem 0;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.accountRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.accountLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.accountValue {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all ds.$transition-base;
+  
+  &:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.3);
+    color: #f87171;
     transform: translateY(-1px);
   }
 }

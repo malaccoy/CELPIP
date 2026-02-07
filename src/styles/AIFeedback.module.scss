@@ -1,4 +1,5 @@
-// AIFeedback.module.scss
+// AIFeedback.module.scss - AI Feedback component
+@use 'design-system' as ds;
 
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -15,8 +16,6 @@
   50% { transform: scale(1.05); }
 }
 
-$transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-
 // Trigger Button
 .triggerButton {
   display: flex;
@@ -24,20 +23,20 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-primary-dark) 100%);
   border: none;
-  border-radius: 12px;
+  border-radius: ds.$radius-md;
   color: white;
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: ds.$font-display;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all $transition-smooth;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+  transition: all ds.$transition-bounce;
+  box-shadow: var(--shadow-glow);
   
   &:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45);
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.45);
   }
   
   &:disabled {
@@ -47,13 +46,14 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   
   svg {
     animation: pulse 2s ease-in-out infinite;
+    flex-shrink: 0;
   }
 }
 
 .wordBadge {
   padding: 0.15rem 0.4rem;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
+  border-radius: ds.$radius-sm;
   font-size: 0.7rem;
   font-weight: 500;
   opacity: 0.8;
@@ -61,12 +61,12 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Feedback Panel
 .feedbackPanel {
-  background: rgba(15, 23, 42, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
   overflow: hidden;
-  animation: fadeIn 0.3s ease-out;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ds.$ease-smooth;
+  box-shadow: var(--shadow-lg);
 }
 
 .panelHeader {
@@ -74,21 +74,22 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--accent-bg);
+  border-bottom: 1px solid var(--border-default);
 }
 
 .panelTitle {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: ds.$font-display;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
   
   svg {
-    color: #a5b4fc;
+    color: var(--accent-primary-light);
+    flex-shrink: 0;
   }
 }
 
@@ -98,23 +99,23 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--bg-secondary);
   border: none;
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.6);
+  border-radius: ds.$radius-sm;
+  color: var(--text-muted);
   cursor: pointer;
-  transition: all $transition-smooth;
+  transition: all ds.$transition-base;
   
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
+    background: rgba(239, 68, 68, 0.1);
+    color: #f87171;
   }
 }
 
 // Tabs
 .tabs {
   display: flex;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--border-default);
 }
 
 .tab {
@@ -126,21 +127,26 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0.75rem;
   background: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
+  font-family: ds.$font-body;
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all $transition-smooth;
+  transition: all ds.$transition-base;
+  
+  svg {
+    flex-shrink: 0;
+  }
   
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    background: var(--bg-secondary);
   }
   
   &.active {
-    color: white;
-    background: rgba(99, 102, 241, 0.1);
-    border-bottom: 2px solid #6366f1;
+    color: var(--accent-primary-light);
+    background: var(--accent-bg);
+    border-bottom: 2px solid var(--accent-primary);
   }
 }
 
@@ -161,12 +167,12 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 1rem;
   
   .spinner {
-    color: #818cf8;
+    color: var(--accent-primary-light);
     animation: spin 1s linear infinite;
   }
   
   p {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
     font-size: 0.9rem;
   }
 }
@@ -191,16 +197,17 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   
   button {
     padding: 0.5rem 1rem;
-    background: rgba(99, 102, 241, 0.2);
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    border-radius: 8px;
-    color: #a5b4fc;
+    background: var(--accent-bg);
+    border: 1px solid var(--accent-border);
+    border-radius: ds.$radius-sm;
+    color: var(--accent-primary-light);
+    font-family: ds.$font-body;
     font-size: 0.85rem;
     cursor: pointer;
-    transition: all $transition-smooth;
+    transition: all ds.$transition-base;
     
     &:hover {
-      background: rgba(99, 102, 241, 0.3);
+      background: rgba(139, 92, 246, 0.2);
     }
   }
 }
@@ -215,19 +222,20 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 1rem;
   
   p {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--text-muted);
     font-size: 0.9rem;
   }
   
   button {
     padding: 0.65rem 1.25rem;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-primary-dark) 100%);
     border: none;
-    border-radius: 10px;
+    border-radius: ds.$radius-md;
     color: white;
+    font-family: ds.$font-display;
     font-weight: 600;
     cursor: pointer;
-    transition: all $transition-smooth;
+    transition: all ds.$transition-bounce;
     
     &:hover {
       transform: translateY(-2px);
@@ -256,7 +264,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scoreNumber {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: ds.$font-display;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
@@ -264,19 +272,20 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .scoreMax {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-dim);
 }
 
 .scoreLabel {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: ds.$font-display;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 0.5rem;
+  color: var(--text-primary);
 }
 
 .scoreSummary {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
   margin: 0 0 1.25rem;
   line-height: 1.5;
 }
@@ -290,9 +299,10 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: ds.$font-display;
     font-size: 0.85rem;
     font-weight: 600;
-    color: white;
+    color: var(--text-primary);
     margin: 0 0 0.5rem;
   }
   
@@ -302,7 +312,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
     
     li {
       font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.7);
+      color: var(--text-secondary);
       margin-bottom: 0.35rem;
       line-height: 1.4;
     }
@@ -312,7 +322,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 .greenDot {
   width: 8px;
   height: 8px;
-  background: #10b981;
+  background: #4ade80;
   border-radius: 50%;
 }
 
@@ -328,13 +338,13 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 0.75rem;
   width: 100%;
   padding: 1rem;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.25);
-  border-radius: 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: ds.$radius-md;
   text-align: left;
   
   svg {
-    color: #818cf8;
+    color: var(--accent-primary-light);
     flex-shrink: 0;
     margin-top: 2px;
   }
@@ -343,13 +353,13 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     font-size: 0.75rem;
     font-weight: 600;
-    color: #a5b4fc;
+    color: var(--accent-primary-light);
     margin-bottom: 0.25rem;
   }
   
   p {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
     margin: 0;
     line-height: 1.4;
   }
@@ -359,7 +369,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 .makeItRealSection {
   .sectionIntro {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
     margin: 0 0 1rem;
   }
 }
@@ -372,7 +382,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1.5rem;
   
   svg {
-    color: #34d399;
+    color: #4ade80;
     margin-bottom: 0.75rem;
   }
   
@@ -384,7 +394,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   
   span {
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--text-dim);
   }
 }
 
@@ -396,10 +406,10 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .suggestionCard {
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
   border-left: 3px solid;
-  border-radius: 10px;
+  border-radius: ds.$radius-md;
 }
 
 .suggestionHeader {
@@ -411,7 +421,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   gap: 0.35rem;
   padding: 0.25rem 0.6rem;
-  border-radius: 6px;
+  border-radius: ds.$radius-sm;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -429,20 +439,20 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 .originalText {
   padding: 0.35rem 0.6rem;
   background: rgba(239, 68, 68, 0.1);
-  border-radius: 6px;
+  border-radius: ds.$radius-sm;
   font-size: 0.85rem;
   color: #fca5a5;
   text-decoration: line-through;
 }
 
 .arrow {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-dim);
 }
 
 .newText {
   padding: 0.35rem 0.6rem;
-  background: rgba(16, 185, 129, 0.1);
-  border-radius: 6px;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: ds.$radius-sm;
   font-size: 0.85rem;
   color: #a7f3d0;
   font-weight: 500;
@@ -450,24 +460,25 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .explanation {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0 0 0.75rem;
   line-height: 1.4;
 }
 
 .applyButton {
   padding: 0.4rem 0.85rem;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  border-radius: 6px;
-  color: #34d399;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: ds.$radius-sm;
+  color: #4ade80;
+  font-family: ds.$font-body;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all $transition-smooth;
+  transition: all ds.$transition-base;
   
   &:hover {
-    background: rgba(16, 185, 129, 0.25);
+    background: rgba(34, 197, 94, 0.25);
   }
 }
 
@@ -481,14 +492,15 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0.65rem;
   background: transparent;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid var(--border-default);
+  color: var(--text-muted);
+  font-family: ds.$font-body;
   font-size: 0.8rem;
   cursor: pointer;
-  transition: all $transition-smooth;
+  transition: all ds.$transition-base;
   
   &:hover {
-    background: rgba(255, 255, 255, 0.03);
-    color: rgba(255, 255, 255, 0.8);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
   }
 }

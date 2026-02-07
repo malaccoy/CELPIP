@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Mail, PenTool, BookOpen, Settings, Menu, X, GraduationCap, BarChart3, Headphones, Mic, Home } from 'lucide-react';
+import { LayoutDashboard, PenTool, BookOpen, Menu, X, Headphones, Mic, Home, User } from 'lucide-react';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { to: '/listening', icon: Headphones, label: 'Listening' },
   { to: '/reading', icon: BookOpen, label: 'Reading' },
   { to: '/speaking', icon: Mic, label: 'Speaking' },
-  { to: '/settings', icon: Settings, label: 'Settings' },
+  { to: '/profile', icon: User, label: 'Profile' },
 ];
 
 const SidebarItem = ({ to, icon: Icon, label, isActive }: { to: string; icon: React.ElementType; label: string; isActive: boolean }) => {

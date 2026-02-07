@@ -2,13 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { 
   User, Trophy, Target, Clock, Flame, TrendingUp, 
   ChevronRight, Award, Zap, BookOpen, Headphones, 
   Mic, PenTool, Calendar, Star, Lock, Settings,
-  AlertTriangle, Download, Trash2
+  AlertTriangle, Download, Trash2, LogOut
 } from 'lucide-react';
 import RadarChart from '@/components/RadarChart';
+import { useUser } from '@/hooks/useUser';
+import { createClient } from '@/lib/supabase/client';
 import styles from '@/styles/Profile.module.scss';
 
 interface PracticeRecord {
@@ -50,6 +53,9 @@ export default function ProfilePage() {
   const [dailyGoal, setDailyGoal] = useState({ current: 0, target: 5 });
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [overallScore, setOverallScore] = useState(0);
+  
+  const router = useRouter();
+  const { user } = useUser();
 
   useEffect(() => {
     loadAllStats();
@@ -283,19 +289,29 @@ export default function ProfilePage() {
     URL.revokeObjectURL(url);
   };
 
+  const handleLogout = async () => {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    router.push('/auth/login');
+    router.refresh();
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.profileCard}>
           <div className={styles.avatar}>
-            <User size={32} />
+            {user?.user_metadata?.avatar_url ? (
+              <img src={user.user_metadata.avatar_url} alt="Avatar" />
+            ) : (
+              <User size={32} />
+            )}
           </div>
           <div className={styles.profileInfo}>
-            <h1>CELPIP Student</h1>
-            <p>Preparing for CELPIP General</p>
+            <h1>{user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'CELPIP Student'}</h1>
+            <p>{user?.email || 'Preparing for CELPIP General'}</p>
           </div>
-          <ChevronRight size={20} className={styles.chevron} />
         </div>
       </header>
 
@@ -544,6 +560,41 @@ export default function ProfilePage() {
       {/* Settings Tab */}
       {activeTab === 'settings' && (
         <div className={styles.settingsTab}>
+          {/* Account Section */}
+          <section className={styles.settingsSection}>
+            <h2>
+              <User size={18} />
+              Account
+            </h2>
+            <div className={styles.settingsCard}>
+              {user && (
+                <div className={styles.accountInfo}>
+                  <div className={styles.accountRow}>
+                    <span className={styles.accountLabel}>Email</span>
+                    <span className={styles.accountValue}>{user.email}</span>
+                  </div>
+                  {user.user_metadata?.full_name && (
+                    <div className={styles.accountRow}>
+                      <span className={styles.accountLabel}>Name</span>
+                      <span className={styles.accountValue}>{user.user_metadata.full_name}</span>
+                    </div>
+                  )}
+                </div>
+              )}
+              
+              <div className={styles.settingsRow}>
+                <div className={styles.settingsInfo}>
+                  <h3>Sign Out</h3>
+                  <p>Log out of your account</p>
+                </div>
+                <button className={styles.logoutBtn} onClick={handleLogout}>
+                  <LogOut size={18} />
+                  Sign Out
+                </button>
+              </div>
+            </div>
+          </section>
+
           {/* Data Management */}
           <section className={styles.settingsSection}>
             <h2>

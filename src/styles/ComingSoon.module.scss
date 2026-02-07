@@ -1,4 +1,6 @@
-// ComingSoon.module.scss
+// ComingSoon.module.scss - Coming Soon page
+@use 'design-system' as ds;
+
 .comingSoonContainer {
   min-height: calc(100vh - 120px);
   display: flex;
@@ -6,7 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.5s ds.$ease-smooth;
 }
 
 .backButton {
@@ -17,30 +19,32 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-md;
+  color: var(--text-muted);
+  font-family: ds.$font-body;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all ds.$transition-base;
 
   &:hover {
-    background: var(--input-bg);
+    background: var(--bg-secondary);
     color: var(--text-primary);
     transform: translateX(-4px);
   }
 
   svg {
-    transition: transform 0.3s ease;
+    transition: transform ds.$transition-base;
+    flex-shrink: 0;
   }
 }
 
 .contentWrapper {
   max-width: 700px;
   text-align: center;
-  animation: slideUp 0.6s ease;
+  animation: slideUp 0.6s ds.$ease-smooth;
 }
 
 .iconWrapper {
@@ -69,7 +73,8 @@
   height: 140px;
   border-radius: 50%;
   color: white;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-primary-dark) 100%);
+  box-shadow: var(--shadow-glow);
   animation: float 3s ease-in-out infinite;
 }
 
@@ -82,18 +87,15 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: white;
-  border: 3px solid var(--bg-primary);
+  background: var(--bg-card);
+  border: 3px solid var(--bg-deep);
   border-radius: 50%;
-  color: #ef4444;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-  [data-theme='dark'] & {
-    background: var(--card-bg);
-  }
+  color: #f87171;
+  box-shadow: var(--shadow-md);
 }
 
 .title {
+  font-family: ds.$font-display;
   font-size: 3rem;
   font-weight: 800;
   margin: 0 0 1rem 0;
@@ -106,8 +108,9 @@
 }
 
 .description {
+  font-family: ds.$font-body;
   font-size: 1.2rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin: 0 0 3rem 0;
   line-height: 1.7;
 }
@@ -116,11 +119,12 @@
   text-align: left;
   margin-bottom: 3rem;
   padding: 2rem;
-  background: var(--card-bg);
-  border: 2px solid var(--border-color);
-  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
 
   h3 {
+    font-family: ds.$font-display;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 1.5rem 0;
@@ -140,11 +144,12 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    font-family: ds.$font-body;
     font-size: 1rem;
     color: var(--text-secondary);
 
     svg {
-      color: var(--primary-color);
+      color: var(--accent-primary-light);
       flex-shrink: 0;
     }
   }
@@ -154,14 +159,14 @@
   display: flex;
   gap: 1.5rem;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
-  border: 2px solid rgba(139, 92, 246, 0.2);
-  border-radius: 16px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: ds.$radius-lg;
   text-align: left;
   margin-bottom: 2rem;
 
   > svg {
-    color: #8b5cf6;
+    color: var(--accent-primary-light);
     flex-shrink: 0;
   }
 }
@@ -170,6 +175,7 @@
   flex: 1;
 
   h4 {
+    font-family: ds.$font-display;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 0.5rem 0;
@@ -177,8 +183,9 @@
   }
 
   p {
+    font-family: ds.$font-body;
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin: 0 0 1.5rem 0;
   }
 }
@@ -190,28 +197,35 @@
   input {
     flex: 1;
     padding: 0.875rem 1.25rem;
-    background: var(--input-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: ds.$radius-md;
     color: var(--text-primary);
+    font-family: ds.$font-body;
     font-size: 1rem;
+
+    &::placeholder {
+      color: var(--text-dim);
+    }
 
     &:focus {
       outline: none;
-      border-color: var(--primary-color);
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px var(--accent-glow);
     }
   }
 
   button {
     padding: 0.875rem 1.75rem;
-    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-primary-dark) 100%);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: ds.$radius-md;
+    font-family: ds.$font-display;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all ds.$transition-bounce;
     white-space: nowrap;
 
     &:hover {
@@ -223,10 +237,10 @@
 
 .successMessage {
   padding: 1rem;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  border-radius: 10px;
-  color: #10b981;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: ds.$radius-md;
+  color: #4ade80;
   font-weight: 600;
   text-align: center;
 }
@@ -238,41 +252,39 @@
 }
 
 .progressLabel {
+  font-family: ds.$font-body;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .progressBar {
   height: 12px;
-  background: var(--input-bg);
+  background: var(--bg-secondary);
   border-radius: 6px;
   overflow: hidden;
 }
 
 .progressFill {
   height: 100%;
-  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  background: linear-gradient(90deg, var(--accent-primary) 0%, #3b82f6 100%);
   border-radius: 6px;
   transition: width 0.6s ease;
 }
 
 .progressPercent {
+  font-family: ds.$font-display;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--accent-primary-light);
   text-align: center;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideUp {
@@ -287,21 +299,13 @@
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.6;
-  }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.6; }
 }
 
 // Responsive

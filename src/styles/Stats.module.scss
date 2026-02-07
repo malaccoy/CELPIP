@@ -1,4 +1,4 @@
-// Stats.module.scss - Unified Design System
+// Stats.module.scss - User Statistics
 @use 'design-system' as ds;
 
 .statsContainer {
@@ -10,7 +10,7 @@
 .statsLoading {
   text-align: center;
   padding: 2rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
 }
 
 // Stats Grid
@@ -25,32 +25,37 @@
 }
 
 .statCard {
-  @include ds.stat-card;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
+  padding: 1rem;
+  text-align: center;
+  transition: all ds.$transition-base;
   
   &:hover {
     transform: translateY(-2px);
-    border-color: ds.$accent-border;
+    border-color: var(--accent-border);
   }
 }
 
 .statIcon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: ds.$accent-primary-light;
+  color: var(--accent-primary-light);
 }
 
 .statValue {
   font-family: ds.$font-display;
   font-size: 1.75rem;
   font-weight: 700;
-  color: ds.$text-primary;
+  color: var(--text-primary);
   line-height: 1.2;
 }
 
 .statLabel {
   font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   margin-top: 0.25rem;
 }
 
@@ -59,7 +64,7 @@
   font-family: ds.$font-body;
   font-size: 0.85rem;
   font-weight: 600;
-  color: ds.$text-primary;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -69,18 +74,16 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, ds.$border-default, transparent);
+    background: linear-gradient(90deg, var(--border-default), transparent);
   }
 }
 
 // Scores Section
 .scoresSection {
-  @include ds.card-base;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
   padding: 1.25rem;
-  
-  &:hover {
-    transform: none;
-  }
 }
 
 .scoresGrid {
@@ -92,15 +95,15 @@
 .scoreCard {
   text-align: center;
   padding: 1rem;
-  background: ds.$accent-bg;
-  border: 1px solid ds.$accent-border;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   border-radius: ds.$radius-md;
 }
 
 .scoreTask {
   font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
@@ -110,30 +113,28 @@
   font-family: ds.$font-display;
   font-size: 1.5rem;
   font-weight: 700;
-  color: ds.$accent-primary-light;
+  color: var(--accent-primary-light);
   
   span {
     font-family: ds.$font-body;
     font-size: 0.875rem;
-    color: ds.$text-muted;
+    color: var(--text-muted);
     font-weight: 400;
   }
 }
 
 .scoreCount {
   font-size: 0.7rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   margin-top: 0.25rem;
 }
 
 // Weekly Activity
 .weeklySection {
-  @include ds.card-base;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
   padding: 1.25rem;
-  
-  &:hover {
-    transform: none;
-  }
 }
 
 .weeklyChart {
@@ -155,7 +156,7 @@
 .weeklyBarFill {
   width: 100%;
   max-width: 36px;
-  background: linear-gradient(180deg, ds.$accent-primary 0%, ds.$accent-primary-dark 100%);
+  background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-primary-dark) 100%);
   border-radius: 6px 6px 0 0;
   min-height: 4px;
   position: relative;
@@ -176,19 +177,17 @@
 .weeklyBarLabel {
   font-family: ds.$font-body;
   font-size: 0.625rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   margin-top: 0.5rem;
   text-transform: uppercase;
 }
 
 // History Section
 .historySection {
-  @include ds.card-base;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-lg;
   padding: 1.25rem;
-  
-  &:hover {
-    transform: none;
-  }
 }
 
 .historyList {
@@ -201,29 +200,29 @@
   display: flex;
   align-items: center;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid ds.$border-default;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
   border-radius: ds.$radius-sm;
   gap: 1rem;
   transition: all ds.$transition-base;
   
   &:hover {
-    background: ds.$accent-bg;
-    border-color: ds.$accent-border;
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
   }
 }
 
 .historyDate {
   font-family: ds.$font-body;
   font-size: 0.75rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   min-width: 60px;
 }
 
 .historyTask {
   font-family: ds.$font-body;
   font-size: 0.875rem;
-  color: ds.$text-primary;
+  color: var(--text-primary);
   flex: 1;
 }
 
@@ -234,22 +233,22 @@
 }
 
 .scoreHigh {
-  color: ds.$success;
+  color: #4ade80;
 }
 
 .scoreMid {
-  color: ds.$warning;
+  color: #fbbf24;
 }
 
 .scoreLow {
-  color: ds.$error;
+  color: #f87171;
 }
 
 // Empty State
 .emptyState {
   text-align: center;
   padding: 2rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
 }
 
 .emptyIcon {
@@ -261,6 +260,6 @@
 .emptyHint {
   font-family: ds.$font-body;
   font-size: 0.875rem;
-  color: ds.$text-muted;
+  color: var(--text-muted);
   margin-top: 0.5rem;
 }

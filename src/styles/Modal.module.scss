@@ -1,11 +1,5 @@
-// ============================================
-// 🪟 MODAL COMPONENT
-// ============================================
-
-$gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-$glass-bg: rgba(255, 255, 255, 0.95);
-$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+// Modal.module.scss - Modal component
+@use 'design-system' as ds;
 
 // ============================================
 // 📦 BACKDROP
@@ -19,19 +13,15 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  animation: fadeIn 0.2s ease-out;
+  animation: fadeIn 0.2s ds.$ease-smooth;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 // ============================================
@@ -42,14 +32,14 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   width: 100%;
   max-height: 90vh;
-  background: $glass-bg;
-  border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25),
-              0 0 0 1px rgba(255, 255, 255, 0.5);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-xl;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  animation: slideUp 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slideUp 0.25s ds.$ease-smooth;
 }
 
 @keyframes slideUp {
@@ -85,14 +75,15 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid #e2e8f0;
-  background: rgba(248, 250, 252, 0.8);
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-secondary);
 }
 
 .modalTitle {
+  font-family: ds.$font-display;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1e293b;
+  color: var(--text-primary);
   margin: 0;
   letter-spacing: -0.01em;
 }
@@ -103,23 +94,23 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
-  background: rgba(241, 245, 249, 0.8);
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  color: #64748b;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: ds.$radius-md;
+  color: var(--text-muted);
   cursor: pointer;
-  transition: all $transition-fast;
+  transition: all ds.$transition-base;
   flex-shrink: 0;
   
   &:hover {
-    background: rgba(254, 226, 226, 0.8);
+    background: rgba(239, 68, 68, 0.1);
     border-color: rgba(239, 68, 68, 0.3);
-    color: #dc2626;
+    color: #f87171;
   }
   
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 0 3px var(--accent-glow);
   }
 }
 
@@ -149,11 +140,12 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   &::-webkit-scrollbar-thumb {
-    background: rgba(99, 102, 241, 0.2);
+    background: var(--accent-primary);
+    opacity: 0.3;
     border-radius: 3px;
     
     &:hover {
-      background: rgba(99, 102, 241, 0.4);
+      opacity: 0.5;
     }
   }
 }
@@ -171,8 +163,8 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   .modalContent {
     max-width: 100%;
     max-height: 85vh;
-    border-radius: 20px 20px 0 0;
-    animation: slideUpMobile 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: ds.$radius-xl ds.$radius-xl 0 0;
+    animation: slideUpMobile 0.3s ds.$ease-smooth;
   }
   
   @keyframes slideUpMobile {
@@ -204,10 +196,7 @@ $transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 // ============================================
 
 @media (prefers-reduced-motion: reduce) {
-  .modalBackdrop {
-    animation: none;
-  }
-  
+  .modalBackdrop,
   .modalContent {
     animation: none;
   }
