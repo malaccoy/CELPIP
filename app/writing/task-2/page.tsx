@@ -164,7 +164,7 @@ export default function Task2Page() {
 
   const handleAIEvaluate = async () => {
     if (wordCount < 50) {
-      setAiError('Escreva pelo menos 50 words para avaliação com IA.');
+      setAiError('Write at least 50 words for AI evaluation.');
       return;
     }
 
@@ -305,6 +305,7 @@ export default function Task2Page() {
               currentData={state as unknown as Record<string, unknown>}
               wordCount={wordCount}
               onLoad={(data) => setState(data as unknown as Task2State)}
+              scenarioTitle={selectedContext?.title || state.topic || 'Task 2'}
             />
           </div>
         </div>
@@ -662,11 +663,12 @@ export default function Task2Page() {
                   minHeight="350px"
                 />
 
-                {/* AI Score & Make It Real */}
+                {/* AI Score & Sentence Analysis */}
                 <div className={styles.aiFeedbackSection}>
                   <AIFeedback 
                     task="task2" 
                     text={state.content}
+                    promptText={state.promptText}
                     onApplySuggestion={(original, replacement) => {
                       const newContent = state.content.replace(original, replacement);
                       updateState('content', newContent);

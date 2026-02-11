@@ -165,6 +165,7 @@ $shadow-glow-lg: 0 12px 36px rgba(139, 92, 246, 0.35);
 
 // Container principal
 @mixin page-container {
+  flex: 1;
   min-height: 100vh;
   background: $gradient-page;
   padding: 1rem 1rem 6rem;

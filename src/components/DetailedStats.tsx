@@ -106,6 +106,31 @@ export function recordPractice(task: 'task1' | 'task2', wordCount: number, score
   }
   
   saveStats(stats);
+  
+  // Also save to practice_history format (for profile sync)
+  const practiceHistoryKey = 'celpip_practice_history';
+  const existingHistory = JSON.parse(localStorage.getItem(practiceHistoryKey) || '[]');
+  existingHistory.push({
+    task,
+    score,
+    wordCount,
+    timeMinutes,
+    timestamp: new Date().toISOString(),
+  });
+  // Keep last 100 entries
+  if (existingHistory.length > 100) {
+    existingHistory.splice(0, existingHistory.length - 100);
+  }
+  localStorage.setItem(practiceHistoryKey, JSON.stringify(existingHistory));
+  
+  // Try to sync to cloud (fire and forget)
+  fetch('/api/progress', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ 
+      practiceHistory: [{ task, score, wordCount, timeMinutes, timestamp: new Date().toISOString() }] 
+    }),
+  }).catch(() => {}); // Ignore errors, will sync later
 }
 
 export function DetailedStats() {

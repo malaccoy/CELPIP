@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { 
-  Mic, ArrowRight, Clock, Sparkles
+  Mic, ArrowRight, Clock, Sparkles, Volume2
 } from 'lucide-react';
 import { speakingTasks } from '@content/speaking-guide';
 import styles from '@/styles/SpeakingHub.module.scss';
@@ -22,10 +22,22 @@ export default function SpeakingHubPage() {
             <Mic size={32} />
           </div>
           <div className={styles.hubInfo}>
-            <h1>Speaking Practice</h1>
-            <p className={styles.hubSubtitle}>Practice all 8 parts of the CELPIP Speaking test with AI feedback.</p>
+            <h1>Speaking</h1>
+            <p className={styles.hubSubtitle}>Learn the CSF technique, then practice all 8 tasks.</p>
           </div>
         </div>
+      </div>
+
+      {/* Speaking Technique CTA */}
+      <div className={styles.techniqueCta} onClick={() => router.push('/speaking/technique')}>
+        <div className={styles.techniqueCtaIcon}>
+          <Volume2 size={22} />
+        </div>
+        <div className={styles.techniqueCtaContent}>
+          <h3>Speaking Technique Guide</h3>
+          <p>CSF technique, formulas for all 8 tasks, creativity tips, and vocabulary strategies.</p>
+        </div>
+        <ArrowRight size={18} className={styles.techniqueCtaArrow} />
       </div>
 
       {/* STEP 1 - Parts 1-4 */}

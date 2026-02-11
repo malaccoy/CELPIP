@@ -140,3 +140,30 @@ model WritingAnalysis {
   @@index([sessionId, createdAt])
   @@map("writing_analyses")
 }
+
+// User subscription plan (keyed by Supabase auth user ID)
+model UserPlan {
+  id        String   @id @default(cuid())
+  userId    String   @unique  // Supabase auth user.id
+  plan      String   @default("free") // 'free' | 'pro'
+  expiresAt DateTime? // null = never expires (lifetime or free)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("user_plans")
+}
+
+// Quiz score tracking (for technique guide quizzes)
+model QuizAttempt {
+  id        String   @id @default(cuid())
+  userId    String
+  sectionId String   // 'listening', 'writing', 'reading', 'speaking'
+  moduleId  String   // e.g. 'task1', 'csf', 'truthTrio'
+  score     Int
+  total     Int
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, sectionId, moduleId])
+  @@map("quiz_attempts")
+}

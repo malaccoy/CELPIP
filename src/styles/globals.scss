@@ -17,7 +17,10 @@
   padding: 0;
 }
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   font-family: ds.$font-body;
   background-color: var(--bg-deep, #{ds.$bg-deep});
@@ -25,6 +28,42 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// ============================================
+// 🎨 CSS CUSTOM PROPERTIES (Dark Theme)
+// ============================================
+
+:root {
+  --bg-deep: #{ds.$bg-deep};
+  --bg-primary: #{ds.$bg-primary};
+  --bg-secondary: #{ds.$bg-secondary};
+  --bg-card: #{ds.$bg-card};
+  --bg-card-hover: #232938;
+  --bg-elevated: #2a3142;
+
+  --text-primary: #{ds.$text-primary};
+  --text-secondary: #{ds.$text-secondary};
+  --text-muted: #{ds.$text-muted};
+  --text-dim: #{ds.$text-dim};
+
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-default: #{ds.$border-default};
+  --border-hover: #{ds.$border-hover};
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-bg-hover: rgba(255, 255, 255, 0.06);
+  --glass-strong: rgba(255, 255, 255, 0.08);
+
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  --accent-primary: #{ds.$accent-primary};
+  --accent-primary-light: #{ds.$accent-primary-light};
+  --accent-bg: #{ds.$accent-bg};
 }
 
 // ============================================

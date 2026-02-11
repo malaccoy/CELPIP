@@ -3,6 +3,7 @@ import OpenAI from 'openai';
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
 import { existsSync } from 'fs';
+import { requirePro } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -22,15 +23,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check if audio already exists in cache
+    // Check if audio already exists in cache — serve to ALL users (free + pro)
     const audioFileName = `${passageId}.mp3`;
     const audioFilePath = join(AUDIO_CACHE_DIR, audioFileName);
     const publicUrl = `/audio/listening/${audioFileName}`;
 
     if (existsSync(audioFilePath)) {
-      // Return cached audio
       return NextResponse.json({ audioUrl: publicUrl });
     }
+
+    // Audio not cached — require Pro to generate new audio via OpenAI TTS
+    const denied = await requirePro();
+    if (denied) return denied;
 
     // Ensure cache directory exists
     await mkdir(AUDIO_CACHE_DIR, { recursive: true });

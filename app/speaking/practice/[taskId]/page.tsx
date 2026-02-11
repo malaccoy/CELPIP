@@ -6,9 +6,11 @@ import Link from 'next/link';
 import { 
   ArrowLeft, Mic, MicOff, Play, Pause, RotateCcw,
   Clock, CheckCircle, Loader2, AlertCircle, Sparkles,
-  ThumbsUp, AlertTriangle, Target, Volume2
+  ThumbsUp, AlertTriangle, Target, Volume2, Lock, ClipboardCheck
 } from 'lucide-react';
 import { speakingTasks, getRandomPrompt, SpeakingPrompt } from '@content/speaking-guide';
+import { usePlan } from '@/hooks/usePlan';
+import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/SpeakingPractice.module.scss';
 
 type Phase = 'intro' | 'prep' | 'recording' | 'review' | 'feedback';
@@ -30,6 +32,7 @@ interface AIFeedback {
 export default function SpeakingPracticePage() {
   const params = useParams();
   const taskId = params?.taskId as string;
+  const { isPro, loading: planLoading } = usePlan();
   
   const task = speakingTasks.find(t => t.id === taskId);
   const [currentPrompt, setCurrentPrompt] = useState<SpeakingPrompt | null>(null);
@@ -44,6 +47,8 @@ export default function SpeakingPracticePage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [feedback, setFeedback] = useState<AIFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [selfCheckOpen, setSelfCheckOpen] = useState(false);
+  const [selfChecks, setSelfChecks] = useState<Record<string, boolean>>({});
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -353,17 +358,74 @@ export default function SpeakingPracticePage() {
                 <button onClick={restart} className={styles.retryBtn}>
                   <RotateCcw size={18} /> Try Again
                 </button>
-                <button onClick={analyzeRecording} className={styles.analyzeBtn}>
-                  <Sparkles size={18} /> Get AI Feedback
+                <button onClick={() => setSelfCheckOpen(!selfCheckOpen)} className={styles.selfCheckBtn}>
+                  <ClipboardCheck size={18} /> Self-Evaluate
                 </button>
+                {isPro ? (
+                  <button onClick={analyzeRecording} className={styles.analyzeBtn}>
+                    <Sparkles size={18} /> Get AI Feedback
+                  </button>
+                ) : (
+                  <button className={`${styles.analyzeBtn} ${styles.lockedBtn}`} disabled>
+                    <Lock size={18} /> AI Feedback
+                    <span className={styles.proBadgeInline}>PRO</span>
+                  </button>
+                )}
               </div>
+
+              {/* Self-Evaluation Checklist */}
+              {selfCheckOpen && (
+                <div className={styles.selfCheckPanel}>
+                  <h4><ClipboardCheck size={18} /> Self-Evaluation Checklist</h4>
+                  <p className={styles.selfCheckHint}>Listen to your recording and check each item honestly:</p>
+                  <div className={styles.selfCheckList}>
+                    {[
+                      { id: 'addressed', label: 'I addressed all parts of the prompt' },
+                      { id: 'organized', label: 'My response was logically organized' },
+                      { id: 'vocab', label: 'I used varied vocabulary (not just basic words)' },
+                      { id: 'grammar', label: 'My grammar was mostly correct' },
+                      { id: 'fluency', label: 'I spoke smoothly without long pauses' },
+                      { id: 'filler', label: 'I avoided excessive filler words (um, uh, like)' },
+                      { id: 'time', label: 'I used most of the speaking time' },
+                      { id: 'clear', label: 'My pronunciation was clear and understandable' },
+                    ].map(item => (
+                      <label key={item.id} className={`${styles.selfCheckItem} ${selfChecks[item.id] ? styles.checked : ''}`}>
+                        <input
+                          type="checkbox"
+                          checked={selfChecks[item.id] || false}
+                          onChange={() => setSelfChecks(prev => ({ ...prev, [item.id]: !prev[item.id] }))}
+                        />
+                        <span className={styles.checkmark}>
+                          {selfChecks[item.id] ? <CheckCircle size={18} /> : <span className={styles.emptyCheck} />}
+                        </span>
+                        <span>{item.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                  <div className={styles.selfCheckScore}>
+                    <span>Your self-score: </span>
+                    <strong>{Object.values(selfChecks).filter(Boolean).length} / 8</strong>
+                    <span className={styles.selfCheckTip}>
+                      {Object.values(selfChecks).filter(Boolean).length >= 7 ? ' — Excellent! 🎯' :
+                       Object.values(selfChecks).filter(Boolean).length >= 5 ? ' — Good progress! 💪' :
+                       Object.values(selfChecks).filter(Boolean).length >= 3 ? ' — Keep practicing! 📈' :
+                       ' — Focus on the basics first 🔑'}
+                    </span>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
           {/* Feedback Phase */}
           {phase === 'feedback' && (
             <div className={styles.feedbackPhase}>
-              {isAnalyzing ? (
+              {!isPro ? (
+                <ProGate 
+                  feature="AI Speaking Feedback" 
+                  description="Get your speech transcribed and evaluated by AI — pronunciation, fluency, vocabulary, and structure scoring. Upgrade to Pro to unlock."
+                />
+              ) : isAnalyzing ? (
                 <div className={styles.analyzing}>
                   <Loader2 size={32} className={styles.spinner} />
                   <span>Analyzing your response...</span>

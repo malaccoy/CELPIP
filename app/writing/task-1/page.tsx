@@ -159,7 +159,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
 
   const handleAIEvaluate = async () => {
     if (wordCount < 50) {
-      setAiError('Escreva pelo menos 50 words para avaliação com IA.');
+      setAiError('Write at least 50 words for AI evaluation.');
       return;
     }
 
@@ -376,6 +376,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
               currentData={state as unknown as Record<string, unknown>}
               wordCount={wordCount}
               onLoad={(data) => setState(data as unknown as Task1State)}
+              scenarioTitle={selectedContext?.title || 'Task 1 Email'}
             />
           </div>
         </div>
@@ -607,7 +608,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     </div>
                     <textarea
                       className={styles.planningTextarea}
-                      placeholder="Ex: Apresentar o problema, mencionar quando começou..."
+                      placeholder="Ex: Present the problem, mention when it started..."
                       value={state.bodyStructureNotes[0]}
                       onChange={e => updateBodyNote(0, e.target.value)}
                       rows={3}
@@ -620,7 +621,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     </div>
                     <textarea
                       className={styles.planningTextarea}
-                      placeholder="Ex: Detalhar impactos, dar exemplos específicos..."
+                      placeholder="Ex: Detail the impacts, give specific examples..."
                       value={state.bodyStructureNotes[1]}
                       onChange={e => updateBodyNote(1, e.target.value)}
                       rows={3}
@@ -635,7 +636,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     </div>
                     <textarea
                       className={styles.planningTextarea}
-                      placeholder="Ex: Argumento adicional ou contexto extra..."
+                      placeholder="Ex: Additional argument or extra context..."
                       value={state.bodyStructureNotes[2]}
                       onChange={e => updateBodyNote(2, e.target.value)}
                       rows={3}
@@ -649,7 +650,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     </div>
                     <textarea
                       className={styles.planningTextarea}
-                      placeholder="Ex: Pedido de ação, agradecimento, expectativa de resposta..."
+                      placeholder="Ex: Call to action, thank you, expected response..."
                       value={state.bodyStructureNotes[3]}
                       onChange={e => updateBodyNote(3, e.target.value)}
                       rows={3}
@@ -669,6 +670,30 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     onChange={e => updateState('cta', e.target.value)}
                   />
                 </div>
+                {/* Closing Line */}
+                <div className={styles.formSection}>
+                  <label className={styles.formLabel}>Closing Line (Required)</label>
+                  <input
+                    className={styles.formInput}
+                    value={state.pleaseLetMeKnow}
+                    onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
+                  />
+                  <div className={styles.tagGroup}>
+                    {[
+                      "Please let me know if you have any questions.",
+                      "I look forward to hearing from you."
+                    ].map(suggestion => (
+                      <button
+                        key={suggestion}
+                        className={styles.tag}
+                        onClick={() => updateState('pleaseLetMeKnow', suggestion)}
+                      >
+                        {suggestion}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <div className={styles.formSection}>
                   <label className={styles.formLabel}>Sign-off</label>
                   <input
@@ -677,30 +702,6 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     value={state.signOff}
                     onChange={e => updateState('signOff', e.target.value)}
                   />
-                </div>
-              </div>
-
-              {/* Closing Line */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Closing Line (Required)</label>
-                <input
-                  className={styles.formInput}
-                  value={state.pleaseLetMeKnow}
-                  onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
-                />
-                <div className={styles.tagGroup}>
-                  {[
-                    "Please let me know if you have any questions.",
-                    "I look forward to hearing from you."
-                  ].map(suggestion => (
-                    <button
-                      key={suggestion}
-                      className={styles.tag}
-                      onClick={() => updateState('pleaseLetMeKnow', suggestion)}
-                    >
-                      {suggestion}
-                    </button>
-                  ))}
                 </div>
               </div>
             </div>
@@ -770,11 +771,12 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                   minHeight="350px"
                 />
 
-                {/* AI Score & Make It Real */}
+                {/* AI Score & Sentence Analysis */}
                 <div className={styles.aiFeedbackSection}>
                   <AIFeedback 
                     task="task1" 
                     text={state.content}
+                    promptText={state.promptText}
                     onApplySuggestion={(original, replacement) => {
                       const newContent = state.content.replace(original, replacement);
                       updateState('content', newContent);

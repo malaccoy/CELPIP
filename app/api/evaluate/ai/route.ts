@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { requirePro } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -124,6 +125,9 @@ Be encouraging but honest. Focus on actionable improvements. All text feedback s
 
 export async function POST(request: NextRequest) {
   try {
+    const denied = await requirePro();
+    if (denied) return denied;
+
     // Check for API key
     if (!process.env.OPENAI_API_KEY) {
       return NextResponse.json(

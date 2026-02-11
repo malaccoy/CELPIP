@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { requirePro } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -8,7 +9,7 @@ const openai = new OpenAI({
 interface AIFeedbackRequest {
   task: 'task1' | 'task2';
   text: string;
-  action: 'score' | 'make-it-real' | 'full';
+  action: 'score' | 'make-it-real' | 'corrected' | 'full' | 'full-enhanced';
   context?: {
     scenario?: string;
     questions?: string[];
@@ -34,6 +35,15 @@ interface MakeItRealSuggestion {
 interface AIFeedbackResponse {
   score?: ScoreFeedback;
   makeItReal?: MakeItRealSuggestion[];
+  correctedText?: string;
+  grammarErrors?: GrammarError[];
+}
+
+interface GrammarError {
+  sentence: string;
+  error: string;
+  correction: string;
+  explanation: string;
 }
 
 const SCORE_SYSTEM_PROMPT = `You are a CELPIP Writing examiner. Analyze the text and provide a score from 1-12 based on CELPIP criteria:
@@ -93,8 +103,62 @@ Respond in JSON format:
 
 If the text already has good specific details, return fewer or no suggestions.`;
 
+const CORRECTED_TEXT_PROMPT = `You are a CELPIP Writing expert. Your task is to REWRITE the candidate's text to achieve a score of 11-12/12.
+
+REQUIREMENTS FOR THE CORRECTED VERSION:
+1. Keep the SAME topic, context, and main ideas the candidate wrote about
+2. Fix all grammar, spelling, and punctuation errors
+3. Remove ALL contractions (don't → do not, I'm → I am)
+4. Add organization words (First, Second, Furthermore, Finally, etc.)
+5. Add specific realistic details (names, places, numbers, dates)
+6. Use formal/semi-formal tone appropriate for the task
+7. Proper email format (greeting, body paragraphs, professional closing)
+8. Include "Please let me know if you have any questions" or similar closing
+9. Keep word count between 150-200 words
+10. Make it sound natural and professional, not robotic
+
+IMPORTANT: The rewritten text should teach the candidate by example. They should be able to compare their version with yours and understand what a high-scoring response looks like.
+
+Respond with ONLY the corrected text, no explanations or JSON.`;
+
+const GRAMMAR_CHECK_PROMPT = `You are a grammar checker for CELPIP writing. Find SPECIFIC grammar errors in the text.
+
+Focus on:
+- Subject-verb agreement
+- Verb tense consistency
+- Article usage (a/an/the)
+- Preposition errors
+- Word order problems
+- Punctuation mistakes
+- Spelling errors
+- Run-on sentences
+- Sentence fragments
+
+Rules:
+- Maximum 5 errors (prioritize the most important ones)
+- Quote the EXACT sentence with the error
+- Provide the corrected version
+- Briefly explain WHY it's wrong
+
+Respond in JSON format:
+{
+  "errors": [
+    {
+      "sentence": "<exact sentence from text>",
+      "error": "<brief description of the error>",
+      "correction": "<corrected sentence>",
+      "explanation": "<why this is wrong, max 20 words>"
+    }
+  ]
+}
+
+If the text has no significant grammar errors, return an empty array.`;
+
 export async function POST(request: NextRequest) {
   try {
+    const denied = await requirePro();
+    if (denied) return denied;
+
     const body: AIFeedbackRequest = await request.json();
 
     // Validate
@@ -115,7 +179,7 @@ export async function POST(request: NextRequest) {
     const response: AIFeedbackResponse = {};
 
     // Score Predictor
-    if (body.action === 'score' || body.action === 'full') {
+    if (body.action === 'score' || body.action === 'full' || body.action === 'full-enhanced') {
       const taskDescription = body.task === 'task1' 
         ? 'This is a CELPIP Task 1 (Email/Letter writing). The candidate should write a formal or semi-formal email with proper greeting, introduction, body paragraphs, and closing.'
         : 'This is a CELPIP Task 2 (Opinion Survey). The candidate should express their opinion clearly with organized arguments using PRE (Point, Reason, Example) technique.';
@@ -157,6 +221,42 @@ export async function POST(request: NextRequest) {
 
       const realData = JSON.parse(realCompletion.choices[0].message.content || '{}');
       response.makeItReal = realData.suggestions || [];
+    }
+
+    // Corrected Text Generator
+    if (body.action === 'corrected' || body.action === 'full' || body.action === 'full-enhanced') {
+      const taskContext = body.task === 'task1' 
+        ? 'This is a CELPIP Task 1 email/letter. Rewrite it as a perfect 11-12 score email with proper format.'
+        : 'This is a CELPIP Task 2 opinion survey response. Rewrite it as a perfect 11-12 score essay using PRE technique.';
+
+      const correctedCompletion = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: [
+          { role: 'system', content: CORRECTED_TEXT_PROMPT },
+          { role: 'user', content: `${taskContext}\n\nOriginal text to improve:\n\n${body.text}` }
+        ],
+        temperature: 0.4,
+        max_tokens: 800,
+      });
+
+      response.correctedText = correctedCompletion.choices[0].message.content || '';
+    }
+
+    // Grammar Check (only for full-enhanced)
+    if (body.action === 'full-enhanced') {
+      const grammarCompletion = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: [
+          { role: 'system', content: GRAMMAR_CHECK_PROMPT },
+          { role: 'user', content: `Check this ${body.task === 'task1' ? 'email' : 'essay'} for grammar errors:\n\n${body.text}` }
+        ],
+        response_format: { type: 'json_object' },
+        temperature: 0.2,
+        max_tokens: 800,
+      });
+
+      const grammarData = JSON.parse(grammarCompletion.choices[0].message.content || '{}');
+      response.grammarErrors = grammarData.errors || [];
     }
 
     return NextResponse.json(response);

@@ -7,17 +7,22 @@ import {
   User, Trophy, Target, Clock, Flame, TrendingUp, 
   ChevronRight, Award, Zap, BookOpen, Headphones, 
   Mic, PenTool, Calendar, Star, Lock, Settings,
-  AlertTriangle, Download, Trash2, LogOut
+  AlertTriangle, Download, Trash2, LogOut, RefreshCw
 } from 'lucide-react';
 import RadarChart from '@/components/RadarChart';
 import { useUser } from '@/hooks/useUser';
 import { createClient } from '@/lib/supabase/client';
+import { fullSync } from '@/hooks/useProgressSync';
 import styles from '@/styles/Profile.module.scss';
 
 interface PracticeRecord {
-  date: string;
+  date?: string;
+  timestamp?: string;
   score?: number;
   type?: string;
+  task?: string;
+  wordCount?: number;
+  timeMinutes?: number;
 }
 
 interface ModuleStats {
@@ -36,7 +41,7 @@ interface Achievement {
 }
 
 export default function ProfilePage() {
-  const [activeTab, setActiveTab] = useState<'progress' | 'achievements' | 'goals' | 'settings'>('progress');
+  const [activeTab, setActiveTab] = useState<'progress' | 'achievements' | 'settings'>('progress');
   const [stats, setStats] = useState({
     totalPractices: 0,
     totalMinutes: 0,
@@ -50,16 +55,74 @@ export default function ProfilePage() {
     speaking: { practices: 0, avgScore: 0, lastPractice: null },
     listening: { practices: 0, avgScore: 0, lastPractice: null }
   });
-  const [dailyGoal, setDailyGoal] = useState({ current: 0, target: 5 });
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [overallScore, setOverallScore] = useState(0);
   
   const router = useRouter();
   const { user } = useUser();
+  const [isSyncing, setIsSyncing] = useState(false);
 
   useEffect(() => {
+    // Sync from cloud first if logged in, then load stats
+    const initProfile = async () => {
+      if (user) {
+        setIsSyncing(true);
+        await fullSync();
+        await syncAchievementsFromCloud();
+        setIsSyncing(false);
+      }
+      loadAllStats();
+    };
+    initProfile();
+  }, [user]);
+
+  const syncAchievementsFromCloud = async () => {
+    try {
+      const response = await fetch('/api/achievements');
+      if (!response.ok) return;
+      
+      const { data } = await response.json();
+      if (data && Array.isArray(data)) {
+        // Save to localStorage
+        const stored = JSON.parse(localStorage.getItem('celpip_achievements') || '{}');
+        for (const ach of data) {
+          stored[ach.id] = ach.unlockedAt;
+        }
+        localStorage.setItem('celpip_achievements', JSON.stringify(stored));
+      }
+    } catch (e) {
+      console.error('Failed to sync achievements:', e);
+    }
+  };
+
+  const syncAchievementsToCloud = async (unlockedAchievements: Achievement[]) => {
+    if (!user) return;
+    try {
+      const achievements = unlockedAchievements
+        .filter(a => a.unlocked)
+        .map(a => ({
+          id: a.id,
+          unlockedAt: a.unlockedAt || new Date().toISOString()
+        }));
+      
+      await fetch('/api/achievements', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ achievements }),
+      });
+    } catch (e) {
+      console.error('Failed to sync achievements to cloud:', e);
+    }
+  };
+
+  const handleManualSync = async () => {
+    if (!user) return;
+    setIsSyncing(true);
+    await fullSync();
+    await syncAchievementsFromCloud();
     loadAllStats();
-  }, []);
+    setIsSyncing(false);
+  };
 
   const loadAllStats = () => {
     // Load from all localStorage keys
@@ -68,31 +131,38 @@ export default function ProfilePage() {
     const speakingHistory = JSON.parse(localStorage.getItem('celpip_speaking_history') || '[]');
     const listeningHistory = JSON.parse(localStorage.getItem('celpip_listening_history') || '[]');
 
-    // Combine all history
+    // Normalize history format (handle both 'date' and 'timestamp' fields)
+    const normalizeHistory = (history: PracticeRecord[], module: string) => {
+      return history.map((p: PracticeRecord & { timestamp?: string; timeMinutes?: number }) => ({
+        ...p,
+        module,
+        date: p.date || p.timestamp || new Date().toISOString(),
+        score: p.score || 0,
+        timeMinutes: p.timeMinutes || (module === 'writing' ? 15 : module === 'speaking' ? 5 : 10)
+      }));
+    };
+
+    // Combine all history with normalized format
     const allHistory = [
-      ...writingHistory.map((p: PracticeRecord) => ({ ...p, module: 'writing' })),
-      ...readingHistory.map((p: PracticeRecord) => ({ ...p, module: 'reading' })),
-      ...speakingHistory.map((p: PracticeRecord) => ({ ...p, module: 'speaking' })),
-      ...listeningHistory.map((p: PracticeRecord) => ({ ...p, module: 'listening' }))
+      ...normalizeHistory(writingHistory, 'writing'),
+      ...normalizeHistory(readingHistory, 'reading'),
+      ...normalizeHistory(speakingHistory, 'speaking'),
+      ...normalizeHistory(listeningHistory, 'listening')
     ];
 
     // Calculate total practices
     const totalPractices = allHistory.length;
 
-    // Calculate total minutes (estimate 5-15 min per practice depending on type)
-    const totalMinutes = allHistory.reduce((acc: number, p: PracticeRecord & { module: string }) => {
-      if (p.module === 'writing') return acc + 15;
-      if (p.module === 'speaking') return acc + 5;
-      if (p.module === 'reading') return acc + 10;
-      if (p.module === 'listening') return acc + 8;
-      return acc + 10;
+    // Calculate total minutes (use actual timeMinutes if available)
+    const totalMinutes = allHistory.reduce((acc: number, p: PracticeRecord & { module: string; timeMinutes?: number }) => {
+      return acc + (p.timeMinutes || 10);
     }, 0);
 
     // Calculate streak
     const dayStreak = calculateStreak(allHistory);
 
     // Calculate average score
-    const scoresOnly = allHistory.filter((p: PracticeRecord) => p.score).map((p: PracticeRecord) => p.score as number);
+    const scoresOnly = allHistory.filter((p: PracticeRecord) => p.score && p.score > 0).map((p: PracticeRecord) => p.score as number);
     const avgScore = scoresOnly.length > 0 
       ? Math.round((scoresOnly.reduce((a: number, b: number) => a + b, 0) / scoresOnly.length) * 10) / 10
       : 0;
@@ -112,11 +182,6 @@ export default function ProfilePage() {
     };
     setModuleStats(modStats);
 
-    // Calculate daily goal (practices today)
-    const today = new Date().toISOString().split('T')[0];
-    const todayPractices = allHistory.filter((p: PracticeRecord) => p.date?.startsWith(today)).length;
-    setDailyGoal({ current: todayPractices, target: 5 });
-
     // Calculate overall score (average of module averages)
     const moduleScores = Object.values(modStats).filter(m => m.avgScore > 0).map(m => m.avgScore);
     const overall = moduleScores.length > 0 
@@ -127,12 +192,18 @@ export default function ProfilePage() {
     // Generate achievements
     const achievementsList = generateAchievements(allHistory, modStats, dayStreak);
     setAchievements(achievementsList);
+    
+    // Sync unlocked achievements to cloud
+    const unlockedNow = achievementsList.filter(a => a.unlocked);
+    if (unlockedNow.length > 0 && user) {
+      syncAchievementsToCloud(unlockedNow);
+    }
   };
 
   const calculateStreak = (history: PracticeRecord[]): number => {
     if (history.length === 0) return 0;
 
-    const dates = [...new Set(history.map(p => p.date?.split('T')[0]).filter(Boolean))].sort().reverse();
+    const dates = [...new Set(history.map(p => (p.date || p.timestamp)?.split('T')[0]).filter((d): d is string => !!d))].sort().reverse();
     if (dates.length === 0) return 0;
 
     const today = new Date().toISOString().split('T')[0];
@@ -172,7 +243,7 @@ export default function ProfilePage() {
     const avgScore = scores.length > 0 
       ? Math.round((scores.reduce((a, b) => a + b, 0) / scores.length) * 10) / 10
       : 0;
-    const lastPractice = history.length > 0 ? history[history.length - 1].date : null;
+    const lastPractice = history.length > 0 ? (history[history.length - 1].date || history[history.length - 1].timestamp || null) : null;
     
     return { practices, avgScore, lastPractice };
   };
@@ -182,69 +253,83 @@ export default function ProfilePage() {
     modStats: Record<string, ModuleStats>,
     streak: number
   ): Achievement[] => {
+    // Load stored unlock times
+    const storedTimes = JSON.parse(localStorage.getItem('celpip_achievements') || '{}');
+    
+    const checkUnlock = (id: string, condition: boolean): { unlocked: boolean; unlockedAt?: string } => {
+      if (condition) {
+        if (!storedTimes[id]) {
+          storedTimes[id] = new Date().toISOString();
+          localStorage.setItem('celpip_achievements', JSON.stringify(storedTimes));
+        }
+        return { unlocked: true, unlockedAt: storedTimes[id] };
+      }
+      return { unlocked: false };
+    };
+    
     const achievements: Achievement[] = [
       {
         id: 'first_practice',
         name: 'First Steps',
         description: 'Complete your first practice',
         icon: '🎯',
-        unlocked: history.length > 0
+        ...checkUnlock('first_practice', history.length > 0)
       },
       {
         id: 'week_warrior',
         name: 'Week Warrior',
         description: 'Maintain a 7-day streak',
         icon: '🔥',
-        unlocked: streak >= 7
+        ...checkUnlock('week_warrior', streak >= 7)
       },
       {
         id: 'all_rounder',
         name: 'All Rounder',
         description: 'Practice all 4 modules',
         icon: '🌟',
-        unlocked: Object.values(modStats).every(m => m.practices > 0)
+        ...checkUnlock('all_rounder', Object.values(modStats).every(m => m.practices > 0))
       },
       {
         id: 'writing_master',
         name: 'Writing Master',
         description: 'Score 10+ on a writing task',
         icon: '✍️',
-        unlocked: modStats.writing.avgScore >= 10
+        ...checkUnlock('writing_master', modStats.writing.avgScore >= 10)
       },
       {
         id: 'listener',
         name: 'Active Listener',
         description: 'Complete 10 listening practices',
         icon: '🎧',
-        unlocked: modStats.listening.practices >= 10
+        ...checkUnlock('listener', modStats.listening.practices >= 10)
       },
       {
         id: 'speaker',
         name: 'Confident Speaker',
         description: 'Complete 10 speaking practices',
         icon: '🎤',
-        unlocked: modStats.speaking.practices >= 10
+        ...checkUnlock('speaker', modStats.speaking.practices >= 10)
       },
       {
         id: 'reader',
         name: 'Avid Reader',
         description: 'Complete 10 reading practices',
         icon: '📖',
-        unlocked: modStats.reading.practices >= 10
+        ...checkUnlock('reader', modStats.reading.practices >= 10)
       },
       {
         id: 'dedicated',
         name: 'Dedicated Learner',
         description: 'Complete 50 total practices',
         icon: '💪',
-        unlocked: history.length >= 50
+        ...checkUnlock('dedicated', history.length >= 50)
       },
       {
         id: 'perfect_score',
         name: 'Perfect Score',
         description: 'Get 12/12 on any practice',
         icon: '👑',
-        unlocked: history.some(p => p.score === 12)
+        ...checkUnlock('perfect_score', history.some(p => p.score === 12))
       }
     ];
 
@@ -330,13 +415,6 @@ export default function ProfilePage() {
         >
           <Trophy size={16} />
           Awards
-        </button>
-        <button 
-          className={`${styles.tab} ${activeTab === 'goals' ? styles.active : ''}`}
-          onClick={() => setActiveTab('goals')}
-        >
-          <Target size={16} />
-          Goals
         </button>
         <button 
           className={`${styles.tab} ${activeTab === 'settings' ? styles.active : ''}`}
@@ -454,106 +532,6 @@ export default function ProfilePage() {
               </div>
             ))}
           </div>
-        </div>
-      )}
-
-      {/* Goals Tab */}
-      {activeTab === 'goals' && (
-        <div className={styles.goalsTab}>
-          {/* Daily Goal */}
-          <section className={styles.dailyGoalSection}>
-            <h2>Daily Goal</h2>
-            <div className={styles.goalCard}>
-              <div className={styles.goalRing}>
-                <svg viewBox="0 0 100 100">
-                  <circle
-                    className={styles.goalBg}
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    fill="none"
-                    strokeWidth="8"
-                  />
-                  <circle
-                    className={styles.goalProgress}
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    fill="none"
-                    strokeWidth="8"
-                    strokeDasharray={`${(dailyGoal.current / dailyGoal.target) * 283} 283`}
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <div className={styles.goalText}>
-                  <span className={styles.goalCurrent}>{dailyGoal.current}</span>
-                  <span className={styles.goalTarget}>/{dailyGoal.target}</span>
-                </div>
-              </div>
-              <p className={styles.goalLabel}>
-                {dailyGoal.current >= dailyGoal.target 
-                  ? '🎉 Goal Complete!' 
-                  : `${dailyGoal.target - dailyGoal.current} more to go`}
-              </p>
-            </div>
-          </section>
-
-          {/* Quick Actions */}
-          <section className={styles.quickActions}>
-            <h2>Quick Practice</h2>
-            <div className={styles.actionButtons}>
-              <Link href="/writing" className={styles.actionBtn}>
-                <PenTool size={20} />
-                Writing
-              </Link>
-              <Link href="/reading" className={styles.actionBtn}>
-                <BookOpen size={20} />
-                Reading
-              </Link>
-              <Link href="/speaking" className={styles.actionBtn}>
-                <Mic size={20} />
-                Speaking
-              </Link>
-              <Link href="/listening" className={styles.actionBtn}>
-                <Headphones size={20} />
-                Listening
-              </Link>
-            </div>
-          </section>
-
-          {/* Suggested Focus */}
-          <section className={styles.suggestedSection}>
-            <h2>
-              <Zap size={18} />
-              Suggested Focus
-            </h2>
-            <div className={styles.suggestionCard}>
-              {(() => {
-                const weakest = Object.entries(moduleStats)
-                  .filter(([, data]) => data.practices > 0)
-                  .sort(([, a], [, b]) => a.avgScore - b.avgScore)[0];
-                
-                if (!weakest) {
-                  return (
-                    <p>Complete some practices to get personalized suggestions!</p>
-                  );
-                }
-                
-                const [module, data] = weakest;
-                return (
-                  <>
-                    <p>
-                      Your <strong>{module}</strong> score ({data.avgScore}/12) could use some improvement.
-                    </p>
-                    <Link href={`/${module}`} className={styles.suggestionBtn}>
-                      Practice {module.charAt(0).toUpperCase() + module.slice(1)}
-                      <ChevronRight size={18} />
-                    </Link>
-                  </>
-                );
-              })()}
-            </div>
-          </section>
         </div>
       )}
 

@@ -34,6 +34,7 @@
 }
 
 .hubContainer {
+  flex: 1;
   min-height: 100vh;
   background: linear-gradient(180deg, #0a0f1a 0%, #0f172a 25%, #1a1f3a 50%, #0f172a 75%, #0a0f1a 100%);
   padding: 1.5rem 1rem 3rem;
@@ -528,4 +529,94 @@
     width: 60px;
     height: 60px;
   }
+}
+
+// ── Technique CTA ──
+.techniqueCta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(135deg, #f9731640, transparent 60%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: #f9731650;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px #f9731620;
+
+    &::before {
+      opacity: 1;
+    }
+
+    .techniqueCtaIcon {
+      background: #f9731630;
+      transform: scale(1.05);
+    }
+
+    .techniqueCtaArrow {
+      transform: translateX(4px);
+      color: #fdba74;
+    }
+  }
+}
+
+.techniqueCtaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: #f9731620;
+  color: #fdba74;
+  transition: all 0.3s ease;
+}
+
+.techniqueCtaContent {
+  flex: 1;
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f8fafc;
+    margin: 0 0 0.25rem;
+  }
+
+  p {
+    font-size: 0.82rem;
+    color: rgba(248, 250, 252, 0.55);
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+.techniqueCtaArrow {
+  color: rgba(248, 250, 252, 0.4);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }

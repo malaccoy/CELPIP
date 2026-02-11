@@ -37,36 +37,36 @@ export interface AchievementProgress {
 // All achievements
 export const ACHIEVEMENTS: Achievement[] = [
   // Practice achievements
-  { id: 'first_text', icon: '✍️', name: 'Primeiro Passo', description: 'Complete seu primeiro texto', category: 'practice', requirement: 1 },
-  { id: 'texts_10', icon: '📝', name: 'Escritor Iniciante', description: 'Complete 10 textos', category: 'practice', requirement: 10 },
-  { id: 'texts_25', icon: '📚', name: 'Escritor Dedicado', description: 'Complete 25 textos', category: 'practice', requirement: 25 },
-  { id: 'texts_50', icon: '🎓', name: 'Escritor Experiente', description: 'Complete 50 textos', category: 'practice', requirement: 50 },
-  { id: 'texts_100', icon: '👑', name: 'Mestre da Escrita', description: 'Complete 100 textos', category: 'practice', requirement: 100 },
+  { id: 'first_text', icon: '✍️', name: 'First Steps', description: 'Complete your first text', category: 'practice', requirement: 1 },
+  { id: 'texts_10', icon: '📝', name: 'Beginner Writer', description: 'Complete 10 texts', category: 'practice', requirement: 10 },
+  { id: 'texts_25', icon: '📚', name: 'Dedicated Writer', description: 'Complete 25 texts', category: 'practice', requirement: 25 },
+  { id: 'texts_50', icon: '🎓', name: 'Experienced Writer', description: 'Complete 50 texts', category: 'practice', requirement: 50 },
+  { id: 'texts_100', icon: '👑', name: 'Writing Master', description: 'Complete 100 texts', category: 'practice', requirement: 100 },
   
   // Task specific
-  { id: 'task1_master', icon: '✉️', name: 'Mestre dos Emails', description: 'Complete 20 Task 1', category: 'practice', requirement: 20 },
-  { id: 'task2_master', icon: '📋', name: 'Mestre das Surveys', description: 'Complete 20 Task 2', category: 'practice', requirement: 20 },
+  { id: 'task1_master', icon: '✉️', name: 'Email Master', description: 'Complete 20 Task 1', category: 'practice', requirement: 20 },
+  { id: 'task2_master', icon: '📋', name: 'Survey Master', description: 'Complete 20 Task 2', category: 'practice', requirement: 20 },
   
   // Streak achievements
-  { id: 'streak_3', icon: '🔥', name: 'Em Chamas', description: 'Mantenha um streak de 3 dias', category: 'streak', requirement: 3 },
-  { id: 'streak_7', icon: '🔥', name: 'Semana Perfeita', description: 'Mantenha um streak de 7 dias', category: 'streak', requirement: 7 },
-  { id: 'streak_14', icon: '💪', name: 'Duas Semanas Forte', description: 'Mantenha um streak de 14 dias', category: 'streak', requirement: 14 },
-  { id: 'streak_30', icon: '🏆', name: 'Mês Invicto', description: 'Mantenha um streak de 30 dias', category: 'streak', requirement: 30 },
+  { id: 'streak_3', icon: '🔥', name: 'On Fire', description: 'Maintain a 3-day streak', category: 'streak', requirement: 3 },
+  { id: 'streak_7', icon: '🔥', name: 'Perfect Week', description: 'Maintain a 7-day streak', category: 'streak', requirement: 7 },
+  { id: 'streak_14', icon: '💪', name: 'Two Weeks Strong', description: 'Maintain a 14-day streak', category: 'streak', requirement: 14 },
+  { id: 'streak_30', icon: '🏆', name: 'Undefeated Month', description: 'Maintain a 30-day streak', category: 'streak', requirement: 30 },
   
   // Score achievements
-  { id: 'perfect_1', icon: '⭐', name: 'Perfeição', description: 'Alcance pontuação 12/12', category: 'score', requirement: 1 },
-  { id: 'perfect_5', icon: '🌟', name: 'Consistência', description: 'Alcance 12/12 cinco vezes', category: 'score', requirement: 5 },
-  { id: 'perfect_10', icon: '💫', name: 'Excelência', description: 'Alcance 12/12 dez vezes', category: 'score', requirement: 10 },
+  { id: 'perfect_1', icon: '⭐', name: 'Perfection', description: 'Score 12/12', category: 'score', requirement: 1 },
+  { id: 'perfect_5', icon: '🌟', name: 'Consistency', description: 'Score 12/12 five times', category: 'score', requirement: 5 },
+  { id: 'perfect_10', icon: '💫', name: 'Excellence', description: 'Score 12/12 ten times', category: 'score', requirement: 10 },
   
   // Challenge achievements
-  { id: 'challenge_1', icon: '🎯', name: 'Desafiante', description: 'Complete seu primeiro desafio diário', category: 'challenge', requirement: 1 },
+  { id: 'challenge_1', icon: '🎯', name: 'Challenger', description: 'Complete your first daily challenge', category: 'challenge', requirement: 1 },
   { id: 'challenge_7', icon: '🗓️', name: 'Challenge Week', description: 'Complete 7 daily challenges', category: 'challenge', requirement: 7 },
-  { id: 'challenge_30', icon: '🏅', name: 'Campeão Mensal', description: 'Complete 30 desafios diários', category: 'challenge', requirement: 30 },
+  { id: 'challenge_30', icon: '🏅', name: 'Monthly Champion', description: 'Complete 30 daily challenges', category: 'challenge', requirement: 30 },
   
   // Special achievements
-  { id: 'words_10k', icon: '📖', name: 'Prolífico', description: 'Escreva 10.000 palavras no total', category: 'special', requirement: 10000 },
-  { id: 'words_50k', icon: '📕', name: 'Romancista', description: 'Escreva 50.000 palavras no total', category: 'special', requirement: 50000 },
-  { id: 'night_owl', icon: '🦉', name: 'Coruja Noturna', description: 'Pratique 5 vezes após meia-noite', category: 'special', requirement: 5 },
+  { id: 'words_10k', icon: '📖', name: 'Prolific', description: 'Write 10,000 words total', category: 'special', requirement: 10000 },
+  { id: 'words_50k', icon: '📕', name: 'Novelist', description: 'Write 50,000 words total', category: 'special', requirement: 50000 },
+  { id: 'night_owl', icon: '🦉', name: 'Night Owl', description: 'Practice 5 times after midnight', category: 'special', requirement: 5 },
   { id: 'early_bird', icon: '🐦', name: 'Madrugador', description: 'Pratique 5 vezes antes das 7h', category: 'special', requirement: 5 },
   { id: 'speed_demon', icon: '⚡', name: 'Velocista', description: 'Complete 5 textos em menos de 10 min', category: 'special', requirement: 5 },
   

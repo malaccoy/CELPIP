@@ -1,7 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Sparkles, Target, TrendingUp, AlertCircle, Lightbulb, ChevronDown, ChevronUp, Loader2, X, MapPin, User, Hash, Calendar, FileText } from 'lucide-react';
+import { Sparkles, Target, Lightbulb, AlertCircle, AlertTriangle, CheckCircle, Loader2, X, Copy, Check, FileEdit, ClipboardCheck, RefreshCw, Lock } from 'lucide-react';
+import { evaluateTask1Email, Task1EvaluationResult } from '@lib/rules/task1-evaluation';
+import { recordPractice } from './DetailedStats';
+import { usePlan } from '@/hooks/usePlan';
+import { ProGate } from './ProGate';
 import styles from '@/styles/AIFeedback.module.scss';
 
 interface ScoreFeedback {
@@ -10,83 +14,36 @@ interface ScoreFeedback {
   summary: string;
   strengths: string[];
   improvements: string[];
-  nextLevelTip: string;
+  grammarErrors?: GrammarError[];
 }
 
-interface MakeItRealSuggestion {
-  category: 'name' | 'place' | 'number' | 'date' | 'detail';
-  original: string;
-  suggestion: string;
+interface GrammarError {
+  sentence: string;
+  error: string;
+  correction: string;
   explanation: string;
 }
 
 interface AIFeedbackProps {
   task: 'task1' | 'task2';
   text: string;
+  promptText?: string;
   onApplySuggestion?: (original: string, replacement: string) => void;
 }
 
-const categoryIcons: Record<string, React.ReactNode> = {
-  name: <User size={16} />,
-  place: <MapPin size={16} />,
-  number: <Hash size={16} />,
-  date: <Calendar size={16} />,
-  detail: <FileText size={16} />,
-};
-
-const categoryColors: Record<string, string> = {
-  name: '#818cf8',
-  place: '#34d399',
-  number: '#fbbf24',
-  date: '#f472b6',
-  detail: '#60a5fa',
-};
-
-export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedbackProps) {
+export default function AIFeedback({ task, text, promptText, onApplySuggestion }: AIFeedbackProps) {
+  const { isPro, loading: planLoading } = usePlan();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState<'score' | 'make-it-real'>('score');
+  const [activeTab, setActiveTab] = useState<'score' | 'rules' | 'grammar' | 'corrected'>('score');
   const [scoreFeedback, setScoreFeedback] = useState<ScoreFeedback | null>(null);
-  const [suggestions, setSuggestions] = useState<MakeItRealSuggestion[]>([]);
+  const [ruleResult, setRuleResult] = useState<Task1EvaluationResult | null>(null);
+  const [grammarErrors, setGrammarErrors] = useState<GrammarError[]>([]);
+  const [correctedText, setCorrectedText] = useState<string>('');
+  const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Get or create session ID for anonymous tracking
-  const getSessionId = (): string => {
-    if (typeof window === 'undefined') return '';
-    let sessionId = localStorage.getItem('celpip_session_id');
-    if (!sessionId) {
-      sessionId = `anon_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      localStorage.setItem('celpip_session_id', sessionId);
-    }
-    return sessionId;
-  };
-
-  // Save analysis for progress tracking
-  const saveAnalysisToProgress = async (score: ScoreFeedback, makeItReal?: MakeItRealSuggestion[]) => {
-    try {
-      await fetch('/api/writing-progress', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sessionId: getSessionId(),
-          taskType: task,
-          content: text,
-          aiScore: score.score,
-          wordCount: text.split(/\s+/).length,
-          scoreFeedback: score,
-          // Detect patterns
-          hasContractions: /\b(don't|can't|won't|isn't|aren't|I'm|I'll|we're|they're|it's|that's|there's|couldn't|wouldn't|shouldn't)\b/i.test(text),
-          hasOrgWords: /\b(first|second|third|finally|furthermore|moreover|additionally|however|therefore|consequently)\b/i.test(text),
-          hasSpecificDetails: makeItReal ? makeItReal.length < 3 : false, // fewer suggestions = more details already
-          hasProperClosing: /please let me know|if you (have any|require|need)/i.test(text),
-        }),
-      });
-    } catch (e) {
-      console.error('Failed to save progress:', e);
-    }
-  };
-
-  const fetchFeedback = async (action: 'score' | 'make-it-real' | 'full') => {
+  const fetchFeedback = async () => {
     if (text.trim().length < 50) {
       setError('Write at least 50 words to get AI feedback.');
       return;
@@ -95,11 +52,15 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
     setIsLoading(true);
     setError(null);
 
+    // Run rule check immediately (no API needed)
+    const ruleEvaluation = evaluateTask1Email(text, { promptText });
+    setRuleResult(ruleEvaluation);
+
     try {
       const response = await fetch('/api/ai-feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ task, text, action }),
+        body: JSON.stringify({ task, text, action: 'full-enhanced' }),
       });
 
       if (!response.ok) {
@@ -112,11 +73,17 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
       if (data.score) {
         setScoreFeedback(data.score);
         
-        // Save analysis for progress tracking
-        saveAnalysisToProgress(data.score, data.makeItReal);
+        // Save score to profile stats
+        const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+        recordPractice(task, wordCount, data.score.score, 5);
       }
-      if (data.makeItReal) {
-        setSuggestions(data.makeItReal);
+      
+      if (data.grammarErrors) {
+        setGrammarErrors(data.grammarErrors);
+      }
+      
+      if (data.correctedText) {
+        setCorrectedText(data.correctedText);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
@@ -128,12 +95,30 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
   const handleOpen = () => {
     setIsOpen(true);
     if (!scoreFeedback && !isLoading) {
-      fetchFeedback('full');
+      fetchFeedback();
     }
   };
 
-  const handleClose = () => {
-    setIsOpen(false);
+  const handleClose = () => setIsOpen(false);
+
+  const handleReanalyze = () => {
+    setScoreFeedback(null);
+    setRuleResult(null);
+    setGrammarErrors([]);
+    setCorrectedText('');
+    fetchFeedback();
+  };
+
+  const handleCopyText = () => {
+    navigator.clipboard.writeText(correctedText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleApplyCorrection = (original: string, correction: string) => {
+    if (onApplySuggestion) {
+      onApplySuggestion(original, correction);
+    }
   };
 
   const getScoreColor = (score: number) => {
@@ -152,19 +137,54 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
     return 'Needs Work';
   };
 
+  const getLevelClass = (level: string) => {
+    if (level === 'strong') return styles.levelStrong;
+    if (level === 'ok') return styles.levelOk;
+    return styles.levelWeak;
+  };
+
   const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
   const isDisabled = wordCount < 50;
+
+  // Combined score (average of AI + Rules)
+  const getCombinedScore = () => {
+    if (scoreFeedback && ruleResult) {
+      return Math.round((scoreFeedback.score + ruleResult.score) / 2);
+    }
+    return scoreFeedback?.score || ruleResult?.score || 0;
+  };
 
   if (!isOpen) {
     return (
       <button 
-        className={styles.triggerButton} 
+        className={`${styles.triggerButton} ${!isPro && !planLoading ? styles.lockedButton : ''}`}
         onClick={handleOpen}
         disabled={isDisabled}
       >
-        <Sparkles size={18} />
+        {isPro ? <Sparkles size={18} /> : <Lock size={18} />}
         <span>AI Score & Feedback</span>
+        {!isPro && !planLoading && <span className={styles.proBadge}>PRO</span>}
       </button>
+    );
+  }
+
+  if (!isPro) {
+    return (
+      <div className={styles.feedbackPanel}>
+        <div className={styles.panelHeader}>
+          <div className={styles.panelTitle}>
+            <Sparkles size={20} />
+            <span>AI Writing Coach</span>
+          </div>
+          <button className={styles.closeButton} onClick={handleClose}>
+            <X size={18} />
+          </button>
+        </div>
+        <ProGate 
+          feature="AI Writing Coach" 
+          description="Get detailed AI-powered scoring, grammar correction, model answers, and personalized improvement tips. Upgrade to Pro to unlock."
+        />
+      </div>
     );
   }
 
@@ -188,14 +208,28 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
           onClick={() => setActiveTab('score')}
         >
           <Target size={16} />
-          Score Predictor
+          Score
         </button>
         <button
-          className={`${styles.tab} ${activeTab === 'make-it-real' ? styles.active : ''}`}
-          onClick={() => setActiveTab('make-it-real')}
+          className={`${styles.tab} ${activeTab === 'rules' ? styles.active : ''}`}
+          onClick={() => setActiveTab('rules')}
         >
-          <Lightbulb size={16} />
-          Make It Real
+          <ClipboardCheck size={16} />
+          Structure
+        </button>
+        <button
+          className={`${styles.tab} ${activeTab === 'grammar' ? styles.active : ''}`}
+          onClick={() => setActiveTab('grammar')}
+        >
+          <AlertCircle size={16} />
+          Grammar
+        </button>
+        <button
+          className={`${styles.tab} ${activeTab === 'corrected' ? styles.active : ''}`}
+          onClick={() => setActiveTab('corrected')}
+        >
+          <FileEdit size={16} />
+          Model
         </button>
       </div>
 
@@ -210,127 +244,208 @@ export default function AIFeedback({ task, text, onApplySuggestion }: AIFeedback
           <div className={styles.errorState}>
             <AlertCircle size={24} />
             <p>{error}</p>
-            <button onClick={() => fetchFeedback('full')}>Try Again</button>
+            <button onClick={handleReanalyze}>Try Again</button>
           </div>
-        ) : activeTab === 'score' && scoreFeedback ? (
+        ) : activeTab === 'score' ? (
           <div className={styles.scoreSection}>
-            {/* Score Circle */}
-            <div className={styles.scoreCircle} style={{ borderColor: getScoreColor(scoreFeedback.score) }}>
-              <span className={styles.scoreNumber} style={{ color: getScoreColor(scoreFeedback.score) }}>
-                {scoreFeedback.score}
-              </span>
-              <span className={styles.scoreMax}>/ {scoreFeedback.maxScore}</span>
+            {/* Combined Score */}
+            <div className={styles.scoreHeader}>
+              <div className={styles.scoreCircle} style={{ borderColor: getScoreColor(getCombinedScore()) }}>
+                <span className={styles.scoreNumber} style={{ color: getScoreColor(getCombinedScore()) }}>
+                  {getCombinedScore()}
+                </span>
+                <span className={styles.scoreMax}>/ 12</span>
+              </div>
+              <div className={styles.scoreInfo}>
+                <p className={styles.scoreLabel} style={{ color: getScoreColor(getCombinedScore()) }}>
+                  {getScoreLabel(getCombinedScore())}
+                </p>
+                {scoreFeedback && (
+                  <p className={styles.scoreSummary}>{scoreFeedback.summary}</p>
+                )}
+              </div>
             </div>
-            <p className={styles.scoreLabel} style={{ color: getScoreColor(scoreFeedback.score) }}>
-              {getScoreLabel(scoreFeedback.score)}
-            </p>
-            <p className={styles.scoreSummary}>{scoreFeedback.summary}</p>
+
+            {/* Word Count */}
+            <div className={styles.wordCountBar}>
+              <span>Word Count: <strong>{wordCount}</strong></span>
+              <span className={styles.wordCountHint}>(150-200 recommended)</span>
+            </div>
 
             {/* Strengths */}
-            <div className={styles.feedbackSection}>
-              <h4>
-                <span className={styles.greenDot} />
-                Strengths
-              </h4>
-              <ul>
-                {scoreFeedback.strengths.map((s, i) => (
-                  <li key={i}>{s}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Improvements */}
-            <div className={styles.feedbackSection}>
-              <h4>
-                <span className={styles.yellowDot} />
-                Areas to Improve
-              </h4>
-              <ul>
-                {scoreFeedback.improvements.map((s, i) => (
-                  <li key={i}>{s}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Next Level Tip */}
-            <div className={styles.nextLevelTip}>
-              <TrendingUp size={18} />
-              <div>
-                <span className={styles.tipLabel}>To reach {Math.min(scoreFeedback.score + 1, 12)}/12:</span>
-                <p>{scoreFeedback.nextLevelTip}</p>
+            {scoreFeedback && scoreFeedback.strengths.length > 0 && (
+              <div className={`${styles.feedbackBox} ${styles.successBox}`}>
+                <div className={styles.boxHeader}>
+                  <CheckCircle size={16} />
+                  <span>Strengths</span>
+                  <span className={styles.count}>{scoreFeedback.strengths.length}</span>
+                </div>
+                <ul className={styles.feedbackList}>
+                  {scoreFeedback.strengths.map((s, i) => (
+                    <li key={i}>{s}</li>
+                  ))}
+                </ul>
               </div>
-            </div>
+            )}
+
+            {/* Areas to Improve */}
+            {scoreFeedback && scoreFeedback.improvements.length > 0 && (
+              <div className={`${styles.feedbackBox} ${styles.warningBox}`}>
+                <div className={styles.boxHeader}>
+                  <Lightbulb size={16} />
+                  <span>Areas to Improve</span>
+                  <span className={styles.count}>{scoreFeedback.improvements.length}</span>
+                </div>
+                <ul className={styles.feedbackList}>
+                  {scoreFeedback.improvements.map((s, i) => (
+                    <li key={i}>{s}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Re-analyze button */}
+            <button className={styles.reanalyzeBtn} onClick={handleReanalyze}>
+              <RefreshCw size={16} />
+              Re-analyze
+            </button>
           </div>
-        ) : activeTab === 'make-it-real' ? (
-          <div className={styles.makeItRealSection}>
-            {suggestions.length === 0 ? (
-              <div className={styles.noSuggestions}>
-                <Lightbulb size={32} />
-                <p>Your text already has good specific details!</p>
-                <span>Or write more content to get suggestions.</span>
+        ) : activeTab === 'rules' && ruleResult ? (
+          <div className={styles.rulesSection}>
+            {/* Rule Score */}
+            <div className={styles.ruleScoreHeader}>
+              <div className={styles.ruleScoreBox}>
+                <span className={styles.ruleScoreValue}>{ruleResult.score}</span>
+                <span className={styles.ruleScoreMax}>/12</span>
+              </div>
+              <span className={`${styles.levelBadge} ${getLevelClass(ruleResult.level)}`}>
+                {ruleResult.level === 'strong' ? 'Excellent' : ruleResult.level === 'ok' ? 'Satisfactory' : 'Needs Improvement'}
+              </span>
+            </div>
+
+            {/* Errors */}
+            {ruleResult.errors.length > 0 && (
+              <div className={`${styles.feedbackBox} ${styles.errorBox}`}>
+                <div className={styles.boxHeader}>
+                  <AlertCircle size={16} />
+                  <span>Errors</span>
+                  <span className={styles.count}>{ruleResult.errors.length}</span>
+                </div>
+                <ul className={styles.feedbackList}>
+                  {ruleResult.errors.map((e, i) => (
+                    <li key={i}>{e}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Warnings */}
+            {ruleResult.warnings.length > 0 && (
+              <div className={`${styles.feedbackBox} ${styles.warningBox}`}>
+                <div className={styles.boxHeader}>
+                  <AlertTriangle size={16} />
+                  <span>Warnings</span>
+                  <span className={styles.count}>{ruleResult.warnings.length}</span>
+                </div>
+                <ul className={styles.feedbackList}>
+                  {ruleResult.warnings.map((w, i) => (
+                    <li key={i}>{w}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Suggestions */}
+            {ruleResult.suggestions.length > 0 && (
+              <div className={`${styles.feedbackBox} ${styles.infoBox}`}>
+                <div className={styles.boxHeader}>
+                  <Lightbulb size={16} />
+                  <span>Suggestions</span>
+                  <span className={styles.count}>{ruleResult.suggestions.length}</span>
+                </div>
+                <ul className={styles.feedbackList}>
+                  {ruleResult.suggestions.map((s, i) => (
+                    <li key={i}>{s}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* All Good */}
+            {ruleResult.errors.length === 0 && ruleResult.warnings.length === 0 && (
+              <div className={`${styles.feedbackBox} ${styles.successBox}`}>
+                <div className={styles.successContent}>
+                  <CheckCircle size={20} />
+                  <span>Great structure! No critical issues found.</span>
+                </div>
+              </div>
+            )}
+          </div>
+        ) : activeTab === 'grammar' ? (
+          <div className={styles.grammarSection}>
+            {grammarErrors.length === 0 ? (
+              <div className={styles.noErrors}>
+                <CheckCircle size={32} />
+                <p>No grammar errors detected!</p>
+                <span>Your writing looks grammatically correct.</span>
               </div>
             ) : (
-              <>
-                <p className={styles.sectionIntro}>
-                  Make your writing more realistic with specific details:
-                </p>
-                <div className={styles.suggestionsList}>
-                  {suggestions.map((suggestion, index) => (
-                    <div 
-                      key={index} 
-                      className={styles.suggestionCard}
-                      style={{ borderLeftColor: categoryColors[suggestion.category] }}
-                    >
-                      <div className={styles.suggestionHeader}>
-                        <span 
-                          className={styles.categoryBadge}
-                          style={{ 
-                            backgroundColor: `${categoryColors[suggestion.category]}20`,
-                            color: categoryColors[suggestion.category] 
-                          }}
-                        >
-                          {categoryIcons[suggestion.category]}
-                          {suggestion.category}
-                        </span>
-                      </div>
-                      
-                      <div className={styles.suggestionChange}>
-                        <span className={styles.originalText}>"{suggestion.original}"</span>
-                        <span className={styles.arrow}>→</span>
-                        <span className={styles.newText}>"{suggestion.suggestion}"</span>
-                      </div>
-                      
-                      <p className={styles.explanation}>{suggestion.explanation}</p>
-                      
+              <div className={styles.grammarList}>
+                {grammarErrors.map((err, i) => (
+                  <div key={i} className={styles.grammarItem}>
+                    <div className={styles.grammarOriginal}>
+                      <span className={styles.grammarLabel}>Original:</span>
+                      <p className={styles.errorText}>{err.sentence}</p>
+                    </div>
+                    <div className={styles.grammarError}>
+                      <AlertCircle size={14} />
+                      <span>{err.error}</span>
+                    </div>
+                    <div className={styles.grammarCorrection}>
+                      <span className={styles.grammarLabel}>Correction:</span>
+                      <p className={styles.correctionText}>{err.correction}</p>
                       {onApplySuggestion && (
                         <button 
-                          className={styles.applyButton}
-                          onClick={() => onApplySuggestion(suggestion.original, suggestion.suggestion)}
+                          className={styles.applyBtn}
+                          onClick={() => handleApplyCorrection(err.sentence, err.correction)}
                         >
                           Apply
                         </button>
                       )}
                     </div>
-                  ))}
-                </div>
-              </>
+                    <p className={styles.grammarExplanation}>{err.explanation}</p>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
-        ) : (
-          <div className={styles.emptyState}>
-            <p>Click "Analyze" to get AI feedback on your writing.</p>
-            <button onClick={() => fetchFeedback('full')}>Analyze My Writing</button>
+        ) : activeTab === 'corrected' ? (
+          <div className={styles.correctedSection}>
+            {correctedText ? (
+              <>
+                <div className={styles.correctedHeader}>
+                  <h4>Model Answer</h4>
+                  <button 
+                    className={styles.copyButton}
+                    onClick={handleCopyText}
+                  >
+                    {copied ? <Check size={16} /> : <Copy size={16} />}
+                    {copied ? 'Copied!' : 'Copy'}
+                  </button>
+                </div>
+                <div className={styles.correctedText}>
+                  {correctedText}
+                </div>
+              </>
+            ) : (
+              <div className={styles.noCorrection}>
+                <FileEdit size={32} />
+                <p>Model answer will appear here</p>
+              </div>
+            )}
           </div>
-        )}
+        ) : null}
       </div>
-
-      {/* Refresh Button */}
-      {(scoreFeedback || suggestions.length > 0) && !isLoading && (
-        <button className={styles.refreshButton} onClick={() => fetchFeedback('full')}>
-          <Loader2 size={14} />
-          Re-analyze
-        </button>
-      )}
     </div>
   );
 }

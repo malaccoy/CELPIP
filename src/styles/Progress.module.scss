@@ -1,0 +1,499 @@
+// Progress.module.scss — Score Tracker dashboard
+
+.container {
+  flex: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+  min-height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-dim);
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+// ── Header ──
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--glass-bg-hover);
+  border: 1px solid var(--glass-strong);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+
+  &:hover { background: var(--border-hover); color: var(--text-primary); }
+}
+
+.headerInfo {
+  h1 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+  }
+  p {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin: 0.15rem 0 0;
+  }
+}
+
+// ── Empty State ──
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+
+  svg { color: var(--text-dim); margin-bottom: 1rem; }
+  h2 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+  }
+  p {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0 0 1.5rem;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.emptyLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.emptyLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-strong);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-secondary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+
+  svg:first-child { color: var(--section-color); }
+  span { flex: 1; }
+  svg:last-child { color: var(--text-dim); }
+
+  &:hover {
+    background: var(--glass-strong);
+    border-color: var(--section-color);
+    color: var(--text-primary);
+  }
+}
+
+// ── Overall Stats Grid ──
+.overallGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.statCard {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-bg-hover);
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+
+  svg { margin-bottom: 0.4rem; }
+}
+
+.statIconGold { color: #f59e0b; }
+.statIconBlue { color: #3b82f6; }
+.statIconGreen { color: #10b981; }
+.statIconOrange { color: #f97316; }
+
+.statValue {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  margin-top: 0.15rem;
+}
+
+// ── Sections Block ──
+.sectionsBlock, .recentBlock {
+  margin-bottom: 1.5rem;
+}
+
+.blockTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  svg { color: var(--text-dim); }
+}
+
+.sectionCard {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-bg-hover);
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+
+  &:hover { border-color: var(--border-hover); }
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.sectionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--section-color) 15%, transparent);
+  flex-shrink: 0;
+
+  svg { color: var(--section-color); }
+}
+
+.sectionInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.sectionName {
+  display: block;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sectionMeta {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 0.1rem;
+}
+
+.sectionScore {
+  flex-shrink: 0;
+}
+
+.scoreRing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: conic-gradient(var(--section-color) var(--pct), rgba(255,255,255,0.06) var(--pct));
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+  }
+
+  span {
+    position: relative;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+}
+
+.chevron {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen { transform: rotate(90deg); }
+
+// ── Section Detail ──
+.sectionDetail {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--glass-bg);
+}
+
+.noData {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  padding: 0.75rem 0;
+}
+
+.moduleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--glass-bg);
+
+  &:last-of-type { border-bottom: none; }
+}
+
+.moduleInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.moduleName {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.moduleMeta {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.65rem;
+  color: var(--text-dim);
+}
+
+.moduleBar {
+  width: 60px;
+  height: 4px;
+  background: var(--glass-bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.moduleBarFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.moduleScore {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  width: 32px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.practiceBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.55rem;
+  background: color-mix(in srgb, var(--section-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--section-color) 25%, transparent);
+  border-radius: 10px;
+  color: var(--section-color);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: color-mix(in srgb, var(--section-color) 20%, transparent);
+    transform: translateY(-1px);
+  }
+}
+
+// ── Recent Activity ──
+.recentList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-bg);
+  border-radius: 10px;
+}
+
+.recentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--section-color) 12%, transparent);
+  flex-shrink: 0;
+
+  svg { width: 14px; height: 14px; color: var(--section-color); }
+}
+
+.recentInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.recentTitle {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentTime {
+  display: block;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.62rem;
+  color: var(--text-dim);
+}
+
+.recentScore {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+
+  &.good { color: #10b981; background: rgba(16, 185, 129, 0.1); }
+  &.ok { color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+  &.low { color: #ef4444; background: rgba(239, 68, 68, 0.1); }
+}
+
+// ── Clear Section ──
+.clearSection {
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
+
+.clearBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid var(--glass-strong);
+  border-radius: 8px;
+  color: var(--text-dim);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover { color: #ef4444; border-color: rgba(239, 68, 68, 0.3); }
+}
+
+.clearConfirm {
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+
+  p {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem;
+  }
+}
+
+.clearActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.clearCancel {
+  padding: 0.4rem 1rem;
+  background: var(--glass-bg-hover);
+  border: 1px solid var(--border-hover);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.clearConfirmBtn {
+  padding: 0.4rem 1rem;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  color: #ef4444;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover { background: rgba(239, 68, 68, 0.25); }
+}

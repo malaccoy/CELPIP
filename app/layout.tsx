@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
 import BottomNav from '@/components/BottomNav';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { PlanProvider } from '@/hooks/usePlan';
 import styles from '@/styles/Layout.module.scss';
 
 export const metadata: Metadata = {
@@ -45,16 +46,18 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <Header />
-          <div className={styles.container}>
-            <Sidebar />
-            <main className={styles.main}>
-              <div className={styles.mainContent}>
-                {children}
-              </div>
-            </main>
-          </div>
-          <BottomNav />
+          <PlanProvider>
+            <Header />
+            <div className={styles.container}>
+              <Sidebar />
+              <main className={styles.main}>
+                <div className={styles.mainContent}>
+                  {children}
+                </div>
+              </main>
+            </div>
+            <BottomNav />
+          </PlanProvider>
         </ThemeProvider>
       </body>
     </html>

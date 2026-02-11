@@ -3,12 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Dumbbell, User } from 'lucide-react';
+import { Home, Dumbbell, BarChart3, User } from 'lucide-react';
 import styles from '@/styles/BottomNav.module.scss';
 
 const navItems = [
   { href: '/', icon: Home, label: 'Home' },
   { href: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { href: '/progress', icon: BarChart3, label: 'Progress' },
   { href: '/profile', icon: User, label: 'Profile' },
 ];
 

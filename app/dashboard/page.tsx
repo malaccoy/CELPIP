@@ -90,7 +90,7 @@ export default function DashboardPage() {
 
   const calculateStreak = (): number => {
     try {
-      const allSessions: { date: string }[] = [];
+      const allSessions: { date?: string; timestamp?: string }[] = [];
       
       Object.values(STORAGE_KEYS).forEach(key => {
         const stored = localStorage.getItem(key);
@@ -104,23 +104,27 @@ export default function DashboardPage() {
 
       if (allSessions.length === 0) return 0;
 
-      const sortedDates = allSessions
-        .map(s => new Date(s.date).toDateString())
-        .filter((v, i, a) => a.indexOf(v) === i)
-        .sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
+      // Get unique dates in YYYY-MM-DD format, sorted descending
+      const dates = [...new Set(
+        allSessions
+          .map(s => (s.date || s.timestamp)?.split('T')[0])
+          .filter((d): d is string => !!d)
+      )].sort().reverse();
 
-      let streak = 0;
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
+      if (dates.length === 0) return 0;
 
-      for (let i = 0; i < sortedDates.length; i++) {
-        const sessionDate = new Date(sortedDates[i]);
-        sessionDate.setHours(0, 0, 0, 0);
-        
-        const expectedDate = new Date(today);
-        expectedDate.setDate(expectedDate.getDate() - i);
-        
-        if (sessionDate.getTime() === expectedDate.getTime()) {
+      const today = new Date().toISOString().split('T')[0];
+      const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+      // Streak only counts if last practice was today or yesterday
+      if (dates[0] !== today && dates[0] !== yesterday) return 0;
+
+      let streak = 1;
+      for (let i = 1; i < dates.length; i++) {
+        const curr = new Date(dates[i - 1]);
+        const prev = new Date(dates[i]);
+        const diff = (curr.getTime() - prev.getTime()) / 86400000;
+        if (diff === 1) {
           streak++;
         } else {
           break;

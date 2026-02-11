@@ -60,7 +60,7 @@ export const Sidebar: React.FC = () => {
       <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         className={styles.mobileMenuToggle}
-        aria-label={isSidebarOpen ? 'Fechar menu' : 'Abrir menu'}
+        aria-label={isSidebarOpen ? 'Close menu' : 'Open menu'}
       >
         {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
       </button>

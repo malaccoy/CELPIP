@@ -1,0 +1,442 @@
+// SpeakingTechnique.module.scss — Course Layout (blue/sky theme)
+
+$bg-surface: #12182b;
+$bg-card: var(--glass-bg);
+$bg-card-hover: var(--glass-strong);
+
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-muted: var(--text-muted);
+
+$accent-blue: #3b82f6;
+$accent-sky: #0ea5e9;
+$accent-dark-blue: #2563eb;
+$accent-indigo: #6366f1;
+$accent-green: #10b981;
+$accent-orange: #f59e0b;
+$accent-red: #ef4444;
+
+$border-light: var(--glass-strong);
+$border-blue: rgba(59, 130, 246, 0.25);
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+
+$transition-base: 200ms ease;
+$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$font-display: 'Space Grotesk', system-ui, sans-serif;
+$font-body: 'DM Sans', system-ui, sans-serif;
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// ── Container ──
+.container {
+  min-height: 100vh; min-height: 100dvh;
+  background: var(--bg-deep);
+  background-attachment: fixed; flex: 1; padding-bottom: 100px;
+}
+
+// ── Header ──
+.header {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(10, 15, 26, 0.9); backdrop-filter: blur(12px);
+  position: sticky; top: 0; z-index: 100;
+  border-bottom: 1px solid $border-light;
+}
+.backButton {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: $radius-md;
+  background: $bg-card; border: none; color: $text-primary; cursor: pointer;
+  transition: all $transition-base;
+  &:hover { background: $bg-card-hover; }
+}
+.headerInfo { flex: 1; min-width: 0; }
+.breadcrumb {
+  font-family: $font-body; font-size: 0.7rem; color: $accent-sky;
+  text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;
+}
+.header h1 {
+  font-family: $font-display; font-size: 1.1rem; font-weight: 700;
+  color: $text-primary; margin: 0; letter-spacing: -0.02em;
+}
+.headerIcon {
+  width: 40px; height: 40px; border-radius: $radius-md;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  display: flex; align-items: center; justify-content: center;
+  color: white; flex-shrink: 0; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+// ── Layout ──
+.layout { display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; }
+.sidebar { display: none; }
+
+// ── Mobile Tabs ──
+.mobileTabBar {
+  position: sticky; top: 57px; z-index: 90;
+  background: rgba(10, 15, 26, 0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border-light; padding: 0.5rem 0;
+}
+.mobileTabScroll {
+  display: flex; gap: 0.25rem; overflow-x: auto; padding: 0 1rem;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+.mobileTab {
+  display: flex; align-items: center; gap: 0.35rem;
+  padding: 0.5rem 0.75rem; border-radius: $radius-sm;
+  background: transparent; border: 1px solid transparent;
+  color: $text-muted; font-family: $font-body; font-size: 0.72rem;
+  font-weight: 600; white-space: nowrap; cursor: pointer; flex-shrink: 0;
+  transition: all $transition-base;
+  &.active { background: rgba(59, 130, 246, 0.15); border-color: $border-blue; color: $accent-blue; }
+  &:hover:not(.active) { background: $bg-card; color: $text-secondary; }
+}
+.mobileTabIcon { display: flex; align-items: center; svg { width: 14px; height: 14px; } }
+
+// ── Content ──
+.content { flex: 1; padding: 1.25rem; animation: fadeInUp 0.4s ease-out; }
+.sectionContent { animation: fadeIn 0.3s ease-out; }
+
+.sectionHeader {
+  margin-bottom: 1.5rem;
+  h2 {
+    font-family: $font-display; font-size: 1.4rem; font-weight: 700;
+    margin: 0 0 0.4rem; letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, #7dd3fc 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+}
+.sectionSubtitle { font-family: $font-body; font-size: 0.9rem; color: $text-muted; margin: 0; line-height: 1.5; }
+
+// ── Overview Stats ──
+.overviewCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-xl; padding: 1.25rem; margin-bottom: 1.25rem;
+}
+.overviewStats { display: flex; align-items: center; justify-content: center; gap: 1.25rem; flex-wrap: wrap; }
+.stat { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+.statValue { font-family: $font-display; font-size: 1.3rem; font-weight: 700; color: $accent-blue; text-align: center; }
+.statLabel { font-family: $font-body; font-size: 0.65rem; color: $text-muted; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.statDivider { width: 1px; height: 32px; background: $border-light; }
+
+// ── Score Bands ──
+.scoreTableCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 1.25rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 1rem; font-weight: 700; color: $accent-blue; margin: 0 0 1rem; }
+}
+.scoreGrid { display: flex; flex-direction: column; gap: 0.6rem; }
+.scoreRow { display: flex; align-items: flex-start; gap: 0.75rem; }
+.scoreBadge {
+  font-family: $font-display; font-size: 0.82rem; font-weight: 700;
+  color: $accent-blue; background: rgba($accent-blue, 0.12);
+  padding: 0.2rem 0.6rem; border-radius: 6px; white-space: nowrap; min-width: 40px; text-align: center;
+}
+.scoreDesc { font-family: $font-body; font-size: 0.82rem; color: $text-secondary; line-height: 1.5; }
+
+// ── Exam Order ──
+.examOrderCard {
+  display: flex; gap: 0.75rem; padding: 1rem; background: rgba(59, 130, 246, 0.06);
+  border: 1px solid $border-blue; border-radius: $radius-lg; margin-bottom: 1.25rem;
+  svg { color: $accent-blue; flex-shrink: 0; margin-top: 2px; }
+  h4 { font-family: $font-display; font-size: 0.85rem; font-weight: 600; color: $text-primary; margin: 0 0 0.2rem; }
+  p { font-family: $font-body; font-size: 0.82rem; color: $text-secondary; margin: 0; line-height: 1.5; }
+}
+.examOrderNote { color: $text-muted !important; font-size: 0.72rem !important; margin-top: 0.3rem !important; }
+
+// ── Task Grid ──
+.taskGridCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 1.25rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 1rem; font-weight: 700; color: $text-primary; margin: 0 0 1rem; }
+}
+.taskGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.taskGridItem {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.6rem; border-radius: $radius-md; background: rgba(59, 130, 246, 0.04);
+  h4 { font-family: $font-body; font-size: 0.75rem; font-weight: 600; color: $text-primary; margin: 0; }
+}
+.taskGridNumber {
+  display: flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 8px;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  color: white; font-family: $font-display; font-size: 0.7rem; font-weight: 700; flex-shrink: 0;
+}
+.taskGridTime { font-family: $font-body; font-size: 0.65rem; color: $text-muted; }
+
+// ── Golden Rules ──
+.rulesCard {
+  background: rgba(59, 130, 246, 0.06); border: 1px solid $border-blue;
+  border-radius: $radius-lg; padding: 1.25rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 1rem; font-weight: 700; color: $accent-blue; margin: 0 0 0.75rem;
+    svg { color: $accent-orange; }
+  }
+  ul { margin: 0; padding-left: 1.25rem;
+    li { font-family: $font-body; font-size: 0.82rem; color: $text-secondary; line-height: 1.6; margin-bottom: 0.3rem;
+      &::marker { color: $accent-blue; }
+    }
+  }
+}
+
+// ── CSF ──
+.csfCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 0.75rem;
+}
+.csfHeader {
+  display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem;
+  h3 { font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $text-primary; margin: 0; }
+}
+.csfLetter {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 10px;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  color: white; font-family: $font-display; font-size: 1.1rem; font-weight: 800; flex-shrink: 0;
+}
+.csfQuestion { font-family: $font-body; font-size: 0.78rem; color: $accent-sky; margin: 0.1rem 0 0; font-weight: 600; }
+.csfDesc { font-family: $font-body; font-size: 0.82rem; color: $text-muted; margin: 0; line-height: 1.5; }
+.csfNote {
+  display: flex; gap: 0.6rem; padding: 1rem; background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.2); border-radius: $radius-lg;
+  svg { color: $accent-indigo; flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.85rem; color: $text-primary; margin: 0; line-height: 1.5; font-weight: 500; }
+}
+
+// ── Creativity ──
+.creativityCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 0.75rem;
+}
+.creativityHeader {
+  display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;
+  h3 { font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $text-primary; margin: 0; }
+}
+.creativityNumber {
+  display: flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 8px;
+  background: linear-gradient(135deg, $accent-orange, darken($accent-orange, 10%));
+  color: white; font-family: $font-display; font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+}
+.creativityDesc { font-family: $font-body; font-size: 0.82rem; color: $text-muted; margin: 0 0 0.75rem; line-height: 1.5; }
+.creativityTakeaway {
+  display: flex; gap: 0.5rem; padding: 0.75rem; background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2); border-radius: $radius-md;
+  svg { color: $accent-green; flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.78rem; color: $text-primary; margin: 0; line-height: 1.5; }
+}
+
+// ── Task Section ──
+.taskChips {
+  display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem;
+}
+.chip {
+  padding: 0.3rem 0.65rem; background: $bg-card; border: 1px solid $border-light;
+  border-radius: 20px; font-family: $font-body; font-size: 0.7rem; font-weight: 600; color: $text-secondary;
+}
+
+// ── Context Card ──
+.contextCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 1rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $accent-blue; margin: 0 0 1rem; }
+}
+.contextSection {
+  margin-bottom: 0.75rem;
+  &:last-child { margin-bottom: 0; }
+  h4 { font-family: $font-body; font-size: 0.72rem; font-weight: 700; color: $text-secondary; margin: 0 0 0.4rem; text-transform: uppercase; letter-spacing: 0.05em; }
+}
+.contextItem, .contextItemSkip, .contextItemNote {
+  display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.3rem 0;
+  svg { flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.78rem; color: $text-secondary; margin: 0; line-height: 1.4; }
+}
+.contextItem svg { color: $accent-green; }
+.contextItemSkip svg { color: $text-muted; }
+.contextItemNote svg { color: $accent-orange; }
+
+// ── Skill Card ──
+.skillCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 1rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $accent-sky; margin: 0 0 0.75rem; }
+}
+.skillMain { margin-bottom: 0.75rem; }
+.skillBadge {
+  display: inline-flex; padding: 0.35rem 0.75rem;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  border-radius: 8px; font-family: $font-body; font-size: 0.78rem; font-weight: 700; color: white;
+}
+.skillDetail {
+  margin-bottom: 0.75rem;
+  p { font-family: $font-body; font-size: 0.78rem; color: $text-secondary; margin: 0 0 0.3rem; line-height: 1.5; }
+}
+.skillVocab { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.vocabTag {
+  padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.1); border: 1px solid $border-blue;
+  border-radius: 6px; font-family: $font-body; font-size: 0.68rem; font-weight: 600; color: $accent-sky;
+}
+
+// ── Formula Card ──
+.formulaCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 1rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $accent-blue; margin: 0 0 1rem; }
+}
+.formulaSteps { display: flex; flex-direction: column; gap: 0.5rem; }
+.formulaStep {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  padding: 0.75rem; border-radius: $radius-md; background: rgba(59, 130, 246, 0.04);
+  border-left: 3px solid $accent-blue;
+}
+.formulaNumber {
+  display: flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 6px;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  color: white; font-family: $font-display; font-size: 0.65rem; font-weight: 700; flex-shrink: 0;
+}
+.formulaContent { flex: 1; min-width: 0;
+  h4 { font-family: $font-display; font-size: 0.82rem; font-weight: 600; color: $text-primary; margin: 0 0 0.2rem; }
+}
+.formulaDesc { font-family: $font-body; font-size: 0.78rem; color: $text-secondary; margin: 0; line-height: 1.4; }
+.formulaExample {
+  display: flex; gap: 0.4rem; margin-top: 0.4rem; padding: 0.5rem;
+  background: rgba(14, 165, 233, 0.06); border-radius: 6px;
+  span { flex-shrink: 0; }
+  p { font-family: $font-body; font-size: 0.72rem; color: $accent-sky; margin: 0; line-height: 1.4; font-style: italic; }
+}
+
+// ── Accordion ──
+.accordionCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; margin-bottom: 0.5rem; overflow: hidden;
+  transition: all $transition-smooth;
+  &.expanded { border-color: $border-blue; background: rgba(59, 130, 246, 0.04);
+    .chevron { transform: rotate(90deg); color: $accent-blue; }
+  }
+}
+.accordionHeader {
+  display: flex; align-items: center; gap: 0.75rem;
+  width: 100%; padding: 0.85rem 1rem; background: none; border: none;
+  cursor: pointer; text-align: left; color: $text-secondary;
+  font-family: $font-body; font-size: 0.85rem; font-weight: 600;
+  &:hover { background: var(--glass-bg); }
+  svg:first-child { color: $accent-blue; flex-shrink: 0; }
+  span { flex: 1; }
+}
+.chevron { color: $text-muted; flex-shrink: 0; transition: all $transition-smooth; }
+.accordionBody { padding: 0 1rem 1rem; animation: fadeIn 0.25s ease-out; }
+
+.tipItem, .mistakeItem {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+  &:last-child { border-bottom: none; }
+  svg { flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.82rem; color: $text-secondary; margin: 0; line-height: 1.5; }
+}
+.tipItem svg { color: $accent-green; }
+.mistakeItem svg { color: $accent-red; }
+
+// ── Expressions & Location items ──
+.expressionItem, .locationItem {
+  padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+  &:last-child { border-bottom: none; }
+  h4 { font-family: $font-display; font-size: 0.82rem; font-weight: 600; color: $accent-sky; margin: 0 0 0.1rem; }
+  p { font-family: $font-body; font-size: 0.72rem; color: $text-muted; margin: 0; font-style: italic; }
+}
+
+// ── Insights ──
+.insightsCard {
+  background: rgba(59, 130, 246, 0.06); border: 1px solid $border-blue;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 0.75rem;
+  h3 { display: flex; align-items: center; gap: 0.5rem; font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $accent-blue; margin: 0 0 0.75rem;
+    svg { color: $accent-orange; }
+  }
+}
+.insightItem {
+  display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.4rem 0;
+  svg { color: $accent-orange; flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.82rem; color: $text-primary; margin: 0; line-height: 1.5; }
+}
+
+// ── Vocabulary Section ──
+.vocabCard {
+  background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-lg; padding: 1.25rem; margin-bottom: 0.75rem;
+  p { font-family: $font-body; font-size: 0.82rem; color: $text-muted; margin: 0; line-height: 1.5; }
+}
+.vocabHeader {
+  display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;
+  h3 { font-family: $font-display; font-size: 0.95rem; font-weight: 700; color: $text-primary; margin: 0; }
+}
+.vocabNumber {
+  display: flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; border-radius: 8px;
+  background: linear-gradient(135deg, $accent-blue, $accent-dark-blue);
+  color: white; font-family: $font-display; font-size: 0.7rem; font-weight: 700; flex-shrink: 0;
+}
+.vocabNote {
+  display: flex; gap: 0.6rem; padding: 1rem; background: rgba(59, 130, 246, 0.06);
+  border: 1px solid $border-blue; border-radius: $radius-lg;
+  svg { color: $accent-blue; flex-shrink: 0; margin-top: 2px; }
+  p { font-family: $font-body; font-size: 0.85rem; color: $text-primary; margin: 0; line-height: 1.5; }
+}
+
+// ── Nav Arrows ──
+.navArrows {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid $border-light;
+}
+.navArrow {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.65rem 1rem; background: $bg-card; border: 1px solid $border-light;
+  border-radius: $radius-md; font-family: $font-body; font-size: 0.8rem;
+  font-weight: 600; color: $text-secondary; cursor: pointer;
+  transition: all $transition-smooth;
+  &:hover { background: $bg-card-hover; border-color: $border-blue; color: $accent-blue; transform: translateY(-1px); }
+}
+
+// ── Desktop ──
+@media (min-width: 768px) {
+  .layout { flex-direction: row; }
+  .sidebar {
+    display: flex; flex-direction: column; width: 220px; min-width: 220px;
+    padding: 1.25rem 0.75rem; border-right: 1px solid $border-light;
+    position: sticky; top: 57px; height: calc(100vh - 57px); overflow-y: auto;
+  }
+  .sidebarTitle {
+    display: flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.75rem;
+    font-family: $font-body; font-size: 0.65rem; font-weight: 700;
+    color: $text-muted; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;
+  }
+  .sidebarNav { display: flex; flex-direction: column; gap: 0.15rem; }
+  .sidebarItem {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.6rem 0.75rem; border-radius: $radius-sm;
+    background: transparent; border: 1px solid transparent;
+    color: $text-muted; font-family: $font-body; font-size: 0.82rem;
+    font-weight: 500; cursor: pointer; text-align: left;
+    transition: all $transition-base;
+    &:hover:not(.active) { background: $bg-card; color: $text-secondary; }
+    &.active { background: rgba(59, 130, 246, 0.12); border-color: $border-blue; color: $accent-blue; font-weight: 600; }
+  }
+  .sidebarIcon { display: flex; align-items: center; width: 22px; svg { width: 16px; height: 16px; } }
+  .sidebarLabel { flex: 1; }
+  .mobileTabBar { display: none; }
+  .content { flex: 1; padding: 1.75rem 2rem; max-width: 720px; }
+  .sectionHeader h2 { font-size: 1.6rem; }
+}
+@media (min-width: 1024px) {
+  .content { padding: 2rem 2.5rem; }
+  .sidebar { width: 240px; min-width: 240px; padding: 1.5rem 1rem; }
+}

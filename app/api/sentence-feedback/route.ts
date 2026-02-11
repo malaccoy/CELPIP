@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { requirePro } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -69,6 +70,9 @@ Rules:
 
 export async function POST(request: NextRequest) {
   try {
+    const denied = await requirePro();
+    if (denied) return denied;
+
     const body: SentenceAnalysisRequest = await request.json();
 
     // Validate

@@ -1,12 +1,13 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Save, FolderOpen, Trash2, X, Clock, FileText, ChevronDown } from 'lucide-react';
+import { Save, FolderOpen, Trash2, X, Clock, FileText, ChevronDown, Tag } from 'lucide-react';
 import styles from '@/styles/DraftManager.module.scss';
 
 export interface Draft {
   id: string;
   name: string;
+  description?: string;
   task: 'task1' | 'task2';
   data: Record<string, unknown>;
   wordCount: number;
@@ -19,15 +20,17 @@ interface DraftManagerProps {
   currentData: Record<string, unknown>;
   wordCount: number;
   onLoad: (data: Record<string, unknown>) => void;
+  scenarioTitle?: string; // Título do tema selecionado
 }
 
 const STORAGE_KEY = 'celpip_drafts';
 
-export default function DraftManager({ task, currentData, wordCount, onLoad }: DraftManagerProps) {
+export default function DraftManager({ task, currentData, wordCount, onLoad, scenarioTitle }: DraftManagerProps) {
   const [drafts, setDrafts] = useState<Draft[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [showSaveModal, setShowSaveModal] = useState(false);
   const [draftName, setDraftName] = useState('');
+  const [draftDescription, setDraftDescription] = useState('');
   const [saveMessage, setSaveMessage] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -55,14 +58,28 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const saveDraft = (name: string) => {
+  // Pre-fill name with scenario title when opening save modal
+  const openSaveModal = () => {
+    setDraftName(scenarioTitle || '');
+    setDraftDescription('');
+    setShowSaveModal(true);
+  };
+
+  const saveDraft = () => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       const allDrafts: Draft[] = stored ? JSON.parse(stored) : [];
       
+      // Build name: tema + descrição opcional
+      let finalName = draftName.trim() || scenarioTitle || `Rascunho ${new Date().toLocaleDateString('pt-BR')}`;
+      if (draftDescription.trim()) {
+        finalName = `${finalName} - ${draftDescription.trim()}`;
+      }
+      
       const newDraft: Draft = {
         id: `draft_${Date.now()}`,
-        name: name || `Rascunho ${new Date().toLocaleDateString('pt-BR')}`,
+        name: finalName,
+        description: draftDescription.trim() || undefined,
         task,
         data: currentData,
         wordCount,
@@ -82,18 +99,25 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
       setTimeout(() => setSaveMessage(''), 2000);
       setShowSaveModal(false);
       setDraftName('');
+      setDraftDescription('');
     } catch (e) {
       console.error('Failed to save draft:', e);
-      setSaveMessage('❌ Erro ao salvar');
+      setSaveMessage('❌ Erro');
       setTimeout(() => setSaveMessage(''), 2000);
     }
   };
 
   const loadDraft = (draft: Draft) => {
-    if (confirm(`Load "${draft.name}"? O conteúdo atual será substituído.`)) {
+    // Load immediately without confirm for better UX
+    try {
+      console.log('Loading draft:', draft.name, draft.data);
       onLoad(draft.data);
       setIsOpen(false);
-      setSaveMessage('✅ Loaded!');
+      setSaveMessage('✅ Carregado!');
+      setTimeout(() => setSaveMessage(''), 2000);
+    } catch (e) {
+      console.error('Failed to load draft:', e);
+      setSaveMessage('❌ Erro ao carregar');
       setTimeout(() => setSaveMessage(''), 2000);
     }
   };
@@ -123,23 +147,13 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
     });
   };
 
-  const handleQuickSave = () => {
-    const defaultName = `Rascunho ${new Date().toLocaleDateString('pt-BR', { 
-      day: '2-digit', 
-      month: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
-    })}`;
-    saveDraft(defaultName);
-  };
-
   return (
     <div className={styles.draftManager} ref={dropdownRef}>
-      {/* Save Button */}
+      {/* Save Button - Opens Modal */}
       <button 
         className={styles.saveBtn}
-        onClick={handleQuickSave}
-        title="Save draft"
+        onClick={openSaveModal}
+        title="Salvar rascunho"
       >
         <Save size={16} />
         {saveMessage || 'Save'}
@@ -150,10 +164,9 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
         <button 
           className={styles.loadBtn}
           onClick={() => setIsOpen(!isOpen)}
-          title="Load rascunho"
+          title="Carregar rascunho"
         >
           <FolderOpen size={16} />
-          <span>Load</span>
           <ChevronDown size={14} className={`${styles.chevron} ${isOpen ? styles.chevronOpen : ''}`} />
         </button>
 
@@ -200,32 +213,56 @@ export default function DraftManager({ task, currentData, wordCount, onLoad }: D
         )}
       </div>
 
-      {/* Save Modal */}
+      {/* Save Modal with Theme Name */}
       {showSaveModal && (
         <div className={styles.modalOverlay} onClick={() => setShowSaveModal(false)}>
           <div className={styles.modal} onClick={e => e.stopPropagation()}>
             <div className={styles.modalHeader}>
-              <h3>Save Draft</h3>
+              <h3>💾 Salvar Rascunho</h3>
               <button onClick={() => setShowSaveModal(false)}>
                 <X size={18} />
               </button>
             </div>
             <div className={styles.modalBody}>
+              <label className={styles.inputLabel}>
+                <Tag size={14} />
+                <span>Tema</span>
+              </label>
               <input
                 type="text"
-                placeholder="Nome do rascunho (opcional)"
+                placeholder="Nome do tema"
                 value={draftName}
                 onChange={e => setDraftName(e.target.value)}
                 autoFocus
-                onKeyDown={e => e.key === 'Enter' && saveDraft(draftName)}
+                className={styles.themeInput}
               />
+              
+              <label className={styles.inputLabel}>
+                <FileText size={14} />
+                <span>Descrição (opcional)</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Ex: Tentativa 2, Versão formal, etc."
+                value={draftDescription}
+                onChange={e => setDraftDescription(e.target.value)}
+                onKeyDown={e => e.key === 'Enter' && saveDraft()}
+                className={styles.descriptionInput}
+              />
+              
+              <div className={styles.previewName}>
+                <span>Será salvo como:</span>
+                <strong>
+                  {draftName.trim() || scenarioTitle || 'Rascunho'}{draftDescription.trim() ? ` - ${draftDescription.trim()}` : ''}
+                </strong>
+              </div>
             </div>
             <div className={styles.modalFooter}>
               <button onClick={() => setShowSaveModal(false)} className={styles.cancelBtn}>
-                Cancel
+                Cancelar
               </button>
-              <button onClick={() => saveDraft(draftName)} className={styles.confirmBtn}>
-                <Save size={16} /> Save
+              <button onClick={saveDraft} className={styles.confirmBtn}>
+                <Save size={16} /> Salvar
               </button>
             </div>
           </div>

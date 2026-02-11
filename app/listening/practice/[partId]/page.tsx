@@ -6,9 +6,10 @@ import Link from 'next/link';
 import { 
   ArrowLeft, ArrowRight, Play, Pause, RotateCcw,
   Volume2, VolumeX, CheckCircle, XCircle, Clock,
-  AlertCircle, Loader2, Trophy, Target
+  AlertCircle, Loader2, Trophy, Target, Lock
 } from 'lucide-react';
 import { listeningParts, listeningPassages, ListeningPassage } from '@content/listening-guide';
+import { usePlan } from '@/hooks/usePlan';
 import styles from '@/styles/ListeningPractice.module.scss';
 
 type Phase = 'intro' | 'listening' | 'questions' | 'results';
@@ -16,6 +17,7 @@ type Phase = 'intro' | 'listening' | 'questions' | 'results';
 export default function ListeningPracticePage() {
   const params = useParams();
   const partId = params?.partId as string;
+  const { isPro } = usePlan();
   
   const part = listeningParts.find(p => p.id === partId);
   const passages = listeningPassages.filter(p => 
@@ -55,7 +57,13 @@ export default function ListeningPracticePage() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to generate audio');
+        const data = await response.json().catch(() => ({}));
+        if (data.code === 'PRO_REQUIRED') {
+          setError('This audio requires a Pro subscription to generate. Upgrade to unlock all listening passages.');
+        } else {
+          throw new Error('Failed to generate audio');
+        }
+        return;
       }
 
       const data = await response.json();

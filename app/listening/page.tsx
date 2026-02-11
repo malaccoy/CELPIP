@@ -4,7 +4,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import { 
   Headphones, ArrowRight, Clock, Target, Volume2,
-  Lightbulb, AlertCircle
+  Lightbulb, AlertCircle, BookOpen, Zap
 } from 'lucide-react';
 import { listeningParts, listeningStrategies } from '@content/listening-guide';
 import styles from '@/styles/ListeningHub.module.scss';
@@ -23,10 +23,22 @@ export default function ListeningHubPage() {
             <Headphones size={32} />
           </div>
           <div className={styles.hubInfo}>
-            <h1>Listening Practice</h1>
-            <p className={styles.hubSubtitle}>Practice all 6 parts of the CELPIP Listening test.</p>
+            <h1>Listening</h1>
+            <p className={styles.hubSubtitle}>Learn the techniques, then practice all 6 parts.</p>
           </div>
         </div>
+      </div>
+
+      {/* Technique Guide CTA — Learn First */}
+      <div className={styles.techniqueCta} onClick={() => router.push('/listening/technique')}>
+        <div className={styles.techniqueCtaIcon}>
+          <Zap size={22} />
+        </div>
+        <div className={styles.techniqueCtaContent}>
+          <h3>7 Secret Steps — Technique Guide</h3>
+          <p>Master the framework that lets you predict questions before they appear.</p>
+        </div>
+        <ArrowRight size={18} className={styles.techniqueCtaArrow} />
       </div>
 
       {/* STEP 1 - Understand the Format */}

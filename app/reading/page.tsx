@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { 
-  BookOpen, ArrowRight, Clock, Target, FileText
+  BookOpen, ArrowRight, Clock, Target, FileText, Eye, GraduationCap
 } from 'lucide-react';
 import { readingParts } from '@content/reading-guide';
 import styles from '@/styles/ReadingHub.module.scss';
@@ -22,10 +22,22 @@ export default function ReadingHubPage() {
             <BookOpen size={32} />
           </div>
           <div className={styles.hubInfo}>
-            <h1>Reading Practice</h1>
-            <p className={styles.hubSubtitle}>Master the CELPIP Reading test with strategies and practice.</p>
+            <h1>Reading</h1>
+            <p className={styles.hubSubtitle}>Learn the techniques, then practice all 4 tasks.</p>
           </div>
         </div>
+      </div>
+
+      {/* Reading Technique CTA */}
+      <div className={styles.techniqueCta} onClick={() => router.push('/reading/technique')}>
+        <div className={styles.techniqueCtaIcon}>
+          <Eye size={22} />
+        </div>
+        <div className={styles.techniqueCtaContent}>
+          <h3>Reading Technique Guide</h3>
+          <p>Paragraph-by-paragraph technique, Yes/No/Red Flag, Truth Trio, and score strategies.</p>
+        </div>
+        <ArrowRight size={18} className={styles.techniqueCtaArrow} />
       </div>
 
       {/* STEP 1 - Parts 1-2 */}

@@ -25,10 +25,10 @@ export default function RadarChart({ scores, maxScore = 12 }: RadarChartProps) {
   // Calculate points for each skill (4 points = diamond shape)
   // Order: Writing (top), Reading (right), Listening (bottom), Speaking (left)
   const skills = [
-    { key: 'writing', label: 'Writing', Icon: PenTool, color: '#3b82f6', angle: -90 },
-    { key: 'reading', label: 'Reading', Icon: BookOpen, color: '#22c55e', angle: 0 },
-    { key: 'listening', label: 'Listening', Icon: Headphones, color: '#f59e0b', angle: 90 },
-    { key: 'speaking', label: 'Speaking', Icon: Mic, color: '#a855f7', angle: 180 },
+    { key: 'writing', label: 'Writing', Icon: PenTool, color: '#10b981', gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', shadow: '0 4px 16px rgba(16, 185, 129, 0.3), 0 0 20px rgba(16, 185, 129, 0.2)', angle: -90 },
+    { key: 'reading', label: 'Reading', Icon: BookOpen, color: '#06b6d4', gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)', shadow: '0 4px 16px rgba(6, 182, 212, 0.3), 0 0 20px rgba(6, 182, 212, 0.2)', angle: 0 },
+    { key: 'listening', label: 'Listening', Icon: Headphones, color: '#f59e0b', gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)', shadow: '0 4px 16px rgba(245, 158, 11, 0.3), 0 0 20px rgba(245, 158, 11, 0.2)', angle: 90 },
+    { key: 'speaking', label: 'Speaking', Icon: Mic, color: '#a855f7', gradient: 'linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)', shadow: '0 4px 16px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2)', angle: 180 },
   ];
 
   // Convert angle and distance to x,y coordinates
@@ -232,8 +232,8 @@ export default function RadarChart({ scores, maxScore = 12 }: RadarChartProps) {
               <div 
                 className={styles.skillIcon}
                 style={{ 
-                  background: `linear-gradient(135deg, ${skill.color}, ${skill.color}dd)`,
-                  boxShadow: `0 4px 20px ${skill.color}40`
+                  background: skill.gradient,
+                  boxShadow: skill.shadow
                 }}
               >
                 <Icon size={20} strokeWidth={2.5} />

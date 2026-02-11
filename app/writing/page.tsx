@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { Mail, ClipboardList, ArrowRight, Clock, Target, Sparkles, Gamepad2, MessageSquareText, BookOpen, GraduationCap, MessageCircle, SearchX, BarChart3 } from 'lucide-react';
+import { Mail, ClipboardList, ArrowRight, Clock, Target, Sparkles, Gamepad2, MessageSquareText, BookOpen, GraduationCap, MessageCircle, SearchX, BarChart3, Zap } from 'lucide-react';
 import styles from '@/styles/WritingHub.module.scss';
-import ProgressTracker from '@/components/ProgressTracker';
 
 export default function WritingHubPage() {
   const router = useRouter();
@@ -18,59 +17,29 @@ export default function WritingHubPage() {
             <Sparkles size={32} />
           </div>
           <div className={styles.hubInfo}>
-            <h1>Writing Practice</h1>
-            <p className={styles.hubSubtitle}>Follow the steps below to prepare and practice for the CELPIP Writing test.</p>
+            <h1>Writing</h1>
+            <p className={styles.hubSubtitle}>Learn the techniques, then practice both tasks.</p>
           </div>
         </div>
+      </div>
+
+      {/* Writing Mastery CTA — Learn First */}
+      <div className={styles.techniqueCta} onClick={() => router.push('/writing/mastery')}>
+        <div className={styles.techniqueCtaIcon}>
+          <GraduationCap size={22} />
+        </div>
+        <div className={styles.techniqueCtaContent}>
+          <h3>Writing Mastery Guide</h3>
+          <p>CSF Framework, formulas, sentence starters, closings, and checklists — all in one place.</p>
+        </div>
+        <ArrowRight size={18} className={styles.techniqueCtaArrow} />
       </div>
 
       {/* STEP 1 - Preparation */}
       <section className={styles.stepSection}>
         <div className={styles.stepHeader}>
           <span className={styles.stepNumber}>Step 1</span>
-          <span className={styles.stepLabel}>Preparation</span>
-        </div>
-
-        {/* Mastery Guide - NEW */}
-        <div className={styles.guideCard} onClick={() => router.push('/writing/guide')}>
-          <div className={styles.guideCardIcon}>
-            <GraduationCap size={24} />
-          </div>
-          <div className={styles.guideCardContent}>
-            <h3>Mastery Guide</h3>
-            <p>Learn the CSF framework, PRE technique, and score-boosting formulas</p>
-          </div>
-          <div className={styles.guideCardBadge}>
-            <span>Essential</span>
-          </div>
-        </div>
-
-        <div className={styles.prepCard} onClick={() => router.push('/writing/starters')}>
-          <div className={styles.prepCardIcon}>
-            <MessageSquareText size={24} />
-          </div>
-          <div className={styles.prepCardContent}>
-            <h3>Sentence Starters</h3>
-            <p>Learn what to say before you write</p>
-          </div>
-          <div className={styles.prepCardAction}>
-            <span>Start</span>
-            <ArrowRight size={16} />
-          </div>
-        </div>
-
-        <div className={styles.prepCard} onClick={() => router.push('/writing/closing-builder')}>
-          <div className={styles.prepCardIcon}>
-            <MessageCircle size={24} />
-          </div>
-          <div className={styles.prepCardContent}>
-            <h3>Closing Builder</h3>
-            <p>"Please let me know if..." generator</p>
-          </div>
-          <div className={styles.prepCardAction}>
-            <span>Build</span>
-            <ArrowRight size={16} />
-          </div>
+          <span className={styles.stepLabel}>Tools & Practice</span>
         </div>
 
         <div className={styles.prepCard} onClick={() => router.push('/writing/contraction-spotter')}>
@@ -182,20 +151,10 @@ export default function WritingHubPage() {
         </div>
       </section>
 
-      {/* STEP 3 - Your Progress */}
-      <section className={styles.stepSection}>
-        <div className={styles.stepHeader}>
-          <span className={styles.stepNumber}>Step 3</span>
-          <span className={styles.stepLabel}>Your Progress</span>
-        </div>
-        
-        <ProgressTracker />
-      </section>
-
       {/* Study Guide Link */}
-      <div className={styles.guideLink} onClick={() => router.push('/writing/guide')}>
+      <div className={styles.guideLink} onClick={() => router.push('/writing/mastery')}>
         <BookOpen size={18} />
-        <span>Read the complete Writing Guide</span>
+        <span>Open the complete Writing Mastery Guide</span>
         <ArrowRight size={16} />
       </div>
     </div>

@@ -8,6 +8,7 @@ import styles from '@/styles/Pages.module.scss';
 import evaluationStyles from './evaluate.module.scss';
 import { Task1HistoryEntry } from '@/types';
 import { loadTask1History, saveTask1HistoryEntry, generateHistoryId } from '@/utils/history';
+import { recordPractice } from '@/components/DetailedStats';
 
 export default function Task1EvaluationPage() {
   const [emailText, setEmailText] = useState('');
@@ -36,6 +37,9 @@ export default function Task1EvaluationPage() {
       promptText: promptText.trim() || undefined,
     });
     setResult(evaluationResult);
+
+    // Record practice for profile stats
+    recordPractice('task1', evaluationResult.wordCount, evaluationResult.score, 5); // Estimate 5 min for evaluate
 
     // Save to history
     const historyEntry: Task1HistoryEntry = {

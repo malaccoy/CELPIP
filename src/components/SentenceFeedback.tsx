@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { MessageSquare, CheckCircle, AlertCircle, AlertTriangle, Loader2, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { MessageSquare, CheckCircle, AlertCircle, AlertTriangle, Loader2, X, ChevronDown, ChevronUp, Lock } from 'lucide-react';
+import { usePlan } from '@/hooks/usePlan';
+import { ProGate } from './ProGate';
 import styles from '@/styles/SentenceFeedback.module.scss';
 
 interface SentenceFeedback {
@@ -37,6 +39,7 @@ const categoryLabels: Record<string, string> = {
 };
 
 export default function SentenceFeedbackPanel({ task, text }: SentenceFeedbackProps) {
+  const { isPro, loading: planLoading } = usePlan();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [sentences, setSentences] = useState<SentenceFeedback[]>([]);
@@ -97,13 +100,34 @@ export default function SentenceFeedbackPanel({ task, text }: SentenceFeedbackPr
   if (!isOpen) {
     return (
       <button 
-        className={styles.triggerButton} 
+        className={`${styles.triggerButton} ${!isPro && !planLoading ? styles.lockedButton : ''}`}
         onClick={handleOpen}
         disabled={isDisabled}
       >
-        <MessageSquare size={18} />
+        {isPro ? <MessageSquare size={18} /> : <Lock size={18} />}
         <span>Sentence-by-Sentence</span>
+        {!isPro && !planLoading && <span className={styles.proBadge}>PRO</span>}
       </button>
+    );
+  }
+
+  if (!isPro) {
+    return (
+      <div className={styles.panel}>
+        <div className={styles.panelHeader}>
+          <div className={styles.panelTitle}>
+            <MessageSquare size={20} />
+            <span>Sentence Feedback</span>
+          </div>
+          <button className={styles.closeButton} onClick={handleClose}>
+            <X size={18} />
+          </button>
+        </div>
+        <ProGate 
+          feature="Sentence Analysis" 
+          description="Get AI-powered feedback on every sentence — grammar, vocabulary, structure, and style. Upgrade to Pro to unlock."
+        />
+      </div>
     );
   }
 

@@ -124,7 +124,7 @@ export default function Modal({
               type="button"
               className={styles.modalCloseBtn}
               onClick={onClose}
-              aria-label="Fechar modal"
+              aria-label="Close modal"
             >
               <X size={20} />
             </button>
@@ -136,7 +136,7 @@ export default function Modal({
             type="button"
             className={`${styles.modalCloseBtn} ${styles.modalCloseBtnAbsolute}`}
             onClick={onClose}
-            aria-label="Fechar modal"
+            aria-label="Close modal"
           >
             <X size={20} />
           </button>

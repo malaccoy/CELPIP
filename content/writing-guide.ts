@@ -1,4 +1,4 @@
-// Writing Guide Content - Based on Mike's Teaching Method
+// Writing Guide Content — CELPIP Coach Writing Mastery
 
 export interface GuideSection {
   id: string;
@@ -272,6 +272,22 @@ export const task2Formula: GuideSection = {
     },
     {
       type: 'heading',
+      content: 'The WHO Matters for Your Arguments'
+    },
+    {
+      type: 'text',
+      content: 'Always check WHO is asking the survey. This is not about the opening (you don\'t write "Dear" in Task 2) — it\'s about choosing BETTER arguments. Think: what does THIS person care about?'
+    },
+    {
+      type: 'example',
+      content: 'Survey about picnics in public parks → asked by the CITY MANAGER. Good arguments: safer parks with more people, economic benefits (visitors buy from nearby shops), community health. These matter to a city manager more than "I like picnics with my family."'
+    },
+    {
+      type: 'tip',
+      content: 'A teacher asking about homework? → arguments about learning outcomes. A city manager asking about parks? → arguments about safety, economy, community. Always tailor your points to who is reading.'
+    },
+    {
+      type: 'heading',
       content: 'The PRE Technique'
     },
     {
@@ -351,7 +367,11 @@ CONCLUSION (2-3 sentences)
     },
     {
       type: 'text',
-      content: 'You CAN mention a benefit of the other option to show balanced thinking. But you must COUNTER it:'
+      content: 'You CAN mention a benefit of the other option to show balanced thinking. Examiners like this because it shows maturity. But you MUST counter it — if their argument sounds better than yours, you lose points.'
+    },
+    {
+      type: 'tip',
+      content: 'Structure: "On the other hand, [positive point for the other side]. However, [why your side is still better]." Always make sure YOUR argument wins.'
     },
     {
       type: 'example',

@@ -1,0 +1,940 @@
+// LessonPage.module.scss - Individual Lesson with Learn → Practice → Feedback
+
+// ============================================
+// VARIABLES
+// ============================================
+
+$bg-dark: #0a0f1a;
+$bg-surface: #12182b;
+// bg-card: var(--glass-bg);
+// bg-card-hover: var(--glass-strong);
+
+$text-primary: #f8fafc;
+// uses var(--text-secondary);
+// uses var(--text-muted);
+
+$accent-primary: #8b5cf6;
+$accent-green: #10b981;
+$accent-cyan: #06b6d4;
+$accent-orange: #f59e0b;
+$accent-red: #ef4444;
+$accent-blue: #3b82f6;
+
+$border-subtle: rgba(139, 92, 246, 0.15);
+// border-light: var(--border-default);
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+
+$transition-base: 200ms ease;
+$transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$font-display: 'Space Grotesk', system-ui, sans-serif;
+$font-body: 'DM Sans', system-ui, sans-serif;
+
+// ============================================
+// KEYFRAMES
+// ============================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes checkPop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+// ============================================
+// CONTAINER
+// ============================================
+
+.container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg-deep);
+  background-attachment: fixed;
+  padding-bottom: 100px;
+  flex: 1;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  
+  h2 {
+    color: $text-primary;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: $accent-primary;
+  }
+}
+
+// ============================================
+// HEADER
+// ============================================
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(10, 15, 26, 0.9);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: $radius-md;
+  background: var(--glass-bg);
+  color: $text-primary;
+  transition: all $transition-base;
+  
+  &:hover {
+    background: var(--glass-strong);
+  }
+}
+
+.headerInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.breadcrumb {
+  font-family: $font-body;
+  font-size: 0.7rem;
+  color: $accent-cyan;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.header h1 {
+  font-family: $font-display;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin: 0;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: $radius-md;
+  background: linear-gradient(135deg, $accent-green, darken($accent-green, 10%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+// ============================================
+// PROGRESS STEPS
+// ============================================
+
+.progressContainer {
+  padding: 1rem 1.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.progressSteps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  transition: all $transition-base;
+  
+  svg {
+    opacity: 0.5;
+  }
+  
+  &.active {
+    color: $accent-primary;
+    background: rgba(139, 92, 246, 0.15);
+    
+    svg {
+      opacity: 1;
+    }
+  }
+  
+  &.done {
+    color: $accent-green;
+    
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.stepLine {
+  width: 24px;
+  height: 2px;
+  background: var(--border-default);
+  border-radius: 1px;
+}
+
+// ============================================
+// MAIN CONTENT
+// ============================================
+
+.main {
+  padding: 1.25rem;
+}
+
+// ============================================
+// LEARN SECTION
+// ============================================
+
+.learnSection {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.objectiveCard {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: $radius-lg;
+  margin-bottom: 1.5rem;
+  
+  svg {
+    color: $accent-green;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}
+
+.objectiveLabel {
+  display: block;
+  font-family: $font-body;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: $accent-green;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.objectiveText {
+  font-family: $font-body;
+  font-size: 0.9rem;
+  color: $text-primary;
+  margin: 0;
+  line-height: 1.4;
+}
+
+// ============================================
+// CONTENT AREA
+// ============================================
+
+.contentArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contentHeading {
+  font-family: $font-display;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin: 0.5rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-default);
+  
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.contentText {
+  font-family: $font-body;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tipBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: $radius-md;
+  
+  svg {
+    color: $accent-orange;
+    flex-shrink: 0;
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $text-primary;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.warningBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: $radius-md;
+  
+  svg {
+    color: $accent-red;
+    flex-shrink: 0;
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $text-primary;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.exampleBox {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: $radius-md;
+  
+  svg {
+    color: $accent-cyan;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $text-primary;
+    margin: 0;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+}
+
+.formulaBox {
+  padding: 1rem;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: $radius-md;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  color: $accent-primary;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.listBlock {
+  .listIntro {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    
+    li {
+      font-family: $font-body;
+      font-size: 0.85rem;
+      color: $text-primary;
+      line-height: 1.6;
+      margin-bottom: 0.35rem;
+      
+      &::marker {
+        color: $accent-primary;
+      }
+    }
+  }
+}
+
+.comparisonBox {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-default);
+  border-radius: $radius-lg;
+  padding: 1rem;
+  
+  .comparisonIntro {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0 0 0.75rem;
+  }
+}
+
+.comparisonGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.badExample, .goodExample {
+  padding: 0.75rem;
+  border-radius: $radius-md;
+  
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: $font-body;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.badExample {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  
+  .label {
+    color: $accent-red;
+  }
+  
+  p {
+    color: rgba(239, 68, 68, 0.9);
+    text-decoration: line-through;
+    text-decoration-color: rgba(239, 68, 68, 0.5);
+  }
+}
+
+.goodExample {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  
+  .label {
+    color: $accent-green;
+  }
+  
+  p {
+    color: $text-primary;
+  }
+}
+
+// ============================================
+// CTA SECTION
+// ============================================
+
+.ctaSection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-default);
+}
+
+.ctaButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, $accent-primary, darken($accent-primary, 15%));
+  border: none;
+  border-radius: $radius-lg;
+  font-family: $font-display;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.35);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.45);
+  }
+}
+
+// ============================================
+// PRACTICE SECTION
+// ============================================
+
+.practiceSection {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.practiceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.practiceCount {
+  font-family: $font-body;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.practiceType {
+  font-family: $font-body;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: $accent-cyan;
+  background: rgba(6, 182, 212, 0.15);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.practiceCard {
+  background: var(--glass-bg);
+  border: 1px solid $border-subtle;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+}
+
+.practicePrompt {
+  font-family: $font-body;
+  font-size: 1rem;
+  color: $text-primary;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  white-space: pre-wrap;
+}
+
+.practiceHint {
+  font-family: $font-body;
+  font-size: 0.8rem;
+  color: $accent-orange;
+  background: rgba(245, 158, 11, 0.1);
+  padding: 0.75rem;
+  border-radius: $radius-md;
+  margin-bottom: 1rem;
+}
+
+.choiceOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.choiceOption {
+  padding: 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--border-default);
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  &:hover {
+    background: var(--glass-bg-hover);
+    border-color: $accent-primary;
+    color: $text-primary;
+  }
+  
+  &.selected {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: $accent-primary;
+    color: $text-primary;
+  }
+}
+
+.practiceInput {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-default);
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  color: $text-primary;
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 1rem;
+  transition: border-color $transition-base;
+  
+  &::placeholder {
+    color: var(--text-muted);
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: $accent-primary;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, $accent-blue, darken($accent-blue, 10%));
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// ============================================
+// FEEDBACK SECTION
+// ============================================
+
+.feedbackSection {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.choiceFeedback {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: $radius-md;
+  margin-bottom: 1rem;
+  
+  span {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  &.correct {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    
+    svg, span {
+      color: $accent-green;
+    }
+    
+    svg {
+      animation: checkPop 0.4s ease-out;
+    }
+  }
+  
+  &.incorrect {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    
+    svg {
+      color: $accent-red;
+    }
+    
+    span {
+      color: $text-primary;
+    }
+  }
+}
+
+.aiFeedback {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedbackGood, .feedbackImprove, .feedbackNext {
+  padding: 1rem;
+  border-radius: $radius-md;
+  
+  h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: $font-body;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0 0 0.75rem;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    
+    li {
+      font-family: $font-body;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.feedbackGood {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  
+  h4 {
+    color: $accent-green;
+  }
+  
+  li {
+    color: $text-primary;
+    
+    &::marker {
+      color: $accent-green;
+    }
+  }
+}
+
+.feedbackImprove {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  
+  h4 {
+    color: $accent-orange;
+  }
+  
+  li {
+    color: $text-primary;
+    
+    &::marker {
+      color: $accent-orange;
+    }
+  }
+}
+
+.feedbackNext {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  
+  h4 {
+    color: $accent-primary;
+  }
+  
+  p {
+    color: $text-primary;
+  }
+}
+
+.feedbackActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.retryButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--border-default);
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  &:hover {
+    background: var(--glass-strong);
+    color: $text-primary;
+  }
+}
+
+.nextButton {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, $accent-green, darken($accent-green, 10%));
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+  }
+}
+
+// ============================================
+// COMPLETE SECTION
+// ============================================
+
+.completeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  animation: fadeInUp 0.5s ease-out;
+  
+  h2 {
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  p {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0 0 2rem;
+  }
+}
+
+.completeIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $accent-green, darken($accent-green, 10%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation: checkPop 0.6s ease-out;
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+}
+
+.completeActions {
+  width: 100%;
+  max-width: 300px;
+}
+
+.nextLessonButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, $accent-primary, darken($accent-primary, 15%));
+  border: none;
+  border-radius: $radius-lg;
+  font-family: $font-display;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all $transition-smooth;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.35);
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .comparisonGrid {
+    flex-direction: row;
+    
+    .badExample, .goodExample {
+      flex: 1;
+    }
+  }
+}
