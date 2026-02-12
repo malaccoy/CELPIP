@@ -7,10 +7,12 @@ import {
   User, Trophy, Target, Clock, Flame, TrendingUp, 
   ChevronRight, Award, Zap, BookOpen, Headphones, 
   Mic, PenTool, Calendar, Star, Lock, Settings,
-  AlertTriangle, Download, Trash2, LogOut, RefreshCw
+  AlertTriangle, Download, Trash2, LogOut, RefreshCw,
+  Sparkles, TrendingDown, Minus, BarChart3
 } from 'lucide-react';
 import RadarChart from '@/components/RadarChart';
 import { useUser } from '@/hooks/useUser';
+import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { createClient } from '@/lib/supabase/client';
 import { fullSync } from '@/hooks/useProgressSync';
 import styles from '@/styles/Profile.module.scss';
@@ -60,6 +62,7 @@ export default function ProfilePage() {
   
   const router = useRouter();
   const { user } = useUser();
+  const { performances, loaded: adaptiveLoaded } = useAdaptiveDifficulty();
   const [isSyncing, setIsSyncing] = useState(false);
 
   useEffect(() => {
@@ -480,6 +483,68 @@ export default function ProfilePage() {
               listening: moduleStats.listening.avgScore
             }}
           />
+
+          {/* AI Assessment */}
+          {adaptiveLoaded && Object.keys(performances).length > 0 && (
+            <section className={styles.aiAssessment}>
+              <h2 className={styles.assessmentTitle}>
+                <Sparkles size={16} />
+                AI Skill Assessment
+              </h2>
+              <div className={styles.assessmentGrid}>
+                {[
+                  { id: 'listening', label: 'Listening', Icon: Headphones, color: '#fb923c' },
+                  { id: 'reading', label: 'Reading', Icon: BookOpen, color: '#2dd4bf' },
+                  { id: 'writing', label: 'Writing', Icon: PenTool, color: '#c084fc' },
+                  { id: 'speaking', label: 'Speaking', Icon: Mic, color: '#38bdf8' },
+                ].map(sec => {
+                  const perf = performances[sec.id];
+                  if (!perf) return (
+                    <div key={sec.id} className={styles.assessmentCard}>
+                      <div className={styles.assessmentCardHeader}>
+                        <sec.Icon size={16} style={{ color: sec.color }} />
+                        <span>{sec.label}</span>
+                      </div>
+                      <span className={styles.assessmentNoData}>No data yet</span>
+                    </div>
+                  );
+                  const levelEmoji = perf.level === 'advanced' ? '🏆' : perf.level === 'intermediate' ? '🔥' : '🌱';
+                  const trendColor = perf.trend === 'improving' ? '#34d399' : perf.trend === 'declining' ? '#f87171' : 'rgba(248,250,252,0.3)';
+                  return (
+                    <div key={sec.id} className={styles.assessmentCard}>
+                      <div className={styles.assessmentCardHeader}>
+                        <sec.Icon size={16} style={{ color: sec.color }} />
+                        <span>{sec.label}</span>
+                        <span className={styles.assessmentLevel}>{levelEmoji} {perf.level}</span>
+                      </div>
+                      <div className={styles.assessmentBar}>
+                        <div className={styles.assessmentBarFill} style={{ width: `${Math.round(perf.avgScore * 100)}%`, background: sec.color }} />
+                      </div>
+                      <div className={styles.assessmentMeta}>
+                        <span style={{ color: trendColor, display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+                          {perf.trend === 'improving' ? <TrendingUp size={12} /> : perf.trend === 'declining' ? <TrendingDown size={12} /> : <Minus size={12} />}
+                          {perf.trend}
+                        </span>
+                        <span>{Math.round(perf.avgScore * 100)}% avg</span>
+                        <span>{perf.attempts} attempts</span>
+                      </div>
+                      {perf.avgScore < 0.5 && (
+                        <p className={styles.assessmentTip}>⚠️ Focus area — review the technique guide</p>
+                      )}
+                      {perf.avgScore >= 0.8 && (
+                        <p className={styles.assessmentTipGood}>✨ Strong — try advanced difficulty</p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              <button className={styles.fullReportBtn} onClick={() => router.push('/weakness-report')}>
+                <BarChart3 size={14} />
+                Full Weakness Report
+                <ChevronRight size={14} />
+              </button>
+            </section>
+          )}
 
           {/* Weekly Activity */}
           <section className={styles.weeklySection}>

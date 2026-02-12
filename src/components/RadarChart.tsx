@@ -62,7 +62,11 @@ export default function RadarChart({ scores, maxScore = 12 }: RadarChartProps) {
     : 0;
   const overallPercent = Math.round((avgScore / maxScore) * 100);
 
+  const sectionsWithData = validScores.length;
+  const allSectionsComplete = sectionsWithData >= 4;
+
   const getLevel = (percent: number) => {
+    if (!allSectionsComplete) return null;
     if (percent >= 83) return 'Expert';
     if (percent >= 67) return 'Advanced';
     if (percent >= 50) return 'Intermediate';
@@ -71,13 +75,23 @@ export default function RadarChart({ scores, maxScore = 12 }: RadarChartProps) {
     return 'Not Started';
   };
 
+  const level = getLevel(overallPercent);
+
   return (
     <div className={styles.radarContainer}>
       {/* Header with overall score */}
       <div className={styles.header}>
         <div className={styles.levelInfo}>
           <span className={styles.levelLabel}>YOUR LEVEL</span>
-          <span className={styles.levelValue}>{getLevel(overallPercent)}</span>
+          {level ? (
+            <span className={styles.levelValue}>{level}</span>
+          ) : (
+            <span className={styles.levelHint}>
+              {sectionsWithData === 0
+                ? 'Practice to unlock'
+                : `${4 - sectionsWithData} section${4 - sectionsWithData > 1 ? 's' : ''} remaining`}
+            </span>
+          )}
           <span className={styles.poweredBy}>
             <span className={styles.bolt}>⚡</span>
             POWERED BY AI
@@ -106,12 +120,14 @@ export default function RadarChart({ scores, maxScore = 12 }: RadarChartProps) {
               r="42"
               fill="none"
               strokeWidth="6"
-              strokeDasharray={`${overallPercent * 2.64} 264`}
+              strokeDasharray={`${allSectionsComplete ? overallPercent * 2.64 : 0} 264`}
               strokeLinecap="round"
               stroke="url(#progressGradient)"
             />
           </svg>
-          <span className={styles.percentValue}>{overallPercent}%</span>
+          <span className={styles.percentValue}>
+            {allSectionsComplete ? `${overallPercent}%` : `${sectionsWithData}/4`}
+          </span>
         </div>
       </div>
 

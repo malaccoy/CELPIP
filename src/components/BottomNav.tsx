@@ -9,7 +9,7 @@ import styles from '@/styles/BottomNav.module.scss';
 const navItems = [
   { href: '/', icon: Home, label: 'Home' },
   { href: '/dashboard', icon: Dumbbell, label: 'Practice' },
-  { href: '/progress', icon: BarChart3, label: 'Progress' },
+  { href: '/progress', icon: BarChart3, label: 'Quizzes' },
   { href: '/profile', icon: User, label: 'Profile' },
 ];
 
