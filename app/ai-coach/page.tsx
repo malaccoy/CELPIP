@@ -53,6 +53,17 @@ const PARTS: Record<Section, { id: string; label: string }[]> = {
   ],
 };
 
+const SPEAKING_TASK_SLUGS: Record<string, string> = {
+  '1': 'giving-advice',
+  '2': 'personal-experience',
+  '3': 'describing-scene',
+  '4': 'making-predictions',
+  '5': 'comparing-persuading',
+  '6': 'difficult-situation',
+  '7': 'expressing-opinions',
+  '8': 'unusual-situation',
+};
+
 const DIFFICULTIES: { id: Difficulty; emoji: string; label: string; desc: string }[] = [
   { id: 'beginner', emoji: '🌱', label: 'Beginner', desc: 'CLB 5-6' },
   { id: 'intermediate', emoji: '🔥', label: 'Intermediate', desc: 'CLB 7-8' },
@@ -483,7 +494,7 @@ export default function AIPracticePage() {
               </div>
 
               <a
-                href={`/speaking/practice/${partOrTask.match(/Task (\d)/)?.[1] || '1'}`}
+                href={`/speaking/practice/${SPEAKING_TASK_SLUGS[partOrTask.match(/Task (\d)/)?.[1] || '1'] || 'giving-advice'}`}
                 className={styles.startPracticeBtn}
               >
                 Start Speaking Practice <ArrowRight size={16} />
