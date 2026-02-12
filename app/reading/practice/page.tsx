@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { 
   ArrowLeft, ArrowRight, CheckCircle, XCircle, 
   Clock, Target, RotateCcw, Trophy, BookOpen
@@ -9,7 +10,32 @@ import {
 import { readingPassages, ReadingPassage, ReadingQuestion } from '@content/reading-practice';
 import styles from '@/styles/ReadingPractice.module.scss';
 
+const PART_NAMES: Record<number, string> = {
+  1: 'Reading Correspondence',
+  2: 'Reading to Apply a Diagram',
+  3: 'Reading for Information',
+  4: 'Reading for Viewpoints',
+};
+
 export default function ReadingPracticePage() {
+  return (
+    <Suspense fallback={<div className={styles.container}><p>Loading...</p></div>}>
+      <ReadingPracticeContent />
+    </Suspense>
+  );
+}
+
+function ReadingPracticeContent() {
+  const searchParams = useSearchParams();
+  const partFilter = searchParams.get('part') ? Number(searchParams.get('part')) : null;
+
+  const filteredPassages = useMemo(() => {
+    if (partFilter && partFilter >= 1 && partFilter <= 4) {
+      return readingPassages.filter(p => p.part === partFilter);
+    }
+    return readingPassages;
+  }, [partFilter]);
+
   const [currentPassageIndex, setCurrentPassageIndex] = useState(0);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -17,9 +43,9 @@ export default function ReadingPracticePage() {
   const [answers, setAnswers] = useState<Map<string, { selected: number; correct: boolean }>>(new Map());
   const [showPassageList, setShowPassageList] = useState(true);
 
-  const passage = readingPassages[currentPassageIndex];
+  const passage = filteredPassages[currentPassageIndex];
   const question = passage?.questions[currentQuestionIndex];
-  const totalQuestions = readingPassages.reduce((sum, p) => sum + p.questions.length, 0);
+  const totalQuestions = filteredPassages.reduce((sum, p) => sum + p.questions.length, 0);
   const answeredQuestions = answers.size;
   const correctAnswers = Array.from(answers.values()).filter(a => a.correct).length;
 
@@ -49,7 +75,7 @@ export default function ReadingPracticePage() {
   const handleNextQuestion = () => {
     if (currentQuestionIndex < passage.questions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
-    } else if (currentPassageIndex < readingPassages.length - 1) {
+    } else if (currentPassageIndex < filteredPassages.length - 1) {
       setCurrentPassageIndex(prev => prev + 1);
       setCurrentQuestionIndex(0);
     }
@@ -62,7 +88,7 @@ export default function ReadingPracticePage() {
       setCurrentQuestionIndex(prev => prev - 1);
     } else if (currentPassageIndex > 0) {
       setCurrentPassageIndex(prev => prev - 1);
-      setCurrentQuestionIndex(readingPassages[currentPassageIndex - 1].questions.length - 1);
+      setCurrentQuestionIndex(filteredPassages[currentPassageIndex - 1].questions.length - 1);
     }
     setSelectedAnswer(null);
     setShowResult(false);
@@ -99,12 +125,12 @@ export default function ReadingPracticePage() {
           <Link href="/reading" className={styles.backBtn}>
             <ArrowLeft size={18} /> Back to Reading
           </Link>
-          <h1>Reading Practice</h1>
-          <p>Choose a passage to practice</p>
+          <h1>{partFilter ? `Part ${partFilter}: ${PART_NAMES[partFilter]}` : 'Reading Practice'}</h1>
+          <p>{partFilter ? `${filteredPassages.length} passages available` : 'Choose a passage to practice'}</p>
         </header>
 
         <div className={styles.passageList}>
-          {readingPassages.map((p, index) => {
+          {filteredPassages.map((p, index) => {
             const passageAnswers = p.questions.filter(q => 
               answers.has(`${p.id}-${q.id}`)
             ).length;
@@ -246,7 +272,7 @@ export default function ReadingPracticePage() {
                 onClick={handleNextQuestion}
                 className={styles.nextBtn}
                 disabled={
-                  currentPassageIndex === readingPassages.length - 1 && 
+                  currentPassageIndex === filteredPassages.length - 1 && 
                   currentQuestionIndex === passage.questions.length - 1
                 }
               >
