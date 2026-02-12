@@ -122,6 +122,49 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.autoToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(248, 250, 252, 0.4);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover { background: rgba(255, 255, 255, 0.06); }
+}
+
+.autoActive {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.1);
+  color: #a5b4fc;
+}
+
+.adaptiveInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  font-size: 0.72rem;
+  color: rgba(248, 250, 252, 0.5);
+  margin-bottom: 0.5rem;
+
+  svg { color: #a5b4fc; flex-shrink: 0; }
 }
 
 .partChips {

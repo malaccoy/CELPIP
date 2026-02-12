@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import {
   Sparkles, BookOpen, PenTool, Headphones, Mic,
   Loader2, RefreshCw, ArrowRight, Clock, FileText,
-  Volume2, ChevronRight, Zap
+  Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus
 } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/AIPractice.module.scss';
 
@@ -61,10 +62,12 @@ const DIFFICULTIES: { id: Difficulty; emoji: string; label: string; desc: string
 // ─── Component ───────────────────────────────────
 export default function AIPracticePage() {
   const { isPro, loading: planLoading } = usePlan();
+  const { performances, loaded: adaptiveLoaded, getLevelForSection, recordAttempt } = useAdaptiveDifficulty();
 
   const [section, setSection] = useState<Section>('reading');
   const [partOrTask, setPartOrTask] = useState(PARTS.reading[0].id);
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
+  const [autoMode, setAutoMode] = useState(true);
 
   const [generating, setGenerating] = useState(false);
   const [exercise, setExercise] = useState<any>(null);
@@ -84,14 +87,24 @@ export default function AIPracticePage() {
     setSubmitted(false);
   }, []);
 
-  // Change section → reset part to first option
+  // Change section → reset part to first option + auto-adjust difficulty
   const handleSectionChange = (s: Section) => {
     setSection(s);
     setPartOrTask(PARTS[s][0].id);
     setExercise(null);
     setAudioSrc(null);
     resetQuiz();
+    if (autoMode && adaptiveLoaded) {
+      setDifficulty(getLevelForSection(s));
+    }
   };
+
+  // Auto-set difficulty on first load
+  useEffect(() => {
+    if (autoMode && adaptiveLoaded) {
+      setDifficulty(getLevelForSection(section));
+    }
+  }, [adaptiveLoaded]);
 
   // ─── Generate ──────────────────────────────────
   const generate = async () => {
@@ -147,7 +160,17 @@ export default function AIPracticePage() {
     setAnswers(prev => ({ ...prev, [qId]: optIdx }));
   };
 
-  const submitQuiz = () => setSubmitted(true);
+  const submitQuiz = () => {
+    setSubmitted(true);
+    // Record for adaptive difficulty
+    if (exercise?.questions) {
+      const total = exercise.questions.length;
+      const correct = exercise.questions.filter(
+        (q: any) => answers[q.id] === q.correct
+      ).length;
+      recordAttempt(section, partOrTask, correct, total);
+    }
+  };
 
   const getScore = () => {
     if (!exercise?.questions) return { correct: 0, total: 0 };
@@ -226,13 +249,37 @@ export default function AIPracticePage() {
 
       {/* Difficulty */}
       <div className={styles.difficultySelector}>
-        <div className={styles.partSelectorLabel}>Difficulty</div>
+        <div className={styles.partSelectorLabel}>
+          Difficulty
+          <button
+            className={`${styles.autoToggle} ${autoMode ? styles.autoActive : ''}`}
+            onClick={() => {
+              setAutoMode(!autoMode);
+              if (!autoMode && adaptiveLoaded) {
+                setDifficulty(getLevelForSection(section));
+              }
+            }}
+          >
+            <Zap size={12} /> {autoMode ? 'Auto' : 'Manual'}
+          </button>
+        </div>
+        {autoMode && performances[section] && (
+          <div className={styles.adaptiveInfo}>
+            {performances[section].trend === 'improving' && <TrendingUp size={13} />}
+            {performances[section].trend === 'declining' && <TrendingDown size={13} />}
+            {performances[section].trend === 'stable' && <Minus size={13} />}
+            <span>
+              {performances[section].attempts} attempts · {Math.round(performances[section].avgScore * 100)}% avg
+              {performances[section].trend !== 'stable' && ` · ${performances[section].trend}`}
+            </span>
+          </div>
+        )}
         <div className={styles.difficultyOptions}>
           {DIFFICULTIES.map(d => (
             <div
               key={d.id}
               className={difficulty === d.id ? styles.difficultyActive : styles.difficultyOption}
-              onClick={() => setDifficulty(d.id)}
+              onClick={() => { setAutoMode(false); setDifficulty(d.id); }}
             >
               <span className={styles.difficultyEmoji}>{d.emoji}</span>
               <span className={styles.difficultyLabel}>{d.label}</span>

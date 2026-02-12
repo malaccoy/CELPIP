@@ -253,6 +253,22 @@ export default function DashboardPage() {
         <ArrowRight size={18} className={styles.aiCoachArrow} />
       </article>
 
+      {/* Weakness Report CTA */}
+      <article
+        className={styles.aiCoachCard}
+        onClick={() => router.push('/weakness-report')}
+        style={{ marginBottom: '1.5rem' }}
+      >
+        <div className={styles.aiCoachIcon} style={{ background: 'linear-gradient(135deg, #6366f1, #3b82f6)' }}>
+          <BarChart3 size={22} />
+        </div>
+        <div className={styles.aiCoachContent}>
+          <h3>Weakness Report</h3>
+          <p>Performance trends, weak areas, and improvement recommendations</p>
+        </div>
+        <ArrowRight size={18} className={styles.aiCoachArrow} />
+      </article>
+
       {/* Skills Section */}
       <section className={styles.skillsSection}>
         <h2 className={styles.sectionTitle}>Practice by Skill</h2>
