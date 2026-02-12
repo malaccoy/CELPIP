@@ -1,0 +1,635 @@
+@use 'design-system' as *;
+
+.container {
+  @include page-container;
+  padding: 1.5rem 1rem 6rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// ─── Header ──────────────────────────────────────
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(99, 102, 241, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #c084fc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: rgba(248, 250, 252, 0.55);
+  margin: 0;
+  line-height: 1.5;
+}
+
+// ─── Section Selector ────────────────────────────
+.sectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.sectionCardActive {
+  composes: sectionCard;
+}
+
+.sectionIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.sectionLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.7);
+  transition: color 0.25s ease;
+}
+
+// Section accent colors
+.reading .sectionIcon { background: rgba(20, 184, 166, 0.15); color: #2dd4bf; }
+.reading.sectionCardActive { border-color: rgba(20, 184, 166, 0.4); background: rgba(20, 184, 166, 0.06); }
+.reading.sectionCardActive .sectionLabel { color: #2dd4bf; }
+
+.listening .sectionIcon { background: rgba(249, 115, 22, 0.15); color: #fb923c; }
+.listening.sectionCardActive { border-color: rgba(249, 115, 22, 0.4); background: rgba(249, 115, 22, 0.06); }
+.listening.sectionCardActive .sectionLabel { color: #fb923c; }
+
+.writing .sectionIcon { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+.writing.sectionCardActive { border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.06); }
+.writing.sectionCardActive .sectionLabel { color: #c084fc; }
+
+.speaking .sectionIcon { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+.speaking.sectionCardActive { border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.06); }
+.speaking.sectionCardActive .sectionLabel { color: #38bdf8; }
+
+// ─── Part/Task Selector ──────────────────────────
+.partSelector {
+  margin-bottom: 1.5rem;
+}
+
+.partSelectorLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.partChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.partChip {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(248, 250, 252, 0.65);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.partChipActive {
+  composes: partChip;
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #a5b4fc;
+}
+
+// ─── Difficulty Selector ─────────────────────────
+.difficultySelector {
+  margin-bottom: 1.75rem;
+}
+
+.difficultyOptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.difficultyOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.difficultyActive {
+  composes: difficultyOption;
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.difficultyEmoji {
+  font-size: 1.25rem;
+}
+
+.difficultyLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.65);
+}
+
+.difficultyActive .difficultyLabel {
+  color: #a5b4fc;
+}
+
+.difficultyDesc {
+  font-size: 0.68rem;
+  color: rgba(248, 250, 252, 0.35);
+}
+
+// ─── Generate Button ─────────────────────────────
+.generateBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.loading {
+  composes: generateBtn;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+// ─── Exercise Display ────────────────────────────
+.exerciseWrap {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.exerciseHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.exerciseTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.exerciseMeta {
+  font-size: 0.75rem;
+  color: rgba(248, 250, 252, 0.4);
+}
+
+// Passage card
+.passageCard {
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.passageText {
+  font-size: 0.92rem;
+  color: rgba(248, 250, 252, 0.85);
+  line-height: 1.75;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+// Audio player
+.audioPlayer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: 12px;
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.15);
+  margin-bottom: 1.25rem;
+
+  audio {
+    flex: 1;
+    height: 36px;
+    border-radius: 8px;
+  }
+}
+
+.audioIcon {
+  color: #fb923c;
+  flex-shrink: 0;
+}
+
+// Questions
+.questionsSection {
+  margin-bottom: 1.5rem;
+}
+
+.questionsSectionTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 1rem;
+}
+
+.questionCard {
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 0.75rem;
+}
+
+.questionText {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.9);
+  margin: 0 0 0.75rem;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(248, 250, 252, 0.75);
+  font-size: 0.84rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover:not(.correct):not(.wrong) {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.optionLetter {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(248, 250, 252, 0.5);
+  flex-shrink: 0;
+}
+
+.selected {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.correct {
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #34d399 !important;
+
+  .optionLetter {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+  }
+}
+
+.wrong {
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  background: rgba(239, 68, 68, 0.06) !important;
+  color: #f87171 !important;
+
+  .optionLetter {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+  }
+}
+
+.explanation {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 3px solid rgba(16, 185, 129, 0.3);
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.6);
+  line-height: 1.5;
+}
+
+// ─── Writing Prompt Display ──────────────────────
+.writingPrompt {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: rgba(168, 85, 247, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+  margin-bottom: 1.25rem;
+}
+
+.scenarioText {
+  font-size: 0.92rem;
+  color: rgba(248, 250, 252, 0.85);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.bulletList {
+  padding-left: 1.25rem;
+  margin: 0;
+
+  li {
+    font-size: 0.88rem;
+    color: rgba(248, 250, 252, 0.75);
+    margin-bottom: 0.375rem;
+    line-height: 1.5;
+  }
+}
+
+.promptMeta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.45);
+
+  svg {
+    opacity: 0.6;
+  }
+}
+
+// ─── Speaking Prompt Display ─────────────────────
+.speakingPrompt {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  margin-bottom: 1.25rem;
+}
+
+.speakingText {
+  font-size: 0.95rem;
+  color: rgba(248, 250, 252, 0.9);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.tipsList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: rgba(248, 250, 252, 0.6);
+    margin-bottom: 0.375rem;
+    line-height: 1.5;
+
+    &::before {
+      content: '💡';
+      flex-shrink: 0;
+    }
+  }
+}
+
+// ─── Score / Results ─────────────────────────────
+.resultsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 1rem;
+}
+
+.scoreDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.scoreNum {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.scoreTotal {
+  font-size: 0.85rem;
+  color: rgba(248, 250, 252, 0.4);
+}
+
+.scoreLabel {
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.55);
+  font-weight: 500;
+}
+
+// ─── Action Buttons ──────────────────────────────
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.nextBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  }
+}
+
+.resetBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(248, 250, 252, 0.65);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+// ─── Start Writing/Speaking CTA ──────────────────
+.startPracticeBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  }
+}

@@ -222,6 +222,21 @@ export default function DashboardPage() {
         </div>
       </div>
 
+      {/* AI Coach CTA */}
+      <article
+        className={styles.aiCoachCard}
+        onClick={() => router.push('/ai-coach')}
+      >
+        <div className={styles.aiCoachIcon}>
+          <Sparkles size={22} />
+        </div>
+        <div className={styles.aiCoachContent}>
+          <h3>AI Practice Generator</h3>
+          <p>Unlimited exercises — Reading, Writing, Listening &amp; Speaking</p>
+        </div>
+        <ArrowRight size={18} className={styles.aiCoachArrow} />
+      </article>
+
       {/* Skills Section */}
       <section className={styles.skillsSection}>
         <h2 className={styles.sectionTitle}>Practice by Skill</h2>

@@ -312,3 +312,60 @@
     color: ds.$skill-listening;
   }
 }
+
+// ─── AI Coach CTA ──────────────────────────────
+.aiCoachCard {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08));
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.35);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(168, 85, 247, 0.12));
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.15);
+  }
+}
+
+.aiCoachIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white;
+  flex-shrink: 0;
+}
+
+.aiCoachContent {
+  flex: 1;
+  min-width: 0;
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 0 0 0.2rem;
+  }
+
+  p {
+    font-size: 0.78rem;
+    color: rgba(248, 250, 252, 0.5);
+    margin: 0;
+  }
+}
+
+.aiCoachArrow {
+  color: rgba(248, 250, 252, 0.3);
+  flex-shrink: 0;
+}
