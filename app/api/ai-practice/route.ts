@@ -1,8 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { requirePro } from '@/lib/plan';
+import { execFile } from 'child_process';
+import { promises as fs } from 'fs';
+import { tmpdir } from 'os';
+import { join } from 'path';
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+// ─── Edge TTS helper (free, replaces OpenAI TTS) ────────────
+async function generateTTS(text: string): Promise<Buffer | null> {
+  const tmpPath = join(tmpdir(), `celpip-tts-${Date.now()}.mp3`);
+  // Truncate to 4000 chars max
+  const input = text.substring(0, 4000);
+  
+  return new Promise((resolve) => {
+    execFile('edge-tts', [
+      '--voice', 'en-US-GuyNeural',
+      '--rate', '-5%',
+      '--text', input,
+      '--write-media', tmpPath,
+    ], { timeout: 30000 }, async (error) => {
+      if (error) {
+        console.error('Edge TTS error:', error);
+        resolve(null);
+        return;
+      }
+      try {
+        const buf = await fs.readFile(tmpPath);
+        await fs.unlink(tmpPath).catch(() => {});
+        resolve(buf);
+      } catch {
+        resolve(null);
+      }
+    });
+  });
+}
 
 // ─── Types ───────────────────────────────────────────────────
 type Section = 'reading' | 'writing' | 'listening' | 'speaking';
@@ -204,21 +237,16 @@ export async function POST(request: NextRequest) {
     const content = completion.choices[0].message.content || '{}';
     const exercise = JSON.parse(content);
 
-    // For listening, generate TTS audio
+    // For listening, generate TTS audio (free Edge TTS)
     let audioBase64: string | null = null;
     if (section === 'listening' && exercise.passage) {
       try {
-        const tts = await openai.audio.speech.create({
-          model: 'tts-1',
-          voice: 'alloy',
-          input: exercise.passage.substring(0, 4096),
-          speed: 0.95,
-        });
-        const audioBuffer = Buffer.from(await tts.arrayBuffer());
-        audioBase64 = audioBuffer.toString('base64');
+        const audioBuffer = await generateTTS(exercise.passage);
+        if (audioBuffer) {
+          audioBase64 = audioBuffer.toString('base64');
+        }
       } catch (ttsErr) {
         console.error('TTS generation failed:', ttsErr);
-        // Continue without audio — user can still read the transcript
       }
     }
 

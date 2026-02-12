@@ -336,10 +336,12 @@ export default function AIPracticePage() {
                 </div>
               )}
 
-              {/* Passage */}
-              <div className={styles.passageCard}>
-                <p className={styles.passageText}>{exercise.passage}</p>
-              </div>
+              {/* Passage (hidden for listening — audio only, like real CELPIP) */}
+              {section !== 'listening' && exercise.passage && (
+                <div className={styles.passageCard}>
+                  <p className={styles.passageText}>{exercise.passage}</p>
+                </div>
+              )}
 
               {/* Questions */}
               {exercise.questions && (
