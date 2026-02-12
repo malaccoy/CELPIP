@@ -761,3 +761,82 @@
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
+
+// ─── AI Coach CTA ────────────────────────────────
+.aiCoachCta {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.06), rgba(99, 102, 241, 0.06));
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 2rem;
+
+  &:hover {
+    border-color: rgba(168, 85, 247, 0.35);
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(99, 102, 241, 0.1));
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.12);
+
+    .aiCoachCtaArrow {
+      transform: translateX(3px);
+      color: #c084fc;
+    }
+  }
+}
+
+.aiCoachCtaIcon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: white;
+}
+
+.aiCoachCtaContent {
+  flex: 1;
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 0 0 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  p {
+    font-size: 0.78rem;
+    color: rgba(248, 250, 252, 0.5);
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+.proBadgeInline {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: white;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+}
+
+.aiCoachCtaArrow {
+  color: rgba(248, 250, 252, 0.3);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}

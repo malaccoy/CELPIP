@@ -35,6 +35,18 @@ export default function WritingHubPage() {
         <ArrowRight size={18} className={styles.techniqueCtaArrow} />
       </div>
 
+      {/* AI Writing Tutor CTA */}
+      <div className={styles.aiCoachCta} onClick={() => router.push('/writing/ai-tutor')}>
+        <div className={styles.aiCoachCtaIcon}>
+          <Sparkles size={20} />
+        </div>
+        <div className={styles.aiCoachCtaContent}>
+          <h3>AI Writing Tutor <span className={styles.proBadgeInline}>PRO</span></h3>
+          <p>AI scoring, grammar check, &quot;Make It Real&quot; tips, and a model answer — all in one click.</p>
+        </div>
+        <ArrowRight size={18} className={styles.aiCoachCtaArrow} />
+      </div>
+
       {/* STEP 1 - Preparation */}
       <section className={styles.stepSection}>
         <div className={styles.stepHeader}>

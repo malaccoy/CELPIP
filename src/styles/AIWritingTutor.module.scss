@@ -1,0 +1,531 @@
+@use 'design-system' as *;
+
+.container {
+  @include page-container;
+  padding: 1.5rem 1rem 6rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+// ─── Header ──────────────────────────────────────
+.header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(99, 102, 241, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #c084fc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 0.4rem;
+}
+
+.subtitle {
+  font-size: 0.88rem;
+  color: rgba(248, 250, 252, 0.5);
+  margin: 0;
+}
+
+// ─── Task Toggle ─────────────────────────────────
+.taskToggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.taskBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(248, 250, 252, 0.55);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.taskBtnActive {
+  border-color: rgba(168, 85, 247, 0.4);
+  background: rgba(168, 85, 247, 0.08);
+  color: #c084fc;
+}
+
+// ─── Input Card ──────────────────────────────────
+.inputCard {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.inputLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.8);
+}
+
+.wordCount {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.4);
+  transition: color 0.2s;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.2);
+  color: #f8fafc;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: rgba(248, 250, 252, 0.25);
+  }
+
+  &:focus {
+    border-color: rgba(168, 85, 247, 0.35);
+  }
+}
+
+.analyzeBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  margin-top: 0.875rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 28px rgba(168, 85, 247, 0.35);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.analyzeLoading {
+  composes: analyzeBtn;
+  opacity: 0.8;
+  cursor: wait;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 0.9; }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.errorMsg {
+  text-align: center;
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+// ─── Results ─────────────────────────────────────
+.results {
+  animation: fadeIn 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// ─── Collapsible Section ─────────────────────────
+.section {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 0.875rem;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.875rem 1.125rem;
+  border: none;
+  background: none;
+  color: rgba(248, 250, 252, 0.4);
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.02);
+  }
+}
+
+.sectionHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.countBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(248, 250, 252, 0.5);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.sectionBody {
+  padding: 0 1.125rem 1.125rem;
+}
+
+.sectionDesc {
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.45);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+// ─── Score ────────────────────────────────────────
+.scoreCircle {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 1.25rem 0 0.75rem;
+}
+
+.scoreNum {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--score-color);
+  line-height: 1;
+}
+
+.scoreMax {
+  font-size: 1.1rem;
+  color: rgba(248, 250, 252, 0.35);
+  font-weight: 500;
+}
+
+.scoreSummary {
+  text-align: center;
+  font-size: 0.88rem;
+  color: rgba(248, 250, 252, 0.7);
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+// Feedback groups
+.feedbackGroup {
+  margin-bottom: 1rem;
+}
+
+.feedbackLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.7);
+  margin: 0 0 0.5rem;
+}
+
+.feedbackList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.strengthItem,
+.improvementItem {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 1.125rem;
+  font-size: 0.84rem;
+  color: rgba(248, 250, 252, 0.65);
+  line-height: 1.5;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+  }
+}
+
+.strengthItem::before {
+  content: '✓';
+  color: #34d399;
+  font-weight: 700;
+}
+
+.improvementItem::before {
+  content: '→';
+  color: #fbbf24;
+}
+
+.tipCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.875rem;
+  border-radius: 10px;
+  background: rgba(167, 139, 250, 0.06);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+  font-size: 0.84rem;
+  color: rgba(248, 250, 252, 0.7);
+  line-height: 1.55;
+}
+
+// ─── Grammar ─────────────────────────────────────
+.grammarItem {
+  padding: 0.875rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 0.625rem;
+}
+
+.grammarOriginal,
+.grammarCorrected {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.375rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.grammarLabel {
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.5);
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.grammarOriginal .grammarText {
+  color: rgba(248, 115, 113, 0.8);
+  text-decoration: line-through;
+  text-decoration-color: rgba(248, 115, 113, 0.3);
+}
+
+.grammarCorrected .grammarText {
+  color: rgba(52, 211, 153, 0.9);
+}
+
+.grammarExplanation {
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.4);
+  margin-top: 0.25rem;
+  padding-left: 70px;
+  line-height: 1.5;
+}
+
+// ─── Make It Real ────────────────────────────────
+.realItem {
+  padding: 0.875rem;
+  border-radius: 10px;
+  background: rgba(192, 132, 252, 0.03);
+  border: 1px solid rgba(192, 132, 252, 0.08);
+  margin-bottom: 0.625rem;
+}
+
+.realCategory {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(192, 132, 252, 0.1);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #c084fc;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.realComparison {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.375rem;
+}
+
+.realBefore,
+.realAfter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  font-size: 0.84rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.realLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.35);
+  text-transform: uppercase;
+}
+
+.realBefore span:last-child {
+  color: rgba(248, 250, 252, 0.5);
+  text-decoration: line-through;
+  text-decoration-color: rgba(248, 250, 252, 0.2);
+}
+
+.realAfter span:last-child {
+  color: #c084fc;
+}
+
+.realArrow {
+  color: rgba(248, 250, 252, 0.2);
+  flex-shrink: 0;
+}
+
+.realExplanation {
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.4);
+  margin: 0;
+  line-height: 1.5;
+}
+
+// ─── Model Answer ────────────────────────────────
+.modelAnswer {
+  position: relative;
+  padding: 1.125rem;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.03);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.modelText {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: rgba(248, 250, 252, 0.8);
+  line-height: 1.75;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(248, 250, 252, 0.5);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(248, 250, 252, 0.8);
+  }
+}
+
+// ─── Try Again ───────────────────────────────────
+.tryAgainBtn {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(248, 250, 252, 0.55);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+}
