@@ -485,12 +485,17 @@ export default function ProfilePage() {
           />
 
           {/* AI Assessment */}
-          {adaptiveLoaded && Object.keys(performances).length > 0 && (
+          {adaptiveLoaded && (
             <section className={styles.aiAssessment}>
               <h2 className={styles.assessmentTitle}>
                 <Sparkles size={16} />
                 AI Skill Assessment
               </h2>
+              {Object.keys(performances).length === 0 && (
+                <p className={styles.assessmentEmpty}>
+                  Practice in the <strong>AI Coach</strong> to unlock your skill assessment.
+                </p>
+              )}
               <div className={styles.assessmentGrid}>
                 {[
                   { id: 'listening', label: 'Listening', Icon: Headphones, color: '#fb923c' },

@@ -272,6 +272,15 @@
   svg { color: #c084fc; }
 }
 
+.assessmentEmpty {
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.4);
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+
+  strong { color: rgba(248, 250, 252, 0.6); }
+}
+
 .assessmentGrid {
   display: flex;
   flex-direction: column;
