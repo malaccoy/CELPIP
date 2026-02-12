@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { 
   PenTool, Headphones, BookOpen, Mic, 
   TrendingUp, Clock, Award, ArrowRight, 
-  Sparkles, Target, Flame, BarChart3
+  Sparkles, Target, Flame, BarChart3, Trophy
 } from 'lucide-react';
 import styles from '@/styles/Dashboard.module.scss';
 
@@ -233,6 +233,22 @@ export default function DashboardPage() {
         <div className={styles.aiCoachContent}>
           <h3>AI Practice Generator</h3>
           <p>Unlimited exercises — Reading, Writing, Listening &amp; Speaking</p>
+        </div>
+        <ArrowRight size={18} className={styles.aiCoachArrow} />
+      </article>
+
+      {/* Mock Exam CTA */}
+      <article
+        className={styles.aiCoachCard}
+        onClick={() => router.push('/mock-exam')}
+        style={{ marginBottom: '1.5rem' }}
+      >
+        <div className={styles.aiCoachIcon} style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
+          <Trophy size={22} />
+        </div>
+        <div className={styles.aiCoachContent}>
+          <h3>AI Mock Exam</h3>
+          <p>Simulate a full CELPIP test — timed, scored, AI-generated</p>
         </div>
         <ArrowRight size={18} className={styles.aiCoachArrow} />
       </article>

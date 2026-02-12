@@ -1,0 +1,717 @@
+@use 'design-system' as *;
+
+.container {
+  @include page-container;
+  padding: 1.5rem 1rem 6rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+// ─── Header ──────────────────────────────────────
+.header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(99, 102, 241, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #c084fc;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0.5rem 0 0.4rem;
+}
+
+.subtitle {
+  font-size: 0.88rem;
+  color: rgba(248, 250, 252, 0.5);
+  margin: 0;
+}
+
+// ─── Overview Card ───────────────────────────────
+.overviewCard {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.overviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin: 0;
+  }
+}
+
+.overviewSections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.overviewItem {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.6rem 0.875rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.84rem;
+  color: rgba(248, 250, 252, 0.7);
+
+  svg { flex-shrink: 0; }
+
+  &.listening svg { color: #fb923c; }
+  &.reading svg { color: #2dd4bf; }
+  &.writing svg { color: #c084fc; }
+  &.speaking svg { color: #38bdf8; }
+}
+
+.overviewLabel { flex: 1; }
+
+.overviewTime {
+  font-size: 0.76rem;
+  color: rgba(248, 250, 252, 0.4);
+  font-weight: 600;
+}
+
+.overviewTotal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.875rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.6);
+
+  svg { opacity: 0.5; }
+}
+
+// ─── Difficulty ──────────────────────────────────
+.difficultyPicker {
+  margin-bottom: 1.5rem;
+}
+
+.pickerLabel {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.difficultyBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.diffBtn {
+  padding: 0.7rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(248, 250, 252, 0.55);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover { background: rgba(255, 255, 255, 0.04); }
+}
+
+.diffActive {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.08);
+  color: #a5b4fc;
+}
+
+// ─── Start Button ────────────────────────────────
+.startBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.35);
+  }
+}
+
+// ─── Generating ──────────────────────────────────
+.generatingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f8fafc;
+    margin: 1rem 0 0.25rem;
+    font-size: 1.15rem;
+  }
+
+  p {
+    color: rgba(248, 250, 252, 0.5);
+    font-size: 0.88rem;
+  }
+}
+
+.spinner {
+  color: #a5b4fc;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+// ─── Exam Top Bar ────────────────────────────────
+.examTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 1.25rem;
+}
+
+.sectionIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionNum {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.12);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.sectionName {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.7);
+  transition: color 0.3s;
+}
+
+// ─── Exercise display ────────────────────────────
+.exerciseTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 1rem;
+}
+
+.audioPlayer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.15);
+  margin-bottom: 1rem;
+
+  audio { flex: 1; height: 36px; }
+}
+
+.audioIcon { color: #fb923c; flex-shrink: 0; }
+
+.passageCard {
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 1.25rem;
+}
+
+.passageText {
+  font-size: 0.9rem;
+  color: rgba(248, 250, 252, 0.85);
+  line-height: 1.75;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.questionCard {
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 0.75rem;
+}
+
+.questionText {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.9);
+  margin: 0 0 0.625rem;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 0.875rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.015);
+  color: rgba(248, 250, 252, 0.75);
+  font-size: 0.84rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover { background: rgba(255, 255, 255, 0.04); }
+}
+
+.optionLetter {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(248, 250, 252, 0.5);
+  flex-shrink: 0;
+}
+
+.selected {
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+// ─── Writing ─────────────────────────────────────
+.writingPromptCard {
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: rgba(168, 85, 247, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.12);
+  margin-bottom: 1rem;
+
+  p {
+    font-size: 0.9rem;
+    color: rgba(248, 250, 252, 0.85);
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+.bulletList {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 0;
+
+  li {
+    font-size: 0.86rem;
+    color: rgba(248, 250, 252, 0.7);
+    margin-bottom: 0.3rem;
+  }
+}
+
+.writingArea {
+  width: 100%;
+  min-height: 250px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.2);
+  color: #f8fafc;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 0.5rem;
+
+  &:focus { border-color: rgba(168, 85, 247, 0.3); }
+  &::placeholder { color: rgba(248, 250, 252, 0.2); }
+}
+
+.writingFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wordCountSmall {
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.4);
+}
+
+// ─── Speaking ────────────────────────────────────
+.speakingPromptCard {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.04);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  margin-bottom: 1rem;
+
+  p {
+    font-size: 0.95rem;
+    color: rgba(248, 250, 252, 0.9);
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+.speakingNote {
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.4);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+// ─── Submit ──────────────────────────────────────
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  }
+
+  &:disabled { opacity: 0.4; cursor: not-allowed; }
+}
+
+.errorMsg {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+// ─── Review ──────────────────────────────────────
+.reviewWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f8fafc;
+    margin: 0.75rem 0 0.25rem;
+  }
+}
+
+.reviewSectionName {
+  color: rgba(248, 250, 252, 0.5);
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.reviewScore {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviewScoreNum {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.reviewScoreTotal {
+  font-size: 1rem;
+  color: rgba(248, 250, 252, 0.4);
+}
+
+.reviewMeta {
+  color: rgba(248, 250, 252, 0.45);
+  font-size: 0.84rem;
+  margin: 0.25rem 0;
+}
+
+.reviewAnswers {
+  width: 100%;
+  max-width: 500px;
+  margin: 1.25rem auto;
+  text-align: left;
+}
+
+.reviewAnswer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.375rem;
+  font-size: 0.82rem;
+}
+
+.reviewCorrect {
+  background: rgba(16, 185, 129, 0.06);
+  color: #34d399;
+}
+
+.reviewWrong {
+  background: rgba(239, 68, 68, 0.06);
+  color: #f87171;
+}
+
+.reviewQNum {
+  font-weight: 700;
+  min-width: 20px;
+}
+
+.reviewQText {
+  flex: 1;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.reviewQResult {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.nextSectionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-top: 1.5rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(99, 102, 241, 0.35);
+  }
+}
+
+// ─── Results ─────────────────────────────────────
+.resultsWrap {
+  padding-top: 1rem;
+}
+
+.overallScore {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bigScore {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.clbEstimate {
+  font-size: 1rem;
+  color: rgba(248, 250, 252, 0.7);
+  margin-bottom: 0.25rem;
+
+  strong { color: #f8fafc; }
+}
+
+.totalTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  font-size: 0.85rem;
+  color: rgba(248, 250, 252, 0.4);
+  margin: 0;
+}
+
+.breakdownSection {
+  margin-bottom: 2rem;
+}
+
+.breakdownTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 0.875rem;
+}
+
+.breakdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0.875rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 0.5rem;
+
+  &.listening svg { color: #fb923c; }
+  &.reading svg { color: #2dd4bf; }
+  &.writing svg { color: #c084fc; }
+  &.speaking svg { color: #38bdf8; }
+}
+
+.breakdownLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.breakdownRight {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.breakdownTime {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.35);
+  min-width: 40px;
+  text-align: right;
+}
+
+// ─── Result Actions ──────────────────────────────
+.resultActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.retakeBtn,
+.practiceBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  border-radius: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.retakeBtn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(248, 250, 252, 0.65);
+
+  &:hover { background: rgba(255, 255, 255, 0.06); }
+}
+
+.practiceBtn {
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  }
+}
