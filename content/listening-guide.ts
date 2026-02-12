@@ -566,6 +566,234 @@ Reporter: The council is expected to vote on the proposal next month. If approve
         correct: 2
       }
     ]
+  },
+
+  // ============================================
+  // PART 5: Listening to a Discussion
+  // ============================================
+  {
+    id: 'discussion-1',
+    part: 5,
+    partName: 'Listening to a Discussion',
+    title: 'Office Renovation Planning Meeting',
+    context: 'Listen to a meeting between three co-workers discussing plans to renovate their office space.',
+    audioScript: `Manager: Alright everyone, thanks for coming. As you know, we've been approved for an office renovation. We have a budget of forty thousand dollars, and we need to decide how to spend it. Sarah, you mentioned some ideas last week?
+
+Sarah: Yes, I think our biggest issue is the open floor plan. There's too much noise, and people can't concentrate. I'd suggest we invest in soundproof dividers between workstations. I looked into it, and quality panels would cost about twelve thousand dollars.
+
+Manager: That's a good point. Noise complaints have gone up thirty percent this year. Tom, what do you think?
+
+Tom: I agree noise is a problem, but honestly, I think the kitchen and break room should be our priority. The microwave is broken, the fridge is too small, and there's nowhere comfortable to eat lunch. People end up eating at their desks, which makes the noise problem even worse. A proper break room renovation would cost about fifteen thousand.
+
+Sarah: I see your point, Tom. If people had a nice break room, they'd leave their desks more, which would actually reduce noise in the work area.
+
+Manager: Good thinking. What about the meeting rooms? We only have two, and they're always booked.
+
+Tom: That's true. Last week I had to hold a client call in the hallway because both rooms were taken. Could we convert that empty storage room on the east side into a third meeting room?
+
+Sarah: Oh, that's a great idea! It would need some work though — proper lighting, a table, maybe a screen for presentations. Probably around eight thousand dollars.
+
+Manager: So let me add this up. Twelve for dividers, fifteen for the break room, and eight for the new meeting room. That's thirty-five thousand, which leaves us five thousand for unexpected expenses. I like it.
+
+Tom: One more thing — can we get standing desks? Even just a few? Studies show they reduce back pain and increase productivity.
+
+Sarah: I love that idea, but it might push us over budget. What if we start with five or six adjustable desks for people who request them? We could get decent ones for about four hundred each.
+
+Manager: So roughly two thousand for six standing desks. That would put us at thirty-seven thousand total, still within budget. Let's go with all four items. Sarah, can you get formal quotes by Friday?
+
+Sarah: Absolutely. I'll have everything ready.
+
+Manager: Perfect. Let's plan to finalize next Monday.`,
+    questions: [
+      {
+        id: 1,
+        question: 'What is the total renovation budget?',
+        options: [
+          '$30,000',
+          '$35,000',
+          '$40,000',
+          '$45,000'
+        ],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'What does Sarah think is the biggest problem?',
+        options: [
+          'The break room is too small',
+          'There are not enough meeting rooms',
+          'The open floor plan is too noisy',
+          'The office furniture is outdated'
+        ],
+        correct: 2
+      },
+      {
+        id: 3,
+        question: 'Why does Tom think the break room is important?',
+        options: [
+          'Employees complain about the food',
+          'People eat at their desks, adding to noise',
+          'The break room is a safety hazard',
+          'Clients visit the break room'
+        ],
+        correct: 1
+      },
+      {
+        id: 4,
+        question: 'Where would the new meeting room be located?',
+        options: [
+          'Next to the kitchen',
+          'On the second floor',
+          'In the empty storage room on the east side',
+          'In the hallway'
+        ],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'How much would the soundproof dividers cost?',
+        options: [
+          '$8,000',
+          '$10,000',
+          '$12,000',
+          '$15,000'
+        ],
+        correct: 2
+      },
+      {
+        id: 6,
+        question: 'Why does Tom want standing desks?',
+        options: [
+          'They are cheaper than regular desks',
+          'They look more modern',
+          'They reduce back pain and increase productivity',
+          'The current desks are broken'
+        ],
+        correct: 2
+      },
+      {
+        id: 7,
+        question: 'How many standing desks will they buy?',
+        options: [
+          'Three',
+          'Four',
+          'Five or six',
+          'Ten'
+        ],
+        correct: 2
+      },
+      {
+        id: 8,
+        question: 'What will the total estimated cost be?',
+        options: [
+          '$35,000',
+          '$37,000',
+          '$39,000',
+          '$40,000'
+        ],
+        correct: 1
+      }
+    ]
+  },
+
+  // ============================================
+  // PART 6: Listening to Viewpoints
+  // ============================================
+  {
+    id: 'viewpoints-ext-1',
+    part: 6,
+    partName: 'Listening to Viewpoints',
+    title: 'Should the City Build a New Sports Arena?',
+    context: 'Listen to three community members sharing their opinions about a proposed new sports arena.',
+    audioScript: `Host: Tonight we're discussing the city council's proposal to build a new sixty-million-dollar sports arena downtown. Let's hear from our panel. Marcus, you're in favor?
+
+Marcus: Absolutely. This arena would be transformative for our city. Right now, we don't have a venue large enough to host professional sports teams or major concerts. People drive two hours to the nearest big city for entertainment. That's money leaving our community. A modern arena with fifteen thousand seats would attract NHL exhibition games, major concert tours, and sporting events that would bring visitors and revenue. Studies show similar projects in comparable cities have generated between eight and twelve million dollars annually in economic activity.
+
+Host: Strong case. Diane, you see it differently?
+
+Diane: I do. Look, I'm not against entertainment or economic development. But sixty million dollars is an enormous amount of money for a city our size. Our roads have potholes everywhere, our community center's roof leaks, and we just cut funding for three school programs. Shouldn't we fix what we have before building something new? And those economic impact studies Marcus mentions — they're almost always inflated. The real returns are typically thirty to fifty percent lower than projected. I'd rather invest that money in infrastructure and education, things that benefit everyone, not just sports fans.
+
+Host: Fair points. And Raj, you have a different perspective?
+
+Raj: I think both Marcus and Diane are partially right, but they're missing the bigger picture. The real question is who pays and who benefits. If the city puts up sixty million in taxpayer money, that's a terrible deal. But if we structure it as a public-private partnership — say, the city contributes twenty million for infrastructure improvements around the site, and a private developer covers the arena construction — that changes everything. The city gets improved roads, transit connections, and public spaces that benefit everyone, while the private sector takes the financial risk on the arena itself. I've seen this model work in three other Canadian cities. It's not either-or. It's about smart deal-making.
+
+Host: Interesting. Marcus, do you think a private partner would be interested?
+
+Marcus: Actually, yes. I know for a fact that two development groups have already expressed interest. The demand is there.
+
+Diane: But even with a partnership, the city is still spending twenty million. That's twenty million that could fix our schools and roads.
+
+Raj: True, but those infrastructure improvements around the arena would benefit the entire downtown, not just the arena. New roads, better transit, public plazas — those serve everyone whether they attend a single game or not.
+
+Host: Thank you all. Lots to consider for our listeners.`,
+    questions: [
+      {
+        id: 1,
+        question: 'How much would the proposed arena cost?',
+        options: [
+          '$20 million',
+          '$40 million',
+          '$60 million',
+          '$80 million'
+        ],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'What is Marcus\'s main argument for the arena?',
+        options: [
+          'It would provide jobs for construction workers',
+          'It would attract events and bring revenue to the city',
+          'The current arena is too old',
+          'Other cities have arenas'
+        ],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'What does Diane think the money should be spent on?',
+        options: [
+          'A smaller arena outside the city',
+          'Infrastructure and education',
+          'A new shopping center',
+          'Environmental projects'
+        ],
+        correct: 1
+      },
+      {
+        id: 4,
+        question: 'What does Diane say about economic impact studies?',
+        options: [
+          'They are always accurate',
+          'They don\'t exist for this project',
+          'Real returns are typically 30-50% lower than projected',
+          'They only measure short-term effects'
+        ],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'What solution does Raj propose?',
+        options: [
+          'Cancel the project entirely',
+          'Build a smaller venue instead',
+          'A public-private partnership',
+          'Hold a public vote first'
+        ],
+        correct: 2
+      },
+      {
+        id: 6,
+        question: 'Under Raj\'s proposal, how much would the city contribute?',
+        options: [
+          '$10 million',
+          '$20 million',
+          '$30 million',
+          '$40 million'
+        ],
+        correct: 1
+      }
+    ]
   }
 ];
 
