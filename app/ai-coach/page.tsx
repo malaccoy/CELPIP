@@ -83,6 +83,7 @@ export default function AIPracticePage() {
   const [generating, setGenerating] = useState(false);
   const [exercise, setExercise] = useState<any>(null);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   // Quiz state (reading/listening)
@@ -103,7 +104,7 @@ export default function AIPracticePage() {
     setSection(s);
     setPartOrTask(PARTS[s][0].id);
     setExercise(null);
-    setAudioSrc(null);
+    setAudioSrc(null); setImageSrc(null);
     resetQuiz();
     if (autoMode && adaptiveLoaded) {
       setDifficulty(getLevelForSection(s));
@@ -122,7 +123,7 @@ export default function AIPracticePage() {
     setGenerating(true);
     setError(null);
     setExercise(null);
-    setAudioSrc(null);
+    setAudioSrc(null); setImageSrc(null);
     resetQuiz();
 
     try {
@@ -157,6 +158,11 @@ export default function AIPracticePage() {
           { type: 'audio/mpeg' }
         );
         setAudioSrc(URL.createObjectURL(blob));
+      }
+
+      // Image for speaking Task 3/4
+      if (data.image) {
+        setImageSrc(`data:image/png;base64,${data.image}`);
       }
     } catch (err: any) {
       setError(err.message || 'Something went wrong');
@@ -250,7 +256,7 @@ export default function AIPracticePage() {
             <div
               key={p.id}
               className={partOrTask === p.id ? styles.partChipActive : styles.partChip}
-              onClick={() => { setPartOrTask(p.id); setExercise(null); setAudioSrc(null); resetQuiz(); }}
+              onClick={() => { setPartOrTask(p.id); setExercise(null); setAudioSrc(null); setImageSrc(null); resetQuiz(); }}
             >
               {p.label}
             </div>
@@ -471,6 +477,13 @@ export default function AIPracticePage() {
                 <h2 className={styles.exerciseTitle}>{exercise.title}</h2>
                 <span className={styles.exerciseMeta}>{difficulty}</span>
               </div>
+
+              {/* Scene image for Task 3/4 */}
+              {imageSrc && (
+                <div className={styles.sceneImage}>
+                  <img src={imageSrc} alt={exercise.title || 'Scene'} />
+                </div>
+              )}
 
               <div className={styles.speakingPrompt}>
                 <p className={styles.speakingText}>{exercise.prompt}</p>

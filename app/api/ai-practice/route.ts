@@ -173,10 +173,13 @@ REQUIREMENTS:
 - Specific enough to guide the response but open enough for creativity
 ${avoid ? `- AVOID these topics: ${avoid}` : ''}
 
+${task.includes('Task 3') || task.includes('Task 4') ? `IMPORTANT: For Task 3 and Task 4, include an "imagePrompt" field — a detailed visual description (60-100 words) of the scene to generate an image. Describe: setting, people (ages, clothing, actions), objects, lighting, mood. No text/words in the image. Style: realistic photograph.` : ''}
+
 Respond in JSON:
 {
   "title": "string (short title)",
   "prompt": "string (the full prompt the candidate sees)",
+  ${task.includes('Task 3') || task.includes('Task 4') ? '"imagePrompt": "string (detailed visual scene description for image generation)",' : ''}
   "prepTimeSeconds": 30,
   "speakTimeSeconds": 60 or 90,
   "tips": ["tip 1 for this task type", "tip 2"]
@@ -250,12 +253,37 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // For speaking Task 3/4, generate scene image with DALL-E
+    let imageBase64: string | null = null;
+    if (section === 'speaking' && exercise.imagePrompt) {
+      try {
+        const imageResponse = await openai.images.generate({
+          model: 'dall-e-3',
+          prompt: exercise.imagePrompt + ' Photorealistic style, no text or words in the image.',
+          n: 1,
+          size: '1024x1024',
+          quality: 'standard',
+        });
+        const imageUrl = imageResponse.data?.[0]?.url;
+        if (imageUrl) {
+          // Fetch the image and convert to base64
+          const imgRes = await fetch(imageUrl);
+          const imgBuf = Buffer.from(await imgRes.arrayBuffer());
+          imageBase64 = imgBuf.toString('base64');
+        }
+      } catch (imgErr) {
+        console.error('DALL-E image generation failed:', imgErr);
+        // Continue without image — user still gets the text prompt
+      }
+    }
+
     return NextResponse.json({
       section,
       partOrTask,
       difficulty,
       exercise,
       ...(audioBase64 ? { audio: audioBase64 } : {}),
+      ...(imageBase64 ? { image: imageBase64 } : {}),
       generatedAt: new Date().toISOString(),
     });
   } catch (error) {

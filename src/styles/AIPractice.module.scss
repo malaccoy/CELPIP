@@ -528,6 +528,20 @@
   }
 }
 
+// ─── Scene Image (Speaking Task 3/4) ─────────────
+.sceneImage {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 // ─── Speaking Prompt Display ─────────────────────
 .speakingPrompt {
   padding: 1.5rem;
