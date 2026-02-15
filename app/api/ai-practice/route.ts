@@ -254,26 +254,29 @@ export async function POST(request: NextRequest) {
     }
 
     // For speaking Task 3/4, generate scene image with DALL-E
+    const isVisualTask = section === 'speaking' && (partOrTask.includes('Task 3') || partOrTask.includes('Task 4'));
     let imageBase64: string | null = null;
-    if (section === 'speaking' && exercise.imagePrompt) {
+    if (isVisualTask) {
       try {
+        // Use AI-generated imagePrompt if available, otherwise build one from the exercise
+        const imgPrompt = exercise.imagePrompt
+          || `A realistic scene in Canada: ${exercise.title}. ${exercise.prompt?.substring(0, 200) || ''}`;
+        
         const imageResponse = await openai.images.generate({
           model: 'dall-e-3',
-          prompt: exercise.imagePrompt + ' Photorealistic style, no text or words in the image.',
+          prompt: imgPrompt + ' Photorealistic style, no text, letters, or words anywhere in the image. No UI elements.',
           n: 1,
           size: '1024x1024',
           quality: 'standard',
         });
         const imageUrl = imageResponse.data?.[0]?.url;
         if (imageUrl) {
-          // Fetch the image and convert to base64
           const imgRes = await fetch(imageUrl);
           const imgBuf = Buffer.from(await imgRes.arrayBuffer());
           imageBase64 = imgBuf.toString('base64');
         }
       } catch (imgErr) {
         console.error('DALL-E image generation failed:', imgErr);
-        // Continue without image — user still gets the text prompt
       }
     }
 
