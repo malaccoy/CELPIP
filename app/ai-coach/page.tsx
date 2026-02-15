@@ -515,13 +515,15 @@ export default function AIPracticePage() {
             </>
           )}
 
-          {/* Next exercise button */}
-          <div className={styles.actions}>
-            <button className={styles.nextBtn} onClick={generate} disabled={generating}>
-              <RefreshCw size={16} />
-              Generate Another
-            </button>
-          </div>
+          {/* Next exercise button (hidden for visual tasks to avoid DALL-E abuse) */}
+          {!(section === 'speaking' && (partOrTask.includes('Task 3') || partOrTask.includes('Task 4'))) && (
+            <div className={styles.actions}>
+              <button className={styles.nextBtn} onClick={generate} disabled={generating}>
+                <RefreshCw size={16} />
+                Generate Another
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
