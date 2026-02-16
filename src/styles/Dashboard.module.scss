@@ -3,6 +3,8 @@
 
 .container {
   @include ds.page-container;
+  max-width: 780px;
+  margin: 0 auto;
 
   &::before {
     @include ds.ambient-orb(ds.$accent-primary, 'top-center');
@@ -15,9 +17,6 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.6s ds.$ease-smooth;
@@ -53,8 +52,7 @@
 .quickStats {
   display: flex;
   gap: 0.75rem;
-  max-width: 700px;
-  margin: 0 auto 2rem;
+  margin: 0 0 2rem;
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.6s ds.$ease-smooth 0.1s both;
@@ -141,8 +139,7 @@
 
 // Skills Section
 .skillsSection {
-  max-width: 700px;
-  margin: 0 auto 2rem;
+  margin: 0 0 2rem;
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.6s ds.$ease-smooth 0.2s both;
