@@ -40,8 +40,10 @@ function LoginForm() {
         });
         
         if (error) throw error;
-        router.push(redirectTo);
         router.refresh();
+        // Small delay to let middleware pick up the new session cookie
+        await new Promise(r => setTimeout(r, 300));
+        router.push(redirectTo);
       } else {
         // Sign up
         if (formData.password !== formData.confirmPassword) {
