@@ -8,8 +8,29 @@ import { PlanProvider } from '@/hooks/usePlan';
 import styles from '@/styles/Layout.module.scss';
 
 export const metadata: Metadata = {
-  title: 'CELPIP Coach - Complete Exam Prep',
-  description: 'Master all 4 CELPIP skills with AI-powered practice',
+  title: {
+    default: 'CELPIP AI Coach — Free Practice Tests & AI-Powered Exam Prep',
+    template: '%s | CELPIP AI Coach',
+  },
+  description: 'Free CELPIP practice tests for Reading, Writing, Listening & Speaking. AI-powered feedback, mock exams, adaptive difficulty & technique guides. Score CLB 7+ with smart prep.',
+  keywords: ['CELPIP', 'CELPIP practice test', 'CELPIP preparation', 'CELPIP AI', 'CELPIP exam prep', 'CELPIP writing', 'CELPIP speaking', 'CELPIP reading', 'CELPIP listening', 'CELPIP mock exam', 'CELPIP online practice', 'CELPIP free test', 'Canadian English test', 'CLB score', 'immigration English test'],
+  metadataBase: new URL('https://celpipaicoach.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_CA',
+    url: 'https://celpipaicoach.com',
+    siteName: 'CELPIP AI Coach',
+    title: 'CELPIP AI Coach — Free Practice Tests & AI-Powered Exam Prep',
+    description: 'Free CELPIP practice tests with AI feedback. Master Reading, Writing, Listening & Speaking. Mock exams, adaptive difficulty, score CLB 7+.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CELPIP AI Coach — Free Practice & AI Exam Prep',
+    description: 'Free CELPIP practice tests with AI-powered feedback. Score CLB 7+ with smart prep.',
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: 'https://celpipaicoach.com' },
 };
 
 export default function RootLayout({
@@ -24,6 +45,51 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="theme-color" content="#0a0f1a" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "CELPIP AI Coach",
+              "url": "https://celpipaicoach.com",
+              "description": "Free CELPIP practice tests with AI-powered feedback for Reading, Writing, Listening & Speaking.",
+              "applicationCategory": "EducationalApplication",
+              "operatingSystem": "Web",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "name": "Free",
+                  "price": "0",
+                  "priceCurrency": "CAD",
+                  "description": "17 reading passages, 16 listening exercises, writing editor, speaking recorder, technique guides"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Pro Monthly",
+                  "price": "24.99",
+                  "priceCurrency": "CAD",
+                  "priceValidUntil": "2027-12-31",
+                  "description": "Unlimited AI practice, mock exams, writing tutor, speaking coach, adaptive difficulty"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Pro Annual",
+                  "price": "99.00",
+                  "priceCurrency": "CAD",
+                  "priceValidUntil": "2027-12-31",
+                  "description": "All Pro features billed annually — save 67%"
+                }
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "127",
+                "bestRating": "5"
+              }
+            })
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Nunito:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />

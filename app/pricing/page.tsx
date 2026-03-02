@@ -59,7 +59,7 @@ export default function PricingPage() {
     'Priority support',
   ];
 
-  const monthlyPrice = 14.99;
+  const monthlyPrice = 24.99;
   const annualPrice = 99;
   const annualMonthly = (annualPrice / 12).toFixed(2);
   const savings = Math.round(((monthlyPrice * 12 - annualPrice) / (monthlyPrice * 12)) * 100);
