@@ -1,5 +1,4 @@
 import { type NextRequest, NextResponse } from 'next/server'
-import { updateSession } from '@/lib/supabase/middleware'
 import { createServerClient } from '@supabase/ssr'
 
 // Routes that don't require authentication
@@ -16,41 +15,39 @@ const publicRoutes = [
 // Route prefixes that don't require authentication (SEO + free content)
 const publicPrefixes = [
   '/blog',
-  '/listening/technique',
-  '/reading/technique',
-  '/writing/mastery',
-  '/speaking/technique',
-  '/listening', // hub pages
+  '/listening',
   '/reading',
   '/writing',
   '/speaking',
 ]
 
+// Routes that always need auth
+const protectedPrefixes = [
+  '/dashboard',
+  '/profile',
+  '/progress',
+  '/ai-coach',
+  '/mock-exam',
+  '/weakness-report',
+]
+
+function isPublicRoute(pathname: string): boolean {
+  if (publicRoutes.includes(pathname)) return true
+  if (publicPrefixes.some(prefix => pathname.startsWith(prefix))) return true
+  if (pathname.startsWith('/_next') || pathname.startsWith('/api/auth') || pathname.includes('.')) return true
+  return false
+}
+
+function isProtectedRoute(pathname: string): boolean {
+  return protectedPrefixes.some(prefix => pathname.startsWith(prefix))
+}
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Allow public routes (exact match)
-  if (publicRoutes.some(route => pathname === route)) {
-    return await updateSession(request)
-  }
-
-  // Allow public prefixes (blog, technique guides, section hubs)
-  if (publicPrefixes.some(prefix => pathname.startsWith(prefix))) {
-    return await updateSession(request)
-  }
-
-  // Allow static files and API routes for auth
-  if (
-    pathname.startsWith('/_next') ||
-    pathname.startsWith('/api/auth') ||
-    pathname.includes('.')
-  ) {
-    return await updateSession(request)
-  }
-
-  // Check authentication for protected routes
+  // Single Supabase client for the entire middleware — avoids cookie conflicts
   let response = NextResponse.next({ request })
-  
+
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -70,9 +67,23 @@ export async function middleware(request: NextRequest) {
     }
   )
 
+  // IMPORTANT: Always call getUser() to refresh the session token
+  // This is what keeps users logged in across requests
   const { data: { user } } = await supabase.auth.getUser()
 
-  // If no user, redirect to login
+  // Public routes — just refresh session and pass through
+  if (isPublicRoute(pathname)) {
+    return response
+  }
+
+  // Protected routes — redirect to login if not authenticated
+  if (isProtectedRoute(pathname) && !user) {
+    const loginUrl = new URL('/auth/login', request.url)
+    loginUrl.searchParams.set('redirect', pathname)
+    return NextResponse.redirect(loginUrl)
+  }
+
+  // All other routes — if not authenticated, redirect
   if (!user) {
     const loginUrl = new URL('/auth/login', request.url)
     loginUrl.searchParams.set('redirect', pathname)
@@ -84,12 +95,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
     '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp3|wav)$).*)',
   ],
 }
