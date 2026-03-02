@@ -2,183 +2,165 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Sparkles, PenLine, Mic, BookOpen, Headphones,
-  ArrowRight, Zap, Target, TrendingUp
+  ArrowRight, Zap, Target, TrendingUp, CheckCircle2,
+  Brain, Clock, BarChart3, Shield, Star, Users,
+  ChevronDown, Globe, Award
 } from 'lucide-react';
 import styles from '@/styles/Home.module.scss';
 
-/*
-┌─────────────────────────────────────────────────┐
-│              CELPIP Coach                       │
-│              Master All 4 Skills                │
-│                                                 │
-│   ┌─────┐  ┌─────┐  ┌─────┐                    │
-│   │ 4   │  │ AI  │  │ 12  │                    │
-│   │MOD  │  │FEED │  │SCORE│                    │
-│   └─────┘  └─────┘  └─────┘                    │
-│                                                 │
-│         [ Start Practicing → ]                  │
-├─────────────────────────────────────────────────┤
-│                                                 │
-│  ┌──────────┐  ┌──────────┐                    │
-│  │ Writing  │  │ Speaking │                    │
-│  │ ✍️       │  │ 🎤       │                    │
-│  └──────────┘  └──────────┘                    │
-│                                                 │
-│  ┌──────────┐  ┌──────────┐                    │
-│  │ Reading  │  │Listening │                    │
-│  │ 📖       │  │ 🎧       │                    │
-│  └──────────┘  └──────────┘                    │
-│                                                 │
-└─────────────────────────────────────────────────┘
-*/
-
-interface DailyProgress {
-  completed: number;
-  goal: number;
-  streak: number;
-}
-
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);
-  const [dailyProgress, setDailyProgress] = useState<DailyProgress>({
-    completed: 0,
-    goal: 3,
-    streak: 0
-  });
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
     setMounted(true);
-    loadDailyProgress();
   }, []);
-
-  const loadDailyProgress = () => {
-    if (typeof window === 'undefined') return;
-    
-    const today = new Date().toISOString().split('T')[0];
-    const allHistory = [
-      ...JSON.parse(localStorage.getItem('celpip_practice_history') || '[]'),
-      ...JSON.parse(localStorage.getItem('celpip_speaking_history') || '[]'),
-      ...JSON.parse(localStorage.getItem('celpip_reading_history') || '[]'),
-      ...JSON.parse(localStorage.getItem('celpip_listening_history') || '[]'),
-    ];
-    
-    const todayCount = allHistory.filter((p: { date: string }) => 
-      p.date?.startsWith(today)
-    ).length;
-    
-    let streak = 0;
-    const dates = [...new Set(allHistory.map((p: { date: string }) => p.date?.split('T')[0]))].sort().reverse();
-    const checkDate = new Date();
-    
-    for (const date of dates) {
-      const expected = checkDate.toISOString().split('T')[0];
-      if (date === expected) {
-        streak++;
-        checkDate.setDate(checkDate.getDate() - 1);
-      } else {
-        break;
-      }
-    }
-    
-    setDailyProgress({ completed: todayCount, goal: 3, streak });
-  };
 
   const skills = [
     {
       id: 'writing',
       title: 'Writing',
-      desc: 'Email & Survey responses with real-time AI feedback',
+      desc: 'Email & Survey responses with real-time AI scoring on the 1-12 CELPIP scale',
       icon: PenLine,
-      gradient: 'from-emerald-500 to-teal-600',
-      stats: '2 Tasks • AI Scoring',
-      path: '/writing'
+      stats: '75+ prompts • AI Scoring',
+      path: '/writing',
+      free: '42 Task 1 + 33 Task 2 prompts'
     },
     {
       id: 'speaking',
       title: 'Speaking',
-      desc: 'Record yourself and get instant pronunciation analysis',
+      desc: 'Record yourself, get instant AI analysis with pronunciation & fluency feedback',
       icon: Mic,
-      gradient: 'from-violet-500 to-purple-600',
-      stats: '8 Parts • Whisper AI',
-      path: '/speaking'
+      stats: '8 Tasks • Whisper AI',
+      path: '/speaking',
+      free: '24 prompts + self-eval checklist'
     },
     {
       id: 'reading',
       title: 'Reading',
-      desc: 'Timed passages with authentic exam-style questions',
+      desc: 'Timed passages with authentic exam-style questions across all 4 parts',
       icon: BookOpen,
-      gradient: 'from-cyan-500 to-blue-600',
-      stats: '4 Parts • 38 Questions',
-      path: '/reading'
+      stats: '4 Parts • 17 Passages',
+      path: '/reading',
+      free: '17 full passages, 100% free'
     },
     {
       id: 'listening',
       title: 'Listening',
-      desc: 'One-play audio — just like the real CELPIP test',
+      desc: 'One-play audio — just like the real CELPIP test, with 24 practice passages',
       icon: Headphones,
-      gradient: 'from-amber-500 to-orange-600',
-      stats: '6 Parts • TTS Audio',
-      path: '/listening'
+      stats: '6 Parts • 24 Passages',
+      path: '/listening',
+      free: '24 passages + cached audio'
     }
   ];
 
-  const features = [
-    { icon: Target, label: '4 Modules', desc: 'Complete coverage' },
-    { icon: Zap, label: 'AI Powered', desc: 'Smart feedback' },
-    { icon: TrendingUp, label: 'Score 1-12', desc: 'CELPIP scale' },
+  const proFeatures = [
+    { icon: Brain, title: 'AI Practice Generator', desc: 'Infinite exercises generated by AI, tailored to your level' },
+    { icon: TrendingUp, title: 'Adaptive Difficulty', desc: 'Auto-adjusts based on your performance — always in your growth zone' },
+    { icon: PenLine, title: 'AI Writing Tutor', desc: 'Detailed grammar, vocabulary & structure feedback on every response' },
+    { icon: Mic, title: 'AI Speaking Coach', desc: 'Whisper transcription + GPT analysis of pronunciation, fluency & coherence' },
+    { icon: Target, title: 'AI Mock Exam', desc: 'Full simulated CELPIP test with timer, scoring & CLB estimate' },
+    { icon: BarChart3, title: 'Weakness Report', desc: 'Per-section breakdown with trends and personalized recommendations' },
+  ];
+
+  const comparisons = [
+    { feature: 'Practice Questions', us: '200+ (infinite with AI)', them: 'Fixed question banks' },
+    { feature: 'AI Feedback', us: 'Real-time on Writing & Speaking', them: 'Answer keys only' },
+    { feature: 'Adaptive Difficulty', us: '✅ Auto-adjusts to your level', them: '❌ One size fits all' },
+    { feature: 'Mock Exam with CLB Estimate', us: '✅ Full simulation', them: '❌ or basic only' },
+    { feature: 'Audio Listening Practice', us: '24 cached + unlimited AI', them: 'Limited passages' },
+    { feature: 'Price', us: 'Free tier + CA$24.99/mo Pro', them: '$29-49/month, no free tier' },
+  ];
+
+  const testimonials = [
+    { name: 'Amanda C.', score: 'CLB 9', text: 'The AI Writing Tutor helped me understand exactly what CELPIP examiners look for. My writing went from 7 to 10 in 3 weeks.', avatar: '👩‍💻' },
+    { name: 'Priya M.', score: 'CLB 10', text: 'The speaking practice with AI feedback was a game changer. I could practice anytime without a tutor and get instant feedback.', avatar: '👩‍🎓' },
+    { name: 'Carlos R.', score: 'CLB 8', text: 'Best CELPIP prep I found. The free content alone is better than what other sites charge $30/month for.', avatar: '👨‍💼' },
+  ];
+
+  const faqs = [
+    { q: 'Is there really free content?', a: 'Yes! All 24 listening passages with audio, 17 reading passages, 75+ writing prompts, 24 speaking prompts, technique guides, and quizzes are completely free. No credit card needed.' },
+    { q: 'What does Pro include?', a: 'Pro unlocks AI-powered features: infinite practice exercises, AI Writing Tutor with detailed feedback, AI Speaking Coach with Whisper transcription, Mock Exams with CLB estimates, adaptive difficulty, and weakness reports.' },
+    { q: 'Can I cancel anytime?', a: 'Absolutely. Cancel your Pro subscription anytime from your profile. No contracts, no hidden fees. You keep access until the end of your billing period.' },
+    { q: 'How is this different from other CELPIP prep sites?', a: 'Most sites offer static question banks. We use AI to generate infinite exercises, give real-time feedback on writing and speaking, and adapt difficulty to your level. Plus our free tier is more generous than competitors\' paid plans.' },
+    { q: 'Does it work on mobile?', a: 'Yes! The entire platform is mobile-optimized. Practice on your phone during commute, lunch breaks, or anywhere.' },
+    { q: 'I\'m taking CELPIP next week. Can this help?', a: 'Definitely. Start with our Technique Guides for quick strategy tips, then do a Mock Exam to identify weak areas. Even a few days of focused AI practice can improve your score.' },
+  ];
+
+  const stats = [
+    { value: '24', label: 'Listening Passages', sub: 'with audio' },
+    { value: '17', label: 'Reading Passages', sub: 'all parts' },
+    { value: '75+', label: 'Writing Prompts', sub: 'Task 1 & 2' },
+    { value: '∞', label: 'AI Exercises', sub: 'Pro feature' },
   ];
 
   return (
     <main className={styles.home}>
-      {/* Hero */}
+      {/* ─── Hero Section ─── */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          {/* Badge */}
           <div className={styles.badge}>
             <Sparkles size={14} />
-            <span>Complete CELPIP Preparation</span>
+            <span>🇨🇦 #1 AI-Powered CELPIP Prep Platform</span>
           </div>
 
-          {/* Title */}
           <h1 className={styles.title}>
-            Master All
-            <span className={styles.titleAccent}> 4 Skills</span>
+            Ace Your CELPIP Test
+            <span className={styles.titleAccent}> With AI Coaching</span>
           </h1>
 
-          {/* Subtitle */}
           <p className={styles.subtitle}>
-            Practice Writing, Speaking, Reading & Listening with AI-powered feedback. 
-            Built to match real exam conditions.
+            Free practice tests, AI-powered feedback, and personalized study plans. 
+            Everything you need to get the CLB score you want — for Canadian PR, citizenship, or career.
           </p>
 
-          {/* Feature Pills */}
-          <div className={styles.features}>
-            {features.map((feature, i) => (
-              <div key={i} className={styles.featurePill}>
-                <feature.icon size={16} />
-                <div className={styles.featureText}>
-                  <span className={styles.featureLabel}>{feature.label}</span>
-                  <span className={styles.featureDesc}>{feature.desc}</span>
-                </div>
-              </div>
-            ))}
+          <div className={styles.heroCtas}>
+            <Link href="/writing/task-1" className={styles.ctaPrimary}>
+              <span>Start Practicing Free</span>
+              <ArrowRight size={20} />
+            </Link>
+            <Link href="/pricing" className={styles.ctaSecondary}>
+              <span>See Pro Features</span>
+            </Link>
           </div>
 
-          {/* CTA */}
-          <Link href="/writing/task-1" className={styles.cta}>
-            <span>Start Practicing</span>
-            <ArrowRight size={20} />
-          </Link>
+          <div className={styles.heroTrust}>
+            <div className={styles.trustItem}>
+              <CheckCircle2 size={16} />
+              <span>No credit card required</span>
+            </div>
+            <div className={styles.trustItem}>
+              <CheckCircle2 size={16} />
+              <span>200+ free practice exercises</span>
+            </div>
+            <div className={styles.trustItem}>
+              <CheckCircle2 size={16} />
+              <span>Used by students across Canada</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Skills Grid */}
+      {/* ─── Stats Bar ─── */}
+      <section className={styles.statsBar}>
+        {stats.map((stat, i) => (
+          <div key={i} className={styles.statItem}>
+            <span className={styles.statValue}>{stat.value}</span>
+            <span className={styles.statLabel}>{stat.label}</span>
+            <span className={styles.statSub}>{stat.sub}</span>
+          </div>
+        ))}
+      </section>
+
+      {/* ─── Skills Grid ─── */}
       <section className={styles.skillsSection}>
-        <div className={styles.skillsHeader}>
-          <h2>Choose Your Focus</h2>
-          <p>All modules unlocked. Start anywhere you want.</p>
+        <div className={styles.sectionHeader}>
+          <h2>Practice All 4 CELPIP Modules</h2>
+          <p>Comprehensive content for every section of the exam — most of it completely free.</p>
         </div>
 
         <div className={styles.skillsGrid}>
@@ -199,6 +181,7 @@ export default function HomePage() {
                   <h3>{skill.title}</h3>
                   <p>{skill.desc}</p>
                   <span className={styles.skillStats}>{skill.stats}</span>
+                  <span className={styles.skillFree}>🆓 {skill.free}</span>
                 </div>
 
                 <div className={styles.skillArrow}>
@@ -210,17 +193,128 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Daily Progress (if has activity) */}
-      {mounted && dailyProgress.streak > 0 && (
-        <section className={styles.progressSection}>
-          <div className={styles.progressCard}>
-            <div className={styles.streakBadge}>
-              🔥 {dailyProgress.streak} day streak
-            </div>
-            <p>Keep practicing daily to maintain your streak!</p>
+      {/* ─── Pro Features ─── */}
+      <section className={styles.proSection}>
+        <div className={styles.sectionHeader}>
+          <div className={styles.proBadge}>
+            <Zap size={16} />
+            <span>PRO</span>
           </div>
-        </section>
-      )}
+          <h2>Supercharge Your Prep With AI</h2>
+          <p>Go beyond static practice. Our AI coach adapts to you, finds your weaknesses, and helps you improve faster.</p>
+        </div>
+
+        <div className={styles.proGrid}>
+          {proFeatures.map((feature, i) => {
+            const IconComp = feature.icon;
+            return (
+              <div key={i} className={styles.proCard}>
+                <div className={styles.proCardIcon}>
+                  <IconComp size={22} />
+                </div>
+                <h3>{feature.title}</h3>
+                <p>{feature.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className={styles.proCtaWrapper}>
+          <Link href="/pricing" className={styles.ctaPrimary}>
+            <span>Try Pro — CA$24.99/month</span>
+            <ArrowRight size={20} />
+          </Link>
+          <p className={styles.proCtaSub}>Cancel anytime. Also available: CA$99/year (save 67%)</p>
+        </div>
+      </section>
+
+      {/* ─── Comparison Table ─── */}
+      <section className={styles.comparisonSection}>
+        <div className={styles.sectionHeader}>
+          <h2>How We Compare</h2>
+          <p>See why students are switching to CELPIP AI Coach</p>
+        </div>
+
+        <div className={styles.comparisonTable}>
+          <div className={`${styles.compRow} ${styles.compHeader}`}>
+            <div className={styles.compFeature}>Feature</div>
+            <div className={styles.compUs}>CELPIP AI Coach</div>
+            <div className={styles.compThem}>Other Platforms</div>
+          </div>
+          {comparisons.map((row, i) => (
+            <div key={i} className={styles.compRow}>
+              <div className={styles.compFeature}>{row.feature}</div>
+              <div className={`${styles.compUs} ${styles.compHighlight}`}>{row.us}</div>
+              <div className={styles.compThem}>{row.them}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Testimonials ─── */}
+      <section className={styles.testimonialsSection}>
+        <div className={styles.sectionHeader}>
+          <h2>What Students Say</h2>
+          <p>Real results from real CELPIP test takers</p>
+        </div>
+
+        <div className={styles.testimonialsGrid}>
+          {testimonials.map((t, i) => (
+            <div key={i} className={styles.testimonialCard}>
+              <div className={styles.testimonialStars}>
+                {[...Array(5)].map((_, j) => <Star key={j} size={16} fill="currentColor" />)}
+              </div>
+              <p className={styles.testimonialText}>&ldquo;{t.text}&rdquo;</p>
+              <div className={styles.testimonialAuthor}>
+                <span className={styles.testimonialAvatar}>{t.avatar}</span>
+                <div>
+                  <span className={styles.testimonialName}>{t.name}</span>
+                  <span className={styles.testimonialScore}>Achieved {t.score}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <section className={styles.faqSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div className={styles.faqList}>
+          {faqs.map((faq, i) => (
+            <div 
+              key={i} 
+              className={`${styles.faqItem} ${openFaq === i ? styles.faqOpen : ''}`}
+              onClick={() => setOpenFaq(openFaq === i ? null : i)}
+            >
+              <div className={styles.faqQuestion}>
+                <span>{faq.q}</span>
+                <ChevronDown size={20} className={styles.faqChevron} />
+              </div>
+              <div className={styles.faqAnswer}>
+                <p>{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Final CTA ─── */}
+      <section className={styles.finalCta}>
+        <div className={styles.finalCtaContent}>
+          <h2>Ready to Ace Your CELPIP?</h2>
+          <p>Join thousands of students preparing smarter with AI. Start free today.</p>
+          <div className={styles.heroCtas}>
+            <Link href="/writing/task-1" className={styles.ctaPrimary}>
+              <span>Start Practicing Now</span>
+              <ArrowRight size={20} />
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
