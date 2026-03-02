@@ -10,13 +10,32 @@ const publicRoutes = [
   '/auth/forgot-password',
   '/terms',
   '/privacy',
+  '/pricing',
+]
+
+// Route prefixes that don't require authentication (SEO + free content)
+const publicPrefixes = [
+  '/blog',
+  '/listening/technique',
+  '/reading/technique',
+  '/writing/mastery',
+  '/speaking/technique',
+  '/listening', // hub pages
+  '/reading',
+  '/writing',
+  '/speaking',
 ]
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Allow public routes
+  // Allow public routes (exact match)
   if (publicRoutes.some(route => pathname === route)) {
+    return await updateSession(request)
+  }
+
+  // Allow public prefixes (blog, technique guides, section hubs)
+  if (publicPrefixes.some(prefix => pathname.startsWith(prefix))) {
     return await updateSession(request)
   }
 
