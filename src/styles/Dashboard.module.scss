@@ -48,7 +48,91 @@
   }
 }
 
+// Welcome Section (post-onboarding)
+.welcomeSection {
+  margin: 0 0 1.5rem;
+  animation: fadeInUp 0.5s ds.$ease-smooth both;
+}
+
+.welcomeCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(14, 165, 233, 0.06));
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: ds.$radius-xl;
+}
+
+.welcomeLeft {
+  flex: 1;
+}
+
+.welcomeTitle {
+  font-family: ds.$font-display;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+  margin: 0 0 0.25rem;
+}
+
+.welcomeSubtitle {
+  font-size: 0.8rem;
+  color: ds.$text-muted;
+  margin: 0;
+}
+
+.clbBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background: ds.$bg-elevated;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  min-width: 72px;
+}
+
+.clbValue {
+  font-family: ds.$font-display;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: ds.$accent-primary-light;
+  line-height: 1;
+}
+
+.clbCaption {
+  font-size: 0.65rem;
+  color: ds.$text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.15rem;
+}
+
 // Quick Stats
+.statsSection {
+  margin: 0 0 1.5rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ds.$ease-smooth 0.1s both;
+}
+
+.statsGrid {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Quick Stats (legacy)
 .quickStats {
   display: flex;
   gap: 0.75rem;

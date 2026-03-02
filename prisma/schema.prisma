@@ -143,12 +143,14 @@ model WritingAnalysis {
 
 // User subscription plan (keyed by Supabase auth user ID)
 model UserPlan {
-  id        String   @id @default(cuid())
-  userId    String   @unique  // Supabase auth user.id
-  plan      String   @default("free") // 'free' | 'pro'
-  expiresAt DateTime? // null = never expires (lifetime or free)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id                    String   @id @default(cuid())
+  userId                String   @unique  // Supabase auth user.id
+  plan                  String   @default("free") // 'free' | 'pro'
+  expiresAt             DateTime? // null = never expires (lifetime or free)
+  stripeCustomerId      String?   @unique
+  stripeSubscriptionId  String?   @unique
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
 
   @@map("user_plans")
 }
@@ -166,4 +168,20 @@ model QuizAttempt {
   @@index([userId, createdAt])
   @@index([userId, sectionId, moduleId])
   @@map("quiz_attempts")
+}
+
+// Onboarding data (synced across devices)
+model UserOnboarding {
+  id        String   @id @default(cuid())
+  userId    String   @unique  // Supabase auth user.id
+  completed Boolean  @default(false)
+  targetCLB Int?
+  goal      String?  // 'immigration' | 'work' | 'study' | 'improvement'
+  experience String? // 'first-time' | 'took-once' | 'multiple-times' | 'preparing'
+  timeline  String?  // '1-month' | '2-3-months' | '3-6-months' | 'flexible'
+  assessmentScores Json? // { reading: number, listening: number, writing: number, speaking: number }
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("user_onboarding")
 }

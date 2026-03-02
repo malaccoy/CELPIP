@@ -17,7 +17,7 @@ async function generateTTS(text: string): Promise<Buffer | null> {
   return new Promise((resolve) => {
     execFile('edge-tts', [
       '--voice', 'en-US-GuyNeural',
-      '--rate', '-5%',
+      '--rate=-5%',
       '--text', input,
       '--write-media', tmpPath,
     ], { timeout: 30000 }, async (error) => {

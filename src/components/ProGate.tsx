@@ -36,7 +36,7 @@ export function ProGate({ feature, description, compact }: ProGateProps) {
       <p className={styles.description}>
         {description || 'This feature requires a Pro subscription. Upgrade to get AI-powered feedback, detailed scoring, and personalized recommendations.'}
       </p>
-      <button className={styles.upgradeBtn}>
+      <button className={styles.upgradeBtn} onClick={() => window.location.href = '/pricing'}>
         <Zap size={16} />
         Upgrade to Pro
       </button>

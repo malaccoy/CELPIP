@@ -353,7 +353,13 @@ export default function AIPracticePage() {
                 </div>
               )}
 
-              {/* Passage (hidden for listening — audio only, like real CELPIP) */}
+              {/* Passage: hidden for listening when audio available — shown as fallback if no audio */}
+              {section === 'listening' && !audioSrc && exercise.passage && (
+                <div className={styles.passageCard}>
+                  <p style={{ fontSize: '0.8rem', color: '#f59e0b', marginBottom: '0.5rem' }}>⚠️ Audio generation failed — read the passage below:</p>
+                  <p className={styles.passageText}>{exercise.passage}</p>
+                </div>
+              )}
               {section !== 'listening' && exercise.passage && (
                 <div className={styles.passageCard}>
                   <p className={styles.passageText}>{exercise.passage}</p>
