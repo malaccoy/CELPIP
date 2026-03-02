@@ -8,12 +8,13 @@ export const Logo: React.FC<{ size?: number }> = ({ size = 42 }) => {
   return (
     <div className={styles.logoContainer} style={{ width: size, height: size }}>
       <Image
-        src="/logo-transparent.png"
+        src="/logo-leaf.png"
         alt="CELPIP AI Coach"
         width={size}
         height={size}
         className={styles.logoImg}
         priority
+        unoptimized
       />
     </div>
   );
