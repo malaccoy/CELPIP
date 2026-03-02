@@ -45,6 +45,13 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="google-site-verification" content="B9m2vW-OETB5S5rmyCuvbkOTjyNltG-G4gW6fO16gCI" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD2516DCJM"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SD2516DCJM');
+        `}} />
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
