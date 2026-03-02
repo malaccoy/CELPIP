@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { getAllBlogPosts } from '@content/blog-posts';
 
 const BASE_URL = 'https://celpipaicoach.com';
 
@@ -52,10 +53,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const allPages = [...mainPages, ...sectionPages, ...techniquePages, ...practicePages, ...proPages, ...authPages];
 
-  return allPages.map(page => ({
-    url: `${BASE_URL}${page.url}`,
-    lastModified: now,
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
+  // Blog posts
+  const blogPages = getAllBlogPosts().map(post => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: post.date,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }));
+
+  // Blog index
+  const blogIndex = {
+    url: `${BASE_URL}/blog`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  };
+
+  return [
+    ...allPages.map(page => ({
+      url: `${BASE_URL}${page.url}`,
+      lastModified: now,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    blogIndex,
+    ...blogPages,
+  ];
 }
