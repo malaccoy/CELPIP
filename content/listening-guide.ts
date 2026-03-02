@@ -1172,6 +1172,518 @@ Host: Thank you all. Lots to consider for our listeners.`,
         correct: 1
       }
     ]
+  },
+
+  // ─── NEW PASSAGES (Batch 3) ────────────────────
+
+  // Part 1: Problem Solving — problem-4
+  {
+    id: 'problem-4',
+    part: 1,
+    partName: 'Listening to Problem Solving',
+    title: 'Apartment Water Damage',
+    context: 'Listen to two roommates dealing with a water leak in their apartment.',
+    audioScript: `Woman: Tyler, come look at this. There's water dripping from the ceiling in the hallway. I just noticed it when I got home.
+
+Man: Oh no, that's not good at all. How bad is it?
+
+Woman: It's a steady drip right now. I put a bucket underneath but the ceiling looks like it's bulging a bit. I think water is pooling up there.
+
+Man: We need to call the building manager right away. Do you have Sandra's number?
+
+Woman: I do, but she said she's on vacation until Friday. The emergency maintenance number is on the fridge though.
+
+Man: Okay, I'll call them. But in the meantime we should probably move our stuff away from that area. My guitar and your bookshelf are right under the leak.
+
+Woman: Good point. I already moved the shoes from the hallway closet. But the bookshelf is too heavy for me to move alone. Can you help me slide it into the living room?
+
+Man: Absolutely. Let's do that first, then I'll call maintenance. Actually, wait — should we also turn off the water main just in case? If it's a burst pipe above us, the water will keep coming.
+
+Woman: The shut-off valve is in the basement. I don't have a key to the utility room though. Maybe ask the neighbor in 304 — I think she has access.
+
+Man: Right, Mrs. Chen. She's usually home by now. I'll knock on her door. Also, we should take photos of everything for the insurance claim. Make sure you get the ceiling damage and any water on the floor.
+
+Woman: Smart thinking. I'll take photos and video right now. And I'll check if our renter's insurance covers water damage from above. I think our policy with Intact covers it, but there might be a deductible.
+
+Man: The deductible is five hundred dollars, I remember from when we signed up. Okay, here's the plan: you document everything and check the insurance. I'll move the bookshelf, call maintenance, and talk to Mrs. Chen about the water valve.
+
+Woman: Sounds good. Oh, and Tyler? Can you also check the bathroom ceiling? If the leak is spreading, it might affect more than just the hallway.`,
+    questions: [
+      {
+        id: 1,
+        question: 'What is the first problem they notice?',
+        options: ['A burst pipe in the bathroom', 'Water dripping from the hallway ceiling', 'Flooding in the basement', 'A broken window during a storm'],
+        correct: 1
+      },
+      {
+        id: 2,
+        question: 'Why can\'t they contact the building manager directly?',
+        options: ['She changed her phone number', 'She is on vacation', 'She is at a conference', 'The office is closed for renovation'],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'What does the woman suggest about the shut-off valve?',
+        options: ['It\'s in their apartment', 'They need to ask their neighbor for access', 'The building manager has the only key', 'It was already turned off'],
+        correct: 1
+      },
+      {
+        id: 4,
+        question: 'What is the insurance deductible?',
+        options: ['$200', '$300', '$500', '$1,000'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'What does Tyler agree to do?',
+        options: ['Take photos and check insurance', 'Call the insurance company', 'Move furniture, call maintenance, and talk to the neighbor', 'Go to the basement alone'],
+        correct: 2
+      }
+    ]
+  },
+
+  // Part 2: Daily Life — daily-life-4
+  {
+    id: 'daily-life-4',
+    part: 2,
+    partName: 'Listening to a Daily Life Conversation',
+    title: 'Planning a Camping Trip',
+    context: 'Listen to two friends planning a camping trip in British Columbia.',
+    audioScript: `Man: So are we still going camping next weekend? I've been looking forward to it all month.
+
+Woman: Definitely! I checked the weather and it's supposed to be clear Saturday and Sunday. But Monday might have rain, so maybe we should come back Sunday evening instead of Monday morning.
+
+Man: That works for me. Where are we going again? I remember we talked about either Manning Park or Golden Ears.
+
+Woman: I think Golden Ears is the better option. It's only an hour from Vancouver, so we don't waste half the day driving. Manning Park is beautiful but it's almost three hours each way.
+
+Man: Good call. Have you reserved a campsite? Last time we tried to go without a reservation and everything was full.
+
+Woman: Yes! I booked site number forty-seven at Alouette Lake. It's right by the water and has a fire pit. Cost thirty-five dollars for two nights.
+
+Man: Perfect. Now what about food? Last time we barely brought enough and ended up eating plain crackers for dinner.
+
+Woman: Ha, I remember that. Okay, I was thinking I'll make a pasta salad and some sandwiches for Saturday lunch. For dinner we can grill burgers and corn on the fire.
+
+Man: That sounds great. I'll bring the breakfast stuff — eggs, bacon, bread, and coffee. I just got a new camping percolator that I've been dying to try.
+
+Woman: Amazing. What about gear? I have the tent, sleeping bags, and cooler. Do you still have those camping chairs?
+
+Man: I have the chairs and a portable table. Oh, and I bought a headlamp last week at MEC. Do we need bear spray? I saw a sign last year about black bears in the area.
+
+Woman: Yes, bring the bear spray. And we should hang our food in a tree at night. My brother left a bear canister at my place — I'll bring that instead.
+
+Man: Smart. Okay, so I'll pick you up at eight AM Saturday? That way we get there around nine and have time to set up before lunch.
+
+Woman: Make it seven thirty? I want to do the short hike to the viewpoint before it gets too hot.`,
+    questions: [
+      {
+        id: 1,
+        question: 'Why do they decide to return Sunday evening?',
+        options: ['They both have work on Monday', 'Rain is expected on Monday', 'The campsite is only available until Sunday', 'They want to avoid traffic'],
+        correct: 1
+      },
+      {
+        id: 2,
+        question: 'Why do they choose Golden Ears over Manning Park?',
+        options: ['It has better facilities', 'It\'s much closer to Vancouver', 'It\'s cheaper to camp there', 'Manning Park is closed'],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'How much did the campsite cost?',
+        options: ['$25 for two nights', '$35 for two nights', '$47 for two nights', '$35 per night'],
+        correct: 1
+      },
+      {
+        id: 4,
+        question: 'What will the man bring for breakfast?',
+        options: ['Pancake mix and syrup', 'Cereal and milk', 'Eggs, bacon, bread, and coffee', 'Granola bars and fruit'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'What does the woman ask the man to change about the pickup time?',
+        options: ['She wants to leave later', 'She wants to leave at 7:30 instead of 8', 'She wants to drive separately', 'She wants to meet at the park'],
+        correct: 1
+      }
+    ]
+  },
+
+  // Part 3: Information — information-4
+  {
+    id: 'information-4',
+    part: 3,
+    partName: 'Listening for Information',
+    title: 'Vancouver Public Library Orientation',
+    context: 'Listen to a librarian giving a tour to new library card holders.',
+    audioScript: `Welcome to the Vancouver Public Library Central Branch. I'm Megan, and I'll be showing you around today. This orientation takes about fifteen minutes and will help you get the most out of your library membership.
+
+First, let me explain our card system. Your library card gives you access to all twenty-two branches across Vancouver. You can borrow up to fifty items at a time, including books, DVDs, audiobooks, and magazines. Books can be kept for three weeks, and DVDs for one week. You can renew items online up to five times, as long as no one else has placed a hold on them.
+
+Now, let me point out some features of this building. We're standing on the main floor, which houses the fiction collection and the circulation desk where you check out materials. The second floor has non-fiction, reference materials, and our study rooms. You can book a study room online for up to two hours per day — they're very popular with students, so I recommend booking at least a day in advance.
+
+The third floor is our technology center. We have forty public computers available on a first-come, first-served basis. Each session is one hour, but you can extend it if no one is waiting. We also offer free Wi-Fi throughout the building — the network name is VPL-Public, no password needed.
+
+On the lower level, you'll find our children's section, the community meeting rooms, and our maker space. The maker space has 3D printers, laser cutters, and sewing machines that you can use for free after completing a thirty-minute orientation session. Sessions are offered every Wednesday evening and Saturday morning.
+
+One more thing — we have an excellent digital collection through our website. With your library card, you can access thousands of e-books and audiobooks through Libby, stream movies through Kanopy, and even take free online courses through LinkedIn Learning. All you need is your card number and PIN.
+
+Any questions? The information desk is right over there if you need help at any time. Enjoy the library!`,
+    questions: [
+      {
+        id: 1,
+        question: 'How many items can you borrow at once?',
+        options: ['25', '30', '50', '100'],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'How long can you keep DVDs?',
+        options: ['Three days', 'One week', 'Two weeks', 'Three weeks'],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'How can you book a study room?',
+        options: ['Ask at the front desk', 'Call the library', 'Book online', 'Sign up on the second floor'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'When are maker space orientation sessions offered?',
+        options: ['Monday and Friday mornings', 'Tuesday and Thursday evenings', 'Wednesday evenings and Saturday mornings', 'Every weekday afternoon'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'Which platform is used for streaming movies?',
+        options: ['Netflix', 'Libby', 'Kanopy', 'LinkedIn Learning'],
+        correct: 2
+      }
+    ]
+  },
+
+  // Part 4: News — news-4
+  {
+    id: 'news-4',
+    part: 4,
+    partName: 'Listening to a News Item',
+    title: 'BC Ferries Electric Fleet Expansion',
+    context: 'Listen to a news report about BC Ferries transitioning to electric vessels.',
+    audioScript: `BC Ferries announced today that it will invest one point two billion dollars over the next eight years to convert its fleet to hybrid-electric vessels, marking the largest green transportation investment in British Columbia's history.
+
+The plan, unveiled by CEO Mark Wilson at a press conference in Victoria, calls for the replacement of seven aging diesel ferries with new hybrid-electric models by twenty thirty-four. The first two vessels are already under construction at a shipyard in North Vancouver and are expected to enter service on the Horseshoe Bay to Nanaimo route by late twenty twenty-seven.
+
+The new ferries will run primarily on battery power charged at terminals, switching to low-emission diesel generators only during longer crossings or heavy weather. BC Ferries estimates this will reduce carbon emissions by sixty-five percent compared to current vessels.
+
+Passenger capacity will also increase significantly. The new hybrid ferries will carry up to two thousand passengers and four hundred vehicles each, compared to the current capacity of fifteen hundred passengers and three hundred vehicles on the Spirit-class vessels.
+
+The provincial government is contributing four hundred million dollars to the project through its Clean Transportation Fund. The federal government has also pledged two hundred million through the Canada Infrastructure Bank. BC Ferries will finance the remaining six hundred million through fare revenues and green bonds.
+
+Environmental groups have largely praised the announcement, though some critics argue the timeline is too slow. The Sierra Club of BC called for full electrification by twenty thirty, noting that Norway has already converted most of its coastal ferry fleet to fully electric operation.
+
+Fares are expected to increase by approximately three percent annually to help fund the transition, slightly above the current rate of inflation.`,
+    questions: [
+      {
+        id: 1,
+        question: 'How much is the total investment?',
+        options: ['$600 million', '$800 million', '$1.2 billion', '$2 billion'],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'When will the first new vessels enter service?',
+        options: ['2026', 'Late 2027', '2030', '2034'],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'By how much will carbon emissions be reduced?',
+        options: ['35%', '50%', '65%', '80%'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'How much is the federal government contributing?',
+        options: ['$100 million', '$200 million', '$400 million', '$600 million'],
+        correct: 1
+      },
+      {
+        id: 5,
+        question: 'What do critics say about the plan?',
+        options: ['It costs too much', 'The timeline is too slow', 'The ferries are too small', 'Battery technology is unreliable'],
+        correct: 1
+      }
+    ]
+  },
+
+  // Part 5: Discussion — discussion-3
+  {
+    id: 'discussion-3',
+    part: 5,
+    partName: 'Listening to a Discussion',
+    title: 'Company Remote Work Policy Meeting',
+    context: 'Listen to a workplace meeting where managers discuss the company\'s remote work policy.',
+    audioScript: `Manager 1 (Sandra): Alright everyone, thanks for coming. As you know, we need to finalize our hybrid work policy before the end of the quarter. Currently, employees come in three days a week, but we've had a lot of feedback asking for changes. David, you compiled the survey results — what did you find?
+
+Manager 2 (David): Thanks Sandra. We had seventy-eight percent participation in the survey, which is quite good. The results are mixed. About forty percent of employees prefer the current three-day in-office model. Thirty-five percent want to come in only two days. And twenty-five percent want to be fully remote.
+
+Manager 3 (Priya): Did you break that down by department? I suspect the numbers vary quite a bit.
+
+David: They do. Engineering and IT are the ones pushing hardest for full remote — over fifty percent of them want that option. Sales and marketing actually prefer being in the office more — about sixty percent want three or four days in office. And customer service is split pretty evenly.
+
+Sandra: That makes sense. The engineering team has been remote since COVID and their productivity metrics haven't dropped at all. In fact, their output went up by about twelve percent.
+
+Priya: But there's a collaboration issue. I've noticed that cross-department projects take longer when teams aren't in the same building. The finance rollout last month took three extra weeks partly because the teams were never in the office on the same days.
+
+David: That's a valid concern. One option is to set specific "anchor days" where everyone is required to be in the office. For example, Tuesdays and Thursdays could be company-wide in-office days for meetings and collaboration.
+
+Sandra: I like that idea. So the base would be two required days, and then departments can add a third day if they want?
+
+David: Exactly. So engineering might do just the two anchor days, while sales might add Wednesday as their third day.
+
+Priya: What about the people who want full remote? Some of them have already moved out of the city — we have two developers in Kelowna and one in Calgary.
+
+Sandra: For existing employees who relocated, I think we need to grandfather them in. But going forward, new hires should be within commuting distance unless the role is specifically designated as remote.
+
+David: Agreed. And we should make sure the anchor days have proper meeting rooms booked. Last week I came in for a "collaboration day" and couldn't find a single available room.
+
+Sandra: Good point. Let me talk to facilities about that. Okay, so the proposal is: two anchor days — Tuesdays and Thursdays — with departments having the option to add more. Full remote grandfathered for existing remote employees. I'll draft the formal policy and circulate it by Friday.`,
+    questions: [
+      {
+        id: 1,
+        question: 'What percentage of employees participated in the survey?',
+        options: ['65%', '72%', '78%', '85%'],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'Which department most wants to work fully remote?',
+        options: ['Sales and marketing', 'Customer service', 'Engineering and IT', 'Finance'],
+        correct: 2
+      },
+      {
+        id: 3,
+        question: 'By how much did engineering productivity increase during remote work?',
+        options: ['5%', '8%', '12%', '15%'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'What solution does David propose?',
+        options: ['Full remote for everyone', 'Four days in office', 'Specific anchor days for in-office attendance', 'Let each employee decide individually'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'What does Sandra say about employees who already moved away?',
+        options: ['They must return to the office', 'They should be grandfathered in as remote', 'They need to find a co-working space', 'Their contracts will be reviewed'],
+        correct: 1
+      },
+      {
+        id: 6,
+        question: 'What problem does David mention about in-office days?',
+        options: ['No parking available', 'Internet connection issues', 'Not enough meeting rooms', 'The cafeteria is always closed'],
+        correct: 2
+      }
+    ]
+  },
+
+  // Part 5: Discussion — discussion-4
+  {
+    id: 'discussion-4',
+    part: 5,
+    partName: 'Listening to a Discussion',
+    title: 'School Fundraiser Planning Committee',
+    context: 'Listen to a school committee discussing how to raise funds for a new playground.',
+    audioScript: `Chair (Linda): Good evening everyone. Thank you for making time for our monthly PTA meeting. As you know, the school needs twenty-five thousand dollars to replace the playground equipment. The current structure is over fifteen years old, and the school board said they can't fund it until at least twenty twenty-nine. So we need to raise the money ourselves. Mark, what fundraising ideas do we have on the table?
+
+Mark: We've narrowed it down to three main options. First, a spring carnival — games, food booths, a silent auction. Based on what other schools have done, we could net around eight to ten thousand dollars. Second, a walkathon where students get sponsors per kilometer. That usually brings in five to seven thousand. And third, an online crowdfunding campaign with matching donations from local businesses.
+
+Linda: What about costs to organize each one?
+
+Mark: The carnival needs the most upfront investment — about two thousand for rentals, permits, and supplies. The walkathon costs almost nothing, maybe three hundred for t-shirts and water. The crowdfunding campaign just needs someone to manage the page.
+
+Parent (Sarah): I think we should do all three. One event won't get us to twenty-five thousand. But a carnival in April, a walkathon in May, and a crowdfunding campaign running alongside could do it.
+
+Linda: That's ambitious but doable. Do we have enough volunteers? Last year's bake sale only had six parents helping and it was a disaster.
+
+Mark: I did a signup sheet at last week's parent night. We have twenty-three volunteers already, and I think we can get more through the school newsletter.
+
+Sarah: I can manage the crowdfunding page. I work in marketing so I know how to write a compelling campaign. I'll set up a GoFundMe and reach out to local businesses for matching.
+
+Linda: Wonderful. How much do you think businesses would match?
+
+Sarah: Home Depot and Save-On-Foods have matched school campaigns before. I think we could get five thousand in matching funds if we reach ten thousand in community donations.
+
+Linda: So potentially we could exceed our goal. That would be fantastic. Okay, let's vote on pursuing all three initiatives. All in favor?
+
+Multiple voices: Agreed.
+
+Linda: Great. Mark, you'll lead the carnival. Sarah, you've got crowdfunding. I'll coordinate the walkathon. We'll meet again in two weeks with detailed plans and budgets.`,
+    questions: [
+      {
+        id: 1,
+        question: 'How much money do they need to raise?',
+        options: ['$10,000', '$15,000', '$25,000', '$50,000'],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'Why can\'t the school board fund the playground?',
+        options: ['The budget was cut', 'They can\'t fund it until at least 2029', 'They don\'t think it\'s necessary', 'Another school has priority'],
+        correct: 1
+      },
+      {
+        id: 3,
+        question: 'Which fundraiser has the lowest cost to organize?',
+        options: ['Spring carnival', 'Walkathon', 'Crowdfunding campaign', 'Bake sale'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'How many volunteers signed up so far?',
+        options: ['6', '15', '23', '30'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'How much does Sarah think businesses might match?',
+        options: ['$2,000', '$5,000', '$10,000', '$25,000'],
+        correct: 1
+      },
+      {
+        id: 6,
+        question: 'What will Linda coordinate?',
+        options: ['The carnival', 'The crowdfunding', 'The walkathon', 'The volunteer recruitment'],
+        correct: 2
+      }
+    ]
+  },
+
+  // Part 6: Viewpoints — viewpoints-ext-3
+  {
+    id: 'viewpoints-ext-3',
+    part: 6,
+    partName: 'Listening to Viewpoints',
+    title: 'Should Vancouver Ban Single-Use Plastics?',
+    context: 'Listen to two people debating Vancouver\'s expanded single-use plastics ban.',
+    audioScript: `Host: Today we're discussing Vancouver's proposal to expand its single-use plastics ban to include produce bags, takeout containers, and plastic film wrap. Joining us are Maya Chen, an environmental policy researcher, and Tom Baker, who represents the BC Restaurant Association.
+
+Maya: Thank you. Look, Vancouver has already shown leadership on this issue. The straw and bag ban in twenty twenty-two was successful — we saw an eighty percent reduction in plastic bag litter in the first year. Expanding to takeout containers is the logical next step. These containers are the number one item found in beach cleanups along English Bay and False Creek.
+
+Tom: I appreciate Maya's passion, but the restaurant industry is still recovering from years of disruption. Switching from plastic takeout containers to compostable alternatives costs roughly forty percent more per unit. For a small restaurant doing three hundred takeout orders a week, that's an extra two hundred dollars in packaging costs every month. That gets passed to customers or absorbed by already thin margins.
+
+Maya: I understand the cost concern, but let's look at the bigger picture. The city spends twelve million dollars a year on waste management and litter cleanup. A significant portion of that is single-use plastics that don't break down. If we reduce that waste at the source, taxpayers save money in the long run.
+
+Tom: But why does it have to be a ban? Why not incentivize the switch? Tax credits for restaurants that voluntarily adopt compostable packaging, or subsidies to bring down the cost of alternatives. A ban is a blunt instrument that hurts small businesses disproportionately. A large chain like Tim Hortons can negotiate bulk pricing on compostable cups. A family-run pho restaurant on Kingsway can't.
+
+Maya: Fair point about equity, and I think subsidies should be part of the transition plan. But voluntary programs don't work — we've tried them. The voluntary straw reduction program had only twenty-three percent participation after two years. The ban got us to ninety-five percent compliance in six months.
+
+Tom: What about the timeline? If this goes through in January, restaurants have less than four months to find suppliers, test new packaging, and adjust their pricing. We need at least twelve months, minimum.
+
+Maya: I'd support a twelve-month phase-in period with government subsidies for small businesses during the transition. That's a reasonable compromise.
+
+Tom: Now that's something I could work with. Phase it in, provide financial support, and maybe exempt businesses under a certain revenue threshold for the first year.
+
+Host: It sounds like there might be some common ground here. Thank you both.`,
+    questions: [
+      {
+        id: 1,
+        question: 'What is the main thing Maya cites as evidence the plastic ban works?',
+        options: ['Sales of reusable bags increased', '80% reduction in plastic bag litter', 'All restaurants switched voluntarily', 'Tourism increased at English Bay'],
+        correct: 1
+      },
+      {
+        id: 2,
+        question: 'How much more do compostable containers cost compared to plastic?',
+        options: ['10% more', '25% more', '40% more', '60% more'],
+        correct: 2
+      },
+      {
+        id: 3,
+        question: 'How much does the city spend annually on waste management?',
+        options: ['$5 million', '$8 million', '$12 million', '$20 million'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'What does Tom suggest instead of a ban?',
+        options: ['Higher fines for littering', 'Tax credits and subsidies for voluntary adoption', 'A public awareness campaign', 'Importing cheaper compostable packaging'],
+        correct: 1
+      },
+      {
+        id: 5,
+        question: 'What compromise do both speakers seem to agree on?',
+        options: ['Cancel the ban entirely', 'A 12-month phase-in with subsidies for small businesses', 'Only ban straws and bags', 'Let each restaurant decide'],
+        correct: 1
+      }
+    ]
+  },
+
+  // Part 6: Viewpoints — viewpoints-ext-4
+  {
+    id: 'viewpoints-ext-4',
+    part: 6,
+    partName: 'Listening to Viewpoints',
+    title: 'Should Schools Start Later in the Morning?',
+    context: 'Listen to two people debating whether high schools should push back their start times.',
+    audioScript: `Host: A growing number of Canadian school districts are considering pushing high school start times from eight fifteen to nine thirty in the morning. Here to discuss are Dr. Karen Liu, a pediatric sleep researcher at UBC, and James Morton, a school district administrator in Surrey.
+
+Dr. Liu: The science on this is really clear and has been for over a decade. Teenagers experience a biological shift in their circadian rhythm during puberty — their brains don't start producing melatonin until around eleven PM. Asking a sixteen-year-old to be alert and learning at eight fifteen in the morning is like asking an adult to perform at four AM. Studies from the American Academy of Pediatrics show that when schools start at eight thirty or later, students get forty-five more minutes of sleep, grades improve by an average of five percent, and rates of depression and anxiety drop significantly.
+
+James: I don't disagree with the science. Sleep is important. But implementing this change is extraordinarily complex. Our district operates one hundred and twenty-seven schools with shared bus fleets. If high schools start at nine thirty, we either need to buy more buses — which costs millions — or we shift elementary schools to start earlier. And now you have seven-year-olds walking to school in the dark during winter.
+
+Dr. Liu: Several districts in Ontario and Alberta have already made the switch successfully. In Calgary, they staggered the schedule — elementary starts at eight, high schools at nine. The bus fleet handles both with the same number of vehicles. The key is you don't need more buses, you need better scheduling.
+
+James: Calgary has a different geography. Surrey is spread over three hundred and twenty square kilometers with significant traffic congestion. A bus that finishes an elementary run at eight forty-five can't reliably get to a high school across the city by nine. We ran simulations and we'd need at least thirty additional buses at a cost of four million dollars upfront.
+
+Dr. Liu: Four million is significant, but consider the alternative. Sleep-deprived teenagers have three times the rate of car accidents. They have higher rates of substance use, obesity, and mental health issues. The healthcare cost of adolescent sleep deprivation in BC alone is estimated at over fifty million a year. Investing four million to prevent even a fraction of that is excellent value.
+
+James: I hear you. And I want to be clear — I'm not opposed to the change in principle. My concern is implementation and funding. If the province would cover the transportation costs for the first three years while we optimize routes, I'd be the first to advocate for later start times.
+
+Dr. Liu: That's a reasonable ask. And honestly, I think the province should fund it. This is a public health intervention as much as an education one.
+
+Host: Thank you both for a very thoughtful discussion.`,
+    questions: [
+      {
+        id: 1,
+        question: 'According to Dr. Liu, when do teenagers\' brains start producing melatonin?',
+        options: ['Around 9 PM', 'Around 10 PM', 'Around 11 PM', 'Around midnight'],
+        correct: 2
+      },
+      {
+        id: 2,
+        question: 'How much more sleep do students get when schools start later?',
+        options: ['20 minutes', '30 minutes', '45 minutes', '60 minutes'],
+        correct: 2
+      },
+      {
+        id: 3,
+        question: 'How many schools does James\'s district operate?',
+        options: ['87', '105', '127', '150'],
+        correct: 2
+      },
+      {
+        id: 4,
+        question: 'How much would additional buses cost Surrey?',
+        options: ['$1 million', '$2.5 million', '$4 million', '$10 million'],
+        correct: 2
+      },
+      {
+        id: 5,
+        question: 'What is the estimated annual healthcare cost of teen sleep deprivation in BC?',
+        options: ['$10 million', '$25 million', '$50 million', '$100 million'],
+        correct: 2
+      },
+      {
+        id: 6,
+        question: 'What would James need to support the change?',
+        options: ['More research studies', 'Provincial funding for transportation for 3 years', 'Parent approval through a vote', 'Smaller class sizes'],
+        correct: 1
+      }
+    ]
   }
 ];
 
