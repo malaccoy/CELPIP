@@ -8,6 +8,7 @@ import {
   Volume2, FileText, Pause, TrendingUp
 } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/AIMockExam.module.scss';
 
@@ -63,6 +64,7 @@ const TOTAL_TIME = EXAM_PARTS.reduce((acc, p) => acc + p.timeMinutes, 0);
 
 export default function AIMockExamPage() {
   const { isPro, loading: planLoading } = usePlan();
+  const { recordAttempt } = useAdaptiveDifficulty();
 
   const [phase, setPhase] = useState<ExamPhase>('setup');
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
@@ -200,6 +202,26 @@ export default function AIMockExamPage() {
   const nextSection = () => {
     const nextIdx = currentIdx + 1;
     if (nextIdx >= EXAM_PARTS.length) {
+      // Save results to adaptive difficulty tracker
+      const allResults = [...results]; // results already has all previous sections
+      for (const r of allResults) {
+        if (r.section !== 'writing' && r.section !== 'speaking' && r.total > 0) {
+          recordAttempt(r.section, `mock-exam`, r.score, r.total);
+        }
+      }
+      // Also save mock exam CLB estimate to localStorage
+      const quizResults = allResults.filter(r => r.section !== 'writing' && r.section !== 'speaking');
+      const totalCorrect = quizResults.reduce((a, r) => a + r.score, 0);
+      const totalQ = quizResults.reduce((a, r) => a + r.total, 0);
+      const pct = totalQ > 0 ? totalCorrect / totalQ : 0;
+      const clb = pct >= 0.9 ? '10+' : pct >= 0.8 ? '9' : pct >= 0.7 ? '8' : pct >= 0.6 ? '7' : pct >= 0.5 ? '6' : '5';
+      try {
+        localStorage.setItem('celpip-mock-exam-result', JSON.stringify({
+          clb, pct: Math.round(pct * 100), sections: allResults.map(r => ({
+            section: r.section, score: r.score, total: r.total,
+          })), date: new Date().toISOString(),
+        }));
+      } catch {}
       setPhase('results');
     } else {
       setCurrentIdx(nextIdx);

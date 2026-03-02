@@ -42,6 +42,41 @@ interface Achievement {
   unlockedAt?: string;
 }
 
+function MockExamResult() {
+  const [mockResult, setMockResult] = useState<{
+    clb: string; pct: number; date: string;
+    sections: { section: string; score: number; total: number }[];
+  } | null>(null);
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('celpip-mock-exam-result');
+      if (raw) setMockResult(JSON.parse(raw));
+    } catch {}
+  }, []);
+
+  if (!mockResult) return null;
+
+  const dateStr = new Date(mockResult.date).toLocaleDateString('en-CA', {
+    month: 'short', day: 'numeric', year: 'numeric',
+  });
+
+  return (
+    <section className={styles.mockExamResult}>
+      <h2 className={styles.assessmentTitle}>
+        <Trophy size={16} style={{ color: '#fbbf24' }} />
+        Mock Exam — Estimated CLB Level
+      </h2>
+      <div className={styles.clbBadgeLarge}>
+        CLB {mockResult.clb}
+      </div>
+      <p className={styles.mockExamMeta}>
+        Score: {mockResult.pct}% · {dateStr}
+      </p>
+    </section>
+  );
+}
+
 export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState<'progress' | 'achievements' | 'settings'>('progress');
   const [stats, setStats] = useState({
@@ -483,6 +518,9 @@ export default function ProfilePage() {
               listening: moduleStats.listening.avgScore
             }}
           />
+
+          {/* Mock Exam CLB Estimate */}
+          <MockExamResult />
 
           {/* AI Assessment */}
           {adaptiveLoaded && (
