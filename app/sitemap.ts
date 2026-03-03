@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/writing/ai-tutor', priority: 0.75, changeFrequency: 'weekly' as const },
     { url: '/mock-exam', priority: 0.75, changeFrequency: 'weekly' as const },
     { url: '/tools/score-calculator', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/tools/practice-timer', priority: 0.8, changeFrequency: 'monthly' as const },
   ];
 
   // Auth pages
