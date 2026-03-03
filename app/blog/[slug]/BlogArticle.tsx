@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowLeft, Clock, Tag, BookOpen } from 'lucide-react';
 import { BlogPost } from '@content/blog-posts';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import styles from '@/styles/BlogArticle.module.scss';
 
 const categoryColors: Record<string, string> = {
@@ -32,6 +33,7 @@ export default function BlogArticle({ post }: { post: BlogPost }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <Breadcrumbs items={[{ label: 'Blog', href: '/blog' }, { label: post.title }]} />
       <Link href="/blog" className={styles.backLink}>
         <ArrowLeft size={16} />
         Back to Blog

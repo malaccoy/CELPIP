@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Timer, Play, Pause, RotateCcw, Volume2, ChevronDown, CheckCircle2 } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import styles from '@/styles/PracticeTimer.module.scss';
 
 interface Preset {
@@ -107,6 +108,7 @@ export default function PracticeTimerPage() {
 
   return (
     <div className={styles.container}>
+      <Breadcrumbs items={[{ label: 'Tools', href: '/tools' }, { label: 'Practice Timer' }]} />
       <div className={styles.header}>
         <div className={styles.badge}>
           <Timer size={14} />

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Calculator, ArrowRight, Target, Info } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import styles from '@/styles/ScoreCalculator.module.scss';
 
 const clbPoints: Record<number, number> = {
@@ -38,6 +39,7 @@ export default function ScoreCalculatorPage() {
 
   return (
     <div className={styles.container}>
+      <Breadcrumbs items={[{ label: 'Tools', href: '/tools' }, { label: 'CRS Calculator' }]} />
       <div className={styles.header}>
         <div className={styles.badge}>
           <Calculator size={14} />

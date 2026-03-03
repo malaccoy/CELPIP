@@ -1,0 +1,40 @@
+.breadcrumbs {
+  margin-bottom: 1.25rem;
+
+  ol {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.78rem;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+
+    &:hover { color: #e2e8f0; }
+  }
+
+  span {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+}
+
+.separator {
+  color: #334155;
+}
