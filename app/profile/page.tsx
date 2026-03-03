@@ -400,6 +400,10 @@ export default function ProfilePage() {
       reading: localStorage.getItem('celpip_reading_history'),
       speaking: localStorage.getItem('celpip_speaking_history'),
       listening: localStorage.getItem('celpip_listening_history'),
+      quizScores: localStorage.getItem('celpip-quiz-scores'),
+      adaptiveDifficulty: localStorage.getItem('celpip-adaptive-difficulty'),
+      mockExamResult: localStorage.getItem('celpip-mock-exam-result'),
+      onboarding: localStorage.getItem('celpip-onboarding'),
       exportedAt: new Date().toISOString()
     };
     
@@ -689,7 +693,7 @@ export default function ProfilePage() {
             </h2>
             <div className={styles.settingsCard}>
               <div className={styles.dataInfo}>
-                <p>Your data is stored locally in your browser. Nothing is sent to external servers.</p>
+                <p>Your progress is saved locally and synced to your account when logged in. You can export or delete it anytime.</p>
               </div>
               
               <div className={styles.settingsRow}>
