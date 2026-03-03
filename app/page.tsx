@@ -99,8 +99,22 @@ export default function HomePage() {
     { value: '∞', label: 'AI Exercises', sub: 'Pro feature' },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+
   return (
     <main className={styles.home}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <EmailCapturePopup />
       {/* ─── Hero Section ─── */}
       <section className={styles.hero}>
