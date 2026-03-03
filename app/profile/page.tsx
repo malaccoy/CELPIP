@@ -708,17 +708,6 @@ export default function ProfilePage() {
               
               <div className={styles.settingsRow}>
                 <div className={styles.settingsInfo}>
-                  <h3>Export Data</h3>
-                  <p>Download all your practice history</p>
-                </div>
-                <button className={styles.exportBtn} onClick={handleExportData}>
-                  <Download size={18} />
-                  Export
-                </button>
-              </div>
-              
-              <div className={styles.settingsRow}>
-                <div className={styles.settingsInfo}>
                   <h3>Clear All Data</h3>
                   <p>Delete all statistics and history</p>
                 </div>
