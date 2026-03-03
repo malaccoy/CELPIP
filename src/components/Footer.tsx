@@ -54,6 +54,7 @@ export default function Footer() {
             <Link href="/writing/mastery">Writing Guide</Link>
             <Link href="/speaking/technique">Speaking Guide</Link>
             <Link href="/mock-exam">Mock Exam</Link>
+            <Link href="/tools/score-calculator">CRS Calculator</Link>
             <Link href="/blog">Blog</Link>
           </div>
 
