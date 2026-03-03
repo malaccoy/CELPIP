@@ -260,23 +260,12 @@ export default function DashboardPage() {
         return;
       }
 
-      // 2. Fall back to localStorage
-      const stored = localStorage.getItem(STORAGE_KEYS.onboarding);
-      if (!stored) {
-        setShowOnboarding(true);
-        return;
-      }
-
-      const data = JSON.parse(stored) as OnboardingData;
-      if (!data.completed) {
-        setShowOnboarding(true);
-        setOnboardingData(data);
-      } else {
-        // localStorage says done but server doesn't have it — sync up
-        syncOnboardingToServer(data);
-      }
+      // No server data for this user — start fresh onboarding
+      // Don't fall back to localStorage (might belong to a different account)
+      localStorage.removeItem(STORAGE_KEYS.onboarding);
+      setShowOnboarding(true);
     } catch (err) {
-      // Server unreachable — use localStorage
+      // Server unreachable — use localStorage as last resort
       console.error('Onboarding check error:', err);
       try {
         const stored = localStorage.getItem(STORAGE_KEYS.onboarding);
