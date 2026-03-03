@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 import { writeFile, unlink } from 'fs/promises';
 import { join } from 'path';
 import { randomUUID } from 'crypto';
-import { requirePro } from '@/lib/plan';
+import { requireProWithLimit } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -11,7 +11,7 @@ const openai = new OpenAI({
 
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requirePro();
+    const denied = await requireProWithLimit('speaking-feedback');
     if (denied) return denied;
 
     const formData = await request.formData();

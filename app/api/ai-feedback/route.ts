@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { requirePro } from '@/lib/plan';
+import { requireProWithLimit } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -156,7 +156,7 @@ If the text has no significant grammar errors, return an empty array.`;
 
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requirePro();
+    const denied = await requireProWithLimit('ai-feedback');
     if (denied) return denied;
 
     const body: AIFeedbackRequest = await request.json();

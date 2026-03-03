@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { requirePro } from '@/lib/plan';
+import { requireProWithLimit } from '@/lib/plan';
 import { execFile } from 'child_process';
 import { promises as fs } from 'fs';
 import { tmpdir } from 'os';
@@ -307,7 +307,7 @@ Respond in JSON:
 // ─── Handler ─────────────────────────────────────────────────
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requirePro();
+    const denied = await requireProWithLimit('ai-practice');
     if (denied) return denied;
 
     const body: GenerateRequest = await request.json();

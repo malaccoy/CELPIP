@@ -62,3 +62,33 @@ export async function requirePro(): Promise<NextResponse | null> {
 
   return null; // All good — user is Pro
 }
+
+/**
+ * Require Pro + enforce silent rate limit.
+ * Returns a Response if blocked, or null if allowed.
+ */
+export async function requireProWithLimit(endpoint: string): Promise<NextResponse | null> {
+  const { authenticated, userId, isPro } = await getUserPlan();
+
+  if (!authenticated || !userId) {
+    return NextResponse.json(
+      { error: 'Authentication required', code: 'AUTH_REQUIRED' },
+      { status: 401 }
+    );
+  }
+
+  if (!isPro) {
+    return NextResponse.json(
+      { error: 'Pro plan required', code: 'PRO_REQUIRED' },
+      { status: 403 }
+    );
+  }
+
+  const { checkRateLimit, rateLimitResponse } = await import('./rate-limit');
+  const { allowed } = await checkRateLimit(userId, endpoint, isPro);
+  if (!allowed) {
+    return rateLimitResponse() as unknown as NextResponse;
+  }
+
+  return null;
+}
