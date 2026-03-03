@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+import { sendWelcomeEmail } from '@/lib/email';
 
 const prisma = new PrismaClient();
 
@@ -11,15 +12,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email' }, { status: 400 });
     }
 
+    const normalizedEmail = email.toLowerCase().trim();
+
+    // Check if already exists (don't re-send welcome email)
+    const existing = await prisma.emailSubscriber.findUnique({
+      where: { email: normalizedEmail },
+    });
+
     const subscriber = await prisma.emailSubscriber.upsert({
-      where: { email: email.toLowerCase().trim() },
+      where: { email: normalizedEmail },
       create: {
-        email: email.toLowerCase().trim(),
+        email: normalizedEmail,
         name: name || null,
         source: source || 'popup',
       },
-      update: {}, // already exists, no-op
+      update: {},
     });
+
+    // Send welcome email only for new subscribers
+    if (!existing) {
+      sendWelcomeEmail(normalizedEmail, name).catch(err =>
+        console.error('Welcome email failed:', err)
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
