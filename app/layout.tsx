@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
+import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { PlanProvider } from '@/hooks/usePlan';
@@ -132,6 +133,7 @@ export default function RootLayout({
                 <div className={styles.mainContent}>
                   {children}
                 </div>
+                <Footer />
               </main>
             </div>
             <BottomNav />
