@@ -16,7 +16,7 @@ function VerifyContent() {
   useEffect(() => {
     if (!token) {
       setStatus('error');
-      setMessage('Link de verificação inválido.');
+      setMessage('Invalid verification link.');
       return;
     }
 
@@ -27,20 +27,13 @@ function VerifyContent() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ token }),
         });
-
         const data = await res.json();
-
-        if (!res.ok) {
-          setStatus('error');
-          setMessage(data.error || 'Erro ao verificar email.');
-          return;
-        }
-
+        if (!res.ok) { setStatus('error'); setMessage(data.error || 'Error verifying email.'); return; }
         setStatus('success');
         setMessage(data.message);
       } catch {
         setStatus('error');
-        setMessage('Erro ao verificar email. Tente novamente.');
+        setMessage('Error verifying email. Please try again.');
       }
     };
 
@@ -49,45 +42,35 @@ function VerifyContent() {
 
   if (status === 'loading') {
     return (
-      <div className={styles.loadingCard}>
-        <Loader2 size={48} className={styles.spinner} />
-        <h2>Verificando seu email...</h2>
-        <p>Aguarde um momento.</p>
+      <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+        <div className={styles.spinner} style={{ width: 40, height: 40, margin: '0 auto 1rem' }} />
+        <h2 style={{ color: 'var(--text-primary)' }}>Verifying your email...</h2>
+        <p style={{ color: 'var(--text-muted)' }}>Please wait.</p>
       </div>
     );
   }
 
   if (status === 'success') {
     return (
-      <div className={styles.successCard}>
-        <div className={styles.successIcon}>
-          <CheckCircle size={48} />
-        </div>
-        <h2>Email Verificado! 🎉</h2>
-        <p>{message}</p>
-        <Link href="/auth/login?verified=true" className={styles.submitButton}>
-          Fazer Login
-          <ArrowRight size={18} />
+      <div style={{ textAlign: 'center' }}>
+        <div style={{ color: '#4ade80', marginBottom: '1rem' }}><CheckCircle size={48} /></div>
+        <h2 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>Email Verified! 🎉</h2>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>{message}</p>
+        <Link href="/auth/login?verified=true" className={styles.submitBtn}>
+          Go to Login <ArrowRight size={18} />
         </Link>
       </div>
     );
   }
 
   return (
-    <div className={styles.errorCard}>
-      <div className={styles.errorIcon}>
-        <XCircle size={48} />
-      </div>
-      <h2>Ops! Algo deu errado</h2>
-      <p>{message}</p>
-      <div className={styles.errorActions}>
-        <Link href="/auth/register" className={styles.secondaryButton}>
-          Criar nova conta
-        </Link>
-        <Link href="/auth/login" className={styles.submitButton}>
-          Ir para Login
-          <ArrowRight size={18} />
-        </Link>
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ color: '#f87171', marginBottom: '1rem' }}><XCircle size={48} /></div>
+      <h2 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>Something went wrong</h2>
+      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>{message}</p>
+      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <Link href="/auth/register" className={styles.googleBtn}>Create new account</Link>
+        <Link href="/auth/login" className={styles.submitBtn}>Go to Login <ArrowRight size={18} /></Link>
       </div>
     </div>
   );
@@ -95,12 +78,12 @@ function VerifyContent() {
 
 export default function VerifyPage() {
   return (
-    <div className={styles.authContainer}>
-      <div className={styles.authCard}>
+    <div className={styles.container}>
+      <div className={styles.card}>
         <Suspense fallback={
-          <div className={styles.loadingCard}>
-            <Loader2 size={48} className={styles.spinner} />
-            <h2>Verificando...</h2>
+          <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+            <div className={styles.spinner} style={{ width: 40, height: 40, margin: '0 auto 1rem' }} />
+            <h2 style={{ color: 'var(--text-primary)' }}>Verifying...</h2>
           </div>
         }>
           <VerifyContent />

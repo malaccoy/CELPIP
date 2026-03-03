@@ -19,7 +19,7 @@
   transform: translateX(-50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at center, rgba(255, 59, 59, 0.08) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -237,7 +237,7 @@
   
   &:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 8px 24px rgba(255, 59, 59, 0.4);
   }
   
   &:disabled {
@@ -336,10 +336,10 @@
 
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+    box-shadow: 0 0 30px rgba(255, 59, 59, 0.5);
   }
 }
 

@@ -40,20 +40,20 @@ export default function ForgotPasswordPage() {
 
   if (success) {
     return (
-      <div className={styles.authContainer}>
-        <div className={styles.authCard}>
-          <div className={styles.successCard}>
-            <div className={styles.successIcon}>
+      <div className={styles.container}>
+        <div className={styles.card}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ color: '#4ade80', marginBottom: '1rem' }}>
               <CheckCircle size={48} />
             </div>
-            <h2>Email Sent! 📧</h2>
-            <p>
+            <h2 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>Email Sent! 📧</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '0.5rem', lineHeight: 1.6 }}>
               If the email <strong>{email}</strong> is registered, you will receive a link to reset your password.
             </p>
-            <p className={styles.smallText}>
+            <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
               Check your inbox and spam folder.
             </p>
-            <Link href="/auth/login" className={styles.submitButton}>
+            <Link href="/auth/login" className={styles.submitBtn}>
               Back to Login
               <ArrowRight size={18} />
             </Link>
@@ -64,46 +64,43 @@ export default function ForgotPasswordPage() {
   }
 
   return (
-    <div className={styles.authContainer}>
-      <div className={styles.authCard}>
+    <div className={styles.container}>
+      <div className={styles.card}>
         <Link href="/auth/login" className={styles.backLink}>
           <ArrowLeft size={16} />
           Back to login
         </Link>
 
-        <div className={styles.authHeader}>
+        <div className={styles.logo}>
           <h1>Reset Password</h1>
           <p>Enter your email to receive a recovery link</p>
         </div>
 
         {error && (
-          <div className={styles.errorMessage}>
-            <AlertCircle size={18} />
-            <span>{error}</span>
+          <div className={styles.error}>
+            <AlertCircle size={18} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '0.5rem' }} />
+            {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className={styles.authForm}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
-            <label htmlFor="email">Email</label>
-            <div className={styles.inputWrapper}>
-              <Mail size={18} />
-              <input
-                id="email"
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                disabled={loading}
-              />
-            </div>
+            <Mail size={18} className={styles.inputIcon} />
+            <input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              disabled={loading}
+            />
           </div>
 
-          <button type="submit" className={styles.submitButton} disabled={loading}>
+          <button type="submit" className={styles.submitBtn} disabled={loading}>
             {loading ? (
               <>
-                <Loader2 size={18} className={styles.spinner} />
+                <div className={styles.spinner} />
                 Sending...
               </>
             ) : (

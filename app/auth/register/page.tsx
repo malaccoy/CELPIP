@@ -1,14 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Lock, User, Loader2, AlertCircle, ArrowRight, CheckCircle } from 'lucide-react';
 import styles from '@/styles/Auth.module.scss';
 
 export default function RegisterPage() {
-  const router = useRouter();
-  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,7 +19,6 @@ export default function RegisterPage() {
     setLoading(true);
     setError('');
 
-    // Validation
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       setLoading(false);
@@ -43,12 +39,7 @@ export default function RegisterPage() {
       });
 
       const data = await res.json();
-
-      if (!res.ok) {
-        setError(data.error || 'Error creating account');
-        return;
-      }
-
+      if (!res.ok) { setError(data.error || 'Error creating account'); return; }
       setSuccess(true);
     } catch {
       setError('Error creating account. Please try again.');
@@ -59,20 +50,20 @@ export default function RegisterPage() {
 
   if (success) {
     return (
-      <div className={styles.authContainer}>
-        <div className={styles.authCard}>
-          <div className={styles.successCard}>
-            <div className={styles.successIcon}>
+      <div className={styles.container}>
+        <div className={styles.card}>
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ color: '#4ade80', marginBottom: '1rem' }}>
               <CheckCircle size={48} />
             </div>
-            <h2>Account created successfully! 🎉</h2>
-            <p>
+            <h2 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>Account created! 🎉</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '0.5rem', lineHeight: 1.6 }}>
               We sent a verification email to <strong>{email}</strong>.
             </p>
-            <p>
+            <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
               Click the link in the email to activate your account.
             </p>
-            <Link href="/auth/login" className={styles.submitButton}>
+            <Link href="/auth/login" className={styles.submitBtn}>
               Go to Login
               <ArrowRight size={18} />
             </Link>
@@ -83,105 +74,75 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className={styles.authContainer}>
-      <div className={styles.authCard}>
-        <div className={styles.authHeader}>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <div className={styles.logo}>
           <h1>Create Account</h1>
           <p>Sign up to save your progress</p>
         </div>
 
-        {error && (
-          <div className={styles.errorMessage}>
-            <AlertCircle size={18} />
-            <span>{error}</span>
-          </div>
-        )}
+        {error && <div className={styles.error}>{error}</div>}
 
-        <form onSubmit={handleSubmit} className={styles.authForm}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
-            <label htmlFor="name">Name</label>
-            <div className={styles.inputWrapper}>
-              <User size={18} />
-              <input
-                id="name"
-                type="text"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                disabled={loading}
-              />
-            </div>
+            <User size={18} className={styles.inputIcon} />
+            <input
+              type="text"
+              placeholder="Your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              disabled={loading}
+            />
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="email">Email *</label>
-            <div className={styles.inputWrapper}>
-              <Mail size={18} />
-              <input
-                id="email"
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                disabled={loading}
-              />
-            </div>
+            <Mail size={18} className={styles.inputIcon} />
+            <input
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              disabled={loading}
+            />
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="password">Password *</label>
-            <div className={styles.inputWrapper}>
-              <Lock size={18} />
-              <input
-                id="password"
-                type="password"
-                placeholder="Minimum 6 characters"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                minLength={6}
-                disabled={loading}
-              />
-            </div>
+            <Lock size={18} className={styles.inputIcon} />
+            <input
+              type="password"
+              placeholder="Password (min 6 characters)"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              minLength={6}
+              disabled={loading}
+            />
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor="confirmPassword">Confirm Password *</label>
-            <div className={styles.inputWrapper}>
-              <Lock size={18} />
-              <input
-                id="confirmPassword"
-                type="password"
-                placeholder="Enter password again"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                required
-                disabled={loading}
-              />
-            </div>
+            <Lock size={18} className={styles.inputIcon} />
+            <input
+              type="password"
+              placeholder="Confirm password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              disabled={loading}
+            />
           </div>
 
-          <button type="submit" className={styles.submitButton} disabled={loading}>
+          <button type="submit" className={styles.submitBtn} disabled={loading}>
             {loading ? (
-              <>
-                <Loader2 size={18} className={styles.spinner} />
-                Creating account...
-              </>
+              <><div className={styles.spinner} /> Creating account...</>
             ) : (
-              <>
-                Create Account
-                <ArrowRight size={18} />
-              </>
+              <>Create Account <ArrowRight size={18} /></>
             )}
           </button>
         </form>
 
-        <div className={styles.authFooter}>
-          <p>
-            Already have an account?{' '}
-            <Link href="/auth/login">Sign in</Link>
-          </p>
+        <div className={styles.footer}>
+          <p>Already have an account? <Link href="/auth/login">Sign in</Link></p>
         </div>
       </div>
     </div>
