@@ -9,7 +9,8 @@ export async function sendWelcomeEmail(to: string, name?: string) {
     const { data, error } = await resend.emails.send({
       from: 'CELPIP AI Coach <hello@celpipaicoach.com>',
       to,
-      subject: '🍁 Welcome! Your Free CELPIP Study Guide',
+      replyTo: 'hello@celpipaicoach.com',
+      subject: `Welcome to CELPIP AI Coach, ${firstName}!`,
       html: `
 <!DOCTYPE html>
 <html>
