@@ -221,10 +221,10 @@ export default function HomePage() {
 
         <div className={styles.proCtaWrapper}>
           <Link href="/pricing" className={styles.ctaPrimary}>
-            <span>Try Pro — CA$24.99/month</span>
+            <span>Start 7-Day Free Trial</span>
             <ArrowRight size={20} />
           </Link>
-          <p className={styles.proCtaSub}>Cancel anytime. Also available: CA$99/year (save 67%)</p>
+          <p className={styles.proCtaSub}>No charge for 7 days. Then CA$24.99/month or CA$99/year. Cancel anytime.</p>
         </div>
       </section>
 

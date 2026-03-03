@@ -179,7 +179,7 @@ export default function PricingPage() {
 
       <div className={styles.guarantee}>
         <Shield size={18} />
-        <span>Secure payment via Stripe • Cancel anytime • Instant access</span>
+        <span>7-day free trial • Cancel anytime • Secure payment via Stripe</span>
       </div>
     </div>
   );

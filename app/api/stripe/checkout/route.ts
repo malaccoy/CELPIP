@@ -63,6 +63,7 @@ export async function POST(request: NextRequest) {
       success_url: `${origin}/dashboard?upgraded=true`,
       cancel_url: `${origin}/pricing`,
       subscription_data: {
+        trial_period_days: 7,
         metadata: { supabaseUserId: user.id }
       },
       allow_promotion_codes: true,
