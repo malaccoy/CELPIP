@@ -16,29 +16,42 @@ export default function ResetPasswordPage() {
   const supabase = createClient();
 
   useEffect(() => {
-    // Supabase sends the user here with a session already set via the recovery link
-    // We just need to check if there's a session
-    const checkSession = async () => {
+    // Supabase recovery: tokens come in URL hash or as code param
+    const handleRecovery = async () => {
+      // Listen for PASSWORD_RECOVERY event
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+        if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && session)) {
+          setReady(true);
+        }
+      });
+
+      // Check if already has a session (e.g. from server-side token exchange)
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {
         setReady(true);
-      } else {
-        // Listen for auth state change (recovery token exchange)
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
-          if (event === 'PASSWORD_RECOVERY') {
-            setReady(true);
-          }
-        });
-        // Give it a moment, then show error if no session
-        setTimeout(async () => {
-          const { data: { session: s } } = await supabase.auth.getSession();
-          if (s) setReady(true);
-          else setError('Invalid or expired recovery link.');
-        }, 3000);
         return () => subscription.unsubscribe();
       }
+
+      // Check URL for hash params (Supabase PKCE flow)
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token')) {
+        // Supabase client auto-picks up hash tokens
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        const { data: { session: s } } = await supabase.auth.getSession();
+        if (s) { setReady(true); return () => subscription.unsubscribe(); }
+      }
+
+      // Wait longer for token exchange
+      setTimeout(async () => {
+        const { data: { session: s } } = await supabase.auth.getSession();
+        if (s) setReady(true);
+        else setError('Invalid or expired recovery link. Please request a new one.');
+      }, 8000);
+
+      return () => subscription.unsubscribe();
     };
-    checkSession();
+
+    handleRecovery();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
