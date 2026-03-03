@@ -10,8 +10,23 @@ interface Crumb {
 }
 
 export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://celpipaicoach.com' },
+      ...items.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 2,
+        name: item.label,
+        ...(item.href ? { item: `https://celpipaicoach.com${item.href}` } : {}),
+      })),
+    ],
+  };
+
   return (
     <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <ol>
         <li>
           <Link href="/"><Home size={14} /></Link>

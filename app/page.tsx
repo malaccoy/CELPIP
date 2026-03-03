@@ -318,6 +318,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Free Tools ─── */}
+      <section className={styles.skillsSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Free CELPIP Tools</h2>
+          <p>No signup required. Use these tools to prepare smarter.</p>
+        </div>
+        <div className={styles.heroCtas} style={{ marginTop: 0 }}>
+          <Link href="/tools/score-calculator" className={styles.ctaSecondary}>
+            <span>🧮 CRS Score Calculator</span>
+          </Link>
+          <Link href="/tools/practice-timer" className={styles.ctaSecondary}>
+            <span>⏱️ Practice Timer</span>
+          </Link>
+        </div>
+      </section>
+
       {/* ─── Final CTA ─── */}
       <section className={styles.finalCta}>
         <div className={styles.finalCtaContent}>
