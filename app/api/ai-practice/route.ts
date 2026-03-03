@@ -8,33 +8,152 @@ import { join } from 'path';
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// ─── Edge TTS helper (free, replaces OpenAI TTS) ────────────
-async function generateTTS(text: string): Promise<Buffer | null> {
-  const tmpPath = join(tmpdir(), `celpip-tts-${Date.now()}.mp3`);
-  // Truncate to 4000 chars max
-  const input = text.substring(0, 4000);
-  
+// ─── Edge TTS helpers (free, replaces OpenAI TTS) ────────────
+
+const VOICE_MAP: Record<string, string> = {
+  'man': 'en-US-GuyNeural',
+  'woman': 'en-US-JennyNeural',
+  'host': 'en-US-AriaNeural',
+  'narrator': 'en-US-AriaNeural',
+  'speaker 1': 'en-US-GuyNeural',
+  'speaker 2': 'en-US-JennyNeural',
+  'speaker 3': 'en-CA-LiamNeural',
+  'interviewer': 'en-US-AriaNeural',
+  'interviewee': 'en-US-GuyNeural',
+  'caller': 'en-US-JennyNeural',
+  'agent': 'en-US-GuyNeural',
+  'student': 'en-US-JennyNeural',
+  'teacher': 'en-US-GuyNeural',
+  'manager': 'en-US-GuyNeural',
+  'employee': 'en-US-JennyNeural',
+  'colleague': 'en-CA-LiamNeural',
+};
+
+const DEFAULT_VOICES = ['en-US-GuyNeural', 'en-US-JennyNeural', 'en-CA-LiamNeural'];
+
+function generateSingleTTS(text: string, voice: string, outPath: string): Promise<boolean> {
   return new Promise((resolve) => {
     execFile('edge-tts', [
-      '--voice', 'en-US-GuyNeural',
+      '--voice', voice,
       '--rate=-5%',
-      '--text', input,
-      '--write-media', tmpPath,
-    ], { timeout: 30000 }, async (error) => {
-      if (error) {
-        console.error('Edge TTS error:', error);
-        resolve(null);
-        return;
-      }
-      try {
-        const buf = await fs.readFile(tmpPath);
-        await fs.unlink(tmpPath).catch(() => {});
-        resolve(buf);
-      } catch {
-        resolve(null);
-      }
+      '--text', text.substring(0, 4000),
+      '--write-media', outPath,
+    ], { timeout: 30000 }, (error) => {
+      if (error) { console.error('Edge TTS error:', error); resolve(false); return; }
+      resolve(true);
     });
   });
+}
+
+async function generateTTS(text: string): Promise<Buffer | null> {
+  const tmpBase = join(tmpdir(), `celpip-tts-${Date.now()}`);
+
+  // Check if text has speaker labels (e.g., "Man:", "Woman:", "Host:")
+  const speakerRegex = /^([A-Za-z\s]+\d?):\s*/gm;
+  const speakers = new Set<string>();
+  let match;
+  while ((match = speakerRegex.exec(text)) !== null) {
+    speakers.add(match[1].trim().toLowerCase());
+  }
+
+  // If multiple speakers detected, generate multi-voice audio
+  if (speakers.size >= 2) {
+    try {
+      // Split text into segments by speaker
+      const segments: { speaker: string; text: string }[] = [];
+      const lines = text.split('\n');
+      let currentSpeaker = '';
+      let currentText = '';
+      const lineRegex = /^([A-Za-z\s]+\d?):\s*(.*)$/;
+
+      for (const line of lines) {
+        const lineMatch = line.match(lineRegex);
+        if (lineMatch) {
+          if (currentText.trim()) {
+            segments.push({ speaker: currentSpeaker, text: currentText.trim() });
+          }
+          currentSpeaker = lineMatch[1].trim().toLowerCase();
+          currentText = lineMatch[2];
+        } else {
+          // Narration or continuation
+          if (line.trim()) currentText += ' ' + line.trim();
+        }
+      }
+      if (currentText.trim()) {
+        segments.push({ speaker: currentSpeaker, text: currentText.trim() });
+      }
+
+      if (segments.length < 2) {
+        // Fallback to single voice
+        const outPath = tmpBase + '.mp3';
+        const ok = await generateSingleTTS(text, 'en-US-GuyNeural', outPath);
+        if (!ok) return null;
+        const buf = await fs.readFile(outPath);
+        await fs.unlink(outPath).catch(() => {});
+        return buf;
+      }
+
+      // Assign voices to speakers
+      const speakerVoices: Record<string, string> = {};
+      let voiceIdx = 0;
+      for (const sp of speakers) {
+        speakerVoices[sp] = VOICE_MAP[sp] || DEFAULT_VOICES[voiceIdx % DEFAULT_VOICES.length];
+        voiceIdx++;
+      }
+
+      // Generate each segment
+      const segmentPaths: string[] = [];
+      for (let i = 0; i < segments.length; i++) {
+        const seg = segments[i];
+        const segPath = `${tmpBase}-seg${i}.mp3`;
+        const voice = speakerVoices[seg.speaker] || DEFAULT_VOICES[0];
+        const ok = await generateSingleTTS(seg.text, voice, segPath);
+        if (ok) segmentPaths.push(segPath);
+      }
+
+      if (segmentPaths.length === 0) return null;
+
+      // Concatenate with ffmpeg
+      const outPath = tmpBase + '-final.mp3';
+      const listPath = tmpBase + '-list.txt';
+      const listContent = segmentPaths.map(p => `file '${p}'`).join('\n');
+      await fs.writeFile(listPath, listContent);
+
+      const concatOk = await new Promise<boolean>((resolve) => {
+        execFile('ffmpeg', [
+          '-f', 'concat', '-safe', '0', '-i', listPath,
+          '-c', 'copy', '-y', outPath
+        ], { timeout: 30000 }, (err) => {
+          resolve(!err);
+        });
+      });
+
+      // Cleanup segments
+      for (const p of segmentPaths) { await fs.unlink(p).catch(() => {}); }
+      await fs.unlink(listPath).catch(() => {});
+
+      if (concatOk) {
+        const buf = await fs.readFile(outPath);
+        await fs.unlink(outPath).catch(() => {});
+        return buf;
+      }
+
+      // If concat fails, return first segment
+      return null;
+    } catch (e) {
+      console.error('Multi-voice TTS error:', e);
+    }
+  }
+
+  // Single voice fallback (monologues)
+  const outPath = tmpBase + '.mp3';
+  const ok = await generateSingleTTS(text, 'en-US-GuyNeural', outPath);
+  if (!ok) return null;
+  try {
+    const buf = await fs.readFile(outPath);
+    await fs.unlink(outPath).catch(() => {});
+    return buf;
+  } catch { return null; }
 }
 
 // ─── Types ───────────────────────────────────────────────────
