@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Mail, Loader2, AlertCircle, ArrowRight, CheckCircle, ArrowLeft } from 'lucide-react';
+import { Mail, ArrowRight, CheckCircle, ArrowLeft } from 'lucide-react';
+import { createClient } from '@/lib/supabase/client';
 import styles from '@/styles/Auth.module.scss';
 
 export default function ForgotPasswordPage() {
@@ -10,6 +11,7 @@ export default function ForgotPasswordPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const supabase = createClient();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,16 +19,12 @@ export default function ForgotPasswordPage() {
     setError('');
 
     try {
-      const res = await fetch('/api/auth/forgot-password', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+      const { error: resetError } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: `${window.location.origin}/auth/reset-password`,
       });
 
-      const data = await res.json();
-
-      if (!res.ok) {
-        setError(data.error || 'Error sending email');
+      if (resetError) {
+        setError(resetError.message);
         return;
       }
 
@@ -76,12 +74,7 @@ export default function ForgotPasswordPage() {
           <p>Enter your email to receive a recovery link</p>
         </div>
 
-        {error && (
-          <div className={styles.error}>
-            <AlertCircle size={18} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '0.5rem' }} />
-            {error}
-          </div>
-        )}
+        {error && <div className={styles.error}>{error}</div>}
 
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
@@ -99,15 +92,9 @@ export default function ForgotPasswordPage() {
 
           <button type="submit" className={styles.submitBtn} disabled={loading}>
             {loading ? (
-              <>
-                <div className={styles.spinner} />
-                Sending...
-              </>
+              <><div className={styles.spinner} /> Sending...</>
             ) : (
-              <>
-                Send Recovery Link
-                <ArrowRight size={18} />
-              </>
+              <>Send Recovery Link <ArrowRight size={18} /></>
             )}
           </button>
         </form>
