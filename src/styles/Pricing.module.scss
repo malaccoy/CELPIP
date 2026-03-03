@@ -110,8 +110,8 @@
 
 .proPlan {
   border-color: rgba(139, 92, 246, 0.4);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(30, 41, 59, 0.5) 100%);
-  box-shadow: 0 0 40px rgba(139, 92, 246, 0.08);
+  background: linear-gradient(135deg, rgba(255, 59, 59, 0.06) 0%, rgba(30, 41, 59, 0.5) 100%);
+  box-shadow: 0 0 40px rgba(255, 59, 59, 0.06);
 }
 
 .popularBadge {
@@ -266,12 +266,26 @@
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 59, 59, 0.3);
+  position: relative;
+  overflow: hidden;
+  animation: pricingPulse 2.5s ease-in-out infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.15) 50%, transparent 100%);
+    animation: pricingShimmer 3s ease-in-out infinite;
+  }
 
   &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 59, 59, 0.5);
   }
 
   &:disabled {
@@ -309,4 +323,15 @@
   .price {
     font-size: 2rem;
   }
+}
+
+@keyframes pricingShimmer {
+  0% { left: -100%; }
+  60% { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes pricingPulse {
+  0%, 100% { box-shadow: 0 4px 15px rgba(255, 59, 59, 0.3); }
+  50% { box-shadow: 0 6px 30px rgba(255, 59, 59, 0.5), 0 0 50px rgba(255, 59, 59, 0.1); }
 }
