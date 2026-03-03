@@ -59,8 +59,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(14, 165, 233, 0.06));
-  border: 1px solid rgba(139, 92, 246, 0.15);
+  background: linear-gradient(135deg, rgba(255, 59, 59, 0.06), rgba(14, 165, 233, 0.06));
+  border: 1px solid rgba(255, 59, 59, 0.1);
   border-radius: ds.$radius-xl;
 }
 
@@ -275,7 +275,7 @@
   color: white;
   transition: all ds.$transition-smooth;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2),
-              0 0 20px var(--skill-glow, rgba(139, 92, 246, 0.2));
+              0 0 20px var(--skill-glow, rgba(255, 59, 59, 0.15));
   animation: iconFloat 3s ease-in-out infinite;
   
   svg {
@@ -295,7 +295,7 @@
 .skillCard:hover .skillIconBox {
   transform: scale(1.08) rotate(-3deg);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
-              0 0 30px var(--skill-glow, rgba(139, 92, 246, 0.4));
+              0 0 30px var(--skill-glow, rgba(255, 59, 59, 0.3));
   
   svg {
     transform: scale(1.1);
@@ -401,15 +401,15 @@
   gap: 0.875rem;
   padding: 1rem 1.25rem;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08));
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: linear-gradient(135deg, rgba(255, 59, 59, 0.06), rgba(255, 100, 100, 0.06));
+  border: 1px solid rgba(255, 59, 59, 0.12);
   cursor: pointer;
   transition: all 0.25s ease;
   margin-bottom: 1.5rem;
 
   &:hover {
-    border-color: rgba(99, 102, 241, 0.35);
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(168, 85, 247, 0.12));
+    border-color: rgba(255, 59, 59, 0.25);
+    background: linear-gradient(135deg, rgba(255, 59, 59, 0.08), rgba(255, 100, 100, 0.08));
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(99, 102, 241, 0.15);
   }
@@ -422,7 +422,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, #cc0000, #ff3b3b);
   color: white;
   flex-shrink: 0;
 }
