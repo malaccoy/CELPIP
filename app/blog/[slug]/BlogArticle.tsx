@@ -15,8 +15,23 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function BlogArticle({ post }: { post: BlogPost }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: { '@type': 'Organization', name: 'CELPIP AI Coach' },
+    publisher: { '@type': 'Organization', name: 'CELPIP AI Coach', url: 'https://celpipaicoach.com' },
+    mainEntityOfPage: `https://celpipaicoach.com/blog/${post.slug}`,
+  };
+
   return (
     <div className={styles.container}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Link href="/blog" className={styles.backLink}>
         <ArrowLeft size={16} />
         Back to Blog
@@ -49,9 +64,9 @@ export default function BlogArticle({ post }: { post: BlogPost }) {
             <BookOpen size={20} />
             <div>
               <h3>Ready to practice?</h3>
-              <p>Start with free exercises or upgrade to Pro for AI-powered coaching.</p>
+              <p>200+ free exercises across all sections. Try Pro free for 3 days — AI feedback, mock exams, and more.</p>
             </div>
-            <Link href="/dashboard" className={styles.ctaBtn}>Start Practicing</Link>
+            <Link href="/pricing" className={styles.ctaBtn}>Start 3-Day Free Trial</Link>
           </div>
         </footer>
       </article>
