@@ -9,6 +9,7 @@ import {
   Brain, Clock, BarChart3, Shield, Star, Users,
   ChevronDown, Globe, Award
 } from 'lucide-react';
+import EmailCapturePopup from '@/components/EmailCapturePopup';
 import styles from '@/styles/Home.module.scss';
 
 export default function HomePage() {
@@ -100,6 +101,7 @@ export default function HomePage() {
 
   return (
     <main className={styles.home}>
+      <EmailCapturePopup />
       {/* ─── Hero Section ─── */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>

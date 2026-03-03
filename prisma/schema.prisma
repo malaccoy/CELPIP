@@ -185,3 +185,13 @@ model UserOnboarding {
 
   @@map("user_onboarding")
 }
+
+model EmailSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  source    String   @default("popup") // popup, footer, blog
+  createdAt DateTime @default(now())
+
+  @@map("email_subscribers")
+}
