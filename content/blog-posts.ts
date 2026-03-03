@@ -457,6 +457,469 @@ export const blogPosts: BlogPost[] = [
 <li><a href="/ai-coach">AI Practice Generator</a> — Unlimited AI-generated reading exercises (Pro)</li>
 </ul>
 `
+  },
+
+  // ─── New SEO Blog Posts (Batch 2) ─── 
+
+  {
+    slug: 'celpip-score-chart-clb-levels-2026',
+    title: 'CELPIP Score Chart & CLB Levels Guide (2026)',
+    date: '2026-03-02',
+    description: 'Complete CELPIP score chart mapping to CLB levels. Understand what score you need for Express Entry, PNP, and citizenship.',
+    readTime: '6 min read',
+    category: 'general',
+    keywords: ['CELPIP score chart', 'CLB levels', 'CELPIP CLB conversion', 'Express Entry language score', 'CELPIP scoring'],
+    content: `
+<p>Understanding how CELPIP scores map to CLB (Canadian Language Benchmark) levels is crucial for your immigration or citizenship application. This guide breaks down everything you need to know about CELPIP scoring in 2026.</p>
+
+<h2>CELPIP Score to CLB Conversion Chart</h2>
+
+<p>CELPIP scores range from 1 to 12 and map directly to CLB levels:</p>
+
+<ul>
+<li><strong>CELPIP 10-12</strong> → CLB 10-12 (Advanced proficiency)</li>
+<li><strong>CELPIP 9</strong> → CLB 9 (Above adequate proficiency)</li>
+<li><strong>CELPIP 8</strong> → CLB 8 (Adequate proficiency)</li>
+<li><strong>CELPIP 7</strong> → CLB 7 (Upper intermediate)</li>
+<li><strong>CELPIP 4-6</strong> → CLB 4-6 (Intermediate)</li>
+<li><strong>CELPIP M / 1-3</strong> → CLB M-3 (Basic)</li>
+</ul>
+
+<p>The good news: unlike IELTS where you need to convert band scores, <strong>CELPIP scores equal CLB levels</strong>. A CELPIP 9 is a CLB 9. Simple.</p>
+
+<h2>What CLB Do You Need?</h2>
+
+<h3>Express Entry — Federal Skilled Worker</h3>
+<ul>
+<li><strong>Minimum:</strong> CLB 7 in all 4 skills</li>
+<li><strong>Competitive CRS score:</strong> CLB 9+ in all skills (adds significant CRS points)</li>
+<li><strong>Maximum CRS points for language:</strong> CLB 10+ in all 4 skills = 136 points</li>
+</ul>
+
+<h3>Express Entry — Canadian Experience Class</h3>
+<ul>
+<li><strong>NOC TEER 0 or 1:</strong> CLB 7 in all skills</li>
+<li><strong>NOC TEER 2 or 3:</strong> CLB 5 in all skills</li>
+</ul>
+
+<h3>Canadian Citizenship</h3>
+<ul>
+<li><strong>Minimum:</strong> CLB 4 in all skills (Speaking & Listening only)</li>
+<li>Writing and Reading are not required for citizenship</li>
+</ul>
+
+<h3>Provincial Nominee Programs (PNP)</h3>
+<ul>
+<li>Requirements vary by province and stream</li>
+<li>BC PNP Tech: typically CLB 7+</li>
+<li>Ontario HCP: CLB 7+ in each skill</li>
+<li>Alberta Advantage: CLB 5+</li>
+</ul>
+
+<h2>CRS Points for Language (Express Entry)</h2>
+
+<p>Language is the single biggest factor you can control in your CRS score:</p>
+
+<ul>
+<li><strong>CLB 7 in all skills:</strong> ~68 CRS points</li>
+<li><strong>CLB 8 in all skills:</strong> ~88 CRS points</li>
+<li><strong>CLB 9 in all skills:</strong> ~112 CRS points</li>
+<li><strong>CLB 10+ in all skills:</strong> ~136 CRS points</li>
+</ul>
+
+<p>Going from CLB 7 to CLB 9 in all skills adds approximately <strong>44 CRS points</strong>. That can be the difference between getting an ITA or waiting months.</p>
+
+<h2>How CELPIP Scores Each Section</h2>
+
+<h3>Listening & Reading (Machine-Scored)</h3>
+<p>These sections have correct/incorrect answers. Your raw score (correct answers out of 38) is converted to a CELPIP level 1-12 using a conversion table that adjusts for test difficulty.</p>
+
+<h3>Writing & Speaking (Rater-Scored)</h3>
+<p>Trained raters evaluate your performance on multiple criteria:</p>
+<ul>
+<li><strong>Writing:</strong> Content, coherence, vocabulary, grammar</li>
+<li><strong>Speaking:</strong> Content, vocabulary, listenability, task fulfillment</li>
+</ul>
+<p>Each response is scored by at least two raters, and scores are averaged.</p>
+
+<h2>Tips to Maximize Your Score</h2>
+
+<ol>
+<li><strong>Focus on your weakest skill</strong> — Raising a CLB 7 to CLB 9 gains more CRS points than raising a 9 to 10</li>
+<li><strong>Practice under test conditions</strong> — Use timers, one-play audio for listening</li>
+<li><strong>Use AI feedback</strong> — Get instant scoring on writing and speaking practice</li>
+<li><strong>Take a mock exam</strong> — Know your estimated score before the real test</li>
+</ol>
+
+<h2>Practice Resources</h2>
+<ul>
+<li><a href="/mock-exam">AI Mock Exam</a> — Full simulated test with CLB estimate</li>
+<li><a href="/ai-coach">AI Practice Generator</a> — Infinite exercises at your level</li>
+<li><a href="/pricing">Start 3-Day Free Trial</a> — Try all Pro features free</li>
+</ul>
+`
+  },
+
+  {
+    slug: 'how-to-prepare-for-celpip-in-2-weeks',
+    title: 'How to Prepare for CELPIP in 2 Weeks (Study Plan)',
+    date: '2026-03-01',
+    description: 'A focused 14-day CELPIP study plan that covers all 4 modules. Realistic schedule for working professionals.',
+    readTime: '8 min read',
+    category: 'tips',
+    keywords: ['CELPIP study plan', 'CELPIP preparation', 'CELPIP 2 weeks', 'how to prepare CELPIP'],
+    content: `
+<p>Your CELPIP test is in 2 weeks. Don't panic. With the right strategy, 14 days is enough to prepare effectively — especially if you already have intermediate English. Here's your day-by-day plan.</p>
+
+<h2>Before You Start</h2>
+<ul>
+<li>Take a <a href="/mock-exam">mock exam</a> to know your starting level</li>
+<li>Identify your 2 weakest sections — those get the most attention</li>
+<li>Set aside 1.5-2 hours per day (morning brain is best)</li>
+</ul>
+
+<h2>Week 1: Learn the Format & Build Skills</h2>
+
+<h3>Day 1-2: Listening</h3>
+<ul>
+<li>Read the <a href="/listening/technique">Listening Technique Guide</a> (all 6 parts explained)</li>
+<li>Practice 4 passages — one from each main part</li>
+<li>Key skill: Learn to take notes while listening</li>
+<li>Critical: Audio plays ONCE. Practice not rewinding.</li>
+</ul>
+
+<h3>Day 3-4: Reading</h3>
+<ul>
+<li>Read the <a href="/reading/technique">Reading Technique Guide</a> + Truth Trio method</li>
+<li>Practice 4 passages with timer (12-13 min per passage)</li>
+<li>Key skill: Skim first, then scan for answers</li>
+<li>Don't get stuck on hard questions — skip and return</li>
+</ul>
+
+<h3>Day 5-6: Writing</h3>
+<ul>
+<li>Read the <a href="/writing/mastery">Writing Mastery Guide</a></li>
+<li>Practice 2 Task 1 (email) and 2 Task 2 (survey response)</li>
+<li>Use <a href="/writing/ai-tutor">AI Writing Tutor</a> for instant feedback on grammar & structure</li>
+<li>Key skill: Organize with clear paragraphs, use linking words</li>
+</ul>
+
+<h3>Day 7: Speaking</h3>
+<ul>
+<li>Read the <a href="/speaking/technique">Speaking Technique Guide</a> — learn CSF method</li>
+<li>Record yourself on 4 different tasks</li>
+<li>Listen back. Are you filling the time? Staying on topic?</li>
+<li>Key skill: Don't leave silence. Keep talking even if imperfect.</li>
+</ul>
+
+<h2>Week 2: Practice & Polish</h2>
+
+<h3>Day 8-9: Weak Sections Deep Dive</h3>
+<ul>
+<li>Spend both days on your 2 weakest modules</li>
+<li>Use the <a href="/ai-coach">AI Practice Generator</a> for targeted exercises</li>
+<li>Review mistakes carefully — understand WHY you got them wrong</li>
+</ul>
+
+<h3>Day 10-11: Mixed Practice</h3>
+<ul>
+<li>Practice one passage/exercise from each section per day</li>
+<li>Always use timers to simulate real test pressure</li>
+<li>Focus on stamina — the real test is 3+ hours</li>
+</ul>
+
+<h3>Day 12: Full Mock Exam</h3>
+<ul>
+<li>Take the <a href="/mock-exam">AI Mock Exam</a> under real conditions</li>
+<li>No breaks between sections (or minimal)</li>
+<li>Check your <a href="/weakness-report">Weakness Report</a> after</li>
+</ul>
+
+<h3>Day 13: Review & Patch</h3>
+<ul>
+<li>Review your mock exam results</li>
+<li>Re-do the question types you struggled with</li>
+<li>Review technique guides for your weakest areas</li>
+<li>Practice 2-3 speaking tasks for confidence</li>
+</ul>
+
+<h3>Day 14: Light Review & Rest</h3>
+<ul>
+<li>Light practice only (30 min max)</li>
+<li>Review your notes and key strategies</li>
+<li>Get good sleep — rest matters more than cramming</li>
+<li>Prepare logistics: ID, test location, arrive early</li>
+</ul>
+
+<h2>Test Day Tips</h2>
+<ol>
+<li>Eat a good breakfast — the test is 3 hours</li>
+<li>Arrive 30 minutes early for check-in</li>
+<li>During listening: don't panic if you miss one answer. Move on.</li>
+<li>During writing: spend 2 minutes planning before you write</li>
+<li>During speaking: speak clearly, don't rush, fill the time</li>
+<li>During reading: watch the clock. Skip hard questions.</li>
+</ol>
+
+<h2>Resources</h2>
+<ul>
+<li><a href="/pricing">Start 3-Day Free Trial</a> — Access all AI features for your final prep push</li>
+</ul>
+`
+  },
+
+  {
+    slug: 'celpip-test-format-what-to-expect',
+    title: 'CELPIP Test Format: What to Expect on Test Day (2026)',
+    date: '2026-02-28',
+    description: 'Complete breakdown of the CELPIP test format — all sections, timing, question types, and what to expect at the test center.',
+    readTime: '7 min read',
+    category: 'general',
+    keywords: ['CELPIP test format', 'CELPIP what to expect', 'CELPIP test day', 'CELPIP sections'],
+    content: `
+<p>Walking into your CELPIP test without knowing the format is like driving without GPS. This guide covers every section, timing detail, and what happens at the test center so there are zero surprises.</p>
+
+<h2>Test Overview</h2>
+<ul>
+<li><strong>Duration:</strong> Approximately 3 hours</li>
+<li><strong>Format:</strong> Computer-based (no paper)</li>
+<li><strong>Sections:</strong> Listening, Reading, Writing, Speaking</li>
+<li><strong>Scoring:</strong> 1-12 per section (= CLB levels)</li>
+<li><strong>Results:</strong> Available online within 4-5 business days</li>
+</ul>
+
+<h2>Section 1: Listening (47-55 minutes)</h2>
+<p>You'll wear headphones and listen to audio clips. <strong>Audio plays only once</strong> — you cannot replay it.</p>
+
+<h3>6 Parts:</h3>
+<ul>
+<li><strong>Part 1:</strong> Listening to Problem Solving — A conversation where people discuss a problem and solutions</li>
+<li><strong>Part 2:</strong> Listening to a Daily Life Conversation — Casual everyday dialogue</li>
+<li><strong>Part 3:</strong> Listening for Information — Announcements, instructions, or directions</li>
+<li><strong>Part 4:</strong> Listening to a News Item — News report or broadcast</li>
+<li><strong>Part 5:</strong> Listening to a Discussion — Meeting or group discussion with 3+ speakers</li>
+<li><strong>Part 6:</strong> Listening to Viewpoints — Two speakers debating different sides of an issue</li>
+</ul>
+<p>Total: 38 questions, all multiple choice.</p>
+
+<h2>Section 2: Reading (55-60 minutes)</h2>
+<p>You'll read passages on screen and answer questions. No audio involved.</p>
+
+<h3>4 Parts:</h3>
+<ul>
+<li><strong>Part 1:</strong> Reading Correspondence — Emails or letters</li>
+<li><strong>Part 2:</strong> Reading to Apply a Diagram — Charts, schedules, or visual info</li>
+<li><strong>Part 3:</strong> Reading for Information — Longer passages (articles, reports)</li>
+<li><strong>Part 4:</strong> Reading for Viewpoints — Opinion pieces with multiple perspectives</li>
+</ul>
+<p>Total: 38 questions, all multiple choice.</p>
+
+<h2>Section 3: Writing (53-60 minutes)</h2>
+<p>You'll type responses on the computer. Spell-check is NOT available.</p>
+
+<h3>2 Tasks:</h3>
+<ul>
+<li><strong>Task 1 (27 min):</strong> Writing an Email — Respond to a scenario (formal, semi-formal, or informal). ~150-200 words.</li>
+<li><strong>Task 2 (26 min):</strong> Responding to a Survey — Express and support your opinion on a topic. ~150-200 words.</li>
+</ul>
+<p>Scored by trained raters on content, coherence, vocabulary, and grammar.</p>
+
+<h2>Section 4: Speaking (15-20 minutes)</h2>
+<p>You'll speak into a microphone. No human interviewer — you respond to prompts on screen.</p>
+
+<h3>8 Tasks:</h3>
+<ul>
+<li><strong>Task 1:</strong> Giving Advice (90 sec)</li>
+<li><strong>Task 2:</strong> Talking About a Personal Experience (60 sec)</li>
+<li><strong>Task 3:</strong> Describing a Scene (60 sec)</li>
+<li><strong>Task 4:</strong> Making Predictions (60 sec)</li>
+<li><strong>Task 5:</strong> Comparing and Persuading (90 sec)</li>
+<li><strong>Task 6:</strong> Dealing with a Difficult Situation (60 sec)</li>
+<li><strong>Task 7:</strong> Expressing Opinions (90 sec)</li>
+<li><strong>Task 8:</strong> Describing an Unusual Situation (60 sec)</li>
+</ul>
+<p>Scored by raters on content, vocabulary, listenability, and task fulfillment.</p>
+
+<h2>At the Test Center</h2>
+<ol>
+<li>Arrive 30+ minutes before your scheduled time</li>
+<li>Bring valid government-issued photo ID (same name as registration)</li>
+<li>No personal items in the test room (locker provided)</li>
+<li>You'll be photographed and seated at a computer with headphones</li>
+<li>Short unscored practice section before the real test begins</li>
+<li>No breaks between sections (but the test flows continuously)</li>
+</ol>
+
+<h2>Prepare With Confidence</h2>
+<ul>
+<li><a href="/listening/technique">Listening Technique Guide</a> — Strategies for all 6 parts</li>
+<li><a href="/reading/technique">Reading Technique Guide</a> — Time management + Truth Trio method</li>
+<li><a href="/writing/mastery">Writing Mastery Guide</a> — Templates and scoring criteria</li>
+<li><a href="/speaking/technique">Speaking Technique Guide</a> — CSF method for all 8 tasks</li>
+<li><a href="/mock-exam">Take a Mock Exam</a> — Simulate the full test experience</li>
+</ul>
+`
+  },
+
+  {
+    slug: 'celpip-express-entry-canada-pr',
+    title: 'CELPIP for Express Entry: How to Maximize Your CRS Score',
+    date: '2026-02-25',
+    description: 'How to use CELPIP strategically for Express Entry. CLB targets, CRS point calculations, and tips to boost your language score.',
+    readTime: '7 min read',
+    category: 'general',
+    keywords: ['CELPIP Express Entry', 'CRS score language', 'CELPIP Canada PR', 'CLB for Express Entry'],
+    content: `
+<p>If you're applying for Canadian permanent residency through Express Entry, your language score is your biggest lever. Here's how to use CELPIP strategically to maximize your CRS score.</p>
+
+<h2>Why Language Matters So Much</h2>
+<p>In the Comprehensive Ranking System (CRS), first official language scores account for up to <strong>136 points</strong> (or 150 with a second language). That's more than age (110), education (150), or Canadian work experience (80).</p>
+
+<p>The key insight: <strong>improving your CELPIP score from CLB 7 to CLB 9 can add 44+ CRS points</strong>. That's often the difference between getting an Invitation to Apply (ITA) or not.</p>
+
+<h2>CRS Points by CLB Level</h2>
+<p>Points per skill for a single applicant (no spouse):</p>
+
+<ul>
+<li><strong>CLB 4-5:</strong> 6 points per skill</li>
+<li><strong>CLB 6:</strong> 9 points per skill</li>
+<li><strong>CLB 7:</strong> 17 points per skill</li>
+<li><strong>CLB 8:</strong> 23 points per skill</li>
+<li><strong>CLB 9:</strong> 31 points per skill</li>
+<li><strong>CLB 10+:</strong> 34 points per skill</li>
+</ul>
+
+<p>With 4 skills, the jump from CLB 7 (68 total) to CLB 9 (124 total) is massive.</p>
+
+<h2>Strategic Approach</h2>
+
+<h3>1. Know Your Target</h3>
+<p>Check recent Express Entry draws on the IRCC website. As of 2026, general draws typically have cutoffs between 480-520 CRS. Category-based draws (healthcare, STEM, trades) may be lower.</p>
+
+<h3>2. Focus on Your Weakest Skill</h3>
+<p>If your scores are Listening 9, Reading 9, Writing 7, Speaking 8 — focus ALL your energy on Writing. Raising that 7 to a 9 adds 28 CRS points. Raising your Listening from 9 to 10 adds only 6.</p>
+
+<h3>3. Don't Neglect Any Skill</h3>
+<p>Some PNP streams and federal programs require minimum CLB 7 in ALL skills. A CLB 6 in one section can disqualify you even if the others are 10+.</p>
+
+<h3>4. Consider Retaking</h3>
+<p>CELPIP scores are valid for 2 years. If you're not satisfied, you can retake. Many people improve 1-2 CLB levels on their second attempt just from test familiarity.</p>
+
+<h2>Timeline Strategy</h2>
+<ol>
+<li><strong>8 weeks before test:</strong> Take a mock exam, identify weaknesses</li>
+<li><strong>4-8 weeks before:</strong> Daily practice focusing on weak skills</li>
+<li><strong>2 weeks before:</strong> Full practice tests under timed conditions</li>
+<li><strong>1 week before:</strong> Light review, rest, build confidence</li>
+</ol>
+
+<h2>CELPIP vs IELTS for Express Entry</h2>
+<p>Both are accepted. CELPIP advantages:</p>
+<ul>
+<li>Computer-based (familiar for most people)</li>
+<li>Canadian English and context</li>
+<li>Speaking to a computer (less stressful than IELTS face-to-face)</li>
+<li>Results in 4-5 days (vs 13 days for IELTS)</li>
+<li>One sitting (IELTS Speaking may be on a different day)</li>
+</ul>
+
+<h2>Free Resources to Start Now</h2>
+<ul>
+<li><a href="/mock-exam">AI Mock Exam</a> — Get your CLB estimate in 30 minutes</li>
+<li><a href="/listening/practice">24 Free Listening Passages</a></li>
+<li><a href="/reading/practice">17 Free Reading Passages</a></li>
+<li><a href="/writing/task-1">Writing Practice with AI Feedback</a></li>
+<li><a href="/pricing">Start 3-Day Free Trial</a> — Full AI coach access</li>
+</ul>
+`
+  },
+
+  {
+    slug: 'celpip-online-vs-in-person-test',
+    title: 'CELPIP Online vs In-Person: Which Should You Choose?',
+    date: '2026-02-20',
+    description: 'Compare CELPIP Online and in-person test options. Pros, cons, technical requirements, and which format suits you best.',
+    readTime: '5 min read',
+    category: 'general',
+    keywords: ['CELPIP online test', 'CELPIP online vs in person', 'CELPIP test options'],
+    content: `
+<p>Since 2023, CELPIP offers both in-person and online testing options. Both are accepted for immigration and citizenship. Here's how to decide which is right for you.</p>
+
+<h2>CELPIP Online</h2>
+<h3>Pros:</h3>
+<ul>
+<li>Take from home — no travel to a test center</li>
+<li>More flexible scheduling (often more dates available)</li>
+<li>Comfortable, familiar environment</li>
+<li>No commute stress on test day</li>
+</ul>
+
+<h3>Cons:</h3>
+<ul>
+<li>Strict technical requirements (stable internet, webcam, mic)</li>
+<li>Room must be private, clean, and well-lit</li>
+<li>AI proctoring monitors you the entire time — no looking away</li>
+<li>Technical issues (internet drops) can disrupt your test</li>
+<li>Some people find AI proctoring stressful</li>
+</ul>
+
+<h3>Technical Requirements:</h3>
+<ul>
+<li>Windows 10+ or macOS 10.15+ computer (no tablets/phones)</li>
+<li>Chrome or Edge browser</li>
+<li>Minimum 3 Mbps upload and download speed</li>
+<li>Working webcam and microphone</li>
+<li>Quiet, private room with no one else present</li>
+</ul>
+
+<h2>CELPIP In-Person</h2>
+<h3>Pros:</h3>
+<ul>
+<li>No technical worries — center provides everything</li>
+<li>Dedicated headphones for clear audio</li>
+<li>Professional environment, fewer distractions</li>
+<li>Staff available if issues arise</li>
+<li>Feels more "official" — some people perform better</li>
+</ul>
+
+<h3>Cons:</h3>
+<ul>
+<li>Must travel to a test center (may be far)</li>
+<li>Less scheduling flexibility</li>
+<li>Other test-takers speaking during Speaking section can be distracting</li>
+<li>Early morning start times are common</li>
+</ul>
+
+<h2>Which Should You Choose?</h2>
+
+<p><strong>Choose Online if:</strong></p>
+<ul>
+<li>You have reliable internet (test with speedtest.net first)</li>
+<li>You have a quiet, private room</li>
+<li>The nearest test center is far away</li>
+<li>You perform better in familiar environments</li>
+<li>You're comfortable with technology</li>
+</ul>
+
+<p><strong>Choose In-Person if:</strong></p>
+<ul>
+<li>Your internet is unreliable</li>
+<li>You can't guarantee a quiet room for 3 hours</li>
+<li>You get anxious about technical issues</li>
+<li>You prefer a structured, controlled environment</li>
+<li>There's a test center conveniently located near you</li>
+</ul>
+
+<h2>Pro Tip</h2>
+<p>Whichever format you choose, practice in similar conditions. If taking online, practice with headphones at your desk. If in-person, practice typing on a keyboard (not your phone) and get used to the computer format.</p>
+
+<h2>Practice Now</h2>
+<ul>
+<li><a href="/listening/practice">Free Listening Practice</a> — 24 passages with audio</li>
+<li><a href="/mock-exam">AI Mock Exam</a> — Simulate the full test experience</li>
+<li><a href="/pricing">Start 3-Day Free Trial</a></li>
+</ul>
+`
   }
 ];
 
