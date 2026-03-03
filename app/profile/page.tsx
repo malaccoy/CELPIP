@@ -393,17 +393,27 @@ export default function ProfilePage() {
     }
   };
 
-  const handleExportData = () => {
+  const handleExportData = async () => {
+    const parseLS = (key: string) => {
+      try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch { return null; }
+    };
+
+    let serverQuizScores = null;
+    try {
+      const res = await fetch('/api/quiz-scores');
+      if (res.ok) { const json = await res.json(); serverQuizScores = json.scores || json; }
+    } catch {}
+
     const data = {
-      stats: localStorage.getItem('celpip_user_stats'),
-      writing: localStorage.getItem('celpip_practice_history'),
-      reading: localStorage.getItem('celpip_reading_history'),
-      speaking: localStorage.getItem('celpip_speaking_history'),
-      listening: localStorage.getItem('celpip_listening_history'),
-      quizScores: localStorage.getItem('celpip-quiz-scores'),
-      adaptiveDifficulty: localStorage.getItem('celpip-adaptive-difficulty'),
-      mockExamResult: localStorage.getItem('celpip-mock-exam-result'),
-      onboarding: localStorage.getItem('celpip-onboarding'),
+      stats: parseLS('celpip_user_stats'),
+      writing: parseLS('celpip_practice_history'),
+      reading: parseLS('celpip_reading_history'),
+      speaking: parseLS('celpip_speaking_history'),
+      listening: parseLS('celpip_listening_history'),
+      quizScores: serverQuizScores || parseLS('celpip-quiz-scores'),
+      adaptiveDifficulty: parseLS('celpip-adaptive-difficulty'),
+      mockExamResult: parseLS('celpip-mock-exam-result'),
+      onboarding: parseLS('celpip-onboarding'),
       exportedAt: new Date().toISOString()
     };
     
