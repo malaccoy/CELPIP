@@ -255,6 +255,11 @@ export default function SpeakingPracticePage() {
           
           {currentPrompt && (
             <div className={styles.promptContent}>
+              {currentPrompt.image && (
+                <div className={styles.sceneImage}>
+                  <img src={currentPrompt.image} alt={currentPrompt.scenario} />
+                </div>
+              )}
               <p className={styles.scenario}>{currentPrompt.scenario}</p>
               <p className={styles.prompt}>{currentPrompt.prompt}</p>
               

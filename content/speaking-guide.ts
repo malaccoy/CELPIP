@@ -142,19 +142,43 @@ export const speakingTasks: SpeakingTask[] = [
         id: 'scene-1',
         scenario: 'You see a picture of a busy coffee shop.',
         prompt: 'Describe everything you see in this coffee shop scene.',
+        image: '/images/speaking/scene-1.png',
         context: 'Imagine a modern coffee shop with several customers, baristas working, and various items on display.'
       },
       {
         id: 'scene-2',
         scenario: 'You see a picture of a family having dinner together.',
         prompt: 'Describe the scene showing a family at dinner.',
+        image: '/images/speaking/scene-2.png',
         context: 'Imagine a dining room with family members of different ages sitting around a table with food.'
       },
       {
         id: 'scene-3',
         scenario: 'You see a picture of a farmers market.',
         prompt: 'Describe what is happening at this farmers market.',
+        image: '/images/speaking/scene-3.png',
         context: 'Imagine an outdoor market with vendors, fresh produce, and shoppers.'
+      },
+      {
+        id: 'scene-sport-1',
+        scenario: 'You see a picture of a track and field competition.',
+        prompt: 'Describe everything you see in this athletics event.',
+        image: '/images/speaking/scene-sport-1.png',
+        context: 'A stadium with an athlete performing pole vault, spectators, and other athletes warming up.'
+      },
+      {
+        id: 'scene-sport-2',
+        scenario: 'You see a picture of an indoor basketball game.',
+        prompt: 'Describe what is happening in this basketball game.',
+        image: '/images/speaking/scene-sport-2.png',
+        context: 'A recreation center gymnasium with two teams playing basketball, a referee, and spectators.'
+      },
+      {
+        id: 'scene-sport-3',
+        scenario: 'You see a picture of people playing hockey outdoors.',
+        prompt: 'Describe what you see in this winter scene.',
+        image: '/images/speaking/scene-sport-3.png',
+        context: 'A frozen outdoor rink in a Canadian park with people playing recreational hockey in winter.'
       }
     ]
   },
@@ -183,18 +207,21 @@ export const speakingTasks: SpeakingTask[] = [
         id: 'predict-1',
         scenario: 'A student is looking stressed while studying with books and papers everywhere. An exam schedule is visible on the wall.',
         prompt: 'What do you think will happen to this student? What will they do next?',
+        image: '/images/speaking/predict-1.png',
         context: 'Consider their stress level, the upcoming exam, and possible outcomes.'
       },
       {
         id: 'predict-2',
         scenario: 'A couple is looking at a house with a "For Sale" sign. They are smiling and pointing at different features.',
         prompt: 'What do you think this couple will do? What might happen next?',
+        image: '/images/speaking/predict-2.png',
         context: 'Consider their expressions and body language.'
       },
       {
         id: 'predict-3',
         scenario: 'Dark clouds are gathering over a park where families are having picnics.',
         prompt: 'What do you predict will happen in this scene?',
+        image: '/images/speaking/predict-3.png',
         context: 'Consider the weather and how the people might react.'
       }
     ]
