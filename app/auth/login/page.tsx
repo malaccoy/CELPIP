@@ -63,6 +63,14 @@ function LoginForm() {
         });
         
         if (error) throw error;
+        
+        // Trigger welcome email via n8n (fire-and-forget)
+        fetch('/api/welcome-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: formData.email }),
+        }).catch(() => {}); // Silent fail
+        
         setMessage('Check your email for the confirmation link!');
       }
     } catch (err: any) {

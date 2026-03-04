@@ -23,6 +23,8 @@ const publicPrefixes = [
   '/writing',
   '/speaking',
   '/tools',
+  '/api/welcome-email',
+  '/api/stripe',
 ]
 
 // Routes that always need auth
