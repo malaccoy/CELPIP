@@ -75,6 +75,11 @@ export async function POST(request: NextRequest) {
 
     const body: SentenceAnalysisRequest = await request.json();
 
+    // Input size limit
+    if (body.text && body.text.length > 5000) {
+      body.text = body.text.slice(0, 5000);
+    }
+
     // Validate
     if (!body.task || !body.text) {
       return NextResponse.json(

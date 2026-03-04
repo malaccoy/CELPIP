@@ -1,11 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import { sendWelcomeEmail } from '@/lib/email';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 
 const prisma = new PrismaClient();
 
 export async function POST(request: NextRequest) {
   try {
+    if (!checkIpRateLimit(request, 'email-capture', 5)) {
+      return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
+    }
+
     const { email, name, source } = await request.json();
 
     if (!email || !email.includes('@')) {

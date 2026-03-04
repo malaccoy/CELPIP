@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
 import { existsSync } from 'fs';
-import { requirePro } from '@/lib/plan';
+import { requireProWithLimit } from '@/lib/plan';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Audio not cached — require Pro to generate new audio via OpenAI TTS
-    const denied = await requirePro();
+    const denied = await requireProWithLimit('listening-audio');
     if (denied) return denied;
 
     // Ensure cache directory exists

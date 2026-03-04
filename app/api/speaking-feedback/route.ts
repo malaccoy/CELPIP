@@ -16,6 +16,12 @@ export async function POST(request: NextRequest) {
 
     const formData = await request.formData();
     const audioFile = formData.get('audio') as File;
+
+    // Limit audio size to 10MB
+    if (audioFile && audioFile.size > 10 * 1024 * 1024) {
+      return NextResponse.json({ error: 'Audio file too large' }, { status: 413 });
+    }
+
     const taskType = formData.get('taskType') as string;
     const taskPart = formData.get('taskPart') as string;
     const prompt = formData.get('prompt') as string;

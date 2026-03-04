@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { evaluate, EvaluationContext } from '@lib/rules';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 
 interface EvaluateRequestBody {
   task: 'task1' | 'task2';
@@ -9,6 +10,10 @@ interface EvaluateRequestBody {
 
 export async function POST(request: NextRequest) {
   try {
+    if (!checkIpRateLimit(request, 'evaluate', 30)) {
+      return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
+    }
+
     const body: EvaluateRequestBody = await request.json();
     
     // Validate required fields

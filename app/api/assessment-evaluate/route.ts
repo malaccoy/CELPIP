@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -9,11 +10,19 @@ const openai = new OpenAI({
 // Uses GPT-4o-mini for cost efficiency (~$0.001 per evaluation)
 export async function POST(request: NextRequest) {
   try {
+    if (!checkIpRateLimit(request, 'assessment-evaluate', 10)) {
+      return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
+    }
+
     const { text, type, prompt } = await request.json();
 
     if (!text || !type) {
       return NextResponse.json({ error: 'Missing text or type' }, { status: 400 });
     }
+
+    // Input size limit — prevent token abuse
+    const maxLen = type === 'writing' ? 2000 : 500;
+    const safeText = typeof text === 'string' ? text.slice(0, maxLen) : '';
 
     if (type === 'writing') {
       const completion = await openai.chat.completions.create({
@@ -31,7 +40,7 @@ Respond in JSON only:
           },
           {
             role: 'user',
-            content: `Task: ${prompt || 'Write an email'}\n\nStudent response:\n${text}`
+            content: `Task: ${prompt || 'Write an email'}\n\nStudent response:\n${safeText}`
           }
         ],
         temperature: 0.3,
@@ -64,7 +73,7 @@ Respond in JSON only:
           },
           {
             role: 'user',
-            content: `Task: ${prompt || 'Give advice'}\n\nTranscript:\n${text}`
+            content: `Task: ${prompt || 'Give advice'}\n\nTranscript:\n${safeText}`
           }
         ],
         temperature: 0.3,
