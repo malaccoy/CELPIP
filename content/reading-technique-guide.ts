@@ -76,7 +76,7 @@ export const readingOverview: ReadingOverview = {
     { text: 'Small details (exact dates, numbers, statistics) are rarely the answer', emphasis: false },
     { text: 'Focus on main ideas, not complicated vocabulary', emphasis: false },
     { text: 'Tasks 1-2 are easier — perfect them first for maximum score impact', emphasis: true },
-    { text: 'Never click "Next" early — use all your time, especially before Speaking', emphasis: false },
+    { text: 'Never click "Next" early — use all your time to re-read and double-check answers', emphasis: false },
     { text: 'If stuck, eliminate wrong answers first — there is always one easy to remove', emphasis: false },
     { text: 'Statistics are a guide, but trust your reading ability over patterns', emphasis: false },
   ],
