@@ -6,11 +6,10 @@ const BASE_URL = 'https://celpipaicoach.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
-  // High priority - main pages
+  // High priority - main pages (no auth-required pages!)
   const mainPages = [
     { url: '', priority: 1.0, changeFrequency: 'weekly' as const },
     { url: '/pricing', priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: '/dashboard', priority: 0.8, changeFrequency: 'daily' as const },
   ];
 
   // Section hubs
