@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Auth-required pages (no value to index)
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /settings
+Disallow: /api/
+
+# Auth flows
+Disallow: /auth/
+Disallow: /login
+Disallow: /register
+
+Sitemap: https://celpipaicoach.com/sitemap.xml

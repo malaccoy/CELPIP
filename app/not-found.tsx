@@ -1,6 +1,27 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function NotFound() {
+  const router = useRouter();
+  const [countdown, setCountdown] = useState(8);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          router.push('/');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [router]);
+
   return (
     <div style={{
       display: 'flex',
@@ -26,21 +47,28 @@ export default function NotFound() {
       }}>Page Not Found</h2>
       <p style={{
         color: '#94a3b8',
-        marginBottom: '2rem',
+        marginBottom: '0.5rem',
         maxWidth: '400px',
         lineHeight: 1.5,
       }}>
         This page doesn&apos;t exist. But your CELPIP score can still exist at CLB 9+.
       </p>
+      <p style={{
+        color: '#64748b',
+        fontSize: '0.85rem',
+        marginBottom: '2rem',
+      }}>
+        Redirecting to home in {countdown}s...
+      </p>
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <Link href="/" style={{
           padding: '0.75rem 1.5rem',
           borderRadius: '12px',
-          background: 'linear-gradient(135deg, #cc0000, #ff3b3b)',
+          background: 'linear-gradient(135deg, #6366f1, #818cf8)',
           color: 'white',
           fontWeight: 700,
           textDecoration: 'none',
-        }}>Go Home</Link>
+        }}>Go Home Now</Link>
         <Link href="/blog" style={{
           padding: '0.75rem 1.5rem',
           borderRadius: '12px',
