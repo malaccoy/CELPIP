@@ -15,22 +15,32 @@ export default function EmailCapturePopup() {
     const subscribed = localStorage.getItem('celpip-email-subscribed');
     if (dismissed || subscribed) return;
 
-    // Show after 30 seconds on page
-    const timer = setTimeout(() => setShow(true), 30000);
+    // Show after 45 seconds on page
+    const timer = setTimeout(() => setShow(true), 45000);
     
-    // Also show on scroll (50% of page)
+    // Also show on scroll (65% of page)
     const handleScroll = () => {
       const scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-      if (scrollPct > 0.5) {
+      if (scrollPct > 0.65) {
         setShow(true);
         window.removeEventListener('scroll', handleScroll);
       }
     };
     window.addEventListener('scroll', handleScroll);
 
+    // Exit intent (mouse leaves viewport top)
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0) {
+        setShow(true);
+        document.removeEventListener('mouseleave', handleMouseLeave);
+      }
+    };
+    document.addEventListener('mouseleave', handleMouseLeave);
+
     return () => {
       clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 

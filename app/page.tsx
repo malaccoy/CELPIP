@@ -99,18 +99,24 @@ export default function HomePage() {
       name: 'Priya S.',
       location: 'Toronto',
       clb: 'CLB 7 → 9',
+      initials: 'PS',
+      color: '#6366f1',
     },
     {
       quote: 'Saved me from paying $80/hour for a tutor. The speaking coach caught pronunciation issues I didn\'t even know I had.',
       name: 'Marco L.',
       location: 'Vancouver',
       clb: 'CLB 8 → 10',
+      initials: 'ML',
+      color: '#10b981',
     },
     {
       quote: 'The mock exam CLB estimate was spot-on. I knew I was ready before spending $300 on the real test.',
       name: 'Ahmed K.',
       location: 'Calgary',
       clb: 'CLB 9',
+      initials: 'AK',
+      color: '#f59e0b',
     },
   ];
 
@@ -205,9 +211,17 @@ export default function HomePage() {
                 <p>{t.quote}</p>
               </div>
               <div className={styles.testimonialAuthor}>
-                <div className={styles.testimonialInfo}>
-                  <span className={styles.testimonialName}>{t.name}</span>
-                  <span className={styles.testimonialLocation}>{t.location}</span>
+                <div className={styles.testimonialAuthorLeft}>
+                  <div 
+                    className={styles.testimonialAvatar}
+                    style={{ background: t.color }}
+                  >
+                    {t.initials}
+                  </div>
+                  <div className={styles.testimonialInfo}>
+                    <span className={styles.testimonialName}>{t.name}</span>
+                    <span className={styles.testimonialLocation}>{t.location}</span>
+                  </div>
                 </div>
                 <span className={styles.testimonialCLB}>{t.clb}</span>
               </div>
@@ -221,8 +235,8 @@ export default function HomePage() {
         <div className={styles.urgencyContent}>
           <AlertTriangle size={20} />
           <div>
-            <strong>Your CELPIP Test Is Coming</strong>
-            <p>Every week you wait is another week without your PR. Every re-test is another $300. Start practicing now — it&apos;s free.</p>
+            <strong>Express Entry Draws Happen Every 2 Weeks</strong>
+            <p>Every draw you miss is months of waiting. Every re-test is another $300. Is your CLB ready? Start practicing now — it&apos;s free.</p>
           </div>
           <Link href="/writing/task-1" className={styles.urgencyCta}>
             <span>Start Now</span>
