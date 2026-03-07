@@ -189,16 +189,18 @@ export default function SpellCheckTextarea({
   return (
     <div className={`${styles.spellCheckContainer} ${className || ''}`}>
       <div className={styles.editorWrapper} style={{ minHeight }}>
-        {/* Highlight overlay - shows underlines */}
-        <div
-          ref={overlayRef}
-          className={styles.highlightOverlay}
-          aria-hidden="true"
-        >
-          <div className={styles.highlightContent}>
-            {renderHighlightedText()}
+        {/* Highlight overlay - shows underlines (hidden when no misspellings) */}
+        {spellCheckEnabled && misspelled.length > 0 && (
+          <div
+            ref={overlayRef}
+            className={styles.highlightOverlay}
+            aria-hidden="true"
+          >
+            <div className={styles.highlightContent}>
+              {renderHighlightedText()}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Actual textarea */}
         <textarea
