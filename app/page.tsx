@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { 
   Sparkles, PenLine, Mic, BookOpen, Headphones,
   ArrowRight, Zap, Target, TrendingUp, CheckCircle2,
-  Brain, Clock, BarChart3, Shield, Star, Users,
+  Brain, Clock, BarChart3, Shield, Users,
   ChevronDown, Globe, Award
 } from 'lucide-react';
 import EmailCapturePopup from '@/components/EmailCapturePopup';
@@ -75,12 +75,6 @@ export default function HomePage() {
     { feature: 'Mock Exam with CLB Estimate', us: '✅ Full simulation', them: '❌ or basic only' },
     { feature: 'Audio Listening Practice', us: '24 cached + unlimited AI', them: 'Limited passages' },
     { feature: 'Price', us: 'Free tier + CA$24.99/mo Pro', them: '$29-49/month, no free tier' },
-  ];
-
-  const testimonials = [
-    { name: 'Amanda C.', score: 'CLB 9', text: 'The AI Writing Tutor helped me understand exactly what CELPIP examiners look for. My writing went from 7 to 10 in 3 weeks.', avatar: '👩‍💻' },
-    { name: 'Priya M.', score: 'CLB 10', text: 'The speaking practice with AI feedback was a game changer. I could practice anytime without a tutor and get instant feedback.', avatar: '👩‍🎓' },
-    { name: 'Carlos R.', score: 'CLB 8', text: 'Best CELPIP prep I found. The free content alone is better than what other sites charge $30/month for.', avatar: '👨‍💼' },
   ];
 
   const faqs = [
@@ -155,7 +149,7 @@ export default function HomePage() {
             </div>
             <div className={styles.trustItem}>
               <CheckCircle2 size={16} />
-              <span>Used by students across Canada</span>
+              <span>Built for Canadian immigration</span>
             </div>
           </div>
         </div>
@@ -267,32 +261,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Testimonials ─── */}
-      <section className={styles.testimonialsSection}>
-        <div className={styles.sectionHeader}>
-          <h2>What Students Say</h2>
-          <p>Real results from real CELPIP test takers</p>
-        </div>
-
-        <div className={styles.testimonialsGrid}>
-          {testimonials.map((t, i) => (
-            <div key={i} className={styles.testimonialCard}>
-              <div className={styles.testimonialStars}>
-                {[...Array(5)].map((_, j) => <Star key={j} size={16} fill="currentColor" />)}
-              </div>
-              <p className={styles.testimonialText}>&ldquo;{t.text}&rdquo;</p>
-              <div className={styles.testimonialAuthor}>
-                <span className={styles.testimonialAvatar}>{t.avatar}</span>
-                <div>
-                  <span className={styles.testimonialName}>{t.name}</span>
-                  <span className={styles.testimonialScore}>Achieved {t.score}</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ─── FAQ ─── */}
       <section className={styles.faqSection}>
         <div className={styles.sectionHeader}>
@@ -338,7 +306,7 @@ export default function HomePage() {
       <section className={styles.finalCta}>
         <div className={styles.finalCtaContent}>
           <h2>Ready to Ace Your CELPIP?</h2>
-          <p>Join thousands of students preparing smarter with AI. Start free today.</p>
+          <p>Start preparing for your CELPIP test with AI-powered practice. Free today.</p>
           <div className={styles.heroCtas}>
             <Link href="/writing/task-1" className={styles.ctaPrimary}>
               <span>Start Practicing Now</span>

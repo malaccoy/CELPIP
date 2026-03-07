@@ -94,13 +94,7 @@ export default function RootLayout({
                   "priceValidUntil": "2027-12-31",
                   "description": "All Pro features billed annually — save 67%"
                 }
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "127",
-                "bestRating": "5"
-              }
+              ]
             })
           }}
         />
