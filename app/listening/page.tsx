@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { 
   Headphones, ArrowRight, Clock, Target, Volume2,
   Lightbulb, AlertCircle, BookOpen, Zap
@@ -10,7 +10,6 @@ import { listeningParts, listeningStrategies } from '@content/listening-guide';
 import styles from '@/styles/ListeningHub.module.scss';
 
 export default function ListeningHubPage() {
-  const router = useRouter();
   
   const totalQuestions = listeningParts.reduce((sum, p) => sum + p.questions, 0);
 
@@ -30,7 +29,7 @@ export default function ListeningHubPage() {
       </div>
 
       {/* Technique Guide CTA — Learn First */}
-      <div className={styles.techniqueCta} onClick={() => router.push('/listening/technique')}>
+      <Link href="/listening/technique" className={styles.techniqueCta}>
         <div className={styles.techniqueCtaIcon}>
           <Zap size={22} />
         </div>
@@ -39,7 +38,7 @@ export default function ListeningHubPage() {
           <p>Master the framework that lets you predict questions before they appear.</p>
         </div>
         <ArrowRight size={18} className={styles.techniqueCtaArrow} />
-      </div>
+      </Link>
 
       {/* STEP 1 - Understand the Format */}
       <section className={styles.stepSection}>
@@ -59,10 +58,10 @@ export default function ListeningHubPage() {
 
         {/* Parts Overview */}
         {listeningParts.slice(0, 3).map((part) => (
-          <div 
+          <Link 
             key={part.id} 
+            href={`/listening/practice/${part.id}`}
             className={styles.prepCard}
-            onClick={() => router.push(`/listening/practice/${part.id}`)}
           >
             <div className={styles.prepCardIcon}>
               <span style={{ fontSize: '1.5rem' }}>{part.icon}</span>
@@ -75,7 +74,7 @@ export default function ListeningHubPage() {
               <span>Practice</span>
               <ArrowRight size={16} />
             </div>
-          </div>
+          </Link>
         ))}
       </section>
 
@@ -87,10 +86,10 @@ export default function ListeningHubPage() {
         </div>
 
         {listeningParts.slice(3).map((part) => (
-          <div 
+          <Link 
             key={part.id}
+            href={`/listening/practice/${part.id}`}
             className={styles.examCard}
-            onClick={() => router.push(`/listening/practice/${part.id}`)}
           >
             <div className={styles.examCardHeader}>
               <div className={styles.examCardIcon}>
@@ -119,16 +118,16 @@ export default function ListeningHubPage() {
               <span>Start Practice</span>
               <ArrowRight size={18} />
             </div>
-          </div>
+          </Link>
         ))}
       </section>
 
       {/* Full Practice Link */}
-      <div className={styles.guideLink} onClick={() => router.push('/listening/practice')}>
+      <Link href="/listening/practice" className={styles.guideLink}>
         <Headphones size={18} />
         <span>Full Listening Practice • {totalQuestions} questions • ~47 min</span>
         <ArrowRight size={16} />
-      </div>
+      </Link>
     </div>
   );
 }
