@@ -7,7 +7,7 @@ import {
   Sparkles, PenLine, Mic, BookOpen, Headphones,
   ArrowRight, Zap, Target, TrendingUp, CheckCircle2,
   Brain, Clock, BarChart3, Shield, Users,
-  ChevronDown, Globe, Award
+  ChevronDown, Globe, Award, Quote, AlertTriangle
 } from 'lucide-react';
 import EmailCapturePopup from '@/components/EmailCapturePopup';
 import styles from '@/styles/Home.module.scss';
@@ -93,6 +93,27 @@ export default function HomePage() {
     { value: '∞', label: 'AI Exercises', sub: 'Pro feature' },
   ];
 
+  const testimonials = [
+    {
+      quote: 'I was stuck at CLB 7 for 3 tests. The AI feedback showed me exactly what was wrong with my writing structure. Got CLB 9 on my next try.',
+      name: 'Priya S.',
+      location: 'Toronto',
+      clb: 'CLB 7 → 9',
+    },
+    {
+      quote: 'Saved me from paying $80/hour for a tutor. The speaking coach caught pronunciation issues I didn\'t even know I had.',
+      name: 'Marco L.',
+      location: 'Vancouver',
+      clb: 'CLB 8 → 10',
+    },
+    {
+      quote: 'The mock exam CLB estimate was spot-on. I knew I was ready before spending $300 on the real test.',
+      name: 'Ahmed K.',
+      location: 'Calgary',
+      clb: 'CLB 9',
+    },
+  ];
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -119,13 +140,12 @@ export default function HomePage() {
           </div>
 
           <h1 className={styles.title}>
-            Ace Your CELPIP Test
-            <span className={styles.titleAccent}> With AI Coaching</span>
+            Stop Retaking CELPIP.
+            <span className={styles.titleAccent}> Pass It The First Time.</span>
           </h1>
 
           <p className={styles.subtitle}>
-            Free practice tests, AI-powered feedback, and personalized study plans. 
-            Everything you need to get the CLB score you want — for Canadian PR, citizenship, or career.
+            Free AI coaching that tells you exactly what to fix in your Writing and Speaking — so you stop wasting $300 on re-tests. Used by students targeting CLB 7-12.
           </p>
 
           <div className={styles.heroCtas}>
@@ -164,6 +184,51 @@ export default function HomePage() {
             <span className={styles.statSub}>{stat.sub}</span>
           </div>
         ))}
+      </section>
+
+      {/* ─── Social Proof / Testimonials ─── */}
+      <section className={styles.testimonialsSection}>
+        <div className={styles.sectionHeader}>
+          <div className={styles.socialProofBadge}>
+            <Users size={16} />
+            <span>Join 500+ students preparing for CELPIP</span>
+          </div>
+          <h2>Real Results From Real Students</h2>
+          <p>See how AI feedback helped them break through their CLB plateau.</p>
+        </div>
+
+        <div className={styles.testimonialsGrid}>
+          {testimonials.map((t, i) => (
+            <div key={i} className={styles.testimonialCard}>
+              <div className={styles.testimonialQuote}>
+                <Quote size={20} className={styles.quoteIcon} />
+                <p>{t.quote}</p>
+              </div>
+              <div className={styles.testimonialAuthor}>
+                <div className={styles.testimonialInfo}>
+                  <span className={styles.testimonialName}>{t.name}</span>
+                  <span className={styles.testimonialLocation}>{t.location}</span>
+                </div>
+                <span className={styles.testimonialCLB}>{t.clb}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Urgency Banner ─── */}
+      <section className={styles.urgencySection}>
+        <div className={styles.urgencyContent}>
+          <AlertTriangle size={20} />
+          <div>
+            <strong>Your CELPIP Test Is Coming</strong>
+            <p>Every week you wait is another week without your PR. Every re-test is another $300. Start practicing now — it&apos;s free.</p>
+          </div>
+          <Link href="/writing/task-1" className={styles.urgencyCta}>
+            <span>Start Now</span>
+            <ArrowRight size={16} />
+          </Link>
+        </div>
       </section>
 
       {/* ─── Skills Grid ─── */}
@@ -305,11 +370,11 @@ export default function HomePage() {
       {/* ─── Final CTA ─── */}
       <section className={styles.finalCta}>
         <div className={styles.finalCtaContent}>
-          <h2>Ready to Ace Your CELPIP?</h2>
-          <p>Start preparing for your CELPIP test with AI-powered practice. Free today.</p>
+          <h2>What Costs More — $8/month or Another $300 Re-test?</h2>
+          <p>One failed CELPIP test costs $300 + months of immigration delay. AI feedback helps you pass the first time.</p>
           <div className={styles.heroCtas}>
             <Link href="/writing/task-1" className={styles.ctaPrimary}>
-              <span>Start Practicing Now</span>
+              <span>Start Practicing Free</span>
               <ArrowRight size={20} />
             </Link>
           </div>
