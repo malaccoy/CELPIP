@@ -12,6 +12,14 @@
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
+  
+  // Prevent iOS red line artifacts
+  -webkit-overflow-scrolling: touch;
+  
+  textarea {
+    -webkit-appearance: none;
+    appearance: none;
+  }
 }
 
 .highlightOverlay {
@@ -60,9 +68,17 @@
   color: var(--text-primary, #1e293b);
   z-index: 2;
   caret-color: var(--text-primary, #1e293b);
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  text-decoration: none;
   
   &::placeholder {
     color: var(--text-secondary, rgba(0, 0, 0, 0.4));
+  }
+
+  &:invalid {
+    box-shadow: none;
   }
 }
 
