@@ -88,6 +88,8 @@ export default function Footer() {
             <Link href="/pricing">Pricing</Link>
             <span>·</span>
             <Link href="/blog">Blog</Link>
+            <span>·</span>
+            <a href="mailto:support@celpipaicoach.com"><Mail size={14} /> Contact</a>
           </div>
         </div>
       </div>
