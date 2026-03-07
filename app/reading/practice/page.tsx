@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { readingPassages, ReadingPassage, ReadingQuestion } from '@content/reading-practice';
 import { analytics } from '@/lib/analytics';
+import ExerciseGate from '@/components/ExerciseGate';
 import styles from '@/styles/ReadingPractice.module.scss';
 
 const PART_NAMES: Record<number, string> = {
@@ -126,6 +127,7 @@ function ReadingPracticeContent() {
   if (showPassageList) {
     return (
       <div className={styles.container}>
+        <ExerciseGate section="Reading" />
         <header className={styles.header}>
           <Link href="/reading" className={styles.backBtn}>
             <ArrowLeft size={18} /> Back to Reading

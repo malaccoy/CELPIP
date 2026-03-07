@@ -11,6 +11,7 @@ import {
 import { listeningParts, listeningPassages, ListeningPassage } from '@content/listening-guide';
 import { usePlan } from '@/hooks/usePlan';
 import { analytics } from '@/lib/analytics';
+import ExerciseGate from '@/components/ExerciseGate';
 import styles from '@/styles/ListeningPractice.module.scss';
 
 type Phase = 'intro' | 'listening' | 'questions' | 'results';
@@ -203,6 +204,7 @@ export default function ListeningPracticePage() {
 
   return (
     <div className={styles.container}>
+      <ExerciseGate section="Listening" />
       {/* Header */}
       <header className={styles.header}>
         <Link href="/listening" className={styles.backBtn}>

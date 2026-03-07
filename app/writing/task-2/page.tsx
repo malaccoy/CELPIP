@@ -22,6 +22,7 @@ import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluati
 import AIFeedback from '@/components/AIFeedback';
 import SentenceFeedback from '@/components/SentenceFeedback';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
+import ExerciseGate from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
@@ -264,6 +265,7 @@ export default function Task2Page() {
 
   return (
     <div className={styles.wizardContainer}>
+      <ExerciseGate section="Writing" />
       {/* Achievement Toast */}
       {newAchievement && (
         <AchievementToast 
