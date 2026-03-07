@@ -74,12 +74,13 @@ function ReadingPracticeContent() {
     const isCorrect = selectedAnswer === question.correct;
     const key = `${passage.id}-${question.id}`;
     
-    setAnswers(prev => {
-      const next = new Map(prev).set(key, { selected: selectedAnswer, correct: isCorrect });
-      if (prev.size === 0) markExerciseDone(); // mark on first answer only
-      return next;
-    });
+    setAnswers(prev => new Map(prev).set(key, { selected: selectedAnswer, correct: isCorrect }));
     setShowResult(true);
+
+    // Mark exercise done on last question of the passage
+    if (currentQuestionIndex === passage.questions.length - 1) {
+      markExerciseDone();
+    }
   };
 
   const handleNextQuestion = () => {
