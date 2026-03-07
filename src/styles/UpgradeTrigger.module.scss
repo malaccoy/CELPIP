@@ -1,0 +1,107 @@
+@use 'design-system' as ds;
+
+.trigger {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.04));
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: #a5b4fc;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.title {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+
+    svg {
+      color: #6366f1;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+  width: 100%;
+  justify-content: center;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.45);
+  }
+}
+
+.reassurance {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0.75rem 0 0;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  .trigger {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.06), rgba(139, 92, 246, 0.03));
+    border-color: rgba(99, 102, 241, 0.15);
+  }
+
+  .title { color: #1e293b; }
+  .subtitle { color: #475569; }
+  .features li { color: #334155; }
+  .icon { color: #6366f1; }
+}

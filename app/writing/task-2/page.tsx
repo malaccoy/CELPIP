@@ -21,6 +21,7 @@ import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 import AIFeedback from '@/components/AIFeedback';
 import SentenceFeedback from '@/components/SentenceFeedback';
+import UpgradeTrigger from '@/components/UpgradeTrigger';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -707,6 +708,7 @@ export default function Task2Page() {
                       </div>
                     ))}
                   </div>
+                  <UpgradeTrigger context="writing" />
                 </div>
               )}
             </div>

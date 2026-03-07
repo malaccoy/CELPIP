@@ -11,6 +11,7 @@ import {
 import { speakingTasks, getRandomPrompt, SpeakingPrompt } from '@content/speaking-guide';
 import { usePlan } from '@/hooks/usePlan';
 import { ProGate } from '@/components/ProGate';
+import UpgradeTrigger from '@/components/UpgradeTrigger';
 import styles from '@/styles/SpeakingPractice.module.scss';
 
 type Phase = 'intro' | 'prep' | 'recording' | 'review' | 'feedback';
@@ -419,6 +420,7 @@ export default function SpeakingPracticePage() {
                   </div>
                 </div>
               )}
+              {!isPro && <UpgradeTrigger context="speaking" />}
             </div>
           )}
 

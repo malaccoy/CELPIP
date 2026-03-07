@@ -21,6 +21,7 @@ import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 import AIFeedback from '@/components/AIFeedback';
 import SentenceFeedback from '@/components/SentenceFeedback';
+import UpgradeTrigger from '@/components/UpgradeTrigger';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -824,6 +825,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                       </div>
                     ))}
                   </div>
+                  <UpgradeTrigger context="writing" />
                 </div>
               )}
             </div>
