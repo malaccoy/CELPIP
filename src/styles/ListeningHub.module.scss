@@ -212,6 +212,7 @@
   border-radius: 16px;
   margin-bottom: 0.85rem;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -306,6 +307,8 @@
 
 // Exam Cards
 .examCard {
+  display: block;
+  text-decoration: none;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.06) 0%,
@@ -361,10 +364,7 @@
     }
 
     .examCardCta {
-      background: linear-gradient(135deg, #fb923c, #f59e0b);
-      border-color: transparent;
-      color: white;
-      box-shadow: 0 4px 16px rgba(251, 146, 60, 0.4);
+      box-shadow: 0 6px 20px rgba(251, 146, 60, 0.45);
       transform: translateX(4px);
     }
   }
@@ -455,13 +455,14 @@
   align-items: center;
   gap: 0.55rem;
   padding: 0.8rem 1.4rem;
-  background: rgba(251, 146, 60, 0.12);
-  border: 1px solid rgba(251, 146, 60, 0.25);
+  background: linear-gradient(135deg, #fb923c, #f59e0b);
+  border: none;
   border-radius: 12px;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #fdba74;
+  color: white;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(251, 146, 60, 0.3);
 }
 
 // Guide Link
@@ -542,6 +543,7 @@
   border-radius: 16px;
   margin-bottom: 2rem;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
