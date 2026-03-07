@@ -22,6 +22,7 @@ import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluati
 import AIFeedback from '@/components/AIFeedback';
 import SentenceFeedback from '@/components/SentenceFeedback';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
+import { analytics } from '@/lib/analytics';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -65,6 +66,7 @@ export default function Task1Page() {
 
   // Load contexts from JSON
   useEffect(() => {
+    analytics.exerciseStart('writing', 'task-1');
     fetch('/content/contexts.json')
       .then(res => res.json())
       .then(data => {
@@ -163,6 +165,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
       setAiError('Write at least 50 words for AI evaluation.');
       return;
     }
+    analytics.aiFeedbackRequest('writing');
 
     setAiLoading(true);
     setAiError(null);

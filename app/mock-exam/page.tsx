@@ -10,6 +10,7 @@ import {
 import { usePlan } from '@/hooks/usePlan';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/AIMockExam.module.scss';
 
 // ─── Types ───────────────────────────────────────
@@ -231,6 +232,7 @@ export default function AIMockExamPage() {
 
   // ─── Start exam ────────────────────────────────
   const startExam = () => {
+    analytics.mockExamStart();
     setResults([]);
     setCurrentIdx(0);
     generateSection(0);

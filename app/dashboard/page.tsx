@@ -8,6 +8,7 @@ import {
   Sparkles, Target, Flame, BarChart3, Trophy,
   CheckCircle, Users, Clock as ClockIcon
 } from 'lucide-react';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/Dashboard.module.scss';
 import onboardingStyles from '@/styles/Onboarding.module.scss';
 
@@ -190,6 +191,15 @@ export default function DashboardPage() {
   ];
 
   // Timer effect
+  // Track purchase from Stripe redirect
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('upgraded') === 'true') {
+      analytics.purchase(0, 'CAD', 'stripe-redirect');
+      window.history.replaceState({}, '', '/dashboard');
+    }
+  }, []);
+
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (timerActive && assessmentTimer > 0) {

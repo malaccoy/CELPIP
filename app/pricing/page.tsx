@@ -1,15 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Check, Sparkles, Zap, Crown, Shield, ArrowRight } from 'lucide-react';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/Pricing.module.scss';
 
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('annual');
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    analytics.viewPricing();
+  }, []);
+
   const handleCheckout = async (plan: 'monthly' | 'annual') => {
     setLoading(true);
+    const value = plan === 'annual' ? 99 : 24.99;
+    analytics.beginCheckout(value, 'CAD');
     try {
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',

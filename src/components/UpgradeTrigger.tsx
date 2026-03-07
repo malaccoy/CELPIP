@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Sparkles, ArrowRight, Target, Zap } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/UpgradeTrigger.module.scss';
 
 interface UpgradeTriggerProps {
@@ -62,7 +63,7 @@ export default function UpgradeTrigger({ context = 'writing' }: UpgradeTriggerPr
         ))}
       </ul>
 
-      <Link href="/pricing" className={styles.cta}>
+      <Link href="/pricing" className={styles.cta} onClick={() => analytics.beginCheckout()}>
         <Zap size={16} />
         <span>Unlock AI Feedback — Start 3-Day Free Trial</span>
         <ArrowRight size={16} />

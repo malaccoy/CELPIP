@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { listeningParts, listeningPassages, ListeningPassage } from '@content/listening-guide';
 import { usePlan } from '@/hooks/usePlan';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/ListeningPractice.module.scss';
 
 type Phase = 'intro' | 'listening' | 'questions' | 'results';
@@ -20,6 +21,11 @@ export default function ListeningPracticePage() {
   const { isPro } = usePlan();
   
   const part = listeningParts.find(p => p.id === partId);
+
+  useEffect(() => {
+    if (partId) analytics.exerciseStart('listening', partId);
+  }, [partId]);
+
   const passages = listeningPassages.filter(p => 
     part ? p.part === part.part : true
   );

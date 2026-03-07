@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Lock, Sparkles, Zap } from 'lucide-react';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/ProGate.module.scss';
 
 interface ProGateProps {
@@ -36,7 +37,7 @@ export function ProGate({ feature, description, compact }: ProGateProps) {
       <p className={styles.description}>
         {description || 'This feature requires a Pro subscription. Upgrade to get AI-powered feedback, detailed scoring, and personalized recommendations.'}
       </p>
-      <button className={styles.upgradeBtn} onClick={() => window.location.href = '/pricing'}>
+      <button className={styles.upgradeBtn} onClick={() => { analytics.beginCheckout(); window.location.href = '/pricing'; }}>
         <Zap size={16} />
         Upgrade to Pro
       </button>

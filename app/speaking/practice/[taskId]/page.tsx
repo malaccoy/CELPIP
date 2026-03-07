@@ -12,6 +12,7 @@ import { speakingTasks, getRandomPrompt, SpeakingPrompt } from '@content/speakin
 import { usePlan } from '@/hooks/usePlan';
 import { ProGate } from '@/components/ProGate';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/SpeakingPractice.module.scss';
 
 type Phase = 'intro' | 'prep' | 'recording' | 'review' | 'feedback';
@@ -60,6 +61,7 @@ export default function SpeakingPracticePage() {
   // Initialize prompt
   useEffect(() => {
     if (task) {
+      analytics.exerciseStart('speaking', `task-${task.id}`);
       const prompt = getRandomPrompt(task.id);
       setCurrentPrompt(prompt || null);
       setPrepTimeLeft(task.prepTime);
@@ -157,7 +159,7 @@ export default function SpeakingPracticePage() {
 
   const analyzeRecording = async () => {
     if (!audioBlob) return;
-    
+    analytics.aiFeedbackRequest('speaking');
     setIsAnalyzing(true);
     setError(null);
     setPhase('feedback');

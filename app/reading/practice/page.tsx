@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, Suspense } from 'react';
+import React, { useState, useMemo, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { 
@@ -8,6 +8,7 @@ import {
   Clock, Target, RotateCcw, Trophy, BookOpen
 } from 'lucide-react';
 import { readingPassages, ReadingPassage, ReadingQuestion } from '@content/reading-practice';
+import { analytics } from '@/lib/analytics';
 import styles from '@/styles/ReadingPractice.module.scss';
 
 const PART_NAMES: Record<number, string> = {
@@ -28,6 +29,10 @@ export default function ReadingPracticePage() {
 function ReadingPracticeContent() {
   const searchParams = useSearchParams();
   const partFilter = searchParams.get('part') ? Number(searchParams.get('part')) : null;
+
+  useEffect(() => {
+    analytics.exerciseStart('reading', partFilter ? `part-${partFilter}` : 'all');
+  }, [partFilter]);
 
   const filteredPassages = useMemo(() => {
     if (partFilter && partFilter >= 1 && partFilter <= 4) {
