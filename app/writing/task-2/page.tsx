@@ -22,7 +22,7 @@ import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluati
 import AIFeedback from '@/components/AIFeedback';
 import SentenceFeedback from '@/components/SentenceFeedback';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
-import ExerciseGate from '@/components/ExerciseGate';
+import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
@@ -126,6 +126,7 @@ export default function Task2Page() {
   const handleEvaluate = () => {
     const results = generateTask2Feedback(state);
     setFeedback(results);
+    markExerciseDone();
     
     // Calculate score and record practice
     const score = calculateScore(results, wordCount);

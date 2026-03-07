@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { readingPassages, ReadingPassage, ReadingQuestion } from '@content/reading-practice';
 import { analytics } from '@/lib/analytics';
-import ExerciseGate from '@/components/ExerciseGate';
+import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import styles from '@/styles/ReadingPractice.module.scss';
 
 const PART_NAMES: Record<number, string> = {
@@ -74,7 +74,11 @@ function ReadingPracticeContent() {
     const isCorrect = selectedAnswer === question.correct;
     const key = `${passage.id}-${question.id}`;
     
-    setAnswers(prev => new Map(prev).set(key, { selected: selectedAnswer, correct: isCorrect }));
+    setAnswers(prev => {
+      const next = new Map(prev).set(key, { selected: selectedAnswer, correct: isCorrect });
+      if (prev.size === 0) markExerciseDone(); // mark on first answer only
+      return next;
+    });
     setShowResult(true);
   };
 

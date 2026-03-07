@@ -12,7 +12,7 @@ import { speakingTasks, getRandomPrompt, SpeakingPrompt } from '@content/speakin
 import { usePlan } from '@/hooks/usePlan';
 import { ProGate } from '@/components/ProGate';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
-import ExerciseGate from '@/components/ExerciseGate';
+import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
 import styles from '@/styles/SpeakingPractice.module.scss';
 
@@ -143,6 +143,7 @@ export default function SpeakingPracticePage() {
       setIsRecording(false);
       if (speakTimerRef.current) clearInterval(speakTimerRef.current);
       setPhase('review');
+      markExerciseDone();
     }
   };
 
