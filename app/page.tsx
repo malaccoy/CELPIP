@@ -10,6 +10,7 @@ import {
   ChevronDown, Globe, Award, Quote, AlertTriangle
 } from 'lucide-react';
 import EmailCapturePopup from '@/components/EmailCapturePopup';
+import StartPracticingButton from '@/components/StartPracticingButton';
 import styles from '@/styles/Home.module.scss';
 
 export default function HomePage() {
@@ -155,10 +156,7 @@ export default function HomePage() {
           </p>
 
           <div className={styles.heroCtas}>
-            <Link href="/writing/task-1" className={styles.ctaPrimary}>
-              <span>Start Practicing Free</span>
-              <ArrowRight size={20} />
-            </Link>
+            <StartPracticingButton className={styles.ctaPrimary} />
             <Link href="/pricing" className={styles.ctaSecondary}>
               <span>See Pro Features</span>
             </Link>
@@ -387,10 +385,7 @@ export default function HomePage() {
           <h2>What Costs More — $8/month or Another $300 Re-test?</h2>
           <p>One failed CELPIP test costs $300 + months of immigration delay. AI feedback helps you pass the first time.</p>
           <div className={styles.heroCtas}>
-            <Link href="/writing/task-1" className={styles.ctaPrimary}>
-              <span>Start Practicing Free</span>
-              <ArrowRight size={20} />
-            </Link>
+            <StartPracticingButton className={styles.ctaPrimary} />
           </div>
         </div>
       </section>
