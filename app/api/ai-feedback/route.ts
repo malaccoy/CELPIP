@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { requireProWithLimit } from '@/lib/plan';
+import { logActivity } from '@/lib/activity';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -276,6 +277,15 @@ export async function POST(request: NextRequest) {
       const grammarData = JSON.parse(grammarCompletion.choices[0].message.content || '{}');
       response.grammarErrors = grammarData.errors || [];
     }
+
+    // Log activity for leaderboard
+    try {
+      const { auth } = await import('@/../auth');
+      const session = await auth();
+      if (session?.user?.id) {
+        await logActivity(session.user.id, 'writing');
+      }
+    } catch {}
 
     return NextResponse.json(response);
 

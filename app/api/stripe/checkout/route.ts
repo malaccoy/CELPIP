@@ -16,7 +16,13 @@ export async function POST(request: NextRequest) {
     }
 
     const { plan } = await request.json();
-    const priceId = plan === 'annual' ? PRICES.annual : PRICES.monthly;
+    const priceMap: Record<string, string> = {
+      weekly: PRICES.weekly,
+      monthly: PRICES.monthly,
+      quarterly: PRICES.quarterly,
+      annual: PRICES.annual,
+    };
+    const priceId = priceMap[plan];
 
     if (!priceId) {
       return NextResponse.json({ error: 'Invalid plan' }, { status: 400 });

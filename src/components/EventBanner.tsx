@@ -16,13 +16,6 @@ export function EventBanner() {
   useEffect(() => {
     const active = getActiveEvent();
     if (!active) return;
-    
-    // Check if user dismissed this event
-    const dismissedId = localStorage.getItem('event-dismissed');
-    if (dismissedId === active.id) {
-      setDismissed(true);
-      return;
-    }
 
     setEvent(active);
     setTime(getTimeRemaining(active.endDate));
@@ -48,7 +41,8 @@ export function EventBanner() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  if (!event || dismissed || time.expired || isPro) return null;
+  if (!event || time.expired) return null;
+  if (dismissed) return null;
 
   return (
     <div

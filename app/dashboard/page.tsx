@@ -70,7 +70,7 @@ const STORAGE_KEYS = {
 export default function DashboardPage() {
   const router = useRouter();
   const { isPro } = useContentAccess();
-  const [showOnboarding, setShowOnboarding] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(false); // Onboarding disabled
   const [currentStep, setCurrentStep] = useState<OnboardingStep>('welcome');
   const [onboardingData, setOnboardingData] = useState<OnboardingData>({
     targetCLB: null,
@@ -276,7 +276,8 @@ export default function DashboardPage() {
   });
 
   useEffect(() => {
-    checkOnboardingStatus();
+    // Onboarding disabled — skip check
+    setShowOnboarding(false);
     loadStats();
   }, []);
 

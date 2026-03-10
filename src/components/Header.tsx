@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Home, Dumbbell, User, LogOut, ChevronDown, Crown, CreditCard, BookOpen, HelpCircle, GraduationCap } from 'lucide-react';
+import { Home, Dumbbell, User, LogOut, ChevronDown, Crown, CreditCard, BookOpen, HelpCircle, GraduationCap, Trophy } from 'lucide-react';
 import { useUser } from '@/hooks/useUser';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import { createClient } from '@/lib/supabase/client';
@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
   { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
   { to: '/blog', icon: BookOpen, label: 'Learn' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
+  { to: '/rankings', icon: Trophy, label: 'Rankings' },
   { to: '/profile', icon: User, label: 'Profile' },
   { to: '/support', icon: HelpCircle, label: 'Support' },
 ];

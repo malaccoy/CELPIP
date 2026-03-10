@@ -3,6 +3,7 @@ import OpenAI from 'openai';
 import { writeFile, unlink } from 'fs/promises';
 import { join } from 'path';
 import { randomUUID } from 'crypto';
+import { logActivity } from '@/lib/activity';
 import { requireProWithLimit } from '@/lib/plan';
 
 const openai = new OpenAI({
@@ -204,6 +205,15 @@ IMPORTANT RULES:
 
     const analysisText = completion.choices[0]?.message?.content || '';
     const analysis = JSON.parse(analysisText);
+
+    // Log activity for leaderboard
+    try {
+      const { auth } = await import('@/../auth');
+      const session = await auth();
+      if (session?.user?.id) {
+        await logActivity(session.user.id, 'speaking');
+      }
+    } catch {}
 
     return NextResponse.json({
       ...analysis,

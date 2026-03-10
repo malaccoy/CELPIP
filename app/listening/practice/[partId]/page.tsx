@@ -209,6 +209,13 @@ export default function ListeningPracticePage() {
     
     setAnswers(prev => new Map(prev).set(key, { selected: selectedAnswer, correct: isCorrect }));
     setShowResult(true);
+
+    // Log activity for leaderboard
+    fetch('/api/log-activity', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'listening', count: 1 }),
+    }).catch(() => {});
   };
 
   const handleNextQuestion = () => {

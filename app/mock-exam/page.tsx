@@ -376,6 +376,14 @@ export default function AIMockExamPage() {
           recordAttempt(r.section, `mock-exam`, r.score, r.total);
         }
       }
+      // Log activity for leaderboard
+      for (const r of allResults) {
+        if (r.section === 'writing' || r.section === 'speaking') {
+          fetch('/api/log-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: r.section, count: 1 }) }).catch(() => {});
+        } else if (r.total > 0) {
+          fetch('/api/log-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: r.section, count: r.total }) }).catch(() => {});
+        }
+      }
       // Trigger AI evaluation
       setPhase('evaluating');
       setEvaluating(true);

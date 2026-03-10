@@ -17,6 +17,7 @@ model User {
   password        String?
   image           String?
   referralSource  String?
+  showInRanking   Boolean   @default(true)
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
 
@@ -27,6 +28,7 @@ model User {
   passwordResets  PasswordReset[]
   practices       Practice[]
   writingAnalyses WritingAnalysis[]
+  activityLogs    ActivityLog[]
   
   @@map("users")
 }
@@ -207,4 +209,18 @@ model ApiUsage {
 
   @@unique([userId, endpoint, date])
   @@map("api_usage")
+}
+
+model ActivityLog {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String   // "reading" | "listening" | "writing" | "speaking"
+  points    Int      // 1 or 2
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt])
+  @@index([userId, createdAt])
+  @@map("activity_logs")
 }
