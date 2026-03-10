@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { getBlogPost, getAllBlogPosts } from '@content/blog-posts';
 import { notFound } from 'next/navigation';
+import { getPostBySlug, getPostSlugs } from '@/lib/blog';
 import BlogArticle from './BlogArticle';
 
 interface Props {
@@ -8,33 +8,61 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllBlogPosts().map((post) => ({ slug: post.slug }));
+  return getPostSlugs().map(slug => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getPostBySlug(slug);
   if (!post) return {};
 
   return {
-    title: post.title,
+    title: `${post.title} | CELPIP AI Coach`,
     description: post.description,
-    keywords: post.keywords,
-    alternates: { canonical: `https://celpipaicoach.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
+      url: `https://celpipaicoach.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
-      url: `https://celpipaicoach.com/blog/${post.slug}`,
+      modifiedTime: post.updated || post.date,
+      tags: post.tags,
     },
   };
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  return <BlogArticle post={post} />;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.updated || post.date,
+    author: { '@type': 'Organization', name: 'CELPIP AI Coach' },
+    publisher: { '@type': 'Organization', name: 'CELPIP AI Coach', url: 'https://celpipaicoach.com' },
+    mainEntityOfPage: `https://celpipaicoach.com/blog/${slug}`,
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://celpipaicoach.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://celpipaicoach.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://celpipaicoach.com/blog/${slug}` },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <BlogArticle post={post} />
+    </>
+  );
 }

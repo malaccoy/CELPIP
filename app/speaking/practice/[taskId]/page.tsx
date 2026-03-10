@@ -29,6 +29,9 @@ interface AIFeedback {
     fluency: { score: number; comment: string };
     structure: { score: number; comment: string };
   };
+  grammarErrors?: { error: string; correction: string; explanation: string }[];
+  vocabularySuggestions?: { used: string; better: string; why: string }[];
+  modelResponse?: string;
   overallComment: string;
 }
 
@@ -58,6 +61,7 @@ export default function SpeakingPracticePage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const prepTimerRef = useRef<NodeJS.Timeout | null>(null);
   const speakTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const isRecordingRef = useRef(false);
 
   // Initialize prompt
   useEffect(() => {
@@ -81,24 +85,35 @@ export default function SpeakingPracticePage() {
 
   const startPrep = () => {
     setPhase('prep');
-    setPrepTimeLeft(task!.prepTime);
+    const totalPrep = task!.prepTime;
+    setPrepTimeLeft(totalPrep);
+    const startTime = Date.now();
     
     prepTimerRef.current = setInterval(() => {
-      setPrepTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(prepTimerRef.current!);
-          startRecording();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+      const elapsed = Math.floor((Date.now() - startTime) / 1000);
+      const remaining = totalPrep - elapsed;
+      
+      if (remaining <= 0) {
+        clearInterval(prepTimerRef.current!);
+        setPrepTimeLeft(0);
+        startRecording();
+      } else {
+        setPrepTimeLeft(remaining);
+      }
+    }, 250);
   };
 
   const startRecording = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm') 
+        ? 'audio/webm' 
+        : MediaRecorder.isTypeSupported('audio/mp4') 
+          ? 'audio/mp4' 
+          : '';
+      const mediaRecorder = mimeType 
+        ? new MediaRecorder(stream, { mimeType }) 
+        : new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       audioChunksRef.current = [];
 
@@ -109,28 +124,42 @@ export default function SpeakingPracticePage() {
       };
 
       mediaRecorder.onstop = () => {
-        const blob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        const recMime = mediaRecorder.mimeType || 'audio/webm';
+        const blob = new Blob(audioChunksRef.current, { type: recMime });
         setAudioBlob(blob);
         const url = URL.createObjectURL(blob);
         setAudioUrl(url);
         stream.getTracks().forEach(track => track.stop());
+        setPhase('review');
       };
 
       mediaRecorder.start();
       setIsRecording(true);
+      isRecordingRef.current = true;
       setPhase('recording');
-      setSpeakTimeLeft(task!.speakTime);
+      
+      const totalTime = task!.speakTime;
+      setSpeakTimeLeft(totalTime);
+      const startTime = Date.now();
 
       speakTimerRef.current = setInterval(() => {
-        setSpeakTimeLeft(prev => {
-          if (prev <= 1) {
-            clearInterval(speakTimerRef.current!);
-            stopRecording();
-            return 0;
+        const elapsed = Math.floor((Date.now() - startTime) / 1000);
+        const remaining = totalTime - elapsed;
+        
+        if (remaining <= 0) {
+          clearInterval(speakTimerRef.current!);
+          setSpeakTimeLeft(0);
+          // Auto-stop recording
+          if (mediaRecorderRef.current && isRecordingRef.current) {
+            mediaRecorderRef.current.stop();
+            isRecordingRef.current = false;
+            setIsRecording(false);
+            markExerciseDone();
           }
-          return prev - 1;
-        });
-      }, 1000);
+        } else {
+          setSpeakTimeLeft(remaining);
+        }
+      }, 250);
     } catch (err) {
       setError('Could not access microphone. Please allow microphone access.');
       console.error('Microphone error:', err);
@@ -138,23 +167,43 @@ export default function SpeakingPracticePage() {
   };
 
   const stopRecording = () => {
-    if (mediaRecorderRef.current && isRecording) {
+    if (mediaRecorderRef.current && isRecordingRef.current) {
       mediaRecorderRef.current.stop();
+      isRecordingRef.current = false;
       setIsRecording(false);
       if (speakTimerRef.current) clearInterval(speakTimerRef.current);
-      setPhase('review');
       markExerciseDone();
     }
   };
 
   const playAudio = () => {
-    if (audioUrl && audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        audioRef.current.play();
-        setIsPlaying(true);
+    if (!audioRef.current || !audioUrl) return;
+    
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      // On mobile, we need to load then play
+      audioRef.current.load();
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          setIsPlaying(true);
+        }).catch((err) => {
+          console.error('Playback error:', err);
+          setIsPlaying(false);
+          // Fallback: try with fresh element  
+          try {
+            const a = new Audio(audioUrl);
+            a.onended = () => setIsPlaying(false);
+            a.play().then(() => setIsPlaying(true)).catch(() => {
+              setError('Could not play recording. Try recording again.');
+            });
+            audioRef.current = a;
+          } catch {
+            setError('Could not play recording. Try recording again.');
+          }
+        });
       }
     }
   };
@@ -168,7 +217,15 @@ export default function SpeakingPracticePage() {
 
     try {
       const formData = new FormData();
-      formData.append('audio', audioBlob, 'recording.webm');
+      const blobType = audioBlob.type || '';
+      const ext = blobType.includes('mp4') || blobType.includes('m4a') ? 'mp4' 
+                : blobType.includes('ogg') ? 'ogg' 
+                : blobType.includes('wav') ? 'wav'
+                : blobType.includes('webm') ? 'webm'
+                : 'mp4'; // Safari default fallback
+      const mimeType = blobType || `audio/${ext}`;
+      const file = new File([audioBlob], `recording.${ext}`, { type: mimeType });
+      formData.append('audio', file);
       formData.append('taskType', task!.id);
       formData.append('taskPart', task!.part.toString());
       formData.append('prompt', currentPrompt?.prompt || '');
@@ -351,11 +408,16 @@ export default function SpeakingPracticePage() {
                   {isPlaying ? <Pause size={24} /> : <Play size={24} />}
                 </button>
                 <span>Listen to your recording</span>
-                <audio 
-                  ref={audioRef} 
-                  src={audioUrl || ''} 
-                  onEnded={() => setIsPlaying(false)} 
-                />
+                {audioUrl && (
+                  <audio
+                    ref={audioRef}
+                    src={audioUrl}
+                    preload="auto"
+                    playsInline
+                    onEnded={() => setIsPlaying(false)}
+                    style={{ display: 'none' }}
+                  />
+                )}
               </div>
               
               {error && (
@@ -507,6 +569,74 @@ export default function SpeakingPracticePage() {
                       </ul>
                     </div>
                   </div>
+
+                  {/* Grammar Errors */}
+                  {feedback.grammarErrors && feedback.grammarErrors.length > 0 && (
+                    <div className={styles.transcriptSection}>
+                      <h4><AlertCircle size={16} /> Grammar Corrections</h4>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                        {feedback.grammarErrors.map((err, idx) => (
+                          <div key={idx} style={{
+                            background: 'rgba(239,68,68,0.06)',
+                            border: '1px solid rgba(239,68,68,0.15)',
+                            borderRadius: 10,
+                            padding: '0.75rem 1rem',
+                          }}>
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.25rem' }}>
+                              <span style={{ color: '#f87171', textDecoration: 'line-through', fontSize: '0.9rem' }}>{err.error}</span>
+                              <span style={{ color: 'var(--text-dim)' }}>→</span>
+                              <span style={{ color: '#4ade80', fontWeight: 600, fontSize: '0.9rem' }}>{err.correction}</span>
+                            </div>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', margin: 0 }}>{err.explanation}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Vocabulary Suggestions */}
+                  {feedback.vocabularySuggestions && feedback.vocabularySuggestions.length > 0 && (
+                    <div className={styles.transcriptSection}>
+                      <h4><Sparkles size={16} /> Vocabulary Upgrades</h4>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                        {feedback.vocabularySuggestions.map((sug, idx) => (
+                          <div key={idx} style={{
+                            background: 'rgba(59,130,246,0.06)',
+                            border: '1px solid rgba(59,130,246,0.15)',
+                            borderRadius: 10,
+                            padding: '0.75rem 1rem',
+                          }}>
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.25rem' }}>
+                              <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>&ldquo;{sug.used}&rdquo;</span>
+                              <span style={{ color: 'var(--text-dim)' }}>→</span>
+                              <span style={{ color: '#60a5fa', fontWeight: 600, fontSize: '0.9rem' }}>&ldquo;{sug.better}&rdquo;</span>
+                            </div>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', margin: 0 }}>{sug.why}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Model Response */}
+                  {feedback.modelResponse && (
+                    <div className={styles.transcriptSection}>
+                      <h4><Sparkles size={16} /> Improved Version</h4>
+                      <div style={{
+                        background: 'rgba(74,222,128,0.06)',
+                        border: '1px solid rgba(74,222,128,0.15)',
+                        borderRadius: 10,
+                        padding: '1rem',
+                      }}>
+                        <p style={{ color: 'var(--text-primary)', lineHeight: 1.6, margin: 0, fontStyle: 'italic' }}>
+                          &ldquo;{feedback.modelResponse}&rdquo;
+                        </p>
+                      </div>
+                      <p style={{ color: 'var(--text-dim)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+                        💡 This is your response restructured with better vocabulary and grammar. Practice saying it out loud!
+                      </p>
+                    </div>
+                  )}
 
                   {/* Actions */}
                   <div className={styles.feedbackActions}>

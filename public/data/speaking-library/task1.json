@@ -1,0 +1,332 @@
+[
+  {
+    "id": "task1-01",
+    "scenario": "Your friend Emily has been working in an office job for the last five years. Recently, she has been thinking about switching to remote freelancing, but she is unsure if it's the right decision for her. She's worried about stability and finding clients.",
+    "prompt": "Give Emily advice about her decision to switch from an office job to remote freelancing.",
+    "bulletPoints": [
+      "Consider your current financial stability and whether you have enough savings to support yourself during the transition.",
+      "Think about the importance of building a network and marketing yourself to find freelance clients.",
+      "Remember to weigh the pros and cons of flexible hours versus the unpredictability of freelance work."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-02",
+    "scenario": "My sister, Sarah, is considering moving from Toronto to a small town in Nova Scotia for a quieter lifestyle. She's unsure if this change will be beneficial for her career and personal life.",
+    "prompt": "Give Sarah advice about her decision to move to Nova Scotia.",
+    "bulletPoints": [
+      "Consider the job market in Nova Scotia and whether similar opportunities are available for you.",
+      "Think about how the slower pace of life might affect your social activities and hobbies.",
+      "Remember to factor in the cost of living differences and how they might impact your budget."
+    ],
+    "context": "You are talking to your sister."
+  },
+  {
+    "id": "task1-03",
+    "scenario": "Your coworker, Sarah, has been thinking about starting a food truck business that specializes in poutine. She is unsure if this is the right decision and is seeking your advice on how to proceed.",
+    "prompt": "Give Sarah advice about her decision to start a food truck business selling poutine.",
+    "bulletPoints": [
+      "Consider the location where you plan to sell your poutine and the potential customer base.",
+      "Think about the costs involved in starting the business, including permits, equipment, and ingredients.",
+      "Remember to assess the competition in your area and find ways to make your poutine unique."
+    ],
+    "context": "You are talking to your coworker."
+  },
+  {
+    "id": "task1-04",
+    "scenario": "My brother Alex is trying to decide whether to buy or lease a new car. He is excited about getting a new vehicle but is unsure which option is better for his financial situation and lifestyle.",
+    "prompt": "Give Alex advice about whether to buy or lease a new car.",
+    "bulletPoints": [
+      "Consider the total cost of ownership versus leasing, including insurance, maintenance, and monthly payments.",
+      "Think about how long you plan to keep the car and how many kilometers you will drive each year.",
+      "Remember that leasing often comes with restrictions on mileage and customization options."
+    ],
+    "context": "You are talking to your brother."
+  },
+  {
+    "id": "task1-05",
+    "scenario": "Your friend Emily is thinking about adopting a rescue dog from a local shelter. She loves dogs but is unsure if she has the time and resources to care for a pet. She's also worried about the potential challenges of training a rescue dog.",
+    "prompt": "Give Emily advice about adopting a rescue dog from a shelter.",
+    "bulletPoints": [
+      "Consider the time commitment required for training and caring for a dog.",
+      "Think about how adopting a rescue dog can provide it with a loving home and companionship for you.",
+      "Remember to research the breed and needs of the dog to ensure it fits your lifestyle."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-06",
+    "scenario": "My cousin Jenna has been considering dropping out of college to pursue a career as a YouTuber. She feels passionate about creating content but is unsure if it's the right choice, especially since she is in her second year of studies.",
+    "prompt": "Give Jenna advice about her decision to drop out of college to become a YouTuber.",
+    "bulletPoints": [
+      "Consider the long-term stability that a college degree can provide in case her YouTube channel doesn’t succeed.",
+      "Think about how she can balance her studies with creating content to see if she can manage both for now.",
+      "Remember the importance of having a backup plan in case her YouTube career doesn’t go as planned."
+    ],
+    "context": "You are talking to your cousin."
+  },
+  {
+    "id": "task1-07",
+    "scenario": "Your neighbor, Mark, is considering renovating his basement to turn it into a rental suite. He has been debating whether it is a good investment and how it might affect his property value and neighborhood dynamics.",
+    "prompt": "Give Mark advice about renovating his basement into a rental suite.",
+    "bulletPoints": [
+      "Consider the potential rental income and how it could help cover mortgage payments.",
+      "Think about the impact on your current living space and the privacy you will maintain.",
+      "Remember to check local zoning laws and regulations regarding rental suites in your area."
+    ],
+    "context": "You are talking to your neighbor."
+  },
+  {
+    "id": "task1-08",
+    "scenario": "My friend Sarah has decided that she wants to train for and run a marathon next spring. However, she feels overwhelmed by the commitment and isn't sure where to start.",
+    "prompt": "Give Sarah advice about training for and running a marathon next spring.",
+    "bulletPoints": [
+      "Consider starting with a structured training plan that gradually increases your running distance.",
+      "Think about joining a local running club for motivation and support from experienced runners.",
+      "Remember to incorporate rest days and cross-training to prevent injury and improve overall fitness."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-09",
+    "scenario": "My friend Sarah is considering retiring early at age 55. She has been working for over 30 years in the healthcare sector and is worried about her financial stability and how to keep herself engaged after retirement.",
+    "prompt": "Give Sarah advice about her decision to retire early.",
+    "bulletPoints": [
+      "Consider the impact on your retirement savings and whether you will have enough to support your lifestyle.",
+      "Think about how you will fill your time and stay socially connected once you are no longer working.",
+      "Remember to explore options for part-time work or volunteering that can provide structure and a sense of purpose in your retirement."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-10",
+    "scenario": "Your friend Sarah is considering taking a gap year to travel across Canada before starting university. She is unsure if it's the right decision, as she is worried about finances and missing out on academic opportunities.",
+    "prompt": "Give Sarah advice about her decision to take a gap year to travel across Canada.",
+    "bulletPoints": [
+      "Consider the unique experiences and personal growth that traveling can provide.",
+      "Think about budgeting and planning your trips to make it financially feasible.",
+      "Remember that taking a gap year can also enhance your resume and university applications."
+    ],
+    "context": "You are talking to your close friend."
+  },
+  {
+    "id": "task1-11",
+    "scenario": "Your coworker, Michael, has been working in accounting for several years but feels unfulfilled and passionate about switching to a teaching career. He is unsure about making this significant change and is seeking your guidance.",
+    "prompt": "Give Michael advice about his decision to switch careers from accounting to teaching.",
+    "bulletPoints": [
+      "Consider the job market for teachers in your area and the demand for educators.",
+      "Think about the necessary qualifications and training required to become a teacher.",
+      "Remember to assess your financial situation during the transition, as starting a new career might involve a pay cut initially."
+    ],
+    "context": "You are talking to your coworker."
+  },
+  {
+    "id": "task1-12",
+    "scenario": "My sister, Emily, is considering homeschooling her two children because she feels that the traditional school system isn't meeting their needs. She is unsure about the curriculum, socialization opportunities, and whether she can manage the responsibilities of teaching them at home.",
+    "prompt": "Give Emily advice about her decision to homeschool her children.",
+    "bulletPoints": [
+      "Consider the structure and routine that homeschooling will require, and how it might impact your daily life.",
+      "Think about the resources available for homeschooling, such as online courses, community groups, and support networks.",
+      "Remember the importance of socialization for your children and explore options for extracurricular activities and playdates."
+    ],
+    "context": "You are talking to your sister."
+  },
+  {
+    "id": "task1-13",
+    "scenario": "My friend Alex is trying to decide whether to invest in cryptocurrency or real estate. He is concerned about the risks and potential returns of each option, and he wants to make an informed decision that will benefit him in the long run.",
+    "prompt": "Give Alex advice about investing in cryptocurrency or real estate.",
+    "bulletPoints": [
+      "Consider the volatility of cryptocurrency compared to the stability of real estate.",
+      "Think about your long-term goals and how each investment aligns with them.",
+      "Remember to research local market trends and potential future developments in your area."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-14",
+    "scenario": "My brother, Alex, is thinking about moving to Vancouver for a new job opportunity. However, he is very concerned about the high housing costs in the city and whether he can afford to live there.",
+    "prompt": "Give Alex advice about his concerns regarding moving to Vancouver.",
+    "bulletPoints": [
+      "Consider looking for shared accommodations or renting a room to reduce housing expenses.",
+      "Think about the possibility of living in nearby suburbs, which might offer lower rent and better deals.",
+      "Remember to budget for other living expenses in Vancouver, as they can be quite high too."
+    ],
+    "context": "You are talking to your brother."
+  },
+  {
+    "id": "task1-15",
+    "scenario": "Your friend Sarah has been working in retail for several years but is now considering going back to school to pursue a nursing degree. She's unsure if it's the right decision for her and is worried about the time and financial investment involved.",
+    "prompt": "Give Sarah advice about her decision to go back to school for a nursing degree.",
+    "bulletPoints": [
+      "Consider the job security and demand for nurses in Canada, especially after the pandemic.",
+      "Think about how a nursing degree could lead to a fulfilling career and help you make a difference in people's lives.",
+      "Remember to look into scholarships and financial aid options that can help alleviate the cost of your education."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-16",
+    "scenario": "Your cousin Emily is contemplating starting an online tutoring business focused on helping high school students with math and science. She is unsure about the best way to begin and is concerned about the competition in the market.",
+    "prompt": "Give Emily advice about starting her online tutoring business.",
+    "bulletPoints": [
+      "Consider the unique skills or teaching methods that set you apart from other tutors.",
+      "Think about the best platforms to use for online tutoring to reach your target audience effectively.",
+      "Remember to create a marketing strategy, such as social media promotion, to attract students."
+    ],
+    "context": "You are talking to your cousin."
+  },
+  {
+    "id": "task1-17",
+    "scenario": "Your neighbor, John, is considering installing solar panels on his house to reduce energy costs and help the environment. However, he is unsure if it is the right investment and has some concerns about the installation process.",
+    "prompt": "Give John advice about installing solar panels on his house.",
+    "bulletPoints": [
+      "Consider the long-term savings on electricity bills and potential government incentives.",
+      "Think about how the solar panels might affect the aesthetic appeal of the neighborhood.",
+      "Remember to research reliable contractors and check for any local regulations regarding solar panel installations."
+    ],
+    "context": "You are talking to your neighbor."
+  },
+  {
+    "id": "task1-18",
+    "scenario": "My friend Sarah is considering joining the Canadian Armed Forces reserves. She’s unsure if it’s the right fit for her, as she values her current job and social life but is also interested in serving her country and gaining new skills.",
+    "prompt": "Give Sarah advice about her decision to join the Canadian Armed Forces reserves.",
+    "bulletPoints": [
+      "Consider how joining the reserves may impact your current job and work-life balance.",
+      "Think about the skills and experiences you might gain, and how they could benefit your future career.",
+      "Remember that commitment to the reserves may lead to new friendships and a sense of community, but it will require dedication."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-19",
+    "scenario": "Your coworker, Sarah, is considering taking unpaid leave to care for her elderly parent who has recently fallen ill. She is worried about the impact on her career and finances.",
+    "prompt": "Give Sarah advice about taking unpaid leave to care for her elderly parent.",
+    "bulletPoints": [
+      "Consider the financial implications of taking unpaid leave and how it may affect your budget.",
+      "Think about the support systems you can put in place to help care for your parent, such as community resources or family assistance.",
+      "Remember to communicate with your employer about your situation and explore options for flexibility or reduced hours."
+    ],
+    "context": "You are talking to your coworker."
+  },
+  {
+    "id": "task1-20",
+    "scenario": "My sister, Emily, is thinking about opening a daycare in her home. She loves working with children and believes it could be a great way to earn income while spending time with them. However, she is unsure about the requirements and if it's the right choice for her.",
+    "prompt": "Give Emily advice about opening a daycare in her home.",
+    "bulletPoints": [
+      "Consider the licensing and regulations required for daycare services in your area.",
+      "Think about the space you have available and whether it can comfortably accommodate multiple children.",
+      "Remember to calculate the potential costs versus income to ensure it's financially viable."
+    ],
+    "context": "You are talking to your sister."
+  },
+  {
+    "id": "task1-21",
+    "scenario": "Your friend Sarah is planning a destination wedding and is considering Banff as the location. She is excited but also unsure if it will be the right choice due to logistics and costs.",
+    "prompt": "Give Sarah advice about planning her destination wedding in Banff.",
+    "bulletPoints": [
+      "Consider the travel costs for guests, as Banff can be expensive to reach, especially in peak seasons.",
+      "Think about the weather during the time of year you plan to have the wedding, as it can be unpredictable in the mountains.",
+      "Remember to explore local vendors and services in Banff to ensure you find reliable options for catering and decorations."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-22",
+    "scenario": "My brother, David, is considering buying a motorcycle for commuting to work in downtown Toronto. He thinks it will help him avoid traffic and save money on gas, but he is unsure about the safety and maintenance involved.",
+    "prompt": "Give David advice about whether he should get a motorcycle for commuting.",
+    "bulletPoints": [
+      "Consider the safety risks associated with riding a motorcycle in heavy traffic.",
+      "Think about the cost of insurance and maintenance compared to other forms of transportation.",
+      "Remember to weigh the convenience of parking and maneuverability against potential weather challenges."
+    ],
+    "context": "You are talking to your brother."
+  },
+  {
+    "id": "task1-23",
+    "scenario": "My friend Sarah is considering volunteering abroad for six months to help with a community development project. She is excited about the opportunity, but she is also worried about leaving her job and family behind.",
+    "prompt": "Give Sarah advice about whether she should volunteer abroad for six months.",
+    "bulletPoints": [
+      "Consider the skills and experience you will gain that can enhance your career when you return.",
+      "Think about how this experience could impact your relationships with family and friends during your absence.",
+      "Remember to research the location and organization to ensure it aligns with your values and interests."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-24",
+    "scenario": "My cousin Sarah has been dating her partner for three months and is considering moving in together. She is excited about the idea but also feels uncertain about the timing.",
+    "prompt": "Give Sarah advice about moving in with her partner after just three months.",
+    "bulletPoints": [
+      "Consider how well you know each other and if you have discussed important topics such as finances, household responsibilities, and future plans.",
+      "Think about the potential impact on your relationship if things don't go as planned and how that might affect both of you.",
+      "Remember to communicate openly with your partner about your feelings and any concerns you may have before making a decision."
+    ],
+    "context": "You are talking to your cousin."
+  },
+  {
+    "id": "task1-25",
+    "scenario": "Your coworker, Sarah, is thinking about asking for a raise despite the company's current economic downturn. She is concerned about how it might affect her job security and is unsure if it's the right time to bring it up with her manager.",
+    "prompt": "Give Sarah advice about whether she should ask for a raise during this economic downturn.",
+    "bulletPoints": [
+      "Consider the company's financial situation and how it may impact their ability to give raises.",
+      "Think about your recent contributions and whether they justify a raise at this time.",
+      "Remember to prepare for the conversation by having a clear understanding of your worth and market rates."
+    ],
+    "context": "You are talking to your coworker."
+  },
+  {
+    "id": "task1-26",
+    "scenario": "A friend named Sarah has been feeling overwhelmed and stressed due to constant notifications and comparisons on social media. She is considering quitting all social media platforms entirely to focus on her mental well-being.",
+    "prompt": "Give Sarah advice about her decision to quit social media.",
+    "bulletPoints": [
+      "Consider how this decision might improve your mental health and overall happiness.",
+      "Think about alternative ways to stay connected with friends and family without social media.",
+      "Remember that you can take a break first and see how you feel before making a permanent decision."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-27",
+    "scenario": "Your neighbor, Sarah, is thinking about getting a hot tub for her backyard. She loves the idea of relaxing in it after a long day, but she's unsure if it's the right choice for her home and lifestyle.",
+    "prompt": "Give Sarah advice about whether she should get a hot tub for her backyard.",
+    "bulletPoints": [
+      "Consider the maintenance costs and time required for keeping the hot tub clean and functional.",
+      "Think about how often you'll actually use it and if it fits your lifestyle and social gatherings.",
+      "Remember to check local regulations or Homeowners Association rules regarding hot tubs in your area."
+    ],
+    "context": "You are talking to your neighbor."
+  },
+  {
+    "id": "task1-28",
+    "scenario": "Your friend Sarah is considering downsizing from her large family home to a smaller condo. She is worried about leaving behind the house where she raised her children, but she also wants to reduce her maintenance costs and live in a more manageable space.",
+    "prompt": "Give Sarah advice about her decision to downsize to a condo.",
+    "bulletPoints": [
+      "Consider the financial benefits of reduced maintenance and property taxes in a condo.",
+      "Think about the lifestyle change and how a condo community might offer new social opportunities.",
+      "Remember to evaluate the emotional attachment to the family home and how to preserve those memories."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-29",
+    "scenario": "My friend Sarah is considering becoming a vegan for health reasons. She has been experiencing some digestive issues and believes a plant-based diet could help her feel better and lose weight. However, she is unsure about how to make this transition and whether it’s the right choice for her lifestyle.",
+    "prompt": "Give Sarah advice about her decision to become a vegan.",
+    "bulletPoints": [
+      "Consider gradually introducing more plant-based meals into your diet instead of switching abruptly.",
+      "Think about how to ensure you're getting all the necessary nutrients, like protein, iron, and vitamins, from your new diet.",
+      "Remember to explore different vegan recipes and foods that you enjoy to make the transition enjoyable."
+    ],
+    "context": "You are talking to your friend."
+  },
+  {
+    "id": "task1-30",
+    "scenario": "My sister, Emily, is thinking about applying for Canadian citizenship. She has lived in Canada for over three years but is unsure if she should take the plunge and start the application process.",
+    "prompt": "Give Emily advice about her decision to apply for Canadian citizenship.",
+    "bulletPoints": [
+      "Consider the benefits of having Canadian citizenship, such as the ability to vote and access to healthcare.",
+      "Think about the requirements for applying and whether you meet them, including residency and language proficiency.",
+      "Remember that becoming a citizen is a long-term commitment and may affect your future plans, like travel or education."
+    ],
+    "context": "You are talking to your sister."
+  }
+]

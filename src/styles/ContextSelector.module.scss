@@ -327,6 +327,40 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }
 
+.optionItemLocked {
+  opacity: 0.5;
+  cursor: not-allowed;
+  
+  &:hover {
+    background: transparent;
+    transform: none;
+  }
+  
+  .optionTitle {
+    color: $text-primary;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
+
+.lockIcon {
+  color: #f59e0b;
+  flex-shrink: 0;
+}
+
+.proBadge {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
 .optionTitle {
   font-size: 0.875rem;
   color: $text-primary;
@@ -369,8 +403,10 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   width: 300px;
   min-width: 300px;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
   max-height: 500px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 // Inner container for proper flex layout when visible
@@ -378,9 +414,9 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 .previewInner {
   display: flex;
   flex-direction: column;
-  height: auto;
-  min-height: 100%;
-  width: 300px; // Fixed width to prevent layout shifts during transition
+  height: 100%;
+  width: 300px;
+  overflow: hidden;
 }
 
 .previewHeader {
@@ -424,8 +460,7 @@ $transition-preview: 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
-  min-height: 200px; // Minimum height to show content
-  max-height: none; // Allow content to grow
+  min-height: 0;
   // Smooth fade in for content
   animation: fadeInContent 200ms ease-out;
   

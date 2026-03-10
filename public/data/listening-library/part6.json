@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "part6-01",
+    "title": "Increasing Immigration Targets in Canada",
+    "context": "Listen to a discussion among three individuals sharing their viewpoints on whether Canada should increase immigration targets.",
+    "audioFile": "part6-01.mp3",
+    "duration": 198.168,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Sarah's main argument regarding immigration?",
+        "options": [
+          "A. It should be reduced to ease housing prices.",
+          "B. It should be increased to address labor shortages.",
+          "C. It should focus only on skilled workers.",
+          "D. It should be eliminated completely."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What specific concern does David raise about increasing immigration?",
+        "options": [
+          "A. Decreased economic growth.",
+          "B. Strain on community resources.",
+          "C. Lower tax contributions.",
+          "D. Lack of skilled professionals."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What example does David provide to illustrate housing issues?",
+        "options": [
+          "A. Average rent in Toronto is $2,000.",
+          "B. The cost of groceries has increased.",
+          "C. The average rent for a one-bedroom in Vancouver is $2,500.",
+          "D. Housing prices are lower now than last year."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Sarah believe about the economic contribution of immigrants?",
+        "options": [
+          "A. They only consume resources.",
+          "B. They help reduce taxes.",
+          "C. They pay more in taxes than they use in services.",
+          "D. They cause economic instability."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How do both speakers agree regarding immigration?",
+        "options": [
+          "A. It should not be increased under any circumstances.",
+          "B. It can benefit the economy if managed well.",
+          "C. It has no impact on housing.",
+          "D. It should only include refugees."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the tone of the discussion between Sarah and David?",
+        "options": [
+          "A. Hostile and aggressive.",
+          "B. Supportive and collaborative.",
+          "C. Dismissive and uninterested.",
+          "D. Balanced and constructive."
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part6-02",
+    "title": "Pros and Cons of Universal Basic Income",
+    "context": "Listen to three people discussing their viewpoints on Universal Basic Income in Canada.",
+    "audioFile": "part6-02.mp3",
+    "duration": 199.56,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A: Effects of inflation",
+          "B: Universal Basic Income",
+          "C: Job market trends",
+          "D: Cost of living in Toronto"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What suggestion does Sarah make regarding UBI?",
+        "options": [
+          "A: It will lead to job loss",
+          "B: It could simplify government programs",
+          "C: It may increase taxes",
+          "D: It should replace existing welfare programs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which Canadian city is mentioned as facing high rental costs?",
+        "options": [
+          "A: Ottawa",
+          "B: Quebec City",
+          "C: Vancouver",
+          "D: Winnipeg"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What concern does the man express about UBI?",
+        "options": [
+          "A: Increased job opportunities",
+          "B: High administrative costs",
+          "C: Lack of fairness",
+          "D: Simplifying bureaucracy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What does Lisa suggest about implementing UBI?",
+        "options": [
+          "A: It should be implemented universally",
+          "B: A pilot program would be beneficial",
+          "C: It would eliminate all social programs",
+          "D: It is not necessary for young people"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is Sarah's perspective on work in relation to UBI?",
+        "options": [
+          "A: People will not work at all",
+          "B: It may encourage pursuing passions",
+          "C: Everyone will choose to remain unemployed",
+          "D: It is irrelevant to work"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-03",
+    "title": "Debating the Effectiveness of Banning Single-Use Plastics in Canada",
+    "context": "Listen to a conversation among three individuals discussing the implications of banning single-use plastics in Canada. Pay attention to their viewpoints and opinions.",
+    "audioFile": "part6-03.mp3",
+    "duration": 206.088,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Julia's main argument regarding single-use plastics?",
+        "options": [
+          "A: It preserves business interests.",
+          "B: It is essential for environmental preservation.",
+          "C: It is too costly for consumers.",
+          "D: It should be optional."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "According to Mark, what is a primary concern for small businesses regarding the plastic ban?",
+        "options": [
+          "A: Profit from selling reusable products.",
+          "B: Increased costs for alternative packaging.",
+          "C: Customer resistance to change.",
+          "D: Lack of government support."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does Julia suggest changing public habits toward plastics?",
+        "options": [
+          "A: By enforcing harsh penalties.",
+          "B: Through public education and outreach.",
+          "C: By making reusable products illegal.",
+          "D: By increasing taxes on single-use plastics."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What financial challenge does Mark mention about reusable products?",
+        "options": [
+          "A: They are often cheaper.",
+          "B: They require an upfront investment.",
+          "C: They have an unlimited shelf life.",
+          "D: They are provided free by the government."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What initiative is highlighted from Calgary?",
+        "options": [
+          "A: Community education programs.",
+          "B: Plastic recycling program.",
+          "C: Plastic bag giveaways.",
+          "D: Subsidized biodegradable products."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does Mark imply is necessary for a greater impact against plastic waste?",
+        "options": [
+          "A: A ban on all plastics.",
+          "B: A cultural shift and comprehensive strategies.",
+          "C: Increased costs for consumers.",
+          "D: More strict regulations on businesses."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-04",
+    "title": "Debate on Electric Vehicles Mandate in Canada",
+    "context": "Listen to a discussion about the government's mandate for electric vehicles in Canada by 2035, featuring different viewpoints from participants.",
+    "audioFile": "part6-04.mp3",
+    "duration": 210.648,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A mandate for electric vehicles",
+          "The impact of gasoline cars",
+          "Public transportation improvements",
+          "Renewable energy sources"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is one concern Mark raises about the electric vehicle mandate?",
+        "options": [
+          "The increase in electric car sales",
+          "Job losses in the automotive industry",
+          "A decrease in greenhouse gas emissions",
+          "The affordability of gasoline vehicles"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which province offers a rebate for electric vehicle purchases?",
+        "options": [
+          "Ontario",
+          "Alberta",
+          "British Columbia",
+          "Quebec"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Alex suggest about the long-term costs of electric vehicles?",
+        "options": [
+          "They are more expensive to maintain",
+          "They have no long-term savings",
+          "They are cheaper to maintain than gasoline vehicles",
+          "They require frequent repairs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What solution does Alex propose for rural areas regarding electric vehicles?",
+        "options": [
+          "Developing new gasoline models",
+          "Building more charging stations",
+          "Increasing gasoline subsidies",
+          "Offering free electric vehicles"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is Mark's attitude toward the electric vehicle mandate?",
+        "options": [
+          "Completely supportive",
+          "Cautiously optimistic",
+          "Indifferent",
+          "Totally opposed"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-05",
+    "title": "Social Media Age Restrictions for Teens",
+    "context": "Listen to the discussion between three individuals sharing their viewpoints on age restrictions for social media use among teens in Canada.",
+    "audioFile": "part6-05.mp3",
+    "duration": 208.848,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Rachel's primary argument regarding age restrictions?",
+        "options": [
+          "A. They are unnecessary.",
+          "B. They help protect teens.",
+          "C. They promote irresponsible behavior.",
+          "D. They increase social media use."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which Canadian city is Rachel from?",
+        "options": [
+          "A. Vancouver",
+          "B. Ottawa",
+          "C. Montreal",
+          "D. Toronto"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What does Mike suggest instead of age restrictions?",
+        "options": [
+          "A. Mandatory age checks.",
+          "B. Workshops on online safety.",
+          "C. A complete ban on social media.",
+          "D. Limiting internet access entirely."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does Rachel feel about the current use of social media among teens?",
+        "options": [
+          "A. It's beneficial overall.",
+          "B. It's causing anxiety.",
+          "C. It's encouraging friendships.",
+          "D. It's improving social skills."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is a concern raised by Mike about enforcing age restrictions?",
+        "options": [
+          "A. It's too easy to verify age.",
+          "B. It could lead to privacy issues.",
+          "C. There's no need for enforcement.",
+          "D. Teens don’t care about age limits."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What compromise do Rachel and Mike discuss?",
+        "options": [
+          "A. Remove age limits completely.",
+          "B. Combine restrictions with education.",
+          "C. Focus solely on workshops.",
+          "D. Introduce stricter age limits."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-06",
+    "title": "Debating Public vs. Private Healthcare in Canada",
+    "context": "Listen to a discussion about the pros and cons of public and private healthcare in Canada.",
+    "audioFile": "part6-06.mp3",
+    "duration": 211.704,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Dr. Thompson's main argument in favor of public healthcare?",
+        "options": [
+          "A: It provides access to all.",
+          "B: It is more cost-effective.",
+          "C: It eliminates wait times.",
+          "D: It is preferred by most Canadians."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What example does Mr. Carter give regarding wait times?",
+        "options": [
+          "A: Patients in Calgary wait months for surgeries.",
+          "B: Patients in Vancouver have long wait times.",
+          "C: Patients in Toronto receive immediate care.",
+          "D: Patients in Montreal never wait."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which city is mentioned as having a better funding system for public healthcare?",
+        "options": [
+          "A: Ottawa",
+          "B: Toronto",
+          "C: Calgary",
+          "D: Winnipeg"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Dr. Thompson suggest is a way to reduce wait times?",
+        "options": [
+          "A: Increase private clinics.",
+          "B: Allocate better resources.",
+          "C: Decrease taxes.",
+          "D: Limit public access."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Mr. Carter believe private healthcare can provide?",
+        "options": [
+          "A: Better salaries for doctors.",
+          "B: More choices and faster service.",
+          "C: Free healthcare for all.",
+          "D: Less dependence on public funding."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is Dr. Thompson's view on the financial implications of public healthcare?",
+        "options": [
+          "A: They are exaggerated and harmful.",
+          "B: They are beneficial for society.",
+          "C: They are unsustainable.",
+          "D: They lead to better private care."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-07",
+    "title": "The Debate on Mandatory Voting in Canada",
+    "context": "Listen to the discussion between three individuals as they share their viewpoints on mandatory voting in Canadian elections.",
+    "audioFile": "part6-07.mp3",
+    "duration": 220.224,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A) The importance of voting",
+          "B) Mandatory voting in Canada",
+          "C) Political education",
+          "D) Civic engagement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What did John mention about voter turnout in Canada?",
+        "options": [
+          "A) It is decreasing",
+          "B) It is above 80%",
+          "C) It is about 60%",
+          "D) It is at a record high"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What penalty does John suggest for not voting?",
+        "options": [
+          "A) Public shaming",
+          "B) A fine",
+          "C) Community service",
+          "D) Mandatory education sessions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does Sarah feel about mandatory voting?",
+        "options": [
+          "A) She supports it",
+          "B) She finds it unnecessary",
+          "C) She believes it should be enforced",
+          "D) She opposes it"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "question": "Which cities are mentioned as having strategies to increase voter turnout?",
+        "options": [
+          "A) Ottawa and Calgary",
+          "B) Toronto and Vancouver",
+          "C) Montreal and Quebec City",
+          "D) Halifax and Regina"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the overall attitude of John towards voting participation?",
+        "options": [
+          "A) Indifferent",
+          "B) Passionate and concerned",
+          "C) Dismissive",
+          "D) Skeptical"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-08",
+    "title": "The Impact of Short-Term Rentals on Housing in Canada",
+    "context": "Listen to the discussion about the effects of short-term rentals like Airbnb on the housing market in Canada.",
+    "audioFile": "part6-08.mp3",
+    "duration": 174.672,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic discussed in the passage?",
+        "options": [
+          "A) The benefits of tourism in Canada",
+          "B) The effects of short-term rentals on housing",
+          "C) The importance of local businesses",
+          "D) The rise of property prices in Canada"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much did Mark earn through Airbnb rentals last year?",
+        "options": [
+          "A) $20,000",
+          "B) $25,000",
+          "C) $30,000",
+          "D) $35,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What issue does Lisa highlight about short-term rentals?",
+        "options": [
+          "A) They increase tourism revenue",
+          "B) They reduce the availability of long-term rentals",
+          "C) They require homeowners to register",
+          "D) They support local coffee shops"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What regulation does Mark mention regarding short-term rentals?",
+        "options": [
+          "A) A ban on all rentals",
+          "B) Mandatory registration for hosts",
+          "C) A fee for every rental",
+          "D) Limitations on tourist numbers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Lisa’s attitude towards short-term rentals?",
+        "options": [
+          "A) Supportive",
+          "B) Indifferent",
+          "C) Critical",
+          "D) Uncertain"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What solution do Mark and Lisa agree on?",
+        "options": [
+          "A) Complete elimination of Airbnb",
+          "B) Open dialogues with city officials",
+          "C) Making short-term rentals free",
+          "D) Promoting more tourism in cities"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-09",
+    "title": "The Debate on Tuition-Free Universities in Canada",
+    "context": "Listen to a discussion between three individuals sharing their viewpoints about whether universities in Canada should be tuition-free.",
+    "audioFile": "part6-09.mp3",
+    "duration": 208.68,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Sarah's main argument regarding tuition-free universities?",
+        "options": [
+          "A) They can lead to higher taxes.",
+          "B) Education should be accessible to everyone.",
+          "C) Universities need tuition for funding.",
+          "D) It would benefit only a select few."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "According to Tom, what is a concern related to tuition-free education?",
+        "options": [
+          "A) It harms the education quality.",
+          "B) It increases government expenses.",
+          "C) It is already implemented in Canada.",
+          "D) It limits job opportunities."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which Canadian province is mentioned as having lower tuition fees?",
+        "options": [
+          "A) Alberta",
+          "B) British Columbia",
+          "C) Quebec",
+          "D) Ontario"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the average cost of a university degree in Canada mentioned in the passage?",
+        "options": [
+          "A) $5,000",
+          "B) $6,600",
+          "C) $8,000",
+          "D) $10,000"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Sarah suggest as a way to fund tuition-free education?",
+        "options": [
+          "A) Increase student loans.",
+          "B) Reduce university costs.",
+          "C) Government tax on the wealthy.",
+          "D) Increase corporate tuition funding."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What attitude does Tom express about the tuition-free concept?",
+        "options": [
+          "A) He fully supports it.",
+          "B) He is skeptical about its feasibility.",
+          "C) He believes it is necessary for everyone.",
+          "D) He thinks it is a simple solution."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-10",
+    "title": "Debating Bilingual Education in Canada",
+    "context": "Listen to the discussion about bilingual education requirements across Canada.",
+    "audioFile": "part6-10.mp3",
+    "duration": 193.608,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A Bilingual education in Canada",
+          "Cultural diversity policies",
+          "Standardized test performances",
+          "Immigrant support programs"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which province is mentioned as struggling with education funding?",
+        "options": [
+          "British Columbia",
+          "Ontario",
+          "Quebec",
+          "Alberta"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What advantage does David mention regarding bilingual individuals?",
+        "options": [
+          "Higher employability",
+          "Better cultural understanding",
+          "Access to international jobs",
+          "Improved mental health"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What is Lisa’s main concern regarding bilingual education?",
+        "options": [
+          "Resource allocation",
+          "Cultural representation",
+          "Employment potential",
+          "Language proficiency"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What does David suggest is a benefit of integrating language skills with vocational training?",
+        "options": [
+          "It increases funding opportunities",
+          "It prepares youth for the future",
+          "It simplifies curriculum planning",
+          "It reduces educational costs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How does Lisa feel about the focus on bilingual education?",
+        "options": [
+          "It should be prioritized",
+          "It is too narrow",
+          "It deserves more funding",
+          "It is essential"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-11",
+    "title": "The Great Tipping Debate in Canada",
+    "context": "Two friends discuss whether tipping culture should be eliminated in Canada.",
+    "audioFile": "part6-11.mp3",
+    "duration": 197.304,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man 1's main argument against tipping?",
+        "options": [
+          "It encourages better service.",
+          "It should be eliminated in favor of a living wage.",
+          "It creates income disparities.",
+          "It is part of Canadian tradition."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which viewpoint does Woman present?",
+        "options": [
+          "Tipping is beneficial for customer satisfaction.",
+          "Tipping creates biases among workers.",
+          "Tipping should remain as a cultural norm.",
+          "Tipping allows clients to reward good service."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does Man 2 feel about the elimination of tipping?",
+        "options": [
+          "He fully supports it.",
+          "He sees the potential issues with it.",
+          "He believes tipping should be increased.",
+          "He doesn't think change is necessary."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What common ground do the speakers reach?",
+        "options": [
+          "They all agree that tipping should continue.",
+          "They all think change is necessary within the tipping system.",
+          "They agree that restaurant workers are underpaid.",
+          "They all support higher prices for better wages."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What concern does Woman express about tipping?",
+        "options": [
+          "It can lead to conflict in restaurants.",
+          "It makes wages unpredictable.",
+          "It encourages poor working conditions.",
+          "It favors certain demographics."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "question": "What does Man 1 suggest could improve the dining experience if tipping were eliminated?",
+        "options": [
+          "More straightforward pricing.",
+          "Better quality of food.",
+          "Improved restaurant ambiance.",
+          "Enhanced menu variety."
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part6-12",
+    "title": "Electric Vehicle Adoption in Canada by 2035",
+    "context": "A discussion among three individuals about the mandatory electric vehicle adoption in Canada by 2035, showcasing varied perspectives.",
+    "audioFile": "part6-12.mp3",
+    "duration": 216.192,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man 1's main argument regarding electric vehicle adoption?",
+        "options": [
+          "A) It's necessary for climate change",
+          "B) It's too expensive",
+          "C) It's not feasible in rural areas",
+          "D) It should be a gradual process"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How does Woman feel about the timeline for electric vehicle adoption?",
+        "options": [
+          "A) She supports it fully",
+          "B) She thinks it is rushed",
+          "C) She wants it to happen immediately",
+          "D) She believes it's too slow"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 suggest as an alternative to a strict mandate?",
+        "options": [
+          "A) Increase taxes on gas vehicles",
+          "B) Implement a phased approach with incentives",
+          "C) Ignore the situation altogether",
+          "D) Promote only hybrid vehicles"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What concern does Woman raise about infrastructure?",
+        "options": [
+          "A) It's already sufficient",
+          "B) It might be delayed or underfunded",
+          "C) There are too many charging stations",
+          "D) It works well during winter"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is a concern shared by both Man 2 and Woman?",
+        "options": [
+          "A) Electric vehicles are too expensive",
+          "B) Lack of support for low-income communities",
+          "C) The technology is not available",
+          "D) Not enough Canadians want electric vehicles"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does Man 1 believe is necessary for Canada in relation to electric vehicles?",
+        "options": [
+          "A) To learn from European countries",
+          "B) To adopt electric vehicles as soon as possible",
+          "C) To slow down the transition",
+          "D) To rely on gas vehicles longer"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-13",
+    "title": "Debating a Four-Day School Week in Canada",
+    "context": "Two educators share their differing opinions on whether Canadian schools should adopt a four-day school week.",
+    "audioFile": "part6-13.mp3",
+    "duration": 198.864,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the Woman's main argument for a four-day school week?",
+        "options": [
+          "It promotes student burnout",
+          "It enhances students' learning experiences",
+          "It reduces teacher workload",
+          "It allows more family time"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How does the Man feel about the potential impact on struggling students?",
+        "options": [
+          "He is supportive of the change",
+          "He thinks they may fall behind",
+          "He believes it will help them thrive",
+          "He is indifferent"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does the Woman suggest for working families if the school week is reduced?",
+        "options": [
+          "She suggests cutting school programs",
+          "She proposes supervised care on Fridays",
+          "She believes parents should adjust their schedules",
+          "She thinks extra days off will help"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What concern does the Man express regarding a condensed learning schedule?",
+        "options": [
+          "It may reduce student engagement",
+          "It could lead to rushed learning",
+          "It might improve student outcomes",
+          "It helps with curriculum delivery"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the Woman believe about the quality of teaching?",
+        "options": [
+          "It will decrease with fewer days",
+          "It can improve with a four-day approach",
+          "It should align with traditional methods",
+          "It is not important"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the Man's stance on experimenting with the school schedule now?",
+        "options": [
+          "He thinks it's necessary",
+          "He believes stability is more important",
+          "He is indifferent to the issue",
+          "He agrees with the Woman"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-14",
+    "title": "Impacts of AI on the Canadian Job Market",
+    "context": "Listen to the differing viewpoints on how artificial intelligence is influencing jobs in Canada.",
+    "audioFile": "part6-14.mp3",
+    "duration": 211.512,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man 1's main argument regarding AI's impact on jobs?",
+        "options": [
+          "AI creates new jobs",
+          "AI leads to job losses",
+          "AI improves efficiency",
+          "AI has no impact"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What solution does Woman suggest for workers affected by AI?",
+        "options": [
+          "Eliminate AI technology",
+          "Implement upskilling programs",
+          "Increase automation",
+          "Decrease government involvement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Man 2 believes that AI will primarily:",
+        "options": [
+          "Displace many workers",
+          "Enhance efficiency in certain sectors",
+          "Have no significant impact",
+          "Create job insecurity"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does Woman feel about the education system in relation to AI?",
+        "options": [
+          "It prepares students well",
+          "It is outdated",
+          "It should be eliminated",
+          "It is irrelevant"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Man 1’s biggest concern about the transition to AI?",
+        "options": [
+          "Loss of efficiency",
+          "Wage increases",
+          "Worsening social inequality",
+          "Job creation"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What overall message do the speakers agree on regarding AI?",
+        "options": [
+          "It should be banned",
+          "It is a necessary evil",
+          "It requires a balanced approach",
+          "It's only beneficial"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part6-15",
+    "title": "Should Voting Age be Lowered to 16?",
+    "context": "Two Canadian citizens discuss the implications of lowering the voting age to 16 years.",
+    "audioFile": "part6-15.mp3",
+    "duration": 224.784,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man 1's main argument for lowering the voting age?",
+        "options": [
+          "It empowers young people",
+          "It aligns with adult voting ages",
+          "It reduces misinformation",
+          "It encourages political apathy"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is Woman's main concern regarding lowering the voting age?",
+        "options": [
+          "Young people lack maturity",
+          "It's important for youth empowerment",
+          "Voting will create conflict",
+          "Education will not help"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How does Man 2 support Man 1's viewpoint?",
+        "options": [
+          "By advocating for age limits",
+          "By discussing misinformation",
+          "By emphasizing youth engagement",
+          "By supporting Woman's perspective"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What compromise does Woman suggest?",
+        "options": [
+          "All youth should vote",
+          "Limit voting to local elections",
+          "Increase civic education",
+          "Allow 16-year-olds to vote nationally"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What aspect of youth’s engagement does Man 1 mention?",
+        "options": [
+          "They are apathetic",
+          "They are socially aware",
+          "They only listen to adults",
+          "They prefer local issues"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What do all speakers agree is necessary for informed voting?",
+        "options": [
+          "Maturity",
+          "Civic education",
+          "Social media literacy",
+          "Voting experience"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-16",
+    "title": "Pros and Cons of Year-Round Schooling",
+    "context": "Two educators discuss the advantages and disadvantages of implementing year-round schooling in Canada. They represent different perspectives on this topic.",
+    "audioFile": "part6-16.mp3",
+    "duration": 207.432,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Woman 1's main argument in favor of year-round schooling?",
+        "options": [
+          "A. To provide students with more family time",
+          "B. To prevent the summer learning loss",
+          "C. To reduce teacher burnout",
+          "D. To increase funding for schools"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How does Woman 2 feel about year-round schooling?",
+        "options": [
+          "A. She fully supports it",
+          "B. She sees both pros and cons",
+          "C. She is indifferent",
+          "D. She believes it is the only solution"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What potential drawback does Woman 2 mention regarding year-round schooling?",
+        "options": [
+          "A. Increased engagement with students",
+          "B. Logistical issues for families",
+          "C. Lower attendance rates",
+          "D. More professional development opportunities"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What solution does Woman 1 suggest for teacher burnout?",
+        "options": [
+          "A. Longer breaks each term",
+          "B. Shorter, more frequent breaks",
+          "C. Increased teacher salaries",
+          "D. Reducing student numbers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Woman 2 appreciate about the traditional calendar?",
+        "options": [
+          "A. Engaged learning all year",
+          "B. Opportunities for professional growth",
+          "C. Extended summer breaks for exploration",
+          "D. Increased funding for special programs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is Woman 1’s view on the funding implications of year-round schooling?",
+        "options": [
+          "A. It is a significant concern",
+          "B. It is not an issue",
+          "C. It will improve funding",
+          "D. Funding should be disregarded"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part6-17",
+    "title": "Should Social Media Companies Pay for News Content?",
+    "context": "Two Canadians share differing opinions on whether social media companies should financially compensate news organizations for their content.",
+    "audioFile": "part6-17.mp3",
+    "duration": 216.48,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the Woman's main argument?",
+        "options": [
+          "Social media companies should not pay for news content.",
+          "Social media companies should compensate news organizations.",
+          "Partnerships are the best solution.",
+          "Digital literacy is critical."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What does the Man believe about the responsibility of social media companies?",
+        "options": [
+          "They should pay for all news content.",
+          "They do not have a responsibility to compensate.",
+          "They should promote digital literacy.",
+          "They need to support partnerships."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does the Woman view the current challenges facing journalism?",
+        "options": [
+          "They are overstated.",
+          "They can be solved through partnerships.",
+          "They require immediate financial support.",
+          "They are mostly caused by digital literacy."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is one of the Man's concerns about paying for news content?",
+        "options": [
+          "It may lead to biased news.",
+          "It will improve access to information.",
+          "It will not be necessary for long-term solutions.",
+          "It supports quality journalism."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "Which alternative does the Man propose?",
+        "options": [
+          "Direct payments for news content.",
+          "Tax benefits for news organizations.",
+          "Mandatory partnerships.",
+          "Increased audience fees."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does the Woman emphasize as urgent?",
+        "options": [
+          "Raising awareness of digital literacy.",
+          "Immediate compensation for news content.",
+          "Finding long-term solutions.",
+          "Building partnerships."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-18",
+    "title": "Impact of Remote Work on Small Town Economies",
+    "context": "Two Canadians share their viewpoints on how remote work affects small town economies.",
+    "audioFile": "part6-18.mp3",
+    "duration": 178.656,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the Woman's main argument regarding remote work in small towns?",
+        "options": [
+          "A. It harms local businesses",
+          "B. It revitalizes communities with new residents",
+          "C. It leads to housing shortages",
+          "D. It disconnects people from the community"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How does the Man feel about the influx of remote workers?",
+        "options": [
+          "A. He is entirely in favor",
+          "B. He has mixed feelings",
+          "C. He is completely against it",
+          "D. He doesn't care either way"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does the Man express concern about?",
+        "options": [
+          "A. Rising housing costs displacing regular residents",
+          "B. The lack of interest from remote workers",
+          "C. The failure of local businesses",
+          "D. The beauty of the small towns"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "How does the Woman suggest addressing the challenges of remote work in small towns?",
+        "options": [
+          "A. By ignoring the issues",
+          "B. Through community planning and collaboration",
+          "C. By building more houses",
+          "D. By limiting remote workers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the Woman believe remote workers can contribute to the community?",
+        "options": [
+          "A. Increased taxes",
+          "B. An influx of new ideas and projects",
+          "C. Disconnection from local culture",
+          "D. Strain on local resources"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What outcome do both speakers agree is essential for the success of remote work in small towns?",
+        "options": [
+          "A. Negative impacts on the local workforce",
+          "B. Community involvement and proactive planning",
+          "C. Restrictions on remote workers",
+          "D. Ignoring the challenges altogether"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-19",
+    "title": "Should Canada Invest More in Nuclear Energy?",
+    "context": "Listen to the dialogue between three speakers discussing the merits and downsides of investing in nuclear energy in Canada.",
+    "audioFile": "part6-19.mp3",
+    "duration": 211.776,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Woman 1's main argument for nuclear energy?",
+        "options": [
+          "A: It is the cheapest energy source",
+          "B: It provides a stable energy supply",
+          "C: It has no environmental impact",
+          "D: It is widely accepted by the public"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What does Man 1 emphasize as a concern regarding nuclear energy?",
+        "options": [
+          "A: Its initial construction cost",
+          "B: The risks of nuclear accidents",
+          "C: The lack of reliability",
+          "D: Its effects on climate change"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does Man 2 feel about the investment in renewable energy resources?",
+        "options": [
+          "A: They should be prioritized over nuclear",
+          "B: They are less crucial than nuclear",
+          "C: They have similar risks as nuclear",
+          "D: They rely too much on weather"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What is a potential advantage of small modular reactors mentioned by Woman 1?",
+        "options": [
+          "A: They can be built cheaply",
+          "B: They produce more waste",
+          "C: They have enhanced safety features",
+          "D: They are quicker to implement"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What do Man 1 and Man 2 agree on regarding nuclear energy?",
+        "options": [
+          "A: It is the future of energy",
+          "B: It could deter funds from renewables",
+          "C: It should be prioritized",
+          "D: It requires less public support"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What strategy does Woman 1 suggest for Canada's energy future?",
+        "options": [
+          "A: Solely investing in nuclear",
+          "B: Completely abandoning nuclear energy",
+          "C: A hybrid approach using both nuclear and renewables",
+          "D: Focusing only on fossil fuels"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part6-20",
+    "title": "Should Fast Food Advertising to Children Be Banned?",
+    "context": "Two Canadians discuss the implications of fast food advertising directed at children.",
+    "audioFile": "part6-20.mp3",
+    "duration": 209.712,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does Woman 1 argue should happen to fast food advertising to children?",
+        "options": [
+          "A) It should be modified",
+          "B) It should be allowed",
+          "C) It should be banned",
+          "D) It should be supported"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "How does Man 1 view the impact of fast food advertising?",
+        "options": [
+          "A) It is harmful",
+          "B) It is irrelevant",
+          "C) It enhances choices",
+          "D) It helps parents"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What health issue does Man 2 mention?",
+        "options": [
+          "A) Malnutrition",
+          "B) Childhood obesity",
+          "C) Diabetes",
+          "D) Allergies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is one potential outcome of banning fast food ads, according to Woman 1?",
+        "options": [
+          "A) Increased fast food consumption",
+          "B) Healthier advertising practices",
+          "C) Improved company profits",
+          "D) More varied diets"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What concern does Man 1 express about banning ads?",
+        "options": [
+          "A) It might restrict freedom",
+          "B) It could lead to more ads",
+          "C) It will confuse children",
+          "D) It can harm the economy"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "How do Woman 2 and Man 2 view the impact of advertising on parents?",
+        "options": [
+          "A) It supports parents",
+          "B) It pressures parents",
+          "C) It has no impact",
+          "D) It teaches parents"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-21",
+    "title": "Debate on Zoos",
+    "context": "Three speakers discuss whether zoos should be phased out in Canada, presenting their opinions and reasoning.",
+    "audioFile": "part6-21.mp3",
+    "duration": 184.248,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern raised by the first speaker regarding zoos?",
+        "options": [
+          "Animal welfare",
+          "Educational value",
+          "Conservation efforts",
+          "Funding"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What does the second speaker suggest zoos should focus on to enhance their value?",
+        "options": [
+          "Improving conditions",
+          "Phasing out completely",
+          "Expanding animal variety",
+          "Reducing costs"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How does the third speaker view the relationship between zoos and wildlife conservation?",
+        "options": [
+          "They are inherently opposed",
+          "They can coexist with sanctuaries",
+          "Zoos hinder conservation efforts",
+          "They are obsolete"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What common perspective do the speakers arrive at by the end of the discussion?",
+        "options": [
+          "Zoos should be eliminated",
+          "Zoos require better regulation",
+          "All zoos are harmful",
+          "Education should be their primary purpose"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Which example of positive change in zoos is mentioned?",
+        "options": [
+          "Expanded exhibition space",
+          "Natural habitats creation",
+          "Increased ticket prices",
+          "More species captured"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is emphasized as crucial for the future of zoos and animal welfare?",
+        "options": [
+          "Public support and awareness",
+          "More funding for zoos",
+          "Increasing the number of animals",
+          "Reducing public access to zoos"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part6-22",
+    "title": "The Future of Electric Vehicles and Charging Infrastructure in Canada",
+    "context": "A panel discussion featuring three experts on the electric vehicle market and charging infrastructure in Canada.",
+    "audioFile": "part6-22.mp3",
+    "duration": 225.264,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern regarding electric vehicle adoption mentioned by Man 2?",
+        "options": [
+          "A lack of consumer interest",
+          "Charging station availability",
+          "High vehicle prices",
+          "Government incentives"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "According to Woman, what must accompany the growth of electric vehicle sales?",
+        "options": [
+          "Increased vehicle performance",
+          "Improved charging infrastructure",
+          "Lower carbon emissions",
+          "More government subsidies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is Man's view on the integration of renewable energy with charging stations?",
+        "options": [
+          "It is irrelevant",
+          "It enhances sustainability",
+          "It complicates infrastructure",
+          "It is financially unfeasible"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does Woman identify as a potential barrier to electric vehicle adoption?",
+        "options": [
+          "Lack of tax incentives",
+          "Range anxiety",
+          "High fuel costs",
+          "Limited model variety"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "According to Man 2, what area requires more focus to boost electric vehicle sales?",
+        "options": [
+          "Innovative designs",
+          "Affordability",
+          "Increased advertising",
+          "Vehicle insurance adjustments"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the overall consensus among the speakers regarding the future of electric vehicles in Canada?",
+        "options": [
+          "It is uncertain",
+          "It requires collaboration on multiple fronts",
+          "It is primarily dependent on government policy",
+          "It is doomed without immediate changes"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-23",
+    "title": "Debate on Publicly Funded University Education",
+    "context": "A discussion among three individuals on whether university education should be publicly funded in Canada.",
+    "audioFile": "part6-23.mp3",
+    "duration": 196.152,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man's primary argument for publicly funded university education?",
+        "options": [
+          "It promotes social mobility.",
+          "It reduces quality.",
+          "It is a privilege.",
+          "It increases taxes."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does Woman express regarding public funding for education?",
+        "options": [
+          "It may lead to overcrowding.",
+          "It will help the economy.",
+          "It does not require tax increases.",
+          "It is beneficial for all."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What approach does Man 2 suggest as a potential compromise?",
+        "options": [
+          "Increase tuition fees for all students.",
+          "Mix public funding with scholarship programs.",
+          "Eliminate student work opportunities.",
+          "Follow a Scandinavian model."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What issue does Man raise about scholarships?",
+        "options": [
+          "They benefit all students equally.",
+          "They might leave some students unsupported.",
+          "They are adequate for funding education.",
+          "They require more taxes."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Which country does Man reference as a successful model for education funding?",
+        "options": [
+          "The United States",
+          "Australia",
+          "Scandinavia",
+          "Canada"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What do the speakers agree upon regarding education funding?",
+        "options": [
+          "It should be completely free.",
+          "It requires public dialogue.",
+          "It increases taxes for everyone.",
+          "It is only necessary for certain programs."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part6-24",
+    "title": "Roundtable on the Ethics of Genetic Editing for Human Diseases",
+    "context": "A discussion among three experts on the implications of genetic editing technologies such as CRISPR in the context of human diseases.",
+    "audioFile": "part6-24.mp3",
+    "duration": 215.4,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is a primary concern mentioned regarding the outcome of genetic editing?",
+        "options": [
+          "A potential increase in health disparities",
+          "A guaranteed elimination of all diseases",
+          "Immediate benefits without risks",
+          "Universal agreement on desirable traits"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "According to Woman, what is a significant aspect to consider before adopting genetic editing technologies?",
+        "options": [
+          "The benefits to society",
+          "Public dialogue and consensus",
+          "Scientific advancements",
+          "Profitability of genetic editing"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Man 2 argues that genetic editing could revolutionize health care. Which reason does he provide for this?",
+        "options": [
+          "It would require no regulation",
+          "It could globally standardize health care",
+          "It can minimize suffering from genetic diseases",
+          "It enhances all human traits equally"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Man suggest is necessary before moving forward with genetic editing?",
+        "options": [
+          "Rigorous oversight and ethical guidelines",
+          "Immediate approval for all new technologies",
+          "Public funding for research only",
+          "Collaboration with private companies"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "How does Woman view the prospect of genetic editing?",
+        "options": [
+          "As entirely beneficial",
+          "As a source of ethical dilemmas",
+          "As a purely scientific issue",
+          "As universally accepted technology"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What common goal do the speakers share regarding genetic editing?",
+        "options": [
+          "Ensuring equitable access and ethical advancements",
+          "Promoting designer traits among the wealthy",
+          "Minimizing public involvement in decisions",
+          "Increasing profitability of healthcare"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part6-25",
+    "title": "Debating a Four-Day Work Week in Canada",
+    "context": "A group of friends discusses the potential impact of adopting a four-day work week in Canada.",
+    "audioFile": "part6-25.mp3",
+    "duration": 194.856,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary benefit of a four-day work week mentioned by the speakers?",
+        "options": [
+          "Increased productivity",
+          "Higher wages",
+          "More job security",
+          "Less employee turnover"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does Man 2 express about adopting a four-day work week?",
+        "options": [
+          "Reduced pay for employees",
+          "Decreased company profits",
+          "Increased employee burnout",
+          "Higher unemployment rates"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "Which speaker believes a flexible implementation could benefit various industries?",
+        "options": [
+          "Man",
+          "Woman",
+          "Man 2",
+          "None of the above"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What aspect of personal life does the four-day work week improve, according to the speakers?",
+        "options": [
+          "Work related stress",
+          "Family time",
+          "Financial security",
+          "Job satisfaction"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What potential environmental benefit is mentioned?",
+        "options": [
+          "More public transportation",
+          "Reduced carbon emissions",
+          "Less manufacturing waste",
+          "Improved recycling rates"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is a common concern about the four-day work week?",
+        "options": [
+          "Increased leisure activities",
+          "Job accessibility",
+          "Sustainability efforts",
+          "Productivity loss"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part6-26",
+    "title": "The Impact of Fast Fashion on the Environment and Workers",
+    "context": "A panel discussion featuring experts on the influence of fast fashion in Canada.",
+    "audioFile": "part6-26.mp3",
+    "duration": 206.112,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main environmental issue discussed in the panel?",
+        "options": [
+          "Textile waste in landfills",
+          "Air pollution from factories",
+          "Water contamination from chemicals",
+          "Deforestation for cotton production"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "How do panelists suggest improving consumer habits?",
+        "options": [
+          "By advertising more fast fashion brands",
+          "By promoting sustainable fashion",
+          "By lowering prices of sustainable clothing",
+          "By expanding fast fashion options"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What ethical concern is raised regarding fast fashion?",
+        "options": [
+          "High prices for consumers",
+          "Overproduction of clothing",
+          "Labor practices in factories",
+          "Lack of clothing variety"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What strategy does the panel suggest for engaging consumers who prefer fast fashion?",
+        "options": [
+          "Focusing on advertising",
+          "Highlighting worker stories",
+          "Making fast fashion more affordable",
+          "Promoting international brands"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What solution for reducing clothing waste is mentioned?",
+        "options": [
+          "Incineration of old clothes",
+          "Clothing banks for donations",
+          "Selling clothes at a discount",
+          "Producing less clothing overall"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the overall conclusion from the discussion?",
+        "options": [
+          "Fast fashion will continue to grow",
+          "Consumers should spend more on clothing",
+          "Collective action is needed for change",
+          "Fast fashion is not a concern in Canada"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part6-27",
+    "title": "Regulating Social Media Like Utilities",
+    "context": "Three speakers discuss the regulation of social media companies, comparing them to utility companies and examining the implications for society.",
+    "audioFile": "part6-27.mp3",
+    "duration": 232.848,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main argument presented by the first speaker?",
+        "options": [
+          "A comprehensive regulation of social media is necessary to ensure accountability.",
+          "Social media companies should be completely unregulated.",
+          "Social media is different from utilities and should not be treated the same.",
+          "Innovation should be prioritized over regulation."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does the second speaker express about regulation?",
+        "options": [
+          "It could lead to censorship and overreach by the government.",
+          "It will protect users from misinformation.",
+          "It will improve competition among social media platforms.",
+          "It will help to foster innovation in technology."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How does the third speaker propose to implement regulation?",
+        "options": [
+          "By having a strict set of rules for all companies.",
+          "Through transparent regulations designed by stakeholders.",
+          "By allowing companies to self-regulate.",
+          "By imposing heavy penalties for violations."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What advantage of regulation does the first speaker highlight?",
+        "options": [
+          "It could incite violence.",
+          "It may lead to better user safety and accountability.",
+          "It would harm smaller businesses.",
+          "It would suppress free speech."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What alternative to strict regulation does the woman suggest?",
+        "options": [
+          "Utility-like regulation for all social media companies.",
+          "A hybrid approach with transparency standards.",
+          "Complete deregulation.",
+          "Heavy government control of all online content."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is a common theme in the arguments of all three speakers?",
+        "options": [
+          "They all agree on the need for no regulation.",
+          "They all prioritize user freedom over safety.",
+          "They all recognize the need for a balanced approach to regulation.",
+          "They all oppose any form of regulation."
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part6-28",
+    "title": "Standardized Testing Debate",
+    "context": "A discussion among three individuals about the effectiveness of standardized testing in measuring student ability.",
+    "audioFile": "part6-28.mp3",
+    "duration": 186.264,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern that Man expresses about standardized testing?",
+        "options": [
+          "A: It encourages good study habits.",
+          "B: It measures creativity effectively.",
+          "C: It does not capture a student's true abilities.",
+          "D: It helps students manage time.",
+          "C"
+        ]
+      },
+      {
+        "id": 2,
+        "question": "How does Woman justify the use of standardized tests?",
+        "options": [
+          "A: They create stress for students.",
+          "B: They provide a baseline for comparison.",
+          "C: They are fun for students.",
+          "D: They replace other forms of assessment.",
+          "B"
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What alternative assessment does Man 2 suggest?",
+        "options": [
+          "A: Online quizzes.",
+          "B: Standard essays.",
+          "C: Portfolios.",
+          "D: Group projects.",
+          "C"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What does the discussion reveal about the perspectives on standardized testing?",
+        "options": [
+          "A: Everyone agrees that it’s the only option.",
+          "B: There is a unanimous belief in the accuracy of tests.",
+          "C: Perspectives on testing vary significantly.",
+          "D: All agree it should be abolished.",
+          "C"
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What is Man's view on the educational implications of standardized tests?",
+        "options": [
+          "A: They motivate teachers to improve methods.",
+          "B: They limit the educational framework.",
+          "C: They are optimal for measuring intelligence.",
+          "D: They support diverse learning styles.",
+          "B"
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What conclusion can be drawn from the conversation?",
+        "options": [
+          "A: Standardized tests should be used exclusively.",
+          "B: A combination of assessments could be beneficial.",
+          "C: All forms of assessment are equally valid.",
+          "D: Standardized tests are perfect as they are.",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part6-29",
+    "title": "The Role of Arts Funding in Canadian Culture",
+    "context": "Three speakers discuss their perspectives on the importance of government funding for the arts in Canada.",
+    "audioFile": "part6-29.mp3",
+    "duration": 191.16,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary argument for government funding of the arts according to Man?",
+        "options": [
+          "A funding leads to cultural diversity",
+          "B funding provides financial stability for artists",
+          "C funding promotes traditional art forms",
+          "D funding supports private sponsors"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How does Woman view the role of private funding in the arts?",
+        "options": [
+          "A it is unnecessary",
+          "B it can be more important than government funding",
+          "C it often overshadows government funding",
+          "D it is a significant supportive measure"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What concern does Woman express regarding arts funding allocation?",
+        "options": [
+          "A it favors independent artists",
+          "B it does not adequately support local initiatives",
+          "C it often benefits larger institutions over independent creators",
+          "D it is transparent and fair"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What do all speakers agree on regarding arts funding?",
+        "options": [
+          "A it should support only traditional arts",
+          "B it is vital for cultural expression",
+          "C it should be limited to popular art forms",
+          "D it needs to support digital initiatives only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What challenge do the speakers recognize about arts funding?",
+        "options": [
+          "A securing private sponsorship",
+          "B collaborating with communities",
+          "C balancing support for heritage and contemporary arts",
+          "D obtaining stable government support"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the proposed solution to improve arts funding, according to Man 2?",
+        "options": [
+          "A reform the funding system",
+          "B rely solely on private initiatives",
+          "C prioritize funding for traditional arts",
+          "D increase taxes for artists"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part6-30",
+    "title": "Debate on Gig Economy Worker Benefits",
+    "context": "A panel discussion focused on whether gig economy workers in Canada should be entitled to full employee benefits.",
+    "audioFile": "part6-30.mp3",
+    "duration": 213.048,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the panel debate?",
+        "options": [
+          "Gig economy workers and their rights",
+          "The benefits of gig work",
+          "Plans for economic growth",
+          "Unionization of workers"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What does the Woman argue about gig workers?",
+        "options": [
+          "They should be paid more",
+          "They need full employee benefits",
+          "They prefer their current situation",
+          "They have enough support"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 express concern about?",
+        "options": [
+          "The cost of benefits for companies",
+          "The benefits provided in other countries",
+          "The number of gig workers",
+          "The demand for flexibility in labor"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What solution do they propose regarding benefits?",
+        "options": [
+          "To eliminate all benefits",
+          "To have a tiered benefits system",
+          "To have universal coverage for all workers",
+          "To focus only on traditional workers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do they suggest to ensure fairness?",
+        "options": [
+          "Taking away benefits completely",
+          "Looking into international examples",
+          "Making benefits optional",
+          "Promoting more gig work"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is a key takeaway from the debate?",
+        "options": [
+          "Flexibility is more important than security",
+          "Gig workers deserve some form of benefits",
+          "All gig workers need to unionize",
+          "Companies have no responsibilities"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+]

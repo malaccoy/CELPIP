@@ -1,0 +1,392 @@
+[
+  {
+    "id": "task6-01",
+    "scenario": "You have decided to move out of your shared apartment before the lease ends. This decision has been difficult for you to make, as you value your relationship with your roommate but also feel that you need to pursue a new opportunity that requires a change in your living situation. It's important to communicate this decision effectively to your roommate while being considerate of their feelings.",
+    "prompt": "Explain your decision to your roommate and why you made this choice.",
+    "choiceA": "You can choose to have a calm and honest conversation, emphasizing your need for personal growth and how the change will benefit you.",
+    "choiceB": "Alternatively, you can avoid a detailed discussion and simply inform your roommate of your decision, leaving them to adjust without much explanation.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your roommate about a difficult decision."
+  },
+  {
+    "id": "task6-02",
+    "scenario": "You have been going through some family challenges that require your immediate attention, and you feel it is necessary to take a month off work. You need to discuss this with your boss, who may be concerned about the impact of your absence on the team and ongoing projects.",
+    "prompt": "Explain your decision to your boss and why you made this choice.",
+    "choiceA": "Take the month off as planned to focus on your family without worrying about work.",
+    "choiceB": "Request a reduced schedule instead of a full month off to balance work and family commitments.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your boss about a difficult decision."
+  },
+  {
+    "id": "task6-03",
+    "scenario": "You have been invited to your close friend's wedding, which is a very important event for them. However, you have just been assigned a crucial project at work that requires your presence on the same day as the wedding. You are torn between attending the wedding and fulfilling your work obligations, knowing that missing the wedding might hurt your friend.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "You decide to attend the wedding and try to delegate your work responsibilities to a colleague.",
+    "choiceB": "You choose to prioritize your work commitment and inform your friend that you cannot attend the wedding.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-04",
+    "scenario": "You have been contemplating a career change for some time, feeling unfulfilled in your current job. You have saved up a decent amount of money and are considering using these savings to take a course in a field you're passionate about. However, you're worried about how your partner will react to the idea of spending your savings on this new direction.",
+    "prompt": "Explain your decision to your partner and why you made this choice.",
+    "choiceA": "You choose to invest in your happiness and personal growth by spending the savings on a career change.",
+    "choiceB": "You decide to hold off on the career change and maintain the current financial stability instead.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your partner about a difficult decision."
+  },
+  {
+    "id": "task6-05",
+    "scenario": "You have been enrolled in a university program for the last two years, but after careful consideration, you have decided to drop out. You know this will be a difficult conversation with your parents, who have high hopes for your academic career. They may be disappointed or worried about your future, and you want to make sure you explain your decision clearly.",
+    "prompt": "Explain your decision to your parents and why you made this choice.",
+    "choiceA": "Tell them you want to pursue a different career path that makes you happier.",
+    "choiceB": "Explain that the current program is not meeting your expectations and is affecting your mental health.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your parents about a difficult decision."
+  },
+  {
+    "id": "task6-06",
+    "scenario": "You recently discovered that a coworker made a significant error in a project report. This mistake could potentially impact the team's performance and deadlines. After careful consideration, you decided to report this issue to your manager to ensure that it gets addressed promptly. Now, your coworker approaches you, upset about your decision.",
+    "prompt": "Explain your decision to your coworker and why you made this choice.",
+    "choiceA": "Emphasize that you were looking out for the team's best interests.",
+    "choiceB": "Focus on the importance of accountability in the workplace.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your coworker about a difficult decision."
+  },
+  {
+    "id": "task6-07",
+    "scenario": "While cleaning your apartment, you accidentally knocked over a vase that belonged to the landlord, causing it to break. You are feeling anxious about how to approach your landlord and inform them of the damage, as you fear they may react negatively. You need to decide whether to be completely honest about the situation or to offer to pay for the vase without disclosing the full details.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "Be completely honest with the landlord about the accident and offer to pay for the repairs or replacement.",
+    "choiceB": "Offer to pay for the vase without telling the landlord that it was an accident.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-08",
+    "scenario": "You borrowed a laptop from your friend for an important project. Unfortunately, you accidentally spilled water on it and now it won't turn on. You feel anxious about how to tell your friend that you damaged their property and may have to replace it.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "You decide to be upfront about what happened and offer to pay for repairs or a replacement.",
+    "choiceB": "You consider downplaying the situation and hope they won't notice the damage.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-09",
+    "scenario": "You have decided to leave your current job at your company and join a competitor. This decision is particularly challenging because many of your colleagues look up to you, and you have developed strong friendships at work. You anticipate that your team may feel betrayed or confused by your choice, and you want to communicate your decision thoughtfully.",
+    "prompt": "Explain your decision to your team leader and why you made this choice.",
+    "choiceA": "You could choose to focus on the positive opportunities that the new job offers for your career growth.",
+    "choiceB": "Alternatively, you might decide to emphasize the personal reasons that led you to seek a change in your professional environment.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your team leader about a difficult decision."
+  },
+  {
+    "id": "task6-10",
+    "scenario": "Your child has been asking for a puppy for months and has even saved up their allowance to buy one. However, you know that your family is not ready for the commitment of a pet due to your busy work schedules and upcoming travel plans. You need to explain to your child why getting a puppy may not be the best idea at this time.",
+    "prompt": "Explain your decision to your child and why you made this choice.",
+    "choiceA": "Tell your child that you are not getting a puppy right now but suggest considering one in the future.",
+    "choiceB": "Explain that instead of a puppy, you could adopt a different type of pet that requires less care and attention.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your child about a difficult decision."
+  },
+  {
+    "id": "task6-11",
+    "scenario": "Your sibling has approached you for financial help, asking to borrow a significant amount of money to cover their unexpected expenses. You care about your sibling but are currently managing your own financial situation and feel that lending them money could create tension in your relationship. You know that saying no will be difficult but necessary.",
+    "prompt": "Explain your decision to your sibling and why you made this choice.",
+    "choiceA": "You lend them the money, hoping they will pay you back soon.",
+    "choiceB": "You refuse to lend them the money and explain your reasons.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your sibling about a difficult decision."
+  },
+  {
+    "id": "task6-12",
+    "scenario": "You have noticed that your neighbour's large tree is damaging your fence and affecting your garden. Despite being friends for many years, you feel uncomfortable approaching them about the issue. You know that the tree is important to them, but the damage is becoming increasingly problematic.",
+    "prompt": "Explain your decision to talk to your neighbour about the tree and why you made this choice.",
+    "choiceA": "Talk to your neighbour directly and ask them to trim the tree.",
+    "choiceB": "Seek advice from a mediator before approaching your neighbour.",
+    "bulletPoints": [
+      "Explain the situation and the damage caused by the tree.",
+      "State your choice of how to address the issue.",
+      "Give reasons for your decision and address any potential concerns from your neighbour."
+    ],
+    "context": "You are talking to your neighbour about a difficult decision."
+  },
+  {
+    "id": "task6-13",
+    "scenario": "You have recently accepted a job offer in another province that offers better career opportunities. This decision is difficult because it means leaving your current job and moving away from your partner, who may feel upset or abandoned by your choice. You need to communicate this decision to your partner and help them understand why this opportunity is important for your future.",
+    "prompt": "Explain your decision to your partner and why you made this choice.",
+    "choiceA": "You could emphasize the importance of your career growth and how this job will benefit both of you in the long run.",
+    "choiceB": "You could focus on the emotional aspect, expressing your love and commitment while discussing how you can maintain your relationship despite the distance.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your partner about a difficult decision."
+  },
+  {
+    "id": "task6-14",
+    "scenario": "While chatting with a group of friends, you accidentally revealed a secret that your close friend had shared with you in confidence. You realize that your friend is upset and feels betrayed by your slip of the tongue. Now, you need to explain the situation to your friend and clarify your intentions.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "Apologize sincerely and assure them it was unintentional.",
+    "choiceB": "Try to explain that the context of the conversation led to the slip.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-15",
+    "scenario": "You have been invited to spend the holidays with your family, but due to work commitments and a major project deadline, you are unable to go home. This is disappointing for your parents, especially since it's been a long time since the entire family has gathered during the holidays.",
+    "prompt": "Explain your decision to your parents and why you made this choice.",
+    "choiceA": "You decide to prioritize your work responsibilities and stay in the city.",
+    "choiceB": "You consider taking leave but ultimately realize it's not feasible due to the high stakes of your job.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your parents about a difficult decision."
+  },
+  {
+    "id": "task6-16",
+    "scenario": "You are a project manager working on a client's important project. Unfortunately, due to unforeseen circumstances, the project will be delayed by a few weeks. You need to inform the client about this delay and address their concerns to maintain their trust and understanding.",
+    "prompt": "Explain your decision to the client and why you made this choice.",
+    "choiceA": "You choose to be completely honest about the reasons behind the delay and provide a revised timeline.",
+    "choiceB": "You decide to offer an alternative solution that could expedite certain aspects of the project while still addressing the delay.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your client about a difficult decision."
+  },
+  {
+    "id": "task6-17",
+    "scenario": "You have noticed that your sibling has been spending their money recklessly on items they don't need, and it's putting them in debt. You've been worried about their financial future and feel it's important to discuss this issue. However, you know they might get defensive or upset when you bring it up.",
+    "prompt": "Explain your decision to talk to your sibling about their finances and why you made this choice.",
+    "choiceA": "Confront them directly about their spending habits and express your concerns openly.",
+    "choiceB": "Approach the topic gently by sharing your own financial experiences and suggesting budgeting together.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your sibling about a difficult decision."
+  },
+  {
+    "id": "task6-18",
+    "scenario": "You have been part of the basketball team for several months, but due to personal commitments and time constraints, you have decided to quit the team mid-season. You feel that you won't be able to give your best effort, which is unfair to your teammates and coach.",
+    "prompt": "Explain your decision to your coach and why you made this choice.",
+    "choiceA": "You can focus on your personal commitments and make time for other important areas in your life.",
+    "choiceB": "You could try to stay on the team but manage your time better, juggling both responsibilities.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your coach about a difficult decision."
+  },
+  {
+    "id": "task6-19",
+    "scenario": "You've been living with your housemates for a while now, and the noise levels have become quite disruptive to your daily routine. Late-night parties, loud music, and constant chatter have made it difficult for you to concentrate on your work and get enough rest. You know that addressing this issue is crucial to your well-being.",
+    "prompt": "Explain your decision to your housemates and why you made this choice.",
+    "choiceA": "Ask your housemates to establish quiet hours during the week to minimize noise.",
+    "choiceB": "Consider moving out to find a quieter living situation if the noise continues.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your housemates about a difficult decision."
+  },
+  {
+    "id": "task6-20",
+    "scenario": "You recently made a mistake while processing a client's order, which resulted in a significant financial loss for the company. Now, you must inform your boss about the error and take responsibility for it. You are feeling anxious about how your boss will react, knowing that the mistake could affect your job security and the company's reputation.",
+    "prompt": "Explain your decision to your boss and why you made this choice.",
+    "choiceA": "Apologizing sincerely and taking full responsibility for the error, while outlining steps to rectify the situation.",
+    "choiceB": "Minimizing the impact of the error by pointing out other successful projects you've completed.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your boss about a difficult decision."
+  },
+  {
+    "id": "task6-21",
+    "scenario": "You have been working at your job for a few years now, but you feel unfulfilled and want to go back to school full-time to pursue your passion. However, you worry about the financial implications and the impact it may have on your current lifestyle. You need to talk to your partner about this decision and get their support.",
+    "prompt": "Explain your decision to your partner and why you made this choice.",
+    "choiceA": "Continue working part-time while studying to manage finances better.",
+    "choiceB": "Fully commit to going back to school full-time, despite the financial strain.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your partner about a difficult decision."
+  },
+  {
+    "id": "task6-22",
+    "scenario": "You and your friend have been invited on a group trip with several mutual friends. However, you feel overwhelmed by the idea of traveling with a large group and prefer to spend your time differently. You know your friend is excited about the trip and might be disappointed by your decision.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "You can go on the trip to support your friend and keep the group dynamic alive.",
+    "choiceB": "You can stay home and spend the time on personal projects that you value.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-23",
+    "scenario": "Your elderly parent has been driving for many years, but you've noticed that their reaction times and judgement have declined recently. You are concerned for their safety as well as the safety of others on the road. After much thought, you believe it is time for them to stop driving.",
+    "prompt": "Explain your decision to your parent and why you made this choice.",
+    "choiceA": "Tell your parent directly that you believe they should stop driving immediately for their safety.",
+    "choiceB": "Suggest that your parent consider taking a driving test to assess their ability before deciding to stop driving.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your parent about a difficult decision."
+  },
+  {
+    "id": "task6-24",
+    "scenario": "You have decided to separate from your partner after many years of marriage. Your child is confused and upset about this decision. You need to explain to them why this is happening and how it will affect the family moving forward.",
+    "prompt": "Explain your decision to your child and why you made this choice.",
+    "choiceA": "You can choose to focus on the importance of honesty and open communication about your feelings.",
+    "choiceB": "You can choose to emphasize that both you and your partner love them very much and that this decision is about adult relationships, not about them.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your child about a difficult decision."
+  },
+  {
+    "id": "task6-25",
+    "scenario": "You recently received a promotion at work, a position that your coworker, Alex, also wanted. You know that Alex has been working hard and feels very disappointed. You need to have a conversation with Alex to explain the situation and your decision to accept the promotion.",
+    "prompt": "Explain your decision to Alex and why you made this choice.",
+    "choiceA": "Tell Alex that you believe you were the best fit for the role and that it’s an opportunity for you to grow.",
+    "choiceB": "Offer to help Alex by sharing your insights on how to improve for future opportunities and suggest collaborating on projects.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your coworker about a difficult decision."
+  },
+  {
+    "id": "task6-26",
+    "scenario": "You have a close friend who has asked you to become their business partner in a new venture they are passionate about. However, after careful consideration, you realize that you do not have the time or resources to commit to the business. Additionally, you are concerned about how this partnership could affect your friendship if things do not go as planned.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "You decide to be honest with your friend and explain your concerns about the partnership.",
+    "choiceB": "You suggest alternative ways to support your friend without becoming a business partner.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-27",
+    "scenario": "You've been living in your rented apartment for a few months, but due to unexpected job changes, you need to move to another city. This means you have to break the lease with your landlord earlier than planned. You're worried about how to approach your landlord and what consequences there might be.",
+    "prompt": "Explain your decision to your friend and why you made this choice.",
+    "choiceA": "Tell the landlord about your situation and ask if they would allow you to break the lease without penalty.",
+    "choiceB": "Decide to pay the remaining lease term and find someone to sublet the apartment.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  },
+  {
+    "id": "task6-28",
+    "scenario": "You have been working diligently on your thesis for the past few months, but due to unforeseen circumstances including illness and family obligations, you find yourself unable to complete it by the deadline. You need to discuss with your professor the possibility of extending the submission date for your thesis.",
+    "prompt": "Explain your decision to your professor and why you made this choice.",
+    "choiceA": "Request an extension of two weeks, citing personal circumstances.",
+    "choiceB": "Ask for a shorter extension of one week, emphasizing your commitment to the project.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your professor about a difficult decision."
+  },
+  {
+    "id": "task6-29",
+    "scenario": "You have just realized that you significantly overspent your monthly budget due to some unexpected purchases and impulsive decisions. You know that this will affect your finances for the rest of the month, and you need to tell your partner about it. You're worried about their reaction and how it will impact your relationship.",
+    "prompt": "Explain your decision to your partner and why you made this choice.",
+    "choiceA": "Be honest and upfront about the overspending and discuss how to manage the situation together.",
+    "choiceB": "Downplay the situation and promise to be more careful in the future without revealing the full extent of the overspending.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your partner about a difficult decision."
+  },
+  {
+    "id": "task6-30",
+    "scenario": "You attended a party with your friend, and they behaved in a way that made others uncomfortable, such as making inappropriate jokes and being overly loud. While you want to support your friend, you also feel it's important to address their behavior to prevent future incidents. You need to have a sensitive conversation to help them understand how their actions affected others.",
+    "prompt": "Explain your decision to talk to your friend about their behavior and why you made this choice.",
+    "choiceA": "Confront your friend directly about their behavior at the party.",
+    "choiceB": "Discuss the situation with a mutual friend first to gain perspective before talking to your friend.",
+    "bulletPoints": [
+      "Explain the situation",
+      "State your choice",
+      "Give reasons and address concerns"
+    ],
+    "context": "You are talking to your friend about a difficult decision."
+  }
+]

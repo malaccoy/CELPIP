@@ -1,0 +1,362 @@
+[
+  {
+    "id": "task7-01",
+    "scenario": "In today's globalized world, language skills are increasingly important.",
+    "prompt": "Do you agree or disagree with the following statement? Children should learn a second language starting in kindergarten. Explain your opinion.",
+    "statement": "Children should learn a second language starting in kindergarten.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-02",
+    "scenario": "You are discussing the advantages of remote work.",
+    "prompt": "Do you agree or disagree with the following statement? Working from home is better than working in an office. Explain your opinion.",
+    "statement": "Working from home is better than working in an office.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-03",
+    "scenario": "In today's digital age, social media plays a significant role in communication.",
+    "prompt": "Do you agree or disagree with the following statement? Social media has done more harm than good for society. Explain your opinion.",
+    "statement": "Social media has done more harm than good for society.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-04",
+    "scenario": "You are asked to share your thoughts on the accessibility of higher education in Canada.",
+    "prompt": "Do you agree or disagree with the following statement? University education should be free for all Canadians. Explain your opinion.",
+    "statement": "University education should be free for all Canadians.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-05",
+    "scenario": "In many countries, voting is encouraged but not mandatory.",
+    "prompt": "Do you agree or disagree with the following statement? People should be required to vote in elections. Explain your opinion.",
+    "statement": "People should be required to vote in elections.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-06",
+    "scenario": "You are discussing the ethics of keeping animals in captivity.",
+    "prompt": "Do you agree or disagree with the following statement? Animals should not be kept in zoos. Explain your opinion.",
+    "statement": "Animals should not be kept in zoos.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-07",
+    "scenario": "Consider the impact of homework on young students.",
+    "prompt": "Do you agree or disagree with the following statement? Homework should be banned in elementary schools. Explain your opinion.",
+    "statement": "Homework should be banned in elementary schools.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-08",
+    "scenario": "The topic of the legal driving age is being debated in your community.",
+    "prompt": "Do you agree or disagree with the following statement? The legal driving age should be raised to 18. Explain your opinion.",
+    "statement": "The legal driving age should be raised to 18.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-09",
+    "scenario": "Discussing the importance of transparency in food choices.",
+    "prompt": "Do you agree or disagree with the following statement? Fast food restaurants should display calorie counts on menus. Explain your opinion.",
+    "statement": "Fast food restaurants should display calorie counts on menus.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-10",
+    "scenario": "Discussing the financial compensation of athletes in professional sports.",
+    "prompt": "Do you agree or disagree with the following statement? Professional athletes deserve their high salaries. Explain your opinion.",
+    "statement": "Professional athletes deserve their high salaries.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-11",
+    "scenario": "In today's digital age, many believe that technology affects our social interactions.",
+    "prompt": "Do you agree or disagree with the following statement? Technology is making people less social. Explain your opinion.",
+    "statement": "Technology is making people less social.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-12",
+    "scenario": "Public transit is a key aspect of urban mobility.",
+    "prompt": "Do you agree or disagree with the following statement? Public transit should be free in major cities. Explain your opinion.",
+    "statement": "Public transit should be free in major cities.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-13",
+    "scenario": "Consider the impact of technology on children's development.",
+    "prompt": "Do you agree or disagree with the following statement? Parents should limit screen time for children under 12. Explain your opinion.",
+    "statement": "Parents should limit screen time for children under 12.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-14",
+    "scenario": "In many countries, tipping is a common practice in restaurants.",
+    "prompt": "Do you agree or disagree with the following statement? Tipping culture should be eliminated from restaurants. Explain your opinion.",
+    "statement": "Tipping culture should be eliminated from restaurants.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-15",
+    "scenario": "Many students are considering taking a gap year before starting university.",
+    "prompt": "Do you agree or disagree with the following statement? Gap years before university are beneficial for students. Explain your opinion.",
+    "statement": "Gap years before university are beneficial for students.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-16",
+    "scenario": "In recent years, Canada has been considering stricter regulations on plastic use.",
+    "prompt": "Do you agree or disagree with the following statement? Plastic bags should be completely banned in Canada. Explain your opinion.",
+    "statement": "Plastic bags should be completely banned in Canada.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-17",
+    "scenario": "You are asked to express your opinion about work-life balance in Canada.",
+    "prompt": "Do you agree or disagree with the following statement? Implementing a four-day work week would greatly benefit Canadian workers. Explain your opinion.",
+    "statement": "The implementation of a four-day work week would greatly benefit Canadian workers.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-18",
+    "scenario": "The use of cell phones in classrooms has become a contentious issue among educators and students.",
+    "prompt": "Do you agree or disagree with the following statement? Cell phones should be banned in classrooms. Explain your opinion.",
+    "statement": "Cell phones should be banned in classrooms.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-19",
+    "scenario": "Considering the current housing market in Canada, many are debating the merits of renting versus buying a home.",
+    "prompt": "Do you agree or disagree with the following statement? It is better to rent than to buy a home in Canada today. Explain your opinion.",
+    "statement": "It is better to rent than to buy a home in Canada today.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-20",
+    "scenario": "Discussing the relevance of community service in education.",
+    "prompt": "Do you agree or disagree with the following statement? Community service should be required for high school graduation. Explain your opinion.",
+    "statement": "Community service should be required for high school graduation.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-21",
+    "scenario": "In the age of technological advancement, space exploration has become a significant topic of discussion.",
+    "prompt": "Do you agree or disagree with the following statement? Governments should invest more in space exploration. Explain your opinion.",
+    "statement": "Governments should invest more in space exploration.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-22",
+    "scenario": "You are discussing the advantages of online shopping versus traditional shopping.",
+    "prompt": "Do you agree or disagree with the following statement? Online shopping is better than shopping in physical stores. Explain your opinion.",
+    "statement": "Online shopping is better than shopping in physical stores.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-23",
+    "scenario": "Many people believe that life skills are essential for personal development.",
+    "prompt": "Do you agree or disagree with the following statement? Learning to cook should be mandatory in schools. Explain your opinion.",
+    "statement": "Learning to cook should be mandatory in schools.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-24",
+    "scenario": "Discussing the impact of retirement age on society.",
+    "prompt": "Do you agree or disagree with the following statement? The retirement age should be lowered to 60. Explain your opinion.",
+    "statement": "The retirement age should be lowered to 60.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-25",
+    "scenario": "As countries strive to combat climate change, the discussion surrounding electric vehicles is increasing.",
+    "prompt": "Do you agree or disagree with the following statement? Electric cars should receive larger government subsidies. Explain your opinion.",
+    "statement": "Electric cars should receive larger government subsidies.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-26",
+    "scenario": "Consider the impact of neighborhood cleanliness on community well-being.",
+    "prompt": "Do you agree or disagree with the following statement? Neighbours should be required to keep their properties tidy. Explain your opinion.",
+    "statement": "Neighbours should be required to keep their properties tidy.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-27",
+    "scenario": "In today's digital age, many people prefer streaming services over traditional cable TV.",
+    "prompt": "Do you agree or disagree with the following statement? Streaming services are better than traditional cable TV. Explain your opinion.",
+    "statement": "Streaming services are better than traditional cable TV.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-28",
+    "scenario": "The role of immigrants in shaping Canada's identity and strength.",
+    "prompt": "Do you agree or disagree with the following statement? Immigrants make Canada a stronger country. Explain your opinion.",
+    "statement": "Immigrants make Canada a stronger country.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-29",
+    "scenario": "Consider the evolving workplace policies in modern companies.",
+    "prompt": "Do you agree or disagree with the following statement? Companies should offer unlimited vacation days. Explain your opinion.",
+    "statement": "Companies should offer unlimited vacation days.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  },
+  {
+    "id": "task7-30",
+    "scenario": "In today's world, technology plays a significant role in education and communication.",
+    "prompt": "Do you agree or disagree with the following statement? Handwriting skills are no longer important in the digital age. Explain your opinion.",
+    "statement": "Handwriting skills are no longer important in the digital age.",
+    "bulletPoints": [
+      "State your opinion clearly",
+      "Give 3 reasons with examples",
+      "Conclude by restating your position"
+    ],
+    "context": "Express your personal opinion on this topic."
+  }
+]

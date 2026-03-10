@@ -89,7 +89,7 @@ export default function Footer() {
             <span>·</span>
             <Link href="/blog">Blog</Link>
             <span>·</span>
-            <a href="mailto:camargosx94@gmail.com"><Mail size={14} /> Contact</a>
+            <a href="/support"><Mail size={14} /> Support</a>
           </div>
         </div>
       </div>

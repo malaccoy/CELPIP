@@ -8,10 +8,11 @@ import {
   ChevronRight, Award, Zap, BookOpen, Headphones, 
   Mic, PenTool, Calendar, Star, Lock, Settings,
   AlertTriangle, Download, Trash2, LogOut, RefreshCw,
-  Sparkles, TrendingDown, Minus, BarChart3
+  Sparkles, TrendingDown, Minus, BarChart3, Crown
 } from 'lucide-react';
 import RadarChart from '@/components/RadarChart';
 import { useUser } from '@/hooks/useUser';
+import { useContentAccess } from '@/hooks/useContentAccess';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { createClient } from '@/lib/supabase/client';
 import { fullSync } from '@/hooks/useProgressSync';
@@ -97,6 +98,7 @@ export default function ProfilePage() {
   
   const router = useRouter();
   const { user } = useUser();
+  const { isPro } = useContentAccess();
   const { performances, loaded: adaptiveLoaded } = useAdaptiveDifficulty();
   const [isSyncing, setIsSyncing] = useState(false);
 
@@ -438,15 +440,25 @@ export default function ProfilePage() {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.profileCard}>
-          <div className={styles.avatar}>
-            {user?.user_metadata?.avatar_url ? (
-              <img src={user.user_metadata.avatar_url} alt="Avatar" />
-            ) : (
-              <User size={32} />
+          <div className={styles.avatarWrapper}>
+            <div className={styles.avatar}>
+              {user?.user_metadata?.avatar_url ? (
+                <img src={user.user_metadata.avatar_url} alt="Avatar" />
+              ) : (
+                <User size={32} />
+              )}
+            </div>
+            {isPro && (
+              <div className={styles.proBadge}>
+                <Crown size={12} />
+              </div>
             )}
           </div>
           <div className={styles.profileInfo}>
-            <h1>{user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'CELPIP Student'}</h1>
+            <div className={styles.nameRow}>
+              <h1>{user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'CELPIP Student'}</h1>
+              {isPro && <span className={styles.proTag}>PRO</span>}
+            </div>
             <p>{user?.email || 'Preparing for CELPIP General'}</p>
           </div>
         </div>

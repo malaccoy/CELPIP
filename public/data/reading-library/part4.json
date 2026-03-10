@@ -1,0 +1,2738 @@
+[
+  {
+    "title": "Should Canadian Cities Ban Cars from Downtown Cores?",
+    "writers": [
+      {
+        "name": "Writer 1: Emma Thompson",
+        "text": "In order to create more livable urban spaces, Canadian cities should ban cars from their downtown cores. Cities like Vancouver and Toronto are already witnessing the benefits of reducing vehicular traffic; pedestrian-friendly areas promote local businesses and provide safe environments for families. With the rise of climate change, we need to reconsider our reliance on cars and shift towards more sustainable forms of transport. Banning cars would reduce air pollution, lower noise levels, and ultimately lead to healthier populations. In addition, cities should invest in public transport and cycling infrastructure to provide alternatives to driving, thereby ensuring that the needs of all citizens are met."
+      },
+      {
+        "name": "Writer 2: Michael Johnson",
+        "text": "While I understand the desire for greener cities, banning cars from downtown cores is not the solution. Many people rely on their vehicles for work, groceries, and other daily activities, and taking away this option would disproportionately affect low-income individuals who may not have access to reliable public transport. Additionally, emergencies can arise where a vehicle is necessary for quick transportation. Instead of an outright ban, we should focus on improving public transportation and developing efficient ride-sharing services. This balanced approach allows for urban development while still accommodating the needs of all residents."
+      }
+    ],
+    "readerResponse": "The debate over banning cars in downtown areas raises numerous points about [BLANK 1]. While Writer 1 advocates for a greener city, Writer 2 focuses on the importance of [BLANK 2]. Supporters of a ban suggest that reducing car traffic will lead to [BLANK 3], while critics argue that such a policy would create hurdles for those relying on [BLANK 4]. Ultimately, finding a compromise that addresses [BLANK 5] is crucial for the future of urban planning.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer is most concerned about the impact of a car ban on low-income individuals?",
+        "options": [
+          "Emma Thompson",
+          "Michael Johnson",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is a shared benefit mentioned by both writers regarding urban transportation?",
+        "options": [
+          "Reduced traffic congestion",
+          "Improved air quality",
+          "Increased pedestrian areas",
+          "Enhanced public transportation"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which argument does Writer 1 emphasize to support banning cars?",
+        "options": [
+          "Economic growth",
+          "Healthier populations",
+          "Accessibility issues",
+          "Emergency transportation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How does Writer 2 suggest addressing urban transportation challenges?",
+        "options": [
+          "Banning cars outright",
+          "Improving public transport",
+          "Encouraging cycling",
+          "Investing in ride-sharing services"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "According to Writer 1, which city is already experiencing the benefits of reduced vehicular traffic?",
+        "options": [
+          "Montreal",
+          "Vancouver",
+          "Calgary",
+          "Ottawa"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "urban development",
+          "public transport costs",
+          "economic expansion",
+          "climate change"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "the importance of public spaces",
+          "the reliance on cars",
+          "financial limitations",
+          "rising health standards"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "better business opportunities",
+          "a cleaner environment",
+          "more traffic jams",
+          "higher public transport costs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "car ownership",
+          "public services",
+          "online shopping",
+          "bicycle access"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "environmental concerns",
+          "urban growth",
+          "public safety",
+          "community needs"
+        ],
+        "correct": 3
+      }
+    ],
+    "id": "part4-01"
+  },
+  {
+    "title": "Should Tipping be Eliminated in Canadian Restaurants?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "In my opinion, tipping should be eliminated in Canadian restaurants. It is outdated and creates an uneven playing field for staff. Instead of relying on tips to supplement their income, servers should receive a living wage. This would reduce the pressure on customers and ensure that workers are paid fairly for their hard work. Furthermore, eliminating tipping would encourage better service across the board, as it would no longer be tied to gratuity. Everyone deserves to be paid for their skills and effort without depending on the whims of customers."
+      },
+      {
+        "name": "Writer 2: Michael Chen",
+        "text": "I strongly disagree with the notion of eliminating tipping in restaurants. Tipping is an integral part of the dining experience in Canada, and many servers rely on these tips to make a decent living. In many cases, base salaries in the service industry are lower, and tips allow for a direct reward for exceptional service. Moreover, removing tipping could lead to a decrease in the quality of service, as there would be less incentive for staff to go above and beyond for their customers. Tipping should be seen as a way to acknowledge and reward good service, rather than a burden on customers."
+      },
+      {
+        "name": "Writer 3: Jamie Patel",
+        "text": "While both sides present valid points, I believe a compromise can be reached. Rather than completely eliminating tipping, we could establish a baseline service charge that guarantees workers a fair wage while still allowing customers to reward exceptional service. This hybrid model could ensure that restaurant staff are incentivized to provide great service while removing some of the pressure on customers to tip. Adapting to changing social norms is necessary, and perhaps a reevaluation of tipping culture is overdue."
+      }
+    ],
+    "readerResponse": "As a reader, I find myself agreeing with [BLANK 1] because [BLANK 2]. However, I can understand the perspective of [BLANK 3]. Ultimately, I believe that [BLANK 4] would benefit all parties involved, and finding a balance should be a priority. More discussions on this topic are essential for [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer argues for the elimination of tipping?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: Michael Chen",
+          "C: Jamie Patel",
+          "D: None of the above"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which writer believes that tipping encourages better service?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: Michael Chen",
+          "C: Jamie Patel",
+          "D: All writers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is a common point shared by Sarah and Jamie?",
+        "options": [
+          "A: Tipping should be removed entirely",
+          "B: A fair wage is important",
+          "C: Tipping should stay unchanged",
+          "D: Customers dislike tipping"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Who suggests a compromise involving a service charge?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: Michael Chen",
+          "C: Jamie Patel",
+          "D: All writers"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which of the following best describes Michael Chen's stance?",
+        "options": [
+          "A: Support for elimination of tips",
+          "B: Support for maintaining tipping culture",
+          "C: Support for a hybrid model",
+          "D: Indifference towards tipping"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: Sarah's views on tipping",
+          "B: Michael's thoughts about service",
+          "C: Jamie's proposal for a hybrid model",
+          "D: The need for change in tipping culture"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: I am against any changes",
+          "B: it seems like a fair solution",
+          "C: I do not care about this issue",
+          "D: the culture of tipping should remain unchanged"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: Jamie Patel",
+          "B: Michael Chen",
+          "C: Sarah Thompson",
+          "D: All writers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: Completely removing tipping",
+          "B: Maintaining the status quo of tipping",
+          "C: Implementing a fair wage with service options",
+          "D: Allowing owners to decide service charges"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: Discussing irrelevant matters",
+          "B: Exploring ways to improve the service industry",
+          "C: Debating other unrelated topics",
+          "D: Ending the discussion altogether"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-02"
+  },
+  {
+    "title": "Should Canada Increase Military Spending?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a proud Canadian citizen, I am concerned about the current state of our national defense. With global tensions rising and threats becoming more complex, Canada must step up its military spending. Our forces should be adequately equipped and trained to respond to potential conflicts. Increasing our military budget will not only ensure the safety of Canadians but will also strengthen our role as a responsible ally within NATO. When countries like Russia and China are ramping up their military capabilities, Canada cannot afford to fall behind. It is imperative that we invest in our defense to guarantee that we can protect our sovereignty and maintain peace in an increasingly unpredictable world."
+      },
+      {
+        "name": "Writer 2: James Carter",
+        "text": "While I understand the concerns surrounding national security, I firmly believe that increasing military spending is not the answer. Canada should prioritize its resources on social services like healthcare and education, which directly impact the well-being of our citizens. Our current military budget is sufficient to meet our protective needs without unnecessary escalation. Moreover, redirecting funds to social programs can foster a more resilient society. Instead of preparing for potential conflicts, we should seek diplomatic solutions and invest in international cooperation. A strong military presence can also provoke tension rather than resolve it; thus, we must focus on building a peaceful Canada."
+      }
+    ],
+    "readerResponse": "In this debate about military spending, Sarah Thompson argues for [BLANK 1] while James Carter believes we should focus on [BLANK 2]. The need for increased defense spending is underscored by [BLANK 3] but opposed by [BLANK 4]. Therefore, the real question is whether [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that Canada should increase military spending?",
+        "options": [
+          "A) Sarah Thompson",
+          "B) James Carter",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the main reason Sarah Thompson supports increased military spending?",
+        "options": [
+          "A) To improve healthcare",
+          "B) To strengthen NATO relationships",
+          "C) To address social services",
+          "D) To reduce international tensions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which argument does James Carter use to oppose military spending?",
+        "options": [
+          "A) It is necessary for national security",
+          "B) It diverts funds from social programs",
+          "C) It strengthens military alliances",
+          "D) It is a waste of taxpayer money"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which perspective reflects a focus on peace and diplomacy?",
+        "options": [
+          "A) Sarah Thompson's",
+          "B) James Carter's",
+          "C) Both writers' perspectives",
+          "D) Neither writer's perspective"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is a common concern mentioned by both writers?",
+        "options": [
+          "A) Growing military threats",
+          "B) The need for social services",
+          "C) The effectiveness of diplomacy",
+          "D) National sovereignty"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) a peaceful approach",
+          "B) increased military capabilities",
+          "C) a diplomatic resolution",
+          "D) reduced tensions overseas"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) military investment",
+          "B) domestic infrastructure",
+          "C) healthcare improvements",
+          "D) educational support"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) economic growth",
+          "B) global unrest",
+          "C) local crime rates",
+          "D) diplomatic relations"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) community development",
+          "B) international treaties",
+          "C) military preparedness",
+          "D) defense spending"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) military spending is justified",
+          "B) peace can be achieved through strength",
+          "C) social programs need more funding",
+          "D) we can ensure national security without escalating conflict"
+        ],
+        "correct": 3
+      }
+    ],
+    "id": "part4-03"
+  },
+  {
+    "title": "Should Plastic Packaging Be Banned in Grocery Stores?",
+    "writers": [
+      {
+        "name": "Jessica Harmon",
+        "text": "As a concerned citizen and environmentalist, I strongly believe that plastic packaging should be banned in grocery stores. The environmental impact of plastic waste is undeniable; it pollutes our oceans, harms wildlife, and takes hundreds of years to decompose. According to recent studies, Canadians use approximately 3 million tons of plastic every year, with a significant portion coming from grocery stores. Alternatives like biodegradable packaging and reusable bags are readily available and should be encouraged. Banning plastic packaging will not only reduce waste but will also push grocery stores towards more sustainable practices. Consumers are increasingly calling for change, and it is time that we listened. Our planet deserves better, and it is our responsibility to take action now."
+      },
+      {
+        "name": "Michael Thompson",
+        "text": "While I understand the concerns regarding plastic packaging, I do not support a ban on it in grocery stores. Plastic packaging serves a crucial role in ensuring food safety and extending shelf life. Many fresh products face contamination without proper packaging, which could lead to foodborne illnesses. Additionally, the plastic recycling system is evolving, and many grocery stores are now offering recycling programs that mitigate the impact of plastic waste. Instead of an outright ban, we should focus on improving recycling efforts and encouraging responsible plastic use. A ban could lead to higher food prices as alternatives may be more expensive, and it could also disrupt the supply chain. We need to approach this issue with logic, not just emotion."
+      }
+    ],
+    "readerResponse": "A reader response with [BLANK 1] regarding plastic packaging, [BLANK 2] about its environmental effects, [BLANK 3] related to food safety, [BLANK 4] discussing alternatives, and [BLANK 5] reflecting on consumer behavior.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What does Jessica Harmon argue regarding plastic packaging?",
+        "options": [
+          "It should be improved",
+          "It should be banned",
+          "It is necessary",
+          "It should be recycled"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which argument does Michael Thompson present against banning plastic packaging?",
+        "options": [
+          "It is harmful to wildlife",
+          "It contributes to food spoilage",
+          "It is easily recyclable",
+          "It is costly to implement alternatives"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Who believes that consumers are increasingly calling for sustainable practices?",
+        "options": [
+          "Michael Thompson",
+          "Eco-friendly stores",
+          "Jessica Harmon",
+          "Government officials"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What aspect of plastic waste does Harmon emphasize in her letter?",
+        "options": [
+          "Its role in food safety",
+          "Its long decomposition time",
+          "Its recyclability",
+          "Its cost-effectiveness"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What solution does Thompson propose instead of a ban?",
+        "options": [
+          "Increase recycling efforts",
+          "Fully switch to biodegradable materials",
+          "Raise awareness about plastic use",
+          "Limit the production of plastic"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]: Many consumers are transitioning to...",
+        "options": [
+          "more sustainable products.",
+          "plastic alternatives only.",
+          "non-eco-friendly practices.",
+          "less packaging overall."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]: The impact of plastic waste on wildlife is...",
+        "options": [
+          "insignificant compared to other factors.",
+          "outrageous but manageable.",
+          "a pressing and serious issue.",
+          "easily solved with regulations."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]: Food safety is a major concern because...",
+        "options": [
+          "packaging is often ignored.",
+          "fresh products can spoil quickly.",
+          "of stringent packaging laws.",
+          "consumers prefer plastic."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]: There are various alternatives to plastic packaging, such as...",
+        "options": [
+          "metal containers that are more costly.",
+          "biodegradable materials that are less harmful.",
+          "reusable cloth bags that are impractical.",
+          "styrofoam that is widely available."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]: Many consumers desire eco-friendly options and are willing to...",
+        "options": [
+          "pay higher prices for them.",
+          "ignore their responsibilities.",
+          "stick with traditional packaging.",
+          "wait for government regulations."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-04"
+  },
+  {
+    "title": "Should Canadian Companies Be Required to Offer Four-Day Work Weeks?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a working mother and a career professional, I wholeheartedly support the implementation of a four-day work week in Canada. Research has demonstrated that a shorter work week can lead to increased productivity, better employee satisfaction, and even lower stress levels. With the advances in technology, many roles no longer require traditional hours, and businesses can thrive with a motivated workforce. Additionally, this change could lead to a healthier work-life balance, allowing employees to spend more time with their families and pursue personal interests. As we rethink the traditional notion of work, a four-day week could be key in attracting top talent and improving overall workplace wellbeing."
+      },
+      {
+        "name": "Writer 2: John Peterson",
+        "text": "While I appreciate the sentiment behind a four-day work week, I believe it is not a feasible option for all Canadian companies. Many industries, particularly those reliant on customer service and production, function on time-sensitive tasks that would suffer from reduced hours. Implementing such a policy could lead to greater workloads for employees, longer hours during the four days, and ultimately, burnout. Moreover, businesses might face increased operational costs as they adjust to new schedules, which could hinder growth and job stability. Instead of pushing for a blanket policy, we should encourage flexibility and allow businesses to determine what works best for their teams."
+      }
+    ],
+    "readerResponse": "In my opinion, the debate about a four-day work week has valid points on both sides. [BLANK 1] is crucial, yet [BLANK 2] cannot be ignored. It seems that [BLANK 3] could lead to better productivity, but [BLANK 4] may also create challenges for certain industries. Ultimately, it would be beneficial to [BLANK 5] and consider how different sectors can implement flexible work arrangements.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that a four-day work week can enhance employee satisfaction?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: John Peterson",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Who argues that a four-day work week may not be feasible for all industries?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: John Peterson",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is Sarah Thompson's primary argument for a four-day work week?",
+        "options": [
+          "A: Increased company profits",
+          "B: Better work-life balance",
+          "C: More training opportunities",
+          "D: Reduced operational costs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "According to John Peterson, what may be a consequence of implementing a four-day work week?",
+        "options": [
+          "A: Decreased productivity",
+          "B: Increased operational costs",
+          "C: Better job satisfaction",
+          "D: More leisure time"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which writer emphasizes the need for a balanced approach rather than a one-size-fits-all solution?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: John Peterson",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: A four-day work week could benefit everyone.",
+          "B: Understanding various business needs.",
+          "C: Focusing solely on employee happiness.",
+          "D: Implementing strict regulations."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: Employee wellbeing",
+          "B: Business sustainability",
+          "C: Government intervention",
+          "D: Work-related stress"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: Flexibility in work hours",
+          "B: A universal four-day policy",
+          "C: Businesses adjusting to new models",
+          "D: Employee dissatisfaction"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: Remote work trends",
+          "B: Industry-specific challenges",
+          "C: Greater employee retention",
+          "D: Opportunities for advancement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: Collaborate with workers",
+          "B: Abandon traditional hours",
+          "C: Enforce strict guidelines",
+          "D: Limit remote work options"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-05"
+  },
+  {
+    "title": "Should Foreign Buyers Be Permanently Banned from Canadian Real Estate?",
+    "writers": [
+      {
+        "name": "Writer 1: David Chen",
+        "text": "As a long-time resident of Vancouver, I believe that foreign buyers should be permanently banned from purchasing Canadian real estate. Over the last decade, the influx of foreign investment has contributed to soaring housing prices, making it increasingly difficult for Canadians, especially young families, to afford homes. The government must prioritize its citizens over international investors. By restricting foreign ownership, we can create a more balanced and equitable real estate market that serves the needs of the local population. Additionally, the environmental impact of foreign investments, often resulting in empty homes, cannot be overlooked. This is a significant issue we need to address as we strive for sustainable urban living."
+      },
+      {
+        "name": "Writer 2: Emily Johnson",
+        "text": "I strongly oppose the idea of banning foreign buyers from the Canadian real estate market. Foreign investments play a crucial role in our economy, contributing to job creation and development in many sectors. Instead of implementing a ban, we should focus on tax policies that ensure foreign buyers contribute their fair share while still allowing them to invest in our country. A blanket ban could deter potential investors and lead to negative repercussions for our economy. Furthermore, many foreign buyers may wish to reside in Canada part-time, enriching our communities with diverse cultures and experiences. Rather than shutting the door, we should welcome international buyers and find ways to integrate them into our economy."
+      }
+    ],
+    "readerResponse": "As I reflect on the debate surrounding foreign ownership in Canadian real estate, I find myself leaning towards the opinion that [BLANK 1]. While I understand the concerns about housing affordability and the local market, it’s essential to recognize that [BLANK 2]. Banning foreign buyers may provide short-term relief but could ultimately [BLANK 3]. Instead, a more balanced approach that [BLANK 4] might be more beneficial for everyone involved. After all, a thriving economy depends on [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes foreign buyers harm local homeownership?",
+        "options": [
+          "A. David Chen",
+          "B. Emily Johnson",
+          "C. Both",
+          "D. Neither"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is Writer 2's main argument in favor of foreign buyers?",
+        "options": [
+          "A. They increase housing prices.",
+          "B. They contribute to the economy.",
+          "C. They harm local culture.",
+          "D. They create empty homes."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What concern does Writer 1 highlight about foreign investments?",
+        "options": [
+          "A. Job creation",
+          "B. Environmental impact",
+          "C. Cultural integration",
+          "D. Economic growth"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which viewpoint is shared by both writers?",
+        "options": [
+          "A. Housing prices need to be controlled.",
+          "B. The market should be accessible to Canadians.",
+          "C. Foreign buyers bring benefits.",
+          "D. The government should intervene."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is Writer 1's solution to the issue?",
+        "options": [
+          "A. Increase foreign ownership.",
+          "B. Ban foreign buyers.",
+          "C. Implement tax policies.",
+          "D. Encourage foreign culture."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A. a ban is necessary",
+          "B. foreign buyers are beneficial",
+          "C. the economy must prioritize foreigners",
+          "D. local homeowners deserve better"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A. foreign investments are harmful",
+          "B. diversity contributes to growth",
+          "C. empty homes are a problem",
+          "D. Canadians need to adapt"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A. limit investment opportunities",
+          "B. encourage economic downturn",
+          "C. promote local investments",
+          "D. enhance community engagement"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A. promotes diversity and investment",
+          "B. restricts the housing market",
+          "C. avoids foreign relations",
+          "D. harms local economies"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A. local investments",
+          "B. foreign buyers",
+          "C. cultural diversity",
+          "D. a stable real estate market"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-06"
+  },
+  {
+    "title": "Should Universities Prioritize STEM Over Arts and Humanities?",
+    "writers": [
+      {
+        "name": "Writer 1: Jordan Lee",
+        "text": "In today's rapidly evolving job market, it is essential for universities to prioritize STEM (Science, Technology, Engineering, and Mathematics) programs over arts and humanities. Technology is at the forefront of economic growth and societal development, and equipping students with skills in STEM fields prepares them for the demands of the workforce. Investing in STEM education not only leads to high-paying jobs for graduates but also drives innovation that can solve pressing global issues, such as climate change and healthcare. While the arts and humanities are valuable, they cannot compete with the urgency of scientific advancements that benefit society as a whole. Universities must recognize the changing landscape of employment and adjust their curricula to prepare future generations effectively."
+      },
+      {
+        "name": "Writer 2: Emily Carter",
+        "text": "While I understand the importance of STEM education, I firmly believe that universities should not prioritize STEM over the arts and humanities. The arts foster creativity, critical thinking, and emotional intelligence—skills that are crucial in every field, including STEM. A well-rounded education that values the arts cultivates individuals who can think outside the box and approach problems from various perspectives. Moreover, the arts have a significant cultural impact that enriches society, offering a sense of identity and community. By sidelining humanities, we risk producing a generation of professionals who may excel technically but lack the creativity and empathy that the arts provide. Therefore, universities must strive for a balanced approach, integrating both STEM and arts to prepare holistic individuals for the future."
+      }
+    ],
+    "readerResponse": "In my opinion, it is important for universities to [BLANK 1]. I believe that prioritizing STEM education can lead to [BLANK 2], but we must also consider the role of the arts in [BLANK 3]. Ultimately, a balanced education will [BLANK 4], ensuring that students are [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Who primarily supports the prioritization of STEM programs in universities?",
+        "options": [
+          "A) Jordan Lee",
+          "B) Emily Carter",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which argument aligns with Writer 2's viewpoint?",
+        "options": [
+          "A) STEM jobs are more lucrative.",
+          "B) The arts foster essential skills.",
+          "C) Technology drives economic growth.",
+          "D) The arts are less important."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "According to Writer 1, what is a major benefit of investing in STEM education?",
+        "options": [
+          "A) It preserves cultural identity.",
+          "B) It enhances creativity.",
+          "C) It leads to innovation.",
+          "D) It increases emotional intelligence."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What concern does Writer 2 express regarding the focus on STEM?",
+        "options": [
+          "A) Loss of economic competitiveness.",
+          "B) Lack of creativity and empathy.",
+          "C) Insufficient job opportunities.",
+          "D) Increased technology reliance."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What do both writers agree on?",
+        "options": [
+          "A) The arts are not needed.",
+          "B) Education must adapt to change.",
+          "C) STEM jobs require creativity.",
+          "D) Universities should only focus on STEM."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) emphasize only technical skills.",
+          "B) maintain a balance between disciplines.",
+          "C) ignore the importance of creativity.",
+          "D) eliminate arts programs entirely."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) job security for graduates.",
+          "B) a decline in cultural output.",
+          "C) an increase in funding for the arts.",
+          "D) less demand for soft skills."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) fostering innovation in technology.",
+          "B) shaping our cultural narratives.",
+          "C) generating more revenue for universities.",
+          "D) limiting student choices."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) prepare students solely for STEM jobs.",
+          "B) ensure diverse skill sets in graduates.",
+          "C) ignore the need for humanities education.",
+          "D) create a competitive job market."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) prepared only for technical challenges.",
+          "B) equipped with a broad perspective.",
+          "C) focused on artistic expression.",
+          "D) limited to specific career paths."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-07"
+  },
+  {
+    "title": "Should Canada Adopt a Universal Basic Income?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a proponent of universal basic income (UBI), I firmly believe that implementing this system in Canada would significantly reduce poverty and improve the quality of life for many citizens. In my view, UBI offers a safety net that would allow individuals to cover their basic needs, such as food, housing, and healthcare, without the stigma often associated with traditional welfare programs. With the rise of automation and job displacement, there's an urgent need to rethink our economic structures, and UBI could help facilitate that transition. Canada has the resources to support a UBI program, and it would not only benefit individuals but also stimulate the economy by increasing consumer spending."
+      },
+      {
+        "name": "Writer 2: Mark Johnson",
+        "text": "I strongly oppose the idea of universal basic income in Canada. While the intentions behind UBI may be noble, the financial implications are dire. Funding such a program would require massive tax increases that could burden both individuals and businesses, potentially leading to economic stagnation. Furthermore, UBI may discourage people from seeking employment, as it creates a safety net that could lessen the incentive to work. Instead of UBI, we should focus on improving existing social welfare programs and creating more job opportunities to help individuals become self-sufficient."
+      }
+    ],
+    "readerResponse": "As a Canadian citizen, I feel that [BLANK 1] regarding universal basic income. I believe that [BLANK 2] should take into account the long-term economic sustainability of the program. Furthermore, while [BLANK 3] can provide immediate relief, it should not replace [BLANK 4]. In conclusion, [BLANK 5] will ultimately influence my stance on this issue.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer supports the idea of a universal basic income?",
+        "options": [
+          "A) Sarah Thompson",
+          "B) Mark Johnson",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is one argument that Writer 1 presents in favor of UBI?",
+        "options": [
+          "A) It will decrease taxes.",
+          "B) It will help reduce poverty.",
+          "C) It will eliminate jobs.",
+          "D) It will increase government spending."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which concern does Writer 2 raise about universal basic income?",
+        "options": [
+          "A) It is too expensive.",
+          "B) It encourages people to work.",
+          "C) It helps stimulate the economy.",
+          "D) It reduces poverty."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How does Writer 1 suggest that UBI would impact consumer spending?",
+        "options": [
+          "A) It will reduce spending.",
+          "B) It will be neutral.",
+          "C) It will increase spending.",
+          "D) It will not affect spending."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which writer emphasizes the need for existing welfare programs over UBI?",
+        "options": [
+          "A) Sarah Thompson",
+          "B) Mark Johnson",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) UBI could solve all issues.",
+          "B) there are valid arguments on both sides.",
+          "C) UBI is the only solution.",
+          "D) it will negatively impact the economy."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Canadian citizens",
+          "B) politicians",
+          "C) wealthy individuals",
+          "D) corporations"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) UBI",
+          "B) job creation",
+          "C) automation",
+          "D) traditional welfare programs"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) job security programs",
+          "B) basic needs programs",
+          "C) welfare support",
+          "D) employment opportunities"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) economic considerations",
+          "B) political campaigns",
+          "C) personal beliefs",
+          "D) public opinion"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-08"
+  },
+  {
+    "title": "Should Canadian Healthcare Include Dental and Vision Coverage?",
+    "writers": [
+      {
+        "name": "Dr. Emily Chen",
+        "text": "As a healthcare professional, I strongly believe that Canadian healthcare should include dental and vision coverage. These services are essential for overall health and wellbeing. Untreated dental issues can lead to serious health complications, and poor vision can affect an individual's quality of life, including their ability to work and engage in daily activities. Moreover, integrating these services into our healthcare system can reduce long-term costs by preventing severe health issues caused by neglecting dental and vision care. It's time for Canada to provide comprehensive healthcare that covers all aspects of health, including oral and visual health."
+      },
+      {
+        "name": "Mr. John Thompson",
+        "text": "I oppose the idea of including dental and vision coverage within Canadian healthcare. While I acknowledge that these services are important, they should not be funded by taxpayer dollars. The current healthcare system is already facing significant financial strain, and adding more services could exacerbate the issue. People can seek dental and vision care through private insurance or out-of-pocket payments. We need to focus our resources on essential and life-saving medical services rather than expanding coverage for dental and vision, which many Canadians can pay for themselves."
+      },
+      {
+        "name": "Ms. Rachel Simmons",
+        "text": "The debate over including dental and vision coverage in our healthcare system brings up valid points from both sides. However, I lean toward supporting their inclusion. Health is interconnected, and inadequate dental care can lead to health problems like heart disease. Furthermore, vision problems can hinder educational and job opportunities. By providing comprehensive coverage, we can ensure a healthier population. The initial investment may seem daunting, but the long-term benefits to society, including increased productivity and reduced emergency visits, cannot be ignored."
+      }
+    ],
+    "readerResponse": "In the debate over dental and vision coverage, I believe that [BLANK 1]. While some argue that [BLANK 2], it is evident that [BLANK 3]. As Dr. Chen pointed out, [BLANK 4], which is crucial for [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer supports the inclusion of dental and vision coverage in Canadian healthcare?",
+        "options": [
+          "A) Dr. Emily Chen",
+          "B) Mr. John Thompson",
+          "C) Ms. Rachel Simmons",
+          "D) None of the writers"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is Mr. John Thompson's main argument against including dental and vision coverage?",
+        "options": [
+          "A) It is essential for health.",
+          "B) It would strain the healthcare system financially.",
+          "C) Other countries have successfully included it.",
+          "D) It is not important for productivity."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What concern does Ms. Rachel Simmons emphasize regarding dental health?",
+        "options": [
+          "A) It's too costly.",
+          "B) It directly affects heart health.",
+          "C) Many people already have insurance.",
+          "D) It encourages private insurance."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which writer suggests that the long-term benefits of including these services will outweigh initial costs?",
+        "options": [
+          "A) Dr. Emily Chen",
+          "B) Mr. John Thompson",
+          "C) Ms. Rachel Simmons",
+          "D) None of the writers"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Who believes that dental and vision services can be funded privately?",
+        "options": [
+          "A) Dr. Emily Chen",
+          "B) Mr. John Thompson",
+          "C) Ms. Rachel Simmons",
+          "D) All writers agree"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) we should prioritize private funding.",
+          "B) all aspects of health must be considered.",
+          "C) dental and vision care is not as important.",
+          "D) the government should not intervene."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) including these services is unreasonable.",
+          "B) private insurance is sufficient.",
+          "C) many Canadians struggle with these costs.",
+          "D) there should be limits on healthcare."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) dental issues can result in severe complications.",
+          "B) vision care is generally unnecessary.",
+          "C) most dental issues are preventable.",
+          "D) insurance companies cover all costs."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) Canadians should pay for their own services.",
+          "B) dental health is tied to overall wellness.",
+          "C) vision problems are often ignored.",
+          "D) funding should focus solely on acute care."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) fostering a healthier society.",
+          "B) emphasizing private insurance.",
+          "C) limiting public healthcare.",
+          "D) addressing only urgent medical issues."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-09"
+  },
+  {
+    "title": "Should Canada Invest More in High-Speed Rail Between Cities?",
+    "writers": [
+      {
+        "name": "Writer 1: Emily Tran",
+        "text": "High-speed rail is an essential investment for Canada's future. Not only does it provide a faster, more efficient means of transportation between major cities, but it also helps reduce greenhouse gas emissions by encouraging public transit over car travel. The current transportation system is heavily reliant on cars and airplanes, both of which contribute to pollution and congestion. By investing in high-speed rail, Canada can lead the way in sustainable transportation solutions. Furthermore, this will boost local economies by increasing access to markets and reducing travel time for commuters and tourists alike. Countries like France and Japan have seen tremendous success with their high-speed rail systems and Canada should follow suit to enhance connectivity and eco-friendliness."
+      },
+      {
+        "name": "Writer 2: David Chen",
+        "text": "While the idea of high-speed rail sounds appealing, it is crucial to recognize the financial implications and practicality of such a project in Canada. The initial investment required for the construction and maintenance of high-speed rail infrastructure would be astronomical, potentially diverting funds from more pressing needs like healthcare and education. Additionally, given Canada's vast geography, high-speed rail may not be a feasible solution for many regions, particularly in rural areas where populations are sparse. Instead of investing in costly rail systems, the government should focus on improving existing transportation networks and enhancing services that can benefit a wider range of Canadians. The risks of overspending on high-speed rail could outweigh the potential benefits, leading us to reconsider whether this is the right priority for our country."
+      }
+    ],
+    "readerResponse": "As a concerned citizen, I believe that [BLANK 1] high-speed rail investments. They could potentially lead to [BLANK 2]. However, I also understand the concerns raised about [BLANK 3]. Ultimately, I think we should weigh the pros and cons to decide if [BLANK 4] is worth pursuing. My personal stance is that [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer supports the investment in high-speed rail?",
+        "options": [
+          "A: Emily Tran",
+          "B: David Chen",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is one argument made by Emily Tran?",
+        "options": [
+          "A: High-speed rail is too expensive.",
+          "B: It helps reduce greenhouse gas emissions.",
+          "C: It would mostly benefit rural communities.",
+          "D: It would require maintenance costs."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What concern does David Chen express regarding high-speed rail?",
+        "options": [
+          "A: It will boost local economies.",
+          "B: It could divert funds from essential services.",
+          "C: It enhances connectivity.",
+          "D: It has been successful in other countries."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What do both writers agree on?",
+        "options": [
+          "A: High-speed rail is needed in Canada.",
+          "B: Financial implications are a concern.",
+          "C: Sustainable transportation is important.",
+          "D: High-speed rail works in other countries."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which writer cites international examples?",
+        "options": [
+          "A: Emily Tran",
+          "B: David Chen",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: I disagree with the idea of",
+          "B: I fully support",
+          "C: I am indifferent to",
+          "D: I have no opinion on"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: more funding for health services",
+          "B: a more prosperous economy",
+          "C: increased traffic congestion",
+          "D: less reliance on public transport"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: the cost of public transport",
+          "B: the feasibility of funding it",
+          "C: the environmental impact",
+          "D: increased travel options"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: a new transport system",
+          "B: existing rail lines",
+          "C: high-speed rail",
+          "D: alternate transport methods"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: we must prioritize healthcare",
+          "B: it requires further consideration",
+          "C: high-speed rail should be implemented immediately",
+          "D: it is not necessary in Canada"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-10"
+  },
+  {
+    "title": "The Debate on Foreign Buyers in Canadian Real Estate",
+    "writers": [
+      {
+        "name": "Writer 1: James Carter",
+        "text": "In light of skyrocketing home prices in Canada, it’s time to ban foreign buyers from purchasing real estate permanently. Canadian citizens are struggling to afford homes in their own country, while foreign investors treat our housing market as a mere investment portfolio. It’s unfair for the average family to compete against wealthy foreign investors who can outbid them with ease. By restricting foreign ownership, we can increase availability for locals and stabilize housing prices. Furthermore, we should prioritize housing for Canadians before allowing non-residents to capitalize on our market."
+      },
+      {
+        "name": "Writer 2: Sarah Thompson",
+        "text": "While the issue of housing affordability is critical, I strongly oppose the permanent ban on foreign buyers in Canadian real estate. Foreign investments contribute significantly to our economy, creating jobs and driving local development. Banning these buyers could lead to decreased property values as demand drops, ultimately harming homeowners. Rather than imposing restrictions, we should focus on policies that increase housing supply and support affordable housing initiatives. Collaboration with foreign investors could lead to innovative solutions that benefit the Canadian market as a whole."
+      }
+    ],
+    "readerResponse": "As a reader, I believe that [BLANK 1]. Writer 1 raises valid points about [BLANK 2], while Writer 2 offers a perspective on [BLANK 3]. Ultimately, a balanced approach may be [BLANK 4]. It’s crucial to consider both the short-term impacts and the [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Who agrees with the need to prioritize housing for Canadians?",
+        "options": [
+          "A: James Carter",
+          "B: Sarah Thompson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is Writer 2's main argument against a ban on foreign buyers?",
+        "options": [
+          "A: It would harm the economy",
+          "B: It would increase housing prices",
+          "C: It would reduce property values",
+          "D: It would not affect the local market"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How does Writer 1 view foreign investors?",
+        "options": [
+          "A: As drivers of market stability",
+          "B: As threats to local homebuyers",
+          "C: As essential for economic growth",
+          "D: As misunderstood players"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which writer suggests that collaboration with foreign investors can lead to positive outcomes?",
+        "options": [
+          "A: James Carter",
+          "B: Sarah Thompson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What solution does Writer 1 propose to alleviate housing issues?",
+        "options": [
+          "A: Increase foreign investment",
+          "B: Ban foreign buyers",
+          "C: Improve public transportation",
+          "D: Reduce taxes for homeowners"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: a complete ban is necessary",
+          "B: foreign investments should be welcomed",
+          "C: the housing market is healthy",
+          "D: cooperation is the only solution"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: local housing initiatives",
+          "B: economic growth through investment",
+          "C: the decline of property values",
+          "D: the need for increased foreign investment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: the importance of economic contribution",
+          "B: the risks of too much local focus",
+          "C: the urgency of real estate laws",
+          "D: the advantages of local buyers"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: a comprehensive approach",
+          "B: a simple solution",
+          "C: a temporary measure",
+          "D: a strict policy"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: the long-term consequences",
+          "B: the short-term benefits",
+          "C: the immediate results",
+          "D: the demand for housing"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-11"
+  },
+  {
+    "title": "Are Electric Vehicles Practical for All Canadian Climates?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a proud owner of an electric vehicle (EV), I firmly believe that electric vehicles are practical for all Canadian climates. In fact, my experience driving through the snowy winters of Alberta has only solidified my confidence in EVs. Today's technology has significantly improved battery performance, especially in cold temperatures. While some argue that the range of electric vehicles diminishes in winter, many newer models offer winter packages to help maintain efficiency. Furthermore, the environmental benefits of driving an EV cannot be overstated, especially in a country like Canada where we need to combat climate change. With advancements in charging infrastructure and increasing public purchase incentives, transitioning to EVs is an essential step towards a sustainable future for all Canadians, regardless of the climate."
+      },
+      {
+        "name": "Writer 2: Mark Johnson",
+        "text": "While I appreciate the advancements in electric vehicles, I remain skeptical about their practicality for all Canadian climates. Living in Northern Ontario, I often face extreme cold and long distances, and I have serious concerns about the capacity of EVs to perform in such conditions. The current battery technology results in reduced range during winter months, which can leave drivers stranded or needing to constantly monitor charging stations—something not every rural area has. Also, the time to recharge an EV compared to refueling a gas vehicle is a significant drawback for many Canadians who rely on their cars for long journeys. Until we see more robust improvements in battery life and charging infrastructure, I believe that EVs may not yet be the viable option for every Canadian lifestyle, especially in harsher climates."
+      }
+    ],
+    "readerResponse": "In the debate about electric vehicles, it is clear that [BLANK 1] while [BLANK 2]. Furthermore, it is important to consider [BLANK 3] that may affect the decision to switch to EVs. Although some may find the environmental argument compelling, others might prioritize [BLANK 4]. Overall, it is essential to acknowledge that [BLANK 5] may ultimately depend on individual needs and circumstances.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes electric vehicles can perform well in all Canadian climates?",
+        "options": [
+          "A) Mark Johnson",
+          "B) Sarah Thompson",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is a primary concern raised by Mark Johnson about electric vehicles?",
+        "options": [
+          "A) Their environmental impact",
+          "B) Lack of charging stations",
+          "C) Performance in cold climates",
+          "D) High purchase costs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "According to Sarah Thompson, what has improved the practicality of EVs in colder climates?",
+        "options": [
+          "A) More charging stations",
+          "B) Winter packages for new models",
+          "C) Lower purchase incentives",
+          "D) Increased gasoline prices"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What is a shared concern between both writers regarding electric vehicles?",
+        "options": [
+          "A) Battery life",
+          "B) Public awareness",
+          "C) Driving range",
+          "D) Environmental benefits"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which writer emphasizes the environmental benefits of electric vehicles?",
+        "options": [
+          "A) Mark Johnson",
+          "B) Sarah Thompson",
+          "C) Both writers",
+          "D) Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) electric vehicles are not suitable",
+          "B) EVs can be a great option",
+          "C) charging infrastructure is lacking",
+          "D) environmental benefits are negligible"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Mark Johnson has concerns",
+          "B) Sarah Thompson is wrong",
+          "C) technology is outdated",
+          "D) EVs are too expensive"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) personal preferences",
+          "B) technological advancements",
+          "C) environmental policies",
+          "D) regional climates"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) performance in winter",
+          "B) charging time",
+          "C) electric pricing",
+          "D) purchase incentives"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) the effectiveness of EVs",
+          "B) the choice for Canadians",
+          "C) the market for electric vehicles",
+          "D) the popularity of gasoline cars"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-12"
+  },
+  {
+    "title": "Should Universities Prioritize STEM Over Arts and Humanities?",
+    "writers": [
+      {
+        "name": "Writer 1: Dr. Emily Chen",
+        "text": "In today's rapidly evolving job market, universities should prioritize science, technology, engineering, and mathematics (STEM) programs over arts and humanities. The demand for STEM graduates is soaring, as these fields are the backbone of innovation and economic growth. For instance, Canada is experiencing a tech boom that requires skilled workers who can drive research and development in artificial intelligence, healthcare technologies, and renewable energy. By focusing on STEM, universities will equip students with the skills needed for high-paying jobs and ensure the country remains competitive on a global scale. While arts and humanities are valuable for fostering creativity and critical thinking, they do not offer the same economic benefits in this digital age."
+      },
+      {
+        "name": "Writer 2: Sarah Johnson",
+        "text": "I strongly disagree with Dr. Chen’s assertion that STEM should overshadow arts and humanities in university curricula. The humanities play a crucial role in shaping well-rounded individuals who can think critically and empathize with others. Skills gained from studying history, literature, and philosophy are essential for addressing complex social issues and fostering a more inclusive society. Moreover, the arts stimulate creativity, which is increasingly important in today’s job market, even in STEM fields. For example, many successful technology companies, including Google and Apple, attribute their innovation to teams composed of diverse thinkers, including artists and humanists. Neglecting arts and humanities education will limit students' ability to contribute to society in meaningful ways."
+      }
+    ],
+    "readerResponse": "In the debate about prioritizing STEM over arts and humanities, many believe that [BLANK 1]. However, others argue that [BLANK 2]. Ultimately, it seems that a balanced approach is necessary, as [BLANK 3]. Therefore, universities should consider [BLANK 4] to ensure they produce graduates who are not only skilled in their fields but also possess [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer argues that universities should focus on high-paying job readiness?",
+        "options": [
+          "A: Dr. Emily Chen",
+          "B: Sarah Johnson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is a key argument made by Sarah Johnson?",
+        "options": [
+          "A: STEM fields are essential for economic growth.",
+          "B: Arts and humanities enhance empathy and critical thinking.",
+          "C: Creativity is unnecessary in technology.",
+          "D: STEM graduates are more likely to find jobs."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which writer acknowledges the importance of creativity in the job market?",
+        "options": [
+          "A: Dr. Emily Chen",
+          "B: Sarah Johnson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does Dr. Chen suggest as a reason to prioritize STEM?",
+        "options": [
+          "A: It is more enjoyable for students.",
+          "B: It addresses social issues effectively.",
+          "C: It drives research and innovation.",
+          "D: It requires less funding."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Who emphasizes the role of diverse thinkers in technology companies?",
+        "options": [
+          "A: Dr. Emily Chen",
+          "B: Sarah Johnson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: STEM education is valuable for career success.",
+          "B: Arts and humanities are essential for critical thinking.",
+          "C: The economy needs more engineers.",
+          "D: Universities are failing to innovate."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: Arts develop creativity, which is vital.",
+          "B: STEM graduates are always in demand.",
+          "C: The humanities are a waste of resources.",
+          "D: Creative sectors have dwindled."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: arts are pointless in a technological world.",
+          "B: both sectors contribute to personal development.",
+          "C: STEM is more enjoyable than the arts.",
+          "D: the humanities are no longer relevant."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: a push for only science courses.",
+          "B: a multidisciplinary approach to education.",
+          "C: funding cuts to arts programs.",
+          "D: a focus on vocational training only."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: only technical skills.",
+          "B: a strong ethical framework.",
+          "C: a focus on quantitative analysis.",
+          "D: basic job skills."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-13"
+  },
+  {
+    "title": "Is Working from Home Hurting Canadian Workplace Culture?",
+    "writers": [
+      {
+        "name": "Writer 1: John Smith",
+        "text": "As a long-time employee in the tech industry, I firmly believe that working from home is detrimental to Canadian workplace culture. Remote work diminishes the sense of teamwork and collaboration that is crucial in any work environment. It creates barriers to spontaneous discussions and brainstorming that often happen in an office setting. Moreover, the lack of face-to-face interaction can lead to feelings of isolation and disconnectedness among employees, which ultimately impacts morale and productivity. While flexibility is essential, I argue that a balanced approach, with a hybrid model, is vital for maintaining a healthy and engaging workplace culture."
+      },
+      {
+        "name": "Writer 2: Maria Lopez",
+        "text": "I respectfully disagree with John Smith’s perspective. Working from home has significantly improved my work-life balance and that of many others. It allows me to manage my time better, reduces commuting stress, and increases productivity in a comfortable setting. Collaboration can still thrive in a virtual environment with the right tools and practices in place. In fact, many companies report that remote work has led to higher employee satisfaction and lower turnover rates. Instead of fearing a shift in culture, we should embrace the flexibility that remote work offers and adapt our expectations for collaboration in this new normal."
+      }
+    ],
+    "readerResponse": "Both writers express valid points regarding remote work. However, [BLANK 1] seems to highlight the importance of adaptation in workplace culture. While [BLANK 2] emphasizes the negative impact on teamwork, [BLANK 3] points out the benefits for work-life balance. Therefore, [BLANK 4] suggest that a hybrid approach may serve as a solution. Ultimately, [BLANK 5] reflect the evolving nature of work in Canada.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer argues that remote work leads to a decline in teamwork?",
+        "options": [
+          "A: John Smith",
+          "B: Maria Lopez",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Who believes that remote work has improved employee satisfaction?",
+        "options": [
+          "A: John Smith",
+          "B: Maria Lopez",
+          "C: Both",
+          "D: Neither"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is John Smith's suggested solution to the issues he raises?",
+        "options": [
+          "A: Full remote work",
+          "B: Hybrid model",
+          "C: No work from home",
+          "D: Focus on technology"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "According to Maria Lopez, which factor significantly enhances productivity?",
+        "options": [
+          "A: Face-to-face meetings",
+          "B: Flexible hours",
+          "C: Office environment",
+          "D: Team lunches"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What overarching theme do both writers address?",
+        "options": [
+          "A: Office politics",
+          "B: Workplace culture",
+          "C: Employee pay",
+          "D: Job security"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: John Smith's opinion is outdated.",
+          "B: adapting to change is crucial.",
+          "C: employees should return to the office.",
+          "D: technology hinders communication."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: remote work leads to isolation.",
+          "B: working from home is preferred by all.",
+          "C: office culture is thriving.",
+          "D: teamwork is unaffected."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: collaboration tools are ineffective.",
+          "B: work-life balance is essential.",
+          "C: all companies are struggling.",
+          "D: remote work is not sustainable."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: change is rarely positive.",
+          "B: allowing flexibility can enhance culture.",
+          "C: remote work should be avoided.",
+          "D: office attendance should be mandatory."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: companies must adapt to a new era.",
+          "B: working from home is detrimental overall.",
+          "C: teamwork should be prioritized over comfort.",
+          "D: remote work will fail eventually."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-14"
+  },
+  {
+    "title": "Should Canada Adopt a Universal Basic Income?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "In an era where income inequality is on the rise and job security is increasingly uncertain, Canada should adopt a universal basic income (UBI). This financial support for all citizens would provide a safety net that allows individuals to meet their basic needs, thus reducing poverty and promoting overall well-being. A UBI would also empower people to pursue education and training opportunities, as they would have a stable income to rely on while they invest in their future. Studies from various countries show that UBI can lead to increased mental health and social cohesion. Canada can certainly afford it, especially by redirecting funds from inefficient welfare programs and taxes on the wealthiest Canadians. By adopting UBI, Canada can create a more equitable society and stimulate the economy through increased consumer spending."
+      },
+      {
+        "name": "Writer 2: Mark Johnson",
+        "text": "While the idea of a universal basic income sounds appealing, I firmly believe Canada should not adopt this policy. UBI creates a disincentive to work, as individuals may choose to rely solely on government assistance rather than seek employment. This could lead to a decrease in the workforce participation rate, ultimately harming the economy. Instead of UBI, Canada should focus on improving existing welfare programs and creating more job opportunities through investments in infrastructure and green technologies. Furthermore, the financial burden of UBI could lead to higher taxes or cuts in vital services that many Canadians rely on. We need to ensure that help is targeted to those who need it the most, rather than distributing money to everyone regardless of their circumstances."
+      }
+    ],
+    "readerResponse": "As I consider the arguments presented, I find that [BLANK 1]. While Writer 1 believes in the benefits of UBI, [BLANK 2]. On the other hand, Writer 2 raises valid concerns about [BLANK 3]. Personally, I think that [BLANK 4] and that we must find a balanced approach. Both perspectives highlight the importance of [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that UBI can improve mental health and social cohesion?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: Mark Johnson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is a key argument presented by Writer 2 against UBI?",
+        "options": [
+          "A: It will increase poverty.",
+          "B: It will create job disincentives.",
+          "C: It is too expensive.",
+          "D: It will improve mental health."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How does Writer 1 propose to fund UBI?",
+        "options": [
+          "A: By increasing taxes for everyone.",
+          "B: Through cuts to healthcare.",
+          "C: By redirecting inefficient welfare funds.",
+          "D: By borrowing from other countries."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "According to Writer 1, what is a potential benefit of UBI?",
+        "options": [
+          "A: Lower taxes for all.",
+          "B: Increased consumer spending.",
+          "C: Higher unemployment rates.",
+          "D: Less education opportunities."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which writer emphasizes the need for targeted assistance?",
+        "options": [
+          "A: Sarah Thompson",
+          "B: Mark Johnson",
+          "C: Both writers",
+          "D: Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: UBI could solve all of our problems.",
+          "B: UBI has both supporters and detractors.",
+          "C: UBI is not a viable option.",
+          "D: Everyone agrees on UBI."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: I completely agree with her.",
+          "B: I have concerns about this approach.",
+          "C: I think it is fantastic.",
+          "D: I am unsure."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: the effectiveness of UBI programs.",
+          "B: the potential of the workforce.",
+          "C: the funding required for UBI.",
+          "D: the financial burden of UBI."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: UBI is the only solution.",
+          "B: we need to address income inequality.",
+          "C: welfare programs need to be eliminated.",
+          "D: everyone deserves a UBI."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: finding solutions to economic challenges.",
+          "B: designing welfare programs.",
+          "C: reducing taxes for everyone.",
+          "D: limiting government spending."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-15"
+  },
+  {
+    "title": "Are Smartphones Helping or Hurting Canadian Children in Schools?",
+    "writers": [
+      {
+        "name": "Writer 1: Lisa Thompson",
+        "text": "As a parent and educator, I believe that smartphones are a double-edged sword in our schools. On one hand, they provide students with immediate access to information and learning resources that can enrich their education. For instance, apps can facilitate collaborative projects and enhance communication among peers and teachers. However, the distractions caused by social media and gaming can severely hinder a child's focus and productivity in the classroom. I often see students more engaged with their phones than their lessons, and this can lead to poor academic performance. Therefore, while smartphones have potential educational benefits, their negative influences must not be overlooked."
+      },
+      {
+        "name": "Writer 2: Mark Johnson",
+        "text": "I disagree with the view that smartphones are detrimental to children in schools. Instead, I argue that they are essential tools for modern learning. In a world where technology is ubiquitous, children must learn to use these devices responsibly. Smartphones can help students develop critical thinking and research skills right from an early age. Moreover, with proper guidance, they can engage in educational activities that enhance their learning experience. Rather than banning smartphones, schools should integrate them into the curriculum and teach students about digital citizenship, making them more adept at discerning credible information online."
+      }
+    ],
+    "readerResponse": "A reader response with [BLANK 1] highlighting the main arguments for smartphones being beneficial, [BLANK 2] focusing on the distractions they pose, [BLANK 3] indicating the need for proper guidance, [BLANK 4] discussing the importance of digital citizenship, and [BLANK 5] reflecting on the balance between technology and education.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that smartphones hinder a child's focus?",
+        "options": [
+          "A. Lisa Thompson",
+          "B. Mark Johnson",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the primary argument made by Mark Johnson regarding smartphones in education?",
+        "options": [
+          "A. They should be banned.",
+          "B. They enhance learning.",
+          "C. They are distracting.",
+          "D. They should be used only at home."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which statement reflects a point of agreement between the two writers?",
+        "options": [
+          "A. Smartphones are completely harmful.",
+          "B. Smartphones can be used for educational purposes.",
+          "C. Students should not use smartphones at all.",
+          "D. Technology in schools should be minimized."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "According to Lisa Thompson, one negative impact of smartphones is that they lead to:",
+        "options": [
+          "A. Enhanced focus.",
+          "B. Improved academic performance.",
+          "C. Increased distractions.",
+          "D. Better communication."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Who emphasizes the importance of digital citizenship in the context of smartphone use?",
+        "options": [
+          "A. Lisa Thompson",
+          "B. Mark Johnson",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]: Smartphones are beneficial because they provide students with...",
+        "options": [
+          "A. constant distractions.",
+          "B. immediate access to information.",
+          "C. reasons to avoid schoolwork.",
+          "D. a need for more supervision."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]: However, these devices can also lead to...",
+        "options": [
+          "A. improved concentration.",
+          "B. social media addiction.",
+          "C. better grades.",
+          "D. increased teamwork."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]: Mark Johnson argues that with proper guidance, students can...",
+        "options": [
+          "A. be taught how to use technology.",
+          "B. avoid using smartphones altogether.",
+          "C. focus on old-fashioned learning methods.",
+          "D. ignore digital resources."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]: Digital citizenship involves teaching students...",
+        "options": [
+          "A. how to use smartphones only for games.",
+          "B. to discern credible information online.",
+          "C. to avoid technology in their studies.",
+          "D. not to share personal information."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]: A balance between technology and education requires...",
+        "options": [
+          "A. restricting smartphone usage.",
+          "B. integrating technology positively.",
+          "C. ignoring technological advancements.",
+          "D. emphasizing traditional teaching only."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-16"
+  },
+  {
+    "title": "Should Canadian Healthcare Include Dental and Vision Coverage?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a long-time advocate for universal healthcare, I firmly believe that Canadian healthcare should include dental and vision coverage. Health is not merely the absence of disease; it encompasses overall well-being, which includes oral and visual health. Many Canadians are unable to afford necessary dental treatments, leading to worsening health issues that ultimately burden our healthcare system in the long run. Moreover, poor dental health has been linked to various chronic health conditions, including heart disease and diabetes. By including these services in the public healthcare system, we can provide comprehensive care that benefits all Canadians, reducing long-term costs and improving quality of life."
+      },
+      {
+        "name": "Writer 2: John Reynolds",
+        "text": "While I understand the concerns raised by advocates of including dental and vision coverage in our healthcare system, I believe it could be detrimental to the sustainability of Canadian healthcare. Our public healthcare system is already strained, and adding dental and vision care would require significant financial resources. Instead, we should focus on improving the existing core services such as primary care and emergency services. There is also an argument to be made that dental and vision care can be effectively managed through private insurance and that most Canadians already have access to these services through their employers. Allowing choice in healthcare coverage can lead to improved services without overburdening public resources."
+      }
+    ],
+    "readerResponse": "As I read the letters to the editor, I found myself agreeing more with [BLANK 1] as their argument about [BLANK 2] makes a compelling point. On the other hand, [BLANK 3] raises valid concerns about [BLANK 4]. Ultimately, I think that the conversation around dental and vision coverage is essential for [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that including dental and vision coverage will reduce long-term costs for the healthcare system?",
+        "options": [
+          "Sarah Thompson",
+          "John Reynolds",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is John Reynolds's main concern regarding the inclusion of dental and vision coverage?",
+        "options": [
+          "It would improve overall health.",
+          "It could strain the healthcare system's resources.",
+          "It would reduce healthcare costs.",
+          "It is already accessible through employers."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which argument supports the notion that dental health is linked to other health issues?",
+        "options": [
+          "Public healthcare should be limited.",
+          "Dental issues can lead to chronic diseases.",
+          "Vision problems are not serious health issues.",
+          "Insurance companies can handle dental care."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Who suggests that improving core services should be the priority in healthcare?",
+        "options": [
+          "Sarah Thompson",
+          "John Reynolds",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which author provides a solution that involves private insurance?",
+        "options": [
+          "Sarah Thompson",
+          "John Reynolds",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "John Reynolds",
+          "Sarah Thompson",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "the link between health and dental care",
+          "the need for more private insurance",
+          "the effectiveness of public systems",
+          "the importance of personal choice"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "Sarah Thompson",
+          "John Reynolds",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "the financial implications of inclusion",
+          "the necessity of emergency care",
+          "the burden of disease",
+          "the accessibility of healthcare"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "expanding the definition of healthcare",
+          "restricting healthcare funding",
+          "leaving dental care to private insurance",
+          "advocating for corporate health plans"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-17"
+  },
+  {
+    "title": "Is the Gig Economy Good or Bad for Canadian Workers?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "As a freelance graphic designer, I find the gig economy to be beneficial for Canadian workers. It offers the flexibility to control my workload and choose projects that align with my interests. With traditional 9-to-5 jobs becoming scarce, the gig economy provides a viable alternative for many individuals. Additionally, it allows for diversification of income sources, which can be particularly helpful during economic downturns. However, I do acknowledge that it also comes with challenges, such as the lack of benefits and job security. Overall, the gig economy empowers workers to take charge of their careers."
+      },
+      {
+        "name": "Writer 2: John Mitchell",
+        "text": "While I understand the appeal of the gig economy, I believe it is detrimental to Canadian workers. The instability that comes with gig work creates financial insecurity, making it difficult for workers to plan for their futures. Many gig workers lack access to essential benefits like healthcare and retirement savings plans, which are often provided in traditional employment. Moreover, the competitive nature of gig platforms can drive wages down, forcing workers to overextend themselves just to make ends meet. I worry that the gig economy encourages a culture of precarity, where workers are continuously struggling to find their next job."
+      }
+    ],
+    "readerResponse": "The gig economy has sparked varying opinions among Canadians. While some embrace its flexibility, others fear [BLANK 1]. Therefore, it is essential to [BLANK 2] to ensure that worker rights are protected. Advocates for the gig economy argue that it allows individuals to [BLANK 3], whereas critics emphasize the need for [BLANK 4]. In conclusion, the gig economy presents both advantages and challenges that must be addressed by [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What does Sarah Thompson believe about the gig economy?",
+        "options": [
+          "A. It provides flexibility and empowerment.",
+          "B. It is harmful due to instability.",
+          "C. It is only suitable for certain professions.",
+          "D. It should be regulated more strictly."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which writer argues that the gig economy leads to financial insecurity?",
+        "options": [
+          "A. Sarah Thompson",
+          "B. John Mitchell",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What common challenge do both writers acknowledge regarding the gig economy?",
+        "options": [
+          "A. Lack of job security.",
+          "B. High earning potential.",
+          "C. Abundant job opportunities.",
+          "D. Support from the government."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Who emphasizes the benefits of choosing projects in the gig economy?",
+        "options": [
+          "A. Sarah Thompson",
+          "B. John Mitchell",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A. the lack of job security.",
+          "B. the overwhelming number of opportunities.",
+          "C. the promise of high wages.",
+          "D. the ease of finding work."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A. advocate for more gig jobs.",
+          "B. ensure fair compensation for all workers.",
+          "C. eliminate gig work entirely.",
+          "D. encourage traditional employment."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A. earn a stable income.",
+          "B. work on flexible terms.",
+          "C. work less than they desire.",
+          "D. depend on their employer."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A. better working conditions.",
+          "B. an expansion of gig platforms.",
+          "C. access to more freelance jobs.",
+          "D. a focus on employee rights."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A. policymakers and business leaders.",
+          "B. gig workers themselves.",
+          "C. traditional workers primarily.",
+          "D. companies that hire gig workers."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part4-18"
+  },
+  {
+    "title": "The Debate on High-Speed Rail Investment in Canada",
+    "writers": [
+      {
+        "name": "Writer 1: Emily Johnson",
+        "text": "As a frequent traveler between major Canadian cities such as Toronto, Montreal, and Vancouver, I strongly believe that Canada should invest in high-speed rail (HSR) infrastructure. With the increasing population and the growing environmental concerns, HSR offers a sustainable alternative to car and air travel. It has been proven in countries like France and Japan that high-speed trains can significantly reduce travel times, making it more efficient for commuters and tourists alike. Additionally, investing in HSR would create jobs and stimulate local economies along the routes, benefiting regions that are currently underserved by public transportation. It is time for Canada to embrace innovation and create a modern transportation system that reflects our commitment to sustainability and efficiency."
+      },
+      {
+        "name": "Writer 2: Mark Thompson",
+        "text": "While the idea of high-speed rail in Canada may sound appealing, I believe it is not the best use of taxpayer money. The cost of building HSR is astronomical, and with Canada's vast geography, the implementation process would be a logistical nightmare. Public funds could be better spent on improving existing transportation infrastructure, such as upgrading current rail services and enhancing bus networks. Moreover, Canada’s low population density between many cities means that the demand for HSR may not justify the investment. Instead of pouring money into high-risk projects, we should focus on developing efficient public transport systems that serve the current population in a more cost-effective manner."
+      }
+    ],
+    "readerResponse": "A reader response with [BLANK 1] 'a large upfront investment.' [BLANK 2] 'improving existing transit options.' [BLANK 3] 'emissions and promote sustainability.' [BLANK 4] 'a profitable long-term solution.' [BLANK 5] 'better serve Canadian citizens.'",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that high-speed rail is environmentally beneficial?",
+        "options": [
+          "Emily Johnson",
+          "Mark Thompson",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What main argument does Mark Thompson make against high-speed rail?",
+        "options": [
+          "It would create too many jobs.",
+          "The cost and logistics are prohibitive.",
+          "It would benefit Canadian tourism.",
+          "It reduces travel times significantly."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What do both writers agree on?",
+        "options": [
+          "High-speed rail is essential.",
+          "Transportation improvements are needed.",
+          "Investment is important.",
+          "Job creation is beneficial."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which statement aligns with Emily Johnson's viewpoint?",
+        "options": [
+          "HSR will not attract enough travelers.",
+          "Existing transit is sufficient.",
+          "HSR can support local economies.",
+          "The investment is too risky."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Who expresses concern about the population density affecting HSR viability?",
+        "options": [
+          "Emily Johnson",
+          "Mark Thompson",
+          "Both writers",
+          "Neither writer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1].",
+        "options": [
+          "Investing in HSR is essential.",
+          "The cost of HSR is too high.",
+          "Travel times will decrease significantly.",
+          "It will create jobs across the country."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2].",
+        "options": [
+          "High-speed rail is the future.",
+          "Existing systems need improvement.",
+          "Trains are always the best option.",
+          "HSR would reduce air travel."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3].",
+        "options": [
+          "HSR will have no impact on emissions.",
+          "Commuters prefer driving cars.",
+          "Rail systems can promote sustainability.",
+          "Flying is better for the environment."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4].",
+        "options": [
+          "Travel times will decrease.",
+          "It would be a high-cost project.",
+          "Demands for HSR are high.",
+          "Logistical issues will arise."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5].",
+        "options": [
+          "The focus should be on HSR.",
+          "We need better public transport now.",
+          "HSR will serve everyone equally.",
+          "Investment in HSR is critical."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-19"
+  },
+  {
+    "title": "Are Professional Sports Teams Worth Public Funding in Canada?",
+    "writers": [
+      {
+        "name": "Writer 1: Sarah Thompson",
+        "text": "In my opinion, public funding for professional sports teams is a vital investment in community well-being and economic growth. These teams not only foster a sense of pride among residents but also provide significant job opportunities and tourism revenue. For example, cities like Toronto and Vancouver have seen substantial economic boosts during major sporting events. The funds allocated to sports can lead to improved infrastructure, which benefits everyone, not just sports fans. Moreover, the unifying effect of supporting local teams can enhance community spirit, making public funding a worthwhile endeavor."
+      },
+      {
+        "name": "Writer 2: David Lee",
+        "text": "I strongly disagree with the notion that public funding for professional sports teams is justifiable. While proponents argue that it stimulates local economies, the reality is that the financial returns are often exaggerated. Many studies indicate that these funds could be better utilized in essential services like education and healthcare. Additionally, the high salaries of athletes and team owners showcase a disparity between public investment and private profit. Rather than seeing our tax dollars funneled into sports arenas, we should prioritize initiatives that will have a lasting impact on our communities."
+      }
+    ],
+    "readerResponse": "The debate over public funding for sports teams raises important questions about [BLANK 1] and [BLANK 2]. While some may claim that such funding stimulates the economy, others argue that these funds could be better spent on [BLANK 3]. Despite the potential benefits of community pride and engagement, [BLANK 4] remain a significant concern for taxpayers. Ultimately, the question of whether public funding for sports teams is worth it boils down to [BLANK 5].",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which writer believes that public funding enhances community pride?",
+        "options": [
+          "A. Sarah Thompson",
+          "B. David Lee",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What does David Lee argue regarding the financial benefits of sports teams?",
+        "options": [
+          "A. They are overstated.",
+          "B. They create many jobs.",
+          "C. They are essential for tourism.",
+          "D. They lead to improved infrastructure."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which argument does Sarah Thompson use to support her viewpoint?",
+        "options": [
+          "A. Athletes deserve higher salaries.",
+          "B. Sports events attract tourists.",
+          "C. Sports funding harms education.",
+          "D. Teams should be privately funded."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "According to David Lee, what should public funds prioritize instead?",
+        "options": [
+          "A. Sports arenas",
+          "B. Economic development",
+          "C. Education and healthcare",
+          "D. Community events"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Who emphasizes the economic growth associated with professional sports?",
+        "options": [
+          "A. Sarah Thompson",
+          "B. David Lee",
+          "C. Both writers",
+          "D. Neither writer"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A. financial responsibility",
+          "B. community engagement",
+          "C. sports sponsorship",
+          "D. private investment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A. regional competition",
+          "B. public spending",
+          "C. entertainment value",
+          "D. economic stagnation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A. luxury homes",
+          "B. local infrastructure",
+          "C. private stadiums",
+          "D. community art projects"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A. funding priorities",
+          "B. corporate sponsorship",
+          "C. community services",
+          "D. ticket prices"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A. the impact on tourism",
+          "B. the best use of taxpayer money",
+          "C. the involvement of local businesses",
+          "D. the need for new sports facilities"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part4-20"
+  }
+]

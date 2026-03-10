@@ -1,0 +1,333 @@
+[
+  {
+    "id": "task4-01",
+    "scenario": "The outdoor birthday party is lively with colorful decorations and excited children playing games. There are tables filled with delicious food and a large birthday cake in the center. However, dark storm clouds are rolling in quickly, overshadowing the cheerful atmosphere. Guests are starting to look up, concerned about the sudden change in weather.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-02",
+    "scenario": "A car is stranded on the side of a busy highway with a flat tire. The driver appears frustrated, standing next to the vehicle while vehicles rush by. Some nearby motorists glance at the situation, and a few slow down to see if help is needed. It is mid-afternoon, and the sun is shining brightly, making the scene feel even more hectic.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-03",
+    "scenario": "A long lineup has formed outside a new restaurant, with eager patrons chatting excitedly as they wait. The sun is shining brightly, and the smell of delicious food wafts through the air. Some people are checking their phones, while others are taking photos of the restaurant's colorful sign. The atmosphere is filled with anticipation and curiosity.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people in line as they wait.",
+      "Consider whether the restaurant will be able to accommodate everyone quickly.",
+      "Think about possible consequences like customer satisfaction or complaints.",
+      "Reflect on the time of day and weather conditions influencing their experience."
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-04",
+    "scenario": "A young child is standing on tiptoes by a wooden dining table, stretching their small hand toward a colorful glass filled with juice. The glass is precariously perched at the edge of the table, with the sunlight streaming in through a nearby window, casting a warm glow on the scene. The child’s eyes are wide with curiosity and determination, while a playful dog is watching from the corner of the room.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the child and the glass",
+      "Think about possible consequences if the glass tips over",
+      "Consider the reactions of the dog and any adults present"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-05",
+    "scenario": "Two movers are seen carrying a large couch through the front door of a house next door. The sun is shining brightly, and there are a few potted plants on the porch. A moving truck is parked in the driveway, and a third mover is inside the house, looking at a list. The neighborhood appears quiet with a few birds chirping.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people as they move the furniture in",
+      "Think about possible consequences of the moving process",
+      "Consider the time of day and the pleasant weather affecting their work"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-06",
+    "scenario": "In a sunny park, a golden retriever is happily running off-leash toward a group of ducks that are waddling near a small pond. The ducks are quacking loudly, seemingly unaware of the approaching dog. Nearby, a couple of people are enjoying a picnic on the grass, watching the scene unfold with a mix of amusement and concern.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people, especially the picnic-goers",
+      "Think about possible consequences for the ducks and the dog",
+      "Consider the time of day and the sunny weather impacting the scene"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-07",
+    "scenario": "A young woman is walking briskly down a busy sidewalk, completely absorbed in her smartphone. She has her head down, texting, while her backpack swings gently at her side. In front of her, a large puddle has formed due to recent rain, reflecting the gray sky above. People around her are walking past, some glancing in her direction, but she remains oblivious to the potential hazard ahead.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the woman as she approaches the puddle.",
+      "Think about possible consequences of her distraction.",
+      "Consider the busy sidewalk and potential reactions of the people around her."
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-08",
+    "scenario": "A street performer is captivating a growing crowd with a vibrant juggling act. People of all ages are gathered around, some laughing and clapping as they watch the colorful balls fly through the air. Nearby, a few children are excitedly pointing and mimicking the performer's movements. The sun is shining brightly, and the atmosphere is filled with energy and anticipation.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-09",
+    "scenario": "The grocery store shelf is almost empty as customers rush to grab the last remaining supplies before the snowstorm hits. Shelves that typically hold bread, milk, and eggs are barren, with only a few scattered items left. The atmosphere in the store is frantic, with shoppers hastily placing their last-minute purchases in their carts. Many people seem stressed as they check their phones for weather updates and discuss their plans with one another.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people as they prepare for the storm",
+      "Think about possible consequences of the empty shelves",
+      "Consider the time of day and how the approaching snowstorm might affect travel and safety"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-10",
+    "scenario": "Two soccer teams are lined up on the field, ready to start the game. Dark clouds loom overhead, and raindrops begin to fall, creating puddles on the grass. Players huddle under umbrellas, some adjusting their cleats while others practice dribbling in the wet conditions. The atmosphere is tense, with spectators holding their breath, watching closely as the referee prepares to blow the whistle.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-11",
+    "scenario": "A delivery driver stands outside an apartment complex, looking overwhelmed as he struggles to balance a stack of boxes and packages on his arms. Several packages are teetering precariously, and the driver appears frustrated while checking his delivery list. The sun is setting in the background, casting a warm glow, but it's also beginning to get chilly as the evening approaches.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the driver as he tries to manage the packages",
+      "Think about possible interactions with residents of the apartment complex",
+      "Consider the impact of the fading light and dropping temperature"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-12",
+    "scenario": "A couple stands at a busy intersection, looking down at a map with puzzled expressions on their faces. Cars are whizzing by all around them, and pedestrians are rushing past. The sun is shining brightly, and it's clear that they are outdoors. They seem to be standing by a signpost that has multiple directions but no clear indication of where they want to go.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-13",
+    "scenario": "A building is engulfed in thick smoke as firefighters arrive on the scene. The sirens of the fire trucks echo through the streets, and firemen quickly grab their hoses and gear. Bystanders have gathered at a safe distance, watching anxiously as the firefighters prepare to enter the building. The air is filled with a sense of urgency and concern for those inside.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people inside the building.",
+      "Think about possible consequences for the firefighters and the surrounding area.",
+      "Consider the time of day and weather conditions affecting the situation."
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-14",
+    "scenario": "In a cheerful room decorated with colorful balloons and streamers, a toddler stands in front of a birthday cake adorned with glowing candles. Family members surround the child, smiling and clapping, creating an atmosphere of joy and excitement. The toddler, eyes wide with anticipation, takes a deep breath and leans forward, preparing to blow out the candles. The scent of the cake fills the air, inviting everyone to celebrate this special moment.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-15",
+    "scenario": "In a bustling park, several workers are busy setting up a stage for an outdoor concert. Colorful banners are being hung, and equipment is being arranged with great care. Large speakers are positioned on either side of the stage, and a sound technician is checking the audio levels. The sun is shining brightly, and people are starting to gather around, anticipating the event.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-16",
+    "scenario": "A fluffy gray cat is perched on the windowsill, intently watching a group of small birds chirping and flitting about in the garden outside. The sun is shining brightly, casting a warm glow on the scene, while a gentle breeze rustles the leaves of nearby trees. The cat's tail flicks back and forth with excitement as it seems to study the birds closely, almost as if planning its next move.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what the cat might do next",
+      "Think about how the birds might react",
+      "Consider possible interactions between the cat and the birds"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-17",
+    "scenario": "A group of people are gathered at a bus stop, glancing at their watches with anxious expressions. Some are pointing toward the bus arriving in the distance, while others are already running toward the bus, their bags bouncing at their sides. It's early morning, and the sun is just beginning to rise, casting a warm glow on the scene. The sound of the bus's engine can be heard as it approaches.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people as they rush to board the bus",
+      "Think about possible consequences if they miss the bus",
+      "Consider the time of day and how it may affect their plans"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-18",
+    "scenario": "A waiter is skillfully balancing a large tray filled with steaming plates of food as he navigates through a bustling restaurant. Diners are engaged in lively conversations at their tables, some waving their hands animatedly, while others are laughing and clinking glasses. The aromas of various dishes fill the air, creating a vibrant and inviting atmosphere. The restaurant is full, and the noise from chatter and laughter adds to the lively ambiance.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people around the waiter",
+      "Consider the possibility of the waiter tripping or spilling food",
+      "Think about the time of day and how busy the restaurant is"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-19",
+    "scenario": "In a crowded classroom, students are anxiously looking at their exam papers. The clock on the wall shows that there are only five minutes left for the exam. Some students are frantically writing while others appear to be deep in thought, flipping through their notes. The tension in the room is palpable as everyone tries to finish on time.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-20",
+    "scenario": "A family is gathered at a lakeside dock, preparing to load their canoe for a day of adventure. The sun is shining brightly, and the water is calm, reflecting the blue sky above. The parents are organizing the gear while the children excitedly point at the water and talk about the fun they will have. They have life jackets ready and seem to be in high spirits.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-21",
+    "scenario": "In a brightly decorated office break room, a group of colleagues gathers around a table filled with snacks and drinks. A surprised employee looks down at a beautifully wrapped gift as everyone watches with anticipation. Balloons sway gently overhead, and cheerful music plays in the background, creating a festive atmosphere. Laughter and chatter fill the air as the employee prepares to unwrap the surprise gift.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-22",
+    "scenario": "A skateboarder is approaching a set of stairs at a skate park. The sun is shining brightly, and a small crowd has gathered to watch. The skateboarder looks focused and is positioned a few feet away from the first step, ready to make a move. The ground is smooth, and there is a light breeze in the air.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the skateboarder as they attempt to go down the stairs.",
+      "Think about possible consequences if the skateboarder loses balance.",
+      "Consider the time of day and weather, and how they might affect the performance."
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-23",
+    "scenario": "A large crowd of enthusiastic shoppers has gathered around a display that features significant discounts for several popular electronics. People are pushing and shoving to get a closer look at the items available. Some are eagerly discussing their plans to purchase specific products, while others are already holding items they intend to buy. The energy in the air is electric as the clock approaches opening time.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people as the sale begins",
+      "Think about possible consequences of such large crowds",
+      "Consider the time of day and the potential for excitement or chaos"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-24",
+    "scenario": "A painter is standing on a ladder near an open window, carefully applying the final strokes of paint to the wall. The sun is shining brightly, casting a warm glow over the scene, while a gentle breeze rustles the leaves outside. There are paint cans and brushes scattered around the area, indicating a busy workday. The ladder is steady, and the painter seems focused on their task.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the painter as they finish up their work",
+      "Think about potential interactions with the window, such as it fully opening or something falling out",
+      "Consider how the weather and time of day might impact the scene"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-25",
+    "scenario": "The scene shows a snowplow slowly approaching a street filled with parked cars on both sides. The snow is piled high on the sidewalks, making it difficult for pedestrians to walk. The sky is overcast, and snowflakes are still gently falling, adding to the already thick layer on the ground. Some drivers can be seen inside their cars, waiting patiently as the snowplow gets closer.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people waiting in their cars",
+      "Think about possible consequences for the parked cars",
+      "Consider the time of day and how that might affect visibility"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-26",
+    "scenario": "A group of kids is enthusiastically building a sandcastle on the beach, using buckets and shovels to sculpt towers and walls. The sun is shining brightly overhead, and the sound of waves crashing can be heard in the background. The kids are focused on their project, but they are unaware that the tide is slowly coming in, creeping closer to their creation.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-27",
+    "scenario": "In a bustling kitchen, a skilled chef stands confidently at the stove, expertly flipping a pancake high into the air. The pancake catches the light as it twists and turns, rising above the chef's head. A small audience of patrons watches with excitement, their eyes wide in anticipation, while the delicious aroma of breakfast fills the air. The chef's assistant stands nearby, ready to catch the pancake when it falls back down.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people watching",
+      "Think about possible consequences if the pancake lands perfectly or not",
+      "Consider the time of day, likely breakfast rush, and overall atmosphere of the kitchen"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-28",
+    "scenario": "A cyclist is approaching a stop sign at a busy intersection. The street is bustling with cars and pedestrians, and the sun is shining brightly. The cyclist appears to be slowing down as they approach the stop sign, while several vehicles are waiting to turn at the intersection. A group of pedestrians is also waiting to cross the street.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the cyclist and other road users",
+      "Think about possible consequences of the cyclist's actions",
+      "Consider the time of day and weather conditions affecting the scene"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-29",
+    "scenario": "An elderly person is walking slowly along an icy sidewalk, gripping the handrail for support. The street is empty and the sun is low in the sky, casting long shadows across the pavement. The elderly person appears to be cautious but is struggling to maintain balance as they navigate the slippery surface. Nearby, a few snowflakes begin to fall, adding to the existing ice.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the elderly person as they continue walking",
+      "Think about possible consequences if they slip",
+      "Consider the time of day and weather conditions affecting the situation"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  },
+  {
+    "id": "task4-30",
+    "scenario": "A group of friends is gathered outside a beautifully decorated house for a surprise birthday party. Balloons and streamers in vibrant colors are hanging from the porch, and a 'Happy Birthday' banner is prominently displayed. The friends are holding gifts and are whispering excitedly to one another, trying to hide their anticipation as they wait for the birthday person to arrive. The sun is shining brightly, and the atmosphere is filled with joy and laughter.",
+    "prompt": "Based on what you see, what do you think will happen next?",
+    "bulletPoints": [
+      "Predict what might happen to the people",
+      "Think about possible consequences",
+      "Consider the time of day and weather"
+    ],
+    "context": "Use the same picture from the previous task. Now predict what will happen."
+  }
+]

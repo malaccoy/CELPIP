@@ -231,7 +231,7 @@ Respond in JSON:
   "timeMinutes": ${task === 'task1' ? 27 : 26}
 }`;
 
-const LISTENING_PROMPT = (part: string, diff: Difficulty, avoid: string) => `You are a CELPIP Listening test item writer. Generate a listening passage (dialogue or monologue) and questions for ${part}.
+const LISTENING_PROMPT = (part: string, diff: Difficulty, avoid: string) => `You are a CELPIP Listening test item writer. Generate a listening passage and questions for ${part}.
 
 DIFFICULTY: ${diff}
 - beginner: Clear speech patterns, simple vocab, explicit information
@@ -239,22 +239,41 @@ DIFFICULTY: ${diff}
 - advanced: Fast-paced, multiple speakers, inference required, professional jargon
 
 PARTS:
-- Part 1 (Problem Solving): Two people discussing a problem and finding solutions. ~300-400 words.
-- Part 2 (Daily Life Conversation): Casual conversation about everyday topics. ~300-400 words.
-- Part 3 (Information): A monologue (announcement, instructions, orientation). ~250-350 words.
-- Part 4 (News Item): A news report or bulletin. ~250-350 words.
-- Part 5 (Discussion): 2-3 people discussing a workplace/community topic. ~350-450 words.
-- Part 6 (Viewpoints): 2-3 people giving different opinions on a topic. ~350-450 words.
+- Part 1 (Problem Solving): Two people discussing a problem and finding solutions. MUST be split into 3 CLIPS (~80-100 words each). 8 questions total distributed across clips (2-3 per clip).
+- Part 2 (Daily Life Conversation): Casual conversation about everyday topics. ~350-400 words (1.5-2 min audio). 5 questions.
+- Part 3 (Information): A monologue (announcement, instructions, orientation). Write EXACTLY 400-450 words (this produces 2-2.5 min audio). Include specific details (dates, times, prices, locations). 6 questions.
+- Part 4 (News Item): A news report or bulletin. ~300-350 words (~1.5 min audio). 5 questions.
+- Part 5 (Discussion): 2-3 people discussing a workplace/community topic. ~400-500 words (1.5-2 min audio). 8 questions.
+- Part 6 (Viewpoints): 2-3 people giving different opinions on a topic. Write EXACTLY 500-550 words (~3 min audio). 6 questions.
 
 REQUIREMENTS:
 - Set in Canada (Canadian cities, culture, institutions)
 - Natural, realistic dialogue (include "um", "well", "right" occasionally for Parts 1-2)
 - Label speakers clearly (Man:, Woman:, Host:, etc.)
-- 5-6 multiple choice questions with 4 options each
+- Multiple choice questions with 4 options each
 - Questions test: main idea, specific details, inference, speaker attitude
 ${avoid ? `- AVOID these topics (already used): ${avoid}` : ''}
 
-Respond in JSON:
+${part.includes('Part 1') ? `For Part 1 ONLY — CRITICAL: each clip's passage MUST label every line with the speaker (e.g. "Man: ...", "Woman: ..."). This is required for multi-voice audio generation. Respond in this JSON format with clips:
+{
+  "title": "string",
+  "clips": [
+    {
+      "passage": "string (clip 1 dialogue ~80-100 words)",
+      "questions": [
+        { "id": 1, "question": "string", "options": ["A","B","C","D"], "correct": 0-3, "explanation": "brief" }
+      ]
+    },
+    {
+      "passage": "string (clip 2 dialogue ~80-100 words)",
+      "questions": [...]
+    },
+    {
+      "passage": "string (clip 3 dialogue ~80-100 words)",
+      "questions": [...]
+    }
+  ]
+}` : `Respond in JSON:
 {
   "title": "string",
   "passage": "string (full dialogue/monologue with speaker labels)",
@@ -267,7 +286,7 @@ Respond in JSON:
       "explanation": "brief explanation"
     }
   ]
-}`;
+}`}`;
 
 const SPEAKING_PROMPT = (task: string, diff: Difficulty, avoid: string) => `You are a CELPIP Speaking test prompt designer. Generate a speaking prompt for ${task}.
 
@@ -321,51 +340,99 @@ export async function POST(request: NextRequest) {
     }
 
     const avoid = (previousTopics || []).join(', ');
+    const uniquenessInstruction = avoid 
+      ? `\n\nCRITICAL — UNIQUENESS REQUIREMENT:\nThe following topics/titles have ALREADY been generated. You MUST create something COMPLETELY DIFFERENT — different scenario, different setting, different characters, different topic.\nAlready used: [${avoid}]\nDo NOT reuse any of these themes, settings, or storylines. Be creative and pick an entirely new angle.`
+      : '\n\nBe creative and varied — choose an unusual or unexpected topic/scenario.';
     let systemPrompt: string;
     let userMsg: string;
 
     switch (section) {
       case 'reading':
-        systemPrompt = 'You are an expert CELPIP Reading item writer. Respond in JSON only.';
-        userMsg = READING_PROMPT(partOrTask, difficulty, avoid);
+        systemPrompt = 'You are an expert CELPIP Reading item writer. Respond in JSON only. Never repeat topics.';
+        userMsg = READING_PROMPT(partOrTask, difficulty, avoid) + uniquenessInstruction;
         break;
       case 'writing':
-        systemPrompt = 'You are an expert CELPIP Writing prompt designer. Respond in JSON only.';
-        userMsg = WRITING_PROMPT(partOrTask, difficulty, avoid);
+        systemPrompt = 'You are an expert CELPIP Writing prompt designer. Respond in JSON only. Never repeat topics.';
+        userMsg = WRITING_PROMPT(partOrTask, difficulty, avoid) + uniquenessInstruction;
         break;
       case 'listening':
-        systemPrompt = 'You are an expert CELPIP Listening item writer. Respond in JSON only.';
-        userMsg = LISTENING_PROMPT(partOrTask, difficulty, avoid);
+        systemPrompt = 'You are an expert CELPIP Listening item writer. Respond in JSON only. Never repeat topics. IMPORTANT: Follow the exact word count specified for each part. Do not write significantly more or less than requested.';
+        userMsg = LISTENING_PROMPT(partOrTask, difficulty, avoid) + uniquenessInstruction;
         break;
       case 'speaking':
-        systemPrompt = 'You are an expert CELPIP Speaking prompt designer. Respond in JSON only.';
-        userMsg = SPEAKING_PROMPT(partOrTask, difficulty, avoid);
+        systemPrompt = 'You are an expert CELPIP Speaking prompt designer. Respond in JSON only. Never repeat topics.';
+        userMsg = SPEAKING_PROMPT(partOrTask, difficulty, avoid) + uniquenessInstruction;
         break;
       default:
         return NextResponse.json({ error: 'Invalid section' }, { status: 400 });
     }
 
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userMsg },
-      ],
-      response_format: { type: 'json_object' },
-      temperature: 0.8,
-      max_tokens: section === 'speaking' ? 500 : 2000,
-    });
+    // Minimum word counts per listening part (to match official audio durations)
+    const MIN_WORDS: Record<string, number> = {
+      'Part 1': 200, 'Part 2': 300, 'Part 3': 380,
+      'Part 4': 250, 'Part 5': 350, 'Part 6': 450,
+    };
 
-    const content = completion.choices[0].message.content || '{}';
-    const exercise = JSON.parse(content);
+    let exercise: any;
+    let attempts = 0;
+    const maxAttempts = section === 'listening' ? 2 : 1;
+
+    while (attempts < maxAttempts) {
+      attempts++;
+      const completion = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: attempts === 1 ? userMsg : userMsg + `\n\nCRITICAL: Your previous response was too short. The passage MUST be at least ${Object.entries(MIN_WORDS).find(([k]) => partOrTask.includes(k))?.[1] || 300} words. Write a LONGER, more detailed passage this time.` },
+        ],
+        response_format: { type: 'json_object' },
+        temperature: 0.95,
+        max_tokens: section === 'speaking' ? 500 : 4000,
+      });
+
+      const content = completion.choices[0].message.content || '{}';
+      exercise = JSON.parse(content);
+
+      // Check word count for listening
+      if (section === 'listening' && attempts < maxAttempts) {
+        const passageText = exercise.clips
+          ? exercise.clips.map((c: any) => c.passage || '').join(' ')
+          : (exercise.passage || '');
+        const wordCount = passageText.split(/\s+/).filter(Boolean).length;
+        const minKey = Object.keys(MIN_WORDS).find(k => partOrTask.includes(k));
+        const minWords = minKey ? MIN_WORDS[minKey] : 250;
+        
+        console.log(`[AI Practice] ${partOrTask}: ${wordCount} words (min: ${minWords})`);
+        
+        if (wordCount >= minWords) break; // Good enough
+        console.log(`[AI Practice] Too short, retrying...`);
+      } else {
+        break;
+      }
+    }
 
     // For listening, generate TTS audio (free Edge TTS)
     let audioBase64: string | null = null;
-    if (section === 'listening' && exercise.passage) {
+    let clipAudios: string[] | null = null;
+    if (section === 'listening') {
       try {
-        const audioBuffer = await generateTTS(exercise.passage);
-        if (audioBuffer) {
-          audioBase64 = audioBuffer.toString('base64');
+        if (exercise.clips && Array.isArray(exercise.clips)) {
+          // Part 1: generate audio for each clip
+          clipAudios = [];
+          for (const clip of exercise.clips) {
+            if (clip.passage) {
+              const audioBuffer = await generateTTS(clip.passage);
+              if (audioBuffer) {
+                clipAudios.push(audioBuffer.toString('base64'));
+              }
+            }
+          }
+        } else if (exercise.passage) {
+          // Single passage
+          const audioBuffer = await generateTTS(exercise.passage);
+          if (audioBuffer) {
+            audioBase64 = audioBuffer.toString('base64');
+          }
         }
       } catch (ttsErr) {
         console.error('TTS generation failed:', ttsErr);
@@ -405,6 +472,7 @@ export async function POST(request: NextRequest) {
       difficulty,
       exercise,
       ...(audioBase64 ? { audio: audioBase64 } : {}),
+      ...(clipAudios && clipAudios.length > 0 ? { clipAudios } : {}),
       ...(imageBase64 ? { image: imageBase64 } : {}),
       generatedAt: new Date().toISOString(),
     });

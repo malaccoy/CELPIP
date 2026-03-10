@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
-import { ChevronDown, FileText, Search, X } from 'lucide-react';
+import { ChevronDown, FileText, Search, X, Lock } from 'lucide-react';
+import { UpgradeModal, UpgradeInlineBanner } from '@/components/UpgradeBanner';
 import styles from '@/styles/ContextSelector.module.scss';
 
 export interface ContextItem {
@@ -19,6 +20,10 @@ interface ContextSelectorProps {
   selectedId: string | null;
   onSelect: (context: ContextItem) => void;
   placeholder?: string;
+  /** Max free items (0-based). Items beyond this are locked for non-pro users. -1 = no limit */
+  freeLimit?: number;
+  /** Whether user has pro access */
+  isPro?: boolean;
 }
 
 // Categories with English labels
@@ -50,13 +55,15 @@ export default function ContextSelector({
   contexts,
   selectedId,
   onSelect,
-  placeholder = 'Select a theme or create your own'
+  placeholder = 'Select a theme or create your own',
+  freeLimit = -1,
+  isPro = true,
 }: ContextSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  // Use clickedContextId for click-based preview (replaces hover-based preview)
   const [clickedContextId, setClickedContextId] = useState<string | null>(null);
   const [isTouch, setIsTouch] = useState(false);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   
   const dropdownRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -75,6 +82,22 @@ export default function ContextSelector({
   useEffect(() => {
     setIsTouch(isTouchDevice());
   }, []);
+
+  // Build a set of locked item IDs (non-custom items beyond freeLimit)
+  const lockedIds = useMemo(() => {
+    if (isPro || freeLimit < 0) return new Set<string>();
+    const locked = new Set<string>();
+    let freeCount = 0;
+    for (const ctx of contexts) {
+      if (ctx.category === 'custom') continue;
+      if (freeCount >= freeLimit) {
+        locked.add(ctx.id);
+      } else {
+        freeCount++;
+      }
+    }
+    return locked;
+  }, [contexts, freeLimit, isPro]);
 
   // Group contexts by category - memoized to prevent re-computation
   const groupedContexts = useMemo(() => {
@@ -226,6 +249,7 @@ export default function ContextSelector({
                   </div>
                   {items.map((item) => {
                     const isActive = clickedContextId === item.id;
+                    const isLocked = lockedIds.has(item.id);
                     
                     return (
                       <button
@@ -235,16 +259,22 @@ export default function ContextSelector({
                           selectedId === item.id ? styles.optionItemSelected : ''
                         } ${item.category === 'custom' ? styles.optionItemCustom : ''} ${
                           isActive ? styles.optionItemActive : ''
-                        }`}
-                        onClick={() => handleItemClick(item)}
+                        } ${isLocked ? styles.optionItemLocked : ''}`}
+                        onClick={() => isLocked ? setShowUpgradeModal(true) : handleItemClick(item)}
                         aria-selected={selectedId === item.id}
+                        disabled={isLocked}
                       >
-                        <span className={styles.optionTitle}>{item.title}</span>
-                        {item.category !== 'custom' && (
+                        <span className={styles.optionTitle}>
+                          {isLocked && <Lock size={13} className={styles.lockIcon} />}
+                          {item.title}
+                        </span>
+                        {isLocked ? (
+                          <span className={styles.proBadge}>PRO</span>
+                        ) : item.category !== 'custom' ? (
                           <span className={styles.optionPreviewHint}>
                             {isActive ? '✓' : '👁️'}
                           </span>
-                        )}
+                        ) : null}
                       </button>
                     );
                   })}
@@ -302,6 +332,22 @@ export default function ContextSelector({
           </div>
         </div>
       )}
+
+      {/* Inline Banner - shows below selector when there are locked items */}
+      {lockedIds.size > 0 && (
+        <UpgradeInlineBanner
+          totalItems={contexts.filter(c => c.category !== 'custom').length}
+          freeItems={contexts.filter(c => c.category !== 'custom').length - lockedIds.size}
+          context="prompts"
+        />
+      )}
+
+      {/* Upgrade Modal */}
+      <UpgradeModal
+        isOpen={showUpgradeModal}
+        onClose={() => setShowUpgradeModal(false)}
+        context="Writing Prompts"
+      />
     </div>
   );
 }

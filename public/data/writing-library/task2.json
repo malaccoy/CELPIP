@@ -1,0 +1,272 @@
+[
+  {
+    "id": "task2-01",
+    "scenario": "The City of Vancouver is conducting a survey to gather public feedback on a proposed initiative to improve urban living in downtown. The city is considering converting some of the existing parking lots into green parks or dedicated bike lanes to promote sustainability and enhance public spaces.",
+    "question": "Would you prefer the city to convert downtown parking lots into parks or bike lanes?",
+    "optionA": "Convert the parking lots into parks that provide green space for residents and tourists.",
+    "optionB": "Transform the parking lots into bike lanes to encourage cycling and reduce traffic congestion.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-02",
+    "scenario": "The Greater Toronto Area School Board is considering a shift from the traditional school calendar to a year-round schooling model. This survey aims to gather feedback from parents, teachers, and students about their preferences regarding these two educational schedules.",
+    "question": "Do you support implementing year-round schooling instead of the traditional school calendar?",
+    "optionA": "Support year-round schooling.",
+    "optionB": "Support the traditional school calendar.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-03",
+    "scenario": "The HR department at a leading technology firm in Toronto is conducting a survey to gather employee opinions on a proposed change from private offices to an open office layout. This change aims to enhance collaboration and communication among employees.",
+    "question": "Would you prefer to work in an open office environment or in a private office?",
+    "optionA": "Open office environment",
+    "optionB": "Private office",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-04",
+    "scenario": "The City of Maplewood is conducting a survey to gather community feedback on improving safety for pedestrians and cyclists in residential areas. Due to increasing traffic and safety concerns, the local council is considering two proposals: installing speed bumps or implementing lower speed limits.",
+    "question": "Which option do you prefer for enhancing safety in our neighbourhood?",
+    "optionA": "Install speed bumps",
+    "optionB": "Implement lower speed limits",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-05",
+    "scenario": "The University of Toronto is conducting a survey to gather student opinions on the format of exams. Recently, there has been a proposal to shift from in-person exams to online exams due to increasing technological advancements and student feedback during the pandemic.",
+    "question": "Which exam format do you prefer for your university courses?",
+    "optionA": "I prefer online exams.",
+    "optionB": "I prefer in-person exams.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-06",
+    "scenario": "The City Library is conducting a survey to gather community feedback on how to enhance library services. They are considering two potential changes to improve user experience and meet the needs of residents more effectively.",
+    "question": "Would you prefer the library to extend its operating hours or to offer more programs and workshops?",
+    "optionA": "Extend operating hours",
+    "optionB": "Offer more programs and workshops",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-07",
+    "scenario": "Our company, Maple Solutions, is considering a change to its dress code policy to better reflect our workplace culture and employee preferences. We want to gather feedback from our staff about the potential shift from a traditional business formal dress code to a more relaxed casual dress code.",
+    "question": "Which dress code do you prefer for our company?",
+    "optionA": "Casual Dress Code",
+    "optionB": "Business Formal Dress Code",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-08",
+    "scenario": "The City of Oakville Community Centre is conducting a survey to gather input from residents regarding the potential development of new recreational facilities. They are considering constructing either an indoor swimming pool or an outdoor ice rink to enhance community engagement and sporting opportunities.",
+    "question": "Which facility would you prefer: an indoor swimming pool or an outdoor ice rink?",
+    "optionA": "Indoor swimming pool",
+    "optionB": "Outdoor ice rink",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-09",
+    "scenario": "The principal of Maple Leaf High School is conducting a survey to gather student opinions on whether to ban cellphones during school hours or allow them as learning tools in the classroom. This decision aims to enhance the educational environment and address concerns regarding distractions.",
+    "question": "Should Maple Leaf High School ban cellphones during school hours or allow them as learning tools?",
+    "optionA": "Ban cellphones during school hours.",
+    "optionB": "Allow cellphones as learning tools.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-10",
+    "scenario": "The Greater Toronto Transit Authority (GTTA) is conducting a survey to gather public opinion on potential improvements to the city's transit system. They are considering two major proposals to enhance public transportation for residents and commuters.",
+    "question": "Which improvement would you prefer to see in the transit system: more bus routes or faster trains?",
+    "optionA": "Implementing more bus routes to cover underserved areas and increase accessibility.",
+    "optionB": "Upgrading existing train services to reduce travel times and improve efficiency.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-11",
+    "scenario": "A Canadian tech company is conducting a survey among its employees to explore preferences for work-life balance initiatives. The company is considering implementing either a 4-day work week or allowing flexible daily hours.",
+    "question": "Which work arrangement do you prefer: a 4-day work week or flexible daily hours?",
+    "optionA": "4-day work week",
+    "optionB": "Flexible daily hours",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-12",
+    "scenario": "The City of Toronto is seeking feedback from residents on how to allocate funding for community development. The city has recognized the need for both affordable housing and enhanced green spaces to improve the quality of life for its citizens.",
+    "question": "Should the city prioritize building more affordable housing or improving existing parks?",
+    "optionA": "Build more affordable housing.",
+    "optionB": "Improve existing parks.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-13",
+    "scenario": "A popular Canadian grocery chain is conducting a survey to gather customer opinions on their proposed shift from providing paper bags at checkout to implementing a reusable bag program. The goal is to reduce environmental impact while ensuring customer convenience.",
+    "question": "Would you prefer the grocery chain to continue providing paper bags or to switch to a reusable bag program?",
+    "optionA": "Continue providing paper bags at checkout.",
+    "optionB": "Switch to a reusable bag program.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-14",
+    "scenario": "The City Hospital is conducting a survey to gather feedback from patients and their families regarding visiting hours. The hospital is considering extending visiting hours for in-person visits, as well as offering more options for virtual visits to patients. Your input will help them make a decision that best supports patient care.",
+    "question": "Would you prefer the hospital to extend visiting hours for in-person visits or to enhance virtual visits for patients?",
+    "optionA": "Extend visiting hours for in-person visits",
+    "optionB": "Enhance virtual visits for patients",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-15",
+    "scenario": "The College of Applied Arts and Technology is conducting a survey to gather student opinions on a proposed change to the co-op program. The college is considering making the co-op placement mandatory for all students, as opposed to offering it as an optional internship. This change aims to enhance student employability and ensure practical experience in the workforce.",
+    "question": "Do you support the proposal to make co-op placements mandatory for all students?",
+    "optionA": "Yes, I support making co-op placements mandatory.",
+    "optionB": "No, I prefer keeping co-op placements optional.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-16",
+    "scenario": "The City of Maplewood is conducting a survey to gather public opinion on whether to invest in building a new community centre or renovating the existing library. Both options aim to enhance community resources and engagement.",
+    "question": "Which option do you prefer: a new community centre or a renovated library?",
+    "optionA": "Build a new community centre",
+    "optionB": "Renovate the existing library",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-17",
+    "scenario": "Our company, based in Ontario, is considering a change to our work model in light of recent employee feedback and evolving workplace dynamics. We are conducting a survey to gather opinions on whether we should adopt a permanent remote work policy or maintain a hybrid model that allows for both in-office and remote work.",
+    "question": "Would you prefer our company to implement a permanent remote work policy or continue with a hybrid work model?",
+    "optionA": "Adopt a permanent remote work policy",
+    "optionB": "Maintain a hybrid work model",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-18",
+    "scenario": "The local school board is conducting a survey to gather opinions from parents and students about the potential expansion of the arts program versus a focus on STEM (science, technology, engineering, and mathematics) initiatives. This survey aims to align educational resources with community interests and future job market trends.",
+    "question": "Which program should the school prioritize: an expansion of the arts program or a greater focus on STEM initiatives?",
+    "optionA": "Expand the arts program to include more visual arts, performing arts, and creative workshops.",
+    "optionB": "Increase emphasis on STEM initiatives by introducing more advanced courses and hands-on projects.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-19",
+    "scenario": "The management of Maple Grove Apartments is conducting a survey to assess the residents' opinions on a proposed change to the building's pet policy. Currently, the apartment complex is pet-free, but due to increasing demand from prospective tenants, the management is considering adopting a pet-friendly policy.",
+    "question": "Should Maple Grove Apartments adopt a pet-friendly policy?",
+    "optionA": "Yes, the building should become pet-friendly.",
+    "optionB": "No, the building should remain pet-free.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-20",
+    "scenario": "The City Transit Authority is conducting a survey to gather public opinion on a proposed change to transit fare policies. They are considering offering free rides for seniors or implementing student discounts to make public transport more accessible.",
+    "question": "Which option do you prefer: offering free rides for seniors or providing discounts for students?",
+    "optionA": "Offer free rides for seniors",
+    "optionB": "Provide discounts for students",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-21",
+    "scenario": "The city council of Toronto is conducting a survey to gather public opinion on the proposal of building a new sports stadium or concert venue. The aim is to enhance local entertainment options and provide a space for community events.",
+    "question": "Would you prefer the construction of a new sports stadium or a concert venue in your city?",
+    "optionA": "Build a new sports stadium.",
+    "optionB": "Build a new concert venue.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-22",
+    "scenario": "Your company, a leading technology firm in Canada, is conducting a survey to gather employee feedback on potential changes to the annual compensation package. The management is considering implementing either an annual bonus for all employees based on company performance or monthly wellness allowances to support employee health and well-being.",
+    "question": "Which option do you prefer: an annual bonus or a monthly wellness allowance?",
+    "optionA": "Annual bonus based on company performance",
+    "optionB": "Monthly wellness allowance to support health and well-being",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-23",
+    "scenario": "The local city council is conducting a survey to decide on a new community project for our neighbourhood. Residents are invited to share their opinions on whether to establish a community garden or a dog park in the vacant lot on Maple Street, which has been underutilized for years.",
+    "question": "Which option do you prefer for the vacant lot, a community garden or a dog park?",
+    "optionA": "Community Garden",
+    "optionB": "Dog Park",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-24",
+    "scenario": "A local college in Ontario is conducting a survey to gather student opinions on an upcoming change in the academic calendar. The college is considering either extending the semester duration to include longer breaks or implementing condensed terms that would shorten the overall semester length.",
+    "question": "Would you prefer longer semesters with breaks in between or condensed terms with shorter, more intense courses?",
+    "optionA": "Longer semesters with breaks in between to allow for rest and reflection.",
+    "optionB": "Condensed terms that allow for quicker completion of courses.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-25",
+    "scenario": "A local hospital in Toronto is conducting a survey to gather feedback from patients and visitors regarding improvements to their transportation services. The hospital is considering two options to alleviate parking issues and improve access to the facility.",
+    "question": "Would you prefer the hospital to provide more parking spaces or offer a free shuttle service from nearby transit stations?",
+    "optionA": "More parking spaces available on hospital grounds.",
+    "optionB": "A free shuttle service from nearby public transit stations.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-26",
+    "scenario": "The City of Toronto is conducting a survey to gather public feedback on new transportation initiatives aimed at reducing traffic congestion and promoting eco-friendly travel. They are considering implementing a bike-sharing program or expanding electric scooter rental options in the downtown area.",
+    "question": "Which transportation initiative do you prefer: a bike-sharing program or electric scooter rentals?",
+    "optionA": "Implement a bike-sharing program that allows residents and tourists to rent bikes at various stations throughout the city.",
+    "optionB": "Expand the electric scooter rental system to include more locations and increased availability.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-27",
+    "scenario": "A local school board is conducting a survey to assess student and parent opinions on school start and finish times. The board is considering either starting classes later in the morning or finishing them earlier in the afternoon to improve student well-being and academic performance.",
+    "question": "Would you prefer the school to start later in the morning or finish earlier in the afternoon?",
+    "optionA": "Start school later in the morning",
+    "optionB": "Finish school earlier in the afternoon",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-28",
+    "scenario": "HealthyCorp, a leading technology company in Canada, is conducting a survey to assess employee preferences regarding potential new benefits. The company is exploring ways to enhance employee satisfaction and overall well-being.",
+    "question": "Would you prefer an annual gym membership benefit or an additional five vacation days?",
+    "optionA": "An annual gym membership benefit that covers expenses for local fitness facilities.",
+    "optionB": "An additional five vacation days to use throughout the year.",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-29",
+    "scenario": "The local community council is conducting a survey to gather opinions on a proposed weekly event to enhance community engagement and support local businesses. Residents are invited to choose between hosting a farmers market or a food truck festival every Saturday.",
+    "question": "Which event would you prefer for our community's weekly gathering?",
+    "optionA": "Farmers Market",
+    "optionB": "Food Truck Festival",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  },
+  {
+    "id": "task2-30",
+    "scenario": "The City of Maplewood is conducting a survey to gather public opinion on environmental initiatives aimed at enhancing sustainability in our urban spaces. The city is considering two potential projects: installing solar panels on public buildings to reduce energy costs and carbon footprint, or initiating a large-scale tree planting program to improve air quality and green spaces.",
+    "question": "Which initiative do you support more, solar panels on public buildings or tree planting?",
+    "optionA": "Installing solar panels on public buildings",
+    "optionB": "Initiating a large-scale tree planting program",
+    "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
+    "wordTarget": 200
+  }
+]

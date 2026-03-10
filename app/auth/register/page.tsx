@@ -10,6 +10,7 @@ export default function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [referralSource, setReferralSource] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
@@ -35,7 +36,7 @@ export default function RegisterPage() {
       const res = await fetch('/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify({ name, email, password, referralSource: referralSource || undefined }),
       });
 
       const data = await res.json();
@@ -130,6 +131,36 @@ export default function RegisterPage() {
               required
               disabled={loading}
             />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <AlertCircle size={18} className={styles.inputIcon} />
+            <select
+              value={referralSource}
+              onChange={(e) => setReferralSource(e.target.value)}
+              disabled={loading}
+              style={{
+                width: '100%',
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-primary)',
+                fontSize: '0.95rem',
+                outline: 'none',
+                cursor: 'pointer',
+                appearance: 'none',
+              }}
+            >
+              <option value="" style={{ background: 'var(--bg-card)' }}>How did you hear about us?</option>
+              <option value="google" style={{ background: 'var(--bg-card)' }}>Search Engine (Google, Bing)</option>
+              <option value="youtube" style={{ background: 'var(--bg-card)' }}>YouTube</option>
+              <option value="tiktok" style={{ background: 'var(--bg-card)' }}>TikTok</option>
+              <option value="instagram" style={{ background: 'var(--bg-card)' }}>Instagram</option>
+              <option value="facebook" style={{ background: 'var(--bg-card)' }}>Facebook</option>
+              <option value="reddit" style={{ background: 'var(--bg-card)' }}>Reddit</option>
+              <option value="friend" style={{ background: 'var(--bg-card)' }}>Friend / Family</option>
+              <option value="consultant" style={{ background: 'var(--bg-card)' }}>School / Immigration Consultant</option>
+              <option value="other" style={{ background: 'var(--bg-card)' }}>Other</option>
+            </select>
           </div>
 
           <button type="submit" className={styles.submitBtn} disabled={loading}>

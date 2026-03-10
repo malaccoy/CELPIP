@@ -6,9 +6,10 @@ import {
   PenTool, Headphones, BookOpen, Mic, 
   TrendingUp, Clock, Award, ArrowRight, 
   Sparkles, Target, Flame, BarChart3, Trophy,
-  CheckCircle, Users, Clock as ClockIcon
+  CheckCircle, Users, Clock as ClockIcon, Crown
 } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
+import { useContentAccess } from '@/hooks/useContentAccess';
 import styles from '@/styles/Dashboard.module.scss';
 import onboardingStyles from '@/styles/Onboarding.module.scss';
 
@@ -68,6 +69,7 @@ const STORAGE_KEYS = {
 
 export default function DashboardPage() {
   const router = useRouter();
+  const { isPro } = useContentAccess();
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [currentStep, setCurrentStep] = useState<OnboardingStep>('welcome');
   const [onboardingData, setOnboardingData] = useState<OnboardingData>({
@@ -143,6 +145,16 @@ export default function DashboardPage() {
           question: 'When was the team lunch moved to?',
           options: ['Monday at noon', 'Wednesday at noon', 'Thursday at noon', 'Friday at noon'],
           correct: 2
+        },
+        {
+          question: 'What should employees do if they need supplies from the office?',
+          options: ['Wait until Wednesday', 'Ask a colleague', 'Pick them up on Friday', 'Email the manager before Friday'],
+          correct: 0
+        },
+        {
+          question: 'What is the overall tone of this announcement?',
+          options: ['Apologetic and concerned', 'Informative and practical', 'Urgent and alarming', 'Casual and humorous'],
+          correct: 1
         }
       ]
     },
@@ -166,6 +178,26 @@ export default function DashboardPage() {
             'A revenue increase of 25%',
             'A revenue decline of at least 25%',
             'Being in operation for 10+ years'
+          ],
+          correct: 2
+        },
+        {
+          question: 'How will applications be processed?',
+          options: [
+            'By a random lottery',
+            'Based on the severity of revenue decline',
+            'On a first-come, first-served basis',
+            'Through a committee review'
+          ],
+          correct: 2
+        },
+        {
+          question: 'What can be inferred from Mayor Johnson\'s statement?',
+          options: [
+            'The city has unlimited funding for the program',
+            'Large corporations are not affected by the downturn',
+            'The city values the role of small businesses in the economy',
+            'The program will be extended to other cities'
           ],
           correct: 2
         }
@@ -379,13 +411,13 @@ export default function DashboardPage() {
 
   const finishAssessment = () => {
     const finalScores = { ...sectionScores };
-    // Add writing score if AI evaluated
+    // Add writing score if AI evaluated (now on 0-4 scale)
     if (writingScore !== null) {
-      finalScores.writing = writingScore >= 7 ? 2 : writingScore >= 4 ? 1 : 0;
+      finalScores.writing = writingScore >= 9 ? 4 : writingScore >= 7 ? 3 : writingScore >= 5 ? 2 : writingScore >= 3 ? 1 : 0;
     }
-    // Add speaking score if AI evaluated
+    // Add speaking score if AI evaluated (now on 0-4 scale)
     if (speakingScore !== null) {
-      finalScores.speaking = speakingScore >= 7 ? 2 : speakingScore >= 4 ? 1 : 0;
+      finalScores.speaking = speakingScore >= 9 ? 4 : speakingScore >= 7 ? 3 : speakingScore >= 5 ? 2 : speakingScore >= 3 ? 1 : 0;
     }
     setSectionScores(finalScores);
     updateOnboardingData('assessmentScores', finalScores);
@@ -474,7 +506,7 @@ export default function DashboardPage() {
         setWritingFeedback(data.feedback || `Score: ${score}/12`);
         setSectionScores(prev => ({
           ...prev,
-          writing: score >= 9 ? 2 : score >= 6 ? 1 : 0
+          writing: score >= 10 ? 4 : score >= 8 ? 3 : score >= 6 ? 2 : score >= 4 ? 1 : 0
         }));
       } else {
         // Fallback
@@ -484,7 +516,7 @@ export default function DashboardPage() {
         setWritingFeedback('AI evaluation unavailable. Estimated from response length.');
         setSectionScores(prev => ({
           ...prev,
-          writing: estimate >= 9 ? 2 : estimate >= 6 ? 1 : 0
+          writing: estimate >= 10 ? 4 : estimate >= 8 ? 3 : estimate >= 6 ? 2 : estimate >= 4 ? 1 : 0
         }));
       }
     } catch {
@@ -494,7 +526,7 @@ export default function DashboardPage() {
       setWritingFeedback('AI evaluation unavailable. Estimated from response length.');
       setSectionScores(prev => ({
         ...prev,
-        writing: estimate >= 9 ? 2 : estimate >= 6 ? 1 : 0
+        writing: estimate >= 10 ? 4 : estimate >= 8 ? 3 : estimate >= 6 ? 2 : estimate >= 4 ? 1 : 0
       }));
     }
     
@@ -564,13 +596,13 @@ export default function DashboardPage() {
             setSpeakingFeedback(data.strengths?.[0] || data.feedback || `Speaking assessed by AI.`);
             setSectionScores(prev => ({
               ...prev,
-              speaking: score >= 9 ? 2 : score >= 6 ? 1 : 0
+              speaking: score >= 10 ? 4 : score >= 8 ? 3 : score >= 6 ? 2 : score >= 4 ? 1 : 0
             }));
           } else {
             // Fallback: try assessment-evaluate with a generic transcript
             setSpeakingScore(6);
             setSpeakingFeedback('Recording captured! Full AI analysis available with Pro ✨');
-            setSectionScores(prev => ({ ...prev, speaking: 1 }));
+            setSectionScores(prev => ({ ...prev, speaking: 2 }));
           }
         } else {
           setSpeakingScore(5);
@@ -600,13 +632,19 @@ export default function DashboardPage() {
   };
 
   const getEstimatedCLB = (): number => {
+    // MC sections: now 0-4 each (4 questions)
+    // AI sections: 0-4 scale from score mapping
     const total = sectionScores.reading + sectionScores.listening + sectionScores.writing + sectionScores.speaking;
-    if (total >= 7) return 10;
-    if (total >= 6) return 9;
-    if (total >= 5) return 8;
-    if (total >= 4) return 7;
-    if (total >= 2) return 6;
-    return 5;
+    // Max possible: 16 (4 per section)
+    if (total >= 15) return 12;
+    if (total >= 13) return 11;
+    if (total >= 11) return 10;
+    if (total >= 9) return 9;
+    if (total >= 7) return 8;
+    if (total >= 5) return 7;
+    if (total >= 3) return 6;
+    if (total >= 1) return 5;
+    return 4;
   };
 
   const handleOptionSelect = (key: keyof OnboardingData, value: string | number) => {
@@ -1310,7 +1348,7 @@ export default function DashboardPage() {
                   <div className={onboardingStyles.scoreGrid}>
                     {(['reading', 'listening', 'writing', 'speaking'] as const).map(section => {
                       const score = sectionScores[section];
-                      const level = getScoreLevel(score, 2);
+                      const level = getScoreLevel(score, 4);
                       return (
                         <div key={section} className={onboardingStyles.scoreCard}>
                           <div className={onboardingStyles.scoreCardHeader}>
@@ -1322,12 +1360,12 @@ export default function DashboardPage() {
                           <div className={onboardingStyles.scoreBarContainer}>
                             <div
                               className={onboardingStyles.scoreBar}
-                              style={{ width: `${(score / 2) * 100}%`, background: SECTION_COLORS[section] }}
+                              style={{ width: `${(score / 4) * 100}%`, background: SECTION_COLORS[section] }}
                             />
                           </div>
                           <div className={onboardingStyles.scoreCardFooter}>
                             <span style={{ color: level.color, fontWeight: 600 }}>{level.label}</span>
-                            <span>{score}/2</span>
+                            <span>{score}/4</span>
                           </div>
                         </div>
                       );
@@ -1418,6 +1456,12 @@ export default function DashboardPage() {
       {hasAssessment && (
         <section className={styles.welcomeSection}>
           <div className={styles.welcomeCard}>
+            {isPro && (
+              <div className={styles.proCrown}>
+                <Crown size={16} />
+                <span>PRO</span>
+              </div>
+            )}
             <div className={styles.welcomeLeft}>
               <h2 className={styles.welcomeTitle}>
                 {savedOnboarding.targetCLB 

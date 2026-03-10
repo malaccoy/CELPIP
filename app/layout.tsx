@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import '@/styles/globals.scss';
 import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
+import { EventBanner } from '@/components/EventBanner';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -121,6 +122,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <PlanProvider>
+            <EventBanner />
             <Header />
             <div className={styles.container}>
               <Sidebar />
@@ -134,6 +136,24 @@ export default function RootLayout({
             <BottomNav />
           </PlanProvider>
         </ThemeProvider>
+        {/* Tawk.to Live Chat — set NEXT_PUBLIC_TAWK_ID in .env */}
+        {process.env.NEXT_PUBLIC_TAWK_ID && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                  s1.async=true;
+                  s1.src='https://embed.tawk.to/${process.env.NEXT_PUBLIC_TAWK_ID}/default';
+                  s1.charset='UTF-8';
+                  s1.setAttribute('crossorigin','*');
+                  s0.parentNode.insertBefore(s1,s0);
+                })();
+              `,
+            }}
+          />
+        )}
       </body>
     </html>
   );

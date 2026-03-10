@@ -24,6 +24,8 @@ import SentenceFeedback from '@/components/SentenceFeedback';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
 import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
+import { FREE_LIMITS } from '@/lib/free-limits';
+import { useContentAccess } from '@/hooks/useContentAccess';
 
 const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 
@@ -57,6 +59,8 @@ export default function Task2Page() {
   const [aiError, setAiError] = useState<string | null>(null);
   const [spellCheckEnabled, setSpellCheckEnabled] = useState(false);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const [transferMessage, setTransferMessage] = useState<string>('');
+  const { isPro } = useContentAccess();
 
   // Get selected context
   const selectedContext = contexts.find(c => c.id === selectedContextId);
@@ -69,6 +73,22 @@ export default function Task2Page() {
       .then(data => {
         if (data.task2) {
           setContexts(data.task2);
+
+          // Check for AI Coach redirect — pick random theme
+          try {
+            const stored = localStorage.getItem('celpip_ai_writing_prompt');
+            if (stored) {
+              const parsed = JSON.parse(stored);
+              if (parsed.task === 2) {
+                localStorage.removeItem('celpip_ai_writing_prompt');
+                const themes = data.task2.filter((c: ContextItem) => c.category !== 'custom');
+                if (themes.length > 0) {
+                  const random = themes[Math.floor(Math.random() * themes.length)];
+                  handleContextSelect(random);
+                }
+              }
+            }
+          } catch {}
         }
       })
       .catch(err => console.error('Failed to load contexts:', err));
@@ -105,6 +125,49 @@ export default function Task2Page() {
       newPoints.pop();
       updateState('points', newPoints);
     }
+  };
+
+  const transferPlanning = () => {
+    const parts: string[] = [];
+
+    // Opinion line as intro
+    if (state.opinionLine?.trim()) {
+      parts.push(`In my opinion, I would rather ${state.opinionLine.trim()}. I believe this is the best choice for several reasons.`);
+    }
+
+    // Points with connectors
+    const connectors = ['First', 'Second', 'Finally'];
+    state.points.forEach((p, i) => {
+      const segs: string[] = [];
+      const connector = connectors[i] || 'Additionally';
+      if (p.point?.trim()) segs.push(`${connector}, ${p.point.trim()}.`);
+      if (p.reason?.trim()) segs.push(`This is because ${p.reason.trim()}.`);
+      if (p.example?.trim()) segs.push(`For example, ${p.example.trim()}.`);
+      if (segs.length > 0) parts.push(segs.join(' '));
+    });
+
+    if (parts.length === 0) {
+      setTransferMessage('⚠️ No planning filled to transfer.');
+      setTimeout(() => setTransferMessage(''), 3000);
+      return;
+    }
+
+    // Add conclusion
+    parts.push('In conclusion, considering these reasons, I am convinced that this is the superior option.');
+
+    const transferredContent = parts.join('\n\n');
+    const currentContent = state.content.trim();
+    const newContent = currentContent
+      ? `${currentContent}\n\n${transferredContent}`
+      : transferredContent;
+
+    updateState('content', newContent);
+    setTransferMessage('✅ Planning transferred!');
+    setTimeout(() => setTransferMessage(''), 3000);
+
+    setTimeout(() => {
+      writingTextareaRef.current?.focus();
+    }, 100);
   };
 
   const generateStructure = () => {
@@ -378,6 +441,8 @@ export default function Task2Page() {
                     selectedId={selectedContextId}
                     onSelect={handleContextSelect}
                     placeholder="Select a ready theme or create your own..."
+                    freeLimit={FREE_LIMITS.writing.task2}
+                    isPro={isPro}
                   />
                 </div>
               )}
@@ -688,6 +753,26 @@ export default function Task2Page() {
                 </div>
 
                 <div className={styles.writingActions}>
+                  <button 
+                    onClick={transferPlanning}
+                    type="button"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '0.6rem 1.2rem',
+                      background: 'linear-gradient(135deg, #8b5cf6, #7c3aed)',
+                      color: '#fff',
+                      border: 'none',
+                      borderRadius: 8,
+                      fontWeight: 600,
+                      fontSize: '0.875rem',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <ArrowRight size={16} />
+                    Transfer Planning
+                  </button>
                   <button className={styles.btnTemplate} onClick={generateStructure}>
                     <Wand2 size={16} /> Generate Structure
                   </button>
@@ -695,6 +780,16 @@ export default function Task2Page() {
                     <RefreshCw size={16} /> Quick Checklist
                   </button>
                 </div>
+                {transferMessage && (
+                  <div style={{
+                    marginTop: '0.5rem',
+                    fontSize: '0.875rem',
+                    fontWeight: 500,
+                    color: transferMessage.includes('⚠️') ? '#f59e0b' : '#059669',
+                  }}>
+                    {transferMessage}
+                  </div>
+                )}
               </div>
 
               {/* Feedback Panel */}

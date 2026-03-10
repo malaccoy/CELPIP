@@ -66,7 +66,8 @@ export async function POST(request: NextRequest) {
         trial_period_days: 3,
         metadata: { supabaseUserId: user.id }
       },
-      allow_promotion_codes: true,
+      // Promo codes only for monthly plan (discounts are monthly-only)
+      allow_promotion_codes: plan !== 'annual',
     });
 
     return NextResponse.json({ url: session.url });

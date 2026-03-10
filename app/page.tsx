@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { createClient } from '@/lib/supabase/client';
 import { 
   Sparkles, PenLine, Mic, BookOpen, Headphones,
   ArrowRight, Zap, Target, TrendingUp, CheckCircle2,
@@ -12,8 +14,23 @@ import {
 import styles from '@/styles/Home.module.scss';
 
 export default function HomePage() {
+  const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    createClient().auth.getSession().then(({ data }) => {
+      setIsAuthenticated(!!data.session);
+    });
+  }, []);
+
+  const handleSkillClick = (e: React.MouseEvent, path: string) => {
+    if (isAuthenticated === false) {
+      e.preventDefault();
+      router.push(`/auth/login?redirect=${encodeURIComponent(path)}`);
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -27,7 +44,7 @@ export default function HomePage() {
       icon: PenLine,
       stats: '75+ prompts • AI Scoring',
       path: '/writing',
-      free: '42 Task 1 + 33 Task 2 prompts'
+      free: '3 Task 1 + 3 Task 2 free prompts'
     },
     {
       id: 'speaking',
@@ -36,7 +53,7 @@ export default function HomePage() {
       icon: Mic,
       stats: '8 Tasks • Whisper AI',
       path: '/speaking',
-      free: '24 prompts + self-eval checklist'
+      free: '8 free prompts + self-eval checklist'
     },
     {
       id: 'reading',
@@ -45,7 +62,7 @@ export default function HomePage() {
       icon: BookOpen,
       stats: '4 Parts • 17 Passages',
       path: '/reading',
-      free: '17 full passages, 100% free'
+      free: '4 free passages to start'
     },
     {
       id: 'listening',
@@ -54,7 +71,7 @@ export default function HomePage() {
       icon: Headphones,
       stats: '6 Parts • 24 Passages',
       path: '/listening',
-      free: '24 passages + cached audio'
+      free: '6 free passages + cached audio'
     }
   ];
 
@@ -77,7 +94,7 @@ export default function HomePage() {
   ];
 
   const faqs = [
-    { q: 'Is there really free content?', a: 'Yes! All 24 listening passages with audio, 17 reading passages, 75+ writing prompts, 24 speaking prompts, technique guides, and quizzes are completely free. No credit card needed.' },
+    { q: 'Is there really free content?', a: 'Yes! You get free practice in all 4 modules — Writing, Speaking, Reading, and Listening — plus complete technique guides and quizzes. No credit card needed. Upgrade to Pro for unlimited prompts, AI feedback, and advanced features.' },
     { q: 'What does Pro include?', a: 'Pro unlocks AI-powered features: infinite practice exercises, AI Writing Tutor with detailed feedback, AI Speaking Coach with Whisper transcription, Mock Exams with CLB estimates, adaptive difficulty, and weakness reports.' },
     { q: 'Can I cancel anytime?', a: 'Absolutely. Cancel your Pro subscription anytime from your profile. No contracts, no hidden fees. You keep access until the end of your billing period.' },
     { q: 'How is this different from other CELPIP prep sites?', a: 'Most sites offer static question banks. We use AI to generate infinite exercises, give real-time feedback on writing and speaking, and adapt difficulty to your level. Plus our free tier is more generous than competitors\' paid plans.' },
@@ -152,9 +169,32 @@ export default function HomePage() {
             Free AI coaching that tells you exactly what to fix in your Writing and Speaking — so you stop wasting $300 on re-tests. Used by students targeting CLB 7-12.
           </p>
 
+          {/* Quick-Start Buttons — Zero Friction */}
+          <div className={styles.quickStart}>
+            <p className={styles.quickStartLabel}>👇 Try a free exercise right now — no sign-up needed:</p>
+            <div className={styles.quickStartGrid}>
+              <Link href="/writing/task-1" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/writing/task-1')}>
+                <PenLine size={18} />
+                <span>Write an Email</span>
+              </Link>
+              <Link href="/speaking/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/speaking/practice')}>
+                <Mic size={18} />
+                <span>Speaking Practice</span>
+              </Link>
+              <Link href="/reading/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/reading/practice')}>
+                <BookOpen size={18} />
+                <span>Reading Quiz</span>
+              </Link>
+              <Link href="/listening/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/listening/practice')}>
+                <Headphones size={18} />
+                <span>Listening Test</span>
+              </Link>
+            </div>
+          </div>
+
           <div className={styles.heroCtas}>
-            <Link href="/writing/task-1" className={styles.ctaPrimary}>
-              <span>Start Practicing Free</span>
+            <Link href="/dashboard" className={styles.ctaPrimary}>
+              <span>Start Free Assessment</span>
               <ArrowRight size={20} />
             </Link>
             <Link href="/pricing" className={styles.ctaSecondary}>
@@ -168,8 +208,8 @@ export default function HomePage() {
               <span>No credit card required</span>
             </div>
             <div className={styles.trustItem}>
-              <CheckCircle2 size={16} />
-              <span>200+ free practice exercises</span>
+              <Users size={16} />
+              <span>160+ students practicing this week</span>
             </div>
             <div className={styles.trustItem}>
               <CheckCircle2 size={16} />
@@ -257,6 +297,7 @@ export default function HomePage() {
               <Link 
                 key={skill.id}
                 href={skill.path}
+                onClick={(e) => handleSkillClick(e, skill.path)}
                 className={styles.skillCard}
                 style={{ '--delay': `${index * 80}ms` } as React.CSSProperties}
               >

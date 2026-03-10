@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "part3-01",
+    "title": "University Campus Orientation",
+    "context": "Listen carefully to the orientation announcement for new students at a Canadian university.",
+    "audioFile": "part3-01.mp3",
+    "duration": 151.824,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the orientation announcement?",
+        "options": [
+          "To introduce new students to campus resources",
+          "To provide details about tuition fees",
+          "To discuss living expenses in Toronto",
+          "To outline the history of the university"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where is the Robarts Library located?",
+        "options": [
+          "North of the Student Centre",
+          "West of the main quad",
+          "East of the main quad",
+          "South of the university"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What services does the Health and Wellness Centre provide?",
+        "options": [
+          "Academic advising",
+          "Mental health services",
+          "Culinary classes",
+          "Transportation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the average monthly living cost in Toronto?",
+        "options": [
+          "$800 to $1,000",
+          "$1,200 to $1,500",
+          "$1,600 to $2,000",
+          "$500 to $700"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What advice does the narrator give regarding the campus map?",
+        "options": [
+          "Students should ignore it",
+          "It’s confusing to use",
+          "It helps to navigate the campus",
+          "It’s only for first-year students"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "How does the narrator feel about the upcoming semester?",
+        "options": [
+          "Nervous about new students",
+          "Excited for new opportunities",
+          "Apprehensive about changes",
+          "Indifferent to the semester"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-02",
+    "title": "Community Center Swimming Pool Schedule Changes",
+    "context": "Listen to the following announcement about changes to the swimming pool schedule at a community center.",
+    "audioFile": "part3-02.mp3",
+    "duration": 138.816,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main reason for the schedule changes?",
+        "options": [
+          "A. Increased attendance",
+          "B. Maintenance issues",
+          "C. Funding cuts",
+          "D. Staff shortages"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "When will the swimming pool close for maintenance?",
+        "options": [
+          "A. Every Monday",
+          "B. Every Wednesday",
+          "C. Every Friday",
+          "D. Every Saturday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the new closing time for the swimming pool?",
+        "options": [
+          "A. 8 PM",
+          "B. 9 PM",
+          "C. 7 PM",
+          "D. 6 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How much will adult swim passes cost?",
+        "options": [
+          "A. $4",
+          "B. $5",
+          "C. $6",
+          "D. $3"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What type of new classes will be offered this winter?",
+        "options": [
+          "A. Dive training",
+          "B. Water aerobics",
+          "C. Lifeguard training",
+          "D. Competitive swimming"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How does the speaker feel about the changes?",
+        "options": [
+          "A. Angry",
+          "B. Indifferent",
+          "C. Understanding",
+          "D. Excited"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-03",
+    "title": "Welcome to the Royal Ontario Museum",
+    "context": "Listen to the introduction by the museum tour guide.",
+    "audioFile": "part3-03.mp3",
+    "duration": 124.44,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the introduction?",
+        "options": [
+          "A ticket prices",
+          "B museum history",
+          "C visitor orientation",
+          "D security regulations"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What time does the museum close?",
+        "options": [
+          "A 5 PM",
+          "B 5:30 PM",
+          "C 6 PM",
+          "D 6:30 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is mentioned as a popular exhibit?",
+        "options": [
+          "A Ancient Egypt",
+          "B Canadian History",
+          "C Dinosaurs",
+          "D Indigenous Art"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What should visitors avoid using for photographs?",
+        "options": [
+          "A Phone cameras",
+          "B Flash photography",
+          "C Tripods",
+          "D Selfie sticks"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does the guide feel about questions?",
+        "options": [
+          "A Indifferent",
+          "B Glad to answer",
+          "C Annoyed",
+          "D Unprepared"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What type of food is suggested in the museum café?",
+        "options": [
+          "A Fast food",
+          "B Local Canadian dishes",
+          "C Vegetarian options only",
+          "D Desserts only"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-04",
+    "title": "Warehouse Safety Training Orientation",
+    "context": "Listen to the following announcement regarding workplace safety training at a warehouse in Toronto, Canada. Pay close attention to the details, as you will answer questions afterward.",
+    "audioFile": "part3-04.mp3",
+    "duration": 138.624,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this training session?",
+        "options": [
+          "To review company policies",
+          "To emphasize workplace safety",
+          "To introduce new equipment",
+          "To conduct performance evaluations"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What personal protective equipment is mentioned?",
+        "options": [
+          "Gloves, goggles, and aprons",
+          "Hard hats, gloves, and safety shoes",
+          "Earplugs and masks",
+          "Reflective vests and helmets"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where is the designated assembly area in case of an emergency?",
+        "options": [
+          "The loading dock area",
+          "The break room",
+          "The east parking lot on Birch Street",
+          "Near the main office"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How often are safety briefings held?",
+        "options": [
+          "Every week",
+          "Every month",
+          "Every two months",
+          "Once a year"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What can be inferred about the speaker's attitude towards safety?",
+        "options": [
+          "They consider it unnecessary",
+          "They are indifferent",
+          "They view it as crucial",
+          "They believe it can be neglected"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "When will the next safety briefing take place?",
+        "options": [
+          "Next Monday at 9 AM",
+          "The first Tuesday at 9 AM",
+          "Every Friday at noon",
+          "Once a month at 10 AM"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-05",
+    "title": "Airport Gate Change Announcement",
+    "context": "Listen to an announcement regarding a gate change and boarding instructions at Toronto Pearson International Airport.",
+    "audioFile": "part3-05.mp3",
+    "duration": 128.544,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To inform about a flight delay",
+          "To announce a gate change",
+          "To promote the airport shops",
+          "To give travel tips"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which flight is mentioned in the announcement?",
+        "options": [
+          "AC 456",
+          "AC 789",
+          "AC 123",
+          "AC 321"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What should passengers have ready for inspection?",
+        "options": [
+          "Luggage",
+          "Boarding passes and ID",
+          "Flight itinerary",
+          "Travel insurance"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "At what time will boarding for Flight AC 123 begin?",
+        "options": [
+          "5:00 PM",
+          "5:30 PM",
+          "6:00 PM",
+          "6:30 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the price of a medium coffee at Tim Hortons?",
+        "options": [
+          "$2.00 CAD",
+          "$2.50 CAD",
+          "$3.00 CAD",
+          "$3.50 CAD"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the speaker's attitude towards passenger inconvenience?",
+        "options": [
+          "Indifferent",
+          "Apologetic",
+          "Frustrated",
+          "Excited"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-06",
+    "title": "New Services and Hours at the Downtown Public Library",
+    "context": "Listen to this announcement about new services and updated hours at a local library in Canada.",
+    "audioFile": "part3-06.mp3",
+    "duration": 141.768,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the librarian's announcement?",
+        "options": [
+          "New services",
+          "Library events",
+          "Book recommendations",
+          "Library policies"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which day will the library be open until 9 PM?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Monday",
+          "Sunday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How often will the digital literacy workshops be held?",
+        "options": [
+          "Weekly",
+          "Monthly",
+          "Bi-weekly",
+          "Daily"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What is required to use the home delivery service?",
+        "options": [
+          "A phone number",
+          "Library membership",
+          "Local residency",
+          "Online access"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What can children expect from the new reading pods?",
+        "options": [
+          "They are quiet spaces.",
+          "They offer interactive reading experiences.",
+          "They are designed for group study.",
+          "They provide homework help."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How does the librarian feel about the new changes?",
+        "options": [
+          "Confused",
+          "Indifferent",
+          "Excited",
+          "Frustrated"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-07",
+    "title": "Fitness Center Membership Orientation",
+    "context": "Listen to this orientation for new members at a fitness center in Toronto, Canada. Pay attention to the details about membership benefits, facilities, and special offers.",
+    "audioFile": "part3-07.mp3",
+    "duration": 154.608,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this announcement?",
+        "options": [
+          "To provide fitness tips",
+          "To introduce membership benefits",
+          "To promote personal training",
+          "To explain pricing details"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What facilities are available to members?",
+        "options": [
+          "Outdoor tracks and basketball courts",
+          "Cardio machines, swimming pool, and saunas",
+          "Cooking classes and nutrition counseling",
+          "Indoor tennis courts and climbing walls"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What incentive is offered to new members this month?",
+        "options": [
+          "Free yoga mats",
+          "20% off personal training",
+          "Unlimited guest passes",
+          "Two free months of membership"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How can members track their workouts?",
+        "options": [
+          "Through a paper journal",
+          "Via the mobile app",
+          "On the fitness center website",
+          "With personal trainers only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the speaker's attitude towards new members?",
+        "options": [
+          "Indifferent",
+          "Welcoming and helpful",
+          "Frustrated with late arrivals",
+          "Skeptical about commitment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What can you earn through the referral program?",
+        "options": [
+          "Free membership for life",
+          "$50 credit for referring a friend",
+          "Discounts on monthly fees",
+          "Free personal training sessions"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-08",
+    "title": "Hospital Visitor Policy and Directions",
+    "context": "Listen to the hospital announcement regarding visitor policies and directions.",
+    "audioFile": "part3-08.mp3",
+    "duration": 124.632,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To promote visiting hours",
+          "To provide visitor policy and directions",
+          "To explain the hospital's services",
+          "To introduce the hospital staff"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How many visitors are allowed per patient?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What must visitors wear in the hospital?",
+        "options": [
+          "Gloves",
+          "Masks",
+          "Scrubs",
+          "Visitor's badges"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Where is the emergency department located?",
+        "options": [
+          "First floor",
+          "Ground floor",
+          "Second floor",
+          "Fifth floor"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is a requirement for visitors feeling unwell?",
+        "options": [
+          "They may still visit",
+          "They must wear a mask",
+          "They should visit the emergency department",
+          "They should not visit the hospital"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "question": "What is the speaker's attitude towards visitor cooperation?",
+        "options": [
+          "Indifferent",
+          "Grateful",
+          "Frustrated",
+          "Negative"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-09",
+    "title": "Transit System Route Changes Announcement",
+    "context": "Listen to the following announcement about upcoming changes to the transit system in Toronto. Pay attention to the details and specific instructions provided.",
+    "audioFile": "part3-09.mp3",
+    "duration": 135.12,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main reason for the route changes?",
+        "options": [
+          "To improve service efficiency",
+          "To lower ticket prices",
+          "To extend route lengths",
+          "To increase the number of buses"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which street will the 505 Dundas route divert south along?",
+        "options": [
+          "Queen Street",
+          "Roncesvalles Avenue",
+          "Yonge Street",
+          "Bloor Street"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How often will the 29 Dufferin bus operate during peak hours after the change?",
+        "options": [
+          "Every 10 minutes",
+          "Every 12 minutes",
+          "Every 15 minutes",
+          "Every 20 minutes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the cost of purchasing a Presto card?",
+        "options": [
+          "$4 CAD",
+          "$5 CAD",
+          "$6 CAD",
+          "$7 CAD"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What attitude does the speaker express regarding the service changes?",
+        "options": [
+          "Frustration",
+          "Excitement",
+          "Apology and understanding",
+          "Indifference"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Where can passengers find real-time updates about the transit system?",
+        "options": [
+          "On billboards",
+          "On the radio",
+          "On their website and mobile app",
+          "By calling customer service"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-10",
+    "title": "Campground Rules and Facilities at Banff National Park",
+    "context": "Listen carefully to the following announcement about the campground rules and facilities at Banff National Park.",
+    "audioFile": "part3-10.mp3",
+    "duration": 144.168,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "A) To discuss local wildlife",
+          "B) To provide campground rules and facilities",
+          "C) To complain about park conditions",
+          "D) To advertise the park"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time are campfires allowed?",
+        "options": [
+          "A) 6 PM - 11 PM",
+          "B) 8 PM - 10 PM",
+          "C) 5 PM - 12 AM",
+          "D) 7 PM - 9 PM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How much does a shower cost at the campground?",
+        "options": [
+          "A) $1 CAD",
+          "B) $5 CAD",
+          "C) $2 CAD",
+          "D) $3 CAD"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What should campers do with their food and scented products?",
+        "options": [
+          "A) Leave them out in the open",
+          "B) Store them in their tents",
+          "C) Keep them in bear-proof containers",
+          "D) Give them to the rangers"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is the speaker's attitude towards the campground rules?",
+        "options": [
+          "A) Indifferent",
+          "B) Supportive",
+          "C) Strict",
+          "D) Confused"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What additional activity is mentioned in the announcement?",
+        "options": [
+          "A) Evening campfire songs",
+          "B) Fishing contests",
+          "C) Photography workshops",
+          "D) Rock climbing classes"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part3-11",
+    "title": "Volunteer Orientation at the Calgary Homeless Shelter",
+    "context": "Listen to the following monologue about the Calgary Homeless Shelter's volunteer program.",
+    "audioFile": "part3-11.mp3",
+    "duration": 123.312,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the volunteer program?",
+        "options": [
+          "Providing meals to the homeless",
+          "Offering training to volunteers",
+          "Sheltering individuals in need",
+          "Engaging the community"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Where is the shelter located?",
+        "options": [
+          "456 Elm Street",
+          "789 River Road",
+          "123 Main Street",
+          "321 Oak Avenue"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What is required to become a long-term volunteer?",
+        "options": [
+          "A high school diploma",
+          "A commitment of three months",
+          "Excellent cooking skills",
+          "Previous volunteering experience"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time does the shelter open each night?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "7 PM",
+          "8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How can volunteers help create a sense of community?",
+        "options": [
+          "By serving meals",
+          "By engaging in recreational activities",
+          "By cleaning the shelter",
+          "By conducting training sessions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the speaker's attitude toward the volunteers?",
+        "options": [
+          "Indifferent",
+          "Supportive",
+          "Skeptical",
+          "Demanding"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-12",
+    "title": "Workplace Fire Drill Procedures",
+    "context": "Listen carefully to the following announcement about fire drill procedures in an office building.",
+    "audioFile": "part3-12.mp3",
+    "duration": 123.456,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this announcement?",
+        "options": [
+          "To discuss fire drill procedures",
+          "To introduce new employees",
+          "To announce a holiday",
+          "To inform about office renovations"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "When will the fire drills take place?",
+        "options": [
+          "Every Friday at 10:00 AM",
+          "First Friday of every month at 10:00 AM",
+          "Last Monday of each month",
+          "Every Sunday at noon"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What should you do when you hear the fire alarm?",
+        "options": [
+          "Gather all your belongings before evacuating",
+          "Panic and run out of the building",
+          "Stop what you are doing and evacuate",
+          "Use the elevator to exit the building"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "Where is the assembly area after evacuation?",
+        "options": [
+          "On the rooftop",
+          "In the parking lot",
+          "At Queens Park across the street",
+          "In the lobby of the building"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Why should you not use the elevators during a fire emergency?",
+        "options": [
+          "They may be too slow",
+          "They can become inoperable",
+          "They lead to dangerous areas",
+          "They are reserved for staff only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How does the speaker feel about the fire drill procedures?",
+        "options": [
+          "Indifferent",
+          "Cautious",
+          "Supportive",
+          "Neglectful"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-13",
+    "title": "Understanding Financial Aid at Toronto College",
+    "context": "Listen carefully to this information session about financial aid options available at Toronto College.",
+    "audioFile": "part3-13.mp3",
+    "duration": 148.368,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of this session?",
+        "options": [
+          "Career counseling",
+          "Financial aid resources",
+          "Student housing",
+          "Scholarship applications"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the range of scholarship amounts mentioned?",
+        "options": [
+          "$500 to $2,500",
+          "$1,000 to $5,000",
+          "$3,000 to $7,000",
+          "$2,000 to $4,000"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "When do scholarship applications close?",
+        "options": [
+          "April 1st",
+          "February 15th",
+          "May 15th",
+          "March 15th"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How does the speaker feel about the support provided by the financial aid office?",
+        "options": [
+          "Indifferent",
+          "Encouraging",
+          "Frustrated",
+          "Skeptical"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where can students meet with financial aid advisors?",
+        "options": [
+          "Library",
+          "Online only",
+          "Student Union building",
+          "Nearby café"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is a recommended form to fill out for federal aid?",
+        "options": [
+          "FAFSA",
+          "OSAP",
+          "TDSB",
+          "SINA"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part3-14",
+    "title": "Campfire Safety Talk",
+    "context": "Listen to the campfire safety talk provided by a provincial park ranger.",
+    "audioFile": "part3-14.mp3",
+    "duration": 133.344,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this talk?",
+        "options": [
+          "To promote camping",
+          "To provide campfire safety tips",
+          "To introduce park services",
+          "To discuss wildlife interactions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What should a campfire be kept to?",
+        "options": [
+          "Knee height",
+          "Waist height",
+          "Shoulder height",
+          "Foot height"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "During which months might campfires be restricted?",
+        "options": [
+          "June",
+          "July and August",
+          "September",
+          "April"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What should you have nearby when lighting a fire?",
+        "options": [
+          "Extra food",
+          "A friend",
+          "Water or a shovel",
+          "A camera"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is Lisa's attitude towards campfire safety?",
+        "options": [
+          "Casual and indifferent",
+          "Serious and informed",
+          "Friendly and relaxed",
+          "Overly cautious"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "If a fire ban is in place, what is still permitted?",
+        "options": [
+          "No fires at all",
+          "Campfires only",
+          "Propane grilling",
+          "Charcoal grilling"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-15",
+    "title": "City Council Meeting Announcement about Road Construction",
+    "context": "Listen carefully to this announcement regarding upcoming road construction in the city.",
+    "audioFile": "part3-15.mp3",
+    "duration": 133.464,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To inform about road construction",
+          "To promote local businesses",
+          "To discuss public transit changes",
+          "To ask for community feedback"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "When is the construction scheduled to start?",
+        "options": [
+          "October 30th",
+          "November 1st",
+          "November 6th",
+          "December 1st"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What improvements will the construction include?",
+        "options": [
+          "New bus stops",
+          "Traffic signal upgrades",
+          "New shops and cafes",
+          "Street parking zones"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the speaker's attitude towards the inconvenience caused by construction?",
+        "options": [
+          "Unconcerned",
+          "Appreciative",
+          "Angry",
+          "Dismissive"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where will the information session take place?",
+        "options": [
+          "City Hall",
+          "Greater Victoria Public Library",
+          "Central Park",
+          "Downtown Victoria Mall"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How long is the construction expected to last?",
+        "options": [
+          "Five weeks",
+          "Ten weeks",
+          "Two months",
+          "Until December"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-16",
+    "title": "Emergency Department Triage Instructions",
+    "context": "Listen carefully to the instructions regarding the triage process in our hospital's emergency department.",
+    "audioFile": "part3-16.mp3",
+    "duration": 126.552,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the triage process described in the passage?",
+        "options": [
+          "To provide food services",
+          "To assess and prioritize patients",
+          "To discharge patients faster",
+          "To conduct medical research"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What does the speaker recommend patients do if their condition worsens while waiting?",
+        "options": [
+          "Leave the department",
+          "Inform the staff immediately",
+          "Start the examination themselves",
+          "Fill out another form"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does the speaker suggest patients should manage their expectations regarding wait times?",
+        "options": [
+          "By knowing everyone gets seen at the same time",
+          "By understanding the triage system",
+          "By complaining to the staff",
+          "By expecting immediate treatment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the location of the hospital mentioned in the passage?",
+        "options": [
+          "Vancouver",
+          "Montreal",
+          "Toronto",
+          "Calgary"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What kind of conditions will be prioritized according to the speaker?",
+        "options": [
+          "Stable conditions",
+          "Non-urgent issues",
+          "Serious conditions",
+          "Minor injuries"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the speaker's overall attitude towards patient care?",
+        "options": [
+          "Indifferent",
+          "Supportive",
+          "Frustrated",
+          "Neglectful"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-17",
+    "title": "Ferry Terminal Boarding Announcement in Victoria, BC",
+    "context": "Listen carefully to this ferry terminal boarding announcement. It provides important information for travelers.",
+    "audioFile": "part3-17.mp3",
+    "duration": 125.448,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this announcement?",
+        "options": [
+          "To provide a ferry schedule",
+          "To sell tickets for the ferry",
+          "To announce a ferry delay",
+          "To give sightseeing advice"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "At what time is the ferry scheduled to depart?",
+        "options": [
+          "2:00 PM",
+          "2:30 PM",
+          "3:00 PM",
+          "3:30 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What should vehicle travelers do upon arrival?",
+        "options": [
+          "Park anywhere",
+          "Proceed to lane five",
+          "Enter the terminal first",
+          "Wait for further announcements"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the maximum vehicle height limit?",
+        "options": [
+          "2.5 meters",
+          "2.7 meters",
+          "2.9 meters",
+          "3.0 meters"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How long will the ferry ride to Tsawwassen take?",
+        "options": [
+          "One hour",
+          "One hour and forty minutes",
+          "Two hours",
+          "Two hours and thirty minutes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What can passengers find on the first floor?",
+        "options": [
+          "A waiting area",
+          "A ticket counter",
+          "A gift shop",
+          "Both a café and a gift shop"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part3-18",
+    "title": "Onboarding New Employees at TechNova",
+    "context": "Listen to the following information session about the onboarding process for new employees at TechNova, a tech startup in Vancouver.",
+    "audioFile": "part3-18.mp3",
+    "duration": 130.608,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of this monologue?",
+        "options": [
+          "To announce a holiday party",
+          "To outline the onboarding process",
+          "To discuss Vancouver's tech scene",
+          "To introduce the company history"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where will the onboarding session take place?",
+        "options": [
+          "At 200 Granville Street",
+          "At a local coffee shop",
+          "In the city’s tech hub",
+          "At a downtown hotel"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How much does the starting salary at TechNova amount to?",
+        "options": [
+          "$60,000",
+          "$70,000",
+          "$75,000",
+          "$80,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "When will the group tour of the city occur?",
+        "options": [
+          "Tomorrow morning",
+          "On Wednesday",
+          "Next week",
+          "This weekend"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the company offer to support professional growth?",
+        "options": [
+          "Study leave",
+          "Comprehensive training",
+          "Free workshops",
+          "Professional development opportunities"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "question": "What is the speaker's attitude towards the new employees?",
+        "options": [
+          "Indifferent",
+          "Welcoming",
+          "Critical",
+          "Skeptical"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-19",
+    "title": "Changes to Our Community Recycling Program",
+    "context": "Listen carefully to the announcement about the changes to the community recycling program.",
+    "audioFile": "part3-19.mp3",
+    "duration": 127.632,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To introduce a new waste disposal program",
+          "To inform about changes to the recycling program",
+          "To promote environmental education",
+          "To encourage community volunteer work"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which items will no longer be accepted in recycling?",
+        "options": [
+          "Clean paper products",
+          "Glass bottles",
+          "Plastic bags",
+          "Metal cans"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "When will the new recycling collection schedule begin?",
+        "options": [
+          "October 1st",
+          "November 1st",
+          "December 1st",
+          "January 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the date and time for the information session?",
+        "options": [
+          "October 25th at 6 PM",
+          "November 1st at 7 AM",
+          "October 25th at 7 PM",
+          "November 1st at 6 PM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What is the speaker's attitude toward the changes?",
+        "options": [
+          "Supportive and optimistic",
+          "Indifferent and uninterested",
+          "Frustrated and angry",
+          "Confused and hesitant"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "Why is the city making these changes?",
+        "options": [
+          "To increase recycling rates and reduce contamination",
+          "To cut costs and save money",
+          "To comply with federal regulations",
+          "To make recycling more convenient for residents"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part3-20",
+    "title": "Ski Resort Safety Briefing at Whistler",
+    "context": "Please listen carefully to the safety briefing for ski enthusiasts at Whistler Ski Resort. After the briefing, you will answer a few questions about the information provided.",
+    "audioFile": "part3-20.mp3",
+    "duration": 128.976,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary purpose of this monologue?",
+        "options": [
+          "To provide information about ski rentals",
+          "To give safety instructions for skiing",
+          "To promote Whistler as a top destination",
+          "To encourage visitors to try off-piste skiing"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much does it cost to rent a helmet at Whistler Ski Resort?",
+        "options": [
+          "$10",
+          "$15",
+          "$20",
+          "$25"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What should skiers do before heading out according to avalanche safety?",
+        "options": [
+          "Use ski passes only",
+          "Check the avalanche report",
+          "Wear a specific color",
+          "Stay inside the lodge"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the speaker emphasize about ski area closures?",
+        "options": [
+          "They are optional to follow",
+          "They help manage the crowd",
+          "They are for the safety of skiers",
+          "They can be ignored by experienced skiers"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Where can skiers find emergency assistance on the slopes?",
+        "options": [
+          "At the main lodge only",
+          "By using emergency phones",
+          "From fellow skiers",
+          "From ski rentals"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does the speaker recommend after a day of skiing?",
+        "options": [
+          "Immediate ski lessons",
+          "Visiting the Blackcomb Lodge for drinks",
+          "Staying on the slopes longer",
+          "Going to nearby towns"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-21",
+    "title": "New Digital Lending Program at the Public Library",
+    "context": "An announcement informing patrons about the new e-book collection and digital lending program at the local public library.",
+    "audioFile": "part3-21.mp3",
+    "duration": 132.384,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the digital lending program officially launch?",
+        "options": [
+          "A) April 1st",
+          "B) April 15th",
+          "C) May 1st",
+          "D) March 30th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What must you have to access the digital lending program?",
+        "options": [
+          "A) A valid library card",
+          "B) A smartphone",
+          "C) A computer",
+          "D) A special app"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How long can you borrow e-books from the digital collection?",
+        "options": [
+          "A) One week",
+          "B) Two weeks",
+          "C) Three weeks",
+          "D) Four weeks"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is required to apply for a library card?",
+        "options": [
+          "A) Proof of work",
+          "B) Proof of residency",
+          "C) Proof of age",
+          "D) Proof of education"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the time frame for the launch event?",
+        "options": [
+          "A) 3 PM to 5 PM",
+          "B) 4 PM to 6 PM",
+          "C) 5 PM to 7 PM",
+          "D) 6 PM to 8 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What can you do if you need more time to read?",
+        "options": [
+          "A) You cannot renew",
+          "B) Return your book",
+          "C) Renew for three more weeks",
+          "D) Pay a fine"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-22",
+    "title": "Free CPR and First Aid Certification Courses at the Community Centre",
+    "context": "Announcement about certification courses offered by the community centre.",
+    "audioFile": "part3-22.mp3",
+    "duration": 134.304,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the CPR and first aid courses start?",
+        "options": [
+          "November 6",
+          "November 10",
+          "November 11",
+          "December 1"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How long is each course session?",
+        "options": [
+          "2 hours",
+          "3 hours",
+          "4 hours",
+          "6 hours"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is required to register for the course?",
+        "options": [
+          "Age above 18",
+          "Payment processing",
+          "Name and contact information",
+          "First aid kit"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How old must participants be to enroll in the courses?",
+        "options": [
+          "10 years old",
+          "12 years old",
+          "14 years old",
+          "16 years old"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Is there any cost associated with the courses?",
+        "options": [
+          "Yes, a small fee",
+          "No, they are free",
+          "Depends on the session",
+          "Only for certification"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What must younger participants do to attend the course?",
+        "options": [
+          "Bring a friend",
+          "Complete a waiver",
+          "Be accompanied by an adult",
+          "Provide a medical note"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-23",
+    "title": "New Express Bus Routes for Suburbs",
+    "context": "An announcement regarding new bus routes in the city.",
+    "audioFile": "part3-23.mp3",
+    "duration": 133.08,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the new express bus routes start operating?",
+        "options": [
+          "Next Monday",
+          "This Friday",
+          "Next Wednesday",
+          "Next month"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is the frequency of the express buses during peak hours?",
+        "options": [
+          "Every 10 minutes",
+          "Every 20 minutes",
+          "Every 15 minutes",
+          "Every 30 minutes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What discount is offered for the first month of express routes?",
+        "options": [
+          "25%",
+          "50%",
+          "75%",
+          "Free"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How can passengers purchase tickets to take advantage of the discount?",
+        "options": [
+          "On the bus only",
+          "Cash only",
+          "City transit app",
+          "At the ticket booth"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What time does service begin in the mornings?",
+        "options": [
+          "6:00 AM",
+          "7:00 AM",
+          "5:30 AM",
+          "8:00 AM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What technology will the new buses feature for passenger convenience?",
+        "options": [
+          "GPS tracking",
+          "Real-time tracking",
+          "Automatic doors",
+          "Onboard entertainment"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-24",
+    "title": "Changes to Campsite Booking System for Summer",
+    "context": "Announcement regarding updates to booking procedures for provincial parks in Canada.",
+    "audioFile": "part3-24.mp3",
+    "duration": 137.952,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the new online booking system start?",
+        "options": [
+          "May 1st",
+          "July 1st",
+          "February 1st",
+          "March 1st"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How far in advance can you make a campsite reservation?",
+        "options": [
+          "One month",
+          "Three months",
+          "Six months",
+          "One year"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What system will be used for popular sites during the first two weeks of February?",
+        "options": [
+          "First come, first served",
+          "Lottery system",
+          "Email reservation",
+          "Phone booking"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What membership is required for discounts and early access?",
+        "options": [
+          "Camping Club membership",
+          "Parks Canada membership",
+          "National Parks membership",
+          "Provincial Camping membership"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How can you purchase or renew your Parks Canada membership?",
+        "options": [
+          "At any provincial park only",
+          "Through the website or at parks",
+          "Only at the office",
+          "Via third-party websites"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the primary goal of the updates to the booking system?",
+        "options": [
+          "To reduce camping fees",
+          "To streamline the reservation process",
+          "To extend camping hours",
+          "To increase campsite sizes"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-25",
+    "title": "New Walk-in Clinic Hours and Telehealth Services Announcement",
+    "context": "A hospital in Canada announcing changes to service hours and the introduction of telehealth services.",
+    "audioFile": "part3-25.mp3",
+    "duration": 131.568,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the new walk-in clinic hours begin?",
+        "options": [
+          "March 1st",
+          "March 6th",
+          "March 5th",
+          "March 7th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What are the new walk-in clinic hours?",
+        "options": [
+          "8 AM to 6 PM",
+          "9 AM to 5 PM",
+          "8 AM to 8 PM",
+          "10 AM to 7 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "When can patients book telehealth appointments?",
+        "options": [
+          "March 3rd",
+          "March 1st",
+          "April 1st",
+          "February 28th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time frame is the telehealth service available?",
+        "options": [
+          "8 AM to 4 PM",
+          "9 AM to 5 PM",
+          "10 AM to 6 PM",
+          "1 PM to 5 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do patients need to do to book a telehealth appointment?",
+        "options": [
+          "Call the hospital",
+          "Visit the clinic in person",
+          "Fill out a questionnaire online",
+          "Wait for a call from the hospital"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Where can patients find guidelines for choosing between the walk-in clinic and telehealth?",
+        "options": [
+          "At the pharmacy",
+          "In the hospital's information desk",
+          "On the hospital's website",
+          "In the waiting room"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-26",
+    "title": "Free Evening ESL Conversation Classes",
+    "context": "Announcement of free ESL classes offered by a university extension program.",
+    "audioFile": "part3-26.mp3",
+    "duration": 133.056,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To promote free ESL conversation classes",
+          "To announce a new university building",
+          "To invite students to a cultural festival",
+          "To inform about job openings at the university"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "On which days will the ESL classes take place?",
+        "options": [
+          "Monday and Wednesday",
+          "Tuesday and Thursday",
+          "Saturday and Sunday",
+          "Every day of the week"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does the evening class start?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "7 PM",
+          "8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "When does the program begin?",
+        "options": [
+          "February 1st",
+          "March 5th",
+          "April 25th",
+          "January 30th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is required to register for the classes?",
+        "options": [
+          "Payment of a fee",
+          "A recommendation letter",
+          "Basic personal information",
+          "Previous language experience"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What type of activities will be included in the sessions?",
+        "options": [
+          "Online lectures",
+          "Guided discussions and role-playing",
+          "Writing tests",
+          "Individual tutoring"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-27",
+    "title": "City's New Bike-Share Program Announcement",
+    "context": "Official announcement about the new bike-share program launching in the city in spring 2024.",
+    "audioFile": "part3-27.mp3",
+    "duration": 142.56,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the bike-share program launch?",
+        "options": [
+          "April 15, 2024",
+          "March 1, 2024",
+          "May 10, 2024",
+          "June 5, 2024"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How many bicycles will be available in the bike-share program?",
+        "options": [
+          "300",
+          "500",
+          "700",
+          "1000"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the name of the bike-share program?",
+        "options": [
+          "BikeCity",
+          "CycleShare",
+          "CityCycle",
+          "UrbanRide"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What type of passes are available for rent?",
+        "options": [
+          "Daily, weekly, and monthly",
+          "Only monthly",
+          "Only daily",
+          "Only yearly"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What date is the inaugural event scheduled for?",
+        "options": [
+          "April 20",
+          "April 15",
+          "April 25",
+          "May 1"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What will be provided at the inaugural event?",
+        "options": [
+          "Free bicycles",
+          "Discount memberships",
+          "Food trucks and live entertainment",
+          "Safety gear for all riders"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part3-28",
+    "title": "Recreation Centre Senior Fitness and Aquatics Programs Announcement",
+    "context": "A recreational centre announcement promoting fitness and aquatics programs specifically designed for seniors.",
+    "audioFile": "part3-28.mp3",
+    "duration": 148.176,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When do the fitness classes for seniors start?",
+        "options": [
+          "October 9th",
+          "November 1st",
+          "October 12th",
+          "September 15th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How often do the fitness classes take place per week?",
+        "options": [
+          "Once a week",
+          "Twice a week",
+          "Three times a week",
+          "Every day"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the duration of each fitness class?",
+        "options": [
+          "30 minutes",
+          "45 minutes",
+          "1 hour",
+          "90 minutes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "On which days is the aquatics program held?",
+        "options": [
+          "Monday and Wednesday",
+          "Tuesday and Thursday",
+          "Friday and Saturday",
+          "Sunday and Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the early-bird registration fee for the fall session?",
+        "options": [
+          "$25",
+          "$50",
+          "$75",
+          "$100"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What date is the introductory session?",
+        "options": [
+          "October 9th",
+          "October 12th",
+          "October 30th",
+          "November 1st"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part3-29",
+    "title": "Local Airport Terminal Renovation Announcement",
+    "context": "Announcement regarding terminal renovations and gate changes at a local airport.",
+    "audioFile": "part3-29.mp3",
+    "duration": 133.224,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the terminal renovation project begin?",
+        "options": [
+          "November 6th",
+          "December 1st",
+          "January 15th",
+          "February 10th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How long is the renovation project expected to last?",
+        "options": [
+          "3 months",
+          "4 months",
+          "6 months",
+          "8 months"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "Which gate will be closed entirely during the renovations?",
+        "options": [
+          "Gate 5",
+          "Gate 6",
+          "Gate 7",
+          "Gate 8"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What should passengers do to stay informed about gate changes?",
+        "options": [
+          "Call the airline",
+          "Check flight status online",
+          "Ask at the gate",
+          "Wait for announcements"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where will Gates 5 and 6 be relocated to?",
+        "options": [
+          "Western end of the terminal",
+          "Eastern end of the terminal",
+          "Near the food court",
+          "Near the parking lot"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What service may face delays due to increased demand?",
+        "options": [
+          "Baggage claim",
+          "Security screening",
+          "Shopping services",
+          "Shuttle services"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part3-30",
+    "title": "New Property Tax Assessment Process Announcement",
+    "context": "Municipal Office Information Session",
+    "audioFile": "part3-30.mp3",
+    "duration": 148.248,
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the revised assessment notices be mailed out?",
+        "options": [
+          "By the end of December",
+          "By January 15",
+          "By February 15",
+          "By the end of November"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is the deadline to file an appeal against the property assessment?",
+        "options": [
+          "January 1",
+          "February 15",
+          "March 1",
+          "December 31"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where will the community workshops be held?",
+        "options": [
+          "At the Municipal Office",
+          "At the Civic Center",
+          "At the Community Hall",
+          "Online"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How often will the workshops occur?",
+        "options": [
+          "Once a month",
+          "Every Wednesday and Saturday",
+          "Every two weeks",
+          "Every weekday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What must be submitted if a property owner files an appeal?",
+        "options": [
+          "A verbal statement",
+          "A payment fee",
+          "A written appeal with supporting documents",
+          "An online form only"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the primary goal of the new property tax assessment system?",
+        "options": [
+          "To increase property taxes",
+          "To ensure fair assessments",
+          "To reduce the number of appeals",
+          "To simplify the tax code"
+        ],
+        "correct": 1
+      }
+    ]
+  }
+]

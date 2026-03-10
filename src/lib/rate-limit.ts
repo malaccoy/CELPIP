@@ -4,12 +4,12 @@ const prisma = new PrismaClient();
 
 // Daily limits per endpoint (Pro users)
 const DAILY_LIMITS: Record<string, number> = {
-  'ai-practice': 30,
-  'ai-feedback': 15,
-  'speaking-feedback': 15,
-  'sentence-feedback': 20,
+  'ai-practice': 20,
+  'ai-feedback': 10,
+  'speaking-feedback': 10,
+  'sentence-feedback': 15,
   'mock-exam': 3,
-  'evaluate-ai': 15,
+  'evaluate-ai': 10,
 };
 
 // Free users get a taste (for assessment etc.)
@@ -21,6 +21,37 @@ const FREE_LIMITS: Record<string, number> = {
   'mock-exam': 0,
   'evaluate-ai': 2,
 };
+
+// Per-minute burst limits (prevents rapid-fire spam)
+const BURST_WINDOW_MS = 60_000;
+const BURST_LIMITS: Record<string, number> = {
+  'ai-practice': 3,
+  'ai-feedback': 2,
+  'speaking-feedback': 2,
+  'sentence-feedback': 3,
+  'mock-exam': 1,
+  'evaluate-ai': 2,
+};
+
+// In-memory burst tracker (resets on restart, intentionally lightweight)
+const burstTracker = new Map<string, number[]>();
+
+function checkBurst(userId: string, endpoint: string): boolean {
+  const key = `${userId}:${endpoint}`;
+  const now = Date.now();
+  const limit = BURST_LIMITS[endpoint] || 5;
+  
+  const timestamps = (burstTracker.get(key) || []).filter(t => now - t < BURST_WINDOW_MS);
+  
+  if (timestamps.length >= limit) {
+    burstTracker.set(key, timestamps);
+    return false; // blocked
+  }
+  
+  timestamps.push(now);
+  burstTracker.set(key, timestamps);
+  return true; // allowed
+}
 
 function getToday(): string {
   return new Date().toISOString().slice(0, 10);
@@ -46,6 +77,11 @@ export async function checkRateLimit(
 
   // Zero limit = blocked
   if (limit === 0) {
+    return { allowed: false, remaining: 0 };
+  }
+
+  // Burst check (per-minute)
+  if (!checkBurst(userId, endpoint)) {
     return { allowed: false, remaining: 0 };
   }
 

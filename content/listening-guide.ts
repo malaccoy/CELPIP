@@ -11,6 +11,7 @@ export interface ListeningPart {
   format: string;
   skills: string[];
   tips: string[];
+  verbal?: boolean; // Parts 1-3: questions are heard (audio), not just read
 }
 
 export interface ListeningQuestion {
@@ -21,14 +22,21 @@ export interface ListeningQuestion {
   timestamp?: string; // When in the audio the answer appears
 }
 
+export interface ListeningClip {
+  id: number;
+  audioScript: string;
+  questions: ListeningQuestion[];
+}
+
 export interface ListeningPassage {
   id: string;
   part: number;
   partName: string;
   title: string;
   context: string;
-  audioScript: string; // Text for TTS generation
+  audioScript: string; // Text for TTS generation (single clip parts)
   questions: ListeningQuestion[];
+  clips?: ListeningClip[]; // Multi-clip parts (Part 1)
 }
 
 export const listeningParts: ListeningPart[] = [
@@ -37,10 +45,11 @@ export const listeningParts: ListeningPart[] = [
     part: 1,
     title: 'Listening to Problem Solving',
     questions: 8,
-    duration: '~8 min',
+    duration: '3 clips × ~25 sec',
     icon: '🔧',
-    description: 'Listen to a conversation about solving a problem',
-    format: 'A conversation between two people discussing a problem and possible solutions',
+    verbal: true,
+    description: 'Listen to 3 short clips about solving a problem',
+    format: '3 short clips (~25 seconds each) of conversations about solving problems',
     skills: [
       'Identify the main problem',
       'Understand proposed solutions',
@@ -51,7 +60,7 @@ export const listeningParts: ListeningPart[] = [
       'Listen for signal words like "the problem is...", "we could...", "I suggest..."',
       'Pay attention to who suggests what solution',
       'Note any disagreements or concerns raised',
-      'The conversation plays ONCE - stay focused'
+      'Each clip plays ONCE - stay focused'
     ]
   },
   {
@@ -59,10 +68,11 @@ export const listeningParts: ListeningPart[] = [
     part: 2,
     title: 'Listening to a Daily Life Conversation',
     questions: 5,
-    duration: '~5 min',
+    duration: '1.5–2 min',
     icon: '🏠',
+    verbal: true,
     description: 'Listen to a casual conversation about everyday topics',
-    format: 'An informal conversation between friends, family, or colleagues',
+    format: '1 clip (1.5–2 min) — an informal conversation between friends, family, or colleagues',
     skills: [
       'Understand casual, everyday language',
       'Pick up on implied meanings',
@@ -81,10 +91,11 @@ export const listeningParts: ListeningPart[] = [
     part: 3,
     title: 'Listening for Information',
     questions: 6,
-    duration: '~6 min',
+    duration: '2–2.5 min',
     icon: '📢',
-    description: 'Listen to an announcement, news report, or informational message',
-    format: 'A monologue providing factual information (news, instructions, announcements)',
+    verbal: true,
+    description: 'Listen to an informational recording with specific details',
+    format: '1 clip (2–2.5 min) — a monologue providing factual information (news, instructions, announcements)',
     skills: [
       'Extract specific details (dates, times, numbers)',
       'Understand sequence of events',
@@ -99,14 +110,14 @@ export const listeningParts: ListeningPart[] = [
     ]
   },
   {
-    id: 'viewpoints',
+    id: 'news',
     part: 4,
     title: 'Listening to a News Item',
     questions: 5,
-    duration: '~5 min',
+    duration: '~1.5 min',
     icon: '📰',
-    description: 'Listen to a news report with different viewpoints',
-    format: 'A news story featuring multiple speakers with different opinions',
+    description: 'Listen to a news report and answer written questions',
+    format: '1 clip (~1.5 min) — a news story featuring multiple speakers with different opinions',
     skills: [
       'Distinguish between different speakers',
       'Identify each person\'s viewpoint',
@@ -117,7 +128,7 @@ export const listeningParts: ListeningPart[] = [
       'Note which person says what',
       'Listen for opinion phrases: "I believe", "In my view", "I disagree"',
       'Pay attention to the reporter\'s summary',
-      'Track who supports or opposes the main issue'
+      'From this part on, you READ the question options (written, not verbal)'
     ]
   },
   {
@@ -125,10 +136,10 @@ export const listeningParts: ListeningPart[] = [
     part: 5,
     title: 'Listening to a Discussion',
     questions: 8,
-    duration: '~8 min',
+    duration: '1.5–2 min',
     icon: '💬',
-    description: 'Listen to a discussion between multiple people',
-    format: 'A group discussion or meeting with 3+ participants',
+    description: 'Watch a video discussion between multiple people',
+    format: '1 video clip (1.5–2 min) — a group discussion with 3+ participants',
     skills: [
       'Track multiple speakers',
       'Understand different perspectives',
@@ -136,10 +147,10 @@ export const listeningParts: ListeningPart[] = [
       'Identify conclusions or decisions'
     ],
     tips: [
+      'This is the only part with VIDEO - use visual cues too',
       'Focus on understanding each person\'s main point',
-      'Listen for agreements ("I agree", "That\'s right") and disagreements',
-      'Note any decisions or action items mentioned',
-      'Don\'t panic if you miss something - keep listening'
+      'Listen for agreements and disagreements',
+      'Note any decisions or action items mentioned'
     ]
   },
   {
@@ -147,10 +158,10 @@ export const listeningParts: ListeningPart[] = [
     part: 6,
     title: 'Listening to Viewpoints',
     questions: 6,
-    duration: '~6 min',
+    duration: '~3 min',
     icon: '🎙️',
     description: 'Listen to extended opinions on a topic',
-    format: 'Multiple people expressing their views on a social or community issue',
+    format: '1 clip (~3 min) — multiple people expressing views on a social or community issue',
     skills: [
       'Compare and contrast viewpoints',
       'Identify reasons for opinions',
@@ -206,17 +217,43 @@ export const listeningPassages: ListeningPassage[] = [
     part: 1,
     partName: 'Listening to Problem Solving',
     title: 'Office Parking Problem',
-    context: 'Listen to two colleagues discussing a problem at their workplace.',
-    audioScript: `
-Woman: Hey Mark, did you hear about the parking situation? The building management just announced they're reducing the number of employee parking spots by half.
+    context: 'Listen to two colleagues discussing a parking problem at their workplace.',
+    audioScript: '',
+    questions: [],
+    clips: [
+      {
+        id: 1,
+        audioScript: `Woman: Hey Mark, did you hear about the parking situation? The building management just announced they're reducing the number of employee parking spots by half.
 
-Man: What? That's terrible news. I drive to work every day - there's no way I can give up my parking spot.
+Man: What? That's terrible news. I drive to work every day. There's no way I can give up my parking spot.
 
 Woman: I know, it's frustrating. Apparently they need the space for a new tenant moving into the building. So we need to figure out some alternatives.
 
-Man: Well, what options do we have? I can't take public transit - I live too far from any bus routes.
-
-Woman: Have you considered carpooling? I know Sarah from accounting lives near you. Maybe you two could share rides.
+Man: Well, what options do we have? I can't take public transit — I live too far from any bus routes.`,
+        questions: [
+          {
+            id: 1,
+            question: 'What is the main problem being discussed?',
+            options: ['The office is moving to a new building', 'Parking spots are being reduced by half', 'Public transit prices went up', 'The building is being renovated'],
+            correct: 1
+          },
+          {
+            id: 2,
+            question: 'Why is Mark concerned about public transit?',
+            options: ['It is too expensive', 'He lives far from bus routes', 'The buses are always late', 'He doesn\'t like crowded buses'],
+            correct: 1
+          },
+          {
+            id: 3,
+            question: 'Why are the parking spots being reduced?',
+            options: ['The building is being renovated', 'A new tenant needs the space', 'The city changed parking regulations', 'The company is cutting costs'],
+            correct: 1
+          }
+        ]
+      },
+      {
+        id: 2,
+        audioScript: `Woman: Have you considered carpooling? I know Sarah from accounting lives near you. Maybe you two could share rides.
 
 Man: That's actually not a bad idea. But what about days when we have different schedules?
 
@@ -224,84 +261,53 @@ Woman: Good point. Another option is the park-and-ride lot on Highway 7. You cou
 
 Man: Hmm, that might work. What about you? What are you going to do?
 
-Woman: I'm thinking about biking, actually. The new bike lanes on Main Street go right past our building. It would take me about 25 minutes, and I could use the exercise.
+Woman: I'm thinking about biking, actually. The new bike lanes on Main Street go right past our building. It would take me about 25 minutes, and I could use the exercise.`,
+        questions: [
+          {
+            id: 4,
+            question: 'Who does the woman suggest Mark could carpool with?',
+            options: ['The woman herself', 'His manager', 'Sarah from accounting', 'A neighbor'],
+            correct: 2
+          },
+          {
+            id: 5,
+            question: 'How long would the express bus take from the park-and-ride?',
+            options: ['15 minutes', '20 minutes', '25 minutes', '30 minutes'],
+            correct: 1
+          },
+          {
+            id: 6,
+            question: 'What solution is the woman considering for summer?',
+            options: ['Taking the bus', 'Working from home', 'Carpooling with Mark', 'Biking to work'],
+            correct: 3
+          }
+        ]
+      },
+      {
+        id: 3,
+        audioScript: `Man: That sounds healthy, but what about winter? It gets pretty cold here.
 
-Man: That sounds healthy, but what about winter? It gets pretty cold here.
-
-Woman: Yeah, I've thought about that. For winter, I might use the park-and-ride like you. Or maybe work from home a couple days a week - the company just expanded remote work options.
+Woman: Yeah, I've thought about that. For winter, I might use the park-and-ride like you. Or maybe work from home a couple days a week — the company just expanded remote work options.
 
 Man: That's true. I should ask my manager about that too. Working from home two days a week would help a lot.
 
 Woman: Exactly. So I think we have some good options. Shall we talk to Sarah about the carpool idea?
 
-Man: Yes, let's do that today.
-`,
-    questions: [
-      {
-        id: 1,
-        question: 'What is the main problem being discussed?',
-        options: [
-          'The office is moving to a new building',
-          'Parking spots are being reduced',
-          'Public transit is too expensive',
-          'The building is being renovated'
-        ],
-        correct: 1
-      },
-      {
-        id: 2,
-        question: 'Why is Mark concerned about public transit?',
-        options: [
-          'It is too expensive',
-          'He lives far from bus routes',
-          'The buses are always late',
-          'He doesn\'t like crowded buses'
-        ],
-        correct: 1
-      },
-      {
-        id: 3,
-        question: 'Who does the woman suggest Mark could carpool with?',
-        options: [
-          'The woman herself',
-          'His manager',
-          'Sarah from accounting',
-          'A neighbor'
-        ],
-        correct: 2
-      },
-      {
-        id: 4,
-        question: 'How long would the express bus take from the park-and-ride?',
-        options: [
-          '15 minutes',
-          '20 minutes',
-          '25 minutes',
-          '30 minutes'
-        ],
-        correct: 1
-      },
-      {
-        id: 5,
-        question: 'What solution is the woman considering for summer?',
-        options: [
-          'Taking the bus',
-          'Working from home',
-          'Carpooling with Mark',
-          'Biking to work'
-        ],
-        correct: 3
-      },
-      {
-        id: 6,
-        question: 'What is mentioned as a winter alternative?',
-        options: [
-          'Buying a warmer car',
-          'Using park-and-ride or working from home',
-          'Moving closer to work',
-          'Taking vacation during cold months'
-        ],
-        correct: 1
+Man: Yes, let's do that today.`,
+        questions: [
+          {
+            id: 7,
+            question: 'What does the man plan to ask his manager about?',
+            options: ['A salary increase to cover parking costs', 'Working from home two days a week', 'Transferring to a different office', 'Getting a reserved parking spot'],
+            correct: 1
+          },
+          {
+            id: 8,
+            question: 'Who do they plan to talk to about the carpool idea?',
+            options: ['Their manager', 'The building management', 'Sarah', 'The bus company'],
+            correct: 2
+          }
+        ]
       }
     ]
   },
@@ -406,19 +412,17 @@ Woman: I'd like that! Just text me the details.
     partName: 'Listening for Information',
     title: 'Community Center Announcement',
     context: 'Listen to an announcement about changes at a community center.',
-    audioScript: `
-Attention all members of the Riverside Community Center. We have several important announcements regarding upcoming changes and events.
+    audioScript: `Attention all members of the Riverside Community Center. We have several important announcements regarding upcoming changes and events. Please listen carefully, as some of these affect your regular schedule.
 
-First, our annual maintenance closure will take place from March 15th to March 22nd. During this time, all facilities including the pool, gym, and fitness studios will be closed for deep cleaning and equipment upgrades. We apologize for any inconvenience and thank you for your patience.
+First, our annual maintenance closure will take place from March 15th to March 22nd. During this time, all facilities including the pool, gym, and fitness studios will be closed for deep cleaning and equipment upgrades. We will be replacing several treadmills and elliptical machines, and resurfacing the basketball court. We apologize for any inconvenience and thank you for your patience. If you need to work out during the closure, our partnership with the Downtown YMCA allows members to use their facilities with a valid Riverside membership card.
 
-Second, we're excited to announce our new extended hours starting April 1st. The center will now open at 5:30 AM instead of 6 AM on weekdays, and close at 11 PM instead of 10 PM. Weekend hours will remain unchanged.
+Second, we're excited to announce our new extended hours starting April 1st. The center will now open at 5:30 AM instead of 6 AM on weekdays, and close at 11 PM instead of 10 PM. Weekend hours will remain unchanged — 7 AM to 9 PM on Saturdays and 8 AM to 8 PM on Sundays. We heard your feedback and know that many of you wanted earlier morning access for before-work exercise.
 
-Third, registration for spring swimming lessons begins next Monday, March 3rd, at 8 AM. Classes fill up quickly, so we encourage early registration. You can sign up online through our website or in person at the front desk. Children's classes are $85 for the 8-week session, and adult classes are $95.
+Third, registration for spring swimming lessons begins next Monday, March 3rd, at 8 AM. Classes fill up quickly, so we encourage early registration. You can sign up online through our website or in person at the front desk. Children's classes are $85 for the 8-week session, and adult classes are $95. New this year, we're also offering an intermediate diving class on Thursday evenings for $110.
 
-Finally, don't forget about our community fitness challenge starting March 10th. Participants who complete 20 workout sessions by April 30th will receive a free month of membership. Sign-up sheets are available at the front desk.
+Finally, don't forget about our community fitness challenge starting March 10th. Participants who complete 20 workout sessions by April 30th will receive a free month of membership. You can track your sessions using the new Riverside app, which is free to download on iOS and Android. Sign-up sheets are also available at the front desk.
 
-For more information about any of these announcements, please speak to our staff or visit our website at riverside community dot org. Thank you for being valued members of our community.
-`,
+For more information about any of these announcements, please speak to our staff or visit our website at riverside community dot org. Thank you for being valued members of our community.`,
     questions: [
       {
         id: 1,
@@ -577,7 +581,12 @@ Reporter: The council is expected to vote on the proposal next month. If approve
     partName: 'Listening to Problem Solving',
     title: 'Apartment Roommate Conflict',
     context: 'Listen to two roommates discussing a problem in their shared apartment.',
-    audioScript: `Woman: Hey Jake, do you have a minute? I need to talk to you about something.
+    audioScript: '',
+    questions: [],
+    clips: [
+      {
+        id: 1,
+        audioScript: `Woman: Hey Jake, do you have a minute? I need to talk to you about something.
 
 Man: Sure, what's up?
 
@@ -587,30 +596,42 @@ Man: Three twenty? That's insane. What happened?
 
 Woman: I think it's the space heaters. You've been running two of them in your room pretty much all day. I get that your room is cold, but it's really driving up the costs.
 
-Man: I know, I know. But the heating vent in my room barely works. I've told the landlord three times and he hasn't done anything about it. What am I supposed to do, freeze?
-
-Woman: No, of course not. But we need to find a solution because I can't afford to pay a hundred and sixty dollars every month for electricity. That wasn't what we agreed on.
+Man: I know, I know. But the heating vent in my room barely works. I've told the landlord three times and he hasn't done anything about it. What am I supposed to do, freeze?`,
+        questions: [
+          { id: 1, question: 'What is the main problem?', options: ['The apartment is too small', 'The electricity bill is much higher than usual', 'The landlord is raising the rent', 'The heating system is too loud'], correct: 1 },
+          { id: 2, question: 'What was the electricity bill amount this month?', options: ['$220', '$280', '$320', '$350'], correct: 2 },
+          { id: 3, question: 'Why is Jake using space heaters?', options: ['He prefers them to central heating', 'The apartment has no heating system', 'The heating vent in his room barely works', 'He is trying to dry his clothes'], correct: 2 }
+        ]
+      },
+      {
+        id: 2,
+        audioScript: `Woman: We need to find a solution because I can't afford to pay a hundred and sixty dollars every month for electricity. That wasn't what we agreed on.
 
 Man: You're right, that's not fair to you. What if I contact the landlord again and give him a deadline? Like, if he doesn't fix the vent by the end of next week, we'll call a repair person ourselves and deduct it from the rent.
 
 Woman: Can we legally do that?
 
-Man: I think so, but let me check. My cousin is a paralegal, I'll ask her. In the meantime, what if I buy one of those energy-efficient oil heaters? They cost way less to run than the space heaters. My friend has one and his bill barely changed.
-
-Woman: That would help a lot. They're like eighty dollars at Canadian Tire. I'd even split the cost with you since it benefits both of us through the electricity bill.
+Man: I think so, but let me check. My cousin is a paralegal, I'll ask her. In the meantime, what if I buy one of those energy-efficient oil heaters? They cost way less to run than the space heaters.`,
+        questions: [
+          { id: 4, question: 'What solution does Jake suggest for the landlord?', options: ['Move to a different apartment', 'Sue the landlord', 'Give the landlord a deadline and hire a repair person if needed', 'Stop paying rent until it is fixed'], correct: 2 },
+          { id: 5, question: 'Who will Jake ask about the legal question?', options: ['His lawyer', 'The landlord', 'His cousin who is a paralegal', 'A tenant rights organization'], correct: 2 },
+          { id: 6, question: 'What type of heater will Jake buy?', options: ['A larger space heater', 'An energy-efficient oil heater', 'A gas heater', 'A ceramic tower heater'], correct: 1 }
+        ]
+      },
+      {
+        id: 3,
+        audioScript: `Woman: They're like eighty dollars at Canadian Tire. I'd even split the cost with you since it benefits both of us through the electricity bill.
 
 Man: Deal. I'll go pick one up tomorrow. And for this month's bill, how about I pay sixty percent since the heaters were my fault? So I'll pay one ninety-two and you pay one twenty-eight.
 
 Woman: That's really fair, Jake. Thanks for being reasonable about this.
 
 Man: Of course. We're in this together, right? I'll text my cousin tonight about the landlord situation.`,
-    questions: [
-      { id: 1, question: 'What is the main problem?', options: ['The apartment is too small', 'The electricity bill is much higher than usual', 'The landlord is raising the rent', 'The heating system is too loud'], correct: 1 },
-      { id: 2, question: 'Why is Jake using space heaters?', options: ['He prefers them to central heating', 'The apartment has no heating system', 'The heating vent in his room barely works', 'He is trying to dry his clothes'], correct: 2 },
-      { id: 3, question: 'What solution does Jake suggest for the landlord?', options: ['Move to a different apartment', 'Sue the landlord', 'Give the landlord a deadline and hire a repair person if needed', 'Stop paying rent until it is fixed'], correct: 2 },
-      { id: 4, question: 'What type of heater will Jake buy?', options: ['A larger space heater', 'An energy-efficient oil heater', 'A gas heater', 'A ceramic tower heater'], correct: 1 },
-      { id: 5, question: 'How will they split this month\'s electricity bill?', options: ['Equally — fifty-fifty', 'Jake pays 60%, she pays 40%', 'Jake pays the full amount', 'They will ask the landlord to pay'], correct: 1 },
-      { id: 6, question: 'Who will Jake ask about the legal question?', options: ['His lawyer', 'The landlord', 'His cousin who is a paralegal', 'A tenant rights organization'], correct: 2 }
+        questions: [
+          { id: 7, question: 'How will they split this month\'s electricity bill?', options: ['Equally — fifty-fifty', 'Jake pays 60%, she pays 40%', 'Jake pays the full amount', 'They will ask the landlord to pay'], correct: 1 },
+          { id: 8, question: 'How much does the energy-efficient heater cost?', options: ['$50', '$60', '$80', '$100'], correct: 2 }
+        ]
+      }
     ]
   },
   {
@@ -619,13 +640,25 @@ Man: Of course. We're in this together, right? I'll text my cousin tonight about
     partName: 'Listening to Problem Solving',
     title: 'Scheduling a Group Project',
     context: 'Listen to two university students trying to organize a group project meeting.',
-    audioScript: `Man: Priya, we really need to figure out when we're going to meet for this marketing project. The presentation is in two weeks and we haven't even started the research.
+    audioScript: '',
+    questions: [],
+    clips: [
+      {
+        id: 1,
+        audioScript: `Man: Priya, we really need to figure out when we're going to meet for this marketing project. The presentation is in two weeks and we haven't even started the research.
 
 Woman: I know, I've been stressed about it. The problem is everyone's schedule is completely different. You work Monday and Wednesday evenings, I have labs Tuesday and Thursday afternoons, and Chen has class every morning.
 
-Man: Right. And the deadline is March fifteenth. Professor Williams won't accept late submissions — she was very clear about that.
-
-Woman: Okay, let's think about this systematically. Weekday mornings are out because of Chen. My labs go until four on Tuesdays and Thursdays. What about Tuesday or Thursday evenings?
+Man: Right. And the deadline is March fifteenth. Professor Williams won't accept late submissions — she was very clear about that.`,
+        questions: [
+          { id: 1, question: 'When is the project presentation?', options: ['Next week', 'In two weeks', 'In one month', 'At the end of the semester'], correct: 1 },
+          { id: 2, question: 'What is Chen\'s scheduling conflict?', options: ['He works every evening', 'He has class every morning', 'He has labs every afternoon', 'He coaches sports after school'], correct: 1 },
+          { id: 3, question: 'When is the deadline for the project?', options: ['March 1st', 'March 10th', 'March 15th', 'March 20th'], correct: 2 }
+        ]
+      },
+      {
+        id: 2,
+        audioScript: `Woman: Okay, let's think about this systematically. Weekday mornings are out because of Chen. My labs go until four on Tuesdays and Thursdays. What about Tuesday or Thursday evenings?
 
 Man: Tuesdays could work for me. I'm free after five. But doesn't Chen work at the restaurant on Tuesday nights?
 
@@ -633,9 +666,15 @@ Woman: Oh right, he does. Okay, what about Thursday evening then?
 
 Man: Thursday works. I'm free all day Thursday actually. What time?
 
-Woman: My lab ends at four, so I could get to the library by four thirty. Could we do four thirty to seven?
-
-Man: That works for me. I'll text Chen right now. Actually, wait — what about Saturday? We might need more than one session per week to get this done in time.
+Woman: My lab ends at four, so I could get to the library by four thirty. Could we do four thirty to seven?`,
+        questions: [
+          { id: 4, question: 'Why can\'t they meet on weekday mornings?', options: ['The library is closed', 'Priya has labs', 'Chen has class every morning', 'The man works mornings'], correct: 2 },
+          { id: 5, question: 'Why is Tuesday evening not possible?', options: ['Priya has a lab', 'The man works', 'Chen works at a restaurant', 'The library is closed'], correct: 2 }
+        ]
+      },
+      {
+        id: 3,
+        audioScript: `Man: Actually, wait — what about Saturday? We might need more than one session per week to get this done in time.
 
 Woman: Saturday morning would be perfect. I'm free until noon, and the campus library opens at nine on weekends.
 
@@ -643,16 +682,13 @@ Man: Let me check... yes, Saturday nine to twelve works for me too. So we'd have
 
 Woman: That should be enough if we divide the work efficiently. I can handle the data analysis section, you're good at presentations, and Chen is great with research.
 
-Man: Perfect. I'll create a shared Google Doc tonight so we can all start adding notes. And I'll set up a group chat so we can communicate between meetings.
-
-Woman: Great idea. Let me also book a study room at the library for Thursdays. Those rooms fill up fast.`,
-    questions: [
-      { id: 1, question: 'When is the project presentation?', options: ['Next week', 'In two weeks', 'In one month', 'At the end of the semester'], correct: 1 },
-      { id: 2, question: 'Why can\'t they meet on weekday mornings?', options: ['The library is closed', 'Priya has labs', 'Chen has class every morning', 'The man works mornings'], correct: 2 },
-      { id: 3, question: 'Why is Tuesday evening not possible?', options: ['Priya has a lab', 'The man works', 'Chen works at a restaurant', 'The library is closed'], correct: 2 },
-      { id: 4, question: 'What two time slots do they agree on?', options: ['Monday evenings and Sunday mornings', 'Wednesday afternoons and Friday mornings', 'Thursday evenings and Saturday mornings', 'Tuesday evenings and Saturday afternoons'], correct: 2 },
-      { id: 5, question: 'How many total hours of meeting time will they have?', options: ['Five hours', 'Eight hours', 'Ten hours', 'Twelve hours'], correct: 2 },
-      { id: 6, question: 'What will the man do after the conversation?', options: ['Start the research immediately', 'Create a shared Google Doc and group chat', 'Email Professor Williams', 'Book a study room'], correct: 1 }
+Man: Perfect. I'll create a shared Google Doc tonight so we can all start adding notes. And I'll set up a group chat so we can communicate between meetings.`,
+        questions: [
+          { id: 6, question: 'What two time slots do they agree on?', options: ['Monday evenings and Sunday mornings', 'Wednesday afternoons and Friday mornings', 'Thursday evenings and Saturday mornings', 'Tuesday evenings and Saturday afternoons'], correct: 2 },
+          { id: 7, question: 'How many total hours of meeting time will they have?', options: ['Five hours', 'Eight hours', 'Ten hours', 'Twelve hours'], correct: 2 },
+          { id: 8, question: 'What will the man do after the conversation?', options: ['Start the research immediately', 'Create a shared Google Doc and group chat', 'Email Professor Williams', 'Book a study room'], correct: 1 }
+        ]
+      }
     ]
   },
 
@@ -693,8 +729,7 @@ Man: That's not bad at all for what you're getting. I might need to start lookin
       { id: 2, question: 'What does the woman like most about the new area?', options: ['The apartment itself', 'The short commute', 'The neighborhood', 'The low rent'], correct: 2 },
       { id: 3, question: 'How does the woman commute to work now?', options: ['She drives', 'She walks in 20 minutes', 'She takes the bus and SkyTrain', 'She bikes along the seawall'], correct: 2 },
       { id: 4, question: 'What does the woman do during her commute?', options: ['She sleeps', 'She works on her laptop', 'She reads or listens to podcasts', 'She calls friends'], correct: 2 },
-      { id: 5, question: 'How much more is the actual cost difference?', options: ['$100 per month', '$200 per month', '$400 per month', '$600 per month'], correct: 1 },
-      { id: 6, question: 'What is near the apartment?', options: ['A shopping mall and cinema', 'A grocery store and pharmacy', 'A hospital and school', 'A gym and pool'], correct: 1 }
+      { id: 5, question: 'How much more is the actual cost difference?', options: ['$100 per month', '$200 per month', '$400 per month', '$600 per month'], correct: 1 }
     ]
   },
   {
@@ -737,8 +772,7 @@ Woman: Perfect. Just make sure to tell everyone to keep it a secret!`,
       { id: 2, question: 'How will they get Angela to the conference room?', options: ['Tell her about the party', 'Say there is a quick team meeting', 'Ask her to help move furniture', 'Send her a calendar invite'], correct: 1 },
       { id: 3, question: 'Where will they order food from?', options: ['A pizza place', 'A sushi restaurant', 'A Thai restaurant', 'A sandwich shop'], correct: 2 },
       { id: 4, question: 'Who is making the cake?', options: ['David will buy one from a bakery', 'The woman will make it', 'Maria will bake it', 'Angela\'s family will bring one'], correct: 2 },
-      { id: 5, question: 'How much will each person pay in total?', options: ['$15', '$18', '$20', '$25'], correct: 1 },
-      { id: 6, question: 'What gift are they getting Angela?', options: ['Flowers', 'A book', 'A gift card to Indigo bookstore', 'A restaurant voucher'], correct: 2 }
+      { id: 5, question: 'How much will each person pay in total?', options: ['$15', '$18', '$20', '$25'], correct: 1 }
     ]
   },
 
@@ -898,7 +932,9 @@ Owner: Yes, that's important. Let's aim to launch the new menu on the first of n
       { id: 3, question: 'What example does Luis give of food waste?', options: ['The chicken pasta', 'The seafood risotto', 'The garden salad', 'The daily soup'], correct: 1 },
       { id: 4, question: 'What percentage of lunch customers have dietary preferences?', options: ['About 10%', 'About 20%', 'About 30%', 'About 50%'], correct: 2 },
       { id: 5, question: 'How much would the lunch special cost?', options: ['$12-13', '$15-16', '$17-18', '$20-22'], correct: 2 },
-      { id: 6, question: 'When will the new menu launch?', options: ['Next Wednesday', 'This weekend', 'The first of next month', 'In three months'], correct: 2 }
+      { id: 6, question: 'When will the new menu launch?', options: ['Next Wednesday', 'This weekend', 'The first of next month', 'In three months'], correct: 2 },
+      { id: 7, question: 'How many items does Luis recommend cutting the menu to?', options: ['Fifteen items', 'Twenty items', 'Twenty-five items', 'Thirty items'], correct: 2 },
+      { id: 8, question: 'What does the owner decide to do with the daily specials idea?', options: ['Reject it completely', 'Test it starting this weekend', 'Wait until next quarter', 'Assign Luis to research it'], correct: 1 }
     ]
   },
 
@@ -1183,7 +1219,12 @@ Host: Thank you all. Lots to consider for our listeners.`,
     partName: 'Listening to Problem Solving',
     title: 'Apartment Water Damage',
     context: 'Listen to two roommates dealing with a water leak in their apartment.',
-    audioScript: `Woman: Tyler, come look at this. There's water dripping from the ceiling in the hallway. I just noticed it when I got home.
+    audioScript: '',
+    questions: [],
+    clips: [
+      {
+        id: 1,
+        audioScript: `Woman: Tyler, come look at this. There's water dripping from the ceiling in the hallway. I just noticed it when I got home.
 
 Man: Oh no, that's not good at all. How bad is it?
 
@@ -1191,53 +1232,41 @@ Woman: It's a steady drip right now. I put a bucket underneath but the ceiling l
 
 Man: We need to call the building manager right away. Do you have Sandra's number?
 
-Woman: I do, but she said she's on vacation until Friday. The emergency maintenance number is on the fridge though.
-
-Man: Okay, I'll call them. But in the meantime we should probably move our stuff away from that area. My guitar and your bookshelf are right under the leak.
+Woman: I do, but she said she's on vacation until Friday. The emergency maintenance number is on the fridge though.`,
+        questions: [
+          { id: 1, question: 'What is the first problem they notice?', options: ['A burst pipe in the bathroom', 'Water dripping from the hallway ceiling', 'Flooding in the basement', 'A broken window during a storm'], correct: 1 },
+          { id: 2, question: 'Why can\'t they contact the building manager directly?', options: ['She changed her phone number', 'She is on vacation until Friday', 'She is at a conference', 'The office is closed for renovation'], correct: 1 },
+          { id: 3, question: 'What did the woman do before telling Tyler?', options: ['Called the fire department', 'Put a bucket under the drip', 'Turned off the water main', 'Called the insurance company'], correct: 1 }
+        ]
+      },
+      {
+        id: 2,
+        audioScript: `Man: Okay, I'll call them. But in the meantime we should probably move our stuff away from that area. My guitar and your bookshelf are right under the leak.
 
 Woman: Good point. I already moved the shoes from the hallway closet. But the bookshelf is too heavy for me to move alone. Can you help me slide it into the living room?
 
 Man: Absolutely. Let's do that first, then I'll call maintenance. Actually, wait — should we also turn off the water main just in case? If it's a burst pipe above us, the water will keep coming.
 
-Woman: The shut-off valve is in the basement. I don't have a key to the utility room though. Maybe ask the neighbor in 304 — I think she has access.
-
-Man: Right, Mrs. Chen. She's usually home by now. I'll knock on her door. Also, we should take photos of everything for the insurance claim. Make sure you get the ceiling damage and any water on the floor.
+Woman: The shut-off valve is in the basement. I don't have a key to the utility room though. Maybe ask the neighbor in 304 — I think she has access.`,
+        questions: [
+          { id: 4, question: 'What does the woman suggest about the shut-off valve?', options: ['It\'s in their apartment', 'They need to ask their neighbor for access to the basement', 'The building manager has the only key', 'It was already turned off'], correct: 1 },
+          { id: 5, question: 'Which neighbor might have access to the utility room?', options: ['The tenant in 302', 'Mrs. Chen in 304', 'Sandra in 301', 'The couple in 305'], correct: 1 }
+        ]
+      },
+      {
+        id: 3,
+        audioScript: `Man: Right, Mrs. Chen. She's usually home by now. I'll knock on her door. Also, we should take photos of everything for the insurance claim. Make sure you get the ceiling damage and any water on the floor.
 
 Woman: Smart thinking. I'll take photos and video right now. And I'll check if our renter's insurance covers water damage from above. I think our policy with Intact covers it, but there might be a deductible.
 
 Man: The deductible is five hundred dollars, I remember from when we signed up. Okay, here's the plan: you document everything and check the insurance. I'll move the bookshelf, call maintenance, and talk to Mrs. Chen about the water valve.
 
 Woman: Sounds good. Oh, and Tyler? Can you also check the bathroom ceiling? If the leak is spreading, it might affect more than just the hallway.`,
-    questions: [
-      {
-        id: 1,
-        question: 'What is the first problem they notice?',
-        options: ['A burst pipe in the bathroom', 'Water dripping from the hallway ceiling', 'Flooding in the basement', 'A broken window during a storm'],
-        correct: 1
-      },
-      {
-        id: 2,
-        question: 'Why can\'t they contact the building manager directly?',
-        options: ['She changed her phone number', 'She is on vacation', 'She is at a conference', 'The office is closed for renovation'],
-        correct: 1
-      },
-      {
-        id: 3,
-        question: 'What does the woman suggest about the shut-off valve?',
-        options: ['It\'s in their apartment', 'They need to ask their neighbor for access', 'The building manager has the only key', 'It was already turned off'],
-        correct: 1
-      },
-      {
-        id: 4,
-        question: 'What is the insurance deductible?',
-        options: ['$200', '$300', '$500', '$1,000'],
-        correct: 2
-      },
-      {
-        id: 5,
-        question: 'What does Tyler agree to do?',
-        options: ['Take photos and check insurance', 'Call the insurance company', 'Move furniture, call maintenance, and talk to the neighbor', 'Go to the basement alone'],
-        correct: 2
+        questions: [
+          { id: 6, question: 'What is the insurance deductible?', options: ['$200', '$350', '$500', '$1,000'], correct: 2 },
+          { id: 7, question: 'What does Tyler agree to do?', options: ['Take photos and check insurance', 'Call the insurance company', 'Move furniture, call maintenance, and talk to the neighbor', 'Go to the basement alone'], correct: 2 },
+          { id: 8, question: 'What additional area does the woman ask Tyler to check?', options: ['The kitchen ceiling', 'The bathroom ceiling', 'The basement floor', 'The living room walls'], correct: 1 }
+        ]
       }
     ]
   },
@@ -1359,6 +1388,12 @@ Any questions? The information desk is right over there if you need help at any 
         id: 5,
         question: 'Which platform is used for streaming movies?',
         options: ['Netflix', 'Libby', 'Kanopy', 'LinkedIn Learning'],
+        correct: 2
+      },
+      {
+        id: 6,
+        question: 'How long is each public computer session?',
+        options: ['30 minutes', '45 minutes', '1 hour', '2 hours'],
         correct: 2
       }
     ]
@@ -1486,6 +1521,18 @@ Sandra: Good point. Let me talk to facilities about that. Okay, so the proposal 
         question: 'What problem does David mention about in-office days?',
         options: ['No parking available', 'Internet connection issues', 'Not enough meeting rooms', 'The cafeteria is always closed'],
         correct: 2
+      },
+      {
+        id: 7,
+        question: 'What solution does David propose for the hybrid policy?',
+        options: ['Everyone works from home full-time', 'Team-based flexible scheduling', 'Mandatory five days in office', 'Alternating weeks on and off'],
+        correct: 1
+      },
+      {
+        id: 8,
+        question: 'By how much did engineering productivity increase during full remote work?',
+        options: ['5%', '10%', '15%', '20%'],
+        correct: 2
       }
     ]
   },
@@ -1558,6 +1605,18 @@ Linda: Great. Mark, you'll lead the carnival. Sarah, you've got crowdfunding. I'
         question: 'What will Linda coordinate?',
         options: ['The carnival', 'The crowdfunding', 'The walkathon', 'The volunteer recruitment'],
         correct: 2
+      },
+      {
+        id: 7,
+        question: 'What is the estimated revenue from the spring carnival?',
+        options: ['$5,000', '$8,000 to $10,000', '$12,000', '$15,000'],
+        correct: 1
+      },
+      {
+        id: 8,
+        question: 'What does Sarah suggest about local businesses?',
+        options: ['Ask them to donate equipment directly', 'Get them to match donations', 'Have them sponsor the carnival', 'Sell advertising space to them'],
+        correct: 1
       }
     ]
   },

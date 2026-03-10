@@ -1,0 +1,332 @@
+[
+  {
+    "id": "task2-01",
+    "scenario": "You were in a public place when you noticed someone in need of assistance.",
+    "prompt": "Talk about a time when you helped a stranger in an unexpected way.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-02",
+    "scenario": "Last summer, I visited the beautiful Rocky Mountains in Alberta.",
+    "prompt": "Talk about a time when you explored the Rocky Mountains.",
+    "bulletPoints": [
+      "What happened during your trip?",
+      "How you felt during your adventure?",
+      "What you learned from this experience?"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-03",
+    "scenario": "Last winter, I encountered a particularly harsh blizzard that caught everyone off guard.",
+    "prompt": "Talk about a time when you had to deal with very cold winter weather.",
+    "bulletPoints": [
+      "What happened during the blizzard?",
+      "How did you feel while experiencing the severe cold?",
+      "What did you learn from that experience?"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-04",
+    "scenario": "Many adults decide to learn new skills or hobbies later in life. This can be a challenging yet rewarding experience.",
+    "prompt": "Talk about a time when you learned something new as an adult.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-05",
+    "scenario": "Last summer, I attended a vibrant cultural festival in my city that celebrated diverse traditions.",
+    "prompt": "Talk about a time when you attended a cultural festival or celebration.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-06",
+    "scenario": "You had an important job interview for a position you really wanted.",
+    "prompt": "Talk about a time when you faced a memorable experience at a job interview.",
+    "bulletPoints": [
+      "What happened during the interview",
+      "How you felt throughout the process",
+      "What you learned from the experience"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-07",
+    "scenario": "You were traveling alone in a new city and took a wrong turn.",
+    "prompt": "Talk about a time when you got lost in an unfamiliar city.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-08",
+    "scenario": "You decided to host a family reunion and cook a homemade meal for everyone.",
+    "prompt": "Talk about a time when you cooked a meal for a large group.",
+    "bulletPoints": [
+      "What happened during the cooking process.",
+      "How you felt about preparing the meal and serving it to your family.",
+      "What you learned from the experience about cooking or hosting."
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-09",
+    "scenario": "We all face fears and challenges in our lives. Overcoming these can lead to personal growth.",
+    "prompt": "Talk about a time when you overcame a fear or challenge.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-10",
+    "scenario": "While traveling in a new city, you relied on public transportation to get around.",
+    "prompt": "Talk about a time when you used public transportation and had a memorable experience.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-11",
+    "scenario": "During my time studying abroad, I encountered several language barriers that led to misunderstandings.",
+    "prompt": "Talk about a time when you had a misunderstanding due to language.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-12",
+    "scenario": "Volunteering can be a rewarding and impactful way to give back to your community.",
+    "prompt": "Talk about a time when you volunteered in your community.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-13",
+    "scenario": "You found yourself in a situation where you had to decide quickly to avoid a negative outcome.",
+    "prompt": "Talk about a time when you had to make a quick important decision.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-14",
+    "scenario": "You attended a major sporting event where your favorite team was playing.",
+    "prompt": "Talk about a time when you experienced a thrilling moment at a sporting event.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-15",
+    "scenario": "You were going through a challenging time when you received some surprising good news.",
+    "prompt": "Talk about a time when you received unexpected good news.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-16",
+    "scenario": "During my time working at a retail store, I encountered a particularly challenging customer.",
+    "prompt": "Talk about a time when you dealt with a difficult customer.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-17",
+    "scenario": "You were in a situation where you faced a problem that required immediate assistance.",
+    "prompt": "Talk about a time when technology saved you from a problem.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-18",
+    "scenario": "Reflect on an outdoor adventure that stands out in your memory.",
+    "prompt": "Talk about a time when you went hiking in the mountains.",
+    "bulletPoints": [
+      "What happened during your hike",
+      "How you felt throughout the experience",
+      "What you learned from the adventure"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-19",
+    "scenario": "You moved to a new city for a job opportunity.",
+    "prompt": "Talk about a time when you had to adapt to a new environment.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-20",
+    "scenario": "Reflect on a moment in your life where you faced a difficult situation that changed how you view things.",
+    "prompt": "Talk about a time when you encountered a challenge that changed your perspective on life.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-21",
+    "scenario": "During my time at university, I witnessed a classmate being treated unfairly by a professor.",
+    "prompt": "Talk about a time when you stood up for someone you believed in.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-22",
+    "scenario": "You had a birthday celebration that stood out for its uniqueness and joy.",
+    "prompt": "Talk about a time when you celebrated a memorable birthday with your friends and family.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-23",
+    "scenario": "During a group project in college, I was assigned to work with a classmate who had a very different background and approach to teamwork.",
+    "prompt": "Talk about a time when you had to work with someone very different from you.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-24",
+    "scenario": "Last summer, a severe heatwave affected our city for several weeks, leading to many changes in our daily routines.",
+    "prompt": "Talk about a time when you experienced a heatwave.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-25",
+    "scenario": "You were at a friend's dinner party and were offered a dish you had never tried before.",
+    "prompt": "Talk about a time when you tried a food you had never eaten before.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-26",
+    "scenario": "During the winter holidays, people often spend time with family and friends, creating lasting memories.",
+    "prompt": "Talk about a time when you celebrated the holidays with your loved ones.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-27",
+    "scenario": "You accidentally made a mistake at work that affected a colleague's project.",
+    "prompt": "Talk about a time when you had to apologize for a mistake.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-28",
+    "scenario": "Reflect on a challenging situation that required you to wait for an outcome or resolution.",
+    "prompt": "Talk about a time when you had to wait patiently for something important.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt during the waiting period",
+      "What you eventually learned about patience"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-29",
+    "scenario": "You haven't seen your childhood friend in years, and you unexpectedly run into them at a local event.",
+    "prompt": "Talk about a time when you reconnected with an old friend.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  },
+  {
+    "id": "task2-30",
+    "scenario": "You attended a concert of your favorite band or artist that left a lasting impression on you.",
+    "prompt": "Talk about a time when you attended a concert of your favorite band or artist.",
+    "bulletPoints": [
+      "What happened",
+      "How you felt",
+      "What you learned"
+    ],
+    "context": "Think of a specific experience."
+  }
+]

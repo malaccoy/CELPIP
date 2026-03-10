@@ -1,0 +1,3417 @@
+[
+  {
+    "id": "part1-01",
+    "title": "Fixing the Office Printer",
+    "context": "Listen to the conversation between two coworkers discussing how to resolve the issue with the office printer.",
+    "clips": [
+      {
+        "audioFile": "part1-01-clip1.mp3",
+        "duration": 18,
+        "passage": "Man: Have you noticed that the printer has been jamming frequently lately?\\nWoman: Yes, it seems like every time I try to print something, it gets stuck.\\nMan: Do you think it's a paper issue or something more serious?\\nWoman: I’m not sure, maybe we should check the paper types being used.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are the coworkers discussing?",
+            "options": [
+              "Printer jamming",
+              "Computer issues",
+              "Internet connectivity",
+              "Office supplies"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What do they suspect could be causing the problem?",
+            "options": [
+              "The printer model",
+              "Paper types",
+              "Low ink levels",
+              "Too many users"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the woman suggest they check?",
+            "options": [
+              "User manuals",
+              "Ink cartridge",
+              "Paper types",
+              "Printer warranty"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-01-clip2.mp3",
+        "duration": 21.312,
+        "passage": "Woman: We could try using a different type of paper to see if that helps.\\nMan: That’s a good idea. What about cleaning the printer rollers?\\nWoman: Yes, that might work too. Should we check the printer settings as well?\\nMan: Definitely, maybe the settings need adjusting for the type of paper we’re using.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Using different paper",
+              "Resetting the printer",
+              "Buying a new printer",
+              "Turning it off"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man want to do next?",
+            "options": [
+              "Check printer compatibility",
+              "Clean the printer rollers",
+              "Change ink cartridges",
+              "Update software"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the woman propose checking?",
+            "options": [
+              "User manual",
+              "Printer settings",
+              "Network connection",
+              "Warranty details"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-01-clip3.mp3",
+        "duration": 16.488,
+        "passage": "Man: Let’s try the paper change first and clean the rollers after that.\\nWoman: Sounds like a plan! Should we inform IT if it doesn’t work?\\nMan: Yes, that would be wise. Let's tackle this together and see how it goes.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is their final decision regarding the printer?",
+            "options": [
+              "Change the paper first",
+              "Buy a new printer",
+              "Call IT immediately",
+              "Ignore the problem"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What will they do if their solution doesn't work?",
+            "options": [
+              "Try again later",
+              "Inform IT",
+              "Buy replacement parts",
+              "Wait for a new printer"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-02",
+    "title": "Dealing with a Leaking Kitchen Faucet",
+    "context": "Listen to the conversation between the couple discussing their leaking kitchen faucet.",
+    "clips": [
+      {
+        "audioFile": "part1-02-clip1.mp3",
+        "duration": 13.8,
+        "passage": "Man: I noticed the kitchen faucet has started leaking again.\nWoman: Yes, it seems to be getting worse. What should we do about it?\nMan: Should we try to fix it ourselves or call a plumber?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What problem do they discuss?",
+            "options": [
+              "A leaking faucet",
+              "A broken dishwasher",
+              "A clogged sink",
+              "A leaky roof"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest?",
+            "options": [
+              "Fix it ourselves",
+              "Call a plumber",
+              "Wait for it to stop",
+              "Ignore it"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "How does the man feel about the leak?",
+            "options": [
+              "It's minor",
+              "It's getting worse",
+              "It's not an issue",
+              "It's a major emergency"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-02-clip2.mp3",
+        "duration": 12.12,
+        "passage": "Woman: I think we should look up some DIY methods online.\nMan: That could work, but do we have the right tools?\nWoman: If we don't, we can always just go buy what we need.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "Calling a plumber",
+              "Looking up DIY methods",
+              "Ignoring the leak",
+              "Using duct tape"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What concern does the man express?",
+            "options": [
+              "Not having tools",
+              "Not having time",
+              "Not knowing how",
+              "Not wanting to spend money"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the woman suggest if they lack tools?",
+            "options": [
+              "Borrowing from a friend",
+              "Going to buy tools",
+              "Hiring a plumber",
+              "Giving up"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-02-clip3.mp3",
+        "duration": 12.264,
+        "passage": "Man: Alright, let’s try to fix it ourselves first.\nWoman: Sounds good! We can tackle it this weekend.\nMan: Perfect, then we’ll know if we need a plumber.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they reach?",
+            "options": [
+              "Fix it themselves",
+              "Call a plumber",
+              "Wait to see if it gets worse",
+              "Move to another house"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to fix it?",
+            "options": [
+              "Tonight",
+              "This weekend",
+              "Next month",
+              "Never"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-03",
+    "title": "Splitting Grocery Expenses",
+    "context": "Listen to a conversation between two roommates discussing how to split their grocery expenses.",
+    "clips": [
+      {
+        "audioFile": "part1-03-clip1.mp3",
+        "duration": 21.456,
+        "passage": "Man: Hey, we need to talk about our grocery expenses.\nWoman: I agree. It feels like I’m spending a lot more than you are.\nMan: Right? How can we make it fair for both of us?\nWoman: Should we keep track of our receipts?\nMan: Or maybe we can simply divide the total amount?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are the roommates discussing?",
+            "options": [
+              "A: Grocery expenses",
+              "B: Rent payment",
+              "C: Car maintenance",
+              "D: Utility bills"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest?",
+            "options": [
+              "A: Divide the total amount",
+              "B: Keep track of receipts",
+              "C: Shop separately",
+              "D: Buy only essentials"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What solution does the man mention?",
+            "options": [
+              "A: Keep all receipts",
+              "B: Go grocery shopping together",
+              "C: Split grocery expenses evenly",
+              "D: Discuss with another roommate"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-03-clip2.mp3",
+        "duration": 21.24,
+        "passage": "Woman: Perhaps we can start by writing down what we each buy?\nMan: That sounds good! Should we set a budget each week?\nWoman: Yes, and if we go over, we can discuss it together.\nMan: Should we set a shopping schedule too?\nWoman: Definitely! That will help us plan better.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What strategy does the woman propose?",
+            "options": [
+              "A: Write down purchases",
+              "B: Go shopping daily",
+              "C: Buy in bulk",
+              "D: Share a credit card"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What do they agree to address if they go over budget?",
+            "options": [
+              "A: Ignore it",
+              "B: Discuss it together",
+              "C: Reallocate funds",
+              "D: Ask for help"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest they set?",
+            "options": [
+              "A: A shopping list",
+              "B: A shopping schedule",
+              "C: A meal plan",
+              "D: A cooking night"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-03-clip3.mp3",
+        "duration": 14.88,
+        "passage": "Man: So we’ll keep track of expenses and shop together?\nWoman: Yes! That sounds fair to both of us.\nMan: Great! When should we start?\nWoman: How about next week?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do the roommates make?",
+            "options": [
+              "A: Keep track of expenses",
+              "B: Shop separately",
+              "C: Change the menu",
+              "D: Avoid shopping"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to start this new approach?",
+            "options": [
+              "A: Immediately",
+              "B: Next week",
+              "C: This weekend",
+              "D: Next month"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-04",
+    "title": "Fallen Tree Blocking Driveway",
+    "context": "Listen to the conversation between two neighbours discussing a fallen tree that is blocking their shared driveway.",
+    "clips": [
+      {
+        "audioFile": "part1-04-clip1.mp3",
+        "duration": 22.872,
+        "passage": "Man: Hey, did you see that tree that fell in the driveway? It’s completely blocking us in.\nWoman: Yes, I noticed it this morning! How did it even fall?\nMan: I think it was the strong winds last night. What are we going to do about it?\nWoman: Should we call someone to remove it, or can we manage it ourselves?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem discussed?",
+            "options": [
+              "A fallen tree",
+              "A broken fence",
+              "A flooded basement",
+              "A lost pet"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What caused the tree to fall?",
+            "options": [
+              "Heavy rain",
+              "Strong winds",
+              "Insect damage",
+              "Old age"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What are the neighbours considering?",
+            "options": [
+              "Removing the tree",
+              "Building a new driveway",
+              "Planting new trees",
+              "Calling the city"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-04-clip2.mp3",
+        "duration": 25.392,
+        "passage": "Woman: I think we should call a tree removal service. They have the right tools for the job.\nMan: That sounds sensible, but it might take a while for them to arrive. Should we try to clear some branches ourselves in the meantime?\nWoman: That could help. Do you have any tools we can use?\nMan: Yes, I have a chainsaw and some gloves. Do you want to use them?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Call a tree removal service",
+              "Clear branches themselves",
+              "Wait for the wind to die down",
+              "Ask a friend for help"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man have to help with the tree?",
+            "options": [
+              "A shovel",
+              "A chainsaw",
+              "An axe",
+              "A rake"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does he want to do with the tools?",
+            "options": [
+              "Clear the driveway",
+              "Remove the whole tree",
+              "Trim nearby branches",
+              "Build a fence"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-04-clip3.mp3",
+        "duration": 17.736,
+        "passage": "Man: Alright, let’s call the service first and then see what we can do ourselves as well.\nWoman: Agreed, that way we can handle it more quickly.\nMan: Perfect! When should we make the call?\nWoman: Let’s do it right now before it gets too late.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they reach?",
+            "options": [
+              "To call a removal service",
+              "To wait until tomorrow",
+              "To ignore the problem",
+              "To ask for help from other neighbours"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to make the call?",
+            "options": [
+              "Later today",
+              "Tomorrow morning",
+              "Right now",
+              "Next week"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-05",
+    "title": "Returning a Defective Product",
+    "context": "Listen to the dialogue between two friends discussing how to return a defective product to the store.",
+    "clips": [
+      {
+        "audioFile": "part1-05-clip1.mp3",
+        "duration": 21.72,
+        "passage": "Man: Hey, I noticed that the blender we bought is not working properly.  \nWoman: Really? What seems to be the problem with it?  \nMan: It won't turn on at all. Should we take it back?  \nWoman: Yes, but do you have the receipt?  \nMan: I think so. Where should we go first?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main issue they are discussing?",
+            "options": [
+              "A defective blender",
+              "A broken phone",
+              "A damaged TV",
+              "An expired warranty"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman ask about?",
+            "options": [
+              "The warranty details",
+              "The store’s location",
+              "The customer service",
+              "The receipt"
+            ],
+            "correct": 3
+          },
+          {
+            "id": 3,
+            "question": "What does the man need to check?",
+            "options": [
+              "Their bank statement",
+              "The product manual",
+              "The receipt",
+              "The store hours"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-05-clip2.mp3",
+        "duration": 21.648,
+        "passage": "Woman: We could either go to the store today or call customer service.  \nMan: I prefer going to the store so we can explain in person.  \nWoman: That makes sense. Do you remember the store's return policy?  \nMan: Yes, they have a 30-day return policy, which is good.  \nWoman: Should we bring the box too?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What are they considering doing?",
+            "options": [
+              "Going to the store",
+              "Keeping the blender",
+              "Throwing it away",
+              "Buying a new one"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "Why does the man prefer going to the store?",
+            "options": [
+              "To get a refund",
+              "To explain the issue in person",
+              "To buy a new blender",
+              "To ask about warranty"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What is the return policy mentioned?",
+            "options": [
+              "30 days",
+              "60 days",
+              "14 days",
+              "No returns"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-05-clip3.mp3",
+        "duration": 11.352,
+        "passage": "Man: Let's go to the store this afternoon then.  \nWoman: Great, I’ll grab the box and receipt.  \nMan: Perfect! Should we go together by bus?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "When are they planning to go to the store?",
+            "options": [
+              "This morning",
+              "This afternoon",
+              "Tomorrow",
+              "Next week"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "How will they get to the store?",
+            "options": [
+              "By bus",
+              "By car",
+              "Walking",
+              "By taxi"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-06",
+    "title": "Scheduling Conflict in the Meeting Room",
+    "context": "Listen to the dialogues between two coworkers as they discuss a scheduling conflict for the meeting room.",
+    "clips": [
+      {
+        "audioFile": "part1-06-clip1.mp3",
+        "duration": 19.44,
+        "passage": "Man: Hey, I noticed the meeting room is booked at the same time for two different meetings next week.\nWoman: Really? That's a problem. Which meetings are conflicting?\nMan: We have the team presentation and the client update scheduled simultaneously. What should we do?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are they discussing?",
+            "options": [
+              "Scheduling conflict",
+              "Room maintenance",
+              "Office supplies",
+              "Project deadlines"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How many meetings are conflicting?",
+            "options": [
+              "One",
+              "Two",
+              "Three",
+              "Four"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "When is the conflict happening?",
+            "options": [
+              "Next week",
+              "This week",
+              "Tomorrow",
+              "Next month"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-06-clip2.mp3",
+        "duration": 18.6,
+        "passage": "Woman: We could ask the team to shift their presentation to a later time.\nMan: That's a good idea! Or we could let the clients know about the conflict and reschedule their meeting.\nWoman: True, but we need to make sure everyone is on board with the change. What do you think?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solutions do they consider?",
+            "options": [
+              "Shift the presentation",
+              "Cancel the meetings",
+              "Use a different room",
+              "Ignore the conflict"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "Do they agree on a solution immediately?",
+            "options": [
+              "Yes",
+              "No",
+              "Maybe",
+              "Not discussed"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "Who proposed shifting the presentation?",
+            "options": [
+              "Man",
+              "Woman",
+              "Neither",
+              "Both"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-06-clip3.mp3",
+        "duration": 17.784,
+        "passage": "Man: Let’s send an email to the team first about the presentation reschedule.\nWoman: Agreed! I’ll draft the message. When do you think we should aim for?\nMan: How about Thursday afternoon? That gives everyone time to adjust.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What will they do first?",
+            "options": [
+              "Send an email",
+              "Meet in person",
+              "Call clients",
+              "Book another room"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to reschedule the presentation?",
+            "options": [
+              "Wednesday morning",
+              "Thursday afternoon",
+              "Friday evening",
+              "Next week"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-07",
+    "title": "Getting to the Airport",
+    "context": "Listen to the conversation between a couple as they deal with their cancelled train to the airport.",
+    "clips": [
+      {
+        "audioFile": "part1-07-clip1.mp3",
+        "duration": 18.936,
+        "passage": "Man: I just checked our train schedule, and it's cancelled! What do we do now?\nWoman: That's really frustrating! Do you think we should check for a bus?\nMan: I guess we could, but how quickly can we get to the bus station from here? What if we miss our flight?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the problem the couple is facing?",
+            "options": [
+              "The train is cancelled",
+              "They missed the train",
+              "The bus is full",
+              "Their flight is delayed"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-07-clip2.mp3",
+        "duration": 20.016,
+        "passage": "Woman: Let's look up the bus schedule and see if there’s a soon one available.\nMan: That's a good idea. What about getting a taxi instead? Do you think it would be faster?\nWoman: A taxi could be quicker, but are they available this time of day? We should check online for options.",
+        "questions": [
+          {
+            "id": 2,
+            "question": "What solution do they consider for getting to the airport?",
+            "options": [
+              "Taking a bus",
+              "Walking to the airport",
+              "Waiting for the next train",
+              "Riding bicycles"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-07-clip3.mp3",
+        "duration": 16.344,
+        "passage": "Man: Okay, I found a bus that leaves in twenty minutes. Do you want to go with that option?\nWoman: Yes, that sounds good! Should we hurry to make sure we catch it?\nMan: Absolutely, let's grab our bags and go!",
+        "questions": [
+          {
+            "id": 3,
+            "question": "What decision do they ultimately make?",
+            "options": [
+              "Take a bus",
+              "Call a friend for a ride",
+              "Wait for the next train",
+              "Get a taxi"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-08",
+    "title": "Parent-Teacher Discussion on Math Struggles",
+    "context": "Listen to a conversation between a parent and a teacher discussing a child's difficulties in math.",
+    "clips": [
+      {
+        "audioFile": "part1-08-clip1.mp3",
+        "duration": 21.912,
+        "passage": "Man: I've noticed my son has been struggling with math lately. \nWoman: Yes, I've seen that too. He seems confused during lessons. \nMan: What do you think is causing this issue? \nWoman: It might be his understanding of the basic concepts. \nMan: How can we find out what he specifically struggles with?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main concern of the father?",
+            "options": [
+              "His son is struggling with math",
+              "His son is not doing homework",
+              "His son dislikes school",
+              "His son is late for class"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the teacher think is the issue?",
+            "options": [
+              "His reading skills",
+              "His understanding of basic concepts",
+              "His social interactions",
+              "His attention span"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the father want to know?",
+            "options": [
+              "Why his son is tired",
+              "What his son struggles with",
+              "If his son needs a tutor",
+              "When parent-teacher meetings occur"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-08-clip2.mp3",
+        "duration": 28.008,
+        "passage": "Woman: We could consider extra tutoring to help him catch up. \nMan: That sounds good! Do you have suggestions for local tutors? \nWoman: Yes, I can recommend a few. We could also try some online resources. \nMan: What about setting up a consistent study schedule at home? \nWoman: That could help him stay organized and focused. \nMan: Would you be available to discuss this with him?",
+        "questions": [
+          {
+            "id": 4,
+            "question": "What solution does the teacher suggest?",
+            "options": [
+              "Group study sessions",
+              "Extra tutoring",
+              "More homework",
+              "Changing classes"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 5,
+            "question": "What does the father propose for study habits?",
+            "options": [
+              "Reading more books",
+              "Setting a consistent study schedule",
+              "Joining a sports team",
+              "Attending weekly lessons"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 6,
+            "question": "What type of resources does the teacher mention?",
+            "options": [
+              "Sports clubs",
+              "Local tutors",
+              "Online resources",
+              "Library books"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-08-clip3.mp3",
+        "duration": 16.104,
+        "passage": "Woman: I think we have a solid plan now. \nMan: Yes, I feel more confident about it. \nWoman: Should we schedule a follow-up meeting in a month? \nMan: That sounds perfect. Let’s touch base then to see how he’s progressing.",
+        "questions": [
+          {
+            "id": 7,
+            "question": "What do they agree on regarding their plan?",
+            "options": [
+              "It needs more revisions",
+              "It is solid",
+              "It's too complicated",
+              "It requires more tutors"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 8,
+            "question": "When do they plan to meet again?",
+            "options": [
+              "In two weeks",
+              "In a month",
+              "During the holidays",
+              "Next semester"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-09",
+    "title": "Handling a Double-Booked Airbnb in Halifax",
+    "context": "Listen to the following conversations about a friend's double-booked Airbnb situation and answer the questions.",
+    "clips": [
+      {
+        "audioFile": "part1-09-clip1.mp3",
+        "duration": 20.28,
+        "passage": "Man: I just found out our Airbnb in Halifax is double-booked for the weekend. \nWoman: Oh no! What are we going to do? \nMan: Should we try to contact the host for a solution? \nWoman: Or is it better to find a different place altogether? \nMan: Do you think we'll get a refund for this?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem discussed?",
+            "options": [
+              "Double-booked Airbnb",
+              "Transport issues",
+              "Unplanned expenses",
+              "Weather problems"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What location is mentioned in the dialogue?",
+            "options": [
+              "Toronto",
+              "Vancouver",
+              "Halifax",
+              "Montreal"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What is one possible action they consider?",
+            "options": [
+              "Ignoring the issue",
+              "Contacting the host",
+              "Canceling the trip",
+              "Changing their plans completely"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-09-clip2.mp3",
+        "duration": 21.72,
+        "passage": "Woman: I think contacting the host is a start. They might have a solution. \nMan: That's true, but what if they don’t respond in time? \nWoman: We could search for nearby Airbnbs and book another one. \nMan: Should we also look at hotels as an option? \nWoman: It might be more expensive, but it's worth considering.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Search for a new Airbnb",
+              "Contact the host",
+              "Book a hotel",
+              "Cancel the trip"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What is a concern the man has?",
+            "options": [
+              "Finding a good restaurant",
+              "The host's response time",
+              "Weather conditions",
+              "Traveling costs"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest as an alternative?",
+            "options": [
+              "Looking at hotels",
+              "Staying at home",
+              "Visiting friends",
+              "Traveling to a different city"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-09-clip3.mp3",
+        "duration": 15.936,
+        "passage": "Man: So, what do you think we should do in the end? \nWoman: I believe we should contact the host first. \nMan: Then if that doesn’t work, we can search for another place. \nWoman: Agreed! Let’s make those calls right away.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is their final decision?",
+            "options": [
+              "Contact the host first",
+              "Cancel the trip completely",
+              "Wait for the host to respond",
+              "Look for a hotel immediately"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is their immediate next action?",
+            "options": [
+              "Make calls to the host",
+              "Check hotel prices",
+              "Pack their bags",
+              "Discuss plans with friends"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-10",
+    "title": "Covering Shifts During Colleague's Illness",
+    "context": "Listen to the conversation between coworkers discussing how to cover shifts during their colleague's illness.",
+    "clips": [
+      {
+        "audioFile": "part1-10-clip1.mp3",
+        "duration": 17.88,
+        "passage": "Man: Hey, have you heard that Mike is sick and won't be able to work for a couple of weeks?\nWoman: Yes, I heard. We need to figure out how to cover his shifts.\nMan: It’s going to be tough since he worked evenings. Who do you think can take over those hours?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem discussed?",
+            "options": [
+              "Covering shifts for Mike",
+              "Finding a new employee",
+              "Planning a holiday",
+              "Scheduling meetings"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How long will Mike be absent?",
+            "options": [
+              "A few days",
+              "A couple of weeks",
+              "A month",
+              "Indefinitely"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What type of shifts did Mike work?",
+            "options": [
+              "Morning shifts",
+              "Evening shifts",
+              "Night shifts",
+              "Weekend shifts"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-10-clip2.mp3",
+        "duration": 19.224,
+        "passage": "Woman: I think Jessica might be able to help. She has experience with evening shifts.\nMan: That’s a good point. We could also consider swapping shifts with some of our other coworkers.\nWoman: Right! But we need to make sure it doesn't overload anyone else.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "Who does the woman suggest to cover Mike's shifts?",
+            "options": [
+              "Jessica",
+              "Mark",
+              "Tom",
+              "Alice"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the concern about switching shifts?",
+            "options": [
+              "Overloading other coworkers",
+              "Creating confusion",
+              "Scheduling conflicts",
+              "Vacation times"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What type of shifts is Jessica experienced with?",
+            "options": [
+              "Morning",
+              "Afternoon",
+              "Evening",
+              "Night"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-10-clip3.mp3",
+        "duration": 13.992,
+        "passage": "Man: So, let’s reach out to Jessica and see if she can take those shifts.\nWoman: I’ll also check with the others about possible shift swaps.\nMan: Great! Let’s finalize it by the end of the day.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What will they do with Jessica?",
+            "options": [
+              "Ask her to cover shifts",
+              "Schedule a meeting",
+              "Offer her a promotion",
+              "Discuss workload"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is their deadline for finalizing the plan?",
+            "options": [
+              "By the end of the week",
+              "By the end of the month",
+              "By the end of the day",
+              "By next Monday"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-11",
+    "title": "Dealing with a Noisy Neighbour",
+    "context": "Listen to this couple discuss their noisy upstairs neighbour and answer the questions that follow.",
+    "clips": [
+      {
+        "audioFile": "part1-11-clip1.mp3",
+        "duration": 14.304,
+        "passage": "Man: Have you noticed how loud our upstairs neighbour has been lately?\nWoman: Yes, it's hard to concentrate with all that noise.\nMan: What do you think we should do about it? Should we talk to them directly?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What problem are they discussing?",
+            "options": [
+              "Noisy neighbour",
+              "Late deliveries",
+              "Parking issues",
+              "Lack of plumbing"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How does the woman feel about the noise?",
+            "options": [
+              "It's relaxing.",
+              "It helps her concentrate.",
+              "It's disturbing.",
+              "She doesn't mind."
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest?",
+            "options": [
+              "Ignore the noise.",
+              "Talk to the neighbour.",
+              "Call the building manager.",
+              "Move out."
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-11-clip2.mp3",
+        "duration": 13.992,
+        "passage": "Woman: Maybe we should write a letter instead of talking to them.\nMan: That's a good idea! What should we say in the letter?\nWoman: We could mention the specific times they're noisy and how it affects us.",
+        "questions": [
+          {
+            "id": 4,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "Call the police.",
+              "Write a letter.",
+              "Move to another apartment.",
+              "Talk to the manager."
+            ],
+            "correct": 1
+          },
+          {
+            "id": 5,
+            "question": "What does the man agree is important to include in their message?",
+            "options": [
+              "Compliments about the neighbour.",
+              "The specific times of noise.",
+              "Their own plans for a party.",
+              "Offers to help with moving."
+            ],
+            "correct": 1
+          },
+          {
+            "id": 6,
+            "question": "How does the man feel about the letter approach?",
+            "options": [
+              "He disagrees.",
+              "He thinks it's a bad idea.",
+              "He supports it.",
+              "He thinks it's too formal."
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-11-clip3.mp3",
+        "duration": 7.824,
+        "passage": "Man: So we’ve decided to write that letter, right?\nWoman: Yes, and let's make sure to keep it polite but firm.",
+        "questions": [
+          {
+            "id": 7,
+            "question": "What decision did they reach?",
+            "options": [
+              "To call the police.",
+              "To write a letter.",
+              "To ignore the noise.",
+              "To confront the neighbour directly."
+            ],
+            "correct": 1
+          },
+          {
+            "id": 8,
+            "question": "What tone will they use in the letter?",
+            "options": [
+              "Friendly and casual.",
+              "Polite but firm.",
+              "Aggressive and demanding.",
+              "Humorous and light-hearted."
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-12",
+    "title": "Fixing the Broken Heating System",
+    "context": "Listen to the dialogue between two roommates discussing their heating issue and how to resolve it.",
+    "clips": [
+      {
+        "audioFile": "part1-12-clip1.mp3",
+        "duration": 19.464,
+        "passage": "Man: Hey, have you noticed that the heating system isn't working properly? \nWoman: Yes, it's been cold in here for a couple of days. \nMan: Do you think we should call the landlord, or is it something we can fix ourselves? \nWoman: I’m not sure. Have you looked at the thermostat at all?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are the roommates discussing?",
+            "options": [
+              "Broken heating system",
+              "Leaky faucet",
+              "Power outage",
+              "Slow internet"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the woman's suggestion?",
+            "options": [
+              "Call the landlord",
+              "Fix it themselves",
+              "Ignore it",
+              "Buy a space heater"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "How long has the heating issue been happening?",
+            "options": [
+              "A few weeks",
+              "A couple of days",
+              "A month",
+              "Not mentioned"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-12-clip2.mp3",
+        "duration": 22.704,
+        "passage": "Woman: Maybe we should check the radiator first to see if it’s clogged? \nMan: That sounds like a good idea. Should we also look into what it costs to hire a technician? \nWoman: Yes, but I’d rather try fixing it ourselves first—it's probably a simple problem. \nMan: Alright, let's see if we can find some online tutorials to guide us.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Check the radiator",
+              "Call a technician",
+              "Ignore the problem",
+              "Leave the house"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man propose to do next?",
+            "options": [
+              "Read online tutorials",
+              "Buy a new heater",
+              "Call the landlord",
+              "Go to bed"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What is their main concern about hiring a technician?",
+            "options": [
+              "Cost",
+              "Time",
+              "Availability",
+              "Trustworthiness"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-12-clip3.mp3",
+        "duration": 21.48,
+        "passage": "Man: After checking, it looks like it might just need bleeding. \nWoman: Great! So, do you want to try that first before calling anyone? \nMan: Yes, let’s do that. I can grab the tools we need from the garage. \nWoman: Perfect! I’ll check online for some instructions.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What do the roommates decide to do first?",
+            "options": [
+              "Call a technician",
+              "Try bleeding the radiator",
+              "Ignore the issue",
+              "Purchase a new heater"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "Who will grab the necessary tools?",
+            "options": [
+              "The woman",
+              "The man",
+              "Neither",
+              "The landlord"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-13",
+    "title": "Lost Luggage at Vancouver Airport",
+    "context": "Listen to the dialogues about friends dealing with lost luggage at the airport.",
+    "clips": [
+      {
+        "audioFile": "part1-13-clip1.mp3",
+        "duration": 22.344,
+        "passage": "Man: I can't believe our luggage is lost at Vancouver Airport! What should we do now?\nWoman: I know, it's so frustrating! Did you check the baggage claim area?\nMan: Yes, but there's no sign of it. How can we find out where it is?\nWoman: Maybe we should ask an airline representative for help.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the man's main concern?",
+            "options": [
+              "Their luggage is lost",
+              "They missed their flight",
+              "They can't find a hotel",
+              "They need to rent a car"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest checking?",
+            "options": [
+              "The customs area",
+              "The baggage claim area",
+              "The lost and found",
+              "The rental car desk"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "Who do they consider asking for assistance?",
+            "options": [
+              "A fellow traveler",
+              "An airline representative",
+              "A customs officer",
+              "A baggage handler"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-13-clip2.mp3",
+        "duration": 19.848,
+        "passage": "Woman: So, what should we do first?\nMan: We could file a report with the airline. What do you think?\nWoman: That's a good idea. Should we both go together?\nMan: Yes, let's go to the customer service desk. Do you have the flight details handy?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What does the man suggest doing first?",
+            "options": [
+              "Going to the hotel",
+              "Filing a report with the airline",
+              "Buying new clothes",
+              "Calling their friends"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman think about going together?",
+            "options": [
+              "It's not necessary",
+              "It's a bad idea",
+              "It's a good idea",
+              "They should split up"
+            ],
+            "correct": 2
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-13-clip3.mp3",
+        "duration": 15.24,
+        "passage": "Man: We finally filed the report with the airline!\nWoman: Yes, now we just have to wait for updates. Should we grab a coffee while we wait?\nMan: Great idea! Where should we go for coffee?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What did they just do?",
+            "options": [
+              "Boarded their flight",
+              "Filed a report with the airline",
+              "Left the airport",
+              "Found their luggage"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest while they wait?",
+            "options": [
+              "Shopping",
+              "Grabbing a coffee",
+              "Going to the lounge",
+              "Checking their emails"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-14",
+    "title": "Handling a Missed Project Deadline",
+    "context": "Listen to the conversations between two coworkers discussing a missed project deadline and how to resolve it.",
+    "clips": [
+      {
+        "audioFile": "part1-14-clip1.mp3",
+        "duration": 19.056,
+        "passage": "Man: It's concerning that we missed the project deadline. What happened? \nWoman: I believe we underestimated the time needed for revisions. \nMan: Do you think we need to discuss this with the manager? \nWoman: Yes, we should find out how to proceed without affecting our reputation.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main issue being discussed?",
+            "options": [
+              "A missed project deadline",
+              "Budget cuts",
+              "Team morale",
+              "New client contracts"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest about their planning?",
+            "options": [
+              "They overestimated the time",
+              "They underestimated the time",
+              "They followed the plan perfectly",
+              "They should ignore the deadline"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man want to do about the issue?",
+            "options": [
+              "Speak with the manager",
+              "Change the project entirely",
+              "Ignore the deadline",
+              "Take a break"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-14-clip2.mp3",
+        "duration": 19.416,
+        "passage": "Woman: So how can we fix this? \nMan: I think we should prioritize the most critical tasks first. \nWoman: That makes sense. What if we set up a meeting with the team? \nMan: Great idea! We can brainstorm ideas and ensure everyone is on the same page.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the man propose?",
+            "options": [
+              "Delay the project further",
+              "Prioritize critical tasks",
+              "Start a new project",
+              "Consult another team"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest?",
+            "options": [
+              "Having a team meeting",
+              "Ignoring the issue",
+              "Working overtime",
+              "Reassigning tasks"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What is their goal with the meeting?",
+            "options": [
+              "To discuss personal issues",
+              "To brainstorm solutions",
+              "To replace team members",
+              "To cancel the project"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-14-clip3.mp3",
+        "duration": 18.816,
+        "passage": "Man: So, we agree, right? A team meeting is the best course of action? \nWoman: Absolutely! We need to get everyone involved. \nMan: I'll schedule it for tomorrow. \nWoman: Perfect! Let's hope we can resolve this quickly.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they reach?",
+            "options": [
+              "To cancel the project",
+              "To work alone",
+              "To have a team meeting",
+              "To inform the manager only"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to hold the meeting?",
+            "options": [
+              "Today",
+              "Tomorrow",
+              "Next week",
+              "Next month"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-15",
+    "title": "Planning Childcare during School Closure",
+    "context": "Listen to the conversation between the couple as they discuss how to manage childcare during the school closure.",
+    "clips": [
+      {
+        "audioFile": "part1-15-clip1.mp3",
+        "duration": 20.04,
+        "passage": "Man: I just heard that the school will be closed for the next two weeks. What are we going to do about the kids?\nWoman: I know, it's a bit overwhelming. Should we take time off work or find someone to help?\nMan: That’s the question. Do we have anyone reliable we can ask for help?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main issue discussed?",
+            "options": [
+              "School closure",
+              "Vacation plans",
+              "Work deadlines",
+              "Grocery shopping"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What are they considering for childcare?",
+            "options": [
+              "Taking time off work",
+              "Hiring a nanny",
+              "Sending them to camp",
+              "Doing nothing"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "Who are they thinking of asking for help?",
+            "options": [
+              "A neighbor",
+              "A family member",
+              "A friend",
+              "Nobody"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-15-clip2.mp3",
+        "duration": 18.456,
+        "passage": "Woman: Maybe we could alternate our work schedules?\nMan: That could work! But what about the days when both of us have meetings?\nWoman: True. Should we look into hiring a babysitter for those days?\nMan: Yes, that sounds like a good backup plan.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Taking turns",
+              "Hiring a tutor",
+              "Moving the kids",
+              "Cancelling meetings"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man think about hiring a babysitter?",
+            "options": [
+              "It's a bad idea",
+              "It's a good backup plan",
+              "It's unnecessary",
+              "It's too expensive"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What is a concern they have?",
+            "options": [
+              "School projects",
+              "Work meetings",
+              "Financial issues",
+              "Health problems"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-15-clip3.mp3",
+        "duration": 14.64,
+        "passage": "Man: So we’ll alternate our schedules and hire a babysitter on those busy days?\nWoman: Exactly, that sounds like a solid plan.\nMan: Great! Let’s start looking for a babysitter online tonight.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they come to?",
+            "options": [
+              "Hiring a tutor",
+              "Finding a babysitter",
+              "Getting a family member",
+              "Not making any plans"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to look for a babysitter?",
+            "options": [
+              "Tomorrow",
+              "Tonight",
+              "Next week",
+              "Never"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-16",
+    "title": "Parking Dispute with Neighbors",
+    "context": "Listen to the dialogue between a man and a woman discussing a parking dispute with their neighbors.",
+    "clips": [
+      {
+        "audioFile": "part1-16-clip1.mp3",
+        "duration": 23.232,
+        "passage": "Man: I can't believe our neighbor parked in front of my driveway again.\nWoman: It's really frustrating. Do you think they realize it's a problem?\nMan: I doubt it. What are we going to do about it?\nWoman: Should we just let it go, or should we talk to them directly?\nMan: Is there a chance they might respond well if we bring it up?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main issue they are discussing?",
+            "options": [
+              "Parking in front of the driveway",
+              "Noise disturbance",
+              "Littering",
+              "Garden maintenance"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How does the woman feel about the situation?",
+            "options": [
+              "Frustrated",
+              "Indifferent",
+              "Excited",
+              "Happy"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What do they consider doing about the situation?",
+            "options": [
+              "Ignoring it",
+              "Talking to the neighbor",
+              "Calling the police",
+              "Moving out"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-16-clip2.mp3",
+        "duration": 26.832,
+        "passage": "Woman: Maybe we should have a friendly chat with them first.\nMan: That sounds reasonable. Should we do it together or separately?\nWoman: Together might be better; it shows we’re united. What about suggesting a designated spot?\nMan: That's a good idea. Do you think they'd agree to it?\nWoman: Hopefully! But we should be prepared for any pushback.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest?",
+            "options": [
+              "Having a friendly chat",
+              "Calling the authorities",
+              "Ignoring the issue",
+              "Moving cars frequently"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the man's concern about approaching the neighbors?",
+            "options": [
+              "It might escalate the situation",
+              "They won't listen",
+              "They might invite them over",
+              "They'll agree immediately"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What alternative do they consider if the neighbors are uncooperative?",
+            "options": [
+              "Giving up completely",
+              "Contacting the property manager",
+              "Reporting them",
+              "Moving to a different area"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-16-clip3.mp3",
+        "duration": 20.808,
+        "passage": "Man: So, we’ll talk to them this weekend.\nWoman: Yes, and stay calm during the conversation.\nMan: If all goes well, we could set up some guidelines.\nWoman: Exactly! It would help everyone feel more comfortable.\nMan: And we might even avoid this problem in the future.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "When do they plan to talk to their neighbors?",
+            "options": [
+              "This weekend",
+              "Next month",
+              "Tomorrow",
+              "Next year"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What do they hope to achieve from the talk?",
+            "options": [
+              "Set guidelines for parking",
+              "Make friends",
+              "Move away",
+              "Change the neighborhood rules"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-17",
+    "title": "Splitting Costs for a Camping Trip",
+    "context": "Listen to the conversation between a man and a woman as they discuss how to split costs for their upcoming camping trip.",
+    "clips": [
+      {
+        "audioFile": "part1-17-clip1.mp3",
+        "duration": 21.984,
+        "passage": "Man: So, we need to figure out how to split the costs for the camping trip.\nWoman: Yes, that’s a good point. How much will the total cost be?\nMan: I think it will be around $400. How many people are going?\nWoman: I believe it's six of us. Should we divide the costs equally?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the total cost of the trip?",
+            "options": [
+              "$400",
+              "$600",
+              "$300",
+              "$500"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How many people are going on the trip?",
+            "options": [
+              "Four",
+              "Five",
+              "Six",
+              "Seven"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What is the proposed method for splitting costs?",
+            "options": [
+              "Equally",
+              "By expenses",
+              "By weight",
+              "By preference"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-17-clip2.mp3",
+        "duration": 19.776,
+        "passage": "Woman: I think splitting it equally is fair. What do you think?\nMan: I agree, but should we also consider who’s bringing supplies?\nWoman: That's true. Maybe we can adjust for that later?\nMan: Good idea! Should we keep a list of who brings what?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What method does the woman suggest for splitting the costs?",
+            "options": [
+              "Unequally",
+              "Equally",
+              "Based on contributions",
+              "Randomly"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the man propose to consider for costs?",
+            "options": [
+              "Travel time",
+              "Who’s bringing supplies",
+              "Weather conditions",
+              "Distance to campsite"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the woman propose for adjustments?",
+            "options": [
+              "To ignore them",
+              "To adjust later",
+              "To make it complicated",
+              "To ask others"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-17-clip3.mp3",
+        "duration": 18.048,
+        "passage": "Man: So if we split the costs equally, each person will pay about $67.\nWoman: Let’s go with that. Should we write it down?\nMan: Yes, that would help us keep track of everything.\nWoman: Great! We’re all set then!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "How much will each person pay?",
+            "options": [
+              "$50",
+              "$67",
+              "$100",
+              "$80"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest about tracking costs?",
+            "options": [
+              "To forget it",
+              "To write it down",
+              "To use an app",
+              "To discuss later"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-18",
+    "title": "Office Internet Issue",
+    "context": "Listen to the dialogues between two coworkers discussing an internet problem in their office.",
+    "clips": [
+      {
+        "audioFile": "part1-18-clip1.mp3",
+        "duration": 19.248,
+        "passage": "Man: Did you notice that the internet is down again? \nWoman: Yes, it’s been a real hassle all morning. \nMan: What do you think is causing the issue this time? \nWoman: I’m not sure, but it seems like the network goes down frequently lately. \nMan: Should we report it to IT?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem the coworkers are discussing?",
+            "options": [
+              "The internet is down",
+              "The printer is broken",
+              "The phone system is down",
+              "The coffee machine is out of order"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How long have they noticed the problem?",
+            "options": [
+              "All morning",
+              "Since last week",
+              "Since yesterday",
+              "Just now"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What do they speculate about the issue?",
+            "options": [
+              "It's a recurring problem",
+              "It's a one-time glitch",
+              "It's due to new software",
+              "It's a hardware issue"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-18-clip2.mp3",
+        "duration": 22.536,
+        "passage": "Woman: I think we should call IT right away. \nMan: That could work, but what if they take too long to respond? \nWoman: We could also try resetting the router ourselves. \nMan: Good idea! But we need to check if anyone else is using the internet first. \nWoman: True, that could help us understand the extent of the issue.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest first?",
+            "options": [
+              "To call IT",
+              "To reset the router",
+              "To ignore the problem",
+              "To ask for a new modem"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man want to check before resetting the router?",
+            "options": [
+              "If anyone else is using the internet",
+              "If the power is on",
+              "If the modem is connected",
+              "If IT has already been contacted"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the woman think about the router reset?",
+            "options": [
+              "It's a good idea",
+              "It's too risky",
+              "It's unnecessary",
+              "It's a last resort"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-18-clip3.mp3",
+        "duration": 21.072,
+        "passage": "Man: After considering our options, let’s call IT first. \nWoman: Agreed. If they don’t respond in an hour, we can try resetting it ourselves. \nMan: Sounds like a plan! Should we send out an email to the team about the situation? \nWoman: Yes, that would keep everyone informed.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they make regarding IT?",
+            "options": [
+              "To call them first",
+              "To wait and see",
+              "To reset the router immediately",
+              "To contact a technician"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What do they plan to do if IT does not respond?",
+            "options": [
+              "Reset the router",
+              "Contact management",
+              "Work from home",
+              "Leave for the day"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-19",
+    "title": "Winter Car Troubles",
+    "context": "Listen to the conversation between a couple as they discuss their car troubles during winter.",
+    "clips": [
+      {
+        "audioFile": "part1-19-clip1.mp3",
+        "duration": 20.616,
+        "passage": "Man: I can't believe the car won't start again this winter.\nWoman: I know, it seems to happen every year. What do you think is the problem?\nMan: Maybe it's the battery. Do we even have jumper cables?\nWoman: I think they’re in the garage. Should we call a mechanic now?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem the couple is discussing?",
+            "options": [
+              "The car won't start",
+              "They need to buy a new car",
+              "The tires are flat",
+              "The heater is broken"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest might be in the garage?",
+            "options": [
+              "The car keys",
+              "The insurance papers",
+              "Jumper cables",
+              "A winter emergency kit"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest as a potential issue?",
+            "options": [
+              "The brakes need repairing",
+              "The battery may be dead",
+              "The engine has problems",
+              "The fuel is empty"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-19-clip2.mp3",
+        "duration": 20.688,
+        "passage": "Woman: We could try jumping the battery before we call anyone.\nMan: That's true. If that doesn’t work, should we take it to a garage?\nWoman: Or we could look for a mobile mechanic. Do you know any nearby?\nMan: I think I’ve seen some ads online. Should we check those out?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is one solution they consider?",
+            "options": [
+              "Buying a new battery",
+              "Jumping the battery",
+              "Driving to a distant garage",
+              "Ignoring the problem"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest as an alternative if jumping the battery fails?",
+            "options": [
+              "They should walk to work",
+              "They should call their friends",
+              "Find a mobile mechanic",
+              "Wait until spring"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What does the man mention they could do online?",
+            "options": [
+              "Order a new car",
+              "Look for mechanic ads",
+              "Check the weather",
+              "Find car insurance"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-19-clip3.mp3",
+        "duration": 19.176,
+        "passage": "Man: I think we should just jump the battery first and see if that works.\nWoman: Agreed! If it doesn’t work, we’ll call that mobile mechanic.\nMan: Sounds like a plan. Do we have time to do that today?\nWoman: Yes, let’s do it before it gets too cold!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they reach about the battery?",
+            "options": [
+              "To replace it immediately",
+              "To jump it first",
+              "To ignore the issue",
+              "To call a tow truck"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "When do they plan to address the car issue?",
+            "options": [
+              "Later tonight",
+              "In the spring",
+              "Before it gets too cold",
+              "Tomorrow morning"
+            ],
+            "correct": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-20",
+    "title": "Roommates and the Broken Washing Machine",
+    "context": "Listen to the conversation between two roommates discussing their broken washing machine.",
+    "clips": [
+      {
+        "audioFile": "part1-20-clip1.mp3",
+        "duration": 21.888,
+        "passage": "Man: Hey, did you notice the washing machine isn't working?  \nWoman: Yes, I tried to use it, but it won't turn on.  \nMan: What do you think we should do about it?  \nWoman: Should we call a repair service or perhaps check for a quick fix ourselves?  \nMan: That's a good point. Do you remember when it stopped working?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are the roommates discussing?",
+            "options": [
+              "The washing machine is broken",
+              "The fridge is leaking",
+              "The oven is malfunctioning",
+              "The TV has no signal"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man suggest they do?",
+            "options": [
+              "Use a different appliance",
+              "Call a repair service",
+              "Check for a quick fix",
+              "Ignore the problem"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the woman say she tried to do?",
+            "options": [
+              "Fix the machine",
+              "Use the machine",
+              "Call for help",
+              "Look for a manual"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-20-clip2.mp3",
+        "duration": 25.536,
+        "passage": "Woman: I guess we could try to find a manual online.  \nMan: That could work! What if we don't find anything useful?  \nWoman: We should definitely have a backup plan. How about scheduling a repair for next week?  \nMan: Sounds reasonable. Should we find out the repair service's hours first?  \nWoman: Yes, that way we know when to call.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman suggest first?",
+            "options": [
+              "Find a manual online",
+              "Call the repair service",
+              "Fix it themselves",
+              "Ignore it for now"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man think they should check next?",
+            "options": [
+              "Repair service hours",
+              "Cost of repairs",
+              "Shopping for a new machine",
+              "Ways to use a laundromat"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the woman think about scheduling a repair?",
+            "options": [
+              "It's a bad idea",
+              "It's reasonable",
+              "They should do it immediately",
+              "They should ask their landlord"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-20-clip3.mp3",
+        "duration": 15.768,
+        "passage": "Man: Alright, let's call the repair service tomorrow morning.  \nWoman: Yes, and we’ll make sure to check their hours first.  \nMan: Great, so we're all set then!  \nWoman: Exactly! Do you want me to make the call?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they come to?",
+            "options": [
+              "To fix it themselves",
+              "To ignore the problem",
+              "To call the repair service",
+              "To buy a new washing machine"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 2,
+            "question": "Who is going to make the call?",
+            "options": [
+              "The man",
+              "The woman",
+              "They'll do it together",
+              "They haven't decided"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-21",
+    "title": "Fixing a Flat Tire",
+    "context": "A conversation between friends trying to fix a flat tire on a rural highway near Sudbury.",
+    "clips": [
+      {
+        "audioFile": "part1-21-clip1.mp3",
+        "duration": 23.784,
+        "passage": "Man: Hey, I think we have a flat tire. Can you check the back tire? \nWoman: Sure, let me take a look. Oh no, it's completely flat! How did this happen? \nMan: I don't know, but we're in the middle of nowhere. What should we do now? \nWoman: Can we call for help, or do we have a spare tire?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What issue are they dealing with?",
+            "options": [
+              "A flat tire",
+              "A broken engine",
+              "Rainy weather",
+              "Darkness"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "Where are they located?",
+            "options": [
+              "In a city",
+              "On a highway",
+              "In a parking lot",
+              "At home"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man ask the woman to do?",
+            "options": [
+              "Drive the car",
+              "Check the back tire",
+              "Look for a gas station",
+              "Call for help"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-21-clip2.mp3",
+        "duration": 21.24,
+        "passage": "Woman: So, what are our options for fixing this? \nMan: We could try changing the tire ourselves. Do we have the tools? \nWoman: I think we do, but I’m not sure how to do it. Should we just call for a tow? \nMan: That could take a while. Maybe we should attempt to fix it first?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution do they consider first?",
+            "options": [
+              "Calling for a tow",
+              "Changing the tire themselves",
+              "Waiting for another car",
+              "Using a pump"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What concern does the woman have?",
+            "options": [
+              "They might run out of gas",
+              "She doesn’t know how to change the tire",
+              "It’s getting dark",
+              "It's too cold outside"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest?",
+            "options": [
+              "Fixing it themselves first",
+              "Waiting for help",
+              "Walking to town",
+              "Buying a new tire"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-21-clip3.mp3",
+        "duration": 18.648,
+        "passage": "Man: I think it's worth trying to change the tire ourselves. \nWoman: Alright, let's do it! Do you remember how to use the jack? \nMan: Yes, I do. If we work together, we can get this done fast. \nWoman: Okay, let’s give it a shot!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they make?",
+            "options": [
+              "To call for a tow",
+              "To fix the tire themselves",
+              "To leave the car and walk",
+              "To wait for someone else"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What does the woman say about teamwork?",
+            "options": [
+              "It will take too long",
+              "It can be done quickly",
+              "It's not necessary",
+              "It won’t work"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-22",
+    "title": "Dealing with a Flooded Basement",
+    "context": "This exercise involves a conversation between coworkers discussing the aftermath of heavy rain that flooded their office basement.",
+    "clips": [
+      {
+        "audioFile": "part1-22-clip1.mp3",
+        "duration": 20.352,
+        "passage": "Man: Have you seen the basement? It’s completely flooded after the rain last night.\nWoman: Yes, I noticed when I went down to get some supplies. What are we going to do about it?\nMan: We need to report it to the building manager right away. Do you think we should check the damage first?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem discussed in this clip?",
+            "options": [
+              "Flooded basement",
+              "Broken computer",
+              "Leaking roof",
+              "Lost supplies"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What did the Woman notice?",
+            "options": [
+              "The supplies are wet",
+              "The basement is flooded",
+              "The lights are off",
+              "The door is locked"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the Man suggest doing first?",
+            "options": [
+              "Check the damage",
+              "Call IT support",
+              "Evacuate the office",
+              "Clean up the water"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-22-clip2.mp3",
+        "duration": 19.872,
+        "passage": "Woman: We could start by moving important documents to a dry area to prevent further damage.\nMan: That’s a good idea. Should we also call a water removal service to help us out?\nWoman: Yes, I think that would be necessary. Maybe get some fans to speed up the drying process too?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What does the Woman suggest doing with important documents?",
+            "options": [
+              "Ignore them",
+              "Burn them",
+              "Move them to a dry area",
+              "Throw them away"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 2,
+            "question": "What service does the Man suggest calling?",
+            "options": [
+              "Repair service",
+              "Water removal service",
+              "Cleaning service",
+              "Security service"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What additional equipment does the Woman mention?",
+            "options": [
+              "Vacuum cleaners",
+              "Fans",
+              "Dehumidifiers",
+              "Air conditioners"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-22-clip3.mp3",
+        "duration": 17.712,
+        "passage": "Man: It sounds like we have a plan. Shall we split up the tasks?\nWoman: Yes, let’s do that. I can handle calling the service and moving documents.\nMan: Perfect, I’ll start getting fans and check with the manager about further help.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What do they agree on?",
+            "options": [
+              "To leave work early",
+              "To split up tasks",
+              "To complain to HR",
+              "To ignore the issue"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "Who will call the service?",
+            "options": [
+              "The Man",
+              "The Woman",
+              "Their manager",
+              "The assistant"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-23",
+    "title": "Overbooked Flight Dilemma",
+    "context": "A couple is trying to figure out what to do when they discover their flight is overbooked.",
+    "clips": [
+      {
+        "audioFile": "part1-23-clip1.mp3",
+        "duration": 17.352,
+        "passage": "Man: I can’t believe our flight is overbooked! What are the chances? \nWoman: I know, it’s so frustrating. What should we do next? \nMan: Should we ask the airline for assistance? Or are there other options available?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the issue the couple is facing?",
+            "options": [
+              "Their flight is overbooked",
+              "They missed their flight",
+              "Their flight was canceled",
+              "They have too much luggage"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the woman's initial reaction to the situation?",
+            "options": [
+              "She is annoyed",
+              "She is excited",
+              "She is indifferent",
+              "She is happy"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest they might do?",
+            "options": [
+              "Ask the airline for assistance",
+              "Take a different flight",
+              "Leave the airport",
+              "Call a taxi"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-23-clip2.mp3",
+        "duration": 12.216,
+        "passage": "Woman: Maybe we could look for alternative flights? \nMan: That sounds good, or we could check for upgrades. \nWoman: True, but we should also find out if they offer any compensation.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "Look for alternative flights",
+              "Wait at the gate",
+              "Contact customer service",
+              "Request a meal voucher"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man think about getting upgrades?",
+            "options": [
+              "It's a good idea",
+              "It's too expensive",
+              "It's too late",
+              "It's not worth it"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "Why does the woman mention compensation?",
+            "options": [
+              "To benefit from the airline",
+              "To get a refund",
+              "To make the flight more enjoyable",
+              "To leave the airport"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-23-clip3.mp3",
+        "duration": 12.84,
+        "passage": "Man: After discussing, let’s see if we can switch to an earlier flight. \nWoman: Yes, and we should make sure to ask about compensation too. \nMan: Agreed, let’s go to the counter now!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do the couple come to?",
+            "options": [
+              "Switch to an earlier flight",
+              "Stay at the airport",
+              "Take a bus",
+              "Cancel their trip"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What do they plan to do next?",
+            "options": [
+              "Go to the counter",
+              "Go home",
+              "Call a friend",
+              "Buy snacks"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-24",
+    "title": "Stopping Raccoons Raiding Garbage",
+    "context": "A conversation between two neighbours about dealing with raccoons.",
+    "clips": [
+      {
+        "audioFile": "part1-24-clip1.mp3",
+        "duration": 24.864,
+        "passage": "Man: Hey, have you noticed how the raccoons keep raiding our garbage every night?\nWoman: Yes, it’s becoming a big problem! I’m tired of cleaning up the mess.\nMan: Exactly! What do you think we should do about it?\nWoman: Should we just put our garbage out earlier?\nMan: That might not work. They could still get to it, right?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem discussed?",
+            "options": [
+              "Raccoons raiding garbage",
+              "Neighbours arguing",
+              "Garbage collection schedule",
+              "Insects in the yard"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the woman's concern about the raccoons?",
+            "options": [
+              "Not enough food for them",
+              "It’s a waste of time cleaning",
+              "They are too cute",
+              "They live nearby"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest as a possible solution?",
+            "options": [
+              "Putting garbage out earlier",
+              "Building a fence",
+              "Chasing them away",
+              "Setting traps"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-24-clip2.mp3",
+        "duration": 18.744,
+        "passage": "Woman: We could try using raccoon-proof bins to secure our garbage.\nMan: That sounds good! Have you seen any that are effective?\nWoman: I heard some bins are designed specifically for raccoons. Should we invest in those?\nMan: Yes, maybe it’s worth it to avoid future messes.\nWoman: Or we could also try adding a light by the garbage to scare them off.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "Using raccoon-proof bins",
+              "Covering the garbage with a tarp",
+              "Keeping the bins in the garage",
+              "Asking for a raccoon removal service"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What additional suggestion does the woman make?",
+            "options": [
+              "Installing a fence",
+              "Adding a light by the garbage",
+              "Installing a motion sensor",
+              "Using a different garbage collection service"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man think about the investing in raccoon-proof bins?",
+            "options": [
+              "It's a waste of money",
+              "It's worth trying to avoid messes",
+              "It's unnecessary",
+              "They are too expensive"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-24-clip3.mp3",
+        "duration": 23.232,
+        "passage": "Man: Let’s agree to buy those raccoon-proof bins this weekend.\nWoman: Sounds good! I’ll check online for local stores that have them.\nMan: Perfect! And let’s not forget to put up the light as well.\nWoman: Yes, that should definitely help.\nMan: Great! We’ll meet again after we set it all up.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they come to?",
+            "options": [
+              "To buy raccoon-proof bins",
+              "To call animal control",
+              "To ignore the problem",
+              "To build a fence"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What will the woman do next?",
+            "options": [
+              "Check online for stores",
+              "Buy regular garbage bins",
+              "Call the city hall",
+              "Ask a friend for advice"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-25",
+    "title": "Handling a Broken Refrigerator",
+    "context": "A conversation between roommates discussing their broken refrigerator.",
+    "clips": [
+      {
+        "audioFile": "part1-25-clip1.mp3",
+        "duration": 18.24,
+        "passage": "Man: Hey, did you notice our refrigerator isn't working?  \nWoman: Yes, it's been making strange noises. What should we do about it?  \nMan: Should we try fixing it ourselves or call a repair service?  \nWoman: How long can we wait before the food spoils?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What problem are the roommates discussing?",
+            "options": [
+              "A broken refrigerator",
+              "A leaking sink",
+              "A malfunctioning oven",
+              "A blocked drain"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What strange issue has the refrigerator been causing?",
+            "options": [
+              "It's making strange noises",
+              "It's leaking water",
+              "It's freezing everything",
+              "It's not turning on"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What are the two options the man suggests for handling the refrigerator?",
+            "options": [
+              "Fix it ourselves or call a repair service",
+              "Throw it out or buy a new one",
+              "Move it to another room",
+              "Ignore the problem"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-25-clip2.mp3",
+        "duration": 20.592,
+        "passage": "Woman: I think we should call a repair service.  \nMan: But they might charge a lot! What if we simply buy a new one instead?  \nWoman: That could be more expensive. What if we check if it's under warranty?  \nMan: That's a good point. Should I look for the warranty documents now?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman initially suggest?",
+            "options": [
+              "Call a repair service",
+              "Buy a new refrigerator",
+              "Try fixing it themselves",
+              "Check the warranty"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What concern does the man express about calling a repair service?",
+            "options": [
+              "They might charge a lot",
+              "It'll take too long",
+              "They might not fix it",
+              "They are unreliable"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the man suggest to do after discussing the warranty?",
+            "options": [
+              "Look for the warranty documents",
+              "Buy a new refrigerator",
+              "Wait longer",
+              "Ask neighbors for help"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-25-clip3.mp3",
+        "duration": 19.104,
+        "passage": "Man: So, we’ve decided to check the warranty first.  \nWoman: Yes, that sounds like the best plan. If it’s not covered, we can buy a new one.  \nMan: Perfect! Should I search for the documents right now?  \nWoman: Yes, let's do it right away.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do the roommates reach?",
+            "options": [
+              "Check the warranty first",
+              "Buy a new refrigerator immediately",
+              "Fix the refrigerator themselves",
+              "Wait until morning"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man agree to do next?",
+            "options": [
+              "Search for the warranty documents",
+              "Call a repair service",
+              "Buy groceries",
+              "Check online reviews"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-26",
+    "title": "Mix-Up at the Restaurant",
+    "context": "A conversation between two friends navigating a food order mix-up at a local restaurant.",
+    "clips": [
+      {
+        "audioFile": "part1-26-clip1.mp3",
+        "duration": 25.44,
+        "passage": "Man: I can't believe they gave us the wrong orders! I ordered the chicken, but this is a vegetarian pasta. \nWoman: I know! I asked for a burger, and they brought me a salad instead. What do you think we should do? \nMan: Should we speak to the waiter right away? Do you think they'll fix it? Or should we just eat what we have and complain later?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What did the man order?",
+            "options": [
+              "Chicken",
+              "Vegetarian pasta",
+              "Burger",
+              "Salad"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What did the woman receive?",
+            "options": [
+              "Chicken",
+              "Vegetarian pasta",
+              "Burger",
+              "Salad"
+            ],
+            "correct": 3
+          },
+          {
+            "id": 3,
+            "question": "What is the man's suggestion?",
+            "options": [
+              "Eat what we have",
+              "Speak to the waiter",
+              "Leave the restaurant",
+              "Order again"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-26-clip2.mp3",
+        "duration": 21.648,
+        "passage": "Woman: I think we should definitely talk to the waiter. It's not fair to eat something we didn't order. \nMan: You're right. We should explain the situation calmly. Should we ask for our actual orders? \nWoman: Yes, and maybe we can ask for a discount as compensation. What do you think?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What does the woman think they should do?",
+            "options": [
+              "Talk to the waiter",
+              "Leave the restaurant",
+              "Eat what they have",
+              "Order dessert"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man suggest they ask for?",
+            "options": [
+              "Their actual orders",
+              "Free drinks",
+              "Extra desserts",
+              "No changes"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the woman suggest they could ask for as compensation?",
+            "options": [
+              "A refund",
+              "A discount",
+              "Free appetizers",
+              "Extra side orders"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-26-clip3.mp3",
+        "duration": 18.456,
+        "passage": "Man: Alright, let's go ahead and talk to the waiter now. I really want the chicken I ordered. \nWoman: Me too! We'll ask them to fix this right away. Should we sit at the bar while we wait? \nMan: That sounds good. Let's do it!",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What do they decide to do?",
+            "options": [
+              "Talk to the waiter",
+              "Leave the restaurant",
+              "Order takeout",
+              "Wait for someone else"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "Where do they suggest sitting while waiting?",
+            "options": [
+              "At the bar",
+              "Outside",
+              "At their table",
+              "In the kitchen"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-27",
+    "title": "Recovering Deleted Files",
+    "context": "A conversation between coworkers discussing how to recover deleted files from the server.",
+    "clips": [
+      {
+        "audioFile": "part1-27-clip1.mp3",
+        "duration": 20.52,
+        "passage": "Man: Hey, did you hear about the files that got deleted from the server?\nWoman: I did! It's such a big issue. How could this happen?\nMan: I think someone accidentally deleted them. What do you think we should do?\nWoman: Shouldn’t we first check if there’s a backup available?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main problem they are discussing?",
+            "options": [
+              "A. Deleted files from the server",
+              "B. A malfunctioning server",
+              "C. Lack of backups",
+              "D. Employee turnover"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the woman suggest they check?",
+            "options": [
+              "A. The server logs",
+              "B. The deleted items folder",
+              "C. Available backups",
+              "D. The network connection"
+            ],
+            "correct": 2
+          },
+          {
+            "id": 3,
+            "question": "What does the man think caused the issue?",
+            "options": [
+              "A. A virus attack",
+              "B. Human error",
+              "C. Server overload",
+              "D. Power failure"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-27-clip2.mp3",
+        "duration": 20.976,
+        "passage": "Woman: Maybe we can use a recovery software to retrieve the files.\nMan: That sounds like a good idea! Have you used any before?\nWoman: Yes, I’ve heard good things about a couple of them. Should we try one?\nMan: Definitely! But do we need permission from IT?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "A. Use recovery software",
+              "B. Call a technician",
+              "C. Wait for IT",
+              "D. Restart the server"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man want to check before proceeding?",
+            "options": [
+              "A. Whether they have backups",
+              "B. Permission from IT",
+              "C. The server's performance",
+              "D. Team availability"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the man think about trying the software?",
+            "options": [
+              "A. It's not worth it",
+              "B. It's a great plan",
+              "C. They should wait",
+              "D. It might be dangerous"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-27-clip3.mp3",
+        "duration": 19.728,
+        "passage": "Man: So, it seems like using recovery software is our best bet.\nWoman: Agreed! Let’s get the permission and get started right away.\nMan: Perfect! I’ll send an email to IT for approval.\nWoman: Great, I'll gather the software options we discussed.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What decision do they come to?",
+            "options": [
+              "A. To use recovery software",
+              "B. To ignore the issue",
+              "C. To wait for IT’s help",
+              "D. To change their server"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What will the man do first?",
+            "options": [
+              "A. Check the backup",
+              "B. Send an email to IT",
+              "C. Download the software",
+              "D. Call a meeting"
+            ],
+            "correct": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-28",
+    "title": "Handling a Burst Pipe in the Bathroom",
+    "context": "A couple in Canada discusses a plumbing issue in their bathroom.",
+    "clips": [
+      {
+        "audioFile": "part1-28-clip1.mp3",
+        "duration": 18.648,
+        "passage": "Man: I just noticed that the bathroom pipe has burst. \nWoman: Really? That's not good. How did you find out? \nMan: I saw water pooling on the floor. What should we do? \nWoman: Should we call a plumber or try to fix it ourselves?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the main issue in the conversation?",
+            "options": [
+              "A burst pipe in the bathroom",
+              "A leaking roof",
+              "Clogged kitchen sink",
+              "Broken faucet"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "How did the man discover the problem?",
+            "options": [
+              "He heard a strange noise",
+              "He saw water pooling",
+              "He smelled something",
+              "He felt a draft"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "What does the woman suggest they consider?",
+            "options": [
+              "Calling a plumber",
+              "Ignoring the issue",
+              "Taking a shower",
+              "Replacing the bathroom",
+              "Correct Answer"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-28-clip2.mp3",
+        "duration": 18.072,
+        "passage": "Woman: We could call a plumber right away. \nMan: That sounds like a safe option. What if we could fix it ourselves? \nWoman: We might save some money, but do we have the tools? \nMan: Good point. I can check the garage for some supplies.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What solution does the woman propose?",
+            "options": [
+              "Call a plumber",
+              "Fix it themselves",
+              "Wait for it to dry",
+              "Ignore it"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man decide to do?",
+            "options": [
+              "Look for supplies in the garage",
+              "Call a friend",
+              "Do nothing",
+              "Start fixing it immediately"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What concern does the woman raise?",
+            "options": [
+              "Not having enough time",
+              "Not having the right tools",
+              "Not knowing how to fix it",
+              "Not wanting to get dirty"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-28-clip3.mp3",
+        "duration": 14.784,
+        "passage": "Man: I found some tools we can use. \nWoman: That’s great! Should we attempt the repair ourselves? \nMan: Yes, let's give it a try. If it doesn't work, we can still call the plumber.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What did the man find?",
+            "options": [
+              "Tools for the repair",
+              "A plumber's number",
+              "A bucket",
+              "A hose"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is their final plan?",
+            "options": [
+              "Try to fix it themselves",
+              "Call the plumber now",
+              "Ignore the problem",
+              "Leave the house temporarily"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-29",
+    "title": "Child's Sudden Fever Discussion",
+    "context": "A parent and babysitter talk about a child who has developed a fever suddenly.",
+    "clips": [
+      {
+        "audioFile": "part1-29-clip1.mp3",
+        "duration": 23.04,
+        "passage": "Man: I just got a call from you. Is everything okay with Sarah?  \nWoman: No, she has a fever and seems really uncomfortable.  \nMan: How high is her temperature?  \nWoman: It's around 39 degrees Celsius.  \nMan: Has she taken any medication yet?  \nWoman: Not yet, I wasn't sure what to do.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is wrong with Sarah?",
+            "options": [
+              "She has a fever",
+              "She has a cold",
+              "She is hungry",
+              "She is tired"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is Sarah's temperature?",
+            "options": [
+              "37 degrees",
+              "39 degrees",
+              "41 degrees",
+              "38 degrees"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "Has Sarah taken any medication yet?",
+            "options": [
+              "Yes, she has",
+              "No, she hasn't",
+              "I don't know",
+              "Yes, a lot"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-29-clip2.mp3",
+        "duration": 19.872,
+        "passage": "Man: We should consider giving her some fever-reducing medication.  \nWoman: That's a good idea. Do we have any children’s acetaminophen?  \nMan: Yes, I believe we do. Should I give her a dose now?  \nWoman: Yes, and we can also check her temperature again after that.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What medication does the man suggest?",
+            "options": [
+              "Children's aspirin",
+              "Children's acetaminophen",
+              "Children's ibuprofen",
+              "Children's antihistamine"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What will they do after giving her medication?",
+            "options": [
+              "Check her temperature again",
+              "Call a doctor",
+              "Put her to bed",
+              "Give her some food"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What does the woman think about the medication?",
+            "options": [
+              "It's unnecessary",
+              "It's a good idea",
+              "They should wait",
+              "It's dangerous"
+            ],
+            "correct": 1
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-29-clip3.mp3",
+        "duration": 16.44,
+        "passage": "Man: Let’s give her the acetaminophen now.  \nWoman: Agreed! I’ll get it. Should I also keep her hydrated?  \nMan: Yes, water is important. After that, we can monitor her condition closely.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What will they give Sarah first?",
+            "options": [
+              "Water",
+              "Fever medication",
+              "Food",
+              "A blanket"
+            ],
+            "correct": 1
+          },
+          {
+            "id": 2,
+            "question": "What else will they do?",
+            "options": [
+              "Monitor her condition",
+              "Check for other symptoms",
+              "Call the hospital",
+              "Send her to bed"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part1-30",
+    "title": "Fake Concert Tickets",
+    "context": "Two friends discover their concert tickets are counterfeit and need to figure out what to do.",
+    "clips": [
+      {
+        "audioFile": "part1-30-clip1.mp3",
+        "duration": 22.224,
+        "passage": "Man: I can't believe our concert tickets are fake! What are we going to do now? \nWoman: I know, it's so frustrating! Should we confront the person we bought them from? \nMan: That might not work out. Do you think we can get a refund somehow? \nWoman: Or should we just buy new tickets and hope for the best?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What did they discover about their concert tickets?",
+            "options": [
+              "They are counterfeit",
+              "They are real",
+              "They are lost",
+              "They are damaged"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man suggest they might do?",
+            "options": [
+              "Confront the seller",
+              "Ignore the issue",
+              "Go to the concert",
+              "Sell the tickets"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What is one of the woman's ideas?",
+            "options": [
+              "Buy new tickets",
+              "Cancel the concert",
+              "Go home",
+              "File a police report"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-30-clip2.mp3",
+        "duration": 23.352,
+        "passage": "Woman: So, we have a few options. Should we try contacting the seller first? \nMan: That makes sense, but what if they refuse to refund us? \nWoman: We could also check if the venue offers ticket replacement. What do you think? \nMan: That's a good idea! Or maybe we can find someone selling real tickets online?",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is one option they consider?",
+            "options": [
+              "Contacting the seller",
+              "Going without tickets",
+              "Leaving the city",
+              "Telling their friends"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What does the man express concern about?",
+            "options": [
+              "The seller not refunding them",
+              "The venue being closed",
+              "The concert being canceled",
+              "The tickets becoming more expensive"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 3,
+            "question": "What alternative does the woman mention?",
+            "options": [
+              "Checking for ticket replacements",
+              "Listening to music at home",
+              "Finding a different concert",
+              "Buying souvenirs"
+            ],
+            "correct": 0
+          }
+        ]
+      },
+      {
+        "audioFile": "part1-30-clip3.mp3",
+        "duration": 20.04,
+        "passage": "Man: I think we should try contacting the seller first. If that doesn’t work, we can search for real tickets. \nWoman: I agree! Let’s do that right now and see if we can salvage our plans. \nMan: Sounds good! Hopefully, we can still enjoy the concert together.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What does the man want to do first?",
+            "options": [
+              "Contact the seller",
+              "Buy new tickets",
+              "Go to the concert",
+              "File a complaint"
+            ],
+            "correct": 0
+          },
+          {
+            "id": 2,
+            "question": "What is the woman's response to the plan?",
+            "options": [
+              "She agrees",
+              "She disagrees",
+              "She is unsure",
+              "She is disappointed"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    ]
+  }
+]

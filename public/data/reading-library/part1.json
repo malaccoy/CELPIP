@@ -1,0 +1,2706 @@
+[
+  {
+    "title": "Request for Flexible Work Schedule",
+    "passage": "From: Alex Johnson <alex.johnson@company.com>\nTo: Lisa Smith <lisa.smith@company.com>\nSubject: Request for Flexible Work-from-Home Schedule\n\nDear Lisa,\n\nI hope this message finds you well. I’m writing to discuss the possibility of adopting a more flexible work-from-home schedule. Over the past few months, I have found that I can be more productive when I have a blend of in-office and remote workdays. \n\nI believe that a flexible schedule would allow me to better manage my personal commitments while continuing to meet my work obligations effectively. If possible, I would like to propose a schedule where I work from home three days a week and come into the office on the remaining two days. I am confident that this arrangement would enhance my productivity and contribute positively to the team's overall performance.\n\nThank you for considering my request. I am open to discussing this further and would appreciate your input on how we can make this work.\n\nBest regards,\nAlex\n\n---\n\nFrom: Lisa Smith <lisa.smith@company.com>\nTo: Alex Johnson <alex.johnson@company.com>\nSubject: Re: Request for Flexible Work-from-Home Schedule\n\nHi Alex,\n\nThank you for reaching out and for your honesty. I understand the importance of finding a balance between work and personal commitments. I appreciate your dedication to maintaining productivity while adapting your work schedule.\n\nLet’s set up a time to discuss this in more detail and explore how we can accommodate your request. I want to ensure that we maintain our team's workflow and support your needs at the same time. \n\nLooking forward to our conversation.\n\nBest,\nLisa",
+    "replyEmail": "From: Alex Johnson <alex.johnson@company.com>\nTo: Lisa Smith <lisa.smith@company.com>\nSubject: Re: Request for Flexible Work-from-Home Schedule\n\nHi Lisa,\n\nThank you for your quick response and support. I appreciate your willingness to discuss my request further. I believe that a flexible schedule will be beneficial for both myself and the team. \n\nIn preparation for our meeting, I will gather some data on my recent productivity levels to show how this change could positively impact my work. Additionally, I would like to discuss [BLANK 1] the team’s overall performance metrics to ensure that this arrangement works for everyone. I am also open to [BLANK 2] to help find a suitable compromise that aligns with our team needs.\n\nThanks again for your understanding, and I look forward to speaking with you soon about [BLANK 3]. Please let me know your availability, and I will do my best to accommodate.\n\nBest regards,\nAlex\n\nP.S. If you have any thoughts on how we could structure this arrangement, [BLANK 4] would be very helpful. \n\nI want to ensure that this change is beneficial for everyone involved. If there are any concerns regarding [BLANK 5], please feel free to bring them up during our meeting.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is Alex's main purpose in the email?",
+        "options": [
+          "Request a day off",
+          "Ask for a flexible work schedule",
+          "Discuss team performance",
+          "Seek a promotion"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Lisa respond to Alex's request?",
+        "options": [
+          "Rejects it outright",
+          "Shows understanding and willingness to discuss",
+          "Suggests a different approach",
+          "Ignores the email"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What tone does Alex use in the email?",
+        "options": [
+          "Casual",
+          "Formal",
+          "Sarcastic",
+          "Disinterested"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What inference can be made about Alex's work habits?",
+        "options": [
+          "They are usually unproductive",
+          "They prefer working in the office only",
+          "They thrive with a mix of remote and in-office work",
+          "They are not committed to their job"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What does Lisa mean by 'support your needs'?",
+        "options": [
+          "Help with personal issues",
+          "Assist with professional development",
+          "Accommodate Alex's flexible schedule",
+          "Provide emotional support"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is the likely outcome of their discussion?",
+        "options": [
+          "They will not change anything",
+          "They will agree on a new schedule",
+          "Alex will quit his job",
+          "Lisa will offer him a raise"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "the budget constraints",
+          "the potential impact on project deadlines",
+          "the benefits of remote work",
+          "my previous work experiences"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "working longer hours",
+          "other flexible options",
+          "taking additional time off",
+          "reducing my workload"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "the previous week",
+          "my recent project",
+          "how we can proceed",
+          "my vacation plans"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "your input",
+          "my concerns",
+          "the company's policies",
+          "the deadlines"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "the team's workload",
+          "my future plans",
+          "your expectations",
+          "my performance reviews"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-01"
+  },
+  {
+    "title": "Lost Luggage Complaint",
+    "passage": "From: John Smith <john.smith@email.com>\nTo: Customer Service <service@airline.com>\nSubject: Complaint Regarding Lost Luggage\n\nDear Customer Service,\n\nI hope this message finds you well. I am writing to express my frustration regarding my recent travel experience with your airline. On my flight from Toronto to Vancouver on October 10, 2023, my luggage did not arrive at the baggage claim.\n\nDespite several phone calls and assurances from your staff, I have yet to receive my luggage, which contained important personal items. As this delay has caused me significant inconvenience, I would like to formally request compensation for this loss.\n\nI look forward to your prompt response regarding this matter.\n\nBest regards,\nJohn Smith\n\n---\n\nFrom: Customer Service <service@airline.com>\nTo: John Smith <john.smith@email.com>\nSubject: RE: Complaint Regarding Lost Luggage\n\nDear Mr. Smith,\n\nThank you for contacting us regarding your luggage situation. We sincerely apologize for the inconvenience this has caused during your travels. Your complaint is important to us, and we are currently reviewing your case. Please be assured that we are committed to resolving this issue as quickly as possible.\n\nTo expedite the process, could you please provide your flight details and any luggage claim reference numbers? Once we have this information, we will be able to assess your request for compensation.\n\nThank you for your patience and understanding in this matter.\n\nKind regards,\nCustomer Service Team\n\n---\n\nFrom: John Smith <john.smith@email.com>\nTo: Customer Service <service@airline.com>\nSubject: RE: Complaint Regarding Lost Luggage\n\nHello,\n\nThank you for your quick reply. My flight details are as follows:\n- Flight Number: AC123\n- Date of Travel: October 10, 2023\n- Claim Reference Number: 456789\n\nI appreciate your attention to this issue and hope to hear back soon. \n\nBest,\nJohn Smith",
+    "replyEmail": "Dear Mr. Smith,\n\nThank you for providing the details of your flight. We appreciate your cooperation. We will begin the process of reviewing your compensation request based on the provided information. [BLANK 1] Our team will investigate the situation thoroughly.\n\nIn the meantime, please hold on to all receipts related to your expenses incurred due to the delay. [BLANK 2] This will assist us in processing your claim. \n\nWe understand how important your belongings are, and we strive to ensure customer satisfaction. [BLANK 3] Please rest assured that we are doing our best to resolve this matter promptly.\n\nIf you have any further questions, do not hesitate to reach out. [BLANK 4] Thank you once again for your understanding and patience.\n\nBest regards,\nCustomer Service Team\n\n[BLANK 5]  \n",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of John Smith's email?",
+        "options": [
+          "A. To complain about poor service",
+          "B. To request compensation for lost luggage",
+          "C. To inquire about flight status",
+          "D. To provide feedback"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does John Smith use in his email?",
+        "options": [
+          "A. Angry",
+          "B. Informal",
+          "C. Polite and formal",
+          "D. Indifferent"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How does Customer Service respond to John Smith's complaint?",
+        "options": [
+          "A. They deny the claim",
+          "B. They apologize and request more information",
+          "C. They promise immediate compensation",
+          "D. They ignore the message"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does John Smith want to receive?",
+        "options": [
+          "A. A refund for his ticket",
+          "B. An update about his luggage",
+          "C. Compensation for lost items",
+          "D. A discount on future flights"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What can be inferred about John Smith’s feelings?",
+        "options": [
+          "A. He is satisfied with the airline",
+          "B. He is frustrated and inconvenienced",
+          "C. He is indifferent to the situation",
+          "D. He is happy with the response"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What detail does Customer Service ask for to assist with the claim?",
+        "options": [
+          "A. John’s home address",
+          "B. Information about previous flights",
+          "C. Flight details and claim reference",
+          "D. John’s membership number"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A. We regret to inform you that we cannot help.",
+          "B. Your concerns are valid, and we appreciate them.",
+          "C. We will ensure your luggage is located immediately.",
+          "D. We will start processing your compensation request."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A. It's important to keep this information handy.",
+          "B. This may not be relevant to your issue.",
+          "C. You should ignore any expenses incurred.",
+          "D. This will make the process longer."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A. We appreciate your business.",
+          "B. We are not responsible for lost items.",
+          "C. We hope you can find new items to replace your luggage.",
+          "D. We value your satisfaction and loyalty."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A. We cannot answer all emails.",
+          "B. Please contact us during business hours.",
+          "C. Your feedback is important to us.",
+          "D. Please reach out if you have any further inquiries."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A. We look forward to your swift response.",
+          "B. We appreciate your patience during this process.",
+          "C. We hope to hear from you soon.",
+          "D. We are unable to assist you further."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part1-02"
+  },
+  {
+    "title": "Email Exchange about Missing an Exam",
+    "passage": "From: John Smith <john.smith@email.com>  \nTo: Dr. Emily Johnson <emily.johnson@university.edu>  \nSubject: Request for Missed Exam  \n\nDear Dr. Johnson,  \n\nI hope this email finds you well. I am writing to inform you that I was unable to attend the midterm exam for your Biology 101 class on October 1 due to a severe illness. I experienced a high fever and extreme fatigue, which made it impossible for me to concentrate or perform adequately.\n\nI understand that the exam is a crucial part of our course, and I am very concerned about how this will affect my overall grade. I would greatly appreciate it if you could let me know if there is a possibility for me to make up the exam or if you could provide alternative options.  \n\nThank you for your understanding. I look forward to your response.  \n\nSincerely,  \nJohn Smith  \n\n---  \n\nFrom: Dr. Emily Johnson <emily.johnson@university.edu>  \nTo: John Smith <john.smith@email.com>  \nSubject: Re: Request for Missed Exam  \n\nDear John,  \n\nThank you for reaching out and informing me about your situation. I’m sorry to hear you’ve been ill; I hope you’re feeling better now.  \n\nRegarding the missed exam, I understand that health comes first. I can offer you the option to take a makeup exam on October 15. Please let me know if this date works for you. Additionally, please provide a doctor's note confirming your illness, as per university policy.  \n\nBest wishes,  \nDr. Johnson",
+    "replyEmail": "To: Dr. Emily Johnson <emily.johnson@university.edu>  \nSubject: Re: Request for Missed Exam  \n\nDear Dr. Johnson,  \n\nThank you for your prompt response. I appreciate your understanding regarding my situation. I would like to confirm that I can attend the makeup exam on [BLANK 1]. In addition, I will send my doctor's note to you by [BLANK 2].  \n\nI am grateful for your consideration, and I will make sure to prepare thoroughly for the makeup. If there are any additional requirements or things I should review, please let me know by [BLANK 3].  \n\nThank you again for your support. I look forward to seeing you on [BLANK 4].  \n\nSincerely,  \nJohn Smith  \n\nP.S. I hope to recover quickly so I can get back to my studies efficiently.  \n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of John’s email?",
+        "options": [
+          "A: To request a makeup exam",
+          "B: To inform Dr. Johnson about his illness",
+          "C: To complain about the exam policy",
+          "D: To ask about course materials"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does John feel about missing the exam?",
+        "options": [
+          "A: Relieved",
+          "B: Indifferent",
+          "C: Concerned",
+          "D: Happy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What tone does Dr. Johnson use in her response?",
+        "options": [
+          "A: Formal and cold",
+          "B: Supportive and understanding",
+          "C: Dismissive and rude",
+          "D: Angry"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which of the following is a requirement for the makeup exam?",
+        "options": [
+          "A: Pay a fee",
+          "B: Provide a doctor’s note",
+          "C: Attend a special lecture",
+          "D: Submit a paper"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What can be inferred about John's health?",
+        "options": [
+          "A: He is completely healthy now",
+          "B: He is still very unwell",
+          "C: He is recovering",
+          "D: He has a chronic illness"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What date is proposed for the makeup exam?",
+        "options": [
+          "A: October 10",
+          "B: October 1",
+          "C: October 15",
+          "D: October 20"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: October 15",
+          "B: This is inconvenient",
+          "C: I am unsure",
+          "D: I will not attend"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: Right away",
+          "B: Next week",
+          "C: I forgot to get one",
+          "D: I don't have one"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: Nothing at all",
+          "B: Please ignore this email",
+          "C: Any additional resources",
+          "D: I’m not interested"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: October 15",
+          "B: Next week",
+          "C: Thank you for your help",
+          "D: It’s been too long"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: I appreciate your help",
+          "B: I am not feeling well",
+          "C: I hope you stay busy",
+          "D: I will be back soon"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-03"
+  },
+  {
+    "title": "Concerns About Bullying",
+    "passage": "From: Jane Smith <jane.smith@email.com>  \nTo: Principal Tom Johnson <principal@school.ca>  \nSubject: Concerns Regarding Bullying  \n\nDear Principal Johnson,  \n\nI hope this message finds you well. I am writing to express my growing concerns regarding the bullying incidents that my son, Liam, has been experiencing at school. Over the past few weeks, he has mentioned being teased and excluded by some of his classmates, which has deeply affected his confidence and well-being.  \n\nI believe it is important for children to feel safe and supported in their learning environment, and I would appreciate it if we could discuss some potential solutions to address this issue.  \n\nThank you for your attention to this matter. I look forward to your prompt response.  \n\nSincerely,  \nJane Smith  \n\n---  \n\nFrom: Principal Tom Johnson <principal@school.ca>  \nTo: Jane Smith <jane.smith@email.com>  \nSubject: RE: Concerns Regarding Bullying  \n\nDear Ms. Smith,  \n\nThank you for bringing this issue to my attention. I am very sorry to hear about Liam's experience. We take bullying very seriously at our school, and I assure you that we will look into this matter immediately.  \n\nI would like to invite you to meet with me to discuss this further and come up with a plan to ensure Liam's safety and comfort at school. Please let me know your available times next week so we can arrange a meeting.  \n\nBest regards,  \nTom Johnson  \n\n---  \n\nFrom: Jane Smith <jane.smith@email.com>  \nTo: Principal Tom Johnson <principal@school.ca>  \nSubject: RE: Concerns Regarding Bullying  \n\nDear Principal Johnson,  \n\nThank you for your prompt response. I appreciate your commitment to resolving this issue. I am available to meet next Wednesday or Thursday afternoon. Please let me know what works best for you.  \n\nLooking forward to our discussion.  \n\nBest,  \nJane Smith",
+    "replyEmail": "Dear Principal Johnson,  \n\nThank you for your response regarding Liam’s situation. I appreciate the school’s commitment to addressing bullying. I believe that [BLANK 1] is an important step in helping Liam feel safe. Furthermore, I hope that [BLANK 2], as it can foster a more inclusive environment. Please let me know [BLANK 3], so we can ensure Liam has the support he needs. I look forward to working together on this matter. It is crucial that [BLANK 4] at school, and I am optimistic about our meeting. Thank you once again for your attention to this issue.  \n\nBest regards,  \nJane Smith  \n\n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Jane Smith's email?",
+        "options": [
+          "A. To request a meeting",
+          "B. To express concerns about bullying",
+          "C. To congratulate the principal",
+          "D. To inquire about school policies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does Jane use in her email?",
+        "options": [
+          "A. Angry",
+          "B. Professional",
+          "C. Indifferent",
+          "D. Sarcastic"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What immediate action does Principal Johnson promise?",
+        "options": [
+          "A. To ignore the issue",
+          "B. To investigate the bullying",
+          "C. To change school policies",
+          "D. To meet with all parents"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How does Jane feel about her son's experiences?",
+        "options": [
+          "A. Confident",
+          "B. Unconcerned",
+          "C. Distressed",
+          "D. Joyful"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "In the final email, what does Jane express hope for?",
+        "options": [
+          "A. For Liam to ignore the bullies",
+          "B. For a resolution to the issue",
+          "C. For a change in the principal",
+          "D. For a better school reputation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A. organizing a program on bullying",
+          "B. ignoring the problem",
+          "C. sending Liam home early",
+          "D. dismissing his feelings"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A. the school takes such matters lightly",
+          "B. everyone should feel included",
+          "C. bullying is a common issue",
+          "D. Liam should change classes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A. how you plan to address this",
+          "B. whether the school is closed",
+          "C. if Liam can stay home",
+          "D. the school lunch menu"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A. bullying does not occur",
+          "B. students are treated poorly",
+          "C. every child feels safe",
+          "D. teachers are unresponsive"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A. I look forward to our meeting",
+          "B. I hope you enjoy your weekend",
+          "C. Please ignore my concerns",
+          "D. This issue can wait"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-04"
+  },
+  {
+    "title": "Negotiating Project Terms",
+    "passage": "From: Sarah Thompson <sarah.thompson@email.com>\nTo: John Doe <john.doe@email.com>\nSubject: Project Terms Discussion\n\nHi John,\n\nI hope this email finds you well. I’m excited about the possibility of working together on the upcoming project you mentioned. Before we proceed, I wanted to clarify a few details regarding the terms.\n\nFirstly, could we discuss the budget? I generally work within the range of $1,500 to $2,000 for projects of this scope. Additionally, would you be open to a timeline of approximately four weeks for the initial draft? This will allow me to deliver quality work without compromising on creativity.\n\nLastly, I prefer to have a clear communication plan set in place. Would you be available for a quick call this week to go over these points? Looking forward to your response.\n\nBest regards,\nSarah\n\n---\n\nFrom: John Doe <john.doe@email.com>\nTo: Sarah Thompson <sarah.thompson@email.com>\nSubject: Re: Project Terms Discussion\n\nHi Sarah,\n\nThank you for your prompt reply. I appreciate your detailed approach to the project.\n\nRegarding the budget, I’m willing to consider your range of $1,500 to $2,000. However, could we explore the possibility of adjusting the timeline to three weeks? We have some tight deadlines to meet, and your skills would be a great asset to our endeavor.\n\nI’m available for a call on Thursday at 3 PM. Would that work for you? Let me know.\n\nBest,\nJohn\n\n---\n\nFrom: Sarah Thompson <sarah.thompson@email.com>\nTo: John Doe <john.doe@email.com>\nSubject: Re: Project Terms Discussion\n\nHi John,\n\nThanks for getting back to me! Thursday at 3 PM works perfectly for me. I understand the need for a quicker turnaround, and I will do my best to accommodate that without sacrificing quality.\n\nLooking forward to our discussion!\n\nRegards,\nSarah",
+    "replyEmail": "Hi Sarah,\n\nThanks for confirming our call! Just to clarify before we talk, I would like to discuss [BLANK 1] regarding the project timeline. Additionally, I believe it’s important to ensure that we stay within the budget of [BLANK 2]. Finally, let’s also talk about [BLANK 3] so we can align our communication strategies effectively. Looking forward to your insights during our call!\n\nBest,\nJohn\n\n[BLANK 4]\n\nBest,\nJohn\n\n[BLANK 5]\n\nThanks!",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is Sarah's primary purpose in her first email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does John respond to Sarah's suggested budget?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the tone of Sarah's emails?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What inference can be made about the project timeline?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is John's primary concern as indicated in his email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-05"
+  },
+  {
+    "title": "Request for Parental Leave and Coverage Plan",
+    "passage": "From: Sarah Thompson <sarah.thompson@company.com>\nTo: Mark Johnson <mark.johnson@company.com>\nSubject: Request for Parental Leave\n\nDear Mark,\n\nI hope this message finds you well. I am writing to formally request parental leave starting on May 1, 2024, for a duration of six months. As you may know, my partner and I are expecting a baby, and I would like to take this time to support my family during this important transition.\n\nIn my absence, I have outlined a plan to ensure that my responsibilities are covered. I suggest that Emily take over my current projects, as she has shown great competence in similar tasks. I will provide her with all the necessary information and documents before my leave begins. Additionally, I am happy to assist in the transition process over the next few weeks to make this as smooth as possible.\n\nPlease let me know if this arrangement works for you or if you would like to discuss it further. Thank you for considering my request.\n\nBest regards,\nSarah\n\n---\n\nFrom: Mark Johnson <mark.johnson@company.com>\nTo: Sarah Thompson <sarah.thompson@company.com>\nSubject: RE: Request for Parental Leave\n\nHi Sarah,\n\nThank you for your email. First of all, congratulations on the upcoming addition to your family! I fully support your request for parental leave, and it’s great to hear you have a coverage plan in mind.\n\nI agree that Emily would be a suitable choice to take over your projects during your leave. Please ensure we have everything documented, so she can step in seamlessly. Let’s set up a meeting this week to go over your current projects and finalize the transition.\n\nLooking forward to our discussion!\n\nBest,\nMark",
+    "replyEmail": "From: Sarah Thompson <sarah.thompson@company.com>\nTo: Mark Johnson <mark.johnson@company.com>\nSubject: RE: Request for Parental Leave\n\nHi Mark,\n\nThank you for your prompt reply and for your support regarding my parental leave. I appreciate your understanding and acknowledgment of the transition plan. \n\nTo ensure everything is organized, I will [BLANK 1] all the necessary documents this week. Additionally, I will also schedule [BLANK 2] with Emily to go over her new responsibilities before my leave begins. If there’s anything else you need from me before I leave, please let me know. \n\nI’ll keep you updated as we move closer to May. \n\nThanks again for everything!\n\nBest,\nSarah\n\nP.S. If you could [BLANK 3] during my leave, that would be fantastic. I know you'll have everything under control!\n\nTake care,\n\n[BLANK 4] \nSarah",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Sarah's email?",
+        "options": [
+          "Request parental leave",
+          "Discuss salary increase",
+          "Plan a team event",
+          "Request a meeting"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Sarah feel about her request?",
+        "options": [
+          "Nervous",
+          "Excited",
+          "Confident",
+          "Indifferent"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which option does Sarah propose for covering her workload?",
+        "options": [
+          "Hiring a new employee",
+          "Redistributing tasks among the team",
+          "Having Emily take over her projects",
+          "Postponing projects"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does Mark think of Sarah's coverage plan?",
+        "options": [
+          "He disagrees with it",
+          "He thinks it's a good idea",
+          "He wants to change it",
+          "He finds it unnecessary"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is Mark's tone in his reply?",
+        "options": [
+          "Formal and distant",
+          "Supportive and friendly",
+          "Critical and demanding",
+          "Indifferent and brief"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is the tone of Sarah’s initial email?",
+        "options": [
+          "Casual and informal",
+          "Professional and respectful",
+          "Demanding and urgent",
+          "Confused and hesitant"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "compile and send",
+          "prepare to leave",
+          "analyze the projects",
+          "cancel all my meetings"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "a meeting",
+          "a memo",
+          "a report",
+          "a call"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "manage my projects",
+          "cover for me",
+          "review my tasks",
+          "assist with the team"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "Take care",
+          "See you soon",
+          "Best wishes",
+          "Looking forward"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-06"
+  },
+  {
+    "title": "Community Clean-Up Event Organization",
+    "passage": "From: Sarah Johnson <s.johnson@email.com>\nTo: Mark Thompson <m.thompson@email.com>\nSubject: Upcoming Community Clean-Up Event\n\nHi Mark,\n\nI hope this message finds you well! I'm reaching out to discuss the community clean-up event scheduled for next Saturday. I am excited about this initiative and would love your help in coordinating the volunteers.\n\nWe will meet at Riverside Park at 9 AM, and I expect we will need around 20 volunteers to cover the area effectively. Please let me know if you can help recruit some people from your network. It's a great opportunity for everyone to contribute to our community and enjoy some fresh air together!\n\nThanks so much for your support! Looking forward to hearing from you soon.\n\nBest,\nSarah\n\n---\n\nFrom: Mark Thompson <m.thompson@email.com>\nTo: Sarah Johnson <s.johnson@email.com>\nSubject: RE: Upcoming Community Clean-Up Event\n\nHi Sarah,\n\nThanks for the information! I’d be happy to help with the volunteer recruitment. I believe I can gather at least 10 people from my office who would be interested.\n\nIt sounds like a wonderful event. I agree, it’s important to give back to our community, and I think many people will appreciate the chance to get involved. I will also post about the clean-up on our company’s internal bulletin board to reach even more potential volunteers.\n\nLet’s keep in touch as the event date approaches!\n\nBest regards,\nMark\n\n---\n\nFrom: Sarah Johnson <s.johnson@email.com>\nTo: Mark Thompson <m.thompson@email.com>\nSubject: RE: Upcoming Community Clean-Up Event\n\nHi Mark,\n\nThat’s fantastic news! Thank you for your willingness to help out. I really appreciate your efforts in gathering volunteers. Let’s aim to meet briefly before the event, perhaps on Wednesday or Thursday, to go over the final details. \n\nThanks again!\n\nCheers,\nSarah",
+    "replyEmail": "Hi Sarah,\n\nI’m glad to hear about the upcoming clean-up event! [BLANK 1] We can definitely meet on Wednesday to finalize everything before Saturday. [BLANK 2] I will make sure everyone knows what they need to bring. [BLANK 3] I expect that with your efforts and mine, we will have a great turnout! [BLANK 4] Also, would it be possible to have some refreshments for the volunteers?\n\nLooking forward to seeing you soon!\n\nBest,\nMark\n\n",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Sarah's email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does Mark use in his response?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How many volunteers does Sarah estimate are needed for the event?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What location is the clean-up event taking place?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What additional step does Mark plan to take to recruit volunteers?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What does Sarah express in her final email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: I'm excited to help out with my team.",
+          "B: I think I will skip this time.",
+          "C: Can we postpone it to a later date?",
+          "D: I hadn’t heard about it before."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: Everyone should bring their own supplies.",
+          "B: I will just come alone.",
+          "C: It might rain on that day.",
+          "D: Let's hope for sunny weather."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: I really don't think that will happen.",
+          "B: We should prepare for about 10 people.",
+          "C: I hope everyone is available.",
+          "D: I think that a brief meeting would help."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: I'm worried no one will come.",
+          "B: Providing snacks would be nice.",
+          "C: We need to supply tools as well.",
+          "D: I won't be able to attend."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-07"
+  },
+  {
+    "title": "Office Seating Arrangement Discussion",
+    "passage": "From: Sarah Johnson <sarah.johnson@office.com>  \nTo: Mark Thompson <mark.thompson@office.com>  \nSubject: New Seating Arrangement  \n\nHi Mark,  \nI hope this email finds you well! I wanted to discuss the upcoming changes to our office seating arrangement that were mentioned in the last staff meeting. I believe the idea is to encourage more collaboration across departments. I have some concerns about how this may affect our current workflow, especially since our team often relies on quick access to each other throughout the day.\n\nAlso, I wanted to know if there will be opportunities for us to provide feedback before the final decision is made. The new layout seems interesting, but it's important that we maintain our productivity.  \nLooking forward to hearing your thoughts.  \n\nBest,  \nSarah  \n\n---  \n\nFrom: Mark Thompson <mark.thompson@office.com>  \nTo: Sarah Johnson <sarah.johnson@office.com>  \nSubject: Re: New Seating Arrangement  \n\nHi Sarah,  \nThanks for reaching out! I completely understand your concerns regarding the seating changes. The intention behind the new layout is indeed to foster more interaction among different teams. However, we definitely want to ensure that it doesn’t disrupt our existing workflow.  \nI will raise your feedback at the next meeting and see if we can arrange a session for everyone to share their thoughts before anything is finalized.  \nLet’s aim to find a balance that benefits everyone.  \nBest,  \nMark  \n\n---  \n\nFrom: Sarah Johnson <sarah.johnson@office.com>  \nTo: Mark Thompson <mark.thompson@office.com>  \nSubject: Re: New Seating Arrangement  \n\nHi Mark,  \nThanks for your prompt reply. I appreciate that you're willing to bring up our feedback. I believe having a chance for everyone to voice their opinions will make a significant difference. Let’s ensure we create an environment that remains conducive to our work. \nLooking forward to the discussion!  \n\nCheers,  \nSarah",
+    "replyEmail": "Hi Mark,  \nThank you for addressing my concerns about the seating arrangement. I think it’s essential we [BLANK 1]. Also, I hope that during the feedback session, we [BLANK 2]. This will help us all feel more comfortable with the changes coming up.\nIn addition, I suggest we [BLANK 3] to ensure that everyone has a voice in this process. I’m really looking forward to collaborating on this!\nLet’s aim for a smooth transition.  \nBest,  \nSarah",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Sarah's first email?",
+        "options": [
+          "A: To suggest a new seating layout",
+          "B: To express concerns about the seating arrangement",
+          "C: To ask for a team-building event",
+          "D: To confirm attendance at a meeting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Mark respond to Sarah's concerns?",
+        "options": [
+          "A: He dismisses them",
+          "B: He agrees completely",
+          "C: He acknowledges them and offers to take action",
+          "D: He suggests no changes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What tone do both emails convey?",
+        "options": [
+          "A: Frustrated",
+          "B: Collaborative and professional",
+          "C: Indifferent",
+          "D: Sarcastic"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does Sarah hope to achieve by suggesting a feedback session?",
+        "options": [
+          "A: More productivity",
+          "B: To delay the changes",
+          "C: To ensure everyone’s opinions are considered",
+          "D: To make the changes permanent"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What inference can be made about the new seating arrangement?",
+        "options": [
+          "A: It's already decided",
+          "B: It's temporary",
+          "C: It's still subject to employee feedback",
+          "D: It will be ignored"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: adapt to the changes quickly",
+          "B: compromise our productivity",
+          "C: feel included in the process",
+          "D: oppose the new arrangement"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: will only discuss the positives",
+          "B: can openly express their views",
+          "C: will be told what to do",
+          "D: should ignore their feelings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: organize a mandatory meeting",
+          "B: ensure transparency in the process",
+          "C: keep all opinions private",
+          "D: disregard any feedback"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: avoid all discussions",
+          "B: rush into decisions",
+          "C: make the transition painful",
+          "D: encourage open dialogue"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: ignore the input from our team",
+          "B: conduct a survey afterwards",
+          "C: gather feedback before finalizing",
+          "D: maintain the old seating arrangement"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part1-08"
+  },
+  {
+    "title": "Concerns About Workplace Safety",
+    "passage": "From: John Smith <john.smith@email.com>  \nTo: Safety Committee <safety.committee@email.com>  \nSubject: Urgent: Workplace Safety Concerns  \n\nDear Safety Committee,  \nI hope this message finds you well. I am writing to express my deep concerns regarding workplace safety practices in our department. Recently, I have observed several hazards that could potentially lead to accidents or injuries.  \n\nFirstly, the storage area for hazardous materials is inadequately marked and organized. This poses a significant risk for employees who may inadvertently come into contact with these materials without proper safety protocols. Secondly, I believe that our emergency exit routes are not clearly visible and may lead to confusion in case of an emergency evacuation.  \n\nI understand that safety is a top priority for our organization, and I am confident that, with your attention, we can address these issues promptly. I would appreciate it if we could hold a meeting to discuss these concerns in more detail and explore potential solutions.  \n\nThank you for your attention to this important matter.  \n\nBest regards,  \nJohn Smith  \n\n---  \n\nFrom: Safety Committee <safety.committee@email.com>  \nTo: John Smith <john.smith@email.com>  \nSubject: Re: Urgent: Workplace Safety Concerns  \n\nDear John,  \nThank you for your email and for bringing these important issues to our attention. We take safety concerns very seriously and appreciate proactive communication from our employees.  \n\nWe will be reviewing your concerns regarding the storage area and emergency exit routes. Could you please provide us with specific incidents or examples that you’ve witnessed? This information will help us understand the situation better and prioritize our actions accordingly.  \n\nWe would be happy to schedule a meeting to discuss this further. Could you please let us know your available times?  \n\nThank you for your commitment to ensuring a safer workplace.  \n\nSincerely,  \nThe Safety Committee  \n\n---  \n\nFrom: John Smith <john.smith@email.com>  \nTo: Safety Committee <safety.committee@email.com>  \nSubject: Re: Urgent: Workplace Safety Concerns  \n\nDear Safety Committee,  \nThank you for your swift reply. I appreciate your willingness to address my concerns. I would like to provide some examples of the issues I mentioned in my previous email.  \n\nIn the storage area, I have noticed that several containers are not labeled properly, which could lead to serious accidents. Additionally, the exit signs are partially obscured by equipment, making it difficult to identify the safest route in an emergency.  \n\nLet’s schedule a meeting for next week. I am available on Wednesday or Thursday afternoon.  \n\nThanks again for your attention to these serious matters.  \n\nBest,  \nJohn Smith",
+    "replyEmail": "Dear Safety Committee,  \nThank you for your prompt response. I appreciate your attention to this matter, and I believe that addressing these concerns is essential for the safety of all employees.  \n\n[BLANK 1] I can provide more information regarding the labeling and exit signs.\n[BLANK 2] Would it be possible to review the safety protocols in place during our meeting?\n[BLANK 3] I think it is crucial that we prioritize these issues, especially to prevent any potential accidents.\n[BLANK 4] If you could confirm the meeting time, I would be more than happy to accommodate.\n[BLANK 5] Thank you once again for your commitment to a safer workplace.\n\nBest regards,  \nJohn Smith",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of John Smith's email?",
+        "options": [
+          "A) To request time off",
+          "B) To express workplace safety concerns",
+          "C) To suggest a team outing",
+          "D) To complain about colleagues"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does John Smith feel about workplace safety?",
+        "options": [
+          "A) Indifferent",
+          "B) Concerned",
+          "C) Unaware",
+          "D) Confident"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What specific issue is mentioned regarding hazardous materials?",
+        "options": [
+          "A) They are overstocked",
+          "B) They are poorly marked",
+          "C) They are too expensive",
+          "D) They are rarely used"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does the Safety Committee ask John Smith to provide?",
+        "options": [
+          "A) Personal details",
+          "B) Examples of incidents",
+          "C) Suggestions for improvement",
+          "D) A formal complaint"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is the tone of the Safety Committee's reply?",
+        "options": [
+          "A) Dismissive",
+          "B) Supportive",
+          "C) Angry",
+          "D) Confused"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is implied about the workplace culture from the emails exchanged?",
+        "options": [
+          "A) Communication is discouraged.",
+          "B) Safety is prioritized.",
+          "C) Employees feel unsafe.",
+          "D) Meetings are rarely held."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) I am busy at the moment.",
+          "B) I am able to attend the meeting.",
+          "C) I can provide more information regarding the labeling and exit signs.",
+          "D) I do not have any examples."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Could we meet tomorrow?",
+          "B) Would it be possible to review the safety protocols in place during our meeting?",
+          "C) I am not sure about the protocols.",
+          "D) It is too late to discuss."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) I don't care about safety.",
+          "B) I think it is crucial that we prioritize these issues, especially to prevent any potential accidents.",
+          "C) Safety is not important.",
+          "D) We have plenty of time to wait."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) If you could confirm the meeting time, I would be more than happy to accommodate.",
+          "B) It is difficult to find a good time.",
+          "C) I won't be attending.",
+          "D) I am not interested in the meeting."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) Thank you once again for your commitment to a safer workplace.",
+          "B) I am unhappy with the situation.",
+          "C) I do not care about safety.",
+          "D) This is not my concern."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-09"
+  },
+  {
+    "title": "Project Deadline Update",
+    "passage": "From: John Smith <john.smith@company.com>\nTo: Project Team <project.team@company.com>\nSubject: Update on Project Deadline\n\nDear Team,\n\nI hope this message finds you well. I wanted to inform you all about an important update regarding our project timeline. After discussions with upper management, we have decided to extend the project deadline by two weeks. This decision comes as a response to the need for additional time to ensure that we meet our quality standards without compromising on our deliverables.\n\nThe new deadline is now set for April 15, and I believe this extra time will allow us to refine our work and incorporate the feedback we received from our last review.\n\nPlease adjust your schedules accordingly and reach out if you have any questions or need support as we move forward.\n\nBest regards,\nJohn\n\n---\n\nFrom: Sarah Johnson <sarah.johnson@company.com>\nTo: John Smith <john.smith@company.com>\nSubject: RE: Update on Project Deadline\n\nHi John,\n\nThank you for the update on the project deadline. I appreciate the extra time to focus on the quality of our work. I will communicate this change to my team and ensure they adjust their plans accordingly.\n\nCould you please clarify if this change will affect our upcoming milestones? I want to make sure that we stay aligned with our goals.\n\nThank you!\nSarah\n\n---\n\nFrom: John Smith <john.smith@company.com>\nTo: Sarah Johnson <sarah.johnson@company.com>\nSubject: RE: Update on Project Deadline\n\nHi Sarah,\n\nThanks for your prompt response. The extension of the overall deadline will also impact our milestones, and I will send out a revised timeline shortly. This should help us all stay on track with our deliverables.\n\nLet me know if you need anything else!\n\nBest,\nJohn",
+    "replyEmail": "Dear John,\n\nThank you for the clarification regarding the milestones. \nI believe that having a revised timeline will be beneficial for all of us. \n\nFor the next steps, [BLANK 1] \nPlease let me know if this affects the resources we discussed earlier. \nI want to ensure that we keep communication open about any changes moving forward.\n\nThank you again for your leadership on this project. \nLooking forward to your update on the timeline.\n\nBest,\nSarah\n\n[BLANK 2] \n[BLANK 3] \n[BLANK 4] \n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of John's first email?",
+        "options": [
+          "A) To request feedback from the team",
+          "B) To inform the team of a deadline change",
+          "C) To introduce a new project",
+          "D) To set up a meeting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does John feel about the deadline extension?",
+        "options": [
+          "A) He is disappointed",
+          "B) He is relieved",
+          "C) He is indifferent",
+          "D) He is frustrated"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What does Sarah ask about in her email?",
+        "options": [
+          "A) The quality standards",
+          "B) Upcoming milestones",
+          "C) Team performance",
+          "D) Project budgeting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What tone does John use in his emails?",
+        "options": [
+          "A) Formal and cold",
+          "B) Casual and unprofessional",
+          "C) Professional and warm",
+          "D) Sarcastic and negative"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "How does John respond to Sarah's question about the new timeline?",
+        "options": [
+          "A) He ignores it",
+          "B) He will send a revised timeline",
+          "C) He states it won't change",
+          "D) He asks her to find out"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What does John want the team to do after receiving the email?",
+        "options": [
+          "A) Celebrate the extension",
+          "B) Adjust their schedules",
+          "C) Submit their work earlier",
+          "D) Wait for further updates"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) I believe we should continue as planned.",
+          "B) Please notify me if you encounter any issues.",
+          "C) It is vital for us to stick to the old schedule.",
+          "D) Let's celebrate the deadline extension."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) I am unsure how this will work.",
+          "B) Let me know if you need further assistance.",
+          "C) This means we will have less time to complete it.",
+          "D) I will handle it on my own."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) I appreciate the leadership.",
+          "B) I find this change unnecessary.",
+          "C) I think we're still behind schedule.",
+          "D) I'm worried about the resources."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) I need more time to think.",
+          "B) I hope everyone is doing fine.",
+          "C) I will let the team know.",
+          "D) I still need clarification."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) I'm looking forward to working together.",
+          "B) I hope to delay our next meeting.",
+          "C) I'm eager to see the updated timeline.",
+          "D) I encourage everyone to take a break."
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part1-10"
+  },
+  {
+    "title": "Parental Leave Request and Coverage Plan",
+    "passage": "From: John Smith <john.smith@workplace.com>  \nTo: HR Department <hr@workplace.com>  \nSubject: Request for Parental Leave  \n\nDear HR Team,  \n\nI hope this message finds you well. I am writing to formally request parental leave starting from March 15th, 2024, as my partner and I are expecting a baby. I would like to take the full duration of the statutory leave, which I understand is 12 months, returning to work in March 2025.  \n\nIn preparation for my absence, I have outlined a plan for coverage of my responsibilities. I have spoken with Sarah, and she has kindly agreed to oversee my projects during my leave. I will ensure that all my tasks are up to date before my leave begins, and I am more than willing to assist in the transition during the final weeks of February.  \n\nPlease let me know if you need any additional information or if there are forms I need to complete to formalize this process. Thank you for your support during this exciting time in my life.  \n\nBest regards,  \nJohn Smith  \n\n---  \n\nFrom: HR Department <hr@workplace.com>  \nTo: John Smith <john.smith@workplace.com>  \nSubject: RE: Request for Parental Leave  \n\nDear John,  \n\nThank you for your email and for your proactive planning for your parental leave. We will be happy to process your request for leave starting March 15th, 2024. It’s great to hear that you have discussed coverage with Sarah, and we appreciate your commitment to ensuring a smooth transition.  \n\nPlease be sure to fill out the parental leave application form attached to this email and return it to us by the end of the week. If you have any further questions or need assistance with the process, feel free to reach out. We wish you all the best as you prepare for this new chapter in your life.  \n\nKind regards,  \nHR Department",
+    "replyEmail": "From: John Smith <john.smith@workplace.com>  \nTo: HR Department <hr@workplace.com>  \nSubject: RE: Request for Parental Leave  \n\nDear HR Team,  \n\nThank you for your prompt response regarding my parental leave request. I really appreciate your support. I will  [BLANK 1]  the parental leave application form by the end of the week. Additionally, I will [BLANK 2] Sarah to ensure that she has all the information she needs to cover my projects.  \n\nPlease let me know if there’s anything else I should complete or if you require further details about my leave. I’m looking forward to this new experience and appreciate the understanding from the HR team.  \n\nThanks again!  \n\nBest,  \nJohn Smith  \n\n[BLANK 3]  \n[BLANK 4]  \n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of John's email?",
+        "options": [
+          "A) To request parental leave",
+          "B) To ask for a promotion",
+          "C) To submit an expense report",
+          "D) To provide feedback on a company policy"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does John use in his email?",
+        "options": [
+          "A) Formal and appreciative",
+          "B) Casual and indifferent",
+          "C) Urgent and demanding",
+          "D) Sarcastic and humorous"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the duration of the leave that John is requesting?",
+        "options": [
+          "A) 6 months",
+          "B) 12 months",
+          "C) 9 months",
+          "D) 3 months"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What role will Sarah have during John's absence?",
+        "options": [
+          "A) She will replace John entirely",
+          "B) She will oversee John's projects",
+          "C) She will manage the HR department",
+          "D) She will provide training to new employees"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What does the HR Department request from John?",
+        "options": [
+          "A) To find a replacement",
+          "B) To fill out a parental leave application form",
+          "C) To return to work early",
+          "D) To write a report on his projects"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "How does John feel about the support he received from HR?",
+        "options": [
+          "A) Frustrated and misunderstood",
+          "B) Grateful and appreciative",
+          "C) Indifferent",
+          "D) Angry and annoyed"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) ignore",
+          "B) submit",
+          "C) decline",
+          "D) discuss"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) inform",
+          "B) discuss",
+          "C) update",
+          "D) train"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) I will miss everyone",
+          "B) Please let me know",
+          "C) I am not ready",
+          "D) I hope to be back soon"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) Thank you for your time",
+          "B) I appreciate your understanding",
+          "C) I am leaving for good",
+          "D) I will be in touch"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) Best wishes",
+          "B) See you later",
+          "C) Sincerely",
+          "D) Regards"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part1-11"
+  },
+  {
+    "title": "Home Damage Claim Inquiry",
+    "passage": "From: Sarah Johnson <sarah.johnson@email.com>\nTo: Claims Department <claims@insurancecompany.com>\nSubject: Home Damage Claim - Policy #123456\n\nDear Claims Department,\n\nI hope this message finds you well. I am writing to inquire about the status of my home damage claim filed on October 12, 2023, under policy number 123456. As you may recall, my home sustained significant damage from a recent storm, and I submitted all the necessary documentation for review.\n\nIt has been over three weeks since I submitted my claim, and I have not yet received any updates regarding its progress. I understand that these matters may take time, but I would greatly appreciate any information you could provide regarding the timeline for processing my claim.\n\nThank you for your attention to this urgent matter. I look forward to your prompt response.\n\nBest regards,\nSarah Johnson\n\n---\n\nFrom: Claims Department <claims@insurancecompany.com>\nTo: Sarah Johnson <sarah.johnson@email.com>\nSubject: RE: Home Damage Claim - Policy #123456\n\nDear Ms. Johnson,\n\nThank you for reaching out to us. We apologize for the delay in processing your home damage claim. Your claim is currently under review, and we are working diligently to expedite the process due to the recent high volume of claims following the storm.\n\nWe expect to have an update for you by the end of this week. In the meantime, if you have any further questions or need additional information, please do not hesitate to contact us.\n\nThank you for your patience and understanding.\n\nSincerely,\nThe Claims Department\n\n---\n\nFrom: Sarah Johnson <sarah.johnson@email.com>\nTo: Claims Department <claims@insurancecompany.com>\nSubject: RE: Home Damage Claim - Policy #123456\n\nDear Claims Department,\n\nThank you for your prompt reply. I appreciate your efforts in addressing my claim. I will await your update at the end of this week.\n\nBest regards,\nSarah Johnson",
+    "replyEmail": "Dear Claims Department,\n\nI appreciate your response regarding my claim status. Please let me know if [BLANK 1]. I am hoping to finalize the repairs soon, as [BLANK 2]. If there are any issues with my documentation, [BLANK 3]. Thank you for your assistance in this matter. I look forward to hearing back from you soon regarding [BLANK 4].\n\nBest regards,\nSarah Johnson\n\n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Sarah Johnson's first email?",
+        "options": [
+          "A) To file a new claim",
+          "B) To request an update on her existing claim",
+          "C) To complain about the insurance company",
+          "D) To submit additional documentation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does Sarah use in her email?",
+        "options": [
+          "A) Frustrated",
+          "B) Polite",
+          "C) Angry",
+          "D) Indifferent"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How long has Sarah been waiting for an update on her claim?",
+        "options": [
+          "A) One week",
+          "B) Two weeks",
+          "C) Over three weeks",
+          "D) One month"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What information does the Claims Department provide in their reply?",
+        "options": [
+          "A) They have approved the claim",
+          "B) They are reviewing the claim",
+          "C) They have denied the claim",
+          "D) They need more documentation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What does Sarah hope for in her follow-up email?",
+        "options": [
+          "A) To cancel her claim",
+          "B) To finalize her repairs soon",
+          "C) To receive additional compensation",
+          "D) To speak with a manager"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) you need any further documentation",
+          "B) I can provide additional details if necessary",
+          "C) everything is in order",
+          "D) you have more questions"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) the damages are severe",
+          "B) I would like to move on",
+          "C) my family is currently displaced",
+          "D) I have already made repairs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) I will be filing a complaint",
+          "B) please let me know immediately",
+          "C) I can wait a bit longer",
+          "D) I appreciate your thorough review"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) the approval of my claim",
+          "B) the next steps",
+          "C) the timeline for repairs",
+          "D) your review process"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) I look forward to your response",
+          "B) Please reply at your earliest convenience",
+          "C) Thank you for your time",
+          "D) I am happy to wait"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part1-12"
+  },
+  {
+    "title": "Community Clean-Up Event Coordination",
+    "passage": "From: Emily Johnson <emily.johnson@email.com>\nTo: Alex Thompson <alex.thompson@email.com>\nSubject: Community Clean-Up Event Planning\n\nHi Alex,\n\nI hope this email finds you well! As the volunteer coordinator for our community service group, I'm excited to start organizing the upcoming clean-up event scheduled for the last Saturday of this month. I wanted to reach out to discuss a few details and enlist your help.\n\nWe are aiming to gather volunteers from around the neighborhood to help clean up parks and streets. I believe that we can create a positive impact and foster community pride through this initiative.\n\nCould you please confirm your availability to help coordinate the event? Additionally, it would be great if you could spread the word to any potential volunteers you know. I'm also looking for suggestions on what supplies we might need, such as garbage bags, gloves, and refreshments for the participants.\n\nThank you for your support!\n\nBest,\nEmily\n\n---\n\nFrom: Alex Thompson <alex.thompson@email.com>\nTo: Emily Johnson <emily.johnson@email.com>\nSubject: Re: Community Clean-Up Event Planning\n\nHi Emily,\n\nThanks for reaching out! I'm thrilled to hear about the clean-up event and would love to help out.\n\nI'm available to assist on the day of the event and can also help with logistics leading up to it. I’ll be sure to spread the word to my neighbors and friends.\n\nAs for supplies, I think we should definitely get more garbage bags and gloves. Maybe we can also consider reaching out to local businesses for donations, like snacks or drinks for volunteers after the work is done.\n\nLet me know how else I can assist! Looking forward to making a difference together.\n\nBest,\nAlex",
+    "replyEmail": "Subject: Re: Community Clean-Up Event Planning\n\nHi Alex,\n\nThank you for your quick response! I'm glad to hear that you're on board for the clean-up event. It’s great that you can help with logistics as well. I appreciate your willingness to spread the word!\n\nI agree that we should reach out to local businesses for [BLANK 1] to keep our volunteers energized. We’ll also need to prepare for [BLANK 2] to ensure everyone is safe while they work. Let’s aim to meet [BLANK 3] next week to go over our plan in more detail.\n\nI'll create a list of volunteers and the supplies we need. If you have any additional ideas, feel free to share them. I’m really looking forward to [BLANK 4] this community initiative and hope we can make it a success!\n\nThanks again for your help!\n\nBest,\nEmily\n\n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Emily's email?",
+        "options": [
+          "To confirm volunteers for the event",
+          "To discuss event details",
+          "To request feedback on the event",
+          "To cancel the event"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Alex feel about the community clean-up event?",
+        "options": [
+          "Indifferent",
+          "Excited",
+          "Frustrated",
+          "Uncertain"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What supplies does Emily mention in her email?",
+        "options": [
+          "Water bottles",
+          "Garbage bags",
+          "Brooms",
+          "Paints"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What suggestion does Alex make regarding supplies?",
+        "options": [
+          "Buying new gloves",
+          "Donating money",
+          "Contacting local businesses",
+          "Hiring a cleaning service"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What tone does Emily use in her email?",
+        "options": [
+          "Formal and distant",
+          "Casual and friendly",
+          "Angry and confrontational",
+          "Requesting and demanding"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What are Emily's feelings toward Alex's involvement?",
+        "options": [
+          "Disappointed",
+          "Encouraging",
+          "Dismissive",
+          "Annoyed"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "some supplies",
+          "cash donations",
+          "waste disposal fees",
+          "cleaning equipment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "potential risks",
+          "cleaning solutions",
+          "event schedules",
+          "volunteer assignments"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "early",
+          "later",
+          "tomorrow",
+          "next month"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "disappointing",
+          "starting",
+          "avoiding",
+          "ignoring"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "Have a great day!",
+          "It’s going to be fun!",
+          "See you there!",
+          "Enjoy the weather!"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part1-13"
+  },
+  {
+    "title": "Response to Online Review",
+    "passage": "From: Sarah's Coffee Shop <sarah@coffeeshop.com>\nTo: John Doe <john.doe123@gmail.com>\nSubject: Response to Your Review\n\nHi John,\n\nThank you for your feedback regarding your recent experience at Sarah's Coffee Shop. I want to sincerely apologize for the inconvenience you faced during your visit. It is always our goal to provide exceptional service and delicious coffee, and I am disappointed to hear that we fell short this time.\n\nI understand that the wait time for your order was longer than expected, and that our barista may not have been as friendly as he should have been. I appreciate you bringing this to my attention as we take customer feedback very seriously and will use it to improve.\n\nAs a small business, we thrive on the support of our community and feedback from our customers. I would love the opportunity to make it up to you. Please let me know if you would be willing to visit us again, and I’ll personally ensure you have a great experience. I can also offer you a complimentary drink on your next visit.\n\nThank you for your understanding, and I hope to hear back from you soon.\n\nBest regards,\n\nSarah\nOwner, Sarah's Coffee Shop\n\n---\n\nFrom: John Doe <john.doe123@gmail.com>\nTo: Sarah's Coffee Shop <sarah@coffeeshop.com>\nSubject: Re: Response to Your Review\n\nHi Sarah,\n\nThank you for your prompt response. I appreciate your apology and your willingness to address my concerns. I enjoyed your coffee and would be willing to give your shop another try. It's great to hear that you are committed to improving your service. \n\nLet’s see how my next visit goes!\n\nBest,\n\nJohn",
+    "replyEmail": "Hi Sarah,\n\nThank you for your email and your willingness to make amends. I’m looking forward to trying your coffee again. [BLANK 1] I appreciate the offer of a complimentary drink. [BLANK 2] I am happy to give your shop another chance.\n\nPlease let me know if there is a specific time that would work best.\n\nThanks again for your understanding.\n\nBest,\n\nJohn [BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Sarah's email?",
+        "options": [
+          "A: To apologize for a negative experience",
+          "B: To promote a new menu item",
+          "C: To request a meeting",
+          "D: To ask for more reviews"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Sarah feel about the complaint?",
+        "options": [
+          "A: Indifferent",
+          "B: Defensive",
+          "C: Disappointed",
+          "D: Angry"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What does Sarah offer to John in her email?",
+        "options": [
+          "A: A discount on future purchases",
+          "B: A complimentary drink",
+          "C: A free dessert",
+          "D: A gift card"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does John imply with his response?",
+        "options": [
+          "A: He will never return",
+          "B: He appreciates Sarah's effort",
+          "C: He prefers other coffee shops",
+          "D: He is a regular customer"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What tone does Sarah use in her email?",
+        "options": [
+          "A: Formal and distant",
+          "B: Friendly and apologetic",
+          "C: Angry and confrontational",
+          "D: Indifferent and casual"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What can we infer about Sarah's Coffee Shop?",
+        "options": [
+          "A: It is a large chain",
+          "B: It is a new business",
+          "C: It values customer feedback",
+          "D: It is closing down"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: I hope you are not too upset.",
+          "B: It sounds like a lovely offer.",
+          "C: I appreciate the gesture and look forward to it.",
+          "D: I didn't really enjoy my last experience."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: I'll think about it.",
+          "B: This sounds promising.",
+          "C: I won't be coming back.",
+          "D: I prefer other coffee shops."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: I'm eager to return.",
+          "B: I'm still upset.",
+          "C: I'm never coming back.",
+          "D: I'm glad to hear your shop is busy."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: I hope you are doing well.",
+          "B: I won’t be returning.",
+          "C: I'm not interested in offers.",
+          "D: I don't have time to visit."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-14"
+  },
+  {
+    "title": "Office Seating Arrangement Change",
+    "passage": "From: Sarah Thompson <sarah.thompson@company.com>  \nTo: Mark Reed <mark.reed@company.com>  \nSubject: New Office Seating Arrangement  \n\nHi Mark,  \n\nI hope this message finds you well. I wanted to inform you that starting next week, we will be implementing a new seating arrangement in the office. The aim is to encourage collaboration and improve communication among team members.  \n\nAfter consulting with management, we have decided to cluster teams together to facilitate better teamwork. I would appreciate any feedback or concerns you might have regarding this change.  \n\nLooking forward to hearing from you.  \n\nBest,  \nSarah  \n\n---  \nFrom: Mark Reed <mark.reed@company.com>  \nTo: Sarah Thompson <sarah.thompson@company.com>  \nSubject: Re: New Office Seating Arrangement  \n\nHi Sarah,  \n\nThank you for the update! I think the new seating arrangement has the potential to enhance collaboration among our team members. However, I do have a few concerns regarding the noise level.  \n\nSome team members are accustomed to working in a quieter environment, and I hope we can find a way to keep distractions to a minimum. Perhaps we could designate some quiet zones or allow for flexible seating on certain days?  \n\nLooking forward to discussing this further!  \n\nBest,  \nMark  \n\n---  \nFrom: Sarah Thompson <sarah.thompson@company.com>  \nTo: Mark Reed <mark.reed@company.com>  \nSubject: Re: New Office Seating Arrangement  \n\nHi Mark,  \n\nI appreciate your thoughts on this matter. You are right; maintaining a balance between collaboration and a conducive workspace is crucial.  \n\nI will bring up the idea of quiet zones during our next team meeting. Thank you for your valuable input!  \n\nBest,  \nSarah",
+    "replyEmail": "From: Mark Reed <mark.reed@company.com>  \nTo: Sarah Thompson <sarah.thompson@company.com>  \nSubject: Re: New Office Seating Arrangement  \n\nHi Sarah,  \n\nThank you for considering my feedback. I believe that having [BLANK 1] could indeed help in managing noise levels. It's important that everyone is comfortable in their work environment. Additionally, implementing flexible seating [BLANK 2] could give team members autonomy over their workspace.  \n\nI’m looking forward to seeing how these changes improve our teamwork. If we can create a space that encourages both collaboration and focus, it will [BLANK 3] our productivity. Please keep me updated about the discussion in the next meeting.  \n\nThanks again!  \n\nBest,  \nMark  \n\n[BLANK 4]  \nMark  \n\n[BLANK 5]  \nMark",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Sarah's email?",
+        "options": [
+          "A: Announce a change",
+          "B: Request feedback",
+          "C: Schedule a meeting",
+          "D: Discuss employee concerns"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Mark feel about the new seating arrangement?",
+        "options": [
+          "A: Indifferent",
+          "B: Supportive but cautious",
+          "C: Opposed",
+          "D: Excited"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What concern does Mark express regarding the new seating arrangement?",
+        "options": [
+          "A: Lack of space",
+          "B: Increased noise level",
+          "C: No privacy",
+          "D: Inconvenient location"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What solution does Mark suggest for managing noise?",
+        "options": [
+          "A: Move to another office",
+          "B: Quiet zones",
+          "C: Flexible seating",
+          "D: Soundproofing the office"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What does Sarah agree to bring up in the next meeting?",
+        "options": [
+          "A: Moving the entire office",
+          "B: Designating quiet zones",
+          "C: Holding training sessions",
+          "D: Changing work hours"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is the tone of Sarah’s emails?",
+        "options": [
+          "A: Confrontational",
+          "B: Professional and cooperative",
+          "C: Casual",
+          "D: Dismissive"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: quiet zones",
+          "B: a new coffee machine",
+          "C: more desks",
+          "D: a new break room"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: every day",
+          "B: every week",
+          "C: on certain days",
+          "D: all the time"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: decrease",
+          "B: improve",
+          "C: hinder",
+          "D: complicate"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: Best wishes,",
+          "B: Sincerely,",
+          "C: Cheers,",
+          "D: Regards,"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: Thanks for your help!",
+          "B: Let me know if I can assist further.",
+          "C: I’ll see you later.",
+          "D: Looking forward to our lunch."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part1-15"
+  },
+  {
+    "title": "Request for Early Lease Termination",
+    "passage": "From: Sarah Thompson <sarah.thompson@email.com>\nTo: John Adams <john.adams@email.com>\nSubject: Request for Early Lease Termination\n\nDear John,\n\nI hope this message finds you well. I am writing to formally request an early termination of my lease at 123 Maple Street. Due to a recent job relocation, I will be moving to Vancouver next month, and unfortunately, I will not be able to fulfill the remainder of my lease term.\n\nI understand that this request may bring about some inconvenience, and I sincerely apologize for that. I am willing to assist in the process by providing ample notice and helping to find another tenant, if possible. Please let me know if you would accept this early termination and any conditions that may apply.\n\nThank you for your understanding, and I look forward to your prompt response.\n\nBest regards,\nSarah\n\n---\n\nFrom: John Adams <john.adams@email.com>\nTo: Sarah Thompson <sarah.thompson@email.com>\nSubject: RE: Request for Early Lease Termination\n\nHi Sarah,\n\nThank you for your email, and I hope your new job is exciting! I appreciate you reaching out regarding the lease termination. \n\nWhile I understand your reasons, I must inform you that the lease is binding until the end of the term, which is in three months. However, I am open to discussing your request further. If you can provide a replacement tenant or assist in advertising the unit, I might consider an early termination agreement that we can both agree on.\n\nLet’s discuss this further when you have time.\n\nBest,\nJohn\n\n---\n\nFrom: Sarah Thompson <sarah.thompson@email.com>\nTo: John Adams <john.adams@email.com>\nSubject: Re: RE: Request for Early Lease Termination\n\nHi John,\n\nThank you for your quick reply! I appreciate your willingness to discuss this matter further. I will begin looking for a replacement tenant immediately and keep you updated on my progress.\n\nBest,\nSarah",
+    "replyEmail": "Dear John,\n\nThank you for understanding my situation regarding the lease termination. I appreciate your willingness to discuss this matter further. [BLANK 1] I am confident that I will be able to find someone to take over the lease.\n\nIn the meantime, I would like to know what conditions you would require for the early termination agreement. [BLANK 2] I hope we can work together to find a solution that suits us both. \n\nI’ll make sure to keep you in the loop regarding the search for a new tenant. [BLANK 3] Please let me know a convenient time for us to discuss this over the phone or in person.\n\nThank you once again for your understanding. [BLANK 4] I appreciate your support during this transition.\n\nBest regards,\nSarah\n\n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Sarah's email?",
+        "options": [
+          "To request early lease termination",
+          "To inform John about her new job",
+          "To complain about her lease",
+          "To ask for a rent discount"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What tone does Sarah use in her email?",
+        "options": [
+          "Apologetic and formal",
+          "Casual and friendly",
+          "Indifferent and formal",
+          "Angry and confrontational"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What does John express in his response?",
+        "options": [
+          "He agrees to terminate the lease immediately",
+          "He is unwilling to discuss the issue",
+          "He is open to negotiating an early termination",
+          "He insists on a rent increase"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does Sarah offer to do to help with her request?",
+        "options": [
+          "Find another tenant",
+          "Reduce her remaining rent",
+          "Leave immediately",
+          "Ignore the lease terms"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What can be inferred about John’s perspective on the lease?",
+        "options": [
+          "He is strict about the lease terms",
+          "He is indifferent to tenant issues",
+          "He has no intention of responding",
+          "He is flexible with lease agreements"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "I will look for potential tenants right away.",
+          "I’m not sure if I can find a replacement tenant.",
+          "Let’s leave things as they are.",
+          "I hope you reconsider your stand."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "I am ready to agree to any terms.",
+          "Please let me know your conditions.",
+          "I don’t want to discuss this further.",
+          "There is no need for conditions."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "I will inform you once I have found someone.",
+          "I plan to move out regardless.",
+          "There is no need for a tenant.",
+          "I hope you will not mind."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "I look forward to receiving your reply.",
+          "I expect a quick resolution.",
+          "I appreciate your support on this matter.",
+          "I am disappointed with your response."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "Looking forward to your reply.",
+          "Thanks for your time.",
+          "I hope to chat soon.",
+          "Best regards,"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-16"
+  },
+  {
+    "title": "Workplace Safety Concerns",
+    "passage": "From: John Smith <john.smith@company.com>\nTo: Safety Committee <safety.committee@company.com>\nSubject: Concerns Regarding Workplace Safety\n\nDear Safety Committee,\n\nI hope this message finds you well. I am writing to express my concerns regarding some safety issues that I have observed in our workplace. Recently, I noticed that several emergency exits are blocked, which could pose significant risks in the event of an emergency. Additionally, some of the fire extinguishers in our area have not been inspected for over a year, and I believe it is crucial for the safety of all employees that these issues are addressed promptly.\n\nI appreciate the effort the committee puts into ensuring a safe work environment, and I trust that my concerns will be taken seriously. Please let me know if I can provide any further information or assistance regarding these matters.\n\nThank you for your attention to this important issue.\n\nBest regards,\nJohn Smith\n\n---\n\nFrom: Safety Committee <safety.committee@company.com>  \nTo: John Smith <john.smith@company.com>  \nSubject: Re: Concerns Regarding Workplace Safety  \n\nDear John,\n\nThank you for bringing these concerns to our attention. We take workplace safety very seriously and appreciate employees like you who help us identify potential hazards. We will investigate the blocked emergency exits and the inspection status of the fire extinguishers as soon as possible.\n\nYour input is invaluable to maintaining a safe work environment. We will follow up with you regarding our findings and any necessary actions to resolve these concerns.\n\nThank you once again for your vigilance.\n\nSincerely,\nThe Safety Committee",
+    "replyEmail": "From: John Smith <john.smith@company.com>  \nTo: Safety Committee <safety.committee@company.com>  \nSubject: Re: Concerns Regarding Workplace Safety  \n\nDear Safety Committee,\n\nThank you for your prompt response to my concerns. I appreciate your commitment to workplace safety. I would like to offer my assistance in any way possible, as I believe it's important that we all contribute to maintaining a safe environment. If there are any specific steps you need me to take, please let me know.\n\n[BLANK 1]  \n[BLANK 2]  \n[BLANK 3]  \n[BLANK 4]  \n[BLANK 5]  \n\nThank you again for your attention to this matter.\n\nBest regards,\nJohn Smith",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary concern raised by John in his email?",
+        "options": [
+          "A) Blocked emergency exits",
+          "B) Inadequate training",
+          "C) Poor communication",
+          "D) Lack of resources"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the tone of John’s email?",
+        "options": [
+          "A) Aggressive",
+          "B) Informal",
+          "C) Concise",
+          "D) Professional"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What action does the Safety Committee intend to take?",
+        "options": [
+          "A) Ignore the concerns",
+          "B) Investigate the issues",
+          "C) Blame the employees",
+          "D) Shut down the workplace"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does John offer to the Safety Committee?",
+        "options": [
+          "A) To escalate the issue",
+          "B) His assistance",
+          "C) To leave the company",
+          "D) His resignation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is implied about the importance of safety in the workplace?",
+        "options": [
+          "A) It is not a priority",
+          "B) It is essential and valued",
+          "C) It is only the responsibility of management",
+          "D) It is disregarded by employees"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is the likely next step after the Safety Committee's response?",
+        "options": [
+          "A) John will be fired",
+          "B) No action will be taken",
+          "C) The committee will follow up on the concerns",
+          "D) John will be ignored"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) I am happy to help with any inspections.",
+          "B) I feel that safety is overrated.",
+          "C) I think I should avoid these issues.",
+          "D) Safety is not my responsibility."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) I often see safety violations in our office.",
+          "B) I would rather not get involved.",
+          "C) I believe this matter is urgent.",
+          "D) It is annoying to deal with safety."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) I am not sure how I can help.",
+          "B) I can schedule another meeting.",
+          "C) I am available for any discussions.",
+          "D) I think someone else should handle this."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A) It seems like a minor issue.",
+          "B) I hope to see improvements soon.",
+          "C) I do not care about safety.",
+          "D) I enjoy working in a safe place."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A) I am looking forward to hearing back.",
+          "B) I will keep quiet from now on.",
+          "C) I think this is a waste of time.",
+          "D) I appreciate the committee's efforts."
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-17"
+  },
+  {
+    "title": "Email Exchange on Allergy Policy",
+    "passage": "From: Sarah Johnson <sarah.johnson@email.com>\nTo: Daycare Director <director@daycare.org>\nSubject: Inquiry About Allergy Policy\n\nDear Daycare Director,\n\nI hope this message finds you well. I am writing to inquire about your policy regarding allergies, specifically food allergies, at your daycare. My son, Ethan, has a severe nut allergy, and I want to ensure that you are aware of this and that there are measures in place to protect him while he is at your facility.\n\nCould you please provide me with more information about your allergy management procedures? Additionally, I’d like to know how staff members are trained to handle allergic reactions and what steps are taken to avoid cross-contamination during snack and meal times.\n\nThank you for your attention to this important matter. I look forward to your prompt response.\n\nBest regards,\nSarah Johnson\n\n---\n\nFrom: Daycare Director <director@daycare.org>\nTo: Sarah Johnson <sarah.johnson@email.com>\nSubject: RE: Inquiry About Allergy Policy\n\nDear Ms. Johnson,\n\nThank you for reaching out and for your concern regarding Ethan’s nut allergy. We take allergies very seriously at our daycare, and I’m happy to provide you with the details of our policy.\n\nAll staff members are trained in recognizing and responding to allergic reactions, including the use of EpiPens. We maintain a nut-free environment and work closely with parents to ensure that any snacks provided by other children do not contain nuts. Additionally, we have specific protocols in place to prevent cross-contamination during meal preparations.\n\nPlease rest assured that Ethan's safety is our priority. If you have any further questions or concerns, don’t hesitate to reach out.\n\nBest, \nDaycare Director\n\n---\n\nFrom: Sarah Johnson <sarah.johnson@email.com>\nTo: Daycare Director <director@daycare.org>\nSubject: RE: Inquiry About Allergy Policy\n\nDear Daycare Director,\n\nThank you for your detailed response. I appreciate the steps you are taking to ensure a safe environment for Ethan. \n\nCould you confirm if these measures are communicated to all parents and staff regularly? I think it might also be beneficial to have periodic reminders about the importance of maintaining a nut-free space.\n\nThanks again for your attention to this matter. \n\nWarm regards,\nSarah Johnson",
+    "replyEmail": "Dear Daycare Director,\n\nThank you for your prompt response regarding Ethan's allergy. I am glad to hear about your thorough policies in place to protect him. \n\n[BLANK 1] It is crucial that every parent understands the importance of complying with these regulations. \n\n[BLANK 2] If there are any meetings or workshops planned to discuss allergy management, I would love to attend. \n\n[BLANK 3] Additionally, I would appreciate it if you could share this information with other parents, so they can also be informed. \n\n[BLANK 4] Thank you again for your commitment to the safety of all children. \n\n[BLANK 5] I look forward to hearing back from you soon.\n\nBest regards,\nSarah Johnson",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the primary purpose of Sarah Johnson's initial email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Sarah Johnson describe Ethan’s allergy?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What tone does the Daycare Director use in their response?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What reassurance does the Daycare Director provide to Sarah Johnson?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What does Sarah want to confirm in her last email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What is implied about the daycare's allergy policy?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-18"
+  },
+  {
+    "title": "Project Update on Deadline Change",
+    "passage": "From: Jamie Taylor <jamie.taylor@company.com>\nTo: Project Team <project.team@company.com>\nSubject: Important Update on Project Deadline\n\nDear Team,\n\nI hope this message finds you well. I am writing to inform you about a change to the deadline for our current project, which has been moved from March 15th to April 5th. This decision was made after reviewing our progress and acknowledging some unexpected challenges that have arisen.\n\nI appreciate your hard work and dedication thus far, and I believe this extension will allow us to deliver a higher quality final product. Please adjust your individual timelines accordingly and feel free to reach out if you have any questions or need assistance with your tasks.\n\nThank you for your understanding and cooperation.\n\nBest,\nJamie\n\n---\n\nFrom: Alex Chen <alex.chen@company.com>\nTo: Jamie Taylor <jamie.taylor@company.com>\nSubject: Re: Important Update on Project Deadline\n\nHi Jamie,\n\nThank you for the update. I completely understand the need for an extended timeline given the circumstances. I will ensure my team is briefed and we’ll modify our plans to comply with the new deadline. \n\nCould you please confirm whether this means we will also adjust the budget allocated for additional testing? \n\nThanks again for keeping everyone informed!\n\nBest regards,\nAlex\n\n---\n\nFrom: Jamie Taylor <jamie.taylor@company.com>\nTo: Alex Chen <alex.chen@company.com>\nSubject: Re: Important Update on Project Deadline\n\nHi Alex,\n\nGood question! I will discuss the budget adjustments with senior management and update you accordingly. Please keep me posted on your team’s progress and let me know if any further complications arise.\n\nBest,\nJamie",
+    "replyEmail": "Dear Jamie,\n\nThank you for your prompt reply about the deadline change. I appreciate your willingness to address the budget concerns.\n\n[BLANK 1] I will relay this information to my team immediately. \n[BLANK 2] We are committed to ensuring the project meets the new timeline without compromising quality.\n[BLANK 3] If anything else changes, please let me know as soon as possible. \n[BLANK 4] \n[BLANK 5] I look forward to your guidance on this matter.\n\nBest regards,\nAlex",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Jamie's first email?",
+        "options": [
+          "A: To discuss project success",
+          "B: To announce a deadline change",
+          "C: To schedule a team meeting",
+          "D: To assign new tasks"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is Jamie’s tone in the emails?",
+        "options": [
+          "A: Formal and apologetic",
+          "B: Casual and friendly",
+          "C: Professional and supportive",
+          "D: Urgent and demanding"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What challenge does the team face according to Jamie?",
+        "options": [
+          "A: Lack of resources",
+          "B: Unexpected challenges",
+          "C: Team conflicts",
+          "D: Inadequate management"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What does Alex ask about in his email?",
+        "options": [
+          "A: Team productivity",
+          "B: Budget adjustments",
+          "C: Upcoming meetings",
+          "D: Team morale"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What action does Jamie suggest to team members?",
+        "options": [
+          "A: Work overtime",
+          "B: Adjust individual timelines",
+          "C: Share progress updates",
+          "D: Find new team members"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What does Alex mean by 'keeping everyone informed'?",
+        "options": [
+          "A: Ensuring the team meets deadlines",
+          "B: Providing updates to management",
+          "C: Sharing project information",
+          "D: Communicating effectively within the team"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: We will rush to meet the deadline.",
+          "B: I appreciate your consideration on this matter.",
+          "C: I will take this news positively.",
+          "D: We will need to reconsider our testing schedule."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: I hope my team will cooperate.",
+          "B: We are handling everything smoothly.",
+          "C: Our team will be strategic in our approach.",
+          "D: I will inform them about the urgency."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: I will request more resources.",
+          "B: I might have further questions.",
+          "C: Communication is key in challenges.",
+          "D: I will schedule more meetings."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: I look forward to working more closely.",
+          "B: I find this extended deadline unacceptable.",
+          "C: I will not make further changes.",
+          "D: I feel unprepared for this adjustment."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: Thank you for your understanding.",
+          "B: Please advise us on next steps.",
+          "C: Have a great day!",
+          "D: I hope to receive a note soon."
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part1-19"
+  },
+  {
+    "title": "Customer Service Follow-Up",
+    "passage": "From: Jane Smith <jane.smith@email.com>\nTo: Customer Service <customerservice@appliancecompany.com>\nSubject: Defective Appliance Return\n\nDear Customer Service,\n\nI hope this message finds you well. I am writing to follow up regarding my recent return of a defective appliance, model #1234AB. I sent it back on October 10th and have not yet received confirmation of its arrival or any updates on the refund process. \n\nI would appreciate it if you could provide me with an update at your earliest convenience, as I had planned to use this refund to purchase a replacement appliance. Thank you for your attention to this matter.\n\nBest regards,\nJane Smith\n\n---\n\nFrom: Customer Service <customerservice@appliancecompany.com>\nTo: Jane Smith <jane.smith@email.com>\nSubject: RE: Defective Appliance Return\n\nDear Jane,\n\nThank you for your email. I apologize for the delay in processing your return. We have received your appliance on October 15th, and your refund is currently being processed. It typically takes 3-5 business days for refunds to be issued, so you should expect to see it reflected in your account shortly. \n\nWe appreciate your patience and understanding in this matter. If you have any further questions or concerns, please feel free to reach out.\n\nWarm regards,\nCustomer Service Team\n\n---\n\nFrom: Jane Smith <jane.smith@email.com>\nTo: Customer Service <customerservice@appliancecompany.com>\nSubject: RE: Defective Appliance Return\n\nHello,\n\nThank you for your quick response. I appreciate the confirmation of the return. I will keep an eye on my account for the refund. \n\nBest,\nJane",
+    "replyEmail": "Dear Customer Service,\n\nThank you for your recent email regarding my refund. I am glad to know that my appliance has been received. However, I noticed that the refund was not processed yet. I would like to kindly ask for an update on when I can expect the funds to be available in my account as it has been [BLANK 1]. \n\nAdditionally, if there are any issues or if further information is needed from my side, please let me know. I am eager to finalize this matter, as I need to purchase a new appliance [BLANK 2]. \n\nOnce again, I appreciate your assistance and look forward to your prompt reply. Thank you for [BLANK 3] in this matter. \n\nBest regards,\nJane Smith\n\n[BLANK 4]\n\n[BLANK 5]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the main purpose of Jane's first email?",
+        "options": [
+          "A: Request an update",
+          "B: Report a problem",
+          "C: Express dissatisfaction",
+          "D: Ask for a replacement"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How does Customer Service apologize?",
+        "options": [
+          "A: Indirectly",
+          "B: Politely",
+          "C: Sarcastically",
+          "D: Briefly"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What tone does Jane use in her follow-up email?",
+        "options": [
+          "A: Angry",
+          "B: Appreciative",
+          "C: Indifferent",
+          "D: Demanding"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What detail does Customer Service provide about the refund?",
+        "options": [
+          "A: It's on hold",
+          "B: It's already issued",
+          "C: It takes 3-5 days",
+          "D: It will take longer than expected"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What can be inferred about Jane's feelings towards the situation?",
+        "options": [
+          "A: She is frustrated",
+          "B: She is indifferent",
+          "C: She is understanding",
+          "D: She is confused"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "A",
+        "question": "What does Jane plan to do with her refund?",
+        "options": [
+          "A: Ignore it",
+          "B: File a complaint",
+          "C: Purchase a replacement appliance",
+          "D: Return it again"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A: last week",
+          "B: several weeks",
+          "C: just a few days",
+          "D: over a month"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A: as soon as possible",
+          "B: whenever I feel like it",
+          "C: if I remember",
+          "D: after some time"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 9,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A: ignoring me",
+          "B: your responsiveness",
+          "C: causing me trouble",
+          "D: treating me poorly"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 10,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 4]",
+        "options": [
+          "A: I look forward to hearing from you soon",
+          "B: I am not interested in your reply",
+          "C: You can contact me later",
+          "D: I will not respond again"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 11,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 5]",
+        "options": [
+          "A: Thank you for your help",
+          "B: I hope you have a nice day",
+          "C: I am just reaching out",
+          "D: Please do not contact me"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part1-20"
+  }
+]

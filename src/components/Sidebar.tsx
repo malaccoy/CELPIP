@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Dumbbell, User, Menu, X } from 'lucide-react';
+import { Home, Dumbbell, User, Menu, X, CreditCard, BookOpen, HelpCircle, GraduationCap } from 'lucide-react';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -15,7 +15,11 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
+  { to: '/blog', icon: BookOpen, label: 'Learn' },
+  { to: '/pricing', icon: CreditCard, label: 'Pricing' },
   { to: '/profile', icon: User, label: 'Profile' },
+  { to: '/support', icon: HelpCircle, label: 'Support' },
 ];
 
 const SidebarItem = ({ to, icon: Icon, label, isActive }: { to: string; icon: React.ElementType; label: string; isActive: boolean }) => {

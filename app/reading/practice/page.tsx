@@ -5,10 +5,13 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { 
   ArrowLeft, ArrowRight, CheckCircle, XCircle, 
-  Clock, Target, RotateCcw, Trophy, BookOpen
+  Clock, Target, RotateCcw, Trophy, BookOpen, Lock
 } from 'lucide-react';
 import { readingPassages, ReadingPassage, ReadingQuestion } from '@content/reading-practice';
 import { analytics } from '@/lib/analytics';
+import { FREE_LIMITS } from '@/lib/free-limits';
+import { useContentAccess } from '@/hooks/useContentAccess';
+import { UpgradeModal, UpgradeInlineBanner } from '@/components/UpgradeBanner';
 import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import styles from '@/styles/ReadingPractice.module.scss';
 
@@ -30,6 +33,7 @@ export default function ReadingPracticePage() {
 function ReadingPracticeContent() {
   const searchParams = useSearchParams();
   const partFilter = searchParams.get('part') ? Number(searchParams.get('part')) : null;
+  const { isPro } = useContentAccess();
 
   useEffect(() => {
     analytics.exerciseStart('reading', partFilter ? `part-${partFilter}` : 'all');
@@ -48,6 +52,22 @@ function ReadingPracticeContent() {
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState<Map<string, { selected: number; correct: boolean }>>(new Map());
   const [showPassageList, setShowPassageList] = useState(true);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+
+  // Compute locked passage indices
+  const lockedIndices = useMemo(() => {
+    if (isPro) return new Set<number>();
+    const locked = new Set<number>();
+    const partCount: Record<number, number> = {};
+    filteredPassages.forEach((p, idx) => {
+      partCount[p.part] = (partCount[p.part] || 0);
+      if (partCount[p.part] >= FREE_LIMITS.reading.perPart) {
+        locked.add(idx);
+      }
+      partCount[p.part]++;
+    });
+    return locked;
+  }, [filteredPassages, isPro]);
 
   const passage = filteredPassages[currentPassageIndex];
   const question = passage?.questions[currentQuestionIndex];
@@ -153,12 +173,15 @@ function ReadingPracticeContent() {
             return (
               <button
                 key={p.id}
-                className={styles.passageCard}
-                onClick={() => handleSelectPassage(index)}
+                className={`${styles.passageCard} ${lockedIndices.has(index) ? styles.passageCardLocked : ''}`}
+                onClick={() => lockedIndices.has(index) ? setShowUpgradeModal(true) : handleSelectPassage(index)}
               >
                 <div className={styles.passageCardHeader}>
                   <span className={styles.partBadge}>Part {p.part}</span>
                   <span className={styles.passageType}>{p.partName}</span>
+                  {lockedIndices.has(index) && (
+                    <span className={styles.proBadge}><Lock size={12} /> PRO</span>
+                  )}
                 </div>
                 <h3>{p.title}</h3>
                 <div className={styles.passageCardMeta}>
@@ -173,6 +196,20 @@ function ReadingPracticeContent() {
             );
           })}
         </div>
+
+        {lockedIndices.size > 0 && (
+          <UpgradeInlineBanner
+            totalItems={filteredPassages.length}
+            freeItems={filteredPassages.length - lockedIndices.size}
+            context="reading passages"
+          />
+        )}
+
+        <UpgradeModal
+          isOpen={showUpgradeModal}
+          onClose={() => setShowUpgradeModal(false)}
+          context="Reading Passages"
+        />
 
         {answers.size > 0 && (
           <div className={styles.overallProgress}>

@@ -3,8 +3,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Home, Dumbbell, User, LogOut, ChevronDown } from 'lucide-react';
+import { Home, Dumbbell, User, LogOut, ChevronDown, Crown, CreditCard, BookOpen, HelpCircle, GraduationCap } from 'lucide-react';
 import { useUser } from '@/hooks/useUser';
+import { useContentAccess } from '@/hooks/useContentAccess';
 import { createClient } from '@/lib/supabase/client';
 import { Logo } from '@/components/Logo';
 import styles from '@/styles/Layout.module.scss';
@@ -18,13 +19,18 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
+  { to: '/blog', icon: BookOpen, label: 'Learn' },
+  { to: '/pricing', icon: CreditCard, label: 'Pricing' },
   { to: '/profile', icon: User, label: 'Profile' },
+  { to: '/support', icon: HelpCircle, label: 'Support' },
 ];
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
   const { user, loading } = useUser();
+  const { isPro } = useContentAccess();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -110,15 +116,22 @@ export const Header: React.FC = () => {
                 className={styles.userMenuBtn}
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                {user.user_metadata?.avatar_url ? (
-                  <img 
-                    src={user.user_metadata.avatar_url} 
-                    alt={getUserName()}
-                    className={styles.userAvatar}
-                  />
-                ) : (
-                  <div className={styles.userInitials}>{getUserInitials()}</div>
-                )}
+                <div className={styles.avatarWrapper}>
+                  {user.user_metadata?.avatar_url ? (
+                    <img 
+                      src={user.user_metadata.avatar_url} 
+                      alt={getUserName()}
+                      className={styles.userAvatar}
+                    />
+                  ) : (
+                    <div className={styles.userInitials}>{getUserInitials()}</div>
+                  )}
+                  {isPro && (
+                    <div className={styles.avatarProBadge}>
+                      <Crown size={8} />
+                    </div>
+                  )}
+                </div>
                 <ChevronDown size={14} className={dropdownOpen ? styles.rotated : ''} />
               </button>
               

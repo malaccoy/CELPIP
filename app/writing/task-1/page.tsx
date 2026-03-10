@@ -24,6 +24,8 @@ import SentenceFeedback from '@/components/SentenceFeedback';
 import UpgradeTrigger from '@/components/UpgradeTrigger';
 import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
+import { FREE_LIMITS } from '@/lib/free-limits';
+import { useContentAccess } from '@/hooks/useContentAccess';
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -61,6 +63,7 @@ export default function Task1Page() {
   const [aiError, setAiError] = useState<string | null>(null);
   const [spellCheckEnabled, setSpellCheckEnabled] = useState(false);
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const { isPro } = useContentAccess();
 
   // Get selected context
   const selectedContext = contexts.find(c => c.id === selectedContextId);
@@ -73,6 +76,22 @@ export default function Task1Page() {
       .then(data => {
         if (data.task1) {
           setContexts(data.task1);
+
+          // Check for AI Coach redirect — pick random theme
+          try {
+            const stored = localStorage.getItem('celpip_ai_writing_prompt');
+            if (stored) {
+              const parsed = JSON.parse(stored);
+              if (parsed.task === 1) {
+                localStorage.removeItem('celpip_ai_writing_prompt');
+                const themes = data.task1.filter((c: ContextItem) => c.category !== 'custom');
+                if (themes.length > 0) {
+                  const random = themes[Math.floor(Math.random() * themes.length)];
+                  handleContextSelect(random);
+                }
+              }
+            }
+          } catch {}
         }
       })
       .catch(err => console.error('Failed to load contexts:', err));
@@ -449,6 +468,8 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
                     selectedId={selectedContextId}
                     onSelect={handleContextSelect}
                     placeholder="Select a ready theme or create your own..."
+                    freeLimit={FREE_LIMITS.writing.task1}
+                    isPro={isPro}
                   />
                 </div>
               )}

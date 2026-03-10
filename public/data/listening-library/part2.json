@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "part2-01",
+    "title": "Weekend Hiking Plans",
+    "context": "Listen to a conversation between two friends, Ian and Sara, as they plan a weekend hiking trip in Banff.",
+    "audioFile": "part2-01.mp3",
+    "duration": 134.352,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A: Planning a hiking trip",
+          "B: Discussing weather forecasts",
+          "C: Renting camping gear",
+          "D: Buying groceries"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which hiking trail do Ian and Sara decide on?",
+        "options": [
+          "A: The Lake Agnes Trail",
+          "B: The Plain of Six Glaciers",
+          "C: The Johnston Canyon Trail",
+          "D: The Sulphur Mountain Trail"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Sara suggest bringing for lunch?",
+        "options": [
+          "A: Granola bars and cookies",
+          "B: Sandwiches and juice boxes",
+          "C: Salad and fruit",
+          "D: Chips and candy"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How do the speakers feel about the upcoming trip?",
+        "options": [
+          "A: Indifferent",
+          "B: Nervous",
+          "C: Excited",
+          "D: Unprepared"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How far is Banff from Calgary?",
+        "options": [
+          "A: One hour",
+          "B: Two hours",
+          "C: Three hours",
+          "D: Four hours"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-02",
+    "title": "Choosing a New Apartment in Toronto",
+    "context": "Listen to a conversation between two friends discussing their apartment search in Toronto.",
+    "audioFile": "part2-02.mp3",
+    "duration": 121.08,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Finding a job",
+          "Choosing a new apartment",
+          "Planning a vacation",
+          "Buying a car"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where does the woman want to live?",
+        "options": [
+          "Near the waterfront",
+          "In Queen West",
+          "In Scarborough",
+          "In Yorkville"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is a concern the woman has about the apartments?",
+        "options": [
+          "Cost of public transport",
+          "Parking space",
+          "Pet policies",
+          "Noise levels"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How does the woman feel about the apartment search?",
+        "options": [
+          "Excited",
+          "Confident",
+          "Overwhelmed",
+          "Indifferent"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is the woman’s total budget for rent and utilities?",
+        "options": [
+          "$2,200",
+          "$2,500",
+          "$3,000",
+          "$3,500"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-03",
+    "title": "School Options in Vancouver",
+    "context": "Listen to a conversation between two parents discussing school options for their child in Vancouver.",
+    "audioFile": "part2-03.mp3",
+    "duration": 125.904,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A: Discussing vacation spots",
+          "B: Exploring school options for children",
+          "C: Comparing public and private healthcare",
+          "D: Planning a family outing"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What school does the man mention that is close to their house?",
+        "options": [
+          "A: Vancouver College",
+          "B: Lord Roberts Elementary",
+          "C: Sir Charles Tupper Secondary",
+          "D: St. George's School"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What specific program does the woman mention that some public schools offer?",
+        "options": [
+          "A: Sports training",
+          "B: French immersion",
+          "C: Music lessons",
+          "D: Art classes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the woman feel about the tuition costs of private schools?",
+        "options": [
+          "A: They are affordable.",
+          "B: They are too expensive.",
+          "C: They are reasonable.",
+          "D: They are uncertain."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the next step the couple plans to take?",
+        "options": [
+          "A: Visit schools together.",
+          "B: Enroll Emily immediately.",
+          "C: Move to another city.",
+          "D: Attend a school fair."
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part2-04",
+    "title": "Organizing a Potluck Dinner",
+    "context": "Listen to a casual conversation between two neighbors discussing their upcoming potluck dinner.",
+    "audioFile": "part2-04.mp3",
+    "duration": 118.344,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the conversation?",
+        "options": [
+          "A) To complain about neighbors.",
+          "B) To organize a potluck dinner.",
+          "C) To discuss local restaurants.",
+          "D) To plan a charity event."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What dish is the man planning to bring?",
+        "options": [
+          "A) Salad",
+          "B) Chili",
+          "C) Lasagna",
+          "D) Pecan pie"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the woman’s attitude towards the potluck dinner?",
+        "options": [
+          "A) Indifferent",
+          "B) Excited",
+          "C) Annoyed",
+          "D) Uninterested"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Where will the flyers be posted?",
+        "options": [
+          "A) In local stores",
+          "B) On social media",
+          "C) In the building lobby",
+          "D) At the community center"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What suggestion does the man make regarding drinks?",
+        "options": [
+          "A) Everyone should buy their own",
+          "B) They should ask for donations",
+          "C) They should bring their favorite drinks",
+          "D) They should buy drinks at the dinner"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-05",
+    "title": "A New Job Opportunity in Ottawa",
+    "context": "Listen to the following conversation between two friends discussing a new job opportunity in Ottawa. Pay attention to the main ideas and specific details.",
+    "audioFile": "part2-05.mp3",
+    "duration": 126.528,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A. A job interview",
+          "B. A new job opportunity",
+          "C. Weather in Ottawa",
+          "D. Cost of living in Ottawa"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the salary offered for the new job?",
+        "options": [
+          "A. $60,000",
+          "B. $65,000",
+          "C. $70,000",
+          "D. $75,000"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What cultural institution will the woman work for?",
+        "options": [
+          "A. National Gallery of Canada",
+          "B. Canadian Museum of History",
+          "C. Ottawa Art Gallery",
+          "D. Canada Science and Technology Museum"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the woman feel about the winter in Ottawa?",
+        "options": [
+          "A. Excited",
+          "B. Nervous",
+          "C. Confident",
+          "D. Indifferent"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What advice does the man give about winter clothing?",
+        "options": [
+          "A. Buy summer clothes.",
+          "B. Wear layers.",
+          "C. Avoid heavy jackets.",
+          "D. Wear light sweaters."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-06",
+    "title": "Planning a Road Trip through the Maritimes",
+    "context": "Listen to a conversation between two friends discussing their plans for a road trip through the Maritimes in Canada.",
+    "audioFile": "part2-06.mp3",
+    "duration": 119.664,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Planning a road trip",
+          "Discussing local cuisines",
+          "Booking hotel accommodations",
+          "Hiking in national parks"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which city do they plan to visit first?",
+        "options": [
+          "Charlottetown",
+          "Halifax",
+          "Ingonish",
+          "Peggy's Cove"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What food do they specifically mention wanting to try?",
+        "options": [
+          "Poutine",
+          "Lobster rolls",
+          "Peameal bacon",
+          "Maple syrup"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the speaker’s attitude towards camping?",
+        "options": [
+          "Negative",
+          "Neutral",
+          "Excited",
+          "Indifferent"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What activity do they associate with visiting Cape Breton?",
+        "options": [
+          "Shopping",
+          "Hiking",
+          "City tours",
+          "Fishing"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-07",
+    "title": "Home Renovation Plans",
+    "context": "Listen to a casual conversation between two friends discussing their home renovation plans.",
+    "audioFile": "part2-07.mp3",
+    "duration": 123.528,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of their conversation?",
+        "options": [
+          "A) Planning a vacation",
+          "B) Home renovation",
+          "C) Grocery shopping",
+          "D) Job hunting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What style are they choosing for the kitchen?",
+        "options": [
+          "A) Modern",
+          "B) Farmhouse",
+          "C) Rustic",
+          "D) Minimalist"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How much did the granite countertop cost?",
+        "options": [
+          "A) $1,200",
+          "B) $1,800",
+          "C) $1,500",
+          "D) $2,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does the woman plan to do with the living room?",
+        "options": [
+          "A) Hire a contractor",
+          "B) Repaint it",
+          "C) Build new furniture",
+          "D) Change the flooring"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the woman's attitude towards the renovation?",
+        "options": [
+          "A) Indifferent",
+          "B) Excited",
+          "C) Frustrated",
+          "D) Overwhelmed"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-08",
+    "title": "Choosing a Family Vacation in Muskoka",
+    "context": "Listen to the conversation between two friends discussing their family vacation options in Muskoka.",
+    "audioFile": "part2-08.mp3",
+    "duration": 104.856,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A vacation destination",
+          "Summer activities",
+          "Accommodation prices",
+          "Travel logistics"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What did the man suggest as a family-friendly destination?",
+        "options": [
+          "Toronto",
+          "Muskoka",
+          "Ottawa",
+          "Vancouver"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What activity did the woman express excitement about?",
+        "options": [
+          "Boating",
+          "Hiking",
+          "Poutine",
+          "Swimming"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the woman's attitude towards driving to Muskoka?",
+        "options": [
+          "She finds it too long",
+          "It's manageable",
+          "She's afraid of driving",
+          "She prefers flying"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is one reason the man gives for booking early?",
+        "options": [
+          "To avoid crowds",
+          "To save money",
+          "To get luxury accommodations",
+          "To have more options"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-09",
+    "title": "Joining a Recreational Hockey League",
+    "context": "Listen to a conversation between two friends discussing the benefits of joining a recreational hockey league in Canada.",
+    "audioFile": "part2-09.mp3",
+    "duration": 118.872,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main reason Sarah is considering joining a hockey league?",
+        "options": [
+          "A) To improve her skills",
+          "B) To stay active and meet new people",
+          "C) To compete in tournaments",
+          "D) To play with friends"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much does it cost to join the Toronto Recreational Hockey League?",
+        "options": [
+          "A) $250",
+          "B) $300",
+          "C) $350",
+          "D) $400"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where do players often go to socialize after games?",
+        "options": [
+          "A) The Lightbox",
+          "B) The Wallace",
+          "C) The Rogers Centre",
+          "D) Harbourfront"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What can be inferred about the atmosphere in the league?",
+        "options": [
+          "A) It's very competitive",
+          "B) It's welcoming for beginners",
+          "C) It's only for experienced players",
+          "D) It's casual with no events"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does the man feel about joining the league?",
+        "options": [
+          "A) He is indifferent",
+          "B) He is excited",
+          "C) He is reluctant",
+          "D) He is skeptical"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-10",
+    "title": "A Visit to the Montreal Farmer's Market",
+    "context": "Listen to a conversation between two friends discussing their recent visit to a farmer's market in Montreal.",
+    "audioFile": "part2-10.mp3",
+    "duration": 136.872,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Their trip to a beach",
+          "Their visit to a farmer's market",
+          "Their shopping at a supermarket",
+          "Their cooking lesson"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What fruit did the woman particularly enjoy?",
+        "options": [
+          "Apples",
+          "Strawberries",
+          "Cherries",
+          "Bananas"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where were the strawberries likely grown?",
+        "options": [
+          "Laval",
+          "Toronto",
+          "Vancouver",
+          "Montreal"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What was the woman's attitude towards local products?",
+        "options": [
+          "Indifferent",
+          "Skeptical",
+          "Positive",
+          "Uninformed"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How much did the woman spend on a basket of strawberries?",
+        "options": [
+          "$4",
+          "$3",
+          "$5",
+          "$6"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part2-11",
+    "title": "Planning a Surprise Birthday Party",
+    "context": "Listen to a conversation between two coworkers planning a birthday party.",
+    "audioFile": "part2-11.mp3",
+    "duration": 118.464,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Planning a vacation",
+          "Organizing a surprise birthday party",
+          "Discussing work projects",
+          "Choosing a restaurant"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where do they consider hosting the party?",
+        "options": [
+          "At a coworker's house",
+          "Maple Leaf Lounge",
+          "In the park",
+          "At the office"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What theme do they decide on for the party?",
+        "options": [
+          "Blue and white",
+          "Red and green",
+          "Black and gold",
+          "Pink and silver"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What type of cake will they order?",
+        "options": [
+          "Chocolate cake",
+          "Ice cream cake",
+          "Custom cake from a bakery",
+          "Cheesecake"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What will they use as party favors?",
+        "options": [
+          "Candles",
+          "Mini maple syrup bottles",
+          "Stickers",
+          "Balloons"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-12",
+    "title": "Choosing a Streaming Service",
+    "context": "Listen to a conversation between two friends discussing which streaming service to subscribe to.",
+    "audioFile": "part2-12.mp3",
+    "duration": 119.28,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the friends discussing?",
+        "options": [
+          "Buying a new TV",
+          "Choosing a streaming service",
+          "Planning a movie night",
+          "Discussing their favourite movies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the monthly fee for Netflix mentioned?",
+        "options": [
+          "$9.99",
+          "$11.99",
+          "$16.99",
+          "$19.99"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "Which service offers free shipping?",
+        "options": [
+          "Netflix",
+          "Prime Video",
+          "Disney+",
+          "HBO Max"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What type of content does Disney+ have?",
+        "options": [
+          "Original series",
+          "Documentaries",
+          "Classic movies",
+          "Adult films"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What do the friends finally decide to do?",
+        "options": [
+          "Subscribe to multiple services",
+          "Only get Netflix",
+          "Plan a family movie night",
+          "Stop watching TV altogether"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part2-13",
+    "title": "Noisy Neighbors and Their Dog",
+    "context": "Listen to a casual conversation between two neighbors discussing their issues with a noisy dog in the neighborhood.",
+    "audioFile": "part2-13.mp3",
+    "duration": 112.32,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A noisy dog",
+          "A neighborhood party",
+          "A local store",
+          "A family gathering"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What do the neighbors suggest doing about the problem?",
+        "options": [
+          "Ignoring it",
+          "Talking to the dog owner",
+          "Calling animal control",
+          "Moving away"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What do they hope happens when they approach the dog owner?",
+        "options": [
+          "They become friends",
+          "The dog stops barking",
+          "The owner gets angry",
+          "They move to another neighborhood"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What do the neighbors think about the dog owner's awareness of the noise?",
+        "options": [
+          "They think the owner knows",
+          "They feel the owner is unaware",
+          "They believe the owner encourages the barking",
+          "They have no opinion"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do they agree to do after addressing the dog owner?",
+        "options": [
+          "Forget about it",
+          "Discuss it again",
+          "Plan a neighborhood BBQ",
+          "Move to a different house"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-14",
+    "title": "Choosing a Daycare",
+    "context": "Listen to a conversation about selecting a daycare for a toddler.",
+    "audioFile": "part2-14.mp3",
+    "duration": 113.928,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Choosing a car",
+          "Choosing a daycare",
+          "Planning a vacation",
+          "Buying groceries"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much does Bright Futures Daycare cost?",
+        "options": [
+          "$1,000",
+          "$1,200",
+          "$1,500",
+          "$800"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which daycare has a nutritionist on staff?",
+        "options": [
+          "Little Explorers",
+          "Bright Futures",
+          "Both",
+          "Neither"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the woman feel about the two daycares?",
+        "options": [
+          "She prefers Little Explorers",
+          "She finds both inadequate",
+          "She is leaning towards Bright Futures",
+          "She wants to visit more daycares"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is the woman's plan for further evaluation?",
+        "options": [
+          "Read reviews online",
+          "Visit with her toddler",
+          "Ask friends for opinions",
+          "Call the daycares again"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-15",
+    "title": "Planning a Garage Sale",
+    "context": "Listen to a conversation between two friends discussing their plans for a garage sale this weekend.",
+    "audioFile": "part2-15.mp3",
+    "duration": 116.856,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A garage sale",
+          "Going to a store",
+          "Repairing furniture",
+          "Planning a trip"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What time does the garage sale start?",
+        "options": [
+          "6 AM",
+          "8 AM",
+          "10 AM",
+          "12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What items does the Woman plan to sell?",
+        "options": [
+          "Only clothes",
+          "Books and tools",
+          "Clothes, furniture, and electronics",
+          "Just furniture"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What will they offer to encourage more sales?",
+        "options": [
+          "Buy one get one free",
+          "Free delivery",
+          "Discount for multiple items",
+          "Free snacks"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What will the Woman bring for the garage sale?",
+        "options": [
+          "Water",
+          "Lemonade and cookies",
+          "Chips",
+          "Tea"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-16",
+    "title": "Switching Family Doctors in Ottawa",
+    "context": "Listen to a conversation about a couple discussing the process of switching family doctors in Ottawa.",
+    "audioFile": "part2-16.mp3",
+    "duration": 102.576,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of conversation?",
+        "options": [
+          "Finding a new job",
+          "Switching family doctors",
+          "Planning a vacation",
+          "Buying a new car"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What has the woman experienced with her current doctor?",
+        "options": [
+          "He listens well",
+          "He is hard to reach",
+          "He is dismissive",
+          "He is too busy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What should the woman do first in her switching process?",
+        "options": [
+          "Talk to Dr. Smith",
+          "Call Dr. Lee’s office",
+          "Request her medical records",
+          "Visit the hospital"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the man advise about switching doctors?",
+        "options": [
+          "It may be complicated",
+          "It is usually free",
+          "It is too stressful",
+          "It requires a lot of paperwork"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the woman’s concern about switching doctors?",
+        "options": [
+          "Moving to a new city",
+          "Initial fees",
+          "Finding a new job",
+          "Her relationship with the current doctor"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part2-17",
+    "title": "Choosing a Paint Colour for the Living Room",
+    "context": "Listen to a conversation between two people discussing paint colours for their living room.",
+    "audioFile": "part2-17.mp3",
+    "duration": 124.896,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are they deciding on?",
+        "options": [
+          "A paint colour",
+          "A new couch",
+          "Wall decorations",
+          "Flooring options"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where are they planning to buy the paint samples?",
+        "options": [
+          "Lowe's",
+          "Canadian Tire",
+          "Home Depot",
+          "Rona"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What two colours do they decide to get samples of?",
+        "options": [
+          "Blue and yellow",
+          "Gray and green",
+          "White and beige",
+          "Red and orange"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What finish do they choose for the paint?",
+        "options": [
+          "Matte",
+          "Glossy",
+          "Satin",
+          "Eggshell"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What time do they plan to leave for the store?",
+        "options": [
+          "12 PM",
+          "1 PM",
+          "2 PM",
+          "3 PM"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-18",
+    "title": "Discussing a New Gym Membership",
+    "context": "A casual conversation between two friends discussing the pros and cons of joining a gym in Mississauga.",
+    "audioFile": "part2-18.mp3",
+    "duration": 109.872,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "A new restaurant in Mississauga",
+          "A gym membership",
+          "A hiking trip",
+          "A concert in Toronto"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the current promotion at the gym?",
+        "options": [
+          "No promotion at all",
+          "First month at half price",
+          "Free personal training for a month",
+          "A discount for families"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does the gym open?",
+        "options": [
+          "6 AM",
+          "8 AM",
+          "5 AM",
+          "7 AM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What classes are offered at the gym?",
+        "options": [
+          "Dance and boxing",
+          "Yoga and spin classes",
+          "Martial arts and swimming",
+          "Weightlifting and running"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do they plan to do this weekend?",
+        "options": [
+          "Join the gym",
+          "Go to a movie",
+          "Check out the gym",
+          "Visit a friend"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-19",
+    "title": "Planning a Camping Trip to Algonquin Park",
+    "context": "Listen to a conversation between two friends planning a camping trip.",
+    "audioFile": "part2-19.mp3",
+    "duration": 117.624,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Planning a camping trip",
+          "Booking hotels",
+          "Hiking trails",
+          "Fishing spots"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How much does it cost to rent a canoe for a day?",
+        "options": [
+          "$30",
+          "$50",
+          "$70",
+          "$100"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What food item did they definitely want to bring?",
+        "options": [
+          "Pizza",
+          "S’mores",
+          "Pasta",
+          "Sandwiches"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time do they plan to leave for the camping trip?",
+        "options": [
+          "Afternoon",
+          "Early morning",
+          "Evening",
+          "No specific time"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who do they consider inviting to join their trip?",
+        "options": [
+          "Only Sarah",
+          "No one",
+          "Sarah and Mark",
+          "A large group"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-20",
+    "title": "Adopting a Rescue Dog",
+    "context": "Listen to a casual conversation between two friends discussing the adoption of a rescue dog from a shelter.",
+    "audioFile": "part2-20.mp3",
+    "duration": 117.96,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What event are the speakers discussing?",
+        "options": [
+          "Dog training session",
+          "Adoption event at a shelter",
+          "Doggy daycare opening",
+          "Pet grooming service"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the cost to adopt a dog mentioned in the conversation?",
+        "options": [
+          "$150",
+          "$200",
+          "$300",
+          "$400"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What type of dog is the man leaning towards adopting?",
+        "options": [
+          "A puppy",
+          "An older dog",
+          "Any breed",
+          "A specific breed"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the woman suggest the man do before the adoption event?",
+        "options": [
+          "Start training a puppy",
+          "Visit the shelter",
+          "Buy dog supplies",
+          "Set up a doggy playdate"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does the man feel about the responsibilities of dog ownership?",
+        "options": [
+          "Overwhelmed",
+          "Excited",
+          "Unsure",
+          "Indifferent"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-21",
+    "title": "Cooking Class Discussion in Calgary",
+    "context": "A casual conversation about taking a cooking class together.",
+    "audioFile": "part2-21.mp3",
+    "duration": 119.64,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What type of cooking class are they considering?",
+        "options": [
+          "Italian cuisine",
+          "French cuisine",
+          "Asian cuisine",
+          "Mexican cuisine"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How much does the class cost?",
+        "options": [
+          "$100",
+          "$150",
+          "$200",
+          "$250"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What day do they plan to attend the class?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How many weeks does the course last?",
+        "options": [
+          "4 weeks",
+          "5 weeks",
+          "6 weeks",
+          "7 weeks"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What do they look forward to after the class?",
+        "options": [
+          "Going out for dinner",
+          "Hosting a party",
+          "Impressing friends with skills",
+          "Traveling to Italy"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-22",
+    "title": "Planning a Visit to Grandma",
+    "context": "A casual conversation about visiting a relative in a nursing home.",
+    "audioFile": "part2-22.mp3",
+    "duration": 115.68,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main reason for the visit?",
+        "options": [
+          "To see Grandma",
+          "To visit Winnipeg",
+          "To buy snacks",
+          "To check the weather"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What snacks do they plan to bring?",
+        "options": [
+          "Cookies",
+          "Chocolate-covered almonds",
+          "Chips",
+          "Fruits"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "When do they plan to leave for Winnipeg?",
+        "options": [
+          "Next Saturday",
+          "Next Friday",
+          "This Friday",
+          "Tomorrow"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What do they hope the weather will be like?",
+        "options": [
+          "Cold",
+          "Hot",
+          "Nice",
+          "Rainy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What will they do if they want to spend more time?",
+        "options": [
+          "Stay the night",
+          "Leave early",
+          "Cancel the trip",
+          "Visit another place"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part2-23",
+    "title": "Signing Up for a Community Volleyball League",
+    "context": "A casual conversation between two friends discussing joining a volleyball league in their community.",
+    "audioFile": "part2-23.mp3",
+    "duration": 114.336,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Joining a volleyball league",
+          "Planning a weekend trip",
+          "Starting a new job",
+          "Buying gym equipment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What day of the week will the volleyball games be held?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Saturday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How much is the registration fee for the league?",
+        "options": [
+          "$20",
+          "$50",
+          "$75",
+          "$100"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Who else do they plan to invite to join the team?",
+        "options": [
+          "Sarah and Mike",
+          "John and Anna",
+          "David and Lisa",
+          "Emily and Tim"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "Why does the woman want to join the league?",
+        "options": [
+          "To improve her job skills",
+          "To meet new people",
+          "To become a professional athlete",
+          "To play with her friends"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-24",
+    "title": "Deciding on a Weekend Brunch Spot",
+    "context": "A casual conversation between a man and a woman discussing where to have brunch in downtown Vancouver.",
+    "audioFile": "part2-24.mp3",
+    "duration": 112.728,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the names of the two brunch spots discussed?",
+        "options": [
+          "SunnySide Up and The Greenhouse",
+          "The Greenhouse and Cafe Delight",
+          "SunnySide Up and Brunch Bistro",
+          "Brunch Bistro and Cafe Delight"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What type of ingredients does The Greenhouse focus on?",
+        "options": [
+          "Vegan",
+          "Organic",
+          "Gluten-free",
+          "Local"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does the woman want to check for at SunnySide Up?",
+        "options": [
+          "The ambiance",
+          "The dessert menu",
+          "Vegetarian options",
+          "The drink specials"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What feature does The Greenhouse have that the man mentions?",
+        "options": [
+          "Indoor seating",
+          "A children's menu",
+          "A lovely patio",
+          "Live music"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What do they plan to do to help make their decision?",
+        "options": [
+          "Ask friends for recommendations",
+          "Check each place’s menu online",
+          "Visit both locations",
+          "Look at reviews on social media"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-25",
+    "title": "Getting a Family Portrait for the Holidays",
+    "context": "A casual conversation between a couple about organizing a family portrait for the holiday season.",
+    "audioFile": "part2-25.mp3",
+    "duration": 106.728,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the conversation?",
+        "options": [
+          "Getting a family portrait",
+          "Vacation plans",
+          "Holiday shopping",
+          "Home renovations"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where do they decide to have the photo taken?",
+        "options": [
+          "In a studio",
+          "At a park",
+          "At home",
+          "At a friend's house"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What colors do they discuss for their outfits?",
+        "options": [
+          "Blue and white",
+          "Red and green",
+          "Black and yellow",
+          "Pink and purple"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "When do they plan to take the family portrait?",
+        "options": [
+          "Next weekend",
+          "Christmas Eve",
+          "First weekend in December",
+          "Before New Year's"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Who do they plan to ask about outfits?",
+        "options": [
+          "Their neighbors",
+          "Their kids",
+          "Their parents",
+          "Their friends"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-26",
+    "title": "Organizing the Garage Before Winter",
+    "context": "A conversation between a couple about preparing their garage for the winter season.",
+    "audioFile": "part2-26.mp3",
+    "duration": 119.424,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the couple plan to do this weekend?",
+        "options": [
+          "Organize the garage",
+          "Go shopping",
+          "Clean the house",
+          "Visit friends"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What does the woman suggest doing with broken items?",
+        "options": [
+          "Fix them",
+          "Donate or toss them",
+          "Keep them",
+          "Sell them"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does the man want to make use of the garage space?",
+        "options": [
+          "By bringing in shelves",
+          "By leaving it as is",
+          "By buying a new garage",
+          "By using it for storage only"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What will help the couple remember where everything goes?",
+        "options": [
+          "Instructions",
+          "Labels",
+          "Markers",
+          "Drawings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do they agree on getting rid of?",
+        "options": [
+          "Old tools",
+          "Paint cans",
+          "Furniture",
+          "Bikes"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-27",
+    "title": "Switching Cell Phone Plans",
+    "context": "A casual conversation between a man and a woman about changing their cell phone plans.",
+    "audioFile": "part2-27.mp3",
+    "duration": 111.336,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What topic are the man and woman discussing?",
+        "options": [
+          "Switching cell phone plans",
+          "Buying a new phone",
+          "Choosing a new internet provider",
+          "Finding a cheaper car insurance"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What discount does the man mention?",
+        "options": [
+          "20%",
+          "30%",
+          "50%",
+          "10%"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How much data does the man’s new plan offer?",
+        "options": [
+          "5GB",
+          "10GB",
+          "15GB",
+          "20GB"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the woman use her phone for that requires more data?",
+        "options": [
+          "Texting",
+          "Calling",
+          "Streaming",
+          "Gaming"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What does the woman plan to do before switching providers?",
+        "options": [
+          "Check out more plans",
+          "Negotiate with her current provider",
+          "Buy a new phone",
+          "Consult a friend"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-28",
+    "title": "Movie Marathon Planning",
+    "context": "A casual conversation between two friends as they plan a movie marathon night.",
+    "audioFile": "part2-28.mp3",
+    "duration": 115.608,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What day is the movie marathon planned for?",
+        "options": [
+          "Saturday",
+          "Friday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What type of movies does the Man suggest?",
+        "options": [
+          "Thrillers",
+          "Documentaries",
+          "Comedies",
+          "Horror"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What snack is definitely mentioned by the Man?",
+        "options": [
+          "Caramel popcorn",
+          "Nachos",
+          "Chocolate",
+          "Fruits"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "Who is responsible for snacks and drinks?",
+        "options": [
+          "The Man",
+          "The Woman",
+          "Both",
+          "Neither"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What drink does the Woman suggest to bring?",
+        "options": [
+          "Beer",
+          "Sparkling water",
+          "Wine",
+          "Tea"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part2-29",
+    "title": "Composting in the Backyard",
+    "context": "A casual conversation about starting composting.",
+    "audioFile": "part2-29.mp3",
+    "duration": 124.152,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the man suggest they start doing?",
+        "options": [
+          "Composting",
+          "Recycling",
+          "Gardening",
+          "Painting"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What material does the woman mention that can be used for composting?",
+        "options": [
+          "Plastic bags",
+          "Coffee grounds",
+          "Meat scraps",
+          "Fish leftovers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern does the woman have about composting?",
+        "options": [
+          "It will be expensive",
+          "It might be messy",
+          "It requires too much time",
+          "It attracts pets"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "When do they plan to start composting?",
+        "options": [
+          "Next weekend",
+          "This weekend",
+          "Tomorrow",
+          "Next month"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will they use the compost for?",
+        "options": [
+          "To throw away",
+          "To start a fire",
+          "For their vegetable garden",
+          "For decoration"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part2-30",
+    "title": "Choosing a Name for Our Kitten",
+    "context": "A casual conversation between a man and a woman about naming their newly adopted kitten.",
+    "audioFile": "part2-30.mp3",
+    "duration": 120.168,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What name does the woman initially suggest for the kitten?",
+        "options": [
+          "A) Bella",
+          "B) Luna",
+          "C) Mochi",
+          "D) Tilly"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What does the man suggest as a name that feels trendy?",
+        "options": [
+          "A) Luna",
+          "B) Oliver",
+          "C) Mochi",
+          "D) Sprout"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which name do they both agree on at the end?",
+        "options": [
+          "A) Bella",
+          "B) Luna",
+          "C) Tilly",
+          "D) Mochi"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What name does the woman suggest that has a quirky feel?",
+        "options": [
+          "A) Sprout",
+          "B) Mochi",
+          "C) Tilly",
+          "D) Oliver"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What nickname do they plan to use for the name Tilly?",
+        "options": [
+          "A) Tills",
+          "B) Mo",
+          "C) Ollie",
+          "D) Sprouty"
+        ],
+        "correct": 0
+      }
+    ]
+  }
+]

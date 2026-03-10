@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Sparkles, BookOpen, PenTool, Headphones, Mic,
   Loader2, RefreshCw, ArrowRight, Clock, FileText,
@@ -75,21 +76,39 @@ export default function AIPracticePage() {
   const { isPro, loading: planLoading } = usePlan();
   const { performances, loaded: adaptiveLoaded, getLevelForSection, recordAttempt } = useAdaptiveDifficulty();
 
+  const router = useRouter();
   const [section, setSection] = useState<Section>('reading');
   const [partOrTask, setPartOrTask] = useState(PARTS.reading[0].id);
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
   const [autoMode, setAutoMode] = useState(true);
 
   const [generating, setGenerating] = useState(false);
+  const [cooldown, setCooldown] = useState(0);
   const [exercise, setExercise] = useState<any>(null);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
+  const [clipAudioSrcs, setClipAudioSrcs] = useState<string[]>([]);
+  const [currentClipIdx, setCurrentClipIdx] = useState(0);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   // Quiz state (reading/listening)
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [submitted, setSubmitted] = useState(false);
-  const [usedTopics, setUsedTopics] = useState<string[]>([]);
+  const [usedTopics, setUsedTopics] = useState<string[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return JSON.parse(localStorage.getItem('celpip_used_topics') || '[]');
+      } catch { return []; }
+    }
+    return [];
+  });
+
+  // Persist used topics
+  useEffect(() => {
+    if (usedTopics.length > 0) {
+      localStorage.setItem('celpip_used_topics', JSON.stringify(usedTopics.slice(-30)));
+    }
+  }, [usedTopics]);
 
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -104,7 +123,7 @@ export default function AIPracticePage() {
     setSection(s);
     setPartOrTask(PARTS[s][0].id);
     setExercise(null);
-    setAudioSrc(null); setImageSrc(null);
+    setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null);
     resetQuiz();
     if (autoMode && adaptiveLoaded) {
       setDifficulty(getLevelForSection(s));
@@ -120,13 +139,81 @@ export default function AIPracticePage() {
 
   // ─── Generate ──────────────────────────────────
   const generate = async () => {
+    // Writing: skip API, redirect directly to writing page with random theme
+    if (section === 'writing') {
+      localStorage.setItem('celpip_ai_writing_prompt', JSON.stringify({
+        task: partOrTask.includes('Task 1') ? 1 : 2,
+        randomTheme: true,
+      }));
+      router.push(partOrTask.includes('Task 1') ? '/writing/task-1' : '/writing/task-2');
+      return;
+    }
+
     setGenerating(true);
     setError(null);
     setExercise(null);
-    setAudioSrc(null); setImageSrc(null);
+    setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null);
     resetQuiz();
 
     try {
+      // Listening: use pre-generated library (instant, no AI call)
+      if (section === 'listening') {
+        const res = await fetch('/api/listening-library', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ partOrTask }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          setExercise(data.exercise);
+          if (data.clipAudioUrls) {
+            // Part 1 clips
+            setClipAudioSrcs(data.clipAudioUrls.map((u: string) => u + '?v=' + Date.now()));
+            setCurrentClipIdx(0);
+            setAudioSrc(null);
+          } else {
+            setAudioSrc(data.audioUrl + '?v=' + Date.now());
+            setClipAudioSrcs([]);
+          }
+          setGenerating(false);
+          setCooldown(3);
+          return;
+        }
+        // If library not available, fall through to AI generation
+      }
+
+      // Speaking: use pre-generated prompt library
+      if (section === 'speaking') {
+        const taskId = partOrTask.replace(/^Task \d+[:\s]*/, '').trim().toLowerCase().replace(/\s+/g, '-');
+        const res = await fetch('/api/speaking-library', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ taskId }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          const p = data.prompt;
+          setExercise({
+            title: p.scenario,
+            passage: p.prompt,
+            questions: [],
+            bulletPoints: p.bulletPoints,
+            context: p.context,
+            optionA: p.optionA,
+            optionB: p.optionB,
+            choiceA: p.choiceA,
+            choiceB: p.choiceB,
+            statement: p.statement,
+          });
+          setGenerating(false);
+          setCooldown(3);
+          return;
+        }
+        // Fall through to AI generation
+      }
+
       const res = await fetch('/api/ai-practice', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -134,7 +221,7 @@ export default function AIPracticePage() {
           section,
           partOrTask,
           difficulty,
-          previousTopics: usedTopics.slice(-5),
+          previousTopics: usedTopics.slice(-15),
         }),
       });
 
@@ -144,11 +231,17 @@ export default function AIPracticePage() {
       }
 
       const data = await res.json();
-      setExercise(data.exercise);
+      const ex = data.exercise;
+      // Normalize clip-based exercises: flatten questions for quiz rendering
+      if (ex?.clips && Array.isArray(ex.clips) && !ex.questions?.length) {
+        ex.questions = ex.clips.flatMap((c: any) => c.questions || []);
+      }
+      setExercise(ex);
 
-      // Track topic to avoid repeats
+      // Track topic to avoid repeats (title + scenario for stronger dedup)
       if (data.exercise?.title) {
-        setUsedTopics(prev => [...prev, data.exercise.title]);
+        const topicDesc = data.exercise.title + (data.exercise.scenario ? ': ' + data.exercise.scenario.substring(0, 80) : '');
+        setUsedTopics(prev => [...prev, topicDesc]);
       }
 
       // Audio for listening
@@ -160,6 +253,19 @@ export default function AIPracticePage() {
         setAudioSrc(URL.createObjectURL(blob));
       }
 
+      // Clip audios for listening Part 1
+      if (data.clipAudios && Array.isArray(data.clipAudios)) {
+        const urls = data.clipAudios.map((b64: string) => {
+          const blob = new Blob(
+            [Uint8Array.from(atob(b64), c => c.charCodeAt(0))],
+            { type: 'audio/mpeg' }
+          );
+          return URL.createObjectURL(blob);
+        });
+        setClipAudioSrcs(urls);
+        setCurrentClipIdx(0);
+      }
+
       // Image for speaking Task 3/4
       if (data.image) {
         setImageSrc(`data:image/png;base64,${data.image}`);
@@ -168,6 +274,14 @@ export default function AIPracticePage() {
       setError(err.message || 'Something went wrong');
     } finally {
       setGenerating(false);
+      // Cooldown to prevent spam
+      setCooldown(10);
+      const cd = setInterval(() => {
+        setCooldown(prev => {
+          if (prev <= 1) { clearInterval(cd); return 0; }
+          return prev - 1;
+        });
+      }, 1000);
     }
   };
 
@@ -256,7 +370,7 @@ export default function AIPracticePage() {
             <div
               key={p.id}
               className={partOrTask === p.id ? styles.partChipActive : styles.partChip}
-              onClick={() => { setPartOrTask(p.id); setExercise(null); setAudioSrc(null); setImageSrc(null); resetQuiz(); }}
+              onClick={() => { setPartOrTask(p.id); setExercise(null); setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null); resetQuiz(); }}
             >
               {p.label}
             </div>
@@ -310,9 +424,11 @@ export default function AIPracticePage() {
       <button
         className={generating ? styles.loading : styles.generateBtn}
         onClick={generate}
-        disabled={generating}
+        disabled={generating || cooldown > 0}
       >
-        {generating ? (
+        {cooldown > 0 ? (
+          <>Wait {cooldown}s</>
+        ) : generating ? (
           <>
             <Loader2 size={18} className={styles.spinner} />
             Generating{section === 'listening' ? ' (includes audio)' : ''}...
@@ -320,7 +436,9 @@ export default function AIPracticePage() {
         ) : (
           <>
             <Zap size={18} />
-            Generate {section.charAt(0).toUpperCase() + section.slice(1)} Exercise
+            {section === 'writing' 
+              ? `Start ${partOrTask} Practice` 
+              : `Generate ${section.charAt(0).toUpperCase() + section.slice(1)} Exercise`}
           </>
         )}
       </button>
@@ -346,7 +464,39 @@ export default function AIPracticePage() {
               </div>
 
               {/* Audio (listening only) */}
-              {section === 'listening' && audioSrc && (
+              {section === 'listening' && clipAudioSrcs.length > 0 && exercise.clips && (
+                <div style={{ marginBottom: '1rem' }}>
+                  <div style={{
+                    display: 'flex', alignItems: 'center', gap: '0.5rem',
+                    marginBottom: '0.75rem', fontWeight: 600, color: '#6366f1'
+                  }}>
+                    🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+                  </div>
+                  <div className={styles.audioPlayer}>
+                    <Volume2 size={20} className={styles.audioIcon} />
+                    <audio key={currentClipIdx} ref={audioRef} src={clipAudioSrcs[currentClipIdx]} controls preload="auto" />
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+                    {clipAudioSrcs.map((_, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          padding: '0.3rem 0.8rem',
+                          borderRadius: 6,
+                          border: i === currentClipIdx ? '2px solid #6366f1' : '1px solid #e2e8f0',
+                          background: i === currentClipIdx ? 'rgba(99,102,241,0.1)' : i < currentClipIdx ? 'rgba(34,197,94,0.1)' : '#1e293b',
+                          fontWeight: i === currentClipIdx ? 600 : 400,
+                          fontSize: '0.8rem',
+                          color: i < currentClipIdx ? '#22c55e' : i === currentClipIdx ? '#6366f1' : '#94a3b8'
+                        }}
+                      >
+                        {i < currentClipIdx ? '✅' : ''} Clip {i + 1}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {section === 'listening' && audioSrc && clipAudioSrcs.length === 0 && (
                 <div className={styles.audioPlayer}>
                   <Volume2 size={20} className={styles.audioIcon} />
                   <audio ref={audioRef} src={audioSrc} controls preload="auto" />
@@ -367,13 +517,24 @@ export default function AIPracticePage() {
               )}
 
               {/* Questions */}
-              {exercise.questions && (
+              {exercise.questions && (() => {
+                const isClipMode = !!(exercise.clips && clipAudioSrcs.length > 0);
+                const currentQuestions = isClipMode && exercise.clips?.[currentClipIdx]?.questions
+                  ? exercise.clips[currentClipIdx].questions
+                  : exercise.questions;
+                const clipAnswered = currentQuestions.every((q: any) => answers[q.id] !== undefined);
+                const isLastClip = !isClipMode || currentClipIdx >= (exercise.clips?.length || 1) - 1;
+                const allClipsDone = isClipMode && submitted && isLastClip;
+
+                return (
                 <div className={styles.questionsSection}>
                   <h3 className={styles.questionsSectionTitle}>
-                    Questions ({exercise.questions.length})
+                    {isClipMode
+                      ? `Clip ${currentClipIdx + 1} — Questions (${currentQuestions.length})`
+                      : `Questions (${exercise.questions.length})`}
                   </h3>
 
-                  {exercise.questions.map((q: any) => (
+                  {currentQuestions.map((q: any) => (
                     <div key={q.id} className={styles.questionCard}>
                       <p className={styles.questionText}>
                         {q.id}. {q.question}
@@ -406,8 +567,49 @@ export default function AIPracticePage() {
                     </div>
                   ))}
 
-                  {/* Submit / Score */}
-                  {!submitted ? (
+                  {/* Clip mode: Check Answers for this clip → Next Clip */}
+                  {isClipMode && !submitted && (
+                    <button
+                      className={styles.generateBtn}
+                      onClick={() => setSubmitted(true)}
+                      disabled={!clipAnswered}
+                      style={{ marginTop: '0.75rem' }}
+                    >
+                      Check Answers
+                    </button>
+                  )}
+                  {isClipMode && submitted && !isLastClip && (
+                    <button
+                      className={styles.generateBtn}
+                      onClick={() => {
+                        setCurrentClipIdx(prev => prev + 1);
+                        setSubmitted(false);
+                      }}
+                      style={{ marginTop: '0.75rem', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}
+                    >
+                      Next Clip 🎧
+                    </button>
+                  )}
+                  {isClipMode && submitted && isLastClip && (
+                    <div className={styles.resultsBar}>
+                      <div>
+                        <div className={styles.scoreDisplay}>
+                          <span className={styles.scoreNum}>{getScore().correct}</span>
+                          <span className={styles.scoreTotal}>/ {getScore().total}</span>
+                        </div>
+                        <span className={styles.scoreLabel}>
+                          {getScore().correct === getScore().total
+                            ? 'Perfect! 🎉'
+                            : getScore().correct >= getScore().total * 0.7
+                              ? 'Good job! 👍'
+                              : 'Keep practicing! 💪'}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Non-clip mode: original submit/score */}
+                  {!isClipMode && !submitted && (
                     <button
                       className={styles.generateBtn}
                       onClick={submitQuiz}
@@ -416,7 +618,8 @@ export default function AIPracticePage() {
                     >
                       Check Answers
                     </button>
-                  ) : (
+                  )}
+                  {!isClipMode && submitted && (
                     <div className={styles.resultsBar}>
                       <div>
                         <div className={styles.scoreDisplay}>
@@ -434,7 +637,8 @@ export default function AIPracticePage() {
                     </div>
                   )}
                 </div>
-              )}
+                );
+              })()}
             </>
           )}
 
@@ -470,6 +674,13 @@ export default function AIPracticePage() {
               <a
                 href={partOrTask.includes('Task 1') ? '/writing/task-1' : '/writing/task-2'}
                 className={styles.startPracticeBtn}
+                onClick={() => {
+                  // Signal writing page to pick a random theme from existing contexts
+                  localStorage.setItem('celpip_ai_writing_prompt', JSON.stringify({
+                    task: partOrTask.includes('Task 1') ? 1 : 2,
+                    randomTheme: true,
+                  }));
+                }}
               >
                 Start Writing <ArrowRight size={16} />
               </a>
@@ -524,9 +735,9 @@ export default function AIPracticePage() {
           {/* Next exercise button (hidden for visual tasks to avoid DALL-E abuse) */}
           {!(section === 'speaking' && (partOrTask.includes('Task 3') || partOrTask.includes('Task 4'))) && (
             <div className={styles.actions}>
-              <button className={styles.nextBtn} onClick={generate} disabled={generating}>
+              <button className={styles.nextBtn} onClick={generate} disabled={generating || cooldown > 0}>
                 <RefreshCw size={16} />
-                Generate Another
+                {cooldown > 0 ? `Wait ${cooldown}s` : 'Generate Another'}
               </button>
             </div>
           )}

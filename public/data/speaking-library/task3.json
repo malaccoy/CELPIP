@@ -1,0 +1,332 @@
+[
+  {
+    "id": "task3-01",
+    "scenario": "The sun is shining brightly over a bustling farmers market on a Saturday morning in summer. Stalls are lined up, overflowing with vibrant fruits and vegetables, while vendors are energetically calling out to passersby, enticing them with fresh produce. Families are wandering through the aisles, children are laughing as they point at colorful flowers, and the smell of freshly baked bread wafts through the air. Nearby, a man is skillfully demonstrating how to make homemade jam, attracting a small crowd of curious onlookers. A group of friends are at a nearby table, enjoying delicious samples of cheese and chatting animatedly.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-02",
+    "scenario": "A vibrant family barbecue is taking place in a sunny backyard. The smell of grilled burgers and hot dogs fills the air as the father is flipping burgers on a large, smoky grill while wearing an apron. Nearby, children are laughing and playing a game of tag on the lush green lawn, their joyful shouts echoing in the warm breeze. The mother is setting up a colorful picnic table with plates of fresh salads, drinks, and snacks. Strings of fairy lights are hung around the patio, giving the scene a festive atmosphere as the sun begins to set.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-03",
+    "scenario": "In a bustling city park, an ice skating rink is filled with families and friends enjoying a chilly winter day. Children are laughing and wobbling as they glide across the ice, some holding onto the hands of their parents. Nearby, a group of teenagers are performing tricks, attempting spins and jumps, while others cheer them on from the sidelines. The air is filled with the sounds of skates scraping against the ice, and the joyful shouts of people enjoying hot chocolate from colorful kiosks lining the rink's edge. Snow gently falls from the gray sky, creating a picturesque winter atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-04",
+    "scenario": "It is a gray, rainy day at a bustling bus stop. People are huddled under the shelter, some holding umbrellas that are dripping with rainwater. A young woman in a bright red raincoat is checking her phone anxiously, while an elderly man is leaning against the pole, adjusting his glasses. A couple stands close together, sharing a colorful umbrella, their laughter cutting through the sound of rain splattering on the pavement. Puddles are forming on the ground, reflecting the gloomy sky above and the vibrant colors of the people waiting for their buses.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-05",
+    "scenario": "In a vibrant playground filled with colorful equipment, groups of children are laughing and playing energetically after school. A little girl with pigtails is swinging high on the swing set, her feet reaching towards the sky as she giggles with delight. Nearby, two boys are racing each other up the slide, one of them already at the top and looking down with a mischievous grin, while the other is still climbing. On the grass, a small group of children is playing tag, darting back and forth, their laughter ringing out in the afternoon sun. The sun is shining brightly, casting playful shadows on the ground, and the air is filled with the sound of happy chatter and the rustling of leaves in the gentle breeze.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-06",
+    "scenario": "The coffee shop is buzzing with activity as the aroma of freshly brewed coffee fills the air. Several people are sitting at large communal tables, their laptops open as they type away furiously. A woman in a bright yellow sweater is animatedly talking on her phone while sipping a latte, and a man in a blue shirt is adjusting his glasses as he focuses on a presentation on his laptop screen. In the corner, a barista is steaming milk for a cappuccino, and a few patrons are chatting quietly over their drinks, creating a warm and inviting atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-07",
+    "scenario": "The sun is shining brightly over a bustling beach filled with families enjoying their day. Parents are setting up colorful umbrellas while children are building sandcastles near the water's edge, their laughter mixing with the sound of waves crashing. In the distance, a group of surfers are paddling out, skillfully maneuvering their boards as they wait for the perfect wave. Beach balls are flying through the air, and a nearby picnic area is filled with families sharing food and drinks, creating a warm and inviting atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-08",
+    "scenario": "In a suburban neighborhood, a group of construction workers is actively building a new house. There are four men wearing hard hats and safety vests, diligently working together. One worker is pouring concrete into a wooden frame while another is measuring the lengths of wooden beams with a tape measure. Nearby, a third worker is lifting heavy materials with a crane, and a fourth worker is reviewing blueprints on a large clipboard. The sun is shining brightly, and there are stacks of bricks and tools scattered around the construction site.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-09",
+    "scenario": "A bustling grocery store is filled with shoppers pushing their carts down the brightly lit aisles. A mother is selecting ripe tomatoes, carefully examining each one while her young daughter, holding a colorful snack, is skipping alongside her. Near the checkout, an elderly man is chatting with a friendly cashier as he places his groceries on the conveyor belt. In the produce section, two friends are laughing as they compare different fruits, while a store employee is restocking shelves in the background.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-10",
+    "scenario": "In a vibrant city park, the sun is shining brightly as joggers are running along the winding paths. To the left, a group of dog walkers is chatting animatedly while their energetic dogs are playfully tugging at their leashes, barking joyfully. Nearby, a bright red food truck is parked, and a couple of people are lining up to order delicious tacos and cold drinks. The scent of grilled food wafts through the air, mingling with the earthy aroma of fresh grass. Children are laughing and playing on a nearby playground, adding to the lively atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-11",
+    "scenario": "Inside a quiet library, students are spread across long wooden tables, intently studying for their upcoming exams. Some are hunched over open textbooks, while others are typing furiously on laptops, their brows furrowed in concentration. In one corner, a cozy reading nook is adorned with plush cushions and a small bookshelf filled with novels. A few students are lounging in the nook, engrossed in their books, while soft sunlight filters through the large windows, casting a warm glow over the entire scene.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-12",
+    "scenario": "The restaurant kitchen is bustling with activity as the dinner rush unfolds. Chefs are chopping vegetables furiously, their knives glinting under the bright overhead lights. Waitstaff are darting in and out, balancing trays laden with steaming plates of food. The air is filled with the delicious aroma of spices and grilled meats, while a cook is calling out orders loud enough to be heard over the clattering of pans. In the background, a dishwasher is loading dirty dishes into the machine, making a rhythmic clanking noise.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-13",
+    "scenario": "A vibrant street festival is taking place under a bright blue sky, with colorful decorations hanging from the trees. People of all ages are gathered around food stalls, where vendors are grilling skewers of meat, frying funnel cakes, and serving fresh lemonade. Children are laughing and dancing to the live band playing upbeat music on a small stage while couples stroll hand in hand, savoring their delicious food. The air is filled with the enticing aromas of street food and the joyful sounds of chatter and music, creating an atmosphere of celebration and community.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-14",
+    "scenario": "In a modern conference room, a group of six professionals is seated around a large oval table. There are two men and four women, all engaged in an animated discussion. One woman is standing and gesturing towards a PowerPoint presentation displayed on a screen at the front of the room, while the others are leaning forward, taking notes, and nodding in agreement. A variety of colorful charts and graphs are visible on the screen, and coffee cups and notepads are scattered across the table.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-15",
+    "scenario": "The bustling airport terminal is filled with travelers from all over the world. Families are gathered around their luggage, eagerly discussing their upcoming adventures, while business people are hurrying past with their briefcases in hand, checking their watches frequently. A group of teenagers is laughing loudly near a café, taking selfies with their phones as they wait for their flight. Overhead, the bright displays are flashing flight information, and the sounds of announcements echo throughout the spacious hall.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-16",
+    "scenario": "The community garden is alive with activity as several people are tending to their plots. A woman in a straw hat is kneeling in the warm soil, carefully planting seeds in neat rows while a man beside her is using a small trowel to dig holes for seedlings. Nearby, children are energetically filling watering cans from a large barrel, giggling as they splash water onto the vibrant green leaves. The sun is shining brightly overhead, casting a golden glow on the colorful vegetables that are beginning to flourish, with butterflies fluttering around the blooming flowers.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-17",
+    "scenario": "The gym is bustling with activity as various individuals engage in their workouts. In one corner, a group of people is participating in a lively Zumba class, moving rhythmically to energetic music while smiling and laughing. Near the weightlifting area, a man is lifting dumbbells, focusing intensely as he counts his reps while a woman next to him is doing squats with a barbell on her shoulders. On the treadmill, a girl is jogging steadily, her ponytail swinging with each stride, and a couple is stretching on yoga mats, enjoying a moment of calm amidst the vibrant energy of the gym.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-18",
+    "scenario": "It is a winter morning in a quiet suburban neighborhood blanketed in fresh, white snow. Families are outside shoveling their driveways, struggling against the heavy snowfall. A father is energetically clearing a path while his children play nearby, tossing snowballs at each other and laughing. Brightly colored scarves and hats stand out against the stark white surroundings, and you can see snowflakes gently falling from the sky. The sound of shovels scraping the pavement mixes with the cheerful shouts of children, creating a lively winter atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-19",
+    "scenario": "The sun is setting over a tranquil lakeside campsite, casting a golden hue across the water. Several colorful tents are pitched beneath tall pine trees, and a small group of friends is gathered around a crackling campfire, roasting marshmallows and laughing. In the background, a canoe is gently bobbing on the lake, while a few ducks swim by, creating ripples on the glassy surface. The aroma of smoke and pine fills the air, and the sound of laughter mixes with the soft rustle of leaves.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-20",
+    "scenario": "In a bright and colorful classroom, a teacher is standing at the front, enthusiastically explaining a science experiment. Students of various ages are seated at their desks, listening intently and raising their hands to ask questions. A few students are working in groups, mixing different materials together in clear plastic cups, while others are taking notes in their notebooks. The walls are adorned with educational posters and student artwork, creating a lively and inviting atmosphere.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-21",
+    "scenario": "The food court in a bustling shopping mall is alive with activity during lunch hour. People are sitting at various tables, some enjoying their meals while others are lining up at different food stalls. A family is sharing a large pizza, with kids laughing and reaching for slices, while a group of teenagers is taking selfies with their colorful bubble tea drinks. The aroma of freshly cooked food fills the air, mingling with the sound of lively conversations and the clattering of trays. Bright lights illuminate the area, highlighting the vibrant decor of the food stalls and the wide variety of cuisines available.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-22",
+    "scenario": "In a busy dog park, various breeds are energetically playing together. A golden retriever is joyfully fetching a bright red ball while a small beagle is wagging its tail and sniffing around nearby bushes, exploring every scent. Several owners are standing in groups, chatting and laughing as they watch their dogs. One woman is throwing a frisbee in the air, and a sleek black Labrador is leaping high to catch it. Nearby, a man is crouched down, petting a fluffy Pomeranian as it bounces excitedly at his feet.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-23",
+    "scenario": "In a lush garden filled with blooming flowers and vibrant greenery, a beautiful outdoor wedding ceremony is taking place. The sun is shining brightly, and a gentle breeze is rustling the leaves of the nearby trees. The bride, dressed in a stunning white gown, is walking down an aisle lined with delicate petals while beaming with joy. The groom stands at the altar, smiling and holding back tears as he looks at his bride. Guests are seated on wooden benches, some taking pictures, while others are whispering excitedly amongst themselves, all dressed in their finest attire.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-24",
+    "scenario": "A vast expanse of a farmer's field is bustling with activity during the harvest season. Bright yellow and golden grains sway gently in the breeze, while multiple tractors are working tirelessly across the landscape. Farmers are wearing wide-brimmed hats and are focused on operating the machines, which are cutting and collecting the crops. In the background, a clear blue sky stretches overhead, and the sun casts a warm glow over the scene, creating a picture of hard work and abundance.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-25",
+    "scenario": "The hospital waiting room is bustling with activity. A young mother is cradling her crying baby, trying to soothe him while glancing around nervously. Nearby, an elderly man is sitting alone, flipping through a worn-out magazine, occasionally looking up at the clock on the wall. A nurse is walking briskly through the room, checking on patients and calling names, while a couple is sitting closely together, whispering and occasionally sharing worried glances. The room is filled with the soft hum of conversations and the faint beeping of medical equipment.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-26",
+    "scenario": "The art gallery is spacious and brightly lit, with large windows allowing sunlight to flood in. Visitors are wandering through the gallery, some are standing in front of vivid paintings, deeply engrossed in the artwork. A couple is discussing a large abstract piece, animatedly pointing at the bold colors and strokes. In the corner, a child is peering closely at a landscape painting, while an elderly woman is taking notes in a small notebook, capturing her thoughts about the pieces. A few people are quietly admiring the sculptures that are dotted throughout the room, adding an element of three-dimensional art to the scene.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-27",
+    "scenario": "The lively hockey arena is filled with a sea of fans, all decked out in team colors, waving banners and flags. In the center of the rink, players are swiftly gliding across the ice, their sticks skillfully handling the puck as they shoot towards the goal. Surrounding them, spectators are on their feet, cheering with excitement and clapping in unison, creating an electrifying atmosphere. Bright lights are shining down, illuminating the action while the scoreboard looms above, displaying the tense score as the crowd roars with every near-miss and goal.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-28",
+    "scenario": "A sunny afternoon in a suburban neighborhood where a family is moving to a new house. The bright blue sky is dotted with fluffy white clouds as children are running around playing tag while their parents are busy loading a large moving truck. The father is lifting a heavy box marked 'Fragile' and carefully placing it in the back of the truck, while the mother organizes smaller items like plants and kitchen utensils on a folding table nearby. The family dog is wagging its tail excitedly, watching the children, and a few neighbors are stopping by to help out or offer refreshments.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-29",
+    "scenario": "It is a bright and sunny Saturday morning in a friendly neighborhood. Families are setting up tables in their front yards, displaying an array of items from vintage clothing to toys and home decor. Children are laughing and playing together, while adults are chatting and haggling over prices. A colorful banner hangs across the street that reads 'Neighborhood Garage Sale!' and the smell of fresh coffee wafts through the air as a couple serves cups to their neighbors.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  },
+  {
+    "id": "task3-30",
+    "scenario": "The train station platform is bustling with energy as commuters are hurrying to catch their trains. People are standing in small clusters, some are checking their phones while others are talking animatedly. The sound of train announcements echoes in the background, mixing with the rhythmic sound of footsteps on the concrete. A mother is helping her young daughter hold onto her backpack, while a businessman in a suit is sipping coffee nervously, glancing at the arrival board. Nearby, a group of students is laughing and taking selfies, capturing the moment before their train arrives.",
+    "prompt": "Describe what is happening in this picture as completely as you can.",
+    "bulletPoints": [
+      "Describe the setting",
+      "Describe the people and what they are doing",
+      "Describe objects and details"
+    ],
+    "context": "You are describing this picture to someone who cannot see it."
+  }
+]

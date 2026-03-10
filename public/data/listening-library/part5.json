@@ -1,0 +1,2912 @@
+[
+  {
+    "id": "part5-01",
+    "title": "Debating the Four-Day Work Week",
+    "context": "Listen to a discussion among three colleagues about whether to implement a four-day work week at their company in Toronto.",
+    "audioFile": "part5-01.mp3",
+    "duration": 157.128,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A. Company profits",
+          "B. Employee burnout",
+          "C. Four-day work week",
+          "D. Commuting issues"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Which city is mentioned as the setting for the discussion?",
+        "options": [
+          "A. Vancouver",
+          "B. Montreal",
+          "C. Calgary",
+          "D. Toronto"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What benefit does Sarah mention regarding productivity?",
+        "options": [
+          "A. Increase in customer complaints",
+          "B. Decrease in work hours",
+          "C. Up to 20% output increase",
+          "D. Higher salaries"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What concern does the host raise about the four-day work week?",
+        "options": [
+          "A. Employee satisfaction",
+          "B. Customer service",
+          "C. Environmental impact",
+          "D. Job loss"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does John suggest managing scheduling?",
+        "options": [
+          "A. Everyone takes Fridays off",
+          "B. Staggered work weeks",
+          "C. Working overtime",
+          "D. Everyone works the same days"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What financial impact is mentioned about employee turnover?",
+        "options": [
+          "A. It costs $20,000 to replace staff",
+          "B. It saves the company money",
+          "C. Employees earn more",
+          "D. It decreases investment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What do both speakers believe could improve by implementing the four-day work week?",
+        "options": [
+          "A. Customer complaints",
+          "B. Employee satisfaction",
+          "C. Corporate spending",
+          "D. Profits for competitors"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the overall tone of the discussion?",
+        "options": [
+          "A. Negative",
+          "B. Neutral",
+          "C. Supportive",
+          "D. Indifferent"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part5-02",
+    "title": "Handling a Difficult Coworker Situation",
+    "context": "Listen to a discussion between three coworkers about managing a challenging situation with a difficult coworker in a Canadian workplace.",
+    "audioFile": "part5-02.mp3",
+    "duration": 178.44,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Handling deadlines",
+          "Managing difficult coworkers",
+          "Improving teamwork",
+          "Work-life balance"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where does David work?",
+        "options": [
+          "Toronto",
+          "Vancouver",
+          "Montreal",
+          "Calgary"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What did Sarah do to address her coworker's behavior?",
+        "options": [
+          "Ignored it",
+          "Spoke to their manager",
+          "Had a lunch conversation",
+          "Confronted them in a meeting"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What was David's initial approach to Tom?",
+        "options": [
+          "He avoided him",
+          "He discussed it openly",
+          "He brought it up in a meeting",
+          "He tried to ignore the behavior"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What location did Sarah suggest for their conversation?",
+        "options": [
+          "A restaurant",
+          "A coffee shop",
+          "A park",
+          "At work"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How did Sarah feel after addressing her coworker's behavior?",
+        "options": [
+          "Frustrated",
+          "Relieved",
+          "Angry",
+          "Uncertain"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What strategy does the Host suggest for conflict management?",
+        "options": [
+          "Involving HR immediately",
+          "Communication should be priority",
+          "Regular team-building exercises",
+          "Avoiding difficult conversations"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What does David plan to do next?",
+        "options": [
+          "Ignore Tom",
+          "Talk to Tom over coffee",
+          "Schedule a meeting with their manager",
+          "Leave the team"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-03",
+    "title": "Planning a Charity Fundraiser",
+    "context": "Listen to the conversation between three colleagues discussing their plans for a company charity fundraiser.",
+    "audioFile": "part5-03.mp3",
+    "duration": 151.488,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Company expansion",
+          "Charity fundraiser",
+          "Employee training",
+          "Office renovation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where do they suggest hosting the event?",
+        "options": [
+          "Stanley Park",
+          "Central Park",
+          "Queen's Park",
+          "Calgary Zoo"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How much is the proposed entry fee for the event?",
+        "options": [
+          "$10",
+          "$20",
+          "$30",
+          "$40"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Which charity do they plan to support?",
+        "options": [
+          "Canadian Diabetes Association",
+          "BC Children's Hospital",
+          "Toronto Animal Services",
+          "Red Cross"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will encourage kids to participate in the event?",
+        "options": [
+          "Free entry for kids",
+          "A prize for schools",
+          "Food trucks",
+          "Music concert"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What type of vendors do they want to involve?",
+        "options": [
+          "Bakeries",
+          "Clothing stores",
+          "Food vendors",
+          "Bookstores"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "How do they plan to promote the event?",
+        "options": [
+          "Television ads",
+          "Social media and flyers",
+          "Radio commercials",
+          "Posters only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the attitude of the speakers towards the fundraiser?",
+        "options": [
+          "Indifferent",
+          "Excited and optimistic",
+          "Doubtful",
+          "Cautious and negative"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-04",
+    "title": "Remote Work vs. In-Office Work Policy Discussion",
+    "context": "Listen to a discussion between three colleagues about the pros and cons of remote work versus traditional office work in Canada.",
+    "audioFile": "part5-04.mp3",
+    "duration": 181.392,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A) Future of remote work",
+          "B) Benefits of in-office settings",
+          "C) Comparison of remote and in-office work",
+          "D) Technology's role in workplaces"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Where is Anna from?",
+        "options": [
+          "A) Calgary",
+          "B) Vancouver",
+          "C) Toronto",
+          "D) Montreal"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What does Michael suggest about productivity?",
+        "options": [
+          "A) It is better in offices",
+          "B) Commuting helps improve it",
+          "C) Remote work can hinder it",
+          "D) Remote work increases team bonding"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Anna mention about office camaraderie?",
+        "options": [
+          "A) It's easier remotely",
+          "B) It’s crucial for teamwork",
+          "C) It's unnecessary",
+          "D) It can be built with technology"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What financial benefit of remote work is mentioned?",
+        "options": [
+          "A) Higher salaries",
+          "B) Savings on commuting",
+          "C) Reductions in taxes",
+          "D) Office maintenance savings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How does Anna feel about tracking deliverables?",
+        "options": [
+          "A) It makes work more stressful",
+          "B) It's necessary to maintain trust",
+          "C) It is overly punitive",
+          "D) It's unnecessary for productivity"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What does Michael think about work policies in the future?",
+        "options": [
+          "A) They will revert to fully in-office",
+          "B) Only remote work will be adopted",
+          "C) A hybrid model will emerge",
+          "D) Productivity will be less important"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What is the attitude of both speakers towards remote work?",
+        "options": [
+          "A) Totally negative",
+          "B) Supportive but cautious",
+          "C) Indifferent",
+          "D) Completely positive"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-05",
+    "title": "Organizing a Community Garden Project",
+    "context": "Listen to a discussion between three community members about starting a community garden in Toronto.",
+    "audioFile": "part5-05.mp3",
+    "duration": 157.656,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A. Community gardening",
+          "B. School partnerships",
+          "C. Sustainable living",
+          "D. Local government",
+          "C"
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Who is organizing the meeting?",
+        "options": [
+          "A. Linda",
+          "B. Jamie",
+          "C. Anna",
+          "D. The city of Toronto",
+          "C"
+        ]
+      },
+      {
+        "id": 3,
+        "question": "How much can the city of Toronto provide in grants for community gardens?",
+        "options": [
+          "A. $500",
+          "B. $1,000",
+          "C. $1,500",
+          "D. $2,000",
+          "B"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What type of workshops do they plan to host?",
+        "options": [
+          "A. Cooking classes",
+          "B. Gardening techniques",
+          "C. Sustainability",
+          "D. Youth activities",
+          "B"
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What attitude do the speakers express towards the community garden?",
+        "options": [
+          "A. Indifference",
+          "B. Skepticism",
+          "C. Enthusiasm",
+          "D. Opposition",
+          "C"
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Where are the potential garden locations mentioned?",
+        "options": [
+          "A. Near downtown Toronto",
+          "B. Bloor Street",
+          "C. Regent Park",
+          "D. Near schools",
+          "B"
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What crops do they hope to grow?",
+        "options": [
+          "A. Fruits",
+          "B. Flowers",
+          "C. Vegetables and herbs",
+          "D. Spices",
+          "C"
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What is the immediate next step proposed in the discussion?",
+        "options": [
+          "A. Begin planting",
+          "B. Secure funding",
+          "C. Hold another meeting",
+          "D. Design the garden",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "part5-06",
+    "title": "Budget Cuts at Hope Community Services",
+    "context": "Listen to a discussion about budget cuts affecting a nonprofit organization in Canada.",
+    "audioFile": "part5-06.mp3",
+    "duration": 186.36,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Budget cuts affecting for-profit businesses",
+          "Budget cuts at Hope Community Services",
+          "Community events in Vancouver",
+          "Financial advice for individuals"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much is the proposed cut to funding?",
+        "options": [
+          "10%",
+          "15%",
+          "20%",
+          "25%"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which organization does Sarah represent?",
+        "options": [
+          "Hope Community Services",
+          "Vancouver Food Bank",
+          "Canadian Mental Health Association",
+          "United Way"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What is one effect of the cuts mentioned by Tom?",
+        "options": [
+          "Increased community events",
+          "Higher staff salaries",
+          "Reduced training quality",
+          "More government support"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is one fundraising method Sarah mentioned?",
+        "options": [
+          "Online donations",
+          "Charity auction",
+          "Community fundraising events",
+          "Crowdfunding campaigns"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is Sarah's concern regarding partnerships?",
+        "options": [
+          "Lack of interest from supermarkets",
+          "Cost of organizing partnerships",
+          "Negotiation difficulties",
+          "Government regulations"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "What was the community's response during the meeting?",
+        "options": [
+          "Indifference towards services",
+          "Concern about service reductions",
+          "Excitement for new programs",
+          "Support for budget cuts"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is one solution Sarah proposes?",
+        "options": [
+          "Reduce service hours",
+          "Advocate for funding",
+          "Limit community meetings",
+          "Focus on individual donors"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-07",
+    "title": "Planning Improvements to a Condo Building",
+    "context": "Listen to a discussion between three condo board members about potential improvements to their building.",
+    "audioFile": "part5-07.mp3",
+    "duration": 164.952,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A roof garden",
+          "Security measures",
+          "Common area improvements",
+          "All of the above"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 2,
+        "question": "How much would the roof garden cost to set up?",
+        "options": [
+          "$5,000",
+          "$10,000",
+          "$15,000",
+          "$20,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What type of artwork do they plan to feature in the lobby?",
+        "options": [
+          "Famous artists",
+          "Local artists",
+          "Abstract paintings",
+          "Photographs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the monthly maintenance cost for the roof garden?",
+        "options": [
+          "$100",
+          "$150",
+          "$200",
+          "$250"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What security issue is mentioned?",
+        "options": [
+          "Flooding",
+          "Break-ins",
+          "Poor lighting",
+          "Vandalism"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How much would the new security system cost?",
+        "options": [
+          "$2,000",
+          "$3,000",
+          "$4,000",
+          "$5,000"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 7,
+        "question": "What does the woman emphasize about improving the condo?",
+        "options": [
+          "Cost efficiency",
+          "Community involvement",
+          "Stylish design",
+          "Security"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the attitude of the speakers towards the proposed changes?",
+        "options": [
+          "Indifferent",
+          "Negative",
+          "Supportive",
+          "Skeptical"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part5-08",
+    "title": "Diversity and Inclusion in the Workplace",
+    "context": "Listen to the discussion about a workplace diversity training program in Canada.",
+    "audioFile": "part5-08.mp3",
+    "duration": 177.432,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A. Workplace Policies",
+          "B. Diversity Training",
+          "C. Employee Benefits",
+          "D. Hiring Practices"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where did a recent workshop take place?",
+        "options": [
+          "A. Calgary",
+          "B. Toronto",
+          "C. Ottawa",
+          "D. Vancouver"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which city is mentioned as having diverse cultural backgrounds?",
+        "options": [
+          "A. Calgary",
+          "B. Ottawa",
+          "C. Toronto",
+          "D. Halifax"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How do employees generally feel about the diversity training?",
+        "options": [
+          "A. They dislike it",
+          "B. They find it unhelpful",
+          "C. They feel more comfortable",
+          "D. They ignore it"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What did Mark say about the results of their training sessions?",
+        "options": [
+          "A. They did not see any changes",
+          "B. Teams became more cohesive",
+          "C. Hiring decreased",
+          "D. Employees were resistant"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is one recommendation for companies starting their diversity initiatives?",
+        "options": [
+          "A. Avoid leadership involvement",
+          "B. Begin with an assessment",
+          "C. Implement training only once",
+          "D. Focus solely on hiring practices"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What aspect of workplace diversity does Sarah emphasize?",
+        "options": [
+          "A. It is costly",
+          "B. It is a one-time effort",
+          "C. It requires ongoing efforts",
+          "D. It is unnecessary"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What is the tone of the discussion?",
+        "options": [
+          "A. Negative",
+          "B. Informative",
+          "C. Disinterested",
+          "D. Conflicted"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-09",
+    "title": "Volunteer Coordination for a Food Bank in Toronto",
+    "context": "Listen to a discussion about coordinating volunteers for a food bank in Toronto and answer the questions that follow.",
+    "audioFile": "part5-09.mp3",
+    "duration": 162.96,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Volunteer recruitment strategies",
+          "Challenges in food bank coordination",
+          "Local food prices",
+          "Impact of food banks on families"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How many families did the Toronto Food Bank support last year?",
+        "options": [
+          "25,000",
+          "30,000",
+          "50,000",
+          "75,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What solution did Sarah mention for reducing volunteer no-shows?",
+        "options": [
+          "Pairing volunteers",
+          "Social media outreach",
+          "Sending text reminders",
+          "Community donations"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What incentive is provided to new volunteers?",
+        "options": [
+          "Cash bonuses",
+          "Experience certificates",
+          "A buddy system",
+          "Free meals"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Which social media platform is mentioned as effective for attracting younger volunteers?",
+        "options": [
+          "Twitter",
+          "LinkedIn",
+          "Instagram",
+          "Pinterest"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "How much money was raised during the community event?",
+        "options": [
+          "$1,000",
+          "$2,500",
+          "$3,000",
+          "$5,000"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "What is Mark’s attitude towards volunteer work?",
+        "options": [
+          "Indifferent",
+          "Supportive",
+          "Skeptical",
+          "Negative"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What does Sarah encourage listeners to do?",
+        "options": [
+          "Don’t volunteer",
+          "Get involved in their community",
+          "Focus on fundraising only",
+          "Support local businesses only"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-10",
+    "title": "Planning a Campus Event",
+    "context": "Listen to the discussion among members of the student council as they plan a campus event.",
+    "audioFile": "part5-10.mp3",
+    "duration": 146.424,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the meeting?",
+        "options": [
+          "Planning a fall festival",
+          "Discussing student council budget",
+          "Organizing vendor outreach",
+          "Booking local bands"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is the proposed entrance fee for the festival?",
+        "options": [
+          "$3",
+          "$5",
+          "$10",
+          "$15"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which city is mentioned as a location for vendor partnerships?",
+        "options": [
+          "Vancouver",
+          "Montreal",
+          "Toronto",
+          "Calgary"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the suggested date for the festival?",
+        "options": [
+          "First Saturday in October",
+          "Second Saturday in October",
+          "Last Saturday in October",
+          "First Sunday in October"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What type of community contribution is discussed?",
+        "options": [
+          "Cash donations",
+          "Non-perishable food items",
+          "Clothing donations",
+          "School supplies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What will the student council use for advertising?",
+        "options": [
+          "Local newspapers",
+          "Social media and posters",
+          "TV ads",
+          "Billboards"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What task will the man take charge of?",
+        "options": [
+          "Contacting local vendors",
+          "Organizing the schedule for bands",
+          "Advertising the event",
+          "Managing logistics"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "How do the speakers feel about the event?",
+        "options": [
+          "Indifferent",
+          "Excited",
+          "Concerned",
+          "Uninterested"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-11",
+    "title": "Office Pets Discussion",
+    "context": "Listen to a discussion between colleagues about the potential policy of allowing pets in the office. Answer the questions that follow.",
+    "audioFile": "part5-11.mp3",
+    "duration": 148.008,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A: Allowing pets in the workplace",
+          "B: Organizing a team-building event",
+          "C: Changes to office decor",
+          "D: Updating the company handbook"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does the Woman raise about having pets in the office?",
+        "options": [
+          "A: Allergies",
+          "B: Lack of space",
+          "C: Employers' approval",
+          "D: Feeding the pets"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What suggestion does Man make to address noise issues?",
+        "options": [
+          "A: Allow only cats",
+          "B: Limit pets to certain areas",
+          "C: Schedule quiet hours",
+          "D: Hire a pet manager"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is Man 2's initial opinion about allowing pets?",
+        "options": [
+          "A: Very supportive",
+          "B: A bit doubtful",
+          "C: Excited",
+          "D: Indifferent"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What potential benefit of having pets at work is mentioned?",
+        "options": [
+          "A: Improved communication",
+          "B: Increased stress",
+          "C: Reduced stress",
+          "D: More office space"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What proposal do the speakers consider for testing the idea?",
+        "options": [
+          "A: Hire a professional pet trainer",
+          "B: A trial period",
+          "C: A pet show",
+          "D: Set strict rules right away"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What document do they plan to create for the management meeting?",
+        "options": [
+          "A: A list of pet owners",
+          "B: A feedback survey",
+          "C: A presentation outlining their thoughts",
+          "D: A pet care manual"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What overall attitude do the speakers have towards allowing pets in the office?",
+        "options": [
+          "A: Completely negative",
+          "B: Cautiously optimistic",
+          "C: Indifferent",
+          "D: Absolutely against"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-12",
+    "title": "Planning a Company Team-Building Retreat in Banff",
+    "context": "Listen to a discussion between three colleagues planning a team-building retreat in Banff. After listening, answer the following questions.",
+    "audioFile": "part5-12.mp3",
+    "duration": 126.216,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A team-building retreat",
+          "Office renovation plans",
+          "New hiring policies",
+          "Annual budget review"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What activities do they consider including in the retreat?",
+        "options": [
+          "Office meetings only",
+          "Hiking and workshops",
+          "Cooking classes",
+          "Yoga sessions and meditation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Woman suggest to help with team bonding?",
+        "options": [
+          "Outdoor activities",
+          "Game nights",
+          "Online training",
+          "Sports events"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "How much budget has HR approved for the retreat?",
+        "options": [
+          "$2,000",
+          "$5,000",
+          "$10,000",
+          "$15,000"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What transportation method do they prefer for the retreat?",
+        "options": [
+          "Carpooling",
+          "Train",
+          "Renting a bus",
+          "Flying"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What season do they plan the retreat in?",
+        "options": [
+          "Summer",
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What is Man 1's attitude towards the retreat?",
+        "options": [
+          "Indifferent",
+          "Very excited",
+          "Skeptical",
+          "Supportive"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 8,
+        "question": "When will they meet again to finalize the plans?",
+        "options": [
+          "Next week",
+          "In two weeks",
+          "Tomorrow",
+          "Later this month"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "id": "part5-13",
+    "title": "Flexible Parental Leave Policies Discussion",
+    "context": "Listen to a discussion among three colleagues in a Canadian workplace about the benefits and challenges of flexible parental leave policies.",
+    "audioFile": "part5-13.mp3",
+    "duration": 143.64,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A: Flexible work hours",
+          "B: Parental leave policies",
+          "C: Employee training programs",
+          "D: Health benefits"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What benefit of flexible parental leave is mentioned?",
+        "options": [
+          "A: Higher pay",
+          "B: Increased productivity",
+          "C: Improved employee satisfaction",
+          "D: More vacation days"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What concern does Man 2 raise about flexible parental leave?",
+        "options": [
+          "A: Employee productivity",
+          "B: Insurance costs",
+          "C: Staff coverage",
+          "D: Company reputation"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What did the speakers suggest to support employees on leave?",
+        "options": [
+          "A: Hiring full-time staff",
+          "B: Cross-training employees",
+          "C: Reducing workload",
+          "D: Offering bonuses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Which speaker emphasizes the importance of employee feedback?",
+        "options": [
+          "A: Man",
+          "B: Woman",
+          "C: Man 2",
+          "D: None of them"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is Man’s opinion about proactive measures regarding the policy?",
+        "options": [
+          "A: They are unnecessary",
+          "B: They could help clarify the policy",
+          "C: They should be avoided",
+          "D: They are too costly"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "How do the speakers feel about adopting a flexible parental leave policy?",
+        "options": [
+          "A: Indifferent",
+          "B: Supportive",
+          "C: Opposed",
+          "D: Confused"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the overall attitude of the discussion regarding policy change?",
+        "options": [
+          "A: Skeptical",
+          "B: Enthusiastic",
+          "C: Defensive",
+          "D: Disinterested"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-14",
+    "title": "Reducing Food Waste in the Office Kitchen",
+    "context": "Listen to a discussion among coworkers about strategies for minimizing food waste in the office kitchen.",
+    "audioFile": "part5-14.mp3",
+    "duration": 137.088,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Reducing office supplies",
+          "Reducing food waste",
+          "Increasing employee morale",
+          "Enhancing kitchen aesthetics"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What suggestion involves sharing food?",
+        "options": [
+          "Host a potluck",
+          "Send reminders",
+          "Post expiration dates",
+          "Create a sharing shelf"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "Why does the woman emphasize food storage?",
+        "options": [
+          "It prevents theft",
+          "It helps reduce spoilage",
+          "It makes cooking easier",
+          "It saves time"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the man feel about reducing food waste?",
+        "options": [
+          "Indifferent",
+          "Supportive",
+          "Skeptical",
+          "Annoyed"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Which of the following is NOT mentioned as a solution?",
+        "options": [
+          "Educating on expiration dates",
+          "Weekly potluck",
+          "Recycling food containers",
+          "Creating a sharing shelf"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What does the woman think is important when planning a potluck?",
+        "options": [
+          "Fun decorations",
+          "Portion control",
+          "Diverse cuisines",
+          "Invitation list"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What is the general attitude of the speakers toward food waste?",
+        "options": [
+          "Negative",
+          "Positive",
+          "Neutral",
+          "Unsure"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "question": "What could be a benefit of implementing these ideas?",
+        "options": [
+          "Lower utility bills",
+          "Stronger team bonds",
+          "More office gatherings",
+          "Cleaner kitchen"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-15",
+    "title": "Choosing a New Software System for the Department",
+    "context": "Listen to the discussion between colleagues about selecting a new software system for their department. Answer the questions based on the dialogue.",
+    "audioFile": "part5-15.mp3",
+    "duration": 128.4,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "Choosing a new software system",
+          "Budgeting for office supplies",
+          "Team building activities",
+          "Hiring new staff"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Which software system was mentioned as being user-friendly?",
+        "options": [
+          "EfficientOps",
+          "TaskMaster",
+          "TeamSync",
+          "ProjectMax"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern did Man 2 express about choosing a new system?",
+        "options": [
+          "High costs",
+          "Compatibility issues",
+          "Reliability of cheaper systems",
+          "User training requirements"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What does Woman suggest to help evaluate the options?",
+        "options": [
+          "Conducting staff meetings",
+          "Doing software trials",
+          "Hiring a consultant",
+          "Reading user reviews"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What previous experience did Man mention regarding software selection?",
+        "options": [
+          "Rushing into a decision",
+          "Successful implementation",
+          "Positive user feedback",
+          "Training challenges"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What is Woman's role moving forward?",
+        "options": [
+          "Gathering staff feedback",
+          "Conducting cost analysis",
+          "Leading the software trials",
+          "Presenting to upper management"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "How does Man feel about the new software selection process?",
+        "options": [
+          "Relaxed",
+          "Indifferent",
+          "Concerned",
+          "Optimistic"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 8,
+        "question": "What is the group's aim for the software selection?",
+        "options": [
+          "To minimize costs",
+          "To make a well-informed decision",
+          "To impress management",
+          "To choose the most popular option"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-16",
+    "title": "Debating a Dress Code Change at Work",
+    "context": "Listen to a discussion between coworkers about the proposed changes to the dress code in their office.",
+    "audioFile": "part5-16.mp3",
+    "duration": 141.456,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of discussion?",
+        "options": [
+          "Proposed vacation policy",
+          "Change in dress code",
+          "Office renovation plans",
+          "New hiring practices"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What are the two dress code options discussed?",
+        "options": [
+          "Formal and casual",
+          "Business casual and formal",
+          "Casual and traditional",
+          "Business formal and relaxed"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Woman 1 believe about the change?",
+        "options": [
+          "It might hurt productivity",
+          "It creates a friendly atmosphere",
+          "It will confuse clients",
+          "It is unnecessary"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What concern does Woman 2 express?",
+        "options": [
+          "Employees may dislike casual wear",
+          "Professional image might be impacted",
+          "It could create a distraction",
+          "Casual days will not be taken seriously"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What compromise do they suggest?",
+        "options": [
+          "Casual Fridays",
+          "No changes at all",
+          "Formal meetings only",
+          "Uniforms for everyone"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What is Woman 2's idea for ensuring everyone is heard?",
+        "options": [
+          "Hold a team meeting",
+          "Do a company-wide survey",
+          "Send another email",
+          "Have one-on-one discussions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "How do they view the potential change to a dress code?",
+        "options": [
+          "With skepticism",
+          "With excitement",
+          "With indifference",
+          "With disappointment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the overall attitude of the speakers towards the proposed change?",
+        "options": [
+          "Highly negative",
+          "Mostly positive",
+          "Completely neutral",
+          "Very critical"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-17",
+    "title": "Organizing a Mentorship Program",
+    "context": "Listen to the discussion about organizing a mentorship program for new hires at a Canadian company.",
+    "audioFile": "part5-17.mp3",
+    "duration": 127.896,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A. Organizing a mentorship program",
+          "B. Recruiting new employees",
+          "C. Planning a company event",
+          "D. Evaluating employee performance"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How long do they propose the mentorship program should last?",
+        "options": [
+          "A. Three months",
+          "B. Six months",
+          "C. One year",
+          "D. Two weeks"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 suggest to complement the mentorship?",
+        "options": [
+          "A. One-on-one meetings",
+          "B. Group activities",
+          "C. Extra payments for mentors",
+          "D. Skill assessments"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What opinion does the Woman have about preparing mentors?",
+        "options": [
+          "A. They should be left alone",
+          "B. They need training",
+          "C. They know enough already",
+          "D. It’s not necessary"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Man think should be included in the program?",
+        "options": [
+          "A. Training sessions for mentors",
+          "B. Social media promotions",
+          "C. Competitions",
+          "D. Longer working hours"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What is Man 2’s attitude towards the mentorship program?",
+        "options": [
+          "A. Indifferent",
+          "B. Skeptical",
+          "C. Supportive",
+          "D. Confused"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "Why is gathering feedback important according to Woman?",
+        "options": [
+          "A. To justify the expenses",
+          "B. To improve the program",
+          "C. To please the management",
+          "D. To promote new hires"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the planned timeline for launching the mentorship program?",
+        "options": [
+          "A. Next week",
+          "B. Next month",
+          "C. Next quarter",
+          "D. Next year"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part5-18",
+    "title": "Planning Accessibility Improvements",
+    "context": "Listen to a discussion between three colleagues planning accessibility improvements for their community center.",
+    "audioFile": "part5-18.mp3",
+    "duration": 139.152,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the discussion?",
+        "options": [
+          "A ramp installation",
+          "Accessibility improvements",
+          "Budget planning",
+          "Community feedback"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Who is most likely to benefit from the discussed improvements?",
+        "options": [
+          "Teenagers",
+          "Seniors and people with disabilities",
+          "Staff members",
+          "Community volunteers"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What inference can be made about the current state of the community center?",
+        "options": [
+          "It is already fully accessible.",
+          "It falls short in accessibility for certain users.",
+          "It is newly built and modern.",
+          "The staff is unaware of accessibility issues."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does Woman suggest for the entrance of the building?",
+        "options": [
+          "Adding more steps",
+          "Installing a ramp",
+          "Removing the entrance",
+          "Creating a garden"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Man 2’s attitude towards the changes?",
+        "options": [
+          "Disinterested",
+          "Supportive",
+          "Skeptical",
+          "Negative"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Which area does Man 1 suggest needs signs with large print?",
+        "options": [
+          "The parking lot",
+          "Restrooms",
+          "Entrances",
+          "Inside the building"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 7,
+        "question": "What action does Woman plan to take after the meeting?",
+        "options": [
+          "Prepare a budget",
+          "Send out the minutes",
+          "Conduct a survey",
+          "Meet with the community"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "Why do they consider grants for funding?",
+        "options": [
+          "They have no budget",
+          "Changes are necessary",
+          "They are lazy",
+          "They didn't want to ask the community"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-19",
+    "title": "Handling After-Hours Client Emails",
+    "context": "Listen to a discussion between two colleagues about managing client emails outside regular working hours.",
+    "audioFile": "part5-19.mp3",
+    "duration": 128.16,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A) Setting after-hours email limits",
+          "B) Client satisfaction",
+          "C) Employee productivity",
+          "D) Time management"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What suggestion does Sarah make regarding checking emails?",
+        "options": [
+          "A) Check emails all night",
+          "B) Set specific hours for checking emails",
+          "C) Ignore after-hours emails",
+          "D) Require clients to send urgent emails only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does the man think about being responsive to client emails?",
+        "options": [
+          "A) It is unnecessary",
+          "B) It's important but overwhelming",
+          "C) It should be done all the time",
+          "D) It's easy to manage"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What do they plan to do next?",
+        "options": [
+          "A) Ignore after-hours emails",
+          "B) Create a draft policy",
+          "C) Discuss it with clients",
+          "D) Focus on their workload"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Sarah's opinion on setting boundaries?",
+        "options": [
+          "A) It's too rigid",
+          "B) It's beneficial",
+          "C) It isn't necessary",
+          "D) It reduces professionalism"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How do the speakers feel about the potential policy?",
+        "options": [
+          "A) Indifferent",
+          "B) Excited and optimistic",
+          "C) Skeptical",
+          "D) Frustrated"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What is one benefit they see in managing after-hours emails effectively?",
+        "options": [
+          "A) Better client relations",
+          "B) More stress",
+          "C) Increased workload",
+          "D) Less communication"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "question": "What attitude do the speakers have towards client response times?",
+        "options": [
+          "A) They should respond immediately",
+          "B) They should establish guidelines",
+          "C) They should do nothing",
+          "D) They need to be strict"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-20",
+    "title": "Hybrid Work Model Discussion",
+    "context": "Listen to a discussion among three colleagues about the possibility of switching to a hybrid work model permanently.",
+    "audioFile": "part5-20.mp3",
+    "duration": 141.576,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "A: The benefits of remote work",
+          "B: Switching to a hybrid work model",
+          "C: The importance of teamwork",
+          "D: Employee feedback on office policies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What do the speakers agree is a benefit of hybrid work?",
+        "options": [
+          "A: Increased commuting time",
+          "B: Enhanced work-life balance",
+          "C: More office meetings",
+          "D: Less technology use"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern does Man 2 express about hybrid work?",
+        "options": [
+          "A: It encourages laziness",
+          "B: It doesn't foster collaboration",
+          "C: It reduces flexibility",
+          "D: It provides too much commuting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How do the speakers plan to address employee isolation?",
+        "options": [
+          "A: By eliminating remote work",
+          "B: By holding regular team-building activities",
+          "C: By increasing office hours",
+          "D: By avoiding video calls"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Woman's hope regarding management's response?",
+        "options": [
+          "A: They will reject the proposal",
+          "B: They will support the idea",
+          "C: They will ignore the feedback",
+          "D: They will change jobs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What action do the speakers decide to take at the end of the discussion?",
+        "options": [
+          "A: Draft a proposal for management",
+          "B: Stop discussing the hybrid model",
+          "C: Increase office attendance",
+          "D: Switch back to full in-office work"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What is the overall attitude of the speakers towards the hybrid model?",
+        "options": [
+          "A: Negative and skeptical",
+          "B: Open-minded and optimistic",
+          "C: Indifferent and uninterested",
+          "D: Confused and uncertain"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "Which speaker seems to take a leadership role in the discussion?",
+        "options": [
+          "A: Man 1",
+          "B: Woman",
+          "C: Man 2",
+          "D: None of them"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-21",
+    "title": "The Future of Remote Work for Government Employees",
+    "context": "A discussion among three colleagues about the feasibility of making remote work permanent for government employees in Canada.",
+    "audioFile": "part5-21.mp3",
+    "duration": 135.576,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of discussion?",
+        "options": [
+          "Remote work for government employees",
+          "Office space costs",
+          "Team cohesion",
+          "Environmental impact"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What benefit of remote work is mentioned by Man?",
+        "options": [
+          "Higher job satisfaction",
+          "Improved communication",
+          "Reduced office space",
+          "More in-person meetings"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What concern does Woman raise regarding remote work?",
+        "options": [
+          "Job satisfaction",
+          "Long-term impacts on collaboration",
+          "Environmental impacts",
+          "Cost savings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What solution does Man 2 propose?",
+        "options": [
+          "Full remote work",
+          "Hybrid models",
+          "More office space",
+          "Increasing commuting distance"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do the speakers agree is important for team dynamics?",
+        "options": [
+          "Remote meetings",
+          "Job satisfaction",
+          "Regular in-person meetings",
+          "Saving costs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What benefit of having employees work from home does Man mention regarding the environment?",
+        "options": [
+          "Reduced emissions from commuting",
+          "Better recycling programs",
+          "Less paper usage",
+          "Lower energy consumption"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What is a proposed drawback of hybrid work mentioned in the discussion?",
+        "options": [
+          "Cost savings",
+          "Maintaining team cohesion",
+          "Increased job satisfaction",
+          "Environmental impact"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What do the speakers conclude about remote work?",
+        "options": [
+          "It's not feasible",
+          "It can be beneficial with structure",
+          "It should be avoided",
+          "It's not cost-effective"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-22",
+    "title": "Pros and Cons of Year-Round Schooling in Canada",
+    "context": "A discussion among three friends about the pros and cons of implementing year-round schooling for Canadian students.",
+    "audioFile": "part5-22.mp3",
+    "duration": 136.2,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What benefit of year-round schooling does the Woman mention?",
+        "options": [
+          "A. Reducing summer learning loss",
+          "B. Increasing summer vacation",
+          "C. Easier adjustment to high school",
+          "D. Greater school funding"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is Man 2's concern regarding year-round schooling?",
+        "options": [
+          "A. Parents’ reliance on summer camps",
+          "B. Student engagement in school",
+          "C. Teachers' workload",
+          "D. Budget constraints for schools"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What does Man suggest about the breaks in a year-round school system?",
+        "options": [
+          "A. They would be less frequent",
+          "B. They could help with burnout",
+          "C. They would be too long",
+          "D. They could reduce engagement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Which approach does Woman suggest at the end of the discussion?",
+        "options": [
+          "A. Full year-round schooling",
+          "B. A return to traditional schooling",
+          "C. A hybrid model with both features",
+          "D. More summer camps"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What point does Man 2 disagree with?",
+        "options": [
+          "A. The need for year-round schooling",
+          "B. The benefits of traditional schooling",
+          "C. The cost of year-round education",
+          "D. The impact on teachers’ workload"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does Man 2 think about the school change's feasibility?",
+        "options": [
+          "A. It'll be easy to implement",
+          "B. It may not be affordable",
+          "C. All provinces can afford it",
+          "D. Students will benefit immediately"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "How does Woman feel about the potential long-term benefits?",
+        "options": [
+          "A. They might lead to higher funding",
+          "B. They could save money on remedial programs",
+          "C. They are irrelevant",
+          "D. They will require increased summer activities"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the primary purpose of this discussion?",
+        "options": [
+          "A. To advocate for year-round schooling",
+          "B. To critique traditional schooling only",
+          "C. To weigh the pros and cons of year-round schooling",
+          "D. To plan a school calendar"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "part5-23",
+    "title": "Debating Single-Use Plastics in Restaurants",
+    "context": "A discussion among three individuals about whether cities should impose a ban on single-use plastics in restaurants.",
+    "audioFile": "part5-23.mp3",
+    "duration": 159.528,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of discussion?",
+        "options": [
+          "A ban on single-use plastics",
+          "Increasing restaurant profits",
+          "Environmental education",
+          "Public transportation improvements"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does the woman raise?",
+        "options": [
+          "Environmental impact",
+          "Costs for small businesses",
+          "Health regulations",
+          "Community engagement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What solution does the man propose?",
+        "options": [
+          "Complete ban immediately",
+          "Phased approach to banning",
+          "No changes to policies",
+          "Increase plastic production"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is a point of agreement among the speakers?",
+        "options": [
+          "Education about alternatives is necessary",
+          "Single-use plastics are cheaper",
+          "Businesses should not change",
+          "Restaurants do not impact the environment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What does Man 2 suggest to aid the transition?",
+        "options": [
+          "Increase plastic use",
+          "Community delivery systems",
+          "Ban all restaurant supplies",
+          "No additional support"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What future concern does Woman express?",
+        "options": [
+          "Harming the environment",
+          "Impact on low-income families",
+          "Policy engagement",
+          "Economic support for restaurants"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "Which of the following is a reason for implementing a ban?",
+        "options": [
+          "Cleaner environment",
+          "Higher business profits",
+          "Less community involvement",
+          "More usable plastics"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "question": "What is the ultimate goal the speakers agree on?",
+        "options": [
+          "A thriving economy",
+          "Cleaner planet",
+          "More plastic production",
+          "No change in policies"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-24",
+    "title": "Impact of Social Media on Teenagers' Mental Health",
+    "context": "A discussion among three individuals exploring the effects of social media on the mental well-being of teenagers in Canada.",
+    "audioFile": "part5-24.mp3",
+    "duration": 130.368,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern raised by the speakers regarding social media?",
+        "options": [
+          "A) It fosters creativity.",
+          "B) It encourages a sense of community.",
+          "C) It leads to increased anxiety and depression.",
+          "D) It has no impact on teenagers."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What do the speakers suggest as a solution to the negative effects of social media?",
+        "options": [
+          "A) Banning social media altogether.",
+          "B) Increasing monitoring of usage.",
+          "C) Promoting more social media platforms.",
+          "D) Ignoring the issue."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Which speaker emphasizes the positive aspects of social media?",
+        "options": [
+          "A) Man",
+          "B) Woman",
+          "C) Man 2",
+          "D) None of them."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How do the speakers feel about the role of education in addressing social media use?",
+        "options": [
+          "A) It's unnecessary to educate teens.",
+          "B) Education can help with responsible usage.",
+          "C) Schools should focus only on traditional subjects.",
+          "D) Education is overrated."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is a shared viewpoint among the speakers?",
+        "options": [
+          "A) Social media is purely harmful.",
+          "B) Teens need more freedom online.",
+          "C) Balance is crucial in social media use.",
+          "D) All social media should be shut down."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Who mentions the issue of cyberbullying?",
+        "options": [
+          "A) Man",
+          "B) Woman",
+          "C) Man 2",
+          "D) All of them."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "According to the passage, what is one reason for the negative mental health impacts of social media?",
+        "options": [
+          "A) It allows for self-expression.",
+          "B) It promotes offline activities.",
+          "C) Constant comparison among users.",
+          "D) It creates friendships."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What overall message do the speakers convey about social media in relation to teenagers?",
+        "options": [
+          "A) Social media should be embraced unconditionally.",
+          "B) It's a challenging issue that needs careful management.",
+          "C) It's a waste of time for teenagers.",
+          "D) Social media is the root of all problems."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-25",
+    "title": "Investing in Nuclear Energy in Canada",
+    "context": "A discussion among three individuals about the potential benefits and drawbacks of increasing investments in nuclear energy in Canada.",
+    "audioFile": "part5-25.mp3",
+    "duration": 142.224,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man’s main argument for investing in nuclear energy?",
+        "options": [
+          "It is a clean energy source",
+          "It is cheaper than other options",
+          "It creates more jobs",
+          "It is renewable"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does Woman raise about nuclear energy?",
+        "options": [
+          "Its cost",
+          "Its safety risks",
+          "Its environmental impact",
+          "Its efficiency"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does Man 2 support the argument for nuclear energy?",
+        "options": [
+          "By mentioning safety advancements",
+          "By highlighting job creation",
+          "By stating it is renewable",
+          "By discussing public opinion"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What alternative energy source does Woman suggest focusing on?",
+        "options": [
+          "Wind energy",
+          "Natural gas",
+          "Hydroelectric energy",
+          "Nuclear energy"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What does Man argue about the stability of nuclear energy?",
+        "options": [
+          "It is less stable than renewables",
+          "It provides a constant power supply",
+          "It is more expensive",
+          "It has more waste disposal issues"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is Woman’s main concern about increased investment in nuclear energy?",
+        "options": [
+          "It may lead to renewable energy neglect",
+          "It is too costly",
+          "It won’t meet energy demands",
+          "It is not bad for the environment"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What is Man’s viewpoint on the need for diverse energy sources?",
+        "options": [
+          "It is unnecessary",
+          "It will create conflicts",
+          "It is essential",
+          "It will increase costs"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What conclusion do the speakers agree on toward the end of the discussion?",
+        "options": [
+          "Nuclear energy is the only solution",
+          "Public concerns need addressing",
+          "Investing in renewables is the best path",
+          "Nuclear energy is too risky"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-26",
+    "title": "Benefits and Drawbacks of Universal Basic Income",
+    "context": "A discussion among three individuals in Canada debating the merits and challenges of implementing Universal Basic Income (UBI).",
+    "audioFile": "part5-26.mp3",
+    "duration": 139.104,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is one proposed benefit of Universal Basic Income mentioned in the discussion?",
+        "options": [
+          "A. It could reduce poverty.",
+          "B. It would eliminate all jobs.",
+          "C. It would have no financial impact.",
+          "D. It could only help the wealthy."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does Woman express regarding Universal Basic Income?",
+        "options": [
+          "A. It might lead to increased work motivation.",
+          "B. It could discourage people from working.",
+          "C. It would be easy to fund.",
+          "D. It has been tried in many countries."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How does Man 2 view the administrative costs associated with current social programs?",
+        "options": [
+          "A. They should be eliminated.",
+          "B. They are more efficient than UBI.",
+          "C. They could be reduced with UBI.",
+          "D. They are less relevant than UBI."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What argument does Woman make about the potential economic impact of UBI?",
+        "options": [
+          "A. It would likely prevent inflation.",
+          "B. It could lead to inflation.",
+          "C. Community spending would decrease.",
+          "D. There would be no economic effects."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What did Man suggest about the implementation of UBI?",
+        "options": [
+          "A. It needs immediate nationwide implementation.",
+          "B. It should start with a pilot program.",
+          "C. It should be rejected entirely.",
+          "D. It would need no adjustments."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Which of the following arguments is NOT mentioned in the discussion?",
+        "options": [
+          "A. UBI could improve mental health.",
+          "B. UBI might create dependency.",
+          "C. UBI is universally agreed upon.",
+          "D. Proper planning could mitigate risks."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "question": "What is one way that Man believes UBI could benefit local economies?",
+        "options": [
+          "A. By encouraging people to save more money.",
+          "B. By enabling people to invest in businesses abroad.",
+          "C. By supporting spending in communities.",
+          "D. By reducing overall spending."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What overall conclusion do the speakers seem to agree on?",
+        "options": [
+          "A. UBI has only drawbacks.",
+          "B. UBI's merits outweigh its challenges.",
+          "C. UBI should not be implemented at all.",
+          "D. UBI is perfect and needs no changes."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-27",
+    "title": "The Pay Debate: Athletes vs. Essential Workers",
+    "context": "In a lively discussion, three individuals debate whether professional athletes are overpaid when compared to essential workers like nurses and teachers.",
+    "audioFile": "part5-27.mp3",
+    "duration": 149.448,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion?",
+        "options": [
+          "The earnings of professional athletes",
+          "Comparing salaries of athletes and essential workers",
+          "Market demand for sports",
+          "The impact of the pandemic on salaries"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What does Woman emphasize as being undervalued?",
+        "options": [
+          "The salaries of athletes",
+          "The importance of the entertainment industry",
+          "Pay for essential workers",
+          "Market economics"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 use to defend the high salaries of athletes?",
+        "options": [
+          "Personal beliefs about economics",
+          "Market demand and revenue generation",
+          "Popularity of sports",
+          "Impact on society"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What conclusion do they arrive at regarding societal values?",
+        "options": [
+          "Athletes are essential for entertainment",
+          "Essential workers should be rewarded more",
+          "Money dictates worth",
+          "Sports are more valued than essential jobs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does Man feel about the situation?",
+        "options": [
+          "He supports high salaries for athletes",
+          "He is concerned about the pay disparities",
+          "He ignores the topic",
+          "He thinks athletes work harder"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What does Woman suggest society should prioritize?",
+        "options": [
+          "Higher salaries for athletes",
+          "Better compensation for essential workers",
+          "More funding for sports",
+          "Increased demand for entertainment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What is Man 2’s opinion on public support?",
+        "options": [
+          "It's unnecessary",
+          "It could lead to changes in wages",
+          "It's already sufficient",
+          "It's only needed for entertainment sectors"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "What is the overall tone of the discussion?",
+        "options": [
+          "Defensive",
+          "Supportive and critical",
+          "Indifferent",
+          "Hostile"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-28",
+    "title": "Impact of AI and Automation on the Canadian Job Market",
+    "context": "A discussion among three individuals about the effects of AI and automation on employment in Canada.",
+    "audioFile": "part5-28.mp3",
+    "duration": 132.912,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Man's primary concern about AI's impact on jobs?",
+        "options": [
+          "The skills gap",
+          "Job creation",
+          "Equity in training",
+          "Pace of change"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How does Woman view the advent of new technology?",
+        "options": [
+          "As a threat",
+          "As a source of new opportunities",
+          "With skepticism",
+          "Without concern"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 think about the change in job dynamics?",
+        "options": [
+          "It is too slow",
+          "It is manageable",
+          "It may leave some behind",
+          "It is beneficial for all"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What solution does Man suggest for the skills gap?",
+        "options": [
+          "Investing in AI",
+          "Government support programs",
+          "Immediate job creation",
+          "Reducing technology use"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Woman believe is essential for preparing the workforce?",
+        "options": [
+          "Financial aid",
+          "Educational investment",
+          "Work experience",
+          "Lowering taxes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What ethical concern does Man 2 raise in the discussion?",
+        "options": [
+          "Job loss",
+          "Access to training",
+          "AI capabilities",
+          "Rapid change"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What joint effort does Woman suggest is necessary?",
+        "options": [
+          "Company collaboration",
+          "Government restrictions",
+          "AI regulation",
+          "Decreasing automation"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "question": "What is the overall tone of the discussion?",
+        "options": [
+          "Pessimistic",
+          "Optimistic",
+          "Neutral",
+          "Confused"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "part5-29",
+    "title": "Should Public Transit be Free in Major Canadian Cities?",
+    "context": "A discussion among three individuals about the pros and cons of making public transit free in Canadian cities.",
+    "audioFile": "part5-29.mp3",
+    "duration": 131.328,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main argument presented by Man?",
+        "options": [
+          "Public transit should be free to reduce traffic",
+          "Public transit needs more funding",
+          "Public transit is already effective",
+          "Public transit does not need to change"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How does Woman feel about public transit being free?",
+        "options": [
+          "She fully supports it",
+          "She believes funding is an issue",
+          "She doesn’t think there are enough users",
+          "She wants all transportation to be free"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What suggestion does Man 2 make regarding the implementation of free transit?",
+        "options": [
+          "Implement it without testing",
+          "Offer free transit only during peak hours",
+          "Make it free for everyone from the start",
+          "Restrict it to only low-income families"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What concern does Woman raise about increasing ridership?",
+        "options": [
+          "Potential overcrowding",
+          "Decreased funding",
+          "Increased costs of operation",
+          "Loss of middle-class riders"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What do the speakers agree on by the end of the discussion?",
+        "options": [
+          "Free transit is not feasible",
+          "A pilot program is necessary to test the idea",
+          "Middle-class citizens will not benefit",
+          "Public transit should remain unchanged"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is an anticipated benefit of free public transit according to Man?",
+        "options": [
+          "Improved public health",
+          "Reduced carbon footprint",
+          "Increased tourism",
+          "Greater economic activity"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "How does Woman feel about low-income families benefiting from free transit?",
+        "options": [
+          "She fully supports it",
+          "She thinks it’s unfair",
+          "She doesn’t believe they need it",
+          "She thinks everyone should pay"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 8,
+        "question": "What issue do the speakers identify if public transit becomes free?",
+        "options": [
+          "Lack of demand",
+          "Need for better roads",
+          "Increased cost of public services",
+          "Operational costs and maintenance"
+        ],
+        "correct": 3
+      }
+    ]
+  },
+  {
+    "id": "part5-30",
+    "title": "Pros and Cons of Allowing Tiny Homes as Affordable Housing",
+    "context": "A discussion among three friends in Canada about the implications of tiny homes as a solution to the housing crisis.",
+    "audioFile": "part5-30.mp3",
+    "duration": 126.168,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main argument presented by Man?",
+        "options": [
+          "Tiny homes can reduce housing costs.",
+          "Tiny homes are not suitable for families.",
+          "Zoning laws will hinder tiny home development.",
+          "Tiny homes are environmentally harmful."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How does Woman feel about tiny homes?",
+        "options": [
+          "They are a great idea.",
+          "They may not be suitable for everyone.",
+          "They are environmentally friendly.",
+          "They will not face zoning issues."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern does Man 2 raise?",
+        "options": [
+          "Utility infrastructure might be overburdened.",
+          "Tiny homes are too expensive.",
+          "They will create community tensions.",
+          "They are incompatible with traditional homes."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What do Man and Woman mostly agree on?",
+        "options": [
+          "Environmental benefits of tiny homes.",
+          "Challenges related to zoning laws.",
+          "The popularity of tiny homes among families.",
+          "The ease of integrating tiny homes into cities."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Woman suggest about community reactions?",
+        "options": [
+          "Residents will welcome tiny homes.",
+          "Residents might oppose tiny homes nearby.",
+          "Tiny homes will have no impact on communities.",
+          "All communities will accept tiny homes."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What conclusion does Man arrive at regarding tiny homes?",
+        "options": [
+          "They should be banned.",
+          "They are an excellent solution if regulated.",
+          "They are too small for anyone to live in.",
+          "They require expensive resources to be built."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "question": "What concern does Woman raise about tiny homes?",
+        "options": [
+          "They could increase housing expenses.",
+          "They may lead to higher homelessness rates.",
+          "Quality of life might be impacted by limited space.",
+          "They will solve all urban housing problems."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "question": "What does Man 2 suggest is necessary for tiny homes to succeed?",
+        "options": [
+          "Pure government funding.",
+          "Ongoing community debates.",
+          "Careful planning and adaptation.",
+          "Complete removal of zoning laws."
+        ],
+        "correct": 2
+      }
+    ]
+  }
+]

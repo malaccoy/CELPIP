@@ -1,0 +1,392 @@
+[
+  {
+    "id": "task1-01",
+    "scenario": "I am writing to inform you about an urgent issue with the heating system in my apartment. Since the start of winter, the heating has been unreliable and now it has completely stopped working. With temperatures dropping below freezing, it has become increasingly uncomfortable and concerning for my health and safety.",
+    "recipient": "landlord",
+    "purpose": "complaint about broken heating system",
+    "bulletPoints": [
+      "Describe the current state of the heating system and how long it has been broken.",
+      "Request immediate repairs to ensure a warm and safe living environment.",
+      "Mention any health concerns or potential inconveniences caused by the lack of heating."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-02",
+    "scenario": "You have been experiencing some family issues that require your attention, and you need to adjust your work schedule accordingly. You want to reach out to your manager to request a change in your work hours for the next few weeks. Make sure to explain the situation clearly and request their support.",
+    "recipient": "your manager",
+    "purpose": "request a schedule change",
+    "bulletPoints": [
+      "Explain the family reasons for the schedule change",
+      "Specify the new hours or days you would like to work",
+      "Mention how you will ensure work responsibilities are still met"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-03",
+    "scenario": "You are organizing a community potluck dinner at the local community center and would like to invite your friend Sarah to join. This event is a great opportunity to meet new neighbors, share delicious food, and enjoy a fun evening together. Please write an email to Sarah inviting her to the potluck dinner.",
+    "recipient": "your friend Sarah",
+    "purpose": "invitation",
+    "bulletPoints": [
+      "Date and time of the potluck dinner",
+      "What dishes everyone should bring",
+      "Mention any special activities planned for the evening"
+    ],
+    "tone": "informal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-04",
+    "scenario": "You missed an important project meeting with your coworker, Sarah, which was critical for the upcoming project deadline. You were unable to attend due to a personal emergency that arose unexpectedly. It’s essential to reach out to Sarah to apologize and assure her that you will catch up on what you missed.",
+    "recipient": "Sarah, your coworker",
+    "purpose": "Apologize for missing the meeting",
+    "bulletPoints": [
+      "Explain the reason for your absence",
+      "Express your sincere apologies for any inconvenience caused",
+      "Offer to meet at her convenience to discuss what you missed and contribute to the project"
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-05",
+    "scenario": "You recently purchased a kitchen appliance from an online store, but when it arrived, it was damaged and not functioning properly. You need to address this issue and seek a refund. Your order number is 123456, and you noticed the damage upon opening the package. You are writing to the customer service department of the online store.",
+    "recipient": "Customer Service Department",
+    "purpose": "Request a refund for a damaged product",
+    "bulletPoints": [
+      "Provide order number and details of the damaged appliance",
+      "Request instructions on how to return the damaged item",
+      "Ask for the timeline and process for receiving the refund"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-06",
+    "scenario": "You have just completed a challenging semester in your English literature course, and you want to express your gratitude to your teacher for the extra help they provided throughout the term. Their support played a significant role in your understanding of the material and improving your grades. You want to ensure they know how much you appreciated their efforts.",
+    "recipient": "your English literature teacher",
+    "purpose": "to thank your teacher for their extra help during the semester",
+    "bulletPoints": [
+      "Highlight specific instances where their guidance helped you grasp difficult concepts.",
+      "Mention how their feedback on assignments improved your writing skills.",
+      "Express your overall appreciation for their dedication and encouragement throughout the course."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-07",
+    "scenario": "I am writing to bring to your attention the serious issue of potholes on Maple Street, which have been increasingly damaging vehicles and posing safety risks for pedestrians. Despite several residents voicing their concerns, no action has been taken to address the problem. We are becoming increasingly frustrated with the lack of response from the city council regarding this matter.",
+    "recipient": "City Council of Springfield",
+    "purpose": "Complaint about road conditions",
+    "bulletPoints": [
+      "Highlight the dangerous conditions caused by the potholes, including potential accidents.",
+      "Mention the impact on local traffic and transport, noting delays and vehicle damage.",
+      "Request a timeline for repairs and any interim measures to ensure public safety."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-08",
+    "scenario": "You live in a townhouse and have been experiencing disturbances from late-night parties held by your neighbour. The loud music and noise have been making it difficult for you and your family to get a good night's sleep. You have decided to reach out to your neighbour to address this issue in a friendly yet firm manner.",
+    "recipient": "your neighbor",
+    "purpose": "request to reduce noise from late-night parties",
+    "bulletPoints": [
+      "Explain how the noise affects your family's sleep and daily routine.",
+      "Mention previous conversations or attempts to resolve the issue.",
+      "Suggest a quieter time for gatherings or alternative ways to celebrate."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-09",
+    "scenario": "You are considering applying to a college in Canada and want to gather more information about the admission requirements. You need to ensure you meet all the criteria before submitting your application. Write an email to the college's admissions office to request the necessary information.",
+    "recipient": "Admissions Office, [College Name]",
+    "purpose": "Request information about admission requirements",
+    "bulletPoints": [
+      "Inquire about the specific documents needed for the application",
+      "Ask about any prerequisite courses or qualifications",
+      "Request information on application deadlines and procedures"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-10",
+    "scenario": "Due to unforeseen circumstances, the deadline for our current project, the Eco-Friendly Initiative, has been shifted to ensure we deliver the best results. As the team lead, I want to keep everyone informed about this important update and ensure we are aligned moving forward.",
+    "recipient": "project team members",
+    "purpose": "inform about a change in project deadline",
+    "bulletPoints": [
+      "The new deadline is now set for November 30, 2023.",
+      "Please adjust your individual timelines and deliverables accordingly.",
+      "We will hold a team meeting on November 1, 2023, to discuss the impact of this change."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-11",
+    "scenario": "You recently learned about a volunteer opportunity at a local food bank in your community. You are eager to assist those in need and believe that your skills and passion for helping others would make you a great fit for this position. Write an email to the volunteer coordinator to express your interest in joining their team.",
+    "recipient": "Volunteer Coordinator at the local food bank",
+    "purpose": "Apply for a volunteer position",
+    "bulletPoints": [
+      "Express your interest in volunteering and why you are passionate about helping those in need.",
+      "Highlight any relevant skills or experience you have that would benefit the food bank.",
+      "Inquire about the application process and any upcoming orientation sessions."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-12",
+    "scenario": "You recently dined at a popular restaurant in your city and had a disappointing experience due to poor service. The waitstaff were inattentive, your order was delayed, and you received the wrong meal. You decided to reach out to the restaurant manager to express your concerns and seek a resolution.",
+    "recipient": "Restaurant Manager",
+    "purpose": "Complaint about poor service",
+    "bulletPoints": [
+      "Highlight the inattentiveness of the waitstaff during your visit",
+      "Mention the significant delay in receiving your order and the incorrect meal served",
+      "Request a follow-up to discuss how the restaurant could improve service in the future"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-13",
+    "scenario": "You recently faced unexpected expenses due to car repairs and a medical bill. As a result, you are unable to make your rent payment on time this month. You need to send an email to your landlord requesting an extension on the rent payment deadline.",
+    "recipient": "landlord",
+    "purpose": "request an extension on rent payment",
+    "bulletPoints": [
+      "Explain the unexpected expenses that occurred this month.",
+      "Request an extension of at least one week to make the rent payment.",
+      "Assure your landlord that you will be able to pay the rent in full soon."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-14",
+    "scenario": "Dear Team, as you may know, our colleague Sarah is leaving our department next week to pursue a new opportunity. We would like to give her a proper farewell, celebrating her contributions and bidding her goodbye. Therefore, I am organizing a farewell party and would love for all of you to join us in showing our appreciation.",
+    "recipient": "all coworkers in the department",
+    "purpose": "To invite coworkers to a farewell party for Sarah",
+    "bulletPoints": [
+      "The farewell party will be held on Friday, October 27th, at 5 PM in the conference room.",
+      "Please RSVP by Wednesday, October 25th, so we can arrange refreshments.",
+      "Feel free to bring a card or any personal messages for Sarah to show our support."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-15",
+    "scenario": "You recently purchased a washing machine from a local appliance store, and it is still under warranty. Unfortunately, it has stopped functioning properly, making it impossible to wash your clothes. You need to request repair service from the store to fix the issue.",
+    "recipient": "Customer Service Manager at the appliance store",
+    "purpose": "Request repair service for a broken washing machine under warranty",
+    "bulletPoints": [
+      "Provide details of the purchase, including the model and purchase date.",
+      "Explain the issue you are experiencing with the washing machine.",
+      "Request a convenient time for a technician to come and perform the repair."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-16",
+    "scenario": "You recently submitted a vacation request to your manager and are pleased to hear that it has been approved. You want to express your gratitude for their support as you plan to take time off to recharge and spend time with family. Additionally, you want to reassure them that you will ensure a smooth handover of your responsibilities before you leave.",
+    "recipient": "Manager",
+    "purpose": "Thanking for vacation approval",
+    "bulletPoints": [
+      "Express your gratitude for the approval of your vacation request.",
+      "Mention your plan to complete all pending tasks and ensure a smooth transition.",
+      "Reassure them of your commitment to the team and how you will assist in the lead-up to your leave."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-17",
+    "scenario": "You are a resident of an apartment complex in Toronto. You have noticed that the lighting in the parking lot is very dim, making it challenging and unsafe for residents returning home at night. Several neighbors have also expressed their concerns regarding this issue, especially about the risks of accidents and safety incidents.",
+    "recipient": "Building management",
+    "purpose": "Request to improve parking lot lighting",
+    "bulletPoints": [
+      "Highlight safety concerns for residents returning home after dark",
+      "Mention the risk of accidents due to low visibility",
+      "Suggest potential benefits of brighter lighting for security and peace of mind"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-18",
+    "scenario": "You recently received a job offer from a company you interviewed with last month. After careful consideration, you have decided to decline the offer as you have accepted another opportunity that aligns better with your career goals. However, you want to express your gratitude and maintain a positive relationship with the hiring manager.",
+    "recipient": "Hiring Manager at XYZ Corporation",
+    "purpose": "To politely decline a job offer while keeping the relationship open for future opportunities.",
+    "bulletPoints": [
+      "Express gratitude for the job offer and the opportunity to interview.",
+      "Explain that you have accepted another position that better fits your career aspirations.",
+      "Reiterate your interest in staying in touch for potential future opportunities."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-19",
+    "scenario": "You have recently been diagnosed with a mobility impairment that makes it difficult for you to navigate certain areas of your workplace. You want to request accommodations to help you perform your job more effectively and ensure your comfort while working. It's important for you to communicate your needs to HR in a clear and respectful manner.",
+    "recipient": "HR Manager",
+    "purpose": "request accommodations for a disability",
+    "bulletPoints": [
+      "Explain your recent diagnosis and how it affects your work.",
+      "Request specific accommodations such as a desk location change or ergonomic equipment.",
+      "Express your willingness to discuss further solutions and your commitment to your job."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-20",
+    "scenario": "You have noticed that the recycling program in your company is not being utilized effectively. Many recyclable items are still being thrown in the regular trash, and employees appear to be confused about what can be recycled. As a proactive employee, you want to suggest some improvements to enhance the program's effectiveness and promote a greener workplace.",
+    "recipient": "your manager",
+    "purpose": "suggest improvements to the company's recycling program",
+    "bulletPoints": [
+      "Introduce clear signage in recycling areas to educate employees on what can and cannot be recycled.",
+      "Organize a workshop or training session to raise awareness about the importance of recycling and how to properly sort materials.",
+      "Implement a reward system to encourage employees to actively participate in recycling efforts."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-21",
+    "scenario": "During my shift at the manufacturing plant, I noticed a safety hazard that could potentially endanger employees. There are several exposed wires near the assembly line that have not been adequately covered, creating a risk of electrical shock. It is crucial that we address this issue promptly to ensure the safety of all staff members.",
+    "recipient": "HR Manager",
+    "purpose": "Report a safety hazard",
+    "bulletPoints": [
+      "Description of the exposed wires and location",
+      "Potential risks associated with the hazard, including electrical shock",
+      "Request for immediate action to remedy the situation, such as covering the wires or conducting an inspection"
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-22",
+    "scenario": "Your child attends Maple Leaf Elementary School, and you are interested in enrolling them in an after-school program to enhance their learning and social skills. You want to gather more information about the available options, schedules, and any associated costs. This email will help you make an informed decision for your child's extracurricular activities.",
+    "recipient": "Principal Smith",
+    "purpose": "Inquiry about after-school program options",
+    "bulletPoints": [
+      "What after-school programs are currently offered at the school?",
+      "What are the schedules and durations of these programs?",
+      "Are there any fees associated with participating in the after-school programs?"
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-23",
+    "scenario": "You are applying for a graduate program in Environmental Studies and need a letter of recommendation. Your former professor, Dr. Smith, taught you in two courses and knows your academic strengths well. You want to reach out to her for assistance in providing a strong recommendation that highlights your skills and experiences.",
+    "recipient": "Dr. Smith",
+    "purpose": "Request a letter of recommendation",
+    "bulletPoints": [
+      "Mention your interest in the Environmental Studies program and its relevance to your career goals.",
+      "Remind Dr. Smith of your accomplishments in her courses and any projects you worked on together.",
+      "Request if she could provide insights on your skills that would be beneficial for the application."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-24",
+    "scenario": "You recently ordered a set of living room furniture from a local store, and it was scheduled to arrive last week. However, the delivery has been delayed without any communication from the store. You are frustrated with the lack of updates and wish to express your concerns.",
+    "recipient": "Customer Service Manager at the furniture store",
+    "purpose": "Complaint about the late delivery of furniture",
+    "bulletPoints": [
+      "State the order number and expected delivery date.",
+      "Express frustration over the lack of communication regarding the delay.",
+      "Request a prompt update on the delivery status and a new estimated delivery date."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-25",
+    "scenario": "Dear Valued Customers, We would like to inform you that our store will be temporarily closed for renovations starting next week. We appreciate your understanding as we work to enhance your shopping experience in our store.",
+    "recipient": "our loyal customers",
+    "purpose": "to inform about a temporary store closure for renovations",
+    "bulletPoints": [
+      "The closure will begin on June 1st and is expected to last for two weeks.",
+      "During this time, you can still shop online at our website.",
+      "We are excited to unveil a newly renovated store that will offer improved services and products."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-26",
+    "scenario": "You are a part-time employee at a local retail store and you are planning to take evening classes to further your education. However, your current work schedule conflicts with your class times. You need to email your manager to request flexible working hours that would allow you to attend these classes without compromising your job responsibilities.",
+    "recipient": "Manager",
+    "purpose": "Request flexible hours to attend evening college classes",
+    "bulletPoints": [
+      "Explain the importance of the evening classes for your career development.",
+      "Propose a new work schedule that accommodates your class times.",
+      "Assure your commitment to maintaining your work performance despite the schedule change."
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-27",
+    "scenario": "You work in the accounting department of a small consulting firm. A valued client has recently received an invoice that includes incorrect charges, which has caused confusion and frustration. You need to apologize for the billing error and clarify the situation to maintain a good relationship.",
+    "recipient": "Valued Client",
+    "purpose": "Apologize for a billing error and clarify the charges",
+    "bulletPoints": [
+      "Acknowledge the error and take full responsibility for the inconvenience caused.",
+      "Explain the correct charges and how the error occurred.",
+      "Assure the client that the corrected invoice will be sent promptly and offer to answer any questions."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-28",
+    "scenario": "You have been a member of your local gym for several months. Due to a recent job transfer, you are relocating to another city and will no longer be able to continue your gym membership. You need to inform the gym of your situation and request to cancel your membership.",
+    "recipient": "Gym Manager",
+    "purpose": "Request cancellation of gym membership",
+    "bulletPoints": [
+      "Provide your membership details, including your member ID and the start date of your membership.",
+      "Explain your reason for cancellation due to relocation to another city.",
+      "Request confirmation of the cancellation and any final charges that may apply."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-29",
+    "scenario": "You have been working with a colleague, Sarah, for the past two years, and she has consistently excelled in her role as a project coordinator. You believe she is an excellent candidate for promotion due to her exceptional performance and leadership abilities. You need to write an email to your manager, recommending Sarah for a promotion.",
+    "recipient": "your manager",
+    "purpose": "recommend a colleague for a promotion",
+    "bulletPoints": [
+      "Highlight Sarah's outstanding project management skills and attention to detail.",
+      "Mention her ability to lead teams effectively and foster collaboration.",
+      "Emphasize her commitment to continuous improvement and professional development."
+    ],
+    "tone": "formal",
+    "wordTarget": 150
+  },
+  {
+    "id": "task1-30",
+    "scenario": "You are interested in enrolling your child in swimming lessons at the local community centre. You want to gather more information about the available classes, including schedules and pricing. Additionally, you would like to know about any special programs or discounts that may be offered.",
+    "recipient": "Community Centre Program Coordinator",
+    "purpose": "Request information about swimming lessons",
+    "bulletPoints": [
+      "Inquire about the schedule for swimming lessons and age groups available",
+      "Request information on pricing and any available discounts or family packages",
+      "Ask if there are any special programs or events related to swimming that your child can participate in"
+    ],
+    "tone": "semi-formal",
+    "wordTarget": 150
+  }
+]

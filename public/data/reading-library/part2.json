@@ -1,0 +1,1906 @@
+[
+  {
+    "title": "Community Centre Class Schedule",
+    "passage": "Welcome to our community centre! We offer a variety of classes for different age groups and membership types. Please note the following rules: 1. Classes are divided into age groups: Children (5-12), Teens (13-17), and Adults (18+). 2. You must hold a valid community membership to participate. 3. Some classes have limited spots and require pre-registration. 4. Classes are free for members but there is a fee of $10 per session for non-members. 5. Participants must adhere to the age restrictions strictly; for example, a 12-year-old cannot attend a Teen class. Check the schedule below for available classes and their specific age and membership requirements.",
+    "diagram": "Class Name | Age Group | Membership Required | Fee per Session\n---|---|---|---\nCreative Arts | Children (5-12) | Yes | Free (10 for non-members)\nTeen Fitness | Teens (13-17) | Yes | Free (10 for non-members)\nYoga for Adults | Adults (18+) | Yes | Free (10 for non-members)\nCooking Basics | Adults (18+) | No | 10\nKids Dance | Children (5-12) | Yes | Free (10 for non-members)\nMartial Arts | Teens (13-17) | No | 10",
+    "diagramType": "schedule",
+    "completionEmail": "Dear Community Centre, I am interested in registering for the [BLANK 1]. I am [BLANK 2] years old and I have a community membership. Please let me know the next steps. Thank you! Regards, [BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the age limit for the Creative Arts class?",
+        "options": [
+          "5-12",
+          "13-17",
+          "18+",
+          "All Ages"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Do non-members have to pay for the Teen Fitness class?",
+        "options": [
+          "Yes",
+          "No",
+          "Only for parts of the class",
+          "Only for materials"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which class can a 16-year-old attend?",
+        "options": [
+          "Cooking Basics",
+          "Kids Dance",
+          "Teen Fitness",
+          "Yoga for Adults"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Is pre-registration required for Yoga for Adults?",
+        "options": [
+          "Yes",
+          "No",
+          "Only for non-members",
+          "Depends on the week"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Creative Arts",
+          "Yoga for Adults",
+          "Cooking Basics",
+          "Kids Dance"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "12",
+          "17",
+          "18",
+          "15"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "Alex",
+          "Jamie",
+          "Taylor",
+          "Jordan"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part2-01"
+  },
+  {
+    "title": "Public Transit Fare Zones and Discounts",
+    "passage": "In our city's public transit system, fares are determined by the number of fare zones traveled. There are three fare zones: Zone 1, Zone 2, and Zone 3. The base fare for traveling within Zone 1 is $3.00. Traveling from Zone 1 to Zone 2 costs $4.50, and traveling from Zone 1 to Zone 3 costs $6.00. For students and seniors, a discount of 50% applies to all fares. Additionally, if a passenger travels through all three zones, the fare is capped at $8.00 regardless of the number of zones traveled. Passengers must present valid identification to receive the discount. Children under the age of 12 travel for free when accompanied by a fare-paying adult. All fares are subject to change, so it's important to check for updates regularly.",
+    "diagram": "Fare Zone | Zone 1 | Zone 2 | Zone 3 | Discount Eligibility \n---|---|---|---|---\nBase Fare | $3.00 | $4.50 | $6.00 | N/A \nStudent/Senior Fare | $1.50 | $2.25 | $3.00 | Valid ID \nCap for All Zones | $8.00 | $8.00 | $8.00 | N/A \nChildren (under 12) | Free | Free | Free | Accompanied by adult",
+    "diagramType": "table",
+    "completionEmail": "Dear Transit Customer Service,\n\nI am writing to inquire about the fare for my trip. I will be traveling from Zone 1 to Zone 3, and I would like to know if I am eligible for a discount as a [BLANK 1]. Additionally, I have my child who is under 12; can he travel for free if he is [BLANK 2]? Finally, could you confirm the total fare I would need to pay for my trip [BLANK 3]?\n\nThank you for your assistance.\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the base fare for traveling within Zone 1?",
+        "options": [
+          "$3.00",
+          "$4.50",
+          "$6.00",
+          "$8.00"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How much does a student pay for traveling from Zone 1 to Zone 2?",
+        "options": [
+          "$4.50",
+          "$2.25",
+          "$3.00",
+          "$1.50"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What fare do passengers pay when traveling through all three zones?",
+        "options": [
+          "$6.00",
+          "$8.00",
+          "$4.50",
+          "$3.00"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What fare do children under 12 pay when traveling in any zone?",
+        "options": [
+          "$1.50",
+          "$3.00",
+          "Free",
+          "$4.50"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "Which fare applies to seniors traveling from Zone 1 to Zone 3?",
+        "options": [
+          "$3.00",
+          "$6.00",
+          "$4.50",
+          "$3.00"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "senior",
+          "student",
+          "adult",
+          "child"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "traveling alone",
+          "with an adult",
+          "with a fare-paying adult",
+          "traveling for free"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "for my child",
+          "for myself",
+          "in total",
+          "for my trip"
+        ],
+        "correct": 3
+      }
+    ],
+    "id": "part2-02"
+  },
+  {
+    "title": "Library Program Schedule and Registration Requirements",
+    "passage": "The city library offers a variety of programs for all age groups. Registration is required for most programs, with some exceptions for drop-in sessions. Children’s programs require a parent or guardian to sign the registration form. Adult programs may have prerequisites, such as previous attendance at introductory sessions. Additionally, all participants must reside in the city to be eligible for registration. Registration can be completed online or in person at the library. Programs fill up quickly, so early registration is advised. Be sure to check the specific requirements for each program listed below.",
+    "diagram": "Program Name | Age Group | Registration Type | Session Date | Time\n---|---|---|---|---\nStorytime | 0-5 years | Online/In-Person | 2023-11-10 | 10:00 AM\nArt for Teens | 13-17 years | Online | 2023-11-11 | 2:00 PM\nYoga for Adults | 18+ | Online | 2023-11-12 | 6:00 PM\nIntro to Coding | 10+ years | Online/In-Person | 2023-11-13 | 4:00 PM\nWriting Workshop | 18+ | In-Person | 2023-11-14 | 1:00 PM\nDrop-in Crafts | All ages | Drop-in | 2023-11-15 | 3:00 PM",
+    "diagramType": "schedule",
+    "completionEmail": "Dear Library Team,\n\nI would like to register for the [BLANK 1] on [BLANK 2]. I understand that registration needs to be completed [BLANK 3]. Thank you for your assistance.\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which program requires a parent or guardian to sign the registration form?",
+        "options": [
+          "Storytime",
+          "Art for Teens",
+          "Writing Workshop",
+          "Yoga for Adults"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the registration type for the Yoga for Adults program?",
+        "options": [
+          "Drop-in",
+          "Online",
+          "Online/In-Person",
+          "In-Person"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "When is the Intro to Coding program scheduled?",
+        "options": [
+          "2023-11-10",
+          "2023-11-11",
+          "2023-11-12",
+          "2023-11-13"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which program can attendees join without prior registration?",
+        "options": [
+          "Drop-in Crafts",
+          "Writing Workshop",
+          "Art for Teens",
+          "Storytime"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Storytime",
+          "Drop-in Crafts",
+          "Yoga for Adults",
+          "Intro to Coding"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "2023-11-10",
+          "2023-11-15",
+          "2023-11-14",
+          "2023-11-12"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "in-person only",
+          "by the deadline",
+          "online only",
+          "at any time"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-03"
+  },
+  {
+    "title": "Company Benefits Enrollment Options and Eligibility",
+    "passage": "At ABC Corporation, employees are offered a variety of benefits that they can enroll in during specific enrollment periods. Full-time employees are eligible for health and dental plans, as well as life insurance, after completing three months of employment. Part-time employees may enroll in the health and dental plans after six months. Additionally, employees can choose to participate in the retirement savings plan. To be eligible for the retirement plan, employees must have worked at least 1,000 hours in the previous year. Open enrollment for all benefits occurs every November, and any changes to benefits must be made during this period. If an employee fails to enroll during the open enrollment period, they must wait until the following year to make changes unless there is a qualifying life event such as marriage or the birth of a child.",
+    "diagram": "Eligibility Criteria | Full-Time Employees | Part-Time Employees\n---|---|---\nHealth & Dental Plans | Eligible after 3 months | Eligible after 6 months\nLife Insurance | Eligible after 3 months | Not eligible\nRetirement Savings Plan | Eligible after 1,000 hours in previous year | Not eligible\nOpen Enrollment | Every November | Every November\nQualifying Life Events | Yes | Yes",
+    "diagramType": "table",
+    "completionEmail": "Dear HR Team,\n\nI would like to confirm my eligibility for the following benefits: [BLANK 1]. I have been with the company for [BLANK 2] and plan to enroll during the open enrollment period in November. Additionally, I would like to know if there are any special considerations for part-time employees like myself regarding [BLANK 3].\n\nThank you,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "When can full-time employees enroll in life insurance?",
+        "options": [
+          "A: After 3 months",
+          "B: After 6 months",
+          "C: During open enrollment",
+          "D: Not eligible"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the requirement for a part-time employee to be eligible for health and dental plans?",
+        "options": [
+          "A: Must work 1,000 hours",
+          "B: Must complete 3 months",
+          "C: Must complete 6 months",
+          "D: Not eligible"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How often does open enrollment occur for all employees?",
+        "options": [
+          "A: Every month",
+          "B: Every November",
+          "C: After six months of employment",
+          "D: Annually on January 1"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What should an employee do if they do not enroll during the open enrollment period?",
+        "options": [
+          "A: Wait until the next year",
+          "B: Enroll immediately",
+          "C: Attend a special session",
+          "D: Submit a request to HR"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]:",
+        "options": [
+          "A: life insurance",
+          "B: health plan",
+          "C: vacation time",
+          "D: retirement savings plan"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]:",
+        "options": [
+          "A: two months",
+          "B: five months",
+          "C: three months",
+          "D: one year"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]:",
+        "options": [
+          "A: life insurance options",
+          "B: part-time employee privileges",
+          "C: health plan eligibility",
+          "D: retirement savings contributions"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-04"
+  },
+  {
+    "title": "Ferry Schedule and Pricing between Vancouver Island Routes",
+    "passage": "The ferry service between Vancouver Island and the mainland operates various routes with specific schedules and pricing structures. Reservations are strongly recommended, especially during the summer months when traffic is higher. Passengers have the option to travel with or without vehicles, but vehicle fares vary based on size and type. For standard vehicles, the fare is $60 for adults and $30 for children aged 5-12. Infants under 5 travel free. Passengers should arrive at the terminal at least 30 minutes before the departure time to ensure a smooth boarding process. The primary routes include the Swartz Bay to Tsawwassen route, the Duke Point to Tsawwassen route, and the Departure Bay to Horseshoe Bay route. Each route operates on a different schedule, with varying travel times from 1 hour 35 minutes to 2 hours. It’s essential to check the latest schedules online due to seasonal changes.",
+    "diagram": "Route | Departure Time | Travel Duration | Adult Fare | Child Fare\n---|---|---|---|---\nSwartz Bay to Tsawwassen | 06:00, 08:00, 10:00 | 1h 35m | $60 | $30\nDuke Point to Tsawwassen | 07:00, 09:00, 11:00 | 2h | $60 | $30\nDeparture Bay to Horseshoe Bay | 06:30, 08:30, 10:30 | 1h 40m | $60 | $30",
+    "diagramType": "schedule",
+    "completionEmail": "Dear Customer Service,\n\nI would like to inquire about the ferry service from [BLANK 1]. Can you please provide me with the departure times and the fares for adults and children?\n\nThank you,\n\n[BLANK 2]\n\nBest regards,\n[BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the latest departure time on the Swartz Bay to Tsawwassen route?",
+        "options": [
+          "10:00",
+          "11:00",
+          "09:00",
+          "08:00"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How long does the Duke Point to Tsawwassen ferry take?",
+        "options": [
+          "1 hour 40 minutes",
+          "1 hour 35 minutes",
+          "2 hours",
+          "2 hours 15 minutes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the fare for an adult traveling on the Departure Bay to Horseshoe Bay route?",
+        "options": [
+          "$30",
+          "$60",
+          "$15",
+          "$75"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How early should passengers arrive at the terminal before their departure?",
+        "options": [
+          "15 minutes",
+          "45 minutes",
+          "30 minutes",
+          "1 hour"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Swartz Bay to Tsawwassen",
+          "Duke Point to Tsawwassen",
+          "Departure Bay to Horseshoe Bay",
+          "Tsawwassen to Swartz Bay"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "John Doe",
+          "Jane Smith",
+          "Alex Brown",
+          "Sara White"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "Customer",
+          "Traveller",
+          "Passenger",
+          "Ferry goer"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part2-05"
+  },
+  {
+    "title": "Community Garden Plot Sizes and Rental Fees",
+    "passage": "The Maple Leaf Community Garden offers a variety of plot sizes for residents to cultivate their own vegetables and flowers. There are three types of plots available: Small (4x4 feet), Medium (8x8 feet), and Large (12x12 feet). Rental fees are set yearly: $20 for Small plots, $35 for Medium plots, and $50 for Large plots. A waiting list is maintained for residents who wish to rent a plot when no plots are currently available. To be added to the waiting list, applicants must fill out a form and pay a one-time fee of $5. Residents are notified in the order they applied, and if an applicant does not respond within two weeks of being contacted, they will be removed from the list. New plots may become available after the gardening season, and priority is given to residents who have not previously rented a plot.",
+    "diagram": "Plot Size | Dimensions (ft) | Rental Fee ($) | Status\n--- | --- | --- | ---\nSmall | 4x4 | 20 | Available\nMedium | 8x8 | 35 | Available\nLarge | 12x12 | 50 | Waiting List\nMedium | 8x8 | 35 | Available\nSmall | 4x4 | 20 | Waiting List",
+    "diagramType": "table",
+    "completionEmail": "Dear Community Garden Coordinator,\n\nI would like to apply for a garden plot. I am particularly interested in the [BLANK 1]. I understand that the rental fee for this plot is [BLANK 2], and I'm also aware that there is a waiting list for some of the plots. If I am placed on the waiting list, I will ensure that I respond promptly within two weeks if contacted.\n\nThank you for your assistance.\n\nBest regards,\n[BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the rental fee for a Large plot?",
+        "options": [
+          "$20",
+          "$35",
+          "$50",
+          "$5"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which plot size has a waiting list status?",
+        "options": [
+          "Small",
+          "Medium",
+          "Large",
+          "None"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How much does it cost to be added to the waiting list?",
+        "options": [
+          "$20",
+          "$35",
+          "$50",
+          "$5"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What happens if an applicant does not respond within two weeks of being contacted?",
+        "options": [
+          "They receive another notification.",
+          "They will be removed from the list.",
+          "They are given priority.",
+          "They can apply again later."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Small plot (4x4 feet)",
+          "Large plot (12x12 feet)",
+          "Medium plot (8x8 feet)",
+          "No specific preference"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "$20",
+          "$35",
+          "$50",
+          "$5"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "John Doe",
+          "Jane Smith",
+          "Alex Johnson",
+          "Emily White"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-06"
+  },
+  {
+    "title": "Movie Theatre Showtime Schedule with Discount Day Rules",
+    "passage": "Welcome to Cineplex Theatre! We offer a variety of films at different times throughout the week. Please note that every Tuesday is Discount Day, providing all tickets at a 25% discount. This discount applies to all movie showings, including matinees and evening shows. Our regular ticket prices are $12 for adults, $10 for seniors and students, and $8 for children. On Discount Day, these prices adjust to $9 for adults, $7.50 for seniors and students, and $6 for children. Additionally, we suggest arriving at least 30 minutes before showtime to ensure optimal seating. Please refer to the schedule below for today's showtimes and note that regular pricing applies except on our designated Discount Days.",
+    "diagram": "Time | Movie Title | Regular Price | Discount Price\n---|---|---|---\n12:00 PM | The Amazing Adventure | $12 | $9\n2:30 PM | Love in the Time of Penguins | $10 | $7.50\n5:00 PM | Galactic Quest | $12 | $9\n7:30 PM | The Last Stand | $10 | $7.50\n10:00 PM | Mystery at Midnight | $12 | $9",
+    "diagramType": "schedule",
+    "completionEmail": "Dear valued customer,\n\nThank you for your interest in our movie showtimes. On Discount Day, you will pay a special rate of [BLANK 1]. We recommend arriving at least 30 minutes before the showtime for [BLANK 2]. Enjoy the film and feel free to reach out if you have any questions on [BLANK 3].\n\nSincerely,\nCineplex Theatre Team",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the price of an adult ticket on Discount Day for The Amazing Adventure?",
+        "options": [
+          "$12",
+          "$10",
+          "$9",
+          "$8"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the regular price for children’s tickets at 5:00 PM?",
+        "options": [
+          "$8",
+          "$9",
+          "$10",
+          "$12"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "For the movie 'Love in the Time of Penguins', what is the discount price for seniors or students on Discount Day?",
+        "options": [
+          "$6",
+          "$7.50",
+          "$8",
+          "$10"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What time does The Last Stand start?",
+        "options": [
+          "5:00 PM",
+          "7:30 PM",
+          "10:00 PM",
+          "12:00 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "$12 for adults",
+          "$9 for adults",
+          "$10 for seniors",
+          "$8 for children"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "a great film experience",
+          "optimal seating",
+          "discounted prices",
+          "an early showtime"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "Cineplex customer service",
+          "any movie listing",
+          "showtime updates",
+          "future promotions"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part2-07"
+  },
+  {
+    "title": "Municipal Recycling Pickup Schedule and Accepted Items",
+    "passage": "In our municipality, recycling is collected bi-weekly on Thursdays for residents in Zone A and Fridays for those in Zone B. It is essential to adhere to the schedule to ensure proper waste management and avoid overflow. Accepted items for recycling include paper, cardboard, plastic bottles, and metal cans. Please ensure that all items are clean and free of food residue. Items that are not accepted in the recycling stream include glass, food waste, and plastic bags. Residents are encouraged to review the recycling guidelines provided by the city before placing their recyclables out for collection. Additionally, any missed pickups can be reported to the municipal services within 24 hours for rescheduling.",
+    "diagram": "Day | Zone A | Zone B\n---|---|---\nThursday | Recycling Pickup | No Pickup\nFriday | No Pickup | Recycling Pickup",
+    "diagramType": "schedule",
+    "completionEmail": "Dear [Recipient],\n\nI would like to remind you that the recycling pickup in our area occurs on [BLANK 1] for Zone A and [BLANK 2] for Zone B. Please remember that the accepted items include [BLANK 3].\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "On which day does Zone A have recycling pickup?",
+        "options": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Wednesday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which items are accepted for recycling?",
+        "options": [
+          "Glass bottles",
+          "Food waste",
+          "Plastic bottles",
+          "Plastic bags"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "If you live in Zone B, when is your recycling pickup?",
+        "options": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What should you do if your recycling was missed?",
+        "options": [
+          "Wait for the next pickup",
+          "Report it within 24 hours",
+          "Throw it in the trash",
+          "Call the police"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Thursday",
+          "Sunday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "Thursday",
+          "Saturday",
+          "Friday",
+          "None"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "Glass, metal, and cardboard",
+          "Food items",
+          "Plastic bottles and metal cans",
+          "Plastic bags and food waste"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-08"
+  },
+  {
+    "title": "Fitness Class Timetable and Instructor Qualifications",
+    "passage": "Welcome to our community fitness center! We offer a variety of classes designed for individuals of different fitness levels. Each class has specific prerequisites and is taught by qualified instructors. Generally, classes are categorized into three levels: Beginner, Intermediate, and Advanced. To attend an Intermediate class, participants should have at least six months of prior experience or have completed the Beginner class. Advanced classes are intended for those who have experience in the Intermediate level for at least one year. All instructors must have certifications in fitness training, and they may also hold specialty certifications for specific classes. For any class, please arrive at least 10 minutes early to ensure you have proper equipment and to avoid disruptions.",
+    "diagram": "Time | Monday | Tuesday | Wednesday | Thursday | Friday\n---|---|---|---|---|---\n6 PM | Yoga (Beginner) - Jane | Spin (Intermediate) - Mike | HIIT (Advanced) - Sarah | Pilates (Beginner) - Lisa | Zumba (Intermediate) - Tom\n7 PM | Pilates (Intermediate) - Anna | Yoga (Advanced) - Dave | Spin (Beginner) - Emma | HIIT (Intermediate) - Paul | Yoga (Beginner) - Karen\n8 PM | HIIT (Advanced) - Chris | Zumba (Beginner) - Emma | Pilates (Advanced) - Sarah | Spin (Intermediate) - Mark | HIIT (Advanced) - Kate",
+    "diagramType": "schedule",
+    "completionEmail": "Hello, I would like to sign up for the [BLANK 1] class on [BLANK 2]. I have [BLANK 3] and am excited to join your fitness community. Thank you!",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which class is available at 6 PM on Tuesday?",
+        "options": [
+          "Yoga (Beginner)",
+          "Spin (Intermediate)",
+          "HIIT (Advanced)",
+          "Pilates (Beginner)"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which instructor teaches the Advanced Yoga class?",
+        "options": [
+          "Jane",
+          "Dave",
+          "Mike",
+          "Anna"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the prerequisite to join the Intermediate Pilates class?",
+        "options": [
+          "No experience needed",
+          "One year of advanced training",
+          "Completion of Beginner class",
+          "Six months of fitness experience"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "At what time does the HIIT class taught by Chris start?",
+        "options": [
+          "6 PM",
+          "7 PM",
+          "8 PM",
+          "Not available"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Pilates"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "no prior experience",
+          "six months experience",
+          "a gym membership",
+          "one year experience"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-09"
+  },
+  {
+    "title": "Pet Adoption Criteria and Available Animals",
+    "passage": "At the Happy Paws Animal Shelter, we prioritize finding suitable homes for our animals through a careful adoption process. Prospective adopters must meet several criteria: they should be at least 18 years old, have a stable income, and provide a pet-friendly living environment. Additionally, adopters must agree to provide regular veterinary care, and pets must not be left alone for more than eight hours a day. We encourage open communication about the responsibilities of pet ownership and the commitment it entails. Our shelter currently has various animals available for adoption, each with its own specific needs and characteristics. Adopters are encouraged to choose an animal that fits their lifestyle and family dynamics to ensure a successful match.",
+    "diagram": "Animal | Age | Breed | Size | Adoption Fee \n---|---|---|---|--- \nBella | 2 years | Labrador | Medium | $150 \nMax | 5 years | Beagle | Small | $100 \nCharlie | 3 years | Bulldog | Medium | $200 \nDaisy | 1 year | Poodle | Small | $250 \nRocky | 4 years | Rottweiler | Large | $300",
+    "diagramType": "table",
+    "completionEmail": "Dear Shelter Staff,\n\nI am interested in adopting a pet from your shelter. I am over 18 years old and have a stable income. I am considering adopting [BLANK 1]. Please let me know if this pet is still available, as I understand the adoption fee is [BLANK 2]. Additionally, I can confirm that I will be able to provide the necessary veterinary care and that I will not leave the pet alone for more than [BLANK 3] hours a day.\n\nThank you for your assistance.\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the minimum age required to adopt a pet?",
+        "options": [
+          "16",
+          "18",
+          "21",
+          "25"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which of the following pets has the highest adoption fee?",
+        "options": [
+          "Bella",
+          "Max",
+          "Charlie",
+          "Daisy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What size is the breed of the pet named 'Max'?",
+        "options": [
+          "Small",
+          "Medium",
+          "Large",
+          "Extra Large"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How often must pets receive veterinary care according to the shelter's criteria?",
+        "options": [
+          "Weekly",
+          "Monthly",
+          "As needed",
+          "Regularly"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Bella",
+          "Daisy",
+          "Rocky",
+          "Charlie"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "$100",
+          "$150",
+          "$200",
+          "$300"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-10"
+  },
+  {
+    "title": "Community Garden Plot Rental Information",
+    "passage": "Welcome to the Annual Community Garden Initiative! Our community garden provides residents with the opportunity to grow their own fruits and vegetables. We offer various plot sizes, each with different rental fees and regulations. The three plot sizes available are:\n\n1. Small Plot (4 ft x 8 ft) - Rental Fee: $20 per season\n2. Medium Plot (8 ft x 8 ft) - Rental Fee: $35 per season\n3. Large Plot (10 ft x 20 ft) - Rental Fee: $50 per season\n\nTo ensure fair access, all interested parties must register on our waiting list, prioritized by the order in which applications are received. Each plot is available for one season, and if you wish to renew your rental, you must send us an email at least two weeks before the next season begins. Families are allowed to share a plot; however, only one application per family will be accepted per season. Please note that if a plot is not re-rented after one season, it will be returned to the waiting list for others to apply. We encourage all community members to share their gardening experiences and collaborate to maintain the garden space.",
+    "diagram": "| Plot Size       | Dimensions       | Rental Fee | Waiting List Rules                        |\n|------------------|------------------|------------|------------------------------------------|\n| Small Plot       | 4 ft x 8 ft      | $20        | One application per family               |\n| Medium Plot      | 8 ft x 8 ft      | $35        | Priority based on registration order     |\n| Large Plot       | 10 ft x 20 ft    | $50        | Must renew application two weeks before  |",
+    "diagramType": "table",
+    "completionEmail": "Dear Community Garden Coordinator,\n\nI am interested in renting a [BLANK 1] for the upcoming season. I understand that the rental fee is [BLANK 2] and that I need to join the waiting list. Please let me know if my application can be processed in time.\n\nThank you!\nBest regards,\n[BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the rental fee for a Small Plot?",
+        "options": [
+          "$20",
+          "$35",
+          "$50",
+          "$15"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "What is the size of a Medium Plot?",
+        "options": [
+          "4 ft x 8 ft",
+          "8 ft x 10 ft",
+          "8 ft x 8 ft",
+          "10 ft x 20 ft"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "How are applicants prioritized on the waiting list?",
+        "options": [
+          "By plot size",
+          "By rental fee paid",
+          "By registration order",
+          "By family size"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What must a family do to renew their plot rental?",
+        "options": [
+          "Submit a new application",
+          "Contact the coordinator via phone",
+          "Email two weeks before the season",
+          "Pay the rental fee"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "small plot",
+          "large plot",
+          "medium plot",
+          "any plot"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "$20",
+          "$35",
+          "$50",
+          "$30"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "John Doe",
+          "Jane Smith",
+          "The local community",
+          "My family"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-11"
+  },
+  {
+    "title": "Hospital Visitor Policy and Access Restrictions",
+    "passage": "The hospital has specific visiting hours and access restrictions in place to ensure patient safety and comfort. General visiting hours are from 10:00 AM to 8:00 PM daily. However, certain wards have defined visiting times to accommodate patient care. For instance, the Pediatric Ward allows visitors from 12:00 PM to 5:00 PM, while the ICU has restricted access with visiting hours from 1:00 PM to 3:00 PM. Additionally, only two visitors are permitted per patient at a time in the general wards, and one visitor is allowed in the ICU. Visitors must sign in at the reception and wear identification badges at all times while in the hospital. Special circumstances for extended visiting hours may be considered but require prior approval from the ward nurse.",
+    "diagram": "Ward | General Visiting Hours | Special Notes\n---|---|---\nGeneral Ward | 10:00 AM - 8:00 PM | Up to 2 visitors at a time\nPediatric Ward | 12:00 PM - 5:00 PM | Up to 2 visitors at a time\nICU | 1:00 PM - 3:00 PM | 1 visitor only",
+    "diagramType": "table",
+    "completionEmail": "Dear [BLANK 1],\n\nI would like to inquire about the visiting hours in the [BLANK 2] and any special conditions I should be aware of for entry. Please let me know if I need to fill out any forms or seek approval for [BLANK 3].\n\nThank you,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What are the visiting hours for the General Ward?",
+        "options": [
+          "A) 10:00 AM - 8:00 PM",
+          "B) 12:00 PM - 5:00 PM",
+          "C) 1:00 PM - 3:00 PM",
+          "D) 9:00 AM - 7:00 PM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How many visitors are allowed in the ICU at one time?",
+        "options": [
+          "A) 1",
+          "B) 2",
+          "C) 3",
+          "D) None"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "Which ward has visiting hours from 12:00 PM to 5:00 PM?",
+        "options": [
+          "A) General Ward",
+          "B) Pediatric Ward",
+          "C) ICU",
+          "D) Surgical Ward"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "What must visitors wear while in the hospital?",
+        "options": [
+          "A) Personal clothing",
+          "B) Identification badges",
+          "C) Uniforms",
+          "D) Casual wear"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) Nurse",
+          "B) Hospital Administrator",
+          "C) Ward Manager",
+          "D) Family Member"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Surgical Ward",
+          "B) Pediatric Ward",
+          "C) General Ward",
+          "D) Emergency Room"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) additional visitors",
+          "B) special visiting hours",
+          "C) extended stay",
+          "D) a private room"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-12"
+  },
+  {
+    "title": "Movie Theatre Showtime Schedule and Discount Days",
+    "passage": "Welcome to the Maple Leaf Cinema! We are excited to present our weekly movie schedule. Our regular showtimes are as follows: Monday to Thursday at 5:00 PM, 7:30 PM, and 10:00 PM; Friday to Sunday at 2:00 PM, 5:00 PM, 7:30 PM, and 10:00 PM. Please note that every Tuesday is Discount Day! All tickets purchased on Tuesdays receive a 20% discount off the regular price. Additionally, for group bookings of 10 or more, an extra 10% discount is available, applicable on all days. The discounts apply only to regular showings and cannot be combined with other offers. Make sure to book your tickets in advance to ensure your preferred time!",
+    "diagram": "Showtime Schedule:\n| Day        | 2:00 PM | 5:00 PM | 7:30 PM | 10:00 PM |\n|------------|---------|---------|---------|----------|\n| Monday     |         | Yes     | Yes     | Yes      |\n| Tuesday    |         | Yes     | Yes     | Yes      |\n| Wednesday  |         | Yes     | Yes     | Yes      |\n| Thursday   |         | Yes     | Yes     | Yes      |\n| Friday     | Yes     | Yes     | Yes     | Yes      |\n| Saturday   | Yes     | Yes     | Yes     | Yes      |\n| Sunday     | Yes     | Yes     | Yes     | Yes      |",
+    "diagramType": "schedule",
+    "completionEmail": "Dear Team,\n\nI wanted to confirm the showtimes for our upcoming movie night on Tuesday. We are expecting a group of 12, which means we are eligible for extra discounts!\n\nCould you please send me the total cost for the tickets for [BLANK 1]? Additionally, let me know if we can reserve seats for the [BLANK 2] showtime. Thank you for your help!\n\nBest,\n[BLANK 3]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "On which day can you purchase tickets at a 20% discount?",
+        "options": [
+          "Monday",
+          "Tuesday",
+          "Friday",
+          "Sunday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which showtime is available on both Monday and Tuesday?",
+        "options": [
+          "2:00 PM",
+          "5:00 PM",
+          "7:30 PM",
+          "10:00 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "If a group of 10 people buys tickets on a Wednesday, how much total discount do they receive on regular price tickets?",
+        "options": [
+          "10%",
+          "20%",
+          "30%",
+          "No discount"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which of the following showtimes is NOT available on Thursday?",
+        "options": [
+          "2:00 PM",
+          "5:00 PM",
+          "7:30 PM",
+          "10:00 PM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "2:00 PM on Tuesday",
+          "5:00 PM on Friday",
+          "7:30 PM on Wednesday",
+          "10:00 PM on Sunday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "2:00 PM",
+          "5:00 PM",
+          "7:30 PM",
+          "10:00 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best option for [BLANK 3]",
+        "options": [
+          "John",
+          "Lisa",
+          "The Team",
+          "Manager"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-13"
+  },
+  {
+    "title": "Car Rental Rates with Insurance Options",
+    "passage": "When renting a car, it is essential to understand the rental rates and the various insurance options available. The base rental rate for a compact car is $30 per day, while an SUV costs $50 per day. In addition to the base rate, renters have the option to add insurance coverage. Basic insurance is available for an additional $15 per day, offering coverage for damages, while comprehensive insurance costs $25 per day, covering theft and damages. Renters should also be aware that a security deposit of $200 is required, which is refundable upon return of the vehicle in good condition. A valid driver's license and credit card are necessary for the transaction. These options cater to different needs, so choose according to your travel plans and preferences.",
+    "diagram": "Rental Type | Daily Rate | Basic Insurance | Comprehensive Insurance\n---|---|---|---\nCompact Car | $30 | $15 | $25\nSUV | $50 | $15 | $25",
+    "diagramType": "table",
+    "completionEmail": "Dear Customer Service,\n\nI would like to inquire about the rental rates for a [BLANK 1]. I am particularly interested in the insurance options and the total daily cost including [BLANK 2]. Additionally, could you provide the amount for the security deposit of [BLANK 3]?\n\nThank you.",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the daily rental rate for an SUV?",
+        "options": [
+          "$30",
+          "$50",
+          "$15",
+          "$25"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How much does basic insurance cost per day?",
+        "options": [
+          "$10",
+          "$15",
+          "$20",
+          "$25"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the security deposit amount required when renting a car?",
+        "options": [
+          "$100",
+          "$200",
+          "$300",
+          "$400"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which type of car has the highest daily rental rate?",
+        "options": [
+          "Compact Car",
+          "SUV",
+          "Both are the same",
+          "None"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "compact car",
+          "SUV",
+          "luxury sedan",
+          "minivan"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "basic insurance",
+          "comprehensive insurance",
+          "no insurance",
+          "additional driver"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "$100",
+          "$200",
+          "$300",
+          "$50"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-14"
+  },
+  {
+    "title": "Municipal Recycling Pickup Schedule",
+    "passage": "The City of Maplewood is committed to promoting sustainability through its recycling program. Residents can participate in the municipal recycling pickup, which occurs every other week. Items accepted for recycling include paper, cardboard, certain plastics (types 1 and 2), glass bottles, and aluminum cans. To ensure compliance, please rinse out all containers before placing them in the recycling bin. The following items are not accepted: plastic bags, foam containers, and food waste. It is crucial for residents to adhere to the pickup schedule and to only include accepted items in their recycling bins to avoid contamination and potential fines. Collection days are assigned based on street addresses, and residents should place their bins curbside by 7:00 AM on their designated pickup day.",
+    "diagram": "Pickup Day | Accepted Items\n---|---\nMonday | Paper, Cardboard, Plastics (1 & 2), Glass, Aluminum\nTuesday | Paper, Cardboard, Plastics (1 & 2), Glass, Aluminum\nWednesday | No Pickup\nThursday | Paper, Cardboard, Plastics (1 & 2), Glass, Aluminum\nFriday | Paper, Cardboard, Plastics (1 & 2), Glass, Aluminum\nSaturday | No Pickup\nSunday | No Pickup",
+    "diagramType": "schedule",
+    "completionEmail": "Dear Maplewood Recycling Team,\n\nI am writing to confirm my pickup schedule for recycling. My address falls under the [BLANK 1] pickup day. I want to ensure I only include [BLANK 2] in my recycling bin to avoid any issues. Additionally, could you please clarify if plastic bags are [BLANK 3]?\n\nThank you!\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "On which day is pickup available for residents living on streets with Monday collection?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Tuesday",
+          "Thursday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which item is NOT accepted in the recycling program?",
+        "options": [
+          "Glass bottles",
+          "Paper",
+          "Plastic bags",
+          "Aluminum cans"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What time should bins be placed curbside for pickup?",
+        "options": [
+          "6:00 AM",
+          "7:00 AM",
+          "8:00 AM",
+          "9:00 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "How often does the recycling pickup occur?",
+        "options": [
+          "Weekly",
+          "Every other week",
+          "Monthly",
+          "Twice a month"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Monday",
+          "Thursday",
+          "Tuesday",
+          "Saturday"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "food waste",
+          "plastic bags",
+          "aluminum cans",
+          "glass bottles"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "accepted",
+          "required",
+          "not accepted",
+          "encouraged"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-15"
+  },
+  {
+    "title": "College Course Prerequisite Requirements and Schedule",
+    "passage": "At Maple Leaf College, students must complete certain prerequisite courses before enrolling in advanced classes. For example, students must complete Introduction to Psychology before taking Developmental Psychology. Additionally, all students are encouraged to finish their General Education requirements within their first two years of study. Each program has its unique schedule, and students should consult the academic calendar for specific term offerings. During the Fall semester, most core courses are available, while electives are usually offered in the Spring. Students should also note that some courses, like Advanced Statistics, require permission from the instructor if prerequisites were taken at another institution.",
+    "diagram": "Course Name | Semester Offered | Prerequisite(s) | Instructor Approval Required\n---|---|---|---\nIntroduction to Psychology | Fall | None | No\nDevelopmental Psychology | Spring | Introduction to Psychology | No\nAdvanced Statistics | Fall | Statistics | Yes\nStatistics | Fall | None | No\nGeneral Education Electives | Spring | None | No",
+    "diagramType": "table",
+    "completionEmail": "Dear Student,\n\nThank you for your inquiry about course registration. Please note that to enroll in [BLANK 1], you must first complete [BLANK 2]. If you are interested in [BLANK 3], please ensure that you've met all prerequisite requirements.\n\nBest regards,\nAcademic Advisor",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which course is a prerequisite for Developmental Psychology?",
+        "options": [
+          "A) Advanced Statistics",
+          "B) Introduction to Psychology",
+          "C) Statistics",
+          "D) General Education Electives"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which course requires instructor approval to enroll?",
+        "options": [
+          "A) Developmental Psychology",
+          "B) Advanced Statistics",
+          "C) Introduction to Psychology",
+          "D) General Education Electives"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "When is Statistics offered?",
+        "options": [
+          "A) Only in Fall",
+          "B) Only in Spring",
+          "C) Fall and Spring",
+          "D) Not Offered"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which semester are General Education Electives typically offered?",
+        "options": [
+          "A) Fall",
+          "B) Only in Winter",
+          "C) Only in Spring",
+          "D) All Year Round"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) Advanced Statistics",
+          "B) Developmental Psychology",
+          "C) Statistics",
+          "D) General Education Electives"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Statistics",
+          "B) Advanced Statistics",
+          "C) Introduction to Psychology",
+          "D) General Education Electives"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) Introduction to Psychology",
+          "B) Developmental Psychology",
+          "C) Advanced Statistics",
+          "D) General Education Electives"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-16"
+  },
+  {
+    "title": "Fitness Class Timetable",
+    "passage": "At FitLife Gym, we offer various fitness classes designed for different experience levels and led by qualified instructors. Each class is categorized into three levels: Beginner, Intermediate, and Advanced. Participants are encouraged to select classes that match their current fitness level to ensure safety and effectiveness. Additionally, all instructors must have proper certifications with at least 2 years of experience in teaching their respective classes. The gym provides a class timetable every month, showcasing the days, times, instructor names, and their qualifications. Beginners should focus on classes labeled 'Beginner' to avoid injury while intermediates can join 'Intermediate' sessions. Advanced participants must demonstrate proficiency before enrolling in 'Advanced' classes. For your convenience, here is the current month’s timetable.",
+    "diagram": "Day | Time | Instructor | Level | Qualification\n---|---|---|---|---\nMonday | 6:00 PM | Sarah Johnson | Beginner | ACE Certified\nMonday | 7:00 PM | Tom Lee | Intermediate | NASM Certified\nTuesday | 6:00 PM | Jane Smith | Advanced | AFAA Certified\nWednesday | 6:00 PM | Sam Brown | Beginner | ACE Certified\nWednesday | 7:00 PM | Lisa White | Intermediate | ACSM Certified\nThursday | 6:00 PM | Mark Davis | Advanced | NSCA Certified\nSaturday | 9:00 AM | Emily Clark | Beginner | ACE Certified\nSaturday | 10:00 AM | John Doe | Intermediate | NASM Certified",
+    "diagramType": "schedule",
+    "completionEmail": "Dear [BLANK 1],\n\nI hope this message finds you well. I would like to register for a [BLANK 2] class this week. Please confirm if there are spots available for the session led by [BLANK 3].\n\nThank you!\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which class is offered on Monday at 7:00 PM?",
+        "options": [
+          "A) Beginner with Sarah Johnson",
+          "B) Intermediate with Tom Lee",
+          "C) Advanced with Jane Smith",
+          "D) Beginner with Sam Brown"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Who is the instructor for the Advanced class on Tuesday?",
+        "options": [
+          "A) Lisa White",
+          "B) Tom Lee",
+          "C) Jane Smith",
+          "D) Mark Davis"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the qualification of the instructor for the Intermediate class on Wednesday?",
+        "options": [
+          "A) ACE Certified",
+          "B) AFAA Certified",
+          "C) NASM Certified",
+          "D) ACSM Certified"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which class requires proficiency before enrollment?",
+        "options": [
+          "A) Beginner",
+          "B) Intermediate",
+          "C) Advanced",
+          "D) All Levels"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "A) Sarah Johnson",
+          "B) Tom Lee",
+          "C) Jane Smith",
+          "D) Lisa White"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "A) Beginner",
+          "B) Intermediate",
+          "C) Advanced",
+          "D) All Levels"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "A) Mark Davis",
+          "B) John Doe",
+          "C) Tom Lee",
+          "D) Sam Brown"
+        ],
+        "correct": 1
+      }
+    ],
+    "id": "part2-17"
+  },
+  {
+    "title": "Airport Parking Lot Rates and Shuttle Service",
+    "passage": "At the downtown airport, parking is available in three different lots: Economy, Standard, and Premium. The Economy lot charges $10 per day, while the Standard lot charges $15. The Premium lot is the most convenient and charges $20 per day. If you park for more than 7 days, a 15% discount applies to the total amount. For shuttle services, shuttles depart every 15 minutes from the Economy and Standard lots, and every 10 minutes from the Premium lot. All shuttle services run from 5 AM to 11 PM daily. Please ensure you keep your parking ticket handy, as it is required for exiting the lot. If your vehicle is not collected within 30 days, it will be deemed abandoned and subject to towing.",
+    "diagram": "Lot Type | Daily Rate | Shuttle Frequency\n---|---|---\nEconomy | $10 | Every 15 min\nStandard | $15 | Every 15 min\nPremium | $20 | Every 10 min",
+    "diagramType": "table",
+    "completionEmail": "Dear Guest,\n\nThank you for choosing our airport parking services. We wanted to inform you that your initial daily rate will be [BLANK 1]. Additionally, there is a shuttle that runs at a frequency of [BLANK 2]. If your stay exceeds 7 days, you will also be eligible for a discount of [BLANK 3].\n\nBest regards,\nAirport Parking Services",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the daily rate for parking in the Standard lot?",
+        "options": [
+          "$10",
+          "$15",
+          "$20",
+          "$25"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How often does the shuttle service operate from the Economy lot?",
+        "options": [
+          "Every 10 minutes",
+          "Every 15 minutes",
+          "Every 30 minutes",
+          "Every hour"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the discount percentage for parking over 7 days?",
+        "options": [
+          "5%",
+          "10%",
+          "15%",
+          "20%"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which lot has the highest daily rate?",
+        "options": [
+          "Economy",
+          "Standard",
+          "Premium",
+          "All have the same rate"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "A",
+        "question": "What is the last time shuttles operate daily?",
+        "options": [
+          "9 PM",
+          "10 PM",
+          "11 PM",
+          "Midnight"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "$20",
+          "$15",
+          "$10",
+          "$5"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "Every 30 minutes",
+          "Every 10 minutes",
+          "Every 15 minutes",
+          "Every hour"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 8,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "5%",
+          "10%",
+          "15%",
+          "20%"
+        ],
+        "correct": 2
+      }
+    ],
+    "id": "part2-18"
+  },
+  {
+    "title": "Pet Adoption Criteria and Available Animals",
+    "passage": "Adopting a pet is a big decision, and it's important to choose the right animal for your lifestyle. The following criteria should be considered when adopting a pet: 1. Lifestyle: Consider how much time you can dedicate to a pet. Active families may prefer dogs that require exercise, while busy individuals may find cats or smaller pets more suitable. 2. Living Situation: Ensure that your home can accommodate the pet. For instance, large dogs require more space, while smaller pets can thrive in apartments. 3. Allergies: Be mindful of allergies; hypoallergenic breeds are available for those sensitive to pet dander. 4. Commitment: Pets require long-term commitment, so consider your ability to provide care for at least 10-15 years. Finally, age and temperament are critical; some pets may not be suitable for homes with young children or other animals. The following chart lists available animals for adoption at our shelter, along with their specific criteria.",
+    "diagram": "Animal Type | Age | Size | Temperament | Ideal Home\n--- | --- | --- | --- | ---\nDog (Labrador) | 2 years | Large | Friendly | Active family\nCat (Siamese) | 5 years | Medium | Affectionate | Quiet home\nRabbit (Dutch) | 1 year | Small | Playful | Indoor home\nDog (Bulldog) | 3 years | Medium | Calm | Families with children\nCat (Persian) | 4 years | Medium | Independent | Apartment living",
+    "diagramType": "table",
+    "completionEmail": "Dear Pet Adoption Center,\n\nI am interested in adopting a [BLANK 1] and would like to know more about its care requirements. I have a [BLANK 2] and can provide a loving home. Additionally, I am particularly interested in pets that are [BLANK 3]. Thank you for your assistance!\n\nBest regards,\n[Your Name]",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "Which animal is suitable for an active family?",
+        "options": [
+          "Dog (Labrador)",
+          "Cat (Siamese)",
+          "Rabbit (Dutch)",
+          "Cat (Persian)"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "Which pet is described as independent and suitable for apartment living?",
+        "options": [
+          "Dog (Bulldog)",
+          "Rabbit (Dutch)",
+          "Cat (Persian)",
+          "Cat (Siamese)"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What size is the Rabbit (Dutch)?",
+        "options": [
+          "Large",
+          "Medium",
+          "Small",
+          "Varies"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which animal has a calm temperament and is good for families with children?",
+        "options": [
+          "Dog (Labrador)",
+          "Cat (Siamese)",
+          "Dog (Bulldog)",
+          "Cat (Persian)"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "Siamese cat",
+          "Labrador dog",
+          "Dutch rabbit",
+          "Bulldog"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "large backyard",
+          "quiet apartment",
+          "active household",
+          "children"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "friendly",
+          "playful",
+          "calm",
+          "affectionate"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part2-19"
+  },
+  {
+    "title": "Ski Resort Lift Ticket Pricing and Season Pass Comparison",
+    "passage": "At Whistler Ski Resort, lift ticket prices vary based on the day of the week and the type of ticket purchased. Full-day adult lift tickets are priced at $120 on weekdays and $140 on weekends. Children aged 6-12 receive a 50% discount on weekday tickets and a 30% discount on weekend tickets. Seniors (65+) can purchase tickets at a discounted rate of $90 on all days. For frequent skiers, the resort offers a season pass for $1,200, which provides unlimited access throughout the ski season. Additionally, a family pass (covering two adults and two children) is available for $2,900. A family pass also allows for a 10% discount on any food and beverage purchased at the resort. Note that all ticket prices include taxes and are subject to change without notice. Those interested in purchasing tickets can do so online or at the resort ticket office.",
+    "diagram": "Day Type | Adult | Child (6-12) | Senior (65+) | Season Pass | Family Pass \n--- | --- | --- | --- | --- | --- \nWeekday | $120 | $60 | $90 | $1,200 | $2,900 \nWeekend | $140 | $98 | $90 | $1,200 | $2,900",
+    "diagramType": "table",
+    "completionEmail": "Dear Ski Resort Team, I would like to inquire about the pricing for [BLANK 1]. Additionally, could you please confirm if seniors receive a discount on [BLANK 2]? Lastly, I am interested in a family pass for [BLANK 3]. Thank you!",
+    "questions": [
+      {
+        "id": 1,
+        "section": "A",
+        "question": "What is the price of a full-day adult lift ticket on a weekend?",
+        "options": [
+          "$120",
+          "$140",
+          "$90",
+          "$60"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "section": "A",
+        "question": "How much does a child (6-12) pay for a weekday lift ticket?",
+        "options": [
+          "$60",
+          "$90",
+          "$70",
+          "$140"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "section": "A",
+        "question": "What is the cost of a season pass?",
+        "options": [
+          "$2,900",
+          "$1,200",
+          "$120",
+          "$140"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "section": "A",
+        "question": "Which ticket type has a 10% discount on food and beverage?",
+        "options": [
+          "Adult",
+          "Child",
+          "Season Pass",
+          "Senior"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 1]",
+        "options": [
+          "season tickets",
+          "family packages",
+          "single lift tickets",
+          "food discounts"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 2]",
+        "options": [
+          "only weekdays",
+          "only weekends",
+          "both weekdays and weekends",
+          "none"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 7,
+        "section": "B",
+        "question": "Choose the best sentence for [BLANK 3]",
+        "options": [
+          "two adults and two children",
+          "only adults",
+          "only children",
+          "three adults"
+        ],
+        "correct": 0
+      }
+    ],
+    "id": "part2-20"
+  }
+]

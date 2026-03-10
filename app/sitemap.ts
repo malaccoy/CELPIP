@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getAllBlogPosts } from '@content/blog-posts';
+import { getAllPosts } from '@/lib/blog';
 
 const BASE_URL = 'https://celpipaicoach.com';
 
@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPages = [...mainPages, ...sectionPages, ...techniquePages, ...practicePages, ...proPages, ...authPages];
 
   // Blog posts
-  const blogPages = getAllBlogPosts().map(post => ({
+  const blogPages = getAllPosts().map(post => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: post.date,
     changeFrequency: 'monthly' as const,
