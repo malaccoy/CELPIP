@@ -6,7 +6,7 @@ const recentlyServed = new Map<string, Set<string>>();
 
 export async function POST(req: NextRequest) {
   try {
-    const { partId, userId } = await req.json();
+    const { partId, userId, difficulty } = await req.json();
     
     if (!partId) {
       return NextResponse.json({ error: 'partId required' }, { status: 400 });
@@ -29,7 +29,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Library not available' }, { status: 404 });
     }
 
-    const exercises = JSON.parse(readFileSync(libPath, 'utf8'));
+    let exercises = JSON.parse(readFileSync(libPath, 'utf8'));
+    
+    // Filter by difficulty if provided
+    if (difficulty) {
+      const filtered = exercises.filter((e: any) => e.difficulty === difficulty);
+      if (filtered.length > 0) exercises = filtered;
+    }
+    
     if (!exercises.length) {
       return NextResponse.json({ error: 'No exercises available' }, { status: 404 });
     }

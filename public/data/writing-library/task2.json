@@ -6,7 +6,8 @@
     "optionA": "Convert the parking lots into parks that provide green space for residents and tourists.",
     "optionB": "Transform the parking lots into bike lanes to encourage cycling and reduce traffic congestion.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-02",
@@ -15,7 +16,8 @@
     "optionA": "Support year-round schooling.",
     "optionB": "Support the traditional school calendar.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-03",
@@ -24,7 +26,8 @@
     "optionA": "Open office environment",
     "optionB": "Private office",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-04",
@@ -33,7 +36,8 @@
     "optionA": "Install speed bumps",
     "optionB": "Implement lower speed limits",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-05",
@@ -42,7 +46,8 @@
     "optionA": "I prefer online exams.",
     "optionB": "I prefer in-person exams.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-06",
@@ -51,7 +56,8 @@
     "optionA": "Extend operating hours",
     "optionB": "Offer more programs and workshops",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-07",
@@ -60,7 +66,8 @@
     "optionA": "Casual Dress Code",
     "optionB": "Business Formal Dress Code",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-08",
@@ -69,7 +76,8 @@
     "optionA": "Indoor swimming pool",
     "optionB": "Outdoor ice rink",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-09",
@@ -78,7 +86,8 @@
     "optionA": "Ban cellphones during school hours.",
     "optionB": "Allow cellphones as learning tools.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-10",
@@ -87,7 +96,8 @@
     "optionA": "Implementing more bus routes to cover underserved areas and increase accessibility.",
     "optionB": "Upgrading existing train services to reduce travel times and improve efficiency.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-11",
@@ -96,7 +106,8 @@
     "optionA": "4-day work week",
     "optionB": "Flexible daily hours",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-12",
@@ -105,7 +116,8 @@
     "optionA": "Build more affordable housing.",
     "optionB": "Improve existing parks.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-13",
@@ -114,7 +126,8 @@
     "optionA": "Continue providing paper bags at checkout.",
     "optionB": "Switch to a reusable bag program.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-14",
@@ -123,7 +136,8 @@
     "optionA": "Extend visiting hours for in-person visits",
     "optionB": "Enhance virtual visits for patients",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-15",
@@ -132,7 +146,8 @@
     "optionA": "Yes, I support making co-op placements mandatory.",
     "optionB": "No, I prefer keeping co-op placements optional.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-16",
@@ -141,7 +156,8 @@
     "optionA": "Build a new community centre",
     "optionB": "Renovate the existing library",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-17",
@@ -150,7 +166,8 @@
     "optionA": "Adopt a permanent remote work policy",
     "optionB": "Maintain a hybrid work model",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-18",
@@ -159,7 +176,8 @@
     "optionA": "Expand the arts program to include more visual arts, performing arts, and creative workshops.",
     "optionB": "Increase emphasis on STEM initiatives by introducing more advanced courses and hands-on projects.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-19",
@@ -168,7 +186,8 @@
     "optionA": "Yes, the building should become pet-friendly.",
     "optionB": "No, the building should remain pet-free.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-20",
@@ -177,7 +196,8 @@
     "optionA": "Offer free rides for seniors",
     "optionB": "Provide discounts for students",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-21",
@@ -186,7 +206,8 @@
     "optionA": "Build a new sports stadium.",
     "optionB": "Build a new concert venue.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-22",
@@ -195,7 +216,8 @@
     "optionA": "Annual bonus based on company performance",
     "optionB": "Monthly wellness allowance to support health and well-being",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-23",
@@ -204,7 +226,8 @@
     "optionA": "Community Garden",
     "optionB": "Dog Park",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-24",
@@ -213,7 +236,8 @@
     "optionA": "Longer semesters with breaks in between to allow for rest and reflection.",
     "optionB": "Condensed terms that allow for quicker completion of courses.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-25",
@@ -222,7 +246,8 @@
     "optionA": "More parking spaces available on hospital grounds.",
     "optionB": "A free shuttle service from nearby public transit stations.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-26",
@@ -231,7 +256,8 @@
     "optionA": "Implement a bike-sharing program that allows residents and tourists to rent bikes at various stations throughout the city.",
     "optionB": "Expand the electric scooter rental system to include more locations and increased availability.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-27",
@@ -240,7 +266,8 @@
     "optionA": "Start school later in the morning",
     "optionB": "Finish school earlier in the afternoon",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-28",
@@ -249,7 +276,8 @@
     "optionA": "An annual gym membership benefit that covers expenses for local fitness facilities.",
     "optionB": "An additional five vacation days to use throughout the year.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-29",
@@ -258,7 +286,8 @@
     "optionA": "Farmers Market",
     "optionB": "Food Truck Festival",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-30",
@@ -267,6 +296,487 @@
     "optionA": "Installing solar panels on public buildings",
     "optionB": "Initiating a large-scale tree planting program",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
-    "wordTarget": 200
+    "wordTarget": 200,
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Weekend Activity Survey",
+    "scenario": "You received a survey from your friend about weekend activities.",
+    "prompt": "Your friend is conducting a survey about weekend activities. They have two options for you to choose from: 1) Going for a hike in the nearby mountains or 2) Visiting a local museum. Please choose one option and explain why you prefer it. Write 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose between hiking in the mountains or visiting a museum.",
+      "Explain your choice with reasons.",
+      "Keep your response between 150-200 words."
+    ],
+    "context": "You and your friend enjoy discussing weekend plans, and they want to know your favorite activity.",
+    "tips": [
+      "Think about what you enjoy doing on weekends.",
+      "Include at least two reasons for your choice in your response."
+    ]
+  },
+  {
+    "title": "Favorite Season Survey",
+    "scenario": "You receive a survey from your local community center asking about your favorite season.",
+    "prompt": "The community center wants to know more about people's favorite seasons. They ask you to choose one of the following options:\n1. Spring\n2. Winter\n\nPlease respond to the survey by choosing one option and explaining why you like that season. Write 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one season: Spring or Winter.",
+      "Explain your choice with at least two reasons.",
+      "Keep your response between 150 to 200 words."
+    ],
+    "context": "This survey is part of a community event planning to celebrate the seasons.",
+    "tips": [
+      "Think about what activities you enjoy in that season.",
+      "Use simple sentences to express your ideas clearly."
+    ]
+  },
+  {
+    "title": "Survey on Weekend Activities",
+    "scenario": "You received a survey from your local community center asking about your preferred weekend activities.",
+    "prompt": "The community center is asking for your feedback on weekend activities. They want to know which activity you prefer: a 'Nature Walk in the Park' or a 'Family Movie Night at the Center.' Choose one of these options and explain why you prefer it. Write your response in 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one activity: Nature Walk in the Park or Family Movie Night at the Center.",
+      "Explain your choice with at least two reasons.",
+      "Use simple language and clear sentences."
+    ],
+    "context": "The community center provides different activities for families and individuals, and they want to know what people enjoy most.",
+    "tips": [
+      "Think about what you like to do on weekends.",
+      "Use personal experiences to support your choice."
+    ]
+  },
+  {
+    "title": "Favorite Canadian Snack Survey",
+    "scenario": "You received a survey from a local grocery store about your favorite Canadian snack.",
+    "prompt": "The grocery store is conducting a survey about snacks. They want to know which of the following snacks you prefer: 1) Tim Hortons Timbits, or 2) Ketchup Chips. Please choose one option and explain why it’s your favorite. Write 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose your favorite snack from the options.",
+      "Explain why you like that snack better.",
+      "Mention any personal experiences with the snack."
+    ],
+    "context": "The grocery store wants to improve their snack selection based on customer preferences.",
+    "tips": [
+      "Be clear and simple in your writing.",
+      "Use examples from your experiences to support your choice."
+    ]
+  },
+  {
+    "title": "Favorite Weekend Activity Survey",
+    "scenario": "You receive a survey from a friend about weekend activities.",
+    "prompt": "Your friend is conducting a survey to find out people’s favorite weekend activity. The options are: 1) Going for a hike in nature 2) Watching movies at home. Choose one option and explain why you prefer it. Write a response that is 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one activity you prefer.",
+      "Explain why you like that activity.",
+      "Use simple sentences and clear examples."
+    ],
+    "context": "This survey helps your friend understand what people enjoy doing on weekends.",
+    "tips": [
+      "Think about how each activity makes you feel.",
+      "Use personal experiences to support your choice."
+    ]
+  },
+  {
+    "title": "Choosing a Local Activity",
+    "scenario": "You received a survey from a local community center about activities for residents.",
+    "prompt": "The community center wants to know about your preference for a new weekend activity. You can choose between:\n\n1. Outdoor yoga classes.\n2. Cooking workshops.\n\nPlease respond to the survey with your choice and explain why you chose that option. Your response should be between 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one activity from the options.",
+      "Explain your reasons for your choice.",
+      "Keep your response clear and within the word limit."
+    ],
+    "context": "The community center is trying to create new activities that cater to the interests of local residents.",
+    "tips": [
+      "Think about which activity you enjoy more and why.",
+      "Use simple sentences to clearly express your thoughts."
+    ]
+  },
+  {
+    "title": "Favorite Summer Activity Survey",
+    "scenario": "You received an email from a friend asking for your opinion on summer activities.",
+    "prompt": "Hi [Friend's Name],\n\nI hope you're doing well! I received a survey from our community about popular summer activities. They are asking people to choose between two options: 1) Going to the beach, or 2) Having a picnic in the park. \n\nPlease reply to the survey and choose one option. Explain why you prefer it. I’d love to hear your thoughts!\n\nBest,\n[Your Name]",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose your favorite activity: beach or picnic.",
+      "Explain why you like this activity.",
+      "Write 150-200 words in your response."
+    ],
+    "context": "The survey helps the community plan summer events.",
+    "tips": [
+      "Use simple sentences to express your opinion clearly.",
+      "Include details about what you enjoy about your chosen activity."
+    ]
+  },
+  {
+    "title": "Survey on Favorite Season",
+    "scenario": "You received an email from your friend asking about your favorite season.",
+    "prompt": "Your friend is conducting a survey for school and wants to know people's favorite seasons. They have provided two options: Summer and Winter. Please respond to the survey by choosing one option and explain why you prefer it. Write between 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose either Summer or Winter as your favorite season.",
+      "Explain your choice with at least two reasons.",
+      "Keep your response friendly and clear."
+    ],
+    "context": "Your friend is gathering opinions from different people to learn about their favorite seasons for a class project.",
+    "tips": [
+      "Use simple sentences to express your thoughts.",
+      "Include personal experiences related to your chosen season."
+    ]
+  },
+  {
+    "title": "Choosing a Local Coffee Shop",
+    "scenario": "You received a survey from your favorite coffee shop asking about new drink options.",
+    "prompt": "Your favorite coffee shop is asking for your opinion on their new drink options. They want to know whether you would prefer a 'Caramel Macchiato' or a 'Matcha Latte.' Please respond to the survey by choosing one of these drinks and explain why you prefer it. Write 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose between 'Caramel Macchiato' and 'Matcha Latte'.",
+      "Explain your choice with reasons.",
+      "Keep your response friendly and clear."
+    ],
+    "context": "The coffee shop wants to know what their customers like so they can create delicious new drinks.",
+    "tips": [
+      "Think about what flavors you enjoy.",
+      "Consider any health benefits of the drink you choose."
+    ]
+  },
+  {
+    "title": "Favorite Seasonal Activity Survey",
+    "scenario": "You received a survey from a local community center about seasonal activities.",
+    "prompt": "The community center is asking for your opinion on seasonal activities. You must choose between: 1) Outdoor ice skating in winter or 2) Beach volleyball in summer. Please respond to the survey by choosing one activity and explaining why you prefer it. Write 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one activity: ice skating or beach volleyball.",
+      "Explain your choice with at least two reasons.",
+      "Use simple sentences and clear language."
+    ],
+    "context": "The community center wants to plan seasonal activities based on people's preferences.",
+    "tips": [
+      "Think about which activity you enjoy more.",
+      "Consider the weather and the social aspects of each activity."
+    ]
+  },
+  {
+    "title": "Survey on Weekend Activities",
+    "scenario": "You receive a survey asking about your favorite weekend activities.",
+    "prompt": "You just received a survey from a local community center asking about your favorite weekend activities. The options given are:\n\n1. Going for a hike in nature.\n2. Visiting a local museum.\n\nChoose one of these options and write a response explaining why you prefer it. Please write between 150 and 200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one activity from the options.",
+      "Explain why you like this activity more.",
+      "Use simple sentences and clear reasons."
+    ],
+    "context": "The community center wants to know how people prefer to spend their weekends to organize future events.",
+    "tips": [
+      "Think about what makes you happy about the activity you choose.",
+      "Use personal experiences to support your reasons."
+    ]
+  },
+  {
+    "title": "Weekend Plans Survey",
+    "scenario": "You received an email from a friend about weekend activities.",
+    "prompt": "Your friend sent you a survey asking about weekend plans. They provided two options: 1) Going hiking in the nearby mountains or 2) Watching a movie at the cinema. Respond to the survey by choosing one of the options and explaining why you prefer it. Write your response between 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose between hiking or watching a movie.",
+      "Explain your choice clearly.",
+      "Write in a friendly tone."
+    ],
+    "context": "Your friend is planning weekend activities and wants opinions.",
+    "tips": [
+      "Use simple sentences to express your thoughts.",
+      "Share your feelings about the option you chose."
+    ]
+  },
+  {
+    "title": "Survey Response on Public Transport",
+    "scenario": "You received a survey from your local transit authority about improving public transport in your city.",
+    "prompt": "Your local transit authority is asking for your opinion on how to improve public transport. You have two options to choose from:\n\n1. Add more bus routes in the city.\n2. Improve existing bus stops with better shelters and seating.\n\nChoose one option and explain why you think it is the best choice. Write your response in 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose one option: more bus routes or better bus stops.",
+      "Explain your choice clearly.",
+      "Provide reasons why your choice will help people."
+    ],
+    "context": "Public transport is important in Canada, and your feedback can help improve services.",
+    "tips": [
+      "Use simple sentences to express your ideas.",
+      "Think about how your choice affects the community."
+    ]
+  },
+  {
+    "title": "Favorite Seasonal Activity Survey",
+    "scenario": "You received an email from a friend asking for your opinion on seasonal activities for a survey.",
+    "prompt": "Your friend sent you a survey asking which seasonal activity you enjoy the most: skiing in winter or gardening in spring. Choose one activity and explain why you prefer it. Write your response in 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose between skiing and gardening.",
+      "Explain why you like your chosen activity.",
+      "Mention any personal experiences or feelings related to the activity."
+    ],
+    "context": "Your friend is collecting opinions for a fun community event and wants to know what people enjoy doing in different seasons.",
+    "tips": [
+      "Stay focused on the activity you choose and provide clear reasons.",
+      "Use simple sentences to express your thoughts clearly."
+    ]
+  },
+  {
+    "title": "Favorite Seasonal Activity",
+    "scenario": "You received an email survey from a local community center about seasonal activities.",
+    "prompt": "The community center wants to know what seasonal activity people enjoy most. They have two options: 1) Summer Barbecues or 2) Winter Ski Trips. Choose one option and explain why you prefer it. Write your response in about 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Choose between summer barbecues and winter ski trips.",
+      "Explain why you like your chosen activity.",
+      "Give one or two reasons to support your choice."
+    ],
+    "context": "In Canada, communities often organize seasonal activities for residents. Your opinion is important.",
+    "tips": [
+      "Think about your past experiences with each activity.",
+      "Use simple sentences to explain your choice clearly."
+    ]
+  },
+  {
+    "title": "Balancing Renewable Energy and Economic Growth",
+    "scenario": "The Canadian government is considering two policy options to transition to renewable energy while maintaining economic stability.",
+    "prompt": "In light of the growing concerns surrounding climate change and economic viability, the Canadian government is exploring two policy options regarding energy production: Option A focuses on significantly increasing investment in renewable energy sources, while Option B advocates for a more gradual transition that includes continued support for fossil fuel industries. Please select one of the options and explain your choice, considering the potential impacts on various stakeholders such as environmental groups, the fossil fuel industry, and local economies. Your response should weigh the trade-offs involved in your decision and address potential objections to your chosen option. (150-200 words)",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Assess the long-term environmental benefits of investing in renewable energy versus short-term economic gains from fossil fuels.",
+      "Consider the implications for job creation in both renewable and fossil fuel sectors, acknowledging the concerns of displaced workers.",
+      "Anticipate potential resistance from industries and communities that rely heavily on fossil fuels, proposing ways to mitigate their impact."
+    ],
+    "context": "As Canada aims to reduce greenhouse gas emissions and meet international climate commitments, it's essential to carefully evaluate these competing interests and their broader implications for society.",
+    "tips": [
+      "Use formal language and structure your response logically to enhance clarity.",
+      "Incorporate hedging language to acknowledge nuances and the complexity of the issue."
+    ]
+  },
+  {
+    "title": "Urban Transportation Policy Choices",
+    "scenario": "A city in Canada is considering two major policy options to improve urban transportation: investing in an expanded public transit system or developing an extensive cycling infrastructure network.",
+    "prompt": "The city council has launched a survey to gather public opinion on two proposed urban transportation policies: 1) Expand the public transit system to include more routes and increased service frequency, or 2) Develop a city-wide cycling infrastructure network with dedicated bike lanes and secure bike parking facilities. Please choose one option and explain why it is the better choice for improving urban mobility while addressing the issues of congestion, environmental impact, and public safety. Support your position with well-reasoned arguments. (150-200 words)",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Consider the environmental benefits of reducing car dependency versus the immediate convenience of public transit expansion.",
+      "Evaluate the potential economic implications for local businesses stemming from either policy choice.",
+      "Anticipate objections from stakeholders such as public transit users and cycling advocates regarding the feasibility and inclusiveness of the chosen option."
+    ],
+    "context": "In light of increasing urban congestion and climate change concerns, the city aims to choose a transportation solution that balances public needs and environmental sustainability.",
+    "tips": [
+      "Use hedging language to present nuanced positions, such as 'may potentially,' 'could likely,' or 'it seems plausible that.'",
+      "Incorporate counterarguments to strengthen your position, showcasing awareness of multiple perspectives."
+    ]
+  },
+  {
+    "title": "Urban Transportation Policy Options",
+    "scenario": "The city council of a major Canadian city is considering two policy options to improve urban transportation.",
+    "prompt": "The city council is conducting a survey to gather public opinion on two proposed urban transportation policies aimed at reducing traffic congestion and promoting public transport. Option A focuses on investing in expanding the city's public transit infrastructure, including new bus lines and light rail systems. Option B proposes implementing a congestion pricing model for vehicles entering the downtown area during peak hours. In your opinion, which option should the city prioritize? Please explain your reasoning, taking into account potential benefits, drawbacks, and the perspectives of various stakeholders.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Expanding public transit could lead to long-term economic growth but may require significant initial investment.",
+      "Congestion pricing could reduce traffic and encourage public transport use, but it might disproportionately affect low-income drivers.",
+      "A balanced approach may be necessary to address the concerns of both public transport advocates and car-dependent individuals."
+    ],
+    "context": "Urban transportation is a pressing issue in many Canadian cities, affecting commuting patterns, environmental sustainability, and public health.",
+    "tips": [
+      "Use hedging language to acknowledge potential objections from stakeholders.",
+      "Consider the long-term implications of each option while weighing immediate impacts."
+    ]
+  },
+  {
+    "title": "Public Transit Policy Options",
+    "scenario": "A city in Canada is faced with a decision on how to enhance its public transit system amidst budget constraints and growing urban congestion.",
+    "prompt": "You are responding to a survey regarding two proposed policy options for improving the public transit system in your city. Option A focuses on expanding the existing transit network to underserved areas, while Option B emphasizes upgrading current infrastructure and technology for efficiency. Choose one option and explain your reasoning in 150-200 words, considering the perspectives of various stakeholders such as residents, businesses, and urban planners.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Expanding transit access (Option A) could alleviate congestion in rapidly developing areas but may divert funds from necessary upgrades to existing infrastructure.",
+      "Upgrading current systems (Option B) can enhance overall efficiency and ridership satisfaction, yet may overlook accessibility issues for underserved communities.",
+      "Balancing stakeholder interests requires careful consideration of immediate needs versus long-term sustainability."
+    ],
+    "context": "The city is experiencing an influx of residents and vehicles, placing pressure on the current public transportation system. Community feedback has highlighted varying priorities among residents, business owners, and city officials.",
+    "tips": [
+      "Use formal language and structure your response clearly to emphasize your main arguments.",
+      "Anticipate potential arguments against your chosen option and address them within your response."
+    ]
+  },
+  {
+    "title": "Public Transit Policy Options",
+    "scenario": "The city of Toronto is considering two options for improving public transit efficiency.",
+    "prompt": "The City of Toronto is seeking public input on a proposed initiative to enhance public transit services. You have two options to choose from: 1) Invest in expanding the current subway system to underserved areas, or 2) Implement a city-wide bus rapid transit (BRT) system that integrates with existing transit. Please select one option and explain your choice, considering the potential benefits and drawbacks associated with each approach. Aim for a response of 150-200 words.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Expanding the subway system may provide direct access to more neighborhoods, but could lead to significant construction disruptions and increased costs.",
+      "A bus rapid transit system might be more cost-effective and quicker to implement, but could face opposition from residents who prefer the reliability of subways.",
+      "Both options require careful consideration of long-term urban planning goals and the needs of diverse community stakeholders."
+    ],
+    "context": "Toronto's public transit system is currently facing challenges of overcrowding and accessibility, prompting the need for strategic improvements. Stakeholders include city officials, transit users, and local businesses.",
+    "tips": [
+      "Use hedging language to present nuanced arguments, such as 'It may be argued that...' or 'It could be beneficial to consider...'.",
+      "Anticipate objections to your chosen option and address them within your response to demonstrate critical thinking."
+    ]
+  },
+  {
+    "title": "Balancing Renewable Energy Policies",
+    "scenario": "As Canada aims to meet its climate commitments, a proposal has emerged to increase investments in renewable energy versus the need to support traditional energy sectors.",
+    "prompt": "A recent survey has presented two policy options for enhancing Canada’s energy sector: (1) invest significantly in renewable energy sources to accelerate the transition to clean energy or (2) provide sustained financial support for traditional energy sectors to protect jobs and economic stability. Please select one option and explain your choice, considering the potential impacts on various stakeholders, including environmental groups, energy workers, and government budgets.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Weigh the long-term environmental benefits of renewable energy against short-term economic implications for traditional energy workers.",
+      "Anticipate objections from energy sector employees concerned about job security and the viability of traditional energy during the transition.",
+      "Evaluate the potential for innovation and job creation in the renewable sector while considering the costs associated with retraining workers."
+    ],
+    "context": "This scenario is crucial as Canada navigates its energy future amidst global climate change pressures and domestic economic needs.",
+    "tips": [
+      "Utilize formal language and hedging statements to present your argument cautiously and effectively.",
+      "Consider multiple perspectives to enhance the depth of your analysis and address potential counterarguments."
+    ]
+  },
+  {
+    "title": "Navigating Urban Housing Policy",
+    "scenario": "The city of Toronto is facing a housing crisis, leading to a survey on potential policy solutions.",
+    "prompt": "You are responding to a city-sponsored survey regarding two proposed housing policy options aimed at addressing the housing crisis in Toronto. Option A focuses on increasing the availability of affordable housing through government subsidies for developers. Option B emphasizes stricter regulations on short-term rentals to free up more long-term rental units. Choose one option and explain your reasoning, considering the potential impact on various stakeholders such as residents, developers, and the city budget. (150-200 words)",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Consider the economic implications of government subsidies versus regulatory approaches.",
+      "Evaluate the potential benefits and drawbacks for low-income families versus property owners.",
+      "Anticipate opposition from stakeholders who may be disadvantaged by your chosen policy."
+    ],
+    "context": "Toronto's rapid population growth has exacerbated housing shortages, prompting city officials to seek effective solutions that balance affordability with economic viability.",
+    "tips": [
+      "Use formal language and incorporate hedging language to acknowledge uncertainties.",
+      "Support your choice with evidence and sound reasoning to bolster your argument."
+    ]
+  },
+  {
+    "title": "Urban Transportation Policy Options",
+    "scenario": "The City of Toronto is considering two options to improve urban transportation: implementing a congestion charge for vehicles in the downtown area or expanding public transit services.",
+    "prompt": "Respond to the survey regarding the proposed transportation policy. Choose one of the options below and provide a detailed explanation of your choice, including potential benefits and drawbacks. Your response should weigh competing interests and consider the perspectives of various stakeholders, such as commuters, businesses, and environmental groups. 150-200 words.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Consider the economic impact on local businesses and the potential reduction in traffic congestion versus the potential burden of additional costs on drivers.",
+      "Evaluate the environmental benefits of a congestion charge in reducing emissions against the challenges of ensuring equitable access to public transport.",
+      "Anticipate objections from stakeholders who may prioritize immediate convenience over long-term sustainability and urban planning goals."
+    ],
+    "context": "In recent years, traffic congestion in downtown Toronto has led to calls for more effective transportation solutions. City officials are considering two distinct approaches that have the potential to significantly affect a variety of stakeholders in the urban environment.",
+    "tips": [
+      "Use formal language and consider incorporating hedging phrases to present a balanced viewpoint.",
+      "Be sure to structure your response clearly, addressing the benefits and drawbacks of the chosen option while acknowledging alternate perspectives."
+    ]
+  },
+  {
+    "title": "Addressing the Housing Affordability Crisis",
+    "scenario": "The Canadian government is debating two potential strategies to tackle housing affordability in urban areas.",
+    "prompt": "The government has proposed two options to address the urgent housing affordability crisis in Canadian urban centers: 1) Implementing a rent control policy, which could limit rent increases to a fixed percentage annually; 2) Increasing the supply of affordable housing units through incentives for developers. Please indicate which option you prefer and explain your reasoning. Consider the potential impacts on tenants, landlords, and the housing market as a whole. Your response should be between 150 and 200 words.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Weigh the benefits of rent control for tenant security against potential consequences such as reduced incentives for property maintenance.",
+      "Analyze the long-term viability of increasing housing supply and its ability to meet diverse community needs, while recognizing the financial risks for developers.",
+      "Anticipate objections from both sides: tenants fearing displacement under development initiatives and landlords concerned about profit margins under rent control."
+    ],
+    "context": "With the housing market in turmoil due to rising prices and stagnant wages, the government seeks effective solutions that balance the interests of various stakeholders, including tenants, landlords, and municipal governments.",
+    "tips": [
+      "Use hedging language to present your arguments more diplomatically, acknowledging the complexities of the issue.",
+      "Structure your response logically, ensuring each point directly supports your chosen option."
+    ]
+  },
+  {
+    "title": "Public Transit Funding Options",
+    "scenario": "The Canadian Ministry of Transportation is considering two funding options for expanding public transit in urban centers.",
+    "prompt": "Your city is facing increased traffic congestion and a growing demand for efficient public transportation. The Ministry of Transportation has proposed two funding options: Option A involves increasing taxes on higher-income earners to fund an expansive public transit network, while Option B suggests reallocating funds from other public services, such as education and healthcare, to support public transit development. Respond to this survey by choosing one option and explaining your reasoning. Consider the implications for various stakeholders, including commuters, low-income residents, educators, and healthcare professionals. 150-200 words.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Evaluate the equity of each funding option, considering how higher taxes may disproportionately affect certain income groups while reallocating funds could jeopardize education and healthcare services.",
+      "Consider the long-term benefits of a robust public transit system versus the immediate impacts on other public services, weighing the trade-offs between immediate needs and future sustainability.",
+      "Anticipate objections from stakeholders regarding both options, and address the potential for public dissent and policy backlash when choosing a funding strategy."
+    ],
+    "context": "Public transit is a critical issue in Canadian urban areas where traffic congestion impacts the economy and quality of life. Balancing budgets while catering to diverse community needs presents a complex challenge.",
+    "tips": [
+      "Use formal language and hedging to present your argument with nuance, acknowledging counterarguments.",
+      "Structure your response clearly, focusing on trade-offs and implications for stakeholder groups."
+    ]
+  },
+  {
+    "title": "Urban Transit Funding Allocation",
+    "scenario": "A local government is considering two transportation funding options to improve urban transit services while balancing the interests of residents and business owners.",
+    "prompt": "The local government is conducting a survey to gather public opinion on two proposed funding options for urban transit improvements: Option A involves increasing property taxes to enhance subway services, while Option B proposes reallocating funds from municipal services such as parks and recreational programs. You are asked to respond to the survey, choosing one of the options and providing a rationale for your choice. Consider the implications for various stakeholders, such as residents, business owners, and local government budgets. Your response should be 150-200 words.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Evaluate the potential long-term benefits of improved public transportation for urban mobility versus the immediate financial burden on property owners.",
+      "Consider the impact of reduced funding for parks and recreational programs on community well-being and local business sustainability.",
+      "Anticipate objections from both sides, addressing concerns about equity, accessibility, and the prioritization of public resources."
+    ],
+    "context": "In urban areas of Canada, transit funding is a contentious issue, with residents advocating for improved services while facing rising costs. Balancing fiscal responsibility with community needs is critical.",
+    "tips": [
+      "Utilize hedging language to acknowledge the complexity of the situation, emphasizing the need for a balanced approach.",
+      "Structure your argument by clearly outlining the advantages of your chosen option and addressing potential counterarguments."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Growth",
+    "scenario": "The Canadian government is considering two policy options to address environmental sustainability while promoting economic development in rural areas.",
+    "prompt": "Respond to the survey concerning two proposed policy options: Option A, which allocates funds primarily towards renewable energy projects in rural communities, or Option B, which invests in traditional industries while implementing gradual environmental regulations. Choose one option and provide a reasoned argument for your choice, considering the interests of various stakeholders and potential long-term impacts.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Assess the long-term environmental benefits of investing in renewable projects versus the immediate economic gains from traditional industries.",
+      "Consider the implications for local employment and community development in both options, addressing potential objections from affected stakeholders.",
+      "Evaluate the feasibility of balancing economic growth with environmental sustainability, incorporating potential trade-offs and the need for stakeholder engagement."
+    ],
+    "context": "In Canada, rural communities often face challenges related to economic stagnation and environmental degradation. Policymakers must balance the interests of local residents, environmental advocates, and industry stakeholders.",
+    "tips": [
+      "Use hedging language to articulate nuanced positions and acknowledge counterarguments.",
+      "Incorporate specific examples and data to strengthen your argument and appeal to a wider audience."
+    ]
+  },
+  {
+    "title": "Balancing Environment and Economy in Urban Development",
+    "scenario": "The city of Vancouver is considering two approaches to urban development that aim to accommodate growth while addressing environmental concerns.",
+    "prompt": "The City of Vancouver is seeking public input on two proposed urban development strategies: Option A focuses on increasing housing density by building high-rise condominiums in existing neighborhoods, while Option B emphasizes the preservation of green spaces by promoting the development of eco-friendly low-rise structures on the city outskirts. Please respond to this survey by selecting one option and providing a detailed explanation of your choice. Consider the implications for both the environment and housing affordability, and address potential objections from different stakeholders. (150-200 words)",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Option A could lead to affordable housing in central areas but may incite concerns about overpopulation and strain on local resources.",
+      "Option B would prioritize green spaces and sustainability but might increase commuting times and limit accessibility to the urban center.",
+      "Choosing one option necessitates consideration of economic growth and environmental sustainability, as well as the potential pushback from community groups and developers."
+    ],
+    "context": "As urban areas continue to grow, cities must navigate the competing demands of housing affordability and environmental conservation, particularly in regions experiencing significant population increases.",
+    "tips": [
+      "Use formal language and structure your response logically to address the complexity of the issue.",
+      "Incorporate hedging language to acknowledge the potential downsides of your chosen option while reinforcing its benefits."
+    ]
+  },
+  {
+    "title": "Urban Transportation Policy Options",
+    "scenario": "The city of Toronto is at a crossroads regarding its urban transportation policy. The city council is considering two proposals to alleviate congestion and improve public transport.",
+    "prompt": "The city council of Toronto is considering two options to address the growing traffic congestion and enhance public transit in the downtown area. Option A involves increasing funding for public transport to expand services and reduce fares. Option B proposes implementing a congestion charge for vehicles entering the downtown core during peak hours. Please respond to this survey and choose one of the options, explaining your choice while considering the implications for various stakeholders such as commuters, local businesses, and environmental groups.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Evaluate the potential economic impact of increased public transport funding versus the potential revenue generated from a congestion charge.",
+      "Consider the environmental benefits of reduced vehicular traffic against the feasibility of expanding public transport infrastructure.",
+      "Anticipate objections from stakeholders, such as the financial burden of higher taxes for increased public transport and the pushback from drivers opposing additional charges."
+    ],
+    "context": "Toronto faces significant traffic congestion, impacting commuters and local businesses. The city seeks to adopt policies that balance the needs of various stakeholders while promoting sustainability.",
+    "tips": [
+      "Use hedging language to express uncertainty and acknowledge differing perspectives.",
+      "Structurally present your arguments logically, anticipating counterarguments and addressing them proactively."
+    ]
+  },
+  {
+    "title": "Urban Transit Policy Options",
+    "scenario": "The city of Toronto is facing significant challenges with its public transit infrastructure, and city officials are proposing two different policy options aimed at improving transit services.",
+    "prompt": "As a resident of Toronto, you are invited to respond to a survey regarding the following two policy options aimed at enhancing the city's public transport: 1) Invest in expanding the subway system to underserved areas, or 2) Develop a comprehensive bus rapid transit (BRT) network. Choose one option and explain your reasoning. In your response, consider the implications for various stakeholders, such as commuters, local businesses, and environmental activists, and provide a thoughtful analysis of potential trade-offs and objections to your chosen option.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Expanding the subway may provide long-term infrastructural improvements but could lead to significant budget reallocations and construction disruptions for local businesses.",
+      "A bus rapid transit network could be quicker to implement, providing immediate relief to transit users, yet could face criticism regarding its effectiveness in comparison to subway expansion.",
+      "There is a risk of alienating stakeholders, particularly commuters seeking reliable transport, if the chosen option does not address their real needs."
+    ],
+    "context": "Toronto's public transit system has been criticized for inefficiency and inadequacy, with residents demanding more accessible and reliable options. Both proposals have passionate supporters and detractors.",
+    "tips": [
+      "Use formal register and articulate your rationale clearly.",
+      "Consider potential counterarguments to your choice and address them."
+    ]
   }
 ]

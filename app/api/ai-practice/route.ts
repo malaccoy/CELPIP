@@ -171,9 +171,9 @@ interface GenerateRequest {
 const READING_PROMPT = (part: string, diff: Difficulty, avoid: string) => `You are a CELPIP Reading test item writer. Generate a reading passage and questions for ${part}.
 
 DIFFICULTY: ${diff}
-- beginner: Simple vocabulary, shorter sentences, clear main ideas
-- intermediate: Mixed vocabulary, some complex sentences, implicit details
-- advanced: Academic/professional vocabulary, complex structures, inference required
+- beginner (CLB 5-6): Simple, everyday vocabulary. Short, clear sentences. Main ideas are stated explicitly. Answer options are clearly distinct — one is obviously correct. Topics: daily life, shopping, school, weather. Distractors are obviously wrong. Questions ask "What did X say?" or "What is the main topic?"
+- intermediate (CLB 7-8): Mix of common and less common vocabulary (e.g., "accommodate", "subsequent"). Some complex sentences with subordinate clauses. Some information is implied, not stated directly. Distractors are plausible but distinguishable with careful reading. Include 2+ inference questions. Topics: workplace, community events, health, education.
+- advanced (CLB 9-12): Academic and professional vocabulary (e.g., "notwithstanding", "exacerbate", "juxtapose"). Complex sentence structures with multiple clauses, passive voice, and nominalization. Key information is heavily implied or requires synthesis across paragraphs. Distractors are VERY close to the correct answer — differing by one subtle detail. ALL questions require inference, synthesis, or understanding of author's tone/intent. Topics: policy debates, scientific reports, legal notices, economic analysis. The passage should be dense and require careful re-reading.
 
 PARTS:
 - Part 1 (Reading Correspondence): An email or letter (150-200 words). 5-6 multiple choice questions.
@@ -207,9 +207,9 @@ Respond in JSON:
 const WRITING_PROMPT = (task: string, diff: Difficulty, avoid: string) => `You are a CELPIP Writing test prompt designer. Generate a writing prompt for ${task}.
 
 DIFFICULTY: ${diff}
-- beginner: Common everyday scenario, clear instructions
-- intermediate: Workplace or community scenario, some nuance
-- advanced: Complex situation with multiple stakeholders, requires diplomacy
+- beginner (CLB 5-6): Common everyday scenario (email to a friend, complaint about a product). Clear, simple instructions with obvious bullet points. Straightforward tone — no need for diplomacy or nuance. One clear audience.
+- intermediate (CLB 7-8): Workplace or community scenario requiring appropriate register (semi-formal). Must address 3-4 specific bullet points with some that require elaboration. Some need for persuasion or justification. Topics: proposing a change at work, responding to a community issue, formal request.
+- advanced (CLB 9-12): Complex situation with multiple stakeholders, competing interests, and need for diplomatic/nuanced language. Bullet points require sophisticated argumentation — weighing trade-offs, anticipating objections, proposing compromises. Formal register with need for hedging language ("It might be worth considering..."). Topics: policy recommendations, mediating conflicts, addressing controversial proposals, professional negotiations. The prompt should require the candidate to demonstrate range of vocabulary, complex sentence structures, and rhetorical awareness.
 
 TASKS:
 - Task 1: Write an email (formal or semi-formal). Provide scenario + 3 bullet points to address.
@@ -234,9 +234,9 @@ Respond in JSON:
 const LISTENING_PROMPT = (part: string, diff: Difficulty, avoid: string) => `You are a CELPIP Listening test item writer. Generate a listening passage and questions for ${part}.
 
 DIFFICULTY: ${diff}
-- beginner: Clear speech patterns, simple vocab, explicit information
-- intermediate: Natural conversation pace, some idioms, mix of explicit/implicit
-- advanced: Fast-paced, multiple speakers, inference required, professional jargon
+- beginner (CLB 5-6): Slow, clear speech patterns. Simple everyday vocabulary. Information is stated explicitly and repeated. Speaker intent is obvious. Distractors are clearly wrong. Questions ask for directly stated facts ("What time does X start?"). Topics: daily routines, simple directions, basic appointments.
+- intermediate (CLB 7-8): Natural conversation pace with some filler words. Mix of common and uncommon vocabulary, some idioms ("it's a no-brainer", "cut corners"). Some information must be inferred from context. Speakers may change their mind mid-conversation. 2+ questions require inference. Distractors are plausible. Topics: workplace discussions, community planning, service complaints.
+- advanced (CLB 9-12): Fast-paced natural speech with interruptions, overlapping ideas, and self-corrections. Professional jargon and advanced idioms ("devil's advocate", "a paradigm shift"). Speakers use sarcasm, understatement, or hedging ("I suppose one could argue..."). Key answers require synthesizing information from different parts of the passage. Distractors differ from the correct answer by ONE subtle word or detail. Questions test: speaker's underlying attitude, implied disagreement, unstated assumptions, and conclusions that require combining 2+ pieces of information. Topics: policy debates, academic discussions, business negotiations, ethical dilemmas.
 
 PARTS:
 - Part 1 (Problem Solving): Two people discussing a problem and finding solutions. MUST be split into 3 CLIPS (~80-100 words each). 8 questions total distributed across clips (2-3 per clip).
@@ -291,9 +291,9 @@ ${part.includes('Part 1') ? `For Part 1 ONLY — CRITICAL: each clip's passage M
 const SPEAKING_PROMPT = (task: string, diff: Difficulty, avoid: string) => `You are a CELPIP Speaking test prompt designer. Generate a speaking prompt for ${task}.
 
 DIFFICULTY: ${diff}
-- beginner: Familiar topic, simple scenario, clear instructions
-- intermediate: Workplace or social scenario, some complexity
-- advanced: Abstract topic, multiple considerations, nuanced situation
+- beginner (CLB 5-6): Familiar, concrete topic (your favorite food, a weekend plan). Simple scenario with clear instructions. One straightforward perspective needed. Easy to organize with basic "First... Then... Finally..." structure.
+- intermediate (CLB 7-8): Workplace or social scenario with moderate complexity. Requires considering 2-3 factors. Some abstract thinking needed ("Why is this important?"). Candidate must weigh pros/cons or consider different perspectives. Topics: workplace conflicts, community decisions, lifestyle changes.
+- advanced (CLB 9-12): Abstract, nuanced situation with competing priorities and ethical dimensions. Requires sophisticated argumentation — acknowledging counterarguments, making concessions, and providing layered reasoning. Scenario involves ambiguity where there's no clearly "right" answer. Topics: policy trade-offs, ethical dilemmas, cultural tensions, hypothetical scenarios with multiple stakeholders. The prompt should push candidates to use advanced cohesion devices, conditional reasoning, and persuasive techniques.
 
 TASKS:
 - Task 1 (Giving Advice): Someone has a problem, give advice. Prep: 30s, Speak: 90s
@@ -326,8 +326,14 @@ Respond in JSON:
 // ─── Handler ─────────────────────────────────────────────────
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requireProWithLimit('ai-practice');
-    if (denied) return denied;
+    const { authenticated, userId, isPro } = await (await import('@/lib/plan')).getUserPlan();
+    if (!authenticated || !userId) {
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+    }
+    // Rate limit check
+    const { checkRateLimit, rateLimitResponse } = await import('@/lib/rate-limit');
+    const { allowed } = await checkRateLimit(userId, 'ai-practice', isPro);
+    if (!allowed) return rateLimitResponse() as unknown as NextResponse;
 
     const body: GenerateRequest = await request.json();
     const { section, partOrTask, difficulty, previousTopics } = body;

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import {
   Sparkles, BookOpen, PenTool, Headphones, Mic,
   Loader2, RefreshCw, ArrowRight, Clock, FileText,
-  Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus
+  Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus, Play, Pause, Target
 } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
@@ -85,11 +85,122 @@ export default function AIPracticePage() {
   const [generating, setGenerating] = useState(false);
   const [cooldown, setCooldown] = useState(0);
   const [exercise, setExercise] = useState<any>(null);
+  const [listeningPhase, setListeningPhase] = useState<'listen' | 'questions' | 'results'>('listen');
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [hasListened, setHasListened] = useState(false);
   const [audioSrc, setAudioSrc] = useState<string | null>(null);
   const [clipAudioSrcs, setClipAudioSrcs] = useState<string[]>([]);
   const [currentClipIdx, setCurrentClipIdx] = useState(0);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+
+  // Speaking recording states
+  const [speakingPhase, setSpeakingPhase] = useState<'prompt'|'prep'|'speak'|'review'>('prompt');
+  const [countdown, setCountdown] = useState(0);
+  const [isRecording, setIsRecording] = useState(false);
+  const [audioBlob, setAudioBlob] = useState<Blob|null>(null);
+  const [audioUrl, setAudioUrl] = useState<string|null>(null);
+  const [speakingFeedback, setSpeakingFeedback] = useState<any>(null);
+  const [feedbackLoading, setFeedbackLoading] = useState(false);
+  const mediaRecorderRef = useRef<MediaRecorder|null>(null);
+  const chunksRef = useRef<Blob[]>([]);
+  const startRecordingRef = useRef<() => void>(() => {});
+  const stopRecordingRef = useRef<() => void>(() => {});
+
+  // Speaking countdown timer
+  useEffect(() => {
+    if (countdown <= 0) return;
+    const t = setTimeout(() => {
+      const newVal = countdown - 1;
+      setCountdown(newVal);
+      // Auto-transition: prep → speak when countdown hits 0
+      if (newVal === 0 && speakingPhase === 'prep') {
+        startRecordingRef.current();
+      }
+      // Auto-stop: speak → review when countdown hits 0
+      if (newVal === 0 && speakingPhase === 'speak') {
+        stopRecordingRef.current();
+      }
+    }, 1000);
+    return () => clearTimeout(t);
+  }, [countdown, speakingPhase]);
+
+  const startPrep = () => {
+    setSpeakingPhase('prep');
+    setSpeakingFeedback(null);
+    setAudioBlob(null);
+    setAudioUrl(null);
+    setCountdown(exercise?.prepTimeSeconds || 30);
+  };
+
+  const startRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeOpts = MediaRecorder.isTypeSupported('audio/webm') ? { mimeType: 'audio/webm' }
+        : MediaRecorder.isTypeSupported('audio/mp4') ? { mimeType: 'audio/mp4' }
+        : {};
+      const mr = new MediaRecorder(stream, mimeOpts);
+      chunksRef.current = [];
+      mr.ondataavailable = (e) => { if (e.data.size > 0) chunksRef.current.push(e.data); };
+      mr.onstop = () => {
+        const blob = new Blob(chunksRef.current, { type: mr.mimeType || 'audio/webm' });
+        setAudioBlob(blob);
+        setAudioUrl(URL.createObjectURL(blob));
+        stream.getTracks().forEach(t => t.stop());
+      };
+      mr.start();
+      mediaRecorderRef.current = mr;
+      setIsRecording(true);
+      setSpeakingPhase('speak');
+      setCountdown(exercise?.speakTimeSeconds || 60);
+    } catch (e) {
+      console.error('Mic access denied:', e);
+      alert('Please allow microphone access to record your response.');
+    }
+  };
+
+  const stopRecording = () => {
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+      mediaRecorderRef.current.stop();
+    }
+    setIsRecording(false);
+    setSpeakingPhase('review');
+  };
+
+  startRecordingRef.current = startRecording;
+  stopRecordingRef.current = stopRecording;
+
+  const submitSpeakingFeedback = async () => {
+    if (!audioBlob || !exercise) return;
+    setFeedbackLoading(true);
+    try {
+      const ext = audioBlob.type.includes('mp4') || audioBlob.type.includes('m4a') ? '.m4a' : '.webm';
+      const formData = new FormData();
+      formData.append('audio', new File([audioBlob], `recording${ext}`, { type: audioBlob.type }));
+      formData.append('task', partOrTask);
+      formData.append('prompt', exercise.prompt || exercise.passage || '');
+      const res = await fetch('/api/speaking-feedback', { method: 'POST', body: formData });
+      if (res.ok) {
+        const data = await res.json();
+        setSpeakingFeedback(data);
+        // Log speaking activity for leaderboard
+        fetch('/api/log-activity', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'speaking', count: 1 }),
+        }).catch(() => {});
+      } else {
+        const err = await res.json().catch(() => ({}));
+        console.error('Feedback error:', res.status, err);
+        alert(err.error || `Failed to get feedback (${res.status})`);
+      }
+    } catch (e) {
+      console.error('Feedback error:', e);
+    }
+    setFeedbackLoading(false);
+  };
+  const [dailyUsage, setDailyUsage] = useState<{ isPro: boolean; used: number; limit: number; remaining: number } | null>(null);
 
   // Quiz state (reading/listening)
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -104,6 +215,18 @@ export default function AIPracticePage() {
   });
 
   // Persist used topics
+  useEffect(() => {
+    fetch(`/api/daily-usage?_=${Date.now()}`).then(r => r.json()).then(setDailyUsage).catch(() => {});
+  }, []);
+
+  const refreshUsage = () => {
+    fetch(`/api/daily-usage?_=${Date.now()}`).then(r => r.json()).then(setDailyUsage).catch(() => {});
+  };
+
+  const incrementUsage = () => {
+    fetch('/api/daily-usage', { method: 'POST' }).then(r => r.json()).then(setDailyUsage).catch(() => {});
+  };
+
   useEffect(() => {
     if (usedTopics.length > 0) {
       localStorage.setItem('celpip_used_topics', JSON.stringify(usedTopics.slice(-30)));
@@ -122,7 +245,7 @@ export default function AIPracticePage() {
   const handleSectionChange = (s: Section) => {
     setSection(s);
     setPartOrTask(PARTS[s][0].id);
-    setExercise(null);
+    setExercise(null); setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); setListeningPhase('listen'); setHasListened(false); setIsAudioPlaying(false);
     setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null);
     resetQuiz();
     if (autoMode && adaptiveLoaded) {
@@ -139,19 +262,25 @@ export default function AIPracticePage() {
 
   // ─── Generate ──────────────────────────────────
   const generate = async () => {
+    // Check free daily limit
+    if (dailyUsage && !dailyUsage.isPro && dailyUsage.remaining <= 0) {
+      setShowUpgradeModal(true);
+      return;
+    }
     // Writing: skip API, redirect directly to writing page with random theme
     if (section === 'writing') {
       localStorage.setItem('celpip_ai_writing_prompt', JSON.stringify({
         task: partOrTask.includes('Task 1') ? 1 : 2,
         randomTheme: true,
       }));
+      incrementUsage();
       router.push(partOrTask.includes('Task 1') ? '/writing/task-1' : '/writing/task-2');
       return;
     }
 
     setGenerating(true);
     setError(null);
-    setExercise(null);
+    setExercise(null); setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); setListeningPhase('listen'); setHasListened(false); setIsAudioPlaying(false);
     setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null);
     resetQuiz();
 
@@ -161,12 +290,13 @@ export default function AIPracticePage() {
         const res = await fetch('/api/listening-library', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ partOrTask }),
+          body: JSON.stringify({ partOrTask, difficulty }),
         });
 
         if (res.ok) {
           const data = await res.json();
           setExercise(data.exercise);
+          incrementUsage();
           if (data.clipAudioUrls) {
             // Part 1 clips
             setClipAudioSrcs(data.clipAudioUrls.map((u: string) => u + '?v=' + Date.now()));
@@ -189,15 +319,20 @@ export default function AIPracticePage() {
         const res = await fetch('/api/speaking-library', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ taskId }),
+          body: JSON.stringify({ taskId, difficulty }),
         });
 
         if (res.ok) {
           const data = await res.json();
           const p = data.prompt;
           setExercise({
-            title: p.scenario,
+            title: p.title || p.scenario || 'Speaking Exercise',
+            prompt: p.prompt,
             passage: p.prompt,
+            scenario: p.scenario,
+            tips: p.tips || [],
+            prepTimeSeconds: p.prepTimeSeconds || 30,
+            speakTimeSeconds: p.speakTimeSeconds || 60,
             questions: [],
             bulletPoints: p.bulletPoints,
             context: p.context,
@@ -206,7 +341,9 @@ export default function AIPracticePage() {
             choiceA: p.choiceA,
             choiceB: p.choiceB,
             statement: p.statement,
+            difficulty: p.difficulty,
           });
+          incrementUsage();
           setGenerating(false);
           setCooldown(3);
           return;
@@ -237,6 +374,7 @@ export default function AIPracticePage() {
         ex.questions = ex.clips.flatMap((c: any) => c.questions || []);
       }
       setExercise(ex);
+      incrementUsage();
 
       // Track topic to avoid repeats (title + scenario for stronger dedup)
       if (data.exercise?.title) {
@@ -300,6 +438,12 @@ export default function AIPracticePage() {
         (q: any) => answers[q.id] === q.correct
       ).length;
       recordAttempt(section, partOrTask, correct, total);
+      // Log activity for leaderboard
+      fetch('/api/log-activity', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: section, count: total }),
+      }).catch(() => {});
     }
   };
 
@@ -315,19 +459,80 @@ export default function AIPracticePage() {
   // ─── Render ────────────────────────────────────
   if (planLoading) return null;
 
-  if (!isPro) {
-    return (
-      <div className={styles.container}>
-        <ProGate
-          feature="AI Practice Generator"
-          description="Generate unlimited CELPIP exercises with AI — Reading, Writing, Listening, and Speaking. Each exercise is unique, with adaptive difficulty and instant feedback."
-        />
-      </div>
-    );
-  }
-
   return (
     <div className={styles.container}>
+      {/* Upgrade Modal */}
+      {showUpgradeModal && (
+        <div style={{
+          position: 'fixed', inset: 0, zIndex: 9999,
+          background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(8px)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          padding: '1rem',
+        }} onClick={() => setShowUpgradeModal(false)}>
+          <div onClick={e => e.stopPropagation()} style={{
+            background: 'linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%)',
+            border: '1px solid rgba(139,92,246,0.3)',
+            borderRadius: 24, padding: '2rem', maxWidth: 400, width: '100%',
+            textAlign: 'center', position: 'relative',
+            boxShadow: '0 25px 60px rgba(0,0,0,0.5), 0 0 80px rgba(139,92,246,0.15)',
+          }}>
+            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🔒</div>
+            <h2 style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 700, margin: '0 0 0.5rem' }}>
+              Daily Limit Reached
+            </h2>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0 0 1.2rem' }}>
+              You've completed your <strong style={{ color: '#a78bfa' }}>3 free exercises</strong> for today. 
+              Upgrade to Pro for unlimited practice, AI feedback, and mock exams.
+            </p>
+            <div style={{
+              background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)',
+              borderRadius: 16, padding: '1rem', marginBottom: '1.2rem',
+            }}>
+              <div style={{ color: '#fbbf24', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem' }}>
+                🎉 Launch Offer
+              </div>
+              <div style={{ color: '#fff', fontSize: '1.8rem', fontWeight: 800 }}>
+                CA$17.49<span style={{ fontSize: '0.9rem', fontWeight: 400, color: 'rgba(255,255,255,0.5)' }}>/mo</span>
+              </div>
+              <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', textDecoration: 'line-through' }}>
+                CA$24.99/mo
+              </div>
+              <div style={{ color: '#34d399', fontSize: '0.78rem', fontWeight: 600, marginTop: '0.3rem' }}>
+                30% OFF with code WELCOME30
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              <button onClick={async () => {
+                try {
+                  const res = await fetch('/api/stripe/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ plan: 'monthly', promoCode: 'WELCOME30' }),
+                  });
+                  const data = await res.json();
+                  if (data.url) window.location.href = data.url;
+                  else window.location.href = '/pricing';
+                } catch { window.location.href = '/pricing'; }
+              }} style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                padding: '0.9rem 1.5rem', background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+                borderRadius: 14, color: '#fff', fontWeight: 700, fontSize: '1rem',
+                textDecoration: 'none', border: 'none', cursor: 'pointer',
+                boxShadow: '0 8px 24px rgba(139,92,246,0.4)',
+                transition: 'transform 0.2s', width: '100%',
+              }}>
+                🚀 Upgrade to Pro
+              </button>
+              <button onClick={() => setShowUpgradeModal(false)} style={{
+                padding: '0.6rem', background: 'transparent', border: 'none',
+                color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', cursor: 'pointer',
+              }}>
+                Maybe later
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Header */}
       <div className={styles.header}>
         <div className={styles.badge}>
@@ -336,7 +541,7 @@ export default function AIPracticePage() {
         </div>
         <h1 className={styles.title}>Practice Generator</h1>
         <p className={styles.subtitle}>
-          Unlimited AI-generated exercises. Pick a section, choose your level, and train.
+          {isPro ? 'Unlimited AI-generated exercises. Pick a section, choose your level, and train.' : 'AI-generated exercises — 3 free per day. Upgrade for unlimited access.'}
         </p>
       </div>
 
@@ -370,7 +575,7 @@ export default function AIPracticePage() {
             <div
               key={p.id}
               className={partOrTask === p.id ? styles.partChipActive : styles.partChip}
-              onClick={() => { setPartOrTask(p.id); setExercise(null); setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null); resetQuiz(); }}
+              onClick={() => { setPartOrTask(p.id); setExercise(null); setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); setListeningPhase('listen'); setHasListened(false); setIsAudioPlaying(false); setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null); resetQuiz(); }}
             >
               {p.label}
             </div>
@@ -420,28 +625,91 @@ export default function AIPracticePage() {
         </div>
       </div>
 
-      {/* Generate button */}
+      {/* Generate card — hide during listening exercise */}
+      {!(section === 'listening' && exercise && listeningPhase !== 'results') && !exercise && (
+        <div className={styles.practiceCard}>
+          {/* Free usage counter */}
+          {dailyUsage && !dailyUsage.isPro && (
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              padding: '0.6rem 1rem', marginBottom: '1rem',
+              background: dailyUsage.remaining > 0 ? 'rgba(99,102,241,0.1)' : 'rgba(239,68,68,0.1)',
+              border: `1px solid ${dailyUsage.remaining > 0 ? 'rgba(99,102,241,0.2)' : 'rgba(239,68,68,0.2)'}`,
+              borderRadius: 12, fontSize: '0.82rem'
+            }}>
+              <span style={{ color: dailyUsage.remaining > 0 ? '#a5b4fc' : '#fca5a5' }}>
+                {dailyUsage.remaining > 0
+                  ? `${dailyUsage.remaining} of ${dailyUsage.limit} free exercises remaining today`
+                  : 'Daily free limit reached'}
+              </span>
+              {dailyUsage.remaining <= 0 && (
+                <a href="/pricing" style={{ color: '#fbbf24', fontWeight: 600, textDecoration: 'none', fontSize: '0.8rem' }}>
+                  Upgrade →
+                </a>
+              )}
+            </div>
+          )}
+          <div className={styles.practiceCardHeader}>
+            <div className={`${styles.practiceCardIcon} ${styles[section]}`}>
+              {section === 'reading' && <BookOpen size={28} />}
+              {section === 'writing' && <PenTool size={28} />}
+              {section === 'listening' && <Headphones size={28} />}
+              {section === 'speaking' && <Mic size={28} />}
+            </div>
+            <div className={styles.practiceCardTitle}>
+              <span className={`${styles.practiceCardBadge} ${styles[section]}`}>
+                {PARTS[section].find(p => p.id === partOrTask)?.label?.split(' — ')[0] || section}
+              </span>
+              <h3>{PARTS[section].find(p => p.id === partOrTask)?.label?.split(' — ')[1] || section}</h3>
+            </div>
+          </div>
+          <p className={styles.practiceCardDesc}>
+            {section === 'reading' && 'Read the passage carefully and answer the questions.'}
+            {section === 'writing' && (partOrTask.includes('Task 1') ? 'Write a formal or semi-formal email based on the prompt.' : 'Respond to an opinion survey with structured argumentation.')}
+            {section === 'listening' && 'Listen to the audio and answer the questions.'}
+            {section === 'speaking' && 'Speak naturally about the topic within the time limit.'}
+          </p>
+          <div className={styles.practiceCardMeta}>
+            {section === 'writing' && <div className={styles.practiceMetaChip}><Target size={14} /><span>150-200 words</span></div>}
+            {section === 'writing' && <div className={styles.practiceMetaChip}><Clock size={14} /><span>{partOrTask.includes('Task 1') ? '27' : '26'} min</span></div>}
+            {section === 'listening' && <div className={styles.practiceMetaChip}><Clock size={14} /><span>Audio-based</span></div>}
+            {section === 'speaking' && <div className={styles.practiceMetaChip}><Clock size={14} /><span>Timed response</span></div>}
+            {section === 'reading' && <div className={styles.practiceMetaChip}><Clock size={14} /><span>Multiple choice</span></div>}
+            <div className={styles.practiceMetaChip}><Sparkles size={14} /><span>{difficulty}</span></div>
+          </div>
+          <button
+            className={`${styles.practiceCardCta} ${styles[section]}`}
+            onClick={generate}
+            disabled={generating || cooldown > 0}
+          >
+            {cooldown > 0 ? (
+              <>Wait {cooldown}s</>
+            ) : generating ? (
+              <>
+                <Loader2 size={18} className={styles.spinner} />
+                Generating...
+              </>
+            ) : (
+              <>
+                <Zap size={18} />
+                Start Practice
+              </>
+            )}
+          </button>
+        </div>
+      )}
+
+      {/* Generate button when exercise already showing */}
+      {!(section === 'listening' && exercise && listeningPhase !== 'results') && exercise && (
       <button
         className={generating ? styles.loading : styles.generateBtn}
         onClick={generate}
         disabled={generating || cooldown > 0}
+        style={{ display: 'none' }}
       >
-        {cooldown > 0 ? (
-          <>Wait {cooldown}s</>
-        ) : generating ? (
-          <>
-            <Loader2 size={18} className={styles.spinner} />
-            Generating{section === 'listening' ? ' (includes audio)' : ''}...
-          </>
-        ) : (
-          <>
-            <Zap size={18} />
-            {section === 'writing' 
-              ? `Start ${partOrTask} Practice` 
-              : `Generate ${section.charAt(0).toUpperCase() + section.slice(1)} Exercise`}
-          </>
-        )}
+        Generate
       </button>
+      )}
 
       {/* Error */}
       {error && (
@@ -453,7 +721,7 @@ export default function AIPracticePage() {
       {/* ─── Exercise Display ─── */}
       {exercise && (
         <div className={styles.exerciseWrap}>
-          {/* READING / LISTENING */}
+          {/* READING */}
           {(section === 'reading' || section === 'listening') && (
             <>
               <div className={styles.exerciseHeader}>
@@ -463,48 +731,81 @@ export default function AIPracticePage() {
                 </span>
               </div>
 
-              {/* Audio (listening only) */}
-              {section === 'listening' && clipAudioSrcs.length > 0 && exercise.clips && (
-                <div style={{ marginBottom: '1rem' }}>
-                  <div style={{
-                    display: 'flex', alignItems: 'center', gap: '0.5rem',
-                    marginBottom: '0.75rem', fontWeight: 600, color: '#6366f1'
-                  }}>
-                    🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+              {/* Audio (listening only) — Listen Phase: nice card */}
+              {section === 'listening' && listeningPhase === 'listen' && (audioSrc || clipAudioSrcs.length > 0) && (
+                <div className={styles.listenCard}>
+                  <div className={styles.audioVisual}>
+                    <div className={`${styles.audioWave} ${isAudioPlaying ? styles.audioWavePlaying : ''}`}>
+                      {[...Array(5)].map((_, i) => (
+                        <div key={i} className={styles.waveBar} />
+                      ))}
+                    </div>
                   </div>
-                  <div className={styles.audioPlayer}>
-                    <Volume2 size={20} className={styles.audioIcon} />
-                    <audio key={currentClipIdx} ref={audioRef} src={clipAudioSrcs[currentClipIdx]} controls preload="auto" />
+                  
+                  <h2 className={styles.listenTitle}>{exercise.title}</h2>
+                  
+                  {clipAudioSrcs.length > 0 && exercise.clips && (
+                    <div className={styles.clipBadge}>
+                      🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+                    </div>
+                  )}
+                  
+                  <p className={styles.listenHint}>
+                    {hasListened
+                      ? 'Audio finished. Click below when you\'re ready to answer.'
+                      : 'Listen carefully, then answer the questions.'}
+                  </p>
+                  
+                  <audio
+                    key={clipAudioSrcs.length > 0 ? currentClipIdx : 'single'}
+                    ref={audioRef}
+                    src={clipAudioSrcs.length > 0 ? clipAudioSrcs[currentClipIdx] : audioSrc || ''}
+                    preload="auto"
+                    onPlay={() => setIsAudioPlaying(true)}
+                    onPause={() => setIsAudioPlaying(false)}
+                    onEnded={() => { setIsAudioPlaying(false); setHasListened(true); }}
+                  />
+                  
+                  <div>
+                    <button
+                      className={styles.playBtn}
+                      onClick={() => audioRef.current?.play()}
+                      disabled={hasListened}
+                    >
+                      {isAudioPlaying ? <Pause size={20} /> : <Play size={20} />}
+                      <span>{isAudioPlaying ? 'Playing...' : hasListened ? 'Already Played' : 'Play Audio'}</span>
+                    </button>
                   </div>
-                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-                    {clipAudioSrcs.map((_, i) => (
-                      <div
-                        key={i}
-                        style={{
-                          padding: '0.3rem 0.8rem',
-                          borderRadius: 6,
-                          border: i === currentClipIdx ? '2px solid #6366f1' : '1px solid #e2e8f0',
-                          background: i === currentClipIdx ? 'rgba(99,102,241,0.1)' : i < currentClipIdx ? 'rgba(34,197,94,0.1)' : '#1e293b',
-                          fontWeight: i === currentClipIdx ? 600 : 400,
-                          fontSize: '0.8rem',
-                          color: i < currentClipIdx ? '#22c55e' : i === currentClipIdx ? '#6366f1' : '#94a3b8'
-                        }}
-                      >
-                        {i < currentClipIdx ? '✅' : ''} Clip {i + 1}
-                      </div>
-                    ))}
-                  </div>
+                  
+                  {hasListened && (
+                    <button className={styles.readyBtn} onClick={() => setListeningPhase('questions')}>
+                      Answer Questions <ArrowRight size={18} />
+                    </button>
+                  )}
+                  
+                  {clipAudioSrcs.length > 0 && (
+                    <div className={styles.clipTabs}>
+                      {clipAudioSrcs.map((_, i) => (
+                        <div key={i} className={i === currentClipIdx ? styles.clipTabActive : i < currentClipIdx ? styles.clipTabDone : styles.clipTab}>
+                          {i < currentClipIdx ? '✅ ' : ''}Clip {i + 1}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
-              {section === 'listening' && audioSrc && clipAudioSrcs.length === 0 && (
-                <div className={styles.audioPlayer}>
-                  <Volume2 size={20} className={styles.audioIcon} />
-                  <audio ref={audioRef} src={audioSrc} controls preload="auto" />
+
+              {/* Audio still visible in questions phase (for replay) */}
+              {section === 'listening' && listeningPhase === 'questions' && clipAudioSrcs.length > 0 && exercise.clips && (
+                <div style={{ marginBottom: '1rem' }}>
+                  <div className={styles.clipBadge}>
+                    🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+                  </div>
                 </div>
               )}
 
               {/* Passage: hidden for listening when audio available — shown as fallback if no audio */}
-              {section === 'listening' && !audioSrc && exercise.passage && (
+              {section === 'listening' && !audioSrc && clipAudioSrcs.length === 0 && exercise.passage && (
                 <div className={styles.passageCard}>
                   <p style={{ fontSize: '0.8rem', color: '#f59e0b', marginBottom: '0.5rem' }}>⚠️ Audio generation failed — read the passage below:</p>
                   <p className={styles.passageText}>{exercise.passage}</p>
@@ -517,7 +818,7 @@ export default function AIPracticePage() {
               )}
 
               {/* Questions */}
-              {exercise.questions && (() => {
+              {exercise.questions && (section !== 'listening' || listeningPhase !== 'listen') && (() => {
                 const isClipMode = !!(exercise.clips && clipAudioSrcs.length > 0);
                 const currentQuestions = isClipMode && exercise.clips?.[currentClipIdx]?.questions
                   ? exercise.clips[currentClipIdx].questions
@@ -584,6 +885,9 @@ export default function AIPracticePage() {
                       onClick={() => {
                         setCurrentClipIdx(prev => prev + 1);
                         setSubmitted(false);
+                        setListeningPhase('listen');
+                        setHasListened(false);
+                        setIsAudioPlaying(false);
                       }}
                       style={{ marginTop: '0.75rem', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}
                     >
@@ -704,36 +1008,270 @@ export default function AIPracticePage() {
 
               <div className={styles.speakingPrompt}>
                 <p className={styles.speakingText}>{exercise.prompt}</p>
-                <div className={styles.promptMeta}>
-                  <span className={styles.metaItem}>
-                    <Clock size={14} />
-                    Prep: {exercise.prepTimeSeconds || 30}s
-                  </span>
-                  <span className={styles.metaItem}>
-                    <Mic size={14} />
-                    Speak: {exercise.speakTimeSeconds || 60}s
-                  </span>
-                </div>
-                {exercise.tips && exercise.tips.length > 0 && (
-                  <ul className={styles.tipsList} style={{ marginTop: '1rem' }}>
-                    {exercise.tips.map((t: string, i: number) => (
-                      <li key={i}>{t}</li>
-                    ))}
-                  </ul>
-                )}
               </div>
 
-              <a
-                href={`/speaking/practice/${SPEAKING_TASK_SLUGS[partOrTask.match(/Task (\d)/)?.[1] || '1'] || 'giving-advice'}`}
+              {/* Phase: prompt — show Start button */}
+              {speakingPhase === 'prompt' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', marginTop: '1rem' }}>
+                  <div className={styles.promptMeta}>
+                    <span className={styles.metaItem}><Clock size={14} /> Prep: {exercise.prepTimeSeconds || 30}s</span>
+                    <span className={styles.metaItem}><Mic size={14} /> Speak: {exercise.speakTimeSeconds || 60}s</span>
+                  </div>
+                  {exercise.tips && exercise.tips.length > 0 && (
+                    <ul className={styles.tipsList}>{exercise.tips.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul>
+                  )}
+                  <button onClick={startPrep} style={{
+                    padding: '1rem', background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+                    border: 'none', borderRadius: 14, color: '#fff', fontWeight: 700, fontSize: '1rem',
+                    cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  }}>
+                    <Clock size={18} /> Start Preparation
+                  </button>
+                </div>
+              )}
+
+              {/* Phase: prep — countdown */}
+              {speakingPhase === 'prep' && (
+                <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+                  <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                    Preparation Time
+                  </div>
+                  <div style={{
+                    fontSize: '4rem', fontWeight: 800, color: '#a78bfa',
+                    fontVariantNumeric: 'tabular-nums',
+                  }}>
+                    {countdown}s
+                  </div>
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                    Think about your response... Recording starts automatically.
+                  </div>
+                </div>
+              )}
+
+              {/* Phase: speak — recording */}
+              {speakingPhase === 'speak' && (
+                <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+                  <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                    🔴 Recording
+                  </div>
+                  <div style={{
+                    fontSize: '4rem', fontWeight: 800, color: countdown <= 10 ? '#f87171' : '#34d399',
+                    fontVariantNumeric: 'tabular-nums',
+                  }}>
+                    {countdown}s
+                  </div>
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                    Speak now! Recording will stop automatically.
+                  </div>
+                  <button onClick={stopRecording} style={{
+                    marginTop: '1rem', padding: '0.8rem 2rem', background: '#ef4444',
+                    border: 'none', borderRadius: 12, color: '#fff', fontWeight: 600, cursor: 'pointer',
+                  }}>
+                    ⏹ Stop Early
+                  </button>
+                </div>
+              )}
+
+              {/* Phase: review — playback + feedback */}
+              {speakingPhase === 'review' && (
+                <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                  {audioUrl && (
+                    <audio controls src={audioUrl} style={{ width: '100%', borderRadius: 8 }} />
+                  )}
+                  
+                  {!speakingFeedback && (
+                    <button onClick={submitSpeakingFeedback} disabled={feedbackLoading} style={{
+                      padding: '1rem', background: feedbackLoading ? '#4b5563' : 'linear-gradient(135deg, #10b981, #059669)',
+                      border: 'none', borderRadius: 14, color: '#fff', fontWeight: 700, fontSize: '1rem',
+                      cursor: feedbackLoading ? 'not-allowed' : 'pointer',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                    }}>
+                      {feedbackLoading ? '⏳ Analyzing your response...' : '📊 Get AI Feedback'}
+                    </button>
+                  )}
+
+                  {speakingFeedback && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                      
+                      {/* Score Card */}
+                      <div style={{
+                        background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(109,40,217,0.15))',
+                        border: '1px solid rgba(139,92,246,0.3)', borderRadius: 16, padding: '1.5rem', textAlign: 'center',
+                      }}>
+                        <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.4)', marginBottom: 4 }}>
+                          CELPIP Score
+                        </div>
+                        <div style={{ fontSize: '3.5rem', fontWeight: 900, color: speakingFeedback.score >= 7 ? '#34d399' : speakingFeedback.score >= 5 ? '#fbbf24' : '#f87171' }}>
+                          {speakingFeedback.score}<span style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.3)' }}>/12</span>
+                        </div>
+                        {speakingFeedback.overallComment && (
+                          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.5, marginTop: 8 }}>
+                            {speakingFeedback.overallComment}
+                          </p>
+                        )}
+                      </div>
+
+                      {/* Detailed Scores */}
+                      {speakingFeedback.detailedFeedback && (
+                        <div style={{
+                          background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
+                          borderRadius: 14, padding: '1.2rem',
+                        }}>
+                          <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>📊 Detailed Scores</h4>
+                          {['content', 'vocabulary', 'fluency', 'structure'].map((cat) => {
+                            const fb = (speakingFeedback.detailedFeedback as any)[cat];
+                            if (!fb) return null;
+                            const labels: any = { content: '📝 Content', vocabulary: '📚 Vocabulary', fluency: '🗣️ Fluency', structure: '🏗️ Structure' };
+                            const score = fb.score || 0;
+                            const pct = (score / 12) * 100;
+                            return (
+                              <div key={cat} style={{ marginBottom: '0.8rem' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                                  <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem' }}>{labels[cat]}</span>
+                                  <span style={{ color: score >= 7 ? '#34d399' : score >= 5 ? '#fbbf24' : '#f87171', fontWeight: 700, fontSize: '0.85rem' }}>
+                                    {score}/12
+                                  </span>
+                                </div>
+                                <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 6, height: 6, overflow: 'hidden' }}>
+                                  <div style={{
+                                    width: `${pct}%`, height: '100%', borderRadius: 6,
+                                    background: score >= 7 ? '#34d399' : score >= 5 ? '#fbbf24' : '#f87171',
+                                    transition: 'width 0.5s ease',
+                                  }} />
+                                </div>
+                                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', marginTop: 4, lineHeight: 1.4 }}>
+                                  {fb.comment}
+                                </p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {/* Your Transcript */}
+                      {speakingFeedback.transcript && (
+                        <div style={{
+                          background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
+                          borderRadius: 14, padding: '1.2rem',
+                        }}>
+                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>🎙️ Your Transcript</h4>
+                          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: 1.6, fontStyle: 'italic' }}>
+                            &ldquo;{speakingFeedback.transcript}&rdquo;
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Grammar Errors */}
+                      {speakingFeedback.grammarErrors && speakingFeedback.grammarErrors.length > 0 && (
+                        <div style={{
+                          background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)',
+                          borderRadius: 14, padding: '1.2rem',
+                        }}>
+                          <h4 style={{ color: '#fbbf24', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>⚠️ Grammar Corrections</h4>
+                          {speakingFeedback.grammarErrors.map((g: any, i: number) => (
+                            <div key={i} style={{ marginBottom: i < speakingFeedback.grammarErrors.length - 1 ? '0.8rem' : 0, paddingBottom: i < speakingFeedback.grammarErrors.length - 1 ? '0.8rem' : 0, borderBottom: i < speakingFeedback.grammarErrors.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
+                              <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+                                <span style={{ color: '#f87171', textDecoration: 'line-through', fontSize: '0.9rem' }}>
+                                  {typeof g === 'string' ? g : g.error}
+                                </span>
+                                {typeof g !== 'string' && g.correction && (
+                                  <>
+                                    <span style={{ color: 'rgba(255,255,255,0.3)' }}>→</span>
+                                    <span style={{ color: '#34d399', fontWeight: 600, fontSize: '0.9rem' }}>{g.correction}</span>
+                                  </>
+                                )}
+                              </div>
+                              {typeof g !== 'string' && g.explanation && (
+                                <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', marginTop: 4 }}>{g.explanation}</p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Vocabulary Suggestions */}
+                      {speakingFeedback.vocabularySuggestions && speakingFeedback.vocabularySuggestions.length > 0 && (
+                        <div style={{
+                          background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)',
+                          borderRadius: 14, padding: '1.2rem',
+                        }}>
+                          <h4 style={{ color: '#34d399', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>💡 Vocabulary Upgrades</h4>
+                          {speakingFeedback.vocabularySuggestions.map((v: any, i: number) => (
+                            <div key={i} style={{ marginBottom: i < speakingFeedback.vocabularySuggestions.length - 1 ? '0.8rem' : 0 }}>
+                              <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+                                <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>
+                                  {typeof v === 'string' ? v : `"${v.used}"`}
+                                </span>
+                                {typeof v !== 'string' && v.better && (
+                                  <>
+                                    <span style={{ color: 'rgba(255,255,255,0.3)' }}>→</span>
+                                    <span style={{ color: '#34d399', fontWeight: 600, fontSize: '0.9rem' }}>&ldquo;{v.better}&rdquo;</span>
+                                  </>
+                                )}
+                              </div>
+                              {typeof v !== 'string' && v.why && (
+                                <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', marginTop: 2 }}>{v.why}</p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Strengths & Improvements */}
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
+                        {speakingFeedback.strengths && speakingFeedback.strengths.length > 0 && (
+                          <div style={{
+                            background: 'rgba(52,211,153,0.06)', border: '1px solid rgba(52,211,153,0.15)',
+                            borderRadius: 14, padding: '1rem',
+                          }}>
+                            <h4 style={{ color: '#34d399', margin: '0 0 0.5rem', fontSize: '0.85rem' }}>✅ Strengths</h4>
+                            <ul style={{ margin: 0, paddingLeft: '1rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}>
+                              {speakingFeedback.strengths.map((s: string, i: number) => <li key={i} style={{ marginBottom: 4 }}>{s}</li>)}
+                            </ul>
+                          </div>
+                        )}
+                        {speakingFeedback.improvements && speakingFeedback.improvements.length > 0 && (
+                          <div style={{
+                            background: 'rgba(248,113,113,0.06)', border: '1px solid rgba(248,113,113,0.15)',
+                            borderRadius: 14, padding: '1rem',
+                          }}>
+                            <h4 style={{ color: '#f87171', margin: '0 0 0.5rem', fontSize: '0.85rem' }}>🎯 To Improve</h4>
+                            <ul style={{ margin: 0, paddingLeft: '1rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}>
+                              {speakingFeedback.improvements.map((s: string, i: number) => <li key={i} style={{ marginBottom: 4 }}>{s}</li>)}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Model Response */}
+                      {speakingFeedback.modelResponse && (
+                        <div style={{
+                          background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.2)',
+                          borderRadius: 14, padding: '1.2rem',
+                        }}>
+                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>🌟 Improved Version</h4>
+                          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: 1.6, fontStyle: 'italic' }}>
+                            &ldquo;{speakingFeedback.modelResponse}&rdquo;
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <button
                 className={styles.startPracticeBtn}
+                onClick={() => { setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); generate(); }}
+                style={{ marginTop: '1rem' }}
               >
-                Start Speaking Practice <ArrowRight size={16} />
-              </a>
+                Try Another Exercise <ArrowRight size={16} />
+              </button>
             </>
           )}
 
-          {/* Next exercise button (hidden for visual tasks to avoid DALL-E abuse) */}
-          {!(section === 'speaking' && (partOrTask.includes('Task 3') || partOrTask.includes('Task 4'))) && (
+          {/* Next exercise button (hidden for speaking and visual tasks) */}
+          {section !== 'speaking' && (
             <div className={styles.actions}>
               <button className={styles.nextBtn} onClick={generate} disabled={generating || cooldown > 0}>
                 <RefreshCw size={16} />

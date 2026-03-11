@@ -91,10 +91,21 @@ export function EventBanner() {
             {copied ? <Check size={14} /> : <Copy size={14} />}
             <span className={styles.code}>{event.promoCode}</span>
           </button>
-          <a href="/pricing" className={styles.ctaBtn}>
+          <button className={styles.ctaBtn} onClick={async () => {
+            try {
+              const res = await fetch('/api/stripe/checkout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ plan: 'monthly', promoCode: event.promoCode }),
+              });
+              const data = await res.json();
+              if (data.url) window.location.href = data.url;
+              else window.location.href = '/pricing';
+            } catch { window.location.href = '/pricing'; }
+          }}>
             <Zap size={14} />
             {event.ctaText}
-          </a>
+          </button>
         </div>
       </div>
 

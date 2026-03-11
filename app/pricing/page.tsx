@@ -20,7 +20,7 @@ const PLANS: {
   { id: 'weekly', name: '1 Week', price: 9.99, period: '/week', perMonth: 39.96, icon: Clock },
   { id: 'monthly', name: '1 Month', price: 29.99, period: '/month', perMonth: 29.99, icon: Star },
   { id: 'quarterly', name: '3 Months', price: 59.99, period: '/3 months', perMonth: 20.00, badge: 'Popular', badgeColor: '#60a5fa', icon: TrendingUp },
-  { id: 'annual', name: '1 Year', price: 99.00, period: '/year', perMonth: 8.25, badge: 'Best Value', badgeColor: '#fbbf24', icon: Crown },
+  { id: 'annual', name: '1 Year', price: 149.99, period: '/year', perMonth: 12.50, badge: 'Best Value', badgeColor: '#fbbf24', icon: Crown },
 ];
 
 export default function PricingPage() {
@@ -63,13 +63,13 @@ export default function PricingPage() {
   };
 
   const freeFeatures = [
-    '17 Reading passages',
-    '16 Listening exercises with audio',
-    'Writing editor with timer',
-    'Speaking recording & self-evaluation',
+    '3 exercises per day (any skill)',
+    '180 Listening exercises with audio',
+    '78 Reading passages',
+    '60 Writing prompts',
+    '240 Speaking prompts',
     'Technique guides for all 4 sections',
-    'Quiz per module with score tracking',
-    'Progress dashboard',
+    'Leaderboard & rankings',
   ];
 
   const proFeatures = [
@@ -113,7 +113,7 @@ export default function PricingPage() {
               <Shield size={24} />
             </div>
             <h2 className={styles.planName}>Free</h2>
-            <p className={styles.planDesc}>Get started with static content</p>
+            <p className={styles.planDesc}>3 free exercises daily — all skills</p>
           </div>
 
           <div className={styles.priceSection}>
@@ -159,7 +159,7 @@ export default function PricingPage() {
             {PLANS.map(plan => {
               const isSelected = selectedPlan === plan.id;
               const savings = plan.id !== 'weekly'
-                ? Math.round((1 - plan.perMonth / PLANS[0].perMonth) * 100)
+                ? Math.round((1 - plan.perMonth / PLANS[1].perMonth) * 100)
                 : 0;
               const Icon = plan.icon;
               return (
@@ -202,9 +202,7 @@ export default function PricingPage() {
                     CA${plan.price.toFixed(2)}
                   </div>
                   <div style={{ fontSize: 11, color: 'rgba(248,250,252,0.4)', marginTop: 2 }}>
-                    {plan.id === 'weekly' ? `CA$${plan.perMonth.toFixed(2)}/mo` :
-                     plan.id === 'monthly' ? `CA$${plan.perMonth.toFixed(2)}/mo` :
-                     plan.id === 'quarterly' ? `CA$${plan.perMonth.toFixed(2)}/mo` :
+                    {plan.id === 'weekly' ? `≈ CA$${plan.perMonth.toFixed(2)}/mo` :
                      `CA$${plan.perMonth.toFixed(2)}/mo`}
                     {savings > 0 && (
                       <span style={{ color: '#34d399', marginLeft: 4, fontWeight: 600 }}>

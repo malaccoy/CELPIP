@@ -10,7 +10,8 @@
       "Mention any health concerns or potential inconveniences caused by the lack of heating."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-02",
@@ -23,7 +24,8 @@
       "Mention how you will ensure work responsibilities are still met"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-03",
@@ -36,7 +38,8 @@
       "Mention any special activities planned for the evening"
     ],
     "tone": "informal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-04",
@@ -49,7 +52,8 @@
       "Offer to meet at her convenience to discuss what you missed and contribute to the project"
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-05",
@@ -62,7 +66,8 @@
       "Ask for the timeline and process for receiving the refund"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-06",
@@ -75,7 +80,8 @@
       "Express your overall appreciation for their dedication and encouragement throughout the course."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-07",
@@ -88,7 +94,8 @@
       "Request a timeline for repairs and any interim measures to ensure public safety."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-08",
@@ -101,7 +108,8 @@
       "Suggest a quieter time for gatherings or alternative ways to celebrate."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-09",
@@ -114,7 +122,8 @@
       "Request information on application deadlines and procedures"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-10",
@@ -127,7 +136,8 @@
       "We will hold a team meeting on November 1, 2023, to discuss the impact of this change."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-11",
@@ -140,7 +150,8 @@
       "Inquire about the application process and any upcoming orientation sessions."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-12",
@@ -153,7 +164,8 @@
       "Request a follow-up to discuss how the restaurant could improve service in the future"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-13",
@@ -166,7 +178,8 @@
       "Assure your landlord that you will be able to pay the rent in full soon."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-14",
@@ -179,7 +192,8 @@
       "Feel free to bring a card or any personal messages for Sarah to show our support."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-15",
@@ -192,7 +206,8 @@
       "Request a convenient time for a technician to come and perform the repair."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-16",
@@ -205,7 +220,8 @@
       "Reassure them of your commitment to the team and how you will assist in the lead-up to your leave."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-17",
@@ -218,7 +234,8 @@
       "Suggest potential benefits of brighter lighting for security and peace of mind"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-18",
@@ -231,7 +248,8 @@
       "Reiterate your interest in staying in touch for potential future opportunities."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-19",
@@ -244,7 +262,8 @@
       "Express your willingness to discuss further solutions and your commitment to your job."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-20",
@@ -257,7 +276,8 @@
       "Implement a reward system to encourage employees to actively participate in recycling efforts."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-21",
@@ -270,7 +290,8 @@
       "Request for immediate action to remedy the situation, such as covering the wires or conducting an inspection"
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-22",
@@ -283,7 +304,8 @@
       "Are there any fees associated with participating in the after-school programs?"
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-23",
@@ -296,7 +318,8 @@
       "Request if she could provide insights on your skills that would be beneficial for the application."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-24",
@@ -309,7 +332,8 @@
       "Request a prompt update on the delivery status and a new estimated delivery date."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-25",
@@ -322,7 +346,8 @@
       "We are excited to unveil a newly renovated store that will offer improved services and products."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-26",
@@ -335,7 +360,8 @@
       "Assure your commitment to maintaining your work performance despite the schedule change."
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-27",
@@ -348,7 +374,8 @@
       "Assure the client that the corrected invoice will be sent promptly and offer to answer any questions."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-28",
@@ -361,7 +388,8 @@
       "Request confirmation of the cancellation and any final charges that may apply."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-29",
@@ -374,7 +402,8 @@
       "Emphasize her commitment to continuous improvement and professional development."
     ],
     "tone": "formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-30",
@@ -387,6 +416,498 @@
       "Ask if there are any special programs or events related to swimming that your child can participate in"
     ],
     "tone": "semi-formal",
-    "wordTarget": 150
+    "wordTarget": 150,
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Email to a Friend About a Recent Outing",
+    "scenario": "You recently went on a fun outing with your friend and want to share your experience.",
+    "prompt": "Write an email to your friend to tell them about our recent trip to the park. In your email, include the following points:\n- Describe the weather and how it affected our day.\n- Mention the activities we did together, like the picnic or games played.\n- Share your favorite moment from the outing.\n- Suggest another outing we could plan for next weekend.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the weather and how it affected our day.",
+      "Mention the activities we did together, like the picnic or games played.",
+      "Share your favorite moment from the outing.",
+      "Suggest another outing we could plan for next weekend."
+    ],
+    "context": "This email is informal and intended for a friend.",
+    "tips": [
+      "Use friendly language and a casual tone.",
+      "Keep your sentences simple and clear."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Weekend Plan",
+    "scenario": "You're planning a fun weekend and want to invite your friend.",
+    "prompt": "Write an email to your friend inviting them to spend the weekend with you. Make sure to include details about:\n- What activities you have planned for the weekend.\n- Where you will meet and the time.\n- Any items they should bring with them.\n- Why you think it will be a great time together.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the activities planned for the weekend.",
+      "Include the meeting location and time.",
+      "List items your friend should bring.",
+      "Explain why it will be fun to hang out."
+    ],
+    "context": "You want to reconnect with your friend and enjoy a relaxing weekend together.",
+    "tips": [
+      "Use friendly language and a positive tone.",
+      "Keep your sentences short and clear."
+    ]
+  },
+  {
+    "title": "Email to a Friend About a Weekend Plan",
+    "scenario": "You are planning a weekend outing with your friend.",
+    "prompt": "Write an email to your friend to discuss your plans for the weekend. In your email, make sure to:\n- Suggest a place you would like to visit.\n- Mention a time to meet.\n- Ask your friend if they want to bring any snacks or drinks.\n- Encourage them to invite another friend if they want.\n\nYour email should be friendly and casual.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Suggest a place you would like to visit.",
+      "Mention a time to meet.",
+      "Ask your friend if they want to bring any snacks or drinks.",
+      "Encourage them to invite another friend if they want."
+    ],
+    "context": "You and your friend are looking for a fun way to spend your weekend together.",
+    "tips": [
+      "Use a friendly greeting and closing.",
+      "Keep your sentences short and clear."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a New Restaurant",
+    "scenario": "You recently visited a new restaurant in your city and want to tell your friend about it.",
+    "prompt": "Write an email to your friend to share your experience at the new restaurant. Include details about the following points:\n- The name of the restaurant and its location.\n- What dishes you tried and how they tasted.\n- What you liked most about the restaurant (e.g. atmosphere, service).\n- Any recommendations you have for your friend if they decide to visit.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "The name of the restaurant and its location.",
+      "What dishes you tried and how they tasted.",
+      "What you liked most about the restaurant.",
+      "Any recommendations you have for your friend."
+    ],
+    "context": "You and your friend often discuss food and enjoy trying out new places together. You think this restaurant would be a great addition to your list of favorites.",
+    "tips": [
+      "Keep your sentences short and clear.",
+      "Use friendly language, as you are writing to a friend."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Weekend Plan",
+    "scenario": "You are planning to meet a friend for the weekend and need to discuss the details.",
+    "prompt": "Write an email to your friend about your plan for the weekend. Include the following points:\n\n- Suggest a date and time to meet.\n- Choose a place to go together (restaurant, park, etc.).\n- Mention any activities you would like to do while you are there.\n- Ask your friend if they have any other ideas or suggestions.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Suggest a date and time to meet.",
+      "Choose a place to go together.",
+      "Mention any activities you would like to do.",
+      "Ask your friend for any other suggestions."
+    ],
+    "context": "You and your friend are looking to spend time together and you want to plan a nice day out.",
+    "tips": [
+      "Use friendly language and be polite.",
+      "Make sure to include all bullet points in your email."
+    ]
+  },
+  {
+    "title": "Email to a Friend Inviting Them to a Movie",
+    "scenario": "You want to invite your friend to watch a movie this weekend.",
+    "prompt": "Write an email to your friend inviting them to watch a movie this weekend. Include the details of the movie, the time you plan to watch it, and suggest a place to meet.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Mention the name of the movie and its genre.",
+      "Provide the date and time you plan to go.",
+      "Suggest a meeting point (e.g., a coffee shop or theater entrance)."
+    ],
+    "context": "You and your friend often enjoy watching movies together, and you want to make plans for this weekend.",
+    "tips": [
+      "Use a friendly and informal tone.",
+      "Remember to add a greeting and a closing to your email."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Recent Trip",
+    "scenario": "You just returned from a weekend trip to Banff, and you want to share your experiences with your friend.",
+    "prompt": "Write an email to your friend about your recent trip to Banff. In your email, make sure to include: \n- What you did during your trip. \n- A favorite place you visited and why you liked it. \n- Any interesting food you tried. \n- How you felt about the trip overall and if you would recommend it.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "What you did during the trip.",
+      "A favorite place you visited and why.",
+      "Interesting food you tried.",
+      "Your overall feelings about the trip."
+    ],
+    "context": "This email is meant to share your travel experiences with a close friend who may be interested in visiting Banff.",
+    "tips": [
+      "Use friendly and casual language, as this is an email to a friend.",
+      "Don’t forget to start with a greeting and end with a friendly closing."
+    ]
+  },
+  {
+    "title": "Email to a Friend About a Movie",
+    "scenario": "You recently watched a movie that you loved and want to share your thoughts with your friend.",
+    "prompt": "Write an email to your friend to tell them about the movie you watched. Include your opinion about it and why they should see it. \n\nPlease address the following points:\n- What is the title of the movie and who is the director?\n- What did you like about the movie (acting, story, cinematography, etc.)?\n- Why do you think your friend would enjoy this movie?\n- Suggest a time when you both could go see it together or have a movie night at home.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Title and director of the movie",
+      "What you liked about the movie",
+      "Why your friend would enjoy it",
+      "Suggest a time for viewing together"
+    ],
+    "context": "You and your friend share similar tastes in movies, and you want to encourage them to watch one you recently enjoyed.",
+    "tips": [
+      "Use simple language and short sentences.",
+      "Make sure to include your thoughts clearly so your friend understands."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Recent Trip",
+    "scenario": "You recently went on a trip to Banff and want to tell your friend about it.",
+    "prompt": "Write an email to your friend to share your experience from your recent trip to Banff. Include details about the activities you did, the weather, and a funny moment you had. Make sure to keep your email friendly and casual.\n\nYour email should include:\n- 1 or 2 activities you enjoyed during your trip.\n- A description of the weather while you were there.\n- A funny or interesting moment from your trip.\n\nMake sure your email is between 150-200 words.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe 1 or 2 activities you enjoyed.",
+      "Explain what the weather was like.",
+      "Share a funny or interesting moment."
+    ],
+    "context": "You are writing to a friend you know well and want to share your travel experience.",
+    "tips": [
+      "Use a friendly greeting and closing.",
+      "Keep your sentences short and clear."
+    ]
+  },
+  {
+    "title": "Request for Help with a Product Issue",
+    "scenario": "You bought a kitchen appliance that is not working properly and want to ask your friend for advice.",
+    "prompt": "Write an email to your friend asking for help with a kitchen appliance you recently bought. Include the following points: \n- Describe the appliance and its purpose. \n- Explain the issue you are experiencing. \n- Ask your friend if they have any tips or know someone who can help. \n- Mention how important the appliance is for your daily cooking.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the appliance and its purpose.",
+      "Explain the issue you are experiencing.",
+      "Ask your friend for tips or recommendations."
+    ],
+    "context": "You need assistance because the appliance is essential for your cooking and you value your friend's opinion.",
+    "tips": [
+      "Keep your language simple and clear.",
+      "Make sure to use a friendly tone."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Recent Trip",
+    "scenario": "You recently visited a beautiful place in Canada and want to share your experience with a friend.",
+    "prompt": "Write an email to your friend to tell them about your recent trip. Include your thoughts about the place you visited and kindly invite them to join you on your next trip. Your email should be 150-200 words.\n\nMake sure to include the following points:\n- Describe the location you visited and what you enjoyed most about it.\n- Mention any exciting activities you did while there.\n- Share a funny or interesting story from the trip.\n- Ask your friend if they would want to join you on your next adventure.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the location you visited and what you enjoyed most about it.",
+      "Mention any exciting activities you did while there.",
+      "Share a funny or interesting story from the trip.",
+      "Ask your friend if they would want to join you on your next adventure."
+    ],
+    "context": "You have just returned from a trip to Banff National Park and want to inspire your friend to come with you next time.",
+    "tips": [
+      "Use simple and clear language to express your thoughts.",
+      "Include personal feelings to make your email more engaging."
+    ]
+  },
+  {
+    "title": "Email to a Friend About a New Coffee Shop",
+    "scenario": "You recently visited a new coffee shop and want to tell your friend about it.",
+    "prompt": "Write an email to your friend to share your experience at the new coffee shop. Include details about what you liked and recommend it to them. \n\n- Describe the atmosphere of the coffee shop. \n- Mention your favorite drink or snack from there. \n- Suggest when you both could go together to try it out.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the atmosphere of the coffee shop.",
+      "Mention your favorite drink or snack from there.",
+      "Suggest when you both could go together to try it out."
+    ],
+    "context": "You are excited to share a great experience with your friend.",
+    "tips": [
+      "Use friendly language as you are writing to a friend.",
+      "Make sure to include some personal thoughts to show your enthusiasm."
+    ]
+  },
+  {
+    "title": "Email to a Friend About a Recent Trip",
+    "scenario": "You recently went on a trip to Banff and want to share your experiences with your friend.",
+    "prompt": "Write an email to your friend to tell them about your recent trip to Banff. Include the following points:\n- Describe the best thing you did on your trip.\n- Mention one new food you tried and how it was.\n- Tell your friend about a beautiful place you visited.\n- Invite your friend to join you on your next trip.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "Describe the best thing you did on your trip.",
+      "Mention one new food you tried and how it was.",
+      "Tell your friend about a beautiful place you visited.",
+      "Invite your friend to join you on your next trip."
+    ],
+    "context": "You have just returned from a trip to Banff and you want to share your excitement and experiences with your friend.",
+    "tips": [
+      "Use simple language and short sentences.",
+      "Make sure to greet your friend at the start and end with a closing."
+    ]
+  },
+  {
+    "title": "Email to a Friend about a Movie",
+    "scenario": "You recently watched a movie you think your friend would enjoy.",
+    "prompt": "Write an email to your friend to tell them about the movie. Include: \n- The name of the movie and its genre. \n- A brief summary of the plot. \n- Why you liked it and why you think they will enjoy it. \n- Suggest a time for you both to watch it together.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "The name of the movie and its genre.",
+      "A brief summary of the plot.",
+      "Why you liked it and why you think they will enjoy it.",
+      "Suggest a time to watch it together."
+    ],
+    "context": "You want to share a fun experience with your friend and plan a movie night.",
+    "tips": [
+      "Keep your sentences short and clear.",
+      "Use friendly language, since it’s an email to a friend."
+    ]
+  },
+  {
+    "title": "Recommendation for a Local Restaurant",
+    "scenario": "You recently visited a new restaurant in your town and want to recommend it to your friend.",
+    "prompt": "Write an email to your friend to recommend a new restaurant you visited. Include details about the food, atmosphere, and your overall experience. \n\nMake sure to include the following points: \n- What type of food does the restaurant serve? \n- Describe the atmosphere of the restaurant (e.g., casual, cozy, lively). \n- Mention your favorite dish and why you liked it. \n- Suggest a time for your friend to visit and join you.",
+    "difficulty": "beginner",
+    "bulletPoints": [
+      "What type of food does the restaurant serve?",
+      "Describe the atmosphere of the restaurant.",
+      "Mention your favorite dish and why you liked it.",
+      "Suggest a time for your friend to visit."
+    ],
+    "context": "You want to share your recent positive dining experience to encourage your friend to try out a new place.",
+    "tips": [
+      "Use friendly language to make the email sound more personal.",
+      "Keep your sentences short and to the point."
+    ]
+  },
+  {
+    "title": "Community Space Allocation Dispute",
+    "scenario": "A community board is debating the allocation of a new public park space between local sports clubs and a community garden group. You are a member of the board and need to mediate between these conflicting interests.",
+    "prompt": "Dear Board Members,\n\nAs we prepare to make a decision on the allocation of the new public park space, I would like to propose a balanced approach that addresses the interests of both local sports clubs and the community garden group. Considering the varying needs of our community, I believe it is crucial that we carefully weigh our options.\n\n- Allowing dedicated time slots for sports activities could foster youth engagement while promoting physical health; however, this must not overshadow the importance of green spaces for community gardens, which are vital for environmental education.\n- Implementing a shared-use model may reduce conflict, yet we need to anticipate potential logistical issues, such as scheduling and maintenance responsibilities.\n- Securing community feedback through a survey could enhance transparency, but we must also be mindful of the time constraints that may hinder timely decision-making.\n\nI look forward to hearing your thoughts on this matter.\n\nSincerely,  \n[Your Name]  \n[Your Position]  \n[Your Contact Information]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Consider the implications of dedicated time slots for sports versus community gardening needs.",
+      "Propose a shared-use model while addressing potential logistical challenges.",
+      "Suggest a community feedback mechanism while balancing time constraints."
+    ],
+    "context": "This email is part of an ongoing discussion among community board members who are trying to balance the needs of local sports organizations with those of a community garden initiative.",
+    "tips": [
+      "Use formal language and hedging expressions to convey careful consideration of the stakeholders' needs.",
+      "Structure your email clearly, addressing each bullet point in a logical order to maintain coherence."
+    ]
+  },
+  {
+    "title": "Community Park Revitalization Proposal",
+    "scenario": "You are a member of a community association in a suburban neighborhood in Canada. The local government is considering a revitalization project for a community park, but not all residents agree on what changes should be made. Some residents are advocating for new sports facilities, while others want more green spaces and playgrounds for families. As a representative of your community, you need to write an email to the local council to present your recommendations.",
+    "prompt": "Dear Members of the Local Council,\n\nI am writing on behalf of the residents of our community regarding the proposed revitalization of the community park. While we understand the necessity of improving our shared space, we believe it is crucial to address the differing perspectives among residents in a balanced manner. \n\nTo that end, we propose the following considerations:\n- **Balancing Facilities and Green Space**: While sports facilities are highly sought after, it is essential to maintain adequate green spaces to support community engagement and recreational activities for families.\n- **Inclusive Design**: It would be beneficial to incorporate play areas for children and fitness equipment for adults to cater to all demographics, fostering a sense of inclusion.\n- **Cost and Funding Transparency**: We urge the council to provide detailed information on funding sources for the project to dispel concerns about potential tax increases or misallocated funds.\n\nWe appreciate your attention to these concerns and look forward to a collaborative solution that respects the interests of all community members.\n\nSincerely,\n[Your Name]  \n[Your Position]  \n[Community Association Name]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Balancing Facilities and Green Space",
+      "Inclusive Design",
+      "Cost and Funding Transparency"
+    ],
+    "context": "The community is divided over the preferred changes to the park, requiring a nuanced approach that considers multiple viewpoints while advocating for a cohesive development plan.",
+    "tips": [
+      "Use formal language while ensuring clarity and specific terms to articulate your points effectively.",
+      "Anticipate objections from those who may oppose your recommendations and address these concerns directly in your email."
+    ]
+  },
+  {
+    "title": "Conflict Resolution Proposal: Urban Development",
+    "scenario": "You are a city planner in Toronto addressing concerns from local residents, business owners, and environmental groups regarding a new urban development project.",
+    "prompt": "Write an email to a city council member outlining your recommendations for mediating the ongoing concerns about the new urban development project. Be sure to emphasize the importance of balancing the needs of local residents, stimulating economic growth for businesses, and preserving the local environment. Your email should include potential solutions while addressing the competing interests of various stakeholders. Consider this a formal communication that showcases your ability to navigate complex conversations with tact and diplomacy.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Detail how proposed modifications to the development plan could address residents' housing concerns while ensuring business interests are not compromised.",
+      "Suggest creating a joint committee with representatives from all stakeholder groups to facilitate ongoing dialogue and address environmental considerations.",
+      "Outline potential investment in green infrastructure as a means to satisfy both environmentalists and promote economic development, while forecasting potential pushback from budget-conscious stakeholders."
+    ],
+    "context": "In light of recent public protests and media attention, there is growing pressure on city planners to find a solution that accommodates diverse perspectives on the urban development project.",
+    "tips": [
+      "Utilize hedging language to present recommendations in a way that demonstrates consideration for differing opinions, such as 'It may be beneficial to...' or 'We could explore the possibility of...'.",
+      "Be clear yet diplomatic in articulating the benefits and trade-offs of your proposed solutions to engage the interests of all parties involved."
+    ]
+  },
+  {
+    "title": "Community Park Revitalization Proposal",
+    "scenario": "You are a member of the local community association in Toronto, and you need to address the city council regarding the revitalization of a community park that has been a point of contention among residents, local businesses, and environmental groups.",
+    "prompt": "Write an email to the city council advocating for a balanced approach to the revitalization of the community park. Your email should outline the competing interests and provide a nuanced recommendation that addresses the concerns of all stakeholders involved. Aim for a formal register and articulate your arguments clearly. Be sure to address the following points:\n- The potential benefits of park revitalization for community health and local businesses, including anticipated economic growth.\n- The necessity of preserving green spaces and addressing environmental concerns raised by local environmental groups, ensuring their active involvement in planning.\n- Strategies for fostering community engagement in the decision-making process, including compromise solutions for various stakeholders' interests.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "The potential benefits of park revitalization for community health and local businesses, including anticipated economic growth.",
+      "The necessity of preserving green spaces and addressing environmental concerns raised by local environmental groups, ensuring their active involvement in planning.",
+      "Strategies for fostering community engagement in the decision-making process, including compromise solutions for various stakeholders' interests."
+    ],
+    "context": "The revitalization plan aims to enhance community wellbeing while maintaining environmental integrity and supporting local economies. The city council has expressed willingness to listen to community suggestions but requires a comprehensive and balanced proposal.",
+    "tips": [
+      "Use formal language and structure your email clearly to enhance persuasiveness.",
+      "Consider the implications of your recommendations and address potential objections preemptively."
+    ]
+  },
+  {
+    "title": "Community Center Renovation Proposal",
+    "scenario": "You are the manager of a community center in Toronto, requiring renovations but facing opposition from some local residents concerned about increased traffic and noise.",
+    "prompt": "Subject: Proposal for Community Center Renovation\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I am writing to discuss the proposed renovations to our community center, which aim to enhance our facilities and better serve our residents. However, I understand there are concerns from some community members regarding potential challenges associated with these improvements. \n\nTo address these concerns, I would like to propose the following considerations:\n- **Traffic Management:** Implementing a traffic study to ascertain peak hours and developing a plan to mitigate congestion during busy times, ensuring minimal disruption for local residents.\n- **Noise Mitigation:** Establishing strict construction hours and employing noise-reducing materials during the renovation process, thus minimizing disturbances to the surrounding neighborhood.\n- **Community Feedback:** Organizing a town hall meeting to engage residents in discussion, allowing for their voices to be heard and fostering a collaborative approach to decision-making.\n\nI believe that these measures will help in balancing the needs of the community and the goals of the renovation. I look forward to your response and hope we can discuss this further.\n\nBest regards,\n\n[Your Name]  \n[Your Position]  \n[Your Contact Information]  \n[Community Center Name]  \n[Location]  \n",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Traffic Management: Propose a traffic study to address concerns.",
+      "Noise Mitigation: Suggest strategies to minimize disruption during renovations.",
+      "Community Feedback: Plan a town hall meeting for resident engagement."
+    ],
+    "context": "The email addresses renovation concerns involving various stakeholders, including residents and community leaders, requiring a diplomatic approach.",
+    "tips": [
+      "Use formal language and hedging expressions to show consideration of different viewpoints.",
+      "Anticipate objections and provide reasoned solutions to show your commitment to community interests."
+    ]
+  },
+  {
+    "title": "Community Development Initiative Proposal",
+    "scenario": "You are a community leader in a small Canadian town where a proposed housing development has raised concerns among residents, environmentalists, and local business owners. You need to address these competing interests in your communication.",
+    "prompt": "Write an email to the mayor of your town outlining your proposal for a community consultation regarding the housing development. In your email, aim to mediate the conflicting interests of the stakeholders and propose actionable solutions that consider the needs of each group. \n\n- Articulate the potential benefits of the proposed housing development to local businesses while acknowledging environmental concerns raised by residents and environmental groups. \n- Suggest a timeline and methods for community consultation that allow for stakeholder input and discussion, ensuring all voices are heard. \n- Propose compromises that could satisfy competing interests, such as green spaces within the development or investment in local infrastructure, while remaining mindful of the project’s economic viability. \n\nRemember to present your arguments in a formal tone and consider any potential objections from each stakeholder group.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Articulate the potential benefits of the proposed housing development to local businesses while acknowledging environmental concerns raised by residents and environmental groups.",
+      "Suggest a timeline and methods for community consultation that allow for stakeholder input and discussion, ensuring all voices are heard.",
+      "Propose compromises that could satisfy competing interests, such as green spaces within the development or investment in local infrastructure, while remaining mindful of the project’s economic viability."
+    ],
+    "context": "The town is facing pressure to accommodate growing populations and needs while also prioritizing environmental sustainability and economic growth.",
+    "tips": [
+      "Use hedging language to soften your proposals and make them more palatable to all stakeholders.",
+      "Anticipate objections by addressing potential concerns directly in your suggestions."
+    ]
+  },
+  {
+    "title": "Conflict Resolution in Community Development",
+    "scenario": "You are a project manager at a non-profit organization in Toronto. Your organization aims to develop a community park, but there are conflicting interests among local residents, businesses, and the city council.",
+    "prompt": "Write an email to the city council outlining your proposal for a community park, addressing the concerns of local stakeholders while emphasizing the project's benefits. In your email, ensure to: ",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Highlight the importance of community engagement in the planning process to alleviate residents' concerns.",
+      "Propose a compromise that incorporates business sponsors to fund park maintenance while ensuring it remains a public space.",
+      "Anticipate objections from the council regarding budget constraints and present alternative funding sources, such as grants or partnerships."
+    ],
+    "context": "The development of the community park is pivotal for improving local quality of life and fostering community ties, but you must negotiate between different stakeholders who all have varying interests and priorities.",
+    "tips": [
+      "Use formal language and structure your email clearly, starting with a concise introduction and ending with a call to action.",
+      "Consider employing hedging language such as 'It may be beneficial to consider...' to soften potential objections and encourage collaboration."
+    ]
+  },
+  {
+    "title": "Community Policy Recommendation",
+    "scenario": "You are a community leader in Toronto addressing a conflict between local businesses and residents over noise levels from outdoor events.",
+    "prompt": "Dear Mayor Johnson,\n\nI hope this message finds you well. I am writing to address the ongoing concerns regarding noise levels from outdoor events in our community. Balancing the interests of local businesses and residents is crucial for fostering a harmonious environment. I would like to propose the following policy recommendations for consideration:\n\n- **Establish Clear Guidelines**: Implement noise regulations that outline acceptable decibel levels and operating hours for outdoor events to ensure that business growth does not infringe on the residents' quality of life. It is important to consider potential pushback from business owners who may feel restricted by these guidelines.\n\n- **Involve Stakeholders**: Initiate a community forum that allows both businesses and residents to voice their concerns and suggestions. This could help in developing mutual understanding and finding innovative solutions that respect both parties’ interests while potentially mitigating conflict.\n\n- **Trial Period**: Consider a trial implementation of the proposed guidelines for a limited time, allowing for adjustments based on feedback. This approach could potentially alleviate fears of excessive restrictions and demonstrate the city’s commitment to balancing interests.\n\nI look forward to your response and am eager to discuss this matter further.\n\nSincerely,\n[Your Name]  \n[Your Position]  \n[Your Contact Information]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Establish Clear Guidelines: Implement noise regulations that outline acceptable decibel levels and operating hours for outdoor events.",
+      "Involve Stakeholders: Initiate a community forum to gather input from both businesses and residents.",
+      "Trial Period: Suggest a temporary implementation of guidelines to gauge effectiveness and adjust based on feedback."
+    ],
+    "context": "This email is part of a larger discussion with city officials and community members regarding the balance between community enjoyment and business interests.",
+    "tips": [
+      "Use formal language and structure your email clearly with an introduction, body, and conclusion.",
+      "Anticipate potential objections from both business owners and residents and address them in your proposals."
+    ]
+  },
+  {
+    "title": "Proposal for Community Park Development",
+    "scenario": "You're a city council member writing to the local community association regarding a proposal to develop a new park in a neighborhood that has been divided on the design, usage, and funding.",
+    "prompt": "Dear Members of the Community Association,\n\nI hope this message finds you well. I am writing to address the ongoing discussions regarding the proposed development of the new community park. It has come to my attention that there are differing opinions on several key aspects of this project. I would like to propose a collaborative meeting where we can address these concerns and seek a mutually agreeable solution.\n\nTo facilitate our discussion, please consider the following points:\n- **Design Preferences**: While some residents advocate for an open field, others prefer structured play areas for children. We must weigh the benefits of open space against the need for suitable recreational facilities for families.\n- **Funding Allocation**: The proposal currently suggests using municipal funds, which many residents view favorably. However, others express concern over potential impacts on other local projects. We need to explore various funding sources and their implications.\n- **Usage Guidelines**: There are differing opinions on whether the park should prioritize sports activities or community gatherings. I anticipate objections based on potential noise and availability for all community members. We must ensure that our final guidelines support inclusive usage.\n\nI look forward to your feedback, and I am optimistic we can find a resolution that addresses the interests of all involved.\n\nBest regards,\n\n[Your Name]  \nCity Council Member",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Design Preferences: weigh the benefits of open space against the need for recreational facilities.",
+      "Funding Allocation: explore various funding sources to address concerns over municipal spending.",
+      "Usage Guidelines: anticipate objections regarding park usage to ensure inclusivity."
+    ],
+    "context": "The community is split on how the park should be developed, with some wanting sport facilities and others wanting open space. Additionally, there are concerns regarding funding and usage rights.",
+    "tips": [
+      "Use hedging language to soften your assertions and show willingness to compromise.",
+      "Structure your email clearly, addressing each point concisely while maintaining a formal tone."
+    ]
+  },
+  {
+    "title": "Proposed Changes to Local Park Regulations",
+    "scenario": "As a community leader in a Canadian city, you are writing to the city council to propose changes to local park regulations that have caused a divide between various community groups.",
+    "prompt": "Dear Members of the City Council,\n\nI hope this message finds you well. I am writing to address the recent regulations imposed on our local parks, which have sparked significant concerns among residents, business owners, and environmental activists. While the regulations aim to enhance park safety and usage, they have inadvertently resulted in conflicting interests that require thoughtful mediation. \n\nTo ensure a balanced approach that reflects our community's diverse needs, I propose the following considerations:\n\n- **Reevaluate Noise Restrictions**: While preserving tranquility is essential, overly stringent noise regulations may negatively impact local businesses and community events, which rely on sociable environments for growth and engagement.\n- **Balancing Nature Conservation and Recreational Use**: We must find a compromise that allows for recreational enjoyment without compromising ecological integrity, perhaps through designated zones.\n- **Community Engagement Initiatives**: Implementing regular community forums could help gather input from all stakeholders, ensuring that everyone's voice is heard in future decision-making processes.\n\nI appreciate your consideration of these points and look forward to your response.\n\nBest regards,\n\n[Your Name]  \n[Your Position/Title]  \n[Your Contact Information]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Reevaluate Noise Restrictions",
+      "Balancing Nature Conservation and Recreational Use",
+      "Community Engagement Initiatives"
+    ],
+    "context": "The local parks are experiencing increasing tensions among community members regarding new regulations affecting park usage, which has spurred a need for policy revision.",
+    "tips": [
+      "Use hedging language to express your suggestions delicately, such as 'It may be beneficial to consider...' or 'Perhaps we could explore...'.",
+      "Anticipate potential objections from stakeholders by addressing them proactively in your points."
+    ]
+  },
+  {
+    "title": "Negotiating Environmental Policy Changes",
+    "scenario": "You are a city council member in a Canadian municipality. There is a proposal to implement stricter environmental regulations that have sparked significant debate among local businesses, environmental groups, and residents.",
+    "prompt": "You are writing an email to your fellow council members to discuss the proposed environmental regulations. Please articulate your position on the proposal while considering the varying interests of the stakeholders involved. Include key recommendations for mediation strategies that balance economic and environmental priorities.",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Assess the potential economic impact of the proposed regulations on local businesses and suggest possible modifications to mitigate these effects.",
+      "Discuss how the proposed regulations align with community environmental goals and the commitments made to sustainability.",
+      "Propose strategies for involving stakeholders in the decision-making process to foster a collaborative approach and address competing interests."
+    ],
+    "context": "The city council aims to create a sustainable future, but faces pressure from businesses fearing economic loss and residents advocating for environmental protection.",
+    "tips": [
+      "Use formal language and structure your email clearly with an introduction, body, and conclusion.",
+      "Employ hedging language to acknowledge the complexity of interests, such as 'It may be beneficial to consider...' or 'While some may argue that...'."
+    ]
+  },
+  {
+    "title": "Proposed Policy for Remote Work Flexibility",
+    "scenario": "You are a Human Resources Manager at a medium-sized company in Toronto. Recently, there have been discussions about revising the remote work policy to accommodate employee needs while maintaining productivity. You must address concerns from both management and staff.",
+    "prompt": "Dear [Recipient's Name],\n\nI hope this message finds you well. As we consider adjustments to our current remote work policy, I would like to propose a collaborative approach that takes into account the interests of both management and our employees. I believe it is crucial to strike a balance that promotes productivity while also enhancing employee satisfaction.\n\nTo this end, I suggest we consider the following points:\n- **Flexibility in Work Hours**: Allowing employees to adjust their work hours can lead to improved morale, yet we must ensure that core operating hours are covered to maintain team collaboration.\n- **Performance Metrics**: Implementing clear performance metrics could alleviate concerns from management regarding productivity while providing employees with defined goals and outcomes.\n- **Feedback Mechanism**: Establishing a robust feedback mechanism can ensure that employees feel heard, but we should also anticipate potential resistance from those who may perceive this as micromanagement.\n\nI look forward to your feedback on this proposal.\n\nBest regards,\n[Your Name]  \n[Your Position]  \n[Your Company]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Flexibility in Work Hours",
+      "Performance Metrics",
+      "Feedback Mechanism"
+    ],
+    "context": "This email is designed to facilitate a discussion on balancing remote work policies amidst conflicting interests between management and employees.",
+    "tips": [
+      "Use hedging language to soften assertions, such as 'may' or 'could'.",
+      "Acknowledge potential counterarguments to demonstrate an understanding of different perspectives."
+    ]
+  },
+  {
+    "title": "Community Park Development Proposal",
+    "scenario": "You are writing to the local council to propose improvements to a community park that involve various community stakeholders.",
+    "prompt": "Dear Members of the Council,\n\nI hope this message finds you well. I am writing to discuss the proposed improvements for Maplewood Park, which aim to enhance the recreational opportunities for our community while addressing the concerns of various stakeholders. After careful consideration, I believe the following points merit your attention:\n\n- **Balancing Aesthetic and Functional Needs**: While enhancing the park's aesthetic appeal is essential, it is equally important to ensure that the modifications serve functional purposes, such as accessibility for families and individuals with disabilities.\n\n- **Engaging Local Businesses**: Collaborating with nearby businesses could attract additional funding and support, yet we must also consider their input on how the park's developments might impact their operations.\n\n- **Environmental Sustainability**: It's vital to incorporate environmentally sustainable practices in the proposed improvements; however, we should anticipate objections regarding potential project costs and timeline delays.\n\nI look forward to your feedback and hope to discuss how we can best serve our community's diverse needs.\n\nBest regards,\n\n[Your Name]  \n[Your Contact Information]  \n[Your Address]  \n[City, Province, Postal Code]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Balancing aesthetic and functional needs of the park.",
+      "Engaging local businesses for support and addressing their concerns.",
+      "Incorporating environmentally sustainable practices and anticipating objections."
+    ],
+    "context": "The community is divided over the future developments of the park, with various stakeholders including residents, local businesses, and environmental advocates each having differing priorities and concerns.",
+    "tips": [
+      "Use formal language and structured argumentation to present your points clearly.",
+      "Anticipate possible objections and address them thoughtfully within the email."
+    ]
+  },
+  {
+    "title": "Community Park Development Proposal",
+    "scenario": "You are a member of the local community council in Vancouver. The council is considering a proposal to develop a new park in a currently vacant area. However, there are competing interests among community members regarding the park's features.",
+    "prompt": "Subject: Recommendations for Community Park Development\n\nDear Council Members,\n\nI hope this message finds you well. As we move forward with the proposal for the new community park, I would like to address some key aspects that warrant our careful consideration, given the diverse opinions expressed by our constituents. \n\n- Balancing Recreational and Environmental Needs: While many community members prioritize playgrounds and sports facilities, it's crucial to preserve the natural habitat, thereby enhancing local biodiversity. How can we integrate both needs without compromising each?\n- Financial Viability: The proposed features come with varying costs. It may be worth exploring community fundraising initiatives or partnerships with local businesses to offset expenses while still maintaining inclusivity.\n- Stakeholder Engagement: There are differing opinions among residents, businesses, and environmental groups. Establishing a transparent consultation process may help mitigate conflicts and ensure that all voices are heard, fostering a sense of ownership in the project.\n\nI look forward to discussing these points further at our next meeting.\n\nBest regards,\n\n[Your Name]\n[Your Position]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Balancing Recreational and Environmental Needs: Propose strategies to integrate both community engagement and ecological preservation.",
+      "Financial Viability: Suggest potential funding sources or cost-sharing arrangements to address budget constraints.",
+      "Stakeholder Engagement: Recommend methods for facilitating open dialogue among competing interests."
+    ],
+    "context": "The email is written by a community council member to address the complexities involved in a community development project.",
+    "tips": [
+      "Use formal language to convey professionalism, but remain approachable.",
+      "Incorporate hedging language to acknowledge differing opinions and demonstrate openness to feedback."
+    ]
+  },
+  {
+    "title": "Community Park Redevelopment Consultation",
+    "scenario": "You are a local community leader writing to the city council regarding the redevelopment of a community park, which has raised concerns among various groups.",
+    "prompt": "Dear City Council Members,\n\nI am writing to express my concerns and recommendations regarding the proposed redevelopment of Greenview Community Park. While I appreciate the city’s initiative to enhance our local facilities, I believe it is crucial to address the interests of several stakeholders involved.\n\n- **Balancing Interests**: It is imperative to balance the needs of local residents, who seek recreational space, with the business interests of nearby establishments that may benefit from increased foot traffic.\n- **Environmental Considerations**: The park's redevelopment must prioritize environmental sustainability. Preserving existing green space and minimizing ecological disruption should be central to any proposal.\n- **Public Engagement**: I urge for a transparent public consultation process to ensure the voices of all community members—especially those who frequent the park—are heard and considered in decision-making.\n\nBy carefully weighing these considerations, we can create a development plan that reflects our community’s diverse voices while securing long-term benefits for all.\n\nThank you for your attention to this matter. I look forward to your response.\n\nSincerely, \n[Your Name] \n[Your Position] \n[Your Contact Information]",
+    "difficulty": "advanced",
+    "bulletPoints": [
+      "Balancing the needs of local residents with the interests of nearby businesses.",
+      "Prioritizing environmental sustainability in the park's redevelopment.",
+      "Ensuring a transparent public consultation process for community engagement."
+    ],
+    "context": "The city plans to redevelop a community park, but various groups, including residents, local businesses, and environmentalists, have differing opinions on the plan.",
+    "tips": [
+      "Use formal language and polite hedging to articulate your points effectively.",
+      "Anticipate potential objections from stakeholders and address them proactively."
+    ]
   }
 ]

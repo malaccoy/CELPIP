@@ -760,7 +760,7 @@ export default function DashboardPage() {
       icon: PenTool,
       color: '#10b981',
       description: 'Email & Survey Response',
-      route: '/writing',
+      route: '/ai-coach',
       sessions: stats.writing.sessions
     },
     {
@@ -769,7 +769,7 @@ export default function DashboardPage() {
       icon: Headphones,
       color: '#f59e0b',
       description: 'Problem Solving & News',
-      route: '/listening',
+      route: '/ai-coach',
       sessions: stats.listening.sessions
     },
     {
@@ -778,7 +778,7 @@ export default function DashboardPage() {
       icon: BookOpen,
       color: '#06b6d4',
       description: 'Correspondence & Diagrams',
-      route: '/reading',
+      route: '/ai-coach',
       sessions: stats.reading.sessions
     },
     {
@@ -787,7 +787,7 @@ export default function DashboardPage() {
       icon: Mic,
       color: '#8b5cf6',
       description: 'Advice & Descriptions',
-      route: '/speaking',
+      route: '/ai-coach',
       sessions: stats.speaking.sessions
     }
   ];

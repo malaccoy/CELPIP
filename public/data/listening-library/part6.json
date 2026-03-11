@@ -72,7 +72,8 @@
         ],
         "correct": 3
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-02",
@@ -147,7 +148,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-03",
@@ -222,7 +224,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-04",
@@ -297,7 +300,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-05",
@@ -372,7 +376,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-06",
@@ -447,7 +452,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-07",
@@ -522,7 +528,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-08",
@@ -597,7 +604,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-09",
@@ -672,7 +680,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-10",
@@ -747,7 +756,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-11",
@@ -822,7 +832,8 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-12",
@@ -897,7 +908,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-13",
@@ -972,7 +984,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-14",
@@ -1047,7 +1060,8 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-15",
@@ -1122,7 +1136,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-16",
@@ -1197,7 +1212,8 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-17",
@@ -1272,7 +1288,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-18",
@@ -1347,7 +1364,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-19",
@@ -1422,7 +1440,8 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-20",
@@ -1497,7 +1516,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-21",
@@ -1572,7 +1592,8 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-22",
@@ -1647,7 +1668,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-23",
@@ -1722,7 +1744,8 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-24",
@@ -1797,7 +1820,8 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-25",
@@ -1872,7 +1896,8 @@
         ],
         "correct": 3
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-26",
@@ -1947,7 +1972,8 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-27",
@@ -2022,7 +2048,8 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-28",
@@ -2097,7 +2124,8 @@
           "B"
         ]
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-29",
@@ -2172,7 +2200,8 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   },
   {
     "id": "part6-30",
@@ -2247,6 +2276,7 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "difficulty": "intermediate"
   }
 ]

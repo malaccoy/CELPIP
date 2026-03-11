@@ -134,7 +134,8 @@
         "correct": 3
       }
     ],
-    "id": "part4-01"
+    "id": "part4-01",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Tipping be Eliminated in Canadian Restaurants?",
@@ -275,7 +276,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-02"
+    "id": "part4-02",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canada Increase Military Spending?",
@@ -412,7 +414,8 @@
         "correct": 3
       }
     ],
-    "id": "part4-03"
+    "id": "part4-03",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Plastic Packaging Be Banned in Grocery Stores?",
@@ -549,7 +552,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-04"
+    "id": "part4-04",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canadian Companies Be Required to Offer Four-Day Work Weeks?",
@@ -686,7 +690,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-05"
+    "id": "part4-05",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Foreign Buyers Be Permanently Banned from Canadian Real Estate?",
@@ -823,7 +828,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-06"
+    "id": "part4-06",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Universities Prioritize STEM Over Arts and Humanities?",
@@ -960,7 +966,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-07"
+    "id": "part4-07",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canada Adopt a Universal Basic Income?",
@@ -1097,7 +1104,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-08"
+    "id": "part4-08",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canadian Healthcare Include Dental and Vision Coverage?",
@@ -1238,7 +1246,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-09"
+    "id": "part4-09",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canada Invest More in High-Speed Rail Between Cities?",
@@ -1375,7 +1384,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-10"
+    "id": "part4-10",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Debate on Foreign Buyers in Canadian Real Estate",
@@ -1512,7 +1522,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-11"
+    "id": "part4-11",
+    "difficulty": "intermediate"
   },
   {
     "title": "Are Electric Vehicles Practical for All Canadian Climates?",
@@ -1649,7 +1660,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-12"
+    "id": "part4-12",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Universities Prioritize STEM Over Arts and Humanities?",
@@ -1786,7 +1798,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-13"
+    "id": "part4-13",
+    "difficulty": "intermediate"
   },
   {
     "title": "Is Working from Home Hurting Canadian Workplace Culture?",
@@ -1923,7 +1936,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-14"
+    "id": "part4-14",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canada Adopt a Universal Basic Income?",
@@ -2060,7 +2074,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-15"
+    "id": "part4-15",
+    "difficulty": "intermediate"
   },
   {
     "title": "Are Smartphones Helping or Hurting Canadian Children in Schools?",
@@ -2197,7 +2212,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-16"
+    "id": "part4-16",
+    "difficulty": "intermediate"
   },
   {
     "title": "Should Canadian Healthcare Include Dental and Vision Coverage?",
@@ -2334,7 +2350,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-17"
+    "id": "part4-17",
+    "difficulty": "intermediate"
   },
   {
     "title": "Is the Gig Economy Good or Bad for Canadian Workers?",
@@ -2459,7 +2476,8 @@
         "correct": 0
       }
     ],
-    "id": "part4-18"
+    "id": "part4-18",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Debate on High-Speed Rail Investment in Canada",
@@ -2596,7 +2614,8 @@
         "correct": 1
       }
     ],
-    "id": "part4-19"
+    "id": "part4-19",
+    "difficulty": "intermediate"
   },
   {
     "title": "Are Professional Sports Teams Worth Public Funding in Canada?",
@@ -2733,6 +2752,3817 @@
         "correct": 1
       }
     ],
-    "id": "part4-20"
+    "id": "part4-20",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "In Canada, parks are important for our health and happiness. They are places where we can relax, exercise, and enjoy nature. Community parks also help us meet our neighbors and make new friends. This is important for creating a strong community. Parks offer many activities, like walking, running, and playing sports. They are also great for families with children. Kids can play on swings and slides, while parents watch them. \n\nHowever, some parks need more care. Sometimes there is litter, and the grass is not mowed. This is not good for anyone. We should take care of our parks and keep them clean. This means using trash cans and reporting problems to the city. Community members can also help by organizing clean-up days. \n\nIn conclusion, community parks are essential for our well-being. They provide places for fun and connection. If we take care of them, they will continue to be a great part of our lives in Canada.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the author think about parks?",
+        "options": [
+          "They are unimportant.",
+          "They are important for health and happiness.",
+          "They are only for children.",
+          "They should be closed."
+        ],
+        "correct": 1,
+        "explanation": "The author clearly states that parks are important for our health and happiness."
+      },
+      {
+        "id": 2,
+        "question": "What can people do in community parks?",
+        "options": [
+          "Only play sports.",
+          "Meet neighbors and exercise.",
+          "Stay inside all day.",
+          "Buy food only."
+        ],
+        "correct": 1,
+        "explanation": "The passage says people can relax, exercise, and meet neighbors in parks."
+      },
+      {
+        "id": 3,
+        "question": "What do children do in parks according to the text?",
+        "options": [
+          "They only watch TV.",
+          "They can play on swings and slides.",
+          "They don't go to parks.",
+          "They play alone."
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that kids can play on swings and slides."
+      },
+      {
+        "id": 4,
+        "question": "What problem do some parks have?",
+        "options": [
+          "Too many people.",
+          "No activities.",
+          "Litter and not enough care.",
+          "Too much grass."
+        ],
+        "correct": 2,
+        "explanation": "The author writes that some parks have litter and need more care."
+      },
+      {
+        "id": 5,
+        "question": "What should community members do to help parks?",
+        "options": [
+          "Ignore the issues.",
+          "Organize clean-up days.",
+          "Only complain about the parks.",
+          "Close the parks."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that community members can help by organizing clean-up days."
+      },
+      {
+        "id": 6,
+        "question": "Why are community parks important for families?",
+        "options": [
+          "They have no space.",
+          "They provide places for fun and connection.",
+          "They are very far away.",
+          "They are expensive."
+        ],
+        "correct": 1,
+        "explanation": "The passage explains that parks are essential for fun and connection for families."
+      },
+      {
+        "id": 7,
+        "question": "What does the author suggest about litter?",
+        "options": [
+          "It is a good thing.",
+          "People should clean it up.",
+          "It does not matter.",
+          "It should be left alone."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that people should keep parks clean by using trash cans and reporting litter."
+      },
+      {
+        "id": 8,
+        "question": "What is the main topic of this passage?",
+        "options": [
+          "Why parks are bad.",
+          "The importance of community parks.",
+          "How to close parks.",
+          "The history of parks."
+        ],
+        "correct": 1,
+        "explanation": "The main topic of the passage is the importance of community parks."
+      },
+      {
+        "id": 9,
+        "question": "What activities can people enjoy in parks?",
+        "options": [
+          "Only picnicking.",
+          "Walking, running, and playing sports.",
+          "Watching movies.",
+          "Shopping."
+        ],
+        "correct": 1,
+        "explanation": "The passage lists walking, running, and playing sports as activities enjoyed in parks."
+      },
+      {
+        "id": 10,
+        "question": "What is a good way to take care of parks?",
+        "options": [
+          "Throw trash on the ground.",
+          "Report problems to the city.",
+          "Leave parks alone.",
+          "Avoid them completely."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests reporting problems to the city as a way to take care of parks."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "In Canada, community parks are very important. They provide a space for families to spend time together. Children can play, and adults can relax. Parks also encourage people to be active. Walking, jogging, or playing sports are good for health. \n\nMany cities, like Toronto and Vancouver, have beautiful parks. These parks often have trees, flowers, and even ponds. They are great places for picnics and outdoor events. People can meet their neighbors and make new friends in parks. \n\nAnother benefit of community parks is they help the environment. Trees clean the air and provide homes for birds and other animals. Having green spaces in cities can reduce heat in the summer too. \n\nParks also create a sense of community. People gather for events or just to enjoy nature. This makes neighborhoods friendly and welcoming. Everyone can enjoy the parks, whether they live in the area or are just visiting. \n\nIn conclusion, community parks are important for families, health, and the environment. Cities should continue to invest in these spaces so everyone can enjoy them. We must take care of our parks to keep them beautiful and useful for all.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A family activities",
+          "The importance of community parks",
+          "Health advice",
+          "Environmental issues"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the importance of community parks."
+      },
+      {
+        "id": 2,
+        "question": "What do community parks provide?",
+        "options": [
+          "Shopping areas",
+          "Space for families to spend time together",
+          "Jobs for local people",
+          "Transportation services"
+        ],
+        "correct": 1,
+        "explanation": "Community parks provide a space for families to spend time together."
+      },
+      {
+        "id": 3,
+        "question": "What do the parks encourage people to do?",
+        "options": [
+          "Stay indoors",
+          "Be active",
+          "Shop more",
+          "Use cars"
+        ],
+        "correct": 1,
+        "explanation": "The parks encourage people to be active."
+      },
+      {
+        "id": 4,
+        "question": "Which two cities are mentioned for having beautiful parks?",
+        "options": [
+          "Montreal and Ottawa",
+          "Toronto and Vancouver",
+          "Calgary and Edmonton",
+          "Halifax and Regina"
+        ],
+        "correct": 1,
+        "explanation": "Toronto and Vancouver are mentioned in the passage."
+      },
+      {
+        "id": 5,
+        "question": "How do trees benefit the environment?",
+        "options": [
+          "They produce food",
+          "They clean the air",
+          "They create jobs",
+          "They reduce noise"
+        ],
+        "correct": 1,
+        "explanation": "Trees clean the air and provide homes for birds and animals."
+      },
+      {
+        "id": 6,
+        "question": "What kind of activities can people do in parks?",
+        "options": [
+          "Study alone",
+          "Walk, jog, or play sports",
+          "Watch movies",
+          "Work on computers"
+        ],
+        "correct": 1,
+        "explanation": "People can walk, jog, or play sports in parks."
+      },
+      {
+        "id": 7,
+        "question": "Why are parks good for neighborhoods?",
+        "options": [
+          "They are quiet places",
+          "They have shops",
+          "They create a sense of community",
+          "They have parking lots"
+        ],
+        "correct": 2,
+        "explanation": "Parks create a sense of community."
+      },
+      {
+        "id": 8,
+        "question": "What do people do in parks according to the passage?",
+        "options": [
+          "Gather for events or enjoy nature",
+          "Shop for groceries",
+          "Go to work",
+          "Travel to other cities"
+        ],
+        "correct": 0,
+        "explanation": "People gather for events or enjoy nature in parks."
+      },
+      {
+        "id": 9,
+        "question": "What should cities do for community parks?",
+        "options": [
+          "Ignore them",
+          "Invest in them",
+          "Close them",
+          "Sell them"
+        ],
+        "correct": 1,
+        "explanation": "Cities should invest in community parks."
+      },
+      {
+        "id": 10,
+        "question": "What is one way to keep parks useful?",
+        "options": [
+          "Build more roads",
+          "Make them smaller",
+          "Take care of them",
+          "Charge money to enter"
+        ],
+        "correct": 2,
+        "explanation": "Taking care of parks keeps them beautiful and useful."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Parks in Our Cities",
+    "passage": "Parks are very important in our cities. They provide a place for people to relax and enjoy nature. In Canada, many cities have beautiful parks. For example, Stanley Park in Vancouver is famous for its tall trees and lovely walking paths. Parks give us space to play sports, have picnics, and spend time with friends and family. They also help the environment by cleaning the air. More trees in our cities mean cleaner air to breathe. \n\nLocal governments should invest more money in parks. Many parks need better facilities. Some parks are in bad condition. They need new benches, clean pathways, and safe playgrounds for children. If we improve our parks, more people will visit them. This will make our cities healthier and happier places to live. \n\nIn conclusion, parks are vital for our communities. They improve our health and well-being. Everyone should support efforts to make parks better and more accessible. Let's work together to create beautiful parks for everyone to enjoy!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. The importance of parks",
+          "B. The best cities in Canada",
+          "C. How to play sports",
+          "D. Ways to clean air"
+        ],
+        "correct": 0,
+        "explanation": "The passage discusses why parks are important in cities."
+      },
+      {
+        "id": 2,
+        "question": "What does Stanley Park in Vancouver have?",
+        "options": [
+          "A. Tall trees and walking paths",
+          "B. A shopping mall",
+          "C. A swimming pool",
+          "D. An airport"
+        ],
+        "correct": 0,
+        "explanation": "Stanley Park is known for its tall trees and walking paths."
+      },
+      {
+        "id": 3,
+        "question": "Why do parks help the environment?",
+        "options": [
+          "A. They provide jobs",
+          "B. They clean the air",
+          "C. They attract tourists",
+          "D. They reduce traffic"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that parks help clean the air."
+      },
+      {
+        "id": 4,
+        "question": "What do many parks need?",
+        "options": [
+          "A. More cars",
+          "B. Better facilities",
+          "C. More trees",
+          "D. New signs"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that many parks need better facilities."
+      },
+      {
+        "id": 5,
+        "question": "What can people do in parks?",
+        "options": [
+          "A. Work at an office",
+          "B. Play sports and have picnics",
+          "C. Study for exams",
+          "D. Shop for groceries"
+        ],
+        "correct": 1,
+        "explanation": "The passage lists activities like playing sports and having picnics in parks."
+      },
+      {
+        "id": 6,
+        "question": "What should local governments do with parks?",
+        "options": [
+          "A. Close them down",
+          "B. Invest more money",
+          "C. Lower taxes",
+          "D. Build more roads"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that local governments should invest more money in parks."
+      },
+      {
+        "id": 7,
+        "question": "What will happen if we improve the parks?",
+        "options": [
+          "A. Fewer people will visit",
+          "B. More people will visit",
+          "C. Parks will disappear",
+          "D. Cities will have more traffic"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that improving parks will encourage more visits."
+      },
+      {
+        "id": 8,
+        "question": "How do parks make cities better?",
+        "options": [
+          "A. By increasing pollution",
+          "B. By making them healthy and happy",
+          "C. By making them noisy",
+          "D. By causing traffic"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that parks create healthier and happier cities."
+      },
+      {
+        "id": 9,
+        "question": "What does the author want everyone to do?",
+        "options": [
+          "A. Ignore the parks",
+          "B. Support efforts to improve parks",
+          "C. Visit shopping malls",
+          "D. Avoid spending time outside"
+        ],
+        "correct": 1,
+        "explanation": "The conclusion encourages everyone to support the improvement of parks."
+      },
+      {
+        "id": 10,
+        "question": "What is one benefit of parks mentioned in the passage?",
+        "options": [
+          "A. They are free to enter",
+          "B. They provide a place for nature",
+          "C. They are only for children",
+          "D. They have no rules"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that parks provide a place for people to enjoy nature."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "Community parks are very important for our neighborhoods. They provide a space for people to relax, play, and enjoy the outdoors. Parks also bring people together. Families can have picnics, children can play, and friends can walk or jog. Having a park nearby can make a neighborhood much better. \n\nIn cities like Toronto and Vancouver, parks are places where different people meet. They help build friendships and a sense of community. When there are good parks, more people want to live in that area. This can help local businesses because more people come to visit. It is important for city planners to create and maintain these parks. \n\nSome people worry that parks take up land that could be used for houses or stores. However, parks are essential to our health and happiness. They offer fresh air and space to exercise. In winter, parks can be used for sledding and ice skating, offering fun activities for families. \n\nIn conclusion, community parks are a vital part of our daily lives. We should support efforts to keep them clean and safe. Let's encourage our local government to care for these spaces. They benefit everyone in the community.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are community parks important for?",
+        "options": [
+          "A space to relax",
+          "Building stores",
+          "Creating more houses",
+          "Staying inside"
+        ],
+        "correct": 0,
+        "explanation": "Community parks provide a space for people to relax."
+      },
+      {
+        "id": 2,
+        "question": "What can families do in parks?",
+        "options": [
+          "Shop for groceries",
+          "Have picnics",
+          "Watch movies",
+          "Visit museums"
+        ],
+        "correct": 1,
+        "explanation": "Families can enjoy having picnics in parks."
+      },
+      {
+        "id": 3,
+        "question": "What do parks help build?",
+        "options": [
+          "Friendships",
+          "Higher prices",
+          "More stores",
+          "Less space"
+        ],
+        "correct": 0,
+        "explanation": "Parks help build friendships and a sense of community."
+      },
+      {
+        "id": 4,
+        "question": "What do good parks attract?",
+        "options": [
+          "More people",
+          "Fewer visitors",
+          "More traffic",
+          "Less business"
+        ],
+        "correct": 0,
+        "explanation": "Good parks attract more people who might want to live in the area."
+      },
+      {
+        "id": 5,
+        "question": "What can parks improve?",
+        "options": [
+          "Health and happiness",
+          "Cars and traffic",
+          "Homework and studying",
+          "Only shopping"
+        ],
+        "correct": 0,
+        "explanation": "Parks can improve health and happiness."
+      },
+      {
+        "id": 6,
+        "question": "What can people do in parks during winter?",
+        "options": [
+          "Plant trees",
+          "Go sledding",
+          "Make ice cream",
+          "Stay indoors"
+        ],
+        "correct": 1,
+        "explanation": "People can go sledding and ice skating in parks during winter."
+      },
+      {
+        "id": 7,
+        "question": "What should we do for community parks?",
+        "options": [
+          "Ignore them",
+          "Support efforts to care for them",
+          "Build more houses",
+          "Turn them into stores"
+        ],
+        "correct": 1,
+        "explanation": "We should support efforts to keep community parks clean and safe."
+      },
+      {
+        "id": 8,
+        "question": "Who should take care of the parks?",
+        "options": [
+          "Local government",
+          "Only local businesses",
+          "Children",
+          "Visitors only"
+        ],
+        "correct": 0,
+        "explanation": "Local government should take care of community parks."
+      },
+      {
+        "id": 9,
+        "question": "What do some people worry about regarding parks?",
+        "options": [
+          "They are too big",
+          "They take up land",
+          "They are too small",
+          "They cost money"
+        ],
+        "correct": 1,
+        "explanation": "Some people worry that parks take up land that could be used for houses or stores."
+      },
+      {
+        "id": 10,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "The weather in Toronto",
+          "The importance of community parks",
+          "Shopping in cities",
+          "Building more houses"
+        ],
+        "correct": 1,
+        "explanation": "The main topic of the passage is the importance of community parks."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "In Canada, community parks are very important for our daily lives. They provide a space for people to enjoy nature. Parks are places where families can spend time together. Children can play on swings and slides. Adults can walk their dogs or jog on paths. Community parks help bring neighbors together. People can meet and make new friends. They also help us stay active and healthy.\n\nMost communities in Canada have at least one park. Cities like Toronto, Vancouver, and Calgary have many parks. These parks offer many activities. For example, people can play sports, have picnics, or relax by a lake. Many parks also have flower gardens and trees. This makes the area beautiful.\n\nIt is important to take care of our community parks. They are a shared space for everyone. We should clean up after ourselves. Picking up trash and recycling is important. When we care for parks, we show that we respect our community. Overall, community parks make our lives better. They are essential for recreation, relaxation, and socializing.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A community's history",
+          "The importance of community parks",
+          "Different sports activities",
+          "How to plant flowers"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the importance of community parks in daily life."
+      },
+      {
+        "id": 2,
+        "question": "What can children do in parks?",
+        "options": [
+          "Swim in a pool",
+          "Play on swings and slides",
+          "Ride horses",
+          "Watch movies"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that children can play on swings and slides in parks."
+      },
+      {
+        "id": 3,
+        "question": "How do parks help neighbors?",
+        "options": [
+          "They provide jobs",
+          "They keep people apart",
+          "They allow people to meet and make friends",
+          "They increase traffic"
+        ],
+        "correct": 2,
+        "explanation": "Parks help bring neighbors together and allow them to meet and make friends."
+      },
+      {
+        "id": 4,
+        "question": "What can adults do in community parks?",
+        "options": [
+          "Only read books",
+          "Play video games",
+          "Walk their dogs or jog",
+          "Stay at home"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that adults can walk their dogs or jog in community parks."
+      },
+      {
+        "id": 5,
+        "question": "What do many parks in Canada offer?",
+        "options": [
+          "Job opportunities",
+          "Many activities",
+          "Restaurants",
+          "Schools"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that community parks offer many activities for people."
+      },
+      {
+        "id": 6,
+        "question": "What should we do to care for parks?",
+        "options": [
+          "Leave trash everywhere",
+          "Pick up trash and recycle",
+          "Do nothing",
+          "Only visit during summer"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the importance of cleaning up and recycling to take care of parks."
+      },
+      {
+        "id": 7,
+        "question": "Why are community parks important for health?",
+        "options": [
+          "They are quiet places",
+          "They promote activity and relaxation",
+          "They have no trees",
+          "They are far from cities"
+        ],
+        "correct": 1,
+        "explanation": "The passage explains that parks help people stay active and healthy."
+      },
+      {
+        "id": 8,
+        "question": "What makes parks beautiful?",
+        "options": [
+          "Lots of buildings",
+          "Flower gardens and trees",
+          "Noise and traffic",
+          "Fast food restaurants"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions flowers and trees as elements that make parks beautiful."
+      },
+      {
+        "id": 9,
+        "question": "Where are many parks located in Canada?",
+        "options": [
+          "In the countryside",
+          "In cities like Toronto and Vancouver",
+          "In rural areas only",
+          "Inside shopping malls"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that cities like Toronto, Vancouver, and Calgary have many parks."
+      },
+      {
+        "id": 10,
+        "question": "What do community parks help us do?",
+        "options": [
+          "Sleep all day",
+          "Travel far",
+          "Recreate, relax, and socialize",
+          "Stay home"
+        ],
+        "correct": 2,
+        "explanation": "The passage concludes that community parks are essential for recreation, relaxation, and socializing."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Local Farmers' Markets",
+    "passage": "In Canada, local farmers' markets are becoming very popular. These markets sell fresh fruits, vegetables, and other goods. Many people love to shop at these markets. They offer high-quality products. Buying local food helps farmers in our communities. It also supports our economy. \n\nFarmers' markets are not just about food. They are also fun social events. Families can spend time together, and friends can meet. There are often activities for children. For example, some markets have face painting or music. This makes shopping a joyful experience. \n\nAnother reason to support farmers' markets is the environment. Buying local food reduces the carbon footprint. This means less pollution from transportation. Many farmers use organic methods, which are better for the planet. \n\nIn conclusion, local farmers' markets are important for many reasons. They help farmers, support the economy, provide a good shopping experience, and are better for the environment. Everyone should visit their local farmers' market and enjoy what they have to offer.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A local grocery store",
+          "The importance of local farmers' markets",
+          "The history of farming",
+          "Types of vegetables sold"
+        ],
+        "correct": 1,
+        "explanation": "The main topic is about local farmers' markets."
+      },
+      {
+        "id": 2,
+        "question": "What do farmers' markets sell?",
+        "options": [
+          "Fresh fruits and vegetables",
+          "Clothes and toys",
+          "Only organic products",
+          "Fast food"
+        ],
+        "correct": 0,
+        "explanation": "Farmers' markets sell fresh fruits, vegetables, and other goods."
+      },
+      {
+        "id": 3,
+        "question": "Why do people like to shop at farmers' markets?",
+        "options": [
+          "The prices are always low",
+          "They offer high-quality products",
+          "They are open all night",
+          "They sell only processed food"
+        ],
+        "correct": 1,
+        "explanation": "People enjoy shopping for high-quality products at farmers' markets."
+      },
+      {
+        "id": 4,
+        "question": "How do farmers' markets help the economy?",
+        "options": [
+          "By selling things for charity",
+          "By supporting local farmers",
+          "By providing free food",
+          "By closing stores"
+        ],
+        "correct": 1,
+        "explanation": "They help the economy by supporting local farmers."
+      },
+      {
+        "id": 5,
+        "question": "What activities can families enjoy at farmers' markets?",
+        "options": [
+          "Shopping only",
+          "Face painting and music",
+          "Watching movies",
+          "Playing video games"
+        ],
+        "correct": 1,
+        "explanation": "Farmers' markets often have activities like face painting and music."
+      },
+      {
+        "id": 6,
+        "question": "How do local farmers' markets help the environment?",
+        "options": [
+          "By using more plastic",
+          "By providing local food",
+          "By increasing pollution",
+          "By buying food from far away"
+        ],
+        "correct": 1,
+        "explanation": "Buying local food helps reduce pollution from transportation."
+      },
+      {
+        "id": 7,
+        "question": "What is one benefit of buying organic products?",
+        "options": [
+          "They taste better than others",
+          "They are always cheaper",
+          "They are better for the planet",
+          "They have more calories"
+        ],
+        "correct": 2,
+        "explanation": "Organic methods are better for the environment."
+      },
+      {
+        "id": 8,
+        "question": "What do families do at farmers' markets?",
+        "options": [
+          "Watch television",
+          "Spend time together",
+          "Go home quickly",
+          "Ignore each other"
+        ],
+        "correct": 1,
+        "explanation": "Families enjoy spending time together at farmers' markets."
+      },
+      {
+        "id": 9,
+        "question": "According to the passage, who should visit farmers' markets?",
+        "options": [
+          "Only farmers",
+          "Everyone",
+          "Only tourists",
+          "People who dislike fresh food"
+        ],
+        "correct": 1,
+        "explanation": "Everyone should visit their local farmers' market."
+      },
+      {
+        "id": 10,
+        "question": "What makes shopping at a farmers' market joyful?",
+        "options": [
+          "Only the price",
+          "The quality of food",
+          "Social events and activities",
+          "Waiting in long lines"
+        ],
+        "correct": 2,
+        "explanation": "The social events and activities make shopping a joyful experience."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "In Canada, community parks are very important. They give people a place to enjoy nature and exercise. Parks help to bring people together. Families can have picnics, and friends can play sports. Children love to play on swings and slides. \n\nCommunity parks also help to improve our health. When people walk or run in the park, they feel better. Fresh air and green spaces are good for our minds and bodies. Many studies show that spending time outdoors makes us happier. \n\nWe should take care of our parks. They need to be clean and safe for everyone. Local governments and citizens must work together. Everyone can help by picking up litter and reporting problems. \n\nIn my opinion, parks are vital for our communities. They provide fun, relaxation, and a chance to meet new people. We should support our parks to make them better places for everyone. If we do this, our cities will be happier and healthier.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A community parks",
+          "Local businesses",
+          "School activities",
+          "Weather changes"
+        ],
+        "correct": 0,
+        "explanation": "The passage mainly discusses community parks."
+      },
+      {
+        "id": 2,
+        "question": "What do parks provide for families?",
+        "options": [
+          "Playgrounds",
+          "Shopping malls",
+          "Schools",
+          "Hotels"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that parks provide a place for picnics and play."
+      },
+      {
+        "id": 3,
+        "question": "How do parks help our health?",
+        "options": [
+          "They sell food",
+          "They provide fresh air",
+          "They house animals",
+          "They are indoors"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that fresh air and green spaces are good for health."
+      },
+      {
+        "id": 4,
+        "question": "What do many studies show?",
+        "options": [
+          "Parks are not necessary",
+          "Outdoor time makes us happier",
+          "Running is dangerous",
+          "Cities should close parks"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that studies show outdoor time makes us happier."
+      },
+      {
+        "id": 5,
+        "question": "What should people do to help parks?",
+        "options": [
+          "Ignore problems",
+          "Pick up litter",
+          "Make noise",
+          "Avoid going to parks"
+        ],
+        "correct": 1,
+        "explanation": "The passage encourages picking up litter and reporting problems in parks."
+      },
+      {
+        "id": 6,
+        "question": "Who should take care of the parks?",
+        "options": [
+          "Only the government",
+          "Only citizens",
+          "Citizens and local governments",
+          "Only children"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that local governments and citizens must work together."
+      },
+      {
+        "id": 7,
+        "question": "What do people often do in parks?",
+        "options": [
+          "Stay inside",
+          "Go shopping",
+          "Exercise and socialize",
+          "Watch TV"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions exercising and socializing as activities in parks."
+      },
+      {
+        "id": 8,
+        "question": "What does the author think about parks?",
+        "options": [
+          "They are not important",
+          "They are vital for communities",
+          "They should be closed",
+          "They are just for children"
+        ],
+        "correct": 1,
+        "explanation": "The author believes parks are vital for communities."
+      },
+      {
+        "id": 9,
+        "question": "What can families do in parks?",
+        "options": [
+          "Go to work",
+          "Play sports",
+          "Shop for groceries",
+          "Watch movies"
+        ],
+        "correct": 1,
+        "explanation": "The passage states families can play sports in parks."
+      },
+      {
+        "id": 10,
+        "question": "Why are parks good for communities?",
+        "options": [
+          "They waste space",
+          "They provide entertainment and social opportunities",
+          "They are closed all day",
+          "They are only good for walking pets"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that parks offer fun and chances to meet new people."
+      }
+    ]
+  },
+  {
+    "title": "The Benefits of Public Parks",
+    "passage": "Public parks are important for our communities. They provide a place for people to relax and enjoy nature. Parks are great for families. Children can play on the swings and run around. Parents can sit on benches and watch their kids. \n\nParks also help to improve our health. Walking, jogging, and biking in parks keep us active. Fresh air and green spaces make us feel better. Many parks have gardens. These gardens attract butterflies and birds. Seeing nature helps us feel calm and happy. \n\nIn Canada, public parks are common. Cities like Toronto, Vancouver, and Calgary have many beautiful parks. They offer many activities. People can have picnics, play sports, or just enjoy the scenery. \n\nIt is important for cities to maintain and improve their parks. More parks can bring communities together. They can host events like concerts or festivals. Young and old can enjoy the parks together. \n\nIn conclusion, public parks should be a priority for cities. They are good for our physical and mental health. Everyone can benefit from the joy of spending time outdoors.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the author believe about public parks?",
+        "options": [
+          "A. They are not important.",
+          "B. They are important for communities.",
+          "C. They should be closed.",
+          "D. They are only for children."
+        ],
+        "correct": 1,
+        "explanation": "The author states that parks are important for communities."
+      },
+      {
+        "id": 2,
+        "question": "What can children do in public parks?",
+        "options": [
+          "A. Go to school.",
+          "B. Play on swings.",
+          "C. Buy food.",
+          "D. Watch TV."
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses children playing on swings in parks."
+      },
+      {
+        "id": 3,
+        "question": "How do parks help with health?",
+        "options": [
+          "A. By selling food.",
+          "B. By offering exercise opportunities.",
+          "C. By providing shade only.",
+          "D. By being quiet all the time."
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that parks help keep people active by walking, jogging, or biking."
+      },
+      {
+        "id": 4,
+        "question": "What attracts butterflies and birds to gardens in parks?",
+        "options": [
+          "A. Loud music.",
+          "B. Bright lights.",
+          "C. Flowers.",
+          "D. Trash."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that gardens in parks attract butterflies and birds."
+      },
+      {
+        "id": 5,
+        "question": "Which Canadian cities are mentioned in the passage?",
+        "options": [
+          "A. Toronto, Vancouver, Sydney.",
+          "B. Montreal, Quebec, Toronto.",
+          "C. Toronto, Vancouver, Calgary.",
+          "D. Calgary, Ottawa, Edmonton."
+        ],
+        "correct": 2,
+        "explanation": "The author mentions Toronto, Vancouver, and Calgary as cities with parks."
+      },
+      {
+        "id": 6,
+        "question": "What activities can people enjoy in parks?",
+        "options": [
+          "A. Playing sports and going to concerts.",
+          "B. Shopping for groceries.",
+          "C. Watching movies indoors.",
+          "D. Only walking."
+        ],
+        "correct": 0,
+        "explanation": "The passage lists activities such as sports and concerts that people can enjoy in parks."
+      },
+      {
+        "id": 7,
+        "question": "What should cities do about public parks?",
+        "options": [
+          "A. Ignore them.",
+          "B. Close them down.",
+          "C. Maintain and improve them.",
+          "D. Build more houses instead."
+        ],
+        "correct": 2,
+        "explanation": "The author believes it is important for cities to maintain and improve their parks."
+      },
+      {
+        "id": 8,
+        "question": "Why do parks bring communities together?",
+        "options": [
+          "A. They have no activities.",
+          "B. They host events.",
+          "C. They are always empty.",
+          "D. They are too far away."
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that parks can host events that bring people together."
+      },
+      {
+        "id": 9,
+        "question": "What can spending time outdoors in parks help us feel?",
+        "options": [
+          "A. Angry.",
+          "B. Tired.",
+          "C. Calm and happy.",
+          "D. Bored."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that seeing nature helps us feel calm and happy."
+      },
+      {
+        "id": 10,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. The importance of public parks.",
+          "B. How to build parks.",
+          "C. Different types of gardens.",
+          "D. Events in schools."
+        ],
+        "correct": 0,
+        "explanation": "The main topic of the passage is about the importance of public parks."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Local Farmers' Markets",
+    "passage": "In Canada, local farmers' markets are becoming more popular. These markets are places where farmers sell fresh fruits and vegetables. Shopping at these markets has many benefits. First, you can buy fresh and healthy food. Products are picked when they are ripe. Therefore, they taste better than store-bought items. Second, by shopping at farmers' markets, you support local farmers. This helps the community and the economy. Local farmers work hard to grow their crops. Buying from them keeps their businesses alive. Additionally, farmers' markets are a great way to meet people. You can talk to the farmers and learn about how they grow their food. In many cities, farmers' markets also have events. There may be music, games, and activities for children. These events make the market a fun place for families. Overall, farmers' markets help us eat better and build community connections.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A local farmers' market",
+          "The benefits of fast food",
+          "The history of farming",
+          "The importance of cooking at home"
+        ],
+        "correct": 0,
+        "explanation": "The passage discusses local farmers' markets and their benefits."
+      },
+      {
+        "id": 2,
+        "question": "What do farmers sell at local markets?",
+        "options": [
+          "Toys",
+          "Fresh fruits and vegetables",
+          "Clothes",
+          "Books"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that farmers sell fresh fruits and vegetables at markets."
+      },
+      {
+        "id": 3,
+        "question": "Why is food from farmers' markets better?",
+        "options": [
+          "It is cheaper",
+          "It is frozen",
+          "It is picked when ripe",
+          "It is packaged well"
+        ],
+        "correct": 2,
+        "explanation": "The passage explains that the food from farmers' markets is picked when ripe, making it taste better."
+      },
+      {
+        "id": 4,
+        "question": "How do farmers' markets help local farmers?",
+        "options": [
+          "They sell toys",
+          "They support local businesses",
+          "They offer health insurance",
+          "They provide free food"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that shopping at farmers' markets helps support local farmers and their businesses."
+      },
+      {
+        "id": 5,
+        "question": "What activity can families enjoy at farmers' markets?",
+        "options": [
+          "Reading books",
+          "Watching movies",
+          "Joining events and games",
+          "Riding bicycles"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that there are events, music, games, and activities for children at farmers' markets."
+      },
+      {
+        "id": 6,
+        "question": "What is one benefit of shopping at farmers' markets?",
+        "options": [
+          "You can buy frozen food",
+          "You meet local farmers",
+          "You get free samples always",
+          "You can return items easily"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that shopping at farmers' markets allows you to talk to farmers."
+      },
+      {
+        "id": 7,
+        "question": "How do farmers’ markets help the community?",
+        "options": [
+          "By selling imported goods",
+          "By selling products from other countries",
+          "By supporting local farmers",
+          "By providing grocery deliveries"
+        ],
+        "correct": 2,
+        "explanation": "The passage explains how supporting local farmers helps the community."
+      },
+      {
+        "id": 8,
+        "question": "What do people think about the taste of fresh food from farmers' markets?",
+        "options": [
+          "They think it is not good",
+          "They think it is better",
+          "They have no opinion",
+          "They think it is too sweet"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that fresh food from farmers' markets tastes better than store-bought items."
+      },
+      {
+        "id": 9,
+        "question": "In what kind of setting are farmers' markets found?",
+        "options": [
+          "Busy shopping malls",
+          "City parks and streets",
+          "Large supermarkets",
+          "Online stores"
+        ],
+        "correct": 1,
+        "explanation": "The passage describes farmers' markets being located in city spaces as public markets."
+      },
+      {
+        "id": 10,
+        "question": "What is the overall message of the passage?",
+        "options": [
+          "Farmers' markets are good for health and community.",
+          "Fast food is better than farmers' markets.",
+          "Local farmers do not need support.",
+          "Farmers' markets only sell vegetables."
+        ],
+        "correct": 0,
+        "explanation": "The passage emphasizes the importance of farmers' markets for health and community support."
+      }
+    ]
+  },
+  {
+    "title": "The Joy of Winter Festivals in Canada",
+    "passage": "Winter in Canada is a magical time. Many cities celebrate winter with festivals. These festivals bring people together. They offer fun activities like ice skating, snow sculptures, and hot chocolate. For example, the Winterlude festival in Ottawa is very popular. People enjoy the beautiful decorations and live music. Another famous festival is the Quebec Winter Carnival. It features a giant snowman and a night parade. Winter festivals are not just for fun; they also support local businesses. Stores and restaurants get more customers during these events. Winter festivals also encourage families to spend time together. They create happy memories and build community spirit. I believe that these festivals are important for everyone. They make cold winter days warm and exciting.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. Summer activities",
+          "B. Winter festivals in Canada",
+          "C. A famous restaurant",
+          "D. How to skate on ice"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses winter festivals in Canada."
+      },
+      {
+        "id": 2,
+        "question": "What does the Winterlude festival feature?",
+        "options": [
+          "A. Beach games",
+          "B. Snow sculptures",
+          "C. Summer concerts",
+          "D. Indoor swimming pools"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions snow sculptures at Winterlude."
+      },
+      {
+        "id": 3,
+        "question": "What is one benefit of winter festivals?",
+        "options": [
+          "A. They make people stay inside",
+          "B. They help local businesses",
+          "C. They are only for tourists",
+          "D. They last all year"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that winter festivals support local businesses."
+      },
+      {
+        "id": 4,
+        "question": "Which city has the Winterlude festival?",
+        "options": [
+          "A. Vancouver",
+          "B. Ottawa",
+          "C. Toronto",
+          "D. Calgary"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically mentions Winterlude is in Ottawa."
+      },
+      {
+        "id": 5,
+        "question": "What does the Quebec Winter Carnival feature?",
+        "options": [
+          "A. A giant snowman",
+          "B. Summer sports",
+          "C. Movie screenings",
+          "D. Indoor concerts"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions the giant snowman at the Quebec Winter Carnival."
+      },
+      {
+        "id": 6,
+        "question": "What do winter festivals encourage families to do?",
+        "options": [
+          "A. Separate",
+          "B. Spend time together",
+          "C. Travel far away",
+          "D. Stay indoors"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that winter festivals encourage family time."
+      },
+      {
+        "id": 7,
+        "question": "What type of food is mentioned in the passage?",
+        "options": [
+          "A. Pizza",
+          "B. Ice cream",
+          "C. Hot chocolate",
+          "D. Salad"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions enjoying hot chocolate at winter festivals."
+      },
+      {
+        "id": 8,
+        "question": "Why are winter festivals considered important?",
+        "options": [
+          "A. They happen only once a year",
+          "B. They are fun and build community spirit",
+          "C. They are only for wealthy people",
+          "D. They make winter cold and boring"
+        ],
+        "correct": 1,
+        "explanation": "The passage explains they are important for creating memories and community spirit."
+      },
+      {
+        "id": 9,
+        "question": "What is one activity people can enjoy at winter festivals?",
+        "options": [
+          "A. Swimming",
+          "B. Ice skating",
+          "C. Hiking",
+          "D. Surfing"
+        ],
+        "correct": 1,
+        "explanation": "The passage lists ice skating as an activity at winter festivals."
+      },
+      {
+        "id": 10,
+        "question": "What does the author believe about winter festivals?",
+        "options": [
+          "A. They are not enjoyable",
+          "B. They are only for kids",
+          "C. They are important for everyone",
+          "D. They should be canceled"
+        ],
+        "correct": 2,
+        "explanation": "The author expresses that winter festivals are important for everyone."
+      }
+    ]
+  },
+  {
+    "title": "The Benefits of Public Parks",
+    "passage": "Public parks are important places in our communities. They offer green space for everyone to enjoy. Families can have picnics and children can play in the playgrounds. Parks also provide a great place for exercise. People can walk, run, or ride bikes. This helps keep us healthy. In Canada, we have many beautiful parks. For example, Stanley Park in Vancouver is famous for its views and trails. Parks also help us connect with nature. They give us a break from city life. In addition, public parks can improve our mood. Spending time outside makes us feel happier. Overall, public parks are a treasure for all of us. We should support and take care of these important community spaces.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A public park in Vancouver",
+          "The importance of public parks",
+          "Healthy eating habits",
+          "Exercise routines"
+        ],
+        "correct": 1,
+        "explanation": "The main topic is the importance of public parks."
+      },
+      {
+        "id": 2,
+        "question": "What can families do in parks?",
+        "options": [
+          "Go to work",
+          "Have picnics",
+          "Watch movies",
+          "Play video games"
+        ],
+        "correct": 1,
+        "explanation": "Families can have picnics in parks."
+      },
+      {
+        "id": 3,
+        "question": "Why are parks good for health?",
+        "options": [
+          "They have lots of trees",
+          "They offer places to exercise",
+          "They are very quiet",
+          "They have nice buildings"
+        ],
+        "correct": 1,
+        "explanation": "Parks provide places for exercise, which is good for health."
+      },
+      {
+        "id": 4,
+        "question": "Which park is mentioned in the passage?",
+        "options": [
+          "High Park",
+          "Stanley Park",
+          "Glenmore Park",
+          "Assiniboine Park"
+        ],
+        "correct": 1,
+        "explanation": "Stanley Park in Vancouver is mentioned."
+      },
+      {
+        "id": 5,
+        "question": "What do parks help us connect with?",
+        "options": [
+          "Other people",
+          "Nature",
+          "Our jobs",
+          "Our homes"
+        ],
+        "correct": 1,
+        "explanation": "Parks help us connect with nature."
+      },
+      {
+        "id": 6,
+        "question": "How do public parks make us feel?",
+        "options": [
+          "Sadder",
+          "Happier",
+          "More tired",
+          "More hungry"
+        ],
+        "correct": 1,
+        "explanation": "Spending time in parks makes us feel happier."
+      },
+      {
+        "id": 7,
+        "question": "What is a benefit of spending time outside in parks?",
+        "options": [
+          "Better sleep",
+          "Improved mood",
+          "Less work",
+          "More shopping"
+        ],
+        "correct": 1,
+        "explanation": "Spending time outside improves our mood."
+      },
+      {
+        "id": 8,
+        "question": "What should we do for public parks?",
+        "options": [
+          "Ignore them",
+          "Support and care for them",
+          "Build more houses",
+          "Make them smaller"
+        ],
+        "correct": 1,
+        "explanation": "We should support and take care of public parks."
+      },
+      {
+        "id": 9,
+        "question": "Where can people walk or run?",
+        "options": [
+          "In their homes",
+          "In public parks",
+          "In shopping malls",
+          "At the airport"
+        ],
+        "correct": 1,
+        "explanation": "People can walk or run in public parks."
+      },
+      {
+        "id": 10,
+        "question": "What kind of space do public parks provide?",
+        "options": [
+          "Busy",
+          "Green",
+          "Dark",
+          "Noisy"
+        ],
+        "correct": 1,
+        "explanation": "Public parks provide green space for everyone."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Parks in Our Cities",
+    "passage": "Parks are very important for our cities. They provide a place for people to relax and enjoy nature. Many families go to parks to have picnics, play games, or walk their dogs. Parks also have playgrounds for children. These areas help kids stay active and make friends. In the summer, many people visit parks for events, like concerts or movie nights. \n\nMoreover, parks improve the environment. They clean the air and provide homes for birds and animals. Green spaces help fight climate change by cooling the city. \n\nOur cities need more parks. Some neighborhoods do not have any green spaces. This is not fair to the people living there. Everyone should have access to parks. Local governments should plan to build more parks in busy areas. \n\nIn conclusion, parks are essential for community life. They offer fun activities, support our health, and improve the environment. We should all support the idea of creating more parks in our cities.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. The importance of parks",
+          "B. The history of Canadian cities",
+          "C. How to plant trees",
+          "D. What to do in the winter"
+        ],
+        "correct": 0,
+        "explanation": "The passage discusses the importance of parks in cities."
+      },
+      {
+        "id": 2,
+        "question": "What do families do in parks?",
+        "options": [
+          "A. Go to work",
+          "B. Have picnics",
+          "C. Watch TV",
+          "D. Attend school"
+        ],
+        "correct": 1,
+        "explanation": "Families go to parks to have picnics."
+      },
+      {
+        "id": 3,
+        "question": "What activities are mentioned for children in parks?",
+        "options": [
+          "A. Playing video games",
+          "B. Reading books",
+          "C. Playing games",
+          "D. Going to school"
+        ],
+        "correct": 2,
+        "explanation": "Children can play games in parks."
+      },
+      {
+        "id": 4,
+        "question": "What do parks provide for animals?",
+        "options": [
+          "A. Food only",
+          "B. Homes",
+          "C. Toys",
+          "D. Jobs"
+        ],
+        "correct": 1,
+        "explanation": "Parks provide homes for birds and animals."
+      },
+      {
+        "id": 5,
+        "question": "Why should cities build more parks?",
+        "options": [
+          "A. To give people jobs",
+          "B. To make more money",
+          "C. To help with community life",
+          "D. To have more buildings"
+        ],
+        "correct": 2,
+        "explanation": "More parks improve community life."
+      },
+      {
+        "id": 6,
+        "question": "Where do people enjoy events like concerts?",
+        "options": [
+          "A. At home",
+          "B. In schools",
+          "C. In parks",
+          "D. In stores"
+        ],
+        "correct": 2,
+        "explanation": "People enjoy events in parks."
+      },
+      {
+        "id": 7,
+        "question": "What do parks help clean?",
+        "options": [
+          "A. The streets",
+          "B. The air",
+          "C. The water",
+          "D. The buildings"
+        ],
+        "correct": 1,
+        "explanation": "Parks help clean the air."
+      },
+      {
+        "id": 8,
+        "question": "What should local governments plan to do?",
+        "options": [
+          "A. Build more offices",
+          "B. Close schools",
+          "C. Build more parks",
+          "D. Cut down trees"
+        ],
+        "correct": 2,
+        "explanation": "Local governments should plan to build more parks."
+      },
+      {
+        "id": 9,
+        "question": "What do parks help fight against?",
+        "options": [
+          "A. Climate change",
+          "B. Animals",
+          "C. Traffic jams",
+          "D. Buildings"
+        ],
+        "correct": 0,
+        "explanation": "Parks help fight climate change."
+      },
+      {
+        "id": 10,
+        "question": "What do the author's opinions support?",
+        "options": [
+          "A. More private buildings",
+          "B. More parks",
+          "C. More roads",
+          "D. Less nature"
+        ],
+        "correct": 1,
+        "explanation": "The author supports creating more parks."
+      }
+    ]
+  },
+  {
+    "title": "The Benefits of Local Farmers' Markets",
+    "passage": "Local farmers' markets are a great way to buy fresh food. They support local farmers and the community. Shopping at these markets creates a good relationship between buyers and sellers. People can find fruits, vegetables, and other goods that are grown nearby. This means that the food is fresh and tastes better. Buying from local farms also helps the environment. It reduces the need for long-distance transportation. This means less pollution and a smaller carbon footprint.\n\nFarmers' markets are also fun places to visit. They often have special events and activities. Families can enjoy live music, cooking demonstrations, and tastings. It is a chance to learn about healthy eating and local food. Many markets accept different types of payment, like cash, credit, and debit cards. This makes it easy for everyone to shop there.\n\nIn conclusion, shopping at local farmers' markets is a positive experience. It supports local farmers, offers fresh food, and helps the environment. Everyone should visit their local farmers' market and see what they have to offer.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. Buying food from stores",
+          "B. Benefits of local farmers' markets",
+          "C. Cooking classes in Canada",
+          "D. Fresh food from supermarkets"
+        ],
+        "correct": 1,
+        "explanation": "The passage talks about the advantages of local farmers' markets."
+      },
+      {
+        "id": 2,
+        "question": "Why are local farmers' markets better for the environment?",
+        "options": [
+          "A. They have more parking spaces.",
+          "B. They sell frozen food.",
+          "C. They reduce transportation distance.",
+          "D. They are open every day."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that local markets reduce the need for long-distance transportation, which helps the environment."
+      },
+      {
+        "id": 3,
+        "question": "What can people find at local farmers' markets?",
+        "options": [
+          "A. Fast food",
+          "B. Toys",
+          "C. Fresh fruits and vegetables",
+          "D. Household items"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that local farmers' markets offer fresh food like fruits and vegetables."
+      },
+      {
+        "id": 4,
+        "question": "What type of events can families enjoy at farmers' markets?",
+        "options": [
+          "A. Sports events",
+          "B. Live music and cooking demonstrations",
+          "C. Fashion shows",
+          "D. Movie screenings"
+        ],
+        "correct": 1,
+        "explanation": "The passage describes events like live music and cooking demonstrations at farmers' markets."
+      },
+      {
+        "id": 5,
+        "question": "How do farmers' markets help the community?",
+        "options": [
+          "A. By closing local stores",
+          "B. By creating relationships between buyers and sellers",
+          "C. By offering low-quality food",
+          "D. By selling imported goods"
+        ],
+        "correct": 1,
+        "explanation": "The passage explains that farmers' markets support relationships between buyers and sellers in the community."
+      },
+      {
+        "id": 6,
+        "question": "What is mentioned as a benefit of fresh food?",
+        "options": [
+          "A. It is more expensive.",
+          "B. It tastes better.",
+          "C. It is easier to cook.",
+          "D. It lasts longer."
+        ],
+        "correct": 1,
+        "explanation": "The passage states that local food is fresh and tastes better than food from other places."
+      },
+      {
+        "id": 7,
+        "question": "What types of payment do farmers' markets accept?",
+        "options": [
+          "A. Only cash",
+          "B. Only credit cards",
+          "C. Cash, credit, and debit cards",
+          "D. No payment is needed"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that many markets accept cash, credit, and debit cards."
+      },
+      {
+        "id": 8,
+        "question": "What is one reason to visit a local farmers' market?",
+        "options": [
+          "A. To buy food shipped from far away",
+          "B. To support local farmers",
+          "C. To find cheap fast food",
+          "D. To avoid meeting people"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses supporting local farmers as a positive reason to visit farmers' markets."
+      },
+      {
+        "id": 9,
+        "question": "What kind of food do local farmers' markets sell?",
+        "options": [
+          "A. Canned foods",
+          "B. Fast food",
+          "C. Fresh foods",
+          "D. Imported snacks"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that local farmers' markets sell fresh fruits and vegetables."
+      },
+      {
+        "id": 10,
+        "question": "What is a good reason to shop at local farmers' markets?",
+        "options": [
+          "A. They are far away",
+          "B. They offer fresh and tasty food",
+          "C. They do not accept payments",
+          "D. They are always very crowded"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights that local farmers' markets provide fresh and tasty food as a good reason to shop there."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Local Farmers' Markets",
+    "passage": "In Canada, local farmers' markets are gaining popularity. These markets offer fresh fruits and vegetables, homemade goods, and local products. Many people prefer shopping at farmers' markets because they support local farmers and the community. Buying directly from farmers helps ensure that the food is fresh and in season. \n\nAdditionally, farmers' markets are a great way to meet new people. Shoppers can talk to farmers, learn about their products, and discover new recipes. Many people enjoy the festive atmosphere at these markets. The smell of fresh bread and flowers makes shopping more enjoyable.\n\nSome argue that farmers' markets are more expensive than grocery stores. However, others believe that the quality of the food and the support for local businesses make it worth the extra cost. In conclusion, local farmers' markets play an important role in our communities. They provide fresh food, support local economies, and create a sense of community. Everyone should visit their local farmers' market to experience these benefits.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are local farmers' markets known for?",
+        "options": [
+          "A) Fast food",
+          "B) Fresh fruits and vegetables",
+          "C) Imported goods",
+          "D) Discounted prices"
+        ],
+        "correct": 1,
+        "explanation": "The text states that farmers' markets offer fresh fruits and vegetables."
+      },
+      {
+        "id": 2,
+        "question": "Why do people prefer shopping at farmers' markets?",
+        "options": [
+          "A) They are always busy",
+          "B) They support local farmers",
+          "C) They sell only canned goods",
+          "D) There are no fresh products"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that shoppers prefer farmers' markets to support local farmers."
+      },
+      {
+        "id": 3,
+        "question": "How do farmers' markets benefit the community?",
+        "options": [
+          "A) They provide outdated products",
+          "B) They create a fun shopping atmosphere",
+          "C) They offer only expensive items",
+          "D) They close early every day"
+        ],
+        "correct": 1,
+        "explanation": "The passage describes the festive atmosphere at farmers' markets, which benefits the community."
+      },
+      {
+        "id": 4,
+        "question": "What do some people believe about the prices at farmers' markets?",
+        "options": [
+          "A) They are cheaper than grocery stores",
+          "B) They are always the same price",
+          "C) They are more expensive",
+          "D) They are free"
+        ],
+        "correct": 2,
+        "explanation": "The text states that some think farmers' markets are more expensive than grocery stores."
+      },
+      {
+        "id": 5,
+        "question": "What can shoppers do at farmers' markets?",
+        "options": [
+          "A) Try cooking lessons",
+          "B) Talk to farmers",
+          "C) Buy only drinks",
+          "D) Get delivery service"
+        ],
+        "correct": 1,
+        "explanation": "According to the passage, shoppers can talk to farmers at farmers' markets."
+      },
+      {
+        "id": 6,
+        "question": "What is one reason people might visit a farmers' market?",
+        "options": [
+          "A) To find only frozen items",
+          "B) To experience community",
+          "C) To shop in silence",
+          "D) To avoid fresh food"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the sense of community experienced at farmers' markets."
+      },
+      {
+        "id": 7,
+        "question": "What type of goods do farmers' markets offer?",
+        "options": [
+          "A) Only flowers",
+          "B) Only fruits",
+          "C) Homemade goods",
+          "D) Only drinks"
+        ],
+        "correct": 2,
+        "explanation": "The text states that farmers' markets offer homemade goods along with fruits and vegetables."
+      },
+      {
+        "id": 8,
+        "question": "What does the author think about local farmers' markets?",
+        "options": [
+          "A) They are not necessary",
+          "B) They are important for communities",
+          "C) They should be closed",
+          "D) They are only for tourists"
+        ],
+        "correct": 1,
+        "explanation": "The author concludes that farmers' markets play an important role in communities."
+      },
+      {
+        "id": 9,
+        "question": "What is a reason people might think farmers' markets are worth the extra cost?",
+        "options": [
+          "A) They have no quality food",
+          "B) They support local businesses",
+          "C) They are very far away",
+          "D) They sell only candy"
+        ],
+        "correct": 1,
+        "explanation": "The text states that many believe quality and local support make up for the higher costs."
+      },
+      {
+        "id": 10,
+        "question": "What should everyone do according to the passage?",
+        "options": [
+          "A) Visit their local farmers' market",
+          "B) Only shop at large stores",
+          "C) Avoid buying local food",
+          "D) Only eat out at restaurants"
+        ],
+        "correct": 0,
+        "explanation": "The passage encourages everyone to visit their local farmers' market."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Parks",
+    "passage": "In many Canadian cities, community parks play a vital role in our daily lives. Parks provide green spaces where people can relax, exercise, and gather with friends and family. They are places for children to play and for adults to enjoy nature. Parks also help improve air quality and support local wildlife. In the summer, people use parks for picnics, sports, and outdoor events. In winter, they may go ice skating or enjoy snowshoeing. \n\nCommunity parks also bring neighbors together. They create a sense of belonging and teamwork. Many people volunteer to help maintain their local parks, planting flowers and cleaning up litter. This work helps build a strong community spirit. \n\nInvesting in parks is important for our cities. They can increase property values and attract visitors. Well-maintained parks make neighborhoods more enjoyable and livable. Therefore, we should support our parks with funds and our time. A clean and beautiful park benefits everyone.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A community parks",
+          "Canadian traditions",
+          "Winter sports",
+          "Types of wildlife"
+        ],
+        "correct": 0,
+        "explanation": "The passage focuses on community parks and their benefits."
+      },
+      {
+        "id": 2,
+        "question": "What do parks help improve?",
+        "options": [
+          "Traffic safety",
+          "Air quality",
+          "School performance",
+          "Shopping options"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that parks improve air quality."
+      },
+      {
+        "id": 3,
+        "question": "What activities do people do in parks during summer?",
+        "options": [
+          "Going to school",
+          "Picnics and sports",
+          "Watching movies",
+          "Ice skating"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions picnics and sports as summer activities in parks."
+      },
+      {
+        "id": 4,
+        "question": "How do parks help the community?",
+        "options": [
+          "By attracting tourists",
+          "By providing shopping areas",
+          "By bringing neighbors together",
+          "By supporting wildlife only"
+        ],
+        "correct": 2,
+        "explanation": "The passage talks about parks creating a sense of belonging within the community."
+      },
+      {
+        "id": 5,
+        "question": "What do volunteers do in parks?",
+        "options": [
+          "Plant flowers and clean up",
+          "Sell food and drinks",
+          "Build new houses",
+          "Teach sports"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that volunteers help maintain parks by planting flowers and cleaning up."
+      },
+      {
+        "id": 6,
+        "question": "What can well-maintained parks increase?",
+        "options": [
+          "Property values",
+          "Car sales",
+          "School ratings",
+          "Construction jobs"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that investing in parks can increase property values."
+      },
+      {
+        "id": 7,
+        "question": "What can people do in parks during winter?",
+        "options": [
+          "Ice skating and snowshoeing",
+          "Gardening",
+          "Picnicking",
+          "Swimming"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions ice skating and snowshoeing as winter activities in parks."
+      },
+      {
+        "id": 8,
+        "question": "Why should we support our parks?",
+        "options": [
+          "They help with housing",
+          "They benefit everyone",
+          "They are only for some people",
+          "They attract pets"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that a clean and beautiful park benefits everyone."
+      },
+      {
+        "id": 9,
+        "question": "What helps build community spirit according to the passage?",
+        "options": [
+          "Shopping together",
+          "Volunteering in parks",
+          "Watching movies",
+          "Going to school"
+        ],
+        "correct": 1,
+        "explanation": "The passage explains that volunteering to maintain parks helps build community spirit."
+      },
+      {
+        "id": 10,
+        "question": "What season do people likely use parks for picnics?",
+        "options": [
+          "Spring",
+          "Summer",
+          "Fall",
+          "Winter"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that picnics are a summer activity in parks."
+      }
+    ]
+  },
+  {
+    "title": "The Human Cost of Urban Development",
+    "passage": "In the context of ongoing urban expansion, policymakers in cities like Toronto and Vancouver face mounting pressure to reconcile economic growth with social equity. Notwithstanding the benefits that extensive infrastructure projects promise—such as job creation and increased property values—the displacement of lower-income communities is an often-overlooked consequence that exacerbates existing inequalities. Critics argue that such developments frequently prioritize profit over people, leaving marginalized groups vulnerable to gentrification. \n\nThe juxtaposition of economic imperatives against the moral obligation to protect all citizens invites a complex debate. Proponents of aggressive development assert that fostering a robust economy is essential for societal progress, yet this perspective frequently fails to consider the long-term impacts on cultural diversity and community cohesion. Moreover, the rapid increase in housing costs following upscale developments disproportionately affects those on the lower end of the income spectrum, forcing them to leave neighborhoods that have historically been their homes.\n\nFurthermore, the ethical dimensions of urban policy should not be overlooked. The decision-making process must encompass a wider array of stakeholders, including community members who stand to lose the most. Environmental sustainability, cultural preservation, and social justice should not merely serve as ancillary concerns; rather, they ought to be central to the dialogue surrounding urban development. Ultimately, visionary urban planning can only be achieved by harmonizing economic incentives with an unwavering commitment to equitable treatment of all city dwellers, ensuring that growth does not come at an unacceptable human cost.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the author's primary argument regarding urban development?",
+        "options": [
+          "A. Economic growth should always take precedence over community concerns.",
+          "B. Social equity must be a key consideration in urban development planning.",
+          "C. Infrastructure projects primarily benefit lower-income communities.",
+          "D. Gentrification is a necessary component of urban revitalization."
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the importance of social equity in the context of urban development."
+      },
+      {
+        "id": 2,
+        "question": "How does the author characterize the relationship between economic growth and social consequences?",
+        "options": [
+          "A. They are often aligned and do not conflict.",
+          "B. Economic growth inevitably leads to social equity.",
+          "C. Growth can exacerbate social inequalities if not carefully managed.",
+          "D. The two are usually mutually exclusive."
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that unchecked economic growth can have negative social consequences."
+      },
+      {
+        "id": 3,
+        "question": "According to the passage, what is a significant oversight of urban development proponents?",
+        "options": [
+          "A. They undervalue job creation.",
+          "B. They ignore the needs of marginalized communities.",
+          "C. They overestimate the cultural benefits of development.",
+          "D. They focus too much on environmental sustainability."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that advocates of urban development often neglect the impact on marginalized communities."
+      },
+      {
+        "id": 4,
+        "question": "What does the term 'gentrification' imply in the context of the passage?",
+        "options": [
+          "A. A positive economic transformation of neighborhoods.",
+          "B. The process of improving housing that displaces current residents.",
+          "C. A method to preserve cultural diversity.",
+          "D. A strategy to attract high-income families."
+        ],
+        "correct": 1,
+        "explanation": "The author discusses how gentrification displaces lower-income residents during urban development."
+      },
+      {
+        "id": 5,
+        "question": "What role do community members play in urban planning, according to the author?",
+        "options": [
+          "A. They should not interfere with economic initiatives.",
+          "B. They are crucial stakeholders in the decision-making process.",
+          "C. Their input is often irrelevant to planning discussions.",
+          "D. They primarily advocate for environmental concerns."
+        ],
+        "correct": 1,
+        "explanation": "The passage states that community members should be included in discussions about urban development."
+      },
+      {
+        "id": 6,
+        "question": "How does the author suggest urban development can achieve a balance between economic and social needs?",
+        "options": [
+          "A. By prioritizing job creation over housing affordability.",
+          "B. Through inclusive planning that considers diverse voices.",
+          "C. By establishing stricter housing regulations.",
+          "D. By encouraging private investment without restrictions."
+        ],
+        "correct": 1,
+        "explanation": "The author believes inclusive planning is essential for balancing economic growth and social equity."
+      },
+      {
+        "id": 7,
+        "question": "What implicit criticism is made about current urban development policies?",
+        "options": [
+          "A. They are too slow to implement.",
+          "B. They lack a focus on environmental sustainability.",
+          "C. They often favor economic gains at the expense of vulnerable populations.",
+          "D. They fail to attract investment into the neighborhoods."
+        ],
+        "correct": 2,
+        "explanation": "The author critiques policies for prioritizing economic benefits over the welfare of vulnerable groups."
+      },
+      {
+        "id": 8,
+        "question": "What does the author mean by the phrase 'unacceptable human cost'?",
+        "options": [
+          "A. The influx of wealthy residents into communities.",
+          "B. The financial burden imposed on city budgets.",
+          "C. The social displacement of marginalized individuals or groups.",
+          "D. The environmental degradation resulting from urban projects."
+        ],
+        "correct": 2,
+        "explanation": "The phrase refers to the social costs incurred when lower-income communities are displaced."
+      },
+      {
+        "id": 9,
+        "question": "Which of the following best encapsulates the author's tone throughout the passage?",
+        "options": [
+          "A. Optimistic about urban growth.",
+          "B. Critical of neglect in urban policies.",
+          "C. Indifferent to the plight of displaced communities.",
+          "D. Supportive of rapid development initiatives."
+        ],
+        "correct": 1,
+        "explanation": "The author adopts a critical tone regarding the neglect of social issues in urban development."
+      },
+      {
+        "id": 10,
+        "question": "Why does the author emphasize the need for cultural preservation in urban planning?",
+        "options": [
+          "A. To maintain property values.",
+          "B. To ensure mixed-income housing models.",
+          "C. To protect historical landmarks from destruction.",
+          "D. To foster a sense of community and identity among residents."
+        ],
+        "correct": 3,
+        "explanation": "The author advocates for cultural preservation to sustain community identity amidst urban change."
+      }
+    ]
+  },
+  {
+    "title": "The Urban Housing Dilemma: A Challenge for Canadian Cities",
+    "passage": "As Canadian cities grapple with an escalating housing crisis, the juxtaposition of demand and supply reveals a complex interplay of economic and social factors that cannot be overlooked. Notwithstanding recent policy efforts aimed at increasing affordable housing stock, the effects of rampant urbanization in metropolitan areas such as Toronto and Vancouver continue to exacerbate existing disparities. Critics argue that the current housing policies disproportionately favor developers at the expense of low-income individuals and families, whose plight remains a poignant reminder of the inequities embedded in our society.\n\nFurthermore, the rising costs associated with housing are often viewed as a deterrent to workforce retention in emerging sectors. Approximately 30% of the average household income in these urban centers is now allocated to housing costs, leaving minimal resources for other essential needs. Consequently, the reluctance to address these pressing challenges not only hinders social mobility but also poses a significant threat to the long-term vibrancy of our urban economies.\n\nTo cultivate a more equitable housing landscape, a comprehensive approach that prioritizes inclusivity and sustainability is essential. This necessitates not only the implementation of innovative zoning laws but also the engagement of various stakeholders, including local governments, non-profit organizations, and community members. Only through a concerted effort to reimagine urban living can we hope to mitigate the adverse effects of the housing crisis, ensuring that our cities remain places of opportunity for all residents, regardless of their economic standing.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the passage?",
+        "options": [
+          "A) The success of recent housing policies",
+          "B) The causes of housing disparities",
+          "C) The impact of urbanization on housing",
+          "D) The benefits of affordable housing programs"
+        ],
+        "correct": 2,
+        "explanation": "The passage primarily discusses the interplay of urbanization and housing disparities."
+      },
+      {
+        "id": 2,
+        "question": "According to the author, what group is adversely affected by current housing policies?",
+        "options": [
+          "A) Real estate developers",
+          "B) Middle-class homeowners",
+          "C) Low-income families",
+          "D) Urban planners"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes that low-income individuals and families are significantly affected by these policies."
+      },
+      {
+        "id": 3,
+        "question": "What economic evidence does the author provide to highlight the housing crisis?",
+        "options": [
+          "A) Rising property values",
+          "B) Increased rental rates",
+          "C) A high percentage of income spent on housing",
+          "D) A growing number of housing projects"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that 30% of the average household income goes to housing, illustrating economic strain."
+      },
+      {
+        "id": 4,
+        "question": "What tone does the author use to discuss the housing crisis?",
+        "options": [
+          "A) Optimistic",
+          "B) Indifferent",
+          "C) Urgent",
+          "D) Dismissive"
+        ],
+        "correct": 2,
+        "explanation": "The author conveys a sense of urgency regarding the need to address the housing crisis."
+      },
+      {
+        "id": 5,
+        "question": "Which of the following does the author suggest as a necessary component for improving housing accessibility?",
+        "options": [
+          "A) Reduced zoning laws",
+          "B) Increased developer incentives",
+          "C) Engaging various stakeholders",
+          "D) Higher taxes on urban properties"
+        ],
+        "correct": 2,
+        "explanation": "The author highlights the engagement of various stakeholders as vital for addressing housing issues."
+      },
+      {
+        "id": 6,
+        "question": "How does the author characterize the relationship between urbanization and economic mobility?",
+        "options": [
+          "A) Urbanization has no effect on economic mobility",
+          "B) Urbanization enhances economic mobility",
+          "C) Urbanization decreases economic mobility",
+          "D) Urbanization improves housing affordability"
+        ],
+        "correct": 2,
+        "explanation": "The author indicates that urbanization limits economic mobility, particularly for low-income individuals."
+      },
+      {
+        "id": 7,
+        "question": "What implication does the author make about the future of urban centers if current trends continue?",
+        "options": [
+          "A) They will become more affordable",
+          "B) They will generate more employment opportunities",
+          "C) They will likely face greater socioeconomic disparities",
+          "D) They will attract more investors"
+        ],
+        "correct": 2,
+        "explanation": "The author suggests that without intervention, socioeconomic disparities will worsen in urban centers."
+      },
+      {
+        "id": 8,
+        "question": "What role does the author attribute to local governments in housing challenges?",
+        "options": [
+          "A) To primarily support developers",
+          "B) To maintain the status quo",
+          "C) To actively engage in innovative solutions",
+          "D) To avoid involvement in housing matters"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the need for local governments to engage actively in innovative solutions."
+      },
+      {
+        "id": 9,
+        "question": "What is implied about the current engagement of community members in housing policy?",
+        "options": [
+          "A) It is robust and effective",
+          "B) It is lacking and needs improvement",
+          "C) It is irrelevant to the process",
+          "D) It is the primary driver of change"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that community engagement is necessary, implying it may currently be insufficient."
+      },
+      {
+        "id": 10,
+        "question": "What could be considered a key takeaway from the passage regarding urban housing?",
+        "options": [
+          "A) Housing issues are largely resolved",
+          "B) Collaborative efforts are crucial for solutions",
+          "C) Developers should have more influence",
+          "D) Urbanization will naturally lead to better housing"
+        ],
+        "correct": 1,
+        "explanation": "A key takeaway is the importance of collaboration among various parties to address the housing crisis."
+      }
+    ]
+  },
+  {
+    "title": "Navigating the Challenges of Urban Development in Toronto",
+    "passage": "In recent years, Toronto has emerged as a vibrant hub of economic activity and cultural diversity; however, the rapid pace of urban development has exacerbated long-standing issues related to housing affordability, public transportation, and environmental sustainability. Despite the provincial government's initiatives aimed at increasing housing supply, many residents find themselves ensnared in a dilemma between the desire for urban growth and the need for equitable living conditions.\n\nCritics of current development policies argue that, notwithstanding the political will to enhance infrastructure, the prioritization of commercial interests often leads to a juxtaposition of luxury condos alongside aging public facilities. This dichotomy not only reflects the socioeconomic divides within the city but also raises questions about the long-term repercussions on community cohesion and identity. \n\nMoreover, as new residents flock to the city, drawn by its economic opportunities, the strain on existing public services becomes increasingly apparent. The lack of adequate public transit options, in conjunction with the burgeoning population, necessitates a reevaluation of how urban planning can better serve all demographics, rather than catering primarily to those with financial means.\n\nIn conclusion, while Toronto's growth is a testament to its dynamic economy, the city must confront the implications of unchecked development. Implementing comprehensive policies that prioritize inclusive growth and sustainability will not only enhance the quality of life for current residents but will also set a standard for future urban initiatives across Canada.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern raised regarding Toronto's urban development?",
+        "options": [
+          "A) Increased commercial interests",
+          "B) Housing affordability",
+          "C) Public transportation improvements",
+          "D) Economic growth"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes housing affordability as a major concern exacerbated by rapid urban development."
+      },
+      {
+        "id": 2,
+        "question": "What does the author imply about the relationship between new developments and public services?",
+        "options": [
+          "A) New developments enhance public services.",
+          "B) Public services are adequate for the growing population.",
+          "C) Public services are strained by new developments.",
+          "D) Development is unrelated to public services."
+        ],
+        "correct": 2,
+        "explanation": "The author notes the strain on public services as a result of an increasing population due to new developments."
+      },
+      {
+        "id": 3,
+        "question": "How does the author view the government's initiatives aimed at increasing housing supply?",
+        "options": [
+          "A) They are entirely effective.",
+          "B) They are misguided.",
+          "C) They are insufficient to address the issues.",
+          "D) They lead to environmental sustainability."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests that despite government initiatives, they are inadequate to resolve the issue of housing affordability."
+      },
+      {
+        "id": 4,
+        "question": "What concern does the juxtaposition of luxury condos and aging public facilities raise?",
+        "options": [
+          "A) It suggests economic stability.",
+          "B) It highlights urban planning successes.",
+          "C) It reflects social inequality.",
+          "D) It shows the effectiveness of urban policy."
+        ],
+        "correct": 2,
+        "explanation": "The author uses this juxtaposition to illustrate socioeconomic divides in the city."
+      },
+      {
+        "id": 5,
+        "question": "Which statement best reflects the author's tone about urban growth in Toronto?",
+        "options": [
+          "A) Optimistically supportive.",
+          "B) Indifferently dismissive.",
+          "C) Critically concerned.",
+          "D) Unquestionably approving."
+        ],
+        "correct": 2,
+        "explanation": "The author expresses concern over the implications of urban growth, highlighting potential negative outcomes."
+      },
+      {
+        "id": 6,
+        "question": "What is implied about the socio-economic divides in Toronto?",
+        "options": [
+          "A) They are diminishing quickly.",
+          "B) They are being acknowledged by policymakers.",
+          "C) They are a result of strategic urban planning.",
+          "D) They are exacerbated by current development trends."
+        ],
+        "correct": 3,
+        "explanation": "The passage states that current development policies exacerbate these divides, indicating a negative trend."
+      },
+      {
+        "id": 7,
+        "question": "According to the passage, what must Toronto do for future urban initiatives?",
+        "options": [
+          "A) Focus exclusively on economic growth.",
+          "B) Implement policies that prioritize inclusive growth.",
+          "C) Ignore current public needs.",
+          "D) Continue with current development practices."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for policies that focus on inclusivity and sustainability in urban growth."
+      },
+      {
+        "id": 8,
+        "question": "What does the author suggest is necessary for addressing the challenges posed by urban development?",
+        "options": [
+          "A) Enhanced community engagement.",
+          "B) More commercial developments.",
+          "C) Greater investment in public services.",
+          "D) A re-evaluation of current urban policies."
+        ],
+        "correct": 3,
+        "explanation": "The text calls for a reevaluation of how urban planning can better serve the diverse needs of the population."
+      },
+      {
+        "id": 9,
+        "question": "How does the author describe the impact of new residents on the city?",
+        "options": [
+          "A) They improve public transit efficiency.",
+          "B) They create a burden on existing resources.",
+          "C) They contribute to a balanced community.",
+          "D) They have no significant effect on public services."
+        ],
+        "correct": 1,
+        "explanation": "The author notes that newcomers strain existing public services, indicating a negative impact."
+      },
+      {
+        "id": 10,
+        "question": "What is the underlying message regarding urban growth in the passage?",
+        "options": [
+          "A) Urban growth is inherently positive.",
+          "B) Sustainability must accompany growth.",
+          "C) Commuters should bear the costs of urbanization.",
+          "D) All urban initiatives are financially motivated."
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the need for sustainable practices alongside urban growth."
+      }
+    ]
+  },
+  {
+    "title": "The Necessity of Urban Green Spaces in Canadian Cities",
+    "passage": "Within the complexity of urban planning, the paradox of prioritizing economic growth while mitigating environmental degradation has become increasingly pronounced in Canadian cities. Notwithstanding the evident benefits of urban development, the neglect of green spaces exacerbates both environmental challenges and social inequities. A growing body of research underscores that access to parks and natural environments is not merely a luxury, but a fundamental component of urban health and wellbeing. In juxtaposition to the prevalent concrete landscapes, these verdant areas offer critical services: they filter air pollutants, reduce urban heat, and promote mental health among citizens.\n\nDespite this, municipal policies often favor short-term economic gains over the long-term preservation of these essential ecosystems. Critics argue that such an approach undermines community cohesion, disproportionately affecting marginalized neighborhoods who typically have less access to green spaces. For instance, Toronto’s recent urban planning initiatives have drawn criticism for their inadequate emphasis on integrating parks within new developments, resulting in significant disparities in public health outcomes.\n\nTherefore, it is imperative for policymakers to reassess the value of green spaces in urban design. By fostering environments that prioritize ecological balance and social equity, cities could not only enhance quality of life but also engage citizens in sustainable practices. Ultimately, the challenge lies in harmonizing development with environmental stewardship; a balance that demands thoughtful legislation and community involvement at every level.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern raised by the author regarding urban planning in Canada?",
+        "options": [
+          "A. Economic growth is prioritized over environmental health.",
+          "B. Green spaces are abundant in most Canadian cities.",
+          "C. Urban development does not impact social equity.",
+          "D. Municipal policies favor ecological balance."
+        ],
+        "correct": 0,
+        "explanation": "The author emphasizes the conflict between economic growth and environmental health, indicating that economic considerations are often prioritized."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, how do green spaces benefit urban populations?",
+        "options": [
+          "A. They reduce government spending on public health.",
+          "B. They contribute to the aesthetic appeal of cities.",
+          "C. They provide essential ecological services.",
+          "D. They primarily benefit affluent neighborhoods."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that green spaces offer critical services such as filtering air pollutants and promoting mental health."
+      },
+      {
+        "id": 3,
+        "question": "What criticism do critics have regarding Toronto's urban planning?",
+        "options": [
+          "A. It focuses too heavily on creating new parks.",
+          "B. It disproportionately affects affluent communities.",
+          "C. It lacks sufficient integration of parks in new developments.",
+          "D. It provides adequate access to green spaces for all."
+        ],
+        "correct": 2,
+        "explanation": "Critics argue that Toronto's initiatives do not sufficiently integrate parks into new developments, leading to inequities."
+      },
+      {
+        "id": 4,
+        "question": "What tone does the author adopt when discussing municipal policies?",
+        "options": [
+          "A. Optimistic",
+          "B. Indifferent",
+          "C. Critical",
+          "D. Supportive"
+        ],
+        "correct": 2,
+        "explanation": "The author critiques municipal policies for their inadequate focus on green spaces, indicating a critical tone."
+      },
+      {
+        "id": 5,
+        "question": "What is implied about the relationship between green spaces and community cohesion?",
+        "options": [
+          "A. Green spaces have little effect on community cohesion.",
+          "B. Parks are primarily for recreational purposes only.",
+          "C. Access to parks can enhance community connections.",
+          "D. Urban development does not influence social interactions."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests that adequate access to parks can improve community cohesion, particularly for marginalized neighborhoods."
+      },
+      {
+        "id": 6,
+        "question": "Which statement best reflects the author's viewpoint on urban development?",
+        "options": [
+          "A. It should proceed without regard for environmental impacts.",
+          "B. It should harmonize with ecological and social considerations.",
+          "C. It is the sole driver of urban prosperity.",
+          "D. It is unimportant compared to other public policy issues."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for a balance between development and environmental stewardship, indicating this should be a key consideration."
+      },
+      {
+        "id": 7,
+        "question": "What is a potential consequence of neglecting green spaces, according to the text?",
+        "options": [
+          "A. Decreased property values in affluent areas.",
+          "B. Improved mental health in urban populations.",
+          "C. Worsening public health disparities.",
+          "D. Increased economic investment in city infrastructure."
+        ],
+        "correct": 2,
+        "explanation": "The text implies that neglecting green spaces could lead to increased disparities in public health outcomes."
+      },
+      {
+        "id": 8,
+        "question": "What does the author suggest as a necessary step for policymakers?",
+        "options": [
+          "A. To eliminate green spaces for new development.",
+          "B. To prioritize economic gains over community needs.",
+          "C. To value green spaces in urban design.",
+          "D. To minimize community involvement in legislation."
+        ],
+        "correct": 2,
+        "explanation": "The author calls for policymakers to reassess the value of green spaces, advocating for their integration in urban design."
+      },
+      {
+        "id": 9,
+        "question": "What is one reason the author believes green spaces are crucial for urban environments?",
+        "options": [
+          "A. They primarily beautify the landscape.",
+          "B. They facilitate higher property values.",
+          "C. They promote ecological balance and ensure social equity.",
+          "D. They require minimal maintenance and funding."
+        ],
+        "correct": 2,
+        "explanation": "The author argues that green spaces are essential for ecological balance and addressing social inequities."
+      },
+      {
+        "id": 10,
+        "question": "In what way does the author suggest community involvement is important?",
+        "options": [
+          "A. It should be limited to wealthy neighborhoods.",
+          "B. It is unnecessary for sustainable practices.",
+          "C. It helps in engaging citizens in sustainable practices.",
+          "D. It should focus solely on economic development."
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights the need for community involvement as part of fostering sustainable practices in cities."
+      }
+    ]
+  },
+  {
+    "title": "The Complexity of Urban Development: A Policy Dilemma",
+    "passage": "As Canadian cities continue to burgeon, the debate surrounding urban development has escalated, significantly impacting both environmental sustainability and social equity. Notwithstanding the necessity for housing expansions, many urban planners advocate for policies that prioritize green spaces and public transport over the relentless spread of suburban sprawl. Critics of this perspective argue that such policies exacerbate housing shortages, especially in metropolitan areas like Toronto and Vancouver, where demand far outstrips supply. This juxtaposition of ideals reveals a fundamental tension in urban policy: how to accommodate growth while preserving the quality of life for all residents.\n\nFurthermore, the complexities are compounded by the financial implications of urban development. The costs associated with infrastructure improvements necessitate a careful balancing act between taxpayer interests and long-term urban sustainability goals. Consequently, policymakers are frequently caught in a quagmire, where decisions must consider immediate economic benefits against potential future repercussions on urban livability. Initiatives, such as the incorporation of mixed-use developments, are proposed as potential solutions; however, successful implementation often hinges on adequate provincial and municipal cooperation.\n\nIn light of the ongoing discourse, it is imperative that stakeholders engage in comprehensive consultations. The voices of marginalized communities must be amplified to ensure their needs are met, rather than sidelined amid the complexities of urban planning. Thus, the task lies not only in constructing housing but also in fostering inclusive environments capable of sustaining diverse populations, which is pivotal for the future of Canadian urban life.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary issue highlighted in the passage regarding urban development in Canadian cities?",
+        "options": [
+          "A. The necessity for more housing",
+          "B. Environmental sustainability",
+          "C. Social equity",
+          "D. Balancing growth and quality of life"
+        ],
+        "correct": 3,
+        "explanation": "The passage emphasizes the need to balance urban growth with maintaining quality of life."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what do critics believe will be the result of prioritizing green spaces in urban planning?",
+        "options": [
+          "A. Increased housing availability",
+          "B. Exacerbation of housing shortages",
+          "C. Enhanced public transport systems",
+          "D. Improved quality of life for all residents"
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that prioritizing green spaces may worsen housing shortages."
+      },
+      {
+        "id": 3,
+        "question": "What complexity does the text associate with financial implications of urban development?",
+        "options": [
+          "A. Urban livability vs. economic growth",
+          "B. Mixed-use developments vs. housing shortages",
+          "C. Infrastructure costs vs. taxpayer interests",
+          "D. Provincial cooperation vs. municipal autonomy"
+        ],
+        "correct": 2,
+        "explanation": "The passage discusses the challenge of balancing infrastructure costs with taxpayer interests."
+      },
+      {
+        "id": 4,
+        "question": "What does the author suggest is crucial for addressing the challenges of urban planning?",
+        "options": [
+          "A. Financial contributions from urban planners",
+          "B. Expert studies on urban sprawl",
+          "C. Comprehensive stakeholder consultations",
+          "D. Provincial laws on housing development"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the importance of engaging stakeholders through comprehensive consultations."
+      },
+      {
+        "id": 5,
+        "question": "How does the author characterize the voice of marginalized communities in urban planning discussions?",
+        "options": [
+          "A. As irrelevant amidst development complexities",
+          "B. As often sidelined in policy decisions",
+          "C. As overly loud and disruptive",
+          "D. As being prioritized by policymakers"
+        ],
+        "correct": 1,
+        "explanation": "The author indicates that marginalized voices are often sidelined in the complexities of urban policy."
+      },
+      {
+        "id": 6,
+        "question": "What does the author imply about the future of Canadian urban life?",
+        "options": [
+          "A. It will prioritize suburban development",
+          "B. It requires diverse environments",
+          "C. It will ignore public transport needs",
+          "D. It will lead to more housing shortages"
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that fostering diverse and inclusive environments is key for the future."
+      },
+      {
+        "id": 7,
+        "question": "What fundamental tension is revealed in the passage regarding urban policy?",
+        "options": [
+          "A. Public opinion versus expert opinion",
+          "B. Growth versus preservation",
+          "C. Environmental goals versus economic goals",
+          "D. Suburban preferences versus urban needs"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights the tension between accommodating growth and preserving quality of life."
+      },
+      {
+        "id": 8,
+        "question": "In the context of the passage, what is a potential outcome of inadequate urban planning policies?",
+        "options": [
+          "A. Sustainable urban development",
+          "B. Reduced infrastructure costs",
+          "C. Increased suburban sprawl",
+          "D. Better housing conditions"
+        ],
+        "correct": 2,
+        "explanation": "Inadequate planning could lead to more suburban sprawl and compounding issues."
+      },
+      {
+        "id": 9,
+        "question": "What stance does the author take on mixed-use developments?",
+        "options": [
+          "A. They are ineffective in urban planning",
+          "B. Their success relies on provincial cooperation",
+          "C. They exacerbate housing shortages",
+          "D. They are universally supported by all stakeholders"
+        ],
+        "correct": 1,
+        "explanation": "The author notes that successful implementation of mixed-use developments relies on cooperation."
+      },
+      {
+        "id": 10,
+        "question": "What tone does the author use when discussing the complexities of urban development?",
+        "options": [
+          "A. Optimistic and hopeful",
+          "B. Critical and negative",
+          "C. Cautious and analytical",
+          "D. Dismissive and apathetic"
+        ],
+        "correct": 2,
+        "explanation": "The author takes a cautious and analytical tone while addressing the complexities involved."
+      }
+    ]
+  },
+  {
+    "title": "The Consequences of Infrastructure Investment in Canadian Urban Areas",
+    "passage": "In recent years, the debate surrounding infrastructure investment in Canadian urban centers has intensified, notably in light of deteriorating public transit systems and skyrocketing housing costs. Proponents argue that substantial investment in infrastructure is essential for sustainable urban development, which not only facilitates the movement of citizens but also enhances economic productivity. Notwithstanding these advantages, critics contend that such funding is often misallocated, disproportionately favoring affluent neighborhoods while neglecting underserved communities. This juxtaposition raises crucial questions about equity and inclusivity in urban planning.\n\nMoreover, the implications of failing to address these disparities can exacerbate social inequalities, leading to increased tension and dissatisfaction among citizens. Reports from various Canadian cities suggest that investments directed towards public transport and housing in lower-income areas would yield significant long-term benefits, fostering a sense of community resilience. However, the challenge remains that these initiatives often require a delicate balance between immediate economic returns and ethical considerations of social responsibility.\n\nConsequently, urban policymakers must engage in comprehensive dialogues that include all stakeholders, particularly those from marginalized backgrounds. By prioritizing transparency and collaboration during the planning stages, city officials can ensure that their decisions reflect the diverse needs of their populations, thereby avoiding the pitfalls of past infrastructural missteps. Ultimately, constructing a more equitable urban landscape hinges not merely on financial input but rather on an unwavering commitment to inclusive decision-making processes that champion the voices of all citizens.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary argument made by proponents of infrastructure investment?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "Proponents argue that infrastructure investment is essential for sustainable urban development and economic productivity."
+      },
+      {
+        "id": 2,
+        "question": "What issue is raised by critics regarding infrastructure funding?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that funding is often misallocated, favoring affluent neighborhoods while neglecting underserved communities."
+      },
+      {
+        "id": 3,
+        "question": "According to the passage, what can exacerbate social inequalities in urban areas?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "Failing to address disparities in infrastructure investment can exacerbate social inequalities."
+      },
+      {
+        "id": 4,
+        "question": "What benefits are suggested for investing in public transport and housing in lower-income areas?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "Investing in these areas would yield long-term benefits and foster community resilience."
+      },
+      {
+        "id": 5,
+        "question": "What is necessary for urban policymakers to achieve equitable infrastructure planning?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "Engagement in comprehensive dialogues involving all stakeholders, particularly marginalized communities, is necessary."
+      },
+      {
+        "id": 6,
+        "question": "What underlying theme is emphasized regarding funding decisions in urban planning?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The theme emphasizes the ethical considerations of social responsibility in funding decisions."
+      },
+      {
+        "id": 7,
+        "question": "How does the author view the relationship between financial input and urban improvement?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "The author views that urban improvement is not solely dependent on financial input but requires commitment to inclusivity."
+      },
+      {
+        "id": 8,
+        "question": "What does the author imply about past infrastructural investments?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "The author implies that past investments may have neglected the diverse needs of the population."
+      },
+      {
+        "id": 9,
+        "question": "What tone does the author adopt in discussing urban infrastructure investment?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "The author adopts a critical but constructive tone, emphasizing the need for equity."
+      },
+      {
+        "id": 10,
+        "question": "How does the author suggest the planning stages should be conducted?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The planning stages should be conducted with transparency and collaboration to reflect diverse needs."
+      }
+    ]
+  },
+  {
+    "title": "The Dilemma of Urban Development: Balancing Growth and Sustainability",
+    "passage": "As Canadian cities continue to grow, the intersection of urban development and environmental sustainability has become a topic of heated debate. Urban centers like Vancouver and Toronto are witnessing unprecedented population increases, necessitating the construction of housing and infrastructure. Notwithstanding the need for expansion, this increase in development has the potential to exacerbate existing environmental challenges, such as air pollution and loss of green spaces. Critics of unchecked urbanization argue that the prioritization of economic growth often overshadows the pressing need for sustainable practices. \n\nJuxtaposed against this viewpoint is the argument presented by developers, who claim that urban sprawl is an inevitable outcome of modern society’s demands. They contend that innovative construction techniques and green technology can mitigate the environmental impacts of new projects. Proponents assert that with adequate planning and investment in sustainable resources, the dual goals of economic prosperity and environmental preservation can coexist. \n\nHowever, this optimistic perspective fails to account for the complexities involved in executing such plans. The hesitance to incorporate stricter regulations often stems from political considerations and public resistance. Government officials frequently find themselves at a crossroads, balancing the interests of constituents clamoring for housing against the mounting evidence of climate-related consequences. Hence, it is imperative that policymakers adopt a more integrative approach, wherein community involvement and environmental stewardship play central roles in guiding urban development. By fostering a dialogue that prioritizes sustainability, cities can navigate the fine line between growth and ecological integrity, ensuring that future generations inherit not only homes but also a livable environment.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What concern is prioritized by critics of urban development in the passage?",
+        "options": [
+          "A. Economic growth",
+          "B. Housing availability",
+          "C. Environmental sustainability",
+          "D. Political interests"
+        ],
+        "correct": 2,
+        "explanation": "Critics argue that economic growth often overshadows the need for sustainable practices."
+      },
+      {
+        "id": 2,
+        "question": "What does the author imply about the developers' perspective on urban sprawl?",
+        "options": [
+          "A. It is entirely justified.",
+          "B. It overlooks environmental issues.",
+          "C. It embraces sustainable practices.",
+          "D. It is rarely supported by technology."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that developers' arguments do not fully address environmental challenges."
+      },
+      {
+        "id": 3,
+        "question": "What underlying issue complicates the integration of sustainability in urban planning?",
+        "options": [
+          "A. Public demands for luxury housing",
+          "B. Political pressures and regulations",
+          "C. Developers' reluctance to adapt",
+          "D. Lack of community involvement"
+        ],
+        "correct": 1,
+        "explanation": "Political pressures and public resistance to stricter regulations complicate sustainable urban planning."
+      },
+      {
+        "id": 4,
+        "question": "How does the author view the potential for economic prosperity and environmental preservation?",
+        "options": [
+          "A. They are inherently incompatible.",
+          "B. They can coexist with adequate planning.",
+          "C. Economic growth is ultimately more important.",
+          "D. Environmental preservation is a temporary concern."
+        ],
+        "correct": 1,
+        "explanation": "The author believes that both can coexist with proper planning and investment in resources."
+      },
+      {
+        "id": 5,
+        "question": "What tone does the author adopt regarding urban development policies?",
+        "options": [
+          "A. Optimistic",
+          "B. Cynical",
+          "C. Indifferent",
+          "D. Critical"
+        ],
+        "correct": 0,
+        "explanation": "The author maintains an optimistic tone, suggesting that dialogue can lead to better urban development."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following statements most accurately captures the author's perspective on community involvement?",
+        "options": [
+          "A. It is irrelevant to urban planning.",
+          "B. It is secondary to economic concerns.",
+          "C. It should play a central role.",
+          "D. It often leads to conflict."
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes that community involvement should guide urban development."
+      },
+      {
+        "id": 7,
+        "question": "What does the author suggest is essential for future urban development in Canadian cities?",
+        "options": [
+          "A. Increased housing density",
+          "B. Advanced construction techniques",
+          "C. Stricter regulations",
+          "D. A dialogue prioritizing sustainability"
+        ],
+        "correct": 3,
+        "explanation": "The author advocates for a dialogue that emphasizes sustainability in urban development."
+      },
+      {
+        "id": 8,
+        "question": "What potential outcome does the author fear if sustainability is not prioritized?",
+        "options": [
+          "A. Increased housing costs",
+          "B. Decline in economic growth",
+          "C. Environmental degradation",
+          "D. Public dissatisfaction with policies"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that failing to prioritize sustainability may lead to environmental consequences."
+      },
+      {
+        "id": 9,
+        "question": "What reason does the author give for governmental hesitance in implementing strict regulations?",
+        "options": [
+          "A. Developers' lobbying efforts",
+          "B. A lack of public interest",
+          "C. Potential backlash from constituents",
+          "D. Economic implications of regulations"
+        ],
+        "correct": 2,
+        "explanation": "The author mentions public resistance as a reason for governmental hesitance."
+      },
+      {
+        "id": 10,
+        "question": "In the author's view, what role do innovative construction techniques play in urban development?",
+        "options": [
+          "A. They are the sole solution to sustainability.",
+          "B. They cannot compensate for poor planning.",
+          "C. They help align growth with environmental goals.",
+          "D. They are often dismissed by critics."
+        ],
+        "correct": 2,
+        "explanation": "The author believes that innovative techniques can help achieve both growth and environmental goals."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Green Spaces on Mental Health Policy",
+    "passage": "In recent years, there has been a growing body of evidence suggesting that urban green spaces play a pivotal role in enhancing mental health, notwithstanding the fact that such spaces are often perceived merely as aesthetic additions to urban planning. Studies conducted in cities like Vancouver and Toronto have juxtaposed the mental well-being of individuals with access to green parks against those residing in concrete-dense areas. The findings unequivocally point to a correlation between proximity to nature and reduced levels of anxiety and depression. However, despite these troubling statistics, policymakers continue to prioritize economic development over environmental considerations, thereby exacerbating mental health issues in urban populations.\n\nCities must reconsider their planning frameworks to integrate more green spaces, particularly in marginalized neighborhoods that suffer disproportionately from both poor mental health and limited access to outdoor environments. This would not only promote a healthier population but could also stimulate economic growth by attracting residents and tourists alike. Critics of this approach often argue that the costs associated with creating and maintaining urban parks outweigh the perceived benefits. Nonetheless, such a view neglects the long-term savings associated with improved mental health outcomes, which ultimately reduce healthcare costs and enhance residents’ quality of life. By adopting a more holistic perspective on urban planning, Canadian cities have the opportunity to foster environments that are not only livable but also conducive to the mental well-being of their inhabitants, thereby ensuring that future policy decisions reflect an understanding of the interconnectivity of nature, health, and urban living.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary issue is highlighted regarding current urban planning policies?",
+        "options": [
+          "A. The need to increase tourism through historical sites.",
+          "B. The insufficient integration of green spaces in urban environments.",
+          "C. The excessive costs of maintaining green spaces.",
+          "D. The aesthetic value of parks compared to commercial developments."
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the lack of integration of green spaces in urban planning."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following best describes the author's tone towards policymakers?",
+        "options": [
+          "A. Supportive of their economic priorities.",
+          "B. Critical of their neglect of mental health.",
+          "C. Indifferent to their decision-making processes.",
+          "D. Appreciative of their efforts to enhance public spaces."
+        ],
+        "correct": 1,
+        "explanation": "The author criticizes policymakers for prioritizing economic development over mental health."
+      },
+      {
+        "id": 3,
+        "question": "What conclusion can be drawn about the relationship between green spaces and economic growth?",
+        "options": [
+          "A. They are mutually exclusive in urban planning.",
+          "B. Green spaces can enhance economic growth by improving health.",
+          "C. Economic growth is solely dependent on commercial developments.",
+          "D. Only historical sites attract residents and tourists."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that improved mental health from green spaces can attract residents and tourists, fostering economic growth."
+      },
+      {
+        "id": 4,
+        "question": "What argument do critics of green space initiatives make?",
+        "options": [
+          "A. Mental health outcomes have little impact on healthcare costs.",
+          "B. The initial costs of parks are too high compared to other developments.",
+          "C. Urban parks are less important than residential areas.",
+          "D. Green spaces are unnecessary for the city's aesthetic."
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that the costs of creating and maintaining urban parks outweigh their benefits."
+      },
+      {
+        "id": 5,
+        "question": "What underlying belief about urban green spaces does the author challenge?",
+        "options": [
+          "A. They are primarily for aesthetic reasons.",
+          "B. They lead to increased crime rates in neighborhoods.",
+          "C. Urban parks are less beneficial than commercial spaces.",
+          "D. Access to green spaces is evenly distributed across socio-economic groups."
+        ],
+        "correct": 0,
+        "explanation": "The author challenges the perception that green spaces are merely aesthetic, highlighting their mental health benefits."
+      },
+      {
+        "id": 6,
+        "question": "How does the author suggest policymakers should change their approach?",
+        "options": [
+          "A. By focusing solely on economic development.",
+          "B. By recognizing the long-term benefits of green spaces.",
+          "C. By reducing funding for healthcare initiatives.",
+          "D. By prioritizing commercial developments over residential needs."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for a holistic approach that recognizes the benefits of green spaces for mental health and future policy."
+      },
+      {
+        "id": 7,
+        "question": "What is implied about the distribution of green spaces in Canadian cities?",
+        "options": [
+          "A. They are uniformly distributed in affluent neighborhoods.",
+          "B. Access varies significantly, impacting marginalized communities.",
+          "C. All neighborhoods have equal access to parks.",
+          "D. They are mainly located in rural areas."
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that marginalized neighborhoods suffer from limited access to green spaces."
+      },
+      {
+        "id": 8,
+        "question": "What factor exacerbates mental health issues according to the author?",
+        "options": [
+          "A. Excessive construction of green spaces.",
+          "B. Urban density without adequate green areas.",
+          "C. Overfunding of healthcare systems.",
+          "D. Prioritizing mental health over economic growth."
+        ],
+        "correct": 1,
+        "explanation": "The author mentions that prioritizing economic development over environmental considerations exacerbates mental health issues."
+      },
+      {
+        "id": 9,
+        "question": "What kind of evidence does the author reference to support their argument?",
+        "options": [
+          "A. Statistical data on urban populations' income levels.",
+          "B. Research linking green spaces to improved mental health.",
+          "C. Surveys reflecting public opinion on parks.",
+          "D. Anecdotal evidence from city residents."
+        ],
+        "correct": 1,
+        "explanation": "The author refers to studies that link access to green parks with better mental health outcomes."
+      },
+      {
+        "id": 10,
+        "question": "According to the passage, what is a potential outcome of increased green spaces in marginalized neighborhoods?",
+        "options": [
+          "A. A decrease in public health spending.",
+          "B. Enhanced economic activity and quality of life.",
+          "C. A rise in crime rates due to more public areas.",
+          "D. A decline in tourism to more suburban areas."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that increased green spaces could enhance quality of life and stimulate economic growth."
+      }
+    ]
+  },
+  {
+    "title": "Urban Development and the Dilemma of Affordable Housing",
+    "passage": "In recent years, Canada’s urban centers have witnessed a dramatic increase in housing prices, which has exacerbated the affordability crisis across the nation. Policy-makers, while aware of the escalating costs, often find themselves in a quandary, having to juxtapose the demands of urban development with the urgent need for affordable housing solutions. Notwithstanding various initiatives launched by municipalities, such as inclusionary zoning and government subsidies, these measures have often fallen short of their objectives. One significant challenge is the passive acceptance among some stakeholders of the real estate market's prevailing conditions, which tend to prioritize profit margins over community needs.\n\nMoreover, critics argue that the prevailing economic growth narrative does not account for the marginalization of low-income residents. This viewpoint suggests that city planners must not only address the supply-side constraints of housing but also actively engage in demand-side interventions, fostering an inclusive economic ecosystem. To this end, the recent urban policy frameworks advocate for mixed-income developments, which aim to integrate socio-economic diversity within neighborhoods.\n\nUltimately, while some may perceive the opposition to exorbitant housing developments as a hindrance to progress, it is crucial to recognize that such resistance stems from a legitimate concern for equitable urban living. Therefore, an earnest dialogue that bridges the interests of developers, city officials, and community advocates is essential. Only through collaborative efforts can Canada navigate the complex landscape of urbanization while ensuring that affordable housing is not merely an afterthought but a fundamental pillar of urban policy.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the author's primary concern regarding urban development?",
+        "options": [
+          "A) The need for more urban development",
+          "B) The affordability crisis in housing",
+          "C) The impact on real estate prices",
+          "D) The effectiveness of government subsidies"
+        ],
+        "correct": 1,
+        "explanation": "The passage centers on the affordability crisis in housing as a significant concern."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following does the author suggest has a detrimental effect on housing affordability?",
+        "options": [
+          "A) Urban development policies",
+          "B) Passive acceptance of market conditions",
+          "C) Community advocacy",
+          "D) Inclusionary zoning"
+        ],
+        "correct": 1,
+        "explanation": "The author highlights passive acceptance among stakeholders as a challenge in addressing housing affordability."
+      },
+      {
+        "id": 3,
+        "question": "What does the term 'juxtapose' imply in the context of urban development?",
+        "options": [
+          "A) Comparing urban development with rural growth",
+          "B) Balancing development against community needs",
+          "C) Prioritizing individual profit over collective good",
+          "D) Highlighting the flaws in government policies"
+        ],
+        "correct": 1,
+        "explanation": "Juxtaposition here refers to balancing demands of development with community needs."
+      },
+      {
+        "id": 4,
+        "question": "According to the author, how should urban policy frameworks evolve?",
+        "options": [
+          "A) They should focus solely on increasing housing supply.",
+          "B) They must include mixed-income developments.",
+          "C) They should prioritize low-income housing exclusively.",
+          "D) They need to eliminate private property interests."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for mixed-income developments as a necessary evolution in urban policy frameworks."
+      },
+      {
+        "id": 5,
+        "question": "What does the author imply about public dialogue regarding urban housing issues?",
+        "options": [
+          "A) It is unnecessary and counterproductive.",
+          "B) It should include only developers and city officials.",
+          "C) It is crucial for equitable urban living.",
+          "D) It has already resolved the housing crisis."
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the necessity of earnest dialogue among stakeholders for equitable urban living."
+      },
+      {
+        "id": 6,
+        "question": "What is the significance of 'demand-side interventions' as mentioned in the passage?",
+        "options": [
+          "A) They are unrelated to urban development.",
+          "B) They address the constraints on housing supply.",
+          "C) They are necessary for creating an inclusive economy.",
+          "D) They should be implemented after supply-side policies."
+        ],
+        "correct": 2,
+        "explanation": "Demand-side interventions are mentioned as essential for fostering an inclusive economic ecosystem."
+      },
+      {
+        "id": 7,
+        "question": "Which viewpoint does the author challenge regarding opposition to housing developments?",
+        "options": [
+          "A) Opposition is based on misunderstandings.",
+          "B) Opposition reflects a concern for equity.",
+          "C) Opposition is driven by developers' interests.",
+          "D) Opposition is detrimental to urban progress."
+        ],
+        "correct": 1,
+        "explanation": "The author argues that the opposition arises from legitimate concerns about equitable urban living."
+      },
+      {
+        "id": 8,
+        "question": "What role do 'community advocates' play according to the author?",
+        "options": [
+          "A) They complicate urban development efforts.",
+          "B) They are essential in bridging stakeholder interests.",
+          "C) They focus only on low-income residents' needs.",
+          "D) They primarily support government policies."
+        ],
+        "correct": 1,
+        "explanation": "Community advocates are portrayed as crucial in bridging the interests of various stakeholders."
+      },
+      {
+        "id": 9,
+        "question": "How does the author characterize the current state of inclusionary zoning?",
+        "options": [
+          "A) As a successful measure in affordable housing",
+          "B) As an initiative that has met its objectives",
+          "C) As a policy that falls short of addressing needs",
+          "D) As a widely accepted practice among developers"
+        ],
+        "correct": 2,
+        "explanation": "The author indicates that inclusionary zoning has often failed to meet its objectives."
+      },
+      {
+        "id": 10,
+        "question": "What underlying message can be inferred about the economic growth narrative?",
+        "options": [
+          "A) It comprehensively addresses all urban challenges.",
+          "B) It neglects the realities faced by marginalized groups.",
+          "C) It supports the development of affordable housing.",
+          "D) It maintains a balanced view of development impacts."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that the economic growth narrative overlooks the marginalization of low-income residents."
+      }
+    ]
+  },
+  {
+    "title": "Addressing the Housing Crisis: A Call for Sustainable Solutions",
+    "passage": "In recent years, Canada's urban centers have grappled with a burgeoning housing crisis that has not only exacerbated socioeconomic disparities but also strained municipal resources. Despite government efforts to increase housing availability through various initiatives, the fundamental issue remains unaddressed: the juxtaposition of rapidly rising property prices against stagnant wage growth. While policymakers frequently tout affordable housing development as a panacea, such proposals often fail to consider the long-term implications of urban sprawl, which can undermine sustainability efforts.\n\nMoreover, the often-cited strategy of incentivizing private developers to build affordable units tends to prioritize profit margins over the genuine needs of local populations. Notwithstanding the potential benefits of public-private partnerships, these collaborations can inadvertently lead to gentrification, displacing long-standing community members in favor of more affluent newcomers. Therefore, a multifaceted approach that incorporates community voices in decision-making processes is essential.\n\nFurthermore, empirical evidence suggests that the successful models observed in cities like Vancouver, which have integrated comprehensive zoning reforms, could serve as a blueprint for other metropolitan areas. Such reforms not only increase the availability of diverse housing options but also promote inclusivity—a core Canadian value. In contrast, cities that cling to outdated policies risk perpetuating the cycle of housing insecurity, ultimately threatening the social fabric of their communities. Thus, it is imperative for Canadians to advocate for a paradigm shift in how housing policies are designed and implemented, ultimately ensuring that all residents can attain stability and security in their living situations.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the author argue is the primary issue driving the housing crisis in Canada?",
+        "options": [
+          "A) Rising property prices",
+          "B) Government policies",
+          "C) Urban sprawl",
+          "D) Wage growth stagnation"
+        ],
+        "correct": 0,
+        "explanation": "The author states that the juxtaposition of rising property prices and stagnant wage growth is the primary issue."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what is a potential downside of public-private partnerships in housing development?",
+        "options": [
+          "A) They generate inadequate housing options",
+          "B) They may prioritize profits over community needs",
+          "C) They often require significant public funding",
+          "D) They can lead to increased urban sprawl"
+        ],
+        "correct": 1,
+        "explanation": "The author notes that public-private partnerships can prioritize profit margins over genuine community needs."
+      },
+      {
+        "id": 3,
+        "question": "What does the author imply about the effectiveness of affordable housing development initiatives?",
+        "options": [
+          "A) They are universally successful",
+          "B) Most are inadequately planned",
+          "C) They often neglect community engagement",
+          "D) They will completely solve the housing crisis"
+        ],
+        "correct": 2,
+        "explanation": "The author suggests that affordable housing initiatives frequently overlook the importance of community input."
+      },
+      {
+        "id": 4,
+        "question": "Which city is mentioned as a successful model for comprehensive zoning reforms?",
+        "options": [
+          "A) Calgary",
+          "B) Toronto",
+          "C) Montreal",
+          "D) Vancouver"
+        ],
+        "correct": 3,
+        "explanation": "Vancouver is cited as a city that has effectively implemented comprehensive zoning reforms."
+      },
+      {
+        "id": 5,
+        "question": "What value does the author attribute to inclusivity in housing policy?",
+        "options": [
+          "A) It is secondary to financial success",
+          "B) It is essential for social stability",
+          "C) It only benefits affluent neighborhoods",
+          "D) It complicates urban planning efforts"
+        ],
+        "correct": 1,
+        "explanation": "The author stresses that inclusivity is a core Canadian value that enhances social stability."
+      },
+      {
+        "id": 6,
+        "question": "The author implies that cities that resist modern policies will likely face what consequence?",
+        "options": [
+          "A) Increased community engagement",
+          "B) A growing housing surplus",
+          "C) Further social fragmentation",
+          "D) Improved economic stability"
+        ],
+        "correct": 2,
+        "explanation": "The author warns that clinging to outdated policies risks perpetuating housing insecurity, which threatens social cohesion."
+      },
+      {
+        "id": 7,
+        "question": "What tone does the author adopt in discussing the necessity of a paradigm shift in housing policy?",
+        "options": [
+          "A) Urgent and alarmist",
+          "B) Hopeful and optimistic",
+          "C) Skeptical and critical",
+          "D) Neutral and detached"
+        ],
+        "correct": 0,
+        "explanation": "The author's tone conveys urgency in advocating for a significant change in housing policy."
+      },
+      {
+        "id": 8,
+        "question": "In what way does the author suggest community voices be incorporated into housing policy?",
+        "options": [
+          "A) They should be consulted after policies are implemented",
+          "B) They must be central to the decision-making process",
+          "C) They should only be considered in urban sprawl discussions",
+          "D) They should be limited to local governments"
+        ],
+        "correct": 1,
+        "explanation": "The author argues that community input must play a central role in decision-making processes."
+      },
+      {
+        "id": 9,
+        "question": "What might be a consequence of urban sprawl as mentioned in the passage?",
+        "options": [
+          "A) Increased housing affordability",
+          "B) Increased environmental sustainability",
+          "C) Erosion of local community ties",
+          "D) Improved urban infrastructure"
+        ],
+        "correct": 2,
+        "explanation": "The author implies that urban sprawl can undermine social connections and community stability."
+      },
+      {
+        "id": 10,
+        "question": "What overarching theme connects the issues discussed in the passage?",
+        "options": [
+          "A) Profit-driven development versus community needs",
+          "B) The importance of immigration in urban areas",
+          "C) The necessity of environmental regulations",
+          "D) The role of technology in housing solutions"
+        ],
+        "correct": 0,
+        "explanation": "The passage centers around the conflict between profit-driven approaches and the genuine needs of the community."
+      }
+    ]
+  },
+  {
+    "title": "The Case for Urban Green Spaces: A Policy Debate in Canadian Cities",
+    "passage": "In recent years, the significance of urban green spaces has been increasingly acknowledged in Canadian cities, amidst mounting pressure from urban developers and city planners who often prioritize economic growth over environmental sustainability. Notwithstanding the myriad benefits that parks and natural landscapes provide, many municipalities appear ambivalent, caught in a dilemma where short-term development goals exacerbate long-term ecological consequences. This juxtaposition of immediate economic incentives against the intrinsic value of nature reflects a pervasive struggle in urban policy-making. \n\nStudies have demonstrated that access to green spaces not only fosters community well-being but also contributes to the overall economic vitality of an area. For instance, cities that invest in parks see a marked increase in property values and a boost in local businesses, which directly benefits municipal revenues. Yet, despite this evidence, decision-makers often disregard the long-term advantages, favoring projects that promise quicker returns. \n\nMoreover, the health implications cannot be overstated; green spaces are vital for mental health, particularly in urban settings where the population density can lead to increased stress levels. The recent surge in urban mental health issues illustrates the urgency for a reevaluation of space allocation within cities. A holistic approach to city planning, one that integrates environmental considerations with economic policies, is imperative. \n\nIn light of these complexities, it becomes clear that urban green spaces should not merely be an afterthought; they must be a fundamental component of urban planning. The challenge lies in convincing policymakers to embrace this vision—shifting from a reactive stance to a proactive strategy that prioritizes ecological integrity alongside economic growth. Only through such concerted efforts can communities thrive both immediately and sustainably into the future.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "According to the passage, what is one major benefit of urban green spaces?",
+        "options": [
+          "A) They decrease property values.",
+          "B) They negatively impact local businesses.",
+          "C) They enhance community well-being.",
+          "D) They offer no measurable economic benefits."
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that urban green spaces foster community well-being."
+      },
+      {
+        "id": 2,
+        "question": "What dilemma do city planners face as described in the passage?",
+        "options": [
+          "A) Balancing park maintenance and city budgets.",
+          "B) Prioritizing short-term economic growth versus environmental sustainability.",
+          "C) Implementing stricter zoning laws for developers.",
+          "D) Engaging the public in planning initiatives."
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the dilemma of prioritizing short-term growth against sustainability."
+      },
+      {
+        "id": 3,
+        "question": "What tone does the author convey towards urban developers and city planners?",
+        "options": [
+          "A) Supportive and understanding.",
+          "B) Critical and concerned.",
+          "C) Indifferent and detached.",
+          "D) Optimistic and encouraging."
+        ],
+        "correct": 1,
+        "explanation": "The author's tone reveals concern regarding the decisions of planners and developers."
+      },
+      {
+        "id": 4,
+        "question": "What does the author imply about the relationship between green spaces and local businesses?",
+        "options": [
+          "A) They have no impact on each other.",
+          "B) Green spaces harm local businesses.",
+          "C) Investments in parks lead to economic vitality.",
+          "D) Businesses often oppose urban green spaces."
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that cities investing in parks see benefits for local businesses."
+      },
+      {
+        "id": 5,
+        "question": "What strategy does the author suggest should be prioritized in urban planning?",
+        "options": [
+          "A) Quick development projects without regards to environment.",
+          "B) A holistic approach integrating environmental and economic policies.",
+          "C) Expanding commercial properties to attract businesses.",
+          "D) Reducing funding for community parks."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for a holistic approach that prioritizes ecological integrity."
+      },
+      {
+        "id": 6,
+        "question": "In what way does the author connect environmental considerations with public health?",
+        "options": [
+          "A) Green spaces can lead to increased urban pollution.",
+          "B) Urban green spaces help mitigate mental health issues.",
+          "C) Developers often neglect public health in their projects.",
+          "D) Lack of parks exacerbates economic disparities."
+        ],
+        "correct": 1,
+        "explanation": "The author states that green spaces are vital for mental health, especially in dense urban areas."
+      },
+      {
+        "id": 7,
+        "question": "What is implied about the attitude of decision-makers towards the long-term benefits of green spaces?",
+        "options": [
+          "A) They are fully aware and supportive.",
+          "B) They are often skeptical and dismissive.",
+          "C) They prioritize environmental health over economy.",
+          "D) They seek public input before making decisions."
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that decision-makers often disregard long-term benefits for short-term gains."
+      },
+      {
+        "id": 8,
+        "question": "How does the author characterize the current approach to urban policy-making?",
+        "options": [
+          "A) Innovative and forward-thinking.",
+          "B) Reactive rather than proactive.",
+          "C) Collaborative and inclusive.",
+          "D) Focused solely on technological advancements."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests a reactive stance in current urban policy-making."
+      },
+      {
+        "id": 9,
+        "question": "What is the author's ultimate goal in discussing the need for urban green spaces?",
+        "options": [
+          "A) To convince readers to oppose urban development.",
+          "B) To highlight the benefits of environmental degradation.",
+          "C) To advocate for sustainable city planning.",
+          "D) To support increased funding for developers."
+        ],
+        "correct": 2,
+        "explanation": "The author aims to advocate for the integration of sustainable practices in city planning."
+      },
+      {
+        "id": 10,
+        "question": "According to the passage, what action is necessary for communities to thrive in the future?",
+        "options": [
+          "A) Expansion of urban areas without restrictions.",
+          "B) A paradigm shift in urban planning strategies.",
+          "C) Increased public resistance against green space development.",
+          "D) A decrease in environmental regulations for developers."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that a paradigm shift in planning strategies is essential for future community health."
+      }
+    ]
+  },
+  {
+    "title": "The Duality of Urban Development: A Call for Sustainable Growth",
+    "passage": "In the rapidly evolving landscape of Canadian cities, the debate surrounding urban development intensifies with each new project proposed. Advocates for modernization argue that expanding infrastructure and residential areas is essential to accommodate an ever-growing population, particularly in metropolitan hubs such as Toronto and Vancouver. Notwithstanding the potential benefits, however, there exists a pressing concern regarding the impact that such development can have on the environment, social equity, and cultural heritage. Critics assert that unchecked urban sprawl exacerbates inequality, affecting marginalized communities who often bear the brunt of gentrification. Consequently, it is imperative to juxtapose the aspirations for economic growth with the necessity of sustainable practices that prioritize ecological preservation and community well-being.\n\nA profound examination of urban policies reveals a tension between progress and sustainability. While developers frequently tout the economic benefits of new projects, one must consider the long-term implications of prioritizing profit over environmental stewardship. For instance, the construction of high-rise condominiums in downtown cores may result in short-term economic gains; however, these projects often neglect the integration of green spaces and adequate public services that are vital for fostering inclusive communities. Furthermore, the displacement of existing residents raises ethical questions regarding the right to the city. As Canadians, it is our responsibility to advocate for policies that do not merely seek to optimize land use, but rather embrace a holistic approach to urban planning—one that integrates the voices of all stakeholders, especially those historically marginalized. The future of urban Canada hinges on our ability to balance growth with responsibility, ensuring that cities evolve in a way that is equitable, inclusive, and sustainable.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What concern do critics raise about the effects of urban sprawl?",
+        "options": [
+          "A. It encourages environmental sustainability.",
+          "B. It causes increased economic opportunities.",
+          "C. It exacerbates social inequality.",
+          "D. It enhances cultural heritage."
+        ],
+        "correct": 2,
+        "explanation": "Critics specifically note that urban sprawl worsens inequality for marginalized communities."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, how do urban development projects often prioritize profit?",
+        "options": [
+          "A. By integrating existing residents into planning.",
+          "B. By providing adequate public services.",
+          "C. By sidelining environmental considerations.",
+          "D. By promoting community well-being."
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that profit is often prioritized at the expense of environmental stewardship."
+      },
+      {
+        "id": 3,
+        "question": "What duality is the author attempting to highlight concerning urban development?",
+        "options": [
+          "A. The balance between economic growth and corporate interests.",
+          "B. The tension between sustainable practices and urban expansion.",
+          "C. The significance of historical preservation versus new construction.",
+          "D. The dichotomy of public versus private land ownership."
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the conflict between sustainable practices and urban growth."
+      },
+      {
+        "id": 4,
+        "question": "What does the author imply is necessary for future urban planning in Canada?",
+        "options": [
+          "A. A focus solely on economic gain.",
+          "B. The exclusion of marginalized voices.",
+          "C. A comprehensive approach involving multiple stakeholders.",
+          "D. A disregard for community input."
+        ],
+        "correct": 2,
+        "explanation": "The author argues for an approach that includes all stakeholders, especially marginalized voices in planning."
+      },
+      {
+        "id": 5,
+        "question": "What tone does the author adopt towards urban development projects?",
+        "options": [
+          "A. Optimistic and celebratory.",
+          "B. Critical and cautionary.",
+          "C. Indifferent and detached.",
+          "D. Supportive and encouraging."
+        ],
+        "correct": 1,
+        "explanation": "The author expresses a cautionary tone regarding the impacts of urban development."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following is NOT mentioned as a consequence of poor urban planning?",
+        "options": [
+          "A. Environmental degradation.",
+          "B. Economic instability.",
+          "C. Displacement of residents.",
+          "D. Increased gentrification."
+        ],
+        "correct": 1,
+        "explanation": "Economic instability is not specifically mentioned as a consequence in the passage."
+      },
+      {
+        "id": 7,
+        "question": "In what way does the author suggest urban planners should operate?",
+        "options": [
+          "A. By focusing only on immediate economic returns.",
+          "B. By adopting a holistic perspective that integrates community needs.",
+          "C. By disregarding environmental impacts.",
+          "D. By prioritizing residential development over green spaces."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for a holistic approach that considers community needs."
+      },
+      {
+        "id": 8,
+        "question": "The phrase 'the future of urban Canada hinges on our ability' implies what about the responsibility of Canadians?",
+        "options": [
+          "A. Canadians must rely on developers for guidance.",
+          "B. Canadians are indifferent to urban issues.",
+          "C. Canadians have a crucial role in influencing urban policy.",
+          "D. Canadians should not participate in planning debates."
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the importance of Canadians' involvement in influencing urban policies."
+      },
+      {
+        "id": 9,
+        "question": "What does the author identify as a critical oversight in many urban development projects?",
+        "options": [
+          "A. Insufficient technological integration.",
+          "B. Lack of community engagement.",
+          "C. Emphasis on renewable energy sources.",
+          "D. Overly complex zoning regulations."
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates a critical oversight is the lack of community engagement in planning."
+      },
+      {
+        "id": 10,
+        "question": "What does the author imply about gentrification's impact on community identity?",
+        "options": [
+          "A. It strengthens community bonds.",
+          "B. It can dilute or transform existing identities.",
+          "C. It universally benefits all residents.",
+          "D. It promotes cultural diversity and unity."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that gentrification can lead to the dilution of existing community identities."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Green Spaces on Community Well-Being",
+    "passage": "In contemporary Canadian cities, the increasing emphasis on urban green spaces has sparked considerable debate regarding their multifaceted impact on community well-being. Proponents argue that gardens, parks, and other natural settings not only mitigate the urban heat island effect, thereby enhancing environmental sustainability, but they also provide essential mental health benefits for residents. Notwithstanding these advantages, critics contend that the allocation of public funds towards the enhancement of green spaces may exacerbate social inequalities, particularly in low-income neighborhoods, where such investments could divert resources from more pressing infrastructure needs. \n\nJuxtaposed against these differing perspectives is the evidence presented by recent studies from institutions like the University of British Columbia, which indicate a correlation between increased access to green spaces and improved mental health outcomes. These findings, while compelling, raise questions about the interpretation of causality; it is conceivable that individuals who are more mentally healthy are simply more inclined to utilize the available greenery. Additionally, one must consider the quality of these green spaces, which often varies dramatically based on geographic and socioeconomic factors.\n\nTherefore, as Canadian municipalities continue to navigate the complex interplay between urban development and public health, it becomes imperative for policymakers to adopt a nuanced approach. This approach should not only prioritize the creation of green spaces but also ensure equitable access and maintenance in diverse urban contexts. In doing so, communities may leverage these natural environments as a tool for fostering resilience and cohesion amid an increasingly fragmented social landscape.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the potential benefits of urban green spaces mentioned in the passage?",
+        "options": [
+          "A. They improve socioeconomic status.",
+          "B. They mitigate urban heat and enhance mental health.",
+          "C. They promote commercial development.",
+          "D. They reduce government spending."
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically states that urban green spaces mitigate the urban heat island effect and provide mental health benefits."
+      },
+      {
+        "id": 2,
+        "question": "According to critics, what issue may arise from funding urban green spaces?",
+        "options": [
+          "A. Increased mental health issues.",
+          "B. Neglect of low-income infrastructure needs.",
+          "C. Lower quality of green spaces.",
+          "D. Overpopulation in urban areas."
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that funding for green spaces could divert resources from essential infrastructure needs in low-income neighborhoods."
+      },
+      {
+        "id": 3,
+        "question": "What does the passage imply about the research from the University of British Columbia?",
+        "options": [
+          "A. It definitively proves that green spaces cause good mental health.",
+          "B. It suggests a correlation that requires cautious interpretation.",
+          "C. It is widely accepted without dispute.",
+          "D. It exclusively focuses on socioeconomic factors."
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that while studies show a correlation, the causality of this relationship is debatable."
+      },
+      {
+        "id": 4,
+        "question": "How does the author characterize the existing distribution of green spaces in urban areas?",
+        "options": [
+          "A. Uniform and equitable.",
+          "B. Disparate and inadequate.",
+          "C. Optimal for all communities.",
+          "D. Primarily focused on commercial areas."
+        ],
+        "correct": 1,
+        "explanation": "The author notes that the quality and access to green spaces vary dramatically by geographic and socioeconomic factors."
+      },
+      {
+        "id": 5,
+        "question": "What tone does the author use to discuss the need for a nuanced policy approach?",
+        "options": [
+          "A. Skeptical and critical.",
+          "B. Cautiously optimistic.",
+          "C. Indifferent and detached.",
+          "D. Urgently demanding."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for a nuanced approach, suggesting a careful, balanced consideration rather than an urgent or critical tone."
+      },
+      {
+        "id": 6,
+        "question": "What is the ultimate goal of enhancing urban green spaces, according to the passage?",
+        "options": [
+          "A. To promote tourism in urban areas.",
+          "B. To facilitate social fragmentation.",
+          "C. To foster community resilience and cohesion.",
+          "D. To increase real estate values."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests leveraging green spaces for fostering resilience and cohesion within communities."
+      },
+      {
+        "id": 7,
+        "question": "Which of the following statements best summarizes the author’s viewpoint on the allocation of resources in urban planning?",
+        "options": [
+          "A. Green space investments are unnecessary.",
+          "B. Infrastructure needs should be prioritized over green spaces.",
+          "C. A balanced approach to resource allocation is necessary.",
+          "D. Urban green spaces are a luxury that can be deferred."
+        ],
+        "correct": 2,
+        "explanation": "The author calls for a nuanced approach that balances green space creation with equitable access and maintenance."
+      },
+      {
+        "id": 8,
+        "question": "How does the author suggest that urban green spaces affect different communities?",
+        "options": [
+          "A. They uniformly benefit all demographics equally.",
+          "B. They potentially widen social inequalities.",
+          "C. They reduce the mental health gap between rich and poor.",
+          "D. They are equally accessible to all city residents."
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that the allocation of green space funds could exacerbate existing inequalities in access."
+      },
+      {
+        "id": 9,
+        "question": "What aspect of urban green spaces does the passage emphasize through juxtaposition?",
+        "options": [
+          "A. Their aesthetic versus practical value.",
+          "B. Their environmental benefits versus financial costs.",
+          "C. Their mental health benefits versus socioeconomic disparities.",
+          "D. Their recreational uses versus political controversies."
+        ],
+        "correct": 2,
+        "explanation": "The passage contrasts the mental health benefits of green spaces with the socioeconomic disparities affecting their quality and access."
+      },
+      {
+        "id": 10,
+        "question": "What implication does the author draw regarding the future of urban planning in Canada?",
+        "options": [
+          "A. It will focus solely on economic growth.",
+          "B. It will likely ignore mental health concerns.",
+          "C. It must integrate health considerations with equitable access.",
+          "D. It will enhance green spaces at the cost of infrastructure."
+        ],
+        "correct": 2,
+        "explanation": "The passage emphasizes the need for integrating health considerations and equitable access in urban planning."
+      }
+    ]
+  },
+  {
+    "title": "The Complexity of Urban Housing Policies in Canada",
+    "passage": "In recent years, the specter of housing affordability has loomed large over metropolitan regions across Canada, presenting formidable challenges that demand nuanced policy interventions. Notwithstanding the diversity of regional circumstances, a pervasive theme emerges: the need for comprehensive strategies that not only address immediate housing shortages but also foster long-term sustainability. Critics of conventional approaches argue that merely increasing supply may exacerbate the very issues it seeks to resolve, particularly in cities like Toronto and Vancouver, where foreign investment has been juxtaposed with domestic discontent about soaring property prices.\n\nA key component of any viable solution involves market regulation and the enhancement of public housing initiatives. Advocates assert that the construction of affordable units, coupled with rent control measures, can stabilize fluctuating markets and provide a buffer for lower-income families. Conversely, detractors maintain that such interventions may hinder new developments and discourage private investment, potentially leading to a stagnation of the housing sector. The tension between these opposing viewpoints illustrates a broader dilemma: how to reconcile the imperatives of economic growth with the pressing need for social equity.\n\nMoreover, addressing the housing crisis necessitates a multi-faceted approach that includes thoughtful zoning reforms, increased funding for public infrastructure, and the active engagement of communities in decision-making processes. While governmental bodies have begun to recognize the importance of these elements, substantial hurdles remain. The implementation of any policy must be informed by data-driven analyses and should prioritize the long-term welfare of all residents, ensuring that the objective of affordable housing is not merely an aspirational goal but a tangible reality for all Canadians.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary challenge does the passage attribute to urban housing in Canada?",
+        "options": [
+          "A. Lack of foreign investment",
+          "B. Inadequate supply of housing",
+          "C. Excessive government regulation",
+          "D. Increased public dissatisfaction"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that the primary challenge is the lack of affordable housing, which is described as a pressing issue in urban centers."
+      },
+      {
+        "id": 2,
+        "question": "How does the author view the relationship between increasing housing supply and potential market impacts?",
+        "options": [
+          "A. Increasing supply always benefits low-income families",
+          "B. Supply increase may worsen affordability issues",
+          "C. Market impacts are negligible",
+          "D. Supply must be the only focus of housing policy"
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that increasing supply without consideration of other factors may exacerbate affordability issues."
+      },
+      {
+        "id": 3,
+        "question": "What stance does the author take regarding public housing initiatives?",
+        "options": [
+          "A. They should be avoided to attract private investment",
+          "B. They are essential for stabilizing housing markets",
+          "C. They exacerbate market fluctuations",
+          "D. They should not involve community input"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that the author believes public housing initiatives are crucial for stabilizing the market."
+      },
+      {
+        "id": 4,
+        "question": "According to the passage, what is a critical element in addressing the housing crisis?",
+        "options": [
+          "A. Private sector investment alone",
+          "B. Increased foreign ownership",
+          "C. Community engagement in policy decisions",
+          "D. Restricting the construction of new housing units"
+        ],
+        "correct": 2,
+        "explanation": "The author highlights that community engagement in decision-making is essential to effectively address the housing crisis."
+      },
+      {
+        "id": 5,
+        "question": "What does the phrase 'notwithstanding the diversity of regional circumstances' suggest about urban housing challenges?",
+        "options": [
+          "A. Every city faces the same issues",
+          "B. There are unique challenges in each region",
+          "C. Regional differences are irrelevant",
+          "D. All regions have effective solutions"
+        ],
+        "correct": 1,
+        "explanation": "The phrase implies that despite differing conditions in each region, overarching challenges regarding housing affordability persist."
+      },
+      {
+        "id": 6,
+        "question": "What potential drawback of regulation does the passage suggest?",
+        "options": [
+          "A. It guarantees affordable housing",
+          "B. It could discourage private investment",
+          "C. It ensures market stability",
+          "D. It resolves housing shortages effectively"
+        ],
+        "correct": 1,
+        "explanation": "The passage notes concerns that regulation may deter private investment, thus hindering market growth."
+      },
+      {
+        "id": 7,
+        "question": "How does the author characterize the government's current recognition of the housing issue?",
+        "options": [
+          "A. They have taken no action",
+          "B. They are fully addressing all concerns",
+          "C. They are beginning to acknowledge its importance",
+          "D. They have resolved the housing crisis"
+        ],
+        "correct": 2,
+        "explanation": "The author states that governmental bodies have begun to recognize the importance of addressing the housing crisis."
+      },
+      {
+        "id": 8,
+        "question": "What tone does the author adopt towards the complexity of the housing issue?",
+        "options": [
+          "A. Optimistic",
+          "B. Dismissive",
+          "C. Cautiously optimistic",
+          "D. Pessimistic"
+        ],
+        "correct": 2,
+        "explanation": "The author presents a cautiously optimistic tone, recognizing challenges while also suggesting viable pathways forward."
+      },
+      {
+        "id": 9,
+        "question": "What does the author imply about the relationship between economic growth and social equity?",
+        "options": [
+          "A. They are conflicting objectives",
+          "B. They can be pursued simultaneously",
+          "C. Economic growth is irrelevant to social issues",
+          "D. They have been achieved in Canada"
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that there must be a reconciliation between economic growth and social equity in housing policy."
+      },
+      {
+        "id": 10,
+        "question": "What overall stance does the author take towards the proposed housing policies?",
+        "options": [
+          "A. They are generally ineffective",
+          "B. They require careful consideration and multi-faceted approaches",
+          "C. They should be implemented immediately",
+          "D. They are outdated"
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for careful consideration of policies, highlighting the need for multi-faceted approaches to effectively address housing issues."
+      }
+    ]
+  },
+  {
+    "title": "The Impacts of Urbanization on Mental Health: A Canadian Perspective",
+    "passage": "In recent years, the rapid urbanization of Canadian cities has sparked a divisive debate among policymakers, mental health professionals, and urban planners. While urban environments ostensibly provide access to essential services and opportunities for economic advancement, they simultaneously exacerbate various mental health challenges. Notwithstanding the benefits of urban living, such as improved infrastructure and connectivity, an increasingly dense population places a significant strain on social cohesion and public resources. This juxtaposition of accessibility and alienation highlights the complex nature of urban mental health issues.\n\nResearch indicates that the phenomenon of urban stress is not solely attributable to environmental factors but is also deeply influenced by socioeconomic disparities. Lower-income residents, particularly in metropolitan areas like Toronto and Vancouver, frequently encounter higher levels of stress due to inadequate housing, limited access to healthcare, and social isolation. Thus, the benefits of city life can appear illusory when the struggles of marginalized communities are taken into account.\n\nFurthermore, the inflexible nature of existing mental health services, which often fail to address the unique needs of urban populations, compounds these challenges. As the demand for mental health support escalates, it is imperative that city planners not only acknowledge but actively integrate mental wellness into their development frameworks. A holistic approach that recognizes the intricate relationship between urbanization and mental health is essential for fostering resilient communities. Therefore, ongoing dialogue among stakeholders is crucial to ensure that the future of Canadian urban living prioritizes psychological well-being alongside economic and infrastructural growth.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "According to the passage, what are the two primary effects of urbanization discussed?",
+        "options": [
+          "A) Economic advancement and social isolation",
+          "B) Improved infrastructure and mental health challenges",
+          "C) Increased healthcare access and socioeconomic disparities",
+          "D) Dense population and enhanced community support"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the benefits of urban living, such as infrastructure, and the mental health challenges that result from urbanization, particularly in relation to social cohesion."
+      },
+      {
+        "id": 2,
+        "question": "What implication can be drawn about mental health services in urban areas?",
+        "options": [
+          "A) They are overly focused on environmental factors",
+          "B) They are adaptable to the unique needs of urban populations",
+          "C) They often do not meet the needs of lower-income residents",
+          "D) They effectively address the issue of socioeconomic disparity"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that existing mental health services are inflexible and often fail to address the unique needs of urban populations, particularly those from marginalized communities."
+      },
+      {
+        "id": 3,
+        "question": "Which term best describes the author's view on the relationship between urbanization and mental health?",
+        "options": [
+          "A) Simple",
+          "B) Dualistic",
+          "C) Complex",
+          "D) Negligible"
+        ],
+        "correct": 2,
+        "explanation": "The author presents a view that the relationship is complex by discussing both the benefits and challenges associated with urban living."
+      },
+      {
+        "id": 4,
+        "question": "What is suggested as a necessary action for stakeholders in Canadian urban contexts?",
+        "options": [
+          "A) To maintain current mental health service models",
+          "B) To prioritize economic growth over mental health",
+          "C) To incorporate mental wellness into urban planning",
+          "D) To avoid discussions about socioeconomic disparities"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the need for a holistic approach that integrates mental wellness into urban development frameworks."
+      },
+      {
+        "id": 5,
+        "question": "The mention of 'socioeconomic disparities' is primarily used in the passage to illustrate what?",
+        "options": [
+          "A) The failures of urban infrastructure",
+          "B) The contrasting experiences of urban residents",
+          "C) The positive impacts of urbanization",
+          "D) The effectiveness of mental health services"
+        ],
+        "correct": 1,
+        "explanation": "The passage uses socioeconomic disparities to illustrate how diverse experiences of urban living can affect mental health outcomes."
+      },
+      {
+        "id": 6,
+        "question": "What does the author imply about the notion of 'improved infrastructure'?",
+        "options": [
+          "A) It leads to better mental health outcomes for all",
+          "B) It is an independent factor unrelated to mental health",
+          "C) It does not equally benefit marginalized communities",
+          "D) It exacerbates the problem of social isolation"
+        ],
+        "correct": 2,
+        "explanation": "The author implies that while improved infrastructure is a benefit, it does not necessarily reach lower-income or marginalized groups, who experience different challenges."
+      },
+      {
+        "id": 7,
+        "question": "Which perspective is the passage least likely to support?",
+        "options": [
+          "A) Urbanization is overall beneficial",
+          "B) Economic opportunities can lead to social cohesion",
+          "C) Mental health issues in urban areas require urgent attention",
+          "D) Infrastructure improvements should be prioritized alone"
+        ],
+        "correct": 3,
+        "explanation": "The passage argues for a holistic approach, which suggests that prioritizing infrastructure alone is insufficient."
+      },
+      {
+        "id": 8,
+        "question": "How does the author characterize the quality of life for lower-income urban residents?",
+        "options": [
+          "A) Exceedingly favorable compared to rural areas",
+          "B) Often adversely affected by urban stressors",
+          "C) Consistently improving due to urbanization",
+          "D) Largely unaffected by socioeconomic factors"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights that lower-income urban residents encounter higher stress levels due to various factors, indicating their quality of life is adversely affected."
+      },
+      {
+        "id": 9,
+        "question": "Which statement most accurately reflects the tone of the passage?",
+        "options": [
+          "A) Optimistic about future urban living",
+          "B) Critical of current mental health policies",
+          "C) Indifferent to socioeconomic challenges",
+          "D) Proponents of urbanization are overwhelmingly negative"
+        ],
+        "correct": 1,
+        "explanation": "The passage conveys a critical tone regarding the effectiveness of current mental health policies in addressing urban challenges."
+      },
+      {
+        "id": 10,
+        "question": "What overarching theme does the passage highlight regarding urbanization?",
+        "options": [
+          "A) The triviality of mental health concerns",
+          "B) The importance of accessibility for economic growth",
+          "C) The need for a balance between urban development and mental health",
+          "D) The eventual decline of urban centers"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the need for a balance that incorporates mental health into the framework of urban development."
+      }
+    ]
   }
 ]

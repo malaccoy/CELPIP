@@ -7,6 +7,7 @@ import styles from '@/styles/Rankings.module.scss';
 interface RankEntry {
   rank: number;
   displayName: string;
+  avatar: string | null;
   points: number;
   isCurrentUser: boolean;
 }
@@ -24,7 +25,7 @@ export default function RankingsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/rankings')
+    fetch(`/api/rankings?_=${Date.now()}`)
       .then(r => r.json())
       .then(d => { setData(d); setLoading(false); })
       .catch(() => setLoading(false));
@@ -72,9 +73,9 @@ export default function RankingsPage() {
       {/* Hero */}
       <div className={styles.hero}>
         <Trophy size={40} style={{ color: '#fbbf24' }} />
-        <h1 className={styles.title}>Top Learners This Week</h1>
+        <h1 className={styles.title}>Top Learners This Month</h1>
         <p className={styles.subtitle}>
-          See who&apos;s practicing the hardest. Your score resets every Monday.
+          See who&apos;s practicing the hardest. Your score resets on the 1st of each month.
         </p>
         {data.totalLearners > 0 && (
           <div className={styles.learnerCount}>
@@ -88,7 +89,7 @@ export default function RankingsPage() {
       <div className={styles.leaderboard}>
         {data.top10.length === 0 ? (
           <div className={styles.emptyBoard}>
-            <p>No activity this week yet. Be the first! 🚀</p>
+            <p>No activity this month yet. Be the first! 🚀</p>
           </div>
         ) : (
           data.top10.map((entry) => (
@@ -99,6 +100,16 @@ export default function RankingsPage() {
               <div className={styles.rankBadge}>
                 {getRankIcon(entry.rank)}
               </div>
+              {entry.avatar ? (
+                <div 
+                  className={styles.avatar} 
+                  style={{ backgroundImage: `url(${entry.avatar})` }}
+                />
+              ) : (
+                <div className={styles.avatarPlaceholder}>
+                  {entry.displayName.charAt(0).toUpperCase()}
+                </div>
+              )}
               <div className={styles.rankInfo}>
                 <span className={styles.rankName}>
                   {getRankEmoji(entry.rank)} {entry.displayName}
@@ -155,7 +166,7 @@ export default function RankingsPage() {
           </div>
           <div className={styles.scoringItem}>
             <Pencil size={16} style={{ color: '#a78bfa' }} />
-            <span>Writing submission = 2 pts</span>
+            <span>Writing submission = 3 pts</span>
           </div>
           <div className={styles.scoringItem}>
             <Mic size={16} style={{ color: '#f97316' }} />

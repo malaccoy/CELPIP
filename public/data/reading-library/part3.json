@@ -124,7 +124,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-01"
+    "id": "part3-01",
+    "difficulty": "intermediate"
   },
   {
     "title": "A Guide to Starting a Small Business in Ontario",
@@ -251,7 +252,8 @@
         "correct": 0
       }
     ],
-    "id": "part3-02"
+    "id": "part3-02",
+    "difficulty": "intermediate"
   },
   {
     "title": "Impacts of Climate Change on Canadian Agriculture",
@@ -378,7 +380,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-03"
+    "id": "part3-03",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Rise of Electric Vehicle Adoption in Canada",
@@ -505,7 +508,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-04"
+    "id": "part3-04",
+    "difficulty": "intermediate"
   },
   {
     "title": "Remote Work Trends in Canadian Companies Post-Pandemic",
@@ -632,7 +636,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-05"
+    "id": "part3-05",
+    "difficulty": "intermediate"
   },
   {
     "title": "Indigenous Reconciliation Initiatives in Canadian Schools",
@@ -759,7 +764,8 @@
         "correct": 3
       }
     ],
-    "id": "part3-06"
+    "id": "part3-06",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Housing Affordability Crisis in Major Canadian Cities",
@@ -886,7 +892,8 @@
         "correct": 1
       }
     ],
-    "id": "part3-07"
+    "id": "part3-07",
+    "difficulty": "intermediate"
   },
   {
     "title": "Sustainable Fishing Practices on the Atlantic Coast",
@@ -1013,7 +1020,8 @@
         "correct": 4
       }
     ],
-    "id": "part3-08"
+    "id": "part3-08",
+    "difficulty": "intermediate"
   },
   {
     "title": "Report on Mental Health Services Availability in Rural Canada",
@@ -1140,7 +1148,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-09"
+    "id": "part3-09",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Evolution of Canadian Food Culture",
@@ -1267,7 +1276,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-10"
+    "id": "part3-10",
+    "difficulty": "intermediate"
   },
   {
     "title": "Indigenous Reconciliation Initiatives in Canadian Schools",
@@ -1394,7 +1404,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-11"
+    "id": "part3-11",
+    "difficulty": "intermediate"
   },
   {
     "title": "Overview of Canadian Pension Plans: CPP and OAS",
@@ -1521,7 +1532,8 @@
         "correct": 1
       }
     ],
-    "id": "part3-12"
+    "id": "part3-12",
+    "difficulty": "intermediate"
   },
   {
     "title": "Housing Affordability Crisis in Major Canadian Cities",
@@ -1644,7 +1656,8 @@
         "correct": 3
       }
     ],
-    "id": "part3-13"
+    "id": "part3-13",
+    "difficulty": "intermediate"
   },
   {
     "title": "Guide to Winter Driving Safety in Canadian Provinces",
@@ -1771,7 +1784,8 @@
         "correct": 1
       }
     ],
-    "id": "part3-14"
+    "id": "part3-14",
+    "difficulty": "intermediate"
   },
   {
     "title": "Sustainable Fishing Practices on the Atlantic Coast",
@@ -1898,7 +1912,8 @@
         "correct": 3
       }
     ],
-    "id": "part3-15"
+    "id": "part3-15",
+    "difficulty": "intermediate"
   },
   {
     "title": "Overview of Canadian Parental Leave Benefits and Eligibility",
@@ -2025,7 +2040,8 @@
         "correct": 1
       }
     ],
-    "id": "part3-16"
+    "id": "part3-16",
+    "difficulty": "intermediate"
   },
   {
     "title": "Mental Health Services Availability in Rural Canada",
@@ -2152,7 +2168,8 @@
         "correct": 2
       }
     ],
-    "id": "part3-17"
+    "id": "part3-17",
+    "difficulty": "intermediate"
   },
   {
     "title": "Guide to Understanding Canadian Tax Filing for Newcomers",
@@ -2279,7 +2296,8 @@
         "correct": 4
       }
     ],
-    "id": "part3-18"
+    "id": "part3-18",
+    "difficulty": "intermediate"
   },
   {
     "title": "The Evolution of Canadian Food Culture",
@@ -2406,7 +2424,8 @@
         "correct": 1
       }
     ],
-    "id": "part3-19"
+    "id": "part3-19",
+    "difficulty": "intermediate"
   },
   {
     "title": "Overview of Emergency Preparedness for Natural Disasters in BC",
@@ -2533,6 +2552,3362 @@
         "correct": 0
       }
     ],
-    "id": "part3-20"
+    "id": "part3-20",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Getting Around in Toronto",
+    "passage": "Toronto is a big city in Canada. Many people live and work here. Getting around the city is easy. There are many ways to travel. You can take the subway, a bus, or a streetcar. The Toronto Transit Commission (TTC) operates these services. They have many routes to different places in the city.\n\nThe subway is one of the fastest ways to travel. It has four main lines. Each line goes to different parts of the city. Buses also cover areas not served by the subway. They run often and can take you close to your home. Streetcars are another option. They travel on tracks in the street. Streetcars are a good choice for short trips in the downtown area.\n\nIf you prefer to walk, many places in Toronto are easy to reach on foot. Walking is a healthy way to explore the city. You can see parks, shops, and restaurants along the way. Biking is another great choice. There are many bike lanes and bike rental services available.\n\nIn summary, there are many ways to get around Toronto. Whether you take the subway, bus, streetcar, walk, or bike, moving around the city is simple and fun.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. Weather in Toronto",
+          "B. Ways to travel in Toronto",
+          "C. Shopping in Toronto",
+          "D. History of Toronto"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses different methods of transportation in Toronto."
+      },
+      {
+        "id": 2,
+        "question": "What is the fastest way to travel in Toronto?",
+        "options": [
+          "A. By foot",
+          "B. By bus",
+          "C. By subway",
+          "D. By streetcar"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the subway is one of the fastest ways to travel."
+      },
+      {
+        "id": 3,
+        "question": "What does the TTC operate?",
+        "options": [
+          "A. Libraries",
+          "B. Parks",
+          "C. Transit services",
+          "D. Schools"
+        ],
+        "correct": 2,
+        "explanation": "The TTC operates subway, bus, and streetcar services."
+      },
+      {
+        "id": 4,
+        "question": "Which option is NOT mentioned for getting around Toronto?",
+        "options": [
+          "A. Subway",
+          "B. Foot",
+          "C. Taxi",
+          "D. Streetcar"
+        ],
+        "correct": 2,
+        "explanation": "The passage does not mention taxis as a way of getting around."
+      },
+      {
+        "id": 5,
+        "question": "What can you see while walking in Toronto?",
+        "options": [
+          "A. Only buildings",
+          "B. Only cars",
+          "C. Parks, shops, and restaurants",
+          "D. Only bicycles"
+        ],
+        "correct": 2,
+        "explanation": "The passage says you can see parks, shops, and restaurants while walking."
+      },
+      {
+        "id": 6,
+        "question": "How does the passage describe biking?",
+        "options": [
+          "A. Unsafe and difficult",
+          "B. Boring and slow",
+          "C. Great choice with bike lanes",
+          "D. Only for experts"
+        ],
+        "correct": 2,
+        "explanation": "The passage describes biking as a great choice with many bike lanes."
+      },
+      {
+        "id": 7,
+        "question": "What is one benefit of walking mentioned in the passage?",
+        "options": [
+          "A. It is very quick.",
+          "B. It is good for health.",
+          "C. It costs a lot.",
+          "D. It is the only option."
+        ],
+        "correct": 1,
+        "explanation": "The passage notes that walking is a healthy way to explore the city."
+      },
+      {
+        "id": 8,
+        "question": "What do streetcars travel on?",
+        "options": [
+          "A. Roads",
+          "B. Tracks",
+          "C. Sidewalks",
+          "D. Grass"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that streetcars travel on tracks in the street."
+      },
+      {
+        "id": 9,
+        "question": "What does the passage recommend for short trips downtown?",
+        "options": [
+          "A. Biking",
+          "B. Walking",
+          "C. Taking the subway",
+          "D. Taking a taxi"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests streetcars for short trips downtown."
+      }
+    ]
+  },
+  {
+    "title": "Enjoying Winter in Canada",
+    "passage": "Winter in Canada can be very cold, but it is also a wonderful time for outdoor activities. Many people enjoy skiing and snowboarding in the mountains. In cities like Calgary and Whistler, you can find many ski resorts. These resorts have trails for all skill levels, so everyone can have fun on the snow.\n\nAnother popular winter activity is ice skating. Many parks in Canada build outdoor ice rinks during the winter months. Families often go skating together. Children laugh and play as they glide across the ice. In Toronto, the Nathan Phillips Square has a large outdoor skating rink that is very popular.\n\nBesides sports, winter is a great time to enjoy warm drinks. Hot chocolate is a favorite for many Canadians. People like to drink it after being outside in the cold. Cafes and restaurants often have special winter menus with warm drinks and delicious food.\n\nFinally, winter festivals bring communities together. Cities all over Canada celebrate winter with festivals. These festivals have lights, food, and fun activities for everyone. The Winterlude festival in Ottawa is famous for its beautiful ice sculptures and live music. It is a great place to enjoy winter with friends and family.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the passage mainly about?",
+        "options": [
+          "A. Summer activities",
+          "B. Winter in Canada",
+          "C. Spring flowers",
+          "D. Autumn leaves"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses winter activities in Canada."
+      },
+      {
+        "id": 2,
+        "question": "What can people do in the mountains during winter?",
+        "options": [
+          "A. Go hiking",
+          "B. Ski and snowboard",
+          "C. Swim in lakes",
+          "D. Play soccer"
+        ],
+        "correct": 1,
+        "explanation": "People can ski and snowboard in the mountains."
+      },
+      {
+        "id": 3,
+        "question": "What is a popular drink in winter?",
+        "options": [
+          "A. Ice tea",
+          "B. Lemonade",
+          "C. Hot chocolate",
+          "D. Soft drinks"
+        ],
+        "correct": 2,
+        "explanation": "Hot chocolate is mentioned as a favorite winter drink."
+      },
+      {
+        "id": 4,
+        "question": "Where can families often go ice skating?",
+        "options": [
+          "A. Shopping malls",
+          "B. Indoor pools",
+          "C. Outdoor parks",
+          "D. Libraries"
+        ],
+        "correct": 2,
+        "explanation": "The passage says that parks build outdoor ice rinks for skating."
+      },
+      {
+        "id": 5,
+        "question": "What is Nathan Phillips Square known for?",
+        "options": [
+          "A. Fashion shows",
+          "B. A large outdoor skating rink",
+          "C. Art galleries",
+          "D. Concert halls"
+        ],
+        "correct": 1,
+        "explanation": "Nathan Phillips Square has a large outdoor skating rink."
+      },
+      {
+        "id": 6,
+        "question": "What do winter festivals have?",
+        "options": [
+          "A. Summer games",
+          "B. Lights, food, and activities",
+          "C. Beach parties",
+          "D. Indoor swimming"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that winter festivals have lights, food, and activities."
+      },
+      {
+        "id": 7,
+        "question": "Which festival is famous for ice sculptures?",
+        "options": [
+          "A. Winterlude in Ottawa",
+          "B. Summerfest in Toronto",
+          "C. Music Festival in Vancouver",
+          "D. Spring Carnival in Montreal"
+        ],
+        "correct": 0,
+        "explanation": "Winterlude in Ottawa is famous for its ice sculptures."
+      },
+      {
+        "id": 8,
+        "question": "What do people often do after coming inside from the cold?",
+        "options": [
+          "A. Go to sleep",
+          "B. Drink hot chocolate",
+          "C. Do homework",
+          "D. Play video games"
+        ],
+        "correct": 1,
+        "explanation": "People like to drink hot chocolate after being outside in the cold."
+      },
+      {
+        "id": 9,
+        "question": "Who can enjoy activities in the ski resorts?",
+        "options": [
+          "A. Only experts",
+          "B. Only children",
+          "C. Everyone",
+          "D. Only women"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that there are trails for all skill levels."
+      }
+    ]
+  },
+  {
+    "title": "Visit the Toronto Public Library",
+    "passage": "The Toronto Public Library is a great place for everyone. It has many branches all over the city. You can borrow books, e-books, and audiobooks. You can also use computers and free Wi-Fi. Many people come to read, study, or join programs. The library also has events for children and adults.\n\nIf you want to get a library card, you need to bring some ID that shows your name and address. You can apply for a card at any library branch. It is free to sign up. With this card, you can borrow books and other materials.\n\nThe Toronto Public Library has a large collection of books in many languages. You can find books on topics like history, science, and art. There are also magazines, movies, and music CDs. The library staff is friendly and happy to help you find what you need.\n\nVisit the Toronto Public Library today! Enjoy reading, learning, and discovering new things. Whether you are a student, a parent, or someone who loves books, the library has something for you.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A) The best restaurants in Toronto",
+          "B) The Toronto Public Library",
+          "C) How to apply for a job",
+          "D) The weather in Toronto"
+        ],
+        "correct": 1,
+        "explanation": "The passage is about the Toronto Public Library."
+      },
+      {
+        "id": 2,
+        "question": "What can you borrow from the library?",
+        "options": [
+          "A) Only e-books",
+          "B) Cars",
+          "C) Books and audiobooks",
+          "D) Only magazines"
+        ],
+        "correct": 2,
+        "explanation": "You can borrow books, e-books, and audiobooks from the library."
+      },
+      {
+        "id": 3,
+        "question": "Do you have to pay for a library card?",
+        "options": [
+          "A) Yes, it costs money",
+          "B) No, it is free",
+          "C) Only for children",
+          "D) Only if you live outside the city"
+        ],
+        "correct": 1,
+        "explanation": "It is free to sign up for a library card."
+      },
+      {
+        "id": 4,
+        "question": "What do you need to get a library card?",
+        "options": [
+          "A) A book",
+          "B) ID that shows your name and address",
+          "C) A passport",
+          "D) An application form"
+        ],
+        "correct": 1,
+        "explanation": "You need ID that shows your name and address to get a library card."
+      },
+      {
+        "id": 5,
+        "question": "What types of events does the library have?",
+        "options": [
+          "A) Only events for children",
+          "B) Programs for children and adults",
+          "C) Events for pets",
+          "D) Musical concerts only"
+        ],
+        "correct": 1,
+        "explanation": "The library has events for both children and adults."
+      },
+      {
+        "id": 6,
+        "question": "What kind of resources does the library offer?",
+        "options": [
+          "A) Books in many languages",
+          "B) Only English books",
+          "C) Bank services",
+          "D) Grocery shopping"
+        ],
+        "correct": 0,
+        "explanation": "The library has a large collection of books in many languages."
+      },
+      {
+        "id": 7,
+        "question": "Who can use the library?",
+        "options": [
+          "A) Only students",
+          "B) Only parents",
+          "C) Everyone",
+          "D) Only adults"
+        ],
+        "correct": 2,
+        "explanation": "The library is a great place for everyone."
+      },
+      {
+        "id": 8,
+        "question": "What can you do at the library?",
+        "options": [
+          "A) Only borrow books",
+          "B) Read, study, or join programs",
+          "C) Only watch movies",
+          "D) Go shopping"
+        ],
+        "correct": 1,
+        "explanation": "You can read, study, or join programs at the library."
+      },
+      {
+        "id": 9,
+        "question": "Who is happy to help you at the library?",
+        "options": [
+          "A) The library staff",
+          "B) Only the librarian",
+          "C) Your friends",
+          "D) Anyone walking by"
+        ],
+        "correct": 0,
+        "explanation": "The library staff is friendly and happy to help you."
+      }
+    ]
+  },
+  {
+    "title": "Exploring the Toronto Zoo",
+    "passage": "The Toronto Zoo is one of the largest zoos in Canada. It is located in Toronto, Ontario. The zoo has over 5,000 animals from around the world. Visitors can see lions, tigers, and bears, as well as many birds and reptiles. The zoo is a great place for families to enjoy a fun day together.\n\nThe zoo is open every day of the year. Tickets can be bought online or at the entrance. Adults pay $30 and children pay $20. Children under three can enter for free. There are also discounts for seniors and families.\n\nAt the Toronto Zoo, visitors can learn about different animals and their habitats. There are many educational programs available. Kids can also participate in special activities, like feeding the giraffes or watching a sea lion show. The zoo has beautiful gardens and picnic areas, making it a wonderful place to relax.\n\nRemember to check the zoo’s website for special events. The zoo often hosts events during holidays and the summer. It is important to plan your visit and enjoy everything the zoo has to offer.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A zoo in Toronto",
+          "A restaurant in Toronto",
+          "A school in Toronto",
+          "A park in Toronto"
+        ],
+        "correct": 0,
+        "explanation": "The main topic is about the Toronto Zoo."
+      },
+      {
+        "id": 2,
+        "question": "Where is the Toronto Zoo located?",
+        "options": [
+          "Vancouver",
+          "Montreal",
+          "Toronto",
+          "Calgary"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the Toronto Zoo is in Toronto, Ontario."
+      },
+      {
+        "id": 3,
+        "question": "How many animals does the Toronto Zoo have?",
+        "options": [
+          "Over 1,000",
+          "Around 3,000",
+          "More than 5,000",
+          "Under 2,000"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that the zoo has over 5,000 animals."
+      },
+      {
+        "id": 4,
+        "question": "What can visitors do at the zoo?",
+        "options": [
+          "Ride horses",
+          "Watch a movie",
+          "Learn about animals",
+          "Go shopping"
+        ],
+        "correct": 2,
+        "explanation": "Visitors can learn about different animals and their habitats."
+      },
+      {
+        "id": 5,
+        "question": "How much does it cost for children to enter the zoo?",
+        "options": [
+          "$10",
+          "$20",
+          "$30",
+          "Free"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that children pay $20 to enter the zoo."
+      },
+      {
+        "id": 6,
+        "question": "When is the zoo open?",
+        "options": [
+          "Only in the summer",
+          "Every day of the year",
+          "Only on weekends",
+          "Only in the winter"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifies that the zoo is open every day of the year."
+      },
+      {
+        "id": 7,
+        "question": "Which activity is NOT mentioned in the passage?",
+        "options": [
+          "Feeding giraffes",
+          "Watching a sea lion show",
+          "Going for a boat ride",
+          "Participating in special activities"
+        ],
+        "correct": 2,
+        "explanation": "Going for a boat ride is not mentioned in the passage."
+      },
+      {
+        "id": 8,
+        "question": "What is important to do before visiting the zoo?",
+        "options": [
+          "Check the website for special events",
+          "Find a friend",
+          "Buy food for the animals",
+          "Bring a pet"
+        ],
+        "correct": 0,
+        "explanation": "The passage says it is important to check the zoo's website for special events."
+      },
+      {
+        "id": 9,
+        "question": "Who can enter the zoo for free?",
+        "options": [
+          "Children under three",
+          "Seniors",
+          "Students",
+          "Animals"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that children under three can enter for free."
+      }
+    ]
+  },
+  {
+    "title": "Visiting the Toronto Public Library",
+    "passage": "The Toronto Public Library is a great place to visit. It has many branches across the city. You can find them in neighborhoods like Downtown, East York, and North York. Each branch has a variety of books, computers, and quiet spaces for reading. \n\nYou can get a library card for free if you live in Toronto. With this card, you can borrow books, eBooks, and DVDs. You can also use the computers for free. The library offers programs for kids, teens, and adults. These programs include story time for young children and workshops for job seekers. \n\nThe library is open every day of the week. Most branches open at 9 AM and close at 5 PM. Some branches are open later on certain days. It is best to check the website for specific hours. Visiting the library is a wonderful way to learn and enjoy your time in the city.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A public transport system",
+          "A public library",
+          "A shopping mall",
+          "A school"
+        ],
+        "correct": 1,
+        "explanation": "The passage talks about the Toronto Public Library."
+      },
+      {
+        "id": 2,
+        "question": "Where is the Toronto Public Library located?",
+        "options": [
+          "In Vancouver",
+          "In Toronto",
+          "In Ottawa",
+          "In Montreal"
+        ],
+        "correct": 1,
+        "explanation": "The library is located in Toronto."
+      },
+      {
+        "id": 3,
+        "question": "What can you borrow with a library card?",
+        "options": [
+          "Only books",
+          "Books and eBooks",
+          "Only DVDs",
+          "Only magazines"
+        ],
+        "correct": 1,
+        "explanation": "You can borrow books, eBooks, and DVDs."
+      },
+      {
+        "id": 4,
+        "question": "Who can attend programs at the library?",
+        "options": [
+          "Only kids",
+          "Only adults",
+          "Kids, teens, and adults",
+          "Only seniors"
+        ],
+        "correct": 2,
+        "explanation": "The library has programs for kids, teens, and adults."
+      },
+      {
+        "id": 5,
+        "question": "What time does the library open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1,
+        "explanation": "Most branches open at 9 AM."
+      },
+      {
+        "id": 6,
+        "question": "When are the library's hours posted?",
+        "options": [
+          "On the website",
+          "On the door",
+          "In newspapers",
+          "On social media"
+        ],
+        "correct": 0,
+        "explanation": "The best way to check hours is on the library's website."
+      },
+      {
+        "id": 7,
+        "question": "How can you get a library card?",
+        "options": [
+          "By paying a fee",
+          "By filling out a form",
+          "By visiting a branch",
+          "By calling the library"
+        ],
+        "correct": 1,
+        "explanation": "You can get a library card for free by filling out a form."
+      },
+      {
+        "id": 8,
+        "question": "What is NOT mentioned in the passage?",
+        "options": [
+          "Borrowing books",
+          "Using computers",
+          "Story time for kids",
+          "Buying books"
+        ],
+        "correct": 3,
+        "explanation": "The passage does not mention buying books."
+      },
+      {
+        "id": 9,
+        "question": "What is a benefit of visiting the library?",
+        "options": [
+          "Free parking",
+          "Learning opportunities",
+          "Shopping discounts",
+          "Outdoor activities"
+        ],
+        "correct": 1,
+        "explanation": "The library offers wonderful learning opportunities."
+      }
+    ]
+  },
+  {
+    "title": "The Toronto Public Library",
+    "passage": "The Toronto Public Library is one of the largest libraries in Canada. It has many branches across the city. People can borrow books, use computers, and attend workshops. The library is free for everyone. You only need a library card to borrow items.\n\nIn the library, there are different sections for children and adults. Children can find storybooks and educational games. Adults can read novels, magazines, and newspapers. There are also quiet study areas for students.\n\nThe Toronto Public Library also offers events for the community. Every month, there are book clubs and reading sessions. These events help people to learn new things and meet others with similar interests. The library is not just for borrowing books; it is a place to connect with others.\n\nYou can get a library card online or visit any branch. The library hours are from 9 AM to 9 PM on weekdays, and 10 AM to 5 PM on weekends. With your library card, you can also use online resources like e-books and audiobooks. The Toronto Public Library makes reading and learning easy and accessible for everyone.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A library in Toronto",
+          "A bookstore in Vancouver",
+          "A school in Montreal",
+          "A museum in Calgary"
+        ],
+        "correct": 0,
+        "explanation": "The passage is about the Toronto Public Library."
+      },
+      {
+        "id": 2,
+        "question": "What can you do at the Toronto Public Library?",
+        "options": [
+          "Buy books",
+          "Borrow books",
+          "Sell books",
+          "Donate money"
+        ],
+        "correct": 1,
+        "explanation": "You can borrow books from the library."
+      },
+      {
+        "id": 3,
+        "question": "Do you need to pay to use the library?",
+        "options": [
+          "Yes, it costs money",
+          "No, it is free",
+          "Only for adults",
+          "Only for certain books"
+        ],
+        "correct": 1,
+        "explanation": "The library is free for everyone."
+      },
+      {
+        "id": 4,
+        "question": "Who can use the children's section?",
+        "options": [
+          "Only teenagers",
+          "Only adults",
+          "Children",
+          "Seniors"
+        ],
+        "correct": 2,
+        "explanation": "The children's section is for children."
+      },
+      {
+        "id": 5,
+        "question": "What type of events does the library offer?",
+        "options": [
+          "Cooking classes",
+          "Book clubs and reading sessions",
+          "Art galleries",
+          "Music concerts"
+        ],
+        "correct": 1,
+        "explanation": "The library offers book clubs and reading sessions."
+      },
+      {
+        "id": 6,
+        "question": "How can you get a library card?",
+        "options": [
+          "You must pay for it",
+          "You can get it online or at a branch",
+          "You need a special invitation",
+          "You must be a student"
+        ],
+        "correct": 1,
+        "explanation": "You can get a library card online or visit any branch."
+      },
+      {
+        "id": 7,
+        "question": "What are the library hours on weekends?",
+        "options": [
+          "9 AM to 9 PM",
+          "10 AM to 5 PM",
+          "8 AM to 8 PM",
+          "11 AM to 6 PM"
+        ],
+        "correct": 1,
+        "explanation": "The library hours on weekends are 10 AM to 5 PM."
+      },
+      {
+        "id": 8,
+        "question": "What can you access with your library card besides books?",
+        "options": [
+          "Public transportation",
+          "Online resources like e-books",
+          "Fast food discounts",
+          "Clothing stores"
+        ],
+        "correct": 1,
+        "explanation": "You can access online resources like e-books and audiobooks."
+      },
+      {
+        "id": 9,
+        "question": "What is a quiet study area for?",
+        "options": [
+          "Reading comics",
+          "Studying",
+          "Playing games",
+          "Eating lunch"
+        ],
+        "correct": 1,
+        "explanation": "The quiet study area is for studying."
+      }
+    ]
+  },
+  {
+    "title": "Winter in Toronto",
+    "passage": "Winter in Toronto can be very cold. The temperature often drops below zero degrees Celsius. Snow is common, and many people enjoy winter activities. You can go skiing or ice skating in parks. The city makes sure the roads and sidewalks are safe for everyone.\n\nIn the winter, Toronto has many special events. One popular event is the Toronto Winter Festival. It happens in February. There are ice sculptures, live music, and food stalls. Families come together to have fun. Another event is the Christmas market in the Distillery District. It is beautifully decorated with lights and has many shops.\n\nTo stay warm during winter, it is important to dress properly. People wear winter coats, hats, gloves, and boots. It is also a good idea to drink hot drinks like tea or hot chocolate. This helps keep you warm and comfortable as you enjoy the season.\n\nDespite the cold weather, winter in Toronto is a special time of year. People find ways to enjoy the snow and celebrate together. Whether you are at a festival or just walking in the park, winter can be a wonderful experience in the city.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the weather like in Toronto during winter?",
+        "options": [
+          "A) It is very warm.",
+          "B) It is usually rainy.",
+          "C) It is very cold.",
+          "D) It is hot and sunny."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that winter in Toronto can be very cold."
+      },
+      {
+        "id": 2,
+        "question": "What activities can people do in winter?",
+        "options": [
+          "A) Swimming",
+          "B) Ice skating",
+          "C) Surfing",
+          "D) Gardening"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that people can go skiing or ice skating."
+      },
+      {
+        "id": 3,
+        "question": "What festival happens in February?",
+        "options": [
+          "A) Summer Festival",
+          "B) Christmas Festival",
+          "C) Toronto Winter Festival",
+          "D) Halloween Party"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the Toronto Winter Festival occurs in February."
+      },
+      {
+        "id": 4,
+        "question": "Where does the Christmas market take place?",
+        "options": [
+          "A) City Square",
+          "B) Distillery District",
+          "C) Toronto Island",
+          "D) Waterfront"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that the Christmas market is in the Distillery District."
+      },
+      {
+        "id": 5,
+        "question": "What do people wear to stay warm?",
+        "options": [
+          "A) Sandals",
+          "B) Winter coats",
+          "C) T-shirts",
+          "D) Shorts"
+        ],
+        "correct": 1,
+        "explanation": "The passage advises dressing warmly with winter coats, hats, gloves, and boots."
+      },
+      {
+        "id": 6,
+        "question": "What can you drink to stay warm?",
+        "options": [
+          "A) Cold water",
+          "B) Hot chocolate",
+          "C) Lemonade",
+          "D) Ice tea"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests drinking hot drinks like tea or hot chocolate to stay warm."
+      },
+      {
+        "id": 7,
+        "question": "What is the main idea of the passage?",
+        "options": [
+          "A) Winter in Toronto is cold but enjoyable.",
+          "B) Summer is better than winter.",
+          "C) Ice skating is not fun.",
+          "D) Toronto has no festivals."
+        ],
+        "correct": 0,
+        "explanation": "The main idea is that winter in Toronto is cold but there are many enjoyable activities."
+      },
+      {
+        "id": 8,
+        "question": "What does the city do for safety in winter?",
+        "options": [
+          "A) Creates more parks.",
+          "B) Provides free food.",
+          "C) Cleans roads and sidewalks.",
+          "D) Closes all shops."
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the city ensures roads and sidewalks are safe."
+      },
+      {
+        "id": 9,
+        "question": "How do families feel about winter activities according to the passage?",
+        "options": [
+          "A) They avoid winter activities.",
+          "B) They enjoy winter activities together.",
+          "C) They dislike cold weather.",
+          "D) They prefer to stay indoors all winter."
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that families come together to have fun at events."
+      }
+    ]
+  },
+  {
+    "title": "The Importance of Community Centres",
+    "passage": "In Canada, community centres play an important role in our neighborhoods. They are places where people of all ages can come together. Many community centres offer programs for children, teens, and adults. These programs include sports, arts and crafts, and even cooking classes.\n\nCommunity centres are also great for events. Many centres host birthday parties, holiday celebrations, and cultural festivals. These events help to bring people together and create a sense of belonging. Everyone can join in on the fun and meet new friends.\n\nIn addition, community centres often provide resources for families. Many have libraries, job training, and information about local services. This helps people in the community to find the support they need. Visiting a community centre is a wonderful way to get involved and learn more about your neighborhood.\n\nLastly, community centres offer a safe space for everyone. They promote health and well-being by encouraging physical activity and social interaction. By visiting a community centre, you can help build a stronger community for all.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A) Cooking classes",
+          "B) Community centres",
+          "C) Sports events",
+          "D) Libraries"
+        ],
+        "correct": 1,
+        "explanation": "The passage is mainly about community centres."
+      },
+      {
+        "id": 2,
+        "question": "What programs do community centres offer?",
+        "options": [
+          "A) Only sports",
+          "B) Only arts and crafts",
+          "C) Programs for all ages",
+          "D) Job training only"
+        ],
+        "correct": 2,
+        "explanation": "Community centres offer programs for people of all ages."
+      },
+      {
+        "id": 3,
+        "question": "What kind of events do community centres have?",
+        "options": [
+          "A) Only birthday parties",
+          "B) Only sports events",
+          "C) Only cooking classes",
+          "D) Birthday parties and cultural festivals"
+        ],
+        "correct": 3,
+        "explanation": "Community centres host a variety of events, including birthday parties and cultural festivals."
+      },
+      {
+        "id": 4,
+        "question": "Who can visit a community centre?",
+        "options": [
+          "A) Only children",
+          "B) Only adults",
+          "C) Everyone",
+          "D) Only families"
+        ],
+        "correct": 2,
+        "explanation": "Community centres are open to everyone."
+      },
+      {
+        "id": 5,
+        "question": "What resources do community centres provide?",
+        "options": [
+          "A) Only libraries",
+          "B) Only job training",
+          "C) Libraries and job training",
+          "D) Only cooking classes"
+        ],
+        "correct": 2,
+        "explanation": "Community centres provide both libraries and job training."
+      },
+      {
+        "id": 6,
+        "question": "Why are community centres important?",
+        "options": [
+          "A) They sell food.",
+          "B) They promote health and well-being.",
+          "C) They have many parking spots.",
+          "D) They are open only in summer."
+        ],
+        "correct": 1,
+        "explanation": "Community centres promote health and well-being through activities."
+      },
+      {
+        "id": 7,
+        "question": "What can people do at a community centre?",
+        "options": [
+          "A) Only read books",
+          "B) Only play video games",
+          "C) Participate in various activities",
+          "D) Only attend meetings"
+        ],
+        "correct": 2,
+        "explanation": "People can participate in various activities at community centres."
+      },
+      {
+        "id": 8,
+        "question": "What does visiting a community centre help with?",
+        "options": [
+          "A) Building a stronger community",
+          "B) Finding parking spots",
+          "C) Only learning to cook",
+          "D) Buying groceries"
+        ],
+        "correct": 0,
+        "explanation": "Visiting community centres helps to build a stronger community."
+      },
+      {
+        "id": 9,
+        "question": "How do community centres help families?",
+        "options": [
+          "A) Only by providing food",
+          "B) By offering local resources",
+          "C) By selling clothes",
+          "D) Only by providing games"
+        ],
+        "correct": 1,
+        "explanation": "Community centres help families by providing resources and information."
+      }
+    ]
+  },
+  {
+    "title": "Winter in Canada",
+    "passage": "Winter in Canada is cold and snowy. Many people enjoy winter sports. Skiing and snowboarding are popular in the mountains. Children also love to play in the snow. They build snowmen and have fun sledding. \n\nIn cities, winter can be very beautiful. Parks are covered with white snow, and the trees look like they are sparkling with frost. Many families like to go for walks in the park during the winter. They dress warmly with coats, hats, and gloves. \n\nMany festivals celebrate winter in Canada. The Winterlude Festival in Ottawa has ice sculptures and skating on the Rideau Canal. Families come from all over Canada to enjoy the fun activities. \n\nIt is important to stay safe in winter. Always wear warm clothes when going outside. Be careful on icy sidewalks and drive slowly in the snow. Enjoy the beauty of winter but remember to stay safe!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "Winter sports",
+          "Winter in Canada",
+          "Ice sculptures",
+          "Sledding"
+        ],
+        "correct": 1,
+        "explanation": "The passage talks about winter in Canada as a whole."
+      },
+      {
+        "id": 2,
+        "question": "What are popular winter sports in Canada?",
+        "options": [
+          "Soccer and basketball",
+          "Swimming and surfing",
+          "Skiing and snowboarding",
+          "Biking and hiking"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions skiing and snowboarding as popular winter sports."
+      },
+      {
+        "id": 3,
+        "question": "What do children like to do in the snow?",
+        "options": [
+          "Ride bikes",
+          "Play video games",
+          "Build snowmen",
+          "Cook food"
+        ],
+        "correct": 2,
+        "explanation": "Children enjoy building snowmen in the snow."
+      },
+      {
+        "id": 4,
+        "question": "How do parks look in winter?",
+        "options": [
+          "They are very hot",
+          "They have many flowers",
+          "They are covered with snow",
+          "They are empty and dry"
+        ],
+        "correct": 2,
+        "explanation": "The passage describes parks as being covered with white snow."
+      },
+      {
+        "id": 5,
+        "question": "What is the Winterlude Festival?",
+        "options": [
+          "A summer festival",
+          "A music festival",
+          "A winter festival in Ottawa",
+          "A school event"
+        ],
+        "correct": 2,
+        "explanation": "The Winterlude Festival is a winter festival that takes place in Ottawa."
+      },
+      {
+        "id": 6,
+        "question": "What should people wear in winter?",
+        "options": [
+          "Sunglasses",
+          "Warm clothes",
+          "Short sleeves",
+          "Sandals"
+        ],
+        "correct": 1,
+        "explanation": "The passage advises wearing warm clothes when going outside in winter."
+      },
+      {
+        "id": 7,
+        "question": "Why must people be careful in winter?",
+        "options": [
+          "It is raining",
+          "There are many flowers",
+          "Sidewalks can be icy",
+          "People are swimming"
+        ],
+        "correct": 2,
+        "explanation": "The passage warns that icy sidewalks can be dangerous."
+      },
+      {
+        "id": 8,
+        "question": "Where do families come from to enjoy the Winterlude Festival?",
+        "options": [
+          "From other countries",
+          "From all over Canada",
+          "From the same city",
+          "From the beaches"
+        ],
+        "correct": 1,
+        "explanation": "Families come from all over Canada to enjoy the festival."
+      },
+      {
+        "id": 9,
+        "question": "What do people do during winter walks in the park?",
+        "options": [
+          "They take summer clothes",
+          "They dress warmly",
+          "They have ice cream",
+          "They swim in the lake"
+        ],
+        "correct": 1,
+        "explanation": "The passage says people dress warmly for walks in the park during winter."
+      }
+    ]
+  },
+  {
+    "title": "Exploring Toronto's Public Parks",
+    "passage": "Toronto is a vibrant city with many beautiful parks. One popular park is High Park, located in the west end. High Park is famous for its cherry blossom trees. Every spring, many people come to see the flowers. Another great park is Allan Gardens, in the downtown area. Allan Gardens has a lovely conservatory with tropical plants. It is a perfect place to visit in winter.\n\nIn addition to these parks, Toronto has many other green spaces. Trinity Bellwoods Park is a favorite spot for picnics. People love to relax on the grass and enjoy the sun. There are also sports fields for playing soccer and baseball.\n\nFor families, parks like Riverdale Park offer playgrounds for children. Families often visit these parks on weekends. They can enjoy a day outside together. Toronto's parks provide a great escape from the busy city life. They are perfect for walking, jogging, or spending time with friends and family.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. Toronto's food",
+          "B. Toronto's public parks",
+          "C. Toronto's schools",
+          "D. Toronto's weather"
+        ],
+        "correct": 1,
+        "explanation": "The passage talks about various public parks in Toronto."
+      },
+      {
+        "id": 2,
+        "question": "Which park is famous for cherry blossom trees?",
+        "options": [
+          "A. Allan Gardens",
+          "B. Trinity Bellwoods Park",
+          "C. High Park",
+          "D. Riverdale Park"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that High Park is known for its cherry blossom trees."
+      },
+      {
+        "id": 3,
+        "question": "What can you find at Allan Gardens?",
+        "options": [
+          "A. Soccer fields",
+          "B. Cherry blossoms",
+          "C. Tropical plants",
+          "D. Children's playground"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions Allan Gardens has a conservatory with tropical plants."
+      },
+      {
+        "id": 4,
+        "question": "What do people do at Trinity Bellwoods Park?",
+        "options": [
+          "A. Watch movies",
+          "B. Play video games",
+          "C. Have picnics",
+          "D. Go shopping"
+        ],
+        "correct": 2,
+        "explanation": "The passage explains that Trinity Bellwoods Park is a favorite spot for picnics."
+      },
+      {
+        "id": 5,
+        "question": "When do families often visit parks like Riverdale Park?",
+        "options": [
+          "A. On holidays",
+          "B. At night",
+          "C. On weekends",
+          "D. In summer"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that families visit these parks on weekends."
+      },
+      {
+        "id": 6,
+        "question": "What activities do people do in Toronto's parks?",
+        "options": [
+          "A. Shopping",
+          "B. Dancing",
+          "C. Walking and jogging",
+          "D. Watching TV"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that parks are perfect for walking, jogging, and spending time."
+      },
+      {
+        "id": 7,
+        "question": "What does Riverdale Park offer for children?",
+        "options": [
+          "A. Museums",
+          "B. Sports fields",
+          "C. Playgrounds",
+          "D. Concerts"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that Riverdale Park offers playgrounds for children."
+      },
+      {
+        "id": 8,
+        "question": "Why do people visit parks in spring?",
+        "options": [
+          "A. To see cherry blossoms",
+          "B. To play baseball",
+          "C. To see tropical plants",
+          "D. To go shopping"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions that many people come to High Park to see cherry blossoms in spring."
+      },
+      {
+        "id": 9,
+        "question": "What kind of atmosphere do Toronto's parks provide?",
+        "options": [
+          "A. Busy and noisy",
+          "B. Quiet and relaxing",
+          "C. Dark and scary",
+          "D. Hot and dry"
+        ],
+        "correct": 1,
+        "explanation": "The passage describes the parks as a great escape from busy city life, perfect for relaxing."
+      }
+    ]
+  },
+  {
+    "title": "Winter in Toronto",
+    "passage": "Winter in Toronto is cold and snowy. The temperature often drops below zero degrees Celsius. Many people enjoy winter sports, like skating and skiing. The city has nice parks where families can play in the snow. Popular parks include High Park and Nathan Phillips Square.\n\nDuring winter, Toronto hosts special events. One of the most famous events is the Toronto Winter Carnival. It happens every January. This carnival has ice sculptures, music, and food. Many people go to enjoy the fun with friends and family.\n\nShopping during winter can be exciting. Many stores have sales and special offers for the holiday season. People often buy gifts for their loved ones. The Eaton Centre is a popular shopping mall in Toronto. It is decorated beautifully for Christmas. \n\nWinter is a special time in Toronto. While it is cold outside, people stay warm with hot drinks. They gather together to celebrate and enjoy the season. This makes winter a wonderful time in the city.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A) Summer in Toronto",
+          "B) Winter in Toronto",
+          "C) Spring activities",
+          "D) Fall shopping"
+        ],
+        "correct": 1,
+        "explanation": "The passage is about winter in Toronto."
+      },
+      {
+        "id": 2,
+        "question": "Where do families play in the snow?",
+        "options": [
+          "A) In their homes",
+          "B) At the beach",
+          "C) In parks",
+          "D) At the mall"
+        ],
+        "correct": 2,
+        "explanation": "Families play in parks like High Park and Nathan Phillips Square."
+      },
+      {
+        "id": 3,
+        "question": "What temperature does it often drop to in winter?",
+        "options": [
+          "A) Above zero",
+          "B) Below zero",
+          "C) About 10 degrees",
+          "D) Around 20 degrees"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that the temperature often drops below zero degrees Celsius."
+      },
+      {
+        "id": 4,
+        "question": "What event happens every January in Toronto?",
+        "options": [
+          "A) Summer Festival",
+          "B) Toronto Winter Carnival",
+          "C) Fall Fair",
+          "D) Spring Parade"
+        ],
+        "correct": 1,
+        "explanation": "The Toronto Winter Carnival is the event that happens every January."
+      },
+      {
+        "id": 5,
+        "question": "What can people find at the Toronto Winter Carnival?",
+        "options": [
+          "A) Ice sculptures",
+          "B) Swimming pools",
+          "C) Surfing contests",
+          "D) Hot air balloons"
+        ],
+        "correct": 0,
+        "explanation": "The carnival features ice sculptures, music, and food."
+      },
+      {
+        "id": 6,
+        "question": "What do stores offer during winter?",
+        "options": [
+          "A) Free candy",
+          "B) Special offers",
+          "C) Summer clothes",
+          "D) Outdoor furniture"
+        ],
+        "correct": 1,
+        "explanation": "Stores have sales and special offers during the holiday season."
+      },
+      {
+        "id": 7,
+        "question": "Where is a popular shopping mall in Toronto?",
+        "options": [
+          "A) Downtown Toronto",
+          "B) Eaton Centre",
+          "C) High Park",
+          "D) Nathan Phillips Square"
+        ],
+        "correct": 1,
+        "explanation": "The Eaton Centre is a popular shopping mall mentioned in the passage."
+      },
+      {
+        "id": 8,
+        "question": "How do people stay warm in winter?",
+        "options": [
+          "A) By going swimming",
+          "B) By wearing shorts",
+          "C) By drinking hot drinks",
+          "D) By sitting outside"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that people stay warm with hot drinks."
+      },
+      {
+        "id": 9,
+        "question": "Why is winter a wonderful time in Toronto?",
+        "options": [
+          "A) Because it is sunny",
+          "B) Because people celebrate together",
+          "C) Because schools are closed",
+          "D) Because no one goes outside"
+        ],
+        "correct": 1,
+        "explanation": "People gather to celebrate and enjoy the season, making it wonderful."
+      }
+    ]
+  },
+  {
+    "title": "Exploring the Ottawa Tulip Festival",
+    "passage": "The Ottawa Tulip Festival is a popular event that happens every spring in Canada’s capital city, Ottawa. This festival celebrates the beautiful tulip flowers that bloom during the season. It started in 1953 as a gift from the Netherlands to Canada. The Netherlands gave these tulips to thank Canada for helping during World War II.\n\nEvery year, thousands of visitors come to see the colorful tulips in bloom at Commissioners Park. There are many activities at the festival. People can enjoy live music, dance performances, and food from different cultures. Families can also take part in fun games and workshops, where children can learn about nature.\n\nThe festival usually lasts for ten days, from early May to mid-May. It is free to enter, but some activities may have a small fee. The best time to visit is during the weekends when the park is full of people celebrating the flowers. The festival brings joy to many and shows the friendship between Canada and the Netherlands.\n\nIf you want to visit the festival, it is easy to get there by public transport. Buses run frequently from downtown Ottawa to Commissioners Park. The nearest bus stop is just a short walk from the park entrance. Remember to bring your camera to take pictures of the beautiful tulips!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A tulip flower",
+          "The Ottawa Tulip Festival",
+          "World War II",
+          "A park in Ottawa"
+        ],
+        "correct": 1,
+        "explanation": "The passage is about the Ottawa Tulip Festival."
+      },
+      {
+        "id": 2,
+        "question": "When does the Ottawa Tulip Festival happen?",
+        "options": [
+          "In winter",
+          "In spring",
+          "In summer",
+          "In fall"
+        ],
+        "correct": 1,
+        "explanation": "The festival takes place every spring."
+      },
+      {
+        "id": 3,
+        "question": "Who gave tulips to Canada?",
+        "options": [
+          "Canada",
+          "The United States",
+          "Germany",
+          "The Netherlands"
+        ],
+        "correct": 3,
+        "explanation": "The Netherlands gave tulips to Canada."
+      },
+      {
+        "id": 4,
+        "question": "What is one activity people can do at the festival?",
+        "options": [
+          "Watch movies",
+          "Enjoy live music",
+          "Go skiing",
+          "Play basketball"
+        ],
+        "correct": 1,
+        "explanation": "People can enjoy live music at the festival."
+      },
+      {
+        "id": 5,
+        "question": "How long does the festival last?",
+        "options": [
+          "Five days",
+          "Seven days",
+          "Ten days",
+          "Two weeks"
+        ],
+        "correct": 2,
+        "explanation": "The festival usually lasts for ten days."
+      },
+      {
+        "id": 6,
+        "question": "Is there a fee to enter the festival?",
+        "options": [
+          "Yes, it's very expensive",
+          "Yes, a large fee",
+          "No, it is free",
+          "Only for children"
+        ],
+        "correct": 2,
+        "explanation": "It is free to enter the festival."
+      },
+      {
+        "id": 7,
+        "question": "What should visitors remember to bring?",
+        "options": [
+          "A jacket",
+          "A flower",
+          "A camera",
+          "A blanket"
+        ],
+        "correct": 2,
+        "explanation": "Visitors should bring a camera to take pictures."
+      },
+      {
+        "id": 8,
+        "question": "Where is Commissioners Park located?",
+        "options": [
+          "In Toronto",
+          "In Ottawa",
+          "In Vancouver",
+          "In Montreal"
+        ],
+        "correct": 1,
+        "explanation": "Commissioners Park is located in Ottawa."
+      },
+      {
+        "id": 9,
+        "question": "How can people get to the festival from downtown Ottawa?",
+        "options": [
+          "By walking only",
+          "By car only",
+          "By public transport",
+          "By train only"
+        ],
+        "correct": 2,
+        "explanation": "People can get to the festival by public transport."
+      }
+    ]
+  },
+  {
+    "title": "Exploring the Toronto Zoo",
+    "passage": "The Toronto Zoo is one of the largest zoos in Canada. It is located in the east end of Toronto. The zoo has many animals from around the world. Each area of the zoo focuses on a different part of the world, such as Africa or Asia.\n\nVisitors can see lions, tigers, and bears. There are also many birds, reptiles, and even some marine animals. The zoo has special shows where you can learn more about the animals. These shows happen at different times during the day.\n\nIn addition to the animals, the Toronto Zoo offers fun activities for families. There are playgrounds, picnic areas, and gift shops. You can also buy food and drinks at the zoo. It is a great place for a family day out.\n\nThe Toronto Zoo is open all year round. In the summer, it is busy with many visitors. In the winter, some animals go inside, but the zoo still has many things to see. A trip to the Toronto Zoo is an exciting adventure for everyone.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A zoo in Toronto",
+          "Winter sports",
+          "Shopping in Toronto",
+          "History of Toronto"
+        ],
+        "correct": 0,
+        "explanation": "The passage is about the Toronto Zoo."
+      },
+      {
+        "id": 2,
+        "question": "Where is the Toronto Zoo located?",
+        "options": [
+          "In the west of Toronto",
+          "In the north of Toronto",
+          "In the east of Toronto",
+          "In the center of Toronto"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the zoo is in the east end of Toronto."
+      },
+      {
+        "id": 3,
+        "question": "What kind of animals can you see at the zoo?",
+        "options": [
+          "Only birds",
+          "Only marine animals",
+          "Many different animals",
+          "Only reptiles"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions lions, tigers, bears, birds, reptiles, and marine animals."
+      },
+      {
+        "id": 4,
+        "question": "What special events does the zoo have?",
+        "options": [
+          "Shopping events",
+          "Animal shows",
+          "Food festivals",
+          "Concerts"
+        ],
+        "correct": 1,
+        "explanation": "The passage says there are special shows to learn about the animals."
+      },
+      {
+        "id": 5,
+        "question": "What activities are offered for families at the zoo?",
+        "options": [
+          "Movie nights",
+          "Playgrounds and picnic areas",
+          "Music concerts",
+          "Art classes"
+        ],
+        "correct": 1,
+        "explanation": "The passage lists playgrounds, picnic areas, and gift shops as activities."
+      },
+      {
+        "id": 6,
+        "question": "Is the Toronto Zoo open throughout the year?",
+        "options": [
+          "Yes, all year round",
+          "Only in summer",
+          "Only in winter",
+          "Only on weekends"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that the zoo is open all year round."
+      },
+      {
+        "id": 7,
+        "question": "What happens to some animals in winter?",
+        "options": [
+          "They sleep all winter",
+          "They go inside",
+          "They leave the zoo",
+          "They become more active"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that some animals go inside during winter."
+      },
+      {
+        "id": 8,
+        "question": "Why is the Toronto Zoo a great place for families?",
+        "options": [
+          "It is free to enter",
+          "It has many animals and activities",
+          "It has no animals",
+          "It is only for adults"
+        ],
+        "correct": 1,
+        "explanation": "The passage explains that it is a great place for families due to animals and activities."
+      },
+      {
+        "id": 9,
+        "question": "What can you buy at the zoo?",
+        "options": [
+          "Books",
+          "Furniture",
+          "Food and drinks",
+          "Homes"
+        ],
+        "correct": 2,
+        "explanation": "The passage states you can buy food and drinks at the zoo."
+      }
+    ]
+  },
+  {
+    "title": "Winter Fun in Ottawa",
+    "passage": "Ottawa is a beautiful city in Canada. In the winter, it becomes a winter wonderland. Many people come to Ottawa to enjoy the snow and ice. One of the most popular activities is skating on the Rideau Canal. The Rideau Canal is the longest skating rink in the world. It is open every winter when the weather is cold enough. \n\nDuring the winter months, there are many festivals. One big festival is Winterlude. This festival has ice sculptures, music, and delicious food. Families can also play games in the snow. It is a great way to spend time with friends and enjoy the cold weather.\n\nMany people dress warmly in winter. They wear coats, scarves, gloves, and boots. It is important to stay warm while having fun outside. Children love to go sledding or build snowmen. The snow is soft and perfect for playing. \n\nIf you visit Ottawa in winter, remember to enjoy the outdoor activities. Don’t forget to try hot chocolate after skating! Winter in Ottawa is full of exciting things to do.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A) Summer activities",
+          "B) Winter in Ottawa",
+          "C) Shopping in Ottawa",
+          "D) Spring flowers"
+        ],
+        "correct": 1,
+        "explanation": "The passage talks about winter activities in Ottawa."
+      },
+      {
+        "id": 2,
+        "question": "What is the Rideau Canal known for?",
+        "options": [
+          "A) Ice fishing",
+          "B) Skating",
+          "C) Boating",
+          "D) Swimming"
+        ],
+        "correct": 1,
+        "explanation": "The Rideau Canal is the longest skating rink in the world."
+      },
+      {
+        "id": 3,
+        "question": "What festival takes place in Ottawa during winter?",
+        "options": [
+          "A) Summerfest",
+          "B) Winterlude",
+          "C) Spring Fair",
+          "D) Harvest Festival"
+        ],
+        "correct": 1,
+        "explanation": "The festival mentioned is Winterlude."
+      },
+      {
+        "id": 4,
+        "question": "What do people wear to stay warm in winter?",
+        "options": [
+          "A) Shorts and t-shirts",
+          "B) Coats and scarves",
+          "C) Swimsuits",
+          "D) Hats and sandals"
+        ],
+        "correct": 1,
+        "explanation": "People wear coats, scarves, gloves, and boots to stay warm."
+      },
+      {
+        "id": 5,
+        "question": "What do children love to do in the snow?",
+        "options": [
+          "A) Swim",
+          "B) Sledding",
+          "C) Dance",
+          "D) Ride bicycles"
+        ],
+        "correct": 1,
+        "explanation": "Children enjoy sledding and building snowmen in the snow."
+      },
+      {
+        "id": 6,
+        "question": "What should you try after skating?",
+        "options": [
+          "A) Ice cream",
+          "B) Hot chocolate",
+          "C) Salad",
+          "D) Pizza"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests trying hot chocolate after skating."
+      },
+      {
+        "id": 7,
+        "question": "What can families do at Winterlude?",
+        "options": [
+          "A) Play video games",
+          "B) Watch movies",
+          "C) Play games in the snow",
+          "D) Go shopping"
+        ],
+        "correct": 2,
+        "explanation": "Families can play games in the snow during the festival."
+      },
+      {
+        "id": 8,
+        "question": "Why do people visit Ottawa in winter?",
+        "options": [
+          "A) To enjoy winter activities",
+          "B) To see flowers",
+          "C) To go swimming",
+          "D) To shop for clothes"
+        ],
+        "correct": 0,
+        "explanation": "People visit to enjoy winter activities like skating and festivals."
+      },
+      {
+        "id": 9,
+        "question": "What makes Ottawa a winter wonderland?",
+        "options": [
+          "A) The beaches",
+          "B) The flowers",
+          "C) The snow and ice",
+          "D) The heat"
+        ],
+        "correct": 2,
+        "explanation": "Ottawa is beautiful in winter because of the snow and ice."
+      }
+    ]
+  },
+  {
+    "title": "Winter in Toronto",
+    "passage": "Winter in Toronto can be very cold and snowy. The temperature often drops below zero degrees Celsius. People need to dress warmly when they go outside. A good winter jacket, a hat, and gloves are important to stay warm.\n\nIn winter, many people enjoy activities like ice skating and skiing. The city has several outdoor ice rinks where families can skate together. Skiing is popular in nearby areas like Blue Mountain. Many Toronto residents take day trips to enjoy the snow.\n\nDuring winter, it is essential to keep safe on icy sidewalks. People should wear boots with good grip to avoid slipping. It is also important for drivers to be careful when roads are icy. They should drive slowly and keep a safe distance from other cars.\n\nWinter festivals are common in Toronto. Events like the Toronto Light Festival bring people together to enjoy lights and art. Many families visit Nathan Phillips Square to see the Christmas tree and enjoy hot chocolate. Winter is a special time in Toronto, full of fun activities and celebrations.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What can winter in Toronto be like?",
+        "options": [
+          "A cold and snowy season",
+          "A hot and sunny season",
+          "A rainy and windy season",
+          "A warm and dry season"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that winter in Toronto can be cold and snowy."
+      },
+      {
+        "id": 2,
+        "question": "What do people need to wear in winter?",
+        "options": [
+          "Summer clothes",
+          "Warm clothing",
+          "Swimwear",
+          "Business suits"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that people need to dress warmly in winter."
+      },
+      {
+        "id": 3,
+        "question": "What activities do people enjoy in winter?",
+        "options": [
+          "Swimming and surfing",
+          "Ice skating and skiing",
+          "Picnicking and gardening",
+          "Running and cycling"
+        ],
+        "correct": 1,
+        "explanation": "The passage describes ice skating and skiing as popular winter activities."
+      },
+      {
+        "id": 4,
+        "question": "Where can families skate in Toronto?",
+        "options": [
+          "In their backyards",
+          "On outdoor ice rinks",
+          "In swimming pools",
+          "At shopping malls"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that the city has several outdoor ice rinks for families."
+      },
+      {
+        "id": 5,
+        "question": "What should people wear to be safe on icy sidewalks?",
+        "options": [
+          "Flip-flops",
+          "Boots with good grip",
+          "Sandals",
+          "High heels"
+        ],
+        "correct": 1,
+        "explanation": "The passage advises wearing boots with good grip to avoid slipping on icy sidewalks."
+      },
+      {
+        "id": 6,
+        "question": "What should drivers do on icy roads?",
+        "options": [
+          "Drive fast",
+          "Drive slowly",
+          "Ignore the weather",
+          "Use only the front brakes"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that drivers should drive slowly when roads are icy."
+      },
+      {
+        "id": 7,
+        "question": "What festival is mentioned in the passage?",
+        "options": [
+          "Toronto Light Festival",
+          "Toronto Summer Festival",
+          "Toronto Music Festival",
+          "Toronto Food Festival"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions the Toronto Light Festival as a winter event."
+      },
+      {
+        "id": 8,
+        "question": "What do many families enjoy at Nathan Phillips Square?",
+        "options": [
+          "Hot chocolate and the Christmas tree",
+          "Summer concerts",
+          "Beach volleyball",
+          "Outdoor movies"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that many families visit Nathan Phillips Square for the Christmas tree and hot chocolate."
+      },
+      {
+        "id": 9,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "Shopping in Toronto",
+          "Winter in Toronto",
+          "Summer activities",
+          "Spring flowers"
+        ],
+        "correct": 1,
+        "explanation": "The passage focuses on winter in Toronto and related activities."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Development on Indigenous Communities in Canada",
+    "passage": "In recent years, the discourse surrounding urban development in Canada has increasingly highlighted the tension between modernization efforts and Indigenous rights. Notwithstanding the potential economic benefits attributed to urban expansion, Indigenous leaders have raised concerns regarding the displacement of communities and loss of cultural heritage. The juxtaposition of urban growth against the backdrop of traditional territories frequently exacerbates these issues, leading to protests and legal challenges that underscore the need for a reconciliatory approach to development. \n\nMoreover, recent studies conducted by the University of Ottawa have illustrated that while urban development projects promise infrastructure upgrades, they invariably overlook the voices of Indigenous stakeholders. These projects often proceed without adequate consultation, resulting in a pattern of marginalization that has been documented in various reports. This lack of engagement not only undermines trust between Indigenous communities and governmental bodies but also jeopardizes the sustainability of development initiatives in the long run. \n\nOrganizations advocating for Indigenous rights emphasize the necessity of incorporating traditional ecological knowledge into urban planning as a means of achieving a more inclusive and environmentally sound outcome. By interweaving Indigenous perspectives into these dialogues, Canadian cities could transition towards development paradigms that honor both the land and its original stewards. Therefore, as the debate continues, policymakers are urged to prioritize collaborative frameworks that integrate Indigenous voices, promoting a future where growth and tradition coexist harmoniously.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary concern do Indigenous leaders have regarding urban development?",
+        "options": [
+          "A. Increased job opportunities",
+          "B. Displacement of communities",
+          "C. Improved infrastructure",
+          "D. Economic growth"
+        ],
+        "correct": 1,
+        "explanation": "Indigenous leaders emphasize concerns about community displacement rather than the economic benefits."
+      },
+      {
+        "id": 2,
+        "question": "According to the University of Ottawa studies, what aspect of urban development is often overlooked?",
+        "options": [
+          "A. Economic sustainability",
+          "B. Traditional ecological knowledge",
+          "C. Infrastructure improvements",
+          "D. Government policy adherence"
+        ],
+        "correct": 1,
+        "explanation": "The studies point out that Indigenous voices are frequently ignored in urban development planning."
+      },
+      {
+        "id": 3,
+        "question": "What is implied about the relationship between Indigenous communities and governmental bodies?",
+        "options": [
+          "A. It is improving over time.",
+          "B. There is a deep-rooted mistrust.",
+          "C. It is based solely on economic factors.",
+          "D. There is a strong collaboration."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests there is a pattern of marginalization that leads to mistrust."
+      },
+      {
+        "id": 4,
+        "question": "Which of the following best describes the tone of the passage?",
+        "options": [
+          "A. Optimistic",
+          "B. Critical",
+          "C. Indifferent",
+          "D. Neutral"
+        ],
+        "correct": 1,
+        "explanation": "The passage critically examines the consequences of urban development on Indigenous communities."
+      },
+      {
+        "id": 5,
+        "question": "What is the author advocating for regarding urban development policies?",
+        "options": [
+          "A. Continued economic expansion without input",
+          "B. Exclusive use of modern architectural practices",
+          "C. Enhanced collaboration with Indigenous perspectives",
+          "D. Minimization of consultation procedures"
+        ],
+        "correct": 2,
+        "explanation": "The author stresses the importance of integrating Indigenous voices into the development process."
+      },
+      {
+        "id": 6,
+        "question": "How does the author perceive traditional ecological knowledge in the context of urban planning?",
+        "options": [
+          "A. As irrelevant to modern needs",
+          "B. As essential for sustainable development",
+          "C. As a hindrance to urban growth",
+          "D. As a historical concept with no current value"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights the potential of traditional knowledge to create environmentally sound outcomes."
+      },
+      {
+        "id": 7,
+        "question": "What can be inferred about the future of urban development in Canada?",
+        "options": [
+          "A. It will continue without Indigenous engagement.",
+          "B. It must evolve to include diverse perspectives.",
+          "C. Indigenous communities will remain unaffected.",
+          "D. Economic factors will take precedence over cultural concerns."
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that future development should integrate Indigenous perspectives for progress."
+      },
+      {
+        "id": 8,
+        "question": "What consequence is associated with the lack of consultation in urban development projects?",
+        "options": [
+          "A. Increased funding for infrastructure",
+          "B. Widespread community approval",
+          "C. Sustainability of future initiatives jeopardized",
+          "D. Enhanced governmental reputation"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that ignoring community voices can negatively impact the sustainability of projects."
+      },
+      {
+        "id": 9,
+        "question": "What does the author imply about the nature of protests and legal challenges mentioned?",
+        "options": [
+          "A. They are purely reactionary and unjustified.",
+          "B. They reflect a strong desire for cultural preservation.",
+          "C. They are encouraged by governmental bodies.",
+          "D. They are isolated occurrences with no significance."
+        ],
+        "correct": 1,
+        "explanation": "The protests and legal challenges arise from Indigenous communities' desire to protect their rights and heritage."
+      }
+    ]
+  },
+  {
+    "title": "Urban Transit Policy in Canada: Challenges and Innovations",
+    "passage": "In recent years, Canadian urban centers have increasingly grappled with the multifaceted challenges posed by public transit systems. Notwithstanding significant investments made by municipal governments, issues such as overcrowding, inefficiency, and environmental sustainability continue to exacerbate the plight of commuters. The juxtaposition of ongoing infrastructural needs against budgetary constraints has led policymakers to seek innovative solutions that prioritize both the immediate and long-term needs of the populace. \n\nAcross cities like Toronto and Vancouver, there exists a growing recognition that traditional approaches to transit planning are insufficient. Recent studies suggest that adaptive strategies, which incorporate technology and community feedback, can foster a more responsive and efficient public transport environment. For instance, the implementation of dynamic pricing models and real-time data analytics has illustrated potential improvements in service delivery, reducing wait times while simultaneously managing demand. This shift towards a data-driven framework underscores the necessity of embracing flexibility in policy development. \n\nHowever, as transit authorities pursue these advancements, they must also remain cognizant of the socio-economic disparities that influence access to public transportation. Initiatives aimed at increasing capacity must be carefully designed to include marginalized communities, ensuring that benefits are equitably distributed. Ultimately, the successful evolution of urban transit policies will hinge on an integrative approach that harmonizes technological innovation with social equity, fostering not only growth but also cohesion within Canada’s diverse urban landscapes.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What implication does the author make regarding traditional transit planning?",
+        "options": [
+          "A) It is highly effective.",
+          "B) It remains unchangeable.",
+          "C) It requires urgent reform.",
+          "D) It is widely accepted.",
+          "correct”: 2, ",
+          "explanation”: ",
+          "The author implies that traditional approaches are insufficient and require reform."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Navigating the Intersection of Urban Development and Climate Policy in Toronto",
+    "passage": "In recent years, Toronto has emerged as a focal point in the discourse surrounding urban development and climate policy. Notwithstanding the city's ambitious sustainability goals, the juxtaposition of rapid population growth and environmental degradation poses a significant challenge for policymakers. Urban planners are increasingly pressed to design infrastructure that not only accommodates the influx of residents but also mitigates the adverse effects of climate change. Reports indicate that while new developments are being greenlit, they often exacerbate existing issues related to affordable housing and public transportation efficiency.\n\nFurthermore, the City of Toronto's Climate Action Strategy has outlined various initiatives, such as the promotion of public transit use and the enhancement of green spaces. However, these initiatives frequently encounter resistance from stakeholders who prioritize economic growth over environmental considerations. Critics argue that the city’s focus on sustainability could inadvertently detract from its economic competitiveness. This tension necessitates a careful balancing act, wherein the need for immediate economic development does not overshadow long-term environmental sustainability.\n\nMoreover, recent studies highlight the necessity of integrating climate resilience into all aspects of urban planning. The challenge remains that stakeholders often possess divergent interests; therefore, fostering dialogue among community members, developers, and policymakers is imperative. As Toronto continues to face these multifaceted challenges, a collaborative approach may offer the most viable pathway towards achieving both economic prosperity and environmental stewardship.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the article?",
+        "options": [
+          "A) Climate resilience in Toronto",
+          "B) Urban development challenges",
+          "C) Balancing economic growth and sustainability",
+          "D) Affordable housing initiatives in Toronto"
+        ],
+        "correct": 2,
+        "explanation": "The article discusses how urban development and climate policy intersect, highlighting the tension between economic growth and sustainability."
+      },
+      {
+        "id": 2,
+        "question": "Which issue is highlighted as exacerbated by new developments in Toronto?",
+        "options": [
+          "A) Public transportation access",
+          "B) Environmental regulations",
+          "C) Economic investment",
+          "D) Affordable housing"
+        ],
+        "correct": 3,
+        "explanation": "The passage mentions that new developments often worsen existing issues related to affordable housing."
+      },
+      {
+        "id": 3,
+        "question": "What concern do critics raise regarding Toronto’s Climate Action Strategy?",
+        "options": [
+          "A) It is too focused on public transit",
+          "B) It may harm the city's economic growth",
+          "C) It lacks stakeholder engagement",
+          "D) It does not address urban sprawl"
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that the City's focus on sustainability could inadvertently detract from its economic competitiveness."
+      },
+      {
+        "id": 4,
+        "question": "What is implied about the stakeholders involved in Toronto's urban planning?",
+        "options": [
+          "A) They have unified interests",
+          "B) They are indifferent to climate policy",
+          "C) They often have conflicting priorities",
+          "D) They support all proposed developments"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that stakeholders possess divergent interests, which complicates urban planning."
+      },
+      {
+        "id": 5,
+        "question": "According to the article, what approach is suggested for dealing with urban development and climate challenges in Toronto?",
+        "options": [
+          "A) Prioritize economic development over environmental concerns",
+          "B) Engage in collaborative dialogue among various stakeholders",
+          "C) Implement stricter regulations without community input",
+          "D) Focus solely on enhancing public transit"
+        ],
+        "correct": 1,
+        "explanation": "The passage advocates for fostering dialogue among community members, developers, and policymakers."
+      },
+      {
+        "id": 6,
+        "question": "How does the author convey the urgency of addressing the intersection of development and climate policy?",
+        "options": [
+          "A) By listing successful projects",
+          "B) By illustrating challenges without solutions",
+          "C) By making comparisons to other cities",
+          "D) By emphasizing the need for immediate actions"
+        ],
+        "correct": 3,
+        "explanation": "The author describes the pressing nature of challenges faced in Toronto, emphasizing the need for urgent action."
+      },
+      {
+        "id": 7,
+        "question": "The term 'juxtaposition' in the passage suggests which of the following?",
+        "options": [
+          "A) A harmonious relationship between growth and sustainability",
+          "B) A contrast between differing goals",
+          "C) An alignment of interests among stakeholders",
+          "D) A sequence of urban planning steps"
+        ],
+        "correct": 1,
+        "explanation": "'Juxtaposition' indicates a contrast, particularly between rapid growth and environmental degradation."
+      },
+      {
+        "id": 8,
+        "question": "What could be a possible consequence of prioritizing economic growth according to the article?",
+        "options": [
+          "A) Improved public transportation",
+          "B) Enhanced community engagement",
+          "C) Ignored environmental degradation",
+          "D) Increased funding for green projects"
+        ],
+        "correct": 2,
+        "explanation": "The article suggests that prioritizing economic growth may overshadow environmental sustainability, leading to worsened environmental conditions."
+      },
+      {
+        "id": 9,
+        "question": "The overall tone of the article can best be described as:",
+        "options": [
+          "A) Optimistic and hopeful",
+          "B) Critical and reflective",
+          "C) Detached and neutral",
+          "D) Urgent and proactive"
+        ],
+        "correct": 1,
+        "explanation": "The tone reflects a critical examination of the challenges facing Toronto while highlighting the need for a balanced approach."
+      }
+    ]
+  },
+  {
+    "title": "The Economic Implications of Urban Green Spaces in Canada",
+    "passage": "In recent years, the importance of urban green spaces has garnered significant attention within Canadian policy debates, particularly in cities such as Toronto and Vancouver, where population density continues to increase. Notwithstanding the benefits associated with these green areas, such as improved air quality and enhanced public well-being, urban policymakers face the challenge of balancing development with the preservation of these essential ecosystems. Recent studies have demonstrated that access to green spaces can positively influence mental health, thereby potentially reducing healthcare costs in urban populations. \n\nMoreover, the juxtaposition of economic growth and environmental conservation raises critical questions about the sustainability of urban development. Critics argue that the relentless pursuit of expansion can exacerbate social inequalities, relegating low-income communities to areas devoid of adequate public parks. This concern is underscored by a report from the Canadian Urban Institute, which indicated that neighborhoods with higher concentrations of green spaces tend to correlate with increased property values and better socio-economic conditions. Consequently, the lack of equitable access to these areas not only hinders social mobility but also reinforces existing disparities.\n\nIn light of these findings, it is imperative that urban planners adopt a more integrated approach, one that considers both the economic and environmental ramifications of their decisions. As municipalities across Canada ponder over their urban designs, it is essential to recognize that prioritizing green spaces not only supports ecological health but also fosters inclusive community development. Thus, policies that promote the creation and maintenance of green areas might, in the long run, yield greater socio-economic benefits, challenging the notion that economic growth must come at the expense of environmental stewardship.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the primary benefits of urban green spaces mentioned in the passage?",
+        "options": [
+          "A) Improved air quality",
+          "B) Increased property values",
+          "C) Enhanced public well-being",
+          "D) All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The passage lists improved air quality, enhanced public well-being, and implies increased property values indirectly through socio-economic implications."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what challenge do urban policymakers face?",
+        "options": [
+          "A) Achieving economic growth",
+          "B) Balancing development with preservation of ecosystems",
+          "C) Protecting low-income communities",
+          "D) Increasing population density"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically mentions the challenge of balancing development with the preservation of essential ecosystems."
+      },
+      {
+        "id": 3,
+        "question": "How could the lack of green spaces impact low-income communities?",
+        "options": [
+          "A) It hinders social mobility",
+          "B) It reduces healthcare costs",
+          "C) It promotes community development",
+          "D) It lowers property values"
+        ],
+        "correct": 0,
+        "explanation": "The passage states that the lack of equitable access to green spaces hinders social mobility."
+      },
+      {
+        "id": 4,
+        "question": "What tone does the author use when discussing the juxtaposition of economic growth and environmental conservation?",
+        "options": [
+          "A) Critically reflective",
+          "B) Optimistically supportive",
+          "C) Indifferently dismissive",
+          "D) Ambivalently neutral"
+        ],
+        "correct": 0,
+        "explanation": "The phrase 'raises critical questions' indicates a critical reflective tone on the juxtaposition of economic growth with environmental conservation."
+      },
+      {
+        "id": 5,
+        "question": "What implication does the report from the Canadian Urban Institute indicate regarding neighborhoods with more green spaces?",
+        "options": [
+          "A) They are less desirable places to live",
+          "B) They often have higher property values",
+          "C) They lack community-development initiatives",
+          "D) They have increased population density"
+        ],
+        "correct": 1,
+        "explanation": "The passage notes that neighborhoods with higher concentrations of green spaces tend to correlate with increased property values."
+      },
+      {
+        "id": 6,
+        "question": "What is the author's intent when recommending integrated approaches to urban planning?",
+        "options": [
+          "A) To encourage higher property prices",
+          "B) To advocate for economic growth",
+          "C) To highlight the necessity of social equality",
+          "D) To emphasize the connection between economic and environmental sustainability"
+        ],
+        "correct": 3,
+        "explanation": "The author advocates for considering both economic and environmental ramifications, emphasizing sustainability in urban planning."
+      },
+      {
+        "id": 7,
+        "question": "What does the phrase 'notwithstanding the benefits' suggest about the author’s view on urban green spaces?",
+        "options": [
+          "A) The benefits are substantial",
+          "B) Concerns about urban green spaces exist despite the benefits",
+          "C) The benefits are not significant",
+          "D) The author supports development over green spaces"
+        ],
+        "correct": 1,
+        "explanation": "The phrase indicates that despite recognizing the benefits, the author is aware that concerns about urban green spaces remain."
+      },
+      {
+        "id": 8,
+        "question": "In what way does the passage suggest urban planners can benefit socio-economic development?",
+        "options": [
+          "A) By limiting green spaces",
+          "B) By focusing solely on economic growth",
+          "C) By promoting diverse community-oriented designs",
+          "D) By increasing population density"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that policies promoting green spaces can yield greater socio-economic benefits, implying community-oriented designs."
+      },
+      {
+        "id": 9,
+        "question": "What underlying assumption can be inferred about the relationship between green spaces and public health?",
+        "options": [
+          "A) Green spaces have no correlation with health",
+          "B) Improved mental health may reduce healthcare costs",
+          "C) Increased green spaces lead to higher healthcare spending",
+          "D) Access to green spaces is irrelevant to urban life"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that access to green spaces positively influences mental health, which may subsequently reduce healthcare costs."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Heat Islands in Canadian Cities",
+    "passage": "The phenomenon of urban heat islands (UHIs) represents a pressing environmental challenge faced by numerous cities across Canada, particularly in metropolitan regions such as Toronto and Vancouver. These localized areas experience significantly higher temperatures compared to surrounding rural landscapes, primarily as a result of human activities, including extensive asphalt use and insufficient vegetation. A recent study conducted by the University of British Columbia identified that UHI effects exacerbate energy consumption and worsen air quality, thereby posing substantial health risks to vulnerable populations. Notwithstanding these evident drawbacks, urban planning policies have often failed to adequately address the severity of UHIs. \n\nWhen juxtaposed with urban greening initiatives, which emphasize the planting of trees and the creation of green roofs, current policy approaches tend to prioritize immediate economic development over long-term environmental sustainability. This oversight not only undermines efforts to mitigate the effects of climate change but also amplifies social inequities, particularly as low-income neighborhoods typically experience the brunt of these heat-related adversities. While the Canadian government has recognized the importance of sustainable urban development, the implementation of cohesive strategies remains sporadic and inconsistent across provinces. \n\nConsequently, it is imperative that stakeholders, including policymakers and urban planners, collaborate to devise integrative strategies that prioritize both ecological integrity and public health. Fostering community engagement in urban greening projects could ultimately serve to mitigate UHI effects and enhance the quality of life for residents across Canada. As the country progresses toward its climate goals, the urgent need to confront urban heat islands cannot be overstated, demanding immediate and concerted action from all sectors of society.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary cause of urban heat islands does the passage identify?",
+        "options": [
+          "A) Industrial emissions",
+          "B) Vegetation loss",
+          "C) Human activities",
+          "D) Transportation networks"
+        ],
+        "correct": 2,
+        "explanation": "The passage explicitly states that urban heat islands are primarily due to human activities, including extensive asphalt use."
+      },
+      {
+        "id": 2,
+        "question": "What does the study from the University of British Columbia highlight?",
+        "options": [
+          "A) Energy consumption is decreasing in urban areas.",
+          "B) Air quality is improving in low-income neighborhoods.",
+          "C) UHIs worsen air quality and energy consumption.",
+          "D) Urban planning has successfully mitigated UHIs."
+        ],
+        "correct": 2,
+        "explanation": "The study indicates that UHI effects exacerbate energy consumption and worsen air quality."
+      },
+      {
+        "id": 3,
+        "question": "How does the author view current urban planning policies in relation to UHIs?",
+        "options": [
+          "A) They have successfully reduced UHI effects.",
+          "B) They are fully aware of UHI issues.",
+          "C) They tend to focus on short-term growth.",
+          "D) They integrate community engagement effectively."
+        ],
+        "correct": 2,
+        "explanation": "The author suggests that current policies prioritize short-term economic development over addressing UHI issues."
+      },
+      {
+        "id": 4,
+        "question": "What social impact does the author imply results from the neglect of UHI strategies?",
+        "options": [
+          "A) Improved public health outcomes.",
+          "B) Increased housing prices.",
+          "C) Social inequities in heat exposure.",
+          "D) Greater community cohesion."
+        ],
+        "correct": 2,
+        "explanation": "The author states that low-income neighborhoods experience the brunt of heat-related adversities, signaling increased social inequities."
+      },
+      {
+        "id": 5,
+        "question": "According to the passage, what is an essential step toward addressing UHIs?",
+        "options": [
+          "A) Enhancing economic development.",
+          "B) Isolating urban neighborhoods.",
+          "C) Engaging community in urban greening.",
+          "D) Reducing transportation emissions."
+        ],
+        "correct": 2,
+        "explanation": "The passage emphasizes the importance of community engagement in urban greening projects to mitigate UHI effects."
+      },
+      {
+        "id": 6,
+        "question": "Which term best represents the author's tone regarding urban heat islands?",
+        "options": [
+          "A) Dismissive",
+          "B) Urgent",
+          "C) Optimistic",
+          "D) Indifferent"
+        ],
+        "correct": 1,
+        "explanation": "The author conveys a sense of urgency regarding the need to address urban heat islands."
+      },
+      {
+        "id": 7,
+        "question": "What does the author imply about the government's response to UHIs?",
+        "options": [
+          "A) It is comprehensive and thorough.",
+          "B) It lacks consistency and coherence.",
+          "C) It prioritizes rural areas over urban ones.",
+          "D) It is largely ineffective in achieving results."
+        ],
+        "correct": 1,
+        "explanation": "The passage reflects on the sporadic and inconsistent nature of the government's implementation of strategies."
+      },
+      {
+        "id": 8,
+        "question": "What potential benefit does urban greening offer, according to the passage?",
+        "options": [
+          "A) Immediate economic returns.",
+          "B) Improvement in climate goals.",
+          "C) Reduction of UHI effects.",
+          "D) Increased urban development."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests that urban greening projects could mitigate UHI effects and improve quality of life."
+      },
+      {
+        "id": 9,
+        "question": "Which factor is portrayed as lesser in importance compared to the ecological integrity in urban policies?",
+        "options": [
+          "A) Public health",
+          "B) Community engagement",
+          "C) Economic development",
+          "D) Environmental sustainability"
+        ],
+        "correct": 2,
+        "explanation": "The author argues that immediate economic development is prioritized over long-term ecological integrity and public health."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Density on Social Well-Being in Toronto",
+    "passage": "Urban density in Toronto has catalyzed significant discourse regarding its implications for social well-being. Increasingly, policymakers and urban planners are scrutinizing the interplay between population concentration and the quality of life afforded to residents. Notwithstanding the benefits such as reduced travel times and enhanced economic activity, concerns have been raised about the exacerbation of social isolation and decreased public safety in highly populated areas. Consequently, the juxtaposition of higher density with a well-integrated community infrastructure has become pivotal in shaping effective urban policy. \n\nRecent studies conducted by the Ontario Research Fund underscore that while dense environments can promote cultural exchanges and innovation, they may simultaneously lead to social stratification. For instance, economic disparities in housing availability often result in a concentration of lower-income households in specific neighbourhoods, thereby limiting their access to essential services and social resources. This phenomenon challenges the notion that urban density inherently fosters inclusivity, revealing that without deliberate intervention, increased density can lead to entrenched inequality.\n\nFurthermore, a comprehensive review of Toronto's zoning bylaws suggests that modifications aimed at promoting mixed-use developments could alleviate some of these concerns. Such strategies would not only facilitate the coexistence of various income groups but also enhance the overall resiliency of urban ecosystems. Ultimately, the necessity for a balanced approach to urban density highlights the complex dynamics at play, emphasizing that policies must transcend mere numerical metrics to genuinely foster social cohesion and equitable development within Canada's largest city.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary concern is raised about urban density in Toronto?",
+        "options": [
+          "A. Lower transportation efficiency",
+          "B. Increased social isolation",
+          "C. Economic stagnation",
+          "D. Higher pollution levels"
+        ],
+        "correct": 1,
+        "explanation": "The passage notes that social isolation is a significant concern associated with urban density."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what is a potential positive outcome of urban density?",
+        "options": [
+          "A. Decreased public safety",
+          "B. Enhanced cultural exchanges",
+          "C. Financial instability",
+          "D. Limited housing options"
+        ],
+        "correct": 1,
+        "explanation": "The text indicates that urban density can promote cultural exchanges, which is a positive outcome."
+      },
+      {
+        "id": 3,
+        "question": "What challenge is posed by economic disparities in Toronto's neighborhoods?",
+        "options": [
+          "A. They improve housing availability for all",
+          "B. They limit access to social resources",
+          "C. They promote cultural diversity",
+          "D. They decrease travel times"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that economic disparities often result in limited access to essential services for lower-income households."
+      },
+      {
+        "id": 4,
+        "question": "What does the passage suggest about Toronto's zoning bylaws?",
+        "options": [
+          "A. They are too lenient on mixed-use developments",
+          "B. They require modifications to promote inclusivity",
+          "C. They effectively balance urban density and social needs",
+          "D. They should discourage economic stratification"
+        ],
+        "correct": 1,
+        "explanation": "The passage argues that modifications to zoning bylaws could help promote mixed-use developments that enhance inclusivity."
+      },
+      {
+        "id": 5,
+        "question": "What can be inferred about the author's stance on urban policy?",
+        "options": [
+          "A. Numerical metrics are sufficient for effective policy",
+          "B. Policies must consider social cohesion",
+          "C. Urban density is inherently negative",
+          "D. Changes to policy are unnecessary"
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the importance of policies that transcend numerical metrics to foster social cohesion."
+      },
+      {
+        "id": 6,
+        "question": "How does the author view the relationship between density and community infrastructure?",
+        "options": [
+          "A. They are unrelated concepts",
+          "B. High density complicates infrastructure planning",
+          "C. Community infrastructure can mitigate density issues",
+          "D. Density naturally leads to better infrastructure"
+        ],
+        "correct": 2,
+        "explanation": "The text suggests that a well-integrated community infrastructure is essential to manage the challenges posed by urban density."
+      },
+      {
+        "id": 7,
+        "question": "What is the author's tone towards current urban policies in Toronto?",
+        "options": [
+          "A. Optimistic",
+          "B. Pessimistic",
+          "C. Indifferent",
+          "D. Cautiously critical"
+        ],
+        "correct": 3,
+        "explanation": "The author's tone reflects cautious criticism, urging for policies that address social issues amidst urban density."
+      },
+      {
+        "id": 8,
+        "question": "Which of the following best summarizes the author's argument about urban density?",
+        "options": [
+          "A. It is beneficial without reservations",
+          "B. It has inherent drawbacks and advantages",
+          "C. It should be avoided entirely",
+          "D. It is solely a financial issue"
+        ],
+        "correct": 1,
+        "explanation": "The author presents a nuanced view that recognizes both the drawbacks and advantages of urban density."
+      },
+      {
+        "id": 9,
+        "question": "What key concept does the author illustrate through the example of Toronto?",
+        "options": [
+          "A. Urbanization leads to environmental degradation",
+          "B. High density necessitates multifaceted urban policies",
+          "C. Economic growth is unrelated to population density",
+          "D. Social issues are secondary to housing concerns"
+        ],
+        "correct": 1,
+        "explanation": "The passage illustrates that urban density requires complex policies that address a range of social and economic issues."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Housing Policies in Toronto",
+    "passage": "In recent years, Toronto has witnessed an escalating housing crisis, which has prompted extensive debate among policymakers, urban planners, and community advocates regarding the effectiveness of current housing policies. Notwithstanding the introduction of inclusionary zoning laws aimed at increasing affordable housing stock, the rising demand for urban living has exacerbated the existing challenges, particularly in lower-income neighborhoods where gentrification is rapidly altering the socioeconomic composition. \n\nOpponents of the current policy framework argue that such measures, while well-intentioned, fail to substantively address the fundamental issues driving the crisis. As housing prices continue to soar, the juxtaposition of luxury residential developments against the backdrop of dilapidated, undervalued properties elucidates a troubling dichotomy. Furthermore, studies have indicated that policies which prioritize market-driven solutions often marginalize vulnerable populations, resulting in a cycle of displacement that undermines community cohesion. \n\nIn response to ongoing critiques, the City of Toronto has initiated collaborative dialogues with stakeholders to explore innovative solutions. These include potential measures such as the expansion of rent control and the development of larger public housing projects. However, the effectiveness of such initiatives remains to be seen, as they require not only financial investment but also a political will that has historically been elusive. Therefore, the future of urban housing policy in Toronto hinges on the ability of stakeholders to reconcile differing interests and craft a comprehensive strategy that addresses both immediate needs and long-term sustainability.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What main issue is addressed in the passage?",
+        "options": [
+          "A) Gentrification only",
+          "B) Rising housing prices",
+          "C) Urban housing policies",
+          "D) Stakeholder dialogues"
+        ],
+        "correct": 2,
+        "explanation": "The passage centers on the challenges posed by current urban housing policies in Toronto."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what impact does gentrification have on lower-income neighborhoods?",
+        "options": [
+          "A) It enhances community diversity",
+          "B) It leads to socio-economic changes",
+          "C) It increases the number of affordable housing options",
+          "D) It has no significant impact"
+        ],
+        "correct": 1,
+        "explanation": "Gentrification is described as rapidly altering the socio-economic composition of lower-income neighborhoods."
+      },
+      {
+        "id": 3,
+        "question": "Which term best describes the relationship between luxury developments and lower-value properties?",
+        "options": [
+          "A) Complementary",
+          "B) Juxtaposed",
+          "C) Interdependent",
+          "D) Collaborative"
+        ],
+        "correct": 1,
+        "explanation": "The passage uses the term 'juxtaposition' to highlight the contrast between luxury developments and undervalued properties."
+      },
+      {
+        "id": 4,
+        "question": "What do critics believe the current housing policies prioritize?",
+        "options": [
+          "A) Community cohesion",
+          "B) Market-driven solutions",
+          "C) Gentrification",
+          "D) Stakeholder involvement"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that critics believe current policies focus too much on market-driven solutions, neglecting vulnerable populations."
+      },
+      {
+        "id": 5,
+        "question": "What can be inferred about the city’s response to housing critiques?",
+        "options": [
+          "A) It has proposed new housing developments",
+          "B) It has ignored the critiques",
+          "C) It has engaged stakeholders in discussions",
+          "D) It is planning to abandon current policies"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that Toronto has initiated dialogues with stakeholders to address criticisms of housing policy."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following is mentioned as a potential measure to improve the housing situation?",
+        "options": [
+          "A) Increased luxury development",
+          "B) Expansion of rent control",
+          "C) Reduction of affordable housing",
+          "D) Increased property taxes"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions the expansion of rent control as one of the innovative measures being considered."
+      },
+      {
+        "id": 7,
+        "question": "What is implied about the future of urban housing policy in Toronto?",
+        "options": [
+          "A) It will rely solely on private developers",
+          "B) It requires compromise among various stakeholders",
+          "C) It will be resolved quickly",
+          "D) It is doomed to fail"
+        ],
+        "correct": 1,
+        "explanation": "The future of urban housing policy hinges on the ability to reconcile differing interests, as suggested in the passage."
+      },
+      {
+        "id": 8,
+        "question": "How does the author view the effectiveness of current housing policies?",
+        "options": [
+          "A) They are highly effective",
+          "B) They are somewhat effective",
+          "C) They are ineffective and marginalizing",
+          "D) They require minimal changes"
+        ],
+        "correct": 2,
+        "explanation": "The author posits that current policies fail to substantively address housing issues and marginalize vulnerable populations."
+      },
+      {
+        "id": 9,
+        "question": "What aspect of urban housing policies has historically been described as elusive, according to the passage?",
+        "options": [
+          "A) Public support",
+          "B) Political will",
+          "C) Stakeholder engagement",
+          "D) Community input"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that achieving the necessary political will for effective policies has been historically elusive."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Policy on Housing Affordability in Toronto",
+    "passage": "In recent years, the city of Toronto has witnessed an escalating crisis regarding housing affordability, a situation exacerbated by both rising demand and insufficient supply. Policy debates within the municipal government have, nonetheless, failed to yield comprehensive solutions, primarily due to conflicting interests among stakeholders. For instance, while developers advocate for reduced regulation to stimulate housing construction, community groups often juxtapose these arguments by emphasizing the need for maintaining affordable housing stock, arguing that unchecked development might lead to a displacement of lower-income residents.\n\nMoreover, the economic implications of housing unaffordability extend beyond mere living conditions; they encapsulate broader social dynamics, influencing everything from public health outcomes to educational access. The Toronto Transit Commission (TTC) has reported that individuals residing in unaffordable housing often experience longer commute times, which can exacerbate stress levels and hinder overall quality of life. In addressing these multifaceted challenges, it becomes essential for policymakers to consider not only the immediate economic consequences but also the long-term social ramifications of their decisions.\n\nConsequently, a collaborative approach that includes diverse voices—ranging from policymakers to residents—may prove critical in crafting effective strategies. Such strategies should prioritize the provision of equitable access to housing while fostering a sustainable urban environment. Ultimately, the resolution of the housing crisis in Toronto hinges upon a delicate balance between development and community needs, revealing the intricacies of urban policy formulation in Canadian cities.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary factor noted in the passage that exacerbates housing affordability issues in Toronto?",
+        "options": [
+          "A) Rising housing prices",
+          "B) Increased immigration",
+          "C) Insufficient housing supply",
+          "D) Strict regulations"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that insufficient supply is a key factor in the housing affordability crisis."
+      },
+      {
+        "id": 2,
+        "question": "Which groups are presented as having conflicting interests regarding housing policy?",
+        "options": [
+          "A) The provincial government and local businesses",
+          "B) Developers and community groups",
+          "C) Real estate agents and the TTC",
+          "D) Environmentalists and city planners"
+        ],
+        "correct": 1,
+        "explanation": "The passage clearly indicates that developers and community groups have opposing views on housing development and regulation."
+      },
+      {
+        "id": 3,
+        "question": "What consequence of unaffordable housing is highlighted in relation to the Toronto Transit Commission?",
+        "options": [
+          "A) Increased fare prices",
+          "B) More frequent transit services",
+          "C) Longer commute times",
+          "D) Decreased job opportunities"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that individuals in unaffordable housing endure longer commutes, impacting their quality of life."
+      },
+      {
+        "id": 4,
+        "question": "Which approach does the author suggest is necessary for addressing housing affordability?",
+        "options": [
+          "A) A focus on increasing market rates",
+          "B) Stakeholder collaboration",
+          "C) Reducing all regulations",
+          "D) Limiting development entirely"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the need for a collaborative approach involving various stakeholders to create effective housing strategies."
+      },
+      {
+        "id": 5,
+        "question": "What underlying issue does the author imply could result from unchecked development in Toronto?",
+        "options": [
+          "A) Increased property tax revenues",
+          "B) Displacement of low-income residents",
+          "C) Enhancement of urban infrastructure",
+          "D) Greater job creation"
+        ],
+        "correct": 1,
+        "explanation": "The author implies that unchecked development could lead to the displacement of lower-income residents, as suggested by the juxtaposition of interests."
+      },
+      {
+        "id": 6,
+        "question": "Which aspect of urban policy does the author suggest is often overlooked in discussions about housing affordability?",
+        "options": [
+          "A) Immediate economic consequences",
+          "B) Long-term social ramifications",
+          "C) Impact on construction jobs",
+          "D) Effects on local businesses"
+        ],
+        "correct": 1,
+        "explanation": "The author points out the importance of considering long-term social ramifications alongside immediate economic impacts."
+      },
+      {
+        "id": 7,
+        "question": "How does the author convey their tone towards the current urban policy debates?",
+        "options": [
+          "A) Optimistic and supportive",
+          "B) Critical and analytical",
+          "C) Indifferent and detached",
+          "D) Encouraging and positive"
+        ],
+        "correct": 1,
+        "explanation": "The passage's language indicates a critical analysis of the current policy debates and their effectiveness in resolving the crisis."
+      },
+      {
+        "id": 8,
+        "question": "What might be inferred as a necessary quality of effective housing solutions according to the text?",
+        "options": [
+          "A) They should prioritize rapid development only",
+          "B) They must be economically sustainable",
+          "C) They need to involve the input of diverse stakeholders",
+          "D) They should exclusively focus on low-income housing"
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that diverse stakeholder involvement is critical for crafting effective housing strategies."
+      },
+      {
+        "id": 9,
+        "question": "What is implied about the relationship between housing affordability and public health?",
+        "options": [
+          "A) They are entirely unrelated",
+          "B) Poor housing affects public health outcomes",
+          "C) Public health concerns drive up housing prices",
+          "D) Affordable housing creates better health facilities"
+        ],
+        "correct": 1,
+        "explanation": "The text implies that unaffordable housing can negatively impact public health outcomes due to longer commutes and associated stress."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Mental Health",
+    "passage": "In recent years, the significance of urban green spaces in Canada has been increasingly recognized not only for their ecological benefits but also for their profound effects on mental health. A growing body of research has suggested that access to parks and natural environments can mitigate symptoms of anxiety and depression among urban residents. Nevertheless, the relationship between green space availability and mental well-being is complex, often exacerbated by socioeconomic disparities. In cities such as Toronto and Vancouver, where high population density can limit access to recreational areas, the mental health of marginalized communities is disproportionately affected. \n\nMoreover, the juxtaposition of affluent neighborhoods—often characterized by abundant parks—and underserved areas raises critical questions regarding urban planning policies. While urban planners have made efforts to increase green space through initiatives such as community gardens and rooftop parks, these measures are sometimes overshadowed by broader structural inequalities that persist. Urban green spaces, therefore, not only serve as vital components of a city's infrastructure but also as potential sites for social equity interventions.\n\nFurthermore, policies aimed at enhancing urban green spaces must be informed by an intersectional approach that considers the diverse needs of the community. For instance, the City of Calgary's recent policy shift emphasizes inclusive design and accessibility, prioritizing green space development in historically neglected areas. Such initiatives, if implemented effectively, could not only improve the overall quality of life for residents but also contribute to breaking the cycle of mental health crises linked to environmental scarcity.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the passage?",
+        "options": [
+          "A green spaces' ecological benefits",
+          "The relationship between urban green spaces and mental health",
+          "Urban planning policies for city development",
+          "Socioeconomic disparities in Canada"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses how access to urban green spaces impacts mental health, which is the primary focus."
+      },
+      {
+        "id": 2,
+        "question": "Which Canadian cities are mentioned in relation to the impact of high population density?",
+        "options": [
+          "Calgary and Montreal",
+          "Vancouver and Ottawa",
+          "Toronto and Vancouver",
+          "Edmonton and Calgary"
+        ],
+        "correct": 2,
+        "explanation": "The passage specifically mentions Toronto and Vancouver regarding the effects of population density on access to green spaces."
+      },
+      {
+        "id": 3,
+        "question": "According to the passage, what exacerbates the mental health disparities in urban environments?",
+        "options": [
+          "Environmental policies",
+          "High population density",
+          "Socioeconomic disparities",
+          "Urban planning disparities"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that socioeconomic disparities exacerbate the relationship between green space availability and mental well-being."
+      },
+      {
+        "id": 4,
+        "question": "Which element does the passage suggest is crucial for effective urban green space policies?",
+        "options": [
+          "Community volunteer involvement",
+          "Government funding allocations",
+          "An intersectional approach",
+          "Expert academic research"
+        ],
+        "correct": 2,
+        "explanation": "The passage emphasizes the importance of an intersectional approach in formulating urban green space policies."
+      },
+      {
+        "id": 5,
+        "question": "What type of interventions does the author imply urban green spaces could support?",
+        "options": [
+          "Economic growth initiatives",
+          "Social equity initiatives",
+          "Environmental protection measures",
+          "Cultural programs for community engagement"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that urban green spaces could serve as sites for social equity interventions."
+      },
+      {
+        "id": 6,
+        "question": "How does the tone of the passage reflect on urban planning efforts?",
+        "options": [
+          "Optimistic and dismissive",
+          "Cynical but hopeful",
+          "Critical yet understanding",
+          "Neutral and informative"
+        ],
+        "correct": 1,
+        "explanation": "The passage acknowledges the efforts made but is critical of the existing structural inequalities in urban planning."
+      },
+      {
+        "id": 7,
+        "question": "What recent policy shift is highlighted in the passage regarding Calgary?",
+        "options": [
+          "Increase of community gardens",
+          "Focus on public transportation",
+          "Emphasis on inclusive design and accessibility",
+          "Development of urban residential spaces"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions Calgary's policy shift emphasizing inclusive design and accessibility in green space development."
+      },
+      {
+        "id": 8,
+        "question": "What is implied about the relationship between mental health crises and environmental scarcity?",
+        "options": [
+          "They are unrelated",
+          "They are primarily due to economic factors",
+          "They contribute to a cycle of social problems",
+          "They affect only certain demographics"
+        ],
+        "correct": 2,
+        "explanation": "The passage implies that mental health crises are linked to environmental scarcity, contributing to broader social challenges."
+      },
+      {
+        "id": 9,
+        "question": "Which of the following best summarizes the author's argument in the passage?",
+        "options": [
+          "Urban green spaces are essential for environmental health",
+          "Access to green spaces enhances mental well-being, with socio-economic factors affecting this access",
+          "Urban planning is sufficient to address mental health issues",
+          "Community involvement is the key to improving urban green spaces"
+        ],
+        "correct": 1,
+        "explanation": "The author argues that access to green spaces improves mental health, highlighting the impact of socio-economic factors."
+      }
+    ]
+  },
+  {
+    "title": "The Implications of Urban Air Quality Policies in Toronto",
+    "passage": "As cities across Canada grapple with the pressing issue of air pollution, Toronto has emerged as a pivotal case study, particularly concerning its urban air quality policies. Recent assessments, conducted by the Toronto Public Health Department, indicate a notable correlation between elevated levels of particulate matter and adverse health outcomes, including respiratory diseases and cardiovascular complications. Notwithstanding the implementation of stringent regulations, the persistent industrial emissions and vehicular traffic continue to exacerbate the situation, challenging policymakers to reevaluate their strategies.\n\nMoreover, a juxtaposition of air quality metrics before and after the introduction of the Clean Air Action Plan reveals a marginal improvement in urban air quality, yet these advancements are often overshadowed by transient spikes in pollution levels during specific high-traffic periods. Experts argue that the effectiveness of the plan hinges upon not only its stringent enforcement but also the public's compliance and engagement in sustainable practices. The role of community awareness campaigns, therefore, becomes increasingly paramount in fostering a culture of environmental responsibility.\n\nAdditionally, the economic ramifications of poor air quality cannot be overlooked. The cost of healthcare related to pollution-induced illnesses is projected to burden the Ontario healthcare system significantly, prompting a need for economic analyses that assess the return on investment for enhanced air quality initiatives. Thus, Toronto's ongoing struggle with air pollution underscores the intricate balance between regulatory measures, public participation, and economic viability, necessitating a holistic approach to policy formulation that accounts for both health outcomes and fiscal sustainability.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the article regarding Toronto's air quality?",
+        "options": [
+          "A) The historical context of air pollution",
+          "B) The effectiveness of urban air quality policies",
+          "C) The industrial growth in Toronto",
+          "D) Comparison with other Canadian cities"
+        ],
+        "correct": 1,
+        "explanation": "The article primarily discusses urban air quality policies and their effectiveness in Toronto."
+      },
+      {
+        "id": 2,
+        "question": "According to the article, what has continued to exacerbate Toronto's air quality issues despite regulations?",
+        "options": [
+          "A) Public awareness campaigns",
+          "B) Improved healthcare systems",
+          "C) Industrial emissions and vehicular traffic",
+          "D) Clean Air Action Plan"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that industrial emissions and vehicular traffic continue to worsen air quality despite regulations."
+      },
+      {
+        "id": 3,
+        "question": "What do experts believe is essential for the success of the Clean Air Action Plan?",
+        "options": [
+          "A) Reducing industrial sites",
+          "B) Increasing public compliance and engagement",
+          "C) Enhanced government funding",
+          "D) Greater emissions from vehicles"
+        ],
+        "correct": 1,
+        "explanation": "Experts emphasize the importance of public compliance and engagement for the success of the Clean Air Action Plan."
+      },
+      {
+        "id": 4,
+        "question": "What economic impact is discussed in relation to air quality?",
+        "options": [
+          "A) The cost of implementing green technologies",
+          "B) The burden on the Ontario healthcare system",
+          "C) Growth in local industries",
+          "D) Revenue from environmental taxes"
+        ],
+        "correct": 1,
+        "explanation": "The article highlights the projected healthcare costs related to pollution-induced illnesses as a significant economic impact."
+      },
+      {
+        "id": 5,
+        "question": "How does the author characterize the role of community awareness campaigns?",
+        "options": [
+          "A) Unnecessary for effective policy",
+          "B) A secondary concern in pollution regulation",
+          "C) Crucial in promoting environmental responsibility",
+          "D) Limited to urban areas only"
+        ],
+        "correct": 2,
+        "explanation": "The passage reflects that community awareness campaigns are crucial for fostering a culture of environmental responsibility."
+      },
+      {
+        "id": 6,
+        "question": "What tone does the author adopt when discussing the ongoing air quality challenges in Toronto?",
+        "options": [
+          "A) Optimistic",
+          "B) Indifferent",
+          "C) Critically analytical",
+          "D) Alarmist"
+        ],
+        "correct": 2,
+        "explanation": "The author adopts a critically analytical tone, discussing the complexities and challenges of the air quality situation."
+      },
+      {
+        "id": 7,
+        "question": "What is inferred about the relationship between policy formulation and public health?",
+        "options": [
+          "A) Policy formulation is only effective with government enforcement",
+          "B) Public health outcomes directly depend on community initiatives",
+          "C) Economic sustainability is a negligible factor",
+          "D) Policy focuses mainly on economic factors rather than health"
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that effective policy formulation considers public participation and health outcomes as fundamental."
+      },
+      {
+        "id": 8,
+        "question": "What conclusion can be drawn about the Clean Air Action Plan based on its results?",
+        "options": [
+          "A) It needs to be abandoned due to inefficiency",
+          "B) It has achieved significant and permanent improvements",
+          "C) It has shown marginal improvements overshadowed by pollution spikes",
+          "D) It is solely effective during peak traffic times"
+        ],
+        "correct": 2,
+        "explanation": "The article concludes that the Clean Air Action Plan has led to marginal improvements but is not wholly effective due to pollution spikes."
+      },
+      {
+        "id": 9,
+        "question": "Why might policymakers in Toronto need to reevaluate their strategies?",
+        "options": [
+          "A) To strengthen the Clean Air Action Plan alone",
+          "B) Due to growing industrial zones in other cities",
+          "C) Because of the ongoing exacerbation of air pollution",
+          "D) To reduce public engagement in environmental issues"
+        ],
+        "correct": 2,
+        "explanation": "Policymakers may need to reevaluate strategies because air pollution continues to worsen despite existing regulations."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Mental Health",
+    "passage": "The significance of urban green spaces within Canadian cities has been the focus of numerous studies, highlighting their multifaceted benefits, particularly concerning mental health. Notwithstanding their relatively small footprint in urban designs, parks and gardens serve as essential sanctuaries where individuals can escape the rigors of daily life. Research conducted by the University of Toronto indicates that individuals with consistent access to these green areas report lower levels of stress and anxiety, suggesting that exposure to natural environments can substantially alleviate urban-induced psychological burdens.\n\nFurthermore, the integration of green spaces into urban planning is not merely an aesthetic consideration but a public health necessity. The juxtaposition of concrete landscapes with verdant environments has provoked discussions regarding urban policy reform, especially in rapidly expanding metropolitan areas such as Vancouver and Montreal. Critics argue that the neglect of these spaces could exacerbate existing societal issues, including mental health crises among increasingly isolated populations. Thus, the expansion and maintenance of green areas should be prioritized in policy developments to foster communal well-being while addressing environmental issues.\n\nIn summation, while urban green spaces may be perceived as supplementary features of city life, their role in enhancing mental health and community cohesion is irrefutable. The imperative for policymakers is to recognize these benefits and incorporate sustainable strategies that guarantee the availability and accessibility of green spaces in urban settings, thereby promoting a healthier, happier populace, one park at a time.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the article?",
+        "options": [
+          "A) The design of urban spaces",
+          "B) The benefits of urban green spaces on mental health",
+          "C) The history of urban parks in Canada",
+          "D) The environmental impact of parks"
+        ],
+        "correct": 1,
+        "explanation": "The article primarily discusses the benefits of urban green spaces on mental health."
+      },
+      {
+        "id": 2,
+        "question": "According to the article, how do urban green spaces affect individuals?",
+        "options": [
+          "A) They contribute to higher stress levels.",
+          "B) They provide a necessary escape from daily life.",
+          "C) They are mainly decorative.",
+          "D) They lead to increased isolation."
+        ],
+        "correct": 1,
+        "explanation": "The article states that urban green spaces serve as sanctuaries, providing an escape from daily stress."
+      },
+      {
+        "id": 3,
+        "question": "What concern do critics express regarding the neglect of green spaces?",
+        "options": [
+          "A) It may lead to more aesthetic urban designs.",
+          "B) It could worsen mental health crises.",
+          "C) It is unnecessary for urban development.",
+          "D) It would diminish property values."
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that neglecting green spaces can exacerbate societal issues, including mental health crises."
+      },
+      {
+        "id": 4,
+        "question": "What implication does the article suggest about urban planning?",
+        "options": [
+          "A) Aesthetic concerns should precede health considerations.",
+          "B) Green spaces should be integrated into urban policies.",
+          "C) Urban spaces do not impact mental health.",
+          "D) The focus should remain on concrete structures."
+        ],
+        "correct": 1,
+        "explanation": "The article implies that integrating green spaces into urban planning is crucial for public health."
+      },
+      {
+        "id": 5,
+        "question": "Which Canadian cities are mentioned in relation to urban policy reform?",
+        "options": [
+          "A) Toronto and Ottawa",
+          "B) Calgary and Edmonton",
+          "C) Vancouver and Montreal",
+          "D) Halifax and Quebec City"
+        ],
+        "correct": 2,
+        "explanation": "Vancouver and Montreal are specifically mentioned in the context of urban policy reform regarding green spaces."
+      },
+      {
+        "id": 6,
+        "question": "How does the author view the role of urban green spaces in city life?",
+        "options": [
+          "A) As a luxury feature",
+          "B) As a supplementary concern",
+          "C) As essential for mental health and community cohesion",
+          "D) As secondary to environmental issues"
+        ],
+        "correct": 2,
+        "explanation": "The author argues that the role of urban green spaces is essential for mental health and community cohesion."
+      },
+      {
+        "id": 7,
+        "question": "What does the author recommend for policymakers?",
+        "options": [
+          "A) To minimize the amount of urban green space",
+          "B) To ignore the aesthetic of parks",
+          "C) To prioritize the expansion and maintenance of green areas",
+          "D) To focus exclusively on economic development"
+        ],
+        "correct": 2,
+        "explanation": "The author recommends that policymakers prioritize the expansion and maintenance of green areas."
+      },
+      {
+        "id": 8,
+        "question": "What does the article imply about the relationship between urban environments and community well-being?",
+        "options": [
+          "A) Urban environments have no effect on well-being.",
+          "B) Concrete landscapes enhance community well-being.",
+          "C) Green spaces can significantly enhance community well-being.",
+          "D) Only economic factors affect community well-being."
+        ],
+        "correct": 2,
+        "explanation": "The article implies that green spaces significantly enhance community well-being."
+      },
+      {
+        "id": 9,
+        "question": "What tone does the author employ throughout the article?",
+        "options": [
+          "A) Critical and dismissive",
+          "B) Analytical and persuasive",
+          "C) Humorous and lighthearted",
+          "D) Neutral and objective"
+        ],
+        "correct": 1,
+        "explanation": "The author uses an analytical and persuasive tone to advocate for the importance of urban green spaces."
+      }
+    ]
+  },
+  {
+    "title": "Navigating Urban Transit Policy in Canadian Cities",
+    "passage": "As Canadian cities grapple with the profound implications of urbanization, transit policy has emerged as a focal point for debate. Notwithstanding significant investments in public transportation, the rise in vehicle ownership continues to exacerbate congestion and pollution, prompting city planners to reconsider their approaches. Cities like Toronto and Vancouver have juxtaposed traditional bus and rail systems with innovative solutions such as bike-sharing and ride-hailing services to accommodate the diverse needs of their growing populations. This shift towards multifaceted transit strategies reflects a broader understanding of transportation not merely as a means of mobility but also as a critical factor in fostering social equity and environmental sustainability.\n\nMoreover, recent reports from the Canadian Urban Transit Association highlight that while public transit usage remains critical for urban dwellers, a substantial portion of the populace is still reliant on personal vehicles. This dependency, in turn, raises questions about the equity of transit funding, particularly in low-income neighborhoods where service availability is often limited. By contrasting affluent areas with under-resourced districts, policymakers are pressed to synthesize data and community feedback to craft equitable solutions that broaden access to transportation.\n\nFinally, the challenges posed by climate change have necessitated that urban transit policies not only address immediate infrastructure needs but also integrate long-term environmental goals. The implementation of green technology in transit systems, alongside initiatives aimed at promoting active transportation, represents a viable pathway towards a more sustainable urban future. Thus, the evolution of transit policy in Canada illustrates the intricate balancing act between improving urban mobility, ensuring equity, and safeguarding the environment for future generations.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the passage?",
+        "options": [
+          "A. The history of public transportation in Canada",
+          "B. The challenges of urbanization on transit policy",
+          "C. The benefits of personal vehicle ownership",
+          "D. The economic impact of bike-sharing services"
+        ],
+        "correct": 1,
+        "explanation": "The passage primarily discusses the implications of urbanization on transit policy."
+      },
+      {
+        "id": 2,
+        "question": "Which cities are highlighted as examples of innovation in transit policy?",
+        "options": [
+          "A. Montreal and Ottawa",
+          "B. Toronto and Vancouver",
+          "C. Calgary and Edmonton",
+          "D. Halifax and Winnipeg"
+        ],
+        "correct": 1,
+        "explanation": "Toronto and Vancouver are explicitly mentioned as cities juxtaposing traditional and innovative transit solutions."
+      },
+      {
+        "id": 3,
+        "question": "How does the passage suggest low-income neighborhoods are affected by transit funding?",
+        "options": [
+          "A. They benefit equally from transit solutions",
+          "B. They face limitations in service availability",
+          "C. They receive more funding than affluent areas",
+          "D. They are primarily served by bike-sharing programs"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that service availability in low-income neighborhoods is often limited, raising concerns about equity."
+      },
+      {
+        "id": 4,
+        "question": "What dual challenge does climate change present to urban transit policies, according to the passage?",
+        "options": [
+          "A. Lower funding and increased vehicle ownership",
+          "B. Infrastructure needs and environmental goals",
+          "C. Public demand and community feedback",
+          "D. Equity issues and technology advancements"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the need for policies to address immediate infrastructure needs while integrating long-term environmental goals."
+      },
+      {
+        "id": 5,
+        "question": "What tone does the author use when discussing the transition of transit strategies?",
+        "options": [
+          "A. Optimistic and forward-looking",
+          "B. Critical and disapproving",
+          "C. Neutral and descriptive",
+          "D. Pessimistic and resigned"
+        ],
+        "correct": 0,
+        "explanation": "The author adopts an optimistic tone, emphasizing the innovative strategies and potential for sustainable outcomes."
+      },
+      {
+        "id": 6,
+        "question": "What does the phrase 'to synthesize data and community feedback' imply about the policymaking process?",
+        "options": [
+          "A. It involves collaboration between different stakeholders",
+          "B. It primarily relies on quantitative analysis",
+          "C. It favors affluent populations over others",
+          "D. It dismisses public opinion as irrelevant"
+        ],
+        "correct": 0,
+        "explanation": "This phrase suggests that the policymaking process should involve incorporating insights from various sources, indicating collaboration."
+      },
+      {
+        "id": 7,
+        "question": "According to the passage, what underlying factor does transportation contribute to beyond mobility?",
+        "options": [
+          "A. Urban development",
+          "B. Environmental degradation",
+          "C. Social equity",
+          "D. Economic growth"
+        ],
+        "correct": 2,
+        "explanation": "The passage emphasizes that transportation is critical for fostering social equity as well as environmental sustainability."
+      },
+      {
+        "id": 8,
+        "question": "What does the author imply about the future of urban transit in Canada?",
+        "options": [
+          "A. It will rely mainly on personal vehicle usage",
+          "B. It will integrate technologies and sustainability efforts",
+          "C. It will face insurmountable challenges from climate change",
+          "D. It will prioritize affluent neighborhoods in service planning"
+        ],
+        "correct": 1,
+        "explanation": "The author suggests a future that involves integrating green technology and sustainability into urban transit systems."
+      },
+      {
+        "id": 9,
+        "question": "What challenge related to personal vehicles is mentioned in the context of Canadian urbanization?",
+        "options": [
+          "A. They are becoming increasingly affordable",
+          "B. Their usage is declining in urban areas",
+          "C. They contribute to congestion and pollution",
+          "D. They can replace public transportation entirely"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the rise in vehicle ownership exacerbates issues of congestion and pollution in cities."
+      }
+    ]
+  },
+  {
+    "title": "The Challenges of Urban Policy in Canadian Cities",
+    "passage": "As urbanization accelerates across Canada, city governments are confronted with the complex task of developing policies that effectively address the multifaceted challenges posed by increasing population density. Notwithstanding the advancements in smart city technology, municipalities like Toronto and Vancouver are often unable to adequately manage urban sprawl, which can exacerbate existing infrastructure issues. Furthermore, the juxtaposition of upscale developments alongside lower-income housing raises concerns about social equity and resource distribution.\n\nIn recent years, various stakeholders—including local government, community organizations, and private investors—have engaged in lively debates over the most effective strategies for urban renewal. Critics argue that profit-driven motives frequently overshadow the need for sustainable, community-oriented development. In contrast, proponents of redevelopment initiatives claim that revitalization can provide much-needed economic opportunities, thereby benefiting the entire city. However, the extent to which these economic benefits truly reach marginalized communities remains contentious and is often the subject of extensive empirical research.\n\nMoreover, it is crucial to recognize that the legal frameworks governing urban development can significantly influence policy outcomes. For instance, zoning regulations in cities such as Montreal have been historically rigid, thus limiting innovation in housing solutions. This rigidity, coupled with bureaucratic inertia, often prevents the swift adaptation required to meet the evolving demands of urban residents. Consequently, the successful navigation of urban policy in Canada necessitates a sophisticated understanding of both the legal landscape and the socio-economic implications of proposed changes.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is one major challenge Canadian cities face due to urbanization?",
+        "options": [
+          "A) Providing affordable housing",
+          "B) Managing urban sprawl",
+          "C) Ensuring public transportation",
+          "D) Enhancing cultural diversity"
+        ],
+        "correct": 1,
+        "explanation": "The passage explicitly mentions that managing urban sprawl is a significant challenge faced by Canadian cities."
+      },
+      {
+        "id": 2,
+        "question": "How do critics view the motivation behind urban redevelopment initiatives?",
+        "options": [
+          "A) Necessity for economic growth",
+          "B) Driven by community needs",
+          "C) Profit-driven motives overshadowing sustainability",
+          "D) Enhancing public sector efficiency"
+        ],
+        "correct": 2,
+        "explanation": "Critics argue that profit-driven motives frequently overshadow the need for sustainable development."
+      },
+      {
+        "id": 3,
+        "question": "What concern is raised regarding the juxtaposition of different housing types?",
+        "options": [
+          "A) Increased traffic congestion",
+          "B) Social equity and resource distribution",
+          "C) Environmental degradation",
+          "D) Lack of community engagement"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that the juxtaposition raises concerns about social equity and resource distribution."
+      },
+      {
+        "id": 4,
+        "question": "According to the passage, what is a potential consequence of Canada’s rigid zoning regulations?",
+        "options": [
+          "A) Increased investment in cultural projects",
+          "B) Innovation in housing solutions is limited",
+          "C) Greater community involvement in development",
+          "D) Enhanced transportation infrastructure"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that rigid zoning regulations limit innovation in housing solutions."
+      },
+      {
+        "id": 5,
+        "question": "What does the author imply about the relationship between economic benefits and marginalized communities?",
+        "options": [
+          "A) Benefits are equitably distributed",
+          "B) Benefits often bypass marginalized communities",
+          "C) Communities are significantly involved in the benefit distribution",
+          "D) Marginalized communities are the primary beneficiaries"
+        ],
+        "correct": 1,
+        "explanation": "The passage notes that the extent to which economic benefits reach marginalized communities remains contentious."
+      },
+      {
+        "id": 6,
+        "question": "What tone does the author employ when discussing the challenges of urban policy?",
+        "options": [
+          "A) Optimistic and supportive",
+          "B) Critical and analytical",
+          "C) Dismissive and indifferent",
+          "D) Pessimistic and fatalistic"
+        ],
+        "correct": 1,
+        "explanation": "The author critically analyzes the complexities and challenges of urban policy, indicating a critical tone."
+      },
+      {
+        "id": 7,
+        "question": "Which statement best reflects the author’s perspective on urban policy stakeholders?",
+        "options": [
+          "A) Their interests are inherently aligned",
+          "B) Community organizations are the least influential",
+          "C) Stakeholder debates are crucial for effective policy-making",
+          "D) Local government must unilaterally dictate policy"
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that various stakeholders engage in lively debates over urban policy strategies, suggesting their importance."
+      },
+      {
+        "id": 8,
+        "question": "In what way does the passage suggest that urban residents’ demands are evolving?",
+        "options": [
+          "A) They have been static over recent years",
+          "B) They are increasingly focused on economic growth",
+          "C) They require swift adaptation in urban policy",
+          "D) They exclusively prioritize historical preservation"
+        ],
+        "correct": 2,
+        "explanation": "The author indicates that urban residents’ demands necessitate swift adaptation in policy to be met adequately."
+      },
+      {
+        "id": 9,
+        "question": "What implication does the author make regarding the impact of technological advancements in urban settings?",
+        "options": [
+          "A) They eliminate the need for policy changes",
+          "B) They complicate social equity issues",
+          "C) They have little relevance to urban challenges",
+          "D) They do not address infrastructure limitations"
+        ],
+        "correct": 3,
+        "explanation": "The passage implies that despite technological advancements, municipalities often struggle to manage urban challenges adequately."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Mental Health in Canadian Cities",
+    "passage": "Recent studies have increasingly focused on the relationship between urban green spaces and mental health, suggesting that access to parks and nature within city environments not only enhances physical well-being but also significantly alleviates psychological stress. In cities like Toronto and Vancouver, where urbanization has exacerbated issues of anxiety and depression, policymakers are increasingly advocating for the integration of green spaces as a critical component of urban planning. Notwithstanding the economic pressures that favor residential and commercial development, evidence demonstrates that investing in parks yields multifaceted benefits, including improved community cohesion and reduced healthcare costs.\n\nFurthermore, researchers have juxtaposed urban areas with varying access to greenery, discovering that residents in greener neighborhoods report lower instances of mental health disorders. This correlation raises questions about equity in urban planning, as marginalized communities often face barriers to accessing such essential resources. Notably, initiatives aimed at creating community gardens and restoring neglected parks have shown promise in not only beautifying neighborhoods but also fostering a sense of belonging among residents.\n\nDespite the clear advantages, the implementation of green space projects is fraught with challenges, including limited funding and competing interests. Critics argue that the prioritization of recreational spaces can divert attention from more pressing social issues. Nonetheless, it is imperative that local governments balance development with the preservation and creation of green areas, as the long-term benefits to public health and social stability are invaluable. In light of these findings, urban planners are urged to consider the holistic advantages of green spaces, ensuring that urban environments contribute positively to the mental health of their inhabitants.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is one primary benefit of integrating green spaces into urban planning, according to the passage?",
+        "options": [
+          "A. Increased commercial development",
+          "B. Enhanced physical well-being",
+          "C. Reduced urban population",
+          "D. Higher property values"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that access to parks significantly enhances physical well-being."
+      },
+      {
+        "id": 2,
+        "question": "How do marginalized communities typically experience urban green space access?",
+        "options": [
+          "A. They have better access than others",
+          "B. They face barriers to accessing green spaces",
+          "C. They are primarily involved in green space initiatives",
+          "D. They organize most community gardens"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that marginalized communities face barriers to accessing essential resources."
+      },
+      {
+        "id": 3,
+        "question": "What argument do critics present regarding the focus on recreational spaces?",
+        "options": [
+          "A. They believe parks improve mental health",
+          "B. They claim it interferes with social issues",
+          "C. They support community gardening initiatives",
+          "D. They emphasize the importance of physical fitness"
+        ],
+        "correct": 1,
+        "explanation": "Critics argue that prioritizing recreational spaces can divert attention from more pressing social issues."
+      },
+      {
+        "id": 4,
+        "question": "Which cities are mentioned as examples where urban green space impacts mental health?",
+        "options": [
+          "A. Ottawa and Montreal",
+          "B. Calgary and Edmonton",
+          "C. Toronto and Vancouver",
+          "D. Victoria and Halifax"
+        ],
+        "correct": 2,
+        "explanation": "The passage explicitly mentions Toronto and Vancouver in the context of urban green spaces."
+      },
+      {
+        "id": 5,
+        "question": "The author suggests that the creation of community gardens may lead to which outcome?",
+        "options": [
+          "A. Increased economic competition",
+          "B. A sense of belonging among residents",
+          "C. A focus on residential developments",
+          "D. A decrease in urban wildlife"
+        ],
+        "correct": 1,
+        "explanation": "The passage notes that community gardens can foster a sense of belonging among residents."
+      },
+      {
+        "id": 6,
+        "question": "What is implied about the relationship between funding and green space projects?",
+        "options": [
+          "A. Funding is always sufficient for these projects",
+          "B. Limited funding presents a challenge to green space initiatives",
+          "C. Funding is typically allocated to housing projects",
+          "D. Green projects receive unfettered governmental support"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the challenges posed by limited funding in implementing green space projects."
+      },
+      {
+        "id": 7,
+        "question": "What is the primary intent of the author in discussing urban green spaces?",
+        "options": [
+          "A. To criticize current urban planning policies",
+          "B. To highlight the necessity of green spaces for public health",
+          "C. To advocate solely for economic development",
+          "D. To compare different cities’ planning efforts"
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the necessity of green spaces for public health in urban planning."
+      },
+      {
+        "id": 8,
+        "question": "What does the phrase 'multifaceted benefits' suggest about urban green spaces?",
+        "options": [
+          "A. They only provide aesthetic appeal",
+          "B. They have varied and significant impacts",
+          "C. They are difficult to implement",
+          "D. They are primarily economic in nature"
+        ],
+        "correct": 1,
+        "explanation": "The phrase indicates that urban green spaces have varied and significant impacts on communities."
+      },
+      {
+        "id": 9,
+        "question": "According to the passage, how should local governments approach urban development?",
+        "options": [
+          "A. Prioritize commercial development at all costs",
+          "B. Balance development with green space preservation",
+          "C. Focus solely on improving infrastructure",
+          "D. Ignore community health concerns"
+        ],
+        "correct": 1,
+        "explanation": "The passage urges local governments to balance development with the preservation and creation of green areas."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Mental Health in Canada",
+    "passage": "Urban green spaces, such as parks and community gardens, have garnered increasing attention within the discourse on public health and urban development in Canada. Despite the evident benefits, such as enhanced community cohesion and improved air quality, urban planners frequently encounter challenges when integrating these spaces into the densely populated urban fabric. Notwithstanding these obstacles, evidence suggests that access to green areas profoundly influences mental health, alleviating symptoms of anxiety and depression among city dwellers. \n\nResearch conducted by the University of Toronto indicates a significant correlation between the availability of green spaces and residents’ psychological well-being. Those living in areas with abundant parks report lower stress levels and a greater propensity for engaging in physical activity. The juxtaposition of neighborhoods with ample greenery against those characterized by concrete landscapes reveals stark disparities, exacerbating existing inequities in mental health outcomes across socio-economic strata. \n\nMoreover, local governments are beginning to recognize that fostering green spaces can serve as a proactive approach to mitigating public health crises. In cities like Vancouver and Montreal, initiatives aimed at increasing urban greenery have been met with both enthusiasm and scrutiny. Critics argue that such projects often prioritize aesthetic improvements over the pressing need for accessible mental health resources. Nevertheless, proponents posit that the long-term benefits of enhanced mental health and community engagement may ultimately justify these investments, particularly as urban populations continue to swell.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the primary benefits of urban green spaces mentioned in the passage?",
+        "options": [
+          "A) Improved air quality",
+          "B) Enhanced community cohesion",
+          "C) Alleviation of mental health issues",
+          "D) All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The passage states that urban green spaces improve air quality, enhance community cohesion, and influence mental health."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what challenge do urban planners face when integrating green spaces?",
+        "options": [
+          "A) Lack of public interest",
+          "B) High maintenance costs",
+          "C) Densely populated urban environments",
+          "D) Insufficient funding"
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that urban planners encounter challenges due to densely populated urban areas."
+      },
+      {
+        "id": 3,
+        "question": "What does the research from the University of Toronto suggest regarding green space access?",
+        "options": [
+          "A) It has a minimal impact on physical health",
+          "B) It correlates with lower stress and increased physical activity",
+          "C) It is primarily beneficial for wealthy neighborhoods",
+          "D) It is only effective during the summer months"
+        ],
+        "correct": 1,
+        "explanation": "The research indicates that access to green spaces correlates with lower stress levels and a greater likelihood of physical activity."
+      },
+      {
+        "id": 4,
+        "question": "What disparities are highlighted in the passage regarding neighborhoods?",
+        "options": [
+          "A) Wealthy neighborhoods have more green spaces",
+          "B) Urban areas experience less stress",
+          "C) Less greenery leads to better health outcomes",
+          "D) Mental health is unaffected by geographical location"
+        ],
+        "correct": 0,
+        "explanation": "The passage points out that neighborhoods with ample greenery reveal disparities in mental health outcomes compared to those with concrete landscapes."
+      },
+      {
+        "id": 5,
+        "question": "How do local governments view the role of green spaces in public health?",
+        "options": [
+          "A) As secondary to existing health services",
+          "B) As irrelevant to urban development",
+          "C) As a proactive measure to public health crises",
+          "D) As a temporary solution for aesthetics"
+        ],
+        "correct": 2,
+        "explanation": "Local governments are beginning to see green spaces as a proactive approach to address public health issues."
+      },
+      {
+        "id": 6,
+        "question": "What criticism is levied against urban greenery projects?",
+        "options": [
+          "A) They are environmentally damaging",
+          "B) They do not address aesthetic concerns",
+          "C) They prioritize aesthetics over mental health resources",
+          "D) They are too broad in scope"
+        ],
+        "correct": 2,
+        "explanation": "Critics argue that these projects prioritize aesthetic improvements over direct mental health resource needs."
+      },
+      {
+        "id": 7,
+        "question": "What is the author's tone regarding the investment in urban green spaces?",
+        "options": [
+          "A) Skeptical",
+          "B) Indifferent",
+          "C) Supportive",
+          "D) Dismissive"
+        ],
+        "correct": 2,
+        "explanation": "The author conveys a supportive tone regarding the long-term benefits of urban green space investments."
+      },
+      {
+        "id": 8,
+        "question": "How does the passage imply that mental health outcomes vary?",
+        "options": [
+          "A) They are improved uniformly across demographics",
+          "B) They are enhanced in urban areas only",
+          "C) They worsen in neighborhoods without green space",
+          "D) They depend on individual circumstances"
+        ],
+        "correct": 2,
+        "explanation": "The passage describes disparities, implying that neighborhoods lacking green space may experience worse mental health outcomes."
+      },
+      {
+        "id": 9,
+        "question": "What overarching theme can be inferred from the passage?",
+        "options": [
+          "A) Economic disparities in urban planning",
+          "B) The interplay between urban design and mental health",
+          "C) The inefficacy of government projects",
+          "D) The aesthetic evolution of Canadian cities"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the link between urban green spaces and mental health, emphasizing the importance of urban design."
+      }
+    ]
   }
 ]

@@ -14,12 +14,12 @@ const DAILY_LIMITS: Record<string, number> = {
 
 // Free users get a taste (for assessment etc.)
 const FREE_LIMITS: Record<string, number> = {
-  'ai-practice': 2,
-  'ai-feedback': 1,
-  'speaking-feedback': 1,
-  'sentence-feedback': 2,
+  'ai-practice': 5,
+  'ai-feedback': 3,
+  'speaking-feedback': 3,
+  'sentence-feedback': 3,
   'mock-exam': 0,
-  'evaluate-ai': 2,
+  'evaluate-ai': 3,
 };
 
 // Per-minute burst limits (prevents rapid-fire spam)

@@ -8,7 +8,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-02",
@@ -19,7 +20,8 @@
       "How you felt during your adventure?",
       "What you learned from this experience?"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-03",
@@ -30,7 +32,8 @@
       "How did you feel while experiencing the severe cold?",
       "What did you learn from that experience?"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-04",
@@ -41,7 +44,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-05",
@@ -52,7 +56,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-06",
@@ -63,7 +68,8 @@
       "How you felt throughout the process",
       "What you learned from the experience"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-07",
@@ -74,7 +80,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-08",
@@ -85,7 +92,8 @@
       "How you felt about preparing the meal and serving it to your family.",
       "What you learned from the experience about cooking or hosting."
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-09",
@@ -96,7 +104,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-10",
@@ -107,7 +116,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-11",
@@ -118,7 +128,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-12",
@@ -129,7 +140,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-13",
@@ -140,7 +152,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-14",
@@ -151,7 +164,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-15",
@@ -162,7 +176,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-16",
@@ -173,7 +188,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-17",
@@ -184,7 +200,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-18",
@@ -195,7 +212,8 @@
       "How you felt throughout the experience",
       "What you learned from the adventure"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-19",
@@ -206,7 +224,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-20",
@@ -217,7 +236,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-21",
@@ -228,7 +248,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-22",
@@ -239,7 +260,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-23",
@@ -250,7 +272,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-24",
@@ -261,7 +284,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-25",
@@ -272,7 +296,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-26",
@@ -283,7 +308,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-27",
@@ -294,7 +320,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-28",
@@ -305,7 +332,8 @@
       "How you felt during the waiting period",
       "What you eventually learned about patience"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-29",
@@ -316,7 +344,8 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task2-30",
@@ -327,6 +356,368 @@
       "How you felt",
       "What you learned"
     ],
-    "context": "Think of a specific experience."
+    "context": "Think of a specific experience.",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about a favorite meal",
+    "prompt": "Describe your favorite food and explain why you like it. First, tell us what the food is. Then, explain how it is made or where it comes from. Finally, share a memory you have about enjoying this food.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple sentences to explain your ideas.",
+      "Try to include personal feelings about the food."
+    ]
+  },
+  {
+    "title": "My Favorite Weekend Meal",
+    "scenario": "Talking about a meal you like to prepare on weekends",
+    "prompt": "Describe your favorite meal that you like to prepare on weekends. First, explain what the meal is. Then, tell us how you prepare it. Finally, share why you enjoy making this meal on the weekends.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple words and phrases.",
+      "Organize your thoughts with 'First...', 'Then...', and 'Finally...'."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about your favorite food",
+    "prompt": "Describe your favorite food. First, say what the food is. Then, explain why you like it. Finally, share a special memory you have about this food.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Speak clearly and slowly.",
+      "Use simple sentences to explain your ideas."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Describe your favorite food",
+    "prompt": "Talk about your favorite food. First, explain what the food is and why you like it. Then, describe how it is prepared or cooked. Finally, share a special memory you have related to this food.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple language to describe the food.",
+      "Think about the taste and how it makes you feel."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about your favorite food",
+    "prompt": "Today, I want you to talk about your favorite food. First, explain what your favorite food is and why you like it. Then, describe how it is prepared or cooked. Finally, tell us about a time when you enjoyed this food, and what made that moment special.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to express your ideas."
+    ]
+  },
+  {
+    "title": "My Favorite Meal",
+    "scenario": "Talking about a favorite food",
+    "prompt": "Describe your favorite meal. What is it? Where do you usually eat it? Why do you like it? Talk about it in three parts: First, tell us what your favorite meal is. Then, explain where you usually eat this meal. Finally, share why you like it so much.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Think about a meal you enjoy and can describe easily.",
+      "Use simple sentences to explain each part of your answer."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about a meal",
+    "prompt": "Think about your favorite food. Describe what it is, how it is made, and why you like it. You can follow this structure: First, tell us what your favorite food is. Then, explain how it is prepared. Finally, share why it is special to you or why you enjoy it so much.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple words and sentences.",
+      "Practice describing the food clearly."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about my favorite food",
+    "prompt": "Describe your favorite food. First, tell us what the food is. Then, explain why you like it. Finally, share a memory you have related to this food.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Keep your answer simple and clear.",
+      "Try to use descriptive words to explain your feelings about the food."
+    ]
+  },
+  {
+    "title": "My Favorite Weekend Activity",
+    "scenario": "Talking about a fun weekend activity",
+    "prompt": "Think about your favorite weekend activity in Canada. Describe this activity by explaining what you do during this time. First, tell us what the activity is and where you do it. Then, explain how you feel when you do this activity. Finally, share why it is your favorite weekend activity.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple sentences to express your ideas.",
+      "Try to include details about your feelings and why you enjoy it."
+    ]
+  },
+  {
+    "title": "My Favorite Weekend Meal",
+    "scenario": "Talking about food",
+    "prompt": "Please describe your favorite meal that you like to eat on the weekends. First, tell us what the meal is. Then, explain how you prepare it or where you buy it. Finally, share why it is your favorite meal.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple sentences to describe your meal.",
+      "Include details about the ingredients and your cooking method."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Favorite Food",
+    "prompt": "Describe your favorite food. First, explain what the food is and why you like it. Then, talk about when you usually eat it or if it has a special meaning to you. Finally, share how it is prepared or served. Make sure to speak clearly and express your thoughts.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple words and sentences.",
+      "Try to include your feelings about the food."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about my favorite dish",
+    "prompt": "Describe your favorite food and why you like it. First, explain what the food is. Then, tell us why it is your favorite. Finally, share a memory you have related to this food, such as a special occasion when you enjoyed it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Start by naming the dish clearly.",
+      "Use simple words to explain your feelings about the food."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Talking about your favorite food",
+    "prompt": "Describe your favorite food and why you like it. First, tell us what the food is and what it looks like. Then, explain how it is made or prepared. Finally, share a special memory you have related to this food.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple words to describe your food.",
+      "Think of a memory that makes the food special to you."
+    ]
+  },
+  {
+    "title": "My Favorite Canadian Snack",
+    "scenario": "Talking about my favorite snack",
+    "prompt": "Describe your favorite snack that you enjoy in Canada. What is it? Why do you like it? Explain what you do to enjoy this snack, including any special memories related to it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Start by naming your favorite snack.",
+      "Talk about where and when you usually eat it.",
+      "Share a memory that makes this snack special to you."
+    ]
+  },
+  {
+    "title": "My Favorite Food",
+    "scenario": "Describe Your Favorite Food",
+    "prompt": "Think about your favorite food. Describe what it is, how it is made, and why you like it so much. First, tell us what the food is and its main ingredients. Then, explain how it is usually prepared. Finally, share why it is your favorite and any special memories you have with it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use simple sentences to describe your food.",
+      "Think about the flavors and textures that you enjoy."
+    ]
+  },
+  {
+    "title": "Balancing Economic Growth and Environmental Preservation",
+    "scenario": "Navigating Trade-offs in Policy Decisions",
+    "prompt": "Imagine you are a member of a provincial decision-making board in Canada that is debating a controversial policy proposed to boost economic development by allowing a new oil extraction project in a pristine natural area. This project promises job creation and increased local revenue, but it also poses significant risks to the environment and the local indigenous communities. Discuss your personal views on this situation, considering both the economic benefits and the ethical implications of environmental degradation and indigenous rights. What would you prioritize, and how would you justify your stance? Are there any compromises or alternative solutions that could address the concerns of all stakeholders involved?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Organize your thoughts by outlining the pros and cons of the situation.",
+      "Be sure to address the perspectives of different stakeholders, including the local community, industry workers, and environmentalists."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Sustainability and Economic Growth",
+    "scenario": "The Dilemma of Development",
+    "prompt": "Imagine you are a city council member in a rapidly growing urban area in Canada. The local government has proposed a new development project that aims to enhance economic growth by building a shopping complex and residential units. However, this project would lead to the destruction of a nearby natural habitat that is home to several endangered species. As a council member, you must decide whether to support the development for its potential economic benefits or oppose it to protect the environment. Discuss your decision-making process, including the competing priorities at play between economic growth and environmental sustainability, and consider the perspectives of different stakeholders such as local businesses, environmental groups, and residents. What factors do you prioritize, and why? Could there be a compromise that addresses both sides? Explain your reasoning.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing priorities in your response.",
+      "Consider the ethical implications of both supporting and opposing the project."
+    ]
+  },
+  {
+    "title": "Balancing Development and Heritage",
+    "scenario": "Urban Development vs. Cultural Heritage Preservation",
+    "prompt": "Imagine your city is planning a new urban development project that involves constructing modern high-rise buildings in a neighborhood known for its historical significance and cultural heritage. This project promises economic growth, job creation, and improved infrastructure but threatens to displace long-standing residents and erase community history. Discuss your personal experience or perspective on this situation. How do you weigh the benefits of modernization against the importance of preserving cultural identity? Consider the viewpoints of various stakeholders, including local government, developers, residents, and historians, and express your nuanced stance on this ethical dilemma.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing interests of different stakeholders.",
+      "Acknowledge valid points from opposing viewpoints to show layered reasoning."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Trade-offs",
+    "scenario": "A Town's Dilemma on Development vs. Conservation",
+    "prompt": "Imagine you are a resident of a small town in Canada that is facing a significant decision: a large corporation has proposed to build a new factory that promises to create jobs and stimulate the local economy. However, this factory would require clearing a large area of forest that is critical to local wildlife and contributes to the community's natural beauty. As a citizen, you must decide how you feel about this proposal. Discuss your personal experience with similar dilemmas, considering the potential economic benefits, the importance of environmental conservation, and how these competing priorities impact you and your community. What factors would influence your decision, and how would you address the differing opinions among residents?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider both sides of the issue and present a balanced perspective.",
+      "Reflect on your personal values and how they align with the community's needs."
+    ]
+  },
+  {
+    "title": "Balancing Work and Family",
+    "scenario": "Work-Life Balance Dilemma",
+    "prompt": "Imagine you are a mid-level manager in a large Canadian technology firm. You have been offered a promotion that comes with increased responsibilities and higher pay. However, this promotion requires you to travel frequently and often work late hours, which could significantly affect your ability to spend time with your young children at home. On the one hand, accepting the promotion could enhance your career prospects and provide financial stability for your family. On the other hand, prioritizing your job over family time could strain your relationships and negatively impact your children's well-being. Discuss your thoughts on this dilemma, considering the competing priorities of career advancement and family responsibilities. What would you choose, and why? What could be some possible consequences of your decision?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider both sides of the argument and present a balanced view.",
+      "Draw on personal experiences to illustrate your points and make your argument more convincing."
+    ]
+  },
+  {
+    "title": "Balancing Community Needs and Environmental Protection",
+    "scenario": "Local Development vs. Conservation",
+    "prompt": "Imagine you are a city council member in a Canadian city facing a proposal to develop a new residential area on a piece of land that is currently a natural habitat for local wildlife. The development promises to provide affordable housing to many families in need, but it also threatens the ecological balance of the area and disrupts the lives of existing wildlife. Discuss your personal experience in dealing with competing priorities in this situation. How would you approach the decision-making process, and what factors would you consider? Be sure to address potential counterarguments to your stance and acknowledge the complexity of balancing community needs with environmental concerns.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline your main argument and the reasons behind it.",
+      "Consider different perspectives, including those of local residents, environmentalists, and developers."
+    ]
+  },
+  {
+    "title": "Navigating Workplace Diversity",
+    "scenario": "Cultural Tensions in Professional Settings",
+    "prompt": "Imagine you work in a large Canadian corporation that has recently implemented a new diversity policy aimed at promoting inclusivity and understanding among employees from various cultural backgrounds. However, some staff members express concerns that the policy prioritizes cultural sensitivity over merit-based promotions, potentially leading to resentment and division. In your opinion, how should the company balance these competing interests? Discuss your thoughts on the ethical implications of diversity policies in the workplace, considering the perspectives of different stakeholders, including employees from diverse backgrounds, those worried about fairness, and the management. Address possible counterarguments and provide a nuanced perspective on this complex issue.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response by clearly stating your position and then addressing counterarguments.",
+      "Use specific examples to illustrate your points and engage with the ethical implications of your arguments."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Development",
+    "scenario": "A Local Dilemma",
+    "prompt": "Imagine that you are a member of a community in Canada facing the proposal of a new mining project near a protected natural reserve. This project promises significant economic benefits and job creation for your community, but it also poses risks to the local ecosystem, wildlife, and the overall health of the environment. Additionally, Indigenous communities who have ancestral ties to the land oppose the project, arguing that it undermines their rights and heritage. Discuss your personal experience related to this dilemma. What factors would you prioritize in making your decision? How would you navigate the competing interests of economic development, environmental sustainability, and cultural preservation? Consider potential counterarguments to your position and how you might address them.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response clearly, presenting your main argument first, followed by supporting points.",
+      "Acknowledge opposing views and explain how you would reconcile them with your stance."
+    ]
+  },
+  {
+    "title": "Balancing Traditions and Modern Values",
+    "scenario": "Cultural Celebration Dilemma",
+    "prompt": "Imagine you are a member of a local cultural community in Canada that hosts an annual festival celebrating your heritage. This year, a significant portion of the funding for the festival has come from a corporation with a reputation for environmentally harmful practices. Some community members argue that accepting this funding compromises the festival's values and moral stance, while others believe that the financial support is crucial for maintaining the festival and promoting cultural awareness. Discuss your personal experience navigating this ethical dilemma. What factors would you consider in making a decision? How would you address the competing priorities of cultural preservation versus ethical sponsorship? Provide specific examples from your experience to illustrate your points.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider both sides of the argument and acknowledge valid points from each perspective.",
+      "Draw on personal experiences or hypothetical scenarios to enrich your response."
+    ]
+  },
+  {
+    "title": "Balancing Public Health and Personal Freedom",
+    "scenario": "COVID-19 Vaccination Policies",
+    "prompt": "Imagine you are a policy advisor in Canada tasked with creating a public health strategy during an ongoing pandemic. The government is considering a policy that mandates COVID-19 vaccinations for all eligible citizens, with exceptions for medical reasons. Your proposal must balance public health concerns, the right to personal autonomy, and the potential impact on marginalized communities who may have historical reasons for vaccine hesitancy. Discuss your personal experience in addressing such competing priorities. What arguments would you present to support your position? What counterarguments might you acknowledge? How would you ensure that the policy is equitable and considers the diverse perspectives within Canadian society?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Reflect on personal experiences that highlight competing priorities, such as those involving health and personal beliefs.",
+      "Consider multiple viewpoints to demonstrate nuanced reasoning and ethical implications."
+    ]
+  },
+  {
+    "title": "Balancing Work and Family",
+    "scenario": "Navigating Competing Priorities",
+    "prompt": "Imagine you are a Canadian professional who has recently been offered a promotion that requires extensive travel. However, you also have a young child at home who needs your presence as they are starting school for the first time. Discuss your experience with navigating this dilemma. Consider the trade-offs between advancing your career and being present for your child's early development. Reflect on the ethical dimensions of prioritizing work versus family, and how you would approach this situation. What arguments can you make for both sides, and what decision would you ultimately make?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Articulate your personal values regarding family and career.",
+      "Consider the long-term implications of your decision on both your career and family."
+    ]
+  },
+  {
+    "title": "Balancing Privacy and Security",
+    "scenario": "Ethical Dilemmas in Surveillance Policies",
+    "prompt": "Imagine you are a member of a city council in Canada, faced with the decision to implement a new surveillance policy aimed at reducing crime rates. This policy would involve installing cameras in public spaces, which advocates argue will enhance safety. However, critics raise concerns about privacy invasion and the potential for misuse of data. Discuss your personal experience or perspective on balancing the need for security with the importance of individual privacy. Consider the implications for different community stakeholders, such as law enforcement, residents, and privacy advocates. Present your viewpoint while also addressing counterarguments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response clearly by stating your position first.",
+      "Acknowledge opposing views and provide reasons supporting your perspective."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Growth",
+    "scenario": "A local community's dilemma",
+    "prompt": "Imagine you live in a Canadian community that is facing a significant dilemma. A large corporation has proposed building a new factory that promises to create numerous jobs and boost the local economy. However, the factory would also lead to environmental degradation and negatively impact the habitat of a local endangered species. As a community member, discuss your thoughts on this situation. Consider the competing priorities of economic growth versus environmental protection. Address potential counterarguments, such as the need for jobs versus the long-term consequences of environmental harm. Reflect on how you might navigate the ethical dimensions of this decision, and what role different stakeholders should play in this discussion.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response clearly, outlining both sides of the argument.",
+      "Use specific examples and reasoning to support your points, acknowledging the complexities involved."
+    ]
+  },
+  {
+    "title": "The Housing Dilemma",
+    "scenario": "Balancing Development and Community",
+    "prompt": "Imagine you are a city council member in a growing Canadian city facing a housing crisis. A proposal has been made to build a high-rise apartment complex in a historic neighborhood. Supporters argue that this development will provide much-needed housing and stimulate the local economy, while opponents claim it will damage the neighborhood's character and displace long-time residents. Discuss your personal experience with a similar situation, where you had to navigate competing priorities or ethical dilemmas. Touch on your emotional response, the factors you had to consider, and how you balanced the needs of different stakeholders involved.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response by clearly outlining the competing interests and your personal views.",
+      "Incorporate ethical considerations and acknowledge the validity of opposing viewpoints."
+    ]
+  },
+  {
+    "title": "Balancing Privacy and Surveillance",
+    "scenario": "City Policy on Public Safety",
+    "prompt": "Imagine that you are a resident of a city in Canada that is considering implementing a new policy to increase surveillance in public spaces in order to enhance safety and reduce crime rates. While some community members support this policy for the perceived benefits of increased safety, others express concerns about privacy and the potential for misuse of surveillance data. Discuss a personal experience where you faced a similar dilemma involving competing priorities. How did you navigate the situation, and what insights did you gain that could apply to this community's debate over privacy versus safety?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use specific examples from your experience to illustrate your points.",
+      "Acknowledge both sides of the argument to show a well-rounded perspective."
+    ]
   }
 ]

@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { usePlan } from '@/hooks/usePlan';
+import { ProGate } from '@/components/ProGate';
 import {
   Mic, BookOpen, Headphones, PenTool,
   ArrowRight, Star, Clock, Layers, Target,
@@ -55,6 +57,21 @@ const guides = [
 ];
 
 export default function GuidesPage() {
+  const { isPro, loading } = usePlan();
+
+  if (loading) return null;
+
+  if (!isPro) {
+    return (
+      <div style={{ padding: '2rem' }}>
+        <ProGate
+          feature="Study Guides"
+          description="Access exclusive technique guides and formulas for all 4 CELPIP sections — Speaking, Listening, Reading, and Writing. Master the strategies that take you from a 7 to a 10+."
+        />
+      </div>
+    );
+  }
+
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '2rem 1rem 4rem' }}>
       {/* Header */}

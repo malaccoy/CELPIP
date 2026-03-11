@@ -12,15 +12,20 @@ const openai = new OpenAI({
 
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requireProWithLimit('speaking-feedback');
-    if (denied) return denied;
+    const { authenticated, userId, isPro } = await (await import('@/lib/plan')).getUserPlan();
+    if (!authenticated || !userId) {
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+    }
+    const { checkRateLimit, rateLimitResponse } = await import('@/lib/rate-limit');
+    const { allowed } = await checkRateLimit(userId, 'speaking-feedback', isPro);
+    if (!allowed) return rateLimitResponse() as unknown as NextResponse;
 
     const formData = await request.formData();
     const audioFile = formData.get('audio') as File;
 
     // Limit audio size to 10MB
-    if (audioFile && audioFile.size > 10 * 1024 * 1024) {
-      return NextResponse.json({ error: 'Audio file too large' }, { status: 413 });
+    if (audioFile && audioFile.size > 25 * 1024 * 1024) {
+      return NextResponse.json({ error: 'Audio file too large (max 25MB)' }, { status: 413 });
     }
 
     const taskType = formData.get('taskType') as string;
@@ -208,10 +213,10 @@ IMPORTANT RULES:
 
     // Log activity for leaderboard
     try {
-      const { auth } = await import('@/../auth');
-      const session = await auth();
-      if (session?.user?.id) {
-        await logActivity(session.user.id, 'speaking');
+      const { getUserPlan } = await import('@/lib/plan');
+      const plan = await getUserPlan();
+      if (plan.userId) {
+        await logActivity(plan.userId, 'speaking');
       }
     } catch {}
 

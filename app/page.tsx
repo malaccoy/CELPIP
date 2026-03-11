@@ -173,19 +173,19 @@ export default function HomePage() {
           <div className={styles.quickStart}>
             <p className={styles.quickStartLabel}>👇 Try a free exercise right now — no sign-up needed:</p>
             <div className={styles.quickStartGrid}>
-              <Link href="/writing/task-1" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/writing/task-1')}>
+              <Link href="/ai-coach" className={styles.quickBtn}>
                 <PenLine size={18} />
                 <span>Write an Email</span>
               </Link>
-              <Link href="/speaking/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/speaking/practice')}>
+              <Link href="/ai-coach" className={styles.quickBtn}>
                 <Mic size={18} />
                 <span>Speaking Practice</span>
               </Link>
-              <Link href="/reading/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/reading/practice')}>
+              <Link href="/ai-coach" className={styles.quickBtn}>
                 <BookOpen size={18} />
                 <span>Reading Quiz</span>
               </Link>
-              <Link href="/listening/practice" className={styles.quickBtn} onClick={(e) => handleSkillClick(e, '/listening/practice')}>
+              <Link href="/ai-coach" className={styles.quickBtn}>
                 <Headphones size={18} />
                 <span>Listening Test</span>
               </Link>

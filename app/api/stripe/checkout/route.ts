@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Please log in first' }, { status: 401 });
     }
 
-    const { plan } = await request.json();
+    const { plan, promoCode } = await request.json();
     const priceMap: Record<string, string> = {
       weekly: PRICES.weekly,
       monthly: PRICES.monthly,
@@ -62,6 +62,19 @@ export async function POST(request: NextRequest) {
     // Create Checkout Session
     const origin = request.headers.get('origin') || 'https://celpipaicoach.com';
     
+    // If promoCode provided, look up the promotion code in Stripe
+    let discounts: { promotion_code: string }[] | undefined;
+    if (promoCode && plan !== 'annual') {
+      try {
+        const promoCodes = await stripe.promotionCodes.list({ code: promoCode, active: true, limit: 1 });
+        if (promoCodes.data.length > 0) {
+          discounts = [{ promotion_code: promoCodes.data[0].id }];
+        }
+      } catch (e) {
+        console.error('Promo code lookup failed:', e);
+      }
+    }
+
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'subscription',
@@ -69,11 +82,11 @@ export async function POST(request: NextRequest) {
       success_url: `${origin}/dashboard?upgraded=true`,
       cancel_url: `${origin}/pricing`,
       subscription_data: {
-        trial_period_days: 3,
+        // trial removed — free tier (3/day) serves as trial
         metadata: { supabaseUserId: user.id }
       },
-      // Promo codes only for monthly plan (discounts are monthly-only)
-      allow_promotion_codes: plan !== 'annual',
+      // Apply promo automatically if found, otherwise allow manual entry
+      ...(discounts ? { discounts } : { allow_promotion_codes: plan !== 'annual' }),
     });
 
     return NextResponse.json({ url: session.url });

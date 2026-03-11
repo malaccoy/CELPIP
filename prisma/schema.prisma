@@ -29,6 +29,7 @@ model User {
   practices       Practice[]
   writingAnalyses WritingAnalysis[]
   activityLogs    ActivityLog[]
+  dailyUsages     DailyUsage[]
   
   @@map("users")
 }
@@ -223,4 +224,15 @@ model ActivityLog {
   @@index([createdAt])
   @@index([userId, createdAt])
   @@map("activity_logs")
+}
+
+model DailyUsage {
+  id        String   @id @default(cuid())
+  userId    String
+  date      String   // "YYYY-MM-DD"
+  count     Int      @default(0)
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@unique([userId, date])
+  @@map("daily_usage")
 }

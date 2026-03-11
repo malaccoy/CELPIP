@@ -51,7 +51,7 @@ export default function ReadingHubPage() {
           <div 
             key={part.id} 
             className={styles.prepCard}
-            onClick={() => router.push(`/reading/practice?part=${part.part}`)}
+            onClick={() => router.push(`/ai-coach`)}
           >
             <div className={styles.prepCardIcon}>
               <span style={{ fontSize: '1.5rem' }}>{part.icon}</span>
@@ -79,7 +79,7 @@ export default function ReadingHubPage() {
           <div 
             key={part.id}
             className={styles.examCard}
-            onClick={() => router.push(`/reading/practice?part=${part.part}`)}
+            onClick={() => router.push(`/ai-coach`)}
           >
             <div className={styles.examCardHeader}>
               <div className={styles.examCardIcon}>
@@ -113,7 +113,7 @@ export default function ReadingHubPage() {
       </section>
 
       {/* Full Practice Link */}
-      <div className={styles.guideLink} onClick={() => router.push('/reading/practice')}>
+      <div className={styles.guideLink} onClick={() => router.push('/ai-coach')}>
         <FileText size={18} />
         <span>Full Reading Practice • {totalQuestions} questions • ~55 min</span>
         <ArrowRight size={16} />

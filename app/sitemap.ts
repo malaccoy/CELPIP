@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Practice pages
   const practicePages = [
-    { url: '/reading/practice', priority: 0.8, changeFrequency: 'weekly' as const },
+    { url: '/ai-coach', priority: 0.8, changeFrequency: 'weekly' as const },
     { url: '/writing/task-1', priority: 0.8, changeFrequency: 'weekly' as const },
     { url: '/writing/task-2', priority: 0.8, changeFrequency: 'weekly' as const },
     { url: '/writing/starters', priority: 0.7, changeFrequency: 'monthly' as const },

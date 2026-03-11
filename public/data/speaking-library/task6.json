@@ -10,7 +10,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your roommate about a difficult decision."
+    "context": "You are talking to your roommate about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-02",
@@ -23,7 +24,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your boss about a difficult decision."
+    "context": "You are talking to your boss about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-03",
@@ -36,7 +38,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-04",
@@ -49,7 +52,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your partner about a difficult decision."
+    "context": "You are talking to your partner about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-05",
@@ -62,7 +66,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your parents about a difficult decision."
+    "context": "You are talking to your parents about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-06",
@@ -75,7 +80,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your coworker about a difficult decision."
+    "context": "You are talking to your coworker about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-07",
@@ -88,7 +94,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-08",
@@ -101,7 +108,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-09",
@@ -114,7 +122,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your team leader about a difficult decision."
+    "context": "You are talking to your team leader about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-10",
@@ -127,7 +136,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your child about a difficult decision."
+    "context": "You are talking to your child about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-11",
@@ -140,7 +150,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your sibling about a difficult decision."
+    "context": "You are talking to your sibling about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-12",
@@ -153,7 +164,8 @@
       "State your choice of how to address the issue.",
       "Give reasons for your decision and address any potential concerns from your neighbour."
     ],
-    "context": "You are talking to your neighbour about a difficult decision."
+    "context": "You are talking to your neighbour about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-13",
@@ -166,7 +178,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your partner about a difficult decision."
+    "context": "You are talking to your partner about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-14",
@@ -179,7 +192,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-15",
@@ -192,7 +206,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your parents about a difficult decision."
+    "context": "You are talking to your parents about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-16",
@@ -205,7 +220,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your client about a difficult decision."
+    "context": "You are talking to your client about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-17",
@@ -218,7 +234,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your sibling about a difficult decision."
+    "context": "You are talking to your sibling about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-18",
@@ -231,7 +248,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your coach about a difficult decision."
+    "context": "You are talking to your coach about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-19",
@@ -244,7 +262,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your housemates about a difficult decision."
+    "context": "You are talking to your housemates about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-20",
@@ -257,7 +276,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your boss about a difficult decision."
+    "context": "You are talking to your boss about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-21",
@@ -270,7 +290,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your partner about a difficult decision."
+    "context": "You are talking to your partner about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-22",
@@ -283,7 +304,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-23",
@@ -296,7 +318,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your parent about a difficult decision."
+    "context": "You are talking to your parent about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-24",
@@ -309,7 +332,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your child about a difficult decision."
+    "context": "You are talking to your child about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-25",
@@ -322,7 +346,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your coworker about a difficult decision."
+    "context": "You are talking to your coworker about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-26",
@@ -335,7 +360,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-27",
@@ -348,7 +374,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-28",
@@ -361,7 +388,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your professor about a difficult decision."
+    "context": "You are talking to your professor about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-29",
@@ -374,7 +402,8 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your partner about a difficult decision."
+    "context": "You are talking to your partner about a difficult decision.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task6-30",
@@ -387,6 +416,368 @@
       "State your choice",
       "Give reasons and address concerns"
     ],
-    "context": "You are talking to your friend about a difficult decision."
+    "context": "You are talking to your friend about a difficult decision.",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Lost Item",
+    "prompt": "You have lost your wallet while shopping at a mall. Describe what you will do to find it. First, explain where you last saw your wallet. Then, tell how you will ask for help to find it. Finally, mention what you will do if you cannot find it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to explain your actions."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Lost Wallet at a Park",
+    "prompt": "Imagine you have lost your wallet while enjoying a day at the park. First, describe where you noticed your wallet was missing. Then, explain what you did to try to find it. Finally, talk about who you asked for help and how they assisted you.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and clearly explain the situation.",
+      "Use simple language and keep your ideas organized."
+    ]
+  },
+  {
+    "title": "Lost Wallet at the Park",
+    "scenario": "Losing Something Important",
+    "prompt": "Imagine you are enjoying a day at the park in Canada. While sitting on a bench, you realize that you have lost your wallet. Describe what you would do to deal with this situation. First, explain how you would search for your wallet in the park. Then, talk about whom you would ask for help. Finally, mention what steps you would take if you cannot find your wallet.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and think clearly about what to do.",
+      "Use simple steps to explain your actions."
+    ]
+  },
+  {
+    "title": "Missing Favorite Food",
+    "scenario": "Lost Favorite Food at a Restaurant",
+    "prompt": "You are at a restaurant in Canada and you discover that your favorite dish has gone missing from your order. Discuss what you will do about this situation. First, tell the staff about your missing dish. Then, explain how they can help you resolve the issue. Finally, talk about what you would like to eat instead if they cannot find your favorite dish.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Speak clearly and use simple sentences.",
+      "Organize your thoughts using 'First, then, finally'."
+    ]
+  },
+  {
+    "title": "Lost Favorite Dish",
+    "scenario": "Lost Favorite Dish",
+    "prompt": "You went to a restaurant in Canada that you really love. You ordered your favorite dish, but when it arrived, it was not what you expected. It was missing some key ingredients. Describe what you will do. First, explain how you will let the staff know about the problem. Then, tell them what you would like them to do. Finally, share how you would feel once the issue is resolved.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and polite when speaking to the staff.",
+      "Be clear about what is missing from your dish."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Losing a Wallet",
+    "prompt": "You lost your wallet while shopping in a mall. Describe what you will do to solve this problem. First, explain where you last saw your wallet. Then, tell us where you will go to look for it, and finally, explain what you will do if you cannot find it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and take your time to think.",
+      "Use simple language and clear steps."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Finding a lost wallet while out shopping.",
+    "prompt": "You are shopping at a mall in Canada and you notice that you have lost your wallet. Describe how you would handle this situation. First, explain what you would do immediately after realizing your wallet is missing. Then, tell what steps you would take to try and find your wallet. Finally, discuss what you would do if you cannot find it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and think clearly about what to do.",
+      "Use simple steps to explain your actions."
+    ]
+  },
+  {
+    "title": "Lost Wallet at the Market",
+    "scenario": "Lost Item at the Market",
+    "prompt": "You are at a local market in Canada, and you realize that you have lost your wallet. Describe what you will do in this situation. First, explain how you will look for your wallet. Then, discuss who you might ask for help. Finally, tell us how you will feel if you cannot find it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Use clear and simple sentences.",
+      "Follow the 'First, Then, Finally' structure to organize your thoughts."
+    ]
+  },
+  {
+    "title": "Lost Wallet at the Mall",
+    "scenario": "Lost Item",
+    "prompt": "Imagine you are at a shopping mall in Canada and you realize you have lost your wallet. Describe the steps you would take to handle this situation. First, explain how you would retrace your steps to try and find the wallet. Then, tell what you would do if you still cannot find it. Finally, explain how you would keep your money and personal information safe in the future.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and take a deep breath.",
+      "Think about the last place you had your wallet."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Finding a Lost Item",
+    "prompt": "Imagine you are in a grocery store in Canada and you realize that you have lost your wallet. Explain what you would do in this situation. First, say how you would look for your wallet in the grocery store. Then, talk about who you would ask for help. Finally, explain what you would do if you couldn't find your wallet.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and think clearly about your next steps.",
+      "Use simple sentences to explain your actions."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Lost Wallet in a Store",
+    "prompt": "Imagine you are shopping at a mall in Canada, and you accidentally lose your wallet. Describe how you would handle this situation. First, explain what you would do when you realize your wallet is missing. Then, talk about what steps you would take to try to find it. Finally, describe how you would feel about the situation and what you would do if you couldn't find it.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Keep your response organized by using first, then, and finally.",
+      "Use simple vocabulary and clear sentences."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Dealing with a Lost Wallet",
+    "prompt": "Imagine you are in a grocery store in Canada and you realize that you have lost your wallet. Describe what you will do first when you notice your wallet is missing. Then, explain what steps you will take to find it or report it. Finally, tell how you will feel about the situation as it unfolds.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Start by describing where you last saw your wallet.",
+      "Explain your feelings to show how the situation affects you.",
+      "End with what you hope will happen next."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Lost Item",
+    "prompt": "Imagine you are in a grocery store in Canada. You realize that you have lost your wallet. First, you need to stay calm and think about where you last saw it. Then, you will ask a store employee for help in finding it. Finally, explain what you will do if you cannot find your wallet, such as reporting it to the lost and found or canceling your cards.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and speak clearly.",
+      "Organize your ideas using 'First', 'Then', and 'Finally'."
+    ]
+  },
+  {
+    "title": "Lost Wallet",
+    "scenario": "Finding Your Lost Wallet",
+    "prompt": "Imagine you are in a grocery store in Canada, and you realize that you have lost your wallet. Describe what you would do after you notice your wallet is missing. First, explain how you would search for your wallet in the store. Then, describe what you would do if you cannot find it. Finally, talk about how you would make sure to keep your important items safe in the future.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Stay calm and think clearly about your steps.",
+      "Use simple language to explain your actions."
+    ]
+  },
+  {
+    "title": "Lost Wallet at the Mall",
+    "scenario": "Lost Wallet",
+    "prompt": "Imagine you are at a mall in Canada and you realize you have lost your wallet. Describe what you will do in this situation. First, explain how you will check where you might have lost it. Then, talk about who you will ask for help. Finally, tell us what steps you will take to make sure you find your wallet or report it lost.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to describe your actions."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Growth",
+    "scenario": "Conflict between conservation efforts and industrial development",
+    "prompt": "Imagine you are a city councilor in a small Canadian town where a major corporation has proposed to build a factory on land that is home to a rare species of wildlife. The local economy is struggling, and the factory promises to create many jobs but could harm the environment. Discuss the competing priorities in this situation, including the importance of economic development, environmental protection, and the well-being of the local community. Present your argument, considering potential counterarguments, and explain how you would address the concerns of various stakeholders involved in this dilemma.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing priorities and stakeholders to frame your argument.",
+      "Acknowledge and address potential counterarguments to strengthen your position."
+    ]
+  },
+  {
+    "title": "Community Revitalization vs. Historical Preservation",
+    "scenario": "Balancing Growth and Heritage",
+    "prompt": "You are a member of a local city council in a mid-sized Canadian city. The council is facing a proposal to revitalize a neglected downtown area, which includes plans for new commercial buildings, parks, and residential spaces. However, this area is also home to several historical structures that many community members feel should be preserved as part of the city’s heritage. The proposed changes promise economic growth and job creation but could lead to the demolition of these historical sites. Discuss how you would approach this situation, considering the competing priorities of community development and historical preservation. What arguments would you present to support your position, and what counterarguments would you address regarding the importance of preserving the city's history? Highlight the ethical implications these decisions may have on future generations and community identity.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing priorities and provide examples to support your viewpoint.",
+      "Address potential counterarguments thoughtfully, demonstrating an understanding of the broader implications."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Growth",
+    "scenario": "Proposed Development in a Protected Area",
+    "prompt": "You are a city council member in a Canadian municipality facing a significant decision. A large corporation has proposed a development project in a protected natural area that is crucial for local biodiversity. The project promises substantial economic benefits, including job creation and increased tax revenue for the community. However, it poses a serious threat to the ecosystem and the Indigenous communities that have lived in harmony with this land for generations. You have limited time to respond before the council votes. Discuss the competing priorities of environmental protection and economic growth, and outline your stance on how to address the situation. Make sure to consider the perspectives of various stakeholders, and explore potential compromises or alternatives.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider the short-term and long-term implications of your decision.",
+      "Acknowledge the values and concerns of different stakeholders involved."
+    ]
+  },
+  {
+    "title": "Balancing Privacy and Public Safety",
+    "scenario": "Data Surveillance vs. Individual Privacy Rights",
+    "prompt": "In a major Canadian city, the local government proposes a new policy to enhance public safety by installing surveillance cameras in high-crime areas. While some citizens support the initiative as a necessary measure to reduce crime rates, others are concerned about the potential invasion of privacy and the ethical implications of increased surveillance. As a community leader, you are asked to provide your perspective on this policy. Discuss the potential benefits and drawbacks, considering the competing priorities of public safety and individual privacy rights. What arguments could you present to support your position, and how might you address counterarguments from those who disagree with your viewpoint? Remember that there are no clear right or wrong answers in this nuanced situation.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider both sides of the argument and highlight the complexities involved.",
+      "Use specific examples to illustrate your points and demonstrate layered reasoning."
+    ]
+  },
+  {
+    "title": "Balancing Public Safety and Personal Freedom",
+    "scenario": "Public Health Measures in a Cultural Context",
+    "prompt": "Imagine that you are part of a city council tasked with implementing a new public health policy aimed at mitigating the spread of a contagious virus. The policy includes mandatory vaccination for all residents. However, there are significant concerns from various cultural groups who feel that this requirement infringes on their personal freedoms and cultural beliefs. Some community members argue that the policy is necessary to protect public health and prevent further outbreaks, while others assert that it violates individual rights and their right to choose. Discuss the competing priorities in this situation, considering the ethical dimensions involved. How would you address the concerns of both sides while ensuring public health is prioritized? Identify potential compromises or alternatives, and acknowledge the complexity of the issue in your response.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing interests and values at play.",
+      "Consider the implications of your proposed solutions for all stakeholders involved."
+    ]
+  },
+  {
+    "title": "Balancing Community and Environmental Interests",
+    "scenario": "Dilemma Over Urban Development",
+    "prompt": "You are a city planner in a medium-sized Canadian city. The city council is considering a new development project that would construct a shopping complex on a site currently zoned as green space. On one hand, the project promises economic growth and job creation, attracting consumers and boosting local businesses. On the other hand, the proposed site is home to several community parks that promote biodiversity and serve as a recreational area for families. Furthermore, residents express concerns about increased traffic and the potential for gentrification, which could displace lower-income families. As you discuss this situation with various stakeholders, including business owners, environmental activists, and community members, how would you navigate these competing interests to arrive at a balanced recommendation? Consider the long-term implications for both the community and the environment in your response.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the competing interests and their implications.",
+      "Be prepared to address counterarguments and explain your reasoning."
+    ]
+  },
+  {
+    "title": "Cultural Heritage Preservation vs. Urban Development",
+    "scenario": "Navigating Competing Interests in City Planning",
+    "prompt": "Imagine you are a city planner in a rapidly growing Canadian city. A new proposal has emerged to develop a section of the downtown area that includes a historical site recognized for its cultural significance to a local Indigenous community. The proposed development promises to bring economic benefits and job opportunities but could potentially erase a vital piece of the community's heritage. You must consider the interests of various stakeholders: the local government, the Indigenous community, business owners, and future residents. Discuss how you would approach this situation, considering the ethical dimensions and potential long-term impacts on social cohesion, economic growth, and cultural identity. Address possible counterarguments and concessions you might need to make, and articulate your reasoning clearly.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider the perspectives of all stakeholders involved and how their needs and desires may conflict.",
+      "Be sure to articulate both the merits and drawbacks of the proposed development, as well as potential compromises."
+    ]
+  },
+  {
+    "title": "Balancing Cultural Heritage and Urban Development",
+    "scenario": "Cultural Heritage vs. Urban Growth",
+    "prompt": "You are a city planner in a rapidly growing urban area in Canada. The city council is considering a proposed project to build a new shopping center on a site that contains historical and culturally significant Indigenous artifacts. Some community members argue that the development will boost the local economy and create jobs, while others stress the importance of preserving the heritage site. Discuss the competing priorities of economic growth and cultural preservation. What are the potential impacts on different stakeholders, and how do you propose to navigate this complex situation? Consider the ethical dimensions and possible compromises.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider the perspectives of various stakeholders, including local businesses, Indigenous communities, and the city council.",
+      "Acknowledge the complexity of balancing economic benefits with the importance of preserving cultural heritage."
+    ]
+  },
+  {
+    "title": "Proposed Urban Development Project",
+    "scenario": "Urban Renewal vs. Community Preservation",
+    "prompt": "Imagine that you are part of a local community board in a Canadian city faced with a proposal for a large urban development project. This project promises to provide much-needed housing and create jobs, but it will also lead to the displacement of several long-standing local businesses and residents. The community is divided: some residents support the development for its economic benefits, while others oppose it due to concerns over cultural loss and gentrification. Discuss the competing priorities involved, considering aspects such as economic growth, community identity, and social justice. How would you address these conflicting interests, and what ethical considerations would guide your decision?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider multiple perspectives of stakeholders involved.",
+      "Weigh the short-term vs. long-term impacts of the project."
+    ]
+  },
+  {
+    "title": "Healthcare Resource Allocation",
+    "scenario": "Allocation of limited healthcare resources during a crisis",
+    "prompt": "Imagine Canada is facing a severe healthcare crisis due to a sudden outbreak of a contagious disease. The government has limited resources, and healthcare providers must decide how to allocate these resources effectively. You are part of a committee tasked with creating a policy for allocating patients to hospital beds. On one hand, you have a group of older patients with pre-existing health conditions who may require intensive care but have a lower chance of recovery. On the other hand, there are younger patients with no prior conditions who could likely recover with proper care. Deliberate on how your committee should approach this ethical dilemma, considering the implications of your decisions on various stakeholders, including patients, families, healthcare workers, and society. Address potential counterarguments and the importance of fairness in your reasoning.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider the ethical implications of your decisions and how they affect different groups.",
+      "Acknowledge opposing viewpoints and provide counterarguments to strengthen your position."
+    ]
+  },
+  {
+    "title": "Navigating Environmental Policy vs. Economic Growth",
+    "scenario": "Balancing Environment and Economy",
+    "prompt": "Imagine you are part of the local government in a small Canadian town that is experiencing a boom in the tech industry. A major tech company wants to build a facility that will create jobs and boost the local economy. However, this facility will also disrupt the surrounding natural habitat, which is home to several endangered species. You must present your opinion on whether the development should proceed or be halted. Consider the potential benefits to the community and economy, the ethical implications of harming wildlife, and the competing priorities of progress and conservation. Are there compromises that could be implemented to balance these interests?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Acknowledge the complexity of both sides of the argument and present nuanced counterarguments.",
+      "Discuss potential compromises or alternative solutions that could mitigate the negative impacts."
+    ]
+  },
+  {
+    "title": "Balancing Public Safety and Individual Rights",
+    "scenario": "Implementation of Public Health Measures",
+    "prompt": "Imagine you are a city council member in a Canadian city facing a significant public health crisis, such as an outbreak of a contagious disease. The government wants to implement strict public health measures, including mandatory vaccinations and lockdowns, to safeguard the community. However, these measures conflict with individuals' rights to personal choice and bodily autonomy. In your opinion, how should the council balance public safety and individual rights? Consider the perspectives of various stakeholders, such as healthcare professionals, affected businesses, and the general public. Acknowledge potential counterarguments and other ethical implications of both sides as you develop your response.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response by outlining the main arguments for both sides of the issue.",
+      "Use specific examples to illustrate the impact of public health measures on different stakeholders."
+    ]
+  },
+  {
+    "title": "Balancing Environmental Protection and Economic Development",
+    "scenario": "Environmental Policy vs. Economic Growth",
+    "prompt": "Imagine you are a municipal council member in Canada facing a difficult situation. Your community is located near a pristine coastal area that is home to endangered wildlife and rich biodiversity. A large corporation has proposed a development project that promises significant economic growth and job creation for the local population but poses a serious threat to the environmental integrity of the area. Your council must decide whether to allow the project to proceed or to prioritize environmental protection. Discuss the competing priorities and ethical implications of both sides. Consider potential counterarguments and any concessions that could be made to balance the needs of the economy with environmental stewardship. How would you justify your position on this matter?",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Clearly outline the main arguments for both sides to demonstrate nuanced understanding.",
+      "Use specific examples to illustrate the potential impact of each decision."
+    ]
+  },
+  {
+    "title": "Balancing Environmental and Economic Interests",
+    "scenario": "Navigating a Controversial Forest Logging Policy",
+    "prompt": "Imagine you are a city council member in British Columbia facing a difficult decision regarding a new logging policy in a nearby forest. The policy aims to promote economic growth by allowing logging companies to operate in an area that has been preserved for its ecological significance. Proponents argue that the logging will create jobs and stimulate the local economy, while opponents emphasize the environmental impact and loss of biodiversity. In your response, discuss both sides of the argument, including the potential benefits of economic growth and the ethical responsibility to protect the environment. Deliberate on how you would balance these competing interests, acknowledging the complexities of the situation and any possible compromises that could be reached. Remember to consider the perspectives of various stakeholders, including community members, environmentalists, and business owners.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Structure your response by clearly outlining both sides of the argument.",
+      "Use specific examples to illustrate the potential impacts on different stakeholders."
+    ]
+  },
+  {
+    "title": "Balancing Tradition and Innovation",
+    "scenario": "Cultural Heritage vs. Urban Development",
+    "prompt": "Imagine you are part of a city council in a Canadian city where a significant indigenous cultural site is located. The council is considering a new urban development plan that promises to enhance the local economy and provide much-needed housing but threatens to overshadow the cultural site. Some community members argue that preserving the site is essential for maintaining cultural identity, while others believe the economic benefits outweigh the cultural concerns. Discuss how you would approach this situation, considering the competing priorities of economic growth and cultural preservation. Be sure to address potential counterarguments and any ethical implications your decision may have.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60,
+    "tips": [
+      "Consider both immediate and long-term impacts of your decision.",
+      "Acknowledge and address the perspectives of various stakeholders involved."
+    ]
   }
 ]

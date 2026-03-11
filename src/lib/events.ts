@@ -18,17 +18,17 @@ export interface SiteEvent {
 // ══════════════════════════════════════════
 export const SITE_EVENTS: SiteEvent[] = [
   {
-    id: 'launch-week-2026',
-    name: 'Launch Week',
-    description: 'Get 50% OFF your first month — monthly plan only!',
-    discount: '50% OFF',
-    promoCode: 'LAUNCH50',
+    id: 'welcome-30-2026',
+    name: 'Welcome Offer',
+    description: 'Get 30% OFF your first month — monthly plan only!',
+    discount: '30% OFF',
+    promoCode: 'WELCOME30',
     startDate: '2026-03-08T00:00:00Z',
-    endDate: '2026-03-15T23:59:59Z',
-    bannerEmoji: '🚀',
+    endDate: '2026-03-16T23:59:59Z',
+    bannerEmoji: '🎉',
     bannerColor: '#7c3aed',
     bannerColorEnd: '#db2777',
-    ctaText: 'Claim 50% OFF',
+    ctaText: 'Claim 30% OFF',
   },
 ];
 

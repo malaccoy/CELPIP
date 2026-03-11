@@ -51,7 +51,7 @@ export default function SpeakingHubPage() {
           <div 
             key={task.id} 
             className={styles.prepCard}
-            onClick={() => router.push(`/speaking/practice/${task.id}`)}
+            onClick={() => router.push(`/ai-coach`)}
           >
             <div className={styles.prepCardIcon}>
               <span style={{ fontSize: '1.5rem' }}>{task.icon}</span>
@@ -79,7 +79,7 @@ export default function SpeakingHubPage() {
           <div 
             key={task.id}
             className={styles.examCard}
-            onClick={() => router.push(`/speaking/practice/${task.id}`)}
+            onClick={() => router.push(`/ai-coach`)}
           >
             <div className={styles.examCardHeader}>
               <div className={styles.examCardIcon}>
@@ -113,7 +113,7 @@ export default function SpeakingHubPage() {
       </section>
 
       {/* AI Feature Notice */}
-      <div className={styles.guideLink} onClick={() => router.push('/speaking/practice/giving-advice')}>
+      <div className={styles.guideLink} onClick={() => router.push('/ai-coach')}>
         <Sparkles size={18} />
         <span>Full Speaking Test • ~{Math.round(totalTime / 60)} min • AI Feedback</span>
         <ArrowRight size={16} />

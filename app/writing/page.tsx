@@ -93,7 +93,7 @@ export default function WritingHubPage() {
         {/* Task 1 */}
         <div 
           className={styles.examCard}
-          onClick={() => router.push('/writing/task-1')}
+          onClick={() => router.push('/ai-coach')}
         >
           <div className={styles.examCardHeader}>
             <div className={styles.examCardIcon}>
@@ -129,7 +129,7 @@ export default function WritingHubPage() {
         {/* Task 2 */}
         <div 
           className={styles.examCard}
-          onClick={() => router.push('/writing/task-2')}
+          onClick={() => router.push('/ai-coach')}
         >
           <div className={styles.examCardHeader}>
             <div className={styles.examCardIcon}>

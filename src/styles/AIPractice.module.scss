@@ -690,3 +690,272 @@
     box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
   }
 }
+
+/* ─── Listening Card (AI Coach) ─── */
+.listenCard {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.listenTitle {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 1rem 0 0.75rem;
+}
+
+.audioVisual {
+  margin-bottom: 0.5rem;
+}
+
+.audioWave {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6px;
+  height: 50px;
+}
+
+.audioWavePlaying .waveBar {
+  animation: soundWave 0.8s ease-in-out infinite;
+}
+
+.waveBar {
+  width: 6px;
+  height: 40px;
+  background: linear-gradient(to top, #fb923c, #fbbf24);
+  border-radius: 3px;
+  transform: scaleY(0.3);
+  
+  &:nth-child(1) { animation-delay: 0s; }
+  &:nth-child(2) { animation-delay: 0.1s; }
+  &:nth-child(3) { animation-delay: 0.2s; }
+  &:nth-child(4) { animation-delay: 0.3s; }
+  &:nth-child(5) { animation-delay: 0.4s; }
+}
+
+@keyframes soundWave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.listenHint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+}
+
+.playBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #fb923c, #f59e0b);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 146, 60, 0.35);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.readyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.75rem;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.35);
+  }
+}
+
+.clipBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+
+.clipTabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.clipTab {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  font-size: 0.8rem;
+  color: rgba(248,250,252,0.5);
+}
+
+.clipTabActive {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 2px solid #6366f1;
+  background: rgba(99,102,241,0.1);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #6366f1;
+}
+
+.clipTabDone {
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(34,197,94,0.3);
+  background: rgba(34,197,94,0.1);
+  font-size: 0.8rem;
+  color: #22c55e;
+}
+
+/* ─── Exam-style Cards (adapted from WritingHub) ─── */
+.practiceCard {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 1.6rem;
+  margin-bottom: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.practiceCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.practiceCardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.practiceCardIcon.reading { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.practiceCardIcon.writing { background: linear-gradient(135deg, #10b981, #059669); }
+.practiceCardIcon.listening { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.practiceCardIcon.speaking { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+
+.practiceCardTitle {
+  flex: 1;
+  h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.practiceCardBadge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+.practiceCardBadge.reading { color: #60a5fa; }
+.practiceCardBadge.writing { color: #34d399; }
+.practiceCardBadge.listening { color: #fbbf24; }
+.practiceCardBadge.speaking { color: #a78bfa; }
+
+.practiceCardDesc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+  margin: 0 0 1.1rem;
+}
+
+.practiceCardMeta {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.35rem;
+  flex-wrap: wrap;
+}
+
+.practiceMetaChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  svg { color: rgba(255,255,255,0.45); }
+}
+
+.practiceCardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.35s ease;
+  &:hover { transform: translateY(-2px); }
+  &:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+}
+.practiceCardCta.reading { background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; }
+.practiceCardCta.writing { background: linear-gradient(135deg, #10b981, #059669); color: white; }
+.practiceCardCta.listening { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; }
+.practiceCardCta.speaking { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; }

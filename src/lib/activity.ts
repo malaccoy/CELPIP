@@ -12,7 +12,7 @@ export async function logActivity(
   type: 'reading' | 'listening' | 'writing' | 'speaking',
   count: number = 1
 ) {
-  const points = (type === 'writing' || type === 'speaking') ? 2 : 1;
+  const points = type === 'writing' ? 3 : type === 'speaking' ? 2 : 1;
 
   try {
     // Create individual logs for accurate tracking

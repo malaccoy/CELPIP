@@ -14,7 +14,7 @@ const PART_MAP: Record<string, string> = {
 
 export async function POST(req: NextRequest) {
   try {
-    const { partOrTask } = await req.json();
+    const { partOrTask, difficulty } = await req.json();
     
     // Find which part
     const partKey = Object.keys(PART_MAP).find(k => partOrTask?.includes(k));
@@ -29,7 +29,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Library not available for this part yet' }, { status: 404 });
     }
     
-    const exercises = JSON.parse(readFileSync(libPath, 'utf8'));
+    let exercises = JSON.parse(readFileSync(libPath, 'utf8'));
+    
+    // Filter by difficulty if provided
+    if (difficulty) {
+      const filtered = exercises.filter((e: any) => e.difficulty === difficulty);
+      if (filtered.length > 0) exercises = filtered;
+    }
     
     if (!exercises.length) {
       return NextResponse.json({ error: 'No exercises available' }, { status: 404 });

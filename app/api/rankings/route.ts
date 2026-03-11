@@ -1,20 +1,23 @@
 import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { auth } from '@/../auth';
+import { getUserPlan } from '@/lib/plan';
+
+export const dynamic = 'force-dynamic';
 
 const prisma = new PrismaClient();
 
 export async function GET() {
   try {
-    const session = await auth();
-    const currentUserId = session?.user?.id;
+    const planCheck = await getUserPlan();
+    const currentUserId = planCheck.userId;
 
-    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+    const now = new Date();
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
 
-    // Top 10 users by points in last 7 days
+    // Top 10 users by points this month
     const topRaw = await prisma.activityLog.groupBy({
       by: ['userId'],
-      where: { createdAt: { gte: sevenDaysAgo } },
+      where: { createdAt: { gte: startOfMonth } },
       _sum: { points: true },
       orderBy: { _sum: { points: 'desc' } },
       take: 10,
@@ -24,7 +27,7 @@ export async function GET() {
     const userIds = topRaw.map(r => r.userId);
     const users = await prisma.user.findMany({
       where: { id: { in: userIds } },
-      select: { id: true, name: true, email: true, showInRanking: true },
+      select: { id: true, name: true, email: true, image: true, showInRanking: true },
     });
     const userMap = new Map(users.map(u => [u.id, u]));
 
@@ -43,6 +46,7 @@ export async function GET() {
         return {
           rank: i + 1,
           displayName,
+          avatar: user.image || null,
           points: r._sum.points || 0,
           isCurrentUser: r.userId === currentUserId,
         };
@@ -52,7 +56,7 @@ export async function GET() {
     // Total active learners this week
     const activeLearners = await prisma.activityLog.groupBy({
       by: ['userId'],
-      where: { createdAt: { gte: sevenDaysAgo } },
+      where: { createdAt: { gte: startOfMonth } },
     });
     const totalLearners = activeLearners.length;
 
@@ -64,7 +68,7 @@ export async function GET() {
     if (currentUserId) {
       // My points this week
       const myResult = await prisma.activityLog.aggregate({
-        where: { userId: currentUserId, createdAt: { gte: sevenDaysAgo } },
+        where: { userId: currentUserId, createdAt: { gte: startOfMonth } },
         _sum: { points: true },
       });
       myPoints = myResult._sum.points || 0;
@@ -73,7 +77,7 @@ export async function GET() {
       if (myPoints > 0) {
         const usersAbove = await prisma.activityLog.groupBy({
           by: ['userId'],
-          where: { createdAt: { gte: sevenDaysAgo } },
+          where: { createdAt: { gte: startOfMonth } },
           _sum: { points: true },
           having: { points: { _sum: { gt: myPoints } } },
         });

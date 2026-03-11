@@ -137,7 +137,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-01"
+    "id": "part1-01",
+    "difficulty": "intermediate"
   },
   {
     "title": "Lost Luggage Complaint",
@@ -277,7 +278,8 @@
         "correct": 1
       }
     ],
-    "id": "part1-02"
+    "id": "part1-02",
+    "difficulty": "intermediate"
   },
   {
     "title": "Email Exchange about Missing an Exam",
@@ -417,7 +419,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-03"
+    "id": "part1-03",
+    "difficulty": "intermediate"
   },
   {
     "title": "Concerns About Bullying",
@@ -545,7 +548,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-04"
+    "id": "part1-04",
+    "difficulty": "intermediate"
   },
   {
     "title": "Negotiating Project Terms",
@@ -673,7 +677,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-05"
+    "id": "part1-05",
+    "difficulty": "intermediate"
   },
   {
     "title": "Request for Parental Leave and Coverage Plan",
@@ -801,7 +806,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-06"
+    "id": "part1-06",
+    "difficulty": "intermediate"
   },
   {
     "title": "Community Clean-Up Event Organization",
@@ -929,7 +935,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-07"
+    "id": "part1-07",
+    "difficulty": "intermediate"
   },
   {
     "title": "Office Seating Arrangement Discussion",
@@ -1057,7 +1064,8 @@
         "correct": 2
       }
     ],
-    "id": "part1-08"
+    "id": "part1-08",
+    "difficulty": "intermediate"
   },
   {
     "title": "Concerns About Workplace Safety",
@@ -1197,7 +1205,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-09"
+    "id": "part1-09",
+    "difficulty": "intermediate"
   },
   {
     "title": "Project Deadline Update",
@@ -1337,7 +1346,8 @@
         "correct": 2
       }
     ],
-    "id": "part1-10"
+    "id": "part1-10",
+    "difficulty": "intermediate"
   },
   {
     "title": "Parental Leave Request and Coverage Plan",
@@ -1477,7 +1487,8 @@
         "correct": 2
       }
     ],
-    "id": "part1-11"
+    "id": "part1-11",
+    "difficulty": "intermediate"
   },
   {
     "title": "Home Damage Claim Inquiry",
@@ -1605,7 +1616,8 @@
         "correct": 1
       }
     ],
-    "id": "part1-12"
+    "id": "part1-12",
+    "difficulty": "intermediate"
   },
   {
     "title": "Community Clean-Up Event Coordination",
@@ -1745,7 +1757,8 @@
         "correct": 2
       }
     ],
-    "id": "part1-13"
+    "id": "part1-13",
+    "difficulty": "intermediate"
   },
   {
     "title": "Response to Online Review",
@@ -1873,7 +1886,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-14"
+    "id": "part1-14",
+    "difficulty": "intermediate"
   },
   {
     "title": "Office Seating Arrangement Change",
@@ -2013,7 +2027,8 @@
         "correct": 1
       }
     ],
-    "id": "part1-15"
+    "id": "part1-15",
+    "difficulty": "intermediate"
   },
   {
     "title": "Request for Early Lease Termination",
@@ -2141,7 +2156,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-16"
+    "id": "part1-16",
+    "difficulty": "intermediate"
   },
   {
     "title": "Workplace Safety Concerns",
@@ -2281,7 +2297,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-17"
+    "id": "part1-17",
+    "difficulty": "intermediate"
   },
   {
     "title": "Email Exchange on Allergy Policy",
@@ -2421,7 +2438,8 @@
         "correct": 0
       }
     ],
-    "id": "part1-18"
+    "id": "part1-18",
+    "difficulty": "intermediate"
   },
   {
     "title": "Project Update on Deadline Change",
@@ -2561,7 +2579,8 @@
         "correct": 1
       }
     ],
-    "id": "part1-19"
+    "id": "part1-19",
+    "difficulty": "intermediate"
   },
   {
     "title": "Customer Service Follow-Up",
@@ -2701,6 +2720,4177 @@
         "correct": 0
       }
     ],
-    "id": "part1-20"
+    "id": "part1-20",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Move-In Reminder",
+    "passage": "Dear Sarah,\n\nI hope you are excited about moving to your new apartment in Toronto! I just want to remind you that your move-in date is on April 25th. Please remember to bring your identification and a copy of your lease agreement. \n\nThe building staff will be available to help you from 9 AM to 5 PM. If you arrive early, you can wait in the lobby. Do not forget to arrange for your utilities, like electricity and internet, before you move in. \n\nIf you have any questions, feel free to call me. I can’t wait to see how you decorate your new place!\n\nBest wishes,\nEmma",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "Moving to a new apartment",
+          "Buying furniture",
+          "Renting a car",
+          "Planning a party"
+        ],
+        "correct": 0,
+        "explanation": "The email is about moving into a new apartment."
+      },
+      {
+        "id": 2,
+        "question": "What date does Sarah move in?",
+        "options": [
+          "April 20th",
+          "April 25th",
+          "May 1st",
+          "June 5th"
+        ],
+        "correct": 1,
+        "explanation": "The email states that the move-in date is on April 25th."
+      },
+      {
+        "id": 3,
+        "question": "Who is the sender of the email?",
+        "options": [
+          "Sarah",
+          "Emma",
+          "Building staff",
+          "Utility company"
+        ],
+        "correct": 1,
+        "explanation": "The email is signed by Emma."
+      },
+      {
+        "id": 4,
+        "question": "What should Sarah bring on move-in day?",
+        "options": [
+          "Food",
+          "Friends",
+          "Identification",
+          "Books"
+        ],
+        "correct": 2,
+        "explanation": "Sarah needs to bring her identification and a copy of her lease."
+      },
+      {
+        "id": 5,
+        "question": "What time can Sarah get help from the building staff?",
+        "options": [
+          "6 AM to 8 AM",
+          "9 AM to 12 PM",
+          "8 PM to 10 PM",
+          "9 AM to 5 PM"
+        ],
+        "correct": 3,
+        "explanation": "The building staff is available from 9 AM to 5 PM."
+      },
+      {
+        "id": 6,
+        "question": "Where should Sarah wait if she arrives early?",
+        "options": [
+          "In her apartment",
+          "In the lobby",
+          "At a friend's house",
+          "In a restaurant"
+        ],
+        "correct": 1,
+        "explanation": "The email says to wait in the lobby if she arrives early."
+      },
+      {
+        "id": 7,
+        "question": "What does Sarah need to arrange before moving in?",
+        "options": [
+          "A job",
+          "Utilities",
+          "A pet",
+          "A holiday"
+        ],
+        "correct": 1,
+        "explanation": "She needs to arrange for utilities like electricity and internet."
+      },
+      {
+        "id": 8,
+        "question": "Who can Sarah call if she has questions?",
+        "options": [
+          "The landlord",
+          "Emma",
+          "The police",
+          "Her lawyer"
+        ],
+        "correct": 1,
+        "explanation": "Emma says to call her if Sarah has any questions."
+      },
+      {
+        "id": 9,
+        "question": "What city is Sarah moving to?",
+        "options": [
+          "Vancouver",
+          "Toronto",
+          "Montreal",
+          "Calgary"
+        ],
+        "correct": 1,
+        "explanation": "The email mentions that Sarah is moving to Toronto."
+      },
+      {
+        "id": 10,
+        "question": "What will Emma be interested in seeing?",
+        "options": [
+          "The weather",
+          "The furniture store",
+          "Sarah's new apartment decoration",
+          "The moving truck"
+        ],
+        "correct": 2,
+        "explanation": "Emma says she can't wait to see how Sarah decorates her new place."
+      },
+      {
+        "id": 11,
+        "question": "What type of email is this?",
+        "options": [
+          "Job offer",
+          "Reminder",
+          "Complaint",
+          "Invitation"
+        ],
+        "correct": 1,
+        "explanation": "This email serves as a reminder for Sarah's move-in details."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Plans",
+    "passage": "Subject: Weekend Plans\n\nHi Sarah,\n\nI hope you are having a great week! I wanted to check in with you about our plans for the weekend. How about we go to the farmer's market on Saturday morning? I heard they have fresh fruits and vegetables. We can also get some homemade bread and jam.\n\nAfter the market, we could have lunch at that new café on Elm Street. I read some good reviews about it. Let me know if you’re free.\n\nOn Sunday, I was thinking of going for a walk in the park if the weather is nice. It’s a good way to relax before the new week starts.\n\nLooking forward to hearing from you!\n\nBest,\nEmily\n",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did Emily suggest for Saturday?",
+        "options": [
+          "A farmer's market",
+          "A movie night",
+          "A beach trip",
+          "A shopping mall"
+        ],
+        "correct": 0,
+        "explanation": "Emily suggested going to the farmer's market on Saturday."
+      },
+      {
+        "id": 2,
+        "question": "What can they buy at the farmer's market?",
+        "options": [
+          "Clothes",
+          "Fresh fruits and vegetables",
+          "Books",
+          "Electronics"
+        ],
+        "correct": 1,
+        "explanation": "Emily mentioned they can buy fresh fruits and vegetables at the farmer's market."
+      },
+      {
+        "id": 3,
+        "question": "Where did Emily want to have lunch?",
+        "options": [
+          "At her home",
+          "In a restaurant in Toronto",
+          "At a café on Elm Street",
+          "At the farmer's market"
+        ],
+        "correct": 2,
+        "explanation": "Emily suggested having lunch at a new café on Elm Street."
+      },
+      {
+        "id": 4,
+        "question": "What did Emily read about the café?",
+        "options": [
+          "It is very expensive",
+          "It has bad reviews",
+          "It has good reviews",
+          "It is closed now"
+        ],
+        "correct": 2,
+        "explanation": "Emily read some good reviews about the café."
+      },
+      {
+        "id": 5,
+        "question": "What does Emily want to do on Sunday?",
+        "options": [
+          "Go shopping",
+          "Go to the movies",
+          "Go for a walk in the park",
+          "Visit a friend"
+        ],
+        "correct": 2,
+        "explanation": "Emily was thinking of going for a walk in the park on Sunday."
+      },
+      {
+        "id": 6,
+        "question": "What would make Emily’s Sunday walk happen?",
+        "options": [
+          "If it rains",
+          "If the weather is nice",
+          "If she is busy",
+          "If she feels tired"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants to go for a walk if the weather is nice."
+      },
+      {
+        "id": 7,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "Her teacher",
+          "Her colleague",
+          "Sarah",
+          "Her mother"
+        ],
+        "correct": 2,
+        "explanation": "Emily is writing to Sarah."
+      },
+      {
+        "id": 8,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "Plans for the weekend",
+          "A birthday party",
+          "A work project",
+          "Travel plans"
+        ],
+        "correct": 0,
+        "explanation": "The main topic of the email is about plans for the weekend."
+      },
+      {
+        "id": 9,
+        "question": "What does Emily hope for Sarah?",
+        "options": [
+          "She is busy",
+          "She is not feeling well",
+          "She is having a great week",
+          "She is going on vacation"
+        ],
+        "correct": 2,
+        "explanation": "Emily hopes that Sarah is having a great week."
+      },
+      {
+        "id": 10,
+        "question": "What day of the week is Saturday?",
+        "options": [
+          "First day",
+          "Second day",
+          "Fifth day",
+          "Seventh day"
+        ],
+        "correct": 2,
+        "explanation": "Saturday is the fifth day of the week."
+      },
+      {
+        "id": 11,
+        "question": "What should Sarah do if she is free?",
+        "options": [
+          "She should ignore the email",
+          "She should reply and confirm",
+          "She should change the plans",
+          "She should ask about another day"
+        ],
+        "correct": 1,
+        "explanation": "Sarah should reply to Emily and confirm if she is free."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Plans",
+    "passage": "Subject: Weekend Plans\n\nHi Sarah,\n\nI hope you are doing well! I wanted to tell you about our plans for the weekend. On Saturday, we will go to the farmer's market in downtown Toronto. It opens at 8 AM, and we can buy fresh fruits and vegetables. After that, we will have lunch at a nice café nearby.\n\nOn Sunday, I thought we could go for a hike at High Park. The weather is expected to be sunny, perfect for hiking. We can enjoy nature and take some pictures.\n\nLet me know if you can join us for both days. It will be a lot of fun!\n\nBest,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A weekend plans",
+          "School homework",
+          "Job application",
+          "Travel arrangements"
+        ],
+        "correct": 0,
+        "explanation": "The email is about plans for the weekend."
+      },
+      {
+        "id": 2,
+        "question": "What does Emily suggest doing on Saturday?",
+        "options": [
+          "Going to the library",
+          "Visiting a museum",
+          "Going to the farmer's market",
+          "Watching a movie"
+        ],
+        "correct": 2,
+        "explanation": "Emily suggests going to the farmer's market on Saturday."
+      },
+      {
+        "id": 3,
+        "question": "What time does the farmer's market open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 0,
+        "explanation": "The farmer's market opens at 8 AM."
+      },
+      {
+        "id": 4,
+        "question": "Where is the farmer's market located?",
+        "options": [
+          "In the suburbs",
+          "In downtown Toronto",
+          "At High Park",
+          "Near the airport"
+        ],
+        "correct": 1,
+        "explanation": "The farmer's market is in downtown Toronto."
+      },
+      {
+        "id": 5,
+        "question": "What will they do after visiting the farmer's market?",
+        "options": [
+          "Go home",
+          "Have lunch at a café",
+          "Go shopping",
+          "Watch a play"
+        ],
+        "correct": 1,
+        "explanation": "They will have lunch at a café after the market."
+      },
+      {
+        "id": 6,
+        "question": "What activity does Emily suggest for Sunday?",
+        "options": [
+          "Going shopping",
+          "Going for a hike",
+          "Watching TV",
+          "Staying indoors"
+        ],
+        "correct": 1,
+        "explanation": "Emily suggests going for a hike at High Park on Sunday."
+      },
+      {
+        "id": 7,
+        "question": "What is the expected weather for Sunday?",
+        "options": [
+          "Rainy",
+          "Snowy",
+          "Sunny",
+          "Cloudy"
+        ],
+        "correct": 2,
+        "explanation": "The weather is expected to be sunny on Sunday."
+      },
+      {
+        "id": 8,
+        "question": "What can they do while hiking?",
+        "options": [
+          "Shop for groceries",
+          "Enjoy nature and take pictures",
+          "Swim in a lake",
+          "Eat at a restaurant"
+        ],
+        "correct": 1,
+        "explanation": "They can enjoy nature and take pictures while hiking."
+      },
+      {
+        "id": 9,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "Her mother",
+          "A friend named Sarah",
+          "Her boss",
+          "A teacher"
+        ],
+        "correct": 1,
+        "explanation": "Emily is writing to her friend Sarah."
+      },
+      {
+        "id": 10,
+        "question": "How does Emily sign off the email?",
+        "options": [
+          "Love",
+          "Best",
+          "Sincerely",
+          "Cheers"
+        ],
+        "correct": 1,
+        "explanation": "Emily signs off with 'Best'."
+      },
+      {
+        "id": 11,
+        "question": "What does Emily want to know?",
+        "options": [
+          "If Sarah can join them",
+          "If Sarah likes hiking",
+          "If Sarah is busy",
+          "If Sarah is coming to dinner"
+        ],
+        "correct": 0,
+        "explanation": "Emily wants to know if Sarah can join them for both days."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Plans",
+    "passage": "Hi Sarah,\n\nI hope you are doing well! I wanted to see if you would like to join me this weekend. It will be great to catch up! I was thinking we could go to the farmer's market on Saturday morning. There are many fresh fruits and vegetables there. After that, we can have lunch at our favorite café.\n\nOn Sunday, I plan to relax at home and read a book. If you want, you can come over and we can share some snacks. I really miss our chats!\n\nLet me know what you think. I hope you can join me!\n\nBest,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does Emily want to do this weekend?",
+        "options": [
+          "A. Visit a museum",
+          "B. Catch up with Sarah",
+          "C. Go to a concert",
+          "D. Watch a movie"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants to catch up with Sarah."
+      },
+      {
+        "id": 2,
+        "question": "Where does Emily want to go on Saturday?",
+        "options": [
+          "A. The beach",
+          "B. The farmer's market",
+          "C. A bookstore",
+          "D. The zoo"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants to go to the farmer's market."
+      },
+      {
+        "id": 3,
+        "question": "What will they eat for lunch?",
+        "options": [
+          "A. Pizza",
+          "B. Fast food",
+          "C. Salad",
+          "D. Café food"
+        ],
+        "correct": 3,
+        "explanation": "Emily suggests having lunch at their favorite café."
+      },
+      {
+        "id": 4,
+        "question": "What does Emily plan to do on Sunday?",
+        "options": [
+          "A. Go shopping",
+          "B. Watch a movie",
+          "C. Relax and read",
+          "D. Clean the house"
+        ],
+        "correct": 2,
+        "explanation": "Emily plans to relax and read a book on Sunday."
+      },
+      {
+        "id": 5,
+        "question": "What does Emily miss?",
+        "options": [
+          "A. Going to the gym",
+          "B. Shopping with Sarah",
+          "C. Chats with Sarah",
+          "D. Playing sports"
+        ],
+        "correct": 2,
+        "explanation": "Emily misses having chats with Sarah."
+      },
+      {
+        "id": 6,
+        "question": "What kind of food will be at the market?",
+        "options": [
+          "A. Frozen food",
+          "B. Fresh fruits and vegetables",
+          "C. Fast food",
+          "D. Packaged snacks"
+        ],
+        "correct": 1,
+        "explanation": "Emily mentions fresh fruits and vegetables at the market."
+      },
+      {
+        "id": 7,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "A. Her teacher",
+          "B. Her sister",
+          "C. Sarah",
+          "D. A store manager"
+        ],
+        "correct": 2,
+        "explanation": "Emily is writing to her friend Sarah."
+      },
+      {
+        "id": 8,
+        "question": "What does Emily invite Sarah to share?",
+        "options": [
+          "A. Books",
+          "B. Snacks",
+          "C. Clothes",
+          "D. Problems"
+        ],
+        "correct": 1,
+        "explanation": "Emily invites Sarah to share some snacks."
+      },
+      {
+        "id": 9,
+        "question": "What day is the farmer’s market?",
+        "options": [
+          "A. Friday",
+          "B. Saturday",
+          "C. Sunday",
+          "D. Monday"
+        ],
+        "correct": 1,
+        "explanation": "Emily plans to go to the farmer's market on Saturday."
+      },
+      {
+        "id": 10,
+        "question": "How does Emily sign off the email?",
+        "options": [
+          "A. Regards, Emily",
+          "B. Best, Emily",
+          "C. Cheers, Emily",
+          "D. Sincerely, Emily"
+        ],
+        "correct": 1,
+        "explanation": "Emily signs off with 'Best, Emily'."
+      },
+      {
+        "id": 11,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A. Emily’s job",
+          "B. Weekend plans",
+          "C. A new recipe",
+          "D. Traveling plans"
+        ],
+        "correct": 1,
+        "explanation": "The main topic of the email is about weekend plans."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Plans",
+    "passage": "Subject: Saturday Plans\n\nHi Sarah,\n\nI hope you are doing well! I wanted to see if you would like to go to the farmers' market with me this Saturday. The market is in downtown Toronto and opens at 9 AM. We can look for fresh fruits and vegetables. \n\nAfter that, we can have lunch at a nearby café. I heard that they have great sandwiches! Let me know if you can make it. It will be fun to spend some time together.\n\nTake care,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does Emily want to do on Saturday?",
+        "options": [
+          "A. Go shopping in a mall",
+          "B. Visit the farmers' market",
+          "C. Watch a movie",
+          "D. Go to a concert"
+        ],
+        "correct": 1,
+        "explanation": "Emily invites Sarah to go to the farmers' market."
+      },
+      {
+        "id": 2,
+        "question": "Where is the farmers' market located?",
+        "options": [
+          "A. In the park",
+          "B. In downtown Toronto",
+          "C. Near Emily's house",
+          "D. At the school"
+        ],
+        "correct": 1,
+        "explanation": "Emily states that the market is in downtown Toronto."
+      },
+      {
+        "id": 3,
+        "question": "What time does the market open?",
+        "options": [
+          "A. 8 AM",
+          "B. 9 AM",
+          "C. 10 AM",
+          "D. 11 AM"
+        ],
+        "correct": 1,
+        "explanation": "Emily mentions that the market opens at 9 AM."
+      },
+      {
+        "id": 4,
+        "question": "What will they look for at the market?",
+        "options": [
+          "A. Clothes",
+          "B. Fresh fruits and vegetables",
+          "C. Toys",
+          "D. Books"
+        ],
+        "correct": 1,
+        "explanation": "Emily says they can look for fresh fruits and vegetables."
+      },
+      {
+        "id": 5,
+        "question": "What does Emily suggest for lunch?",
+        "options": [
+          "A. Fast food",
+          "B. Pizza",
+          "C. Sandwiches",
+          "D. Salad"
+        ],
+        "correct": 2,
+        "explanation": "Emily mentions that the café has great sandwiches."
+      },
+      {
+        "id": 6,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "A. Her teacher",
+          "B. A stranger",
+          "C. Sarah",
+          "D. Her boss"
+        ],
+        "correct": 2,
+        "explanation": "The email is addressed to Sarah."
+      },
+      {
+        "id": 7,
+        "question": "What does Emily hope Sarah is doing?",
+        "options": [
+          "A. Traveling",
+          "B. Doing well",
+          "C. Shopping",
+          "D. Studying"
+        ],
+        "correct": 1,
+        "explanation": "Emily begins the email by hoping Sarah is doing well."
+      },
+      {
+        "id": 8,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A. A job offer",
+          "B. Weekend plans",
+          "C. A school project",
+          "D. Traveling tips"
+        ],
+        "correct": 1,
+        "explanation": "The email is about plans for the weekend."
+      },
+      {
+        "id": 9,
+        "question": "How does Emily sign off the email?",
+        "options": [
+          "A. Best regards",
+          "B. Sincerely",
+          "C. Take care",
+          "D. Cheers"
+        ],
+        "correct": 2,
+        "explanation": "Emily ends the email with 'Take care.'"
+      },
+      {
+        "id": 10,
+        "question": "What feeling does Emily want to express by suggesting lunch?",
+        "options": [
+          "A. Hunger",
+          "B. Sadness",
+          "C. Friendship",
+          "D. Anger"
+        ],
+        "correct": 2,
+        "explanation": "Emily wants to spend time with Sarah, showing friendship."
+      },
+      {
+        "id": 11,
+        "question": "What might they do after going to the market?",
+        "options": [
+          "A. Go home",
+          "B. Cook dinner",
+          "C. Have lunch at a café",
+          "D. Go to a party"
+        ],
+        "correct": 2,
+        "explanation": "Emily suggests having lunch at a nearby café after the market."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Picnic Plan",
+    "passage": "Subject: Weekend Picnic\n\nHi Sarah,\n\nI hope you are doing well! I want to plan a picnic this weekend at Stanley Park. It is a beautiful place in Vancouver, and the weather looks perfect. We can meet at 11 AM on Saturday. I will bring sandwiches and drinks. Please bring some snacks and a blanket.\n\nIf you need a ride, let me know! I can pick you up at 10:30 AM.\n\nI am looking forward to spending time together. Let me know if you can come.\n\nBest,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the email about?",
+        "options": [
+          "A picnic plan",
+          "An office meeting",
+          "A school project",
+          "A movie night"
+        ],
+        "correct": 0,
+        "explanation": "The email discusses planning a picnic."
+      },
+      {
+        "id": 2,
+        "question": "Where will the picnic take place?",
+        "options": [
+          "At school",
+          "In the backyard",
+          "At Stanley Park",
+          "At the beach"
+        ],
+        "correct": 2,
+        "explanation": "The picnic is planned for Stanley Park."
+      },
+      {
+        "id": 3,
+        "question": "What time will they meet for the picnic?",
+        "options": [
+          "10 AM",
+          "11 AM",
+          "12 PM",
+          "1 PM"
+        ],
+        "correct": 1,
+        "explanation": "They will meet at 11 AM."
+      },
+      {
+        "id": 4,
+        "question": "What will Emily bring to the picnic?",
+        "options": [
+          "Games",
+          "Sandwiches and drinks",
+          "A kite",
+          "A guitar"
+        ],
+        "correct": 1,
+        "explanation": "Emily will bring sandwiches and drinks."
+      },
+      {
+        "id": 5,
+        "question": "What does Sarah need to bring?",
+        "options": [
+          "A picnic basket",
+          "A blanket and snacks",
+          "Drinks",
+          "A camera"
+        ],
+        "correct": 1,
+        "explanation": "Sarah is asked to bring snacks and a blanket."
+      },
+      {
+        "id": 6,
+        "question": "When is the picnic planned?",
+        "options": [
+          "This Friday",
+          "Next Monday",
+          "This weekend",
+          "Next Saturday"
+        ],
+        "correct": 2,
+        "explanation": "The picnic is planned for this weekend."
+      },
+      {
+        "id": 7,
+        "question": "What does Emily offer to Sarah?",
+        "options": [
+          "To pay for lunch",
+          "To help with homework",
+          "A ride",
+          "To give her a gift"
+        ],
+        "correct": 2,
+        "explanation": "Emily offers Sarah a ride."
+      },
+      {
+        "id": 8,
+        "question": "What time will Emily pick Sarah up?",
+        "options": [
+          "10 AM",
+          "10:30 AM",
+          "11 AM",
+          "11:30 AM"
+        ],
+        "correct": 1,
+        "explanation": "Emily will pick Sarah up at 10:30 AM."
+      },
+      {
+        "id": 9,
+        "question": "What city is Stanley Park located in?",
+        "options": [
+          "Toronto",
+          "Montreal",
+          "Vancouver",
+          "Calgary"
+        ],
+        "correct": 2,
+        "explanation": "Stanley Park is located in Vancouver."
+      },
+      {
+        "id": 10,
+        "question": "Who is the email addressed to?",
+        "options": [
+          "Emily",
+          "Sarah",
+          "Tom",
+          "David"
+        ],
+        "correct": 1,
+        "explanation": "The email is addressed to Sarah."
+      },
+      {
+        "id": 11,
+        "question": "What is Emily looking forward to?",
+        "options": [
+          "A concert",
+          "A picnic",
+          "A movie",
+          "A trip"
+        ],
+        "correct": 1,
+        "explanation": "Emily is looking forward to spending time together at the picnic."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Market Update",
+    "passage": "Subject: Weekend Market Update\n\nHi everyone,\n\nI hope you are all doing well! I wanted to remind you that the Farmers' Market will be open this Saturday from 9 AM to 2 PM at City Park. You can find fresh fruits, vegetables, and homemade crafts. It is a great place to support our local farmers and artists!\n\nDon't forget to bring cash, as some vendors do not accept cards. Also, make sure to wear comfortable shoes and dress for the weather, as it might be chilly in the morning.\n\nIf you have any questions, feel free to reply to this email.\n\nHappy shopping!\n\nBest, \nSarah\n\nSarah Johnson  \nCommunity Organizer  \nCity of Toronto  \nsarah.johnson@toronto.ca",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A Farmers' Market",
+          "A weather report",
+          "An art exhibition",
+          "A school event"
+        ],
+        "correct": 0,
+        "explanation": "The main topic is about the Farmers' Market."
+      },
+      {
+        "id": 2,
+        "question": "When will the Farmers' Market be open?",
+        "options": [
+          "Saturday from 9 AM to 2 PM",
+          "Sunday from 10 AM to 3 PM",
+          "Monday from 8 AM to 1 PM",
+          "Friday from 7 AM to 12 PM"
+        ],
+        "correct": 0,
+        "explanation": "The market is open on Saturday from 9 AM to 2 PM."
+      },
+      {
+        "id": 3,
+        "question": "Where will the Farmers' Market take place?",
+        "options": [
+          "City Park",
+          "Community Center",
+          "Downtown Toronto",
+          "On the street"
+        ],
+        "correct": 0,
+        "explanation": "The Farmers' Market will take place at City Park."
+      },
+      {
+        "id": 4,
+        "question": "What should you bring to the market?",
+        "options": [
+          "A shopping cart",
+          "Cash",
+          "A credit card",
+          "A friend"
+        ],
+        "correct": 1,
+        "explanation": "You should bring cash because some vendors do not accept cards."
+      },
+      {
+        "id": 5,
+        "question": "What is one type of product available at the market?",
+        "options": [
+          "Toys",
+          "Fresh fruits",
+          "Electronics",
+          "Books"
+        ],
+        "correct": 1,
+        "explanation": "Fresh fruits are mentioned as available at the market."
+      },
+      {
+        "id": 6,
+        "question": "What does Sarah recommend wearing?",
+        "options": [
+          "Formal clothes",
+          "Comfortable shoes",
+          "Rain boots",
+          "A swimsuit"
+        ],
+        "correct": 1,
+        "explanation": "Sarah recommends wearing comfortable shoes."
+      },
+      {
+        "id": 7,
+        "question": "What might the weather be like in the morning?",
+        "options": [
+          "Warm",
+          "Chilly",
+          "Sunny",
+          "Rainy"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions it might be chilly in the morning."
+      },
+      {
+        "id": 8,
+        "question": "Who is the sender of this email?",
+        "options": [
+          "John Smith",
+          "Sarah Johnson",
+          "Emily Davis",
+          "Michael Chen"
+        ],
+        "correct": 1,
+        "explanation": "The sender of the email is Sarah Johnson."
+      },
+      {
+        "id": 9,
+        "question": "What type of crafts are mentioned?",
+        "options": [
+          "Homemade crafts",
+          "Digital crafts",
+          "Imported crafts",
+          "Plastic crafts"
+        ],
+        "correct": 0,
+        "explanation": "Homemade crafts are mentioned in the email."
+      },
+      {
+        "id": 10,
+        "question": "How can people ask questions about the market?",
+        "options": [
+          "By texting Sarah",
+          "By calling Sarah",
+          "By replying to the email",
+          "By visiting the market office"
+        ],
+        "correct": 2,
+        "explanation": "People can ask questions by replying to the email."
+      },
+      {
+        "id": 11,
+        "question": "What is Sarah's job title?",
+        "options": [
+          "Market vendor",
+          "Community Organizer",
+          "School teacher",
+          "Event planner"
+        ],
+        "correct": 1,
+        "explanation": "Sarah's job title is Community Organizer."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Getaway Plans",
+    "passage": "Dear Sarah,\n\nI hope you are doing well! I wanted to invite you to join me for a weekend getaway to Banff. The mountains are beautiful this time of year. We can enjoy hiking, see the lakes, and relax.\n\nI plan to leave on Friday afternoon and return on Sunday evening. We can take my car, which has enough space for both of us and our bags.\n\nLet me know if you can come. It will be fun to spend time together!\n\nBest,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did Emily invite Sarah to do?",
+        "options": [
+          "A trip to the beach",
+          "A weekend getaway to Banff",
+          "A dinner party",
+          "A shopping day"
+        ],
+        "correct": 1,
+        "explanation": "Emily invites Sarah for a weekend in Banff."
+      },
+      {
+        "id": 2,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "Emily's job",
+          "Weekend plans",
+          "School activities",
+          "Weather report"
+        ],
+        "correct": 1,
+        "explanation": "The main topic is about weekend getaway plans."
+      },
+      {
+        "id": 3,
+        "question": "When does Emily plan to leave?",
+        "options": [
+          "Friday morning",
+          "Saturday morning",
+          "Friday afternoon",
+          "Sunday evening"
+        ],
+        "correct": 2,
+        "explanation": "Emily plans to leave on Friday afternoon."
+      },
+      {
+        "id": 4,
+        "question": "How long will they stay in Banff?",
+        "options": [
+          "One day",
+          "Two days",
+          "Three days",
+          "Four days"
+        ],
+        "correct": 1,
+        "explanation": "They will stay for two days, from Friday to Sunday."
+      },
+      {
+        "id": 5,
+        "question": "What activities does Emily mention?",
+        "options": [
+          "Shopping and dining",
+          "Hiking and relaxing",
+          "Swimming and fishing",
+          "Visiting museums"
+        ],
+        "correct": 1,
+        "explanation": "Emily mentions hiking, seeing lakes, and relaxing."
+      },
+      {
+        "id": 6,
+        "question": "How will they travel to Banff?",
+        "options": [
+          "By train",
+          "By bus",
+          "By Emily's car",
+          "By bicycle"
+        ],
+        "correct": 2,
+        "explanation": "They will travel by Emily's car."
+      },
+      {
+        "id": 7,
+        "question": "What season is it likely to be in Banff?",
+        "options": [
+          "Winter",
+          "Spring",
+          "Summer",
+          "Fall"
+        ],
+        "correct": 2,
+        "explanation": "The mountains are beautiful this time of year, hinting it’s summer."
+      },
+      {
+        "id": 8,
+        "question": "What does Emily want to do with Sarah?",
+        "options": [
+          "Have a fight",
+          "Spend time together",
+          "Work on a project",
+          "Go to school"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants to spend time together with Sarah."
+      },
+      {
+        "id": 9,
+        "question": "What day will they return from Banff?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 2,
+        "explanation": "Emily mentions they will return on Sunday evening."
+      },
+      {
+        "id": 10,
+        "question": "What is Sarah's relation to Emily?",
+        "options": [
+          "Sister",
+          "Roommate",
+          "Friend",
+          "Cousin"
+        ],
+        "correct": 2,
+        "explanation": "Emily addresses Sarah as a friend."
+      },
+      {
+        "id": 11,
+        "question": "What does Emily need to know from Sarah?",
+        "options": [
+          "What to pack",
+          "If she can come",
+          "When to leave",
+          "Where to eat"
+        ],
+        "correct": 1,
+        "explanation": "Emily needs to know if Sarah can come on the trip."
+      }
+    ]
+  },
+  {
+    "title": "Weekly Grocery Reminder",
+    "passage": "Subject: Grocery Shopping Reminder\n\nHi Team,\n\nI hope you are all doing well! This is a friendly reminder about our grocery shopping this week. We will go to the Superstore on Thursday after work. Please meet at the parking lot by 5:30 PM. \n\nMake sure to bring your shopping lists. We want to buy snacks and drinks for our upcoming picnic on Saturday. Let me know if you cannot come. \n\nThanks, and see you on Thursday!\n\nBest, \nLinda",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of this email?",
+        "options": [
+          "A weekly grocery shopping reminder",
+          "An invitation to a picnic",
+          "A work schedule change",
+          "A new employee introduction"
+        ],
+        "correct": 0,
+        "explanation": "The email is primarily a reminder about grocery shopping."
+      },
+      {
+        "id": 2,
+        "question": "When will the group go grocery shopping?",
+        "options": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Saturday"
+        ],
+        "correct": 2,
+        "explanation": "The email states the grocery shopping will happen on Thursday."
+      },
+      {
+        "id": 3,
+        "question": "Where will they go grocery shopping?",
+        "options": [
+          "Walmart",
+          "Costco",
+          "Superstore",
+          "Metro"
+        ],
+        "correct": 2,
+        "explanation": "The email specifies that they will go to the Superstore."
+      },
+      {
+        "id": 4,
+        "question": "What time should they meet?",
+        "options": [
+          "5:00 PM",
+          "5:30 PM",
+          "6:00 PM",
+          "6:30 PM"
+        ],
+        "correct": 1,
+        "explanation": "The email mentions to meet at 5:30 PM."
+      },
+      {
+        "id": 5,
+        "question": "What should everyone bring to the grocery shopping?",
+        "options": [
+          "A friend",
+          "Money",
+          "Shopping lists",
+          "A picnic basket"
+        ],
+        "correct": 2,
+        "explanation": "The email reminds everyone to bring their shopping lists."
+      },
+      {
+        "id": 6,
+        "question": "What is the purpose of buying snacks and drinks?",
+        "options": [
+          "For a birthday party",
+          "For a picnic",
+          "For a movie night",
+          "For a family gathering"
+        ],
+        "correct": 1,
+        "explanation": "The snacks and drinks are for an upcoming picnic mentioned in the email."
+      },
+      {
+        "id": 7,
+        "question": "What day is the picnic planned for?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Thursday"
+        ],
+        "correct": 1,
+        "explanation": "The email states that the picnic is on Saturday."
+      },
+      {
+        "id": 8,
+        "question": "Who is the sender of the email?",
+        "options": [
+          "Team Leader",
+          "Linda",
+          "The manager",
+          "John"
+        ],
+        "correct": 1,
+        "explanation": "The sender of the email is Linda."
+      },
+      {
+        "id": 9,
+        "question": "What should you do if you cannot come to the grocery shopping?",
+        "options": [
+          "Call Linda",
+          "Ask a friend",
+          "Let Linda know",
+          "Come late"
+        ],
+        "correct": 2,
+        "explanation": "The email instructs to let Linda know if you cannot come."
+      },
+      {
+        "id": 10,
+        "question": "What is the tone of the email?",
+        "options": [
+          "Serious",
+          "Friendly",
+          "Angry",
+          "Confused"
+        ],
+        "correct": 1,
+        "explanation": "The tone of the email is friendly."
+      },
+      {
+        "id": 11,
+        "question": "Who is the email intended for?",
+        "options": [
+          "Customers",
+          "Friends",
+          "Team members",
+          "Managers"
+        ],
+        "correct": 2,
+        "explanation": "The email is sent to team members."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Picnic Invitation",
+    "passage": "Dear friends,\n\nI hope you are all doing well! I want to invite you to a picnic this Saturday at Stanley Park in Vancouver. We will meet at 12 PM by the big maple tree. Please bring your own lunch and a blanket to sit on. \n\nI will bring some drinks and snacks for everyone. The weather should be nice, so it will be a great day to spend outside. \n\nLet me know if you can come. I really hope to see all of you there!\n\nBest,\nSarah",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A picnic invitation",
+          "A job offer",
+          "A birthday party",
+          "A school meeting"
+        ],
+        "correct": 0,
+        "explanation": "The email invites friends to a picnic."
+      },
+      {
+        "id": 2,
+        "question": "Where will the picnic take place?",
+        "options": [
+          "At a school",
+          "At Stanley Park",
+          "At the beach",
+          "At Sarah's house"
+        ],
+        "correct": 1,
+        "explanation": "The passage states the picnic is at Stanley Park."
+      },
+      {
+        "id": 3,
+        "question": "What time is the picnic?",
+        "options": [
+          "10 AM",
+          "12 PM",
+          "2 PM",
+          "3 PM"
+        ],
+        "correct": 1,
+        "explanation": "The email says the picnic will meet at 12 PM."
+      },
+      {
+        "id": 4,
+        "question": "What does Sarah want everyone to bring?",
+        "options": [
+          "A toy",
+          "A lunch",
+          "A gift",
+          "A drink"
+        ],
+        "correct": 1,
+        "explanation": "Sarah asks everyone to bring their own lunch."
+      },
+      {
+        "id": 5,
+        "question": "What will Sarah bring to the picnic?",
+        "options": [
+          "Lunch",
+          "Drinks and snacks",
+          "Games",
+          "Music"
+        ],
+        "correct": 1,
+        "explanation": "Sarah says she will bring drinks and snacks."
+      },
+      {
+        "id": 6,
+        "question": "What should everyone sit on?",
+        "options": [
+          "A chair",
+          "A mat",
+          "A blanket",
+          "The grass"
+        ],
+        "correct": 2,
+        "explanation": "Sarah asks everyone to bring a blanket to sit on."
+      },
+      {
+        "id": 7,
+        "question": "What does the weather report suggest?",
+        "options": [
+          "It will rain",
+          "It will snow",
+          "It will be nice",
+          "It will be cold"
+        ],
+        "correct": 2,
+        "explanation": "The email mentions that the weather should be nice."
+      },
+      {
+        "id": 8,
+        "question": "Who wrote the email?",
+        "options": [
+          "John",
+          "Michael",
+          "Sarah",
+          "Emily"
+        ],
+        "correct": 2,
+        "explanation": "The email is signed by Sarah."
+      },
+      {
+        "id": 9,
+        "question": "What is the tone of the email?",
+        "options": [
+          "Angry",
+          "Excited",
+          "Sad",
+          "Boring"
+        ],
+        "correct": 1,
+        "explanation": "Sarah is excited to invite her friends to the picnic."
+      },
+      {
+        "id": 10,
+        "question": "What does Sarah want to know?",
+        "options": [
+          "Who can bring drinks",
+          "Who can come",
+          "Who can bring a blanket",
+          "Who can help her"
+        ],
+        "correct": 1,
+        "explanation": "Sarah wants to know who can come to the picnic."
+      },
+      {
+        "id": 11,
+        "question": "What is placed at the meeting point?",
+        "options": [
+          "A big maple tree",
+          "A swing set",
+          "A fountain",
+          "A bench"
+        ],
+        "correct": 0,
+        "explanation": "They will meet by the big maple tree."
+      }
+    ]
+  },
+  {
+    "title": "Weekend Market Visit",
+    "passage": "Dear Lisa,\n\nI hope you are doing well! I wanted to tell you about the farmer's market I visited last Saturday in downtown Toronto. It was so much fun! The market had many fresh fruits and vegetables. I bought strawberries, tomatoes, and some lovely green peppers.\n\nThere were also local crafts and baked goods. I found a beautiful handmade mug and some delicious cookies. The weather was perfect; it was sunny and warm. I sat on a bench and enjoyed the cookies while watching people. \n\nIf you have time, you should come with me next weekend. It is a great way to spend a Saturday. I missed you and would love to catch up!\n\nTake care,\nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What did Emily visit last Saturday?",
+        "options": [
+          "A farmer's market",
+          "A shopping mall",
+          "A beach",
+          "A concert"
+        ],
+        "correct": 0,
+        "explanation": "Emily visited a farmer's market."
+      },
+      {
+        "id": 2,
+        "question": "Where is the market located?",
+        "options": [
+          "In Toronto",
+          "In Ottawa",
+          "In Vancouver",
+          "In Montreal"
+        ],
+        "correct": 0,
+        "explanation": "The market is located in downtown Toronto."
+      },
+      {
+        "id": 3,
+        "question": "What fruits did Emily buy?",
+        "options": [
+          "Bananas and oranges",
+          "Strawberries and tomatoes",
+          "Apples and grapes",
+          "Pineapples and peaches"
+        ],
+        "correct": 1,
+        "explanation": "Emily bought strawberries and tomatoes."
+      },
+      {
+        "id": 4,
+        "question": "What did Emily eat at the market?",
+        "options": [
+          "Sandwiches",
+          "Cookies",
+          "Pizza",
+          "Ice cream"
+        ],
+        "correct": 1,
+        "explanation": "Emily enjoyed cookies while at the market."
+      },
+      {
+        "id": 5,
+        "question": "How was the weather during the market visit?",
+        "options": [
+          "Rainy and cold",
+          "Windy and cloudy",
+          "Sunny and warm",
+          "Foggy and cool"
+        ],
+        "correct": 2,
+        "explanation": "The weather was sunny and warm."
+      },
+      {
+        "id": 6,
+        "question": "What kind of crafts did Emily find?",
+        "options": [
+          "Toys",
+          "Handmade mugs",
+          "Paintings",
+          "Jewelry"
+        ],
+        "correct": 1,
+        "explanation": "Emily found a beautiful handmade mug."
+      },
+      {
+        "id": 7,
+        "question": "What did Emily miss?",
+        "options": [
+          "The weather",
+          "The market",
+          "Lisa",
+          "The cookies"
+        ],
+        "correct": 2,
+        "explanation": "Emily missed Lisa and wanted to catch up."
+      },
+      {
+        "id": 8,
+        "question": "What does Emily invite Lisa to do?",
+        "options": [
+          "Go shopping",
+          "Go to a concert",
+          "Join her at the market",
+          "Visit a restaurant"
+        ],
+        "correct": 2,
+        "explanation": "Emily invites Lisa to join her at the market."
+      },
+      {
+        "id": 9,
+        "question": "When does Emily want to go to the market again?",
+        "options": [
+          "Next weekend",
+          "This Saturday",
+          "Tomorrow",
+          "In the summer"
+        ],
+        "correct": 0,
+        "explanation": "Emily wants to go to the market next weekend."
+      },
+      {
+        "id": 10,
+        "question": "What city is mentioned in the email?",
+        "options": [
+          "Calgary",
+          "Toronto",
+          "Halifax",
+          "Edmonton"
+        ],
+        "correct": 1,
+        "explanation": "Toronto is mentioned in the email."
+      },
+      {
+        "id": 11,
+        "question": "What activity did Emily do while sitting on the bench?",
+        "options": [
+          "Read a book",
+          "People watched",
+          "Talked on the phone",
+          "Took pictures"
+        ],
+        "correct": 1,
+        "explanation": "Emily watched people while sitting on the bench."
+      }
+    ]
+  },
+  {
+    "title": "Lunch Plans",
+    "passage": "Subject: Lunch Plans\n\nHi Sarah,\n\nI hope you are doing well! I want to invite you to lunch this Saturday. There is a new restaurant downtown called Maple Bistro. They have great reviews online, and I heard they serve delicious food.\n\nLet’s meet at 12:30 PM. I think it will be a fun time to catch up. Please let me know if this time works for you.\n\nIf you would like to bring anyone else, feel free to do so! I would love to see everyone.\n\nLooking forward to hearing from you soon.\n\nBest,\nEmily\n",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A lunch invitation",
+          "A job offer",
+          "A birthday party",
+          "A school project"
+        ],
+        "correct": 0,
+        "explanation": "The email is about inviting Sarah to lunch."
+      },
+      {
+        "id": 2,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "John",
+          "Sarah",
+          "David",
+          "Lisa"
+        ],
+        "correct": 1,
+        "explanation": "Emily is writing to Sarah."
+      },
+      {
+        "id": 3,
+        "question": "When does Emily want to meet for lunch?",
+        "options": [
+          "Friday at 5 PM",
+          "Saturday at 12:30 PM",
+          "Sunday at 1 PM",
+          "Saturday at 4 PM"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants to meet on Saturday at 12:30 PM."
+      },
+      {
+        "id": 4,
+        "question": "What is the name of the restaurant?",
+        "options": [
+          "Maple Bistro",
+          "Downtown Diner",
+          "Canadian Cafe",
+          "Sunny Eatery"
+        ],
+        "correct": 0,
+        "explanation": "The restaurant mentioned is called Maple Bistro."
+      },
+      {
+        "id": 5,
+        "question": "What did Emily say about Maple Bistro?",
+        "options": [
+          "It is very cheap.",
+          "It has great reviews.",
+          "It is very old.",
+          "It is closed now."
+        ],
+        "correct": 1,
+        "explanation": "Emily mentions that Maple Bistro has great reviews online."
+      },
+      {
+        "id": 6,
+        "question": "What does Emily suggest about bringing others?",
+        "options": [
+          "No one can come.",
+          "Only Sarah can come.",
+          "You can bring anyone else.",
+          "Bringing someone is not allowed."
+        ],
+        "correct": 2,
+        "explanation": "Emily encourages Sarah to bring anyone else, if she likes."
+      },
+      {
+        "id": 7,
+        "question": "How does Emily feel about the lunch meeting?",
+        "options": [
+          "She is angry.",
+          "She thinks it will be boring.",
+          "She thinks it will be fun.",
+          "She is unsure."
+        ],
+        "correct": 2,
+        "explanation": "Emily believes it will be a fun time to catch up."
+      },
+      {
+        "id": 8,
+        "question": "What should Sarah do if she wants to go?",
+        "options": [
+          "Ignore the email.",
+          "Call Emily.",
+          "Reply to the email.",
+          "Write a letter."
+        ],
+        "correct": 2,
+        "explanation": "Sarah should let Emily know by replying to the email."
+      },
+      {
+        "id": 9,
+        "question": "What day of the week is Saturday?",
+        "options": [
+          "The first day",
+          "The second day",
+          "The fifth day",
+          "The sixth day"
+        ],
+        "correct": 3,
+        "explanation": "Saturday is the sixth day of the week."
+      },
+      {
+        "id": 10,
+        "question": "What type of food does Maple Bistro serve?",
+        "options": [
+          "Only desserts",
+          "Fast food",
+          "Delicious food",
+          "Only drinks"
+        ],
+        "correct": 2,
+        "explanation": "Emily heard that they serve delicious food."
+      },
+      {
+        "id": 11,
+        "question": "Where is Maple Bistro located?",
+        "options": [
+          "On a farm",
+          "In the mountains",
+          "Downtown",
+          "At the airport"
+        ],
+        "correct": 2,
+        "explanation": "The restaurant is located downtown."
+      }
+    ]
+  },
+  {
+    "title": "Community Center Event Announcement",
+    "passage": "Dear Neighbors,\n\nWe are excited to announce a fun event at the Maplewood Community Center! Join us on Saturday, April 15th, from 10 AM to 2 PM. There will be games, food, and music for everyone to enjoy. This event is free for all residents of Maplewood. \n\nBring your family and friends! We will have a bouncy castle for the kids and face painting, too. Local food trucks will be present, offering delicious meals. \n\nPlease RSVP by April 10th so we can prepare enough food and activities. You can reply to this email or call the center at 555-0123. \n\nWe hope to see you all there!\n\nBest,\nSarah Johnson\nEvent Coordinator\nMaplewood Community Center",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A fun event announcement",
+          "A job offer",
+          "A complaint about noise",
+          "A school meeting"
+        ],
+        "correct": 0,
+        "explanation": "The email is about a fun event at the community center."
+      },
+      {
+        "id": 2,
+        "question": "When will the event take place?",
+        "options": [
+          "On April 10th",
+          "On April 15th",
+          "On May 1st",
+          "On March 20th"
+        ],
+        "correct": 1,
+        "explanation": "The event is scheduled for April 15th."
+      },
+      {
+        "id": 3,
+        "question": "What activities will be available at the event?",
+        "options": [
+          "A job fair",
+          "Games and music",
+          "A cooking class",
+          "A book club"
+        ],
+        "correct": 1,
+        "explanation": "The email mentions games, food, and music."
+      },
+      {
+        "id": 4,
+        "question": "Who is organizing the event?",
+        "options": [
+          "The city mayor",
+          "Sarah Johnson",
+          "A local company",
+          "A school"
+        ],
+        "correct": 1,
+        "explanation": "Sarah Johnson is the event coordinator mentioned."
+      },
+      {
+        "id": 5,
+        "question": "Is there a cost to attend the event?",
+        "options": [
+          "Yes, $10",
+          "No, it is free",
+          "Yes, $5",
+          "No, $20"
+        ],
+        "correct": 1,
+        "explanation": "The email states the event is free for all residents."
+      },
+      {
+        "id": 6,
+        "question": "What should people do to prepare for the event?",
+        "options": [
+          "Buy tickets",
+          "RSVP by April 10th",
+          "Bring their own food",
+          "Wear fancy clothes"
+        ],
+        "correct": 1,
+        "explanation": "People are asked to RSVP by April 10th."
+      },
+      {
+        "id": 7,
+        "question": "What will be available for children?",
+        "options": [
+          "Face painting and games",
+          "A petting zoo",
+          "Free books",
+          "Movie screenings"
+        ],
+        "correct": 0,
+        "explanation": "The email mentions a bouncy castle and face painting for kids."
+      },
+      {
+        "id": 8,
+        "question": "How can people RSVP?",
+        "options": [
+          "By sending a letter",
+          "By replying to the email or calling",
+          "By visiting in person",
+          "By social media"
+        ],
+        "correct": 1,
+        "explanation": "RSVP can be done by replying to the email or calling the center."
+      },
+      {
+        "id": 9,
+        "question": "What is the phone number to call for more information?",
+        "options": [
+          "555-0001",
+          "555-0199",
+          "555-0123",
+          "555-0456"
+        ],
+        "correct": 2,
+        "explanation": "The email states the number is 555-0123."
+      },
+      {
+        "id": 10,
+        "question": "What day of the week is the event?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 1,
+        "explanation": "The event is on Saturday, April 15th."
+      },
+      {
+        "id": 11,
+        "question": "Where is the event being held?",
+        "options": [
+          "At a school",
+          "At the city park",
+          "At the Maplewood Community Center",
+          "At a library"
+        ],
+        "correct": 2,
+        "explanation": "The event is being held at the Maplewood Community Center."
+      }
+    ]
+  },
+  {
+    "title": "Invitation to a Community Picnic",
+    "passage": "Subject: Community Picnic Invitation\n\nDear Neighbors,\n\nWe are happy to invite you to our annual community picnic! It will take place on Saturday, July 15th, at Riverside Park. The picnic starts at 12:00 PM and ends at 4:00 PM.\n\nBring your family and friends! There will be fun games for everyone, delicious food, and a chance to meet your neighbors. You can bring a dish to share, or just come and enjoy the food that we will provide.\n\nPlease let us know if you can join us. You can reply to this email or call me at 555-1234. We hope to see you all there!\n\nBest regards,\nEmily Johnson\nCommunity Events Coordinator",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A community picnic invitation",
+          "A birthday party",
+          "A job offer",
+          "A school event"
+        ],
+        "correct": 0,
+        "explanation": "The email is about a community picnic invitation."
+      },
+      {
+        "id": 2,
+        "question": "When will the picnic take place?",
+        "options": [
+          "On July 4th",
+          "On July 15th",
+          "On August 15th",
+          "On June 15th"
+        ],
+        "correct": 1,
+        "explanation": "The picnic is scheduled for July 15th."
+      },
+      {
+        "id": 3,
+        "question": "What time does the picnic start?",
+        "options": [
+          "10:00 AM",
+          "12:00 PM",
+          "2:00 PM",
+          "4:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "The picnic starts at 12:00 PM."
+      },
+      {
+        "id": 4,
+        "question": "Where will the picnic be held?",
+        "options": [
+          "At the school",
+          "At Riverside Park",
+          "At the library",
+          "At Emily's house"
+        ],
+        "correct": 1,
+        "explanation": "The picnic will take place at Riverside Park."
+      },
+      {
+        "id": 5,
+        "question": "Who is invited to the picnic?",
+        "options": [
+          "Only kids",
+          "Only adults",
+          "Neighbors and friends",
+          "Only Emily's family"
+        ],
+        "correct": 2,
+        "explanation": "The email invites neighbors and friends to the picnic."
+      },
+      {
+        "id": 6,
+        "question": "What can people bring to the picnic?",
+        "options": [
+          "Nothing",
+          "A dish to share",
+          "Only drinks",
+          "Games"
+        ],
+        "correct": 1,
+        "explanation": "People can bring a dish to share or enjoy the food provided."
+      },
+      {
+        "id": 7,
+        "question": "How can you respond to the invitation?",
+        "options": [
+          "By sending a text",
+          "By replying to the email",
+          "By mailing a letter",
+          "By calling the police"
+        ],
+        "correct": 1,
+        "explanation": "You can respond by replying to the email or calling the number given."
+      },
+      {
+        "id": 8,
+        "question": "What is Emily's role?",
+        "options": [
+          "A neighbor",
+          "A cook",
+          "The Community Events Coordinator",
+          "A teacher"
+        ],
+        "correct": 2,
+        "explanation": "Emily is the Community Events Coordinator."
+      },
+      {
+        "id": 9,
+        "question": "What is the ending time of the picnic?",
+        "options": [
+          "2:00 PM",
+          "3:00 PM",
+          "4:00 PM",
+          "5:00 PM"
+        ],
+        "correct": 2,
+        "explanation": "The picnic ends at 4:00 PM."
+      },
+      {
+        "id": 10,
+        "question": "Why should people come to the picnic?",
+        "options": [
+          "To find a job",
+          "To meet their neighbors",
+          "To sell items",
+          "To play sports"
+        ],
+        "correct": 1,
+        "explanation": "People can come to meet their neighbors and enjoy fun activities."
+      },
+      {
+        "id": 11,
+        "question": "What type of games will be at the picnic?",
+        "options": [
+          "Only video games",
+          "Fun games for everyone",
+          "Board games",
+          "Card games only"
+        ],
+        "correct": 1,
+        "explanation": "The email mentions fun games for everyone."
+      }
+    ]
+  },
+  {
+    "title": "Weekly Grocery List",
+    "passage": "Hi Sarah,\n\nI hope you are doing well! I wanted to share the grocery list for this week. Please pick up the following items from the store on your way to my house:\n\n1. Milk (1 litre)\n2. Eggs (dozen)\n3. Bread (whole grain)\n4. Apples (4)\n5. Chicken (1 kg)\n6. Spinach (fresh, 1 bag)\n\nIf you have time, could you also check for some snacks? I like chips and chocolate! \n\nThanks so much! I can’t wait to see you this weekend! \n\nBest, \nEmily",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the email?",
+        "options": [
+          "A grocery list",
+          "A job application",
+          "A holiday plan",
+          "A book recommendation"
+        ],
+        "correct": 0,
+        "explanation": "The email is about a grocery list."
+      },
+      {
+        "id": 2,
+        "question": "Who is Emily writing to?",
+        "options": [
+          "Sarah",
+          "John",
+          "David",
+          "Michael"
+        ],
+        "correct": 0,
+        "explanation": "Emily is writing to Sarah."
+      },
+      {
+        "id": 3,
+        "question": "What does Emily want Sarah to buy?",
+        "options": [
+          "Furniture",
+          "Clothes",
+          "Grocery items",
+          "Books"
+        ],
+        "correct": 2,
+        "explanation": "Emily wants Sarah to buy grocery items."
+      },
+      {
+        "id": 4,
+        "question": "How much milk does Emily want?",
+        "options": [
+          "1 litre",
+          "2 litres",
+          "3 litres",
+          "0.5 litres"
+        ],
+        "correct": 0,
+        "explanation": "Emily wants 1 litre of milk."
+      },
+      {
+        "id": 5,
+        "question": "How many apples does Emily want?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 2,
+        "explanation": "Emily wants 4 apples."
+      },
+      {
+        "id": 6,
+        "question": "What type of bread does Emily ask for?",
+        "options": [
+          "White bread",
+          "Whole grain bread",
+          "Rye bread",
+          "Sourdough bread"
+        ],
+        "correct": 1,
+        "explanation": "Emily asks for whole grain bread."
+      },
+      {
+        "id": 7,
+        "question": "What additional items does Emily want Sarah to check for?",
+        "options": [
+          "Fruits",
+          "Snacks",
+          "Drinks",
+          "Vegetables"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants Sarah to check for snacks."
+      },
+      {
+        "id": 8,
+        "question": "Which snack does Emily mention?",
+        "options": [
+          "Cookies",
+          "Chips",
+          "Ice cream",
+          "Fruit"
+        ],
+        "correct": 1,
+        "explanation": "Emily mentions chips as a snack."
+      },
+      {
+        "id": 9,
+        "question": "When does Emily plan to see Sarah?",
+        "options": [
+          "Next week",
+          "This weekend",
+          "Tomorrow",
+          "Next month"
+        ],
+        "correct": 1,
+        "explanation": "Emily plans to see Sarah this weekend."
+      },
+      {
+        "id": 10,
+        "question": "What kind of chicken does Emily want?",
+        "options": [
+          "Fried chicken",
+          "1 kg of chicken",
+          "Canned chicken",
+          "Chicken soup"
+        ],
+        "correct": 1,
+        "explanation": "Emily wants 1 kg of chicken."
+      },
+      {
+        "id": 11,
+        "question": "What does Emily hope for Sarah?",
+        "options": [
+          "To buy her groceries",
+          "To have a good day",
+          "To move to another city",
+          "To read a book"
+        ],
+        "correct": 1,
+        "explanation": "Emily hopes Sarah is doing well."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding the Proposed Urban Development",
+    "passage": "Dear Members of the Urban Planning Committee,\n\nI am writing to express my concerns regarding the proposed urban development project set to commence next quarter, which will undoubtedly alter the character of our neighbourhood. Notwithstanding the potential economic benefits articulated in the preliminary reports, I contend that this project may exacerbate the existing infrastructure issues we face. \n\nA juxtaposition of community feedback at the last consultation revealed a substantial fraction of residents advocating for preserving green spaces, which are integral to our local ecosystem. Moreover, the anticipated influx of new residents, while promising in terms of tax income, raises valid questions about our capacity to effectively manage increased traffic and public services. \n\nIn light of these considerations, I urge the committee to conduct a thorough impact assessment and engage with community stakeholders to ensure that the needs and voices of existing residents are adequately integrated into your planning. Failure to do so risks alienating the very individuals who have fostered the rich cultural fabric of our district.\n\nSincerely,\n\nMargaret Hale \n\nCommunity Engagement Coordinator  \nToronto City Council",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern of the writer regarding the urban development project?",
+        "options": [
+          "A. The economic benefits",
+          "B. The impact on local infrastructure",
+          "C. The preservation of green spaces",
+          "D. The opinions of newcomers"
+        ],
+        "correct": 1,
+        "explanation": "The writer is primarily concerned about how the project may exacerbate existing infrastructure issues."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following does the writer imply about community feedback?",
+        "options": [
+          "A. It was overwhelmingly positive.",
+          "B. It largely focused on economic benefits.",
+          "C. Many residents oppose the development.",
+          "D. It highlighted the need for green spaces."
+        ],
+        "correct": 3,
+        "explanation": "The writer suggests that community feedback indicated a strong desire to preserve green spaces."
+      },
+      {
+        "id": 3,
+        "question": "What does the term 'notwithstanding' imply in the context of the passage?",
+        "options": [
+          "A. In contrast to",
+          "B. For the sake of",
+          "C. Despite the fact that",
+          "D. In addition to"
+        ],
+        "correct": 2,
+        "explanation": "'Notwithstanding' means despite or in spite of, indicating that the writer acknowledges economic benefits but believes there are significant concerns."
+      },
+      {
+        "id": 4,
+        "question": "What are 'existing residents' concerned about with the proposed influx of new residents?",
+        "options": [
+          "A. Increased property values",
+          "B. Higher tax rates",
+          "C. Strain on services and traffic",
+          "D. Job competition"
+        ],
+        "correct": 2,
+        "explanation": "The writer expresses concern that existing residents fear increased strain on public services and traffic due to more people."
+      },
+      {
+        "id": 5,
+        "question": "What does the writer suggest the committee should do before proceeding?",
+        "options": [
+          "A. Ignore community feedback",
+          "B. Reevaluate the economic model",
+          "C. Conduct a thorough impact assessment",
+          "D. Finalize development plans"
+        ],
+        "correct": 2,
+        "explanation": "The writer urges the committee to conduct a detailed impact assessment to consider the community's input."
+      },
+      {
+        "id": 6,
+        "question": "The phrase 'rich cultural fabric' in the passage refers to what?",
+        "options": [
+          "A. The city's economic aspects",
+          "B. The diverse backgrounds of residents",
+          "C. The historical significance of the area",
+          "D. The artistic contributions made by locals"
+        ],
+        "correct": 1,
+        "explanation": "The phrase suggests the diversity and varied heritage of the community's residents."
+      },
+      {
+        "id": 7,
+        "question": "What tone does the author use in the email?",
+        "options": [
+          "A. Pessimistic",
+          "B. Indifferent",
+          "C. Urgent",
+          "D. Disparaging"
+        ],
+        "correct": 2,
+        "explanation": "The author adopts an urgent tone, emphasizing the necessity for thorough evaluation and community engagement."
+      },
+      {
+        "id": 8,
+        "question": "What is implied about the current state of infrastructure?",
+        "options": [
+          "A. It effectively supports the existing population.",
+          "B. It has already been deemed adequate by the committee.",
+          "C. It struggles to meet the needs of current residents.",
+          "D. It will be upgraded alongside the new development."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests that infrastructure issues are already problematic, indicating current inadequacies."
+      },
+      {
+        "id": 9,
+        "question": "How does the writer propose to address the concerns of the community?",
+        "options": [
+          "A. By conducting an independent study.",
+          "B. By engaging with stakeholders.",
+          "C. By holding a protest.",
+          "D. By drafting an alternate proposal."
+        ],
+        "correct": 1,
+        "explanation": "The writer emphasizes the importance of engaging with community stakeholders to address their concerns."
+      },
+      {
+        "id": 10,
+        "question": "What potential consequence does the writer foresee if the committee does not heed community input?",
+        "options": [
+          "A. An increase in economic instability",
+          "B. Regret from the committee members",
+          "C. Alienation of existing residents",
+          "D. Legal challenges from developers"
+        ],
+        "correct": 2,
+        "explanation": "The writer warns that ignoring community voices could lead to alienation of residents who contribute to the community's character."
+      },
+      {
+        "id": 11,
+        "question": "In the context of the passage, what does the term 'consultation' refer to?",
+        "options": [
+          "A. A legal meeting about development plans",
+          "B. A survey of residents' opinions",
+          "C. A formal gathering for community input",
+          "D. A government review of policies"
+        ],
+        "correct": 2,
+        "explanation": "The term 'consultation' refers to the formal gathering where community feedback on the development was solicited."
+      }
+    ]
+  },
+  {
+    "title": "Implications of Urban Development Policy",
+    "passage": "Dear Colleagues,\n\nI hope this message finds you well. As we continue our deliberations regarding the upcoming urban development policy in Toronto, it is imperative that we juxtapose the potential economic benefits with the social ramifications that may exacerbate existing inequalities within our communities. Notwithstanding the enthusiasm surrounding projected job creation, we must critically assess the environmental implications and long-term sustainability of such development.\n\nRecent studies suggest that while urban growth could invigorate the local economy, it may inadvertently displace vulnerable populations, leading to an increase in homelessness and social unrest. Therefore, it is essential that our approach be multifaceted, advocating for policies that support affordable housing initiatives and community engagement throughout the development process. I urge you all to consider not only the immediate advantages but also the lasting impact on our society as a whole. \n\nLet us reconvene next week to further refine our strategies, ensuring that we foster growth without compromising social equity.\n\nBest regards,\n\nSarah Thompson\nUrban Policy Analyst\nCity of Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern expressed in Sarah Thompson's email?",
+        "options": [
+          "A) Job creation is paramount",
+          "B) The economic benefits outweigh social costs",
+          "C) Development could worsen social inequalities",
+          "D) Environmental implications are negligible"
+        ],
+        "correct": 2,
+        "explanation": "The email highlights that urban development may exacerbate existing inequalities."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what is being juxtaposed in the policy discussions?",
+        "options": [
+          "A) Economic growth and environmental damage",
+          "B) Urban development and homelessness",
+          "C) Job creation and social unrest",
+          "D) Community engagement and private interests"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions juxtaposing economic benefits with social ramifications."
+      },
+      {
+        "id": 3,
+        "question": "What does the author suggest should accompany urban development?",
+        "options": [
+          "A) Increased public transportation",
+          "B) Enhanced security measures",
+          "C) Affordable housing initiatives",
+          "D) Business tax incentives"
+        ],
+        "correct": 2,
+        "explanation": "The email emphasizes the importance of supporting affordable housing in the development process."
+      },
+      {
+        "id": 4,
+        "question": "What tone does the author use in the email?",
+        "options": [
+          "A) Frustrated",
+          "B) Optimistic",
+          "C) Cautionary",
+          "D) Indifferent"
+        ],
+        "correct": 2,
+        "explanation": "The author adopts a cautionary tone regarding the implications of urban development."
+      },
+      {
+        "id": 5,
+        "question": "What implication is made regarding the environmental impacts of urban development?",
+        "options": [
+          "A) They could lead to increased tourism",
+          "B) They should be disregarded for job growth",
+          "C) They may pose a long-term sustainability issue",
+          "D) They are already being managed effectively"
+        ],
+        "correct": 2,
+        "explanation": "The email indicates concern about the environmental implications and sustainability."
+      },
+      {
+        "id": 6,
+        "question": "Which population is specifically mentioned as potentially being displaced?",
+        "options": [
+          "A) Business owners",
+          "B) High-income residents",
+          "C) Vulnerable populations",
+          "D) Tourists"
+        ],
+        "correct": 2,
+        "explanation": "Sarah Thompson points out that vulnerable populations may face displacement."
+      },
+      {
+        "id": 7,
+        "question": "What action does the author propose for the next meeting?",
+        "options": [
+          "A) To finalize the policy",
+          "B) To discuss alternative funding",
+          "C) To refine strategies for development",
+          "D) To review environmental studies"
+        ],
+        "correct": 2,
+        "explanation": "She urges for a reconvening to refine strategies regarding urban policy."
+      },
+      {
+        "id": 8,
+        "question": "What does the phrase 'notwithstanding the enthusiasm' imply about the author’s views?",
+        "options": [
+          "A) She fully supports the policy",
+          "B) She acknowledges concerns despite excitement",
+          "C) She believes enthusiasm is misguided",
+          "D) She is ambivalent about the impacts"
+        ],
+        "correct": 1,
+        "explanation": "It indicates that while there is excitement, the author remains critical of potential issues."
+      },
+      {
+        "id": 9,
+        "question": "What does the author mean by 'social equity' in the context of her email?",
+        "options": [
+          "A) Economic status",
+          "B) Environmental benefits",
+          "C) Fair treatment of all community members",
+          "D) Job opportunities for the unemployed"
+        ],
+        "correct": 2,
+        "explanation": "The author is emphasizing the importance of fairness in how urban development affects communities."
+      },
+      {
+        "id": 10,
+        "question": "What could be inferred about the audience of this email?",
+        "options": [
+          "A) They are housing advocates",
+          "B) They are urban planners and policymakers",
+          "C) They are economists",
+          "D) They are environmental activists"
+        ],
+        "correct": 1,
+        "explanation": "The email is addressed to colleagues involved in urban policy, suggesting a professional audience."
+      },
+      {
+        "id": 11,
+        "question": "How does the author view the relationship between urban growth and community engagement?",
+        "options": [
+          "A) Community engagement is optional",
+          "B) Community engagement is detrimental",
+          "C) Community engagement is essential",
+          "D) Community engagement is contradictory"
+        ],
+        "correct": 2,
+        "explanation": "The author stresses the importance of community engagement throughout the development process."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding Environmental Policy Changes",
+    "passage": "Dear Dr. Thompson,\n\nI hope this message finds you well. I am writing to express my concerns regarding the recent amendments to the Environmental Protection Act (EPA), which, notwithstanding their noble intentions, may inadvertently exacerbate existing challenges. As you are undoubtedly aware, the juxtaposition of economic growth and environmental sustainability has long been a contentious issue in Canadian policy discourse.\n\nThe adjustments proposed seem to prioritize short-term industrial gains over the long-term health of our ecosystems. Moreover, the new regulations appear to lack the robust enforcement mechanisms necessary for ensuring compliance among major corporations. If these changes are enacted without substantial safeguards in place, it could result in detrimental impacts on biodiversity, particularly in vulnerable regions such as the boreal forest and the Arctic tundra.\n\nI urge you to consider hosting a public forum to deliberate these issues further, thereby allowing a diverse range of opinions to be tabled. Engaging community stakeholders in this dialogue will not only enhance transparency but also contribute to more balanced policy outcomes.\n\nThank you for considering my perspective. I look forward to your thoughts on this urgent matter.\n\nWarm regards,\n\nSara McKenzie\nEnvironmental Policy Analyst\nToronto, Ontario",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern expressed by Sara McKenzie in her email?",
+        "options": [
+          "A. The lack of public forums for environmental discussions",
+          "B. The balance between economic growth and ecological sustainability",
+          "C. The enforcement of existing environmental laws",
+          "D. The efficacy of the Environmental Protection Act amendments"
+        ],
+        "correct": 1,
+        "explanation": "Sara McKenzie highlights the tension between economic growth and environmental sustainability as a primary concern."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what potential consequence does McKenzie imply could result from the proposed amendments?",
+        "options": [
+          "A. Increased community engagement",
+          "B. Enhanced compliance from corporations",
+          "C. Detrimental impacts on biodiversity",
+          "D. Short-term economic benefits"
+        ],
+        "correct": 2,
+        "explanation": "McKenzie suggests that the amendments could harm biodiversity, especially in vulnerable ecosystems."
+      },
+      {
+        "id": 3,
+        "question": "What does McKenzie propose as a way to address her concerns?",
+        "options": [
+          "A. Revising the amendments immediately",
+          "B. Conducting a scientific review of the regulations",
+          "C. Hosting a public forum for discussion",
+          "D. Increasing penalties for non-compliance"
+        ],
+        "correct": 2,
+        "explanation": "McKenzie suggests hosting a public forum to allow for diverse opinions to be expressed, addressing her concerns in a collaborative manner."
+      },
+      {
+        "id": 4,
+        "question": "What tone does McKenzie adopt in her email?",
+        "options": [
+          "A. Confrontational and accusatory",
+          "B. Humble and submissive",
+          "C. Concerned yet constructive",
+          "D. Indifferent and apathetic"
+        ],
+        "correct": 2,
+        "explanation": "Her tone is concerned and constructive, as she aims to propose solutions while expressing her worries."
+      },
+      {
+        "id": 5,
+        "question": "What is implied about the current enforcement mechanisms of the EPA?",
+        "options": [
+          "A. They are too strict and hinder economic progress",
+          "B. They are adequate for current levels of industrial activity",
+          "C. They may not be sufficiently robust to ensure compliance",
+          "D. They have been recently strengthened"
+        ],
+        "correct": 2,
+        "explanation": "McKenzie implies that the current enforcement mechanisms are inadequate, particularly with the proposed changes."
+      },
+      {
+        "id": 6,
+        "question": "Why does McKenzie mention 'the boreal forest and the Arctic tundra' in her email?",
+        "options": [
+          "A. To identify areas where economic growth is most needed",
+          "B. To exemplify regions that could suffer from inadequate policy",
+          "C. To suggest these areas require new development opportunities",
+          "D. To highlight successful conservation efforts"
+        ],
+        "correct": 1,
+        "explanation": "These regions are identified as vulnerable to the potential negative impacts of the proposed amendments."
+      },
+      {
+        "id": 7,
+        "question": "Which phrase suggests that the amendments may have unexpected negative effects?",
+        "options": [
+          "A. 'Noble intentions'",
+          "B. 'Juxtaposition of economic growth and environmental sustainability'",
+          "C. 'May inadvertently exacerbate existing challenges'",
+          "D. 'Robust enforcement mechanisms'"
+        ],
+        "correct": 2,
+        "explanation": "The phrase 'may inadvertently exacerbate existing challenges' indicates that the amendments could worsen current issues."
+      },
+      {
+        "id": 8,
+        "question": "How does Sara McKenzie view the amendments to the EPA?",
+        "options": [
+          "A. As beneficial for both economy and environment",
+          "B. As poorly conceived and lacking foresight",
+          "C. As a necessary step towards modernization",
+          "D. As fully supported by the public"
+        ],
+        "correct": 1,
+        "explanation": "She critiques the amendments, suggesting they could have harmful consequences for the environment."
+      },
+      {
+        "id": 9,
+        "question": "What does the phrase 'a diverse range of opinions' imply?",
+        "options": [
+          "A. Only expert opinions are valuable",
+          "B. Public input should be considered",
+          "C. All opinions are equally valid",
+          "D. The forum is unnecessary"
+        ],
+        "correct": 1,
+        "explanation": "McKenzie advocates for including various perspectives, suggesting that public input is important to the policy-making process."
+      },
+      {
+        "id": 10,
+        "question": "What is Sara McKenzie's position as stated in the email?",
+        "options": [
+          "A. Government representative",
+          "B. Industry analyst",
+          "C. Environmental policy analyst",
+          "D. Academic researcher"
+        ],
+        "correct": 2,
+        "explanation": "She identifies herself as an 'Environmental Policy Analyst,' emphasizing her professional context."
+      },
+      {
+        "id": 11,
+        "question": "What is suggested about the nature of the amendments based on McKenzie’s concerns?",
+        "options": [
+          "A. They promote environmental conservation",
+          "B. They are likely to be well-received by the public",
+          "C. They could lead to increased public awareness",
+          "D. They may overlook ecological implications"
+        ],
+        "correct": 3,
+        "explanation": "McKenzie suggests that the amendments may not sufficiently consider ecological impacts, which is a concern she raises."
+      }
+    ]
+  },
+  {
+    "title": "Response to the Proposed Urban Development Plan",
+    "passage": "Dear Mr. Thompson,\n\nI hope this message finds you well. I am writing to address the recent proposal regarding the urban development plan for downtown Toronto. While I acknowledge the potential for economic revitalization, I must express my concerns regarding the implications that such extensive construction may have on our existing infrastructure and community dynamics. \n\nThe juxtaposition of high-rise buildings with the historical architecture of our city could exacerbate the cultural erosion that many residents fear. Furthermore, it is imperative to consider that increased traffic congestion, stemming from this development, might not only inconvenience daily commuters but also diminish the appeal of our vibrant neighborhoods.\n\nMoreover, the timeline proposed for this initiative raises further questions about the feasibility of implementation without disrupting the local economy. I urge you to collaborate with community leaders and urban planners to ensure a balanced approach that preserves both economic growth and cultural integrity.\n\nThank you for your consideration of my views. I look forward to discussing this matter in more detail at the upcoming city council meeting.\n\nBest regards,\n\nJessica Chen\nUrban Development Advocate",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern that Jessica Chen expresses in her email?",
+        "options": [
+          "A. Economic growth potential",
+          "B. Traffic congestion",
+          "C. Cultural preservation",
+          "D. Infrastructure development"
+        ],
+        "correct": 2,
+        "explanation": "Jessica emphasizes the risk of cultural erosion caused by high-rise buildings juxtaposed with historical architecture."
+      },
+      {
+        "id": 2,
+        "question": "How does Jessica describe the relationship between the proposed development and local commuters?",
+        "options": [
+          "A. It will enhance their commute experience.",
+          "B. It may inconvenience them due to increased congestion.",
+          "C. It will have no impact on their daily routines.",
+          "D. It will provide additional transportation options."
+        ],
+        "correct": 1,
+        "explanation": "She indicates that the increased traffic from development could inconvenience daily commuters."
+      },
+      {
+        "id": 3,
+        "question": "What does Jessica suggest should be done before moving forward with the development plan?",
+        "options": [
+          "A. Conduct further economic studies.",
+          "B. Involve community leaders and urban planners.",
+          "C. Secure funding for construction.",
+          "D. Finalize the architectural designs."
+        ],
+        "correct": 1,
+        "explanation": "She urges collaboration with community leaders and urban planners to ensure the development is well balanced."
+      },
+      {
+        "id": 4,
+        "question": "What tone does Jessica adopt in her email?",
+        "options": [
+          "A. Confrontational",
+          "B. Supportive",
+          "C. Concerned",
+          "D. Indifferent"
+        ],
+        "correct": 2,
+        "explanation": "Her language conveys concern regarding the implications of the proposed urban development."
+      },
+      {
+        "id": 5,
+        "question": "Which phrase best captures Jessica’s stance on the development plan?",
+        "options": [
+          "A. Unqualified support for economic growth",
+          "B. Cautious optimism about urban change",
+          "C. Opposition to all forms of development",
+          "D. A balanced approach to growth and preservation"
+        ],
+        "correct": 3,
+        "explanation": "Jessica advocates for a balanced approach that considers both economic growth and cultural integrity."
+      },
+      {
+        "id": 6,
+        "question": "What might be a potential effect of the construction on Toronto’s neighborhoods, according to Jessica?",
+        "options": [
+          "A. Increased tourism",
+          "B. Diminished neighborhood appeal",
+          "C. Enhanced community ties",
+          "D. Greater public transport accessibility"
+        ],
+        "correct": 1,
+        "explanation": "She warns that construction could diminish the appeal of the vibrant neighborhoods."
+      },
+      {
+        "id": 7,
+        "question": "How does Jessica perceive the planning timeline of the development project?",
+        "options": [
+          "A. It is unrealistic and could disrupt the economy.",
+          "B. It aligns perfectly with community needs.",
+          "C. It is well-structured and timely.",
+          "D. It lacks sufficient detail."
+        ],
+        "correct": 0,
+        "explanation": "She raises concerns about the feasibility of the timeline without economic disruption."
+      },
+      {
+        "id": 8,
+        "question": "What does the word 'juxtaposition' imply in the context of the email?",
+        "options": [
+          "A. Harmony between old and new structures",
+          "B. A direct conflict of interests",
+          "C. Contrast between differing elements",
+          "D. Complementarity of cultural influences"
+        ],
+        "correct": 2,
+        "explanation": "Jessica uses 'juxtaposition' to highlight the contrast between new high-rises and historical buildings."
+      },
+      {
+        "id": 9,
+        "question": "What kind of advocacy role does Jessica Chen hold?",
+        "options": [
+          "A. Economic advisor",
+          "B. Urban development advocate",
+          "C. Real estate developer",
+          "D. City council member"
+        ],
+        "correct": 1,
+        "explanation": "She refers to herself as an 'Urban Development Advocate' in her signature."
+      },
+      {
+        "id": 10,
+        "question": "Which aspect of the proposal does Jessica imply requires more scrutiny?",
+        "options": [
+          "A. The financial investment needed for construction",
+          "B. The community feedback mechanism",
+          "C. The zoning regulations and permits",
+          "D. The impact on local cultural heritage"
+        ],
+        "correct": 3,
+        "explanation": "Jessica highlights the risk of cultural erosion, implying the impact on local heritage needs careful scrutiny."
+      },
+      {
+        "id": 11,
+        "question": "What action does Jessica anticipate in relation to the development plan?",
+        "options": [
+          "A. Community protests against the plan",
+          "B. A discussion at the city council meeting",
+          "C. A vote on immediate implementation",
+          "D. An announcement of funding sources"
+        ],
+        "correct": 1,
+        "explanation": "She looks forward to discussing the matter at the upcoming city council meeting."
+      }
+    ]
+  },
+  {
+    "title": "Impact of Urban Development on Green Spaces",
+    "passage": "Dear Ms. Thompson,\n\nI hope this message finds you well. I am writing to express my concerns regarding the recent urban development proposals that the City of Toronto has put forth. While the initiative aims to enhance economic growth and infrastructure, it is crucial to consider the potential adverse effects on the city's existing green spaces, which, notwithstanding their apparent insignificance, play an integral role in urban ecosystems. \n\nResearch has shown that increasing built environments can, in fact, exacerbate urban heat islands, thereby compromising air quality and public health. It is imperative that we juxtapose the projected economic benefits with these environmental consequences. A comprehensive assessment must be undertaken to evaluate the long-term impacts on biodiversity, particularly in areas slated for development.\n\nMoreover, community feedback mechanisms appear to be insufficient in addressing public concerns. Engaging stakeholders early in the planning process will not only yield more sustainable outcomes but also foster a sense of shared ownership among residents. I urge the council to prioritize these discussions in upcoming forums.\n\nKind regards,\n\nDavid Chen\nEnvironmental Advocate, Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary purpose of David Chen's email?",
+        "options": [
+          "A) To support urban development plans",
+          "B) To express concerns about green space loss",
+          "C) To suggest new economic proposals",
+          "D) To congratulate the city council"
+        ],
+        "correct": 1,
+        "explanation": "Chen expresses concerns about the impacts of urban development on green spaces."
+      },
+      {
+        "id": 2,
+        "question": "What potential issue does Chen highlight regarding urban heat islands?",
+        "options": [
+          "A) They enhance urban aesthetics",
+          "B) They may worsen air quality",
+          "C) They increase public health initiatives",
+          "D) They support local wildlife"
+        ],
+        "correct": 1,
+        "explanation": "Chen notes that urban heat islands can compromise air quality and public health."
+      },
+      {
+        "id": 3,
+        "question": "How does Chen view the proposed economic growth from urban development?",
+        "options": [
+          "A) As inherently negative",
+          "B) As beneficial without reservations",
+          "C) As needing careful consideration against environmental costs",
+          "D) As unrelated to community interests"
+        ],
+        "correct": 2,
+        "explanation": "Chen suggests that economic benefits must be weighed against environmental consequences."
+      },
+      {
+        "id": 4,
+        "question": "What does Chen imply about the community feedback mechanisms?",
+        "options": [
+          "A) They are highly effective",
+          "B) They are lacking and need improvement",
+          "C) They are adequately addressing concerns",
+          "D) They are too complex for residents"
+        ],
+        "correct": 1,
+        "explanation": "Chen suggests that feedback mechanisms are insufficient to address public concerns."
+      },
+      {
+        "id": 5,
+        "question": "What is the tone of Chen’s email?",
+        "options": [
+          "A) Enthusiastic",
+          "B) Critical",
+          "C) Indifferent",
+          "D) Apologetic"
+        ],
+        "correct": 1,
+        "explanation": "Chen takes a critical stance towards the urban development plans."
+      },
+      {
+        "id": 6,
+        "question": "What action does Chen advocate for in relation to community engagement?",
+        "options": [
+          "A) To limit stakeholder involvement",
+          "B) To hold discussions after decisions are made",
+          "C) To involve stakeholders earlier in planning",
+          "D) To simplify public forums"
+        ],
+        "correct": 2,
+        "explanation": "Chen emphasizes the importance of early stakeholder engagement in planning."
+      },
+      {
+        "id": 7,
+        "question": "Which factor does Chen suggest should be prioritized alongside economic benefits?",
+        "options": [
+          "A) The appearance of the developments",
+          "B) Community feedback",
+          "C) Construction speed",
+          "D) Tourism potential"
+        ],
+        "correct": 1,
+        "explanation": "Chen underscores the need for community feedback as a priority in the planning process."
+      },
+      {
+        "id": 8,
+        "question": "What does the phrase 'notwithstanding their apparent insignificance' imply about green spaces?",
+        "options": [
+          "A) They are not valuable",
+          "B) They are often overlooked but essential",
+          "C) They are only important to some communities",
+          "D) They are easily replaceable with developments"
+        ],
+        "correct": 1,
+        "explanation": "Chen implies that green spaces are crucial despite being underestimated by others."
+      },
+      {
+        "id": 9,
+        "question": "Which of the following best reflects Chen’s view on biodiversity?",
+        "options": [
+          "A) It is only a minor concern",
+          "B) It is crucial when planning development",
+          "C) It should be disregarded for economic growth",
+          "D) It is secondary to infrastructure"
+        ],
+        "correct": 1,
+        "explanation": "Chen highlights the importance of evaluating biodiversity in development planning."
+      },
+      {
+        "id": 10,
+        "question": "What can be inferred about Chen’s position as an 'Environmental Advocate'?",
+        "options": [
+          "A) He opposes all development",
+          "B) He focuses solely on economic issues",
+          "C) He aims for sustainable urban growth",
+          "D) He is indifferent to public health"
+        ],
+        "correct": 2,
+        "explanation": "As an Environmental Advocate, Chen promotes sustainable practices in urban development."
+      },
+      {
+        "id": 11,
+        "question": "How does Chen's email reflect the broader debate about urban development?",
+        "options": [
+          "A) It simplifies the issue",
+          "B) It presents only economic viewpoints",
+          "C) It illustrates the tension between development and conservation",
+          "D) It largely supports development without reservations"
+        ],
+        "correct": 2,
+        "explanation": "Chen's email highlights the conflict between urban development and the preservation of green spaces."
+      }
+    ]
+  },
+  {
+    "title": "Public Health Policy Discussion",
+    "passage": "Dear Members of the Public Health Committee,\n\nI hope this message finds you well. As we continue to grapple with the ongoing public health challenges, it is imperative that we juxtapose the efficacy of our current initiatives against the backdrop of emerging evidence. Recent studies have indicated that the rising rates of communicable diseases in urban centers, particularly in Toronto and Vancouver, can exacerbate already strained healthcare resources. Notwithstanding the proactive measures already in place, such as vaccination drives and public awareness campaigns, we must consider the implementation of more robust strategies to address these pressing issues.\n\nThe data suggests that a comprehensive review of our existing policies is needed, with particular emphasis on preventative measures in underserved communities. Stakeholder engagement, including input from local health authorities and community leaders, will be critical in shaping a more effective response. Therefore, I urge the committee to facilitate a roundtable discussion, allowing for a collaborative approach to develop a cohesive action plan that prioritizes both immediate needs and long-term sustainability.\n\nThank you for your attention to this urgent matter. I look forward to your feedback.\n\nSincerely,\nDr. Aisha Patel\nPublic Health Officer",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of Dr. Patel's email?",
+        "options": [
+          "A) To celebrate recent public health achievements",
+          "B) To propose a new health initiative",
+          "C) To discuss the need for policy improvements",
+          "D) To highlight funding issues in healthcare"
+        ],
+        "correct": 2,
+        "explanation": "Dr. Patel emphasizes the need for reviewing and improving existing policies to address public health challenges."
+      },
+      {
+        "id": 2,
+        "question": "Which cities are mentioned as facing rising rates of communicable diseases?",
+        "options": [
+          "A) Montreal and Ottawa",
+          "B) Toronto and Vancouver",
+          "C) Calgary and Edmonton",
+          "D) Quebec City and Halifax"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically identifies Toronto and Vancouver as the urban centers with rising communicable diseases."
+      },
+      {
+        "id": 3,
+        "question": "What does Dr. Patel suggest is necessary for developing effective public health strategies?",
+        "options": [
+          "A) Increased funding for healthcare",
+          "B) A comprehensive review of existing policies",
+          "C) More public awareness campaigns",
+          "D) A focus solely on vaccination drives"
+        ],
+        "correct": 1,
+        "explanation": "Dr. Patel highlights the need for a comprehensive review of existing policies to improve public health strategies."
+      },
+      {
+        "id": 4,
+        "question": "What tone does the author convey regarding current public health measures?",
+        "options": [
+          "A) Optimistic",
+          "B) Indifferent",
+          "C) Critical",
+          "D) Supportive"
+        ],
+        "correct": 2,
+        "explanation": "The author critically assesses the effectiveness of current measures, indicating a need for improvement."
+      },
+      {
+        "id": 5,
+        "question": "What does the author imply about community engagement?",
+        "options": [
+          "A) It is unnecessary for policy development",
+          "B) It hinders effective decision-making",
+          "C) It will enhance the response to health challenges",
+          "D) It should be limited to professional experts"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the importance of stakeholder engagement, implying it enhances the response to health issues."
+      },
+      {
+        "id": 6,
+        "question": "What aspect of public health does Dr. Patel place particular emphasis on?",
+        "options": [
+          "A) Decreasing healthcare costs",
+          "B) Enhancing emergency response",
+          "C) Preventative measures in underserved communities",
+          "D) Increasing hospital capacities"
+        ],
+        "correct": 2,
+        "explanation": "Dr. Patel stresses the need for focused preventative measures in underserved communities."
+      },
+      {
+        "id": 7,
+        "question": "How does the author view the existing vaccination drives?",
+        "options": [
+          "A) As sufficient solutions",
+          "B) As ineffective",
+          "C) As part of the proactive measures",
+          "D) As outdated strategies"
+        ],
+        "correct": 2,
+        "explanation": "The author refers to vaccination drives as proactive measures currently in place, suggesting they are part of the solution."
+      },
+      {
+        "id": 8,
+        "question": "What does the term 'exacerbate' imply in the context of the passage?",
+        "options": [
+          "A) To alleviate problems",
+          "B) To worsen existing issues",
+          "C) To introduce new challenges",
+          "D) To stabilize healthcare resources"
+        ],
+        "correct": 1,
+        "explanation": "In this context, 'exacerbate' refers to worsening the existing healthcare challenges due to rising disease rates."
+      },
+      {
+        "id": 9,
+        "question": "In what way does Dr. Patel propose to address pressing health issues?",
+        "options": [
+          "A) By conducting random surveys",
+          "B) By drafting new legislation",
+          "C) By facilitating a roundtable discussion",
+          "D) By increasing healthcare budgets"
+        ],
+        "correct": 2,
+        "explanation": "Dr. Patel suggests a roundtable discussion to ensure collaborative policy development."
+      },
+      {
+        "id": 10,
+        "question": "What urgency does Dr. Patel convey in her message?",
+        "options": [
+          "A) A leisurely review of policies",
+          "B) An immediate financial investment",
+          "C) Addressing urgent public health matters",
+          "D) Delaying discussions until next year"
+        ],
+        "correct": 2,
+        "explanation": "Dr. Patel emphasizes the urgency of addressing public health matters, indicating this cannot be delayed."
+      },
+      {
+        "id": 11,
+        "question": "What approach is Dr. Patel advocating for in her communication?",
+        "options": [
+          "A) Exclusive expert consultations",
+          "B) A solitary decision-making process",
+          "C) A collaborative and inclusive approach",
+          "D) Impromptu meetings without structure"
+        ],
+        "correct": 2,
+        "explanation": "The author advocates for a collaborative approach involving various stakeholders to develop an effective response."
+      }
+    ]
+  },
+  {
+    "title": "Impact of Urban Green Spaces on Mental Health",
+    "passage": "Subject: Inquiry into the Impact of Urban Green Spaces on Mental Health\n\nDear Dr. Thompson,\n\nI am writing to you regarding the recent discourse surrounding the integration of urban green spaces in metropolitan areas, particularly in light of Toronto's ongoing efforts to juxtapose urban development with environmental sustainability initiatives. Notwithstanding the significant evidence that indicates the psychological benefits of flora-infused environments, it has come to my attention that funding for such projects remains inconsistent. Experts argue that access to parks and green areas can mitigate factors that exacerbate urban stressors, thereby improving community well-being. However, discernible disparities exist across different neighborhoods, raising concerns about equitable access.\n\nMoreover, as you are aware, the governing body’s proposed policy shifts may inadvertently neglect areas with historically lower socioeconomic status, which could hinder overall mental health improvements. I would appreciate your insights on how we might advocate for policies that ensure equitable distribution of green resources, thereby fostering not only mental health resilience but also restoring community cohesion. \n\nThank you for your considerations.\n\nBest regards,\n\nJessica LaRose\nMental Health Advocate\nToronto \n\n---",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of Jessica LaRose's email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "She is inquiring about advocating for equitable policies related to urban green spaces."
+      },
+      {
+        "id": 2,
+        "question": "What concern does Jessica raise regarding the proposed policy shifts?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "They may neglect areas with historically lower socioeconomic status."
+      },
+      {
+        "id": 3,
+        "question": "Which city is the primary focus of the discussion in the email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "The focus is on Toronto, Canada."
+      },
+      {
+        "id": 4,
+        "question": "In the context of the email, what does 'exacerbate' refer to?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "It refers to factors that worsen urban stressors."
+      },
+      {
+        "id": 5,
+        "question": "How does Jessica characterize access to green spaces in the email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "She notes that there are discernible disparities across neighborhoods."
+      },
+      {
+        "id": 6,
+        "question": "What tone does Jessica's email primarily convey?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The tone conveys concern and a call to action."
+      },
+      {
+        "id": 7,
+        "question": "What does Jessica imply about the relationship between urban green spaces and mental health?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "She implies that green spaces can improve mental health by mitigating stress."
+      },
+      {
+        "id": 8,
+        "question": "What type of projects does Jessica advocate for?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "She advocates for the development of urban green spaces."
+      },
+      {
+        "id": 9,
+        "question": "Which stakeholders might be most affected by the policy changes mentioned in the email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "Individuals in low socioeconomic neighborhoods are most affected."
+      },
+      {
+        "id": 10,
+        "question": "What is suggested by the phrase 'flora-infused environments'?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "It refers to environments enriched with plant life."
+      },
+      {
+        "id": 11,
+        "question": "What might be a potential outcome of equitable access to green spaces?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "It could foster mental health resilience and community cohesion."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding Urban Development Policy",
+    "passage": "Dear Stakeholders,\n\nI am writing to express significant concerns regarding the recent proposals put forth by the Urban Development Committee, which, notwithstanding their intention to bolster economic growth in Toronto, may inadvertently exacerbate existing inequalities within our community.  While the plans provide a substantial increase in housing density, it is imperative to juxtapose these benefits against the potential displacement of lower-income residents. Much of the dialogue surrounding this issue has focused on immediate fiscal incentives, yet it is crucial that we consider long-term socio-economic implications.\n\nMoreover, the environmental assessments accompanying these proposals appear to be alarmingly superficial, raising questions about their reliability. We must advocate for a more robust evaluative framework that comprehensively integrates community feedback and environmental sustainability metrics. Failure to address these concerns may not only undermine community trust but could also stall projects that aim to benefit our entire populace.\n\nI urge all stakeholders to engage in this discourse constructively, ensuring a balanced approach that seeks to enhance Toronto’s appeal without sacrificing the needs and voices of its residents.\n\nSincerely,\n\nRebecca Chen\nUrban Policy Analyst\nCity of Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary purpose of Rebecca Chen's email?",
+        "options": [
+          "A. To support the proposed urban development policies",
+          "B. To raise concerns about potential negative impacts",
+          "C. To inform about upcoming public meetings",
+          "D. To outline the benefits of increased housing density"
+        ],
+        "correct": 1,
+        "explanation": "Rebecca Chen expresses concerns regarding the proposals, indicating her intent to alert stakeholders to the negative impacts."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following best describes the author's tone?",
+        "options": [
+          "A. Optimistic",
+          "B. Urgent",
+          "C. Dismissive",
+          "D. Neutral"
+        ],
+        "correct": 1,
+        "explanation": "The tone is urgent, as the author is pressing stakeholders to consider important issues."
+      },
+      {
+        "id": 3,
+        "question": "According to the passage, what aspect of the proposals does the author find superficial?",
+        "options": [
+          "A. Housing density",
+          "B. Economic incentives",
+          "C. Environmental assessments",
+          "D. Community feedback"
+        ],
+        "correct": 2,
+        "explanation": "The author claims the environmental assessments accompanying the proposals are alarmingly superficial."
+      },
+      {
+        "id": 4,
+        "question": "What potential consequence does the author highlight if community concerns are neglected?",
+        "options": [
+          "A. Increased housing prices",
+          "B. Project delays",
+          "C. Economic downturn",
+          "D. Higher taxes"
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that failing to address community concerns could stall beneficial projects."
+      },
+      {
+        "id": 5,
+        "question": "The term 'exacerbate' in the passage most closely means:",
+        "options": [
+          "A. Improve",
+          "B. Clarify",
+          "C. Worsen",
+          "D. Complicate"
+        ],
+        "correct": 2,
+        "explanation": "'Exacerbate' means to make a problem worse, which aligns with the author's concerns."
+      },
+      {
+        "id": 6,
+        "question": "What does the author suggest should be integrated into the evaluative framework?",
+        "options": [
+          "A. Fiscal data",
+          "B. Community feedback",
+          "C. Historical trends",
+          "D. National policies"
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the need for incorporating community feedback in environmental assessments."
+      },
+      {
+        "id": 7,
+        "question": "Which statement most accurately reflects the author's perspective on economic growth?",
+        "options": [
+          "A. It should take precedence over community needs.",
+          "B. It is necessary for urban development.",
+          "C. It must be balanced with social equity.",
+          "D. It is irrelevant to urban planning."
+        ],
+        "correct": 2,
+        "explanation": "The author argues for a balanced approach that considers both economic growth and community needs."
+      },
+      {
+        "id": 8,
+        "question": "What does the author imply about the relationship between housing density and social equity?",
+        "options": [
+          "A. Housing density will inevitably improve social equity.",
+          "B. Increased density could harm social equity.",
+          "C. Housing density has no connection to social issues.",
+          "D. Social equity can only be achieved through lower density."
+        ],
+        "correct": 1,
+        "explanation": "The author implies that increased housing density could lead to negative outcomes for social equity."
+      },
+      {
+        "id": 9,
+        "question": "What is implied by the author's use of 'juxtapose' in the context of the email?",
+        "options": [
+          "A. Comparing two ideas without value judgment",
+          "B. Celebrating economic growth",
+          "C. Highlighting contradictions in policies",
+          "D. Emphasizing the importance of urban planning"
+        ],
+        "correct": 0,
+        "explanation": "The author uses 'juxtapose' to illustrate the need to compare the benefits of housing density against its potential harms."
+      },
+      {
+        "id": 10,
+        "question": "What action does the author encourage among stakeholders?",
+        "options": [
+          "A. To minimize community engagement",
+          "B. To engage in constructive discourse",
+          "C. To support the proposals unconditionally",
+          "D. To focus solely on economic outcomes"
+        ],
+        "correct": 1,
+        "explanation": "The author urges stakeholders to engage constructively, prioritizing community needs."
+      },
+      {
+        "id": 11,
+        "question": "Which of the following is a potential issue the author associates with the proposed urban development?",
+        "options": [
+          "A. Limited public transportation options",
+          "B. Increased environmental regulations",
+          "C. Displacement of lower-income residents",
+          "D. Insufficient funding for housing"
+        ],
+        "correct": 2,
+        "explanation": "The author explicitly mentions the risk of displacing lower-income residents in relation to the proposed changes."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding Environmental Policy Changes",
+    "passage": "Dear Ms. Thompson,\n\nI am writing to express my concerns regarding the proposed amendments to the Environmental Protection Act that are currently under consideration by the Canadian Parliament. Notwithstanding the government's assertion that these changes will bolster economic growth, I fear that they may inadvertently exacerbate existing environmental issues, particularly in vulnerable ecosystems.\n\nThe juxtaposition of economic interests and environmental safeguards is, as you know, a contentious issue. While I appreciate the need for development, it is crucial that we do not prioritize short-term economic gains over the long-term sustainability of our natural resources. The potential for increased industrial activity in areas previously considered protected raises alarming questions about biodiversity and public health.\n\nI urge you, and your colleagues, to thoroughly assess the implications of these amendments before any decisions are made. Engaging with scientific experts and community stakeholders is paramount, as their insights can illuminate the multifaceted impacts of such significant policy shifts.\n\nThank you for considering my perspective. I look forward to your response.\n\nSincerely,\nDr. Emily Walker\nEnvironmental Scientist\nToronto, Ontario",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern raised by Dr. Walker in her email?",
+        "options": [
+          "A) Environmental issues may worsen due to new policies.",
+          "B) Economic growth is essential for Canada's future.",
+          "C) The government is not engaging experts adequately.",
+          "D) Increased development will benefit local communities."
+        ],
+        "correct": 0,
+        "explanation": "Dr. Walker emphasizes that the proposed policy changes might worsen environmental issues."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what stance does the government take regarding the amendments?",
+        "options": [
+          "A) They are focused solely on environmental protection.",
+          "B) They suggest that changes will enhance economic growth.",
+          "C) They recognize the potential risks involved.",
+          "D) They plan to consult widely with stakeholders."
+        ],
+        "correct": 1,
+        "explanation": "The government claims that the amendments will promote economic growth, as stated in the email."
+      },
+      {
+        "id": 3,
+        "question": "What does Dr. Walker suggest is a critical step before finalizing policy decisions?",
+        "options": [
+          "A) Simplifying the act for easier public understanding.",
+          "B) Consulting with scientific experts and community stakeholders.",
+          "C) Prioritizing economic development over environmental concerns.",
+          "D) Demonstrating the amendments' benefits through examples."
+        ],
+        "correct": 1,
+        "explanation": "Dr. Walker highlights the importance of engaging with experts and stakeholders for informed decisions."
+      },
+      {
+        "id": 4,
+        "question": "What is implied about the relationship between economic interests and environmental safeguards, according to Dr. Walker?",
+        "options": [
+          "A) They are equally prioritized in Canadian policy.",
+          "B) They have historically been incompatible and contentious.",
+          "C) They will be resolved through new amendments.",
+          "D) They are both unimportant in the current context."
+        ],
+        "correct": 1,
+        "explanation": "Dr. Walker describes the economic interests and environmental safeguards as contentious, implying conflict."
+      },
+      {
+        "id": 5,
+        "question": "How does Dr. Walker feel about the proposed environmental policy changes?",
+        "options": [
+          "A) She is supportive because of the potential economic benefits.",
+          "B) She is indifferent as she believes they will have no impact.",
+          "C) She is concerned they could harm environmental sustainability.",
+          "D) She is optimistic about their success for local economies."
+        ],
+        "correct": 2,
+        "explanation": "Dr. Walker expresses concerns regarding the potential negative impacts of the proposed changes."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following best describes Dr. Walker's tone in the email?",
+        "options": [
+          "A) Frustrated and angry.",
+          "B) Indifferent and dismissive.",
+          "C) Assertive yet concerned.",
+          "D) Supportive and optimistic."
+        ],
+        "correct": 2,
+        "explanation": "Dr. Walker's tone is assertive as she articulates her concerns while remaining respectfully engaged."
+      },
+      {
+        "id": 7,
+        "question": "What does Dr. Walker imply about the effects of increased industrial activity on ecosystems?",
+        "options": [
+          "A) It will lead to economic prosperity for all.",
+          "B) It could threaten biodiversity and public health.",
+          "C) It will have minimal effects if properly managed.",
+          "D) It will predominantly benefit industrial stakeholders."
+        ],
+        "correct": 1,
+        "explanation": "She warns that increased industrial activity could negatively impact biodiversity and public health."
+      },
+      {
+        "id": 8,
+        "question": "What possible outcome does Dr. Walker warn against in relation to economic growth?",
+        "options": [
+          "A) A complete halt in development projects.",
+          "B) Loss of community trust in policymakers.",
+          "C) The neglect of long-term sustainability.",
+          "D) A decline in industrial investments."
+        ],
+        "correct": 2,
+        "explanation": "Dr. Walker cautions against prioritizing economic growth at the expense of sustainability."
+      },
+      {
+        "id": 9,
+        "question": "Why does the author likely mention 'vulnerable ecosystems'?",
+        "options": [
+          "A) To highlight the need for economic expansion.",
+          "B) To illustrate the potential consequences of policy changes.",
+          "C) To argue against industrial development.",
+          "D) To suggest that the current laws are sufficient."
+        ],
+        "correct": 1,
+        "explanation": "The mention serves to emphasize the importance of protecting sensitive areas amid policy changes."
+      },
+      {
+        "id": 10,
+        "question": "What can be inferred about the nature of Dr. Walker's profession?",
+        "options": [
+          "A) She is primarily an economic analyst.",
+          "B) She focuses exclusively on wildlife conservation.",
+          "C) She has a background in environmental science and advocacy.",
+          "D) She works in the field of public health."
+        ],
+        "correct": 2,
+        "explanation": "Her title as an Environmental Scientist indicates her focus on environmental issues."
+      },
+      {
+        "id": 11,
+        "question": "What underlying message does Dr. Walker convey regarding policymaking?",
+        "options": [
+          "A) Decisions should be made quickly to avoid delays.",
+          "B) Policymakers should prioritize economic growth over environmental concerns.",
+          "C) Collaborative approaches involving experts are critical for informed decision-making.",
+          "D) Environmental issues are secondary to economic ones."
+        ],
+        "correct": 2,
+        "explanation": "Dr. Walker advocates for a collaborative approach to ensure sound and sustainable policymaking."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding the New Urban Transit Initiative",
+    "passage": "Dear Colleagues,\n\nI hope this message finds you well. I am writing to express my concerns regarding the recent proposal for the Urban Transit Initiative, which, notwithstanding its potential benefits, appears to exacerbate existing issues within our city’s infrastructure. Numerous reports indicate that while the plan aims to enhance public transportation efficiency, the lack of adequate funding for maintenance could lead to unforeseen complications. This juxtaposition of ambitious planning against insufficient resources raises significant questions about its long-term viability.\n\nMoreover, the environmental implications outlined in the initial analysis have not been sufficiently addressed. The projected increase in vehicle emissions, contrary to our sustainability goals, suggests that we need a reevaluation of our priorities. I would recommend that we convene a meeting to discuss these matters further, as stakeholder engagement is crucial for the success of any urban planning initiative.\n\nThank you for considering my viewpoints. I look forward to your thoughts.\n\nBest regards,\n\nJennifer Lawson\nUrban Planning Consultant\nToronto City Hall",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Jennifer Lawson's primary concern about the Urban Transit Initiative?",
+        "options": [
+          "A) It does not provide enough public transportation options.",
+          "B) It jeopardizes existing infrastructure due to lack of funding.",
+          "C) It is too ambitious without sufficient environmental considerations.",
+          "D) It will not receive adequate stakeholder engagement."
+        ],
+        "correct": 1,
+        "explanation": "Jennifer expresses concern that the initiative exacerbates existing issues due to insufficient funding."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following best describes the tone of the email?",
+        "options": [
+          "A) Indifferent",
+          "B) Supportive",
+          "C) Critical",
+          "D) Enthusiastic"
+        ],
+        "correct": 2,
+        "explanation": "The tone is critical as she highlights significant concerns about the initiative."
+      },
+      {
+        "id": 3,
+        "question": "What implication does Jennifer make regarding funding?",
+        "options": [
+          "A) It is adequate but poorly managed.",
+          "B) It is insufficient, potentially leading to complications.",
+          "C) It is excessive compared to similar projects.",
+          "D) It has not been discussed in the proposal."
+        ],
+        "correct": 1,
+        "explanation": "She indicates that the lack of adequate funding could lead to unforeseen complications."
+      },
+      {
+        "id": 4,
+        "question": "Why does Jennifer suggest a meeting?",
+        "options": [
+          "A) To finalize the Urban Transit Initiative.",
+          "B) To further discuss the environmental implications.",
+          "C) To ensure stakeholder engagement is prioritized.",
+          "D) To prepare for upcoming public discussions."
+        ],
+        "correct": 2,
+        "explanation": "She emphasizes the importance of stakeholder engagement for the success of the initiative."
+      },
+      {
+        "id": 5,
+        "question": "What does Jennifer believe about the environmental analysis?",
+        "options": [
+          "A) It is comprehensive and sufficient.",
+          "B) It does not align with sustainability goals.",
+          "C) It requires approval from stakeholders.",
+          "D) It has been overlooked by city officials."
+        ],
+        "correct": 1,
+        "explanation": "She states that the projected increase in emissions contradicts their sustainability objectives."
+      },
+      {
+        "id": 6,
+        "question": "What phrase indicates the potential risks involved in the Urban Transit Initiative?",
+        "options": [
+          "A) 'enhance public transportation efficiency'",
+          "B) 'lack of adequate funding for maintenance'",
+          "C) 'projected increase in vehicle emissions'",
+          "D) 'a reevaluation of our priorities'"
+        ],
+        "correct": 1,
+        "explanation": "The phrase highlights that lack of funding could lead to complications, indicating potential risks."
+      },
+      {
+        "id": 7,
+        "question": "What does 'juxtaposition' refer to in the context of this email?",
+        "options": [
+          "A) The contrast between public opinion and city plans.",
+          "B) The comparison between funding levels and ambitious planning.",
+          "C) The relationship between stakeholders and city officials.",
+          "D) The differences between transit initiatives across Canada."
+        ],
+        "correct": 1,
+        "explanation": "Jennifer contrasts ambitious planning with the insufficient funding available."
+      },
+      {
+        "id": 8,
+        "question": "What action does Jennifer prioritize for the successful implementation of the transit initiative?",
+        "options": [
+          "A) Increasing funding sources.",
+          "B) Engaging with community stakeholders.",
+          "C) Developing a more comprehensive environmental report.",
+          "D) Promoting public awareness campaigns."
+        ],
+        "correct": 1,
+        "explanation": "She emphasizes the need for stakeholder engagement."
+      },
+      {
+        "id": 9,
+        "question": "What concept is implied about the relationship between planning and funding?",
+        "options": [
+          "A) They are independent of each other.",
+          "B) Effective planning necessitates adequate funding.",
+          "C) Funding should always follow planning.",
+          "D) Planning is more important than funding."
+        ],
+        "correct": 1,
+        "explanation": "The email implies that insufficient funding could compromise effective planning."
+      },
+      {
+        "id": 10,
+        "question": "What aspect of the initiative does Jennifer believe requires reevaluation?",
+        "options": [
+          "A) The estimated costs involved.",
+          "B) The projected environmental impacts.",
+          "C) The timeline for implementation.",
+          "D) The proposed stakeholder engagement strategies."
+        ],
+        "correct": 1,
+        "explanation": "Jennifer suggests reevaluating the environmental implications of the initiative."
+      },
+      {
+        "id": 11,
+        "question": "What is the significance of Jennifer’s final sentence?",
+        "options": [
+          "A) It dismisses further conversation.",
+          "B) It invites collaboration and opinion sharing.",
+          "C) It emphasizes her authority in decision-making.",
+          "D) It discourages external input."
+        ],
+        "correct": 1,
+        "explanation": "By looking forward to others' thoughts, she invites collaboration."
+      }
+    ]
+  },
+  {
+    "title": "Revisions to the Urban Sustainability Initiative",
+    "passage": "Dear Colleagues,\n\nI hope this message finds you well. As you are aware, the recent evaluations of the Urban Sustainability Initiative have prompted a thorough reassessment of our existing policies. Notwithstanding the commendable progress we have made in reducing carbon emissions, there remains a pressing need to address the exacerbating concerns surrounding urban biodiversity and public engagement.\n\nIt has come to my attention that several stakeholders have expressed reservations regarding the juxtaposition of sustainability goals with economic development strategies. In light of these considerations, I propose that we convene a meeting to deliberate on possible amendments to our current framework. The objective would be to foster an inclusive approach that not only mitigates environmental impact but also bolsters local economies.\n\nI trust that through collaboration, we can devise a robust strategy that addresses the intricacies of both ecological preservation and community sustainability. Please provide your availability for a meeting within the next two weeks.\n\nBest regards,\nDr. Angela Thompson\nDirector, Urban Planning Department\nCity of Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What prompted the reassessment of the Urban Sustainability Initiative?",
+        "options": [
+          "A. Stakeholder feedback",
+          "B. Government mandate",
+          "C. Project completion",
+          "D. Carbon emission reductions"
+        ],
+        "correct": 0,
+        "explanation": "The passage indicates that evaluations prompted the reassessment, implying feedback from stakeholders."
+      },
+      {
+        "id": 2,
+        "question": "Which issue is highlighted as needing urgent attention?",
+        "options": [
+          "A. Economic growth",
+          "B. Urban biodiversity",
+          "C. Carbon emissions",
+          "D. Public transport improvements"
+        ],
+        "correct": 1,
+        "explanation": "The passage explicitly states that concerns about urban biodiversity need to be addressed."
+      },
+      {
+        "id": 3,
+        "question": "What is the author's main objective in suggesting a meeting?",
+        "options": [
+          "A. To celebrate recent successes",
+          "B. To redefine economic strategies",
+          "C. To discuss potential policy amendments",
+          "D. To finalize the current framework"
+        ],
+        "correct": 2,
+        "explanation": "The author proposes the meeting to deliberate on amendments to the current framework, not just to finalize or celebrate."
+      },
+      {
+        "id": 4,
+        "question": "How does the author perceive the relationship between sustainability goals and economic development?",
+        "options": [
+          "A. They are mutually exclusive",
+          "B. They can be aligned with effort",
+          "C. They conflict inherently",
+          "D. They require government intervention"
+        ],
+        "correct": 1,
+        "explanation": "The author notes concerns regarding their juxtaposition but suggests an inclusive approach, indicating alignment is possible."
+      },
+      {
+        "id": 5,
+        "question": "What tone does the author adopt in this letter?",
+        "options": [
+          "A. Confrontational",
+          "B. Optimistic",
+          "C. Indifferent",
+          "D. Cynical"
+        ],
+        "correct": 1,
+        "explanation": "The author's tone is optimistic, as they express trust in collaboration and progress."
+      },
+      {
+        "id": 6,
+        "question": "Which aspect of local economies is the author hoping to bolster?",
+        "options": [
+          "A. Real estate development",
+          "B. Environmental initiatives",
+          "C. Local employment",
+          "D. Investment opportunities"
+        ],
+        "correct": 2,
+        "explanation": "The author aims to bolster local economies while addressing environmental impacts, suggesting a focus on local employment."
+      },
+      {
+        "id": 7,
+        "question": "What is implied about the stakeholders' views on sustainability?",
+        "options": [
+          "A. They are unanimously in favor of current policies",
+          "B. They believe economic factors overshadow sustainability",
+          "C. They are unaware of urban biodiversity issues",
+          "D. They advocate for more stringent regulations"
+        ],
+        "correct": 1,
+        "explanation": "The stakeholders' reservations imply a belief that economic factors may overshadow sustainability goals."
+      },
+      {
+        "id": 8,
+        "question": "What is the significance of the proposed meeting timeframe?",
+        "options": [
+          "A. It reflects urgency",
+          "B. It indicates a lack of priority",
+          "C. It is a routine scheduling matter",
+          "D. It suggests a formal review process"
+        ],
+        "correct": 0,
+        "explanation": "The proposed timeframe within two weeks suggests urgency in addressing the issues raised."
+      },
+      {
+        "id": 9,
+        "question": "Which word best describes the author's view on collaboration?",
+        "options": [
+          "A. Disparaging",
+          "B. Pessimistic",
+          "C. Encouraging",
+          "D. Skeptical"
+        ],
+        "correct": 2,
+        "explanation": "The author expresses trust in collaboration, indicating an encouraging view."
+      },
+      {
+        "id": 10,
+        "question": "What might the author expect as a result of the meeting?",
+        "options": [
+          "A. Immediate funding",
+          "B. Finalized policies",
+          "C. Diverse perspectives",
+          "D. Increased resistance"
+        ],
+        "correct": 2,
+        "explanation": "The author expects that diverse perspectives will contribute to a robust strategy for sustainability."
+      },
+      {
+        "id": 11,
+        "question": "What challenge is posed by the juxtaposition of sustainability and economic strategies?",
+        "options": [
+          "A. Conflict of interest",
+          "B. Resource allocation",
+          "C. Stakeholder engagement",
+          "D. Balancing priorities"
+        ],
+        "correct": 3,
+        "explanation": "The challenge involves balancing the priorities of sustainability with economic growth, as implied in the passage."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Over New Urban Development Policy",
+    "passage": "Dear Colleagues,\n\nI hope this message finds you well. As we continue to navigate the implications of the recently proposed urban development policy by the city council, it has become increasingly apparent that the measures outlined within the document could potentially exacerbate existing social inequalities. Notwithstanding the intention to promote sustainable growth, a juxtaposition of the policy's provisions with the current socio-economic landscape suggests that marginalized communities may face additional hurdles. \n\nConsequently, I urge each of you to thoroughly evaluate the potential impacts on local demographics and to consider whether alternative approaches might mitigate adverse effects. It is imperative that our collective voice informs the council’s decision-making process, advocating for equitable development practices that ensure all residents benefit. \n\nPrior to our upcoming meeting, please familiarize yourselves with the relevant data, focusing particularly on case studies from other municipalities that implemented similar policies. This will enable us to present a well-rounded perspective that encapsulates both the intended advantages and the possible shortcomings associated with this initiative.\n\nBest regards,\n\nDr. Amelia Johnson\nUrban Policy Analyst\nToronto City Planning Department",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern raised by Dr. Johnson regarding the new policy?",
+        "options": [
+          "A) It promotes urban growth indiscriminately.",
+          "B) It may worsen social inequalities.",
+          "C) It lacks sufficient detail.",
+          "D) It is not backed by scientific research."
+        ],
+        "correct": 1,
+        "explanation": "Dr. Johnson expresses concern about the policy potentially worsening existing social inequalities."
+      },
+      {
+        "id": 2,
+        "question": "What does Dr. Johnson mean by the term 'juxtaposition' in her email?",
+        "options": [
+          "A) The integration of different communities.",
+          "B) The comparison of policy effects on different demographics.",
+          "C) The mixing of urban and rural development.",
+          "D) The disapproval of council decisions."
+        ],
+        "correct": 1,
+        "explanation": "She uses 'juxtaposition' to refer to comparing the policy's provisions against the current socio-economic landscape."
+      },
+      {
+        "id": 3,
+        "question": "What action does Dr. Johnson encourage her colleagues to take?",
+        "options": [
+          "A) Support the current policy unconditionally.",
+          "B) Analyze the potential impact on demographics.",
+          "C) Propose entirely new urban policies.",
+          "D) Avoid discussing the policy's implications."
+        ],
+        "correct": 1,
+        "explanation": "She urges her colleagues to evaluate the potential demographic impacts of the policy."
+      },
+      {
+        "id": 4,
+        "question": "What type of studies does Dr. Johnson suggest reviewing?",
+        "options": [
+          "A) Case studies of municipalities with failed economies.",
+          "B) Reports from stakeholders who oppose the policy.",
+          "C) Case studies from municipalities with similar policies.",
+          "D) Academic articles on urban growth theory."
+        ],
+        "correct": 2,
+        "explanation": "She advises reviewing case studies from other municipalities that have implemented similar policies."
+      },
+      {
+        "id": 5,
+        "question": "What is implied about the current state of social inequality in the email?",
+        "options": [
+          "A) It is diminishing across all communities.",
+          "B) It is a critical factor in urban policy discussions.",
+          "C) It is a secondary concern compared to economic growth.",
+          "D) It will be resolved without policy changes."
+        ],
+        "correct": 1,
+        "explanation": "Dr. Johnson implies that current social inequalities are significant and must be addressed in policy decisions."
+      },
+      {
+        "id": 6,
+        "question": "In what way does Dr. Johnson believe the proposed policy could affect marginalized communities?",
+        "options": [
+          "A) It will improve their living conditions.",
+          "B) It may impose additional challenges on them.",
+          "C) It will have no impact whatsoever.",
+          "D) It will enhance their economic opportunities."
+        ],
+        "correct": 1,
+        "explanation": "She indicates that the policy may impose additional challenges on marginalized communities."
+      },
+      {
+        "id": 7,
+        "question": "What is Dr. Johnson's attitude towards the city council’s intentions?",
+        "options": [
+          "A) She fully supports their initiatives.",
+          "B) She is skeptical of their effectiveness.",
+          "C) She acknowledges their intentions but critiques the outcomes.",
+          "D) She believes they are misinformed about urban issues."
+        ],
+        "correct": 2,
+        "explanation": "She recognizes the council's good intentions but critiques its potential outcomes for marginalized communities."
+      },
+      {
+        "id": 8,
+        "question": "What does 'equitable development practices' imply in the context of this email?",
+        "options": [
+          "A) Development strategies benefiting only affluent areas.",
+          "B) Growth that prioritizes economic profit over community needs.",
+          "C) Approaches that ensure fair access to resources for all residents.",
+          "D) Policies focused on rapid construction and expansion."
+        ],
+        "correct": 2,
+        "explanation": "Equitable development practices seek to ensure fair access to resources for all residents, rather than privileging some groups over others."
+      },
+      {
+        "id": 9,
+        "question": "Why is it important for Dr. Johnson’s group to present a well-rounded perspective?",
+        "options": [
+          "A) To diminish opposition to the council’s decisions.",
+          "B) To influence policy-making with informed insights.",
+          "C) To ensure they are perceived as credible.",
+          "D) To avoid conflicts among themselves."
+        ],
+        "correct": 1,
+        "explanation": "A well-rounded perspective would help them influence policy-making with informed insights into potential impacts."
+      },
+      {
+        "id": 10,
+        "question": "How does Dr. Johnson characterize the proposed policy?",
+        "options": [
+          "A) Entirely beneficial.",
+          "B) Potentially harmful.",
+          "C) Comprehensive and inclusive.",
+          "D) Lacking in empirical support."
+        ],
+        "correct": 1,
+        "explanation": "She characterizes the proposed policy as potentially harmful to marginalized communities."
+      },
+      {
+        "id": 11,
+        "question": "What underlying assumption can be inferred about the meeting Dr. Johnson mentions?",
+        "options": [
+          "A) It will include only city council members.",
+          "B) It is primarily focused on economic factors.",
+          "C) Decision-making will favor the affluent neighborhoods.",
+          "D) Participants will advocate for fair policies."
+        ],
+        "correct": 3,
+        "explanation": "The mention of a meeting implies that participants are expected to advocate for fair policies through informed discussions."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding Urban Transit Development in Toronto",
+    "passage": "Dear Members of the Transit Authority,\n\nI am writing to express my profound concerns regarding the proposed expansion of the Toronto Transit Commission's subway network. Notwithstanding the apparent benefits that such infrastructure improvements would ostensibly bring, I fear that the social and environmental repercussions may exacerbate existing inequities in our city. \n\nFirstly, the planned route juxtaposes affluent neighborhoods with those historically marginalized, raising issues of gentrification that cannot be overlooked. It is crucial to consider whether this expansion will truly enhance accessibility for all residents or merely serve to further segregate communities along economic lines. \n\nFurthermore, the financial implications of the project's funding sources remain ambiguous, raising questions about potential fiscal mismanagement. The reliance on private-sector partnerships could engender an unsustainable economic model that prioritizes profit over public interest. In light of these factors, I would advocate for a comprehensive community consultation to ensure that the voices of all stakeholders—including those who may be adversely affected—are adequately represented.\n\nI look forward to your response and hope for a deliberative approach to this vital issue.\n\nSincerely,\nJessica Smith\nUrban Policy Analyst, City of Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Jessica Smith's primary purpose in writing this email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "She expresses concerns regarding the subway expansion."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, which of the following is a potential consequence of the subway expansion?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "Gentrification and social inequities are mentioned."
+      },
+      {
+        "id": 3,
+        "question": "The term 'juxtaposes' in this context most likely means:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "It implies placing contrasting elements side by side."
+      },
+      {
+        "id": 4,
+        "question": "What concerns does Jessica raise regarding funding?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "She questions the sustainability and potential profit motives."
+      },
+      {
+        "id": 5,
+        "question": "What does Jessica imply about community consultation?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "She emphasizes its importance for inclusive representation."
+      },
+      {
+        "id": 6,
+        "question": "What tone does Jessica adopt in her email?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "Her tone is concerned yet hopeful for a deliberative process."
+      },
+      {
+        "id": 7,
+        "question": "Which statement best conveys Jessica's view of the transit authority's approach?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "She suggests it may neglect critical social dynamics."
+      },
+      {
+        "id": 8,
+        "question": "The phrase 'fiscal mismanagement' implies which of the following?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "It suggests poor management of financial resources."
+      },
+      {
+        "id": 9,
+        "question": "How does Jessica characterize the benefits of the proposed subway project?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "She views them as superficial without addressing societal issues."
+      },
+      {
+        "id": 10,
+        "question": "In the context of this email, the term 'public interest' refers to:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "It denotes the broader community needs versus private profit."
+      },
+      {
+        "id": 11,
+        "question": "What is implied about the involvement of private-sector partnerships?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "Their involvement might jeopardize the project's public focus."
+      }
+    ]
+  },
+  {
+    "title": "Concerns Regarding New Urban Development Policy",
+    "passage": "Dear Mr. Thompson,\n\nI hope this message finds you well. I am writing to express my concerns regarding the recently proposed urban development policy currently under consideration by the City of Toronto. Notwithstanding the potential economic benefits articulated in the preliminary reports, the implications of this policy appear to exacerbate existing inequalities in housing availability and affordability for marginalized communities.\n\nFurthermore, while the proposed development plans juxtapose the interests of affluent developers with the needs of the city’s lower-income residents, the community consultations seem to have been inadequately publicized, thereby disenfranchising those most affected. It is imperative that the voices of local residents, particularly those from underrepresented demographics, are not only heard but also integrated into the planning process.\n\nIn conclusion, I urge the city council to reassess the parameters of the public engagement strategy and to consider revising the policy framework to ensure that it fosters inclusivity and equitable distribution of resources. \n\nThank you for your attention to this matter.\n\nSincerely,\n\nJessica Lee\nCommunity Advocate",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern expressed by the author?",
+        "options": [
+          "A) Economic growth is too slow.",
+          "B) Urban development may harm marginalized communities.",
+          "C) Public consultations were not well-attended.",
+          "D) Developers are not being held accountable."
+        ],
+        "correct": 1,
+        "explanation": "The author explicitly states concerns regarding housing inequalities for marginalized communities."
+      },
+      {
+        "id": 2,
+        "question": "Which group does the author suggest is being ignored in the development process?",
+        "options": [
+          "A) Affluent developers",
+          "B) Local government officials",
+          "C) Marginalized communities",
+          "D) City council members"
+        ],
+        "correct": 2,
+        "explanation": "The author highlights that local residents, especially from marginalized backgrounds, are not sufficiently consulted."
+      },
+      {
+        "id": 3,
+        "question": "How does the author view the proposed economic benefits of the policy?",
+        "options": [
+          "A) They are acceptable but secondary.",
+          "B) They are overstated and misleading.",
+          "C) They should be prioritized above all else.",
+          "D) They require further investigation."
+        ],
+        "correct": 1,
+        "explanation": "The author suggests that the economic benefits are overshadowed by the potential harms to marginalized communities."
+      },
+      {
+        "id": 4,
+        "question": "What does the author imply about the public engagement strategy?",
+        "options": [
+          "A) It effectively includes diverse viewpoints.",
+          "B) It needs significant improvement.",
+          "C) It is well-structured and comprehensive.",
+          "D) It does not require any changes."
+        ],
+        "correct": 1,
+        "explanation": "The author advocates for improvements to the public engagement strategy to ensure inclusivity."
+      },
+      {
+        "id": 5,
+        "question": "What does the term 'juxtapose' imply in the context of the email?",
+        "options": [
+          "A) To combine two opposing elements.",
+          "B) To mislead the public.",
+          "C) To create a balanced partnership.",
+          "D) To investigate further."
+        ],
+        "correct": 0,
+        "explanation": "The author uses 'juxtapose' to indicate the clash between affluent developers' interests and those of lower-income residents."
+      },
+      {
+        "id": 6,
+        "question": "Which tone does the author primarily convey in the email?",
+        "options": [
+          "A) Hostile and aggressive",
+          "B) Urgent and persuasive",
+          "C) Indifferent and casual",
+          "D) Confident and dismissive"
+        ],
+        "correct": 1,
+        "explanation": "The tone is urgent and persuasive, aiming to prompt city council action on policy reassessment."
+      },
+      {
+        "id": 7,
+        "question": "What does the author recommend in the concluding paragraph?",
+        "options": [
+          "A) Limiting public input on development.",
+          "B) Maintaining the original policy proposal.",
+          "C) Revising the public engagement strategy.",
+          "D) Increasing budget for urban development."
+        ],
+        "correct": 2,
+        "explanation": "The author urges a reassessment and revision of the public engagement strategy for inclusivity."
+      },
+      {
+        "id": 8,
+        "question": "What might be an implication of 'exacerbate', as used in the email?",
+        "options": [
+          "A) It will solve housing issues.",
+          "B) It will worsen existing problems.",
+          "C) It might benefit all communities.",
+          "D) It will maintain the status quo."
+        ],
+        "correct": 1,
+        "explanation": "The term suggests that the proposed policy could worsen current inequalities in housing availability."
+      },
+      {
+        "id": 9,
+        "question": "Which aspect of the policy does the author critique without citing specific examples?",
+        "options": [
+          "A) The speed of development.",
+          "B) The policy's financial transparency.",
+          "C) The lack of community consultation.",
+          "D) The qualifications of development officials."
+        ],
+        "correct": 2,
+        "explanation": "The author critiques the inadequate public consultation process, hinting at its flaws without detailing specific instances."
+      },
+      {
+        "id": 10,
+        "question": "According to the author, who should be primarily included in the policy's planning process?",
+        "options": [
+          "A) Developers and investors",
+          "B) Experts in urban studies",
+          "C) Affluent residents",
+          "D) Lower-income residents"
+        ],
+        "correct": 3,
+        "explanation": "The author stresses the importance of including lower-income residents and underrepresented demographics in planning."
+      },
+      {
+        "id": 11,
+        "question": "How does the author characterize the community consultations mentioned?",
+        "options": [
+          "A) Thorough and well-received",
+          "B) Biased towards wealthy stakeholders",
+          "C) Insufficiently publicized",
+          "D) Unnecessary for the development process"
+        ],
+        "correct": 2,
+        "explanation": "The author points out that the consultations appear to be inadequately publicized, suggesting a lack of access for affected communities."
+      }
+    ]
+  },
+  {
+    "title": "Proposed Changes to Toronto's Urban Planning Regulations",
+    "passage": "Dear Stakeholders,\n\nIn light of the increasing challenges faced by urban centers, notably Toronto, the City Council is poised to propose significant amendments to the existing urban planning regulations. These changes are not merely procedural; they are designed to alleviate congestion and enhance sustainability throughout the metropolitan area. Notwithstanding the pressing need for development, the Council wishes to juxtapose economic growth with environmental stewardship, thereby ensuring that new infrastructure does not exacerbate the existing ecological footprint.\n\nThe proposed regulations emphasize mixed-use developments, which not only facilitate varied housing options but also promote local business. While some residents have expressed concerns regarding potential overdevelopment, it is imperative to consider the long-term benefits these changes might yield, particularly in creating a more vibrant and accessible urban landscape. Feedback from the community will be instrumental in shaping the final version of this proposal.\n\nWe encourage all parties to provide their insights by the end of this month, as a well-rounded discussion will inevitably lead to a more effective policy framework. \n\nSincerely,\n\nEmily Chen\nUrban Planning Director\nCity of Toronto",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary purpose of the proposed amendments to Toronto's urban planning regulations?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The primary purpose is to alleviate congestion and enhance sustainability."
+      },
+      {
+        "id": 2,
+        "question": "Which term is used to describe developments that serve multiple purposes, as mentioned in the passage?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "The term 'mixed-use developments' is explicitly mentioned."
+      },
+      {
+        "id": 3,
+        "question": "What concern do some residents have regarding the proposed changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "Residents are concerned about potential overdevelopment."
+      },
+      {
+        "id": 4,
+        "question": "In which way does the Council aim to juxtapose their objectives?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The Council aims to juxtapose economic growth with environmental stewardship."
+      },
+      {
+        "id": 5,
+        "question": "What is implied as a necessary step before finalizing the proposal?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "Community feedback is implied to be necessary before finalizing the proposal."
+      },
+      {
+        "id": 6,
+        "question": "What tone does Emily Chen's email convey regarding the proposed changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "The tone is collaborative, inviting stakeholders to provide feedback."
+      },
+      {
+        "id": 7,
+        "question": "Why does the Council consider the long-term benefits of the changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "The long-term benefits are related to creating a vibrant and accessible urban landscape."
+      },
+      {
+        "id": 8,
+        "question": "Which of the following best describes the City Council's approach to the proposed regulations?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "The Council takes a balanced approach, aiming for growth while considering environmental impact."
+      },
+      {
+        "id": 9,
+        "question": "What role does Emily Chen hold?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "Emily Chen is the Urban Planning Director for the City of Toronto."
+      },
+      {
+        "id": 10,
+        "question": "What is the deadline for stakeholders to provide feedback on the proposal?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "The email states that insights should be provided by the end of the month."
+      },
+      {
+        "id": 11,
+        "question": "Which of the following aspects is NOT addressed in the proposed regulations?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "The proposed regulations do not address specific zoning laws, they focus on mixed-use development and sustainability."
+      }
+    ]
   }
 ]

@@ -91,7 +91,8 @@
         "correct": 0
       }
     ],
-    "id": "part2-01"
+    "id": "part2-01",
+    "difficulty": "intermediate"
   },
   {
     "title": "Public Transit Fare Zones and Discounts",
@@ -197,7 +198,8 @@
         "correct": 3
       }
     ],
-    "id": "part2-02"
+    "id": "part2-02",
+    "difficulty": "intermediate"
   },
   {
     "title": "Library Program Schedule and Registration Requirements",
@@ -291,7 +293,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-03"
+    "id": "part2-03",
+    "difficulty": "intermediate"
   },
   {
     "title": "Company Benefits Enrollment Options and Eligibility",
@@ -385,7 +388,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-04"
+    "id": "part2-04",
+    "difficulty": "intermediate"
   },
   {
     "title": "Ferry Schedule and Pricing between Vancouver Island Routes",
@@ -479,7 +483,8 @@
         "correct": 0
       }
     ],
-    "id": "part2-05"
+    "id": "part2-05",
+    "difficulty": "intermediate"
   },
   {
     "title": "Community Garden Plot Sizes and Rental Fees",
@@ -573,7 +578,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-06"
+    "id": "part2-06",
+    "difficulty": "intermediate"
   },
   {
     "title": "Movie Theatre Showtime Schedule with Discount Day Rules",
@@ -667,7 +673,8 @@
         "correct": 0
       }
     ],
-    "id": "part2-07"
+    "id": "part2-07",
+    "difficulty": "intermediate"
   },
   {
     "title": "Municipal Recycling Pickup Schedule and Accepted Items",
@@ -761,7 +768,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-08"
+    "id": "part2-08",
+    "difficulty": "intermediate"
   },
   {
     "title": "Fitness Class Timetable and Instructor Qualifications",
@@ -855,7 +863,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-09"
+    "id": "part2-09",
+    "difficulty": "intermediate"
   },
   {
     "title": "Pet Adoption Criteria and Available Animals",
@@ -949,7 +958,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-10"
+    "id": "part2-10",
+    "difficulty": "intermediate"
   },
   {
     "title": "Community Garden Plot Rental Information",
@@ -1043,7 +1053,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-11"
+    "id": "part2-11",
+    "difficulty": "intermediate"
   },
   {
     "title": "Hospital Visitor Policy and Access Restrictions",
@@ -1137,7 +1148,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-12"
+    "id": "part2-12",
+    "difficulty": "intermediate"
   },
   {
     "title": "Movie Theatre Showtime Schedule and Discount Days",
@@ -1231,7 +1243,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-13"
+    "id": "part2-13",
+    "difficulty": "intermediate"
   },
   {
     "title": "Car Rental Rates with Insurance Options",
@@ -1325,7 +1338,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-14"
+    "id": "part2-14",
+    "difficulty": "intermediate"
   },
   {
     "title": "Municipal Recycling Pickup Schedule",
@@ -1419,7 +1433,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-15"
+    "id": "part2-15",
+    "difficulty": "intermediate"
   },
   {
     "title": "College Course Prerequisite Requirements and Schedule",
@@ -1513,7 +1528,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-16"
+    "id": "part2-16",
+    "difficulty": "intermediate"
   },
   {
     "title": "Fitness Class Timetable",
@@ -1607,7 +1623,8 @@
         "correct": 1
       }
     ],
-    "id": "part2-17"
+    "id": "part2-17",
+    "difficulty": "intermediate"
   },
   {
     "title": "Airport Parking Lot Rates and Shuttle Service",
@@ -1713,7 +1730,8 @@
         "correct": 2
       }
     ],
-    "id": "part2-18"
+    "id": "part2-18",
+    "difficulty": "intermediate"
   },
   {
     "title": "Pet Adoption Criteria and Available Animals",
@@ -1807,7 +1825,8 @@
         "correct": 0
       }
     ],
-    "id": "part2-19"
+    "id": "part2-19",
+    "difficulty": "intermediate"
   },
   {
     "title": "Ski Resort Lift Ticket Pricing and Season Pass Comparison",
@@ -1901,6 +1920,3012 @@
         "correct": 0
       }
     ],
-    "id": "part2-20"
+    "id": "part2-20",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Bus Schedule for Calgary",
+    "passage": "Welcome to the Calgary Transit Bus Schedule for Route 5. Route 5 connects downtown Calgary to the North Hill Centre. \n\nBus Schedule: \n- Monday to Friday: \n   - First bus leaves downtown at 6:00 AM \n   - Last bus leaves downtown at 11:00 PM \n   - Buses leave every 15 minutes during peak hours (7:00 AM - 9:00 AM and 4:30 PM - 6:30 PM). \n\n- Saturday: \n   - First bus leaves downtown at 7:00 AM \n   - Last bus leaves downtown at 10:00 PM \n   - Buses leave every 30 minutes. \n\n- Sunday: \n   - First bus leaves downtown at 8:00 AM \n   - Last bus leaves downtown at 9:00 PM \n   - Buses leave every 30 minutes. \n\nFor more information, visit the Calgary Transit website or call 311.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A bus schedule",
+          "A weather report",
+          "A school announcement",
+          "A shopping guide"
+        ],
+        "correct": 0,
+        "explanation": "The passage is about a bus schedule."
+      },
+      {
+        "id": 2,
+        "question": "What time does the last bus leave downtown on weekdays?",
+        "options": [
+          "6:00 PM",
+          "9:00 PM",
+          "10:00 PM",
+          "11:00 PM"
+        ],
+        "correct": 3,
+        "explanation": "The last bus leaves downtown at 11:00 PM on weekdays."
+      },
+      {
+        "id": 3,
+        "question": "How often do buses leave during peak hours on weekdays?",
+        "options": [
+          "Every 5 minutes",
+          "Every 10 minutes",
+          "Every 15 minutes",
+          "Every 30 minutes"
+        ],
+        "correct": 2,
+        "explanation": "During peak hours, buses leave every 15 minutes."
+      },
+      {
+        "id": 4,
+        "question": "What is the first bus time on Saturdays?",
+        "options": [
+          "6:00 AM",
+          "7:00 AM",
+          "8:00 AM",
+          "9:00 AM"
+        ],
+        "correct": 1,
+        "explanation": "The first bus leaves downtown at 7:00 AM on Saturdays."
+      },
+      {
+        "id": 5,
+        "question": "On Sundays, what is the last bus time?",
+        "options": [
+          "8:00 PM",
+          "9:00 PM",
+          "10:00 PM",
+          "11:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "The last bus leaves downtown at 9:00 PM on Sundays."
+      },
+      {
+        "id": 6,
+        "question": "How frequently do buses run on Saturdays?",
+        "options": [
+          "Every 10 minutes",
+          "Every 20 minutes",
+          "Every 30 minutes",
+          "Every hour"
+        ],
+        "correct": 2,
+        "explanation": "On Saturdays, buses leave every 30 minutes."
+      },
+      {
+        "id": 7,
+        "question": "What is one way to get more information about the bus schedule?",
+        "options": [
+          "Visit a cafe",
+          "Check the Calgary Transit website",
+          "Call the bus driver",
+          "Ask a friend"
+        ],
+        "correct": 1,
+        "explanation": "You can visit the Calgary Transit website for more information."
+      },
+      {
+        "id": 8,
+        "question": "What does the schedule indicate for peak hours?",
+        "options": [
+          "Less frequent service",
+          "Buses leave every 15 minutes",
+          "No buses running",
+          "All buses are full"
+        ],
+        "correct": 1,
+        "explanation": "During peak hours, buses leave every 15 minutes."
+      }
+    ]
+  },
+  {
+    "title": "Spring Community Festival Schedule",
+    "passage": "The Spring Community Festival in Toronto will take place on Saturday, May 15th, at the City Park. The festival starts at 10:00 AM and ends at 5:00 PM. There will be many fun activities for families. The main events include a food truck area, a petting zoo, live music, and local craft vendors. The children’s area will have games, face painting, and balloon animals. In the food truck area, you can find different types of foods, including tacos, burgers, and ice cream. The petting zoo will have goats, sheep, and rabbits for kids to see. Live music will start at 1:00 PM and continue until the festival ends. Entrance to the festival is free. Bring your friends and family to enjoy a great day outside!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A Spring Festival",
+          "A School Event",
+          "A Concert",
+          "A Weather Report"
+        ],
+        "correct": 0,
+        "explanation": "The passage talks about the Spring Community Festival."
+      },
+      {
+        "id": 2,
+        "question": "Where will the festival take place?",
+        "options": [
+          "City Park",
+          "City Hall",
+          "The Library",
+          "The Zoo"
+        ],
+        "correct": 0,
+        "explanation": "The festival will be held at City Park."
+      },
+      {
+        "id": 3,
+        "question": "What time does the festival start?",
+        "options": [
+          "9:00 AM",
+          "10:00 AM",
+          "11:00 AM",
+          "12:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "The festival starts at 10:00 AM."
+      },
+      {
+        "id": 4,
+        "question": "What can children do at the festival?",
+        "options": [
+          "Read books",
+          "Play games",
+          "Watch a movie",
+          "Ride a bike"
+        ],
+        "correct": 1,
+        "explanation": "There will be games for children to play."
+      },
+      {
+        "id": 5,
+        "question": "Is there a fee to enter the festival?",
+        "options": [
+          "Yes, $5",
+          "Yes, $10",
+          "No, it is free",
+          "No, it is $15"
+        ],
+        "correct": 2,
+        "explanation": "Entrance to the festival is free."
+      },
+      {
+        "id": 6,
+        "question": "What type of food will be available?",
+        "options": [
+          "Only sandwiches",
+          "Only salads",
+          "Variety of foods",
+          "Only desserts"
+        ],
+        "correct": 2,
+        "explanation": "The food truck area will offer different types of foods."
+      },
+      {
+        "id": 7,
+        "question": "What animals will be in the petting zoo?",
+        "options": [
+          "Cats and dogs",
+          "Goats and sheep",
+          "Birds and fish",
+          "Horses and cows"
+        ],
+        "correct": 1,
+        "explanation": "The petting zoo will have goats, sheep, and rabbits."
+      },
+      {
+        "id": 8,
+        "question": "When does live music start?",
+        "options": [
+          "9:00 AM",
+          "10:00 AM",
+          "1:00 PM",
+          "3:00 PM"
+        ],
+        "correct": 2,
+        "explanation": "Live music will start at 1:00 PM."
+      }
+    ]
+  },
+  {
+    "title": "Weekly Farmers' Market Schedule",
+    "passage": "The Maple Town Farmers' Market takes place every Saturday at the Community Park. It opens at 8 AM and closes at 1 PM. You can find fresh fruits, vegetables, flowers, and homemade goods. The market has many local growers and artisans. A diagram is below that shows the layout of the market.  \n\n- Fresh Fruits: Stand A \n- Fresh Vegetables: Stand B \n- Flowers: Stand C \n- Homemade Goods: Stand D \n- Seating Area: Located in the center \n- Restrooms: Near the entrance  \n\nPlease remember to bring your own bags. Also, pets are not allowed in the market area. Enjoy your shopping!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A weekly farmers' market schedule",
+          "Types of pets allowed",
+          "How to make homemade goods",
+          "The best time to plant flowers"
+        ],
+        "correct": 0,
+        "explanation": "The passage is about the weekly farmers' market."
+      },
+      {
+        "id": 2,
+        "question": "What time does the market open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 0,
+        "explanation": "The market opens at 8 AM."
+      },
+      {
+        "id": 3,
+        "question": "Where is the seating area located?",
+        "options": [
+          "Near the entrance",
+          "In Stand A",
+          "In the center",
+          "Next to Stand D"
+        ],
+        "correct": 2,
+        "explanation": "The seating area is located in the center."
+      },
+      {
+        "id": 4,
+        "question": "What should you bring to the market?",
+        "options": [
+          "Your pets",
+          "Shopping bags",
+          "Toys for kids",
+          "A picnic lunch"
+        ],
+        "correct": 1,
+        "explanation": "You should bring your own bags."
+      },
+      {
+        "id": 5,
+        "question": "What does Stand B sell?",
+        "options": [
+          "Fresh fruits",
+          "Fresh vegetables",
+          "Flowers",
+          "Homemade goods"
+        ],
+        "correct": 1,
+        "explanation": "Stand B sells fresh vegetables."
+      },
+      {
+        "id": 6,
+        "question": "Can you bring pets to the market?",
+        "options": [
+          "Yes, all pets are allowed",
+          "No pets allowed",
+          "Only cats allowed",
+          "Only small pets allowed"
+        ],
+        "correct": 1,
+        "explanation": "Pets are not allowed in the market area."
+      },
+      {
+        "id": 7,
+        "question": "What can you find at Stand C?",
+        "options": [
+          "Fresh fruits",
+          "Fresh vegetables",
+          "Flowers",
+          "Homemade goods"
+        ],
+        "correct": 2,
+        "explanation": "Stand C sells flowers."
+      },
+      {
+        "id": 8,
+        "question": "What is the closing time of the market?",
+        "options": [
+          "12 PM",
+          "1 PM",
+          "2 PM",
+          "3 PM"
+        ],
+        "correct": 1,
+        "explanation": "The market closes at 1 PM."
+      }
+    ]
+  },
+  {
+    "title": "Weekly Farmers' Market Schedule",
+    "passage": "The Maple Town Farmers' Market is open every Saturday from 9 AM to 1 PM. It is held at the Maple Town Square. You can buy fresh fruits, vegetables, eggs, and bread. Many local farmers sell their products here. The market also sells homemade jams and honey. Sometimes, there are special events, like cooking demonstrations and live music. If you want to visit, come early to get the best produce. The market is a great place to support local businesses and enjoy fresh food. Remember, the market is open rain or shine. Enjoy your shopping!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A farmers' market schedule",
+          "A cooking lesson",
+          "A fruit growing guide",
+          "A gardening contest"
+        ],
+        "correct": 0,
+        "explanation": "The passage talks about the schedule and details of the farmers' market."
+      },
+      {
+        "id": 2,
+        "question": "What day of the week is the Farmers' Market open?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Friday",
+          "Saturday"
+        ],
+        "correct": 3,
+        "explanation": "The passage states the market is open on Saturday."
+      },
+      {
+        "id": 3,
+        "question": "Where is the Farmers' Market located?",
+        "options": [
+          "At a school",
+          "In a shopping mall",
+          "In the Maple Town Square",
+          "At a park"
+        ],
+        "correct": 2,
+        "explanation": "The market is held in the Maple Town Square."
+      },
+      {
+        "id": 4,
+        "question": "What time does the Farmers' Market open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that the market opens at 9 AM."
+      },
+      {
+        "id": 5,
+        "question": "What can you buy at the Farmers' Market?",
+        "options": [
+          "Clothing and shoes",
+          "Fresh fruits and vegetables",
+          "Books and toys",
+          "Electronics and gadgets"
+        ],
+        "correct": 1,
+        "explanation": "The passage lists fresh fruits and vegetables as items available for purchase."
+      },
+      {
+        "id": 6,
+        "question": "What happens sometimes at the Farmers' Market?",
+        "options": [
+          "Cooking demonstrations",
+          "Job fairs",
+          "Art shows",
+          "Film screenings"
+        ],
+        "correct": 0,
+        "explanation": "The passage mentions that cooking demonstrations occur sometimes."
+      },
+      {
+        "id": 7,
+        "question": "What should you do if you want the best produce?",
+        "options": [
+          "Come late",
+          "Come early",
+          "Shop online",
+          "Only buy bread"
+        ],
+        "correct": 1,
+        "explanation": "The passage advises arriving early for the best produce."
+      },
+      {
+        "id": 8,
+        "question": "Is the Farmers' Market open during bad weather?",
+        "options": [
+          "Yes, rain or shine",
+          "Only when it's sunny",
+          "No, it closes during rain",
+          "Only in summer"
+        ],
+        "correct": 0,
+        "explanation": "The passage states the market is open rain or shine."
+      }
+    ]
+  },
+  {
+    "title": "Public Library Summer Reading Program",
+    "passage": "Welcome to the Summer Reading Program at the Downtown Public Library! This program is for children aged 5 to 12. It runs from July 1 to August 31. Children can sign up and read books to earn prizes. Each child receives a reading log to track their books.\n\nHere are some important dates:\n- Registration starts on June 15.\n- The first prize will be given on July 15.\n- The last day to collect prizes is August 31.\n\nEvery week, we will have special events, including storytime and crafts. Storytime will be held every Tuesday at 10 AM. Crafts will be on Thursdays at 1 PM. We encourage parents to join!\n\nMake sure to visit the library’s website for more information and to download the reading log. We hope to see you there and happy reading!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A public library program",
+          "A summer vacation plan",
+          "A school event",
+          "A family gathering"
+        ],
+        "correct": 0,
+        "explanation": "The passage talks about a summer reading program at a public library."
+      },
+      {
+        "id": 2,
+        "question": "What age group is the Summer Reading Program for?",
+        "options": [
+          "5 to 12 years old",
+          "1 to 4 years old",
+          "13 to 18 years old",
+          "All ages"
+        ],
+        "correct": 0,
+        "explanation": "The program is specifically designed for children aged 5 to 12."
+      },
+      {
+        "id": 3,
+        "question": "When does the Summer Reading Program run?",
+        "options": [
+          "July to August",
+          "June to July",
+          "July to September",
+          "August to October"
+        ],
+        "correct": 0,
+        "explanation": "The program runs from July 1 to August 31."
+      },
+      {
+        "id": 4,
+        "question": "When does registration start?",
+        "options": [
+          "June 15",
+          "July 1",
+          "August 31",
+          "July 15"
+        ],
+        "correct": 0,
+        "explanation": "Registration starts on June 15."
+      },
+      {
+        "id": 5,
+        "question": "What is given to each child who signs up?",
+        "options": [
+          "A free book",
+          "A reading log",
+          "A craft kit",
+          "A summer hat"
+        ],
+        "correct": 1,
+        "explanation": "Each child receives a reading log to track their books."
+      },
+      {
+        "id": 6,
+        "question": "When is storytime held?",
+        "options": [
+          "Monday at 10 AM",
+          "Tuesday at 10 AM",
+          "Thursday at 1 PM",
+          "Saturday at 10 AM"
+        ],
+        "correct": 1,
+        "explanation": "Storytime is held every Tuesday at 10 AM."
+      },
+      {
+        "id": 7,
+        "question": "When is the first prize awarded?",
+        "options": [
+          "July 15",
+          "August 31",
+          "June 15",
+          "August 1"
+        ],
+        "correct": 0,
+        "explanation": "The first prize will be given on July 15."
+      },
+      {
+        "id": 8,
+        "question": "What kind of events are held each week?",
+        "options": [
+          "Math classes and science fairs",
+          "Storytime and crafts",
+          "Sports and games",
+          "Cooking workshops"
+        ],
+        "correct": 1,
+        "explanation": "Special events include storytime and crafts."
+      }
+    ]
+  },
+  {
+    "title": "Public Library Hours and Programs",
+    "passage": "The Downtown Public Library of Toronto offers various programs for all ages. The library is open from Monday to Saturday from 9 AM to 8 PM and on Sundays from 11 AM to 5 PM. On Mondays, children can join Story Time at 10 AM. This is a fun session where kids listen to stories and can participate in activities.\n\nOn Wednesdays, the library hosts a book club for adults at 6 PM. This is a great opportunity for adults to discuss books and meet new people. \n\nFridays at 3 PM are for Teen Game Day. Teenagers can come to play board games and video games with their friends. \n\nThere is also a special program every first Saturday of the month called Craft Day. Participants of all ages can come and create fun crafts from 1 PM to 4 PM. Registration for Craft Day is required. \n\nFor more information, visit the library website or call the library directly. It is important to know the hours and programs so everyone can enjoy the library's offerings!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the library hours on weekdays?",
+        "options": [
+          "A. 9 AM to 8 PM",
+          "B. 10 AM to 6 PM",
+          "C. 8 AM to 9 PM",
+          "D. 11 AM to 5 PM"
+        ],
+        "correct": 0,
+        "explanation": "The library is open from 9 AM to 8 PM on weekdays."
+      },
+      {
+        "id": 2,
+        "question": "What time is Story Time for children on Mondays?",
+        "options": [
+          "A. 3 PM",
+          "B. 10 AM",
+          "C. 1 PM",
+          "D. 5 PM"
+        ],
+        "correct": 1,
+        "explanation": "Story Time for children is at 10 AM on Mondays."
+      },
+      {
+        "id": 3,
+        "question": "When is the book club for adults held?",
+        "options": [
+          "A. Tuesday at 5 PM",
+          "B. Wednesday at 6 PM",
+          "C. Thursday at 7 PM",
+          "D. Saturday at 10 AM"
+        ],
+        "correct": 1,
+        "explanation": "The book club for adults meets on Wednesdays at 6 PM."
+      },
+      {
+        "id": 4,
+        "question": "What is Teen Game Day?",
+        "options": [
+          "A. A story session",
+          "B. A board game day",
+          "C. A movie night",
+          "D. A cooking class"
+        ],
+        "correct": 1,
+        "explanation": "Teen Game Day is when teenagers play board games and video games."
+      },
+      {
+        "id": 5,
+        "question": "When is Craft Day held?",
+        "options": [
+          "A. Every Saturday",
+          "B. Every first Saturday of the month",
+          "C. Every Sunday",
+          "D. Every Friday"
+        ],
+        "correct": 1,
+        "explanation": "Craft Day is held every first Saturday of the month."
+      },
+      {
+        "id": 6,
+        "question": "What must you do to attend Craft Day?",
+        "options": [
+          "A. Bring your own materials",
+          "B. Tell your friends",
+          "C. Register in advance",
+          "D. Come anytime"
+        ],
+        "correct": 2,
+        "explanation": "Registration is required to attend Craft Day."
+      },
+      {
+        "id": 7,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A. Library rules",
+          "B. Library hours and programs",
+          "C. Toronto history",
+          "D. How to read books"
+        ],
+        "correct": 1,
+        "explanation": "The main topic is about the library hours and programs."
+      },
+      {
+        "id": 8,
+        "question": "What can people do on Fridays at the library?",
+        "options": [
+          "A. Visit the website",
+          "B. Join Story Time",
+          "C. Participate in Craft Day",
+          "D. Play games"
+        ],
+        "correct": 3,
+        "explanation": "On Fridays at 3 PM, people can play games during Teen Game Day."
+      }
+    ]
+  },
+  {
+    "title": "Toronto Transit System Map",
+    "passage": "The Toronto Transit Commission (TTC) provides public transportation in Toronto. There are three main types of transport: subways, streetcars, and buses. The subway connects the city from north to south and east to west. Streetcars run along busy streets in the downtown area. Buses serve less busy areas and can take you to many neighborhoods. \n\nYou can buy a ticket at any subway station or use a Presto card, which you can load with money. The subway has 4 main lines: Line 1 (Yonge-University), Line 2 (Bloor-Danforth), Line 3 (Scarborough), and Line 4 (Sheppard). This map shows the routes of the subway lines and where you can transfer to buses or streetcars. \n\nHours of operation are from 6 AM to 1:30 AM on weekdays and from 6 AM to 2 AM on weekends. Always check the schedule for possible changes. Using public transportation is a great way to see the city!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What type of transport does the TTC provide?",
+        "options": [
+          "A) Phone service",
+          "B) Public transportation",
+          "C) Taxi service",
+          "D) Car rentals"
+        ],
+        "correct": 1,
+        "explanation": "The TTC provides public transportation."
+      },
+      {
+        "id": 2,
+        "question": "How many main subway lines are in Toronto?",
+        "options": [
+          "A) Two",
+          "B) Three",
+          "C) Four",
+          "D) Five"
+        ],
+        "correct": 2,
+        "explanation": "There are four main subway lines in Toronto."
+      },
+      {
+        "id": 3,
+        "question": "What connects the city from north to south?",
+        "options": [
+          "A) Streetcars",
+          "B) Buses",
+          "C) Subways",
+          "D) Cars"
+        ],
+        "correct": 2,
+        "explanation": "The subway connects the city from north to south."
+      },
+      {
+        "id": 4,
+        "question": "What can you use to pay for your ride?",
+        "options": [
+          "A) A bank card",
+          "B) A ticket or a Presto card",
+          "C) Cash only",
+          "D) An ID card"
+        ],
+        "correct": 1,
+        "explanation": "You can buy a ticket or use a Presto card to pay for your ride."
+      },
+      {
+        "id": 5,
+        "question": "When does the subway close on weekdays?",
+        "options": [
+          "A) 6 PM",
+          "B) 12 AM",
+          "C) 1:30 AM",
+          "D) 2 AM"
+        ],
+        "correct": 2,
+        "explanation": "The subway closes at 1:30 AM on weekdays."
+      },
+      {
+        "id": 6,
+        "question": "Where do streetcars run?",
+        "options": [
+          "A) On highways",
+          "B) On busy streets in downtown",
+          "C) In suburbs",
+          "D) At airports"
+        ],
+        "correct": 1,
+        "explanation": "Streetcars run along busy streets in the downtown area."
+      },
+      {
+        "id": 7,
+        "question": "What does the map show?",
+        "options": [
+          "A) Bus fares",
+          "B) Subway routes and transfers",
+          "C) Taxi locations",
+          "D) Shopping areas"
+        ],
+        "correct": 1,
+        "explanation": "The map shows the routes of the subway lines and where to transfer."
+      },
+      {
+        "id": 8,
+        "question": "What is a benefit of using public transportation?",
+        "options": [
+          "A) It's expensive",
+          "B) It's faster than driving",
+          "C) It helps you see the city",
+          "D) It doesn't work on weekends"
+        ],
+        "correct": 2,
+        "explanation": "Using public transportation is a great way to see the city."
+      }
+    ]
+  },
+  {
+    "title": "Toronto Public Library Hours",
+    "passage": "The Toronto Public Library has many branches. Each branch has different hours. Here are the hours for the central branch:\n\nMonday: 9 AM - 9 PM\nTuesday: 9 AM - 9 PM\nWednesday: 9 AM - 9 PM\nThursday: 9 AM - 9 PM\nFriday: 9 AM - 6 PM\nSaturday: 10 AM - 5 PM\nSunday: Closed\n\nYou can visit the library to borrow books, use computers, or study in a quiet place. The library is also a great place for community events. Check the library’s website for special programs and updates. \n\nRemember, if you need help, the librarians are there to assist you during open hours. Enjoy your visit to the Toronto Public Library!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A library services",
+          "Central branch hours",
+          "Community events",
+          "Computer usage"
+        ],
+        "correct": 1,
+        "explanation": "The passage mainly discusses the hours of the central branch of the Toronto Public Library."
+      },
+      {
+        "id": 2,
+        "question": "What time does the library open on Monday?",
+        "options": [
+          "10 AM",
+          "9 AM",
+          "11 AM",
+          "8 AM"
+        ],
+        "correct": 1,
+        "explanation": "The library opens at 9 AM on Monday."
+      },
+      {
+        "id": 3,
+        "question": "When is the library closed?",
+        "options": [
+          "Saturday",
+          "Monday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "correct": 3,
+        "explanation": "The library is closed on Sunday."
+      },
+      {
+        "id": 4,
+        "question": "What can you do at the library?",
+        "options": [
+          "Attend school",
+          "Borrow books",
+          "Buy groceries",
+          "Play sports"
+        ],
+        "correct": 1,
+        "explanation": "You can visit the library to borrow books."
+      },
+      {
+        "id": 5,
+        "question": "What is the closing time on Friday?",
+        "options": [
+          "9 PM",
+          "6 PM",
+          "5 PM",
+          "4 PM"
+        ],
+        "correct": 1,
+        "explanation": "The library closes at 6 PM on Friday."
+      },
+      {
+        "id": 6,
+        "question": "Who can help you at the library?",
+        "options": [
+          "Customers",
+          "Friends",
+          "Librarians",
+          "Teachers"
+        ],
+        "correct": 2,
+        "explanation": "Librarians are there to assist visitors during open hours."
+      },
+      {
+        "id": 7,
+        "question": "How many days is the library open?",
+        "options": [
+          "5 days",
+          "6 days",
+          "7 days",
+          "4 days"
+        ],
+        "correct": 1,
+        "explanation": "The library is open for 6 days, from Monday to Saturday."
+      },
+      {
+        "id": 8,
+        "question": "What should you check for special programs?",
+        "options": [
+          "Library website",
+          "Social media",
+          "Friends",
+          "Newspapers"
+        ],
+        "correct": 0,
+        "explanation": "You should check the library’s website for special programs and updates."
+      }
+    ]
+  },
+  {
+    "title": "Community Center Activities Schedule",
+    "passage": "Welcome to the Maple Leaf Community Center! We have many activities for everyone. Here is our schedule for the month of April. \n\n**Monday**: Yoga Class - 6 PM to 7 PM \n**Tuesday**: Painting Workshop - 5 PM to 7 PM \n**Wednesday**: Cooking Class - 6 PM to 8 PM \n**Thursday**: Dance Class - 7 PM to 8 PM \n**Friday**: Movie Night - 7 PM to 9 PM \n**Saturday**: Family Game Day - 1 PM to 4 PM \n**Sunday**: Closed \n\nPlease register for classes in advance. Call us at 416-555-0199. We hope to see you at the center!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A) Weather Forecast",
+          "B) Community Center Activities",
+          "C) Shopping Hours",
+          "D) School Schedule"
+        ],
+        "correct": 1,
+        "explanation": "The passage is about activities at a community center."
+      },
+      {
+        "id": 2,
+        "question": "What day is Movie Night?",
+        "options": [
+          "A) Monday",
+          "B) Friday",
+          "C) Sunday",
+          "D) Thursday"
+        ],
+        "correct": 1,
+        "explanation": "Movie Night is on Friday from 7 PM to 9 PM."
+      },
+      {
+        "id": 3,
+        "question": "What time does the Yoga Class start?",
+        "options": [
+          "A) 5 PM",
+          "B) 6 PM",
+          "C) 7 PM",
+          "D) 8 PM"
+        ],
+        "correct": 1,
+        "explanation": "The Yoga Class starts at 6 PM on Monday."
+      },
+      {
+        "id": 4,
+        "question": "Which activity is offered on Saturday?",
+        "options": [
+          "A) Dance Class",
+          "B) Family Game Day",
+          "C) Cooking Class",
+          "D) Yoga Class"
+        ],
+        "correct": 1,
+        "explanation": "Family Game Day is on Saturday from 1 PM to 4 PM."
+      },
+      {
+        "id": 5,
+        "question": "What should you do if you want to join a class?",
+        "options": [
+          "A) Come without registering",
+          "B) Register in advance",
+          "C) Call after the class",
+          "D) Visit on Sundays"
+        ],
+        "correct": 1,
+        "explanation": "You should register for classes in advance."
+      },
+      {
+        "id": 6,
+        "question": "On which day is the center closed?",
+        "options": [
+          "A) Monday",
+          "B) Tuesday",
+          "C) Saturday",
+          "D) Sunday"
+        ],
+        "correct": 3,
+        "explanation": "The center is closed on Sunday."
+      },
+      {
+        "id": 7,
+        "question": "How long does the Cooking Class last?",
+        "options": [
+          "A) 1 hour",
+          "B) 2 hours",
+          "C) 3 hours",
+          "D) 4 hours"
+        ],
+        "correct": 1,
+        "explanation": "The Cooking Class lasts from 6 PM to 8 PM, which is 2 hours."
+      },
+      {
+        "id": 8,
+        "question": "What is the phone number for registration?",
+        "options": [
+          "A) 416-555-0101",
+          "B) 416-555-0199",
+          "C) 416-555-0188",
+          "D) 416-555-0123"
+        ],
+        "correct": 1,
+        "explanation": "The phone number to call for registration is 416-555-0199."
+      }
+    ]
+  },
+  {
+    "title": "Community Centre Schedule",
+    "passage": "Welcome to the Maple Leaf Community Centre! Below is our weekly schedule of activities. \n\n**Weekly Activities Schedule**  \n**Location:** Maple Leaf Community Centre, 123 Main St, Toronto  \n\n**Monday:**  \n- Yoga Class: 6 PM - 7 PM  \n- Art Workshop: 7:30 PM - 9 PM  \n\n**Tuesday:**  \n- Cooking Class: 5 PM - 7 PM  \n- Chess Club: 7 PM - 9 PM  \n\n**Wednesday:**  \n- Dance Fitness: 6 PM - 7 PM  \n- Language Exchange: 7 PM - 8:30 PM  \n\n**Thursday:**  \n- Family Game Night: 6 PM - 8 PM  \n\n**Friday:**  \n- Movie Night: 7 PM - 9 PM  \n\n**Saturday:**  \n- Farmers Market: 9 AM - 2 PM  \n- Community Gardening: 3 PM - 5 PM  \n\n**Sunday:**  \n- Open Gym: 10 AM - 1 PM  \n- Book Club: 3 PM - 4 PM  \n\nPlease join us for fun and learning! For more information, call us at (416) 555-0123.",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of this schedule?",
+        "options": [
+          "A community events schedule",
+          "A grocery list",
+          "A movie schedule",
+          "A travel itinerary"
+        ],
+        "correct": 0,
+        "explanation": "The passage is about the community activities."
+      },
+      {
+        "id": 2,
+        "question": "What activity happens on Mondays?",
+        "options": [
+          "Cooking Class",
+          "Yoga Class",
+          "Farmers Market",
+          "Open Gym"
+        ],
+        "correct": 1,
+        "explanation": "The yoga class is listed as happening on Monday."
+      },
+      {
+        "id": 3,
+        "question": "When does the Farmers Market take place?",
+        "options": [
+          "Monday morning",
+          "Saturday morning",
+          "Friday evening",
+          "Sunday evening"
+        ],
+        "correct": 1,
+        "explanation": "The farmers market is on Saturday from 9 AM to 2 PM."
+      },
+      {
+        "id": 4,
+        "question": "Which activity is for families?",
+        "options": [
+          "Chess Club",
+          "Dance Fitness",
+          "Family Game Night",
+          "Art Workshop"
+        ],
+        "correct": 2,
+        "explanation": "Family Game Night is specifically mentioned for families."
+      },
+      {
+        "id": 5,
+        "question": "What time does the Art Workshop start?",
+        "options": [
+          "6 PM",
+          "7 PM",
+          "7:30 PM",
+          "5 PM"
+        ],
+        "correct": 2,
+        "explanation": "The Art Workshop starts at 7:30 PM."
+      },
+      {
+        "id": 6,
+        "question": "How can you get more information?",
+        "options": [
+          "Visit the Centre",
+          "Call a phone number",
+          "Check online",
+          "Ask a friend"
+        ],
+        "correct": 1,
+        "explanation": "The passage tells you to call for more information."
+      },
+      {
+        "id": 7,
+        "question": "What day is Movie Night?",
+        "options": [
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "correct": 2,
+        "explanation": "Movie Night is scheduled for Friday."
+      },
+      {
+        "id": 8,
+        "question": "What is the last activity of the week?",
+        "options": [
+          "Open Gym",
+          "Book Club",
+          "Yoga Class",
+          "Dance Fitness"
+        ],
+        "correct": 1,
+        "explanation": "The Book Club is the last activity on Sunday at 3 PM."
+      }
+    ]
+  },
+  {
+    "title": "Local Community Center Schedule",
+    "passage": "The Maple Leaf Community Center offers many activities for residents. Here is the schedule for the month of April:\n\n**Monday to Friday:**\n- 9:00 AM - 10:00 AM: Yoga Class\n- 10:30 AM - 11:30 AM: Art for Kids\n- 1:00 PM - 2:00 PM: English Conversation Group\n\n**Saturday:**\n- 10:00 AM - 12:00 PM: Farmers' Market\n- 1:00 PM - 3:00 PM: Family Game Day\n\n**Sunday:**\n- 10:00 AM - 11:30 AM: Community Coffee Hour\n- 12:00 PM - 2:00 PM: Cooking Workshop\n\nAll activities are free. Just drop by and join in! For more information, contact the center at (555) 123-4567 or visit our website at www.mapleleafcommunitycenter.ca. We look forward to seeing you!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A community center schedule",
+          "A local grocery store",
+          "An art exhibition",
+          "A weather report"
+        ],
+        "correct": 0,
+        "explanation": "The passage discusses activities at a community center."
+      },
+      {
+        "id": 2,
+        "question": "When is the Yoga Class?",
+        "options": [
+          "On Saturdays",
+          "On Sundays",
+          "On Fridays",
+          "On weekdays"
+        ],
+        "correct": 3,
+        "explanation": "The Yoga Class is from Monday to Friday."
+      },
+      {
+        "id": 3,
+        "question": "What activity is for kids?",
+        "options": [
+          "Yoga Class",
+          "Art for Kids",
+          "Cooking Workshop",
+          "Farmers' Market"
+        ],
+        "correct": 1,
+        "explanation": "Art for Kids is specifically designed for children."
+      },
+      {
+        "id": 4,
+        "question": "What time does the Farmers' Market start on Saturday?",
+        "options": [
+          "10:00 AM",
+          "9:00 AM",
+          "1:00 PM",
+          "12:00 PM"
+        ],
+        "correct": 0,
+        "explanation": "The Farmers' Market starts at 10:00 AM on Saturdays."
+      },
+      {
+        "id": 5,
+        "question": "Which activity involves families?",
+        "options": [
+          "Yoga Class",
+          "Family Game Day",
+          "Coffee Hour",
+          "Cooking Workshop"
+        ],
+        "correct": 1,
+        "explanation": "Family Game Day is an activity for families."
+      },
+      {
+        "id": 6,
+        "question": "Is there a fee for the activities?",
+        "options": [
+          "Yes, a small fee",
+          "Yes, a high fee",
+          "No, all activities are free",
+          "Only some activities are free"
+        ],
+        "correct": 2,
+        "explanation": "All activities mentioned are free."
+      },
+      {
+        "id": 7,
+        "question": "What is the contact number for the community center?",
+        "options": [
+          "(555) 678-9123",
+          "(555) 123-4567",
+          "(555) 111-2222",
+          "(555) 999-8888"
+        ],
+        "correct": 1,
+        "explanation": "The contact number for the center is (555) 123-4567."
+      },
+      {
+        "id": 8,
+        "question": "When does the Community Coffee Hour take place?",
+        "options": [
+          "On Saturdays",
+          "On Friday evenings",
+          "On Sunday mornings",
+          "On weekdays"
+        ],
+        "correct": 2,
+        "explanation": "The Community Coffee Hour is on Sunday mornings."
+      }
+    ]
+  },
+  {
+    "title": "Toronto Public Transit Schedule",
+    "passage": "The Toronto Public Transit system offers convenient ways to travel around the city. Below is the schedule for the subway on weekdays. The subway runs from 6:00 AM to 1:00 AM. During rush hours, trains come every 5 minutes. Outside of rush hours, trains come every 10 minutes. On weekends, the subway starts at 6:00 AM and runs until 2:00 AM. On Sundays, trains run every 10 minutes all day. For holiday schedules, check the Toronto Transit Commission website. Remember to buy your ticket before getting on the subway. You can buy a ticket at the machine or use a Presto card. Keep your ticket until you leave the station. Enjoy your ride!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A public transport schedule",
+          "A guide to buying tickets",
+          "Rules for using the subway",
+          "Different subway lines"
+        ],
+        "correct": 0,
+        "explanation": "The main topic is about the subway transit schedule."
+      },
+      {
+        "id": 2,
+        "question": "What time does the subway start on weekdays?",
+        "options": [
+          "5:00 AM",
+          "6:00 AM",
+          "7:00 AM",
+          "8:00 AM"
+        ],
+        "correct": 1,
+        "explanation": "The subway starts at 6:00 AM on weekdays."
+      },
+      {
+        "id": 3,
+        "question": "How often do trains come during rush hours?",
+        "options": [
+          "Every 5 minutes",
+          "Every 10 minutes",
+          "Every 15 minutes",
+          "Every 20 minutes"
+        ],
+        "correct": 0,
+        "explanation": "Trains come every 5 minutes during rush hours."
+      },
+      {
+        "id": 4,
+        "question": "When does the subway close on weekdays?",
+        "options": [
+          "12:00 AM",
+          "1:00 AM",
+          "2:00 AM",
+          "3:00 AM"
+        ],
+        "correct": 1,
+        "explanation": "The subway closes at 1:00 AM on weekdays."
+      },
+      {
+        "id": 5,
+        "question": "What time does the subway run until on weekends?",
+        "options": [
+          "12:00 AM",
+          "1:00 AM",
+          "2:00 AM",
+          "3:00 AM"
+        ],
+        "correct": 2,
+        "explanation": "The subway runs until 2:00 AM on weekends."
+      },
+      {
+        "id": 6,
+        "question": "How often do trains run on Sundays?",
+        "options": [
+          "Every 5 minutes",
+          "Every 10 minutes",
+          "Every 15 minutes",
+          "Every 20 minutes"
+        ],
+        "correct": 1,
+        "explanation": "On Sundays, trains run every 10 minutes all day."
+      },
+      {
+        "id": 7,
+        "question": "Where can you buy a transit ticket?",
+        "options": [
+          "At the subway station only",
+          "At the machine or with a Presto card",
+          "Only online",
+          "From the train conductor"
+        ],
+        "correct": 1,
+        "explanation": "You can buy a ticket at the machine or use a Presto card."
+      },
+      {
+        "id": 8,
+        "question": "What should you do with your ticket?",
+        "options": [
+          "Throw it away",
+          "Give it to the driver",
+          "Keep it until you leave the station",
+          "Show it to other passengers"
+        ],
+        "correct": 2,
+        "explanation": "You should keep your ticket until you leave the station."
+      }
+    ]
+  },
+  {
+    "title": "City Bus Schedule",
+    "passage": "This is the bus schedule for Sunny City. The bus stops at main locations around the city. There are 5 bus lines: Line 1, Line 2, Line 3, Line 4, and Line 5. The buses run every day from 6 AM to 10 PM.\n\nLine 1 goes from Sunny Park to Main Street. It arrives every 15 minutes. Line 2 goes from North End to South End. It arrives every 30 minutes. Line 3 goes from West Side to East Side. It arrives every 20 minutes. Line 4 goes to Sunny School. It arrives every 25 minutes. Finally, Line 5 goes to Sunny Mall. It arrives every 40 minutes.\n\nMake sure to check the times at the bus stop. Have your fare ready when you board the bus. Enjoy your ride!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A bus schedule",
+          "A school schedule",
+          "A shopping list",
+          "A weather report"
+        ],
+        "correct": 0,
+        "explanation": "The passage provides information about city bus schedules."
+      },
+      {
+        "id": 2,
+        "question": "How many bus lines are there?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions 5 bus lines."
+      },
+      {
+        "id": 3,
+        "question": "Where does Line 1 go?",
+        "options": [
+          "Sunny Park to Main Street",
+          "North End to South End",
+          "West Side to East Side",
+          "Sunny School to Sunny Mall"
+        ],
+        "correct": 0,
+        "explanation": "Line 1 goes from Sunny Park to Main Street."
+      },
+      {
+        "id": 4,
+        "question": "How often does Line 2 arrive?",
+        "options": [
+          "Every 15 minutes",
+          "Every 20 minutes",
+          "Every 30 minutes",
+          "Every 40 minutes"
+        ],
+        "correct": 2,
+        "explanation": "Line 2 arrives every 30 minutes."
+      },
+      {
+        "id": 5,
+        "question": "What is the last time the buses run?",
+        "options": [
+          "6 PM",
+          "8 PM",
+          "9 PM",
+          "10 PM"
+        ],
+        "correct": 3,
+        "explanation": "The buses run until 10 PM."
+      },
+      {
+        "id": 6,
+        "question": "Which bus line goes to Sunny School?",
+        "options": [
+          "Line 1",
+          "Line 3",
+          "Line 4",
+          "Line 5"
+        ],
+        "correct": 2,
+        "explanation": "Line 4 goes to Sunny School."
+      },
+      {
+        "id": 7,
+        "question": "How often does Line 5 arrive?",
+        "options": [
+          "Every 15 minutes",
+          "Every 25 minutes",
+          "Every 30 minutes",
+          "Every 40 minutes"
+        ],
+        "correct": 3,
+        "explanation": "Line 5 arrives every 40 minutes."
+      },
+      {
+        "id": 8,
+        "question": "What should you have ready when boarding the bus?",
+        "options": [
+          "Your ticket",
+          "Your smartphone",
+          "Your fare",
+          "Your lunch"
+        ],
+        "correct": 2,
+        "explanation": "You should have your fare ready when you board the bus."
+      }
+    ]
+  },
+  {
+    "title": "Library Opening Hours",
+    "passage": "The Maplewood Public Library has new opening hours. Starting from November 1st, the library will be open every day of the week. The new hours are:\n\n- Monday to Friday: 9:00 AM to 8:00 PM\n- Saturday: 10:00 AM to 5:00 PM\n- Sunday: 1:00 PM to 5:00 PM\n\nPlease remember, the library will be closed on holidays. You can borrow books, use computers, and attend programs during these hours. For more information about events, visit our website or call us at 555-1234. Thank you for supporting our library!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the new hours for Monday to Friday?",
+        "options": [
+          "9:00 AM to 8:00 PM",
+          "10:00 AM to 5:00 PM",
+          "1:00 PM to 5:00 PM",
+          "Closed all day"
+        ],
+        "correct": 0,
+        "explanation": "Monday to Friday hours are 9:00 AM to 8:00 PM."
+      },
+      {
+        "id": 2,
+        "question": "When does the library open on Saturdays?",
+        "options": [
+          "9:00 AM",
+          "10:00 AM",
+          "1:00 PM",
+          "Closed"
+        ],
+        "correct": 1,
+        "explanation": "The library opens at 10:00 AM on Saturdays."
+      },
+      {
+        "id": 3,
+        "question": "What time does the library close on Sundays?",
+        "options": [
+          "5:00 PM",
+          "8:00 PM",
+          "9:00 PM",
+          "3:00 PM"
+        ],
+        "correct": 0,
+        "explanation": "The library closes at 5:00 PM on Sundays."
+      },
+      {
+        "id": 4,
+        "question": "Is the library open every day?",
+        "options": [
+          "Yes",
+          "No",
+          "Only on weekends",
+          "Only during the week"
+        ],
+        "correct": 0,
+        "explanation": "The library is open every day, starting November 1st."
+      },
+      {
+        "id": 5,
+        "question": "What should you do if you need more information about events?",
+        "options": [
+          "Visit the library",
+          "Visit the website",
+          "Call a friend",
+          "Wait for an email"
+        ],
+        "correct": 1,
+        "explanation": "You can visit the website for information about events."
+      },
+      {
+        "id": 6,
+        "question": "What should you remember about the library?",
+        "options": [
+          "It will be closed on holidays",
+          "It is always open",
+          "You cannot borrow books",
+          "It has no computers"
+        ],
+        "correct": 0,
+        "explanation": "The library will be closed on holidays."
+      },
+      {
+        "id": 7,
+        "question": "What can you do at the library?",
+        "options": [
+          "Take books home",
+          "Play video games",
+          "Do your laundry",
+          "Watch TV"
+        ],
+        "correct": 0,
+        "explanation": "You can borrow books at the library."
+      },
+      {
+        "id": 8,
+        "question": "What is the main topic of this passage?",
+        "options": [
+          "Library rules",
+          "Library opening hours",
+          "Library events",
+          "Library staff"
+        ],
+        "correct": 1,
+        "explanation": "The main topic of the passage is the new opening hours of the library."
+      }
+    ]
+  },
+  {
+    "title": "Local Bus Schedule",
+    "passage": "This is the local bus schedule for the downtown area of Vancouver. The bus runs every 15 minutes during the day. On weekdays, the first bus leaves the station at 6:00 AM and the last bus leaves at 11:00 PM. On weekends, the first bus is at 7:00 AM and the last bus is at 10:00 PM. Buses stop at important locations including the library, the community center, and the shopping mall. Make sure to check the schedule for any changes during holidays. Always arrive at the bus stop a few minutes early. Have a great trip!",
+    "difficulty": "beginner",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the passage?",
+        "options": [
+          "A bus schedule",
+          "Local restaurants",
+          "Shopping hours",
+          "Library services"
+        ],
+        "correct": 0,
+        "explanation": "The passage talks about the local bus schedule."
+      },
+      {
+        "id": 2,
+        "question": "When does the first bus leave on weekdays?",
+        "options": [
+          "6:00 AM",
+          "7:00 AM",
+          "5:00 AM",
+          "8:00 AM"
+        ],
+        "correct": 0,
+        "explanation": "The passage states the first bus leaves at 6:00 AM on weekdays."
+      },
+      {
+        "id": 3,
+        "question": "What is the last bus time on weekends?",
+        "options": [
+          "11:00 PM",
+          "10:00 PM",
+          "9:00 PM",
+          "8:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "On weekends, the last bus leaves at 10:00 PM."
+      },
+      {
+        "id": 4,
+        "question": "How often does the bus run during the day?",
+        "options": [
+          "Every 30 minutes",
+          "Every 20 minutes",
+          "Every 15 minutes",
+          "Every hour"
+        ],
+        "correct": 2,
+        "explanation": "The passage states that the bus runs every 15 minutes."
+      },
+      {
+        "id": 5,
+        "question": "Which location is NOT mentioned in the passage?",
+        "options": [
+          "Library",
+          "Park",
+          "Community center",
+          "Shopping mall"
+        ],
+        "correct": 1,
+        "explanation": "The passage does not mention a park."
+      },
+      {
+        "id": 6,
+        "question": "What should you do if the bus schedule changes?",
+        "options": [
+          "Check the schedule",
+          "Ignore it",
+          "Arrive late",
+          "Call a friend"
+        ],
+        "correct": 0,
+        "explanation": "The passage advises checking the schedule for changes."
+      },
+      {
+        "id": 7,
+        "question": "What time does the last bus leave on weekdays?",
+        "options": [
+          "10:00 PM",
+          "11:00 PM",
+          "9:00 PM",
+          "8:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "On weekdays, the last bus leaves at 11:00 PM."
+      },
+      {
+        "id": 8,
+        "question": "What is a good tip for waiting at the bus stop?",
+        "options": [
+          "Arrive 15 minutes early",
+          "Wear warm clothes",
+          "Bring a friend",
+          "Stand in the street"
+        ],
+        "correct": 0,
+        "explanation": "The passage suggests arriving a few minutes early at the bus stop."
+      }
+    ]
+  },
+  {
+    "title": "Urban Transit Revitalization in Toronto",
+    "passage": "The City of Toronto has embarked on an ambitious Urban Transit Revitalization Initiative, a multifaceted program designed to enhance public transportation efficiency and accessibility. As depicted in Diagram 1, the initiative's key components include the expansion of subway lines, the introduction of electric buses, and the development of dedicated bike lanes. Notwithstanding the expected benefits, stakeholders expressed concerns that insufficient funding could exacerbate existing challenges such as overcrowding and service delays. \n\nFurthermore, the initiative aims to juxtapose sustainable practices with urban growth, promoting a transition towards greener transportation solutions. To this effect, a timeline has been established which outlines critical milestones: Phase One involves public consultations and funding acquisition, slated for completion by Q2 2024; Phase Two focuses on infrastructure development expected to commence in Q3 2024, and Phase Three emphasizes the community engagement necessary for fostering public support. \n\nPotential pitfalls, including bureaucratic delays and community resistance, have been identified as risks that could hinder the project's success. Consequently, ongoing assessments and a transparent communication strategy are imperative to ensure that stakeholders remain informed and engaged throughout the implementation process.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary purpose of the Urban Transit Revitalization Initiative?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "The initiative aims to enhance public transportation efficiency and accessibility."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what might exacerbate the challenges faced by the initiative?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "Insufficient funding could lead to overcrowding and service delays."
+      },
+      {
+        "id": 3,
+        "question": "Which phase of the initiative primarily concerns public consultations and funding acquisition?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "Phase One is focused on public consultations and funding acquisition."
+      },
+      {
+        "id": 4,
+        "question": "What critical challenge is mentioned regarding community involvement?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3,
+        "explanation": "Community resistance is identified as a potential obstacle to the success of the initiative."
+      },
+      {
+        "id": 5,
+        "question": "What approach does the initiative take toward urban growth?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "It juxtaposes sustainable practices with urban growth."
+      },
+      {
+        "id": 6,
+        "question": "In which quarter is Phase One expected to be completed?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1,
+        "explanation": "Phase One is slated for completion by Q2 2024."
+      },
+      {
+        "id": 7,
+        "question": "What strategy is deemed essential for the project's success?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0,
+        "explanation": "Ongoing assessments and a transparent communication strategy are vital for success."
+      },
+      {
+        "id": 8,
+        "question": "What might be a direct consequence of bureaucratic delays, as mentioned in the passage?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2,
+        "explanation": "Bureaucratic delays could hinder the timely implementation of the initiative."
+      }
+    ]
+  },
+  {
+    "title": "Urban Sustainability Strategy for Toronto",
+    "passage": "In light of growing environmental concerns, the City of Toronto has initiated a comprehensive Urban Sustainability Strategy aimed at reducing carbon emissions, enhancing green spaces, and promoting public transportation. This multifaceted approach, outlined in the accompanying chart, is designed to juxtapose various elements of urban life, thereby facilitating a holistic view of sustainability in an urban context. The strategy's primary components include the renovation of existing buildings to meet higher energy efficiency standards, the establishment of new green zones, and the expansion of bicycle lanes throughout the city. Notwithstanding these efforts, challenges remain, particularly regarding public engagement and the allocation of financial resources for these initiatives. The chart illustrates projected timelines and funding sources, delineating the various phases of implementation for each initiative from 2023 to 2030. For instance, the renovation of public infrastructure is expected to commence in early 2024, with a funding model that relies heavily on partnerships with private enterprises. Moreover, the strategy underscores the necessity of community involvement, as local residents are expected to partake in decision-making processes. Exacerbating the situation is the potential for public opposition to some of the proposed changes, which could hinder progress. Consequently, it is imperative for the city to adopt a transparent communication approach, thereby fostering dialogue and ensuring that stakeholders are adequately informed throughout the duration of the strategy's implementation.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the Urban Sustainability Strategy as outlined in the passage?",
+        "options": [
+          "A) Reducing traffic congestion",
+          "B) Encouraging private car use",
+          "C) Enhancing urban ecological integrity",
+          "D) Increasing residential building heights"
+        ],
+        "correct": 2,
+        "explanation": "The primary focus is to enhance urban ecological integrity through sustainability efforts."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following components is NOT included in the Urban Sustainability Strategy?",
+        "options": [
+          "A) Expansion of bicycle lanes",
+          "B) Renovation of existing buildings",
+          "C) Implementation of stricter zoning laws",
+          "D) Establishment of new green zones"
+        ],
+        "correct": 2,
+        "explanation": "The passage does not mention the implementation of stricter zoning laws as part of the strategy."
+      },
+      {
+        "id": 3,
+        "question": "According to the passage, what potential issue could hinder the implementation of the sustainability initiatives?",
+        "options": [
+          "A) Insufficient government funding",
+          "B) Opposition from residents",
+          "C) Lack of private sector interest",
+          "D) Increased carbon emissions"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights public opposition as a potential issue that could hinder progress."
+      },
+      {
+        "id": 4,
+        "question": "What is the significance of community involvement in the Urban Sustainability Strategy?",
+        "options": [
+          "A) It provides feedback on public projects.",
+          "B) It reduces the need for funding.",
+          "C) It is a requirement for government compliance.",
+          "D) It allows residents to influence decision-making."
+        ],
+        "correct": 3,
+        "explanation": "The strategy emphasizes that community involvement allows residents to partake in decision-making processes."
+      },
+      {
+        "id": 5,
+        "question": "What can be inferred about the funding model for public infrastructure renovations?",
+        "options": [
+          "A) It is solely funded by government grants.",
+          "B) It is dependent on private sector partnerships.",
+          "C) It will begin after 2030.",
+          "D) It does not require community input."
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that the funding model relies heavily on partnerships with private enterprises."
+      },
+      {
+        "id": 6,
+        "question": "How does the chart mentioned in the passage contribute to understanding the Urban Sustainability Strategy?",
+        "options": [
+          "A) It summarizes local opposition.",
+          "B) It outlines funding sources and timelines.",
+          "C) It lists all community proposals.",
+          "D) It tracks public transportation usage."
+        ],
+        "correct": 1,
+        "explanation": "The chart outlines projected timelines and funding sources for the strategy's initiatives."
+      },
+      {
+        "id": 7,
+        "question": "What tone does the author adopt towards the challenges faced by the Urban Sustainability Strategy?",
+        "options": [
+          "A) Optimistic",
+          "B) Indifferent",
+          "C) Alarmist",
+          "D) Cautiously realistic"
+        ],
+        "correct": 3,
+        "explanation": "The author adopts a cautiously realistic tone, acknowledging challenges while also recognizing the initiatives' importance."
+      },
+      {
+        "id": 8,
+        "question": "What does the use of the term 'exacerbate' imply about the public opposition mentioned?",
+        "options": [
+          "A) It will remain constant without impact.",
+          "B) It will likely worsen the implementation process.",
+          "C) It is expected to weaken over time.",
+          "D) It is already accounted for in funding."
+        ],
+        "correct": 1,
+        "explanation": "The term 'exacerbate' implies that the public opposition may worsen and complicate the implementation process."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Public Health",
+    "passage": "In Canada, urban green spaces—parks, gardens, and community forests—serve not only as recreational venues but also as vital public health resources. Recent studies by Health Canada juxtapose urban greenery with public well-being indicators, revealing a significant correlation between access to these spaces and improved mental health outcomes. Notwithstanding the benefits, the distribution of green spaces across Canadian cities is unequal, with lower-income neighborhoods often lacking adequate access. This inequity exacerbates existing health disparities, as residents in these areas are less likely to engage in outdoor activities that promote physical health. The following chart illustrates the relationship between urban green space allocation and reported incidences of anxiety and depression in Montreal and Toronto. Data indicates that neighborhoods with greater access to parks show a marked decrease in mental health issues, thereby underscoring the necessity for policymakers to prioritize equitable funding for green space development, particularly in underserved communities. As urban planners reconsider city layouts, they must approach the integration of green spaces not merely as an aesthetic enhancement, but as fundamental components of public health strategy, ensuring that no demographic is left behind in this green urban initiative.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 8,
+        "question": "What is a potential consequence of neglecting to develop equitable green spaces?",
+        "options": [
+          "A) Increased economic growth",
+          "B) Reduced public health issues",
+          "C) Worsening health disparities",
+          "D) Enhanced urban aesthetics",
+          "correct: 2, 'brief': 'Neglecting equitable development may worsen existing health disparities among different demographics.' "
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Urban Transit Policy Framework: A Comparative Analysis",
+    "passage": "The urban transit policy framework, as illustrated in the accompanying diagram, highlights the interdependence of various components essential to sustainable transportation in Canadian cities such as Toronto, Vancouver, and Montreal. The diagram juxtaposes existing transit systems against proposed enhancements, emphasizing the underlying principles of accessibility, efficiency, and environmental stewardship. Notwithstanding the considerable progress made in integrating alternative transport modalities, significant barriers persist. For instance, the implementation of dedicated bus lanes in Vancouver has, paradoxically, exacerbated congestion in adjacent thoroughfares, demonstrating that while advancements in one area can yield positive outcomes, they may inadvertently complicate others.\n\nMoreover, stakeholder engagement is paramount in ensuring policy efficacy. The report recommends that municipalities prioritize grassroots input during planning phases. It argues that neglecting community sentiment not only risks alienating residents but can also dilute the intended impacts of transit reforms. The historical context of transit policy in these cities indicates a tendency towards top-down decision-making; therefore, the proposed paradigm shift underscores the necessity for collaborative frameworks. Ultimately, it is essential that policymakers synthesize data on user experiences and environmental metrics, fostering a holistic approach that addresses both immediate transit challenges and long-term sustainability goals.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What main principle does the urban transit policy framework emphasize?",
+        "options": [
+          "A: Cost-effectiveness",
+          "B: Environmental stewardship",
+          "C: Technological innovation",
+          "D: Privacy concerns"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that the framework emphasizes accessibility, efficiency, and environmental stewardship."
+      },
+      {
+        "id": 2,
+        "question": "In what way did the implementation of bus lanes in Vancouver create a contradiction?",
+        "options": [
+          "A: It increased travel times for all vehicles",
+          "B: It improved bus efficiency while worsening car congestion",
+          "C: It made public transit more expensive",
+          "D: It reduced public transport ridership"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions that while bus lanes improved bus efficiency, they exacerbated congestion on adjacent roads."
+      },
+      {
+        "id": 3,
+        "question": "What does the report recommend regarding stakeholder engagement?",
+        "options": [
+          "A: Focus solely on expert opinions",
+          "B: Conduct surveys without public meetings",
+          "C: Prioritize grassroots input during planning",
+          "D: Minimize community feedback to speed up processes"
+        ],
+        "correct": 2,
+        "explanation": "The passage argues that municipalities should prioritize grassroots input to ensure policy efficacy."
+      },
+      {
+        "id": 4,
+        "question": "What historical tendency in transit policy does the passage highlight?",
+        "options": [
+          "A: Increased public participation",
+          "B: Frequent policy revisions",
+          "C: Top-down decision-making",
+          "D: Extensive funding cuts"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates a historical tendency towards top-down decision-making in transit policy."
+      },
+      {
+        "id": 5,
+        "question": "Which cities are mentioned as examples in the transit policy framework?",
+        "options": [
+          "A: Calgary, Ottawa, Winnipeg",
+          "B: Toronto, Vancouver, Montreal",
+          "C: Halifax, Edmonton, Saskatoon",
+          "D: Quebec City, Victoria, Regina"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically names Toronto, Vancouver, and Montreal as examples."
+      },
+      {
+        "id": 6,
+        "question": "What is implied about community sentiment in relation to transit reforms?",
+        "options": [
+          "A: It is often ignored during planning.",
+          "B: It has negligible impact on policy outcomes.",
+          "C: It consistently leads to funding increases.",
+          "D: It has been fully integrated into decision-making."
+        ],
+        "correct": 0,
+        "explanation": "The passage implies that neglecting community sentiment can alienate residents and dilute intended policy impacts."
+      },
+      {
+        "id": 7,
+        "question": "What does the author suggest is essential for addressing transit challenges?",
+        "options": [
+          "A: Dismissal of user experiences",
+          "B: A fragmented approach to policy-making",
+          "C: Synthesis of user data and environmental metrics",
+          "D: Exclusive reliance on historical data"
+        ],
+        "correct": 2,
+        "explanation": "The author emphasizes the need for synthesizing data on user experiences and environmental metrics."
+      },
+      {
+        "id": 8,
+        "question": "What tone does the author adopt regarding current transit policy practices?",
+        "options": [
+          "A: Optimistic about existing frameworks",
+          "B: Critical of their shortcomings",
+          "C: Indifferent to their outcomes",
+          "D: Supportive of all past decisions"
+        ],
+        "correct": 1,
+        "explanation": "The author adopts a critical tone, discussing the shortcomings of current transit policy practices."
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the Impact of Urban Green Spaces on Mental Health in Canadian Cities",
+    "passage": "In recent years, urban planners in Canada have increasingly emphasized the importance of green spaces, particularly as studies have shown that access to parks and natural environments can significantly enhance mental health. A comprehensive report by the Canadian Institute of Mental Health outlines the multifaceted benefits of urban greenery, highlighting that increased access to parks not only alleviates stress but also fosters community cohesion. \n\nNotwithstanding these benefits, urban green spaces are often subjected to the pressures of urbanization, which can exacerbate existing inequalities in access. For instance, neighborhoods with lower socio-economic status frequently experience a stark juxtaposition of affluent areas, leading to discrepancies in green space availability. The attached diagram illustrates the distribution of parks across major Canadian cities, revealing patterns that suggest socioeconomic disparities in access.\n\nMoreover, the report advocates for policy interventions aimed at mitigating these disparities, proposing that city officials allocate resources to enhance green infrastructure in underserved communities. By implementing these strategies, Canadian cities can cultivate healthier lifestyles, thereby promoting overall well-being among their residents. Accordingly, a coordinated approach involving policymakers, community stakeholders, and urban planners is essential to ensure that the benefits of urban green spaces are equitably distributed.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the report primarily focus on regarding urban green spaces?",
+        "options": [
+          "A. Their aesthetic appeal",
+          "B. Environmental policies",
+          "C. Mental health benefits",
+          "D. Recreational facilities"
+        ],
+        "correct": 2,
+        "explanation": "The report focuses on the mental health benefits of urban green spaces."
+      },
+      {
+        "id": 2,
+        "question": "What issue does the passage imply cities face with urban green spaces?",
+        "options": [
+          "A. They are underutilized by residents",
+          "B. They are often in affluent neighborhoods",
+          "C. They can contribute to urban decay",
+          "D. They are threatened by urbanization pressures"
+        ],
+        "correct": 3,
+        "explanation": "The passage implies that urban green spaces face threats due to urbanization pressures."
+      },
+      {
+        "id": 3,
+        "question": "How does the author view socio-economic disparities in accessing parks?",
+        "options": [
+          "A. As a minor concern",
+          "B. As an inevitable consequence of urban planning",
+          "C. As a barrier to community cohesion",
+          "D. As relevant only to affluent areas"
+        ],
+        "correct": 2,
+        "explanation": "The author sees socio-economic disparities as a barrier to community cohesion."
+      },
+      {
+        "id": 4,
+        "question": "What does the attached diagram likely illustrate?",
+        "options": [
+          "A. The age demographics of park users",
+          "B. Locations of parks relative to socio-economic status",
+          "C. The number of parks in each province",
+          "D. Funding for park development"
+        ],
+        "correct": 1,
+        "explanation": "The diagram illustrates the distribution of parks relative to socio-economic status."
+      },
+      {
+        "id": 5,
+        "question": "Which action does the author advocate for in the passage?",
+        "options": [
+          "A. Reducing the size of existing parks",
+          "B. Enhancing public transportation to parks",
+          "C. Increasing funding for green infrastructure in underserved areas",
+          "D. Limiting park access to certain demographics"
+        ],
+        "correct": 2,
+        "explanation": "The author supports increasing funding for green infrastructure in underserved areas."
+      },
+      {
+        "id": 6,
+        "question": "What tone does the author convey when discussing urban greenery's benefits?",
+        "options": [
+          "A. Skeptical",
+          "B. Optimistic",
+          "C. Indifferent",
+          "D. Pessimistic"
+        ],
+        "correct": 1,
+        "explanation": "The author conveys an optimistic tone regarding the benefits of urban greenery."
+      },
+      {
+        "id": 7,
+        "question": "What can be inferred about the relationship between urban parks and residents' lifestyles?",
+        "options": [
+          "A. Parks are irrelevant to lifestyle choices",
+          "B. Parks negatively influence local economies",
+          "C. Parks are essential for promoting healthier lifestyles",
+          "D. Parks are only beneficial for physical health"
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests parks are essential for promoting healthier lifestyles."
+      },
+      {
+        "id": 8,
+        "question": "What is implied about the role of community stakeholders in the policy-making process?",
+        "options": [
+          "A. They should avoid involvement in urban planning",
+          "B. They are only consulted during emergencies",
+          "C. Their involvement is critical for equitable policy outcomes",
+          "D. They mainly focus on recreational activities"
+        ],
+        "correct": 2,
+        "explanation": "The passage implies that community stakeholders' involvement is critical for ensuring equitable policy outcomes."
+      }
+    ]
+  },
+  {
+    "title": "Toronto Housing Affordability and Policy Response",
+    "passage": "The rising costs of housing in Toronto have become a pressing issue, leading various stakeholders to propose a multitude of solutions. The diagram below outlines the relationships between housing prices, income levels, and proposed policy interventions. Notwithstanding the complexity of the housing market, it is evident from the graph that as housing prices ascend, the affordability index deteriorates, disproportionately affecting lower-income demographics. This exacerbates existing socioeconomic disparities, which necessitates a nuanced policy response. Current proposals include increasing the availability of affordable housing units, implementing rent control measures, and incentivizing the development of mixed-income neighborhoods.  \n\nFurthermore, the juxtaposition of housing supply and demand indicates that without a significant increase in the construction of affordable units, the crisis is likely to worsen. While some stakeholders advocate for deregulation to stimulate market growth, others argue that such measures might undermine necessary protections for vulnerable populations. Ultimately, the resolution to Toronto's housing affordability crisis will hinge on the collective acceptance of comprehensive strategies that balance economic growth with equitable access to housing. Policymakers must engage in collaborative dialogues to ensure that their initiatives not only address current needs but also anticipate future challenges posed by ongoing urbanization.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "According to the passage, what is primarily responsible for the decline in the affordability index?",
+        "options": [
+          "A) Increased construction of housing units",
+          "B) Rising housing prices",
+          "C) Higher income levels",
+          "D) Reduced socioeconomic disparities"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that as housing prices ascend, the affordability index deteriorates."
+      },
+      {
+        "id": 2,
+        "question": "What does the diagram suggest about the impact of proposed policy interventions?",
+        "options": [
+          "A) They will have little to no effect on housing prices",
+          "B) They may improve outcomes for lower-income populations",
+          "C) They solely focus on increasing housing supply",
+          "D) They exacerbate existing problems"
+        ],
+        "correct": 1,
+        "explanation": "The passage asserts that proposed interventions aim to address the needs of lower-income demographics."
+      },
+      {
+        "id": 3,
+        "question": "What is the author's tone towards the proposals for increasing affordable housing?",
+        "options": [
+          "A) Skeptical",
+          "B) Supportive yet cautious",
+          "C) Indifferent",
+          "D) Opposed"
+        ],
+        "correct": 1,
+        "explanation": "The author expresses cautious support for a balanced approach to housing issues."
+      },
+      {
+        "id": 4,
+        "question": "Which of the following groups might be most critical of deregulation as a policy response?",
+        "options": [
+          "A) Developers of mixed-income neighborhoods",
+          "B) Lower-income demographics",
+          "C) High-income earners",
+          "D) Urban planners"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that lower-income populations may be negatively impacted by deregulation."
+      },
+      {
+        "id": 5,
+        "question": "Why does the author emphasize the need for collaborative dialogues among policymakers?",
+        "options": [
+          "A) To ensure only affordable housing is built",
+          "B) To make quick changes in existing housing policies",
+          "C) To balance economic growth with equitable housing access",
+          "D) To reduce construction costs significantly"
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights the importance of balancing economic growth and equitable access, indicating a need for collaboration."
+      },
+      {
+        "id": 6,
+        "question": "Which factor is implied to have a synergistic effect on the housing crisis, according to the passage?",
+        "options": [
+          "A) Urbanization and increasing demand for housing",
+          "B) Construction of high-end housing units",
+          "C) Population decline in urban areas",
+          "D) Higher income levels in Toronto"
+        ],
+        "correct": 0,
+        "explanation": "The passage suggests urbanization increases demand, which worsens the housing crisis."
+      },
+      {
+        "id": 7,
+        "question": "The phrase 'existing socioeconomic disparities' primarily refers to which of the following?",
+        "options": [
+          "A) The equal distribution of income",
+          "B) Differences in wealth and access to resources",
+          "C) A lack of housing development",
+          "D) Similar housing costs across demographics"
+        ],
+        "correct": 1,
+        "explanation": "The phrase indicates the varying levels of wealth and access that exist within the population."
+      },
+      {
+        "id": 8,
+        "question": "What does the passage imply about the future of housing policy in Toronto?",
+        "options": [
+          "A) It will become simpler as more units are built",
+          "B) It will require innovative and adaptive strategies",
+          "C) It will not significantly change",
+          "D) It will focus solely on high-income earners"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates the need for comprehensive strategies to address ongoing challenges, implying future adaptability."
+      }
+    ]
+  },
+  {
+    "title": "Urban Green Spaces: Policy Recommendations for Toronto",
+    "passage": "In response to increasing urbanization, the City of Toronto has undertaken an initiative known as the Urban Biodiversity Enhancement Program (UBEP). This program aims to not only improve the ecological integrity of city green spaces but also to promote community well-being through enhanced citizen engagement and recreational opportunities. To illustrate the multifaceted approach envisaged by UBEP, consider the diagram below, which delineates the proposed allocation of funding across various initiatives over the next fiscal year. Notwithstanding the anticipated benefits, there remains a pressing concern regarding the potential exacerbation of socio-economic disparities in neighborhoods that are not prioritized within this framework. \n\nThe funding allocation is projected to be primarily distributed among three main areas: ecological restoration (40%), community gardens (30%), and educational programs concerning urban biodiversity (30%). The juxtaposition of ecological restoration with community engagement initiatives underscores the program’s holistic vision. However, critiques emphasize that without a robust evaluation mechanism, the successes of these interventions could remain inadequately measured. Furthermore, stakeholders argue for the necessity of integrating feedback loops that ensure all communities, particularly marginalized ones, have representation in decision-making processes, thereby fostering inclusive urban planning. Consequently, the implications of UBEP extend beyond mere funding allocations, compelling policymakers to confront the underlying socio-economic challenges that define Toronto’s urban landscape.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary objective of the Urban Biodiversity Enhancement Program (UBEP)?",
+        "options": [
+          "A. To increase urban biodiversity",
+          "B. To enhance community engagement and well-being",
+          "C. To develop new recreational facilities",
+          "D. To evaluate socio-economic disparities"
+        ],
+        "correct": 1,
+        "explanation": "The primary objective of UBEP is to improve ecological integrity and promote community well-being."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what percentage of the funding is allocated to ecological restoration?",
+        "options": [
+          "A. 30%",
+          "B. 40%",
+          "C. 50%",
+          "D. 60%"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that 40% of the funding is allocated to ecological restoration."
+      },
+      {
+        "id": 3,
+        "question": "What concern does the author raise about the allocation of funding?",
+        "options": [
+          "A. It might not support educational programs",
+          "B. It could exacerbate socio-economic disparities",
+          "C. It lacks community engagement",
+          "D. It is insufficient for ecological restoration"
+        ],
+        "correct": 1,
+        "explanation": "The passage mentions the concern of exacerbating socio-economic disparities in less prioritized neighborhoods."
+      },
+      {
+        "id": 4,
+        "question": "How does the author view the relationship between ecological restoration and community engagement in the UBEP?",
+        "options": [
+          "A. They are independent of each other",
+          "B. They are conflicting initiatives",
+          "C. They are complementary aspects of the program",
+          "D. They detract from each other's success"
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights that ecological restoration and community engagement are complementary within the program's holistic vision."
+      },
+      {
+        "id": 5,
+        "question": "What implication does the author suggest regarding the evaluation of UBEP's interventions?",
+        "options": [
+          "A. They may be overly ambitious",
+          "B. They could remain inadequately measured",
+          "C. They should focus solely on ecological outcomes",
+          "D. They will undoubtedly be successful"
+        ],
+        "correct": 1,
+        "explanation": "The author indicates that without a robust evaluation mechanism, the successes of the interventions might not be adequately measured."
+      },
+      {
+        "id": 6,
+        "question": "What does the term 'feedback loops' refer to in the context of the passage?",
+        "options": [
+          "A. Mechanisms for evaluating community engagement",
+          "B. Cycles of funding allocation",
+          "C. Processes for integrating community input into planning",
+          "D. Steps for improving ecological assessments"
+        ],
+        "correct": 2,
+        "explanation": "In this context, 'feedback loops' refers to processes that ensure community input is included in decision-making."
+      },
+      {
+        "id": 7,
+        "question": "What does the author imply about the stakeholders' views on urban planning?",
+        "options": [
+          "A. They believe it functions well as it is",
+          "B. They advocate for more citizen involvement",
+          "C. They prioritize ecological outcomes over social aspects",
+          "D. They view funding as the only solution"
+        ],
+        "correct": 1,
+        "explanation": "The author implies that stakeholders are calling for more citizen involvement in urban planning processes."
+      },
+      {
+        "id": 8,
+        "question": "What tone does the author convey regarding the challenges faced by the UBEP?",
+        "options": [
+          "A. Optimistic and supportive",
+          "B. Critical and skeptical",
+          "C. Indifferent and dismissive",
+          "D. Neutral and unbiased"
+        ],
+        "correct": 1,
+        "explanation": "The author expresses a critical tone, especially regarding the need to address socio-economic challenges in the program."
+      }
+    ]
+  },
+  {
+    "title": "City of Vancouver’s Green Infrastructure Plan",
+    "passage": "The City of Vancouver has introduced an innovative Green Infrastructure Plan aimed at mitigating urban flooding, enhancing biodiversity, and promoting community resilience. This plan is pivotal, especially in the context of climate change, which exacerbates existing environmental challenges. The diagram below illustrates three core components of this initiative: Rainwater Management Systems, Green Spaces, and Biodiversity Corridors. Each component is interconnected, with the Rainwater Management Systems designed to capture and manage stormwater runoff effectively, thereby reducing the incidence of flooding. Meanwhile, Green Spaces not only provide recreational areas for residents but also serve to absorb excess rainfall, contributing to the city’s strategy to increase pervious surfaces. Furthermore, Biodiversity Corridors are crucial as they facilitate the movement of wildlife between fragmented habitats, thus promoting ecological balance. The city anticipates that, through the implementation of these components, it will foster a sustainable urban environment that supports both human and ecological needs. Notwithstanding these efforts, challenges remain, particularly in securing adequate funding and public engagement. These elements must be carefully juxtaposed with the city's growth objectives to ensure that sustainability is not compromised in the pursuit of urban development.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary aim of Vancouver’s Green Infrastructure Plan?",
+        "options": [
+          "A. To increase urban development",
+          "B. To manage stormwater and enhance biodiversity",
+          "C. To reduce recreational areas",
+          "D. To eliminate flooding completely"
+        ],
+        "correct": 1,
+        "explanation": "The plan aims to mitigate flooding while enhancing biodiversity, not solely to eliminate flooding."
+      },
+      {
+        "id": 2,
+        "question": "How do Green Spaces contribute to the city’s infrastructure plan?",
+        "options": [
+          "A. By providing areas for wildlife only",
+          "B. Through increased development density",
+          "C. By absorbing excess rainfall and offering recreation",
+          "D. By reducing public engagement in urban development"
+        ],
+        "correct": 2,
+        "explanation": "Green Spaces have dual roles in absorbing rainwater and providing recreational areas."
+      },
+      {
+        "id": 3,
+        "question": "Which challenge is highlighted in the passage regarding the plan’s implementation?",
+        "options": [
+          "A. Excess rainfall",
+          "B. Public engagement and funding",
+          "C. Inadequate green spaces",
+          "D. Increased flooding incidents"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically mentions challenges in securing funding and engaging the public."
+      },
+      {
+        "id": 4,
+        "question": "What is the relationship between the components of the Green Infrastructure Plan?",
+        "options": [
+          "A. They operate independently of each other",
+          "B. They are interdependent and support one another",
+          "C. They compete for resources",
+          "D. They focus on unrelated environmental issues"
+        ],
+        "correct": 1,
+        "explanation": "The components are designed to be interconnected, enhancing their overall effectiveness."
+      },
+      {
+        "id": 5,
+        "question": "What does the author imply about the importance of Biodiversity Corridors?",
+        "options": [
+          "A. They are secondary to urban growth needs",
+          "B. They are essential for ecological balance",
+          "C. They primarily serve recreational functions",
+          "D. They do not align with urban development plans"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that Biodiversity Corridors are crucial for facilitating wildlife movement and ecological balance."
+      },
+      {
+        "id": 6,
+        "question": "Why is the city's approach considered innovative?",
+        "options": [
+          "A. It solely emphasizes building more infrastructure",
+          "B. It integrates multiple environmental strategies into urban planning",
+          "C. It prioritizes development over environmental concerns",
+          "D. It focuses exclusively on aesthetic improvements"
+        ],
+        "correct": 1,
+        "explanation": "The plan's integration of various components showcases its innovative approach to urban planning."
+      },
+      {
+        "id": 7,
+        "question": "What can one infer about the author’s perspective on climate change?",
+        "options": [
+          "A. It is a minor issue for urban planning",
+          "B. It necessitates a multifaceted response",
+          "C. It has no relation to urban flooding",
+          "D. It is entirely manageable with existing infrastructure"
+        ],
+        "correct": 1,
+        "explanation": "The author presents climate change as a significant issue requiring a comprehensive response."
+      },
+      {
+        "id": 8,
+        "question": "Which of the following best describes the author's tone regarding the Green Infrastructure Plan?",
+        "options": [
+          "A. Indifferent",
+          "B. Critical",
+          "C. Supportive yet cautious",
+          "D. Dismissive of public concerns"
+        ],
+        "correct": 2,
+        "explanation": "The author expresses support for the plan while also cautioning about the challenges it faces."
+      }
+    ]
+  },
+  {
+    "title": "Urban Resilience Strategy: A Framework for Toronto",
+    "passage": "The urban landscape of Toronto faces numerous challenges, including climate change, population growth, and infrastructural decay. To address these issues effectively, the City of Toronto has developed an Urban Resilience Strategy, which outlines a multi-faceted approach aimed at enhancing the city's adaptability to future uncertainties. The strategy emphasizes the importance of robust infrastructure and community engagement as pivotal elements in fostering resilience. \n\nThe accompanying diagram illustrates the core components of the strategy, which include: (1) Sustainable Infrastructure Development, (2) Climate Adaptation Planning, (3) Community Preparedness Programs, and (4) Policy Integration Framework. Notwithstanding the ambitious nature of this initiative, critics argue that the proposed measures may inadvertently exacerbate existing inequalities among vulnerable populations if not implemented equitably. For instance, while the installation of green roofs may benefit affluent neighborhoods, marginalized areas might continue to suffer from inadequate resources. \n\nJuxtaposed with similar initiatives in Vancouver and Montreal, Toronto's framework appears comprehensive, yet it is imperative that the city prioritizes inclusivity to transcend socio-economic barriers. As stakeholders engage in discussions, ongoing assessments will ensure that the objectives align with the evolving needs of Toronto’s diverse communities. Ultimately, the success of this strategy hinges not only on active participation from residents but also on the continuous monitoring and adaptation of policies to uphold the city’s resilience against emerging challenges.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of Toronto’s Urban Resilience Strategy?",
+        "options": [
+          "A. To improve transit systems",
+          "B. To enhance urban adaptability",
+          "C. To increase housing availability",
+          "D. To promote tourism"
+        ],
+        "correct": 1,
+        "explanation": "The strategy is focused on enhancing urban adaptability to face challenges."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, how might the Urban Resilience Strategy exacerbate existing inequalities?",
+        "options": [
+          "A. By improving transportation in wealthy areas",
+          "B. By neglecting infrastructure in marginalized neighborhoods",
+          "C. By only focusing on green technology",
+          "D. By increasing housing prices"
+        ],
+        "correct": 1,
+        "explanation": "The passage highlights concerns that affluent neighborhoods may benefit more than marginalized ones."
+      },
+      {
+        "id": 3,
+        "question": "Which component of the strategy relates directly to community involvement?",
+        "options": [
+          "A. Climate Adaptation Planning",
+          "B. Community Preparedness Programs",
+          "C. Sustainable Infrastructure Development",
+          "D. Policy Integration Framework"
+        ],
+        "correct": 1,
+        "explanation": "Community Preparedness Programs are explicitly aimed at engaging residents."
+      },
+      {
+        "id": 4,
+        "question": "What does the juxtaposition with Vancouver and Montreal indicate about Toronto's approach?",
+        "options": [
+          "A. It is more advanced than both cities.",
+          "B. It lacks comparison and needs improvement.",
+          "C. It is comprehensive yet needs to be inclusive.",
+          "D. It has no unique elements."
+        ],
+        "correct": 2,
+        "explanation": "The passage suggests that while comprehensive, Toronto must also prioritize inclusivity."
+      },
+      {
+        "id": 5,
+        "question": "What critical aspect is highlighted regarding the engagement of stakeholders?",
+        "options": [
+          "A. Their financial backing is essential.",
+          "B. Continuous assessment is necessary for effectiveness.",
+          "C. They should be limited to city officials.",
+          "D. Their role is secondary to policy adjustments."
+        ],
+        "correct": 1,
+        "explanation": "The need for ongoing assessments to align objectives indicates their crucial role."
+      },
+      {
+        "id": 6,
+        "question": "What implication can be drawn about the resilience strategy's timeline?",
+        "options": [
+          "A. It should act quickly without research.",
+          "B. It must adapt to evolving community needs.",
+          "C. It is based solely on historical data.",
+          "D. It does not require future evaluations."
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the necessity for policies to adapt to the changing needs of communities."
+      },
+      {
+        "id": 7,
+        "question": "How does the author convey the tone regarding the strategy's implementation?",
+        "options": [
+          "A. Optimistic about immediate results.",
+          "B. Cautiously optimistic but critically aware.",
+          "C. Indifferent to potential outcomes.",
+          "D. Completely negative about the approach."
+        ],
+        "correct": 1,
+        "explanation": "The use of phrases like 'critical concerns' reflects a cautiously optimistic tone."
+      },
+      {
+        "id": 8,
+        "question": "The overall effectiveness of the Urban Resilience Strategy is contingent upon which of the following aspects?",
+        "options": [
+          "A. Historic precedents in other cities.",
+          "B. The financial support from federal government.",
+          "C. Involvement and participation of the community.",
+          "D. Strict regulation of the private sector."
+        ],
+        "correct": 2,
+        "explanation": "The passage explicitly states that the strategy's success relies on active community participation."
+      }
+    ]
+  },
+  {
+    "title": "Impact of Urban Green Spaces on Mental Health in Toronto",
+    "passage": "In recent years, urban planners in Toronto have increasingly recognized the significance of green spaces in enhancing the overall well-being of residents. Notwithstanding financial constraints, the city has initiated several projects aimed at integrating parks and recreational areas into densely populated neighborhoods. A recent report by the Toronto Public Health Department elucidates the correlation between access to parkland and reduced levels of stress and anxiety among urban dwellers. Importantly, the data juxtaposes neighborhoods with ample green areas against those characterized by concrete dominance, revealing that residents in the former group report significantly higher levels of psychological well-being. \n\nNevertheless, merely increasing the number of parks is insufficient; the quality of these green spaces is paramount. The report suggests that features such as walking paths, natural landscaping, and community gardens exacerbate the positive effects on mental health. Furthermore, engagement opportunities—such as workshops and social gatherings—within these parks foster a sense of community, which is crucial for alleviating feelings of isolation often found in urban settings. As such, policymakers must consider not only the expansion of green spaces but also their design and community utilization to effectively contribute to mental health improvement in Toronto’s diverse populations. The accompanying diagram illustrates the proposed locations for future green space development, alongside anticipated mental health outcomes based on varying design strategies.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of urban planners in Toronto as discussed in the passage?",
+        "options": [
+          "A) Expanding residential areas",
+          "B) Enhancing green spaces",
+          "C) Increasing healthcare facilities",
+          "D) Reducing traffic congestion"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the importance of green spaces in urban planning for mental health."
+      },
+      {
+        "id": 2,
+        "question": "According to the Toronto Public Health Department's report, which of the following is a significant benefit of green spaces?",
+        "options": [
+          "A) Higher economic activity",
+          "B) Increased levels of social media usage",
+          "C) Reduced stress and anxiety",
+          "D) Lowering educational achievement"
+        ],
+        "correct": 2,
+        "explanation": "The report highlights the correlation between green spaces and reduced levels of stress and anxiety."
+      },
+      {
+        "id": 3,
+        "question": "Which factor does the passage imply is essential for maximizing the benefits of urban green spaces?",
+        "options": [
+          "A) Accessibility of public transport",
+          "B) Quality and design of the parks",
+          "C) Proximity to commercial centers",
+          "D) Size of the parks"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that the quality of green spaces is crucial for their positive impact on mental health."
+      },
+      {
+        "id": 4,
+        "question": "What role do community engagement opportunities in parks play according to the passage?",
+        "options": [
+          "A) They increase the noise levels",
+          "B) They foster a sense of community",
+          "C) They solely focus on recreational activities",
+          "D) They are not mentioned as important"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that engagement opportunities foster a sense of community, which helps alleviate feelings of isolation."
+      },
+      {
+        "id": 5,
+        "question": "What does the report suggest needs to be considered alongside the expansion of green spaces?",
+        "options": [
+          "A) Financial investments from private sectors",
+          "B) The design and community utilization of these spaces",
+          "C) Operational hours of the parks",
+          "D) Architectural styles of nearby buildings"
+        ],
+        "correct": 1,
+        "explanation": "The report advises that both design and community utilization are essential for maximizing the impact of green spaces on mental health."
+      },
+      {
+        "id": 6,
+        "question": "Which statement can be inferred about the urban environment in neighborhoods with fewer green spaces?",
+        "options": [
+          "A) Residents enjoy higher levels of psychological well-being",
+          "B) There is increased psychological distress among residents",
+          "C) There are more social gatherings",
+          "D) Urban planners are more active in those areas"
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that neighborhoods dominated by concrete experience more psychological distress compared to those with ample green areas."
+      },
+      {
+        "id": 7,
+        "question": "Based on the passage, what is the likely purpose of the accompanying diagram?",
+        "options": [
+          "A) To outline funding sources for park development",
+          "B) To depict locations for future green spaces and mental health outcomes",
+          "C) To illustrate architectural designs for urban areas",
+          "D) To show public transport routes near green spaces"
+        ],
+        "correct": 1,
+        "explanation": "The diagram is mentioned as illustrating proposed locations for green space development and anticipated mental health outcomes."
+      },
+      {
+        "id": 8,
+        "question": "How does the author's tone reflect the challenges faced in urban planning regarding green spaces?",
+        "options": [
+          "A) Optimistic about finding solutions",
+          "B) Indifferent towards public health",
+          "C) Pessimistic about funding",
+          "D) Neutral in discussing design"
+        ],
+        "correct": 0,
+        "explanation": "The author's tone suggests an optimistic outlook while acknowledging challenges, especially financial constraints, in enhancing urban green spaces."
+      }
+    ]
+  },
+  {
+    "title": "Understanding the Municipal Solid Waste Management Strategy of Toronto",
+    "passage": "Toronto, one of Canada’s most populous cities, has been facing an escalating challenge in managing its municipal solid waste (MSW). Despite the implementation of various waste diversion initiatives since the early 2000s, the city continues to confront significant obstacles, particularly in the context of increasing waste generation rates and limited landfill space. The accompanying chart illustrates the distribution of waste management methods employed by Toronto in 2022, juxtaposing recycling, composting, and landfill disposal methods. Approximately 50% of waste was diverted from landfills, which, despite being commendable, falls short of the municipal target of 70% diversion by 2026. Notwithstanding these achievements, the challenge persists; the growing population exacerbates the situation, affecting both the operational capacity of waste management facilities and the public’s engagement in proper waste sorting practices. Policy makers are thus compelled to revisit the existing strategy, emphasizing not only the improvement of infrastructural capabilities but also the enhancement of public education regarding waste separation. In addition, new technological solutions, such as waste-to-energy processes, are under consideration to optimize resource recovery while minimizing landfill reliance. The diagram below succinctly synthesizes the proposed components of an enhanced waste management strategy, delineating key actions, expected outcomes, and timelines for implementation, which aim to address the multifaceted nature of waste management in Toronto moving forward.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary issue Toronto is facing regarding municipal solid waste?",
+        "options": [
+          "A) Excessive recycling rates",
+          "B) Limited landfill space",
+          "C) Inadequate public education",
+          "D) Insufficient technological solutions"
+        ],
+        "correct": 1,
+        "explanation": "The passage specifically mentions that limited landfill space is one of the significant challenges."
+      },
+      {
+        "id": 2,
+        "question": "Which waste management method accounted for the largest share in Toronto's 2022 waste management?",
+        "options": [
+          "A) Landfill disposal",
+          "B) Composting",
+          "C) Recycling",
+          "D) Waste-to-energy"
+        ],
+        "correct": 0,
+        "explanation": "The chart implicitly suggests landfill disposal remains a significant portion since only 50% was diverted."
+      },
+      {
+        "id": 3,
+        "question": "What is the municipal target for waste diversion by 2026 mentioned in the passage?",
+        "options": [
+          "A) 50%",
+          "B) 60%",
+          "C) 70%",
+          "D) 80%"
+        ],
+        "correct": 2,
+        "explanation": "The text states that the target is 70% diversion by 2026."
+      },
+      {
+        "id": 4,
+        "question": "What factors are contributing to the challenges in waste management according to the passage?",
+        "options": [
+          "A) Decreased population and increased recycling",
+          "B) Increasing waste and public disengagement",
+          "C) Technological advancements and education improvements",
+          "D) Political debates and policy revisions"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that increasing waste generation and limited public engagement exacerbate the situation."
+      },
+      {
+        "id": 5,
+        "question": "What does the author imply about the role of public education in waste management?",
+        "options": [
+          "A) It is the primary solution to all challenges.",
+          "B) It is essential for improving waste sorting practices.",
+          "C) It is less important than technological solutions.",
+          "D) It has been already achieved successfully."
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the need for enhancing public education to improve waste sorting."
+      },
+      {
+        "id": 6,
+        "question": "Which of the following components is NOT suggested as part of the enhanced waste management strategy?",
+        "options": [
+          "A) Waste-to-energy processes",
+          "B) Increased landfill capacity",
+          "C) Public education improvements",
+          "D) Infrastructure enhancements"
+        ],
+        "correct": 1,
+        "explanation": "Increased landfill capacity is not mentioned as a solution; the focus is on diversion and new technologies."
+      },
+      {
+        "id": 7,
+        "question": "What tone does the author employ when discussing the waste management situation in Toronto?",
+        "options": [
+          "A) Alarmist and pessimistic",
+          "B) Optimistic yet realistic",
+          "C) Dismissive and indifferent",
+          "D) Theoretical and abstract"
+        ],
+        "correct": 1,
+        "explanation": "The author presents a balanced view, acknowledging achievements while realistically addressing ongoing challenges."
+      },
+      {
+        "id": 8,
+        "question": "In the context of waste management, how does the author characterize technological solutions?",
+        "options": [
+          "A) As the singular solution to all issues",
+          "B) As an enhancement to current practices",
+          "C) As impractical and unrealistic",
+          "D) As a supplementary measure only"
+        ],
+        "correct": 1,
+        "explanation": "The author discusses technological solutions as a consideration for optimizing resource recovery."
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Green Spaces on Public Health",
+    "passage": "Urban green spaces, such as parks and gardens, play a pivotal role in enhancing public health outcomes in Canadian cities, not only providing recreational opportunities but also facilitating a range of ecosystem services. According to recent studies conducted by the University of Toronto, there is a notable correlation between access to green spaces and reduced rates of anxiety and depression among city dwellers. The data indicate that individuals residing within a 500-meter radius of green areas exhibit significantly lower stress levels compared to those who live farther away. Moreover, the presence of greenery has been linked to improved physical health metrics, including lower blood pressure and increased physical activity levels.\n\nNevertheless, the challenge remains that urban development often exacerbates the decline of accessible green spaces. Infilling and commercial development can lead to a stark juxtaposition of buildings and green areas, ultimately reducing the overall accessibility that is crucial for maintaining these health benefits. Policymakers are thus urged to take a more holistic approach in urban planning, ensuring that green infrastructure is prioritized amidst the pressures of urban expansion. Furthermore, initiatives that promote community engagement in the maintenance and development of these spaces are essential, as they not only enhance community cohesion but also increase the emotional investment of residents in their local environments. Hence, strategic planning and community involvement are fundamental to the sustenance of urban green spaces and their associated health benefits.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the passage?",
+        "options": [
+          "A: The benefits of urban architecture",
+          "B: The role of green spaces in health",
+          "C: The impact of urban infilling",
+          "D: The importance of community engagement"
+        ],
+        "correct": 1,
+        "explanation": "The passage primarily discusses how urban green spaces contribute to public health."
+      },
+      {
+        "id": 2,
+        "question": "According to the studies mentioned, what distance to green spaces correlates with lower stress levels?",
+        "options": [
+          "A: 250 meters",
+          "B: 500 meters",
+          "C: 1 kilometer",
+          "D: 2 kilometers"
+        ],
+        "correct": 1,
+        "explanation": "The text specifies a 500-meter radius as significant for reduced stress levels."
+      },
+      {
+        "id": 3,
+        "question": "What negative effect does urban development have on green spaces, according to the passage?",
+        "options": [
+          "A: It reduces recreational opportunities",
+          "B: It increases accessibility",
+          "C: It enhances physical health metrics",
+          "D: It exacerbates their decline"
+        ],
+        "correct": 3,
+        "explanation": "The passage indicates that urban development exacerbates the decline of accessible green spaces."
+      },
+      {
+        "id": 4,
+        "question": "What dual role do parks play as highlighted in the passage?",
+        "options": [
+          "A: They are purely recreational areas",
+          "B: They provide ecosystem services and recreation",
+          "C: They solely enhance community cohesion",
+          "D: They are centers of commercial development"
+        ],
+        "correct": 1,
+        "explanation": "Parks are noted for both recreational opportunities and providing ecosystem services."
+      },
+      {
+        "id": 5,
+        "question": "How does the author suggest policymakers should act regarding urban planning?",
+        "options": [
+          "A: By prioritizing commercial development",
+          "B: By advocating for reduced green spaces",
+          "C: By taking a holistic approach to include green infrastructure",
+          "D: By discouraging community involvement"
+        ],
+        "correct": 2,
+        "explanation": "The author advocates for a holistic approach that prioritizes green infrastructure amid urban expansion."
+      },
+      {
+        "id": 6,
+        "question": "What underlying assumption can be inferred about community engagement from the passage?",
+        "options": [
+          "A: It is unnecessary for the maintenance of parks",
+          "B: It fosters emotional investment in green spaces",
+          "C: It is primarily driven by policymakers",
+          "D: It leads to increased commercial development"
+        ],
+        "correct": 1,
+        "explanation": "The passage implies that community engagement enhances emotional investment in green spaces."
+      },
+      {
+        "id": 7,
+        "question": "What does the term 'juxtaposition' imply in the context of the passage?",
+        "options": [
+          "A: The blending of green spaces within urban areas",
+          "B: The contrasting figures of health outcomes",
+          "C: The parallel growth of commercial and green spaces",
+          "D: The stark contrast between buildings and green areas"
+        ],
+        "correct": 3,
+        "explanation": "Juxtaposition in this context highlights the stark contrast between developed areas and green spaces."
+      },
+      {
+        "id": 8,
+        "question": "What tone does the author take toward the current state of urban green spaces?",
+        "options": [
+          "A: Indifferent",
+          "B: Optimistic",
+          "C: Critical",
+          "D: Disinterested"
+        ],
+        "correct": 2,
+        "explanation": "The author expresses a critical view regarding the reduction and lack of accessible urban green spaces."
+      }
+    ]
+  },
+  {
+    "title": "Public Transit Usage in Toronto: A Comparative Analysis",
+    "passage": "In an effort to address escalating congestion, the City of Toronto has implemented a comprehensive public transit strategy intended to mitigate traffic-related challenges. Recent studies illustrate a dichotomy in transit usage between urban and suburban populations. Data obtained from the Toronto Transit Commission (TTC) reveals that while urban residents exhibit a reliance on public transport, suburban residents demonstrate a predominant preference for private vehicles. Notwithstanding the efforts to expand transit infrastructure, including the proposed Eglinton Crosstown LRT, the lack of integration between suburban and urban transit systems exacerbates this disparity. \n\nThe accompanying diagram illustrates a detailed analysis of commuting patterns based on a survey conducted in 2023. Notably, urban dwellers' usage of public transport accounts for approximately 70% of their commuting habits, juxtaposed with a mere 30% among their suburban counterparts. Influencing factors, such as accessibility and frequency of service, appear pivotal in shaping these trends. Moreover, strategies aimed at enhancing transit service frequency might significantly alter the commuting preferences observed among suburban residents. Policymakers are urged to consider these findings to create a cohesive strategy that not only bolsters public transit appeal but also addresses the broader implications of regional connectivity. In light of this analysis, it is imperative that future developments emphasize not merely infrastructure expansion but also the integration of transit modalities to foster sustainable commuting practices.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What key issue does the City of Toronto's public transit strategy aim to address?",
+        "options": [
+          "A) Environmental sustainability",
+          "B) Escalating congestion",
+          "C) Economic growth",
+          "D) Urban development"
+        ],
+        "correct": 1,
+        "explanation": "The passage explicitly states that the strategy is implemented to address escalating congestion."
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what is the public transit usage of urban residents in Toronto?",
+        "options": [
+          "A) 50%",
+          "B) 60%",
+          "C) 70%",
+          "D) 80%"
+        ],
+        "correct": 2,
+        "explanation": "The passage mentions that urban dwellers' usage of public transport accounts for approximately 70% of their commuting habits."
+      },
+      {
+        "id": 3,
+        "question": "What factor appears to significantly influence suburban residents' preference for private vehicles?",
+        "options": [
+          "A) Cost of public transportation",
+          "B) Frequency of service",
+          "C) Urban population density",
+          "D) Availability of parking"
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that factors such as accessibility and frequency of service shape commuting preferences."
+      },
+      {
+        "id": 4,
+        "question": "What does the diagram aim to illustrate?",
+        "options": [
+          "A) The projects planned for public transit expansion",
+          "B) A comparison of urban and suburban commuting patterns",
+          "C) Financial implications of public transit usage",
+          "D) Historical trends in traffic congestion"
+        ],
+        "correct": 1,
+        "explanation": "The passage states that the diagram illustrates a detailed analysis of commuting patterns based on the survey conducted."
+      },
+      {
+        "id": 5,
+        "question": "Which statement best describes the author's tone regarding public transit strategies?",
+        "options": [
+          "A) Indifferent",
+          "B) Critical",
+          "C) Cautious",
+          "D) Proactive"
+        ],
+        "correct": 3,
+        "explanation": "The author encourages policymakers to consider the findings and create cohesive strategies, indicating a proactive tone."
+      },
+      {
+        "id": 6,
+        "question": "What is one potential outcome of enhancing transit service frequency mentioned in the passage?",
+        "options": [
+          "A) Increase in urban development",
+          "B) Change in commuting preferences among suburban residents",
+          "C) Greater financial investment in infrastructure",
+          "D) Decrease in vehicle ownership"
+        ],
+        "correct": 1,
+        "explanation": "The passage suggests that enhancing service frequency might significantly alter commuting preferences among suburban residents."
+      },
+      {
+        "id": 7,
+        "question": "How does the author view the future of public transit development?",
+        "options": [
+          "A) Solely focused on infrastructure expansion",
+          "B) Necessitating integration of transit modalities",
+          "C) Ignoring existing commuter habits",
+          "D) Largely dependent on cost factors"
+        ],
+        "correct": 1,
+        "explanation": "The author emphasizes the importance of integrating transit modalities for sustainable commuting practices."
+      },
+      {
+        "id": 8,
+        "question": "What implication does the author draw regarding regional connectivity?",
+        "options": [
+          "A) It is secondary to urban transit improvements",
+          "B) It is crucial for fostering sustainable practices",
+          "C) It should not involve suburban populations",
+          "D) It is irrelevant to the current public transit discussions"
+        ],
+        "correct": 1,
+        "explanation": "The author points out the necessity to address broader implications of regional connectivity."
+      }
+    ]
+  },
+  {
+    "title": "Understanding Urban Transit Policy in Vancouver",
+    "passage": "The city of Vancouver has recently undertaken a comprehensive evaluation of its public transit policy, specifically investigating the impact of the proposed SkyTrain extensions on local commutes. The accompanying diagram illustrates the projected changes in average commute times across various neighborhoods over the next five years. Notwithstanding the anticipated benefits of increased accessibility, critics argue that these extensions could exacerbate existing traffic congestion in key areas. Moreover, the juxtaposition of projected transit ridership against urban growth forecasts reveals a potential mismatch between supply and demand.\n\nSeveral local stakeholders, including community organizations and urban planners, have submitted feedback highlighting the importance of integrating cycling infrastructure with transit expansions. Such integration, they argue, would minimize the risk of overwhelming the existing public transit system while promoting sustainable transportation practices. In this context, the schedule outlines the timeline for public consultations, commencing in June and concluding in December, aimed at gathering extensive community input.\n\nThus, while the proposed transit improvements ostensibly aim to enhance connectivity and alleviate congestion, the final implementation will heavily depend on the outcomes of community engagement sessions and the effectiveness of proposed solutions to balance transit demand with urban sustainability goals.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the Vancouver public transit policy evaluation?",
+        "options": [
+          "A) The environmental impact of transit expansions",
+          "B) The projected changes in commute times",
+          "C) The budget allocation for the SkyTrain",
+          "D) The historical development of public transit"
+        ],
+        "correct": 1,
+        "explanation": "The passage primarily discusses the projected changes in average commute times due to SkyTrain extensions."
+      },
+      {
+        "id": 2,
+        "question": "Which criticism is levied against the SkyTrain extensions?",
+        "options": [
+          "A) They will increase accessibility for cyclists",
+          "B) They may worsen existing traffic congestion",
+          "C) They are economically unsustainable",
+          "D) They may reduce public transit demand"
+        ],
+        "correct": 1,
+        "explanation": "Critics claim that the extensions could exacerbate existing traffic congestion in key areas."
+      },
+      {
+        "id": 3,
+        "question": "What does the juxtaposition of transit ridership and urban growth forecasts suggest?",
+        "options": [
+          "A) A harmonious balance between supply and demand",
+          "B) A hopeful outlook for future transit users",
+          "C) A potential disconnect that could lead to issues",
+          "D) A guaranteed increase in transit funding"
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates a potential mismatch between projected ridership and urban growth forecasts."
+      },
+      {
+        "id": 4,
+        "question": "How do local stakeholders propose to enhance the transit system?",
+        "options": [
+          "A) By reducing the number of public consultations",
+          "B) By integrating cycling infrastructure with transit",
+          "C) By increasing funding for the SkyTrain project",
+          "D) By limiting accessibility for certain neighborhoods"
+        ],
+        "correct": 1,
+        "explanation": "Local stakeholders emphasize the integration of cycling infrastructure to improve the transit system and sustainability."
+      },
+      {
+        "id": 5,
+        "question": "What is the purpose of the public consultations outlined in the schedule?",
+        "options": [
+          "A) To implement immediate changes to the transit policy",
+          "B) To gather input from the community",
+          "C) To finalize transit budgets",
+          "D) To assess the historical performance of transit routes"
+        ],
+        "correct": 1,
+        "explanation": "The consultations aim to gather extensive community input regarding the transit expansions."
+      },
+      {
+        "id": 6,
+        "question": "Based on the tone of the passage, how might the author feel about the proposed transit improvements?",
+        "options": [
+          "A) They are entirely optimistic about the outcomes",
+          "B) They recognize potential complications and community concerns",
+          "C) They believe the project should be halted immediately",
+          "D) They are indifferent to the community's feedback"
+        ],
+        "correct": 1,
+        "explanation": "The author acknowledges both the anticipated benefits and the criticisms surrounding the project."
+      },
+      {
+        "id": 7,
+        "question": "What could be inferred about the timeline for public consultations?",
+        "options": [
+          "A) They will be conducted after the project is completed",
+          "B) They are designed to ensure community voices are included",
+          "C) They are primarily for local businesses only",
+          "D) They will not influence the final decision on the transit policy"
+        ],
+        "correct": 1,
+        "explanation": "The timeline indicates a deliberate effort to incorporate community feedback before finalizing the transit plan."
+      },
+      {
+        "id": 8,
+        "question": "What underlying issue does the passage highlight regarding urban transit development?",
+        "options": [
+          "A) The reliance on private transportation",
+          "B) The challenges of matching demand with sustainable growth",
+          "C) The historical inefficacy of public transit systems",
+          "D) The advantages of excluding community input"
+        ],
+        "correct": 1,
+        "explanation": "The passage discusses the challenge of balancing transit demand with urban sustainability goals, a key issue in transit development."
+      }
+    ]
+  },
+  {
+    "title": "Adaptation of Urban Infrastructure to Climate Change",
+    "passage": "As Canadian cities grapple with the ramifications of climate change, municipal policymakers are increasingly compelled to revisit existing urban infrastructure. The accompanying diagram illustrates the projected impact of climate-related events on various types of infrastructure in three major urban centers: Toronto, Vancouver, and Montreal. Notwithstanding the unique geographical contexts of these cities, common vulnerabilities have been identified, notably in transportation networks and water management systems, which may exacerbate public safety risks. \n\nIn Toronto, for example, the increased frequency of heavy rainfall events necessitates an urgent review of stormwater drainage capacities. Conversely, Vancouver's coastal position makes it susceptible to sea-level rise, thereby demanding adaptive measures for waterfront developments. Meanwhile, Montreal's aging infrastructure, juxtaposed with rising temperatures, poses significant challenges to both energy consumption and public health. \n\nWhile the diagram delineates these impacts categorically, the synthesis of information across the three cities reveals a pressing need for collaborative policy frameworks. Municipal officials must align their strategies not only within their local contexts but also with overarching federal guidelines that promote sustainable urban resilience. The successful adaptation hinges upon the integration of technological advancements and community engagement initiatives, thereby ensuring that infrastructure investments are both responsive and anticipatory.",
+    "difficulty": "advanced",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which Canadian city faces the greatest risk of flooding according to the passage?",
+        "options": [
+          "A. Toronto",
+          "B. Vancouver",
+          "C. Montreal",
+          "D. Ottawa"
+        ],
+        "correct": 1,
+        "explanation": "Vancouver is specifically noted for its susceptibility to sea-level rise, which can lead to flooding."
+      },
+      {
+        "id": 2,
+        "question": "What central theme is illustrated by the diagram referenced in the passage?",
+        "options": [
+          "A. The effectiveness of current infrastructure",
+          "B. Projected climate change impacts on urban infrastructure",
+          "C. Historical weather patterns in Canada",
+          "D. Specific technological advancements in cities"
+        ],
+        "correct": 1,
+        "explanation": "The diagram specifically illustrates projected impacts of climate-related events on infrastructure across cities."
+      },
+      {
+        "id": 3,
+        "question": "How might Montreal's aging infrastructure influence public health according to the passage?",
+        "options": [
+          "A. It improves energy efficiency.",
+          "B. It increases energy consumption.",
+          "C. It requires fewer repairs.",
+          "D. It supports heat resilience."
+        ],
+        "correct": 1,
+        "explanation": "The passage indicates that aging infrastructure poses significant challenges to energy consumption, impacting public health."
+      },
+      {
+        "id": 4,
+        "question": "According to the passage, what is one implied necessity for effective adaptation to climate change?",
+        "options": [
+          "A. Individual city projects with limited federal oversight",
+          "B. A partnership between municipalities and communities",
+          "C. Technological advancements without community input",
+          "D. National policies solely focused on energy consumption"
+        ],
+        "correct": 1,
+        "explanation": "The passage emphasizes the need for alignment between local strategies and overarching federal guidelines, implying collaboration."
+      },
+      {
+        "id": 5,
+        "question": "Which statement best captures the author's tone regarding municipal adaptation efforts?",
+        "options": [
+          "A. Optimistic about future developments",
+          "B. Cynical about governmental responsibilities",
+          "C. Urgent and pragmatic in nature",
+          "D. Indifferent towards climate issues"
+        ],
+        "correct": 2,
+        "explanation": "The tone indicates urgency and practicality regarding the need for municipal adaptation to climate challenges."
+      },
+      {
+        "id": 6,
+        "question": "What is a major challenge faced by Toronto regarding climate change as per the passage?",
+        "options": [
+          "A. Rising sea levels endangering the coastline",
+          "B. Increased energy costs due to infrastructure decay",
+          "C. Insufficient stormwater drainage during heavy rainfall",
+          "D. Lack of technological advancements"
+        ],
+        "correct": 2,
+        "explanation": "The passage explicitly mentions that Toronto's increased rainfall events necessitate a review of stormwater drainage capacities."
+      },
+      {
+        "id": 7,
+        "question": "What is a commonality shared by all three cities as per the findings in the passage?",
+        "options": [
+          "A. Their infrastructure is completely up to date.",
+          "B. They all possess significant public transportation systems.",
+          "C. They face vulnerabilities in transportation and water management.",
+          "D. They require no federal assistance for climate adaptation."
+        ],
+        "correct": 2,
+        "explanation": "The passage indicates that common vulnerabilities in transportation networks and water management systems have been identified across the cities."
+      },
+      {
+        "id": 8,
+        "question": "What role does community engagement play in addressing urban climate challenges, according to the passage?",
+        "options": [
+          "A. It complicates infrastructure decisions.",
+          "B. It is irrelevant to technological advancement.",
+          "C. It ensures infrastructure investments are responsive.",
+          "D. It is optional and not crucial to adaptation."
+        ],
+        "correct": 2,
+        "explanation": "The passage highlights the importance of community engagement initiatives in ensuring that adaptations are responsive and anticipatory."
+      }
+    ]
   }
 ]

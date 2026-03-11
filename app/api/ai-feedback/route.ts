@@ -170,8 +170,13 @@ If the text has no significant grammar errors, return an empty array.`;
 
 export async function POST(request: NextRequest) {
   try {
-    const denied = await requireProWithLimit('ai-feedback');
-    if (denied) return denied;
+    const { authenticated, userId, isPro } = await (await import('@/lib/plan')).getUserPlan();
+    if (!authenticated || !userId) {
+      return NextResponse.json({ error: 'Authentication required' }, { status: 401 });
+    }
+    const { checkRateLimit, rateLimitResponse } = await import('@/lib/rate-limit');
+    const { allowed } = await checkRateLimit(userId, 'ai-feedback', isPro);
+    if (!allowed) return rateLimitResponse() as unknown as NextResponse;
 
     const body: AIFeedbackRequest = await request.json();
 
@@ -280,10 +285,10 @@ export async function POST(request: NextRequest) {
 
     // Log activity for leaderboard
     try {
-      const { auth } = await import('@/../auth');
-      const session = await auth();
-      if (session?.user?.id) {
-        await logActivity(session.user.id, 'writing');
+      const { getUserPlan } = await import('@/lib/plan');
+      const plan = await getUserPlan();
+      if (plan.userId) {
+        await logActivity(plan.userId, 'writing');
       }
     } catch {}
 

@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '@/../auth';
 import { logActivity } from '@/lib/activity';
+import { getUserPlan } from '@/lib/plan';
 
 export async function POST(request: NextRequest) {
   try {
-    const session = await auth();
-    if (!session?.user?.id) {
+    const planCheck = await getUserPlan();
+    if (!planCheck.authenticated || !planCheck.userId) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
@@ -15,9 +15,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid type' }, { status: 400 });
     }
 
-    const safeCount = Math.min(Math.max(1, Number(count) || 1), 50); // cap at 50 per call
+    const safeCount = Math.min(Math.max(1, Number(count) || 1), 50);
 
-    await logActivity(session.user.id, type, safeCount);
+    await logActivity(planCheck.userId, type, safeCount);
 
     return NextResponse.json({ ok: true });
   } catch (error) {

@@ -6,7 +6,7 @@ const recentlyServed = new Map<string, Set<string>>();
 
 export async function POST(req: NextRequest) {
   try {
-    const { taskId, userId } = await req.json();
+    const { taskId, userId, difficulty } = await req.json();
     
     if (!taskId) {
       return NextResponse.json({ error: 'taskId required' }, { status: 400 });
@@ -27,7 +27,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Library not available' }, { status: 404 });
     }
 
-    const prompts = JSON.parse(readFileSync(libPath, 'utf8'));
+    let prompts = JSON.parse(readFileSync(libPath, 'utf8'));
+    
+    // Filter by difficulty if provided
+    if (difficulty) {
+      const filtered = prompts.filter((p: any) => p.difficulty === difficulty);
+      if (filtered.length > 0) prompts = filtered;
+    }
+    
     if (!prompts.length) {
       return NextResponse.json({ error: 'No prompts available' }, { status: 404 });
     }

@@ -8,7 +8,8 @@
       "Think about the importance of building a network and marketing yourself to find freelance clients.",
       "Remember to weigh the pros and cons of flexible hours versus the unpredictability of freelance work."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-02",
@@ -19,7 +20,8 @@
       "Think about how the slower pace of life might affect your social activities and hobbies.",
       "Remember to factor in the cost of living differences and how they might impact your budget."
     ],
-    "context": "You are talking to your sister."
+    "context": "You are talking to your sister.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-03",
@@ -30,7 +32,8 @@
       "Think about the costs involved in starting the business, including permits, equipment, and ingredients.",
       "Remember to assess the competition in your area and find ways to make your poutine unique."
     ],
-    "context": "You are talking to your coworker."
+    "context": "You are talking to your coworker.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-04",
@@ -41,7 +44,8 @@
       "Think about how long you plan to keep the car and how many kilometers you will drive each year.",
       "Remember that leasing often comes with restrictions on mileage and customization options."
     ],
-    "context": "You are talking to your brother."
+    "context": "You are talking to your brother.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-05",
@@ -52,7 +56,8 @@
       "Think about how adopting a rescue dog can provide it with a loving home and companionship for you.",
       "Remember to research the breed and needs of the dog to ensure it fits your lifestyle."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-06",
@@ -63,7 +68,8 @@
       "Think about how she can balance her studies with creating content to see if she can manage both for now.",
       "Remember the importance of having a backup plan in case her YouTube career doesn’t go as planned."
     ],
-    "context": "You are talking to your cousin."
+    "context": "You are talking to your cousin.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-07",
@@ -74,7 +80,8 @@
       "Think about the impact on your current living space and the privacy you will maintain.",
       "Remember to check local zoning laws and regulations regarding rental suites in your area."
     ],
-    "context": "You are talking to your neighbor."
+    "context": "You are talking to your neighbor.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-08",
@@ -85,7 +92,8 @@
       "Think about joining a local running club for motivation and support from experienced runners.",
       "Remember to incorporate rest days and cross-training to prevent injury and improve overall fitness."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-09",
@@ -96,7 +104,8 @@
       "Think about how you will fill your time and stay socially connected once you are no longer working.",
       "Remember to explore options for part-time work or volunteering that can provide structure and a sense of purpose in your retirement."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-10",
@@ -107,7 +116,8 @@
       "Think about budgeting and planning your trips to make it financially feasible.",
       "Remember that taking a gap year can also enhance your resume and university applications."
     ],
-    "context": "You are talking to your close friend."
+    "context": "You are talking to your close friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-11",
@@ -118,7 +128,8 @@
       "Think about the necessary qualifications and training required to become a teacher.",
       "Remember to assess your financial situation during the transition, as starting a new career might involve a pay cut initially."
     ],
-    "context": "You are talking to your coworker."
+    "context": "You are talking to your coworker.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-12",
@@ -129,7 +140,8 @@
       "Think about the resources available for homeschooling, such as online courses, community groups, and support networks.",
       "Remember the importance of socialization for your children and explore options for extracurricular activities and playdates."
     ],
-    "context": "You are talking to your sister."
+    "context": "You are talking to your sister.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-13",
@@ -140,7 +152,8 @@
       "Think about your long-term goals and how each investment aligns with them.",
       "Remember to research local market trends and potential future developments in your area."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-14",
@@ -151,7 +164,8 @@
       "Think about the possibility of living in nearby suburbs, which might offer lower rent and better deals.",
       "Remember to budget for other living expenses in Vancouver, as they can be quite high too."
     ],
-    "context": "You are talking to your brother."
+    "context": "You are talking to your brother.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-15",
@@ -162,7 +176,8 @@
       "Think about how a nursing degree could lead to a fulfilling career and help you make a difference in people's lives.",
       "Remember to look into scholarships and financial aid options that can help alleviate the cost of your education."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-16",
@@ -173,7 +188,8 @@
       "Think about the best platforms to use for online tutoring to reach your target audience effectively.",
       "Remember to create a marketing strategy, such as social media promotion, to attract students."
     ],
-    "context": "You are talking to your cousin."
+    "context": "You are talking to your cousin.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-17",
@@ -184,7 +200,8 @@
       "Think about how the solar panels might affect the aesthetic appeal of the neighborhood.",
       "Remember to research reliable contractors and check for any local regulations regarding solar panel installations."
     ],
-    "context": "You are talking to your neighbor."
+    "context": "You are talking to your neighbor.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-18",
@@ -195,7 +212,8 @@
       "Think about the skills and experiences you might gain, and how they could benefit your future career.",
       "Remember that commitment to the reserves may lead to new friendships and a sense of community, but it will require dedication."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-19",
@@ -206,7 +224,8 @@
       "Think about the support systems you can put in place to help care for your parent, such as community resources or family assistance.",
       "Remember to communicate with your employer about your situation and explore options for flexibility or reduced hours."
     ],
-    "context": "You are talking to your coworker."
+    "context": "You are talking to your coworker.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-20",
@@ -217,7 +236,8 @@
       "Think about the space you have available and whether it can comfortably accommodate multiple children.",
       "Remember to calculate the potential costs versus income to ensure it's financially viable."
     ],
-    "context": "You are talking to your sister."
+    "context": "You are talking to your sister.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-21",
@@ -228,7 +248,8 @@
       "Think about the weather during the time of year you plan to have the wedding, as it can be unpredictable in the mountains.",
       "Remember to explore local vendors and services in Banff to ensure you find reliable options for catering and decorations."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-22",
@@ -239,7 +260,8 @@
       "Think about the cost of insurance and maintenance compared to other forms of transportation.",
       "Remember to weigh the convenience of parking and maneuverability against potential weather challenges."
     ],
-    "context": "You are talking to your brother."
+    "context": "You are talking to your brother.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-23",
@@ -250,7 +272,8 @@
       "Think about how this experience could impact your relationships with family and friends during your absence.",
       "Remember to research the location and organization to ensure it aligns with your values and interests."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-24",
@@ -261,7 +284,8 @@
       "Think about the potential impact on your relationship if things don't go as planned and how that might affect both of you.",
       "Remember to communicate openly with your partner about your feelings and any concerns you may have before making a decision."
     ],
-    "context": "You are talking to your cousin."
+    "context": "You are talking to your cousin.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-25",
@@ -272,7 +296,8 @@
       "Think about your recent contributions and whether they justify a raise at this time.",
       "Remember to prepare for the conversation by having a clear understanding of your worth and market rates."
     ],
-    "context": "You are talking to your coworker."
+    "context": "You are talking to your coworker.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-26",
@@ -283,7 +308,8 @@
       "Think about alternative ways to stay connected with friends and family without social media.",
       "Remember that you can take a break first and see how you feel before making a permanent decision."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-27",
@@ -294,7 +320,8 @@
       "Think about how often you'll actually use it and if it fits your lifestyle and social gatherings.",
       "Remember to check local regulations or Homeowners Association rules regarding hot tubs in your area."
     ],
-    "context": "You are talking to your neighbor."
+    "context": "You are talking to your neighbor.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-28",
@@ -305,7 +332,8 @@
       "Think about the lifestyle change and how a condo community might offer new social opportunities.",
       "Remember to evaluate the emotional attachment to the family home and how to preserve those memories."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-29",
@@ -316,7 +344,8 @@
       "Think about how to ensure you're getting all the necessary nutrients, like protein, iron, and vitamins, from your new diet.",
       "Remember to explore different vegan recipes and foods that you enjoy to make the transition enjoyable."
     ],
-    "context": "You are talking to your friend."
+    "context": "You are talking to your friend.",
+    "difficulty": "intermediate"
   },
   {
     "id": "task1-30",
@@ -327,6 +356,368 @@
       "Think about the requirements for applying and whether you meet them, including residency and language proficiency.",
       "Remember that becoming a citizen is a long-term commitment and may affect your future plans, like travel or education."
     ],
-    "context": "You are talking to your sister."
+    "context": "You are talking to your sister.",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Advice on Weekend Activities",
+    "scenario": "Planning a Fun Weekend",
+    "prompt": "Your friend is visiting Canada for the weekend and wants to know what fun activities to do. Give them advice on how to spend their weekend. First, suggest an outdoor activity they can try. Then, recommend a local restaurant where they can enjoy a nice meal. Finally, tell them about a fun event or place they should visit in the evening.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to express your ideas."
+    ]
+  },
+  {
+    "title": "Weekend BBQ Planning",
+    "scenario": "Planning a BBQ",
+    "prompt": "Your friend wants to have a BBQ this weekend and is asking for your advice on how to plan it. Give your friend three suggestions on what to do. First, suggest what food they should prepare. Then, recommend some fun activities to include. Finally, mention how they can invite their friends. Explain your ideas clearly.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Think about your favorite BBQ foods.",
+      "Consider simple games or activities for a fun gathering."
+    ]
+  },
+  {
+    "title": "Planning a Weekend BBQ",
+    "scenario": "Advice for a BBQ",
+    "prompt": "Your friend wants to host a BBQ this weekend but is not sure how to plan it. Give your friend advice on how to have a successful BBQ. First, suggest what they should prepare for food and drinks. Then, advise them on what they can do to set up the area for guests. Finally, mention a few fun activities they can organize for everyone to enjoy. ",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Use simple sentences.",
+      "Focus on one idea at a time."
+    ]
+  },
+  {
+    "title": "Advice on Weekend Plans",
+    "scenario": "Planning a Fun Weekend",
+    "prompt": "Your friend wants to plan a fun weekend in your city. They are looking for advice on what to do. Give them some suggestions. Explain your ideas using a simple plan: First, suggest a fun activity to do. Then, suggest a place to eat. Finally, recommend a nice spot to relax. Make sure to explain why you think these choices are great.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Keep your suggestions simple and clear.",
+      "Use 'First', 'Then', and 'Finally' to organize your ideas."
+    ]
+  },
+  {
+    "title": "Weekend Adventure",
+    "scenario": "Planning a Fun Weekend",
+    "prompt": "You have a friend who wants to have a fun weekend but doesn't know what to do. Give your friend some advice on how to plan an enjoyable weekend in your city. First, suggest an exciting activity to try. Then, recommend a nice place to eat for lunch. Finally, tell your friend about a local park or attraction where they can relax and have fun after lunch.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to explain your ideas."
+    ]
+  },
+  {
+    "title": "Advice for a Weekend BBQ",
+    "scenario": "Planning a BBQ",
+    "prompt": "Your friend wants to have a BBQ this weekend but doesn't know what to prepare. Give your friend some advice on how to have a great BBQ. First, tell them what food to buy. Then, suggest some fun activities for the guests. Finally, give one tip on how to make the BBQ safe and enjoyable.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Start by listing the food items, like burgers or hot dogs.",
+      "Think of games or activities that people can do while waiting for the food.",
+      "Mention safety tips, such as keeping raw food separate from cooked food."
+    ]
+  },
+  {
+    "title": "Advice on Weekend Plans",
+    "scenario": "Planning a Fun Family Day",
+    "prompt": "Your friend wants to plan a fun family day this weekend in your city. They have asked you for advice on what to do. Please suggest three activities for the day. First, tell them one fun outdoor activity they can do. Then, suggest an interesting place to visit. Finally, recommend a good restaurant to have lunch. Remember to explain why each suggestion is good for families.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to explain your ideas."
+    ]
+  },
+  {
+    "title": "Advice on Choosing a Weekend Meal",
+    "scenario": "Choosing a Weekend Meal",
+    "prompt": "Your friend wants to try a new recipe for dinner this weekend but is unsure what to make. Give your friend advice on what to cook. Start by suggesting a type of cuisine, then recommend a specific dish, and finally give one tip for preparing it. Remember to speak clearly and organize your ideas.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Think about your favorite type of food.",
+      "Use simple language to explain your ideas."
+    ]
+  },
+  {
+    "title": "Planning a Weekend Picnic",
+    "scenario": "Advice for a Weekend Picnic",
+    "prompt": "Your friend wants to plan a picnic this weekend at a local park. They are not sure what to prepare. Give them some advice on what food to bring for the picnic. First, suggest a type of food they should consider. Then, mention a drink that would be nice to have. Finally, recommend a fun snack that everyone would enjoy.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Think about simple and popular picnic foods.",
+      "Use clear steps to organize your advice."
+    ]
+  },
+  {
+    "title": "Advice on Weekend Plans",
+    "scenario": "Planning a Fun Weekend",
+    "prompt": "Your friend is visiting Canada for the first time and wants to have a fun weekend. They have asked you for advice on what to do. Please give them three activities they should try. First, tell them about an outdoor activity they can do. Then, suggest a local restaurant where they can enjoy a meal. Finally, recommend a place where they can experience Canadian culture. Explain your choices clearly.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Speak clearly and at a steady pace.",
+      "Use simple sentences to explain your ideas."
+    ]
+  },
+  {
+    "title": "Choosing a Weekend Meal",
+    "scenario": "Advising a Friend on Dinner Choices",
+    "prompt": "Your friend wants to have a special dinner this weekend but is unsure what to cook. They love Italian food but want to try something new. Give your friend advice on what to cook for dinner. First, suggest a new dish they could try. Then, explain the main ingredients they will need. Finally, give them a simple step on how to prepare the dish.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Think of a simple dish you enjoy.",
+      "Use clear steps to make it easy to follow."
+    ]
+  },
+  {
+    "title": "Planning a Weekend Picnic",
+    "scenario": "Advice for a Weekend Activity",
+    "prompt": "Your friend wants to plan a picnic for this weekend. They are unsure about what to bring and where to go. Give your friend some advice on how to plan a fun picnic. First, suggest a nice park they could visit. Then, talk about what food and drinks they should pack. Finally, remind them to bring some games or activities to enjoy while they are there.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Use simple sentences.",
+      "Organize your advice clearly."
+    ]
+  },
+  {
+    "title": "Advice on Weekend Plans",
+    "scenario": "Planning a Weekend Activity",
+    "prompt": "Your friend wants to know what to do this weekend. They are feeling bored and need some ideas. Give them advice on planning their weekend. You can suggest an outdoor activity, visiting a local attraction, or cooking a special meal at home. Explain your suggestions in order. First, tell them the first activity to try. Then, suggest a second activity to consider. Finally, recommend something to do to relax. Make sure to share why these activities are fun!",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Speak clearly and slowly.",
+      "Use simple sentences to explain your ideas."
+    ]
+  },
+  {
+    "title": "Cooking a New Recipe",
+    "scenario": "Advice on Cooking",
+    "prompt": "Your friend wants to cook a new recipe for dinner but is feeling nervous and unsure. They asked you for advice on how to prepare the meal. Give them some simple steps they can follow. First, tell them how to gather the ingredients. Then, explain how to prepare the food. Finally, suggest how to enjoy the meal with others.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Use simple language.",
+      "Organize your response clearly."
+    ]
+  },
+  {
+    "title": "Planning a Weekend BBQ",
+    "scenario": "Advice for a BBQ",
+    "prompt": "Your friend wants to have a barbecue at their house this weekend. They have never hosted one before and are seeking your advice. What should they do to prepare? Give three pieces of advice. First, suggest how to choose the right food. Then, advise them on what to do for drinks. Finally, recommend how to set up the space for their guests. ",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Think of simple food ideas like burgers or hot dogs.",
+      "Remember to suggest drinks that are easy to prepare."
+    ]
+  },
+  {
+    "title": "Balancing Public Safety and Civil Liberties",
+    "scenario": "Urban Surveillance Policy Debate",
+    "prompt": "The city council is considering the implementation of an extensive surveillance system to enhance public safety and reduce crime rates in urban areas. While proponents argue that increased surveillance will deter criminal activity and provide a safer environment for residents, opponents raise concerns about potential invasions of privacy and the erosion of civil liberties. As a community member, provide advice to the city council on how to balance the need for public safety with the rights of individuals. Consider the implications for various stakeholders, including residents, law enforcement, and advocacy groups. Include counterarguments and acknowledge the complexities of the situation in your response.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Clearly outline the competing priorities and the perspectives of different stakeholders.",
+      "Use specific examples to illustrate potential outcomes of the proposed policy, and consider moral implications."
+    ]
+  },
+  {
+    "title": "Balancing Community Needs",
+    "scenario": "A proposed park redevelopment",
+    "prompt": "You are a community advisor in a Canadian city facing a proposal to redevelop a local park into a multi-use sports facility. This plan has sparked a divide in the community: some residents argue that the new facility will create valuable recreational opportunities for youth and promote community engagement, while others are concerned about the loss of green space, increased traffic, and the impact on local wildlife. Your task is to advise a community leader on how to navigate these competing interests and propose a balanced solution. Consider the ethical dimensions of prioritizing community needs against environmental sustainability, and address potential counterarguments from both sides.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your response by outlining the key arguments from both sides before proposing a balanced solution.",
+      "Use specific examples or hypothetical scenarios to illustrate the potential impacts of your proposed solution on different stakeholders."
+    ]
+  },
+  {
+    "title": "Balancing Freedom and Safety",
+    "scenario": "Public Safety Measures vs. Individual Liberties",
+    "prompt": "Imagine you are a member of a local city council in Canada considering a new policy that would require all residents to install surveillance cameras in their homes to enhance public safety and reduce crime rates. While proponents argue that this policy could significantly lower crime and make the community safer, opponents raise concerns about privacy invasion and the potential for misuse of surveillance data. Considering the competing priorities of public safety and individual liberties, what advice would you give the council regarding this proposed policy? Please support your argument with logical reasoning, address potential counterarguments, and acknowledge the ethical dimensions involved.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your response by clearly outlining the main argument, followed by counterarguments and concessions.",
+      "Include specific examples or hypothetical outcomes to illustrate the potential impacts on both safety and individual rights."
+    ]
+  },
+  {
+    "title": "Balancing Housing and Environmental Priorities",
+    "scenario": "The Affordable Housing Dilemma",
+    "prompt": "The city of Vancouver is facing a pressing dilemma. Local government has proposed a new affordable housing project in a green space that has significant ecological value. Proponents argue that the housing is essential to address homelessness and the rising cost of living, benefiting lower-income families. On the other hand, environmentalists warn that developing this green space could lead to the destruction of local wildlife habitats and contribute to climate change. As an advisor to the city council, how would you approach this situation? What arguments would you make to balance the need for affordable housing with the environmental concerns? Take into consideration the perspectives of both developers and environmental advocates, and address potential counterarguments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Consider both sides of the argument thoroughly before forming your advice.",
+      "Use examples or hypothetical situations to illustrate your points."
+    ]
+  },
+  {
+    "title": "Balancing Public Health and Economic Viability",
+    "scenario": "Economic Recovery vs. Public Safety",
+    "prompt": "You are a city council member in a Canadian city grappling with the aftermath of a public health crisis. As the council considers reopening local businesses, you are faced with the dilemma of prioritizing economic recovery while ensuring the safety and health of the community. Some council members emphasize the urgency of reopening to restore jobs and support local businesses, arguing that prolonged shutdowns are causing irreparable economic damage. Others stress the importance of maintaining strict health measures to prevent a resurgence of the crisis, raising concerns about potential hospital overcrowding and public safety. Your task is to give advice to the council on how to navigate this complex situation. Consider the competing priorities of economic viability and public health. What recommendations would you make, and how would you address the concerns of both sides? Discuss the potential trade-offs and ethical implications of your proposed approach.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your response clearly; outline the competing priorities.",
+      "Address potential counterarguments to strengthen your position."
+    ]
+  },
+  {
+    "title": "Balancing Public Safety and Personal Privacy",
+    "scenario": "Navigating Competing Interests in Policy",
+    "prompt": "You are a member of a city council in Canada considering a new policy that would enhance public safety through increased surveillance in public spaces. While proponents argue that this will reduce crime rates and ensure community safety, opponents raise concerns about individual privacy rights and potential misuse of the data collected. Given this context, advise the council on how to balance the need for public safety with preserving citizens' privacy. Consider the ethical implications, the needs of various stakeholders, and the possible societal impacts of your recommendations.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Clearly outline the competing interests involved in the situation.",
+      "Acknowledge opposing viewpoints and provide counterarguments to strengthen your advice."
+    ]
+  },
+  {
+    "title": "Navigating Housing Policy Dilemmas",
+    "scenario": "Ethical Considerations in Urban Development",
+    "prompt": "You are an advisor to a city council in Canada that is considering a new housing policy. The policy aims to increase affordable housing units but will require the displacement of a small community of long-term residents. These residents are culturally significant to the neighborhood and contribute to its unique identity. Some council members argue that the need for affordable housing outweighs the concerns of the displaced residents, while others believe that the cultural and social fabric of the community must be preserved at all costs. Considering the competing priorities of affordable housing and community preservation, what advice would you give to the council? Discuss the potential long-term impacts of your recommendation on all stakeholders involved.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your argument clearly; address both sides of the dilemma.",
+      "Use specific examples to illustrate the potential consequences of your recommendation."
+    ]
+  },
+  {
+    "title": "Urban Development Dilemma",
+    "scenario": "Balancing Community Growth and Environmental Conservation",
+    "prompt": "You are a city councilor in a Canadian city that is experiencing a housing crisis due to rapid population growth. A proposal has been put forward to build a large residential complex on a green space that serves as a habitat for local wildlife and a recreational area for residents. Some community members support the development for housing and economic growth, while others oppose it for environmental reasons. Considering the competing priorities of housing needs, economic development, and environmental conservation, what advice would you give to the council regarding this proposal? Ensure to address potential counterarguments and the ethical implications of your position.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Clearly outline the competing priorities involved in the scenario.",
+      "Address potential counterarguments to strengthen your position."
+    ]
+  },
+  {
+    "title": "Balancing Privacy and Security",
+    "scenario": "Privacy vs. National Security",
+    "prompt": "In recent discussions regarding the implementation of stricter surveillance measures for public safety in Canada, there are competing concerns over privacy rights and national security. As an advisor, you are asked to recommend a balanced approach. Consider the implications for civil liberties, the potential effectiveness of surveillance in preventing crime and terrorism, and the cultural context of privacy values in Canadian society. How would you advise policy makers to navigate this dilemma? Make sure to present your argument with counterarguments and concessions, addressing the nuanced perspectives on both sides of this issue.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Clearly outline the competing priorities involved in the situation.",
+      "Use specific examples to illustrate your points and provide a well-rounded perspective."
+    ]
+  },
+  {
+    "title": "Balancing Economic Growth and Environmental Protection",
+    "scenario": "Urban Development Dilemma",
+    "prompt": "Imagine you are a city planner in Canada faced with a significant decision regarding the development of a new commercial complex. This project promises to create hundreds of jobs and stimulate the local economy, which is currently struggling. However, the construction will potentially disrupt a nearby natural habitat that is home to several endangered species. You have to advise the city council on whether to proceed with the development or to prioritize environmental conservation. Consider the economic benefits, the ethical implications of harming wildlife, and the long-term impact on the community. Present your advice, acknowledging the complexity of the situation and addressing potential counterarguments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Consider both the short-term and long-term implications of your advice.",
+      "Acknowledge different stakeholders' perspectives and the values they prioritize."
+    ]
+  },
+  {
+    "title": "Navigating Cultural Integration",
+    "scenario": "Cultural Integration vs. Social Cohesion",
+    "prompt": "Imagine you are a community advisor in a diverse Canadian city that is facing challenges with cultural integration. Recently, a proposal has been put forward to set aside funding to support cultural festivals that celebrate various communities, but this funding would come at the expense of resources available for social services, such as housing and healthcare. Some argue that investing in cultural festivals fosters social cohesion and understanding among different groups, while others believe that the immediate needs of the community should take priority. Give advice to the city council on how to balance these competing priorities. Consider the benefits and drawbacks of both sides of the argument, and what you see as a reasonable way forward.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Consider both the short-term and long-term impacts of the funding decision.",
+      "Acknowledge the perspectives of different community stakeholders and how they may influence the discussion."
+    ]
+  },
+  {
+    "title": "Balancing Climate Action and Economic Growth",
+    "scenario": "Climate Policy Dilemma in a Local Economy",
+    "prompt": "As a member of a city council in Canada, you are presented with a proposed policy that aims to reduce carbon emissions by implementing a tax on businesses that exceed a certain level of emissions. While the goal is to combat climate change, local business owners argue that this tax could lead to layoffs and economic decline, particularly in a region already struggling with unemployment. Your task is to advise the city council on how to navigate this dilemma. Consider the ethical implications of prioritizing environmental sustainability against the immediate economic needs of your community. What recommendations would you make to balance these competing interests? Please discuss potential compromises and the stakeholders involved.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your response by addressing the ethical dimensions of both sides of the argument.",
+      "Incorporate specific examples of potential compromises or alternative solutions that could satisfy both environmental and economic concerns."
+    ]
+  },
+  {
+    "title": "Balancing Privacy and Public Safety",
+    "scenario": "Privacy vs. Public Safety",
+    "prompt": "Imagine you are a member of a city council in Canada, and there is a proposed policy to enhance public safety by implementing extensive surveillance systems in public spaces. On one hand, this policy aims to reduce crime rates and promote a sense of security among residents. On the other hand, it raises significant concerns about privacy rights and the potential for misuse of personal data. As an advisor, what would you recommend? Discuss the potential benefits and drawbacks of the surveillance policy, considering the perspectives of various stakeholders including law enforcement, citizens, and civil rights groups. Be sure to address competing priorities and ethical dimensions, and consider offering a compromise or alternative solution.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Structure your response by clearly outlining the perspectives of different stakeholders.",
+      "Use specific examples and data to support your arguments, while also acknowledging counterarguments."
+    ]
+  },
+  {
+    "title": "Balancing Work and Cultural Integration",
+    "scenario": "The Dilemma of a Newcomer",
+    "prompt": "You are part of a community panel tasked with advising a local government on a new policy regarding the integration of newcomers into the workforce. Recently, there has been a proposal to prioritize hiring newcomers for positions in organizations that are struggling to find qualified candidates. However, this has raised concerns among local workers about job security and fairness. Some community members argue that it is essential to give newcomers opportunities to integrate and contribute to the economy, while others believe that existing local workers should be prioritized to protect their jobs. Given this context, what advice would you give to the panel on how to balance these competing priorities? Consider the ethical implications of your recommendation and address potential counterarguments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Analyze both sides of the argument thoroughly before forming your opinion.",
+      "Highlight the ethical considerations involved in prioritizing different groups."
+    ]
+  },
+  {
+    "title": "Balancing Immigration Policies",
+    "scenario": "Immigration Policy Trade-offs",
+    "prompt": "The Canadian government is considering a new immigration policy that would prioritize highly skilled workers to support the economy. However, this policy may negatively impact family reunification for immigrants, particularly those with less formal education or skills. You have been invited to advise a government official on this issue. What advice would you give regarding the potential benefits and drawbacks of prioritizing skilled workers over family reunification? Consider the ethical implications, the impact on communities, and the long-term vision for Canadian society in your response.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90,
+    "tips": [
+      "Consider both the economic advantages and the social implications of the policy.",
+      "Acknowledge counterarguments regarding the importance of keeping families together."
+    ]
   }
 ]

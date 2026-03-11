@@ -60,7 +60,7 @@ export default function ListeningHubPage() {
         {listeningParts.slice(0, 3).map((part) => (
           <Link 
             key={part.id} 
-            href={`/listening/practice/${part.id}`}
+            href={`/ai-coach`}
             className={styles.prepCard}
           >
             <div className={styles.prepCardIcon}>
@@ -88,7 +88,7 @@ export default function ListeningHubPage() {
         {listeningParts.slice(3).map((part) => (
           <Link 
             key={part.id}
-            href={`/listening/practice/${part.id}`}
+            href={`/ai-coach`}
             className={styles.examCard}
           >
             <div className={styles.examCardHeader}>
@@ -123,7 +123,7 @@ export default function ListeningHubPage() {
       </section>
 
       {/* Full Practice Link */}
-      <Link href="/listening/practice" className={styles.guideLink}>
+      <Link href="/ai-coach" className={styles.guideLink}>
         <Headphones size={18} />
         <span>Full Listening Practice • {totalQuestions} questions • ~47 min</span>
         <ArrowRight size={16} />
