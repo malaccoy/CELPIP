@@ -1495,18 +1495,6 @@ export default function DashboardPage() {
               <div className={styles.proCrown}>
                 <Crown size={16} />
                 <span>PRO</span>
-                <button
-                  className={styles.manageSubBtn}
-                  onClick={async () => {
-                    try {
-                      const res = await fetch('/api/stripe/portal', { method: 'POST' });
-                      const data = await res.json();
-                      if (data.url) window.location.href = data.url;
-                    } catch {}
-                  }}
-                >
-                  Manage Subscription
-                </button>
               </div>
             )}
             <div className={styles.welcomeLeft}>

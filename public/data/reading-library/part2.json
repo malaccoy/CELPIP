@@ -1651,99 +1651,91 @@
     "questions": [
       {
         "id": 1,
-        "section": "A",
-        "question": "What is the daily rate for parking in the Standard lot?",
+        "question": "What is the daily charge for parking in the Economy lot?",
         "options": [
-          "$10",
-          "$15",
-          "$20",
-          "$25"
+          "The Economy lot charges $5 per day.",
+          "The Economy lot charges $10 per day.",
+          "The Economy lot charges $15 per day.",
+          "The Economy lot charges $20 per day."
         ],
         "correct": 1
       },
       {
         "id": 2,
-        "section": "A",
-        "question": "How often does the shuttle service operate from the Economy lot?",
+        "question": "How much does the Premium parking lot cost per day?",
         "options": [
-          "Every 10 minutes",
-          "Every 15 minutes",
-          "Every 30 minutes",
-          "Every hour"
+          "The Premium lot costs $15 per day.",
+          "The Premium lot costs $20 per day.",
+          "The Premium lot costs $25 per day.",
+          "The Premium lot costs $30 per day."
         ],
         "correct": 1
       },
       {
         "id": 3,
-        "section": "A",
-        "question": "What is the discount percentage for parking over 7 days?",
+        "question": "What discount applies if parking exceeds 7 days?",
         "options": [
-          "5%",
-          "10%",
-          "15%",
-          "20%"
+          "A 10% discount on the total amount.",
+          "A 15% discount on the total amount.",
+          "A 20% discount on the total amount.",
+          "No discount is available after 7 days."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 4,
-        "section": "A",
-        "question": "Which lot has the highest daily rate?",
+        "question": "How often do shuttles depart from the Premium lot?",
         "options": [
-          "Economy",
-          "Standard",
-          "Premium",
-          "All have the same rate"
+          "Shuttles depart every 5 minutes from the Premium lot.",
+          "Shuttles depart every 10 minutes from the Premium lot.",
+          "Shuttles depart every 15 minutes from the Premium lot.",
+          "Shuttles do not service the Premium lot."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 5,
-        "section": "A",
-        "question": "What is the last time shuttles operate daily?",
+        "question": "What is the operational time for shuttle services?",
         "options": [
-          "9 PM",
-          "10 PM",
-          "11 PM",
-          "Midnight"
+          "Shuttles operate from 5 AM to 10 PM daily.",
+          "Shuttles operate from 6 AM to 11 PM daily.",
+          "Shuttles operate from 5 AM to 11 PM daily.",
+          "Shuttles operate only on weekends."
         ],
         "correct": 2
       },
       {
         "id": 6,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 1]",
+        "question": "Which parking lot offers the most convenience?",
         "options": [
-          "$20",
-          "$15",
-          "$10",
-          "$5"
+          "The Economy lot is the most convenient.",
+          "The Standard lot is the most convenient.",
+          "The Premium lot is the most convenient.",
+          "All lots provide equal convenience."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 7,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 2]",
+        "question": "What is the daily charge for the Standard parking lot?",
         "options": [
-          "Every 30 minutes",
-          "Every 10 minutes",
-          "Every 15 minutes",
-          "Every hour"
+          "The Standard lot charges $10 per day.",
+          "The Standard lot charges $15 per day.",
+          "The Standard lot charges $20 per day.",
+          "The Standard lot charges $25 per day."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 8,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 3]",
+        "question": "Which parking lot has the highest daily rate?",
         "options": [
-          "5%",
-          "10%",
-          "15%",
-          "20%"
+          "The Premium lot has the highest daily rate.",
+          "The Economy lot has the highest daily rate.",
+          "The Standard lot has the highest daily rate.",
+          "All lots have the same daily rate."
         ],
-        "correct": 2
+        "correct": 0
       }
     ],
     "id": "part2-18",
@@ -3196,99 +3188,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the main topic of the passage?",
+        "question": "What is the operating time for the buses in Sunny City?",
         "options": [
-          "A bus schedule",
-          "A school schedule",
-          "A shopping list",
-          "A weather report"
+          "Buses operate from 6 AM to 10 PM every day.",
+          "Buses run only on weekends from 6 AM to 10 PM.",
+          "Buses are available from 8 AM to 8 PM on weekdays.",
+          "Buses operate 24 hours a day throughout the week."
         ],
-        "correct": 0,
-        "explanation": "The passage provides information about city bus schedules."
+        "correct": 0
       },
       {
         "id": 2,
-        "question": "How many bus lines are there?",
+        "question": "How often does Line 1 arrive at its stops?",
         "options": [
-          "3",
-          "4",
-          "5",
-          "6"
+          "Line 1 arrives every 10 minutes.",
+          "Line 1 arrives every 15 minutes.",
+          "Line 1 arrives every 20 minutes.",
+          "Line 1 arrives every 25 minutes."
         ],
-        "correct": 2,
-        "explanation": "The passage mentions 5 bus lines."
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "Where does Line 1 go?",
+        "question": "Which line connects North End to South End?",
         "options": [
-          "Sunny Park to Main Street",
-          "North End to South End",
-          "West Side to East Side",
-          "Sunny School to Sunny Mall"
+          "Line 1 connects North End to South End.",
+          "Line 2 connects North End to South End.",
+          "Line 3 connects North End to South End.",
+          "Line 4 connects North End to South End."
         ],
-        "correct": 0,
-        "explanation": "Line 1 goes from Sunny Park to Main Street."
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "How often does Line 2 arrive?",
+        "question": "What is the frequency of buses for Line 4?",
         "options": [
-          "Every 15 minutes",
-          "Every 20 minutes",
-          "Every 30 minutes",
-          "Every 40 minutes"
+          "Line 4 arrives every 20 minutes.",
+          "Line 4 arrives every 25 minutes.",
+          "Line 4 arrives every 30 minutes.",
+          "Line 4 arrives every 15 minutes."
         ],
-        "correct": 2,
-        "explanation": "Line 2 arrives every 30 minutes."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What is the last time the buses run?",
+        "question": "Where does Line 3 travel between?",
         "options": [
-          "6 PM",
-          "8 PM",
-          "9 PM",
-          "10 PM"
+          "Line 3 travels between North End and South End.",
+          "Line 3 travels between Sunny Park and Main Street.",
+          "Line 3 travels between West Side and East Side.",
+          "Line 3 travels between Sunny School and Main Street."
         ],
-        "correct": 3,
-        "explanation": "The buses run until 10 PM."
+        "correct": 2
       },
       {
         "id": 6,
-        "question": "Which bus line goes to Sunny School?",
+        "question": "What is the total number of bus lines mentioned in the schedule?",
         "options": [
-          "Line 1",
-          "Line 3",
-          "Line 4",
-          "Line 5"
+          "There are 3 bus lines in the schedule.",
+          "There are 4 bus lines in the schedule.",
+          "There are 5 bus lines in the schedule.",
+          "There are 6 bus lines in the schedule."
         ],
-        "correct": 2,
-        "explanation": "Line 4 goes to Sunny School."
+        "correct": 2
       },
       {
         "id": 7,
-        "question": "How often does Line 5 arrive?",
+        "question": "Which bus line has the longest waiting time between arrivals?",
         "options": [
-          "Every 15 minutes",
-          "Every 25 minutes",
-          "Every 30 minutes",
-          "Every 40 minutes"
+          "Line 1 has the longest waiting time.",
+          "Line 2 has the longest waiting time.",
+          "Line 3 has the longest waiting time.",
+          "Line 5 has the longest waiting time."
         ],
-        "correct": 3,
-        "explanation": "Line 5 arrives every 40 minutes."
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "What should you have ready when boarding the bus?",
+        "question": "What is the destination of Line 1?",
         "options": [
-          "Your ticket",
-          "Your smartphone",
-          "Your fare",
-          "Your lunch"
+          "Line 1 goes to Sunny School.",
+          "Line 1 goes to East Side.",
+          "Line 1 goes to Main Street.",
+          "Line 1 goes to South End."
         ],
-        "correct": 2,
-        "explanation": "You should have your fare ready when you board the bus."
+        "correct": 2
       }
     ],
     "id": "part2-033"
@@ -3300,99 +3284,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What are the new hours for Monday to Friday?",
+        "question": "What is the new opening hour for the Maplewood Public Library on weekdays?",
         "options": [
-          "9:00 AM to 8:00 PM",
-          "10:00 AM to 5:00 PM",
-          "1:00 PM to 5:00 PM",
-          "Closed all day"
+          "The library opens at 8:00 AM and closes at 6:00 PM.",
+          "The library opens at 9:00 AM and closes at 8:00 PM.",
+          "The library opens at 10:00 AM and closes at 5:00 PM.",
+          "The library opens at 11:00 AM and closes at 7:00 PM."
         ],
-        "correct": 0,
-        "explanation": "Monday to Friday hours are 9:00 AM to 8:00 PM."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "When does the library open on Saturdays?",
+        "question": "On which day does the library open the latest?",
         "options": [
-          "9:00 AM",
-          "10:00 AM",
-          "1:00 PM",
-          "Closed"
+          "Monday opens at 9:00 AM.",
+          "Saturday opens at 10:00 AM.",
+          "Sunday opens at 1:00 PM.",
+          "Friday opens at 8:00 PM."
         ],
-        "correct": 1,
-        "explanation": "The library opens at 10:00 AM on Saturdays."
+        "correct": 2
       },
       {
         "id": 3,
-        "question": "What time does the library close on Sundays?",
+        "question": "What time does the library close on Saturdays?",
         "options": [
-          "5:00 PM",
-          "8:00 PM",
-          "9:00 PM",
-          "3:00 PM"
+          "It closes at 5:00 PM.",
+          "It closes at 6:00 PM.",
+          "It closes at 7:00 PM.",
+          "It closes at 8:00 PM."
         ],
-        "correct": 0,
-        "explanation": "The library closes at 5:00 PM on Sundays."
+        "correct": 0
       },
       {
         "id": 4,
-        "question": "Is the library open every day?",
+        "question": "What services are available during the library's opening hours?",
         "options": [
-          "Yes",
-          "No",
-          "Only on weekends",
-          "Only during the week"
+          "You can only borrow books during these hours.",
+          "You can borrow books and use computers.",
+          "You can attend programs only on weekends.",
+          "You can only attend programs on weekdays."
         ],
-        "correct": 0,
-        "explanation": "The library is open every day, starting November 1st."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What should you do if you need more information about events?",
+        "question": "When will the library be closed?",
         "options": [
-          "Visit the library",
-          "Visit the website",
-          "Call a friend",
-          "Wait for an email"
+          "The library will be closed on weekdays.",
+          "The library will be closed on holidays.",
+          "The library will be closed every Sunday.",
+          "The library will be closed all summer."
         ],
-        "correct": 1,
-        "explanation": "You can visit the website for information about events."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "What should you remember about the library?",
+        "question": "How can you get more information about library events?",
         "options": [
-          "It will be closed on holidays",
-          "It is always open",
-          "You cannot borrow books",
-          "It has no computers"
+          "Visit the library in person for brochures.",
+          "Call the library or visit their website.",
+          "Send an email to the library staff.",
+          "Ask other patrons at the library for details."
         ],
-        "correct": 0,
-        "explanation": "The library will be closed on holidays."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What can you do at the library?",
+        "question": "What is the opening time for the library on Sundays?",
         "options": [
-          "Take books home",
-          "Play video games",
-          "Do your laundry",
-          "Watch TV"
+          "The library opens at 10:00 AM on Sundays.",
+          "The library opens at 12:00 PM on Sundays.",
+          "The library opens at 1:00 PM on Sundays.",
+          "The library opens at 2:00 PM on Sundays."
         ],
-        "correct": 0,
-        "explanation": "You can borrow books at the library."
+        "correct": 2
       },
       {
         "id": 8,
-        "question": "What is the main topic of this passage?",
+        "question": "What is the purpose of the passage?",
         "options": [
-          "Library rules",
-          "Library opening hours",
-          "Library events",
-          "Library staff"
+          "To advertise a book sale happening soon.",
+          "To inform the public about new library hours.",
+          "To discuss the history of the Maplewood library.",
+          "To explain how to become a library member."
         ],
-        "correct": 1,
-        "explanation": "The main topic of the passage is the new opening hours of the library."
+        "correct": 1
       }
     ],
     "id": "part2-034"
@@ -3508,99 +3484,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary purpose of the Urban Transit Revitalization Initiative?",
+        "question": "What is the primary goal of the Urban Transit Revitalization Initiative in Toronto?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To reduce the overall population in urban areas.",
+          "To enhance public transportation efficiency and accessibility.",
+          "To increase private vehicle usage across the city.",
+          "To promote tourism in downtown Toronto."
         ],
-        "correct": 0,
-        "explanation": "The initiative aims to enhance public transportation efficiency and accessibility."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "According to the passage, what might exacerbate the challenges faced by the initiative?",
+        "question": "Which of the following is NOT mentioned as a key component of the initiative?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Expansion of subway lines.",
+          "Introduction of electric buses.",
+          "Development of dedicated bike lanes.",
+          "Construction of high-speed rail stations."
         ],
-        "correct": 1,
-        "explanation": "Insufficient funding could lead to overcrowding and service delays."
+        "correct": 3
       },
       {
         "id": 3,
-        "question": "Which phase of the initiative primarily concerns public consultations and funding acquisition?",
+        "question": "What concerns did stakeholders express regarding the initiative?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Possible environmental impacts of electric buses.",
+          "Insufficient funding could worsen existing challenges.",
+          "The need for more bike lanes in rural areas.",
+          "Increased traffic congestion in downtown Toronto."
         ],
-        "correct": 0,
-        "explanation": "Phase One is focused on public consultations and funding acquisition."
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "What critical challenge is mentioned regarding community involvement?",
+        "question": "According to the passage, what type of buses will be introduced in Toronto's transit system?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Diesel buses to reduce emissions.",
+          "Electric buses to improve sustainability.",
+          "Hybrid buses to increase efficiency.",
+          "Traditional buses to maintain current standards."
         ],
-        "correct": 3,
-        "explanation": "Community resistance is identified as a potential obstacle to the success of the initiative."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What approach does the initiative take toward urban growth?",
+        "question": "What is depicted in Diagram 1 of the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The layout of Toronto's historical sites.",
+          "Key components of the Urban Transit Revitalization Initiative.",
+          "The budget allocation for transportation projects.",
+          "Public opinions about current transit options."
         ],
-        "correct": 2,
-        "explanation": "It juxtaposes sustainable practices with urban growth."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "In which quarter is Phase One expected to be completed?",
+        "question": "What does the initiative aim to do regarding bike lanes?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Eliminate all existing bike lanes.",
+          "Develop dedicated bike lanes for safer cycling.",
+          "Restrict bike lanes to specific neighborhoods.",
+          "Increase the number of bike rental stations only."
         ],
-        "correct": 1,
-        "explanation": "Phase One is slated for completion by Q2 2024."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What strategy is deemed essential for the project's success?",
+        "question": "What is one expected benefit of the Urban Transit Revitalization Initiative?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Decreased public transportation costs for users.",
+          "Improved transportation efficiency and accessibility.",
+          "Increased traffic congestion during peak hours.",
+          "Reduction in the number of bike riders in the city."
         ],
-        "correct": 0,
-        "explanation": "Ongoing assessments and a transparent communication strategy are vital for success."
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "What might be a direct consequence of bureaucratic delays, as mentioned in the passage?",
+        "question": "What challenge does the passage indicate may affect the initiative?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Public opposition to new transit solutions.",
+          "Limited funding to support the initiative's goals.",
+          "Insufficient public interest in electric buses.",
+          "High construction costs for subway expansion."
         ],
-        "correct": 2,
-        "explanation": "Bureaucratic delays could hinder the timely implementation of the initiative."
+        "correct": 1
       }
     ],
     "id": "part2-036"
@@ -7032,91 +7000,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the price of fresh apples on sale?",
+        "question": "What is the regular price of Fresh Apples?",
         "options": [
-          "$1.00",
-          "$1.50",
-          "$2.00",
-          "$2.50"
+          "The regular price is $2.00 per pound.",
+          "The regular price is $1.50 per pound.",
+          "The regular price is $2.50 per pound.",
+          "The regular price is $3.00 per pound."
         ],
-        "correct": 1
+        "correct": 0
       },
       {
         "id": 2,
-        "question": "How much do customers save on milk during the promotion?",
+        "question": "How much is the discount on Milk (2L)?",
         "options": [
-          "$0.50",
-          "$0.75",
-          "$1.00",
-          "$1.50"
+          "The discount is $0.50 from the regular price.",
+          "The discount is $1.00 from the regular price.",
+          "The discount is $0.75 from the regular price.",
+          "The discount is $1.50 from the regular price."
         ],
         "correct": 0
       },
       {
         "id": 3,
-        "question": "What is the opening time on Sundays?",
+        "question": "What is the price of Whole Wheat Bread during the promotion?",
         "options": [
-          "8 AM",
-          "9 AM",
-          "10 AM",
-          "7 AM"
+          "Whole Wheat Bread is $2.00 on sale.",
+          "Whole Wheat Bread is $2.50 on sale.",
+          "Whole Wheat Bread is $3.00 on sale.",
+          "Whole Wheat Bread is $1.50 on sale."
         ],
-        "correct": 1
+        "correct": 0
       },
       {
         "id": 4,
-        "question": "How much is the discount for spending over $20?",
+        "question": "How much do Chicken Breasts cost per kilogram?",
         "options": [
-          "5%",
-          "10%",
-          "15%",
-          "20%"
+          "Chicken Breasts are $8.00 per kg.",
+          "Chicken Breasts are $7.50 per kg.",
+          "Chicken Breasts are $6.50 per kg.",
+          "Chicken Breasts are $7.00 per kg."
         ],
         "correct": 1
       },
       {
         "id": 5,
-        "question": "How much does a dozen eggs cost on sale?",
+        "question": "What is the regular price of a dozen Eggs?",
         "options": [
-          "$2.00",
-          "$2.50",
-          "$3.00",
-          "$3.50"
+          "The regular price is $2.50.",
+          "The regular price is $3.00.",
+          "The regular price is $2.00.",
+          "The regular price is $3.50."
         ],
         "correct": 1
       },
       {
         "id": 6,
-        "question": "What is the regular price of whole wheat bread?",
+        "question": "What additional offer is provided for customers spending over $20?",
         "options": [
-          "$2.00",
-          "$2.50",
-          "$3.00",
-          "$3.50"
+          "Customers receive a 10% off coupon.",
+          "Customers receive a free item of choice.",
+          "Customers receive a $5 gift card.",
+          "Customers receive free delivery for their order."
         ],
-        "correct": 1
+        "correct": 0
       },
       {
         "id": 7,
-        "question": "What day of the week does the store close at 8 PM?",
+        "question": "Which item has the highest discount percentage?",
         "options": [
-          "Sunday",
-          "Monday",
-          "Friday",
-          "Tuesday"
+          "Fresh Apples have the highest discount percentage.",
+          "Chicken Breasts have the highest discount percentage.",
+          "Whole Wheat Bread has the highest discount percentage.",
+          "Milk has the highest discount percentage."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "What is the promotion about?",
+        "question": "What is the total cost of purchasing 2 pounds of Fresh Apples?",
         "options": [
-          "Discounted electronics",
-          "Discounted groceries",
-          "Free samples of food",
-          "Free delivery services"
+          "The total cost is $3.00 for 2 pounds.",
+          "The total cost is $4.00 for 2 pounds.",
+          "The total cost is $5.00 for 2 pounds.",
+          "The total cost is $6.00 for 2 pounds."
         ],
-        "correct": 1
+        "correct": 0
       }
     ],
     "id": "part2-123"
@@ -7416,91 +7384,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What time does the Yoga Class start?",
+        "question": "What time does the Yoga Class start on Saturday?",
         "options": [
-          "9:00 AM",
-          "10:30 AM",
-          "1:00 PM",
-          "3:30 PM"
+          "The Yoga Class starts at 8:00 AM.",
+          "The Yoga Class starts at 9:00 AM.",
+          "The Yoga Class starts at 10:30 AM.",
+          "The Yoga Class starts at 11:00 AM."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which program runs immediately after the Cooking Workshop?",
+        "options": [
+          "The Art Class begins right after the Cooking Workshop.",
+          "The Yoga Class begins right after the Cooking Workshop.",
+          "The Family Movie Time begins right after the Cooking Workshop.",
+          "The Basketball Game begins right after the Cooking Workshop."
         ],
         "correct": 0
       },
       {
-        "id": 2,
-        "question": "Which program lasts longest?",
-        "options": [
-          "Yoga Class",
-          "Cooking Workshop",
-          "Art Class",
-          "Family Movie Time"
-        ],
-        "correct": 3
-      },
-      {
         "id": 3,
-        "question": "What is the location of the community centre?",
+        "question": "What is the duration of the Family Movie Time?",
         "options": [
-          "123 Maple St",
-          "456 Oak Rd",
-          "789 Pine Ave",
-          "101 Birch St"
+          "The Family Movie Time lasts for two hours.",
+          "The Family Movie Time lasts for one hour.",
+          "The Family Movie Time lasts for one and a half hours.",
+          "The Family Movie Time lasts for three hours."
         ],
         "correct": 0
       },
       {
         "id": 4,
-        "question": "How long does the Basketball Game last?",
+        "question": "What should participants do if they want to join a program that requires registration?",
         "options": [
-          "1 hour",
-          "1.5 hours",
-          "2 hours",
-          "2.5 hours"
+          "Call the centre for registration information.",
+          "Visit the centre’s front desk to sign up.",
+          "Attend the program without registration.",
+          "Email the centre for more details."
         ],
         "correct": 1
       },
       {
         "id": 5,
-        "question": "What is needed for some programs?",
+        "question": "What time does the Basketball Game start?",
         "options": [
-          "Payment",
-          "Registration",
-          "A partner",
-          "Special equipment"
+          "The Basketball Game starts at 2:00 PM.",
+          "The Basketball Game starts at 3:30 PM.",
+          "The Basketball Game starts at 5:00 PM.",
+          "The Basketball Game starts at 6:00 PM."
         ],
         "correct": 1
       },
       {
         "id": 6,
-        "question": "What time does the Family Movie Time begin?",
+        "question": "Are all programs at the Maple Leaf Community Centre free?",
         "options": [
-          "5:00 PM",
-          "6:00 PM",
-          "7:00 PM",
-          "8:00 PM"
+          "Yes, all programs are free for everyone.",
+          "No, some programs have a fee.",
+          "Only selected programs are free.",
+          "All programs require a registration fee."
         ],
-        "correct": 1
+        "correct": 0
       },
       {
         "id": 7,
-        "question": "What is the phone number for more information?",
+        "question": "How can participants get more information about the programs?",
         "options": [
-          "613-555-1235",
-          "613-555-1234",
-          "613-555-9876",
-          "613-555-0000"
+          "They can check the website for details.",
+          "They can call 613-555-1234 for more information.",
+          "They can visit local libraries for information.",
+          "They can ask friends who have attended before."
         ],
         "correct": 1
       },
       {
         "id": 8,
-        "question": "How many programs are offered on Saturday?",
+        "question": "What is the last program scheduled for Saturday?",
         "options": [
-          "3",
-          "4",
-          "5",
-          "6"
+          "The Yoga Class is the last program.",
+          "The Cooking Workshop is the last program.",
+          "The Art Class is the last program.",
+          "The Family Movie Time is the last program."
         ],
-        "correct": 2
+        "correct": 3
       }
     ],
     "id": "part2-127"
@@ -7704,91 +7672,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What time does the pool open on Mondays?",
+        "question": "What are the operating hours for the pool on Mondays?",
         "options": [
-          "10:00 AM",
-          "1:00 PM",
-          "12:00 PM",
-          "3:00 PM"
+          "The pool is open from 10:00 AM to 5:00 PM.",
+          "The pool operates from 1:00 PM to 6:00 PM.",
+          "The pool is open all day from 9:00 AM to 9:00 PM.",
+          "The pool opens at noon and closes at 8:00 PM."
         ],
         "correct": 1
       },
       {
         "id": 2,
-        "question": "When are swimming lessons available?",
+        "question": "When can swimming lessons be attended at the pool?",
         "options": [
-          "11:00 AM",
-          "3:00 PM",
-          "10:00 AM",
-          "5:00 PM"
+          "Swimming lessons are available on Tuesdays from 11:00 AM.",
+          "Lessons are scheduled on Mondays and Wednesdays from 3:00 PM to 4:00 PM.",
+          "Swimming lessons occur every day from 1:00 PM to 2:00 PM.",
+          "Swimming lessons are only available on Fridays at 4:00 PM."
         ],
         "correct": 1
       },
       {
         "id": 3,
-        "question": "On which day is there a 'Family Swim'?",
+        "question": "What special program is offered on Fridays?",
         "options": [
-          "Monday",
-          "Tuesday",
-          "Friday",
-          "Saturday"
+          "Family Swim is available from 3:00 PM to 8:00 PM.",
+          "Water aerobics takes place from 11:00 AM to 12:00 PM.",
+          "Private swimming lessons are held all day on Fridays.",
+          "The pool remains closed on Fridays for maintenance."
         ],
-        "correct": 2
+        "correct": 0
       },
       {
         "id": 4,
-        "question": "What are the Saturday hours?",
+        "question": "How does the pool schedule differ on Tuesdays compared to Mondays?",
         "options": [
-          "10:00 AM - 5:00 PM",
-          "1:00 PM - 6:00 PM",
-          "12:00 PM - 6:00 PM",
-          "3:00 PM - 8:00 PM"
+          "The pool opens earlier and has water aerobics on Tuesdays.",
+          "Tuesdays have longer hours than Mondays with no programs.",
+          "The pool opens later on Tuesdays than on Mondays.",
+          "There are no special programs on Tuesdays unlike Mondays."
         ],
-        "correct": 2
+        "correct": 0
       },
       {
         "id": 5,
-        "question": "When is water aerobics scheduled?",
+        "question": "What time does the pool open on Thursdays?",
         "options": [
-          "5:00 PM",
-          "11:00 AM",
-          "3:00 PM",
-          "6:00 PM"
+          "The pool opens at 1:00 PM on Thursdays.",
+          "The pool opens at 10:00 AM on Thursdays.",
+          "The pool opens at noon on Thursdays.",
+          "The pool is closed on Thursdays."
         ],
         "correct": 1
       },
       {
         "id": 6,
-        "question": "Is there a lifeguard on duty on Sundays?",
+        "question": "Which program is held on Wednesdays?",
         "options": [
-          "Yes",
-          "No",
-          "Only on weekends",
-          "Only on weekdays"
+          "Water aerobics is available from 10:00 AM to 11:00 AM.",
+          "Swimming lessons occur from 3:00 PM to 4:00 PM.",
+          "Family Swim is scheduled all day on Wednesdays.",
+          "There are no special programs on Wednesdays."
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What time does the pool close on Thursdays?",
+        "question": "What is the latest time the pool closes during the week?",
         "options": [
-          "5:00 PM",
-          "6:00 PM",
-          "8:00 PM",
-          "4:00 PM"
+          "The pool closes at 6:00 PM on Wednesdays.",
+          "The pool closes at 5:00 PM on Tuesdays.",
+          "The pool closes at 8:00 PM on Fridays.",
+          "The pool closes at 4:00 PM on Sundays."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 8,
-        "question": "How long do swimming lessons last?",
+        "question": "Which days have the same opening time for the pool?",
         "options": [
-          "1 hour",
-          "2 hours",
-          "30 minutes",
-          "1.5 hours"
+          "Mondays and Wednesdays both open at 1:00 PM.",
+          "Tuesdays and Thursdays both open at 10:00 AM.",
+          "Fridays and Saturdays both open at 3:00 PM.",
+          "Sundays and Mondays both open at noon."
         ],
-        "correct": 0
+        "correct": 1
       }
     ],
     "id": "part2-130"
@@ -8088,91 +8056,91 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is happening on the first Friday of the month?",
+        "question": "What is the location of the Maple Leaf Art Gallery?",
         "options": [
-          "New exhibition opening",
-          "Children's workshop",
-          "Artist talk",
-          "Gala event"
+          "It is located in downtown Toronto.",
+          "It is located in the suburbs of Ottawa.",
+          "It is located in downtown Ottawa.",
+          "It is located near the Ottawa River."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 2,
-        "question": "What time does the children's workshop start?",
+        "question": "When does the opening night for the new exhibition take place?",
         "options": [
-          "9 AM",
-          "10 AM",
-          "11 AM",
-          "12 PM"
+          "On the first Saturday of the month.",
+          "On the first Friday of the month.",
+          "On the last Sunday of the month.",
+          "On the second Friday of the month."
         ],
         "correct": 1
       },
       {
         "id": 3,
-        "question": "Who is speaking at the artist talk?",
+        "question": "What is the age range for the children's workshop?",
         "options": [
-          "A child",
-          "A local artist",
-          "A well-known painter",
-          "A gallery owner"
+          "Ages 3 to 6.",
+          "Ages 5 to 12.",
+          "Ages 7 to 15.",
+          "Ages 4 to 10."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What will be the focus of the children's workshop?",
+        "options": [
+          "Sculpture and collage techniques.",
+          "Painting and drawing skills.",
+          "Photography and digital art.",
+          "Art history and appreciation."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "When does the artist talk take place during the month?",
+        "options": [
+          "On the third Saturday at 3 PM.",
+          "On the first Sunday at 3 PM.",
+          "On the third Sunday at 3 PM.",
+          "On the second Friday at 3 PM."
         ],
         "correct": 2
       },
       {
-        "id": 4,
-        "question": "Is the artist talk free to attend?",
-        "options": [
-          "Yes",
-          "No",
-          "Tickets required",
-          "Donations only"
-        ],
-        "correct": 0
-      },
-      {
-        "id": 5,
-        "question": "When does the gala event take place?",
-        "options": [
-          "First Friday of the month",
-          "Second Saturday of the month",
-          "Third Sunday of the month",
-          "Last Friday of the month"
-        ],
-        "correct": 3
-      },
-      {
         "id": 6,
-        "question": "How old must children be to attend the workshop?",
+        "question": "Who will be speaking at the artist talk?",
         "options": [
-          "Under 5",
-          "5 to 12",
-          "12 to 15",
-          "Any age"
+          "A local art critic.",
+          "A well-known painter.",
+          "An art gallery curator.",
+          "A children's art instructor."
         ],
         "correct": 1
       },
       {
         "id": 7,
-        "question": "Where can tickets for the gala be purchased?",
+        "question": "What time does the opening night event start?",
         "options": [
-          "At the door",
-          "Only online",
-          "At the gallery",
-          "Both online and at the gallery"
+          "At 6 PM.",
+          "At 7 PM.",
+          "At 8 PM.",
+          "At 9 PM."
         ],
-        "correct": 3
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "What focus does the children's workshop have?",
+        "question": "How long does the opening night event last?",
         "options": [
-          "Photography",
-          "Sculpture",
-          "Painting and drawing",
-          "Digital art"
+          "For one hour.",
+          "For two hours.",
+          "For three hours.",
+          "For four hours."
         ],
-        "correct": 2
+        "correct": 1
       }
     ],
     "id": "part2-134"
@@ -10872,89 +10840,89 @@
     "questions": [
       {
         "id": 1,
-        "question": "What was the main focus of the CIHI study mentioned in the passage?",
+        "question": "What organization conducted the study on public health interventions?",
         "options": [
-          "Impact of nutrition education programs",
-          "Trends in emergency health services",
-          "Effectiveness of mental health policies",
-          "Chronic disease prevention strategies"
+          "The Canadian Institute for Health Information (CIHI)",
+          "The World Health Organization (WHO)",
+          "Health Canada (HC)",
+          "The Public Health Agency of Canada (PHAC)"
         ],
         "correct": 0
       },
       {
         "id": 2,
-        "question": "Which province saw the greatest reduction in diabetes rates according to the study?",
+        "question": "What was the main focus of the study mentioned in the passage?",
         "options": [
-          "Ontario",
-          "Alberta",
-          "British Columbia",
-          "Quebec"
+          "Evaluating the cost of health policies",
+          "Analyzing the effectiveness of public health interventions",
+          "Comparing health outcomes in rural areas",
+          "Studying the impact of climate change on health"
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "What factor was highlighted as crucial for sustaining long-term health improvements?",
+        "question": "Which provinces were included in the analysis of health policies?",
         "options": [
-          "Increased healthcare funding",
-          "Investment in public health infrastructure",
-          "Community health workshops",
-          "Expansion of hospital facilities"
+          "British Columbia, Alberta, and Ontario",
+          "Quebec, Manitoba, and Nova Scotia",
+          "Alberta, Saskatchewan, and Newfoundland",
+          "Ontario, Quebec, and British Columbia"
         ],
-        "correct": 1
+        "correct": 0
       },
       {
         "id": 4,
-        "question": "According to the passage, what percentage decrease in diabetes rates did Quebec experience?",
+        "question": "What chronic disease was specifically mentioned in the study?",
         "options": [
-          "15%",
-          "10%",
-          "5%",
-          "3%"
-        ],
-        "correct": 3
-      },
-      {
-        "id": 5,
-        "question": "What role do socio-economic factors play in the overall health outcomes as per the findings?",
-        "options": [
-          "Minor role",
-          "No role",
-          "Pivotal role",
-          "Secondary role"
+          "Heart disease",
+          "Cancer",
+          "Diabetes",
+          "Obesity"
         ],
         "correct": 2
       },
       {
-        "id": 6,
-        "question": "What is recommended for provinces in crafting public health initiatives?",
+        "id": 5,
+        "question": "What time frame did the study cover for evaluating health policies?",
         "options": [
-          "Increase funding for hospitals",
-          "Share best practices",
-          "Focus solely on nutrition education",
-          "Limit community engagement"
+          "2010 to 2015",
+          "2015 to 2020",
+          "2020 to 2025",
+          "2018 to 2023"
         ],
         "correct": 1
       },
       {
-        "id": 7,
-        "question": "Which of the following cities implemented comprehensive nutrition education in schools?",
+        "id": 6,
+        "question": "What type of health policy was highlighted in the study's findings?",
         "options": [
-          "Montreal",
-          "Vancouver",
-          "Toronto",
-          "Calgary"
+          "Comprehensive nutrition education programs",
+          "Increased funding for hospitals",
+          "Expansion of mental health services",
+          "Mandatory physical activity in schools"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What was the purpose of the chart mentioned in the passage?",
+        "options": [
+          "To show the rates of chronic diseases",
+          "To illustrate policy implementation correlations",
+          "To compare healthcare spending across provinces",
+          "To analyze public health data collection methods"
         ],
         "correct": 1
       },
       {
         "id": 8,
-        "question": "The study concluded regarding public health policies that they must:",
+        "question": "Which aspect of public health policy was evaluated in relation to diabetes rates?",
         "options": [
-          "Be uniform across all provinces",
-          "Include community engagement strategies",
-          "Prioritize economic factors",
-          "Reinforce hospital-centric approaches"
+          "Public awareness campaigns effectiveness",
+          "Correlation with specific health policies",
+          "Access to healthcare services",
+          "Insurance coverage for treatments"
         ],
         "correct": 1
       }

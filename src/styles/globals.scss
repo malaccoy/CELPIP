@@ -416,3 +416,50 @@ textarea {
   background: ds.$accent-primary;
   color: white;
 }
+
+// ============================================
+// 📱 MOBILE APP-LIKE ENHANCEMENTS
+// ============================================
+
+@media (max-width: 767px) {
+  // Bigger touch targets globally
+  button, a, [role="button"] {
+    min-height: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  // Smooth overscroll
+  html {
+    overscroll-behavior-y: none;
+  }
+  
+  body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
+  }
+  
+  // No text selection on interactive elements
+  nav, button, [role="button"], .navItem {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  // Card-like sections get bigger padding
+  section, [class*="card"], [class*="Card"] {
+    border-radius: 16px !important;
+  }
+  
+  // Smooth scroll
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+// Active press feedback for all interactive elements
+@media (max-width: 767px) {
+  button:active, a:active, [role="button"]:active {
+    transform: scale(0.97);
+    transition: transform 100ms ease;
+  }
+}

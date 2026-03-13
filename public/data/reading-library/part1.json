@@ -2307,135 +2307,124 @@
     "questions": [
       {
         "id": 1,
-        "section": "A",
-        "question": "What is the primary purpose of Sarah Johnson's initial email?",
+        "question": "What is the purpose of Sarah Johnson's email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To request information about the daycare's allergy policy.",
+          "To complain about the daycare's food offerings.",
+          "To suggest new menu items for the daycare.",
+          "To ask about enrollment procedures for her child."
         ],
         "correct": 0
       },
       {
         "id": 2,
-        "section": "A",
-        "question": "How does Sarah Johnson describe Ethan’s allergy?",
+        "question": "Who is the recipient of the email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Ethan Johnson",
+          "Sarah Johnson",
+          "Daycare Director",
+          "A school nurse"
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 3,
-        "section": "A",
-        "question": "What tone does the Daycare Director use in their response?",
+        "question": "What specific allergy is mentioned in the email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Dairy allergy",
+          "Gluten allergy",
+          "Nut allergy",
+          "Egg allergy"
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 4,
-        "section": "A",
-        "question": "What reassurance does the Daycare Director provide to Sarah Johnson?",
+        "question": "What concern does Sarah express in her email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "That her son might not enjoy the food.",
+          "That there is no allergy policy in place.",
+          "That her son might face risks due to his allergy.",
+          "That the daycare does not allow snacks."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 5,
-        "section": "A",
-        "question": "What does Sarah want to confirm in her last email?",
+        "question": "What does Sarah want to ensure regarding her son?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "That he makes friends at daycare.",
+          "That he has enough food to eat.",
+          "That measures are in place to protect him.",
+          "That he learns about allergies."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 6,
-        "section": "A",
-        "question": "What is implied about the daycare's allergy policy?",
+        "question": "What is the tone of Sarah's email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Angry and confrontational.",
+          "Professional and concerned.",
+          "Indifferent and casual.",
+          "Excited and playful."
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 7,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 1]",
+        "question": "What type of allergies is Sarah particularly concerned about?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Insect allergies.",
+          "Environmental allergies.",
+          "Food allergies.",
+          "Medication allergies."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 8,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 2]",
+        "question": "What might Sarah expect to receive in response to her email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "A detailed explanation of the daycare's allergy policy.",
+          "A list of all the foods served at daycare.",
+          "Information about other children's allergies.",
+          "A request for her son's medical history."
         ],
         "correct": 0
       },
       {
         "id": 9,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 3]",
+        "question": "How does Sarah address the recipient in her email?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Dear Sir or Madam,",
+          "To whom it may concern,",
+          "Hello, Daycare Director,",
+          "Dear Daycare Director,"
         ],
-        "correct": 0
+        "correct": 3
       },
       {
         "id": 10,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 4]",
+        "question": "What might Sarah be worried about regarding Ethan's time at daycare?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "He might not like the activities.",
+          "He could be exposed to allergens.",
+          "He might get lost during playtime.",
+          "He may not eat enough food."
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 11,
-        "section": "B",
-        "question": "Choose the best sentence for [BLANK 5]",
+        "question": "What is Ethan's relationship to Sarah?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Her nephew.",
+          "Her son.",
+          "Her friend.",
+          "Her cousin."
         ],
-        "correct": 0
+        "correct": 1
       }
     ],
     "id": "part1-18",
@@ -4690,135 +4679,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the main topic of the email?",
+        "question": "Who is the sender of the grocery list?",
         "options": [
-          "A grocery list",
-          "A job application",
-          "A holiday plan",
-          "A book recommendation"
+          "Sarah is the one sending the grocery list.",
+          "Emily is the sender of the grocery list.",
+          "The grocery list was sent by a mutual friend.",
+          "The sender is not mentioned in the passage."
         ],
-        "correct": 0,
-        "explanation": "The email is about a grocery list."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "Who is Emily writing to?",
+        "question": "How many liters of milk are requested in the grocery list?",
         "options": [
-          "Sarah",
-          "John",
-          "David",
-          "Michael"
+          "One liter of milk is requested.",
+          "Two liters of milk are requested.",
+          "Half a liter of milk is requested.",
+          "Three liters of milk are requested."
         ],
-        "correct": 0,
-        "explanation": "Emily is writing to Sarah."
+        "correct": 0
       },
       {
         "id": 3,
-        "question": "What does Emily want Sarah to buy?",
+        "question": "What type of bread does Emily want?",
         "options": [
-          "Furniture",
-          "Clothes",
-          "Grocery items",
-          "Books"
+          "White bread is preferred by Emily.",
+          "Whole grain bread is the preferred choice.",
+          "Sourdough bread is what she likes.",
+          "Any type of bread will do for Emily."
         ],
-        "correct": 2,
-        "explanation": "Emily wants Sarah to buy grocery items."
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "How much milk does Emily want?",
+        "question": "How many apples does Emily want Sarah to buy?",
         "options": [
-          "1 litre",
-          "2 litres",
-          "3 litres",
-          "0.5 litres"
+          "Emily wants Sarah to buy two apples.",
+          "Four apples are needed for the grocery list.",
+          "Sarah should buy six apples for Emily.",
+          "Emily does not mention any apples in her list."
         ],
-        "correct": 0,
-        "explanation": "Emily wants 1 litre of milk."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "How many apples does Emily want?",
+        "question": "What type of chicken is listed in the grocery items?",
         "options": [
-          "2",
-          "3",
-          "4",
-          "5"
+          "Emily requested organic chicken specifically.",
+          "One kilogram of regular chicken is requested.",
+          "Only chicken breasts are mentioned in the list.",
+          "Emily wants a whole chicken of any kind."
         ],
-        "correct": 2,
-        "explanation": "Emily wants 4 apples."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "What type of bread does Emily ask for?",
+        "question": "What additional item does Emily want Sarah to check for?",
         "options": [
-          "White bread",
-          "Whole grain bread",
-          "Rye bread",
-          "Sourdough bread"
+          "She wants Sarah to look for fruits.",
+          "Emily asks for some snacks to be checked.",
+          "Sarah should look for desserts exclusively.",
+          "Emily requests additional groceries only."
         ],
-        "correct": 1,
-        "explanation": "Emily asks for whole grain bread."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What additional items does Emily want Sarah to check for?",
+        "question": "Which snacks does Emily specifically mention?",
         "options": [
-          "Fruits",
-          "Snacks",
-          "Drinks",
-          "Vegetables"
+          "Emily mentions cookies and chips as her favorites.",
+          "The snacks Emily likes are chips and chocolate.",
+          "Emily asks for fruits and chocolate bars.",
+          "Only chocolate is mentioned as a snack preference."
         ],
-        "correct": 1,
-        "explanation": "Emily wants Sarah to check for snacks."
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "Which snack does Emily mention?",
+        "question": "When does Emily expect to see Sarah?",
         "options": [
-          "Cookies",
-          "Chips",
-          "Ice cream",
-          "Fruit"
+          "Emily is looking forward to seeing Sarah next week.",
+          "She mentions that she can't wait to see Sarah this weekend.",
+          "Emily expects Sarah to visit her next month.",
+          "There is no mention of when they will meet."
         ],
-        "correct": 1,
-        "explanation": "Emily mentions chips as a snack."
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "When does Emily plan to see Sarah?",
+        "question": "What type of spinach does Emily request?",
         "options": [
-          "Next week",
-          "This weekend",
-          "Tomorrow",
-          "Next month"
+          "Frozen spinach is what she prefers.",
+          "Emily requests fresh spinach in a bag.",
+          "Canned spinach is mentioned in her list.",
+          "Any type of spinach will be fine for her."
         ],
-        "correct": 1,
-        "explanation": "Emily plans to see Sarah this weekend."
+        "correct": 1
       },
       {
         "id": 10,
-        "question": "What kind of chicken does Emily want?",
+        "question": "What is the primary purpose of this passage?",
         "options": [
-          "Fried chicken",
-          "1 kg of chicken",
-          "Canned chicken",
-          "Chicken soup"
+          "To inform Sarah about grocery prices.",
+          "To share a grocery list for the week.",
+          "To discuss plans for a weekend trip.",
+          "To invite Sarah to a dinner party."
         ],
-        "correct": 1,
-        "explanation": "Emily wants 1 kg of chicken."
+        "correct": 1
       },
       {
         "id": 11,
-        "question": "What does Emily hope for Sarah?",
+        "question": "Which of the following items is NOT on the grocery list?",
         "options": [
-          "To buy her groceries",
-          "To have a good day",
-          "To move to another city",
-          "To read a book"
+          "Eggs are included in the grocery list.",
+          "Milk is one of the requested items.",
+          "Butter is mentioned as a grocery item.",
+          "Chicken is also listed as a necessary item."
         ],
-        "correct": 1,
-        "explanation": "Emily hopes Sarah is doing well."
+        "correct": 2
       }
     ],
     "id": "part1-035"
@@ -5670,135 +5648,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the main purpose of Jessica LaRose's email?",
+        "question": "What is the main subject of Dr. Thompson's inquiry?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The impact of urban development on transportation.",
+          "The effects of urban green spaces on mental health.",
+          "The benefits of urban agriculture in cities.",
+          "The role of technology in urban planning."
         ],
-        "correct": 2,
-        "explanation": "She is inquiring about advocating for equitable policies related to urban green spaces."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "What concern does Jessica raise regarding the proposed policy shifts?",
+        "question": "Which city is specifically mentioned in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Vancouver",
+          "Montreal",
+          "Toronto",
+          "Calgary"
         ],
-        "correct": 1,
-        "explanation": "They may neglect areas with historically lower socioeconomic status."
+        "correct": 2
       },
       {
         "id": 3,
-        "question": "Which city is the primary focus of the discussion in the email?",
+        "question": "What does the author express concern about?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The lack of funding for urban green spaces.",
+          "The decline of mental health in urban areas.",
+          "The overdevelopment of metropolitan regions.",
+          "The loss of wildlife in cities."
         ],
-        "correct": 0,
-        "explanation": "The focus is on Toronto, Canada."
+        "correct": 0
       },
       {
         "id": 4,
-        "question": "In the context of the email, what does 'exacerbate' refer to?",
+        "question": "What type of benefits does the passage attribute to green spaces?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Physical health improvements.",
+          "Psychological benefits and mental health.",
+          "Economic advantages for the community.",
+          "Increased property values in urban areas."
         ],
-        "correct": 3,
-        "explanation": "It refers to factors that worsen urban stressors."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "How does Jessica characterize access to green spaces in the email?",
+        "question": "What does the term 'flora-infused environments' refer to?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Areas without any vegetation.",
+          "Urban spaces filled with plants and trees.",
+          "Regions affected by pollution.",
+          "Buildings designed with green technology."
         ],
-        "correct": 2,
-        "explanation": "She notes that there are discernible disparities across neighborhoods."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "What tone does Jessica's email primarily convey?",
+        "question": "What initiative is mentioned alongside urban development?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Public transportation enhancements.",
+          "Environmental sustainability initiatives.",
+          "Economic growth strategies.",
+          "Cultural preservation projects."
         ],
-        "correct": 1,
-        "explanation": "The tone conveys concern and a call to action."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What does Jessica imply about the relationship between urban green spaces and mental health?",
+        "question": "What kind of evidence is referenced in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Scientific studies on urban heat.",
+          "Statistical data on city populations.",
+          "Evidence of psychological benefits from nature.",
+          "Historical accounts of urban expansion."
         ],
-        "correct": 2,
-        "explanation": "She implies that green spaces can improve mental health by mitigating stress."
+        "correct": 2
       },
       {
         "id": 8,
-        "question": "What type of projects does Jessica advocate for?",
+        "question": "What is the author's purpose in writing this letter?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To request funding for new parks.",
+          "To discuss urban development challenges.",
+          "To inquire about mental health research.",
+          "To promote community gardening projects."
         ],
-        "correct": 0,
-        "explanation": "She advocates for the development of urban green spaces."
+        "correct": 2
       },
       {
         "id": 9,
-        "question": "Which stakeholders might be most affected by the policy changes mentioned in the email?",
+        "question": "What aspect of urban green spaces is emphasized in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Their aesthetic appeal in cities.",
+          "Their role in climate change mitigation.",
+          "Their contributions to mental health.",
+          "Their maintenance and upkeep costs."
         ],
-        "correct": 3,
-        "explanation": "Individuals in low socioeconomic neighborhoods are most affected."
+        "correct": 2
       },
       {
         "id": 10,
-        "question": "What is suggested by the phrase 'flora-infused environments'?",
+        "question": "Who is the recipient of the inquiry letter?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Dr. Smith",
+          "Dr. Johnson",
+          "Dr. Thompson",
+          "Dr. Lee"
         ],
-        "correct": 1,
-        "explanation": "It refers to environments enriched with plant life."
+        "correct": 2
       },
       {
         "id": 11,
-        "question": "What might be a potential outcome of equitable access to green spaces?",
+        "question": "What challenge does the author highlight regarding urban green spaces?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Insufficient public awareness of their benefits.",
+          "Conflicts with urban housing needs.",
+          "The lack of scientific studies supporting their value.",
+          "Challenges in funding and resource allocation."
         ],
-        "correct": 0,
-        "explanation": "It could foster mental health resilience and community cohesion."
+        "correct": 3
       }
     ],
     "id": "part1-042"
@@ -6510,135 +6477,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is Jessica Smith's primary purpose in writing this email?",
+        "question": "What is the main purpose of the letter addressed to the Transit Authority?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To suggest new subway routes for the city.",
+          "To express concerns about the subway expansion.",
+          "To request funding for public transit improvements.",
+          "To praise the current state of urban transit."
         ],
-        "correct": 0,
-        "explanation": "She expresses concerns regarding the subway expansion."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "According to the passage, which of the following is a potential consequence of the subway expansion?",
+        "question": "What does the author believe about the proposed subway expansion?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It will economically benefit all neighborhoods equally.",
+          "It may worsen social and environmental issues.",
+          "It will significantly reduce traffic congestion.",
+          "It will create new job opportunities in Toronto."
         ],
-        "correct": 1,
-        "explanation": "Gentrification and social inequities are mentioned."
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "The term 'juxtaposes' in this context most likely means:",
+        "question": "According to the author, which neighborhoods are affected by the proposed subway route?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Only affluent neighborhoods will benefit.",
+          "It connects affluent and historically marginalized areas.",
+          "All neighborhoods will see equal improvements.",
+          "Only historically marginalized neighborhoods are included."
         ],
-        "correct": 2,
-        "explanation": "It implies placing contrasting elements side by side."
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "What concerns does Jessica raise regarding funding?",
+        "question": "What social issue does the author highlight in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The need for more public transportation options.",
+          "The potential for gentrification in some areas.",
+          "The rising cost of living in affluent neighborhoods.",
+          "The lack of community involvement in planning."
         ],
-        "correct": 3,
-        "explanation": "She questions the sustainability and potential profit motives."
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What does Jessica imply about community consultation?",
+        "question": "What are the author's concerns about the environmental impact of the subway expansion?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It may lead to increased pollution in affluent areas.",
+          "It could harm wildlife in the city.",
+          "The passage does not mention environmental concerns.",
+          "It will improve air quality for all neighborhoods."
         ],
-        "correct": 1,
-        "explanation": "She emphasizes its importance for inclusive representation."
+        "correct": 0
       },
       {
         "id": 6,
-        "question": "What tone does Jessica adopt in her email?",
+        "question": "What is a potential consequence of the proposed subway expansion mentioned in the letter?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It will lead to more affordable housing options.",
+          "It may deepen existing social inequities in Toronto.",
+          "It will unite all neighborhoods economically.",
+          "It will increase access to public services."
         ],
-        "correct": 0,
-        "explanation": "Her tone is concerned yet hopeful for a deliberative process."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "Which statement best conveys Jessica's view of the transit authority's approach?",
+        "question": "What is the tone of the author's message in the letter?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Optimistic and supportive of the project.",
+          "Concerned and critical of the proposed plan.",
+          "Indifferent to the transit developments.",
+          "Overly enthusiastic about urban improvements."
         ],
-        "correct": 2,
-        "explanation": "She suggests it may neglect critical social dynamics."
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "The phrase 'fiscal mismanagement' implies which of the following?",
+        "question": "How does the author feel about the benefits of infrastructure improvements?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "They believe benefits are guaranteed for everyone.",
+          "They believe benefits are overstated and misleading.",
+          "They think benefits will only reach affluent areas.",
+          "They are indifferent to infrastructure benefits."
         ],
-        "correct": 1,
-        "explanation": "It suggests poor management of financial resources."
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "How does Jessica characterize the benefits of the proposed subway project?",
+        "question": "What underlying issue does the author imply about urban transit planning?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It prioritizes affluent neighborhoods over others.",
+          "It is well-researched and considers all communities.",
+          "It is not necessary for the city's growth.",
+          "It ensures equal access to all residents."
         ],
-        "correct": 3,
-        "explanation": "She views them as superficial without addressing societal issues."
+        "correct": 0
       },
       {
         "id": 10,
-        "question": "In the context of this email, the term 'public interest' refers to:",
+        "question": "What action does the author likely want from the Transit Authority?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To proceed with the subway expansion as planned.",
+          "To reconsider the impact of the expansion on communities.",
+          "To increase funding for public transportation.",
+          "To hold public consultations for feedback."
         ],
-        "correct": 2,
-        "explanation": "It denotes the broader community needs versus private profit."
+        "correct": 1
       },
       {
         "id": 11,
-        "question": "What is implied about the involvement of private-sector partnerships?",
+        "question": "What specific group does the author express concern for?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Wealthy residents who will benefit from the project.",
+          "Historically marginalized communities in Toronto.",
+          "Transit workers who may lose jobs.",
+          "Tourists who rely on public transit."
         ],
-        "correct": 1,
-        "explanation": "Their involvement might jeopardize the project's public focus."
+        "correct": 1
       }
     ],
     "id": "part1-048"
@@ -6790,135 +6746,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary purpose of the proposed amendments to Toronto's urban planning regulations?",
+        "question": "What is the main purpose of the proposed changes to urban planning regulations in Toronto?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To increase the city's population density significantly.",
+          "To improve conditions for urban development and sustainability.",
+          "To eliminate congestion and create more parking spaces.",
+          "To reduce the budget for city infrastructure projects."
         ],
-        "correct": 1,
-        "explanation": "The primary purpose is to alleviate congestion and enhance sustainability."
+        "correct": 1
       },
       {
         "id": 2,
-        "question": "Which term is used to describe developments that serve multiple purposes, as mentioned in the passage?",
+        "question": "Who is addressing the stakeholders in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The Mayor of Toronto.",
+          "A representative from the City Council.",
+          "An urban planning consultant.",
+          "The Governor of Ontario."
         ],
-        "correct": 0,
-        "explanation": "The term 'mixed-use developments' is explicitly mentioned."
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "What concern do some residents have regarding the proposed changes?",
+        "question": "What does the City Council aim to balance with economic growth?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Environmental stewardship and community involvement.",
+          "Public transportation and housing development.",
+          "Public safety and economic stability.",
+          "Environmental stewardship and sustainability."
         ],
-        "correct": 3,
-        "explanation": "Residents are concerned about potential overdevelopment."
+        "correct": 3
       },
       {
         "id": 4,
-        "question": "In which way does the Council aim to juxtapose their objectives?",
+        "question": "Which city is specifically mentioned in the proposed changes?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Vancouver.",
+          "Montreal.",
+          "Toronto.",
+          "Ottawa."
         ],
-        "correct": 1,
-        "explanation": "The Council aims to juxtapose economic growth with environmental stewardship."
+        "correct": 2
       },
       {
         "id": 5,
-        "question": "What is implied as a necessary step before finalizing the proposal?",
+        "question": "What issue is highlighted as a challenge faced by urban centers?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "High real estate prices.",
+          "Increased congestion in the metropolitan area.",
+          "Lack of public transportation options.",
+          "Declining population rates."
         ],
-        "correct": 2,
-        "explanation": "Community feedback is implied to be necessary before finalizing the proposal."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "What tone does Emily Chen's email convey regarding the proposed changes?",
+        "question": "What is NOT mentioned as a goal of the proposed amendments?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Enhancing sustainability throughout the metropolitan area.",
+          "Alleviating urban congestion.",
+          "Promoting affordable housing developments.",
+          "Juxtaposing economic growth with environmental concerns."
         ],
-        "correct": 0,
-        "explanation": "The tone is collaborative, inviting stakeholders to provide feedback."
+        "correct": 2
       },
       {
         "id": 7,
-        "question": "Why does the Council consider the long-term benefits of the changes?",
+        "question": "What tone does the City Council use in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Defensive and critical.",
+          "Optimistic and collaborative.",
+          "Cautious and dismissive.",
+          "Urgent and demanding."
         ],
-        "correct": 3,
-        "explanation": "The long-term benefits are related to creating a vibrant and accessible urban landscape."
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "Which of the following best describes the City Council's approach to the proposed regulations?",
+        "question": "What aspect of development does the Council emphasize in their proposal?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Maximizing profit for developers.",
+          "Environmental protection alongside economic growth.",
+          "Increasing the number of residential skyscrapers.",
+          "Eliminating all zoning restrictions."
         ],
-        "correct": 2,
-        "explanation": "The Council takes a balanced approach, aiming for growth while considering environmental impact."
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "What role does Emily Chen hold?",
+        "question": "What is the intended outcome of these regulatory changes?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To facilitate rapid urban expansion without limits.",
+          "To ensure the city meets its growth needs sustainably.",
+          "To attract multinational corporations to the city.",
+          "To reduce taxes for city residents."
         ],
-        "correct": 3,
-        "explanation": "Emily Chen is the Urban Planning Director for the City of Toronto."
+        "correct": 1
       },
       {
         "id": 10,
-        "question": "What is the deadline for stakeholders to provide feedback on the proposal?",
+        "question": "What is a likely consequence of the proposed urban planning changes?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Decreased public transportation funding.",
+          "Increased collaboration between stakeholders.",
+          "Higher taxes for urban residents.",
+          "Diminished emphasis on community feedback."
         ],
-        "correct": 1,
-        "explanation": "The email states that insights should be provided by the end of the month."
+        "correct": 1
       },
       {
         "id": 11,
-        "question": "Which of the following aspects is NOT addressed in the proposed regulations?",
+        "question": "What does the phrase 'juxtapose economic growth with environmental stewardship' imply?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To prioritize economic growth over all other factors.",
+          "To find a way to balance development and environmental care.",
+          "To ignore environmental concerns during planning.",
+          "To eliminate economic growth for the sake of the environment."
         ],
-        "correct": 2,
-        "explanation": "The proposed regulations do not address specific zoning laws, they focus on mixed-use development and sustainability."
+        "correct": 1
       }
     ],
     "id": "part1-050"
@@ -7059,124 +7004,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the main purpose of the email?",
+        "question": "What is the main purpose of the message?",
         "options": [
-          "To announce a yoga class",
-          "To sell yoga mats",
-          "To invite people to a party",
-          "To discuss community issues"
+          "To announce a new yoga class at a community centre.",
+          "To encourage residents to participate in local events.",
+          "To provide information about a new fitness program.",
+          "To invite neighbours to a community meeting."
         ],
         "correct": 0
       },
       {
         "id": 2,
-        "question": "When does the yoga class begin?",
+        "question": "Where will the yoga class be held?",
         "options": [
-          "January 10th",
-          "February 10th",
-          "December 10th",
-          "March 10th"
+          "At the Maple Leaf Community Centre.",
+          "In a local park in Toronto.",
+          "At a private residence in Toronto.",
+          "At a nearby gym facility."
         ],
         "correct": 0
       },
       {
         "id": 3,
-        "question": "How long does each yoga session last?",
+        "question": "When is the first yoga class scheduled?",
         "options": [
-          "30 minutes",
-          "1 hour",
-          "2 hours",
-          "45 minutes"
+          "On January 1st.",
+          "On January 10th.",
+          "On January 15th.",
+          "On January 20th."
         ],
         "correct": 1
       },
       {
         "id": 4,
-        "question": "Who is the instructor of the yoga class?",
+        "question": "How often will the yoga class be held?",
         "options": [
-          "Ms. Sarah Thompson",
-          "Ms. Linda Chang",
-          "Mr. John Doe",
-          "Mrs. Emily Green"
+          "Every Monday at 6:00 PM.",
+          "Every Tuesday at 5:00 PM.",
+          "Every Wednesday at 6:00 PM.",
+          "Every Thursday at 7:00 PM."
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 5,
         "question": "What should participants bring to the yoga class?",
         "options": [
-          "A towel",
-          "A yoga mat",
-          "A blanket",
-          "A pillow"
+          "A yoga mat and a water bottle.",
+          "A towel and a yoga block.",
+          "A fitness journal and a friend.",
+          "A blanket and some snacks."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "Who is the instructor for the yoga class?",
+        "options": [
+          "Ms. Linda Chang, a certified yoga teacher.",
+          "Mr. John Smith, a fitness trainer.",
+          "Ms. Sarah Lee, a meditation expert.",
+          "Mr. David Kim, a personal coach."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 7,
+        "question": "What is the duration of each yoga session?",
+        "options": [
+          "Thirty minutes.",
+          "One hour.",
+          "Ninety minutes.",
+          "Two hours."
         ],
         "correct": 1
       },
       {
-        "id": 6,
-        "question": "What is the cost for one session of the yoga class?",
-        "options": [
-          "$20",
-          "$15",
-          "$10",
-          "$5"
-        ],
-        "correct": 2
-      },
-      {
-        "id": 7,
-        "question": "What is the price of the monthly pass?",
-        "options": [
-          "$15",
-          "$25",
-          "$35",
-          "$45"
-        ],
-        "correct": 2
-      },
-      {
         "id": 8,
-        "question": "How can people register for the yoga class?",
+        "question": "Who is the intended audience for the yoga class?",
         "options": [
-          "By visiting the community centre",
-          "By replying to the email or calling",
-          "By sending a letter",
-          "By texting"
+          "Only experienced yoga practitioners.",
+          "Beginners and fitness enthusiasts.",
+          "Teenagers looking for fun activities.",
+          "Seniors seeking social interaction."
         ],
         "correct": 1
       },
       {
         "id": 9,
-        "question": "On which day of the week does the yoga class occur?",
+        "question": "Is there any cost mentioned for the yoga class?",
         "options": [
-          "Monday",
-          "Saturday",
-          "Wednesday",
-          "Friday"
-        ],
-        "correct": 2
-      },
-      {
-        "id": 10,
-        "question": "Who wrote the email?",
-        "options": [
-          "Linda Chang",
-          "Sarah Thompson",
-          "A community member",
-          "The yoga instructor"
+          "Yes, a fee of $10 per class.",
+          "No, the class is free of charge.",
+          "Yes, a membership is required.",
+          "No, but donations are accepted."
         ],
         "correct": 1
       },
       {
-        "id": 11,
-        "question": "Where is the yoga class being held?",
+        "id": 10,
+        "question": "What city is the Maple Leaf Community Centre located in?",
         "options": [
-          "Maple Leaf Community Centre",
-          "Downtown Toronto",
-          "City Hall",
-          "In a park"
+          "Vancouver.",
+          "Montreal.",
+          "Toronto.",
+          "Calgary."
         ],
-        "correct": 0
+        "correct": 2
+      },
+      {
+        "id": 11,
+        "question": "What is the tone of the message?",
+        "options": [
+          "Formal and informative.",
+          "Casual and friendly.",
+          "Urgent and serious.",
+          "Persuasive and marketing-oriented."
+        ],
+        "correct": 1
       }
     ],
     "id": "part1-052"
@@ -7575,124 +7520,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the purpose of the email?",
+        "question": "What is the main event being announced in the passage?",
         "options": [
-          "To announce a winter clothing sale",
-          "To invite customers to a wedding",
-          "To offer free food samples",
-          "To discuss parking issues"
-        ],
-        "correct": 0
-      },
-      {
-        "id": 2,
-        "question": "When will the sale take place?",
-        "options": [
-          "From January 1st to January 10th",
-          "From December 1st to December 10th",
-          "From November 1st to November 10th",
-          "From December 5th to December 15th"
+          "A summer clothing sale at Maple Mall.",
+          "An annual Winter Clothing Sale at Maple Mall.",
+          "A special promotion on winter footwear only.",
+          "A clearance sale for all seasonal clothing."
         ],
         "correct": 1
       },
       {
-        "id": 3,
-        "question": "What time does the store open during the sale?",
+        "id": 2,
+        "question": "When will the Winter Clothing Sale take place?",
         "options": [
-          "10 AM",
-          "8 AM",
-          "9 AM",
-          "11 AM"
+          "From December 1st to December 10th.",
+          "From November 30th to December 5th.",
+          "Throughout the entire month of December.",
+          "On weekends only in December."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What types of clothing will be on sale?",
+        "options": [
+          "Only jackets and boots.",
+          "Winter clothing including jackets, sweaters, and boots.",
+          "Casual and summer clothing.",
+          "All types of outdoor apparel."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time will the store open during the sale?",
+        "options": [
+          "At 10 AM each day.",
+          "At 8 AM on weekends.",
+          "At 9 AM each day during the sale.",
+          "At 7 AM for early bird shoppers."
         ],
         "correct": 2
       },
       {
-        "id": 4,
-        "question": "What is the maximum discount available during the sale?",
-        "options": [
-          "20%",
-          "30%",
-          "40%",
-          "50%"
-        ],
-        "correct": 3
-      },
-      {
         "id": 5,
-        "question": "What type of activities will be available?",
+        "question": "What is the maximum discount offered during the sale?",
         "options": [
-          "Fashion shows",
-          "Children's activities",
-          "Cooking classes",
-          "Art exhibitions"
+          "Up to 30% off on select items.",
+          "Up to 50% off on all winter clothing.",
+          "Flat 20% off on all purchases.",
+          "No discounts are available at this sale."
         ],
         "correct": 1
       },
       {
         "id": 6,
-        "question": "What kind of beverages will be available?",
+        "question": "What special promotion will occur on weekends?",
         "options": [
-          "Cold drinks",
-          "Warm beverages",
-          "Alcoholic drinks",
-          "Soda"
+          "Free gifts with any purchase.",
+          "A raffle for a $100 gift card.",
+          "Discounts on summer clothing.",
+          "Extended shopping hours until 11 PM."
         ],
         "correct": 1
       },
       {
         "id": 7,
-        "question": "What is the prize for the raffle during the weekends?",
+        "question": "Who is the announcement addressed to?",
         "options": [
-          "A winter coat",
-          "A $100 gift card",
-          "A shopping bag",
-          "A free meal"
+          "New customers only.",
+          "All local businesses.",
+          "Valued customers of Maple Mall.",
+          "Only online shoppers."
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 8,
-        "question": "Who should you contact for questions?",
+        "question": "What is the purpose of the passage?",
         "options": [
-          "The mall manager",
-          "Customer service",
-          "The store owner",
-          "The janitor"
+          "To inform customers about a summer sale.",
+          "To announce a winter clothing sale and its details.",
+          "To promote the mall's new winter collection.",
+          "To provide information about holiday hours."
         ],
         "correct": 1
       },
       {
         "id": 9,
-        "question": "What type of clothing is on sale?",
+        "question": "Which of the following items is NOT mentioned as being on sale?",
         "options": [
-          "Summer clothes",
-          "Winter clothing",
-          "Formal wear",
-          "Sports gear"
+          "Boots.",
+          "Sweaters.",
+          "Jackets.",
+          "Scarves."
         ],
-        "correct": 1
+        "correct": 3
       },
       {
         "id": 10,
-        "question": "Is the event for adults only?",
+        "question": "What should customers be prepared for during the sale?",
         "options": [
-          "Yes",
-          "No",
-          "Only for teenagers",
-          "Only for seniors"
+          "Long lines and limited stock.",
+          "Exclusive online deals only.",
+          "Early opening hours and great discounts.",
+          "A chance to meet fashion designers."
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 11,
-        "question": "What is the name of the mall?",
+        "question": "What is the tone of the announcement?",
         "options": [
-          "Sunny Mall",
-          "Maple Mall",
-          "Oak Mall",
-          "River Mall"
+          "Excited and welcoming.",
+          "Formal and serious.",
+          "Casual and indifferent.",
+          "Urgent and alarming."
         ],
-        "correct": 1
+        "correct": 0
       }
     ],
     "id": "part1-056"
@@ -7704,124 +7649,113 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the main purpose of the email?",
+        "question": "What does Maple Mall request from its customers after their visit?",
         "options": [
-          "To invite customers to a concert",
-          "To ask for feedback on a shopping experience",
-          "To announce a new store opening",
-          "To promote a restaurant"
+          "Feedback through a short survey about their shopping experience.",
+          "A detailed report on their shopping preferences during the visit.",
+          "A list of items they wish were available at the mall.",
+          "Suggestions for new stores to open in the mall."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What types of products can customers find at Maple Mall?",
+        "options": [
+          "Only electronics and clothing.",
+          "Clothing, electronics, groceries, and more.",
+          "Only groceries and cosmetics.",
+          "A mix of food and home decor items."
         ],
         "correct": 1
       },
       {
-        "id": 2,
-        "question": "What discount can customers get on shoes this weekend?",
-        "options": [
-          "10%",
-          "15%",
-          "20%",
-          "25%"
-        ],
-        "correct": 2
-      },
-      {
         "id": 3,
-        "question": "What type of stores are in Maple Mall?",
+        "question": "What special offers are available this weekend at Maple Mall?",
         "options": [
-          "Only clothing stores",
-          "Clothing, electronics, and groceries",
-          "Only grocery stores",
-          "Only electronics stores"
+          "30% off on clothing and groceries.",
+          "20% off on shoes and 15% off on electronics.",
+          "Discounts on all items in every store.",
+          "Buy one get one free on selected items."
         ],
         "correct": 1
       },
       {
         "id": 4,
-        "question": "Who is the manager of Maple Mall?",
+        "question": "Which store is offering a 20% discount on shoes?",
         "options": [
-          "John Smith",
-          "Sarah Johnson",
-          "Emily Davis",
-          "Michael Brown"
+          "Tech World is offering the discount.",
+          "Happy Feet is offering the discount.",
+          "Maple Mall has no shoe stores.",
+          "Grocery Galore is offering the discount."
         ],
         "correct": 1
       },
       {
         "id": 5,
-        "question": "How can customers contact customer service?",
+        "question": "What discount is being offered on all electronics at Tech World?",
         "options": [
-          "By visiting the mall only",
-          "By calling or visiting the website",
-          "By sending a letter",
-          "By texting a number"
+          "10% off on all electronics.",
+          "5% off on select electronics.",
+          "15% off on all electronics.",
+          "20% off on select electronics."
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 6,
-        "question": "What is the name of the electronic store mentioned?",
+        "question": "Why does Maple Mall want customer feedback?",
         "options": [
-          "Happy Feet",
-          "Tech World",
-          "Mall Electronics",
-          "Gadget Store"
+          "To increase their store rents.",
+          "To improve their services based on customer experience.",
+          "To decide which stores to close.",
+          "To promote their new advertising campaign."
         ],
         "correct": 1
       },
       {
         "id": 7,
-        "question": "How much discount is offered on electronics?",
+        "question": "How does Maple Mall regard its customers?",
         "options": [
-          "5%",
-          "10%",
-          "15%",
-          "20%"
+          "As temporary visitors to the mall.",
+          "As valued customers whose opinions matter.",
+          "As just a source of revenue.",
+          "As individuals who rarely return."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "Which program can customers join to earn points?",
+        "question": "What is the purpose of the short survey mentioned in the passage?",
         "options": [
-          "Birthday Club",
-          "Loyalty Program",
-          "Membership Program",
-          "Discount Club"
+          "To collect data for future marketing.",
+          "To gather feedback to enhance shopping experience.",
+          "To determine the best-selling products.",
+          "To invite customers to future events."
         ],
         "correct": 1
       },
       {
         "id": 9,
-        "question": "What can customers use their points for?",
+        "question": "What does Maple Mall hope customers felt during their visit?",
         "options": [
-          "To buy groceries",
-          "For discounts on future purchases",
-          "To enter contests",
-          "For free gifts"
+          "Confused and frustrated with the layout.",
+          "Bored and uninterested in the stores.",
+          "A great shopping experience overall.",
+          "Indifferent towards the products offered."
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 10,
-        "question": "What should customers do if they have questions?",
+        "question": "What type of sale is happening this weekend at Maple Mall?",
         "options": [
-          "Ask a store employee",
-          "Contact customer service",
-          "Leave the mall",
-          "Do nothing"
+          "A clearance sale on seasonal items.",
+          "A special sale with discounts at several stores.",
+          "A member-exclusive sale only.",
+          "A promotional event with free giveaways."
         ],
         "correct": 1
-      },
-      {
-        "id": 11,
-        "question": "Where can customers find more information about Maple Mall?",
-        "options": [
-          "In the newspaper",
-          "On social media",
-          "At their website",
-          "At other malls"
-        ],
-        "correct": 2
       }
     ],
     "id": "part1-057"
@@ -9639,125 +9573,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary purpose of Emily Jackson's email?",
+        "question": "What is the primary purpose of the recent updates to the environmental policy?",
         "options": [
-          "To announce new construction projects",
-          "To clarify environmental policy updates",
-          "To invite Dr. Nguyen to a workshop",
-          "To discuss urban development in Toronto"
+          "To increase urban development in Toronto",
+          "To clarify regulations on climate change",
+          "To mitigate climate change impacts and improve urban life quality",
+          "To reduce construction costs for new projects"
         ],
-        "correct": 1
+        "correct": 2
       },
       {
         "id": 2,
-        "question": "Which aspect of the new policy is emphasized in the letter?",
+        "question": "Who is the intended recipient of the message?",
         "options": [
-          "Focus on economic growth",
-          "Implementation of community engagement",
-          "Reduction of construction costs",
-          "Promotion of traditional building materials"
+          "Dr. Smith",
+          "Dr. Nguyen",
+          "The city council",
+          "Urban developers"
         ],
         "correct": 1
       },
       {
         "id": 3,
-        "question": "What new requirement has been added to the Environmental Impact Assessment process?",
+        "question": "What specific area does the environmental policy focus on?",
         "options": [
-          "Assessing long-term economic benefits",
-          "Including social dimensions and community engagement",
-          "Eliminating the need for assessments",
-          "Focusing solely on ecological outcomes"
+          "Rural development",
+          "Urban development in Toronto",
+          "Environmental education",
+          "Public transportation"
         ],
         "correct": 1
       },
       {
         "id": 4,
-        "question": "What type of materials does the new policy prioritize?",
+        "question": "What must all new construction projects undergo according to the policy?",
         "options": [
-          "Cost-effective options",
-          "Traditional building materials",
-          "Materials meeting high environmental standards",
-          "Locally sourced materials"
+          "A financial audit",
+          "A public consultation",
+          "An environmental impact assessment",
+          "A structural integrity inspection"
         ],
         "correct": 2
       },
       {
         "id": 5,
-        "question": "How does the policy aim to affect Toronto's future?",
+        "question": "What are the two main goals of the new regulations mentioned?",
         "options": [
-          "By promoting high-rise buildings",
-          "By leading in sustainable urban development",
-          "By reducing government regulations",
-          "By decreasing community involvement"
+          "Enhancing construction efficiency and reducing costs",
+          "Mitigating climate change impacts and enhancing urban life quality",
+          "Increasing green spaces and lowering taxes",
+          "Improving traffic flow and reducing pollution"
         ],
         "correct": 1
       },
       {
         "id": 6,
-        "question": "What role does Emily Jackson suggest Dr. Nguyen's expertise could play?",
+        "question": "How does the message address Dr. Nguyen?",
         "options": [
-          "Providing legal advice only",
-          "Facilitating community workshops",
-          "Contributing insights in discussions",
-          "Drafting new regulations"
+          "Dear esteemed colleague",
+          "Dear Dr. Nguyen",
+          "Hello Dr. Nguyen",
+          "To whom it may concern"
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What is mentioned as a key goal over the next decade?",
+        "question": "What aspect of urban life does the new policy aim to enhance?",
         "options": [
-          "Reduce housing prices",
-          "Increase urban population",
-          "Transition to a circular economy",
-          "Enhance transportation infrastructure"
+          "Economic growth",
+          "Quality of life for residents",
+          "Transportation systems",
+          "Public safety measures"
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 8,
-        "question": "What tone does Emily Jackson use in her email?",
+        "question": "What does the policy aim to mitigate?",
         "options": [
-          "Formal and informative",
-          "Casual and friendly",
-          "Critical and accusatory",
-          "Urgent and demanding"
+          "Urban sprawl",
+          "Climate change impacts",
+          "Construction delays",
+          "Increased traffic congestion"
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "What is the significance of the workshops and training sessions mentioned?",
+        "question": "What is the tone of the message?",
         "options": [
-          "To hinder policy implementation",
-          "To promote competition among developers",
-          "To facilitate knowledge sharing and address challenges",
-          "To provide entertainment for stakeholders"
+          "Casual and informal",
+          "Formal and informative",
+          "Critical and confrontational",
+          "Optimistic and promotional"
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 10,
-        "question": "What does the phrase 'circular economy' refer to in the context of the passage?",
+        "question": "Why is the sender providing clarification?",
         "options": [
-          "A focus on renewable energy",
-          "Minimizing waste through recycling and reuse",
-          "The rise of urban poverty",
-          "The economic growth of Toronto"
+          "To explain the old policy",
+          "To address concerns about the updates",
+          "To promote urban development",
+          "To discuss future projects"
         ],
         "correct": 1
       },
       {
         "id": 11,
-        "question": "What does Emily invite Dr. Nguyen to do at the end of her email?",
+        "question": "What is the overall message of the passage?",
         "options": [
-          "Join her for a meeting",
-          "Provide feedback on the policy",
-          "Reach out for further clarification",
-          "Attend a construction project",
-          ""
+          "The importance of urban development",
+          "Clarification on new environmental policy updates",
+          "The need for more construction projects",
+          "The benefits of climate change"
         ],
-        "correct": 2
+        "correct": 1
       }
     ],
     "id": "part1-072"
@@ -10672,122 +10605,122 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the purpose of the email?",
+        "question": "What is the opening date of Maple Park?",
         "options": [
-          "To announce the opening of Maple Park",
-          "To invite people to a concert",
-          "To ask for donations",
-          "To provide job openings"
-        ],
-        "correct": 0
-      },
-      {
-        "id": 2,
-        "question": "When will Maple Park open?",
-        "options": [
-          "June 1st",
-          "June 15th",
-          "July 1st",
-          "July 15th"
+          "Maple Park will open on June 10th.",
+          "The park will be open on June 15th.",
+          "Maple Park opens on July 1st.",
+          "The opening date is June 20th."
         ],
         "correct": 1
       },
       {
-        "id": 3,
-        "question": "Who will speak at the opening ceremony?",
+        "id": 2,
+        "question": "What activities are planned for the opening day?",
         "options": [
-          "The mayor",
-          "A famous singer",
-          "A teacher",
-          "A sports coach"
+          "Only games for adults and refreshments.",
+          "Walking trails and a picnic area.",
+          "Games for children, face painting, and a magic show.",
+          "A guided tour of the park and workshops."
         ],
-        "correct": 0
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What time does the opening ceremony begin?",
+        "options": [
+          "The ceremony will start at 9:00 AM.",
+          "It will begin at 10:00 AM.",
+          "The opening ceremony starts at noon.",
+          "It begins at 11:00 AM."
+        ],
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "What kind of activities will be available on opening day?",
+        "question": "Who will give the welcome speech at the ceremony?",
         "options": [
-          "Swimming lessons",
-          "Games for children",
-          "Cooking classes",
-          "Yoga sessions"
+          "The park manager will give the speech.",
+          "The mayor will deliver the welcome speech.",
+          "A local celebrity will speak.",
+          "The residents will be invited to speak."
         ],
         "correct": 1
       },
       {
         "id": 5,
-        "question": "Who can volunteer for the event?",
+        "question": "What feature of Maple Park is specifically designed for children?",
         "options": [
-          "Only city workers",
-          "Anyone interested",
-          "Only children",
-          "Only teachers"
+          "Picnic area for families.",
+          "Walking trails for exercise.",
+          "A playground for children.",
+          "A magic show for entertainment."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What should visitors bring to the opening event?",
+        "options": [
+          "Only their families.",
+          "Their friends and family.",
+          "Food and drinks for a picnic.",
+          "Nothing is required to bring."
         ],
         "correct": 1
       },
       {
-        "id": 6,
-        "question": "What should volunteers do if they want to help?",
-        "options": [
-          "Contact Sarah at the community center",
-          "Call the mayor",
-          "Sign up online",
-          "Join a gym"
-        ],
-        "correct": 0
-      },
-      {
         "id": 7,
-        "question": "What will happen at 10:00 AM on June 15th?",
+        "question": "What type of show will be featured during the opening?",
         "options": [
-          "Games will start",
-          "The park will close",
-          "The opening ceremony will begin",
-          "A concert will happen"
+          "A musical performance for adults.",
+          "A comedy show for families.",
+          "A magic show for children.",
+          "An educational presentation about the park."
         ],
         "correct": 2
       },
       {
         "id": 8,
-        "question": "Is there any mention of refreshments at the event?",
+        "question": "Where is Maple Park located?",
         "options": [
-          "Yes",
-          "No",
-          "Only drinks",
-          "Only snacks"
+          "In the suburbs of Toronto.",
+          "In downtown Toronto.",
+          "Near the waterfront.",
+          "In a rural area outside the city."
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "What should families bring to enjoy the day?",
+        "question": "What is one of the main attractions mentioned in the park?",
         "options": [
-          "Books",
-          "Food",
-          "Pets",
-          "Friends"
+          "A large lake for boating.",
+          "Walking trails for nature walks.",
+          "An art gallery showcasing local artists.",
+          "A sports complex for various activities."
         ],
-        "correct": 3
+        "correct": 1
       },
       {
         "id": 10,
-        "question": "What is the email mainly talking about?",
+        "question": "What type of refreshments will be available at the opening?",
         "options": [
-          "The history of Toronto",
-          "The features of Maple Park",
-          "The rules of volunteering",
-          "The schedule of events"
+          "Only snacks and sweets will be served.",
+          "Beverages and light snacks will be available.",
+          "Full meals will be provided.",
+          "No refreshments will be offered."
         ],
         "correct": 1
       },
       {
         "id": 11,
-        "question": "Who sent the email?",
+        "question": "What is the purpose of the letter to residents?",
         "options": [
-          "The City of Toronto Parks Department",
-          "The Mayor’s office",
-          "A private company",
-          "A community group"
+          "To announce the opening of a new park.",
+          "To discuss park maintenance issues.",
+          "To invite residents to a community meeting.",
+          "To inform about park fees and regulations."
         ],
         "correct": 0
       }
@@ -15574,124 +15507,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary purpose of Dr. Lee's email?",
+        "question": "What is the main purpose of the Canadian National Science Strategy (CNSS)?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "correct": 0
-      },
-      {
-        "id": 2,
-        "question": "According to the passage, which field has seen significant benefits from the CNSS?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To reduce funding for scientific research in Canada.",
+          "To improve Canada's global position in scientific research.",
+          "To limit advancements in technology and economics.",
+          "To create more regulations for scientific practices."
         ],
         "correct": 1
       },
       {
-        "id": 3,
-        "question": "What issue has been identified regarding interdisciplinary studies?",
+        "id": 2,
+        "question": "How long ago was the Canadian National Science Strategy implemented?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "One year ago.",
+          "Two years ago.",
+          "Three years ago.",
+          "Four years ago."
         ],
         "correct": 2
       },
       {
-        "id": 4,
-        "question": "What is proposed to improve collaboration between academia and industry?",
+        "id": 3,
+        "question": "What does the passage suggest about recent evaluations of the CNSS?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "They indicate that the strategy is perfect.",
+          "They suggest improvements are needed.",
+          "They have been overwhelmingly negative.",
+          "They confirm that no changes are necessary."
         ],
-        "correct": 3
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is a key focus of the CNSS according to the passage?",
+        "options": [
+          "Balancing funding between all scientific fields.",
+          "Aligning policies with technological advancements.",
+          "Promoting traditional research methods.",
+          "Restricting access to scientific resources."
+        ],
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What feedback method does Dr. Lee request from colleagues?",
+        "question": "What is the tone of the message in the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Urgent and proactive.",
+          "Indifferent and dismissive.",
+          "Confused and uncertain.",
+          "Negative and critical."
         ],
         "correct": 0
       },
       {
         "id": 6,
-        "question": "Who is the intended recipient of the feedback report?",
+        "question": "What is implied about the relationship between technology and the CNSS?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "correct": 1
-      },
-      {
-        "id": 7,
-        "question": "Which sector is notably absent from the discussion about benefits from CNSS?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "correct": 3
-      },
-      {
-        "id": 8,
-        "question": "What tone does Dr. Lee adopt in her correspondence?",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Technology has no impact on the CNSS.",
+          "Technology is a barrier to scientific research.",
+          "The CNSS must adapt to technological changes.",
+          "Technological advancements are irrelevant to policy."
         ],
         "correct": 2
       },
       {
-        "id": 9,
-        "question": "What is the time frame for submitting feedback?",
+        "id": 7,
+        "question": "Why is the review of the CNSS considered imperative?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "To meet government deadlines.",
+          "To align with shifting economic paradigms.",
+          "To gather public opinion on science.",
+          "To assess funding allocation."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 8,
+        "question": "Who is the intended audience of the message?",
+        "options": [
+          "The general public.",
+          "Scientific researchers in Canada.",
+          "Government officials only.",
+          "Colleagues involved in the CNSS."
+        ],
+        "correct": 3
+      },
+      {
+        "id": 9,
+        "question": "What does the passage imply about the CNSS's goals?",
+        "options": [
+          "They are static and unchanging.",
+          "They may evolve with new challenges.",
+          "They are overly ambitious and unrealistic.",
+          "They do not consider international standards."
         ],
         "correct": 1
       },
       {
         "id": 10,
-        "question": "What is the main concern expressed in the feedback from stakeholders?",
+        "question": "What might be a consequence of not reviewing the CNSS?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Increased funding for scientific projects.",
+          "Outdated policies in scientific research.",
+          "Enhanced collaboration with international scientists.",
+          "Stronger global competition in science."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 11,
-        "question": "What is Dr. Lee's title?",
+        "question": "What aspect of science does the CNSS mainly focus on?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Funding allocation for scientific research.",
+          "Advancements in technology and economics.",
+          "Training scientists for global competition.",
+          "Public engagement in scientific discussions."
         ],
-        "correct": 3
+        "correct": 1
       }
     ],
     "id": "part1-118"
@@ -15703,124 +15636,124 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary purpose of the email?",
+        "question": "What is the main purpose of the correspondence?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
-        ],
-        "correct": 0
-      },
-      {
-        "id": 2,
-        "question": "Where is the conference scheduled to take place?",
-        "options": [
-          "Ottawa",
-          "Metro Toronto Convention Centre",
-          "Vancouver Conference Centre",
-          "Calgary Exhibition Centre"
+          "To discuss the financial aspects of agriculture.",
+          "To inform about an upcoming conference on agri-tech.",
+          "To analyze past agricultural practices in Canada.",
+          "To criticize the current state of Canadian agriculture."
         ],
         "correct": 1
       },
       {
-        "id": 3,
-        "question": "What benefits of technology in agriculture are mentioned?",
+        "id": 2,
+        "question": "What is the title of the conference mentioned in the passage?",
         "options": [
-          "Increased labor costs",
-          "Improved efficiency",
-          "Decreased productivity",
-          "Higher operational expenses"
+          "Future of Farming: Innovations and Challenges.",
+          "Technological Advances in Canadian Agriculture.",
+          "Innovations in Agri-Tech: The Future of Canadian Agriculture.",
+          "Emerging Trends in Global Agricultural Practices."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "Who are the primary stakeholders discussed in the passage?",
+        "options": [
+          "Farmers and agricultural scientists.",
+          "Industry stakeholders across Canada.",
+          "Government officials and policymakers.",
+          "Consumers and food distributors."
         ],
         "correct": 1
       },
       {
         "id": 4,
-        "question": "Which group is particularly mentioned as being affected by agricultural technology?",
+        "question": "What aspect of agriculture is emphasized in the passage?",
         "options": [
-          "Large corporations",
-          "Government officials",
-          "Smallholder farmers",
-          "Urban consumers"
+          "The role of traditional farming methods.",
+          "The impact of emerging technologies.",
+          "The importance of organic farming.",
+          "The challenges of climate change."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 5,
-        "question": "What aspect of agricultural technology is emphasized besides its benefits?",
+        "question": "What is a likely focus of the conference?",
         "options": [
-          "Accessibility to urban areas",
-          "Environmental impacts",
-          "Socio-economic implications",
-          "Cultural significance"
+          "Debating agricultural policies in Canada.",
+          "Showcasing new technological advancements.",
+          "Reviewing historical farming techniques.",
+          "Promoting international agricultural trade."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "Who is the sender of the email?",
+        "question": "How does the author hope the recipients are feeling?",
         "options": [
-          "Sarah Thompson",
-          "The Canadian Agricultural Innovation Consortium",
-          "A conference attendee",
-          "The Prime Minister"
+          "Overwhelmed by recent changes.",
+          "Excited about new opportunities.",
+          "Frustrated with industry challenges.",
+          "Curious about traditional practices."
         ],
-        "correct": 0
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "What date is the conference planned for?",
+        "question": "What might attendees expect at the conference?",
         "options": [
-          "March 1, 2024",
-          "March 15, 2024",
-          "April 15, 2024",
-          "April 1, 2024"
+          "Workshops on traditional farming methods.",
+          "Discussions on technological impacts on agriculture.",
+          "Networking with international agriculture experts.",
+          "Presentations on government regulations."
         ],
         "correct": 1
       },
       {
         "id": 8,
-        "question": "What will be the focus of discussions at the conference?",
+        "question": "What is the tone of the correspondence?",
         "options": [
-          "Debates on agricultural history",
-          "Innovation in food recipes",
-          "Policy recommendations and technological solutions",
-          "Environmental degradation responses"
-        ],
-        "correct": 2
-      },
-      {
-        "id": 9,
-        "question": "How does the email characterize the rate of technology adoption?",
-        "options": [
-          "Universal across all farms",
-          "Consistently high",
-          "Varied based on several factors",
-          "Mandatory for all farmers"
-        ],
-        "correct": 2
-      },
-      {
-        "id": 10,
-        "question": "What does Sarah Thompson encourage the recipients to do?",
-        "options": [
-          "Attend the conference",
-          "Submit reviews on agricultural products",
-          "Propose technology solutions",
-          "Develop new agricultural policies"
+          "Formal and informative.",
+          "Casual and friendly.",
+          "Cynical and critical.",
+          "Urgent and alarming."
         ],
         "correct": 0
       },
       {
-        "id": 11,
-        "question": "What kind of stakeholders is the conference targeting?",
+        "id": 9,
+        "question": "What kind of technologies are discussed in the passage?",
         "options": [
-          "Only government representatives",
-          "Farmers exclusively",
-          "Researchers, policymakers, and practitioners",
-          "Retailers and urban planners"
+          "Emerging technologies in agriculture.",
+          "Established methods of farming.",
+          "Biotechnological advancements in food safety.",
+          "Traditional techniques for crop production."
         ],
-        "correct": 2
+        "correct": 0
+      },
+      {
+        "id": 10,
+        "question": "What might be a consequence of the technological advancements mentioned?",
+        "options": [
+          "Diminished agricultural output in Canada.",
+          "Reshaping the agricultural landscape significantly.",
+          "Increased reliance on imported food products.",
+          "Decreased interest in farming careers."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 11,
+        "question": "Why is the conference considered important?",
+        "options": [
+          "It highlights issues in Canadian food distribution.",
+          "It focuses on innovations that can transform agriculture.",
+          "It gathers opinions from consumers about farming.",
+          "It addresses the historical challenges of farming."
+        ],
+        "correct": 1
       }
     ],
     "id": "part1-119"

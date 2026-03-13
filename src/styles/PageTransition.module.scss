@@ -1,0 +1,13 @@
+.page {
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.entering {
+  opacity: 0;
+  transform: translateY(8px);
+}

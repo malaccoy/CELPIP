@@ -10,7 +10,11 @@
 // ─── Header ──────────────────────────────────────
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  
+  @media (max-width: 767px) {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .badge {
@@ -22,91 +26,127 @@
   background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(99, 102, 241, 0.15));
   border: 1px solid rgba(168, 85, 247, 0.3);
   color: #c084fc;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #f8fafc;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
+  
+  @media (max-width: 767px) {
+    font-size: 1.3rem;
+  }
 }
 
 .subtitle {
-  font-size: 0.9rem;
-  color: rgba(248, 250, 252, 0.55);
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.45);
   margin: 0;
   line-height: 1.5;
+  
+  @media (max-width: 767px) {
+    font-size: 0.78rem;
+  }
 }
 
 // ─── Section Selector ────────────────────────────
 .sectionGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+  }
 }
 
 .sectionCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 0.75rem;
-  border-radius: 14px;
+  gap: 0.4rem;
+  padding: 0.85rem 0.5rem;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
-  border: 2px solid rgba(255, 255, 255, 0.06);
+  border: 2px solid transparent;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
 
   &:hover {
+    transform: translateY(-2px);
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  &:active {
+    transform: scale(0.95);
   }
 }
 
 .sectionCardActive {
   composes: sectionCard;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    opacity: 0.08;
+    z-index: 0;
+  }
 }
 
 .sectionIcon {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .sectionLabel {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: rgba(248, 250, 252, 0.7);
+  color: rgba(248, 250, 252, 0.5);
   transition: color 0.25s ease;
+  position: relative;
+  z-index: 1;
 }
 
 // Section accent colors
 .reading .sectionIcon { background: rgba(20, 184, 166, 0.15); color: #2dd4bf; }
-.reading.sectionCardActive { border-color: rgba(20, 184, 166, 0.4); background: rgba(20, 184, 166, 0.06); }
+.reading.sectionCardActive { border-color: rgba(20, 184, 166, 0.35); background: rgba(20, 184, 166, 0.08); }
+.reading.sectionCardActive::after { background: radial-gradient(circle at center, #14b8a6, transparent); }
 .reading.sectionCardActive .sectionLabel { color: #2dd4bf; }
 
 .listening .sectionIcon { background: rgba(249, 115, 22, 0.15); color: #fb923c; }
-.listening.sectionCardActive { border-color: rgba(249, 115, 22, 0.4); background: rgba(249, 115, 22, 0.06); }
+.listening.sectionCardActive { border-color: rgba(249, 115, 22, 0.35); background: rgba(249, 115, 22, 0.08); }
+.listening.sectionCardActive::after { background: radial-gradient(circle at center, #f97316, transparent); }
 .listening.sectionCardActive .sectionLabel { color: #fb923c; }
 
 .writing .sectionIcon { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
-.writing.sectionCardActive { border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.06); }
+.writing.sectionCardActive { border-color: rgba(168, 85, 247, 0.35); background: rgba(168, 85, 247, 0.08); }
+.writing.sectionCardActive::after { background: radial-gradient(circle at center, #a855f7, transparent); }
 .writing.sectionCardActive .sectionLabel { color: #c084fc; }
 
 .speaking .sectionIcon { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
-.speaking.sectionCardActive { border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.06); }
+.speaking.sectionCardActive { border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08); }
+.speaking.sectionCardActive::after { background: radial-gradient(circle at center, #38bdf8, transparent); }
 .speaking.sectionCardActive .sectionLabel { color: #38bdf8; }
 
 // ─── Part/Task Selector ──────────────────────────
@@ -170,16 +210,16 @@
 .partChips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .partChip {
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.7rem;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
-  color: rgba(248, 250, 252, 0.65);
-  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.55);
+  font-size: 0.72rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -187,15 +227,20 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  &:active {
+    transform: scale(0.95);
   }
 }
 
 .partChipActive {
   composes: partChip;
-  background: rgba(99, 102, 241, 0.12);
+  background: rgba(99, 102, 241, 0.15);
   border-color: rgba(99, 102, 241, 0.4);
   color: #a5b4fc;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.15);
 }
 
 // ─── Difficulty Selector ─────────────────────────
@@ -597,7 +642,71 @@
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 0.75rem;
+}
+
+.nextActions {
+  display: flex;
+  gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.tryAgainBtn {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(248, 250, 252, 0.8);
+  font-family: $font-body;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  &:active {
+    transform: scale(0.97);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.nextExerciseBtn {
+  flex: 1.5;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  letter-spacing: 0.01em;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(99, 102, 241, 0.4);
+  }
+  
+  &:active {
+    transform: scale(0.97);
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
 }
 
 .scoreDisplay {
@@ -968,3 +1077,88 @@
 .practiceCardCta.writing { background: linear-gradient(135deg, #10b981, #059669); color: white; }
 .practiceCardCta.listening { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; }
 .practiceCardCta.speaking { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; }
+
+// ============================================
+// 📱 MOBILE APP OPTIMIZATIONS
+// ============================================
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem 0.75rem 6rem;
+  }
+  
+  .header {
+    margin-bottom: 1.25rem;
+    
+    h1 {
+      font-size: 1.3rem !important;
+    }
+  }
+  
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
+  
+  // Action buttons
+  .submitBtn, .generateBtn {
+    min-height: 52px;
+    font-size: 1rem;
+    border-radius: 14px;
+  }
+}
+
+
+// Session Summary
+.sessionSummary {
+  padding: 2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  margin-top: 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.summaryLabel {
+  min-width: 60px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(248, 250, 252, 0.6);
+}
+
+.summaryBar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.summaryBarFill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.summaryScore {
+  min-width: 40px;
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.8);
+}
+
+.summaryTotal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0 0.5rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}

@@ -44,15 +44,20 @@ export async function POST(req: NextRequest) {
     // Pick random exercise
     const exercise = exercises[Math.floor(Math.random() * exercises.length)];
     
+    // Ensure all questions have unique IDs
+    const ensureIds = (qs: any[]) => qs.map((q: any, i: number) => ({ ...q, id: q.id ?? i + 1 }));
+
     // Part 1 has clips format
     if (exercise.clips) {
+      let qIdx = 0;
+      const clips = exercise.clips.map((c: any) => ({
+        questions: (c.questions || []).map((q: any) => ({ ...q, id: q.id ?? ++qIdx })),
+      }));
       return NextResponse.json({
         exercise: {
           title: exercise.title,
-          clips: exercise.clips.map((c: any) => ({
-            questions: c.questions,
-          })),
-          questions: exercise.clips.flatMap((c: any) => c.questions || []),
+          clips,
+          questions: clips.flatMap((c: any) => c.questions || []),
         },
         clipAudioUrls: exercise.clips.map((c: any) => `/audio/listening-library/${c.audioFile}`),
         context: exercise.context,
@@ -63,8 +68,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       exercise: {
         title: exercise.title,
-        passage: '', // Not needed — audio file is pre-generated
-        questions: exercise.questions,
+        passage: '',
+        questions: ensureIds(exercise.questions || []),
       },
       audioUrl: `/audio/listening-library/${exercise.audioFile}`,
       context: exercise.context,

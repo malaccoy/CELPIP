@@ -332,3 +332,16 @@ model UserVocabulary {
   @@unique([userId, word])
   @@map("user_vocabulary")
 }
+
+model SkillScore {
+  id        String   @id @default(cuid())
+  userId    String
+  skill     String   // reading, listening, writing, speaking
+  score     Float    // CELPIP scale 0-12
+  correct   Int      @default(0)
+  total     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@map("skill_scores")
+  @@index([userId, skill])
+}

@@ -8,6 +8,7 @@ import { useUser } from '@/hooks/useUser';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import { createClient } from '@/lib/supabase/client';
 import { Logo } from '@/components/Logo';
+import { useScrollDirection } from '@/hooks/useScrollDirection';
 import styles from '@/styles/Layout.module.scss';
 
 interface NavItem {
@@ -37,6 +38,7 @@ export const Header: React.FC = () => {
   const { isPro } = useContentAccess();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const headerHidden = useScrollDirection();
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -87,7 +89,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${headerHidden ? styles.headerHidden : ''}`}>
       <div className={styles.headerContent}>
         <div className={styles.headerLogo}>
           <Link href="/" className={styles.logoLink}>
@@ -184,6 +186,32 @@ export const Header: React.FC = () => {
             </Link>
           ) : null}
         </nav>
+      </div>
+      {/* Mobile horizontal nav strip */}
+      <div className={styles.mobileNavStrip}>
+        {navItems.filter(item => !['/support', '/blog'].includes(item.to)).map((item) => {
+          const active = isActive(item.to);
+          const emojiMap: Record<string, string> = {
+            '/': '🏠',
+            '/dashboard': '🎯',
+            '/guides': '📚',
+            '/english': '🍁',
+            '/pricing': '💎',
+            '/rankings': '🏆',
+            '/profile': '👤',
+          };
+          const emoji = emojiMap[item.to] || '';
+          return (
+            <Link
+              key={item.to}
+              href={item.to}
+              className={`${styles.mobileNavItem} ${active ? styles.mobileNavItemActive : ''}`}
+            >
+              <span className={styles.mobileNavEmoji}>{emoji}</span>
+              {item.label.replace('🍁 ', '')}
+            </Link>
+          );
+        })}
       </div>
     </header>
   );

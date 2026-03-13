@@ -1,0 +1,42 @@
+@use 'design-system' as ds;
+
+.fab {
+  display: none;
+  
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: fixed;
+    bottom: 96px;
+    right: 16px;
+    z-index: 90;
+    background: linear-gradient(135deg, #ff3b3b, #e11d48);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 28px;
+    font-family: ds.$font-body;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 
+      0 4px 20px rgba(255, 59, 59, 0.4),
+      0 0 40px rgba(255, 59, 59, 0.15);
+    transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: fabPulse 3s ease-in-out infinite;
+    
+    &:active {
+      transform: scale(0.92);
+      box-shadow: 0 2px 10px rgba(255, 59, 59, 0.3);
+    }
+  }
+}
+
+.fabLabel {
+  letter-spacing: 0.02em;
+}
+
+@keyframes fabPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(255, 59, 59, 0.4), 0 0 40px rgba(255, 59, 59, 0.15); }
+  50% { box-shadow: 0 4px 30px rgba(255, 59, 59, 0.6), 0 0 60px rgba(255, 59, 59, 0.25); }
+}

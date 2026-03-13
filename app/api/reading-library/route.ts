@@ -59,6 +59,14 @@ export async function POST(req: NextRequest) {
       arr.slice(-8).forEach(id => served.add(id));
     }
 
+    // Ensure all questions have unique IDs
+    if (exercise.questions) {
+      exercise.questions = exercise.questions.map((q: any, i: number) => ({
+        ...q,
+        id: q.id ?? i + 1,
+      }));
+    }
+
     return NextResponse.json({ exercise, source: 'library' });
   } catch (error) {
     console.error('Reading library error:', error);

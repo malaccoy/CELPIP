@@ -1,4 +1,4 @@
-// BottomNav.module.scss - Unified Design System with CSS Variables
+// BottomNav.module.scss - App-native feel
 @use 'design-system' as ds;
 
 .bottomNav {
@@ -7,18 +7,18 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80px;
-  background: var(--bg-card);
-  border-top: 1px solid var(--border-default);
-  padding: 8px 16px;
-  padding-bottom: env(safe-area-inset-bottom, 8px);
+  background: rgba(10, 14, 26, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 6px 8px;
+  padding-bottom: max(6px, env(safe-area-inset-bottom));
   z-index: 100;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
   
   @media (max-width: 767px) {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -27,17 +27,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 8px 16px;
+  gap: 2px;
+  padding: 8px 12px;
   text-decoration: none;
-  color: var(--text-muted);
-  transition: all ds.$transition-bounce;
-  border-radius: ds.$radius-md;
-  min-width: 64px;
+  color: rgba(248, 250, 252, 0.45);
+  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: 16px;
+  min-width: 56px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  position: relative;
   
   &:active {
-    transform: scale(0.9);
+    transform: scale(0.85);
   }
 }
 
@@ -46,53 +49,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 32px;
-  border-radius: ds.$radius-md;
-  transition: all ds.$transition-bounce;
+  width: 44px;
+  height: 28px;
+  border-radius: 14px;
+  transition: all 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .activeIndicator {
   position: absolute;
-  inset: 0;
-  background: var(--accent-bg);
-  border-radius: ds.$radius-md;
+  inset: -2px -8px;
+  background: rgba(255, 59, 59, 0.12);
+  border-radius: 14px;
   z-index: -1;
 }
 
 .label {
   font-family: ds.$font-body;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  transition: all ds.$transition-base;
+  letter-spacing: 0.03em;
+  transition: all 200ms ease;
 }
 
 // Active state
 .active {
-  color: var(--accent-primary-light);
+  color: #ff6b6b;
   
   .iconWrapper {
-    color: var(--accent-primary-light);
-    transform: scale(1.1);
+    color: #ff6b6b;
+    transform: scale(1.05);
   }
   
   .label {
-    color: var(--accent-primary-light);
+    color: #ff6b6b;
     font-weight: 700;
   }
 }
 
-// Glow dot for active
+// Subtle glow for active item
 .active .iconWrapper::after {
   content: '';
   position: absolute;
   width: 4px;
   height: 4px;
-  bottom: -6px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--accent-primary);
+  background: #ff3b3b;
   border-radius: 50%;
-  box-shadow: 0 0 8px var(--accent-primary);
+  box-shadow: 0 0 6px #ff3b3b;
+}
+
+// Ripple effect on tap
+.navItem::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.navItem:active::before {
+  opacity: 1;
 }

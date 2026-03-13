@@ -6,6 +6,8 @@ import { EventBanner } from '@/components/EventBanner';
 import { CommunityPopup } from '@/components/CommunityPopup';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
+import FAB from '@/components/FAB';
+import PageTransition from '@/components/PageTransition';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { PlanProvider } from '@/hooks/usePlan';
 import styles from '@/styles/Layout.module.scss';
@@ -130,12 +132,13 @@ export default function RootLayout({
               <Sidebar />
               <main className={styles.main}>
                 <div className={styles.mainContent}>
-                  {children}
+                  <PageTransition>{children}</PageTransition>
                 </div>
                 <Footer />
               </main>
             </div>
             <BottomNav />
+            <FAB />
           </PlanProvider>
         </ThemeProvider>
         {/* Tawk.to Live Chat — set NEXT_PUBLIC_TAWK_ID in .env */}

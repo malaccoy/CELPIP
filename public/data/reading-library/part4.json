@@ -5314,123 +5314,113 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary argument made by proponents of infrastructure investment?",
+        "question": "What is a primary reason for the recent debate on infrastructure investment in Canada?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Deteriorating public transit and rising housing costs.",
+          "Increased population in rural areas needing support.",
+          "A focus on renewable energy sources for infrastructure.",
+          "Government regulations limiting urban development."
         ],
-        "correct": 0,
-        "explanation": "Proponents argue that infrastructure investment is essential for sustainable urban development and economic productivity."
+        "correct": 0
       },
       {
         "id": 2,
-        "question": "What issue is raised by critics regarding infrastructure funding?",
+        "question": "According to proponents, what is a benefit of investing in urban infrastructure?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It improves the aesthetic appeal of cities.",
+          "It enhances economic productivity and citizen movement.",
+          "It reduces the need for public transportation.",
+          "It increases land values in urban areas."
         ],
-        "correct": 1,
-        "explanation": "Critics argue that funding is often misallocated, favoring affluent neighborhoods while neglecting underserved communities."
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "According to the passage, what can exacerbate social inequalities in urban areas?",
+        "question": "What do critics argue about infrastructure funding?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It benefits only wealthy urban centers.",
+          "It is often misallocated and ineffective.",
+          "It should prioritize rural infrastructure projects.",
+          "It leads to increased public transit efficiency."
         ],
-        "correct": 2,
-        "explanation": "Failing to address disparities in infrastructure investment can exacerbate social inequalities."
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "What benefits are suggested for investing in public transport and housing in lower-income areas?",
+        "question": "What aspect of urban life is directly linked to infrastructure investment?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The availability of affordable housing.",
+          "The efficiency of emergency services.",
+          "The promotion of local businesses.",
+          "The reduction of urban crime rates."
         ],
-        "correct": 3,
-        "explanation": "Investing in these areas would yield long-term benefits and foster community resilience."
+        "correct": 0
       },
       {
         "id": 5,
-        "question": "What is necessary for urban policymakers to achieve equitable infrastructure planning?",
+        "question": "What is one major consequence of failing to invest in infrastructure?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Improved public health outcomes.",
+          "Increased traffic congestion and delays.",
+          "A rise in urban population density.",
+          "Lower costs of living in urban areas."
         ],
-        "correct": 0,
-        "explanation": "Engagement in comprehensive dialogues involving all stakeholders, particularly marginalized communities, is necessary."
+        "correct": 1
       },
       {
         "id": 6,
-        "question": "What underlying theme is emphasized regarding funding decisions in urban planning?",
+        "question": "How does infrastructure investment impact economic productivity?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "By creating more jobs in the public sector.",
+          "By streamlining transportation and logistics.",
+          "By reducing taxes for urban residents.",
+          "By encouraging more businesses to relocate."
         ],
-        "correct": 1,
-        "explanation": "The theme emphasizes the ethical considerations of social responsibility in funding decisions."
+        "correct": 1
       },
       {
         "id": 7,
-        "question": "How does the author view the relationship between financial input and urban improvement?",
+        "question": "What is the underlying theme of the passage?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "The necessity of maintaining urban infrastructure.",
+          "The challenges of funding urban projects.",
+          "The impact of urbanization on rural areas.",
+          "The relationship between infrastructure and climate change."
         ],
-        "correct": 2,
-        "explanation": "The author views that urban improvement is not solely dependent on financial input but requires commitment to inclusivity."
+        "correct": 0
       },
       {
         "id": 8,
-        "question": "What does the author imply about past infrastructural investments?",
+        "question": "Which group is most likely to support infrastructure investment?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Local government officials looking for re-election.",
+          "Environmental activists advocating for green spaces.",
+          "Business leaders seeking economic growth.",
+          "Residents of suburban areas wanting better access."
         ],
-        "correct": 3,
-        "explanation": "The author implies that past investments may have neglected the diverse needs of the population."
+        "correct": 2
       },
       {
         "id": 9,
-        "question": "What tone does the author adopt in discussing urban infrastructure investment?",
+        "question": "What role does public transit play in urban infrastructure discussions?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It is often overlooked in funding decisions.",
+          "It is seen as a secondary concern.",
+          "It is a major focus due to its deterioration.",
+          "It is considered a luxury rather than a necessity."
         ],
-        "correct": 0,
-        "explanation": "The author adopts a critical but constructive tone, emphasizing the need for equity."
+        "correct": 2
       },
       {
         "id": 10,
-        "question": "How does the author suggest the planning stages should be conducted?",
+        "question": "What is a potential drawback of infrastructure investment mentioned?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It can lead to temporary job losses.",
+          "It often results in increased urban sprawl.",
+          "It may divert funds from other essential services.",
+          "It can create a dependency on public transport."
         ],
-        "correct": 1,
-        "explanation": "The planning stages should be conducted with transparency and collaboration to reflect diverse needs."
+        "correct": 2
       }
     ],
     "id": "part4-041"
@@ -14264,113 +14254,113 @@
     "questions": [
       {
         "id": 1,
-        "question": "What is Dr. Elaine Goodwin's primary argument concerning drug decriminalization?",
+        "question": "What has sparked debate regarding drug decriminalization in Canada?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Public health implications of drug use and addiction.",
+          "The financial benefits of legalizing all drugs.",
+          "The potential for increased crime rates.",
+          "The effectiveness of drug education programs."
         ],
         "correct": 0
       },
       {
         "id": 2,
-        "question": "How does Mr. Richard Cole view the potential impact of drug decriminalization on youth?",
+        "question": "Who is Dr. Elaine Goodwin?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "A criminal law professor advocating for stricter laws.",
+          "A public health specialist supporting decriminalization.",
+          "A politician opposing drug use in Canada.",
+          "A social worker focused on addiction recovery."
         ],
-        "correct": 3
+        "correct": 1
       },
       {
         "id": 3,
-        "question": "What common ground do both authors share regarding drug addiction?",
+        "question": "What is Dr. Goodwin's primary argument regarding drug decriminalization?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "It is necessary for criminal justice reform.",
+          "It improves public health by treating addiction.",
+          "It will increase drug use among teenagers.",
+          "It has no impact on crime rates."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 4,
-        "question": "Which of the following statements reflects Dr. Goodwin's perspective?",
+        "question": "According to the passage, how does Dr. Goodwin view addiction?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "As a criminal issue that needs legal action.",
+          "As a public health issue requiring treatment.",
+          "As a personal choice without societal implications.",
+          "As a minor issue that will resolve itself."
         ],
         "correct": 1
       },
       {
         "id": 5,
-        "question": "Mr. Cole prioritizes which aspect in his discussion about drug policy?",
+        "question": "What is the stance of Mr. Richard Cole in this debate?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "He fully supports drug decriminalization.",
+          "He believes in strict drug enforcement policies.",
+          "He is critical of Dr. Goodwin's perspective.",
+          "He advocates for a balanced approach to drug laws."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 6,
-        "question": "According to Dr. Goodwin, what successful model should Canada look to for drug decriminalization?",
+        "question": "What is a potential benefit of treating addiction as a health issue?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Increased law enforcement budgets.",
+          "Greater public awareness of drug issues.",
+          "Improved recovery outcomes for individuals.",
+          "Higher rates of drug-related arrests."
         ],
-        "correct": 0
+        "correct": 2
       },
       {
         "id": 7,
-        "question": "In what way does Mr. Cole suggest addressing addiction without decriminalization?",
+        "question": "What group is primarily involved in the debate on drug decriminalization?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Only law enforcement officials.",
+          "Policymakers, legal experts, and health advocates.",
+          "Major pharmaceutical companies.",
+          "Local community organizations exclusively."
         ],
         "correct": 1
       },
       {
         "id": 8,
-        "question": "What does Dr. Goodwin believe about reallocation of resources?",
+        "question": "What does the passage suggest about the current state of drug laws in Canada?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "They are widely accepted and not controversial.",
+          "They are under review due to ongoing debates.",
+          "They have not changed in many years.",
+          "They are focused solely on prevention strategies."
         ],
-        "correct": 2
+        "correct": 1
       },
       {
         "id": 9,
-        "question": "What is a key concern of Mr. Cole regarding the decriminalization of drugs?",
+        "question": "What is a potential consequence of drug decriminalization mentioned?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Increased public funding for addiction services.",
+          "Reduced stigma surrounding drug users.",
+          "Lower rates of drug trafficking and sales.",
+          "More individuals seeking legal advice."
         ],
-        "correct": 3
+        "correct": 1
       },
       {
         "id": 10,
-        "question": "Overall, what can be inferred about the tone of each author's argument?",
+        "question": "What is the general tone of the passage regarding drug decriminalization?",
         "options": [
-          "A",
-          "B",
-          "C",
-          "D"
+          "Supportive of strict legal measures against drug use.",
+          "Neutral, presenting both sides of the argument.",
+          "Critical of current drug policies in Canada.",
+          "Encouraging of public discourse on the issue."
         ],
-        "correct": 2
+        "correct": 3
       }
     ],
     "id": "part4-266"

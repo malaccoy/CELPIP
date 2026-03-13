@@ -82,6 +82,8 @@ export default function AIPracticePage() {
   const [partOrTask, setPartOrTask] = useState(PARTS.reading[0].id);
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
   const [autoMode, setAutoMode] = useState(true);
+  const [sessionScores, setSessionScores] = useState<Record<string, { correct: number; total: number }>>({});
+  const [showSessionSummary, setShowSessionSummary] = useState(false);
 
   const [generating, setGenerating] = useState(false);
   const [cooldown, setCooldown] = useState(0);
@@ -261,7 +263,89 @@ export default function AIPracticePage() {
     }
   }, [adaptiveLoaded]);
 
-  // ─── Generate ──────────────────────────────────
+  // Save skill score when session summary shows
+  useEffect(() => {
+    if (!showSessionSummary) return;
+    const parts = PARTS[section];
+    let grandCorrect = 0;
+    let grandTotal = 0;
+    for (const p of parts) {
+      const s = sessionScores[p.id];
+      if (s) { grandCorrect += s.correct; grandTotal += s.total; }
+    }
+    if (grandTotal === 0) return;
+    const pct = grandCorrect / grandTotal;
+    // Convert percentage to CELPIP scale (1-12)
+    // 95%+ = 12, 90% = 11, 85% = 10, 75% = 8, 60% = 6, 40% = 4, <40% = 3
+    let celpipScore: number;
+    if (pct >= 0.95) celpipScore = 12;
+    else if (pct >= 0.90) celpipScore = 11;
+    else if (pct >= 0.85) celpipScore = 10;
+    else if (pct >= 0.80) celpipScore = 9;
+    else if (pct >= 0.75) celpipScore = 8;
+    else if (pct >= 0.65) celpipScore = 7;
+    else if (pct >= 0.55) celpipScore = 6;
+    else if (pct >= 0.45) celpipScore = 5;
+    else if (pct >= 0.35) celpipScore = 4;
+    else celpipScore = 3;
+    
+    fetch('/api/skill-scores', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ skill: section, score: celpipScore, correct: grandCorrect, total: grandTotal }),
+    }).catch(() => {});
+  }, [showSessionSummary]);
+
+  // ─── Go to Next Part/Task ──────────────────────
+  const goToNextPart = () => {
+    const parts = PARTS[section];
+    const currentIdx = parts.findIndex(p => p.id === partOrTask);
+    if (currentIdx < parts.length - 1) {
+      const nextPart = parts[currentIdx + 1];
+      setPartOrTask(nextPart.id);
+      setExercise(null);
+      setSpeakingPhase('prompt');
+      setSpeakingFeedback(null);
+      setAudioBlob(null);
+      setAudioUrl(null);
+      setListeningPhase('listen');
+      setHasListened(false);
+      setIsAudioPlaying(false);
+      setAudioSrc(null);
+      setClipAudioSrcs([]);
+      setCurrentClipIdx(0);
+      setImageSrc(null);
+      resetQuiz();
+      // Scroll to very top immediately
+      window.scrollTo(0, 0);
+      // Auto-generate after state updates
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        const btn = document.querySelector('[data-generate-btn]') as HTMLButtonElement;
+        btn?.click();
+      }, 150);
+    } else {
+      // Last part — show session summary
+      setShowSessionSummary(true);
+    }
+  };
+
+  const hasNextPart = () => {
+    const parts = PARTS[section];
+    const currentIdx = parts.findIndex(p => p.id === partOrTask);
+    return currentIdx < parts.length - 1;
+  };
+
+  const getNextPartLabel = () => {
+    const parts = PARTS[section];
+    const currentIdx = parts.findIndex(p => p.id === partOrTask);
+    if (currentIdx < parts.length - 1) {
+      return parts[currentIdx + 1].label.split(' — ')[0];
+    }
+    return '';
+  };
+
+// ─── Generate ──────────────────────────────────
   const generate = async () => {
     // Check free daily limit
     if (dailyUsage && !dailyUsage.isPro && dailyUsage.remaining <= 0) {
@@ -467,6 +551,7 @@ export default function AIPracticePage() {
   };
 
   const submitQuiz = () => {
+    if (submitted) return;
     setSubmitted(true);
     // Record for adaptive difficulty
     if (exercise?.questions) {
@@ -475,6 +560,11 @@ export default function AIPracticePage() {
         (q: any) => answers[q.id] === q.correct
       ).length;
       recordAttempt(section, partOrTask, correct, total);
+      // Track session scores per part
+      setSessionScores(prev => ({
+        ...prev,
+        [partOrTask]: { correct, total }
+      }));
       analytics.exerciseCompleted(section, Math.round((correct/total)*100));
       // Log activity for leaderboard
       fetch('/api/log-activity', {
@@ -720,6 +810,7 @@ export default function AIPracticePage() {
             className={`${styles.practiceCardCta} ${styles[section]}`}
             onClick={generate}
             disabled={generating || cooldown > 0}
+            data-generate-btn
           >
             {cooldown > 0 ? (
               <>Wait {cooldown}s</>
@@ -935,6 +1026,7 @@ export default function AIPracticePage() {
                     </button>
                   )}
                   {isClipMode && submitted && isLastClip && (
+                    <>
                     <div className={styles.resultsBar}>
                       <div>
                         <div className={styles.scoreDisplay}>
@@ -950,20 +1042,33 @@ export default function AIPracticePage() {
                         </span>
                       </div>
                     </div>
+                    <div className={styles.nextActions}>
+                      {hasNextPart() ? (
+                        <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                          {getNextPartLabel()} →
+                        </button>
+                      ) : (
+                        <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                          📊 See Results
+                        </button>
+                      )}
+                    </div>
+                    </>
                   )}
 
                   {/* Non-clip mode: original submit/score */}
-                  {!isClipMode && !submitted && (
+                  {!isClipMode && (
                     <button
                       className={styles.generateBtn}
                       onClick={submitQuiz}
-                      disabled={Object.keys(answers).length < (exercise.questions?.length || 0)}
-                      style={{ marginTop: '0.75rem' }}
+                      disabled={submitted || Object.keys(answers).length < (exercise.questions?.length || 0)}
+                      style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
                     >
-                      Check Answers
+                      {submitted ? '✓ Answers Checked' : 'Check Answers'}
                     </button>
                   )}
-                  {!isClipMode && submitted && (
+                  {!isClipMode && (
+                    <div style={{ display: submitted ? 'block' : 'none' }}>
                     <div className={styles.resultsBar}>
                       <div>
                         <div className={styles.scoreDisplay}>
@@ -978,6 +1083,18 @@ export default function AIPracticePage() {
                               : 'Keep practicing! 💪'}
                         </span>
                       </div>
+                    </div>
+                    <div className={styles.nextActions}>
+                      {hasNextPart() ? (
+                        <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                          {getNextPartLabel()} →
+                        </button>
+                      ) : (
+                        <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                          📊 See Results
+                        </button>
+                      )}
+                    </div>
                     </div>
                   )}
                 </div>
@@ -1321,6 +1438,83 @@ export default function AIPracticePage() {
           )}
         </div>
       )}
+
+      {/* Session Summary */}
+      {showSessionSummary && (
+        <div className={styles.sessionSummary}>
+          <h2 style={{ color: '#f8fafc', marginBottom: '0.5rem' }}>📊 Session Summary</h2>
+          <p style={{ color: 'rgba(248,250,252,0.5)', marginBottom: '1.5rem' }}>
+            {section.charAt(0).toUpperCase() + section.slice(1)} Practice Results
+          </p>
+          
+          {(() => {
+            const parts = PARTS[section];
+            let grandCorrect = 0;
+            let grandTotal = 0;
+            return (
+              <>
+                {parts.map((p) => {
+                  const score = sessionScores[p.id];
+                  if (score) {
+                    grandCorrect += score.correct;
+                    grandTotal += score.total;
+                  }
+                  const pct = score ? Math.round((score.correct / score.total) * 100) : 0;
+                  return (
+                    <div key={p.id} className={styles.summaryRow}>
+                      <span className={styles.summaryLabel}>{p.label.split(' — ')[0]}</span>
+                      <div className={styles.summaryBar}>
+                        <div className={styles.summaryBarFill} style={{ width: `${pct}%`, background: pct >= 70 ? 'linear-gradient(90deg, #22c55e, #4ade80)' : pct >= 40 ? 'linear-gradient(90deg, #f59e0b, #fbbf24)' : 'linear-gradient(90deg, #ef4444, #f87171)' }} />
+                      </div>
+                      <span className={styles.summaryScore}>
+                        {score ? `${score.correct}/${score.total}` : '—'}
+                      </span>
+                    </div>
+                  );
+                })}
+                {grandTotal > 0 && (() => {
+                  const pct = grandCorrect / grandTotal;
+                  const celpip = pct >= 0.95 ? 12 : pct >= 0.90 ? 11 : pct >= 0.85 ? 10 : pct >= 0.80 ? 9 : pct >= 0.75 ? 8 : pct >= 0.65 ? 7 : pct >= 0.55 ? 6 : pct >= 0.45 ? 5 : pct >= 0.35 ? 4 : 3;
+                  return (
+                    <div className={styles.summaryTotal}>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                        <span style={{ fontSize: '2.5rem', fontWeight: 800, color: celpip >= 9 ? '#4ade80' : celpip >= 7 ? '#fbbf24' : '#f87171' }}>
+                          {celpip}
+                        </span>
+                        <span style={{ fontSize: '1rem', color: 'rgba(248,250,252,0.4)' }}>/12</span>
+                      </div>
+                      <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#a5b4fc', textTransform: 'uppercase' as const, letterSpacing: '0.06em' }}>
+                        Estimated CELPIP Score
+                      </span>
+                      <span style={{ color: 'rgba(248,250,252,0.5)', fontSize: '0.85rem', marginTop: '0.35rem' }}>
+                        {grandCorrect}/{grandTotal} correct ({Math.round(pct * 100)}%)
+                      </span>
+                      <span style={{ marginTop: '0.5rem', fontSize: '1.1rem' }}>
+                        {celpip >= 10 ? '🎉 Excellent!' : celpip >= 7 ? '👍 Good job!' : '💪 Keep practicing!'}
+                      </span>
+                    </div>
+                  );
+                })()}
+              </>
+            );
+          })()}
+          
+          <button
+            className={styles.nextExerciseBtn}
+            onClick={() => { 
+              setShowSessionSummary(false); 
+              setSessionScores({}); 
+              setExercise(null);
+              // Scroll after React re-render completes
+              setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
+            }}
+            style={{ marginTop: '1.5rem', width: '100%' }}
+          >
+            Start New Session
+          </button>
+        </div>
+      )}
+
     </div>
   );
 }

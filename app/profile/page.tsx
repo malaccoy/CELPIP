@@ -95,6 +95,9 @@ export default function ProfilePage() {
   });
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [overallScore, setOverallScore] = useState(0);
+  const [radarScores, setRadarScores] = useState<Record<string, number>>({ writing: 0, reading: 0, speaking: 0, listening: 0 });
+  const [todayMinutes, setTodayMinutes] = useState(0);
+  const [last7Days, setLast7Days] = useState<{ date: string; minutes: number }[]>([]);
   
   const router = useRouter();
   const { user } = useUser();
@@ -103,15 +106,55 @@ export default function ProfilePage() {
   const [isSyncing, setIsSyncing] = useState(false);
 
   useEffect(() => {
-    // Sync from cloud first if logged in, then load stats
+    // Load stats from server API (source of truth)
     const initProfile = async () => {
       if (user) {
         setIsSyncing(true);
-        await fullSync();
+        try {
+          const res = await fetch('/api/profile-stats');
+          if (res.ok) {
+            const data = await res.json();
+            setStats({
+              totalPractices: data.totalPractices || 0,
+              totalMinutes: data.todayMinutes || 0,
+              dayStreak: data.streak || 0,
+              avgScore: 0
+            });
+            if (data.radarScores) setRadarScores(data.radarScores);
+            // Override with real skill scores if available
+            try {
+              const scoresRes = await fetch('/api/skill-scores');
+              if (scoresRes.ok) {
+                const { scores } = await scoresRes.json();
+                if (scores) setRadarScores(prev => ({ ...prev, ...scores }));
+              }
+            } catch {}
+            if (data.todayMinutes !== undefined) setTodayMinutes(data.todayMinutes);
+            if (data.last7Days) setLast7Days(data.last7Days);
+            const serverModStats: Record<string, ModuleStats> = {};
+            for (const skill of ['writing', 'reading', 'speaking', 'listening']) {
+              const s = data.skills?.[skill] || {};
+              serverModStats[skill] = {
+                practices: s.practices || 0,
+                avgScore: 0,
+                lastPractice: s.lastPractice || null
+              };
+            }
+            setModuleStats(serverModStats);
+            // Overall score from adaptive difficulty (localStorage) as fallback
+            const modScores = Object.values(serverModStats).filter((m: ModuleStats) => m.practices > 0);
+            setOverallScore(modScores.length > 0 ? Math.round(modScores.length * 2) : 0);
+          }
+        } catch (e) {
+          console.error('Failed to load server stats:', e);
+        }
+        // Also sync achievements
         await syncAchievementsFromCloud();
         setIsSyncing(false);
+      } else {
+        // Fallback to localStorage if not logged in
+        loadAllStats();
       }
-      loadAllStats();
     };
     initProfile();
   }, [user]);
@@ -158,9 +201,41 @@ export default function ProfilePage() {
   const handleManualSync = async () => {
     if (!user) return;
     setIsSyncing(true);
-    await fullSync();
+    try {
+      const res = await fetch('/api/profile-stats');
+      if (res.ok) {
+        const data = await res.json();
+        setStats({
+          totalPractices: data.totalPractices || 0,
+          totalMinutes: data.todayMinutes || 0,
+          dayStreak: data.streak || 0,
+          avgScore: 0
+        });
+        if (data.radarScores) setRadarScores(data.radarScores);
+        try {
+          const scoresRes = await fetch('/api/skill-scores');
+          if (scoresRes.ok) {
+            const { scores } = await scoresRes.json();
+            if (scores) setRadarScores(prev => ({ ...prev, ...scores }));
+          }
+        } catch {}
+        if (data.todayMinutes !== undefined) setTodayMinutes(data.todayMinutes);
+        if (data.last7Days) setLast7Days(data.last7Days);
+        const serverModStats: Record<string, ModuleStats> = {};
+        for (const skill of ['writing', 'reading', 'speaking', 'listening']) {
+          const s = data.skills?.[skill] || {};
+          serverModStats[skill] = {
+            practices: s.practices || 0,
+            avgScore: 0,
+            lastPractice: s.lastPractice || null
+          };
+        }
+        setModuleStats(serverModStats);
+      }
+    } catch (e) {
+      console.error('Sync failed:', e);
+    }
     await syncAchievementsFromCloud();
-    loadAllStats();
     setIsSyncing(false);
   };
 
@@ -509,8 +584,8 @@ export default function ProfilePage() {
                 <Clock size={22} />
               </div>
               <div className={styles.statContent}>
-                <span className={styles.statValue}>{stats.totalMinutes}</span>
-                <span className={styles.statLabel}>Minutes</span>
+                <span className={styles.statValue}>{todayMinutes >= 60 ? `${(todayMinutes / 60).toFixed(1)}h` : `${todayMinutes}m`}</span>
+                <span className={styles.statLabel}>Today</span>
               </div>
             </div>
             
@@ -535,13 +610,36 @@ export default function ProfilePage() {
             </div>
           </div>
 
+          {/* Weekly Practice Time */}
+          {last7Days.length > 0 && (
+            <section className={styles.weeklySection}>
+              <h3 className={styles.weeklyTitle}>📅 This Week</h3>
+              <div className={styles.weeklyBars}>
+                {last7Days.map((day) => {
+                  const maxMin = Math.max(...last7Days.map(d => d.minutes), 1);
+                  const pct = Math.round((day.minutes / maxMin) * 100);
+                  const dayLabel = new Date(day.date + 'T12:00:00').toLocaleDateString('en', { weekday: 'short' });
+                  return (
+                    <div key={day.date} className={styles.weeklyBarCol}>
+                      <span className={styles.weeklyBarValue}>{day.minutes > 0 ? (day.minutes >= 60 ? `${(day.minutes / 60).toFixed(1)}h` : `${day.minutes}m`) : ''}</span>
+                      <div className={styles.weeklyBarTrack}>
+                        <div className={styles.weeklyBarFill} style={{ height: `${Math.max(pct, 4)}%` }} />
+                      </div>
+                      <span className={styles.weeklyBarLabel}>{dayLabel}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
           {/* CELPIP Radar Chart */}
           <RadarChart 
             scores={{
-              writing: moduleStats.writing.avgScore,
-              reading: moduleStats.reading.avgScore,
-              speaking: moduleStats.speaking.avgScore,
-              listening: moduleStats.listening.avgScore
+              writing: radarScores.writing || 0,
+              reading: radarScores.reading || 0,
+              speaking: radarScores.speaking || 0,
+              listening: radarScores.listening || 0
             }}
           />
 
@@ -621,7 +719,7 @@ export default function ProfilePage() {
               <Calendar size={18} />
               Last 7 Days
             </h2>
-            <div className={styles.weeklyChart}>
+            <div className={styles.weeklySection}>
               {weeklyActivity.map((count, idx) => (
                 <div key={idx} className={styles.dayColumn}>
                   <div className={styles.barContainer}>
