@@ -909,5 +909,845 @@
       "Use formal language and polite hedging to articulate your points effectively.",
       "Anticipate potential objections from stakeholders and address them proactively."
     ]
+  },
+  {
+    "id": "task1-061",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You need help with a recipe for a Canadian dish.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Ask for their favorite recipe",
+      "Request tips on where to buy ingredients",
+      "Mention that you'll cook together next week"
+    ],
+    "tone": "informal",
+    "topic": "Recipe Assistance"
+  },
+  {
+    "id": "task1-062",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to borrow a book from your neighbor.",
+    "recipient": "your neighbor",
+    "bulletPoints": [
+      "Mention the title of the book you need",
+      "Express your interest in reading it",
+      "Discuss a convenient time for borrowing"
+    ],
+    "tone": "semi-formal",
+    "topic": "Book Request"
+  },
+  {
+    "id": "task1-063",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You received a work email and need clarification.",
+    "recipient": "your manager",
+    "bulletPoints": [
+      "State the specific issue you need clarity on",
+      "Ask for additional details",
+      "Thank them for their assistance"
+    ],
+    "tone": "formal",
+    "topic": "Work Email Clarification"
+  },
+  {
+    "id": "task1-064",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are inviting a colleague to a lunch.",
+    "recipient": "a colleague",
+    "bulletPoints": [
+      "Suggest a restaurant nearby",
+      "Propose a day and time",
+      "Ask if they can bring a friend"
+    ],
+    "tone": "informal",
+    "topic": "Lunch Invitation"
+  },
+  {
+    "id": "task1-065",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to notify your landlord about a maintenance issue.",
+    "recipient": "your landlord",
+    "bulletPoints": [
+      "Describe the maintenance issue",
+      "Request a timeline for repairs",
+      "Thank them for their attention"
+    ],
+    "tone": "semi-formal",
+    "topic": "Maintenance Request"
+  },
+  {
+    "id": "task1-066",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You need help with your English homework.",
+    "recipient": "a classmate",
+    "bulletPoints": [
+      "Explain what you're struggling with",
+      "Ask if they can study together",
+      "Suggest a time to meet"
+    ],
+    "tone": "informal",
+    "topic": "Homework Help"
+  },
+  {
+    "id": "task1-067",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to thank a friend for a recent favor.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Mention the favor they did for you",
+      "Express your gratitude",
+      "Suggest meeting up soon"
+    ],
+    "tone": "informal",
+    "topic": "Thank You Note"
+  },
+  {
+    "id": "task1-068",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are informing your team about a meeting.",
+    "recipient": "your team",
+    "bulletPoints": [
+      "State the date and time of the meeting",
+      "Mention the agenda",
+      "Ask for confirmation of attendance"
+    ],
+    "tone": "semi-formal",
+    "topic": "Meeting Notification"
+  },
+  {
+    "id": "task1-069",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are apologizing to a friend for missing an event.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Acknowledge the event you missed",
+      "Explain why you couldn't attend",
+      "Suggest meeting up soon to catch up"
+    ],
+    "tone": "informal",
+    "topic": "Apology for Missing Event"
+  },
+  {
+    "id": "task1-070",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You need to pick up a package at your local post office.",
+    "recipient": "the post office staff",
+    "bulletPoints": [
+      "Provide your tracking number",
+      "Ask for the process to pick it up",
+      "Inquire about their hours"
+    ],
+    "tone": "semi-formal",
+    "topic": "Package Pickup Inquiry"
+  },
+  {
+    "id": "task1-071",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to organize a picnic with friends.",
+    "recipient": "your friends",
+    "bulletPoints": [
+      "Suggest a park location",
+      "Propose a date and time",
+      "Ask everyone to bring food or drinks"
+    ],
+    "tone": "informal",
+    "topic": "Picnic Planning"
+  },
+  {
+    "id": "task1-072",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are giving feedback to a service provider.",
+    "recipient": "a local business",
+    "bulletPoints": [
+      "Mention the service you received",
+      "Share your positive or negative experience",
+      "Suggest improvements if needed"
+    ],
+    "tone": "semi-formal",
+    "topic": "Service Feedback"
+  },
+  {
+    "id": "task1-073",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to arrange a carpool with your coworker.",
+    "recipient": "a coworker",
+    "bulletPoints": [
+      "Suggest meeting points",
+      "Propose a schedule",
+      "Ask if they are interested"
+    ],
+    "tone": "semi-formal",
+    "topic": "Carpool Arrangement"
+  },
+  {
+    "id": "task1-074",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are writing to cancel your gym membership.",
+    "recipient": "the gym manager",
+    "bulletPoints": [
+      "State your membership details",
+      "Request confirmation of the cancellation",
+      "Thank them for their service"
+    ],
+    "tone": "formal",
+    "topic": "Membership Cancellation"
+  },
+  {
+    "id": "task1-075",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You want to borrow a tool from your neighbor.",
+    "recipient": "your neighbor",
+    "bulletPoints": [
+      "Specify the tool you need",
+      "Explain why you need it",
+      "Arrange a time to pick it up"
+    ],
+    "tone": "semi-formal",
+    "topic": "Tool Borrowing Request"
+  },
+  {
+    "id": "task1-076",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are asking a friend about their vacation.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Inquire about their travel destination",
+      "Ask what activities they enjoyed",
+      "Suggest a get-together to hear more"
+    ],
+    "tone": "informal",
+    "topic": "Vacation Inquiry"
+  },
+  {
+    "id": "task1-077",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are requesting time off work for a personal matter.",
+    "recipient": "your supervisor",
+    "bulletPoints": [
+      "State the reason for your request",
+      "Specify the dates you need off",
+      "Express willingness to help with workloads"
+    ],
+    "tone": "formal",
+    "topic": "Time Off Request"
+  },
+  {
+    "id": "task1-078",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are informing a friend about a new café in town.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Describe what makes the café special",
+      "Mention your experience there",
+      "Invite them to join you next time"
+    ],
+    "tone": "informal",
+    "topic": "Café Recommendation"
+  },
+  {
+    "id": "task1-079",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are writing to inquire about a community event.",
+    "recipient": "the event organizer",
+    "bulletPoints": [
+      "Ask for the date and location",
+      "Inquire about participation details",
+      "Thank them for the information"
+    ],
+    "tone": "semi-formal",
+    "topic": "Community Event Inquiry"
+  },
+  {
+    "id": "task1-080",
+    "task": 1,
+    "difficulty": "beginner",
+    "situation": "You are sending a reminder to a friend about an upcoming concert.",
+    "recipient": "a friend",
+    "bulletPoints": [
+      "Mention the concert date and time",
+      "Ask if they have tickets",
+      "Suggest meeting beforehand"
+    ],
+    "tone": "informal",
+    "topic": "Concert Reminder"
+  },
+  {
+    "id": "task1-081",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You recently visited a local restaurant in Toronto and had a disappointing experience with the service.",
+    "recipient": "Restaurant Manager",
+    "bulletPoints": [
+      "Describe the specific issues faced during your visit, such as long wait times and inattentive staff.",
+      "Suggest improvements that could enhance customer experience, like better staff training.",
+      "Express your hope for a better experience in the future, encouraging them to take feedback positively."
+    ],
+    "tone": "semi-formal",
+    "topic": "Restaurant Feedback"
+  },
+  {
+    "id": "task1-082",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You have just moved to Calgary and need assistance finding local healthcare services.",
+    "recipient": "City Health Services",
+    "bulletPoints": [
+      "Request information on available healthcare facilities and services in your neighborhood.",
+      "Inquire about how to register for a family doctor or find specialist services.",
+      "Mention any specific health needs you may have to receive tailored advice."
+    ],
+    "tone": "formal",
+    "topic": "Healthcare Inquiry"
+  },
+  {
+    "id": "task1-083",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You need to report a recurring problem with streetlights in your community in Vancouver.",
+    "recipient": "City Council",
+    "bulletPoints": [
+      "Provide details about the location of the streetlights that are out.",
+      "Explain the potential hazards this issue poses to pedestrians and drivers.",
+      "Request a timeline for repairs to ensure community safety."
+    ],
+    "tone": "formal",
+    "topic": "Community Safety Issue"
+  },
+  {
+    "id": "task1-084",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are an employee who wants to address the lack of team-building activities in your workplace in Ottawa.",
+    "recipient": "HR Manager",
+    "bulletPoints": [
+      "Express your concern about team morale and collaboration.",
+      "Propose specific team-building activities to improve workplace relationships.",
+      "Encourage consideration of employee feedback on future events."
+    ],
+    "tone": "semi-formal",
+    "topic": "Workplace Culture"
+  },
+  {
+    "id": "task1-085",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You want to request a meeting with your professor to discuss your academic progress in a course at a university in Halifax.",
+    "recipient": "Professor",
+    "bulletPoints": [
+      "Introduce yourself and specify the course and your student ID.",
+      "Explain the aspects of your progress you wish to discuss.",
+      "Suggest a few dates and times you are available for the meeting."
+    ],
+    "tone": "semi-formal",
+    "topic": "Academic Meeting Request"
+  },
+  {
+    "id": "task1-086",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are a community member expressing concerns about increased traffic in your neighborhood in Montreal.",
+    "recipient": "Local Traffic Authority",
+    "bulletPoints": [
+      "Describe the specific areas where traffic has increased and the times it is most problematic.",
+      "Mention any safety concerns for pedestrians and cyclists.",
+      "Request potential solutions, such as traffic calming measures or increased signage."
+    ],
+    "tone": "formal",
+    "topic": "Traffic Concern"
+  },
+  {
+    "id": "task1-087",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You recently attended a workshop and want to provide feedback to the organizer in Edmonton.",
+    "recipient": "Workshop Organizer",
+    "bulletPoints": [
+      "Thank them for the opportunity to attend and share what you learned.",
+      "Provide constructive feedback on areas for improvement, like workshop materials or duration.",
+      "Suggest topics or activities for future workshops that would be beneficial."
+    ],
+    "tone": "semi-formal",
+    "topic": "Workshop Feedback"
+  },
+  {
+    "id": "task1-088",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are experiencing poor internet service at home in Regina and need to contact your ISP.",
+    "recipient": "Customer Service",
+    "bulletPoints": [
+      "Explain the nature of the internet issues you are facing, such as frequent disconnections.",
+      "Request a timeline for resolving the issues and any troubleshooting steps to follow.",
+      "Inquire about potential compensation for the inconvenience caused."
+    ],
+    "tone": "semi-formal",
+    "topic": "Internet Service Complaint"
+  },
+  {
+    "id": "task1-089",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You noticed some litter in your local park in Winnipeg and want to address it with the city council.",
+    "recipient": "City Council",
+    "bulletPoints": [
+      "Describe the specific areas in the park that are affected by litter.",
+      "Highlight the importance of maintaining a clean environment for community enjoyment.",
+      "Suggest organizing community clean-up days and providing more bins."
+    ],
+    "tone": "formal",
+    "topic": "Park Cleanliness Concerns"
+  },
+  {
+    "id": "task1-090",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are a parent writing to the school principal about concerns regarding the school’s bullying policy in Victoria.",
+    "recipient": "School Principal",
+    "bulletPoints": [
+      "Share specific incidents or observations related to bullying at school.",
+      "Request a review of the current bullying policy and efforts in place.",
+      "Suggest ways to better involve parents in anti-bullying initiatives."
+    ],
+    "tone": "semi-formal",
+    "topic": "Bullying Policy Concern"
+  },
+  {
+    "id": "task1-091",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You recently received a defective product from an online store and wish to request a refund.",
+    "recipient": "Customer Service",
+    "bulletPoints": [
+      "Provide details of the order, including the item, order number, and issue encountered.",
+      "Include any attempts you made to resolve the issue, such as contacting tech support.",
+      "Request instructions on how to return the item and receive a refund."
+    ],
+    "tone": "formal",
+    "topic": "Product Refund Request"
+  },
+  {
+    "id": "task1-092",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are writing to a community center to inquire about volunteering opportunities in your area in Saskatoon.",
+    "recipient": "Community Center Coordinator",
+    "bulletPoints": [
+      "Introduce yourself and express your interest in volunteering.",
+      "Inquire about available volunteer roles and the application process.",
+      "Mention your skills or experiences that may be beneficial to the community."
+    ],
+    "tone": "semi-formal",
+    "topic": "Volunteering Inquiry"
+  },
+  {
+    "id": "task1-093",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are writing to your landlord about ongoing maintenance issues in your apartment in Toronto.",
+    "recipient": "Landlord",
+    "bulletPoints": [
+      "Detail the specific maintenance issues, such as plumbing or heating problems.",
+      "Request a timeline for when these issues will be addressed.",
+      "Express your expectation for proper communication regarding the status of repairs."
+    ],
+    "tone": "semi-formal",
+    "topic": "Maintenance Request"
+  },
+  {
+    "id": "task1-094",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You attended a conference in Calgary and want to express your gratitude to the keynote speaker.",
+    "recipient": "Keynote Speaker",
+    "bulletPoints": [
+      "Thank them for their engaging presentation and insights shared.",
+      "Mention specific points from the talk that resonated with you.",
+      "Express interest in their future work or publications."
+    ],
+    "tone": "semi-formal",
+    "topic": "Thank You Note"
+  },
+  {
+    "id": "task1-095",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You have concerns about noise levels from a nearby construction site in Halifax.",
+    "recipient": "Construction Company",
+    "bulletPoints": [
+      "Describe the times when noise is most disruptive to your daily life.",
+      "Request information on the duration of construction and expected noise levels.",
+      "Suggest potential ways to mitigate the noise impact on nearby residents."
+    ],
+    "tone": "formal",
+    "topic": "Noise Complaint"
+  },
+  {
+    "id": "task1-096",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You want to provide feedback on public transport services in your city of Vancouver.",
+    "recipient": "Public Transport Authority",
+    "bulletPoints": [
+      "Share your experiences regarding punctuality and service frequency.",
+      "Suggest improvements for better accessibility for all users.",
+      "Mention any specific routes that require better service or more connections."
+    ],
+    "tone": "semi-formal",
+    "topic": "Public Transport Feedback"
+  },
+  {
+    "id": "task1-097",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are a participant in a book club and wish to suggest a new book for the next meeting.",
+    "recipient": "Book Club Coordinator",
+    "bulletPoints": [
+      "Introduce the book you are suggesting and briefly describe its theme.",
+      "Explain why you think it would be a good fit for the club's interests.",
+      "Mention any additional discussion points or questions it might raise."
+    ],
+    "tone": "semi-formal",
+    "topic": "Book Suggestion"
+  },
+  {
+    "id": "task1-098",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You need to request time off from your job due to a family commitment.",
+    "recipient": "Supervisor",
+    "bulletPoints": [
+      "Specify the dates you would like to take off and the reason.",
+      "Assure them that you will ensure all your responsibilities are covered during your absence.",
+      "Request confirmation of your time off as soon as possible."
+    ],
+    "tone": "semi-formal",
+    "topic": "Time Off Request"
+  },
+  {
+    "id": "task1-099",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are writing to a local library to inquire about the availability of specific resources for research.",
+    "recipient": "Librarian",
+    "bulletPoints": [
+      "List the specific resources or materials you are looking for.",
+      "Ask if there are any databases or archives that could assist with your research.",
+      "Inquire about the process to access these resources."
+    ],
+    "tone": "formal",
+    "topic": "Resource Inquiry"
+  },
+  {
+    "id": "task1-100",
+    "task": 1,
+    "difficulty": "intermediate",
+    "situation": "You are a coaching parent wanting to provide feedback about a youth sports program in Montreal.",
+    "recipient": "Sports Program Director",
+    "bulletPoints": [
+      "Share your child's positive experiences and any areas for improvement in the program.",
+      "Suggest ideas for enhancing the program's structure or activities.",
+      "Express appreciation for the efforts of the coaches and staff."
+    ],
+    "tone": "semi-formal",
+    "topic": "Youth Sports Feedback"
+  },
+  {
+    "id": "task1-101",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a resident of Toronto concerned about the rising cost of housing and want to propose a policy change to the city council.",
+    "recipient": "Toronto City Council",
+    "bulletPoints": [
+      "Highlight the current housing affordability crisis and its impact on residents.",
+      "Propose the implementation of rent control measures as a solution.",
+      "Suggest public consultations to gauge community support and gather further ideas."
+    ],
+    "tone": "formal",
+    "topic": "Housing Affordability Policy Proposal"
+  },
+  {
+    "id": "task1-102",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are an employee at a large tech firm in Vancouver and are advocating for a more flexible remote work policy.",
+    "recipient": "Human Resources Manager",
+    "bulletPoints": [
+      "Discuss the benefits of remote work on employee productivity and satisfaction.",
+      "Address potential concerns about team collaboration and communication.",
+      "Propose a pilot program to trial the flexible work arrangement."
+    ],
+    "tone": "semi-formal",
+    "topic": "Remote Work Policy Advocacy"
+  },
+  {
+    "id": "task1-103",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a university student in Montreal writing to the administration about the need for mental health resources on campus.",
+    "recipient": "University Administration",
+    "bulletPoints": [
+      "Present statistics about the mental health challenges faced by students.",
+      "Advocate for increased access to counseling services and workshops.",
+      "Encourage the establishment of peer support programs led by trained students."
+    ],
+    "tone": "formal",
+    "topic": "Mental Health Resource Proposal"
+  },
+  {
+    "id": "task1-104",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a member of a community association in Calgary aiming to address local environmental issues.",
+    "recipient": "Calgary City Environment Committee",
+    "bulletPoints": [
+      "Outline the environmental challenges faced by the community, such as pollution and green space loss.",
+      "Propose a community clean-up initiative and tree planting program.",
+      "Invite city support and partnership to enhance the community's sustainability efforts."
+    ],
+    "tone": "formal",
+    "topic": "Community Environmental Initiative Proposal"
+  },
+  {
+    "id": "task1-105",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a parent writing to the school board in Quebec City regarding the curriculum's lack of emphasis on financial literacy.",
+    "recipient": "Quebec City School Board",
+    "bulletPoints": [
+      "Explain the importance of financial literacy in today's economy.",
+      "Suggest the integration of practical financial education in the school curriculum.",
+      "Propose workshops or seminars for both students and parents to improve financial awareness."
+    ],
+    "tone": "formal",
+    "topic": "Financial Literacy Curriculum Proposal"
+  },
+  {
+    "id": "task1-106",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a public health advocate in Ottawa writing to the health minister about the need for improved vaccination outreach in underserved communities.",
+    "recipient": "Minister of Health",
+    "bulletPoints": [
+      "Highlight the disparities in vaccination rates among marginalized populations.",
+      "Propose targeted outreach programs to educate and assist these communities.",
+      "Request funding and resources to support these initiatives."
+    ],
+    "tone": "formal",
+    "topic": "Vaccination Outreach Initiative"
+  },
+  {
+    "id": "task1-107",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are an employee at an Alberta oil company aiming to shift the corporate focus towards renewable energy.",
+    "recipient": "CEO of the Company",
+    "bulletPoints": [
+      "Discuss the potential long-term benefits of investing in renewable energy sources.",
+      "Address the company's current environmental impact and public perception.",
+      "Propose a transition plan outlining steps to pivot towards sustainable practices."
+    ],
+    "tone": "semi-formal",
+    "topic": "Renewable Energy Shift Proposal"
+  },
+  {
+    "id": "task1-108",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a city resident in Halifax concerned about the lack of recreational facilities for teens.",
+    "recipient": "Halifax City Council",
+    "bulletPoints": [
+      "Highlight the importance of recreational activities for teenagers' social and mental health.",
+      "Propose the development of a community center dedicated to youth programs.",
+      "Suggest collaboration with local organizations to provide diverse activities."
+    ],
+    "tone": "formal",
+    "topic": "Youth Recreational Facilities Proposal"
+  },
+  {
+    "id": "task1-109",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a business owner in Winnipeg advocating for changes to local legislation affecting small businesses.",
+    "recipient": "Mayor of Winnipeg",
+    "bulletPoints": [
+      "Outline the challenges small businesses face under current regulations.",
+      "Propose specific legislative changes that could support small business growth.",
+      "Emphasize the positive economic impact of supporting local entrepreneurship."
+    ],
+    "tone": "formal",
+    "topic": "Small Business Legislation Proposal"
+  },
+  {
+    "id": "task1-110",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are an environmental scientist in Saskatoon writing to city officials about implementing stricter waste management policies.",
+    "recipient": "Saskatoon City Officials",
+    "bulletPoints": [
+      "Discuss the environmental effects of inadequate waste management practices.",
+      "Suggest the introduction of stricter regulations and policies on waste disposal.",
+      "Propose educational campaigns to promote responsible waste management among residents."
+    ],
+    "tone": "formal",
+    "topic": "Stricter Waste Management Policy Proposal"
+  },
+  {
+    "id": "task1-111",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a patient at a healthcare facility in Toronto writing to the administrator about your experience with long wait times.",
+    "recipient": "Administrator of the Healthcare Facility",
+    "bulletPoints": [
+      "Share personal experiences regarding wait times and their impact on patient care.",
+      "Propose the hiring of additional staff to reduce wait times.",
+      "Suggest solutions such as a patient triage system to prioritize urgent cases."
+    ],
+    "tone": "formal",
+    "topic": "Healthcare Wait Time Concerns"
+  },
+  {
+    "id": "task1-112",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a local journalist in Victoria writing to the city council about the need for transparency in municipal decision-making.",
+    "recipient": "Victoria City Council",
+    "bulletPoints": [
+      "Address the public's growing concern over the lack of transparency in council decisions.",
+      "Propose regular, publicly accessible forums to discuss municipal issues.",
+      "Encourage the implementation of a digital platform for community feedback."
+    ],
+    "tone": "formal",
+    "topic": "Municipal Transparency Proposal"
+  },
+  {
+    "id": "task1-113",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a community activist in Edmonton addressing systemic racism in local policing.",
+    "recipient": "Edmonton Police Chief",
+    "bulletPoints": [
+      "Discuss recent incidents that highlight the issue of systemic racism in policing.",
+      "Propose community policing initiatives to build trust and engagement.",
+      "Request regular reports on progress and accountability measures."
+    ],
+    "tone": "formal",
+    "topic": "Addressing Systemic Racism in Policing"
+  },
+  {
+    "id": "task1-114",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a university professor in Ottawa advocating for the inclusion of Indigenous studies in the curriculum.",
+    "recipient": "University Curriculum Committee",
+    "bulletPoints": [
+      "Highlight the importance of Indigenous perspectives in contemporary education.",
+      "Propose the establishment of a dedicated Indigenous studies program.",
+      "Encourage community involvement from local Indigenous leaders and organizations."
+    ],
+    "tone": "formal",
+    "topic": "Indigenous Studies Curriculum Proposal"
+  },
+  {
+    "id": "task1-115",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a tech startup founder in Toronto writing to investors about the ethical implications of AI technology.",
+    "recipient": "Potential Investors",
+    "bulletPoints": [
+      "Discuss the current ethical dilemmas surrounding AI technology.",
+      "Propose the development of an ethical framework for responsible AI use.",
+      "Highlight the potential market advantage of prioritizing ethical practices."
+    ],
+    "tone": "semi-formal",
+    "topic": "Ethical AI Technology Framework Proposal"
+  },
+  {
+    "id": "task1-116",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a travel agency owner in Calgary writing to the municipal tourism board about diversifying tourism packages.",
+    "recipient": "Calgary Tourism Board",
+    "bulletPoints": [
+      "Identify the need to diversify tourism offerings to attract a broader audience.",
+      "Propose new package ideas that highlight local culture and experiences.",
+      "Suggest partnerships with local artisans and businesses to enrich tourism."
+    ],
+    "tone": "semi-formal",
+    "topic": "Diversifying Tourism Packages Proposal"
+  },
+  {
+    "id": "task1-117",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a recent immigrant to Halifax writing to the city council about barriers faced by newcomers regarding integration.",
+    "recipient": "Halifax City Council",
+    "bulletPoints": [
+      "Discuss the challenges newcomers face in accessing services and community resources.",
+      "Propose community integration programs that facilitate social connections.",
+      "Highlight the benefits of supporting newcomer integration for the community as a whole."
+    ],
+    "tone": "formal",
+    "topic": "Newcomer Integration Support Proposal"
+  },
+  {
+    "id": "task1-118",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a teacher in Edmonton writing to the school district about the necessity of inclusivity training for educators.",
+    "recipient": "Edmonton School District",
+    "bulletPoints": [
+      "Address the importance of inclusivity and diversity in the classroom.",
+      "Propose regular training sessions focused on culturally responsive teaching.",
+      "Suggest collaboration with local organizations to enhance the training program."
+    ],
+    "tone": "formal",
+    "topic": "Inclusivity Training for Educators Proposal"
+  },
+  {
+    "id": "task1-119",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a youth leader in Vancouver addressing the importance of mental health education in schools.",
+    "recipient": "Vancouver School Board",
+    "bulletPoints": [
+      "Emphasize the rising rates of mental health issues among students.",
+      "Propose a curriculum that includes mental health education and resources.",
+      "Highlight the importance of equipping students with coping strategies and mindfulness techniques."
+    ],
+    "tone": "formal",
+    "topic": "Mental Health Education in Schools Proposal"
+  },
+  {
+    "id": "task1-120",
+    "task": 1,
+    "difficulty": "advanced",
+    "situation": "You are a resident of Quebec City writing to your local representative about the need for improved public transportation options.",
+    "recipient": "Local Member of Parliament",
+    "bulletPoints": [
+      "Discuss current transportation challenges and their impact on daily commuters.",
+      "Propose initiatives to enhance the public transportation system, such as expanded routes and schedules.",
+      "Suggest community forums to gather input and feedback on transportation needs."
+    ],
+    "tone": "formal",
+    "topic": "Public Transportation Improvement Proposal"
   }
 ]

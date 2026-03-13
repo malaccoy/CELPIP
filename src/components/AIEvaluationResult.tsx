@@ -308,8 +308,8 @@ export function AIEvaluationLoading() {
     <div className={styles.loadingContainer}>
       <Loader2 className={styles.loadingSpinner} size={48} />
       <h3>Analisando seu texto...</h3>
-      <p>A IA está avaliando gramática, estrutura e conteúdo.</p>
-      <p className={styles.loadingTip}>Isso pode levar alguns segundos.</p>
+      <p>The AI is evaluating grammar, structure, and content.</p>
+      <p className={styles.loadingTip}>This may take a few seconds.</p>
     </div>
   );
 }

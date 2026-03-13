@@ -29,10 +29,46 @@ export async function getUserPlan(): Promise<PlanCheck> {
     where: { userId: user.id },
   });
 
+  // Auto-create local user if missing (Supabase Auth exists but local DB doesn't)
+  const localUser = await prisma.user.findUnique({ where: { id: user.id } });
+  if (!localUser) {
+    await prisma.user.create({
+      data: {
+        id: user.id,
+        email: user.email || '',
+        name: user.user_metadata?.name || user.user_metadata?.full_name || '',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+    }).catch(() => {}); // ignore if race condition
+  }
+
   const plan: Plan = userPlan?.plan === 'pro' ? 'pro' : 'free';
 
   // Check expiration
   if (plan === 'pro' && userPlan?.expiresAt && userPlan.expiresAt < new Date()) {
+    // Double-check with Stripe before denying access — expiresAt might be wrong
+    if (userPlan.stripeSubscriptionId) {
+      try {
+        const { stripe } = await import('@/lib/stripe');
+        const sub = await stripe.subscriptions.retrieve(userPlan.stripeSubscriptionId);
+        if (['active', 'trialing'].includes(sub.status)) {
+          // Subscription is actually active! Fix the expiresAt
+          const itemEnd = (sub as any).items?.data?.[0]?.current_period_end;
+          const newExpires = itemEnd && itemEnd > 1000000000
+            ? new Date(itemEnd * 1000)
+            : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+          await prisma.userPlan.update({
+            where: { id: userPlan.id },
+            data: { expiresAt: newExpires, plan: 'pro' }
+          });
+          console.log(`🔧 Auto-fixed expiresAt for user ${user.id}: ${newExpires.toISOString()}`);
+          return { authenticated: true, userId: user.id, plan: 'pro', isPro: true };
+        }
+      } catch (e) {
+        console.error('Stripe re-check failed:', e);
+      }
+    }
     return { authenticated: true, userId: user.id, plan: 'free', isPro: false };
   }
 

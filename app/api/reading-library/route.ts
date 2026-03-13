@@ -6,22 +6,24 @@ const recentlyServed = new Map<string, Set<string>>();
 
 export async function POST(req: NextRequest) {
   try {
-    const { partId, userId, difficulty } = await req.json();
+    const { partId, partOrTask, userId, difficulty } = await req.json();
     
-    if (!partId) {
-      return NextResponse.json({ error: 'partId required' }, { status: 400 });
-    }
+    const rawPart = partId || partOrTask || '';
 
     const partMap: Record<string, string> = {
       'correspondence': 'part1', 'part1': 'part1', 'reading-correspondence': 'part1',
       'diagram': 'part2', 'part2': 'part2', 'reading-to-apply-a-diagram': 'part2',
       'information': 'part3', 'part3': 'part3', 'reading-for-information': 'part3',
       'viewpoints': 'part4', 'part4': 'part4', 'reading-for-viewpoints': 'part4',
+      'part 1 (reading correspondence)': 'part1',
+      'part 2 (reading to apply a diagram)': 'part2',
+      'part 3 (reading for information)': 'part3',
+      'part 4 (reading for viewpoints)': 'part4',
     };
 
-    const fileKey = partMap[partId.toLowerCase().replace(/\s+/g, '-')];
+    const fileKey = partMap[rawPart.toLowerCase().replace(/\s+/g, '-')] || partMap[rawPart.toLowerCase()];
     if (!fileKey) {
-      return NextResponse.json({ error: 'Unknown part' }, { status: 400 });
+      return NextResponse.json({ error: 'Unknown part: ' + rawPart }, { status: 400 });
     }
 
     const libPath = join(process.cwd(), 'public', 'data', 'reading-library', `${fileKey}.json`);

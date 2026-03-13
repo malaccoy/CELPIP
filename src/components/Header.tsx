@@ -14,17 +14,20 @@ interface NavItem {
   to: string;
   icon: React.ElementType;
   label: string;
+  external?: boolean;
 }
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
   { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
-  { to: '/blog', icon: BookOpen, label: 'Learn' },
+  { to: '/english', icon: (() => null) as any, label: '🍁 Citizenship' },
+  { to: '/blog', icon: BookOpen, label: 'Blog' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
   { to: '/profile', icon: User, label: 'Profile' },
   { to: '/support', icon: HelpCircle, label: 'Support' },
+  { to: 'https://t.me/+YcO9MfUHIjQyYjAx', icon: (() => null) as any, label: '💬 Community', external: true },
 ];
 
 export const Header: React.FC = () => {
@@ -98,6 +101,20 @@ export const Header: React.FC = () => {
           {navItems.map((item) => {
             const Icon = item.icon;
             const active = isActive(item.to);
+            if (item.external) {
+              return (
+                <a
+                  key={item.to}
+                  href={item.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.headerNavLink}
+                >
+                  <Icon size={16} />
+                  <span>{item.label}</span>
+                </a>
+              );
+            }
             return (
               <Link
                 key={item.to}

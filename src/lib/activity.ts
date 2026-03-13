@@ -9,10 +9,10 @@ const prisma = new PrismaClient();
  */
 export async function logActivity(
   userId: string,
-  type: 'reading' | 'listening' | 'writing' | 'speaking',
+  type: 'reading' | 'listening' | 'writing' | 'speaking' | 'citizenship',
   count: number = 1
 ) {
-  const points = type === 'writing' ? 3 : type === 'speaking' ? 2 : 1;
+  const points = type === 'writing' ? 3 : type === 'speaking' ? 2 : type === 'citizenship' ? 2 : 1;
 
   try {
     // Create individual logs for accurate tracking

@@ -9,7 +9,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-02",
@@ -21,7 +23,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-03",
@@ -34,7 +38,9 @@
       "Reflect on the time of day and weather conditions influencing their experience."
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-04",
@@ -46,7 +52,9 @@
       "Consider the reactions of the dog and any adults present"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-05",
@@ -58,7 +66,9 @@
       "Consider the time of day and the pleasant weather affecting their work"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-06",
@@ -70,7 +80,9 @@
       "Consider the time of day and the sunny weather impacting the scene"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-07",
@@ -82,7 +94,9 @@
       "Consider the busy sidewalk and potential reactions of the people around her."
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-08",
@@ -94,7 +108,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-09",
@@ -106,7 +122,9 @@
       "Consider the time of day and how the approaching snowstorm might affect travel and safety"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-10",
@@ -118,7 +136,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-11",
@@ -130,7 +150,9 @@
       "Consider the impact of the fading light and dropping temperature"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-12",
@@ -142,7 +164,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-13",
@@ -154,7 +178,9 @@
       "Consider the time of day and weather conditions affecting the situation."
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-14",
@@ -166,7 +192,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-15",
@@ -178,7 +206,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-16",
@@ -190,7 +220,9 @@
       "Consider possible interactions between the cat and the birds"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-17",
@@ -202,7 +234,9 @@
       "Consider the time of day and how it may affect their plans"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-18",
@@ -214,7 +248,9 @@
       "Think about the time of day and how busy the restaurant is"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-19",
@@ -226,7 +262,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-20",
@@ -238,7 +276,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-21",
@@ -250,7 +290,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-22",
@@ -262,7 +304,9 @@
       "Consider the time of day and weather, and how they might affect the performance."
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-23",
@@ -274,7 +318,9 @@
       "Consider the time of day and the potential for excitement or chaos"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-24",
@@ -286,7 +332,9 @@
       "Consider how the weather and time of day might impact the scene"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-25",
@@ -298,7 +346,9 @@
       "Consider the time of day and how that might affect visibility"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-26",
@@ -310,7 +360,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-27",
@@ -322,7 +374,9 @@
       "Consider the time of day, likely breakfast rush, and overall atmosphere of the kitchen"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-28",
@@ -334,7 +388,9 @@
       "Consider the time of day and weather conditions affecting the scene"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-29",
@@ -346,7 +402,9 @@
       "Consider the time of day and weather conditions affecting the situation"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task4-30",
@@ -358,7 +416,9 @@
       "Consider the time of day and weather"
     ],
     "context": "Use the same picture from the previous task. Now predict what will happen.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "title": "Planning a Picnic",
@@ -749,5 +809,2085 @@
       "Structure your argument clearly, presenting both sides of the issue.",
       "Use specific examples to illustrate your points and make your predictions more grounded."
     ]
+  },
+  {
+    "prompt": "You see a family packing their car with camping gear. What do you think will happen next? Explain your reasons.",
+    "topic": "Camping Trip",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-061",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You notice a group of students having a bake sale at school. What do you think will happen next? Explain your reasons.",
+    "topic": "Bake Sale",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-062",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a couple looking at houses for sale in a neighborhood. What do you think will happen next? Explain your reasons.",
+    "topic": "House Hunting",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-063",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You observe a long line at an ice cream shop on a hot summer day. What do you think will happen next? Explain your reasons.",
+    "topic": "Ice Cream Shop",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-064",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a group of children playing soccer in the park. What do you think will happen next? Explain your reasons.",
+    "topic": "Soccer Game",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-065",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You notice a construction crew working on a new building downtown. What do you think will happen next? Explain your reasons.",
+    "topic": "Construction Site",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-066",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a man and a woman going for a walk with their dog in the neighborhood. What do you think will happen next? Explain your reasons.",
+    "topic": "Dog Walk",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-067",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You watch a farmer's market setting up in a local park. What do you think will happen next? Explain your reasons.",
+    "topic": "Farmers Market",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-068",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a group of friends organizing a picnic in a public park with lots of food. What do you think will happen next? Explain your reasons.",
+    "topic": "Picnic Planning",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-069",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You notice a bike repair shop with many people bringing in their bicycles. What do you think will happen next? Explain your reasons.",
+    "topic": "Bike Repairs",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-070",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You observe a line forming outside a new coffee shop that just opened. What do you think will happen next? Explain your reasons.",
+    "topic": "Coffee Shop",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-071",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a person gardening in their backyard on a sunny day. What do you think will happen next? Explain your reasons.",
+    "topic": "Gardening",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-072",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You watch a family getting ready for a road trip with maps and snacks. What do you think will happen next? Explain your reasons.",
+    "topic": "Road Trip",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-073",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see people setting up for a community festival in the town square. What do you think will happen next? Explain your reasons.",
+    "topic": "Community Festival",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-074",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You observe a family taking pictures at a tourist attraction. What do you think will happen next? Explain your reasons.",
+    "topic": "Tourist Attraction",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-075",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a child learning to ride a bicycle in a safe park area. What do you think will happen next? Explain your reasons.",
+    "topic": "Learning to Ride",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-076",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You notice people playing frisbee in the park on a sunny day. What do you think will happen next? Explain your reasons.",
+    "topic": "Park Games",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-077",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a couple celebrating an anniversary at a restaurant, looking very happy. What do you think will happen next? Explain your reasons.",
+    "topic": "Anniversary Celebration",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-078",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You watch children getting off a school bus after a field trip. What do you think will happen next? Explain your reasons.",
+    "topic": "School Field Trip",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-079",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a person waiting in line to enter a concert venue. What do you think will happen next? Explain your reasons.",
+    "topic": "Concert Event",
+    "task": 4,
+    "difficulty": "beginner",
+    "id": "task4-080",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a community event where people are discussing local transportation issues. Based on the conversations you hear, what do you think will happen next? Why?",
+    "topic": "Community Transportation",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-081",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are observing a construction site where workers are busy setting up new buildings. Based on what you see, what do you think will happen in the next few months? Why?",
+    "topic": "Urban Development",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-082",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "At a local farmer's market, you notice that many vendors are selling out of their produce quickly. Based on this, what do you think will happen later in the day? Why?",
+    "topic": "Local Economy",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-083",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a group of students organizing a charity event in your community. Based on their enthusiasm and plans, what do you think will happen next? Why?",
+    "topic": "Student Involvement",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-084",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "In a busy park, you observe families enjoying their day, but dark clouds are rolling in. Based on the scene, what do you think will happen soon? Why?",
+    "topic": "Weather Impact",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-085",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are watching a competition in a local sports event where one team is leading significantly. Based on their performance, what do you think will happen by the end of the match? Why?",
+    "topic": "Sports Competition",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-086",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "At a popular café, you notice a long line of customers waiting to place their orders. Based on this situation, what do you think will happen next? Why?",
+    "topic": "Customer Service",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-087",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are at an art gallery where a new exhibit has just opened. Many visitors are gathered around a particular piece. Based on this, what do you think might happen during the exhibition? Why?",
+    "topic": "Cultural Events",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-088",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "During a city council meeting, residents are voicing concerns about noise pollution. Based on their feedback, what do you think the council will do next? Why?",
+    "topic": "Public Policy",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-089",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are watching a team of volunteers clean up a local river. Based on their efforts, what do you think will happen to the community's environment in the future? Why?",
+    "topic": "Environmental Action",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-090",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "At a school assembly, teachers are discussing new educational programs. Based on their enthusiasm, what do you think will happen next in the school? Why?",
+    "topic": "Education Initiatives",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-091",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a group of seniors participating in a fitness class at a community center. Based on their commitment, what do you think will happen in the upcoming months? Why?",
+    "topic": "Health and Fitness",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-092",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are observing a neighborhood block party where people are sharing food and stories. Based on the interactions, what do you think will happen as the day progresses? Why?",
+    "topic": "Community Building",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-093",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "At a local high school, students are preparing for a science fair, and there are various exciting projects being displayed. Based on this, what do you think will happen during the fair? Why?",
+    "topic": "Student Projects",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-094",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "In a public library, you see people attending a workshop on digital literacy. Based on their engagement, what do you think will happen as a result of this workshop? Why?",
+    "topic": "Skills Development",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-095",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are watching a documentary screening about climate change, and the audience is visibly moved. Based on this reaction, what do you think will happen next? Why?",
+    "topic": "Social Awareness",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-096",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "At a local theater, you notice that tickets for a popular show are selling out quickly. Based on this trend, what do you think will happen next in the following weeks? Why?",
+    "topic": "Arts and Entertainment",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-097",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are in a shopping mall where sales promotions are being advertised. Based on the customer's reactions, what do you think will happen during the sale period? Why?",
+    "topic": "Retail Strategies",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-098",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are attending a technology expo where innovative gadgets are being showcased. Based on the attendees' interests, what do you think will happen in the tech industry as a result? Why?",
+    "topic": "Technology Trends",
+    "task": 4,
+    "difficulty": "intermediate",
+    "id": "task4-099",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are observing a busy street in downtown Toronto during rush hour. Predict what might happen in the next half hour, considering traffic patterns and pedestrian behavior.",
+    "topic": "Urban Rush Hour",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-100",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a community garden in a neighborhood experiencing increasing populations. Predict the potential outcomes for this garden over the next few years.",
+    "topic": "Community Garden Growth",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-101",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A new high-tech office building is under construction in Calgary. Predict how this development will impact the local economy and community in the coming years.",
+    "topic": "Economic Development",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-102",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You observe a group of high school students engaging in a debate competition in Vancouver. Predict the potential long-term effects of such events on their future careers and civic engagement.",
+    "topic": "Youth Engagement",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-103",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A town hall meeting is being held to discuss climate change initiatives in a Canadian city. Predict the possible actions that might be decided and their implications for the community.",
+    "topic": "Climate Action Planning",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-104",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are watching a documentary about urban sprawl in Montreal and its effects on the environment. Predict what measures might be implemented to combat these effects in the future.",
+    "topic": "Urban Sprawl",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-105",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A Canadian university has just announced a major research grant focused on renewable energy technology. Predict the potential advancements that could arise from this funding.",
+    "topic": "Renewable Energy Research",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-106",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a large crowd at a music festival in Ottawa. Predict how this event could influence local businesses and tourism in the near future.",
+    "topic": "Cultural Events Impact",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-107",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A new policy is proposed to increase public transportation options in a small Canadian city. Predict the effects this might have on residents’ commuting habits and city planning.",
+    "topic": "Public Transportation Policy",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-108",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Observing an environmental protest outside a corporate office in Toronto, predict the likely outcomes of this demonstration in terms of public awareness and corporate policy changes.",
+    "topic": "Environmental Activism",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-109",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a live-streamed debate regarding immigration policies in Canada. Predict how the outcomes of such discussions could shape future immigration laws and public opinion.",
+    "topic": "Immigration Debate",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-110",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A new startup focusing on tech innovation has launched in Vancouver. Predict the potential impact this company could have on the local job market and technological landscape.",
+    "topic": "Startup Innovation",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-111",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You are learning about a new housing redevelopment project in Winnipeg. Predict how this project could change the social dynamics of the neighborhood over the next decade.",
+    "topic": "Housing Development",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-112",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A local sports team wins a championship in Edmonton. Predict how this victory might influence community spirit and youth engagement in sports.",
+    "topic": "Sports Victory",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-113",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see a documentary showcasing Indigenous culture and art in a Canadian city. Predict the ways this representation might affect public perceptions and cultural appreciation.",
+    "topic": "Cultural Representation",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-114",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "An agricultural fair is showcasing sustainable farming practices in Ontario. Predict the influence this might have on future farming methods and local economies.",
+    "topic": "Sustainable Agriculture",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-115",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You observe a panel discussion about mental health awareness in a community center in Halifax. Predict the potential changes in community support systems and initiatives thereafter.",
+    "topic": "Mental Health Awareness",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-116",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "A major renovation is planned for a historic building in Quebec City. Predict how this renovation could impact local tourism and heritage preservation efforts.",
+    "topic": "Heritage Renovation",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-117",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "You see an increase in online shopping trends affecting local retail businesses in Toronto. Predict the long-term implications for the local economy and shopping culture.",
+    "topic": "Retail Trends",
+    "task": 4,
+    "difficulty": "advanced",
+    "id": "task4-118",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-119",
+    "scenario": "A woman is at a bus stop checking her watch. The bus is late, and she seems worried.",
+    "prompt": "What do you think the woman will do next?",
+    "tips": [
+      "Think about her options.",
+      "Consider the time she has waited.",
+      "What might she feel?"
+    ],
+    "bulletPoints": [
+      "She might call someone.",
+      "She could decide to walk instead.",
+      "She might wait a little longer."
+    ],
+    "context": "Public transportation is common in Canada, and delays can happen.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-120",
+    "scenario": "A group of children is playing outside in the snow, building a snowman. They are laughing and having fun.",
+    "prompt": "What do you think the children will do next?",
+    "tips": [
+      "Think about winter activities.",
+      "What else can they make with snow?",
+      "Consider their excitement."
+    ],
+    "bulletPoints": [
+      "They might have a snowball fight.",
+      "They could go inside for hot chocolate.",
+      "They might decorate the snowman."
+    ],
+    "context": "Winter fun is a big part of Canadian life during snowy months.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-121",
+    "scenario": "A man is in a grocery store looking at a long line at the checkout. He seems frustrated.",
+    "prompt": "What do you think the man will do next?",
+    "tips": [
+      "Consider his options at the store.",
+      "Think about how he feels about waiting.",
+      "What might he buy instead?"
+    ],
+    "bulletPoints": [
+      "He might choose another checkout line.",
+      "He could leave the store without buying anything.",
+      "He might decide to shop somewhere else next time."
+    ],
+    "context": "Grocery shopping is a common activity, and long lines can happen.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-122",
+    "scenario": "A couple is in a coffee shop discussing their plans for the evening. They seem excited.",
+    "prompt": "What do you think they will decide to do?",
+    "tips": [
+      "Think about activities for the evening.",
+      "Consider what they enjoy.",
+      "What options do they have?"
+    ],
+    "bulletPoints": [
+      "They might go to a movie.",
+      "They could have dinner at a restaurant.",
+      "They might stay home and watch a show."
+    ],
+    "context": "Going out for coffee is a popular social activity in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-123",
+    "scenario": "A student is sitting in a library, nervously looking over some notes before an exam. The exam is about to start.",
+    "prompt": "What do you think the student will do next?",
+    "tips": [
+      "Consider their feelings before an exam.",
+      "Think about how they can prepare.",
+      "What might they tell themselves?"
+    ],
+    "bulletPoints": [
+      "They might review their notes one last time.",
+      "They could take a deep breath to relax.",
+      "They might head to the exam room."
+    ],
+    "context": "Studying for exams is common for students in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-124",
+    "scenario": "A family is at a pet store, looking at puppies. The kids are excited and pointing at different dogs.",
+    "prompt": "What do you think the family will do next?",
+    "tips": [
+      "Think about the family's options.",
+      "Consider if they want to buy a puppy.",
+      "What questions might they ask?"
+    ],
+    "bulletPoints": [
+      "They might ask to play with a puppy.",
+      "They could discuss getting a pet.",
+      "They might leave the store without a puppy."
+    ],
+    "context": "Pet stores are popular places for families considering pets.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-125",
+    "scenario": "A worker is in an office looking at a computer screen, receiving a message from their boss about an important meeting.",
+    "prompt": "What do you think the worker will do next?",
+    "tips": [
+      "Consider how they might prepare.",
+      "What questions might they have?",
+      "What could their reaction be?"
+    ],
+    "bulletPoints": [
+      "They might organize their notes for the meeting.",
+      "They could check their calendar.",
+      "They might feel anxious or excited."
+    ],
+    "context": "Meetings are common in Canadian workplaces for communication.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-126",
+    "scenario": "A man is at a farmer's market, looking at fresh vegetables. He seems undecided about what to buy.",
+    "prompt": "What do you think the man will choose to buy?",
+    "tips": [
+      "Think about healthy options.",
+      "Consider what's in season.",
+      "What dishes might he make?"
+    ],
+    "bulletPoints": [
+      "He might choose some tomatoes and cucumbers.",
+      "He could buy some local fruit.",
+      "He might ask the seller for recommendations."
+    ],
+    "context": "Farmer's markets are popular in Canada for fresh produce.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-127",
+    "scenario": "A young woman is sitting in a park reading a book. A friend approaches her with a big smile.",
+    "prompt": "What do you think the friend will say or do next?",
+    "tips": [
+      "Consider how friends interact.",
+      "Think about what they might discuss.",
+      "What might they plan together?"
+    ],
+    "bulletPoints": [
+      "The friend might ask what she is reading.",
+      "They could make plans to go for coffee.",
+      "They might sit down and chat."
+    ],
+    "context": "Parks are common places for friends to meet and relax in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-128",
+    "scenario": "A woman is standing in line at a bank. She is looking at her phone, peering ahead to see when she will be served.",
+    "prompt": "What do you think will happen next for the woman at the bank?",
+    "tips": [
+      "Consider her options if the wait is long.",
+      "Think about how she might feel.",
+      "What else could she do?"
+    ],
+    "bulletPoints": [
+      "She might continue checking her messages.",
+      "She could ask a bank employee for help.",
+      "She might decide to come back later."
+    ],
+    "context": "Banks are busy places where people often have to wait.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-129",
+    "scenario": "A woman is in a shopping mall, looking at a new phone display. She is talking to a salesperson about the features of the latest model.",
+    "prompt": "What do you think will happen next? Will she buy the phone or decide to look at other stores?",
+    "tips": [
+      "Think about what she might need the phone for.",
+      "Consider the salesperson's influence.",
+      "Remember her budget and preferences."
+    ],
+    "bulletPoints": [
+      "She might ask more questions about the phone.",
+      "She could try to negotiate a lower price.",
+      "She might decide to go to another store."
+    ],
+    "context": "Shoppers often discuss products with salespeople before making a decision.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-130",
+    "scenario": "A group of friends is at a Canadian restaurant enjoying a meal. They are laughing and taking photos of their food.",
+    "prompt": "What do you think will happen next? Will they order dessert or leave the restaurant?",
+    "tips": [
+      "Think about whether they seem satisfied.",
+      "Consider if they have shared their meals.",
+      "Imagine their plans for after the meal."
+    ],
+    "bulletPoints": [
+      "They might ask the waiter for dessert options.",
+      "They could take more photos for social media.",
+      "They might decide to go for a walk after eating."
+    ],
+    "context": "Dining out with friends often leads to discussions about dessert.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-131",
+    "scenario": "A father is at the playground with his daughter. She is playing on the swings and looks excited.",
+    "prompt": "What do you think will happen next? Will the father push her on the swings or take her to another area of the park?",
+    "tips": [
+      "Consider how much she enjoys the swings.",
+      "Think about the time they have at the park.",
+      "Imagine the father’s plans for the day."
+    ],
+    "bulletPoints": [
+      "He might start pushing her to make her swing higher.",
+      "He could suggest trying the slide next.",
+      "They might meet friends who arrive at the park."
+    ],
+    "context": "Parents often engage in playtime activities with their children at parks.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-132",
+    "scenario": "A woman is waiting at the train station. She checks her watch and looks a bit anxious.",
+    "prompt": "What do you think will happen next? Will the train arrive soon, or will she miss it?",
+    "tips": [
+      "Think about how precise train schedules are.",
+      "Consider her facial expression and body language.",
+      "Imagine what she might do if the train is late."
+    ],
+    "bulletPoints": [
+      "The train might arrive just in time.",
+      "She could check the schedule for updates.",
+      "She might call a friend if she misses it."
+    ],
+    "context": "Public transit passengers often feel anxious about timeliness.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-133",
+    "scenario": "A couple is in a Canadian bookstore, discussing which book to buy. They have a few options in their hands.",
+    "prompt": "What do you think will happen next? Will they choose one book or get multiple books?",
+    "tips": [
+      "Consider their interests and preferences.",
+      "Think about any special deals or discounts.",
+      "Imagine if they have a budget to stick to."
+    ],
+    "bulletPoints": [
+      "They might agree on one book that excites them both.",
+      "They could put back one book due to price.",
+      "They might ask the staff for recommendations."
+    ],
+    "context": "Bookstores often have various choices that lead to discussions.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-134",
+    "scenario": "A student is in a university library studying for an exam. She is surrounded by books and notes and looks focused.",
+    "prompt": "What do you think will happen next? Will she continue studying, or will she take a break?",
+    "tips": [
+      "Think about how long she has been studying.",
+      "Consider her level of concentration.",
+      "Imagine her study schedule for the day."
+    ],
+    "bulletPoints": [
+      "She might decide to take a short coffee break.",
+      "She could reach out to a friend for study help.",
+      "She might start reviewing her notes more intensely."
+    ],
+    "context": "Students often balance study time with necessary breaks.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-135",
+    "scenario": "A man is shopping at a Canadian grocery store and is looking at the fruit section. He is checking prices and seems thoughtful.",
+    "prompt": "What do you think will happen next? Will he buy some fruit or walk away without buying anything?",
+    "tips": [
+      "Consider if he has a specific fruit in mind.",
+      "Think about how prices may influence his decision.",
+      "Imagine if he is shopping for a special occasion."
+    ],
+    "bulletPoints": [
+      "He might pick a few fruits that are on sale.",
+      "He could compare prices with other stores.",
+      "He might decide to skip the fruit section."
+    ],
+    "context": "Grocery shopping often involves choosing the best deals.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-136",
+    "scenario": "A man is at a coffee shop waiting for his order. He is looking at his phone and seems distracted.",
+    "prompt": "What do you think will happen next? Will his order be ready soon, or will he need to wait longer?",
+    "tips": [
+      "Think about how busy the coffee shop is.",
+      "Consider if he has a meeting or appointment.",
+      "Imagine the staff's efficiency."
+    ],
+    "bulletPoints": [
+      "His order might come out quickly if it's simple.",
+      "He could get a notification about a delay.",
+      "He might decide to ask the staff about his order."
+    ],
+    "context": "Coffee shop patrons often wait for their drinks and snacks.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-137",
+    "scenario": "A young woman is at a fitness class, following the instructor's moves. She looks determined and is trying to keep up with the rhythm.",
+    "prompt": "What do you think will happen next? Will she finish the class or take a break?",
+    "tips": [
+      "Consider her fitness level and motivation.",
+      "Think about how she feels during the workout.",
+      "Imagine any friends or support around her."
+    ],
+    "bulletPoints": [
+      "She might push through to complete the class.",
+      "She could pause to get some water.",
+      "She might encourage a friend to join her next time."
+    ],
+    "context": "Fitness classes can be challenging and require motivation.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-138",
+    "scenario": "A couple is at a pet adoption event looking at a puppy. They are smiling and chatting excitedly.",
+    "prompt": "What do you think will happen next? Will they decide to adopt the puppy or keep looking?",
+    "tips": [
+      "Think about their previous experiences with pets.",
+      "Consider the puppy's behavior and appeal.",
+      "Imagine their plans for the future with a pet."
+    ],
+    "bulletPoints": [
+      "They might fill out an adoption application.",
+      "They could discuss making a commitment.",
+      "They might decide to come back later."
+    ],
+    "context": "Adoption events often lead to emotional decisions for potential pet owners.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-139",
+    "scenario": "A family is packing their car for a weekend camping trip. They have tents, food, and fishing gear ready.",
+    "prompt": "What do you think will happen when they arrive at the campsite?",
+    "tips": [
+      "Think about activities they might do.",
+      "Consider what might go wrong or right.",
+      "Imagine how they will set up their camp."
+    ],
+    "bulletPoints": [
+      "They will set up their tent.",
+      "They may go fishing or hiking.",
+      "They might have a campfire at night."
+    ],
+    "context": "This scenario is common for families enjoying outdoor activities in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-140",
+    "scenario": "A group of coworkers is planning an office party. They are discussing food options and decorations.",
+    "prompt": "What do you think they will decide for the party?",
+    "tips": [
+      "Consider their preferences for food.",
+      "Think about the theme they might choose.",
+      "Imagine how they will invite others."
+    ],
+    "bulletPoints": [
+      "They might choose pizza and snacks.",
+      "They may have a holiday theme.",
+      "They could send out invitations via email."
+    ],
+    "context": "Planning office events is a common task in workplaces across Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-141",
+    "scenario": "A woman is walking her dog in a neighborhood. She stops to chat with a neighbor watering their plants.",
+    "prompt": "What do you think they will talk about next?",
+    "tips": [
+      "Think about common topics in the neighborhood.",
+      "Consider how they might feel about the weather.",
+      "Imagine if they discuss local events."
+    ],
+    "bulletPoints": [
+      "They might talk about the weather.",
+      "They could discuss the local park.",
+      "They may plan to meet for coffee."
+    ],
+    "context": "Casual conversations between neighbors are typical in Canadian communities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-142",
+    "scenario": "A student is in a classroom preparing for a group presentation. Everyone is discussing their roles.",
+    "prompt": "What do you think will happen during their presentation?",
+    "tips": [
+      "Consider how they will work together.",
+      "Think about their confidence levels.",
+      "Imagine if they face any challenges."
+    ],
+    "bulletPoints": [
+      "They may share their ideas clearly.",
+      "They could help each other if someone struggles.",
+      "They might receive positive feedback from the teacher."
+    ],
+    "context": "Group presentations are a common part of learning in Canadian schools.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-143",
+    "scenario": "A couple is shopping for groceries in a store. They are deciding between different brands of cereal.",
+    "prompt": "What do you think they will choose and why?",
+    "tips": [
+      "Think about their preferences, like healthiness or price.",
+      "Consider if they will compare the packages.",
+      "Imagine if they will ask for opinions."
+    ],
+    "bulletPoints": [
+      "They might choose a healthy option.",
+      "They may select a brand on sale.",
+      "They could change their mind after discussing."
+    ],
+    "context": "Grocery shopping is a regular task for many Canadians.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-144",
+    "scenario": "A community center is filled with people preparing for a local talent show. Some are rehearsing their acts while others are setting up decorations.",
+    "prompt": "Look at the scene and predict what will happen next at the talent show.",
+    "tips": [
+      "Think about how people might react to each other's performances.",
+      "Consider potential surprises or mishaps during the event.",
+      "Reflect on the community's support for the performers."
+    ],
+    "bulletPoints": [
+      "Excitement builds as the event approaches.",
+      "Performers may forget their lines or get stage fright.",
+      "Community members might cheer loudly or give constructive feedback."
+    ],
+    "context": "Community event involving local talent showcase.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-145",
+    "scenario": "A group of coworkers is gathered around a conference table discussing a new project proposal. Papers are scattered, and some are taking notes.",
+    "prompt": "Look at the scene and predict what will happen next during the meeting.",
+    "tips": [
+      "Consider how team dynamics might influence decisions.",
+      "Think about possible disagreements or consensus on the proposal.",
+      "Reflect on what actions might follow the discussion."
+    ],
+    "bulletPoints": [
+      "Some coworkers may present differing opinions.",
+      "A decision might be made on how to proceed with the project.",
+      "An action plan could be established based on the discussion."
+    ],
+    "context": "Workplace setting discussing a project proposal.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-146",
+    "scenario": "A family is at a community potluck gathering, with tables full of different dishes. Children are running around while adults chat and eat.",
+    "prompt": "Look at the scene and predict what will happen next at the potluck.",
+    "tips": [
+      "Consider how families might interact over shared meals.",
+      "Think about potential games or activities for children.",
+      "Reflect on how people might share recipes or compliments."
+    ],
+    "bulletPoints": [
+      "Children may start games or join activities together.",
+      "Guests could compliment dishes and ask for recipes.",
+      "A toast or community announcement may happen."
+    ],
+    "context": "Social community gathering with food and interaction.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-147",
+    "scenario": "A local farmer's market is busy on a Saturday morning, with vendors selling fresh produce. Customers are discussing prices and sampling fruits.",
+    "prompt": "Look at the scene and predict what will happen next at the farmer's market.",
+    "tips": [
+      "Think about interactions between customers and vendors.",
+      "Consider unexpected events like a surprise sale or live music.",
+      "Reflect on how this market might influence community shopping habits."
+    ],
+    "bulletPoints": [
+      "More customers may gather around popular stalls.",
+      "Vendors might offer discounts or specials as the day progresses.",
+      "An impromptu event could happen, like a cooking demonstration."
+    ],
+    "context": "Weekend shopping experience at a farmer's market.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-148",
+    "scenario": "A group of volunteers is organizing a winter clothing drive in a community hall. Boxes are piled high with coats and scarves, as people sort through donations.",
+    "prompt": "Look at the scene and predict what will happen next during the clothing drive.",
+    "tips": [
+      "Consider how volunteers might engage with their community.",
+      "Think about potential challenges with sorting donations.",
+      "Reflect on how recipients might react to receiving clothing."
+    ],
+    "bulletPoints": [
+      "Volunteers may start distributing items to those in need.",
+      "More community members might show up to donate or help.",
+      "An announcement might be made about future drives or events."
+    ],
+    "context": "Community initiative focused on helping those in need.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-149",
+    "scenario": "In a bustling downtown office, colleagues are gathered in a break room discussing their weekend plans over coffee and snacks.",
+    "prompt": "Look at the scene and predict what will happen next during their conversation.",
+    "tips": [
+      "Think about how one person's story might inspire others.",
+      "Consider potential conflicts in plans or differing opinions.",
+      "Reflect on how they might also discuss work-related topics."
+    ],
+    "bulletPoints": [
+      "Conversations may shift to work-related issues or deadlines.",
+      "Someone could suggest a team outing based on weekend plans.",
+      "A surprise announcement about a workplace event may occur."
+    ],
+    "context": "Casual workplace interaction among colleagues.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-150",
+    "scenario": "A neighborhood is hosting a block party. People are setting up tables, stringing lights, and children are playing games.",
+    "prompt": "Look at the scene and predict what will happen next at the block party.",
+    "tips": [
+      "Think about the types of activities that children and adults might engage in.",
+      "Consider how neighbors might interact and connect.",
+      "Reflect on the potential outcome of the party's events."
+    ],
+    "bulletPoints": [
+      "Food and drinks may be served, starting a communal meal.",
+      "Activities might lead to friendly competition or collaboration.",
+      "New friendships and connections could form among neighbors."
+    ],
+    "context": "Community event fostering neighborly connections.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-151",
+    "scenario": "At a local library, a group of people is attending a workshop on resume writing. Materials are laid out, and attendees are engaged with the presenter.",
+    "prompt": "Look at the scene and predict what will happen next in the workshop.",
+    "tips": [
+      "Consider how participants might share their experiences with job applications.",
+      "Think about potential questions that may arise during the session.",
+      "Reflect on how the workshop might impact the attendees."
+    ],
+    "bulletPoints": [
+      "Attendees may start practicing writing their resumes.",
+      "Networking opportunities could arise among participants.",
+      "The presenter may share success stories to motivate attendees."
+    ],
+    "context": "Educational workshop aimed at improving job application skills.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-152",
+    "scenario": "At a community gym, several people are participating in a group fitness class. The instructor is providing motivation while participants are working hard.",
+    "prompt": "Look at the scene and predict what will happen next during the class.",
+    "tips": [
+      "Consider how participants may encourage each other throughout the session.",
+      "Think about potential modifications the instructor might suggest.",
+      "Reflect on how the energy might change as the class progresses."
+    ],
+    "bulletPoints": [
+      "Some participants may struggle while others excel.",
+      "The instructor might introduce a fun surprise activity.",
+      "A sense of community and bonding may grow among attendees."
+    ],
+    "context": "Health and fitness activity promoting physical wellness.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-153",
+    "scenario": "A city council meeting is taking place, with residents and officials debating the best ways to improve local parks. Some people have brought presentations.",
+    "prompt": "Look at the scene and predict what will happen next in the council meeting.",
+    "tips": [
+      "Consider how residents may advocate for their ideas.",
+      "Think about potential challenges or disagreements on proposals.",
+      "Reflect on how the meeting might conclude or lead to actionable steps."
+    ],
+    "bulletPoints": [
+      "Debates may arise over budget allocations for parks.",
+      "Resident support could sway council decisions.",
+      "A timeline for improvements might be proposed as a resolution."
+    ],
+    "context": "Local governance discussing community enhancements.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-154",
+    "scenario": "A group of employees at a tech startup is gathered around a table, examining graphs and figures on their laptops. They seem engaged in a discussion about quarterly performance and upcoming projects.",
+    "prompt": "What do you think will happen next in this meeting regarding their project planning?",
+    "tips": [
+      "Focus on potential outcomes of their discussion.",
+      "Consider the team dynamics and company goals.",
+      "Think about how they might address any challenges."
+    ],
+    "bulletPoints": [
+      "They might decide on new strategies.",
+      "Some team members may express concerns.",
+      "They could establish deadlines for project milestones."
+    ],
+    "context": "Workplace meeting for project planning.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-155",
+    "scenario": "At a community sports event, several children are warming up for a soccer game. Parents are gathered on the sidelines, chatting and cheering.",
+    "prompt": "What do you predict will happen during the upcoming soccer game?",
+    "tips": [
+      "Consider the children's skill levels.",
+      "Think about the potential strategies they may use.",
+      "Reflect on how parents might react to the game."
+    ],
+    "bulletPoints": [
+      "Some children may score goals.",
+      "There might be friendly competition among parents.",
+      "Injuries or challenges may arise that require attention."
+    ],
+    "context": "Community sports event for children.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-156",
+    "scenario": "A local theatre is bustling with people. A director discusses the upcoming play with actors backstage while audience members take their seats.",
+    "prompt": "What do you think will happen just before and during the play's performance?",
+    "tips": [
+      "Consider the actors' readiness and nervousness.",
+      "Think about the audience's reaction to the opening.",
+      "Anticipate any last-minute changes or surprises."
+    ],
+    "bulletPoints": [
+      "Actors may have a brief rehearsal.",
+      "The audience could react enthusiastically.",
+      "Unexpected technical issues might occur."
+    ],
+    "context": "Local theatre performance preparation.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-157",
+    "scenario": "A community meeting is taking place in a school gymnasium. Residents are discussing neighborhood improvements, and some have brought posters and proposals.",
+    "prompt": "What do you predict will happen as the meeting progresses?",
+    "tips": [
+      "Focus on community engagement and participation.",
+      "Anticipate responses from local government representatives.",
+      "Think about potential disagreements or support."
+    ],
+    "bulletPoints": [
+      "Some proposals may gain support.",
+      "Residents might voice their concerns strongly.",
+      "A decision could be made about which projects to pursue."
+    ],
+    "context": "Community improvement discussion.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-158",
+    "scenario": "A homeowner is meeting with a contractor to discuss renovations in the living room. Blueprints and design samples are spread out on the table.",
+    "prompt": "What do you think will happen next in this renovation meeting?",
+    "tips": [
+      "Consider the homeowner's budget and preferences.",
+      "Think about the contractor's suggestions.",
+      "Anticipate any issues that might arise."
+    ],
+    "bulletPoints": [
+      "They might finalize design choices.",
+      "Costs could be negotiated.",
+      "Unexpected challenges may be discussed."
+    ],
+    "context": "Home renovation planning.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-159",
+    "scenario": "At a charity event, several volunteers are organizing tables and setting up donation boxes. Guests are arriving and greeting each other.",
+    "prompt": "What predictions can you make about how the charity event will unfold?",
+    "tips": [
+      "Consider the types of activities planned.",
+      "Think about potential interactions between guests.",
+      "Anticipate fundraising outcomes."
+    ],
+    "bulletPoints": [
+      "Guests may make generous donations.",
+      "Some might engage in friendly conversations.",
+      "Unexpected issues like technical difficulties could arise."
+    ],
+    "context": "Community charity event setup.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-160",
+    "scenario": "A group of friends is discussing plans for a weekend camping trip. They have a map spread out and are marking potential sites.",
+    "prompt": "What do you think will happen as they finalize their plans for the trip?",
+    "tips": [
+      "Consider what challenges they might face.",
+      "Think about their preferences for activities.",
+      "Anticipate any disagreements."
+    ],
+    "bulletPoints": [
+      "They might choose an ideal campsite together.",
+      "Some may suggest activities like hiking or fishing.",
+      "Logistics like food and transportation might be debated."
+    ],
+    "context": "Planning a weekend camping trip.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-161",
+    "scenario": "During a community clean-up day, residents are picking up litter in a local park. Some children are setting up a lemonade stand nearby.",
+    "prompt": "What do you predict will happen as the clean-up and lemonade stand progress?",
+    "tips": [
+      "Consider the reactions of passersby.",
+      "Think about how the children might interact with the volunteers.",
+      "Anticipate the overall impact on community spirit."
+    ],
+    "bulletPoints": [
+      "The lemonade stand may attract attention and help fundraise.",
+      "Residents might feel proud of their efforts.",
+      "Children could learn about community service."
+    ],
+    "context": "Community clean-up and fundraising event.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-162",
+    "scenario": "In a busy public library, several patrons are attending a workshop on digital skills. The instructor is setting up equipment and distributing materials.",
+    "prompt": "What do you think will happen as the workshop begins?",
+    "tips": [
+      "Consider the participants' varying skill levels.",
+      "Think about potential questions that might arise.",
+      "Anticipate the instructor’s techniques."
+    ],
+    "bulletPoints": [
+      "Participants may ask for clarification on topics.",
+      "Some may quickly grasp the material while others struggle.",
+      "Engagement levels may vary throughout the workshop."
+    ],
+    "context": "Workshop in a public library.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-163",
+    "scenario": "At a farmer's market, a vendor is showcasing fresh produce while customers are browsing. People are discussing recipes and ingredients with one another.",
+    "prompt": "What predictions can you make about the interactions at the market today?",
+    "tips": [
+      "Consider the types of produce available.",
+      "Think about how vendors might encourage sales.",
+      "Anticipate potential recipe exchanges among customers."
+    ],
+    "bulletPoints": [
+      "Customers might buy ingredients for popular dishes.",
+      "Vendors may offer discounts or samples.",
+      "Recipe discussions could inspire new cooking ideas."
+    ],
+    "context": "Local farmer's market experience.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-164",
+    "scenario": "A group of neighbors is gathered in a driveway, discussing plans for a community garden. They are exchanging ideas about what vegetables to plant and how to divide the responsibilities.",
+    "prompt": "Predict how the discussion might evolve and what decisions the neighbors will ultimately make about the community garden.",
+    "tips": [
+      "Think about collaborative decision-making.",
+      "Consider potential challenges they might face.",
+      "Reflect on how this could strengthen their community ties."
+    ],
+    "bulletPoints": [
+      "Possible vegetable choices include tomatoes and peppers.",
+      "Some neighbors may volunteer to tend the garden.",
+      "They might discuss a schedule for maintenance."
+    ],
+    "context": "Community gardening initiative in a suburban neighborhood.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-165",
+    "scenario": "An office team is wrapping up their weekly meeting, and the manager expresses concern about a project's upcoming deadline. Team members are exchanging glances, suggesting they have differing opinions about their progress.",
+    "prompt": "What predictions can you make about the team’s next steps and how they will handle the deadline issue?",
+    "tips": [
+      "Consider team dynamics and communication.",
+      "Think about possible stressors affecting performance.",
+      "Anticipate potential solutions that may be proposed."
+    ],
+    "bulletPoints": [
+      "Some team members may suggest working overtime.",
+      "They might propose a brainstorming session to overcome obstacles.",
+      "A discussion about reallocating resources could happen."
+    ],
+    "context": "Workplace scenario at a project management meeting.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-166",
+    "scenario": "A family is sitting at the dining table, discussing their summer vacation plans. They have a few ideas, including a trip to the mountains or going to the beach.",
+    "prompt": "What might your prediction be regarding their final vacation choice and the factors influencing their decision?",
+    "tips": [
+      "Think about the preferences of each family member.",
+      "Consider the weather and travel costs.",
+      "Reflect on previous vacation experiences."
+    ],
+    "bulletPoints": [
+      "The children may prefer a beach trip for fun activities.",
+      "Parents might prioritize budget and convenience.",
+      "They could compromise on a destination that offers both."
+    ],
+    "context": "Family vacation planning during a meal.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-167",
+    "scenario": "A group of students is volunteering to clean up a local park. They have just gathered their supplies and are chatting about the environmental impact of littering.",
+    "prompt": "Based on the conversation, what predictions can you make about how their cleanup efforts will unfold and the community's response?",
+    "tips": [
+      "Think about possible challenges they may encounter.",
+      "Consider the influence of community support or lack thereof.",
+      "Reflect on possible reactions from passersby."
+    ],
+    "bulletPoints": [
+      "They may find more litter than expected.",
+      "Local residents might join in once they see the cleanup.",
+      "They could arrange for future clean-up events."
+    ],
+    "context": "Community service activity focusing on environmental awareness.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-168",
+    "scenario": "At a neighborhood watch meeting, residents are discussing recent break-ins in the area. They are sharing their fears and suggestions for improving security.",
+    "prompt": "What might happen next in the meeting, and what actions do you predict the residents will take to enhance their safety?",
+    "tips": [
+      "Consider the emotional aspect of safety concerns.",
+      "Think about potential community initiatives or collaborations.",
+      "Reflect on how this may impact neighbor relationships."
+    ],
+    "bulletPoints": [
+      "They might decide to form a patrol schedule.",
+      "Residents could discuss securing partnerships with local police.",
+      "A plan for a neighborhood safety workshop may be proposed."
+    ],
+    "context": "Community safety meeting addressing local crime concerns.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-169",
+    "scenario": "In a local bakery, the staff is busy preparing for a special event. They are discussing which pastries to feature and the possible attendance from the community.",
+    "prompt": "What do you think their predictions are regarding the event's turnout and how it could affect their business?",
+    "tips": [
+      "Consider factors that influence attendance, like advertising.",
+      "Think about community interest in baked goods.",
+      "Reflect on how events can improve customer relations."
+    ],
+    "bulletPoints": [
+      "They might plan a social media campaign to promote the event.",
+      "The possibility of giving samples could attract more customers.",
+      "Feedback from attendees could help guide future events."
+    ],
+    "context": "Local business preparing for a community engagement event.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-170",
+    "scenario": "A local high school is hosting a career fair. Students are milling about, discussing the companies they want to explore and the opportunities they hope to gain.",
+    "prompt": "What predictions can you make regarding the outcomes of the career fair for the students and the companies involved?",
+    "tips": [
+      "Think about the students' aspirations and job search strategies.",
+      "Consider how company participation may vary based on interest.",
+      "Reflect on long-term benefits for students and companies."
+    ],
+    "bulletPoints": [
+      "Some students may land internship opportunities.",
+      "Companies could receive valuable resumes from promising candidates.",
+      "Networking might lead to future recruitment events."
+    ],
+    "context": "Educational event linking students with potential employers.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-171",
+    "scenario": "A couple is planning to renovate their home and discussing various contractors they have researched. They are weighing the pros and cons of each based on reviews and previous work.",
+    "prompt": "What might their final decision look like, and what factors are likely to influence their choice of contractor?",
+    "tips": [
+      "Think about their budget and timeline for the renovations.",
+      "Consider the importance of recommendations and trust in contractors.",
+      "Reflect on the couple's priorities for their home."
+    ],
+    "bulletPoints": [
+      "They may choose the contractor with the best reviews.",
+      "Cost efficiency might be a critical factor in their decision.",
+      "Previous project styles might sway their choice."
+    ],
+    "context": "Home improvement planning for a family in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-172",
+    "scenario": "At a local library, a book club is discussing their next read. Members are sharing their favorite genres and suggesting titles they believe everyone would enjoy.",
+    "prompt": "What predictions can you make about the book they will choose and how this selection might affect their discussions moving forward?",
+    "tips": [
+      "Consider the interests of the members and their reading backgrounds.",
+      "Think about how different genres could lead to varied discussions.",
+      "Reflect on the dynamics of the group based on previous choices."
+    ],
+    "bulletPoints": [
+      "They might choose a popular bestseller to attract interest.",
+      "A member might advocate for a classic to spark debate.",
+      "The selection may influence the engagement of less vocal members."
+    ],
+    "context": "Cultural activity focusing on literature and community engagement.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-173",
+    "scenario": "A sports team is preparing for an important match. The coach is giving a motivational speech while players are warming up, discussing their strategies and nerves.",
+    "prompt": "What do you predict will happen during the match and how the team’s preparation will influence their performance?",
+    "tips": [
+      "Consider the players' mental states and strategies discussed.",
+      "Think about how teamwork can affect the outcome.",
+      "Reflect on how the coach’s motivation might energize the team."
+    ],
+    "bulletPoints": [
+      "They may start strong, leading to a confident performance.",
+      "Tactics discussed during warm-up could be key to winning.",
+      "Nerves might affect their gameplay initially."
+    ],
+    "context": "Local sports team gearing up for a competitive match.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-174",
+    "scenario": "A young professional is listening intently to a presentation about a new project at work. The presenter is explaining the project timeline and potential challenges while the audience takes notes and asks questions.",
+    "prompt": "What do you think will happen next in this meeting? Describe your predictions.",
+    "tips": [
+      "Think about the audience's reactions.",
+      "Consider any possible questions that might arise.",
+      "Reflect on the next steps in the project discussion."
+    ],
+    "bulletPoints": [
+      "Audience may express concerns or excitement.",
+      "Questions about resources or deadlines could arise.",
+      "The presenter may provide further details or examples."
+    ],
+    "context": "Office setting focused on professional development.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-175",
+    "scenario": "At a community park, a group of families is setting up for an outdoor movie night. They are arranging blankets, placing chairs, and setting up a projector while chatting and laughing with each other.",
+    "prompt": "What do you think will happen next during this event? Share your predictions.",
+    "tips": [
+      "Consider the potential weather changes.",
+      "Think about how families might interact.",
+      "Anticipate any technical issues with the setup."
+    ],
+    "bulletPoints": [
+      "Families may invite more friends to join.",
+      "The weather could influence attendance.",
+      "Technical difficulties might occur with the projector."
+    ],
+    "context": "Community event bringing families together.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-176",
+    "scenario": "In a local café, a young woman is engaged in a video call interview for a job. She seems nervous but is prepared with notes in front of her, while the interviewer appears friendly and is asking her questions.",
+    "prompt": "What do you think will happen next in this interview? Share your thoughts.",
+    "tips": [
+      "Think about how she might respond to questions.",
+      "Consider the possibility of follow-up questions.",
+      "Reflect on her chances of success in the interview."
+    ],
+    "bulletPoints": [
+      "She may gain confidence as the interview progresses.",
+      "The interviewer might offer her a chance to ask questions.",
+      "A decision on the next steps could be discussed."
+    ],
+    "context": "Job interview situation, highlighting career opportunities.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-177",
+    "scenario": "A university campus is bustling with students as they prepare for the upcoming exam week. Some are studying in groups on the lawns, while others are frantically searching for books in the library.",
+    "prompt": "Based on this scene, predict what events might unfold as exam week approaches.",
+    "tips": [
+      "Consider the pressures students face during exams.",
+      "Think about potential study strategies students might adopt.",
+      "Reflect on how the university might support students during this time."
+    ],
+    "bulletPoints": [
+      "Increased stress levels may lead to more group studies.",
+      "The library might extend its hours to accommodate students.",
+      "Students may organize study sessions with professors."
+    ],
+    "context": "University life in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-178",
+    "scenario": "A new public transportation system is being launched in a busy metropolitan area, with advertisements filling the streets. Commuters are curiously examining the new routes and schedules posted on public boards.",
+    "prompt": "Given this scenario, predict the impact the new transportation system will have on local commuters.",
+    "tips": [
+      "Analyze potential changes in commuting patterns.",
+      "Consider environmental impacts and economic factors.",
+      "Evaluate possible public sentiment towards the changes."
+    ],
+    "bulletPoints": [
+      "Reduced commute times for many passengers.",
+      "Potential decrease in traffic congestion.",
+      "Mixed reactions from long-time users of the old system."
+    ],
+    "context": "Urban transportation development in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-179",
+    "scenario": "A community is debating the introduction of a new environmental policy aimed at reducing waste. Residents are divided, with some attending a town hall meeting to voice their opinions and concerns.",
+    "prompt": "Predict how this debate might evolve and affect community dynamics.",
+    "tips": [
+      "Think about the role of community leaders in influencing opinions.",
+      "Consider how differing views might lead to collaboration or conflict.",
+      "Reflect on the long-term consequences of the policy, if implemented."
+    ],
+    "bulletPoints": [
+      "Increased community engagement in environmental issues.",
+      "Possible formation of advocacy groups for and against the policy.",
+      "Negotiations may arise to revise the policy based on feedback."
+    ],
+    "context": "Environmental policy discussions in Canadian communities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-180",
+    "scenario": "A local tech startup has just secured significant funding and is preparing for a major product launch. Employees are seen brainstorming and collaborating intensely in their office space.",
+    "prompt": "Anticipate the potential challenges and successes the startup might face following the funding announcement.",
+    "tips": [
+      "Evaluate how funding affects team morale.",
+      "Consider market competition and customer reception.",
+      "Reflect on scaling operations and hiring needs."
+    ],
+    "bulletPoints": [
+      "Challenges with product development timelines.",
+      "Increased pressure to meet investor expectations.",
+      "Opportunities for networking and growth in the industry."
+    ],
+    "context": "Startup culture in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-181",
+    "scenario": "A local sports arena is filled with fans eagerly awaiting the final match of a championship series. Spectators are wearing team jerseys and discussing the players' performances throughout the season.",
+    "prompt": "Based on this scene, predict the possible outcomes of the match and its implications for the community.",
+    "tips": [
+      "Think about the rivalry between the teams.",
+      "Consider the impact of the match on local businesses.",
+      "Reflect on community pride and celebration or disappointment."
+    ],
+    "bulletPoints": [
+      "Increased local business sales due to fan attendance.",
+      "Potential for celebrations or community events if the home team wins.",
+      "Emotional impact on fans regardless of the outcome."
+    ],
+    "context": "Sports culture and community engagement in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-182",
+    "scenario": "A new housing development is being constructed in a suburban area, and the local council is holding an information session for residents to discuss potential changes to the neighborhood.",
+    "prompt": "Predict how residents might respond to the new housing development and its impact on the community.",
+    "tips": [
+      "Consider concerns about infrastructure and services.",
+      "Think about potential benefits and drawbacks of new developments.",
+      "Reflect on how community identity might evolve."
+    ],
+    "bulletPoints": [
+      "Possible opposition from residents fearing overpopulation.",
+      "Opportunities for increased community amenities.",
+      "Debate over property values and local resources."
+    ],
+    "context": "Urban planning and community engagement in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-183",
+    "scenario": "A prominent indigenous artist is hosting an exhibition featuring traditional and contemporary artworks. The gallery is filled with diverse visitors engaging in discussions about the pieces on display.",
+    "prompt": "Forecast the potential impact of this exhibition on cultural awareness and community relations.",
+    "tips": [
+      "Evaluate the role of art in promoting cultural understanding.",
+      "Consider how communities might engage with indigenous culture.",
+      "Reflect on future collaborations between artists and communities."
+    ],
+    "bulletPoints": [
+      "Increased appreciation for indigenous narratives and heritage.",
+      "Opportunities for educational workshops and discussions.",
+      "Potential partnerships between the gallery and local schools."
+    ],
+    "context": "Indigenous culture and arts in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-184",
+    "scenario": "During a citywide emergency preparedness drill, residents are practicing evacuation procedures while emergency services coordinate from a command center. Community members are engaged in discussions about emergency response protocols.",
+    "prompt": "Predict how residents will apply what they learn from this drill in real-life situations.",
+    "tips": [
+      "Think about the importance of community preparedness.",
+      "Consider how drills can change perceptions about safety.",
+      "Reflect on potential improvements to local emergency services."
+    ],
+    "bulletPoints": [
+      "Increased awareness of personal safety measures.",
+      "Formation of neighborhood watch groups for future preparedness.",
+      "Potential for improved coordination with emergency services."
+    ],
+    "context": "Community safety and emergency preparedness in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-185",
+    "scenario": "A local university is hosting a major conference on climate change policy, with experts and activists in attendance. Attendees are networking and sharing ideas on sustainable practices.",
+    "prompt": "Anticipate the outcomes of this conference and its influence on future climate action initiatives.",
+    "tips": [
+      "Consider the role of conferences in shaping policy.",
+      "Think about potential collaborations between sectors.",
+      "Reflect on the impact of public engagement in climate issues."
+    ],
+    "bulletPoints": [
+      "Increased collaboration between academic, governmental, and private sectors.",
+      "Potential for new policies or initiatives to emerge from discussions.",
+      "Amplified public awareness and activism surrounding climate change."
+    ],
+    "context": "Climate change discourse in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-186",
+    "scenario": "A community theater is preparing for its opening night of a play that addresses social issues, drawing a diverse audience eager to engage with the themes presented.",
+    "prompt": "Predict how the play's themes might resonate with the audience and influence community conversations.",
+    "tips": [
+      "Reflect on the role of art in sparking dialogue.",
+      "Consider how the audience's demographics might affect perceptions.",
+      "Think about potential follow-up discussions or community events."
+    ],
+    "bulletPoints": [
+      "Increased dialogue about the social issues presented.",
+      "Possible partnerships with local organizations for further discussions.",
+      "Opportunities for community workshops based on the play's themes."
+    ],
+    "context": "Cultural engagement through the arts in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-187",
+    "scenario": "A group of urban planners is discussing the potential impact of a new green space in a downtown area. They are presenting data on air quality improvements and community well-being.",
+    "prompt": "Predict the potential outcomes of introducing this new green space.",
+    "tips": [
+      "Consider environmental, social, and economic factors.",
+      "Think about long-term versus short-term effects.",
+      "Use specific examples to illustrate your points."
+    ],
+    "bulletPoints": [
+      "Improved air quality leading to better health.",
+      "Increased community engagement and social activities.",
+      "Potential rise in property values."
+    ],
+    "context": "Urban development in a Canadian city.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-188",
+    "scenario": "A technology company is in the final stages of launching a new app aimed at enhancing remote work productivity. Employees are participating in a live demo.",
+    "prompt": "Predict how this app will affect the company's workflow and employee satisfaction.",
+    "tips": [
+      "Analyze the role of technology in modern workspaces.",
+      "Consider both positive and negative implications.",
+      "Refer to remote work trends."
+    ],
+    "bulletPoints": [
+      "Increased efficiency and time management.",
+      "Possible initial resistance to technology changes.",
+      "Enhanced communication among team members."
+    ],
+    "context": "Workplace innovations in the tech industry.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-189",
+    "scenario": "A large Canadian city is facing increased traffic congestion due to recent population growth and urban sprawl. City officials are considering the implementation of a congestion charge.",
+    "prompt": "Predict the possible effects of this congestion charge on urban mobility and public perception.",
+    "tips": [
+      "Evaluate the implications for commuters and businesses.",
+      "Address public sentiment and possible backlash.",
+      "Discuss potential outcomes on traffic patterns."
+    ],
+    "bulletPoints": [
+      "Reduction in vehicular traffic during peak hours.",
+      "Concerns from affected local businesses.",
+      "Shift towards alternative transportation methods."
+    ],
+    "context": "City planning and transportation policy.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-190",
+    "scenario": "A local government is introducing a new policy aimed at increasing affordable housing options, which has faced opposition from existing homeowners concerned about property values.",
+    "prompt": "Predict the potential impacts of this policy on the housing market and community dynamics.",
+    "tips": [
+      "Consider economic and social implications.",
+      "Discuss potential conflicts and resolutions.",
+      "Explore long-term community benefits."
+    ],
+    "bulletPoints": [
+      "Increased diversity and inclusivity in neighborhoods.",
+      "Potential decrease in short-term property values.",
+      "Improved living conditions for low-income families."
+    ],
+    "context": "Community development and housing policy in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-191",
+    "scenario": "A new public health initiative is being launched to address mental health issues in a community, featuring workshops and support groups.",
+    "prompt": "Predict the short-term and long-term effects of this initiative on mental health awareness and community well-being.",
+    "tips": [
+      "Address stigma and accessibility of mental health resources.",
+      "Discuss the role of community engagement.",
+      "Think about metrics for measuring success."
+    ],
+    "bulletPoints": [
+      "Increased awareness and understanding of mental health.",
+      "Potential reduction in stigma surrounding mental health issues.",
+      "Long-term support network development."
+    ],
+    "context": "Public health initiatives in Canadian communities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-192",
+    "scenario": "A Canadian university has just received significant funding to enhance its research in renewable energy technologies, aiming to become a leader in this field.",
+    "prompt": "Predict the possible advancements and challenges this university may face in the renewable energy sector.",
+    "tips": [
+      "Consider collaborations with industries and governments.",
+      "Think of technological innovations and educational impacts.",
+      "Discuss potential environmental benefits."
+    ],
+    "bulletPoints": [
+      "Emergence of groundbreaking research.",
+      "Increased collaboration with industry leaders.",
+      "Challenges in securing long-term funding and resources."
+    ],
+    "context": "Academic and research advancements in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-193",
+    "scenario": "A small Canadian town is facing a dilemma as a large corporation plans to open a factory, promising jobs but posing environmental risks.",
+    "prompt": "Predict the potential outcomes of this corporate development for the town's economy and quality of life.",
+    "tips": [
+      "Analyze the trade-offs between economic growth and environmental health.",
+      "Consider community reactions and involvement.",
+      "Evaluate the potential for sustainable practices."
+    ],
+    "bulletPoints": [
+      "Job creation versus environmental degradation.",
+      "Community activism and zoning challenges.",
+      "Long-term sustainability considerations."
+    ],
+    "context": "Economic development versus environmental sustainability.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-194",
+    "scenario": "During a severe winter storm, local authorities are coordinating emergency responses, including shelter provisions and resource distributions for vulnerable populations.",
+    "prompt": "Predict the effectiveness of these emergency measures and their impact on community resilience.",
+    "tips": [
+      "Discuss the role of community organizations in emergency response.",
+      "Consider the logistic challenges of resource distribution.",
+      "Think about long-term impacts on community trust."
+    ],
+    "bulletPoints": [
+      "Immediate relief for affected populations.",
+      "Improved community trust in local government.",
+      "Engagement of volunteers and local organizations."
+    ],
+    "context": "Emergency management in Canadian winters.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-195",
+    "scenario": "A cross-cultural festival is being organized to celebrate diversity in a Canadian city, with various performances, food stalls, and educational workshops.",
+    "prompt": "Predict the effects of this festival on community relations and cultural understanding.",
+    "tips": [
+      "Consider the benefits of cultural exchange.",
+      "Think about potential challenges in organizing such an event.",
+      "Discuss the role of community engagement."
+    ],
+    "bulletPoints": [
+      "Enhanced social cohesion and understanding among cultures.",
+      "Opportunity for local businesses to thrive.",
+      "Challenges in logistics and funding."
+    ],
+    "context": "Cultural events promoting diversity in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-196",
+    "scenario": "An innovative education initiative is being piloted in local schools, focusing on environmental stewardship and sustainability education for students.",
+    "prompt": "Predict the potential long-term effects of this initiative on student behavior and community practices.",
+    "tips": [
+      "Evaluate the importance of education on environmental issues.",
+      "Think about how it could inspire community involvement.",
+      "Discuss the scalability of such initiatives."
+    ],
+    "bulletPoints": [
+      "Students becoming proactive environmental advocates.",
+      "Increased community participation in sustainability efforts.",
+      "Potential shifts in local policies."
+    ],
+    "context": "Education and environmental awareness in Canadian schools.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-197",
+    "scenario": "In a bustling downtown office, a team is gathered around a table to discuss a project that involves significant ethical considerations about data privacy. As they review the implications of their work, tensions rise over differing opinions on transparency.",
+    "prompt": "Predict how the team will resolve their differences regarding ethical standards and data privacy in their project.",
+    "tips": [
+      "Consider the potential impact of their decision on public trust.",
+      "Think about how workplace dynamics could influence their negotiations.",
+      "Use relevant terminology to articulate ethical considerations."
+    ],
+    "bulletPoints": [
+      "Conflicting viewpoints on transparency may lead to a compromise.",
+      "Team members might seek guidance from external ethical standards.",
+      "The outcome may set a precedent for future projects."
+    ],
+    "context": "Corporate environment involved in data management and analytics.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-198",
+    "scenario": "At a community meeting in a suburban neighborhood, residents are debating the introduction of a new waste management system that includes composting. Some residents express concern about the cost and implementation challenges, while others are eager to embrace sustainable practices.",
+    "prompt": "Predict what the outcome of this community debate will be regarding the new waste management system.",
+    "tips": [
+      "Evaluate the weigh of environmental benefits against financial concerns.",
+      "Think about potential compromises that might appease both sides.",
+      "Consider how community leaders might influence the final decision."
+    ],
+    "bulletPoints": [
+      "Residents may form committees to research and propose solutions.",
+      "There could be a trial period for the new system to alleviate concerns.",
+      "Public support for sustainability might sway the final decision."
+    ],
+    "context": "Community involvement in sustainability initiatives and local governance.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-199",
+    "scenario": "In a major Canadian technological conference, industry experts are networking and exchanging ideas on artificial intelligence ethics. A heated discussion arises over the implications of AI in decision-making processes for cities, with some advocates pushing for immediate implementation.",
+    "prompt": "Predict the possible outcomes of this discussion on the future use of AI in urban planning.",
+    "tips": [
+      "Analyze the ethical implications of AI governance in public spaces.",
+      "Consider potential public backlash against rapid AI deployment.",
+      "Identify key stakeholders who might influence the final consensus."
+    ],
+    "bulletPoints": [
+      "Debate could lead to proposed regulations for AI use in urban environments.",
+      "A pilot project may be initiated to test AI applications in a controlled setting.",
+      "Ethical guidelines may be drafted to ensure responsible AI implementation."
+    ],
+    "context": "A conference aimed at discussing emerging trends in technology for urban development.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task4-200",
+    "scenario": "In a busy hospital waiting room, families are anxiously awaiting updates on their loved ones after a multi-vehicle accident. Medical staff members are discussing the need for improved communication strategies to manage the emotional stress of the families.",
+    "prompt": "Predict how the hospital staff will enhance their communication strategies in light of this incident.",
+    "tips": [
+      "Consider the importance of empathy and clarity in communication.",
+      "Think about technological solutions that could facilitate updates.",
+      "Reflect on the psychological impact of waiting for news on families."
+    ],
+    "bulletPoints": [
+      "Staff may implement regular updates to keep families informed.",
+      "Training sessions might be scheduled to improve communication skills.",
+      "A dedicated support team may be established to assist families in crisis."
+    ],
+    "context": "Healthcare settings focused on patient and family communication improvement.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   }
 ]

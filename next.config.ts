@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       { source: '/reading/practice', destination: '/ai-coach', permanent: false },
       { source: '/reading/practice/:partId', destination: '/ai-coach', permanent: false },
       { source: '/speaking/practice/:taskId', destination: '/ai-coach', permanent: false },
+      { source: '/learn', destination: '/english', permanent: true },
+      { source: '/learn/:path*', destination: '/english/:path*', permanent: true },
     ];
   },
 };

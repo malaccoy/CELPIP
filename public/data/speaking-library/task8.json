@@ -9,7 +9,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-02",
@@ -21,7 +23,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-03",
@@ -33,7 +37,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-04",
@@ -45,7 +51,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-05",
@@ -57,7 +65,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-06",
@@ -69,7 +79,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-07",
@@ -81,7 +93,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-08",
@@ -93,7 +107,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-09",
@@ -105,7 +121,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-10",
@@ -117,7 +135,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-11",
@@ -129,7 +149,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-12",
@@ -141,7 +163,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-13",
@@ -153,7 +177,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-14",
@@ -165,7 +191,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-15",
@@ -177,7 +205,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-16",
@@ -189,7 +219,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-17",
@@ -201,7 +233,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-18",
@@ -213,7 +247,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-19",
@@ -225,7 +261,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-20",
@@ -237,7 +275,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-21",
@@ -249,7 +289,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-22",
@@ -261,7 +303,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-23",
@@ -273,7 +317,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-24",
@@ -285,7 +331,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-25",
@@ -297,7 +345,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-26",
@@ -309,7 +359,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-27",
@@ -321,7 +373,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-28",
@@ -333,7 +387,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-29",
@@ -345,7 +401,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task8-30",
@@ -357,7 +415,9 @@
       "Suggest what might have happened or ask a question"
     ],
     "context": "You are calling a friend to tell them about something strange you just saw.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "title": "A Surprise Visitor",
@@ -719,5 +779,2085 @@
       "Structure your answer with a clear introduction, body, and conclusion.",
       "Consider both ethical perspectives and the interests of various stakeholders."
     ]
+  },
+  {
+    "prompt": "Imagine you are at a community event and a surprise guest shows up. Describe this unusual situation and explain its significance.",
+    "topic": "surprise guest",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-061",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you discover a hidden garden in your neighborhood. Describe this unusual situation and explain why it is significant to you.",
+    "topic": "hidden garden",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-062",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you witness a street performer doing an amazing trick. Describe this unusual situation and explain why it is significant to you.",
+    "topic": "street performer",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-063",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you find a friendly stray dog that follows you home. Describe this unusual situation and explain its significance to you.",
+    "topic": "stray dog",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-064",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you accidentally receive a letter meant for someone else. Describe this unusual situation and explain why it is significant.",
+    "topic": "wrong letter",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-065",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you meet someone famous by chance while shopping. Describe this unusual situation and explain its significance.",
+    "topic": "celebrity encounter",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-066",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine being at a concert when the power goes out. Describe this unusual situation and explain its significance to the audience.",
+    "topic": "concert power outage",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-067",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you see an unusual animal in your backyard. Describe this unusual situation and explain why it caught your attention.",
+    "topic": "unusual animal",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-068",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine receiving an unexpected gift from a friend. Describe this unusual situation and explain its significance to your friendship.",
+    "topic": "unexpected gift",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-069",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine being at a festival when it starts to rain suddenly, but everyone continues to celebrate. Describe this unusual situation and explain its significance.",
+    "topic": "rainy festival",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-070",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you find a lost item that belongs to a neighbor. Describe this unusual situation and explain why it is significant.",
+    "topic": "found item",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-071",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine attending a potluck where someone brings an unusual dish. Describe this unusual situation and explain its significance to the event.",
+    "topic": "unusual potluck dish",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-072",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you accidentally bump into an old friend in a different city. Describe this unusual situation and explain its significance to you.",
+    "topic": "unexpected reunion",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-073",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine being in a movie theater when a fire alarm goes off. Describe this unusual situation and explain how people react to it.",
+    "topic": "fire alarm in theater",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-074",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you discover a family story that surprises you. Describe this unusual situation and explain its significance to you.",
+    "topic": "family discovery",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-075",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you watch birds migrate in an unexpected pattern. Describe this unusual situation and explain its significance in nature.",
+    "topic": "bird migration",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-076",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine meeting someone from another country who speaks your language. Describe this unusual situation and explain why it is significant to you.",
+    "topic": "language encounter",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-077",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine seeing a piece of art in the park that is made from recycled materials. Describe this unusual situation and explain its significance.",
+    "topic": "recycled art",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-078",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine being part of a flash mob in your city. Describe this unusual situation and explain its significance to the community.",
+    "topic": "flash mob",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-079",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you hear an unusual story from a stranger on the bus. Describe this unusual situation and explain how it moved you.",
+    "topic": "stranger's story",
+    "task": 8,
+    "difficulty": "beginner",
+    "id": "task8-080",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you attended a local art festival where it unexpectedly started to rain heavily. Describe this unusual situation and explain its significance for the artists and attendees.",
+    "topic": "Art Festival Rain",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-081",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you witnessed a flash mob performing in the middle of a busy street in your city. Describe this unusual situation and explain why it was significant for the community.",
+    "topic": "Flash Mob",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-082",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you found a stray animal in your neighborhood that was wearing a collar but had no owner in sight. Describe this unusual situation and explain what it means for both the animal and the community.",
+    "topic": "Stray Animal",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-083",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you received a phone call from someone who claims to be a long-lost relative. Describe this unusual situation and explain its significance for you and your family.",
+    "topic": "Lost Relative",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-084",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you attended a concert where the main performer suddenly fell ill and a random audience member took the stage to fill in. Describe this unusual situation and explain its impact on the event.",
+    "topic": "Concert Performer",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-085",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you were at a community meeting where a surprise announcement was made about a significant investment in local infrastructure. Describe this unusual situation and its significance for the community's future.",
+    "topic": "Community Meeting",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-086",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you were in a grocery store when an unexpected fire alarm went off, causing everyone to evacuate. Describe this unusual situation and explain its significance for shopper safety.",
+    "topic": "Grocery Store Fire Alarm",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-087",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you attended a local sports event where a player unexpectedly proposed to their partner on the field. Describe this unusual situation and explain its significance for the fans and the players involved.",
+    "topic": "Sports Event Proposal",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-088",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you encountered a street performer who was unusually talented, using unique instruments made from recycled materials. Describe this unusual situation and explain why it stood out in the city.",
+    "topic": "Unique Street Performer",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-089",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you received an unexpected letter from a historical figure related to your family. Describe this unusual situation and explain its significance for your understanding of your heritage.",
+    "topic": "Historical Letter",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-090",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you were at a friend's wedding when the groom suddenly forgot his vows. Describe this unusual situation and explain how it affected the ceremony and the guests.",
+    "topic": "Wedding Vows",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-091",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a snowstorm hit while you were on a camping trip and your group had to adapt quickly. Describe this unusual situation and explain its significance for your experience in nature.",
+    "topic": "Camping Snowstorm",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-092",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you were volunteering at a shelter when a famous celebrity unexpectedly showed up to assist. Describe this unusual situation and explain its significance for the volunteers and those being helped.",
+    "topic": "Celebrity at Shelter",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-093",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you discovered a hidden garden in your city that few people know about. Describe this unusual situation and explain why it might be significant for the local community.",
+    "topic": "Hidden Garden",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-094",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you participated in a neighborhood clean-up when you unexpectedly found an important historical artifact. Describe this unusual situation and explain its significance for local history.",
+    "topic": "Historical Artifact",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-095",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a family reunion where someone unexpectedly brought an exotic dish that no one had tried before. Describe this unusual situation and explain its significance for family bonding.",
+    "topic": "Exotic Dish at Reunion",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-096",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine that during a school presentation, a student spontaneously shared a powerful story about their background. Describe this unusual situation and explain why it resonated with the audience.",
+    "topic": "Student Presentation",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-097",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you were on a train when a sudden technical issue caused an unexpected delay. Describe this unusual situation and explain its significance for the passengers involved.",
+    "topic": "Train Delay",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-098",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you attended a town hall where a surprising new policy was proposed by the mayor that could change local regulations. Describe this unusual situation and explain its significance for residents.",
+    "topic": "Town Hall Policy Proposal",
+    "task": 8,
+    "difficulty": "intermediate",
+    "id": "task8-099",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a small Canadian town hosted an unexpected winter festival that drew in visitors from across the country. Explain its significance for the community and local economy.",
+    "topic": "Winter Festival",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-100",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual event where a famous Canadian athlete surprised a local school by showing up to give a motivational speech. Explain its significance for the students and the community.",
+    "topic": "Athlete Visit",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-101",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local farmer discovered a rare species of plant in their field. Explain its significance for agriculture and biodiversity in Canada.",
+    "topic": "Rare Plant Discovery",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-102",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event of a major Canadian city experiencing a week-long power outage. Explain its significance for the residents and city infrastructure.",
+    "topic": "Power Outage",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-103",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation in which a historical artifact was accidentally found during a construction project in a Canadian city. Explain its significance for the local heritage and archaeological community.",
+    "topic": "Artifact Discovery",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-104",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event where a local artist created a large mural overnight, expressing social issues. Explain its significance for the community and local culture.",
+    "topic": "Mural Creation",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-105",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a Canadian wildlife rescue organization found a flock of exotic birds abandoned in a park. Explain its significance for wildlife conservation efforts.",
+    "topic": "Wildlife Rescue",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-106",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event where a large public library launched a successful virtual reality program for young adults. Explain its significance for education and community engagement.",
+    "topic": "Library VR Program",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-107",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local band unexpectedly performed at a retirement home, bringing joy to the residents. Explain its significance for community bonding and mental health.",
+    "topic": "Band Performance",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-108",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual event where a Canadian city implemented a car-free day that turned into a massive street party. Explain its significance for urban planning and community involvement.",
+    "topic": "Car-Free Day",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-109",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local restaurant started a 'pay what you can' day, helping those in need. Explain its significance for social responsibility and community support.",
+    "topic": "Pay What You Can",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-110",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event where a neighborhood organized a spontaneous cleanup of a local park after a storm. Explain its significance for environmental awareness and community unity.",
+    "topic": "Community Cleanup",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-111",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local school introduced an innovative program that combines traditional learning with outdoor activities. Explain its significance for student engagement and development.",
+    "topic": "Outdoor Learning Program",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-112",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event where a prominent Canadian author visited a local bookshop for an impromptu reading session. Explain its significance for fostering literacy and community interest in literature.",
+    "topic": "Author Reading",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-113",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a major snowstorm led to a community potluck to ensure everyone had enough food. Explain its significance for social solidarity during difficult times.",
+    "topic": "Community Potluck",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-114",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event of a technology startup in Canada launching a successful environmental initiative. Explain its significance for innovation and sustainability in the community.",
+    "topic": "Tech Startup Initiative",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-115",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local high school held a debate on climate change that attracted national attention. Explain its significance for youth engagement in social issues.",
+    "topic": "Climate Change Debate",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-116",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unexpected event where a film crew chose a small Canadian town as the set for a major motion picture. Explain its significance for local tourism and community pride.",
+    "topic": "Film Crew Visit",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-117",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an unusual situation where a local sports team unexpectedly won a championship, capturing the town's attention. Explain its significance for community morale and local culture.",
+    "topic": "Sports Team Championship",
+    "task": 8,
+    "difficulty": "advanced",
+    "id": "task8-118",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-119",
+    "scenario": "You attend a local festival in your community with different food stalls and activities. The vibrant atmosphere makes it a memorable experience.",
+    "prompt": "Describe your experience at the local festival. What did you see, taste, and feel?",
+    "tips": [
+      "Focus on the sights and sounds.",
+      "Share your favorite food.",
+      "Mention any activities you enjoyed."
+    ],
+    "bulletPoints": [
+      "The different food stalls.",
+      "The lively music and performances.",
+      "Friendly people and community spirit."
+    ],
+    "context": "Community events are common in Canada, bringing people together.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-120",
+    "scenario": "You visit a unique art gallery in your city that features local artists. One piece catches your eye and you reflect on its meaning.",
+    "prompt": "Describe your visit to the art gallery. What was the artwork that impressed you?",
+    "tips": [
+      "Describe the artwork in detail.",
+      "Explain why it stood out to you.",
+      "Share your feelings about the art."
+    ],
+    "bulletPoints": [
+      "The colors and style of the artwork.",
+      "The story or message behind it.",
+      "Your personal reaction to the piece."
+    ],
+    "context": "Art galleries showcase diverse Canadian artists and cultures.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-121",
+    "scenario": "You participate in a community volunteer day where everyone helps clean a local park. The teamwork creates a fun atmosphere.",
+    "prompt": "Describe your experience volunteering in the park. What tasks did you do and how did it feel to help?",
+    "tips": [
+      "Mention the tasks you completed.",
+      "Talk about working with others.",
+      "Describe the park before and after."
+    ],
+    "bulletPoints": [
+      "Cleaning up litter.",
+      "Meeting new people from the community.",
+      "Enjoying the fresh air and nature."
+    ],
+    "context": "Volunteering is a great way to connect with the community in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-122",
+    "scenario": "You take a day trip to a nearby town and discover a hidden gem—a small café known for its delicious pastries.",
+    "prompt": "Describe your visit to the café. What pastries did you try, and what did you like about them?",
+    "tips": [
+      "Detail the café's atmosphere.",
+      "Talk about the pastries' taste and texture.",
+      "Share your overall experience."
+    ],
+    "bulletPoints": [
+      "The cozy environment of the café.",
+      "Specific pastries you enjoyed.",
+      "Friendly service from the staff."
+    ],
+    "context": "Exploring nearby towns can lead to delightful discoveries.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-123",
+    "scenario": "You attend a friend’s wedding in a beautiful outdoor setting. The joy and celebration make it a memorable occasion.",
+    "prompt": "Describe your experience at the wedding. What did you enjoy the most?",
+    "tips": [
+      "Talk about the setting and decorations.",
+      "Share your favorite moments from the ceremony.",
+      "Mention the food and dancing."
+    ],
+    "bulletPoints": [
+      "The beautiful outdoor venue.",
+      "Heartwarming speeches and vows.",
+      "Fun dancing with friends and family."
+    ],
+    "context": "Weddings in Canada often showcase cultural traditions and personal stories.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-124",
+    "scenario": "You try an escape room with friends for the first time. The puzzles challenge you and the teamwork makes it exciting.",
+    "prompt": "Describe your experience in the escape room. What was the theme and how did your team work together?",
+    "tips": [
+      "Explain the escape room theme.",
+      "Share some puzzles you solved.",
+      "Talk about the teamwork involved."
+    ],
+    "bulletPoints": [
+      "The excitement of solving the puzzles.",
+      "Collaboration with friends.",
+      "Feelings of accomplishment at the end."
+    ],
+    "context": "Escape rooms are a fun way to bond and test problem-solving skills.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-125",
+    "scenario": "You spend a day at a local beach. The sun, sand, and water create a relaxing atmosphere.",
+    "prompt": "Describe your day at the beach. What activities did you do and how did you feel?",
+    "tips": [
+      "Talk about the weather and scenery.",
+      "Share the activities you enjoyed.",
+      "Describe how the beach made you feel."
+    ],
+    "bulletPoints": [
+      "Swimming in the water.",
+      "Building sandcastles or relaxing.",
+      "Enjoying a picnic with friends."
+    ],
+    "context": "Beaches are popular leisure spots in Canada during summer.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-126",
+    "scenario": "You join a cooking class to learn how to make a traditional Canadian dish. The experience is fun and informative.",
+    "prompt": "Describe your experience in the cooking class. What dish did you learn to make?",
+    "tips": [
+      "Mention the ingredients used.",
+      "Talk about the cooking process.",
+      "Share what you enjoyed most."
+    ],
+    "bulletPoints": [
+      "The atmosphere of the cooking class.",
+      "Learning new skills.",
+      "Tasting the final dish."
+    ],
+    "context": "Cooking classes offer a way to explore Canadian cuisine hands-on.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-127",
+    "scenario": "You attend a local sports game with friends. The energy of the crowd makes it a thrilling experience.",
+    "prompt": "Describe your experience at the sports game. What were your favorite moments?",
+    "tips": [
+      "Talk about the atmosphere in the stadium.",
+      "Mention exciting plays during the game.",
+      "Share how the crowd reacted."
+    ],
+    "bulletPoints": [
+      "The excitement of cheering for your team.",
+      "Watching skilled players in action.",
+      "The overall energy of the event."
+    ],
+    "context": "Sports games are a vibrant part of Canadian culture.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-128",
+    "scenario": "You visit a farmer's market and discover fresh, local produce. The variety of fruits and vegetables impresses you.",
+    "prompt": "Describe your experience at the farmer's market. What did you see and buy?",
+    "tips": [
+      "Mention the fresh products you noticed.",
+      "Talk about the atmosphere of the market.",
+      "Share what you bought and why."
+    ],
+    "bulletPoints": [
+      "Colorful fruits and vegetables.",
+      "Friendly vendors and community vibe.",
+      "Healthy choices for cooking."
+    ],
+    "context": "Farmer's markets promote local agriculture and fresh food in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-129",
+    "scenario": "You visit a local community center and take part in a surprise yoga class. The instructor is funny and makes everyone laugh while they try to follow the poses.",
+    "prompt": "Describe your experience at the surprise yoga class. What did you enjoy about it?",
+    "tips": [
+      "Think about how the class made you feel.",
+      "Mention any funny moments or challenges.",
+      "Share what you learned about yoga."
+    ],
+    "bulletPoints": [
+      "Unexpected fun",
+      "Laughter during poses",
+      "Learning something new"
+    ],
+    "context": "Taking part in community activities in Canada can be a unique experience.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-130",
+    "scenario": "You go on a nature walk with a friend, and you end up seeing a beautiful waterfall. You both take pictures and enjoy the scenery.",
+    "prompt": "Describe your experience on the nature walk. What did you see and do?",
+    "tips": [
+      "Talk about the beautiful sights.",
+      "Mention any interesting conversations.",
+      "Describe how the walk made you feel."
+    ],
+    "bulletPoints": [
+      "Beautiful waterfall",
+      "Taking pictures",
+      "Enjoying nature together"
+    ],
+    "context": "Nature walks are common in Canada, offering a chance to connect with nature.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-131",
+    "scenario": "You attend a community potluck dinner where everyone brings their favorite dish. You try foods from different cultures and meet new people.",
+    "prompt": "Describe your experience at the community potluck dinner. What did you eat and who did you meet?",
+    "tips": [
+      "Highlight the variety of foods.",
+      "Mention any new friends you made.",
+      "Share your favorite dish."
+    ],
+    "bulletPoints": [
+      "Diverse food options",
+      "Meeting new people",
+      "Sharing and tasting dishes"
+    ],
+    "context": "Potluck dinners encourage community bonding and cultural exchange in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-132",
+    "scenario": "You visit a local bookstore and find an author signing their new book. You get a chance to meet the author and ask questions.",
+    "prompt": "Describe your experience at the bookstore with the author. What was the book about and how did you feel meeting them?",
+    "tips": [
+      "Share your thoughts on the book.",
+      "Describe the author's personality.",
+      "Talk about your excitement to meet them."
+    ],
+    "bulletPoints": [
+      "Meeting an author",
+      "Getting a signed book",
+      "Learning about their work"
+    ],
+    "context": "Book signings can be special events in a community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-133",
+    "scenario": "During a rainy day, you go to a local indoor attraction. You play games and have fun with friends while staying dry.",
+    "prompt": "Describe your experience at the indoor attraction. What games did you play and how did you feel?",
+    "tips": [
+      "Talk about the activities you did.",
+      "Mention your favorite part of the day.",
+      "Describe the atmosphere of the place."
+    ],
+    "bulletPoints": [
+      "Indoor fun",
+      "Playing games",
+      "Staying dry and entertained"
+    ],
+    "context": "Indoor attractions are popular in Canada, especially during rainy seasons.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-134",
+    "scenario": "You decide to take a picture of a stunning sunset while at the park. You feel peaceful and take in the beauty of nature.",
+    "prompt": "Describe your experience watching the sunset. What did it look like and how did it make you feel?",
+    "tips": [
+      "Describe the colors of the sunset.",
+      "Share your feelings during that moment.",
+      "Mention any other people around you."
+    ],
+    "bulletPoints": [
+      "Stunning colors",
+      "Feeling peaceful",
+      "Taking in nature's beauty"
+    ],
+    "context": "Watching sunsets is a simple pleasure many people enjoy in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-135",
+    "scenario": "You try a new sport for the first time, like curling, at a local rink. You have fun learning the rules and playing with friends.",
+    "prompt": "Describe your experience trying curling. What did you find challenging and fun?",
+    "tips": [
+      "Talk about how you learned the rules.",
+      "Mention any funny moments or mistakes.",
+      "Share your feelings about trying something new."
+    ],
+    "bulletPoints": [
+      "Learning a new sport",
+      "Having fun with friends",
+      "Experiencing challenges"
+    ],
+    "context": "Trying new sports is common in Canada, especially during winter.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-136",
+    "scenario": "You volunteer at a local animal shelter and get to play with puppies. You have a great time and enjoy helping others.",
+    "prompt": "Describe your experience volunteering at the animal shelter. What did you do with the puppies?",
+    "tips": [
+      "Talk about the puppies' behavior.",
+      "Mention how you felt helping the shelter.",
+      "Describe any memorable moments."
+    ],
+    "bulletPoints": [
+      "Playing with puppies",
+      "Feeling helpful and happy",
+      "Memorable moments at the shelter"
+    ],
+    "context": "Volunteering at animal shelters is a rewarding experience in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-137",
+    "scenario": "During a community cleanup event, you find a unique item while picking up trash in the park. You share the experience with the other volunteers.",
+    "prompt": "Describe your experience at the community cleanup. What item did you find and how did the day go?",
+    "tips": [
+      "Talk about the importance of cleaning the park.",
+      "Mention the item you found and its story.",
+      "Share how you felt about contributing."
+    ],
+    "bulletPoints": [
+      "Finding something unique",
+      "Cleaning the environment",
+      "Working with volunteers"
+    ],
+    "context": "Community cleanups bring people together for a good cause.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-138",
+    "scenario": "You attend a local concert and enjoy live music with your friends. You feel the energy of the crowd and have a great time.",
+    "prompt": "Describe your experience at the concert. What kind of music did you hear and how did it feel to be there?",
+    "tips": [
+      "Mention the type of music played.",
+      "Talk about the atmosphere of the crowd.",
+      "Share your favorite moment at the concert."
+    ],
+    "bulletPoints": [
+      "Enjoying live music",
+      "Feeling the crowd's energy",
+      "Great moments with friends"
+    ],
+    "context": "Concerts are a popular way to enjoy music and socialize in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-139",
+    "scenario": "You wake up one morning to find that a snowstorm has covered your entire neighborhood. You decide to go outside and help your neighbors clear the snow. It turns into a fun and memorable day.",
+    "prompt": "Describe your experience helping your neighbors during the snowstorm. What did you do, and how did it feel?",
+    "tips": [
+      "Use simple words to describe your actions.",
+      "Share how helping others made you feel.",
+      "Include any fun moments you experienced."
+    ],
+    "bulletPoints": [
+      "Woke up to a snow-covered neighborhood.",
+      "Got together with neighbors to shovel snow.",
+      "Had fun moments and shared hot drinks."
+    ],
+    "context": "Living in a snowy area during winter in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-140",
+    "scenario": "During a casual evening, you decide to cook dinner for friends. You try making a dish from a different culture, and they all love it. It turns into a surprise cooking competition.",
+    "prompt": "Describe your experience cooking a special dinner for your friends. How did you choose the dish, and what happened during the meal?",
+    "tips": [
+      "Explain the dish you prepared.",
+      "Tell what your friends thought about it.",
+      "Mention any funny moments during the cooking."
+    ],
+    "bulletPoints": [
+      "Chose a unique dish from another culture.",
+      "Friends enjoyed the meal and had fun.",
+      "Created a friendly cooking competition."
+    ],
+    "context": "Cooking with friends in a multicultural Canadian setting.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-141",
+    "scenario": "You find an old camera in your attic and decide to take it out for a day of photography. You capture interesting sights in your city, some of which surprise you.",
+    "prompt": "Describe your experience using the old camera. What did you photograph, and what surprised you the most?",
+    "tips": [
+      "Talk about the places you visited.",
+      "Describe the best photo you took.",
+      "Share any interesting discoveries you made."
+    ],
+    "bulletPoints": [
+      "Explored the city with an old camera.",
+      "Photographed unexpected sights.",
+      "Enjoyed the day of creativity."
+    ],
+    "context": "Exploring your city with a nostalgic twist.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-142",
+    "scenario": "You join a new community group that focuses on gardening. During your first meeting, everyone shares their favorite plants and gardening tips, creating a warm and welcoming atmosphere.",
+    "prompt": "Describe the experience of joining the community gardening group. What did you learn and enjoy most?",
+    "tips": [
+      "Mention the people you met in the group.",
+      "Share a gardening tip you found interesting.",
+      "Talk about your feelings during the meeting."
+    ],
+    "bulletPoints": [
+      "Met friendly people passionate about gardening.",
+      "Learned useful tips and ideas.",
+      "Felt welcome and excited to join."
+    ],
+    "context": "Participating in a local community interest group in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-143",
+    "scenario": "You decide to take a cooking class to learn how to make a traditional Canadian dish. The experience is full of laughter and great food, leaving you with new friends and skills.",
+    "prompt": "Describe your experience in the cooking class. What did you learn, and how did you feel about it?",
+    "tips": [
+      "Explain the dish you learned to cook.",
+      "Talk about the atmosphere in the class.",
+      "Mention any new friends you made."
+    ],
+    "bulletPoints": [
+      "Learned to cook a Canadian dish.",
+      "Had a fun and supportive environment.",
+      "Met new friends during the class."
+    ],
+    "context": "Taking a culinary class in a diverse Canadian community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-144",
+    "scenario": "While attending a conference in Toronto, you unexpectedly met a celebrity who spoke at the event. The interaction left you and others buzzing with excitement.",
+    "prompt": "Describe your unusual experience meeting a celebrity at the conference.",
+    "tips": [
+      "Focus on your emotions during the encounter.",
+      "Include details about the celebrity and the setting.",
+      "Explain how this experience impacted you."
+    ],
+    "bulletPoints": [
+      "The celebrity's surprise appearance",
+      "Your initial reaction and feelings",
+      "The conversation you had with them"
+    ],
+    "context": "This scenario reflects an engaging interaction at a professional event.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-145",
+    "scenario": "During a volunteering activity with a local group, you found an old, lost pet that reunited with its owner after a long time, creating an emotional moment.",
+    "prompt": "Describe the memorable experience of finding a lost pet while volunteering.",
+    "tips": [
+      "Describe the situation leading up to the discovery.",
+      "Express the emotions of the owner and your team.",
+      "Reflect on the impact of this experience on you."
+    ],
+    "bulletPoints": [
+      "The condition of the pet",
+      "The owner's emotional reaction",
+      "Your role in reuniting them"
+    ],
+    "context": "This scenario showcases the heartwarming aspects of community involvement.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-146",
+    "scenario": "You participated in a community debate about climate change where a passionate young person convinced many attendees to take action.",
+    "prompt": "Describe your experience at this debate and the impact of the speaker's message.",
+    "tips": [
+      "Highlight the setting and the audience's response.",
+      "Share what was said that resonated with you.",
+      "Explain how it inspired you or changed your perspective."
+    ],
+    "bulletPoints": [
+      "The atmosphere of the debate",
+      "Key arguments made by the speaker",
+      "Your personal takeaway from the event"
+    ],
+    "context": "Community discussions about important issues can be very engaging.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-147",
+    "scenario": "On your way to work, you witnessed a spontaneous street performance that captivated an unexpected crowd, bringing joy to everyone's day.",
+    "prompt": "Describe your experience watching the street performance and its effect on the crowd.",
+    "tips": [
+      "Explain the type of performance and what made it special.",
+      "Share the reactions of onlookers, including yourself.",
+      "Reflect on how this moment brightened your day."
+    ],
+    "bulletPoints": [
+      "The type of performance",
+      "The talent of the performers",
+      "Emotions of the audience"
+    ],
+    "context": "Street performances can create memorable and joyful experiences in urban environments.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-148",
+    "scenario": "During a business trip, you faced a travel mishap, leading to a chance encounter with a local who shared fascinating stories about the area.",
+    "prompt": "Describe the unusual travel experience and what you learned from the local resident.",
+    "tips": [
+      "Detail the mishap and how you resolved it.",
+      "Share interesting stories or facts the local person shared.",
+      "Explain how this experience changed your views about travel."
+    ],
+    "bulletPoints": [
+      "The nature of the travel mishap",
+      "The local person's background",
+      "Lessons learned from the encounter"
+    ],
+    "context": "Travel mishaps can often lead to unexpected and rewarding experiences.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-149",
+    "scenario": "While hiking in the Rockies, you discovered a hidden waterfall that was not on any map, creating a sense of adventure and discovery.",
+    "prompt": "Describe the experience of finding the hidden waterfall during your hike.",
+    "tips": [
+      "Set the scene of the hike and surroundings.",
+      "Discuss your feelings upon discovering the waterfall.",
+      "Explain how this moment impacted your love for nature."
+    ],
+    "bulletPoints": [
+      "The journey to find the waterfall",
+      "The beauty of the discovery",
+      "The exhilaration of adventure"
+    ],
+    "context": "Nature offers unexpected surprises that can be both thrilling and memorable.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-150",
+    "scenario": "At a work retreat, you participated in an unconventional team-building exercise that involved improvised theatre, which broke the ice among colleagues.",
+    "prompt": "Describe the experience of engaging in an improvised theatre exercise during your work retreat.",
+    "tips": [
+      "Explain what the exercise entailed and your initial thoughts.",
+      "Share how this broke the ice with your colleagues.",
+      "Reflect on the benefits of such activities in a professional setting."
+    ],
+    "bulletPoints": [
+      "The structure of the exercise",
+      "Your performance and feelings",
+      "The reactions of your colleagues"
+    ],
+    "context": "Unique team-building activities can foster collaboration and creativity.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-151",
+    "scenario": "While helping to organize a neighborhood clean-up, you encountered a family of raccoons who became the unexpected highlight of the day.",
+    "prompt": "Describe the memorable experience of encountering raccoons during the clean-up event.",
+    "tips": [
+      "Discuss the setting and your task at the clean-up.",
+      "Explain the raccoons' behavior and your reaction.",
+      "Reflect on the humor and joy this incident brought to the event."
+    ],
+    "bulletPoints": [
+      "The context of the clean-up",
+      "The antics of the raccoons",
+      "The reactions of the volunteers"
+    ],
+    "context": "Unexpected wildlife encounters can add humor and warmth to community efforts.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-152",
+    "scenario": "You attended a workshop on mental wellness, where an unexpected guest shared a deeply personal story that left a lasting impression on everyone.",
+    "prompt": "Describe your experience at the workshop and the impact of the guest's story.",
+    "tips": [
+      "Highlight the workshop's atmosphere and expectations.",
+      "Share the essence of the guest's story.",
+      "Discuss how it affected the audience, including yourself."
+    ],
+    "bulletPoints": [
+      "The workshop's main focus",
+      "Key points from the guest's story",
+      "Your emotional response to the story"
+    ],
+    "context": "Workshops on mental wellness can lead to profound personal insights and connections.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-153",
+    "scenario": "During a winter festival, you unexpectedly joined a traditional dance and learned about its cultural significance from the locals.",
+    "prompt": "Describe your experience participating in a traditional dance at the festival.",
+    "tips": [
+      "Set the scene of the festival and the dance.",
+      "Explain how you learned the dance steps.",
+      "Reflect on the cultural significance and its impact on you."
+    ],
+    "bulletPoints": [
+      "The vibrancy of the festival",
+      "The locals' enthusiasm and guidance",
+      "Your feelings during and after the dance"
+    ],
+    "context": "Cultural festivals often provide unique and engaging experiences.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-154",
+    "scenario": "While attending a local film festival, you stumbled upon a documentary that sparked a deep conversation with a stranger who later became a good friend.",
+    "prompt": "Describe this memorable experience and what you learned from it.",
+    "tips": [
+      "Focus on the emotions you felt during the experience.",
+      "Highlight the connection you made with the stranger.",
+      "Reflect on how this experience changed your perspective."
+    ],
+    "bulletPoints": [
+      "Unexpectedly found a film that resonated with me.",
+      "Engaged in a meaningful conversation with a stranger.",
+      "Developed a friendship based on shared interests."
+    ],
+    "context": "Cultural event in a Canadian city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-155",
+    "scenario": "You participated in a surprise flash mob at a downtown event, which was organized by your colleagues without your prior knowledge.",
+    "prompt": "Describe the experience and how it impacted your view of teamwork.",
+    "tips": [
+      "Share your initial reactions when you were surprised.",
+      "Discuss the feelings of collaboration during the performance.",
+      "Mention how this affected your relationship with your colleagues."
+    ],
+    "bulletPoints": [
+      "Surprise element added excitement to the day.",
+      "Experience fostered a sense of unity among colleagues.",
+      "Gained a new appreciation for teamwork."
+    ],
+    "context": "Workplace event in a Canadian urban setting.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-156",
+    "scenario": "While waiting for a friend at a café, you struck up a conversation with an elderly man who shared fascinating stories from his youth in Canada.",
+    "prompt": "Describe this encounter and what you took away from it.",
+    "tips": [
+      "Emphasize the wisdom shared by the elderly man.",
+      "Include how this interaction made you reflect on different generations.",
+      "Mention any significant stories that stood out."
+    ],
+    "bulletPoints": [
+      "Learned about the history and culture of Canada.",
+      "Gained insights into the changes over time.",
+      "Felt a sense of connection across generations."
+    ],
+    "context": "Casual social setting in a Canadian café.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-157",
+    "scenario": "During a work conference in Vancouver, you took an unexpected detour and discovered a hidden art installation that left a lasting impression on you.",
+    "prompt": "Describe this experience and how it influenced your appreciation for art.",
+    "tips": [
+      "Describe the installation and your initial feelings upon discovering it.",
+      "Discuss how it contrasted with the formal conference setting.",
+      "Reflect on how this experience deepened your interest in art."
+    ],
+    "bulletPoints": [
+      "Unplanned detour led to an enriching experience.",
+      "The art installation provided a break from work-related stress.",
+      "Inspired me to explore more local art in the future."
+    ],
+    "context": "Business event in a Western Canadian city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-158",
+    "scenario": "You attended a local cultural festival where you tried a traditional dish for the first time and found it changed your views on different cuisines.",
+    "prompt": "Describe this experience and how it expanded your culinary horizons.",
+    "tips": [
+      "Highlight your initial hesitations about trying new food.",
+      "Explain the cultural significance of the dish you tried.",
+      "Share how this experience motivated you to explore other cuisines."
+    ],
+    "bulletPoints": [
+      "Initially unsure about trying the dish.",
+      "Appreciated the cultural aspects tied to the food.",
+      "Now more open to trying diverse foods."
+    ],
+    "context": "Community cultural celebration in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-159",
+    "scenario": "You participated in an official ceremony where you received an award for community service, which turned out to be a very emotional experience for you.",
+    "prompt": "Describe this memorable moment and how it reinforced your commitment to your community.",
+    "tips": [
+      "Discuss your feelings before, during, and after the ceremony.",
+      "Mention the impact of recognition on your future volunteer efforts.",
+      "Reflect on the importance of community service in your life."
+    ],
+    "bulletPoints": [
+      "Surprised and honored to receive recognition.",
+      "Strengthened my dedication to volunteering.",
+      "Realized the importance of community support."
+    ],
+    "context": "Community recognition event in a Canadian town.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-160",
+    "scenario": "While hiking in a provincial park, you encountered a group of artists painting the landscape, which led to a spontaneous art workshop.",
+    "prompt": "Describe this surprising experience and what you learned about creativity.",
+    "tips": [
+      "Share your reaction to the unexpected gathering of artists.",
+      "Discuss any new techniques you learned during the workshop.",
+      "Reflect on how the experience inspired you to pursue your own creative endeavors."
+    ],
+    "bulletPoints": [
+      "Surprising and enriching moment amidst nature.",
+      "Learned new art techniques from experienced artists.",
+      "Felt inspired to explore my creativity."
+    ],
+    "context": "Outdoor recreational activity in a Canadian national park.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-161",
+    "scenario": "At a community center, you joined a random group of people for a dance class and ended up having a fantastic and unexpected time.",
+    "prompt": "Describe this experience and how it encouraged you to step out of your comfort zone.",
+    "tips": [
+      "Discuss your initial reluctance to join the class.",
+      "Share the joy of engaging with new people through dance.",
+      "Reflect on personal growth from this experience."
+    ],
+    "bulletPoints": [
+      "Nervous at first but gradually became more comfortable.",
+      "The joy of dancing brought people together.",
+      "Motivated to try new activities in the future."
+    ],
+    "context": "Recreational activity in a Canadian community setting.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-162",
+    "scenario": "While visiting a local historical site, you unexpectedly met a tour guide who shared personal stories that made the history come alive for you.",
+    "prompt": "Describe this memorable encounter and how it enhanced your understanding of history.",
+    "tips": [
+      "Explore how personal stories can connect us to history.",
+      "Discuss moments that particularly struck you during the tour.",
+      "Reflect on the importance of storytelling in learning about the past."
+    ],
+    "bulletPoints": [
+      "Met a passionate guide who shared personal insights.",
+      "Felt a deeper connection to the history I was learning.",
+      "Inspired to further explore historical sites."
+    ],
+    "context": "Cultural exploration in a Canadian historical location.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-163",
+    "scenario": "During your commute, you had an inspiring conversation with a stranger on public transport who shared their life goals and dreams.",
+    "prompt": "Describe this experience and how it shifted your perspective on everyday interactions.",
+    "tips": [
+      "Focus on the unexpected depth of conversation in a routine setting.",
+      "Discuss any similarities or differences between your life paths.",
+      "Reflect on how this moment impacted your view of encounters with strangers."
+    ],
+    "bulletPoints": [
+      "Surprised by the openness of the conversation.",
+      "Realized the potential for meaningful connections in daily life.",
+      "Gained a new appreciation for the stories of others."
+    ],
+    "context": "Commuting on public transport in a Canadian city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-164",
+    "scenario": "You attend a multicultural potluck dinner organized by your local community center. Each family brings a dish from their culture, and you get to taste a variety of foods while sharing stories with others.",
+    "prompt": "Describe your experience at the multicultural potluck dinner and what made it memorable.",
+    "tips": [
+      "Focus on the dishes you tried.",
+      "Mention interesting conversations you had.",
+      "Reflect on the cultural diversity you encountered."
+    ],
+    "bulletPoints": [
+      "Variety of cuisines from different cultures.",
+      "Engaging conversations with community members.",
+      "Sense of belonging and celebration of diversity."
+    ],
+    "context": "Community event celebrating multiculturalism in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-165",
+    "scenario": "During a weekend trip to a remote cabin, you experienced an unexpected power outage. With no electricity, you and your friends had to find creative ways to entertain yourselves.",
+    "prompt": "Describe your experience during the power outage at the cabin and how it turned into a memorable adventure.",
+    "tips": [
+      "Talk about activities you did without power.",
+      "Mention the atmosphere and ambiance created.",
+      "Share any funny moments that occurred."
+    ],
+    "bulletPoints": [
+      "Cozy atmosphere with candlelight.",
+      "Creative storytelling and games.",
+      "Bonding moments with friends."
+    ],
+    "context": "Weekend getaway in the Canadian wilderness.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-166",
+    "scenario": "While attending a local farmer's market, you encounter a vendor who shares fascinating stories about his sustainable farming practices, sparking your interest in environmental issues.",
+    "prompt": "Describe your experience at the farmer's market and how it impacted your perspective on sustainability.",
+    "tips": [
+      "Highlight the vendor's passionate storytelling.",
+      "Discuss your thoughts on sustainability.",
+      "Reflect on any changes you made afterward."
+    ],
+    "bulletPoints": [
+      "Insight into sustainable farming.",
+      "Inspiring conversation with the vendor.",
+      "Increased awareness of environmental issues."
+    ],
+    "context": "Local market experience promoting sustainability.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-167",
+    "scenario": "At a community art exhibition, you encounter an interactive art installation that encourages visitors to contribute their thoughts and ideas on a public mural.",
+    "prompt": "Describe the experience of engaging with the interactive art installation and how it made you feel part of the community.",
+    "tips": [
+      "Talk about your thoughts before and after participating.",
+      "Mention interactions with other visitors.",
+      "Reflect on the sense of community it fostered."
+    ],
+    "bulletPoints": [
+      "Personal contribution to a collective art piece.",
+      "Engaging conversations with fellow attendees.",
+      "Sense of pride in community creativity."
+    ],
+    "context": "Local art exhibition promoting community involvement.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-168",
+    "scenario": "You accidentally stumble upon a street performance featuring local musicians and dancers while walking in downtown Calgary. The energy of the performance captivates you on a busy Saturday.",
+    "prompt": "Describe your unexpected experience at the street performance and its impact on your day.",
+    "tips": [
+      "Detail the atmosphere around the performance.",
+      "Share the emotions you felt during the event.",
+      "Discuss any thoughts about street performances."
+    ],
+    "bulletPoints": [
+      "Vibrant energy of the performance.",
+      "Connection with the local culture.",
+      "Surprise and joy of spontaneous entertainment."
+    ],
+    "context": "Unexpected entertainment in a bustling urban environment.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-169",
+    "scenario": "During a community sports day, you are asked to lead a team-building exercise that you had never done before, pushing you out of your comfort zone.",
+    "prompt": "Describe your experience leading the team-building exercise and how it challenged you.",
+    "tips": [
+      "Discuss your initial feelings about leading.",
+      "Reflect on how the team responded.",
+      "Mention any surprising outcomes."
+    ],
+    "bulletPoints": [
+      "Personal growth through leadership.",
+      "Stronger team connections.",
+      "Unexpected success or learning moments."
+    ],
+    "context": "Community event aimed at promoting teamwork.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-170",
+    "scenario": "You volunteer to help organize a charity run in your neighborhood. The day of the event, everything doesn’t go as planned, leading to a memorable yet chaotic experience.",
+    "prompt": "Describe your experience organizing the charity run and the lessons you learned from the challenges faced.",
+    "tips": [
+      "Highlight specific challenges encountered.",
+      "Discuss teamwork and problem-solving.",
+      "Reflect on the overall outcome despite difficulties."
+    ],
+    "bulletPoints": [
+      "Logistical issues and last-minute changes.",
+      "Teamwork in overcoming obstacles.",
+      "Satisfaction from community participation."
+    ],
+    "context": "Charity event promoting fitness and community spirit.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-171",
+    "scenario": "While attending a workshop on traditional Indigenous art, you gain an insight into the cultural significance of the artwork directly from an Indigenous artist.",
+    "prompt": "Describe your experience at the workshop and how it deepened your understanding of Indigenous culture.",
+    "tips": [
+      "Discuss the artist's stories and teachings.",
+      "Reflect on your previous knowledge vs. what you learned.",
+      "Mention any emotional responses you had."
+    ],
+    "bulletPoints": [
+      "Firsthand experience with Indigenous culture.",
+      "Appreciation for traditional techniques.",
+      "Connection with the artist's personal stories."
+    ],
+    "context": "Cultural understanding and appreciation in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-172",
+    "scenario": "You decide to attend a neighborhood meeting regarding local development plans, where residents express their passionate opinions and concerns about changes in the area.",
+    "prompt": "Describe your experience at the neighborhood meeting and its impact on your views on community involvement.",
+    "tips": [
+      "Talk about the atmosphere and energy of the meeting.",
+      "Share any insights you gained about community concerns.",
+      "Reflect on your feelings about civic engagement."
+    ],
+    "bulletPoints": [
+      "Diverse opinions from community members.",
+      "Heightened awareness of local issues.",
+      "Encouragement to participate more in local matters."
+    ],
+    "context": "Civic engagement and community participation in urban Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-173",
+    "scenario": "You participate in a local food preservation workshop, where you learn about canning and preserving seasonal produce, leading to a newfound appreciation for local food sources.",
+    "prompt": "Describe your experience at the food preservation workshop and what lasting impact it had on your lifestyle.",
+    "tips": [
+      "Discuss what you learned about food preservation.",
+      "Mention any personal reflections on food sourcing.",
+      "Share how it has influenced your cooking habits."
+    ],
+    "bulletPoints": [
+      "Hands-on experience with food canning.",
+      "Connection to local farming and sustainability.",
+      "Inspiration to try preserving at home."
+    ],
+    "context": "Workshops promoting sustainable living and food security.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-174",
+    "scenario": "While attending a community garden workshop in Ottawa, you found yourself in a fascinating discussion about sustainable gardening methods with fellow attendees. One particular conversation about native plants sparked your interest in preserving local ecosystems.",
+    "prompt": "Describe an unusual or memorable experience you had during a community gardening event.",
+    "tips": [
+      "Focus on the interaction and what made it memorable.",
+      "Explain your feelings during the experience.",
+      "Mention any new insights you gained."
+    ],
+    "bulletPoints": [
+      "Engaged in a lively discussion with community members",
+      "Learned about native plants and their importance",
+      "Felt motivated to start a garden at home"
+    ],
+    "context": "A workshop where community members gather to learn and share gardening techniques.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-175",
+    "scenario": "During a team-building retreat in Alberta, you participated in a unique activity that involved creating art out of recycled materials. This experience allowed you to express creativity while bonding with colleagues in a fun and unexpected way.",
+    "prompt": "Describe an unusual or memorable experience from a team-building activity at work.",
+    "tips": [
+      "Highlight the teamwork aspect of the activity.",
+      "Share how this experience affected your relationship with colleagues.",
+      "Discuss any skills or lessons you learned."
+    ],
+    "bulletPoints": [
+      "Collaborated with colleagues on a creative project",
+      "Discovered new ways to think outside the box",
+      "Strengthened team relationships through creativity"
+    ],
+    "context": "A retreat focused on team-building activities designed for staff development.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-176",
+    "scenario": "While attending a local music festival in Montreal, you unexpectedly joined a drum circle that was forming in the park. This spontaneous decision helped you connect with strangers and immerse yourself in the vibrant culture of the event.",
+    "prompt": "Describe an unusual or memorable experience you had at a local music festival.",
+    "tips": [
+      "Emphasize the spontaneity of the moment.",
+      "Describe how it felt to engage with others in that setting.",
+      "Mention any cultural elements you encountered."
+    ],
+    "bulletPoints": [
+      "Joined a spontaneous drum circle",
+      "Connected with diverse participants",
+      "Enjoyed the lively atmosphere and cultural exchange"
+    ],
+    "context": "A vibrant music festival that showcases local talent and cultural activities.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-177",
+    "scenario": "While volunteering at a local homeless shelter, you were involved in an unexpected collaboration between different community groups to create a sustainable food program.",
+    "prompt": "Describe your unusual experience working in collaboration with various community organizations to support those in need.",
+    "tips": [
+      "Use specific examples of the collaboration.",
+      "Highlight the challenges faced and how you overcame them.",
+      "Reflect on the impact this experience had on your perspective."
+    ],
+    "bulletPoints": [
+      "Unexpected partnerships formed.",
+      "Diverse community involvement.",
+      "Impact on local welfare."
+    ],
+    "context": "Volunteering in Canada can lead to rich interactions with diverse communities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-178",
+    "scenario": "You joined a local debate club and unexpectedly found yourself discussing pressing issues with a political figure, leading to a memorable exchange of ideas.",
+    "prompt": "Share your experience of interacting with a political figure during a debate and how it influenced your understanding of civic engagement.",
+    "tips": [
+      "Mention the topics discussed.",
+      "Reflect on your feelings during the interaction.",
+      "Discuss the outcome of the debate."
+    ],
+    "bulletPoints": [
+      "Engaging with local politics.",
+      "Opportunity for personal growth.",
+      "Learning from different viewpoints."
+    ],
+    "context": "Civic engagement is a vital part of Canadian society.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-179",
+    "scenario": "At a networking event, you were paired unexpectedly with someone from a vastly different industry, leading to a thought-provoking conversation about future trends.",
+    "prompt": "Describe this unexpected networking experience and how it expanded your understanding of other fields.",
+    "tips": [
+      "Specify the industries involved.",
+      "Discuss insights gained from the conversation.",
+      "Reflect on how it may influence your career."
+    ],
+    "bulletPoints": [
+      "Cross-industry insights.",
+      "Networking unexpected outcomes.",
+      "Broader perspective on trends."
+    ],
+    "context": "Networking events in Canada can connect you with diverse professionals.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-180",
+    "scenario": "During a winter community clean-up, you encountered an unusual situation when an art installation emerged from the snow, igniting discussions about art and community.",
+    "prompt": "Describe this memorable experience and how it prompted conversations about art within community service.",
+    "tips": [
+      "Emphasize the surprise of finding the art.",
+      "Discuss the community's reaction.",
+      "Reflect on the significance of art in public spaces."
+    ],
+    "bulletPoints": [
+      "Unexpected art discovery.",
+      "Community engagement through art.",
+      "Significance of art in public places."
+    ],
+    "context": "Art often intersects with community service initiatives in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-181",
+    "scenario": "You attended a public forum on climate change and were given the opportunity to voice your concerns directly to local government officials, which was both nerve-wracking and empowering.",
+    "prompt": "Share your experience of participating in a public forum and how it impacted your view on civic responsibility.",
+    "tips": [
+      "Highlight your emotions before and during your speech.",
+      "Discuss the reactions from officials and audience.",
+      "Reflect on any changes in your perspective on environmental issues."
+    ],
+    "bulletPoints": [
+      "Participation in civic discourse.",
+      "Empowerment through public speaking.",
+      "Impact on personal environmental responsibility."
+    ],
+    "context": "Public forums are common in Canadian cities focusing on pressing issues.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-182",
+    "scenario": "During a workshop for professional development, you were unexpectedly asked to lead a group discussion on ethics in your field, which challenged your perceptions and leadership abilities.",
+    "prompt": "Describe your experience leading the discussion and how it influenced your approach to professional ethics.",
+    "tips": [
+      "Detail the ethical topics discussed.",
+      "Reflect on your leadership style during the discussion.",
+      "Connect the experience to personal growth."
+    ],
+    "bulletPoints": [
+      "Leadership under pressure.",
+      "Discussion on timely ethical issues.",
+      "Personal development in professional settings."
+    ],
+    "context": "Professional development is vital in Canadian workplaces to address evolving ethical standards.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-183",
+    "scenario": "While attending a virtual conference, you were surprised to find yourself in a breakout discussion with a renowned expert who challenged your preconceived notions of your field.",
+    "prompt": "Share your memorable experience during the virtual conference and how it transformed your understanding of your profession.",
+    "tips": [
+      "Highlight the key discussions and challenges presented.",
+      "Reflect on your initial beliefs before the conversation.",
+      "Discuss any changes in your career outlook post-conference."
+    ],
+    "bulletPoints": [
+      "Virtual networking surprises.",
+      "Influence of expert opinions.",
+      "Transformation in professional understanding."
+    ],
+    "context": "Virtual conferences have become commonplace in Canada, offering unique networking opportunities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-184",
+    "scenario": "During an impromptu visit to a local museum, you discovered a unique artifact that sparked a conversation about cultural heritage with the curator, leading to a deeper appreciation of your community's history.",
+    "prompt": "Describe this experience at the museum and how it enriched your understanding of cultural heritage.",
+    "tips": [
+      "Detail the artifact and its significance.",
+      "Highlight your interaction with the curator.",
+      "Reflect on the importance of preserving local history."
+    ],
+    "bulletPoints": [
+      "Discovery of historical significance.",
+      "Engagement with cultural heritage.",
+      "Importance of community history."
+    ],
+    "context": "Museums in Canada often showcase diverse cultural heritages.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-185",
+    "scenario": "While organizing a citywide volunteer event, you encountered unforeseen challenges that tested your problem-solving skills and strengthened community bonds.",
+    "prompt": "Share your experience of facing challenges while organizing a community volunteer event and the outcomes it produced.",
+    "tips": [
+      "Detail the specific challenges faced.",
+      "Illustrate solutions implemented to overcome them.",
+      "Reflect on the positive community responses."
+    ],
+    "bulletPoints": [
+      "Unexpected challenges in organization.",
+      "Creative problem-solving.",
+      "Strengthened community relationships."
+    ],
+    "context": "Community volunteering is a cornerstone of Canadian civic life.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-186",
+    "scenario": "During a local biodiversity initiative, you were part of a significant discovery that revealed a previously undocumented species, sparking excitement and discussion among your peers.",
+    "prompt": "Describe your unusual experience of discovering a new species and how it influenced your understanding of local biodiversity.",
+    "tips": [
+      "Detail the process of discovery.",
+      "Reflect on the excitement shared with those around you.",
+      "Discuss the implications of the discovery for local conservation efforts."
+    ],
+    "bulletPoints": [
+      "Discovery of biodiversity significance.",
+      "Community engagement in conservation.",
+      "Broader implications for environmental science."
+    ],
+    "context": "Canada is rich in biodiversity, making such discoveries impactful for environmental awareness.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-187",
+    "scenario": "During a winter evening in Toronto, you decided to help out at a local shelter, and you ended up sharing a profound conversation with a stranger that changed your perspective on kindness and compassion.",
+    "prompt": "Describe this memorable experience and its impact on your view of community support.",
+    "tips": [
+      "Reflect on the emotions you felt during the conversation.",
+      "Consider how this experience might influence your future actions.",
+      "Think about the broader implications of community engagement."
+    ],
+    "bulletPoints": [
+      "Shared a personal story with a stranger",
+      "Discussed the importance of compassion",
+      "Learned about the challenges faced by others"
+    ],
+    "context": "Canadian community service during winter months",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-188",
+    "scenario": "While attending a seminar on Canadian indigenous cultures, you were unexpectedly invited to participate in a traditional dance, which made you feel both vulnerable and connected.",
+    "prompt": "Describe your experience of participating in the dance and its significance to you.",
+    "tips": [
+      "Focus on the feelings of being an outsider and then finding acceptance.",
+      "Discuss what you learned about the culture.",
+      "Reflect on how it reshaped your understanding of inclusivity."
+    ],
+    "bulletPoints": [
+      "Initial hesitance to join in",
+      "Experience of community and connection",
+      "Gained a deeper appreciation for indigenous traditions"
+    ],
+    "context": "Cultural enrichment seminar in Canada",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-189",
+    "scenario": "At a local workshop focused on mental health awareness, you shared your own experiences with anxiety and received unexpected support from others who resonated with your story.",
+    "prompt": "Describe this experience and how it changed your perspective on mental health discussions.",
+    "tips": [
+      "Highlight the power of vulnerability in sharing.",
+      "Discuss the sense of community that formed.",
+      "Reflect on how this experience encourages openness about mental health."
+    ],
+    "bulletPoints": [
+      "Shared personal struggles",
+      "Received encouragement from peers",
+      "Redefined your views on mental health openness"
+    ],
+    "context": "Mental health awareness initiatives in Canadian communities",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-190",
+    "scenario": "While organizing a local environmental clean-up, you encountered a rare bird species, leading to a moment of awe and sparking conversations about biodiversity.",
+    "prompt": "Describe this encounter and its significance for environmental awareness in your community.",
+    "tips": [
+      "Emphasize the importance of biodiversity.",
+      "Discuss how this encounter inspired others.",
+      "Reflect on what it means for you personally."
+    ],
+    "bulletPoints": [
+      "Witnessed a rare species in its natural habitat",
+      "Stimulated discussions on conservation",
+      "Inspired community actions towards environmental protection"
+    ],
+    "context": "Community involvement in environmental conservation",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-191",
+    "scenario": "During a summer camp for youth leadership in Alberta, you were challenged to lead a group project that required innovative problem-solving.",
+    "prompt": "Describe this leadership experience and how it affected your views on teamwork and collaboration.",
+    "tips": [
+      "Discuss the challenges faced and how they were addressed.",
+      "Reflect on the dynamics of teamwork.",
+      "Consider how this experience shaped your leadership style."
+    ],
+    "bulletPoints": [
+      "Faced obstacles in project development",
+      "Learned the value of diverse perspectives",
+      "Recognized the importance of effective communication"
+    ],
+    "context": "Youth leadership initiatives in Canada during summer",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-192",
+    "scenario": "While attending a local science fair, you had the chance to engage with students presenting innovative projects, making you feel inspired about the future of technology.",
+    "prompt": "Describe this inspiring experience and how it influenced your thoughts on youth innovation.",
+    "tips": [
+      "Highlight specific projects that stood out to you.",
+      "Reflect on the potential of youth-driven technology.",
+      "Discuss how this experience might shape your own career aspirations."
+    ],
+    "bulletPoints": [
+      "Engaged with passionate young innovators",
+      "Witnessed cutting-edge ideas and solutions",
+      "Encouraged by the enthusiasm and creativity of youth"
+    ],
+    "context": "Community youth events in Canada showcasing innovation",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-193",
+    "scenario": "During a local book club meeting focused on diversity in literature, you were moved by a fellow member's personal story related to a book that addressed systemic racism.",
+    "prompt": "Describe how this experience impacted your understanding of diversity in literature and its social implications.",
+    "tips": [
+      "Discuss the importance of representation in literature.",
+      "Reflect on the emotional impact of the shared story.",
+      "Consider how this conversation could lead to broader discussions within your community."
+    ],
+    "bulletPoints": [
+      "Engaged in a deep discussion on representation",
+      "Gained insight into the experiences of marginalized voices",
+      "Highlighted the role of literature in social awareness"
+    ],
+    "context": "Canadian community engaged in literary discussions",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-194",
+    "scenario": "While mentoring a newcomer to Canada at a local settlement agency, you shared your journey, which led to a heartfelt exchange about the challenges of cultural adaptation.",
+    "prompt": "Describe this mentoring experience and its significance for both you and your mentee.",
+    "tips": [
+      "Focus on the challenges of cultural adaptation you both faced.",
+      "Discuss the mutual learning that took place.",
+      "Reflect on the importance of mentorship in community integration."
+    ],
+    "bulletPoints": [
+      "Shared personal adaptation challenges",
+      "Learned from each other's experiences",
+      "Reinforced the value of community support for newcomers"
+    ],
+    "context": "Settlement services for newcomers in Canada",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-195",
+    "scenario": "During a visit to a local tech incubator, you had the chance to witness a pitch competition, where an underrepresented entrepreneur delivered an inspiring presentation.",
+    "prompt": "Describe this experience and its impact on your views toward entrepreneurship and inclusivity.",
+    "tips": [
+      "Emphasize the importance of diverse voices in business.",
+      "Reflect on the emotional resonance of the presentation.",
+      "Consider how this event may encourage future entrepreneurs."
+    ],
+    "bulletPoints": [
+      "Witnessed innovation and creativity",
+      "Supported entrepreneurs from diverse backgrounds",
+      "Highlighted the role of inclusivity in entrepreneurship"
+    ],
+    "context": "Startup culture and support initiatives in Canada",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-196",
+    "scenario": "At a public lecture about climate justice, a passionate speaker shared their personal experiences with environmental activism, profoundly impacting your views on social responsibility.",
+    "prompt": "Describe this experience and its significance for your understanding of climate change and social activism.",
+    "tips": [
+      "Discuss how personal stories can drive awareness.",
+      "Reflect on the importance of climate justice.",
+      "Consider how this may inspire future actions in your community."
+    ],
+    "bulletPoints": [
+      "Emphasized the personal impact of climate change",
+      "Showcased the intersection of social issues and environmentalism",
+      "Encouraged active participation in social movements"
+    ],
+    "context": "Public awareness events in Canada addressing climate issues",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-197",
+    "scenario": "While attending a local environmental summit in Vancouver, you were unexpectedly invited to join a panel discussion with experts on climate policy. The conversation shifted into a debate on ethical responsibilities in combating climate change.",
+    "prompt": "Describe your experience participating in this unexpected panel discussion and its impact on your perspective regarding environmental issues.",
+    "tips": [
+      "Focus on the emotions you felt during the discussion.",
+      "Highlight any surprising arguments that were made.",
+      "Consider the implications of the conversation on your understanding of climate responsibility."
+    ],
+    "bulletPoints": [
+      "The surprise of being asked to participate.",
+      "Key points raised by experts that resonated with you.",
+      "Your evolving viewpoint on environmental ethics."
+    ],
+    "context": "Canadian daily life, particularly in the context of environmental activism.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-198",
+    "scenario": "During a trip to the northern territories, you encountered a local Indigenous community celebrating a traditional festival that was open to visitors. You were invited to join in a sacred ceremony that transformed your understanding of Canadian heritage.",
+    "prompt": "Describe this memorable experience and how it changed your perspective on Indigenous culture and traditions in Canada.",
+    "tips": [
+      "Express the significance of the ceremony to the community.",
+      "Reflect on your prior knowledge of Indigenous cultures.",
+      "Share any personal changes in mindset or sensitivity that arose from this experience."
+    ],
+    "bulletPoints": [
+      "The honor of being included in a sacred ceremony.",
+      "Your initial reactions and feelings about the festival.",
+      "Insights gained about Indigenous traditions."
+    ],
+    "context": "Exploring the rich tapestry of Canadian cultures, especially Indigenous heritage.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-199",
+    "scenario": "At your workplace in Toronto, you were part of a brainstorming session where an unexpected idea emerged that challenged the norms of your industry. The discussion led to a radical proposal that could change your company's approach to innovation.",
+    "prompt": "Describe this unusual brainstorming experience, the idea that emerged, and how it challenged norms in your field.",
+    "tips": [
+      "Emphasize the initial resistance to the idea.",
+      "Discuss the collaborative process and who contributed to the idea.",
+      "Reflect on the potential impact on your workplace and industry."
+    ],
+    "bulletPoints": [
+      "The dynamics of the brainstorming session.",
+      "Specific aspects of the innovative idea that stood out.",
+      "Reactions from your colleagues and management."
+    ],
+    "context": "Professional life in a dynamic urban setting, focusing on innovation.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task8-200",
+    "scenario": "During a community cultural exchange in Quebec City, you found yourself in a vibrant discussion about the evolving identity of multicultural cities. This dialogue unexpectedly led to a project proposal aimed at fostering cross-cultural understanding.",
+    "prompt": "Describe this memorable discussion and how it inspired you to take action towards promoting multiculturalism in your community.",
+    "tips": [
+      "Mention specific viewpoints that struck you during the discussion.",
+      "Reflect on how this experience motivated you to engage with diverse communities.",
+      "Consider the future implications of the proposed project."
+    ],
+    "bulletPoints": [
+      "The key points of discussion about cultural identity.",
+      "Your personal reflections on multiculturalism in Canada.",
+      "The proposed project and its intended outcomes."
+    ],
+    "context": "Community engagement and cultural exchange in Canadian cities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   }
 ]

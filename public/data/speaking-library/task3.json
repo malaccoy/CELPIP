@@ -9,7 +9,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-02",
@@ -21,7 +23,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-03",
@@ -33,7 +37,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-04",
@@ -45,7 +51,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-05",
@@ -57,7 +65,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-06",
@@ -69,7 +79,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-07",
@@ -81,7 +93,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-08",
@@ -93,7 +107,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-09",
@@ -105,7 +121,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-10",
@@ -117,7 +135,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-11",
@@ -129,7 +149,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-12",
@@ -141,7 +163,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-13",
@@ -153,7 +177,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-14",
@@ -165,7 +191,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-15",
@@ -177,7 +205,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-16",
@@ -189,7 +219,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-17",
@@ -201,7 +233,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-18",
@@ -213,7 +247,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-19",
@@ -225,7 +261,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-20",
@@ -237,7 +275,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-21",
@@ -249,7 +289,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-22",
@@ -261,7 +303,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-23",
@@ -273,7 +317,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-24",
@@ -285,7 +331,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-25",
@@ -297,7 +345,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-26",
@@ -309,7 +359,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-27",
@@ -321,7 +373,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-28",
@@ -333,7 +387,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-29",
@@ -345,7 +401,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task3-30",
@@ -357,7 +415,9 @@
       "Describe objects and details"
     ],
     "context": "You are describing this picture to someone who cannot see it.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "title": "A Family Picnic",
@@ -748,5 +808,2096 @@
       "Consider addressing the emotional aspects of both community and development perspectives.",
       "Use specific examples of how urban development has affected similar neighborhoods in Canada."
     ]
+  },
+  {
+    "prompt": "Imagine you are at a local farmer's market on a sunny weekend morning. What is happening around you?",
+    "topic": "farmer's market",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-061",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a scene at a public skating rink in winter. What do you see and hear?",
+    "topic": "skating rink",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-062",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are visiting a zoo on a family outing. What animals do you see and what are they doing?",
+    "topic": "zoo visit",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-063",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a sunny day at a beach in Canada. Describe what people are doing and how they enjoy their time.",
+    "topic": "day at the beach",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-064",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a summer fair or carnival. What rides and activities can you see?",
+    "topic": "summer fair",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-065",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a scene at a local coffee shop in the morning. What are the customers doing?",
+    "topic": "coffee shop",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-066",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a community garden. What plants are growing and what activities are taking place?",
+    "topic": "community garden",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-067",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a school event, such as a sports day. What events are happening and how are the students participating?",
+    "topic": "school sports day",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-068",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you're at a picnic by a lake in a park. What food do you see and what activities are happening?",
+    "topic": "picnic by the lake",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-069",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a scene at a local library during the day. What are people doing inside?",
+    "topic": "library",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-070",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a family reunion in a park. What activities are happening and who is there?",
+    "topic": "family reunion",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-071",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a farmer's field during harvest time. What is happening and what do you see?",
+    "topic": "harvest season",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-072",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a busy street market in Canada. What vendors are there and what are they selling?",
+    "topic": "street market",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-073",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a weekend camping trip with friends. What do you see and what activities are taking place?",
+    "topic": "camping trip",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-074",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a cultural festival in your city. What activities are happening and who is participating?",
+    "topic": "cultural festival",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-075",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a community center during a cooking class. What is happening and who is there?",
+    "topic": "cooking class",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-076",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a day at a national park. What wildlife do you see and what are visitors doing?",
+    "topic": "national park visit",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-077",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a scene at a sports event, like a hockey game. What is the atmosphere like and what are fans doing?",
+    "topic": "sports event",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-078",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a peaceful neighborhood street in autumn. What do you see and hear in this scene?",
+    "topic": "autumn neighborhood",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-079",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a festive holiday market. What decorations are there and what food or crafts are being sold?",
+    "topic": "holiday market",
+    "task": 3,
+    "difficulty": "beginner",
+    "id": "task3-080",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a local farmer's market in Canada. Describe what you see happening around you. Vendors are selling fresh produce, and families are enjoying the atmosphere.",
+    "topic": "Local Farmer's Market",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-081",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are visiting a community event at a public library. Describe the scene, including people attending workshops and children participating in storytime.",
+    "topic": "Community Library Event",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-082",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a Canadian beach on a warm summer day. Describe what people are doing - swimming, playing beach volleyball, or building sandcastles.",
+    "topic": "Summer Beach Day",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-083",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are attending a winter festival in a Canadian city. Describe the activities happening, such as ice skating, people enjoying hot chocolate, or watching ice sculptures being made.",
+    "topic": "Winter Festival",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-084",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are in a busy coffee shop in a Canadian city on a weekday morning. Describe the scene - people working on laptops, ordering coffee, and chatting.",
+    "topic": "Coffee Shop",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-085",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a scene at a Canadian college campus during orientation week. Describe the buzz of new students, booths for clubs, and various activities happening.",
+    "topic": "College Orientation",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-086",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a public park in Canada during fall. Describe the scene as families enjoy the changing colors of leaves, children playing in piles of leaves, and people walking dogs.",
+    "topic": "Fall at the Park",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-087",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are attending a cultural festival celebrating different heritages in a Canadian city. Describe the food stalls, dance performances, and people enjoying the festivities.",
+    "topic": "Cultural Festival",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-088",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a construction site in a Canadian city. Describe the workers’ activities, the machinery in use, and how the project is progressing.",
+    "topic": "Construction Site",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-089",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a sporting event in a Canadian stadium. Describe the excitement of fans, the teams playing, and the various activities happening during the game.",
+    "topic": "Sporting Event",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-090",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are walking through a residential neighborhood in Canada during a weekend in spring. Describe the scene, including people gardening, children riding bikes, and families barbecuing.",
+    "topic": "Residential Neighborhood",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-091",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a local art gallery opening. Describe the scene, featuring artists speaking about their work, attendees enjoying the exhibits, and refreshments being served.",
+    "topic": "Art Gallery Opening",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-092",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a community garden in an urban Canadian area. Describe the activities happening, such as people planting, watering plants, and discussing gardening tips.",
+    "topic": "Community Garden",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-093",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are watching a parade in your local Canadian town. Describe the floats, the people participating, the crowd's reactions, and the overall atmosphere.",
+    "topic": "Local Parade",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-094",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a multicultural concert in a public square. Describe the atmosphere, the performances, and how people from different cultures are interacting.",
+    "topic": "Multicultural Concert",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-095",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a youth sports game in Canada. Describe the scene of players on the field, parents cheering from the sidelines, and the excitement in the air.",
+    "topic": "Youth Sports Game",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-096",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are attending a local charity event in Canada. Describe how people are interacting, fundraising activities taking place, and the overall community spirit.",
+    "topic": "Charity Event",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-097",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a book fair in a Canadian city. Describe the different booths, people browsing books, and any events like readings or signings happening.",
+    "topic": "Book Fair",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-098",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine you are at a nature reserve in Canada on a weekend. Describe the visitors hiking, observing wildlife, and the tranquility of the environment.",
+    "topic": "Nature Reserve",
+    "task": 3,
+    "difficulty": "intermediate",
+    "id": "task3-099",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a farmer’s market in a small Canadian town on a brisk autumn morning, where local vendors are showcasing their fresh produce, homemade goods, and artisan crafts. Describe the activities taking place, including the interactions between the vendors and customers.",
+    "topic": "Farmers Market",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-100",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Visualize a multicultural festival in a city park where people from various backgrounds are celebrating their heritage through food, dance, and music. Describe the atmosphere, the types of performances, and how individuals are engaging with one another.",
+    "topic": "Cultural Festival",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-101",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a busy downtown area on a weekday morning, where commuters are rushing to work, cyclists are navigating through traffic, and street performers are entertaining passersby. Describe the scene, the sights, and the sounds of urban life.",
+    "topic": "Urban Commute",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-102",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a winter scene in a Canadian neighborhood, where children are building snowmen, families are ice-skating on a frozen pond, and adults are shoveling snow from their driveways. Describe the different activities and the feelings they evoke.",
+    "topic": "Winter Activities",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-103",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Envision a local library hosting a community reading event where children are gathered around an author sharing stories. Describe the interactions between the author and the children, as well as the impact of such an event on the community.",
+    "topic": "Community Reading",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-104",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a technology fair where innovative startups are showcasing their latest gadgets in a convention center. Describe the types of exhibits, the interactions between entrepreneurs and attendees, and the overall atmosphere of innovation.",
+    "topic": "Tech Fair",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-105",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a serene lakeside campsite where families are enjoying nature through fishing, hiking, and campfire storytelling. Describe the peaceful environment, the bond between family members, and the sounds of nature around them.",
+    "topic": "Camping Trip",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-106",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a community board meeting discussing the development of a new public park. Describe the concerns raised by residents, the proposals put forth, and the diverse opinions contributing to the discussion.",
+    "topic": "Community Meeting",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-107",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Visualize a vibrant street fair in a historical neighborhood featuring local artisans, food trucks, and live music. Describe the variety of vendors, the types of food available, and the energy of the crowd enjoying the festivities.",
+    "topic": "Street Fair",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-108",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a rainy day in a cozy cafe where friends are gathering to catch up over coffee and pastries. Describe the ambiance of the cafe, the conversations taking place, and how the weather affects the atmosphere.",
+    "topic": "Cafe Gathering",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-109",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a bustling airport terminal where travelers are checking in, waiting for flights, and reuniting with family. Describe the emotions and activities taking place, reflecting on the diverse backgrounds of the travelers.",
+    "topic": "Airport Scene",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-110",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Envision a high school graduation ceremony held outdoors in a park setting, filled with proud parents, students in caps and gowns, and speeches celebrating achievements. Describe the atmosphere and key moments of the event.",
+    "topic": "Graduation Ceremony",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-111",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a charity run taking place in a vibrant city, with participants of all ages dressed in colorful gear to raise awareness for a cause. Describe the excitement of the runners, the support from spectators, and the overall vibe of community spirit.",
+    "topic": "Charity Run",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-112",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture a Canadian science fair where students are showcasing their projects to judges and an audience. Describe the range of projects, the enthusiasm of the participants, and the process of presenting their work.",
+    "topic": "Science Fair",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-113",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Visualize a neighborhood potluck dinner where residents are sharing traditional dishes from their cultures, fostering a sense of community and connection. Describe the food, the conversations, and the atmosphere of unity.",
+    "topic": "Potluck Dinner",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-114",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Envision a bustling farmers' market in a city square on a sunny weekend afternoon, with families shopping for fresh produce and enjoying local products. Describe the interactions between buyers and sellers, the variety of items available, and the overall energy of the market.",
+    "topic": "Farmers' Market",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-115",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Imagine a volunteer day at a community garden where residents are working together to plant flowers and vegetables. Describe the teamwork, the gardening techniques being used, and the sense of accomplishment among the volunteers.",
+    "topic": "Community Gardening",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-116",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Picture an art gallery opening in a downtown area, showcasing local artists. Describe the atmosphere, the interactions between art enthusiasts, and the types of artworks being displayed.",
+    "topic": "Art Gallery Opening",
+    "task": 3,
+    "difficulty": "advanced",
+    "id": "task3-117",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-118",
+    "scenario": "In a quiet coffee shop, a woman is sitting at a small table, working on her laptop. The smell of fresh coffee fills the air as a barista prepares drinks in the background.",
+    "prompt": "Describe the scene in the coffee shop. What do you see and hear?",
+    "tips": [
+      "Focus on the people and their activities.",
+      "Describe the atmosphere and smells.",
+      "Mention any sounds you notice."
+    ],
+    "bulletPoints": [
+      "A woman with a laptop",
+      "Barista making coffee",
+      "Quiet and cozy atmosphere"
+    ],
+    "context": "A common scene in a city coffee shop.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-119",
+    "scenario": "At a public library, children are sitting at a colorful table, listening to a story being read by a librarian. The room is filled with books and soft light from the windows.",
+    "prompt": "Describe the scene in the library. How do the children and librarian interact?",
+    "tips": [
+      "Describe the setting and furniture.",
+      "Talk about the children’s reactions.",
+      "Include sounds like laughter or whispers."
+    ],
+    "bulletPoints": [
+      "Children at a table",
+      "Librarian reading a story",
+      "Bright and inviting space"
+    ],
+    "context": "A typical scene in a community library for kids.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-120",
+    "scenario": "In a city square, people are gathered around a street performer playing the guitar. Some are clapping and others are enjoying the performance while sitting on benches.",
+    "prompt": "Describe the scene with the street performer. What is happening around him?",
+    "tips": [
+      "Mention the performer's actions.",
+      "Describe the audience's reactions.",
+      "Include the surroundings in the square."
+    ],
+    "bulletPoints": [
+      "Street performer with a guitar",
+      "People clapping and sitting",
+      "Vibrant city atmosphere"
+    ],
+    "context": "A lively public square in a Canadian city.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-121",
+    "scenario": "At a local farmer's market, shoppers are browsing through fresh fruits and vegetables. Vendors are chatting with customers and offering samples.",
+    "prompt": "Describe the farmer's market scene. What do you see and hear?",
+    "tips": [
+      "Talk about the colors of fruits and vegetables.",
+      "Describe the interactions between vendors and shoppers.",
+      "Include any sounds like laughter or bargaining."
+    ],
+    "bulletPoints": [
+      "Fresh produce on display",
+      "Vendors engaging with customers",
+      "Lively and bustling atmosphere"
+    ],
+    "context": "A common weekend activity in many Canadian towns.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-122",
+    "scenario": "On a cool fall day, a family is walking through a park, enjoying the colorful leaves. The children are playing with leaves while the parents take photos.",
+    "prompt": "Describe the scene in the park during fall. What are the family members doing?",
+    "tips": [
+      "Focus on the colors of the leaves.",
+      "Describe the actions of the children and parents.",
+      "Mention the weather and mood."
+    ],
+    "bulletPoints": [
+      "Family enjoying a fall day",
+      "Children playing with leaves",
+      "Beautiful autumn colors"
+    ],
+    "context": "A typical activity for families during the fall in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-123",
+    "scenario": "In a busy office, coworkers are having a meeting around a table. One person is presenting, while others are taking notes and discussing ideas.",
+    "prompt": "Describe the scene in the office meeting. What is happening?",
+    "tips": [
+      "Mention the actions of the presenter and audience.",
+      "Describe the office environment.",
+      "Talk about the mood during the meeting."
+    ],
+    "bulletPoints": [
+      "Coworkers in a meeting",
+      "Presenter sharing information",
+      "Collaborative atmosphere"
+    ],
+    "context": "A regular day in a Canadian workplace.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-124",
+    "scenario": "At a neighborhood playground, children are playing on swings and climbing structures. Parents are watching and chatting with each other nearby.",
+    "prompt": "Describe the scene at the playground. What do the children and parents do?",
+    "tips": [
+      "Focus on the activities of the children.",
+      "Describe the playground equipment.",
+      "Mention the interactions among parents."
+    ],
+    "bulletPoints": [
+      "Children playing on swings",
+      "Parents chatting nearby",
+      "Fun and lively atmosphere"
+    ],
+    "context": "A typical community playground in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-125",
+    "scenario": "In a cozy family kitchen, a father is cooking dinner while his children set the table. The aroma of food fills the room as they laugh and chat.",
+    "prompt": "Describe the scene in the kitchen. What are the family members doing?",
+    "tips": [
+      "Focus on the cooking actions.",
+      "Describe the children's tasks.",
+      "Mention the smells and sounds."
+    ],
+    "bulletPoints": [
+      "Father cooking dinner",
+      "Children setting the table",
+      "Warm and inviting atmosphere"
+    ],
+    "context": "A typical evening scene in a Canadian family home.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-126",
+    "scenario": "At a sports field, a group of children is playing soccer while parents cheer them on from the sidelines. The sun is shining and it's a joyful atmosphere.",
+    "prompt": "Describe the scene at the soccer field. What are the kids and parents doing?",
+    "tips": [
+      "Detail the actions of the children playing soccer.",
+      "Mention the parents' reactions.",
+      "Include the weather and overall mood."
+    ],
+    "bulletPoints": [
+      "Children playing soccer",
+      "Parents cheering from sidelines",
+      "Bright and energetic environment"
+    ],
+    "context": "A common weekend sports activity for kids in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-127",
+    "scenario": "In a bustling shopping mall, shoppers are walking around, looking at store windows. Some are carrying shopping bags while others are grabbing a snack from a food court.",
+    "prompt": "Describe the scene in the shopping mall. What do you observe around you?",
+    "tips": [
+      "Focus on the variety of shoppers.",
+      "Describe the shops and food options.",
+      "Mention any sounds in the mall."
+    ],
+    "bulletPoints": [
+      "Shoppers at a mall",
+      "Window shopping and food court",
+      "Busy and vibrant atmosphere"
+    ],
+    "context": "A common social outing for Canadians.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-128",
+    "scenario": "A group of friends is enjoying a weekend brunch at a busy café. The table is filled with colorful plates of food and steaming cups of coffee. Laughter and chatter fill the air as they share stories.",
+    "prompt": "Describe the scene of friends having brunch at a café.",
+    "tips": [
+      "Focus on the people and their actions.",
+      "Describe the food and drinks.",
+      "Mention the sounds and atmosphere."
+    ],
+    "bulletPoints": [
+      "Group of friends",
+      "Colorful food",
+      "Laughter and lively conversation"
+    ],
+    "context": "Weekend brunch at a café in a Canadian city.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-129",
+    "scenario": "At a community center, seniors are participating in a weekly exercise class. Some are stretching, while others are following the instructor. The room is bright and filled with encouraging music.",
+    "prompt": "Describe the scene of seniors in an exercise class at a community center.",
+    "tips": [
+      "Talk about the people participating.",
+      "Mention the instructor and the activity.",
+      "Describe the environment and mood."
+    ],
+    "bulletPoints": [
+      "Seniors exercising",
+      "Instructor leading",
+      "Bright and encouraging atmosphere"
+    ],
+    "context": "Weekly exercise class at a local community center.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-130",
+    "scenario": "A group of children is building a snowman on a snowy day. They are laughing and throwing snow at each other, while a parent watches and takes pictures. The trees are covered in snow, creating a winter wonderland.",
+    "prompt": "Describe the scene of children building a snowman.",
+    "tips": [
+      "Focus on the children and their actions.",
+      "Describe the weather and environment.",
+      "Mention the parent and their reaction."
+    ],
+    "bulletPoints": [
+      "Children playing in the snow",
+      "Building a snowman",
+      "Winter scenery"
+    ],
+    "context": "A snowy day in a Canadian neighborhood.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-131",
+    "scenario": "In a busy grocery store, shoppers are filling their carts with fresh fruits and vegetables. A mother is helping her child pick out apples while an elderly man searches for his favorite bread.",
+    "prompt": "Describe the scene of shoppers in a grocery store.",
+    "tips": [
+      "Talk about the shoppers and their actions.",
+      "Describe the items they are buying.",
+      "Mention the atmosphere of the store."
+    ],
+    "bulletPoints": [
+      "Shoppers in the store",
+      "Fresh produce",
+      "Families and seniors shopping"
+    ],
+    "context": "Everyday shopping experience in a Canadian grocery store.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-132",
+    "scenario": "A family is enjoying a cozy evening at home. They are sitting on the couch, watching a movie together. A bowl of popcorn is in the middle, and everyone is comfortable in their pajamas.",
+    "prompt": "Describe the scene of a family watching a movie at home.",
+    "tips": [
+      "Focus on the family members and their activities.",
+      "Mention the comfort of the environment.",
+      "Describe the mood of the evening."
+    ],
+    "bulletPoints": [
+      "Family on the couch",
+      "Movie night",
+      "Cozy atmosphere"
+    ],
+    "context": "A typical family evening at home in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-133",
+    "scenario": "At a local library, students are studying at tables. Some are reading books quietly, while others are typing on laptops. The atmosphere is calm, and the sound of pages turning can be heard.",
+    "prompt": "Describe the scene of students studying at a library.",
+    "tips": [
+      "Describe the students and their actions.",
+      "Mention the quiet atmosphere.",
+      "Talk about the surroundings."
+    ],
+    "bulletPoints": [
+      "Students studying",
+      "Quiet environment",
+      "Librarian organizing books"
+    ],
+    "context": "Study environment in a local library in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-134",
+    "scenario": "In a bustling farmer's market, vendors are selling fresh produce. Customers are sampling fruits and chatting with sellers. The sun is shining, and colorful tents fill the area.",
+    "prompt": "Describe the scene at a farmer's market.",
+    "tips": [
+      "Focus on the vendors and customers.",
+      "Describe the items being sold.",
+      "Mention the atmosphere and weather."
+    ],
+    "bulletPoints": [
+      "Vendors selling produce",
+      "Customers interacting",
+      "Colorful and lively environment"
+    ],
+    "context": "Local farmer's market in Canada during summer.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-135",
+    "scenario": "A couple is walking their dog in a quiet neighborhood. The dog is wagging its tail and exploring the grass while the couple talks and enjoys the fresh air. Trees are lining the streets.",
+    "prompt": "Describe the scene of a couple walking their dog in a neighborhood.",
+    "tips": [
+      "Focus on the couple and their dog.",
+      "Describe their actions and interactions.",
+      "Mention the neighborhood setting."
+    ],
+    "bulletPoints": [
+      "Couple with a dog",
+      "Enjoying a walk",
+      "Quiet and peaceful atmosphere"
+    ],
+    "context": "An everyday scene in a Canadian community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-136",
+    "scenario": "At a local church, families are gathering for a community potluck. Tables are filled with homemade dishes, and friends are greeting each other with smiles. Children are playing in a corner.",
+    "prompt": "Describe the scene of a community potluck at a church.",
+    "tips": [
+      "Describe the food and people at the event.",
+      "Mention the interactions among families.",
+      "Talk about the atmosphere."
+    ],
+    "bulletPoints": [
+      "Families sharing food",
+      "Community spirit",
+      "Children playing"
+    ],
+    "context": "Community gathering at a church in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-137",
+    "scenario": "A group of teenagers is playing basketball at a local court. They are cheering and encouraging each other while showing off their skills. The sun is setting, creating a beautiful orange sky.",
+    "prompt": "Describe the scene of teenagers playing basketball at a court.",
+    "tips": [
+      "Focus on the players and their actions.",
+      "Describe the game and its excitement.",
+      "Mention the time of day and setting."
+    ],
+    "bulletPoints": [
+      "Teenagers playing basketball",
+      "Cheering and excitement",
+      "Sunset ambiance"
+    ],
+    "context": "Evening sports activity at a local basketball court in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-138",
+    "scenario": "It’s a sunny afternoon in a local park. Families are having picnics on the grass, and children are playing with frisbees. A dog is chasing a ball, and people are relaxing on benches, reading books or chatting with friends.",
+    "prompt": "Describe the scene in the park with families and children. What are people doing? What does the atmosphere feel like?",
+    "tips": [
+      "Use simple, clear sentences.",
+      "Describe the actions of people.",
+      "Mention the weather to set the mood."
+    ],
+    "bulletPoints": [
+      "Families having picnics",
+      "Children playing games",
+      "A dog chasing a ball"
+    ],
+    "context": "A typical weekend in a Canadian park.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-139",
+    "scenario": "At a busy bus stop, people are waiting for their ride. Some individuals are looking at their phones, while others are chatting with friends. A woman is reading a book while an elderly man is sitting calmly on a bench.",
+    "prompt": "Describe the scene at the bus stop. Who is there, and what are they doing? What does the atmosphere feel like?",
+    "tips": [
+      "Focus on the people and their actions.",
+      "Try to convey the mood of the place.",
+      "Describe clothing or accessories for detail."
+    ],
+    "bulletPoints": [
+      "People waiting for the bus",
+      "Some are on their phones",
+      "An elderly man sitting on a bench"
+    ],
+    "context": "A normal day in the city, waiting for public transport.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-140",
+    "scenario": "In a community garden, various flowers and vegetables are growing. A group of volunteers is planting new seeds while a child is watering the plants. A couple is enjoying a quiet moment, taking pictures of the colorful blooms.",
+    "prompt": "Describe the community garden scene. What are the volunteers doing? How does the garden look and feel?",
+    "tips": [
+      "Use descriptive words for the plants.",
+      "Mention the activities of people.",
+      "Talk about the colors to enhance the description."
+    ],
+    "bulletPoints": [
+      "Flowers and vegetables growing",
+      "Volunteers planting seeds",
+      "A child watering plants"
+    ],
+    "context": "A local initiative to promote gardening and community involvement.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-141",
+    "scenario": "Inside a small bakery, the smell of fresh bread fills the air. A baker is shaping dough while a customer is looking at pastries in the display case. A group of friends is sitting at a table, enjoying coffee and chatting happily.",
+    "prompt": "Describe the bakery scene. What is the baker doing? How do the customers seem? What is the atmosphere like?",
+    "tips": [
+      "Mention the smells and sounds.",
+      "Describe the actions of the baker and customers.",
+      "Use words that express the mood."
+    ],
+    "bulletPoints": [
+      "Baker shaping dough",
+      "Customer looking at pastries",
+      "Friends enjoying coffee"
+    ],
+    "context": "A cozy local bakery in a Canadian neighborhood.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-142",
+    "scenario": "At a community center, a fitness class is in session. People of different ages are following the instructor's moves. Some are smiling while they exercise, and others look focused. Bright sunlight is coming through the windows.",
+    "prompt": "Describe the fitness class at the community center. What are the participants doing? How does the environment feel?",
+    "tips": [
+      "Focus on the actions of the participants.",
+      "Mention the instructor's role.",
+      "Describe the atmosphere created by the sunlight."
+    ],
+    "bulletPoints": [
+      "People of various ages exercising",
+      "Instructor leading the class",
+      "Sunlight streaming through windows"
+    ],
+    "context": "A popular community fitness activity promoting health and wellness.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-143",
+    "scenario": "In a small Canadian town, a group of elderly men plays chess on an outdoor table while a young woman jogs past, smiling at them. Nearby, children are riding their bicycles, and a couple sits on a bench enjoying ice cream, creating a vibrant and cheerful atmosphere.",
+    "prompt": "Describe this scene in detail, focusing on the people, their actions, and the overall mood.",
+    "tips": [
+      "Include sensory details like sounds and smells.",
+      "Mention the interactions between different groups of people.",
+      "Convey the emotions of the scene."
+    ],
+    "bulletPoints": [
+      "Elderly men focused on chess",
+      "Young woman jogging",
+      "Children biking",
+      "Couple enjoying ice cream"
+    ],
+    "context": "Community setting in a small Canadian town.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-144",
+    "scenario": "Inside a busy office, employees are gathered around a large table for a brainstorming session. Sticky notes and markers cover the table, and the atmosphere is filled with excitement and energy as team members share ideas.",
+    "prompt": "Describe this office scene, focusing on the people, the actions they are taking, and the mood in the room.",
+    "tips": [
+      "Highlight the collaborative atmosphere.",
+      "Note specific actions and facial expressions.",
+      "Mention any tools or materials being used."
+    ],
+    "bulletPoints": [
+      "Employees brainstorming",
+      "Sticky notes on the table",
+      "Excitement in the room"
+    ],
+    "context": "Workplace environment during a team meeting.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-145",
+    "scenario": "In a cozy community hall, families are participating in a potluck dinner. The long tables are filled with various homemade dishes, and there is laughter and chatter as people enjoy each other’s company, creating an inviting and festive atmosphere.",
+    "prompt": "Describe this potluck dinner scene, focusing on the people, their actions, and the overall mood.",
+    "tips": [
+      "Mention the types of food present.",
+      "Describe the interactions between families.",
+      "Convey the sense of community."
+    ],
+    "bulletPoints": [
+      "Families sharing homemade dishes",
+      "Laughter and chatter",
+      "Inviting atmosphere"
+    ],
+    "context": "Social gathering in a community setting.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-146",
+    "scenario": "At a local high school sports event, students are cheering loudly for their classmates competing in track and field. The sun is shining, and colorful banners are waving as parents take photos, capturing this enthusiastic community spirit.",
+    "prompt": "Describe this sports event scene, focusing on the people, their actions, and the mood of the audience.",
+    "tips": [
+      "Include descriptions of the event and participants.",
+      "Highlight the emotions of the spectators.",
+      "Mention the ambiance created by the environment."
+    ],
+    "bulletPoints": [
+      "Students cheering",
+      "Parents taking photos",
+      "Colorful banners"
+    ],
+    "context": "Community support at a school event.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-147",
+    "scenario": "In a neighborhood during a summer block party, neighbors mingle outside, sharing food and drinks. Children run around playing games while adults catch up, and a local band plays music, creating a lively and festive atmosphere.",
+    "prompt": "Describe this block party scene in detail, focusing on the people, their interactions, and the overall atmosphere.",
+    "tips": [
+      "Highlight the sounds of the music and laughter.",
+      "Mention specific activities people are engaged in.",
+      "Capture the vibrancy of community."
+    ],
+    "bulletPoints": [
+      "Neighbors sharing food",
+      "Children playing games",
+      "Local band performing"
+    ],
+    "context": "Social event fostering community connections.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-148",
+    "scenario": "At a local hospital, nurses and doctors are efficiently working together in the emergency room. The sound of beeping machines and the hustle of medical staff create a focused environment as they attend to patients with urgency and care.",
+    "prompt": "Describe this emergency room scene, focusing on the people, their actions, and the mood within the setting.",
+    "tips": [
+      "Capture the urgency of the situation.",
+      "Describe interactions among medical staff.",
+      "Mention the atmosphere created by the surroundings."
+    ],
+    "bulletPoints": [
+      "Medical staff collaborating",
+      "Sound of equipment",
+      "Focused and urgent atmosphere"
+    ],
+    "context": "Healthcare environment during a busy shift.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-149",
+    "scenario": "In a cozy neighborhood cafe, a group of friends sit around a large table sharing stories and laughter. The aroma of freshly brewed coffee fills the air, and the warm lighting creates an inviting ambiance as they enjoy each other’s company.",
+    "prompt": "Describe this cafe scene, focusing on the people, their actions, and the mood of the environment.",
+    "tips": [
+      "Include sensory details about the cafe.",
+      "Mention the dynamics among friends.",
+      "Capture the overall vibe of the space."
+    ],
+    "bulletPoints": [
+      "Friends sharing stories",
+      "Aroma of coffee",
+      "Inviting ambiance"
+    ],
+    "context": "Social gathering in a local cafe.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-150",
+    "scenario": "During a winter festival, families enjoy activities like ice skating and sledding at a local park. The laughter of children fills the air, and hot cocoa stands are busy with people warming up after outdoor fun, creating a festive and joyful environment.",
+    "prompt": "Describe this winter festival scene, focusing on the people, their activities, and the overall mood in the park.",
+    "tips": [
+      "Highlight the energy of the festival.",
+      "Describe specific activities and interactions.",
+      "Capture the atmosphere created by winter weather."
+    ],
+    "bulletPoints": [
+      "Families enjoying winter activities",
+      "Children laughing",
+      "Hot cocoa stands bustling"
+    ],
+    "context": "Community celebration during winter.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-151",
+    "scenario": "At a local art gallery, visitors are admiring the various exhibits. Artists are present, discussing their work with attendees, and the atmosphere is filled with curiosity and appreciation as people engage in thoughtful conversations about art.",
+    "prompt": "Describe this art gallery scene, focusing on the people, their actions, and the overall mood of the event.",
+    "tips": [
+      "Highlight the variety of artwork present.",
+      "Describe the interactions between artists and visitors.",
+      "Capture the ambiance of the gallery."
+    ],
+    "bulletPoints": [
+      "Visitors admiring art",
+      "Artists discussing their work",
+      "Curiosity and appreciation in the air"
+    ],
+    "context": "Cultural event showcasing local art.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-152",
+    "scenario": "In a vibrant community center, people of all ages are participating in a multicultural festival. Stalls display traditional foods and crafts, while music and dance performances fill the air with excitement and celebration.",
+    "prompt": "Describe this multicultural festival scene, focusing on the activities, the people, and the overall mood of the community center.",
+    "tips": [
+      "Highlight the range of cultures represented.",
+      "Describe the sounds and sights of the festival.",
+      "Capture the festive spirit and community engagement."
+    ],
+    "bulletPoints": [
+      "Stalls with traditional foods",
+      "Music and dance performances",
+      "Celebratory atmosphere"
+    ],
+    "context": "Community event celebrating diversity.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-153",
+    "scenario": "A group of volunteers is planting trees in a local park on a chilly autumn morning. Wearing colorful jackets, they share smiles as they dig holes and place young saplings into the earth, surrounded by falling leaves in shades of orange and yellow.",
+    "prompt": "Describe the scene of volunteers planting trees in a park.",
+    "tips": [
+      "Focus on the emotions of the volunteers.",
+      "Include details about the weather and surroundings.",
+      "Mention the significance of the activity."
+    ],
+    "bulletPoints": [
+      "Chilly autumn atmosphere",
+      "Vibrant colors of leaves",
+      "Community spirit through volunteering"
+    ],
+    "context": "Community service project in a Canadian park.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-154",
+    "scenario": "Inside a bustling craft fair, local artisans showcase their handmade products. The air is filled with the scent of fresh soap and baked goods, while visitors browse colorful booths packed with pottery, jewelry, and textile crafts, chatting animatedly with the creators.",
+    "prompt": "Describe the scene at a local craft fair.",
+    "tips": [
+      "Highlight the sights and sounds of the fair.",
+      "Mention the diverse range of products and people.",
+      "Include the overall vibe of excitement."
+    ],
+    "bulletPoints": [
+      "Variety of handmade goods",
+      "Interactions between artisans and visitors",
+      "Lively atmosphere with sounds and smells"
+    ],
+    "context": "A community event that celebrates local artisans in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-155",
+    "scenario": "In a serene lakeside setting, a family is setting up a picnic under a large oak tree. The parents are laying out a checkered blanket, while the children excitedly unpack sandwiches and snacks, surrounded by the gentle sounds of water lapping and birds chirping.",
+    "prompt": "Describe the family picnic scene by the lake.",
+    "tips": [
+      "Emphasize the tranquility of the setting.",
+      "Detail the activities of each family member.",
+      "Capture the joy of being together."
+    ],
+    "bulletPoints": [
+      "Calm lake environment",
+      "Family interactions",
+      "Relaxed and happy mood"
+    ],
+    "context": "A relaxing day for a family in a Canadian park.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-156",
+    "scenario": "At a vibrant street festival, various food trucks line the street offering diverse cuisines. Families and friends gather around tables, enjoying dishes from different cultures while live music fills the air, creating a lively, festive atmosphere.",
+    "prompt": "Describe the scene at a street food festival.",
+    "tips": [
+      "Focus on the variety of food and crowd dynamics.",
+      "Include descriptions of the music and entertainment.",
+      "Capture the festive spirit of the event."
+    ],
+    "bulletPoints": [
+      "Diverse food options",
+      "Live music and performances",
+      "Community celebration vibe"
+    ],
+    "context": "A multicultural festival in a Canadian city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-157",
+    "scenario": "Inside a bustling coffee shop, a barista is expertly crafting a latte while customers chat and work on their laptops. The smell of coffee wafts through the air, complemented by the sound of milk frothing and beans grinding, creating a cozy atmosphere.",
+    "prompt": "Describe the scene in a busy coffee shop.",
+    "tips": [
+      "Detail the actions of the barista and customers.",
+      "Mention the ambiance created by sounds and smells.",
+      "Highlight interactions between people."
+    ],
+    "bulletPoints": [
+      "Energetic yet cozy environment",
+      "Variety of customer activities",
+      "Barista skills on display"
+    ],
+    "context": "A social hub for people in a Canadian neighborhood.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-158",
+    "scenario": "During a community cleanup day, neighbors of all ages gather along a riverbank, armed with trash bags and gloves. As they work together, some chat and laugh while others focus on picking up litter, united by a common goal of beautifying their environment.",
+    "prompt": "Describe the scene of a community cleanup event.",
+    "tips": [
+      "Highlight the teamwork and camaraderie among participants.",
+      "Describe the setting and natural surroundings.",
+      "Convey the sense of purpose and satisfaction."
+    ],
+    "bulletPoints": [
+      "Community spirit in action",
+      "Natural beauty of the riverbank",
+      "Focus on teamwork and collaboration"
+    ],
+    "context": "A collective effort to keep the environment clean in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-159",
+    "scenario": "In a local artisan workshop, a craftsman is teaching a group of interested adults how to make pottery. The atmosphere is filled with laughter and creativity as participants try their hands at molding clay, with shelves displaying various finished pieces around them.",
+    "prompt": "Describe the scene in a pottery workshop.",
+    "tips": [
+      "Focus on the learning environment and interactions.",
+      "Include sensory details about the materials being used.",
+      "Highlight the enthusiasm of the participants."
+    ],
+    "bulletPoints": [
+      "Creative atmosphere",
+      "Hands-on learning experience",
+      "Variety of crafted pieces on display"
+    ],
+    "context": "An educational community activity in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-160",
+    "scenario": "On an early spring morning, a community garden is buzzing with activity as residents plant flowers and vegetables. Children are helping their parents, while others chat about their gardening tips, surrounded by freshly turned soil and the promise of new blooms.",
+    "prompt": "Describe the scene at a community garden in spring.",
+    "tips": [
+      "Highlight the excitement of planting season.",
+      "Include the vibrant colors of flowers and plants.",
+      "Capture the sense of community and shared interests."
+    ],
+    "bulletPoints": [
+      "Fresh spring atmosphere",
+      "Engagement between neighbors",
+      "Excitement of gardening together"
+    ],
+    "context": "A community initiative in a Canadian neighborhood.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-161",
+    "scenario": "During a local theater rehearsal, actors are practicing their lines in a cozy studio. The director is giving feedback, and laughter echoes as some actors improvise, creating a relaxed yet focused environment filled with creativity and collaboration.",
+    "prompt": "Describe the scene during a theater rehearsal.",
+    "tips": [
+      "Focus on the dynamics between the actors and director.",
+      "Describe the creative atmosphere and energy.",
+      "Highlight the humor and camaraderie in the group."
+    ],
+    "bulletPoints": [
+      "Creative environment with collaboration",
+      "Interaction between actors and director",
+      "Laughter and improvisation among performers"
+    ],
+    "context": "A community theater group in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-162",
+    "scenario": "At a local pet adoption event, various animals are showcased in pens, each with cheerful volunteers sharing their stories. Potential adopters browse, their faces lighting up with joy as they interact with the pets, creating a warm and hopeful atmosphere of new beginnings.",
+    "prompt": "Describe the scene at a pet adoption event.",
+    "tips": [
+      "Highlight the interactions between people and animals.",
+      "Include the emotions of both volunteers and potential adopters.",
+      "Capture the hopeful mood of the event."
+    ],
+    "bulletPoints": [
+      "Exciting atmosphere with animals",
+      "Emotional connections forming",
+      "Dedicated volunteers sharing stories"
+    ],
+    "context": "A community effort to promote pet adoption in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-163",
+    "scenario": "In a bustling office break room, employees are gathered around the coffee machine, chatting and laughing. Several people are sharing stories from their weekend adventures, while one person is heating up lunch in the microwave. The mood is light, with a mix of sounds from the coffee machine, laughter, and the clinking of dishes.",
+    "prompt": "Describe the scene in the office break room in detail, focusing on the people, their actions, and the overall atmosphere.",
+    "tips": [
+      "Focus on the interactions among the people.",
+      "Mention specific actions that highlight the mood.",
+      "Use descriptive language to convey the sounds and smells."
+    ],
+    "bulletPoints": [
+      "Describe the layout of the break room.",
+      "Include the variety of people and their conversations.",
+      "Mention elements like the coffee machine and snacks."
+    ],
+    "context": "A typical hectic day in an office where employees take a break.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-164",
+    "scenario": "At a community sports complex, families have gathered to watch a local youth hockey game. Excited parents are cheering for their kids on the ice, while younger siblings are running around, holding snacks. The atmosphere is filled with the sounds of skates on ice and children laughing, creating a lively and supportive environment.",
+    "prompt": "Describe the scene at the community sports complex during the hockey game, focusing on the people, their actions, and the overall atmosphere.",
+    "tips": [
+      "Highlight the energy of the crowd and the excitement.",
+      "Mention the physical setting, like the rink and seating area.",
+      "Include emotional responses from the spectators."
+    ],
+    "bulletPoints": [
+      "Describe the layout and facilities of the complex.",
+      "Include the emotions displayed by the parents and children.",
+      "Mention the sound and excitement of the game."
+    ],
+    "context": "A community event showcasing youth sports.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-165",
+    "scenario": "In a busy shopping mall during the holiday season, shoppers hustle from store to store, bags in hand. A group of friends is taking a selfie in front of a large Christmas tree, while a child tugs at their parent's coat, pointing at a toy store's window display. The scene is vibrant, filled with holiday decorations and cheerful music playing in the background.",
+    "prompt": "Describe the scene at the shopping mall during the holiday season, focusing on the people, their actions, and the overall atmosphere.",
+    "tips": [
+      "Capture the festive decorations and ambiance.",
+      "Mention the interactions between friends and family.",
+      "Use sensory details to describe the sounds and sights."
+    ],
+    "bulletPoints": [
+      "Describe the decorations and layout of the mall.",
+      "Include specific actions taken by shoppers and families.",
+      "Mention the emotional responses of the crowd."
+    ],
+    "context": "A festive time of year in a bustling shopping environment.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-166",
+    "scenario": "At a public transit station, commuters are waiting for their trains. Some people are reading books, while others are scrolling through their phones. A musician is playing a guitar nearby, filling the air with soft melodies, creating a moment of calm amidst the rush of daily life.",
+    "prompt": "Describe the scene at the public transit station, highlighting the people, their actions, and the mood of the environment.",
+    "tips": [
+      "Focus on the diversity of people and their activities.",
+      "Include the sounds and ambiance of the station.",
+      "Capture the contrast between the rush and the musician."
+    ],
+    "bulletPoints": [
+      "Describe the layout and atmosphere of the station.",
+      "Include specific actions of commuters waiting.",
+      "Mention details like the music and its effect on the scene."
+    ],
+    "context": "A daily commuting scene in a busy Canadian city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-167",
+    "scenario": "In a community park on a crisp autumn afternoon, children are playing in a pile of colorful leaves. Parents are sitting on benches, sipping warm beverages while watching their kids. The scene is filled with laughter and excitement, as one child jumps into the leaves, sending them flying in the air, while another tries to catch a glimpse of a squirrel.",
+    "prompt": "Describe the scene in the community park during autumn, focusing on the people, their actions, and the overall atmosphere.",
+    "tips": [
+      "Highlight the visual beauty of the autumn leaves.",
+      "Mention the interactions between children and parents.",
+      "Use descriptive language to evoke the senses."
+    ],
+    "bulletPoints": [
+      "Describe the colors and sounds of the autumn day.",
+      "Include specific actions children are taking.",
+      "Mention the expressions on people's faces."
+    ],
+    "context": "A leisurely afternoon in a community setting during fall.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-168",
+    "scenario": "In a local farmers' market, vendors are setting up their stalls filled with fresh produce and homemade goods. A family is examining fruits while a couple is chatting with a vendor about the best seasonal recipes. The air is fragrant with the scent of fresh flowers and baked goods, creating a warm and inviting atmosphere.",
+    "prompt": "Describe the scene at the farmers' market, focusing on the people, their actions, and the mood of the environment.",
+    "tips": [
+      "Highlight the variety of products available at the market.",
+      "Include the interactions between vendors and customers.",
+      "Describe the sensory details, like smells and sounds."
+    ],
+    "bulletPoints": [
+      "Describe the layout and atmosphere of the market.",
+      "Include specific actions and conversations happening.",
+      "Mention details that create a sense of community."
+    ],
+    "context": "A vibrant community hub showcasing local produce.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-169",
+    "scenario": "At a community potluck dinner, tables are adorned with various homemade dishes brought by residents. People are mingling, enjoying each other's company, and sharing recipe tips. The room is filled with the warm aromas of different cuisines, creating a sense of togetherness and community spirit.",
+    "prompt": "Describe the scene at the community potluck dinner, focusing on the people, their actions, and the atmosphere.",
+    "tips": [
+      "Highlight the variety of dishes and their cultural significance.",
+      "Include the interactions between attendees.",
+      "Use descriptive language to evoke the sense of community."
+    ],
+    "bulletPoints": [
+      "Describe the layout and decorations of the dining area.",
+      "Include specific conversations or activities happening.",
+      "Mention the aromas and sounds that fill the room."
+    ],
+    "context": "A community event encouraging social interaction and sharing.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-170",
+    "scenario": "In a cozy neighborhood, residents are gathered for a block party. Kids are playing games on the street while adults are setting up a barbecue. The atmosphere is festive with decorations strung across the street, and laughter can be heard as neighbors share conversations and enjoy the summer evening.",
+    "prompt": "Describe the scene at the neighborhood block party, focusing on the people, their actions, and the overall mood.",
+    "tips": [
+      "Highlight the festive decorations and activities.",
+      "Include the interactions between neighbors and families.",
+      "Use sensory details to describe the sounds and smells."
+    ],
+    "bulletPoints": [
+      "Describe the layout of the area and activities available.",
+      "Include specific actions children and adults are taking.",
+      "Mention the emotions of people enjoying the celebration."
+    ],
+    "context": "A community event bringing residents together for a fun evening.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-171",
+    "scenario": "In a bustling restaurant, diners are enjoying a variety of dishes. A group at one table is celebrating a birthday, complete with cake and singing, while another couple is engaged in deep conversation. The atmosphere is lively, filled with the clinking of dishes and the chatter of happy patrons.",
+    "prompt": "Describe the scene inside the restaurant, focusing on the people, their actions, and the overall mood of the environment.",
+    "tips": [
+      "Highlight the variety of activities happening at different tables.",
+      "Include sensory details related to food and ambiance.",
+      "Capture the contrast between celebrations and casual dining."
+    ],
+    "bulletPoints": [
+      "Describe the layout and décor of the restaurant.",
+      "Include specific conversations and reactions from diners.",
+      "Mention the sounds and smells of the dining experience."
+    ],
+    "context": "A dining experience in a popular local restaurant.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-172",
+    "scenario": "At a local community center, a group of people is participating in a cooking class. Participants are chopping vegetables, stirring pots, and sharing tips about traditional recipes. The atmosphere is warm and collaborative, filled with the enticing aromas of spices and freshly cooked food.",
+    "prompt": "Describe the scene at the cooking class in the community center, focusing on the people, their actions, and the mood of the environment.",
+    "tips": [
+      "Highlight the diversity of the participants and their interactions.",
+      "Include sensory details related to the cooking process.",
+      "Capture the learning environment and its collaborative spirit."
+    ],
+    "bulletPoints": [
+      "Describe the layout and equipment in the kitchen.",
+      "Include specific actions being taken by participants.",
+      "Mention the communal feeling and shared enjoyment of cooking."
+    ],
+    "context": "A community activity that promotes culinary skills and cultural exchange.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-173",
+    "scenario": "In a modern co-working space, a diverse group of freelancers are gathered around a large communal table. Some are intently focused on their laptops, while others engage in lively discussions about project ideas. The space is adorned with plants and modern artworks, creating an inviting atmosphere.",
+    "prompt": "Describe the scene in the co-working space, focusing on the people, their actions, and the overall mood.",
+    "tips": [
+      "Observe the details of the environment",
+      "Highlight the interactions among people",
+      "Describe the feelings conveyed by the scene"
+    ],
+    "bulletPoints": [
+      "Co-working space with a modern aesthetic",
+      "Diverse group of freelancers and their activities",
+      "Vibrant atmosphere with a sense of collaboration"
+    ],
+    "context": "A typical day in a Canadian city co-working environment.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-174",
+    "scenario": "At a community center gymnasium, several local youth are engaged in a basketball practice. Coaches are providing feedback while players dribble and shoot hoops amidst laughter and encouragement. The walls are adorned with banners celebrating local sports achievements.",
+    "prompt": "Describe the basketball practice scene, paying attention to the players, coaches, and the environment.",
+    "tips": [
+      "Focus on the dynamics of the practice",
+      "Note the atmosphere of encouragement and teamwork",
+      "Include sensory details like sounds and sights"
+    ],
+    "bulletPoints": [
+      "Youth practicing basketball in a community setting",
+      "Coaches interacting with players",
+      "Bright and motivational sports environment"
+    ],
+    "context": "A typical afternoon at a community sports facility in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-175",
+    "scenario": "During a local charity run, participants of all ages are gathered at the starting line, wearing colorful T-shirts and cheering as they get ready for the race. Volunteer staff are handing out water bottles and providing safety instructions, while a festive atmosphere is created by music playing in the background.",
+    "prompt": "Describe the scene at the charity run, focusing on the participants, volunteers, and the overall atmosphere.",
+    "tips": [
+      "Highlight the excitement and community spirit",
+      "Mention the logistics and preparation for the run",
+      "Capture the sensory elements like sounds and colors"
+    ],
+    "bulletPoints": [
+      "Charity run with diverse participants",
+      "Volunteers ensuring a smooth event",
+      "Festive and supportive community ambiance"
+    ],
+    "context": "A lively community event aimed at raising funds for a local cause in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-176",
+    "scenario": "A diverse team of professionals is gathered in a sleek conference room adorned with modern art. They are engaged in a heated brainstorming session about ethical AI implementation. The mood is a blend of intensity and curiosity, as each member contributes their unique perspective.",
+    "prompt": "Describe the scene in detail, focusing on the people, their actions, and the atmosphere of the discussion.",
+    "tips": [
+      "Use sophisticated vocabulary to describe the mood.",
+      "Highlight the diversity of the team members.",
+      "Explain the significance of the topic being discussed."
+    ],
+    "bulletPoints": [
+      "Team members express different viewpoints.",
+      "Modern art enhances the room's innovative feel.",
+      "Collaborative energy drives the conversation."
+    ],
+    "context": "A corporate setting focused on technology ethics in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-177",
+    "scenario": "A multicultural neighborhood in Toronto showcases a vibrant street scene where artisans are setting up their stalls for an upcoming cultural festival. Families bustle about preparing for the day, while musicians practice nearby amid a tapestry of colorful banners and decorations.",
+    "prompt": "Describe this cultural scene, emphasizing the preparations, the people involved, and the overall atmosphere.",
+    "tips": [
+      "Capture the sounds and sights of the preparations.",
+      "Illustrate the cultural diversity represented.",
+      "Discuss the significance of the event for the community."
+    ],
+    "bulletPoints": [
+      "Artisans and musicians add to the lively atmosphere.",
+      "Families are engaged in enthusiastic discussions.",
+      "Colorful decorations create a festive mood."
+    ],
+    "context": "A community preparing for a cultural celebration in an urban setting.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-178",
+    "scenario": "In a high-rise office in downtown Vancouver, employees gather for an impromptu meeting. The glass walls offer a stunning view of the mountains, creating a serene contrast to the urgency of their discussions about sustainability initiatives.",
+    "prompt": "Describe this office scene, detailing the people's actions, mood, and the impact of the setting on their discussion.",
+    "tips": [
+      "Highlight the contrast between the serene view and the intense conversation.",
+      "Focus on specific gestures and expressions of the employees.",
+      "Discuss the implications of the sustainability initiatives."
+    ],
+    "bulletPoints": [
+      "The mountain view symbolizes a commitment to nature.",
+      "Urgency in discussions reflects corporate responsibility.",
+      "Employees exhibit teamwork despite pressure."
+    ],
+    "context": "A professional setting focusing on environmental responsibility.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-179",
+    "scenario": "In a bustling tech startup in Ottawa, a group of developers collaborates over a large digital screen, troubleshooting code while sipping artisanal beverages. Laughter intersperses their serious tech talk, reflecting a casual yet purposeful atmosphere.",
+    "prompt": "Describe the dynamics of this startup scene, focusing on the interaction between the developers, their actions, and the ambiance.",
+    "tips": [
+      "Incorporate tech jargon to illustrate their work.",
+      "Highlight the balance between professionalism and a relaxed environment.",
+      "Discuss the innovation aspect of their collaboration."
+    ],
+    "bulletPoints": [
+      "Laughter indicates a strong team rapport.",
+      "Casual drinks suggest a friendly workplace culture.",
+      "Focus on the digital tools enhancing their collaboration."
+    ],
+    "context": "An innovative tech environment fostering creativity and teamwork.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-180",
+    "scenario": "During a city council meeting in Calgary, community members express their concerns about urban development. Some hold placards, while others passionately address council members, highlighting both excitement and apprehension about the future of their neighborhood.",
+    "prompt": "Describe the atmosphere of the council meeting, focusing on the individuals involved, their emotions, and the impact of their concerns.",
+    "tips": [
+      "Capture the tension and urgency of the discussions.",
+      "Describe the diversity of opinions among community members.",
+      "Discuss the implications of urban development."
+    ],
+    "bulletPoints": [
+      "Placards demonstrate the community's investment in local issues.",
+      "Passionate speeches evoke strong emotions.",
+      "Contrasting viewpoints highlight societal values."
+    ],
+    "context": "A civic engagement setting addressing urban planning.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-181",
+    "scenario": "In a cozy co-working space in Montreal, freelancers and entrepreneurs work side by side, each engrossed in their projects. The smell of fresh pastries wafts through the air as a subtle sense of collaboration permeates the atmosphere, even amidst individual pursuits.",
+    "prompt": "Describe this co-working scene, focusing on the people, their actions, and the overall ambiance of the space.",
+    "tips": [
+      "Highlight the mix of individual focus and community spirit.",
+      "Incorporate sensory language to enhance the description.",
+      "Discuss the advantages of such a working environment."
+    ],
+    "bulletPoints": [
+      "Freelancers exhibit diversity in their work.",
+      "The ambiance promotes creativity and networking.",
+      "Pastries suggest a nurturing environment."
+    ],
+    "context": "A modern workspace fostering creativity and collaboration.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-182",
+    "scenario": "On the bustling university campus of UBC, students from various backgrounds engage in a spirited debate about climate change. Tables with informational flyers are set up around them, creating a vibrant dialogue filled with passion and intellect.",
+    "prompt": "Describe the campus scene, focusing on the students' interactions, their arguments, and the environment surrounding them.",
+    "tips": [
+      "Emphasize the diversity and passion of the students.",
+      "Show how the campus setting contributes to the dialogue.",
+      "Discuss the importance of such debates in academic settings."
+    ],
+    "bulletPoints": [
+      "Students actively exchange ideas and emotions.",
+      "Informational flyers indicate a well-organized effort.",
+      "The campus is a hub of intellectual activity."
+    ],
+    "context": "An academic environment addressing global issues.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-183",
+    "scenario": "In a suburban community board meeting in Mississauga, residents gather to discuss local safety initiatives. The room is filled with a mix of apprehension and hope, as parents share concerns while police officers provide reassurance and updates on community programs.",
+    "prompt": "Describe the scene, focusing on the interactions between residents and officials, their emotions, and the atmosphere of trust and concern.",
+    "tips": [
+      "Highlight the emotional investment of the residents.",
+      "Discuss the role of collaboration in addressing community issues.",
+      "Emphasize the importance of safety in neighborhoods."
+    ],
+    "bulletPoints": [
+      "Parents express genuine concern for their families.",
+      "Officers exhibit professionalism and empathy.",
+      "Community bonding through shared concerns."
+    ],
+    "context": "A civic engagement setting centered on safety and collaboration.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-184",
+    "scenario": "Inside a bustling hospital research lab in Toronto, scientists collaborate on groundbreaking medical studies. The atmosphere is electric with innovation as they discuss findings, their faces illuminated by computer screens filled with complex data.",
+    "prompt": "Describe the lab scene in detail, focusing on the scientists' collaboration, the technology in use, and the mood of the environment.",
+    "tips": [
+      "Use technical language relevant to the field of research.",
+      "Show how teamwork enhances their findings.",
+      "Discuss the significance of their work for society."
+    ],
+    "bulletPoints": [
+      "Scientists are deeply focused yet collaborative.",
+      "High-tech equipment showcases modern research methods.",
+      "The innovative environment fosters discovery."
+    ],
+    "context": "A high-stakes research environment pushing the boundaries of medicine.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-185",
+    "scenario": "In a vibrant public library in Halifax, patrons participate in a workshop on financial literacy. The room buzzes with curiosity as individuals from different backgrounds engage with the material, asking questions and sharing experiences, creating an atmosphere of growth and empowerment.",
+    "prompt": "Describe the library scene, focusing on the interactions between participants, the diversity present, and the mood of the learning environment.",
+    "tips": [
+      "Highlight the engagement of participants with the subject matter.",
+      "Show the benefits of community education programs.",
+      "Discuss the diverse backgrounds contributing to discussions."
+    ],
+    "bulletPoints": [
+      "Active participation indicates a genuine interest in learning.",
+      "Diversity enriches the learning experience.",
+      "The workshop promotes empowerment through knowledge."
+    ],
+    "context": "A community-focused educational initiative in a public space.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-186",
+    "scenario": "In a busy public library in Regina, a young woman sits at a table surrounded by stacks of books while engrossed in her laptop. Occasionally, she glances up to observe two elderly gentlemen engaged in a passionate debate about Canadian literature, their animated gestures creating a lively atmosphere within the otherwise quiet space.",
+    "prompt": "Describe this scene in detail, focusing on the people, their actions, and the mood in the library.",
+    "tips": [
+      "Use descriptive language to convey the ambiance.",
+      "Explain the interactions between the individuals.",
+      "Discuss the significance of the setting."
+    ],
+    "bulletPoints": [
+      "Young woman studying at a table",
+      "Elderly men debating passionately",
+      "Quiet yet engaging atmosphere"
+    ],
+    "context": "A study scene in a public library showcasing community engagement through literature.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-187",
+    "scenario": "At a community environmental workshop in a spacious hall in Winnipeg, local activists are gathered around a large map of the city, discussing sustainable urban planning. The mood is energetic as volunteers eagerly share their ideas, while a facilitator notes key points on a whiteboard, illustrating potential green spaces and eco-friendly transportation routes.",
+    "prompt": "Describe the scene, emphasizing the participants’ actions, emotional tone, and the importance of the workshop.",
+    "tips": [
+      "Convey the enthusiasm and engagement of the participants.",
+      "Highlight the collaborative atmosphere.",
+      "Use specific details about the workshop's focus."
+    ],
+    "bulletPoints": [
+      "Activists discussing urban sustainability",
+      "Facilitator writing on a whiteboard",
+      "Collaborative and energetic mood"
+    ],
+    "context": "A community initiative focusing on sustainable development in urban areas.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-188",
+    "scenario": "In a sleek Montreal design studio, a team of graphic designers is passionately brainstorming for an upcoming product launch. Color swatches and sketches are scattered across the table as they enthusiastically critique each other's ideas, creating an atmosphere thick with creativity and collaboration, punctuated by laughter and exciting exchanges.",
+    "prompt": "Describe this dynamic workplace scene, focusing on the interactions, setting, and overall vibe.",
+    "tips": [
+      "Emphasize the collaborative spirit of the team.",
+      "Include sensory details about the environment.",
+      "Discuss the creative process and its importance."
+    ],
+    "bulletPoints": [
+      "Designers brainstorming in a studio",
+      "Color swatches and sketches present",
+      "Creative and collaborative atmosphere"
+    ],
+    "context": "A workplace scene illustrating teamwork in the creative industry.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-189",
+    "scenario": "During a mid-week evening at a local community sports center in Edmonton, a diverse group of parents is gathered for a meeting about youth sports programs. Some are animatedly discussing their children's experiences on different teams, while others write notes, reflecting a shared commitment to enhancing the sports culture in the community.",
+    "prompt": "Describe the scene in detail, focusing on the participants’ actions, setting, and collective spirit.",
+    "tips": [
+      "Highlight the diversity and engagement of the parents.",
+      "Discuss the significance of community involvement.",
+      "Use descriptive phrases to convey the mood."
+    ],
+    "bulletPoints": [
+      "Parents meeting about youth sports programs",
+      "Animated discussions and note-taking",
+      "Commitment to enhancing community sports"
+    ],
+    "context": "A community-driven initiative aimed at improving youth sports programs.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-190",
+    "scenario": "At a bustling urban planning conference in Ottawa, delegates from various Canadian cities are reviewing presentations on climate resilience strategies. The atmosphere is charged with urgency as they exchange ideas, with some participants engaging in deep discussions while others take notes, reflecting the serious global implications of local decisions.",
+    "prompt": "Describe this professional setting, emphasizing the participants' actions and the mood of the conference.",
+    "tips": [
+      "Convey the sense of urgency in the discussions.",
+      "Highlight the collaborative nature of the event.",
+      "Discuss the broader impact of their work."
+    ],
+    "bulletPoints": [
+      "Delegates reviewing climate resilience strategies",
+      "Engaged discussions and note-taking",
+      "Urgent and collaborative atmosphere"
+    ],
+    "context": "A conference tackling pressing global issues through local initiatives.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-191",
+    "scenario": "Inside a contemporary art gallery in Toronto, a crowd of visitors mingles during an opening event for a thought-provoking exhibit on social justice. Artists engage with attendees, answering questions while animatedly discussing their inspirations. The mood is reflective, filled with insightful conversations and an air of anticipation about the impact of the artwork.",
+    "prompt": "Describe this cultural setting in detail, focusing on the interactions, atmosphere, and significance of the event.",
+    "tips": [
+      "Highlight the diversity of attendees and artists.",
+      "Discuss the importance of the themes presented in the exhibit.",
+      "Use vivid descriptions to convey the mood."
+    ],
+    "bulletPoints": [
+      "Visitors at an art gallery opening",
+      "Artists engaging in discussions about social justice",
+      "Reflective and anticipatory mood"
+    ],
+    "context": "A celebration of art and its role in addressing social issues.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-192",
+    "scenario": "In a cozy co-op grocery store in Victoria, customers are gathered for a workshop on local food sourcing and sustainability. The atmosphere is warm and inviting, with participants actively tasting samples of organic products while the facilitator shares insights about the benefits of supporting local farmers, creating a sense of community and awareness about food choices.",
+    "prompt": "Describe this engaging scene, focusing on the actions of the participants, the setting, and the overall mood.",
+    "tips": [
+      "Emphasize the community aspect of the workshop.",
+      "Include sensory experiences like tastes and aromas.",
+      "Highlight the importance of local sourcing."
+    ],
+    "bulletPoints": [
+      "Customers at a local food sourcing workshop",
+      "Tasting organic product samples",
+      "Warm and inviting atmosphere"
+    ],
+    "context": "An initiative to educate consumers about sustainable food practices.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-193",
+    "scenario": "During a strategic planning session at a Toronto nonprofit organization, team members are intensely discussing initiatives for supporting vulnerable populations. The walls are adorned with posters of past successful campaigns, and the room is charged with determination as participants outline their vision, emphasizing the collaborative nature of their mission to create social change.",
+    "prompt": "Describe the focus of this planning session, highlighting the conversations, actions, and the mood in the room.",
+    "tips": [
+      "Convey the seriousness of their discussions and dedication.",
+      "Discuss how past successes inspire their current goals.",
+      "Use specific examples to illustrate the mission."
+    ],
+    "bulletPoints": [
+      "Team strategizing initiatives for vulnerable populations",
+      "Posters showcasing past successes",
+      "Determined and collaborative mood"
+    ],
+    "context": "A nonprofit organization committed to social advocacy.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-194",
+    "scenario": "In a technology incubator in Waterloo, aspiring entrepreneurs are gathered for a pitch night, presenting their innovative ideas to a panel of investors. The atmosphere is thick with anticipation, as the entrepreneurs nervously but passionately share their visions, while the panel listens intently, jotting down notes and asking probing questions.",
+    "prompt": "Describe this high-stakes environment, focusing on the actions of the entrepreneurs, the reactions of the investors, and the overall vibe.",
+    "tips": [
+      "Highlight the tension and excitement of the pitch night.",
+      "Describe the entrepreneurs’ emotions during their presentations.",
+      "Discuss the significance of innovation in this context."
+    ],
+    "bulletPoints": [
+      "Entrepreneurs pitching to investors",
+      "Anticipatory atmosphere full of tension",
+      "Passionate presentations and critical engagement"
+    ],
+    "context": "A platform for fostering innovation and entrepreneurial spirit in the community.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-195",
+    "scenario": "In a serene garden amidst a bustling city in Calgary, a meditation group is gathered for their weekly session. As they sit in circles on yoga mats, the instructor gently guides them through mindfulness exercises, promoting tranquility against the backdrop of urban noise. The participants exude a sense of calm, creating a collective energy of peace and introspection.",
+    "prompt": "Describe this unique scene focusing on the participants, their actions, and the contrast between the setting and the activities.",
+    "tips": [
+      "Highlight the serenity of the meditation amid urban life.",
+      "Discuss the emotional state of the participants.",
+      "Use vivid imagery to contrast the surroundings."
+    ],
+    "bulletPoints": [
+      "Meditation group in a city garden",
+      "Participants engaging in mindfulness exercises",
+      "Peaceful atmosphere contrasting urban noise"
+    ],
+    "context": "A community initiative promoting mental well-being through mindfulness.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-196",
+    "scenario": "A group of healthcare professionals are gathered in a modern hospital conference room for a morning meeting. The walls are lined with large windows, letting in soft natural light, and the atmosphere is a blend of professionalism and camaraderie as they discuss patient care strategies and recent advances in medical technology.",
+    "prompt": "Describe the scene in the hospital conference room in detail, focusing on the people, their actions, and the overall mood.",
+    "tips": [
+      "Focus on the interactions between the professionals.",
+      "Use descriptive language to convey the setting and mood.",
+      "Highlight the significance of their meeting and its impact on patient care."
+    ],
+    "bulletPoints": [
+      "Location: hospital conference room",
+      "Participants: healthcare professionals",
+      "Mood: collaborative and focused"
+    ],
+    "context": "A typical morning in a Canadian hospital where healthcare teams strategize for better patient outcomes.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-197",
+    "scenario": "In a quaint coffee shop nestled in a vibrant urban neighborhood, a small group of local artists is convening for a creative brainstorming session. The air is infused with the rich aroma of roasted coffee beans, and the walls are adorned with colorful artwork by local talent, creating an inspiring backdrop for their discussions.",
+    "prompt": "Describe the scene in the coffee shop, paying attention to the people, their creative process, and the atmosphere.",
+    "tips": [
+      "Emphasize the creative dynamic among the artists.",
+      "Include sensory details to enhance the description.",
+      "Reflect on how the environment influences their creativity."
+    ],
+    "bulletPoints": [
+      "Setting: coffee shop decorated with local art",
+      "People: local artists brainstorming",
+      "Atmosphere: cozy and inspiring"
+    ],
+    "context": "An informal meeting spot for local creatives in a Canadian city, fostering community and collaboration.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-198",
+    "scenario": "At an outdoor food festival in a large city park, families and friends are gathered around various food stalls, sampling international cuisines. The atmosphere is lively, with laughter and music filling the air as children run between the colorful tents, and the diverse crowd embraces the enjoyment of shared culinary experiences.",
+    "prompt": "Describe the scene at the outdoor food festival, focusing on the people, actions, and overall energy of the event.",
+    "tips": [
+      "Highlight the diversity of the crowd and food offerings.",
+      "Use lively adjectives to convey the festival's excitement.",
+      "Consider the cultural significance of the event."
+    ],
+    "bulletPoints": [
+      "Setting: outdoor food festival in a city park",
+      "Participants: families, friends, vendors",
+      "Energy: vibrant and festive"
+    ],
+    "context": "A community event in a Canadian city celebrating cultural diversity through food.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-199",
+    "scenario": "In a university lecture hall, a distinguished professor is engaging with a group of graduate students during a seminar on ethical leadership. The students are actively participating, taking notes, and asking thought-provoking questions, while the ambiance reflects a serious yet stimulating academic environment.",
+    "prompt": "Describe the scene in the university lecture hall, focusing on the interaction between the professor and students, and the mood of the seminar.",
+    "tips": [
+      "Illustrate the professor's teaching style and approach to discussion.",
+      "Convey the students' engagement and enthusiasm for the topic.",
+      "Highlight the importance of ethical leadership in today's society."
+    ],
+    "bulletPoints": [
+      "Setting: university lecture hall",
+      "Participants: professor and graduate students",
+      "Mood: serious yet engaging"
+    ],
+    "context": "A higher education setting in Canada, where future leaders are shaped through critical discourse.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task3-200",
+    "scenario": "During a neighborhood cleanup day, community members of all ages are collaborating to beautify their local park. Armed with trash bags and gardening tools, they share laughter and stories while planting flowers and picking up litter, fostering a strong sense of unity and responsibility towards their environment.",
+    "prompt": "Describe the scene during the neighborhood cleanup, focusing on the actions of the participants and the atmosphere of community spirit.",
+    "tips": [
+      "Emphasize the collaborative efforts of the community.",
+      "Include details about the environment and beautification process.",
+      "Reflect on the importance of community engagement."
+    ],
+    "bulletPoints": [
+      "Setting: community park during a cleanup",
+      "Participants: neighborhood volunteers of all ages",
+      "Atmosphere: cooperative and uplifting"
+    ],
+    "context": "A community initiative in Canada aimed at promoting environmental stewardship and neighborly connections.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   }
 ]

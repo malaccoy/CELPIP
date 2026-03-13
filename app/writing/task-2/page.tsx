@@ -525,7 +525,7 @@ export default function Task2Page() {
               <PenTool className={styles.stepHeaderIcon} />
               <div>
                 <h2>Planning (PRE Structure)</h2>
-                <p>Use a estrutura <strong>P</strong>oint → <strong>R</strong>eason → <strong>E</strong>xample para cada argumento.</p>
+                <p>Use the <strong>P</strong>oint → <strong>R</strong>eason → <strong>E</strong>xample structure for each argument.</p>
               </div>
               <TaskHelpPanel defaultTab="task2" />
             </div>

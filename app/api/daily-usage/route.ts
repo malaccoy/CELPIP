@@ -8,7 +8,8 @@ const prisma = new PrismaClient();
 const FREE_DAILY_LIMIT = 3;
 
 function todayStr() {
-  return new Date().toISOString().slice(0, 10); // "YYYY-MM-DD" UTC
+  // Use PST/PDT (America/Vancouver) so free limit resets at midnight Pacific time
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Vancouver' }); // "YYYY-MM-DD"
 }
 
 // GET — check usage

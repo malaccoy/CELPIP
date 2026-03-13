@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
 
     if (!email) {
       return NextResponse.json(
-        { error: 'Email é obrigatório' },
+        { error: 'Email is required' },
         { status: 400 }
       );
     }
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     if (!user) {
       return NextResponse.json({
         success: true,
-        message: 'Se o email existir, você receberá um link de recuperação.',
+        message: 'If this email exists, you will receive a recovery link.',
       });
     }
 
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: 'Se o email existir, você receberá um link de recuperação.',
+      message: 'If this email exists, you will receive a recovery link.',
     });
   } catch (error) {
     console.error('Forgot password error:', error);

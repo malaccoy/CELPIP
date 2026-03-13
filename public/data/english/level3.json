@@ -1,0 +1,5586 @@
+[
+  {
+    "number": 1,
+    "title": "Canada's Geography",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada is the second largest country in the world.",
+        "detail": "It covers an area of approximately 10 million square kilometers."
+      },
+      {
+        "fact": "Canada has the longest coastline in the world.",
+        "detail": "Its coastline stretches over 202,080 kilometers along the Pacific, Atlantic, and Arctic Oceans."
+      },
+      {
+        "fact": "Canada borders three oceans.",
+        "detail": "These are the Atlantic Ocean to the east, the Pacific Ocean to the west, and the Arctic Ocean to the north."
+      },
+      {
+        "fact": "Canada spans six time zones.",
+        "detail": "These time zones are Pacific, Mountain, Central, Eastern, Atlantic, and Newfoundland."
+      },
+      {
+        "fact": "The Rocky Mountains are a major mountain range in Canada.",
+        "detail": "They extend from British Columbia to New Mexico in the United States."
+      },
+      {
+        "fact": "The Great Lakes are located in Canada.",
+        "detail": "They include Lake Superior, Lake Huron, Lake Erie, Lake Ontario, and Lake Michigan, with four of them shared with the United States."
+      },
+      {
+        "fact": "The Canadian Shield is one of the largest geological continental shields in the world.",
+        "detail": "It covers more than half of Canada, extending from the Great Lakes to the Arctic Ocean."
+      },
+      {
+        "fact": "The Prairies are a significant agricultural region in Canada.",
+        "detail": "They include parts of Alberta, Saskatchewan, and Manitoba, known for wheat production."
+      },
+      {
+        "fact": "The Atlantic region of Canada includes four provinces.",
+        "detail": "These are Newfoundland and Labrador, Nova Scotia, New Brunswick, and Prince Edward Island."
+      },
+      {
+        "fact": "The Arctic region is characterized by its cold climate and unique ecosystems.",
+        "detail": "It includes the Northern territories and is home to Indigenous peoples and wildlife like polar bears."
+      },
+      {
+        "fact": "Ontario is the most populous province in Canada.",
+        "detail": "It is home to the capital city, Ottawa, and the largest city, Toronto."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the area of Canada?"
+        },
+        "options": [
+          "10 million km²",
+          "9 million km²",
+          "11 million km²",
+          "8 million km²"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada covers an area of approximately 10 million square kilometers."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many oceans does Canada border?"
+        },
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada borders three oceans: the Atlantic, Pacific, and Arctic."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which region is known for its significant agricultural production?"
+        },
+        "options": [
+          "The Arctic",
+          "The Prairies",
+          "The Atlantic",
+          "The Rockies"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Prairies are known for significant agricultural production, especially wheat."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the longest coastline in the world?"
+        },
+        "options": [
+          "Canada",
+          "Russia",
+          "Australia",
+          "United States"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada has the longest coastline in the world, stretching over 202,080 kilometers."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "How many time zones does Canada have?"
+        },
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada spans six time zones: Pacific, Mountain, Central, Eastern, Atlantic, and Newfoundland."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which province is home to the capital city of Canada?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "British Columbia",
+          "Alberta"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The capital city of Canada, Ottawa, is located in Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the Canadian Shield?"
+        },
+        "options": [
+          "A mountain range",
+          "A geological shield",
+          "A forested area",
+          "A coastal region"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Shield is one of the largest geological continental shields in the world."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which region includes Newfoundland and Labrador?"
+        },
+        "options": [
+          "The Prairies",
+          "The Atlantic",
+          "The Rockies",
+          "The Arctic"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Atlantic region includes Newfoundland and Labrador, along with three other provinces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is the primary feature of the Arctic region in Canada?"
+        },
+        "options": [
+          "Tropical climate",
+          "Cold climate and unique ecosystems",
+          "Desert landscapes",
+          "Mountain ranges"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Arctic region is characterized by a cold climate and unique ecosystems."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which mountain range extends from British Columbia to New Mexico?"
+        },
+        "options": [
+          "The Appalachian Mountains",
+          "The Rocky Mountains",
+          "The Himalayas",
+          "The Andes"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Rocky Mountains extend from British Columbia in Canada to New Mexico in the United States."
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Ontario",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Ontario is the most populous province in Canada.",
+        "detail": "As of 2021, Ontario has a population of over 14.7 million people, accounting for approximately 38% of Canada's total population."
+      },
+      {
+        "fact": "The capital city of Canada, Ottawa, is located in Ontario.",
+        "detail": "Ottawa, founded in 1826, became the capital of the Province of Canada in 1857 and remains the capital of Canada today."
+      },
+      {
+        "fact": "Toronto is the largest city in Canada.",
+        "detail": "Toronto, with a population of over 2.9 million, is known for its diversity and is a major economic hub."
+      },
+      {
+        "fact": "Niagara Falls is located in Ontario.",
+        "detail": "Niagara Falls is one of the most famous natural attractions in Canada, drawing millions of visitors annually."
+      },
+      {
+        "fact": "Ontario is a manufacturing hub.",
+        "detail": "Ontario is home to a significant portion of Canada's manufacturing industry, contributing over 50% of the country's total manufacturing output."
+      },
+      {
+        "fact": "Bay Street is known as the financial district of Toronto.",
+        "detail": "Bay Street is often compared to Wall Street in New York City and is the center of Canada's financial services."
+      },
+      {
+        "fact": "Ontario has a diverse population.",
+        "detail": "Ontario is one of the most multicultural provinces in Canada, with over 200 ethnic origins represented in its population."
+      },
+      {
+        "fact": "The Ontario government is based in Toronto.",
+        "detail": "The Legislative Assembly of Ontario, responsible for making laws in the province, is located at Queen's Park in Toronto."
+      },
+      {
+        "fact": "Ontario's provincial flower is the Trillium.",
+        "detail": "The White Trillium was designated as Ontario's floral emblem in 1937."
+      },
+      {
+        "fact": "Ontario has many national parks and protected areas.",
+        "detail": "This includes famous parks like Algonquin Provincial Park, established in 1893, which is one of the oldest provincial parks in Canada."
+      },
+      {
+        "fact": "The Ontario Science Centre is a popular educational attraction.",
+        "detail": "Opened in 1969, it features interactive exhibits and is dedicated to the promotion of science and technology."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital city of Canada?"
+        },
+        "options": [
+          "Ottawa",
+          "Toronto",
+          "Montreal",
+          "Vancouver"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Ottawa is the capital city of Canada, located in Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which city is the largest in Ontario?"
+        },
+        "options": [
+          "Ottawa",
+          "Toronto",
+          "Hamilton",
+          "Kitchener"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Toronto is the largest city in Ontario and Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In what year was Ottawa designated as the capital of the Province of Canada?"
+        },
+        "options": [
+          "1867",
+          "1857",
+          "1826",
+          "1900"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Ottawa became the capital of the Province of Canada in 1857."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the provincial flower of Ontario?"
+        },
+        "options": [
+          "Rose",
+          "Maple Leaf",
+          "Trillium",
+          "Lily"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The White Trillium was designated as Ontario's floral emblem in 1937."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is Bay Street known for?"
+        },
+        "options": [
+          "Cultural events",
+          "Financial district",
+          "Manufacturing",
+          "Tourism"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Bay Street is known as the financial district of Toronto, similar to Wall Street."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which famous natural attraction is located in Ontario?"
+        },
+        "options": [
+          "Banff",
+          "Niagara Falls",
+          "Rocky Mountains",
+          "Gatineau Park"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Niagara Falls is a famous natural attraction located in Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What percentage of Canada's manufacturing output does Ontario contribute?"
+        },
+        "options": [
+          "30%",
+          "50%",
+          "60%",
+          "40%"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Ontario contributes over 50% of Canada's total manufacturing output."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "When was Algonquin Provincial Park established?"
+        },
+        "options": [
+          "1893",
+          "1900",
+          "1920",
+          "1850"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Algonquin Provincial Park was established in 1893, making it one of the oldest provincial parks in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which of the following cities is NOT in Ontario?"
+        },
+        "options": [
+          "Toronto",
+          "Ottawa",
+          "Montreal",
+          "Hamilton"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Montreal is located in the province of Quebec, not Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the approximate population of Ontario as of 2021?"
+        },
+        "options": [
+          "10 million",
+          "12 million",
+          "14.7 million",
+          "16 million"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "As of 2021, Ontario has a population of over 14.7 million people."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Quebec",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Largest province by area",
+        "detail": "Quebec is the largest province in Canada, covering over 1.5 million square kilometers."
+      },
+      {
+        "fact": "Mainly French-speaking",
+        "detail": "Approximately 94% of Quebec's population speaks French as their first language."
+      },
+      {
+        "fact": "Quebec City is the capital",
+        "detail": "Quebec City, founded in 1608, is the capital of the province and one of North America's oldest cities."
+      },
+      {
+        "fact": "Montreal is the largest city",
+        "detail": "Montreal is the largest city in Quebec and the second-largest city in Canada, known for its vibrant arts scene and multicultural environment."
+      },
+      {
+        "fact": "Distinct society",
+        "detail": "Quebec is recognized as a distinct society within Canada, reflecting its unique culture, language, and legal system."
+      },
+      {
+        "fact": "Quiet Revolution",
+        "detail": "The Quiet Revolution was a period of intense social and political change in Quebec during the 1960s, leading to the secularization of society."
+      },
+      {
+        "fact": "Civil law system",
+        "detail": "Quebec operates under a civil law system, which is based on the French Napoleonic Code, differing from the common law system used in the rest of Canada."
+      },
+      {
+        "fact": "Maple syrup production",
+        "detail": "Quebec produces about 70% of the world's maple syrup, making it a significant contributor to the province's economy."
+      },
+      {
+        "fact": "Hydroelectric power",
+        "detail": "Hydroelectricity is a major source of energy in Quebec, with Hydro-Québec being one of the largest producers of hydroelectric power in the world."
+      },
+      {
+        "fact": "Bill 101",
+        "detail": "Passed in 1977, Bill 101, also known as the Charter of the French Language, aimed to promote and protect the French language in Quebec."
+      },
+      {
+        "fact": "Population",
+        "detail": "As of 2021, Quebec has a population of approximately 8.5 million people, making it the second-most populous province in Canada."
+      },
+      {
+        "fact": "Cultural festivals",
+        "detail": "Quebec is known for its numerous cultural festivals, including the Quebec Winter Carnival and the Montreal International Jazz Festival."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital city of Quebec?"
+        },
+        "options": [
+          "Quebec City",
+          "Montreal",
+          "Ottawa",
+          "Toronto"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Quebec City is the capital of Quebec, known for its historical significance."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which language is predominantly spoken in Quebec?"
+        },
+        "options": [
+          "English",
+          "French",
+          "Spanish",
+          "Italian"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Approximately 94% of Quebec's population speaks French as their first language."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In what year was Bill 101 passed?"
+        },
+        "options": [
+          "1965",
+          "1977",
+          "1982",
+          "1990"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Bill 101, also known as the Charter of the French Language, was passed in 1977."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What percentage of the world's maple syrup is produced in Quebec?"
+        },
+        "options": [
+          "50%",
+          "60%",
+          "70%",
+          "80%"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Quebec produces about 70% of the world's maple syrup."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What major social change occurred in Quebec during the 1960s?"
+        },
+        "options": [
+          "The Quiet Revolution",
+          "The Great Depression",
+          "The Industrial Revolution",
+          "The Digital Revolution"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Quiet Revolution was a period of intense social and political change in Quebec during the 1960s."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which city is the largest in Quebec?"
+        },
+        "options": [
+          "Quebec City",
+          "Montreal",
+          "Gatineau",
+          "Laval"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Montreal is the largest city in Quebec and the second-largest city in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What type of legal system does Quebec operate under?"
+        },
+        "options": [
+          "Common law",
+          "Civil law",
+          "Sharia law",
+          "Criminal law"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Quebec operates under a civil law system based on the French Napoleonic Code."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is Hydro-Québec known for?"
+        },
+        "options": [
+          "Oil production",
+          "Hydroelectric power",
+          "Natural gas",
+          "Coal mining"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Hydro-Québec is known for being one of the largest producers of hydroelectric power in the world."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is the approximate population of Quebec as of 2021?"
+        },
+        "options": [
+          "6 million",
+          "7 million",
+          "8.5 million",
+          "10 million"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "As of 2021, Quebec has a population of approximately 8.5 million people."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which festival is famous in Quebec for its winter celebrations?"
+        },
+        "options": [
+          "Montreal Jazz Festival",
+          "Quebec Winter Carnival",
+          "Toronto Film Festival",
+          "Ottawa Tulip Festival"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Quebec Winter Carnival is one of the most famous winter festivals in Quebec."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "British Columbia",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "British Columbia is a Pacific province.",
+        "detail": "It is located on the west coast of Canada, bordered by the Pacific Ocean to the west."
+      },
+      {
+        "fact": "Victoria is the capital of British Columbia.",
+        "detail": "Victoria is situated on Vancouver Island and is known for its historic architecture and vibrant arts scene."
+      },
+      {
+        "fact": "Vancouver is the largest city in British Columbia.",
+        "detail": "Vancouver is a major cultural and economic center, known for its diverse population and stunning natural scenery."
+      },
+      {
+        "fact": "British Columbia is home to the Coastal Mountain Range.",
+        "detail": "This mountain range includes notable peaks such as Mount Waddington and is known for its breathtaking landscapes."
+      },
+      {
+        "fact": "The film industry in British Columbia is significant.",
+        "detail": "Vancouver is often referred to as 'Hollywood North' due to its popularity as a filming location for movies and television shows."
+      },
+      {
+        "fact": "The Port of Vancouver is the largest port in Canada.",
+        "detail": "It serves as a major gateway for trade and commerce, handling millions of tonnes of cargo each year."
+      },
+      {
+        "fact": "Salmon is a key species in British Columbia's ecosystem.",
+        "detail": "The province is known for its salmon runs, which are crucial for both the environment and the local economy."
+      },
+      {
+        "fact": "British Columbia has a rich First Nations culture.",
+        "detail": "There are over 200 distinct First Nations in the province, each with its own unique traditions and languages."
+      },
+      {
+        "fact": "The Great Bear Rainforest is located in British Columbia.",
+        "detail": "It is one of the largest temperate rainforests in the world and is home to diverse wildlife, including the rare Kermode or 'spirit' bear."
+      },
+      {
+        "fact": "British Columbia became a province on July 20, 1871.",
+        "detail": "It was the sixth province to join the Canadian Confederation."
+      },
+      {
+        "fact": "The Okanagan Valley is famous for its wineries.",
+        "detail": "This region is known for its warm climate and fertile soil, making it ideal for grape growing."
+      },
+      {
+        "fact": "British Columbia has a diverse geography.",
+        "detail": "From coastal beaches to mountainous terrain, it offers a variety of landscapes and outdoor activities."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital city of British Columbia?"
+        },
+        "options": [
+          "Victoria",
+          "Vancouver",
+          "Kelowna",
+          "Nanaimo"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Victoria is the capital of British Columbia, located on Vancouver Island."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "In what year did British Columbia join the Canadian Confederation?"
+        },
+        "options": [
+          "1867",
+          "1871",
+          "1905",
+          "1952"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "British Columbia became a province on July 20, 1871."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the largest city in British Columbia?"
+        },
+        "options": [
+          "Victoria",
+          "Vancouver",
+          "Burnaby",
+          "Surrey"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Vancouver is the largest city in British Columbia and a major economic center."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which mountain range is located in British Columbia?"
+        },
+        "options": [
+          "Rocky Mountains",
+          "Appalachian Mountains",
+          "Coastal Mountain Range",
+          "Sierra Nevada"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Coastal Mountain Range is a significant geographical feature of British Columbia."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is British Columbia known for in the film industry?"
+        },
+        "options": [
+          "Hollywood North",
+          "Broadway",
+          "Bollywood",
+          "Cannes"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Vancouver is often referred to as 'Hollywood North' due to its popularity as a filming location."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the significance of the Port of Vancouver?"
+        },
+        "options": [
+          "Small fishing port",
+          "Largest port in Canada",
+          "Historical site",
+          "Tourist attraction"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Port of Vancouver is the largest port in Canada, crucial for trade and commerce."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which species is crucial to British Columbia's ecosystem?"
+        },
+        "options": [
+          "Trout",
+          "Halibut",
+          "Salmon",
+          "Bass"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Salmon is a key species in British Columbia's ecosystem and economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "How many distinct First Nations are in British Columbia?"
+        },
+        "options": [
+          "Over 100",
+          "Over 200",
+          "Over 300",
+          "Over 400"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "There are over 200 distinct First Nations in British Columbia, each with unique cultures."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is the Great Bear Rainforest known for?"
+        },
+        "options": [
+          "Largest desert",
+          "Largest temperate rainforest",
+          "Highest mountain",
+          "Deepest lake"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Great Bear Rainforest is one of the largest temperate rainforests in the world."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the Okanagan Valley famous for?"
+        },
+        "options": [
+          "Ski resorts",
+          "Wineries",
+          "Oil fields",
+          "Historical sites"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Okanagan Valley is known for its wineries and warm climate, ideal for grape growing."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Alberta",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Edmonton is the capital of Alberta.",
+        "detail": "Edmonton was designated the capital of Alberta in 1905 when the province was created."
+      },
+      {
+        "fact": "Calgary is famous for the Calgary Stampede.",
+        "detail": "The Calgary Stampede, held annually in July, is known as 'The Greatest Outdoor Show on Earth' and began in 1912."
+      },
+      {
+        "fact": "Alberta is home to vast oil sands.",
+        "detail": "The Athabasca oil sands are one of the largest reserves of crude oil in the world, contributing significantly to Canada's economy."
+      },
+      {
+        "fact": "Alberta is a leading producer of beef cattle.",
+        "detail": "Alberta is recognized as Canada's largest beef-producing province, known for its high-quality cattle ranching."
+      },
+      {
+        "fact": "The Rocky Mountains run through Alberta.",
+        "detail": "The Canadian Rockies are a major mountain range that stretches across Alberta and British Columbia, known for their stunning landscapes."
+      },
+      {
+        "fact": "Banff National Park is located in Alberta.",
+        "detail": "Established in 1885, Banff is Canada's first national park and is famous for its breathtaking scenery and outdoor activities."
+      },
+      {
+        "fact": "Jasper National Park is also in Alberta.",
+        "detail": "Jasper National Park, established in 1907, is the largest national park in the Canadian Rockies and is a UNESCO World Heritage Site."
+      },
+      {
+        "fact": "Alberta is the richest province per capita in Canada.",
+        "detail": "Alberta has one of the highest per capita incomes in Canada, largely due to its natural resources."
+      },
+      {
+        "fact": "Western alienation refers to the feelings of disconnection in Western Canada.",
+        "detail": "Many residents of Alberta and other Western provinces have expressed feelings of alienation from the federal government, particularly regarding resource management."
+      },
+      {
+        "fact": "Alberta's population is diverse.",
+        "detail": "As of the 2021 Census, Alberta's population was over 4.4 million, with significant immigrant communities contributing to its diversity."
+      },
+      {
+        "fact": "The province has a strong agricultural sector.",
+        "detail": "Alberta's economy is supported by agriculture, with crops like canola and barley being major contributors."
+      },
+      {
+        "fact": "The TransCanada Highway runs through Alberta.",
+        "detail": "The TransCanada Highway, which is one of the longest national highways in the world, connects Alberta to other provinces."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital city of Alberta?"
+        },
+        "options": [
+          "Edmonton",
+          "Calgary",
+          "Fort McMurray",
+          "Lethbridge"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Edmonton was designated as the capital of Alberta when the province was created in 1905."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "In what year did the Calgary Stampede first take place?"
+        },
+        "options": [
+          "1905",
+          "1912",
+          "1920",
+          "1930"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Calgary Stampede began in 1912 and is known as 'The Greatest Outdoor Show on Earth.'"
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which national park is Canada's first national park?"
+        },
+        "options": [
+          "Jasper National Park",
+          "Banff National Park",
+          "Yoho National Park",
+          "Kootenay National Park"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Banff National Park, established in 1885, is Canada's first national park."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is Alberta's status in terms of beef production?"
+        },
+        "options": [
+          "Largest producer in Canada",
+          "Smallest producer in Canada",
+          "Equal producer with Ontario",
+          "Not known for beef production"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Alberta is recognized as the largest beef-producing province in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which mountain range runs through Alberta?"
+        },
+        "options": [
+          "Appalachian Mountains",
+          "Rocky Mountains",
+          "Sierra Nevada",
+          "Andes Mountains"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Rocky Mountains are a significant feature of Alberta's geography."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the term for feelings of disconnection in Western Canada?"
+        },
+        "options": [
+          "Western alienation",
+          "Eastern isolation",
+          "Northern detachment",
+          "Southern separation"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Western alienation refers to the feelings of disconnection in Western Canada, particularly in Alberta."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What year was Jasper National Park established?"
+        },
+        "options": [
+          "1885",
+          "1907",
+          "1912",
+          "1920"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Jasper National Park was established in 1907 and is a UNESCO World Heritage Site."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is Alberta's population as of the 2021 Census?"
+        },
+        "options": [
+          "Over 3 million",
+          "Over 4 million",
+          "Over 4.4 million",
+          "Over 5 million"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "As of the 2021 Census, Alberta's population was over 4.4 million."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which resource significantly contributes to Alberta's economy?"
+        },
+        "options": [
+          "Coal",
+          "Oil sands",
+          "Natural gas",
+          "Timber"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Alberta's economy is significantly supported by its vast oil sands, particularly the Athabasca oil sands."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which crop is NOT a major contributor to Alberta's agriculture?"
+        },
+        "options": [
+          "Canola",
+          "Barley",
+          "Corn",
+          "Wheat"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "While canola, barley, and wheat are significant crops in Alberta, corn is not a major contributor."
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "The Prairie Provinces",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Manitoba's capital city is Winnipeg.",
+        "detail": "Winnipeg is known for its cultural diversity and is often referred to as the 'Gateway to the West'."
+      },
+      {
+        "fact": "Saskatchewan's capital city is Regina.",
+        "detail": "Regina is home to the Royal Saskatchewan Museum and the Saskatchewan Legislative Building."
+      },
+      {
+        "fact": "The Prairie Provinces are known as the 'breadbasket of Canada'.",
+        "detail": "This nickname is due to their significant agricultural output, particularly in grains."
+      },
+      {
+        "fact": "Wheat and canola are the primary crops grown in the Prairie Provinces.",
+        "detail": "Canada is one of the largest exporters of wheat globally, contributing significantly to the economy."
+      },
+      {
+        "fact": "Potash is a major resource in Saskatchewan.",
+        "detail": "Saskatchewan is the world's largest producer of potash, which is used in fertilizers."
+      },
+      {
+        "fact": "The Prairie Provinces experience cold winters.",
+        "detail": "Temperatures can drop significantly, often reaching -30 degrees Celsius or lower."
+      },
+      {
+        "fact": "Indigenous populations have a rich history in the Prairie Provinces.",
+        "detail": "Many First Nations and Métis communities are located in this region, with a vibrant cultural heritage."
+      },
+      {
+        "fact": "Louis Riel is a significant historical figure associated with Manitoba.",
+        "detail": "He was a leader of the Métis people and played a key role in the Red River and North-West Rebellions."
+      },
+      {
+        "fact": "The Red River Rebellion occurred in 1869-1870.",
+        "detail": "This was a pivotal event in Canadian history that led to the creation of Manitoba."
+      },
+      {
+        "fact": "The North-West Rebellion took place in 1885.",
+        "detail": "This uprising was led by Louis Riel and was a response to the grievances of the Métis people."
+      },
+      {
+        "fact": "The Prairie Provinces are characterized by vast open spaces and fertile land.",
+        "detail": "These regions support a significant amount of Canada's agriculture and ranching industries."
+      },
+      {
+        "fact": "The population of the Prairie Provinces is diverse, including many ethnic groups.",
+        "detail": "Immigrants from various countries have settled in these provinces, contributing to their cultural mosaic."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital of Saskatchewan?"
+        },
+        "options": [
+          "Regina",
+          "Winnipeg",
+          "Edmonton",
+          "Calgary"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Regina is the capital city of Saskatchewan, as mentioned in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which crop is NOT primarily grown in the Prairie Provinces?"
+        },
+        "options": [
+          "Wheat",
+          "Canola",
+          "Rice",
+          "Barley"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Rice is not primarily grown in the Prairie Provinces; wheat and canola are major crops."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In what year did the Red River Rebellion occur?"
+        },
+        "options": [
+          "1867",
+          "1869",
+          "1871",
+          "1875"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Red River Rebellion took place in 1869-1870, a key event in Canadian history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Louis Riel is known for his role in which rebellion?"
+        },
+        "options": [
+          "North-West Rebellion",
+          "War of 1812",
+          "Red River Rebellion",
+          "Both A and C"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "Louis Riel was a leader in both the Red River and North-West Rebellions."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the primary resource extracted in Saskatchewan?"
+        },
+        "options": [
+          "Oil",
+          "Potash",
+          "Coal",
+          "Natural Gas"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Saskatchewan is the world's largest producer of potash, a key agricultural resource."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which of the following describes the winters in the Prairie Provinces?"
+        },
+        "options": [
+          "Mild and rainy",
+          "Cold and snowy",
+          "Warm and dry",
+          "Tropical"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Prairie Provinces experience cold winters, often with significant snowfall."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What nickname is given to the Prairie Provinces due to their agricultural output?"
+        },
+        "options": [
+          "Breadbasket of Canada",
+          "Garden of Canada",
+          "Heartland of Canada",
+          "Golden Plains"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Prairie Provinces are referred to as the 'breadbasket of Canada' due to their grain production."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which city is known as the capital of Manitoba?"
+        },
+        "options": [
+          "Winnipeg",
+          "Regina",
+          "Calgary",
+          "Saskatoon"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Winnipeg is the capital city of Manitoba, known for its cultural significance."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is a significant characteristic of the Prairie Provinces' population?"
+        },
+        "options": [
+          "Homogeneous",
+          "Predominantly Indigenous",
+          "Culturally diverse",
+          "Urban-centric"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The population of the Prairie Provinces is culturally diverse, with many ethnic groups represented."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the significance of the year 1885 in Canadian history?"
+        },
+        "options": [
+          "Confederation",
+          "North-West Rebellion",
+          "Completion of the Transcontinental Railway",
+          "Establishment of the Canadian Pacific Railway"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The North-West Rebellion, led by Louis Riel, occurred in 1885, marking a pivotal moment in Canadian history."
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Atlantic Canada",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Nova Scotia's capital city is Halifax.",
+        "detail": "Halifax is known for its historic waterfront and is one of the largest natural harbors in the world."
+      },
+      {
+        "fact": "New Brunswick is Canada's only officially bilingual province.",
+        "detail": "English and French are both recognized as official languages, reflecting the province's diverse culture."
+      },
+      {
+        "fact": "Charlottetown, the capital of Prince Edward Island, is known as the birthplace of Confederation.",
+        "detail": "The Charlottetown Conference in 1864 led to the formation of Canada as a country in 1867."
+      },
+      {
+        "fact": "St. John's is the capital of Newfoundland and Labrador.",
+        "detail": "It is one of the oldest cities in North America, established in 1583."
+      },
+      {
+        "fact": "The fishing industry is a significant part of Atlantic Canada's economy.",
+        "detail": "Fisheries have historically been a major industry, particularly for cod, lobster, and crab."
+      },
+      {
+        "fact": "Shipbuilding is a key industry in Nova Scotia.",
+        "detail": "The province has a rich shipbuilding history, particularly in Halifax and Lunenburg."
+      },
+      {
+        "fact": "New Brunswick's Bay of Fundy has the highest tides in the world.",
+        "detail": "The tides can rise and fall by as much as 16 meters (52 feet) and are a popular tourist attraction."
+      },
+      {
+        "fact": "The Acadian culture is an important part of New Brunswick's heritage.",
+        "detail": "Acadians are descendants of French colonists who settled in the region in the 17th century."
+      },
+      {
+        "fact": "The Confederation Bridge connects Prince Edward Island to New Brunswick.",
+        "detail": "Opened in 1997, it is 12.9 kilometers (8 miles) long and is a vital transportation link."
+      },
+      {
+        "fact": "The Atlantic Canada region includes four provinces: Nova Scotia, New Brunswick, Prince Edward Island, and Newfoundland and Labrador.",
+        "detail": "These provinces share a rich maritime culture and history."
+      },
+      {
+        "fact": "The first European settlement in Canada was established in Newfoundland.",
+        "detail": "John Cabot arrived in 1497, claiming land for England."
+      },
+      {
+        "fact": "The region is known for its vibrant festivals, including the Halifax International Busker Festival.",
+        "detail": "This festival showcases street performers from around the world and attracts many visitors."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital of Nova Scotia?"
+        },
+        "options": [
+          "Halifax",
+          "Fredericton",
+          "Charlottetown",
+          "St. John's"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Halifax is the capital of Nova Scotia, known for its rich maritime history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which province is Canada's only officially bilingual province?"
+        },
+        "options": [
+          "Prince Edward Island",
+          "Newfoundland and Labrador",
+          "New Brunswick",
+          "Nova Scotia"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "New Brunswick is the only officially bilingual province in Canada, recognizing both English and French."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In which year did the Charlottetown Conference take place?"
+        },
+        "options": [
+          "1867",
+          "1864",
+          "1871",
+          "1850"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Charlottetown Conference in 1864 was crucial in leading to the Confederation of Canada in 1867."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the capital of Newfoundland and Labrador?"
+        },
+        "options": [
+          "Halifax",
+          "Fredericton",
+          "St. John's",
+          "Charlottetown"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "St. John's is the capital and is one of the oldest cities in North America."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which province has the highest tides in the world?"
+        },
+        "options": [
+          "Nova Scotia",
+          "New Brunswick",
+          "Prince Edward Island",
+          "Newfoundland and Labrador"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Bay of Fundy in New Brunswick has the highest tides in the world, attracting tourists."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What connects Prince Edward Island to New Brunswick?"
+        },
+        "options": [
+          "A ferry",
+          "A tunnel",
+          "The Confederation Bridge",
+          "A road"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Confederation Bridge, opened in 1997, connects Prince Edward Island to New Brunswick."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What significant industry is important in Nova Scotia?"
+        },
+        "options": [
+          "Mining",
+          "Agriculture",
+          "Shipbuilding",
+          "Tourism"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Shipbuilding has a long history in Nova Scotia, contributing significantly to the economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Who was the first European to claim land in Newfoundland?"
+        },
+        "options": [
+          "Jacques Cartier",
+          "John Cabot",
+          "Samuel de Champlain",
+          "Henry Hudson"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "John Cabot claimed land in Newfoundland for England in 1497, marking the beginning of European settlement."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which culture is significant in New Brunswick?"
+        },
+        "options": [
+          "Indigenous",
+          "Acadian",
+          "British",
+          "Irish"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Acadian culture, with roots dating back to the 17th century, is significant in New Brunswick."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is a popular festival in Halifax?"
+        },
+        "options": [
+          "Toronto International Film Festival",
+          "Halifax International Busker Festival",
+          "Montreal Jazz Festival",
+          "Vancouver Folk Music Festival"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Halifax International Busker Festival showcases street performers and attracts many visitors."
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "The Northern Territories",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Yukon",
+        "detail": "Yukon is known for its capital, Whitehorse, which is the largest city in the territory and was founded during the Klondike Gold Rush in the late 1890s."
+      },
+      {
+        "fact": "Klondike Gold Rush",
+        "detail": "The Klondike Gold Rush began in 1896, leading to a massive influx of prospectors and settlers to Yukon."
+      },
+      {
+        "fact": "Northwest Territories",
+        "detail": "The Northwest Territories (NWT) is home to Yellowknife, the capital, which is known for its diamond mining industry."
+      },
+      {
+        "fact": "Diamonds in NWT",
+        "detail": "The discovery of diamonds in the NWT in the 1990s led to the establishment of several diamond mines, making Canada one of the world's top diamond producers."
+      },
+      {
+        "fact": "Nunavut",
+        "detail": "Nunavut was officially separated from the Northwest Territories on April 1, 1999, making it Canada’s newest territory."
+      },
+      {
+        "fact": "Iqaluit",
+        "detail": "Iqaluit is the capital of Nunavut and serves as a cultural and administrative center for the Inuit people."
+      },
+      {
+        "fact": "Inuit Homeland",
+        "detail": "Nunavut is primarily an Inuit homeland, where the majority of the population identifies as Inuit."
+      },
+      {
+        "fact": "Permafrost",
+        "detail": "Permafrost is a layer of permanently frozen soil found in the Northern Territories, affecting construction and infrastructure."
+      },
+      {
+        "fact": "Midnight Sun",
+        "detail": "The phenomenon of the midnight sun occurs in the Northern Territories during summer months, where the sun remains visible at midnight."
+      },
+      {
+        "fact": "Aurora Borealis",
+        "detail": "The Northern Territories are renowned for the aurora borealis, or northern lights, visible in the night sky during winter months."
+      },
+      {
+        "fact": "Population",
+        "detail": "As of the 2021 census, the population of Nunavut was approximately 38,000, making it the least populated territory in Canada."
+      },
+      {
+        "fact": "Official Languages",
+        "detail": "Nunavut recognizes Inuktitut, Inuinnaqtun, English, and French as official languages, reflecting its diverse cultural heritage."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was Nunavut officially separated from the Northwest Territories?"
+        },
+        "options": [
+          "1999",
+          "2000",
+          "1997",
+          "1998"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Nunavut was officially separated from the Northwest Territories on April 1, 1999."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which city is the capital of Yukon?"
+        },
+        "options": [
+          "Whitehorse",
+          "Yellowknife",
+          "Iqaluit",
+          "Hay River"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Whitehorse is the capital of Yukon and the largest city in the territory."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What significant event began in 1896 that impacted Yukon?"
+        },
+        "options": [
+          "Klondike Gold Rush",
+          "Formation of Nunavut",
+          "Discovery of Diamonds",
+          "Midnight Sun"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Klondike Gold Rush began in 1896, leading to a massive influx of prospectors to Yukon."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which of the following cities is known for diamond mining?"
+        },
+        "options": [
+          "Iqaluit",
+          "Whitehorse",
+          "Yellowknife",
+          "Hay River"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Yellowknife is known for its diamond mining industry in the Northwest Territories."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the main cultural group in Nunavut?"
+        },
+        "options": [
+          "Métis",
+          "Inuit",
+          "First Nations",
+          "European settlers"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Nunavut is primarily an Inuit homeland, where the majority of the population identifies as Inuit."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What natural phenomenon can be observed in the Northern Territories during summer?"
+        },
+        "options": [
+          "Aurora Borealis",
+          "Midnight Sun",
+          "Permafrost",
+          "Glacial Melting"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The midnight sun occurs in the Northern Territories during summer months, where the sun remains visible at midnight."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which territory is known for its permafrost?"
+        },
+        "options": [
+          "Yukon",
+          "Northwest Territories",
+          "Nunavut",
+          "All of the above"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "Permafrost is found in all three Northern Territories: Yukon, Northwest Territories, and Nunavut."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the population of Nunavut as of the 2021 census?"
+        },
+        "options": [
+          "38,000",
+          "50,000",
+          "25,000",
+          "40,000"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "As of the 2021 census, the population of Nunavut was approximately 38,000."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is one of the official languages of Nunavut?"
+        },
+        "options": [
+          "Spanish",
+          "Inuktitut",
+          "German",
+          "Mandarin"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Inuktitut is one of the official languages of Nunavut, alongside English, French, and Inuinnaqtun."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the capital of Nunavut?"
+        },
+        "options": [
+          "Whitehorse",
+          "Yellowknife",
+          "Iqaluit",
+          "Hay River"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Iqaluit is the capital of Nunavut and serves as a cultural and administrative center for the Inuit people."
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "title": "All 13 Capitals",
+    "situation": "Regions — Canadian Citizenship Test",
+    "grammarFocus": "Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Ottawa is the capital of Canada.",
+        "detail": "Ottawa was chosen as the capital in 1857 by Queen Victoria."
+      },
+      {
+        "fact": "Toronto is the capital of Ontario.",
+        "detail": "Toronto is Canada's largest city and was incorporated in 1834."
+      },
+      {
+        "fact": "Quebec City is the capital of Quebec.",
+        "detail": "Quebec City is one of the oldest cities in North America, founded in 1608."
+      },
+      {
+        "fact": "Victoria is the capital of British Columbia.",
+        "detail": "Victoria was established as the capital in 1868 and is known for its historic architecture."
+      },
+      {
+        "fact": "Edmonton is the capital of Alberta.",
+        "detail": "Edmonton became the capital of Alberta in 1905 when the province was established."
+      },
+      {
+        "fact": "Winnipeg is the capital of Manitoba.",
+        "detail": "Winnipeg was designated the capital of Manitoba in 1870 and is known as the 'Gateway to the West'."
+      },
+      {
+        "fact": "Regina is the capital of Saskatchewan.",
+        "detail": "Regina became the capital of Saskatchewan in 1905, and it is home to the Royal Saskatchewan Museum."
+      },
+      {
+        "fact": "Halifax is the capital of Nova Scotia.",
+        "detail": "Halifax has been the capital since 1749 and has a rich maritime history."
+      },
+      {
+        "fact": "Fredericton is the capital of New Brunswick.",
+        "detail": "Fredericton was designated as the capital in 1785 and is known for its vibrant arts community."
+      },
+      {
+        "fact": "Charlottetown is the capital of Prince Edward Island.",
+        "detail": "Charlottetown is known as the 'Birthplace of Confederation' due to the 1864 Charlottetown Conference."
+      },
+      {
+        "fact": "St. John's is the capital of Newfoundland and Labrador.",
+        "detail": "St. John's is one of the oldest cities in North America, with European settlement dating back to 1497."
+      },
+      {
+        "fact": "Whitehorse is the capital of Yukon.",
+        "detail": "Whitehorse became the capital of Yukon in 1953 and is known for its outdoor recreational activities."
+      },
+      {
+        "fact": "Yellowknife is the capital of Northwest Territories.",
+        "detail": "Yellowknife was designated as the capital in 1967, and it is located on the northern shore of Great Slave Lake."
+      },
+      {
+        "fact": "Iqaluit is the capital of Nunavut.",
+        "detail": "Iqaluit became the capital of Nunavut in 1999, when the territory was separated from the Northwest Territories."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was Ottawa chosen as the capital of Canada?"
+        },
+        "options": [
+          "1857",
+          "1867",
+          "1870",
+          "1880"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Ottawa was chosen as the capital in 1857 by Queen Victoria."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which city is the capital of Nova Scotia?"
+        },
+        "options": [
+          "Halifax",
+          "Sydney",
+          "Dartmouth",
+          "Truro"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Halifax has been the capital of Nova Scotia since 1749."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In what year did Iqaluit become the capital of Nunavut?"
+        },
+        "options": [
+          "1999",
+          "2000",
+          "2001",
+          "2002"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Iqaluit became the capital of Nunavut in 1999."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the capital of Prince Edward Island?"
+        },
+        "options": [
+          "Charlottetown",
+          "Summerside",
+          "Montague",
+          "West Royalty"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Charlottetown is the capital of Prince Edward Island and known as the 'Birthplace of Confederation.'"
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which city is the capital of Alberta?"
+        },
+        "options": [
+          "Calgary",
+          "Edmonton",
+          "Fort McMurray",
+          "Lethbridge"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Edmonton became the capital of Alberta in 1905."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What year was Regina designated as the capital of Saskatchewan?"
+        },
+        "options": [
+          "1901",
+          "1905",
+          "1910",
+          "1920"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Regina became the capital of Saskatchewan in 1905."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which city is the capital of the Northwest Territories?"
+        },
+        "options": [
+          "Yellowknife",
+          "Hay River",
+          "Inuvik",
+          "Fort Smith"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Yellowknife was designated as the capital of Northwest Territories in 1967."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the capital of British Columbia?"
+        },
+        "options": [
+          "Vancouver",
+          "Victoria",
+          "Burnaby",
+          "Richmond"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Victoria is the capital of British Columbia, established in 1868."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What year did Winnipeg become the capital of Manitoba?"
+        },
+        "options": [
+          "1870",
+          "1875",
+          "1880",
+          "1890"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Winnipeg was designated the capital of Manitoba in 1870."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which city is the capital of Newfoundland and Labrador?"
+        },
+        "options": [
+          "St. John's",
+          "Corner Brook",
+          "Gander",
+          "Mount Pearl"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "St. John's is the capital of Newfoundland and Labrador, with European settlement dating back to 1497."
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Canada's Natural Resources",
+    "situation": "Economy — Canadian Citizenship Test",
+    "grammarFocus": "Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada is the fourth largest producer of oil in the world.",
+        "detail": "Alberta's oil sands are a significant contributor to Canada's oil production, with the first commercial production starting in 1967."
+      },
+      {
+        "fact": "Canada has the world's largest reserves of potash.",
+        "detail": "Saskatchewan is home to about 50% of the world's potash reserves, essential for fertilizer production."
+      },
+      {
+        "fact": "British Columbia and Ontario have vast forest resources.",
+        "detail": "Forests cover about 38% of Canada's land area, contributing significantly to the lumber industry."
+      },
+      {
+        "fact": "Canada is a leading producer of minerals.",
+        "detail": "The country ranks first in the production of nickel and is also a major producer of diamonds and uranium."
+      },
+      {
+        "fact": "Hydroelectric power accounts for approximately 60% of Canada's electricity generation.",
+        "detail": "Quebec is the largest producer of hydroelectricity in Canada, with major facilities like the La Grande complex."
+      },
+      {
+        "fact": "Canada's fisheries are vital to the economy.",
+        "detail": "The Atlantic and Pacific coasts provide rich fishing grounds, with species like cod, salmon, and lobster being prominent."
+      },
+      {
+        "fact": "The Canadian mining industry is one of the largest in the world.",
+        "detail": "In 2020, the mining sector contributed approximately CAD 105 billion to Canada's GDP."
+      },
+      {
+        "fact": "The oil and gas sector is a major economic driver in Alberta.",
+        "detail": "As of 2021, the oil and gas extraction industry accounted for about 20% of Alberta's GDP."
+      },
+      {
+        "fact": "Canada's mineral exports reached CAD 103 billion in 2021.",
+        "detail": "Mineral exports are vital for Canada's trade balance, with gold, copper, and iron ore being key commodities."
+      },
+      {
+        "fact": "The fishing industry employs thousands of Canadians.",
+        "detail": "The fishing and seafood sector is particularly important in provinces like Newfoundland and Labrador."
+      },
+      {
+        "fact": "Canada's forests are managed for sustainable use.",
+        "detail": "The country has implemented practices to ensure that forestry remains sustainable while supporting local economies."
+      },
+      {
+        "fact": "The mining industry is heavily regulated in Canada.",
+        "detail": "Environmental assessments are mandatory for mining projects to minimize ecological impact."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Which province is the largest producer of potash in Canada?"
+        },
+        "options": [
+          "Saskatchewan",
+          "Alberta",
+          "Ontario",
+          "British Columbia"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Saskatchewan is home to about 50% of the world's potash reserves, making it the largest producer in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What percentage of Canada's electricity generation comes from hydroelectric power?"
+        },
+        "options": [
+          "40%",
+          "50%",
+          "60%",
+          "70%"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Hydroelectric power accounts for approximately 60% of Canada's electricity generation."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "In what year did commercial oil production begin in Alberta?"
+        },
+        "options": [
+          "1960",
+          "1965",
+          "1967",
+          "1970"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Commercial oil production in Alberta began in 1967, marking a significant development in the province's economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which province is the largest producer of hydroelectric power in Canada?"
+        },
+        "options": [
+          "Ontario",
+          "British Columbia",
+          "Quebec",
+          "Alberta"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Quebec is the largest producer of hydroelectricity in Canada, with major facilities like the La Grande complex."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the main fishery product in Atlantic Canada?"
+        },
+        "options": [
+          "Salmon",
+          "Lobster",
+          "Cod",
+          "Tuna"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Lobster is a key fishery product in Atlantic Canada, contributing significantly to the local economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What mineral does Canada rank first in the production of?"
+        },
+        "options": [
+          "Gold",
+          "Nickel",
+          "Copper",
+          "Uranium"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada ranks first in the production of nickel, making it a significant player in the global market."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What was the contribution of the mining sector to Canada's GDP in 2020?"
+        },
+        "options": [
+          "CAD 85 billion",
+          "CAD 95 billion",
+          "CAD 105 billion",
+          "CAD 115 billion"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "In 2020, the mining sector contributed approximately CAD 105 billion to Canada's GDP."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which forest management practice is emphasized in Canada?"
+        },
+        "options": [
+          "Clear-cutting",
+          "Sustainable forestry",
+          "Deforestation",
+          "Urban development"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada emphasizes sustainable forestry practices to ensure that forest resources are managed responsibly."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What percentage of Canada's land area is covered by forests?"
+        },
+        "options": [
+          "28%",
+          "38%",
+          "48%",
+          "58%"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Forests cover about 38% of Canada's land area, playing a crucial role in the economy and environment."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the primary source of electricity in Quebec?"
+        },
+        "options": [
+          "Natural gas",
+          "Coal",
+          "Nuclear",
+          "Hydroelectric power"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "Hydroelectric power is the primary source of electricity in Quebec, making it a leader in renewable energy."
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Key Industries",
+    "situation": "Economy — Canadian Citizenship Test",
+    "grammarFocus": "Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Manufacturing is a key industry in Canada.",
+        "detail": "Manufacturing accounts for approximately 10% of Canada's GDP and is concentrated in Ontario and Quebec."
+      },
+      {
+        "fact": "Ontario is the largest manufacturing province.",
+        "detail": "In 2021, Ontario produced 50% of Canada's total manufacturing output."
+      },
+      {
+        "fact": "Quebec is known for its aerospace manufacturing.",
+        "detail": "Quebec is home to Bombardier, a major player in the aerospace industry."
+      },
+      {
+        "fact": "The technology sector is thriving in Canada.",
+        "detail": "Major tech hubs include Ottawa, Waterloo, Toronto, and Vancouver, with significant contributions to the economy."
+      },
+      {
+        "fact": "Ottawa is known as a center for technology and innovation.",
+        "detail": "The city has a strong presence of tech firms and is often referred to as 'Silicon Valley North'."
+      },
+      {
+        "fact": "Agriculture is a significant industry in the Prairie provinces.",
+        "detail": "The Prairies produce wheat, canola, and barley, contributing to Canada's reputation as a leading agricultural exporter."
+      },
+      {
+        "fact": "Canada is one of the world's largest mining countries.",
+        "detail": "The mining industry is concentrated in British Columbia, Ontario, and Quebec, producing minerals like gold, nickel, and copper."
+      },
+      {
+        "fact": "Forestry is a vital industry in Canada.",
+        "detail": "British Columbia and Quebec are the largest producers of timber, with forestry contributing significantly to the economy."
+      },
+      {
+        "fact": "The energy sector includes oil, gas, and renewable sources.",
+        "detail": "Alberta is known for its oil sands, while British Columbia focuses on hydroelectric power."
+      },
+      {
+        "fact": "The service economy is the largest sector in Canada.",
+        "detail": "The service sector accounts for about 70% of Canada's GDP, with healthcare, education, and retail being major components."
+      },
+      {
+        "fact": "Canada's GDP was approximately $2.1 trillion in 2021.",
+        "detail": "This reflects the diverse contributions of various industries including manufacturing, technology, and services."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Which province is the largest manufacturing hub in Canada?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "Alberta",
+          "British Columbia"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Ontario is the largest manufacturing province, producing 50% of Canada's total output."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What percentage of Canada's GDP does manufacturing account for?"
+        },
+        "options": [
+          "5%",
+          "10%",
+          "15%",
+          "20%"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Manufacturing accounts for approximately 10% of Canada's GDP."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What city is often referred to as 'Silicon Valley North'?"
+        },
+        "options": [
+          "Toronto",
+          "Ottawa",
+          "Waterloo",
+          "Vancouver"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Ottawa is known as a center for technology and innovation, often referred to as 'Silicon Valley North'."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which province is known for its aerospace manufacturing?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "Alberta",
+          "Manitoba"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Quebec is known for its aerospace manufacturing, being home to Bombardier."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the primary agricultural product of the Prairie provinces?"
+        },
+        "options": [
+          "Corn",
+          "Wheat",
+          "Rice",
+          "Soybeans"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Prairies produce wheat, canola, and barley, contributing significantly to Canada's agriculture."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which province is the largest producer of timber?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "British Columbia",
+          "Alberta"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "British Columbia is the largest producer of timber in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the approximate GDP of Canada in 2021?"
+        },
+        "options": [
+          "$1 trillion",
+          "$1.5 trillion",
+          "$2 trillion",
+          "$2.1 trillion"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "Canada's GDP was approximately $2.1 trillion in 2021."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which sector accounts for about 70% of Canada's GDP?"
+        },
+        "options": [
+          "Manufacturing",
+          "Agriculture",
+          "Service",
+          "Mining"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The service economy accounts for about 70% of Canada's GDP."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "In which province is Alberta's oil sands located?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "Alberta",
+          "Saskatchewan"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Alberta is known for its oil sands, a significant part of Canada's energy sector."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which two provinces are primarily known for mining activities?"
+        },
+        "options": [
+          "Ontario and Quebec",
+          "Alberta and Saskatchewan",
+          "British Columbia and Ontario",
+          "Quebec and British Columbia"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "The mining industry is concentrated in British Columbia and Quebec, producing various minerals."
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "title": "International Trade",
+    "situation": "Economy — Canadian Citizenship Test",
+    "grammarFocus": "Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "CUSMA/USMCA replaced NAFTA",
+        "detail": "The Canada-United States-Mexico Agreement (CUSMA), also known as the US-Mexico-Canada Agreement (USMCA), officially replaced the North American Free Trade Agreement (NAFTA) on July 1, 2020."
+      },
+      {
+        "fact": "USA is Canada's largest trading partner",
+        "detail": "Approximately 75% of Canada's exports go to the United States, making it the largest trading partner for Canada."
+      },
+      {
+        "fact": "Major Canadian exports",
+        "detail": "Canada's primary exports include oil, automobiles, lumber, and minerals, which are crucial to its economy."
+      },
+      {
+        "fact": "Free trade agreements",
+        "detail": "Canada has entered into several free trade agreements, including the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the Canada-European Union Comprehensive Economic and Trade Agreement (CETA)."
+      },
+      {
+        "fact": "World Trade Organization (WTO)",
+        "detail": "Canada has been a member of the World Trade Organization (WTO) since January 1, 1995, promoting international trade and economic cooperation."
+      },
+      {
+        "fact": "Trade with Mexico",
+        "detail": "Under CUSMA, trade with Mexico has increased, allowing Canada to diversify its trading relationships beyond the United States."
+      },
+      {
+        "fact": "Agricultural exports",
+        "detail": "Canada is one of the largest agricultural exporters in the world, with significant exports of wheat, canola, and other agricultural products."
+      },
+      {
+        "fact": "Trade balance",
+        "detail": "Canada often runs a trade deficit with the United States, meaning it imports more from the U.S. than it exports."
+      },
+      {
+        "fact": "Impact of tariffs",
+        "detail": "Tariffs imposed on Canadian goods by other countries can significantly affect the Canadian economy and its trade relationships."
+      },
+      {
+        "fact": "Investment opportunities",
+        "detail": "Canada's stable economy and trade agreements make it an attractive destination for foreign investment."
+      },
+      {
+        "fact": "Energy exports",
+        "detail": "Canada is one of the world's largest exporters of energy, particularly oil and natural gas, primarily to the United States."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did CUSMA/USMCA replace NAFTA?"
+        },
+        "options": [
+          "2020",
+          "2018",
+          "2019",
+          "2021"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "CUSMA officially replaced NAFTA on July 1, 2020."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What percentage of Canada's exports go to the USA?"
+        },
+        "options": [
+          "75%",
+          "50%",
+          "60%",
+          "80%"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Approximately 75% of Canada's exports are directed to the United States."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which agreement is often referred to as CUSMA?"
+        },
+        "options": [
+          "NAFTA",
+          "CETA",
+          "CPTPP",
+          "USMCA"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "CUSMA stands for Canada-United States-Mexico Agreement, also known as USMCA."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "When did Canada become a member of the WTO?"
+        },
+        "options": [
+          "1995",
+          "2000",
+          "1990",
+          "2005"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada has been a member of the World Trade Organization (WTO) since January 1, 1995."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which of the following is a major Canadian export?"
+        },
+        "options": [
+          "Electronics",
+          "Oil",
+          "Textiles",
+          "Pharmaceuticals"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Oil is one of Canada's primary exports, along with cars, lumber, and minerals."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)?"
+        },
+        "options": [
+          "A trade agreement with Europe",
+          "A regional trade agreement in the Pacific Rim",
+          "An agreement with the USA only",
+          "A tariff regulation policy"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The CPTPP is a trade agreement involving multiple countries in the Pacific Rim, enhancing trade and investment."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is a trade deficit?"
+        },
+        "options": [
+          "Exporting more than importing",
+          "Importing more than exporting",
+          "Equal imports and exports",
+          "None of the above"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "A trade deficit occurs when a country imports more goods than it exports."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which product is Canada one of the largest exporters of?"
+        },
+        "options": [
+          "Coffee",
+          "Automobiles",
+          "Wheat",
+          "Textiles"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada is one of the largest agricultural exporters, particularly of wheat."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What can significantly affect Canada's economy?"
+        },
+        "options": [
+          "Domestic tourism",
+          "Tariffs imposed by other countries",
+          "Cultural exports",
+          "Local manufacturing"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Tariffs imposed on Canadian goods can significantly affect the economy and trade relationships."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Why is Canada attractive for foreign investment?"
+        },
+        "options": [
+          "High taxes",
+          "Unstable government",
+          "Stable economy and trade agreements",
+          "Limited resources"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada's stable economy and favorable trade agreements make it an attractive destination for foreign investment."
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "title": "The Banking System",
+    "situation": "Economy — Canadian Citizenship Test",
+    "grammarFocus": "Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Big Five banks in Canada",
+        "detail": "The major banks are Royal Bank of Canada (RBC), Toronto-Dominion Bank (TD), Scotiabank, Bank of Montreal (BMO), and Canadian Imperial Bank of Commerce (CIBC). These banks dominate the Canadian banking landscape."
+      },
+      {
+        "fact": "Bank of Canada establishment",
+        "detail": "The Bank of Canada was established in 1934 and serves as the country's central bank, responsible for monetary policy and financial stability."
+      },
+      {
+        "fact": "Canadian dollar nickname",
+        "detail": "The Canadian dollar is often referred to as the 'loonie' due to the image of a common loon on the one-dollar coin."
+      },
+      {
+        "fact": "Monetary policy goals",
+        "detail": "The primary goal of Canada's monetary policy is to maintain low and stable inflation, targeting an inflation rate of 2%."
+      },
+      {
+        "fact": "Financial regulation authority",
+        "detail": "The Office of the Superintendent of Financial Institutions (OSFI) is responsible for regulating and supervising banks and other financial institutions in Canada."
+      },
+      {
+        "fact": "Canada Deposit Insurance Corporation (CDIC)",
+        "detail": "CDIC was established in 1967 to protect depositors by insuring eligible deposits at member institutions up to $100,000 per depositor."
+      },
+      {
+        "fact": "Banking system structure",
+        "detail": "Canada's banking system is characterized by a small number of large banks that dominate the market, which contributes to its stability."
+      },
+      {
+        "fact": "Interest rates influence",
+        "detail": "The Bank of Canada adjusts interest rates to influence economic activity, affecting borrowing costs for consumers and businesses."
+      },
+      {
+        "fact": "Financial stability mandate",
+        "detail": "The Bank of Canada has a mandate to promote the stability of the financial system, which includes monitoring risks and vulnerabilities."
+      },
+      {
+        "fact": "Currency issuance",
+        "detail": "The Bank of Canada is the only institution authorized to issue Canadian banknotes, which are produced by the Canadian Bank Note Company."
+      },
+      {
+        "fact": "International banking presence",
+        "detail": "The Big Five banks have extensive international operations, with branches and subsidiaries in various countries around the world."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the primary goal of Canada's monetary policy?"
+        },
+        "options": [
+          "Maintain low and stable inflation",
+          "Increase government spending",
+          "Promote high interest rates",
+          "Encourage foreign investment"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The primary goal of Canada's monetary policy is to maintain low and stable inflation, targeting an inflation rate of 2%."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "When was the Bank of Canada established?"
+        },
+        "options": [
+          "1934",
+          "1945",
+          "1967",
+          "1980"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Bank of Canada was established in 1934 to serve as the country's central bank."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which organization is responsible for regulating banks in Canada?"
+        },
+        "options": [
+          "CDIC",
+          "OSFI",
+          "CRA",
+          "Bank of Canada"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Office of the Superintendent of Financial Institutions (OSFI) is responsible for regulating and supervising banks and other financial institutions in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the maximum amount insured by CDIC for eligible deposits?"
+        },
+        "options": [
+          "$50,000",
+          "$100,000",
+          "$250,000",
+          "$500,000"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "CDIC insures eligible deposits at member institutions up to $100,000 per depositor."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the nickname of the Canadian dollar?"
+        },
+        "options": [
+          "Toonie",
+          "Loonie",
+          "Buck",
+          "Greenback"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian dollar is often referred to as the 'loonie' due to the image of a common loon on the one-dollar coin."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which of the following is NOT one of the Big Five banks in Canada?"
+        },
+        "options": [
+          "RBC",
+          "TD",
+          "HSBC",
+          "BMO"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "HSBC is not one of the Big Five banks in Canada; the Big Five are RBC, TD, Scotiabank, BMO, and CIBC."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which institution is authorized to issue Canadian banknotes?"
+        },
+        "options": [
+          "Royal Canadian Mint",
+          "Bank of Canada",
+          "CDIC",
+          "OSFI"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Bank of Canada is the only institution authorized to issue Canadian banknotes."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the primary function of the Bank of Canada?"
+        },
+        "options": [
+          "To provide loans to individuals",
+          "To regulate the stock market",
+          "To manage monetary policy",
+          "To insure deposits"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The primary function of the Bank of Canada is to manage monetary policy and promote financial stability."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "In what year was the CDIC established?"
+        },
+        "options": [
+          "1960",
+          "1967",
+          "1975",
+          "1982"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canada Deposit Insurance Corporation (CDIC) was established in 1967."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the role of the Bank of Canada in terms of interest rates?"
+        },
+        "options": [
+          "To set fixed interest rates for all banks",
+          "To influence economic activity",
+          "To manage personal loans",
+          "To determine mortgage rates"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Bank of Canada adjusts interest rates to influence economic activity, affecting borrowing costs for consumers and businesses."
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Social Programs",
+    "situation": "Economy — Canadian Citizenship Test",
+    "grammarFocus": "Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Universal healthcare in Canada is known as Medicare.",
+        "detail": "Medicare provides access to medically necessary hospital and physician services without direct charges at the point of care."
+      },
+      {
+        "fact": "The Canada Health Act was enacted in 1984.",
+        "detail": "This act establishes the criteria and conditions related to insured health care services that provinces and territories must follow to receive federal funding."
+      },
+      {
+        "fact": "The Canada Pension Plan (CPP) was established in 1966.",
+        "detail": "CPP is a mandatory social insurance program that provides retirement, disability, and survivor benefits to contributors and their families."
+      },
+      {
+        "fact": "Employment Insurance (EI) was introduced in 1971.",
+        "detail": "EI provides temporary financial assistance to unemployed workers while they look for work or upgrade their skills."
+      },
+      {
+        "fact": "Old Age Security (OAS) was introduced in 1952.",
+        "detail": "OAS is a government program that provides a monthly pension to seniors aged 65 and older, funded through general tax revenues."
+      },
+      {
+        "fact": "The Guaranteed Income Supplement (GIS) is an additional benefit for low-income seniors.",
+        "detail": "It is available to seniors who receive OAS and have a low income, helping to reduce poverty among the elderly."
+      },
+      {
+        "fact": "Canada's Child Benefit (CCB) was introduced in 2016.",
+        "detail": "The CCB provides financial support to families with children under 18 years of age, based on family income."
+      },
+      {
+        "fact": "Public education in Canada is publicly funded and administered by provincial governments.",
+        "detail": "Education is compulsory for children between the ages of 6 and 16 in most provinces."
+      },
+      {
+        "fact": "Canada has a comprehensive social safety net.",
+        "detail": "This includes programs like welfare, housing assistance, and food security initiatives to support those in need."
+      },
+      {
+        "fact": "The federal government provides funding to provinces for health care through the Canada Health Transfer.",
+        "detail": "This transfer helps ensure that all Canadians have access to essential health services."
+      },
+      {
+        "fact": "The average monthly OAS pension is adjusted quarterly based on inflation.",
+        "detail": "This ensures that the purchasing power of seniors is maintained over time."
+      },
+      {
+        "fact": "In 2021, the maximum monthly EI benefit was $595.",
+        "detail": "This amount can vary based on the claimant's previous earnings and the number of insurable hours worked."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the Canada Health Act enacted?"
+        },
+        "options": [
+          "1984",
+          "1971",
+          "1966",
+          "1952"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canada Health Act was enacted in 1984 to ensure access to medically necessary hospital and physician services."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which program provides financial support to unemployed workers?"
+        },
+        "options": [
+          "Canada Pension Plan",
+          "Employment Insurance",
+          "Old Age Security",
+          "Child Benefits"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Employment Insurance (EI) provides temporary financial assistance to unemployed workers."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "When was the Canada Pension Plan established?"
+        },
+        "options": [
+          "1952",
+          "1966",
+          "1971",
+          "1984"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canada Pension Plan (CPP) was established in 1966 to provide retirement and disability benefits."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the primary purpose of the Old Age Security program?"
+        },
+        "options": [
+          "Support families",
+          "Provide pensions to seniors",
+          "Offer unemployment benefits",
+          "Fund public education"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Old Age Security (OAS) provides a monthly pension to seniors aged 65 and older."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the maximum monthly EI benefit as of 2021?"
+        },
+        "options": [
+          "$595",
+          "$1,200",
+          "$450",
+          "$800"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "In 2021, the maximum monthly Employment Insurance benefit was $595."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which benefit is aimed at low-income seniors?"
+        },
+        "options": [
+          "Canada Child Benefit",
+          "Guaranteed Income Supplement",
+          "Employment Insurance",
+          "Old Age Security"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Guaranteed Income Supplement (GIS) is an additional benefit for low-income seniors."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What year was the Child Benefit introduced?"
+        },
+        "options": [
+          "2016",
+          "2015",
+          "2018",
+          "2020"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canada Child Benefit (CCB) was introduced in 2016 to support families with children."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the age of compulsory education in most provinces?"
+        },
+        "options": [
+          "6 to 16",
+          "5 to 18",
+          "7 to 15",
+          "6 to 18"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Education is compulsory for children between the ages of 6 and 16 in most provinces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What is the purpose of the Canada Health Transfer?"
+        },
+        "options": [
+          "To support education",
+          "To fund health care",
+          "To provide pensions",
+          "To assist unemployed workers"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canada Health Transfer provides funding to provinces for health care, ensuring access to essential services."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "How often is the OAS pension adjusted?"
+        },
+        "options": [
+          "Annually",
+          "Quarterly",
+          "Monthly",
+          "Biannually"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The average monthly Old Age Security pension is adjusted quarterly based on inflation."
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Indigenous Peoples: First Nations",
+    "situation": "Who We Are — Canadian Citizenship Test",
+    "grammarFocus": "Who We Are",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "There are over 600 First Nations in Canada.",
+        "detail": "These First Nations are diverse, each with their own unique languages, cultures, and traditions."
+      },
+      {
+        "fact": "First Nations peoples speak over 70 distinct languages.",
+        "detail": "These languages belong to 12 different language families, showcasing the rich linguistic diversity among Indigenous communities."
+      },
+      {
+        "fact": "The Royal Proclamation of 1763 recognized Indigenous land rights.",
+        "detail": "This proclamation established the principle that Indigenous land could only be ceded to the Crown through treaties."
+      },
+      {
+        "fact": "The Indian Act was enacted in 1876.",
+        "detail": "This act aimed to assimilate Indigenous peoples into Canadian society and imposed various restrictions on First Nations."
+      },
+      {
+        "fact": "The Truth and Reconciliation Commission (TRC) was established in 2008.",
+        "detail": "The TRC aimed to document the history and impacts of the residential school system on Indigenous peoples."
+      },
+      {
+        "fact": "The last residential school in Canada closed in 1996.",
+        "detail": "These schools were part of a policy aimed at assimilating Indigenous children and have left a lasting legacy of trauma."
+      },
+      {
+        "fact": "Self-government agreements allow First Nations to govern themselves.",
+        "detail": "These agreements provide First Nations with the authority to make decisions about their own affairs."
+      },
+      {
+        "fact": "The United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) was adopted in 2007.",
+        "detail": "Canada endorsed UNDRIP in 2016, recognizing the rights of Indigenous peoples globally."
+      },
+      {
+        "fact": "The Assembly of First Nations (AFN) represents First Nations across Canada.",
+        "detail": "Founded in 1982, the AFN advocates for the rights and interests of First Nations people."
+      },
+      {
+        "fact": "The Métis and Inuit are distinct Indigenous groups in Canada.",
+        "detail": "While First Nations are one group, the Métis and Inuit have their own identities, cultures, and governance."
+      },
+      {
+        "fact": "The concept of 'treaty rights' is fundamental to First Nations sovereignty.",
+        "detail": "Treaties made between First Nations and the Crown are legally binding agreements that outline rights and responsibilities."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In what year was the Indian Act enacted?"
+        },
+        "options": [
+          "1876",
+          "1885",
+          "1900",
+          "1920"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Indian Act was enacted in 1876, aiming to regulate and control Indigenous peoples in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many distinct languages do First Nations peoples speak?"
+        },
+        "options": [
+          "50",
+          "70",
+          "100",
+          "150"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "First Nations peoples speak over 70 distinct languages, reflecting their diverse cultures."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What year did the last residential school in Canada close?"
+        },
+        "options": [
+          "1985",
+          "1996",
+          "2000",
+          "2008"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The last residential school closed in 1996, marking the end of a painful chapter in Canadian history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does the Truth and Reconciliation Commission focus on?"
+        },
+        "options": [
+          "Indigenous land rights",
+          "Residential schools",
+          "Treaty agreements",
+          "Cultural preservation"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The TRC focuses on the history and impacts of the residential school system on Indigenous peoples."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "When was the United Nations Declaration on the Rights of Indigenous Peoples adopted?"
+        },
+        "options": [
+          "2000",
+          "2007",
+          "2010",
+          "2016"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The UNDRIP was adopted in 2007, and Canada endorsed it in 2016, recognizing Indigenous rights."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the role of the Assembly of First Nations?"
+        },
+        "options": [
+          "Cultural preservation",
+          "Advocating for First Nations rights",
+          "Education for Indigenous youth",
+          "Land management"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Assembly of First Nations advocates for the rights and interests of First Nations people in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What year was the Truth and Reconciliation Commission established?"
+        },
+        "options": [
+          "2005",
+          "2008",
+          "2010",
+          "2012"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The TRC was established in 2008 to address the legacy of the residential school system."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "How many First Nations are there in Canada?"
+        },
+        "options": [
+          "300",
+          "600",
+          "900",
+          "1200"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "There are over 600 First Nations in Canada, each with its own unique culture and language."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which document recognized Indigenous land rights in Canada?"
+        },
+        "options": [
+          "The Constitution Act",
+          "The Indian Act",
+          "The Royal Proclamation of 1763",
+          "The Charter of Rights and Freedoms"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Royal Proclamation of 1763 recognized Indigenous land rights and established treaty-making protocols."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is a key aspect of self-government agreements for First Nations?"
+        },
+        "options": [
+          "Cultural assimilation",
+          "Authority over local affairs",
+          "Economic dependence",
+          "Federal control"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Self-government agreements allow First Nations to govern themselves and make decisions about their own affairs."
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "title": "Indigenous Peoples: Métis & Inuit",
+    "situation": "Who We Are — Canadian Citizenship Test",
+    "grammarFocus": "Who We Are",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Métis people are of mixed First Nations and European heritage.",
+        "detail": "The Métis culture emerged in the 17th and 18th centuries, primarily in the Red River region."
+      },
+      {
+        "fact": "Louis Riel is a prominent Métis leader.",
+        "detail": "Riel led the Red River Resistance in 1869-1870 and the North-West Rebellion in 1885."
+      },
+      {
+        "fact": "The Red River Settlement was established in the early 19th century.",
+        "detail": "It was located in what is now Manitoba and was a center for Métis culture."
+      },
+      {
+        "fact": "The Inuit are Indigenous peoples who primarily inhabit the Arctic regions of Canada.",
+        "detail": "They have a distinct culture and way of life adapted to the harsh Arctic environment."
+      },
+      {
+        "fact": "Nunavut was officially separated from the Northwest Territories in 1999.",
+        "detail": "It is the largest and northernmost territory in Canada, primarily inhabited by Inuit."
+      },
+      {
+        "fact": "Inuktitut is one of the main languages spoken by the Inuit.",
+        "detail": "It is an official language in Nunavut and is vital to Inuit culture and identity."
+      },
+      {
+        "fact": "Land claims agreements have been established to recognize Inuit rights.",
+        "detail": "The Nunavut Land Claims Agreement was signed in 1993, granting rights and governance to the Inuit."
+      },
+      {
+        "fact": "Traditional knowledge is crucial to the Inuit way of life.",
+        "detail": "It encompasses hunting, fishing, and gathering practices passed down through generations."
+      },
+      {
+        "fact": "The Inuit Circumpolar Council was founded in 1977.",
+        "detail": "It represents Inuit from Canada, Alaska, Greenland, and Russia, advocating for their rights and interests."
+      },
+      {
+        "fact": "Métis are recognized as one of the three distinct Indigenous peoples in Canada.",
+        "detail": "The other two are First Nations and Inuit, each with their own unique cultures and histories."
+      },
+      {
+        "fact": "The Métis flag features a blue background with a white infinity symbol.",
+        "detail": "This symbol represents the Métis identity and their connection to both Indigenous and European ancestry."
+      },
+      {
+        "fact": "The Truth and Reconciliation Commission (TRC) was established in 2008.",
+        "detail": "It aimed to address the legacy of residential schools, impacting both First Nations and Métis communities."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Who was the leader of the Red River Resistance?"
+        },
+        "options": [
+          "Louis Riel",
+          "John A. Macdonald",
+          "Gabriel Dumont",
+          "Henry Hudson"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Louis Riel was the leader of the Red River Resistance in 1869-1870, advocating for Métis rights."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "In which year did Nunavut become a territory?"
+        },
+        "options": [
+          "1995",
+          "1999",
+          "2001",
+          "2003"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Nunavut was officially separated from the Northwest Territories in 1999."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the primary language spoken by the Inuit?"
+        },
+        "options": [
+          "Cree",
+          "Inuktitut",
+          "Ojibwe",
+          "French"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Inuktitut is one of the main languages spoken by the Inuit and is vital to their culture."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does the infinity symbol on the Métis flag represent?"
+        },
+        "options": [
+          "Métis identity",
+          "Unity of Canada",
+          "French heritage",
+          "Indigenous rights"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The infinity symbol represents the Métis identity and their connection to both Indigenous and European ancestry."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "When was the Truth and Reconciliation Commission (TRC) established?"
+        },
+        "options": [
+          "2005",
+          "2008",
+          "2010",
+          "2012"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The TRC was established in 2008 to address the legacy of residential schools affecting Indigenous peoples."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What year did the Nunavut Land Claims Agreement get signed?"
+        },
+        "options": [
+          "1992",
+          "1993",
+          "1994",
+          "1995"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Nunavut Land Claims Agreement was signed in 1993, recognizing Inuit rights and governance."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which council advocates for Inuit rights across the Arctic?"
+        },
+        "options": [
+          "Métis Nation",
+          "Inuit Tapiriit Kanatami",
+          "Inuit Circumpolar Council",
+          "Assembly of First Nations"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Inuit Circumpolar Council, founded in 1977, represents Inuit from various regions advocating for their rights."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "The Métis culture primarily developed in which region?"
+        },
+        "options": [
+          "British Columbia",
+          "Red River",
+          "Ontario",
+          "Quebec"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Métis culture emerged in the Red River region during the 17th and 18th centuries."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What significant event did Louis Riel lead in 1885?"
+        },
+        "options": [
+          "Treaty of Paris",
+          "North-West Rebellion",
+          "War of 1812",
+          "Red River Resistance"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Louis Riel led the North-West Rebellion in 1885, advocating for Métis rights against the Canadian government."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is traditional knowledge important for Inuit culture?"
+        },
+        "options": [
+          "Hunting and gathering",
+          "Modern technology",
+          "Urban living",
+          "Social media"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Traditional knowledge encompasses hunting, fishing, and gathering practices vital to the Inuit way of life."
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "title": "French-English Relations",
+    "situation": "History — Canadian Citizenship Test",
+    "grammarFocus": "History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Founding European Peoples",
+        "detail": "Canada was founded by two main European peoples: the French and the English, whose historical interactions have shaped the nation."
+      },
+      {
+        "fact": "Official Languages Act",
+        "detail": "The Official Languages Act was enacted in 1969, establishing French and English as the official languages of Canada."
+      },
+      {
+        "fact": "Bilingualism Policy",
+        "detail": "The policy of bilingualism promotes the equal use of French and English in federal institutions."
+      },
+      {
+        "fact": "Quebec Sovereignty Movement",
+        "detail": "The Quebec sovereignty movement has sought to achieve independence for Quebec, notably through referendums held in 1980 and 1995."
+      },
+      {
+        "fact": "1980 Referendum",
+        "detail": "In the 1980 referendum, 59.6% of Quebec voters rejected the proposal for sovereignty-association."
+      },
+      {
+        "fact": "1995 Referendum",
+        "detail": "In the 1995 referendum, the vote was much closer, with 50.58% of Quebec voters rejecting sovereignty."
+      },
+      {
+        "fact": "Meech Lake Accord",
+        "detail": "The Meech Lake Accord, proposed in 1987, aimed to recognize Quebec as a distinct society but ultimately failed to be ratified."
+      },
+      {
+        "fact": "Charlottetown Accord",
+        "detail": "The Charlottetown Accord, introduced in 1992, included provisions for Quebec's distinct society but was rejected in a national referendum."
+      },
+      {
+        "fact": "French Language Services",
+        "detail": "The Canadian government provides services in both official languages, ensuring access to French language services across the country."
+      },
+      {
+        "fact": "Cultural Contributions",
+        "detail": "Both French and English cultures have significantly contributed to Canada's identity, including literature, music, and cuisine."
+      },
+      {
+        "fact": "Language Rights",
+        "detail": "The Canadian Charter of Rights and Freedoms, enacted in 1982, affirms the rights of individuals to use either official language."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the Official Languages Act enacted?"
+        },
+        "options": [
+          "1969",
+          "1972",
+          "1980",
+          "1995"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Official Languages Act was enacted in 1969, establishing French and English as the official languages of Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which referendum had the closest result regarding Quebec sovereignty?"
+        },
+        "options": [
+          "1980",
+          "1995",
+          "1976",
+          "2000"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The 1995 referendum had the closest result, with 50.58% of voters rejecting sovereignty."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What was the main goal of the Meech Lake Accord?"
+        },
+        "options": [
+          "To recognize Quebec as a distinct society",
+          "To promote bilingualism",
+          "To establish a new constitution",
+          "To create a federal government"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Meech Lake Accord aimed to recognize Quebec as a distinct society but failed to be ratified."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "In what year did the Charlottetown Accord fail in a national referendum?"
+        },
+        "options": [
+          "1987",
+          "1992",
+          "1995",
+          "1999"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Charlottetown Accord was rejected in a national referendum in 1992."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What percentage of Quebec voters rejected sovereignty in the 1980 referendum?"
+        },
+        "options": [
+          "50.58%",
+          "59.6%",
+          "70%",
+          "45%"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "In the 1980 referendum, 59.6% of Quebec voters rejected the proposal for sovereignty-association."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which Act affirms language rights in Canada?"
+        },
+        "options": [
+          "Official Languages Act",
+          "Canadian Charter of Rights and Freedoms",
+          "Constitution Act",
+          "Language Rights Act"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Charter of Rights and Freedoms affirms the rights of individuals to use either official language."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the primary focus of Canada's bilingualism policy?"
+        },
+        "options": [
+          "Promoting French culture",
+          "Equal use of French and English",
+          "Encouraging English dominance",
+          "Supporting Indigenous languages"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The policy of bilingualism promotes the equal use of French and English in federal institutions."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which two founding nations contributed to Canada's dual language system?"
+        },
+        "options": [
+          "France and Spain",
+          "England and Scotland",
+          "France and England",
+          "Germany and Italy"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada was founded by two main European peoples: the French and the English."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What significant cultural contributions have both French and English peoples made in Canada?"
+        },
+        "options": [
+          "Only literature",
+          "Only cuisine",
+          "Literature, music, and cuisine",
+          "Only music"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Both French and English cultures have significantly contributed to Canada's identity, including literature, music, and cuisine."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which of the following was NOT part of the Quebec sovereignty movements?"
+        },
+        "options": [
+          "1980 Referendum",
+          "1995 Referendum",
+          "Meech Lake Accord",
+          "Constitution Act of 1867"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "The Constitution Act of 1867 was not part of the Quebec sovereignty movements; it established Canada as a country."
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "title": "Immigration History",
+    "situation": "History — Canadian Citizenship Test",
+    "grammarFocus": "History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The first wave of immigration to Canada consisted mainly of British and French settlers.",
+        "detail": "This wave began in the early 1600s with French explorers like Samuel de Champlain establishing Quebec in 1608."
+      },
+      {
+        "fact": "The Irish Famine led to a significant wave of immigration in the 1840s.",
+        "detail": "Approximately 1 million Irish immigrants came to Canada between 1845 and 1852, fleeing the Great Famine."
+      },
+      {
+        "fact": "Chinese railway workers were crucial to the construction of the Canadian Pacific Railway.",
+        "detail": "Between 1881 and 1885, around 15,000 Chinese workers were brought to Canada, facing harsh conditions and discrimination."
+      },
+      {
+        "fact": "Post-World War II saw a surge in European immigration.",
+        "detail": "From 1945 to 1960, over 1 million Europeans immigrated to Canada, including many displaced persons from war-torn countries."
+      },
+      {
+        "fact": "The 1967 points system was introduced to create a more equitable immigration process.",
+        "detail": "This system evaluated potential immigrants based on skills, education, and work experience, rather than nationality."
+      },
+      {
+        "fact": "Canada officially adopted a policy of multiculturalism in 1971.",
+        "detail": "This policy recognizes and promotes the cultural diversity of Canadian society."
+      },
+      {
+        "fact": "The Immigration Act of 1976 established the framework for modern immigration policy.",
+        "detail": "It emphasized family reunification and humanitarian considerations."
+      },
+      {
+        "fact": "In 2019, Canada welcomed over 341,000 new permanent residents.",
+        "detail": "This was part of the government's plan to increase immigration to support economic growth."
+      },
+      {
+        "fact": "The highest number of immigrants to Canada in recent years come from India.",
+        "detail": "In 2020, approximately 23% of all new immigrants were from India."
+      },
+      {
+        "fact": "Canada has a target of welcoming over 400,000 immigrants annually by 2023.",
+        "detail": "This is part of the Immigration Levels Plan to support economic recovery and address labor shortages."
+      },
+      {
+        "fact": "Refugees have also been a significant component of immigration.",
+        "detail": "Canada resettled over 50,000 Syrian refugees between 2015 and 2019."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did the Irish Famine lead to a significant wave of immigration to Canada?"
+        },
+        "options": [
+          "1845",
+          "1867",
+          "1900",
+          "1920"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Irish Famine began in 1845, leading to a massive influx of Irish immigrants to Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many Chinese workers were brought to Canada for the construction of the Canadian Pacific Railway?"
+        },
+        "options": [
+          "5,000",
+          "10,000",
+          "15,000",
+          "20,000"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Approximately 15,000 Chinese workers were brought to Canada between 1881 and 1885."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which year marked the introduction of the points system for immigration?"
+        },
+        "options": [
+          "1960",
+          "1967",
+          "1971",
+          "1980"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The points system was introduced in 1967 to create a more equitable immigration process."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What percentage of new immigrants to Canada in 2020 came from India?"
+        },
+        "options": [
+          "15%",
+          "20%",
+          "23%",
+          "30%"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "In 2020, approximately 23% of all new immigrants were from India."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What was the main focus of the Immigration Act of 1976?"
+        },
+        "options": [
+          "Economic growth",
+          "Family reunification",
+          "Cultural diversity",
+          "Refugee resettlement"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Immigration Act of 1976 emphasized family reunification and humanitarian considerations."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "In what year did Canada officially adopt multiculturalism as a policy?"
+        },
+        "options": [
+          "1967",
+          "1971",
+          "1982",
+          "1990"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada officially adopted a policy of multiculturalism in 1971 to promote cultural diversity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "How many new permanent residents did Canada welcome in 2019?"
+        },
+        "options": [
+          "250,000",
+          "300,000",
+          "341,000",
+          "400,000"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "In 2019, Canada welcomed over 341,000 new permanent residents as part of its immigration plan."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is Canada's target for annual immigration by 2023?"
+        },
+        "options": [
+          "300,000",
+          "350,000",
+          "400,000",
+          "450,000"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada has a target of welcoming over 400,000 immigrants annually by 2023."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "How many Syrian refugees were resettled in Canada between 2015 and 2019?"
+        },
+        "options": [
+          "30,000",
+          "50,000",
+          "70,000",
+          "100,000"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada resettled over 50,000 Syrian refugees between 2015 and 2019."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which group of immigrants was significant in the post-WWII era?"
+        },
+        "options": [
+          "Chinese workers",
+          "Irish immigrants",
+          "Displaced Europeans",
+          "Indians"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Post-World War II saw a surge in European immigration, including many displaced persons."
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "title": "Canadian Military History",
+    "situation": "History — Canadian Citizenship Test",
+    "grammarFocus": "History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Vimy Ridge",
+        "detail": "The Battle of Vimy Ridge took place from April 9 to April 12, 1917, during World War I. It is considered a defining moment in Canadian history, symbolizing national unity and sacrifice."
+      },
+      {
+        "fact": "Dieppe Raid",
+        "detail": "The Dieppe Raid occurred on August 19, 1942, and was a significant but costly Allied assault on the German-occupied port of Dieppe, France. Over 5,000 Canadian troops participated, with heavy casualties."
+      },
+      {
+        "fact": "D-Day and Juno Beach",
+        "detail": "On June 6, 1944, D-Day, Canadian forces landed on Juno Beach, one of the five beachheads during the Normandy invasion. They faced fierce resistance but successfully advanced inland."
+      },
+      {
+        "fact": "Korean War",
+        "detail": "The Korean War lasted from 1950 to 1953. Canada contributed approximately 26,000 military personnel to the United Nations forces, with 516 Canadians losing their lives."
+      },
+      {
+        "fact": "Peacekeeping and Lester Pearson",
+        "detail": "Lester B. Pearson, who served as Prime Minister from 1963 to 1968, was awarded the Nobel Peace Prize in 1957 for his role in establishing the first United Nations Emergency Force during the Suez Crisis."
+      },
+      {
+        "fact": "NATO",
+        "detail": "Canada was one of the founding members of the North Atlantic Treaty Organization (NATO) established on April 4, 1949, aimed at collective defense against aggression."
+      },
+      {
+        "fact": "Afghanistan War",
+        "detail": "Canada's military involvement in Afghanistan began in 2001 and lasted until 2014. Approximately 40,000 Canadian Forces members served in the mission, with 158 losing their lives."
+      },
+      {
+        "fact": "Victoria Cross recipients",
+        "detail": "The Victoria Cross is the highest military honor awarded for valor in the face of the enemy. Canada has 99 recipients of the Victoria Cross, with notable recipients including Pvt. George Lawrence Price, the last Canadian soldier killed in World War I."
+      },
+      {
+        "fact": "Remembrance Day",
+        "detail": "Remembrance Day is observed on November 11 each year to honor the sacrifices of those who served in the military. It marks the end of World War I and is a day of reflection and remembrance."
+      },
+      {
+        "fact": "Canadian War Museum",
+        "detail": "The Canadian War Museum, located in Ottawa, is dedicated to preserving and presenting Canada’s military history, showcasing artifacts, documents, and exhibitions related to Canadian military service."
+      },
+      {
+        "fact": "Battle of Passchendaele",
+        "detail": "The Battle of Passchendaele took place in 1917 during World War I. Canadian troops played a significant role in capturing the village, facing harsh conditions and suffering heavy losses."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In what year did the Battle of Vimy Ridge occur?"
+        },
+        "options": [
+          "1917",
+          "1916",
+          "1918",
+          "1915"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Battle of Vimy Ridge took place from April 9 to April 12, 1917."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many Canadians participated in the Dieppe Raid?"
+        },
+        "options": [
+          "5,000",
+          "10,000",
+          "2,500",
+          "7,500"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Over 5,000 Canadian troops participated in the Dieppe Raid on August 19, 1942."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What date is Remembrance Day observed?"
+        },
+        "options": [
+          "November 11",
+          "October 11",
+          "December 11",
+          "September 11"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Remembrance Day is observed on November 11 each year to honor military sacrifices."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Who was awarded the Nobel Peace Prize in 1957?"
+        },
+        "options": [
+          "Lester B. Pearson",
+          "John A. Macdonald",
+          "William Lyon Mackenzie King",
+          "Pierre Trudeau"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Lester B. Pearson was awarded the Nobel Peace Prize in 1957 for his peacekeeping efforts."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "When did Canada join NATO?"
+        },
+        "options": [
+          "1949",
+          "1950",
+          "1945",
+          "1952"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada was one of the founding members of NATO, which was established on April 4, 1949."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "How many Canadians lost their lives in the Korean War?"
+        },
+        "options": [
+          "516",
+          "1,000",
+          "250",
+          "300"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Approximately 516 Canadians lost their lives during the Korean War (1950-1953)."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What was the last major battle involving Canadian troops in World War I?"
+        },
+        "options": [
+          "Battle of Vimy Ridge",
+          "Battle of Passchendaele",
+          "Battle of the Somme",
+          "Battle of Ypres"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Battle of Vimy Ridge is often considered a defining moment for Canada in World War I."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "How many recipients of the Victoria Cross are there from Canada?"
+        },
+        "options": [
+          "99",
+          "50",
+          "75",
+          "150"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada has 99 recipients of the Victoria Cross, awarded for valor in combat."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What year did the Afghan War begin for Canada?"
+        },
+        "options": [
+          "2001",
+          "2003",
+          "1999",
+          "2005"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada's military involvement in Afghanistan began in 2001."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which battle was fought in 1917 and is known for its muddy conditions?"
+        },
+        "options": [
+          "Battle of Passchendaele",
+          "Battle of Vimy Ridge",
+          "Battle of Dieppe",
+          "Battle of the Somme"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Battle of Passchendaele in 1917 is known for its extremely muddy conditions and heavy casualties."
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "title": "The Canadian Flag",
+    "situation": "Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Canadian Flag features a red-white-red design with a single stylized red maple leaf.",
+        "detail": "The maple leaf is a symbol of Canada and has been associated with the country since the 18th century."
+      },
+      {
+        "fact": "The current Canadian Flag was adopted on February 15, 1965.",
+        "detail": "February 15 is now celebrated annually as National Flag of Canada Day."
+      },
+      {
+        "fact": "The adoption of the Canadian Flag followed a significant debate known as the 'Great Flag Debate'.",
+        "detail": "This debate involved discussions about national identity and the representation of Canada."
+      },
+      {
+        "fact": "Prior to the current flag, Canada primarily used the Red Ensign as its national flag.",
+        "detail": "The Red Ensign was used by Canadian forces and was a version of the British maritime flag."
+      },
+      {
+        "fact": "The colors of the Canadian Flag have specific meanings; red represents sacrifice and bravery, while white symbolizes peace and tranquility.",
+        "detail": "These meanings reflect the values and history of Canada."
+      },
+      {
+        "fact": "The flag was designed by George F. G. Stanley and John Matheson.",
+        "detail": "Stanley was a soldier and historian, while Matheson was a politician and lawyer."
+      },
+      {
+        "fact": "The flag's design features an 11-pointed maple leaf, which is recognized worldwide as a symbol of Canada.",
+        "detail": "The maple leaf has been a symbol of Canada since the 1700s."
+      },
+      {
+        "fact": "The Canadian Flag was raised for the first time on Parliament Hill in Ottawa on February 15, 1965.",
+        "detail": "This moment marked a significant step in Canada's national identity."
+      },
+      {
+        "fact": "The flag's adoption was part of a broader movement to establish a distinct Canadian identity separate from British colonial influences.",
+        "detail": "This was particularly significant during the post-World War II era."
+      },
+      {
+        "fact": "The flag's design has remained unchanged since its adoption in 1965.",
+        "detail": "This stability has contributed to its recognition and acceptance as a national symbol."
+      },
+      {
+        "fact": "The Canadian Flag is flown at various government buildings and is a common sight at national celebrations and events.",
+        "detail": "It represents unity and pride among Canadians."
+      },
+      {
+        "fact": "The flag is often accompanied by the national anthem, 'O Canada', which was officially adopted in 1980.",
+        "detail": "The anthem complements the symbolism of the flag in expressing national pride."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the current Canadian Flag adopted?"
+        },
+        "options": [
+          "1965",
+          "1980",
+          "1976",
+          "1956"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian Flag was adopted on February 15, 1965."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What does the red color in the Canadian Flag symbolize?"
+        },
+        "options": [
+          "Peace",
+          "Sacrifice",
+          "Unity",
+          "Freedom"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The red color in the Canadian Flag represents sacrifice and bravery."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Who were the main designers of the Canadian Flag?"
+        },
+        "options": [
+          "John Matheson and George Stanley",
+          "Pierre Trudeau and John Matheson",
+          "George Stanley and Pierre Trudeau",
+          "John A. Macdonald and George Stanley"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The flag was designed by George F. G. Stanley and John Matheson."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is celebrated on February 15 each year in Canada?"
+        },
+        "options": [
+          "Canada Day",
+          "National Flag Day",
+          "Thanksgiving",
+          "Victoria Day"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "February 15 is celebrated as National Flag of Canada Day."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What was the primary flag used by Canada before the current flag?"
+        },
+        "options": [
+          "The Union Jack",
+          "The Red Ensign",
+          "The Maple Leaf Flag",
+          "The Canadian Red Cross Flag"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Before the current flag, Canada primarily used the Red Ensign as its national flag."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "How many points does the maple leaf on the Canadian Flag have?"
+        },
+        "options": [
+          "7",
+          "9",
+          "11",
+          "13"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The maple leaf on the Canadian Flag has 11 points."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does the white color in the Canadian Flag symbolize?"
+        },
+        "options": [
+          "Sacrifice",
+          "Peace",
+          "Strength",
+          "Freedom"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The white color in the Canadian Flag symbolizes peace and tranquility."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "In what year was the national anthem 'O Canada' officially adopted?"
+        },
+        "options": [
+          "1965",
+          "1976",
+          "1980",
+          "1990"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "'O Canada' was officially adopted as the national anthem in 1980."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What was a significant factor in the adoption of the Canadian Flag?"
+        },
+        "options": [
+          "To honor veterans",
+          "To establish a distinct Canadian identity",
+          "To celebrate multiculturalism",
+          "To promote tourism"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The adoption of the Canadian Flag was part of a broader movement to establish a distinct Canadian identity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Where was the Canadian Flag first raised?"
+        },
+        "options": [
+          "Toronto",
+          "Vancouver",
+          "Ottawa",
+          "Montreal"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Canadian Flag was first raised on Parliament Hill in Ottawa on February 15, 1965."
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "title": "O Canada & Royal Anthem",
+    "situation": "Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "O Canada was written in 1880",
+        "detail": "The music was composed by Calixa Lavallée, with lyrics originally written by Sir Adolphe-Basile Routhier."
+      },
+      {
+        "fact": "O Canada became the national anthem in 1980",
+        "detail": "It was officially adopted as the national anthem of Canada on July 1, 1980."
+      },
+      {
+        "fact": "O Canada has bilingual versions",
+        "detail": "The anthem is performed in both English and French, reflecting Canada's bilingual nature."
+      },
+      {
+        "fact": "God Save the King is the Royal Anthem",
+        "detail": "This anthem is played during royal events and ceremonies, and it honors the reigning monarch."
+      },
+      {
+        "fact": "God Save the King was officially recognized in Canada in 1980",
+        "detail": "It serves as the royal anthem alongside O Canada."
+      },
+      {
+        "fact": "O Canada was first performed in French",
+        "detail": "The original version was sung at the St. Jean Baptiste Day celebrations in 1880."
+      },
+      {
+        "fact": "The lyrics of O Canada were revised in 2018",
+        "detail": "The line 'in all of us command' was changed to 'in all of us combine' to promote gender equality."
+      },
+      {
+        "fact": "The first English lyrics of O Canada were written in 1908",
+        "detail": "The English version was adapted by Robert Stanley Weir."
+      },
+      {
+        "fact": "O Canada is often played at public events",
+        "detail": "It is customary to stand and show respect when the anthem is played."
+      },
+      {
+        "fact": "The lyrics of God Save the King are known by many Canadians",
+        "detail": "The anthem is traditionally sung at official events, including the opening of Parliament."
+      },
+      {
+        "fact": "O Canada was composed in Quebec",
+        "detail": "Calixa Lavallée was inspired by the patriotic sentiments of the time in Quebec."
+      },
+      {
+        "fact": "O Canada is a symbol of Canadian identity",
+        "detail": "It represents the values and pride of Canadians across the country."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In which year did O Canada become the national anthem?"
+        },
+        "options": [
+          "1980",
+          "1967",
+          "1975",
+          "1990"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "O Canada was officially adopted as the national anthem of Canada on July 1, 1980."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Who composed the music for O Canada?"
+        },
+        "options": [
+          "Calixa Lavallée",
+          "Robert Stanley Weir",
+          "Sir Adolphe-Basile Routhier",
+          "Pierre Trudeau"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Calixa Lavallée composed the music for O Canada in 1880."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the royal anthem of Canada?"
+        },
+        "options": [
+          "O Canada",
+          "God Save the King",
+          "The Maple Leaf Forever",
+          "This Land is Your Land"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "God Save the King is recognized as the royal anthem in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which line was changed in the 2018 revision of O Canada?"
+        },
+        "options": [
+          "In all of us command",
+          "In all of us unite",
+          "In all of us combine",
+          "In all of us stand"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The line was changed to promote gender equality in 2018."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "In what year were the first English lyrics of O Canada written?"
+        },
+        "options": [
+          "1908",
+          "1912",
+          "1920",
+          "1890"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The first English lyrics of O Canada were adapted by Robert Stanley Weir in 1908."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Where was O Canada first performed?"
+        },
+        "options": [
+          "Ottawa",
+          "Quebec",
+          "Toronto",
+          "Montreal"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "O Canada was first performed in Quebec during St. Jean Baptiste Day celebrations."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "When is God Save the King typically played?"
+        },
+        "options": [
+          "At royal events",
+          "During sports games",
+          "On Canada Day",
+          "Every Sunday"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "God Save the King is played during royal events and ceremonies."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the significance of O Canada to Canadians?"
+        },
+        "options": [
+          "A symbol of unity",
+          "A symbol of division",
+          "A song for sports",
+          "A commercial jingle"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "O Canada represents the values and pride of Canadians, making it a symbol of unity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Who originally wrote the lyrics for O Canada?"
+        },
+        "options": [
+          "Sir Adolphe-Basile Routhier",
+          "Calixa Lavallée",
+          "Robert Stanley Weir",
+          "Pierre Trudeau"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The original lyrics were written by Sir Adolphe-Basile Routhier in 1880."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What event led to the first performance of O Canada?"
+        },
+        "options": [
+          "St. Jean Baptiste Day",
+          "Canada Day",
+          "Victoria Day",
+          "Remembrance Day"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "O Canada was first performed at the St. Jean Baptiste Day celebrations in 1880."
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "title": "Canadian Symbols Deep Dive",
+    "situation": "Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Beaver is Canada's official emblem.",
+        "detail": "Designated as a national symbol in 1975, the beaver represents the fur trade, which was significant in Canadian history."
+      },
+      {
+        "fact": "The Maple Leaf is a symbol of Canada.",
+        "detail": "The red maple leaf became a symbol of Canada in the 18th century and was officially adopted as part of the national flag on February 15, 1965."
+      },
+      {
+        "fact": "The Canadian Coat of Arms features the motto 'A Mari Usque Ad Mare'.",
+        "detail": "This Latin phrase translates to 'From Sea to Sea' and reflects Canada's vast geography, officially adopted in 1921."
+      },
+      {
+        "fact": "The Parliament Buildings are located in Ottawa.",
+        "detail": "Completed in 1927, the Parliament Buildings are a symbol of Canadian democracy and governance."
+      },
+      {
+        "fact": "The Peace Tower is a prominent feature of the Parliament Buildings.",
+        "detail": "Standing at 92.2 meters tall, the Peace Tower was completed in 1927 and serves as a memorial for Canadians who lost their lives in war."
+      },
+      {
+        "fact": "The Rideau Canal is a UNESCO World Heritage Site.",
+        "detail": "Opened in 1832, the canal is known for being the world's largest skating rink in winter, stretching over 7.8 kilometers."
+      },
+      {
+        "fact": "Terry Fox is a national hero in Canada.",
+        "detail": "He is best known for his 'Marathon of Hope' in 1980, where he aimed to run across Canada to raise money for cancer research after losing a leg to the disease."
+      },
+      {
+        "fact": "The Canadian Horse is a recognized symbol of Canada.",
+        "detail": "Designated as a national symbol in 2002, this breed is known for its strength and endurance, with roots tracing back to the 17th century."
+      },
+      {
+        "fact": "The national flag of Canada features a red and white design.",
+        "detail": "Adopted on February 15, 1965, it is a reflection of Canada's heritage and is celebrated annually as National Flag of Canada Day."
+      },
+      {
+        "fact": "The beaver was chosen as a national symbol for its historical significance.",
+        "detail": "The beaver was integral to the fur trade, which played a crucial role in the economic development of Canada."
+      },
+      {
+        "fact": "The maple tree is significant in Canadian culture.",
+        "detail": "It produces the sap used to make maple syrup, a product that is synonymous with Canada and its culinary traditions."
+      },
+      {
+        "fact": "The Canadian Coat of Arms features symbols from the four founding nations of Canada.",
+        "detail": "These include the lion of England, the unicorn of Scotland, the harp of Ireland, and the fleur-de-lis of France."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In what year was the Beaver designated as Canada's official emblem?"
+        },
+        "options": [
+          "1975",
+          "1867",
+          "1921",
+          "1965"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Beaver was designated as a national symbol in 1975, representing the fur trade."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What does the motto 'A Mari Usque Ad Mare' mean?"
+        },
+        "options": [
+          "From Sea to Sea",
+          "From Coast to Coast",
+          "From Lake to Lake",
+          "From North to South"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The motto translates to 'From Sea to Sea', reflecting Canada's vast geography."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "When was the Canadian national flag officially adopted?"
+        },
+        "options": [
+          "1965",
+          "1975",
+          "1980",
+          "1921"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The national flag of Canada was adopted on February 15, 1965."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which building is known for its Peace Tower?"
+        },
+        "options": [
+          "The Parliament Buildings",
+          "The Rideau Canal",
+          "The CN Tower",
+          "The National Gallery"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Peace Tower is a prominent feature of the Parliament Buildings in Ottawa."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What year did Terry Fox begin his 'Marathon of Hope'?"
+        },
+        "options": [
+          "1980",
+          "1975",
+          "1985",
+          "1990"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Terry Fox began his 'Marathon of Hope' in 1980 to raise money for cancer research."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which of the following is a UNESCO World Heritage Site?"
+        },
+        "options": [
+          "Rideau Canal",
+          "Parliament Buildings",
+          "Canadian Horse",
+          "Peace Tower"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Rideau Canal is recognized as a UNESCO World Heritage Site."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the significance of the maple tree in Canada?"
+        },
+        "options": [
+          "Source of lumber",
+          "Produces maple syrup",
+          "Symbol of peace",
+          "National animal"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The maple tree produces sap that is used to make maple syrup, a product synonymous with Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "When was the Canadian Horse designated as a national symbol?"
+        },
+        "options": [
+          "2002",
+          "1975",
+          "1980",
+          "1965"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian Horse was designated as a national symbol in 2002."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which animal is integral to the history of the fur trade in Canada?"
+        },
+        "options": [
+          "Moose",
+          "Beaver",
+          "Bear",
+          "Wolf"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The beaver was integral to the fur trade, which played a crucial role in Canada's economic development."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What does the Canadian Coat of Arms feature?"
+        },
+        "options": [
+          "Only one animal",
+          "Symbols from four founding nations",
+          "A single flower",
+          "The national flag"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Coat of Arms features symbols from the four founding nations of Canada."
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "title": "Important Dates & Holidays",
+    "situation": "Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada Day is celebrated on July 1.",
+        "detail": "Canada Day marks the anniversary of the confederation of Canada in 1867, when the British North America Act came into effect."
+      },
+      {
+        "fact": "Remembrance Day is observed on November 11.",
+        "detail": "This day honors the members of the armed forces who have died in the line of duty during World War I and subsequent conflicts."
+      },
+      {
+        "fact": "Victoria Day is celebrated on the last Monday before May 25.",
+        "detail": "Victoria Day commemorates Queen Victoria's birthday and is often considered the unofficial start of summer in Canada."
+      },
+      {
+        "fact": "National Indigenous Peoples Day is celebrated on June 21.",
+        "detail": "This day recognizes and celebrates the cultures and contributions of Indigenous peoples in Canada."
+      },
+      {
+        "fact": "St-Jean-Baptiste Day is celebrated on June 24.",
+        "detail": "This holiday is a celebration of the French Canadian culture and is recognized primarily in Quebec."
+      },
+      {
+        "fact": "Thanksgiving is celebrated on the second Monday in October.",
+        "detail": "Thanksgiving is a time for Canadians to give thanks for the harvest and blessings of the past year."
+      },
+      {
+        "fact": "The Terry Fox Run occurs on the second Sunday in September.",
+        "detail": "This annual event honors Terry Fox, who attempted to run across Canada to raise money for cancer research."
+      },
+      {
+        "fact": "Canada Day was first celebrated in 1868.",
+        "detail": "The first official celebration was known as Dominion Day, which was later renamed Canada Day in 1982."
+      },
+      {
+        "fact": "Remembrance Day was first observed in 1919.",
+        "detail": "It was originally called Armistice Day to mark the end of World War I."
+      },
+      {
+        "fact": "The first Victoria Day was celebrated in 1845.",
+        "detail": "It was established as a public holiday to honor Queen Victoria's birthday."
+      },
+      {
+        "fact": "National Indigenous Peoples Day was first celebrated in 1996.",
+        "detail": "It was established to promote awareness of Indigenous cultures and contributions."
+      },
+      {
+        "fact": "St-Jean-Baptiste Day has been celebrated since 1925.",
+        "detail": "It was declared a national holiday by the Parliament of Canada."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "When is Canada Day celebrated?"
+        },
+        "options": [
+          "July 1",
+          "June 21",
+          "August 1",
+          "May 24"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada Day is celebrated on July 1, marking the anniversary of the confederation of Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What is the significance of Remembrance Day?"
+        },
+        "options": [
+          "Celebrates the end of World War II",
+          "Honors fallen soldiers",
+          "Marks Canada's independence",
+          "Celebrates Canadian culture"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Remembrance Day honors the members of the armed forces who died in the line of duty."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Victoria Day is celebrated on which date?"
+        },
+        "options": [
+          "Last Monday before May 25",
+          "June 24",
+          "July 1",
+          "First Monday in August"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Victoria Day is celebrated on the last Monday before May 25 to honor Queen Victoria's birthday."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "When is National Indigenous Peoples Day observed?"
+        },
+        "options": [
+          "June 21",
+          "July 1",
+          "November 11",
+          "October 12"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "National Indigenous Peoples Day is celebrated on June 21 to recognize Indigenous cultures."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the date of St-Jean-Baptiste Day?"
+        },
+        "options": [
+          "June 24",
+          "July 1",
+          "May 24",
+          "August 15"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "St-Jean-Baptiste Day is celebrated on June 24 and honors French Canadian culture."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "When is Thanksgiving celebrated in Canada?"
+        },
+        "options": [
+          "First Monday in October",
+          "Second Monday in October",
+          "Last Monday in November",
+          "Fourth Thursday in November"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Thanksgiving in Canada is celebrated on the second Monday in October."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "The Terry Fox Run is held on which Sunday?"
+        },
+        "options": [
+          "First Sunday in September",
+          "Second Sunday in September",
+          "Third Sunday in September",
+          "Fourth Sunday in September"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Terry Fox Run takes place on the second Sunday in September to honor Terry Fox."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What year was the first official Canada Day celebrated?"
+        },
+        "options": [
+          "1867",
+          "1868",
+          "1870",
+          "1982"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The first official celebration of Canada Day was in 1868, marking the confederation."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Remembrance Day was first observed in which year?"
+        },
+        "options": [
+          "1918",
+          "1919",
+          "1920",
+          "1921"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Remembrance Day was first observed in 1919, originally called Armistice Day."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "When was National Indigenous Peoples Day first celebrated?"
+        },
+        "options": [
+          "1990",
+          "1996",
+          "2000",
+          "2005"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "National Indigenous Peoples Day was first celebrated in 1996 to promote awareness of Indigenous cultures."
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "title": "Canadian Culture & Values",
+    "situation": "Who We Are — Canadian Citizenship Test",
+    "grammarFocus": "Who We Are",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada's Multiculturalism Policy",
+        "detail": "Introduced in 1971, Canada's Multiculturalism Policy recognizes the cultural diversity of Canadian society and promotes the integration of immigrants while preserving their cultural heritage."
+      },
+      {
+        "fact": "Official Languages",
+        "detail": "Canada has two official languages: English and French, as established by the Official Languages Act of 1969."
+      },
+      {
+        "fact": "National Winter Sport",
+        "detail": "Hockey was declared Canada's national winter sport in 1994, reflecting the sport's significance in Canadian culture."
+      },
+      {
+        "fact": "National Summer Sport",
+        "detail": "Lacrosse was designated as Canada's national summer sport in 2003, highlighting its historical and cultural importance."
+      },
+      {
+        "fact": "Peacekeeping Tradition",
+        "detail": "Canada has a strong peacekeeping tradition, notably exemplified by its involvement in United Nations peacekeeping missions since the 1950s."
+      },
+      {
+        "fact": "Mosaic vs Melting Pot",
+        "detail": "Canada is often described as a mosaic, meaning it celebrates and maintains the distinctiveness of various cultural groups, in contrast to the melting pot concept where cultures blend into one."
+      },
+      {
+        "fact": "Canadian Charter of Rights and Freedoms",
+        "detail": "The Charter, enacted in 1982, guarantees fundamental rights and freedoms for all Canadians, including equality rights."
+      },
+      {
+        "fact": "Cultural Tolerance",
+        "detail": "Canada is known for its cultural tolerance, with a strong emphasis on acceptance and respect for diverse backgrounds."
+      },
+      {
+        "fact": "Indigenous Peoples",
+        "detail": "Canada recognizes three main groups of Indigenous peoples: First Nations, Inuit, and Métis, each with its own unique cultures and histories."
+      },
+      {
+        "fact": "Cultural Contributions",
+        "detail": "Canada's cultural contributions include literature, music, and art, with notable figures like Leonard Cohen and Margaret Atwood shaping Canadian identity."
+      },
+      {
+        "fact": "Immigration and Diversity",
+        "detail": "Canada has welcomed millions of immigrants since the 19th century, contributing to its diverse population and cultural landscape."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In what year was Canada's Multiculturalism Policy introduced?"
+        },
+        "options": [
+          "1971",
+          "1982",
+          "1969",
+          "2003"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Multiculturalism Policy was introduced in 1971, recognizing the diversity of Canadian society."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which act established French and English as official languages in Canada?"
+        },
+        "options": [
+          "Official Languages Act",
+          "Canadian Charter",
+          "Multiculturalism Act",
+          "Peacekeeping Act"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Official Languages Act, enacted in 1969, established English and French as Canada's official languages."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What year was lacrosse declared Canada's national summer sport?"
+        },
+        "options": [
+          "2003",
+          "1994",
+          "1982",
+          "1971"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Lacrosse was designated as Canada's national summer sport in 2003."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which of the following best describes Canada's approach to cultural diversity?"
+        },
+        "options": [
+          "Mosaic",
+          "Melting Pot",
+          "Uniformity",
+          "Homogeneity"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada is often described as a mosaic, celebrating the distinctiveness of various cultural groups."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What does the Canadian Charter of Rights and Freedoms guarantee?"
+        },
+        "options": [
+          "Cultural homogeneity",
+          "Fundamental rights and freedoms",
+          "Economic rights",
+          "Political uniformity"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Charter guarantees fundamental rights and freedoms for all Canadians."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "When did Canada begin its involvement in United Nations peacekeeping missions?"
+        },
+        "options": [
+          "1950s",
+          "1960s",
+          "1970s",
+          "1980s"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada's involvement in UN peacekeeping missions began in the 1950s."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which sport was declared Canada's national winter sport?"
+        },
+        "options": [
+          "Lacrosse",
+          "Soccer",
+          "Hockey",
+          "Basketball"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Hockey was declared Canada's national winter sport in 1994."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which group is NOT recognized as an Indigenous people in Canada?"
+        },
+        "options": [
+          "First Nations",
+          "Inuit",
+          "Métis",
+          "Sami"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "The Sami are not recognized as Indigenous peoples in Canada; the recognized groups are First Nations, Inuit, and Métis."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which Canadian author is known for their contributions to literature?"
+        },
+        "options": [
+          "Leonard Cohen",
+          "Justin Trudeau",
+          "Wayne Gretzky",
+          "David Suzuki"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Leonard Cohen is a notable Canadian author and musician known for his literary contributions."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the significance of the year 1982 in Canadian history?"
+        },
+        "options": [
+          "Introduction of Multiculturalism",
+          "Enactment of the Charter",
+          "Official Languages Act",
+          "National Sports Act"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The year 1982 is significant for the enactment of the Canadian Charter of Rights and Freedoms."
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "title": "🏆 PRACTICE TEST 3",
+    "situation": "Simulated Citizenship Test",
+    "grammarFocus": "All Topics",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Practice Test — Level 3",
+        "detail": "20 questions, 75% to pass. Good luck! 🍁"
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did Canada officially become a country through the British North America Act?"
+        },
+        "options": [
+          "1867",
+          "1871",
+          "1869",
+          "1885"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Canada became a country on July 1, 1867, with the enactment of the British North America Act."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which province was the last to join Canada?"
+        },
+        "options": [
+          "Newfoundland and Labrador",
+          "British Columbia",
+          "Prince Edward Island",
+          "Alberta"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Newfoundland and Labrador joined Canada on March 31, 1949, making it the last province to join."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which document serves as Canada's constitution?"
+        },
+        "options": [
+          "The Constitution Act, 1867",
+          "The Charter of Rights and Freedoms",
+          "The British North America Act",
+          "The Statute of Westminster"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The Constitution Act, 1867, is a key document that forms the basis of Canada's constitution."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the significance of the Statute of Westminster, 1931?"
+        },
+        "options": [
+          "It granted Canada full legislative independence",
+          "It established the Canadian Senate",
+          "It created the Royal Canadian Navy",
+          "It defined the powers of the Governor General"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The Statute of Westminster, 1931, granted Canada full legislative independence from the UK."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Who was the first Prime Minister of Canada?"
+        },
+        "options": [
+          "John A. Macdonald",
+          "Alexander Mackenzie",
+          "Wilfrid Laurier",
+          "Louis St. Laurent"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "John A. Macdonald was the first Prime Minister of Canada, serving from 1867 to 1873 and again from 1878 to 1891."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which war did Canada participate in as part of the British Empire in 1914?"
+        },
+        "options": [
+          "World War I",
+          "World War II",
+          "The Boer War",
+          "The Korean War"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Canada entered World War I in 1914 as part of the British Empire."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the name of the national anthem of Canada?"
+        },
+        "options": [
+          "O Canada",
+          "God Save the Queen",
+          "The Maple Leaf Forever",
+          "This Land is Your Land"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The national anthem of Canada is 'O Canada'."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which of the following provinces is the only officially bilingual province in Canada?"
+        },
+        "options": [
+          "Quebec",
+          "New Brunswick",
+          "Ontario",
+          "Manitoba"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "New Brunswick is the only officially bilingual province in Canada, recognizing both English and French."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "In what year was the Charter of Rights and Freedoms enacted?"
+        },
+        "options": [
+          "1982",
+          "1980",
+          "1976",
+          "1990"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The Charter of Rights and Freedoms was enacted in 1982 as part of the Constitution Act."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "Which Canadian city is known as the 'Gateway to the North'?"
+        },
+        "options": [
+          "Toronto",
+          "Vancouver",
+          "Edmonton",
+          "Whitehorse"
+        ],
+        "correct": 2,
+        "points": 5,
+        "explanation": "Edmonton is often referred to as the 'Gateway to the North' due to its role as a transportation hub."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 11,
+        "question": {
+          "text": "What is the capital city of Canada?"
+        },
+        "options": [
+          "Toronto",
+          "Ottawa",
+          "Montreal",
+          "Vancouver"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "Ottawa is the capital city of Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 12,
+        "question": {
+          "text": "Which of the following is a symbol of Canada?"
+        },
+        "options": [
+          "The Bald Eagle",
+          "The Maple Leaf",
+          "The Rose",
+          "The Thistle"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Maple Leaf is a national symbol of Canada and is featured on the national flag."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 13,
+        "question": {
+          "text": "Who was the first woman elected to the House of Commons?"
+        },
+        "options": [
+          "Agnes Macphail",
+          "Emily Murphy",
+          "Nellie McClung",
+          "Frances Wright"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Agnes Macphail was the first woman elected to the House of Commons in 1921."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 14,
+        "question": {
+          "text": "Which of the following is NOT a territory in Canada?"
+        },
+        "options": [
+          "Yukon",
+          "Northwest Territories",
+          "Nunavut",
+          "Nova Scotia"
+        ],
+        "correct": 3,
+        "points": 5,
+        "explanation": "Nova Scotia is a province, while Yukon, Northwest Territories, and Nunavut are territories."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 15,
+        "question": {
+          "text": "Who is the current Monarch of Canada as of 2023?"
+        },
+        "options": [
+          "Queen Elizabeth II",
+          "King Charles III",
+          "Queen Victoria",
+          "Prince William"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "As of 2023, the current Monarch of Canada is King Charles III."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 16,
+        "question": {
+          "text": "What is the highest court in Canada?"
+        },
+        "options": [
+          "The Federal Court",
+          "The Supreme Court",
+          "The Court of Appeal",
+          "The Provincial Court"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Supreme Court of Canada is the highest court in the country."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 17,
+        "question": {
+          "text": "Which Canadian province is known for its oil sands?"
+        },
+        "options": [
+          "Alberta",
+          "Saskatchewan",
+          "British Columbia",
+          "Newfoundland and Labrador"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Alberta is known for its oil sands, particularly in the Athabasca region."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 18,
+        "question": {
+          "text": "What is the largest province in Canada by area?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "British Columbia",
+          "Alberta"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "Quebec is the largest province in Canada by area."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 19,
+        "question": {
+          "text": "Which of the following is a right guaranteed under the Canadian Charter of Rights and Freedoms?"
+        },
+        "options": [
+          "Right to bear arms",
+          "Right to a fair trial",
+          "Right to free education",
+          "Right to work"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The right to a fair trial is guaranteed under the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 20,
+        "question": {
+          "text": "What is the main responsibility of the Governor General of Canada?"
+        },
+        "options": [
+          "To make laws",
+          "To represent the monarch",
+          "To lead the military",
+          "To manage the economy"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The main responsibility of the Governor General of Canada is to represent the monarch."
+      }
+    ]
+  }
+]

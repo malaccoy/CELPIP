@@ -433,7 +433,7 @@ export default function Achievements({ mode = 'full' }: AchievementsProps) {
               </div>
               <div className={styles.achievementInfo}>
                 <h4>{isUnlocked ? achievement.name : '???'}</h4>
-                <p>{isUnlocked ? achievement.description : 'Continue praticando para desbloquear'}</p>
+                <p>{isUnlocked ? achievement.description : 'Keep practicing to unlock'}</p>
                 {isUnlocked && userAchievement && (
                   <span className={styles.unlockedDate}>
                     Desbloqueado em {new Date(userAchievement.unlockedAt).toLocaleDateString('pt-BR')}

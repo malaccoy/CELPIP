@@ -10,20 +10,31 @@ interface NavItem {
   to: string;
   icon: React.ElementType;
   label: string;
+  external?: boolean;
 }
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/english', icon: (() => null) as any, label: '🍁 English for Citizenship' },
   { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
-  { to: '/blog', icon: BookOpen, label: 'Learn' },
+  { to: '/blog', icon: GraduationCap, label: 'Blog' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
   { to: '/profile', icon: User, label: 'Profile' },
   { to: '/support', icon: HelpCircle, label: 'Support' },
+  { to: 'https://t.me/+YcO9MfUHIjQyYjAx', icon: (() => null) as any, label: '💬 Community', external: true },
 ];
 
-const SidebarItem = ({ to, icon: Icon, label, isActive }: { to: string; icon: React.ElementType; label: string; isActive: boolean }) => {
+const SidebarItem = ({ to, icon: Icon, label, isActive, external }: { to: string; icon: React.ElementType; label: string; isActive: boolean; external?: boolean }) => {
+  if (external) {
+    return (
+      <a href={to} target="_blank" rel="noopener noreferrer" className={styles.navLink}>
+        <Icon size={18} />
+        <span>{label}</span>
+      </a>
+    );
+  }
   return (
     <Link
       href={to}
@@ -85,6 +96,7 @@ export const Sidebar: React.FC = () => {
               icon={item.icon}
               label={item.label}
               isActive={isActive(item.to)}
+              external={item.external}
             />
           ))}
         </nav>

@@ -7,7 +7,12 @@
     "optionB": "Transform the parking lots into bike lanes to encourage cycling and reduce traffic congestion.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of parks, such as providing green space, improving air quality, and enhancing community well-being.",
+      "Highlight the advantages of bike lanes, including promoting eco-friendly transportation, reducing traffic congestion, and encouraging a healthier lifestyle.",
+      "Consider the impact on residents and visitors, weighing how each option could improve urban living and support local businesses."
+    ]
   },
   {
     "id": "task2-02",
@@ -17,7 +22,12 @@
     "optionB": "Support the traditional school calendar.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the potential benefits of year-round schooling, such as reduced summer learning loss and improved retention of information.",
+      "Address possible challenges of year-round schooling, including scheduling conflicts for families and the impact on traditional summer activities.",
+      "Consider the advantages of the traditional school calendar, like extended breaks for family time and the opportunity for students to recharge before the new school year."
+    ]
   },
   {
     "id": "task2-03",
@@ -27,7 +37,12 @@
     "optionB": "Private office",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the advantages of an open office environment, such as collaboration and communication among team members.",
+      "Mention the benefits of a private office, including privacy, reduced distractions, and the ability to focus on tasks.",
+      "Explain personal preferences or work style that make one option more appealing, along with any potential challenges of the chosen environment."
+    ]
   },
   {
     "id": "task2-04",
@@ -37,7 +52,12 @@
     "optionB": "Implement lower speed limits",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the effectiveness of speed bumps in physically slowing down vehicles and reducing accidents.",
+      "Consider the impact of lower speed limits on driver behavior and overall community safety.",
+      "Evaluate the long-term maintenance and cost implications of installing speed bumps versus implementing lower speed limits."
+    ]
   },
   {
     "id": "task2-05",
@@ -47,7 +67,12 @@
     "optionB": "I prefer in-person exams.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the convenience and flexibility of online exams, including the ability to take them from anywhere.",
+      "Highlight the benefits of in-person exams, such as direct interaction with instructors and a controlled testing environment.",
+      "Mention any personal experiences or examples that illustrate your preference for either online or in-person exams."
+    ]
   },
   {
     "id": "task2-06",
@@ -57,7 +82,12 @@
     "optionB": "Offer more programs and workshops",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of extending operating hours, such as increased accessibility for different schedules and more time for quiet study.",
+      "Highlight the advantages of offering more programs and workshops, like promoting community engagement and providing learning opportunities for diverse interests.",
+      "Consider the potential impact of each option on library usage and community satisfaction, weighing the immediate needs against long-term benefits."
+    ]
   },
   {
     "id": "task2-07",
@@ -67,7 +97,12 @@
     "optionB": "Business Formal Dress Code",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of a casual dress code, such as increased comfort and employee satisfaction.",
+      "Explain how a business formal dress code may enhance professionalism and client perceptions.",
+      "Consider the company culture and the type of work being done to support your preference for either dress code."
+    ]
   },
   {
     "id": "task2-08",
@@ -77,7 +112,12 @@
     "optionB": "Outdoor ice rink",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of having access to an indoor swimming pool, such as year-round availability and a controlled environment.",
+      "Highlight the enjoyment and social aspects of using an outdoor ice rink, including seasonal activities and community events.",
+      "Consider personal preferences, such as swimming skills or interest in ice sports, and how they influence the choice between the two facilities."
+    ]
   },
   {
     "id": "task2-09",
@@ -87,7 +127,12 @@
     "optionB": "Allow cellphones as learning tools.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the potential distractions caused by cellphones that can hinder students' focus and academic performance.",
+      "Highlight the educational benefits of allowing cellphones, such as access to online resources, educational apps, and communication tools for collaborative projects.",
+      "Consider the importance of teaching students responsible cellphone use, emphasizing digital literacy and self-regulation skills."
+    ]
   },
   {
     "id": "task2-10",
@@ -97,7 +142,12 @@
     "optionB": "Upgrading existing train services to reduce travel times and improve efficiency.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of implementing more bus routes, such as increased accessibility for underserved areas and potential ridership growth.",
+      "Highlight the advantages of faster train services, including reduced travel times, improved efficiency, and the potential for higher passenger capacity.",
+      "Consider the long-term impacts of both options on the overall transit system, including cost, environmental factors, and community satisfaction."
+    ]
   },
   {
     "id": "task2-11",
@@ -107,7 +157,12 @@
     "optionB": "Flexible daily hours",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of a 4-day work week, such as increased productivity and better work-life balance.",
+      "Explain the advantages of flexible daily hours, including the ability to manage personal commitments and tailor work hours to peak productivity times.",
+      "Consider personal preferences and lifestyle factors that influence the choice between the two arrangements, providing examples to support your viewpoint."
+    ]
   },
   {
     "id": "task2-12",
@@ -117,7 +172,12 @@
     "optionB": "Improve existing parks.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the importance of affordable housing in addressing homelessness and providing stability for low-income families.",
+      "Highlight the long-term benefits of affordable housing on community development and economic growth.",
+      "Consider the potential impact of improving parks on community wellbeing, but argue why the urgent need for housing should take precedence."
+    ]
   },
   {
     "id": "task2-13",
@@ -127,7 +187,12 @@
     "optionB": "Switch to a reusable bag program.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the environmental impact of paper bags versus reusable bags, including sustainability and waste reduction.",
+      "Consider the convenience and cost-effectiveness of using reusable bags for consumers compared to paper bags.",
+      "Mention any potential challenges or drawbacks of implementing a reusable bag program, such as initial costs or consumer adaptation."
+    ]
   },
   {
     "id": "task2-14",
@@ -137,7 +202,12 @@
     "optionB": "Enhance virtual visits for patients",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the emotional and psychological benefits of in-person visits for patients and their families, such as the importance of physical presence and support.",
+      "Consider the logistical advantages of extending visiting hours, including flexible scheduling for visitors and reduced stress for patients during recovery.",
+      "Evaluate the potential for enhancing virtual visits, including technological improvements, accessibility for remote family members, and the ability to maintain connections without physical presence."
+    ]
   },
   {
     "id": "task2-15",
@@ -147,7 +217,12 @@
     "optionB": "No, I prefer keeping co-op placements optional.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of co-op placements, such as gaining practical experience and improving employability skills.",
+      "Address potential challenges or concerns of making co-op placements mandatory, such as increased pressure on students or logistical issues.",
+      "Consider the impact on different fields of study, highlighting how co-op placements can be more beneficial for some students than others."
+    ]
   },
   {
     "id": "task2-16",
@@ -157,7 +232,12 @@
     "optionB": "Renovate the existing library",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of a new community centre, such as providing a space for various activities and events for all age groups.",
+      "Highlight the limitations of the existing library and how a renovation could improve its functionality and accessibility.",
+      "Consider the long-term impact on the community, including potential for increased social interaction and engagement versus preserving a cultural institution."
+    ]
   },
   {
     "id": "task2-17",
@@ -167,7 +247,12 @@
     "optionB": "Maintain a hybrid work model",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of a permanent remote work policy, such as increased flexibility and work-life balance for employees.",
+      "Consider the potential drawbacks of remote work, including challenges in team collaboration and communication.",
+      "Evaluate the advantages of a hybrid work model, such as opportunities for in-person interactions and maintaining a company culture."
+    ]
   },
   {
     "id": "task2-18",
@@ -177,7 +262,12 @@
     "optionB": "Increase emphasis on STEM initiatives by introducing more advanced courses and hands-on projects.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of arts education in fostering creativity, critical thinking, and emotional expression among students.",
+      "Highlight the importance of STEM education in preparing students for future job markets and technological advancements.",
+      "Consider the potential for integrating arts and STEM initiatives, such as STEAM programs, to provide a well-rounded education that appeals to diverse student interests."
+    ]
   },
   {
     "id": "task2-19",
@@ -187,7 +277,12 @@
     "optionB": "No, the building should remain pet-free.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of allowing pets, such as increased tenant satisfaction and attracting a wider range of potential renters.",
+      "Address potential concerns, including noise, allergies, and maintenance issues, and suggest solutions like pet deposits or specific pet policies.",
+      "Highlight how a pet-friendly policy can promote a sense of community among residents and improve the overall living environment."
+    ]
   },
   {
     "id": "task2-20",
@@ -197,7 +292,12 @@
     "optionB": "Provide discounts for students",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the social benefits of offering free rides for seniors, such as improving their mobility and access to essential services.",
+      "Consider the financial impact of providing discounts for students, including support for their education and reducing transportation costs.",
+      "Evaluate the overall implications of each option on the community, including potential long-term benefits and who would benefit more."
+    ]
   },
   {
     "id": "task2-21",
@@ -207,7 +307,12 @@
     "optionB": "Build a new concert venue.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the economic benefits of a new sports stadium, such as job creation and increased tourism.",
+      "Highlight the cultural impact of a concert venue, including community engagement and support for local artists.",
+      "Consider the potential for year-round usage and diverse events at each venue to determine overall value for the city."
+    ]
   },
   {
     "id": "task2-22",
@@ -217,7 +322,12 @@
     "optionB": "Monthly wellness allowance to support health and well-being",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the financial benefits of an annual bonus and how it can impact long-term financial goals.",
+      "Explain the importance of a monthly wellness allowance for maintaining physical and mental health.",
+      "Consider the implications of each option on job satisfaction and overall employee morale."
+    ]
   },
   {
     "id": "task2-23",
@@ -227,7 +337,12 @@
     "optionB": "Dog Park",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Explain the benefits of a community garden, such as promoting sustainability, providing fresh produce, and fostering community engagement.",
+      "Discuss the advantages of a dog park, including safe play areas for dogs, opportunities for socializing pet owners, and promoting physical activity.",
+      "Consider the needs of the local community and how each option could enhance the neighborhood's quality of life."
+    ]
   },
   {
     "id": "task2-24",
@@ -237,7 +352,12 @@
     "optionB": "Condensed terms that allow for quicker completion of courses.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of longer semesters, such as reduced stress and more time for deep learning.",
+      "Explain how breaks can enhance overall well-being and provide opportunities for personal development.",
+      "Consider the advantages of condensed terms in terms of time efficiency and quicker course completion, but weigh them against potential challenges like burnout."
+    ]
   },
   {
     "id": "task2-25",
@@ -247,7 +367,12 @@
     "optionB": "A free shuttle service from nearby public transit stations.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the convenience and accessibility of having more parking spaces directly on hospital grounds.",
+      "Highlight the benefits of a free shuttle service, such as reducing traffic congestion and supporting public transit use.",
+      "Consider the overall impact on patient experience, including wait times and ease of access to medical services."
+    ]
   },
   {
     "id": "task2-26",
@@ -257,7 +382,12 @@
     "optionB": "Expand the electric scooter rental system to include more locations and increased availability.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the environmental benefits of bike-sharing programs compared to electric scooters, such as reduced carbon emissions and less congestion.",
+      "Consider the health advantages of cycling as a mode of transportation, including physical fitness and improved mental well-being.",
+      "Evaluate the practicality and accessibility of bike-sharing stations versus electric scooter rentals in terms of ease of use, safety, and user demographics."
+    ]
   },
   {
     "id": "task2-27",
@@ -267,7 +397,12 @@
     "optionB": "Finish school earlier in the afternoon",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of starting school later, such as improved focus and better mental health for students.",
+      "Consider the impact on students' schedules, including extracurricular activities and part-time jobs, when school starts later.",
+      "Evaluate the advantages of finishing school earlier, like increased time for homework, relaxation, and family activities."
+    ]
   },
   {
     "id": "task2-28",
@@ -277,7 +412,12 @@
     "optionB": "An additional five vacation days to use throughout the year.",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the health and fitness benefits of an annual gym membership, including improved physical and mental well-being.",
+      "Consider the value of additional vacation days for work-life balance, relaxation, and personal time.",
+      "Weigh the long-term financial implications of a gym membership versus the immediate gratification of extra vacation time."
+    ]
   },
   {
     "id": "task2-29",
@@ -287,7 +427,12 @@
     "optionB": "Food Truck Festival",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the benefits of a Farmers Market, such as supporting local farmers, promoting healthy eating, and fostering community connections.",
+      "Highlight the advantages of a Food Truck Festival, including diverse food options, a lively atmosphere, and opportunities for local businesses to showcase their offerings.",
+      "Consider the preferences of community members, such as family-friendly activities, accessibility, and potential for social interactions at each event."
+    ]
   },
   {
     "id": "task2-30",
@@ -297,7 +442,12 @@
     "optionB": "Initiating a large-scale tree planting program",
     "instructions": "Choose one option and explain why you prefer it. Give reasons and examples.",
     "wordTarget": 200,
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "bulletPoints": [
+      "Discuss the environmental benefits of solar panels, such as reducing carbon emissions and promoting renewable energy.",
+      "Highlight the long-term economic advantages of solar panels, including lower energy costs for public buildings and potential job creation in the green technology sector.",
+      "Consider the social impact of tree planting, including improving air quality, enhancing community aesthetics, and providing habitats for wildlife, and compare it to the benefits of solar panels."
+    ]
   },
   {
     "title": "Weekend Activity Survey",
@@ -777,6 +927,846 @@
     "tips": [
       "Use formal register and articulate your rationale clearly.",
       "Consider potential counterarguments to your choice and address them."
+    ]
+  },
+  {
+    "id": "task2-061",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local community center is conducting a survey about activities for kids.",
+    "question": "What activities do you think are most enjoyable for children?",
+    "description": "Explain why you think certain activities, like sports or arts and crafts, are good for kids.",
+    "topic": "Kids' Activities",
+    "bulletPoints": [
+      "Discuss the importance of outdoor activities, such as playing sports or exploring nature, for children's physical health and social skills.",
+      "Highlight the value of creative activities, like arts and crafts or music, in fostering children's imagination and self-expression.",
+      "Mention educational activities, such as reading or interactive games, that promote learning and cognitive development in a fun way."
+    ]
+  },
+  {
+    "id": "task2-062",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your employer is surveying employees about workplace snacks.",
+    "question": "What snacks would you like to have at the office?",
+    "description": "Give your opinions on healthy and tasty snack options that you enjoy.",
+    "topic": "Office Snacks",
+    "bulletPoints": [
+      "Mention a variety of healthy snacks to promote well-being, such as fruits, nuts, and yogurt.",
+      "Include some indulgent options for occasional treats, like cookies or chips.",
+      "Consider dietary restrictions and preferences by suggesting gluten-free or vegan snacks."
+    ]
+  },
+  {
+    "id": "task2-063",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local library wants to know about reading preferences.",
+    "question": "What type of books do you enjoy reading the most?",
+    "description": "Discuss your favorite genres and why they interest you.",
+    "topic": "Reading Preferences",
+    "bulletPoints": [
+      "Discuss your favorite genre of books and why it appeals to you.",
+      "Mention specific authors or titles that you enjoy and describe what you like about them.",
+      "Explain how reading these books influences your thoughts, emotions, or daily life."
+    ]
+  },
+  {
+    "id": "task2-064",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A neighborhood association is asking about community events.",
+    "question": "What community event would you like to see more of?",
+    "description": "Share your thoughts on events you enjoy and why they are important for the community.",
+    "topic": "Community Events",
+    "bulletPoints": [
+      "Describe the type of community event you would like to see more of and why it is important.",
+      "Explain the benefits that such an event would bring to the community, including social, cultural, or economic aspects.",
+      "Suggest ways in which the event could be organized or improved to encourage greater participation from community members."
+    ]
+  },
+  {
+    "id": "task2-065",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A nearby grocery store is asking for feedback on shopping preferences.",
+    "question": "What products do you want more of in the store?",
+    "description": "Mention specific items you would like to see and why they are important for you.",
+    "topic": "Grocery Preferences",
+    "bulletPoints": [
+      "Identify specific products that are currently lacking in the store and explain why they are needed.",
+      "Discuss the benefits of having these products available, such as convenience, variety, or health considerations.",
+      "Suggest potential brands or types of products that could be introduced to meet customer demand."
+    ]
+  },
+  {
+    "id": "task2-066",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your school is surveying students about lunch options.",
+    "question": "What is your favorite type of school lunch?",
+    "description": "Describe your favorite lunch foods and why they are your top choice.",
+    "topic": "School Lunch",
+    "bulletPoints": [
+      "Describe your favorite type of school lunch and explain why you enjoy it.",
+      "Include details about the ingredients, taste, and any memorable experiences associated with this lunch.",
+      "Mention any nutritional benefits and how it compares to other types of school lunches."
+    ]
+  },
+  {
+    "id": "task2-067",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A fitness center is asking about members’ workout preferences.",
+    "question": "What type of exercise do you prefer?",
+    "description": "Explain why you enjoy a specific type of exercise, like yoga or running.",
+    "topic": "Exercise Preferences",
+    "bulletPoints": [
+      "Describe your preferred type of exercise and explain why you enjoy it.",
+      "Discuss any specific benefits you gain from this type of exercise, such as physical health, mental well-being, or social interaction.",
+      "Mention any challenges you face with this type of exercise and how you overcome them."
+    ]
+  },
+  {
+    "id": "task2-068",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local park is conducting a survey about park improvements.",
+    "question": "What improvements would make the park better?",
+    "description": "List some changes or additions you think would enhance the park experience.",
+    "topic": "Park Improvements",
+    "bulletPoints": [
+      "Suggest adding more recreational facilities, such as playgrounds, sports courts, or picnic areas to enhance community engagement.",
+      "Propose improvements to park maintenance, including regular cleaning, landscaping, and better lighting for safety and aesthetics.",
+      "Recommend incorporating nature trails or gardens to promote environmental education and provide a relaxing atmosphere for visitors."
+    ]
+  },
+  {
+    "id": "task2-069",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local coffee shop is conducting a survey about customer preferences.",
+    "question": "What is your favorite coffee drink?",
+    "description": "Explain why you like that drink and any specific flavors you enjoy.",
+    "topic": "Coffee Preferences",
+    "bulletPoints": [
+      "Describe the specific coffee drink you enjoy and its ingredients.",
+      "Explain why this coffee drink is your favorite, including taste, aroma, or any personal memories associated with it.",
+      "Mention the occasions or settings where you prefer to enjoy this coffee drink, such as at home, in a café, or during special events."
+    ]
+  },
+  {
+    "id": "task2-070",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your university is surveying students about study habits.",
+    "question": "What is your best study tip?",
+    "description": "Share a study method that works for you and explain why it is effective.",
+    "topic": "Study Tips",
+    "bulletPoints": [
+      "Clearly state your best study tip and explain why it is effective.",
+      "Provide specific examples of how you have implemented this tip in your own study routine.",
+      "Discuss the positive outcomes or improvements you experienced as a result of using this study tip."
+    ]
+  },
+  {
+    "id": "task2-071",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local pet store is asking about pet care preferences.",
+    "question": "What products do you think are essential for pet care?",
+    "description": "List important items for pet care and explain why they are necessary.",
+    "topic": "Pet Care",
+    "bulletPoints": [
+      "Discuss essential food and nutrition products for pets, emphasizing the importance of a balanced diet.",
+      "Mention grooming supplies and their role in maintaining a pet's hygiene and health.",
+      "Highlight health care products, including vaccinations and preventive medications, to ensure pets stay healthy."
+    ]
+  },
+  {
+    "id": "task2-072",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A command center for a local volunteer group is asking for opinions on charity events.",
+    "question": "What type of charity event do you prefer to participate in?",
+    "description": "Discuss the types of charity events you like and why they are meaningful to you.",
+    "topic": "Charity Events",
+    "bulletPoints": [
+      "Describe the type of charity event you prefer, such as fundraising runs, auctions, or community service activities.",
+      "Explain why this type of event resonates with you, including personal experiences or values that motivate your participation.",
+      "Discuss the impact you believe these events have on the community and why you think they are important."
+    ]
+  },
+  {
+    "id": "task2-073",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your city is conducting a survey about transportation preferences.",
+    "question": "What is your preferred way to get around the city?",
+    "description": "Explain your favorite transportation method and why it works for you.",
+    "topic": "Transportation",
+    "bulletPoints": [
+      "Describe your preferred mode of transportation (e.g., walking, biking, public transit, driving) and why you enjoy it.",
+      "Discuss the advantages of your chosen method, such as convenience, cost-effectiveness, or environmental impact.",
+      "Mention any challenges or drawbacks you may face while using this mode of transportation and how you overcome them."
+    ]
+  },
+  {
+    "id": "task2-074",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local high school is asking students about technology use.",
+    "question": "What technology do you find most useful for school?",
+    "description": "Mention a type of technology you like and explain how it helps you learn.",
+    "topic": "Useful Technology",
+    "bulletPoints": [
+      "Discuss a specific technology, such as a laptop or educational apps, and explain how it enhances learning.",
+      "Mention any features of the technology that make studying more efficient, such as access to resources or collaboration tools.",
+      "Provide a personal example or experience that illustrates how this technology has positively impacted your academic performance."
+    ]
+  },
+  {
+    "id": "task2-075",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your neighborhood council is asking about street safety.",
+    "question": "What do you think can improve safety on our streets?",
+    "description": "List some safety suggestions and explain their importance for the community.",
+    "topic": "Street Safety",
+    "bulletPoints": [
+      "Implementing stricter traffic laws and regulations to deter reckless driving.",
+      "Increasing the presence of streetlights and crosswalks to enhance pedestrian visibility and safety.",
+      "Encouraging community programs that promote awareness and education about road safety for all users."
+    ]
+  },
+  {
+    "id": "task2-076",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local restaurant is surveying customers about new menu items.",
+    "question": "What type of new dish would you like to see on the menu?",
+    "description": "Share a dish you love and explain why it should be added to the menu.",
+    "topic": "Menu Suggestions",
+    "bulletPoints": [
+      "Describe the main ingredients of the new dish and how they complement each other.",
+      "Explain the cultural or personal significance of the dish and why it would appeal to customers.",
+      "Suggest how the dish could be presented or served to enhance the dining experience."
+    ]
+  },
+  {
+    "id": "task2-077",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "Your local newspaper is conducting a survey about reading habits.",
+    "question": "How often do you read the newspaper?",
+    "description": "Give your opinion on how often you read it and why it is important to you.",
+    "topic": "Reading Habits",
+    "bulletPoints": [
+      "Explain your reading habits, including how often you read the newspaper (daily, weekly, occasionally, etc.).",
+      "Discuss the reasons for your reading frequency, such as interest in current events, preference for digital media, or time constraints.",
+      "Mention any specific sections or topics you enjoy reading in the newspaper, such as politics, sports, entertainment, or local news."
+    ]
+  },
+  {
+    "id": "task2-078",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local school board is asking parents about school communication.",
+    "question": "What is your preferred way to receive school news?",
+    "description": "Explain how you like to get information about your child's school and why.",
+    "topic": "School Communication",
+    "bulletPoints": [
+      "Discuss the advantages of your preferred method for receiving school news, such as convenience or accessibility.",
+      "Provide specific examples of how this method has helped you stay informed about school events or announcements.",
+      "Mention any potential drawbacks of alternative methods and why they are less effective for you."
+    ]
+  },
+  {
+    "id": "task2-079",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local home improvement store wants to know about DIY projects.",
+    "question": "What DIY project do you wish to try?",
+    "description": "Describe a project you are interested in and why you want to do it.",
+    "topic": "DIY Projects",
+    "bulletPoints": [
+      "Describe the DIY project you wish to try and why it interests you.",
+      "Explain any skills or materials you will need to complete the project.",
+      "Discuss the potential challenges you might face and how you plan to overcome them."
+    ]
+  },
+  {
+    "id": "task2-080",
+    "task": 2,
+    "difficulty": "beginner",
+    "surveyContext": "A local environmental group is asking about recycling habits.",
+    "question": "What items do you think are important to recycle?",
+    "description": "List some items and explain why recycling them is crucial for the environment.",
+    "topic": "Recycling Awareness",
+    "bulletPoints": [
+      "Discuss common recyclable items such as paper, plastic, glass, and metal, and explain their environmental benefits.",
+      "Highlight the importance of electronic waste recycling and its impact on reducing harmful materials in landfills.",
+      "Mention the significance of recycling items like batteries and textiles, and how they contribute to resource conservation and pollution reduction."
+    ]
+  },
+  {
+    "id": "task2-081",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "The Canadian Health Association is gathering opinions on healthcare services.",
+    "question": "What improvements would you suggest for healthcare services in your community?",
+    "description": "Discuss specific areas in healthcare that require enhancement, such as accessibility, wait times, or quality of care, and provide examples.",
+    "topic": "Healthcare Improvement",
+    "bulletPoints": [
+      "Identify specific areas within healthcare services that require improvement, such as accessibility, wait times, or quality of care.",
+      "Suggest practical solutions or initiatives that could enhance healthcare services, like community health programs or better funding for local clinics.",
+      "Discuss the potential impacts of these improvements on the overall health and well-being of the community, including benefits for different demographics."
+    ]
+  },
+  {
+    "id": "task2-082",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local environmental group is researching community recycling habits.",
+    "question": "How can our community improve its recycling efforts?",
+    "description": "Give your opinion on potential strategies to enhance recycling, like education or better facilities, and include reasons or examples.",
+    "topic": "Recycling Improvement",
+    "bulletPoints": [
+      "Educate the community on proper recycling practices and the importance of recycling through workshops and informational campaigns.",
+      "Increase the availability of recycling bins in public spaces and residential areas to make recycling more accessible.",
+      "Implement a rewards program to incentivize households and businesses for actively participating in recycling efforts."
+    ]
+  },
+  {
+    "id": "task2-083",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "The City of Toronto is conducting a survey on public transportation.",
+    "question": "What changes would you recommend for the public transit system?",
+    "description": "Discuss any necessary changes to transit services, such as reliability, frequency, or coverage, and provide reasoning.",
+    "topic": "Public Transportation",
+    "bulletPoints": [
+      "Suggest improvements in the frequency and reliability of transit services to reduce wait times.",
+      "Propose the introduction of more environmentally friendly options, such as electric buses or enhanced bike-sharing programs.",
+      "Recommend better accessibility features for individuals with disabilities, including more ramps and priority seating."
+    ]
+  },
+  {
+    "id": "task2-084",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "Your local council is seeking feedback on recreational services.",
+    "question": "What suggestions do you have for improving recreational facilities or programs?",
+    "description": "Share ideas for enhancing community rec services, focusing on accessibility, quality, or variety, supported by examples.",
+    "topic": "Recreation Services",
+    "bulletPoints": [
+      "Suggest specific improvements or additions to existing recreational facilities, such as more sports fields, walking trails, or playgrounds.",
+      "Propose new programs or activities that could be offered to cater to different age groups or interests, such as fitness classes, art workshops, or community events.",
+      "Discuss the importance of accessibility and inclusivity in recreational facilities, ensuring that they are welcoming and usable for all community members."
+    ]
+  },
+  {
+    "id": "task2-085",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A university is surveying students about online learning experiences.",
+    "question": "What are your thoughts on the effectiveness of online learning compared to in-person classes?",
+    "description": "Provide an opinion on online learning's benefits and drawbacks using personal experiences or observations.",
+    "topic": "Online Learning",
+    "bulletPoints": [
+      "Compare the flexibility and convenience of online learning with the structured environment of in-person classes.",
+      "Discuss the impact of social interaction and collaboration in in-person classes versus the potential isolation of online learning.",
+      "Evaluate the effectiveness of learning outcomes and engagement levels in both formats, considering different learning styles."
+    ]
+  },
+  {
+    "id": "task2-086",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A community center is evaluating programs for seniors.",
+    "question": "What activities do you think should be offered to better serve seniors?",
+    "description": "Recommend programs or services that cater to seniors' social, physical, or educational needs with justification.",
+    "topic": "Senior Programs",
+    "bulletPoints": [
+      "Discuss the importance of physical activities tailored for seniors, such as yoga or walking clubs, to promote health and well-being.",
+      "Suggest social engagement opportunities like community events or hobby classes to encourage interaction and reduce isolation.",
+      "Highlight the need for educational programs or workshops that focus on technology use or life skills to help seniors stay connected and informed."
+    ]
+  },
+  {
+    "id": "task2-087",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "Your employer is conducting an employee satisfaction survey.",
+    "question": "What changes would enhance employee satisfaction at work?",
+    "description": "Provide suggestions for improvements in areas like management practices, workplace environment, or benefits.",
+    "topic": "Employee Satisfaction",
+    "bulletPoints": [
+      "Introduce flexible work hours or remote work options to improve work-life balance.",
+      "Implement regular feedback and recognition programs to acknowledge employee contributions and boost morale.",
+      "Enhance professional development opportunities through training, workshops, and career advancement support."
+    ]
+  },
+  {
+    "id": "task2-088",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A city planner is seeking input on urban green spaces.",
+    "question": "How can we improve or add to the green spaces in our city?",
+    "description": "Share your ideas on enhancing parks or creating new green areas with examples and reasoning.",
+    "topic": "Urban Green Spaces",
+    "bulletPoints": [
+      "Discuss the importance of green spaces for community health and well-being.",
+      "Propose specific actions such as creating new parks, planting trees, or converting vacant lots into gardens.",
+      "Highlight the benefits of involving community members in the planning and maintenance of green spaces."
+    ]
+  },
+  {
+    "id": "task2-089",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local school board is evaluating parent engagement strategies.",
+    "question": "What strategies would you suggest to increase parent involvement in schools?",
+    "description": "Suggest specific initiatives to foster parent participation and explain how they would benefit the school community.",
+    "topic": "Parent Engagement",
+    "bulletPoints": [
+      "Encourage regular communication between teachers and parents through newsletters, emails, or school apps to keep parents informed about school activities and their child's progress.",
+      "Organize workshops and events that involve parents, such as parenting classes or family nights, to foster a sense of community and provide parents with the tools to support their children's education.",
+      "Create volunteer opportunities for parents within the school, allowing them to participate in classroom activities, field trips, or school committees to strengthen their connection to the school environment."
+    ]
+  },
+  {
+    "id": "task2-090",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A community health organization is asking about smoking cessation programs.",
+    "question": "What initiatives would you recommend to help people quit smoking?",
+    "description": "Share suggestions for effective smoking cessation strategies and support programs, backed by reasoning and examples.",
+    "topic": "Smoking Cessation",
+    "bulletPoints": [
+      "Implement educational programs in schools to raise awareness about the dangers of smoking.",
+      "Provide accessible resources and support systems, such as quitlines and counseling services, for individuals looking to quit.",
+      "Encourage the establishment of smoke-free environments and policies to reduce smoking prevalence and promote healthier lifestyles."
+    ]
+  },
+  {
+    "id": "task2-091",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A library is collecting feedback on its services and resources.",
+    "question": "What changes would you propose to improve library services?",
+    "description": "Discuss aspects of the library experience that could be improved, such as book selection, programs, or accessibility.",
+    "topic": "Library Services",
+    "bulletPoints": [
+      "Suggest expanding the library's digital resources, including e-books and online databases, to enhance accessibility for all users.",
+      "Propose implementing more community programs and workshops that cater to diverse interests, such as technology training or book clubs, to engage a wider audience.",
+      "Recommend improving the library's physical space by creating more study areas, comfortable seating, and quiet zones to foster a conducive environment for learning and research."
+    ]
+  },
+  {
+    "id": "task2-092",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local restaurant is seeking feedback on menu options.",
+    "question": "What types of dishes would you like to see added to the menu?",
+    "description": "Provide your ideas for new menu items and explain how they would appeal to customers or reflect local culture.",
+    "topic": "Restaurant Menu",
+    "bulletPoints": [
+      "Suggest specific types of dishes (e.g., vegetarian, gluten-free, international cuisine) that would appeal to a diverse audience.",
+      "Explain why these dishes should be added, including potential benefits such as attracting more customers or enhancing the dining experience.",
+      "Consider including seasonal or locally-sourced ingredients to promote sustainability and freshness in the menu options."
+    ]
+  },
+  {
+    "id": "task2-093",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A city is assessing its safety measures.",
+    "question": "What measures do you believe could enhance community safety?",
+    "description": "Discuss specific safety initiatives or community programs that could reduce crime or increase safety awareness.",
+    "topic": "Community Safety",
+    "bulletPoints": [
+      "Discuss the importance of community policing and building relationships between law enforcement and residents.",
+      "Suggest implementing neighborhood watch programs to encourage community vigilance and cooperation.",
+      "Highlight the role of public lighting and infrastructure improvements in enhancing safety in public spaces."
+    ]
+  },
+  {
+    "id": "task2-094",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local business is conducting a survey about customer service quality.",
+    "question": "How can we improve our customer service experience?",
+    "description": "Provide suggestions focused on enhancing customer interactions, service efficiency, or complaint resolution.",
+    "topic": "Customer Service",
+    "bulletPoints": [
+      "Implement regular training programs for staff to enhance communication and problem-solving skills.",
+      "Introduce a customer feedback system to gather insights and address concerns promptly.",
+      "Utilize technology, such as chatbots or a dedicated app, to provide quicker responses and support."
+    ]
+  },
+  {
+    "id": "task2-095",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A non-profit organization is surveying community volunteers.",
+    "question": "What support or resources would make volunteering more effective?",
+    "description": "Share your ideas on resources or training that could benefit volunteers and increase their impact.",
+    "topic": "Volunteer Support",
+    "bulletPoints": [
+      "Discuss the importance of training programs for volunteers to enhance their skills and effectiveness.",
+      "Highlight the need for better communication and coordination among volunteer organizations to streamline efforts.",
+      "Suggest providing resources such as transportation, materials, or financial support to reduce barriers to participation."
+    ]
+  },
+  {
+    "id": "task2-096",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "The provincial government is assessing educational curriculum effectiveness.",
+    "question": "What changes would you suggest to the current school curriculum?",
+    "description": "Discuss specific subjects or teaching methods that could be improved or introduced to better engage students.",
+    "topic": "Educational Curriculum",
+    "bulletPoints": [
+      "Suggest incorporating more practical life skills, such as financial literacy and mental health education, to better prepare students for real-world challenges.",
+      "Propose integrating technology and coding into the curriculum to enhance students' digital literacy and adaptability in a rapidly changing job market.",
+      "Recommend expanding the arts and physical education programs to promote creativity, physical health, and emotional well-being among students."
+    ]
+  },
+  {
+    "id": "task2-097",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local zoo is evaluating its outreach programs.",
+    "question": "What types of programs would encourage more community involvement at the zoo?",
+    "description": "Suggest outreach initiatives that could attract more community members and explain their potential impact.",
+    "topic": "Zoo Outreach Programs",
+    "bulletPoints": [
+      "Discuss the importance of educational programs for schools that promote awareness about wildlife and conservation.",
+      "Suggest community events such as volunteer days or family fun days that encourage local participation and engagement.",
+      "Propose partnerships with local organizations to create workshops and activities that involve community members in zoo operations and animal care."
+    ]
+  },
+  {
+    "id": "task2-098",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A local university is conducting a survey on campus safety.",
+    "question": "What measures do you suggest to improve safety on campus?",
+    "description": "Provide recommendations focused on enhancing safety protocols and community awareness within the university.",
+    "topic": "Campus Safety",
+    "bulletPoints": [
+      "Implement more lighting in dark areas to enhance visibility and deter crime.",
+      "Increase the presence of campus security personnel and establish a 24/7 safety hotline for students.",
+      "Organize safety workshops and self-defense classes to educate students on personal safety measures."
+    ]
+  },
+  {
+    "id": "task2-099",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A city council is gathering input about a new traffic regulation initiative.",
+    "question": "What are your views on proposed new traffic regulations?",
+    "description": "Express your opinion on the proposed traffic regulations, including their potential benefits and drawbacks.",
+    "topic": "Traffic Regulations",
+    "bulletPoints": [
+      "Discuss the potential benefits of the new traffic regulations, such as improved safety and reduced congestion.",
+      "Consider any drawbacks or challenges that may arise from implementing these regulations, such as public resistance or enforcement issues.",
+      "Provide personal opinions or experiences related to traffic regulations, and suggest possible improvements or alternatives."
+    ]
+  },
+  {
+    "id": "task2-100",
+    "task": 2,
+    "difficulty": "intermediate",
+    "surveyContext": "A municipal office is exploring ways to enhance cultural events in the city.",
+    "question": "What suggestions do you have for improving cultural events in our community?",
+    "description": "Discuss ideas that could increase participation or enhance the quality of cultural events and their offerings.",
+    "topic": "Cultural Events",
+    "bulletPoints": [
+      "Suggest increasing the variety of cultural events to represent more diverse communities and traditions.",
+      "Propose enhancing marketing efforts to raise awareness and attract a larger audience to these events.",
+      "Recommend providing more interactive and educational activities during events to engage participants and foster cultural appreciation."
+    ]
+  },
+  {
+    "id": "task2-101",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Council on Policy Development is conducting a survey on urban development.",
+    "question": "What is your stance on the necessity of affordable housing initiatives in major cities?",
+    "description": "Your response should evaluate the impact of affordable housing on urban communities, including potential economic and social benefits.",
+    "topic": "affordable housing",
+    "bulletPoints": [
+      "Discuss the rising cost of living in major cities and how it affects low- to middle-income families.",
+      "Explain the social benefits of affordable housing initiatives, such as community stability and reduced homelessness.",
+      "Explore potential economic advantages, including job creation and increased local spending, resulting from affordable housing projects."
+    ]
+  },
+  {
+    "id": "task2-102",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A national health organization is exploring public opinions on mental health support.",
+    "question": "Should mental health services be universally accessible in Canada?",
+    "description": "Discuss the moral implications and potential effects of universal access to mental health services on society.",
+    "topic": "mental health access",
+    "bulletPoints": [
+      "Discuss the importance of mental health services for overall well-being and quality of life.",
+      "Address the potential economic and social benefits of providing universal access to mental health services.",
+      "Consider barriers to access that currently exist and how universal accessibility could help mitigate these issues."
+    ]
+  },
+  {
+    "id": "task2-103",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Ministry of Environment is gathering views on climate change legislation.",
+    "question": "What role should the government play in combating climate change?",
+    "description": "Argue for or against specific government policies aimed at reducing carbon emissions and their implications for businesses and individuals.",
+    "topic": "climate change policy",
+    "bulletPoints": [
+      "Discuss the importance of implementing and enforcing environmental regulations to reduce greenhouse gas emissions.",
+      "Highlight the role of government in investing in renewable energy sources and promoting sustainable practices.",
+      "Emphasize the need for public awareness campaigns and education initiatives to encourage community involvement in climate action."
+    ]
+  },
+  {
+    "id": "task2-104",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Education Association is assessing opinions on the education system’s adaptability.",
+    "question": "Should the curriculum in Canadian schools be revised to include more technology and digital literacy?",
+    "description": "Present arguments for or against updating the curriculum, considering technological advancements and job market demands.",
+    "topic": "education curriculum",
+    "bulletPoints": [
+      "Discuss the importance of technology and digital literacy in the modern job market and everyday life.",
+      "Provide examples of how integrating technology into the curriculum can enhance student engagement and learning outcomes.",
+      "Address potential challenges and solutions regarding the implementation of a revised curriculum focused on technology and digital skills."
+    ]
+  },
+  {
+    "id": "task2-105",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A research firm is evaluating public attitudes towards immigration policy.",
+    "question": "How should Canada balance the benefits and challenges of immigration?",
+    "description": "Discuss the impacts of immigration on Canadian society and economy, providing a nuanced view of both sides.",
+    "topic": "immigration policy",
+    "bulletPoints": [
+      "Discuss the economic benefits of immigration, such as filling labor shortages and contributing to innovation.",
+      "Address the social challenges that may arise from immigration, including integration and cultural differences.",
+      "Propose strategies for balancing these aspects, such as implementing effective integration programs and ensuring equitable access to resources."
+    ]
+  },
+  {
+    "id": "task2-106",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A non-profit organization is exploring views on food security.",
+    "question": "Should the government implement stricter regulations on food labeling?",
+    "description": "Evaluate the implications of food labeling regulations for consumers and producers, considering public health and consumer rights.",
+    "topic": "food labeling",
+    "bulletPoints": [
+      "Discuss the importance of clear and accurate food labeling for consumer health and safety.",
+      "Consider the potential benefits of stricter regulations in reducing misleading claims and promoting transparency.",
+      "Address possible challenges or drawbacks of implementing stricter regulations, such as increased costs for producers or potential impacts on small businesses."
+    ]
+  },
+  {
+    "id": "task2-107",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Civil Liberties Association is conducting a survey on privacy rights.",
+    "question": "How important is it to protect users' data in the digital age?",
+    "description": "Analyze the balance between privacy rights and technological advancement, providing examples to support your viewpoint.",
+    "topic": "data privacy",
+    "bulletPoints": [
+      "Discuss the rising frequency of data breaches and their impact on individuals and organizations.",
+      "Highlight the importance of user trust and how data protection contributes to a positive online experience.",
+      "Mention the legal and ethical responsibilities of companies to safeguard user data and comply with regulations."
+    ]
+  },
+  {
+    "id": "task2-108",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The National Arts Council is surveying opinions on funding for the arts.",
+    "question": "Should public funds be allocated to support the arts and culture sector?",
+    "description": "Argue the case for or against government funding for the arts, considering cultural, economic, and educational impacts.",
+    "topic": "arts funding",
+    "bulletPoints": [
+      "Discuss the economic benefits of supporting the arts, such as job creation and increased tourism.",
+      "Highlight the importance of arts and culture in fostering community identity and social cohesion.",
+      "Mention the role of arts in education and personal development, emphasizing its impact on creativity and critical thinking."
+    ]
+  },
+  {
+    "id": "task2-109",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A Canadian think tank is researching public attitudes towards renewable energy.",
+    "question": "To what extent should Canada invest in renewable energy sources?",
+    "description": "Discuss the potential benefits and challenges of a transition to renewable energy, providing a multifaceted perspective.",
+    "topic": "renewable energy",
+    "bulletPoints": [
+      "Discuss the environmental benefits of renewable energy, such as reducing carbon emissions and combating climate change.",
+      "Examine the economic advantages, including job creation in the renewable energy sector and potential savings on energy costs.",
+      "Consider the social implications, such as energy security, public health improvements, and community engagement in sustainable practices."
+    ]
+  },
+  {
+    "id": "task2-110",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Family Law Association is assessing opinions on child custody laws.",
+    "question": "Should the laws surrounding child custody be reformed to prioritize the child's voice?",
+    "description": "Explore the ethical implications of including children in custody decisions, considering developmental psychology and legal frameworks.",
+    "topic": "child custody",
+    "bulletPoints": [
+      "Discuss the importance of considering the child's preferences and feelings in custody decisions to ensure their well-being and emotional stability.",
+      "Examine the potential benefits of involving children in the custody process, such as promoting their sense of agency and reducing feelings of powerlessness.",
+      "Address potential challenges or concerns regarding age-appropriateness and the ability of children to articulate their wishes effectively, and suggest ways to navigate these issues."
+    ]
+  },
+  {
+    "id": "task2-111",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Public Health Agency is surveying on vaccination policies.",
+    "question": "What is your opinion on mandatory vaccinations for children in school?",
+    "description": "Evaluate public health benefits against personal freedoms, considering ethical and social dimensions.",
+    "topic": "vaccination policy",
+    "bulletPoints": [
+      "Discuss the importance of vaccinations in preventing the spread of infectious diseases among children.",
+      "Highlight the potential consequences of not vaccinating children, including risks to public health and safety.",
+      "Consider the role of parental choice and the need for informed consent in the context of mandatory vaccinations."
+    ]
+  },
+  {
+    "id": "task2-112",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A national environmental organization is exploring attitudes towards single-use plastics.",
+    "question": "Should Canada impose a ban on single-use plastics?",
+    "description": "Discuss environmental benefits versus economic implications, presenting a balanced view on potential outcomes.",
+    "topic": "single-use plastics",
+    "bulletPoints": [
+      "Discuss the environmental impact of single-use plastics, including pollution and harm to wildlife.",
+      "Consider the economic implications of a ban, such as effects on industries that rely on single-use plastics and potential job losses or gains.",
+      "Explore alternatives to single-use plastics and the feasibility of transitioning to sustainable options within Canadian society."
+    ]
+  },
+  {
+    "id": "task2-113",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "Statistics Canada is conducting a survey regarding work-from-home policies.",
+    "question": "What should the future of work-from-home arrangements look like in Canada?",
+    "description": "Analyze the pros and cons of remote work, addressing employee well-being, productivity, and company culture.",
+    "topic": "remote work",
+    "bulletPoints": [
+      "Discuss the importance of flexible work hours to accommodate different lifestyles and improve work-life balance.",
+      "Highlight the need for reliable technology and support to ensure effective communication and productivity in remote work environments.",
+      "Emphasize the benefits of regular virtual team-building activities to maintain employee engagement and foster a sense of community."
+    ]
+  },
+  {
+    "id": "task2-114",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Transportation Agency is assessing opinions on public transit initiatives.",
+    "question": "How critical is the expansion of public transit in urban areas?",
+    "description": "Discuss the importance of public transit for urban development and environmental impacts, offering a comprehensive argument.",
+    "topic": "public transit",
+    "bulletPoints": [
+      "Discuss the environmental benefits of expanded public transit, such as reduced traffic congestion and lower carbon emissions.",
+      "Highlight the economic advantages, including increased accessibility to jobs and businesses, which can stimulate local economies.",
+      "Address social equity issues, emphasizing how improved public transit can provide mobility options for underserved communities and enhance overall quality of life."
+    ]
+  },
+  {
+    "id": "task2-115",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A human rights organization is researching attitudes on gender equality.",
+    "question": "Should companies be required to implement equal pay policies?",
+    "description": "Examine the implications of enforcing equal pay, considering economic, ethical, and societal angles.",
+    "topic": "gender equality",
+    "bulletPoints": [
+      "Discuss the importance of equal pay in promoting fairness and reducing gender and racial wage gaps.",
+      "Highlight the potential benefits to companies, such as improved employee morale, retention, and attracting diverse talent.",
+      "Consider the role of government regulations in enforcing equal pay policies and the impact on businesses and the economy."
+    ]
+  },
+  {
+    "id": "task2-116",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Technology Association is exploring the impact of automation.",
+    "question": "What should Canada’s approach be towards regulating artificial intelligence?",
+    "description": "Discuss the benefits and risks of AI regulation, incorporating ethical, economic, and technological perspectives.",
+    "topic": "AI regulation",
+    "bulletPoints": [
+      "Discuss the importance of establishing clear ethical guidelines to ensure AI development aligns with Canadian values.",
+      "Highlight the need for collaboration between government, industry, and academia to create effective regulatory frameworks.",
+      "Emphasize the necessity of ongoing monitoring and evaluation of AI technologies to address emerging risks and challenges."
+    ]
+  },
+  {
+    "id": "task2-117",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Ministry of Indigenous Relations is gathering feedback on reconciliation efforts.",
+    "question": "What measures are most effective in promoting reconciliation with Indigenous peoples?",
+    "description": "Evaluate various reconciliation strategies and their impacts on communities, providing a well-rounded opinion.",
+    "topic": "Indigenous reconciliation",
+    "bulletPoints": [
+      "Discuss the importance of acknowledging historical injustices and their impact on Indigenous communities.",
+      "Highlight the role of education in fostering understanding and respect for Indigenous cultures and rights.",
+      "Suggest collaborative initiatives that involve Indigenous peoples in decision-making processes regarding land, resources, and cultural preservation."
+    ]
+  },
+  {
+    "id": "task2-118",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A government body is assessing views on the gig economy.",
+    "question": "Should gig workers receive the same protections as traditional employees?",
+    "description": "Discuss the implications of labor laws on gig workers and the future of work, providing a nuanced perspective.",
+    "topic": "gig economy",
+    "bulletPoints": [
+      "Discuss the benefits of providing gig workers with the same protections as traditional employees, such as job security and access to benefits.",
+      "Explain potential challenges or drawbacks of extending these protections, including the impact on flexibility and the gig economy's business model.",
+      "Consider the implications for worker rights and the economy as a whole, and suggest possible solutions or compromises that could address both gig workers' needs and employer concerns."
+    ]
+  },
+  {
+    "id": "task2-119",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "The Canadian Council for Social Development is exploring opinions on social media regulation.",
+    "question": "What role should the government have in regulating social media platforms?",
+    "description": "Analyze the balance between free speech and the need for regulation in the digital age, touching upon ethical concerns.",
+    "topic": "social media regulation",
+    "bulletPoints": [
+      "Discuss the importance of protecting users from harmful content and misinformation, and how government regulation can help achieve this.",
+      "Explore the need for privacy protection and data security measures to safeguard user information on social media platforms.",
+      "Consider the balance between freedom of speech and the responsibility of social media companies to prevent hate speech and cyberbullying."
+    ]
+  },
+  {
+    "id": "task2-120",
+    "task": 2,
+    "difficulty": "advanced",
+    "surveyContext": "A financial institution is conducting a survey on personal finance education.",
+    "question": "Is financial literacy education essential in Canadian high schools?",
+    "description": "Discuss the importance of financial education for young adults and its implications for society as a whole, providing a comprehensive argument.",
+    "topic": "financial literacy",
+    "bulletPoints": [
+      "Discuss the importance of financial literacy for young adults in managing personal finances, including budgeting, saving, and understanding credit.",
+      "Highlight the long-term benefits of financial literacy education, such as improved financial decision-making and reduced risk of debt.",
+      "Mention the role of financial literacy in fostering economic awareness and responsibility among students, preparing them for real-world financial challenges."
     ]
   }
 ]

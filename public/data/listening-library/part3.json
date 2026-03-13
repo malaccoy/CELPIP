@@ -2278,5 +2278,4669 @@
       }
     ],
     "difficulty": "intermediate"
+  },
+  {
+    "title": "Winter Clothing Sale Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Hello everyone! Welcome to the Winter Clothing Sale at Maple Mall. We are excited to offer great deals on winter clothing this weekend! \n Man: That sounds great! What kind of winter clothing is on sale? \n Woman: We have jackets, sweaters, scarves, and more! All items are 30% off. \n Man: When does the sale start? \n Woman: The sale starts this Friday and goes until Sunday. The mall opens at 9 AM both days. \n Man: That’s perfect! Do you have special hours for Saturday? \n Woman: Yes! On Saturday, we will open early at 8 AM for our special VIP customers. \n Man: What about people who want to come on Sunday? \n Woman: Sunday hours are the same as Friday, from 9 AM to 6 PM. \n Man: Thank you for the information! \n Woman: You're welcome! Don't forget to bring your friends. We have hot chocolate for everyone who comes shopping. Enjoy the sale!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is happening at Maple Mall?",
+        "options": [
+          "A sale on winter clothing",
+          "A concert",
+          "A cooking class",
+          "A car show"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is the discount on winter clothing?",
+        "options": [
+          "10% off",
+          "20% off",
+          "30% off",
+          "50% off"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What day does the sale start?",
+        "options": [
+          "Monday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What is the mall's opening time on Sunday?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "6 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What special treat is available for shoppers?",
+        "options": [
+          "Ice cream",
+          "Cookies",
+          "Coffee",
+          "Hot chocolate"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "question": "How long does the sale last?",
+        "options": [
+          "One day",
+          "Two days",
+          "Three days",
+          "Four days"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Weekly Farmers' Market Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Hello everyone! Welcome to the weekly farmers' market here in downtown Toronto. We are excited to have you join us today. The market opens every Saturday at 8 AM and closes at 2 PM.  \nMan: That’s right! We have fresh fruits, vegetables, and many local products. You can find honey, cheese, and baked goods from local farmers.  \nWoman: Don’t forget to check the schedule for our special events. This week, we have a cooking demonstration at 11 AM. A local chef will show you how to make a delicious salad with fresh ingredients from the market.  \nMan: It’s a great chance to learn and taste something new! Also, we have live music from 12 PM to 1 PM.  \nWoman: Yes! You can enjoy shopping while listening to some great tunes. Don’t worry about parking; there are many spots available near the market.  \nMan: Remember to bring reusable bags for your purchases. Let’s keep the environment clean! Thank you for coming today, and we hope you enjoy the market!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What time does the farmers' market open on Saturdays?",
+        "options": [
+          "A) 7 AM",
+          "B) 8 AM",
+          "C) 9 AM",
+          "D) 10 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What will happen at 11 AM this week?",
+        "options": [
+          "A) Live music",
+          "B) Cooking demonstration",
+          "C) Market closing",
+          "D) Fruit tasting"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where is the market located?",
+        "options": [
+          "A) Downtown Toronto",
+          "B) Toronto Airport",
+          "C) Toronto Zoo",
+          "D) Toronto Mall"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What type of products are available at the market?",
+        "options": [
+          "A) Electronics",
+          "B) Clothing",
+          "C) Fresh fruits and vegetables",
+          "D) Furniture"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How long does the market stay open each Saturday?",
+        "options": [
+          "A) 3 hours",
+          "B) 4 hours",
+          "C) 5 hours",
+          "D) 6 hours"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What should you bring for your purchases?",
+        "options": [
+          "A) Plastic bags",
+          "B) Reusable bags",
+          "C) Cardboard boxes",
+          "D) Wallet"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "City Park Opening Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Good morning, everyone! Thank you for joining us today. We are excited to announce the opening of Maple Park in downtown Toronto! The park will open this Saturday, May 20th, at 10 AM. \n\nMan: That sounds great! What activities will be available at the park?\n\nWoman: There will be many activities for all ages. You can enjoy walking trails, picnic areas, and a children's playground. We will also have free yoga classes every Saturday morning. \n\nMan: That’s wonderful! Is there parking available?\n\nWoman: Yes, there is a parking lot near the park that can hold up to 200 cars. Please remember that parking is free for the first three hours. \n\nMan: And what about public transport?\n\nWoman: Good question! You can take the subway to Queen Station and then walk for 10 minutes to reach the park. Buses also go to Maple Park. \n\nMan: Are there any special events planned for the opening day?\n\nWoman: Yes! There will be live music, food trucks, and an opening ceremony at 11 AM. We hope to see you all there! Thank you for your attention.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will Maple Park open?",
+        "options": [
+          "A) May 15th",
+          "B) May 20th",
+          "C) June 1st",
+          "D) June 15th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What can you enjoy at the park?",
+        "options": [
+          "A) Only walking trails",
+          "B) Picnic areas and a playground",
+          "C) Shopping malls",
+          "D) Movie theatres"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Is parking at the park free?",
+        "options": [
+          "A) No, it costs money",
+          "B) Yes, it is always free",
+          "C) Yes, it is free for the first three hours",
+          "D) Yes, it is free all day"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How can you get to Maple Park by public transport?",
+        "options": [
+          "A) Take a taxi",
+          "B) Take the subway to Queen Station",
+          "C) Ride a bicycle",
+          "D) Walk from downtown Toronto"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will happen at 11 AM on opening day?",
+        "options": [
+          "A) A yoga class",
+          "B) A children's concert",
+          "C) An opening ceremony",
+          "D) A picnic"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Will there be food available at the park on opening day?",
+        "options": [
+          "A) No, only drinks",
+          "B) Yes, there will be food trucks",
+          "C) Yes, food will be provided for free",
+          "D) No, you must bring your own food"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Shopping Announcement at the Mall",
+    "difficulty": "beginner",
+    "passage": "Woman: Welcome to Maple Mall! We have some exciting announcements for today. First, we want to remind you that our store hours are from 9 AM to 9 PM, Monday to Saturday. On Sundays, we open at 10 AM and close at 6 PM. \n\nMan: That's right! Also, don’t forget our special sale today. Many stores are offering discounts of up to 50% off on selected items. \n\nWoman: Yes, and you can find these deals in stores like Fashion Trends, Home Goods, and Tech World. The sale lasts until 6 PM, so make sure you plan your shopping trip. \n\nMan: If you need directions, just follow the signs to the Customer Service Desk. The staff there can help you with any questions.\n\nWoman: We also have complimentary gift wrapping at the Customer Service Desk today. It is free with any purchase! \n\nMan: And remember, if you spend over $100, you will receive a gift card worth $10 for your next visit. \n\nWoman: Thank you for shopping at Maple Mall! We hope you enjoy your day and find some great bargains!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the mall's opening hours on Sundays?",
+        "options": [
+          "A) 9 AM to 6 PM",
+          "B) 10 AM to 6 PM",
+          "C) 9 AM to 9 PM",
+          "D) 10 AM to 9 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which stores are mentioned as having discounts?",
+        "options": [
+          "A) Grocery Store",
+          "B) Fashion Trends",
+          "C) Bookstore",
+          "D) Coffee Shop"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What can customers do at the Customer Service Desk?",
+        "options": [
+          "A) Buy food",
+          "B) Get directions",
+          "C) Play games",
+          "D) Watch movies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How much is the discount at the stores?",
+        "options": [
+          "A) 10% off",
+          "B) 25% off",
+          "C) 50% off",
+          "D) 75% off"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What do customers receive for spending over $100?",
+        "options": [
+          "A) A free meal",
+          "B) A gift card",
+          "C) A drink",
+          "D) A book"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is free at the Customer Service Desk?",
+        "options": [
+          "A) Parking",
+          "B) Internet",
+          "C) Gift wrapping",
+          "D) Snacks"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Shopping at the Downtown Mall",
+    "difficulty": "beginner",
+    "passage": "Man: Welcome to the Downtown Mall! We are excited to have you here today. We have many shops and a food court for your convenience. \nWoman: That sounds great! What time does the mall open? \nMan: The mall opens at 9 AM and closes at 9 PM from Monday to Saturday. On Sundays, we open at 10 AM and close at 7 PM. \nWoman: That’s good to know. Are there any special events this week? \nMan: Yes! This week, we have a special sale at the clothing store. All items are 20% off! The sale starts today and lasts until Friday. \nWoman: Oh, I love sales! Where can I find the clothing store? \nMan: The clothing store is on the second floor, next to the electronics store. \nWoman: Perfect! I will visit today. Is parking available? \nMan: Yes, there is a parking garage next to the mall entrance. The first hour is free, and after that, it is $2 per hour. \nWoman: That's very reasonable. Thank you for the information! \nMan: You’re welcome! Enjoy your shopping!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What time does the Downtown Mall open on weekdays?",
+        "options": [
+          "A) 8 AM",
+          "B) 9 AM",
+          "C) 10 AM",
+          "D) 11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How long does the clothing store sale last?",
+        "options": [
+          "A) Until Monday",
+          "B) Until Wednesday",
+          "C) Until Friday",
+          "D) Until Sunday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "Where is the clothing store located?",
+        "options": [
+          "A) On the first floor",
+          "B) Next to the food court",
+          "C) On the second floor",
+          "D) Near the parking garage"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How much does it cost to park after the first hour?",
+        "options": [
+          "A) $1 per hour",
+          "B) $2 per hour",
+          "C) $3 per hour",
+          "D) $4 per hour"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What day does the mall open at 10 AM?",
+        "options": [
+          "A) Saturday",
+          "B) Sunday",
+          "C) Monday",
+          "D) Friday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the discount at the clothing store?",
+        "options": [
+          "A) 10%",
+          "B) 15%",
+          "C) 20%",
+          "D) 25%"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Welcome to Maple Mall",
+    "difficulty": "beginner",
+    "passage": "Woman: Welcome to Maple Mall! We are happy to have you here. This mall has many stores, restaurants, and entertainment options. \n\nMan: That sounds great! What stores are here? \n\nWoman: We have a clothing store called Fashion Trends, a shoe store named Happy Feet, and a bookstore called Page Turners. You can find many great items there. \n\nMan: What about food? \n\nWoman: Yes! We have a food court with different types of food. You can enjoy pizza, burgers, sushi, and desserts. \n\nMan: Sounds delicious! Is there anything for children? \n\nWoman: Absolutely! There is a kids’ play area on the second floor. It’s safe and fun for children of all ages. \n\nMan: That’s perfect! What time does the mall close? \n\nWoman: Maple Mall is open from 10 AM to 9 PM from Monday to Saturday, and from 11 AM to 6 PM on Sunday. We hope you enjoy your visit!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the mall?",
+        "options": [
+          "A) Maple Square",
+          "B) Maple Mall",
+          "C) Oak Mall",
+          "D) Pine Plaza"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What type of food can you find in the food court?",
+        "options": [
+          "A) Only sushi",
+          "B) Only burgers",
+          "C) Pizza and burgers",
+          "D) Only salads"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What store sells shoes?",
+        "options": [
+          "A) Fashion Trends",
+          "B) Happy Feet",
+          "C) Page Turners",
+          "D) Shoe World"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time does the mall close on Saturday?",
+        "options": [
+          "A) 10 PM",
+          "B) 8 PM",
+          "C) 9 PM",
+          "D) 7 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Where is the kids' play area?",
+        "options": [
+          "A) On the first floor",
+          "B) On the second floor",
+          "C) Outside the mall",
+          "D) In the parking lot"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What type of store is Page Turners?",
+        "options": [
+          "A) A clothing store",
+          "B) A shoe store",
+          "C) A bookstore",
+          "D) A toy store"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Community Centre Announcement",
+    "difficulty": "beginner",
+    "passage": "Man: Good morning, everyone! Welcome to the Maple Leaf Community Centre. We have some exciting news for you today. \nWoman: Yes, that’s right! This Saturday, we are having a big community event. It will start at 10 AM and end at 4 PM. Everyone is invited! \nMan: There will be games, food, and live music. You can bring your family and friends! \nWoman: If you want to help, you can volunteer. Please sign up at the front desk. \nMan: Remember to bring your own water bottle to stay hydrated! The weather will be warm, so wear comfortable clothes. \nWoman: Also, if you want to participate in the baking contest, please bring your baked goods by 11 AM. \nMan: That sounds delicious! Don’t forget to pick up your baked goods after 2 PM, so they are fresh for the judges. \nWoman: Finally, if you need directions, they are available at the front desk. We hope to see you all there! Thank you! \nMan: Have a great day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What day is the community event?",
+        "options": [
+          "A) Friday",
+          "B) Saturday",
+          "C) Sunday",
+          "D) Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What should you bring to stay hydrated?",
+        "options": [
+          "A) A soda",
+          "B) A water bottle",
+          "C) A milkshake",
+          "D) A juice"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "When does the community event start?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time should baked goods be brought?",
+        "options": [
+          "A) 10 AM",
+          "B) 11 AM",
+          "C) 12 PM",
+          "D) 1 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who can help at the event?",
+        "options": [
+          "A) Only staff",
+          "B) Only children",
+          "C) Volunteers",
+          "D) Judges"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Where can you find directions to the event?",
+        "options": [
+          "A) At home",
+          "B) At the front desk",
+          "C) On the internet",
+          "D) In the newspaper"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Shopping for Winter Clothes",
+    "difficulty": "beginner",
+    "passage": "Woman: Good morning, everyone. Welcome to Maple Mall! Today, we have a special announcement about our winter clothing sale. Starting tomorrow, all winter jackets, boots, and sweaters will be 30% off!  \nMan: That sounds great! What time does the sale start?  \nWoman: The sale starts at 10 AM and goes until 9 PM. You can also find warm hats and gloves at discounted prices.  \nMan: Are there any special deals for members?  \nWoman: Yes! If you are a member of our loyalty program, you will get an additional 10% off all purchases during the sale. Remember to bring your membership card.  \nMan: Where can I find the loyalty program sign-up?  \nWoman: You can sign up at the customer service desk, which is near the food court. It is very easy and takes only a few minutes.  \nMan: Great! Thank you for the information.  \nWoman: You’re welcome! Enjoy your shopping at Maple Mall and stay warm this winter!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is happening at Maple Mall?",
+        "options": [
+          "A sale on groceries",
+          "A winter clothing sale",
+          "A summer clothing sale",
+          "A book fair"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the sale start?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How much off are winter jackets?",
+        "options": [
+          "10%",
+          "20%",
+          "30%",
+          "40%"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "Where can you find the customer service desk?",
+        "options": [
+          "Near the parking lot",
+          "Near the food court",
+          "At the main entrance",
+          "On the second floor"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What additional discount do loyalty members receive?",
+        "options": [
+          "5%",
+          "10%",
+          "15%",
+          "20%"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What type of items are on sale?",
+        "options": [
+          "Winter jackets and boots",
+          "School supplies",
+          "Summer clothes",
+          "Games and toys"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "Local Market Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Welcome to the weekly farmer's market in downtown Toronto! We are open every Saturday from 9 a.m. to 2 p.m. You can find many fresh fruits and vegetables from local farms. Make sure to visit our bakery for delicious bread and pastries.\n\nMan: That sounds great! Is there a fee to enter the market?\n\nWoman: No, there is no entrance fee. You can come and enjoy the market for free. We also have live music every week at noon. It makes shopping even more fun!\n\nMan: What if I want to buy something? How can I pay?\n\nWoman: Most vendors accept cash, but some also take credit cards. It is good to have some cash just in case. Remember to bring your reusable bags to carry your groceries.\n\nMan: Is there parking available near the market?\n\nWoman: Yes, there is limited street parking nearby, but we recommend using public transport. The subway station is just a short walk from here!\n\nMan: Thank you for the information!\n\nWoman: You’re welcome! Enjoy your shopping at the farmer's market!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What day of the week is the farmer's market open?",
+        "options": [
+          "A) Sunday",
+          "B) Saturday",
+          "C) Friday",
+          "D) Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the market open?",
+        "options": [
+          "A) 8 a.m.",
+          "B) 9 a.m.",
+          "C) 10 a.m.",
+          "D) 11 a.m."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Is there a fee to enter the market?",
+        "options": [
+          "A) Yes, $5",
+          "B) Yes, $10",
+          "C) No, it's free",
+          "D) No, but donations are welcome"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What type of food can you find at the market?",
+        "options": [
+          "A) Fast food",
+          "B) Frozen food",
+          "C) Fresh fruits and vegetables",
+          "D) Canned food"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What should you bring for your groceries?",
+        "options": [
+          "A) Plastic bags",
+          "B) Reusable bags",
+          "C) No bags needed",
+          "D) Boxes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is recommended for transportation to the market?",
+        "options": [
+          "A) Driving",
+          "B) Walking",
+          "C) Public transport",
+          "D) Biking"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Instructions for the Community Fair",
+    "difficulty": "beginner",
+    "passage": "Man: Hello everyone! Welcome to the annual Community Fair here in Vancouver. We are excited to have you with us today! \nWoman: Yes, it's a beautiful day, and we have many activities planned. \nMan: First, let me tell you about the schedule. The fair opens at 10 AM and will close at 6 PM. \nWoman: There are many booths to visit. You can find local artists, crafts, and delicious food. \nMan: There will also be live music starting at 1 PM, so don’t miss that! \nWoman: We have activities for kids as well, like face painting and games. \nMan: If you need help, please visit the information booth. It is located near the entrance. \nWoman: Remember to bring cash, as some vendors may not accept cards. \nMan: Finally, we hope you follow the signs for parking. There is a designated parking area nearby. \nWoman: Enjoy the fair, and thank you for coming! We hope you have a great time!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What time does the fair open?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What starts at 1 PM?",
+        "options": [
+          "A) Food tasting",
+          "B) Live music",
+          "C) Face painting",
+          "D) Booth closing"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where is the information booth located?",
+        "options": [
+          "A) Near the food area",
+          "B) Near the entrance",
+          "C) Near the stage",
+          "D) At the parking lot"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What should you bring for some vendors?",
+        "options": [
+          "A) Tickets",
+          "B) ID",
+          "C) Cash",
+          "D) A friend"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How long does the fair last?",
+        "options": [
+          "A) 5 hours",
+          "B) 6 hours",
+          "C) 7 hours",
+          "D) 8 hours"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What activities are mentioned for kids?",
+        "options": [
+          "A) Cooking classes",
+          "B) Sports competitions",
+          "C) Face painting and games",
+          "D) Movie screenings"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "City Mall Announcement",
+    "difficulty": "beginner",
+    "passage": "Man: Welcome to City Mall! We have some important announcements today.  Firstly, please note that the mall will open at 10:00 AM and close at 9:00 PM from Monday to Friday. On weekends, the hours are 9:00 AM to 10:00 PM.  Woman: What about the holiday schedule?  Man: Good question! On holidays, the mall opens at 11:00 AM and closes at 6:00 PM.  Woman: Thank you for that information! Is there anything special happening today?  Man: Yes! Today, we have a big sale at the clothing store on the second floor. All items are 30% off!  Woman: That sounds great!  Man: Also, remember to visit the food court. There are many options, including Canadian, Italian, and Asian food.  Woman: What time does the food court close?  Man: The food court closes at the same time as the mall.  Woman: Thank you for the information!  Man: You're welcome! Enjoy your shopping at City Mall!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What time does the mall open on weekdays?",
+        "options": [
+          "A) 9:00 AM",
+          "B) 10:00 AM",
+          "C) 11:00 AM",
+          "D) 10:30 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much is the sale at the clothing store?",
+        "options": [
+          "A) 10% off",
+          "B) 20% off",
+          "C) 30% off",
+          "D) 50% off"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What is the closing time of the mall on weekends?",
+        "options": [
+          "A) 8:00 PM",
+          "B) 9:00 PM",
+          "C) 10:00 PM",
+          "D) 11:00 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What type of food can you find in the food court?",
+        "options": [
+          "A) Only Italian food",
+          "B) Only Canadian food",
+          "C) Only Asian food",
+          "D) Canadian, Italian, and Asian food"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "question": "When does the food court close?",
+        "options": [
+          "A) At 9:00 PM",
+          "B) At 10:00 PM",
+          "C) At the same time as the mall",
+          "D) At 8:00 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What time does the mall open on holidays?",
+        "options": [
+          "A) 10:00 AM",
+          "B) 11:00 AM",
+          "C) 9:00 AM",
+          "D) 12:00 PM"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "City Park Opening Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Hello, everyone! Thank you for coming today. We have exciting news! The new city park will open this Saturday, May 15th. \nMan: That sounds great! What time does it open? \nWoman: The park will open at 10 AM. There will be a special ceremony at 10:30 AM. Everyone is welcome to join us for this event. \nMan: Will there be any activities? \nWoman: Yes, there will be games, music, and free snacks for everyone! We hope you all come and enjoy the fun. \nMan: Is there parking available? \nWoman: Yes, there is parking at the east end of the park. It is free for all visitors. \nMan: That is wonderful! Can people bring their dogs? \nWoman: Yes, dogs are welcome in the park. However, please remember to keep them on a leash. \nMan: Thank you for the information! \nWoman: You’re welcome! We hope to see you all at the opening of the new city park this Saturday! Have a great day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the new city park open?",
+        "options": [
+          "A) Next Sunday",
+          "B) This Saturday",
+          "C) Tomorrow",
+          "D) Next month"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the park open?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Will there be free snacks?",
+        "options": [
+          "A) Yes, there will be free snacks",
+          "B) No, there will not be food",
+          "C) Only for dogs",
+          "D) Only for children"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "Where can people park?",
+        "options": [
+          "A) In the middle of the park",
+          "B) At the west end",
+          "C) At the east end",
+          "D) No parking is available"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Are dogs allowed in the park?",
+        "options": [
+          "A) Yes, but they must be on a leash",
+          "B) No, dogs are not allowed",
+          "C) Only small dogs are allowed",
+          "D) Dogs can run free"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What event will happen at 10:30 AM?",
+        "options": [
+          "A) The park closes",
+          "B) A special ceremony",
+          "C) Dog competition",
+          "D) Cleanup event"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Local Farmers' Market Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Welcome to the Riverdale Farmers' Market! We are happy to announce that the market is open every Saturday from 9 AM to 2 PM. You can find fresh fruits, vegetables, and homemade goods. Man: That sounds great! Are there any special events today? Woman: Yes! Today, we have a cooking demonstration at 11 AM. You can learn how to make a simple salad using our fresh produce. Man: That sounds interesting. Do I need to sign up? Woman: No, you do not need to sign up. Just come to the demo area at 11 AM. Everyone is welcome. Man: What about parking? Is there a place to park? Woman: Yes, there is free parking available next to the market. Just follow the signs. And please remember to bring your reusable bags for shopping. Man: Thank you for the information! Woman: You're welcome! We hope to see you all today and have a wonderful time at the market!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What day is the farmers' market open?",
+        "options": [
+          "A) Sunday",
+          "B) Saturday",
+          "C) Friday",
+          "D) Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the market open?",
+        "options": [
+          "A) 10 AM",
+          "B) 9 AM",
+          "C) 8 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is happening at 11 AM today?",
+        "options": [
+          "A) A concert",
+          "B) A cooking demonstration",
+          "C) A flower sale",
+          "D) A kids' activity"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Do you need to sign up for the cooking demonstration?",
+        "options": [
+          "A) Yes, it is required",
+          "B) No, you do not need to sign up",
+          "C) Only if you want to cook",
+          "D) Only for the first 10 people"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Is there parking available at the market?",
+        "options": [
+          "A) No, parking is not allowed",
+          "B) Yes, but it costs money",
+          "C) Yes, there is free parking",
+          "D) Only for vendors"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What should you bring for shopping?",
+        "options": [
+          "A) Cash only",
+          "B) A backpack",
+          "C) Reusable bags",
+          "D) A basket"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Weekend Farmers' Market Announcement",
+    "difficulty": "beginner",
+    "passage": "Woman: Hello everyone! Welcome to our weekend farmers' market. It is located at City Park every Saturday and Sunday. We open at 9 AM and close at 2 PM.  \nMan: That sounds great! What can people find at the market?  \nWoman: You can find fresh vegetables, fruits, homemade bread, and local honey. Many farmers from around the area come to sell their products.  \nMan: Wow! Can people bring their kids?  \nWoman: Yes, of course! We have a special area for children with games and face painting.  \nMan: And what about parking?  \nWoman: There is plenty of free parking near the market. Just follow the signs when you arrive.  \nMan: This sounds like a fun place to visit. Is there an entrance fee?  \nWoman: No, it is free to enter! Enjoy your time and support our local farmers. Thank you for coming!  \nMan: Thank you for the information!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is the farmers' market located?",
+        "options": [
+          "A. City Park",
+          "B. Downtown Mall",
+          "C. School Gym",
+          "D. City Library"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What days is the market open?",
+        "options": [
+          "A. Friday and Saturday",
+          "B. Saturday and Sunday",
+          "C. Sunday and Monday",
+          "D. Wednesday and Thursday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What can you buy at the market?",
+        "options": [
+          "A. Clothes and shoes",
+          "B. Fresh vegetables and fruits",
+          "C. Electronics",
+          "D. Books"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Is there a fee to enter the market?",
+        "options": [
+          "A. Yes, $5",
+          "B. Yes, $10",
+          "C. No, it is free",
+          "D. Yes, $3"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Is there a parking fee?",
+        "options": [
+          "A. Yes, $2",
+          "B. Yes, $5",
+          "C. No, it is free",
+          "D. Yes, $1"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What activity is available for children?",
+        "options": [
+          "A. Swimming",
+          "B. Face painting",
+          "C. Cooking classes",
+          "D. Painting lessons"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Shopping at Maple Mall",
+    "difficulty": "beginner",
+    "passage": "Man: Welcome to Maple Mall! We are open every day from 10 AM to 9 PM. \nWoman: Thank you! What stores do you have here? \nMan: We have many stores! There is a grocery store, a clothing store, a shoe store, and a toy store. \nWoman: That sounds great! Is there a food court? \nMan: Yes, there is a food court on the second floor. You can find pizza, burgers, and sushi there. \nWoman: Perfect! I will go there after shopping. \nMan: Also, there is a parking lot outside. It costs five dollars for the whole day. \nWoman: How do I pay for parking? \nMan: You can pay at the machine located near the parking lot entrance. \nWoman: What if I lose my parking ticket? \nMan: If you lose your ticket, you will have to pay a flat fee of twenty dollars. \nWoman: Thanks for the information! \nMan: You're welcome! Enjoy shopping at Maple Mall!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What time does Maple Mall open?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What type of store is NOT mentioned?",
+        "options": [
+          "A) Grocery store",
+          "B) Book store",
+          "C) Clothing store",
+          "D) Shoe store"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where is the food court located?",
+        "options": [
+          "A) Ground floor",
+          "B) First floor",
+          "C) Second floor",
+          "D) Third floor"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How much does parking cost for one day?",
+        "options": [
+          "A) $2",
+          "B) $5",
+          "C) $10",
+          "D) $20"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will happen if you lose your parking ticket?",
+        "options": [
+          "A) Pay $5",
+          "B) Pay $10",
+          "C) Pay $15",
+          "D) Pay $20"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 6,
+        "question": "What food can you find in the food court?",
+        "options": [
+          "A) Pasta",
+          "B) Sushi",
+          "C) Salad",
+          "D) Sandwich"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Upcoming Changes to the Public Transit Schedule",
+    "difficulty": "advanced",
+    "passage": "Man: Alright, everyone, thanks for gathering on such short notice. I wanted to discuss the recent changes to our public transit schedule, which, as you know, has been a topic of concern for many commuters lately.\n\nWoman: Right. I mean, especially with the delays, it's like the city is just ignoring the needs of the public, don’t you think?\n\nMan: Exactly! But, let's be clear, the adjustments are aimed at improving efficiency, or at least that’s the official line. They think cutting some routes will free up resources for the more heavily trafficked areas.\n\nWoman: Not entirely convinced that’s the best approach. What about those who rely on those routes? Seems a bit shortsighted.\n\nMan 2: True, but there's also data suggesting those routes were underutilized. Still, it’s a delicate balance, managing public opinion and actual passenger numbers.\n\nWoman 2: Sure. And, if I recall, the consultation process wasn’t exactly transparent. They should’ve involved more community feedback.\n\nMan: Agreed. But, with the upcoming city council meeting next week, there’s still a chance to voice those concerns. We might see some adjustments before the final decision takes effect.\n\nWoman: Let’s hope they reconsider before it’s too late. Public transport is essential after all, not just a luxury, right?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary reason for the recent changes to the public transit schedule according to the speakers?",
+        "options": [
+          "A. To reduce operational costs",
+          "B. To increase passenger safety",
+          "C. To improve efficiency",
+          "D. To eliminate underutilized routes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "How does the woman express her skepticism about the changes?",
+        "options": [
+          "A. By stating her outright disagreement",
+          "B. By suggesting the changes may be shortsighted",
+          "C. By requesting more data",
+          "D. By mentioning a lack of public interest"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern does Man 2 raise about the route changes?",
+        "options": [
+          "A. They may harm the city’s budget",
+          "B. They don’t reflect passenger numbers",
+          "C. They could lead to public backlash",
+          "D. They disregard some community needs"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "question": "What aspect of the consultation process do the speakers criticize?",
+        "options": [
+          "A. It was too lengthy and complicated",
+          "B. It did not include enough community feedback",
+          "C. It was based solely on data analysis",
+          "D. It was influenced by political agendas"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What hope does the man express regarding the city council meeting?",
+        "options": [
+          "A. That the meeting will be postponed",
+          "B. That changes will be made based on public opinion",
+          "C. That the new schedules will be implemented immediately",
+          "D. That community members will not attend"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Which of the following best captures the woman's view on public transport?",
+        "options": [
+          "A. It's a luxury service for the few",
+          "B. It's predominantly used by low-income individuals",
+          "C. It's essential and should be well-managed",
+          "D. It's already adequately serving the community"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "City Council Meeting on Urban Development",
+    "difficulty": "advanced",
+    "passage": "Woman: Good afternoon, everyone. Thank you for joining us today for the City Council meeting regarding the urban development project. As you know, the proposal to expand Green Park has stirred quite a debate among local residents. \nMan: Yes, and I think it’s crucial we acknowledge that not everyone is thrilled. The traffic implications alone could be, um, less than ideal. \nWoman: Exactly, but some argue that the additional recreational space could enhance community engagement, right? \nMan 2: Sure, but what’s the trade-off? I mean, a park's great and all, but at what cost? We need to weigh the displacement of existing small businesses. \nWoman 2: And let’s not ignore the environmental aspects. Some residents are not entirely convinced that the new landscaping will truly compensate for what’s lost. \nWoman: That’s a valid point. However, the city has promised a phased approach to ensure minimal disruption. My concern, however, is whether that’s realistic given previous timelines on similar projects. \nMan: It’s a bit of a balancing act, isn’t it? The council will need to tread carefully to ensure that all voices are heard before a decision is made. We wouldn't want to rush into this, would we? \nWoman: Definitely not. So, to summarize, we need more community input, a transparent timeline, and just maybe a reevaluation of priorities moving forward.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of discussion in the City Council meeting?",
+        "options": [
+          "A) Expansion of Green Park",
+          "B) New traffic regulations",
+          "C) Enhancements to public transportation",
+          "D) Reallocation of local funding"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern did Man express regarding the urban development proposal?",
+        "options": [
+          "A) Increased community engagement",
+          "B) Potential traffic issues",
+          "C) Environmental degradation",
+          "D) Displacement of wildlife"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is Woman 2's major concern about the proposed landscaping?",
+        "options": [
+          "A) It may be insufficient compensation for lost resources",
+          "B) It will take too long to implement",
+          "C) It will not keep up with growing demand",
+          "D) It could lead to increased property values"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "According to Woman, what is her worry about the city's timeline for the project?",
+        "options": [
+          "A) It will be too ambitious",
+          "B) It may lead to more disruption",
+          "C) It might not be transparent",
+          "D) It could be overly optimistic"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "question": "How does Man summarize the council’s approach to the project?",
+        "options": [
+          "A) They will make a quick decision",
+          "B) They need to be cautious and inclusive",
+          "C) They are only focused on environmental impacts",
+          "D) They are disregarding community feedback"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Based on the conversation, which of the following can be inferred about the council’s decision-making process?",
+        "options": [
+          "A) It is strictly top-down and ignores public opinion",
+          "B) It seeks to accommodate various community interests",
+          "C) It has predetermined outcomes regardless of input",
+          "D) It plans to expedite the project to avoid backlash"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "New Urban Development Initiative",
+    "difficulty": "advanced",
+    "passage": "Man: Welcome, everyone, to today’s briefing on the new urban development initiative that aims to revitalize downtown Toronto. \n\nWoman: Right, so, just to clarify, are we focusing solely on residential spaces or are we also addressing commercial properties? \n\nMan: Good question. Initially, the proposal suggested a mixed-use approach, but there seems to be a consensus leaning towards prioritizing residential units. I mean, not everyone is entirely convinced that residential needs should trump commercial ones, especially with the current economic downturn. \n\nWoman 2: Exactly. I’ve heard some suggest that too many residential spaces could lead to oversaturation, and we could end up with high vacancy rates. \n\nMan 2: True, and let’s not forget the feedback from local businesses, who feel excluded from these discussions. They believe a vibrant commercial sector is vital for community sustainability. \n\nWoman: So, are we looking to gather more data on user needs before finalizing any plans? \n\nMan: Precisely. We’ll conduct a community survey. I think it’s essential to get a pulse on what residents and business owners are actually looking for. Without their input, we might miss the mark entirely. \n\nMan 2: Right, and I’d like to suggest including some public forums. It wouldn’t hurt to let people voice their concerns firsthand. \n\nWoman 2: I agree, as long as we keep the sessions structured. We wouldn’t want chaos… I mean, too many opinions can be counterproductive! \n\nMan: So, we aim to draft our final plan by the end of next quarter, contingent on the feedback we gather in the meantime. Everyone on board with that timeline? ",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the urban development initiative according to the new proposal?",
+        "options": [
+          "A) Commercial properties",
+          "B) Mixed-use properties",
+          "C) Residential units",
+          "D) Community feedback"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What concern is raised regarding an excess of residential spaces?",
+        "options": [
+          "A) It could lead to a lack of community engagement.",
+          "B) It might result in high vacancy rates.",
+          "C) It will enhance the commercial sector.",
+          "D) It could restrict public forums."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Why does the woman mention the feedback from local businesses?",
+        "options": [
+          "A) To indicate their support for the initiative.",
+          "B) To emphasize the need for commercial space.",
+          "C) To suggest a shift in focus to residential units.",
+          "D) To argue against public forums."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is a proposed method for collecting community input?",
+        "options": [
+          "A) An internal review process",
+          "B) A community survey",
+          "C) Private business consultations",
+          "D) Structured chaos sessions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the man suggest as a necessary action before finalizing the plans?",
+        "options": [
+          "A) Analyzing economic trends",
+          "B) Holding public forums",
+          "C) Reviewing residential needs",
+          "D) Consulting with the city council"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What could potentially hinder the effectiveness of public forums, according to the woman?",
+        "options": [
+          "A) Over-structuring",
+          "B) Too many opinions expressed",
+          "C) Lack of community support",
+          "D) Excessive commercial interests"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "New Transit Policy Proposal",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. As you know, the city has been re-evaluating our public transit policy, and I believe it’s essential we consider different perspectives before finalizing any decisions. \nWoman: Absolutely, I think we should look into what other cities are doing. Toronto, for instance, has implemented a congestion charge that seems to have worked relatively well. \nMan: True, but I’m not entirely convinced that it’s a one-size-fits-all solution. We have a unique traffic issue here in Vancouver that might not respond well to such measures. For example, our transit system already has a lot of challenges without adding new fees. \nWoman 2: Right, but those fees can also generate revenue that could be reinvested into the transit infrastructure. Plus, it encourages people to consider alternatives like cycling or carpooling. \nMan 2: I get that, but what about the social implications? Charging fees could disproportionately affect lower-income residents. We must ensure we’re not alienating a significant portion of the population. \nWoman: Well, perhaps we could implement a tiered system based on income to address that concern. That might alleviate some of the financial pressure while still encouraging less car use. \nMan: Okay, but we should also consider public response. If people feel penalized, they might resist and we could end up with more traffic congestion. It’s all about balance, right? \nWoman 2: Exactly, and we should also engage with the community through workshops. Their feedback will be crucial to shaping a fair policy. \nMan 2: Agreed. Let’s plan to incorporate that into our timeline, possibly before the next council meeting. Thanks, everyone. \n",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the discussion?",
+        "options": [
+          "A) Traffic management in Toronto",
+          "B) Challenges of Vancouver's transit policy",
+          "C) Community engagement strategies",
+          "D) Revenue generation through new fees"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which concern is raised regarding the implementation of a congestion charge?",
+        "options": [
+          "A) It might increase public transit use",
+          "B) It could disproportionately affect low-income residents",
+          "C) It is too complicated to enforce",
+          "D) It won't generate enough revenue"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What alternative suggestion does the woman propose to address the issue of fees?",
+        "options": [
+          "A) To eliminate transit fees altogether",
+          "B) To create a tiered fee system based on income",
+          "C) To postpone the proposal for further research",
+          "D) To focus on reducing car usage without fees"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What strategy do the speakers agree on regarding community feedback?",
+        "options": [
+          "A) Conducting surveys after the policy is implemented",
+          "B) Hosting workshops before the next council meeting",
+          "C) Releasing a public statement about the policy",
+          "D) Gathering feedback from only local businesses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does the man feel about the one-size-fits-all approach to a congestion charge?",
+        "options": [
+          "A) He fully supports it as a necessary measure.",
+          "B) He believes it might not be effective in Vancouver’s unique context.",
+          "C) He thinks it should be tested first in other cities.",
+          "D) He advocates for a strict implementation regardless of reactions."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is implied about the potential public response to new policies?",
+        "options": [
+          "A) Residents will likely welcome the changes enthusiastically.",
+          "B) Discontent could lead to increased traffic congestion if not handled carefully.",
+          "C) There will be no significant impact on daily commuters.",
+          "D) Public opinion will support charging fees regardless of income."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Policy Discussion on Public Transit Improvements",
+    "difficulty": "advanced",
+    "passage": "Man: So, as we move forward with the new public transit initiative, I wanted to clarify what we mean by optimizing routes.  \nWoman: Right, I mean, it’s not just about adding more buses, right? We also need to consider frequency and, um, passenger load.  \nMan: Exactly! But I’m not entirely convinced that simply adjusting schedules will suffice. We might need to look at alternative routes too.  \nWoman: Sure, but how do we justify the cost of those changes? There’s already been some pushback from city council.  \nMan: Well, I think if we can show a clear benefit—like reducing wait times—we could sway their votes. But, what if we focused on areas that are underserved, you know?  \nWoman: That could work, but be careful with those assumptions. Not every underserved area has the same needs.  \nMan: Right, and that’s where community input becomes crucial. We could set up forums to run this by citizens before making any decisions.  \nWoman: Definitely, but we should also track previous projects. I heard the last consultation was, uh, not exactly effective.  \nMan: It’s true; sometimes people just talk in circles. So, we need a structured approach to ensure we gather actionable feedback.  \nWoman: Agreed, otherwise we might end up with another expensive report that gathers dust. We can’t afford that.  \nMan: Precisely, let’s draft a preliminary outline for the meeting next week.  \nWoman: Sure thing. I can start compiling recent data to support our suggestions.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the public transit initiative discussed?",
+        "options": [
+          "A) Re-evaluating current routes",
+          "B) Solely adding more buses",
+          "C) Enhancing passenger comfort",
+          "D) Improving driver training"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What concern does the woman express regarding justifying changes?",
+        "options": [
+          "A) Lack of community interest",
+          "B) Funding objections from city council",
+          "C) Insufficient data to support changes",
+          "D) Ineffectiveness of past consultations"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "The man suggests that community input is important for what reason?",
+        "options": [
+          "A) To avoid costs",
+          "B) To ensure varied needs are met",
+          "C) To streamline decision-making",
+          "D) To prioritize funding"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What did the man indicate about previous project consultations?",
+        "options": [
+          "A) They were generally successful",
+          "B) They might have been too costly",
+          "C) They were not effectively structured",
+          "D) They lacked community involvement"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Which statement best reflects the woman's attitude towards another expensive report?",
+        "options": [
+          "A) She welcomes it, if done thoroughly",
+          "B) She believes it should be prioritized above all",
+          "C) She is skeptical about its usefulness",
+          "D) She thinks it will be widely accepted"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What action do they plan to take during the meeting next week?",
+        "options": [
+          "A) Present a finalized budget",
+          "B) Draft a preliminary outline",
+          "C) Review past project effectiveness",
+          "D) Launch a public awareness campaign"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Community Development Meeting Announcement",
+    "difficulty": "advanced",
+    "passage": "Man: Good morning, everyone. I want to thank you all for joining us today for this community development meeting at City Hall. As some of you may know, we're reassessing the community beautification project initially planned for the waterfront.\n\nWoman: Right, but I heard there might be a shift in funding. Is that still a possibility?\n\nMan: Well, it’s complicated. The initial budget was based on a model that, let’s just say, hasn't held up under scrutiny. So, while I’m not entirely convinced we’ll get additional funds from the city, we do have some other avenues to explore, like private sponsors.\n\nWoman: So, are you suggesting we might pivot from the original plans?\n\nMan: It’s a consideration, yes. I mean, if the funding doesn’t come through, we could potentially look at smaller-scale projects. But let’s not get ahead of ourselves. We’re still gathering input from community stakeholders.\n\nWoman 2: And those discussions are crucial, right? I mean, if we decide to move forward with a modified plan, we really need the community’s buy-in.\n\nMan 2: Absolutely. It's important to remember that community engagement isn’t just a box to check; it’s essential for the longevity of any new initiatives. So, if anyone has suggestions or concerns, please bring those to the table today.\n\nWoman: And just to clarify, are we aiming for implementation by next spring?\n\nMan: That might be ambitious if we don’t have everything settled. Perhaps late summer might be a more realistic timeline. We’ll see how today goes. \n\nWoman 2: Sounds good. Looking forward to an engaging discussion!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern regarding the community beautification project?",
+        "options": [
+          "A: The timeline for implementation",
+          "B: The potential shift in funding",
+          "C: Community stakeholder engagement",
+          "D: The size of the project"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What does the man imply about the initial budget?",
+        "options": [
+          "A: It was perfectly accurate.",
+          "B: It may not be feasible anymore.",
+          "C: It will be revisited in detail.",
+          "D: It is still the main focus of the discussion."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "According to the woman, what is crucial for the project's success?",
+        "options": [
+          "A: Private sponsors' involvement",
+          "B: Community engagement and feedback",
+          "C: A revised budget plan",
+          "D: Immediate implementation"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the man respond to the idea of a timeline for implementation?",
+        "options": [
+          "A: He suggests spring is too ambitious.",
+          "B: He believes spring is still the target.",
+          "C: He is unsure of the timeline altogether.",
+          "D: He wants the community to decide the timeline."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What is the tone of the man when discussing potential funding sources?",
+        "options": [
+          "A: Optimistic",
+          "B: Sarcastic",
+          "C: Pessimistic",
+          "D: Neutral"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What does the phrase 'gathering input from community stakeholders' suggest about their approach?",
+        "options": [
+          "A: They have already made decisions.",
+          "B: They value community opinion.",
+          "C: They are looking for quick solutions.",
+          "D: They are dismissing public feedback."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Downtown Development Plans",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. We're here to discuss the upcoming downtown development initiative, and I must say, it's generating quite a buzz, though some folks are a bit skeptical about the costs. \nWoman: Yeah, I mean, it’s expected to run into the millions, right? Not to mention potential disruptions during construction. \nMan: Exactly, but the city argues that long-term benefits—like improved infrastructure and job creation—would offset the initial expenses. \nMan 2: Sure, but there's also concern over gentrification. People are worried about lower-income residents being priced out. \nWoman 2: True, and honestly, not everyone is convinced that the proposed zoning changes will actually encourage affordable housing. I mean, what’s the guarantee? \nMan: Right, right. And then there’s the public transport angle—if they don't integrate that properly, we might end up with a really expensive parking lot rather than a vibrant community space. \nWoman: Exactly, and the timelines they’ve proposed—some say they’re a bit optimistic. Who knows if they can stick to it? \nMan 2: So, what’s the next step? Do we really just wait for the next public meeting to voice concerns? \nWoman 2: Well, they did mention a feedback survey on their website—maybe that’s the best route for now. Just hope it’s not one of those forms that gets lost in cyberspace!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern regarding the cost of the downtown development initiative?",
+        "options": [
+          "A) It will benefit everyone equally.",
+          "B) It might pay off in the long run.",
+          "C) It could lead to significant disruptions.",
+          "D) It will remain under budget."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What is the potential downside mentioned by Man 2 regarding the development?",
+        "options": [
+          "A) Gentrification is unlikely to happen.",
+          "B) It could lead to lower-income residents being displaced.",
+          "C) New zoning changes could decrease available housing.",
+          "D) There will be no effect on community diversity."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Why does Woman 2 express skepticism about the zoning changes?",
+        "options": [
+          "A) They might lead to affordable housing.",
+          "B) There's no assurance they will work as intended.",
+          "C) They will increase property values immediately.",
+          "D) They have been successful in other districts."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What major factor does Man emphasize needs proper integration?",
+        "options": [
+          "A) Parks and recreational areas.",
+          "B) Public transport systems.",
+          "C) Opportunities for local businesses.",
+          "D) Pedestrian-friendly spaces."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is Woman 2's suggestion regarding participation in the planning process?",
+        "options": [
+          "A) Attend the next public meeting.",
+          "B) Complete the feedback survey on the website.",
+          "C) Ignore the developments until they are complete.",
+          "D) Contact city officials directly."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What tone do the speakers generally convey about the development plans?",
+        "options": [
+          "A) Overly optimistic and certain.",
+          "B) Cynical but hopeful.",
+          "C) Indifferent and uninterested.",
+          "D) Completely supportive and enthusiastic."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "University Program Changes Announcement",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. I’d like to discuss the recent changes to our graduate program here at the University of Toronto. I know there’s been some confusion, and frankly, I’m not entirely convinced that the communication around this was clear. \n\nWoman: Right, I mean, they announced the new course prerequisites last week, but I think we have to be cautious. Some students feel this is an unnecessary hurdle, especially since they’re already juggling jobs and internships.\n\nMan: Exactly! But the administration insists that these changes are necessary to maintain academic standards. The new requirement seems to be a direct response to some feedback from last semester’s evaluations. \n\nWoman: True, but they seem to flip-flop a bit on the idea of flexibility with online options. Initially, they said it would be available, but I heard a prof mention that it’s now ‘under review’—whatever that means. \n\nMan: Yes, it’s almost as if they’re hedging. I wonder if they realize how much upheaval this causes for planning our schedules.\n\nWoman: Definitely! It’s a fine balance, but those of us who are in the program need to mobilize and express our concerns more clearly at the next department meeting. \n\nMan: Agreed. Let’s draft something that highlights our collective experiences; it might prompt the decision-makers to reconsider some of these policies.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Why does the man express doubt about the clarity of the communication regarding program changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is the woman’s main concern regarding the new course prerequisites?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What does the term ‘under review’ imply about the online options for courses?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What issue does the man highlight about the administration’s approach to policy changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What strategy do the speakers propose to address their concerns about the program changes?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "How do the speakers feel about the administration’s response to student feedback?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "Urban Development Proposal Discussion",
+    "difficulty": "advanced",
+    "passage": "Man: Good morning, everyone. I appreciate your joining this consultation on the new urban development proposal for downtown Toronto. We’ll start by addressing the public feedback we’ve received. Now, regarding the mixed-use zoning—  \nWoman: Right. There’s a lot of sentiment around that, but I’m not entirely convinced it’s the best path forward.  \nMan: Exactly, especially with traffic concerns. We have to consider the potential for increased congestion.  \nWoman: Yes, but some argue it could stimulate economic growth. You know how the city thrives on such developments.  \nMan: Sure, but let’s not overlook the infrastructure challenges. We’re talking about expanding public transit as well.  \nMan 2: If I may interject, isn't it also a matter of balancing community needs? The locals have expressed concerns about high-rise blocking sunlight.  \nWoman 2: Right, which brings us to the height restrictions. Maybe we can propose something less than ten stories?  \nMan: That's a fair compromise, but I suspect some developers might balk at that.  \nWoman: True, but we have to weigh commercial interests against residents' quality of life, which is, well, essential.  \nMan: So, to summarize, we should consider a phased approach while actively engaging with community stakeholders. Thoughts?  \nMan 2: Not a bad idea. Let’s draft a few alternatives and see if we can get consensus next session.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern raised about mixed-use zoning?",
+        "options": [
+          "A) Economic growth",
+          "B) Community engagement",
+          "C) Traffic congestion",
+          "D) Developer interests"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What seems to be the speakers' general attitude towards community needs?",
+        "options": [
+          "A) They believe those needs should be secondary.",
+          "B) They are dismissive of the residents' opinions.",
+          "C) They recognize them as essential to the development.",
+          "D) They think they can easily ignore them."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What does the woman suggest as a potential limitation to building height?",
+        "options": [
+          "A) Ten stories",
+          "B) Eight stories",
+          "C) Twelve stories",
+          "D) Five stories"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "Why does the man suggest a phased approach?",
+        "options": [
+          "A) To sidestep community influence entirely.",
+          "B) To manage developer concerns and community feedback.",
+          "C) To hasten the construction process.",
+          "D) To prioritize economic gain over quality of life."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the dialogue suggest about the developers' perspective?",
+        "options": [
+          "A) They are fully supportive of height restrictions.",
+          "B) They are likely to object to reduced building heights.",
+          "C) They have no interest in community input.",
+          "D) They advocate for more residential units only."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What inference can be drawn about the speakers' approach to public consultation?",
+        "options": [
+          "A) They plan to disregard feedback.",
+          "B) They intend to engage community stakeholders.",
+          "C) They are unsure of how to proceed after initial feedback.",
+          "D) They are focused only on financial considerations."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Revisions to the Urban Transportation Policy",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. We’re here to discuss the preliminary revisions to the Urban Transportation Policy. I think, honestly, the changes could maybe be beneficial in the long run, but I’m not entirely convinced that they tackle the real issues.\n\nWoman: I share your concerns. While the proposed additional bus routes, for example, sound great on paper, there’s still that question of feasibility, right? \n\nMan: Exactly, and let’s not forget the budget constraints! Expanding the infrastructure could incur costs way beyond our projections.\n\nWoman: And that’s where public opinion comes in. If we don’t have strong community support, we could be facing an uphill battle. I mean, just think about the backlash when the last subway expansion was proposed!\n\nMan 2: True, but isn’t there a chance that by investing in more bike lanes, we might actually alleviate some traffic? It’s a bit risky but could shift public perception.\n\nWoman 2: You have a point there, but balancing immediate public needs with long-term sustainability is tricky. It’s a complex web, and frankly, there’s a lot of overlapping interests to navigate.\n\nMan: So, I guess the takeaway is that we need more extensive stakeholder consultations before moving forward, right? We can’t afford to miss the mark again, or we’ll be back at square one, just spinning our wheels.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main concern raised about the proposed transportation changes?",
+        "options": [
+          "A. The cost of expanding infrastructure.",
+          "B. The potential backlash from the public.",
+          "C. Feasibility of additional bus routes.",
+          "D. Lack of community interest."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Which approach is mentioned as potentially shifting public perception?",
+        "options": [
+          "A. Increasing bus routes significantly.",
+          "B. Investing in more bike lanes.",
+          "C. Expanding subway lines immediately.",
+          "D. Conducting a neighborhood survey."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How do the speakers feel about the community’s role in the policy changes?",
+        "options": [
+          "A. Community support is not essential.",
+          "B. Public opinion is vital for success.",
+          "C. The community is often misinformed.",
+          "D. Community consultations should be minimized."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What might be a consequence of not engaging with stakeholders according to the conversation?",
+        "options": [
+          "A. Progress could be accelerated.",
+          "B. They might face public complaints again.",
+          "C. The budget could be increased.",
+          "D. Infrastructure changes would be immediate."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is suggested as a risk in the discussion?",
+        "options": [
+          "A. Over-estimating public interest.",
+          "B. Underestimating the complexity of needs.",
+          "C. Miscalculating the budget projections.",
+          "D. Delaying the implementation of changes."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the ultimate goal the speakers seem to agree on?",
+        "options": [
+          "A. To rush the changes into effect.",
+          "B. To ensure all stakeholders are satisfied.",
+          "C. To avoid repeating past mistakes.",
+          "D. To maximize budget expenditure."
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "City Council Funding Debate",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. Today, we're here to discuss the upcoming budget allocation for community projects, particularly those focused on youth engagement. \nWoman: Yes, there's definitely a pressing need for more funding in that sector. I've been reading about several successful initiatives in other cities, and honestly, we could be doing a lot better.\nMan: I completely agree, but there’s always the concern about where the money will come from. Some council members are reluctant to raise taxes, even slightly. \nWoman: Right, and let's be honest, nobody enjoys tax increases. But if we keep cutting corners, we risk losing out on long-term benefits, don’t you think?\nMan: Absolutely, though I suspect some might say that we'd be throwing good money after bad if the programs don’t produce immediate results, which, honestly, I'm not entirely convinced they always do. \nWoman: That’s a fair point, but isn't it also about setting the stage for future generations? A little investment now could yield big returns later.\nMan: True, but we have to consider the current economic climate. If we allocate too much now, we might face budget shortfalls down the line, so it’s a bit of a balancing act.\nWoman: Exactly! Maybe a phased approach is what we need—small, incremental investments that allow us to evaluate success as we go?\nMan: I like that idea. It might address the concerns of the more fiscally conservative members while still pushing the envelope on youth programming. \nWoman: Let’s draft a proposal for that. We can highlight potential metrics for success too, to help sway those who are hesitant to commit to any funding increase right away.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main topic of the discussion between the speakers?",
+        "options": [
+          "A) Increasing taxes for all community projects",
+          "B) Budget allocation for youth engagement programs",
+          "C) Concerns about economic shortfalls",
+          "D) Evaluating the effectiveness of past programs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Why does the woman believe that investment in youth programs is necessary?",
+        "options": [
+          "A) To prevent immediate tax increases",
+          "B) To prepare future generations for success",
+          "C) To follow trends from other cities",
+          "D) To avoid budget shortfalls"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What concern does the man express regarding funding allocation?",
+        "options": [
+          "A) Risk of losing support from fiscal conservatives",
+          "B) Potential failure of youth programs to deliver quick results",
+          "C) Increased taxes impacting community morale",
+          "D) Budget surplus being too large to manage"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What approach do the speakers consider for funding allocation?",
+        "options": [
+          "A) Immediate large-scale funding",
+          "B) A total cut to youth programs",
+          "C) Phased investment with evaluations",
+          "D) Relying solely on community fundraising"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How does the man feel about the effectiveness of past youth programs?",
+        "options": [
+          "A) Overly optimistic about their results",
+          "B) Completely dismissive of their potential",
+          "C) Skeptical but open to discussion",
+          "D) Confident in their past success"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is implied about the council members' views on funding?",
+        "options": [
+          "A) They are unanimously in favor of raising taxes",
+          "B) Some are resistant to any funding increase",
+          "C) They all believe in youth programming",
+          "D) They prioritize youth funding over other projects"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Community Centre Renovations Announcement",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. I'd like to take a moment to discuss the proposed renovations for our local community centre. As you know, the city has funnelled in some funds, but frankly, there's been a bit of a back-and-forth regarding how they should be spent. Woman: Yes, I've noticed that too. It's quite frustrating that we haven't settled on a clear plan yet. Man: Exactly. I mean, some folks think we should prioritize expanding the gym area, while others advocate for enhanced accessibility features. Woman: Right, not to mention the urgent need for better childcare facilities. Man 2: But do we really want to risk alienating any of these interest groups? Because the last thing we want is a divisive situation. Woman 2: I'm not entirely convinced we need more gym space. I mean, when was the last time you saw it packed? Man 2: Fair point, though some argue it’s about potential growth. Woman: Ultimately, we should aim for a balanced approach, incorporating various perspectives. Man: Agreed, it’s crucial we remember that our decisions impact the entire community. So, we'll hold another meeting next week to reassess and hopefully streamline this process. Don’t forget to bring your suggestions! Woman: And perhaps we can vote on some preliminary ideas, too? Man: Yes! Let's get the ball rolling. Thanks for your time, everyone.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the discussion in the community centre meeting?",
+        "options": [
+          "A. Community fundraising efforts",
+          "B. Renovation plans for the community centre",
+          "C. Public safety concerns",
+          "D. Expansion of local businesses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which feature is being debated for prioritization in the renovations?",
+        "options": [
+          "A. Upgrade to the kitchen facilities",
+          "B. Expansion of the gym area",
+          "C. Addition of an outdoor pool",
+          "D. Renovation of office spaces"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What aspect do the speakers think might alienate community members?",
+        "options": [
+          "A. Ignoring gym facilities",
+          "B. Prioritizing one group's interests",
+          "C. Delaying the renovations",
+          "D. Reducing funding for the community centre"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What sentiment does Woman express about the gym space?",
+        "options": [
+          "A. It is overly crowded.",
+          "B. It may not need expansion.",
+          "C. It is not frequently used.",
+          "D. It has outdated equipment."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does Man suggest they will do in the next meeting?",
+        "options": [
+          "A. Elect a new committee",
+          "B. Discuss childcare options solely",
+          "C. Reassess plans and streamline the process",
+          "D. Finalize renovation decisions"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the likely tone of the conversation based on the exchange?",
+        "options": [
+          "A. Cooperative and constructive",
+          "B. Dismissive and chaotic",
+          "C. Frustrated and argumentative",
+          "D. Indifferent and uninspired"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "Urban Transit Plans in Toronto",
+    "difficulty": "advanced",
+    "passage": "Man: Good afternoon, everyone. Thanks for joining us today to discuss the upcoming transit plans for Toronto. Now, I know many of you have mixed feelings about the proposed changes, but we should really consider the long-term benefits. \nWoman: Absolutely, but I'm not entirely convinced that reallocating funds from the downtown expansion to suburban areas is the right move. It feels a tad counterproductive, don’t you think?\nMan: Well, yes, it does seem a bit misplaced. But the data suggests that the suburbs are seeing a rise in population, so maybe it could ease congestion. \nWoman: Sure, but those urban areas still need attention! And let's not forget the ongoing issues with the subway delays — we can't just brush those aside. \nMan 2: Right, the delays have been problematic, but if we spread the resources too thin, we might end up with mediocre solutions everywhere. It’s a classic case of having to choose the lesser evil.\nWoman 2: I mean, couldn’t we phase this in? Maybe dedicate a portion of the budget for immediate subway issues while slowly rolling out the suburban enhancements?\nMan: That’s an interesting idea, but honestly, that could complicate things further. We would need extensive community feedback, which can be time-consuming. \nWoman: Well, time’s not exactly on our side. When it comes to urban planning, every delay can cost us and the city in the long run. \nMan: True, but let’s be sure we’re making decisions that resonate with the needs of all residents. It’s about striking that balance, right?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the meeting being discussed?",
+        "options": [
+          "A) Funding for subway repairs",
+          "B) Changes to Toronto's transit plans",
+          "C) Population growth analysis",
+          "D) Community feedback processes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What concern does the Woman express about the funding allocation?",
+        "options": [
+          "A) It prioritizes urban over suburban development",
+          "B) It could lead to more delays in the subway system",
+          "C) It seems counterproductive to current needs",
+          "D) It lacks sufficient community involvement"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What does Man 2 imply about the risks involved in resource allocation?",
+        "options": [
+          "A) It could result in a lack of funding for future projects",
+          "B) It may lead to inadequate solutions across the board",
+          "C) It will definitely solve the subway issues",
+          "D) It can cause an increase in community support"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What solution does Woman 2 propose regarding the funding distribution?",
+        "options": [
+          "A) Halt all new suburban projects",
+          "B) Implement immediate fixes to subway issues",
+          "C) Completely overhaul the transit plan",
+          "D) Gather feedback from suburban residents only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the underlying concern expressed by the speakers about delays in transit planning?",
+        "options": [
+          "A) They could lead to increased costs and inefficiencies",
+          "B) They will naturally resolve themselves over time",
+          "C) They might discourage community feedback",
+          "D) They will only affect the suburban projects"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "How does Man conclude regarding the decision-making process for the transit plan?",
+        "options": [
+          "A) It should focus only on urban areas",
+          "B) It requires input from all residents to ensure balance",
+          "C) It can be delayed for further discussion",
+          "D) It should prioritize subway fixes over suburban enhancements"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Debate on Urban Development Policies",
+    "difficulty": "advanced",
+    "passage": "Man: Alright, so let's dive into the new urban development proposal that just came across our desks. It’s been hailed as a game changer for downtown Toronto, but I’m not entirely convinced. \n\nWoman: Right, I mean the idea of creating more green spaces seems beneficial, but at what cost? I’ve seen the budget projections, and they're quite... optimistic. \n\nMan 2: Exactly! They’re proposing to reduce parking spaces without any real solution for the commuting issues we already face. Traffic congestion won't magically disappear. \n\nWoman 2: I hear you both. However, enhancing public transport infrastructure is part of the plan. They want to invest in a light rail that connects to the existing subway lines. But again, funding is a major question mark. \n\nMan: True, but that just sounds like they’re trying to dress up the issue. They can’t promise seamless integration if they haven't sorted out the financial aspects first.\n\nWoman: And don’t forget about the community pushback! Local businesses are concerned about losing foot traffic. \n\nMan 2: So, ultimately, we need a strategy that addresses these worries—balancing green initiatives and realistic transport solutions. Otherwise, we might end up with a half-baked plan that doesn't benefit anyone. \n\nWoman 2: We should definitely share these insights at the public consultation next week. It could be our chance to make some real changes even before the proposal goes to the city council.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern raised about the proposed urban development plan?",
+        "options": [
+          "A. It lacks community support.",
+          "B. It does not address traffic congestion.",
+          "C. It is overly ambitious.",
+          "D. It has insufficient funding."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Why does the woman find the budget projections to be questionable?",
+        "options": [
+          "A. They seem unrealistic.",
+          "B. They include hidden costs.",
+          "C. They are too detailed.",
+          "D. They depend on uncertain revenue."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How do the speakers feel about the proposed light rail system?",
+        "options": [
+          "A. It will solve all transport issues.",
+          "B. It has great potential if funded properly.",
+          "C. It is unnecessary with existing services.",
+          "D. It is already well-planned."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What aspect of the proposal do local businesses fear will be negatively affected?",
+        "options": [
+          "A. Their ability to expand.",
+          "B. Their access to public transport.",
+          "C. Foot traffic in the area.",
+          "D. The overall economic growth."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What seems to be the speakers' consensus regarding the urban development proposal?",
+        "options": [
+          "A. It should be implemented immediately.",
+          "B. It requires more community input.",
+          "C. It is well-prepared and detailed.",
+          "D. It will not benefit small businesses."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What are the speakers’ plans for the upcoming public consultation?",
+        "options": [
+          "A. To complain about the proposal.",
+          "B. To ask for increased funding.",
+          "C. To present their concerns and suggestions.",
+          "D. To support the proposal without changes."
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Changes to the Downtown Transit System",
+    "difficulty": "advanced",
+    "passage": "Man: Alright, everyone, I appreciate you coming on short notice. We're here to discuss the proposed changes to the downtown transit system. I know some of you have strong opinions on this. \nWoman: Well, I certainly do. It seems like every time they roll out a new plan, they fail to consider how it impacts actual commuters. \nMan: Right, I get that. And to be fair, the last survey indicated... what was it? Ah, nearly seventy percent wanted more reliable service, not just more routes. \nWoman: Exactly! But then they announce increased fares. Like, who thought that was a clever move? \nMan: I think they hope people will see it as a necessary evil to fund improvements. \nMan 2: Honestly, I’m not entirely convinced that’s the case. Improvements should come first before asking for more money, don’t you think? \nWoman 2: Sure, but they often weigh public satisfaction against budget constraints. That’s the crux of it—nothing ever fully aligns. \nMan: True, and we’ll need to address community feedback before anything gets finalized. So if anyone has suggestions, please consider the implications—especially on connectivity and accessibility. \nWoman: Right, it’s not just about expanding routes; we need to think about maintaining punctuality and reducing overcrowding. \nMan: Agreed. And I guess we’ll be circulating a revised proposal next week, but we really need to listen to everyone’s concerns this time. It’s crucial. \nWoman: Absolutely, otherwise we might be backtracking again, which no one wants. \nMan: Alright, that’s settled then. Thanks, everyone.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern expressed by the speakers regarding the proposed changes?",
+        "options": [
+          "A) Increased fares may lead to greater dissatisfaction.",
+          "B) There is a lack of community feedback incorporation.",
+          "C) The new routes were initially well-received.",
+          "D) Reliability of service is deemed secondary."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What reason do the speakers suggest for the apparent disconnect between fare increases and service improvements?",
+        "options": [
+          "A) The city's budgeting philosophy outweighs commuter needs.",
+          "B) Improvements are expected to be funded by fare hikes.",
+          "C) Commuters overwhelmingly support fare increases.",
+          "D) There is confidence that plans will be implemented as proposed."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "How do the speakers feel about the handling of commuter feedback?",
+        "options": [
+          "A) They believe feedback has been disregarded in past surveys.",
+          "B) They think the feedback process is efficient and effective.",
+          "C) They are confident that the feedback will change plans significantly.",
+          "D) They feel it’s merely a formality without real impact."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What aspect of the transit system are the speakers most concerned with beyond just routes?",
+        "options": [
+          "A) The potential of overcrowding during rush hours.",
+          "B) The aesthetics of the new transit lines.",
+          "C) Punctuality and efficiency of service.",
+          "D) Overall satisfaction of the transit board."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Which statement reflects the attitude of the speakers towards the timeline of introducing changes?",
+        "options": [
+          "A) They are eager to finalize the proposal quickly.",
+          "B) They recognize the need for thorough discussion before proceeding.",
+          "C) They believe there is no urgency since issues are minor.",
+          "D) They expect the changes will face no opposition."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the general tone of the discussion among the speakers?",
+        "options": [
+          "A) Optimistic and decisive.",
+          "B) Frustrated but constructive.",
+          "C) Indifferent and dismissive.",
+          "D) Supportive and overly enthusiastic."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Community Festival Announcement",
+    "context": "Listeners will hear an announcement about an upcoming community festival, including details about activities and a schedule.",
+    "audioFile": "part3-61.mp3",
+    "duration": 120,
+    "passage": "Welcome everyone to the annual Maple City Community Festival! This year's festival will be held on Saturday, June 15th, at the City Park, starting at 10 AM. Join us for a day full of fun and activities for all ages. There will be live music, food trucks offering a variety of cuisines, and games for children. Don’t miss the pie-eating contest at noon, and the talent show that starts at 2 PM! Additionally, we’ll have local artists showcasing their work. The festival will conclude with a spectacular fireworks display at 9 PM. Remember to bring your family and friends! See you at the festival!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the date of the festival?",
+        "options": [
+          "June 10th",
+          "June 15th",
+          "July 1st",
+          "July 15th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the festival start?",
+        "options": [
+          "9 AM",
+          "10 AM",
+          "11 AM",
+          "12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What contest is mentioned?",
+        "options": [
+          "Singing contest",
+          "Pie-eating contest",
+          "Dance contest",
+          "Art contest"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What kind of food will be available?",
+        "options": [
+          "Only fast food",
+          "Only desserts",
+          "A variety of cuisines",
+          "None"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What will conclude the festival?",
+        "options": [
+          "A dance",
+          "A talent show",
+          "A fireworks display",
+          "A parade"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Where will the festival take place?",
+        "options": [
+          "In the community center",
+          "At City Park",
+          "At the library",
+          "At the stadium"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-61"
+  },
+  {
+    "title": "Public Library Summer Hours",
+    "context": "Listeners will hear an announcement about changes to summer operating hours at the public library.",
+    "audioFile": "part3-62.mp3",
+    "duration": 120,
+    "passage": "Attention everyone! We would like to inform you about the new summer hours for Maple City Public Library. Starting June 1st, our library will be open from 9 AM to 5 PM on weekdays and from 10 AM to 4 PM on Saturdays. We will be closed on Sundays. These hours will be in effect until August 31st. We encourage everyone to visit our library and make use of our resources, including our summer reading programs for all ages. Thank you for your understanding, and we look forward to seeing you!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the new closing time on weekdays?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "4 PM",
+          "7 PM"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What day is the library closed?",
+        "options": [
+          "Monday",
+          "Saturday",
+          "Sunday",
+          "Wednesday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "When do the new hours start?",
+        "options": [
+          "May 1st",
+          "June 1st",
+          "July 1st",
+          "August 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What program does the library offer during summer?",
+        "options": [
+          "Cooking classes",
+          "Summer reading programs",
+          "Art classes",
+          "Music lessons"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Until when will the summer hours be in effect?",
+        "options": [
+          "June 30th",
+          "July 31st",
+          "August 31st",
+          "September 15th"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What are Saturday's library hours?",
+        "options": [
+          "9 AM to 1 PM",
+          "10 AM to 4 PM",
+          "10 AM to 2 PM",
+          "9 AM to 5 PM"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-62"
+  },
+  {
+    "title": "Community Gardening Program Announcement",
+    "context": "Listeners will learn about a community gardening program launching soon.",
+    "audioFile": "part3-63.mp3",
+    "duration": 120,
+    "passage": "We are excited to announce the launch of our community gardening program here in Maplewood. This program will start on May 10th at the community park. Everyone is invited to join us every Saturday morning from 9 AM to 11 AM. This program is great for all ages, from children to seniors, and aims to promote healthy eating and environmental sustainability. Tools and seeds will be provided, but feel free to bring your own if you have them. For more information, please contact the community center or visit our website. Let’s grow together!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the gardening program start?",
+        "options": [
+          "May 10th",
+          "April 15th",
+          "June 1st",
+          "May 1st"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "On which day of the week will the program take place?",
+        "options": [
+          "Monday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What is a goal of the program?",
+        "options": [
+          "Promote healthy eating",
+          "Create new jobs",
+          "Teach cooking skills",
+          "Organize community events"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "What time will the program take place?",
+        "options": [
+          "8 AM to 10 AM",
+          "9 AM to 11 AM",
+          "10 AM to 12 PM",
+          "11 AM to 1 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where can participants get more information?",
+        "options": [
+          "Visit a friend",
+          "Go to the library",
+          "Contact the community center",
+          "Call the mayor"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What will be provided for participants?",
+        "options": [
+          "Only seeds",
+          "Transportation",
+          "Tools and seeds",
+          "Gardening books"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-63"
+  },
+  {
+    "title": "Annual Charity Run Announcement",
+    "context": "Listeners will hear about an annual charity run event taking place in the community.",
+    "audioFile": "part3-64.mp3",
+    "duration": 120,
+    "passage": "Hello everyone! We are thrilled to announce that registration is now open for the Annual Maple City Charity Run! This exciting event will take place on Sunday, September 20th, starting at 8 AM. Participants can choose between a 5K or a 10K run, and all proceeds will go to a local children's charity. Whether you are a seasoned runner or just starting out, we encourage everyone to join us for a fun day of fitness and community spirit! Please visit our website for more details and to register online. Thank you!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the charity run take place?",
+        "options": [
+          "September 10th",
+          "September 20th",
+          "August 20th",
+          "October 5th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What are the two distances participants can run?",
+        "options": [
+          "1K and 5K",
+          "5K and 10K",
+          "10K and 20K",
+          "3K and 5K"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does the run start?",
+        "options": [
+          "7 AM",
+          "8 AM",
+          "9 AM",
+          "10 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Where will the proceeds go?",
+        "options": [
+          "A local park",
+          "An animal shelter",
+          "A local children's charity",
+          "A hospital"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Who is encouraged to participate?",
+        "options": [
+          "Only experienced runners",
+          "Only children",
+          "Everyone",
+          "Only local residents"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Where can participants register for the event?",
+        "options": [
+          "At the library",
+          "By phone",
+          "At a local gym",
+          "On the website"
+        ],
+        "correct": 3
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-64"
+  },
+  {
+    "title": "Local Wildlife Conservation Project",
+    "context": "Listeners will learn about a new project aimed at wildlife conservation in the area.",
+    "audioFile": "part3-65.mp3",
+    "duration": 120,
+    "passage": "Attention all residents! We are launching a new wildlife conservation project to help protect the habitats of local animals. This initiative will begin on March 15th and will involve community members in various activities, such as tree planting and educational workshops. We aim to raise awareness about the importance of biodiversity and how we can coexist with nature. Volunteers of all ages are welcome. Training will be provided, and all tools will be supplied. If you are interested, please sign up at the community center by March 1st. Together, we can make a difference!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the wildlife project start?",
+        "options": [
+          "January 1st",
+          "March 15th",
+          "April 1st",
+          "February 28th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What will volunteers do?",
+        "options": [
+          "Go on vacations",
+          "Plant trees",
+          "Build houses",
+          "Organize events"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What kind of workshops will be held?",
+        "options": [
+          "Cooking workshops",
+          "Educational workshops",
+          "Fitness workshops",
+          "Art workshops"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "By when should residents sign up to participate?",
+        "options": [
+          "February 1st",
+          "March 1st",
+          "April 1st",
+          "January 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will be provided to volunteers?",
+        "options": [
+          "Only transportation",
+          "Tools and training",
+          "Food and drinks",
+          "Clothing"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What is the main goal of the project?",
+        "options": [
+          "To build new homes",
+          "To raise awareness about biodiversity",
+          "To create jobs",
+          "To educate children about animals"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-65"
+  },
+  {
+    "title": "City Walking Tour Announcement",
+    "context": "Listeners will hear about a walking tour that explores the history of a local city.",
+    "audioFile": "part3-66.mp3",
+    "duration": 120,
+    "passage": "Hello, everyone! We are excited to announce our upcoming city walking tour, which will take place on Saturday, April 12th. This guided tour will begin at 10 AM at the City Hall and will last approximately two hours. Participants will have the opportunity to learn about the history of Maple City and visit several historical landmarks. This is an excellent way to explore the city while staying active. Please wear comfortable shoes and bring water. We look forward to seeing you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the date of the walking tour?",
+        "options": [
+          "April 12th",
+          "May 12th",
+          "March 12th",
+          "April 20th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where will the tour start?",
+        "options": [
+          "At the library",
+          "At the park",
+          "At City Hall",
+          "At the museum"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How long will the tour last?",
+        "options": [
+          "One hour",
+          "Two hours",
+          "Three hours",
+          "Four hours"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What should participants wear?",
+        "options": [
+          "Formal clothes",
+          "Comfortable shoes",
+          "Hiking gear",
+          "Swimwear"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will participants learn about?",
+        "options": [
+          "City history",
+          "Cooking skills",
+          "Gardening techniques",
+          "Fitness tips"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 6,
+        "question": "What time does the tour start?",
+        "options": [
+          "9 AM",
+          "10 AM",
+          "11 AM",
+          "12 PM"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-66"
+  },
+  {
+    "title": "Holiday Festival Announcement",
+    "context": "Listeners will learn about an upcoming holiday festival in the community.",
+    "audioFile": "part3-67.mp3",
+    "duration": 120,
+    "passage": "Hello everyone! It's that time of year again! We are excited to announce the Maple City Holiday Festival, happening from December 1st to December 24th. This year, the festival will feature live entertainment, festive foods, and fun activities for the whole family. The festival will take place at the downtown plaza and will be open daily from 5 PM to 10 PM. Make sure to check out the festive light displays and don’t miss the tree lighting ceremony on December 1st at 6 PM! We hope to see you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the holiday festival start?",
+        "options": [
+          "November 30th",
+          "December 1st",
+          "December 15th",
+          "January 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What dates does the festival run?",
+        "options": [
+          "December 1st to December 24th",
+          "December 1st to December 31st",
+          "December 15th to January 5th",
+          "November 30th to December 25th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What time does the festival open?",
+        "options": [
+          "3 PM",
+          "4 PM",
+          "5 PM",
+          "6 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "Where will the festival take place?",
+        "options": [
+          "At the community center",
+          "At the downtown plaza",
+          "At the school gym",
+          "At the library"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What special event occurs on December 1st?",
+        "options": [
+          "Music concert",
+          "Tree lighting ceremony",
+          "Food fair",
+          "Art exhibition"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What types of activities will be featured?",
+        "options": [
+          "Workshops",
+          "Sporting events",
+          "Festive foods",
+          "Educational programs"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-67"
+  },
+  {
+    "title": "Health Fair Announcement",
+    "context": "Listeners will hear about an annual health fair that provides free health services.",
+    "audioFile": "part3-68.mp3",
+    "duration": 120,
+    "passage": "Good morning, everyone! We are pleased to announce the Annual Maple City Health Fair, taking place on Saturday, May 25th, from 10 AM to 3 PM at the Community Center. This event is a great opportunity to learn about various health services available to you, including blood pressure screenings, nutritional advice, and fitness demonstrations. Local health providers will be available to answer your questions and provide resources. Don’t miss this chance to improve your health and well-being! We look forward to seeing you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the date of the health fair?",
+        "options": [
+          "May 20th",
+          "May 25th",
+          "June 10th",
+          "April 25th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the health fair start?",
+        "options": [
+          "9 AM",
+          "10 AM",
+          "11 AM",
+          "12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Where will the health fair be held?",
+        "options": [
+          "At the library",
+          "At the community center",
+          "At the park",
+          "At a school"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What services will be provided?",
+        "options": [
+          "Yoga classes",
+          "Blood pressure screenings",
+          "Cooking lessons",
+          "Art workshops"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "When does the health fair end?",
+        "options": [
+          "1 PM",
+          "2 PM",
+          "3 PM",
+          "4 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What should attendees bring?",
+        "options": [
+          "A blanket",
+          "Food",
+          "Water bottles",
+          "None"
+        ],
+        "correct": 3
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-68"
+  },
+  {
+    "title": "Local Book Club Announcement",
+    "context": "Listeners will hear about a book club starting up at the library.",
+    "audioFile": "part3-69.mp3",
+    "duration": 120,
+    "passage": "Hello everyone! We’re excited to announce a new book club starting at the Maple City Public Library on Tuesday, March 15th. The club will meet every two weeks at 6 PM. This is a wonderful opportunity for book lovers to discuss various genres and share their thoughts. Each month, we’ll choose a different book to read, and our first book will be 'The Great Gatsby.' Whether you are a lifelong reader or new to reading, everyone is welcome! To join, please register at the library front desk or call us. We hope to see you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When will the book club start?",
+        "options": [
+          "March 15th",
+          "April 15th",
+          "February 15th",
+          "June 15th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "How often will the book club meet?",
+        "options": [
+          "Every week",
+          "Every two weeks",
+          "Once a month",
+          "Every day"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the first book the club will read?",
+        "options": [
+          "1984",
+          "The Great Gatsby",
+          "Pride and Prejudice",
+          "To Kill a Mockingbird"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time will the meetings be held?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "7 PM",
+          "8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where do participants need to register?",
+        "options": [
+          "At the post office",
+          "At the library front desk",
+          "Online",
+          "At the community center"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Who can join the book club?",
+        "options": [
+          "Only adults",
+          "Only students",
+          "Everyone",
+          "Only children"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-69"
+  },
+  {
+    "title": "Environmental Workshop Announcement",
+    "context": "Listeners will learn about an environmental workshop designed to promote sustainability.",
+    "audioFile": "part3-70.mp3",
+    "duration": 120,
+    "passage": "Attention, everyone! We are pleased to announce an Environmental Workshop taking place on Saturday, April 10th, from 1 PM to 4 PM at the Maplewood Community Center. This workshop aims to raise awareness about sustainable living and will cover topics such as recycling, composting, and energy conservation. Everyone is welcome to join, and materials will be provided. Please register by April 5th at the community center or online. Let’s work together to make a positive impact on our environment!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When is the environmental workshop scheduled?",
+        "options": [
+          "April 10th",
+          "April 5th",
+          "March 10th",
+          "April 15th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where will the workshop take place?",
+        "options": [
+          "At the library",
+          "At the community center",
+          "At the park",
+          "At the school"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What topics will be discussed?",
+        "options": [
+          "Cooking and baking",
+          "Travel and tourism",
+          "Sustainable living",
+          "Health and wellness"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What should participants do by April 5th?",
+        "options": [
+          "Register for the workshop",
+          "Submit a project",
+          "Prepare a report",
+          "Buy materials"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What will be provided to attendees?",
+        "options": [
+          "Only food",
+          "Only books",
+          "Materials",
+          "Transportation"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What time does the workshop start?",
+        "options": [
+          "1 PM",
+          "2 PM",
+          "3 PM",
+          "4 PM"
+        ],
+        "correct": 0
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-70"
+  },
+  {
+    "title": "Historical Exhibit Announcement",
+    "context": "Listeners will learn about a new historical exhibit opening at a local museum.",
+    "audioFile": "part3-71.mp3",
+    "duration": 120,
+    "passage": "Attention all history enthusiasts! We are excited to announce a new exhibit opening at the Maple City Museum on Saturday, January 15th. The exhibit, titled 'The Evolution of Maple City,' will take you on a journey through our town's rich history. You'll explore artifacts, photographs, and interactive displays. The exhibit will run through March 15th, and museum hours are Tuesday to Sunday from 10 AM to 5 PM. Admission is free for children under 12 and only $5 for adults. We invite everyone to come and learn more about our community’s past!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the title of the exhibit?",
+        "options": [
+          "History of Canada",
+          "The Evolution of Maple City",
+          "Maple City Artifacts",
+          "Local Heroes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "When does the exhibit open?",
+        "options": [
+          "January 1st",
+          "January 15th",
+          "February 1st",
+          "March 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How long will the exhibit run?",
+        "options": [
+          "Until February 15th",
+          "Until March 15th",
+          "Until April 15th",
+          "Until January 30th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What are the museum hours?",
+        "options": [
+          "Monday to Friday",
+          "Tuesday to Sunday",
+          "Daily",
+          "Only weekends"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How much does admission cost for adults?",
+        "options": [
+          "Free",
+          "$5",
+          "$10",
+          "$2"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "Who gets free admission?",
+        "options": [
+          "Everyone",
+          "Children under 12",
+          "Adults only",
+          "Seniors only"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-71"
+  },
+  {
+    "title": "New Technology Course Announcement",
+    "context": "Listeners will be informed about a new technology course offered at the local community center.",
+    "audioFile": "part3-72.mp3",
+    "duration": 120,
+    "passage": "Greetings, residents! We are thrilled to announce a new technology course starting at the Maple City Community Center. The course will begin on Saturday, March 22nd, and will run for six weeks every Saturday from 2 PM to 4 PM. This course is ideal for beginners and will cover fundamental skills like using computers, internet navigation, and basic software applications. All materials will be provided, and registration is required by March 15th. Don’t miss this opportunity to enhance your tech skills!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the technology course start?",
+        "options": [
+          "March 15th",
+          "March 22nd",
+          "April 1st",
+          "March 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How long will the course last?",
+        "options": [
+          "Four weeks",
+          "Five weeks",
+          "Six weeks",
+          "Seven weeks"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What time will the course take place?",
+        "options": [
+          "1 PM to 3 PM",
+          "2 PM to 4 PM",
+          "3 PM to 5 PM",
+          "4 PM to 6 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is a focus of the course?",
+        "options": [
+          "Advanced programming",
+          "Basic software applications",
+          "Web design",
+          "Game development"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "When is the registration deadline?",
+        "options": [
+          "March 1st",
+          "March 5th",
+          "March 15th",
+          "March 20th"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What will be provided for participants?",
+        "options": [
+          "Laptops",
+          "Books",
+          "All materials",
+          "Food"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-72"
+  },
+  {
+    "title": "Health Consultation Clinic Announcement",
+    "context": "Listeners will hear about a health consultation clinic providing free services.",
+    "audioFile": "part3-73.mp3",
+    "duration": 120,
+    "passage": "Hello everyone! We are happy to announce a free health consultation clinic happening on Saturday, April 25th, from 10 AM to 3 PM at the Maple Community Centre. This clinic will offer free health screenings, consultations with local health professionals, and educational materials about staying healthy. Some of the services included are blood pressure checks, diabetes screening, and nutritional advice. No registration is required, so feel free to come anytime during the event. We hope to see you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the date of the health consultation clinic?",
+        "options": [
+          "April 20th",
+          "April 25th",
+          "March 25th",
+          "May 25th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the clinic start?",
+        "options": [
+          "9 AM",
+          "10 AM",
+          "11 AM",
+          "12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What types of screenings will be offered?",
+        "options": [
+          "Free eye exams",
+          "Blood pressure checks",
+          "Dental check-ups",
+          "Physical exams"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Is registration required for the clinic?",
+        "options": [
+          "Yes",
+          "No",
+          "Only for certain services",
+          "Only for children"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where will the clinic be held?",
+        "options": [
+          "At the library",
+          "At the community centre",
+          "At the park",
+          "At the school"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 6,
+        "question": "What will participants receive?",
+        "options": [
+          "Only free food",
+          "Health screenings and materials",
+          "Prizes",
+          "Free transportation"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-73"
+  },
+  {
+    "title": "Cooking Class Announcement",
+    "context": "Listeners will hear about an upcoming cooking class at the local community center.",
+    "audioFile": "part3-74.mp3",
+    "duration": 120,
+    "passage": "Hello everyone! We are excited to announce a new cooking class taking place at the Maplewood Community Center starting Thursday, June 5th. The class will be held every Thursday from 6 PM to 8 PM for six weeks. This class is designed for beginners and will cover basics such as knife skills, meal preparation, and cooking techniques. All necessary ingredients will be provided, and a small fee of $25 is required for the entire course. To register, please visit the community center or call us by June 1st. We look forward to cooking with you!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the cooking class start?",
+        "options": [
+          "June 1st",
+          "June 5th",
+          "July 5th",
+          "May 5th"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How long will the class run?",
+        "options": [
+          "Four weeks",
+          "Six weeks",
+          "Eight weeks",
+          "Ten weeks"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does the class begin?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "7 PM",
+          "8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the fee for the entire course?",
+        "options": [
+          "$10",
+          "$25",
+          "$50",
+          "$75"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where can participants register?",
+        "options": [
+          "At the library",
+          "At any restaurant",
+          "At the community center",
+          "Only online"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What will be provided for participants?",
+        "options": [
+          "Only kitchen tools",
+          "Only recipes",
+          "Ingredients",
+          "None"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-74"
+  },
+  {
+    "title": "Public Transport Safety Announcement",
+    "context": "Listeners will hear an announcement regarding safety on public transport.",
+    "audioFile": "part3-75.mp3",
+    "duration": 120,
+    "passage": "Attention passengers! This is a public safety announcement regarding our transit system. Please ensure that you remain seated while the bus is in motion. Avoid using electronic devices unless necessary, as distractions can lead to accidents. Additionally, keep your belongings close and report any suspicious activity to the driver. Your safety is our top priority. Thank you for your cooperation and have a pleasant journey.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What should passengers do while the bus is in motion?",
+        "options": [
+          "Stand",
+          "Use electronic devices",
+          "Remain seated",
+          "Talk loudly"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What should you report to the driver?",
+        "options": [
+          "Your destination",
+          "Suspicious activity",
+          "The weather",
+          "Your fare"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What is advised against during the journey?",
+        "options": [
+          "Eating snacks",
+          "Using electronic devices",
+          "Reading a book",
+          "Listening to music"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the primary concern of this announcement?",
+        "options": [
+          "Fare increases",
+          "Route changes",
+          "Passenger safety",
+          "New schedules"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What should passengers avoid doing?",
+        "options": [
+          "Talking to friends",
+          "Reading a book",
+          "Distracting the driver",
+          "Holding onto the handrail"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the purpose of the announcement?",
+        "options": [
+          "To provide entertainment",
+          "To inform about delays",
+          "To promote safety",
+          "To encourage conversation"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-75"
+  },
+  {
+    "title": "Local Sports Event Announcement",
+    "context": "Listeners will hear about an upcoming local sports event.",
+    "audioFile": "part3-76.mp3",
+    "duration": 120,
+    "passage": "Attention, sports fans! We are excited to announce the upcoming Maple City Sports Festival, which will take place on Saturday, July 15th, at the local stadium. The event will feature a variety of sports competitions, including soccer, basketball, and track and field events. Everyone is welcome to come and support the teams as they compete for the trophy! Local food vendors will also be present, providing delicious meals for all attendees. Gates open at 9 AM, so don’t miss out on the action! We look forward to seeing you there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the date of the sports festival?",
+        "options": [
+          "July 15th",
+          "July 20th",
+          "August 15th",
+          "June 15th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What types of events will be featured?",
+        "options": [
+          "Cooking contests",
+          "Art exhibitions",
+          "Sports competitions",
+          "Music performances"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "Where will the event be held?",
+        "options": [
+          "At the library",
+          "At the community center",
+          "At the local stadium",
+          "At the downtown plaza"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What time do the gates open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What can attendees expect from food vendors?",
+        "options": [
+          "Only beverages",
+          "Only snacks",
+          "Delicious meals",
+          "Fancy desserts"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 6,
+        "question": "Who is welcome to attend?",
+        "options": [
+          "Only sports fans",
+          "Only the local community",
+          "Everyone",
+          "Only children"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part3-76"
+  },
+  {
+    "title": "Community Center Events",
+    "difficulty": "beginner",
+    "passage": "Host: Welcome to the monthly announcements from the community center. Man: We have a lot of exciting events coming up! Woman: Yes, our first event is a free yoga class next Tuesday at 6 PM. Man: That’s right! It will be held in the main hall. Woman: And on Saturday, we are hosting a bake sale to raise funds for local charities. Man: The bake sale will start at 10 AM. Woman: Don’t forget to come early to get the best treats! Man: Finally, we have a movie night scheduled for next Friday at 7 PM. Woman: We will be showing a family-friendly film with snacks available. Host: We hope to see everyone at these events!",
+    "questions": [
+      {
+        "question": "When is the free yoga class?",
+        "options": [
+          "Next Monday",
+          "Next Tuesday",
+          "Next Saturday",
+          "Next Friday"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What event is happening on Saturday?",
+        "options": [
+          "Yoga class",
+          "Bake sale",
+          "Movie night",
+          "Art exhibition"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What time does the bake sale start?",
+        "options": [
+          "6 AM",
+          "8 AM",
+          "10 AM",
+          "12 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What type of film will be shown during the movie night?",
+        "options": [
+          "Action",
+          "Thriller",
+          "Family-friendly",
+          "Documentary"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Where will the yoga class be held?",
+        "options": [
+          "In the garden",
+          "In the main hall",
+          "In the gym",
+          "In the parking lot"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the purpose of the bake sale?",
+        "options": [
+          "Community gathering",
+          "Raise funds for local charities",
+          "Promote healthy eating",
+          "Celebration of a holiday"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-077"
+  },
+  {
+    "title": "Library Opening Hours",
+    "difficulty": "beginner",
+    "passage": "Narrator: Welcome to the public library announcement. Man: We are excited to share our new opening hours! Woman: Starting next week, the library will open from 9 AM to 8 PM from Monday to Friday. Man: On Saturdays, we will be open from 10 AM to 5 PM. Woman: And don’t forget, we are closed on Sundays. Man: We encourage everyone to visit us and check out our new books and resources. Woman: Thank you for your support!",
+    "questions": [
+      {
+        "question": "What time does the library open on weekdays?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What are the Saturday opening hours?",
+        "options": [
+          "9 AM to 3 PM",
+          "10 AM to 5 PM",
+          "11 AM to 6 PM",
+          "8 AM to 4 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Is the library open on Sundays?",
+        "options": [
+          "Yes",
+          "No",
+          "Only in the summer",
+          "Only for special events"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What can you find at the library?",
+        "options": [
+          "Only books",
+          "New books and resources",
+          "DVDs only",
+          "Stationery supplies"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What day does the new opening hour start?",
+        "options": [
+          "Next Monday",
+          "Next Saturday",
+          "Next Sunday",
+          "Next Friday"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What is the message aimed at the community?",
+        "options": [
+          "To find a job",
+          "To read more books",
+          "To visit the library",
+          "To donate books"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-078"
+  },
+  {
+    "title": "City Park Renovation",
+    "difficulty": "beginner",
+    "passage": "Host: Hello everyone! We have some exciting news about the city park. Man: The renovation of the park will start next month. Woman: That’s right! We will add new playground equipment and a walking path. Man: There will also be new picnic areas for families. Woman: The project is expected to be completed in three months. Man: We are looking forward to seeing everyone enjoy the new park!",
+    "questions": [
+      {
+        "question": "When will the park renovation start?",
+        "options": [
+          "Next week",
+          "Next month",
+          "In the summer",
+          "In the fall"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is one new feature being added to the park?",
+        "options": [
+          "A swimming pool",
+          "New playground equipment",
+          "A parking lot",
+          "A flower garden"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How long will the renovation take?",
+        "options": [
+          "One month",
+          "Two months",
+          "Three months",
+          "Four months"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is the announcement aimed at?",
+        "options": [
+          "City workers",
+          "Local families",
+          "Teenagers",
+          "Tourists"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be more enjoyable after the renovation?",
+        "options": [
+          "Walking paths",
+          "More parking spaces",
+          "New benches",
+          "Gardening workshops"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What are new areas for?",
+        "options": [
+          "Playing sports",
+          "Watching movies",
+          "Picnics",
+          "Jogging"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-079"
+  },
+  {
+    "title": "Farmers' Market",
+    "difficulty": "beginner",
+    "passage": "Man: Hello everyone! We are excited to announce that the farmers' market will open this Saturday at 8 AM. Woman: Yes! It will be located at the town square. Man: The market will have fresh fruits, vegetables, and homemade goods. Woman: Don’t forget to bring your reusable bags! Man: The market will be open every Saturday until noon. Woman: We hope to see you all there!",
+    "questions": [
+      {
+        "question": "When does the farmers' market open?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What time will the market open?",
+        "options": [
+          "7 AM",
+          "8 AM",
+          "9 AM",
+          "10 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Where is the market located?",
+        "options": [
+          "Town hall",
+          "Town square",
+          "City park",
+          "Schoolyard"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should you bring to the market?",
+        "options": [
+          "Cash only",
+          "Reusable bags",
+          "Friends",
+          "Magazines"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When will the market close?",
+        "options": [
+          "10 AM",
+          "11 AM",
+          "12 PM",
+          "1 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What will the market have?",
+        "options": [
+          "Clothes and shoes",
+          "Fresh fruits and vegetables",
+          "Books and toys",
+          "Music and games"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-080"
+  },
+  {
+    "title": "School Field Trip",
+    "difficulty": "beginner",
+    "passage": "Woman: Attention students! We have a field trip planned for next Wednesday. Man: We will be visiting the science museum in the city. Woman: The bus will leave at 9 AM from the school parking lot. Man: Please bring a lunch and a water bottle. Woman: We will return by 3 PM. Man: Make sure to get permission slips signed by your parents!",
+    "questions": [
+      {
+        "question": "When is the school field trip?",
+        "options": [
+          "Next Monday",
+          "Next Tuesday",
+          "Next Wednesday",
+          "Next Thursday"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Where will the students go?",
+        "options": [
+          "Art gallery",
+          "Science museum",
+          "Zoo",
+          "Aquarium"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What time will the bus leave?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should students bring?",
+        "options": [
+          "Snacks only",
+          "Only water bottles",
+          "Lunch and water bottle",
+          "Nothing"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What time will they return?",
+        "options": [
+          "2 PM",
+          "3 PM",
+          "4 PM",
+          "5 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What do students need from their parents?",
+        "options": [
+          "Lunchboxes",
+          "Money",
+          "Permission slips",
+          "Books"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-081"
+  },
+  {
+    "title": "City Council Meeting",
+    "difficulty": "beginner",
+    "passage": "Host: Good evening! We are inviting everyone to the city council meeting this Friday. Man: It will start at 6 PM in the community center. Woman: Important topics will be discussed, such as park renovations and new traffic rules. Man: Everyone is welcome to share their thoughts. Woman: We hope to see you there to participate in your local community!",
+    "questions": [
+      {
+        "question": "When is the city council meeting?",
+        "options": [
+          "This Thursday",
+          "This Friday",
+          "Next Friday",
+          "Next Saturday"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What time does the meeting start?",
+        "options": [
+          "5 PM",
+          "6 PM",
+          "7 PM",
+          "8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Where will the meeting be held?",
+        "options": [
+          "City hall",
+          "Community center",
+          "School gym",
+          "Library"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be discussed?",
+        "options": [
+          "Movie night",
+          "Park renovations and traffic rules",
+          "Sports events",
+          "Music concerts"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is welcome to the meeting?",
+        "options": [
+          "Only city officials",
+          "Only residents",
+          "Everyone",
+          "Only parents"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is the purpose of the meeting?",
+        "options": [
+          "To celebrate a holiday",
+          "To discuss local issues",
+          "To plan a field trip",
+          "To raise money"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-082"
+  },
+  {
+    "title": "Local Farmers' Market Announcement",
+    "difficulty": "intermediate",
+    "passage": "Host: Welcome to the weekly update on community events! Today, we're excited to announce the opening of the local farmers' market this Saturday. Man: The market will take place in the downtown park from 9 AM to 3 PM. Woman: That sounds great! Man: Yes, we will have over 30 vendors featuring fresh produce, handmade crafts, and local baked goods. Woman: Will there be any live entertainment? Man: Absolutely! Throughout the day, there will be live music performances and even some activities for kids. Woman: That's fantastic! Man: And don't forget to bring your reusable bags to support sustainability. Woman: I'll definitely do that! Man: We hope to see everyone there for a fun-filled day!",
+    "questions": [
+      {
+        "question": "What is the main event being announced?",
+        "options": [
+          "A street festival",
+          "A farmers' market",
+          "An art exhibition",
+          "A concert"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Where will the farmers' market be held?",
+        "options": [
+          "In the downtown park",
+          "At the local school",
+          "In the community center",
+          "At the library"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What time does the market open?",
+        "options": [
+          "8 AM",
+          "9 AM",
+          "10 AM",
+          "11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What types of vendors will be present?",
+        "options": [
+          "Clothing and accessories",
+          "Fresh produce and crafts",
+          "Books and magazines",
+          "Electronics and gadgets"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should visitors bring with them?",
+        "options": [
+          "Cash only",
+          "Reusable bags",
+          "Umbrellas",
+          "Sunscreen"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What kind of entertainment will be at the market?",
+        "options": [
+          "Fireworks",
+          "Live music and kids' activities",
+          "Stand-up comedy",
+          "Cooking demonstrations"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-083"
+  },
+  {
+    "title": "Library Extended Hours",
+    "difficulty": "intermediate",
+    "passage": "Narrator: Attention everyone! We have an important announcement regarding our local library. Man: Starting next Monday, the library will be extending its hours to better serve the community. Woman: That's great news! Man: Yes, the new hours will be Monday to Friday from 9 AM to 8 PM, and Saturday from 10 AM to 5 PM. Woman: What about Sundays? Man: We will now be open on Sundays from 1 PM to 5 PM as well. Woman: Awesome! Will there be any special events? Man: Definitely! We have planned weekly storytimes for children every Saturday at 11 AM. Woman: That sounds fun! Man: We hope everyone takes advantage of these new hours and events!",
+    "questions": [
+      {
+        "question": "What is the main topic of the announcement?",
+        "options": [
+          "Library book sales",
+          "Library extended hours",
+          "Library renovation plans",
+          "Library new services"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be the new Friday closing time?",
+        "options": [
+          "6 PM",
+          "7 PM",
+          "8 PM",
+          "9 PM"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "On which day will the library now open?",
+        "options": [
+          "Saturday",
+          "Monday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "What special event will occur every Saturday?",
+        "options": [
+          "Free workshops",
+          "Storytime for children",
+          "Movie screenings",
+          "Book fairs"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What time does the library open on Saturdays?",
+        "options": [
+          "10 AM",
+          "11 AM",
+          "12 PM",
+          "9 AM"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "Who is making the announcement?",
+        "options": [
+          "A librarian",
+          "A community member",
+          "A narrator",
+          "A teacher"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-084"
+  },
+  {
+    "title": "Public Transit Changes",
+    "difficulty": "intermediate",
+    "passage": "Host: Good afternoon, everyone! We have an important update regarding public transit. Man: Starting next week, there will be changes to the bus schedules. Woman: What kind of changes? Man: We will be adding more routes to accommodate increased demand. Woman: That's beneficial for commuters! Man: Yes, and select routes will have extended hours, running until midnight on weekends. Woman: Will the prices change? Man: No, fares will remain the same. Woman: That’s reassuring. Man: Be sure to check the website for the updated schedules and routes. Thank you for your attention!",
+    "questions": [
+      {
+        "question": "What is the main topic of the announcement?",
+        "options": [
+          "Bus fare increase",
+          "Changes in public transit schedules",
+          "New bus routes",
+          "Bus safety procedures"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When will the changes take effect?",
+        "options": [
+          "Next month",
+          "Next week",
+          "Tomorrow",
+          "Next year"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will happen to select bus routes?",
+        "options": [
+          "They will be discontinued",
+          "They will have reduced hours",
+          "They will have extended hours",
+          "They will be merged"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Will fares be changing?",
+        "options": [
+          "Yes, they will increase",
+          "Yes, they will decrease",
+          "No, they will stay the same",
+          "Only for certain routes"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Where can commuters find updated information?",
+        "options": [
+          "On social media",
+          "At bus stations only",
+          "On the website",
+          "In local newspapers"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is the primary speaker's role?",
+        "options": [
+          "The bus driver",
+          "A journalist",
+          "A transit official",
+          "A city planner"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-085"
+  },
+  {
+    "title": "Winter Safety Tips",
+    "difficulty": "intermediate",
+    "passage": "Narrator: Attention residents! With winter approaching, we have some important safety tips to share. Woman: That’s timely advice! Narrator: First, make sure to keep walkways and driveways clear of snow and ice. Man: Right, safety is key! Narrator: Second, ensure that your car is winter-ready with proper tires and antifreeze levels. Woman: What else should we consider? Narrator: Third, be mindful of winter weather warnings and avoid unnecessary travel during severe storms. Man: Great idea! Narrator: Lastly, remember to check on elderly neighbors to ensure they are safe and warm. Woman: These tips are really helpful. Narrator: Let’s all stay safe this winter!",
+    "questions": [
+      {
+        "question": "What is the purpose of the announcement?",
+        "options": [
+          "To promote winter sports",
+          "To share winter safety tips",
+          "To announce a winter festival",
+          "To offer winter sales"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should residents clear away for safety?",
+        "options": [
+          "Leaves",
+          "Snow and ice",
+          "Mud",
+          "Debris"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What kind of car preparation is mentioned?",
+        "options": [
+          "Cleaning the interior",
+          "Adding winter tires and checking antifreeze",
+          "Getting a new battery",
+          "Changing oil"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should people do during severe storms?",
+        "options": [
+          "Travel as planned",
+          "Avoid unnecessary travel",
+          "Help others travel",
+          "Go out for groceries"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who should residents check on during winter?",
+        "options": [
+          "Their pets",
+          "Elderly neighbors",
+          "Children",
+          "Friends"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the speaker’s tone?",
+        "options": [
+          "Encouraging",
+          "Worried",
+          "Indifferent",
+          "Angry"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 3,
+    "id": "part3-086"
+  },
+  {
+    "title": "Community Health Fair",
+    "difficulty": "intermediate",
+    "passage": "Host: Hello everyone! We have exciting news about our upcoming Community Health Fair. Woman: What can we expect this year? Host: This year’s fair will take place next Sunday at the community center from 10 AM to 4 PM. Man: That’s a full day! Host: Yes, it will feature health screenings, free flu shots, and educational workshops. Woman: Will there be activities for kids? Host: Absolutely! There will be fun activities for children and healthy snacks available. Man: That sounds great! Host: We encourage everyone to come out and take advantage of the resources available. See you there!",
+    "questions": [
+      {
+        "question": "What event is being announced?",
+        "options": [
+          "A fundraising gala",
+          "A community health fair",
+          "A sports event",
+          "A music festival"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When will the health fair take place?",
+        "options": [
+          "This Saturday",
+          "Next Sunday",
+          "Next Saturday",
+          "Tomorrow"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What services will be offered at the fair?",
+        "options": [
+          "Yoga classes",
+          "Health screenings and flu shots",
+          "Art therapy",
+          "Cooking classes"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be available for children?",
+        "options": [
+          "Face painting only",
+          "Fun activities and healthy snacks",
+          "Toys and games",
+          "Free giveaways"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Where will the health fair be held?",
+        "options": [
+          "At a park",
+          "At the community center",
+          "At a school",
+          "At a hospital"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the tone of the announcement?",
+        "options": [
+          "Urgent",
+          "Excited",
+          "Skeptical",
+          "Bored"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-087"
+  },
+  {
+    "title": "Volunteer Opportunities",
+    "difficulty": "intermediate",
+    "passage": "Narrator: Greetings, everyone! We are looking for volunteers for several community programs. Woman: What types of programs? Narrator: Mainly, we need help with the food bank, after-school tutoring programs, and community clean-ups. Man: That sounds meaningful! Narrator: Yes, volunteers can choose their preferred program, and we offer training sessions for all roles. Woman: Is there a minimum time commitment? Narrator: We ask that volunteers commit to at least two hours a week. Man: How can one sign up? Narrator: Interested individuals can visit our website or call the community center for more information. We appreciate any help!",
+    "questions": [
+      {
+        "question": "What is the main purpose of the announcement?",
+        "options": [
+          "To announce a new food bank",
+          "To seek volunteers for community programs",
+          "To provide job opportunities",
+          "To request donations"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Which community program is NOT mentioned?",
+        "options": [
+          "After-school tutoring",
+          "Food bank",
+          "Library services",
+          "Community clean-ups"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is the minimum commitment for volunteers?",
+        "options": [
+          "One hour a week",
+          "Two hours a week",
+          "Five hours a week",
+          "Ten hours a month"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How can individuals sign up?",
+        "options": [
+          "By visiting the library",
+          "By calling a friend",
+          "By visiting the website or calling the community center",
+          "By attending a meeting"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What type of training is offered for volunteers?",
+        "options": [
+          "No training is provided",
+          "Online training only",
+          "Training sessions for all roles",
+          "Workshops on food safety"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is the speaker's attitude towards volunteering?",
+        "options": [
+          "Disinterested",
+          "Appreciative",
+          "Critical",
+          "Indifferent"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-088"
+  },
+  {
+    "title": "Community Recycling Program",
+    "difficulty": "advanced",
+    "passage": "Narrator: Welcome everyone to our community announcement regarding our new recycling program. Man: Hello, I’m the community coordinator, and I’m here to discuss some exciting updates. Woman: That sounds great! What’s new? Man: Starting next month, we will be enhancing our recycling efforts. We will be introducing new bins across the city specifically for organic waste. Woman: That’s a great initiative! How will this affect the current recycling schedule? Man: Excellent question! The new organic bins will be collected every week, while the standard recycling will still be collected bi-weekly. Woman: Will residents need to separate their organic waste from their regular recycling? Man: Yes, residents will need to ensure that food scraps and yard waste are placed in the organic bins to facilitate composting. Woman: That sounds like a big change. Are there any penalties for not following the new guidelines? Man: Yes, there may be fines for contamination, so we encourage everyone to pay close attention to the guidelines we’ll be providing. Woman: Thank you for the information! I’m looking forward to participating in this program.",
+    "questions": [
+      {
+        "question": "What is the main topic of the announcement?",
+        "options": [
+          "New waste collection schedule",
+          "Community recycling program",
+          "Organic gardening tips",
+          "Local clean-up day"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When will the new recycling program start?",
+        "options": [
+          "Next week",
+          "Next month",
+          "Next year",
+          "This week"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What type of waste will the new bins be used for?",
+        "options": [
+          "Plastic waste",
+          "Organic waste",
+          "Hazardous waste",
+          "E-waste"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How frequently will organic waste be collected?",
+        "options": [
+          "Once a month",
+          "Every week",
+          "Twice a week",
+          "Bi-weekly"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What could happen if residents do not follow the new recycling guidelines?",
+        "options": [
+          "They will receive rewards",
+          "They may face fines",
+          "They will be informed of tips",
+          "Nothing will happen"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is leading the announcement?",
+        "options": [
+          "A city mayor",
+          "Community coordinator",
+          "A local celebrity",
+          "A council member"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-089"
+  },
+  {
+    "title": "City Arts Festival Announcement",
+    "difficulty": "advanced",
+    "passage": "Narrator: Attention everyone! We have a very special announcement regarding our upcoming city arts festival. Woman: Hi there! Can you give us some details? Man: Absolutely! The festival will take place over three days, starting June 15th through June 17th. Woman: That’s exciting! What activities can we expect? Man: There will be art displays, live music, food trucks, and workshops for all ages. Woman: Are there any fees to participate in these activities? Man: Most events are free, but some workshops may require a registration fee. Woman: Where is the festival being held? Man: It will be hosted in Riverside Park, which has plenty of space for everyone. Woman: Will there be any special guests? Man: Yes, we are expecting several local artists and musicians to join us! Don’t miss out on their performances.",
+    "questions": [
+      {
+        "question": "What event is being announced?",
+        "options": [
+          "City arts festival",
+          "Food festival",
+          "Sports competition",
+          "Music concert"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "When will the arts festival take place?",
+        "options": [
+          "May 10th-12th",
+          "June 15th-17th",
+          "July 1st-3rd",
+          "August 20th-22nd"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What type of activities will NOT be mentioned at the festival?",
+        "options": [
+          "Art displays",
+          "Live music",
+          "Sports competitions",
+          "Workshops"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Where is the festival being held?",
+        "options": [
+          "City Hall",
+          "Downtown Plaza",
+          "Riverside Park",
+          "Main Street"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Are there any costs associated with the festival?",
+        "options": [
+          "All events are free",
+          "Only food costs money",
+          "Some workshops require fees",
+          "Parking is free"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is expected to attend the festival?",
+        "options": [
+          "National entertainers",
+          "Local artists and musicians",
+          "International artists",
+          "Politicians"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-090"
+  },
+  {
+    "title": "Public Transportation Improvements",
+    "difficulty": "advanced",
+    "passage": "Narrator: Good evening everyone. We have an important announcement regarding public transportation in our city. Man: I’m the transit director, and today I’ll outline the improvements we’re implementing next month. Woman: Can you tell us what these improvements entail? Man: Certainly! We’re introducing more frequent bus and train services during peak hours. Woman: Will this affect ticket prices? Man: No, we are maintaining the current fares to ensure accessibility for all riders. Woman: That’s good to hear! What about the expansion of routes? Man: Great question! We’ll be adding new routes to underserved areas, allowing better access for residents. Woman: When can we expect these changes to take effect? Man: The planned changes will take effect on March 5th. Woman: Thank you for this essential information!",
+    "questions": [
+      {
+        "question": "What is the main focus of the announcement?",
+        "options": [
+          "Public transportation improvements",
+          "New ticket pricing",
+          "Parking regulations",
+          "Infrastructure developments"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What specific improvement is mentioned?",
+        "options": [
+          "Longer bus routes",
+          "More frequent services",
+          "Lower ticket prices",
+          "New bus stops"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Will ticket prices increase?",
+        "options": [
+          "Yes, significantly",
+          "Yes, slightly",
+          "No, they will remain the same",
+          "Only for peak hours"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "When will the changes be implemented?",
+        "options": [
+          "February 10th",
+          "March 5th",
+          "April 1st",
+          "May 15th"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What new aspect is being added to the services?",
+        "options": [
+          "Night services",
+          "Limited routes",
+          "New routes to underserved areas",
+          "Discounted fares"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is delivering the announcement?",
+        "options": [
+          "A city councilor",
+          "The transit director",
+          "The mayor",
+          "A community leader"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-091"
+  },
+  {
+    "title": "Health and Safety Regulations Update",
+    "difficulty": "advanced",
+    "passage": "Narrator: Thank you for gathering today. This is an important update regarding health and safety regulations for local businesses. Woman: Why is this update necessary? Man: The updates are in response to recent health concerns in our community. We are enhancing our safety protocols. Woman: What changes should businesses expect? Man: All food establishments must now provide allergen information on their menus. Woman: Will there be a deadline for compliance? Man: Yes, businesses have until May 1st to implement these changes. Woman: Are there any penalties for non-compliance? Man: Absolutely, failing to comply could result in fines or suspension of operating licenses. Woman: Thank you for explaining these important updates.",
+    "questions": [
+      {
+        "question": "What is the purpose of the announcement?",
+        "options": [
+          "Update on health and safety regulations",
+          "New business opportunities",
+          "Hiring event for local businesses",
+          "Community health fair"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What specific regulation is being introduced?",
+        "options": [
+          "Mandatory employee health checks",
+          "Allergen information on menus",
+          "New sanitation protocols",
+          "Closed business hours"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the deadline for compliance?",
+        "options": [
+          "April 15th",
+          "May 1st",
+          "June 1st",
+          "March 20th"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What could happen if businesses do not comply?",
+        "options": [
+          "They will receive a warning",
+          "There could be no consequences",
+          "Fines or suspension of licenses",
+          "They will be given extra time"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is addressing this update?",
+        "options": [
+          "A local doctor",
+          "The health inspector",
+          "A city official",
+          "The mayor"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Why are these updates being implemented?",
+        "options": [
+          "To improve food quality",
+          "In response to health concerns",
+          "To reduce local business competition",
+          "For community beautification"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-092"
+  },
+  {
+    "title": "Winter Safety Guidelines",
+    "difficulty": "advanced",
+    "passage": "Narrator: Hello everyone, thank you for joining today’s session on winter safety. Woman: What are some key points we should be aware of? Man: The most important thing is to dress appropriately for the weather conditions. Woman: That’s crucial! What else should we consider? Man: It’s vital to be cautious of icy sidewalks and driveways. Woman: Are there tips for safe driving in winter? Man: Absolutely! Keep a safe distance from other vehicles and ensure your tires are winter-ready. Woman: What about emergency preparedness? Man: Great question! Make sure your car has an emergency kit, including blankets and food supplies. Woman: Thank you for all these essential tips!",
+    "questions": [
+      {
+        "question": "What is the main topic of the session?",
+        "options": [
+          "Winter sports activities",
+          "Winter safety guidelines",
+          "Winter fashion trends",
+          "Winter holiday celebrations"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the first safety tip mentioned?",
+        "options": [
+          "Stay indoors",
+          "Dress appropriately for weather",
+          "Drive carefully",
+          "Avoid going out"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should you be cautious of during winter?",
+        "options": [
+          "Snowstorms",
+          "Icy sidewalks and driveways",
+          "Wild animals",
+          "Heavy fog"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is noted as a driving safety tip?",
+        "options": [
+          "Drive slower than usual",
+          "Use summer tires",
+          "Avoid using seat belts",
+          "Keep a safe distance from other vehicles"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "What should be included in an emergency kit for your car?",
+        "options": [
+          "Extra clothing only",
+          "Emergency kit not needed",
+          "Blankets and food supplies",
+          "Only water"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is providing the tips during the session?",
+        "options": [
+          "A local teacher",
+          "A winter sports coach",
+          "A safety officer",
+          "A city official"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 3,
+    "id": "part3-093"
+  },
+  {
+    "title": "Library Renovation Announcement",
+    "difficulty": "advanced",
+    "passage": "Narrator: Thank you for coming today. We’re excited to share updates about the library renovation. Man: Hello everyone! I’m the head librarian, and I’ll guide you through the changes. Woman: What kind of renovations are being made? Man: The renovation will include a new children’s area, a quiet study zone, and updated technology throughout. Woman: Sounds fantastic! When will the renovations begin? Man: The construction is set to start on April 1st and is expected to take about three months. Woman: Will the library be closed during this time? Man: Yes, but we’ll provide temporary services at the community center. Woman: That’s a great solution! How can residents stay updated on the progress? Man: We’ll have regular updates posted on our website and through social media channels.",
+    "questions": [
+      {
+        "question": "What is the announcement about?",
+        "options": [
+          "New library services",
+          "Library renovation",
+          "Library book sale",
+          "Community event"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What new features will the library have after renovations?",
+        "options": [
+          "More books",
+          "A new café",
+          "Children’s area and study zone",
+          "Extended hours"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "When is construction scheduled to start?",
+        "options": [
+          "March 1st",
+          "April 1st",
+          "June 1st",
+          "July 1st"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Will the library remain open during renovations?",
+        "options": [
+          "Yes, partially",
+          "No, it will be completely closed",
+          "Yes, all services will continue",
+          "No, but temporary services will be provided"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "How can residents stay informed about the renovations?",
+        "options": [
+          "By calling the library",
+          "Through social media and the website",
+          "Visiting in person",
+          "Local news updates"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is delivering the announcement?",
+        "options": [
+          "A city councilor",
+          "The head librarian",
+          "A community leader",
+          "A local author"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 3,
+    "id": "part3-094"
   }
 ]

@@ -42,7 +42,7 @@ export default function HomePage() {
       title: 'Writing',
       desc: 'Email & Survey responses with real-time AI scoring on the 1-12 CELPIP scale',
       icon: PenLine,
-      stats: '75+ prompts • AI Scoring',
+      stats: '222+ prompts • AI Scoring',
       path: '/writing',
       free: '3 Task 1 + 3 Task 2 free prompts'
     },
@@ -60,14 +60,14 @@ export default function HomePage() {
       title: 'Reading',
       desc: 'Timed passages with authentic exam-style questions across all 4 parts',
       icon: BookOpen,
-      stats: '4 Parts • 17 Passages',
+      stats: '4 Parts • 290+ Passages',
       path: '/reading',
       free: '4 free passages to start'
     },
     {
       id: 'listening',
       title: 'Listening',
-      desc: 'One-play audio — just like the real CELPIP test, with 24 practice passages',
+      desc: 'One-play audio — just like the real CELPIP test, with 460+ practice passages',
       icon: Headphones,
       stats: '6 Parts • 24 Passages',
       path: '/listening',
@@ -85,12 +85,12 @@ export default function HomePage() {
   ];
 
   const comparisons = [
-    { feature: 'Practice Questions', us: '200+ (infinite with AI)', them: 'Fixed question banks' },
+    { feature: 'Practice Questions', us: '1,500+ (infinite with AI)', them: 'Fixed question banks' },
     { feature: 'AI Feedback', us: 'Real-time on Writing & Speaking', them: 'Answer keys only' },
     { feature: 'Adaptive Difficulty', us: '✅ Auto-adjusts to your level', them: '❌ One size fits all' },
     { feature: 'Mock Exam with CLB Estimate', us: '✅ Full simulation', them: '❌ or basic only' },
-    { feature: 'Audio Listening Practice', us: '24 cached + unlimited AI', them: 'Limited passages' },
-    { feature: 'Price', us: 'Free tier + CA$24.99/mo Pro', them: '$29-49/month, no free tier' },
+    { feature: 'Audio Listening Practice', us: '460+ cached + unlimited AI', them: 'Limited passages' },
+    { feature: 'Price', us: 'Free tier + CA$29.99/mo Pro', them: '$29-49/month, no free tier' },
   ];
 
   const faqs = [
@@ -103,9 +103,9 @@ export default function HomePage() {
   ];
 
   const stats = [
-    { value: '24', label: 'Listening Passages', sub: 'with audio' },
-    { value: '17', label: 'Reading Passages', sub: 'all parts' },
-    { value: '75+', label: 'Writing Prompts', sub: 'Task 1 & 2' },
+    { value: '460+', label: 'Listening Passages', sub: 'with audio' },
+    { value: '290+', label: 'Reading Passages', sub: 'all parts' },
+    { value: '222+', label: 'Writing Prompts', sub: 'Task 1 & 2' },
     { value: '∞', label: 'AI Exercises', sub: 'Pro feature' },
   ];
 
@@ -348,11 +348,11 @@ export default function HomePage() {
         </div>
 
         <div className={styles.proCtaWrapper}>
-          <Link href="/pricing" className={styles.ctaPrimary}>
-            <span>Start 3-Day Free Trial</span>
+          <Link href="/dashboard" className={styles.ctaPrimary}>
+            <span>Start Practicing Free</span>
             <ArrowRight size={20} />
           </Link>
-          <p className={styles.proCtaSub}>No charge for 3 days. Then CA$24.99/month or CA$99/year. Cancel anytime.</p>
+          <p className={styles.proCtaSub}>3 free exercises daily. Pro: CA$29.99/month or CA$149.99/year. Cancel anytime.</p>
         </div>
       </section>
 

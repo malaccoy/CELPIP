@@ -1,0 +1,4658 @@
+[
+  {
+    "number": 1,
+    "title": "Rights of a Citizen",
+    "situation": "Rights & Responsibilities — Canadian Citizenship Test",
+    "grammarFocus": "Rights & Responsibilities",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Canadian Charter of Rights and Freedoms was enacted in 1982.",
+        "detail": "It is a part of the Constitution Act, 1982, and guarantees fundamental rights and freedoms to all Canadians."
+      },
+      {
+        "fact": "Fundamental freedoms include freedom of conscience and religion.",
+        "detail": "This allows individuals to practice their beliefs without interference."
+      },
+      {
+        "fact": "The Charter guarantees the right to freedom of thought, belief, opinion, and expression.",
+        "detail": "This includes the freedom to express oneself through speech, writing, and other forms of communication."
+      },
+      {
+        "fact": "Citizens have the right to peaceful assembly.",
+        "detail": "This means individuals can gather peacefully for demonstrations or protests."
+      },
+      {
+        "fact": "Democratic rights include the right to vote and run for office.",
+        "detail": "Every citizen has the right to participate in the democratic process."
+      },
+      {
+        "fact": "Mobility rights allow citizens to move freely within Canada.",
+        "detail": "This includes the right to reside in any province or territory."
+      },
+      {
+        "fact": "Legal rights protect individuals from arbitrary detention and imprisonment.",
+        "detail": "These rights ensure fair treatment and due process in legal matters."
+      },
+      {
+        "fact": "Equality rights guarantee that every individual is equal before the law.",
+        "detail": "This prohibits discrimination based on race, gender, age, or disability."
+      },
+      {
+        "fact": "Language rights protect the use of English and French in federal institutions.",
+        "detail": "This ensures that both official languages are available to Canadians."
+      },
+      {
+        "fact": "The Charter applies to all levels of government in Canada.",
+        "detail": "This means that federal, provincial, and territorial governments must respect the rights outlined in the Charter."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the Canadian Charter of Rights and Freedoms enacted?"
+        },
+        "options": [
+          "1982",
+          "1976",
+          "1990",
+          "1985"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian Charter of Rights and Freedoms was enacted in 1982 as part of the Constitution Act, 1982."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which right protects individuals from discrimination based on gender?"
+        },
+        "options": [
+          "Equality rights",
+          "Mobility rights",
+          "Legal rights",
+          "Language rights"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Equality rights guarantee that every individual is equal before the law and prohibits discrimination based on gender, among other factors."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which of the following is NOT a fundamental freedom under the Charter?"
+        },
+        "options": [
+          "Freedom of peaceful assembly",
+          "Freedom of association",
+          "Freedom of movement",
+          "Freedom of expression"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Freedom of movement is covered under mobility rights, not fundamental freedoms."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does the right to peaceful assembly allow citizens to do?"
+        },
+        "options": [
+          "Gather for protests",
+          "Vote in elections",
+          "Move freely between provinces",
+          "Practice any religion"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The right to peaceful assembly allows citizens to gather for demonstrations or protests."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What are the official languages of Canada?"
+        },
+        "options": [
+          "English and Spanish",
+          "French and German",
+          "English and French",
+          "English and Italian"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The official languages of Canada are English and French, which are protected under language rights."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which right allows Canadians to reside in any province or territory?"
+        },
+        "options": [
+          "Legal rights",
+          "Mobility rights",
+          "Democratic rights",
+          "Fundamental freedoms"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Mobility rights allow citizens to move freely and reside in any province or territory in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which of the following rights ensures fair treatment in legal matters?"
+        },
+        "options": [
+          "Democratic rights",
+          "Legal rights",
+          "Mobility rights",
+          "Equality rights"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Legal rights protect individuals from arbitrary detention and ensure fair treatment in legal matters."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What does the Charter guarantee regarding freedom of thought and expression?"
+        },
+        "options": [
+          "It is only for specific groups",
+          "It is a conditional right",
+          "It is a fundamental freedom",
+          "It is limited to public speech"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Charter guarantees freedom of thought, belief, opinion, and expression as a fundamental freedom."
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Responsibilities of Citizenship",
+    "situation": "Rights & Responsibilities — Canadian Citizenship Test",
+    "grammarFocus": "Rights & Responsibilities",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Obeying the law is a fundamental responsibility of citizenship.",
+        "detail": "All Canadians are expected to follow the laws of the land, which helps maintain order and safety in society."
+      },
+      {
+        "fact": "Serving on a jury is a civic duty.",
+        "detail": "Jury duty is an important part of the legal system, allowing citizens to participate in the justice process."
+      },
+      {
+        "fact": "Voting in elections is a right and responsibility.",
+        "detail": "Canadians have the right to vote in federal, provincial, and local elections, and it is their responsibility to participate in democracy."
+      },
+      {
+        "fact": "Helping others in the community is encouraged.",
+        "detail": "Citizens are encouraged to volunteer and assist those in need, fostering a sense of community and support."
+      },
+      {
+        "fact": "Protecting the environment is a shared responsibility.",
+        "detail": "Citizens are expected to take actions that contribute to environmental sustainability and conservation."
+      },
+      {
+        "fact": "Eliminating discrimination and injustice is essential.",
+        "detail": "All Canadians have the responsibility to promote equality and fight against discrimination in all its forms."
+      },
+      {
+        "fact": "Respecting the rights and freedoms of others is crucial.",
+        "detail": "Citizens must acknowledge and respect the rights of fellow Canadians, ensuring a harmonious society."
+      },
+      {
+        "fact": "Participating in the democratic process is vital.",
+        "detail": "Engagement in politics, whether through voting or advocacy, is a key aspect of responsible citizenship."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is one responsibility of citizenship in Canada?"
+        },
+        "options": [
+          "Obey the law",
+          "Travel freely without restrictions",
+          "Choose any job without qualifications",
+          "Ignore community needs"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Obeying the law is a fundamental responsibility of citizenship, as outlined in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Why is serving on a jury considered a civic duty?"
+        },
+        "options": [
+          "It is optional for citizens",
+          "It allows citizens to participate in the justice process",
+          "It is a paid position",
+          "It is only for certain citizens"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Serving on a jury is a civic duty that allows citizens to participate in the justice process, as mentioned in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which of the following is a right protected under the Canadian Charter of Rights and Freedoms?"
+        },
+        "options": [
+          "Right to vote",
+          "Right to unlimited travel",
+          "Right to free healthcare",
+          "Right to own a weapon"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The right to vote is protected under the Canadian Charter of Rights and Freedoms, as stated in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What can citizens do to help others in their community?"
+        },
+        "options": [
+          "Ignore community issues",
+          "Volunteer and support local initiatives",
+          "Only help family members",
+          "Wait for government assistance"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Volunteering and supporting local initiatives is a way for citizens to help others in their community, as highlighted in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "How can Canadians protect the environment?"
+        },
+        "options": [
+          "By ignoring environmental issues",
+          "By taking part in conservation efforts",
+          "By using more plastic",
+          "By polluting waterways"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Taking part in conservation efforts is a way Canadians can protect the environment, as mentioned in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is a responsibility of all Canadians regarding discrimination?"
+        },
+        "options": [
+          "To promote discrimination",
+          "To eliminate discrimination and injustice",
+          "To remain silent about injustices",
+          "To ignore the rights of others"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "All Canadians have the responsibility to eliminate discrimination and injustice, as emphasized in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Why is it important to respect the rights of others?"
+        },
+        "options": [
+          "It creates a harmonious society",
+          "It allows for more conflict",
+          "It is not important",
+          "It is only necessary in some cases"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Respecting the rights of others is crucial for creating a harmonious society, as indicated in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which of the following actions demonstrates responsible citizenship?"
+        },
+        "options": [
+          "Voting in elections",
+          "Avoiding political discussions",
+          "Ignoring community events",
+          "Disregarding laws"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Voting in elections is a key action that demonstrates responsible citizenship, as discussed in Discover Canada."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "The Oath of Citizenship",
+    "situation": "Rights & Responsibilities — Canadian Citizenship Test",
+    "grammarFocus": "Rights & Responsibilities",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Oath of Citizenship is a promise to obey the law and serve Canada.",
+        "detail": "By taking the Oath, new citizens affirm their commitment to the values and responsibilities of citizenship."
+      },
+      {
+        "fact": "New citizens swear allegiance to the Queen or King of Canada.",
+        "detail": "This reflects Canada's constitutional monarchy and the role of the monarch in Canadian governance."
+      },
+      {
+        "fact": "The Oath of Citizenship includes a commitment to uphold the rights and freedoms of Canadians.",
+        "detail": "This emphasizes the importance of respecting the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "fact": "Canada allows for dual citizenship.",
+        "detail": "This means that Canadians can hold citizenship in another country while still being Canadian citizens."
+      },
+      {
+        "fact": "The Oath is taken during a citizenship ceremony.",
+        "detail": "This ceremony is a significant event in which new citizens are welcomed into the Canadian community."
+      },
+      {
+        "fact": "The Oath of Citizenship is a legal requirement for becoming a Canadian citizen.",
+        "detail": "It is the final step in the naturalization process."
+      },
+      {
+        "fact": "Citizenship grants the right to vote in federal, provincial, and local elections.",
+        "detail": "This is a fundamental responsibility and privilege of being a Canadian citizen."
+      },
+      {
+        "fact": "Citizens have the right to run for political office.",
+        "detail": "This allows citizens to actively participate in the democratic process."
+      },
+      {
+        "fact": "The Oath signifies loyalty to Canada and its values.",
+        "detail": "It represents a commitment to the principles of democracy, freedom, and respect for diversity."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the Oath of Citizenship?"
+        },
+        "options": [
+          "A promise to obey the law and serve Canada",
+          "A declaration of independence",
+          "A statement of loyalty to a political party",
+          "A commitment to military service"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Oath of Citizenship is a promise to obey the law and serve Canada, as outlined in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "To whom do new citizens swear allegiance in Canada?"
+        },
+        "options": [
+          "The Prime Minister",
+          "The Governor General",
+          "The Queen or King of Canada",
+          "The Constitution"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "New citizens swear allegiance to the Queen or King of Canada, reflecting the country's constitutional monarchy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is one of the responsibilities of Canadian citizens?"
+        },
+        "options": [
+          "To pay taxes",
+          "To serve in the military",
+          "To attend all government meetings",
+          "To report all citizens to the police"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "One of the key responsibilities of Canadian citizens is to pay taxes, as stated in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does dual citizenship allow?"
+        },
+        "options": [
+          "Holding citizenship in two countries",
+          "Serving in the military for two nations",
+          "Voting in two different countries",
+          "Traveling without a passport"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Dual citizenship allows individuals to hold citizenship in two countries, which is permitted in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "When do new citizens take the Oath of Citizenship?"
+        },
+        "options": [
+          "At the time of application",
+          "During a citizenship ceremony",
+          "After passing the test",
+          "When they receive their citizenship certificate"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "New citizens take the Oath during a citizenship ceremony, which is a significant part of the naturalization process."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What right do Canadian citizens have regarding elections?"
+        },
+        "options": [
+          "To vote in federal, provincial, and local elections",
+          "To run for office in any country",
+          "To attend political meetings",
+          "To form political parties"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canadian citizens have the right to vote in federal, provincial, and local elections, a fundamental aspect of citizenship."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does the Oath of Citizenship signify?"
+        },
+        "options": [
+          "Loyalty to Canada and its values",
+          "A commitment to military service",
+          "A promise to pay taxes",
+          "An agreement to follow international laws"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Oath signifies loyalty to Canada and its values, as emphasized in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which document outlines the rights and freedoms that citizens must uphold?"
+        },
+        "options": [
+          "The Canadian Constitution",
+          "The Declaration of Independence",
+          "The United Nations Charter",
+          "The Canadian Bill of Rights"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian Constitution outlines the rights and freedoms that citizens must uphold, including those in the Charter of Rights and Freedoms."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Who We Are: Canadian Identity",
+    "situation": "Who We Are — Canadian Citizenship Test",
+    "grammarFocus": "Who We Are",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada has three founding peoples: Aboriginal peoples, French, and British.",
+        "detail": "These groups have significantly shaped Canada's history, culture, and identity."
+      },
+      {
+        "fact": "Canada is a multicultural country.",
+        "detail": "Multiculturalism is a fundamental aspect of Canadian identity, celebrating diversity and the coexistence of various cultural backgrounds."
+      },
+      {
+        "fact": "The two official languages of Canada are English and French.",
+        "detail": "This bilingualism reflects the country's history and ensures that both language communities are represented."
+      },
+      {
+        "fact": "Canada's values include equality, respect for cultural differences, freedom, and peace.",
+        "detail": "These values are essential to Canadian identity and are protected under Canadian law."
+      },
+      {
+        "fact": "Aboriginal peoples include First Nations, Inuit, and Métis.",
+        "detail": "Each group has its own unique cultures, languages, and histories."
+      },
+      {
+        "fact": "The British and French influences are evident in Canada's legal systems, political structures, and cultural practices.",
+        "detail": "These influences have contributed to Canada's development as a nation."
+      },
+      {
+        "fact": "The Canadian Charter of Rights and Freedoms guarantees fundamental rights and freedoms.",
+        "detail": "This includes freedom of expression, freedom of assembly, and the right to participate in democratic processes."
+      },
+      {
+        "fact": "Canada's multicultural policy was officially adopted in 1971.",
+        "detail": "This policy recognizes and promotes the cultural diversity of Canadian society."
+      },
+      {
+        "fact": "Canada is known for its commitment to peacekeeping and conflict resolution on the global stage.",
+        "detail": "This is a reflection of Canadian values and identity."
+      },
+      {
+        "fact": "The Royal Canadian Mounted Police (RCMP) is a symbol of Canadian history and identity.",
+        "detail": "The RCMP represents law enforcement and the connection between government and citizens."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What are the three founding peoples of Canada?"
+        },
+        "options": [
+          "Aboriginal peoples, French, British",
+          "Aboriginal peoples, Spanish, British",
+          "French, British, Dutch",
+          "Aboriginal peoples, French, Italian"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The three founding peoples of Canada are Aboriginal peoples, French, and British as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What is the significance of multiculturalism in Canada?"
+        },
+        "options": [
+          "It promotes a single national identity",
+          "It celebrates diversity and cultural coexistence",
+          "It favors one culture over others",
+          "It restricts immigration"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Multiculturalism in Canada celebrates diversity and cultural coexistence, which is a core value of Canadian identity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which two languages are recognized as official languages of Canada?"
+        },
+        "options": [
+          "English and Spanish",
+          "English and French",
+          "French and Italian",
+          "English and German"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The two official languages of Canada are English and French, reflecting the country's history and cultural diversity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which of the following is a value that Canada promotes?"
+        },
+        "options": [
+          "Inequality",
+          "Freedom",
+          "Discrimination",
+          "Violence"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada promotes freedom as one of its core values, along with equality and respect for cultural differences."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the purpose of the Canadian Charter of Rights and Freedoms?"
+        },
+        "options": [
+          "To limit individual rights",
+          "To guarantee fundamental rights and freedoms",
+          "To promote only English culture",
+          "To establish a monarchy"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Charter of Rights and Freedoms guarantees fundamental rights and freedoms for all Canadians."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "When was Canada's multicultural policy officially adopted?"
+        },
+        "options": [
+          "1965",
+          "1971",
+          "1982",
+          "1990"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada's multicultural policy was officially adopted in 1971, recognizing the importance of cultural diversity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does the RCMP represent in Canada?"
+        },
+        "options": [
+          "Peacekeeping",
+          "Law enforcement and national identity",
+          "Cultural diversity",
+          "Political parties"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Royal Canadian Mounted Police (RCMP) represents law enforcement and is a symbol of Canadian history and identity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which of the following groups is part of the Aboriginal peoples in Canada?"
+        },
+        "options": [
+          "First Nations",
+          "Spanish",
+          "British",
+          "French"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "First Nations are one of the three groups that make up Aboriginal peoples in Canada, along with Inuit and Métis."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Aboriginal Peoples of Canada",
+    "situation": "Who We Are — Canadian Citizenship Test",
+    "grammarFocus": "Who We Are",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "First Nations, Métis, and Inuit are the three main groups of Aboriginal Peoples in Canada.",
+        "detail": "These groups have distinct cultures, languages, and histories."
+      },
+      {
+        "fact": "The Constitution Act of 1982 recognizes and affirms the rights of Aboriginal Peoples.",
+        "detail": "This includes the rights of First Nations, Métis, and Inuit."
+      },
+      {
+        "fact": "Treaties are agreements made between Aboriginal Peoples and the Crown.",
+        "detail": "These treaties outline rights and responsibilities for both parties."
+      },
+      {
+        "fact": "The Indian Act was passed in 1876 and governs many aspects of the lives of First Nations.",
+        "detail": "It includes provisions about governance, land, and membership."
+      },
+      {
+        "fact": "Residential schools were government-funded and church-run institutions aimed at assimilating Aboriginal children.",
+        "detail": "These schools operated for over a century, causing significant trauma."
+      },
+      {
+        "fact": "The Truth and Reconciliation Commission was established to address the legacy of residential schools.",
+        "detail": "It aimed to promote healing and understanding between Indigenous and non-Indigenous Canadians."
+      },
+      {
+        "fact": "Self-government is a right recognized for Aboriginal Peoples, allowing them to govern their own communities.",
+        "detail": "This is part of the broader recognition of Aboriginal rights."
+      },
+      {
+        "fact": "Métis people have a unique culture that combines Indigenous and European influences.",
+        "detail": "They are recognized as one of the three distinct groups of Aboriginal Peoples."
+      },
+      {
+        "fact": "Inuit primarily inhabit the northern regions of Canada and have distinct cultural practices.",
+        "detail": "Their traditional lifestyle includes hunting, fishing, and community cooperation."
+      },
+      {
+        "fact": "The Royal Proclamation of 1763 recognized Aboriginal land rights and established a framework for treaty-making.",
+        "detail": "This document is foundational to the relationship between Aboriginal Peoples and the Crown."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What are the three main groups of Aboriginal Peoples in Canada?"
+        },
+        "options": [
+          "First Nations, Inuit, Métis",
+          "First Nations, Inuit, Indigenous",
+          "Métis, Inuit, Native Americans",
+          "First Nations, Métis, Native Canadians"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The correct answer is First Nations, Inuit, and Métis, which are recognized as the three distinct groups of Aboriginal Peoples in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which document recognizes and affirms the rights of Aboriginal Peoples in Canada?"
+        },
+        "options": [
+          "Indian Act",
+          "Constitution Act of 1982",
+          "Royal Proclamation of 1763",
+          "Treaty of Paris"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Constitution Act of 1982 recognizes and affirms the rights of Aboriginal Peoples, making it a key legal document in this regard."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What was the purpose of residential schools in Canada?"
+        },
+        "options": [
+          "To educate Aboriginal children",
+          "To assimilate Aboriginal children",
+          "To provide shelter for homeless children",
+          "To teach Aboriginal languages"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Residential schools aimed to assimilate Aboriginal children into Euro-Canadian culture, which resulted in significant trauma and loss of culture."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does the Indian Act govern?"
+        },
+        "options": [
+          "Aboriginal land rights",
+          "Treaty negotiations",
+          "The governance of First Nations",
+          "All of the above"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "The Indian Act governs various aspects of First Nations' lives, including land rights, governance, and membership."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is self-government in the context of Aboriginal Peoples?"
+        },
+        "options": [
+          "A right to govern their own communities",
+          "A form of local governance",
+          "A type of treaty",
+          "An educational program"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Self-government refers to the right of Aboriginal Peoples to govern their own communities, which is recognized in Canadian law."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which group is recognized for having a unique culture that combines Indigenous and European influences?"
+        },
+        "options": [
+          "Inuit",
+          "Métis",
+          "First Nations",
+          "Native Americans"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Métis are recognized for their unique culture that blends Indigenous and European influences, setting them apart from other groups."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What was the Royal Proclamation of 1763 significant for?"
+        },
+        "options": [
+          "Establishing Indigenous education",
+          "Recognizing Aboriginal land rights",
+          "Creating residential schools",
+          "Ending the fur trade"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Royal Proclamation of 1763 was significant for recognizing Aboriginal land rights and establishing a framework for treaty-making."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which of the following is NOT a right recognized for Aboriginal Peoples in Canada?"
+        },
+        "options": [
+          "Self-government",
+          "Land rights",
+          "Voting rights",
+          "Cultural preservation"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "While Aboriginal Peoples have many rights, including self-government and cultural preservation, voting rights are not uniquely recognized as an Aboriginal right."
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Early History & Exploration",
+    "situation": "Canada's History — Canadian Citizenship Test",
+    "grammarFocus": "Canada's History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Aboriginal peoples are the first inhabitants of Canada.",
+        "detail": "They have lived in Canada for thousands of years, with diverse cultures, languages, and traditions."
+      },
+      {
+        "fact": "John Cabot arrived in Canada in 1497.",
+        "detail": "He was an Italian explorer who is credited with the discovery of the North American mainland."
+      },
+      {
+        "fact": "Jacques Cartier made his first voyage to Canada in 1534.",
+        "detail": "He claimed the land for France and was instrumental in the early exploration of Canada."
+      },
+      {
+        "fact": "Samuel de Champlain founded Quebec City in 1608.",
+        "detail": "He is known as the 'Father of New France' for establishing one of the first permanent European settlements."
+      },
+      {
+        "fact": "New France was a French colony in North America.",
+        "detail": "It existed from the early 16th century until 1763 when it was ceded to Great Britain."
+      },
+      {
+        "fact": "The fur trade was a significant industry in early Canadian history.",
+        "detail": "It involved the exchange of fur, primarily beaver pelts, between Indigenous peoples and European settlers."
+      },
+      {
+        "fact": "Coureurs des bois were independent traders in New France.",
+        "detail": "They often married Indigenous women and lived among the Indigenous peoples."
+      },
+      {
+        "fact": "Voyageurs were licensed fur traders who transported goods by canoe.",
+        "detail": "They played a crucial role in the fur trade by connecting remote areas with trading posts."
+      },
+      {
+        "fact": "The St. Lawrence River was vital for trade and exploration.",
+        "detail": "It served as a major route for early explorers and traders in New France."
+      },
+      {
+        "fact": "The Treaty of Paris in 1763 ended the Seven Years' War.",
+        "detail": "This treaty resulted in France ceding most of its North American territories to Great Britain."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Who were the first inhabitants of Canada?"
+        },
+        "options": [
+          "Aboriginal peoples",
+          "French settlers",
+          "British colonists",
+          "Vikings"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Aboriginal peoples are recognized as the first inhabitants of Canada, with a rich history that predates European contact."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "In what year did John Cabot arrive in Canada?"
+        },
+        "options": [
+          "1492",
+          "1497",
+          "1534",
+          "1608"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "John Cabot arrived in Canada in 1497, marking one of the first European explorations of the North American mainland."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What significant event did Jacques Cartier accomplish in 1534?"
+        },
+        "options": [
+          "Founded Quebec City",
+          "Claimed Canada for France",
+          "Discovered the Pacific Ocean",
+          "Established the fur trade"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Jacques Cartier claimed Canada for France during his first voyage in 1534, paving the way for future exploration."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Who is known as the 'Father of New France'?"
+        },
+        "options": [
+          "John Cabot",
+          "Jacques Cartier",
+          "Samuel de Champlain",
+          "Louis Riel"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Samuel de Champlain is referred to as the 'Father of New France' for founding Quebec City and establishing French presence in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What was the primary industry in New France?"
+        },
+        "options": [
+          "Agriculture",
+          "Fishing",
+          "Fur trade",
+          "Mining"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The fur trade was the main economic activity in New France, involving the exchange of furs between Indigenous peoples and Europeans."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What were Coureurs des bois?"
+        },
+        "options": [
+          "French farmers",
+          "Independent fur traders",
+          "British soldiers",
+          "Indigenous leaders"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Coureurs des bois were independent fur traders in New France who often lived among Indigenous peoples."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What role did voyageurs play in the fur trade?"
+        },
+        "options": [
+          "They were Indigenous leaders",
+          "They transported goods by canoe",
+          "They established trading posts",
+          "They negotiated treaties"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Voyageurs were licensed fur traders who played a crucial role in transporting goods across the waterways of Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which river was vital for trade and exploration in New France?"
+        },
+        "options": [
+          "Fraser River",
+          "St. Lawrence River",
+          "Ottawa River",
+          "Nile River"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The St. Lawrence River was essential for trade and exploration in New France, serving as a major route for early explorers."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What treaty ended the Seven Years' War?"
+        },
+        "options": [
+          "Treaty of Versailles",
+          "Treaty of Utrecht",
+          "Treaty of Paris",
+          "Treaty of Ghent"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Treaty of Paris in 1763 ended the Seven Years' War and resulted in France ceding its territories in North America to Great Britain."
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "The Struggle for Canada",
+    "situation": "Canada's History — Canadian Citizenship Test",
+    "grammarFocus": "Canada's History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The rivalry between the British and French in North America was a significant factor in Canadian history.",
+        "detail": "This rivalry culminated in various conflicts, notably the Seven Years' War, which included the Battle of the Plains of Abraham."
+      },
+      {
+        "fact": "The Battle of the Plains of Abraham occurred in 1759.",
+        "detail": "This decisive battle led to British control over Quebec and marked a turning point in the struggle for North America."
+      },
+      {
+        "fact": "The Treaty of Paris was signed in 1763.",
+        "detail": "This treaty ended the Seven Years' War and ceded French territories in North America to the British."
+      },
+      {
+        "fact": "The Quebec Act of 1774 allowed the French-speaking population of Quebec to maintain their language, religion, and legal system.",
+        "detail": "This act was significant in shaping the relationship between the British and French Canadians."
+      },
+      {
+        "fact": "The Constitutional Act of 1791 divided Quebec into two separate colonies: Upper Canada and Lower Canada.",
+        "detail": "This act aimed to accommodate the growing population and differing cultures of the regions."
+      },
+      {
+        "fact": "The War of 1812 was fought between the United States and Great Britain, with significant battles occurring in Canada.",
+        "detail": "The war was partly driven by American expansionist desires and resulted in a stronger sense of Canadian identity."
+      },
+      {
+        "fact": "Laura Secord is a Canadian heroine known for her role during the War of 1812.",
+        "detail": "She famously warned British forces of an impending American attack, contributing to their victory."
+      },
+      {
+        "fact": "The British victory at the Battle of the Plains of Abraham led to the establishment of British dominance in Canada.",
+        "detail": "This victory was crucial in shaping the future political landscape of Canada."
+      },
+      {
+        "fact": "The Quebec Act was one of the key factors leading to the American Revolution.",
+        "detail": "Colonists viewed the act as a threat to their own rights and liberties."
+      },
+      {
+        "fact": "The Constitutional Act of 1791 was the first major step toward responsible government in Canada.",
+        "detail": "It laid the groundwork for future political developments and governance in the region."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did the Battle of the Plains of Abraham take place?"
+        },
+        "options": [
+          "1759",
+          "1763",
+          "1774",
+          "1812"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Battle of the Plains of Abraham occurred in 1759, marking a pivotal moment in the British-French rivalry in North America."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What treaty ended the Seven Years' War and ceded French territories to the British?"
+        },
+        "options": [
+          "Treaty of Versailles",
+          "Treaty of Paris",
+          "Treaty of Ghent",
+          "Treaty of Utrecht"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Treaty of Paris, signed in 1763, concluded the Seven Years' War and transferred control of French territories in North America to Britain."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What was the purpose of the Quebec Act of 1774?"
+        },
+        "options": [
+          "To establish a new colony",
+          "To allow French Canadians to keep their rights",
+          "To promote English as the only language",
+          "To restrict religious freedoms"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Quebec Act of 1774 aimed to allow the French-speaking population to maintain their language, religion, and legal system."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which act divided Quebec into Upper and Lower Canada?"
+        },
+        "options": [
+          "Constitutional Act of 1791",
+          "Quebec Act of 1774",
+          "Treaty of Paris",
+          "British North America Act"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Constitutional Act of 1791 divided Quebec into Upper and Lower Canada to better manage the growing population and cultural differences."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Who is Laura Secord?"
+        },
+        "options": [
+          "A British general",
+          "A French explorer",
+          "A Canadian heroine",
+          "An American politician"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Laura Secord is celebrated as a Canadian heroine for her efforts during the War of 1812, particularly for warning British forces of an impending attack."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What significant event did the War of 1812 contribute to in Canada?"
+        },
+        "options": [
+          "Formation of Canada",
+          "American independence",
+          "Stronger Canadian identity",
+          "End of British rule"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The War of 1812 helped foster a stronger sense of Canadian identity as citizens united to defend against American invasion."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which act was a response to the American Revolution and aimed to appease French Canadians?"
+        },
+        "options": [
+          "Quebec Act",
+          "Statute of Westminster",
+          "Constitutional Act",
+          "British North America Act"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Quebec Act was seen as a response to the American Revolution, allowing French Canadians to retain their rights and appeasing their concerns."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What was a result of the British victory at the Battle of the Plains of Abraham?"
+        },
+        "options": [
+          "End of the Seven Years' War",
+          "Establishment of British dominance in Canada",
+          "Start of the War of 1812",
+          "Creation of the Quebec Act"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The British victory at the Battle of the Plains of Abraham established British dominance in Canada, significantly altering the region's political landscape."
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Confederation",
+    "situation": "Canada's History — Canadian Citizenship Test",
+    "grammarFocus": "Canada's History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Confederation occurred on July 1, 1867.",
+        "detail": "This date marks the unification of the original provinces into the Dominion of Canada."
+      },
+      {
+        "fact": "The four original provinces of Canada were Ontario, Quebec, Nova Scotia, and New Brunswick.",
+        "detail": "These provinces were the first to join together in Confederation."
+      },
+      {
+        "fact": "Sir John A. Macdonald was the first Prime Minister of Canada.",
+        "detail": "He played a crucial role in the Confederation process and the formation of Canada."
+      },
+      {
+        "fact": "The British North America Act is now known as the Constitution Act, 1867.",
+        "detail": "This act established the framework for Canada's government and legal system."
+      },
+      {
+        "fact": "The reasons for Confederation included the need for better trade, improved railway systems, and defense against potential threats.",
+        "detail": "These issues prompted the provinces to unite for mutual benefit."
+      },
+      {
+        "fact": "Confederation allowed for the creation of a federal government while maintaining provincial governments.",
+        "detail": "This division of powers is a key feature of Canada's political system."
+      },
+      {
+        "fact": "The idea of Confederation was influenced by the American Civil War.",
+        "detail": "Concerns about security and defense were heightened during this period."
+      },
+      {
+        "fact": "The Charlottetown Conference in 1864 was a significant event leading to Confederation.",
+        "detail": "This conference was where the initial discussions about uniting the provinces took place."
+      },
+      {
+        "fact": "The term 'Dominion' was used to describe Canada as a self-governing entity within the British Empire.",
+        "detail": "This highlighted Canada's autonomy while still being part of the empire."
+      },
+      {
+        "fact": "The Confederation was celebrated with the creation of Canada Day, which is observed on July 1 every year.",
+        "detail": "This day marks the anniversary of the Confederation."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did Canada become a Dominion?"
+        },
+        "options": [
+          "1867",
+          "1776",
+          "1871",
+          "1905"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada became a Dominion on July 1, 1867, marking the official Confederation of the provinces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Who was the first Prime Minister of Canada?"
+        },
+        "options": [
+          "Sir John A. Macdonald",
+          "George Brown",
+          "Wilfrid Laurier",
+          "Robert Borden"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Sir John A. Macdonald was the first Prime Minister, playing a pivotal role in the Confederation."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which provinces were the original four that formed Canada?"
+        },
+        "options": [
+          "Ontario, Quebec, Nova Scotia, New Brunswick",
+          "Ontario, Quebec, Manitoba, British Columbia",
+          "Alberta, Saskatchewan, Ontario, Quebec",
+          "Nova Scotia, New Brunswick, Newfoundland, Prince Edward Island"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The original provinces that formed Canada were Ontario, Quebec, Nova Scotia, and New Brunswick."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What was the British North America Act later renamed?"
+        },
+        "options": [
+          "The Constitution Act, 1867",
+          "The Statute of Westminster",
+          "The Canada Act",
+          "The Charter of Rights and Freedoms"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The British North America Act is now known as the Constitution Act, 1867, which established Canada's governance."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Why did the provinces unite in Confederation?"
+        },
+        "options": [
+          "For better trade, railways, and defense",
+          "To create a monarchy",
+          "To establish a new religion",
+          "To expand into the United States"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The provinces united for better trade, improved railway systems, and to enhance defense against threats."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What significant event took place at the Charlottetown Conference?"
+        },
+        "options": [
+          "Initial discussions for Confederation",
+          "The signing of the Treaty of Paris",
+          "The first election of a Prime Minister",
+          "The founding of the Conservative Party"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Charlottetown Conference was where the initial discussions for Confederation took place in 1864."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does the term 'Dominion' refer to in the context of Canada?"
+        },
+        "options": [
+          "A self-governing entity within the British Empire",
+          "A type of government",
+          "A province of Canada",
+          "A military rank"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The term 'Dominion' referred to Canada as a self-governing entity within the British Empire after Confederation."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "When is Canada Day celebrated?"
+        },
+        "options": [
+          "July 1",
+          "August 1",
+          "June 30",
+          "May 24"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada Day is celebrated on July 1 each year, marking the anniversary of Confederation."
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Expansion Westward",
+    "situation": "Canada's History — Canadian Citizenship Test",
+    "grammarFocus": "Canada's History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Manitoba became a province in 1870.",
+        "detail": "Manitoba was the first province to join Confederation after the original four provinces."
+      },
+      {
+        "fact": "British Columbia joined Confederation in 1871.",
+        "detail": "BC was attracted to join Confederation due to promises of a transcontinental railway."
+      },
+      {
+        "fact": "Prince Edward Island joined Confederation in 1873.",
+        "detail": "PEI initially rejected Confederation in 1867 but later joined due to economic reasons."
+      },
+      {
+        "fact": "The North-West Mounted Police (NWMP) was established in 1873.",
+        "detail": "The NWMP, now known as the Royal Canadian Mounted Police (RCMP), was created to maintain law and order in the West."
+      },
+      {
+        "fact": "The Canadian Pacific Railway was completed in 1885.",
+        "detail": "The railway was crucial for connecting the eastern provinces with the western territories."
+      },
+      {
+        "fact": "Louis Riel led the Métis resistance in 1885.",
+        "detail": "Riel's resistance was a response to the marginalization of the Métis people and their land rights."
+      },
+      {
+        "fact": "Saskatchewan and Alberta became provinces in 1905.",
+        "detail": "These provinces were created to accommodate the growing population and development in the West."
+      },
+      {
+        "fact": "Newfoundland joined Confederation in 1949.",
+        "detail": "Newfoundland was the last province to join Canada, following a referendum."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "In what year did Manitoba join Confederation?"
+        },
+        "options": [
+          "1870",
+          "1871",
+          "1873",
+          "1905"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Manitoba became a province in 1870, marking the first expansion of Canada beyond the original four provinces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which province joined Confederation in 1871?"
+        },
+        "options": [
+          "British Columbia",
+          "Prince Edward Island",
+          "Saskatchewan",
+          "Alberta"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "British Columbia joined Confederation in 1871, motivated by the promise of the Canadian Pacific Railway."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What was the main reason for Prince Edward Island joining Confederation in 1873?"
+        },
+        "options": [
+          "Economic stability",
+          "Cultural preservation",
+          "Military protection",
+          "Land rights"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "PEI joined Confederation primarily for economic stability after initially rejecting it due to financial difficulties."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What year was the Canadian Pacific Railway completed?"
+        },
+        "options": [
+          "1880",
+          "1885",
+          "1890",
+          "1905"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Pacific Railway was completed in 1885, facilitating transportation across the country."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Who led the Métis resistance in 1885?"
+        },
+        "options": [
+          "Louis Riel",
+          "Gabriel Dumont",
+          "John A. Macdonald",
+          "Pierre Trudeau"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Louis Riel led the Métis resistance in 1885, advocating for the rights of the Métis people."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "In which year did Saskatchewan and Alberta become provinces?"
+        },
+        "options": [
+          "1900",
+          "1905",
+          "1910",
+          "1915"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Saskatchewan and Alberta were established as provinces in 1905, reflecting the growth of the population and development."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What was the role of the North-West Mounted Police when it was established?"
+        },
+        "options": [
+          "To promote trade",
+          "To maintain law and order",
+          "To oversee immigration",
+          "To establish schools"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The NWMP, now known as the RCMP, was created in 1873 to maintain law and order in the western territories."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "When did Newfoundland join Canada?"
+        },
+        "options": [
+          "1945",
+          "1947",
+          "1949",
+          "1951"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Newfoundland joined Confederation in 1949, becoming the last province to join Canada."
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Canada in the World Wars",
+    "situation": "Canada's History — Canadian Citizenship Test",
+    "grammarFocus": "Canada's History",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada played a significant role in World War I.",
+        "detail": "Over 600,000 Canadians enlisted during the war, and approximately 61,000 lost their lives."
+      },
+      {
+        "fact": "The Battle of Vimy Ridge is often considered the birth of Canada as a nation.",
+        "detail": "This battle, fought in April 1917, marked a significant achievement for Canadian forces."
+      },
+      {
+        "fact": "In Flanders Fields is a famous war poem written by Lieutenant Colonel John McCrae.",
+        "detail": "The poem was inspired by the death of a friend during the Second Battle of Ypres in 1915."
+      },
+      {
+        "fact": "Remembrance Day is observed on November 11 each year.",
+        "detail": "This day honors the sacrifices of those who served in the military during the World Wars and other conflicts."
+      },
+      {
+        "fact": "World War II began in 1939 and ended in 1945.",
+        "detail": "Canada entered the war on September 10, 1939, following the United Kingdom's declaration of war against Germany."
+      },
+      {
+        "fact": "D-Day, also known as Operation Overlord, took place on June 6, 1944.",
+        "detail": "Canadian forces landed at Juno Beach as part of the Allied invasion of Normandy."
+      },
+      {
+        "fact": "The Battle of the Atlantic was a continuous military campaign over control of the Atlantic Ocean.",
+        "detail": "Canada played a crucial role in protecting supply lines between North America and Europe."
+      },
+      {
+        "fact": "More than 1 million Canadians served in the armed forces during World War II.",
+        "detail": "This represented a significant portion of the Canadian population at the time."
+      },
+      {
+        "fact": "The Canadian Corps was instrumental in several key battles during World War I.",
+        "detail": "They gained a reputation for their effectiveness and bravery in combat."
+      },
+      {
+        "fact": "The war efforts had a profound impact on Canadian society and economy.",
+        "detail": "Post-war Canada saw significant changes, including women's rights and economic growth."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year did World War I begin?"
+        },
+        "options": [
+          "1914",
+          "1916",
+          "1918",
+          "1939"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "World War I began in 1914, leading to significant involvement from Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What is the significance of the Battle of Vimy Ridge?"
+        },
+        "options": [
+          "First use of tanks",
+          "Birth of Canada as a nation",
+          "Last major battle of WWI",
+          "First Canadian battle"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Battle of Vimy Ridge is often referred to as the birth of Canada as a nation due to its impact on national identity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Who wrote the poem 'In Flanders Fields'?"
+        },
+        "options": [
+          "John McCrae",
+          "Robert Service",
+          "Wilfred Owen",
+          "Ypres McCrae"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "'In Flanders Fields' was written by Lieutenant Colonel John McCrae, inspired by his experiences in WWI."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "When is Remembrance Day observed?"
+        },
+        "options": [
+          "November 11",
+          "November 1",
+          "October 11",
+          "December 11"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Remembrance Day is observed on November 11 to honor those who served in the military."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "In which year did World War II end?"
+        },
+        "options": [
+          "1944",
+          "1945",
+          "1946",
+          "1947"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "World War II ended in 1945, marking the conclusion of a significant global conflict."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What was D-Day?"
+        },
+        "options": [
+          "A naval battle",
+          "Operation Overlord",
+          "A peace treaty",
+          "A Canadian victory"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "D-Day, known as Operation Overlord, was the Allied invasion of Normandy on June 6, 1944."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "How many Canadians served in World War II?"
+        },
+        "options": [
+          "500,000",
+          "1 million",
+          "1.5 million",
+          "750,000"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "More than 1 million Canadians served in the armed forces during World War II."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What was the main objective of the Battle of the Atlantic?"
+        },
+        "options": [
+          "Control of the Pacific",
+          "Protection of supply lines",
+          "Conquest of Germany",
+          "Support for the USSR"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Battle of the Atlantic aimed to protect supply lines between North America and Europe during WWII."
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Modern Canada",
+    "situation": "Modern Canada — Canadian Citizenship Test",
+    "grammarFocus": "Modern Canada",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Post-WWII prosperity led to significant economic growth in Canada.",
+        "detail": "The end of World War II marked the beginning of a prosperous period in Canada, characterized by industrial expansion and increased consumer spending."
+      },
+      {
+        "fact": "The baby boom occurred between 1946 and 1965.",
+        "detail": "This period saw a dramatic increase in birth rates, contributing to population growth and shaping Canadian society."
+      },
+      {
+        "fact": "Canada experienced several waves of immigration in the post-war years.",
+        "detail": "These waves included immigrants from Europe, Asia, and other regions, enriching Canada's cultural diversity."
+      },
+      {
+        "fact": "The Multiculturalism Act was enacted in 1988.",
+        "detail": "This act recognized and promoted the cultural diversity of Canadian society, ensuring that all Canadians could maintain their cultural heritage."
+      },
+      {
+        "fact": "The Charter of Rights and Freedoms was part of the Constitution Act, 1982.",
+        "detail": "This charter guarantees fundamental rights and freedoms to all Canadians, including freedom of expression and the right to equality."
+      },
+      {
+        "fact": "The Constitution was patriated in 1982 under Prime Minister Pierre Trudeau.",
+        "detail": "This process brought the Constitution under Canadian control, allowing for amendments without British approval."
+      },
+      {
+        "fact": "Canada is a founding member of NATO, established in 1949.",
+        "detail": "NATO is a military alliance that promotes collective defense among its member countries."
+      },
+      {
+        "fact": "Canada plays a significant role in the United Nations.",
+        "detail": "Canada has been an active participant in the UN since its inception in 1945, contributing to peacekeeping missions and international development."
+      },
+      {
+        "fact": "NORAD was established in 1958 for mutual defense between Canada and the United States.",
+        "detail": "The North American Aerospace Defense Command (NORAD) focuses on aerospace warning and defense."
+      },
+      {
+        "fact": "The Quiet Revolution in Quebec took place during the 1960s.",
+        "detail": "This period was marked by significant social, political, and economic change in Quebec, leading to a rise in nationalism."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the Multiculturalism Act enacted?"
+        },
+        "options": [
+          "1988",
+          "1976",
+          "1992",
+          "1980"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Multiculturalism Act was enacted in 1988, recognizing the cultural diversity of Canada as a fundamental characteristic."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What was a significant demographic change in Canada after World War II?"
+        },
+        "options": [
+          "Increased immigration",
+          "Decreased birth rates",
+          "Urbanization decline",
+          "Rural population growth"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Post-WWII, Canada experienced increased immigration, which significantly shaped its demographic landscape."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which document includes the Charter of Rights and Freedoms?"
+        },
+        "options": [
+          "The Constitution Act, 1982",
+          "The British North America Act",
+          "The Statute of Westminster",
+          "The Canada Act"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Charter of Rights and Freedoms is part of the Constitution Act, 1982, which protects the rights and freedoms of Canadians."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Who was the Prime Minister responsible for patriating the Constitution?"
+        },
+        "options": [
+          "Pierre Trudeau",
+          "John Diefenbaker",
+          "Lester B. Pearson",
+          "Justin Trudeau"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Pierre Trudeau was the Prime Minister who played a key role in patriating the Constitution in 1982."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What was the Quiet Revolution?"
+        },
+        "options": [
+          "A period of social change in Quebec",
+          "A military conflict",
+          "A national economic policy",
+          "An immigration wave"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Quiet Revolution in Quebec during the 1960s was a time of significant social, political, and economic change."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "In what year did the baby boom begin?"
+        },
+        "options": [
+          "1946",
+          "1950",
+          "1960",
+          "1940"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The baby boom began in 1946, marking a significant increase in birth rates following World War II."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is NORAD?"
+        },
+        "options": [
+          "A military defense organization",
+          "A Canadian province",
+          "A cultural festival",
+          "An economic agreement"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "NORAD, established in 1958, is a military defense organization for North American aerospace warning and defense."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which organization is Canada a founding member of?"
+        },
+        "options": [
+          "NATO",
+          "OPEC",
+          "WTO",
+          "EU"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada is a founding member of NATO, established in 1949 to promote collective defense."
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Canada's Diversity",
+    "situation": "Modern Canada — Canadian Citizenship Test",
+    "grammarFocus": "Modern Canada",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada's immigration policy is designed to promote diversity and inclusion.",
+        "detail": "The policy aims to attract skilled workers, family members of Canadian citizens, and refugees."
+      },
+      {
+        "fact": "The points system evaluates potential immigrants based on skills, education, and work experience.",
+        "detail": "This system helps to select candidates who can contribute to Canada's economy."
+      },
+      {
+        "fact": "Refugees are protected under Canadian law and are provided with support to integrate into society.",
+        "detail": "Canada has a long tradition of offering refuge to those fleeing persecution."
+      },
+      {
+        "fact": "Multiculturalism is an official policy in Canada.",
+        "detail": "This policy recognizes the diverse backgrounds of Canadians and promotes the preservation of cultural heritage."
+      },
+      {
+        "fact": "English and French are Canada's two official languages.",
+        "detail": "While English is the majority language, French is primarily spoken in Quebec and parts of New Brunswick."
+      },
+      {
+        "fact": "Heritage languages are also important in Canada.",
+        "detail": "These are languages that immigrant communities continue to speak and pass on to future generations."
+      },
+      {
+        "fact": "Cultural communities contribute significantly to Canada's economy and social fabric.",
+        "detail": "They enhance the richness of Canadian culture through festivals, food, and traditions."
+      },
+      {
+        "fact": "Canada's population is composed of many ethnic groups, reflecting its history of immigration.",
+        "detail": "This diversity is celebrated through various cultural events and public holidays."
+      },
+      {
+        "fact": "The Canadian Charter of Rights and Freedoms protects the rights of individuals, including cultural rights.",
+        "detail": "This ensures that all Canadians can enjoy their cultural heritage."
+      },
+      {
+        "fact": "The Immigration and Refugee Protection Act governs immigration to Canada.",
+        "detail": "This act outlines the rights and responsibilities of immigrants and refugees."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the primary purpose of Canada's immigration policy?"
+        },
+        "options": [
+          "To promote diversity and inclusion",
+          "To limit the number of immigrants",
+          "To prioritize refugees only",
+          "To maintain a homogeneous culture"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The primary purpose of Canada's immigration policy is to promote diversity and inclusion, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which system does Canada use to evaluate potential immigrants?"
+        },
+        "options": [
+          "Points system",
+          "Quota system",
+          "Merit system",
+          "Random selection"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada uses a points system to evaluate potential immigrants based on their skills, education, and work experience."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the status of refugees in Canada?"
+        },
+        "options": [
+          "They are not allowed to settle",
+          "They are protected under Canadian law",
+          "They must pay for their own integration",
+          "They have no rights"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Refugees are protected under Canadian law, which provides them with support to integrate into society."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does Canada's multiculturalism policy promote?"
+        },
+        "options": [
+          "Homogeneity in culture",
+          "Preservation of cultural heritage",
+          "Restriction of cultural practices",
+          "Elimination of ethnic diversity"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada's multiculturalism policy promotes the preservation of cultural heritage, recognizing the diverse backgrounds of Canadians."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What are Canada's two official languages?"
+        },
+        "options": [
+          "English and Spanish",
+          "French and German",
+          "English and French",
+          "Mandarin and English"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada's two official languages are English and French, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What are heritage languages?"
+        },
+        "options": [
+          "Languages spoken by the majority",
+          "Languages that immigrant communities continue to speak",
+          "Languages that are not recognized",
+          "Languages that are only spoken in Quebec"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Heritage languages are those that immigrant communities continue to speak and pass on to future generations."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "How do cultural communities contribute to Canada's economy?"
+        },
+        "options": [
+          "By isolating themselves",
+          "Through festivals and traditions",
+          "By avoiding integration",
+          "By limiting their cultural expression"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Cultural communities enhance the richness of Canadian culture through festivals, food, and traditions, contributing significantly to the economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What does the Canadian Charter of Rights and Freedoms protect?"
+        },
+        "options": [
+          "Only political rights",
+          "Cultural rights and freedoms",
+          "Economic rights only",
+          "Environmental rights"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Canadian Charter of Rights and Freedoms protects cultural rights and freedoms, ensuring that all Canadians can enjoy their cultural heritage."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "What governs immigration to Canada?"
+        },
+        "options": [
+          "The Immigration and Refugee Protection Act",
+          "The Immigration Control Act",
+          "The Refugee Act",
+          "The Citizenship Act"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Immigration and Refugee Protection Act governs immigration to Canada, outlining the rights and responsibilities of immigrants and refugees."
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Constitutional Monarchy & Parliament",
+    "situation": "Government — Canadian Citizenship Test",
+    "grammarFocus": "Government",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada is a constitutional monarchy.",
+        "detail": "This means that Canada recognizes a monarch as the official Head of State within the parameters of a constitution."
+      },
+      {
+        "fact": "The King/Queen is represented in Canada by the Governor General at the federal level.",
+        "detail": "The Governor General carries out various ceremonial duties and represents the monarch in Canada."
+      },
+      {
+        "fact": "Each province has a Lieutenant Governor who represents the King/Queen.",
+        "detail": "Lieutenant Governors perform similar functions at the provincial level."
+      },
+      {
+        "fact": "The Parliament of Canada consists of two houses: the Senate and the House of Commons.",
+        "detail": "The Senate is appointed, while the House of Commons is elected by the citizens."
+      },
+      {
+        "fact": "The Senate has 105 members.",
+        "detail": "Senators are appointed by the Governor General on the advice of the Prime Minister."
+      },
+      {
+        "fact": "The House of Commons has 338 members.",
+        "detail": "Members of the House of Commons (MPs) are elected during federal elections."
+      },
+      {
+        "fact": "Canada's government is divided into three branches: Executive, Legislative, and Judicial.",
+        "detail": "This separation of powers ensures a system of checks and balances."
+      },
+      {
+        "fact": "The Executive branch is headed by the Prime Minister.",
+        "detail": "The Prime Minister is the leader of the political party that has the most seats in the House of Commons."
+      },
+      {
+        "fact": "The Legislative branch is responsible for making laws.",
+        "detail": "It consists of both the Senate and the House of Commons."
+      },
+      {
+        "fact": "The Judicial branch interprets and applies the law.",
+        "detail": "It is independent of the other branches and includes the Supreme Court of Canada."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Who is the Head of State in Canada?"
+        },
+        "options": [
+          "The Prime Minister",
+          "The Governor General",
+          "The King/Queen",
+          "The Chief Justice"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The King/Queen is the official Head of State in Canada, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many members are there in the Senate of Canada?"
+        },
+        "options": [
+          "100",
+          "105",
+          "338",
+          "150"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Senate consists of 105 members, who are appointed by the Governor General."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the primary role of the House of Commons?"
+        },
+        "options": [
+          "To elect the Prime Minister",
+          "To make laws",
+          "To appoint Senators",
+          "To represent the provinces"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The House of Commons is responsible for making laws, as outlined in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Who represents the King/Queen at the federal level in Canada?"
+        },
+        "options": [
+          "The Prime Minister",
+          "The Lieutenant Governor",
+          "The Governor General",
+          "The Speaker of the House"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Governor General represents the King/Queen at the federal level."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the function of the Judicial branch?"
+        },
+        "options": [
+          "To execute laws",
+          "To make laws",
+          "To interpret and apply laws",
+          "To advise the government"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Judicial branch interprets and applies the law, ensuring justice in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "How are members of the House of Commons chosen?"
+        },
+        "options": [
+          "By appointment",
+          "By election",
+          "By nomination",
+          "By consensus"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Members of the House of Commons are elected by citizens during federal elections."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Who is the head of the Executive branch of Canada?"
+        },
+        "options": [
+          "The Chief Justice",
+          "The Governor General",
+          "The Prime Minister",
+          "The Speaker of the House"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The Prime Minister is the head of the Executive branch, leading the government."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the role of the Lieutenant Governors?"
+        },
+        "options": [
+          "To represent the King/Queen in the provinces",
+          "To lead the Senate",
+          "To advise the Prime Minister",
+          "To elect members of the House of Commons"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Lieutenant Governors represent the King/Queen in each province, performing ceremonial duties."
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "title": "The Prime Minister & Cabinet",
+    "situation": "Government — Canadian Citizenship Test",
+    "grammarFocus": "Government",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Prime Minister is the head of government in Canada.",
+        "detail": "The Prime Minister leads the executive branch and is responsible for running the country."
+      },
+      {
+        "fact": "The Prime Minister is typically the leader of the political party that has the most seats in the House of Commons.",
+        "detail": "This party is usually elected during federal elections."
+      },
+      {
+        "fact": "The Cabinet is composed of ministers chosen by the Prime Minister.",
+        "detail": "These ministers are responsible for specific government departments and making decisions on national policies."
+      },
+      {
+        "fact": "Canada has a system of responsible government.",
+        "detail": "This means that the Cabinet must maintain the confidence of the House of Commons to remain in power."
+      },
+      {
+        "fact": "The House of Commons is the elected lower house of Parliament.",
+        "detail": "Members of the House of Commons (MPs) are elected by Canadian citizens during federal elections."
+      },
+      {
+        "fact": "The official opposition is the party with the second most seats in the House of Commons.",
+        "detail": "The official opposition holds the government accountable and critiques its policies."
+      },
+      {
+        "fact": "The Governor General represents the monarch in Canada.",
+        "detail": "The Governor General performs ceremonial duties and gives royal assent to laws passed by Parliament."
+      },
+      {
+        "fact": "The Prime Minister's Office (PMO) provides support and advice to the Prime Minister.",
+        "detail": "The PMO helps the Prime Minister manage government operations and communication."
+      },
+      {
+        "fact": "Cabinet decisions are made collectively and require consensus.",
+        "detail": "This collective responsibility means all members must support the decisions made by the Cabinet."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "Who is the head of government in Canada?"
+        },
+        "options": [
+          "The Prime Minister",
+          "The Governor General",
+          "The Chief Justice",
+          "The Speaker of the House"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Prime Minister is the head of government, leading the country and making executive decisions."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What is the role of the Cabinet in the Canadian government?"
+        },
+        "options": [
+          "To create laws",
+          "To run government departments",
+          "To represent the monarchy",
+          "To conduct elections"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Cabinet ministers are responsible for specific government departments and implementing policies."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What must the Cabinet have in order to remain in power?"
+        },
+        "options": [
+          "Majority of seats",
+          "Confidence of the House of Commons",
+          "Support from the Senate",
+          "Approval from the Governor General"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "In a responsible government, the Cabinet must maintain the confidence of the House of Commons."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Who is the leader of the official opposition?"
+        },
+        "options": [
+          "The Prime Minister",
+          "The leader of the second largest party",
+          "The Governor General",
+          "The Chief Justice"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The official opposition is led by the leader of the party with the second most seats in the House of Commons."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the primary function of the House of Commons?"
+        },
+        "options": [
+          "To pass laws",
+          "To advise the Prime Minister",
+          "To represent the monarchy",
+          "To conduct public hearings"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The House of Commons is responsible for making and passing laws in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What does the Governor General do?"
+        },
+        "options": [
+          "Leads the Cabinet",
+          "Represents the monarch",
+          "Elected by the people",
+          "Manages the Prime Minister's Office"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Governor General represents the monarch and performs ceremonial duties."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "How are Cabinet ministers chosen?"
+        },
+        "options": [
+          "Elected by the public",
+          "Appointed by the Prime Minister",
+          "Selected by the Governor General",
+          "Nominated by the Senate"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Cabinet ministers are appointed by the Prime Minister from among the elected Members of Parliament."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is meant by 'collective responsibility' in the Cabinet?"
+        },
+        "options": [
+          "Each minister acts independently",
+          "All ministers must support Cabinet decisions",
+          "Only the Prime Minister decides",
+          "Ministers can be dismissed at any time"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "In collective responsibility, all Cabinet members must publicly support the decisions made by the Cabinet."
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Provincial & Municipal Government",
+    "situation": "Government — Canadian Citizenship Test",
+    "grammarFocus": "Government",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada has 10 provinces and 3 territories.",
+        "detail": "The provinces are British Columbia, Alberta, Saskatchewan, Manitoba, Ontario, Quebec, New Brunswick, Nova Scotia, Prince Edward Island, and Newfoundland and Labrador. The territories are Northwest Territories, Yukon, and Nunavut."
+      },
+      {
+        "fact": "Each province has its own premier.",
+        "detail": "The premier is the head of the provincial government and is responsible for the executive branch in the province."
+      },
+      {
+        "fact": "Provinces have unicameral legislatures.",
+        "detail": "Each province has a single legislative assembly that passes laws and governs the province."
+      },
+      {
+        "fact": "Territories are governed under federal authority.",
+        "detail": "Unlike provinces, territories have a government that operates under the jurisdiction of the federal government."
+      },
+      {
+        "fact": "Municipal governments are responsible for local governance.",
+        "detail": "Municipalities have mayors and city councils that manage local services and regulations."
+      },
+      {
+        "fact": "Education is a provincial responsibility.",
+        "detail": "Each province determines its education system and curriculum."
+      },
+      {
+        "fact": "Healthcare is primarily a provincial responsibility in Canada.",
+        "detail": "Each province administers its own healthcare system, although it is funded by the federal government."
+      },
+      {
+        "fact": "Municipal governments can levy taxes and provide services.",
+        "detail": "They manage local infrastructure, public transportation, and community services."
+      },
+      {
+        "fact": "The Constitution Act, 1867 outlines the division of powers between federal and provincial governments.",
+        "detail": "This act specifies the areas in which each level of government can legislate."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "How many provinces does Canada have?"
+        },
+        "options": [
+          "10",
+          "8",
+          "12",
+          "15"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada has 10 provinces as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Who is the head of a provincial government?"
+        },
+        "options": [
+          "Premier",
+          "Mayor",
+          "Governor",
+          "Senator"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The head of a provincial government is called the premier, according to Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What type of legislature do provinces have?"
+        },
+        "options": [
+          "Bicameral",
+          "Unicameral",
+          "Tricameral",
+          "Federal"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Provinces have unicameral legislatures, meaning they have one legislative assembly, as mentioned in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which level of government governs the territories?"
+        },
+        "options": [
+          "Provincial",
+          "Federal",
+          "Municipal",
+          "Indigenous"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Territories are governed under federal authority, unlike provinces which have their own governments."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is one responsibility of municipal governments?"
+        },
+        "options": [
+          "National defense",
+          "Local infrastructure",
+          "Foreign affairs",
+          "Immigration policy"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Municipal governments are responsible for local infrastructure and community services, as outlined in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Who administers the healthcare system in Canada?"
+        },
+        "options": [
+          "Federal government",
+          "Provincial governments",
+          "Municipal governments",
+          "Private sector"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Healthcare is primarily a provincial responsibility, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does the Constitution Act, 1867 establish?"
+        },
+        "options": [
+          "Rights of citizens",
+          "Division of powers",
+          "National anthem",
+          "Judicial system"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Constitution Act, 1867 outlines the division of powers between the federal and provincial governments."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is a mayor's role in a municipality?"
+        },
+        "options": [
+          "Head of provincial legislature",
+          "Head of municipal council",
+          "Head of federal government",
+          "Head of education system"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The mayor is the head of the municipal council and is responsible for local governance."
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "title": "How Federal Elections Work",
+    "situation": "Federal Elections — Canadian Citizenship Test",
+    "grammarFocus": "Federal Elections",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada uses a first-past-the-post electoral system.",
+        "detail": "In this system, the candidate with the most votes in a riding wins."
+      },
+      {
+        "fact": "There are 338 electoral districts, known as ridings, in Canada.",
+        "detail": "Each riding elects one Member of Parliament (MP) to represent them."
+      },
+      {
+        "fact": "Elections Canada is responsible for conducting federal elections.",
+        "detail": "This independent agency ensures that elections are fair and transparent."
+      },
+      {
+        "fact": "Eligible voters must be Canadian citizens aged 18 or older.",
+        "detail": "This age requirement ensures that all voters are adults capable of making informed decisions."
+      },
+      {
+        "fact": "Voter registration can be done online, by mail, or in person.",
+        "detail": "Canadians can register before election day or at the polling station on the day of voting."
+      },
+      {
+        "fact": "Voting is done by secret ballot.",
+        "detail": "This means that voters can cast their votes privately without fear of coercion."
+      },
+      {
+        "fact": "Advance polls are available for those who cannot vote on election day.",
+        "detail": "These polls allow voters to cast their ballots ahead of the official election day."
+      },
+      {
+        "fact": "Election day is typically held on a Monday.",
+        "detail": "This is a standard practice to allow voters the weekend to prepare and participate."
+      },
+      {
+        "fact": "The Prime Minister is usually the leader of the political party that wins the most seats in the House of Commons.",
+        "detail": "This leader is invited by the Governor General to form the government."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What electoral system does Canada use for federal elections?"
+        },
+        "options": [
+          "First-past-the-post",
+          "Ranked choice",
+          "Proportional representation",
+          "Single transferable vote"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada uses a first-past-the-post electoral system, meaning the candidate with the most votes in a riding wins."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "How many electoral districts are there in Canada?"
+        },
+        "options": [
+          "338",
+          "300",
+          "400",
+          "250"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "There are 338 electoral districts, known as ridings, in Canada, each represented by one MP."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Who is responsible for conducting federal elections in Canada?"
+        },
+        "options": [
+          "Elections Canada",
+          "The Prime Minister",
+          "The Governor General",
+          "The House of Commons"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Elections Canada is the independent agency responsible for conducting fair and transparent federal elections."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the minimum age to vote in federal elections in Canada?"
+        },
+        "options": [
+          "18",
+          "16",
+          "21",
+          "19"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Eligible voters must be Canadian citizens aged 18 or older to participate in federal elections."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What method can Canadians use to register to vote?"
+        },
+        "options": [
+          "Online",
+          "By mail",
+          "In person",
+          "All of the above"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "Canadians can register to vote online, by mail, or in person, ensuring accessibility to all eligible voters."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What does voting by secret ballot ensure?"
+        },
+        "options": [
+          "Transparency",
+          "Privacy",
+          "Accountability",
+          "Accessibility"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Voting by secret ballot ensures that voters can cast their votes privately, free from coercion."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "When is election day typically held in Canada?"
+        },
+        "options": [
+          "Monday",
+          "Saturday",
+          "Friday",
+          "Sunday"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Election day is typically held on a Monday, allowing voters the weekend to prepare."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the role of the Prime Minister after a federal election?"
+        },
+        "options": [
+          "To form the government",
+          "To conduct the election",
+          "To oversee the Senate",
+          "To register voters"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Prime Minister is usually the leader of the party that wins the most seats and is invited to form the government."
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "title": "Your Vote, Your Voice",
+    "situation": "Federal Elections — Canadian Citizenship Test",
+    "grammarFocus": "Federal Elections",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Voting is a right and a responsibility in Canada.",
+        "detail": "Every citizen of Canada who is at least 18 years old has the right to vote in federal, provincial, and local elections."
+      },
+      {
+        "fact": "Federal elections are held approximately every four years.",
+        "detail": "The Prime Minister can call an election sooner, but the maximum term for a Member of Parliament is four years."
+      },
+      {
+        "fact": "Canada has a parliamentary system of government.",
+        "detail": "This means that the government is elected by the people and is accountable to Parliament."
+      },
+      {
+        "fact": "Political parties in Canada include the Liberal Party, Conservative Party, New Democratic Party (NDP), Bloc Québécois, and Green Party.",
+        "detail": "These parties represent a range of political views and policies."
+      },
+      {
+        "fact": "A by-election is held to fill a vacancy in the House of Commons.",
+        "detail": "By-elections occur when a Member of Parliament resigns or passes away."
+      },
+      {
+        "fact": "A majority government is formed when a political party wins more than half of the seats in the House of Commons.",
+        "detail": "This allows the party to pass legislation without needing support from other parties."
+      },
+      {
+        "fact": "A minority government occurs when a party wins the most seats but does not have a majority.",
+        "detail": "In this case, the party must work with other parties to pass legislation."
+      },
+      {
+        "fact": "Canadians vote using a secret ballot.",
+        "detail": "This ensures that individuals can make their choices privately without fear of coercion."
+      },
+      {
+        "fact": "Voter turnout is typically higher during federal elections compared to other types of elections.",
+        "detail": "However, efforts are ongoing to increase participation in all elections."
+      },
+      {
+        "fact": "Election Canada is responsible for conducting federal elections and referendums.",
+        "detail": "They ensure fair and impartial elections across the country."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the maximum term for a Member of Parliament in Canada?"
+        },
+        "options": [
+          "4 years",
+          "5 years",
+          "3 years",
+          "6 years"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The maximum term for a Member of Parliament is 4 years, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which political party is known for its environmental policies?"
+        },
+        "options": [
+          "Green Party",
+          "Liberal Party",
+          "Conservative Party",
+          "NDP"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Green Party is recognized for its focus on environmental issues and sustainability."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is a by-election?"
+        },
+        "options": [
+          "An election for the Prime Minister",
+          "An election to fill a vacancy in the House of Commons",
+          "An election that occurs every four years",
+          "An election held only in Quebec"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "A by-election is held to fill a vacancy in the House of Commons, as explained in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is a majority government?"
+        },
+        "options": [
+          "When a party wins less than half of the seats",
+          "When a party wins more than half of the seats",
+          "When no party wins the most seats",
+          "When all parties are in coalition"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "A majority government is formed when a party wins more than half of the seats in the House of Commons."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which of the following is a responsibility of Canadian citizens?"
+        },
+        "options": [
+          "Voting in elections",
+          "Traveling abroad",
+          "Paying taxes",
+          "All of the above"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Voting in elections is one of the key responsibilities of Canadian citizens, as highlighted in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Who is responsible for conducting federal elections in Canada?"
+        },
+        "options": [
+          "The Prime Minister",
+          "Elections Canada",
+          "The Governor General",
+          "The Chief Justice"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Elections Canada is responsible for conducting federal elections and ensuring they are fair and impartial."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What does voting by secret ballot ensure?"
+        },
+        "options": [
+          "Transparency in voting",
+          "Privacy in voting",
+          "Public voting records",
+          "Voter registration"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Voting by secret ballot ensures privacy, allowing individuals to make their choices free from coercion."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the typical voter turnout during federal elections?"
+        },
+        "options": [
+          "Lower than local elections",
+          "Higher than local elections",
+          "Equal to local elections",
+          "Unpredictable"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Voter turnout is typically higher during federal elections compared to other types of elections."
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "title": "The Canadian Justice System",
+    "situation": "Justice System — Canadian Citizenship Test",
+    "grammarFocus": "Justice System",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Rule of Law",
+        "detail": "In Canada, the rule of law means that everyone, including government officials, is subject to the law."
+      },
+      {
+        "fact": "Equality Before the Law",
+        "detail": "All individuals are equal before the law and have the right to equal protection and equal benefit of the law."
+      },
+      {
+        "fact": "Due Process",
+        "detail": "Due process ensures that legal proceedings are fair and that individuals have the right to be heard."
+      },
+      {
+        "fact": "Presumption of Innocence",
+        "detail": "In Canada, a person is presumed innocent until proven guilty in a court of law."
+      },
+      {
+        "fact": "Supreme Court of Canada",
+        "detail": "The Supreme Court is the highest court in Canada and consists of nine justices."
+      },
+      {
+        "fact": "Federal Court",
+        "detail": "The Federal Court deals with cases involving federal laws and issues."
+      },
+      {
+        "fact": "Provincial and Territorial Courts",
+        "detail": "Each province and territory has its own court system to handle local matters."
+      },
+      {
+        "fact": "Jury Duty",
+        "detail": "Serving on a jury is a civic responsibility of Canadian citizens."
+      },
+      {
+        "fact": "Rights of the Accused",
+        "detail": "Accused individuals have specific rights, including the right to a fair trial and legal representation."
+      },
+      {
+        "fact": "Legal Aid",
+        "detail": "Legal aid services are available to assist individuals who cannot afford legal representation."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What does the rule of law mean in Canada?"
+        },
+        "options": [
+          "Everyone is subject to the law",
+          "Only government officials are subject to the law",
+          "Laws can be changed without due process",
+          "Only citizens are subject to the law"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The rule of law means that everyone, including government officials, is subject to the law, ensuring fairness and accountability."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which of the following is a right of the accused?"
+        },
+        "options": [
+          "The right to a fair trial",
+          "The right to remain silent",
+          "The right to choose their judge",
+          "The right to a public execution"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The right to a fair trial is a fundamental right of the accused, ensuring justice and due process."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "How many justices are there on the Supreme Court of Canada?"
+        },
+        "options": [
+          "9",
+          "7",
+          "11",
+          "12"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Supreme Court of Canada consists of nine justices, making it the highest court in the country."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the presumption of innocence?"
+        },
+        "options": [
+          "A person is guilty until proven innocent",
+          "A person is presumed innocent until proven guilty",
+          "A person can only be tried once",
+          "A person must confess to be tried"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The presumption of innocence means that a person is presumed innocent until proven guilty in a court of law."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is one responsibility of Canadian citizens related to the justice system?"
+        },
+        "options": [
+          "Voting in federal elections",
+          "Jury duty",
+          "Paying taxes",
+          "Serving in the military"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Jury duty is a civic responsibility of Canadian citizens, ensuring participation in the justice system."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What type of cases does the Federal Court handle?"
+        },
+        "options": [
+          "Provincial matters",
+          "Federal laws and issues",
+          "Criminal cases only",
+          "Civil cases only"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Federal Court deals with cases involving federal laws and issues, providing a specialized judicial forum."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which of the following best describes due process?"
+        },
+        "options": [
+          "Legal proceedings must be fair",
+          "Laws can be enforced without a trial",
+          "Only certain people have legal rights",
+          "Trials can be conducted in secret"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Due process ensures that legal proceedings are fair and that individuals have the right to be heard."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What services does legal aid provide?"
+        },
+        "options": [
+          "Free legal advice to everyone",
+          "Assistance to those who cannot afford legal representation",
+          "Legal aid is only for criminal cases",
+          "Legal aid is only available to citizens"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Legal aid services are available to assist individuals who cannot afford legal representation, ensuring access to justice."
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "title": "Rights in the Justice System",
+    "situation": "Justice System — Canadian Citizenship Test",
+    "grammarFocus": "Justice System",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Habeas corpus is a legal principle that protects individuals from unlawful detention.",
+        "detail": "It ensures that a person can challenge the legality of their detention in court."
+      },
+      {
+        "fact": "Every individual has the right to a fair trial in Canada.",
+        "detail": "This right is protected under the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "fact": "Individuals have the right to an interpreter in legal proceedings.",
+        "detail": "This ensures that language barriers do not impede access to justice."
+      },
+      {
+        "fact": "Police services in Canada are responsible for maintaining public order and enforcing laws.",
+        "detail": "They must act within the law and respect the rights of individuals."
+      },
+      {
+        "fact": "The Canadian Human Rights Act prohibits discrimination on various grounds.",
+        "detail": "This includes race, gender, age, and disability, ensuring equal treatment under the law."
+      },
+      {
+        "fact": "No one in Canada can be subjected to cruel or unusual punishment.",
+        "detail": "This principle is enshrined in the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "fact": "The Youth Criminal Justice Act governs the legal process for youth offenders.",
+        "detail": "It focuses on rehabilitation rather than punishment for young people."
+      },
+      {
+        "fact": "The right to remain silent is a fundamental protection in the justice system.",
+        "detail": "Individuals cannot be compelled to testify against themselves."
+      },
+      {
+        "fact": "The right to legal counsel is guaranteed in Canada.",
+        "detail": "This means individuals can seek legal representation during criminal proceedings."
+      },
+      {
+        "fact": "Judges in Canada must be impartial and independent.",
+        "detail": "This is essential for ensuring fair trials and upholding justice."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What does the principle of habeas corpus protect?"
+        },
+        "options": [
+          "Protection from unlawful detention",
+          "Right to a fair trial",
+          "Right to an interpreter",
+          "Protection against cruel punishment"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Habeas corpus protects individuals from unlawful detention, allowing them to challenge their detention in court."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which document guarantees the right to a fair trial?"
+        },
+        "options": [
+          "Canadian Charter of Rights and Freedoms",
+          "Canadian Human Rights Act",
+          "Youth Criminal Justice Act",
+          "Criminal Code of Canada"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The right to a fair trial is protected under the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the purpose of the Youth Criminal Justice Act?"
+        },
+        "options": [
+          "Focus on punishment",
+          "Focus on rehabilitation",
+          "Focus on adult sentencing",
+          "Focus on public safety"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Youth Criminal Justice Act emphasizes rehabilitation for young offenders rather than punishment."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which right allows individuals to have an interpreter in court?"
+        },
+        "options": [
+          "Right to a fair trial",
+          "Right to remain silent",
+          "Right to legal counsel",
+          "Right to an interpreter"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "The right to an interpreter ensures that language barriers do not impede access to justice."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What does the Canadian Human Rights Act prohibit?"
+        },
+        "options": [
+          "Discrimination",
+          "Freedom of speech",
+          "Habeas corpus",
+          "Right to bear arms"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian Human Rights Act prohibits discrimination on various grounds, ensuring equal treatment under the law."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which of the following is NOT a protection under the Canadian justice system?"
+        },
+        "options": [
+          "Right to a fair trial",
+          "Right to an interpreter",
+          "Right to vote",
+          "Habeas corpus"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The right to vote is not a protection specific to the justice system; it relates to democratic participation."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is prohibited by the principle of cruel and unusual punishment?"
+        },
+        "options": [
+          "Long prison sentences",
+          "Public trials",
+          "Torture and inhumane treatment",
+          "Community service"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "The principle prohibits torture and inhumane treatment, ensuring dignity for all individuals under Canadian law."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the role of police services in Canada?"
+        },
+        "options": [
+          "To enforce laws and maintain order",
+          "To create laws",
+          "To judge legal cases",
+          "To represent the government"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Police services are responsible for enforcing laws and maintaining public order, acting within the law."
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "title": "National Symbols of Canada",
+    "situation": "Canadian Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Canadian Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The maple leaf is a symbol of Canada.",
+        "detail": "It is recognized worldwide as a symbol of Canadian identity and pride."
+      },
+      {
+        "fact": "The beaver is the official emblem of Canada.",
+        "detail": "Designated as a national symbol in 1975, the beaver represents Canada's history in the fur trade."
+      },
+      {
+        "fact": "The Canadian flag features a red and white design with a maple leaf.",
+        "detail": "Adopted on February 15, 1965, this flag symbolizes national unity and pride."
+      },
+      {
+        "fact": "O Canada is the national anthem of Canada.",
+        "detail": "The anthem was officially adopted in 1980, although it was composed earlier in 1880."
+      },
+      {
+        "fact": "The royal anthem of Canada is 'God Save the King.'",
+        "detail": "This anthem is played during royal events and symbolizes Canada's ties to the British monarchy."
+      },
+      {
+        "fact": "The Coat of Arms of Canada includes symbols representing the four founding nations.",
+        "detail": "It features the lion of England, the unicorn of Scotland, the harp of Ireland, and the fleur-de-lis of France."
+      },
+      {
+        "fact": "The fleur-de-lis represents French heritage in Canada.",
+        "detail": "This symbol is associated with the French-speaking population and is part of the Coat of Arms."
+      },
+      {
+        "fact": "The Royal Canadian Mounted Police (RCMP) is a national symbol.",
+        "detail": "Founded in 1873, the RCMP is known for its distinctive red uniforms and horse patrols."
+      },
+      {
+        "fact": "Canada Day is celebrated on July 1st.",
+        "detail": "This day marks the anniversary of the confederation of Canada in 1867."
+      },
+      {
+        "fact": "The national motto of Canada is 'A Mari Usque Ad Mare.'",
+        "detail": "This Latin phrase translates to 'From Sea to Sea' and reflects the vastness of the country."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What year was the Canadian flag adopted?"
+        },
+        "options": [
+          "1965",
+          "1975",
+          "1980",
+          "1990"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Canadian flag was adopted on February 15, 1965, symbolizing national unity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which animal is the official emblem of Canada?"
+        },
+        "options": [
+          "Beaver",
+          "Moose",
+          "Lynx",
+          "Bald Eagle"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The beaver was designated as the official emblem of Canada in 1975, representing the fur trade history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the national anthem of Canada?"
+        },
+        "options": [
+          "God Save the King",
+          "O Canada",
+          "The Maple Leaf Forever",
+          "This Land Is Your Land"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "O Canada is the national anthem, officially adopted in 1980."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does the fleur-de-lis represent in Canada?"
+        },
+        "options": [
+          "British heritage",
+          "French heritage",
+          "Indigenous culture",
+          "Natural resources"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The fleur-de-lis symbolizes French heritage and is part of the Coat of Arms of Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the royal anthem of Canada?"
+        },
+        "options": [
+          "O Canada",
+          "God Save the King",
+          "The Maple Leaf Forever",
+          "Advance Australia Fair"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The royal anthem is 'God Save the King,' highlighting Canada's connection to the British monarchy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the national motto of Canada?"
+        },
+        "options": [
+          "Unity in Diversity",
+          "A Mari Usque Ad Mare",
+          "From Sea to Sea",
+          "In God We Trust"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The national motto 'A Mari Usque Ad Mare' translates to 'From Sea to Sea,' reflecting Canada's vastness."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which organization is known for its red uniforms and horse patrols?"
+        },
+        "options": [
+          "Canadian Armed Forces",
+          "Royal Canadian Mounted Police",
+          "Ontario Provincial Police",
+          "Vancouver Police Department"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The Royal Canadian Mounted Police (RCMP) is a national symbol known for its red uniforms."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "When is Canada Day celebrated?"
+        },
+        "options": [
+          "June 1",
+          "July 1",
+          "August 1",
+          "September 1"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Canada Day is celebrated on July 1st, marking the anniversary of confederation in 1867."
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "title": "Important Canadian Dates",
+    "situation": "Canadian Symbols — Canadian Citizenship Test",
+    "grammarFocus": "Canadian Symbols",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada Day is celebrated on July 1.",
+        "detail": "Canada Day marks the anniversary of the confederation of Canada in 1867."
+      },
+      {
+        "fact": "Remembrance Day is observed on November 11.",
+        "detail": "This day honors the sacrifices made by members of the armed forces during wars."
+      },
+      {
+        "fact": "Victoria Day is celebrated in May.",
+        "detail": "Victoria Day commemorates Queen Victoria's birthday and is often seen as the unofficial start of summer."
+      },
+      {
+        "fact": "Thanksgiving in Canada is celebrated on the second Monday in October.",
+        "detail": "It is a day for giving thanks for the harvest and blessings of the past year."
+      },
+      {
+        "fact": "National Indigenous Peoples Day is observed on June 21.",
+        "detail": "This day recognizes and celebrates the cultures and contributions of Indigenous peoples in Canada."
+      },
+      {
+        "fact": "Saint-Jean-Baptiste Day is celebrated on June 24 in Quebec.",
+        "detail": "It is a holiday that celebrates the French-speaking culture and heritage in Quebec."
+      },
+      {
+        "fact": "The Terry Fox Run is held annually in September.",
+        "detail": "This event raises funds for cancer research in honor of Terry Fox, who attempted to run across Canada to raise awareness for cancer."
+      },
+      {
+        "fact": "Commonwealth Day is celebrated on the second Monday in March.",
+        "detail": "It is a day to promote understanding and cooperation among the Commonwealth nations."
+      },
+      {
+        "fact": "The first Thanksgiving in Canada is believed to have been celebrated in 1578.",
+        "detail": "It was held by Martin Waldseemüller, an English explorer, to give thanks for a successful voyage."
+      },
+      {
+        "fact": "Canada Day was first celebrated as Dominion Day in 1868.",
+        "detail": "It was renamed Canada Day in 1982 to reflect the country's full independence."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "When is Canada Day celebrated?"
+        },
+        "options": [
+          "July 1",
+          "June 24",
+          "November 11",
+          "May 24"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada Day is celebrated on July 1 to mark the confederation of Canada in 1867."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "What is the significance of Remembrance Day?"
+        },
+        "options": [
+          "Celebrates the Queen's birthday",
+          "Honors military veterans",
+          "Marks the start of summer",
+          "Recognizes Indigenous peoples"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Remembrance Day, observed on November 11, honors the sacrifices made by members of the armed forces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which holiday is celebrated on the second Monday in October?"
+        },
+        "options": [
+          "Thanksgiving",
+          "Canada Day",
+          "Victoria Day",
+          "Saint-Jean-Baptiste Day"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Thanksgiving is celebrated on the second Monday in October as a day of giving thanks for the harvest."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "When is National Indigenous Peoples Day observed?"
+        },
+        "options": [
+          "April 22",
+          "June 21",
+          "August 15",
+          "November 11"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "National Indigenous Peoples Day is observed on June 21 to celebrate Indigenous cultures in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What does Saint-Jean-Baptiste Day celebrate?"
+        },
+        "options": [
+          "French-speaking culture",
+          "Canadian independence",
+          "The start of summer",
+          "The harvest"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Saint-Jean-Baptiste Day, celebrated on June 24, honors French-speaking culture in Quebec."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What is the Terry Fox Run associated with?"
+        },
+        "options": [
+          "Cancer research",
+          "Indigenous rights",
+          "Military veterans",
+          "Environmental protection"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The Terry Fox Run raises funds for cancer research in memory of Terry Fox's efforts to raise awareness."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "When is Commonwealth Day celebrated?"
+        },
+        "options": [
+          "First Monday in March",
+          "Second Monday in March",
+          "Last Sunday in March",
+          "First Sunday in April"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Commonwealth Day is celebrated on the second Monday in March to promote cooperation among Commonwealth nations."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What year was the first Thanksgiving in Canada believed to have been celebrated?"
+        },
+        "options": [
+          "1621",
+          "1578",
+          "1867",
+          "1982"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The first Thanksgiving in Canada is believed to have been celebrated in 1578 by Martin Waldseemüller."
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "title": "Canada's Economy & Resources",
+    "situation": "Canada's Economy — Canadian Citizenship Test",
+    "grammarFocus": "Canada's Economy",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Canada is rich in natural resources.",
+        "detail": "Canada's economy benefits from vast natural resources including oil, minerals, forests, fish, and agricultural products."
+      },
+      {
+        "fact": "Oil is a significant part of Canada's economy.",
+        "detail": "Canada is one of the largest oil producers in the world, with major reserves located in Alberta."
+      },
+      {
+        "fact": "Canada has a diverse manufacturing sector.",
+        "detail": "Manufacturing is a key industry in Canada, producing goods such as automobiles, aerospace products, and machinery."
+      },
+      {
+        "fact": "The technology sector is growing rapidly in Canada.",
+        "detail": "Canada's technology industry, particularly in cities like Toronto and Vancouver, is known for innovation and startups."
+      },
+      {
+        "fact": "Services account for a large portion of Canada's GDP.",
+        "detail": "The services sector, including finance, healthcare, and education, constitutes about 70% of Canada's GDP."
+      },
+      {
+        "fact": "Canada's largest trading partner is the United States.",
+        "detail": "The U.S. accounts for a significant percentage of Canada's exports and imports."
+      },
+      {
+        "fact": "NAFTA has been replaced by CUSMA.",
+        "detail": "The Canada-United States-Mexico Agreement (CUSMA) is the new trade agreement that replaced NAFTA."
+      },
+      {
+        "fact": "The Canadian banking system is highly regulated.",
+        "detail": "Canada's banking system is known for its stability and is regulated by the federal government."
+      },
+      {
+        "fact": "Employment Insurance (EI) provides temporary financial assistance.",
+        "detail": "EI helps Canadians who are unemployed or unable to work due to specific circumstances."
+      },
+      {
+        "fact": "The Canada Pension Plan (CPP) provides retirement benefits.",
+        "detail": "CPP is a government program that offers financial support to Canadians during retirement."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is Canada's largest trading partner?"
+        },
+        "options": [
+          "United States",
+          "China",
+          "Mexico",
+          "Germany"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The United States is Canada's largest trading partner, accounting for a significant portion of Canada's trade."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which agreement replaced NAFTA?"
+        },
+        "options": [
+          "CUSMA",
+          "TPP",
+          "WTO",
+          "EU-Canada Agreement"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "CUSMA, or the Canada-United States-Mexico Agreement, replaced NAFTA in 2020."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What percentage of Canada's GDP is made up by the services sector?"
+        },
+        "options": [
+          "70%",
+          "50%",
+          "30%",
+          "90%"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "The services sector constitutes about 70% of Canada's GDP, making it the largest sector."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is a major natural resource found in Canada?"
+        },
+        "options": [
+          "Gold",
+          "Silicon",
+          "Coal",
+          "Uranium"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Canada is rich in natural resources, including significant deposits of gold."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which industry is NOT a major part of Canada's economy?"
+        },
+        "options": [
+          "Manufacturing",
+          "Agriculture",
+          "Technology",
+          "Fishing Gear Manufacturing"
+        ],
+        "correct": 3,
+        "points": 10,
+        "explanation": "While fishing is a major industry, fishing gear manufacturing is not categorized as a major part of the economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What does Employment Insurance (EI) provide?"
+        },
+        "options": [
+          "Health care",
+          "Retirement benefits",
+          "Financial assistance during unemployment",
+          "Childcare support"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Employment Insurance (EI) provides temporary financial assistance to those who are unemployed."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Which of the following is a key component of the Canadian banking system?"
+        },
+        "options": [
+          "Decentralized regulation",
+          "High interest rates",
+          "Stability and regulation",
+          "Privatized banking"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Canada's banking system is known for its stability and is highly regulated by the federal government."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What is the purpose of the Canada Pension Plan (CPP)?"
+        },
+        "options": [
+          "To provide unemployment benefits",
+          "To provide retirement benefits",
+          "To fund education",
+          "To support healthcare"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The CPP provides financial support to Canadians during retirement."
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "title": "Atlantic & Central Canada",
+    "situation": "Canada's Regions — Canadian Citizenship Test",
+    "grammarFocus": "Canada's Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "Newfoundland and Labrador is the easternmost province of Canada.",
+        "detail": "It is known for its rugged coastline and rich maritime history."
+      },
+      {
+        "fact": "Prince Edward Island is the smallest province in Canada.",
+        "detail": "It is famous for its red sand beaches and as the setting for the novel 'Anne of Green Gables'."
+      },
+      {
+        "fact": "Nova Scotia is known for its seafood, particularly lobster.",
+        "detail": "The capital city, Halifax, has a rich naval history."
+      },
+      {
+        "fact": "New Brunswick is the only officially bilingual province in Canada.",
+        "detail": "It recognizes both English and French as official languages."
+      },
+      {
+        "fact": "Quebec is the largest province in Canada by area.",
+        "detail": "It has a distinct French-speaking culture and is known for its vibrant arts scene."
+      },
+      {
+        "fact": "Ontario is home to Canada's capital city, Ottawa.",
+        "detail": "It is the most populous province in Canada."
+      },
+      {
+        "fact": "The Atlantic provinces are known for their fishing and tourism industries.",
+        "detail": "These provinces attract visitors with their natural beauty and cultural heritage."
+      },
+      {
+        "fact": "The St. Lawrence River is a significant waterway for trade and transportation in Central Canada.",
+        "detail": "It connects the Great Lakes to the Atlantic Ocean."
+      },
+      {
+        "fact": "Halifax is one of the largest natural harbors in the world.",
+        "detail": "It plays a crucial role in the maritime economy of Nova Scotia."
+      },
+      {
+        "fact": "Fredericton is the capital of New Brunswick and is known for its historic sites.",
+        "detail": "The city is also home to several universities."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital of Newfoundland and Labrador?"
+        },
+        "options": [
+          "St. John's",
+          "Halifax",
+          "Charlottetown",
+          "Fredericton"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "St. John's is the capital of Newfoundland and Labrador, known for its vibrant culture and history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which province is the smallest in Canada?"
+        },
+        "options": [
+          "Prince Edward Island",
+          "New Brunswick",
+          "Nova Scotia",
+          "Newfoundland and Labrador"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Prince Edward Island is the smallest province in Canada, both in area and population."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the capital of Nova Scotia?"
+        },
+        "options": [
+          "Halifax",
+          "Fredericton",
+          "St. John's",
+          "Charlottetown"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Halifax is the capital of Nova Scotia and is known for its rich maritime history."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "Which province is officially bilingual?"
+        },
+        "options": [
+          "New Brunswick",
+          "Quebec",
+          "Ontario",
+          "Nova Scotia"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "New Brunswick is the only officially bilingual province in Canada, recognizing both English and French."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "What is the largest province in Canada by area?"
+        },
+        "options": [
+          "Ontario",
+          "Quebec",
+          "British Columbia",
+          "Alberta"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Quebec is the largest province in Canada by area, with a diverse geography and culture."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which city is the capital of Canada?"
+        },
+        "options": [
+          "Toronto",
+          "Ottawa",
+          "Montreal",
+          "Quebec City"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Ottawa is the capital city of Canada, located in Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is a significant industry in the Atlantic provinces?"
+        },
+        "options": [
+          "Technology",
+          "Fishing",
+          "Manufacturing",
+          "Mining"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Fishing is a significant industry in the Atlantic provinces, contributing to their economies."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which river is important for trade in Central Canada?"
+        },
+        "options": [
+          "Fraser River",
+          "St. Lawrence River",
+          "Ottawa River",
+          "Mackenzie River"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "The St. Lawrence River is crucial for trade and transportation, connecting the Great Lakes to the Atlantic Ocean."
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "title": "Prairie, West & North",
+    "situation": "Canada's Regions — Canadian Citizenship Test",
+    "grammarFocus": "Canada's Regions",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "The Prairie Provinces include Manitoba, Saskatchewan, and Alberta.",
+        "detail": "These provinces are known for their agriculture and vast open spaces."
+      },
+      {
+        "fact": "Winnipeg is the capital of Manitoba.",
+        "detail": "It is a cultural and economic hub in the province."
+      },
+      {
+        "fact": "Regina is the capital city of Saskatchewan.",
+        "detail": "It is known for its historical significance and as the home of the Royal Canadian Mounted Police."
+      },
+      {
+        "fact": "Edmonton is the capital of Alberta.",
+        "detail": "It is known for its oil and gas industry and is often referred to as the 'Gateway to the North'."
+      },
+      {
+        "fact": "British Columbia's capital city is Victoria.",
+        "detail": "Victoria is located on Vancouver Island and is known for its beautiful gardens and historic architecture."
+      },
+      {
+        "fact": "Vancouver is the largest city in British Columbia.",
+        "detail": "It is a major urban center and a hub for trade and tourism."
+      },
+      {
+        "fact": "The Yukon Territory's capital is Whitehorse.",
+        "detail": "Whitehorse is the largest city in the Yukon and serves as its administrative and economic center."
+      },
+      {
+        "fact": "Yellowknife is the capital of the Northwest Territories.",
+        "detail": "It is known for its diamond mining industry."
+      },
+      {
+        "fact": "Iqaluit is the capital of Nunavut.",
+        "detail": "It is located on Baffin Island and is the largest community in Nunavut."
+      },
+      {
+        "fact": "Canada has 13 provinces and territories, each with its own capital city.",
+        "detail": "These capitals serve as political and administrative centers for their respective regions."
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is the capital of Manitoba?"
+        },
+        "options": [
+          "Winnipeg",
+          "Regina",
+          "Edmonton",
+          "Victoria"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Winnipeg is the capital of Manitoba, as stated in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which province's capital is Regina?"
+        },
+        "options": [
+          "Saskatchewan",
+          "Alberta",
+          "Manitoba",
+          "British Columbia"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Regina is the capital of Saskatchewan, according to the Discover Canada study guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "Which city is known as the 'Gateway to the North'?"
+        },
+        "options": [
+          "Edmonton",
+          "Whitehorse",
+          "Yellowknife",
+          "Vancouver"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Edmonton is referred to as the 'Gateway to the North' because of its location and role in northern trade."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What is the capital of British Columbia?"
+        },
+        "options": [
+          "Vancouver",
+          "Victoria",
+          "Edmonton",
+          "Calgary"
+        ],
+        "correct": 1,
+        "points": 10,
+        "explanation": "Victoria is the capital city of British Columbia, as detailed in the Discover Canada guide."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which territory has Iqaluit as its capital?"
+        },
+        "options": [
+          "Yukon",
+          "Northwest Territories",
+          "Nunavut",
+          "British Columbia"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Iqaluit is the capital of Nunavut, located on Baffin Island."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "Which city is the largest in British Columbia?"
+        },
+        "options": [
+          "Victoria",
+          "Kelowna",
+          "Vancouver",
+          "Surrey"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Vancouver is the largest city in British Columbia, known for its diverse culture and economy."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "What is the capital of the Northwest Territories?"
+        },
+        "options": [
+          "Yellowknife",
+          "Whitehorse",
+          "Iqaluit",
+          "Regina"
+        ],
+        "correct": 0,
+        "points": 10,
+        "explanation": "Yellowknife serves as the capital of the Northwest Territories, as stated in Discover Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "Which province is known for its oil and gas industry?"
+        },
+        "options": [
+          "Saskatchewan",
+          "British Columbia",
+          "Alberta",
+          "Manitoba"
+        ],
+        "correct": 2,
+        "points": 10,
+        "explanation": "Alberta is well-known for its oil and gas industry, making it a key player in Canada's economy."
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "title": "🏆 PRACTICE TEST",
+    "situation": "Simulated Canadian Citizenship Test — 20 questions from all topics",
+    "grammarFocus": "All Topics",
+    "keyPhrases": [],
+    "dialogue": [
+      {
+        "fact": "This is a simulated Canadian Citizenship Test",
+        "detail": "20 questions, 75% (15/20) to pass. Good luck! 🍁"
+      }
+    ],
+    "vocabulary": [],
+    "exercises": [
+      {
+        "type": "citizenship_question",
+        "order": 1,
+        "question": {
+          "text": "What is one responsibility of Canadian citizens?"
+        },
+        "options": [
+          "A) Voting in elections",
+          "B) Paying taxes",
+          "C) Attending school",
+          "D) Both A and B"
+        ],
+        "correct": 3,
+        "points": 5,
+        "explanation": "Canadian citizens have multiple responsibilities, including voting in elections and paying taxes."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 2,
+        "question": {
+          "text": "Which of the following is a right of Canadian citizens?"
+        },
+        "options": [
+          "A) Freedom of speech",
+          "B) Right to bear arms",
+          "C) Right to a fair trial",
+          "D) Both A and C"
+        ],
+        "correct": 3,
+        "points": 5,
+        "explanation": "Canadian citizens have the right to freedom of speech and the right to a fair trial as outlined in the Canadian Charter of Rights and Freedoms."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 3,
+        "question": {
+          "text": "What is the significance of the Canadian Charter of Rights and Freedoms?"
+        },
+        "options": [
+          "A) It establishes the monarchy",
+          "B) It protects individual rights",
+          "C) It outlines the responsibilities of government",
+          "D) It details the history of Canada"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Canadian Charter of Rights and Freedoms protects individual rights and freedoms, making it a crucial part of Canadian law."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 4,
+        "question": {
+          "text": "What does Canada’s motto \"A Mari Usque Ad Mare\" mean?"
+        },
+        "options": [
+          "A) From sea to sea",
+          "B) Unity in diversity",
+          "C) Peace, order, and good government",
+          "D) Land of the free"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Canada’s motto \"A Mari Usque Ad Mare\" translates to \"From sea to sea,\" reflecting the vastness of the country."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 5,
+        "question": {
+          "text": "Which province is known as the 'Heartland of Canada'?"
+        },
+        "options": [
+          "A) Alberta",
+          "B) Ontario",
+          "C) British Columbia",
+          "D) Quebec"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "Ontario is often referred to as the 'Heartland of Canada' due to its central location and economic significance."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 6,
+        "question": {
+          "text": "What year did Canada become a country?"
+        },
+        "options": [
+          "A) 1867",
+          "B) 1776",
+          "C) 1905",
+          "D) 1931"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "Canada became a country on July 1, 1867, with the confederation of the first four provinces."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 7,
+        "question": {
+          "text": "Who was the first Prime Minister of Canada?"
+        },
+        "options": [
+          "A) John A. Macdonald",
+          "B) Wilfrid Laurier",
+          "C) Pierre Trudeau",
+          "D) Lester B. Pearson"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "John A. Macdonald was the first Prime Minister of Canada, serving from 1867 to 1873 and again from 1878 to 1891."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 8,
+        "question": {
+          "text": "What event is celebrated on Canada Day?"
+        },
+        "options": [
+          "A) The signing of the Constitution",
+          "B) The creation of the Canadian flag",
+          "C) The confederation of Canada",
+          "D) The end of World War II"
+        ],
+        "correct": 2,
+        "points": 5,
+        "explanation": "Canada Day, celebrated on July 1, commemorates the confederation of Canada in 1867."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 9,
+        "question": {
+          "text": "Which document outlines the rights of Indigenous peoples in Canada?"
+        },
+        "options": [
+          "A) The Indian Act",
+          "B) The Constitution Act, 1982",
+          "C) The Bill of Rights",
+          "D) The Charter of Rights and Freedoms"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Constitution Act, 1982 explicitly recognizes and affirms the rights of Indigenous peoples in Canada."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 10,
+        "question": {
+          "text": "What is the capital city of Canada?"
+        },
+        "options": [
+          "A) Toronto",
+          "B) Ottawa",
+          "C) Vancouver",
+          "D) Montreal"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "Ottawa is the capital city of Canada and is located in the province of Ontario."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 11,
+        "question": {
+          "text": "What is the highest court in Canada?"
+        },
+        "options": [
+          "A) Federal Court",
+          "B) Supreme Court",
+          "C) Provincial Court",
+          "D) Court of Appeal"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Supreme Court of Canada is the highest court in the country and serves as the final court of appeal."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 12,
+        "question": {
+          "text": "How often are federal elections held in Canada?"
+        },
+        "options": [
+          "A) Every two years",
+          "B) Every four years",
+          "C) Every five years",
+          "D) Every year"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "Federal elections in Canada are typically held every four years, although they can be called earlier."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 13,
+        "question": {
+          "text": "What is the purpose of the House of Commons?"
+        },
+        "options": [
+          "A) To create laws",
+          "B) To interpret laws",
+          "C) To enforce laws",
+          "D) To advise the Prime Minister"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The House of Commons is responsible for creating laws and representing the electorate."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 14,
+        "question": {
+          "text": "What is the main role of the Governor General?"
+        },
+        "options": [
+          "A) To run the government",
+          "B) To represent the monarch",
+          "C) To create laws",
+          "D) To lead the military"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Governor General represents the monarch in Canada and performs various ceremonial duties."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 15,
+        "question": {
+          "text": "Which of the following is a symbol of Canada?"
+        },
+        "options": [
+          "A) The Maple Leaf",
+          "B) The Bald Eagle",
+          "C) The Union Jack",
+          "D) The Statue of Liberty"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The Maple Leaf is a national symbol of Canada, often associated with Canadian identity."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 16,
+        "question": {
+          "text": "What is the primary currency used in Canada?"
+        },
+        "options": [
+          "A) Dollar",
+          "B) Euro",
+          "C) Pound",
+          "D) Yen"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "The primary currency used in Canada is the Canadian Dollar (CAD)."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 17,
+        "question": {
+          "text": "Which region of Canada is known for its natural resources and oil production?"
+        },
+        "options": [
+          "A) Atlantic Canada",
+          "B) Prairie Provinces",
+          "C) Northern Canada",
+          "D) British Columbia"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Prairie Provinces, including Alberta, are known for their natural resources and oil production."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 18,
+        "question": {
+          "text": "Which two languages are recognized as official languages in Canada?"
+        },
+        "options": [
+          "A) English and French",
+          "B) English and Spanish",
+          "C) French and German",
+          "D) English and Mandarin"
+        ],
+        "correct": 0,
+        "points": 5,
+        "explanation": "English and French are the two official languages of Canada, reflecting the country's bilingual nature."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 19,
+        "question": {
+          "text": "What is the role of the Senate in Canada?"
+        },
+        "options": [
+          "A) To create laws",
+          "B) To review legislation",
+          "C) To enforce laws",
+          "D) To elect the Prime Minister"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Senate's primary role is to review legislation proposed by the House of Commons and provide a second opinion."
+      },
+      {
+        "type": "citizenship_question",
+        "order": 20,
+        "question": {
+          "text": "What is the significance of the Canadian flag?"
+        },
+        "options": [
+          "A) Represents the monarchy",
+          "B) Symbolizes Canadian unity",
+          "C) Represents the military",
+          "D) Is a historical artifact"
+        ],
+        "correct": 1,
+        "points": 5,
+        "explanation": "The Canadian flag symbolizes Canadian unity and identity, and it was adopted on February 15, 1965."
+      }
+    ]
+  }
+]

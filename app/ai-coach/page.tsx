@@ -11,6 +11,7 @@ import { usePlan } from '@/hooks/usePlan';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/AIPractice.module.scss';
+import { analytics } from '@/lib/analytics';
 
 // ─── Config ──────────────────────────────────────
 type Section = 'reading' | 'writing' | 'listening' | 'speaking';
@@ -265,6 +266,7 @@ export default function AIPracticePage() {
     // Check free daily limit
     if (dailyUsage && !dailyUsage.isPro && dailyUsage.remaining <= 0) {
       setShowUpgradeModal(true);
+      analytics.upgradeModalShown('daily_limit');
       return;
     }
     // Writing: skip API, redirect directly to writing page with random theme
@@ -296,6 +298,7 @@ export default function AIPracticePage() {
         if (res.ok) {
           const data = await res.json();
           setExercise(data.exercise);
+          analytics.exerciseStarted(section, partOrTask?.toString(), difficulty);
           incrementUsage();
           if (data.clipAudioUrls) {
             // Part 1 clips
@@ -315,7 +318,13 @@ export default function AIPracticePage() {
 
       // Speaking: use pre-generated prompt library
       if (section === 'speaking') {
-        const taskId = partOrTask.replace(/^Task \d+[:\s]*/, '').trim().toLowerCase().replace(/\s+/g, '-');
+        const taskNum = partOrTask.match(/Task (\d+)/)?.[1];
+        
+        // Task 3 & 4 need DALL-E images — use AI generation
+        if (taskNum === '3' || taskNum === '4') {
+          // Fall through to AI generation below
+        } else {
+        const taskId = taskNum ? `task${taskNum}` : partOrTask.replace(/^Task \d+[:\s]*/, '').trim().toLowerCase().replace(/[\s()]+/g, '-');
         const res = await fetch('/api/speaking-library', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -349,6 +358,27 @@ export default function AIPracticePage() {
           return;
         }
         // Fall through to AI generation
+        }
+      }
+
+      // Reading: use pre-generated library (instant, no AI call)
+      if (section === 'reading') {
+        const res = await fetch('/api/reading-library', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ partOrTask, difficulty }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          setExercise(data.exercise);
+          analytics.exerciseStarted(section, partOrTask?.toString(), difficulty);
+          incrementUsage();
+          setGenerating(false);
+          setCooldown(3);
+          return;
+        }
+        // If library not available, fall through to AI generation
       }
 
       const res = await fetch('/api/ai-practice', {
@@ -371,6 +401,13 @@ export default function AIPracticePage() {
       const ex = data.exercise;
       // Normalize clip-based exercises: flatten questions for quiz rendering
       if (ex?.clips && Array.isArray(ex.clips) && !ex.questions?.length) {
+        let qIdx = 0;
+        // Assign unique IDs across all clips to prevent answer collision
+        for (const c of ex.clips) {
+          if (c.questions) {
+            c.questions = c.questions.map((q: any) => ({ ...q, id: ++qIdx }));
+          }
+        }
         ex.questions = ex.clips.flatMap((c: any) => c.questions || []);
       }
       setExercise(ex);
@@ -438,6 +475,7 @@ export default function AIPracticePage() {
         (q: any) => answers[q.id] === q.correct
       ).length;
       recordAttempt(section, partOrTask, correct, total);
+      analytics.exerciseCompleted(section, Math.round((correct/total)*100));
       // Log activity for leaderboard
       fetch('/api/log-activity', {
         method: 'POST',
@@ -504,6 +542,7 @@ export default function AIPracticePage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               <button onClick={async () => {
                 try {
+                  analytics.upgradeClicked('monthly', 'upgrade_modal');
                   const res = await fetch('/api/stripe/checkout', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -885,6 +924,7 @@ export default function AIPracticePage() {
                       onClick={() => {
                         setCurrentClipIdx(prev => prev + 1);
                         setSubmitted(false);
+                        setAnswers({});
                         setListeningPhase('listen');
                         setHasListened(false);
                         setIsAudioPlaying(false);

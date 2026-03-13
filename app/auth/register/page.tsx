@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Mail, Lock, User, Loader2, AlertCircle, ArrowRight, CheckCircle } from 'lucide-react';
 import styles from '@/styles/Auth.module.scss';
+import { analytics } from '@/lib/analytics';
 
 export default function RegisterPage() {
   const [name, setName] = useState('');
@@ -42,6 +43,7 @@ export default function RegisterPage() {
       const data = await res.json();
       if (!res.ok) { setError(data.error || 'Error creating account'); return; }
       setSuccess(true);
+      analytics.signupCompleted();
     } catch {
       setError('Error creating account. Please try again.');
     } finally {

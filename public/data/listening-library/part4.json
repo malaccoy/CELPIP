@@ -1948,5 +1948,4108 @@
       }
     ],
     "difficulty": "intermediate"
+  },
+  {
+    "title": "Local Farmers' Market Opens in Vancouver",
+    "difficulty": "beginner",
+    "passage": "Good morning, listeners! This is Sarah Johnson, reporting from Vancouver. Today, I have exciting news for you. The local farmers' market in downtown Vancouver opened today! This market will be open every Saturday from 9 AM to 2 PM. It is located in the city park near Main Street and King Edward Avenue. \nYou can find fresh vegetables, fruits, and handmade goods from local farmers and artisans. Some of the popular items include organic apples, fresh tomatoes, and homemade jams. There is something for everyone at the market.\nThis week, the market is starting a new program. They will have live music! Local musicians will perform each Saturday. This is a great way to enjoy the atmosphere while shopping for fresh produce. \nAlso, there will be cooking demonstrations every week. Some local chefs will show you how to cook delicious meals using the fresh ingredients from the market. Remember, the first cooking demonstration starts at 10 AM this Saturday. So, come early to find a good spot! \nIf you live in or near Vancouver, don’t miss this opportunity to support local farmers and enjoy some fresh food. Bring your family and friends! Enjoy your Saturday shopping at the farmers' market. Thank you for listening, and have a great day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When is the farmers' market open?",
+        "options": [
+          "A) Every Sunday",
+          "B) Every Friday",
+          "C) Every Saturday",
+          "D) Every Monday"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Where is the market located?",
+        "options": [
+          "A) Near Main Street and King Edward Avenue",
+          "B) Near Granville Island",
+          "C) In the downtown library",
+          "D) At the city hall"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What will be featured at the market this week?",
+        "options": [
+          "A) Painting classes",
+          "B) Live music",
+          "C) Fashion shows",
+          "D) Movie screenings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time does the first cooking demonstration start?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who should come to the farmers' market?",
+        "options": [
+          "A) Tourists only",
+          "B) Only farmers",
+          "C) Families and friends",
+          "D) Children only"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Weekly Weather and Shopping Update in Vancouver",
+    "difficulty": "beginner",
+    "passage": "Welcome to the Vancouver Weekly News. Today, we will talk about the weather and some fun shopping events happening this weekend. \n\nFirst, let's start with the weather. This weekend, Vancouver will have sunny skies. The temperature will be around 20 degrees Celsius, making it a perfect day to go outside. If you plan to go to the beach, make sure to bring sunscreen and a hat. \n\nNow, let's talk about shopping. There are many events happening this weekend in downtown Vancouver. On Saturday, the big Summer Market will take place at Queen Elizabeth Park. You can find fresh fruits, vegetables, and handmade crafts from local artists. The market opens at 9 AM and will close at 4 PM. \n\nOn Sunday, there will be a special sale at the Pacific Centre Mall. Many stores will offer discounts up to 50% off on clothing and accessories. This is a great time to buy summer clothes at a lower price. The mall opens at 10 AM and stays open until 7 PM. \n\nRemember to check the bus schedules if you are taking public transport. Buses run frequently to the market and the mall. You can take the number 5 bus to get to Queen Elizabeth Park and the number 19 bus to reach the Pacific Centre Mall. Enjoy your weekend shopping and don’t forget to enjoy the nice weather!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What will the weather be like this weekend in Vancouver?",
+        "options": [
+          "A) Rainy",
+          "B) Sunny",
+          "C) Snowy",
+          "D) Windy"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where will the Summer Market take place?",
+        "options": [
+          "A) Pacific Centre Mall",
+          "B) Queen Elizabeth Park",
+          "C) Downtown Vancouver",
+          "D) Stanley Park"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does the Summer Market open?",
+        "options": [
+          "A) 8 AM",
+          "B) 9 AM",
+          "C) 10 AM",
+          "D) 11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What kind of discounts will be at the Pacific Centre Mall on Sunday?",
+        "options": [
+          "A) 10% off",
+          "B) 25% off",
+          "C) 50% off",
+          "D) No discounts"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What bus number goes to Queen Elizabeth Park?",
+        "options": [
+          "A) 5",
+          "B) 10",
+          "C) 15",
+          "D) 20"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "Toronto Weather Report and Shopping Tips",
+    "difficulty": "beginner",
+    "passage": "Good morning, Toronto. This is your weather report for today, September 15th. It is currently 15 degrees Celsius. The sky is mostly cloudy, but we expect some sunshine in the afternoon. There is a slight chance of rain, so you might want to bring an umbrella if you go outside. The high temperature today will reach 20 degrees Celsius. So, it will be a pleasant day for a walk or shopping.\n\nSpeaking of shopping, if you plan to visit the Eaton Centre today, it is open from 10 AM to 9 PM. It is a great place to find both local and international brands. There are many restaurants and cafes too, where you can take a break and enjoy a meal.\n\nFor those who prefer outdoor shopping, Kensington Market is another wonderful option. It is known for its unique shops and street vendors. Kensington Market opens at 9 AM and closes at 7 PM. You can find fresh produce, vintage clothing, and artisanal crafts there.\n\nRemember to check your bags after shopping. Keep your valuables safe and be aware of your surroundings, especially in busy areas. Have a great day, Toronto, and enjoy the beautiful weather if you go out to shop!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the current temperature in Toronto?",
+        "options": [
+          "A) 20 degrees Celsius",
+          "B) 15 degrees Celsius",
+          "C) 10 degrees Celsius",
+          "D) 25 degrees Celsius"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the Eaton Centre?",
+        "options": [
+          "A) A park",
+          "B) A shopping mall",
+          "C) A museum",
+          "D) A restaurant"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What time does Kensington Market close?",
+        "options": [
+          "A) 5 PM",
+          "B) 7 PM",
+          "C) 9 PM",
+          "D) 8 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What should you bring if you think it might rain?",
+        "options": [
+          "A) A hat",
+          "B) A blanket",
+          "C) An umbrella",
+          "D) Sunglasses"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What can you find in Kensington Market?",
+        "options": [
+          "A) Movies",
+          "B) Fresh produce",
+          "C) Concerts",
+          "D) Hotels"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Local Shopping Event in Toronto",
+    "difficulty": "beginner",
+    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news about a shopping event happening tomorrow. The Toronto Shopping Festival will take place at the Metro Toronto Convention Centre. The event starts at 10 AM and ends at 6 PM. You can find many stores offering discounts on clothes, electronics, and home goods.\n\nThis year, the festival will feature over 100 vendors from across the city. There will be local artists selling handmade crafts and delicious food from local restaurants. If you are looking for unique gifts or just want to enjoy a fun day out, this is the place to be!\n\nParking is available at the convention centre, but public transport is a great option too. You can take the subway to Union Station and walk to the venue in about ten minutes. Remember to bring your reusable shopping bags to help the environment!\n\nTo make the event even more special, there will be live music performances throughout the day. Local bands will play popular songs to create a lively atmosphere. Families and friends are encouraged to come together and have a good time.\n\nSo, mark your calendars for tomorrow! Join us at the Toronto Shopping Festival for a day full of fun and savings. Don’t miss out on the great deals and wonderful local products. We hope to see you there, Toronto! That's all for your local news update. Have a great day! ",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the event happening tomorrow?",
+        "options": [
+          "A. Toronto Art Festival",
+          "B. Toronto Sports Day",
+          "C. Toronto Shopping Festival",
+          "D. Toronto Food Fair"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Where will the shopping festival be held?",
+        "options": [
+          "A. Metro Toronto Convention Centre",
+          "B. Toronto City Hall",
+          "C. Nathan Phillips Square",
+          "D. Yorkdale Mall"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What type of items will be available at the festival?",
+        "options": [
+          "A. Only clothes",
+          "B. Only electronics",
+          "C. Clothes, electronics, and home goods",
+          "D. Only food"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How can you get to the convention centre easily?",
+        "options": [
+          "A. By walking from home",
+          "B. By taking the subway to Union Station",
+          "C. By riding a bike",
+          "D. By using a taxi only"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will happen throughout the day at the festival?",
+        "options": [
+          "A. There will be a fashion show.",
+          "B. There will be live music performances.",
+          "C. There will be cooking classes.",
+          "D. There will be sports competitions."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Local Market Opens in Toronto",
+    "difficulty": "beginner",
+    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news for shoppers in our city. The new Maple Leaf Market opens today in downtown Toronto. This market has many fresh fruits, vegetables, and local products. It is located at the corner of Queen Street and Bay Street. The market will be open every day from 8 AM to 8 PM. Families are invited to visit and enjoy the new market. There will also be live music every Saturday and Sunday, starting next week. Many small businesses are selling their goods at the market. You can find handmade crafts, baked goods, and fresh flowers. This is a great chance to support local farmers and artists. Mayor John Smith will be at the opening ceremony at 10 AM. He will give a speech about the importance of supporting local businesses. The first fifty visitors to the market will receive a free reusable shopping bag! So, make sure to arrive early. If you need directions, you can take the subway to the Queen Street station. From there, it is just a short walk to the market. Remember, the Maple Leaf Market promises something for everyone. We hope to see you there! Enjoy your shopping and have a wonderful day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the new market?",
+        "options": [
+          "A. Maple Leaf Market",
+          "B. Toronto Market",
+          "C. Fresh Fruits Market",
+          "D. Queen Street Market"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What time does the market open?",
+        "options": [
+          "A. 7 AM",
+          "B. 8 AM",
+          "C. 9 AM",
+          "D. 10 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "Who will speak at the opening ceremony?",
+        "options": [
+          "A. Mayor John Smith",
+          "B. Premier of Ontario",
+          "C. Local Farmers",
+          "D. The Market Manager"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "How many visitors will receive a free shopping bag?",
+        "options": [
+          "A. Thirty",
+          "B. Fifty",
+          "C. One hundred",
+          "D. Two hundred"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where is the Maple Leaf Market located?",
+        "options": [
+          "A. On Bay Street",
+          "B. On Queen Street",
+          "C. At the corner of Queen and Bay Street",
+          "D. Near the subway station"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Rainy Day Shopping in Toronto",
+    "difficulty": "beginner",
+    "passage": "Good morning! This is your news update for today. It is a rainy day in Toronto, but that will not stop people from shopping. Many stores are having big sales to attract customers. The downtown area is busy, even with the rain. People are carrying umbrellas and wearing raincoats as they walk to their favorite shops. The popular shopping center, the Eaton Centre, is open from 10 AM to 9 PM today. You can find many stores there, such as Hudson's Bay, Zara, and Adidas. If you are looking for discounts, you can get up to 50% off on selected items. \n\nRemember to check out the food court on the third floor. There are many options, like Asian food, burgers, and pizza. You can warm up with a hot drink while you shop. If you do not want to leave home, you can also shop online. Many stores offer free shipping over $50. \n\nIn other news, the forecast for this week shows that the weather will stay cool and rainy. The temperature will be around 10 degrees Celsius. You should dress warmly if you go outside. \n\nThat’s all for today’s news update! Happy shopping, and stay dry out there!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What city is the news report about?",
+        "options": [
+          "A) Montreal",
+          "B) Toronto",
+          "C) Vancouver",
+          "D) Calgary"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the weather like in Toronto today?",
+        "options": [
+          "A) Sunny",
+          "B) Snowy",
+          "C) Rainy",
+          "D) Windy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What shopping center is mentioned in the report?",
+        "options": [
+          "A) Pacific Centre",
+          "B) West Edmonton Mall",
+          "C) Eaton Centre",
+          "D) Metropolis at Metrotown"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How much discount can you get on selected items?",
+        "options": [
+          "A) 10%",
+          "B) 30%",
+          "C) 50%",
+          "D) 75%"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What should you wear when going outside?",
+        "options": [
+          "A) Shorts",
+          "B) A t-shirt",
+          "C) A raincoat",
+          "D) Sandals"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Local Farmers' Market Opens in Toronto",
+    "difficulty": "beginner",
+    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news for everyone. The Toronto Farmers' Market will open this Saturday at 9 AM. It will take place in the beautiful Nathan Phillips Square. This market is a great place to buy fresh fruits, vegetables, and other local goods.\n\nYou can find many vendors selling their products. Some vendors will sell honey, cheese, and baked goods. The market will also have live music to entertain visitors. It will be a fun day for families and friends.\n\nIf you are looking for fresh and healthy options, this is a perfect place. Remember to bring your reusable bags to carry your items.\n\nIn addition, the weather for this Saturday looks great! There will be plenty of sunshine and warm temperatures, reaching 25 degrees Celsius. So, it is a good idea to wear a hat and bring sunscreen.\n\nThe Farmers’ Market is not only about shopping. It is also about supporting local businesses. By visiting, you help farmers and local producers. Additionally, there will be activities for children, such as face painting and craft booths. It will be a wonderful place for families.\n\nThe market will be open every Saturday morning until the end of October. So, mark your calendars and come out to enjoy fresh food, fun activities, and good company. See you at the market!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Where is the Toronto Farmers' Market held?",
+        "options": [
+          "A) In a school",
+          "B) At Nathan Phillips Square",
+          "C) In a shopping mall",
+          "D) At the airport"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What time does the market open?",
+        "options": [
+          "A) 8 AM",
+          "B) 9 AM",
+          "C) 10 AM",
+          "D) 11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What types of products can you buy at the market?",
+        "options": [
+          "A) Electronics",
+          "B) Fresh fruits and vegetables",
+          "C) Clothing",
+          "D) Cars"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What will the weather be like on Saturday?",
+        "options": [
+          "A) Rainy and cold",
+          "B) Snowy and windy",
+          "C) Sunny and warm",
+          "D) Cloudy and cool"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How often will the market be open?",
+        "options": [
+          "A) Every Saturday until October",
+          "B) Every Sunday",
+          "C) Only in the summer",
+          "D) Once a month"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "City Park Improvements Announced",
+    "difficulty": "beginner",
+    "passage": "Good morning, everyone. This is your local news update. The city of Toronto has announced plans to improve several parks in the downtown area. Starting next month, the city will spend two million dollars on new playgrounds and benches. Many families enjoy spending time in these parks, and the city wants to make them better for everyone. The renovations will include new walking paths, more trees, and new picnic areas. These improvements will help families and friends to enjoy outdoor activities together.\n\nCity officials say the project will start on March 15th, and it will take about six months to complete. The parks affected include Trinity Bellwoods Park, Queen’s Park, and Allan Gardens. City council member Sarah Johnson said, “We want to create safe and fun places for children to play.”\n\nDuring this time, some areas of the parks may be closed for construction. City workers will put up signs to let visitors know which areas are closed. It is important for the public to follow these signs to stay safe.\n\nIn other news, the weather this weekend will be very nice. Expect sunny skies and temperatures around 22 degrees Celsius. It is a perfect time for a picnic in the park. Remember to bring your sunscreen and a hat.\n\nThat is all for today’s news update. Enjoy your day and the beautiful weather this weekend!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the city of Toronto planning to improve?",
+        "options": [
+          "A park benches",
+          "B playgrounds",
+          "C schools",
+          "D libraries"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How much money will the city spend on the improvements?",
+        "options": [
+          "A one million dollars",
+          "B two million dollars",
+          "C three million dollars",
+          "D four million dollars"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What will be built in the parks?",
+        "options": [
+          "A new schools",
+          "B new walking paths",
+          "C new roads",
+          "D new stores"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How long will the project take to complete?",
+        "options": [
+          "A three months",
+          "B four months",
+          "C five months",
+          "D six months"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "question": "What is the weather like this weekend?",
+        "options": [
+          "A rainy",
+          "B snowy",
+          "C sunny",
+          "D cloudy"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "City Park Fun",
+    "difficulty": "beginner",
+    "passage": "Good morning! This is the news from Vancouver. Today is Saturday, and the weather is sunny and warm. It is a great day to enjoy the outdoors. In Stanley Park, there will be a big event called the Summer Festival. The festival starts at 10 AM and goes until 5 PM. There will be food trucks, live music, and many fun activities for families. Children can enjoy face painting and games. \n\nIf you want to attend, please take public transportation. The SkyTrain is the best option. Get off at the Burrard Station and walk to the park. It takes about 10 minutes. Parking near the park is limited, so it is better to take the SkyTrain. \n\nAlso, remember to bring water and sunscreen to stay safe in the sun. Enjoy the Summer Festival and have a wonderful day at Stanley Park! \n\nThis is a reminder that the Vancouver Art Gallery is free to visit today. From 11 AM to 4 PM, you can see all the exhibits without paying. This is a great opportunity to explore some amazing art from Canadian artists. The gallery is located in downtown Vancouver. So, after the Summer Festival, consider visiting the Art Gallery to see beautiful artwork. \n\nThat’s all for today’s news. Have fun in the sun and enjoy all the activities!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the event in Stanley Park?",
+        "options": [
+          "A) Winter Festival",
+          "B) Summer Festival",
+          "C) Fall Fair",
+          "D) Spring Parade"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What should you take to get to Stanley Park?",
+        "options": [
+          "A) Car",
+          "B) Bike",
+          "C) SkyTrain",
+          "D) Bus"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What time does the Summer Festival start?",
+        "options": [
+          "A) 9 AM",
+          "B) 10 AM",
+          "C) 11 AM",
+          "D) 12 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Where is the Vancouver Art Gallery located?",
+        "options": [
+          "A) In Stanley Park",
+          "B) In downtown Vancouver",
+          "C) Near the airport",
+          "D) In North Vancouver"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What should you bring to stay safe in the sun?",
+        "options": [
+          "A) Water and sunscreen",
+          "B) Snacks and a book",
+          "C) A raincoat",
+          "D) A blanket"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "Local Farmers' Market Opens This Weekend",
+    "difficulty": "beginner",
+    "passage": "Good morning! This is Mark Johnson with your local news. I have exciting news for everyone in the city of Vancouver! This weekend, the Granville Island Farmers' Market opens for the season. The market will be open every Saturday and Sunday from 9 AM to 3 PM. You can find fresh fruits, vegetables, and flowers from local farmers. It is a great place to shop for healthy food and enjoy the outdoors. If you’re looking for something special, there will also be handmade crafts from local artists. It's a perfect opportunity to support our community.\n\nTo get to Granville Island, you can take a bus, which is very easy. Just catch the number 50 bus from downtown Vancouver. It takes about 15 minutes to reach the market. If you prefer driving, there is parking available, but it can be busy, especially on weekends. We recommend getting there early to find a good spot.\n\nIn addition to shopping, there will be live music at the market. Local musicians will perform from 11 AM to 2 PM. This is a wonderful way to enjoy your shopping experience. So, gather your family and friends and come to the Granville Island Farmers' Market this weekend. Remember, it opens at 9 AM on Saturday. Enjoy the fresh air, tasty food, and great company!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the farmers' market open?",
+        "options": [
+          "A) Friday",
+          "B) Saturday",
+          "C) Monday",
+          "D) Wednesday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What can you buy at the market?",
+        "options": [
+          "A) Toys",
+          "B) Fresh fruits and vegetables",
+          "C) Electronics",
+          "D) Books"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How can you get to Granville Island?",
+        "options": [
+          "A) By bike",
+          "B) By train",
+          "C) By bus",
+          "D) By airplane"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What type of music will be at the market?",
+        "options": [
+          "A) Classical music",
+          "B) Live music",
+          "C) Jazz music",
+          "D) Opera"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What time does the market open on Saturday?",
+        "options": [
+          "A) 8 AM",
+          "B) 9 AM",
+          "C) 10 AM",
+          "D) 11 AM"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Local Grocery Store Opens New Location",
+    "difficulty": "beginner",
+    "passage": "Hello, everyone! This is Emily Rose with the Daily News. We have some exciting news for our community today. The Maple Grove Grocery Store is opening a new location in downtown Toronto next week. This new store will provide fresh fruits, vegetables, and other grocery items for all residents. The grand opening is on Saturday, January 14th, at 10 a.m.\n\nThe Maple Grove Grocery Store is known for its friendly staff and affordable prices. They also support local farmers by selling products that are grown in Ontario. At the grand opening, customers can enjoy free samples of fruits and baked goods. There will be fun activities for children, including face painting and a balloon artist.\n\nIn addition to the new store, Maple Grove will also offer online shopping options. Customers can order their groceries online and pick them up in store or have them delivered to their homes. This is a great option for those who are busy and cannot visit the store in person.\n\nIf you are planning to attend the grand opening, make sure to arrive early. The first 100 customers will receive a special gift bag filled with items from the store. We hope you all can join us for this wonderful event! Thank you for listening to the news today. We will keep you updated about other community events as well.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the new grocery store's name?",
+        "options": [
+          "A. Maple Grove Grocery Store",
+          "B. Toronto Market",
+          "C. Fresh Foods",
+          "D. Local Grocers"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "When is the grand opening of the new store?",
+        "options": [
+          "A. January 14th",
+          "B. February 14th",
+          "C. March 14th",
+          "D. December 14th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What is one activity for children at the grand opening?",
+        "options": [
+          "A. Cooking class",
+          "B. Balloon artist",
+          "C. Shopping contest",
+          "D. Grocery race"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "Where is the new Maple Grove Grocery Store located?",
+        "options": [
+          "A. In the suburbs",
+          "B. Near the airport",
+          "C. In downtown Toronto",
+          "D. By the lake"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What can customers do with online shopping?",
+        "options": [
+          "A. Only visit the store",
+          "B. Order groceries online",
+          "C. Shop from other cities",
+          "D. Only buy fruits"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "New Weather Update in Toronto",
+    "difficulty": "beginner",
+    "passage": "Hello, and welcome to our news report. Today’s weather update is for the city of Toronto. It is a sunny day in the city. The temperature is currently 22 degrees Celsius. This is a nice temperature for a walk in the park or a visit to the shops. If you are going outside, remember to wear sunscreen and a hat because the sun is strong today. In the afternoon, we expect a few clouds, but it will still be warm. \n\nTomorrow, the weather will change a bit. There is a chance of rain in the morning, with temperatures around 19 degrees Celsius. If you have plans for tomorrow, you might want to bring an umbrella just in case. \n\nFor those who love shopping, this weekend is special. Many stores in downtown Toronto are having a summer sale. You can find discounts up to 50% off on clothing and shoes. It is a great time to buy new things. The sale starts on Friday and goes until Sunday. \n\nThe Toronto Transit Commission is ready for more people on the weekend. They will have extra buses and streetcars running to help everyone get to the stores easily. \n\nThat’s the latest news on the weather and shopping in Toronto. Enjoy your day and happy shopping this weekend!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the current temperature in Toronto?",
+        "options": [
+          "A) 19 degrees Celsius",
+          "B) 22 degrees Celsius",
+          "C) 24 degrees Celsius",
+          "D) 20 degrees Celsius"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What should you wear if you are going outside today?",
+        "options": [
+          "A) A raincoat and boots",
+          "B) Sunscreen and a hat",
+          "C) A warm jacket",
+          "D) A scarf"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What kind of sale is happening this weekend?",
+        "options": [
+          "A) A winter sale",
+          "B) A summer sale",
+          "C) A holiday sale",
+          "D) A back-to-school sale"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "When does the summer sale start?",
+        "options": [
+          "A) On Monday",
+          "B) On Friday",
+          "C) On Sunday",
+          "D) On Saturday"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What will the Toronto Transit Commission do this weekend?",
+        "options": [
+          "A) Reduce the number of buses",
+          "B) Have fewer streetcars",
+          "C) Have extra buses and streetcars",
+          "D) Close the subway"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Local Farmers' Market Opening",
+    "difficulty": "beginner",
+    "passage": "Good morning, everyone! This is your local news update. Today, we are excited to announce the opening of the Maple Grove Farmers' Market. The market opens this Saturday, May 15th, in the town square. It will operate every Saturday from 8 AM to 1 PM. The farmers' market will feature fresh produce from local farms, homemade jams, and baked goods. It’s a great place to find healthy food and support local farmers.\n\nYou can also enjoy live music while you shop. This week, the local band 'The Maple Leaves' will perform at 10 AM. It's a wonderful way to spend time with friends and family.\n\nIn addition, remember to bring your reusable bags. Supporting the environment is very important to us, and we encourage everyone to reduce plastic waste. There will also be a special section for children, where they can learn about gardening and even plant their own seeds.\n\nThe Maple Grove Farmers' Market is a great way to discover new foods and make connections in our community. Parking is available on Oak Street, right next to the town square. Please arrive early to find a good spot. We look forward to seeing everyone there!\n\nThank you for listening, and have a great day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "When does the farmers' market open?",
+        "options": [
+          "A. May 15th",
+          "B. June 10th",
+          "C. July 1st",
+          "D. August 5th"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What time does the market operate each Saturday?",
+        "options": [
+          "A. 7 AM to 12 PM",
+          "B. 8 AM to 1 PM",
+          "C. 9 AM to 2 PM",
+          "D. 10 AM to 3 PM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What type of food will be at the farmers' market?",
+        "options": [
+          "A. Fast food",
+          "B. Frozen meals",
+          "C. Fresh produce",
+          "D. Canned food"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "Who will perform live music at the market?",
+        "options": [
+          "A. A famous band",
+          "B. The Maple Leaves",
+          "C. A solo artist",
+          "D. A school choir"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Where can you park for the market?",
+        "options": [
+          "A. On Maple Street",
+          "B. On Oak Street",
+          "C. In the park",
+          "D. At the school"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Winter Weather and Shopping in Toronto",
+    "difficulty": "beginner",
+    "passage": "Good morning, Toronto! This is your local news update. Today is December 1st, and we are excited about the winter season. The weather outside is cold. The temperature is -5 degrees Celsius, and there is a chance of snow this evening. If you are going out, please wear warm clothes. Make sure to wear a coat, a hat, and gloves. Winter can be very chilly!\n\nShopping for the holidays is also starting. Many stores in downtown Toronto are having sales. You can find discounts on clothes, toys, and gifts. One popular store, Maple Mall, has a big holiday sale today. Many people are already shopping there, so it may be busy.\n\nIf you plan to shop, consider going during the morning or just after lunch. These times are usually less crowded. The mall opens at 9 AM and closes at 9 PM today. Don't forget that parking can be difficult near the mall, so it is better to take public transport if you can. The subway stops right at Maple Mall.\n\nIn other news, remember to check your local services. The city is offering free snow shoveling for seniors this winter. If you know a senior in your neighborhood, encourage them to call the city service. It is a great help!\n\nThat’s all for today’s news. Stay warm, enjoy your shopping, and have a great day in Toronto!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the temperature today in Toronto?",
+        "options": [
+          "A) 0 degrees Celsius",
+          "B) -5 degrees Celsius",
+          "C) -10 degrees Celsius",
+          "D) 5 degrees Celsius"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Where is the big holiday sale?",
+        "options": [
+          "A) Maple Mall",
+          "B) Northern Store",
+          "C) City Center",
+          "D) Ocean Market"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "What should you wear when going outside?",
+        "options": [
+          "A) A t-shirt",
+          "B) A coat and gloves",
+          "C) Sandals",
+          "D) Shorts"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What time does Maple Mall open?",
+        "options": [
+          "A) 8 AM",
+          "B) 9 AM",
+          "C) 10 AM",
+          "D) 11 AM"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who can get free snow shoveling services?",
+        "options": [
+          "A) Children",
+          "B) Working adults",
+          "C) Seniors",
+          "D) Tourists"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Sunny Sales in Toronto",
+    "difficulty": "beginner",
+    "passage": "Hello, this is Emily from Toronto News. Today is a sunny day in Toronto with a temperature of 24 degrees Celsius. It's a perfect day for shopping. Many stores are having big sales this weekend. If you enjoy shopping, you should not miss it! Popular shopping areas like Eaton Centre and Queen Street West are filled with customers looking for great deals. \n\nAt Eaton Centre, you can find discounts of up to 50% on clothing and shoes. There are also special offers on electronics. If you go there, be sure to check out the new stores that have opened recently. You might find something you really want! \n\nOn Queen Street West, many local shops are also offering sales. You can find unique items that you won't see anywhere else. The atmosphere is lively, and street performers add to the fun. \n\nPlease remember to wear sunscreen, as the sun can be strong this time of year. If you are taking public transport, the TTC is running on time today, so it will be easy to get to your shopping destinations. \n\nIn summary, whether you prefer big malls or small shops, this weekend is a great time to shop in Toronto. Thank you for listening, and enjoy your day!",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the weather like in Toronto today?",
+        "options": [
+          "A. Rainy",
+          "B. Windy",
+          "C. Sunny",
+          "D. Snowy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "Where are discounts of up to 50% available?",
+        "options": [
+          "A. Restaurants",
+          "B. Clothing stores",
+          "C. Parks",
+          "D. Libraries"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What should you wear to protect yourself from the sun?",
+        "options": [
+          "A. A hat",
+          "B. Sunglasses",
+          "C. A jacket",
+          "D. Sunscreen"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 4,
+        "question": "Which area is mentioned as having local shops?",
+        "options": [
+          "A. Downtown",
+          "B. Queen Street West",
+          "C. King Street East",
+          "D. Yonge Street"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How is the public transport running today?",
+        "options": [
+          "A. Late",
+          "B. On time",
+          "C. Not working",
+          "D. Crowded"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Changes to the Provincial Education Policy",
+    "difficulty": "advanced",
+    "passage": "Good evening, I’m Emily Chan with this week’s news update. Today, in a rather unexpected turn of events, the provincial government announced modifications to the existing education policy, which have left quite a few educators scratching their heads. The core of the debate revolves around the integration of technology in the classroom—a well-discussed topic, but perhaps not one that everyone is entirely sold on. You see, the government has proposed increasing funding for tech resources, yet many are questioning if this move truly addresses the root issues impacting student learning. Educators like Sarah Thompson, the head of the Ontario Teachers’ Association, expressed some skepticism, stating, \n\n\"While I appreciate the effort to invest in technology, I can’t help but wonder if we’re overlooking the necessity for professional development in this area. Simply throwing money at gadgets might result in flashy classrooms, but does it enhance actual learning outcomes?\" \n\nThis sentiment echoes the opinions of several academic researchers as well, who argue that without proper training, teachers might not effectively utilize the new tools. Furthermore, there’s the pressing concern about equity—how will schools in underserved areas access this technology? \n\nIn response to these apprehensions, the Deputy Minister of Education, Mark Jensen, noted that the funding will be tiered, with priority given to schools that show readiness to implement tech-driven strategies responsibly. However, many still feel this approach lacks surety, arguing it might exacerbate existing disparities rather than mitigate them. As we move forward, it’s clear that the discussions around educational reform are far from settled, and as the saying goes, where there's smoke, there’s fire. We’ll keep you updated as this story unfolds. Stay tuned for more insights on how these changes could reshape our classrooms, right here in Ontario.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary focus of the proposed changes to the education policy?",
+        "options": [
+          "A) Increasing teacher salaries",
+          "B) Enhancing technology integration",
+          "C) Standardizing curriculum across provinces",
+          "D) Reducing class sizes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What concern did Sarah Thompson raise regarding the new funding?",
+        "options": [
+          "A) It may lead to technological waste.",
+          "B) It doesn’t address the need for professional development.",
+          "C) It will be inequitably distributed.",
+          "D) It focuses too much on gadgets without substance."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What has been indicated about the distribution of the new funding?",
+        "options": [
+          "A) It will be evenly spread across all schools.",
+          "B) It will target schools ready for tech integration.",
+          "C) It will prioritize urban schools over rural ones.",
+          "D) It is meant primarily for private institutions."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What underlying issue does the report suggest might not be effectively solved by the new policy?",
+        "options": [
+          "A) Financial instability in educational institutions.",
+          "B) The need for equitable access to technology.",
+          "C) The management of classroom sizes.",
+          "D) Teacher dissatisfaction with current salaries."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "How does the narrative characterize the overall sentiment toward the education policy changes?",
+        "options": [
+          "A) Unanimously positive with no dissent.",
+          "B) Mixed feelings with ongoing debates.",
+          "C) Complete apathy among educators.",
+          "D) Overwhelming concern for technology misuse."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Toronto's New Transit Initiative",
+    "difficulty": "advanced",
+    "passage": "In a bid to tackle the ongoing congestion in downtown Toronto, the city has announced a new transit initiative that's, well, somewhat ambitious. The plan, as outlined by city officials, includes the expansion of bike lanes, enhancements to bus services, and an increase in the frequency of trains on the subway network. Experts are, let’s say, not entirely convinced this will suffice to alleviate the city’s notorious traffic woes. While many are hopeful about the initiative, some residents are expressing skepticism, particularly regarding the timeline. City councillor Jane Doe, during a recent press briefing, remarked, 'We expect to see noticeable improvements within the next year, though we’re well aware that challenges may arise.' It’s quite the tightrope walk — ensuring progress while maintaining minimal disruption to commuters.\n\nMoreover, the initiative has sparked a debate about urban planning priorities. Some argue that the money could be better spent on transit infrastructure rather than, say, bike lane expansions, which they deem less critical. In the words of Thomas, a local business owner, 'I mean, sure, biking is great and all, but when it comes to efficiency, I’m not quite convinced that is the way to go.' There’s also the concern over funding — how much taxpayer money is justifiable in this venture? The mayor has insisted that the costs will be offset by potential reductions in emergency services calls due to fewer accidents. Still, many residents wonder if this claim is a bit optimistic.\n\nThe new transit plan is going to be piloted starting next month, which adds a layer of urgency. As city officials scramble to finalize the details, citizens are left to ponder whether this initiative is genuinely going to transform how they navigate the city or if it’s merely another exercise in urban idealism. Time will tell, and of course, we’ll be keeping a close watch on how things unfold over the next few months.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary goal of Toronto's new transit initiative?",
+        "options": [
+          "A) To completely eliminate traffic congestion",
+          "B) To enhance existing public transportation options",
+          "C) To increase the use of private vehicles",
+          "D) To reduce funding for bike lanes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What are residents concerned about regarding the timeline of the initiative?",
+        "options": [
+          "A) It will take too long to see any improvements",
+          "B) It will lead to an immediate reduction in traffic",
+          "C) It will be implemented without community feedback",
+          "D) It will disrupt their daily commuting habits"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 3,
+        "question": "According to local business owner Thomas, what is his stance on bike lane expansions?",
+        "options": [
+          "A) They are essential for urban efficiency",
+          "B) They should be prioritized over other transit solutions",
+          "C) They might not significantly contribute to improving efficiency",
+          "D) He fully supports increased funding for them"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How does the mayor believe costs will be managed for the new transit plan?",
+        "options": [
+          "A) By increasing public transit fares",
+          "B) Through funding from private sponsors",
+          "C) By reducing emergency service expenditures",
+          "D) By eliminating bike lanes entirely"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What underlying sentiment does the passage convey about the new transit initiative?",
+        "options": [
+          "A) It is widely celebrated as a flawless plan",
+          "B) There is strong support from all community members",
+          "C) There are mixed feelings about its feasibility and impact",
+          "D) It has been unanimously rejected by the public"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Urban Development on Community Health",
+    "difficulty": "advanced",
+    "passage": "Good evening. This is Sarah Lee reporting for CBC News from Toronto. In today's discussion, we dive into a growing concern among urban planners and health experts regarding the impact of urban development on community health. While there are multiple initiatives aimed at revitalizing downtown areas, there’s an ongoing debate about how these changes affect local residents.\n\nTo put it bluntly, one might say that it’s not exactly a straightforward issue. There are certainly positive aspects, like increased access to amenities and the economic boost that comes with urban development. However, I’m not entirely convinced that these benefits outweigh the potential downsides. For instance, as new condominiums rise, many families are being priced out of their neighborhoods; this can lead to increased stress and associated health issues, not to mention the displacement of long-standing communities.\n\nMoreover, some city planners argue that while these developments promise a modern aesthetic and increased foot traffic, they often neglect critical elements like green spaces and community centers, which are vital for mental health. This has led to a growing sentiment that urban developments focusing solely on profit may inadvertently harm their intended communities.\n\nInterestingly, recent studies have shown a direct correlation between increased urban density and the rise in mental health challenges. You’d think that more people in a shared space would lead to greater social interactions, but that’s not always the case. Many are finding themselves isolated in their high-rise apartments, which certainly raises a flag.\n\nIn conclusion, as Toronto continues to expand, it’s imperative that we adopt a more holistic approach to urban planning— one that prioritizes not just financial gains but also the health and wellbeing of its residents. This balancing act is something we’ll need to navigate carefully in the coming years.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is a primary concern that Sarah mentions regarding urban development?",
+        "options": [
+          "A. Increased property values benefiting all residents",
+          "B. The potential displacement of local families",
+          "C. The creation of more job opportunities",
+          "D. The transformation of community aesthetics"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "According to Sarah, how do some city planners view green spaces in relation to urban development?",
+        "options": [
+          "A. As a necessary part of profit-driven developments",
+          "B. As an afterthought in many projects",
+          "C. As integral to increasing property values",
+          "D. As essential for attracting tourists"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What surprising finding does Sarah mention about urban density?",
+        "options": [
+          "A. It has uniformly positive outcomes for social interactions",
+          "B. It can lead to increased mental health difficulties",
+          "C. It guarantees better access to community events",
+          "D. It enhances social networks significantly"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does Sarah suggest needs to happen in Toronto’s urban planning?",
+        "options": [
+          "A. A stronger focus on profit-driven projects",
+          "B. An abandonment of existing green spaces",
+          "C. A balanced approach prioritizing community health",
+          "D. An exclusive focus on economic growth"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "How does Sarah’s tone reflect her perspective on the issues discussed?",
+        "options": [
+          "A. Completely optimistic about urban development",
+          "B. Neutral without strong opinions on the matter",
+          "C. Critical of the current urban planning approach",
+          "D. Overly focused on past successes"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Upcoming Changes in Toronto Transit Policy",
+    "difficulty": "advanced",
+    "passage": "Good evening. In today's news, we're turning our attention to the Toronto Transit Commission, or TTC, which has announced a major policy overhaul that has been the talk of the town. It's not entirely clear if this will be a net positive for commuters, but let’s break down the details. First off, the plan involves increasing frequency on select routes—yes, that's right, routes that desperately need it, we can all agree on that. However, here's the kicker: they also plan to cut service on some less popular lines. Now, I'm not saying this is a disaster, but we have to wonder who exactly deemed those lines 'less popular.' After all, isn’t every passenger important? \n\nThen there’s the proposed fare increase that’s also raising eyebrows. The TTC argues it’s a necessary move to keep up with rising operational costs, which, you might say, are partly due to the ongoing inflationary pressures. Still, there are skeptics. Many transit advocates argue that such price hikes could disproportionately affect lower-income riders—right? I mean, one could say it's almost ironic that the very people who rely on public transit the most could be left in an even tougher spot. \n\nAnd, let's not forget the timing of this announcement—just as the colder months are approaching. You’d think they’d have considered the potential backlash. Indeed, managing public perception here seems paramount, don’t you think? On the one hand, they want to be seen as proactive; on the other, some might say this looks more reactive—like damage control. As discussions continue, we’ll be keeping an eye on how the public responds and whether the TTC might just have to backpedal on some of these changes. That’s it for now; stay tuned for updates.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the TTC's policy overhaul?",
+        "options": [
+          "A. Increasing service on all routes",
+          "B. Cutting service on some underutilized lines",
+          "C. Introducing new fare categories",
+          "D. Reducing operational costs"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How do skeptics view the proposed fare increase?",
+        "options": [
+          "A. As beneficial for all riders",
+          "B. As a necessary evil",
+          "C. As potentially harmful to low-income riders",
+          "D. As a straightforward financial strategy"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What concern is raised about the timing of the announcement?",
+        "options": [
+          "A. It should have been made earlier",
+          "B. It coincides with the colder months",
+          "C. It ignores public opinion completely",
+          "D. It comes too close to budget discussions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the narrator imply about the TTC's management strategy?",
+        "options": [
+          "A. They are consistently proactive",
+          "B. They may need to reconsider their approach",
+          "C. They prioritize efficiency over public perception",
+          "D. They have successfully avoided public backlash"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Which phrase best captures the narrator's attitude towards the changes?",
+        "options": [
+          "A. Skeptical but optimistic",
+          "B. Cautiously supportive",
+          "C. Highly critical",
+          "D. Neutral and factual"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  {
+    "title": "City Council Debates New Urban Development Plan",
+    "difficulty": "advanced",
+    "passage": "In today's city council meeting, the debate over the proposed urban development plan was as heated as anticipated. Mayor Thompson opened the session by stating, \"As we all know, this plan is vital for revitalizing the downtown area, but I’m not entirely convinced it addresses the concerns of our long-term residents.\" This drew immediate reactions, with Councillor Huang interjecting, \"Exactly, Mayor! While new businesses might flourish, we should ask ourselves, will they actually meet the needs of the community?\" \n\nThe room buzzed with murmurs as the councillors pondered this contradiction. Meanwhile, Councillor Patel weighed in, saying, \"I think we might be overestimating the plan's potential impact. Sure, new housing is great, but we need to ensure it doesn’t lead to displacement.\" \n\nThese comments sparked a flurry of nods and some eye rolls; clearly, opinions varied greatly on the matter. As the discussion continued, the mayor hedged, claiming, \"I appreciate all points made, but I still believe we can find a middle ground that satisfies both new development and the needs of our constituents.\"  \n\nCouncillor Kim, known for her direct approach, chimed in, \"Middle ground is nice, but we can’t pretend the existing residents don’t feel anxious. If we’re not careful, this development could be more of a disruption than a benefit.\" \n\nWrapping up the meeting, Mayor Thompson suggested, \"Perhaps we should hold a public forum next week to gauge public opinion before making any decisions.\" This proposal, while met with some applause, also prompted skepticism about whether public feedback would truly influence the final plan.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern expressed by Councillor Huang regarding the urban development plan?",
+        "options": [
+          "A) It will create more jobs.",
+          "B) It may not meet community needs.",
+          "C) It will increase property values.",
+          "D) It will generate tourism."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What stance does Mayor Thompson take towards the long-term residents during the debate?",
+        "options": [
+          "A) He disregards their concerns.",
+          "B) He fully supports their perspective.",
+          "C) He acknowledges their concerns but believes in potential benefits.",
+          "D) He is indifferent to their opinions."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What implication does Councillor Patel make about the development plan?",
+        "options": [
+          "A) It will definitely lead to improvements.",
+          "B) It could cause people to be displaced.",
+          "C) It is already a legally binding decision.",
+          "D) It will only benefit affluent residents."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does Councillor Kim characterize the proposed development?",
+        "options": [
+          "A) As a fully beneficial initiative.",
+          "B) As potentially disruptive to existing communities.",
+          "C) As a measure lacking public support.",
+          "D) As something that will automatically succeed."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What action does Mayor Thompson suggest at the end of the meeting?",
+        "options": [
+          "A) Hold a vote on the plan immediately.",
+          "B) Close discussion on the topic entirely.",
+          "C) Organize a public forum to gather feedback.",
+          "D) Implement the plan regardless of public opinion."
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Environmental Policy Updates in Toronto",
+    "difficulty": "advanced",
+    "passage": "In a recent discussion regarding Toronto's environmental policies, Mayor Chen addressed the urgent need for sustainable urban development. \n\n\"We’re not entirely convinced that our current strategies are effective, given the alarming rise in pollution levels,\" she stated, emphasizing that immediate action is crucial. With the city's comprehensive review set to conclude next month, there’s a suggestion to pivot towards innovative green technologies.\n\nHowever, some council members, like Councillor Patel, appeared skeptical. \"Sure, green technology sounds great in theory, but does it integrate well with existing infrastructures? I'm not sure we can afford more disruption right now.\"\n\nMayor Chen responded, “I understand your concerns, but it’s essential we align ourselves with the latest trends—other cities are leapfrogging ahead.” This prompted a lively debate among the council, with various opinions on balancing economic stability and environmental responsibility.\n\nAs it stands, the mayor’s proposal aims to introduce incentives for businesses that adopt greener practices. \"Incentives can lead to substantial improvements without hefty investments upfront,\" she argued, while acknowledging that some businesses might view it as an extra burden. Still, she seemed hopeful, saying, \"If we can demonstrate clear benefits, it could actually turn into an opportunity rather than a setback for industry stakeholders.\"\n\nNonetheless, the council remains divided, with many agreeing on the need for change but disagreeing on the methods. The upcoming vote on these proposals is expected to be quite contentious, as the city grapples with its dual challenge of economic growth and environmental stewardship. This meeting has the potential to shape Toronto's policy landscape for years to come.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Mayor Chen's primary concern regarding Toronto's current environmental strategies?",
+        "options": [
+          "A) They are not aligned with city growth.",
+          "B) They may be inadequate in reducing pollution levels.",
+          "C) They rely too heavily on private funding.",
+          "D) They lack public support."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How does Councillor Patel feel about the integration of green technologies?",
+        "options": [
+          "A) He believes they will enhance urban infrastructure.",
+          "B) He thinks they might cause more disruption than benefits.",
+          "C) He is fully supportive of their immediate implementation.",
+          "D) He sees them as a financial burden to the city."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does Mayor Chen suggest could be a positive outcome of the proposed incentives?",
+        "options": [
+          "A) They will reduce the tax burden on residents.",
+          "B) They could present an opportunity for businesses rather than a setback.",
+          "C) They will ensure compliance with environmental regulations.",
+          "D) They will eliminate pollution entirely."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What underlying issue is reflected in the council’s debate as noted in the passage?",
+        "options": [
+          "A) The need for public engagement in environmental policy.",
+          "B) The tension between economic growth and environmental responsibility.",
+          "C) The unanimous support for innovative technologies.",
+          "D) A disagreement on the budget for environmental initiatives."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What can be inferred about the upcoming vote on Mayor Chen's proposals?",
+        "options": [
+          "A) It is likely to be a smooth, unanimous decision.",
+          "B) The outcome may significantly influence Toronto's policy direction.",
+          "C) It will focus solely on economic growth initiatives.",
+          "D) It has already been predetermined by the council."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "New Urban Transit Proposal Sparks Debate in Toronto",
+    "difficulty": "advanced",
+    "passage": "Good evening, Toronto. In a groundbreaking twist for the city's public transit system, recent debates surrounding the proposed overhaul of the subway network have stirred significant conversation among city planners and residents alike. The proposed plan, which emerged after extensive consultations with residents, aims to address the chronic overcrowding and inefficiency that have plagued the system for years. One city planner, speaking off the record, mentioned, 'If we're being honest, this isn't simply about improving transportation; it's about reimagining urban mobility in a way that's sustainable and equitable.' However, not everyone is on board. Many advocacy groups have raised concerns, suggesting that the project could divert funds from existing transit initiatives. 'It’s not that we’re against improvements, but are we really prioritizing the right investments here?' said a spokesperson for the advocacy group. Furthermore, while some city councillors are enthusiastic, others are, shall we say, more cautiously optimistic. One councillor stated, 'Look, I'm not entirely convinced this will solve our underlying issues. We need to look at the data rather than simply going along with the latest trend.' The timeline for implementation remains vague, with some suggesting it could roll out in phases over the next decade. In the meantime, residents are left to grapple with the ongoing transit challenges, and with a rush hour that often feels like a sardine can, many urge urgent action. As the city prepares for further discussions, it’s clear that the debate is far from over. We’ll continue to follow this story as developments unfold. Stay tuned for our updates on this contentious topic, and as always, consider what this means for your daily commute.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary objective of the proposed subway overhaul in Toronto?",
+        "options": [
+          "A. To reduce the subway fare",
+          "B. To improve public safety in stations",
+          "C. To enhance urban mobility sustainably",
+          "D. To eliminate overcrowding during rush hours"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What concern did advocacy groups express regarding the subway project?",
+        "options": [
+          "A. It might lead to a complete shutdown of the subway system",
+          "B. It could shift focus away from current transit needs",
+          "C. It won’t be funded adequately by local businesses",
+          "D. It is unlikely to gain public support in the long run"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How do some councillors view the proposed plan?",
+        "options": [
+          "A. They think it is a guaranteed success",
+          "B. They are fully supportive of it",
+          "C. They are skeptical about its effectiveness",
+          "D. They believe it should be implemented immediately"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What aspect of the project’s implementation timeline was highlighted in the report?",
+        "options": [
+          "A. It will begin immediately after approval",
+          "B. It will likely be phased over the next ten years",
+          "C. It is already underway and will be completed soon",
+          "D. It lacks any clear timeline mentioned in the discussions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What does the report suggest about the broader implications of the subway project?",
+        "options": [
+          "A. It will vastly improve the city's economy",
+          "B. It may encourage similar projects in other cities",
+          "C. It raises questions about transit priorities and funding",
+          "D. It is expected to decrease the population of commuters"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Urban Transit Challenges in Toronto",
+    "difficulty": "advanced",
+    "passage": "Good evening, and welcome to our news segment. Today, we're focusing on the ongoing transit challenges in Toronto, a city that, let’s face it, has seen better days in terms of public transport efficiency. With the city's rapid growth, you might expect a parallel enhancement in transit services. Unfortunately, that's not quite the case. Recent reports suggest that the average commute time has now surpassed 40 minutes, which, frankly, is not ideal for anyone trying to balance work and personal life. \n\nNow, despite objections from city planners, the mayor has proposed a so-called 'quick fix'—essentially, a partial increase in the number of buses during peak hours. However, transportation experts are not entirely convinced that this will address the underlying issues. One might argue it’s more of a Band-Aid solution.  \n\nIn a recent panel discussion held at Ryerson University, experts highlighted a potential long-term strategy: a complete overhaul of the subway infrastructure, which hasn't seen significant upgrades since the 1970s. That sounds ambitious, doesn’t it? But let's not get our hopes up just yet. Critics have pointed out that funding for such a massive project is, shall we say, less than guaranteed. \n\nMoreover, some residents are expressing skepticism about whether the city will follow through on its promises. One local resident bluntly remarked, 'I’ve heard these plans before; they always seem so promising until the funds run dry.' So, there’s that concern. \n\nWe’ll keep you updated as these discussions unfold, but for now, if your commute feels a bit like an obstacle course, you’re not alone. Toronto faces a complex web of scheduling issues that need addressing if it hopes to keep up with its growing population.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern regarding Toronto’s public transport as highlighted in the news segment?",
+        "options": [
+          "A) Increasing funding for new buses",
+          "B) Lengthy average commute times",
+          "C) Lack of interest in public transit",
+          "D) Overpopulation in suburban areas"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What was the mayor's proposed solution to the transit issues?",
+        "options": [
+          "A) A complete subway overhaul",
+          "B) Increasing bus frequency during peak hours",
+          "C) Introducing a new light rail system",
+          "D) Reducing transit fares temporarily"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How did experts at the panel discussion respond to the mayor's plan?",
+        "options": [
+          "A) They fully supported it as a viable option",
+          "B) They expressed doubts about its effectiveness",
+          "C) They proposed additional funding strategies",
+          "D) They suggested it was too late for changes"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What specific issue did the local resident bring up regarding the city’s plans?",
+        "options": [
+          "A) They are optimistic about the new bus system",
+          "B) They have heard similar plans that failed in the past",
+          "C) They believe the funding will be approved soon",
+          "D) They think the expertise at the panel was inadequate"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What underlying sentiment can be inferred about the future of Toronto’s transit system from the news report?",
+        "options": [
+          "A) There is confidence in the mayor’s leadership",
+          "B) There is skepticism about the government’s follow-through",
+          "C) The residents are fully supportive of proposed changes",
+          "D) Funding for transit projects is guaranteed"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Climate Policy Developments in Vancouver",
+    "difficulty": "advanced",
+    "passage": "In recent weeks, there has been a notable shift in Vancouver's approach to climate policy. Many local officials, previously staunch advocates of gradual implementation, are now suggesting a more aggressive stance. A recent press conference revealed that the mayor, while not entirely convinced of the immediate benefits, hinted at re-evaluating existing frameworks to better align with national targets. In his words, 'We can't be half-hearted about this anymore.' Meanwhile, environmental activists welcomed this pep talk but remain skeptical about actual follow-through. \n\nOne prominent activist remarked, 'Sure, words are nice, but actions speak louder than hollow promises.' This sentiment resonates particularly strongly among community groups that have been urging for more stringent regulations on emissions. Yet, it seems there's a persistent tension between economic interests and environmental urgency. The Chamber of Commerce, for instance, has voiced concerns that overly ambitious policies could jeopardize local businesses, suggesting a more moderate pace could be beneficial. The president stated, 'We absolutely support climate action, but it must be sustainable for the economy as well.' \n\nAs discussions continue, the city council is set to hold a series of public consultations next month, aiming to gather input from diverse stakeholders. However, the timeline remains vague. Some council members have expressed that a rushed decision could lead to backlash, while others insist that delay isn't an option if Vancouver wants to meet its climate obligations. It's a fine balance, and as one councilor put it, 'We’re threading a needle here, and the fabric is fraying fast.' Only time will tell how this balancing act plays out in practice.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What recent change in policy is the mayor of Vancouver considering?",
+        "options": [
+          "A. Gradual implementation of climate measures",
+          "B. A more aggressive climate policy approach",
+          "C. Complete withdrawal from climate commitments",
+          "D. A focus solely on economic interests"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How do environmental activists feel about the mayor's new stance?",
+        "options": [
+          "A. They are completely satisfied with the changes proposed.",
+          "B. They are hopeful but remain skeptical about real actions.",
+          "C. They have no opinion on the matter.",
+          "D. They believe the economic concerns should take precedence."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What caution did the Chamber of Commerce express regarding the new policies?",
+        "options": [
+          "A. They fully endorse aggressive climate measures.",
+          "B. They fear it may harm local businesses.",
+          "C. They support immediate action without concerns.",
+          "D. They want a total ban on emissions."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the purpose of the public consultations planned by the city council?",
+        "options": [
+          "A. To finalize a binding climate policy.",
+          "B. To gather diverse input from stakeholders.",
+          "C. To promote local businesses exclusively.",
+          "D. To delay action on climate change."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What metaphor does a council member use to describe the current climate policy situation?",
+        "options": [
+          "A. 'We are flying blind without a map.'",
+          "B. 'We’re threading a needle, and the fabric is fraying fast.'",
+          "C. 'The ship has sailed for climate boldness.'",
+          "D. 'We are climbing a mountain with no summit in sight.'"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Toronto's Urban Transit Plan Faces Unexpected Challenges",
+    "difficulty": "advanced",
+    "passage": "Good evening, this is Lisa Chen reporting live from Toronto. As the city gears up for the much-anticipated urban transit expansion, we've seen a flurry of unexpected hurdles. City planners had, not entirely optimistically, projected a smooth rollout for the new transit lines slated to ease congestion in some of the busiest neighborhoods. However, recent developments suggest that optimism might have been a tad misplaced. Recent community feedback has raised serious concerns regarding the environmental impact assessments, which, it turns out, were somewhat hastily approved. \n\nMoreover, it seems that not all stakeholders were adequately consulted. The mayor’s office has stated, rather diplomatically, that it will review the feedback, but many residents are questioning whether this is merely lip service. One local activist remarked, 'It's as if they were expecting us to just fall in line with their plans, without considering what we actually need.' \n\nDespite these setbacks, the project is still very much on the table. However, city officials are now considering a staggered timeline for the rollout, which could ultimately cause further delays. Interestingly, some council members believe that spreading the construction over a longer period could appease residents who are worried about noise and disruption. It’s a classic case of trying to find a balance between progress and public sentiment.\n\nIn summary, while there’s still a chance for this ambitious plan to move forward, city planners will need to navigate this bumpy road very carefully, perhaps engaging in more meaningful dialogues with community members. Back to you in the studio.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does the speaker imply about the original projections for the transit expansion?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How are city officials responding to community concerns?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What is suggested about the timing of the project’s rollout?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What underlying issue does the community activist’s comment highlight?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What does the speaker identify as a possible compromise in the planning process?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Controversial Green Energy Policy in Ontario",
+    "difficulty": "advanced",
+    "passage": "Good evening. This is your local news update. Today, we turn our attention to Ontario's controversial green energy policy, a topic that seems to have divided public opinion more sharply than ever. Now, Environment Minister Sarah Blake addressed the policy in a press conference earlier today, where she implied that the government is 'not entirely convinced' that their current approach to renewable energy is effective enough. While she touted impressive figures on emissions reduction—over thirty percent since 2015—she acknowledged that 'we're not out of the woods yet.' \n\nCritics, however, have called this downplaying 'disingenuous.' They argue that the government has failed to address rising energy costs for average Ontarians. When asked about these claims, Minister Blake hesitated, shrugging them off with a comment about the 'complexity of transitioning away from fossil fuels.' But, it seems there’s a notable shift in tone since the last budget announcement, where she confidently asserted that clean energy would lead to lower costs in the long run.\n\nInterestingly, we also heard from energy expert Dr. Liam Patel, who suggested that while the government’s heart is in the right place, their execution has been flawed. He described the current economic landscape as 'fragile', emphasizing that investments need to be strategic. It seems many stakeholders are beginning to wonder if the government is indeed moving too hastily without proper planning. \n\nIn conclusion, there appears to be a growing push for a more balanced dialogue on this topic, as many citizens grow weary of the indecision surrounding the policy. Expect further developments as public forums are scheduled for next month. Now, back to you, John.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What was Minister Blake's overall tone regarding the green energy policy during her press conference?",
+        "options": [
+          "A) Definite optimism about the success achieved",
+          "B) Uncertainty about the effectiveness of current strategies",
+          "C) Acknowledgment of full support from public stakeholders",
+          "D) Complete disregard for critics' opinions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "How did critics perceive Minister Blake's acknowledgment of rising energy costs?",
+        "options": [
+          "A) As a genuine concern reflecting public opinion",
+          "B) As a strategic move to pacify dissenting voices",
+          "C) As an honest assessment of the situation",
+          "D) As an attempt to mislead the public"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What aspect of the government's approach did Dr. Patel criticize?",
+        "options": [
+          "A) The high costs associated with the new energy policies",
+          "B) The hasty implementation without adequate planning",
+          "C) The complete reliance on fossil fuels",
+          "D) The overall transparency of the budget announcement"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the passage suggest about the public's reception of the government's green energy policy?",
+        "options": [
+          "A) The citizens are fully supportive and optimistic",
+          "B) There is growing disappointment and weariness due to indecision",
+          "C) Most people are apathetic and uninterested in the topic",
+          "D) They believe future forums will lead to an immediate resolution"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is implied about the future discussions surrounding Ontario's green energy policy?",
+        "options": [
+          "A) They will likely focus solely on environmental benefits",
+          "B) They will be contentious without any resolution",
+          "C) A more balanced dialogue seems necessary moving forward",
+          "D) Public forums will reinforce the government's existing strategies"
+        ],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "Toronto's Public Transit Revamp: A Controversial Debate",
+    "difficulty": "advanced",
+    "passage": "In an effort to address the growing transit issues, Toronto's city council is deliberating on a new transportation policy. While some members argue that the focus should be on expanding bus routes and improving accessibility, others believe investing in subway infrastructure is paramount.\n\nMan: \"I mean, we’ve been saying for ages that the bus routes are overcrowded, yet the subway system continues to get all the funding. It's getting a bit ridiculous, don’t you think?\"\n\nWoman: \"Not entirely convinced that’s the case. I think it’s more about long-term strategic planning. Expanding the subway could relieve pressure on the buses in the long run.\"\n\nMan: \"Sure, but what about the immediate needs? The buses are packed to the brim at peak hours! We can’t just ignore that while waiting for subway construction to wrap up, can we?\"\n\nWoman: \"I get your point, but consider the statistics—bus ridership is on the rise, yet the subway just seems to be the shiny new toy that everyone wants to play with. If we keep pushing funds into a system that can’t keep up with demand, we might be digging into our future rather than fixing today’s issues.\"\n\nTo complicate matters further, Mayor Johnson's stance is surprisingly noncommittal. In a recent press conference, he stated, \"We absolutely need to look at all angles, but at the same time, we can't just throw money around without a clear plan in place. That would be, well, irresponsible, wouldn’t it?\"\n\nThis has left several council members frustrated and questioning his leadership. Some residents, however, are cautiously optimistic, hoping that a balanced approach will finally address their concerns.\n\nAs discussions unfold, the implications of this policy decision could determine Toronto’s transit landscape for years to come, which leaves many wondering what the city actually needs—a quick fix or a long-term solution.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the city's discussion on transit policy?",
+        "options": [
+          "A. Expanding bus routes only",
+          "B. Investing solely in subway infrastructure",
+          "C. Balancing improvements between buses and subways",
+          "D. Eliminating public transit funding"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What does the woman suggest about the subway system?",
+        "options": [
+          "A. It is a temporary solution to the current transit issues.",
+          "B. It has been prioritized despite bus overcrowding.",
+          "C. It may eventually ease the burden on bus services.",
+          "D. It should receive no additional funding at all."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How does Mayor Johnson's announcement affect the council's discussions?",
+        "options": [
+          "A. It has unified the council in their approach.",
+          "B. It has created frustration among council members.",
+          "C. It has encouraged residents to rally for more funding.",
+          "D. It has clarified the city’s transit priorities."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What tone does the man’s comment about funding imply about his viewpoint?",
+        "options": [
+          "A. He believes it’s important to not rush decisions.",
+          "B. He feels funds are being misallocated.",
+          "C. He supports the mayor’s cautious approach.",
+          "D. He thinks the current bus routes are sufficient."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the implied consequence of the decision being made by the city council?",
+        "options": [
+          "A. Immediate relief for overcrowded bus routes.",
+          "B. Long-term planning that may overlook current needs.",
+          "C. An eventual decrease in overall transit ridership.",
+          "D. Increased funding for other unrelated projects."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Impacts of Urban Development on Community Health",
+    "difficulty": "advanced",
+    "passage": "Good afternoon, listeners. Today, we're diving into a rather contentious issue that has been swirling around urban development in Toronto. Local community leaders are not entirely convinced that the proposed changes will yield the intended benefits. New policies, designed ostensibly to revamp public health, are under increasing scrutiny. \n\nFor instance, a recent report from the City Planning Department indicates a potential rise in green spaces. However, critics argue that this initiative may lead to displacement of low-income families rather than improving health outcomes. One community leader stated, 'Sure, we want parks, but what’s the point if it comes at the expense of our homes?' \n\nMoreover, the impact on air quality hasn’t been adequately addressed. A local environmentalist was quoted saying, 'They’re talking about trees, but if there’s no strategy for reducing emissions, how will these trees help?' There’s a palpable sense of frustration among residents, many of whom feel that their voices are being overshadowed by developers eager to push their agendas. \n\nInterestingly, the city council is considering a public forum next month to gather feedback. While some see this as a positive step, others remain skeptical, suggesting that city authorities have already made up their minds long before any community input. An academic at the University of Toronto remarked, 'Public consultation is great, but it feels a bit like window dressing. The decisions seem preordained.' Indeed, as the clock ticks down to the city council meeting, many are left wondering whether their concerns will be heard or whether the development plans will roll out as scheduled, unimpeded. \n\nIn summary, the intersection of urban planning and community health is proving to be more complex than initially anticipated, raising questions that extend far beyond mere policy. We’ll keep you updated as this story unfolds.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What primary concern do community leaders have regarding the new urban development policies?",
+        "options": [
+          "A) They believe it will benefit all residents equally.",
+          "B) They fear it may displace low-income families.",
+          "C) They think it will improve air quality significantly.",
+          "D) They are confident the public forum will influence decisions."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What do critics feel is missing from the discussion on improving green spaces?",
+        "options": [
+          "A) A closer look at community input and feedback.",
+          "B) A plan for addressing emissions and air quality.",
+          "C) Sufficient resources for development projects.",
+          "D) Support from environmental activists."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How did the academic at the University of Toronto describe the public consultation process?",
+        "options": [
+          "A) As a vital tool for genuine community engagement.",
+          "B) As a mere formality masking predetermined decisions.",
+          "C) As an essential part of effective policy-making.",
+          "D) As something that should be conducted more frequently."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What sentiment is shared among residents regarding the city council's development plans?",
+        "options": [
+          "A) They are entirely optimistic about the outcome.",
+          "B) They feel reassured that their complaints will be addressed.",
+          "C) They sense that their voices are being ignored.",
+          "D) They believe the plans will enhance their quality of life."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Which phrase best summarizes the overall tone of the news item?",
+        "options": [
+          "A) Cautiously optimistic about future developments.",
+          "B) Frustrated and apprehensive about the decisions being made.",
+          "C) Focused solely on financial implications of urban policies.",
+          "D) Highlighting successes in community engagement."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Toronto's Transit Challenges: A Balancing Act",
+    "difficulty": "advanced",
+    "passage": "In today's news, we turn our attention to the ongoing challenges facing Toronto's transit system. With the recent implementation of the new fare structure, many commuters are, well, not entirely convinced that the changes are beneficial. Transit advocate, Caroline Reynolds, has pointed out, and I quote, 'While I appreciate the efforts to streamline operations, it seems that the increased costs are not being matched by improved service levels.' This sentiment resonates with a number of users who have reported longer wait times and overcrowded vehicles, despite the promise of enhanced frequency on popular routes.  \n\nMoreover, the city has announced plans for expanded bus routes under the new policy, but skeptics are raising eyebrows — it's hard to see how adding more stops will necessarily lead to quicker commutes. Former city planner, Marcus Chen, stated during the press conference, 'Expansion may be the goal, but without addressing the root issues of infrastructure decay, we're merely patching up a sinking ship.' He also hinted at a potential shift in priorities, suggesting that perhaps focusing more on maintenance rather than expansion might yield better long-term results, though he did concede the complexity of funding.  \n\nInterestingly, the new mayor has indicated that she is reconsidering her earlier stance on public-private partnerships to fund these initiatives, stating, 'I’m open to exploring all options, though I must admit, I'm a bit wary of the potential implications.' As discussions continue, it remains to be seen whether these changes will indeed translate into the promised improvements for Toronto's beleaguered transit users. Stay tuned for further updates on this evolving situation.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary concern expressed by Caroline Reynolds regarding Toronto's transit system?",
+        "options": [
+          "A) The increased costs with no corresponding service improvement.",
+          "B) The new fare structure will benefit everyone.",
+          "C) The expansion of the bus routes is well-received.",
+          "D) Wait times are decreasing with the new policies."
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What does Marcus Chen imply about the proposed expansion of bus routes?",
+        "options": [
+          "A) It might reduce commute times immediately.",
+          "B) It will successfully address infrastructure issues.",
+          "C) It may not be a practical solution to current problems.",
+          "D) It is a financially sound decision."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "How does the new mayor feel about public-private partnerships for funding?",
+        "options": [
+          "A) She has completely ruled them out as an option.",
+          "B) She is definitely opposed to them due to potential risks.",
+          "C) She is open to the idea but has some reservations.",
+          "D) She believes they are the only solution to improve transit."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "According to the news report, what sentiment do many commuters share?",
+        "options": [
+          "A) They fully support the changes being made.",
+          "B) They are enthusiastic about the expanded routes.",
+          "C) They are dissatisfied with longer wait times.",
+          "D) They believe the transit system is improving remarkably."
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is suggested as a possible shift in focus regarding transit improvements?",
+        "options": [
+          "A) More funding for new bus stops.",
+          "B) A greater emphasis on maintaining existing infrastructure.",
+          "C) Expanding the subway lines significantly.",
+          "D) Reducing the fares for all commuters."
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "New Developments in Urban Transportation Policy",
+    "difficulty": "advanced",
+    "passage": "This is Daniel Richards with your daily news update. In recent developments concerning urban transportation in Toronto, city officials have decided to reassess the controversial bike lane expansion plan. While the initial proposal promised to significantly reduce traffic congestion—something everyone is, well, not entirely convinced will actually happen—not all stakeholders are on board. For instance, local business owners have expressed concerns about the projected impact on their customer traffic, suggesting that the removal of parking spaces may, in fact, deter potential shoppers. In response, the city has scheduled a town hall meeting this Friday at City Hall, which aims to address these concerns directly. \n\nNow, it's important to note that, historically, the city has been quite slow to adapt to the evolving landscape of urban mobility. Some argue that officials are playing catch-up, while others think it’s merely a case of bureaucratic inertia. Plus, the proposed timeline for these developments keeps shifting, which raises questions about just how committed the city really is to innovative solutions. \n\nHowever, an intriguing perspective was shared by a spokesperson from Cycle Toronto who pointed out that cities like Montreal have successfully integrated bike lanes without crippling local businesses. The spokesperson stated, 'We need to look at this as an opportunity rather than a setback.' But with so many conflicting opinions—some labeling the plan as a step towards a greener future while others deem it a reckless gamble—it's still uncertain how the community will respond. As always, the debate continues, and we’ll keep you updated on any new findings and community responses following Friday's meeting. Until then, stay tuned for further updates.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main purpose of the town hall meeting scheduled for Friday?",
+        "options": [
+          "A. To finalize the bike lane expansion plan",
+          "B. To address community concerns about parking",
+          "C. To announce a new transportation policy",
+          "D. To promote local businesses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "According to the passage, what concerns do local business owners have regarding the bike lane plan?",
+        "options": [
+          "A. Increased traffic congestion in their areas",
+          "B. A potential decrease in customer visits",
+          "C. The lack of city support for their businesses",
+          "D. The historical success of bike lanes in other cities"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What does the speaker imply about the city's approach to urban mobility?",
+        "options": [
+          "A. It has been very responsive to changes.",
+          "B. It lacks a strong commitment to innovation.",
+          "C. It is primarily focused on business interests.",
+          "D. It has effectively integrated bike lanes in the past."
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "How does the spokesperson from Cycle Toronto perceive the bike lane expansion plan?",
+        "options": [
+          "A. As a necessary change despite its risks",
+          "B. As an opportunity that benefits everyone",
+          "C. As a misguided effort that should be reevaluated",
+          "D. As a decision driven by local businesses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What underlying theme can be inferred from the ongoing debate mentioned in the passage?",
+        "options": [
+          "A. The importance of prioritizing environmental sustainability",
+          "B. The tension between progress and tradition in urban planning",
+          "C. The need for regulatory frameworks to support businesses",
+          "D. The necessity for immediate action without public input"
+        ],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "Community Garden Initiative in Ottawa",
+    "context": "Listeners will hear about a new community garden initiative in Ottawa aimed at promoting local food production.",
+    "audioFile": "part4-61.mp3",
+    "duration": 120,
+    "passage": "In Ottawa, a new community garden initiative is being launched to encourage residents to grow their own food. The city has allocated space in various parks for this purpose. The initiative aims to promote sustainability and healthy eating among Ottawa residents. Local community centers will offer workshops on gardening techniques and the importance of local produce. Interested residents can register online to reserve a plot. This program is expected to not only improve access to fresh vegetables but also strengthen community bonds as people work together in the gardens.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main goal of the community garden initiative?",
+        "options": [
+          "To promote sustainability",
+          "To teach children about gardening",
+          "To host festivals",
+          "To beautify the city"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "Where will the community gardens be located?",
+        "options": [
+          "In backyards",
+          "In community centers",
+          "In parks",
+          "In schools"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What will community centers provide for participants?",
+        "options": [
+          "Free seeds",
+          "Garden tools",
+          "Workshops",
+          "Transportation"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How can residents participate in the initiative?",
+        "options": [
+          "By attending meetings",
+          "By registering online",
+          "By volunteering",
+          "By donating seeds"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What benefit does the initiative have besides providing food?",
+        "options": [
+          "Increased tourism",
+          "Stronger community ties",
+          "Reduced waste",
+          "Improved air quality"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-61"
+  },
+  {
+    "title": "New Art Exhibition in Toronto",
+    "context": "Listeners will learn about a new art exhibition opening in Toronto that features local artists.",
+    "audioFile": "part4-62.mp3",
+    "duration": 120,
+    "passage": "A new art exhibition featuring local Toronto artists is set to open next week at the downtown gallery. The exhibition, titled 'Emerging Voices,' aims to showcase the diverse talents within the community. Visitors can expect to see a variety of art forms, including paintings, sculptures, and interactive installations. The opening night will also feature live music and refreshments, allowing attendees to engage with the artists directly. This event seeks to promote local culture and support artists in building their careers.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the title of the exhibition?",
+        "options": [
+          "Local Art Showcase",
+          "Emerging Voices",
+          "Toronto Expressions",
+          "Voices of the City"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What types of art will be featured?",
+        "options": [
+          "Photography",
+          "Literature",
+          "Sculptures and paintings",
+          "Film"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What additional feature will be available at the opening night?",
+        "options": [
+          "A silent auction",
+          "Live music",
+          "Cooking demonstrations",
+          "Film screenings"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is one goal of this exhibition?",
+        "options": [
+          "Attract tourists",
+          "Promote local culture",
+          "Increase gallery profits",
+          "Fundraise for charities"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who is the exhibition primarily supporting?",
+        "options": [
+          "Visitors",
+          "Local businesses",
+          "Artists",
+          "The gallery"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-62"
+  },
+  {
+    "title": "Canada's New Recycling Program",
+    "context": "Listeners will hear about a new recycling program being implemented in Calgary.",
+    "audioFile": "part4-63.mp3",
+    "duration": 120,
+    "passage": "Calgary has introduced a new recycling program designed to reduce waste and encourage residents to recycle more. The program will feature new bins that make separating materials easier. Starting next month, residents will receive educational materials to help them understand what can and cannot be recycled. The city hopes to increase recycling rates by 30% over the next year. Local events will be hosted to promote the program and teach residents proper recycling techniques. This initiative is part of a broader effort to ensure a greener future for Calgary.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main aim of Calgary's new recycling program?",
+        "options": [
+          "To reduce waste",
+          "To increase landfill size",
+          "To sell recyclable materials",
+          "To charge for recycling services"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What new feature will be introduced in the recycling bins?",
+        "options": [
+          "They will be smaller",
+          "They will be color-coded",
+          "They will be automated",
+          "They will have wheels"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How much does the city hope to increase recycling rates by?",
+        "options": [
+          "10%",
+          "20%",
+          "30%",
+          "40%"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What resources will residents receive?",
+        "options": [
+          "Free bags",
+          "Educational materials",
+          "Discounted bins",
+          "Garbage collection schedules"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Why is this initiative important for Calgary?",
+        "options": [
+          "To attract more residents",
+          "To improve tourism",
+          "To ensure a greener future",
+          "To reduce taxes"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-63"
+  },
+  {
+    "title": "New Safety Regulations for Local Businesses",
+    "context": "Listeners will understand new safety regulations affecting local businesses in Winnipeg.",
+    "audioFile": "part4-64.mp3",
+    "duration": 120,
+    "passage": "In Winnipeg, new safety regulations are being introduced for local businesses, aimed at improving worker safety. The regulations require all businesses to conduct regular safety training sessions for employees. Additionally, businesses must now provide safety gear to their workers, such as gloves and helmets. The city council believes these measures will reduce workplace accidents significantly. The regulations will be enforced starting next month, and businesses found in violation may face fines. Local business associations are providing support to help owners adapt to these changes.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main focus of the new regulations?",
+        "options": [
+          "Worker safety",
+          "Increasing profits",
+          "Customer service",
+          "Environmental protection"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is one requirement for local businesses?",
+        "options": [
+          "To reduce prices",
+          "To offer more products",
+          "To conduct safety training",
+          "To hire more staff"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What kind of safety gear must businesses provide?",
+        "options": [
+          "Uniforms",
+          "Safety shoes",
+          "Gloves and helmets",
+          "First aid kits"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "When will the new regulations take effect?",
+        "options": [
+          "Next week",
+          "Next month",
+          "In six months",
+          "In a year"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What may happen to businesses that do not comply?",
+        "options": [
+          "They will get a warning",
+          "They will face fines",
+          "They will be closed",
+          "They will lose customers"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-64"
+  },
+  {
+    "title": "New Fitness Center Opens in Halifax",
+    "context": "Listeners will hear about a new fitness center opening in Halifax promoting health and wellness.",
+    "audioFile": "part4-65.mp3",
+    "duration": 120,
+    "passage": "A new fitness center has opened its doors in Halifax, offering a range of activities for residents. The center features a gym, swimming pool, and various classes including yoga and Zumba. The opening special includes free membership for the first month and discounted rates for families. The management hopes this facility will help improve the health and well-being of the community. Residents are encouraged to visit the center during the opening week to enjoy free trial classes and tours.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is offered at the new fitness center?",
+        "options": [
+          "Only gym equipment",
+          "Only swimming lessons",
+          "A variety of activities",
+          "Only yoga classes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What special offer is available for new members?",
+        "options": [
+          "Free membership for a year",
+          "Free membership for the first month",
+          "Discounted gym equipment",
+          "Free personal training sessions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What classes are available at the center?",
+        "options": [
+          "Art and music",
+          "Yoga and Zumba",
+          "Cooking classes",
+          "Language courses"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the management's goal for the fitness center?",
+        "options": [
+          "To increase membership",
+          "To provide jobs",
+          "To improve community health",
+          "To offer discounts"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What can residents do during the opening week?",
+        "options": [
+          "Sign long-term contracts",
+          "Enjoy trial classes and tours",
+          "Attend a fundraising event",
+          "Participate in competitions"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-65"
+  },
+  {
+    "title": "Wildlife Conservation Efforts in Quebec",
+    "context": "Listeners will learn about a new wildlife conservation project in Quebec.",
+    "audioFile": "part4-66.mp3",
+    "duration": 120,
+    "passage": "Quebec is launching a significant wildlife conservation project aimed at protecting endangered species in the region. The initiative will involve habitat restoration and breeding programs for species at risk, such as the eastern wolf and various bird species. Community engagement will play a vital role in the project, with local residents being encouraged to participate in monitoring wildlife and reporting sightings. The government hopes that through these efforts, the population of endangered species will increase, promoting biodiversity in Quebec.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main aim of the wildlife conservation project?",
+        "options": [
+          "To increase tourism",
+          "To protect endangered species",
+          "To promote hunting",
+          "To develop urban areas"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which animals are specifically mentioned as being protected?",
+        "options": [
+          "Grizzly bears",
+          "Eastern wolves",
+          "Deer",
+          "Squirrels"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What will community members be encouraged to do?",
+        "options": [
+          "Build new habitats",
+          "Monitor wildlife and report sightings",
+          "Plant trees",
+          "Organize festivals"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the government hope to achieve through this project?",
+        "options": [
+          "Increase real estate value",
+          "Improve public transportation",
+          "Promote biodiversity",
+          "Expand urban areas"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "Which aspect will be crucial for the project's success?",
+        "options": [
+          "Community engagement",
+          "Government funding",
+          "Technology",
+          "Media coverage"
+        ],
+        "correct": 0
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-66"
+  },
+  {
+    "title": "New Sports Complex in Victoria",
+    "context": "Listeners will discover details about a new sports complex opening in Victoria, BC.",
+    "audioFile": "part4-67.mp3",
+    "duration": 120,
+    "passage": "Victoria is excited to announce the opening of a new sports complex that will cater to various sports enthusiasts. The facility will include indoor and outdoor fields for soccer, a swimming pool, and gym facilities. There will also be rooms for fitness classes and events. The opening ceremony will feature demonstrations by local teams and athletes. The city hopes this complex will encourage a culture of health and fitness in the community. Residents are invited to attend the opening day to participate in activities and explore the complex.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What kind of facility is opening in Victoria?",
+        "options": [
+          "A shopping mall",
+          "A museum",
+          "A sports complex",
+          "An art gallery"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 2,
+        "question": "What sports facilities will be included?",
+        "options": [
+          "Only swimming pools",
+          "Only soccer fields",
+          "Indoor and outdoor fields and a pool",
+          "Only gym facilities"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What will happen at the opening ceremony?",
+        "options": [
+          "Art exhibits",
+          "Local team demonstrations",
+          "Food fairs",
+          "Concerts"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What does the city hope to promote through the new complex?",
+        "options": [
+          "Tourism",
+          "Health and fitness",
+          "Shopping",
+          "Culture"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "Who is invited to the opening day?",
+        "options": [
+          "Only VIPs",
+          "Residents and visitors",
+          "Only athletes",
+          "Local businesses"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-67"
+  },
+  {
+    "title": "New Study on Mental Health in Youth",
+    "context": "Listeners will hear about a new study focusing on youth mental health in Canada.",
+    "audioFile": "part4-68.mp3",
+    "duration": 120,
+    "passage": "A new study has been released focusing on mental health issues among youth in Canada. Research indicates that many young people are experiencing anxiety and depression, with rates rising in recent years. The study highlights the importance of providing support in schools and communities to address these issues. Experts recommend increased training for teachers and parents to recognize symptoms and provide assistance. The findings aim to raise awareness and prompt discussions around mental health among youth, helping to create a more supportive environment.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the subject of the new study?",
+        "options": [
+          "Youth sports",
+          "Mental health among youth",
+          "School performance",
+          "Social media usage"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "Which mental health issues are mentioned?",
+        "options": [
+          "Bipolar disorder",
+          "Anxiety and depression",
+          "Eating disorders",
+          "Substance abuse"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What do experts recommend for teachers and parents?",
+        "options": [
+          "More field trips",
+          "Increased training",
+          "More testing",
+          "Less homework"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What do the findings aim to do?",
+        "options": [
+          "Provide therapy",
+          "Create a supportive environment",
+          "Reduce school hours",
+          "Increase funding for schools"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What has been happening to rates of anxiety and depression among youth?",
+        "options": [
+          "They are decreasing",
+          "They are stable",
+          "They are rising",
+          "They are only seen in urban areas"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "beginner",
+    "id": "part4-68"
+  },
+  {
+    "title": "Innovative Technology in Agriculture",
+    "context": "Listeners will learn about new technology being used in agriculture in Saskatchewan.",
+    "audioFile": "part4-69.mp3",
+    "duration": 120,
+    "passage": "In Saskatchewan, farmers are adopting innovative technology to improve crop yields and efficiency. This includes the use of drones for monitoring fields, automated irrigation systems, and soil sensors. These advancements allow farmers to gather data on crop health and soil conditions in real time. Experts believe that using technology in agriculture will not only enhance productivity but also promote sustainable practices. Workshops are being held to educate local farmers on how to implement these technologies effectively.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What innovative technology is being used in Saskatchewan agriculture?",
+        "options": [
+          "Drones and sensors",
+          "Tractors only",
+          "Manual labor",
+          "Traditional farming techniques"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What is one benefit of using this technology?",
+        "options": [
+          "Increased labor costs",
+          "Reduced crop yields",
+          "Improved productivity",
+          "More paperwork"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What type of workshops are being offered?",
+        "options": [
+          "Cooking classes",
+          "Craft workshops",
+          "Technology implementation workshops",
+          "Art classes"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "How does technology help farmers?",
+        "options": [
+          "By replacing them",
+          "By providing data on crops",
+          "By increasing weed growth",
+          "By harming the environment"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 5,
+        "question": "What do experts think about these advancements?",
+        "options": [
+          "They are unnecessary",
+          "They will promote sustainable practices",
+          "They will reduce crop diversity",
+          "They will take too long to implement"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-69"
+  },
+  {
+    "title": "New Public Health Campaign in Toronto",
+    "context": "Listeners will hear about a public health campaign addressing healthy eating in Toronto.",
+    "audioFile": "part4-70.mp3",
+    "duration": 120,
+    "passage": "Toronto is launching a new public health campaign to encourage healthy eating among its residents. The campaign will focus on the benefits of incorporating more fruits and vegetables into meals and reducing processed foods. Workshops will be held in community centers to teach residents how to prepare healthy meals on a budget. Local partnerships with grocery stores will also provide discounts on fresh produce for campaign participants. The goal is to improve overall health in the community and reduce diet-related illnesses.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the focus of the public health campaign?",
+        "options": [
+          "Healthy eating",
+          "Mental health support",
+          "Physical fitness",
+          "Community safety"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What benefits will the campaign highlight?",
+        "options": [
+          "More outdoor activities",
+          "Eating fast food",
+          "Increasing processed foods",
+          "More fruits and vegetables"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "Where will workshops be held?",
+        "options": [
+          "In schools",
+          "In community centers",
+          "In grocery stores",
+          "Online"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What discount will be available for participants?",
+        "options": [
+          "On gym memberships",
+          "On junk food",
+          "On fresh produce",
+          "On dining out"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is the campaign aiming to reduce in the community?",
+        "options": [
+          "Diet-related illnesses",
+          "Outdoor recreational activities",
+          "Community events",
+          "School lunches"
+        ],
+        "correct": 0
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-70"
+  },
+  {
+    "title": "Rise of Electric Vehicles in Canada",
+    "context": "Listeners will learn about the increasing popularity of electric vehicles in Canada.",
+    "audioFile": "part4-71.mp3",
+    "duration": 120,
+    "passage": "Electric vehicles are becoming increasingly popular across Canada, with sales rising sharply in the last few years. Factors contributing to this trend include government incentives and a growing awareness of environmental issues. Many Canadian cities are investing in charging infrastructure to support this shift. Automakers are responding by increasing their electric vehicle offerings, hoping to meet consumer demand. Experts predict that by 2030, electric vehicles could make up a significant portion of all vehicles on the road, helping to reduce greenhouse gas emissions and combat climate change.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is happening to electric vehicle sales in Canada?",
+        "options": [
+          "They are decreasing",
+          "They are increasing",
+          "They are staying the same",
+          "They are only high in small cities"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What factor is helping this trend?",
+        "options": [
+          "Limited availability",
+          "Government incentives",
+          "Increased fuel prices",
+          "Higher taxes on vehicles"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What are Canadian cities investing in?",
+        "options": [
+          "Gas stations",
+          "More roads",
+          "Charging infrastructure",
+          "Electric buses"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What do experts predict for electric vehicles by 2030?",
+        "options": [
+          "They will be banned",
+          "They will be very rare",
+          "They will significantly reduce emissions",
+          "They will make up a large portion of vehicles on the road"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 5,
+        "question": "What is one major benefit of electric vehicles mentioned?",
+        "options": [
+          "They are more expensive",
+          "They are faster",
+          "They reduce greenhouse gas emissions",
+          "They require special licensing"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-71"
+  },
+  {
+    "title": "Impact of Remote Work on Local Economy",
+    "context": "Listeners will hear about the effects of remote work on the economy in Vancouver.",
+    "audioFile": "part4-72.mp3",
+    "duration": 120,
+    "passage": "The rise of remote work has significantly impacted the local economy in Vancouver. With more companies allowing employees to work from home, many local businesses, such as coffee shops and restaurants, have seen a decline in foot traffic. However, this trend has led to an increase in online shopping and home delivery services. Experts suggest that businesses need to adapt their strategies to cater to remote workers. This might involve creating work-friendly spaces or enhancing delivery options. The shift in work culture may also influence housing demands and urban development in Vancouver.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What has remote work affected in Vancouver?",
+        "options": [
+          "Local economy",
+          "Tourism only",
+          "Education system",
+          "Public transportation"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What type of businesses have seen a decline in foot traffic?",
+        "options": [
+          "Online retailers",
+          "Coffee shops and restaurants",
+          "Grocery stores",
+          "Construction companies"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What has increased due to remote work?",
+        "options": [
+          "Foot traffic",
+          "Transportation options",
+          "Online shopping and delivery services",
+          "Tourist visits"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "What do experts suggest businesses should do?",
+        "options": [
+          "Close their shops",
+          "Increase prices",
+          "Adopt new strategies",
+          "Limit online services"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What may change in Vancouver due to remote work?",
+        "options": [
+          "Business hours",
+          "Housing demands and urban development",
+          "Transportation fees",
+          "Types of jobs available"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-72"
+  },
+  {
+    "title": "Local Cultural Festival in Ottawa",
+    "context": "Listeners will learn about an upcoming cultural festival in Ottawa celebrating local traditions.",
+    "audioFile": "part4-73.mp3",
+    "duration": 120,
+    "passage": "Ottawa is preparing for its annual cultural festival, which celebrates the diverse traditions of its residents. The event will feature performances from local artists, traditional food stalls, and various workshops for attendees to learn more about different cultures. This year's festival aims to highlight the importance of community and inclusivity. Organizers are expecting a large turnout, and there will be activities for all ages. The festival provides an excellent opportunity for residents to connect with each other and appreciate the rich cultural fabric of Ottawa.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the purpose of the cultural festival?",
+        "options": [
+          "To promote tourism",
+          "To celebrate local traditions",
+          "To fundraise for charities",
+          "To sell crafts"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What can attendees expect to see at the festival?",
+        "options": [
+          "Only music performances",
+          "Food stalls and workshops",
+          "Art exhibits",
+          "Sporting events"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What theme is this year's festival focusing on?",
+        "options": [
+          "Community and inclusivity",
+          "Environmental sustainability",
+          "Historical traditions",
+          "Local businesses"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 4,
+        "question": "Who is expected to attend the festival?",
+        "options": [
+          "Only adults",
+          "Local businesses",
+          "A large turnout of residents",
+          "Government officials"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What does the festival allow residents to do?",
+        "options": [
+          "Sing competitions",
+          "Connect with each other",
+          "Shop for crafts",
+          "Learn new languages"
+        ],
+        "correct": 1
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-73"
+  },
+  {
+    "title": "New Infrastructure Projects Announced",
+    "context": "Listeners will learn about various infrastructure projects set to begin in Vancouver.",
+    "audioFile": "part4-74.mp3",
+    "duration": 120,
+    "passage": "The city of Vancouver has recently announced several major infrastructure projects aimed at improving urban living. These projects include the construction of new bike lanes, the renovation of public parks, and upgrades to public transportation systems. City officials believe that these initiatives will enhance residents' quality of life and promote sustainable methods of transportation. The projects are set to begin next month and are expected to be completed within two years. Public consultations were held to gather resident feedback on these changes.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What type of projects are being announced in Vancouver?",
+        "options": [
+          "Entertainment projects",
+          "Infrastructure projects",
+          "Tourism projects",
+          "Technology projects"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What are some of the projects mentioned?",
+        "options": [
+          "New shopping centers",
+          "Renovation of public parks and new bike lanes",
+          "Housing developments",
+          "Educational institutions"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "What do city officials hope to enhance through these projects?",
+        "options": [
+          "Public safety",
+          "Traffic congestion",
+          "Residents' quality of life",
+          "Economic growth"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 4,
+        "question": "When are the projects set to begin?",
+        "options": [
+          "Next month",
+          "Next week",
+          "In a year",
+          "In six months"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What was done to involve residents in the projects?",
+        "options": [
+          "Public consultations were held",
+          "Surveys were sent",
+          "Meetings were held with businesses",
+          "No involvement"
+        ],
+        "correct": 0
+      }
+    ],
+    "difficulty": "intermediate",
+    "id": "part4-74"
+  },
+  {
+    "title": "Advances in Canadian Healthcare Technology",
+    "context": "Listeners will learn about recent advancements in healthcare technology in Canada and their implications.",
+    "audioFile": "part4-75.mp3",
+    "duration": 120,
+    "passage": "Innovations in healthcare technology are transforming how services are delivered in Canada. Telemedicine, wearable health devices, and electronic health records are at the forefront of this transformation. These advancements offer increased access to healthcare, especially in remote areas, and improve the efficiency of patient care. However, experts caution that with these technologies come concerns regarding patient privacy and data security. Policymakers are urged to develop regulations to safeguard sensitive information while maximizing the benefits of new technologies in the healthcare sector.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is one major innovation mentioned in healthcare technology?",
+        "options": [
+          "Telemedicine",
+          "Traditional clinics",
+          "Paper health records",
+          "Home remedies"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "question": "What benefit do these advancements provide?",
+        "options": [
+          "Increased wait times",
+          "Limited access to healthcare",
+          "Improved efficiency in patient care",
+          "More physical appointments"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 3,
+        "question": "What concern is raised regarding new technologies?",
+        "options": [
+          "Cost of healthcare",
+          "Patient privacy and data security",
+          "Accessibility of services",
+          "Insurance coverage"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is urged of policymakers?",
+        "options": [
+          "To reduce regulations",
+          "To ignore technology",
+          "To develop regulations for data security",
+          "To ban new technologies"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is a potential drawback of advancements in healthcare technology?",
+        "options": [
+          "Increased patient comfort",
+          "More healthcare options",
+          "Concerns over data privacy",
+          "Lower healthcare costs"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "advanced",
+    "id": "part4-75"
+  },
+  {
+    "title": "Climate Change Strategies in Canada",
+    "context": "Listeners will hear about various climate change strategies being implemented across Canada.",
+    "audioFile": "part4-76.mp3",
+    "duration": 120,
+    "passage": "Canada is actively engaged in developing innovative strategies to combat climate change. These strategies include reducing greenhouse gas emissions through improved energy efficiency, investing in renewable energy sources, and preserving natural habitats. The government has pledged to achieve net-zero emissions by 2050, which requires cooperation from all sectors, including industry, transport, and agriculture. Experts warn that significant challenges lie ahead, such as balancing economic growth with environmental responsibility. The success of these strategies relies on collaboration among government agencies, businesses, and citizens.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is one goal of Canada's climate change strategies?",
+        "options": [
+          "Increase greenhouse gas emissions",
+          "Achieve net-zero emissions by 2050",
+          "Reduce renewable energy investment",
+          "Ignore environmental impact"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What sector is NOT mentioned as necessary for cooperation?",
+        "options": [
+          "Industry",
+          "Transport",
+          "Agriculture",
+          "Education"
+        ],
+        "correct": 3
+      },
+      {
+        "id": 3,
+        "question": "What is a significant challenge mentioned?",
+        "options": [
+          "Weather changes",
+          "Balancing economic growth with environmental responsibility",
+          "Lack of interest from citizens",
+          "Decreasing temperatures"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What aspect is crucial for the success of these strategies?",
+        "options": [
+          "Individual efforts only",
+          "Government funding only",
+          "Collaboration among all parties",
+          "Ignoring the problem"
+        ],
+        "correct": 2
+      },
+      {
+        "id": 5,
+        "question": "What is necessary to improve energy efficiency?",
+        "options": [
+          "Diminishing regulations",
+          "Increased energy consumption",
+          "Innovative technology",
+          "Less reliance on renewable energy"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "advanced",
+    "id": "part4-76"
+  },
+  {
+    "title": "Urban Development and Its Challenges",
+    "context": "Listeners will learn about the challenges posed by urban development in Toronto.",
+    "audioFile": "part4-77.mp3",
+    "duration": 120,
+    "passage": "Toronto is facing significant challenges regarding urban development as the city continues to grow. Issues such as affordable housing, infrastructure demands, and environmental impacts are at the forefront of discussions among city planners. The increasing population exerts pressure on existing services and creates a need for sustainable solutions. City leaders are exploring innovative development strategies that balance growth with the preservation of green spaces. Community engagement is crucial to ensure that the needs and concerns of residents are addressed during the planning process.",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What are the main challenges of urban development in Toronto?",
+        "options": [
+          "High taxes",
+          "Affordable housing and infrastructure demands",
+          "Lack of public services",
+          "Too many parks"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 2,
+        "question": "What is a need created by the increasing population?",
+        "options": [
+          "More parking lots",
+          "Sustainable solutions",
+          "More urban sprawl",
+          "More entertainment options"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 3,
+        "question": "How are city leaders addressing development challenges?",
+        "options": [
+          "By ignoring public feedback",
+          "By exploring innovative strategies",
+          "By reducing infrastructure spending",
+          "By limiting population growth"
+        ],
+        "correct": 1
+      },
+      {
+        "id": 4,
+        "question": "What is important for successful urban development?",
+        "options": [
+          "Community engagement",
+          "More taxes",
+          "Less green space",
+          "Ignoring residents' needs"
+        ],
+        "correct": 0
+      },
+      {
+        "id": 5,
+        "question": "What does urban development pressure affect?",
+        "options": [
+          "Only housing",
+          "Only transportation",
+          "Community services",
+          "Less construction"
+        ],
+        "correct": 2
+      }
+    ],
+    "difficulty": "advanced",
+    "id": "part4-77"
+  },
+  {
+    "title": "New Park Opening",
+    "difficulty": "beginner",
+    "passage": "Host: Welcome to the news report. Today we have exciting news! Man: That's right! A new park is opening downtown this Saturday. Woman: It will feature walking trails, playgrounds, and a pond. Man: The mayor will be at the opening ceremony. Woman: Yes, she will give a speech at 10 AM. Man: Families are welcome to join. Woman: There will also be free refreshments for everyone!",
+    "questions": [
+      {
+        "question": "What is opening this Saturday?",
+        "options": [
+          "A new school",
+          "A new park",
+          "A new store",
+          "A new library"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be featured in the park?",
+        "options": [
+          "Swimming pool",
+          "Walking trails",
+          "Movie theater",
+          "Shopping mall"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Where will the opening ceremony take place?",
+        "options": [
+          "At the school",
+          "At the park",
+          "At the city hall",
+          "At the library"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who will speak at the ceremony?",
+        "options": [
+          "The governor",
+          "The mayor",
+          "A teacher",
+          "A city worker"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is offered at the park opening?",
+        "options": [
+          "Tickets",
+          "Free refreshments",
+          "Prizes",
+          "Donations"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-078"
+  },
+  {
+    "title": "Local Farmers' Market",
+    "difficulty": "beginner",
+    "passage": "Host: Good evening! Today we report on the local farmers' market. Woman: Yes, it opens every Saturday morning. Man: You can find fresh fruits and vegetables there. Woman: Local artisans also sell handmade goods. Man: It's a great place to support local farmers. Woman: And you can meet your neighbors too!",
+    "questions": [
+      {
+        "question": "When does the farmers' market open?",
+        "options": [
+          "Every Sunday",
+          "Every Thursday",
+          "Every Saturday",
+          "Every Monday"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What can you buy at the market?",
+        "options": [
+          "Used clothes",
+          "Fast food",
+          "Fresh fruits and vegetables",
+          "Electronic devices"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who sells goods at the market?",
+        "options": [
+          "Local farmers and artisans",
+          "Only local chefs",
+          "Only city workers",
+          "Only students"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What is one benefit of going to the market?",
+        "options": [
+          "It's far from home",
+          "You can chat with neighbors",
+          "You get free gifts",
+          "You can use credit cards"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What type of goods do artisans sell?",
+        "options": [
+          "Automobiles",
+          "Handmade goods",
+          "Electronics",
+          "Fast food"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-079"
+  },
+  {
+    "title": "Winter Safety Tips",
+    "difficulty": "beginner",
+    "passage": "Host: Hello everyone! Winter is here, and we have safety tips. Woman: Yes, it is important to stay safe in the snow. Man: First, wear warm clothes and boots. Woman: Second, be careful when driving on icy roads. Man: Always clear snow off your car before driving!",
+    "questions": [
+      {
+        "question": "What season is it?",
+        "options": [
+          "Summer",
+          "Fall",
+          "Winter",
+          "Spring"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What should you wear for safety?",
+        "options": [
+          "Light clothes",
+          "Warm clothes",
+          "Swimwear",
+          "Business suits"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should you be careful of when driving?",
+        "options": [
+          "Wet roads",
+          "Icy roads",
+          "Hilly roads",
+          "Desert roads"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What should you clear off your car?",
+        "options": [
+          "Dust",
+          "Leaves",
+          "Snow",
+          "Rain"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Why is it important to stay safe?",
+        "options": [
+          "To have fun",
+          "To avoid accidents",
+          "To get food",
+          "To go shopping"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-080"
+  },
+  {
+    "title": "Community Clean-Up Day",
+    "difficulty": "beginner",
+    "passage": "Host: Welcome back! There will be a community clean-up day next weekend. Man: Yes, everyone is invited to help clean the parks. Woman: Tools will be provided, but you can bring your own! Man: It's a great way to meet people and help the environment. Woman: There will be snacks and drinks for volunteers!",
+    "questions": [
+      {
+        "question": "What is happening next weekend?",
+        "options": [
+          "A music festival",
+          "A community clean-up day",
+          "A sports event",
+          "A holiday celebration"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be cleaned?",
+        "options": [
+          "The beach",
+          "The schools",
+          "The parks",
+          "The houses"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is provided for cleaning?",
+        "options": [
+          "Tools",
+          "Food",
+          "Books",
+          "Toys"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What do volunteers receive?",
+        "options": [
+          "Money",
+          "Snacks and drinks",
+          "Certificates",
+          "Clothing"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Why is this event good?",
+        "options": [
+          "It helps the environment",
+          "It costs money",
+          "It is boring",
+          "It is far away"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-081"
+  },
+  {
+    "title": "School Renovation",
+    "difficulty": "beginner",
+    "passage": "Host: Let's talk about school news! Woman: Yes, the local school will begin renovations next month. Man: They will update the classrooms and library. Woman: The work will last for two months. Man: Parents can attend a meeting about the renovations on Wednesday. Woman: It is important to share ideas!",
+    "questions": [
+      {
+        "question": "What will the local school start?",
+        "options": [
+          "New classes",
+          "Renovations",
+          "Sport events",
+          "Field trips"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When will renovations begin?",
+        "options": [
+          "Next week",
+          "Next month",
+          "Next year",
+          "This week"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be updated?",
+        "options": [
+          "The playground",
+          "The classrooms and library",
+          "The cafeteria",
+          "The gym"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How long will the work last?",
+        "options": [
+          "One week",
+          "Two months",
+          "Three weeks",
+          "One month"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When can parents attend a meeting?",
+        "options": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 4,
+    "id": "part4-082"
+  },
+  {
+    "title": "New Library Opening",
+    "difficulty": "beginner",
+    "passage": "Host: Exciting news! There will be a new library opening downtown. Man: Yes, it opens on Saturday at 1 PM. Woman: There will be story time for children, and everyone is welcome. Man: Books will be available for loan. Woman: This library will also have free internet access!",
+    "questions": [
+      {
+        "question": "What is opening downtown?",
+        "options": [
+          "A new grocery store",
+          "A new library",
+          "A new school",
+          "A new park"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When does the library open?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What special event is for children?",
+        "options": [
+          "Cooking class",
+          "Story time",
+          "Music concert",
+          "Art class"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Will there be books available?",
+        "options": [
+          "No, only magazines",
+          "Yes, for loan",
+          "Yes, for buying",
+          "No, only DVDs"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will the library offer?",
+        "options": [
+          "Free internet access",
+          "Hot meals",
+          "Clothing",
+          "Toys"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-083"
+  },
+  {
+    "title": "Canadian Winter Sports",
+    "difficulty": "intermediate",
+    "passage": "Host: Welcome to today's news report. With the winter season in full swing, Canada is gearing up for various winter sports events. Woman: Yes, the country is known for its passion for sports like hockey, skiing, and snowboarding. Man: This year, we have a record number of participants in the national championships. Woman: It's great to see young athletes getting involved. Man: Absolutely! The government has also announced more funding for sports facilities across the country. Woman: This will help in promoting winter sports even further. Host: Now, let's take a look at some of the upcoming events.",
+    "questions": [
+      {
+        "question": "What season is Canada currently experiencing?",
+        "options": [
+          "Spring",
+          "Summer",
+          "Autumn",
+          "Winter"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "Which sport is NOT mentioned in the report?",
+        "options": [
+          "Hockey",
+          "Skiing",
+          "Basketball",
+          "Snowboarding"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What has increased this year in national championships?",
+        "options": [
+          "Viewership",
+          "Funding",
+          "Participants",
+          "Events"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is being promoted with the new funding?",
+        "options": [
+          "Winter fashion",
+          "Sports facilities",
+          "Travel packages",
+          "Food festivals"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is the main speaker in the report?",
+        "options": [
+          "Host",
+          "Woman",
+          "Man",
+          "Woman 2"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-084"
+  },
+  {
+    "title": "Toronto's New Transit Line",
+    "difficulty": "intermediate",
+    "passage": "Man: Good evening, everyone. Today, we're discussing the new transit line set to open in Toronto next month. Woman: That's right! This line will connect several major neighborhoods and is expected to reduce traffic congestion. Man: Figures show that daily commutes will be shortened by up to 20 minutes for many residents. Woman: Additionally, the city is planning to introduce more eco-friendly vehicles for this route. Man: This is part of Toronto's initiative to become a greener city. Woman: The launch will also include free rides for the first two weeks.",
+    "questions": [
+      {
+        "question": "What is the main topic of the news report?",
+        "options": [
+          "New park openings",
+          "Transit line opening",
+          "Traffic regulations",
+          "Population growth"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How much time will the new transit line save daily commuters?",
+        "options": [
+          "5 minutes",
+          "10 minutes",
+          "20 minutes",
+          "30 minutes"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is one feature of the new transit line?",
+        "options": [
+          "Underground parking",
+          "Eco-friendly vehicles",
+          "More ticket counters",
+          "Longer routes"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "How long will free rides be available?",
+        "options": [
+          "One week",
+          "Two weeks",
+          "One month",
+          "Three months"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is the first speaker in the report?",
+        "options": [
+          "Man",
+          "Woman",
+          "Host",
+          "Narrator"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-085"
+  },
+  {
+    "title": "Vancouver's Housing Market",
+    "difficulty": "intermediate",
+    "passage": "Woman: Welcome to our local news segment. Today, we're focusing on Vancouver's housing market. Man: Prices have soared over the past year, making it difficult for many to find affordable housing. Woman: Yes, and there's been a significant increase in foreign investment in the area. Man: This has raised concerns among local residents regarding affordability. Woman: The government is proposing new regulations to help manage the market. Man: The aim is to ensure that housing remains accessible for Vancouver citizens.",
+    "questions": [
+      {
+        "question": "What is the primary concern in Vancouver's housing market?",
+        "options": [
+          "Natural disasters",
+          "Affordability",
+          "Traffic",
+          "Public transport"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What has increased in Vancouver's housing market?",
+        "options": [
+          "Local investments",
+          "Foreign investments",
+          "Rental prices",
+          "Home sizes"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is the government planning to implement?",
+        "options": [
+          "New construction projects",
+          "More parking spaces",
+          "Regulations",
+          "Public transportation options"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Whose concerns are being highlighted in the report?",
+        "options": [
+          "Real estate agents",
+          "Foreign investors",
+          "Local residents",
+          "Tourists"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "Who is the second speaker in the segment?",
+        "options": [
+          "Woman",
+          "Man",
+          "Host",
+          "Narrator"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-086"
+  },
+  {
+    "title": "Calgary's New Environmental Initiative",
+    "difficulty": "intermediate",
+    "passage": "Host: In today's news, Calgary is launching a new environmental initiative. Woman: The city aims to reduce carbon emissions by 30% over the next decade. Man: This plan includes measures such as increasing green spaces and promoting public transport. Woman: Local businesses will also play a key role in this initiative. Man: Yes, they are encouraged to adopt sustainable practices. Woman: The city is hosting workshops to help businesses transition to greener methods.",
+    "questions": [
+      {
+        "question": "What is Calgary's environmental goal?",
+        "options": [
+          "Reduce carbon emissions",
+          "Increase tourism",
+          "Build more highways",
+          "Expand public transport"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "By how much does Calgary aim to reduce emissions?",
+        "options": [
+          "10%",
+          "20%",
+          "30%",
+          "40%"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What will the city increase to help achieve its goal?",
+        "options": [
+          "Green spaces",
+          "Employment opportunities",
+          "Sports facilities",
+          "Housing units"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What is one way local businesses can contribute?",
+        "options": [
+          "Offering discounts",
+          "Adopting sustainable practices",
+          "Employing more staff",
+          "Hosting events"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is the main speaker in this news item?",
+        "options": [
+          "Host",
+          "Woman",
+          "Man",
+          "Woman 2"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-087"
+  },
+  {
+    "title": "Ottawa's Cultural Festival",
+    "difficulty": "intermediate",
+    "passage": "Woman: Welcome to the news segment about Ottawa's upcoming cultural festival. Man: The festival will feature international artists from various backgrounds. Woman: People can experience music, dance, and cuisine from around the globe. Man: This year, the festival expects record attendance. Woman: Yes, and there will be free workshops for attendees to engage in. Man: The festival begins on the 15th of next month and runs for three days. Woman: Don't miss this opportunity to celebrate diversity!",
+    "questions": [
+      {
+        "question": "What is the topic of the news report?",
+        "options": [
+          "Cultural festival",
+          "Sporting events",
+          "Art exhibitions",
+          "Food fairs"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What types of performances will be featured?",
+        "options": [
+          "Only music",
+          "Music and dance",
+          "Dance and theater",
+          "Only theater"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is expected at this year's festival?",
+        "options": [
+          "Record attendance",
+          "Less participation",
+          "Fewer activities",
+          "Higher ticket prices"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "When will the festival take place?",
+        "options": [
+          "First week of next month",
+          "15th of next month",
+          "End of this month",
+          "Next year"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Who is the second speaker in this segment?",
+        "options": [
+          "Man",
+          "Woman",
+          "Host",
+          "Narrator"
+        ],
+        "correct": 0
+      }
+    ],
+    "part": 4,
+    "id": "part4-088"
+  },
+  {
+    "title": "New Law on Recycling in Quebec",
+    "difficulty": "intermediate",
+    "passage": "Man 2: Today’s report highlights a new law concerning recycling in Quebec. Woman 2: Yes, the government is making it mandatory for all residents to sort their waste correctly. Man 2: This new regulation aims to increase recycling rates across the province. Woman 2: It will also help reduce landfill waste significantly. Man 2: The law takes effect next month, and there will be penalties for non-compliance. Woman 2: The province is also launching an educational campaign to inform residents about the new rules.",
+    "questions": [
+      {
+        "question": "What is the main focus of the news report?",
+        "options": [
+          "New law on recycling",
+          "Waste management techniques",
+          "Community cleanup events",
+          "Environmental awareness"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What is mandatory under the new law?",
+        "options": [
+          "Sorting waste",
+          "Composting food scraps",
+          "Using reusable bags",
+          "Paying a fee"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What will the law help to decrease?",
+        "options": [
+          "Air pollution",
+          "Water usage",
+          "Landfill waste",
+          "Energy consumption"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is being launched alongside the new law?",
+        "options": [
+          "A recycling center",
+          "An educational campaign",
+          "A penalty system",
+          "A waste collection service"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When does the new law take effect?",
+        "options": [
+          "Next week",
+          "Next month",
+          "Next year",
+          "This month"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-089"
+  },
+  {
+    "title": "Toronto's Food Security Program",
+    "difficulty": "intermediate",
+    "passage": "Host: In today's segment, we will be discussing Toronto's new food security program. Woman: This program aims to reduce hunger among low-income families. Man: It will provide access to nutritious food and support local farmers. Woman: There are also plans to create community gardens across the city. Man: This initiative has received positive feedback from the residents. Woman: Yes, it's a collaborative effort between the city and various NGOs. Host: The program launches next month and will be available throughout the year.",
+    "questions": [
+      {
+        "question": "What is the goal of Toronto's food security program?",
+        "options": [
+          "Increase food prices",
+          "Reduce hunger",
+          "Expand grocery stores",
+          "Promote fast food"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What type of food access will the program provide?",
+        "options": [
+          "Fast food",
+          "Nutritious food",
+          "Processed food",
+          "Canned food"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What will be created as part of the program?",
+        "options": [
+          "Community gardens",
+          "Food trucks",
+          "Restaurants",
+          "Farmers markets"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "Who is collaborating on the program?",
+        "options": [
+          "Local business owners",
+          "City and NGOs",
+          "Only the residents",
+          "Schools"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "When does the program launch?",
+        "options": [
+          "Next week",
+          "Next month",
+          "This summer",
+          "Next year"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-090"
+  },
+  {
+    "title": "Climate Change Initiatives",
+    "difficulty": "advanced",
+    "passage": "Host: Welcome back to the morning news. Today we discuss the latest climate change initiatives in Canada. Man: Recent reports indicate that Canada is pushing for stricter emissions targets by 2030. Woman: That’s correct. The federal government aims to reduce greenhouse gas emissions by 40 to 45 percent from 2005 levels. Man: This ambitious plan includes transitioning to renewable energy sources. Woman: Exactly. Can you tell us more about the implications for industries? Man: Well, industries will need to adapt or face penalties. They are looking into innovative technologies to minimize their impact. Woman: The transition is certainly a challenge, but it presents new opportunities for green jobs as well. Host: That's right. It's a balancing act between economic growth and environmental sustainability.",
+    "questions": [
+      {
+        "question": "What is the main goal of Canada's new climate initiative?",
+        "options": [
+          "To increase emissions by 20%",
+          "To maintain the current emissions level",
+          "To reduce emissions by 40 to 45%",
+          "To promote fossil fuel usage"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What will industries need to do according to the report?",
+        "options": [
+          "Ignore environmental regulations",
+          "Adopt new technologies",
+          "Continue existing practices",
+          "Increase their personnel"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is one potential benefit mentioned for the transition?",
+        "options": [
+          "Higher taxes",
+          "Green job opportunities",
+          "Less government oversight",
+          "Increased pollution"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "By what year does Canada aim to meet its emissions targets?",
+        "options": [
+          "2025",
+          "2030",
+          "2040",
+          "2050"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What does the passage suggest about balancing economic growth?",
+        "options": [
+          "It’s unnecessary.",
+          "It’s impossible.",
+          "It’s a major concern.",
+          "It should be ignored."
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 4,
+    "id": "part4-091"
+  },
+  {
+    "title": "New Health Policies",
+    "difficulty": "advanced",
+    "passage": "Host: In today's health segment, we are looking at new health policies in Ontario. Woman: The provincial government introduced a series of new measures aimed at improving public healthcare access. Man: These measures include extending emergency room hours and reducing wait times. Woman: Furthermore, there's an emphasis on increasing funding for mental health services. Man: That's an important facet, as mental health has often been underfunded. Woman: Exactly. There's also a plan for public awareness campaigns to educate citizens about their rights within the healthcare system. Host: It sounds like a comprehensive approach to addressing healthcare needs.",
+    "questions": [
+      {
+        "question": "What is a major initiative mentioned in the new health policies?",
+        "options": [
+          "Lowering healthcare taxes",
+          "Extending emergency room hours",
+          "Reducing hospital staff",
+          "Increasing the price of medications"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Which area is getting additional funding?",
+        "options": [
+          "Physical health",
+          "Mental health services",
+          "Administrative costs",
+          "Emergency services"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What does the passage suggest about public awareness campaigns?",
+        "options": [
+          "They are unnecessary.",
+          "They will be limited in scope.",
+          "They aim to educate citizens on healthcare rights.",
+          "They focus solely on emergency procedures."
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What concern is highlighted regarding mental health in the passage?",
+        "options": [
+          "It is overfunded.",
+          "It has been neglected in the budget.",
+          "It is prioritized over physical health.",
+          "It is the only focus of healthcare reform."
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What might be a result of the new health policies?",
+        "options": [
+          "Decreased healthcare access",
+          "Increased public awareness",
+          "Reduced funding for healthcare",
+          "Longer wait times at hospitals"
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-092"
+  },
+  {
+    "title": "Indigenous Land Rights",
+    "difficulty": "advanced",
+    "passage": "Host: In recent news, discussions surrounding Indigenous land rights have gained traction in British Columbia. Man: Yes, the provincial government is working with Indigenous groups to ensure their rights are recognized. Woman: This involves consultations and negotiations about land usage and conservation efforts. Man: The government acknowledges the historical injustices faced by Indigenous communities. Woman: It’s essential for both parties to come together for a sustainable future. Host: There's also a growing movement advocating for the protection of Indigenous heritage sites.",
+    "questions": [
+      {
+        "question": "What is the focus of the discussions in British Columbia?",
+        "options": [
+          "Indigenous land rights",
+          "Mining regulations",
+          "Tourism development",
+          "Urban expansion"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What is being recognized by the provincial government?",
+        "options": [
+          "Historical injustices",
+          "New tourism projects",
+          "Increased logging permits",
+          "Lower land prices"
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What approach is highlighted for achieving land rights recognition?",
+        "options": [
+          "Ignoring Indigenous voices",
+          "Solitary decision-making",
+          "Consultations and negotiations",
+          "Immediate federal action"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What is an aspect of the collaborative effort mentioned in the passage?",
+        "options": [
+          "Joint urban developments",
+          "Protection of heritage sites",
+          "Focus solely on economic gain",
+          "Undermining Indigenous cultures"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What does the passage suggest about the parties involved?",
+        "options": [
+          "They have very different goals.",
+          "They need to communicate for mutual benefit.",
+          "One side is entirely opposed to dialogue.",
+          "They are only considering short-term solutions."
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-093"
+  },
+  {
+    "title": "Technology in Education",
+    "difficulty": "advanced",
+    "passage": "Host: Our next topic explores the growing role of technology in education across Canada. Woman: Many schools are integrating digital tools and resources to enhance learning. Man: This includes interactive software and online learning platforms. Woman: Furthermore, there is an emphasis on training teachers to effectively use these technologies. Man: The goal is not just to incorporate technology but to improve student engagement and learning outcomes. Woman: There are also concerns about the digital divide between students with and without access to these resources. Host: It’s certainly a nuanced discussion.",
+    "questions": [
+      {
+        "question": "What is being integrated into Canadian education?",
+        "options": [
+          "Traditional teaching methods",
+          "Digital tools and resources",
+          "Increased homework assignments",
+          "Standardized testing"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is a primary goal of incorporating technology?",
+        "options": [
+          "To complicate learning",
+          "To improve student engagement",
+          "To increase costs for schools",
+          "To eliminate teachers"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What issue is raised regarding technology in education?",
+        "options": [
+          "Universal access to all tools",
+          "The digital divide",
+          "Overuse of technology",
+          "Lack of interest from students"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What kind of training is emphasized?",
+        "options": [
+          "Technical skills for students",
+          "Teacher training for using technology",
+          "Outdated teaching methods",
+          "Financial management"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What does the passage suggest about the discussion on technology in education?",
+        "options": [
+          "It is straightforward.",
+          "It lacks any controversy.",
+          "It is nuanced and complex.",
+          "It is solely focused on costs."
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 4,
+    "id": "part4-094"
+  },
+  {
+    "title": "Public Transportation Developments",
+    "difficulty": "advanced",
+    "passage": "Host: Let's discuss the recent developments in public transportation in Vancouver. Man: The city council has approved a new transit plan aimed at reducing congestion. Woman: This includes the expansion of the SkyTrain network and the introduction of electric buses. Man: It's expected that these changes will also lower carbon emissions significantly. Woman: Furthermore, there will be increased accessibility for people with disabilities. Man: This plan is critical for promoting sustainable urban mobility. Host: Indeed, it seems like a holistic approach to transportation challenges.",
+    "questions": [
+      {
+        "question": "What is the main focus of the new transit plan?",
+        "options": [
+          "Increasing vehicle ownership",
+          "Reducing congestion",
+          "Raising public transport fares",
+          "Eliminating bus routes"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Which new transportation option is included in the plan?",
+        "options": [
+          "Gasoline-powered buses",
+          "Electric buses",
+          "Submarine transport",
+          "Private taxis only"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What is one anticipated outcome of the plan?",
+        "options": [
+          "Increased carbon emissions",
+          "Lower travel times",
+          "Reduced accessibility for all",
+          "Significantly lower carbon emissions"
+        ],
+        "correct": 3
+      },
+      {
+        "question": "Who will benefit from increased accessibility?",
+        "options": [
+          "Only able-bodied individuals",
+          "People with disabilities",
+          "Public transport employees",
+          "Tourists visiting the city"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What does the passage suggest about the city council's approach?",
+        "options": [
+          "It is a tightly focused initiative.",
+          "It lacks consideration for the environment.",
+          "It promotes sustainable urban mobility.",
+          "It is primarily reactive."
+        ],
+        "correct": 2
+      }
+    ],
+    "part": 4,
+    "id": "part4-095"
+  },
+  {
+    "title": "Housing Market Trends",
+    "difficulty": "advanced",
+    "passage": "Host: Now, let’s take a look at the current trends in the Canadian housing market. Woman: Recent analyses show that housing prices have surged in major cities. Man: Yes, Toronto and Vancouver continue to lead in price increases. Woman: In response, the government is exploring regulations to improve affordability. Man: These regulations might include rent control and increased housing supply. Woman: However, there are concerns about the potential negative impacts on developers. Host: It’s a complex issue that involves multiple stakeholders.",
+    "questions": [
+      {
+        "question": "What trend is observed in the Canadian housing market?",
+        "options": [
+          "Decreasing prices in rural areas",
+          "Surging housing prices in major cities",
+          "Stable prices across the country",
+          "High availability of affordable housing"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "Which cities are mentioned as leading the price increases?",
+        "options": [
+          "Calgary and Ottawa",
+          "Montreal and Halifax",
+          "Toronto and Vancouver",
+          "Quebec City and Winnipeg"
+        ],
+        "correct": 2
+      },
+      {
+        "question": "What potential regulations are being considered?",
+        "options": [
+          "Tax breaks for developers",
+          "Rent control and housing supply increase",
+          "Eliminating property taxes",
+          "Restricting developer licenses"
+        ],
+        "correct": 1
+      },
+      {
+        "question": "What concern is raised about the regulations?",
+        "options": [
+          "They may undermine developers’ interests.",
+          "They could lead to lower rents.",
+          "They will increase housing availability.",
+          "They are unnecessary."
+        ],
+        "correct": 0
+      },
+      {
+        "question": "What does the passage imply about addressing housing issues?",
+        "options": [
+          "It is straightforward and easy.",
+          "It involves multiple stakeholders.",
+          "It should only focus on buyers.",
+          "It can be ignored for now."
+        ],
+        "correct": 1
+      }
+    ],
+    "part": 4,
+    "id": "part4-096"
   }
 ]

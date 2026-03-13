@@ -12,17 +12,17 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   // 1. Check for "Dear"
   feedback.push({
     id: 'dear-check',
-    message: 'O email deve começar com "Dear ..."',
+    message: 'Your email should start with "Dear ..."',
     severity: 'BLOCKER',
     passed: /^\s*dear/i.test(text)
   });
 
-  // 2. Introduction check (Simple heuristic: check for line breaks early on or keywords)
+  // 2. Introduction check
   const lines = text.split('\n').filter(l => l.trim().length > 0);
   const introProbablyExists = lines.length > 0 && lines[0].length > 20;
   feedback.push({
     id: 'intro-check',
-    message: 'A primeira frase deve explicar quem é você e por que está escrevendo (Purpose).',
+    message: 'The first sentence should explain who you are and why you are writing (Purpose).',
     severity: 'IMPORTANT',
     passed: introProbablyExists && (lowerText.includes('writing to') || lowerText.includes('name is') || lowerText.includes('resident of') || lowerText.includes('customer'))
   });
@@ -32,7 +32,7 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   const foundConnectors = connectors.filter(c => lowerText.includes(c));
   feedback.push({
     id: 'connectors-check',
-    message: 'Use conectores de ordem (First, Second, Third, Finally).',
+    message: 'Use ordering connectors (First, Second, Third, Finally).',
     severity: 'IMPORTANT',
     passed: foundConnectors.length >= 2
   });
@@ -44,7 +44,7 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   if (isFormal) {
     feedback.push({
       id: 'contractions-check',
-      message: 'Em emails formais, evite contrações (don\'t -> do not).',
+      message: 'In formal emails, avoid contractions (don\'t → do not).',
       severity: 'POLISH',
       passed: foundContractions.length === 0
     });
@@ -53,7 +53,7 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   // 5. Specific CTA
   feedback.push({
     id: 'cta-check',
-    message: 'Use uma frase específica para fechar, como "Please let me know if...".',
+    message: 'Use a specific closing phrase, such as "Please let me know if...".',
     severity: 'IMPORTANT',
     passed: lowerText.includes('let me know') || lowerText.includes('look forward') || lowerText.includes('waiting for')
   });
@@ -61,7 +61,7 @@ export const generateTask1Feedback = (state: Task1State): FeedbackItem[] => {
   // 6. Sign-off
   feedback.push({
     id: 'signoff-check',
-    message: 'Termine com "Regards," seguido do seu nome completo.',
+    message: 'End with "Regards," followed by your full name.',
     severity: 'BLOCKER',
     passed: /regards,?/i.test(text)
   });
@@ -79,7 +79,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   const foundOptions = optionRefs.filter(o => lowerText.includes(o));
   feedback.push({
     id: 'option-ref-check',
-    message: 'NÃO use "Option A" ou "Option B". Refira-se ao tema diretamente.',
+    message: 'Do NOT use "Option A" or "Option B". Refer to the topic directly.',
     severity: 'BLOCKER',
     passed: foundOptions.length === 0
   });
@@ -87,7 +87,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   // 2. Opinion Structure in Intro
   feedback.push({
     id: 'intro-opinion',
-    message: 'A introdução deve declarar claramente sua opinião.',
+    message: 'Your introduction should clearly state your opinion.',
     severity: 'BLOCKER',
     passed: lowerText.includes('opinion') || lowerText.includes('believe') || lowerText.includes('recommend') || lowerText.includes('suggest') || lowerText.includes('would rather')
   });
@@ -96,7 +96,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   const connectors = ['first', 'second', 'finally', 'reason', 'another'];
   feedback.push({
     id: 'connectors-check',
-    message: 'O corpo deve usar conectores claros para separar argumentos.',
+    message: 'The body should use clear connectors to separate arguments.',
     severity: 'IMPORTANT',
     passed: connectors.filter(c => lowerText.includes(c)).length >= 2
   });
@@ -104,15 +104,15 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   // 4. Conclusion
   feedback.push({
     id: 'conclusion-check',
-    message: 'Deve haver um parágrafo final começando com "In conclusion" ou similar.',
+    message: 'Include a closing paragraph starting with "In conclusion" or similar.',
     severity: 'IMPORTANT',
     passed: lowerText.includes('conclusion') || lowerText.includes('summarize') || lowerText.includes('all in all')
   });
 
-  // 5. PRE check (heuristic: look for "example" or "instance")
+  // 5. PRE check
   feedback.push({
     id: 'example-check',
-    message: 'Use exemplos concretos (use palavras como "For example", "For instance").',
+    message: 'Use concrete examples (e.g., "For example", "For instance").',
     severity: 'POLISH',
     passed: lowerText.includes('example') || lowerText.includes('instance') || lowerText.includes('such as')
   });
@@ -122,7 +122,7 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   const foundContractions = contractions.filter(c => lowerText.includes(c));
   feedback.push({
     id: 'contractions-check',
-    message: 'Evite contrações em textos argumentativos (Task 2).',
+    message: 'Avoid contractions in argumentative writing (Task 2).',
     severity: 'POLISH',
     passed: foundContractions.length === 0
   });
@@ -130,9 +130,9 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
   // 7. Rhetorical questions
   feedback.push({
     id: 'rhetorical-check',
-    message: 'Evite começar parágrafos com perguntas retóricas (Ex: "Why is this good?").',
+    message: 'Avoid starting paragraphs with rhetorical questions (e.g., "Why is this good?").',
     severity: 'POLISH',
-    passed: !/\?/.test(text) // crude check for any question mark
+    passed: !/\?/.test(text)
   });
 
   return feedback;
@@ -140,22 +140,18 @@ export const generateTask2Feedback = (state: Task2State): FeedbackItem[] => {
 
 // Calculate estimated CELPIP score based on feedback results
 export const calculateScore = (feedback: FeedbackItem[], wordCount: number): number => {
-  // Base score starts at 6
   let score = 6;
   
-  // Word count scoring
   if (wordCount >= 150 && wordCount <= 200) {
-    score += 1.5; // Ideal range
+    score += 1.5;
   } else if (wordCount >= 130 && wordCount < 150) {
-    score += 0.5; // Slightly under
+    score += 0.5;
   } else if (wordCount > 200 && wordCount <= 220) {
-    score += 1; // Slightly over is okay
+    score += 1;
   } else if (wordCount < 130) {
-    score -= 1; // Too short
+    score -= 1;
   }
-  // Over 220 stays neutral
   
-  // Count passed/failed by severity
   const blockers = feedback.filter(f => f.severity === 'BLOCKER');
   const important = feedback.filter(f => f.severity === 'IMPORTANT');
   const polish = feedback.filter(f => f.severity === 'POLISH');
@@ -164,25 +160,21 @@ export const calculateScore = (feedback: FeedbackItem[], wordCount: number): num
   const importantPassed = important.filter(f => f.passed).length;
   const polishPassed = polish.filter(f => f.passed).length;
   
-  // Blockers heavily impact score
   if (blockers.length > 0) {
     const blockerRatio = blockersPassed / blockers.length;
-    score += blockerRatio * 2; // Up to +2 for all blockers passed
-    if (blockerRatio < 0.5) score -= 2; // Major penalty if most blockers fail
+    score += blockerRatio * 2;
+    if (blockerRatio < 0.5) score -= 2;
   }
   
-  // Important items
   if (important.length > 0) {
     const importantRatio = importantPassed / important.length;
-    score += importantRatio * 1.5; // Up to +1.5
+    score += importantRatio * 1.5;
   }
   
-  // Polish items (minor impact)
   if (polish.length > 0) {
     const polishRatio = polishPassed / polish.length;
-    score += polishRatio * 1; // Up to +1
+    score += polishRatio * 1;
   }
   
-  // Clamp to CELPIP range (3-12)
   return Math.max(3, Math.min(12, Math.round(score)));
 };

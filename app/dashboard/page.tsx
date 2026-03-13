@@ -1445,6 +1445,18 @@ export default function DashboardPage() {
     );
   }
 
+  // Daily usage for free users
+  const [dailyUsage, setDailyUsage] = useState<{ used: number; limit: number } | null>(null);
+
+  useEffect(() => {
+    if (!isPro) {
+      fetch('/api/daily-usage')
+        .then(r => r.json())
+        .then(d => { if (d.used !== undefined) setDailyUsage({ used: d.used, limit: d.limit || 3 }); })
+        .catch(() => {});
+    }
+  }, [isPro]);
+
   // Regular dashboard content
   // Check if we have assessment data from onboarding
   const onboardingRaw = typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEYS.onboarding) : null;
@@ -1453,6 +1465,28 @@ export default function DashboardPage() {
 
   return (
     <div className={styles.container}>
+      {/* Daily Usage Banner for Free Users */}
+      {!isPro && dailyUsage && (
+        <div className={styles.usageBanner} onClick={() => router.push('/pricing')}>
+          <div className={styles.usageLeft}>
+            <div className={styles.usageCount}>
+              <span className={styles.usageNumber}>{dailyUsage.used}/{dailyUsage.limit}</span>
+              <span className={styles.usageLabel}>Daily free exercises used</span>
+            </div>
+            <div className={styles.usageDots}>
+              {[...Array(dailyUsage.limit)].map((_, i) => (
+                <div
+                  key={i}
+                  className={`${styles.usageDot} ${i < dailyUsage.used ? styles.usageDotFilled : ''}`}
+                />
+              ))}
+            </div>
+            <span className={styles.usageUpgrade}>Upgrade Now →</span>
+          </div>
+          <div className={styles.usageLeaf}>🍁</div>
+        </div>
+      )}
+
       {/* Welcome + CLB Level */}
       {hasAssessment && (
         <section className={styles.welcomeSection}>
@@ -1461,6 +1495,18 @@ export default function DashboardPage() {
               <div className={styles.proCrown}>
                 <Crown size={16} />
                 <span>PRO</span>
+                <button
+                  className={styles.manageSubBtn}
+                  onClick={async () => {
+                    try {
+                      const res = await fetch('/api/stripe/portal', { method: 'POST' });
+                      const data = await res.json();
+                      if (data.url) window.location.href = data.url;
+                    } catch {}
+                  }}
+                >
+                  Manage Subscription
+                </button>
               </div>
             )}
             <div className={styles.welcomeLeft}>

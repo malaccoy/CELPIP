@@ -187,7 +187,7 @@ export default function GoalsManager({ mode = 'full' }: GoalsManagerProps) {
 
         {progress.streakDays > 0 && (
           <div className={styles.streakBadge}>
-            🔥 {progress.streakDays} dias seguidos praticando!
+            🔥 {progress.streakDays} day streak!
           </div>
         )}
       </div>
@@ -199,7 +199,7 @@ export default function GoalsManager({ mode = 'full' }: GoalsManagerProps) {
     <div className={styles.container}>
       <div className={styles.section}>
         <h4 className={styles.sectionTitle}>📝 Meta Semanal de Textos</h4>
-        <p className={styles.sectionDesc}>Quantos textos você quer escrever por semana?</p>
+        <p className={styles.sectionDesc}>How many texts do you want to write per week?</p>
         
         <div className={styles.sliderContainer}>
           <input
@@ -224,7 +224,7 @@ export default function GoalsManager({ mode = 'full' }: GoalsManagerProps) {
 
       <div className={styles.section}>
         <h4 className={styles.sectionTitle}>🎯 Pontuação Alvo</h4>
-        <p className={styles.sectionDesc}>Qual pontuação você quer alcançar no CELPIP?</p>
+        <p className={styles.sectionDesc}>What CELPIP score do you want to achieve?</p>
         
         <div className={styles.scoreButtons}>
           {[7, 8, 9, 10, 11, 12].map((score) => (
@@ -278,7 +278,7 @@ export default function GoalsManager({ mode = 'full' }: GoalsManagerProps) {
 
       <div className={styles.section}>
         <h4 className={styles.sectionTitle}>🔔 Practice Days</h4>
-        <p className={styles.sectionDesc}>Quais dias você pretende praticar?</p>
+        <p className={styles.sectionDesc}>Which days do you plan to practice?</p>
         
         <div className={styles.daysGrid}>
           {DAYS.map(({ key, label }) => (

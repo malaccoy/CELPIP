@@ -18,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/reading', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/writing', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/speaking', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/english', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/support', priority: 0.6, changeFrequency: 'monthly' as const },
+    { url: '/rankings', priority: 0.7, changeFrequency: 'daily' as const },
+    { url: '/guides', priority: 0.85, changeFrequency: 'monthly' as const },
   ];
 
   // Technique guides (high SEO value - free content)

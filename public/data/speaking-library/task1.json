@@ -9,7 +9,9 @@
       "Remember to weigh the pros and cons of flexible hours versus the unpredictability of freelance work."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-02",
@@ -21,7 +23,9 @@
       "Remember to factor in the cost of living differences and how they might impact your budget."
     ],
     "context": "You are talking to your sister.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-03",
@@ -33,7 +37,9 @@
       "Remember to assess the competition in your area and find ways to make your poutine unique."
     ],
     "context": "You are talking to your coworker.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-04",
@@ -45,7 +51,9 @@
       "Remember that leasing often comes with restrictions on mileage and customization options."
     ],
     "context": "You are talking to your brother.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-05",
@@ -57,7 +65,9 @@
       "Remember to research the breed and needs of the dog to ensure it fits your lifestyle."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-06",
@@ -69,7 +79,9 @@
       "Remember the importance of having a backup plan in case her YouTube career doesn’t go as planned."
     ],
     "context": "You are talking to your cousin.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-07",
@@ -81,7 +93,9 @@
       "Remember to check local zoning laws and regulations regarding rental suites in your area."
     ],
     "context": "You are talking to your neighbor.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-08",
@@ -93,7 +107,9 @@
       "Remember to incorporate rest days and cross-training to prevent injury and improve overall fitness."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-09",
@@ -105,7 +121,9 @@
       "Remember to explore options for part-time work or volunteering that can provide structure and a sense of purpose in your retirement."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-10",
@@ -117,7 +135,9 @@
       "Remember that taking a gap year can also enhance your resume and university applications."
     ],
     "context": "You are talking to your close friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-11",
@@ -129,7 +149,9 @@
       "Remember to assess your financial situation during the transition, as starting a new career might involve a pay cut initially."
     ],
     "context": "You are talking to your coworker.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-12",
@@ -141,7 +163,9 @@
       "Remember the importance of socialization for your children and explore options for extracurricular activities and playdates."
     ],
     "context": "You are talking to your sister.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-13",
@@ -153,7 +177,9 @@
       "Remember to research local market trends and potential future developments in your area."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-14",
@@ -165,7 +191,9 @@
       "Remember to budget for other living expenses in Vancouver, as they can be quite high too."
     ],
     "context": "You are talking to your brother.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-15",
@@ -177,7 +205,9 @@
       "Remember to look into scholarships and financial aid options that can help alleviate the cost of your education."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-16",
@@ -189,7 +219,9 @@
       "Remember to create a marketing strategy, such as social media promotion, to attract students."
     ],
     "context": "You are talking to your cousin.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-17",
@@ -201,7 +233,9 @@
       "Remember to research reliable contractors and check for any local regulations regarding solar panel installations."
     ],
     "context": "You are talking to your neighbor.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-18",
@@ -213,7 +247,9 @@
       "Remember that commitment to the reserves may lead to new friendships and a sense of community, but it will require dedication."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-19",
@@ -225,7 +261,9 @@
       "Remember to communicate with your employer about your situation and explore options for flexibility or reduced hours."
     ],
     "context": "You are talking to your coworker.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-20",
@@ -237,7 +275,9 @@
       "Remember to calculate the potential costs versus income to ensure it's financially viable."
     ],
     "context": "You are talking to your sister.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-21",
@@ -249,7 +289,9 @@
       "Remember to explore local vendors and services in Banff to ensure you find reliable options for catering and decorations."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-22",
@@ -261,7 +303,9 @@
       "Remember to weigh the convenience of parking and maneuverability against potential weather challenges."
     ],
     "context": "You are talking to your brother.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-23",
@@ -273,7 +317,9 @@
       "Remember to research the location and organization to ensure it aligns with your values and interests."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-24",
@@ -285,7 +331,9 @@
       "Remember to communicate openly with your partner about your feelings and any concerns you may have before making a decision."
     ],
     "context": "You are talking to your cousin.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-25",
@@ -297,7 +345,9 @@
       "Remember to prepare for the conversation by having a clear understanding of your worth and market rates."
     ],
     "context": "You are talking to your coworker.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-26",
@@ -309,7 +359,9 @@
       "Remember that you can take a break first and see how you feel before making a permanent decision."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-27",
@@ -321,7 +373,9 @@
       "Remember to check local regulations or Homeowners Association rules regarding hot tubs in your area."
     ],
     "context": "You are talking to your neighbor.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-28",
@@ -333,7 +387,9 @@
       "Remember to evaluate the emotional attachment to the family home and how to preserve those memories."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-29",
@@ -345,7 +401,9 @@
       "Remember to explore different vegan recipes and foods that you enjoy to make the transition enjoyable."
     ],
     "context": "You are talking to your friend.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "id": "task1-30",
@@ -357,7 +415,9 @@
       "Remember that becoming a citizen is a long-term commitment and may affect your future plans, like travel or education."
     ],
     "context": "You are talking to your sister.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   },
   {
     "title": "Advice on Weekend Activities",
@@ -719,5 +779,2057 @@
       "Consider both the economic advantages and the social implications of the policy.",
       "Acknowledge counterarguments regarding the importance of keeping families together."
     ]
+  },
+  {
+    "prompt": "Give Michael advice about whether he should take a short vacation this year.",
+    "topic": "vacation advice",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-061",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Lisa advice about how to choose a good book to read this summer.",
+    "topic": "book selection",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-062",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give John advice about starting a new exercise routine at the gym.",
+    "topic": "exercise routine",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-063",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Emma advice about finding a new hobby that she can enjoy.",
+    "topic": "hobby advice",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-064",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Rachel advice about decorating her new apartment.",
+    "topic": "apartment decor",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-065",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Sam advice about whether to get a pet for his family.",
+    "topic": "pet advice",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-066",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Nina advice about planning a birthday party for her child.",
+    "topic": "birthday party",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-067",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Tom advice about choosing the right car for his needs.",
+    "topic": "car selection",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-068",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Amanda advice about saving money for a vacation.",
+    "topic": "saving tips",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-069",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Chris advice about improving his cooking skills.",
+    "topic": "cooking advice",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-070",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Sarah advice about studying for her upcoming exams.",
+    "topic": "study tips",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-071",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Rachel advice about how to meet new friends in a new city.",
+    "topic": "making friends",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-072",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Mike advice about planning a weekend camping trip.",
+    "topic": "camping trip",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-073",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Laura advice about what to do for family day activities.",
+    "topic": "family day",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-074",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Paul advice about how to manage his time better for his studies.",
+    "topic": "time management",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-075",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Zoe advice about what to do to take care of her garden.",
+    "topic": "gardening tips",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-076",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Alex advice about how to celebrate his promotion at work.",
+    "topic": "celebration advice",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-077",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Jenna advice about finding the best coffee shop in her area.",
+    "topic": "coffee shop",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-078",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Brian advice about planning a road trip across Canada.",
+    "topic": "road trip",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-079",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Emily advice about how to choose the right smartphone.",
+    "topic": "smartphone selection",
+    "task": 1,
+    "difficulty": "beginner",
+    "id": "task1-080",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Lisa advice about her decision to take a new job offer that requires her to relocate.",
+    "topic": "Job Relocation",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-081",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give James advice about his plan to start a small business selling handmade crafts.",
+    "topic": "Starting a Business",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-082",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Rachel advice about how to improve her public speaking skills before an important presentation.",
+    "topic": "Public Speaking",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-083",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Tom advice about whether to buy a used car or keep repairing his current one.",
+    "topic": "Car Decision",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-084",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Sarah advice about approaching her boss for a promotion after her recent project success.",
+    "topic": "Promotion Inquiry",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-085",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Mark advice on dealing with a difficult co-worker who is affecting his work environment.",
+    "topic": "Workplace Conflict",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-086",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Jenna advice on how to choose the right university for her studies in Canada.",
+    "topic": "University Choice",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-087",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Alex advice about whether he should spend more time on his hobby or focus on his studies.",
+    "topic": "Hobby vs Studies",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-088",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Emily advice on how to balance her work and family life effectively.",
+    "topic": "Work-Life Balance",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-089",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give David advice about his plans to travel abroad for a year after finishing college.",
+    "topic": "Gap Year Travel",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-090",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Samantha advice on how to approach her friend about a misunderstanding that has caused tension between them.",
+    "topic": "Friendship Conflict",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-091",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give John advice about taking a course to learn new skills for career advancement.",
+    "topic": "Skill Development",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-092",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Melissa advice on how to deal with financial stress after losing her job.",
+    "topic": "Financial Stress",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-093",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Chris advice about how to prepare for an upcoming job interview.",
+    "topic": "Job Interview",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-094",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Lisa advice on how to support her friend who is going through a tough time.",
+    "topic": "Supporting a Friend",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-095",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Kevin advice about whether to move in with his partner or wait until after graduation.",
+    "topic": "Living Arrangements",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-096",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Rachel advice on choosing a career path that aligns with her interests.",
+    "topic": "Career Choice",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-097",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Michael advice on how to handle stress during exam season.",
+    "topic": "Exam Stress",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-098",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Anna advice on how to start a healthy lifestyle routine after a long period of neglecting her health.",
+    "topic": "Healthy Lifestyle",
+    "task": 1,
+    "difficulty": "intermediate",
+    "id": "task1-099",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Laura advice about whether she should take a job offer that requires her to relocate to a different city.",
+    "topic": "Job Relocation",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-100",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give James advice about how to manage his time effectively while handling both work and university studies.",
+    "topic": "Time Management",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-101",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Sophie advice about whether she should pursue a Master's degree or gain work experience after her undergraduate studies.",
+    "topic": "Further Education vs Work",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-102",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give David advice about whether he should invest in real estate or stock market for long-term financial growth.",
+    "topic": "Investment Choices",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-103",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Maria advice about how to cope with stress during her job search after graduation.",
+    "topic": "Job Search Stress",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-104",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Kevin advice about how to approach a difficult conversation with his manager about a potential promotion.",
+    "topic": "Career Advancement",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-105",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Anne advice about whether she should switch her career from teaching to corporate training.",
+    "topic": "Career Change",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-106",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Tom advice about balancing his commitments to family, work, and personal health.",
+    "topic": "Work-Life Balance",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-107",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Rachel advice about how to improve her public speaking skills for her upcoming presentations.",
+    "topic": "Public Speaking",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-108",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Lisa advice about managing her finances after unexpected expenses impacted her budget.",
+    "topic": "Financial Management",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-109",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Mark advice about how to handle a conflict with a close friend that has affected their relationship.",
+    "topic": "Conflict Resolution",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-110",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Emily advice about whether to pursue a freelance career or seek traditional employment in her field.",
+    "topic": "Freelancing vs Employment",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-111",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give John advice on how to effectively network in his industry to advance his career.",
+    "topic": "Networking",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-112",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Sarah advice about how to choose the right pet that suits her lifestyle and living situation.",
+    "topic": "Pet Adoption",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-113",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Alex advice about managing cultural differences in a team after joining a multinational company.",
+    "topic": "Cultural Diversity",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-114",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Maria advice about the best strategies to prepare for her upcoming professional certification exam.",
+    "topic": "Exam Preparation",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-115",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give James advice about whether he should sign a long-term lease for an apartment or look for something short-term.",
+    "topic": "Housing Decisions",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-116",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Lisa advice on how to set realistic career goals for the next five years considering her current position.",
+    "topic": "Career Planning",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-117",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give David advice about the importance of ethical considerations in his new business venture.",
+    "topic": "Business Ethics",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-118",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "prompt": "Give Kelly advice on how to integrate environmentally friendly practices into her daily routine.",
+    "topic": "Sustainable Living",
+    "task": 1,
+    "difficulty": "advanced",
+    "id": "task1-119",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-120",
+    "scenario": "Your friend is feeling overwhelmed at work and is not sure how to manage stress.",
+    "prompt": "What advice can you give your friend to help manage stress at work? Provide three suggestions.",
+    "tips": [
+      "Encourage them to take regular breaks.",
+      "Suggest practicing mindfulness or meditation.",
+      "Talk about organizing tasks to avoid feeling overwhelmed."
+    ],
+    "bulletPoints": [
+      "Take short breaks during work hours.",
+      "Try mindfulness exercises.",
+      "Sort tasks by priority."
+    ],
+    "context": "This is a common situation in the busy Canadian workplace.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-121",
+    "scenario": "Your cousin is planning to buy their first car but is unsure about how to choose the right one.",
+    "prompt": "What advice would you give your cousin on buying their first car? Provide three suggestions.",
+    "tips": [
+      "Research the types of cars that fit their needs.",
+      "Set a budget and stick to it.",
+      "Consider taking a friend or family member with experience."
+    ],
+    "bulletPoints": [
+      "Determine what type of car is needed.",
+      "Limit the budget for purchase.",
+      "Get advice from someone knowledgeable."
+    ],
+    "context": "This reflects a common experience for many young adults in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-122",
+    "scenario": "Your best friend is feeling lonely after moving to a new city in Canada.",
+    "prompt": "What advice can you give to help your friend make new friends? Provide three suggestions.",
+    "tips": [
+      "Encourage them to join local clubs or classes.",
+      "Suggest volunteering for community events.",
+      "Remind them to be open and friendly to new people."
+    ],
+    "bulletPoints": [
+      "Register for community activities.",
+      "Volunteer for local organizations.",
+      "Be approachable and friendly."
+    ],
+    "context": "Many people experience loneliness when moving to a new environment.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-123",
+    "scenario": "A neighbor is struggling with their garden and is asking for help.",
+    "prompt": "What advice would you give your neighbor to improve their garden? Provide three suggestions.",
+    "tips": [
+      "Research which plants thrive in their area.",
+      "Be consistent with watering and care.",
+      "Consider using organic fertilizers for better soil."
+    ],
+    "bulletPoints": [
+      "Know the local climate for gardening.",
+      "Water plants regularly.",
+      "Use natural fertilizers."
+    ],
+    "context": "Gardening is a common hobby in many Canadian communities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-124",
+    "scenario": "Your colleague is anxious about giving a presentation at work.",
+    "prompt": "What advice can you offer your colleague to help ease their nerves before the presentation? Provide three suggestions.",
+    "tips": [
+      "Encourage them to practice in front of friends.",
+      "Suggest deep breathing exercises before speaking.",
+      "Remind them to focus on the message, not the audience."
+    ],
+    "bulletPoints": [
+      "Practice presenting to a small group.",
+      "Use relaxation techniques.",
+      "Concentrate on conveying ideas."
+    ],
+    "context": "Many people feel nervous about presenting in front of others.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-125",
+    "scenario": "Your aunt is considering adopting a pet but is unsure if she can handle the responsibility.",
+    "prompt": "What advice would you give your aunt about adopting a pet? Provide three suggestions.",
+    "tips": [
+      "Discuss the daily responsibilities of pet care.",
+      "Suggest visiting shelters to learn more about different animals.",
+      "Encourage her to consider her lifestyle and time available."
+    ],
+    "bulletPoints": [
+      "Understand what pet ownership involves.",
+      "Visit local animal shelters.",
+      "Assess personal time and lifestyle."
+    ],
+    "context": "Pet adoption is a significant decision for many in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-126",
+    "scenario": "A friend is trying to get healthier but struggles with temptation for junk food.",
+    "prompt": "What advice can you offer your friend to help them eat healthier? Provide three suggestions.",
+    "tips": [
+      "Encourage meal planning to avoid last-minute junk food.",
+      "Suggest keeping healthy snacks on hand.",
+      "Talk about cooking healthy meals together."
+    ],
+    "bulletPoints": [
+      "Plan meals in advance.",
+      "Have healthy snacks available.",
+      "Cook together for support."
+    ],
+    "context": "Healthy eating is a common concern among many Canadians.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-127",
+    "scenario": "Your sibling wants to start a new hobby but doesn't know where to begin.",
+    "prompt": "What advice would you give them to help start a new hobby? Provide three suggestions.",
+    "tips": [
+      "Encourage them to explore different hobbies online.",
+      "Suggest starting with something simple to build confidence.",
+      "Remind them to join local groups for support."
+    ],
+    "bulletPoints": [
+      "Look for hobbies that interest them.",
+      "Start with beginner activities.",
+      "Find local clubs or classes."
+    ],
+    "context": "Many people in Canada are looking to explore new hobbies.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-128",
+    "scenario": "Your friend is having trouble managing their time and meeting deadlines.",
+    "prompt": "What advice can you give your friend to help improve their time management? Provide three suggestions.",
+    "tips": [
+      "Encourage them to create a daily schedule.",
+      "Suggest breaking tasks into smaller steps.",
+      "Remind them to prioritize important tasks first."
+    ],
+    "bulletPoints": [
+      "Make a daily plan.",
+      "Divide tasks into manageable pieces.",
+      "Focus on high-priority items first."
+    ],
+    "context": "Time management is a vital skill for students and workers in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-129",
+    "scenario": "Your friend is feeling uncertain about their career path and needs guidance.",
+    "prompt": "What advice can you provide to help your friend choose a career path? Provide three suggestions.",
+    "tips": [
+      "Encourage them to explore their interests and skills.",
+      "Suggest talking to professionals in fields they like.",
+      "Remind them to consider job market trends."
+    ],
+    "bulletPoints": [
+      "Reflect on personal interests.",
+      "Network with professionals.",
+      "Research job opportunities."
+    ],
+    "context": "Career decisions can be challenging for many individuals.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-130",
+    "scenario": "Your friend is feeling stressed about their job search. They need some guidance on how to improve their chances.",
+    "prompt": "Give your friend three suggestions to help with their job search.",
+    "tips": [
+      "Encourage networking",
+      "Suggest updating their resume",
+      "Advise practicing interview skills"
+    ],
+    "bulletPoints": [
+      "Join local job fairs",
+      "Use online job boards",
+      "Ask friends for referrals"
+    ],
+    "context": "Job search support in a competitive job market.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-131",
+    "scenario": "Your neighbor is worried about their teenage son who is struggling in school.",
+    "prompt": "Give your neighbor three suggestions to help their son improve academically.",
+    "tips": [
+      "Suggest a tutor",
+      "Encourage a study schedule",
+      "Recommend joining study groups"
+    ],
+    "bulletPoints": [
+      "Find a local tutor",
+      "Set specific study times",
+      "Connect with classmates"
+    ],
+    "context": "Supporting a student in academic challenges.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-132",
+    "scenario": "Your friend is planning to volunteer but doesn't know where to start.",
+    "prompt": "Advise your friend on three steps to begin their volunteering journey.",
+    "tips": [
+      "Research local organizations",
+      "Choose a cause they care about",
+      "Attend an orientation session"
+    ],
+    "bulletPoints": [
+      "Look at community centers",
+      "Consider online volunteering",
+      "Ask friends about their experiences"
+    ],
+    "context": "Exploring community volunteer opportunities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-133",
+    "scenario": "Your sister is feeling overwhelmed with her new job and is unsure how to manage her time.",
+    "prompt": "Give your sister three suggestions for better time management.",
+    "tips": [
+      "Make a daily to-do list",
+      "Prioritize tasks",
+      "Limit distractions"
+    ],
+    "bulletPoints": [
+      "Use a planner or app",
+      "Focus on one task at a time",
+      "Set specific work hours"
+    ],
+    "context": "Advice for managing new workplace responsibilities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-134",
+    "scenario": "Your friend has recently moved to a new city and is feeling homesick.",
+    "prompt": "Give your friend three tips to help them feel more at home in the new city.",
+    "tips": [
+      "Explore the area",
+      "Join local clubs or groups",
+      "Connect with neighbors"
+    ],
+    "bulletPoints": [
+      "Visit local attractions",
+      "Attend community events",
+      "Use social media to find groups"
+    ],
+    "context": "Adjusting to life in a new city and overcoming homesickness.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-135",
+    "scenario": "Your coworker is interested in taking public transit but is unsure about the routes.",
+    "prompt": "Advise your coworker on three things they can do to learn about public transit.",
+    "tips": [
+      "Use transit apps",
+      "Check transit maps",
+      "Ask colleagues for tips"
+    ],
+    "bulletPoints": [
+      "Download a transit app",
+      "Visit the transit website",
+      "Try out a test route"
+    ],
+    "context": "Navigating public transport in an urban area.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-136",
+    "scenario": "Your friend is planning to travel for the first time but feels anxious about flying.",
+    "prompt": "Provide your friend with three suggestions to ease their flight anxiety.",
+    "tips": [
+      "Practice deep breathing",
+      "Bring distractions like a book or music",
+      "Arrive early to avoid stress"
+    ],
+    "bulletPoints": [
+      "Use meditation apps",
+      "Pack favorite snacks",
+      "Plan enjoyable activities at the destination"
+    ],
+    "context": "Supporting someone who is nervous about flying.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-137",
+    "scenario": "Your cousin is trying to save money for a big purchase but finds it hard to stick to a budget.",
+    "prompt": "Give your cousin three tips to help them save money effectively.",
+    "tips": [
+      "Create a monthly budget",
+      "Track spending",
+      "Set specific savings goals"
+    ],
+    "bulletPoints": [
+      "Use a budgeting app",
+      "Cut unnecessary expenses",
+      "Put money into a savings account"
+    ],
+    "context": "Financial planning and budgeting advice.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-138",
+    "scenario": "Your friend is interested in learning a new language but doesn’t know how to start.",
+    "prompt": "Suggest three ways for your friend to begin learning a new language.",
+    "tips": [
+      "Use language apps",
+      "Start with online classes",
+      "Practice speaking with friends"
+    ],
+    "bulletPoints": [
+      "Download a language learning app",
+      "Join a local class",
+      "Find a language partner online"
+    ],
+    "context": "Encouraging language learning through various tools.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-139",
+    "scenario": "Your family member is feeling disconnected from their friends and wants to rebuild those relationships.",
+    "prompt": "Advise them on three ways to reconnect with their friends.",
+    "tips": [
+      "Reach out via social media",
+      "Plan a get-together",
+      "Send a thoughtful message"
+    ],
+    "bulletPoints": [
+      "Organize a coffee meet-up",
+      "Use group chats to stay in touch",
+      "Share updates about your life"
+    ],
+    "context": "Rekindling friendships in a busy lifestyle.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-140",
+    "scenario": "Your friend is thinking about starting their own small business but feels unsure about how to begin. They ask for your advice on this new venture.",
+    "prompt": "What advice would you give your friend who wants to start a small business? Give three suggestions.",
+    "tips": [
+      "Encourage them to do market research.",
+      "Suggest creating a simple business plan.",
+      "Advise them to talk to other small business owners."
+    ],
+    "bulletPoints": [
+      "Research market needs.",
+      "Draft a basic business plan.",
+      "Seek advice from experienced owners."
+    ],
+    "context": "Starting a small business is a common aspiration in Canada, especially in local communities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-141",
+    "scenario": "Your sister has been feeling bored and wants to do something fun this weekend. She asks you for ideas on activities.",
+    "prompt": "What activities would you suggest to your sister for a fun weekend? Give three suggestions.",
+    "tips": [
+      "Suggest visiting a local park or festival.",
+      "Encourage trying a new restaurant.",
+      "Advise organizing a movie night at home."
+    ],
+    "bulletPoints": [
+      "Explore local parks or festivals.",
+      "Try new foods at restaurants.",
+      "Host a movie night with friends."
+    ],
+    "context": "Canadians often enjoy outdoor activities and community events during weekends.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-142",
+    "scenario": "Your friend is feeling anxious about meeting new people at an upcoming community event. They seek your advice.",
+    "prompt": "How can you help your friend feel more comfortable meeting new people? Give three suggestions.",
+    "tips": [
+      "Suggest practicing conversation starters.",
+      "Encourage them to go with a buddy.",
+      "Remind them to be friendly and smile."
+    ],
+    "bulletPoints": [
+      "Practice talking to others.",
+      "Attend with a friend for support.",
+      "Be open and smile warmly."
+    ],
+    "context": "Community events in Canada are great opportunities to meet new people, but can make some feel nervous.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-143",
+    "scenario": "Your cousin is looking to improve their English skills and feels lost on how to start. They ask for your help.",
+    "prompt": "What advice would you give your cousin to improve their English skills? Give three suggestions.",
+    "tips": [
+      "Encourage them to take an English class.",
+      "Suggest practicing with friends or family.",
+      "Advise watching English movies or shows."
+    ],
+    "bulletPoints": [
+      "Enroll in an English course.",
+      "Practice speaking with family.",
+      "Watch movies to learn new words."
+    ],
+    "context": "Improving language skills is common for many newcomers in Canada.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-144",
+    "scenario": "Your friend Sarah is considering applying for a promotion at work but feels unsure about her qualifications.",
+    "prompt": "What advice would you give Sarah about applying for the promotion? Provide three suggestions.",
+    "tips": [
+      "Encourage her to list her achievements.",
+      "Suggest she discuss her goals with her manager.",
+      "Advise her to research the skills required for the position."
+    ],
+    "bulletPoints": [
+      "Identify and articulate strengths.",
+      "Seek feedback from peers or supervisors.",
+      "Prepare to highlight relevant experiences."
+    ],
+    "context": "This scenario reflects the competitive nature of the Canadian workplace.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-145",
+    "scenario": "Your colleague Mark is thinking about transitioning to a different field of work and is feeling lost about where to start.",
+    "prompt": "What advice would you give Mark regarding his career transition? Provide three suggestions.",
+    "tips": [
+      "Encourage networking with professionals in the new field.",
+      "Suggest taking relevant courses or training programs.",
+      "Advise him to update his resume to reflect transferable skills."
+    ],
+    "bulletPoints": [
+      "Utilize online platforms for job searching.",
+      "Attend industry events or workshops.",
+      "Seek informational interviews for insights."
+    ],
+    "context": "Changing career paths is common in the Canadian job market.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-146",
+    "scenario": "Your friend Emily is feeling disconnected from her community since she moved to a new city in Canada.",
+    "prompt": "What advice would you give Emily to help her feel more connected? Provide three suggestions.",
+    "tips": [
+      "Encourage her to join local clubs or groups related to her interests.",
+      "Suggest attending community events and festivals.",
+      "Advise her to volunteer for local charities."
+    ],
+    "bulletPoints": [
+      "Explore social media groups for local activities.",
+      "Visit community centers for information.",
+      "Reach out to neighbors for coffee or chats."
+    ],
+    "context": "Building community connections can be challenging in a new city.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-147",
+    "scenario": "Your friend Alex wants to improve his public speaking skills for an upcoming presentation at work.",
+    "prompt": "What advice would you give Alex to enhance his public speaking abilities? Provide three suggestions.",
+    "tips": [
+      "Encourage him to practice in front of friends or family.",
+      "Suggest joining a local Toastmasters group.",
+      "Advise him to study effective speakers for techniques."
+    ],
+    "bulletPoints": [
+      "Record practice sessions for self-review.",
+      "Focus on body language and eye contact.",
+      "Work on managing anxiety before speaking."
+    ],
+    "context": "Public speaking is a valuable skill in many Canadian workplaces.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-148",
+    "scenario": "Your family member is considering starting their own business but is unsure of how to proceed.",
+    "prompt": "What advice would you give them about starting a business? Provide three suggestions.",
+    "tips": [
+      "Encourage them to create a solid business plan.",
+      "Suggest researching the market and competitors.",
+      "Advise them to seek mentorship from experienced entrepreneurs."
+    ],
+    "bulletPoints": [
+      "Understand legal requirements for starting a business in Canada.",
+      "Explore funding options available for new businesses.",
+      "Network with other local business owners."
+    ],
+    "context": "Entrepreneurship is a significant part of the Canadian economy.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-149",
+    "scenario": "Your friend Lisa is feeling overwhelmed by her responsibilities as a new parent and needs some support.",
+    "prompt": "What advice would you give Lisa to help her manage her responsibilities? Provide three suggestions.",
+    "tips": [
+      "Encourage her to seek help from family or friends.",
+      "Suggest she set a routine to balance tasks.",
+      "Advise her to take time for self-care."
+    ],
+    "bulletPoints": [
+      "Explore local parenting groups for support.",
+      "Use community resources for childcare options.",
+      "Consider delegating some tasks to reduce stress."
+    ],
+    "context": "New parents often face the challenge of balancing responsibilities.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-150",
+    "scenario": "Your friend James wants to improve his time management skills to become more productive at work.",
+    "prompt": "What advice would you give James to help him manage his time better? Provide three suggestions.",
+    "tips": [
+      "Encourage him to prioritize tasks using a to-do list.",
+      "Suggest using a calendar or planner for scheduling.",
+      "Advise him to use techniques like the Pomodoro Technique for focused work."
+    ],
+    "bulletPoints": [
+      "Identify time-wasting activities to minimize distractions.",
+      "Set specific goals for each workday.",
+      "Regularly review and adjust to improve efficiency."
+    ],
+    "context": "Time management is crucial for a proactive work environment in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-151",
+    "scenario": "Your colleague Amanda is struggling to handle constructive criticism at work.",
+    "prompt": "What advice would you give Amanda to help her cope with feedback? Provide three suggestions.",
+    "tips": [
+      "Encourage her to view feedback as an opportunity for growth.",
+      "Suggest she ask for specific examples to clarify criticism.",
+      "Advise her to practice active listening during feedback sessions."
+    ],
+    "bulletPoints": [
+      "Reflect on the feedback before reacting.",
+      "Develop a plan to address areas for improvement.",
+      "Seek regular feedback to track progress."
+    ],
+    "context": "Receiving feedback is a standard part of professional development.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-152",
+    "scenario": "Your friend Ben is thinking about taking a short course to advance his career but can't decide on the right program.",
+    "prompt": "What advice would you give Ben about selecting the right course? Provide three suggestions.",
+    "tips": [
+      "Encourage him to align courses with his career goals.",
+      "Suggest researching the reputation of institutions offering the course.",
+      "Advise him to talk to professionals in the field for recommendations."
+    ],
+    "bulletPoints": [
+      "Consider part-time vs full-time options based on his schedule.",
+      "Evaluate the cost versus potential return on investment.",
+      "Look for online reviews or testimonials from past students."
+    ],
+    "context": "Choosing educational paths is a critical decision in Canada’s job market.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-153",
+    "scenario": "Your neighbor is trying to decide whether to organize a community clean-up event in your neighborhood.",
+    "prompt": "What advice would you give your neighbor to help them plan this event? Provide three suggestions.",
+    "tips": [
+      "Encourage her to gather a group of volunteers to help.",
+      "Suggest setting a specific date and time for the event.",
+      "Advise her to promote the event through local social media groups."
+    ],
+    "bulletPoints": [
+      "Create a plan for supplies needed, like gloves and trash bags.",
+      "Consider incentives like refreshments or prizes for participants.",
+      "Make a follow-up plan for community engagement post-event."
+    ],
+    "context": "Community involvement is important for enhancing local neighborhoods in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-154",
+    "scenario": "Your friend has been struggling to balance work and family commitments, feeling overwhelmed by their responsibilities. They reach out to you for some guidance on how to cope with everything.",
+    "prompt": "What advice would you give your friend who is feeling overwhelmed with work and family responsibilities? Please provide three suggestions.",
+    "tips": [
+      "Encourage prioritizing tasks and setting boundaries.",
+      "Suggest scheduling time for self-care and family activities.",
+      "Advise them to seek help, whether from family or professionals."
+    ],
+    "bulletPoints": [
+      "Make a list of priorities and focus on what's most important.",
+      "Set aside dedicated time for relaxation and family bonding.",
+      "Consider delegating tasks or asking for support from others."
+    ],
+    "context": "Balancing work and family life is challenging, especially in a busy Canadian community where demands can be high.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-155",
+    "scenario": "Your coworker is having trouble with team dynamics and believes their suggestions are often ignored during meetings. They're seeking your advice on how to handle this situation effectively.",
+    "prompt": "What advice would you give your coworker who feels their ideas are ignored in team meetings? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to communicate their thoughts more assertively.",
+      "Suggest they seek feedback from colleagues after meetings.",
+      "Advise them to propose a structured way to share ideas."
+    ],
+    "bulletPoints": [
+      "Practice assertive communication techniques when sharing ideas.",
+      "Engage with team members one-on-one to build relationships.",
+      "Suggest using visual aids to present ideas more effectively."
+    ],
+    "context": "Team dynamics can often impact workplace effectiveness, and ensuring everyone’s voice is heard is crucial.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-156",
+    "scenario": "Your neighbor is feeling isolated since moving to your community and is looking for ways to connect with others. They ask for your advice on how to make new friends.",
+    "prompt": "What advice would you give your neighbor who is feeling isolated and wants to make new friends? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to join local community groups or clubs.",
+      "Suggest they attend social events in the neighborhood.",
+      "Advise them to reach out to coworkers or acquaintances.",
+      "Explore their interests to find like-minded people."
+    ],
+    "bulletPoints": [
+      "Research local clubs or events that align with their interests.",
+      "Engage with online community forums specific to their area.",
+      "Offer to introduce them to your friends or family."
+    ],
+    "context": "Connecting in a new community can be challenging, especially in a diverse Canadian setting, but there are many opportunities.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-157",
+    "scenario": "Your friend has a great business idea but is unsure how to proceed with turning it into a reality. They ask for your advice on the next steps.",
+    "prompt": "What advice would you give your friend who is unsure about how to start their business idea? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to create a business plan outlining their goals.",
+      "Suggest researching potential markets and competitors.",
+      "Advise networking with local entrepreneurs for insights."
+    ],
+    "bulletPoints": [
+      "Draft a clear and concise business plan to follow.",
+      "Conduct market research to validate their idea.",
+      "Connect with a mentor or advisor in the entrepreneurial community."
+    ],
+    "context": "Starting a business in Canada requires careful planning and understanding of the market.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-158",
+    "scenario": "Your friend is feeling unfulfilled in their current job but is hesitant about making a career change. They come to you for advice.",
+    "prompt": "What advice would you give your friend who feels unfulfilled at work but is unsure about changing careers? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to assess their skills and passions.",
+      "Suggest informational interviews with professionals in fields of interest.",
+      "Advise volunteering or pursuing part-time opportunities in new areas."
+    ],
+    "bulletPoints": [
+      "Evaluate their current job satisfaction and future aspirations.",
+      "Network with professionals to gain insights into other careers.",
+      "Explore educational resources or workshops to enhance skills."
+    ],
+    "context": "Career satisfaction is important, and Canadians often seek fulfilling work that aligns with their interests and skills.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-159",
+    "scenario": "Your sibling is experiencing difficulties communicating in their new job, particularly with coworkers. They ask for your advice on improving their communication skills.",
+    "prompt": "What advice would you give your sibling who is struggling with communication at work? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to practice active listening techniques.",
+      "Suggest enrolling in workshops or training sessions on communication.",
+      "Advise them to seek feedback from coworkers on their communication style."
+    ],
+    "bulletPoints": [
+      "Practice listening attentively and engaging in conversations.",
+      "Participate in communication workshops or classes.",
+      "Encourage open discussions to clarify communication misunderstandings."
+    ],
+    "context": "Effective communication is critical in the workplace, especially for newcomers in a diverse Canadian environment.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-160",
+    "scenario": "Your friend has been invited to a cultural festival but feels unsure about attending because they don't know anyone else going. They seek your advice on what to do.",
+    "prompt": "What advice would you give your friend who is hesitant to attend a cultural festival alone? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to attend as a chance to meet new people.",
+      "Suggest researching the festival activities in advance.",
+      "Advise them to reach out to others attending through social media."
+    ],
+    "bulletPoints": [
+      "Emphasize the benefits of attending new events for personal growth.",
+      "Participate in group activities or workshops at the festival.",
+      "Use social media platforms to connect with fellow attendees."
+    ],
+    "context": "Cultural festivals are a great way to experience community diversity in Canada, and attending alone can be a rewarding experience.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-161",
+    "scenario": "Your friend is feeling overwhelmed by financial responsibilities after moving into their first apartment. They reach out to you for advice on managing their budget.",
+    "prompt": "What advice would you give your friend on managing their budget in their new apartment? Please provide three suggestions.",
+    "tips": [
+      "Encourage creating a detailed monthly budget.",
+      "Suggest cutting unnecessary expenses and tracking savings.",
+      "Advise seeking resources on financial literacy."
+    ],
+    "bulletPoints": [
+      "List all income sources and monthly expenses to gain clarity.",
+      "Identify and reduce non-essential spending.",
+      "Utilize budgeting apps or financial planning methods."
+    ],
+    "context": "Managing finances is crucial for young adults in Canada, especially when adjusting to independent living.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-162",
+    "scenario": "Your colleague is feeling burnt out and is considering taking a leave of absence but is unsure if it's the right decision. They ask for your perspective.",
+    "prompt": "What advice would you give your colleague who is contemplating taking a leave of absence due to burnout? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to evaluate the reasons behind their burnout.",
+      "Suggest they discuss their situation with a supervisor or HR.",
+      "Advise them to consider a short break or modified work schedule first."
+    ],
+    "bulletPoints": [
+      "Assess the causes of burnout and potential solutions.",
+      "Communicate openly with supervisors about workload.",
+      "Explore options for temporary adjustments versus a leave."
+    ],
+    "context": "Workplace burnout is a common issue, and addressing it can lead to healthier work environments and employee well-being.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-163",
+    "scenario": "Your friend is thinking about transitioning to a remote work arrangement but is uncertain about how to make this change. They ask for your input on the process.",
+    "prompt": "What advice would you give your friend who is considering transitioning to remote work? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to discuss their options with their employer.",
+      "Suggest creating a productive workspace at home.",
+      "Advise them to establish a routine to maintain work-life balance."
+    ],
+    "bulletPoints": [
+      "Communicate clearly with their employer about their intentions.",
+      "Set up a designated workspace to increase productivity.",
+      "Develop a daily schedule to separate work from personal time."
+    ],
+    "context": "With the rise of remote work in Canada, many individuals are exploring how to adapt to this new working style effectively.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-164",
+    "scenario": "Your friend Mike is struggling to stay organized with his work and personal life, which is affecting his productivity.",
+    "prompt": "What advice can you give Mike to help him manage his time better? Please provide three suggestions.",
+    "tips": [
+      "Encourage him to create a daily schedule.",
+      "Suggest using digital tools for organization.",
+      "Advise him to prioritize tasks based on deadlines."
+    ],
+    "bulletPoints": [
+      "Set aside specific times for work and leisure.",
+      "Utilize apps like Trello or Google Calendar.",
+      "Identify high-priority tasks each day."
+    ],
+    "context": "This scenario reflects the challenges many people face in managing their responsibilities in a busy lifestyle.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-165",
+    "scenario": "Your colleague Sarah is feeling overwhelmed with her increasing workload and is unsure how to ask for help.",
+    "prompt": "What advice would you give Sarah to navigate this situation? Please share three suggestions.",
+    "tips": [
+      "Encourage open communication with her supervisor.",
+      "Suggest collaborating with teammates for support.",
+      "Advise her to assess which tasks can be delegated."
+    ],
+    "bulletPoints": [
+      "Schedule a meeting with her manager to express her concerns.",
+      "Form a buddy system for shared tasks.",
+      "List her tasks and identify which ones are critical."
+    ],
+    "context": "In a workplace setting, balancing workload and seeking help is a common challenge.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-166",
+    "scenario": "Your friend Julia is feeling uncertain about pursuing a promotion at work and is seeking your advice.",
+    "prompt": "What advice can you give Julia regarding pursuing her promotion? Please provide three suggestions.",
+    "tips": [
+      "Encourage her to reflect on her accomplishments.",
+      "Advise her to research what the promotion entails.",
+      "Suggest seeking mentorship from someone in a higher position."
+    ],
+    "bulletPoints": [
+      "List her key achievements to build confidence.",
+      "Understand the skills and requirements for the new role.",
+      "Connect with a mentor for guidance and support."
+    ],
+    "context": "Career progression is a vital topic for many professionals looking for advancement.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-167",
+    "scenario": "Your neighbor has been experiencing difficulties in building friendships since moving to the area.",
+    "prompt": "What advice would you give your neighbor to help them make new friends? Please share three suggestions.",
+    "tips": [
+      "Encourage them to join local clubs or classes.",
+      "Suggest attending community events for networking.",
+      "Advise starting small conversations with neighbors."
+    ],
+    "bulletPoints": [
+      "Look for interest-based groups like book clubs or sports.",
+      "Check local calendars for community gatherings.",
+      "Be approachable and initiate conversations."
+    ],
+    "context": "Building a social circle can be particularly challenging for newcomers in any community.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-168",
+    "scenario": "Your friend Liam is feeling stuck in his routine and wants to explore new hobbies but doesn't know where to start.",
+    "prompt": "What advice can you offer Liam about exploring new hobbies? Please provide three suggestions.",
+    "tips": [
+      "Encourage him to try out workshops or classes.",
+      "Suggest he look into community centers for offerings.",
+      "Advise him to connect with friends who have different interests."
+    ],
+    "bulletPoints": [
+      "Attend local classes in arts, cooking, or sports.",
+      "Explore volunteer opportunities for new experiences.",
+      "Reach out to friends for possible hobby collaborations."
+    ],
+    "context": "Many individuals seek personal growth and fulfillment through new activities.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-169",
+    "scenario": "Your coworker is struggling with work-life balance and feels guilty about taking time off.",
+    "prompt": "What advice can you give your coworker about taking time off? Please provide three suggestions.",
+    "tips": [
+      "Encourage them to acknowledge the importance of rest.",
+      "Suggest planning vacations in advance.",
+      "Advise discussing workload with the manager before taking time off."
+    ],
+    "bulletPoints": [
+      "Emphasize that taking breaks can boost productivity.",
+      "Use vacation days to recharge, not feel guilty about it.",
+      "Have a proactive conversation about workload management."
+    ],
+    "context": "Striking a balance between personal time and work responsibilities is a common issue.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-170",
+    "scenario": "Your friend Zoe is considering volunteering for a local charity but is unsure how to choose the right one.",
+    "prompt": "What advice would you give Zoe on selecting a volunteer organization? Please offer three suggestions.",
+    "tips": [
+      "Suggest she identifies her interests and skills.",
+      "Advise researching charities that align with her values.",
+      "Encourage connecting with current volunteers for insights."
+    ],
+    "bulletPoints": [
+      "Consider areas she’s passionate about, like animals or youth programs.",
+      "Look for organizations with good reputations in the community.",
+      "Attend volunteer fairs to meet different organizations."
+    ],
+    "context": "Volunteering can be a great way to give back and gain experience, but choosing the right fit is crucial.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-171",
+    "scenario": "Your aunt is considering joining a fitness program to improve her health but is hesitant about the commitment.",
+    "prompt": "What advice can you give your aunt about joining a fitness program? Please share three suggestions.",
+    "tips": [
+      "Encourage her to start with a trial class.",
+      "Suggest finding a workout buddy for motivation.",
+      "Advise her to set realistic fitness goals."
+    ],
+    "bulletPoints": [
+      "Explore local gyms that provide free introductory classes.",
+      "Bring a friend to classes for shared support.",
+      "Define achievable fitness milestones to track progress."
+    ],
+    "context": "Starting a fitness journey can be intimidating; support and encouragement are key.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-172",
+    "scenario": "Your friend has been feeling unmotivated in her job and is asking for advice on reigniting her passion.",
+    "prompt": "What advice would you give her to rekindle her motivation? Please provide three suggestions.",
+    "tips": [
+      "Encourage her to revisit what she loves about her job.",
+      "Suggest setting new professional goals.",
+      "Advise seeking feedback from her manager."
+    ],
+    "bulletPoints": [
+      "Reflect on the aspects of the job she enjoys the most.",
+      "Write down short-term and long-term career aspirations.",
+      "Discuss performance with supervisors for guidance."
+    ],
+    "context": "It's common for individuals to hit a plateau in their careers and need inspiration.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-173",
+    "scenario": "Your friend is worried about the upcoming job interview and is seeking advice on how to prepare.",
+    "prompt": "What advice can you give your friend for preparing for the job interview? Please share three suggestions.",
+    "tips": [
+      "Encourage researching the company beforehand.",
+      "Suggest practicing common interview questions.",
+      "Advise preparing thoughtful questions to ask the interviewer."
+    ],
+    "bulletPoints": [
+      "Familiarize herself with the company's culture and mission.",
+      "Role-play interview scenarios with a friend for greater confidence.",
+      "Prepare insightful questions that demonstrate interest."
+    ],
+    "context": "Interview preparation is essential for job seekers and can greatly impact their performance.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-174",
+    "scenario": "Your friend Ethan has recently taken up a new job in a Canadian tech company but feels out of place among his colleagues. He’s seeking your advice on how to better integrate into the team.",
+    "prompt": "Ethan is feeling a bit isolated at work and is looking for ways to connect with his new colleagues. What advice would you give him? Provide three suggestions.",
+    "tips": [
+      "Encourage Ethan to join team-building activities or social events.",
+      "Suggest initiating casual conversations or coffee breaks with colleagues.",
+      "Advise him to share his interests or hobbies to find common ground."
+    ],
+    "bulletPoints": [
+      "Participate in team events.",
+      "Open up conversations.",
+      "Find shared interests."
+    ],
+    "context": "Adjusting to a new work environment is common, especially in diverse workplaces like those in Canada, where social connections can enhance job satisfaction.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-175",
+    "scenario": "Your cousin Mia is planning a family gathering but is unsure how to make it engaging for everyone, especially since family members have varying interests. She asks you for advice on how to plan it.",
+    "prompt": "Mia wants to create a memorable family gathering that caters to everyone's interests. What advice would you give her? Provide three suggestions.",
+    "tips": [
+      "Encourage her to include a mix of activities suitable for all ages.",
+      "Suggest preparing a potluck meal to involve everyone in the food preparation.",
+      "Advise her to create a schedule with flexible timelines to keep the event lively."
+    ],
+    "bulletPoints": [
+      "Diverse activities for all ages.",
+      "Potluck to involve family.",
+      "Flexible schedule for activities."
+    ],
+    "context": "Organizing family gatherings can be challenging, especially in Canadian multicultural families where interests can greatly vary.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-176",
+    "scenario": "Your friend Sarah has received a job offer in a different province but is hesitant about moving away from family and friends. She seeks your guidance on what she should consider.",
+    "prompt": "What advice would you give Sarah regarding her potential job offer? Provide three suggestions.",
+    "tips": [
+      "Encourage weighing the pros and cons of the move.",
+      "Suggest visiting the new location before making a decision.",
+      "Remind her to consider her long-term career goals."
+    ],
+    "bulletPoints": [
+      "Consider job market dynamics in both provinces.",
+      "Explore the social support network in the new city.",
+      "Assess potential impact on family relationships."
+    ],
+    "context": "Work-life balance and career decisions in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-177",
+    "scenario": "Your cousin Alex is contemplating starting a side business while continuing his full-time job, but he’s unsure about the time commitment and potential risks involved.",
+    "prompt": "What advice would you provide to Alex regarding his potential side business? Give him three suggestions.",
+    "tips": [
+      "Suggest conducting thorough market research before starting.",
+      "Advise him to set a realistic schedule that balances both commitments.",
+      "Encourage him to seek mentorship from experienced entrepreneurs."
+    ],
+    "bulletPoints": [
+      "Identify time management strategies for better productivity.",
+      "Consider financial implications and budgeting for startup costs.",
+      "Evaluate the feasibility based on current job demands."
+    ],
+    "context": "Entrepreneurship and personal development in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-178",
+    "scenario": "Your colleague David is facing ethical dilemmas at work due to pressure from management to meet aggressive targets. He’s considering whether to raise concerns or comply.",
+    "prompt": "What advice would you give David regarding handling workplace ethics? Provide three suggestions.",
+    "tips": [
+      "Encourage him to document everything for transparency.",
+      "Advise him to seek advice from HR or a trusted mentor.",
+      "Recommend discussing concerns constructively with management."
+    ],
+    "bulletPoints": [
+      "Understand company policies on ethical practices.",
+      "Evaluate personal values in the context of his career.",
+      "Consider the long-term effects on his professional integrity."
+    ],
+    "context": "Workplace ethics and decision-making in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-179",
+    "scenario": "Your friend Lisa is considering pursuing a graduate degree while juggling her current job and personal life but feels overwhelmed by the commitment.",
+    "prompt": "What advice can you give Lisa regarding her education decisions? Offer three suggestions.",
+    "tips": [
+      "Suggest assessing the potential career benefits of further education.",
+      "Advise her to explore part-time or online programs for flexibility.",
+      "Encourage maintaining open communication with her employer about her aspirations."
+    ],
+    "bulletPoints": [
+      "Evaluate how the degree aligns with her career goals.",
+      "Understand the financial implications of further studies.",
+      "Consider developing a strong support network during her studies."
+    ],
+    "context": "Education and career development in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-180",
+    "scenario": "Your sister Nina is facing difficulties managing her mental health amidst the pressures of everyday life and is unsure if she should seek professional help.",
+    "prompt": "What advice would you offer to Nina regarding her mental health? Provide three suggestions.",
+    "tips": [
+      "Encourage her to consider speaking to a mental health professional.",
+      "Suggest exploring local community resources for support.",
+      "Advise her to prioritize self-care and stress management techniques."
+    ],
+    "bulletPoints": [
+      "Identify the importance of seeking help early.",
+      "Discuss the stigma around mental health and ways to overcome it.",
+      "Evaluate the benefits of different types of therapy."
+    ],
+    "context": "Mental health awareness and support systems in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-181",
+    "scenario": "Your friend Carlos is contemplating whether to relocate to a smaller town for a quieter lifestyle versus staying in the bustling city where he currently resides.",
+    "prompt": "What advice would you give Carlos regarding this decision? Provide three suggestions.",
+    "tips": [
+      "Encourage him to reflect on his priorities for a fulfilling life.",
+      "Suggest visiting the smaller town for an extended period.",
+      "Advise considering job prospects and community engagement in both locations."
+    ],
+    "bulletPoints": [
+      "Assess the cost of living differences.",
+      "Evaluate social opportunities and lifestyle changes.",
+      "Consider the impact on his current relationships."
+    ],
+    "context": "Lifestyle choices and community living in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-182",
+    "scenario": "Your colleague Michael is struggling with a recent promotion that has increased his workload and stress, leaving him uncertain about his capabilities to lead a team.",
+    "prompt": "What advice would you offer Michael on managing his new role? Give him three suggestions.",
+    "tips": [
+      "Encourage him to seek additional training or mentorship in leadership.",
+      "Advise him to communicate openly with his team about challenges.",
+      "Suggest implementing time-management techniques to handle responsibilities."
+    ],
+    "bulletPoints": [
+      "Recognize the importance of networking within his new role.",
+      "Evaluate the benefits of delegation and teamwork.",
+      "Consider personal wellbeing as a priority for effective leadership."
+    ],
+    "context": "Professional development and leadership challenges in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-183",
+    "scenario": "Your friend Jason feels an ethical conflict regarding his workplace's environmental practices, which do not align with his values and beliefs.",
+    "prompt": "What advice would you give Jason about addressing his ethical concerns? Provide three suggestions.",
+    "tips": [
+      "Encourage researching the company’s policies on sustainability.",
+      "Advise him to engage in constructive conversations with management.",
+      "Suggest exploring external advocacy groups aligned with his values."
+    ],
+    "bulletPoints": [
+      "Understand the possible repercussions of voicing concerns.",
+      "Evaluate ways to influence positive change within the organization.",
+      "Consider finding a workplace that aligns better with his ethics."
+    ],
+    "context": "Corporate responsibility and environmental ethics in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-184",
+    "scenario": "Your aunt Angela is facing the dilemma of caring for her aging parents while managing her own family and work responsibilities, causing her significant stress.",
+    "prompt": "What advice would you provide to Angela about her caregiving situation? Offer three suggestions.",
+    "tips": [
+      "Encourage her to explore local support groups for caregivers.",
+      "Suggest coordinating care with family members to share responsibilities.",
+      "Advise her to prioritize her self-care and mental health."
+    ],
+    "bulletPoints": [
+      "Discuss the importance of setting boundaries.",
+      "Evaluate community resources for eldercare assistance.",
+      "Consider the financial implications of caregiving."
+    ],
+    "context": "Elder care and family dynamics in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-185",
+    "scenario": "Your friend Amanda recently completed a significant project at work but is unsure how to effectively showcase her accomplishments to her superiors without coming off as boastful.",
+    "prompt": "What advice would you give Amanda about self-promotion in the workplace? Provide three suggestions.",
+    "tips": [
+      "Encourage her to focus on quantifiable results when presenting achievements.",
+      "Advise her to seek opportunities for team recognition.",
+      "Suggest framing accomplishments within the context of overall team goals."
+    ],
+    "bulletPoints": [
+      "Identify key achievements that align with company objectives.",
+      "Evaluate the best channels for self-promotion, such as meetings or reports.",
+      "Discuss the importance of humility and collaboration in leadership."
+    ],
+    "context": "Professional growth and visibility in the workplace in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-186",
+    "scenario": "Your friend has been offered a promotion at work but is concerned about the increased responsibilities affecting their work-life balance.",
+    "prompt": "Your friend is seeking your advice on whether they should accept the promotion offer. Provide three suggestions for them.",
+    "tips": [
+      "Emphasize the importance of work-life balance.",
+      "Encourage them to weigh the pros and cons of the promotion.",
+      "Suggest discussing their concerns with a mentor or supervisor."
+    ],
+    "bulletPoints": [
+      "Consider the potential benefits of the promotion.",
+      "Evaluate personal priorities and values.",
+      "Discuss workload expectations with management."
+    ],
+    "context": "In a corporate environment, work-life balance is a growing concern for many employees.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-187",
+    "scenario": "Your friend has been feeling guilty about taking a break after working long hours. They believe they should always be productive.",
+    "prompt": "Your friend asks for your advice on how to manage their guilt towards taking breaks. Provide three suggestions.",
+    "tips": [
+      "Highlight the importance of self-care for overall productivity.",
+      "Advise on setting specific times for breaks to improve focus.",
+      "Suggest engaging in leisure activities that bring joy."
+    ],
+    "bulletPoints": [
+      "Productivity is affected by burnout; breaks are essential.",
+      "Regular breaks can enhance creativity and efficiency.",
+      "Guilt can be managed by reframing productivity perceptions."
+    ],
+    "context": "In Canadian workplace culture, there is often pressure to maintain high productivity without sufficient breaks.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-188",
+    "scenario": "Your colleague is contemplating enrolling in an online course to enhance their skills but is unsure of the time commitment.",
+    "prompt": "Your colleague seeks your advice on balancing their current job responsibilities with studying. Provide three suggestions.",
+    "tips": [
+      "Recommend creating a detailed schedule to allocate time for studies.",
+      "Encourage them to start with a lighter course load.",
+      "Advise setting clear goals for what they want to achieve from the course."
+    ],
+    "bulletPoints": [
+      "Time management is key to balancing work and study.",
+      "Consider options for flexible learning.",
+      "Small, attainable goals can lead to greater motivation."
+    ],
+    "context": "Many professionals in Canada enhance their skills through online courses while managing full-time jobs.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-189",
+    "scenario": "Your friend is considering moving to a new city for a job opportunity but is feeling apprehensive about leaving their current support system.",
+    "prompt": "Your friend asks for advice on making the decision about the job move. Provide three suggestions.",
+    "tips": [
+      "Encourage them to assess the potential benefits of the new job.",
+      "Suggest visiting the new city beforehand to gauge their comfort.",
+      "Advise them to think about how they can maintain connections with their support system."
+    ],
+    "bulletPoints": [
+      "Change can lead to personal and professional growth.",
+      "Visiting the city can alleviate fears and build excitement.",
+      "Connections can be maintained through technology."
+    ],
+    "context": "In Canada, relocation for job opportunities is common, but it can be emotionally challenging.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-190",
+    "scenario": "Your family member is frustrated with their current living situation and is considering buying a house but feels overwhelmed by the financial implications.",
+    "prompt": "Your family member seeks your advice on home buying and managing finances. Provide three suggestions.",
+    "tips": [
+      "Advise them to consult a financial advisor for a comprehensive budget.",
+      "Suggest researching government programs for first-time homebuyers.",
+      "Encourage them to explore various neighborhoods and market trends."
+    ],
+    "bulletPoints": [
+      "Understanding finances is crucial before buying a property.",
+      "Research can reveal more affordable options.",
+      "Support systems can ease the stress of decision-making."
+    ],
+    "context": "In Canada, the housing market can be intimidating for new buyers, especially concerning financial commitments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-191",
+    "scenario": "Your friend is passionate about environmental sustainability but is feeling discouraged about making a significant impact.",
+    "prompt": "Your friend asks for advice on how they can contribute more effectively to sustainability efforts. Provide three suggestions.",
+    "tips": [
+      "Encourage grassroots initiatives or community involvement.",
+      "Advise them to advocate for policy changes through local organizations.",
+      "Suggest starting small, like reducing personal waste and sharing tips."
+    ],
+    "bulletPoints": [
+      "Individual actions can collectively lead to greater change.",
+      "Community efforts can amplify their voice and impact.",
+      "Educating others can spark broader discussions."
+    ],
+    "context": "With growing awareness of climate change, many Canadians seek ways to contribute to sustainability but feel powerless at times.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-192",
+    "scenario": "Your neighbor is planning to start a community garden but is unsure how to motivate others to participate.",
+    "prompt": "Your neighbor asks for your advice on engaging the community in the garden project. Provide three suggestions.",
+    "tips": [
+      "Advise them to host an informational meeting to generate interest.",
+      "Suggest creating a social media group for updates and engagement.",
+      "Encourage collaborative planning sessions for shared input and ownership."
+    ],
+    "bulletPoints": [
+      "Community involvement can foster a sense of ownership.",
+      "Building excitement can increase participation rates.",
+      "Utilizing social platforms can reach a wider audience."
+    ],
+    "context": "Community gardening is a collaborative effort seen in many Canadian neighborhoods, promoting sustainability and local engagement.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-193",
+    "scenario": "Your co-worker is struggling with a conflict at work involving differing opinions on a project but is unsure how to address it professionally.",
+    "prompt": "Your co-worker seeks your advice on resolving workplace conflict constructively. Provide three suggestions.",
+    "tips": [
+      "Encourage them to initiate a private discussion to clarify misunderstandings.",
+      "Suggest focusing on the project goals rather than personal differences.",
+      "Advise involving a mediator if discussions become unproductive."
+    ],
+    "bulletPoints": [
+      "Open communication can often resolve issues before they escalate.",
+      "Collaborative problem-solving can enhance team dynamics.",
+      "Professionalism is key to maintaining workplace harmony."
+    ],
+    "context": "Workplace conflicts are common in diverse Canadian teams, where opinions may vary significantly.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-194",
+    "scenario": "Your friend is thinking about becoming more involved in local politics but feels unqualified and nervous about public speaking.",
+    "prompt": "Your friend seeks your advice on how to prepare for a potential role in local politics. Provide three suggestions.",
+    "tips": [
+      "Encourage them to start by attending local council meetings to understand the process.",
+      "Suggest practicing public speaking in informal settings, like community groups.",
+      "Advise seeking mentorship from experienced politicians or activists."
+    ],
+    "bulletPoints": [
+      "Familiarity with local issues can build confidence.",
+      "Practice reduces anxiety around public speaking.",
+      "Mentorship provides valuable insights and support."
+    ],
+    "context": "In Canada, civic engagement is crucial, yet many feel intimidated by the prospect of public leadership roles.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-195",
+    "scenario": "Your colleague is contemplating whether to accept a transfer to a different office but is hesitant about adjusting to a new team.",
+    "prompt": "Your colleague seeks your advice on making the transfer decision regarding team dynamics. Provide three suggestions.",
+    "tips": [
+      "Encourage them to research the new office culture beforehand.",
+      "Suggest reaching out to someone on the new team to discuss expectations.",
+      "Advise them to consider how this move aligns with their long-term career goals."
+    ],
+    "bulletPoints": [
+      "Understanding new team dynamics can alleviate fears.",
+      "Networking with new colleagues can ease the transition.",
+      "Career alignment can enhance job satisfaction and engagement."
+    ],
+    "context": "Workplace transfers in Canada can lead to career advancement but may involve significant adjustments.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-196",
+    "scenario": "Your cousin is contemplating whether to take a well-paying job offer in another city, but they would have to leave their close-knit social circle behind.",
+    "prompt": "Your cousin is seeking your perspective on their potential move. Provide three pieces of advice regarding this decision.",
+    "tips": [
+      "Highlight the importance of weighing career growth against personal relationships.",
+      "Remind them to consider the overall lifestyle change.",
+      "Encourage them to explore remote options or frequent visits."
+    ],
+    "bulletPoints": [
+      "List the pros and cons of the job offer.",
+      "Consider the emotional impact of moving.",
+      "Research the new city to understand the community and opportunities."
+    ],
+    "context": "In a family setting where discussing career aspirations and personal ties is common.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-197",
+    "scenario": "Your friend has recently become the primary caregiver for their aging parents, and they're struggling to maintain a work-life balance while providing adequate support.",
+    "prompt": "Your friend requests your assistance in balancing their caregiving duties with their professional responsibilities. Offer three suggestions.",
+    "tips": [
+      "Encourage them to set boundaries between caregiving and work.",
+      "Suggest they look into community resources for support.",
+      "Remind them to prioritize self-care."
+    ],
+    "bulletPoints": [
+      "Establish a daily routine that accommodates both roles.",
+      "Connect with local support groups for caregivers.",
+      "Schedule regular breaks to recharge emotionally and physically."
+    ],
+    "context": "In the context of family obligations and the demands of modern employment.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-198",
+    "scenario": "Your coworker has been feeling isolated at work and is struggling to build connections with colleagues in the new office environment.",
+    "prompt": "Your coworker is asking how they can foster relationships in their workplace. Provide three constructive pieces of advice.",
+    "tips": [
+      "Encourage initiating small conversations or joining group activities.",
+      "Suggest volunteering for team projects to collaborate.",
+      "Remind them to be patient and give connections time to develop."
+    ],
+    "bulletPoints": [
+      "Attend social gatherings organized by the company.",
+      "Participate in informal coffee breaks or lunch outings.",
+      "Reach out to colleagues for casual catch-ups."
+    ],
+    "context": "In an office culture that values teamwork and collaboration but is currently lacking personal interactions.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
+  },
+  {
+    "id": "task1-199",
+    "scenario": "Your friend is considering a career change but is unsure due to financial stability concerns and potential job market volatility.",
+    "prompt": "Your friend is looking for guidance on how to approach this major life decision. Provide three key pieces of advice.",
+    "tips": [
+      "Advise them to conduct thorough market research on their desired field.",
+      "Encourage financial planning to mitigate risks.",
+      "Suggest skill development or educational opportunities."
+    ],
+    "bulletPoints": [
+      "Create a budget that accounts for potential income changes.",
+      "Network with professionals in the desired field for insights.",
+      "Consider part-time or freelance options to test the new waters."
+    ],
+    "context": "Reflecting on financial security while pursuing personal fulfillment in one's career.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 90
   }
 ]

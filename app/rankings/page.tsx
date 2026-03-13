@@ -95,7 +95,7 @@ export default function RankingsPage() {
           data.top10.map((entry) => (
             <div
               key={entry.rank}
-              className={`${styles.rankRow} ${entry.isCurrentUser ? styles.myRow : ''} ${entry.rank <= 3 ? styles.topThree : ''}`}
+              className={`${styles.rankRow} ${entry.isCurrentUser ? styles.myRow : ''} ${entry.rank <= 3 ? styles.topThree : ''} ${entry.rank === 1 ? styles.champion : ''}`}
             >
               <div className={styles.rankBadge}>
                 {getRankIcon(entry.rank)}

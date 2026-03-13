@@ -14,21 +14,21 @@ export interface ErrorStats {
 const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: string[] }> = {
   // Task 1 errors
   'dear-check': {
-    title: 'Saudação com "Dear"',
+    title: 'Greeting with "Dear"',
     tips: [
-      'Todo email no CELPIP deve começar com "Dear" seguido do nome/título',
-      'Use "Dear Sir/Madam" quando não souber o nome',
-      'Use "Dear Mr./Ms./Mrs. [Sobrenome]" para formal',
-      'Use "Dear [Nome]" para informal/semi-formal',
+      'Every CELPIP email must start with "Dear" followed by a name/title',
+      'Use "Dear Sir/Madam" when you don\'t know the name',
+      'Use "Dear Mr./Ms./Mrs. [Last Name]" for formal emails',
+      'Use "Dear [First Name]" for informal/semi-formal emails',
     ],
     examples: ['Dear Mr. Johnson,', 'Dear Hiring Manager,', 'Dear Sarah,'],
   },
   'intro-check': {
-    title: 'Introdução e Propósito',
+    title: 'Introduction and Purpose',
     tips: [
-      'A primeira frase deve explicar quem você é e por que está escrevendo',
-      'Use "I am writing to..." ou "I am a resident of..."',
-      'Seja direto e claro sobre o objetivo do email',
+      'The first sentence should explain who you are and why you are writing',
+      'Use "I am writing to..." or "I am a resident of..."',
+      'Be direct and clear about the purpose of your email',
     ],
     examples: [
       'I am writing to express my concern about...',
@@ -37,12 +37,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'connectors-check': {
-    title: 'Conectores de Sequência',
+    title: 'Sequence Connectors',
     tips: [
-      'Use conectores para organizar suas ideias claramente',
-      'Distribua: First/Firstly, Second/Secondly, Third, Finally',
-      'Outros úteis: Additionally, Moreover, Furthermore',
-      'Ajudam o leitor a seguir sua lógica',
+      'Use connectors to organize your ideas clearly',
+      'Distribute: First/Firstly, Second/Secondly, Third, Finally',
+      'Other useful ones: Additionally, Moreover, Furthermore',
+      'They help the reader follow your logic',
     ],
     examples: [
       'First, I would like to address the issue of...',
@@ -51,30 +51,30 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'contractions-check': {
-    title: 'Evitar Contrações (Formal)',
+    title: 'Avoid Contractions (Formal)',
     tips: [
-      'Em emails formais, escreva as palavras completas',
+      'In formal emails, write out the full words',
       "don't → do not | can't → cannot | won't → will not",
       "it's → it is | I'm → I am | shouldn't → should not",
-      'Contrações são OK apenas em emails informais',
+      'Contractions are only OK in informal emails',
     ],
   },
   'word-count-check': {
-    title: 'Contagem de Palavras',
+    title: 'Word Count',
     tips: [
-      'O ideal é entre 150-200 palavras',
-      'Menos de 150: pode perder pontos por falta de conteúdo',
-      'Mais de 200: OK, mas cuidado com o tempo',
-      'Pratique para acertar o tamanho naturalmente',
+      'The ideal range is 150-200 words',
+      'Under 150: you may lose points for insufficient content',
+      'Over 200: OK, but be mindful of time',
+      'Practice to hit the right length naturally',
     ],
   },
   'closing-check': {
-    title: 'Encerramento do Email',
+    title: 'Email Closing',
     tips: [
-      'Formal: "Sincerely," ou "Yours faithfully,"',
-      'Semi-formal: "Best regards," ou "Kind regards,"',
-      'Sempre assine com seu nome na linha seguinte',
-      'Não esqueça a vírgula após o encerramento!',
+      'Formal: "Sincerely," or "Yours faithfully,"',
+      'Semi-formal: "Best regards," or "Kind regards,"',
+      'Always sign with your name on the next line',
+      'Don\'t forget the comma after the closing!',
     ],
     examples: [
       'Sincerely,\nJohn Smith',
@@ -82,12 +82,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'request-check': {
-    title: 'Pedido/Ação Clara',
+    title: 'Clear Request/Action',
     tips: [
-      'Termine com um pedido ou ação específica',
-      'Use frases como "I would appreciate if..."',
-      '"Please let me know..." ou "I look forward to..."',
-      'Deixe claro o que você espera do destinatário',
+      'End with a specific request or action',
+      'Use phrases like "I would appreciate if..."',
+      '"Please let me know..." or "I look forward to..."',
+      'Make it clear what you expect from the recipient',
     ],
     examples: [
       'I would appreciate it if you could look into this matter.',
@@ -97,12 +97,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
   },
   // Task 2 errors
   'opinion-check': {
-    title: 'Declaração de Opinião',
+    title: 'Opinion Statement',
     tips: [
-      'A introdução DEVE ter sua opinião claramente',
+      'Your introduction MUST clearly state your opinion',
       'Use: "I believe...", "In my opinion...", "I strongly recommend..."',
-      'Não deixe ambíguo qual lado você escolheu',
-      'Tome uma posição clara e defenda-a',
+      'Don\'t be ambiguous about which side you chose',
+      'Take a clear position and defend it',
     ],
     examples: [
       'In my opinion, working from home is more beneficial than working in an office.',
@@ -110,12 +110,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'conclusion-check': {
-    title: 'Parágrafo de Conclusão',
+    title: 'Conclusion Paragraph',
     tips: [
-      'Comece com "In conclusion," ou "To summarize,"',
-      'Reafirme sua opinião principal',
-      'Resuma brevemente seus argumentos',
-      'Pode adicionar uma frase final forte',
+      'Start with "In conclusion," or "To summarize,"',
+      'Restate your main opinion',
+      'Briefly summarize your arguments',
+      'You can add a strong final sentence',
     ],
     examples: [
       'In conclusion, I firmly believe that [restate opinion] because [brief summary of reasons].',
@@ -123,12 +123,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'example-check': {
-    title: 'Usar Exemplos Concretos',
+    title: 'Use Concrete Examples',
     tips: [
-      'Cada argumento deve ter um exemplo ou evidência',
+      'Each argument should have an example or evidence',
       'Use "For example,", "For instance,", "such as"',
-      'Exemplos pessoais ou hipotéticos são válidos',
-      'Torna seu argumento mais convincente',
+      'Personal or hypothetical examples are valid',
+      'Makes your argument more convincing',
     ],
     examples: [
       'For example, my neighbor started working remotely and reported a 50% reduction in stress.',
@@ -136,12 +136,12 @@ const ERROR_TIPS: Record<string, { title: string; tips: string[]; examples?: str
     ],
   },
   'rhetorical-check': {
-    title: 'Evitar Perguntas Retóricas',
+    title: 'Avoid Rhetorical Questions',
     tips: [
-      'No CELPIP, evite perguntas como argumentos',
-      'Em vez de "Why is this important?", afirme: "This is important because..."',
-      'Perguntas podem parecer que você não tem certeza',
-      'Faça afirmações diretas e confiantes',
+      'In the CELPIP, avoid using questions as arguments',
+      'Instead of "Why is this important?", state: "This is important because..."',
+      'Questions may make it seem like you are unsure',
+      'Make direct and confident statements',
     ],
   },
 };
@@ -270,7 +270,7 @@ export default function ErrorReview({ mode = 'full' }: ErrorReviewProps) {
         <div className={styles.perfectScore}>
           <div className={styles.perfectIcon}>🏆</div>
           <h4>Perfeito!</h4>
-          <p>Você não cometeu erros frequentes. Continue praticando!</p>
+          <p>You haven't made frequent errors. Keep practicing!</p>
         </div>
       ) : (
         <div className={styles.errorList}>

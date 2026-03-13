@@ -3,6 +3,7 @@ import '@/styles/globals.scss';
 import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
 import { EventBanner } from '@/components/EventBanner';
+import { CommunityPopup } from '@/components/CommunityPopup';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -82,7 +83,7 @@ export default function RootLayout({
                 {
                   "@type": "Offer",
                   "name": "Pro Monthly",
-                  "price": "24.99",
+                  "price": "29.99",
                   "priceCurrency": "CAD",
                   "priceValidUntil": "2027-12-31",
                   "description": "Unlimited AI practice, mock exams, writing tutor, speaking coach, adaptive difficulty"
@@ -90,10 +91,10 @@ export default function RootLayout({
                 {
                   "@type": "Offer",
                   "name": "Pro Annual",
-                  "price": "99.00",
+                  "price": "149.99",
                   "priceCurrency": "CAD",
                   "priceValidUntil": "2027-12-31",
-                  "description": "All Pro features billed annually — save 67%"
+                  "description": "All Pro features billed annually — save 58%"
                 }
               ]
             })
@@ -123,6 +124,7 @@ export default function RootLayout({
         <ThemeProvider>
           <PlanProvider>
             <EventBanner />
+            <CommunityPopup />
             <Header />
             <div className={styles.container}>
               <Sidebar />
@@ -142,10 +144,28 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: `
                 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                
+                Tawk_API.onLoad = function(){
+                  Tawk_API.setAttributes({
+                    'name': 'Visitor',
+                  }, function(error){});
+                };
+
+                Tawk_API.onChatStarted = function(){
+                  Tawk_API.sendMessage('Hi! 👋 Thanks for reaching out to CELPIP AI Coach. How can we help you today?');
+                };
+
+                Tawk_API.customStyle = {
+                  visibility: {
+                    desktop: { position: 'br', xOffset: 20, yOffset: 20 },
+                    mobile: { position: 'br', xOffset: 10, yOffset: 70 },
+                  }
+                };
+
                 (function(){
                   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
                   s1.async=true;
-                  s1.src='https://embed.tawk.to/${process.env.NEXT_PUBLIC_TAWK_ID}/default';
+                  s1.src='https://embed.tawk.to/${process.env.NEXT_PUBLIC_TAWK_ID}';
                   s1.charset='UTF-8';
                   s1.setAttribute('crossorigin','*');
                   s0.parentNode.insertBefore(s1,s0);

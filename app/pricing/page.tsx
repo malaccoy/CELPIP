@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Check, Sparkles, Zap, Crown, Shield, ArrowRight, Clock, Star, TrendingUp } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Check, X, Sparkles, Zap, Crown, Shield, ArrowRight, Clock, Star, TrendingUp, Quote } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 import styles from '@/styles/Pricing.module.scss';
 
@@ -23,12 +23,69 @@ const PLANS: {
   { id: 'annual', name: '1 Year', price: 149.99, period: '/year', perMonth: 12.50, badge: 'Best Value', badgeColor: '#fbbf24', icon: Crown },
 ];
 
+const COMPARISON_FEATURES = [
+  { feature: 'Practice Exercises', free: '3/day', pro: 'Unlimited', highlight: true },
+  { feature: 'Listening (with audio)', free: true, pro: true },
+  { feature: 'Reading Passages', free: true, pro: true },
+  { feature: 'Writing Prompts', free: true, pro: true },
+  { feature: 'Speaking Prompts', free: true, pro: true },
+  { feature: 'Technique Guides', free: false, pro: true },
+  { feature: 'Leaderboard & Rankings', free: true, pro: true },
+  { feature: 'AI Writing Feedback', free: false, pro: true },
+  { feature: 'AI Speaking Coach', free: false, pro: true },
+  { feature: 'AI Practice Generator', free: false, pro: true },
+  { feature: 'Mock Exams (Quick + Full)', free: false, pro: true },
+  { feature: 'CLB Score Estimate', free: false, pro: true },
+  { feature: 'Adaptive Difficulty', free: false, pro: true },
+  { feature: 'English for Citizenship', free: 'Level 1', pro: 'All 5 Levels' },
+  { feature: 'Priority Support', free: false, pro: true },
+];
+
+const TESTIMONIALS = [
+  {
+    name: 'Priya S.',
+    location: 'Toronto',
+    text: 'I was stuck at CLB 7 for 3 tests. The AI feedback showed me exactly what was wrong with my writing structure. Got CLB 9 on my next try.',
+    score: 'CLB 7 → 9',
+    initials: 'PS',
+    color: '#6366f1',
+  },
+  {
+    name: 'Marco L.',
+    location: 'Vancouver',
+    text: 'Saved me from paying $80/hour for a tutor. The speaking coach caught pronunciation issues I didn\'t even know I had.',
+    score: 'CLB 8 → 10',
+    initials: 'ML',
+    color: '#10b981',
+  },
+  {
+    name: 'Ahmed K.',
+    location: 'Calgary',
+    text: 'The mock exam CLB estimate was spot-on. I knew I was ready before spending $300 on the real test.',
+    score: 'CLB 9',
+    initials: 'AK',
+    color: '#f59e0b',
+  },
+];
+
 export default function PricingPage() {
   const [selectedPlan, setSelectedPlan] = useState<Plan>('quarterly');
   const [loading, setLoading] = useState(false);
+  const [showSticky, setShowSticky] = useState(false);
+  const proBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     analytics.viewPricing();
+  }, []);
+
+  // Sticky CTA: show when Pro button scrolls out of view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowSticky(!entry.isIntersecting),
+      { threshold: 0, rootMargin: '0px' }
+    );
+    if (proBtnRef.current) observer.observe(proBtnRef.current);
+    return () => observer.disconnect();
   }, []);
 
   const handleCheckout = async (plan: Plan) => {
@@ -62,36 +119,11 @@ export default function PricingPage() {
     }
   };
 
-  const freeFeatures = [
-    '3 exercises per day (any skill)',
-    '180 Listening exercises with audio',
-    '78 Reading passages',
-    '60 Writing prompts',
-    '240 Speaking prompts',
-    'Technique guides for all 4 sections',
-    'Leaderboard & rankings',
-  ];
-
-  const proFeatures = [
-    'Everything in Free, plus:',
-    '180 Listening exercises with real audio',
-    '78 Reading exercises',
-    '240 Speaking prompts',
-    '60 Writing prompts',
-    'AI Writing Tutor (score + grammar + model answer)',
-    'AI Speaking Coach (Whisper + detailed feedback)',
-    'Mock Exams — Quick (~30 min) & Full (~3h)',
-    'AI evaluation with CLB score estimate',
-    'Adaptive difficulty (auto-adjusts to your level)',
-    'AI Practice Generator (unlimited)',
-    'Priority support',
-  ];
-
-  const bestPlan = PLANS.find(p => p.id === 'annual')!;
-  const weeklyEquiv = bestPlan.price / 52;
+  const selectedPlanData = PLANS.find(p => p.id === selectedPlan)!;
 
   return (
     <div className={styles.container}>
+      {/* Hero */}
       <div className={styles.hero}>
         <div className={styles.badge}>
           <Sparkles size={14} />
@@ -101,155 +133,163 @@ export default function PricingPage() {
           Invest in Your CELPIP Success
         </h1>
         <p className={styles.subtitle}>
-          AI-powered preparation that adapts to your level — from CA${weeklyEquiv.toFixed(2)}/week
+          AI-powered preparation that adapts to your level — from CA${(PLANS[3].price / 52).toFixed(2)}/week
         </p>
       </div>
 
-      <div className={styles.plans}>
-        {/* Free Plan */}
-        <div className={styles.planCard}>
-          <div className={styles.planHeader}>
-            <div className={styles.planIcon}>
-              <Shield size={24} />
-            </div>
-            <h2 className={styles.planName}>Free</h2>
-            <p className={styles.planDesc}>3 free exercises daily — all skills</p>
-          </div>
-
-          <div className={styles.priceSection}>
-            <span className={styles.price}>$0</span>
-            <span className={styles.period}>/ forever</span>
-          </div>
-
-          <ul className={styles.features}>
-            {freeFeatures.map((f, i) => (
-              <li key={i}>
-                <Check size={16} className={styles.checkIcon} />
-                <span>{f}</span>
-              </li>
-            ))}
-          </ul>
-
-          <button className={styles.freeBtn} onClick={() => window.location.href = '/dashboard'}>
-            Get Started
-            <ArrowRight size={16} />
-          </button>
+      {/* Promo Banner */}
+      <div className={styles.promoBanner}>
+        <div className={styles.promoDiscount}>30% OFF</div>
+        <div className={styles.promoText}>
+          <strong>Launch Special!</strong> Use code <span className={styles.promoCode}>WELCOME30</span> at checkout
         </div>
-
-        {/* Pro Plan */}
-        <div className={`${styles.planCard} ${styles.proPlan}`}>
-          <div className={styles.popularBadge}>
-            <Crown size={14} />
-            Pro — Full AI Power
-          </div>
-
-          <div className={styles.planHeader}>
-            <div className={`${styles.planIcon} ${styles.proIcon}`}>
-              <Zap size={24} />
-            </div>
-            <h2 className={styles.planName}>Pro</h2>
-            <p className={styles.planDesc}>Choose your plan — same features, flexible commitment</p>
-          </div>
-
-          {/* Plan selector cards */}
-          <div style={{
-            display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8,
-            marginBottom: 20,
-          }}>
-            {PLANS.map(plan => {
-              const isSelected = selectedPlan === plan.id;
-              const savings = plan.id !== 'weekly'
-                ? Math.round((1 - plan.perMonth / PLANS[1].perMonth) * 100)
-                : 0;
-              const Icon = plan.icon;
-              return (
-                <button
-                  key={plan.id}
-                  onClick={() => setSelectedPlan(plan.id)}
-                  style={{
-                    background: isSelected
-                      ? 'linear-gradient(135deg, rgba(99,102,241,0.2), rgba(99,102,241,0.08))'
-                      : 'rgba(255,255,255,0.03)',
-                    border: isSelected
-                      ? '2px solid rgba(99,102,241,0.6)'
-                      : '1px solid rgba(255,255,255,0.08)',
-                    borderRadius: 12,
-                    padding: '14px 12px',
-                    cursor: 'pointer',
-                    textAlign: 'left',
-                    transition: 'all 0.2s',
-                    position: 'relative',
-                    overflow: 'hidden',
-                  }}
-                >
-                  {plan.badge && (
-                    <div style={{
-                      position: 'absolute', top: 0, right: 0,
-                      background: plan.badgeColor, color: '#0f172a',
-                      fontSize: 9, fontWeight: 700, padding: '2px 8px',
-                      borderBottomLeftRadius: 8, textTransform: 'uppercase',
-                    }}>
-                      {plan.badge}
-                    </div>
-                  )}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
-                    <Icon size={14} style={{ color: isSelected ? '#818cf8' : 'rgba(248,250,252,0.4)' }} />
-                    <span style={{ fontSize: 13, fontWeight: 600, color: isSelected ? '#e0e7ff' : 'rgba(248,250,252,0.6)' }}>
-                      {plan.name}
-                    </span>
-                  </div>
-                  <div style={{ fontSize: 20, fontWeight: 700, color: isSelected ? '#fff' : 'rgba(248,250,252,0.8)' }}>
-                    CA${plan.price.toFixed(2)}
-                  </div>
-                  <div style={{ fontSize: 11, color: 'rgba(248,250,252,0.4)', marginTop: 2 }}>
-                    {plan.id === 'weekly' ? `≈ CA$${plan.perMonth.toFixed(2)}/mo` :
-                     `CA$${plan.perMonth.toFixed(2)}/mo`}
-                    {savings > 0 && (
-                      <span style={{ color: '#34d399', marginLeft: 4, fontWeight: 600 }}>
-                        Save {savings}%
-                      </span>
-                    )}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          <ul className={styles.features}>
-            {proFeatures.map((f, i) => (
-              <li key={i} className={i === 0 ? styles.highlight : ''}>
-                {i === 0 ? <Sparkles size={16} className={styles.sparkleIcon} /> : <Check size={16} className={styles.checkIcon} />}
-                <span>{f}</span>
-              </li>
-            ))}
-          </ul>
-
-          <button
-            className={styles.proBtn}
-            onClick={() => handleCheckout(selectedPlan)}
-            disabled={loading}
-          >
-            {loading ? 'Redirecting...' : `Get Pro — CA$${PLANS.find(p => p.id === selectedPlan)!.price.toFixed(2)}${PLANS.find(p => p.id === selectedPlan)!.period}`}
-            {!loading && <Zap size={16} />}
-          </button>
-        </div>
+        <div className={styles.promoExpiry}>Ends March 16</div>
       </div>
 
-      {/* Comparison callout */}
-      <div style={{
-        maxWidth: 640, margin: '32px auto 0', textAlign: 'center',
-        background: 'rgba(251,191,36,0.06)', borderRadius: 16, padding: '20px 24px',
-        border: '1px solid rgba(251,191,36,0.15)',
-      }}>
-        <p style={{ fontSize: 14, color: 'rgba(248,250,252,0.7)', margin: 0, lineHeight: 1.6 }}>
-          💡 <strong style={{ color: '#fbbf24' }}>Other CELPIP prep tools charge CA$49.99/month or CA$249.99/year.</strong>
+      {/* ─── Free vs Pro Comparison Table ─── */}
+      <section className={styles.comparisonSection}>
+        <h2 className={styles.sectionTitle}>Free vs Pro — What You Get</h2>
+        <div className={styles.comparisonTable}>
+          <div className={`${styles.compRow} ${styles.compHeader}`}>
+            <div className={styles.compFeature}>Feature</div>
+            <div className={styles.compFree}>
+              <Shield size={16} />
+              Free
+            </div>
+            <div className={styles.compPro}>
+              <Crown size={16} />
+              Pro
+            </div>
+          </div>
+          {COMPARISON_FEATURES.map((row, i) => (
+            <div key={i} className={`${styles.compRow} ${row.highlight ? styles.compHighlightRow : ''}`}>
+              <div className={styles.compFeature}>{row.feature}</div>
+              <div className={styles.compFree}>
+                {typeof row.free === 'boolean' ? (
+                  row.free ? <Check size={18} className={styles.compCheck} /> : <X size={18} className={styles.compX} />
+                ) : (
+                  <span className={styles.compText}>{row.free}</span>
+                )}
+              </div>
+              <div className={styles.compPro}>
+                {typeof row.pro === 'boolean' ? (
+                  row.pro ? <Check size={18} className={styles.compCheck} /> : <X size={18} className={styles.compX} />
+                ) : (
+                  <span className={styles.compTextPro}>{row.pro}</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Plan Selector + Checkout ─── */}
+      <section className={styles.planSection}>
+        <h2 className={styles.sectionTitle}>Choose Your Plan</h2>
+        <p className={styles.sectionSub}>All plans include every Pro feature. Pick what fits your timeline.</p>
+
+        <div className={styles.planGrid}>
+          {PLANS.map(plan => {
+            const isSelected = selectedPlan === plan.id;
+            const savings = plan.id !== 'weekly'
+              ? Math.round((1 - plan.perMonth / PLANS[0].perMonth) * 100)
+              : 0;
+            const Icon = plan.icon;
+            return (
+              <button
+                key={plan.id}
+                onClick={() => setSelectedPlan(plan.id)}
+                className={`${styles.planOption} ${isSelected ? styles.planOptionSelected : ''}`}
+              >
+                {plan.badge && (
+                  <div className={styles.planBadge} style={{ background: plan.badgeColor }}>
+                    {plan.badge}
+                  </div>
+                )}
+                <div className={styles.planOptionHeader}>
+                  <Icon size={16} className={styles.planOptionIcon} />
+                  <span className={styles.planOptionName}>{plan.name}</span>
+                </div>
+                <div className={styles.planOptionPrice}>
+                  CA${plan.price.toFixed(2)}
+                </div>
+                <div className={styles.planOptionSub}>
+                  {plan.id === 'weekly' ? `≈ CA$${plan.perMonth.toFixed(2)}/mo` :
+                   `CA$${plan.perMonth.toFixed(2)}/mo`}
+                  {savings > 0 && (
+                    <span className={styles.planSavings}>Save {savings}%</span>
+                  )}
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        <button
+          ref={proBtnRef}
+          className={styles.proBtn}
+          onClick={() => handleCheckout(selectedPlan)}
+          disabled={loading}
+        >
+          {loading ? 'Redirecting...' : `Get Pro — CA$${selectedPlanData.price.toFixed(2)}${selectedPlanData.period}`}
+          {!loading && <Zap size={18} />}
+        </button>
+
+        <div className={styles.guarantee}>
+          <Shield size={16} />
+          <span>Cancel anytime • Secure payment via Stripe • All prices in CAD</span>
+        </div>
+      </section>
+
+      {/* ─── Testimonials with Stars ─── */}
+      <section className={styles.testimonialsSection}>
+        <h2 className={styles.sectionTitle}>Real Results From Real Students</h2>
+        <div className={styles.testimonialsGrid}>
+          {TESTIMONIALS.map((t, i) => (
+            <div key={i} className={styles.testimonialCard}>
+              <div className={styles.testimonialStars}>
+                {[...Array(5)].map((_, j) => (
+                  <Star key={j} size={16} fill="#fbbf24" color="#fbbf24" />
+                ))}
+              </div>
+              <p className={styles.testimonialText}>&ldquo;{t.text}&rdquo;</p>
+              <div className={styles.testimonialAuthor}>
+                <div className={styles.testimonialAvatar} style={{ background: t.color }}>
+                  {t.initials}
+                </div>
+                <div className={styles.testimonialInfo}>
+                  <span className={styles.testimonialName}>{t.name}</span>
+                  <span className={styles.testimonialLocation}>{t.location}</span>
+                </div>
+                <span className={styles.testimonialScore}>{t.score}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Competitor Comparison ─── */}
+      <div className={styles.competitorCallout}>
+        <p>
+          💡 <strong>Other CELPIP prep tools charge CA$49.99/month or CA$249.99/year.</strong>
           <br />We offer the same AI features at a fraction of the cost — because everyone deserves a fair shot.
         </p>
       </div>
 
-      <div className={styles.guarantee}>
-        <Shield size={18} />
-        <span>Cancel anytime • Secure payment via Stripe • All prices in CAD</span>
+      {/* ─── Sticky CTA (Mobile) ─── */}
+      <div className={`${styles.stickyCta} ${showSticky ? styles.stickyCtaVisible : ''}`}>
+        <div className={styles.stickyInfo}>
+          <span className={styles.stickyPrice}>CA${selectedPlanData.price.toFixed(2)}</span>
+          <span className={styles.stickyPeriod}>{selectedPlanData.period}</span>
+        </div>
+        <button
+          className={styles.stickyBtn}
+          onClick={() => handleCheckout(selectedPlan)}
+          disabled={loading}
+        >
+          {loading ? '...' : 'Get Pro'}
+          <Zap size={16} />
+        </button>
       </div>
     </div>
   );

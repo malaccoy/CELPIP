@@ -538,6 +538,960 @@
         "Describe your skills and availability",
         "Ask how you can contribute"
       ]
+    },
+    {
+      "title": "🔊 Noise Complaint to Neighbors",
+      "tips": [
+        "Be polite while expressing your concerns.",
+        "Use specific examples to illustrate your experience.",
+        "Suggest a compromise to maintain good relations."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-43",
+      "content": "You have been experiencing continuous loud noises from your neighbors during late nights, making it difficult for you and your family to sleep. Write an email to your neighbors addressing the situation. Include the following points:\n- Describe how their noise affects your family's sleep.\n- Request that they keep the noise down during late hours.\n- Offer to discuss this matter in person for better understanding."
+    },
+    {
+      "title": "❌ Complaint About Unwanted Charges",
+      "tips": [
+        "Be concise and to the point.",
+        "Include any relevant information, such as transaction dates.",
+        "Request prompt action to resolve the issue."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-44",
+      "content": "You recently found unauthorized charges on your credit card statement from a subscription service you never signed up for. Write an email to the company's customer service to address this issue. Include the following points:\n- Clearly state the unauthorized charges you found.\n- Request an explanation and a refund for those charges.\n- Ask them to confirm cancellation of any unintended subscription."
+    },
+    {
+      "title": "🚫 Disatisfaction with Online Course Content",
+      "tips": [
+        "Use a respectful tone, even when frustrated.",
+        "Cite specific examples from the course material.",
+        "Be clear about your desired outcome."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-45",
+      "content": "You have enrolled in an online course and found the content provided to be outdated and not as described. Write an email to the course provider expressing your dissatisfaction. Include the following points:\n- Explain specific areas where the content fails to meet expectations.\n- Suggest what could be improved or updated.\n- Request a refund or a credit for future courses."
+    },
+    {
+      "title": "📋 Complaint About Public Transportation Delay",
+      "tips": [
+        "Be specific about the routes and times affected.",
+        "Share how the delays impact your daily life.",
+        "Stay constructive and suggest solutions."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-46",
+      "content": "You frequently use a local bus service that has been consistently late, causing you to be late for work. Write an email to the transportation authority addressing the issue. Include the following points:\n- Describe the impact of the delays on your daily commute.\n- Request information on what measures are being taken to resolve the issue.\n- Suggest improvements to the service schedule."
+    },
+    {
+      "title": "🚫 Unsatisfactory Repair Service",
+      "tips": [
+        "Keep a factual account of your repair experience.",
+        "Request specific actions to remedy the situation.",
+        "Be polite but assertive in your language."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-47",
+      "content": "Your television was recently repaired by a technician, but the same problem persists. Write an email to the repair service to express your dissatisfaction. Include the following points:\n- Detail the nature of the repair and its failure.\n- Request a follow-up visit to address the ongoing issue.\n- Inquire about warranty or guarantee policies for the repair made."
+    },
+    {
+      "title": "🔊 Issue with a Home Appliance Warranty",
+      "tips": [
+        "Provide all necessary details about the appliance.",
+        "Include dates of communication with them.",
+        "Be clear about what resolution you expect."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-48",
+      "content": "You purchased a large appliance that has broken down, and the warranty company is giving you trouble with your claim. Write an email to the warranty provider expressing your concerns. Include the following points:\n- Explain the appliance issue and how long you have been trying to get support.\n- Request a swift resolution to your claim.\n- Ask for a detailed explanation of the claims process."
+    },
+    {
+      "title": "🏚️ Poor Experience at a Car Rental",
+      "tips": [
+        "Detail your experience clearly and factually.",
+        "Explain how it affected your travel plans.",
+        "Stay professional in your tone."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-49",
+      "content": "You recently rented a car for a trip but received a vehicle that was unclean and had mechanical issues. Write an email to the car rental company to complain about your experience. Include the following points:\n- Describe the state of the car upon pickup.\n- Mention any issues that affected your trip.\n- Request a partial refund for poor service and inconvenience."
+    },
+    {
+      "title": "🔊 Complaint About a Noisy Construction Site",
+      "tips": [
+        "Be specific about the times and frequency of the noise.",
+        "Request to be informed about regulations governing the work.",
+        "Suggest solutions, like noise barriers or reduced hours."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-50",
+      "content": "A construction site near your home has been making excessive noise, disrupting your daily life and work from home. Write an email to the city council expressing your concerns. Include the following points:\n- Describe how the noise is affecting your daily routine.\n- Request information about the construction schedule.\n- Ask if there are any noise regulations in place for such projects."
+    },
+    {
+      "title": "⚠️ Feedback on a Faulty Gas Appliance",
+      "tips": [
+        "Make sure to include model and serial numbers.",
+        "Outline prior communications clearly.",
+        "Stay polite while being assertive."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-51",
+      "content": "Your gas stove has been malfunctioning, and your attempts to get help from the manufacturer's customer service have been unsatisfactory. Write an email to the manufacturer expressing your complaint. Include the following points:\n- Detail the specific issues you have encountered with the stove.\n- Explain your previous attempts to resolve this problem.\n- Request better assistance or a replacement device."
+    },
+    {
+      "title": "🛑 Problem with an Incorrect Bill",
+      "tips": [
+        "List out all discrepancies clearly.",
+        "Be professional in your tone, even when frustrated.",
+        "Request prompt action to resolve the matter."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-52",
+      "content": "You have received a bill that contains several inaccuracies related to your recent service usage. Write an email to the service provider to resolve the billing issues. Include the following points:\n- Specify the discrepancies you've noticed.\n- Request a corrected bill and an explanation of charges.\n- Ask them to review how these errors occurred to prevent future issues."
+    },
+    {
+      "title": "😤 Service Issue at Local Store",
+      "tips": [
+        "Maintain a respectful and constructive tone.",
+        "Provide specific examples without being overly emotional.",
+        "Suggest realistic solutions for improvement."
+      ],
+      "category": "complaint",
+      "difficulty": "intermediate",
+      "id": "task1-theme-53",
+      "content": "You had a poor shopping experience at a local store where the staff were unhelpful and the product you wanted was out of stock. Write an email to the store manager to voice your complaint. Include the following points:\n- Describe the specific incidents that occurred during your visit.\n- Explain how this experience impacted your perception of the store.\n- Suggest improvements to customer service that would enhance future visits."
+    },
+    {
+      "title": "📬 Late Payment Issue",
+      "tips": [
+        "Be clear about the date of the payment.",
+        "Express your feelings about the delay.",
+        "Politely request a timeline for resolution."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-54",
+      "content": "You are writing to your landlord regarding a delay in receiving your rent payment. Mention the date it was due, express your concern about the affects of the delay, and request clarification on when you can expect the payment. Include your contact information."
+    },
+    {
+      "title": "📞 Library Book Renewal",
+      "tips": [
+        "Clearly state the title of the book.",
+        "Mention your library card number.",
+        "Explain your reasons for needing an extension."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-55",
+      "content": "Write an email to your library requesting an extension on the due date of a book you borrowed. Explain why you need more time, what the book is, and ask if they could extend the date for you. Provide your library card number for reference."
+    },
+    {
+      "title": "🏢 Lost Item at School",
+      "tips": [
+        "Provide a detailed description of the item.",
+        "Include the date and location of when it was lost.",
+        "Be polite and express appreciation in advance."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-56",
+      "content": "You need to write to your school's lost and found department about a lost personal item, such as a backpack. Describe the item, when and where you last saw it, and kindly ask if they can help you locate it."
+    },
+    {
+      "title": "📞 Requesting a Reference",
+      "tips": [
+        "Remind them of your role and accomplishments.",
+        "Specify the job you're applying for.",
+        "Thank them in advance for their consideration."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-57",
+      "content": "You are reaching out to a former employer to request a reference for a new job application. Mention your time at the company, the position you're applying for, and ask if they would be willing to provide a reference for you."
+    },
+    {
+      "title": "💼 Request for Maintenance",
+      "tips": [
+        "Clearly describe the problem.",
+        "Emphasize the urgency of the situation.",
+        "Include your apartment number for quick reference."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-58",
+      "content": "Write to your apartment management requesting urgent maintenance for a leaking faucet in your kitchen. Describe the issue, mention the urgency of fixing it, and request a timely visit from the maintenance team."
+    },
+    {
+      "title": "✉️ Meeting Reschedule Request",
+      "tips": [
+        "Be polite and professional in your request.",
+        "Suggest specific alternative dates and times.",
+        "Express understanding if they are unavailable."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-59",
+      "content": "You need to email a colleague to request rescheduling a meeting that was set for next week. Provide your reasons for the change, suggest new dates and times, and ask for their availability."
+    },
+    {
+      "title": "📝 Vacation Approval Request",
+      "tips": [
+        "Clearly specify the dates of your vacation.",
+        "Mention any work arrangements you will make.",
+        "Ask for their approval clearly and respectfully."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-60",
+      "content": "You are writing to your supervisor to formally request time off for a vacation. Specify the dates you wish to take off, mention how you will manage your workload during your absence, and politely ask for their approval."
+    },
+    {
+      "title": "🤝 Asking for Class Notes",
+      "tips": [
+        "Explain your absence briefly.",
+        "Express gratitude for their assistance.",
+        "Be clear about which class notes you need."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-61",
+      "content": "You need to email a classmate asking for notes from a class you missed. Briefly explain why you were absent, express your appreciation for their help, and ask if they could share their notes with you."
+    },
+    {
+      "title": "🙏 Requesting Office Supplies",
+      "tips": [
+        "Be specific about the items you need.",
+        "Explain why the supplies are necessary.",
+        "Provide an estimate of how much you need."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-62",
+      "content": "Write an email to your office manager requesting additional supplies, such as pens and paper. Mention the current stock levels, explain why you need more supplies, and specify the quantities you require."
+    },
+    {
+      "title": "📬 Requesting a Callback",
+      "tips": [
+        "State your issue clearly and concisely.",
+        "Provide your contact number and preferred times.",
+        "Be polite and thank them for their assistance."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-63",
+      "content": "You recently contacted a company for customer service and need to request a callback regarding your issue. State your contact number, provide details of the problem, and mention a suitable time for them to call you back."
+    },
+    {
+      "title": "🔑 Pet Adoption Follow-up",
+      "tips": [
+        "Mention the name or details of the pet.",
+        "Be polite and express your ongoing interest.",
+        "Ask for a specific timeline for a response."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-64",
+      "content": "You are writing to an animal shelter to follow up on a pet adoption application you submitted. Mention the pet you applied for, request an update on your application status, and express your eagerness to hear back."
+    },
+    {
+      "title": "💼 Feedback Request from Instructor",
+      "tips": [
+        "Specify which assignment you’re referring to.",
+        "Express your desire to improve and learn.",
+        "Thank them for their time and assistance."
+      ],
+      "category": "request",
+      "difficulty": "intermediate",
+      "id": "task1-theme-65",
+      "content": "You are reaching out to your instructor to request feedback on a recent assignment. Mention the assignment title, express your desire for constructive feedback, and ask if they could provide their insights."
+    },
+    {
+      "title": "🎉 Appreciation for a Helpful Co-worker",
+      "tips": [
+        "Be specific about what you are thankful for.",
+        "Use a warm and friendly tone.",
+        "Consider mentioning a future collaboration."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-66",
+      "content": "Write an email to your co-worker expressing your gratitude for their assistance on a recent project. Mention how their support contributed to the project's success. Be sure to include: \n- Specific examples of their help. \n- How their assistance made a difference. \n- Your intention to reciprocate their kindness in the future."
+    },
+    {
+      "title": "🎉 Gratitude to a Local Business",
+      "tips": [
+        "Mention specific staff members if applicable.",
+        "Express your support for local businesses.",
+        "Keep the tone enthusiastic and positive."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-67",
+      "content": "Write an email to a local store owner thanking them for their exceptional customer service during your recent visit. Highlight how their service made your shopping experience enjoyable. Make sure to include: \n- Details about the products you purchased. \n- A description of the service you received. \n- A recommendation for others to visit the store."
+    },
+    {
+      "title": "💝 Thank You to a Teacher",
+      "tips": [
+        "Personalize your message with specific examples.",
+        "Keep it respectful and sincere.",
+        "Consider mentioning any future courses you might take with them."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-68",
+      "content": "Compose an email to your teacher thanking them for their guidance throughout the semester. Reflect on how their teaching impacted your learning. Include: \n- A specific lesson or project that resonated with you. \n- How their support helped you achieve your goals. \n- A wish for continued success in their teaching career."
+    },
+    {
+      "title": "🙏 Gratitude to a Volunteer",
+      "tips": [
+        "Express how their involvement made a difference.",
+        "Use a friendly and warm tone.",
+        "Invite them for a follow-up discussion or future events."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-69",
+      "content": "Write an email to a volunteer who helped at a community event, thanking them for their time and effort. Acknowledge their contributions to the event's success. Be sure to mention: \n- The specific role they played. \n- How their presence positively impacted the event. \n- An invitation to join future events."
+    },
+    {
+      "title": "💝 Thank You Note to a Neighbor",
+      "tips": [
+        "Share a personal story that brings warmth.",
+        "Invite them to join you for coffee or tea.",
+        "Be genuine and heartfelt in your expression."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-70",
+      "content": "Compose an email to your neighbor thanking them for helping with a recent home improvement project. Highlight how their assistance made the work easier and more enjoyable. Include: \n- The specific tasks they helped with. \n- A personal anecdote about the experience. \n- An invitation to relax together in the future."
+    },
+    {
+      "title": "🙏 Thank You for a Job Referral",
+      "tips": [
+        "Be specific about the job opportunity.",
+        "Maintain a friendly and appreciative tone.",
+        "Consider offering to help them in return."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-71",
+      "content": "Write an email to a friend who referred you for a job, expressing your appreciation for their support. Mention how their recommendation helped you in the hiring process. Include: \n- Your excitement about the opportunity. \n- The steps you've taken towards the job. \n- Your willingness to return the favor."
+    },
+    {
+      "title": "💐 Appreciation for a Family Member",
+      "tips": [
+        "Keep the tone warm and personal.",
+        "Share your feelings openly.",
+        "Suggest a get-together to strengthen the bond."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-72",
+      "content": "Compose an email to a family member thanking them for their support during a challenging time. Reflect on how their help made a difficult situation easier. Make sure to mention: \n- Specific ways they offered support. \n- The impact their help had on you. \n- A plan to catch up soon."
+    },
+    {
+      "title": "💝 Thank You for a Wedding Gift",
+      "tips": [
+        "Be specific about why the gift is meaningful.",
+        "Use a cheerful and appreciative tone.",
+        "Consider mentioning your wedding day highlights."
+      ],
+      "category": "thanks",
+      "difficulty": "intermediate",
+      "id": "task1-theme-73",
+      "content": "Write an email to a friend who gave you a thoughtful wedding gift, expressing your gratitude. Share how you plan to use the gift and its significance to you. Include: \n- Details about the gift and its impact. \n- A personal story related to the gift. \n- An invitation to catch up soon or to celebrate together."
+    },
+    {
+      "title": "💐 Late Payment to Landlord",
+      "tips": [
+        "Be sincere in your apology.",
+        "Keep the explanation concise and relevant.",
+        "Offer a timeline for when you will resolve the issue."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-74",
+      "content": "You realize that you missed your rent payment this month. Write an email to your landlord apologizing for the delay and explaining the situation. Be sure to include: \n- Acknowledge the missed payment with an apology. \n- Explain the reason for the delay briefly. \n- Assure them that the payment will be made as soon as possible."
+    },
+    {
+      "title": "😞 Missed Family Event",
+      "tips": [
+        "Express genuine regret for not attending.",
+        "Offer to make it up with a personal visit or gift.",
+        "Keep the tone warm and friendly."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-75",
+      "content": "You were supposed to attend your cousin’s wedding, but you couldn’t make it due to an unexpected work commitment. Write an email to your cousin apologizing for your absence. Include: \n- A heartfelt apology for missing the celebration. \n- A brief explanation of your work commitment. \n- Suggest a future time to meet and celebrate together."
+    },
+    {
+      "title": "🕊️ Forgotten Appointment",
+      "tips": [
+        "Be polite and understand the inconvenience caused.",
+        "Make it clear that you wish to reschedule promptly.",
+        "Use a professional tone."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-76",
+      "content": "You missed an appointment with a doctor that you had scheduled a week ago. Write an email to the doctor’s office apologizing for not attending. Be sure to include: \n- Acknowledge that you forgot the appointment. \n- Apologize for any inconvenience caused. \n- Request to reschedule at their earliest convenience."
+    },
+    {
+      "title": "🤦 Mistaken Delivery",
+      "tips": [
+        "Be clear about what happened.",
+        "Assure them you are taking action to correct it.",
+        "Keep your email concise and focused."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-77",
+      "content": "You received a package that was not meant for you due to a mix-up. Write an email to the delivery service apologizing for any confusion. Include: \n- Acknowledge that the package was delivered incorrectly. \n- Explain that you will return it as soon as possible. \n- Request instructions on how to return the package."
+    },
+    {
+      "title": "😞 Inconvenient Noise Issue",
+      "tips": [
+        "Show understanding of their frustration.",
+        "Offer reassurance for the future.",
+        "Use a respectful tone."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-78",
+      "content": "You accidentally made loud noises while doing renovations on your home and disturbed your neighbors. Write an email to apologize for the disturbance. Include: \n- Acknowledge the noise you caused. \n- Apologize for the inconvenience it created. \n- Promise to keep noise to a minimum moving forward."
+    },
+    {
+      "title": "😞 Canceling Plans with Friends",
+      "tips": [
+        "Be honest but respectful about the reason.",
+        "Express eagerness to meet again soon.",
+        "Keep the tone light and friendly."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-79",
+      "content": "You have to cancel dinner plans with your friends at the last minute due to an emergency. Write an email to your friends apologizing. Include: \n- A sincere apology for canceling. \n- A brief explanation of the emergency. \n- Suggest rescheduling for another date."
+    },
+    {
+      "title": "🙇 Professional Miscommunication",
+      "tips": [
+        "Be concise and clear about the correction.",
+        "Maintain a professional tone throughout.",
+        "Encourage open communication to resolve issues."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-80",
+      "content": "You sent an email with incorrect information to a client, causing confusion. Write an email apologizing for the error. Include: \n- Acknowledge the mistake and apologize. \n- Provide the correct information clearly. \n- Offer assistance if they have further questions."
+    },
+    {
+      "title": "🙏 Forgotten Birthday Reminder",
+      "tips": [
+        "Use an emotional and warm tone.",
+        "Show commitment to make it up to them.",
+        "Keep it personal and heartfelt."
+      ],
+      "category": "apology",
+      "difficulty": "intermediate",
+      "id": "task1-theme-81",
+      "content": "You forgot to wish your friend a happy birthday and feel guilty about it. Write an email to apologize and explain. Include: \n- A sincere apology for forgetting their special day. \n- Acknowledge how important their birthday is. \n- Suggest a plan to celebrate together soon."
+    },
+    {
+      "title": "📄 Library Hours Inquiry",
+      "tips": [
+        "Be polite and concise in your request.",
+        "Mention how the change impacts your study schedule.",
+        "Request for specific information on future hours."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-82",
+      "content": "You are a student who often uses the public library for studying. You notice the library hours have changed recently and you need clarification. Write an email to the library staff to inquire about the current hours and any future changes."
+    },
+    {
+      "title": "🔍 Request for Health Clinic Information",
+      "tips": [
+        "Include your location to receive relevant options.",
+        "Ask about services offered at the clinics.",
+        "Request for any necessary registration details."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-83",
+      "content": "You are new to the city and need to find a local health clinic for regular check-ups. Write an email to the health services department asking for information on clinics available in your area."
+    },
+    {
+      "title": "ℹ️ Childcare Facility Inquiry",
+      "tips": [
+        "Clearly state your child's age for relevant information.",
+        "Request any required documents for admission.",
+        "Ask about safety measures in place at the facility."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-84",
+      "content": "You are a parent looking for childcare options for your toddler. Write an email to a local childcare facility asking for information about their programs, availability, and fees."
+    },
+    {
+      "title": "📄 Public Transportation Schedule Inquiry",
+      "tips": [
+        "Specify the route and times you are inquiring about.",
+        "Mention any specific dates if there are changes.",
+        "Request for updates on service disruptions."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-85",
+      "content": "You rely on public transportation for your daily commute and have noticed inconsistencies in the schedule. Write an email to the transportation department requesting clarification on the bus or train schedules."
+    },
+    {
+      "title": "💡 Product Warranty Information Request",
+      "tips": [
+        "Include the model and purchase date for context.",
+        "Ask specific questions about warranty duration.",
+        "Inquire about any steps necessary to file a claim."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-86",
+      "content": "You recently purchased an electronic device and want to know about its warranty coverage. Write an email to the manufacturer or retailer asking for details on the warranty and claims process."
+    },
+    {
+      "title": "📊 Local Event Information Request",
+      "tips": [
+        "Express your interest in attending the event.",
+        "Ask for any available promotional materials.",
+        "Request details on how to participate or volunteer."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-87",
+      "content": "You heard about a community event happening next week and want more details. Write an email to the event organizers asking for information about the event schedule, location, and any participation requirements."
+    },
+    {
+      "title": "📊 Neighborhood Safety Inquiry",
+      "tips": [
+        "State your concerns clearly and respectfully.",
+        "Request specific safety tips or resources.",
+        "Ask about community policing initiatives."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-88",
+      "content": "You are concerned about safety in your neighborhood after hearing about recent incidents. Write an email to your local police department asking for information on safety measures and tips for residents."
+    },
+    {
+      "title": "🔍 Job Fair Information Request",
+      "tips": [
+        "Clearly ask for the date, time, and location.",
+        "Request a list of confirmed employers.",
+        "Ask if you need to register in advance."
+      ],
+      "category": "information",
+      "difficulty": "intermediate",
+      "id": "task1-theme-89",
+      "content": "You learned about an upcoming job fair but need more information on participating employers and what to expect. Write an email to the event coordinator asking for details about the fair's schedule and employers attending."
+    },
+    {
+      "title": "🎯 City Park Improvement Suggestion",
+      "tips": [
+        "Be specific about the improvements you want to suggest.",
+        "Use polite and respectful language.",
+        "Explain how these changes will benefit the community."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-90",
+      "content": "Write an email to your local city council suggesting improvements to a nearby park. Include your thoughts on adding more benches, installing a water fountain, and enhancing the children's playground."
+    },
+    {
+      "title": "🔧 Library Book Acquisition Suggestion",
+      "tips": [
+        "Research popular titles or authors before suggesting.",
+        "Provide reasons for each recommendation.",
+        "Keep your email concise and focused."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-91",
+      "content": "Write an email to your local library manager suggesting new books or genres they should consider adding to their collection. Mention specific titles, focus on popular authors, and indicate why these selections would attract more visitors."
+    },
+    {
+      "title": "💭 Workplace Wellness Program Proposal",
+      "tips": [
+        "Highlight the benefits of a wellness program for employees.",
+        "Include potential activities or initiatives.",
+        "Make sure to convey enthusiasm about the proposal."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-92",
+      "content": "Compose an email to your HR department suggesting the implementation of a workplace wellness program. Address components such as fitness classes, mental health workshops, and health screenings."
+    },
+    {
+      "title": "🌱 School Event Activity Suggestion",
+      "tips": [
+        "Focus on the potential engagement of students and families.",
+        "Suggest how the activity could be organized.",
+        "Be supportive and positive in your tone."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-93",
+      "content": "Write an email to your child's school principal suggesting a new activity for the upcoming school event. Propose a talent show, a science fair, and interactive games that can engage students and families."
+    },
+    {
+      "title": "📝 Public Transport Improvement Suggestion",
+      "tips": [
+        "Identify specific routes that require improvement.",
+        "Explain how the changes could enhance user experience.",
+        "Stay constructive and solution-oriented."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-94",
+      "content": "Draft an email to the public transportation authority suggesting improvements for local bus services. Discuss the need for more frequent buses, better signage, and extended service hours."
+    },
+    {
+      "title": "✨ Restaurant Menu Change Suggestion",
+      "tips": [
+        "Be clear about the dietary needs you are addressing.",
+        "Mention how these changes can attract more customers.",
+        "Express your love for the restaurant to start on a positive note."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-95",
+      "content": "Write an email to your favorite restaurant suggesting changes to their menu. Propose vegetarian options, gluten-free desserts, and seasonal specials to make the menu more inclusive."
+    },
+    {
+      "title": "📝 Community Safety Initiative Suggestion",
+      "tips": [
+        "Discuss the issues currently affecting community safety.",
+        "Offer suggestions for how to implement the initiatives.",
+        "Be encouraging and supportive of community involvement."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-96",
+      "content": "Create an email to your neighborhood association suggesting a community safety initiative. Propose a neighborhood watch program, safety workshops, and better street lighting to enhance safety."
+    },
+    {
+      "title": "🏗️ Local Art Gallery Exhibit Suggestion",
+      "tips": [
+        "Research current trends in art and local artists.",
+        "Explain the potential impact of the exhibit on the community.",
+        "Keep a professional yet enthusiastic tone."
+      ],
+      "category": "suggestion",
+      "difficulty": "intermediate",
+      "id": "task1-theme-97",
+      "content": "Compose an email to a local art gallery manager suggesting a themed exhibit. Propose featuring local artists, showcasing multicultural art, and organizing workshops for community engagement."
+    },
+    {
+      "title": "🥳 Birthday Party Invitation",
+      "tips": [
+        "Be friendly and enthusiastic in your tone.",
+        "Include specific details to avoid confusion.",
+        "Encourage responses to gauge attendance."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-98",
+      "content": "You are planning a birthday party for your friend and would like to invite a few close friends. Write an email to your friends detailing the event. Make sure to include:  \n- Date, time, and location of the party  \n- Theme or activities planned for the celebration  \n- RSVP deadline for confirming attendance."
+    },
+    {
+      "title": "🥳 Holiday Gathering Invitation",
+      "tips": [
+        "Use a warm and inclusive tone.",
+        "Make it clear that everyone is welcome.",
+        "Mention any specific traditions to be followed."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-99",
+      "content": "You would like to host a holiday gathering at your home and invite your neighbors. Write an email to them explaining the plan. Be sure to mention:  \n- Date and time of the gathering  \n- What food and drinks will be provided  \n- A request for anyone to bring a dish or drink to share."
+    },
+    {
+      "title": "🎪 Weekend Barbecue Invitation",
+      "tips": [
+        "Keep the tone casual and inviting.",
+        "Highlight any fun activities to entice friends.",
+        "Remind them to wear appropriate clothing."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-100",
+      "content": "You are organizing a barbecue at your home this weekend and want to invite your friends. Write an email to invite them. Include:  \n- The day and time the barbecue will start  \n- What to bring, such as drinks or side dishes  \n- Any activities planned for entertainment."
+    },
+    {
+      "title": "🎈 Book Club Meeting Invitation",
+      "tips": [
+        "Express excitement about the book choice.",
+        "Encourage friends to bring their thoughts and opinions.",
+        "Inquire about their preferred book genres for future meetings."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-101",
+      "content": "You are starting a new book club and want to invite friends to join. Write an email providing the details. Ensure you include:  \n- The date, time, and location of the first meeting  \n- The book that will be discussed  \n- Information on how often the club will meet."
+    },
+    {
+      "title": "🎪 Formal Dinner Invitation",
+      "tips": [
+        "Use a respectful and formal tone.",
+        "Clearly state if guests are welcome.",
+        "Mention any special occasions being celebrated."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-102",
+      "content": "You are hosting a formal dinner at your house and want to invite a colleague and their partner. Write an email with the invitation details. Make sure to include:  \n- The date and time of the dinner  \n- Dress code for the evening  \n- Menu highlights or any dietary preferences you should know."
+    },
+    {
+      "title": "🎉 Family Reunion Invitation",
+      "tips": [
+        "Be warm and personal in your writing.",
+        "Mention how it’s a great opportunity to catch up.",
+        "Encourage sharing of travel arrangements or accommodations."
+      ],
+      "category": "invitation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-103",
+      "content": "You are organizing a family reunion and want to invite extended family members to join. Write an email that outlines the details. Include:  \n- The date and venue for the reunion  \n- Plans for activities or meals  \n- A request for family members to confirm their attendance."
+    },
+    {
+      "title": "🎊 Graduation Celebration",
+      "tips": [
+        "Use a friendly and enthusiastic tone.",
+        "Personalize your email with specific details about their journey.",
+        "Express your willingness to help with their next steps."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-104",
+      "content": "Write an email to a friend congratulating them on their recent graduation. Include your excitement for their achievement, mention how proud you are of them, and suggest celebrating together soon."
+    },
+    {
+      "title": "👏 Promotion Announcement",
+      "tips": [
+        "Be specific about the qualities or accomplishments that deserve praise.",
+        "Keep the tone professional yet warm.",
+        "Mention how their promotion will positively impact the team."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-105",
+      "content": "Write an email to a colleague congratulating them on their recent promotion. State how their hard work has paid off, highlight a specific achievement or quality that led to their promotion, and suggest meeting for lunch to celebrate."
+    },
+    {
+      "title": "🎊 New Baby Congratulations",
+      "tips": [
+        "Use an affectionate tone to convey your excitement.",
+        "Include a personal memory related to their journey to parenthood.",
+        "Offer specific ways you can help or support them."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-106",
+      "content": "Write an email to a close friend who has just welcomed a new baby. Express your joy and excitement, mention how proud you are of them, and offer your support in any way they may need during this transition."
+    },
+    {
+      "title": "🏆 Sports Achievement",
+      "tips": [
+        "Highlight the specifics of their achievement.",
+        "Be encouraging and supportive in your tone.",
+        "Share a fun memory related to your time together as teammates."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-107",
+      "content": "Write an email to a teammate congratulating them on a significant sports achievement, such as winning a championship. Acknowledge their hard work, express your admiration, and suggest doing something special to celebrate together."
+    },
+    {
+      "title": "🌟 Successful Job Application",
+      "tips": [
+        "Be enthusiastic and genuine in your message.",
+        "Mention specific skills or experiences that contributed to their success.",
+        "Make it personal by sharing your own experiences related to job hunting."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-108",
+      "content": "Write an email to a friend congratulating them on landing a new job. Express your happiness for their success, briefly discuss why they are a great fit for the role, and propose a get-together to celebrate."
+    },
+    {
+      "title": "🌟 Anniversary Milestone",
+      "tips": [
+        "Include a warm and celebratory tone.",
+        "Reflect on shared memories to deepen your connection.",
+        "Encourage them to share their plans for the anniversary celebration."
+      ],
+      "category": "congratulations",
+      "difficulty": "intermediate",
+      "id": "task1-theme-109",
+      "content": "Write an email to a couple congratulating them on their wedding anniversary. Share your best wishes for their future together, mention a memorable experience you shared with them, and propose a way to celebrate their milestone."
+    },
+    {
+      "title": "👍 Book Recommendation to a Friend",
+      "tips": [
+        "Use a friendly and engaging tone.",
+        "Include specific examples from the book to support your recommendation.",
+        "Keep the email concise and focused on your friend's interests."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-110",
+      "content": "You recently read a fantastic book and want to recommend it to your friend. Write an email to your friend highlighting the title, a brief summary, and why you think they would enjoy it. Address the following points:\n- Title and author of the book\n- Summary of the plot or themes\n- Personal reasons for your recommendation"
+    },
+    {
+      "title": "✅ Restaurant Recommendation to Colleagues",
+      "tips": [
+        "Make your email inviting and enthusiastic.",
+        "Suggest specific dishes to entice your colleagues.",
+        "Mention the location and any logistics, like parking availability."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-111",
+      "content": "You discovered a new restaurant that you think your colleagues would love for a team lunch. Write an email to your colleagues recommending this place, mentioning its cuisine, ambiance, and any specialties. Address the following points:\n- Type of cuisine and menu highlights\n- Atmosphere and suitability for a work lunch\n- Any special offers or dishes to try"
+    },
+    {
+      "title": "⭐ Travel Destination Recommendation to Family",
+      "tips": [
+        "Use descriptive language to paint a vivid picture of the destination.",
+        "Be personal—share your own experiences to make it relatable.",
+        "Include practical travel tips and recommendations for planning."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-112",
+      "content": "You recently visited a beautiful travel destination and want to recommend it to your family for their upcoming vacation. Write an email sharing your experience and why they should consider it. Address the following points:\n- Description of the destination and its attractions\n- Activities and experiences your family would enjoy\n- Tips for traveling there (best time to visit, accommodations, etc.)"
+    },
+    {
+      "title": "🏅 Course Recommendation to a Classmate",
+      "tips": [
+        "Be clear about what makes the course valuable.",
+        "Share any personal connections to the course to help persuade.",
+        "Keep the tone professional yet friendly."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-113",
+      "content": "You know about a course that would be beneficial for a classmate who is interested in a specific field of study. Write an email to your classmate recommending this course, including details about the instructor and the topics covered. Address the following points:\n- Course name and relevant details\n- Why it’s interesting and beneficial\n- Information about the instructor or institution"
+    },
+    {
+      "title": "🎖️ Local Service Recommendation to a Neighbor",
+      "tips": [
+        "Be specific about the service and why it stood out.",
+        "Share your overall satisfaction to build trust.",
+        "Include contact information for the service provider."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-114",
+      "content": "You recently used a local service (like a plumber or landscaper) that provided excellent service, and you want to recommend them to your neighbor. Write an email that includes your experience and why you think your neighbor should hire them. Address the following points:\n- Description of the service provided\n- Quality of the service and your satisfaction\n- Any specific reasons they would be a good fit for your neighbor's needs"
+    },
+    {
+      "title": "✅ Volunteer Opportunity Recommendation to a Friend",
+      "tips": [
+        "Use an encouraging and positive tone.",
+        "Highlight the personal impact of volunteering.",
+        "Provide details on how to get involved."
+      ],
+      "category": "recommendation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-115",
+      "content": "You found a volunteer opportunity that aligns with a friend's interests and values, and you want to recommend it to them. Write an email explaining the opportunity and why they would find it fulfilling. Address the following points:\n- Details of the organization and its mission\n- Specific responsibilities and commitments involved\n- Why this aligns with your friend's interests or values"
+    },
+    {
+      "title": "🤝 Lease Negotiation with Landlord",
+      "tips": [
+        "Be polite and respectful when making your request.",
+        "Clearly state your reasons to support your negotiation.",
+        "Suggest a specific amount to make the process easier.",
+        "Express gratitude for their consideration."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-116",
+      "content": "You have been renting an apartment for a year and would like to negotiate a lower rent for the next lease term due to recent financial challenges. Write to your landlord to request a meeting and discuss your concerns. Be sure to include: \n- Reasons for your request, such as changes in your financial situation. \n- Your appreciation for the apartment and previous good payment history. \n- A proposed new rental amount you believe is reasonable."
+    },
+    {
+      "title": "🤝 Negotiating Work Hours",
+      "tips": [
+        "Be clear about why you need a new schedule.",
+        "Highlight how the changes can benefit the employer.",
+        "Stay open to negotiation and compromise.",
+        "Use a positive tone to maintain a good relationship."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-117",
+      "content": "You have been working part-time at a local store and would like to negotiate a more flexible schedule that better meets your needs. Write an email to your manager detailing your request. Be sure to address: \n- The current schedule and why it does not work for you. \n- Your proposed new schedule and how it can benefit the store. \n- Your willingness to discuss further or make adjustments."
+    },
+    {
+      "title": "⚖️ Negotiating a Price for a Service",
+      "tips": [
+        "Acknowledge the value of the service to show respect.",
+        "Be specific about the budget constraints you have.",
+        "Offer alternatives that might help adjust the price.",
+        "Maintain a friendly and professional tone."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-118",
+      "content": "You have received a quote for landscaping services at your home, but you believe the price is too high for your budget. Write to the service provider to discuss the quote and negotiate the price. Include: \n- Your appreciation for their work and the quote provided. \n- Your budget constraints and reasons for wanting a lower price. \n- Any possible alternatives or adjustments you could agree upon."
+    },
+    {
+      "title": "🤝 Negotiating Community Event Contributions",
+      "tips": [
+        "Clearly outline the benefits of the event to the community.",
+        "Specify exactly what kind of support you are looking for.",
+        "Emphasize any promotional opportunities for the business.",
+        "Express your willingness to discuss terms and options."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-119",
+      "content": "You are organizing a community event and need additional support from local businesses for donations or sponsorships. Write an email to a local business owner to discuss your request. Be sure to include: \n- Details about the event and its benefits to the community. \n- What you are asking for (e.g., donations, sponsorship). \n- How their support could be recognized or publicized at the event."
+    },
+    {
+      "title": "💰 Negotiating Course Fees",
+      "tips": [
+        "State your interest in the course and its importance.",
+        "Be honest about your financial situation.",
+        "Suggest alternatives like discounts or a payment plan.",
+        "Remain courteous and professional throughout."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-120",
+      "content": "You want to enroll in a professional development course but find the fees too high. Write to the course administrator to negotiate a possible discount or payment plan. Include: \n- Your interest in the course and its importance for your career. \n- Your financial constraints and reasons for seeking a discount. \n- Any previous engagement with the organization that may support your request."
+    },
+    {
+      "title": "⚖️ Negotiating Childcare Fees",
+      "tips": [
+        "Express gratitude for the quality of care provided.",
+        "Be clear about your financial situation without oversharing.",
+        "Propose a specific amount to make negotiations easier.",
+        "Keep a friendly tone to maintain a good relationship."
+      ],
+      "category": "negotiation",
+      "difficulty": "intermediate",
+      "id": "task1-theme-121",
+      "content": "You have been using a local daycare service for your child and would like to negotiate the monthly fees due to changes in your family’s financial situation. Write to the daycare manager to express your request. Include: \n- Your appreciation for the services provided by the daycare. \n- Your current financial difficulties and reasons for requesting a fee reduction. \n- A proposal for what you can afford and any willingness to discuss further."
     }
   ],
   "task2": [
@@ -738,6 +1692,834 @@
       "title": "🏋️ Gym vs Outdoor exercise",
       "content": "You are advising a friend on fitness options:\n\nOption A: Join a gym with professional equipment and classes.\n\nOption B: Exercise outdoors through running, cycling, and park workouts.\n\nWhich option would you recommend? Support your choice with examples.",
       "category": "lifestyle"
+    },
+    {
+      "title": "🤝 Community Events",
+      "tips": [
+        "Provide specific examples of events you enjoy.",
+        "Discuss the benefits of community involvement.",
+        "Consider including diverse activities for different age groups."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-34",
+      "content": "A local community center is conducting a survey to understand residents’ preferences for community events. The survey asks participants what types of events they would like to see more of in their neighborhood, such as festivals, workshops, or sports activities. Your response should address the importance of community events and suggest ideas that could enhance community engagement."
+    },
+    {
+      "title": "👥 Neighborhood Safety",
+      "tips": [
+        "Use clear examples of safety issues in your area.",
+        "Suggest practical safety measures or community initiatives.",
+        "Reflect on the impact of safety on community well-being."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-35",
+      "content": "The city council is conducting a survey on neighborhood safety to gather residents' opinions. Participants are asked about their feelings of safety in their community and what measures they believe should be taken to improve it. Your response should address current safety concerns and propose solutions to enhance security."
+    },
+    {
+      "title": "🤝 Public Spaces Usage",
+      "tips": [
+        "Mention specific features you enjoy in public spaces.",
+        "Discuss how improvements could benefit the community.",
+        "Consider accessibility and inclusivity in your suggestions."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-36",
+      "content": "A municipal survey is being conducted to assess how residents utilize public spaces like parks and squares. Participants are asked what features they value most and how these spaces could be improved. Your response should touch on the role of public spaces in community life and suggest enhancements based on community needs."
+    },
+    {
+      "title": "🏙️ Volunteering in the Community",
+      "tips": [
+        "Share personal experiences with volunteering.",
+        "Discuss the impact of volunteering on community cohesion.",
+        "Suggest ways to encourage more people to volunteer."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-37",
+      "content": "A non-profit organization is conducting a survey to understand the role of volunteering in the community. They are interested in residents' experiences and what motivates them to volunteer. Your response should address the benefits of volunteering both for the community and for individuals."
+    },
+    {
+      "title": "👥 Affordable Housing Solutions",
+      "tips": [
+        "Discuss specific challenges faced by your community.",
+        "Propose realistic and viable housing solutions.",
+        "Include the potential benefits of affordable housing."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-38",
+      "content": "A housing advocacy group is conducting a survey to identify solutions to the affordable housing crisis in your area. They want to hear from residents about their thoughts on housing policies and initiatives. Your response should highlight the challenges of housing affordability and suggest feasible solutions."
+    },
+    {
+      "title": "🌍 Cultural Diversity in Communities",
+      "tips": [
+        "Highlight the benefits of cultural exchange.",
+        "Provide examples of successful cultural events.",
+        "Encourage inclusivity in cultural programming."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-39",
+      "content": "A cultural organization is conducting a survey to explore the importance of cultural diversity in your community. They want to understand how residents perceive cultural events and initiatives. Your response should analyze the value of cultural diversity and suggest ways to celebrate it within the community."
+    },
+    {
+      "title": "🌍 Access to Healthcare Services",
+      "tips": [
+        "Describe any personal experiences with healthcare.",
+        "Identify specific barriers to accessing services.",
+        "Suggest community-based healthcare improvements."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-40",
+      "content": "A local health authority is conducting a survey to gather opinions on access to healthcare services in your community. The survey asks residents about their experiences with healthcare availability and what improvements they would like to see. Your response should detail your experiences and suggest ways to enhance healthcare access."
+    },
+    {
+      "title": "🌳 Sustainable Community Practices",
+      "tips": [
+        "Share examples of sustainable practices you engage in.",
+        "Discuss the collective impact of community sustainability efforts.",
+        "Encourage actionable steps for improvement."
+      ],
+      "category": "community",
+      "difficulty": "intermediate",
+      "id": "task2-theme-41",
+      "content": "An environmental group is surveying residents on sustainable practices within the community. They are seeking input on what sustainability initiatives residents currently participate in and what new practices they would like to adopt. Your response should discuss the importance of sustainability and propose initiatives that could be implemented in your community."
+    },
+    {
+      "title": "📝 Online vs Traditional Degree",
+      "tips": [
+        "Clearly outline the advantages of both online and traditional degrees.",
+        "Use examples from personal experiences or common knowledge about Canadian institutions.",
+        "Address factors such as flexibility, networking opportunities, and learning styles."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-42",
+      "content": "A Canadian university is conducting a survey to understand student preferences regarding degree formats. The survey asks: 'Do you prefer earning a degree online or through traditional in-person classes?' Your response should discuss the benefits and drawbacks of each format in the context of Canadian education."
+    },
+    {
+      "title": "🎓 Government Funding for Education",
+      "tips": [
+        "Discuss both positive and negative implications of increased funding.",
+        "Include the potential for reduced tuition fees as a key benefit.",
+        "Consider the long-term effects on workforce development in Canada."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-43",
+      "content": "A provincial educational body is gathering public opinion on whether the government should increase funding for post-secondary education. The survey question is: 'What are your thoughts on increasing government funding for colleges and universities?' Your response should highlight the potential impacts on students and the economy."
+    },
+    {
+      "title": "📚 School Curriculum Reform",
+      "tips": [
+        "Emphasize real-world applications of life skills education.",
+        "Mention how these skills can benefit students in both personal and professional settings.",
+        "Consider how this reform could address current gaps in the education system."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-44",
+      "content": "An education policy think tank in Canada is conducting a survey to gather opinions on reforming school curricula to include more life skills training. The question posed is: 'Should high schools incorporate more courses on financial literacy and personal development?' Your response should discuss the importance of such education in preparing students for adult life."
+    },
+    {
+      "title": "📖 Student Loan Forgiveness",
+      "tips": [
+        "Discuss the potential benefits for graduates in public service.",
+        "Consider the financial implications for the government and taxpayers.",
+        "Explore how this could impact the attractiveness of public service careers."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-45",
+      "content": "A Canadian non-profit organization is conducting a survey to assess public support for student loan forgiveness initiatives. The survey asks: 'Do you support the idea of forgiving a portion of student loans for graduates in public service jobs?' Your response should evaluate the pros and cons of such a policy."
+    },
+    {
+      "title": "💻 Standardized Testing in Schools",
+      "tips": [
+        "Present arguments for and against the use of standardized tests.",
+        "Include statistics or studies that support your viewpoint.",
+        "Consider the emotional and educational impact on students."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-46",
+      "content": "An educational research group in Canada is surveying parents and teachers about the effectiveness of standardized testing in schools. The question posed is: 'Do you believe standardized tests accurately measure student performance?' Your response should analyze the various perspectives on standardized testing."
+    },
+    {
+      "title": "🧠 Bilingual Education Programs",
+      "tips": [
+        "Highlight the advantages of bilingualism in a multicultural society.",
+        "Discuss the challenges of implementing bilingual programs in diverse settings.",
+        "Consider the potential impact on cognitive development in children."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-47",
+      "content": "A provincial government is conducting a survey to evaluate public sentiment towards bilingual education programs in schools. The survey question asks: 'Should bilingual education be mandatory in schools across Canada?' Your response should examine the benefits and challenges of implementing such programs."
+    },
+    {
+      "title": "🎓 Technical vs Academic Education",
+      "tips": [
+        "Discuss the current job market trends in Canada and their implications.",
+        "Include examples of successful individuals from both educational backgrounds.",
+        "Emphasize the need for a balanced educational approach."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-48",
+      "content": "A Canadian education ministry is surveying career advisors and students on the value of technical versus academic education. The survey question is: 'Which type of education should be prioritized to better prepare students for the job market?' Your response should analyze the relevance of both paths in today’s economy."
+    },
+    {
+      "title": "📝 Future of Coding in Schools",
+      "tips": [
+        "Explain the growing importance of technology and coding skills.",
+        "Discuss how coding can enhance problem-solving abilities in students.",
+        "Mention potential career opportunities that arise from learning coding."
+      ],
+      "category": "education",
+      "difficulty": "intermediate",
+      "id": "task2-theme-49",
+      "content": "A Canadian school district is exploring the implementation of coding as a mandatory subject in the curriculum. The survey prompts: 'Should coding be a necessary part of the school curriculum for all students?' Your response should consider the relevance of coding skills in the modern workforce."
+    },
+    {
+      "title": "📊 Job Satisfaction",
+      "tips": [
+        "Clearly define what job satisfaction means to you.",
+        "Use specific examples from your experience to illustrate your points.",
+        "Consider factors like work environment, relationships with colleagues, and personal fulfillment."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-50",
+      "content": "A Canadian company is conducting a survey to understand the factors that contribute to job satisfaction among its employees. The question is: 'What do you believe is the most important factor for achieving job satisfaction?' Your response should discuss your personal views on the topic and provide examples to support your opinion."
+    },
+    {
+      "title": "🏢 Work-Life Balance",
+      "tips": [
+        "Discuss the importance of work-life balance in your life.",
+        "Provide specific strategies you use to keep your work and personal life separate.",
+        "Mention any challenges you face and how you overcome them."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-51",
+      "content": "A university in Canada is conducting research on work-life balance among professionals. The survey question is: 'How important is work-life balance for you, and what strategies do you use to achieve it?' Your answer should explain your perspective and include practical methods you employ to maintain this balance."
+    },
+    {
+      "title": "💼 Networking Importance",
+      "tips": [
+        "Explain what networking means to you and its various forms.",
+        "Include personal anecdotes or examples to support your argument.",
+        "Discuss both positive and negative aspects of networking."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-52",
+      "content": "A Canadian organization is surveying young professionals about the role of networking in career development. The question is: 'How important do you believe networking is for career advancement, and why?' Your response should elaborate on your views regarding networking and its impact on professional growth."
+    },
+    {
+      "title": "🤝 Professional Development",
+      "tips": [
+        "Identify specific types of professional development you value (e.g., workshops, courses).",
+        "Discuss how these opportunities have affected your skills and career trajectory.",
+        "Mention the importance of continuous learning in professional settings."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-53",
+      "content": "An HR consultancy is conducting a survey about professional development opportunities in the workplace. The question is: 'What types of professional development do you find most beneficial, and how have they impacted your career?' Your response should reflect on different forms of development and their influence on your work life."
+    },
+    {
+      "title": "🤝 Diversity in the Workplace",
+      "tips": [
+        "Discuss the various dimensions of diversity and why they matter.",
+        "Highlight examples of how diversity can positively affect teamwork and creativity.",
+        "Consider potential challenges and how they can be overcome."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-54",
+      "content": "A Canadian corporation is surveying employees about the importance of diversity and inclusion in the workplace. The question is: 'Why do you believe diversity is important in the workplace, and what benefits do you see arising from it?' Your response should address your views on diversity and its impacts on organizational culture."
+    },
+    {
+      "title": "🏢 Employee Feedback",
+      "tips": [
+        "Explain how feedback contributes to personal and team improvement.",
+        "Provide specific examples of feedback experiences you've had.",
+        "Consider both giving and receiving feedback in your response."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-55",
+      "content": "A Canadian firm is gathering opinions on the value of employee feedback in the workplace. The question is: 'How do you perceive the role of employee feedback in improving work processes and team dynamics?' Your response should examine the significance of feedback and its role in fostering a positive work environment."
+    },
+    {
+      "title": "📈 Flexible Work Arrangements",
+      "tips": [
+        "Discuss the benefits and challenges of flexible work arrangements.",
+        "Include your personal experiences with flexible work options.",
+        "Reflect on how flexibility contributes to overall job performance."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-56",
+      "content": "A research institution in Canada is exploring opinions on flexible work arrangements. The survey question is: 'What are your thoughts on flexible work arrangements, and how do they impact productivity?' Your answer should discuss your views on flexibility in the workplace and its implications for employee performance."
+    },
+    {
+      "title": "⏰ Workplace Technology",
+      "tips": [
+        "Identify specific technologies and tools that enhance your productivity.",
+        "Discuss both positive and negative effects of technology in the workplace.",
+        "Explain how you integrate technology into your daily work routines."
+      ],
+      "category": "work",
+      "difficulty": "intermediate",
+      "id": "task2-theme-57",
+      "content": "A technology firm in Canada is surveying employees about the impact of workplace technology on productivity. The question is: 'What role do you think technology plays in enhancing productivity at work, and what tools have you found most useful?' Your response should evaluate technology's effects on your work and the tools you rely on."
+    },
+    {
+      "title": "🍽️ Healthy Eating vs Fast Food",
+      "tips": [
+        "Provide specific examples of healthy meals and fast food options.",
+        "Discuss the impact of convenience and time constraints on food choices.",
+        "Consider the long-term effects of dietary habits on health."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-58",
+      "content": "A health organization is conducting a survey to explore Canadians' dietary habits. They want to know your opinion on the importance of healthy eating compared to the convenience of fast food. Your response should address both sides and provide your perspective on how lifestyle choices affect overall health."
+    },
+    {
+      "title": "🌿 Outdoor Activities vs Indoor Hobbies",
+      "tips": [
+        "Mention specific examples of outdoor and indoor activities.",
+        "Discuss the physical and mental health benefits of both types of activities.",
+        "Share any personal experiences that influenced your preference."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-59",
+      "content": "A local community center is seeking feedback on recreational preferences. They want to know whether people prefer outdoor activities like hiking and sports or indoor hobbies like gaming and crafting. Your response should explore the benefits of each and your personal preference."
+    },
+    {
+      "title": "🌅 Traditional Festivals vs Modern Events",
+      "tips": [
+        "Include descriptions of at least one traditional festival and one modern event.",
+        "Discuss how each type of event fosters community and cultural identity.",
+        "Share your personal experiences related to both types of celebrations."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-60",
+      "content": "A cultural organization is surveying Canadians about their preferences for traditional festivals versus modern events like music festivals and fairs. They want your insights on the value of heritage versus contemporary celebrations. Address the importance of both in community bonding."
+    },
+    {
+      "title": "🧘 Solo Travel vs Group Travel",
+      "tips": [
+        "Highlight the pros and cons of traveling alone versus with others.",
+        "Share personal anecdotes to illustrate your points.",
+        "Discuss how each travel style affects personal growth and experiences."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-61",
+      "content": "A travel agency is conducting a survey to understand preferences in travel styles among Canadians. They are interested in whether individuals prefer solo travel, valuing independence, or group travel, emphasizing shared experiences. Address the advantages and disadvantages of each approach to travel."
+    },
+    {
+      "title": "🎭 Traditional Shopping vs Online Shopping",
+      "tips": [
+        "Mention benefits of in-store shopping, such as personal interaction and examining products.",
+        "Discuss the convenience factors of online shopping.",
+        "Include any recent trends you’ve observed in shopping preferences."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-62",
+      "content": "A marketing firm is exploring shopping preferences among Canadians for a new campaign. They want your opinion on traditional shopping in stores compared to online shopping convenience. Your response should reflect on both experiences, addressing aspects like customer service, accessibility, and enjoyment."
+    },
+    {
+      "title": "🍽️ City Living vs Rural Living",
+      "tips": [
+        "Discuss the lifestyle differences between urban and rural living.",
+        "Mention opportunities available in both settings, such as jobs and recreation.",
+        "Reflect on how each environment impacts your daily life and well-being."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-63",
+      "content": "A research institute is conducting a survey on living preferences across Canada. They would like to know whether you prefer the bustling lifestyle of the city or the tranquility of rural living. Your response should evaluate the pros and cons of each environment regarding lifestyle, opportunities, and community."
+    },
+    {
+      "title": "🌿 Digital Detox vs Constant Connectivity",
+      "tips": [
+        "Include the mental health implications of constant connectivity versus taking breaks.",
+        "Discuss how digital detox can improve life quality.",
+        "Share your own experiences with technology use and balance."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-64",
+      "content": "A wellness organization is surveying Canadians about their relationship with technology. They are interested in whether people support the idea of a digital detox, which emphasizes taking breaks from screens, or prefer constant connectivity through devices. Your response should weigh the advantages and challenges of each perspective."
+    },
+    {
+      "title": "🏡 Home-Cooked Meals vs Takeout",
+      "tips": [
+        "Discuss the differences in nutrition between home-cooked and takeout meals.",
+        "Mention the social aspects of cooking at home versus ordering out.",
+        "Include personal preferences and experiences related to each option."
+      ],
+      "category": "lifestyle",
+      "difficulty": "intermediate",
+      "id": "task2-theme-65",
+      "content": "A foodblogger is conducting a survey to learn about Canadians' dining preferences. They want to know whether individuals prefer home-cooked meals, which often emphasize health and family, or the convenience of takeout. Your response should address both options in terms of health, quality, and experience."
+    },
+    {
+      "title": "🔒 Smart Home Devices",
+      "tips": [
+        "Introduce the concept of smart home devices and their popularity in Canada.",
+        "Clearly outline both the pros and cons in separate paragraphs.",
+        "Use examples to illustrate your points, such as energy savings or privacy concerns.",
+        "Conclude with your personal opinion on the use of these devices."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-66",
+      "content": "A research organization is studying the impact of smart home devices on daily life in Canada. They want to know if these devices, like smart speakers and thermostats, enhance convenience or compromise security. Your response should discuss both the advantages and disadvantages of using smart home technology in Canadian households."
+    },
+    {
+      "title": "🔒 Telehealth Services",
+      "tips": [
+        "Define telehealth and its relevance in the Canadian context, especially post-pandemic.",
+        "Discuss both the benefits, like accessibility, and drawbacks, like technology barriers.",
+        "Include personal experiences or hypothetical situations for clarity.",
+        "Finish with your viewpoint on the future of telehealth."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-67",
+      "content": "A health organization is surveying Canadian citizens about their experiences with telehealth services, especially since the pandemic. They want to know if people feel telehealth provides adequate care compared to in-person visits. Your response should evaluate the effectiveness of telehealth in meeting healthcare needs."
+    },
+    {
+      "title": "💻 Online Privacy vs Convenience",
+      "tips": [
+        "Introduce the topic by explaining online privacy concerns in Canada.",
+        "Discuss the need for convenience in technology and how it affects personal data choices.",
+        "Use specific examples of popular apps or websites to illustrate your points.",
+        "End with your opinion on finding the right balance between privacy and convenience."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-68",
+      "content": "A tech company is conducting a survey on users' perceptions of online privacy versus convenience. They want to understand whether Canadians are willing to sacrifice some privacy for ease of use in digital platforms. Your response should explore this balance in today's digital landscape."
+    },
+    {
+      "title": "📱 Video Games for Learning",
+      "tips": [
+        "Introduce the increasing popularity of educational video games in Canada.",
+        "Discuss both the advantages of gamified learning and any potential downsides.",
+        "Include examples of specific games or programs used in education.",
+        "Conclude with your thoughts on incorporating video games in learning environments."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-69",
+      "content": "An educational institution is interested in understanding the role of video games in learning among Canadian students. They ask if students feel that educational video games enhance their learning experience compared to traditional methods. Your response should evaluate this learning approach."
+    },
+    {
+      "title": "📱 E-Waste Management",
+      "tips": [
+        "Define e-waste and its growing concern in Canada.",
+        "Discuss the environmental implications of improper disposal of electronics.",
+        "Include suggestions for responsible e-waste recycling practices.",
+        "Wrap up with your opinion on public awareness and education initiatives."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-70",
+      "content": "A non-profit environmental organization is surveying Canadians about their awareness and practices related to electronic waste (e-waste) management. They want to know if people are taking steps to recycle or properly dispose of their old electronics. Your response should discuss the challenges and importance of e-waste management."
+    },
+    {
+      "title": "🤖 The Future of 5G Technology",
+      "tips": [
+        "Introduce 5G technology and its expected benefits for Canadians.",
+        "Clearly outline potential drawbacks, such as health concerns or infrastructure issues.",
+        "Use examples related to how 5G could enhance connectivity and services.",
+        "Conclude with your stance on the future implications of 5G technology."
+      ],
+      "category": "technology",
+      "difficulty": "intermediate",
+      "id": "task2-theme-71",
+      "content": "A telecommunications company is conducting a survey to gather opinions on the rollout of 5G technology in Canada. They want to know if citizens believe it will bring more benefits than drawbacks to society. Your response should assess both the optimistic and pessimistic views regarding 5G's impact on daily life."
+    },
+    {
+      "title": "🌍 Renewable Energy Initiatives",
+      "tips": [
+        "Clearly outline the benefits of renewable energy sources.",
+        "Discuss the environmental impact of fossil fuels.",
+        "Include examples of successful renewable energy projects in Canada."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-72",
+      "content": "The Canadian government is conducting a survey to gather public opinions on renewable energy initiatives. They want to know if citizens believe that investments in solar and wind energy should be prioritized over fossil fuels. Your response should address the potential benefits and challenges of renewable energy for Canada."
+    },
+    {
+      "title": "🌱 Waste Reduction Strategies",
+      "tips": [
+        "Provide statistical data on waste generation and recycling rates.",
+        "Mention community involvement and its importance in waste reduction.",
+        "Suggest innovative ideas for improving waste management."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-73",
+      "content": "A local municipality is surveying residents about the effectiveness of current waste reduction strategies. They are interested in your opinion about implementing stricter recycling measures versus promoting community composting programs. Your response should examine the pros and cons of each approach."
+    },
+    {
+      "title": "🌊 Urban Green Spaces",
+      "tips": [
+        "Highlight the mental and physical health benefits of green spaces.",
+        "Discuss the role of green spaces in urban biodiversity.",
+        "Consider economic benefits versus community needs."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-74",
+      "content": "A city planning department is seeking feedback on the importance of urban green spaces. They want to know if you think investing in parks and community gardens is more beneficial than developing commercial properties. Your response should discuss the impact of green spaces on community health and well-being."
+    },
+    {
+      "title": "🌍 Climate Change Awareness",
+      "tips": [
+        "Explain the importance of understanding the science behind climate change.",
+        "Discuss the role of personal action in mitigating climate change effects.",
+        "Address the need for awareness in different demographics."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-75",
+      "content": "A Canadian environmental organization is conducting a survey to assess public awareness of climate change impacts. They want to know if you believe educational campaigns should focus more on the science of climate change or on practical solutions for individuals. Your response should consider both aspects and their importance in fostering action."
+    },
+    {
+      "title": "🌊 Transportation Alternatives",
+      "tips": [
+        "Compare the sustainability of cycling versus public transit.",
+        "Discuss the impact on traffic congestion and urban air quality.",
+        "Mention any existing programs or infrastructure in your area."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-76",
+      "content": "A transportation authority is surveying residents on the effectiveness of current transportation options. They want your opinion on promoting cycling infrastructure versus enhancing public transit systems. Your response should evaluate how each option contributes to reducing carbon emissions and improving urban mobility."
+    },
+    {
+      "title": "🌳 Conservation Practices",
+      "tips": [
+        "Explain the connection between species and habitat conservation.",
+        "Discuss the long-term benefits of protecting biodiversity.",
+        "Include examples of successful conservation efforts in Canada."
+      ],
+      "category": "environment",
+      "difficulty": "intermediate",
+      "id": "task2-theme-77",
+      "content": "A national wildlife organization is seeking public input on conservation practices. They want to know if you think more resources should be allocated to protecting endangered species or to preserving natural habitats. Your response should address the implications of each choice for environmental protection."
+    },
+    {
+      "title": "🩺 Mental Health Days",
+      "tips": [
+        "Include real-life examples to support your argument.",
+        "Discuss potential impacts on productivity and employee morale.",
+        "Consider both employees' and employers' perspectives."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-78",
+      "content": "A Canadian company is conducting a survey to understand employee perspectives on mental health days. The survey asks whether companies should provide paid mental health days to support employee well-being. Your response should address the importance of mental health in the workplace and provide arguments for or against this initiative."
+    },
+    {
+      "title": "❤️ Access to Healthcare",
+      "tips": [
+        "Highlight specific barriers to healthcare access in your response.",
+        "Use statistics to strengthen your arguments.",
+        "Mention the importance of equality in healthcare."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-79",
+      "content": "A health organization in Canada is surveying citizens about their access to healthcare services. The survey asks whether you believe healthcare services should be expanded or improved to meet the needs of all Canadians. Your response should address current healthcare challenges and propose solutions."
+    },
+    {
+      "title": "💊 Nutrition Education in Schools",
+      "tips": [
+        "Explain how nutrition education can promote healthy eating habits.",
+        "Consider the long-term benefits for public health.",
+        "Include potential challenges in implementing such programs."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-80",
+      "content": "A national education body is exploring the idea of incorporating nutrition education into school curriculums. The survey asks for opinions on whether this initiative could positively affect children's health. Your response should discuss the benefits of nutrition education for students and society."
+    },
+    {
+      "title": "💊 Public Health Campaigns",
+      "tips": [
+        "Mention historical successes of vaccination campaigns.",
+        "Discuss the role of community immunity.",
+        "Consider the potential costs of not supporting vaccination efforts."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-81",
+      "content": "A public health agency is conducting a survey to gather opinions on funding public health campaigns related to vaccination. The survey asks whether you support government spending on these campaigns. Your response should reflect on the importance of vaccinations and public health awareness."
+    },
+    {
+      "title": "🧬 Exercise Facilities in Communities",
+      "tips": [
+        "Discuss the impact of exercise on physical and mental health.",
+        "Consider the accessibility of current facilities.",
+        "Include recommendations for types of facilities that could be beneficial."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-82",
+      "content": "A local government is surveying residents about the need for more exercise facilities in their communities. The survey asks whether additional investment in these facilities is necessary for promoting public health. Your response should address the role of physical activity in health and well-being."
+    },
+    {
+      "title": "🏥 Workplace Wellness Programs",
+      "tips": [
+        "Outline different types of wellness programs and their benefits.",
+        "Discuss how these programs can reduce healthcare costs for employers.",
+        "Include potential drawbacks or challenges of implementing these programs."
+      ],
+      "category": "health",
+      "difficulty": "intermediate",
+      "id": "task2-theme-83",
+      "content": "A business association is gathering feedback on the implementation of wellness programs in the workplace. The survey asks whether you believe such programs can enhance employee health and productivity. Your response should explore the value of workplace wellness initiatives."
+    },
+    {
+      "title": "⚖️ Universal Basic Income",
+      "tips": [
+        "Define universal basic income and its intended purpose.",
+        "Discuss both potential benefits and drawbacks for individuals and society.",
+        "Provide examples or statistics relevant to the Canadian context."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-84",
+      "content": "The Canadian Government is conducting a survey to assess public opinion on implementing a universal basic income to support citizens facing economic hardship. Please provide your thoughts on the potential benefits and challenges of this policy in Canada."
+    },
+    {
+      "title": "📜 Affordable Housing Initiatives",
+      "tips": [
+        "Highlight the current housing situation in major Canadian cities.",
+        "Discuss both short-term and long-term strategies for affordable housing.",
+        "Consider the impact on diverse communities and demographics."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-85",
+      "content": "The municipal government is looking for feedback on initiatives aimed at increasing affordable housing options in urban areas. Share your views on the importance of affordable housing and suggest potential strategies that could be effective."
+    },
+    {
+      "title": "🏛️ Environmental Regulations",
+      "tips": [
+        "Discuss the importance of protecting the environment.",
+        "Address potential impacts on businesses and the economy.",
+        "Provide examples of successful environmental policies in Canada."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-86",
+      "content": "As part of its commitment to sustainability, the Canadian Government is surveying citizens on the necessity of stricter environmental regulations. Describe your opinions on the balance between economic growth and environmental protection."
+    },
+    {
+      "title": "🗳️ Public Healthcare Funding",
+      "tips": [
+        "Identify specific areas of healthcare that need improvement.",
+        "Highlight the importance of universal access to healthcare.",
+        "Use recent statistics or studies to support your arguments."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-87",
+      "content": "The provincial health ministry is seeking input on priorities for funding in the public healthcare system. What areas do you believe should receive more attention and resources, and why are these important for Canadians?"
+    },
+    {
+      "title": "🏛️ Public Transit Improvements",
+      "tips": [
+        "Discuss the impact of public transit on daily life.",
+        "Suggest specific improvements or technologies that could be implemented.",
+        "Consider the environmental and economic benefits of enhancing public transit."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-88",
+      "content": "The city government is conducting a survey to gather opinions on improvements needed in public transit systems. Share your thoughts on the current transit issues and what changes could enhance the experience for commuters."
+    },
+    {
+      "title": "🇨🇦 Support for Indigenous Communities",
+      "tips": [
+        "Acknowledge the historical context and current challenges faced by Indigenous communities.",
+        "Discuss the importance of cultural preservation and economic development.",
+        "Suggest collaborative approaches between government and Indigenous leaders."
+      ],
+      "category": "government",
+      "difficulty": "intermediate",
+      "id": "task2-theme-89",
+      "content": "The Canadian Government is seeking public opinion on policies aimed at enhancing support and resources for Indigenous communities. Share your perspective on the importance of these policies and any suggestions you may have for their implementation."
+    },
+    {
+      "title": "🌎 Cultural Festivals",
+      "tips": [
+        "Include examples of cultural festivals from your area.",
+        "Discuss the impact on community relationships.",
+        "Consider both positive and negative aspects."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-90",
+      "content": "A local community center is conducting a survey to understand the importance of cultural festivals in promoting community engagement. How do you feel about the role of cultural festivals in your city? Your response should address both the benefits and any potential drawbacks of these events."
+    },
+    {
+      "title": "🎭 Bilingualism in Canada",
+      "tips": [
+        "Mention the benefits of bilingualism for students.",
+        "Discuss cultural implications of language education.",
+        "Provide examples from Canadian schools."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-91",
+      "content": "The Canadian government is interested in understanding public opinion on promoting bilingualism in schools. Should French and English be equally prioritized in education? Your response should discuss the advantages and disadvantages of bilingual education in the Canadian context."
+    },
+    {
+      "title": "📚 Cultural Heritage Sites",
+      "tips": [
+        "Explain the significance of specific heritage sites.",
+        "Consider tourism and local economy factors.",
+        "Discuss the balance between preservation and development."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-92",
+      "content": "A municipal council is surveying residents to gauge their thoughts on preserving cultural heritage sites. What should be prioritized: funding for preservation or development of new infrastructure? Address the importance of protecting these sites and any impact on community identity."
+    },
+    {
+      "title": "🎨 Cultural Appropriation vs Appreciation",
+      "tips": [
+        "Define cultural appropriation and appreciation clearly.",
+        "Use examples from contemporary art and fashion.",
+        "Discuss the ethical aspects involved."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-93",
+      "content": "An academic institution is conducting a survey to explore community perspectives on cultural appropriation versus appreciation in art and fashion. How should these concepts be defined and managed? Your response should include your understanding of both terms and their implications in culture."
+    },
+    {
+      "title": "📚 Social Media and Cultural Identity",
+      "tips": [
+        "Discuss how social media connects youth with their culture.",
+        "Mention potential risks of cultural dilution.",
+        "Use specific examples of social media influences."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-94",
+      "content": "A cultural organization is interested in the effects of social media on cultural identity among youth. How does social media influence young people's connection to their heritage? Your response should analyze both positive and negative effects of social media on cultural identity."
+    },
+    {
+      "title": "🎬 Food Diversity and Community",
+      "tips": [
+        "Highlight the relationship between food and culture.",
+        "Mention specific foods that represent various cultures.",
+        "Discuss how food events foster community relationships."
+      ],
+      "category": "culture",
+      "difficulty": "intermediate",
+      "id": "task2-theme-95",
+      "content": "A local food festival organizer is surveying residents about the importance of food diversity in promoting cultural understanding. How can diverse food options enhance community relations? Your response should address the role of food in culture and community cohesion."
+    },
+    {
+      "title": "✈️ Public Transit Accessibility",
+      "tips": [
+        "Provide specific examples of accessibility challenges.",
+        "Suggest practical improvements or adaptations.",
+        "Consider the perspectives of different user groups.",
+        "Use clear and concise language."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-96",
+      "content": "The Canadian government is conducting a survey to assess the accessibility of public transit systems in urban areas. The question seeks to gather opinions on whether improvements should be made to make public transportation more accessible for individuals with disabilities. Your response should address existing barriers and suggest possible solutions."
+    },
+    {
+      "title": "🚲 Ride-Sharing vs. Traditional Taxis",
+      "tips": [
+        "Outline the pros and cons of each service.",
+        "Use current data or trends to support your opinion.",
+        "Address the impact on local taxi businesses.",
+        "Be objective and balanced in your analysis."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-97",
+      "content": "A municipal council is conducting a survey to understand public preference between ride-sharing services (like Uber or Lyft) and traditional taxi services. They want to know which option residents prefer for convenience and cost-effectiveness. Your response should compare both services based on factors such as availability, pricing, and safety."
+    },
+    {
+      "title": "🚌 Bicycle Infrastructure Development",
+      "tips": [
+        "Highlight environmental and health benefits of cycling.",
+        "Mention safety concerns and solutions.",
+        "Discuss the impact on traffic congestion.",
+        "Use persuasive language to make your case."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-98",
+      "content": "A city planner is seeking public input on the proposed development of new bicycle lanes and pathways in the city. The survey asks citizens to express their views on the importance of cycling infrastructure for urban transport and safety. Your response should discuss the benefits of cycling and potential challenges."
+    },
+    {
+      "title": "🛣️ Car-Free Zones in Cities",
+      "tips": [
+        "Consider the environmental impacts of car-free zones.",
+        "Discuss the effect on local businesses and foot traffic.",
+        "Address public transport alternatives available.",
+        "Use examples from other cities that have implemented similar policies."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-99",
+      "content": "A city council is exploring the idea of implementing car-free zones in busy downtown areas to promote walking and cycling. They want feedback on whether this initiative would improve urban life and reduce pollution. Your response should evaluate the pros and cons of car-free zones in metropolitan settings."
+    },
+    {
+      "title": "🚆 Electric Vehicles Adoption",
+      "tips": [
+        "Include potential environmental benefits of EVs.",
+        "Discuss the importance of charging infrastructure.",
+        "Mention government incentives or programs.",
+        "Consider the impact on the economy and job market."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-100",
+      "content": "The government is conducting a survey to gauge public interest in the adoption of electric vehicles (EVs) in Canada. They want to know what factors influence residents' decisions to switch from gas-powered vehicles to electric ones. Your response should explore incentives, challenges, and benefits associated with EV ownership."
+    },
+    {
+      "title": "🚗 High-Speed Rail vs. Air Travel",
+      "tips": [
+        "Compare travel times and costs for both options.",
+        "Discuss the environmental impact of rail vs. air travel.",
+        "Consider passenger comfort and convenience.",
+        "Provide insights based on current travel trends."
+      ],
+      "category": "transportation",
+      "difficulty": "intermediate",
+      "id": "task2-theme-101",
+      "content": "Transport Canada is conducting a survey to evaluate the feasibility of introducing high-speed rail travel across major Canadian provinces as an alternative to air travel. They seek opinions on factors such as travel time, cost, and environmental impact. Your response should analyze the advantages and disadvantages of each transportation method."
     }
   ]
 }

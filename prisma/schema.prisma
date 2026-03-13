@@ -236,3 +236,99 @@ model DailyUsage {
   @@unique([userId, date])
   @@map("daily_usage")
 }
+
+// ══════════════════════════════════════════
+// English Learning Module
+// ══════════════════════════════════════════
+
+model EnglishLevel {
+  id           Int             @id @default(autoincrement())
+  number       Int             @unique
+  name         String
+  theme        String
+  cefr         String
+  clb          String
+  certName     String
+  totalLessons Int
+  isFree       Boolean         @default(false)
+  lessons      EnglishLesson[]
+
+  @@map("english_levels")
+}
+
+model EnglishLesson {
+  id           Int                 @id @default(autoincrement())
+  levelId      Int
+  level        EnglishLevel        @relation(fields: [levelId], references: [id])
+  number       Int
+  title        String
+  situation    String
+  grammarFocus String
+  keyPhrases   String[]
+  imageUrl     String?
+  dialogue     Json
+  vocabulary   Json
+  exercises    EnglishExercise[]
+  completions  LessonCompletion[]
+
+  @@unique([levelId, number])
+  @@map("english_lessons")
+}
+
+model EnglishExercise {
+  id       Int           @id @default(autoincrement())
+  lessonId Int
+  lesson   EnglishLesson @relation(fields: [lessonId], references: [id])
+  type     String
+  order    Int
+  question Json
+  options  Json?
+  correct  Json
+  hint     String?
+  points   Int           @default(10)
+
+  @@map("english_exercises")
+}
+
+model LessonCompletion {
+  id          Int           @id @default(autoincrement())
+  userId      String
+  lessonId    Int
+  lesson      EnglishLesson @relation(fields: [lessonId], references: [id])
+  score       Int
+  xpEarned    Int
+  timeSeconds Int
+  completedAt DateTime      @default(now())
+
+  @@unique([userId, lessonId])
+  @@map("lesson_completions")
+}
+
+model UserEnglishProgress {
+  id               Int       @id @default(autoincrement())
+  userId           String    @unique
+  currentLevel     Int       @default(1)
+  currentLesson    Int       @default(1)
+  totalXp          Int       @default(0)
+  streakDays       Int       @default(0)
+  lastPracticeAt   DateTime?
+  wordsLearned     Int       @default(0)
+  lessonsCompleted Int       @default(0)
+  certificates     Json      @default("[]")
+
+  @@map("user_english_progress")
+}
+
+model UserVocabulary {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  word        String
+  translation String
+  imageUrl    String?
+  strength    Int      @default(1)
+  nextReview  DateTime @default(now())
+  reviewCount Int      @default(0)
+
+  @@unique([userId, word])
+  @@map("user_vocabulary")
+}

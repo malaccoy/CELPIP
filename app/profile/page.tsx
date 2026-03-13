@@ -694,6 +694,25 @@ export default function ProfilePage() {
                 </div>
               )}
               
+              {/* Manage Subscription */}
+              <div className={styles.settingsRow}>
+                <div className={styles.settingsInfo}>
+                  <h3>Manage Subscription</h3>
+                  <p>Change plan, update payment method, or cancel</p>
+                </div>
+                <button className={styles.manageSubBtn} onClick={async () => {
+                  try {
+                    const res = await fetch('/api/stripe/portal', { method: 'POST' });
+                    const data = await res.json();
+                    if (data.url) window.location.href = data.url;
+                    else alert(data.error || 'No active subscription found');
+                  } catch { alert('Failed to open subscription portal'); }
+                }}>
+                  <Settings size={18} />
+                  Manage
+                </button>
+              </div>
+
               <div className={styles.settingsRow}>
                 <div className={styles.settingsInfo}>
                   <h3>Sign Out</h3>

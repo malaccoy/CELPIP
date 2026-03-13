@@ -341,3 +341,212 @@
     transform: translateY(-1px);
   }
 }
+
+/* === New styles for integrated weakness report === */
+
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 60px 20px;
+  color: rgba(248,250,252,0.5);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.alertBanner {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(251,146,60,0.1);
+  border: 1px solid rgba(251,146,60,0.3);
+  border-radius: 12px;
+  color: #fb923c;
+  margin-bottom: 20px;
+  align-items: flex-start;
+
+  strong { color: #fdba74; }
+}
+
+.weakestCard {
+  border-color: rgba(248,113,113,0.4) !important;
+  box-shadow: 0 0 20px rgba(248,113,113,0.1);
+}
+
+.weakBadge {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(248,113,113,0.15);
+  color: #f87171;
+}
+
+.strongBadge {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(52,211,153,0.15);
+  color: #34d399;
+}
+
+.noDataSection {
+  padding: 16px 0;
+  text-align: center;
+  color: rgba(248,250,252,0.4);
+  font-size: 0.9rem;
+}
+
+.miniCta {
+  display: inline-block;
+  margin-top: 8px;
+  color: #818cf8;
+  font-size: 0.85rem;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.statValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(248,250,252,0.9);
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  color: rgba(248,250,252,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.activeDays {
+  font-size: 0.8rem;
+  color: rgba(248,250,252,0.4);
+}
+
+.techniqueSection {
+  margin-top: 12px;
+  border-top: 1px solid rgba(248,250,252,0.06);
+  padding-top: 12px;
+}
+
+.techniqueToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: rgba(248,250,252,0.03);
+  border: 1px solid rgba(248,250,252,0.08);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: rgba(248,250,252,0.7);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(248,250,252,0.06);
+    color: rgba(248,250,252,0.9);
+  }
+}
+
+.techniqueContent {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tipCard {
+  background: rgba(248,250,252,0.03);
+  border: 1px solid rgba(248,250,252,0.08);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.tipTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(248,250,252,0.9);
+  margin: 0 0 8px;
+}
+
+.tipTechnique {
+  font-size: 0.85rem;
+  color: rgba(248,250,252,0.6);
+  margin-bottom: 8px;
+
+  strong { color: rgba(248,250,252,0.8); }
+}
+
+.tipQuick {
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  background: rgba(251,191,36,0.08);
+  border-radius: 8px;
+  color: #fbbf24;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.tipInsights, .tipMistakes {
+  font-size: 0.8rem;
+  color: rgba(248,250,252,0.5);
+  margin-bottom: 6px;
+
+  strong {
+    color: rgba(248,250,252,0.7);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 18px;
+    
+    li {
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.tipMistakes {
+  color: rgba(248,113,113,0.6);
+  strong { color: rgba(248,113,113,0.8); }
+}
+
+.guideLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #818cf8;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 8px 0;
+  
+  &:hover { text-decoration: underline; }
+}

@@ -437,7 +437,7 @@ export default function AIMockExamPage() {
 
   // ─── Start exam ────────────────────────────────
   const startExam = () => {
-    analytics.mockExamStart();
+    analytics.mockExamStarted("mock");
     setResults([]);
     setCurrentIdx(0);
     generateSection(0);

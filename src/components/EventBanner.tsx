@@ -41,7 +41,7 @@ export function EventBanner() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  if (!event || time.expired) return null;
+  if (!event || time.expired || isPro) return null;
   if (dismissed) return null;
 
   return (

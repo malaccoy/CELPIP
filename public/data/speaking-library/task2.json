@@ -9,7 +9,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-02",
@@ -21,7 +23,9 @@
       "What you learned from this experience?"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-03",
@@ -33,7 +37,9 @@
       "What did you learn from that experience?"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-04",
@@ -45,7 +51,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-05",
@@ -57,7 +65,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-06",
@@ -69,7 +79,9 @@
       "What you learned from the experience"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-07",
@@ -81,7 +93,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-08",
@@ -93,7 +107,9 @@
       "What you learned from the experience about cooking or hosting."
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-09",
@@ -105,7 +121,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-10",
@@ -117,7 +135,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-11",
@@ -129,7 +149,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-12",
@@ -141,7 +163,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-13",
@@ -153,7 +177,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-14",
@@ -165,7 +191,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-15",
@@ -177,7 +205,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-16",
@@ -189,7 +219,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-17",
@@ -201,7 +233,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-18",
@@ -213,7 +247,9 @@
       "What you learned from the adventure"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-19",
@@ -225,7 +261,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-20",
@@ -237,7 +275,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-21",
@@ -249,7 +289,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-22",
@@ -261,7 +303,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-23",
@@ -273,7 +317,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-24",
@@ -285,7 +331,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-25",
@@ -297,7 +345,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-26",
@@ -309,7 +359,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-27",
@@ -321,7 +373,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-28",
@@ -333,7 +387,9 @@
       "What you eventually learned about patience"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-29",
@@ -345,7 +401,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "id": "task2-30",
@@ -357,7 +415,9 @@
       "What you learned"
     ],
     "context": "Think of a specific experience.",
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   },
   {
     "title": "My Favorite Food",
@@ -719,5 +779,2046 @@
       "Use specific examples from your experience to illustrate your points.",
       "Acknowledge both sides of the argument to show a well-rounded perspective."
     ]
+  },
+  {
+    "prompt": "Talk about a time when you went to a local festival in your community. What did you see and do?",
+    "topic": "Local Festival",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-061",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you had a picnic with your friends or family. Where did you go?",
+    "topic": "Picnic",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-062",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you helped a neighbor. What did you do?",
+    "topic": "Helping Neighbor",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-063",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you attended a sports event. What was the game and how did it feel?",
+    "topic": "Sports Event",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-064",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you visited a museum. What did you learn there?",
+    "topic": "Museum Visit",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-065",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you participated in a community service project. What was your role?",
+    "topic": "Community Service",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-066",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you went shopping for clothes. What did you buy and why?",
+    "topic": "Shopping Experience",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-067",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you experienced a cultural event in your city. What was it about?",
+    "topic": "Cultural Event",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-068",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you celebrated a holiday with your family. What traditions did you follow?",
+    "topic": "Holiday Celebration",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-069",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you had a fun day at the beach. What activities did you enjoy?",
+    "topic": "Beach Day",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-070",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you went on a field trip. What did you see and learn?",
+    "topic": "Field Trip",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-071",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you visited a park in your city. What did you do there?",
+    "topic": "Park Visit",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-072",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you tried a new hobby. What was it and how did you feel?",
+    "topic": "New Hobby",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-073",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you helped organize an event. What was the event and what did you do?",
+    "topic": "Event Organization",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-074",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you made a new friend. How did you meet?",
+    "topic": "Making Friends",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-075",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you attended a wedding. What was special about it?",
+    "topic": "Wedding Attendance",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-076",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you went to a concert. Who performed and what was the experience like?",
+    "topic": "Concert Experience",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-077",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you discovered a new place in your city. What did you find interesting?",
+    "topic": "Discovering New Place",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-078",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you received a special gift. What was it and who gave it to you?",
+    "topic": "Receiving a Gift",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-079",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you went for a walk in your neighborhood. What did you see?",
+    "topic": "Neighborhood Walk",
+    "task": 2,
+    "difficulty": "beginner",
+    "id": "task2-080",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you participated in a community event. What was the event and what was your role?",
+    "topic": "community event",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-081",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you faced a difficult decision at work. What was the situation and how did you choose?",
+    "topic": "work decision",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-082",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about an experience when you learned a valuable lesson from a mistake. What happened?",
+    "topic": "learning from mistakes",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-083",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you helped a friend through a tough situation. What did you do to support them?",
+    "topic": "supporting a friend",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-084",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you experienced a culture shock while traveling. What cultural differences surprised you?",
+    "topic": "culture shock",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-085",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you had to work in a team to complete a project. What was your contribution?",
+    "topic": "team project",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-086",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you celebrated a significant achievement. What was the achievement and how did you celebrate?",
+    "topic": "celebration",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-087",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an experience when you had to step out of your comfort zone. What did you do and what was the outcome?",
+    "topic": "comfort zone",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-088",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you volunteered for a cause you believe in. What motivated you to get involved?",
+    "topic": "volunteer experience",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-089",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you made an important connection through networking. How did it benefit you?",
+    "topic": "networking",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-090",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a memorable trip you took within Canada. Where did you go and what did you do?",
+    "topic": "memorable trip",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-091",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you received constructive criticism. How did you handle it and what did you learn?",
+    "topic": "constructive criticism",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-092",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about an experience when you taught someone a new skill. What was the skill and how did you teach it?",
+    "topic": "teaching skill",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-093",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you attended a workshop or seminar. What was the topic and what did you gain from it?",
+    "topic": "workshop experience",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-094",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you had a special family gathering. What made it memorable?",
+    "topic": "family gathering",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-095",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an experience when you had to deal with a challenging customer. How did you manage the situation?",
+    "topic": "challenging customer",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-096",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you discovered a new hobby or interest. What drew you to it?",
+    "topic": "new hobby",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-097",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you navigated a difficult conversation with someone. What was discussed and how did it turn out?",
+    "topic": "difficult conversation",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-098",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you experienced a natural event (like a snowstorm or flood). How did you respond?",
+    "topic": "natural event",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-099",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you made a new friend from a different background. How did you connect?",
+    "topic": "new friendship",
+    "task": 2,
+    "difficulty": "intermediate",
+    "id": "task2-100",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you navigated a challenging work project with a team. What obstacles did you face and how did you overcome them?",
+    "topic": "teamwork",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-101",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you participated in a community event that had a significant impact on your neighborhood. What role did you play?",
+    "topic": "community engagement",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-102",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Reflect on a situation where you had to mentor someone in your field. What was the experience like and what did you learn from it?",
+    "topic": "mentorship",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-103",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you traveled to a new country and had to navigate cultural differences. How did you adapt?",
+    "topic": "cultural adaptation",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-104",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an occasion when you had to make a difficult ethical decision at work. What influenced your choice?",
+    "topic": "ethical decision-making",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-105",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you took the initiative to solve a problem in your community. What steps did you take?",
+    "topic": "initiative",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-106",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you experienced a significant change in your life. How did you cope with it?",
+    "topic": "life changes",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-107",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Reflect on a time when you had to give an important presentation. How did you prepare and what was the outcome?",
+    "topic": "public speaking",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-108",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a memorable trip you took that expanded your perspective on life. What lessons did you take away from it?",
+    "topic": "travel experience",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-109",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a time when you encountered a challenging situation while volunteering. How did you handle it?",
+    "topic": "volunteering challenges",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-110",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about an instance when you had to collaborate with someone who had a completely different viewpoint. How did you navigate the differences?",
+    "topic": "collaboration",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-111",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a moment when you had to deliver difficult news to someone. What approach did you take?",
+    "topic": "difficult conversations",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-112",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a significant event in Canadian history that resonates with you. How did it shape your understanding of the country?",
+    "topic": "Canadian history",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-113",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Reflect on a time when you faced a serious health challenge. How did it impact your life and decision-making?",
+    "topic": "health challenges",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-114",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an environment in which you felt out of your comfort zone. How did you respond to the situation?",
+    "topic": "comfort zone",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-115",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you had to adapt to a new technology in your workplace. What challenges did you face?",
+    "topic": "technology adaptation",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-116",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe an occasion when you successfully resolved a conflict between two parties. What strategies did you use?",
+    "topic": "conflict resolution",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-117",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Reflect on a personal goal you set and achieved. What motivated you, and what obstacles did you overcome to reach it?",
+    "topic": "goal achievement",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-118",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Talk about a time when you experienced a major regret. How did it affect you moving forward?",
+    "topic": "regrets",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-119",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "prompt": "Describe a moment when you encountered a barrier to success. How did you persevere?",
+    "topic": "perseverance",
+    "task": 2,
+    "difficulty": "advanced",
+    "id": "task2-120",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-121",
+    "scenario": "You just moved to a new neighborhood in Canada and want to explore it. You decide to visit a local park.",
+    "prompt": "Describe your experience visiting the park in your new neighborhood. What did you see and do there?",
+    "tips": [
+      "Talk about the park's features",
+      "Mention the people you saw",
+      "Share your feelings about the visit"
+    ],
+    "bulletPoints": [
+      "Beautiful trees",
+      "Children playing",
+      "Birds singing"
+    ],
+    "context": "Exploring a new environment in a friendly community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-122",
+    "scenario": "You had a pleasant day volunteering at a community center in your town.",
+    "prompt": "Talk about your experience volunteering. What tasks did you do and how did it make you feel?",
+    "tips": [
+      "Describe the activities",
+      "Mention the people you helped",
+      "Share your emotions about volunteering"
+    ],
+    "bulletPoints": [
+      "Helping children",
+      "Organizing events",
+      "Feeling of satisfaction"
+    ],
+    "context": "Giving back to the community and helping others.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-123",
+    "scenario": "You visited a local farmer's market for the first time.",
+    "prompt": "Describe your experience at the farmer's market. What did you see, smell, and buy?",
+    "tips": [
+      "Talk about the variety of products",
+      "Mention your favorite item",
+      "Share your overall impression"
+    ],
+    "bulletPoints": [
+      "Fresh fruits and vegetables",
+      "Homemade goods",
+      "Friendly vendors"
+    ],
+    "context": "Experiencing local culture and fresh produce.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-124",
+    "scenario": "You attended a neighborhood barbecue with your friends and new neighbors.",
+    "prompt": "Describe your experience at the barbecue. What food was there and who did you meet?",
+    "tips": [
+      "Mention the types of food",
+      "Talk about people you interacted with",
+      "Share a fun moment"
+    ],
+    "bulletPoints": [
+      "Grilled burgers",
+      "Meeting new people",
+      "Enjoying games"
+    ],
+    "context": "Socializing and building connections in the community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-125",
+    "scenario": "You went on a nature hike with friends at a nearby trail.",
+    "prompt": "Talk about your hiking experience. What did you see on the trail and how did you feel afterward?",
+    "tips": [
+      "Describe the scenery",
+      "Mention your companions",
+      "Share your feelings about nature"
+    ],
+    "bulletPoints": [
+      "Beautiful views",
+      "Fresh air",
+      "Sense of accomplishment"
+    ],
+    "context": "Enjoying nature and staying active.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-126",
+    "scenario": "You went to a local library to attend a book reading event.",
+    "prompt": "Describe your experience at the library event. What book was read and what did you enjoy the most?",
+    "tips": [
+      "Mention the book title",
+      "Talk about the author",
+      "Share your thoughts on the reading"
+    ],
+    "bulletPoints": [
+      "Interesting stories",
+      "Met new people",
+      "Inspired by the author"
+    ],
+    "context": "Engaging with literature in a community space.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-127",
+    "scenario": "You took part in a local sports event, like a fun run or a soccer game.",
+    "prompt": "Talk about your experience during the sports event. How did you prepare and what was your favorite moment?",
+    "tips": [
+      "Mention your preparation",
+      "Describe the atmosphere",
+      "Share your feelings about participating"
+    ],
+    "bulletPoints": [
+      "Warming up",
+      "Supportive crowd",
+      "Crossing the finish line"
+    ],
+    "context": "Engaging in physical activity and community events.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-128",
+    "scenario": "You had a memorable experience while shopping at a local store.",
+    "prompt": "Describe your shopping experience. What did you buy and what was special about this store?",
+    "tips": [
+      "Mention unique items",
+      "Talk about the store's atmosphere",
+      "Share an interaction you had"
+    ],
+    "bulletPoints": [
+      "Friendly staff",
+      "Unique products",
+      "Special offers"
+    ],
+    "context": "Exploring local businesses and community shopping.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-129",
+    "scenario": "You celebrated a Canadian holiday with your family or friends.",
+    "prompt": "Talk about how you celebrated this holiday. What activities did you do and what food did you enjoy?",
+    "tips": [
+      "Mention specific traditions",
+      "Talk about the people you were with",
+      "Share your favorite part"
+    ],
+    "bulletPoints": [
+      "Fireworks",
+      "Gathering with family",
+      "Traditional meals"
+    ],
+    "context": "Sharing cultural traditions and celebrations.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-130",
+    "scenario": "You attended a local art exhibit showcasing local artists.",
+    "prompt": "Describe your experience at the art exhibit. What types of art did you see and what did you think?",
+    "tips": [
+      "Mention specific pieces",
+      "Talk about the artists",
+      "Share your thoughts on the exhibit"
+    ],
+    "bulletPoints": [
+      "Colorful paintings",
+      "Unique sculptures",
+      "Feeling inspired"
+    ],
+    "context": "Appreciating local talent and creativity in the community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-131",
+    "scenario": "You just finished a busy day at work and had a funny moment with your colleague.",
+    "prompt": "Talk about a funny moment you had at your workplace.",
+    "tips": [
+      "Use clear and simple language.",
+      "Share your feelings about the moment.",
+      "Keep it light-hearted."
+    ],
+    "bulletPoints": [
+      "Describe the situation.",
+      "Mention who was involved.",
+      "Explain why it was funny."
+    ],
+    "context": "Daily work life in a Canadian office.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-132",
+    "scenario": "You attended a community festival in your town and tried something new.",
+    "prompt": "Describe a new activity you tried at a community festival.",
+    "tips": [
+      "Focus on your feelings during the activity.",
+      "Mention any new friends you made.",
+      "Talk about the atmosphere."
+    ],
+    "bulletPoints": [
+      "What activity did you try?",
+      "How did it feel to do something new?",
+      "Would you do it again?"
+    ],
+    "context": "Community events in Canada bring people together.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-133",
+    "scenario": "You helped a neighbor with a small home project.",
+    "prompt": "Talk about a time you helped a neighbor with something.",
+    "tips": [
+      "Describe the project briefly.",
+      "Say how you felt about helping.",
+      "Mention the neighbor's response."
+    ],
+    "bulletPoints": [
+      "What was the project?",
+      "How did you help?",
+      "How did it make you feel?"
+    ],
+    "context": "Building community spirit in your neighborhood.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-134",
+    "scenario": "You went to a pet adoption event and met different animals.",
+    "prompt": "Describe your experience at a pet adoption event.",
+    "tips": [
+      "Mention any animals you liked.",
+      "Share your feelings about the event.",
+      "Talk about meeting new people."
+    ],
+    "bulletPoints": [
+      "What animals did you see?",
+      "Did you meet anyone interesting?",
+      "What did you enjoy most?"
+    ],
+    "context": "Promoting animal welfare in Canadian communities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-135",
+    "scenario": "You had an interesting conversation with a stranger on public transport.",
+    "prompt": "Talk about a conversation you had with a stranger while taking public transport.",
+    "tips": [
+      "Keep it simple and focused.",
+      "Share something you learned.",
+      "Express how the conversation felt."
+    ],
+    "bulletPoints": [
+      "Where were you going?",
+      "What did you talk about?",
+      "Was it a positive experience?"
+    ],
+    "context": "Everyday life in Canadian cities often involves public transport.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-136",
+    "scenario": "You visited a local store during a special sale.",
+    "prompt": "Describe your experience shopping at a local store during a sale.",
+    "tips": [
+      "Mention what you bought.",
+      "Talk about the atmosphere in the store.",
+      "Share any fun moments."
+    ],
+    "bulletPoints": [
+      "What sale was happening?",
+      "How was the store busy?",
+      "Did you find any good deals?"
+    ],
+    "context": "Shopping is a common activity in Canadian communities.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-137",
+    "scenario": "You took part in an outdoor clean-up day in your area.",
+    "prompt": "Talk about your experience during an outdoor clean-up day.",
+    "tips": [
+      "Explain your motivation for participating.",
+      "Share who you worked with.",
+      "Describe how it felt to help the environment."
+    ],
+    "bulletPoints": [
+      "What did you clean up?",
+      "Did you meet new people?",
+      "What was the impact of your work?"
+    ],
+    "context": "Community clean-up events promote environmental responsibility.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-138",
+    "scenario": "You attended a workshop to learn a new skill.",
+    "prompt": "Describe a workshop you attended and what you learned.",
+    "tips": [
+      "Share what skill you wanted to learn.",
+      "Mention who led the workshop.",
+      "Explain if you enjoyed the experience."
+    ],
+    "bulletPoints": [
+      "What was the skill?",
+      "How did you feel about learning it?",
+      "Would you attend more workshops?"
+    ],
+    "context": "Lifelong learning is valued in Canadian culture.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-139",
+    "scenario": "You had a memorable chat with an elderly person in your community.",
+    "prompt": "Talk about a conversation you had with an elderly person and what you learned.",
+    "tips": [
+      "Find a meaningful takeaway from the conversation.",
+      "Express how you felt talking to them.",
+      "Mention any advice they gave you."
+    ],
+    "bulletPoints": [
+      "Who was the person?",
+      "What did you talk about?",
+      "How did it change your perspective?"
+    ],
+    "context": "Engaging with different generations enriches community life.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-140",
+    "scenario": "You tried a new sport or activity for the first time.",
+    "prompt": "Describe your experience trying a new sport or activity.",
+    "tips": [
+      "Share what motivated you to try it.",
+      "Talk about how you felt during the activity.",
+      "Mention if you would like to do it again."
+    ],
+    "bulletPoints": [
+      "What sport or activity was it?",
+      "Who did you do it with?",
+      "What did you enjoy the most?"
+    ],
+    "context": "Trying new activities is part of being active in Canadian culture.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-141",
+    "scenario": "You decided to join a cooking class to learn how to make traditional Canadian dishes. You met new people and enjoyed the experience.",
+    "prompt": "Talk about your experience in the cooking class. What did you learn and who did you meet?",
+    "tips": [
+      "Use simple words to describe the food.",
+      "Talk about how you felt during the class.",
+      "Mention any new friends you made."
+    ],
+    "bulletPoints": [
+      "Learned to make poutine.",
+      "Met interesting people in the class.",
+      "Had fun cooking together."
+    ],
+    "context": "This experience is common for those who want to learn more about Canadian cuisine and meet new people.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-142",
+    "scenario": "You decided to take part in a local music event at a park. Many different bands played, and you enjoyed the atmosphere.",
+    "prompt": "Describe your experience at the music event. What did you like the most?",
+    "tips": [
+      "Mention your favorite band or song.",
+      "Talk about the friendly crowd.",
+      "Describe the feelings you had while listening to the music."
+    ],
+    "bulletPoints": [
+      "Enjoyed live music outdoors.",
+      "Connected with other people who love music.",
+      "Had a great time with friends."
+    ],
+    "context": "Music events in parks are a popular way for Canadians to enjoy the summer and connect with their community.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-143",
+    "scenario": "You were invited to a friend's birthday party, which had a fun theme. Everyone dressed up, and there were games and food.",
+    "prompt": "Talk about your experience at the birthday party. What did you do and who did you meet?",
+    "tips": [
+      "Describe the theme of the party.",
+      "Mention your favorite game or food.",
+      "Share any funny moments from the event."
+    ],
+    "bulletPoints": [
+      "The party had a superhero theme.",
+      "Played games and won prizes.",
+      "Met new friends from different schools."
+    ],
+    "context": "Birthday parties are common social events where friends gather to celebrate and have fun.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-144",
+    "scenario": "You took a weekend trip with friends to visit a nearby city. You explored local attractions and enjoyed new foods.",
+    "prompt": "Describe your weekend trip to the city. What did you see and what was your favorite part?",
+    "tips": [
+      "Mention any interesting places you visited.",
+      "Talk about the food you tried.",
+      "Share a fun moment with your friends."
+    ],
+    "bulletPoints": [
+      "Visited a famous museum.",
+      "Tried local street food.",
+      "Explored the downtown area."
+    ],
+    "context": "Weekend trips are a great way for Canadians to discover new places and enjoy time with friends.",
+    "difficulty": "beginner",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-145",
+    "scenario": "You participated in a community fundraiser for a local charity. It involved organizing events and gathering donations.",
+    "prompt": "Describe your experience working on this fundraiser. What challenges did you face, and how did you overcome them?",
+    "tips": [
+      "Focus on teamwork and communication.",
+      "Highlight any unexpected challenges.",
+      "Share how the experience impacted your view of the community."
+    ],
+    "bulletPoints": [
+      "Organized events and activities.",
+      "Faced challenges in gathering donations.",
+      "Learned the importance of community support."
+    ],
+    "context": "Engaging with local organizations can enhance community bonds.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-146",
+    "scenario": "You had the opportunity to mentor a new employee at your workplace. It was their first job in Canada.",
+    "prompt": "Talk about your experience mentoring this new employee. What were the key challenges and successes?",
+    "tips": [
+      "Discuss cultural differences and workplace integration.",
+      "Mention the skills you taught them.",
+      "Reflect on your personal growth as a mentor."
+    ],
+    "bulletPoints": [
+      "Helped them adjust to workplace culture.",
+      "Overcame language barriers.",
+      "Fostered their professional development."
+    ],
+    "context": "Mentoring can be a valuable experience in fostering inclusivity in the workplace.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-147",
+    "scenario": "You joined a community gardening project with friends to support local food banks.",
+    "prompt": "Describe your experience participating in the community garden. What did you learn about teamwork and community service?",
+    "tips": [
+      "Highlight the benefits of gardening.",
+      "Discuss how it brought people together.",
+      "Reflect on the impact on local food security."
+    ],
+    "bulletPoints": [
+      "Cultivated various vegetables and herbs.",
+      "Learned about sustainable practices.",
+      "Bonded with community members."
+    ],
+    "context": "Community gardening fosters collaboration and environmental awareness.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-148",
+    "scenario": "You attended a professional development conference in your field.",
+    "prompt": "Share your experience at the conference. What key takeaways or networking opportunities did you gain?",
+    "tips": [
+      "Discuss specific workshops you attended.",
+      "Mention interesting speakers or topics.",
+      "Highlight any new connections made."
+    ],
+    "bulletPoints": [
+      "Expanded knowledge in your field.",
+      "Networked with industry professionals.",
+      "Gained inspiration for future projects."
+    ],
+    "context": "Networking events can significantly enhance career prospects.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-149",
+    "scenario": "You decided to start a book club in your community to promote reading and discussion.",
+    "prompt": "Discuss your experience starting and running the book club. What challenges did you encounter and how did members contribute?",
+    "tips": [
+      "Highlight the benefits of reading together.",
+      "Discuss member engagement and discussions.",
+      "Reflect on personal growth through group discussions."
+    ],
+    "bulletPoints": [
+      "Chose diverse book selections.",
+      "Facilitated lively discussions.",
+      "Built friendships with members."
+    ],
+    "context": "Book clubs can enhance community engagement and literacy.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-150",
+    "scenario": "You had to navigate a conflict with a colleague over project responsibilities at work.",
+    "prompt": "Describe the conflict and how you resolved it. What did you learn from the experience about communication and collaboration?",
+    "tips": [
+      "Emphasize the importance of clear communication.",
+      "Reflect on the resolution process.",
+      "Discuss how it improved your working relationship."
+    ],
+    "bulletPoints": [
+      "Identified the root of the conflict.",
+      "Engaged in open dialogue.",
+      "Strengthened teamwork after resolution."
+    ],
+    "context": "Conflict resolution is a crucial skill in professional settings.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-151",
+    "scenario": "You took a road trip with your family to explore different regions of Canada.",
+    "prompt": "Share your experiences during the trip. What were some highlights and what did you learn about Canadian culture?",
+    "tips": [
+      "Discuss the diversity of landscapes and cultures.",
+      "Highlight significant experiences in each region.",
+      "Reflect on family bonding moments."
+    ],
+    "bulletPoints": [
+      "Visited various provinces and territories.",
+      "Tried local cuisines.",
+      "Learned about indigenous cultures."
+    ],
+    "context": "Traveling within Canada offers insights into its diverse culture.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-152",
+    "scenario": "You volunteered to teach English to newcomers in your community.",
+    "prompt": "Describe your experience teaching English. What challenges did you and your students face and how did you address them?",
+    "tips": [
+      "Focus on the language barriers encountered.",
+      "Share success stories from your students.",
+      "Reflect on your teaching methods."
+    ],
+    "bulletPoints": [
+      "Used various resources for effective teaching.",
+      "Encouraged student participation.",
+      "Fostered a supportive learning environment."
+    ],
+    "context": "Teaching English can significantly benefit newcomers in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-153",
+    "scenario": "You participated in a local environmental campaign to promote recycling in your community.",
+    "prompt": "Share your experience in this campaign. What strategies did you find most effective, and what impact did it have on the community?",
+    "tips": [
+      "Discuss community engagement strategies.",
+      "Highlight any challenges faced during the campaign.",
+      "Reflect on any measurable outcomes."
+    ],
+    "bulletPoints": [
+      "Organized educational workshops.",
+      "Built partnerships with local businesses.",
+      "Increased community awareness about recycling."
+    ],
+    "context": "Environmental activism can bring about significant community change.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-154",
+    "scenario": "You faced a significant personal challenge, such as job loss or health issue, and how you overcame it.",
+    "prompt": "Discuss the challenge you faced, how you managed it, and what you learned from the experience.",
+    "tips": [
+      "Be honest about your feelings during the challenge.",
+      "Highlight support systems you utilized.",
+      "Reflect on personal growth."
+    ],
+    "bulletPoints": [
+      "Identified coping strategies.",
+      "Sought help from friends and family.",
+      "Emerging stronger and more resilient."
+    ],
+    "context": "Overcoming personal challenges can lead to significant growth.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-155",
+    "scenario": "You recently had to make a difficult decision at work that impacted your team. Explain the situation and your choice.",
+    "prompt": "Describe a challenging decision you faced in your workplace and how you handled it.",
+    "tips": [
+      "Be clear about the decision-making process.",
+      "Discuss the impact of your choice on your team.",
+      "Share any lessons you learned from the experience."
+    ],
+    "bulletPoints": [
+      "What the decision was about.",
+      "Factors that influenced your decision.",
+      "Reactions from your team."
+    ],
+    "context": "Workplace scenario involving decision-making.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-156",
+    "scenario": "During a volunteer project, you experienced an unexpected challenge that tested your patience and teamwork.",
+    "prompt": "Talk about a challenge you faced while volunteering and how you overcame it with your team.",
+    "tips": [
+      "Highlight the importance of teamwork.",
+      "Explain how you resolved the challenge.",
+      "Reflect on what you learned about patience."
+    ],
+    "bulletPoints": [
+      "What the challenge was.",
+      "How you and your team approached it.",
+      "The outcome of your efforts."
+    ],
+    "context": "Community service experience with teamwork involved.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-157",
+    "scenario": "You recently attended a networking event and had a meaningful conversation with a professional.",
+    "prompt": "Describe your experience at a networking event and how a conversation influenced you.",
+    "tips": [
+      "Mention the profession of the person you spoke to.",
+      "Share any advice or insights you received.",
+      "Discuss how it might affect your career plans."
+    ],
+    "bulletPoints": [
+      "The purpose of the networking event.",
+      "Who you talked to and what they do.",
+      "Your key takeaways from the conversation."
+    ],
+    "context": "Professional networking in a career context.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-158",
+    "scenario": "You encountered a difficult customer while working in retail and had to manage the situation.",
+    "prompt": "Discuss a time when you dealt with a challenging customer and how you resolved the issue.",
+    "tips": [
+      "Explain the customer's concerns clearly.",
+      "Describe your approach to handling the situation.",
+      "Discuss what you learned about customer service."
+    ],
+    "bulletPoints": [
+      "The customer's complaint.",
+      "Your response to the issue.",
+      "How the situation was resolved."
+    ],
+    "context": "Retail experience with customer interaction.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-159",
+    "scenario": "You had the opportunity to organize a community event and faced several challenges along the way.",
+    "prompt": "Share your experience of organizing a community event and the challenges you faced.",
+    "tips": [
+      "Outline the main goal of the event.",
+      "Discuss specific challenges encountered.",
+      "Reflect on the success of the event."
+    ],
+    "bulletPoints": [
+      "The nature of the community event.",
+      "Challenges you faced during planning.",
+      "The outcome and community response."
+    ],
+    "context": "Community engagement through event organization.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-160",
+    "scenario": "You collaborated with a colleague on a project but had differing opinions on how to approach it.",
+    "prompt": "Talk about how you handled a situation where you and a colleague disagreed on a project.",
+    "tips": [
+      "Explain the differing opinions briefly.",
+      "Discuss how you communicated about the disagreement.",
+      "Reflect on the resolution process."
+    ],
+    "bulletPoints": [
+      "The project you worked on.",
+      "The disagreement you had.",
+      "How both perspectives were addressed."
+    ],
+    "context": "Workplace teamwork with differing opinions.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-161",
+    "scenario": "You attended a seminar that introduced you to new perspectives on your field of work.",
+    "prompt": "Describe an experience at a seminar that changed your view on an aspect of your profession.",
+    "tips": [
+      "Mention the seminar's topic and speaker.",
+      "Discuss the specific ideas that resonated with you.",
+      "Explain how it might influence your work."
+    ],
+    "bulletPoints": [
+      "The seminar's main focus.",
+      "Key points that impacted you.",
+      "Any actions you plan to take as a result."
+    ],
+    "context": "Professional development through seminars.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-162",
+    "scenario": "You helped a local organization by providing your skills in a project that benefited the community.",
+    "prompt": "Share how you used your skills to contribute to a local organization's project.",
+    "tips": [
+      "Define your role in the project.",
+      "Discuss the skills you applied.",
+      "Mention the outcomes of the project."
+    ],
+    "bulletPoints": [
+      "The organization you helped.",
+      "Your specific contribution.",
+      "Impact on the community."
+    ],
+    "context": "Utilizing personal skills for community service.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-163",
+    "scenario": "You experienced a culture shock when moving to a new city in Canada and how you adapted.",
+    "prompt": "Describe a culture shock you experienced when moving to a new city in Canada and how you adapted to it.",
+    "tips": [
+      "Explain the cultural differences you noticed.",
+      "Discuss your initial reactions and challenges.",
+      "Share strategies you used to adapt."
+    ],
+    "bulletPoints": [
+      "The city you moved to.",
+      "Specific aspects of culture that surprised you.",
+      "How you became more comfortable."
+    ],
+    "context": "Personal adaptation to new environments in Canada.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-164",
+    "scenario": "You had an opportunity to speak at a local community meeting about an issue important to you.",
+    "prompt": "Talk about your experience speaking at a community meeting and the impact of your message.",
+    "tips": [
+      "Explain the issue you addressed.",
+      "Discuss your preparation for speaking.",
+      "Reflect on the audience's reception."
+    ],
+    "bulletPoints": [
+      "The topic of your speech.",
+      "Your main points.",
+      "Response from the community."
+    ],
+    "context": "Civic engagement through public speaking.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-165",
+    "scenario": "During a team meeting at work, your manager recognized your contribution to a recent project. You felt proud but also nervous about the attention.",
+    "prompt": "Describe the moment when your work was publicly acknowledged. How did you feel about it?",
+    "tips": [
+      "Focus on your emotions during the moment.",
+      "Explain what the recognition meant for your career.",
+      "Discuss any future goals that arose from this experience."
+    ],
+    "bulletPoints": [
+      "Nervousness and pride",
+      "Impact on confidence",
+      "Motivation for future projects"
+    ],
+    "context": "Workplace recognition in a Canadian context",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-166",
+    "scenario": "You recently attended a community event to celebrate multiculturalism in your neighborhood. You interacted with people from various backgrounds.",
+    "prompt": "Share your experience at the multicultural event. What did you learn from it?",
+    "tips": [
+      "Highlight specific cultures represented.",
+      "Discuss a personal interaction that stood out.",
+      "Reflect on how this experience broadened your perspective."
+    ],
+    "bulletPoints": [
+      "Diverse cultural representation",
+      "Personal interactions",
+      "Broadened cultural understanding"
+    ],
+    "context": "Community engagement in Canada",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-167",
+    "scenario": "You participated in a safety drill at your workplace. It was an unexpected experience that highlighted the importance of safety procedures.",
+    "prompt": "Talk about your experience during the safety drill at work. What insights did you gain?",
+    "tips": [
+      "Describe the drill and your role in it.",
+      "Explain any surprises you encountered.",
+      "Discuss the importance of safety in the workplace."
+    ],
+    "bulletPoints": [
+      "Realistic scenarios",
+      "Role in the drill",
+      "Importance of preparedness"
+    ],
+    "context": "Workplace safety in a professional environment",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-168",
+    "scenario": "You had the opportunity to attend a local art exhibition featuring Canadian artists. The experience changed your views on local art.",
+    "prompt": "Describe your visit to the art exhibition. How did it impact your appreciation for local artists?",
+    "tips": [
+      "Mention specific artists or pieces that inspired you.",
+      "Discuss how the exhibition reflected Canadian culture.",
+      "Explain your thoughts on supporting local art."
+    ],
+    "bulletPoints": [
+      "Artists represented",
+      "Cultural reflection",
+      "Support for the arts community"
+    ],
+    "context": "Cultural appreciation in Canada",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-169",
+    "scenario": "You recently helped a neighbor repair their fence after a storm. This experience brought your community closer together.",
+    "prompt": "Talk about your experience helping a neighbor with home repairs. What did you learn about community involvement?",
+    "tips": [
+      "Discuss the challenges faced during the repair.",
+      "Highlight the sense of community fostered by helping each other.",
+      "Reflect on any personal connections made."
+    ],
+    "bulletPoints": [
+      "Challenges faced",
+      "Community bonding",
+      "Personal connections"
+    ],
+    "context": "Community support in the aftermath of a storm",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-170",
+    "scenario": "You attended a town hall meeting where community members discussed local development. It was your first time being actively engaged in civic matters.",
+    "prompt": "Describe your experience at the town hall meeting. What motivated you to participate?",
+    "tips": [
+      "Highlight the topics discussed at the meeting.",
+      "Share your feelings about civic engagement.",
+      "Discuss how it influenced your views on local issues."
+    ],
+    "bulletPoints": [
+      "Topics of discussion",
+      "Personal motivation",
+      "Influence on civic engagement"
+    ],
+    "context": "Civic participation in Canadian local governance",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-171",
+    "scenario": "You had a positive experience collaborating with a diverse team on a work project. It offered fresh perspectives and enhanced creativity.",
+    "prompt": "Talk about your collaboration experience with a diverse team. How did it impact the project outcome?",
+    "tips": [
+      "Discuss the diversity of the team and its relevance.",
+      "Highlight key ideas generated from collaboration.",
+      "Reflect on what you learned from your teammates."
+    ],
+    "bulletPoints": [
+      "Team diversity",
+      "Creative outcomes",
+      "Personal learning experience"
+    ],
+    "context": "Workplace collaboration in a diverse environment",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-172",
+    "scenario": "You learned about a family member’s immigration story at a recent family gathering. It changed your understanding of your heritage.",
+    "prompt": "Share the story you learned about your family member's immigration experience. How did it affect your sense of identity?",
+    "tips": [
+      "Highlight key aspects of their journey.",
+      "Discuss your emotional response to their story.",
+      "Reflect on the importance of understanding heritage."
+    ],
+    "bulletPoints": [
+      "Key aspects of the immigration story",
+      "Emotional impact",
+      "Understanding heritage"
+    ],
+    "context": "Personal connection to Canadian immigration stories",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-173",
+    "scenario": "You participated in a discussion group at work focused on mental health awareness. It was a transformative experience for you and your colleagues.",
+    "prompt": "Describe your experience in the mental health discussion group. What insights did you gain?",
+    "tips": [
+      "Discuss the topics covered in the group.",
+      "Share personal reflections on mental health.",
+      "Highlight the importance of workplace mental health awareness."
+    ],
+    "bulletPoints": [
+      "Topics discussed",
+      "Personal insights",
+      "Importance of awareness"
+    ],
+    "context": "Workplace mental health initiatives in Canada",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-174",
+    "scenario": "You organized a potluck at your workplace to celebrate diversity, where colleagues brought dishes from their cultural backgrounds.",
+    "prompt": "Talk about your experience organizing the potluck. What did you learn about your colleagues through this event?",
+    "tips": [
+      "Describe the planning process and challenges.",
+      "Highlight unique dishes and cultural stories shared.",
+      "Reflect on the sense of community that emerged."
+    ],
+    "bulletPoints": [
+      "Planning challenges",
+      "Cultural dishes",
+      "Strengthened workplace community"
+    ],
+    "context": "Celebrating diversity in the workplace in Canada",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-175",
+    "scenario": "During a community sports event, you had the chance to engage with various people and learn about their experiences. One participant shared a story that struck a chord with you, leading to a deeper understanding of communal ties.",
+    "prompt": "Describe an impactful conversation you had during a community sports event. How did it affect your view of community engagement?",
+    "tips": [
+      "Make sure to describe the setting and the people involved.",
+      "Explain why this conversation was significant to you.",
+      "Reflect on how it may have changed your perspective."
+    ],
+    "bulletPoints": [
+      "Setting of the event",
+      "Details of the conversation",
+      "Personal reflection on the experience"
+    ],
+    "context": "Community involvement in sports can enhance social ties and promote well-being.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-176",
+    "scenario": "At your workplace, you witnessed a significant change in practices that affected how the team collaborated. You learned about the reasons behind these changes from leadership and their vision for the future.",
+    "prompt": "Talk about a time when workplace changes impacted your team's collaboration. What insights did you gain from leadership about these changes?",
+    "tips": [
+      "Describe the specific changes that were implemented.",
+      "Discuss your initial reactions and those of your team.",
+      "Conclude with what you learned from the experience."
+    ],
+    "bulletPoints": [
+      "Nature of the changes",
+      "Team's response",
+      "Leadership's vision for the future"
+    ],
+    "context": "Workplace dynamics can greatly influence productivity and employee morale.",
+    "difficulty": "intermediate",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-177",
+    "scenario": "You recently attended a cultural festival that showcased various traditions from different countries. The event featured food, music, and art, creating a vibrant atmosphere for all attendees.",
+    "prompt": "Describe your experience at the cultural festival and how it influenced your understanding of diversity in Canada.",
+    "tips": [
+      "Focus on specific activities you participated in.",
+      "Reflect on personal insights gained from the event.",
+      "Emphasize the importance of cultural appreciation."
+    ],
+    "bulletPoints": [
+      "Variety of cultural displays.",
+      "Interactions with diverse participants.",
+      "Personal reflections on inclusivity."
+    ],
+    "context": "Cultural engagement in a Canadian city.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-178",
+    "scenario": "You had a memorable experience when a new team member joined your workplace. This team member brought unique skills and perspectives that changed the team dynamics.",
+    "prompt": "Share your experience regarding the integration of the new team member and its impact on your work environment.",
+    "tips": [
+      "Discuss initial reactions to the new member.",
+      "Highlight any challenges faced during integration.",
+      "Reflect on the positive outcomes for the team."
+    ],
+    "bulletPoints": [
+      "Initial team dynamics.",
+      "Skill sets and contributions of the new member.",
+      "Changes in team collaboration."
+    ],
+    "context": "Workplace dynamics in a Canadian company.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-179",
+    "scenario": "You participated in a local debate competition that involved discussing current socio-political issues affecting Canada. The experience required extensive research and critical thinking.",
+    "prompt": "Discuss your experience in the debate competition and what you learned about the importance of civic engagement.",
+    "tips": [
+      "Describe your preparation process.",
+      "Include key arguments made during the debate.",
+      "Reflect on the significance of public discourse."
+    ],
+    "bulletPoints": [
+      "Research on socio-political topics.",
+      "Engagement with diverse viewpoints.",
+      "Impact on personal civic understanding."
+    ],
+    "context": "Civic engagement in a community setting.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-180",
+    "scenario": "You recently navigated the complexities of applying for a governmental grant for a community project. The process was extensive, requiring specific documentation and collaboration with others.",
+    "prompt": "Explain your experience with the grant application process and the lessons learned about community resources.",
+    "tips": [
+      "Discuss the challenges faced during the application.",
+      "Highlight the support from community members.",
+      "Reflect on the importance of funding for community initiatives."
+    ],
+    "bulletPoints": [
+      "Steps in the grant writing process.",
+      "Collaborations with community stakeholders.",
+      "Outcomes of the grant application."
+    ],
+    "context": "Community project funding in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-181",
+    "scenario": "You had the opportunity to mentor a student intern at your workplace. This experience was both challenging and rewarding as you guided them through various tasks.",
+    "prompt": "Describe your mentoring experience with the intern and the skills you developed in the process.",
+    "tips": [
+      "Highlight your expectations versus reality.",
+      "Discuss the personal growth from mentoring.",
+      "Reflect on the impact of your guidance."
+    ],
+    "bulletPoints": [
+      "Initial expectations of the internship.",
+      "Skills and knowledge shared.",
+      "Personal reflections on mentorship."
+    ],
+    "context": "Workplace mentoring in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-182",
+    "scenario": "During a recent neighborhood clean-up initiative, you encountered various environmental challenges that affected your community's well-being.",
+    "prompt": "Share your experience during the neighborhood clean-up and how it shaped your views on environmental responsibility.",
+    "tips": [
+      "Discuss specific challenges faced while cleaning.",
+      "Include community reactions and involvement.",
+      "Reflect on the importance of environmental stewardship."
+    ],
+    "bulletPoints": [
+      "Types of litter and debris encountered.",
+      "Community participation in the project.",
+      "Lessons on environmental awareness."
+    ],
+    "context": "Community engagement in environmental issues.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-183",
+    "scenario": "You experienced a moment of cultural exchange when you attended a friend's family celebration that incorporated traditions from their heritage.",
+    "prompt": "Describe your experience at the celebration and the insights it provided into your friend's cultural background.",
+    "tips": [
+      "Highlight specific traditions observed.",
+      "Discuss personal reactions to the cultural practices.",
+      "Reflect on the importance of understanding diverse backgrounds."
+    ],
+    "bulletPoints": [
+      "Cultural practices observed.",
+      "Personal connections made during the event.",
+      "Broader insights into cultural diversity."
+    ],
+    "context": "Social interactions in a multicultural Canadian setting.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-184",
+    "scenario": "You faced a dilemma while deciding to report unethical behavior you witnessed at a community center where you volunteer.",
+    "prompt": "Reflect on your decision-making process regarding the reporting of unethical behavior and its implications.",
+    "tips": [
+      "Discuss the factors that influenced your decision.",
+      "Emphasize the significance of ethical standards in communities.",
+      "Reflect on the eventual outcomes."
+    ],
+    "bulletPoints": [
+      "Description of the unethical behavior.",
+      "Ethical considerations in your decision-making.",
+      "Consequences for the community center."
+    ],
+    "context": "Ethical considerations in volunteer work.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-185",
+    "scenario": "You attended a workshop on mental health awareness aimed at improving employee well-being in your workplace. The session encouraged open discussions about mental health challenges.",
+    "prompt": "Discuss your experiences at the mental health workshop and how it affected your perspective on well-being at work.",
+    "tips": [
+      "Share key topics discussed during the workshop.",
+      "Reflect on personal takeaways regarding mental health.",
+      "Consider the implications for workplace culture."
+    ],
+    "bulletPoints": [
+      "Topics covered related to mental health.",
+      "Engagement in discussions with colleagues.",
+      "Impact on workplace attitudes towards mental wellness."
+    ],
+    "context": "Workplace culture and mental health in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-186",
+    "scenario": "You participated in a local activism campaign advocating for social justice issues affecting marginalized groups in your community.",
+    "prompt": "Reflect on your experiences during the activism campaign and the lessons learned about advocacy.",
+    "tips": [
+      "Discuss your motivation for engaging in activism.",
+      "Highlight specific actions taken during the campaign.",
+      "Reflect on the impact of collective action."
+    ],
+    "bulletPoints": [
+      "Issues championed during the campaign.",
+      "Community engagement and support.",
+      "Personal transformations through activism."
+    ],
+    "context": "Social activism in a Canadian community.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-187",
+    "scenario": "You were faced with an unexpected financial challenge while pursuing your studies. This situation forced you to reassess your budget and seek alternative resources.",
+    "prompt": "Describe how you handled a financial challenge during your education and the lessons you learned from it.",
+    "tips": [
+      "Discuss specific strategies you used to manage finances.",
+      "Include emotional aspects and personal growth.",
+      "Reflect on how this experience shaped your future decisions."
+    ],
+    "bulletPoints": [
+      "Developed a budget plan",
+      "Sought part-time employment",
+      "Learned valuable time management skills"
+    ],
+    "context": "Balancing education and financial responsibilities in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-188",
+    "scenario": "While volunteering at a local homeless shelter, you encountered a person whose story profoundly affected you and changed your perspective on homelessness.",
+    "prompt": "Talk about this encounter and how it influenced your understanding of societal issues.",
+    "tips": [
+      "Highlight the personal story that impacted you.",
+      "Discuss your emotional reactions and reflections.",
+      "Connect this experience to broader societal themes."
+    ],
+    "bulletPoints": [
+      "Met a veteran facing homelessness",
+      "Gained insight into systemic issues",
+      "Deepened my commitment to community service"
+    ],
+    "context": "Engaging with social issues through volunteer work in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-189",
+    "scenario": "You were involved in a significant community debate regarding a local development project that could impact the environment. Your stance differed from many in your community.",
+    "prompt": "Explain your position in this debate and how you communicated your views effectively.",
+    "tips": [
+      "Present your key arguments clearly.",
+      "Acknowledge counterarguments respectfully.",
+      "Reflect on the importance of community dialogue."
+    ],
+    "bulletPoints": [
+      "Emphasized environmental preservation",
+      "Facilitated discussions with community members",
+      "Promoted awareness of ecological impacts"
+    ],
+    "context": "Participating in local governance and community discussions in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-190",
+    "scenario": "After relocating to a new city in Canada, you faced the challenge of building a new social network while adjusting to a different environment.",
+    "prompt": "Discuss the strategies you employed to create connections and foster relationships in your new community.",
+    "tips": [
+      "Share specific activities or groups you joined.",
+      "Describe challenges and successes.",
+      "Reflect on the importance of community."
+    ],
+    "bulletPoints": [
+      "Joined local clubs and organizations",
+      "Attended community events",
+      "Utilized social media for networking"
+    ],
+    "context": "Navigating social integration in a new Canadian city.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-191",
+    "scenario": "While working on a collaborative project, you encountered a significant ethical dilemma regarding the project's impact on the community.",
+    "prompt": "Describe the ethical dilemma and the decision-making process you went through to address it.",
+    "tips": [
+      "Clearly state the ethical concerns involved.",
+      "Discuss your approach to resolving the dilemma.",
+      "Highlight any consultations or discussions you had."
+    ],
+    "bulletPoints": [
+      "Identified potential negative impacts",
+      "Engaged stakeholders for input",
+      "Proposed alternative solutions"
+    ],
+    "context": "Addressing ethical considerations in professional settings in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-192",
+    "scenario": "You recently experienced a health scare that prompted you to reevaluate your lifestyle choices and prioritize your well-being.",
+    "prompt": "Share your experience with this health scare and the changes you made in your life as a result.",
+    "tips": [
+      "Discuss the initial feelings you experienced.",
+      "Detail specific lifestyle changes that followed.",
+      "Reflect on the long-term effects on your health."
+    ],
+    "bulletPoints": [
+      "Increased physical activity",
+      "Adopted a healthier diet",
+      "Emphasized mental health practices"
+    ],
+    "context": "Health awareness and lifestyle changes in Canadian society.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-193",
+    "scenario": "You encountered a situation in your workplace where diversity and inclusion were not prioritized, leading to tension among team members.",
+    "prompt": "Describe how you addressed this issue and promoted a more inclusive environment.",
+    "tips": [
+      "Identify specific actions you took to facilitate discussions.",
+      "Discuss the importance of diversity in the workplace.",
+      "Reflect on the reactions of colleagues."
+    ],
+    "bulletPoints": [
+      "Organized team-building activities",
+      "Facilitated open discussions about inclusion",
+      "Encouraged diverse perspectives in meetings"
+    ],
+    "context": "Promoting diversity and inclusion in a Canadian workplace.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-194",
+    "scenario": "During a recent trip across Canada, you visited a place that significantly changed your understanding of indigenous cultures and histories.",
+    "prompt": "Describe your visit and the insights you gained regarding indigenous cultures in Canada.",
+    "tips": [
+      "Share specific experiences or interactions you had.",
+      "Discuss how this knowledge influenced your perspective.",
+      "Mention the importance of respecting diverse histories."
+    ],
+    "bulletPoints": [
+      "Visited a First Nations community",
+      "Participated in cultural activities",
+      "Engaged with local leaders about their history"
+    ],
+    "context": "Exploring cultural heritage and appreciation in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-195",
+    "scenario": "You faced a complex decision regarding work-life balance after receiving a job offer that required relocation.",
+    "prompt": "Explain how you weighed the pros and cons of this decision and the ultimate choice you made.",
+    "tips": [
+      "Discuss factors influencing your decision.",
+      "Share your emotions during the decision-making process.",
+      "Reflect on the outcome and its implications."
+    ],
+    "bulletPoints": [
+      "Evaluated career growth opportunities",
+      "Considered family dynamics",
+      "Assessed personal values and priorities"
+    ],
+    "context": "Deciding between career advancement and personal life in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-196",
+    "scenario": "You participated in a discussion regarding mental health awareness in your community and how it could influence stigma.",
+    "prompt": "Describe your role in this discussion and the insights you gained about mental health stigma.",
+    "tips": [
+      "Highlight your contributions to the discussion.",
+      "Discuss the importance of mental health awareness.",
+      "Reflect on community reactions and changes."
+    ],
+    "bulletPoints": [
+      "Facilitated local workshops",
+      "Engaged in dialogues with affected individuals",
+      "Promoted resources and support systems"
+    ],
+    "context": "Addressing mental health issues in Canadian communities.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-197",
+    "scenario": "You recently had to navigate a difficult conversation with a colleague who was not meeting deadlines, affecting the team's progress. This experience taught you valuable lessons about communication and conflict resolution in a professional setting.",
+    "prompt": "Describe the difficult conversation you had with your colleague. What led to the discussion, and what strategies did you use to address the issue?",
+    "tips": [
+      "Focus on your emotions during the conversation.",
+      "Highlight the outcomes of your communication.",
+      "Discuss any follow-up actions you took."
+    ],
+    "bulletPoints": [
+      "Identified the problem: missed deadlines.",
+      "Approached the colleague privately to discuss the issue.",
+      "Utilized active listening and empathy to express concerns."
+    ],
+    "context": "This scenario reflects the complexities of workplace dynamics in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-198",
+    "scenario": "During a recent community initiative, you encountered ethical dilemmas when deciding how to allocate resources fairly among diverse groups in need. This experience challenged your views on equity and community service.",
+    "prompt": "Talk about the ethical dilemmas you faced while organizing resource allocation during a community initiative. How did you approach the situation, and what was the outcome?",
+    "tips": [
+      "Explain the rationale behind your decisions.",
+      "Reflect on how this experience shaped your understanding of fairness.",
+      "Mention any stakeholders involved in the discussion."
+    ],
+    "bulletPoints": [
+      "Assessed the needs of various groups in the community.",
+      "Faced conflicting opinions on resource distribution.",
+      "Engaged with community leaders to seek a balanced approach."
+    ],
+    "context": "This scenario illustrates the complexities of community engagement in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
+  },
+  {
+    "id": "task2-199",
+    "scenario": "You were recently involved in a project that aimed to reduce the environmental impact of plastic waste in your community. This experience sparked a deep interest in sustainability and eco-conscious practices.",
+    "prompt": "Describe your involvement in the environmental project related to plastic waste. What challenges did you face, and how did your perspective on sustainability change as a result?",
+    "tips": [
+      "Discuss specific actions you took within the project.",
+      "Reflect on your personal growth and awareness of environmental issues.",
+      "Mention any community responses to the project."
+    ],
+    "bulletPoints": [
+      "Collaborated with local businesses for eco-friendly alternatives.",
+      "Educated the community about the impact of plastic waste.",
+      "Faced resistance from some stakeholders regarding changes."
+    ],
+    "context": "This experience is relevant to contemporary environmental challenges in Canada.",
+    "difficulty": "advanced",
+    "prepTimeSeconds": 30,
+    "speakTimeSeconds": 60
   }
 ]
