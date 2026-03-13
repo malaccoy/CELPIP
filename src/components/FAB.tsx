@@ -15,7 +15,7 @@ export default function FAB() {
   if (HIDE_ON.some(p => pathname.startsWith(p))) return null;
   
   return (
-    <Link href="/ai-coach" className={styles.fab} aria-label="AI Practice">
+    <Link href="/dashboard" className={styles.fab} aria-label="Practice">
       <Sparkles size={22} />
       <span className={styles.fabLabel}>Practice</span>
     </Link>

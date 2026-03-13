@@ -1487,8 +1487,8 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {/* Welcome + CLB Level */}
-      {hasAssessment && (
+      {/* Welcome + CLB Level — hidden (onboarding disabled) */}
+      {false && hasAssessment && (
         <section className={styles.welcomeSection}>
           <div className={styles.welcomeCard}>
             {isPro && (
@@ -1529,35 +1529,6 @@ export default function DashboardPage() {
           </div>
         </section>
       )}
-
-      {/* Quick Stats */}
-      <section className={styles.statsSection}>
-        <div className={styles.statsGrid}>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}><Target size={18} /></div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{stats.totalPractices}</span>
-              <span className={styles.statLabel}>Sessions</span>
-            </div>
-          </div>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}><Flame size={18} /></div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>{stats.currentStreak}</span>
-              <span className={styles.statLabel}>Day Streak</span>
-            </div>
-          </div>
-          <div className={styles.statCard}>
-            <div className={styles.statIcon}><Clock size={18} /></div>
-            <div className={styles.statInfo}>
-              <span className={styles.statValue}>
-                {stats.totalPractices > 0 ? 'Today' : '—'}
-              </span>
-              <span className={styles.statLabel}>Last Practice</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* AI Coach CTAs */}
       <section className={styles.aiCoachSection}>
