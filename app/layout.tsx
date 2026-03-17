@@ -62,7 +62,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0a0f1a" />
+        <meta name="theme-color" content="#1b1f2a" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -125,7 +125,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <PlanProvider>
-            <EventBanner />
+            {/* EventBanner removed — discount only on pricing page */}
             <CommunityPopup />
             <Header />
             <div className={styles.container}>

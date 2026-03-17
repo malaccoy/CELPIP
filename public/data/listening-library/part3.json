@@ -55,9 +55,9 @@
         "question": "What advice does the narrator give regarding the campus map?",
         "options": [
           "Students should ignore it",
-          "It’s confusing to use",
+          "It\u2019s confusing to use",
           "It helps to navigate the campus",
-          "It’s only for first-year students"
+          "It\u2019s only for first-year students"
         ],
         "correct": 2
       },
@@ -73,7 +73,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-01.mp3"
   },
   {
     "id": "part3-02",
@@ -149,7 +150,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-02.mp3"
   },
   {
     "id": "part3-03",
@@ -215,7 +217,7 @@
       },
       {
         "id": 6,
-        "question": "What type of food is suggested in the museum café?",
+        "question": "What type of food is suggested in the museum caf\u00e9?",
         "options": [
           "A Fast food",
           "B Local Canadian dishes",
@@ -225,7 +227,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-03.mp3"
   },
   {
     "id": "part3-04",
@@ -301,7 +304,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-04.mp3"
   },
   {
     "id": "part3-05",
@@ -377,7 +381,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-05.mp3"
   },
   {
     "id": "part3-06",
@@ -453,7 +458,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-06.mp3"
   },
   {
     "id": "part3-07",
@@ -529,7 +535,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-07.mp3"
   },
   {
     "id": "part3-08",
@@ -605,7 +612,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-08.mp3"
   },
   {
     "id": "part3-09",
@@ -681,7 +689,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-09.mp3"
   },
   {
     "id": "part3-10",
@@ -757,7 +766,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-10.mp3"
   },
   {
     "id": "part3-11",
@@ -833,7 +843,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-11.mp3"
   },
   {
     "id": "part3-12",
@@ -909,7 +920,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-12.mp3"
   },
   {
     "id": "part3-13",
@@ -969,7 +981,7 @@
           "Library",
           "Online only",
           "Student Union building",
-          "Nearby café"
+          "Nearby caf\u00e9"
         ],
         "correct": 2
       },
@@ -985,7 +997,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-13.mp3"
   },
   {
     "id": "part3-14",
@@ -1061,7 +1074,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-14.mp3"
   },
   {
     "id": "part3-15",
@@ -1137,7 +1151,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-15.mp3"
   },
   {
     "id": "part3-16",
@@ -1213,7 +1228,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-16.mp3"
   },
   {
     "id": "part3-17",
@@ -1284,12 +1300,13 @@
           "A waiting area",
           "A ticket counter",
           "A gift shop",
-          "Both a café and a gift shop"
+          "Both a caf\u00e9 and a gift shop"
         ],
         "correct": 3
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-17.mp3"
   },
   {
     "id": "part3-18",
@@ -1315,7 +1332,7 @@
         "options": [
           "At 200 Granville Street",
           "At a local coffee shop",
-          "In the city’s tech hub",
+          "In the city\u2019s tech hub",
           "At a downtown hotel"
         ],
         "correct": 0
@@ -1365,7 +1382,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-18.mp3"
   },
   {
     "id": "part3-19",
@@ -1441,7 +1459,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-19.mp3"
   },
   {
     "id": "part3-20",
@@ -1517,7 +1536,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-20.mp3"
   },
   {
     "id": "part3-21",
@@ -1593,7 +1613,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-21.mp3"
   },
   {
     "id": "part3-22",
@@ -1669,7 +1690,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-22.mp3"
   },
   {
     "id": "part3-23",
@@ -1745,7 +1767,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-23.mp3"
   },
   {
     "id": "part3-24",
@@ -1821,7 +1844,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-24.mp3"
   },
   {
     "id": "part3-25",
@@ -1897,7 +1921,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-25.mp3"
   },
   {
     "id": "part3-26",
@@ -1973,7 +1998,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-26.mp3"
   },
   {
     "id": "part3-27",
@@ -2049,7 +2075,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-27.mp3"
   },
   {
     "id": "part3-28",
@@ -2125,7 +2152,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-28.mp3"
   },
   {
     "id": "part3-29",
@@ -2201,7 +2229,8 @@
         "correct": 3
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-29.mp3"
   },
   {
     "id": "part3-30",
@@ -2277,12 +2306,13 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part3-30.mp3"
   },
   {
     "title": "Winter Clothing Sale Announcement",
     "difficulty": "beginner",
-    "passage": "Woman: Hello everyone! Welcome to the Winter Clothing Sale at Maple Mall. We are excited to offer great deals on winter clothing this weekend! \n Man: That sounds great! What kind of winter clothing is on sale? \n Woman: We have jackets, sweaters, scarves, and more! All items are 30% off. \n Man: When does the sale start? \n Woman: The sale starts this Friday and goes until Sunday. The mall opens at 9 AM both days. \n Man: That’s perfect! Do you have special hours for Saturday? \n Woman: Yes! On Saturday, we will open early at 8 AM for our special VIP customers. \n Man: What about people who want to come on Sunday? \n Woman: Sunday hours are the same as Friday, from 9 AM to 6 PM. \n Man: Thank you for the information! \n Woman: You're welcome! Don't forget to bring your friends. We have hot chocolate for everyone who comes shopping. Enjoy the sale!",
+    "passage": "Woman: Hello everyone! Welcome to the Winter Clothing Sale at Maple Mall. We are excited to offer great deals on winter clothing this weekend! \n Man: That sounds great! What kind of winter clothing is on sale? \n Woman: We have jackets, sweaters, scarves, and more! All items are 30% off. \n Man: When does the sale start? \n Woman: The sale starts this Friday and goes until Sunday. The mall opens at 9 AM both days. \n Man: That\u2019s perfect! Do you have special hours for Saturday? \n Woman: Yes! On Saturday, we will open early at 8 AM for our special VIP customers. \n Man: What about people who want to come on Sunday? \n Woman: Sunday hours are the same as Friday, from 9 AM to 6 PM. \n Man: Thank you for the information! \n Woman: You're welcome! Don't forget to bring your friends. We have hot chocolate for everyone who comes shopping. Enjoy the sale!",
     "questions": [
       {
         "id": 1,
@@ -2350,12 +2380,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-31.mp3",
+    "audioFile": "part3-31.mp3"
   },
   {
     "title": "Weekly Farmers' Market Announcement",
     "difficulty": "beginner",
-    "passage": "Woman: Hello everyone! Welcome to the weekly farmers' market here in downtown Toronto. We are excited to have you join us today. The market opens every Saturday at 8 AM and closes at 2 PM.  \nMan: That’s right! We have fresh fruits, vegetables, and many local products. You can find honey, cheese, and baked goods from local farmers.  \nWoman: Don’t forget to check the schedule for our special events. This week, we have a cooking demonstration at 11 AM. A local chef will show you how to make a delicious salad with fresh ingredients from the market.  \nMan: It’s a great chance to learn and taste something new! Also, we have live music from 12 PM to 1 PM.  \nWoman: Yes! You can enjoy shopping while listening to some great tunes. Don’t worry about parking; there are many spots available near the market.  \nMan: Remember to bring reusable bags for your purchases. Let’s keep the environment clean! Thank you for coming today, and we hope you enjoy the market!",
+    "passage": "Woman: Hello everyone! Welcome to the weekly farmers' market here in downtown Toronto. We are excited to have you join us today. The market opens every Saturday at 8 AM and closes at 2 PM.  \nMan: That\u2019s right! We have fresh fruits, vegetables, and many local products. You can find honey, cheese, and baked goods from local farmers.  \nWoman: Don\u2019t forget to check the schedule for our special events. This week, we have a cooking demonstration at 11 AM. A local chef will show you how to make a delicious salad with fresh ingredients from the market.  \nMan: It\u2019s a great chance to learn and taste something new! Also, we have live music from 12 PM to 1 PM.  \nWoman: Yes! You can enjoy shopping while listening to some great tunes. Don\u2019t worry about parking; there are many spots available near the market.  \nMan: Remember to bring reusable bags for your purchases. Let\u2019s keep the environment clean! Thank you for coming today, and we hope you enjoy the market!",
     "questions": [
       {
         "id": 1,
@@ -2423,12 +2455,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-32.mp3",
+    "audioFile": "part3-32.mp3"
   },
   {
     "title": "City Park Opening Announcement",
     "difficulty": "beginner",
-    "passage": "Woman: Good morning, everyone! Thank you for joining us today. We are excited to announce the opening of Maple Park in downtown Toronto! The park will open this Saturday, May 20th, at 10 AM. \n\nMan: That sounds great! What activities will be available at the park?\n\nWoman: There will be many activities for all ages. You can enjoy walking trails, picnic areas, and a children's playground. We will also have free yoga classes every Saturday morning. \n\nMan: That’s wonderful! Is there parking available?\n\nWoman: Yes, there is a parking lot near the park that can hold up to 200 cars. Please remember that parking is free for the first three hours. \n\nMan: And what about public transport?\n\nWoman: Good question! You can take the subway to Queen Station and then walk for 10 minutes to reach the park. Buses also go to Maple Park. \n\nMan: Are there any special events planned for the opening day?\n\nWoman: Yes! There will be live music, food trucks, and an opening ceremony at 11 AM. We hope to see you all there! Thank you for your attention.",
+    "passage": "Woman: Good morning, everyone! Thank you for joining us today. We are excited to announce the opening of Maple Park in downtown Toronto! The park will open this Saturday, May 20th, at 10 AM. \n\nMan: That sounds great! What activities will be available at the park?\n\nWoman: There will be many activities for all ages. You can enjoy walking trails, picnic areas, and a children's playground. We will also have free yoga classes every Saturday morning. \n\nMan: That\u2019s wonderful! Is there parking available?\n\nWoman: Yes, there is a parking lot near the park that can hold up to 200 cars. Please remember that parking is free for the first three hours. \n\nMan: And what about public transport?\n\nWoman: Good question! You can take the subway to Queen Station and then walk for 10 minutes to reach the park. Buses also go to Maple Park. \n\nMan: Are there any special events planned for the opening day?\n\nWoman: Yes! There will be live music, food trucks, and an opening ceremony at 11 AM. We hope to see you all there! Thank you for your attention.",
     "questions": [
       {
         "id": 1,
@@ -2496,12 +2530,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-33.mp3",
+    "audioFile": "part3-33.mp3"
   },
   {
     "title": "Shopping Announcement at the Mall",
     "difficulty": "beginner",
-    "passage": "Woman: Welcome to Maple Mall! We have some exciting announcements for today. First, we want to remind you that our store hours are from 9 AM to 9 PM, Monday to Saturday. On Sundays, we open at 10 AM and close at 6 PM. \n\nMan: That's right! Also, don’t forget our special sale today. Many stores are offering discounts of up to 50% off on selected items. \n\nWoman: Yes, and you can find these deals in stores like Fashion Trends, Home Goods, and Tech World. The sale lasts until 6 PM, so make sure you plan your shopping trip. \n\nMan: If you need directions, just follow the signs to the Customer Service Desk. The staff there can help you with any questions.\n\nWoman: We also have complimentary gift wrapping at the Customer Service Desk today. It is free with any purchase! \n\nMan: And remember, if you spend over $100, you will receive a gift card worth $10 for your next visit. \n\nWoman: Thank you for shopping at Maple Mall! We hope you enjoy your day and find some great bargains!",
+    "passage": "Woman: Welcome to Maple Mall! We have some exciting announcements for today. First, we want to remind you that our store hours are from 9 AM to 9 PM, Monday to Saturday. On Sundays, we open at 10 AM and close at 6 PM. \n\nMan: That's right! Also, don\u2019t forget our special sale today. Many stores are offering discounts of up to 50% off on selected items. \n\nWoman: Yes, and you can find these deals in stores like Fashion Trends, Home Goods, and Tech World. The sale lasts until 6 PM, so make sure you plan your shopping trip. \n\nMan: If you need directions, just follow the signs to the Customer Service Desk. The staff there can help you with any questions.\n\nWoman: We also have complimentary gift wrapping at the Customer Service Desk today. It is free with any purchase! \n\nMan: And remember, if you spend over $100, you will receive a gift card worth $10 for your next visit. \n\nWoman: Thank you for shopping at Maple Mall! We hope you enjoy your day and find some great bargains!",
     "questions": [
       {
         "id": 1,
@@ -2569,12 +2605,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-34.mp3",
+    "audioFile": "part3-34.mp3"
   },
   {
     "title": "Shopping at the Downtown Mall",
     "difficulty": "beginner",
-    "passage": "Man: Welcome to the Downtown Mall! We are excited to have you here today. We have many shops and a food court for your convenience. \nWoman: That sounds great! What time does the mall open? \nMan: The mall opens at 9 AM and closes at 9 PM from Monday to Saturday. On Sundays, we open at 10 AM and close at 7 PM. \nWoman: That’s good to know. Are there any special events this week? \nMan: Yes! This week, we have a special sale at the clothing store. All items are 20% off! The sale starts today and lasts until Friday. \nWoman: Oh, I love sales! Where can I find the clothing store? \nMan: The clothing store is on the second floor, next to the electronics store. \nWoman: Perfect! I will visit today. Is parking available? \nMan: Yes, there is a parking garage next to the mall entrance. The first hour is free, and after that, it is $2 per hour. \nWoman: That's very reasonable. Thank you for the information! \nMan: You’re welcome! Enjoy your shopping!",
+    "passage": "Man: Welcome to the Downtown Mall! We are excited to have you here today. We have many shops and a food court for your convenience. \nWoman: That sounds great! What time does the mall open? \nMan: The mall opens at 9 AM and closes at 9 PM from Monday to Saturday. On Sundays, we open at 10 AM and close at 7 PM. \nWoman: That\u2019s good to know. Are there any special events this week? \nMan: Yes! This week, we have a special sale at the clothing store. All items are 20% off! The sale starts today and lasts until Friday. \nWoman: Oh, I love sales! Where can I find the clothing store? \nMan: The clothing store is on the second floor, next to the electronics store. \nWoman: Perfect! I will visit today. Is parking available? \nMan: Yes, there is a parking garage next to the mall entrance. The first hour is free, and after that, it is $2 per hour. \nWoman: That's very reasonable. Thank you for the information! \nMan: You\u2019re welcome! Enjoy your shopping!",
     "questions": [
       {
         "id": 1,
@@ -2642,12 +2680,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-35.mp3",
+    "audioFile": "part3-35.mp3"
   },
   {
     "title": "Welcome to Maple Mall",
     "difficulty": "beginner",
-    "passage": "Woman: Welcome to Maple Mall! We are happy to have you here. This mall has many stores, restaurants, and entertainment options. \n\nMan: That sounds great! What stores are here? \n\nWoman: We have a clothing store called Fashion Trends, a shoe store named Happy Feet, and a bookstore called Page Turners. You can find many great items there. \n\nMan: What about food? \n\nWoman: Yes! We have a food court with different types of food. You can enjoy pizza, burgers, sushi, and desserts. \n\nMan: Sounds delicious! Is there anything for children? \n\nWoman: Absolutely! There is a kids’ play area on the second floor. It’s safe and fun for children of all ages. \n\nMan: That’s perfect! What time does the mall close? \n\nWoman: Maple Mall is open from 10 AM to 9 PM from Monday to Saturday, and from 11 AM to 6 PM on Sunday. We hope you enjoy your visit!",
+    "passage": "Woman: Welcome to Maple Mall! We are happy to have you here. This mall has many stores, restaurants, and entertainment options. \n\nMan: That sounds great! What stores are here? \n\nWoman: We have a clothing store called Fashion Trends, a shoe store named Happy Feet, and a bookstore called Page Turners. You can find many great items there. \n\nMan: What about food? \n\nWoman: Yes! We have a food court with different types of food. You can enjoy pizza, burgers, sushi, and desserts. \n\nMan: Sounds delicious! Is there anything for children? \n\nWoman: Absolutely! There is a kids\u2019 play area on the second floor. It\u2019s safe and fun for children of all ages. \n\nMan: That\u2019s perfect! What time does the mall close? \n\nWoman: Maple Mall is open from 10 AM to 9 PM from Monday to Saturday, and from 11 AM to 6 PM on Sunday. We hope you enjoy your visit!",
     "questions": [
       {
         "id": 1,
@@ -2715,12 +2755,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-36.mp3",
+    "audioFile": "part3-36.mp3"
   },
   {
     "title": "Community Centre Announcement",
     "difficulty": "beginner",
-    "passage": "Man: Good morning, everyone! Welcome to the Maple Leaf Community Centre. We have some exciting news for you today. \nWoman: Yes, that’s right! This Saturday, we are having a big community event. It will start at 10 AM and end at 4 PM. Everyone is invited! \nMan: There will be games, food, and live music. You can bring your family and friends! \nWoman: If you want to help, you can volunteer. Please sign up at the front desk. \nMan: Remember to bring your own water bottle to stay hydrated! The weather will be warm, so wear comfortable clothes. \nWoman: Also, if you want to participate in the baking contest, please bring your baked goods by 11 AM. \nMan: That sounds delicious! Don’t forget to pick up your baked goods after 2 PM, so they are fresh for the judges. \nWoman: Finally, if you need directions, they are available at the front desk. We hope to see you all there! Thank you! \nMan: Have a great day!",
+    "passage": "Man: Good morning, everyone! Welcome to the Maple Leaf Community Centre. We have some exciting news for you today. \nWoman: Yes, that\u2019s right! This Saturday, we are having a big community event. It will start at 10 AM and end at 4 PM. Everyone is invited! \nMan: There will be games, food, and live music. You can bring your family and friends! \nWoman: If you want to help, you can volunteer. Please sign up at the front desk. \nMan: Remember to bring your own water bottle to stay hydrated! The weather will be warm, so wear comfortable clothes. \nWoman: Also, if you want to participate in the baking contest, please bring your baked goods by 11 AM. \nMan: That sounds delicious! Don\u2019t forget to pick up your baked goods after 2 PM, so they are fresh for the judges. \nWoman: Finally, if you need directions, they are available at the front desk. We hope to see you all there! Thank you! \nMan: Have a great day!",
     "questions": [
       {
         "id": 1,
@@ -2788,12 +2830,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-37.mp3",
+    "audioFile": "part3-37.mp3"
   },
   {
     "title": "Shopping for Winter Clothes",
     "difficulty": "beginner",
-    "passage": "Woman: Good morning, everyone. Welcome to Maple Mall! Today, we have a special announcement about our winter clothing sale. Starting tomorrow, all winter jackets, boots, and sweaters will be 30% off!  \nMan: That sounds great! What time does the sale start?  \nWoman: The sale starts at 10 AM and goes until 9 PM. You can also find warm hats and gloves at discounted prices.  \nMan: Are there any special deals for members?  \nWoman: Yes! If you are a member of our loyalty program, you will get an additional 10% off all purchases during the sale. Remember to bring your membership card.  \nMan: Where can I find the loyalty program sign-up?  \nWoman: You can sign up at the customer service desk, which is near the food court. It is very easy and takes only a few minutes.  \nMan: Great! Thank you for the information.  \nWoman: You’re welcome! Enjoy your shopping at Maple Mall and stay warm this winter!",
+    "passage": "Woman: Good morning, everyone. Welcome to Maple Mall! Today, we have a special announcement about our winter clothing sale. Starting tomorrow, all winter jackets, boots, and sweaters will be 30% off!  \nMan: That sounds great! What time does the sale start?  \nWoman: The sale starts at 10 AM and goes until 9 PM. You can also find warm hats and gloves at discounted prices.  \nMan: Are there any special deals for members?  \nWoman: Yes! If you are a member of our loyalty program, you will get an additional 10% off all purchases during the sale. Remember to bring your membership card.  \nMan: Where can I find the loyalty program sign-up?  \nWoman: You can sign up at the customer service desk, which is near the food court. It is very easy and takes only a few minutes.  \nMan: Great! Thank you for the information.  \nWoman: You\u2019re welcome! Enjoy your shopping at Maple Mall and stay warm this winter!",
     "questions": [
       {
         "id": 1,
@@ -2861,12 +2905,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-38.mp3",
+    "audioFile": "part3-38.mp3"
   },
   {
     "title": "Local Market Announcement",
     "difficulty": "beginner",
-    "passage": "Woman: Welcome to the weekly farmer's market in downtown Toronto! We are open every Saturday from 9 a.m. to 2 p.m. You can find many fresh fruits and vegetables from local farms. Make sure to visit our bakery for delicious bread and pastries.\n\nMan: That sounds great! Is there a fee to enter the market?\n\nWoman: No, there is no entrance fee. You can come and enjoy the market for free. We also have live music every week at noon. It makes shopping even more fun!\n\nMan: What if I want to buy something? How can I pay?\n\nWoman: Most vendors accept cash, but some also take credit cards. It is good to have some cash just in case. Remember to bring your reusable bags to carry your groceries.\n\nMan: Is there parking available near the market?\n\nWoman: Yes, there is limited street parking nearby, but we recommend using public transport. The subway station is just a short walk from here!\n\nMan: Thank you for the information!\n\nWoman: You’re welcome! Enjoy your shopping at the farmer's market!",
+    "passage": "Woman: Welcome to the weekly farmer's market in downtown Toronto! We are open every Saturday from 9 a.m. to 2 p.m. You can find many fresh fruits and vegetables from local farms. Make sure to visit our bakery for delicious bread and pastries.\n\nMan: That sounds great! Is there a fee to enter the market?\n\nWoman: No, there is no entrance fee. You can come and enjoy the market for free. We also have live music every week at noon. It makes shopping even more fun!\n\nMan: What if I want to buy something? How can I pay?\n\nWoman: Most vendors accept cash, but some also take credit cards. It is good to have some cash just in case. Remember to bring your reusable bags to carry your groceries.\n\nMan: Is there parking available near the market?\n\nWoman: Yes, there is limited street parking nearby, but we recommend using public transport. The subway station is just a short walk from here!\n\nMan: Thank you for the information!\n\nWoman: You\u2019re welcome! Enjoy your shopping at the farmer's market!",
     "questions": [
       {
         "id": 1,
@@ -2934,12 +2980,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-39.mp3",
+    "audioFile": "part3-39.mp3"
   },
   {
     "title": "Instructions for the Community Fair",
     "difficulty": "beginner",
-    "passage": "Man: Hello everyone! Welcome to the annual Community Fair here in Vancouver. We are excited to have you with us today! \nWoman: Yes, it's a beautiful day, and we have many activities planned. \nMan: First, let me tell you about the schedule. The fair opens at 10 AM and will close at 6 PM. \nWoman: There are many booths to visit. You can find local artists, crafts, and delicious food. \nMan: There will also be live music starting at 1 PM, so don’t miss that! \nWoman: We have activities for kids as well, like face painting and games. \nMan: If you need help, please visit the information booth. It is located near the entrance. \nWoman: Remember to bring cash, as some vendors may not accept cards. \nMan: Finally, we hope you follow the signs for parking. There is a designated parking area nearby. \nWoman: Enjoy the fair, and thank you for coming! We hope you have a great time!",
+    "passage": "Man: Hello everyone! Welcome to the annual Community Fair here in Vancouver. We are excited to have you with us today! \nWoman: Yes, it's a beautiful day, and we have many activities planned. \nMan: First, let me tell you about the schedule. The fair opens at 10 AM and will close at 6 PM. \nWoman: There are many booths to visit. You can find local artists, crafts, and delicious food. \nMan: There will also be live music starting at 1 PM, so don\u2019t miss that! \nWoman: We have activities for kids as well, like face painting and games. \nMan: If you need help, please visit the information booth. It is located near the entrance. \nWoman: Remember to bring cash, as some vendors may not accept cards. \nMan: Finally, we hope you follow the signs for parking. There is a designated parking area nearby. \nWoman: Enjoy the fair, and thank you for coming! We hope you have a great time!",
     "questions": [
       {
         "id": 1,
@@ -3007,7 +3055,9 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-40.mp3",
+    "audioFile": "part3-40.mp3"
   },
   {
     "title": "City Mall Announcement",
@@ -3080,12 +3130,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-41.mp3",
+    "audioFile": "part3-41.mp3"
   },
   {
     "title": "City Park Opening Announcement",
     "difficulty": "beginner",
-    "passage": "Woman: Hello, everyone! Thank you for coming today. We have exciting news! The new city park will open this Saturday, May 15th. \nMan: That sounds great! What time does it open? \nWoman: The park will open at 10 AM. There will be a special ceremony at 10:30 AM. Everyone is welcome to join us for this event. \nMan: Will there be any activities? \nWoman: Yes, there will be games, music, and free snacks for everyone! We hope you all come and enjoy the fun. \nMan: Is there parking available? \nWoman: Yes, there is parking at the east end of the park. It is free for all visitors. \nMan: That is wonderful! Can people bring their dogs? \nWoman: Yes, dogs are welcome in the park. However, please remember to keep them on a leash. \nMan: Thank you for the information! \nWoman: You’re welcome! We hope to see you all at the opening of the new city park this Saturday! Have a great day!",
+    "passage": "Woman: Hello, everyone! Thank you for coming today. We have exciting news! The new city park will open this Saturday, May 15th. \nMan: That sounds great! What time does it open? \nWoman: The park will open at 10 AM. There will be a special ceremony at 10:30 AM. Everyone is welcome to join us for this event. \nMan: Will there be any activities? \nWoman: Yes, there will be games, music, and free snacks for everyone! We hope you all come and enjoy the fun. \nMan: Is there parking available? \nWoman: Yes, there is parking at the east end of the park. It is free for all visitors. \nMan: That is wonderful! Can people bring their dogs? \nWoman: Yes, dogs are welcome in the park. However, please remember to keep them on a leash. \nMan: Thank you for the information! \nWoman: You\u2019re welcome! We hope to see you all at the opening of the new city park this Saturday! Have a great day!",
     "questions": [
       {
         "id": 1,
@@ -3153,7 +3205,9 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-42.mp3",
+    "audioFile": "part3-42.mp3"
   },
   {
     "title": "Local Farmers' Market Announcement",
@@ -3226,7 +3280,9 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-43.mp3",
+    "audioFile": "part3-43.mp3"
   },
   {
     "title": "Weekend Farmers' Market Announcement",
@@ -3299,7 +3355,9 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-44.mp3",
+    "audioFile": "part3-44.mp3"
   },
   {
     "title": "Shopping at Maple Mall",
@@ -3372,12 +3430,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-45.mp3",
+    "audioFile": "part3-45.mp3"
   },
   {
     "title": "Upcoming Changes to the Public Transit Schedule",
     "difficulty": "advanced",
-    "passage": "Man: Alright, everyone, thanks for gathering on such short notice. I wanted to discuss the recent changes to our public transit schedule, which, as you know, has been a topic of concern for many commuters lately.\n\nWoman: Right. I mean, especially with the delays, it's like the city is just ignoring the needs of the public, don’t you think?\n\nMan: Exactly! But, let's be clear, the adjustments are aimed at improving efficiency, or at least that’s the official line. They think cutting some routes will free up resources for the more heavily trafficked areas.\n\nWoman: Not entirely convinced that’s the best approach. What about those who rely on those routes? Seems a bit shortsighted.\n\nMan 2: True, but there's also data suggesting those routes were underutilized. Still, it’s a delicate balance, managing public opinion and actual passenger numbers.\n\nWoman 2: Sure. And, if I recall, the consultation process wasn’t exactly transparent. They should’ve involved more community feedback.\n\nMan: Agreed. But, with the upcoming city council meeting next week, there’s still a chance to voice those concerns. We might see some adjustments before the final decision takes effect.\n\nWoman: Let’s hope they reconsider before it’s too late. Public transport is essential after all, not just a luxury, right?",
+    "passage": "Man: Alright, everyone, thanks for gathering on such short notice. I wanted to discuss the recent changes to our public transit schedule, which, as you know, has been a topic of concern for many commuters lately.\n\nWoman: Right. I mean, especially with the delays, it's like the city is just ignoring the needs of the public, don\u2019t you think?\n\nMan: Exactly! But, let's be clear, the adjustments are aimed at improving efficiency, or at least that\u2019s the official line. They think cutting some routes will free up resources for the more heavily trafficked areas.\n\nWoman: Not entirely convinced that\u2019s the best approach. What about those who rely on those routes? Seems a bit shortsighted.\n\nMan 2: True, but there's also data suggesting those routes were underutilized. Still, it\u2019s a delicate balance, managing public opinion and actual passenger numbers.\n\nWoman 2: Sure. And, if I recall, the consultation process wasn\u2019t exactly transparent. They should\u2019ve involved more community feedback.\n\nMan: Agreed. But, with the upcoming city council meeting next week, there\u2019s still a chance to voice those concerns. We might see some adjustments before the final decision takes effect.\n\nWoman: Let\u2019s hope they reconsider before it\u2019s too late. Public transport is essential after all, not just a luxury, right?",
     "questions": [
       {
         "id": 1,
@@ -3405,8 +3465,8 @@
         "id": 3,
         "question": "What concern does Man 2 raise about the route changes?",
         "options": [
-          "A. They may harm the city’s budget",
-          "B. They don’t reflect passenger numbers",
+          "A. They may harm the city\u2019s budget",
+          "B. They don\u2019t reflect passenger numbers",
           "C. They could lead to public backlash",
           "D. They disregard some community needs"
         ],
@@ -3445,12 +3505,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-46.mp3",
+    "audioFile": "part3-46.mp3"
   },
   {
     "title": "City Council Meeting on Urban Development",
     "difficulty": "advanced",
-    "passage": "Woman: Good afternoon, everyone. Thank you for joining us today for the City Council meeting regarding the urban development project. As you know, the proposal to expand Green Park has stirred quite a debate among local residents. \nMan: Yes, and I think it’s crucial we acknowledge that not everyone is thrilled. The traffic implications alone could be, um, less than ideal. \nWoman: Exactly, but some argue that the additional recreational space could enhance community engagement, right? \nMan 2: Sure, but what’s the trade-off? I mean, a park's great and all, but at what cost? We need to weigh the displacement of existing small businesses. \nWoman 2: And let’s not ignore the environmental aspects. Some residents are not entirely convinced that the new landscaping will truly compensate for what’s lost. \nWoman: That’s a valid point. However, the city has promised a phased approach to ensure minimal disruption. My concern, however, is whether that’s realistic given previous timelines on similar projects. \nMan: It’s a bit of a balancing act, isn’t it? The council will need to tread carefully to ensure that all voices are heard before a decision is made. We wouldn't want to rush into this, would we? \nWoman: Definitely not. So, to summarize, we need more community input, a transparent timeline, and just maybe a reevaluation of priorities moving forward.",
+    "passage": "Woman: Good afternoon, everyone. Thank you for joining us today for the City Council meeting regarding the urban development project. As you know, the proposal to expand Green Park has stirred quite a debate among local residents. \nMan: Yes, and I think it\u2019s crucial we acknowledge that not everyone is thrilled. The traffic implications alone could be, um, less than ideal. \nWoman: Exactly, but some argue that the additional recreational space could enhance community engagement, right? \nMan 2: Sure, but what\u2019s the trade-off? I mean, a park's great and all, but at what cost? We need to weigh the displacement of existing small businesses. \nWoman 2: And let\u2019s not ignore the environmental aspects. Some residents are not entirely convinced that the new landscaping will truly compensate for what\u2019s lost. \nWoman: That\u2019s a valid point. However, the city has promised a phased approach to ensure minimal disruption. My concern, however, is whether that\u2019s realistic given previous timelines on similar projects. \nMan: It\u2019s a bit of a balancing act, isn\u2019t it? The council will need to tread carefully to ensure that all voices are heard before a decision is made. We wouldn't want to rush into this, would we? \nWoman: Definitely not. So, to summarize, we need more community input, a transparent timeline, and just maybe a reevaluation of priorities moving forward.",
     "questions": [
       {
         "id": 1,
@@ -3498,7 +3560,7 @@
       },
       {
         "id": 5,
-        "question": "How does Man summarize the council’s approach to the project?",
+        "question": "How does Man summarize the council\u2019s approach to the project?",
         "options": [
           "A) They will make a quick decision",
           "B) They need to be cautious and inclusive",
@@ -3509,7 +3571,7 @@
       },
       {
         "id": 6,
-        "question": "Based on the conversation, which of the following can be inferred about the council’s decision-making process?",
+        "question": "Based on the conversation, which of the following can be inferred about the council\u2019s decision-making process?",
         "options": [
           "A) It is strictly top-down and ignores public opinion",
           "B) It seeks to accommodate various community interests",
@@ -3518,12 +3580,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-47.mp3",
+    "audioFile": "part3-47.mp3"
   },
   {
     "title": "New Urban Development Initiative",
     "difficulty": "advanced",
-    "passage": "Man: Welcome, everyone, to today’s briefing on the new urban development initiative that aims to revitalize downtown Toronto. \n\nWoman: Right, so, just to clarify, are we focusing solely on residential spaces or are we also addressing commercial properties? \n\nMan: Good question. Initially, the proposal suggested a mixed-use approach, but there seems to be a consensus leaning towards prioritizing residential units. I mean, not everyone is entirely convinced that residential needs should trump commercial ones, especially with the current economic downturn. \n\nWoman 2: Exactly. I’ve heard some suggest that too many residential spaces could lead to oversaturation, and we could end up with high vacancy rates. \n\nMan 2: True, and let’s not forget the feedback from local businesses, who feel excluded from these discussions. They believe a vibrant commercial sector is vital for community sustainability. \n\nWoman: So, are we looking to gather more data on user needs before finalizing any plans? \n\nMan: Precisely. We’ll conduct a community survey. I think it’s essential to get a pulse on what residents and business owners are actually looking for. Without their input, we might miss the mark entirely. \n\nMan 2: Right, and I’d like to suggest including some public forums. It wouldn’t hurt to let people voice their concerns firsthand. \n\nWoman 2: I agree, as long as we keep the sessions structured. We wouldn’t want chaos… I mean, too many opinions can be counterproductive! \n\nMan: So, we aim to draft our final plan by the end of next quarter, contingent on the feedback we gather in the meantime. Everyone on board with that timeline? ",
+    "passage": "Man: Welcome, everyone, to today\u2019s briefing on the new urban development initiative that aims to revitalize downtown Toronto. \n\nWoman: Right, so, just to clarify, are we focusing solely on residential spaces or are we also addressing commercial properties? \n\nMan: Good question. Initially, the proposal suggested a mixed-use approach, but there seems to be a consensus leaning towards prioritizing residential units. I mean, not everyone is entirely convinced that residential needs should trump commercial ones, especially with the current economic downturn. \n\nWoman 2: Exactly. I\u2019ve heard some suggest that too many residential spaces could lead to oversaturation, and we could end up with high vacancy rates. \n\nMan 2: True, and let\u2019s not forget the feedback from local businesses, who feel excluded from these discussions. They believe a vibrant commercial sector is vital for community sustainability. \n\nWoman: So, are we looking to gather more data on user needs before finalizing any plans? \n\nMan: Precisely. We\u2019ll conduct a community survey. I think it\u2019s essential to get a pulse on what residents and business owners are actually looking for. Without their input, we might miss the mark entirely. \n\nMan 2: Right, and I\u2019d like to suggest including some public forums. It wouldn\u2019t hurt to let people voice their concerns firsthand. \n\nWoman 2: I agree, as long as we keep the sessions structured. We wouldn\u2019t want chaos\u2026 I mean, too many opinions can be counterproductive! \n\nMan: So, we aim to draft our final plan by the end of next quarter, contingent on the feedback we gather in the meantime. Everyone on board with that timeline? ",
     "questions": [
       {
         "id": 1,
@@ -3591,12 +3655,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-48.mp3",
+    "audioFile": "part3-48.mp3"
   },
   {
     "title": "New Transit Policy Proposal",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. As you know, the city has been re-evaluating our public transit policy, and I believe it’s essential we consider different perspectives before finalizing any decisions. \nWoman: Absolutely, I think we should look into what other cities are doing. Toronto, for instance, has implemented a congestion charge that seems to have worked relatively well. \nMan: True, but I’m not entirely convinced that it’s a one-size-fits-all solution. We have a unique traffic issue here in Vancouver that might not respond well to such measures. For example, our transit system already has a lot of challenges without adding new fees. \nWoman 2: Right, but those fees can also generate revenue that could be reinvested into the transit infrastructure. Plus, it encourages people to consider alternatives like cycling or carpooling. \nMan 2: I get that, but what about the social implications? Charging fees could disproportionately affect lower-income residents. We must ensure we’re not alienating a significant portion of the population. \nWoman: Well, perhaps we could implement a tiered system based on income to address that concern. That might alleviate some of the financial pressure while still encouraging less car use. \nMan: Okay, but we should also consider public response. If people feel penalized, they might resist and we could end up with more traffic congestion. It’s all about balance, right? \nWoman 2: Exactly, and we should also engage with the community through workshops. Their feedback will be crucial to shaping a fair policy. \nMan 2: Agreed. Let’s plan to incorporate that into our timeline, possibly before the next council meeting. Thanks, everyone. \n",
+    "passage": "Man: Good afternoon, everyone. As you know, the city has been re-evaluating our public transit policy, and I believe it\u2019s essential we consider different perspectives before finalizing any decisions. \nWoman: Absolutely, I think we should look into what other cities are doing. Toronto, for instance, has implemented a congestion charge that seems to have worked relatively well. \nMan: True, but I\u2019m not entirely convinced that it\u2019s a one-size-fits-all solution. We have a unique traffic issue here in Vancouver that might not respond well to such measures. For example, our transit system already has a lot of challenges without adding new fees. \nWoman 2: Right, but those fees can also generate revenue that could be reinvested into the transit infrastructure. Plus, it encourages people to consider alternatives like cycling or carpooling. \nMan 2: I get that, but what about the social implications? Charging fees could disproportionately affect lower-income residents. We must ensure we\u2019re not alienating a significant portion of the population. \nWoman: Well, perhaps we could implement a tiered system based on income to address that concern. That might alleviate some of the financial pressure while still encouraging less car use. \nMan: Okay, but we should also consider public response. If people feel penalized, they might resist and we could end up with more traffic congestion. It\u2019s all about balance, right? \nWoman 2: Exactly, and we should also engage with the community through workshops. Their feedback will be crucial to shaping a fair policy. \nMan 2: Agreed. Let\u2019s plan to incorporate that into our timeline, possibly before the next council meeting. Thanks, everyone. \n",
     "questions": [
       {
         "id": 1,
@@ -3647,7 +3713,7 @@
         "question": "How does the man feel about the one-size-fits-all approach to a congestion charge?",
         "options": [
           "A) He fully supports it as a necessary measure.",
-          "B) He believes it might not be effective in Vancouver’s unique context.",
+          "B) He believes it might not be effective in Vancouver\u2019s unique context.",
           "C) He thinks it should be tested first in other cities.",
           "D) He advocates for a strict implementation regardless of reactions."
         ],
@@ -3664,12 +3730,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-49.mp3",
+    "audioFile": "part3-49.mp3"
   },
   {
     "title": "Policy Discussion on Public Transit Improvements",
     "difficulty": "advanced",
-    "passage": "Man: So, as we move forward with the new public transit initiative, I wanted to clarify what we mean by optimizing routes.  \nWoman: Right, I mean, it’s not just about adding more buses, right? We also need to consider frequency and, um, passenger load.  \nMan: Exactly! But I’m not entirely convinced that simply adjusting schedules will suffice. We might need to look at alternative routes too.  \nWoman: Sure, but how do we justify the cost of those changes? There’s already been some pushback from city council.  \nMan: Well, I think if we can show a clear benefit—like reducing wait times—we could sway their votes. But, what if we focused on areas that are underserved, you know?  \nWoman: That could work, but be careful with those assumptions. Not every underserved area has the same needs.  \nMan: Right, and that’s where community input becomes crucial. We could set up forums to run this by citizens before making any decisions.  \nWoman: Definitely, but we should also track previous projects. I heard the last consultation was, uh, not exactly effective.  \nMan: It’s true; sometimes people just talk in circles. So, we need a structured approach to ensure we gather actionable feedback.  \nWoman: Agreed, otherwise we might end up with another expensive report that gathers dust. We can’t afford that.  \nMan: Precisely, let’s draft a preliminary outline for the meeting next week.  \nWoman: Sure thing. I can start compiling recent data to support our suggestions.",
+    "passage": "Man: So, as we move forward with the new public transit initiative, I wanted to clarify what we mean by optimizing routes.  \nWoman: Right, I mean, it\u2019s not just about adding more buses, right? We also need to consider frequency and, um, passenger load.  \nMan: Exactly! But I\u2019m not entirely convinced that simply adjusting schedules will suffice. We might need to look at alternative routes too.  \nWoman: Sure, but how do we justify the cost of those changes? There\u2019s already been some pushback from city council.  \nMan: Well, I think if we can show a clear benefit\u2014like reducing wait times\u2014we could sway their votes. But, what if we focused on areas that are underserved, you know?  \nWoman: That could work, but be careful with those assumptions. Not every underserved area has the same needs.  \nMan: Right, and that\u2019s where community input becomes crucial. We could set up forums to run this by citizens before making any decisions.  \nWoman: Definitely, but we should also track previous projects. I heard the last consultation was, uh, not exactly effective.  \nMan: It\u2019s true; sometimes people just talk in circles. So, we need a structured approach to ensure we gather actionable feedback.  \nWoman: Agreed, otherwise we might end up with another expensive report that gathers dust. We can\u2019t afford that.  \nMan: Precisely, let\u2019s draft a preliminary outline for the meeting next week.  \nWoman: Sure thing. I can start compiling recent data to support our suggestions.",
     "questions": [
       {
         "id": 1,
@@ -3737,12 +3805,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-50.mp3",
+    "audioFile": "part3-50.mp3"
   },
   {
     "title": "Community Development Meeting Announcement",
     "difficulty": "advanced",
-    "passage": "Man: Good morning, everyone. I want to thank you all for joining us today for this community development meeting at City Hall. As some of you may know, we're reassessing the community beautification project initially planned for the waterfront.\n\nWoman: Right, but I heard there might be a shift in funding. Is that still a possibility?\n\nMan: Well, it’s complicated. The initial budget was based on a model that, let’s just say, hasn't held up under scrutiny. So, while I’m not entirely convinced we’ll get additional funds from the city, we do have some other avenues to explore, like private sponsors.\n\nWoman: So, are you suggesting we might pivot from the original plans?\n\nMan: It’s a consideration, yes. I mean, if the funding doesn’t come through, we could potentially look at smaller-scale projects. But let’s not get ahead of ourselves. We’re still gathering input from community stakeholders.\n\nWoman 2: And those discussions are crucial, right? I mean, if we decide to move forward with a modified plan, we really need the community’s buy-in.\n\nMan 2: Absolutely. It's important to remember that community engagement isn’t just a box to check; it’s essential for the longevity of any new initiatives. So, if anyone has suggestions or concerns, please bring those to the table today.\n\nWoman: And just to clarify, are we aiming for implementation by next spring?\n\nMan: That might be ambitious if we don’t have everything settled. Perhaps late summer might be a more realistic timeline. We’ll see how today goes. \n\nWoman 2: Sounds good. Looking forward to an engaging discussion!",
+    "passage": "Man: Good morning, everyone. I want to thank you all for joining us today for this community development meeting at City Hall. As some of you may know, we're reassessing the community beautification project initially planned for the waterfront.\n\nWoman: Right, but I heard there might be a shift in funding. Is that still a possibility?\n\nMan: Well, it\u2019s complicated. The initial budget was based on a model that, let\u2019s just say, hasn't held up under scrutiny. So, while I\u2019m not entirely convinced we\u2019ll get additional funds from the city, we do have some other avenues to explore, like private sponsors.\n\nWoman: So, are you suggesting we might pivot from the original plans?\n\nMan: It\u2019s a consideration, yes. I mean, if the funding doesn\u2019t come through, we could potentially look at smaller-scale projects. But let\u2019s not get ahead of ourselves. We\u2019re still gathering input from community stakeholders.\n\nWoman 2: And those discussions are crucial, right? I mean, if we decide to move forward with a modified plan, we really need the community\u2019s buy-in.\n\nMan 2: Absolutely. It's important to remember that community engagement isn\u2019t just a box to check; it\u2019s essential for the longevity of any new initiatives. So, if anyone has suggestions or concerns, please bring those to the table today.\n\nWoman: And just to clarify, are we aiming for implementation by next spring?\n\nMan: That might be ambitious if we don\u2019t have everything settled. Perhaps late summer might be a more realistic timeline. We\u2019ll see how today goes. \n\nWoman 2: Sounds good. Looking forward to an engaging discussion!",
     "questions": [
       {
         "id": 1,
@@ -3810,12 +3880,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-51.mp3",
+    "audioFile": "part3-51.mp3"
   },
   {
     "title": "Downtown Development Plans",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. We're here to discuss the upcoming downtown development initiative, and I must say, it's generating quite a buzz, though some folks are a bit skeptical about the costs. \nWoman: Yeah, I mean, it’s expected to run into the millions, right? Not to mention potential disruptions during construction. \nMan: Exactly, but the city argues that long-term benefits—like improved infrastructure and job creation—would offset the initial expenses. \nMan 2: Sure, but there's also concern over gentrification. People are worried about lower-income residents being priced out. \nWoman 2: True, and honestly, not everyone is convinced that the proposed zoning changes will actually encourage affordable housing. I mean, what’s the guarantee? \nMan: Right, right. And then there’s the public transport angle—if they don't integrate that properly, we might end up with a really expensive parking lot rather than a vibrant community space. \nWoman: Exactly, and the timelines they’ve proposed—some say they’re a bit optimistic. Who knows if they can stick to it? \nMan 2: So, what’s the next step? Do we really just wait for the next public meeting to voice concerns? \nWoman 2: Well, they did mention a feedback survey on their website—maybe that’s the best route for now. Just hope it’s not one of those forms that gets lost in cyberspace!",
+    "passage": "Man: Good afternoon, everyone. We're here to discuss the upcoming downtown development initiative, and I must say, it's generating quite a buzz, though some folks are a bit skeptical about the costs. \nWoman: Yeah, I mean, it\u2019s expected to run into the millions, right? Not to mention potential disruptions during construction. \nMan: Exactly, but the city argues that long-term benefits\u2014like improved infrastructure and job creation\u2014would offset the initial expenses. \nMan 2: Sure, but there's also concern over gentrification. People are worried about lower-income residents being priced out. \nWoman 2: True, and honestly, not everyone is convinced that the proposed zoning changes will actually encourage affordable housing. I mean, what\u2019s the guarantee? \nMan: Right, right. And then there\u2019s the public transport angle\u2014if they don't integrate that properly, we might end up with a really expensive parking lot rather than a vibrant community space. \nWoman: Exactly, and the timelines they\u2019ve proposed\u2014some say they\u2019re a bit optimistic. Who knows if they can stick to it? \nMan 2: So, what\u2019s the next step? Do we really just wait for the next public meeting to voice concerns? \nWoman 2: Well, they did mention a feedback survey on their website\u2014maybe that\u2019s the best route for now. Just hope it\u2019s not one of those forms that gets lost in cyberspace!",
     "questions": [
       {
         "id": 1,
@@ -3883,12 +3955,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-52.mp3",
+    "audioFile": "part3-52.mp3"
   },
   {
     "title": "University Program Changes Announcement",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. I’d like to discuss the recent changes to our graduate program here at the University of Toronto. I know there’s been some confusion, and frankly, I’m not entirely convinced that the communication around this was clear. \n\nWoman: Right, I mean, they announced the new course prerequisites last week, but I think we have to be cautious. Some students feel this is an unnecessary hurdle, especially since they’re already juggling jobs and internships.\n\nMan: Exactly! But the administration insists that these changes are necessary to maintain academic standards. The new requirement seems to be a direct response to some feedback from last semester’s evaluations. \n\nWoman: True, but they seem to flip-flop a bit on the idea of flexibility with online options. Initially, they said it would be available, but I heard a prof mention that it’s now ‘under review’—whatever that means. \n\nMan: Yes, it’s almost as if they’re hedging. I wonder if they realize how much upheaval this causes for planning our schedules.\n\nWoman: Definitely! It’s a fine balance, but those of us who are in the program need to mobilize and express our concerns more clearly at the next department meeting. \n\nMan: Agreed. Let’s draft something that highlights our collective experiences; it might prompt the decision-makers to reconsider some of these policies.",
+    "passage": "Man: Good afternoon, everyone. I\u2019d like to discuss the recent changes to our graduate program here at the University of Toronto. I know there\u2019s been some confusion, and frankly, I\u2019m not entirely convinced that the communication around this was clear. \n\nWoman: Right, I mean, they announced the new course prerequisites last week, but I think we have to be cautious. Some students feel this is an unnecessary hurdle, especially since they\u2019re already juggling jobs and internships.\n\nMan: Exactly! But the administration insists that these changes are necessary to maintain academic standards. The new requirement seems to be a direct response to some feedback from last semester\u2019s evaluations. \n\nWoman: True, but they seem to flip-flop a bit on the idea of flexibility with online options. Initially, they said it would be available, but I heard a prof mention that it\u2019s now \u2018under review\u2019\u2014whatever that means. \n\nMan: Yes, it\u2019s almost as if they\u2019re hedging. I wonder if they realize how much upheaval this causes for planning our schedules.\n\nWoman: Definitely! It\u2019s a fine balance, but those of us who are in the program need to mobilize and express our concerns more clearly at the next department meeting. \n\nMan: Agreed. Let\u2019s draft something that highlights our collective experiences; it might prompt the decision-makers to reconsider some of these policies.",
     "questions": [
       {
         "id": 1,
@@ -3903,7 +3977,7 @@
       },
       {
         "id": 2,
-        "question": "What is the woman’s main concern regarding the new course prerequisites?",
+        "question": "What is the woman\u2019s main concern regarding the new course prerequisites?",
         "options": [
           "A",
           "B",
@@ -3914,7 +3988,7 @@
       },
       {
         "id": 3,
-        "question": "What does the term ‘under review’ imply about the online options for courses?",
+        "question": "What does the term \u2018under review\u2019 imply about the online options for courses?",
         "options": [
           "A",
           "B",
@@ -3925,7 +3999,7 @@
       },
       {
         "id": 4,
-        "question": "What issue does the man highlight about the administration’s approach to policy changes?",
+        "question": "What issue does the man highlight about the administration\u2019s approach to policy changes?",
         "options": [
           "A",
           "B",
@@ -3947,7 +4021,7 @@
       },
       {
         "id": 6,
-        "question": "How do the speakers feel about the administration’s response to student feedback?",
+        "question": "How do the speakers feel about the administration\u2019s response to student feedback?",
         "options": [
           "A",
           "B",
@@ -3956,12 +4030,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-53.mp3",
+    "audioFile": "part3-53.mp3"
   },
   {
     "title": "Urban Development Proposal Discussion",
     "difficulty": "advanced",
-    "passage": "Man: Good morning, everyone. I appreciate your joining this consultation on the new urban development proposal for downtown Toronto. We’ll start by addressing the public feedback we’ve received. Now, regarding the mixed-use zoning—  \nWoman: Right. There’s a lot of sentiment around that, but I’m not entirely convinced it’s the best path forward.  \nMan: Exactly, especially with traffic concerns. We have to consider the potential for increased congestion.  \nWoman: Yes, but some argue it could stimulate economic growth. You know how the city thrives on such developments.  \nMan: Sure, but let’s not overlook the infrastructure challenges. We’re talking about expanding public transit as well.  \nMan 2: If I may interject, isn't it also a matter of balancing community needs? The locals have expressed concerns about high-rise blocking sunlight.  \nWoman 2: Right, which brings us to the height restrictions. Maybe we can propose something less than ten stories?  \nMan: That's a fair compromise, but I suspect some developers might balk at that.  \nWoman: True, but we have to weigh commercial interests against residents' quality of life, which is, well, essential.  \nMan: So, to summarize, we should consider a phased approach while actively engaging with community stakeholders. Thoughts?  \nMan 2: Not a bad idea. Let’s draft a few alternatives and see if we can get consensus next session.",
+    "passage": "Man: Good morning, everyone. I appreciate your joining this consultation on the new urban development proposal for downtown Toronto. We\u2019ll start by addressing the public feedback we\u2019ve received. Now, regarding the mixed-use zoning\u2014  \nWoman: Right. There\u2019s a lot of sentiment around that, but I\u2019m not entirely convinced it\u2019s the best path forward.  \nMan: Exactly, especially with traffic concerns. We have to consider the potential for increased congestion.  \nWoman: Yes, but some argue it could stimulate economic growth. You know how the city thrives on such developments.  \nMan: Sure, but let\u2019s not overlook the infrastructure challenges. We\u2019re talking about expanding public transit as well.  \nMan 2: If I may interject, isn't it also a matter of balancing community needs? The locals have expressed concerns about high-rise blocking sunlight.  \nWoman 2: Right, which brings us to the height restrictions. Maybe we can propose something less than ten stories?  \nMan: That's a fair compromise, but I suspect some developers might balk at that.  \nWoman: True, but we have to weigh commercial interests against residents' quality of life, which is, well, essential.  \nMan: So, to summarize, we should consider a phased approach while actively engaging with community stakeholders. Thoughts?  \nMan 2: Not a bad idea. Let\u2019s draft a few alternatives and see if we can get consensus next session.",
     "questions": [
       {
         "id": 1,
@@ -4029,12 +4105,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-54.mp3",
+    "audioFile": "part3-54.mp3"
   },
   {
     "title": "Revisions to the Urban Transportation Policy",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. We’re here to discuss the preliminary revisions to the Urban Transportation Policy. I think, honestly, the changes could maybe be beneficial in the long run, but I’m not entirely convinced that they tackle the real issues.\n\nWoman: I share your concerns. While the proposed additional bus routes, for example, sound great on paper, there’s still that question of feasibility, right? \n\nMan: Exactly, and let’s not forget the budget constraints! Expanding the infrastructure could incur costs way beyond our projections.\n\nWoman: And that’s where public opinion comes in. If we don’t have strong community support, we could be facing an uphill battle. I mean, just think about the backlash when the last subway expansion was proposed!\n\nMan 2: True, but isn’t there a chance that by investing in more bike lanes, we might actually alleviate some traffic? It’s a bit risky but could shift public perception.\n\nWoman 2: You have a point there, but balancing immediate public needs with long-term sustainability is tricky. It’s a complex web, and frankly, there’s a lot of overlapping interests to navigate.\n\nMan: So, I guess the takeaway is that we need more extensive stakeholder consultations before moving forward, right? We can’t afford to miss the mark again, or we’ll be back at square one, just spinning our wheels.",
+    "passage": "Man: Good afternoon, everyone. We\u2019re here to discuss the preliminary revisions to the Urban Transportation Policy. I think, honestly, the changes could maybe be beneficial in the long run, but I\u2019m not entirely convinced that they tackle the real issues.\n\nWoman: I share your concerns. While the proposed additional bus routes, for example, sound great on paper, there\u2019s still that question of feasibility, right? \n\nMan: Exactly, and let\u2019s not forget the budget constraints! Expanding the infrastructure could incur costs way beyond our projections.\n\nWoman: And that\u2019s where public opinion comes in. If we don\u2019t have strong community support, we could be facing an uphill battle. I mean, just think about the backlash when the last subway expansion was proposed!\n\nMan 2: True, but isn\u2019t there a chance that by investing in more bike lanes, we might actually alleviate some traffic? It\u2019s a bit risky but could shift public perception.\n\nWoman 2: You have a point there, but balancing immediate public needs with long-term sustainability is tricky. It\u2019s a complex web, and frankly, there\u2019s a lot of overlapping interests to navigate.\n\nMan: So, I guess the takeaway is that we need more extensive stakeholder consultations before moving forward, right? We can\u2019t afford to miss the mark again, or we\u2019ll be back at square one, just spinning our wheels.",
     "questions": [
       {
         "id": 1,
@@ -4060,7 +4138,7 @@
       },
       {
         "id": 3,
-        "question": "How do the speakers feel about the community’s role in the policy changes?",
+        "question": "How do the speakers feel about the community\u2019s role in the policy changes?",
         "options": [
           "A. Community support is not essential.",
           "B. Public opinion is vital for success.",
@@ -4102,12 +4180,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-55.mp3",
+    "audioFile": "part3-55.mp3"
   },
   {
     "title": "City Council Funding Debate",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. Today, we're here to discuss the upcoming budget allocation for community projects, particularly those focused on youth engagement. \nWoman: Yes, there's definitely a pressing need for more funding in that sector. I've been reading about several successful initiatives in other cities, and honestly, we could be doing a lot better.\nMan: I completely agree, but there’s always the concern about where the money will come from. Some council members are reluctant to raise taxes, even slightly. \nWoman: Right, and let's be honest, nobody enjoys tax increases. But if we keep cutting corners, we risk losing out on long-term benefits, don’t you think?\nMan: Absolutely, though I suspect some might say that we'd be throwing good money after bad if the programs don’t produce immediate results, which, honestly, I'm not entirely convinced they always do. \nWoman: That’s a fair point, but isn't it also about setting the stage for future generations? A little investment now could yield big returns later.\nMan: True, but we have to consider the current economic climate. If we allocate too much now, we might face budget shortfalls down the line, so it’s a bit of a balancing act.\nWoman: Exactly! Maybe a phased approach is what we need—small, incremental investments that allow us to evaluate success as we go?\nMan: I like that idea. It might address the concerns of the more fiscally conservative members while still pushing the envelope on youth programming. \nWoman: Let’s draft a proposal for that. We can highlight potential metrics for success too, to help sway those who are hesitant to commit to any funding increase right away.",
+    "passage": "Man: Good afternoon, everyone. Today, we're here to discuss the upcoming budget allocation for community projects, particularly those focused on youth engagement. \nWoman: Yes, there's definitely a pressing need for more funding in that sector. I've been reading about several successful initiatives in other cities, and honestly, we could be doing a lot better.\nMan: I completely agree, but there\u2019s always the concern about where the money will come from. Some council members are reluctant to raise taxes, even slightly. \nWoman: Right, and let's be honest, nobody enjoys tax increases. But if we keep cutting corners, we risk losing out on long-term benefits, don\u2019t you think?\nMan: Absolutely, though I suspect some might say that we'd be throwing good money after bad if the programs don\u2019t produce immediate results, which, honestly, I'm not entirely convinced they always do. \nWoman: That\u2019s a fair point, but isn't it also about setting the stage for future generations? A little investment now could yield big returns later.\nMan: True, but we have to consider the current economic climate. If we allocate too much now, we might face budget shortfalls down the line, so it\u2019s a bit of a balancing act.\nWoman: Exactly! Maybe a phased approach is what we need\u2014small, incremental investments that allow us to evaluate success as we go?\nMan: I like that idea. It might address the concerns of the more fiscally conservative members while still pushing the envelope on youth programming. \nWoman: Let\u2019s draft a proposal for that. We can highlight potential metrics for success too, to help sway those who are hesitant to commit to any funding increase right away.",
     "questions": [
       {
         "id": 1,
@@ -4175,12 +4255,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-56.mp3",
+    "audioFile": "part3-56.mp3"
   },
   {
     "title": "Community Centre Renovations Announcement",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. I'd like to take a moment to discuss the proposed renovations for our local community centre. As you know, the city has funnelled in some funds, but frankly, there's been a bit of a back-and-forth regarding how they should be spent. Woman: Yes, I've noticed that too. It's quite frustrating that we haven't settled on a clear plan yet. Man: Exactly. I mean, some folks think we should prioritize expanding the gym area, while others advocate for enhanced accessibility features. Woman: Right, not to mention the urgent need for better childcare facilities. Man 2: But do we really want to risk alienating any of these interest groups? Because the last thing we want is a divisive situation. Woman 2: I'm not entirely convinced we need more gym space. I mean, when was the last time you saw it packed? Man 2: Fair point, though some argue it’s about potential growth. Woman: Ultimately, we should aim for a balanced approach, incorporating various perspectives. Man: Agreed, it’s crucial we remember that our decisions impact the entire community. So, we'll hold another meeting next week to reassess and hopefully streamline this process. Don’t forget to bring your suggestions! Woman: And perhaps we can vote on some preliminary ideas, too? Man: Yes! Let's get the ball rolling. Thanks for your time, everyone.",
+    "passage": "Man: Good afternoon, everyone. I'd like to take a moment to discuss the proposed renovations for our local community centre. As you know, the city has funnelled in some funds, but frankly, there's been a bit of a back-and-forth regarding how they should be spent. Woman: Yes, I've noticed that too. It's quite frustrating that we haven't settled on a clear plan yet. Man: Exactly. I mean, some folks think we should prioritize expanding the gym area, while others advocate for enhanced accessibility features. Woman: Right, not to mention the urgent need for better childcare facilities. Man 2: But do we really want to risk alienating any of these interest groups? Because the last thing we want is a divisive situation. Woman 2: I'm not entirely convinced we need more gym space. I mean, when was the last time you saw it packed? Man 2: Fair point, though some argue it\u2019s about potential growth. Woman: Ultimately, we should aim for a balanced approach, incorporating various perspectives. Man: Agreed, it\u2019s crucial we remember that our decisions impact the entire community. So, we'll hold another meeting next week to reassess and hopefully streamline this process. Don\u2019t forget to bring your suggestions! Woman: And perhaps we can vote on some preliminary ideas, too? Man: Yes! Let's get the ball rolling. Thanks for your time, everyone.",
     "questions": [
       {
         "id": 1,
@@ -4248,12 +4330,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-57.mp3",
+    "audioFile": "part3-57.mp3"
   },
   {
     "title": "Urban Transit Plans in Toronto",
     "difficulty": "advanced",
-    "passage": "Man: Good afternoon, everyone. Thanks for joining us today to discuss the upcoming transit plans for Toronto. Now, I know many of you have mixed feelings about the proposed changes, but we should really consider the long-term benefits. \nWoman: Absolutely, but I'm not entirely convinced that reallocating funds from the downtown expansion to suburban areas is the right move. It feels a tad counterproductive, don’t you think?\nMan: Well, yes, it does seem a bit misplaced. But the data suggests that the suburbs are seeing a rise in population, so maybe it could ease congestion. \nWoman: Sure, but those urban areas still need attention! And let's not forget the ongoing issues with the subway delays — we can't just brush those aside. \nMan 2: Right, the delays have been problematic, but if we spread the resources too thin, we might end up with mediocre solutions everywhere. It’s a classic case of having to choose the lesser evil.\nWoman 2: I mean, couldn’t we phase this in? Maybe dedicate a portion of the budget for immediate subway issues while slowly rolling out the suburban enhancements?\nMan: That’s an interesting idea, but honestly, that could complicate things further. We would need extensive community feedback, which can be time-consuming. \nWoman: Well, time’s not exactly on our side. When it comes to urban planning, every delay can cost us and the city in the long run. \nMan: True, but let’s be sure we’re making decisions that resonate with the needs of all residents. It’s about striking that balance, right?",
+    "passage": "Man: Good afternoon, everyone. Thanks for joining us today to discuss the upcoming transit plans for Toronto. Now, I know many of you have mixed feelings about the proposed changes, but we should really consider the long-term benefits. \nWoman: Absolutely, but I'm not entirely convinced that reallocating funds from the downtown expansion to suburban areas is the right move. It feels a tad counterproductive, don\u2019t you think?\nMan: Well, yes, it does seem a bit misplaced. But the data suggests that the suburbs are seeing a rise in population, so maybe it could ease congestion. \nWoman: Sure, but those urban areas still need attention! And let's not forget the ongoing issues with the subway delays \u2014 we can't just brush those aside. \nMan 2: Right, the delays have been problematic, but if we spread the resources too thin, we might end up with mediocre solutions everywhere. It\u2019s a classic case of having to choose the lesser evil.\nWoman 2: I mean, couldn\u2019t we phase this in? Maybe dedicate a portion of the budget for immediate subway issues while slowly rolling out the suburban enhancements?\nMan: That\u2019s an interesting idea, but honestly, that could complicate things further. We would need extensive community feedback, which can be time-consuming. \nWoman: Well, time\u2019s not exactly on our side. When it comes to urban planning, every delay can cost us and the city in the long run. \nMan: True, but let\u2019s be sure we\u2019re making decisions that resonate with the needs of all residents. It\u2019s about striking that balance, right?",
     "questions": [
       {
         "id": 1,
@@ -4321,12 +4405,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-58.mp3",
+    "audioFile": "part3-58.mp3"
   },
   {
     "title": "Debate on Urban Development Policies",
     "difficulty": "advanced",
-    "passage": "Man: Alright, so let's dive into the new urban development proposal that just came across our desks. It’s been hailed as a game changer for downtown Toronto, but I’m not entirely convinced. \n\nWoman: Right, I mean the idea of creating more green spaces seems beneficial, but at what cost? I’ve seen the budget projections, and they're quite... optimistic. \n\nMan 2: Exactly! They’re proposing to reduce parking spaces without any real solution for the commuting issues we already face. Traffic congestion won't magically disappear. \n\nWoman 2: I hear you both. However, enhancing public transport infrastructure is part of the plan. They want to invest in a light rail that connects to the existing subway lines. But again, funding is a major question mark. \n\nMan: True, but that just sounds like they’re trying to dress up the issue. They can’t promise seamless integration if they haven't sorted out the financial aspects first.\n\nWoman: And don’t forget about the community pushback! Local businesses are concerned about losing foot traffic. \n\nMan 2: So, ultimately, we need a strategy that addresses these worries—balancing green initiatives and realistic transport solutions. Otherwise, we might end up with a half-baked plan that doesn't benefit anyone. \n\nWoman 2: We should definitely share these insights at the public consultation next week. It could be our chance to make some real changes even before the proposal goes to the city council.",
+    "passage": "Man: Alright, so let's dive into the new urban development proposal that just came across our desks. It\u2019s been hailed as a game changer for downtown Toronto, but I\u2019m not entirely convinced. \n\nWoman: Right, I mean the idea of creating more green spaces seems beneficial, but at what cost? I\u2019ve seen the budget projections, and they're quite... optimistic. \n\nMan 2: Exactly! They\u2019re proposing to reduce parking spaces without any real solution for the commuting issues we already face. Traffic congestion won't magically disappear. \n\nWoman 2: I hear you both. However, enhancing public transport infrastructure is part of the plan. They want to invest in a light rail that connects to the existing subway lines. But again, funding is a major question mark. \n\nMan: True, but that just sounds like they\u2019re trying to dress up the issue. They can\u2019t promise seamless integration if they haven't sorted out the financial aspects first.\n\nWoman: And don\u2019t forget about the community pushback! Local businesses are concerned about losing foot traffic. \n\nMan 2: So, ultimately, we need a strategy that addresses these worries\u2014balancing green initiatives and realistic transport solutions. Otherwise, we might end up with a half-baked plan that doesn't benefit anyone. \n\nWoman 2: We should definitely share these insights at the public consultation next week. It could be our chance to make some real changes even before the proposal goes to the city council.",
     "questions": [
       {
         "id": 1,
@@ -4385,7 +4471,7 @@
       },
       {
         "id": 6,
-        "question": "What are the speakers’ plans for the upcoming public consultation?",
+        "question": "What are the speakers\u2019 plans for the upcoming public consultation?",
         "options": [
           "A. To complain about the proposal.",
           "B. To ask for increased funding.",
@@ -4394,12 +4480,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-59.mp3",
+    "audioFile": "part3-59.mp3"
   },
   {
     "title": "Changes to the Downtown Transit System",
     "difficulty": "advanced",
-    "passage": "Man: Alright, everyone, I appreciate you coming on short notice. We're here to discuss the proposed changes to the downtown transit system. I know some of you have strong opinions on this. \nWoman: Well, I certainly do. It seems like every time they roll out a new plan, they fail to consider how it impacts actual commuters. \nMan: Right, I get that. And to be fair, the last survey indicated... what was it? Ah, nearly seventy percent wanted more reliable service, not just more routes. \nWoman: Exactly! But then they announce increased fares. Like, who thought that was a clever move? \nMan: I think they hope people will see it as a necessary evil to fund improvements. \nMan 2: Honestly, I’m not entirely convinced that’s the case. Improvements should come first before asking for more money, don’t you think? \nWoman 2: Sure, but they often weigh public satisfaction against budget constraints. That’s the crux of it—nothing ever fully aligns. \nMan: True, and we’ll need to address community feedback before anything gets finalized. So if anyone has suggestions, please consider the implications—especially on connectivity and accessibility. \nWoman: Right, it’s not just about expanding routes; we need to think about maintaining punctuality and reducing overcrowding. \nMan: Agreed. And I guess we’ll be circulating a revised proposal next week, but we really need to listen to everyone’s concerns this time. It’s crucial. \nWoman: Absolutely, otherwise we might be backtracking again, which no one wants. \nMan: Alright, that’s settled then. Thanks, everyone.",
+    "passage": "Man: Alright, everyone, I appreciate you coming on short notice. We're here to discuss the proposed changes to the downtown transit system. I know some of you have strong opinions on this. \nWoman: Well, I certainly do. It seems like every time they roll out a new plan, they fail to consider how it impacts actual commuters. \nMan: Right, I get that. And to be fair, the last survey indicated... what was it? Ah, nearly seventy percent wanted more reliable service, not just more routes. \nWoman: Exactly! But then they announce increased fares. Like, who thought that was a clever move? \nMan: I think they hope people will see it as a necessary evil to fund improvements. \nMan 2: Honestly, I\u2019m not entirely convinced that\u2019s the case. Improvements should come first before asking for more money, don\u2019t you think? \nWoman 2: Sure, but they often weigh public satisfaction against budget constraints. That\u2019s the crux of it\u2014nothing ever fully aligns. \nMan: True, and we\u2019ll need to address community feedback before anything gets finalized. So if anyone has suggestions, please consider the implications\u2014especially on connectivity and accessibility. \nWoman: Right, it\u2019s not just about expanding routes; we need to think about maintaining punctuality and reducing overcrowding. \nMan: Agreed. And I guess we\u2019ll be circulating a revised proposal next week, but we really need to listen to everyone\u2019s concerns this time. It\u2019s crucial. \nWoman: Absolutely, otherwise we might be backtracking again, which no one wants. \nMan: Alright, that\u2019s settled then. Thanks, everyone.",
     "questions": [
       {
         "id": 1,
@@ -4430,7 +4518,7 @@
           "A) They believe feedback has been disregarded in past surveys.",
           "B) They think the feedback process is efficient and effective.",
           "C) They are confident that the feedback will change plans significantly.",
-          "D) They feel it’s merely a formality without real impact."
+          "D) They feel it\u2019s merely a formality without real impact."
         ],
         "correct": 0
       },
@@ -4467,14 +4555,16 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part3-60.mp3",
+    "audioFile": "part3-60.mp3"
   },
   {
     "title": "Community Festival Announcement",
     "context": "Listeners will hear an announcement about an upcoming community festival, including details about activities and a schedule.",
     "audioFile": "part3-61.mp3",
     "duration": 120,
-    "passage": "Welcome everyone to the annual Maple City Community Festival! This year's festival will be held on Saturday, June 15th, at the City Park, starting at 10 AM. Join us for a day full of fun and activities for all ages. There will be live music, food trucks offering a variety of cuisines, and games for children. Don’t miss the pie-eating contest at noon, and the talent show that starts at 2 PM! Additionally, we’ll have local artists showcasing their work. The festival will conclude with a spectacular fireworks display at 9 PM. Remember to bring your family and friends! See you at the festival!",
+    "passage": "Welcome everyone to the annual Maple City Community Festival! This year's festival will be held on Saturday, June 15th, at the City Park, starting at 10 AM. Join us for a day full of fun and activities for all ages. There will be live music, food trucks offering a variety of cuisines, and games for children. Don\u2019t miss the pie-eating contest at noon, and the talent show that starts at 2 PM! Additionally, we\u2019ll have local artists showcasing their work. The festival will conclude with a spectacular fireworks display at 9 PM. Remember to bring your family and friends! See you at the festival!",
     "questions": [
       {
         "id": 1,
@@ -4544,7 +4634,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-61"
+    "id": "part3-61",
+    "audio": "/audio/listening-library/part3-61.mp3"
   },
   {
     "title": "Public Library Summer Hours",
@@ -4621,14 +4712,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-62"
+    "id": "part3-62",
+    "audio": "/audio/listening-library/part3-62.mp3"
   },
   {
     "title": "Community Gardening Program Announcement",
     "context": "Listeners will learn about a community gardening program launching soon.",
     "audioFile": "part3-63.mp3",
     "duration": 120,
-    "passage": "We are excited to announce the launch of our community gardening program here in Maplewood. This program will start on May 10th at the community park. Everyone is invited to join us every Saturday morning from 9 AM to 11 AM. This program is great for all ages, from children to seniors, and aims to promote healthy eating and environmental sustainability. Tools and seeds will be provided, but feel free to bring your own if you have them. For more information, please contact the community center or visit our website. Let’s grow together!",
+    "passage": "We are excited to announce the launch of our community gardening program here in Maplewood. This program will start on May 10th at the community park. Everyone is invited to join us every Saturday morning from 9 AM to 11 AM. This program is great for all ages, from children to seniors, and aims to promote healthy eating and environmental sustainability. Tools and seeds will be provided, but feel free to bring your own if you have them. For more information, please contact the community center or visit our website. Let\u2019s grow together!",
     "questions": [
       {
         "id": 1,
@@ -4698,7 +4790,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-63"
+    "id": "part3-63",
+    "audio": "/audio/listening-library/part3-63.mp3"
   },
   {
     "title": "Annual Charity Run Announcement",
@@ -4775,7 +4868,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-64"
+    "id": "part3-64",
+    "audio": "/audio/listening-library/part3-64.mp3"
   },
   {
     "title": "Local Wildlife Conservation Project",
@@ -4852,7 +4946,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-65"
+    "id": "part3-65",
+    "audio": "/audio/listening-library/part3-65.mp3"
   },
   {
     "title": "City Walking Tour Announcement",
@@ -4929,14 +5024,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-66"
+    "id": "part3-66",
+    "audio": "/audio/listening-library/part3-66.mp3"
   },
   {
     "title": "Holiday Festival Announcement",
     "context": "Listeners will learn about an upcoming holiday festival in the community.",
     "audioFile": "part3-67.mp3",
     "duration": 120,
-    "passage": "Hello everyone! It's that time of year again! We are excited to announce the Maple City Holiday Festival, happening from December 1st to December 24th. This year, the festival will feature live entertainment, festive foods, and fun activities for the whole family. The festival will take place at the downtown plaza and will be open daily from 5 PM to 10 PM. Make sure to check out the festive light displays and don’t miss the tree lighting ceremony on December 1st at 6 PM! We hope to see you there!",
+    "passage": "Hello everyone! It's that time of year again! We are excited to announce the Maple City Holiday Festival, happening from December 1st to December 24th. This year, the festival will feature live entertainment, festive foods, and fun activities for the whole family. The festival will take place at the downtown plaza and will be open daily from 5 PM to 10 PM. Make sure to check out the festive light displays and don\u2019t miss the tree lighting ceremony on December 1st at 6 PM! We hope to see you there!",
     "questions": [
       {
         "id": 1,
@@ -5006,14 +5102,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-67"
+    "id": "part3-67",
+    "audio": "/audio/listening-library/part3-67.mp3"
   },
   {
     "title": "Health Fair Announcement",
     "context": "Listeners will hear about an annual health fair that provides free health services.",
     "audioFile": "part3-68.mp3",
     "duration": 120,
-    "passage": "Good morning, everyone! We are pleased to announce the Annual Maple City Health Fair, taking place on Saturday, May 25th, from 10 AM to 3 PM at the Community Center. This event is a great opportunity to learn about various health services available to you, including blood pressure screenings, nutritional advice, and fitness demonstrations. Local health providers will be available to answer your questions and provide resources. Don’t miss this chance to improve your health and well-being! We look forward to seeing you there!",
+    "passage": "Good morning, everyone! We are pleased to announce the Annual Maple City Health Fair, taking place on Saturday, May 25th, from 10 AM to 3 PM at the Community Center. This event is a great opportunity to learn about various health services available to you, including blood pressure screenings, nutritional advice, and fitness demonstrations. Local health providers will be available to answer your questions and provide resources. Don\u2019t miss this chance to improve your health and well-being! We look forward to seeing you there!",
     "questions": [
       {
         "id": 1,
@@ -5083,14 +5180,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-68"
+    "id": "part3-68",
+    "audio": "/audio/listening-library/part3-68.mp3"
   },
   {
     "title": "Local Book Club Announcement",
     "context": "Listeners will hear about a book club starting up at the library.",
     "audioFile": "part3-69.mp3",
     "duration": 120,
-    "passage": "Hello everyone! We’re excited to announce a new book club starting at the Maple City Public Library on Tuesday, March 15th. The club will meet every two weeks at 6 PM. This is a wonderful opportunity for book lovers to discuss various genres and share their thoughts. Each month, we’ll choose a different book to read, and our first book will be 'The Great Gatsby.' Whether you are a lifelong reader or new to reading, everyone is welcome! To join, please register at the library front desk or call us. We hope to see you there!",
+    "passage": "Hello everyone! We\u2019re excited to announce a new book club starting at the Maple City Public Library on Tuesday, March 15th. The club will meet every two weeks at 6 PM. This is a wonderful opportunity for book lovers to discuss various genres and share their thoughts. Each month, we\u2019ll choose a different book to read, and our first book will be 'The Great Gatsby.' Whether you are a lifelong reader or new to reading, everyone is welcome! To join, please register at the library front desk or call us. We hope to see you there!",
     "questions": [
       {
         "id": 1,
@@ -5160,14 +5258,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-69"
+    "id": "part3-69",
+    "audio": "/audio/listening-library/part3-69.mp3"
   },
   {
     "title": "Environmental Workshop Announcement",
     "context": "Listeners will learn about an environmental workshop designed to promote sustainability.",
     "audioFile": "part3-70.mp3",
     "duration": 120,
-    "passage": "Attention, everyone! We are pleased to announce an Environmental Workshop taking place on Saturday, April 10th, from 1 PM to 4 PM at the Maplewood Community Center. This workshop aims to raise awareness about sustainable living and will cover topics such as recycling, composting, and energy conservation. Everyone is welcome to join, and materials will be provided. Please register by April 5th at the community center or online. Let’s work together to make a positive impact on our environment!",
+    "passage": "Attention, everyone! We are pleased to announce an Environmental Workshop taking place on Saturday, April 10th, from 1 PM to 4 PM at the Maplewood Community Center. This workshop aims to raise awareness about sustainable living and will cover topics such as recycling, composting, and energy conservation. Everyone is welcome to join, and materials will be provided. Please register by April 5th at the community center or online. Let\u2019s work together to make a positive impact on our environment!",
     "questions": [
       {
         "id": 1,
@@ -5237,14 +5336,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-70"
+    "id": "part3-70",
+    "audio": "/audio/listening-library/part3-70.mp3"
   },
   {
     "title": "Historical Exhibit Announcement",
     "context": "Listeners will learn about a new historical exhibit opening at a local museum.",
     "audioFile": "part3-71.mp3",
     "duration": 120,
-    "passage": "Attention all history enthusiasts! We are excited to announce a new exhibit opening at the Maple City Museum on Saturday, January 15th. The exhibit, titled 'The Evolution of Maple City,' will take you on a journey through our town's rich history. You'll explore artifacts, photographs, and interactive displays. The exhibit will run through March 15th, and museum hours are Tuesday to Sunday from 10 AM to 5 PM. Admission is free for children under 12 and only $5 for adults. We invite everyone to come and learn more about our community’s past!",
+    "passage": "Attention all history enthusiasts! We are excited to announce a new exhibit opening at the Maple City Museum on Saturday, January 15th. The exhibit, titled 'The Evolution of Maple City,' will take you on a journey through our town's rich history. You'll explore artifacts, photographs, and interactive displays. The exhibit will run through March 15th, and museum hours are Tuesday to Sunday from 10 AM to 5 PM. Admission is free for children under 12 and only $5 for adults. We invite everyone to come and learn more about our community\u2019s past!",
     "questions": [
       {
         "id": 1,
@@ -5314,14 +5414,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-71"
+    "id": "part3-71",
+    "audio": "/audio/listening-library/part3-71.mp3"
   },
   {
     "title": "New Technology Course Announcement",
     "context": "Listeners will be informed about a new technology course offered at the local community center.",
     "audioFile": "part3-72.mp3",
     "duration": 120,
-    "passage": "Greetings, residents! We are thrilled to announce a new technology course starting at the Maple City Community Center. The course will begin on Saturday, March 22nd, and will run for six weeks every Saturday from 2 PM to 4 PM. This course is ideal for beginners and will cover fundamental skills like using computers, internet navigation, and basic software applications. All materials will be provided, and registration is required by March 15th. Don’t miss this opportunity to enhance your tech skills!",
+    "passage": "Greetings, residents! We are thrilled to announce a new technology course starting at the Maple City Community Center. The course will begin on Saturday, March 22nd, and will run for six weeks every Saturday from 2 PM to 4 PM. This course is ideal for beginners and will cover fundamental skills like using computers, internet navigation, and basic software applications. All materials will be provided, and registration is required by March 15th. Don\u2019t miss this opportunity to enhance your tech skills!",
     "questions": [
       {
         "id": 1,
@@ -5391,7 +5492,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-72"
+    "id": "part3-72",
+    "audio": "/audio/listening-library/part3-72.mp3"
   },
   {
     "title": "Health Consultation Clinic Announcement",
@@ -5468,7 +5570,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-73"
+    "id": "part3-73",
+    "audio": "/audio/listening-library/part3-73.mp3"
   },
   {
     "title": "Cooking Class Announcement",
@@ -5545,7 +5648,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-74"
+    "id": "part3-74",
+    "audio": "/audio/listening-library/part3-74.mp3"
   },
   {
     "title": "Public Transport Safety Announcement",
@@ -5622,14 +5726,15 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-75"
+    "id": "part3-75",
+    "audio": "/audio/listening-library/part3-75.mp3"
   },
   {
     "title": "Local Sports Event Announcement",
     "context": "Listeners will hear about an upcoming local sports event.",
     "audioFile": "part3-76.mp3",
     "duration": 120,
-    "passage": "Attention, sports fans! We are excited to announce the upcoming Maple City Sports Festival, which will take place on Saturday, July 15th, at the local stadium. The event will feature a variety of sports competitions, including soccer, basketball, and track and field events. Everyone is welcome to come and support the teams as they compete for the trophy! Local food vendors will also be present, providing delicious meals for all attendees. Gates open at 9 AM, so don’t miss out on the action! We look forward to seeing you there!",
+    "passage": "Attention, sports fans! We are excited to announce the upcoming Maple City Sports Festival, which will take place on Saturday, July 15th, at the local stadium. The event will feature a variety of sports competitions, including soccer, basketball, and track and field events. Everyone is welcome to come and support the teams as they compete for the trophy! Local food vendors will also be present, providing delicious meals for all attendees. Gates open at 9 AM, so don\u2019t miss out on the action! We look forward to seeing you there!",
     "questions": [
       {
         "id": 1,
@@ -5699,12 +5804,13 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part3-76"
+    "id": "part3-76",
+    "audio": "/audio/listening-library/part3-76.mp3"
   },
   {
     "title": "Community Center Events",
     "difficulty": "beginner",
-    "passage": "Host: Welcome to the monthly announcements from the community center. Man: We have a lot of exciting events coming up! Woman: Yes, our first event is a free yoga class next Tuesday at 6 PM. Man: That’s right! It will be held in the main hall. Woman: And on Saturday, we are hosting a bake sale to raise funds for local charities. Man: The bake sale will start at 10 AM. Woman: Don’t forget to come early to get the best treats! Man: Finally, we have a movie night scheduled for next Friday at 7 PM. Woman: We will be showing a family-friendly film with snacks available. Host: We hope to see everyone at these events!",
+    "passage": "Host: Welcome to the monthly announcements from the community center. Man: We have a lot of exciting events coming up! Woman: Yes, our first event is a free yoga class next Tuesday at 6 PM. Man: That\u2019s right! It will be held in the main hall. Woman: And on Saturday, we are hosting a bake sale to raise funds for local charities. Man: The bake sale will start at 10 AM. Woman: Don\u2019t forget to come early to get the best treats! Man: Finally, we have a movie night scheduled for next Friday at 7 PM. Woman: We will be showing a family-friendly film with snacks available. Host: We hope to see everyone at these events!",
     "questions": [
       {
         "question": "When is the free yoga class?",
@@ -5768,12 +5874,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-077"
+    "id": "part3-077",
+    "audio": "/audio/listening-library/part3-77.mp3",
+    "audioFile": "part3-77.mp3"
   },
   {
     "title": "Library Opening Hours",
     "difficulty": "beginner",
-    "passage": "Narrator: Welcome to the public library announcement. Man: We are excited to share our new opening hours! Woman: Starting next week, the library will open from 9 AM to 8 PM from Monday to Friday. Man: On Saturdays, we will be open from 10 AM to 5 PM. Woman: And don’t forget, we are closed on Sundays. Man: We encourage everyone to visit us and check out our new books and resources. Woman: Thank you for your support!",
+    "passage": "Narrator: Welcome to the public library announcement. Man: We are excited to share our new opening hours! Woman: Starting next week, the library will open from 9 AM to 8 PM from Monday to Friday. Man: On Saturdays, we will be open from 10 AM to 5 PM. Woman: And don\u2019t forget, we are closed on Sundays. Man: We encourage everyone to visit us and check out our new books and resources. Woman: Thank you for your support!",
     "questions": [
       {
         "question": "What time does the library open on weekdays?",
@@ -5837,12 +5945,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-078"
+    "id": "part3-078",
+    "audio": "/audio/listening-library/part3-78.mp3",
+    "audioFile": "part3-78.mp3"
   },
   {
     "title": "City Park Renovation",
     "difficulty": "beginner",
-    "passage": "Host: Hello everyone! We have some exciting news about the city park. Man: The renovation of the park will start next month. Woman: That’s right! We will add new playground equipment and a walking path. Man: There will also be new picnic areas for families. Woman: The project is expected to be completed in three months. Man: We are looking forward to seeing everyone enjoy the new park!",
+    "passage": "Host: Hello everyone! We have some exciting news about the city park. Man: The renovation of the park will start next month. Woman: That\u2019s right! We will add new playground equipment and a walking path. Man: There will also be new picnic areas for families. Woman: The project is expected to be completed in three months. Man: We are looking forward to seeing everyone enjoy the new park!",
     "questions": [
       {
         "question": "When will the park renovation start?",
@@ -5906,12 +6016,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-079"
+    "id": "part3-079",
+    "audio": "/audio/listening-library/part3-79.mp3",
+    "audioFile": "part3-79.mp3"
   },
   {
     "title": "Farmers' Market",
     "difficulty": "beginner",
-    "passage": "Man: Hello everyone! We are excited to announce that the farmers' market will open this Saturday at 8 AM. Woman: Yes! It will be located at the town square. Man: The market will have fresh fruits, vegetables, and homemade goods. Woman: Don’t forget to bring your reusable bags! Man: The market will be open every Saturday until noon. Woman: We hope to see you all there!",
+    "passage": "Man: Hello everyone! We are excited to announce that the farmers' market will open this Saturday at 8 AM. Woman: Yes! It will be located at the town square. Man: The market will have fresh fruits, vegetables, and homemade goods. Woman: Don\u2019t forget to bring your reusable bags! Man: The market will be open every Saturday until noon. Woman: We hope to see you all there!",
     "questions": [
       {
         "question": "When does the farmers' market open?",
@@ -5975,7 +6087,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-080"
+    "id": "part3-080",
+    "audio": "/audio/listening-library/part3-80.mp3",
+    "audioFile": "part3-80.mp3"
   },
   {
     "title": "School Field Trip",
@@ -6044,7 +6158,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-081"
+    "id": "part3-081",
+    "audio": "/audio/listening-library/part3-81.mp3",
+    "audioFile": "part3-81.mp3"
   },
   {
     "title": "City Council Meeting",
@@ -6113,7 +6229,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-082"
+    "id": "part3-082",
+    "audio": "/audio/listening-library/part3-82.mp3",
+    "audioFile": "part3-82.mp3"
   },
   {
     "title": "Local Farmers' Market Announcement",
@@ -6182,7 +6300,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-083"
+    "id": "part3-083",
+    "audio": "/audio/listening-library/part3-83.mp3",
+    "audioFile": "part3-83.mp3"
   },
   {
     "title": "Library Extended Hours",
@@ -6251,12 +6371,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-084"
+    "id": "part3-084",
+    "audio": "/audio/listening-library/part3-84.mp3",
+    "audioFile": "part3-84.mp3"
   },
   {
     "title": "Public Transit Changes",
     "difficulty": "intermediate",
-    "passage": "Host: Good afternoon, everyone! We have an important update regarding public transit. Man: Starting next week, there will be changes to the bus schedules. Woman: What kind of changes? Man: We will be adding more routes to accommodate increased demand. Woman: That's beneficial for commuters! Man: Yes, and select routes will have extended hours, running until midnight on weekends. Woman: Will the prices change? Man: No, fares will remain the same. Woman: That’s reassuring. Man: Be sure to check the website for the updated schedules and routes. Thank you for your attention!",
+    "passage": "Host: Good afternoon, everyone! We have an important update regarding public transit. Man: Starting next week, there will be changes to the bus schedules. Woman: What kind of changes? Man: We will be adding more routes to accommodate increased demand. Woman: That's beneficial for commuters! Man: Yes, and select routes will have extended hours, running until midnight on weekends. Woman: Will the prices change? Man: No, fares will remain the same. Woman: That\u2019s reassuring. Man: Be sure to check the website for the updated schedules and routes. Thank you for your attention!",
     "questions": [
       {
         "question": "What is the main topic of the announcement?",
@@ -6320,12 +6442,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-085"
+    "id": "part3-085",
+    "audio": "/audio/listening-library/part3-85.mp3",
+    "audioFile": "part3-85.mp3"
   },
   {
     "title": "Winter Safety Tips",
     "difficulty": "intermediate",
-    "passage": "Narrator: Attention residents! With winter approaching, we have some important safety tips to share. Woman: That’s timely advice! Narrator: First, make sure to keep walkways and driveways clear of snow and ice. Man: Right, safety is key! Narrator: Second, ensure that your car is winter-ready with proper tires and antifreeze levels. Woman: What else should we consider? Narrator: Third, be mindful of winter weather warnings and avoid unnecessary travel during severe storms. Man: Great idea! Narrator: Lastly, remember to check on elderly neighbors to ensure they are safe and warm. Woman: These tips are really helpful. Narrator: Let’s all stay safe this winter!",
+    "passage": "Narrator: Attention residents! With winter approaching, we have some important safety tips to share. Woman: That\u2019s timely advice! Narrator: First, make sure to keep walkways and driveways clear of snow and ice. Man: Right, safety is key! Narrator: Second, ensure that your car is winter-ready with proper tires and antifreeze levels. Woman: What else should we consider? Narrator: Third, be mindful of winter weather warnings and avoid unnecessary travel during severe storms. Man: Great idea! Narrator: Lastly, remember to check on elderly neighbors to ensure they are safe and warm. Woman: These tips are really helpful. Narrator: Let\u2019s all stay safe this winter!",
     "questions": [
       {
         "question": "What is the purpose of the announcement?",
@@ -6378,7 +6502,7 @@
         "correct": 1
       },
       {
-        "question": "What is the speaker’s tone?",
+        "question": "What is the speaker\u2019s tone?",
         "options": [
           "Encouraging",
           "Worried",
@@ -6389,12 +6513,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-086"
+    "id": "part3-086",
+    "audio": "/audio/listening-library/part3-86.mp3",
+    "audioFile": "part3-86.mp3"
   },
   {
     "title": "Community Health Fair",
     "difficulty": "intermediate",
-    "passage": "Host: Hello everyone! We have exciting news about our upcoming Community Health Fair. Woman: What can we expect this year? Host: This year’s fair will take place next Sunday at the community center from 10 AM to 4 PM. Man: That’s a full day! Host: Yes, it will feature health screenings, free flu shots, and educational workshops. Woman: Will there be activities for kids? Host: Absolutely! There will be fun activities for children and healthy snacks available. Man: That sounds great! Host: We encourage everyone to come out and take advantage of the resources available. See you there!",
+    "passage": "Host: Hello everyone! We have exciting news about our upcoming Community Health Fair. Woman: What can we expect this year? Host: This year\u2019s fair will take place next Sunday at the community center from 10 AM to 4 PM. Man: That\u2019s a full day! Host: Yes, it will feature health screenings, free flu shots, and educational workshops. Woman: Will there be activities for kids? Host: Absolutely! There will be fun activities for children and healthy snacks available. Man: That sounds great! Host: We encourage everyone to come out and take advantage of the resources available. See you there!",
     "questions": [
       {
         "question": "What event is being announced?",
@@ -6458,7 +6584,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-087"
+    "id": "part3-087",
+    "audio": "/audio/listening-library/part3-87.mp3",
+    "audioFile": "part3-87.mp3"
   },
   {
     "title": "Volunteer Opportunities",
@@ -6527,12 +6655,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-088"
+    "id": "part3-088",
+    "audio": "/audio/listening-library/part3-88.mp3",
+    "audioFile": "part3-88.mp3"
   },
   {
     "title": "Community Recycling Program",
     "difficulty": "advanced",
-    "passage": "Narrator: Welcome everyone to our community announcement regarding our new recycling program. Man: Hello, I’m the community coordinator, and I’m here to discuss some exciting updates. Woman: That sounds great! What’s new? Man: Starting next month, we will be enhancing our recycling efforts. We will be introducing new bins across the city specifically for organic waste. Woman: That’s a great initiative! How will this affect the current recycling schedule? Man: Excellent question! The new organic bins will be collected every week, while the standard recycling will still be collected bi-weekly. Woman: Will residents need to separate their organic waste from their regular recycling? Man: Yes, residents will need to ensure that food scraps and yard waste are placed in the organic bins to facilitate composting. Woman: That sounds like a big change. Are there any penalties for not following the new guidelines? Man: Yes, there may be fines for contamination, so we encourage everyone to pay close attention to the guidelines we’ll be providing. Woman: Thank you for the information! I’m looking forward to participating in this program.",
+    "passage": "Narrator: Welcome everyone to our community announcement regarding our new recycling program. Man: Hello, I\u2019m the community coordinator, and I\u2019m here to discuss some exciting updates. Woman: That sounds great! What\u2019s new? Man: Starting next month, we will be enhancing our recycling efforts. We will be introducing new bins across the city specifically for organic waste. Woman: That\u2019s a great initiative! How will this affect the current recycling schedule? Man: Excellent question! The new organic bins will be collected every week, while the standard recycling will still be collected bi-weekly. Woman: Will residents need to separate their organic waste from their regular recycling? Man: Yes, residents will need to ensure that food scraps and yard waste are placed in the organic bins to facilitate composting. Woman: That sounds like a big change. Are there any penalties for not following the new guidelines? Man: Yes, there may be fines for contamination, so we encourage everyone to pay close attention to the guidelines we\u2019ll be providing. Woman: Thank you for the information! I\u2019m looking forward to participating in this program.",
     "questions": [
       {
         "question": "What is the main topic of the announcement?",
@@ -6596,12 +6726,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-089"
+    "id": "part3-089",
+    "audio": "/audio/listening-library/part3-89.mp3",
+    "audioFile": "part3-89.mp3"
   },
   {
     "title": "City Arts Festival Announcement",
     "difficulty": "advanced",
-    "passage": "Narrator: Attention everyone! We have a very special announcement regarding our upcoming city arts festival. Woman: Hi there! Can you give us some details? Man: Absolutely! The festival will take place over three days, starting June 15th through June 17th. Woman: That’s exciting! What activities can we expect? Man: There will be art displays, live music, food trucks, and workshops for all ages. Woman: Are there any fees to participate in these activities? Man: Most events are free, but some workshops may require a registration fee. Woman: Where is the festival being held? Man: It will be hosted in Riverside Park, which has plenty of space for everyone. Woman: Will there be any special guests? Man: Yes, we are expecting several local artists and musicians to join us! Don’t miss out on their performances.",
+    "passage": "Narrator: Attention everyone! We have a very special announcement regarding our upcoming city arts festival. Woman: Hi there! Can you give us some details? Man: Absolutely! The festival will take place over three days, starting June 15th through June 17th. Woman: That\u2019s exciting! What activities can we expect? Man: There will be art displays, live music, food trucks, and workshops for all ages. Woman: Are there any fees to participate in these activities? Man: Most events are free, but some workshops may require a registration fee. Woman: Where is the festival being held? Man: It will be hosted in Riverside Park, which has plenty of space for everyone. Woman: Will there be any special guests? Man: Yes, we are expecting several local artists and musicians to join us! Don\u2019t miss out on their performances.",
     "questions": [
       {
         "question": "What event is being announced?",
@@ -6665,12 +6797,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-090"
+    "id": "part3-090",
+    "audio": "/audio/listening-library/part3-90.mp3",
+    "audioFile": "part3-90.mp3"
   },
   {
     "title": "Public Transportation Improvements",
     "difficulty": "advanced",
-    "passage": "Narrator: Good evening everyone. We have an important announcement regarding public transportation in our city. Man: I’m the transit director, and today I’ll outline the improvements we’re implementing next month. Woman: Can you tell us what these improvements entail? Man: Certainly! We’re introducing more frequent bus and train services during peak hours. Woman: Will this affect ticket prices? Man: No, we are maintaining the current fares to ensure accessibility for all riders. Woman: That’s good to hear! What about the expansion of routes? Man: Great question! We’ll be adding new routes to underserved areas, allowing better access for residents. Woman: When can we expect these changes to take effect? Man: The planned changes will take effect on March 5th. Woman: Thank you for this essential information!",
+    "passage": "Narrator: Good evening everyone. We have an important announcement regarding public transportation in our city. Man: I\u2019m the transit director, and today I\u2019ll outline the improvements we\u2019re implementing next month. Woman: Can you tell us what these improvements entail? Man: Certainly! We\u2019re introducing more frequent bus and train services during peak hours. Woman: Will this affect ticket prices? Man: No, we are maintaining the current fares to ensure accessibility for all riders. Woman: That\u2019s good to hear! What about the expansion of routes? Man: Great question! We\u2019ll be adding new routes to underserved areas, allowing better access for residents. Woman: When can we expect these changes to take effect? Man: The planned changes will take effect on March 5th. Woman: Thank you for this essential information!",
     "questions": [
       {
         "question": "What is the main focus of the announcement?",
@@ -6734,7 +6868,9 @@
       }
     ],
     "part": 3,
-    "id": "part3-091"
+    "id": "part3-091",
+    "audio": "/audio/listening-library/part3-91.mp3",
+    "audioFile": "part3-91.mp3"
   },
   {
     "title": "Health and Safety Regulations Update",
@@ -6803,12 +6939,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-092"
+    "id": "part3-092",
+    "audio": "/audio/listening-library/part3-92.mp3",
+    "audioFile": "part3-92.mp3"
   },
   {
     "title": "Winter Safety Guidelines",
     "difficulty": "advanced",
-    "passage": "Narrator: Hello everyone, thank you for joining today’s session on winter safety. Woman: What are some key points we should be aware of? Man: The most important thing is to dress appropriately for the weather conditions. Woman: That’s crucial! What else should we consider? Man: It’s vital to be cautious of icy sidewalks and driveways. Woman: Are there tips for safe driving in winter? Man: Absolutely! Keep a safe distance from other vehicles and ensure your tires are winter-ready. Woman: What about emergency preparedness? Man: Great question! Make sure your car has an emergency kit, including blankets and food supplies. Woman: Thank you for all these essential tips!",
+    "passage": "Narrator: Hello everyone, thank you for joining today\u2019s session on winter safety. Woman: What are some key points we should be aware of? Man: The most important thing is to dress appropriately for the weather conditions. Woman: That\u2019s crucial! What else should we consider? Man: It\u2019s vital to be cautious of icy sidewalks and driveways. Woman: Are there tips for safe driving in winter? Man: Absolutely! Keep a safe distance from other vehicles and ensure your tires are winter-ready. Woman: What about emergency preparedness? Man: Great question! Make sure your car has an emergency kit, including blankets and food supplies. Woman: Thank you for all these essential tips!",
     "questions": [
       {
         "question": "What is the main topic of the session?",
@@ -6872,12 +7010,14 @@
       }
     ],
     "part": 3,
-    "id": "part3-093"
+    "id": "part3-093",
+    "audio": "/audio/listening-library/part3-93.mp3",
+    "audioFile": "part3-93.mp3"
   },
   {
     "title": "Library Renovation Announcement",
     "difficulty": "advanced",
-    "passage": "Narrator: Thank you for coming today. We’re excited to share updates about the library renovation. Man: Hello everyone! I’m the head librarian, and I’ll guide you through the changes. Woman: What kind of renovations are being made? Man: The renovation will include a new children’s area, a quiet study zone, and updated technology throughout. Woman: Sounds fantastic! When will the renovations begin? Man: The construction is set to start on April 1st and is expected to take about three months. Woman: Will the library be closed during this time? Man: Yes, but we’ll provide temporary services at the community center. Woman: That’s a great solution! How can residents stay updated on the progress? Man: We’ll have regular updates posted on our website and through social media channels.",
+    "passage": "Narrator: Thank you for coming today. We\u2019re excited to share updates about the library renovation. Man: Hello everyone! I\u2019m the head librarian, and I\u2019ll guide you through the changes. Woman: What kind of renovations are being made? Man: The renovation will include a new children\u2019s area, a quiet study zone, and updated technology throughout. Woman: Sounds fantastic! When will the renovations begin? Man: The construction is set to start on April 1st and is expected to take about three months. Woman: Will the library be closed during this time? Man: Yes, but we\u2019ll provide temporary services at the community center. Woman: That\u2019s a great solution! How can residents stay updated on the progress? Man: We\u2019ll have regular updates posted on our website and through social media channels.",
     "questions": [
       {
         "question": "What is the announcement about?",
@@ -6893,8 +7033,8 @@
         "question": "What new features will the library have after renovations?",
         "options": [
           "More books",
-          "A new café",
-          "Children’s area and study zone",
+          "A new caf\u00e9",
+          "Children\u2019s area and study zone",
           "Extended hours"
         ],
         "correct": 2
@@ -6941,6 +7081,8 @@
       }
     ],
     "part": 3,
-    "id": "part3-094"
+    "id": "part3-094",
+    "audio": "/audio/listening-library/part3-94.mp3",
+    "audioFile": "part3-94.mp3"
   }
 ]

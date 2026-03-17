@@ -42,7 +42,7 @@ export function CommunityPopup() {
       padding: '1rem', animation: 'fadeIn 0.3s ease',
     }} onClick={dismiss}>
       <div onClick={e => e.stopPropagation()} style={{
-        background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+        background: 'linear-gradient(135deg, #1e293b 0%, #1b1f2a 100%)',
         border: '1px solid rgba(255,255,255,0.1)',
         borderRadius: '20px', maxWidth: '400px', width: '100%',
         padding: '2rem', position: 'relative',

@@ -30,6 +30,7 @@ model User {
   writingAnalyses WritingAnalysis[]
   activityLogs    ActivityLog[]
   dailyUsages     DailyUsage[]
+  userFeedback    UserFeedback?
   
   @@map("users")
 }
@@ -180,9 +181,12 @@ model UserOnboarding {
   userId    String   @unique  // Supabase auth user.id
   completed Boolean  @default(false)
   targetCLB Int?
-  goal      String?  // 'immigration' | 'work' | 'study' | 'improvement'
+  goal      String?  // 'immigration' | 'education' | 'job' | 'professional' | 'practice'
   experience String? // 'first-time' | 'took-once' | 'multiple-times' | 'preparing'
-  timeline  String?  // '1-month' | '2-3-months' | '3-6-months' | 'flexible'
+  timeline  String?  // '2weeks' | '1-2months' | '3months' | 'notbooked'
+  source    String?  // 'tiktok' | 'instagram' | 'facebook' | 'youtube' | 'google' | 'friend' | 'reddit' | 'other'
+  focusSkills String? // comma-separated: 'listening,reading,writing,speaking'
+  dailyMinutes String? // '5' | '15' | '30' | '60'
   assessmentScores Json? // { reading: number, listening: number, writing: number, speaking: number }
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -230,10 +234,11 @@ model DailyUsage {
   id        String   @id @default(cuid())
   userId    String
   date      String   // "YYYY-MM-DD"
+  category  String   @default("practice") // "practice" | "drills"
   count     Int      @default(0)
   user      User     @relation(fields: [userId], references: [id])
 
-  @@unique([userId, date])
+  @@unique([userId, date, category])
   @@map("daily_usage")
 }
 
@@ -344,4 +349,31 @@ model SkillScore {
 
   @@map("skill_scores")
   @@index([userId, skill])
+}
+
+model UserFeedback {
+  id        String   @id @default(uuid())
+  userId    String   @unique
+  challenge String
+  suggestion String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_feedback")
+}
+
+model StreakData {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  currentStreak   Int      @default(0)
+  longestStreak   Int      @default(0)
+  lastPracticeAt  DateTime?
+  freezesUsed     Int      @default(0)
+  freezeLastReset DateTime @default(now())  // Resets weekly
+  streakFrozenAt  DateTime?  // When auto-freeze was applied
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("streak_data")
 }

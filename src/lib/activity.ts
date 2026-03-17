@@ -4,8 +4,10 @@ const prisma = new PrismaClient();
 
 /**
  * Log activity points for the leaderboard.
- * Reading/Listening question = 1 pt
- * Writing/Speaking submission = 2 pts
+ * Reading/Listening = 1 pt per exercise
+ * Speaking = 2 pts per submission
+ * Writing = 3 pts per submission
+ * Citizenship = 2 pts per lesson
  */
 export async function logActivity(
   userId: string,
@@ -15,16 +17,11 @@ export async function logActivity(
   const points = type === 'writing' ? 3 : type === 'speaking' ? 2 : type === 'citizenship' ? 2 : 1;
 
   try {
-    // Create individual logs for accurate tracking
-    const data = Array.from({ length: count }, () => ({
-      userId,
-      type,
-      points,
-    }));
-
-    await prisma.activityLog.createMany({ data });
+    // One log per exercise/submission (not per question)
+    await prisma.activityLog.create({
+      data: { userId, type, points },
+    });
   } catch (error) {
     console.error('Failed to log activity:', error);
-    // Don't throw — activity logging should never break the main flow
   }
 }

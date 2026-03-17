@@ -51,25 +51,32 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { completed, targetCLB, goal, experience, timeline, assessmentScores } = body;
+    const { completed, targetCLB, goal, experience, timeline, assessmentScores, source, focusSkills, dailyMinutes, testDate } = body;
 
     await prisma.userOnboarding.upsert({
       where: { userId },
       create: {
         userId,
-        completed: completed || false,
+        completed: true,
         targetCLB: targetCLB || null,
         goal: goal || null,
         experience: experience || null,
-        timeline: timeline || null,
+        timeline: timeline || testDate || null,
+        source: source || null,
+        focusSkills: Array.isArray(focusSkills) ? focusSkills.join(',') : (focusSkills || null),
+        dailyMinutes: dailyMinutes || null,
         assessmentScores: assessmentScores || null,
       },
       update: {
-        ...(completed !== undefined && { completed }),
-        ...(targetCLB !== undefined && { targetCLB }),
+        completed: true,
         ...(goal !== undefined && { goal }),
+        ...(targetCLB !== undefined && { targetCLB }),
         ...(experience !== undefined && { experience }),
         ...(timeline !== undefined && { timeline }),
+        ...(testDate !== undefined && { timeline: testDate }),
+        ...(source !== undefined && { source }),
+        ...(focusSkills !== undefined && { focusSkills: Array.isArray(focusSkills) ? focusSkills.join(',') : focusSkills }),
+        ...(dailyMinutes !== undefined && { dailyMinutes }),
         ...(assessmentScores !== undefined && { assessmentScores }),
       }
     });

@@ -7,6 +7,12 @@
 @use 'sass:map';
 @use 'design-system' as ds;
 
+@keyframes metallicSheen {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 // ============================================
 // 🔄 RESET & BASE
 // ============================================
@@ -24,6 +30,10 @@ html {
 body {
   font-family: ds.$font-body;
   background-color: var(--bg-deep, #{ds.$bg-deep});
+  background-image: 
+    linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.02) 45%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0.02) 55%, transparent 60%);
+  background-size: 400% 400%;
+  animation: metallicSheen 12s ease-in-out infinite;
   color: var(--text-primary, #{ds.$text-primary});
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,8 +52,8 @@ body {
   --bg-primary: #{ds.$bg-primary};
   --bg-secondary: #{ds.$bg-secondary};
   --bg-card: #{ds.$bg-card};
-  --bg-card-hover: #232938;
-  --bg-elevated: #2a3142;
+  --bg-card-hover: #2d3242;
+  --bg-elevated: #304058;
 
   --text-primary: #{ds.$text-primary};
   --text-secondary: #{ds.$text-secondary};

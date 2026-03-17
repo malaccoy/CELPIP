@@ -103,10 +103,10 @@ export default function HomePage() {
   ];
 
   const stats = [
-    { value: '460+', label: 'Listening Passages', sub: 'with audio' },
-    { value: '290+', label: 'Reading Passages', sub: 'all parts' },
-    { value: '222+', label: 'Writing Prompts', sub: 'Task 1 & 2' },
-    { value: '∞', label: 'AI Exercises', sub: 'Pro feature' },
+    { value: '3,900+', label: 'Practice Exercises', sub: 'all 4 skills' },
+    { value: 'AI', label: 'Instant Feedback', sub: 'writing & speaking' },
+    { value: '150+', label: 'Students', sub: 'this month' },
+    { value: '9+', label: 'Target Score', sub: 'CLB ready' },
   ];
 
   const testimonials = [
@@ -157,64 +157,44 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <div className={styles.badge}>
             <Sparkles size={14} />
-            <span>🇨🇦 #1 AI-Powered CELPIP Prep Platform</span>
+            <span>🇨🇦 #1 AI-Powered CELPIP Prep</span>
           </div>
 
           <h1 className={styles.title}>
-            Stop Retaking CELPIP.
-            <span className={styles.titleAccent}> Pass It The First Time.</span>
+            Score <span className={styles.titleAccent}>9+ on CELPIP</span>
+            <br />In Just 30 Days
           </h1>
 
           <p className={styles.subtitle}>
-            Free AI coaching that tells you exactly what to fix in your Writing and Speaking — so you stop wasting $300 on re-tests. Used by students targeting CLB 7-12.
+            AI coaches your Writing & Speaking in real-time. Know your weak spots. Fix them before test day.
           </p>
 
-          {/* Quick-Start Buttons — Zero Friction */}
-          <div className={styles.quickStart}>
-            <p className={styles.quickStartLabel}>👇 Try a free exercise right now — no sign-up needed:</p>
-            <div className={styles.quickStartGrid}>
-              <Link href="/ai-coach" className={styles.quickBtn}>
-                <PenLine size={18} />
-                <span>Write an Email</span>
-              </Link>
-              <Link href="/ai-coach" className={styles.quickBtn}>
-                <Mic size={18} />
-                <span>Speaking Practice</span>
-              </Link>
-              <Link href="/ai-coach" className={styles.quickBtn}>
-                <BookOpen size={18} />
-                <span>Reading Quiz</span>
-              </Link>
-              <Link href="/ai-coach" className={styles.quickBtn}>
-                <Headphones size={18} />
-                <span>Listening Test</span>
-              </Link>
-            </div>
-          </div>
-
           <div className={styles.heroCtas}>
-            <Link href="/dashboard" className={styles.ctaPrimary}>
-              <span>Start Free Assessment</span>
+            <Link href="/onboarding" className={styles.ctaPrimary}>
+              <span>Start Free Practice Now</span>
               <ArrowRight size={20} />
-            </Link>
-            <Link href="/pricing" className={styles.ctaSecondary}>
-              <span>See Pro Features</span>
             </Link>
           </div>
 
           <div className={styles.heroTrust}>
             <div className={styles.trustItem}>
               <CheckCircle2 size={16} />
-              <span>No credit card required</span>
+              <span>No credit card needed</span>
             </div>
             <div className={styles.trustItem}>
               <Users size={16} />
-              <span>160+ students practicing this week</span>
+              <span>150+ students practicing</span>
             </div>
             <div className={styles.trustItem}>
-              <CheckCircle2 size={16} />
-              <span>Built for Canadian immigration</span>
+              <Shield size={16} />
+              <span>3,900+ exercises available</span>
             </div>
+          </div>
+
+          {/* Star rating */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.75rem', opacity: 0.85 }}>
+            <span style={{ color: '#f59e0b', fontSize: '1.1rem', letterSpacing: 2 }}>★★★★★</span>
+            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>Loved by CELPIP students across Canada</span>
           </div>
         </div>
       </section>
@@ -286,35 +266,25 @@ export default function HomePage() {
       {/* ─── Skills Grid ─── */}
       <section className={styles.skillsSection}>
         <div className={styles.sectionHeader}>
-          <h2>Practice All 4 CELPIP Modules</h2>
-          <p>Comprehensive content for every section of the exam — most of it completely free.</p>
+          <h2>Practice All 4 CELPIP Skills</h2>
+          <p>AI-powered exercises for every section of the exam</p>
         </div>
 
         <div className={styles.skillsGrid}>
-          {skills.map((skill, index) => {
+          {skills.map((skill) => {
             const IconComponent = skill.icon;
             return (
               <Link 
                 key={skill.id}
                 href={skill.path}
                 onClick={(e) => handleSkillClick(e, skill.path)}
-                className={styles.skillCard}
-                style={{ '--delay': `${index * 80}ms` } as React.CSSProperties}
+                className={`${styles.skillCard} ${styles[skill.id]}`}
               >
-                <div className={`${styles.skillIcon} ${styles[skill.id]}`}>
-                  <IconComponent size={24} strokeWidth={2} />
+                <div className={styles.skillIcon}>
+                  <IconComponent size={28} strokeWidth={2} />
                 </div>
-                
-                <div className={styles.skillContent}>
-                  <h3>{skill.title}</h3>
-                  <p>{skill.desc}</p>
-                  <span className={styles.skillStats}>{skill.stats}</span>
-                  <span className={styles.skillFree}>🆓 {skill.free}</span>
-                </div>
-
-                <div className={styles.skillArrow}>
-                  <ArrowRight size={18} />
-                </div>
+                <h3>{skill.title}</h3>
+                <p className={styles.skillStats}>{skill.stats}</p>
               </Link>
             );
           })}

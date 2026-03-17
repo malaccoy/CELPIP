@@ -3,15 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, GraduationCap, User, Trophy, BookOpen } from 'lucide-react';
+import { Home, GraduationCap, Crown, Trophy, BookOpen } from 'lucide-react';
 import styles from '@/styles/BottomNav.module.scss';
 
 const navItems = [
   { href: '/', icon: Home, label: 'Home' },
   { href: '/guides', icon: GraduationCap, label: 'Guides' },
   { href: '/rankings', icon: Trophy, label: 'Rankings' },
-  { href: '/english', icon: BookOpen, label: 'Citizenship' },
-  { href: '/profile', icon: User, label: 'Profile' },
+  // { href: '/english', icon: BookOpen, label: 'Citizenship' },
+  { href: '/pricing', icon: Crown, label: 'Pricing' },
 ];
 
 export default function BottomNav() {

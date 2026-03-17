@@ -12,6 +12,9 @@ import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/AIPractice.module.scss';
 import { analytics } from '@/lib/analytics';
+import dynamic from 'next/dynamic';
+
+const MobileTopBar = dynamic(() => import('@/components/MobileTopBar'), { ssr: false });
 
 // ─── Config ──────────────────────────────────────
 type Section = 'reading' | 'writing' | 'listening' | 'speaking';
@@ -78,8 +81,27 @@ export default function AIPracticePage() {
   const { performances, loaded: adaptiveLoaded, getLevelForSection, recordAttempt } = useAdaptiveDifficulty();
 
   const router = useRouter();
-  const [section, setSection] = useState<Section>('reading');
-  const [partOrTask, setPartOrTask] = useState(PARTS.reading[0].id);
+  
+  // Read skill from URL query param
+  const searchParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const initialSkill = searchParams?.get('skill') as Section | null;
+  
+  const [section, setSection] = useState<Section>(
+    initialSkill && ['reading', 'writing', 'listening', 'speaking'].includes(initialSkill) ? initialSkill : 'reading'
+  );
+  const [partOrTask, setPartOrTask] = useState(
+    PARTS[initialSkill && ['reading', 'writing', 'listening', 'speaking'].includes(initialSkill) ? initialSkill : 'reading'][0].id
+  );
+
+  // React to URL skill param on navigation
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const skill = params.get('skill') as Section | null;
+    if (skill && ['reading', 'writing', 'listening', 'speaking'].includes(skill)) {
+      setSection(skill);
+      setPartOrTask(PARTS[skill][0].id);
+    }
+  }, []);
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
   const [autoMode, setAutoMode] = useState(true);
   const [sessionScores, setSessionScores] = useState<Record<string, { correct: number; total: number }>>({});
@@ -187,6 +209,16 @@ export default function AIPracticePage() {
       if (res.ok) {
         const data = await res.json();
         setSpeakingFeedback(data);
+        // Save speaking score to session scores for summary
+        if (data.score) {
+          setSessionScores(prev => ({
+            ...prev,
+            [partOrTask]: { correct: data.score, total: 12 }
+          }));
+        }
+        // Track exercise count for feedback modal
+        const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
+        localStorage.setItem('exercise-count', cnt.toString());
         // Log speaking activity for leaderboard
         fetch('/api/log-activity', {
           method: 'POST',
@@ -252,14 +284,18 @@ export default function AIPracticePage() {
     setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null);
     resetQuiz();
     if (autoMode && adaptiveLoaded) {
-      setDifficulty(getLevelForSection(s));
+      let level = getLevelForSection(s);
+      if (level === 'advanced' && !isPro) level = 'intermediate';
+      setDifficulty(level);
     }
   };
 
   // Auto-set difficulty on first load
   useEffect(() => {
     if (autoMode && adaptiveLoaded) {
-      setDifficulty(getLevelForSection(section));
+      let level = getLevelForSection(section);
+      if (level === 'advanced' && !isPro) level = 'intermediate';
+      setDifficulty(level);
     }
   }, [adaptiveLoaded]);
 
@@ -497,6 +533,15 @@ export default function AIPracticePage() {
       setExercise(ex);
       incrementUsage();
 
+      // Auto-start prep timer for speaking exercises
+      if (section === 'speaking') {
+        setSpeakingPhase('prep');
+        setSpeakingFeedback(null);
+        setAudioBlob(null);
+        setAudioUrl(null);
+        setCountdown(ex?.prepTimeSeconds || 30);
+      }
+
       // Track topic to avoid repeats (title + scenario for stronger dedup)
       if (data.exercise?.title) {
         const topicDesc = data.exercise.title + (data.exercise.scenario ? ': ' + data.exercise.scenario.substring(0, 80) : '');
@@ -566,11 +611,14 @@ export default function AIPracticePage() {
         [partOrTask]: { correct, total }
       }));
       analytics.exerciseCompleted(section, Math.round((correct/total)*100));
-      // Log activity for leaderboard
+      // Track exercise count for feedback modal trigger
+      const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
+      localStorage.setItem('exercise-count', cnt.toString());
+      // Log activity for leaderboard (1 per exercise, not per question)
       fetch('/api/log-activity', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: section, count: total }),
+        body: JSON.stringify({ type: section, count: 1 }),
       }).catch(() => {});
     }
   };
@@ -584,10 +632,45 @@ export default function AIPracticePage() {
     return { correct, total };
   };
 
+  const [isMobileView, setIsMobileView] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobileView(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  // Hide global header on mobile (same approach as MobileDashboard)
+  useEffect(() => {
+    if (!isMobileView) return;
+    const header = document.querySelector('header') as HTMLElement;
+    const sidebar = document.querySelector('aside, [class*="sidebar"]') as HTMLElement;
+    const fab = document.querySelector('[class*="fab"], [class*="FAB"]') as HTMLElement;
+    const mainContainer = document.querySelector('[class*="container"]') as HTMLElement;
+    const mainContent = document.querySelector('main') as HTMLElement;
+
+    const els = [header, sidebar, fab].filter(Boolean);
+    els.forEach(el => { el.style.display = 'none'; });
+    if (mainContainer) { mainContainer.style.paddingTop = '0'; }
+    if (mainContent) { mainContent.style.padding = '0'; mainContent.style.maxWidth = '100%'; }
+
+    return () => {
+      els.forEach(el => { el.style.display = ''; });
+      if (mainContainer) { mainContainer.style.paddingTop = ''; }
+      if (mainContent) { mainContent.style.padding = ''; mainContent.style.maxWidth = ''; }
+    };
+  }, [isMobileView]);
+
   // ─── Render ────────────────────────────────────
   if (planLoading) return null;
 
   return (
+    <>
+    {isMobileView && (
+      <div style={{ position: 'sticky', top: 0, zIndex: 50, background: '#1b1f2a' }}>
+        <MobileTopBar />
+      </div>
+    )}
     <div className={styles.container}>
       {/* Upgrade Modal */}
       {showUpgradeModal && (
@@ -598,9 +681,9 @@ export default function AIPracticePage() {
           padding: '1rem',
         }} onClick={() => setShowUpgradeModal(false)}>
           <div onClick={e => e.stopPropagation()} style={{
-            background: 'linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%)',
+            background: 'linear-gradient(135deg, #1e1b4b 0%, #1b1f2a 100%)',
             border: '1px solid rgba(139,92,246,0.3)',
-            borderRadius: 24, padding: '2rem', maxWidth: 400, width: '100%',
+            borderRadius: 24, padding: '2rem', maxWidth: 420, width: '100%',
             textAlign: 'center', position: 'relative',
             boxShadow: '0 25px 60px rgba(0,0,0,0.5), 0 0 80px rgba(139,92,246,0.15)',
           }}>
@@ -608,57 +691,83 @@ export default function AIPracticePage() {
             <h2 style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 700, margin: '0 0 0.5rem' }}>
               Daily Limit Reached
             </h2>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0 0 1.2rem' }}>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0 0 1rem' }}>
               You've completed your <strong style={{ color: '#a78bfa' }}>3 free exercises</strong> for today. 
-              Upgrade to Pro for unlimited practice, AI feedback, and mock exams.
+              Upgrade to Pro for unlimited practice and mock exams.
             </p>
+            {/* Countdown */}
             <div style={{
-              background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)',
-              borderRadius: 16, padding: '1rem', marginBottom: '1.2rem',
+              background: 'rgba(255,255,255,0.05)', borderRadius: 12, padding: '0.6rem 1rem',
+              marginBottom: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
             }}>
-              <div style={{ color: '#fbbf24', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem' }}>
-                🎉 Launch Offer
-              </div>
-              <div style={{ color: '#fff', fontSize: '1.8rem', fontWeight: 800 }}>
-                CA$17.49<span style={{ fontSize: '0.9rem', fontWeight: 400, color: 'rgba(255,255,255,0.5)' }}>/mo</span>
-              </div>
-              <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', textDecoration: 'line-through' }}>
-                CA$24.99/mo
-              </div>
-              <div style={{ color: '#34d399', fontSize: '0.78rem', fontWeight: 600, marginTop: '0.3rem' }}>
-                30% OFF with code WELCOME30
-              </div>
+              <Clock size={14} style={{ color: 'rgba(255,255,255,0.4)' }} />
+              <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.82rem' }}>
+                Next free exercises in{' '}
+                <strong style={{ color: '#fbbf24' }}>
+                  {(() => {
+                    const now = new Date();
+                    const pst = new Date(now.toLocaleString('en-US', { timeZone: 'America/Vancouver' }));
+                    const midnight = new Date(pst);
+                    midnight.setDate(midnight.getDate() + 1);
+                    midnight.setHours(0, 0, 0, 0);
+                    const diff = midnight.getTime() - pst.getTime();
+                    const h = Math.floor(diff / 3600000);
+                    const m = Math.floor((diff % 3600000) / 60000);
+                    return `${h}h ${m}m`;
+                  })()}
+                </strong>
+              </span>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-              <button onClick={async () => {
-                try {
-                  analytics.upgradeClicked('monthly', 'upgrade_modal');
-                  const res = await fetch('/api/stripe/checkout', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ plan: 'monthly', promoCode: 'WELCOME30' }),
-                  });
-                  const data = await res.json();
-                  if (data.url) window.location.href = data.url;
-                  else window.location.href = '/pricing';
-                } catch { window.location.href = '/pricing'; }
-              }} style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
-                padding: '0.9rem 1.5rem', background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
-                borderRadius: 14, color: '#fff', fontWeight: 700, fontSize: '1rem',
-                textDecoration: 'none', border: 'none', cursor: 'pointer',
-                boxShadow: '0 8px 24px rgba(139,92,246,0.4)',
-                transition: 'transform 0.2s', width: '100%',
-              }}>
-                🚀 Upgrade to Pro
-              </button>
-              <button onClick={() => setShowUpgradeModal(false)} style={{
-                padding: '0.6rem', background: 'transparent', border: 'none',
-                color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', cursor: 'pointer',
-              }}>
-                Maybe later
-              </button>
+            {/* Plan buttons */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.8rem' }}>
+              {[
+                { plan: 'weekly', label: '1 Week', price: 'CA$9.99', sub: '/week', color: '#6366f1' },
+                { plan: 'monthly', label: '1 Month', price: 'CA$29.99', sub: '/month', badge: null, color: '#8b5cf6' },
+                { plan: 'quarterly', label: '3 Months', price: 'CA$59.99', sub: '/3 months', badge: 'Most Popular', color: '#7c3aed' },
+                { plan: 'annual', label: '1 Year', price: 'CA$149.99', sub: '/year', badge: 'Best Value', color: '#6d28d9' },
+              ].map((p) => (
+                <button key={p.plan} onClick={async () => {
+                  try {
+                    analytics.upgradeClicked(p.plan, 'upgrade_modal');
+                    const res = await fetch('/api/stripe/checkout', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ plan: p.plan }),
+                    });
+                    const data = await res.json();
+                    if (data.url) window.location.href = data.url;
+                    else window.location.href = '/pricing';
+                  } catch { window.location.href = '/pricing'; }
+                }} style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                  padding: '0.85rem 1.2rem',
+                  background: p.badge ? `linear-gradient(135deg, ${p.color}, ${p.color}dd)` : 'rgba(255,255,255,0.06)',
+                  border: p.badge ? 'none' : '1px solid rgba(255,255,255,0.1)',
+                  borderRadius: 14, color: '#fff', cursor: 'pointer',
+                  transition: 'transform 0.15s, background 0.2s', width: '100%',
+                  boxShadow: p.badge ? `0 6px 20px ${p.color}44` : 'none',
+                  position: 'relative',
+                }}>
+                  <div style={{ textAlign: 'left' }}>
+                    <div style={{ fontWeight: 700, fontSize: '0.95rem' }}>{p.label}</div>
+                    {p.badge && <div style={{
+                      fontSize: '0.65rem', fontWeight: 700, color: '#fbbf24',
+                      textTransform: 'uppercase', letterSpacing: '0.5px',
+                    }}>{p.badge}</div>}
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <div style={{ fontWeight: 800, fontSize: '1.1rem' }}>{p.price}</div>
+                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)' }}>{p.sub}</div>
+                  </div>
+                </button>
+              ))}
             </div>
+            <button onClick={() => setShowUpgradeModal(false)} style={{
+              padding: '0.6rem', background: 'transparent', border: 'none',
+              color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', cursor: 'pointer',
+            }}>
+              Maybe later
+            </button>
           </div>
         </div>
       )}
@@ -721,7 +830,9 @@ export default function AIPracticePage() {
             onClick={() => {
               setAutoMode(!autoMode);
               if (!autoMode && adaptiveLoaded) {
-                setDifficulty(getLevelForSection(section));
+                let level = getLevelForSection(section);
+                if (level === 'advanced' && !isPro) level = 'intermediate';
+                setDifficulty(level);
               }
             }}
           >
@@ -740,17 +851,23 @@ export default function AIPracticePage() {
           </div>
         )}
         <div className={styles.difficultyOptions}>
-          {DIFFICULTIES.map(d => (
-            <div
-              key={d.id}
-              className={difficulty === d.id ? styles.difficultyActive : styles.difficultyOption}
-              onClick={() => { setAutoMode(false); setDifficulty(d.id); }}
-            >
-              <span className={styles.difficultyEmoji}>{d.emoji}</span>
-              <span className={styles.difficultyLabel}>{d.label}</span>
-              <span className={styles.difficultyDesc}>{d.desc}</span>
-            </div>
-          ))}
+          {DIFFICULTIES.map(d => {
+            const locked = d.id === 'advanced' && !isPro;
+            return (
+              <div
+                key={d.id}
+                className={`${difficulty === d.id ? styles.difficultyActive : styles.difficultyOption} ${locked ? styles.difficultyLocked : ''}`}
+                onClick={() => {
+                  if (locked) { router.push('/pricing'); return; }
+                  setAutoMode(false); setDifficulty(d.id);
+                }}
+              >
+                <span className={styles.difficultyEmoji}>{locked ? '🔒' : d.emoji}</span>
+                <span className={styles.difficultyLabel}>{d.label}</span>
+                <span className={styles.difficultyDesc}>{locked ? 'Pro Only' : d.desc}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -1269,7 +1386,51 @@ export default function AIPracticePage() {
                       </div>
 
                       {/* Detailed Scores */}
-                      {speakingFeedback.detailedFeedback && (
+                      {!isPro && (
+                        <div style={{ position: 'relative', marginTop: '0.5rem' }}>
+                          <div style={{ filter: 'blur(6px)', pointerEvents: 'none', userSelect: 'none' }}>
+                            <div style={{ background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '1.2rem' }}>
+                              <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>📊 Detailed Scores</h4>
+                              <p style={{ color: 'rgba(255,255,255,0.5)' }}>Content: 7/12 · Vocabulary: 6/12 · Fluency: 5/12 · Structure: 6/12</p>
+                            </div>
+                            <div style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
+                              <h4 style={{ color: '#fbbf24', margin: 0, fontSize: '0.95rem' }}>⚠️ Grammar Corrections</h4>
+                              <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>3 corrections found...</p>
+                            </div>
+                            <div style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
+                              <h4 style={{ color: '#34d399', margin: 0, fontSize: '0.95rem' }}>💡 Vocabulary Upgrades</h4>
+                              <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>2 suggestions available...</p>
+                            </div>
+                            <div style={{ background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
+                              <h4 style={{ color: '#60a5fa', margin: 0, fontSize: '0.95rem' }}>🌟 Improved Version</h4>
+                              <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>See how a native speaker would answer...</p>
+                            </div>
+                          </div>
+                          <div style={{
+                            position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column',
+                            alignItems: 'center', justifyContent: 'center', zIndex: 10,
+                            background: 'rgba(10,14,26,0.4)', borderRadius: 14,
+                          }}>
+                            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🔒</div>
+                            <h3 style={{ color: '#fff', fontSize: '1.1rem', margin: '0 0 0.3rem', fontWeight: 700 }}>Unlock Full Feedback</h3>
+                            <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0 0 1rem', textAlign: 'center', maxWidth: 280 }}>
+                              See detailed scores, grammar corrections, vocabulary upgrades & model response
+                            </p>
+                            <button
+                              onClick={() => router.push('/pricing')}
+                              style={{
+                                background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', color: '#fff',
+                                padding: '0.7rem 2rem', borderRadius: 12, border: 'none',
+                                fontWeight: 700, fontSize: '0.95rem', cursor: 'pointer',
+                              }}
+                            >
+                              Upgrade to Pro →
+                            </button>
+                          </div>
+                        </div>
+                      )}
+
+                      {isPro && speakingFeedback.detailedFeedback && (
                         <div style={{
                           background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
                           borderRadius: 14, padding: '1.2rem',
@@ -1305,8 +1466,8 @@ export default function AIPracticePage() {
                         </div>
                       )}
 
-                      {/* Your Transcript */}
-                      {speakingFeedback.transcript && (
+                      {/* Your Transcript — Pro only */}
+                      {isPro && speakingFeedback.transcript && (
                         <div style={{
                           background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
                           borderRadius: 14, padding: '1.2rem',
@@ -1318,8 +1479,8 @@ export default function AIPracticePage() {
                         </div>
                       )}
 
-                      {/* Grammar Errors */}
-                      {speakingFeedback.grammarErrors && speakingFeedback.grammarErrors.length > 0 && (
+                      {/* Grammar Errors — Pro only */}
+                      {isPro && speakingFeedback.grammarErrors && speakingFeedback.grammarErrors.length > 0 && (
                         <div style={{
                           background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)',
                           borderRadius: 14, padding: '1.2rem',
@@ -1346,8 +1507,8 @@ export default function AIPracticePage() {
                         </div>
                       )}
 
-                      {/* Vocabulary Suggestions */}
-                      {speakingFeedback.vocabularySuggestions && speakingFeedback.vocabularySuggestions.length > 0 && (
+                      {/* Vocabulary Suggestions — Pro only */}
+                      {isPro && speakingFeedback.vocabularySuggestions && speakingFeedback.vocabularySuggestions.length > 0 && (
                         <div style={{
                           background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)',
                           borderRadius: 14, padding: '1.2rem',
@@ -1374,8 +1535,8 @@ export default function AIPracticePage() {
                         </div>
                       )}
 
-                      {/* Strengths & Improvements */}
-                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
+                      {/* Strengths & Improvements — Pro only */}
+                      {isPro && <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
                         {speakingFeedback.strengths && speakingFeedback.strengths.length > 0 && (
                           <div style={{
                             background: 'rgba(52,211,153,0.06)', border: '1px solid rgba(52,211,153,0.15)',
@@ -1398,10 +1559,10 @@ export default function AIPracticePage() {
                             </ul>
                           </div>
                         )}
-                      </div>
+                      </div>}
 
-                      {/* Model Response */}
-                      {speakingFeedback.modelResponse && (
+                      {/* Model Response — Pro only */}
+                      {isPro && speakingFeedback.modelResponse && (
                         <div style={{
                           background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.2)',
                           borderRadius: 14, padding: '1.2rem',
@@ -1417,13 +1578,26 @@ export default function AIPracticePage() {
                 </div>
               )}
 
-              <button
-                className={styles.startPracticeBtn}
-                onClick={() => { setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); generate(); }}
-                style={{ marginTop: '1rem' }}
-              >
-                Try Another Exercise <ArrowRight size={16} />
-              </button>
+              {speakingFeedback && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
+                {hasNextPart() ? (
+                  <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                    {getNextPartLabel()} →
+                  </button>
+                ) : (
+                  <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
+                    📊 See Results
+                  </button>
+                )}
+                <button
+                  className={styles.startPracticeBtn}
+                  onClick={() => { setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); generate(); }}
+                  style={{ opacity: 0.8 }}
+                >
+                  Try Another Exercise <ArrowRight size={16} />
+                </button>
+              </div>
+              )}
             </>
           )}
 
@@ -1467,14 +1641,16 @@ export default function AIPracticePage() {
                         <div className={styles.summaryBarFill} style={{ width: `${pct}%`, background: pct >= 70 ? 'linear-gradient(90deg, #22c55e, #4ade80)' : pct >= 40 ? 'linear-gradient(90deg, #f59e0b, #fbbf24)' : 'linear-gradient(90deg, #ef4444, #f87171)' }} />
                       </div>
                       <span className={styles.summaryScore}>
-                        {score ? `${score.correct}/${score.total}` : '—'}
+                        {score ? (section === 'speaking' ? `${score.correct}/12` : `${score.correct}/${score.total}`) : '—'}
                       </span>
                     </div>
                   );
                 })}
                 {grandTotal > 0 && (() => {
                   const pct = grandCorrect / grandTotal;
-                  const celpip = pct >= 0.95 ? 12 : pct >= 0.90 ? 11 : pct >= 0.85 ? 10 : pct >= 0.80 ? 9 : pct >= 0.75 ? 8 : pct >= 0.65 ? 7 : pct >= 0.55 ? 6 : pct >= 0.45 ? 5 : pct >= 0.35 ? 4 : 3;
+                  const celpip = section === 'speaking'
+                    ? Math.round(grandCorrect / parts.filter(p => sessionScores[p.id]).length) // Average AI score
+                    : pct >= 0.95 ? 12 : pct >= 0.90 ? 11 : pct >= 0.85 ? 10 : pct >= 0.80 ? 9 : pct >= 0.75 ? 8 : pct >= 0.65 ? 7 : pct >= 0.55 ? 6 : pct >= 0.45 ? 5 : pct >= 0.35 ? 4 : 3;
                   return (
                     <div className={styles.summaryTotal}>
                       <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '0.25rem' }}>
@@ -1516,5 +1692,6 @@ export default function AIPracticePage() {
       )}
 
     </div>
+    </>
   );
 }

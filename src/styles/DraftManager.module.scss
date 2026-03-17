@@ -68,7 +68,7 @@ $gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   top: calc(100% + 0.5rem);
   right: 0;
   width: 320px;
-  background: #1a1f2e;
+  background: #1b1f2a;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
   z-index: 100;
@@ -226,7 +226,7 @@ $gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
 .modal {
   width: 100%;
   max-width: 400px;
-  background: #1a1f2e;
+  background: #1b1f2a;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   animation: modalIn 0.2s ease-out;
@@ -295,7 +295,7 @@ $gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     &:focus {
       outline: none;
       border-color: #818cf8;
-      background: #1a1f2e;
+      background: #1b1f2a;
     }
   }
 }
@@ -325,7 +325,7 @@ $gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
 }
 
 .cancelBtn {
-  background: #1a1f2e;
+  background: #1b1f2a;
   color: rgba(248, 250, 252, 0.6);
   border: 1px solid rgba(139, 92, 246, 0.15);
   

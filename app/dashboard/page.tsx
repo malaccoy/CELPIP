@@ -5,13 +5,15 @@ import { useRouter } from 'next/navigation';
 import { 
   PenTool, Headphones, BookOpen, Mic, 
   TrendingUp, Clock, Award, ArrowRight, 
-  Sparkles, Target, Flame, BarChart3, Trophy,
-  CheckCircle, Users, Clock as ClockIcon, Crown
+  Sparkles, Target, Flame, BarChart3, Trophy, Calculator,
+  CheckCircle, Users, Clock as ClockIcon, Crown, Shield
 } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import styles from '@/styles/Dashboard.module.scss';
 import onboardingStyles from '@/styles/Onboarding.module.scss';
+import { FeedbackModal } from '@/components/FeedbackModal';
+import MobileDashboard from '@/components/MobileDashboard';
 
 interface SkillProgress {
   sessions: number;
@@ -70,6 +72,14 @@ const STORAGE_KEYS = {
 export default function DashboardPage() {
   const router = useRouter();
   const { isPro } = useContentAccess();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
   const [showOnboarding, setShowOnboarding] = useState(false); // Onboarding disabled
   const [currentStep, setCurrentStep] = useState<OnboardingStep>('welcome');
   const [onboardingData, setOnboardingData] = useState<OnboardingData>({
@@ -275,10 +285,24 @@ export default function DashboardPage() {
     currentStreak: 0
   });
 
+  const [streakData, setStreakData] = useState<any>(null);
+  const [freezing, setFreezing] = useState(false);
+
   useEffect(() => {
-    // Onboarding disabled — skip check
+    // Check onboarding — redirect if not completed
+    const ob = localStorage.getItem('celpip_onboarding');
+    if (!ob || !JSON.parse(ob).completed) {
+      // Check if user has any activity (existing users skip onboarding)
+      fetch('/api/profile-stats').then(r => r.json()).then(d => {
+        if (!d.totalPractices || d.totalPractices === 0) {
+          router.push('/onboarding');
+        }
+      }).catch(() => {});
+    }
     setShowOnboarding(false);
     loadStats();
+    // Load streak from API
+    fetch('/api/streak').then(r => r.ok ? r.json() : null).then(d => d && setStreakData(d)).catch(() => {});
   }, []);
 
   const checkOnboardingStatus = async () => {
@@ -1463,178 +1487,9 @@ export default function DashboardPage() {
   const savedOnboarding = onboardingRaw ? JSON.parse(onboardingRaw) : null;
   const hasAssessment = savedOnboarding?.assessmentScores;
 
-  return (
-    <div className={styles.container}>
-      {/* Daily Usage Banner for Free Users */}
-      {!isPro && dailyUsage && (
-        <div className={styles.usageBanner} onClick={() => router.push('/pricing')}>
-          <div className={styles.usageLeft}>
-            <div className={styles.usageCount}>
-              <span className={styles.usageNumber}>{dailyUsage.used}/{dailyUsage.limit}</span>
-              <span className={styles.usageLabel}>Daily free exercises used</span>
-            </div>
-            <div className={styles.usageDots}>
-              {[...Array(dailyUsage.limit)].map((_, i) => (
-                <div
-                  key={i}
-                  className={`${styles.usageDot} ${i < dailyUsage.used ? styles.usageDotFilled : ''}`}
-                />
-              ))}
-            </div>
-            <span className={styles.usageUpgrade}>Upgrade Now →</span>
-          </div>
-          <div className={styles.usageLeaf}>🍁</div>
-        </div>
-      )}
+    if (isMobile) {
+    return <MobileDashboard />;
+  }
 
-      {/* Welcome + CLB Level — hidden (onboarding disabled) */}
-      {false && hasAssessment && (
-        <section className={styles.welcomeSection}>
-          <div className={styles.welcomeCard}>
-            {isPro && (
-              <div className={styles.proCrown}>
-                <Crown size={16} />
-                <span>PRO</span>
-              </div>
-            )}
-            <div className={styles.welcomeLeft}>
-              <h2 className={styles.welcomeTitle}>
-                {savedOnboarding.targetCLB 
-                  ? `Target: CLB ${savedOnboarding.targetCLB}`
-                  : 'Your CELPIP Journey'
-                }
-              </h2>
-              <p className={styles.welcomeSubtitle}>
-                {savedOnboarding.goal === 'immigration' ? 'Immigration Pathway' :
-                 savedOnboarding.goal === 'work' ? 'Career Advancement' :
-                 savedOnboarding.goal === 'study' ? 'Academic Goals' : 'English Improvement'}
-                {savedOnboarding.timeline ? ` · ${savedOnboarding.timeline}` : ''}
-              </p>
-            </div>
-            <div className={styles.clbBadge}>
-              <span className={styles.clbValue}>CLB {
-                (() => {
-                  const s = savedOnboarding.assessmentScores;
-                  const total = (s.reading || 0) + (s.listening || 0) + (s.writing || 0) + (s.speaking || 0);
-                  if (total >= 7) return 10;
-                  if (total >= 6) return 9;
-                  if (total >= 5) return 8;
-                  if (total >= 4) return 7;
-                  if (total >= 2) return 6;
-                  return 5;
-                })()
-              }</span>
-              <span className={styles.clbCaption}>Est. Level</span>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* AI Coach CTAs */}
-      <section className={styles.aiCoachSection}>
-        <div className={styles.aiCoachGrid}>
-          <div 
-            className={`${styles.aiCoachCard} ${styles.primary}`}
-            onClick={() => router.push('/ai-coach')}
-          >
-            <div className={styles.aiCoachIcon}>
-              <Sparkles size={24} />
-            </div>
-            <div className={styles.aiCoachContent}>
-              <h3>AI Practice Generator</h3>
-              <p>Infinite exercises, adaptive difficulty</p>
-            </div>
-            <ArrowRight size={16} className={styles.aiCoachArrow} />
-          </div>
-
-          <div 
-            className={`${styles.aiCoachCard} ${styles.secondary}`}
-            onClick={() => router.push('/mock-exam')}
-          >
-            <div className={styles.aiCoachIcon}>
-              <Trophy size={24} />
-            </div>
-            <div className={styles.aiCoachContent}>
-              <h3>AI Mock Exam</h3>
-              <p>Full test simulation with CLB estimation</p>
-            </div>
-            <ArrowRight size={16} className={styles.aiCoachArrow} />
-          </div>
-
-          <div 
-            className={`${styles.aiCoachCard} ${styles.tertiary}`}
-            onClick={() => router.push('/weakness-report')}
-          >
-            <div className={styles.aiCoachIcon}>
-              <BarChart3 size={24} />
-            </div>
-            <div className={styles.aiCoachContent}>
-              <h3>Weakness Report</h3>
-              <p>Personalized improvement recommendations</p>
-            </div>
-            <ArrowRight size={16} className={styles.aiCoachArrow} />
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Grid */}
-      <section className={styles.skillsSection}>
-        <h2 className={styles.sectionTitle}>Practice by Skill</h2>
-        <div className={styles.skillsGrid}>
-          {skills.map((skill) => {
-            const Icon = skill.icon;
-            return (
-              <article 
-                key={skill.id}
-                className={`${styles.skillCard} ${styles[skill.id]}`}
-                onClick={() => router.push(skill.route)}
-                style={{ '--skill-color': skill.color } as React.CSSProperties}
-              >
-                <div className={styles.skillHeader}>
-                  <div className={styles.skillIconBox}>
-                    <Icon size={24} />
-                  </div>
-                  {skill.sessions > 0 && (
-                    <div className={styles.sessionBadge}>
-                      <Award size={12} />
-                      <span>{skill.sessions}</span>
-                    </div>
-                  )}
-                </div>
-
-                <h3 className={styles.skillName}>{skill.title}</h3>
-                <p className={styles.skillDesc}>{skill.description}</p>
-
-                <div className={styles.skillAction}>
-                  <span>{skill.sessions > 0 ? 'Continue' : 'Start'}</span>
-                  <ArrowRight size={16} />
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Motivation */}
-      {stats.totalPractices === 0 && (
-        <div className={styles.motivationCard}>
-          <Sparkles size={24} />
-          <div className={styles.motivationText}>
-            <h3>Ready to start?</h3>
-            <p>Pick any skill above and begin your CELPIP preparation!</p>
-          </div>
-        </div>
-      )}
-
-      {stats.currentStreak >= 3 && (
-        <div className={`${styles.motivationCard} ${styles.success}`}>
-          <Flame size={24} />
-          <div className={styles.motivationText}>
-            <h3>🔥 {stats.currentStreak} day streak!</h3>
-            <p>Amazing consistency! Keep it going!</p>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+  return <MobileDashboard desktop />;
 }

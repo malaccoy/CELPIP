@@ -22,11 +22,12 @@ const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
   { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
-  { to: '/english', icon: (() => null) as any, label: '🍁 Citizenship' },
+  // { to: '/english', icon: (() => null) as any, label: '🍁 Citizenship' },
   { to: '/blog', icon: BookOpen, label: 'Blog' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
+  { to: '/tools/score-calculator', icon: (() => null) as any, label: '🧮 CRS Calculator' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
-  { to: '/profile', icon: User, label: 'Profile' },
+  // Profile removed from nav — accessible via avatar
   { to: '/support', icon: HelpCircle, label: 'Support' },
   { to: 'https://t.me/+YcO9MfUHIjQyYjAx', icon: (() => null) as any, label: '💬 Community', external: true },
 ];
@@ -89,7 +90,50 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.header} ${headerHidden ? styles.headerHidden : ''}`}>
+    <>
+      {/* Mobile minimal header — hidden on pages with own top bar */}
+      {pathname !== '/dashboard' && !pathname?.startsWith('/ai-coach') && (
+      <header className={`${styles.header} ${styles.mobileMinimalHeader} ${headerHidden ? styles.headerHidden : ''}`}>
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          width: '100%', padding: '8px 16px', height: '48px',
+        }}>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
+            <Logo size={32} />
+            <span style={{ color: '#fff', fontWeight: 700, fontSize: '0.95rem' }}>
+              CELPIP <span style={{ color: '#ff3b3b' }}>AI</span> Coach
+            </span>
+          </Link>
+          {user ? (
+            <Link href="/profile" style={{ display: 'flex', alignItems: 'center' }}>
+              <div style={{
+                width: 40, height: 40, borderRadius: '50%', overflow: 'hidden',
+                background: '#232733', border: '2px solid rgba(255,255,255,0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                color: '#fff', fontSize: '0.9rem', fontWeight: 700,
+              }}>
+                {user.user_metadata?.avatar_url ? (
+                  <img src={user.user_metadata.avatar_url} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                ) : (
+                  getUserName().charAt(0).toUpperCase()
+                )}
+              </div>
+            </Link>
+          ) : (
+            <Link href="/auth/login" style={{
+              background: '#ff3b3b', color: '#fff', borderRadius: 20,
+              padding: '6px 16px', fontWeight: 700, fontSize: '0.8rem',
+              textDecoration: 'none',
+            }}>
+              Sign In
+            </Link>
+          )}
+        </div>
+      </header>
+      )}
+
+      {/* Desktop header */}
+    <header className={`${styles.header} ${styles.desktopHeader} ${headerHidden ? styles.headerHidden : ''}`}>
       <div className={styles.headerContent}>
         <div className={styles.headerLogo}>
           <Link href="/" className={styles.logoLink}>
@@ -195,7 +239,7 @@ export const Header: React.FC = () => {
             '/': '🏠',
             '/dashboard': '🎯',
             '/guides': '📚',
-            '/english': '🍁',
+            // '/english': '🍁',
             '/pricing': '💎',
             '/rankings': '🏆',
             '/profile': '👤',
@@ -214,5 +258,6 @@ export const Header: React.FC = () => {
         })}
       </div>
     </header>
+    </>
   );
 };

@@ -30,3 +30,5 @@ out/
 *.sln
 *.sw?
 config/ga-service-account.json
+.next-backup*
+.next-backup*

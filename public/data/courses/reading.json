@@ -1,0 +1,1211 @@
+[
+  {
+    "id": 0,
+    "title": "Tasks 1-2: Correspondence & Diagrams",
+    "subtitle": "Letters, emails, and matching information",
+    "icon": "📧",
+    "level": "easier",
+    "lesson": {
+      "title": "Reading Strategies — Tasks 1-2",
+      "points": [
+        "Read paragraph by paragraph — don't skim the whole text first",
+        "For each paragraph, check: can I answer any open question? YES → select, NO → move on",
+        "In Task 2, find the PATTERN in the diagram first, then read the email",
+        "Focus on MAIN IDEAS, not small details like exact dates or statistics",
+        "Part 2 (reply) is usually easier — you already know the context from Part 1"
+      ]
+    },
+    "exercises": [
+      {
+        "type": "readChoose",
+        "passage": "Dear Marcus,\n\nI hope you're doing well! I wanted to let you know that our annual camping trip has been moved from August to September this year. The campground we usually go to is fully booked in August due to a music festival.\n\nThe good news is that September weather in Banff is actually perfect for hiking — cooler temperatures and fewer mosquitoes. I've already reserved three campsites for September 14-16.",
+        "question": "Why was the camping trip moved to September?",
+        "options": [
+          "The weather is too hot in August",
+          "The campground is booked due to a music festival",
+          "Marcus requested a different date",
+          "The hiking trails are closed in August"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Paragraph-by-Paragraph. Paragraph 1 directly states \"fully booked in August due to a music festival.\" Focus on the REASON given in the text, not assumptions."
+      },
+      {
+        "type": "readChoose",
+        "passage": "I know you mentioned wanting to bring your new tent — the four-person one you bought last month. That would be great since Sarah and I can share the second campsite, and Mike said he'd bring his own gear. Could you also bring the portable stove? Mine broke during our last trip.\n\nLet me know if September 14-16 works for you. If not, we might be able to push it to the following weekend.\n\nCheers,\nTom",
+        "question": "What does Tom ask Marcus to bring besides the tent?",
+        "options": [
+          "A sleeping bag for Sarah",
+          "The portable stove",
+          "Extra food for the group",
+          "A map of the hiking trails"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Read for specific requests. \"Could you also bring the portable stove? Mine broke.\" Focus on what is explicitly asked, not implied."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Hi Tom,\n\nSeptember works perfectly for me! Actually, I prefer it — I always get sunburned in August anyway. I'll bring the four-person tent and the portable stove. I also have a brand new cooler that keeps ice for three days, so I'll throw that in too.\n\nOne question: is there cell reception at the campground? I'm on call for work that weekend but I could ___.",
+        "question": "Which best completes the blank in Marcus's reply?",
+        "options": [
+          "cancel the trip entirely if there's no signal",
+          "bring a satellite phone just in case",
+          "ask my manager to take me off the on-call schedule",
+          "probably manage if I can check my phone occasionally"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Reply Context. Marcus is going on the trip (confirmed \"September works perfectly\") and just has a small concern about being on call. He's not cancelling or bringing special equipment — he just needs occasional phone access."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Tenants of Building 7,\n\nPlease be advised that scheduled maintenance will take place on Monday, March 24th. The water supply will be shut off between 9:00 AM and 2:00 PM while our team replaces the main pipe on the third floor.\n\nWe recommend filling containers with water before 9:00 AM for drinking and cooking needs. The maintenance should not affect electricity or heating.",
+        "question": "What service will be unavailable during the maintenance?",
+        "options": [
+          "Electricity throughout the building",
+          "Water supply from 9 AM to 2 PM",
+          "Heating in all apartments",
+          "Elevator access on the third floor"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Focus on specific details when directly stated. \"Water supply will be shut off between 9:00 AM and 2:00 PM.\" The text explicitly says electricity and heating will NOT be affected."
+      },
+      {
+        "type": "readChoose",
+        "passage": "If you are working from home that day and need access to water, the community room on the ground floor will have bottled water available free of charge. Additionally, the gym showers will remain operational as they are on a separate water line.\n\nWe apologize for the inconvenience. This repair is necessary to prevent a potential pipe burst that could cause significant damage to multiple units.\n\nThank you for your understanding,\nBuilding Management",
+        "question": "Why is this maintenance being done?",
+        "options": [
+          "Tenants complained about low water pressure",
+          "To install a new swimming pool",
+          "To prevent a potential pipe burst that could damage units",
+          "The city requires annual pipe inspections"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Find the WHY. \"This repair is necessary to prevent a potential pipe burst that could cause significant damage.\" Only select what the text says — no assumptions."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Building Management,\n\nThank you for the advance notice. I work from home on Mondays, so I appreciate knowing about the bottled water in the community room. I have one concern: I have two elderly cats who need fresh water throughout the day. Would it be possible to ___?",
+        "question": "Which best completes the tenant's request?",
+        "options": [
+          "cancel the maintenance until a more convenient day",
+          "get a small supply of bottled water delivered to my unit",
+          "have the maintenance team work only at night instead",
+          "install a separate water line for my apartment"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Reply logical flow. The tenant accepted the maintenance (thanked for notice) and has a specific small concern (cats need water). A small accommodation (bottled water to unit) fits the polite, reasonable tone."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Professor Chen,\n\nI hope this email finds you well. I'm writing to ask if you would be willing to serve as a reference for a job I'm applying to. The position is a Junior Data Analyst role at a financial technology company in Toronto.\n\nI took your Statistics and Data Modeling courses in my third and fourth years, and I believe your recommendation would carry significant weight given the quantitative nature of the role.",
+        "question": "What is the relationship between the writer and Professor Chen?",
+        "options": [
+          "They are colleagues at the same company",
+          "The writer was Professor Chen's student",
+          "They are family friends",
+          "Professor Chen is the writer's current supervisor"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify WHO and RELATIONSHIP. \"I took your Statistics and Data Modeling courses\" — clearly a former student. Check how people address each other and what they reference."
+      },
+      {
+        "type": "readChoose",
+        "passage": "The application deadline is April 5th, so there's no rush — I just wanted to give you plenty of time. If you're comfortable being a reference, I can send you my updated resume and a brief description of the role so you have context for any questions they might ask.\n\nPlease let me know if this is something you'd be open to. I completely understand if you're too busy this semester.\n\nBest regards,\nAisha Patel",
+        "question": "How does Aisha feel about asking Professor Chen?",
+        "options": [
+          "Demanding and impatient",
+          "Respectful and understanding of his time",
+          "Angry because he hasn't responded yet",
+          "Indifferent about whether he agrees or not"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify FEELINGS through tone. \"No rush,\" \"plenty of time,\" \"completely understand if you're too busy\" — polite, respectful, considerate. NOT demanding or indifferent."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Aisha,\n\nOf course! I'd be happy to serve as a reference. You were one of the strongest students in both courses, and I remember your final project on predictive modeling being particularly impressive. Please do send your resume and the job description — it will help me tailor my recommendation to what they're looking for.\n\nOne thing: could you also remind me of ___? It's been a couple of years and I want to make sure I mention the right details.",
+        "question": "Which best completes the blank?",
+        "options": [
+          "your phone number and home address",
+          "the specific grades you received in my courses",
+          "which semester you took each course and your final project topic",
+          "how much the job pays and the company benefits"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Reply context. The professor wants to write a SPECIFIC recommendation. He already remembers her project was impressive but needs details — which semesters and the project topic — to \"mention the right details.\" Not grades (too impersonal) or personal info."
+      },
+      {
+        "type": "readChoose",
+        "passage": "To Whom It May Concern,\n\nI am writing to express my dissatisfaction with recent changes to the gym schedule at FitLife Downtown. As a member for over three years, I have always relied on the 6:00 AM spin class on Monday, Wednesday, and Friday mornings before work.\n\nLast week, without any prior notice, this class was moved to 7:30 AM. This makes it impossible for me to attend, as I start work at 8:00 and need at least 20 minutes to shower and commute.",
+        "question": "What is the main reason for this complaint?",
+        "options": [
+          "The gym membership fee increased",
+          "The spin class was moved to a time that conflicts with work",
+          "The spin class instructor was replaced",
+          "The gym equipment is outdated and needs repair"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify the Problem (Paragraph 1). The class moved from 6:00 AM to 7:30 AM, and the member starts work at 8:00. Time conflict is the core issue."
+      },
+      {
+        "type": "readChoose",
+        "passage": "I spoke with the front desk staff, who said the change was made because only four people were attending the early class. However, I know several members who also preferred the 6:00 AM slot but were not consulted before the decision was made.\n\nI would appreciate it if FitLife could either restore the original time or offer an alternative early-morning group fitness option. I am a loyal customer and would hate to have to find another gym over something that seems easily fixable.\n\nSincerely,\nDaniel Reeves",
+        "question": "What tone does Daniel use in his complaint?",
+        "options": [
+          "Aggressive and threatening to sue",
+          "Firm but polite, offering solutions",
+          "Sarcastic and mocking",
+          "Apologetic and unsure of himself"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify FEELINGS. Daniel is firm (\"I would appreciate,\" \"loyal customer\") but constructive (offers two solutions). He's not aggressive (\"would hate to\") or apologetic."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Mr. Reeves,\n\nThank you for bringing this to our attention. We understand how important your morning routine is, and we apologize for the lack of communication regarding the schedule change.\n\nAfter reviewing the feedback from you and several other members, we have decided to ___. We hope this addresses your concern and look forward to continuing to serve you.\n\nBest regards,\nFitLife Management",
+        "question": "Which best completes the blank?",
+        "options": [
+          "permanently cancel all spin classes",
+          "offer you a 50% discount on a new gym membership",
+          "reinstate the 6:00 AM class on a trial basis and survey members about preferred times",
+          "transfer your membership to our other location across town"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Reply matches complaint. Daniel asked to \"restore the original time OR offer an alternative.\" The management response should address this directly — reinstating + surveying is the most reasonable and constructive response."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Parents and Guardians,\n\nMaple Grove Elementary is excited to announce our annual Spring Fair, scheduled for Saturday, May 10th from 10:00 AM to 4:00 PM. This year's theme is \"Around the World,\" and each classroom will represent a different country with food, games, and cultural displays.\n\nTo make this event a success, we need parent volunteers in several areas: food preparation, game stations, face painting, and setup/cleanup crews.",
+        "question": "What is the purpose of this email?",
+        "options": [
+          "To announce a school closure",
+          "To invite parents to volunteer for the Spring Fair",
+          "To request donations for new playground equipment",
+          "To inform parents about a change in school policy"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify PURPOSE from Paragraph 1. The email announces the Spring Fair AND requests volunteers. The core purpose is recruiting parent help."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Volunteers who sign up for a two-hour shift will receive a family pass worth $20 in food and game tokens. If you can commit to a four-hour shift, you'll also receive a free Spring Fair t-shirt. Please note that all food volunteers must have a valid Food Safe certificate.\n\nTo sign up, please reply to this email by April 25th with your preferred role and time slot.\n\nWarm regards,\nMs. Patricia Liu\nSpring Fair Committee Chair",
+        "question": "What is required to volunteer in food preparation?",
+        "options": [
+          "A minimum four-hour shift commitment",
+          "A valid Food Safe certificate",
+          "Previous experience working in a kitchen",
+          "A donation of ingredients from home"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Specific detail directly stated. \"All food volunteers must have a valid Food Safe certificate.\" Only select what you read — no assumptions about experience or donations."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Hi Ms. Liu,\n\nI'd love to help with the Spring Fair! I'm available the whole day, so sign me up for a four-hour shift. I have my Food Safe certificate, so I'm happy to do food preparation. My daughter is in Mrs. Kim's class (Grade 3, Japan booth) and she's so excited about it.\n\nOne question — my son is only 14 months old. Would it be okay if I ___?",
+        "question": "Which best completes the blank?",
+        "options": [
+          "bring him along and keep him in a stroller near my station",
+          "leave him at home alone while I volunteer",
+          "ask the school to provide childcare during my shift",
+          "skip the volunteer shift entirely because of him"
+        ],
+        "correct": 0,
+        "explanation": "Technique: Reply logic. The parent is committed (available all day, four-hour shift) and just has a practical concern about a toddler. Bringing him in a stroller is the most realistic and reasonable request."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Mr. Thompson,\n\nI'm writing to you as a fellow resident of Parkview Condominiums. Over the past two weeks, there has been loud music coming from your unit most evenings between 10:00 PM and midnight. I understand that everyone has the right to enjoy their home, and I normally wouldn't bring this up.\n\nHowever, my wife works early morning shifts at the hospital and needs to sleep by 9:30 PM. The bass from the music vibrates through our shared wall, making it impossible for her to fall asleep.",
+        "question": "Why is the writer particularly concerned about the noise?",
+        "options": [
+          "Their children cannot do homework in the evening",
+          "Their wife needs early sleep for hospital morning shifts",
+          "They are planning to sell their condo and the noise reduces value",
+          "The building rules forbid any music after 8:00 PM"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the specific reason. \"My wife works early morning shifts at the hospital and needs to sleep by 9:30 PM.\" The concern is specifically about her sleep schedule, not general annoyance."
+      },
+      {
+        "type": "readChoose",
+        "passage": "I checked our building bylaws, and quiet hours begin at 10:00 PM on weeknights. I'm not asking you to stop playing music — just to lower the volume or use headphones after 10:00. This seems like a fair compromise that lets both of us enjoy our evenings.\n\nIf you'd like to discuss this in person, I'm in Unit 412. I'd rather resolve this between us than involve building management.\n\nRespectfully,\nDavid Park, Unit 412",
+        "question": "What approach does David take with this complaint?",
+        "options": [
+          "He threatens to call the police immediately",
+          "He proposes a reasonable compromise and prefers direct resolution",
+          "He demands that Mr. Thompson move to a different unit",
+          "He insists on involving building management right away"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify TONE. David offers a compromise (lower volume or headphones after 10), references bylaws without threatening, and prefers to \"resolve this between us.\" Firm but neighborly."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Hi David,\n\nThanks for reaching out directly — I really appreciate that. I honestly had no idea the bass was traveling through the wall. I've been working on a music project and completely lost track of time on those late nights.\n\nI'll absolutely keep the volume down after 10 PM, and I just ordered a good pair of studio headphones that should arrive ___. Problem solved!",
+        "question": "Which best completes the blank?",
+        "options": [
+          "sometime next year when I can afford them",
+          "by Thursday, so this won't be an issue anymore",
+          "never, because I don't believe in headphones",
+          "but I'll still play music as loud as I want"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Reply tone matches resolution. Mr. Thompson is apologetic and cooperative (\"absolutely keep the volume down\"). A quick delivery timeline (Thursday) matches his cooperative attitude. The problem is being actively solved."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Conference Registrants,\n\nThank you for registering for the Canadian Innovation Summit 2026, taking place June 15-17 at the Metro Convention Centre in Vancouver. We are writing to confirm your registration and provide important logistical details.\n\nYour registration includes access to all keynote sessions, panel discussions, and the networking reception on June 16th. Lunch will be provided on all three days. Please note that workshop attendance requires separate registration and an additional fee of $75 per workshop.",
+        "question": "What is NOT included in the basic registration?",
+        "options": [
+          "Keynote sessions",
+          "Lunch on all three days",
+          "Workshop attendance",
+          "The networking reception"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Eliminate what IS included. Keynotes ✓, lunch ✓, networking ✓. Workshops require \"separate registration and an additional fee.\" Only workshops are excluded."
+      },
+      {
+        "type": "readChoose",
+        "passage": "The conference venue is a 10-minute walk from Waterfront Station (SkyTrain). We strongly recommend using public transit, as parking at the convention centre is limited and costs $35 per day. For those flying in, Vancouver International Airport is connected to the SkyTrain — a 25-minute ride directly to Waterfront Station.\n\nPlease wear your name badge at all times during the conference. Replacement badges can be obtained at the registration desk for a $10 fee.",
+        "question": "Why does the conference recommend public transit?",
+        "options": [
+          "Public transit is free for conference attendees",
+          "Parking is limited and expensive at the venue",
+          "The venue does not have any parking at all",
+          "Conference attendees receive a transit discount"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Read for the stated reason. \"Parking at the convention centre is limited and costs $35 per day.\" NOT free transit or no parking — it's limited and expensive."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Conference Team,\n\nThank you for the information. I'm very excited about the summit! I have a question about accessibility. I use a wheelchair and wanted to confirm that all venues and session rooms are ___. I also noticed the networking reception is on June 16th — is it at the same venue or a different location?\n\nLooking forward to it,\nMeera Khatri",
+        "question": "Which best completes the blank?",
+        "options": [
+          "only available to VIP ticket holders",
+          "wheelchair accessible, including stage areas and restrooms",
+          "located on the second floor with no elevator",
+          "going to have live music and dancing"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Reply context. Meera uses a wheelchair and is asking about accessibility. The logical completion is confirming wheelchair access to venues and facilities."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Customer Service,\n\nI purchased a wireless keyboard (Order #WK-4892) from your online store on February 28th. When it arrived on March 5th, I noticed that the spacebar sticks intermittently and the Bluetooth connection drops every few minutes. I've tried reconnecting and updating drivers, but the issues persist.\n\nAccording to your website, items can be returned within 30 days for a full refund if they are defective. I would like to request either a replacement or a full refund.",
+        "question": "What problems does the customer report?",
+        "options": [
+          "The keyboard is the wrong color and size",
+          "The spacebar sticks and Bluetooth keeps disconnecting",
+          "The keyboard was never delivered",
+          "The packaging was damaged during shipping"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify specific details when directly stated. TWO problems: (1) spacebar sticks, (2) Bluetooth drops. Both are clearly listed in the first paragraph."
+      },
+      {
+        "type": "readChoose",
+        "passage": "I've attached photos of the packaging and the keyboard, as well as a screen recording showing the Bluetooth disconnection. My order confirmation and receipt are also attached for your reference.\n\nI hope this can be resolved quickly, as I need a functioning keyboard for my remote work. I've been a satisfied customer for several years and have purchased multiple items from your store without any issues until now.\n\nThank you,\nRobert Kim",
+        "question": "What evidence does Robert provide?",
+        "options": [
+          "A written letter from his employer",
+          "Photos, a screen recording, and order documentation",
+          "Testimony from a computer repair technician",
+          "A police report about the defective product"
+        ],
+        "correct": 1,
+        "explanation": "Technique: List what the text says. Photos of packaging/keyboard, screen recording of Bluetooth issue, order confirmation and receipt. Only select evidence actually mentioned."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Dear Mr. Kim,\n\nThank you for reaching out and for providing the detailed documentation. We're sorry to hear about the issues with your keyboard. After reviewing your case, we're happy to offer you ___. A prepaid return shipping label has been sent to your email.\n\nWe value your continued loyalty,\nTechGear Support",
+        "question": "Which best completes the blank?",
+        "options": [
+          "a 10% discount on your next purchase only",
+          "a full refund once we receive the defective unit back",
+          "store credit that expires in 7 days",
+          "nothing, as the return window has closed"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Reply matches request + policy. Robert requested \"a replacement or full refund,\" the item is within 30 days, and they sent a return label. A full refund upon return is the logical resolution."
+      },
+      {
+        "type": "readChoose",
+        "passage": "📋 CEDAR COMMUNITY CENTRE — SPRING CLASSES\n\n🎨 Watercolor Painting | Tuesdays 6-8 PM | Room 201 | $85/8 weeks | Instructor: Maria Santos\n🧘 Yoga for Beginners | Mondays & Wednesdays 7-8 AM | Studio B | $60/8 weeks | Instructor: David Lee\n📸 Digital Photography | Thursdays 7-9 PM | Room 105 | $95/8 weeks | Instructor: Aisha Khan\n🍳 Cooking Basics | Saturdays 10 AM-12 PM | Kitchen Lab | $120/8 weeks | Instructor: Chef Pierre\n\n✅ All classes start April 7th. Registration closes March 28th.",
+        "question": "Which class meets twice a week?",
+        "options": [
+          "Watercolor Painting",
+          "Yoga for Beginners",
+          "Digital Photography",
+          "Cooking Basics"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the Pattern. Most classes meet once a week. Yoga is the exception: \"Mondays & Wednesdays.\" Look for what DIFFERS from the pattern."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: sarah.nguyen@email.ca\nTo: info@cedarcc.ca\nSubject: Spring Class Registration\n\nHi,\n\nI'd like to register for two classes this spring. I work weekdays until 5:30 PM, so morning classes won't work for me. I'm interested in anything creative or hands-on. My budget is about $200 total for both classes.",
+        "question": "Based on the diagram, which TWO classes can Sarah attend?",
+        "options": [
+          "Yoga and Cooking",
+          "Watercolor and Photography",
+          "Yoga and Photography",
+          "Cooking and Watercolor"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match email to diagram. Sarah works until 5:30 (no morning classes → eliminates Yoga). Wants creative/hands-on + $200 budget. Watercolor ($85, Tue 6-8) + Photography ($95, Thu 7-9) = $180 ✓. Cooking is Sat but $120+$85=$205 over budget."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: sarah.nguyen@email.ca\nTo: info@cedarcc.ca\nSubject: Re: Spring Class Registration\n\nThank you for confirming my registration for both classes! I'm especially excited about the photography class — I just bought a new camera and have no idea how to use it properly. Quick question: do I need to bring any supplies for the painting class, or is everything provided?",
+        "question": "How does Sarah feel about the photography class?",
+        "options": [
+          "Anxious because she doesn't know the instructor",
+          "Excited because she wants to learn to use her new camera",
+          "Disappointed because she wanted a painting class instead",
+          "Indifferent because she only signed up to fill time"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify FEELING from Part 2. \"Especially excited\" + \"just bought a new camera and have no idea how to use it\" — clear excitement about learning photography. Positive feeling, not anxious or indifferent."
+      },
+      {
+        "type": "readChoose",
+        "passage": "🎬 STARLIGHT CINEMA — THIS WEEKEND\n\n🦸 Hero Rising | Fri 7:00, 9:30 | Sat 2:00, 5:00, 8:00 | Sun 1:00, 4:00 | PG-13 | 2h 15min\n🔍 The Last Clue | Fri 8:15 | Sat 3:30, 7:00 | Sun 2:30, 6:00 | R | 1h 50min\n🧸 Panda Friends | Fri 6:30 | Sat 11:00, 1:30, 4:00 | Sun 11:00, 2:00 | G | 1h 25min\n👻 Midnight Manor | Fri 10:00 | Sat 9:30 | Sun — | R | 2h 05min\n\n🍿 $14.50 adults | $9.50 children (12 & under) | $11.00 seniors/students | Tuesday = $8.00 all",
+        "question": "A family with two young children (ages 5 and 8) wants to watch a movie on Saturday afternoon. Which movie can they see?",
+        "options": [
+          "Hero Rising (PG-13)",
+          "The Last Clue (R)",
+          "Panda Friends (G)",
+          "Midnight Manor (R)"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Match constraints to diagram. Young children → needs G or PG rating. R is restricted. Saturday afternoon showing needed. Panda Friends is G-rated with Sat 11:00, 1:30, 4:00 showings. Hero Rising is PG-13 (ages 5 and 8 may not qualify)."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: jake.morrison@email.ca\nTo: lisa.chen@email.ca\nSubject: Movie this weekend?\n\nHey Lisa! Want to catch a movie on Saturday? I finish work at 6:30 PM, so anything after 7 works. I'm in the mood for something thrilling — maybe that mystery movie everyone's been talking about? Or the superhero one if you prefer action.",
+        "question": "Based on the showtimes, which showing works for Jake?",
+        "options": [
+          "The Last Clue at Sat 3:30",
+          "Hero Rising at Sat 8:00",
+          "Panda Friends at Sat 4:00",
+          "Midnight Manor at Sat 9:30"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match email to diagram. Jake finishes at 6:30, wants after 7:00. Options: Hero Rising Sat 8:00 ✓, The Last Clue Sat 7:00 ✓, Midnight Manor 9:30 ✓. He wants \"thrilling\" — both Last Clue and Hero Rising work, but Hero Rising at 8:00 is the safe pick after 7:00."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: lisa.chen@email.ca\nTo: jake.morrison@email.ca\nSubject: Re: Movie this weekend?\n\nHero Rising at 8:00 sounds perfect! I've been wanting to see it since the trailer came out. My sister wants to join too — she's a university student, so she'll get the discount price. Should we grab dinner at that new Thai place before the movie? We could meet at 6:45.",
+        "question": "How much will Lisa's sister pay for the ticket?",
+        "options": [
+          "$14.50 (adult price)",
+          "$11.00 (student price)",
+          "$9.50 (child price)",
+          "$8.00 (Tuesday special)"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match detail to diagram. Lisa's sister is a university student. The pricing shows \"$11.00 seniors/students.\" Saturday, not Tuesday, so $11.00 student rate applies."
+      },
+      {
+        "type": "readChoose",
+        "passage": "🏠 DOWNTOWN APARTMENTS — AVAILABLE NOW\n\nUnit A | 1-bed | 650 sq ft | $1,450/mo | Floor 3 | Balcony | Pet-friendly | Avail: Apr 1\nUnit B | 2-bed | 850 sq ft | $1,850/mo | Floor 7 | No balcony | No pets | Avail: Apr 1\nUnit C | 1-bed | 700 sq ft | $1,350/mo | Floor 2 | Balcony | No pets | Avail: May 1\nUnit D | 2-bed | 900 sq ft | $1,950/mo | Floor 10 | Balcony | Pet-friendly | Avail: Apr 15\n\n📞 All units include: gym, laundry, underground parking ($75/mo extra)",
+        "question": "Which unit allows pets AND has a balcony?",
+        "options": [
+          "Unit A only",
+          "Unit B only",
+          "Units A and D",
+          "Units C and D"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Find the Pattern. Check both criteria: Pet-friendly + Balcony. Unit A: ✓ pets, ✓ balcony. Unit B: ✗ pets. Unit C: ✗ pets. Unit D: ✓ pets, ✓ balcony. Both A and D."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: maria.costa@email.ca\nTo: rentals@downtownapts.ca\nSubject: Apartment Inquiry\n\nHi,\n\nI'm looking for a 2-bedroom apartment starting in April. I have a small dog, so pet-friendly is a must. My budget is up to $2,000 per month including parking. Could you tell me which unit would be best for me?",
+        "question": "Which unit fits Maria's requirements?",
+        "options": [
+          "Unit A — 1-bed, pet-friendly, $1,450",
+          "Unit B — 2-bed, no pets, $1,850",
+          "Unit C — 1-bed, no pets, $1,350",
+          "Unit D — 2-bed, pet-friendly, $1,950 + $75 parking = $2,025"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Match ALL requirements. 2-bed + pets + April + under $2,000 with parking. Unit D is 2-bed, pet-friendly, April 15. BUT $1,950 + $75 parking = $2,025 (over budget). This is a TRAP — the correct answer acknowledges Unit D is the closest match but technically over budget. In CELPIP, the best available option is the answer."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: rentals@downtownapts.ca\nTo: maria.costa@email.ca\nSubject: Re: Apartment Inquiry\n\nHi Maria,\n\nThank you for your interest! Based on your needs, Unit D would be the best fit — 2 bedrooms, pet-friendly, and available April 15th. The total with parking would be $2,025. However, since you mentioned your budget is $2,000, I'd like to let you know that we offer a 5% discount for tenants who sign a 12-month lease. That would bring your total to approximately ___.",
+        "question": "Which best completes the blank?",
+        "options": [
+          "$1,850 per month",
+          "$1,924 per month",
+          "$2,025 per month",
+          "$2,100 per month"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Simple math from context. Unit D rent $1,950 + parking $75 = $2,025. With 5% discount on rent: $1,950 × 0.95 = $1,852.50 + $75 = $1,927.50 ≈ $1,924. The discount applies to rent, not parking."
+      },
+      {
+        "type": "readChoose",
+        "passage": "🚌 ROUTE 45 — DOWNTOWN EXPRESS\n\n📍 Stops: Cedar Mall → Oak Street → City Hall → Central Station → Harbour Terminal\n\n⏰ Weekday departures from Cedar Mall:\n6:15 AM | 6:45 | 7:15 | 7:45 | 8:15 | Then every 30 min until 6:15 PM | 7:00 | 8:00 | 9:30 (last)\n\n⏰ Weekend departures from Cedar Mall:\n8:00 AM | Then every 45 min until 6:00 PM | 7:30 | 9:00 (last)\n\n🕐 Travel time: Cedar Mall to Central Station = 25 min | Cedar Mall to Harbour Terminal = 35 min",
+        "question": "How often does the bus run on weekdays between 8:15 AM and 6:15 PM?",
+        "options": [
+          "Every 15 minutes",
+          "Every 30 minutes",
+          "Every 45 minutes",
+          "Every hour"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Read diagram carefully. \"8:15 | Then every 30 min until 6:15 PM.\" Weekday midday frequency is every 30 minutes."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: tom.baker@email.ca\nTo: anna.baker@email.ca\nSubject: Getting to the ferry\n\nHey Anna, I need to catch the 4:00 PM ferry from Harbour Terminal on Saturday. What time should I leave from Cedar Mall to make sure I get there with some time to spare? I don't want to cut it too close.",
+        "question": "What is the latest bus Tom should take on Saturday to arrive by 3:45 PM?",
+        "options": [
+          "The 2:30 PM bus (arrives ~3:05)",
+          "The 3:00 PM bus (arrives ~3:35)",
+          "The 3:15 PM bus (arrives ~3:50)",
+          "The 3:45 PM bus (arrives ~4:20)"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Calculate from diagram. Weekend = every 45 min from 8:00. Travel to Harbour = 35 min. He wants to arrive by ~3:45 (spare time before 4:00 ferry). 3:00 bus → arrives ~3:35 ✓. 3:45 bus → arrives ~4:20 ✗ (misses ferry)."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: anna.baker@email.ca\nTo: tom.baker@email.ca\nSubject: Re: Getting to the ferry\n\nTake the bus that gets you there around 3:35 — that gives you 25 minutes before the ferry. Don't forget your transit card! Also, the bus can get crowded on Saturday afternoons, so you might want to be at the stop a few minutes early to make sure you get a seat.",
+        "question": "What is Anna's main concern for Tom?",
+        "options": [
+          "That the bus might break down on the way",
+          "That the ferry might be cancelled due to weather",
+          "That the bus could be crowded and he should arrive early at the stop",
+          "That Tom will forget to buy a ferry ticket"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Comprehension of reply. Anna says \"bus can get crowded on Saturday afternoons\" and advises arriving early \"to make sure you get a seat.\" Her concern is crowding, not breakdowns or cancellations."
+      },
+      {
+        "type": "readChoose",
+        "passage": "🍽️ LAKESIDE BISTRO — LUNCH SPECIALS (Mon-Fri 11:30-2:00)\n\n🥗 Garden Bowl | $14 | Quinoa, roasted vegetables, feta, lemon dressing | V GF\n🍔 Classic Burger | $16 | Angus beef, cheddar, brioche bun, fries | \n🐟 Pan-Seared Salmon | $19 | Wild salmon, rice pilaf, seasonal greens | GF\n🍝 Mushroom Risotto | $15 | Arborio rice, truffle oil, parmesan | V\n🥩 Steak Frites | $22 | 8oz striploin, herb butter, hand-cut fries |\n\nV = Vegetarian | GF = Gluten-Free | Add soup or salad to any lunch: +$4",
+        "question": "Which dishes are suitable for someone who is both vegetarian AND gluten-free?",
+        "options": [
+          "Garden Bowl and Mushroom Risotto",
+          "Garden Bowl only",
+          "Pan-Seared Salmon and Garden Bowl",
+          "Mushroom Risotto only"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match TWO criteria. Vegetarian (V) AND Gluten-Free (GF). Garden Bowl: V ✓ GF ✓. Mushroom Risotto: V ✓ but no GF mark. Salmon: GF but not V. Only the Garden Bowl meets BOTH."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: kate.wong@techstart.ca\nTo: dev.team@techstart.ca\nSubject: Team lunch Friday!\n\nHi team! I'm booking Lakeside Bistro for our Friday lunch. A few things to note:\n- James is vegetarian\n- Priya has celiac disease (needs gluten-free)\n- Our budget is $20 per person including a side soup/salad\n\nCan everyone pick something from the menu and let me know?",
+        "question": "What can Priya order within the budget?",
+        "options": [
+          "Steak Frites + soup ($26 — over budget)",
+          "Pan-Seared Salmon + soup ($23 — over budget)",
+          "Garden Bowl + soup ($18 — within budget)",
+          "Classic Burger + salad ($20 — but not gluten-free)"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Three constraints. Priya needs GF + budget $20 max with side. Garden Bowl ($14 + $4 soup = $18) ✓ GF ✓ budget. Salmon ($19 + $4 = $23) ✗ budget. Burger has a bun (not GF)."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: james.li@techstart.ca\nTo: kate.wong@techstart.ca\nSubject: Re: Team lunch Friday!\n\nI'll have the Mushroom Risotto — I've heard their truffle oil is amazing. And I'll add a side salad. That puts me at $19, so right under budget.\n\nBy the way, is this the same Lakeside Bistro by the waterfront? I've heard the views from the patio are incredible. Should we request outdoor seating?",
+        "question": "What does James's email tell us about him?",
+        "options": [
+          "He is the team manager making the final decision",
+          "He is a vegetarian who is enthusiastic about food and the restaurant",
+          "He is unhappy about the restaurant choice",
+          "He has been to Lakeside Bistro many times before"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Infer from text. James picks the vegetarian option (confirming he's vegetarian), comments on truffle oil being \"amazing,\" and is excited about the patio views. Enthusiastic, not unhappy. He hasn't been (\"I've heard\") — not been there before."
+      },
+      {
+        "type": "readChoose",
+        "passage": "💼 MAPLE CITY JOB BOARD — MARCH 2026\n\nA) Marketing Coordinator | TechNova Inc. | $52K/yr | Full-time | Downtown | Req: 2+ yrs marketing exp, Bachelor's degree\nB) IT Support Specialist | City of Maple | $48K/yr | Full-time | City Hall | Req: CompTIA A+ cert, 1+ yr exp\nC) Part-time Barista | Bean & Brew Café | $17/hr | 20 hrs/wk | Midtown | Req: No experience needed, will train\nD) Graphic Designer | Freelance | $35-50/hr | Contract | Remote | Req: Portfolio required, Adobe Suite proficiency",
+        "question": "Which position requires NO prior experience?",
+        "options": [
+          "Marketing Coordinator",
+          "IT Support Specialist",
+          "Part-time Barista",
+          "Graphic Designer"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Scan for key detail. Only the Barista position says \"No experience needed, will train.\" All others require specific experience, certifications, or portfolios."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: lin.zhao@email.ca\nTo: jobs@maplecityjobs.ca\nSubject: Job search help\n\nHi, I recently graduated with a Bachelor's in Communications and completed a 6-month internship at a digital agency where I managed social media accounts and created content. I'm looking for a full-time position with a salary of at least $50K. I also know Photoshop and Illustrator from my coursework.",
+        "question": "Which job is the best match for Lin?",
+        "options": [
+          "Marketing Coordinator — matches education, experience, and salary requirement",
+          "IT Support Specialist — matches salary range",
+          "Part-time Barista — available immediately",
+          "Graphic Designer — knows Adobe software"
+        ],
+        "correct": 0,
+        "explanation": "Technique: Match ALL criteria. Marketing Coordinator: Bachelor's ✓, 6-month internship toward 2yr req (close), $52K ✓ ($50K+), full-time ✓. Designer is freelance/contract (not full-time) and hourly (not salary). IT needs CompTIA cert."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: hr@technova.ca\nTo: lin.zhao@email.ca\nSubject: Application received\n\nDear Lin,\n\nThank you for applying to the Marketing Coordinator position. We were impressed by your portfolio and internship experience. While our posting states 2+ years of experience, we recognize that your internship demonstrated strong initiative.\n\nWe'd like to invite you for a first-round interview. Would next Tuesday at 2:00 PM work for you?",
+        "question": "Why is TechNova willing to interview Lin despite her limited experience?",
+        "options": [
+          "They couldn't find any other applicants",
+          "Her internship showed strong initiative and they were impressed by her portfolio",
+          "She offered to work for a lower salary",
+          "She was referred by a current employee"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the stated reason. \"We were impressed by your portfolio and internship experience\" + \"your internship demonstrated strong initiative.\" The text gives two specific reasons — only select what you read."
+      },
+      {
+        "type": "readChoose",
+        "passage": "💊 WELLNESS PHARMACY — COLD & FLU PRODUCTS\n\nColdEaze Daytime | $12.99 | Tablets | Relieves: congestion, headache, sore throat | ⚠️ May cause drowsiness | Ages 12+\nNightRest Plus | $14.99 | Liquid | Relieves: cough, congestion, fever | Helps you sleep | Ages 18+\nKidsCare Syrup | $9.99 | Liquid | Relieves: cough, mild fever | No drowsiness | Ages 2-11\nAllClear Nasal Spray | $8.49 | Spray | Relieves: congestion only | No drowsiness | Ages 6+\n\n⚠️ Do not combine multiple cold medications. Consult pharmacist if pregnant or on other medications.",
+        "question": "Which product is safe for a 7-year-old with a cough?",
+        "options": [
+          "ColdEaze Daytime (ages 12+)",
+          "NightRest Plus (ages 18+)",
+          "KidsCare Syrup (ages 2-11)",
+          "AllClear Nasal Spray (congestion only, no cough relief)"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Match age + symptom. Child is 7 → eliminates ColdEaze (12+) and NightRest (18+). Has cough → eliminates AllClear (congestion only). KidsCare: ages 2-11 ✓, relieves cough ✓."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: david.park@email.ca\nTo: pharmacist@wellnessrx.ca\nSubject: Cold medication question\n\nHi, I have a bad cold with congestion and headache but I need to drive to work. I can't take anything that makes me drowsy. I also have a 4-year-old daughter who has been coughing. Can you recommend something for both of us?",
+        "question": "Which combination works for David AND his daughter?",
+        "options": [
+          "ColdEaze Daytime for David + KidsCare for daughter",
+          "AllClear Spray for David + KidsCare for daughter",
+          "NightRest for David + KidsCare for daughter",
+          "ColdEaze for both David and his daughter"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match constraints for TWO people. David: congestion + headache, no drowsiness, drives. ColdEaze \"may cause drowsiness\" ✗. AllClear: no drowsiness ✓, congestion ✓ (but not headache). Daughter (age 4): KidsCare ✓. Best available: AllClear for David + KidsCare for daughter."
+      },
+      {
+        "type": "readChoose",
+        "passage": "From: pharmacist@wellnessrx.ca\nTo: david.park@email.ca\nSubject: Re: Cold medication question\n\nHi David,\n\nFor you, I'd recommend AllClear Nasal Spray for the congestion — it has no drowsiness side effects so it's safe for driving. For the headache, you can safely take regular acetaminophen (like Tylenol) alongside it. For your daughter, KidsCare Syrup is perfect for her age.\n\nOne important note: do not give your daughter any of YOUR medication, even in smaller doses.",
+        "question": "What extra advice does the pharmacist add?",
+        "options": [
+          "David should stay home from work today",
+          "David should take NightRest instead of AllClear",
+          "Never give adult medication to the child, even in smaller doses",
+          "The daughter should also take AllClear spray"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Identify the warning. \"Do not give your daughter any of YOUR medication, even in smaller doses.\" This is the key safety advice — a common real-world concern addressed directly."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Tasks 3-4: Information & Viewpoints",
+    "subtitle": "Paragraph matching and multiple opinions",
+    "icon": "📰",
+    "level": "harder",
+    "lesson": {
+      "title": "Reading Strategies — Tasks 3-4",
+      "points": [
+        "Task 3: Read paragraph → check ALL questions → Yes/No/Red Flag → next paragraph",
+        "Not Given (E) also means FALSE — if the statement contradicts the text, it's E",
+        "The test uses SYNONYMS — same idea, different words",
+        "Task 4: Identify each person's name and FEELING (positive/negative/mixed)",
+        "For \"who agrees\" questions, match the IDEA not the exact words",
+        "The \"Best Title\" question requires understanding the WHOLE article — do it last"
+      ]
+    },
+    "exercises": [
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nThe production of maple syrup in Canada dates back centuries before European contact. Indigenous peoples, particularly the Anishinaabe and Haudenosaunee, discovered that the sap of sugar maple trees could be collected in early spring and boiled down into a sweet, concentrated syrup. They used birch bark containers to collect the sap and heated stones to evaporate the water.\n\nParagraph B:\nToday, Quebec produces approximately 72% of the world's maple syrup supply. The province has over 7,400 producers and maintains a strategic reserve — similar to oil reserves — to stabilize global prices. This reserve, managed by the Federation of Quebec Maple Syrup Producers, can hold up to 60 million kilograms of syrup.",
+        "question": "Which paragraph discusses who first made maple syrup?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Both paragraphs equally",
+          "Neither paragraph — Not Given"
+        ],
+        "correct": 0,
+        "explanation": "Technique: Paragraph-by-Paragraph. Paragraph A discusses Indigenous peoples discovering sap collection — they were the FIRST to make it. Paragraph B is about modern production. The \"who first\" is clearly in A."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nThe grading system for maple syrup was updated in 2017 across Canada and the United States. All syrup is now classified as \"Grade A\" with four color categories: Golden (delicate taste), Amber (rich taste), Dark (robust taste), and Very Dark (strong taste). The lighter grades are typically produced earlier in the season when temperatures fluctuate between freezing and thawing.\n\nParagraph D:\nClimate change poses a significant threat to maple syrup production. As winters become warmer, the freeze-thaw cycle that drives sap flow is disrupted. Some researchers predict that by 2100, suitable maple habitat could shift northward by hundreds of kilometers, potentially moving prime production areas out of traditional regions and into areas that currently lack the infrastructure for large-scale harvesting.",
+        "question": "\"Rising temperatures may force production to relocate to new areas.\" Which paragraph supports this statement?",
+        "options": [
+          "Paragraph C — discusses grading changes",
+          "Paragraph D — discusses climate change shifting maple habitat north",
+          "Both paragraphs",
+          "Neither — Not Given"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Synonyms! \"Relocate to new areas\" = \"shift northward.\" \"Rising temperatures\" = \"warmer winters\" and \"climate change.\" Paragraph D discusses habitat shifting — this is the match. Paragraph C is about grading, not relocation."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about maple syrup:\n\nA: Indigenous origins, birch bark containers, heated stones\nB: Quebec produces 72% of world supply, strategic reserve of 60M kg\nC: 2017 grading update, four color categories, lighter = earlier season\nD: Climate change threat, freeze-thaw disruption, habitat shift northward",
+        "question": "\"Maple syrup is Canada's largest agricultural export.\" Which paragraph contains this information?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph D",
+          "Not Given (E) — no paragraph states this"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given! None of the paragraphs mention \"largest agricultural export.\" Paragraph B mentions Quebec's large production share but never calls it the largest export. If you did NOT read it, do NOT select it."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nThe Trans-Canada Highway, stretching 7,821 kilometers from St. John's, Newfoundland to Victoria, British Columbia, is one of the longest national highways in the world. Construction began in 1950 after the Trans-Canada Highway Act was passed, and the route was officially completed in 1962 when the final section through Rogers Pass in British Columbia was opened.\n\nParagraph B:\nDriving the entire highway takes approximately five to seven days without significant stops, though most travelers take two to three weeks to enjoy the scenery. The route passes through all ten provinces and showcases Canada's diverse landscapes — from the rocky Atlantic coastline to the vast prairies to the towering Rocky Mountains.",
+        "question": "When was the Trans-Canada Highway fully completed?",
+        "options": [
+          "1950, when construction began",
+          "1962, when the Rogers Pass section opened",
+          "It took two to three weeks to complete",
+          "The text does not mention the completion date"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Distinguish dates carefully. 1950 = construction BEGAN. 1962 = \"officially completed.\" The question asks when it was FULLY completed. Read precisely — 1950 is a trap."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nThe highway is not a single continuous road but rather a network of provincial highways connected under a national designation. Each province is responsible for maintaining its own section, which leads to varying road quality and speed limits across the country. In Ontario and Quebec, the highway often runs as a divided multi-lane expressway, while in the Maritime provinces, it may narrow to a two-lane road through small towns.\n\nParagraph D:\nSeveral iconic landmarks are accessible from the Trans-Canada Highway, including the Terry Fox Memorial near Thunder Bay, the giant nickel in Sudbury, and the world's largest fiddle in Sydney, Nova Scotia. These roadside attractions have become part of Canadian cultural identity, drawing millions of visitors each year who document their cross-country journey.",
+        "question": "\"Road conditions differ depending on which province you are in.\" Which paragraph discusses this?",
+        "options": [
+          "Paragraph A — about the highway's history",
+          "Paragraph B — about travel time",
+          "Paragraph C — about varying road quality by province",
+          "Paragraph D — about landmarks"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Synonyms. \"Road conditions differ\" = \"varying road quality.\" \"Depending on province\" = \"each province is responsible for maintaining its own section.\" Paragraph C clearly matches."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about the Trans-Canada Highway:\n\nA: 7,821 km, St. John's to Victoria, built 1950-1962\nB: 5-7 days driving, passes through all 10 provinces\nC: Network of provincial highways, varying quality/speed limits\nD: Landmarks — Terry Fox Memorial, giant nickel, largest fiddle",
+        "question": "\"The Trans-Canada Highway crosses into the United States at several border points.\" Which paragraph mentions this?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph C",
+          "Not Given (E)"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given! The text never mentions the US or border crossings. The highway goes through all ten PROVINCES (Paragraph B) — this is Canada-only. Don't add information from your own knowledge."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nUrban beekeeping has experienced a remarkable surge in popularity across Canadian cities over the past decade. Cities like Vancouver, Toronto, and Montreal have relaxed municipal bylaws to allow residents to keep beehives in their backyards, on rooftops, and even on apartment balconies. The movement is driven by growing awareness of pollinator decline and a desire to produce local, raw honey.\n\nParagraph B:\nCritics argue that the urban beekeeping trend may actually harm wild bee populations. Managed honeybee colonies compete with native bees for the same floral resources, potentially reducing food availability for species already under stress. A 2023 study from the University of Toronto found that areas with high densities of urban beehives showed a 15% decrease in native bee diversity.",
+        "question": "Which paragraph presents a concern about urban beekeeping?",
+        "options": [
+          "Paragraph A — positive trends only",
+          "Paragraph B — competition with wild bees",
+          "Both paragraphs express concern",
+          "Neither paragraph — Not Given"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Positive vs. Negative. Paragraph A = positive (popularity, awareness, local honey). Paragraph B = negative (harm wild bees, competition, 15% decrease in diversity). Concerns are clearly in B."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nFor those interested in starting, most municipalities require registration and mandate that hives be placed at least five meters from property lines. Beginner courses, offered by local beekeeping associations, typically cost between $150 and $300 and cover hive management, seasonal care, and honey extraction. A basic startup kit — including a hive, protective gear, and tools — costs approximately $500 to $800.\n\nParagraph D:\nBeyond honey production, urban beekeeping offers therapeutic benefits. Many practitioners describe the meditative quality of working with bees, and several hospitals and rehabilitation centers in Canada have introduced beekeeping programs for patients recovering from trauma or managing anxiety. The rhythmic hum of a healthy hive, beekeepers say, has a calming effect that rivals guided meditation.",
+        "question": "\"Beekeeping can support mental health recovery.\" Which paragraph discusses this?",
+        "options": [
+          "Paragraph A — about popularity",
+          "Paragraph B — about ecological concerns",
+          "Paragraph C — about getting started",
+          "Paragraph D — about therapeutic benefits"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Synonyms. \"Mental health recovery\" = \"therapeutic benefits,\" \"patients recovering from trauma,\" \"managing anxiety.\" Paragraph D specifically discusses hospitals and rehabilitation centers using beekeeping."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about urban beekeeping:\n\nA: Popularity surge, relaxed bylaws, pollinator awareness\nB: Critics — competition with wild bees, 15% decrease in native diversity\nC: Regulations, courses ($150-300), startup costs ($500-800)\nD: Therapeutic benefits, hospitals, meditation-like calming effect",
+        "question": "\"Urban honey is tested for contaminants before being sold at farmers' markets.\" Which paragraph discusses quality testing?",
+        "options": [
+          "Paragraph A",
+          "Paragraph C",
+          "Paragraph D",
+          "Not Given (E)"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given! No paragraph mentions quality testing, contaminants, or farmers' markets. Paragraph C discusses costs and regulations but not testing. Don't assume — only select what you read."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nAurora tourism in Canada has transformed from a niche pursuit into a multi-million dollar industry. Yellowknife, in the Northwest Territories, has emerged as one of the world's premier aurora viewing destinations, with specialized tour operators offering everything from heated viewing shelters to dogsled excursions under the northern lights. The city's tourism revenue from aurora-related activities exceeded $50 million in 2025.\n\nParagraph B:\nThe aurora borealis is caused by charged particles from the sun colliding with gases in Earth's atmosphere. These collisions produce light — green from oxygen at lower altitudes, purple and red from nitrogen at higher altitudes. The best viewing conditions require dark skies, minimal cloud cover, and proximity to the magnetic north pole, which is why northern Canada is ideally positioned.",
+        "question": "Which paragraph explains the science behind the northern lights?",
+        "options": [
+          "Paragraph A — about tourism industry",
+          "Paragraph B — about charged particles and atmospheric collisions",
+          "Both paragraphs explain the science",
+          "Neither paragraph"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Content identification. Paragraph A = economics (tourism, revenue, tour operators). Paragraph B = science (charged particles, collisions, oxygen/nitrogen, magnetic pole). Science is clearly B."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nHowever, the growing influx of tourists has raised environmental concerns in fragile northern ecosystems. Increased light pollution from hotels and facilities can ironically diminish the very aurora views that attract visitors. Local Indigenous communities, including the Dene and Inuit, have also expressed concerns about cultural commodification — the northern lights hold deep spiritual significance in their traditions.\n\nParagraph D:\nTo address these challenges, the Northwest Territories government has implemented a sustainable tourism framework. New developments must undergo dark-sky impact assessments, and tour operators are required to complete cultural sensitivity training. Some operators now partner with Indigenous guides who share traditional stories about the aurora, creating experiences that are both educational and respectful.",
+        "question": "\"Some local communities worry their spiritual traditions are being commercialized.\" Which paragraph addresses this?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph C — Indigenous concerns about cultural commodification",
+          "Paragraph D — government solutions"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Synonyms. \"Spiritual traditions being commercialized\" = \"cultural commodification\" + \"northern lights hold deep spiritual significance.\" Paragraph C raises the concern. Paragraph D offers solutions but doesn't raise the concern itself."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about aurora tourism:\n\nA: Yellowknife as premier destination, $50M+ revenue, tour operators\nB: Science — charged particles, oxygen=green, nitrogen=purple/red\nC: Environmental concerns, light pollution, Indigenous cultural commodification\nD: Sustainable framework, dark-sky assessments, cultural sensitivity training",
+        "question": "\"Aurora tours are available year-round in Yellowknife.\" Which paragraph confirms this?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph D",
+          "Not Given (E)"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given! Paragraph B mentions \"best viewing conditions\" but no paragraph states tours are year-round. Paragraph A mentions tour operators but not their season. Aurora is seasonal (winter months) — but even this real-world knowledge doesn't matter; the TEXT doesn't say it."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nCanadians waste approximately 2.3 million tonnes of edible food annually, according to a 2024 report by the National Zero Waste Council. This represents nearly $1,800 per household per year in discarded groceries. The largest category of waste is fruits and vegetables, followed by leftovers, bread and bakery items, and dairy products.\n\nParagraph B:\nSupermarkets contribute significantly to the problem through strict cosmetic standards. Produce that is slightly misshapen, discolored, or smaller than average is often rejected before it even reaches store shelves. Some estimates suggest that up to 30% of fruits and vegetables grown in Canada never make it to consumers due to these appearance-based criteria.",
+        "question": "\"Perfectly edible food is discarded because it does not look attractive enough.\" Which paragraph discusses this?",
+        "options": [
+          "Paragraph A — about household waste statistics",
+          "Paragraph B — about cosmetic standards rejecting produce",
+          "Both paragraphs equally",
+          "Neither — Not Given"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Synonyms. \"Does not look attractive enough\" = \"misshapen, discolored, smaller than average\" = \"cosmetic standards.\" Paragraph B discusses supermarket rejection based on appearance."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nSeveral innovative solutions have emerged. Apps like \"FlashFood\" and \"Too Good To Go\" connect consumers with discounted food nearing its expiry date. Community fridges — free-standing refrigerators stocked with donated food in public spaces — have appeared in cities across the country. Vancouver alone has over 40 community fridges, reducing both waste and food insecurity.\n\nParagraph D:\nAt the policy level, France's 2016 law banning supermarkets from destroying unsold food inspired similar discussions in Canada. British Columbia became the first province to mandate food waste reporting for large retailers in 2025. The data collected will help identify waste patterns and develop targeted reduction strategies.",
+        "question": "\"Technology is helping people buy food that would otherwise be thrown away.\" Which paragraph supports this?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph C — apps connecting consumers with discounted near-expiry food",
+          "Paragraph D — policy solutions"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Synonyms. \"Technology\" = \"apps.\" \"Buy food that would otherwise be thrown away\" = \"discounted food nearing its expiry date.\" FlashFood and Too Good To Go are the technology solutions in Paragraph C."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about Canadian food waste:\n\nA: 2.3M tonnes/year, $1,800/household, fruits & veggies biggest category\nB: Supermarket cosmetic standards, 30% produce rejected\nC: Apps (FlashFood, Too Good To Go), community fridges (40+ in Vancouver)\nD: France's 2016 law, BC mandatory waste reporting 2025",
+        "question": "\"Most food waste in Canada comes from restaurants and fast food chains.\" Which paragraph states this?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph C",
+          "Not Given (E)"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given and CAREFUL reading! Paragraph A mentions household waste ($1,800/household) and Paragraph B mentions supermarkets — but NO paragraph mentions restaurants or fast food chains. The text focuses on households and supermarkets, not restaurants."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Karen Mitchell, Teacher (15 years):\n\"I've seen the decline firsthand. Students can't focus for more than five minutes without checking their phones. Last year, I caught a student live-streaming my math class on TikTok instead of taking notes. Banning phones during school hours would dramatically improve learning outcomes. We managed fine without them for decades.\"\n\nDr. James Okafor, Child Psychologist:\n\"A complete ban is a band-aid solution. The real issue is teaching digital literacy and self-regulation. If we ban phones at school, kids just binge-use them at home. We should integrate phones INTO learning — there are incredible educational apps that make math and science engaging.\"",
+        "question": "How do Karen and Dr. Okafor differ in their views?",
+        "options": [
+          "Karen supports phones for learning; Dr. Okafor wants them banned",
+          "Karen wants a ban to improve focus; Dr. Okafor prefers teaching responsible use",
+          "Both agree phones should be banned entirely",
+          "Both agree phones should be allowed without restrictions"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify each person's STANCE. Karen = NEGATIVE toward phones (\"ban would dramatically improve learning\"). Dr. Okafor = AGAINST a ban (\"band-aid solution\") and FOR integration (\"integrate phones INTO learning\"). Opposite positions."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Maya Singh, Grade 11 Student:\n\"Honestly, I use my phone for school stuff all the time — looking up words, checking the class calendar, even recording lectures so I can review later. Taking that away would make things harder, not easier. Maybe just block social media apps on the school WiFi instead of banning phones completely.\"\n\nRobert Chen, Parent:\n\"My daughter has Type 1 diabetes, and her glucose monitor sends alerts to her phone. A blanket ban could literally put her health at risk. Any policy needs medical exemptions at minimum. I support reasonable restrictions but not a total ban.\"",
+        "question": "What do Maya and Robert have in common?",
+        "options": [
+          "Both want phones banned completely",
+          "Both oppose a total ban but support some restrictions",
+          "Both think phones are purely distracting",
+          "Both are concerned about health monitoring"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find COMMON ground. Maya: \"maybe just block social media\" (partial restriction, not total ban). Robert: \"reasonable restrictions but not a total ban.\" Both oppose TOTAL bans but accept SOME limits."
+      },
+      {
+        "type": "readChoose",
+        "passage": "The school board is considering a new policy. Based on the four viewpoints:\n- Karen (teacher): Full ban during school hours\n- Dr. Okafor (psychologist): No ban; teach digital literacy\n- Maya (student): Block social media on WiFi, keep phones\n- Robert (parent): Medical exemptions required; reasonable restrictions only\n\nA new comment reads:\n\"After reading everyone's perspectives, I think the best approach is a compromise: phones stay in lockers during class, but students can use them during breaks. Medical exemptions are guaranteed, and the school offers a digital citizenship course.\"",
+        "question": "Whose viewpoint does this comment LEAST align with?",
+        "options": [
+          "Karen — she wants phones banned ALL school hours, not just during class",
+          "Dr. Okafor — he wants phones integrated into learning, not locked away",
+          "Maya — she wants phone access during class for educational use",
+          "Robert — the comment includes his medical exemption request"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Compare each stance to the proposal. Dr. Okafor specifically wants phones IN the classroom as learning tools and calls banning a \"band-aid.\" Locking phones in lockers during class directly contradicts his position. Karen gets partial satisfaction (banned in class). Maya and Robert get some of what they want."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Priya Sharma, HR Director at a tech company:\n\"We piloted a four-day work week last year, and the results were stunning. Productivity actually increased by 12%, sick days dropped by 40%, and our employee satisfaction scores hit an all-time high. The key was focusing on output rather than hours. Some meetings were cut, and employees found creative ways to work more efficiently.\"\n\nMarc Leblanc, Small Business Owner (Restaurant):\n\"Four days might work for office jobs, but it's a fantasy for the service industry. My restaurant is open seven days a week. If I give everyone a three-day weekend, I need to hire more staff — staff I can't afford. This whole movement ignores that most Canadians don't work desk jobs.\"",
+        "question": "Why does Marc oppose the four-day work week?",
+        "options": [
+          "He thinks employees will be less productive",
+          "It is impractical and too expensive for service industry businesses",
+          "He believes employees should work harder, not less",
+          "His employees voted against it"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the stated reason. Marc says \"I need to hire more staff — staff I can't afford\" and \"ignores that most Canadians don't work desk jobs.\" His opposition is practical (cost + industry type), not ideological."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Elena Volkov, Nurse:\n\"I already work twelve-hour shifts, so a 'four-day work week' would mean even longer days. In healthcare, patient care doesn't stop because it's Friday. What I'd prefer is more flexibility in scheduling — let me choose my shifts rather than dictating a one-size-fits-all policy.\"\n\nDr. Amir Hassan, Economist:\n\"The data from Iceland's trial and our own pilots is compelling. Countries that adopted shorter work weeks saw GDP growth alongside improved well-being. The concern about service industries is valid, but it can be addressed with staggered schedules and shift rotations. We're clinging to a model designed for factories in the 1920s.\"",
+        "question": "Who would most likely agree with the statement: \"The traditional five-day model is outdated\"?",
+        "options": [
+          "Marc — he thinks the current system works fine for his business",
+          "Elena — she wants flexibility, not a rigid new schedule",
+          "Dr. Hassan — he says we're clinging to a 1920s factory model",
+          "Priya — she already implemented four days successfully"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Match statement to viewpoint. \"Outdated\" = \"clinging to a model designed for factories in the 1920s.\" Dr. Hassan explicitly calls the current model old-fashioned. Priya agrees in practice but doesn't use this language. Dr. Hassan MOST directly matches."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Summary of viewpoints on the four-day work week:\n- Priya (HR Director): Strong supporter — saw 12% productivity increase\n- Marc (Restaurant Owner): Opposed — impractical and expensive for service industry\n- Elena (Nurse): Wants flexibility, not a rigid four-day policy\n- Dr. Hassan (Economist): Supporter — data-driven, addresses service industry concerns\n\nA new comment reads:\n\"I run a small accounting firm. We tried four-day weeks during summer and our clients complained about Friday availability. We switched to alternating Fridays off, and that seems to work better for everyone.\"",
+        "question": "Whose viewpoint is this commenter most similar to?",
+        "options": [
+          "Priya — both fully support four-day weeks",
+          "Marc — both completely oppose the idea",
+          "Elena — both prefer flexible scheduling over rigid policies",
+          "Dr. Hassan — both cite economic data"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Match APPROACH, not just topic. The commenter tried a rigid policy (failed), then found a flexible compromise (alternating Fridays). Elena also rejected rigid policies and wanted scheduling flexibility. Similar approach: flexibility > rigidity."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Linda Park, Environmental Activist:\n\"Canada needs to ban the sale of new gas cars by 2030 — not 2035, not 2040. Every year we delay costs lives through air pollution and accelerates climate catastrophe. Norway is already at 90% electric vehicle sales. If they can do it, so can we. The technology exists; what's missing is political courage.\"\n\nTrevor Walsh, Auto Mechanic (28 years):\n\"I'm all for EVs eventually, but 2030 is reckless. Our charging infrastructure is nowhere near ready — drive from Winnipeg to Thunder Bay and find me a fast charger. And what about people who can't afford a $50,000 car? This mandate would hurt working-class families the most.\"",
+        "question": "What is Trevor's main argument against a 2030 deadline?",
+        "options": [
+          "He believes climate change is not real",
+          "Infrastructure and affordability are not ready",
+          "He wants to protect his job as a mechanic",
+          "He prefers hydrogen cars over electric ones"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Stated reasons only. Trevor gives TWO reasons: (1) charging infrastructure not ready, (2) $50K cars hurt working-class families. He's not anti-EV (\"all for EVs eventually\") — he's anti-rushed-timeline. Don't infer job protection; he doesn't mention it."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Fatima Al-Rashid, EV Owner (3 years):\n\"I love my electric car — I save about $200 a month on gas and maintenance. But I live in Toronto where chargers are everywhere. When I visited my parents in rural Saskatchewan last Christmas, I had genuine range anxiety. The reality is that EVs work brilliantly in cities but the rural experience needs serious investment first.\"\n\nDr. Michael Torres, Energy Policy Researcher:\n\"The debate is framed wrong. It's not EVs versus gas cars — it's about total emissions. A 2030 ban on new gas car SALES still means gas cars on the road for 15+ more years. Meanwhile, investing in public transit, cycling infrastructure, and remote work policies could reduce transportation emissions faster than an EV mandate.\"",
+        "question": "Who challenges the entire framework of the EV debate?",
+        "options": [
+          "Linda — she wants an earlier deadline",
+          "Trevor — he wants a later deadline",
+          "Fatima — she shares her personal experience",
+          "Dr. Torres — he says the debate itself is framed wrong"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Identify who REFRAMES. \"The debate is framed wrong\" — Dr. Torres explicitly says the question itself is wrong. Others argue within the framework (earlier/later deadline, personal experience). Dr. Torres steps outside it entirely."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Summary of EV mandate viewpoints:\n- Linda (Activist): Ban gas cars by 2030, no delays\n- Trevor (Mechanic): 2030 is reckless — infrastructure and cost not ready\n- Fatima (EV Owner): EVs great in cities, rural needs investment\n- Dr. Torres (Researcher): Focus on total emissions, not just EVs\n\nA new comment:\n\"Why not a tiered approach? Ban gas car sales in major cities by 2030 where charging is available, and give rural areas until 2035 with government-funded charging stations in between.\"",
+        "question": "This compromise would MOST satisfy which two people?",
+        "options": [
+          "Linda and Dr. Torres",
+          "Trevor and Fatima",
+          "Linda and Trevor",
+          "Fatima and Dr. Torres"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match elements. Trevor's concern: rural infrastructure not ready → solved by rural 2035 + government chargers. Fatima's concern: cities great, rural needs investment → tiered approach addresses this. Linda wants 2030 everywhere (cities-only partial). Dr. Torres wants different approach entirely."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Sophie Martin, Server (8 years):\n\"Tips make up 60% of my income. Without them, I'd need to find a second job or leave the industry entirely. People who say 'just pay servers more' don't understand that most restaurants operate on razor-thin margins. If you eliminate tips and raise menu prices by 20%, customers complain about expensive food AND servers earn less because the owner controls the wage.\"\n\nKevin Cho, Restaurant Customer:\n\"I'm tired of tip screens popping up everywhere — at coffee shops, takeout counters, even self-serve frozen yogurt. A 20% tip used to be exceptional; now it's the minimum suggested amount. The expectation has gotten out of hand. I tip generously at sit-down restaurants but refuse to feel guilty for declining at a counter where I poured my own coffee.\"",
+        "question": "How do Sophie and Kevin view tipping differently?",
+        "options": [
+          "Sophie sees tips as essential income; Kevin feels tipping expectations have expanded too far",
+          "Both want to eliminate tipping entirely",
+          "Sophie thinks tips are too high; Kevin wants to tip more",
+          "Both agree the current system is perfect"
+        ],
+        "correct": 0,
+        "explanation": "Technique: Identify each person's core position. Sophie: tips = 60% of income, essential, system works for servers. Kevin: tip \"expectations have gotten out of hand,\" especially at counters. Different perspectives: server (needs tips) vs. customer (frustrated by expansion)."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Amara Osei, Restaurant Owner:\n\"I tried a no-tipping model at my restaurant — raised wages to $25/hour, increased menu prices by 18%, and eliminated tip prompts. Within six months, I lost my best servers to tipping restaurants where they earned $35-40/hour with tips. The math doesn't work unless EVERYONE switches at once.\"\n\nDr. Rachel Kim, Labor Economist:\n\"Tipping creates income volatility, racial bias in earnings, and power imbalances between customers and workers. Studies consistently show that tipping correlates more with the server's appearance and race than service quality. Moving to a professional wage model isn't just better economics — it's an equity issue.\"",
+        "question": "What happened when Amara eliminated tipping?",
+        "options": [
+          "Revenue increased and customers were happier",
+          "Her best servers left for restaurants that still had tipping",
+          "The government required her to restore tips",
+          "Customer complaints about food quality increased"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the specific outcome. Amara says \"I lost my best servers to tipping restaurants where they earned $35-40/hour.\" The experiment failed not because of customers but because servers earned MORE with tips elsewhere."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Tipping culture viewpoints:\n- Sophie (Server): Tips essential — 60% of income, system works\n- Kevin (Customer): Tipping has expanded too far, especially at counters\n- Amara (Owner): No-tip model failed — lost staff to tipping competitors\n- Dr. Kim (Economist): Tipping causes bias and inequality, should be replaced\n\nA new comment:\n\"What if restaurants were required to display the TOTAL price (food + service charge) on the menu, with no tip prompt? Servers get a guaranteed living wage, customers know exactly what they're paying, and there's no awkward tip screen.\"",
+        "question": "Who would most likely OPPOSE this proposal?",
+        "options": [
+          "Kevin — he dislikes tip screens, and this eliminates them",
+          "Dr. Kim — this addresses equity by removing bias from earnings",
+          "Sophie — she might earn less than her current tip-based income",
+          "Amara — this solves the competitive problem if required for all restaurants"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Who LOSES. Sophie earns 60% from tips — tips can exceed a service charge. A fixed service charge would likely pay less than peak tipping. Kevin benefits (no tip screens). Dr. Kim benefits (no bias). Amara benefits (all restaurants equal). Sophie has most to lose."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Jean-François Dubois, Translator, Ottawa:\n\"Bilingualism is a cornerstone of Canadian identity. Federal employees serve ALL Canadians, and every citizen has the right to receive services in English or French. Lowering the bilingual requirement would send a message that francophone Canadians are second-class citizens. The standard should be maintained — even raised.\"\n\nRachel Blackwood, Policy Analyst, Calgary:\n\"I scored 'superior' on every qualification for a federal position but was rejected because my French wasn't at the required level. I grew up in Alberta where French immersion wasn't available. This policy punishes Western Canadians and creates a two-tier system where Quebecers have an automatic advantage for government jobs.\"",
+        "question": "What is Rachel's main complaint?",
+        "options": [
+          "She thinks French is an unnecessary language",
+          "The bilingual requirement disadvantages Canadians from provinces with less French education",
+          "She was fired from her job unfairly",
+          "She believes all jobs should be English-only"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Stated reason. Rachel scored \"superior\" on everything else but French. She grew up where \"French immersion wasn't available.\" Her complaint is geographic disadvantage (\"punishes Western Canadians\"), not anti-French sentiment."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Yuki Tanaka, Immigrant, Vancouver:\n\"I speak English, Japanese, and Mandarin — three of the world's most spoken languages. But I can't qualify for a federal job because I don't speak French, which fewer people speak globally than any of my three languages. Canada prides itself on multiculturalism, but this policy only values ONE type of bilingualism.\"\n\nDr. Pierre Laroche, Sociolinguist:\n\"The bilingual policy isn't about practicality — it's about historical commitment. French and English are foundational to Confederation. Without this protection, French would gradually disappear from federal institutions, as has happened in many previously bilingual countries. Some traditions are worth preserving even when they're inconvenient.\"",
+        "question": "Whose argument is based on historical principle rather than current practicality?",
+        "options": [
+          "Jean-François — he argues about citizen rights to service",
+          "Rachel — she argues about fairness in hiring",
+          "Yuki — she argues about global language utility",
+          "Dr. Laroche — he argues about historical commitment to Confederation"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Identify the BASIS of each argument. Dr. Laroche explicitly says \"it's not about practicality — it's about historical commitment.\" He grounds his position in history (Confederation) and tradition, while others argue about rights, fairness, or utility."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Bilingual requirement viewpoints:\n- Jean-François: Maintain/raise standard — citizen rights to French service\n- Rachel: Unfair to Western Canadians without French education access\n- Yuki: Policy only values French bilingualism, ignores other languages\n- Dr. Laroche: Historical commitment must be preserved\n\nA new comment:\n\"What about offering paid French training to qualified candidates who pass all other requirements? Give them two years to reach the language level while working in an English-capacity role.\"",
+        "question": "This proposal would most directly address whose concern?",
+        "options": [
+          "Jean-François — French services would still be guaranteed eventually",
+          "Rachel — she could get the job and learn French on the job",
+          "Yuki — her other languages would be valued",
+          "Dr. Laroche — the historical commitment is strengthened"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match solution to complaint. Rachel was qualified in everything EXCEPT French and lacked access to training. Paid French training + working while learning directly solves her problem. Yuki's concern (other languages not valued) isn't addressed. Jean-François might worry about the two-year gap."
+      },
+      {
+        "type": "readChoose",
+        "passage": "David Wong, Father of Two Teens:\n\"I tried everything — screen time limits, parental controls, family media agreements. Nothing works when every kid at school is on Instagram and TikTok. My 13-year-old was cyberbullied last year and developed anxiety. A legal age restriction of 16 would give parents the backup we desperately need. Right now, I'm fighting this battle alone.\"\n\nSamira Patel, Digital Rights Advocate:\n\"Age restrictions sound protective but they're technically unenforceable without invasive age verification — which means handing government IDs or biometric data to tech companies. The cure is worse than the disease. Instead, fund digital literacy education and hold platforms accountable for their algorithms, not individual children.\"",
+        "question": "What problem does Samira identify with age restrictions?",
+        "options": [
+          "Children would simply lie about their age",
+          "Enforcement requires invasive data collection from all users",
+          "Social media companies would lose too much revenue",
+          "Parents would stop monitoring their children's online activity"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Specific stated concern. Samira says enforcement needs \"invasive age verification — government IDs or biometric data to tech companies.\" Her concern is privacy/data collection, not lying or revenue."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Emma Li, 15-year-old Student:\n\"Social media is how my generation communicates. Taking it away doesn't solve loneliness or mental health issues — it just isolates us more. I use social media to connect with friends who moved away, find study groups, and follow my interests. Adults blame the tool instead of looking at WHY teens are struggling. Maybe fix school pressure and underfunded mental health services first.\"\n\nDr. Raj Mehta, Pediatrician:\n\"I see the clinical impact daily. Teen depression and anxiety have increased 70% since 2012 — directly correlating with smartphone adoption. The developing adolescent brain is particularly vulnerable to the dopamine feedback loops these platforms engineer. This isn't about blaming teens; it's about protecting them from products designed to be addictive.\"",
+        "question": "How does Emma's perspective contrast with Dr. Mehta's?",
+        "options": [
+          "Emma blames adults for teen mental health; Dr. Mehta blames teens",
+          "Emma sees social media as a useful tool; Dr. Mehta sees it as clinically harmful",
+          "Both agree social media should be banned for teens",
+          "Emma is a doctor; Dr. Mehta is a student"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Contrast positions. Emma: social media = communication tool, connecting, study groups (positive). Dr. Mehta: social media = dopamine loops, depression, addictive by design (negative/clinical). Same subject, opposite frames."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Social media age restriction viewpoints:\n- David (Parent): Supports age 16 restriction — needs backup against peer pressure\n- Samira (Advocate): Opposes — enforcement requires invasive data collection\n- Emma (Teen): Opposes — social media is essential for communication; fix root causes\n- Dr. Mehta (Pediatrician): Supports — clinical evidence of harm to developing brains\n\nA new comment:\n\"Australia just implemented a social media ban for under-16s. Early data shows teens migrating to less regulated platforms and encrypted messaging apps. The usage didn't decrease — it just moved to places with fewer safety features.\"",
+        "question": "This evidence most strengthens whose argument?",
+        "options": [
+          "David — it shows bans are working in Australia",
+          "Samira — it shows restrictions push teens to less safe spaces",
+          "Dr. Mehta — it shows teen brains need more protection",
+          "Emma — it shows teens don't use social media much anyway"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Match evidence to argument. Samira argued restrictions are unenforceable and counterproductive. Australia's result (teens migrating to less regulated platforms) proves her point — the \"cure is worse than the disease.\" Usage moved, not decreased."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Councillor Angela Morris:\n\"We need to build our way out of this crisis. Zoning reform is the answer — allow mid-rise housing in neighborhoods currently restricted to single-family homes. Vancouver's 'missing middle' policy has shown that you can add density without destroying neighborhood character. NIMBYism is the biggest obstacle to affordable housing.\"\n\nTom Sinclair, Homeowner (25 years):\n\"I bought my house in this neighborhood BECAUSE it was single-family. Now the city wants to build a four-story apartment building next door? My property value, my privacy, my street parking — all affected. Existing residents should have a say in what gets built in their community.\"",
+        "question": "What does Tom fear about zoning reform?",
+        "options": [
+          "He worries about increased crime in the neighborhood",
+          "He fears negative impacts on property value, privacy, and parking",
+          "He thinks new buildings will be too expensive for young buyers",
+          "He is concerned about environmental damage from construction"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Listed concerns. Tom explicitly mentions three things: \"My property value, my privacy, my street parking — all affected.\" Only select what was stated, not inferred concerns like crime or environment."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Jasmine Okoye, Renter, Age 29:\n\"I have a master's degree and a good salary, and I still can't afford to buy a home in any major Canadian city. My rent takes 45% of my income. The homeowners at these council meetings fighting against new housing — they're pulling the ladder up behind them. They got affordable housing in the 1990s and now they want to block others from the same opportunity.\"\n\nDr. Samir Naik, Urban Planner:\n\"Building more is necessary but insufficient. We also need demand-side interventions: restrictions on short-term rentals like Airbnb, a speculation tax on properties flipped within two years, and increased social housing investment. Without these measures, new supply will be absorbed by investors rather than families who need homes.\"",
+        "question": "Who argues that increasing housing supply alone will not solve the problem?",
+        "options": [
+          "Angela — she wants zoning reform to increase supply",
+          "Tom — he opposes new construction",
+          "Jasmine — she wants more homes built",
+          "Dr. Naik — he says supply-side alone is insufficient without demand-side interventions"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Identify the nuanced position. Dr. Naik says \"building more is necessary but INSUFFICIENT\" — he agrees with supply but adds demand-side measures (Airbnb restrictions, speculation tax, social housing). He's the only one arguing supply alone isn't enough."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Housing crisis viewpoints:\n- Angela (Councillor): Zoning reform, build more mid-rise housing\n- Tom (Homeowner): Opposes density — protect existing neighborhoods\n- Jasmine (Renter): Homeowners blocking new housing are \"pulling the ladder up\"\n- Dr. Naik (Planner): Build more + restrict Airbnb + speculation tax + social housing\n\nA new comment:\n\"My 800-unit condo building went up in 2023 in downtown Toronto. Within a year, 200 units were listed on Airbnb. The building was supposed to help with housing — instead it became a hotel. We need both new construction AND regulations on how units are used.\"",
+        "question": "This comment best illustrates the point made by:",
+        "options": [
+          "Angela — new housing was built as she recommends",
+          "Tom — the new building caused neighborhood problems",
+          "Jasmine — she still can't afford to buy there",
+          "Dr. Naik — new supply was absorbed by investors, not families"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Match real example to argument. Dr. Naik warned \"new supply will be absorbed by investors rather than families who need homes.\" The Airbnb example (200/800 units = 25% became short-term rentals) is exactly this scenario. Supply existed but didn't help housing — proving Dr. Naik's point."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph A:\nBritish Columbia's whale watching industry generates over $300 million annually and supports more than 2,000 jobs in coastal communities. The province is home to resident orca populations, migrating humpback whales, and grey whales, making it one of the world's top marine wildlife viewing destinations. Victoria, Tofino, and Telegraph Cove are the primary departure points for tours.\n\nParagraph B:\nScientific research has documented concerning impacts of vessel traffic on whale behaviour. Engine noise interferes with echolocation — the sonar-like system orcas use to hunt salmon. Studies from the University of British Columbia found that orcas spend 18% less time foraging when whale watching boats are within 400 meters, directly reducing their caloric intake during critical feeding periods.",
+        "question": "\"Boat noise disrupts how whales find food.\" Which paragraph discusses this?",
+        "options": [
+          "Paragraph A — about the tourism industry",
+          "Paragraph B — about engine noise interfering with echolocation",
+          "Both paragraphs",
+          "Neither — Not Given"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Synonyms. \"Boat noise\" = \"engine noise/vessel traffic.\" \"Disrupts how whales find food\" = \"interferes with echolocation\" + \"less time foraging.\" Paragraph B clearly describes this scientific finding."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paragraph C:\nIn response, Transport Canada introduced new regulations in 2024. All whale watching vessels must maintain a minimum distance of 200 meters from orcas (increased from 100 meters) and reduce speed to 7 knots in designated whale habitat zones. Companies must also use quieter propulsion technologies by 2027, with government subsidies available to offset upgrade costs.\n\nParagraph D:\nSome operators have pivoted to land-based whale watching as an alternative. Platforms at Lime Kiln Point State Park and several locations along Vancouver Island's west coast offer excellent viewing without approaching the animals. These operations have lower environmental impact and, surprisingly, higher customer satisfaction ratings — visitors report that seeing whales from a clifftop in their natural habitat feels more authentic than chasing them in a boat.",
+        "question": "\"Watching whales from shore may be a better experience than boat tours.\" Which paragraph explores this idea?",
+        "options": [
+          "Paragraph A",
+          "Paragraph B",
+          "Paragraph C",
+          "Paragraph D — land-based whale watching with higher satisfaction"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Match concept. \"From shore\" = \"land-based.\" \"Better experience\" = \"higher customer satisfaction ratings\" and \"feels more authentic.\" Paragraph D discusses this alternative approach."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Based on all four paragraphs (A-D) about whale watching:\n\nA: $300M industry, 2,000+ jobs, Victoria/Tofino/Telegraph Cove\nB: Engine noise disrupts echolocation, 18% less foraging within 400m\nC: 2024 regulations — 200m minimum, 7 knots, quiet propulsion by 2027\nD: Land-based alternatives, higher customer satisfaction, more authentic",
+        "question": "\"Whale watching companies are required to use electric-powered boats.\" Which paragraph states this?",
+        "options": [
+          "Paragraph B",
+          "Paragraph C",
+          "Paragraph D",
+          "Not Given (E)"
+        ],
+        "correct": 3,
+        "explanation": "Technique: Not Given — careful reading! Paragraph C says \"quieter propulsion technologies\" but does NOT specify electric. \"Quieter\" could mean many things (hybrid, muffled engines, etc.). Don't assume electric just because it seems likely."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Professor Diana Walsh, Economics:\n\"Free tuition sounds compassionate but it's regressive. University students are disproportionately from middle and upper-class families. Making tuition free means a truck driver's taxes subsidize a lawyer's child's degree. Targeted grants for low-income students are far more equitable than a universal benefit that helps the wealthy most.\"\n\nOmar Hassan, First-Generation Student:\n\"My parents couldn't help me with tuition. I worked two jobs while studying and graduated with $38,000 in debt. That debt delayed everything — buying a car, renting a decent apartment, starting a family. Free tuition would have changed my life trajectory. People like Professor Walsh already had access; they don't understand what it's like to start from zero.\"",
+        "question": "Why does Professor Walsh oppose free tuition?",
+        "options": [
+          "She thinks university education has no value",
+          "It benefits wealthy families more than those who need help",
+          "She wants universities to be privatized",
+          "She believes student debt builds character"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Stated reason. Walsh calls free tuition \"regressive\" because university students are \"disproportionately from middle and upper-class families.\" Tax money from lower-income workers subsidizes wealthier students. Her argument is about equity, not opposing education."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Lisa Bergmann, International Comparison Researcher:\n\"Germany eliminated tuition in 2014. The result? Enrollment increased 22%, but completion rates barely changed. The real barriers aren't tuition — they're living costs, textbooks, and opportunity cost of not working. Free tuition alone doesn't solve access; you need comprehensive student support including housing subsidies and childcare.\"\n\nTyler Reed, Student Union President:\n\"Even if free tuition isn't perfect, it sends a powerful message: education is a right, not a privilege. Every other investment in public good — healthcare, roads, fire departments — is funded by taxes. Why should education be different? The 'targeted grants' approach sounds logical but it creates bureaucracy that prevents the most vulnerable from accessing help.\"",
+        "question": "What does Lisa's German example demonstrate?",
+        "options": [
+          "Free tuition increased enrollment dramatically and solved all access problems",
+          "Removing tuition helped but did not address other barriers like living costs",
+          "Germany regretted eliminating tuition and brought it back",
+          "German students are wealthier than Canadian students"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Nuanced reading. Lisa says enrollment \"increased 22%\" (positive) BUT \"completion rates barely changed\" (problem persists). She concludes \"real barriers aren't tuition\" — living costs, textbooks, opportunity cost. Free tuition helped partially but wasn't enough."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Tuition viewpoints:\n- Prof. Walsh: Free tuition is regressive — targeted grants are better\n- Omar: Free tuition would have changed his life — debt delayed everything\n- Lisa: Germany shows tuition isn't the main barrier — need comprehensive support\n- Tyler: Education is a right like healthcare — fund it publicly\n\nA new comment:\n\"What if we made tuition free for the first two years only? Students try university risk-free, and those who continue to years 3-4 have already proven their commitment. It limits cost while removing the biggest barrier to entry.\"",
+        "question": "This proposal attempts to bridge the gap between which two viewpoints?",
+        "options": [
+          "Omar and Tyler — both want fully free tuition",
+          "Prof. Walsh and Omar — reduces cost without being fully universal",
+          "Lisa and Tyler — addresses completion rates and access",
+          "Prof. Walsh and Lisa — both oppose free tuition entirely"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Find the compromise. Walsh worries about cost/regressiveness of universal free tuition. Omar wants affordability. Two free years = reduces Omar's barrier to entry while limiting Walsh's concern about cost (not fully universal). It bridges the gap between \"too expensive for everyone\" and \"I can't afford to start.\""
+      },
+      {
+        "type": "readChoose",
+        "passage": "Paula Chen, Downtown Café Owner:\n\"My café used to be packed every weekday morning with office workers. Now, Tuesday to Thursday I get maybe 60% of pre-pandemic traffic, and Monday and Friday are dead. I've had to let go of three staff members. The remote work advocates celebrate their freedom while small businesses downtown are dying. Someone needs to acknowledge the cost.\"\n\nAlex Rivera, Software Developer (Fully Remote):\n\"I used to spend 90 minutes commuting each way and $400 a month on gas and parking. Going remote gave me three hours of my life back every day. I'm more productive, healthier, and actually present for my kids. If downtown businesses need to adapt, that's the market working. Nobody owes them a commute.\"",
+        "question": "How does Alex respond to the concern about downtown businesses?",
+        "options": [
+          "He feels guilty and plans to return to the office",
+          "He dismisses it as a natural market adjustment",
+          "He suggests government subsidies for affected businesses",
+          "He agrees that workers should be forced back to offices"
+        ],
+        "correct": 1,
+        "explanation": "Technique: Identify attitude. Alex says \"that's the market working\" and \"nobody owes them a commute.\" He acknowledges businesses need to \"adapt\" but doesn't feel responsibility. Dismissive of the concern, framing it as natural economic evolution."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Councillor Nadia Youssef:\n\"We can't force people back downtown, but we can incentivize it. Convert empty office buildings to residential units, create cultural hubs, improve transit to make downtown attractive for reasons beyond work. Cities that adapted — like Portland with its walkable mixed-use zones — are thriving. Cities that just waited for workers to return are still struggling.\"\n\nDr. Martin Cheng, Urban Economist:\n\"The five-day office model was already inefficient before COVID. What we're seeing isn't a crisis — it's a correction. Downtown land values were inflated by artificial demand. As prices adjust, new types of businesses will emerge. The transition is painful for incumbents like Paula, but the end result will be a more diverse, resilient downtown.\"",
+        "question": "Who views the current situation as an opportunity rather than a crisis?",
+        "options": [
+          "Paula — her business is suffering",
+          "Alex — he just wants to stay home",
+          "Nadia and Dr. Cheng — both see potential for positive transformation",
+          "Only Nadia — Dr. Cheng is pessimistic about the future"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Positive vs. Negative. Nadia: \"convert,\" \"create,\" \"cities that adapted are thriving\" (opportunity). Dr. Cheng: \"not a crisis — it's a correction,\" \"more diverse, resilient downtown\" (opportunity). Both frame it positively. Paula is suffering, Alex is neutral about downtown."
+      },
+      {
+        "type": "readChoose",
+        "passage": "Remote work and downtown viewpoints:\n- Paula (Café Owner): Downtown is dying, small businesses suffering\n- Alex (Developer): Remote work is better; businesses should adapt\n- Nadia (Councillor): Incentivize downtown through conversion and culture\n- Dr. Cheng (Economist): It's a correction, not a crisis — new businesses will emerge\n\nA new comment:\n\"I work hybrid — three days in office, two from home. My team is actually MORE collaborative on office days because we save meetings for in-person time. And I still grab coffee from my favourite café on those days. Maybe the answer isn't all-or-nothing.\"",
+        "question": "This commenter's experience suggests:",
+        "options": [
+          "Paula is wrong — downtown businesses are fine",
+          "Alex is wrong — remote work has no benefits",
+          "A hybrid model could partially address both Paula's and Alex's concerns",
+          "Dr. Cheng is wrong — the old model was perfectly efficient"
+        ],
+        "correct": 2,
+        "explanation": "Technique: Find the balance. The commenter works hybrid: gets Alex's benefits (2 days home) AND supports Paula's café (3 days in office). \"Not all-or-nothing\" = compromise between full-remote (Alex) and full in-person (what Paula needs). Partial solution for both sides."
+      }
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+// Reading Drills — Tasks 3-4 (Harder) Triplets
+// 15 scenarios × 3 exercises = 45 exercises
+// Task 3: Reading for Information — paragraph matching + Not Given (E)
+// Task 4: Reading for Viewpoints — multiple opinions + feelings
+// Each exercise shows a passage, question, 4 options, explanation
+
+module.exports = [
+  // ─── Task 3: Reading for Information ─── (8 scenarios)
+  // Format: longer passages, match statements to paragraphs, synonyms, Not Given
+
+  // 3.1 — History of maple syrup
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nThe production of maple syrup in Canada dates back centuries before European contact. Indigenous peoples, particularly the Anishinaabe and Haudenosaunee, discovered that the sap of sugar maple trees could be collected in early spring and boiled down into a sweet, concentrated syrup. They used birch bark containers to collect the sap and heated stones to evaporate the water.\n\nParagraph B:\nToday, Quebec produces approximately 72% of the world\'s maple syrup supply. The province has over 7,400 producers and maintains a strategic reserve — similar to oil reserves — to stabilize global prices. This reserve, managed by the Federation of Quebec Maple Syrup Producers, can hold up to 60 million kilograms of syrup.',
+      question: 'Which paragraph discusses who first made maple syrup?',
+      options: ['Paragraph A', 'Paragraph B', 'Both paragraphs equally', 'Neither paragraph — Not Given'],
+      correct: 0, explanation: 'Technique: Paragraph-by-Paragraph. Paragraph A discusses Indigenous peoples discovering sap collection — they were the FIRST to make it. Paragraph B is about modern production. The "who first" is clearly in A.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nThe grading system for maple syrup was updated in 2017 across Canada and the United States. All syrup is now classified as "Grade A" with four color categories: Golden (delicate taste), Amber (rich taste), Dark (robust taste), and Very Dark (strong taste). The lighter grades are typically produced earlier in the season when temperatures fluctuate between freezing and thawing.\n\nParagraph D:\nClimate change poses a significant threat to maple syrup production. As winters become warmer, the freeze-thaw cycle that drives sap flow is disrupted. Some researchers predict that by 2100, suitable maple habitat could shift northward by hundreds of kilometers, potentially moving prime production areas out of traditional regions and into areas that currently lack the infrastructure for large-scale harvesting.',
+      question: '"Rising temperatures may force production to relocate to new areas." Which paragraph supports this statement?',
+      options: ['Paragraph C — discusses grading changes', 'Paragraph D — discusses climate change shifting maple habitat north', 'Both paragraphs', 'Neither — Not Given'],
+      correct: 1, explanation: 'Technique: Synonyms! "Relocate to new areas" = "shift northward." "Rising temperatures" = "warmer winters" and "climate change." Paragraph D discusses habitat shifting — this is the match. Paragraph C is about grading, not relocation.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about maple syrup:\n\nA: Indigenous origins, birch bark containers, heated stones\nB: Quebec produces 72% of world supply, strategic reserve of 60M kg\nC: 2017 grading update, four color categories, lighter = earlier season\nD: Climate change threat, freeze-thaw disruption, habitat shift northward',
+      question: '"Maple syrup is Canada\'s largest agricultural export." Which paragraph contains this information?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph D', 'Not Given (E) — no paragraph states this'],
+      correct: 3, explanation: 'Technique: Not Given! None of the paragraphs mention "largest agricultural export." Paragraph B mentions Quebec\'s large production share but never calls it the largest export. If you did NOT read it, do NOT select it.' },
+  ],
+
+  // 3.2 — The Trans-Canada Highway
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nThe Trans-Canada Highway, stretching 7,821 kilometers from St. John\'s, Newfoundland to Victoria, British Columbia, is one of the longest national highways in the world. Construction began in 1950 after the Trans-Canada Highway Act was passed, and the route was officially completed in 1962 when the final section through Rogers Pass in British Columbia was opened.\n\nParagraph B:\nDriving the entire highway takes approximately five to seven days without significant stops, though most travelers take two to three weeks to enjoy the scenery. The route passes through all ten provinces and showcases Canada\'s diverse landscapes — from the rocky Atlantic coastline to the vast prairies to the towering Rocky Mountains.',
+      question: 'When was the Trans-Canada Highway fully completed?',
+      options: ['1950, when construction began', '1962, when the Rogers Pass section opened', 'It took two to three weeks to complete', 'The text does not mention the completion date'],
+      correct: 1, explanation: 'Technique: Distinguish dates carefully. 1950 = construction BEGAN. 1962 = "officially completed." The question asks when it was FULLY completed. Read precisely — 1950 is a trap.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nThe highway is not a single continuous road but rather a network of provincial highways connected under a national designation. Each province is responsible for maintaining its own section, which leads to varying road quality and speed limits across the country. In Ontario and Quebec, the highway often runs as a divided multi-lane expressway, while in the Maritime provinces, it may narrow to a two-lane road through small towns.\n\nParagraph D:\nSeveral iconic landmarks are accessible from the Trans-Canada Highway, including the Terry Fox Memorial near Thunder Bay, the giant nickel in Sudbury, and the world\'s largest fiddle in Sydney, Nova Scotia. These roadside attractions have become part of Canadian cultural identity, drawing millions of visitors each year who document their cross-country journey.',
+      question: '"Road conditions differ depending on which province you are in." Which paragraph discusses this?',
+      options: ['Paragraph A — about the highway\'s history', 'Paragraph B — about travel time', 'Paragraph C — about varying road quality by province', 'Paragraph D — about landmarks'],
+      correct: 2, explanation: 'Technique: Synonyms. "Road conditions differ" = "varying road quality." "Depending on province" = "each province is responsible for maintaining its own section." Paragraph C clearly matches.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about the Trans-Canada Highway:\n\nA: 7,821 km, St. John\'s to Victoria, built 1950-1962\nB: 5-7 days driving, passes through all 10 provinces\nC: Network of provincial highways, varying quality/speed limits\nD: Landmarks — Terry Fox Memorial, giant nickel, largest fiddle',
+      question: '"The Trans-Canada Highway crosses into the United States at several border points." Which paragraph mentions this?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph C', 'Not Given (E)'],
+      correct: 3, explanation: 'Technique: Not Given! The text never mentions the US or border crossings. The highway goes through all ten PROVINCES (Paragraph B) — this is Canada-only. Don\'t add information from your own knowledge.' },
+  ],
+
+  // 3.3 — Urban beekeeping
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nUrban beekeeping has experienced a remarkable surge in popularity across Canadian cities over the past decade. Cities like Vancouver, Toronto, and Montreal have relaxed municipal bylaws to allow residents to keep beehives in their backyards, on rooftops, and even on apartment balconies. The movement is driven by growing awareness of pollinator decline and a desire to produce local, raw honey.\n\nParagraph B:\nCritics argue that the urban beekeeping trend may actually harm wild bee populations. Managed honeybee colonies compete with native bees for the same floral resources, potentially reducing food availability for species already under stress. A 2023 study from the University of Toronto found that areas with high densities of urban beehives showed a 15% decrease in native bee diversity.',
+      question: 'Which paragraph presents a concern about urban beekeeping?',
+      options: ['Paragraph A — positive trends only', 'Paragraph B — competition with wild bees', 'Both paragraphs express concern', 'Neither paragraph — Not Given'],
+      correct: 1, explanation: 'Technique: Positive vs. Negative. Paragraph A = positive (popularity, awareness, local honey). Paragraph B = negative (harm wild bees, competition, 15% decrease in diversity). Concerns are clearly in B.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nFor those interested in starting, most municipalities require registration and mandate that hives be placed at least five meters from property lines. Beginner courses, offered by local beekeeping associations, typically cost between $150 and $300 and cover hive management, seasonal care, and honey extraction. A basic startup kit — including a hive, protective gear, and tools — costs approximately $500 to $800.\n\nParagraph D:\nBeyond honey production, urban beekeeping offers therapeutic benefits. Many practitioners describe the meditative quality of working with bees, and several hospitals and rehabilitation centers in Canada have introduced beekeeping programs for patients recovering from trauma or managing anxiety. The rhythmic hum of a healthy hive, beekeepers say, has a calming effect that rivals guided meditation.',
+      question: '"Beekeeping can support mental health recovery." Which paragraph discusses this?',
+      options: ['Paragraph A — about popularity', 'Paragraph B — about ecological concerns', 'Paragraph C — about getting started', 'Paragraph D — about therapeutic benefits'],
+      correct: 3, explanation: 'Technique: Synonyms. "Mental health recovery" = "therapeutic benefits," "patients recovering from trauma," "managing anxiety." Paragraph D specifically discusses hospitals and rehabilitation centers using beekeeping.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about urban beekeeping:\n\nA: Popularity surge, relaxed bylaws, pollinator awareness\nB: Critics — competition with wild bees, 15% decrease in native diversity\nC: Regulations, courses ($150-300), startup costs ($500-800)\nD: Therapeutic benefits, hospitals, meditation-like calming effect',
+      question: '"Urban honey is tested for contaminants before being sold at farmers\' markets." Which paragraph discusses quality testing?',
+      options: ['Paragraph A', 'Paragraph C', 'Paragraph D', 'Not Given (E)'],
+      correct: 3, explanation: 'Technique: Not Given! No paragraph mentions quality testing, contaminants, or farmers\' markets. Paragraph C discusses costs and regulations but not testing. Don\'t assume — only select what you read.' },
+  ],
+
+  // 3.4 — Northern Lights tourism
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nAurora tourism in Canada has transformed from a niche pursuit into a multi-million dollar industry. Yellowknife, in the Northwest Territories, has emerged as one of the world\'s premier aurora viewing destinations, with specialized tour operators offering everything from heated viewing shelters to dogsled excursions under the northern lights. The city\'s tourism revenue from aurora-related activities exceeded $50 million in 2025.\n\nParagraph B:\nThe aurora borealis is caused by charged particles from the sun colliding with gases in Earth\'s atmosphere. These collisions produce light — green from oxygen at lower altitudes, purple and red from nitrogen at higher altitudes. The best viewing conditions require dark skies, minimal cloud cover, and proximity to the magnetic north pole, which is why northern Canada is ideally positioned.',
+      question: 'Which paragraph explains the science behind the northern lights?',
+      options: ['Paragraph A — about tourism industry', 'Paragraph B — about charged particles and atmospheric collisions', 'Both paragraphs explain the science', 'Neither paragraph'],
+      correct: 1, explanation: 'Technique: Content identification. Paragraph A = economics (tourism, revenue, tour operators). Paragraph B = science (charged particles, collisions, oxygen/nitrogen, magnetic pole). Science is clearly B.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nHowever, the growing influx of tourists has raised environmental concerns in fragile northern ecosystems. Increased light pollution from hotels and facilities can ironically diminish the very aurora views that attract visitors. Local Indigenous communities, including the Dene and Inuit, have also expressed concerns about cultural commodification — the northern lights hold deep spiritual significance in their traditions.\n\nParagraph D:\nTo address these challenges, the Northwest Territories government has implemented a sustainable tourism framework. New developments must undergo dark-sky impact assessments, and tour operators are required to complete cultural sensitivity training. Some operators now partner with Indigenous guides who share traditional stories about the aurora, creating experiences that are both educational and respectful.',
+      question: '"Some local communities worry their spiritual traditions are being commercialized." Which paragraph addresses this?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph C — Indigenous concerns about cultural commodification', 'Paragraph D — government solutions'],
+      correct: 2, explanation: 'Technique: Synonyms. "Spiritual traditions being commercialized" = "cultural commodification" + "northern lights hold deep spiritual significance." Paragraph C raises the concern. Paragraph D offers solutions but doesn\'t raise the concern itself.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about aurora tourism:\n\nA: Yellowknife as premier destination, $50M+ revenue, tour operators\nB: Science — charged particles, oxygen=green, nitrogen=purple/red\nC: Environmental concerns, light pollution, Indigenous cultural commodification\nD: Sustainable framework, dark-sky assessments, cultural sensitivity training',
+      question: '"Aurora tours are available year-round in Yellowknife." Which paragraph confirms this?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph D', 'Not Given (E)'],
+      correct: 3, explanation: 'Technique: Not Given! Paragraph B mentions "best viewing conditions" but no paragraph states tours are year-round. Paragraph A mentions tour operators but not their season. Aurora is seasonal (winter months) — but even this real-world knowledge doesn\'t matter; the TEXT doesn\'t say it.' },
+  ],
+
+  // 3.5 — Canadian food waste
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nCanadians waste approximately 2.3 million tonnes of edible food annually, according to a 2024 report by the National Zero Waste Council. This represents nearly $1,800 per household per year in discarded groceries. The largest category of waste is fruits and vegetables, followed by leftovers, bread and bakery items, and dairy products.\n\nParagraph B:\nSupermarkets contribute significantly to the problem through strict cosmetic standards. Produce that is slightly misshapen, discolored, or smaller than average is often rejected before it even reaches store shelves. Some estimates suggest that up to 30% of fruits and vegetables grown in Canada never make it to consumers due to these appearance-based criteria.',
+      question: '"Perfectly edible food is discarded because it does not look attractive enough." Which paragraph discusses this?',
+      options: ['Paragraph A — about household waste statistics', 'Paragraph B — about cosmetic standards rejecting produce', 'Both paragraphs equally', 'Neither — Not Given'],
+      correct: 1, explanation: 'Technique: Synonyms. "Does not look attractive enough" = "misshapen, discolored, smaller than average" = "cosmetic standards." Paragraph B discusses supermarket rejection based on appearance.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nSeveral innovative solutions have emerged. Apps like "FlashFood" and "Too Good To Go" connect consumers with discounted food nearing its expiry date. Community fridges — free-standing refrigerators stocked with donated food in public spaces — have appeared in cities across the country. Vancouver alone has over 40 community fridges, reducing both waste and food insecurity.\n\nParagraph D:\nAt the policy level, France\'s 2016 law banning supermarkets from destroying unsold food inspired similar discussions in Canada. British Columbia became the first province to mandate food waste reporting for large retailers in 2025. The data collected will help identify waste patterns and develop targeted reduction strategies.',
+      question: '"Technology is helping people buy food that would otherwise be thrown away." Which paragraph supports this?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph C — apps connecting consumers with discounted near-expiry food', 'Paragraph D — policy solutions'],
+      correct: 2, explanation: 'Technique: Synonyms. "Technology" = "apps." "Buy food that would otherwise be thrown away" = "discounted food nearing its expiry date." FlashFood and Too Good To Go are the technology solutions in Paragraph C.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about Canadian food waste:\n\nA: 2.3M tonnes/year, $1,800/household, fruits & veggies biggest category\nB: Supermarket cosmetic standards, 30% produce rejected\nC: Apps (FlashFood, Too Good To Go), community fridges (40+ in Vancouver)\nD: France\'s 2016 law, BC mandatory waste reporting 2025',
+      question: '"Most food waste in Canada comes from restaurants and fast food chains." Which paragraph states this?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph C', 'Not Given (E)'],
+      correct: 3, explanation: 'Technique: Not Given and CAREFUL reading! Paragraph A mentions household waste ($1,800/household) and Paragraph B mentions supermarkets — but NO paragraph mentions restaurants or fast food chains. The text focuses on households and supermarkets, not restaurants.' },
+  ],
+
+  // ─── Task 4: Reading for Viewpoints ─── (7 scenarios)
+  // Format: multiple people with opinions, identify feelings, who agrees/disagrees
+
+  // 4.1 — Should schools ban smartphones?
+  [
+    { type: 'readChoose',
+      passage: 'Karen Mitchell, Teacher (15 years):\n"I\'ve seen the decline firsthand. Students can\'t focus for more than five minutes without checking their phones. Last year, I caught a student live-streaming my math class on TikTok instead of taking notes. Banning phones during school hours would dramatically improve learning outcomes. We managed fine without them for decades."\n\nDr. James Okafor, Child Psychologist:\n"A complete ban is a band-aid solution. The real issue is teaching digital literacy and self-regulation. If we ban phones at school, kids just binge-use them at home. We should integrate phones INTO learning — there are incredible educational apps that make math and science engaging."',
+      question: 'How do Karen and Dr. Okafor differ in their views?',
+      options: ['Karen supports phones for learning; Dr. Okafor wants them banned', 'Karen wants a ban to improve focus; Dr. Okafor prefers teaching responsible use', 'Both agree phones should be banned entirely', 'Both agree phones should be allowed without restrictions'],
+      correct: 1, explanation: 'Technique: Identify each person\'s STANCE. Karen = NEGATIVE toward phones ("ban would dramatically improve learning"). Dr. Okafor = AGAINST a ban ("band-aid solution") and FOR integration ("integrate phones INTO learning"). Opposite positions.' },
+    { type: 'readChoose',
+      passage: 'Maya Singh, Grade 11 Student:\n"Honestly, I use my phone for school stuff all the time — looking up words, checking the class calendar, even recording lectures so I can review later. Taking that away would make things harder, not easier. Maybe just block social media apps on the school WiFi instead of banning phones completely."\n\nRobert Chen, Parent:\n"My daughter has Type 1 diabetes, and her glucose monitor sends alerts to her phone. A blanket ban could literally put her health at risk. Any policy needs medical exemptions at minimum. I support reasonable restrictions but not a total ban."',
+      question: 'What do Maya and Robert have in common?',
+      options: ['Both want phones banned completely', 'Both oppose a total ban but support some restrictions', 'Both think phones are purely distracting', 'Both are concerned about health monitoring'],
+      correct: 1, explanation: 'Technique: Find COMMON ground. Maya: "maybe just block social media" (partial restriction, not total ban). Robert: "reasonable restrictions but not a total ban." Both oppose TOTAL bans but accept SOME limits.' },
+    { type: 'readChoose',
+      passage: 'The school board is considering a new policy. Based on the four viewpoints:\n- Karen (teacher): Full ban during school hours\n- Dr. Okafor (psychologist): No ban; teach digital literacy\n- Maya (student): Block social media on WiFi, keep phones\n- Robert (parent): Medical exemptions required; reasonable restrictions only\n\nA new comment reads:\n"After reading everyone\'s perspectives, I think the best approach is a compromise: phones stay in lockers during class, but students can use them during breaks. Medical exemptions are guaranteed, and the school offers a digital citizenship course."',
+      question: 'Whose viewpoint does this comment LEAST align with?',
+      options: ['Karen — she wants phones banned ALL school hours, not just during class', 'Dr. Okafor — he wants phones integrated into learning, not locked away', 'Maya — she wants phone access during class for educational use', 'Robert — the comment includes his medical exemption request'],
+      correct: 1, explanation: 'Technique: Compare each stance to the proposal. Dr. Okafor specifically wants phones IN the classroom as learning tools and calls banning a "band-aid." Locking phones in lockers during class directly contradicts his position. Karen gets partial satisfaction (banned in class). Maya and Robert get some of what they want.' },
+  ],
+
+  // 4.2 — Four-day work week
+  [
+    { type: 'readChoose',
+      passage: 'Priya Sharma, HR Director at a tech company:\n"We piloted a four-day work week last year, and the results were stunning. Productivity actually increased by 12%, sick days dropped by 40%, and our employee satisfaction scores hit an all-time high. The key was focusing on output rather than hours. Some meetings were cut, and employees found creative ways to work more efficiently."\n\nMarc Leblanc, Small Business Owner (Restaurant):\n"Four days might work for office jobs, but it\'s a fantasy for the service industry. My restaurant is open seven days a week. If I give everyone a three-day weekend, I need to hire more staff — staff I can\'t afford. This whole movement ignores that most Canadians don\'t work desk jobs."',
+      question: 'Why does Marc oppose the four-day work week?',
+      options: ['He thinks employees will be less productive', 'It is impractical and too expensive for service industry businesses', 'He believes employees should work harder, not less', 'His employees voted against it'],
+      correct: 1, explanation: 'Technique: Find the stated reason. Marc says "I need to hire more staff — staff I can\'t afford" and "ignores that most Canadians don\'t work desk jobs." His opposition is practical (cost + industry type), not ideological.' },
+    { type: 'readChoose',
+      passage: 'Elena Volkov, Nurse:\n"I already work twelve-hour shifts, so a \'four-day work week\' would mean even longer days. In healthcare, patient care doesn\'t stop because it\'s Friday. What I\'d prefer is more flexibility in scheduling — let me choose my shifts rather than dictating a one-size-fits-all policy."\n\nDr. Amir Hassan, Economist:\n"The data from Iceland\'s trial and our own pilots is compelling. Countries that adopted shorter work weeks saw GDP growth alongside improved well-being. The concern about service industries is valid, but it can be addressed with staggered schedules and shift rotations. We\'re clinging to a model designed for factories in the 1920s."',
+      question: 'Who would most likely agree with the statement: "The traditional five-day model is outdated"?',
+      options: ['Marc — he thinks the current system works fine for his business', 'Elena — she wants flexibility, not a rigid new schedule', 'Dr. Hassan — he says we\'re clinging to a 1920s factory model', 'Priya — she already implemented four days successfully'],
+      correct: 2, explanation: 'Technique: Match statement to viewpoint. "Outdated" = "clinging to a model designed for factories in the 1920s." Dr. Hassan explicitly calls the current model old-fashioned. Priya agrees in practice but doesn\'t use this language. Dr. Hassan MOST directly matches.' },
+    { type: 'readChoose',
+      passage: 'Summary of viewpoints on the four-day work week:\n- Priya (HR Director): Strong supporter — saw 12% productivity increase\n- Marc (Restaurant Owner): Opposed — impractical and expensive for service industry\n- Elena (Nurse): Wants flexibility, not a rigid four-day policy\n- Dr. Hassan (Economist): Supporter — data-driven, addresses service industry concerns\n\nA new comment reads:\n"I run a small accounting firm. We tried four-day weeks during summer and our clients complained about Friday availability. We switched to alternating Fridays off, and that seems to work better for everyone."',
+      question: 'Whose viewpoint is this commenter most similar to?',
+      options: ['Priya — both fully support four-day weeks', 'Marc — both completely oppose the idea', 'Elena — both prefer flexible scheduling over rigid policies', 'Dr. Hassan — both cite economic data'],
+      correct: 2, explanation: 'Technique: Match APPROACH, not just topic. The commenter tried a rigid policy (failed), then found a flexible compromise (alternating Fridays). Elena also rejected rigid policies and wanted scheduling flexibility. Similar approach: flexibility > rigidity.' },
+  ],
+
+  // 4.3 — Electric vehicles mandate
+  [
+    { type: 'readChoose',
+      passage: 'Linda Park, Environmental Activist:\n"Canada needs to ban the sale of new gas cars by 2030 — not 2035, not 2040. Every year we delay costs lives through air pollution and accelerates climate catastrophe. Norway is already at 90% electric vehicle sales. If they can do it, so can we. The technology exists; what\'s missing is political courage."\n\nTrevor Walsh, Auto Mechanic (28 years):\n"I\'m all for EVs eventually, but 2030 is reckless. Our charging infrastructure is nowhere near ready — drive from Winnipeg to Thunder Bay and find me a fast charger. And what about people who can\'t afford a $50,000 car? This mandate would hurt working-class families the most."',
+      question: 'What is Trevor\'s main argument against a 2030 deadline?',
+      options: ['He believes climate change is not real', 'Infrastructure and affordability are not ready', 'He wants to protect his job as a mechanic', 'He prefers hydrogen cars over electric ones'],
+      correct: 1, explanation: 'Technique: Stated reasons only. Trevor gives TWO reasons: (1) charging infrastructure not ready, (2) $50K cars hurt working-class families. He\'s not anti-EV ("all for EVs eventually") — he\'s anti-rushed-timeline. Don\'t infer job protection; he doesn\'t mention it.' },
+    { type: 'readChoose',
+      passage: 'Fatima Al-Rashid, EV Owner (3 years):\n"I love my electric car — I save about $200 a month on gas and maintenance. But I live in Toronto where chargers are everywhere. When I visited my parents in rural Saskatchewan last Christmas, I had genuine range anxiety. The reality is that EVs work brilliantly in cities but the rural experience needs serious investment first."\n\nDr. Michael Torres, Energy Policy Researcher:\n"The debate is framed wrong. It\'s not EVs versus gas cars — it\'s about total emissions. A 2030 ban on new gas car SALES still means gas cars on the road for 15+ more years. Meanwhile, investing in public transit, cycling infrastructure, and remote work policies could reduce transportation emissions faster than an EV mandate."',
+      question: 'Who challenges the entire framework of the EV debate?',
+      options: ['Linda — she wants an earlier deadline', 'Trevor — he wants a later deadline', 'Fatima — she shares her personal experience', 'Dr. Torres — he says the debate itself is framed wrong'],
+      correct: 3, explanation: 'Technique: Identify who REFRAMES. "The debate is framed wrong" — Dr. Torres explicitly says the question itself is wrong. Others argue within the framework (earlier/later deadline, personal experience). Dr. Torres steps outside it entirely.' },
+    { type: 'readChoose',
+      passage: 'Summary of EV mandate viewpoints:\n- Linda (Activist): Ban gas cars by 2030, no delays\n- Trevor (Mechanic): 2030 is reckless — infrastructure and cost not ready\n- Fatima (EV Owner): EVs great in cities, rural needs investment\n- Dr. Torres (Researcher): Focus on total emissions, not just EVs\n\nA new comment:\n"Why not a tiered approach? Ban gas car sales in major cities by 2030 where charging is available, and give rural areas until 2035 with government-funded charging stations in between."',
+      question: 'This compromise would MOST satisfy which two people?',
+      options: ['Linda and Dr. Torres', 'Trevor and Fatima', 'Linda and Trevor', 'Fatima and Dr. Torres'],
+      correct: 1, explanation: 'Technique: Match elements. Trevor\'s concern: rural infrastructure not ready → solved by rural 2035 + government chargers. Fatima\'s concern: cities great, rural needs investment → tiered approach addresses this. Linda wants 2030 everywhere (cities-only partial). Dr. Torres wants different approach entirely.' },
+  ],
+
+  // 4.4 — Tipping culture
+  [
+    { type: 'readChoose',
+      passage: 'Sophie Martin, Server (8 years):\n"Tips make up 60% of my income. Without them, I\'d need to find a second job or leave the industry entirely. People who say \'just pay servers more\' don\'t understand that most restaurants operate on razor-thin margins. If you eliminate tips and raise menu prices by 20%, customers complain about expensive food AND servers earn less because the owner controls the wage."\n\nKevin Cho, Restaurant Customer:\n"I\'m tired of tip screens popping up everywhere — at coffee shops, takeout counters, even self-serve frozen yogurt. A 20% tip used to be exceptional; now it\'s the minimum suggested amount. The expectation has gotten out of hand. I tip generously at sit-down restaurants but refuse to feel guilty for declining at a counter where I poured my own coffee."',
+      question: 'How do Sophie and Kevin view tipping differently?',
+      options: ['Sophie sees tips as essential income; Kevin feels tipping expectations have expanded too far', 'Both want to eliminate tipping entirely', 'Sophie thinks tips are too high; Kevin wants to tip more', 'Both agree the current system is perfect'],
+      correct: 0, explanation: 'Technique: Identify each person\'s core position. Sophie: tips = 60% of income, essential, system works for servers. Kevin: tip "expectations have gotten out of hand," especially at counters. Different perspectives: server (needs tips) vs. customer (frustrated by expansion).' },
+    { type: 'readChoose',
+      passage: 'Amara Osei, Restaurant Owner:\n"I tried a no-tipping model at my restaurant — raised wages to $25/hour, increased menu prices by 18%, and eliminated tip prompts. Within six months, I lost my best servers to tipping restaurants where they earned $35-40/hour with tips. The math doesn\'t work unless EVERYONE switches at once."\n\nDr. Rachel Kim, Labor Economist:\n"Tipping creates income volatility, racial bias in earnings, and power imbalances between customers and workers. Studies consistently show that tipping correlates more with the server\'s appearance and race than service quality. Moving to a professional wage model isn\'t just better economics — it\'s an equity issue."',
+      question: 'What happened when Amara eliminated tipping?',
+      options: ['Revenue increased and customers were happier', 'Her best servers left for restaurants that still had tipping', 'The government required her to restore tips', 'Customer complaints about food quality increased'],
+      correct: 1, explanation: 'Technique: Find the specific outcome. Amara says "I lost my best servers to tipping restaurants where they earned $35-40/hour." The experiment failed not because of customers but because servers earned MORE with tips elsewhere.' },
+    { type: 'readChoose',
+      passage: 'Tipping culture viewpoints:\n- Sophie (Server): Tips essential — 60% of income, system works\n- Kevin (Customer): Tipping has expanded too far, especially at counters\n- Amara (Owner): No-tip model failed — lost staff to tipping competitors\n- Dr. Kim (Economist): Tipping causes bias and inequality, should be replaced\n\nA new comment:\n"What if restaurants were required to display the TOTAL price (food + service charge) on the menu, with no tip prompt? Servers get a guaranteed living wage, customers know exactly what they\'re paying, and there\'s no awkward tip screen."',
+      question: 'Who would most likely OPPOSE this proposal?',
+      options: ['Kevin — he dislikes tip screens, and this eliminates them', 'Dr. Kim — this addresses equity by removing bias from earnings', 'Sophie — she might earn less than her current tip-based income', 'Amara — this solves the competitive problem if required for all restaurants'],
+      correct: 2, explanation: 'Technique: Who LOSES. Sophie earns 60% from tips — tips can exceed a service charge. A fixed service charge would likely pay less than peak tipping. Kevin benefits (no tip screens). Dr. Kim benefits (no bias). Amara benefits (all restaurants equal). Sophie has most to lose.' },
+  ],
+
+  // 4.5 — Bilingual requirement for federal jobs
+  [
+    { type: 'readChoose',
+      passage: 'Jean-François Dubois, Translator, Ottawa:\n"Bilingualism is a cornerstone of Canadian identity. Federal employees serve ALL Canadians, and every citizen has the right to receive services in English or French. Lowering the bilingual requirement would send a message that francophone Canadians are second-class citizens. The standard should be maintained — even raised."\n\nRachel Blackwood, Policy Analyst, Calgary:\n"I scored \'superior\' on every qualification for a federal position but was rejected because my French wasn\'t at the required level. I grew up in Alberta where French immersion wasn\'t available. This policy punishes Western Canadians and creates a two-tier system where Quebecers have an automatic advantage for government jobs."',
+      question: 'What is Rachel\'s main complaint?',
+      options: ['She thinks French is an unnecessary language', 'The bilingual requirement disadvantages Canadians from provinces with less French education', 'She was fired from her job unfairly', 'She believes all jobs should be English-only'],
+      correct: 1, explanation: 'Technique: Stated reason. Rachel scored "superior" on everything else but French. She grew up where "French immersion wasn\'t available." Her complaint is geographic disadvantage ("punishes Western Canadians"), not anti-French sentiment.' },
+    { type: 'readChoose',
+      passage: 'Yuki Tanaka, Immigrant, Vancouver:\n"I speak English, Japanese, and Mandarin — three of the world\'s most spoken languages. But I can\'t qualify for a federal job because I don\'t speak French, which fewer people speak globally than any of my three languages. Canada prides itself on multiculturalism, but this policy only values ONE type of bilingualism."\n\nDr. Pierre Laroche, Sociolinguist:\n"The bilingual policy isn\'t about practicality — it\'s about historical commitment. French and English are foundational to Confederation. Without this protection, French would gradually disappear from federal institutions, as has happened in many previously bilingual countries. Some traditions are worth preserving even when they\'re inconvenient."',
+      question: 'Whose argument is based on historical principle rather than current practicality?',
+      options: ['Jean-François — he argues about citizen rights to service', 'Rachel — she argues about fairness in hiring', 'Yuki — she argues about global language utility', 'Dr. Laroche — he argues about historical commitment to Confederation'],
+      correct: 3, explanation: 'Technique: Identify the BASIS of each argument. Dr. Laroche explicitly says "it\'s not about practicality — it\'s about historical commitment." He grounds his position in history (Confederation) and tradition, while others argue about rights, fairness, or utility.' },
+    { type: 'readChoose',
+      passage: 'Bilingual requirement viewpoints:\n- Jean-François: Maintain/raise standard — citizen rights to French service\n- Rachel: Unfair to Western Canadians without French education access\n- Yuki: Policy only values French bilingualism, ignores other languages\n- Dr. Laroche: Historical commitment must be preserved\n\nA new comment:\n"What about offering paid French training to qualified candidates who pass all other requirements? Give them two years to reach the language level while working in an English-capacity role."',
+      question: 'This proposal would most directly address whose concern?',
+      options: ['Jean-François — French services would still be guaranteed eventually', 'Rachel — she could get the job and learn French on the job', 'Yuki — her other languages would be valued', 'Dr. Laroche — the historical commitment is strengthened'],
+      correct: 1, explanation: 'Technique: Match solution to complaint. Rachel was qualified in everything EXCEPT French and lacked access to training. Paid French training + working while learning directly solves her problem. Yuki\'s concern (other languages not valued) isn\'t addressed. Jean-François might worry about the two-year gap.' },
+  ],
+
+  // 4.6 — Social media age restriction
+  [
+    { type: 'readChoose',
+      passage: 'David Wong, Father of Two Teens:\n"I tried everything — screen time limits, parental controls, family media agreements. Nothing works when every kid at school is on Instagram and TikTok. My 13-year-old was cyberbullied last year and developed anxiety. A legal age restriction of 16 would give parents the backup we desperately need. Right now, I\'m fighting this battle alone."\n\nSamira Patel, Digital Rights Advocate:\n"Age restrictions sound protective but they\'re technically unenforceable without invasive age verification — which means handing government IDs or biometric data to tech companies. The cure is worse than the disease. Instead, fund digital literacy education and hold platforms accountable for their algorithms, not individual children."',
+      question: 'What problem does Samira identify with age restrictions?',
+      options: ['Children would simply lie about their age', 'Enforcement requires invasive data collection from all users', 'Social media companies would lose too much revenue', 'Parents would stop monitoring their children\'s online activity'],
+      correct: 1, explanation: 'Technique: Specific stated concern. Samira says enforcement needs "invasive age verification — government IDs or biometric data to tech companies." Her concern is privacy/data collection, not lying or revenue.' },
+    { type: 'readChoose',
+      passage: 'Emma Li, 15-year-old Student:\n"Social media is how my generation communicates. Taking it away doesn\'t solve loneliness or mental health issues — it just isolates us more. I use social media to connect with friends who moved away, find study groups, and follow my interests. Adults blame the tool instead of looking at WHY teens are struggling. Maybe fix school pressure and underfunded mental health services first."\n\nDr. Raj Mehta, Pediatrician:\n"I see the clinical impact daily. Teen depression and anxiety have increased 70% since 2012 — directly correlating with smartphone adoption. The developing adolescent brain is particularly vulnerable to the dopamine feedback loops these platforms engineer. This isn\'t about blaming teens; it\'s about protecting them from products designed to be addictive."',
+      question: 'How does Emma\'s perspective contrast with Dr. Mehta\'s?',
+      options: ['Emma blames adults for teen mental health; Dr. Mehta blames teens', 'Emma sees social media as a useful tool; Dr. Mehta sees it as clinically harmful', 'Both agree social media should be banned for teens', 'Emma is a doctor; Dr. Mehta is a student'],
+      correct: 1, explanation: 'Technique: Contrast positions. Emma: social media = communication tool, connecting, study groups (positive). Dr. Mehta: social media = dopamine loops, depression, addictive by design (negative/clinical). Same subject, opposite frames.' },
+    { type: 'readChoose',
+      passage: 'Social media age restriction viewpoints:\n- David (Parent): Supports age 16 restriction — needs backup against peer pressure\n- Samira (Advocate): Opposes — enforcement requires invasive data collection\n- Emma (Teen): Opposes — social media is essential for communication; fix root causes\n- Dr. Mehta (Pediatrician): Supports — clinical evidence of harm to developing brains\n\nA new comment:\n"Australia just implemented a social media ban for under-16s. Early data shows teens migrating to less regulated platforms and encrypted messaging apps. The usage didn\'t decrease — it just moved to places with fewer safety features."',
+      question: 'This evidence most strengthens whose argument?',
+      options: ['David — it shows bans are working in Australia', 'Samira — it shows restrictions push teens to less safe spaces', 'Dr. Mehta — it shows teen brains need more protection', 'Emma — it shows teens don\'t use social media much anyway'],
+      correct: 1, explanation: 'Technique: Match evidence to argument. Samira argued restrictions are unenforceable and counterproductive. Australia\'s result (teens migrating to less regulated platforms) proves her point — the "cure is worse than the disease." Usage moved, not decreased.' },
+  ],
+
+  // 4.7 — Housing crisis solutions
+  [
+    { type: 'readChoose',
+      passage: 'Councillor Angela Morris:\n"We need to build our way out of this crisis. Zoning reform is the answer — allow mid-rise housing in neighborhoods currently restricted to single-family homes. Vancouver\'s \'missing middle\' policy has shown that you can add density without destroying neighborhood character. NIMBYism is the biggest obstacle to affordable housing."\n\nTom Sinclair, Homeowner (25 years):\n"I bought my house in this neighborhood BECAUSE it was single-family. Now the city wants to build a four-story apartment building next door? My property value, my privacy, my street parking — all affected. Existing residents should have a say in what gets built in their community."',
+      question: 'What does Tom fear about zoning reform?',
+      options: ['He worries about increased crime in the neighborhood', 'He fears negative impacts on property value, privacy, and parking', 'He thinks new buildings will be too expensive for young buyers', 'He is concerned about environmental damage from construction'],
+      correct: 1, explanation: 'Technique: Listed concerns. Tom explicitly mentions three things: "My property value, my privacy, my street parking — all affected." Only select what was stated, not inferred concerns like crime or environment.' },
+    { type: 'readChoose',
+      passage: 'Jasmine Okoye, Renter, Age 29:\n"I have a master\'s degree and a good salary, and I still can\'t afford to buy a home in any major Canadian city. My rent takes 45% of my income. The homeowners at these council meetings fighting against new housing — they\'re pulling the ladder up behind them. They got affordable housing in the 1990s and now they want to block others from the same opportunity."\n\nDr. Samir Naik, Urban Planner:\n"Building more is necessary but insufficient. We also need demand-side interventions: restrictions on short-term rentals like Airbnb, a speculation tax on properties flipped within two years, and increased social housing investment. Without these measures, new supply will be absorbed by investors rather than families who need homes."',
+      question: 'Who argues that increasing housing supply alone will not solve the problem?',
+      options: ['Angela — she wants zoning reform to increase supply', 'Tom — he opposes new construction', 'Jasmine — she wants more homes built', 'Dr. Naik — he says supply-side alone is insufficient without demand-side interventions'],
+      correct: 3, explanation: 'Technique: Identify the nuanced position. Dr. Naik says "building more is necessary but INSUFFICIENT" — he agrees with supply but adds demand-side measures (Airbnb restrictions, speculation tax, social housing). He\'s the only one arguing supply alone isn\'t enough.' },
+    { type: 'readChoose',
+      passage: 'Housing crisis viewpoints:\n- Angela (Councillor): Zoning reform, build more mid-rise housing\n- Tom (Homeowner): Opposes density — protect existing neighborhoods\n- Jasmine (Renter): Homeowners blocking new housing are "pulling the ladder up"\n- Dr. Naik (Planner): Build more + restrict Airbnb + speculation tax + social housing\n\nA new comment:\n"My 800-unit condo building went up in 2023 in downtown Toronto. Within a year, 200 units were listed on Airbnb. The building was supposed to help with housing — instead it became a hotel. We need both new construction AND regulations on how units are used."',
+      question: 'This comment best illustrates the point made by:',
+      options: ['Angela — new housing was built as she recommends', 'Tom — the new building caused neighborhood problems', 'Jasmine — she still can\'t afford to buy there', 'Dr. Naik — new supply was absorbed by investors, not families'],
+      correct: 3, explanation: 'Technique: Match real example to argument. Dr. Naik warned "new supply will be absorbed by investors rather than families who need homes." The Airbnb example (200/800 units = 25% became short-term rentals) is exactly this scenario. Supply existed but didn\'t help housing — proving Dr. Naik\'s point.' },
+  ],
+
+  // 3.6 — Whale watching industry
+  [
+    { type: 'readChoose',
+      passage: 'Paragraph A:\nBritish Columbia\'s whale watching industry generates over $300 million annually and supports more than 2,000 jobs in coastal communities. The province is home to resident orca populations, migrating humpback whales, and grey whales, making it one of the world\'s top marine wildlife viewing destinations. Victoria, Tofino, and Telegraph Cove are the primary departure points for tours.\n\nParagraph B:\nScientific research has documented concerning impacts of vessel traffic on whale behaviour. Engine noise interferes with echolocation — the sonar-like system orcas use to hunt salmon. Studies from the University of British Columbia found that orcas spend 18% less time foraging when whale watching boats are within 400 meters, directly reducing their caloric intake during critical feeding periods.',
+      question: '"Boat noise disrupts how whales find food." Which paragraph discusses this?',
+      options: ['Paragraph A — about the tourism industry', 'Paragraph B — about engine noise interfering with echolocation', 'Both paragraphs', 'Neither — Not Given'],
+      correct: 1, explanation: 'Technique: Synonyms. "Boat noise" = "engine noise/vessel traffic." "Disrupts how whales find food" = "interferes with echolocation" + "less time foraging." Paragraph B clearly describes this scientific finding.' },
+    { type: 'readChoose',
+      passage: 'Paragraph C:\nIn response, Transport Canada introduced new regulations in 2024. All whale watching vessels must maintain a minimum distance of 200 meters from orcas (increased from 100 meters) and reduce speed to 7 knots in designated whale habitat zones. Companies must also use quieter propulsion technologies by 2027, with government subsidies available to offset upgrade costs.\n\nParagraph D:\nSome operators have pivoted to land-based whale watching as an alternative. Platforms at Lime Kiln Point State Park and several locations along Vancouver Island\'s west coast offer excellent viewing without approaching the animals. These operations have lower environmental impact and, surprisingly, higher customer satisfaction ratings — visitors report that seeing whales from a clifftop in their natural habitat feels more authentic than chasing them in a boat.',
+      question: '"Watching whales from shore may be a better experience than boat tours." Which paragraph explores this idea?',
+      options: ['Paragraph A', 'Paragraph B', 'Paragraph C', 'Paragraph D — land-based whale watching with higher satisfaction'],
+      correct: 3, explanation: 'Technique: Match concept. "From shore" = "land-based." "Better experience" = "higher customer satisfaction ratings" and "feels more authentic." Paragraph D discusses this alternative approach.' },
+    { type: 'readChoose',
+      passage: 'Based on all four paragraphs (A-D) about whale watching:\n\nA: $300M industry, 2,000+ jobs, Victoria/Tofino/Telegraph Cove\nB: Engine noise disrupts echolocation, 18% less foraging within 400m\nC: 2024 regulations — 200m minimum, 7 knots, quiet propulsion by 2027\nD: Land-based alternatives, higher customer satisfaction, more authentic',
+      question: '"Whale watching companies are required to use electric-powered boats." Which paragraph states this?',
+      options: ['Paragraph B', 'Paragraph C', 'Paragraph D', 'Not Given (E)'],
+      correct: 3, explanation: 'Technique: Not Given — careful reading! Paragraph C says "quieter propulsion technologies" but does NOT specify electric. "Quieter" could mean many things (hybrid, muffled engines, etc.). Don\'t assume electric just because it seems likely.' },
+  ],
+
+  // 4.8 — University tuition: should it be free?
+  [
+    { type: 'readChoose',
+      passage: 'Professor Diana Walsh, Economics:\n"Free tuition sounds compassionate but it\'s regressive. University students are disproportionately from middle and upper-class families. Making tuition free means a truck driver\'s taxes subsidize a lawyer\'s child\'s degree. Targeted grants for low-income students are far more equitable than a universal benefit that helps the wealthy most."\n\nOmar Hassan, First-Generation Student:\n"My parents couldn\'t help me with tuition. I worked two jobs while studying and graduated with $38,000 in debt. That debt delayed everything — buying a car, renting a decent apartment, starting a family. Free tuition would have changed my life trajectory. People like Professor Walsh already had access; they don\'t understand what it\'s like to start from zero."',
+      question: 'Why does Professor Walsh oppose free tuition?',
+      options: ['She thinks university education has no value', 'It benefits wealthy families more than those who need help', 'She wants universities to be privatized', 'She believes student debt builds character'],
+      correct: 1, explanation: 'Technique: Stated reason. Walsh calls free tuition "regressive" because university students are "disproportionately from middle and upper-class families." Tax money from lower-income workers subsidizes wealthier students. Her argument is about equity, not opposing education.' },
+    { type: 'readChoose',
+      passage: 'Lisa Bergmann, International Comparison Researcher:\n"Germany eliminated tuition in 2014. The result? Enrollment increased 22%, but completion rates barely changed. The real barriers aren\'t tuition — they\'re living costs, textbooks, and opportunity cost of not working. Free tuition alone doesn\'t solve access; you need comprehensive student support including housing subsidies and childcare."\n\nTyler Reed, Student Union President:\n"Even if free tuition isn\'t perfect, it sends a powerful message: education is a right, not a privilege. Every other investment in public good — healthcare, roads, fire departments — is funded by taxes. Why should education be different? The \'targeted grants\' approach sounds logical but it creates bureaucracy that prevents the most vulnerable from accessing help."',
+      question: 'What does Lisa\'s German example demonstrate?',
+      options: ['Free tuition increased enrollment dramatically and solved all access problems', 'Removing tuition helped but did not address other barriers like living costs', 'Germany regretted eliminating tuition and brought it back', 'German students are wealthier than Canadian students'],
+      correct: 1, explanation: 'Technique: Nuanced reading. Lisa says enrollment "increased 22%" (positive) BUT "completion rates barely changed" (problem persists). She concludes "real barriers aren\'t tuition" — living costs, textbooks, opportunity cost. Free tuition helped partially but wasn\'t enough.' },
+    { type: 'readChoose',
+      passage: 'Tuition viewpoints:\n- Prof. Walsh: Free tuition is regressive — targeted grants are better\n- Omar: Free tuition would have changed his life — debt delayed everything\n- Lisa: Germany shows tuition isn\'t the main barrier — need comprehensive support\n- Tyler: Education is a right like healthcare — fund it publicly\n\nA new comment:\n"What if we made tuition free for the first two years only? Students try university risk-free, and those who continue to years 3-4 have already proven their commitment. It limits cost while removing the biggest barrier to entry."',
+      question: 'This proposal attempts to bridge the gap between which two viewpoints?',
+      options: ['Omar and Tyler — both want fully free tuition', 'Prof. Walsh and Omar — reduces cost without being fully universal', 'Lisa and Tyler — addresses completion rates and access', 'Prof. Walsh and Lisa — both oppose free tuition entirely'],
+      correct: 1, explanation: 'Technique: Find the compromise. Walsh worries about cost/regressiveness of universal free tuition. Omar wants affordability. Two free years = reduces Omar\'s barrier to entry while limiting Walsh\'s concern about cost (not fully universal). It bridges the gap between "too expensive for everyone" and "I can\'t afford to start."' },
+  ],
+
+  // 4.9 — Remote work and downtown businesses
+  [
+    { type: 'readChoose',
+      passage: 'Paula Chen, Downtown Café Owner:\n"My café used to be packed every weekday morning with office workers. Now, Tuesday to Thursday I get maybe 60% of pre-pandemic traffic, and Monday and Friday are dead. I\'ve had to let go of three staff members. The remote work advocates celebrate their freedom while small businesses downtown are dying. Someone needs to acknowledge the cost."\n\nAlex Rivera, Software Developer (Fully Remote):\n"I used to spend 90 minutes commuting each way and $400 a month on gas and parking. Going remote gave me three hours of my life back every day. I\'m more productive, healthier, and actually present for my kids. If downtown businesses need to adapt, that\'s the market working. Nobody owes them a commute."',
+      question: 'How does Alex respond to the concern about downtown businesses?',
+      options: ['He feels guilty and plans to return to the office', 'He dismisses it as a natural market adjustment', 'He suggests government subsidies for affected businesses', 'He agrees that workers should be forced back to offices'],
+      correct: 1, explanation: 'Technique: Identify attitude. Alex says "that\'s the market working" and "nobody owes them a commute." He acknowledges businesses need to "adapt" but doesn\'t feel responsibility. Dismissive of the concern, framing it as natural economic evolution.' },
+    { type: 'readChoose',
+      passage: 'Councillor Nadia Youssef:\n"We can\'t force people back downtown, but we can incentivize it. Convert empty office buildings to residential units, create cultural hubs, improve transit to make downtown attractive for reasons beyond work. Cities that adapted — like Portland with its walkable mixed-use zones — are thriving. Cities that just waited for workers to return are still struggling."\n\nDr. Martin Cheng, Urban Economist:\n"The five-day office model was already inefficient before COVID. What we\'re seeing isn\'t a crisis — it\'s a correction. Downtown land values were inflated by artificial demand. As prices adjust, new types of businesses will emerge. The transition is painful for incumbents like Paula, but the end result will be a more diverse, resilient downtown."',
+      question: 'Who views the current situation as an opportunity rather than a crisis?',
+      options: ['Paula — her business is suffering', 'Alex — he just wants to stay home', 'Nadia and Dr. Cheng — both see potential for positive transformation', 'Only Nadia — Dr. Cheng is pessimistic about the future'],
+      correct: 2, explanation: 'Technique: Positive vs. Negative. Nadia: "convert," "create," "cities that adapted are thriving" (opportunity). Dr. Cheng: "not a crisis — it\'s a correction," "more diverse, resilient downtown" (opportunity). Both frame it positively. Paula is suffering, Alex is neutral about downtown.' },
+    { type: 'readChoose',
+      passage: 'Remote work and downtown viewpoints:\n- Paula (Café Owner): Downtown is dying, small businesses suffering\n- Alex (Developer): Remote work is better; businesses should adapt\n- Nadia (Councillor): Incentivize downtown through conversion and culture\n- Dr. Cheng (Economist): It\'s a correction, not a crisis — new businesses will emerge\n\nA new comment:\n"I work hybrid — three days in office, two from home. My team is actually MORE collaborative on office days because we save meetings for in-person time. And I still grab coffee from my favourite café on those days. Maybe the answer isn\'t all-or-nothing."',
+      question: 'This commenter\'s experience suggests:',
+      options: ['Paula is wrong — downtown businesses are fine', 'Alex is wrong — remote work has no benefits', 'A hybrid model could partially address both Paula\'s and Alex\'s concerns', 'Dr. Cheng is wrong — the old model was perfectly efficient'],
+      correct: 2, explanation: 'Technique: Find the balance. The commenter works hybrid: gets Alex\'s benefits (2 days home) AND supports Paula\'s café (3 days in office). "Not all-or-nothing" = compromise between full-remote (Alex) and full in-person (what Paula needs). Partial solution for both sides.' },
+  ],
+];

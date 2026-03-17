@@ -713,30 +713,6 @@ export default function ProfilePage() {
             </section>
           )}
 
-          {/* Weekly Activity */}
-          <section className={styles.weeklySection}>
-            <h2>
-              <Calendar size={18} />
-              Last 7 Days
-            </h2>
-            <div className={styles.weeklySection}>
-              {weeklyActivity.map((count, idx) => (
-                <div key={idx} className={styles.dayColumn}>
-                  <div className={styles.barContainer}>
-                    <div 
-                      className={styles.bar}
-                      style={{ 
-                        height: `${Math.min(count * 20, 100)}%`,
-                        opacity: count > 0 ? 1 : 0.3
-                      }}
-                    />
-                  </div>
-                  <span className={styles.dayLabel}>{getDayName(6 - idx)}</span>
-                  <span className={styles.countLabel}>{count}</span>
-                </div>
-              ))}
-            </div>
-          </section>
         </div>
       )}
 

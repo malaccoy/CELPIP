@@ -1,0 +1,2206 @@
+[
+  {
+    "id": 0,
+    "title": "Tasks 1-3: Easier",
+    "subtitle": "Problem Solving • Daily Life • Information",
+    "icon": "🔧",
+    "level": "beginner",
+    "lesson": {
+      "title": "Tasks 1-3: Easier — Technique",
+      "points": [
+        "Listen to the audio carefully — it plays ONCE, just like the real test",
+        "Use the 7 Secret Steps to identify key information",
+        "Choose the best answer from 4 options",
+        "Read the explanation to understand the technique used"
+      ]
+    },
+    "exercises": [
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "I'm really worried about my cat. She's usually so playful, but this past week all she's been doing is scratching herself."
+          },
+          {
+            "voice": "female",
+            "text": "I see. Is she an indoor cat or does she go outside?"
+          },
+          {
+            "voice": "male",
+            "text": "Mostly outside. She loves being in the garden."
+          }
+        ],
+        "question": "What is the main problem?",
+        "options": [
+          "The cat is not eating",
+          "The cat keeps scratching itself",
+          "The cat ran away from home",
+          "The cat is too old to play"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Identify the Problem. The owner says \"all she's been doing is scratching herself.\" The problem is scratching, not lack of play."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Well, these marks look like they could be from insect bites. Have you noticed any small bugs on her fur?"
+          },
+          {
+            "voice": "male",
+            "text": "I tried giving her a bath with special shampoo, but it didn't help at all."
+          },
+          {
+            "voice": "female",
+            "text": "That's because shampoo won't treat the underlying cause. I'll prescribe a monthly medication that should clear this up."
+          }
+        ],
+        "question": "What is the REAL solution?",
+        "options": [
+          "A special shampoo bath",
+          "Keeping the cat indoors",
+          "Monthly medication prescribed by the vet",
+          "Taking the cat to a different clinic"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Real vs Fake solution. The shampoo was tried and FAILED (fake solution). The vet prescribes monthly medication (real solution). Always wait for the second suggestion!"
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Thank you, doctor. Should I bring her back for a follow-up?"
+          },
+          {
+            "voice": "female",
+            "text": "Yes, let's check on her in about three weeks. If the scratching stops within the first week, that's a great sign."
+          },
+          {
+            "voice": "male",
+            "text": "Perfect. I'll keep her inside until then, just to be safe."
+          }
+        ],
+        "question": "What will the man probably do next?",
+        "options": [
+          "Buy a new cat",
+          "Keep the cat indoors and return in three weeks",
+          "Try a different shampoo at home",
+          "Take the cat to a different veterinarian"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future Outcomes. He says \"I'll keep her inside\" and the vet said \"come back in three weeks.\" Future = indoor cat + follow-up visit."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Hi, I'm having trouble with my laptop. It keeps shutting down randomly, even when the battery is fully charged."
+          },
+          {
+            "voice": "male",
+            "text": "How long has this been happening?"
+          },
+          {
+            "voice": "female",
+            "text": "About two weeks now. It started right after I updated the software."
+          }
+        ],
+        "question": "What is the woman's problem?",
+        "options": [
+          "Her laptop battery is dead",
+          "Her laptop shuts down randomly",
+          "She cannot install software updates",
+          "Her laptop screen is broken"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Identify the Problem. \"It keeps shutting down randomly\" — the battery is fine, the issue is random shutdowns after a software update."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Have you tried resetting the software update? Sometimes rolling it back fixes the issue."
+          },
+          {
+            "voice": "female",
+            "text": "Yes, I tried that last week, but it didn't make any difference."
+          },
+          {
+            "voice": "male",
+            "text": "In that case, it might be a hardware issue. The fan could be overheating. I can open it up and clean the cooling system. That usually solves this type of problem."
+          }
+        ],
+        "question": "Which solution was tried but FAILED?",
+        "options": [
+          "Cleaning the cooling system",
+          "Rolling back the software update",
+          "Replacing the battery",
+          "Buying a new laptop"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Fake vs Real. Rolling back the update was tried and \"didn't make any difference\" (FAKE). Cleaning the cooling system is the REAL solution proposed."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "How long would that take?"
+          },
+          {
+            "voice": "male",
+            "text": "Usually about two hours. I can have it ready by this afternoon if you leave it with me now."
+          },
+          {
+            "voice": "female",
+            "text": "That works. I'll grab a coffee next door and come back around three."
+          }
+        ],
+        "question": "What will the woman probably do?",
+        "options": [
+          "Buy a new laptop today",
+          "Wait at the store for two hours",
+          "Leave the laptop and return later",
+          "Try fixing it herself at home"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Future. She says \"I'll grab a coffee and come back around three.\" She's leaving the laptop and returning — not waiting at the store."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "I need to talk to you about the apartment above mine. The noise has been unbearable for the past month."
+          },
+          {
+            "voice": "female",
+            "text": "I'm sorry to hear that. What kind of noise is it?"
+          },
+          {
+            "voice": "male",
+            "text": "It sounds like they're moving furniture every night, usually starting around eleven. I can barely sleep."
+          }
+        ],
+        "question": "Why is the man upset?",
+        "options": [
+          "His apartment needs repairs",
+          "There is too much noise from upstairs at night",
+          "His rent was increased",
+          "The building has no parking"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The problem is noise from upstairs, specifically at night (\"starting around eleven\"). He \"can barely sleep.\""
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Have you tried talking to them directly?"
+          },
+          {
+            "voice": "male",
+            "text": "I knocked on their door twice, but nobody answered. I also left a note, but nothing changed."
+          },
+          {
+            "voice": "female",
+            "text": "Alright. I'll send them an official notice from management. If it continues after that, we can look into moving you to a quieter unit on a different floor."
+          }
+        ],
+        "question": "What is the building manager's solution?",
+        "options": [
+          "She will call the police about the noise",
+          "She will send an official notice to the noisy tenant",
+          "She will reduce the man's rent",
+          "She will ask the noisy tenant to move out"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: The man tried direct contact (fake solution — failed). The manager will send an official notice (real solution, step 1). Moving to a different unit is the backup plan."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "And if the notice doesn't work?"
+          },
+          {
+            "voice": "female",
+            "text": "Then we'll find you a comparable unit on the second floor. There's one available next month."
+          },
+          {
+            "voice": "male",
+            "text": "Okay, let's try the notice first. I'd rather not move if I don't have to."
+          }
+        ],
+        "question": "How does the man feel about moving to a different unit?",
+        "options": [
+          "He is excited about the new apartment",
+          "He would prefer to stay and hopes the notice works",
+          "He is angry and wants to move immediately",
+          "He doesn't care either way"
+        ],
+        "correct": 1,
+        "explanation": "Step 4: Feelings. He says \"I'd rather not move if I don't have to.\" He PREFERS staying — he's not excited about moving, not angry, and not indifferent."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "My car is making a strange grinding noise whenever I brake. It started a few days ago."
+          },
+          {
+            "voice": "male",
+            "text": "Does it happen every time, or only at high speeds?"
+          },
+          {
+            "voice": "female",
+            "text": "Every time. Even when I'm just slowing down in a parking lot."
+          }
+        ],
+        "question": "What brought the woman to the mechanic?",
+        "options": [
+          "Her car won't start in the morning",
+          "She hears a grinding noise when braking",
+          "Her brakes stopped working completely",
+          "She needs an oil change"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: \"A strange grinding noise whenever I brake.\" It's not a complete brake failure — just a noise when braking."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "It could be the brake pads. They wear down over time and start grinding against the rotor."
+          },
+          {
+            "voice": "female",
+            "text": "My neighbor said I should just add brake fluid. Would that help?"
+          },
+          {
+            "voice": "male",
+            "text": "No, brake fluid is for a different issue. What you need is new brake pads. I can install them today if you'd like."
+          }
+        ],
+        "question": "Why won't adding brake fluid solve the problem?",
+        "options": [
+          "The car doesn't use brake fluid",
+          "Brake fluid is too expensive",
+          "The problem is worn brake pads, not low fluid",
+          "The mechanic doesn't have brake fluid"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Adding brake fluid is the FAKE solution (neighbor's bad advice). The mechanic says \"brake fluid is for a different issue.\" The REAL problem is worn brake pads."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "How much would new brake pads cost?"
+          },
+          {
+            "voice": "male",
+            "text": "About a hundred and fifty dollars, including installation. It takes about an hour."
+          },
+          {
+            "voice": "female",
+            "text": "Alright, let's do it. I have some errands to run nearby, so I'll come back in an hour."
+          }
+        ],
+        "question": "What will the woman do while the car is being fixed?",
+        "options": [
+          "Wait at the mechanic's shop",
+          "Go home and come back tomorrow",
+          "Run errands nearby and return in an hour",
+          "Call her neighbor for a ride"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Future. \"I have some errands to run nearby, so I'll come back in an hour.\" She's leaving and returning — not waiting there."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Thank you for calling tech support. How can I help you today?"
+          },
+          {
+            "voice": "female",
+            "text": "My internet has been incredibly slow for the past three days. I can barely load a web page, and streaming is impossible."
+          },
+          {
+            "voice": "male",
+            "text": "I'm sorry about that. Let me look into your account."
+          }
+        ],
+        "question": "What is the customer's complaint?",
+        "options": [
+          "She has no internet connection at all",
+          "Her internet speed is very slow",
+          "She was charged too much on her bill",
+          "She wants to cancel her service"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: \"My internet has been incredibly slow.\" She HAS internet, but it's very slow. Not a total outage."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Have you tried restarting your router?"
+          },
+          {
+            "voice": "female",
+            "text": "Yes, I've restarted it three times and even unplugged it overnight. Nothing changed."
+          },
+          {
+            "voice": "male",
+            "text": "I see. It looks like there's an issue on our end. We had some maintenance in your area that may have affected your connection. I'm going to reset your line from here, which should fix it within the next hour."
+          }
+        ],
+        "question": "What caused the slow internet?",
+        "options": [
+          "A broken router at the customer's home",
+          "Maintenance work done by the internet company",
+          "Too many devices connected at once",
+          "The customer's computer has a virus"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Restarting the router was the FAKE solution (tried 3 times, failed). The REAL cause was maintenance on the company's end. The tech will reset the line remotely."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "And if it's still slow after an hour?"
+          },
+          {
+            "voice": "male",
+            "text": "Then call us back and we'll send a technician to your home. But I'm quite confident the reset will work."
+          },
+          {
+            "voice": "female",
+            "text": "Fine. I'll wait an hour and test it. Thank you."
+          }
+        ],
+        "question": "What will the woman do next?",
+        "options": [
+          "Switch to a different internet provider",
+          "Wait an hour and check if the internet improves",
+          "Go to the company's office to complain",
+          "Ask a technician to come immediately"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. \"I'll wait an hour and test it.\" If still slow → call back for a technician. But her immediate next action is waiting and testing."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Julie, is that you? We're going to be late to Susan and Anthony's housewarming party!"
+          },
+          {
+            "voice": "female",
+            "text": "I know, I know. I'm looking for your blue striped shirt. You asked me to iron it yesterday."
+          },
+          {
+            "voice": "male",
+            "text": "That's my favorite shirt! Where did you put it?"
+          }
+        ],
+        "question": "Why are they having this conversation?",
+        "options": [
+          "They are shopping for new clothes",
+          "They are late for a party and can't find a shirt",
+          "They are arguing about doing laundry",
+          "They are planning what to wear tomorrow"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The WHY. They're late to a housewarming party AND can't find his shirt. The real trigger is being late, but the conversation is about the missing shirt."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Oh no. I think I donated that one to the thrift store last week by accident."
+          },
+          {
+            "voice": "male",
+            "text": "You donated my favorite shirt?! How could you mix that up?"
+          },
+          {
+            "voice": "female",
+            "text": "I'm sorry! I thought it was the old gray one with the stained collar. They looked similar in the pile."
+          }
+        ],
+        "question": "How is the man feeling?",
+        "options": [
+          "Relieved that the shirt was found",
+          "Annoyed and upset about the mistake",
+          "Sad because the party was cancelled",
+          "Afraid of going to the thrift store"
+        ],
+        "correct": 1,
+        "explanation": "Step 4: Feelings. \"You donated my favorite shirt?!\" — he's annoyed/upset. NOT sad (the party isn't cancelled), not afraid, not relieved. Use precise emotion words."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Well, I can't go to the party without a nice shirt."
+          },
+          {
+            "voice": "female",
+            "text": "What about your navy blue one? The solid one you wore to dinner last month?"
+          },
+          {
+            "voice": "male",
+            "text": "I guess that'll work. Let me grab it. We need to leave in five minutes."
+          }
+        ],
+        "question": "What shirt will the man wear to the party?",
+        "options": [
+          "The blue striped shirt",
+          "The gray shirt with the stained collar",
+          "The solid navy blue shirt",
+          "A new shirt from the store"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: TRAP! You might select the striped shirt (his favorite) but it was donated. The FUTURE answer is the navy blue one — \"I guess that'll work.\" Always pick the LAST decision."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "So what do you want to do this weekend? We haven't done anything fun in ages."
+          },
+          {
+            "voice": "male",
+            "text": "I was thinking we could go hiking at Eagle Mountain. The weather is supposed to be perfect on Saturday."
+          },
+          {
+            "voice": "female",
+            "text": "Hmm, I don't know. My knee has been bothering me since that run last Tuesday."
+          }
+        ],
+        "question": "What is the main topic of their conversation?",
+        "options": [
+          "Planning a vacation abroad",
+          "Deciding what to do this weekend",
+          "The woman's knee injury",
+          "A hiking trip they already completed"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Find the Main Topic. Though hiking and the knee come up, the MAIN topic is deciding on weekend plans. The knee is a factor, not the topic."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "What about something less physical? We could check out that new farmers market downtown."
+          },
+          {
+            "voice": "female",
+            "text": "Oh, I heard about that! They have live music and food trucks too. That sounds much better for my knee."
+          },
+          {
+            "voice": "male",
+            "text": "Great. And there's a new Thai restaurant on the same street. We could have lunch there after."
+          }
+        ],
+        "question": "Why does the man suggest the farmers market instead of hiking?",
+        "options": [
+          "He doesn't enjoy hiking anymore",
+          "The weather forecast changed to rain",
+          "The woman's knee is bothering her",
+          "The farmers market is free to enter"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Track explanations. He says \"something less physical\" — directly responding to her knee issue. The topic SHIFTED from hiking to the market because of her knee."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "What time should we go? I prefer mornings when it's less crowded."
+          },
+          {
+            "voice": "male",
+            "text": "It opens at nine. Let's get there early, walk around, then hit the Thai place for lunch around noon."
+          },
+          {
+            "voice": "female",
+            "text": "Perfect plan. I'll set an alarm so we don't sleep in."
+          }
+        ],
+        "question": "What will they do on Saturday?",
+        "options": [
+          "Go hiking at Eagle Mountain in the morning",
+          "Visit the farmers market and then have Thai food",
+          "Stay home because of the woman's knee",
+          "Go to a concert downtown at night"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future plan. Farmers market at 9 AM → Thai restaurant around noon. NOT hiking (that was rejected). The conversation shifted and the final plan is market + Thai food."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Have you met the new neighbors yet? They moved in last weekend."
+          },
+          {
+            "voice": "male",
+            "text": "Not officially, but I've seen them. They have a huge dog that barks every morning at six."
+          },
+          {
+            "voice": "female",
+            "text": "Oh no, is it waking you up?"
+          }
+        ],
+        "question": "What are they mainly talking about?",
+        "options": [
+          "Planning a welcome party for the neighbors",
+          "The new neighbor's dog and its barking",
+          "Problems with the neighborhood in general",
+          "Buying a dog of their own"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Main Topic. Though it starts with \"new neighbors,\" the conversation centers on the DOG and its barking. The topic is the dog, not the neighbors generally."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Every single morning. I'm exhausted. I even tried sleeping with earplugs, but I can still hear it."
+          },
+          {
+            "voice": "female",
+            "text": "Maybe you should go introduce yourself and mention it gently. They might not realize how loud it is."
+          },
+          {
+            "voice": "male",
+            "text": "I thought about it, but I don't want to start off on the wrong foot with new neighbors."
+          }
+        ],
+        "question": "How does the man feel about talking to the neighbors?",
+        "options": [
+          "Confident he can solve the problem quickly",
+          "Hesitant because he doesn't want to create conflict",
+          "Angry and ready to file a complaint",
+          "Indifferent about the whole situation"
+        ],
+        "correct": 1,
+        "explanation": "Step 4: Feelings. He's hesitant — \"I don't want to start off on the wrong foot.\" He's NOT angry (no aggression), not indifferent (he's exhausted), and not confident."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "What if we bake some cookies and bring them over? It would be a nice way to meet them, and you could casually bring up the early mornings."
+          },
+          {
+            "voice": "male",
+            "text": "That's actually a great idea. It won't feel like a complaint if we're being friendly first."
+          },
+          {
+            "voice": "female",
+            "text": "I'll make those chocolate chip ones this afternoon. We can go over together tomorrow evening."
+          }
+        ],
+        "question": "What do they plan to do?",
+        "options": [
+          "Call the building manager about the noise",
+          "Bring cookies to the neighbors and mention the barking casually",
+          "Put a complaint letter under the neighbor's door",
+          "Buy earplugs for both of them"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. Bake cookies this afternoon → visit neighbors tomorrow evening → casually mention the barking. A friendly approach, not a formal complaint."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Mom's birthday is next Saturday and I have absolutely no idea what to get her."
+          },
+          {
+            "voice": "female",
+            "text": "Didn't she mention wanting a new scarf? She said hers got ruined in the wash."
+          },
+          {
+            "voice": "male",
+            "text": "She did say that, but scarves feel so impersonal. I want to get her something more meaningful."
+          }
+        ],
+        "question": "Why are they having this conversation?",
+        "options": [
+          "They forgot about their mother's birthday",
+          "They need to decide on a birthday gift for their mom",
+          "They want to plan a surprise party",
+          "Their mother asked them to buy her a scarf"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The WHY. \"Mom's birthday is next Saturday and I have no idea what to get her.\" They need to decide on a gift."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "What about a spa day? She always talks about how stressed she is from work."
+          },
+          {
+            "voice": "male",
+            "text": "That's a good idea, but those gift certificates are really expensive. Like over two hundred dollars."
+          },
+          {
+            "voice": "female",
+            "text": "True. Oh! What about a cooking class? She's been watching those baking shows every night."
+          },
+          {
+            "voice": "male",
+            "text": "Now that's perfect. She'd love that. And we could sign up together so it's like a family activity."
+          }
+        ],
+        "question": "Why do they reject the spa day idea?",
+        "options": [
+          "Their mother doesn't like spas",
+          "It is too far from their mother's house",
+          "It is too expensive",
+          "They already gave her a spa gift last year"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Track the discussion. The spa was rejected because \"those gift certificates are really expensive — over two hundred dollars.\" Price was the deciding factor."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Should we look for a baking class specifically? She's obsessed with that bread-making show."
+          },
+          {
+            "voice": "male",
+            "text": "Yes, a baking class! I'll search online tonight and book one for next weekend."
+          },
+          {
+            "voice": "female",
+            "text": "And I'll get a card. Let's keep it a surprise — don't tell her anything."
+          }
+        ],
+        "question": "What gift will they give their mother?",
+        "options": [
+          "A new scarf to replace the ruined one",
+          "A spa day gift certificate",
+          "A baking class they can do together",
+          "A bread-making cookbook"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Future. They decided on a BAKING class (not just cooking). He'll book it tonight. It's a surprise. The scarf and spa were both rejected earlier."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Have you noticed that the break room always smells like fish now?"
+          },
+          {
+            "voice": "male",
+            "text": "Oh, you mean because of David? He started bringing fish curry for lunch every single day."
+          },
+          {
+            "voice": "female",
+            "text": "Every day? No wonder the microwave smells terrible."
+          }
+        ],
+        "question": "What triggered this conversation?",
+        "options": [
+          "The office kitchen needs cleaning",
+          "A coworker's fish curry is causing a smell in the break room",
+          "The microwave in the break room is broken",
+          "Someone complained to management about food"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The WHY. The fish curry smell is the trigger. The microwave smelling bad is a RESULT, not the cause."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "I actually mentioned it to him last week. I said the smell lingers all afternoon."
+          },
+          {
+            "voice": "female",
+            "text": "What did he say?"
+          },
+          {
+            "voice": "male",
+            "text": "He got a bit defensive. He said he has every right to eat whatever he wants."
+          },
+          {
+            "voice": "female",
+            "text": "I mean, he does, but there should be some consideration for shared spaces."
+          }
+        ],
+        "question": "How did David react when told about the smell?",
+        "options": [
+          "He apologized and offered to change his lunch",
+          "He became defensive and said he can eat what he wants",
+          "He ignored the comment completely",
+          "He agreed and started eating at his desk"
+        ],
+        "correct": 1,
+        "explanation": "Step 4: Feelings & reactions. David \"got a bit defensive\" and said he has \"every right to eat whatever he wants.\" Defensive, not apologetic or indifferent."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Maybe we should suggest getting a better ventilation fan for the break room instead of making it about David."
+          },
+          {
+            "voice": "male",
+            "text": "That's smart. We could bring it up at the team meeting on Thursday as a general improvement."
+          },
+          {
+            "voice": "female",
+            "text": "Exactly. Nobody gets singled out, and the problem gets solved."
+          }
+        ],
+        "question": "What do they plan to do about the situation?",
+        "options": [
+          "Report David to their manager",
+          "Suggest better ventilation at the team meeting",
+          "Ask David to stop bringing fish curry",
+          "Start eating lunch at a restaurant instead"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. They'll suggest a ventilation fan at Thursday's team meeting — framing it as a general improvement, NOT targeting David. A diplomatic approach."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Hi, I saw a sign on the front door about apartments available. I was wondering if I could get some information."
+          },
+          {
+            "voice": "male",
+            "text": "Sure. We have two units open right now. One is on the ground floor and the other is on the third floor."
+          },
+          {
+            "voice": "female",
+            "text": "Great. What's the difference between them?"
+          }
+        ],
+        "question": "Why did the woman come to the building?",
+        "options": [
+          "She wants to visit a friend who lives there",
+          "She saw a sign about available apartments",
+          "She is delivering a package",
+          "She has a meeting with the building owner"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Why are they talking? \"I saw a sign on the front door about apartments available.\" She came because of the sign — this specific detail will be tested."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "The ground floor unit has an open floor plan — the kitchen and living room flow together. It's eight hundred and fifty square feet."
+          },
+          {
+            "voice": "female",
+            "text": "And the one upstairs?"
+          },
+          {
+            "voice": "male",
+            "text": "Same size, but it has two separate bedrooms with walls between the living area and kitchen. It also gets more natural light."
+          },
+          {
+            "voice": "female",
+            "text": "I think I'd prefer the open layout. I work from home and I like having a big open space."
+          }
+        ],
+        "question": "Which apartment does the woman prefer and why?",
+        "options": [
+          "The third floor, because it has more light",
+          "The ground floor, because she likes the open layout for working from home",
+          "The third floor, because it has two bedrooms",
+          "The ground floor, because it is cheaper"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: Identify Choices. She says \"I'd prefer the open layout\" and explains she works from home and likes open space. The choice is ground floor + open plan."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "When could I move in?"
+          },
+          {
+            "voice": "male",
+            "text": "The ground floor unit is available the first of next month. Would you like to see it? I can show you around at three this afternoon."
+          },
+          {
+            "voice": "female",
+            "text": "That would be great. I'll go grab a coffee and come back then."
+          }
+        ],
+        "question": "What will happen next?",
+        "options": [
+          "The woman will sign the lease immediately",
+          "The woman will return at three to see the apartment",
+          "The man will call her tomorrow with more details",
+          "The woman will look at other buildings first"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. \"I can show you at three\" + \"I'll go grab a coffee and come back.\" She'll return at 3 PM to view the apartment. Not signing yet — just viewing."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Hi, I'm interested in joining the gym. A friend of mine is a member and recommended this place."
+          },
+          {
+            "voice": "female",
+            "text": "That's great to hear! We have three membership options. Would you like me to go over them?"
+          },
+          {
+            "voice": "male",
+            "text": "Yes, please. I'm mainly interested in using the pool and weight room."
+          }
+        ],
+        "question": "Why is the man at the gym?",
+        "options": [
+          "He wants to cancel his membership",
+          "He is looking for information about joining",
+          "He is meeting his friend for a workout",
+          "He is applying for a job there"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Why are they talking? \"I'm interested in joining the gym.\" He was recommended by a friend and wants membership information."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Our basic plan is forty dollars a month and includes the weight room and group classes. The premium plan is sixty-five and adds the pool, sauna, and personal training sessions."
+          },
+          {
+            "voice": "male",
+            "text": "What about the third option?"
+          },
+          {
+            "voice": "female",
+            "text": "That's our annual plan — six hundred for the year, which comes to fifty a month. It includes everything in the premium plan."
+          },
+          {
+            "voice": "male",
+            "text": "So the annual plan is actually cheaper than premium monthly? And it includes the pool?"
+          },
+          {
+            "voice": "female",
+            "text": "Exactly. It's our best value."
+          }
+        ],
+        "question": "Which plan is the best value according to the employee?",
+        "options": [
+          "The basic plan at forty dollars a month",
+          "The premium plan at sixty-five a month",
+          "The annual plan at six hundred per year",
+          "A student discount plan"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Track information. The annual plan ($600/year = $50/month) includes everything in premium ($65/month). The employee says \"it's our best value.\""
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "I think the annual plan makes the most sense since I want the pool anyway. Can I start today?"
+          },
+          {
+            "voice": "female",
+            "text": "Absolutely. I just need your ID and we can set everything up. Your first session with a personal trainer can be booked for this week."
+          },
+          {
+            "voice": "male",
+            "text": "Perfect. Let's do it."
+          }
+        ],
+        "question": "What does the man decide to do?",
+        "options": [
+          "Sign up for the basic plan to save money",
+          "Think about it and come back next week",
+          "Sign up for the annual plan starting today",
+          "Ask his friend for more advice first"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: The Choice. \"The annual plan makes the most sense\" + \"Can I start today?\" He's signing up for the annual plan immediately."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Excuse me, I just moved to the area and I'd like to get a library card. Is there anything I need to bring?"
+          },
+          {
+            "voice": "male",
+            "text": "Welcome! All you need is a piece of ID with your current address. A utility bill or bank statement works too."
+          },
+          {
+            "voice": "female",
+            "text": "I have my driver's license. It has my new address on it."
+          }
+        ],
+        "question": "What does the woman need to get a library card?",
+        "options": [
+          "A letter from her previous library",
+          "Two forms of photo identification",
+          "An ID showing her current address",
+          "A recommendation from a current member"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Track Q&A. She needs \"a piece of ID with your current address.\" A driver's license, utility bill, or bank statement would work."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "With your card, you can borrow up to twenty items at a time. Books are for three weeks, movies for one week, and we also have a free digital library with audiobooks and e-books."
+          },
+          {
+            "voice": "female",
+            "text": "Oh, I love audiobooks! How do I access the digital library?"
+          },
+          {
+            "voice": "male",
+            "text": "Just download the library app on your phone and sign in with your card number. Everything is free."
+          }
+        ],
+        "question": "How long can movies be borrowed?",
+        "options": [
+          "Three days",
+          "One week",
+          "Two weeks",
+          "Three weeks"
+        ],
+        "correct": 1,
+        "explanation": "Step 6: Details. Books = three weeks, movies = one week. Listen carefully when specific details are given about different categories."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "One more question — do you have any programs for newcomers? I'm from Brazil and I'd love to improve my English."
+          },
+          {
+            "voice": "male",
+            "text": "Yes! We have free English conversation circles every Wednesday evening at six. And there's a newcomer orientation this Saturday at ten."
+          },
+          {
+            "voice": "female",
+            "text": "That's wonderful. I'll definitely come to the orientation on Saturday."
+          }
+        ],
+        "question": "What will the woman attend first?",
+        "options": [
+          "The English conversation circle on Wednesday",
+          "The newcomer orientation on Saturday",
+          "A reading club next month",
+          "A digital library workshop online"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. She says \"I'll definitely come to the orientation on Saturday.\" The conversation circles are Wednesday (ongoing), but her FIRST action is Saturday's orientation."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Good morning. I'd like to book a dental checkup. I haven't been to a dentist in about two years."
+          },
+          {
+            "voice": "female",
+            "text": "No problem. Are you a new patient with us?"
+          },
+          {
+            "voice": "male",
+            "text": "Yes, this is my first time. A colleague recommended your clinic."
+          }
+        ],
+        "question": "Why is the man calling?",
+        "options": [
+          "To complain about a previous visit",
+          "To schedule a dental checkup as a new patient",
+          "To ask about dental insurance",
+          "To cancel an existing appointment"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: He wants to book a checkup. He's a new patient (hasn't been to a dentist in two years) referred by a colleague."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "For new patients, the first visit includes X-rays, a cleaning, and a full examination. It takes about an hour and a half."
+          },
+          {
+            "voice": "male",
+            "text": "Is that covered by insurance?"
+          },
+          {
+            "voice": "female",
+            "text": "The checkup and cleaning are fully covered by most plans. X-rays depend on your provider, but we can check that for you before the appointment."
+          }
+        ],
+        "question": "What is included in the first visit?",
+        "options": [
+          "Only a quick examination",
+          "X-rays, cleaning, and a full examination",
+          "Teeth whitening and a cleaning",
+          "A consultation about braces"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Track information. \"X-rays, a cleaning, and a full examination\" — all three. Takes about an hour and a half."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "We have openings this Thursday at two, or next Monday morning at nine."
+          },
+          {
+            "voice": "male",
+            "text": "I work until five on weekdays. Is there anything available on a Saturday?"
+          },
+          {
+            "voice": "female",
+            "text": "We have Saturday appointments once a month. The next one is in two weeks, on the nineteenth, at ten in the morning."
+          },
+          {
+            "voice": "male",
+            "text": "That works perfectly. Let's book that one."
+          }
+        ],
+        "question": "When will the man's appointment be?",
+        "options": [
+          "Thursday at two in the afternoon",
+          "Monday morning at nine",
+          "Saturday the nineteenth at ten in the morning",
+          "He will call back to confirm later"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: The Choice. He rejected Thursday and Monday (works until 5). He chose Saturday the 19th at 10 AM — the only option that fits his schedule."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Hi, I'd like to rent a car for this weekend. I'm driving to Banff with my family."
+          },
+          {
+            "voice": "male",
+            "text": "Great choice! How many people will be traveling?"
+          },
+          {
+            "voice": "female",
+            "text": "Four adults and two children. So we'll need something with enough space for everyone plus our luggage."
+          }
+        ],
+        "question": "What does the woman need?",
+        "options": [
+          "A small car for a business trip",
+          "A large vehicle for a family trip to Banff",
+          "A truck to move furniture",
+          "A car for her daily commute"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: She needs a car for her family (4 adults + 2 kids + luggage) going to Banff. Size and space are the key requirements."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "We have a midsize SUV for eighty-five dollars a day, or a full-size minivan for a hundred and ten. The minivan has a third row and a bigger trunk."
+          },
+          {
+            "voice": "female",
+            "text": "With six people and suitcases, I think we'll need the extra space. But a hundred and ten per day for three days is quite a lot."
+          },
+          {
+            "voice": "male",
+            "text": "I can offer you our weekend special — three days for two hundred and ninety instead of three hundred and thirty. That saves you forty dollars."
+          }
+        ],
+        "question": "Why does the woman hesitate about the minivan?",
+        "options": [
+          "She thinks it's too big to drive",
+          "She prefers the color of the SUV",
+          "The daily price is expensive for three days",
+          "Her children don't like minivans"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: She says \"$110 per day for three days is quite a lot.\" Price is the concern. The employee then offers a discount to address it."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Two hundred and ninety for the weekend? That's much better. I'll take the minivan with the weekend special."
+          },
+          {
+            "voice": "male",
+            "text": "Perfect. You can pick it up Friday afternoon after three, and return it by Monday at noon."
+          },
+          {
+            "voice": "female",
+            "text": "We'll be there Friday around four. Thank you!"
+          }
+        ],
+        "question": "What does the woman decide?",
+        "options": [
+          "She chooses the midsize SUV to save money",
+          "She rents the minivan with the weekend discount",
+          "She decides to wait and compare other rental companies",
+          "She cancels the trip because it's too expensive"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: The Choice. Minivan + weekend special ($290 for 3 days). She'll pick it up Friday around 4 PM and return Monday by noon."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Tasks 4-6: Harder",
+    "subtitle": "News Items • Discussions • Viewpoints",
+    "icon": "📰",
+    "level": "intermediate",
+    "lesson": {
+      "title": "Tasks 4-6: Harder — Technique",
+      "points": [
+        "Listen to the audio carefully — it plays ONCE, just like the real test",
+        "Use the 7 Secret Steps to identify key information",
+        "Choose the best answer from 4 options",
+        "Read the explanation to understand the technique used"
+      ]
+    },
+    "exercises": [
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Seventeen-year-old Shauna Bergman made over one thousand dollars this weekend, all because of her love of thrift store shopping. While browsing at a local shop, Shauna spotted a pair of rings with unusual orange stones priced at just three dollars."
+          }
+        ],
+        "question": "What is this news story mainly about?",
+        "options": [
+          "A new thrift store opening in town",
+          "A teenager who found valuable rings at a thrift store",
+          "Problems with overpriced jewelry in stores",
+          "A guide to thrift store shopping"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: What is the story about? The opening sentence tells you: a 17-year-old made money from thrift store rings. Always get the gist from the first sentence."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Shauna brought the rings home and showed them to her mother, who suggested the stones might actually be amber rather than glass. To test this, they rubbed the stones vigorously on a piece of fabric. When the stones attracted tiny dust particles, they knew the amber was real."
+          }
+        ],
+        "question": "Who first suggested the rings might be valuable?",
+        "options": [
+          "Shauna herself",
+          "A local jeweler",
+          "Shauna's mother",
+          "The thrift store owner"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Names matter! \"Her mother suggested the stones might actually be amber.\" Track who said/did what — this is always tested in Task 4."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "A local jeweler later confirmed the rings were genuine amber, worth approximately twelve hundred dollars. Shauna has decided to use the money to finance a trip to South America, something she has dreamed about since she was twelve."
+          }
+        ],
+        "question": "What will Shauna probably do with the money?",
+        "options": [
+          "Buy more jewelry from the thrift store",
+          "Save it for university tuition",
+          "Travel to South America",
+          "Give it back to the thrift store"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Future. \"Decided to use the money to finance a trip to South America.\" Note: the test might say \"travel abroad\" instead — same idea, different words (paraphrase)."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The Maple Ridge Community Garden has been named this year's winner of the National Green Spaces Award. The garden, which was started just three years ago by retired teacher Margaret Chen, has grown from a small patch of land to a thriving urban farm serving over two hundred families."
+          }
+        ],
+        "question": "What is the main topic of this news story?",
+        "options": [
+          "A new farming technique being tested",
+          "A community garden winning a national award",
+          "A school building a vegetable garden",
+          "A retired teacher writing a book about gardening"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Main story. \"Maple Ridge Community Garden named winner of National Green Spaces Award.\" Focus on the first sentence for the main topic."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Margaret Chen said she started the garden because she noticed many families in her neighborhood couldn't afford fresh vegetables. Quote: I saw children who had never tasted a fresh tomato right off the vine. That broke my heart and I knew I had to do something."
+          }
+        ],
+        "question": "Why did Margaret Chen start the garden?",
+        "options": [
+          "She wanted to win a gardening competition",
+          "She needed a hobby after retiring from teaching",
+          "She noticed families couldn't afford fresh vegetables",
+          "The city asked her to manage an empty lot"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Names matter + quotes! Margaret Chen (founder) started it because \"many families couldn't afford fresh vegetables.\" When CELPIP quotes someone, expect a question about it."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The award comes with a ten-thousand-dollar grant. Margaret plans to use the funding to build a greenhouse so the garden can produce fresh food year-round, even during the harsh Canadian winters."
+          }
+        ],
+        "question": "What does Margaret plan to do with the grant money?",
+        "options": [
+          "Expand the garden to a second location",
+          "Build a greenhouse for year-round growing",
+          "Hire professional farmers to manage the garden",
+          "Donate the money to local food banks"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future. \"Plans to use the funding to build a greenhouse\" for year-round production. Not expanding to another location — building a greenhouse at the existing one."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The city of Burlington announced today that it will replace its entire bus fleet with electric vehicles by 2028. The transition, which will cost an estimated forty-five million dollars, is part of the city's broader plan to achieve carbon neutrality by 2035."
+          }
+        ],
+        "question": "What did the city of Burlington announce?",
+        "options": [
+          "It will build a new bus terminal downtown",
+          "It will replace all buses with electric vehicles by 2028",
+          "It will increase bus fares to fund repairs",
+          "It will reduce the number of bus routes"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Main story from the first sentence. Replace entire bus fleet with electric vehicles by 2028. Cost: $45 million. Part of carbon neutrality plan."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Mayor Patricia Dunn defended the high cost, saying, quote, The initial investment is significant, but electric buses cost sixty percent less to maintain than diesel ones. In five years, we'll actually be saving money. Transit Director James Park added that the new buses will be quieter and produce zero emissions."
+          }
+        ],
+        "question": "According to Mayor Dunn, why is the investment worth it?",
+        "options": [
+          "Electric buses are more comfortable for passengers",
+          "The federal government is paying for the buses",
+          "Electric buses cost sixty percent less to maintain",
+          "The current buses are too old to repair"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Track who said what! Mayor Dunn (not James Park) said the maintenance savings justify the cost. \"60% less to maintain\" is her argument. Quotes are always tested."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The first twenty electric buses are expected to arrive in early 2027. They will be deployed on the city's three busiest routes first, with the remaining routes converting over the following year."
+          }
+        ],
+        "question": "What will happen first in the transition?",
+        "options": [
+          "All routes will switch to electric buses at once",
+          "The three busiest routes will get electric buses first",
+          "Passengers will vote on which routes to convert",
+          "The city will test one electric bus for a year"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future sequence. First 20 buses arrive early 2027 → deployed on 3 busiest routes → remaining routes convert the next year. Busiest routes go first."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "A Calgary firefighter is being called a hero after rescuing a dog trapped in a frozen river last Thursday evening. Lieutenant Mark Torres was off duty when he heard barking near the Bow River and found a golden retriever struggling on thin ice about fifteen meters from shore."
+          }
+        ],
+        "question": "What is the news story about?",
+        "options": [
+          "A dog that was lost for several days",
+          "A firefighter who rescued a dog from a frozen river",
+          "Training exercises for search and rescue teams",
+          "New safety rules for walking dogs near rivers"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: A firefighter rescued a dog from a frozen river. Note: he was OFF DUTY — this detail might be tested."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Without hesitation, Torres crawled across the ice on his stomach to distribute his weight. He said, quote, I knew if I stood up, the ice would crack immediately. It took me about ten minutes to reach her. The dog's owner, Sarah Mitchell, had been calling for help for nearly twenty minutes before Torres arrived."
+          }
+        ],
+        "question": "How did Lieutenant Torres cross the ice safely?",
+        "options": [
+          "He ran quickly across the ice before it cracked",
+          "He used a rope to pull himself across",
+          "He crawled on his stomach to spread his weight",
+          "He waited for the ice to freeze thicker overnight"
+        ],
+        "correct": 2,
+        "explanation": "Step 6: Emphasized detail. The news spent time explaining HOW he crossed — \"crawled on his stomach to distribute his weight.\" When they explain HOW something works, expect a question."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Sarah Mitchell said she is eternally grateful. The fire department is now planning to use this incident as a training case study. Torres himself said he hopes the story reminds people to keep their dogs on a leash near frozen waterways during winter."
+          }
+        ],
+        "question": "What does Torres hope will result from this story?",
+        "options": [
+          "That he will receive a promotion at work",
+          "That people will keep dogs on leashes near frozen water",
+          "That the city will build fences along the river",
+          "That more firefighters will learn to swim"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: Future / outcome. Torres hopes \"people will keep dogs on a leash near frozen waterways.\" His goal is awareness, not personal recognition."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "A group of engineering students at the University of British Columbia has invented a water filter that can be made for less than two dollars using materials found in any hardware store. The team, led by twenty-two-year-old Priya Sharma, developed the filter as part of their final year project."
+          }
+        ],
+        "question": "What did the students invent?",
+        "options": [
+          "A new type of water bottle",
+          "An affordable water filter made from common materials",
+          "A machine that tests water quality",
+          "A smartphone app for finding clean water"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: UBC students invented a water filter costing under $2, made from hardware store materials. Led by Priya Sharma."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Priya Sharma explained how the filter works. Quote: We use layers of sand, gravel, and activated charcoal inside a simple plastic container. The water passes through each layer, and by the time it reaches the bottom, ninety-nine percent of bacteria have been removed. It takes about thirty minutes to filter one liter."
+          }
+        ],
+        "question": "What materials are used in the filter?",
+        "options": [
+          "Metal mesh and copper pipes",
+          "Sand, gravel, and activated charcoal",
+          "Cotton fabric and plastic sheets",
+          "Ceramic tiles and rubber tubing"
+        ],
+        "correct": 1,
+        "explanation": "Step 6: Emphasized detail. They spent time explaining HOW it works — sand, gravel, and activated charcoal in a plastic container. 99% bacteria removal. This detailed explanation = guaranteed question."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The team has already received interest from three international aid organizations. Priya said their next step is to travel to rural communities in Southeast Asia this summer to test the filter in real-world conditions and train local volunteers to build them independently."
+          }
+        ],
+        "question": "What is the team planning to do next?",
+        "options": [
+          "Sell the filter to a major corporation",
+          "Apply for a patent and start a company",
+          "Test the filter in Southeast Asia and train locals to build it",
+          "Present the filter at a science fair in Vancouver"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Future. Travel to Southeast Asia this summer → test in real conditions → train local volunteers. Multiple future actions — pick the one stated."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "So, management wants to bring back the formal dress code starting next month. No more casual Fridays either."
+          },
+          {
+            "voice": "female",
+            "text": "Seriously? I think that's a step backward. Studies show people are more productive when they're comfortable."
+          },
+          {
+            "voice": "male2",
+            "text": "I actually don't mind. When I dress professionally, I feel more focused. There's something to it."
+          }
+        ],
+        "question": "What is being discussed?",
+        "options": [
+          "Whether to hire new employees",
+          "A return to formal dress code at work",
+          "Planning the company holiday party",
+          "Changes to the work schedule"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The topic is bringing back formal dress code. Three people, three different opinions — track each one in your mental table."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "But forcing everyone into suits won't make them work harder. It just makes people uncomfortable."
+          },
+          {
+            "voice": "male2",
+            "text": "I see your point, but clients visit the office regularly. First impressions matter."
+          },
+          {
+            "voice": "male",
+            "text": "That's exactly what management said. They want us to look more professional when clients are here."
+          },
+          {
+            "voice": "female",
+            "text": "Then why not make it formal only on days when clients visit? That's a reasonable compromise."
+          }
+        ],
+        "question": "What does the woman suggest as a compromise?",
+        "options": [
+          "Everyone should wear uniforms provided by the company",
+          "Formal dress only on days when clients visit the office",
+          "Employees should vote on the dress code policy",
+          "Management should pay for employees' professional clothing"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: Track opinions & solutions. The woman is AGAINST full-time formal dress but suggests a compromise: formal only on client visit days. Track who proposes what."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "That's actually not a bad idea. I could bring that up to HR."
+          },
+          {
+            "voice": "male2",
+            "text": "I'd support that. Professional when it counts, comfortable the rest of the time."
+          },
+          {
+            "voice": "female",
+            "text": "Great. So we all agree — formal for client days, casual otherwise?"
+          },
+          {
+            "voice": "male",
+            "text": "Agreed. I'll email HR this afternoon."
+          }
+        ],
+        "question": "What decision do they reach?",
+        "options": [
+          "They reject the dress code change completely",
+          "They accept the full formal dress code without changes",
+          "They agree to suggest formal dress only for client visit days",
+          "They decide to ask all employees to vote on the issue"
+        ],
+        "correct": 2,
+        "explanation": "Step 7 + Decision. All three agree on the compromise. The first man will email HR. CIRCLE this — group decisions are always tested."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "The company gave us a budget of five hundred dollars for a team building activity. Any ideas?"
+          },
+          {
+            "voice": "male",
+            "text": "How about an escape room? It's fun and it actually requires teamwork."
+          },
+          {
+            "voice": "female2",
+            "text": "I'd prefer something outdoors. We sit at desks all week — it would be nice to get some fresh air."
+          }
+        ],
+        "question": "Why are they having this discussion?",
+        "options": [
+          "They need to reduce the department budget",
+          "They have a budget for a team building activity",
+          "They want to change their work schedules",
+          "Their manager asked them to work overtime"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The company gave them $500 for team building. They need to decide how to spend it. Track each person's preference."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "An escape room is only about twenty-five dollars per person. For a team of twelve, that's three hundred. We'd still have budget left."
+          },
+          {
+            "voice": "female2",
+            "text": "But some people on the team have anxiety in small spaces. Remember what happened with Lisa last time?"
+          },
+          {
+            "voice": "female",
+            "text": "That's a good point. What about a cooking class? It's indoors but spacious, and everyone gets to eat what they make."
+          },
+          {
+            "voice": "male",
+            "text": "Actually, that could work. How much does that cost?"
+          },
+          {
+            "voice": "female",
+            "text": "Around forty dollars per person. For twelve people, that's four hundred and eighty — just under budget."
+          }
+        ],
+        "question": "Why is the escape room idea rejected?",
+        "options": [
+          "It costs too much for the group",
+          "Some team members have anxiety in small spaces",
+          "The nearest escape room is too far away",
+          "They already did an escape room last year"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: The escape room is rejected because \"some people have anxiety in small spaces\" — not cost (it was actually cheaper). Track the REAL reason for rejection."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female2",
+            "text": "A cooking class sounds fun! And we could choose a cuisine — maybe Italian or Thai?"
+          },
+          {
+            "voice": "male",
+            "text": "I vote Thai. The Thai place downtown does group classes on Saturdays."
+          },
+          {
+            "voice": "female",
+            "text": "Thai it is. I'll book it for two Saturdays from now. Everyone agree?"
+          },
+          {
+            "voice": "female2",
+            "text": "Sounds perfect."
+          }
+        ],
+        "question": "What activity do they choose and when?",
+        "options": [
+          "An escape room this Friday",
+          "An outdoor hiking trip next weekend",
+          "A Thai cooking class in two Saturdays",
+          "An Italian dinner at a restaurant tonight"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Decision + Future. Thai cooking class, two Saturdays from now. The first woman will book it. All three agree."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "Can we talk about the thermostat? It's freezing in here every afternoon. I'm wearing a jacket at my desk."
+          },
+          {
+            "voice": "female",
+            "text": "Really? I think the temperature is fine. Actually, in the mornings it's way too warm for me."
+          },
+          {
+            "voice": "male2",
+            "text": "The problem is our side of the building faces the sun all morning. By afternoon, the AC overcorrects and it gets cold."
+          }
+        ],
+        "question": "What is the core problem?",
+        "options": [
+          "The heating system is completely broken",
+          "The building is too old to regulate temperature",
+          "The AC overcorrects after the morning sun heats one side",
+          "Everyone wants different temperatures at all times"
+        ],
+        "correct": 2,
+        "explanation": "Step 1: The third speaker identifies the root cause — sun heats one side in the morning, AC overcorrects in the afternoon. It's a building orientation issue, not a broken system."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "I asked facilities to turn up the heat, but then the people on the south side complained it was too hot."
+          },
+          {
+            "voice": "female",
+            "text": "Because it was! You can't just crank up the heat for the whole building."
+          },
+          {
+            "voice": "male2",
+            "text": "What if we asked facilities to set different temperatures for different zones? The north side could be a couple degrees warmer."
+          },
+          {
+            "voice": "female",
+            "text": "Can they even do that with our system?"
+          },
+          {
+            "voice": "male2",
+            "text": "I think so. The newer thermostats support zone control."
+          }
+        ],
+        "question": "What solution does the third person propose?",
+        "options": [
+          "Everyone should bring their own space heater",
+          "Facilities should set different temperatures for different zones",
+          "They should close the blinds on the south side",
+          "The entire HVAC system needs to be replaced"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: The third person (male2) proposes zone-based temperature control. Track who suggests what — this proposal is the key solution discussed."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "That would actually solve both problems. The south side stays cooler, the north side stays warmer."
+          },
+          {
+            "voice": "female",
+            "text": "I'm on board. Should we submit a request together? It'll carry more weight than one person asking."
+          },
+          {
+            "voice": "male2",
+            "text": "Good idea. I'll draft the email and we can all sign it. I'll send it to facilities by end of day."
+          }
+        ],
+        "question": "What will they do next?",
+        "options": [
+          "Each person will submit a separate complaint",
+          "The third person will draft a joint request to facilities",
+          "They will buy space heaters with their own money",
+          "They will schedule a meeting with the building owner"
+        ],
+        "correct": 1,
+        "explanation": "Step 7: The third person (male2) will draft an email, all three sign it, send to facilities by end of day. A JOINT request — this decision is the future action."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "We need to finalize our approach for the Henderson client presentation next week. It's a big account — two million dollars."
+          },
+          {
+            "voice": "male",
+            "text": "I think we should lead with the data. Numbers speak for themselves. Show them the ROI projections first."
+          },
+          {
+            "voice": "female2",
+            "text": "I disagree. Henderson is a family business. They care more about relationships than spreadsheets."
+          }
+        ],
+        "question": "What is the main topic of discussion?",
+        "options": [
+          "Hiring a new team member for the project",
+          "How to approach a major client presentation",
+          "Deciding whether to accept the Henderson account",
+          "Planning the annual company retreat"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: They're deciding on the approach for the Henderson presentation. $2 million account. Two different strategies are proposed."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male",
+            "text": "But every business wants to see the return on investment. That's universal."
+          },
+          {
+            "voice": "female2",
+            "text": "Sure, but the ORDER matters. If we start with a story about how we helped a similar family business grow, they'll trust us. Then the numbers will mean more."
+          },
+          {
+            "voice": "female",
+            "text": "She has a point. What if we combine both? Start with the case study, then transition into the data?"
+          },
+          {
+            "voice": "male",
+            "text": "I can work with that. Story first, numbers second."
+          }
+        ],
+        "question": "What presentation strategy do they agree on?",
+        "options": [
+          "Lead with data and ROI projections only",
+          "Tell a story about a similar client first, then show the numbers",
+          "Let the client ask questions and respond naturally",
+          "Send the data ahead of time and skip the presentation"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: Compromise reached. Story about a similar family business FIRST → then transition to data/numbers. Track how the disagreement was resolved."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "Great. So who's doing what? I can handle the opening and introductions."
+          },
+          {
+            "voice": "female2",
+            "text": "I'll prepare the case study. I worked with the Morrison account — similar size, family owned."
+          },
+          {
+            "voice": "male",
+            "text": "And I'll put together the financial projections and ROI slides."
+          },
+          {
+            "voice": "female",
+            "text": "Perfect. Let's do a practice run on Wednesday to make sure it flows."
+          }
+        ],
+        "question": "What is each person responsible for?",
+        "options": [
+          "First woman: case study, second woman: data, man: introductions",
+          "First woman: introductions, second woman: case study, man: financial projections",
+          "They will all work on each section together",
+          "The man will handle the entire presentation alone"
+        ],
+        "correct": 1,
+        "explanation": "Step 3 + Step 7: Track who does what. First woman = introductions, second woman = case study (Morrison account), man = financial projections. Practice run on Wednesday."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male2",
+            "text": "We have three new hires starting next Monday. We need to figure out the training schedule."
+          },
+          {
+            "voice": "female",
+            "text": "Last time, we did a full week of classroom training and it was overwhelming. Two people quit in the first month."
+          },
+          {
+            "voice": "male",
+            "text": "I remember. They said it felt like drinking from a fire hose — too much information at once."
+          }
+        ],
+        "question": "What problem are they trying to solve?",
+        "options": [
+          "How to recruit more employees",
+          "How to improve training for new hires so they don't quit",
+          "How to reduce the number of employees",
+          "How to organize the company holiday schedule"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The problem is that previous training was overwhelming and people quit. They need a better approach for three new hires starting Monday."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "female",
+            "text": "What if we split the training into smaller chunks? Two days of basics, then pair them with a mentor for hands-on learning."
+          },
+          {
+            "voice": "male",
+            "text": "The mentor idea is great. People learn better by doing. But who would be the mentors?"
+          },
+          {
+            "voice": "male2",
+            "text": "I was thinking each of us could take one new hire. We know the different departments, so each person gets a different perspective."
+          },
+          {
+            "voice": "female",
+            "text": "That works. And we could do a short check-in every Friday for the first month — just fifteen minutes to see how they're adjusting."
+          }
+        ],
+        "question": "What training approach do they design?",
+        "options": [
+          "A two-week classroom course with daily exams",
+          "Two days of basics, then each person mentors one new hire with weekly check-ins",
+          "Online video training that new hires complete at home",
+          "New hires shadow the CEO for one week"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: Combined approach: 2 days classroom basics → each of the 3 mentors takes 1 new hire → 15-minute Friday check-ins for the first month."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "male2",
+            "text": "So let me summarize. Monday and Tuesday: basic orientation. Wednesday onward: each of us mentors one person. Fridays: group check-in."
+          },
+          {
+            "voice": "male",
+            "text": "Sounds solid. I'll prepare the orientation materials this week."
+          },
+          {
+            "voice": "female",
+            "text": "And I'll create a welcome guide with the key contacts, office map, and frequently asked questions."
+          },
+          {
+            "voice": "male2",
+            "text": "Great. I'll send an email to the new hires with what to expect on their first day."
+          }
+        ],
+        "question": "Who will contact the new hires before they start?",
+        "options": [
+          "The first man will call them",
+          "The woman will send them the welcome guide",
+          "The second man will send them an email about the first day",
+          "HR will handle all communication"
+        ],
+        "correct": 2,
+        "explanation": "Step 7: Track who does what. First man = orientation materials, woman = welcome guide, second man (male2) = email to new hires. The second man contacts them directly."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "A recent survey found that seventy-three percent of Canadian employees prefer working from home at least three days a week. But as companies push for a return to the office, the debate over remote work continues to divide workers, managers, and economists."
+          }
+        ],
+        "question": "What is the main topic of this presentation?",
+        "options": [
+          "How to set up a home office efficiently",
+          "The debate over remote work versus returning to the office",
+          "A survey about employee satisfaction with salaries",
+          "New government regulations on workplace safety"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: The debate over remote work vs. return to office. Three groups mentioned: workers, managers, economists — expect viewpoints from each."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Workers argue that remote work gives them flexibility and eliminates stressful commutes. Managers, however, worry about accountability. As one senior executive put it, quote, How do I know my team is actually working if I can't see them? Economists take a middle ground, noting that a hybrid model could boost productivity by up to eighteen percent while maintaining team cohesion."
+          }
+        ],
+        "question": "What concern do managers have about remote work?",
+        "options": [
+          "Remote workers earn too much money",
+          "They cannot monitor whether employees are actually working",
+          "Technology costs are too high for remote setups",
+          "Employees working from home create security risks"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Track who says what. Workers want flexibility. Managers worry about accountability — \"How do I know they're working?\" Economists prefer hybrid. Three distinct viewpoints."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Perhaps the real question is not where people work, but how we measure results. Companies that focus on outcomes rather than hours logged seem to thrive regardless of where their employees sit. The future of work may not be about choosing sides at all, but about finding a balance that serves everyone."
+          }
+        ],
+        "question": "What is the speaker's own opinion?",
+        "options": [
+          "Everyone should return to the office full-time",
+          "Remote work should be banned in Canada",
+          "The focus should be on results rather than location, with a balanced approach",
+          "Companies should let employees decide everything independently"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Speaker's position (revealed at the end). \"Focus on outcomes rather than hours\" + \"finding a balance.\" The speaker favors a balanced, results-oriented approach — not fully pro-remote or pro-office."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Should social media be banned in schools? This question has sparked heated debate among parents, teachers, and students themselves. With nearly ninety percent of Canadian teenagers using social media daily, the issue affects virtually every family in the country."
+          }
+        ],
+        "question": "What issue is being discussed?",
+        "options": [
+          "Whether schools should teach coding classes",
+          "Whether social media should be banned in schools",
+          "How to make schools more technologically advanced",
+          "The cost of providing laptops to students"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Should social media be banned in schools? Three groups with views: parents, teachers, and students."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Parents overwhelmingly support restrictions. In a recent poll, eighty-two percent said phones should be locked away during school hours. Teachers are more divided. While many agree that phones are distracting, some argue that social media can be a powerful educational tool. History teacher Marcus Williams said, quote, I use Instagram to bring primary sources to life. My students are more engaged than ever."
+          }
+        ],
+        "question": "What is teacher Marcus Williams's view on social media?",
+        "options": [
+          "All phones should be confiscated at the school entrance",
+          "Social media has no place in a learning environment",
+          "Social media can be a valuable educational tool when used properly",
+          "Students should only use social media during lunch breaks"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Names matter in Task 6! Marcus Williams (history teacher) uses Instagram for teaching — he sees social media as an educational tool. Parents want restrictions, but teachers are divided."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Students, predictably, oppose a ban. But their reasons are more nuanced than one might expect. Many cite the need to stay connected for group projects, school announcements, and even mental health support through peer communities. Rather than banning technology altogether, perhaps the answer lies in teaching digital literacy — helping young people use these tools wisely rather than taking them away entirely."
+          }
+        ],
+        "question": "What does the speaker ultimately recommend?",
+        "options": [
+          "A complete ban on social media for all students",
+          "Teaching digital literacy instead of banning technology",
+          "Letting students use phones only during breaks",
+          "Asking parents to monitor their children's phone use at home"
+        ],
+        "correct": 1,
+        "explanation": "Step 3: Speaker's opinion (at the end). \"Teaching digital literacy — helping young people use these tools wisely rather than taking them away entirely.\" The speaker favors education over prohibition."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Housing affordability in Canada has reached a crisis point. The average home price in major cities has increased by over forty percent in the last five years, putting homeownership out of reach for many young Canadians. Three key groups have very different ideas about how to fix this problem."
+          }
+        ],
+        "question": "What is the presentation about?",
+        "options": [
+          "A new luxury housing development in Toronto",
+          "The housing affordability crisis in Canada",
+          "How to invest in real estate for profit",
+          "Government plans to raise property taxes"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Housing affordability crisis. Prices up 40% in 5 years. Three groups will present different solutions — track each one."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Real estate developers like Jennifer Walsh argue that the solution is simple: build more housing. Quote, If we cut through the red tape and build faster, prices will naturally come down. Renters disagree. Tenant advocate Omar Hassan points out that new buildings are almost always luxury condos. Quote, They build penthouses, not affordable apartments. Building more doesn't help if it's only for the wealthy."
+          }
+        ],
+        "question": "What does Omar Hassan argue about building more housing?",
+        "options": [
+          "Building more houses will solve the crisis quickly",
+          "New construction focuses on luxury units, not affordable housing",
+          "The government should pay developers to build faster",
+          "Renters should save more money for down payments"
+        ],
+        "correct": 1,
+        "explanation": "Step 2: Two named viewpoints. Jennifer Walsh (developer): build more housing. Omar Hassan (tenant advocate): new buildings are luxury condos, not affordable. Directly opposing views."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Economist Dr. Lisa Tran offers a third perspective. She believes a combination of increased construction AND rent control is needed. Quote, We need both supply and protection. Building alone won't help if investors buy everything. It's clear that no single solution will fix Canada's housing crisis. What's needed is a comprehensive approach that addresses both supply and affordability simultaneously."
+          }
+        ],
+        "question": "What does the speaker conclude?",
+        "options": [
+          "Developers are right that building more housing is the only answer",
+          "Rent control alone will solve the affordability problem",
+          "A comprehensive approach combining supply and affordability protections is needed",
+          "The government should stop all new construction until prices drop"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Speaker agrees with Dr. Lisa Tran's balanced view — \"comprehensive approach that addresses both supply and affordability.\" Neither just building nor just rent control, but both together."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Artificial intelligence is transforming healthcare across Canada. From diagnosing diseases to predicting patient outcomes, AI tools are becoming increasingly common in hospitals and clinics. But not everyone is convinced this is a positive development."
+          }
+        ],
+        "question": "What is the main topic?",
+        "options": [
+          "A new hospital being built with AI technology",
+          "The role and debate around AI in Canadian healthcare",
+          "How to become a doctor using AI training",
+          "AI replacing all medical workers in the future"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: AI in healthcare — its growing role AND the debate around it. \"Not everyone is convinced\" signals opposing viewpoints coming."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Dr. Rachel Kim, a radiologist at Vancouver General Hospital, is enthusiastic. Quote, AI helped us detect a tumor that I almost missed on the scan. It's like having a second pair of expert eyes. But nurse practitioner Thomas Okafor is cautious. Quote, Patients don't want to hear their diagnosis from an algorithm. They want a human being who understands their fear and can hold their hand."
+          }
+        ],
+        "question": "Why is Thomas Okafor cautious about AI in healthcare?",
+        "options": [
+          "AI makes too many diagnostic errors",
+          "AI technology is too expensive for hospitals",
+          "Patients need human empathy and connection, not just algorithms",
+          "AI will eliminate all nursing jobs"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Track who says what. Dr. Rachel Kim (radiologist) = pro-AI (\"second pair of eyes\"). Thomas Okafor (nurse) = cautious — patients need human empathy. Two named viewpoints with different priorities."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Perhaps the most thoughtful perspective comes from patient advocacy groups, who argue that AI should assist doctors, never replace them. The technology works best when it enhances human judgment rather than substituting it. The goal should not be artificial intelligence or human expertise, but artificial intelligence and human expertise working together."
+          }
+        ],
+        "question": "What is the speaker's final position on AI in healthcare?",
+        "options": [
+          "AI should completely replace doctors to reduce costs",
+          "AI is too dangerous and should be banned from hospitals",
+          "AI should work alongside human doctors, enhancing rather than replacing them",
+          "Only young doctors should be allowed to use AI tools"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Speaker's position (end). \"AI AND human expertise working together\" — not replacement, not rejection, but collaboration. The word \"and\" vs \"or\" is the key."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "The idea of a four-day work week has gained significant momentum in Canada. Several companies have already adopted it, and the results are surprising many business leaders. But can working less really lead to better outcomes?"
+          }
+        ],
+        "question": "What question does this presentation explore?",
+        "options": [
+          "How to get a raise at your current job",
+          "Whether a four-day work week can lead to better results",
+          "Why Canadian workers are unhappy with their salaries",
+          "How to start a business with fewer employees"
+        ],
+        "correct": 1,
+        "explanation": "Step 1: Can a 4-day work week lead to better outcomes? The question is stated directly. Expect supporting and opposing viewpoints."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "CEO Angela Frost of a Toronto tech company reported a thirty-two percent drop in employee burnout after switching to four days. Quote, Our team produces the same output in four days because they're more focused and rested. Business owner Ricardo Mendes disagrees. Quote, In my restaurant, I need staff seven days a week. A four-day model would force me to hire more people, which I simply cannot afford."
+          }
+        ],
+        "question": "Why does Ricardo Mendes oppose the four-day work week?",
+        "options": [
+          "His employees don't want to work fewer days",
+          "He believes people should work harder, not less",
+          "He would need to hire more staff, which he cannot afford",
+          "His restaurant already closes on weekdays"
+        ],
+        "correct": 2,
+        "explanation": "Step 2: Names matter! Angela Frost (tech CEO): supports — same output, less burnout. Ricardo Mendes (restaurant owner): opposes — needs 7-day coverage, can't afford more staff. Industry matters."
+      },
+      {
+        "type": "listenChoose",
+        "audioLines": [
+          {
+            "voice": "narrator",
+            "text": "Labor economist Dr. Yuki Tanaka suggests a flexible approach. Quote, The four-day week works beautifully in knowledge-based industries, but service industries need a different model, perhaps shorter shifts across five days. A one-size-fits-all solution simply won't work. What's clear is that the traditional five-day, forty-hour model is being challenged, and the conversation is far from over."
+          }
+        ],
+        "question": "What does the speaker suggest about the four-day work week?",
+        "options": [
+          "It should be mandatory for all businesses in Canada",
+          "It only works for restaurants and retail stores",
+          "Different industries need different approaches — there is no universal solution",
+          "The traditional five-day model should never be changed"
+        ],
+        "correct": 2,
+        "explanation": "Step 3: Speaker agrees with Dr. Tanaka's nuanced view — different models for different industries. \"One-size-fits-all won't work.\" The speaker favors flexibility, not a blanket rule."
+      }
+    ]
+  }
+]

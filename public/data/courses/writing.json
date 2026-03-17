@@ -1,0 +1,821 @@
+{
+  "id": "writing-drills",
+  "title": "Writing Drills",
+  "freeUnits": 2,
+  "units": [
+    {
+      "id": 0,
+      "title": "Task 1: Email Writing",
+      "subtitle": "Master email structure — Opening, Body & Closing",
+      "icon": "✉️",
+      "level": "beginner",
+      "exercises": [
+        {
+          "id": 0,
+          "type": "choose",
+          "question": "📧 Email to: Building Manager\n📝 Situation: Your neighbor plays loud music every night until 2 AM.\n\nWhich is the BEST opening?",
+          "options": [
+            "Dear Mr. Wilson,\n\nI am writing to bring to your attention a recurring noise disturbance that has been affecting my sleep for the past three weeks.",
+            "Hey,\n\nMy neighbor is so annoying with their loud music.",
+            "To Whom It May Concern,\n\nI have a problem.",
+            "Dear Mr. Wilson,\n\nHow are you? I hope you are doing well. I wanted to talk about something."
+          ],
+          "correct": 0,
+          "explanation": "Formal greeting + clear purpose + timeframe. Gets straight to the point."
+        },
+        {
+          "id": 1,
+          "type": "fillGap",
+          "sentence": "The tenant in unit 407 consistently plays loud music past midnight. This has significantly ________ my sleep schedule and is affecting my work.",
+          "options": [
+            "disrupted",
+            "changed",
+            "moved",
+            "broken"
+          ],
+          "correct": 0,
+          "explanation": "\"Disrupted\" precisely describes interference with a routine — formal and strong."
+        },
+        {
+          "id": 2,
+          "type": "choose",
+          "question": "Which is the BEST closing?",
+          "options": [
+            "Could you please look into this matter? Thank you for your time.\n\nSincerely,\nAlex Chen",
+            "Fix this or I'm calling the police.\n\nBye",
+            "Thanks.\n\nAlex",
+            "I hope something can be done about this problem soon.\n\nAlex Chen"
+          ],
+          "correct": 0,
+          "explanation": "Action request (\"look into this\") + gratitude + sign-off. Short and professional."
+        },
+        {
+          "id": 3,
+          "type": "choose",
+          "question": "📧 Email to: Your Supervisor\n📝 Situation: You need to switch from morning to afternoon shifts for a month due to a family commitment.\n\nBest opening?",
+          "options": [
+            "Dear Ms. Rivera,\n\nI am writing to request a temporary schedule change for April due to a family obligation during morning hours.",
+            "Hi boss,\n\nI need to switch to afternoon shifts. Can you make that happen?",
+            "Dear Ms. Rivera,\n\nI'm sorry to bother you but I have a small favor to ask.",
+            "To My Supervisor,\n\nThis email is about my schedule."
+          ],
+          "correct": 0,
+          "explanation": "Names the request, timeframe (April), and reason. Respectful without over-apologizing."
+        },
+        {
+          "id": 4,
+          "type": "fillGap",
+          "sentence": "My mother requires daily assistance with her therapy appointments from 8 to 10 AM. I have already ________ with my colleague James, who can cover my morning tasks.",
+          "options": [
+            "arranged",
+            "talked",
+            "spoken",
+            "discussed"
+          ],
+          "correct": 0,
+          "explanation": "\"Arranged\" shows initiative — you already solved the problem. Much stronger than \"talked.\""
+        },
+        {
+          "id": 5,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "I am happy to discuss this further at your convenience. Thank you for considering my request.\n\nBest regards,\nDavid Park",
+            "Let me know ASAP.\n\nThanks,\nDavid",
+            "I really hope you say yes.\n\nDavid Park",
+            "Please approve this. Thank you.\n\nDavid Park"
+          ],
+          "correct": 0,
+          "explanation": "Offers to discuss + thanks. Shows flexibility and professionalism in two short sentences."
+        },
+        {
+          "id": 6,
+          "type": "choose",
+          "question": "📧 Email to: Customer Service\n📝 Situation: You ordered a blue wool sweater but received a red polyester one.\n\nBest opening?",
+          "options": [
+            "Dear Customer Service Team,\n\nI am writing regarding Order #58294, placed on March 5th, which arrived with an incorrect item.",
+            "Hey,\n\nYou sent me the wrong sweater!",
+            "Dear Sir/Madam,\n\nI am very disappointed and angry about my recent experience.",
+            "Dear Customer Service Team,\n\nI am a loyal customer and I wanted to tell you about a problem."
+          ],
+          "correct": 0,
+          "explanation": "Order number + date + specific issue. Customer service can look it up immediately."
+        },
+        {
+          "id": 7,
+          "type": "reorder",
+          "question": "Put these body sentences in the correct order:",
+          "words": [
+            "I ordered a blue wool sweater in size medium (Item #WS-442).",
+            "However, the package contained a red polyester sweater in size large.",
+            "I have verified the packing slip, which confirms the error.",
+            "I would like to receive the correct item or a full refund of $89.99."
+          ],
+          "correct": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "explanation": "Flow: What you ordered → What you got → Proof → What you want."
+        },
+        {
+          "id": 8,
+          "type": "fillGap",
+          "sentence": "Please let me know how to ________ the incorrect item. Thank you for your help.\n\nSincerely,\nSarah Mitchell",
+          "options": [
+            "return",
+            "send",
+            "give",
+            "ship"
+          ],
+          "correct": 0,
+          "explanation": "\"Return\" is the standard business term for sending back a wrong product."
+        },
+        {
+          "id": 9,
+          "type": "fillGap",
+          "sentence": "Dear Neighbors,\n\nI am excited to ________ you to our annual Spring Community BBQ on Saturday, April 12th, from 2 to 6 PM at Riverside Park.",
+          "options": [
+            "invite",
+            "call",
+            "ask",
+            "tell"
+          ],
+          "correct": 0,
+          "explanation": "\"Invite\" is the proper word for extending an invitation."
+        },
+        {
+          "id": 10,
+          "type": "choose",
+          "question": "📧 Community BBQ invitation — which body paragraph has the BEST details?",
+          "options": [
+            "Please bring a dish to share that serves 6-8 people. We'll provide the grill, drinks, and plates. There will be face painting and a treasure hunt for children.",
+            "There will be food and drinks and things to do. Bring something if you want.",
+            "The BBQ will be fun. Everyone should come and bring food.",
+            "We are planning many things. Please come and enjoy yourself."
+          ],
+          "correct": 0,
+          "explanation": "Specific details: what to bring, what's provided, kids' activities. People can actually plan."
+        },
+        {
+          "id": 11,
+          "type": "choose",
+          "question": "Best closing for this invitation?",
+          "options": [
+            "Please RSVP by April 5th by replying to this email. Feel free to bring lawn chairs!\n\nWarm regards,\nLisa and Tom Chen, Unit 302",
+            "Come if you want.\n\nLisa",
+            "Let me know if you're coming.\n\nThanks",
+            "We look forward to your attendance.\n\nSincerely,\nLisa Chen"
+          ],
+          "correct": 0,
+          "explanation": "RSVP deadline + practical tip + warm tone + identifies who they are."
+        },
+        {
+          "id": 12,
+          "type": "choose",
+          "question": "📧 Email to: Your Team Leader\n📝 Situation: You missed an important project meeting due to a family emergency.\n\nBest opening?",
+          "options": [
+            "Dear Mr. Nakamura,\n\nI sincerely apologize for missing yesterday's project meeting. An unexpected family emergency required my immediate attention.",
+            "Hi,\n\nSorry I missed the meeting. Something came up.",
+            "Dear Mr. Nakamura,\n\nI am writing to tell you about what happened yesterday.",
+            "Dear Mr. Nakamura,\n\nI'm so sorry. Please don't be mad."
+          ],
+          "correct": 0,
+          "explanation": "Direct apology + specific meeting + reason. Professional and honest."
+        },
+        {
+          "id": 13,
+          "type": "fillGap",
+          "sentence": "I have already reviewed the meeting notes Sarah shared. I am fully ________ on the new timeline and will complete my tasks by Friday.",
+          "options": [
+            "caught up",
+            "aware",
+            "informed",
+            "updated"
+          ],
+          "correct": 0,
+          "explanation": "\"Caught up\" shows you took initiative to learn what you missed."
+        },
+        {
+          "id": 14,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "Please let me know if I missed anything else. Thank you for your understanding.\n\nBest regards,\nEmma Rodriguez",
+            "Sorry again. Won't happen again.\n\nEmma",
+            "I hope this doesn't affect my review.\n\nEmma Rodriguez",
+            "Thank you for not being upset.\n\nRegards,\nEmma Rodriguez"
+          ],
+          "correct": 0,
+          "explanation": "Offers to catch up on anything missed + thanks. Brief and accountable."
+        },
+        {
+          "id": 15,
+          "type": "choose",
+          "question": "📧 Email to: Your Friend\n📝 Situation: Your friend asked for a restaurant recommendation for their anniversary.\n\nBest opening for this INFORMAL email?",
+          "options": [
+            "Hey Michelle!\n\nI've got the perfect place for your anniversary — Bella Vista on Commercial Drive!",
+            "Dear Michelle,\n\nI am writing to recommend a restaurant for your upcoming anniversary.",
+            "Hi,\n\nThere's a good restaurant you should try.",
+            "Hey!\n\nSo about restaurants... let me think..."
+          ],
+          "correct": 0,
+          "explanation": "Informal but enthusiastic — matches a friend relationship. Names the place right away."
+        },
+        {
+          "id": 16,
+          "type": "fillGap",
+          "sentence": "We went there last year and the atmosphere was incredibly ________. They have candlelit tables by the window overlooking the garden.",
+          "options": [
+            "romantic",
+            "nice",
+            "good",
+            "beautiful"
+          ],
+          "correct": 0,
+          "explanation": "\"Romantic\" is the most relevant word for an anniversary dinner. \"Nice\" is too vague."
+        },
+        {
+          "id": 17,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "I'd book for 7 PM Saturday — that's when the live jazz starts. It's about $50-60 per person. Let me know how it goes!\n\nXo,\nJen",
+            "Anyway, that's my recommendation.\n\nJen",
+            "I hope this information helps.\n\nRegards,\nJen",
+            "You should definitely go. Bye!\n\nJen"
+          ],
+          "correct": 0,
+          "explanation": "Practical tips (time, price) + wants to hear back. Helpful and personal."
+        },
+        {
+          "id": 18,
+          "type": "fillGap",
+          "sentence": "Dear Fitness First Management,\n\nI am writing to request a refund for my annual membership (Account #GF-29384), purchased on January 15th for $_________.",
+          "options": [
+            "599.99",
+            "some money",
+            "a lot",
+            "the annual fee"
+          ],
+          "correct": 0,
+          "explanation": "Always include the exact amount — specific and verifiable."
+        },
+        {
+          "id": 19,
+          "type": "choose",
+          "question": "Which body paragraph makes the STRONGEST case?",
+          "options": [
+            "My doctor, Dr. Lee at Vancouver General, has advised me to avoid exercise for six months after my knee surgery on February 28th. I have attached the medical certificate. Per your agreement (Section 4.2), medical cases qualify for a refund.",
+            "I got hurt and can't use the gym. I think I should get my money back.",
+            "I have a medical issue and my doctor said no exercise. Please refund me.",
+            "I haven't used the gym in a month due to health reasons. I would like a refund."
+          ],
+          "correct": 0,
+          "explanation": "Doctor name + date + proof + references THEIR policy. Nearly impossible to refuse."
+        },
+        {
+          "id": 20,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "Please let me know the next steps for processing a pro-rated refund. Thank you for your assistance.\n\nSincerely,\nRobert Kim",
+            "Refund me ASAP.\n\nRobert",
+            "I hope you will consider my request.\n\nRobert Kim",
+            "Give me my money back or I'll post a bad review.\n\nRobert Kim"
+          ],
+          "correct": 0,
+          "explanation": "Asks for next steps + thanks. Professional, cooperative, and brief."
+        },
+        {
+          "id": 21,
+          "type": "choose",
+          "question": "📧 Email to: Interviewer\n📝 Situation: You had a job interview yesterday for a Marketing Manager position.\n\nBest opening?",
+          "options": [
+            "Dear Ms. Blackwell,\n\nThank you for meeting with me yesterday about the Marketing Manager role. I enjoyed learning about Apex Media's plans for the Canadian market.",
+            "Hi,\n\nThanks for the interview. I think it went well.",
+            "Dear Ms. Blackwell,\n\nI am writing to follow up on my interview.",
+            "Dear Ms. Blackwell,\n\nThank you so much! I loved everything about your company!"
+          ],
+          "correct": 0,
+          "explanation": "Thanks + position + company + specific topic discussed. Shows you were listening."
+        },
+        {
+          "id": 22,
+          "type": "fillGap",
+          "sentence": "Our discussion about using social media analytics to find market trends particularly ________ with me, as it aligns with my previous campaign work.",
+          "options": [
+            "resonated",
+            "connected",
+            "matched",
+            "agreed"
+          ],
+          "correct": 0,
+          "explanation": "\"Resonated with me\" — sophisticated vocabulary showing deep connection to the topic."
+        },
+        {
+          "id": 23,
+          "type": "fillGap",
+          "sentence": "I am confident I can make a meaningful ________ to your team. Please feel free to reach out if you need anything else.\n\nWarm regards,\nMichael Torres",
+          "options": [
+            "contribution",
+            "difference",
+            "impact",
+            "addition"
+          ],
+          "correct": 0,
+          "explanation": "\"Make a meaningful contribution\" — the standard professional phrase for adding value."
+        },
+        {
+          "id": 24,
+          "type": "choose",
+          "question": "📧 Email to: Restaurant Manager\n📝 Situation: Terrible experience during your wife's birthday dinner.\n\nBest opening?",
+          "options": [
+            "Dear Manager,\n\nI am writing about a disappointing dining experience at La Maison on Saturday, March 8th, during my wife's birthday celebration.",
+            "Hey Manager,\n\nWorst restaurant experience ever.",
+            "Dear Manager,\n\nI want to complain. The food and service were terrible.",
+            "To the Manager,\n\nMy wife and I went to your restaurant and we were very upset."
+          ],
+          "correct": 0,
+          "explanation": "Restaurant name + date + occasion. Factual and measured tone."
+        },
+        {
+          "id": 25,
+          "type": "reorder",
+          "question": "Order these body sentences logically:",
+          "words": [
+            "Despite our 7:30 PM reservation, we waited 25 minutes without acknowledgment.",
+            "Our appetizers took 40 minutes and arrived cold.",
+            "My wife's salmon was undercooked and had to be sent back twice.",
+            "Throughout the evening, our server rarely checked on us."
+          ],
+          "correct": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "explanation": "Chronological: arrival → appetizers → main course → service. Bad to worse builds impact."
+        },
+        {
+          "id": 26,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "I would appreciate a gesture of goodwill, such as a complimentary meal. Thank you for looking into this.\n\nSincerely,\nJames Wright",
+            "I want a full refund immediately.\n\nJames Wright",
+            "I'll be posting this on Google and Yelp.\n\nJames Wright",
+            "I hope things improve. Good luck.\n\nJames"
+          ],
+          "correct": 0,
+          "explanation": "Specific request + polite tone. Diplomatic approach gets better results."
+        },
+        {
+          "id": 27,
+          "type": "choose",
+          "question": "📧 Email to: Former Professor\n📝 Situation: You need a recommendation letter for a Master's program.\n\nBest opening?",
+          "options": [
+            "Dear Professor Anderson,\n\nI hope this finds you well. Would you be willing to write a recommendation for my application to the Master of Data Science at U of T?",
+            "Hi Professor,\n\nCan you write me a recommendation letter?",
+            "Dear Professor Anderson,\n\nI need a favor for grad school.",
+            "Dear Professor Anderson,\n\nRemember me? I need your help."
+          ],
+          "correct": 0,
+          "explanation": "Polite + specific ask + exact program + university. Helps professors say yes."
+        },
+        {
+          "id": 28,
+          "type": "fillGap",
+          "sentence": "I completed your Advanced Statistics course in Fall 2024 with an A+ and led the group project you described as \"________.\"",
+          "options": [
+            "exceptional",
+            "very good",
+            "impressive",
+            "great"
+          ],
+          "correct": 0,
+          "explanation": "\"Exceptional\" — strongest academic compliment. Quoting them gives material for the letter."
+        },
+        {
+          "id": 29,
+          "type": "choose",
+          "question": "Best closing?",
+          "options": [
+            "The deadline is April 30th. I've attached my CV and program details for reference. Thank you for considering this.\n\nRespectfully,\nPreia Sharma",
+            "Please let me know. Thanks!\n\nPreia",
+            "I need it by next month. Here's my CV.\n\nPreia Sharma",
+            "It would mean the world to me. I really need this.\n\nPreia Sharma"
+          ],
+          "correct": 0,
+          "explanation": "Clear deadline + helpful attachments + thanks. Makes it easy for the professor."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Task 2: Survey Response",
+      "subtitle": "Write clear opinions with strong arguments",
+      "icon": "📋",
+      "level": "beginner",
+      "exercises": [
+        {
+          "id": 0,
+          "type": "choose",
+          "question": "📋 Survey from: City Council\n\"Should the city invest in more public transit routes or build new bike lanes?\"\n\nWhich opening follows the correct Task 2 format?",
+          "options": [
+            "I would recommend that the city invest in more public transit routes because they serve a wider range of residents.",
+            "Dear City Council,\n\nI believe transit is better than bike lanes.",
+            "Both options are good but I think maybe transit could work.",
+            "Option A is better because more people use buses."
+          ],
+          "correct": 0,
+          "explanation": "Uses \"I would recommend that\" (correct Task 2 opener) + no greeting (it is a survey, not an email) + never says \"Option A.\" The argument targets the Council's concern: serving residents."
+        },
+        {
+          "id": 1,
+          "type": "fillGap",
+          "sentence": "First of all, public transit serves seniors, people with disabilities, and those who cannot afford a car. ________, the nearest bus stop in my neighborhood is a 20-minute walk, which forces elderly residents to rely on expensive taxis.",
+          "options": [
+            "For example",
+            "I think",
+            "Also",
+            "Maybe"
+          ],
+          "correct": 0,
+          "explanation": "\"For example\" introduces the E (Example) in PRE technique: Point → Reason → Example. A specific, realistic detail strengthens the argument."
+        },
+        {
+          "id": 2,
+          "type": "choose",
+          "question": "Which conclusion correctly restates the opinion with DIFFERENT words?",
+          "options": [
+            "In conclusion, expanding public transit would create a more accessible city for all residents, regardless of age or ability.",
+            "In conclusion, I would recommend that the city invest in more public transit routes because they serve a wider range of residents.",
+            "So that is why I chose public transit.",
+            "Both options have advantages, but public transit is probably better."
+          ],
+          "correct": 0,
+          "explanation": "Restates with new words (\"accessible city for all residents\") instead of copying the opening. Ties back to the WHO (City Council cares about all residents)."
+        },
+        {
+          "id": 3,
+          "type": "choose",
+          "question": "📋 Survey from: Company CEO\n\"Should employees work from home permanently or return to the office?\"\n\nBest opening?",
+          "options": [
+            "I would rather employees be allowed to work from home permanently, as it improves both productivity and employee retention.",
+            "I think working from home is nice because you do not have to commute.",
+            "In my opinion, this is a difficult question with many factors.",
+            "Option B is the best choice for the company."
+          ],
+          "correct": 0,
+          "explanation": "\"I would rather [employees BE allowed]\" follows the Mastery formula. Arguments target the CEO: productivity + retention (business impact, not personal comfort)."
+        },
+        {
+          "id": 4,
+          "type": "fillGap",
+          "sentence": "Second, remote work reduces overhead costs for the company. When my previous employer switched to remote work, they ________ over $50,000 per year on office rent alone.",
+          "options": [
+            "saved",
+            "got",
+            "made",
+            "had"
+          ],
+          "correct": 0,
+          "explanation": "\"Saved\" — specific dollar amount makes the example concrete. Uses \"Second\" for organization."
+        },
+        {
+          "id": 5,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "Ultimately, allowing remote work benefits both the company through lower costs and the employees through better work-life balance.",
+            "That is why I think working from home is better.",
+            "In conclusion, there are many reasons to support remote work.",
+            "Working from home is the future and companies should accept that."
+          ],
+          "correct": 0,
+          "explanation": "Shows benefit to BOTH sides (company + employees) — this \"balanced thinking\" scores higher per the Mastery guide."
+        },
+        {
+          "id": 6,
+          "type": "choose",
+          "question": "📋 Survey from: City Manager\n\"Should downtown parking be free for the first two hours, or should paid parking continue to fund road repairs?\"\n\nBest opening?",
+          "options": [
+            "I would suggest that the city keep paid parking downtown because the revenue is essential for maintaining roads and infrastructure.",
+            "Paid parking is better than free parking in my opinion.",
+            "I choose the second option because it makes more money.",
+            "Dear City Manager,\n\nI am writing to share my thoughts on parking."
+          ],
+          "correct": 0,
+          "explanation": "\"I would suggest that\" + specific reason (revenue for roads). No \"Dear\" (it is a survey). No \"second option\" — always paraphrase."
+        },
+        {
+          "id": 7,
+          "type": "reorder",
+          "question": "Put this PRE argument in order (Point → Reason → Example):",
+          "words": [
+            "First of all, parking revenue directly funds road maintenance.",
+            "Without this income, the city would need to raise property taxes.",
+            "Last winter, potholes on Main Street caused over $200,000 in vehicle damage, all repaired with parking funds."
+          ],
+          "correct": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "PRE: Point (revenue funds roads) → Reason (alternative is higher taxes) → Example ($200,000 repair, specific street name)."
+        },
+        {
+          "id": 8,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "For these reasons, paid parking is a practical way to fund road repairs without increasing taxes for all residents.",
+            "In conclusion, paid parking is the better option.",
+            "So we should keep paid parking downtown.",
+            "I would suggest that the city keep paid parking because it is essential."
+          ],
+          "correct": 0,
+          "explanation": "Uses different words from the opening + addresses the City Manager's concern (taxes vs parking revenue)."
+        },
+        {
+          "id": 9,
+          "type": "fillGap",
+          "sentence": "I would rather the school board invest in after-school programs ________ extend the school day, because children need variety in their learning experiences.",
+          "options": [
+            "than",
+            "then",
+            "that",
+            "and"
+          ],
+          "correct": 0,
+          "explanation": "\"I would rather X THAN Y\" — correct grammar for the Mastery opener formula. \"Then\" means time; \"than\" means comparison."
+        },
+        {
+          "id": 10,
+          "type": "choose",
+          "question": "Which body paragraph uses the PRE technique correctly?",
+          "options": [
+            "First of all, after-school programs develop skills that regular classes cannot. This is because hands-on activities build confidence and creativity. For example, my daughter joined a robotics club last year, and her teacher commented that she now participates more actively in class.",
+            "After-school programs are good because kids can learn new things and have fun after school.",
+            "Many studies show that after-school programs help children. This is well known by educators.",
+            "Kids do not like staying in school longer. They get tired and cannot concentrate."
+          ],
+          "correct": 0,
+          "explanation": "Perfect PRE: Point (develop skills) → Reason (hands-on builds confidence) → Example (daughter + robotics + teacher's comment). Specific and convincing."
+        },
+        {
+          "id": 11,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "In conclusion, after-school programs offer children the chance to explore new interests while reinforcing classroom learning, which benefits both students and parents.",
+            "That is why after-school programs are the best choice for schools.",
+            "In conclusion, longer school days are bad for children.",
+            "The school board should choose after-school programs."
+          ],
+          "correct": 0,
+          "explanation": "Restates with new words + shows benefit to multiple groups (students AND parents) — balanced thinking."
+        },
+        {
+          "id": 12,
+          "type": "choose",
+          "question": "📋 Survey from: Neighborhood Association\n\"An empty lot is available. Should it become a community garden or a children's playground?\"\n\nBest opening?",
+          "options": [
+            "I would recommend that the lot be turned into a community garden because it would benefit residents of all ages and promote healthier eating habits.",
+            "A playground would be fun but a garden might be better for everyone.",
+            "This is a hard choice because both options are useful for the community.",
+            "I think a community garden is a good idea for our neighborhood."
+          ],
+          "correct": 0,
+          "explanation": "\"I would recommend that [the lot BE turned]\" — correct subjunctive after \"recommend that.\" Two clear reasons for the Association."
+        },
+        {
+          "id": 13,
+          "type": "fillGap",
+          "sentence": "Second, a community garden would strengthen neighborhood connections. In my previous neighborhood, the garden became a gathering place where families ________ on weekends, sharing recipes and gardening tips.",
+          "options": [
+            "gathered",
+            "came",
+            "went",
+            "stayed"
+          ],
+          "correct": 0,
+          "explanation": "\"Gathered\" is more vivid and precise. The example follows PRE: Point (connections) → Reason (gathering place) → Example (families sharing recipes)."
+        },
+        {
+          "id": 14,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "For these reasons, a community garden would serve our neighborhood better by improving nutrition, building community bonds, and creating a shared space for all ages.",
+            "That is why I chose the garden option over the playground.",
+            "In conclusion, gardens are better than playgrounds for neighborhoods.",
+            "I hope the neighborhood association chooses a community garden."
+          ],
+          "correct": 0,
+          "explanation": "Summarizes all three points (nutrition + bonds + all ages) as the Mastery guide requires."
+        },
+        {
+          "id": 15,
+          "type": "choose",
+          "question": "📋 Survey from: Small Business Council\n\"Should local businesses be required to accept digital payments, or should cash remain the only required method?\"\n\nBest opening?",
+          "options": [
+            "I would suggest that all local businesses be required to accept digital payments because it is more convenient and safer for both customers and store owners.",
+            "Digital payments are the future and everyone should use them.",
+            "I prefer digital payments because I do not like carrying cash around.",
+            "Option A should be implemented by all businesses immediately."
+          ],
+          "correct": 0,
+          "explanation": "\"I would suggest that\" + mentions BOTH parties (customers and owners) — tailored to the Small Business Council audience."
+        },
+        {
+          "id": 16,
+          "type": "fillGap",
+          "sentence": "Finally, digital payments create automatic records that help small businesses with tax reporting. ________, my friend who owns a café switched to digital last year and reduced her accounting time by half.",
+          "options": [
+            "To illustrate this point",
+            "I think",
+            "Also",
+            "Because"
+          ],
+          "correct": 0,
+          "explanation": "\"To illustrate this point\" is a Sentence Starter from the Mastery guide for introducing examples. Uses \"Finally\" for organization."
+        },
+        {
+          "id": 17,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "In summary, requiring digital payment options would improve convenience, reduce theft, and simplify record-keeping for small business owners.",
+            "So digital payments should be required everywhere in the city.",
+            "In conclusion, digital payments are better than cash for businesses.",
+            "I think most people would agree that digital is the way to go."
+          ],
+          "correct": 0,
+          "explanation": "Summarizes all 3 PRE points (convenience + theft + records) targeting the Small Business Council."
+        },
+        {
+          "id": 18,
+          "type": "choose",
+          "question": "📋 Survey from: Environmental Committee\n\"To reduce waste, should the city focus on recycling education or install more recycling bins?\"\n\nBest opening?",
+          "options": [
+            "In my opinion, I would prefer that the city invest in recycling education programs because changing habits creates a lasting impact on waste reduction.",
+            "More recycling bins would help but education is probably more important.",
+            "Recycling is very important for the environment and our future.",
+            "Both options could help reduce waste in our city."
+          ],
+          "correct": 0,
+          "explanation": "\"In my opinion, I would prefer that\" — Mastery opener formula. Targets the Environmental Committee with \"lasting impact on waste reduction.\""
+        },
+        {
+          "id": 19,
+          "type": "reorder",
+          "question": "Order this PRE argument correctly:",
+          "words": [
+            "First of all, many residents do not know which items can actually be recycled.",
+            "This lack of knowledge leads to contamination that ruins entire batches of recyclable materials.",
+            "For instance, my neighbor regularly puts plastic bags in the blue bin, which the recycling facility cannot process."
+          ],
+          "correct": [
+            0,
+            1,
+            2
+          ],
+          "explanation": "PRE: Point (residents do not know) → Reason (contamination) → Example (neighbor + plastic bags + specific detail)."
+        },
+        {
+          "id": 20,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "In conclusion, recycling education would address the root cause of waste problems and create long-term behavioral change in our community.",
+            "In conclusion, education is better than more bins for recycling.",
+            "That is why the city should focus on education programs.",
+            "Recycling education has many benefits for the environment."
+          ],
+          "correct": 0,
+          "explanation": "\"Root cause\" + \"long-term behavioral change\" — restates with NEW words and targets the Committee's goals."
+        },
+        {
+          "id": 21,
+          "type": "fillGap",
+          "sentence": "I would rather the city increase funding for public libraries ________ invest in online platforms, because libraries provide essential community services that websites cannot replace.",
+          "options": [
+            "than",
+            "then",
+            "and",
+            "or"
+          ],
+          "correct": 0,
+          "explanation": "\"I would rather X THAN Y\" — correct comparison structure. Never use \"then\" (time) for comparisons."
+        },
+        {
+          "id": 22,
+          "type": "choose",
+          "question": "Which body paragraph best uses the PRE technique with \"Make It Real\" details?",
+          "options": [
+            "Second, libraries serve as community hubs for newcomers to Canada. For example, our Cedar Avenue library offers free English conversation groups every Tuesday, and my coworker Maria found her first job through their employment workshop last September.",
+            "Libraries have books and computers that people can use for free. They are important places in the community.",
+            "Many people prefer physical books over digital ones. Libraries should stay open for this reason.",
+            "Online platforms are not accessible to everyone. Libraries are more fair and equal."
+          ],
+          "correct": 0,
+          "explanation": "PRE + Make It Real: Point (community hubs) → Reason (newcomer services) → Example (Cedar Avenue + Maria + Tuesday groups + September job). Specific names, places, and dates."
+        },
+        {
+          "id": 23,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "For these reasons, public libraries remain vital community spaces that provide services, connections, and opportunities that online platforms simply cannot replicate.",
+            "In conclusion, libraries are more important than online platforms for our city.",
+            "That is why we need more funding for libraries in the budget.",
+            "Libraries should continue to receive support from the city government."
+          ],
+          "correct": 0,
+          "explanation": "Restates with new language (vital + services/connections/opportunities + cannot replicate). Targets the Budget Committee's need for justification."
+        },
+        {
+          "id": 24,
+          "type": "choose",
+          "question": "📋 Survey from: Transportation Department\n\"To reduce emissions, should the government offer EV subsidies or expand public transit?\"\n\nBest opening?",
+          "options": [
+            "I would recommend that the government expand public transit because it reduces emissions at a lower cost per person and benefits a larger portion of the population.",
+            "Electric vehicles are expensive so public transit is the better choice.",
+            "Reducing carbon emissions is important for our future and our children.",
+            "I choose the second option because buses help more people than cars."
+          ],
+          "correct": 0,
+          "explanation": "\"I would recommend that\" + two reasons targeting the Transportation Dept: cost efficiency + population reach. Never says \"second option.\""
+        },
+        {
+          "id": 25,
+          "type": "fillGap",
+          "sentence": "A clear example of this is the Canada Line expansion in Vancouver, which ________ daily ridership by over 100,000 passengers within two years of opening.",
+          "options": [
+            "increased",
+            "grew",
+            "made",
+            "raised"
+          ],
+          "correct": 0,
+          "explanation": "\"Increased ridership\" is the standard collocation. \"A clear example of this is\" — Mastery Sentence Starter for introducing evidence."
+        },
+        {
+          "id": 26,
+          "type": "choose",
+          "question": "Which conclusion uses the \"other side\" technique from the Mastery guide?",
+          "options": [
+            "On the other hand, EV subsidies do help individual buyers. However, public transit serves thousands of commuters daily at a fraction of the cost. For this reason, expanding transit is the more effective solution.",
+            "In short, public transit is better than electric vehicles for the environment.",
+            "The government should invest in public transit instead of electric vehicles.",
+            "Both options help, but I prefer public transit for all the reasons above."
+          ],
+          "correct": 0,
+          "explanation": "Uses the \"other side\" argument: concede a point (EV subsidies help) → counter it (transit serves thousands at lower cost) → YOUR argument wins. This shows maturity and scores higher."
+        },
+        {
+          "id": 27,
+          "type": "choose",
+          "question": "📋 Survey from: Economic Development Board\n\"Should the city spend its budget on promoting tourism or supporting local small businesses?\"\n\nBest opening?",
+          "options": [
+            "I would rather the city prioritize supporting local small businesses because they form the backbone of our economy and create stable, year-round employment.",
+            "Tourism brings money but local businesses are also important for the city.",
+            "This is a tough question because both options can help the economy grow.",
+            "I think local businesses need more support from the city budget."
+          ],
+          "correct": 0,
+          "explanation": "\"I would rather [the city prioritize]\" — Mastery formula. Targets the Economic Development Board with \"backbone of economy\" + \"year-round employment\" (vs seasonal tourism)."
+        },
+        {
+          "id": 28,
+          "type": "fillGap",
+          "sentence": "First of all, local businesses provide consistent employment throughout the year. This is primarily due to the fact that they serve the ________ community regardless of tourist seasons.",
+          "options": [
+            "local",
+            "small",
+            "big",
+            "entire"
+          ],
+          "correct": 0,
+          "explanation": "\"Local community\" — precise word choice. \"This is primarily due to the fact that\" is a Mastery Sentence Starter for giving reasons."
+        },
+        {
+          "id": 29,
+          "type": "choose",
+          "question": "Best conclusion?",
+          "options": [
+            "In conclusion, supporting local businesses would generate more stable and sustainable economic growth, which is precisely what our community needs for long-term prosperity.",
+            "In conclusion, local businesses are more important than tourism for the economy.",
+            "That is why we should support local businesses with the city budget.",
+            "I hope the Economic Development Board makes the right choice."
+          ],
+          "correct": 0,
+          "explanation": "Uses different words (stable + sustainable + long-term prosperity) and ties directly to what the Economic Development Board cares about."
+        }
+      ]
+    }
+  ]
+}

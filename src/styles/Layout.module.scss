@@ -4,8 +4,8 @@
 // 🎨 DESIGN TOKENS
 // ============================================
 
-$premium-bg: #0a0e1a;
-$premium-card: #1a1f2e;
+$premium-bg: #1b1f2a;
+$premium-card: #1b1f2a;
 $premium-accent: #ff3b3b;
 $premium-accent-light: #ff6b6b;
 $premium-text: #f8fafc;
@@ -37,7 +37,22 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   
   @media (max-width: 767px) {
     height: auto;
+    min-height: 48px;
+  }
+}
+
+.mobileMinimalHeader {
+  display: none !important;
+  @media (max-width: 767px) {
+    display: flex !important;
+    height: 56px;
     min-height: 56px;
+  }
+}
+
+.desktopHeader {
+  @media (max-width: 767px) {
+    display: none !important;
   }
 }
 
@@ -427,12 +442,12 @@ $ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #0a0f1a;
+  background: #1b1f2a;
   padding-top: 70px;
   flex: 1;
   
   @media (max-width: 767px) {
-    padding-top: 88px;
+    padding-top: 56px;
     padding-bottom: 88px;
   }
   

@@ -296,6 +296,17 @@
   color: rgba(248, 250, 252, 0.35);
 }
 
+.difficultyLocked {
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+  &:hover {
+    border-color: rgba(239, 68, 68, 0.6) !important;
+    opacity: 0.7;
+  }
+}
+
 // ─── Generate Button ─────────────────────────────
 .generateBtn {
   width: 100%;

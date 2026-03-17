@@ -23,7 +23,7 @@ export async function POST(request: Request) {
         to: email,
         subject: 'Welcome to CELPIP AI Coach! 🎯 Your journey to CLB 9+ starts now',
         html: `
-          <div style="font-family: 'DM Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0a0e1a; color: #e0e0e0; padding: 40px 30px; border-radius: 12px;">
+          <div style="font-family: 'DM Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #1b1f2a; color: #e0e0e0; padding: 40px 30px; border-radius: 12px;">
             <div style="text-align: center; margin-bottom: 30px;">
               <h1 style="font-family: 'Space Grotesk', Arial, sans-serif; color: #ffffff; font-size: 28px; margin: 0;">Welcome to CELPIP AI Coach! 🎯</h1>
             </div>

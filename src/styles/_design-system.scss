@@ -22,11 +22,11 @@ $font-mono: 'DM Mono', ui-monospace, monospace;
 // ============================================
 
 // Backgrounds
-$bg-deep: #0a0f1a;
-$bg-primary: #0f172a;
-$bg-secondary: #1e293b;
-$bg-card: #1a1f2e;
-$bg-card-hover: #232938;
+$bg-deep: #1b1f2a;
+$bg-primary: #1b1f2a;
+$bg-secondary: #2a2f3d;
+$bg-card: #232733;
+$bg-card-hover: #2d3242;
 $bg-elevated: #2a3142;
 
 // Text
@@ -80,7 +80,7 @@ $border-hover: rgba(255, 255, 255, 0.12);
 // 🌈 GRADIENTES
 // ============================================
 
-$gradient-page: linear-gradient(180deg, $bg-deep 0%, $bg-primary 25%, #1a1f2e 50%, $bg-primary 75%, $bg-deep 100%);
+$gradient-page: linear-gradient(180deg, #1b1f2a 0%, #1b1f2a 100%);
 $gradient-hero: linear-gradient(135deg, $bg-primary 0%, #1e1b4b 40%, #312e81 70%, #4338ca 100%);
 $gradient-primary: linear-gradient(135deg, $accent-primary 0%, $accent-primary-dark 100%);
 $gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);

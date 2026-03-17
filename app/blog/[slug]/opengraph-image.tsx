@@ -34,7 +34,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           flexDirection: 'column',
           justifyContent: 'center',
           padding: '60px 80px',
-          background: 'linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%)',
+          background: 'linear-gradient(135deg, #1b1f2a 0%, #1a1f2e 100%)',
           fontFamily: 'sans-serif',
         }}
       >

@@ -62,7 +62,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-01.mp3"
   },
   {
     "id": "part4-02",
@@ -127,7 +128,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-02.mp3"
   },
   {
     "id": "part4-03",
@@ -192,7 +194,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-03.mp3"
   },
   {
     "id": "part4-04",
@@ -257,7 +260,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-04.mp3"
   },
   {
     "id": "part4-05",
@@ -322,7 +326,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-05.mp3"
   },
   {
     "id": "part4-06",
@@ -387,7 +392,8 @@
         "correct": 3
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-06.mp3"
   },
   {
     "id": "part4-07",
@@ -431,7 +437,7 @@
       },
       {
         "id": 4,
-        "question": "What is the speaker’s attitude towards renewable energy?",
+        "question": "What is the speaker\u2019s attitude towards renewable energy?",
         "options": [
           "Skeptical",
           "Supportive",
@@ -452,7 +458,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-07.mp3"
   },
   {
     "id": "part4-08",
@@ -517,7 +524,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-08.mp3"
   },
   {
     "id": "part4-09",
@@ -582,7 +590,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-09.mp3"
   },
   {
     "id": "part4-10",
@@ -647,7 +656,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-10.mp3"
   },
   {
     "id": "part4-11",
@@ -661,9 +671,9 @@
         "question": "What is the main focus of the news report?",
         "options": [
           "A new electric bus fleet in Edmonton",
-          "The city’s carbon footprint",
+          "The city\u2019s carbon footprint",
           "Funding for public transportation",
-          "Mayor Jane Smith’s initiatives"
+          "Mayor Jane Smith\u2019s initiatives"
         ],
         "correct": 0
       },
@@ -712,7 +722,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-11.mp3"
   },
   {
     "id": "part4-12",
@@ -777,7 +788,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-12.mp3"
   },
   {
     "id": "part4-13",
@@ -810,7 +822,7 @@
       },
       {
         "id": 3,
-        "question": "Which organization’s recommendations does this initiative align with?",
+        "question": "Which organization\u2019s recommendations does this initiative align with?",
         "options": [
           "A. The United Nations",
           "B. The Truth and Reconciliation Commission",
@@ -842,7 +854,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-13.mp3"
   },
   {
     "id": "part4-14",
@@ -907,7 +920,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-14.mp3"
   },
   {
     "id": "part4-15",
@@ -972,7 +986,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-15.mp3"
   },
   {
     "id": "part4-16",
@@ -1037,7 +1052,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-16.mp3"
   },
   {
     "id": "part4-17",
@@ -1102,7 +1118,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-17.mp3"
   },
   {
     "id": "part4-18",
@@ -1167,7 +1184,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-18.mp3"
   },
   {
     "id": "part4-19",
@@ -1232,7 +1250,8 @@
         "correct": 3
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-19.mp3"
   },
   {
     "id": "part4-20",
@@ -1297,7 +1316,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-20.mp3"
   },
   {
     "id": "part4-21",
@@ -1362,7 +1382,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-21.mp3"
   },
   {
     "id": "part4-22",
@@ -1387,7 +1408,7 @@
         "question": "Which cities will benefit from the new direct flights?",
         "options": [
           "Toronto, Vancouver, Calgary",
-          "Kamloops, Yellowknife, St. John’s",
+          "Kamloops, Yellowknife, St. John\u2019s",
           "Montreal, Ottawa, Halifax",
           "Quebec City, Winnipeg, Regina"
         ],
@@ -1427,7 +1448,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-22.mp3"
   },
   {
     "id": "part4-23",
@@ -1492,7 +1514,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-23.mp3"
   },
   {
     "id": "part4-24",
@@ -1557,7 +1580,8 @@
         "correct": 2
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-24.mp3"
   },
   {
     "id": "part4-25",
@@ -1622,7 +1646,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-25.mp3"
   },
   {
     "id": "part4-26",
@@ -1687,7 +1712,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-26.mp3"
   },
   {
     "id": "part4-27",
@@ -1752,7 +1778,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-27.mp3"
   },
   {
     "id": "part4-28",
@@ -1817,7 +1844,8 @@
         "correct": 0
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-28.mp3"
   },
   {
     "id": "part4-29",
@@ -1882,7 +1910,8 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-29.mp3"
   },
   {
     "id": "part4-30",
@@ -1947,12 +1976,13 @@
         "correct": 1
       }
     ],
-    "difficulty": "intermediate"
+    "difficulty": "intermediate",
+    "audio": "/audio/listening-library/part4-30.mp3"
   },
   {
     "title": "Local Farmers' Market Opens in Vancouver",
     "difficulty": "beginner",
-    "passage": "Good morning, listeners! This is Sarah Johnson, reporting from Vancouver. Today, I have exciting news for you. The local farmers' market in downtown Vancouver opened today! This market will be open every Saturday from 9 AM to 2 PM. It is located in the city park near Main Street and King Edward Avenue. \nYou can find fresh vegetables, fruits, and handmade goods from local farmers and artisans. Some of the popular items include organic apples, fresh tomatoes, and homemade jams. There is something for everyone at the market.\nThis week, the market is starting a new program. They will have live music! Local musicians will perform each Saturday. This is a great way to enjoy the atmosphere while shopping for fresh produce. \nAlso, there will be cooking demonstrations every week. Some local chefs will show you how to cook delicious meals using the fresh ingredients from the market. Remember, the first cooking demonstration starts at 10 AM this Saturday. So, come early to find a good spot! \nIf you live in or near Vancouver, don’t miss this opportunity to support local farmers and enjoy some fresh food. Bring your family and friends! Enjoy your Saturday shopping at the farmers' market. Thank you for listening, and have a great day!",
+    "passage": "Good morning, listeners! This is Sarah Johnson, reporting from Vancouver. Today, I have exciting news for you. The local farmers' market in downtown Vancouver opened today! This market will be open every Saturday from 9 AM to 2 PM. It is located in the city park near Main Street and King Edward Avenue. \nYou can find fresh vegetables, fruits, and handmade goods from local farmers and artisans. Some of the popular items include organic apples, fresh tomatoes, and homemade jams. There is something for everyone at the market.\nThis week, the market is starting a new program. They will have live music! Local musicians will perform each Saturday. This is a great way to enjoy the atmosphere while shopping for fresh produce. \nAlso, there will be cooking demonstrations every week. Some local chefs will show you how to cook delicious meals using the fresh ingredients from the market. Remember, the first cooking demonstration starts at 10 AM this Saturday. So, come early to find a good spot! \nIf you live in or near Vancouver, don\u2019t miss this opportunity to support local farmers and enjoy some fresh food. Bring your family and friends! Enjoy your Saturday shopping at the farmers' market. Thank you for listening, and have a great day!",
     "questions": [
       {
         "id": 1,
@@ -2009,12 +2039,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-31.mp3",
+    "audioFile": "part4-31.mp3"
   },
   {
     "title": "Weekly Weather and Shopping Update in Vancouver",
     "difficulty": "beginner",
-    "passage": "Welcome to the Vancouver Weekly News. Today, we will talk about the weather and some fun shopping events happening this weekend. \n\nFirst, let's start with the weather. This weekend, Vancouver will have sunny skies. The temperature will be around 20 degrees Celsius, making it a perfect day to go outside. If you plan to go to the beach, make sure to bring sunscreen and a hat. \n\nNow, let's talk about shopping. There are many events happening this weekend in downtown Vancouver. On Saturday, the big Summer Market will take place at Queen Elizabeth Park. You can find fresh fruits, vegetables, and handmade crafts from local artists. The market opens at 9 AM and will close at 4 PM. \n\nOn Sunday, there will be a special sale at the Pacific Centre Mall. Many stores will offer discounts up to 50% off on clothing and accessories. This is a great time to buy summer clothes at a lower price. The mall opens at 10 AM and stays open until 7 PM. \n\nRemember to check the bus schedules if you are taking public transport. Buses run frequently to the market and the mall. You can take the number 5 bus to get to Queen Elizabeth Park and the number 19 bus to reach the Pacific Centre Mall. Enjoy your weekend shopping and don’t forget to enjoy the nice weather!",
+    "passage": "Welcome to the Vancouver Weekly News. Today, we will talk about the weather and some fun shopping events happening this weekend. \n\nFirst, let's start with the weather. This weekend, Vancouver will have sunny skies. The temperature will be around 20 degrees Celsius, making it a perfect day to go outside. If you plan to go to the beach, make sure to bring sunscreen and a hat. \n\nNow, let's talk about shopping. There are many events happening this weekend in downtown Vancouver. On Saturday, the big Summer Market will take place at Queen Elizabeth Park. You can find fresh fruits, vegetables, and handmade crafts from local artists. The market opens at 9 AM and will close at 4 PM. \n\nOn Sunday, there will be a special sale at the Pacific Centre Mall. Many stores will offer discounts up to 50% off on clothing and accessories. This is a great time to buy summer clothes at a lower price. The mall opens at 10 AM and stays open until 7 PM. \n\nRemember to check the bus schedules if you are taking public transport. Buses run frequently to the market and the mall. You can take the number 5 bus to get to Queen Elizabeth Park and the number 19 bus to reach the Pacific Centre Mall. Enjoy your weekend shopping and don\u2019t forget to enjoy the nice weather!",
     "questions": [
       {
         "id": 1,
@@ -2071,7 +2103,9 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-32.mp3",
+    "audioFile": "part4-32.mp3"
   },
   {
     "title": "Toronto Weather Report and Shopping Tips",
@@ -2133,12 +2167,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-33.mp3",
+    "audioFile": "part4-33.mp3"
   },
   {
     "title": "Local Shopping Event in Toronto",
     "difficulty": "beginner",
-    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news about a shopping event happening tomorrow. The Toronto Shopping Festival will take place at the Metro Toronto Convention Centre. The event starts at 10 AM and ends at 6 PM. You can find many stores offering discounts on clothes, electronics, and home goods.\n\nThis year, the festival will feature over 100 vendors from across the city. There will be local artists selling handmade crafts and delicious food from local restaurants. If you are looking for unique gifts or just want to enjoy a fun day out, this is the place to be!\n\nParking is available at the convention centre, but public transport is a great option too. You can take the subway to Union Station and walk to the venue in about ten minutes. Remember to bring your reusable shopping bags to help the environment!\n\nTo make the event even more special, there will be live music performances throughout the day. Local bands will play popular songs to create a lively atmosphere. Families and friends are encouraged to come together and have a good time.\n\nSo, mark your calendars for tomorrow! Join us at the Toronto Shopping Festival for a day full of fun and savings. Don’t miss out on the great deals and wonderful local products. We hope to see you there, Toronto! That's all for your local news update. Have a great day! ",
+    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news about a shopping event happening tomorrow. The Toronto Shopping Festival will take place at the Metro Toronto Convention Centre. The event starts at 10 AM and ends at 6 PM. You can find many stores offering discounts on clothes, electronics, and home goods.\n\nThis year, the festival will feature over 100 vendors from across the city. There will be local artists selling handmade crafts and delicious food from local restaurants. If you are looking for unique gifts or just want to enjoy a fun day out, this is the place to be!\n\nParking is available at the convention centre, but public transport is a great option too. You can take the subway to Union Station and walk to the venue in about ten minutes. Remember to bring your reusable shopping bags to help the environment!\n\nTo make the event even more special, there will be live music performances throughout the day. Local bands will play popular songs to create a lively atmosphere. Families and friends are encouraged to come together and have a good time.\n\nSo, mark your calendars for tomorrow! Join us at the Toronto Shopping Festival for a day full of fun and savings. Don\u2019t miss out on the great deals and wonderful local products. We hope to see you there, Toronto! That's all for your local news update. Have a great day! ",
     "questions": [
       {
         "id": 1,
@@ -2195,7 +2231,9 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-34.mp3",
+    "audioFile": "part4-34.mp3"
   },
   {
     "title": "Local Market Opens in Toronto",
@@ -2257,12 +2295,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-35.mp3",
+    "audioFile": "part4-35.mp3"
   },
   {
     "title": "Rainy Day Shopping in Toronto",
     "difficulty": "beginner",
-    "passage": "Good morning! This is your news update for today. It is a rainy day in Toronto, but that will not stop people from shopping. Many stores are having big sales to attract customers. The downtown area is busy, even with the rain. People are carrying umbrellas and wearing raincoats as they walk to their favorite shops. The popular shopping center, the Eaton Centre, is open from 10 AM to 9 PM today. You can find many stores there, such as Hudson's Bay, Zara, and Adidas. If you are looking for discounts, you can get up to 50% off on selected items. \n\nRemember to check out the food court on the third floor. There are many options, like Asian food, burgers, and pizza. You can warm up with a hot drink while you shop. If you do not want to leave home, you can also shop online. Many stores offer free shipping over $50. \n\nIn other news, the forecast for this week shows that the weather will stay cool and rainy. The temperature will be around 10 degrees Celsius. You should dress warmly if you go outside. \n\nThat’s all for today’s news update! Happy shopping, and stay dry out there!",
+    "passage": "Good morning! This is your news update for today. It is a rainy day in Toronto, but that will not stop people from shopping. Many stores are having big sales to attract customers. The downtown area is busy, even with the rain. People are carrying umbrellas and wearing raincoats as they walk to their favorite shops. The popular shopping center, the Eaton Centre, is open from 10 AM to 9 PM today. You can find many stores there, such as Hudson's Bay, Zara, and Adidas. If you are looking for discounts, you can get up to 50% off on selected items. \n\nRemember to check out the food court on the third floor. There are many options, like Asian food, burgers, and pizza. You can warm up with a hot drink while you shop. If you do not want to leave home, you can also shop online. Many stores offer free shipping over $50. \n\nIn other news, the forecast for this week shows that the weather will stay cool and rainy. The temperature will be around 10 degrees Celsius. You should dress warmly if you go outside. \n\nThat\u2019s all for today\u2019s news update! Happy shopping, and stay dry out there!",
     "questions": [
       {
         "id": 1,
@@ -2319,12 +2359,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-36.mp3",
+    "audioFile": "part4-36.mp3"
   },
   {
     "title": "Local Farmers' Market Opens in Toronto",
     "difficulty": "beginner",
-    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news for everyone. The Toronto Farmers' Market will open this Saturday at 9 AM. It will take place in the beautiful Nathan Phillips Square. This market is a great place to buy fresh fruits, vegetables, and other local goods.\n\nYou can find many vendors selling their products. Some vendors will sell honey, cheese, and baked goods. The market will also have live music to entertain visitors. It will be a fun day for families and friends.\n\nIf you are looking for fresh and healthy options, this is a perfect place. Remember to bring your reusable bags to carry your items.\n\nIn addition, the weather for this Saturday looks great! There will be plenty of sunshine and warm temperatures, reaching 25 degrees Celsius. So, it is a good idea to wear a hat and bring sunscreen.\n\nThe Farmers’ Market is not only about shopping. It is also about supporting local businesses. By visiting, you help farmers and local producers. Additionally, there will be activities for children, such as face painting and craft booths. It will be a wonderful place for families.\n\nThe market will be open every Saturday morning until the end of October. So, mark your calendars and come out to enjoy fresh food, fun activities, and good company. See you at the market!",
+    "passage": "Good morning, Toronto! This is your local news update. Today, we have exciting news for everyone. The Toronto Farmers' Market will open this Saturday at 9 AM. It will take place in the beautiful Nathan Phillips Square. This market is a great place to buy fresh fruits, vegetables, and other local goods.\n\nYou can find many vendors selling their products. Some vendors will sell honey, cheese, and baked goods. The market will also have live music to entertain visitors. It will be a fun day for families and friends.\n\nIf you are looking for fresh and healthy options, this is a perfect place. Remember to bring your reusable bags to carry your items.\n\nIn addition, the weather for this Saturday looks great! There will be plenty of sunshine and warm temperatures, reaching 25 degrees Celsius. So, it is a good idea to wear a hat and bring sunscreen.\n\nThe Farmers\u2019 Market is not only about shopping. It is also about supporting local businesses. By visiting, you help farmers and local producers. Additionally, there will be activities for children, such as face painting and craft booths. It will be a wonderful place for families.\n\nThe market will be open every Saturday morning until the end of October. So, mark your calendars and come out to enjoy fresh food, fun activities, and good company. See you at the market!",
     "questions": [
       {
         "id": 1,
@@ -2381,12 +2423,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-37.mp3",
+    "audioFile": "part4-37.mp3"
   },
   {
     "title": "City Park Improvements Announced",
     "difficulty": "beginner",
-    "passage": "Good morning, everyone. This is your local news update. The city of Toronto has announced plans to improve several parks in the downtown area. Starting next month, the city will spend two million dollars on new playgrounds and benches. Many families enjoy spending time in these parks, and the city wants to make them better for everyone. The renovations will include new walking paths, more trees, and new picnic areas. These improvements will help families and friends to enjoy outdoor activities together.\n\nCity officials say the project will start on March 15th, and it will take about six months to complete. The parks affected include Trinity Bellwoods Park, Queen’s Park, and Allan Gardens. City council member Sarah Johnson said, “We want to create safe and fun places for children to play.”\n\nDuring this time, some areas of the parks may be closed for construction. City workers will put up signs to let visitors know which areas are closed. It is important for the public to follow these signs to stay safe.\n\nIn other news, the weather this weekend will be very nice. Expect sunny skies and temperatures around 22 degrees Celsius. It is a perfect time for a picnic in the park. Remember to bring your sunscreen and a hat.\n\nThat is all for today’s news update. Enjoy your day and the beautiful weather this weekend!",
+    "passage": "Good morning, everyone. This is your local news update. The city of Toronto has announced plans to improve several parks in the downtown area. Starting next month, the city will spend two million dollars on new playgrounds and benches. Many families enjoy spending time in these parks, and the city wants to make them better for everyone. The renovations will include new walking paths, more trees, and new picnic areas. These improvements will help families and friends to enjoy outdoor activities together.\n\nCity officials say the project will start on March 15th, and it will take about six months to complete. The parks affected include Trinity Bellwoods Park, Queen\u2019s Park, and Allan Gardens. City council member Sarah Johnson said, \u201cWe want to create safe and fun places for children to play.\u201d\n\nDuring this time, some areas of the parks may be closed for construction. City workers will put up signs to let visitors know which areas are closed. It is important for the public to follow these signs to stay safe.\n\nIn other news, the weather this weekend will be very nice. Expect sunny skies and temperatures around 22 degrees Celsius. It is a perfect time for a picnic in the park. Remember to bring your sunscreen and a hat.\n\nThat is all for today\u2019s news update. Enjoy your day and the beautiful weather this weekend!",
     "questions": [
       {
         "id": 1,
@@ -2443,12 +2487,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-38.mp3",
+    "audioFile": "part4-38.mp3"
   },
   {
     "title": "City Park Fun",
     "difficulty": "beginner",
-    "passage": "Good morning! This is the news from Vancouver. Today is Saturday, and the weather is sunny and warm. It is a great day to enjoy the outdoors. In Stanley Park, there will be a big event called the Summer Festival. The festival starts at 10 AM and goes until 5 PM. There will be food trucks, live music, and many fun activities for families. Children can enjoy face painting and games. \n\nIf you want to attend, please take public transportation. The SkyTrain is the best option. Get off at the Burrard Station and walk to the park. It takes about 10 minutes. Parking near the park is limited, so it is better to take the SkyTrain. \n\nAlso, remember to bring water and sunscreen to stay safe in the sun. Enjoy the Summer Festival and have a wonderful day at Stanley Park! \n\nThis is a reminder that the Vancouver Art Gallery is free to visit today. From 11 AM to 4 PM, you can see all the exhibits without paying. This is a great opportunity to explore some amazing art from Canadian artists. The gallery is located in downtown Vancouver. So, after the Summer Festival, consider visiting the Art Gallery to see beautiful artwork. \n\nThat’s all for today’s news. Have fun in the sun and enjoy all the activities!",
+    "passage": "Good morning! This is the news from Vancouver. Today is Saturday, and the weather is sunny and warm. It is a great day to enjoy the outdoors. In Stanley Park, there will be a big event called the Summer Festival. The festival starts at 10 AM and goes until 5 PM. There will be food trucks, live music, and many fun activities for families. Children can enjoy face painting and games. \n\nIf you want to attend, please take public transportation. The SkyTrain is the best option. Get off at the Burrard Station and walk to the park. It takes about 10 minutes. Parking near the park is limited, so it is better to take the SkyTrain. \n\nAlso, remember to bring water and sunscreen to stay safe in the sun. Enjoy the Summer Festival and have a wonderful day at Stanley Park! \n\nThis is a reminder that the Vancouver Art Gallery is free to visit today. From 11 AM to 4 PM, you can see all the exhibits without paying. This is a great opportunity to explore some amazing art from Canadian artists. The gallery is located in downtown Vancouver. So, after the Summer Festival, consider visiting the Art Gallery to see beautiful artwork. \n\nThat\u2019s all for today\u2019s news. Have fun in the sun and enjoy all the activities!",
     "questions": [
       {
         "id": 1,
@@ -2505,12 +2551,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-39.mp3",
+    "audioFile": "part4-39.mp3"
   },
   {
     "title": "Local Farmers' Market Opens This Weekend",
     "difficulty": "beginner",
-    "passage": "Good morning! This is Mark Johnson with your local news. I have exciting news for everyone in the city of Vancouver! This weekend, the Granville Island Farmers' Market opens for the season. The market will be open every Saturday and Sunday from 9 AM to 3 PM. You can find fresh fruits, vegetables, and flowers from local farmers. It is a great place to shop for healthy food and enjoy the outdoors. If you’re looking for something special, there will also be handmade crafts from local artists. It's a perfect opportunity to support our community.\n\nTo get to Granville Island, you can take a bus, which is very easy. Just catch the number 50 bus from downtown Vancouver. It takes about 15 minutes to reach the market. If you prefer driving, there is parking available, but it can be busy, especially on weekends. We recommend getting there early to find a good spot.\n\nIn addition to shopping, there will be live music at the market. Local musicians will perform from 11 AM to 2 PM. This is a wonderful way to enjoy your shopping experience. So, gather your family and friends and come to the Granville Island Farmers' Market this weekend. Remember, it opens at 9 AM on Saturday. Enjoy the fresh air, tasty food, and great company!",
+    "passage": "Good morning! This is Mark Johnson with your local news. I have exciting news for everyone in the city of Vancouver! This weekend, the Granville Island Farmers' Market opens for the season. The market will be open every Saturday and Sunday from 9 AM to 3 PM. You can find fresh fruits, vegetables, and flowers from local farmers. It is a great place to shop for healthy food and enjoy the outdoors. If you\u2019re looking for something special, there will also be handmade crafts from local artists. It's a perfect opportunity to support our community.\n\nTo get to Granville Island, you can take a bus, which is very easy. Just catch the number 50 bus from downtown Vancouver. It takes about 15 minutes to reach the market. If you prefer driving, there is parking available, but it can be busy, especially on weekends. We recommend getting there early to find a good spot.\n\nIn addition to shopping, there will be live music at the market. Local musicians will perform from 11 AM to 2 PM. This is a wonderful way to enjoy your shopping experience. So, gather your family and friends and come to the Granville Island Farmers' Market this weekend. Remember, it opens at 9 AM on Saturday. Enjoy the fresh air, tasty food, and great company!",
     "questions": [
       {
         "id": 1,
@@ -2567,7 +2615,9 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-40.mp3",
+    "audioFile": "part4-40.mp3"
   },
   {
     "title": "Local Grocery Store Opens New Location",
@@ -2629,12 +2679,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-41.mp3",
+    "audioFile": "part4-41.mp3"
   },
   {
     "title": "New Weather Update in Toronto",
     "difficulty": "beginner",
-    "passage": "Hello, and welcome to our news report. Today’s weather update is for the city of Toronto. It is a sunny day in the city. The temperature is currently 22 degrees Celsius. This is a nice temperature for a walk in the park or a visit to the shops. If you are going outside, remember to wear sunscreen and a hat because the sun is strong today. In the afternoon, we expect a few clouds, but it will still be warm. \n\nTomorrow, the weather will change a bit. There is a chance of rain in the morning, with temperatures around 19 degrees Celsius. If you have plans for tomorrow, you might want to bring an umbrella just in case. \n\nFor those who love shopping, this weekend is special. Many stores in downtown Toronto are having a summer sale. You can find discounts up to 50% off on clothing and shoes. It is a great time to buy new things. The sale starts on Friday and goes until Sunday. \n\nThe Toronto Transit Commission is ready for more people on the weekend. They will have extra buses and streetcars running to help everyone get to the stores easily. \n\nThat’s the latest news on the weather and shopping in Toronto. Enjoy your day and happy shopping this weekend!",
+    "passage": "Hello, and welcome to our news report. Today\u2019s weather update is for the city of Toronto. It is a sunny day in the city. The temperature is currently 22 degrees Celsius. This is a nice temperature for a walk in the park or a visit to the shops. If you are going outside, remember to wear sunscreen and a hat because the sun is strong today. In the afternoon, we expect a few clouds, but it will still be warm. \n\nTomorrow, the weather will change a bit. There is a chance of rain in the morning, with temperatures around 19 degrees Celsius. If you have plans for tomorrow, you might want to bring an umbrella just in case. \n\nFor those who love shopping, this weekend is special. Many stores in downtown Toronto are having a summer sale. You can find discounts up to 50% off on clothing and shoes. It is a great time to buy new things. The sale starts on Friday and goes until Sunday. \n\nThe Toronto Transit Commission is ready for more people on the weekend. They will have extra buses and streetcars running to help everyone get to the stores easily. \n\nThat\u2019s the latest news on the weather and shopping in Toronto. Enjoy your day and happy shopping this weekend!",
     "questions": [
       {
         "id": 1,
@@ -2691,12 +2743,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-42.mp3",
+    "audioFile": "part4-42.mp3"
   },
   {
     "title": "Local Farmers' Market Opening",
     "difficulty": "beginner",
-    "passage": "Good morning, everyone! This is your local news update. Today, we are excited to announce the opening of the Maple Grove Farmers' Market. The market opens this Saturday, May 15th, in the town square. It will operate every Saturday from 8 AM to 1 PM. The farmers' market will feature fresh produce from local farms, homemade jams, and baked goods. It’s a great place to find healthy food and support local farmers.\n\nYou can also enjoy live music while you shop. This week, the local band 'The Maple Leaves' will perform at 10 AM. It's a wonderful way to spend time with friends and family.\n\nIn addition, remember to bring your reusable bags. Supporting the environment is very important to us, and we encourage everyone to reduce plastic waste. There will also be a special section for children, where they can learn about gardening and even plant their own seeds.\n\nThe Maple Grove Farmers' Market is a great way to discover new foods and make connections in our community. Parking is available on Oak Street, right next to the town square. Please arrive early to find a good spot. We look forward to seeing everyone there!\n\nThank you for listening, and have a great day!",
+    "passage": "Good morning, everyone! This is your local news update. Today, we are excited to announce the opening of the Maple Grove Farmers' Market. The market opens this Saturday, May 15th, in the town square. It will operate every Saturday from 8 AM to 1 PM. The farmers' market will feature fresh produce from local farms, homemade jams, and baked goods. It\u2019s a great place to find healthy food and support local farmers.\n\nYou can also enjoy live music while you shop. This week, the local band 'The Maple Leaves' will perform at 10 AM. It's a wonderful way to spend time with friends and family.\n\nIn addition, remember to bring your reusable bags. Supporting the environment is very important to us, and we encourage everyone to reduce plastic waste. There will also be a special section for children, where they can learn about gardening and even plant their own seeds.\n\nThe Maple Grove Farmers' Market is a great way to discover new foods and make connections in our community. Parking is available on Oak Street, right next to the town square. Please arrive early to find a good spot. We look forward to seeing everyone there!\n\nThank you for listening, and have a great day!",
     "questions": [
       {
         "id": 1,
@@ -2753,12 +2807,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-43.mp3",
+    "audioFile": "part4-43.mp3"
   },
   {
     "title": "Winter Weather and Shopping in Toronto",
     "difficulty": "beginner",
-    "passage": "Good morning, Toronto! This is your local news update. Today is December 1st, and we are excited about the winter season. The weather outside is cold. The temperature is -5 degrees Celsius, and there is a chance of snow this evening. If you are going out, please wear warm clothes. Make sure to wear a coat, a hat, and gloves. Winter can be very chilly!\n\nShopping for the holidays is also starting. Many stores in downtown Toronto are having sales. You can find discounts on clothes, toys, and gifts. One popular store, Maple Mall, has a big holiday sale today. Many people are already shopping there, so it may be busy.\n\nIf you plan to shop, consider going during the morning or just after lunch. These times are usually less crowded. The mall opens at 9 AM and closes at 9 PM today. Don't forget that parking can be difficult near the mall, so it is better to take public transport if you can. The subway stops right at Maple Mall.\n\nIn other news, remember to check your local services. The city is offering free snow shoveling for seniors this winter. If you know a senior in your neighborhood, encourage them to call the city service. It is a great help!\n\nThat’s all for today’s news. Stay warm, enjoy your shopping, and have a great day in Toronto!",
+    "passage": "Good morning, Toronto! This is your local news update. Today is December 1st, and we are excited about the winter season. The weather outside is cold. The temperature is -5 degrees Celsius, and there is a chance of snow this evening. If you are going out, please wear warm clothes. Make sure to wear a coat, a hat, and gloves. Winter can be very chilly!\n\nShopping for the holidays is also starting. Many stores in downtown Toronto are having sales. You can find discounts on clothes, toys, and gifts. One popular store, Maple Mall, has a big holiday sale today. Many people are already shopping there, so it may be busy.\n\nIf you plan to shop, consider going during the morning or just after lunch. These times are usually less crowded. The mall opens at 9 AM and closes at 9 PM today. Don't forget that parking can be difficult near the mall, so it is better to take public transport if you can. The subway stops right at Maple Mall.\n\nIn other news, remember to check your local services. The city is offering free snow shoveling for seniors this winter. If you know a senior in your neighborhood, encourage them to call the city service. It is a great help!\n\nThat\u2019s all for today\u2019s news. Stay warm, enjoy your shopping, and have a great day in Toronto!",
     "questions": [
       {
         "id": 1,
@@ -2815,7 +2871,9 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-44.mp3",
+    "audioFile": "part4-44.mp3"
   },
   {
     "title": "Sunny Sales in Toronto",
@@ -2877,12 +2935,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-45.mp3",
+    "audioFile": "part4-45.mp3"
   },
   {
     "title": "Changes to the Provincial Education Policy",
     "difficulty": "advanced",
-    "passage": "Good evening, I’m Emily Chan with this week’s news update. Today, in a rather unexpected turn of events, the provincial government announced modifications to the existing education policy, which have left quite a few educators scratching their heads. The core of the debate revolves around the integration of technology in the classroom—a well-discussed topic, but perhaps not one that everyone is entirely sold on. You see, the government has proposed increasing funding for tech resources, yet many are questioning if this move truly addresses the root issues impacting student learning. Educators like Sarah Thompson, the head of the Ontario Teachers’ Association, expressed some skepticism, stating, \n\n\"While I appreciate the effort to invest in technology, I can’t help but wonder if we’re overlooking the necessity for professional development in this area. Simply throwing money at gadgets might result in flashy classrooms, but does it enhance actual learning outcomes?\" \n\nThis sentiment echoes the opinions of several academic researchers as well, who argue that without proper training, teachers might not effectively utilize the new tools. Furthermore, there’s the pressing concern about equity—how will schools in underserved areas access this technology? \n\nIn response to these apprehensions, the Deputy Minister of Education, Mark Jensen, noted that the funding will be tiered, with priority given to schools that show readiness to implement tech-driven strategies responsibly. However, many still feel this approach lacks surety, arguing it might exacerbate existing disparities rather than mitigate them. As we move forward, it’s clear that the discussions around educational reform are far from settled, and as the saying goes, where there's smoke, there’s fire. We’ll keep you updated as this story unfolds. Stay tuned for more insights on how these changes could reshape our classrooms, right here in Ontario.",
+    "passage": "Good evening, I\u2019m Emily Chan with this week\u2019s news update. Today, in a rather unexpected turn of events, the provincial government announced modifications to the existing education policy, which have left quite a few educators scratching their heads. The core of the debate revolves around the integration of technology in the classroom\u2014a well-discussed topic, but perhaps not one that everyone is entirely sold on. You see, the government has proposed increasing funding for tech resources, yet many are questioning if this move truly addresses the root issues impacting student learning. Educators like Sarah Thompson, the head of the Ontario Teachers\u2019 Association, expressed some skepticism, stating, \n\n\"While I appreciate the effort to invest in technology, I can\u2019t help but wonder if we\u2019re overlooking the necessity for professional development in this area. Simply throwing money at gadgets might result in flashy classrooms, but does it enhance actual learning outcomes?\" \n\nThis sentiment echoes the opinions of several academic researchers as well, who argue that without proper training, teachers might not effectively utilize the new tools. Furthermore, there\u2019s the pressing concern about equity\u2014how will schools in underserved areas access this technology? \n\nIn response to these apprehensions, the Deputy Minister of Education, Mark Jensen, noted that the funding will be tiered, with priority given to schools that show readiness to implement tech-driven strategies responsibly. However, many still feel this approach lacks surety, arguing it might exacerbate existing disparities rather than mitigate them. As we move forward, it\u2019s clear that the discussions around educational reform are far from settled, and as the saying goes, where there's smoke, there\u2019s fire. We\u2019ll keep you updated as this story unfolds. Stay tuned for more insights on how these changes could reshape our classrooms, right here in Ontario.",
     "questions": [
       {
         "id": 1,
@@ -2900,7 +2960,7 @@
         "question": "What concern did Sarah Thompson raise regarding the new funding?",
         "options": [
           "A) It may lead to technological waste.",
-          "B) It doesn’t address the need for professional development.",
+          "B) It doesn\u2019t address the need for professional development.",
           "C) It will be inequitably distributed.",
           "D) It focuses too much on gadgets without substance."
         ],
@@ -2939,12 +2999,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-46.mp3",
+    "audioFile": "part4-46.mp3"
   },
   {
     "title": "Toronto's New Transit Initiative",
     "difficulty": "advanced",
-    "passage": "In a bid to tackle the ongoing congestion in downtown Toronto, the city has announced a new transit initiative that's, well, somewhat ambitious. The plan, as outlined by city officials, includes the expansion of bike lanes, enhancements to bus services, and an increase in the frequency of trains on the subway network. Experts are, let’s say, not entirely convinced this will suffice to alleviate the city’s notorious traffic woes. While many are hopeful about the initiative, some residents are expressing skepticism, particularly regarding the timeline. City councillor Jane Doe, during a recent press briefing, remarked, 'We expect to see noticeable improvements within the next year, though we’re well aware that challenges may arise.' It’s quite the tightrope walk — ensuring progress while maintaining minimal disruption to commuters.\n\nMoreover, the initiative has sparked a debate about urban planning priorities. Some argue that the money could be better spent on transit infrastructure rather than, say, bike lane expansions, which they deem less critical. In the words of Thomas, a local business owner, 'I mean, sure, biking is great and all, but when it comes to efficiency, I’m not quite convinced that is the way to go.' There’s also the concern over funding — how much taxpayer money is justifiable in this venture? The mayor has insisted that the costs will be offset by potential reductions in emergency services calls due to fewer accidents. Still, many residents wonder if this claim is a bit optimistic.\n\nThe new transit plan is going to be piloted starting next month, which adds a layer of urgency. As city officials scramble to finalize the details, citizens are left to ponder whether this initiative is genuinely going to transform how they navigate the city or if it’s merely another exercise in urban idealism. Time will tell, and of course, we’ll be keeping a close watch on how things unfold over the next few months.",
+    "passage": "In a bid to tackle the ongoing congestion in downtown Toronto, the city has announced a new transit initiative that's, well, somewhat ambitious. The plan, as outlined by city officials, includes the expansion of bike lanes, enhancements to bus services, and an increase in the frequency of trains on the subway network. Experts are, let\u2019s say, not entirely convinced this will suffice to alleviate the city\u2019s notorious traffic woes. While many are hopeful about the initiative, some residents are expressing skepticism, particularly regarding the timeline. City councillor Jane Doe, during a recent press briefing, remarked, 'We expect to see noticeable improvements within the next year, though we\u2019re well aware that challenges may arise.' It\u2019s quite the tightrope walk \u2014 ensuring progress while maintaining minimal disruption to commuters.\n\nMoreover, the initiative has sparked a debate about urban planning priorities. Some argue that the money could be better spent on transit infrastructure rather than, say, bike lane expansions, which they deem less critical. In the words of Thomas, a local business owner, 'I mean, sure, biking is great and all, but when it comes to efficiency, I\u2019m not quite convinced that is the way to go.' There\u2019s also the concern over funding \u2014 how much taxpayer money is justifiable in this venture? The mayor has insisted that the costs will be offset by potential reductions in emergency services calls due to fewer accidents. Still, many residents wonder if this claim is a bit optimistic.\n\nThe new transit plan is going to be piloted starting next month, which adds a layer of urgency. As city officials scramble to finalize the details, citizens are left to ponder whether this initiative is genuinely going to transform how they navigate the city or if it\u2019s merely another exercise in urban idealism. Time will tell, and of course, we\u2019ll be keeping a close watch on how things unfold over the next few months.",
     "questions": [
       {
         "id": 1,
@@ -3001,12 +3063,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-47.mp3",
+    "audioFile": "part4-47.mp3"
   },
   {
     "title": "The Impact of Urban Development on Community Health",
     "difficulty": "advanced",
-    "passage": "Good evening. This is Sarah Lee reporting for CBC News from Toronto. In today's discussion, we dive into a growing concern among urban planners and health experts regarding the impact of urban development on community health. While there are multiple initiatives aimed at revitalizing downtown areas, there’s an ongoing debate about how these changes affect local residents.\n\nTo put it bluntly, one might say that it’s not exactly a straightforward issue. There are certainly positive aspects, like increased access to amenities and the economic boost that comes with urban development. However, I’m not entirely convinced that these benefits outweigh the potential downsides. For instance, as new condominiums rise, many families are being priced out of their neighborhoods; this can lead to increased stress and associated health issues, not to mention the displacement of long-standing communities.\n\nMoreover, some city planners argue that while these developments promise a modern aesthetic and increased foot traffic, they often neglect critical elements like green spaces and community centers, which are vital for mental health. This has led to a growing sentiment that urban developments focusing solely on profit may inadvertently harm their intended communities.\n\nInterestingly, recent studies have shown a direct correlation between increased urban density and the rise in mental health challenges. You’d think that more people in a shared space would lead to greater social interactions, but that’s not always the case. Many are finding themselves isolated in their high-rise apartments, which certainly raises a flag.\n\nIn conclusion, as Toronto continues to expand, it’s imperative that we adopt a more holistic approach to urban planning— one that prioritizes not just financial gains but also the health and wellbeing of its residents. This balancing act is something we’ll need to navigate carefully in the coming years.",
+    "passage": "Good evening. This is Sarah Lee reporting for CBC News from Toronto. In today's discussion, we dive into a growing concern among urban planners and health experts regarding the impact of urban development on community health. While there are multiple initiatives aimed at revitalizing downtown areas, there\u2019s an ongoing debate about how these changes affect local residents.\n\nTo put it bluntly, one might say that it\u2019s not exactly a straightforward issue. There are certainly positive aspects, like increased access to amenities and the economic boost that comes with urban development. However, I\u2019m not entirely convinced that these benefits outweigh the potential downsides. For instance, as new condominiums rise, many families are being priced out of their neighborhoods; this can lead to increased stress and associated health issues, not to mention the displacement of long-standing communities.\n\nMoreover, some city planners argue that while these developments promise a modern aesthetic and increased foot traffic, they often neglect critical elements like green spaces and community centers, which are vital for mental health. This has led to a growing sentiment that urban developments focusing solely on profit may inadvertently harm their intended communities.\n\nInterestingly, recent studies have shown a direct correlation between increased urban density and the rise in mental health challenges. You\u2019d think that more people in a shared space would lead to greater social interactions, but that\u2019s not always the case. Many are finding themselves isolated in their high-rise apartments, which certainly raises a flag.\n\nIn conclusion, as Toronto continues to expand, it\u2019s imperative that we adopt a more holistic approach to urban planning\u2014 one that prioritizes not just financial gains but also the health and wellbeing of its residents. This balancing act is something we\u2019ll need to navigate carefully in the coming years.",
     "questions": [
       {
         "id": 1,
@@ -3043,7 +3107,7 @@
       },
       {
         "id": 4,
-        "question": "What does Sarah suggest needs to happen in Toronto’s urban planning?",
+        "question": "What does Sarah suggest needs to happen in Toronto\u2019s urban planning?",
         "options": [
           "A. A stronger focus on profit-driven projects",
           "B. An abandonment of existing green spaces",
@@ -3054,7 +3118,7 @@
       },
       {
         "id": 5,
-        "question": "How does Sarah’s tone reflect her perspective on the issues discussed?",
+        "question": "How does Sarah\u2019s tone reflect her perspective on the issues discussed?",
         "options": [
           "A. Completely optimistic about urban development",
           "B. Neutral without strong opinions on the matter",
@@ -3063,12 +3127,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-48.mp3",
+    "audioFile": "part4-48.mp3"
   },
   {
     "title": "Upcoming Changes in Toronto Transit Policy",
     "difficulty": "advanced",
-    "passage": "Good evening. In today's news, we're turning our attention to the Toronto Transit Commission, or TTC, which has announced a major policy overhaul that has been the talk of the town. It's not entirely clear if this will be a net positive for commuters, but let’s break down the details. First off, the plan involves increasing frequency on select routes—yes, that's right, routes that desperately need it, we can all agree on that. However, here's the kicker: they also plan to cut service on some less popular lines. Now, I'm not saying this is a disaster, but we have to wonder who exactly deemed those lines 'less popular.' After all, isn’t every passenger important? \n\nThen there’s the proposed fare increase that’s also raising eyebrows. The TTC argues it’s a necessary move to keep up with rising operational costs, which, you might say, are partly due to the ongoing inflationary pressures. Still, there are skeptics. Many transit advocates argue that such price hikes could disproportionately affect lower-income riders—right? I mean, one could say it's almost ironic that the very people who rely on public transit the most could be left in an even tougher spot. \n\nAnd, let's not forget the timing of this announcement—just as the colder months are approaching. You’d think they’d have considered the potential backlash. Indeed, managing public perception here seems paramount, don’t you think? On the one hand, they want to be seen as proactive; on the other, some might say this looks more reactive—like damage control. As discussions continue, we’ll be keeping an eye on how the public responds and whether the TTC might just have to backpedal on some of these changes. That’s it for now; stay tuned for updates.",
+    "passage": "Good evening. In today's news, we're turning our attention to the Toronto Transit Commission, or TTC, which has announced a major policy overhaul that has been the talk of the town. It's not entirely clear if this will be a net positive for commuters, but let\u2019s break down the details. First off, the plan involves increasing frequency on select routes\u2014yes, that's right, routes that desperately need it, we can all agree on that. However, here's the kicker: they also plan to cut service on some less popular lines. Now, I'm not saying this is a disaster, but we have to wonder who exactly deemed those lines 'less popular.' After all, isn\u2019t every passenger important? \n\nThen there\u2019s the proposed fare increase that\u2019s also raising eyebrows. The TTC argues it\u2019s a necessary move to keep up with rising operational costs, which, you might say, are partly due to the ongoing inflationary pressures. Still, there are skeptics. Many transit advocates argue that such price hikes could disproportionately affect lower-income riders\u2014right? I mean, one could say it's almost ironic that the very people who rely on public transit the most could be left in an even tougher spot. \n\nAnd, let's not forget the timing of this announcement\u2014just as the colder months are approaching. You\u2019d think they\u2019d have considered the potential backlash. Indeed, managing public perception here seems paramount, don\u2019t you think? On the one hand, they want to be seen as proactive; on the other, some might say this looks more reactive\u2014like damage control. As discussions continue, we\u2019ll be keeping an eye on how the public responds and whether the TTC might just have to backpedal on some of these changes. That\u2019s it for now; stay tuned for updates.",
     "questions": [
       {
         "id": 1,
@@ -3125,12 +3191,14 @@
         ],
         "correct": 0
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-49.mp3",
+    "audioFile": "part4-49.mp3"
   },
   {
     "title": "City Council Debates New Urban Development Plan",
     "difficulty": "advanced",
-    "passage": "In today's city council meeting, the debate over the proposed urban development plan was as heated as anticipated. Mayor Thompson opened the session by stating, \"As we all know, this plan is vital for revitalizing the downtown area, but I’m not entirely convinced it addresses the concerns of our long-term residents.\" This drew immediate reactions, with Councillor Huang interjecting, \"Exactly, Mayor! While new businesses might flourish, we should ask ourselves, will they actually meet the needs of the community?\" \n\nThe room buzzed with murmurs as the councillors pondered this contradiction. Meanwhile, Councillor Patel weighed in, saying, \"I think we might be overestimating the plan's potential impact. Sure, new housing is great, but we need to ensure it doesn’t lead to displacement.\" \n\nThese comments sparked a flurry of nods and some eye rolls; clearly, opinions varied greatly on the matter. As the discussion continued, the mayor hedged, claiming, \"I appreciate all points made, but I still believe we can find a middle ground that satisfies both new development and the needs of our constituents.\"  \n\nCouncillor Kim, known for her direct approach, chimed in, \"Middle ground is nice, but we can’t pretend the existing residents don’t feel anxious. If we’re not careful, this development could be more of a disruption than a benefit.\" \n\nWrapping up the meeting, Mayor Thompson suggested, \"Perhaps we should hold a public forum next week to gauge public opinion before making any decisions.\" This proposal, while met with some applause, also prompted skepticism about whether public feedback would truly influence the final plan.",
+    "passage": "In today's city council meeting, the debate over the proposed urban development plan was as heated as anticipated. Mayor Thompson opened the session by stating, \"As we all know, this plan is vital for revitalizing the downtown area, but I\u2019m not entirely convinced it addresses the concerns of our long-term residents.\" This drew immediate reactions, with Councillor Huang interjecting, \"Exactly, Mayor! While new businesses might flourish, we should ask ourselves, will they actually meet the needs of the community?\" \n\nThe room buzzed with murmurs as the councillors pondered this contradiction. Meanwhile, Councillor Patel weighed in, saying, \"I think we might be overestimating the plan's potential impact. Sure, new housing is great, but we need to ensure it doesn\u2019t lead to displacement.\" \n\nThese comments sparked a flurry of nods and some eye rolls; clearly, opinions varied greatly on the matter. As the discussion continued, the mayor hedged, claiming, \"I appreciate all points made, but I still believe we can find a middle ground that satisfies both new development and the needs of our constituents.\"  \n\nCouncillor Kim, known for her direct approach, chimed in, \"Middle ground is nice, but we can\u2019t pretend the existing residents don\u2019t feel anxious. If we\u2019re not careful, this development could be more of a disruption than a benefit.\" \n\nWrapping up the meeting, Mayor Thompson suggested, \"Perhaps we should hold a public forum next week to gauge public opinion before making any decisions.\" This proposal, while met with some applause, also prompted skepticism about whether public feedback would truly influence the final plan.",
     "questions": [
       {
         "id": 1,
@@ -3187,12 +3255,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-50.mp3",
+    "audioFile": "part4-50.mp3"
   },
   {
     "title": "Environmental Policy Updates in Toronto",
     "difficulty": "advanced",
-    "passage": "In a recent discussion regarding Toronto's environmental policies, Mayor Chen addressed the urgent need for sustainable urban development. \n\n\"We’re not entirely convinced that our current strategies are effective, given the alarming rise in pollution levels,\" she stated, emphasizing that immediate action is crucial. With the city's comprehensive review set to conclude next month, there’s a suggestion to pivot towards innovative green technologies.\n\nHowever, some council members, like Councillor Patel, appeared skeptical. \"Sure, green technology sounds great in theory, but does it integrate well with existing infrastructures? I'm not sure we can afford more disruption right now.\"\n\nMayor Chen responded, “I understand your concerns, but it’s essential we align ourselves with the latest trends—other cities are leapfrogging ahead.” This prompted a lively debate among the council, with various opinions on balancing economic stability and environmental responsibility.\n\nAs it stands, the mayor’s proposal aims to introduce incentives for businesses that adopt greener practices. \"Incentives can lead to substantial improvements without hefty investments upfront,\" she argued, while acknowledging that some businesses might view it as an extra burden. Still, she seemed hopeful, saying, \"If we can demonstrate clear benefits, it could actually turn into an opportunity rather than a setback for industry stakeholders.\"\n\nNonetheless, the council remains divided, with many agreeing on the need for change but disagreeing on the methods. The upcoming vote on these proposals is expected to be quite contentious, as the city grapples with its dual challenge of economic growth and environmental stewardship. This meeting has the potential to shape Toronto's policy landscape for years to come.",
+    "passage": "In a recent discussion regarding Toronto's environmental policies, Mayor Chen addressed the urgent need for sustainable urban development. \n\n\"We\u2019re not entirely convinced that our current strategies are effective, given the alarming rise in pollution levels,\" she stated, emphasizing that immediate action is crucial. With the city's comprehensive review set to conclude next month, there\u2019s a suggestion to pivot towards innovative green technologies.\n\nHowever, some council members, like Councillor Patel, appeared skeptical. \"Sure, green technology sounds great in theory, but does it integrate well with existing infrastructures? I'm not sure we can afford more disruption right now.\"\n\nMayor Chen responded, \u201cI understand your concerns, but it\u2019s essential we align ourselves with the latest trends\u2014other cities are leapfrogging ahead.\u201d This prompted a lively debate among the council, with various opinions on balancing economic stability and environmental responsibility.\n\nAs it stands, the mayor\u2019s proposal aims to introduce incentives for businesses that adopt greener practices. \"Incentives can lead to substantial improvements without hefty investments upfront,\" she argued, while acknowledging that some businesses might view it as an extra burden. Still, she seemed hopeful, saying, \"If we can demonstrate clear benefits, it could actually turn into an opportunity rather than a setback for industry stakeholders.\"\n\nNonetheless, the council remains divided, with many agreeing on the need for change but disagreeing on the methods. The upcoming vote on these proposals is expected to be quite contentious, as the city grapples with its dual challenge of economic growth and environmental stewardship. This meeting has the potential to shape Toronto's policy landscape for years to come.",
     "questions": [
       {
         "id": 1,
@@ -3229,7 +3299,7 @@
       },
       {
         "id": 4,
-        "question": "What underlying issue is reflected in the council’s debate as noted in the passage?",
+        "question": "What underlying issue is reflected in the council\u2019s debate as noted in the passage?",
         "options": [
           "A) The need for public engagement in environmental policy.",
           "B) The tension between economic growth and environmental responsibility.",
@@ -3249,12 +3319,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-51.mp3",
+    "audioFile": "part4-51.mp3"
   },
   {
     "title": "New Urban Transit Proposal Sparks Debate in Toronto",
     "difficulty": "advanced",
-    "passage": "Good evening, Toronto. In a groundbreaking twist for the city's public transit system, recent debates surrounding the proposed overhaul of the subway network have stirred significant conversation among city planners and residents alike. The proposed plan, which emerged after extensive consultations with residents, aims to address the chronic overcrowding and inefficiency that have plagued the system for years. One city planner, speaking off the record, mentioned, 'If we're being honest, this isn't simply about improving transportation; it's about reimagining urban mobility in a way that's sustainable and equitable.' However, not everyone is on board. Many advocacy groups have raised concerns, suggesting that the project could divert funds from existing transit initiatives. 'It’s not that we’re against improvements, but are we really prioritizing the right investments here?' said a spokesperson for the advocacy group. Furthermore, while some city councillors are enthusiastic, others are, shall we say, more cautiously optimistic. One councillor stated, 'Look, I'm not entirely convinced this will solve our underlying issues. We need to look at the data rather than simply going along with the latest trend.' The timeline for implementation remains vague, with some suggesting it could roll out in phases over the next decade. In the meantime, residents are left to grapple with the ongoing transit challenges, and with a rush hour that often feels like a sardine can, many urge urgent action. As the city prepares for further discussions, it’s clear that the debate is far from over. We’ll continue to follow this story as developments unfold. Stay tuned for our updates on this contentious topic, and as always, consider what this means for your daily commute.",
+    "passage": "Good evening, Toronto. In a groundbreaking twist for the city's public transit system, recent debates surrounding the proposed overhaul of the subway network have stirred significant conversation among city planners and residents alike. The proposed plan, which emerged after extensive consultations with residents, aims to address the chronic overcrowding and inefficiency that have plagued the system for years. One city planner, speaking off the record, mentioned, 'If we're being honest, this isn't simply about improving transportation; it's about reimagining urban mobility in a way that's sustainable and equitable.' However, not everyone is on board. Many advocacy groups have raised concerns, suggesting that the project could divert funds from existing transit initiatives. 'It\u2019s not that we\u2019re against improvements, but are we really prioritizing the right investments here?' said a spokesperson for the advocacy group. Furthermore, while some city councillors are enthusiastic, others are, shall we say, more cautiously optimistic. One councillor stated, 'Look, I'm not entirely convinced this will solve our underlying issues. We need to look at the data rather than simply going along with the latest trend.' The timeline for implementation remains vague, with some suggesting it could roll out in phases over the next decade. In the meantime, residents are left to grapple with the ongoing transit challenges, and with a rush hour that often feels like a sardine can, many urge urgent action. As the city prepares for further discussions, it\u2019s clear that the debate is far from over. We\u2019ll continue to follow this story as developments unfold. Stay tuned for our updates on this contentious topic, and as always, consider what this means for your daily commute.",
     "questions": [
       {
         "id": 1,
@@ -3273,7 +3345,7 @@
         "options": [
           "A. It might lead to a complete shutdown of the subway system",
           "B. It could shift focus away from current transit needs",
-          "C. It won’t be funded adequately by local businesses",
+          "C. It won\u2019t be funded adequately by local businesses",
           "D. It is unlikely to gain public support in the long run"
         ],
         "correct": 1
@@ -3291,7 +3363,7 @@
       },
       {
         "id": 4,
-        "question": "What aspect of the project’s implementation timeline was highlighted in the report?",
+        "question": "What aspect of the project\u2019s implementation timeline was highlighted in the report?",
         "options": [
           "A. It will begin immediately after approval",
           "B. It will likely be phased over the next ten years",
@@ -3311,16 +3383,18 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-52.mp3",
+    "audioFile": "part4-52.mp3"
   },
   {
     "title": "Urban Transit Challenges in Toronto",
     "difficulty": "advanced",
-    "passage": "Good evening, and welcome to our news segment. Today, we're focusing on the ongoing transit challenges in Toronto, a city that, let’s face it, has seen better days in terms of public transport efficiency. With the city's rapid growth, you might expect a parallel enhancement in transit services. Unfortunately, that's not quite the case. Recent reports suggest that the average commute time has now surpassed 40 minutes, which, frankly, is not ideal for anyone trying to balance work and personal life. \n\nNow, despite objections from city planners, the mayor has proposed a so-called 'quick fix'—essentially, a partial increase in the number of buses during peak hours. However, transportation experts are not entirely convinced that this will address the underlying issues. One might argue it’s more of a Band-Aid solution.  \n\nIn a recent panel discussion held at Ryerson University, experts highlighted a potential long-term strategy: a complete overhaul of the subway infrastructure, which hasn't seen significant upgrades since the 1970s. That sounds ambitious, doesn’t it? But let's not get our hopes up just yet. Critics have pointed out that funding for such a massive project is, shall we say, less than guaranteed. \n\nMoreover, some residents are expressing skepticism about whether the city will follow through on its promises. One local resident bluntly remarked, 'I’ve heard these plans before; they always seem so promising until the funds run dry.' So, there’s that concern. \n\nWe’ll keep you updated as these discussions unfold, but for now, if your commute feels a bit like an obstacle course, you’re not alone. Toronto faces a complex web of scheduling issues that need addressing if it hopes to keep up with its growing population.",
+    "passage": "Good evening, and welcome to our news segment. Today, we're focusing on the ongoing transit challenges in Toronto, a city that, let\u2019s face it, has seen better days in terms of public transport efficiency. With the city's rapid growth, you might expect a parallel enhancement in transit services. Unfortunately, that's not quite the case. Recent reports suggest that the average commute time has now surpassed 40 minutes, which, frankly, is not ideal for anyone trying to balance work and personal life. \n\nNow, despite objections from city planners, the mayor has proposed a so-called 'quick fix'\u2014essentially, a partial increase in the number of buses during peak hours. However, transportation experts are not entirely convinced that this will address the underlying issues. One might argue it\u2019s more of a Band-Aid solution.  \n\nIn a recent panel discussion held at Ryerson University, experts highlighted a potential long-term strategy: a complete overhaul of the subway infrastructure, which hasn't seen significant upgrades since the 1970s. That sounds ambitious, doesn\u2019t it? But let's not get our hopes up just yet. Critics have pointed out that funding for such a massive project is, shall we say, less than guaranteed. \n\nMoreover, some residents are expressing skepticism about whether the city will follow through on its promises. One local resident bluntly remarked, 'I\u2019ve heard these plans before; they always seem so promising until the funds run dry.' So, there\u2019s that concern. \n\nWe\u2019ll keep you updated as these discussions unfold, but for now, if your commute feels a bit like an obstacle course, you\u2019re not alone. Toronto faces a complex web of scheduling issues that need addressing if it hopes to keep up with its growing population.",
     "questions": [
       {
         "id": 1,
-        "question": "What is the primary concern regarding Toronto’s public transport as highlighted in the news segment?",
+        "question": "What is the primary concern regarding Toronto\u2019s public transport as highlighted in the news segment?",
         "options": [
           "A) Increasing funding for new buses",
           "B) Lengthy average commute times",
@@ -3353,7 +3427,7 @@
       },
       {
         "id": 4,
-        "question": "What specific issue did the local resident bring up regarding the city’s plans?",
+        "question": "What specific issue did the local resident bring up regarding the city\u2019s plans?",
         "options": [
           "A) They are optimistic about the new bus system",
           "B) They have heard similar plans that failed in the past",
@@ -3364,21 +3438,23 @@
       },
       {
         "id": 5,
-        "question": "What underlying sentiment can be inferred about the future of Toronto’s transit system from the news report?",
+        "question": "What underlying sentiment can be inferred about the future of Toronto\u2019s transit system from the news report?",
         "options": [
-          "A) There is confidence in the mayor’s leadership",
-          "B) There is skepticism about the government’s follow-through",
+          "A) There is confidence in the mayor\u2019s leadership",
+          "B) There is skepticism about the government\u2019s follow-through",
           "C) The residents are fully supportive of proposed changes",
           "D) Funding for transit projects is guaranteed"
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-53.mp3",
+    "audioFile": "part4-53.mp3"
   },
   {
     "title": "Climate Policy Developments in Vancouver",
     "difficulty": "advanced",
-    "passage": "In recent weeks, there has been a notable shift in Vancouver's approach to climate policy. Many local officials, previously staunch advocates of gradual implementation, are now suggesting a more aggressive stance. A recent press conference revealed that the mayor, while not entirely convinced of the immediate benefits, hinted at re-evaluating existing frameworks to better align with national targets. In his words, 'We can't be half-hearted about this anymore.' Meanwhile, environmental activists welcomed this pep talk but remain skeptical about actual follow-through. \n\nOne prominent activist remarked, 'Sure, words are nice, but actions speak louder than hollow promises.' This sentiment resonates particularly strongly among community groups that have been urging for more stringent regulations on emissions. Yet, it seems there's a persistent tension between economic interests and environmental urgency. The Chamber of Commerce, for instance, has voiced concerns that overly ambitious policies could jeopardize local businesses, suggesting a more moderate pace could be beneficial. The president stated, 'We absolutely support climate action, but it must be sustainable for the economy as well.' \n\nAs discussions continue, the city council is set to hold a series of public consultations next month, aiming to gather input from diverse stakeholders. However, the timeline remains vague. Some council members have expressed that a rushed decision could lead to backlash, while others insist that delay isn't an option if Vancouver wants to meet its climate obligations. It's a fine balance, and as one councilor put it, 'We’re threading a needle here, and the fabric is fraying fast.' Only time will tell how this balancing act plays out in practice.",
+    "passage": "In recent weeks, there has been a notable shift in Vancouver's approach to climate policy. Many local officials, previously staunch advocates of gradual implementation, are now suggesting a more aggressive stance. A recent press conference revealed that the mayor, while not entirely convinced of the immediate benefits, hinted at re-evaluating existing frameworks to better align with national targets. In his words, 'We can't be half-hearted about this anymore.' Meanwhile, environmental activists welcomed this pep talk but remain skeptical about actual follow-through. \n\nOne prominent activist remarked, 'Sure, words are nice, but actions speak louder than hollow promises.' This sentiment resonates particularly strongly among community groups that have been urging for more stringent regulations on emissions. Yet, it seems there's a persistent tension between economic interests and environmental urgency. The Chamber of Commerce, for instance, has voiced concerns that overly ambitious policies could jeopardize local businesses, suggesting a more moderate pace could be beneficial. The president stated, 'We absolutely support climate action, but it must be sustainable for the economy as well.' \n\nAs discussions continue, the city council is set to hold a series of public consultations next month, aiming to gather input from diverse stakeholders. However, the timeline remains vague. Some council members have expressed that a rushed decision could lead to backlash, while others insist that delay isn't an option if Vancouver wants to meet its climate obligations. It's a fine balance, and as one councilor put it, 'We\u2019re threading a needle here, and the fabric is fraying fast.' Only time will tell how this balancing act plays out in practice.",
     "questions": [
       {
         "id": 1,
@@ -3429,18 +3505,20 @@
         "question": "What metaphor does a council member use to describe the current climate policy situation?",
         "options": [
           "A. 'We are flying blind without a map.'",
-          "B. 'We’re threading a needle, and the fabric is fraying fast.'",
+          "B. 'We\u2019re threading a needle, and the fabric is fraying fast.'",
           "C. 'The ship has sailed for climate boldness.'",
           "D. 'We are climbing a mountain with no summit in sight.'"
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-54.mp3",
+    "audioFile": "part4-54.mp3"
   },
   {
     "title": "Toronto's Urban Transit Plan Faces Unexpected Challenges",
     "difficulty": "advanced",
-    "passage": "Good evening, this is Lisa Chen reporting live from Toronto. As the city gears up for the much-anticipated urban transit expansion, we've seen a flurry of unexpected hurdles. City planners had, not entirely optimistically, projected a smooth rollout for the new transit lines slated to ease congestion in some of the busiest neighborhoods. However, recent developments suggest that optimism might have been a tad misplaced. Recent community feedback has raised serious concerns regarding the environmental impact assessments, which, it turns out, were somewhat hastily approved. \n\nMoreover, it seems that not all stakeholders were adequately consulted. The mayor’s office has stated, rather diplomatically, that it will review the feedback, but many residents are questioning whether this is merely lip service. One local activist remarked, 'It's as if they were expecting us to just fall in line with their plans, without considering what we actually need.' \n\nDespite these setbacks, the project is still very much on the table. However, city officials are now considering a staggered timeline for the rollout, which could ultimately cause further delays. Interestingly, some council members believe that spreading the construction over a longer period could appease residents who are worried about noise and disruption. It’s a classic case of trying to find a balance between progress and public sentiment.\n\nIn summary, while there’s still a chance for this ambitious plan to move forward, city planners will need to navigate this bumpy road very carefully, perhaps engaging in more meaningful dialogues with community members. Back to you in the studio.",
+    "passage": "Good evening, this is Lisa Chen reporting live from Toronto. As the city gears up for the much-anticipated urban transit expansion, we've seen a flurry of unexpected hurdles. City planners had, not entirely optimistically, projected a smooth rollout for the new transit lines slated to ease congestion in some of the busiest neighborhoods. However, recent developments suggest that optimism might have been a tad misplaced. Recent community feedback has raised serious concerns regarding the environmental impact assessments, which, it turns out, were somewhat hastily approved. \n\nMoreover, it seems that not all stakeholders were adequately consulted. The mayor\u2019s office has stated, rather diplomatically, that it will review the feedback, but many residents are questioning whether this is merely lip service. One local activist remarked, 'It's as if they were expecting us to just fall in line with their plans, without considering what we actually need.' \n\nDespite these setbacks, the project is still very much on the table. However, city officials are now considering a staggered timeline for the rollout, which could ultimately cause further delays. Interestingly, some council members believe that spreading the construction over a longer period could appease residents who are worried about noise and disruption. It\u2019s a classic case of trying to find a balance between progress and public sentiment.\n\nIn summary, while there\u2019s still a chance for this ambitious plan to move forward, city planners will need to navigate this bumpy road very carefully, perhaps engaging in more meaningful dialogues with community members. Back to you in the studio.",
     "questions": [
       {
         "id": 1,
@@ -3466,7 +3544,7 @@
       },
       {
         "id": 3,
-        "question": "What is suggested about the timing of the project’s rollout?",
+        "question": "What is suggested about the timing of the project\u2019s rollout?",
         "options": [
           "A",
           "B",
@@ -3477,7 +3555,7 @@
       },
       {
         "id": 4,
-        "question": "What underlying issue does the community activist’s comment highlight?",
+        "question": "What underlying issue does the community activist\u2019s comment highlight?",
         "options": [
           "A",
           "B",
@@ -3497,12 +3575,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-55.mp3",
+    "audioFile": "part4-55.mp3"
   },
   {
     "title": "Controversial Green Energy Policy in Ontario",
     "difficulty": "advanced",
-    "passage": "Good evening. This is your local news update. Today, we turn our attention to Ontario's controversial green energy policy, a topic that seems to have divided public opinion more sharply than ever. Now, Environment Minister Sarah Blake addressed the policy in a press conference earlier today, where she implied that the government is 'not entirely convinced' that their current approach to renewable energy is effective enough. While she touted impressive figures on emissions reduction—over thirty percent since 2015—she acknowledged that 'we're not out of the woods yet.' \n\nCritics, however, have called this downplaying 'disingenuous.' They argue that the government has failed to address rising energy costs for average Ontarians. When asked about these claims, Minister Blake hesitated, shrugging them off with a comment about the 'complexity of transitioning away from fossil fuels.' But, it seems there’s a notable shift in tone since the last budget announcement, where she confidently asserted that clean energy would lead to lower costs in the long run.\n\nInterestingly, we also heard from energy expert Dr. Liam Patel, who suggested that while the government’s heart is in the right place, their execution has been flawed. He described the current economic landscape as 'fragile', emphasizing that investments need to be strategic. It seems many stakeholders are beginning to wonder if the government is indeed moving too hastily without proper planning. \n\nIn conclusion, there appears to be a growing push for a more balanced dialogue on this topic, as many citizens grow weary of the indecision surrounding the policy. Expect further developments as public forums are scheduled for next month. Now, back to you, John.",
+    "passage": "Good evening. This is your local news update. Today, we turn our attention to Ontario's controversial green energy policy, a topic that seems to have divided public opinion more sharply than ever. Now, Environment Minister Sarah Blake addressed the policy in a press conference earlier today, where she implied that the government is 'not entirely convinced' that their current approach to renewable energy is effective enough. While she touted impressive figures on emissions reduction\u2014over thirty percent since 2015\u2014she acknowledged that 'we're not out of the woods yet.' \n\nCritics, however, have called this downplaying 'disingenuous.' They argue that the government has failed to address rising energy costs for average Ontarians. When asked about these claims, Minister Blake hesitated, shrugging them off with a comment about the 'complexity of transitioning away from fossil fuels.' But, it seems there\u2019s a notable shift in tone since the last budget announcement, where she confidently asserted that clean energy would lead to lower costs in the long run.\n\nInterestingly, we also heard from energy expert Dr. Liam Patel, who suggested that while the government\u2019s heart is in the right place, their execution has been flawed. He described the current economic landscape as 'fragile', emphasizing that investments need to be strategic. It seems many stakeholders are beginning to wonder if the government is indeed moving too hastily without proper planning. \n\nIn conclusion, there appears to be a growing push for a more balanced dialogue on this topic, as many citizens grow weary of the indecision surrounding the policy. Expect further developments as public forums are scheduled for next month. Now, back to you, John.",
     "questions": [
       {
         "id": 1,
@@ -3559,12 +3639,14 @@
         ],
         "correct": 2
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-56.mp3",
+    "audioFile": "part4-56.mp3"
   },
   {
     "title": "Toronto's Public Transit Revamp: A Controversial Debate",
     "difficulty": "advanced",
-    "passage": "In an effort to address the growing transit issues, Toronto's city council is deliberating on a new transportation policy. While some members argue that the focus should be on expanding bus routes and improving accessibility, others believe investing in subway infrastructure is paramount.\n\nMan: \"I mean, we’ve been saying for ages that the bus routes are overcrowded, yet the subway system continues to get all the funding. It's getting a bit ridiculous, don’t you think?\"\n\nWoman: \"Not entirely convinced that’s the case. I think it’s more about long-term strategic planning. Expanding the subway could relieve pressure on the buses in the long run.\"\n\nMan: \"Sure, but what about the immediate needs? The buses are packed to the brim at peak hours! We can’t just ignore that while waiting for subway construction to wrap up, can we?\"\n\nWoman: \"I get your point, but consider the statistics—bus ridership is on the rise, yet the subway just seems to be the shiny new toy that everyone wants to play with. If we keep pushing funds into a system that can’t keep up with demand, we might be digging into our future rather than fixing today’s issues.\"\n\nTo complicate matters further, Mayor Johnson's stance is surprisingly noncommittal. In a recent press conference, he stated, \"We absolutely need to look at all angles, but at the same time, we can't just throw money around without a clear plan in place. That would be, well, irresponsible, wouldn’t it?\"\n\nThis has left several council members frustrated and questioning his leadership. Some residents, however, are cautiously optimistic, hoping that a balanced approach will finally address their concerns.\n\nAs discussions unfold, the implications of this policy decision could determine Toronto’s transit landscape for years to come, which leaves many wondering what the city actually needs—a quick fix or a long-term solution.",
+    "passage": "In an effort to address the growing transit issues, Toronto's city council is deliberating on a new transportation policy. While some members argue that the focus should be on expanding bus routes and improving accessibility, others believe investing in subway infrastructure is paramount.\n\nMan: \"I mean, we\u2019ve been saying for ages that the bus routes are overcrowded, yet the subway system continues to get all the funding. It's getting a bit ridiculous, don\u2019t you think?\"\n\nWoman: \"Not entirely convinced that\u2019s the case. I think it\u2019s more about long-term strategic planning. Expanding the subway could relieve pressure on the buses in the long run.\"\n\nMan: \"Sure, but what about the immediate needs? The buses are packed to the brim at peak hours! We can\u2019t just ignore that while waiting for subway construction to wrap up, can we?\"\n\nWoman: \"I get your point, but consider the statistics\u2014bus ridership is on the rise, yet the subway just seems to be the shiny new toy that everyone wants to play with. If we keep pushing funds into a system that can\u2019t keep up with demand, we might be digging into our future rather than fixing today\u2019s issues.\"\n\nTo complicate matters further, Mayor Johnson's stance is surprisingly noncommittal. In a recent press conference, he stated, \"We absolutely need to look at all angles, but at the same time, we can't just throw money around without a clear plan in place. That would be, well, irresponsible, wouldn\u2019t it?\"\n\nThis has left several council members frustrated and questioning his leadership. Some residents, however, are cautiously optimistic, hoping that a balanced approach will finally address their concerns.\n\nAs discussions unfold, the implications of this policy decision could determine Toronto\u2019s transit landscape for years to come, which leaves many wondering what the city actually needs\u2014a quick fix or a long-term solution.",
     "questions": [
       {
         "id": 1,
@@ -3595,17 +3677,17 @@
           "A. It has unified the council in their approach.",
           "B. It has created frustration among council members.",
           "C. It has encouraged residents to rally for more funding.",
-          "D. It has clarified the city’s transit priorities."
+          "D. It has clarified the city\u2019s transit priorities."
         ],
         "correct": 1
       },
       {
         "id": 4,
-        "question": "What tone does the man’s comment about funding imply about his viewpoint?",
+        "question": "What tone does the man\u2019s comment about funding imply about his viewpoint?",
         "options": [
-          "A. He believes it’s important to not rush decisions.",
+          "A. He believes it\u2019s important to not rush decisions.",
           "B. He feels funds are being misallocated.",
-          "C. He supports the mayor’s cautious approach.",
+          "C. He supports the mayor\u2019s cautious approach.",
           "D. He thinks the current bus routes are sufficient."
         ],
         "correct": 1
@@ -3621,12 +3703,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-57.mp3",
+    "audioFile": "part4-57.mp3"
   },
   {
     "title": "Impacts of Urban Development on Community Health",
     "difficulty": "advanced",
-    "passage": "Good afternoon, listeners. Today, we're diving into a rather contentious issue that has been swirling around urban development in Toronto. Local community leaders are not entirely convinced that the proposed changes will yield the intended benefits. New policies, designed ostensibly to revamp public health, are under increasing scrutiny. \n\nFor instance, a recent report from the City Planning Department indicates a potential rise in green spaces. However, critics argue that this initiative may lead to displacement of low-income families rather than improving health outcomes. One community leader stated, 'Sure, we want parks, but what’s the point if it comes at the expense of our homes?' \n\nMoreover, the impact on air quality hasn’t been adequately addressed. A local environmentalist was quoted saying, 'They’re talking about trees, but if there’s no strategy for reducing emissions, how will these trees help?' There’s a palpable sense of frustration among residents, many of whom feel that their voices are being overshadowed by developers eager to push their agendas. \n\nInterestingly, the city council is considering a public forum next month to gather feedback. While some see this as a positive step, others remain skeptical, suggesting that city authorities have already made up their minds long before any community input. An academic at the University of Toronto remarked, 'Public consultation is great, but it feels a bit like window dressing. The decisions seem preordained.' Indeed, as the clock ticks down to the city council meeting, many are left wondering whether their concerns will be heard or whether the development plans will roll out as scheduled, unimpeded. \n\nIn summary, the intersection of urban planning and community health is proving to be more complex than initially anticipated, raising questions that extend far beyond mere policy. We’ll keep you updated as this story unfolds.",
+    "passage": "Good afternoon, listeners. Today, we're diving into a rather contentious issue that has been swirling around urban development in Toronto. Local community leaders are not entirely convinced that the proposed changes will yield the intended benefits. New policies, designed ostensibly to revamp public health, are under increasing scrutiny. \n\nFor instance, a recent report from the City Planning Department indicates a potential rise in green spaces. However, critics argue that this initiative may lead to displacement of low-income families rather than improving health outcomes. One community leader stated, 'Sure, we want parks, but what\u2019s the point if it comes at the expense of our homes?' \n\nMoreover, the impact on air quality hasn\u2019t been adequately addressed. A local environmentalist was quoted saying, 'They\u2019re talking about trees, but if there\u2019s no strategy for reducing emissions, how will these trees help?' There\u2019s a palpable sense of frustration among residents, many of whom feel that their voices are being overshadowed by developers eager to push their agendas. \n\nInterestingly, the city council is considering a public forum next month to gather feedback. While some see this as a positive step, others remain skeptical, suggesting that city authorities have already made up their minds long before any community input. An academic at the University of Toronto remarked, 'Public consultation is great, but it feels a bit like window dressing. The decisions seem preordained.' Indeed, as the clock ticks down to the city council meeting, many are left wondering whether their concerns will be heard or whether the development plans will roll out as scheduled, unimpeded. \n\nIn summary, the intersection of urban planning and community health is proving to be more complex than initially anticipated, raising questions that extend far beyond mere policy. We\u2019ll keep you updated as this story unfolds.",
     "questions": [
       {
         "id": 1,
@@ -3683,12 +3767,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-58.mp3",
+    "audioFile": "part4-58.mp3"
   },
   {
     "title": "Toronto's Transit Challenges: A Balancing Act",
     "difficulty": "advanced",
-    "passage": "In today's news, we turn our attention to the ongoing challenges facing Toronto's transit system. With the recent implementation of the new fare structure, many commuters are, well, not entirely convinced that the changes are beneficial. Transit advocate, Caroline Reynolds, has pointed out, and I quote, 'While I appreciate the efforts to streamline operations, it seems that the increased costs are not being matched by improved service levels.' This sentiment resonates with a number of users who have reported longer wait times and overcrowded vehicles, despite the promise of enhanced frequency on popular routes.  \n\nMoreover, the city has announced plans for expanded bus routes under the new policy, but skeptics are raising eyebrows — it's hard to see how adding more stops will necessarily lead to quicker commutes. Former city planner, Marcus Chen, stated during the press conference, 'Expansion may be the goal, but without addressing the root issues of infrastructure decay, we're merely patching up a sinking ship.' He also hinted at a potential shift in priorities, suggesting that perhaps focusing more on maintenance rather than expansion might yield better long-term results, though he did concede the complexity of funding.  \n\nInterestingly, the new mayor has indicated that she is reconsidering her earlier stance on public-private partnerships to fund these initiatives, stating, 'I’m open to exploring all options, though I must admit, I'm a bit wary of the potential implications.' As discussions continue, it remains to be seen whether these changes will indeed translate into the promised improvements for Toronto's beleaguered transit users. Stay tuned for further updates on this evolving situation.",
+    "passage": "In today's news, we turn our attention to the ongoing challenges facing Toronto's transit system. With the recent implementation of the new fare structure, many commuters are, well, not entirely convinced that the changes are beneficial. Transit advocate, Caroline Reynolds, has pointed out, and I quote, 'While I appreciate the efforts to streamline operations, it seems that the increased costs are not being matched by improved service levels.' This sentiment resonates with a number of users who have reported longer wait times and overcrowded vehicles, despite the promise of enhanced frequency on popular routes.  \n\nMoreover, the city has announced plans for expanded bus routes under the new policy, but skeptics are raising eyebrows \u2014 it's hard to see how adding more stops will necessarily lead to quicker commutes. Former city planner, Marcus Chen, stated during the press conference, 'Expansion may be the goal, but without addressing the root issues of infrastructure decay, we're merely patching up a sinking ship.' He also hinted at a potential shift in priorities, suggesting that perhaps focusing more on maintenance rather than expansion might yield better long-term results, though he did concede the complexity of funding.  \n\nInterestingly, the new mayor has indicated that she is reconsidering her earlier stance on public-private partnerships to fund these initiatives, stating, 'I\u2019m open to exploring all options, though I must admit, I'm a bit wary of the potential implications.' As discussions continue, it remains to be seen whether these changes will indeed translate into the promised improvements for Toronto's beleaguered transit users. Stay tuned for further updates on this evolving situation.",
     "questions": [
       {
         "id": 1,
@@ -3745,12 +3831,14 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-59.mp3",
+    "audioFile": "part4-59.mp3"
   },
   {
     "title": "New Developments in Urban Transportation Policy",
     "difficulty": "advanced",
-    "passage": "This is Daniel Richards with your daily news update. In recent developments concerning urban transportation in Toronto, city officials have decided to reassess the controversial bike lane expansion plan. While the initial proposal promised to significantly reduce traffic congestion—something everyone is, well, not entirely convinced will actually happen—not all stakeholders are on board. For instance, local business owners have expressed concerns about the projected impact on their customer traffic, suggesting that the removal of parking spaces may, in fact, deter potential shoppers. In response, the city has scheduled a town hall meeting this Friday at City Hall, which aims to address these concerns directly. \n\nNow, it's important to note that, historically, the city has been quite slow to adapt to the evolving landscape of urban mobility. Some argue that officials are playing catch-up, while others think it’s merely a case of bureaucratic inertia. Plus, the proposed timeline for these developments keeps shifting, which raises questions about just how committed the city really is to innovative solutions. \n\nHowever, an intriguing perspective was shared by a spokesperson from Cycle Toronto who pointed out that cities like Montreal have successfully integrated bike lanes without crippling local businesses. The spokesperson stated, 'We need to look at this as an opportunity rather than a setback.' But with so many conflicting opinions—some labeling the plan as a step towards a greener future while others deem it a reckless gamble—it's still uncertain how the community will respond. As always, the debate continues, and we’ll keep you updated on any new findings and community responses following Friday's meeting. Until then, stay tuned for further updates.",
+    "passage": "This is Daniel Richards with your daily news update. In recent developments concerning urban transportation in Toronto, city officials have decided to reassess the controversial bike lane expansion plan. While the initial proposal promised to significantly reduce traffic congestion\u2014something everyone is, well, not entirely convinced will actually happen\u2014not all stakeholders are on board. For instance, local business owners have expressed concerns about the projected impact on their customer traffic, suggesting that the removal of parking spaces may, in fact, deter potential shoppers. In response, the city has scheduled a town hall meeting this Friday at City Hall, which aims to address these concerns directly. \n\nNow, it's important to note that, historically, the city has been quite slow to adapt to the evolving landscape of urban mobility. Some argue that officials are playing catch-up, while others think it\u2019s merely a case of bureaucratic inertia. Plus, the proposed timeline for these developments keeps shifting, which raises questions about just how committed the city really is to innovative solutions. \n\nHowever, an intriguing perspective was shared by a spokesperson from Cycle Toronto who pointed out that cities like Montreal have successfully integrated bike lanes without crippling local businesses. The spokesperson stated, 'We need to look at this as an opportunity rather than a setback.' But with so many conflicting opinions\u2014some labeling the plan as a step towards a greener future while others deem it a reckless gamble\u2014it's still uncertain how the community will respond. As always, the debate continues, and we\u2019ll keep you updated on any new findings and community responses following Friday's meeting. Until then, stay tuned for further updates.",
     "questions": [
       {
         "id": 1,
@@ -3807,7 +3895,9 @@
         ],
         "correct": 1
       }
-    ]
+    ],
+    "audio": "/audio/listening-library/part4-60.mp3",
+    "audioFile": "part4-60.mp3"
   },
   {
     "title": "Community Garden Initiative in Ottawa",
@@ -3873,7 +3963,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-61"
+    "id": "part4-61",
+    "audio": "/audio/listening-library/part4-61.mp3"
   },
   {
     "title": "New Art Exhibition in Toronto",
@@ -3939,7 +4030,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-62"
+    "id": "part4-62",
+    "audio": "/audio/listening-library/part4-62.mp3"
   },
   {
     "title": "Canada's New Recycling Program",
@@ -4005,7 +4097,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-63"
+    "id": "part4-63",
+    "audio": "/audio/listening-library/part4-63.mp3"
   },
   {
     "title": "New Safety Regulations for Local Businesses",
@@ -4071,7 +4164,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-64"
+    "id": "part4-64",
+    "audio": "/audio/listening-library/part4-64.mp3"
   },
   {
     "title": "New Fitness Center Opens in Halifax",
@@ -4137,7 +4231,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-65"
+    "id": "part4-65",
+    "audio": "/audio/listening-library/part4-65.mp3"
   },
   {
     "title": "Wildlife Conservation Efforts in Quebec",
@@ -4203,7 +4298,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-66"
+    "id": "part4-66",
+    "audio": "/audio/listening-library/part4-66.mp3"
   },
   {
     "title": "New Sports Complex in Victoria",
@@ -4269,7 +4365,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-67"
+    "id": "part4-67",
+    "audio": "/audio/listening-library/part4-67.mp3"
   },
   {
     "title": "New Study on Mental Health in Youth",
@@ -4335,7 +4432,8 @@
       }
     ],
     "difficulty": "beginner",
-    "id": "part4-68"
+    "id": "part4-68",
+    "audio": "/audio/listening-library/part4-68.mp3"
   },
   {
     "title": "Innovative Technology in Agriculture",
@@ -4401,7 +4499,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-69"
+    "id": "part4-69",
+    "audio": "/audio/listening-library/part4-69.mp3"
   },
   {
     "title": "New Public Health Campaign in Toronto",
@@ -4467,7 +4566,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-70"
+    "id": "part4-70",
+    "audio": "/audio/listening-library/part4-70.mp3"
   },
   {
     "title": "Rise of Electric Vehicles in Canada",
@@ -4533,7 +4633,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-71"
+    "id": "part4-71",
+    "audio": "/audio/listening-library/part4-71.mp3"
   },
   {
     "title": "Impact of Remote Work on Local Economy",
@@ -4599,7 +4700,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-72"
+    "id": "part4-72",
+    "audio": "/audio/listening-library/part4-72.mp3"
   },
   {
     "title": "Local Cultural Festival in Ottawa",
@@ -4665,7 +4767,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-73"
+    "id": "part4-73",
+    "audio": "/audio/listening-library/part4-73.mp3"
   },
   {
     "title": "New Infrastructure Projects Announced",
@@ -4731,7 +4834,8 @@
       }
     ],
     "difficulty": "intermediate",
-    "id": "part4-74"
+    "id": "part4-74",
+    "audio": "/audio/listening-library/part4-74.mp3"
   },
   {
     "title": "Advances in Canadian Healthcare Technology",
@@ -4797,7 +4901,8 @@
       }
     ],
     "difficulty": "advanced",
-    "id": "part4-75"
+    "id": "part4-75",
+    "audio": "/audio/listening-library/part4-75.mp3"
   },
   {
     "title": "Climate Change Strategies in Canada",
@@ -4863,7 +4968,8 @@
       }
     ],
     "difficulty": "advanced",
-    "id": "part4-76"
+    "id": "part4-76",
+    "audio": "/audio/listening-library/part4-76.mp3"
   },
   {
     "title": "Urban Development and Its Challenges",
@@ -4929,7 +5035,8 @@
       }
     ],
     "difficulty": "advanced",
-    "id": "part4-77"
+    "id": "part4-77",
+    "audio": "/audio/listening-library/part4-77.mp3"
   },
   {
     "title": "New Park Opening",
@@ -4988,7 +5095,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-078"
+    "id": "part4-078",
+    "audio": "/audio/listening-library/part4-78.mp3",
+    "audioFile": "part4-78.mp3"
   },
   {
     "title": "Local Farmers' Market",
@@ -5047,7 +5156,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-079"
+    "id": "part4-079",
+    "audio": "/audio/listening-library/part4-79.mp3",
+    "audioFile": "part4-79.mp3"
   },
   {
     "title": "Winter Safety Tips",
@@ -5106,7 +5217,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-080"
+    "id": "part4-080",
+    "audio": "/audio/listening-library/part4-80.mp3",
+    "audioFile": "part4-80.mp3"
   },
   {
     "title": "Community Clean-Up Day",
@@ -5165,7 +5278,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-081"
+    "id": "part4-081",
+    "audio": "/audio/listening-library/part4-81.mp3",
+    "audioFile": "part4-81.mp3"
   },
   {
     "title": "School Renovation",
@@ -5224,7 +5339,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-082"
+    "id": "part4-082",
+    "audio": "/audio/listening-library/part4-82.mp3",
+    "audioFile": "part4-82.mp3"
   },
   {
     "title": "New Library Opening",
@@ -5283,7 +5400,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-083"
+    "id": "part4-083",
+    "audio": "/audio/listening-library/part4-83.mp3",
+    "audioFile": "part4-83.mp3"
   },
   {
     "title": "Canadian Winter Sports",
@@ -5342,7 +5461,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-084"
+    "id": "part4-084",
+    "audio": "/audio/listening-library/part4-84.mp3",
+    "audioFile": "part4-84.mp3"
   },
   {
     "title": "Toronto's New Transit Line",
@@ -5401,7 +5522,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-085"
+    "id": "part4-085",
+    "audio": "/audio/listening-library/part4-85.mp3",
+    "audioFile": "part4-85.mp3"
   },
   {
     "title": "Vancouver's Housing Market",
@@ -5460,7 +5583,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-086"
+    "id": "part4-086",
+    "audio": "/audio/listening-library/part4-86.mp3",
+    "audioFile": "part4-86.mp3"
   },
   {
     "title": "Calgary's New Environmental Initiative",
@@ -5519,7 +5644,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-087"
+    "id": "part4-087",
+    "audio": "/audio/listening-library/part4-87.mp3",
+    "audioFile": "part4-87.mp3"
   },
   {
     "title": "Ottawa's Cultural Festival",
@@ -5578,12 +5705,14 @@
       }
     ],
     "part": 4,
-    "id": "part4-088"
+    "id": "part4-088",
+    "audio": "/audio/listening-library/part4-88.mp3",
+    "audioFile": "part4-88.mp3"
   },
   {
     "title": "New Law on Recycling in Quebec",
     "difficulty": "intermediate",
-    "passage": "Man 2: Today’s report highlights a new law concerning recycling in Quebec. Woman 2: Yes, the government is making it mandatory for all residents to sort their waste correctly. Man 2: This new regulation aims to increase recycling rates across the province. Woman 2: It will also help reduce landfill waste significantly. Man 2: The law takes effect next month, and there will be penalties for non-compliance. Woman 2: The province is also launching an educational campaign to inform residents about the new rules.",
+    "passage": "Man 2: Today\u2019s report highlights a new law concerning recycling in Quebec. Woman 2: Yes, the government is making it mandatory for all residents to sort their waste correctly. Man 2: This new regulation aims to increase recycling rates across the province. Woman 2: It will also help reduce landfill waste significantly. Man 2: The law takes effect next month, and there will be penalties for non-compliance. Woman 2: The province is also launching an educational campaign to inform residents about the new rules.",
     "questions": [
       {
         "question": "What is the main focus of the news report?",
@@ -5637,7 +5766,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-089"
+    "id": "part4-089",
+    "audio": "/audio/listening-library/part4-89.mp3",
+    "audioFile": "part4-89.mp3"
   },
   {
     "title": "Toronto's Food Security Program",
@@ -5696,12 +5827,14 @@
       }
     ],
     "part": 4,
-    "id": "part4-090"
+    "id": "part4-090",
+    "audio": "/audio/listening-library/part4-90.mp3",
+    "audioFile": "part4-90.mp3"
   },
   {
     "title": "Climate Change Initiatives",
     "difficulty": "advanced",
-    "passage": "Host: Welcome back to the morning news. Today we discuss the latest climate change initiatives in Canada. Man: Recent reports indicate that Canada is pushing for stricter emissions targets by 2030. Woman: That’s correct. The federal government aims to reduce greenhouse gas emissions by 40 to 45 percent from 2005 levels. Man: This ambitious plan includes transitioning to renewable energy sources. Woman: Exactly. Can you tell us more about the implications for industries? Man: Well, industries will need to adapt or face penalties. They are looking into innovative technologies to minimize their impact. Woman: The transition is certainly a challenge, but it presents new opportunities for green jobs as well. Host: That's right. It's a balancing act between economic growth and environmental sustainability.",
+    "passage": "Host: Welcome back to the morning news. Today we discuss the latest climate change initiatives in Canada. Man: Recent reports indicate that Canada is pushing for stricter emissions targets by 2030. Woman: That\u2019s correct. The federal government aims to reduce greenhouse gas emissions by 40 to 45 percent from 2005 levels. Man: This ambitious plan includes transitioning to renewable energy sources. Woman: Exactly. Can you tell us more about the implications for industries? Man: Well, industries will need to adapt or face penalties. They are looking into innovative technologies to minimize their impact. Woman: The transition is certainly a challenge, but it presents new opportunities for green jobs as well. Host: That's right. It's a balancing act between economic growth and environmental sustainability.",
     "questions": [
       {
         "question": "What is the main goal of Canada's new climate initiative?",
@@ -5746,16 +5879,18 @@
       {
         "question": "What does the passage suggest about balancing economic growth?",
         "options": [
-          "It’s unnecessary.",
-          "It’s impossible.",
-          "It’s a major concern.",
+          "It\u2019s unnecessary.",
+          "It\u2019s impossible.",
+          "It\u2019s a major concern.",
           "It should be ignored."
         ],
         "correct": 2
       }
     ],
     "part": 4,
-    "id": "part4-091"
+    "id": "part4-091",
+    "audio": "/audio/listening-library/part4-91.mp3",
+    "audioFile": "part4-91.mp3"
   },
   {
     "title": "New Health Policies",
@@ -5814,12 +5949,14 @@
       }
     ],
     "part": 4,
-    "id": "part4-092"
+    "id": "part4-092",
+    "audio": "/audio/listening-library/part4-92.mp3",
+    "audioFile": "part4-92.mp3"
   },
   {
     "title": "Indigenous Land Rights",
     "difficulty": "advanced",
-    "passage": "Host: In recent news, discussions surrounding Indigenous land rights have gained traction in British Columbia. Man: Yes, the provincial government is working with Indigenous groups to ensure their rights are recognized. Woman: This involves consultations and negotiations about land usage and conservation efforts. Man: The government acknowledges the historical injustices faced by Indigenous communities. Woman: It’s essential for both parties to come together for a sustainable future. Host: There's also a growing movement advocating for the protection of Indigenous heritage sites.",
+    "passage": "Host: In recent news, discussions surrounding Indigenous land rights have gained traction in British Columbia. Man: Yes, the provincial government is working with Indigenous groups to ensure their rights are recognized. Woman: This involves consultations and negotiations about land usage and conservation efforts. Man: The government acknowledges the historical injustices faced by Indigenous communities. Woman: It\u2019s essential for both parties to come together for a sustainable future. Host: There's also a growing movement advocating for the protection of Indigenous heritage sites.",
     "questions": [
       {
         "question": "What is the focus of the discussions in British Columbia?",
@@ -5873,12 +6010,14 @@
       }
     ],
     "part": 4,
-    "id": "part4-093"
+    "id": "part4-093",
+    "audio": "/audio/listening-library/part4-93.mp3",
+    "audioFile": "part4-93.mp3"
   },
   {
     "title": "Technology in Education",
     "difficulty": "advanced",
-    "passage": "Host: Our next topic explores the growing role of technology in education across Canada. Woman: Many schools are integrating digital tools and resources to enhance learning. Man: This includes interactive software and online learning platforms. Woman: Furthermore, there is an emphasis on training teachers to effectively use these technologies. Man: The goal is not just to incorporate technology but to improve student engagement and learning outcomes. Woman: There are also concerns about the digital divide between students with and without access to these resources. Host: It’s certainly a nuanced discussion.",
+    "passage": "Host: Our next topic explores the growing role of technology in education across Canada. Woman: Many schools are integrating digital tools and resources to enhance learning. Man: This includes interactive software and online learning platforms. Woman: Furthermore, there is an emphasis on training teachers to effectively use these technologies. Man: The goal is not just to incorporate technology but to improve student engagement and learning outcomes. Woman: There are also concerns about the digital divide between students with and without access to these resources. Host: It\u2019s certainly a nuanced discussion.",
     "questions": [
       {
         "question": "What is being integrated into Canadian education?",
@@ -5932,7 +6071,9 @@
       }
     ],
     "part": 4,
-    "id": "part4-094"
+    "id": "part4-094",
+    "audio": "/audio/listening-library/part4-94.mp3",
+    "audioFile": "part4-94.mp3"
   },
   {
     "title": "Public Transportation Developments",
@@ -5991,12 +6132,14 @@
       }
     ],
     "part": 4,
-    "id": "part4-095"
+    "id": "part4-095",
+    "audio": "/audio/listening-library/part4-95.mp3",
+    "audioFile": "part4-95.mp3"
   },
   {
     "title": "Housing Market Trends",
     "difficulty": "advanced",
-    "passage": "Host: Now, let’s take a look at the current trends in the Canadian housing market. Woman: Recent analyses show that housing prices have surged in major cities. Man: Yes, Toronto and Vancouver continue to lead in price increases. Woman: In response, the government is exploring regulations to improve affordability. Man: These regulations might include rent control and increased housing supply. Woman: However, there are concerns about the potential negative impacts on developers. Host: It’s a complex issue that involves multiple stakeholders.",
+    "passage": "Host: Now, let\u2019s take a look at the current trends in the Canadian housing market. Woman: Recent analyses show that housing prices have surged in major cities. Man: Yes, Toronto and Vancouver continue to lead in price increases. Woman: In response, the government is exploring regulations to improve affordability. Man: These regulations might include rent control and increased housing supply. Woman: However, there are concerns about the potential negative impacts on developers. Host: It\u2019s a complex issue that involves multiple stakeholders.",
     "questions": [
       {
         "question": "What trend is observed in the Canadian housing market?",
@@ -6031,7 +6174,7 @@
       {
         "question": "What concern is raised about the regulations?",
         "options": [
-          "They may undermine developers’ interests.",
+          "They may undermine developers\u2019 interests.",
           "They could lead to lower rents.",
           "They will increase housing availability.",
           "They are unnecessary."
@@ -6050,6 +6193,8 @@
       }
     ],
     "part": 4,
-    "id": "part4-096"
+    "id": "part4-096",
+    "audio": "/audio/listening-library/part4-96.mp3",
+    "audioFile": "part4-96.mp3"
   }
 ]

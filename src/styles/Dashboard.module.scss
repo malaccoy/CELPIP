@@ -493,6 +493,20 @@
   flex-shrink: 0;
 }
 
+.crsCard {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06), rgba(56, 189, 248, 0.06)) !important;
+  border-color: rgba(16, 185, 129, 0.15) !important;
+
+  &:hover {
+    border-color: rgba(16, 185, 129, 0.3) !important;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(56, 189, 248, 0.1)) !important;
+  }
+
+  .aiCoachIcon {
+    background: linear-gradient(135deg, #059669, #10b981) !important;
+  }
+}
+
 // ─── Daily Usage Banner ──────────────────
 .usageBanner {
   display: flex;

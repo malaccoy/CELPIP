@@ -29,7 +29,7 @@ export default function TermsPage() {
 
         <section>
           <h2>4. Free and Pro Plans</h2>
-          <p>The Service offers a free tier with limited features and a Pro subscription with full access to AI-powered features. Pro subscriptions are billed monthly (CA$24.99) or annually (CA$99.00) through Stripe.</p>
+          <p>The Service offers a free tier with limited features and a Pro subscription with full access to AI-powered features. Pro subscriptions are billed monthly (CA$29.99) or annually (CA$149.99) through Stripe.</p>
           <ul>
             <li>Pro subscriptions are billed immediately upon signup. You can cancel anytime from your profile.</li>
             <li>You may cancel at any time through the billing portal. Cancellations take effect at the end of the current billing period.</li>

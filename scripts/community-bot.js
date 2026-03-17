@@ -51,7 +51,18 @@ async function sendMessage(text) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ chat_id: CHAT_ID, text, parse_mode: 'HTML', disable_web_page_preview: false }),
   });
-  return res.json();
+  const json = await res.json();
+  if (!json.ok && json.description && json.description.includes("can't parse entities")) {
+    console.log('⚠️ HTML parse failed, retrying without formatting...');
+    const plain = text.replace(/<[^>]*>/g, '');
+    const res2 = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: CHAT_ID, text: plain, disable_web_page_preview: false }),
+    });
+    return res2.json();
+  }
+  return json;
 }
 
 // ─── News Sources ───────────────────────────────────

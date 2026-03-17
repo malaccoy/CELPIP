@@ -25,7 +25,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(180deg, #0a0f1a 0%, #0f172a 30%, #1a1f3a 60%, #0f172a 100%);
+  background: linear-gradient(180deg, #1b1f2a 0%, #1b1f2a 30%, #1a1f3a 60%, #1b1f2a 100%);
   padding: 1rem;
   color: white;
   position: relative;
@@ -532,7 +532,7 @@ $transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .resultCard {
-  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(180deg, #1e293b 0%, #1b1f2a 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   padding: 2.25rem;
