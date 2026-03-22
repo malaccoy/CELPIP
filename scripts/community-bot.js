@@ -46,6 +46,10 @@ function sanitizeHTML(text) {
 
 async function sendMessage(text) {
   text = sanitizeHTML(text);
+  // Replace any raw long URLs (not inside <a>) with clickable short links
+  text = text.replace(/(?<!href=["'])(?<!["'])(https?:\/\/[^\s<>"]{80,})/g, (url) => {
+    return `<a href="${url}">🔗 Read more</a>`;
+  });
   const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -66,6 +70,51 @@ async function sendMessage(text) {
 }
 
 // ─── News Sources ───────────────────────────────────
+
+async function resolveGoogleNewsUrl(googleUrl) {
+  try {
+    // Method 1: Try extracting from the Google News RSS URL itself
+    // Google News URLs sometimes contain the real URL encoded
+    const decoded = decodeURIComponent(googleUrl);
+    const articleMatch = decoded.match(/articles\/(CBMi[^?]+)/);
+    
+    // Method 2: Follow redirects
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(googleUrl, { 
+      redirect: 'follow', 
+      signal: controller.signal, 
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' } 
+    });
+    clearTimeout(timeout);
+    
+    const finalUrl = res.url || googleUrl;
+    
+    // If we got redirected to a real article, use that
+    if (finalUrl && !finalUrl.includes('news.google.com')) {
+      return finalUrl;
+    }
+    
+    // Method 3: Parse HTML for meta refresh or JS redirect
+    const html = await res.text();
+    const metaRedirect = html.match(/url=(https?:\/\/[^"'\s>]+)/i)?.[1];
+    if (metaRedirect && !metaRedirect.includes('news.google.com')) {
+      return metaRedirect;
+    }
+    
+    const jsRedirect = html.match(/window\.location\s*=\s*["'](https?:\/\/[^"']+)/)?.[1];
+    if (jsRedirect && !jsRedirect.includes('news.google.com')) {
+      return jsRedirect;
+    }
+    
+    // Method 4: data-url attribute
+    const dataUrl = html.match(/data-url="(https?:\/\/[^"]+)"/)?.[1];
+    if (dataUrl) return dataUrl;
+    
+    // Fallback: if still a google news URL, just return it (will be wrapped as "Read more")
+    return finalUrl;
+  } catch { return googleUrl; }
+}
 
 async function fetchGoogleNews(query) {
   try {
@@ -165,6 +214,17 @@ async function main() {
   }
   if (selected.length === 0) selected.push(fresh[0]);
 
+  // Resolve Google News redirect URLs to actual article URLs
+  for (const item of selected) {
+    if (item.link.includes('news.google.com')) {
+      item.link = await resolveGoogleNewsUrl(item.link);
+    }
+    // If still a monster URL (>200 chars), drop the link — better no link than ugly link
+    if (item.link.length > 200) {
+      item.link = '';
+    }
+  }
+
   // Generate summary with AI
   const newsContext = selected.map((n, i) => `${i+1}. [${n.category}] "${n.title}" — ${n.source}\n   URL: ${n.link}`).join('\n');
   
@@ -186,6 +246,8 @@ FORMAT:
 - Use HTML formatting (<b>bold</b>, no markdown)
 - Under 300 words total
 - English only
+
+CRITICAL: For links, use SHORT anchor text like <a href="URL">Read more →</a> or <a href="URL">Source</a>. NEVER paste the raw URL as visible text — always wrap in an <a> tag with short label. This is for Telegram so keep links clean.
 
 Return ONLY the message text.` }],
     }),

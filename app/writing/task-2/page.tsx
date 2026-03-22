@@ -16,7 +16,6 @@ import {
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
   Info, ArrowRight, ArrowLeft, ChevronRight, ClipboardList, Sparkles, Bot, SpellCheck
 } from 'lucide-react';
-import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 import AIFeedback from '@/components/AIFeedback';
@@ -25,26 +24,41 @@ import UpgradeTrigger from '@/components/UpgradeTrigger';
 import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
 import { FREE_LIMITS } from '@/lib/free-limits';
+import VoiceDictation from '@/components/VoiceDictation';
 import { useContentAccess } from '@/hooks/useContentAccess';
 
-const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
+/* ── Theme ── */
+const T = {
+  bg: '#0a0e1a', surface: '#151929', surfaceHover: '#1c2137',
+  border: 'rgba(255,255,255,0.06)', text: '#f1f5f9', muted: '#94a3b8',
+  accent: '#ff3b3b', purple: '#a78bfa', blue: '#3b82f6', green: '#22c55e', yellow: '#f59e0b',
+};
 
+const INITIAL_POINT: Task2Point = { point: '', reason: '', example: '' };
 const INITIAL_STATE: Task2State = {
-  promptText: '',
-  audience: '',
-  providedArgs: ['', ''],
-  position: 'A_FAVOR',
-  topic: '',
-  opinionLine: '',
-  points: [{ ...INITIAL_POINT }, { ...INITIAL_POINT }],
-  content: ''
+  promptText: '', audience: '', providedArgs: ['', ''], position: 'A_FAVOR',
+  topic: '', opinionLine: '', points: [{ ...INITIAL_POINT }, { ...INITIAL_POINT }], content: ''
+};
+
+const themeText = (text?: string) => {
+  if (!text) return '';
+  const cut = text.search(/\s*(In your (email|response|letter|survey)[:\s]|•|\*)/i);
+  return cut > 0 ? text.slice(0, cut).trim() : text;
 };
 
 const STEPS = [
-  { id: 1, title: 'Context', icon: FileText, description: 'Understand the survey' },
-  { id: 2, title: 'Planning', icon: PenTool, description: 'Structure your arguments' },
-  { id: 3, title: 'Writing', icon: ClipboardList, description: 'Write your response' },
+  { id: 1, title: 'Context', icon: FileText, color: T.blue },
+  { id: 2, title: 'Plan', icon: PenTool, color: T.purple },
+  { id: 3, title: 'Write', icon: ClipboardList, color: T.accent },
 ];
+
+const card: React.CSSProperties = { background: T.surface, borderRadius: 16, padding: '20px', marginBottom: 14, border: `1px solid ${T.border}` };
+const labelStyle: React.CSSProperties = { fontSize: 13, fontWeight: 700, color: T.muted, marginBottom: 6, display: 'block', textTransform: 'uppercase', letterSpacing: '0.5px' };
+const inputStyle: React.CSSProperties = { width: '100%', background: 'rgba(255,255,255,0.04)', border: `1px solid ${T.border}`, borderRadius: 10, padding: '10px 14px', color: T.text, fontSize: 15, outline: 'none', boxSizing: 'border-box' };
+const textareaStyle: React.CSSProperties = { ...inputStyle, minHeight: 60, resize: 'vertical', fontFamily: 'inherit', lineHeight: 1.5 };
+const chip: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '6px 14px', fontSize: 13, color: T.muted, cursor: 'pointer', transition: 'all 0.2s', whiteSpace: 'nowrap' };
+const btnPrimary: React.CSSProperties = { background: `linear-gradient(135deg, ${T.accent}, #cc2f2f)`, color: '#fff', border: 'none', borderRadius: 12, padding: '12px 28px', fontWeight: 700, fontSize: 15, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 };
+const btnSecondary: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', color: T.text, border: `1px solid ${T.border}`, borderRadius: 12, padding: '12px 28px', fontWeight: 600, fontSize: 15, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 };
 
 export default function Task2Page() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -58,772 +72,399 @@ export default function Task2Page() {
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
   const [spellCheckEnabled, setSpellCheckEnabled] = useState(false);
+  const [transferMessage, setTransferMessage] = useState('');
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
-  const [transferMessage, setTransferMessage] = useState<string>('');
   const { isPro } = useContentAccess();
 
-  // Get selected context
   const selectedContext = contexts.find(c => c.id === selectedContextId);
 
-  // Load contexts from JSON
   useEffect(() => {
     analytics.exerciseStart('writing', 'task-2');
-    fetch('/content/contexts.json')
-      .then(res => res.json())
-      .then(data => {
-        if (data.task2) {
-          setContexts(data.task2);
-
-          // Check for AI Coach redirect — pick random theme
-          try {
-            const stored = localStorage.getItem('celpip_ai_writing_prompt');
-            if (stored) {
-              const parsed = JSON.parse(stored);
-              if (parsed.task === 2) {
-                localStorage.removeItem('celpip_ai_writing_prompt');
-                const themes = data.task2.filter((c: ContextItem) => c.category !== 'custom');
-                if (themes.length > 0) {
-                  const random = themes[Math.floor(Math.random() * themes.length)];
-                  handleContextSelect(random);
-                }
-              }
+    fetch('/content/contexts.json').then(r => r.json()).then(data => {
+      if (data.task2) {
+        setContexts(data.task2);
+        try {
+          const stored = localStorage.getItem('celpip_ai_writing_prompt');
+          if (stored) {
+            const parsed = JSON.parse(stored);
+            if (parsed.task === 2) {
+              localStorage.removeItem('celpip_ai_writing_prompt');
+              const themes = data.task2.filter((c: ContextItem) => c.category !== 'custom');
+              if (themes.length > 0) handleContextSelect(themes[Math.floor(Math.random() * themes.length)]);
             }
-          } catch {}
-        }
-      })
-      .catch(err => console.error('Failed to load contexts:', err));
+          }
+        } catch {}
+      }
+    }).catch(() => {});
   }, []);
 
   const handleContextSelect = (context: ContextItem) => {
     setSelectedContextId(context.id);
-    if (context.category !== 'custom') {
-      updateState('promptText', context.content);
-    }
+    if (context.category !== 'custom') updateState('promptText', context.content);
   };
 
   const wordCount = countWords(state.content);
-
-  const updateState = (field: keyof Task2State, value: Task2State[keyof Task2State]) => {
-    setState(prev => ({ ...prev, [field]: value }));
+  const updateState = (field: keyof Task2State, value: Task2State[keyof Task2State]) => setState(prev => ({ ...prev, [field]: value }));
+  const updatePoint = (i: number, field: keyof Task2Point, value: string) => {
+    const np = [...state.points]; np[i] = { ...np[i], [field]: value }; updateState('points', np);
   };
-
-  const updatePoint = (index: number, field: keyof Task2Point, value: string) => {
-    const newPoints = [...state.points];
-    newPoints[index] = { ...newPoints[index], [field]: value };
-    updateState('points', newPoints);
-  };
-
-  const addPoint = () => {
-    if (state.points.length < 3) {
-      updateState('points', [...state.points, { ...INITIAL_POINT }]);
-    }
-  };
-
-  const removePoint = () => {
-    if (state.points.length > 1) {
-      const newPoints = [...state.points];
-      newPoints.pop();
-      updateState('points', newPoints);
-    }
-  };
+  const addPoint = () => { if (state.points.length < 3) updateState('points', [...state.points, { ...INITIAL_POINT }]); };
+  const removePoint = () => { if (state.points.length > 1) { const np = [...state.points]; np.pop(); updateState('points', np); } };
 
   const transferPlanning = () => {
     const parts: string[] = [];
-
-    // Opinion line as intro
-    if (state.opinionLine?.trim()) {
-      parts.push(`In my opinion, I would rather ${state.opinionLine.trim()}. I believe this is the best choice for several reasons.`);
-    }
-
-    // Points with connectors
+    if (state.opinionLine?.trim()) parts.push(`In my opinion, I would rather ${state.opinionLine.trim()}. I believe this is the best choice for several reasons.`);
     const connectors = ['First', 'Second', 'Finally'];
     state.points.forEach((p, i) => {
       const segs: string[] = [];
-      const connector = connectors[i] || 'Additionally';
-      if (p.point?.trim()) segs.push(`${connector}, ${p.point.trim()}.`);
+      if (p.point?.trim()) segs.push(`${connectors[i] || 'Additionally'}, ${p.point.trim()}.`);
       if (p.reason?.trim()) segs.push(`This is because ${p.reason.trim()}.`);
       if (p.example?.trim()) segs.push(`For example, ${p.example.trim()}.`);
-      if (segs.length > 0) parts.push(segs.join(' '));
+      if (segs.length) parts.push(segs.join(' '));
     });
-
-    if (parts.length === 0) {
-      setTransferMessage('⚠️ No planning filled to transfer.');
-      setTimeout(() => setTransferMessage(''), 3000);
-      return;
-    }
-
-    // Add conclusion
+    if (!parts.length) { setTransferMessage('⚠️ No planning to transfer.'); setTimeout(() => setTransferMessage(''), 3000); return; }
     parts.push('In conclusion, considering these reasons, I am convinced that this is the superior option.');
-
-    const transferredContent = parts.join('\n\n');
-    const currentContent = state.content.trim();
-    const newContent = currentContent
-      ? `${currentContent}\n\n${transferredContent}`
-      : transferredContent;
-
-    updateState('content', newContent);
-    setTransferMessage('✅ Planning transferred!');
-    setTimeout(() => setTransferMessage(''), 3000);
-
-    setTimeout(() => {
-      writingTextareaRef.current?.focus();
-    }, 100);
+    const t = parts.join('\n\n');
+    updateState('content', state.content.trim() ? `${state.content.trim()}\n\n${t}` : t);
+    setTransferMessage('✅ Planning transferred!'); setTimeout(() => setTransferMessage(''), 3000);
   };
 
   const generateStructure = () => {
     const intro = `In my opinion, regarding the ${state.topic || 'survey topic'}, I would rather ${state.opinionLine || 'choose option...'}. I believe this is the best choice for several reasons.`;
-
     let body = '';
-    const connectors = ['First', 'Second', 'Finally'];
-
-    state.points.forEach((p, i) => {
-      const connector = connectors[i] || 'Additionally';
-      body += `\n\n${connector}, ${p.point || '[Point]'}. This is because ${p.reason || '[Reason]'}. For example, ${p.example || '[Example]'}.`;
-    });
-
-    const conclusion = `\n\nIn conclusion, considering these reasons, I am convinced that this is the superior option.`;
-
-    updateState('content', intro + body + conclusion);
-  };
-
-  const handleEvaluate = () => {
-    const results = generateTask2Feedback(state);
-    setFeedback(results);
-    markExerciseDone();
-    
-    // Calculate score and record practice
-    const score = calculateScore(results, wordCount);
-    
-    // Estimate time (could be improved with actual timer tracking)
-    const estimatedMinutes = Math.max(5, Math.round(wordCount / 15));
-
-    if (typeof window !== 'undefined') {
-      try {
-        // Record to detailed stats
-        recordPractice('task2', wordCount, score, estimatedMinutes);
-        
-        // Record failed checks for error tracking
-        const failedIds = results.filter(r => !r.passed).map(r => r.id);
-        if (failedIds.length > 0) {
-          recordErrors(failedIds);
-        }
-        
-        // Record achievements
-        const newlyUnlocked = recordPracticeForAchievements('task2', wordCount, score, estimatedMinutes, false);
-        if (newlyUnlocked.length > 0) {
-          const achievement = ACHIEVEMENTS.find(a => a.id === newlyUnlocked[0]);
-          if (achievement) {
-            setNewAchievement(achievement);
-          }
-        }
-        
-        // Keep legacy session storage for backwards compatibility
-        localStorage.setItem('celpip_last_session', JSON.stringify({
-          lastWordCount: wordCount,
-          lastTask: 'TASK_2',
-          lastScore: score,
-          date: new Date().toISOString()
-        }));
-      } catch {
-        // Silently fail
-      }
-    }
+    const conn = ['First', 'Second', 'Finally'];
+    state.points.forEach((p, i) => { body += `\n\n${conn[i] || 'Additionally'}, ${p.point || '[Point]'}. This is because ${p.reason || '[Reason]'}. For example, ${p.example || '[Example]'}.`; });
+    updateState('content', intro + body + '\n\nIn conclusion, considering these reasons, I am convinced that this is the superior option.');
   };
 
   const handleAIEvaluate = async () => {
-    if (wordCount < 50) {
-      setAiError('Write at least 50 words for AI evaluation.');
-      return;
-    }
+    if (wordCount < 50) { setAiError('Write at least 50 words.'); return; }
     analytics.aiFeedbackRequest('writing');
-
-    setAiLoading(true);
-    setAiError(null);
-    setAiEvaluation(null);
-
+    setAiLoading(true); setAiError(null); setAiEvaluation(null);
     try {
-      const response = await fetch('/api/evaluate/ai', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          task: 'task2',
-          text: state.content,
-          prompt: state.promptText,
-          context: {
-            situation: selectedContext?.title || state.topic || '',
-            audience: state.audience
-          }
-        })
+      const r = await fetch('/api/evaluate/ai', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ task: 'task2', text: state.content, prompt: state.promptText, context: { situation: selectedContext?.title || state.topic || '', audience: state.audience } })
       });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Evaluation error');
-      }
-
-      setAiEvaluation(data.evaluation);
-    } catch (err: any) {
-      setAiError(err.message || 'Error connecting to AI');
-    } finally {
-      setAiLoading(false);
-    }
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.error || 'Evaluation error');
+      setAiEvaluation(d.evaluation);
+    } catch (e: any) { setAiError(e.message); } finally { setAiLoading(false); }
   };
 
   const handleClear = () => {
-    if (confirm('Are you sure you want to clear everything and go back to the beginning?')) {
-      setState(INITIAL_STATE);
-      setFeedback([]);
-      setAiEvaluation(null);
-      setAiError(null);
-      setSelectedContextId(null);
-      setCurrentStep(1);
-    }
+    if (confirm('Clear everything?')) { setState(INITIAL_STATE); setFeedback([]); setAiEvaluation(null); setAiError(null); setSelectedContextId(null); setCurrentStep(1); }
   };
 
-  const getWordCounterClass = () => {
-    if (wordCount < 150) return styles.wordCounterLow;
-    if (wordCount <= 200) return styles.wordCounterGood;
-    return styles.wordCounterHigh;
-  };
-
-  const getFeedbackItemClass = (item: FeedbackItem) => {
-    if (item.passed) return styles.feedbackItemSuccess;
-    switch (item.severity) {
-      case 'BLOCKER': return styles.feedbackItemError;
-      case 'IMPORTANT': return styles.feedbackItemWarning;
-      case 'POLISH': return styles.feedbackItemInfo;
-      default: return styles.feedbackItemInfo;
-    }
-  };
-
-  const getFeedbackIcon = (item: FeedbackItem) => {
-    if (item.passed) return <CheckCircle size={16} />;
-    switch (item.severity) {
-      case 'BLOCKER': return <AlertCircle size={16} />;
-      case 'IMPORTANT': return <AlertTriangle size={16} />;
-      case 'POLISH': return <Info size={16} />;
-      default: return <Info size={16} />;
-    }
-  };
-
-  const goToStep = (step: number) => {
-    if (step >= 1 && step <= 3) {
-      setCurrentStep(step);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
+  const goToStep = (s: number) => { if (s >= 1 && s <= 3) { setCurrentStep(s); window.scrollTo({ top: 0, behavior: 'smooth' }); } };
   const nextStep = () => goToStep(currentStep + 1);
   const prevStep = () => goToStep(currentStep - 1);
-
-  // Check if step has content (for progress indication)
-  const stepHasContent = (step: number): boolean => {
-    switch (step) {
-      case 1: return !!state.promptText.trim() || !!state.topic.trim();
-      case 2: return !!state.opinionLine.trim() || state.points.some(p => p.point.trim());
-      case 3: return !!state.content.trim();
-      default: return false;
-    }
+  const stepHasContent = (s: number) => {
+    if (s === 1) return !!state.promptText.trim();
+    if (s === 2) return !!state.opinionLine.trim() || state.points.some(p => p.point.trim());
+    return !!state.content.trim();
   };
 
-  return (
-    <div className={styles.wizardContainer}>
-      <ExerciseGate section="Writing" />
-      {/* Achievement Toast */}
-      {newAchievement && (
-        <AchievementToast 
-          achievement={newAchievement} 
-          onClose={() => {
-            markAchievementSeen(newAchievement.id);
-            setNewAchievement(null);
-          }} 
-        />
-      )}
+  const wcColor = wordCount < 150 ? T.yellow : wordCount <= 200 ? T.green : T.accent;
+  const preColors: Record<string, string> = { P: T.blue, R: T.purple, E: T.green };
 
-      {/* Hero Header */}
-      <div className={styles.wizardHero}>
-        <div className={styles.heroContent}>
-          <div className={styles.heroLeft}>
-            <div className={styles.heroIcon}>
-              <ClipboardList />
+  return (
+    <div style={{ minHeight: '100vh', background: T.bg, color: T.text, fontFamily: "'Inter','Segoe UI',sans-serif", paddingBottom: 100 }}>
+      <style>{`
+        @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        .step-animate { animation: fadeIn 0.3s ease; }
+        .chip-btn:hover { background: rgba(255,255,255,0.12) !important; color: #fff !important; }
+        .writing-input:focus { border-color: ${T.purple} !important; box-shadow: 0 0 0 2px ${T.purple}30 !important; }
+      `}</style>
+
+      <ExerciseGate section="Writing" />
+      {newAchievement && <AchievementToast achievement={newAchievement} onClose={() => { markAchievementSeen(newAchievement.id); setNewAchievement(null); }} />}
+
+      {/* ── Header ── */}
+      <div style={{ background: T.surface, borderBottom: `1px solid ${T.border}`, padding: '16px 20px' }}>
+        <div style={{ maxWidth: 700, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 12, background: `${T.purple}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <ClipboardList size={20} color={T.purple} />
             </div>
-            <div className={styles.heroTitle}>
-              <h1>Task 2 — <span>Survey Response</span></h1>
-              <p><Clock size={14} /> 26 minutes recommended</p>
+            <div>
+              <h1 style={{ margin: 0, fontSize: 18, fontWeight: 800 }}>Task 2 — Survey</h1>
+              <p style={{ margin: 0, fontSize: 13, color: T.muted, display: 'flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> 26 min</p>
             </div>
           </div>
-          <div className={styles.heroCenter}>
-            <ExamMode
-              taskType="task2"
-              totalMinutes={26}
-              isActive={examModeActive}
-              onStart={() => setCurrentStep(3)}
-              onEnd={(completed, timeUsed) => {
-                console.log('Exam ended:', { completed, timeUsed, words: wordCount });
-              }}
-              onToggle={setExamModeActive}
-            />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <ExamMode taskType="task2" totalMinutes={26} isActive={examModeActive} onStart={() => setCurrentStep(3)} onEnd={() => {}} onToggle={setExamModeActive} />
             {!examModeActive && <ExamTimer totalMinutes={26} warningMinutes={5} />}
-          </div>
-          <div className={styles.heroActions}>
-            <button onClick={handleClear} className={styles.heroBtnDanger}>
-              <Trash2 size={16} /> Clear All
-            </button>
-            <DraftManager 
-              task="task2"
-              currentData={state as unknown as Record<string, unknown>}
-              wordCount={wordCount}
-              onLoad={(data) => setState(data as unknown as Task2State)}
-              scenarioTitle={selectedContext?.title || state.topic || 'Task 2'}
-            />
+            <DraftManager task="task2" currentData={state as unknown as Record<string, unknown>} wordCount={wordCount} onLoad={(d) => setState(d as unknown as Task2State)} scenarioTitle={selectedContext?.title || 'Survey'} />
+            <button onClick={handleClear} style={{ ...btnSecondary, padding: '8px 14px', fontSize: 13, color: T.accent, borderColor: `${T.accent}30` }}><Trash2 size={14} /></button>
           </div>
         </div>
       </div>
 
-      {/* Progress Steps */}
-      <div className={styles.progressContainer}>
-        <div className={styles.progressSteps}>
-          {STEPS.map((step, index) => {
-            const StepIcon = step.icon;
-            const isActive = currentStep === step.id;
-            const isCompleted = currentStep > step.id || stepHasContent(step.id);
-            
+      {/* ── Step Progress ── */}
+      <div style={{ maxWidth: 700, margin: '0 auto', padding: '20px 20px 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+          {STEPS.map((step, i) => {
+            const active = currentStep === step.id;
+            const done = currentStep > step.id || stepHasContent(step.id);
+            const Icon = step.icon;
             return (
               <React.Fragment key={step.id}>
-                <button
-                  className={`${styles.progressStep} ${isActive ? styles.progressStepActive : ''} ${isCompleted ? styles.progressStepCompleted : ''}`}
-                  onClick={() => goToStep(step.id)}
-                >
-                  <div className={styles.stepCircle}>
-                    {isCompleted && !isActive ? (
-                      <CheckCircle size={20} />
-                    ) : (
-                      <StepIcon size={20} />
-                    )}
+                <button onClick={() => goToStep(step.id)} style={{
+                  flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  padding: '12px 8px', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                  background: active ? `${step.color}15` : 'transparent',
+                  borderBottom: `3px solid ${active ? step.color : done ? `${step.color}40` : T.border}`, borderRadius: 0,
+                }}>
+                  <div style={{ width: 28, height: 28, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', background: active ? `${step.color}25` : done ? `${step.color}15` : 'rgba(255,255,255,0.04)' }}>
+                    {done && !active ? <CheckCircle size={16} color={step.color} /> : <Icon size={16} color={active ? step.color : T.muted} />}
                   </div>
-                  <div className={styles.stepInfo}>
-                    <span className={styles.stepTitle}>{step.title}</span>
-                    <span className={styles.stepDesc}>{step.description}</span>
-                  </div>
+                  <span style={{ fontSize: 14, fontWeight: active ? 700 : 500, color: active ? step.color : T.muted }}>{step.title}</span>
                 </button>
-                {index < STEPS.length - 1 && (
-                  <div className={`${styles.progressLine} ${currentStep > step.id ? styles.progressLineActive : ''}`}>
-                    <ChevronRight size={20} />
-                  </div>
-                )}
+                {i < STEPS.length - 1 && <div style={{ width: 1, height: 20, background: T.border }} />}
               </React.Fragment>
             );
           })}
         </div>
       </div>
 
-      {/* Step Content */}
-      <div className={styles.stepContent}>
-        {/* Step 1: Context */}
+      {/* ── Content ── */}
+      <div className="step-animate" key={currentStep} style={{ maxWidth: 700, margin: '0 auto', padding: '20px' }}>
+
+        {/* ═══ STEP 1 ═══ */}
         {currentStep === 1 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <FileText className={styles.stepHeaderIcon} />
+          <>
+            <div style={card}>
+              <label style={labelStyle}>Choose a theme</label>
+              {contexts.length > 0 && <ContextSelector contexts={contexts} selectedId={selectedContextId} onSelect={handleContextSelect} placeholder="Select a theme..." freeLimit={FREE_LIMITS.writing.task2} isPro={isPro} />}
+            </div>
+
+            <div style={card}>
+              <label style={labelStyle}>Survey Prompt</label>
+              <textarea className="writing-input" style={{ ...textareaStyle, minHeight: 120 }} placeholder="Paste the prompt here..." value={state.promptText} onChange={e => updateState('promptText', e.target.value)} />
+            </div>
+
+            <div style={{ ...card, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
               <div>
-                <h2>Survey Context</h2>
-                <p>Read the prompt and identify the options. Choose your position (Option A or B).</p>
+                <label style={labelStyle}>Audience</label>
+                <input className="writing-input" style={inputStyle} placeholder="City Council, HR..." value={state.audience} onChange={e => updateState('audience', e.target.value)} />
               </div>
-            </div>
-
-            <div className={styles.stepBody}>
-              {/* Context Selector */}
-              {contexts.length > 0 && (
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Choose a theme</label>
-                  <ContextSelector
-                    contexts={contexts}
-                    selectedId={selectedContextId}
-                    onSelect={handleContextSelect}
-                    placeholder="Select a ready theme or create your own..."
-                    freeLimit={FREE_LIMITS.writing.task2}
-                    isPro={isPro}
-                  />
-                </div>
-              )}
-
-              {/* Prompt Text */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Prompt (Survey)</label>
-                <textarea
-                  className={styles.formTextareaLarge}
-                  placeholder="Paste the prompt here or select a theme above..."
-                  rows={6}
-                  value={state.promptText}
-                  onChange={e => updateState('promptText', e.target.value)}
-                />
-              </div>
-
-              {/* Audience */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Who will read? (Audience)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="Ex: City Council, HR Department, School Board"
-                  value={state.audience}
-                  onChange={e => updateState('audience', e.target.value)}
-                />
-              </div>
-
-              {/* Position Selection */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Your Position</label>
-                <div className={styles.positionButtons}>
-                  <button
-                    type="button"
-                    onClick={() => updateState('position', 'A_FAVOR')}
-                    className={`${styles.positionBtn} ${state.position === 'A_FAVOR' ? styles.positionBtnActive : ''}`}
-                  >
-                    <span className={styles.positionBtnLetter}>A</span>
-                    <span>Option A</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => updateState('position', 'CONTRA')}
-                    className={`${styles.positionBtn} ${state.position === 'CONTRA' ? styles.positionBtnActive : ''}`}
-                  >
-                    <span className={styles.positionBtnLetter}>B</span>
-                    <span>Option B</span>
-                  </button>
-                </div>
-              </div>
-
-              {/* Topic Keywords */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Chosen theme (Keywords)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="Ex: building a new park, remote work policy"
-                  value={state.topic}
-                  onChange={e => updateState('topic', e.target.value)}
-                />
-                <p className={styles.formHint}>
-                  Keywords that summarize your choice. Will be used in the introduction.
-                </p>
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <div></div>
-              <button className={styles.btnNext} onClick={nextStep}>
-                Next: Planning <ArrowRight size={18} />
-              </button>
-            </div>
-          </div>
-        )}
-
-        {/* Step 2: Planning */}
-        {currentStep === 2 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <PenTool className={styles.stepHeaderIcon} />
               <div>
-                <h2>Planning (PRE Structure)</h2>
-                <p>Use the <strong>P</strong>oint → <strong>R</strong>eason → <strong>E</strong>xample structure for each argument.</p>
+                <label style={labelStyle}>Topic Keywords</label>
+                <input className="writing-input" style={inputStyle} placeholder="building a park, remote work..." value={state.topic} onChange={e => updateState('topic', e.target.value)} />
               </div>
-              <TaskHelpPanel defaultTab="task2" />
             </div>
 
-            {/* Selected Context Card */}
-            {selectedContext && (
-              <div className={styles.contextCard}>
-                <div className={styles.contextCardHeader}>
-                  <ClipboardList size={16} />
-                  <span>Tema Selecionado</span>
-                  <button 
-                    className={styles.contextCardChange}
-                    onClick={() => setCurrentStep(1)}
-                  >
-                    Trocar
+            <div style={card}>
+              <label style={labelStyle}>Your Position</label>
+              <div style={{ display: 'flex', gap: 10 }}>
+                {(['A_FAVOR', 'CONTRA'] as const).map((pos, i) => (
+                  <button key={pos} onClick={() => updateState('position', pos)} style={{
+                    flex: 1, padding: '14px 16px', borderRadius: 12, cursor: 'pointer', transition: 'all 0.2s',
+                    background: state.position === pos ? `${[T.blue, T.purple][i]}15` : 'rgba(255,255,255,0.03)',
+                    border: `2px solid ${state.position === pos ? [T.blue, T.purple][i] : T.border}`,
+                    color: state.position === pos ? [T.blue, T.purple][i] : T.muted,
+                    fontWeight: 700, fontSize: 15, display: 'flex', alignItems: 'center', gap: 10,
+                  }}>
+                    <span style={{ width: 28, height: 28, borderRadius: 8, background: `${[T.blue, T.purple][i]}20`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 14 }}>
+                      {['A', 'B'][i]}
+                    </span>
+                    Option {['A', 'B'][i]}
                   </button>
-                </div>
-                <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
-                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
-              </div>
-            )}
-
-            <div className={styles.stepBody}>
-              {/* Opinion Line */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Opinion Line (Introdução)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="I would rather... / I recommend that..."
-                  value={state.opinionLine}
-                  onChange={e => updateState('opinionLine', e.target.value)}
-                />
-                <div className={styles.tagGroup}>
-                  {[
-                    "I would rather...",
-                    "I recommend that...",
-                    "I believe option A is better because..."
-                  ].map(suggestion => (
-                    <button
-                      key={suggestion}
-                      className={styles.tag}
-                      onClick={() => updateState('opinionLine', suggestion)}
-                    >
-                      {suggestion}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Arguments Header */}
-              <div className={styles.formSection}>
-                <div className={styles.argumentsHeader}>
-                  <label className={styles.formLabel}>
-                    <span>📝</span> Arguments (PRE Structure)
-                  </label>
-                  <div className={styles.argumentsActions}>
-                    <button 
-                      type="button"
-                      onClick={removePoint} 
-                      disabled={state.points.length <= 1}
-                      className={styles.argumentsBtn}
-                      title="Remove argument"
-                    >
-                      <Minus size={16} />
-                    </button>
-                    <span className={styles.argumentsCount}>{state.points.length}/3</span>
-                    <button 
-                      type="button"
-                      onClick={addPoint} 
-                      disabled={state.points.length >= 3}
-                      className={styles.argumentsBtn}
-                      title="Add argument"
-                    >
-                      <Plus size={16} />
-                    </button>
-                  </div>
-                </div>
-                <p className={styles.formHint}>
-                  Minimum 2 arguments. Each must have Point, Reason and Example.
-                </p>
-              </div>
-
-              {/* Arguments Grid */}
-              <div className={styles.argumentsGrid}>
-                {state.points.map((p, idx) => (
-                  <div key={idx} className={styles.argumentCard}>
-                    <div className={styles.argumentCardHeader}>
-                      <span className={styles.argumentBadge}>
-                        {idx === 0 ? 'First' : idx === 1 ? 'Second' : 'Finally'}
-                      </span>
-                      <span className={styles.argumentTitle}>Argument {idx + 1}</span>
-                    </div>
-                    
-                    <div className={styles.argumentField}>
-                      <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>P</span> Point (Main idea)
-                      </label>
-                      <input
-                        className={styles.formInput}
-                        placeholder="Ex: parks provide health benefits..."
-                        value={p.point}
-                        onChange={e => updatePoint(idx, 'point', e.target.value)}
-                      />
-                    </div>
-                    
-                    <div className={styles.argumentField}>
-                      <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>R</span> Reason (Why?)
-                      </label>
-                      <textarea
-                        className={styles.planningTextarea}
-                        placeholder="Ex: because people can exercise outdoors..."
-                        value={p.reason}
-                        onChange={e => updatePoint(idx, 'reason', e.target.value)}
-                        rows={2}
-                      />
-                    </div>
-                    
-                    <div className={styles.argumentField}>
-                      <label className={styles.argumentFieldLabel}>
-                        <span className={styles.preBadge}>E</span> Example (Specific example)
-                      </label>
-                      <textarea
-                        className={styles.planningTextarea}
-                        placeholder="Ex: for instance, my neighbor started jogging..."
-                        value={p.example}
-                        onChange={e => updatePoint(idx, 'example', e.target.value)}
-                        rows={2}
-                      />
-                    </div>
-                  </div>
                 ))}
               </div>
-
-              {/* Conclusion Note */}
-              <div className={styles.conclusionNote}>
-                <span className={styles.conclusionIcon}>💡</span>
-                <div>
-                  <strong>Conclusion (auto-generated):</strong>
-                  <p>&ldquo;In conclusion, considering these reasons, I am convinced that this is the superior option.&rdquo;</p>
-                </div>
-              </div>
             </div>
 
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Back
-              </button>
-              <button className={styles.btnNext} onClick={nextStep}>
-                Next: Writing <ArrowRight size={18} />
-              </button>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 8 }}>
+              <button onClick={nextStep} style={btnPrimary}>Next: Plan <ArrowRight size={18} /></button>
             </div>
-          </div>
+          </>
         )}
 
-        {/* Step 3: Writing */}
-        {currentStep === 3 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <ClipboardList className={styles.stepHeaderIcon} />
-              <div>
-                <h2>Final Writing</h2>
-                <p>Write your complete response. Use &ldquo;Generate Structure&rdquo; para criar um rascunho baseado no planejamento.</p>
-              </div>
-              <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                ✍️ {wordCount} words
-              </div>
-            </div>
-
-            {/* Selected Context Card - Compact */}
+        {/* ═══ STEP 2 ═══ */}
+        {currentStep === 2 && (
+          <>
             {selectedContext && (
-              <div className={`${styles.contextCard} ${styles.contextCardCompact}`}>
-                <div className={styles.contextCardHeader}>
-                  <ClipboardList size={16} />
-                  <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
+              <div style={{ ...card, background: `${T.blue}08`, borderColor: `${T.blue}20` }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: T.blue, textTransform: 'uppercase' }}>Theme</span>
+                  <button onClick={() => setCurrentStep(1)} style={{ background: 'none', border: 'none', color: T.blue, fontSize: 12, cursor: 'pointer', fontWeight: 600 }}>Change</button>
                 </div>
-                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
+                <p style={{ margin: 0, fontSize: 14, color: T.muted }}>{themeText(selectedContext.content)}</p>
               </div>
             )}
 
-            <div className={styles.stepBody}>
-              {/* Writing Area */}
-              <div className={styles.writingSection}>
-                {/* Spell Check Toggle */}
-                <div className={styles.spellCheckToggle}>
-                  <label className={styles.toggleSwitch}>
-                    <input
-                      type="checkbox"
-                      checked={spellCheckEnabled}
-                      onChange={(e) => setSpellCheckEnabled(e.target.checked)}
-                    />
-                    <span className={styles.toggleSlider}></span>
-                  </label>
-                  <span className={styles.toggleLabel}>
-                    <SpellCheck size={16} />
-                    Spell Check
-                  </span>
-                </div>
+            {/* Opinion — chips first, then editable */}
+            <div style={card}>
+              <label style={labelStyle}>Opinion Line</label>
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                {["I would rather choose option A because...", "I strongly believe that...", "In my opinion, the best approach is...", "I recommend that the committee...", "I am convinced that option B is better because..."].map(s => (
+                  <button key={s} className="chip-btn" style={{ ...chip, fontSize: 12, ...(state.opinionLine === s ? { background: `${T.blue}20`, borderColor: T.blue, color: T.blue } : {}) }}
+                    onClick={() => updateState('opinionLine', s)}>{s}</button>
+                ))}
+              </div>
+              <input className="writing-input" style={inputStyle} placeholder="Or type your own opinion line..." value={state.opinionLine} onChange={e => updateState('opinionLine', e.target.value)} />
+            </div>
 
-                <SpellCheckTextarea
-                  value={state.content}
-                  onChange={(value) => updateState('content', value)}
-                  placeholder="Start writing your response here..."
-                  spellCheckEnabled={spellCheckEnabled}
-                  className={styles.writingTextareaContainer}
-                  minHeight="350px"
-                />
-
-                {/* AI Score & Sentence Analysis */}
-                <div className={styles.aiFeedbackSection}>
-                  <AIFeedback 
-                    task="task2" 
-                    text={state.content}
-                    promptText={state.promptText}
-                    onApplySuggestion={(original, replacement) => {
-                      const newContent = state.content.replace(original, replacement);
-                      updateState('content', newContent);
-                    }}
-                  />
-                  <SentenceFeedback 
-                    task="task2" 
-                    text={state.content}
-                  />
+            {/* Arguments PRE — with sentence starter chips */}
+            <div style={{ ...card, padding: '16px 20px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+                <label style={{ ...labelStyle, margin: 0 }}>Arguments (PRE)</label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <button onClick={removePoint} disabled={state.points.length <= 1} style={{ ...chip, padding: '4px 10px', opacity: state.points.length <= 1 ? 0.3 : 1 }}><Minus size={14} /></button>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: T.muted }}>{state.points.length}/3</span>
+                  <button onClick={addPoint} disabled={state.points.length >= 3} style={{ ...chip, padding: '4px 10px', opacity: state.points.length >= 3 ? 0.3 : 1 }}><Plus size={14} /></button>
                 </div>
-
-                <div className={styles.writingActions}>
-                  <button 
-                    onClick={transferPlanning}
-                    type="button"
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
-                      padding: '0.6rem 1.2rem',
-                      background: 'linear-gradient(135deg, #8b5cf6, #7c3aed)',
-                      color: '#fff',
-                      border: 'none',
-                      borderRadius: 8,
-                      fontWeight: 600,
-                      fontSize: '0.875rem',
-                      cursor: 'pointer',
-                    }}
-                  >
-                    <ArrowRight size={16} />
-                    Transfer Planning
-                  </button>
-                  <button className={styles.btnTemplate} onClick={generateStructure}>
-                    <Wand2 size={16} /> Generate Structure
-                  </button>
-                  <button className={styles.btnEvaluate} onClick={handleEvaluate}>
-                    <RefreshCw size={16} /> Quick Checklist
-                  </button>
-                </div>
-                {transferMessage && (
-                  <div style={{
-                    marginTop: '0.5rem',
-                    fontSize: '0.875rem',
-                    fontWeight: 500,
-                    color: transferMessage.includes('⚠️') ? '#f59e0b' : '#059669',
-                  }}>
-                    {transferMessage}
-                  </div>
-                )}
               </div>
 
-              {/* Feedback Panel */}
-              {feedback.length > 0 && (
-                <div className={styles.feedbackPanel}>
-                  <div className={styles.feedbackHeader}>
-                    <MessageSquare size={20} />
-                    <h3>Feedback</h3>
+              {state.points.map((p, idx) => {
+                const pointStarters = [
+                  ["it promotes better health...", "it saves time and money...", "it benefits the community..."],
+                  ["it creates more opportunities...", "it improves quality of life...", "it is more environmentally friendly..."],
+                  ["it encourages social interaction...", "it reduces long-term costs...", "it has proven results..."],
+                ];
+                const reasonStarters = ["This is important because...", "The reason is that...", "This matters since..."];
+                const exampleStarters = ["For instance,...", "A good example is...", "In my experience,..."];
+                return (
+                <div key={idx} style={{ background: 'rgba(255,255,255,0.02)', borderRadius: 12, padding: 16, marginBottom: 12, border: `1px solid ${T.border}` }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+                    <span style={{ width: 24, height: 24, borderRadius: 6, background: `${T.purple}20`, color: T.purple, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 900 }}>{idx + 1}</span>
+                    <span style={{ fontSize: 14, fontWeight: 700 }}>{['First', 'Second', 'Third'][idx]} Argument</span>
                   </div>
-                  <div className={styles.feedbackList}>
-                    {feedback.map((item, index) => (
-                      <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
-                        <div className={styles.feedbackItemIcon}>
-                          {getFeedbackIcon(item)}
-                        </div>
-                        <p>{item.message}</p>
-                      </div>
-                    ))}
+
+                  {/* P — Point */}
+                  <div style={{ marginBottom: 10 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+                      <span style={{ width: 22, height: 22, borderRadius: 6, background: `${T.blue}20`, color: T.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 900 }}>P</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: T.muted }}>Point</span>
+                    </div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+                      {(pointStarters[idx] || pointStarters[0]).map(s => (
+                        <button key={s} className="chip-btn" style={{ ...chip, fontSize: 11 }}
+                          onClick={() => updatePoint(idx, 'point', p.point ? p.point + ' ' + s : s)}>{s}</button>
+                      ))}
+                    </div>
+                    <input className="writing-input" style={inputStyle} placeholder="Tap a starter or type your point..." value={p.point} onChange={e => updatePoint(idx, 'point', e.target.value)} />
                   </div>
-                  <UpgradeTrigger context="writing" />
+
+                  {/* R — Reason */}
+                  <div style={{ marginBottom: 10 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+                      <span style={{ width: 22, height: 22, borderRadius: 6, background: `${T.purple}20`, color: T.purple, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 900 }}>R</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: T.muted }}>Reason</span>
+                    </div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+                      {reasonStarters.map(s => (
+                        <button key={s} className="chip-btn" style={{ ...chip, fontSize: 11 }}
+                          onClick={() => updatePoint(idx, 'reason', p.reason ? p.reason + ' ' + s : s)}>{s}</button>
+                      ))}
+                    </div>
+                    <input className="writing-input" style={inputStyle} placeholder="Tap a starter or type your reason..." value={p.reason} onChange={e => updatePoint(idx, 'reason', e.target.value)} />
+                  </div>
+
+                  {/* E — Example */}
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+                      <span style={{ width: 22, height: 22, borderRadius: 6, background: `${T.green}20`, color: T.green, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 900 }}>E</span>
+                      <span style={{ fontSize: 12, fontWeight: 600, color: T.muted }}>Example</span>
+                    </div>
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+                      {exampleStarters.map(s => (
+                        <button key={s} className="chip-btn" style={{ ...chip, fontSize: 11 }}
+                          onClick={() => updatePoint(idx, 'example', p.example ? p.example + ' ' + s : s)}>{s}</button>
+                      ))}
+                    </div>
+                    <input className="writing-input" style={inputStyle} placeholder="Tap a starter or type your example..." value={p.example} onChange={e => updatePoint(idx, 'example', e.target.value)} />
+                  </div>
                 </div>
-              )}
+                );
+              })}
+
+              <div style={{ background: `${T.green}08`, borderRadius: 10, padding: '10px 14px', display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+                <span style={{ fontSize: 16 }}>💡</span>
+                <p style={{ margin: 0, fontSize: 13, color: T.muted }}>
+                  <strong style={{ color: T.text }}>Conclusion</strong> (auto-generated): &ldquo;In conclusion, considering these reasons, I am convinced...&rdquo;
+                </p>
+              </div>
             </div>
 
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Back to Planning
-              </button>
-              <button className={styles.btnFinish}>
-                <CheckCircle size={18} /> Finish
-              </button>
+            <TaskHelpPanel defaultTab="task2" />
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
+              <button onClick={prevStep} style={btnSecondary}><ArrowLeft size={18} /> Back</button>
+              <button onClick={nextStep} style={btnPrimary}>Next: Write <ArrowRight size={18} /></button>
             </div>
-          </div>
+          </>
+        )}
+
+        {/* ═══ STEP 3 ═══ */}
+        {currentStep === 3 && (
+          <>
+            <div style={{ ...card, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <span style={{ fontSize: 28, fontWeight: 900, color: wcColor }}>{wordCount}</span>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>words</div>
+                  <div style={{ fontSize: 11, color: T.muted }}>Target: 150-200</div>
+                </div>
+              </div>
+              <div style={{ width: 120, height: 6, borderRadius: 3, background: 'rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+                <div style={{ height: '100%', borderRadius: 3, background: wcColor, width: `${Math.min((wordCount / 200) * 100, 100)}%`, transition: 'width 0.3s' }} />
+              </div>
+            </div>
+
+            {selectedContext && (
+              <div style={{ ...card, padding: '12px 16px', background: `${T.blue}06` }}>
+                <p style={{ margin: 0, fontSize: 13, color: T.muted }}><strong style={{ color: T.blue }}>Prompt:</strong> {themeText(selectedContext.content)}</p>
+              </div>
+            )}
+
+            <div style={{ ...card, padding: 0, overflow: 'hidden' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px', borderBottom: `1px solid ${T.border}`, flexWrap: 'wrap', gap: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <VoiceDictation onTranscript={(text) => updateState('content', state.content + (state.content && !state.content.endsWith(' ') ? ' ' : '') + text)} />
+                  <label style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'pointer', fontSize: 13, color: T.muted }}>
+                    <input type="checkbox" checked={spellCheckEnabled} onChange={e => setSpellCheckEnabled(e.target.checked)} style={{ width: 16, height: 16, accentColor: T.purple }} />
+                    <SpellCheck size={14} /> Spell Check
+                  </label>
+                </div>
+                <div style={{ display: 'flex', gap: 6 }}>
+                  <button onClick={transferPlanning} className="chip-btn" style={{ ...chip, fontSize: 12 }}><ArrowRight size={12} /> Transfer Plan</button>
+                  <button onClick={generateStructure} className="chip-btn" style={{ ...chip, fontSize: 12 }}><Wand2 size={12} /> Structure</button>
+                </div>
+              </div>
+              <div style={{ padding: '0 16px 16px' }}>
+                <SpellCheckTextarea value={state.content} onChange={(v) => updateState('content', v)}
+                  placeholder="Start writing your response... or tap Dictate to speak!" spellCheckEnabled={spellCheckEnabled} className="" minHeight="300px" />
+              </div>
+            </div>
+
+            {transferMessage && (
+              <div style={{ padding: '10px 16px', borderRadius: 10, background: transferMessage.includes('⚠️') ? `${T.yellow}15` : `${T.green}15`, color: transferMessage.includes('⚠️') ? T.yellow : T.green, fontSize: 14, fontWeight: 600, marginBottom: 14 }}>
+                {transferMessage}
+              </div>
+            )}
+
+            {/* Single AI button */}
+            <div style={{ ...card, textAlign: 'center' }}>
+              <button onClick={handleAIEvaluate} disabled={aiLoading || wordCount < 50}
+                style={{ ...btnPrimary, width: '100%', justifyContent: 'center', padding: '16px 28px', fontSize: 16, opacity: (aiLoading || wordCount < 50) ? 0.5 : 1 }}>
+                <Bot size={20} /> {aiLoading ? 'Analyzing your writing...' : 'Get AI Feedback'}
+              </button>
+              {wordCount < 50 && <p style={{ margin: '8px 0 0', fontSize: 12, color: T.muted }}>Write at least 50 words to unlock</p>}
+              {aiError && <p style={{ margin: '8px 0 0', fontSize: 13, color: T.accent }}>{aiError}</p>}
+            </div>
+
+            {aiLoading && <AIEvaluationLoading />}
+            {aiEvaluation && (
+              <AIEvaluationResult evaluation={aiEvaluation} originalText={state.content} />
+            )}
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
+              <button onClick={prevStep} style={btnSecondary}><ArrowLeft size={18} /> Back</button>
+              <div />
+            </div>
+          </>
         )}
       </div>
     </div>

@@ -17,19 +17,7 @@ export interface SiteEvent {
 // 🎉 ACTIVE EVENTS — edit here to manage
 // ══════════════════════════════════════════
 export const SITE_EVENTS: SiteEvent[] = [
-  {
-    id: 'welcome-30-2026',
-    name: 'Welcome Offer',
-    description: 'Get 30% OFF your first month — monthly plan only!',
-    discount: '30% OFF',
-    promoCode: 'WELCOME30',
-    startDate: '2026-03-08T00:00:00Z',
-    endDate: '2026-03-16T23:59:59Z',
-    bannerEmoji: '🎉',
-    bannerColor: '#7c3aed',
-    bannerColorEnd: '#db2777',
-    ctaText: 'Claim 30% OFF',
-  },
+  // No active promotions — prices are already competitive
 ];
 
 export function getActiveEvent(): SiteEvent | null {

@@ -1,57 +1,53 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { getUserPlan } from '@/lib/plan';
+import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+import { getUserPlan } from '@/lib/plan';
 
 const prisma = new PrismaClient();
 
-// Check if user already submitted feedback
-export async function GET() {
-  try {
-    const plan = await getUserPlan();
-    if (!plan.authenticated || !plan.userId) {
-      return NextResponse.json({ submitted: false });
-    }
-
-    const existing = await prisma.userFeedback.findUnique({
-      where: { userId: plan.userId },
-    });
-
-    return NextResponse.json({ submitted: !!existing });
-  } catch {
-    return NextResponse.json({ submitted: false });
-  }
-}
-
-// Submit feedback
-export async function POST(request: NextRequest) {
+export async function POST(req: Request) {
   try {
     const plan = await getUserPlan();
     if (!plan.authenticated || !plan.userId) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const { challenge, suggestion } = await request.json();
+    const { rating, message, category, page } = await req.json();
 
-    if (!challenge) {
-      return NextResponse.json({ error: 'Challenge is required' }, { status: 400 });
+    if (!rating || rating < 1 || rating > 5) {
+      return NextResponse.json({ error: 'Rating 1-5 required' }, { status: 400 });
     }
 
-    await prisma.userFeedback.upsert({
-      where: { userId: plan.userId },
-      create: {
+    const feedback = await prisma.userFeedback.create({
+      data: {
         userId: plan.userId,
-        challenge,
-        suggestion: suggestion || null,
-      },
-      update: {
-        challenge,
-        suggestion: suggestion || null,
+        rating,
+        challenge: message || null,
+        category: category || 'general',
+        page: page || null,
       },
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, id: feedback.id });
   } catch (error) {
     console.error('Feedback error:', error);
-    return NextResponse.json({ error: 'Failed' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to save feedback' }, { status: 500 });
+  }
+}
+
+export async function GET(req: Request) {
+  try {
+    const plan = await getUserPlan();
+    if (!plan.authenticated || !plan.userId) {
+      return NextResponse.json({ recentFeedback: false });
+    }
+
+    const recent = await prisma.userFeedback.findFirst({
+      where: { userId: plan.userId },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    return NextResponse.json({ recentFeedback: !!recent });
+  } catch {
+    return NextResponse.json({ recentFeedback: false });
   }
 }

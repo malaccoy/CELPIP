@@ -110,7 +110,7 @@ export default function ReadingDrillsPage() {
               <div style={{ fontWeight: 700, fontSize: '0.95rem', color: T.text }}>{unit.title}</div>
               <div style={{ fontSize: '0.8rem', color: T.textMuted, marginTop: '0.15rem' }}>{unit.subtitle}</div>
               <div style={{ fontSize: '0.75rem', color: T.teal, fontWeight: 600, marginTop: '0.3rem' }}>
-                {unit.exercises.length} exercises
+                ∞ exercises
               </div>
             </div>
             <ChevronRight size={20} color={T.textMuted} />

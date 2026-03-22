@@ -1,111 +1,127 @@
-import styles from '@/styles/Legal.module.scss';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Privacy Policy',
+export const metadata: Metadata = {
+  title: 'Privacy Policy — CELPIP AI Coach',
+  description: 'Privacy Policy for CELPIP AI Coach application and website.',
 };
 
-export default function PrivacyPage() {
+export default function PrivacyPolicyPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <h1>Privacy Policy</h1>
-        <p className={styles.updated}>Last updated: March 3, 2026</p>
+    <div style={{
+      maxWidth: 800,
+      margin: '0 auto',
+      padding: '40px 20px',
+      color: '#e0e0e0',
+      fontFamily: 'system-ui, sans-serif',
+      lineHeight: 1.7,
+    }}>
+      <h1 style={{ color: '#fff', fontSize: '2rem', marginBottom: 8 }}>Privacy Policy</h1>
+      <p style={{ color: '#888', marginBottom: 32 }}>Last updated: March 17, 2026</p>
 
-        <section>
-          <h2>1. Introduction</h2>
-          <p>CELPIP AI Coach (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) respects your privacy. This policy explains how we collect, use, and protect your personal information when you use our service at celpipaicoach.com.</p>
-        </section>
+      <p>
+        CELPIP AI Coach (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the website{' '}
+        <a href="https://celpipaicoach.com" style={{ color: '#4fc3f7' }}>celpipaicoach.com</a> and
+        the CELPIP AI Coach mobile application (collectively, the &quot;Service&quot;). This Privacy
+        Policy explains how we collect, use, and protect your information.
+      </p>
 
-        <section>
-          <h2>2. Information We Collect</h2>
-          <h3>Account Information</h3>
-          <ul>
-            <li>Email address and name (when you sign up)</li>
-            <li>Google account information (if you sign in with Google)</li>
-          </ul>
-          <h3>Usage Data</h3>
-          <ul>
-            <li>Practice responses and quiz results</li>
-            <li>Voice recordings (for speaking practice — processed by OpenAI Whisper, not stored permanently)</li>
-            <li>Assessment scores and study progress</li>
-            <li>Pages visited and features used (via Google Analytics)</li>
-          </ul>
-          <h3>Payment Information</h3>
-          <ul>
-            <li>Billing details are handled securely by Stripe. We do not store your credit card information.</li>
-          </ul>
-        </section>
+      <Section title="1. Information We Collect">
+        <p><strong>Account Information:</strong> When you create an account, we collect your email address and display name through our authentication provider (Supabase Auth / Google Sign-In).</p>
+        <p><strong>Usage Data:</strong> We collect information about how you use the Service, including exercises completed, scores, practice history, and progress data.</p>
+        <p><strong>Audio Recordings:</strong> For Speaking practice, we temporarily process audio recordings to provide AI feedback. Recordings are not stored permanently and are deleted after analysis.</p>
+        <p><strong>Payment Information:</strong> Payment processing is handled by Stripe. We do not store your credit card details. Stripe&apos;s privacy policy applies to payment data.</p>
+        <p><strong>Device Information:</strong> We may collect basic device and browser information (device type, OS, browser version) for analytics and compatibility purposes.</p>
+      </Section>
 
-        <section>
-          <h2>3. How We Use Your Information</h2>
-          <ul>
-            <li>To provide and improve the Service</li>
-            <li>To personalize your study plan and track progress</li>
-            <li>To process AI-powered feedback on your practice responses</li>
-            <li>To process payments and manage subscriptions</li>
-            <li>To send service-related emails (verification, password reset, important updates)</li>
-            <li>To send occasional product updates (you can unsubscribe anytime)</li>
-          </ul>
-        </section>
+      <Section title="2. How We Use Your Information">
+        <ul style={{ paddingLeft: 20 }}>
+          <li>Provide and improve our CELPIP preparation services</li>
+          <li>Track your learning progress and generate personalized feedback</li>
+          <li>Process subscriptions and payments</li>
+          <li>Send important account-related notifications</li>
+          <li>Analyze usage patterns to improve the Service</li>
+          <li>Maintain leaderboards and rankings (display name only)</li>
+        </ul>
+      </Section>
 
-        <section>
-          <h2>4. Third-Party Services</h2>
-          <p>We use the following third-party services:</p>
-          <ul>
-            <li><strong>Supabase</strong> — Authentication and user management</li>
-            <li><strong>OpenAI</strong> — AI-generated content, feedback, and speech processing</li>
-            <li><strong>Stripe</strong> — Payment processing</li>
-            <li><strong>Google Analytics</strong> — Anonymous usage analytics</li>
-            <li><strong>Resend</strong> — Transactional emails</li>
-            <li><strong>Microsoft Edge TTS</strong> — Text-to-speech for listening exercises</li>
-          </ul>
-          <p>Each service has its own privacy policy. Your data shared with these services is limited to what is necessary for functionality.</p>
-        </section>
+      <Section title="3. AI-Powered Features">
+        <p>
+          We use artificial intelligence (OpenAI GPT models) to evaluate your speaking and writing
+          responses. Your submitted text and audio transcriptions are sent to OpenAI for analysis.
+          We do not use your data to train AI models. OpenAI&apos;s data processing is governed by
+          their API data usage policies.
+        </p>
+      </Section>
 
-        <section>
-          <h2>5. Data Storage and Security</h2>
-          <p>Your data is stored on secure servers. We use encryption in transit (HTTPS) and follow industry best practices. However, no method of electronic storage is 100% secure.</p>
-        </section>
+      <Section title="4. Data Sharing">
+        <p>We do not sell your personal information. We share data only with:</p>
+        <ul style={{ paddingLeft: 20 }}>
+          <li><strong>Supabase:</strong> Authentication and user management</li>
+          <li><strong>Stripe:</strong> Payment processing</li>
+          <li><strong>OpenAI:</strong> AI-powered feedback generation</li>
+          <li><strong>Google Analytics:</strong> Anonymous usage statistics</li>
+        </ul>
+      </Section>
 
-        <section>
-          <h2>6. Data Retention</h2>
-          <p>We retain your account data as long as your account is active. Practice data and progress are kept to provide continuity. You can request deletion of your account and all associated data at any time by contacting us.</p>
-        </section>
+      <Section title="5. Data Storage & Security">
+        <p>
+          Your data is stored on secure servers. We use encryption in transit (HTTPS/TLS) and
+          follow industry-standard security practices to protect your information. However, no
+          method of transmission over the Internet is 100% secure.
+        </p>
+      </Section>
 
-        <section>
-          <h2>7. Your Rights</h2>
-          <p>You have the right to:</p>
-          <ul>
-            <li>Access your personal data</li>
-            <li>Correct inaccurate data</li>
-            <li>Request deletion of your data</li>
-            <li>Export your data</li>
-            <li>Opt out of marketing emails</li>
-          </ul>
-          <p>For Canadian users: we comply with PIPEDA (Personal Information Protection and Electronic Documents Act).</p>
-        </section>
+      <Section title="6. Your Rights">
+        <p>You have the right to:</p>
+        <ul style={{ paddingLeft: 20 }}>
+          <li>Access your personal data</li>
+          <li>Request correction of inaccurate data</li>
+          <li>Request deletion of your account and data</li>
+          <li>Export your practice history</li>
+          <li>Opt out of non-essential communications</li>
+        </ul>
+        <p>To exercise these rights, contact us at the email below.</p>
+      </Section>
 
-        <section>
-          <h2>8. Cookies</h2>
-          <p>We use essential cookies for authentication and session management. Google Analytics uses cookies for anonymous usage tracking. You can disable cookies in your browser settings, but some features may not work properly.</p>
-        </section>
+      <Section title="7. Cookies & Local Storage">
+        <p>
+          We use cookies and local storage for authentication sessions, user preferences, and
+          analytics. Essential cookies are required for the Service to function. You can control
+          cookie settings in your browser.
+        </p>
+      </Section>
 
-        <section>
-          <h2>9. Children&apos;s Privacy</h2>
-          <p>Our Service is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
-        </section>
+      <Section title="8. Children&apos;s Privacy">
+        <p>
+          Our Service is intended for users aged 18 and older. We do not knowingly collect
+          information from children under 13. If you believe a child has provided us with personal
+          data, please contact us for removal.
+        </p>
+      </Section>
 
-        <section>
-          <h2>10. Changes to This Policy</h2>
-          <p>We may update this policy from time to time. We will notify users of material changes via email. Continued use after changes constitutes acceptance.</p>
-        </section>
+      <Section title="9. Changes to This Policy">
+        <p>
+          We may update this Privacy Policy from time to time. We will notify users of significant
+          changes via the Service or email. Continued use after changes constitutes acceptance.
+        </p>
+      </Section>
 
-        <section>
-          <h2>11. Contact</h2>
-          <p>Questions about privacy? Email us at <a href="mailto:hello@celpipaicoach.com">hello@celpipaicoach.com</a>.</p>
-          <p>CELPIP AI Coach · Vancouver, BC, Canada</p>
-        </section>
-      </div>
+      <Section title="10. Contact Us">
+        <p>
+          If you have questions about this Privacy Policy or your data, contact us at:<br />
+          📧 <a href="mailto:noreply@celpipaicoach.com" style={{ color: '#4fc3f7' }}>noreply@celpipaicoach.com</a><br />
+          🌐 <a href="https://celpipaicoach.com/support" style={{ color: '#4fc3f7' }}>celpipaicoach.com/support</a>
+        </p>
+      </Section>
     </div>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section style={{ marginTop: 32 }}>
+      <h2 style={{ color: '#fff', fontSize: '1.3rem', marginBottom: 12 }}>{title}</h2>
+      <div style={{ color: '#ccc' }}>{children}</div>
+    </section>
   );
 }

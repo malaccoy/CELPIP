@@ -7,6 +7,7 @@ import { CommunityPopup } from '@/components/CommunityPopup';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
 import FAB from '@/components/FAB';
+import FeedbackPopup from '@/components/FeedbackPopup';
 import PageTransition from '@/components/PageTransition';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { PlanProvider } from '@/hooks/usePlan';
@@ -139,6 +140,7 @@ export default function RootLayout({
             </div>
             <BottomNav />
             <FAB />
+            <FeedbackPopup />
           </PlanProvider>
         </ThemeProvider>
         {/* Tawk.to Live Chat — set NEXT_PUBLIC_TAWK_ID in .env */}
@@ -177,6 +179,7 @@ export default function RootLayout({
             }}
           />
         )}
+        <script dangerouslySetInnerHTML={{ __html: `if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}` }} />
       </body>
     </html>
   );

@@ -57,7 +57,7 @@ export default function SpeakingCoursePage() {
             <span style={{ fontSize: '1.6rem' }}>🎤</span> Speaking Drills
           </h1>
           <p style={{ color: T.textMuted, fontSize: '0.8rem', margin: 0 }}>
-            {totalExercises} exercises · CLB 7+
+            ∞ exercises · CLB 7+
           </p>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default function SpeakingCoursePage() {
               <span style={{
                 fontSize: '0.65rem', background: 'rgba(139,92,246,0.15)', color: '#a78bfa',
                 padding: '0.2rem 0.5rem', borderRadius: 6, fontWeight: 600,
-              }}>{totalExercises} exercises</span>
+              }}>∞ exercises</span>
               <span style={{
                 fontSize: '0.65rem', background: 'rgba(34,197,94,0.15)', color: T.green,
                 padding: '0.2rem 0.5rem', borderRadius: 6, fontWeight: 600,

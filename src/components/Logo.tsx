@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Logo.module.scss';
 
-export const Logo: React.FC<{ size?: number }> = ({ size = 42 }) => {
+export const Logo: React.FC<{ size?: number }> = ({ size = 48 }) => {
   return (
     <div className={styles.logoContainer} style={{ width: size, height: size }}>
       <Image

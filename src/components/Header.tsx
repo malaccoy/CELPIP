@@ -8,6 +8,7 @@ import { useUser } from '@/hooks/useUser';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import { createClient } from '@/lib/supabase/client';
 import { Logo } from '@/components/Logo';
+import NotificationBell from '@/components/NotificationBell';
 import { useScrollDirection } from '@/hooks/useScrollDirection';
 import styles from '@/styles/Layout.module.scss';
 
@@ -21,11 +22,11 @@ interface NavItem {
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
   { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
-  { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
+  // { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
   // { to: '/english', icon: (() => null) as any, label: '🍁 Citizenship' },
   { to: '/blog', icon: BookOpen, label: 'Blog' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
-  { to: '/tools/score-calculator', icon: (() => null) as any, label: '🧮 CRS Calculator' },
+  // { to: '/tools/score-calculator', icon: (() => null) as any, label: '🧮 CRS Calculator' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
   // Profile removed from nav — accessible via avatar
   { to: '/support', icon: HelpCircle, label: 'Support' },
@@ -105,7 +106,9 @@ export const Header: React.FC = () => {
             </span>
           </Link>
           {user ? (
-            <Link href="/profile" style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <NotificationBell />
+              <Link href="/profile" style={{ display: 'flex', alignItems: 'center' }}>
               <div style={{
                 width: 40, height: 40, borderRadius: '50%', overflow: 'hidden',
                 background: '#232733', border: '2px solid rgba(255,255,255,0.1)',
@@ -119,6 +122,7 @@ export const Header: React.FC = () => {
                 )}
               </div>
             </Link>
+            </div>
           ) : (
             <Link href="/auth/login" style={{
               background: '#ff3b3b', color: '#fff', borderRadius: 20,
@@ -175,7 +179,9 @@ export const Header: React.FC = () => {
           
           {/* User Menu */}
           {!loading && user ? (
-            <div className={styles.userMenu} ref={dropdownRef}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <NotificationBell />
+              <div className={styles.userMenu} ref={dropdownRef}>
               <button 
                 className={styles.userMenuBtn}
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -223,6 +229,7 @@ export const Header: React.FC = () => {
                   </button>
                 </div>
               )}
+            </div>
             </div>
           ) : !loading ? (
             <Link href="/auth/login" className={styles.loginBtn}>

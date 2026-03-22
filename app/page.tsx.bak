@@ -1,0 +1,221 @@
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { createClient } from '@/lib/supabase/client';
+import {
+  Sparkles, PenLine, Mic, BookOpen, Headphones,
+  ArrowRight, Zap, Target, TrendingUp, CheckCircle2,
+  Brain, Clock, BarChart3, Shield, Users,
+  ChevronDown, Award, Quote, Crown
+} from 'lucide-react';
+import styles from '@/styles/Home.module.scss';
+
+export default function HomePage() {
+  const router = useRouter();
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isAuth, setIsAuth] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    createClient().auth.getSession().then(({ data }) => setIsAuth(!!data.session));
+  }, []);
+
+  const go = (e: React.MouseEvent, path: string) => {
+    if (isAuth === false) { e.preventDefault(); router.push(`/auth/login?redirect=${encodeURIComponent(path)}`); }
+  };
+
+  const skills = [
+    { id: 'writing', title: 'Writing', desc: 'AI-scored emails & surveys on the 1-12 CELPIP scale', icon: PenLine, color: '#c084fc', bg: 'rgba(168,85,247,0.12)', path: '/writing' },
+    { id: 'speaking', title: 'Speaking', desc: 'Record & get instant pronunciation and fluency feedback', icon: Mic, color: '#38bdf8', bg: 'rgba(56,189,248,0.12)', path: '/speaking' },
+    { id: 'reading', title: 'Reading', desc: 'Timed passages with exam-style questions across all parts', icon: BookOpen, color: '#2dd4bf', bg: 'rgba(45,212,191,0.12)', path: '/reading' },
+    { id: 'listening', title: 'Listening', desc: 'One-play audio exercises — just like the real CELPIP test', icon: Headphones, color: '#fb923c', bg: 'rgba(251,146,60,0.12)', path: '/listening' },
+  ];
+
+  const proFeatures = [
+    { icon: Brain, title: 'AI Practice Generator', desc: 'Infinite exercises tailored to your level' },
+    { icon: TrendingUp, title: 'Adaptive Difficulty', desc: 'Auto-adjusts based on your performance' },
+    { icon: PenLine, title: 'AI Writing Tutor', desc: 'Grammar, vocabulary & structure feedback' },
+    { icon: Mic, title: 'AI Speaking Coach', desc: 'Transcription + pronunciation analysis' },
+    { icon: Target, title: 'Mock Exams', desc: 'Full test simulation with CLB estimate' },
+    { icon: BarChart3, title: 'Progress Tracking', desc: 'Per-section breakdown and trends' },
+  ];
+
+  const testimonials = [
+    { quote: 'I was stuck at CLB 7 for 3 tests. The AI feedback showed me exactly what was wrong with my writing. Got CLB 9 on my next try.', name: 'Priya S.', loc: 'Toronto', clb: 'CLB 7→9', initials: 'PS', color: '#6366f1' },
+    { quote: 'Saved me from paying $80/hour for a tutor. The speaking coach caught issues I didn\'t know I had.', name: 'Marco L.', loc: 'Vancouver', clb: 'CLB 8→10', initials: 'ML', color: '#10b981' },
+    { quote: 'The mock exam estimate was spot-on. I knew I was ready before spending $300 on the real test.', name: 'Ahmed K.', loc: 'Calgary', clb: 'CLB 9', initials: 'AK', color: '#f59e0b' },
+  ];
+
+  const faqs = [
+    { q: 'Is there really free content?', a: 'Yes! Free practice in all 4 skills — Writing, Speaking, Reading, and Listening. No credit card needed. Upgrade to Pro for unlimited practice and AI feedback.' },
+    { q: 'What does Pro include?', a: 'Unlimited exercises, AI Writing Tutor, AI Speaking Coach, Mock Exams with CLB estimates, advanced difficulty, and progress tracking.' },
+    { q: 'Can I cancel anytime?', a: 'Absolutely. Cancel from your profile anytime. No contracts, no hidden fees. Keep access until the end of your billing period.' },
+    { q: 'How is this different from other CELPIP prep?', a: 'Most sites offer static question banks. We use AI to give real-time feedback, generate infinite exercises, and adapt difficulty to your level.' },
+    { q: 'Does it work on mobile?', a: 'Yes! Fully mobile-optimized. Practice anywhere — commute, lunch breaks, or at home.' },
+    { q: 'I\'m taking CELPIP next week. Can this help?', a: 'Start with our Technique Guides for quick strategy tips, then do a Mock Exam to identify weak areas. Even a few days of focused practice helps.' },
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  };
+
+  return (
+    <main className={styles.page}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
+      {/* ─── Hero ─── */}
+      <section className={styles.hero}>
+        <div className={styles.heroInner}>
+          <div className={styles.heroBadge}>
+            <Sparkles size={14} /> 🇨🇦 AI-Powered CELPIP Prep
+          </div>
+          <h1 className={styles.heroTitle}>
+            Score <span className={styles.accent}>9+ on CELPIP</span><br />in 30 Days
+          </h1>
+          <p className={styles.heroSub}>
+            AI coaches your Writing & Speaking in real-time. Know your weak spots. Fix them before test day.
+          </p>
+          <Link href="/onboarding" className={styles.ctaMain}>
+            Start Free Practice <ArrowRight size={18} />
+          </Link>
+          <div className={styles.heroTrust}>
+            <span><CheckCircle2 size={14} /> No credit card</span>
+            <span><Users size={14} /> 200+ students</span>
+            <span><Shield size={14} /> ∞ exercises</span>
+          </div>
+          <div className={styles.heroStars}>
+            ★★★★★ <span>Loved by CELPIP students across Canada</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Stats ─── */}
+      <section className={styles.stats}>
+        {[
+          { val: '∞', label: 'Exercises', sub: 'all 4 skills' },
+          { val: 'AI', label: 'Feedback', sub: 'writing & speaking' },
+          { val: '200+', label: 'Students', sub: 'this month' },
+          { val: '9+', label: 'Target', sub: 'CLB ready' },
+        ].map((s, i) => (
+          <div key={i} className={styles.statItem}>
+            <span className={styles.statVal}>{s.val}</span>
+            <span className={styles.statLabel}>{s.label}</span>
+            <span className={styles.statSub}>{s.sub}</span>
+          </div>
+        ))}
+      </section>
+
+      {/* ─── Skills ─── */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Practice All 4 CELPIP Skills</h2>
+        <p className={styles.sectionSub}>AI-powered exercises for every section of the exam</p>
+        <div className={styles.skillsGrid}>
+          {skills.map(s => {
+            const Icon = s.icon;
+            return (
+              <Link key={s.id} href={s.path} onClick={e => go(e, s.path)} className={styles.skillCard}>
+                <div className={styles.skillIcon} style={{ background: s.bg, color: s.color }}>
+                  <Icon size={24} />
+                </div>
+                <div className={styles.skillInfo}>
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                </div>
+                <ArrowRight size={16} className={styles.skillArrow} />
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ─── Testimonials ─── */}
+      <section className={styles.section}>
+        <div className={styles.socialBadge}><Users size={14} /> Trusted by 200+ students</div>
+        <h2 className={styles.sectionTitle}>Real Results</h2>
+        <div className={styles.testGrid}>
+          {testimonials.map((t, i) => (
+            <div key={i} className={styles.testCard}>
+              <Quote size={18} className={styles.quoteIcon} />
+              <p className={styles.testText}>{t.quote}</p>
+              <div className={styles.testAuthor}>
+                <div className={styles.testAvatar} style={{ background: t.color }}>{t.initials}</div>
+                <div className={styles.testInfo}>
+                  <span className={styles.testName}>{t.name}</span>
+                  <span className={styles.testLoc}>{t.loc}</span>
+                </div>
+                <span className={styles.testClb}>{t.clb}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Pro Features ─── */}
+      <section className={styles.section}>
+        <div className={styles.proBadge}><Zap size={14} /> PRO</div>
+        <h2 className={styles.sectionTitle}>Supercharge Your Prep</h2>
+        <p className={styles.sectionSub}>AI coach that adapts to you and finds your weaknesses</p>
+        <div className={styles.proGrid}>
+          {proFeatures.map((f, i) => {
+            const Icon = f.icon;
+            return (
+              <div key={i} className={styles.proCard}>
+                <div className={styles.proIcon}><Icon size={20} /></div>
+                <div>
+                  <h3>{f.title}</h3>
+                  <p>{f.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className={styles.proCta}>
+          <Link href="/pricing" className={styles.ctaSecondary}>
+            See Plans <Crown size={16} />
+          </Link>
+          <span className={styles.proCtaSub}>From CA$7.99/week · Cancel anytime</span>
+        </div>
+      </section>
+
+      {/* ─── Urgency ─── */}
+      <section className={styles.urgency}>
+        <div className={styles.urgencyInner}>
+          <div>
+            <strong>Express Entry Draws Happen Every 2 Weeks</strong>
+            <p>Every re-test is another $300 + months of delay. Is your CLB ready?</p>
+          </div>
+          <Link href="/onboarding" className={styles.urgencyBtn}>
+            Start Now <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>FAQ</h2>
+        <div className={styles.faqList}>
+          {faqs.map((f, i) => (
+            <div key={i} className={`${styles.faqItem} ${openFaq === i ? styles.faqOpen : ''}`} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+              <div className={styles.faqQ}>
+                <span>{f.q}</span>
+                <ChevronDown size={18} className={styles.faqChev} />
+              </div>
+              <div className={styles.faqA}><p>{f.a}</p></div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Final CTA ─── */}
+      <section className={styles.finalCta}>
+        <h2>What Costs More — CA$8/week or Another $300 Re-test?</h2>
+        <p>One failed CELPIP test costs $300 + months of immigration delay. AI feedback helps you pass the first time.</p>
+        <Link href="/onboarding" className={styles.ctaMain}>
+          Start Practicing Free <ArrowRight size={18} />
+        </Link>
+      </section>
+    </main>
+  );
+}

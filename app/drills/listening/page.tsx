@@ -57,7 +57,7 @@ export default function ListeningDrillsPage() {
             <span style={{ fontSize: '1.6rem' }}>🎧</span> Listening Drills
           </h1>
           <p style={{ color: T.textMuted, fontSize: '0.8rem', margin: 0 }}>
-            {totalExercises} exercises · All 6 listening tasks
+            ∞ exercises · All 6 listening tasks
           </p>
         </div>
       </div>
@@ -176,7 +176,7 @@ export default function ListeningDrillsPage() {
                   <span style={{
                     fontSize: '0.65rem', background: `${color}1F`, color,
                     padding: '0.2rem 0.5rem', borderRadius: 6, fontWeight: 600,
-                  }}>{unit.exercises?.length || 0} exercises</span>
+                  }}>∞ exercises</span>
                 </div>
                 <ChevronRight size={22} color={color} style={{ flexShrink: 0 }} />
               </div>

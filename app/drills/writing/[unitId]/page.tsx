@@ -5,6 +5,7 @@ import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ArrowRight, BookOpen, Sparkles, Trophy } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import ExerciseOfferPopup from '@/components/ExerciseOfferPopup';
 
 const T = {
   bg: '#1b1f2a',
@@ -55,6 +56,7 @@ export default function UnitPage() {
   const ttsRef = useRef<HTMLAudioElement | null>(null);
   
   const [phase, setPhase] = useState<'exercise' | 'result'>('exercise');
+  const [showOffer, setShowOffer] = useState(false);
   const [exerciseIdx, setExerciseIdx] = useState(0);
   const [freeUsed, setFreeUsed] = useState(0);
   const [freeLimit, setFreeLimit] = useState(10);
@@ -163,8 +165,10 @@ export default function UnitPage() {
     fetch('/api/log-activity', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ type: 'speaking', count: 1 }),
+      body: JSON.stringify({ type: 'writing', count: 1 }),
     }).catch(() => {});
+    // Trigger feedback popup after 2 exercises
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
     // Increment daily usage for free tier
     if (!isPro) {
       fetch('/api/daily-usage', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ category: 'drills' }) })
@@ -253,6 +257,10 @@ export default function UnitPage() {
         body: JSON.stringify({ drillType: 'writing', levelId: unitId, score, total: unit.exercises.length, completed: true }),
       }).catch(() => {});
       setPhase('result');
+      if (!isPro) {
+        const shown = sessionStorage.getItem('offerShown');
+        if (!shown) { setTimeout(() => setShowOffer(true), 1500); sessionStorage.setItem('offerShown', '1'); }
+      }
       return;
     }
     setAnimateIn(false);
@@ -301,6 +309,7 @@ export default function UnitPage() {
 
     return (
       <div style={{ minHeight: '100vh', background: T.bg, color: T.text, padding: '2rem 1rem', textAlign: 'center' }}>
+        <ExerciseOfferPopup show={showOffer} onClose={() => setShowOffer(false)} />
         <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>{emoji}</div>
         <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>{msg}</h1>
         <p style={{ color: T.textMuted, fontSize: '1rem', marginBottom: '2rem' }}>
@@ -484,7 +493,7 @@ export default function UnitPage() {
           }} />
         </div>
         <span style={{ color: T.textMuted, fontSize: '0.8rem', flexShrink: 0 }}>
-          {exerciseIdx + 1}/{unit.exercises.length}
+          {exerciseIdx + 1}/∞
         </span>
       </div>
 

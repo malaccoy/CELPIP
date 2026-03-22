@@ -11,25 +11,29 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 // ─── Edge TTS helpers (free, replaces OpenAI TTS) ────────────
 
 const VOICE_MAP: Record<string, string> = {
-  'man': 'en-US-GuyNeural',
-  'woman': 'en-US-JennyNeural',
-  'host': 'en-US-AriaNeural',
-  'narrator': 'en-US-AriaNeural',
-  'speaker 1': 'en-US-GuyNeural',
-  'speaker 2': 'en-US-JennyNeural',
-  'speaker 3': 'en-CA-LiamNeural',
-  'interviewer': 'en-US-AriaNeural',
-  'interviewee': 'en-US-GuyNeural',
-  'caller': 'en-US-JennyNeural',
-  'agent': 'en-US-GuyNeural',
-  'student': 'en-US-JennyNeural',
-  'teacher': 'en-US-GuyNeural',
-  'manager': 'en-US-GuyNeural',
-  'employee': 'en-US-JennyNeural',
-  'colleague': 'en-CA-LiamNeural',
+  'man': 'en-US-AndrewNeural',
+  'woman': 'en-US-AvaNeural',
+  'host': 'en-US-GuyNeural',
+  'narrator': 'en-US-GuyNeural',
+  'speaker 1': 'en-US-AndrewNeural',
+  'speaker 2': 'en-US-AvaNeural',
+  'speaker 3': 'en-US-GuyNeural',
+  'interviewer': 'en-US-GuyNeural',
+  'interviewee': 'en-US-AndrewNeural',
+  'caller': 'en-US-AvaNeural',
+  'agent': 'en-US-AndrewNeural',
+  'student': 'en-US-AvaNeural',
+  'teacher': 'en-US-AndrewNeural',
+  'manager': 'en-US-AndrewNeural',
+  'employee': 'en-US-AvaNeural',
+  'colleague': 'en-US-GuyNeural',
+  'receptionist': 'en-US-AvaNeural',
+  'customer': 'en-US-AndrewNeural',
+  'friend': 'en-US-AvaNeural',
+  'coworker': 'en-US-GuyNeural',
 };
 
-const DEFAULT_VOICES = ['en-US-GuyNeural', 'en-US-JennyNeural', 'en-CA-LiamNeural'];
+const DEFAULT_VOICES = ['en-US-AndrewNeural', 'en-US-AvaNeural', 'en-US-GuyNeural'];
 
 function generateSingleTTS(text: string, voice: string, outPath: string): Promise<boolean> {
   return new Promise((resolve) => {
@@ -54,6 +58,29 @@ async function generateTTS(text: string): Promise<Buffer | null> {
   let match;
   while ((match = speakerRegex.exec(text)) !== null) {
     speakers.add(match[1].trim().toLowerCase());
+  }
+
+  // If no speaker labels found but text looks like a dialogue (has quotes or multiple paragraphs), 
+  // try to add labels automatically by alternating speakers
+  if (speakers.size < 2 && text.includes('"') && text.split('\n').filter(l => l.trim()).length >= 4) {
+    // Likely a dialogue without labels — add alternating labels
+    const lines = text.split('\n').filter(l => l.trim());
+    const relabeled: string[] = [];
+    let speakerIdx = 0;
+    const autoSpeakers = ['Man', 'Woman', 'Host'];
+    for (const line of lines) {
+      if (line.trim()) {
+        relabeled.push(`${autoSpeakers[speakerIdx % 3]}: ${line.trim()}`);
+        speakerIdx++;
+      }
+    }
+    text = relabeled.join('\n');
+    // Re-detect speakers
+    speakers.clear();
+    const reCheck = /^([A-Za-z\s]+\d?):\s*/gm;
+    while ((match = reCheck.exec(text)) !== null) {
+      speakers.add(match[1].trim().toLowerCase());
+    }
   }
 
   // If multiple speakers detected, generate multi-voice audio
@@ -249,7 +276,7 @@ PARTS:
 REQUIREMENTS:
 - Set in Canada (Canadian cities, culture, institutions)
 - Natural, realistic dialogue (include "um", "well", "right" occasionally for Parts 1-2)
-- Label speakers clearly (Man:, Woman:, Host:, etc.)
+- CRITICAL FOR AUDIO: EVERY line of dialogue MUST start with the speaker's role label followed by a colon (e.g., "Man: ...", "Woman: ...", "Host: ...", "Interviewer: ...", "Manager: ..."). This is REQUIRED for multi-voice audio generation. NEVER write dialogue without speaker labels. Even monologues must have a label (e.g., "Narrator: ..." or "Speaker: ...").
 - Multiple choice questions with 4 options each
 - Questions test: main idea, specific details, inference, speaker attitude
 ${avoid ? `- AVOID these topics (already used): ${avoid}` : ''}
@@ -334,6 +361,19 @@ export async function POST(request: NextRequest) {
     const { checkRateLimit, rateLimitResponse } = await import('@/lib/rate-limit');
     const { allowed } = await checkRateLimit(userId, 'ai-practice', isPro);
     if (!allowed) return rateLimitResponse() as unknown as NextResponse;
+
+    // Server-side daily usage check for free users
+    if (!isPro) {
+      const { PrismaClient } = await import('@prisma/client');
+      const prisma = new PrismaClient();
+      const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Vancouver' });
+      const usage = await prisma.dailyUsage.findUnique({
+        where: { userId_date_category: { userId, date: today, category: 'practice' } },
+      });
+      if (usage && usage.count >= 3) {
+        return NextResponse.json({ error: 'Daily free limit reached. Upgrade to Pro for unlimited access.' }, { status: 403 });
+      }
+    }
 
     const body: GenerateRequest = await request.json();
     const { section, partOrTask, difficulty, previousTopics } = body;

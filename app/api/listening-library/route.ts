@@ -29,7 +29,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Library not available for this part yet' }, { status: 404 });
     }
     
-    let exercises = JSON.parse(readFileSync(libPath, 'utf8'));
+    const raw = JSON.parse(readFileSync(libPath, 'utf8'));
+    
+    // Library can be array or object with numeric keys — normalize to array
+    let exercises: any[] = Array.isArray(raw) ? raw : Object.values(raw);
     
     // Filter by difficulty if provided
     if (difficulty) {

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { getUnsubscribeToken, isUnsubscribed, getUnsubscribeFooter } from '@/lib/email-preferences';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
@@ -10,6 +11,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Email required' }, { status: 400 });
     }
 
+    // Check unsubscribe
+    if (await isUnsubscribed(email)) {
+      return NextResponse.json({ success: true, emailSent: false, reason: 'unsubscribed' });
+    }
+
+    const unsubToken = await getUnsubscribeToken(email);
     const displayName = name || email.split('@')[0];
 
     const res = await fetch('https://api.resend.com/emails', {
@@ -39,6 +46,7 @@ export async function POST(request: Request) {
               <a href="https://celpipaicoach.com/dashboard" style="display: inline-block; background: #ff3b3b; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">Start Practicing Now →</a>
             </div>
             <p style="font-size: 14px; color: #888; margin-top: 30px;">Questions? Just reply to this email.<br>— CELPIP AI Coach Team</p>
+            ${getUnsubscribeFooter(unsubToken)}
           </div>
         `,
       }),

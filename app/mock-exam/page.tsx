@@ -46,6 +46,7 @@ interface SectionResult {
   score: number;
   total: number;
   answers?: Record<number, number>;
+  allQuestions?: ExamQuestion[];
   writingText?: string;
   writingPrompt?: string;
   timeTaken: number;
@@ -352,6 +353,7 @@ export default function AIMockExamPage() {
       score,
       total,
       answers: { ...answers },
+      allQuestions: clipQuestions.length > 0 ? clipQuestions.flat() : (sectionData?.questions || []),
       writingText: part.section === 'writing' ? writingText : undefined,
       writingPrompt: part.section === 'writing' ? (sectionData?.scenario || '') : undefined,
       timeTaken,
@@ -832,17 +834,17 @@ export default function AIMockExamPage() {
           </p>
 
           {/* Show correct answers for reading/listening */}
-          {sectionData?.questions && (
+          {lastResult.allQuestions && lastResult.allQuestions.length > 0 && (
             <div className={styles.reviewAnswers}>
-              {sectionData.questions.map(q => {
+              {lastResult.allQuestions.map((q, qi) => {
                 const userAnswer = lastResult.answers?.[q.id];
                 const isCorrect = userAnswer === q.correct;
                 return (
                   <div key={q.id} className={`${styles.reviewAnswer} ${isCorrect ? styles.reviewCorrect : styles.reviewWrong}`}>
-                    <span className={styles.reviewQNum}>{q.id}.</span>
+                    <span className={styles.reviewQNum}>{qi + 1}.</span>
                     <span className={styles.reviewQText}>{q.question}</span>
                     <span className={styles.reviewQResult}>
-                      {isCorrect ? '✓' : `✗ (${['A','B','C','D'][q.correct]})`}
+                      {userAnswer === undefined ? '✗ (skipped)' : isCorrect ? '✓' : `✗ (${['A','B','C','D'][q.correct]})`}
                     </span>
                   </div>
                 );

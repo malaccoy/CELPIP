@@ -433,7 +433,8 @@ export default function AIPracticePage() {
           setCooldown(3);
           return;
         }
-        // If library not available, fall through to AI generation
+        // Library-only mode: no AI fallback
+        throw new Error('No exercises available for this part and difficulty. Try another option.');
       }
 
       // Speaking: use pre-generated prompt library
@@ -498,7 +499,8 @@ export default function AIPracticePage() {
           setCooldown(3);
           return;
         }
-        // If library not available, fall through to AI generation
+        // Library-only mode: no AI fallback
+        throw new Error('No exercises available for this part and difficulty. Try another option.');
       }
 
       const res = await fetch('/api/ai-practice', {
@@ -615,11 +617,14 @@ export default function AIPracticePage() {
       const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
       localStorage.setItem('exercise-count', cnt.toString());
       // Log activity for leaderboard (1 per exercise, not per question)
-      fetch('/api/log-activity', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: section, count: 1 }),
-      }).catch(() => {});
+      // Speaking logs in the feedback handler (line ~223), skip here to avoid double-count
+      if (section !== 'speaking') {
+        fetch('/api/log-activity', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: section, count: 1 }),
+        }).catch(() => {});
+      }
     }
   };
 
@@ -1132,7 +1137,7 @@ export default function AIPracticePage() {
                       onClick={() => {
                         setCurrentClipIdx(prev => prev + 1);
                         setSubmitted(false);
-                        setAnswers({});
+                        // Keep answers from previous clips — don't clear
                         setListeningPhase('listen');
                         setHasListened(false);
                         setIsAudioPlaying(false);

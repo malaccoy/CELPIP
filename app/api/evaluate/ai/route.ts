@@ -21,7 +21,7 @@ interface GrammarError {
   original: string;
   correction: string;
   explanation: string;
-  type: 'grammar' | 'spelling' | 'punctuation' | 'style' | 'vocabulary';
+  type: 'grammar' | 'spelling' | 'punctuation' | 'style' | 'vocabulary' | 'content';
 }
 
 interface AIEvaluationResult {
@@ -39,57 +39,58 @@ interface AIEvaluationResult {
   feedback: string;
 }
 
-const TASK1_SYSTEM_PROMPT = `You are an expert CELPIP Writing Task 1 evaluator. Task 1 requires writing a formal or semi-formal email (150-200 words).
+const TASK1_SYSTEM_PROMPT = `You are a STRICT CELPIP Writing Task 1 evaluator. Task 1 = formal/semi-formal email, 150-200 words.
 
-EVALUATION CRITERIA (CELPIP Official):
-1. Content/Coherence (0-12): Does the email address all required points? Is it logical and well-organized?
-2. Vocabulary (0-12): Is vocabulary varied and appropriate for the context?
-3. Grammar (0-12): Are grammar and sentence structures accurate and varied?
-4. Structure (0-12): Does it follow proper email format with all 5 mandatory elements?
+SCORING RULES (be harsh but fair):
+1. Content (0-12): Does it address ALL points from the prompt? Incomplete = max 5. Placeholders like [reason], [Name], ... = max 3.
+2. Vocabulary (0-12): Varied, context-appropriate? Repetitive/basic = max 6. Non-English words = -2 per occurrence.
+3. Grammar (0-12): Accurate structures? Each error = -0.5. Fragments/incomplete sentences = max 4.
+4. Structure (0-12): Proper email format with 5 elements? Missing elements = -2 each.
 
-THE 5 MANDATORY ELEMENTS:
-1. Opening: "Dear [Name/Title],"
-2. Purpose: "I am writing to..." (first or second sentence)
-3. Body: Address all points with connectors (First, Second, Third, Finally)
-4. CTA (Call-to-Action): A request or suggestion
-5. Closing: Polite line + "Regards," + Name
+THE 5 MANDATORY ELEMENTS: Opening greeting, Purpose statement, Body paragraphs, CTA, Closing + sign-off.
 
-IMPORTANT RULES:
-- NO contractions in formal emails (don't → do not)
-- Consistent formal tone throughout
-- 150-200 words is ideal
-- Each point from the prompt must be addressed
+CRITICAL — FLAG ALL OF THESE AS ERRORS:
+- Placeholders: [reason], [Name], [Point], ..., etc. → type "content" (these are NOT real writing)
+- Non-English text (any language) → type "vocabulary"  
+- Incomplete sentences ("Secondly, ...") → type "content"
+- Template text not filled in → type "content"
+- Missing contractions fix (don't → do not in formal) → type "style"
+- Word count issues: <100 words = max score 4, <150 = max score 7
+- Gibberish or random text = max score 2
 
-You must respond in valid JSON format only.`;
+ERROR TYPES to use: "grammar", "spelling", "punctuation", "style", "vocabulary", "content"
 
-const TASK2_SYSTEM_PROMPT = `You are an expert CELPIP Writing Task 2 evaluator. Task 2 requires responding to a survey/opinion question (150-200 words).
-
-EVALUATION CRITERIA (CELPIP Official):
-1. Content/Coherence (0-12): Is the opinion clear? Are arguments logical and well-developed?
-2. Vocabulary (0-12): Is vocabulary varied and appropriate?
-3. Grammar (0-12): Are grammar and sentence structures accurate and varied?
-4. Structure (0-12): Does it follow the PRE structure for arguments?
-
-THE PRE STRUCTURE (for each argument):
-- P (Point): State your argument clearly with a connector (First, Second, Finally)
-- R (Reason): Explain WHY this point is valid ("This is because...")
-- E (Example): Give a specific example ("For example,...")
-
-REQUIRED STRUCTURE:
-1. Introduction: Clear opinion statement ("In my opinion, I believe...")
-2. Body: 2-3 PRE paragraphs
-3. Conclusion: Restate opinion + summarize points ("In conclusion,...")
-
-CRITICAL RULES:
-- NEVER use "Option A" or "Option B" - refer to the actual topic
-- Take a CLEAR position - no fence-sitting
-- Avoid rhetorical questions
-- NO contractions
-- Can invent facts/statistics - CELPIP doesn't verify
+Be thorough — find EVERY error, not just 2-3. A text with placeholders and incomplete paragraphs should have 5-10+ errors flagged.
 
 You must respond in valid JSON format only.`;
 
-const EVALUATION_USER_PROMPT = `Evaluate this CELPIP {TASK} writing submission:
+const TASK2_SYSTEM_PROMPT = `You are a STRICT CELPIP Writing Task 2 evaluator. Task 2 = survey/opinion response, 150-200 words.
+
+SCORING RULES (be harsh but fair):
+1. Content (0-12): Clear opinion? Developed arguments? Vague/incomplete = max 5. Placeholders = max 3.
+2. Vocabulary (0-12): Varied, appropriate? Basic/repetitive = max 6. Non-English = -2 per occurrence.
+3. Grammar (0-12): Accurate? Each error = -0.5. Fragments = max 4.
+4. Structure (0-12): PRE structure (Point-Reason-Example) for each argument? Missing PRE parts = -2 each.
+
+PRE STRUCTURE per argument:
+- P: Clear point with connector (First, Second, Finally)
+- R: Reason ("This is because...")
+- E: Specific example ("For example,...")
+
+CRITICAL — FLAG ALL OF THESE:
+- Placeholders: [Point], [Reason], [Example], ... → type "content"
+- Non-English text → type "vocabulary"
+- Incomplete sentences → type "content"
+- Template text not filled in → type "content"
+- "Option A"/"Option B" instead of actual topic → type "style"
+- Word count: <100 = max 4, <150 = max 7
+- Gibberish = max 2
+
+ERROR TYPES: "grammar", "spelling", "punctuation", "style", "vocabulary", "content"
+
+Be thorough — flag EVERY issue. Respond in valid JSON only.`;
+
+const EVALUATION_USER_PROMPT = `Evaluate this CELPIP {TASK} writing submission. Be a STRICT teacher.
 
 {PROMPT_CONTEXT}
 
@@ -98,30 +99,32 @@ STUDENT'S TEXT:
 {TEXT}
 """
 
-Provide your evaluation as a JSON object with this exact structure:
-{
-  "overallScore": <number 4-12>,
-  "scores": {
-    "content": <number 4-12>,
-    "vocabulary": <number 4-12>,
-    "grammar": <number 4-12>,
-    "structure": <number 4-12>
-  },
-  "grammarErrors": [
-    {
-      "original": "<exact text with error>",
-      "correction": "<corrected text>",
-      "explanation": "<brief explanation in Portuguese>",
-      "type": "<grammar|spelling|punctuation|style|vocabulary>"
-    }
-  ],
-  "strengths": ["<strength 1 in Portuguese>", "<strength 2>", ...],
-  "improvements": ["<specific improvement suggestion 1 in Portuguese>", ...],
-  "correctedText": "<full text with all corrections applied>",
-  "feedback": "<2-3 paragraph personalized feedback in Portuguese, like a teacher would give>"
-}
+Word count: {WORD_COUNT}
 
-Be encouraging but honest. Focus on actionable improvements. All text feedback should be in Brazilian Portuguese.`;
+MANDATORY SCORING RULES — YOU MUST FOLLOW THESE:
+1. Count placeholders: [reason], [Name], [My Name], "..." incomplete sentences, template fragments. Each placeholder/incomplete sentence = content error.
+2. Count non-English words/phrases. Each = vocabulary error.
+3. If text has ANY placeholders or "[...]" brackets: ALL four scores MUST be ≤ 5. No exceptions.
+4. If text has incomplete sentences (ending in "..."): content and structure scores MUST be ≤ 4.
+5. If word count < 80: ALL scores MUST be ≤ 4. If < 50: ALL scores MUST be ≤ 3.
+6. If text mixes languages: vocabulary score MUST be ≤ 4.
+7. Vocabulary score measures ACTUAL vocabulary used — template words like "I am writing to [reason]" show ZERO real vocabulary. Score what the student ACTUALLY wrote, not the template.
+8. overallScore = floor(average of 4 scores).
+
+EXAMPLE: A text like "Dear Sir, I am writing to [reason]. My name is [Name]... Secondly, ... Regards, [My Name]" should score: content 2, vocabulary 2, grammar 3, structure 3, overall 2. It has 5+ placeholders, 3+ incomplete sentences, <80 real words, and shows almost no actual writing ability.
+
+Find EVERY error (expect 5-20 for imperfect texts). Types: grammar, spelling, punctuation, style, vocabulary, content.
+
+JSON response:
+{
+  "overallScore": <1-12>,
+  "scores": { "content": <1-12>, "vocabulary": <1-12>, "grammar": <1-12>, "structure": <1-12> },
+  "grammarErrors": [{ "original": "<exact text>", "correction": "<fix>", "explanation": "<why>", "type": "<type>" }],
+  "strengths": ["..."],
+  "improvements": ["..."],
+  "correctedText": "<full corrected text with placeholders replaced and incomplete parts expanded into proper sentences>",
+  "feedback": "<2-3 paragraphs honest English feedback>"
+}`;
 
 export async function POST(request: NextRequest) {
   try {
@@ -181,20 +184,22 @@ export async function POST(request: NextRequest) {
     const systemPrompt = body.task === 'task1' ? TASK1_SYSTEM_PROMPT : TASK2_SYSTEM_PROMPT;
     
     // Build user prompt
+    const wordCount = body.text.trim().split(/\s+/).filter(Boolean).length;
     const userPrompt = EVALUATION_USER_PROMPT
       .replace('{TASK}', body.task === 'task1' ? 'Task 1 (Email)' : 'Task 2 (Survey Response)')
       .replace('{PROMPT_CONTEXT}', promptContext || '(No original prompt provided)')
-      .replace('{TEXT}', body.text);
+      .replace('{TEXT}', body.text)
+      .replace('{WORD_COUNT}', String(wordCount));
 
     // Call OpenAI
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-4o',
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt }
       ],
-      temperature: 0.3,
-      max_tokens: 2000,
+      temperature: 0.1,
+      max_tokens: 3000,
       response_format: { type: 'json_object' }
     });
 

@@ -30,7 +30,7 @@ model User {
   writingAnalyses WritingAnalysis[]
   activityLogs    ActivityLog[]
   dailyUsages     DailyUsage[]
-  userFeedback    UserFeedback?
+  userFeedback    UserFeedback[]
   
   @@map("users")
 }
@@ -187,6 +187,7 @@ model UserOnboarding {
   source    String?  // 'tiktok' | 'instagram' | 'facebook' | 'youtube' | 'google' | 'friend' | 'reddit' | 'other'
   focusSkills String? // comma-separated: 'listening,reading,writing,speaking'
   dailyMinutes String? // '5' | '15' | '30' | '60'
+  canadaStatus String? // 'in-canada' | 'moving-soon' | 'planning' | 'exploring'
   assessmentScores Json? // { reading: number, listening: number, writing: number, speaking: number }
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -353,8 +354,11 @@ model SkillScore {
 
 model UserFeedback {
   id        String   @id @default(uuid())
-  userId    String   @unique
-  challenge String
+  userId    String   
+  rating    Int?
+  category  String?  @default("general")
+  page      String?
+  challenge String?
   suggestion String?
   createdAt DateTime @default(now())
 
@@ -376,4 +380,27 @@ model StreakData {
   updatedAt       DateTime @updatedAt
 
   @@map("streak_data")
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  title     String
+  message   String
+  type      String   @default("info")  // info, update, promo, alert
+  link      String?
+  createdAt DateTime @default(now())
+  reads     NotificationRead[]
+
+  @@map("notifications")
+}
+
+model NotificationRead {
+  id             String       @id @default(cuid())
+  userId         String
+  notificationId String
+  readAt         DateTime     @default(now())
+  notification   Notification @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, notificationId])
+  @@map("notification_reads")
 }

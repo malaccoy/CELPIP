@@ -116,8 +116,11 @@ export default function ReadingUnitPage() {
 
     fetch('/api/log-activity', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'drill_exercise', details: 'reading' }),
+      body: JSON.stringify({ type: 'reading', count: 1 }),
     }).catch(() => {});
+
+    // Trigger feedback popup after 2 exercises
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
 
     if (!isPro) {
       fetch('/api/daily-usage', {
@@ -196,7 +199,7 @@ export default function ReadingUnitPage() {
         <div style={{ flex: 1, height: 8, background: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' }}>
           <div style={{ width: `${progress}%`, height: '100%', borderRadius: 4, background: `linear-gradient(90deg, ${T.teal}, ${T.blue})`, transition: 'width 0.3s' }} />
         </div>
-        <span style={{ fontSize: '0.75rem', color: T.textMuted, fontWeight: 600, flexShrink: 0 }}>{exerciseIdx + 1}/{unit.exercises.length}</span>
+        <span style={{ fontSize: '0.75rem', color: T.textMuted, fontWeight: 600, flexShrink: 0 }}>{exerciseIdx + 1}/∞</span>
       </div>
 
       {/* Score bar */}

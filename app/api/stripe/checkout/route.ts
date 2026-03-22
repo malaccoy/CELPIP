@@ -62,15 +62,27 @@ export async function POST(request: NextRequest) {
     // Create Checkout Session
     const origin = request.headers.get('origin') || 'https://celpipaicoach.com';
     
-    // If promoCode provided, look up the promotion code in Stripe
-    let discounts: { promotion_code: string }[] | undefined;
+    // If promoCode provided, apply as coupon or promotion code
+    let discounts: { coupon?: string; promotion_code?: string }[] | undefined;
     if (promoCode && plan !== 'annual') {
       try {
+        // First try as promotion code
         const promoCodes = await stripe.promotionCodes.list({ code: promoCode, active: true, limit: 1 });
         if (promoCodes.data.length > 0) {
           discounts = [{ promotion_code: promoCodes.data[0].id }];
+        } else {
+          // Fallback: try as coupon ID directly
+          try {
+            await stripe.coupons.retrieve(promoCode);
+            discounts = [{ coupon: promoCode }];
+          } catch {}
         }
       } catch (e) {
+        // Final fallback: try as coupon
+        try {
+          await stripe.coupons.retrieve(promoCode);
+          discounts = [{ coupon: promoCode }];
+        } catch {}
         console.error('Promo code lookup failed:', e);
       }
     }

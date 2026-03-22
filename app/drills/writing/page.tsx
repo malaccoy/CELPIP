@@ -58,7 +58,7 @@ export default function WritingDrillsPage() {
             <span style={{ fontSize: '1.6rem' }}>✉️</span> Writing Drills
           </h1>
           <p style={{ color: T.textMuted, fontSize: '0.8rem', margin: 0 }}>
-            {totalExercises} exercises · Email & Survey mastery
+            ∞ exercises · Email & Survey mastery
           </p>
         </div>
       </div>
@@ -179,7 +179,7 @@ export default function WritingDrillsPage() {
                   <span style={{
                     fontSize: '0.65rem', background: `${color}1F`, color,
                     padding: '0.2rem 0.5rem', borderRadius: 6, fontWeight: 600,
-                  }}>{unitExercises} exercises</span>
+                  }}>∞ exercises</span>
                 </div>
                 <ChevronRight size={22} color={color} style={{ flexShrink: 0 }} />
               </div>

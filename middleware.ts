@@ -25,6 +25,12 @@ const publicPrefixes = [
   '/tools',
   '/api/welcome-email',
   '/api/stripe',
+  '/api/notifications',
+  '/api/battle-transcribe',
+  '/api/battle-stats',
+  '/api/unsubscribe',
+  '/unsubscribe',
+  '/battle',
 ]
 
 // Routes that always need auth
@@ -76,6 +82,11 @@ export async function middleware(request: NextRequest) {
   // IMPORTANT: Always call getUser() to refresh the session token
   // This is what keeps users logged in across requests
   const { data: { user } } = await supabase.auth.getUser()
+
+  // Redirect /register → /auth/register (convenience alias)
+  if (pathname === '/register') {
+    return NextResponse.redirect(new URL('/auth/register', request.url))
+  }
 
   // Public routes — just refresh session and pass through
   if (isPublicRoute(pathname)) {

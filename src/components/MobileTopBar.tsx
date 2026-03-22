@@ -68,9 +68,9 @@ export default function MobileTopBar() {
       }}>
         <div
           onClick={() => router.push('/dashboard')}
-          style={{ width: 44, height: 44, cursor: 'pointer', flexShrink: 0 }}
+          style={{ width: 52, height: 52, cursor: 'pointer', flexShrink: 0 }}
         >
-          <img src="/logo-leaf.png" alt="CELPIP" width={44} height={44}
+          <img src="/logo-leaf.png" alt="CELPIP" width={52} height={52}
             style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
         </div>
 

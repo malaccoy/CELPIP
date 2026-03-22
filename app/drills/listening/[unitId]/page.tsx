@@ -5,6 +5,7 @@ import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ArrowRight, Sparkles, Trophy, Headphones, Volume2, Loader } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import ExerciseOfferPopup from '@/components/ExerciseOfferPopup';
 
 const T = {
   bg: '#1b1f2a',
@@ -29,6 +30,7 @@ interface AudioLine {
 interface Exercise {
   type: 'listenChoose';
   audioLines: AudioLine[];
+  audioFile?: string;
   question: string;
   options: string[];
   correct: number;
@@ -53,6 +55,7 @@ export default function ListeningUnitPage() {
 
   const [unit, setUnit] = useState<Unit | null>(null);
   const [phase, setPhase] = useState<'listen' | 'answer' | 'result'>('listen');
+  const [showOffer, setShowOffer] = useState(false);
   const [exerciseIdx, setExerciseIdx] = useState(0);
   const [freeUsed, setFreeUsed] = useState(0);
   const [freeLimit, setFreeLimit] = useState(10);
@@ -140,13 +143,46 @@ export default function ListeningUnitPage() {
     };
   }, []);
 
-  // Play audio lines sequentially
+  // Play audio — use pre-generated MP3 if available, fallback to TTS
   const playAudio = useCallback(() => {
-    if (!exercise?.audioLines || audioPlaying) return;
+    if (audioPlaying) return;
     
     // Stop any current audio
     if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
     
+    setAudioPlaying(true);
+    setAudioLoading(true);
+
+    // Pre-generated MP3 (preferred — no API calls)
+    if (exercise?.audioFile) {
+      const audio = new Audio(exercise.audioFile + '?v=' + Date.now());
+      audioRef.current = audio;
+      audio.oncanplaythrough = () => setAudioLoading(false);
+      audio.onended = () => {
+        setAudioPlaying(false);
+        setAudioPlayed(true);
+        setPhase('answer');
+      };
+      audio.onerror = () => {
+        // Fallback to TTS if MP3 fails
+        setAudioPlaying(false);
+        setAudioLoading(false);
+        playAudioTTS();
+      };
+      audio.play().catch(() => {
+        setAudioPlaying(false);
+        setAudioLoading(false);
+      });
+      return;
+    }
+
+    // Fallback: TTS line-by-line
+    playAudioTTS();
+  }, [exercise, audioPlaying]);
+
+  // TTS fallback (line-by-line)
+  const playAudioTTS = useCallback(() => {
+    if (!exercise?.audioLines) return;
     setAudioPlaying(true);
     setAudioLoading(true);
     audioQueueRef.current = [...exercise.audioLines];
@@ -169,7 +205,6 @@ export default function ListeningUnitPage() {
       audio.oncanplaythrough = () => setAudioLoading(false);
       audio.onended = () => {
         audioIdxRef.current++;
-        // Small pause between speakers
         setTimeout(playNext, 400);
       };
       audio.onerror = () => {
@@ -183,7 +218,7 @@ export default function ListeningUnitPage() {
     };
 
     playNext();
-  }, [exercise, audioPlaying]);
+  }, [exercise]);
 
   // Handle answer
   const handleAnswer = useCallback((shuffledIdx: number) => {
@@ -202,8 +237,11 @@ export default function ListeningUnitPage() {
     fetch('/api/log-activity', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'drill_exercise', details: 'listening' }),
+      body: JSON.stringify({ type: 'listening', count: 1 }),
     }).catch(() => {});
+
+    // Trigger feedback popup after 2 exercises
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
 
     // Increment daily usage for free users
     if (!isPro) {
@@ -234,6 +272,10 @@ export default function ListeningUnitPage() {
 
     if (exerciseIdx + 1 >= unit.exercises.length) {
       setPhase('result');
+      if (!isPro) {
+        const shown = sessionStorage.getItem('offerShown');
+        if (!shown) { setTimeout(() => setShowOffer(true), 1500); sessionStorage.setItem('offerShown', '1'); }
+      }
       return;
     }
 
@@ -302,6 +344,7 @@ export default function ListeningUnitPage() {
         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         padding: '2rem', textAlign: 'center', maxWidth: 600, margin: '0 auto',
       }}>
+        <ExerciseOfferPopup show={showOffer} onClose={() => setShowOffer(false)} />
         <Trophy size={64} color={T.gold} style={{ marginBottom: '1rem' }} />
         <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>Unit Complete!</h2>
         <p style={{ color: T.textMuted, marginBottom: '1.5rem' }}>
@@ -361,7 +404,7 @@ export default function ListeningUnitPage() {
           }} />
         </div>
         <span style={{ fontSize: '0.75rem', color: T.textMuted, fontWeight: 600, flexShrink: 0 }}>
-          {exerciseIdx + 1}/{unit.exercises.length}
+          {exerciseIdx + 1}/∞
         </span>
       </div>
 

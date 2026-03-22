@@ -20,7 +20,7 @@ interface GrammarError {
   original: string;
   correction: string;
   explanation: string;
-  type: 'grammar' | 'spelling' | 'punctuation' | 'style' | 'vocabulary';
+  type: 'grammar' | 'spelling' | 'punctuation' | 'style' | 'vocabulary' | 'content';
 }
 
 interface AIEvaluationData {
@@ -77,15 +77,17 @@ function GrammarErrorCard({ error }: { error: GrammarError }) {
     spelling: '🔤',
     punctuation: '✏️',
     style: '🎨',
-    vocabulary: '📚'
+    vocabulary: '📚',
+    content: '⚠️'
   };
 
   const typeLabels: Record<string, string> = {
-    grammar: 'Gramática',
-    spelling: 'Ortografia',
-    punctuation: 'Pontuação',
-    style: 'Estilo',
-    vocabulary: 'Vocabulário'
+    grammar: 'Grammar',
+    spelling: 'Spelling',
+    punctuation: 'Punctuation',
+    style: 'Style',
+    vocabulary: 'Vocabulary',
+    content: 'Content'
   };
 
   return (
@@ -101,7 +103,7 @@ function GrammarErrorCard({ error }: { error: GrammarError }) {
           <span className={styles.wrongText}>{error.original}</span>
         </div>
         <div className={styles.errorCorrection}>
-          <span className={styles.label}>Correção:</span>
+          <span className={styles.label}>Correction:</span>
           <span className={styles.correctText}>{error.correction}</span>
         </div>
         <div className={styles.errorExplanation}>
@@ -134,11 +136,11 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
   };
 
   const getScoreLabel = (score: number) => {
-    if (score >= 11) return { label: 'Excelente!', emoji: '🏆' };
-    if (score >= 9) return { label: 'Muito Bom', emoji: '⭐' };
-    if (score >= 7) return { label: 'Bom', emoji: '👍' };
-    if (score >= 5) return { label: 'Regular', emoji: '📈' };
-    return { label: 'Precisa Melhorar', emoji: '💪' };
+    if (score >= 11) return { label: 'Excellent!', emoji: '🏆' };
+    if (score >= 9) return { label: 'Very Good', emoji: '⭐' };
+    if (score >= 7) return { label: 'Good', emoji: '👍' };
+    if (score >= 5) return { label: 'Fair', emoji: '📈' };
+    return { label: 'Needs Improvement', emoji: '💪' };
   };
 
   const { label: scoreLabel, emoji: scoreEmoji } = getScoreLabel(evaluation.overallScore);
@@ -159,10 +161,10 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
 
       {/* Detailed Scores */}
       <div className={styles.scoresGrid}>
-        <ScoreGauge score={evaluation.scores.content} label="Conteúdo" />
-        <ScoreGauge score={evaluation.scores.vocabulary} label="Vocabulário" />
-        <ScoreGauge score={evaluation.scores.grammar} label="Gramática" />
-        <ScoreGauge score={evaluation.scores.structure} label="Estrutura" />
+        <ScoreGauge score={evaluation.scores.content} label="Content" />
+        <ScoreGauge score={evaluation.scores.vocabulary} label="Vocabulary" />
+        <ScoreGauge score={evaluation.scores.grammar} label="Grammar" />
+        <ScoreGauge score={evaluation.scores.structure} label="Structure" />
       </div>
 
       {/* Grammar Errors Section */}
@@ -174,7 +176,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
           >
             <div className={styles.sectionTitle}>
               <AlertTriangle size={18} className={styles.iconWarning} />
-              <span>Correções Gramaticais ({evaluation.grammarErrors.length})</span>
+              <span>Corrections ({evaluation.grammarErrors.length})</span>
             </div>
             {expandedSections.grammar ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
           </button>
@@ -199,7 +201,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
           >
             <div className={styles.sectionTitle}>
               <Award size={18} className={styles.iconSuccess} />
-              <span>Pontos Fortes ({evaluation.strengths.length})</span>
+              <span>Strengths ({evaluation.strengths.length})</span>
             </div>
             {expandedSections.strengths ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
           </button>
@@ -227,7 +229,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
           >
             <div className={styles.sectionTitle}>
               <Lightbulb size={18} className={styles.iconTip} />
-              <span>Sugestões de Melhoria ({evaluation.improvements.length})</span>
+              <span>Suggestions ({evaluation.improvements.length})</span>
             </div>
             {expandedSections.improvements ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
           </button>
@@ -254,7 +256,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
         >
           <div className={styles.sectionTitle}>
             <BookOpen size={18} className={styles.iconPrimary} />
-            <span>Feedback do Professor</span>
+            <span>Teacher Feedback</span>
           </div>
           {expandedSections.feedback ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
         </button>
@@ -276,7 +278,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
           onClick={() => setShowCorrected(!showCorrected)}
         >
           <Sparkles size={18} />
-          <span>{showCorrected ? 'Esconder' : 'Ver'} Texto Corrigido</span>
+          <span>{showCorrected ? 'Hide Corrected Text' : 'Show Corrected Text'}</span>
           {showCorrected ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
         </button>
         
@@ -289,7 +291,7 @@ export default function AIEvaluationResult({ evaluation, originalText }: AIEvalu
                 onClick={() => copyToClipboard(evaluation.correctedText)}
               >
                 {copiedText ? <Check size={16} /> : <Copy size={16} />}
-                {copiedText ? 'Copiado!' : 'Copiar'}
+                {copiedText ? 'Copied!' : 'Copy'}
               </button>
             </div>
             <div className={styles.correctedText}>
@@ -307,7 +309,7 @@ export function AIEvaluationLoading() {
   return (
     <div className={styles.loadingContainer}>
       <Loader2 className={styles.loadingSpinner} size={48} />
-      <h3>Analisando seu texto...</h3>
+      <h3>Analyzing your writing...</h3>
       <p>The AI is evaluating grammar, structure, and content.</p>
       <p className={styles.loadingTip}>This may take a few seconds.</p>
     </div>

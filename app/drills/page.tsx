@@ -46,7 +46,7 @@ const courses = [
     subtitle: 'All 6 tasks · 7 Secret Steps',
     icon: '🎧',
     units: 2,
-    exercises: 90,
+    exercises: 418,
     gradient: 'linear-gradient(135deg, #3b82f6, #6366f1)',
     glow: 'rgba(59,130,246,0.25)',
     ready: true,
@@ -57,7 +57,7 @@ const courses = [
     subtitle: 'All 4 tasks · Paragraph technique',
     icon: '📖',
     units: 2,
-    exercises: 90,
+    exercises: 492,
     gradient: 'linear-gradient(135deg, #10b981, #14b8a6)',
     glow: 'rgba(16,185,129,0.25)',
     ready: true,
@@ -156,7 +156,7 @@ export default function CoursesPage() {
                 fontSize: '0.65rem', fontWeight: 700, padding: '0.2rem 0.6rem',
                 borderRadius: 8, position: 'relative',
               }}>
-                {course.exercises} exercises
+                ∞ exercises
               </div>
             ) : (
               <div style={{

@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.celpipaicoach.twa",
+    "sha256_cert_fingerprints": ["9C:F5:08:28:33:83:51:E3:10:C7:0A:80:48:0F:78:07:EF:90:C2:8D:6C:04:AF:C0:3F:00:A3:E3:0F:17:48:FD"]
+  }
+}]

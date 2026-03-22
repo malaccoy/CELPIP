@@ -14,9 +14,8 @@ import { recordPracticeForAchievements, ACHIEVEMENTS, Achievement, AchievementTo
 import { 
   Save, RefreshCw, Wand2, Trash2, Mail, FileText, PenTool, 
   MessageSquare, Clock, CheckCircle, AlertCircle, AlertTriangle, 
-  Info, ArrowRight, ArrowLeft, ChevronRight, Sparkles, Bot, SpellCheck
+  Info, ArrowRight, ArrowLeft, ChevronRight, Sparkles, Bot, SpellCheck, Mic
 } from 'lucide-react';
-import styles from '@/styles/TaskWizard.module.scss';
 import TaskHelpPanel from '@/components/TaskHelpPanel';
 import AIEvaluationResult, { AIEvaluationLoading } from '@/components/AIEvaluationResult';
 import AIFeedback from '@/components/AIFeedback';
@@ -25,7 +24,23 @@ import UpgradeTrigger from '@/components/UpgradeTrigger';
 import ExerciseGate, { markExerciseDone } from '@/components/ExerciseGate';
 import { analytics } from '@/lib/analytics';
 import { FREE_LIMITS } from '@/lib/free-limits';
+import VoiceDictation from '@/components/VoiceDictation';
 import { useContentAccess } from '@/hooks/useContentAccess';
+
+/* ── Theme ── */
+const T = {
+  bg: '#0a0e1a',
+  surface: '#151929',
+  surfaceHover: '#1c2137',
+  border: 'rgba(255,255,255,0.06)',
+  text: '#f1f5f9',
+  muted: '#94a3b8',
+  accent: '#ff3b3b',
+  purple: '#a78bfa',
+  blue: '#3b82f6',
+  green: '#22c55e',
+  yellow: '#f59e0b',
+};
 
 const INITIAL_STATE: Task1State = {
   promptText: '',
@@ -43,11 +58,27 @@ const INITIAL_STATE: Task1State = {
   content: ''
 };
 
+/** Strip "In your email/response: • point • point" from theme text */
+const themeText = (text?: string) => {
+  if (!text) return '';
+  const cut = text.search(/\s*(In your (email|response|letter|survey)[:\s]|•|\*)/i);
+  return cut > 0 ? text.slice(0, cut).trim() : text;
+};
+
 const STEPS = [
-  { id: 1, title: 'Context', icon: FileText, description: 'Understand the prompt' },
-  { id: 2, title: 'Planning', icon: PenTool, description: 'Organize your ideas' },
-  { id: 3, title: 'Writing', icon: Mail, description: 'Write your email' },
+  { id: 1, title: 'Context', icon: FileText, color: T.blue },
+  { id: 2, title: 'Plan', icon: PenTool, color: T.purple },
+  { id: 3, title: 'Write', icon: Mail, color: T.accent },
 ];
+
+/* ── Reusable styles ── */
+const card: React.CSSProperties = { background: T.surface, borderRadius: 16, padding: '20px', marginBottom: 14, border: `1px solid ${T.border}` };
+const label: React.CSSProperties = { fontSize: 13, fontWeight: 700, color: T.muted, marginBottom: 6, display: 'block', textTransform: 'uppercase', letterSpacing: '0.5px' };
+const input: React.CSSProperties = { width: '100%', background: 'rgba(255,255,255,0.04)', border: `1px solid ${T.border}`, borderRadius: 10, padding: '10px 14px', color: T.text, fontSize: 15, outline: 'none', boxSizing: 'border-box' };
+const textarea: React.CSSProperties = { ...input, minHeight: 80, resize: 'vertical', fontFamily: 'inherit', lineHeight: 1.5 };
+const chip: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '6px 14px', fontSize: 13, color: T.muted, cursor: 'pointer', transition: 'all 0.2s', whiteSpace: 'nowrap' };
+const btnPrimary: React.CSSProperties = { background: `linear-gradient(135deg, ${T.accent}, #cc2f2f)`, color: '#fff', border: 'none', borderRadius: 12, padding: '12px 28px', fontWeight: 700, fontSize: 15, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 };
+const btnSecondary: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', color: T.text, border: `1px solid ${T.border}`, borderRadius: 12, padding: '12px 28px', fontWeight: 600, fontSize: 15, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 };
 
 export default function Task1Page() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -65,10 +96,8 @@ export default function Task1Page() {
   const writingTextareaRef = useRef<HTMLTextAreaElement>(null);
   const { isPro } = useContentAccess();
 
-  // Get selected context
   const selectedContext = contexts.find(c => c.id === selectedContextId);
 
-  // Load contexts from JSON
   useEffect(() => {
     analytics.exerciseStart('writing', 'task-1');
     fetch('/content/contexts.json')
@@ -76,8 +105,6 @@ export default function Task1Page() {
       .then(data => {
         if (data.task1) {
           setContexts(data.task1);
-
-          // Check for AI Coach redirect — pick random theme
           try {
             const stored = localStorage.getItem('celpip_ai_writing_prompt');
             if (stored) {
@@ -133,7 +160,6 @@ Thirdly, ...
 ${state.cta ? state.cta + '.' : ''} ${state.pleaseLetMeKnow}
 
 ${state.signOff || 'Regards,\n[My Name]'}`;
-
     updateState('content', template);
   };
 
@@ -141,211 +167,71 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     const results = generateTask1Feedback(state);
     setFeedback(results);
     markExerciseDone();
-    
-    // Calculate score and record practice
     const score = calculateScore(results, wordCount);
-    
-    // Estimate time (could be improved with actual timer tracking)
     const estimatedMinutes = Math.max(5, Math.round(wordCount / 15));
-
     if (typeof window !== 'undefined') {
       try {
-        // Record to detailed stats
         recordPractice('task1', wordCount, score, estimatedMinutes);
-        
-        // Record failed checks for error tracking
         const failedIds = results.filter(r => !r.passed).map(r => r.id);
-        if (failedIds.length > 0) {
-          recordErrors(failedIds);
-        }
-        
-        // Record achievements
+        if (failedIds.length > 0) recordErrors(failedIds);
         const newlyUnlocked = recordPracticeForAchievements('task1', wordCount, score, estimatedMinutes, false);
         if (newlyUnlocked.length > 0) {
           const achievement = ACHIEVEMENTS.find(a => a.id === newlyUnlocked[0]);
-          if (achievement) {
-            setNewAchievement(achievement);
-          }
+          if (achievement) setNewAchievement(achievement);
         }
-        
-        // Keep legacy session storage for backwards compatibility
         localStorage.setItem('celpip_last_session', JSON.stringify({
-          lastWordCount: wordCount,
-          lastTask: 'TASK_1',
-          lastScore: score,
-          date: new Date().toISOString()
+          lastWordCount: wordCount, lastTask: 'TASK_1', lastScore: score, date: new Date().toISOString()
         }));
-      } catch {
-        // Silently fail
-      }
+      } catch {}
     }
   };
 
   const handleAIEvaluate = async () => {
-    if (wordCount < 50) {
-      setAiError('Write at least 50 words for AI evaluation.');
-      return;
-    }
+    if (wordCount < 50) { setAiError('Write at least 50 words for AI evaluation.'); return; }
     analytics.aiFeedbackRequest('writing');
-
-    setAiLoading(true);
-    setAiError(null);
-    setAiEvaluation(null);
-
+    setAiLoading(true); setAiError(null); setAiEvaluation(null);
     try {
       const response = await fetch('/api/evaluate/ai', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          task: 'task1',
-          text: state.content,
-          prompt: state.promptText,
-          context: {
-            formality: state.formality.toLowerCase(),
-            recipient: state.recipient,
-            situation: selectedContext?.title || ''
-          }
+          task: 'task1', text: state.content, prompt: state.promptText,
+          context: { formality: state.formality.toLowerCase(), recipient: state.recipient, situation: selectedContext?.title || '' }
         })
       });
-
       const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Evaluation error');
-      }
-
+      if (!response.ok) throw new Error(data.error || 'Evaluation error');
       setAiEvaluation(data.evaluation);
-    } catch (err: any) {
-      setAiError(err.message || 'Error connecting to AI');
-    } finally {
-      setAiLoading(false);
-    }
+    } catch (err: any) { setAiError(err.message || 'Error connecting to AI'); }
+    finally { setAiLoading(false); }
   };
 
   const handleClear = () => {
-    if (confirm('Are you sure you want to clear everything and go back to the beginning?')) {
-      setState(INITIAL_STATE);
-      setFeedback([]);
-      setAiEvaluation(null);
-      setAiError(null);
-      setSelectedContextId(null);
-      setCurrentStep(1);
+    if (confirm('Clear everything?')) {
+      setState(INITIAL_STATE); setFeedback([]); setAiEvaluation(null); setAiError(null); setSelectedContextId(null); setCurrentStep(1);
     }
   };
 
   const handleTransferPlanning = () => {
     const parts: string[] = [];
-    const notes = state.bodyStructureNotes;
-    
-    // Opening (Dear...) - só o que foi digitado
-    if (state.opening?.trim()) {
-      parts.push(state.opening.trim());
-    }
-    
-    // Who I am - só o que foi digitado
-    if (state.whoAmI?.trim()) {
-      parts.push(state.whoAmI.trim());
-    }
-    
-    // Why I'm writing - só o que foi digitado
-    if (state.whyWriting?.trim()) {
-      parts.push(state.whyWriting.trim());
-    }
-    
-    // Body paragraphs - só o texto digitado, sem prefixos
-    if (notes[0]?.trim()) {
-      parts.push(notes[0].trim());
-    }
-    if (notes[1]?.trim()) {
-      parts.push(notes[1].trim());
-    }
-    if (notes[2]?.trim()) {
-      parts.push(notes[2].trim());
-    }
-    
-    // Conclusion - só o que foi digitado
-    if (notes[3]?.trim()) {
-      parts.push(notes[3].trim());
-    }
-    
-    // CTA - só o que foi digitado
-    if (state.cta?.trim()) {
-      parts.push(state.cta.trim());
-    }
-    
-    // Closing Line - só o que foi digitado
-    if (state.pleaseLetMeKnow?.trim()) {
-      parts.push(state.pleaseLetMeKnow.trim());
-    }
-    
-    // Sign off - só o que foi digitado
-    if (state.signOff?.trim()) {
-      parts.push(state.signOff.trim());
-    }
-    
-    if (parts.length === 0) {
-      setTransferMessage('⚠️ No planning filled to transfer.');
-      setTimeout(() => setTransferMessage(''), 3000);
-      return;
-    }
-    
-    const transferredContent = parts.join('\n\n');
-    const currentContent = state.content.trim();
-    const newContent = currentContent 
-      ? `${currentContent}\n\n${transferredContent}` 
-      : transferredContent;
-    
-    updateState('content', newContent);
+    if (state.opening?.trim()) parts.push(state.opening.trim());
+    if (state.whoAmI?.trim()) parts.push(state.whoAmI.trim());
+    if (state.whyWriting?.trim()) parts.push(state.whyWriting.trim());
+    state.bodyStructureNotes.forEach(n => { if (n?.trim()) parts.push(n.trim()); });
+    if (state.cta?.trim()) parts.push(state.cta.trim());
+    if (state.pleaseLetMeKnow?.trim()) parts.push(state.pleaseLetMeKnow.trim());
+    if (state.signOff?.trim()) parts.push(state.signOff.trim());
+    if (parts.length === 0) { setTransferMessage('⚠️ No planning to transfer.'); setTimeout(() => setTransferMessage(''), 3000); return; }
+    const transferred = parts.join('\n\n');
+    updateState('content', state.content.trim() ? `${state.content.trim()}\n\n${transferred}` : transferred);
     setTransferMessage('✅ Planning transferred!');
     setTimeout(() => setTransferMessage(''), 3000);
-    
-    setTimeout(() => {
-      writingTextareaRef.current?.focus();
-      if (writingTextareaRef.current) {
-        writingTextareaRef.current.selectionStart = writingTextareaRef.current.value.length;
-        writingTextareaRef.current.selectionEnd = writingTextareaRef.current.value.length;
-      }
-    }, 100);
   };
 
-  const getWordCounterClass = () => {
-    if (wordCount < 150) return styles.wordCounterLow;
-    if (wordCount <= 200) return styles.wordCounterGood;
-    return styles.wordCounterHigh;
-  };
-
-  const getFeedbackItemClass = (item: FeedbackItem) => {
-    if (item.passed) return styles.feedbackItemSuccess;
-    switch (item.severity) {
-      case 'BLOCKER': return styles.feedbackItemError;
-      case 'IMPORTANT': return styles.feedbackItemWarning;
-      case 'POLISH': return styles.feedbackItemInfo;
-      default: return styles.feedbackItemInfo;
-    }
-  };
-
-  const getFeedbackIcon = (item: FeedbackItem) => {
-    if (item.passed) return <CheckCircle size={16} />;
-    switch (item.severity) {
-      case 'BLOCKER': return <AlertCircle size={16} />;
-      case 'IMPORTANT': return <AlertTriangle size={16} />;
-      case 'POLISH': return <Info size={16} />;
-      default: return <Info size={16} />;
-    }
-  };
-
-  const goToStep = (step: number) => {
-    if (step >= 1 && step <= 3) {
-      setCurrentStep(step);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
-
+  const goToStep = (step: number) => { if (step >= 1 && step <= 3) { setCurrentStep(step); window.scrollTo({ top: 0, behavior: 'smooth' }); } };
   const nextStep = () => goToStep(currentStep + 1);
   const prevStep = () => goToStep(currentStep - 1);
 
-  // Check if step has content (for progress indication)
-  const stepHasContent = (step: number): boolean => {
+  const stepHasContent = (step: number) => {
     switch (step) {
       case 1: return !!state.promptText.trim();
       case 2: return !!state.opening.trim() || state.bodyStructureNotes.some(n => n.trim());
@@ -354,519 +240,324 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
     }
   };
 
-  return (
-    <div className={styles.wizardContainer}>
-      <ExerciseGate section="Writing" />
-      {/* Achievement Toast */}
-      {newAchievement && (
-        <AchievementToast 
-          achievement={newAchievement} 
-          onClose={() => {
-            markAchievementSeen(newAchievement.id);
-            setNewAchievement(null);
-          }} 
-        />
-      )}
+  const wcColor = wordCount < 150 ? T.yellow : wordCount <= 200 ? T.green : T.accent;
 
-      {/* Hero Header */}
-      <div className={styles.wizardHero}>
-        <div className={styles.heroContent}>
-          <div className={styles.heroLeft}>
-            <div className={styles.heroIcon}>
-              <Mail />
+  return (
+    <div style={{ minHeight: '100vh', background: T.bg, color: T.text, fontFamily: "'Inter','Segoe UI',sans-serif", paddingBottom: 100 }}>
+      <style>{`
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .step-animate { animation: fadeIn 0.3s ease; }
+        .chip-btn:hover { background: rgba(255,255,255,0.12) !important; color: #fff !important; }
+        .writing-input:focus { border-color: ${T.purple} !important; box-shadow: 0 0 0 2px ${T.purple}30 !important; }
+        textarea.writing-input:focus { border-color: ${T.purple} !important; box-shadow: 0 0 0 2px ${T.purple}30 !important; }
+      `}</style>
+
+      <ExerciseGate section="Writing" />
+      {newAchievement && <AchievementToast achievement={newAchievement} onClose={() => { markAchievementSeen(newAchievement.id); setNewAchievement(null); }} />}
+
+      {/* ── Header ── */}
+      <div style={{ background: T.surface, borderBottom: `1px solid ${T.border}`, padding: '16px 20px' }}>
+        <div style={{ maxWidth: 700, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 12, background: `${T.accent}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Mail size={20} color={T.accent} />
             </div>
-            <div className={styles.heroTitle}>
-              <h1>Task 1 — <span>Email Writing</span></h1>
-              <p><Clock size={14} /> 27 minutes recommended</p>
+            <div>
+              <h1 style={{ margin: 0, fontSize: 18, fontWeight: 800 }}>Task 1 — Email</h1>
+              <p style={{ margin: 0, fontSize: 13, color: T.muted, display: 'flex', alignItems: 'center', gap: 4 }}><Clock size={12} /> 27 min</p>
             </div>
           </div>
-          <div className={styles.heroCenter}>
-            <ExamMode
-              taskType="task1"
-              totalMinutes={27}
-              isActive={examModeActive}
-              onStart={() => setCurrentStep(3)}
-              onEnd={(completed, timeUsed) => {
-                console.log('Exam ended:', { completed, timeUsed, words: wordCount });
-              }}
-              onToggle={setExamModeActive}
-            />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <ExamMode taskType="task1" totalMinutes={27} isActive={examModeActive} onStart={() => setCurrentStep(3)} onEnd={(c, t) => console.log('Exam:', { c, t })} onToggle={setExamModeActive} />
             {!examModeActive && <ExamTimer totalMinutes={27} warningMinutes={5} />}
-          </div>
-          <div className={styles.heroActions}>
-            <button onClick={handleClear} className={styles.heroBtnDanger}>
-              <Trash2 size={16} /> Clear All
-            </button>
-            <DraftManager 
-              task="task1"
-              currentData={state as unknown as Record<string, unknown>}
-              wordCount={wordCount}
-              onLoad={(data) => setState(data as unknown as Task1State)}
-              scenarioTitle={selectedContext?.title || 'Task 1 Email'}
-            />
+            <DraftManager task="task1" currentData={state as unknown as Record<string, unknown>} wordCount={wordCount} onLoad={(d) => setState(d as unknown as Task1State)} scenarioTitle={selectedContext?.title || 'Email'} />
+            <button onClick={handleClear} style={{ ...btnSecondary, padding: '8px 14px', fontSize: 13, color: T.accent, borderColor: `${T.accent}30` }}><Trash2 size={14} /></button>
           </div>
         </div>
       </div>
 
-      {/* Progress Steps */}
-      <div className={styles.progressContainer}>
-        <div className={styles.progressSteps}>
-          {STEPS.map((step, index) => {
-            const StepIcon = step.icon;
-            const isActive = currentStep === step.id;
-            const isCompleted = currentStep > step.id || stepHasContent(step.id);
-            
+      {/* ── Step Progress ── */}
+      <div style={{ maxWidth: 700, margin: '0 auto', padding: '20px 20px 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+          {STEPS.map((step, i) => {
+            const active = currentStep === step.id;
+            const done = currentStep > step.id || stepHasContent(step.id);
+            const Icon = step.icon;
             return (
               <React.Fragment key={step.id}>
-                <button
-                  className={`${styles.progressStep} ${isActive ? styles.progressStepActive : ''} ${isCompleted ? styles.progressStepCompleted : ''}`}
-                  onClick={() => goToStep(step.id)}
-                >
-                  <div className={styles.stepCircle}>
-                    {isCompleted && !isActive ? (
-                      <CheckCircle size={20} />
-                    ) : (
-                      <StepIcon size={20} />
-                    )}
+                <button onClick={() => goToStep(step.id)} style={{
+                  flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  padding: '12px 8px', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                  background: active ? `${step.color}15` : 'transparent',
+                  borderBottom: `3px solid ${active ? step.color : done ? `${step.color}40` : T.border}`,
+                  borderRadius: 0,
+                }}>
+                  <div style={{
+                    width: 28, height: 28, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    background: active ? `${step.color}25` : done ? `${step.color}15` : 'rgba(255,255,255,0.04)',
+                  }}>
+                    {done && !active ? <CheckCircle size={16} color={step.color} /> : <Icon size={16} color={active ? step.color : T.muted} />}
                   </div>
-                  <div className={styles.stepInfo}>
-                    <span className={styles.stepTitle}>{step.title}</span>
-                    <span className={styles.stepDesc}>{step.description}</span>
-                  </div>
+                  <span style={{ fontSize: 14, fontWeight: active ? 700 : 500, color: active ? step.color : T.muted }}>{step.title}</span>
                 </button>
-                {index < STEPS.length - 1 && (
-                  <div className={`${styles.progressLine} ${currentStep > step.id ? styles.progressLineActive : ''}`}>
-                    <ChevronRight size={20} />
-                  </div>
-                )}
+                {i < STEPS.length - 1 && <div style={{ width: 1, height: 20, background: T.border }} />}
               </React.Fragment>
             );
           })}
         </div>
       </div>
 
-      {/* Step Content */}
-      <div className={styles.stepContent}>
-        {/* Step 1: Context */}
+      {/* ── Step Content ── */}
+      <div className="step-animate" key={currentStep} style={{ maxWidth: 700, margin: '0 auto', padding: '20px' }}>
+
+        {/* ═══ STEP 1: CONTEXT ═══ */}
         {currentStep === 1 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <FileText className={styles.stepHeaderIcon} />
-              <div>
-                <h2>Prompt Context</h2>
-                <p>Read and understand the task prompt. Identify the recipient and the points you need to address.</p>
-              </div>
-            </div>
-
-            <div className={styles.stepBody}>
-              {/* Context Selector */}
+          <>
+            <div style={card}>
+              <label style={label}>Choose a theme</label>
               {contexts.length > 0 && (
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Choose a theme</label>
-                  <ContextSelector
-                    contexts={contexts}
-                    selectedId={selectedContextId}
-                    onSelect={handleContextSelect}
-                    placeholder="Select a ready theme or create your own..."
-                    freeLimit={FREE_LIMITS.writing.task1}
-                    isPro={isPro}
-                  />
-                </div>
-              )}
-
-              {/* Prompt Text */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Task Prompt</label>
-                <textarea
-                  className={styles.formTextareaLarge}
-                  placeholder="Paste the prompt here or select a theme above..."
-                  rows={6}
-                  value={state.promptText}
-                  onChange={e => updateState('promptText', e.target.value)}
-                />
-              </div>
-
-              {/* Recipient & Formality */}
-              <div className={styles.formRow}>
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Recipient (WHO)</label>
-                  <input
-                    className={styles.formInput}
-                    placeholder="Ex: Manager, Mr. Smith, Customer Service"
-                    value={state.recipient}
-                    onChange={e => updateState('recipient', e.target.value)}
-                  />
-                </div>
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Formality</label>
-                  <select
-                    className={styles.formSelect}
-                    value={state.formality}
-                    onChange={e => updateState('formality', e.target.value as 'Formal' | 'Semi-formal')}
-                  >
-                    <option value="Formal">Formal</option>
-                    <option value="Semi-formal">Semi-formal</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Questions */}
-              {state.questions.length > 0 && (
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Points to Address</label>
-                  <div className={styles.questionsList}>
-                    {state.questions.map((question, index) => (
-                      <div key={index} className={styles.questionItem}>
-                        <span className={styles.questionBullet}>{index + 1}</span>
-                        <input
-                          className={styles.formInput}
-                          placeholder={`Point ${index + 1}`}
-                          value={question}
-                          onChange={e => {
-                            const newQuestions = [...state.questions];
-                            newQuestions[index] = e.target.value;
-                            updateState('questions', newQuestions);
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <ContextSelector contexts={contexts} selectedId={selectedContextId} onSelect={handleContextSelect}
+                  placeholder="Select a theme or create your own..." freeLimit={FREE_LIMITS.writing.task1} isPro={isPro} />
               )}
             </div>
 
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <div></div>
-              <button className={styles.btnNext} onClick={nextStep}>
-                Next: Planning <ArrowRight size={18} />
-              </button>
+            <div style={card}>
+              <label style={label}>Task Prompt</label>
+              <textarea className="writing-input" style={{ ...textarea, minHeight: 120 }}
+                placeholder="Paste the prompt here or select a theme above..."
+                value={state.promptText} onChange={e => updateState('promptText', e.target.value)} />
             </div>
-          </div>
-        )}
 
-        {/* Step 2: Planning */}
-        {currentStep === 2 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <PenTool className={styles.stepHeaderIcon} />
+            <div style={{ ...card, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
               <div>
-                <h2>Planning</h2>
-                <p>Organize your ideas before writing. Define the opening, structure and closing.</p>
+                <label style={label}>Recipient</label>
+                <input className="writing-input" style={input} placeholder="Ex: Manager, Mr. Smith"
+                  value={state.recipient} onChange={e => updateState('recipient', e.target.value)} />
               </div>
-              <TaskHelpPanel defaultTab="task1" />
+              <div>
+                <label style={label}>Formality</label>
+                <select className="writing-input" style={{ ...input, cursor: 'pointer' }} value={state.formality}
+                  onChange={e => updateState('formality', e.target.value as 'Formal' | 'Semi-formal')}>
+                  <option value="Formal">Formal</option>
+                  <option value="Semi-formal">Semi-formal</option>
+                </select>
+              </div>
             </div>
 
-            {/* Selected Context Card */}
-            {selectedContext && (
-              <div className={styles.contextCard}>
-                <div className={styles.contextCardHeader}>
-                  <Mail size={16} />
-                  <span>Selected Theme</span>
-                  <button 
-                    className={styles.contextCardChange}
-                    onClick={() => setCurrentStep(1)}
-                  >
-                    Change
-                  </button>
-                </div>
-                <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
-                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
-              </div>
-            )}
-
-            <div className={styles.stepBody}>
-              {/* Opening */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>Opening (Dear...)</label>
-                <input
-                  className={styles.formInput}
-                  placeholder="Dear Mr. Silva,"
-                  value={state.opening}
-                  onChange={e => updateState('opening', e.target.value)}
-                />
-                <div className={styles.tagGroup}>
-                  {["Dear Mr. Silva,", "Dear Manager,", "To Whom It May Concern,"].map(suggestion => (
-                    <button
-                      key={suggestion}
-                      className={styles.tag}
-                      onClick={() => updateState('opening', suggestion)}
-                    >
-                      {suggestion}
-                    </button>
+            {state.questions.length > 0 && (
+              <div style={card}>
+                <label style={label}>Points to Address</label>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                  {state.questions.map((q, i) => (
+                    <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+                      <span style={{ width: 24, height: 24, borderRadius: 8, background: `${T.blue}20`, color: T.blue, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 800, flexShrink: 0 }}>{i + 1}</span>
+                      <input className="writing-input" style={input} value={q} onChange={e => {
+                        const nq = [...state.questions]; nq[i] = e.target.value; updateState('questions', nq);
+                      }} />
+                    </div>
                   ))}
                 </div>
               </div>
+            )}
 
-              {/* Who Am I & Why Writing */}
-              <div className={styles.formRow}>
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Who I am (1 sentence)</label>
-                  <input
-                    className={styles.formInput}
-                    placeholder="Ex: I am a resident of building B."
-                    value={state.whoAmI}
-                    onChange={e => updateState('whoAmI', e.target.value)}
-                  />
-                </div>
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Why I am writing</label>
-                  <input
-                    className={styles.formInput}
-                    placeholder="Ex: I am writing to complain about..."
-                    value={state.whyWriting}
-                    onChange={e => updateState('whyWriting', e.target.value)}
-                  />
-                </div>
-              </div>
-
-              {/* Body Structure Notes */}
-              <div className={styles.formSection}>
-                <label className={styles.formLabel}>
-                  <span>💡</span> Ideas for Paragraphs
-                </label>
-                <p className={styles.formHint}>
-                  Note your ideas for each paragraph. This does not affect word count.
-                </p>
-                
-                <div className={styles.planningGrid}>
-                  <div className={styles.planningItem}>
-                    <div className={styles.planningLabel}>
-                      <span className={styles.planningBadge}>1º</span> First paragraph
-                    </div>
-                    <textarea
-                      className={styles.planningTextarea}
-                      placeholder="Ex: Present the problem, mention when it started..."
-                      value={state.bodyStructureNotes[0]}
-                      onChange={e => updateBodyNote(0, e.target.value)}
-                      rows={3}
-                    />
-                  </div>
-
-                  <div className={styles.planningItem}>
-                    <div className={styles.planningLabel}>
-                      <span className={styles.planningBadge}>2º</span> Second paragraph
-                    </div>
-                    <textarea
-                      className={styles.planningTextarea}
-                      placeholder="Ex: Detail the impacts, give specific examples..."
-                      value={state.bodyStructureNotes[1]}
-                      onChange={e => updateBodyNote(1, e.target.value)}
-                      rows={3}
-                    />
-                  </div>
-
-                  <div className={styles.planningItem}>
-                    <div className={styles.planningLabel}>
-                      <span className={`${styles.planningBadge} ${styles.planningBadgeOptional}`}>3º</span> 
-                      Third paragraph
-                      <span className={styles.optionalTag}>optional</span>
-                    </div>
-                    <textarea
-                      className={styles.planningTextarea}
-                      placeholder="Ex: Additional argument or extra context..."
-                      value={state.bodyStructureNotes[2]}
-                      onChange={e => updateBodyNote(2, e.target.value)}
-                      rows={3}
-                    />
-                  </div>
-
-                  <div className={styles.planningItem}>
-                    <div className={styles.planningLabel}>
-                      <span className={`${styles.planningBadge} ${styles.planningBadgeFinal}`}>✓</span> 
-                      Closing / CTA
-                    </div>
-                    <textarea
-                      className={styles.planningTextarea}
-                      placeholder="Ex: Call to action, thank you, expected response..."
-                      value={state.bodyStructureNotes[3]}
-                      onChange={e => updateBodyNote(3, e.target.value)}
-                      rows={3}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA & Closing */}
-              <div className={styles.formRow}>
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>CTA / Request (Optional)</label>
-                  <input
-                    className={styles.formInput}
-                    placeholder="I would suggest that..."
-                    value={state.cta}
-                    onChange={e => updateState('cta', e.target.value)}
-                  />
-                </div>
-                {/* Closing Line */}
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Closing Line (Required)</label>
-                  <input
-                    className={styles.formInput}
-                    value={state.pleaseLetMeKnow}
-                    onChange={e => updateState('pleaseLetMeKnow', e.target.value)}
-                  />
-                  <div className={styles.tagGroup}>
-                    {[
-                      "Please let me know if you have any questions.",
-                      "I look forward to hearing from you."
-                    ].map(suggestion => (
-                      <button
-                        key={suggestion}
-                        className={styles.tag}
-                        onClick={() => updateState('pleaseLetMeKnow', suggestion)}
-                      >
-                        {suggestion}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div className={styles.formSection}>
-                  <label className={styles.formLabel}>Sign-off</label>
-                  <input
-                    className={styles.formInput}
-                    placeholder="Regards, [Full Name]"
-                    value={state.signOff}
-                    onChange={e => updateState('signOff', e.target.value)}
-                  />
-                </div>
-              </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 8 }}>
+              <button onClick={nextStep} style={btnPrimary}>Next: Plan <ArrowRight size={18} /></button>
             </div>
-
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Back
-              </button>
-              <button className={styles.btnNext} onClick={nextStep}>
-                Next: Writing <ArrowRight size={18} />
-              </button>
-            </div>
-          </div>
+          </>
         )}
 
-        {/* Step 3: Writing */}
-        {currentStep === 3 && (
-          <div className={styles.stepPanel}>
-            <div className={styles.stepHeader}>
-              <Mail className={styles.stepHeaderIcon} />
-              <div>
-                <h2>Final Writing</h2>
-                <p>Write your complete email. Use the transfer button to bring your ideas from planning.</p>
-              </div>
-              <div className={`${styles.wordCounter} ${getWordCounterClass()}`}>
-                ✍️ {wordCount} words
-              </div>
-            </div>
-
-            {/* Selected Context Card - Compact */}
+        {/* ═══ STEP 2: PLANNING ═══ */}
+        {currentStep === 2 && (
+          <>
             {selectedContext && (
-              <div className={`${styles.contextCard} ${styles.contextCardCompact}`}>
-                <div className={styles.contextCardHeader}>
-                  <Mail size={16} />
-                  <h4 className={styles.contextCardTitle}>{selectedContext.title}</h4>
+              <div style={{ ...card, background: `${T.blue}08`, borderColor: `${T.blue}20` }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: T.blue, textTransform: 'uppercase' }}>Theme</span>
+                  <button onClick={() => setCurrentStep(1)} style={{ background: 'none', border: 'none', color: T.blue, fontSize: 12, cursor: 'pointer', fontWeight: 600 }}>Change</button>
                 </div>
-                <p className={styles.contextCardSituation}>{selectedContext.content}</p>
+                <p style={{ margin: 0, fontSize: 14, color: T.muted, lineHeight: 1.5 }}>{themeText(selectedContext.content)}</p>
               </div>
             )}
 
-            <div className={styles.stepBody}>
-              {/* Writing Area */}
-              <div className={styles.writingSection}>
-                {/* Spell Check Toggle */}
-                <div className={styles.spellCheckToggle}>
-                  <label className={styles.toggleSwitch}>
-                    <input
-                      type="checkbox"
-                      checked={spellCheckEnabled}
-                      onChange={(e) => setSpellCheckEnabled(e.target.checked)}
-                    />
-                    <span className={styles.toggleSlider}></span>
-                  </label>
-                  <span className={styles.toggleLabel}>
-                    <SpellCheck size={16} />
-                    Spell Check
-                  </span>
-                </div>
+            {/* Opening — chips + editable */}
+            <div style={card}>
+              <label style={label}>Opening Greeting</label>
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                {["Dear Mr./Ms. [Name],", "Dear Manager,", "Dear Sir/Madam,", "To Whom It May Concern,", "Dear Hiring Committee,"].map(s => (
+                  <button key={s} className="chip-btn" style={{ ...chip, ...(state.opening === s ? { background: `${T.blue}20`, borderColor: T.blue, color: T.blue } : {}) }}
+                    onClick={() => updateState('opening', s)}>{s}</button>
+                ))}
+              </div>
+              <input className="writing-input" style={input} placeholder="Or type your own..." value={state.opening} onChange={e => updateState('opening', e.target.value)} />
+            </div>
 
-                <SpellCheckTextarea
-                  value={state.content}
-                  onChange={(value) => updateState('content', value)}
-                  placeholder="Start writing your email here..."
-                  spellCheckEnabled={spellCheckEnabled}
-                  className={styles.writingTextareaContainer}
-                  minHeight="350px"
-                />
+            {/* Who I am — chips + editable */}
+            <div style={card}>
+              <label style={label}>Who I am</label>
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                {["I am a resident of...", "I am a long-time customer of...", "I am an employee at...", "I am a parent of a student at...", "I am a concerned citizen who..."].map(s => (
+                  <button key={s} className="chip-btn" style={{ ...chip, ...(state.whoAmI === s ? { background: `${T.purple}20`, borderColor: T.purple, color: T.purple } : {}) }}
+                    onClick={() => updateState('whoAmI', s)}>{s}</button>
+                ))}
+              </div>
+              <input className="writing-input" style={input} placeholder="Or type your own..." value={state.whoAmI} onChange={e => updateState('whoAmI', e.target.value)} />
+            </div>
 
-                {/* AI Score & Sentence Analysis */}
-                <div className={styles.aiFeedbackSection}>
-                  <AIFeedback 
-                    task="task1" 
-                    text={state.content}
-                    promptText={state.promptText}
-                    onApplySuggestion={(original, replacement) => {
-                      const newContent = state.content.replace(original, replacement);
-                      updateState('content', newContent);
-                    }}
-                  />
-                  <SentenceFeedback 
-                    task="task1" 
-                    text={state.content}
-                  />
-                </div>
-                
-                {transferMessage && (
-                  <div className={styles.transferMessage}>
-                    {transferMessage}
+            {/* Why writing — chips + editable */}
+            <div style={card}>
+              <label style={label}>Why I&apos;m writing</label>
+              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                {["to complain about...", "to request information about...", "to inform you that...", "to suggest a change to...", "to express my concern about...", "to follow up on..."].map(s => (
+                  <button key={s} className="chip-btn" style={{ ...chip, ...(state.whyWriting === s ? { background: `${T.green}20`, borderColor: T.green, color: T.green } : {}) }}
+                    onClick={() => updateState('whyWriting', s)}>{s}</button>
+                ))}
+              </div>
+              <input className="writing-input" style={input} placeholder="Or type your own..." value={state.whyWriting} onChange={e => updateState('whyWriting', e.target.value)} />
+            </div>
+
+            {/* Body Ideas — sentence starters + editable */}
+            <div style={card}>
+              <label style={label}>Paragraph Ideas</label>
+              <p style={{ margin: '0 0 12px', fontSize: 13, color: T.muted }}>Tap a starter, then complete the sentence. These are notes — they won&apos;t count toward words.</p>
+              {[
+                { num: '1', lbl: 'First point', color: T.blue, starters: ["The main issue is...", "First of all, I would like to mention...", "To begin with,..."] },
+                { num: '2', lbl: 'Second point', color: T.purple, starters: ["In addition to this,...", "Furthermore,...", "Another concern is...", "This has caused..."] },
+                { num: '3', lbl: 'Third (optional)', color: T.muted, starters: ["Moreover,...", "As a result,...", "I have also noticed that..."] },
+                { num: '✓', lbl: 'Closing', color: T.green, starters: ["I would appreciate it if you could...", "I kindly request that...", "Could you please..."] },
+              ].map((item, i) => (
+                <div key={i} style={{ marginBottom: 14, paddingBottom: i < 3 ? 14 : 0, borderBottom: i < 3 ? `1px solid ${T.border}` : 'none' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                    <span style={{ width: 24, height: 24, borderRadius: 6, background: `${item.color}15`, color: item.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 900, flexShrink: 0 }}>{item.num}</span>
+                    <span style={{ fontSize: 13, fontWeight: 700, color: T.text }}>{item.lbl}</span>
                   </div>
-                )}
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                    {item.starters.map(s => (
+                      <button key={s} className="chip-btn" style={{ ...chip, fontSize: 12 }}
+                        onClick={() => updateBodyNote(i, state.bodyStructureNotes[i] ? state.bodyStructureNotes[i] + ' ' + s : s)}>{s}</button>
+                    ))}
+                  </div>
+                  <input className="writing-input" style={input} placeholder="Tap a starter above or type your idea..."
+                    value={state.bodyStructureNotes[i]} onChange={e => updateBodyNote(i, e.target.value)} />
+                </div>
+              ))}
+            </div>
 
-                <div className={styles.writingActions}>
-                  <button className={styles.btnTransfer} onClick={handleTransferPlanning}>
-                    <ArrowRight size={16} /> Transfer Planning
-                  </button>
-                  <button className={styles.btnTemplate} onClick={generateTemplate}>
-                    <Wand2 size={16} /> Generate Template
-                  </button>
-                  <button className={styles.btnEvaluate} onClick={handleEvaluate}>
-                    <RefreshCw size={16} /> Quick Checklist
-                  </button>
+            {/* Closing + Sign-off — chips + editable */}
+            <div style={card}>
+              <div style={{ marginBottom: 14 }}>
+                <label style={label}>Closing Line</label>
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                  {["Please let me know if you have any questions.", "I look forward to hearing from you.", "Thank you for your time and attention.", "I would appreciate a prompt response."].map(s => (
+                    <button key={s} className="chip-btn" style={{ ...chip, fontSize: 12, ...(state.pleaseLetMeKnow === s ? { background: `${T.green}20`, borderColor: T.green, color: T.green } : {}) }}
+                      onClick={() => updateState('pleaseLetMeKnow', s)}>{s}</button>
+                  ))}
+                </div>
+                <input className="writing-input" style={input} value={state.pleaseLetMeKnow} onChange={e => updateState('pleaseLetMeKnow', e.target.value)} />
+              </div>
+              <div>
+                <label style={label}>Sign-off</label>
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
+                  {["Sincerely,\n[Your Name]", "Regards,\n[Your Name]", "Best regards,\n[Your Name]", "Yours faithfully,\n[Your Name]"].map(s => (
+                    <button key={s} className="chip-btn" style={{ ...chip, fontSize: 12, ...(state.signOff === s ? { background: `${T.purple}20`, borderColor: T.purple, color: T.purple } : {}) }}
+                      onClick={() => updateState('signOff', s)}>{s.split('\n')[0]}</button>
+                  ))}
+                </div>
+                <input className="writing-input" style={input} placeholder="Or type your own..." value={state.signOff} onChange={e => updateState('signOff', e.target.value)} />
+              </div>
+            </div>
+
+            <TaskHelpPanel defaultTab="task1" />
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
+              <button onClick={prevStep} style={btnSecondary}><ArrowLeft size={18} /> Back</button>
+              <button onClick={nextStep} style={btnPrimary}>Next: Write <ArrowRight size={18} /></button>
+            </div>
+          </>
+        )}
+
+        {/* ═══ STEP 3: WRITING ═══ */}
+        {currentStep === 3 && (
+          <>
+            {/* Word Counter Bar */}
+            <div style={{ ...card, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <span style={{ fontSize: 28, fontWeight: 900, color: wcColor }}>{wordCount}</span>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>words</div>
+                  <div style={{ fontSize: 11, color: T.muted }}>Target: 150-200</div>
+                </div>
+              </div>
+              <div style={{ width: 120, height: 6, borderRadius: 3, background: 'rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+                <div style={{ height: '100%', borderRadius: 3, background: wcColor, width: `${Math.min((wordCount / 200) * 100, 100)}%`, transition: 'width 0.3s' }} />
+              </div>
+            </div>
+
+            {/* Compact prompt reminder */}
+            {selectedContext && (
+              <div style={{ ...card, padding: '12px 16px', background: `${T.blue}06` }}>
+                <p style={{ margin: 0, fontSize: 13, color: T.muted, lineHeight: 1.5 }}><strong style={{ color: T.blue }}>Prompt:</strong> {themeText(selectedContext.content)}</p>
+              </div>
+            )}
+
+            {/* Writing Area */}
+            <div style={{ ...card, padding: 0, overflow: 'hidden' }}>
+              {/* Toolbar */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px', borderBottom: `1px solid ${T.border}`, flexWrap: 'wrap', gap: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <VoiceDictation
+                    onTranscript={(text) => updateState('content', state.content + (state.content && !state.content.endsWith(' ') ? ' ' : '') + text)}
+                  />
+                  <label style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'pointer', fontSize: 13, color: T.muted }}>
+                    <input type="checkbox" checked={spellCheckEnabled} onChange={e => setSpellCheckEnabled(e.target.checked)}
+                      style={{ width: 16, height: 16, accentColor: T.purple }} />
+                    <SpellCheck size={14} /> Spell Check
+                  </label>
+                </div>
+                <div style={{ display: 'flex', gap: 6 }}>
+                  <button onClick={handleTransferPlanning} className="chip-btn" style={{ ...chip, fontSize: 12 }}><ArrowRight size={12} /> Transfer Plan</button>
+                  <button onClick={generateTemplate} className="chip-btn" style={{ ...chip, fontSize: 12 }}><Wand2 size={12} /> Template</button>
                 </div>
               </div>
 
-              {/* Feedback Panel (Quick Checklist) */}
-              {feedback.length > 0 && (
-                <div className={styles.feedbackPanel}>
-                  <div className={styles.feedbackHeader}>
-                    <MessageSquare size={20} />
-                    <h3>Feedback</h3>
-                  </div>
-                  <div className={styles.feedbackList}>
-                    {feedback.map((item, index) => (
-                      <div key={index} className={`${styles.feedbackItem} ${getFeedbackItemClass(item)}`}>
-                        <div className={styles.feedbackItemIcon}>
-                          {getFeedbackIcon(item)}
-                        </div>
-                        <p>{item.message}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <UpgradeTrigger context="writing" />
-                </div>
-              )}
+              {/* Textarea */}
+              <div style={{ padding: '0 16px 16px' }}>
+                <SpellCheckTextarea
+                  value={state.content}
+                  onChange={(value) => updateState('content', value)}
+                  placeholder="Start writing your email here... or tap Dictate to speak!"
+                  spellCheckEnabled={spellCheckEnabled}
+                  className=""
+                  minHeight="300px"
+                />
+              </div>
             </div>
 
-            {/* Navigation */}
-            <div className={styles.stepNav}>
-              <button className={styles.btnPrev} onClick={prevStep}>
-                <ArrowLeft size={18} /> Back to Planning
+            {transferMessage && (
+              <div style={{ padding: '10px 16px', borderRadius: 10, background: transferMessage.includes('⚠️') ? `${T.yellow}15` : `${T.green}15`, color: transferMessage.includes('⚠️') ? T.yellow : T.green, fontSize: 14, fontWeight: 600, marginBottom: 14 }}>
+                {transferMessage}
+              </div>
+            )}
+
+            {/* Single AI button */}
+            <div style={{ ...card, textAlign: 'center' }}>
+              <button onClick={handleAIEvaluate} disabled={aiLoading || wordCount < 50}
+                style={{ ...btnPrimary, width: '100%', justifyContent: 'center', padding: '16px 28px', fontSize: 16, opacity: (aiLoading || wordCount < 50) ? 0.5 : 1 }}>
+                <Bot size={20} /> {aiLoading ? 'Analyzing your writing...' : 'Get AI Feedback'}
               </button>
-              <button className={styles.btnFinish}>
-                <CheckCircle size={18} /> Finish
-              </button>
+              {wordCount < 50 && <p style={{ margin: '8px 0 0', fontSize: 12, color: T.muted }}>Write at least 50 words to unlock</p>}
+              {aiError && <p style={{ margin: '8px 0 0', fontSize: 13, color: T.accent }}>{aiError}</p>}
             </div>
-          </div>
+
+            {aiLoading && <AIEvaluationLoading />}
+            {aiEvaluation && (
+              <AIEvaluationResult evaluation={aiEvaluation} originalText={state.content} />
+            )}
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
+              <button onClick={prevStep} style={btnSecondary}><ArrowLeft size={18} /> Back</button>
+              <div />
+            </div>
+          </>
         )}
       </div>
     </div>
