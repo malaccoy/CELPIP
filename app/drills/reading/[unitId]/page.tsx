@@ -5,6 +5,8 @@ import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ArrowRight, Sparkles, Trophy, BookOpen } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { useGuest } from '@/hooks/useGuest';
+import GuestWall from '@/components/GuestWall';
 
 const T = {
   bg: '#1b1f2a', surface: '#232733', border: 'rgba(255,255,255,0.06)',
@@ -33,6 +35,7 @@ export default function ReadingUnitPage() {
   const params = useParams();
   const unitId = Number(params.unitId);
   const { isPro, loading: planLoading } = usePlan();
+  const { isGuest, guestBlocked, guardAction, showWall, setShowWall, checkDone, trackExercise } = useGuest();
 
   const [unit, setUnit] = useState<Unit | null>(null);
   const [exerciseIdx, setExerciseIdx] = useState(0);
@@ -82,7 +85,7 @@ export default function ReadingUnitPage() {
         setUnit({ ...u, exercises: triplets.flat() });
       }
     });
-    fetch('/api/daily-usage?category=drills').then(r => r.json()).then(data => {
+    if (!isGuest) fetch('/api/daily-usage?category=drills').then(r => r.json()).then(data => {
       if (data.isPro) return;
       setFreeUsed(data.used || 0);
       setFreeLimit(data.limit || 10);
@@ -112,21 +115,26 @@ export default function ReadingUnitPage() {
     setAnswered(true);
     setIsCorrect(correct);
     if (correct) setScore(s => s + 1);
+    if (isGuest) trackExercise();
     setTotal(t => t + 1);
 
-    fetch('/api/log-activity', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ type: 'reading', count: 1 }),
-    }).catch(() => {});
-
-    // Trigger feedback popup after 2 exercises
-    if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
-
-    if (!isPro) {
-      fetch('/api/daily-usage', {
+    if (isGuest) {
+      
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
+    } else {
+      fetch('/api/log-activity', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ category: 'drills' }),
-      }).then(r => r.json()).then(data => { if (!data.isPro) setFreeUsed(data.used || 0); }).catch(() => {});
+        body: JSON.stringify({ type: 'reading', count: 1 }),
+      }).catch(() => {});
+
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
+
+      if (!isPro) {
+        fetch('/api/daily-usage', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ category: 'drills' }),
+        }).then(r => r.json()).then(data => { if (!data.isPro) setFreeUsed(data.used || 0); }).catch(() => {});
+      }
     }
 
     setTimeout(() => {
@@ -145,7 +153,8 @@ export default function ReadingUnitPage() {
   if (planLoading || !unit) return <div style={{ minHeight: '100vh', background: T.bg }} />;
 
   // Paywall
-  if (freeBlocked && !isPro) {
+
+  if ((isGuest ? guestBlocked : freeBlocked) && !isPro) {
     return (
       <div style={{ minHeight: '100vh', background: T.bg, color: T.text, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', maxWidth: 600, margin: '0 auto' }}>
         <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🔥</div>
@@ -304,6 +313,7 @@ export default function ReadingUnitPage() {
           </button>
         </div>
       )}
+    {showWall && <GuestWall isLoggedIn={false} />}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 // Service Worker for CELPIP AI Coach PWA
-const CACHE_NAME = 'celpip-v6';
+const CACHE_NAME = 'celpip-v9';
 const OFFLINE_URL = '/offline.html';
 
 self.addEventListener('install', (event) => {

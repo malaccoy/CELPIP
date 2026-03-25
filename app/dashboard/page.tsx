@@ -75,6 +75,13 @@ export default function DashboardPage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Redirect back to drill if user came from GuestWall
+    const savedRedirect = localStorage.getItem('redirect_after_login');
+    if (savedRedirect) {
+      localStorage.removeItem('redirect_after_login');
+      window.location.href = savedRedirect;
+      return;
+    }
     const check = () => setIsMobile(window.innerWidth <= 768);
     check();
     window.addEventListener('resize', check);

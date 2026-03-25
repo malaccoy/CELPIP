@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#1b1f2a</item>
+        <item name="colorPrimaryDark">#1b1f2a</item>
+        <item name="colorAccent">#ff3b3b</item>
+        <item name="android:windowBackground">#1b1f2a</item>
+        <item name="android:statusBarColor">#1b1f2a</item>
+        <item name="android:navigationBarColor">#1b1f2a</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#1b1f2a</item>
+        <item name="colorPrimaryDark">#1b1f2a</item>
+        <item name="colorAccent">#ff3b3b</item>
+        <item name="android:windowBackground">#1b1f2a</item>
+        <item name="android:statusBarColor">#1b1f2a</item>
+        <item name="android:navigationBarColor">#1b1f2a</item>
+    </style>
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+        <item name="android:background">#1b1f2a</item>
+    </style>
+</resources>

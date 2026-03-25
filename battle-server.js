@@ -78,7 +78,7 @@ const io = new Server(httpServer, {
   pingInterval: 10000, pingTimeout: 5000
 });
 
-httpServer.listen(PORT, () => console.log(`⚔️  Battle server on port ${PORT}`));
+httpServer.listen(PORT, '127.0.0.1', () => console.log(`⚔️  Battle server on port ${PORT}`));
 
 io.on('connection', (socket) => {
   let userId = null;

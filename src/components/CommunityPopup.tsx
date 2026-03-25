@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { X, ExternalLink, Users } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 
@@ -9,8 +10,12 @@ const STORAGE_KEY = 'community-popup-dismissed';
 
 export function CommunityPopup() {
   const [show, setShow] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
+    // Hide on /try pages
+    if (pathname.startsWith('/try') || pathname.startsWith('/start')) return;
+
     // Only show once — check localStorage
     const dismissed = localStorage.getItem(STORAGE_KEY);
     if (dismissed) return;

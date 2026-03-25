@@ -1,6 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
 
 const T = {
   bg: '#0a0e1a',
@@ -15,7 +17,15 @@ const T = {
 
 export default function StartLandingPage() {
   const router = useRouter();
-  const cta = () => router.push('/auth/register');
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    createClient().auth.getUser().then(({ data }) => {
+      if (data?.user) setLoggedIn(true);
+    });
+  }, []);
+
+  const cta = () => router.push(loggedIn ? '/dashboard' : '/auth/register');
 
   return (
     <div style={{ minHeight: '100vh', background: T.bg, color: T.text, fontFamily: "'Inter','Segoe UI',sans-serif", position: 'relative', overflow: 'hidden' }}>
@@ -26,6 +36,10 @@ export default function StartLandingPage() {
           33% { transform: translate(30px,-50px) rotate(120deg) scale(1.1); }
           66% { transform: translate(-20px,20px) rotate(240deg) scale(0.9); }
           100% { transform: translate(0,0) rotate(360deg) scale(1); }
+        }
+        @keyframes float {
+          0%,100% { transform: translateY(0); }
+          50% { transform: translateY(-6px); }
         }
         @keyframes ctaPulse {
           0%,100% { box-shadow: 0 4px 20px rgba(255,59,59,0.4); transform: scale(1); }
@@ -93,6 +107,56 @@ export default function StartLandingPage() {
         }}>
           Practice Free Now
         </button>
+
+        {/* Skills Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 24, maxWidth: 380, marginLeft: 'auto', marginRight: 'auto' }}>
+          {[
+            { id: 'speaking', icon: '🎤', label: 'Speaking', desc: '8 tasks', color: '#8b5cf6', glow: 'rgba(139,92,246,0.3)' },
+            { id: 'writing', icon: '✍️', label: 'Writing', desc: '2 tasks', color: '#f59e0b', glow: 'rgba(245,158,11,0.3)' },
+            { id: 'listening', icon: '🎧', label: 'Listening', desc: '6 tasks', color: '#3b82f6', glow: 'rgba(59,130,246,0.3)' },
+            { id: 'reading', icon: '📖', label: 'Reading', desc: '4 tasks', color: '#22c55e', glow: 'rgba(34,197,94,0.3)' },
+          ].map(s => (
+            <button key={s.id} onClick={cta} className="skill-card-btn" style={{
+              background: `linear-gradient(145deg, ${s.color}18, ${s.color}08)`,
+              border: `1.5px solid ${s.color}35`,
+              borderRadius: 18, padding: '20px 12px', cursor: 'pointer',
+              display: 'flex', flexDirection: 'column' as const, alignItems: 'center', gap: 6,
+              position: 'relative' as const, overflow: 'hidden',
+              transition: 'transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease',
+            }}
+            onMouseOver={(e) => { 
+              e.currentTarget.style.transform = 'translateY(-4px) scale(1.03)'; 
+              e.currentTarget.style.boxShadow = `0 12px 32px ${s.glow}`;
+              e.currentTarget.style.borderColor = `${s.color}88`;
+            }}
+            onMouseOut={(e) => { 
+              e.currentTarget.style.transform = 'translateY(0) scale(1)'; 
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.borderColor = `${s.color}35`;
+            }}
+            >
+              {/* Glow orb */}
+              <div style={{
+                position: 'absolute', top: -20, right: -20, width: 60, height: 60,
+                borderRadius: '50%', background: `${s.color}15`, filter: 'blur(20px)',
+                pointerEvents: 'none',
+              }} />
+              <div style={{
+                fontSize: 32, lineHeight: 1,
+                filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
+                animation: 'float 3s ease-in-out infinite',
+                animationDelay: `${Math.random() * 2}s`,
+              }}>
+                {s.icon}
+              </div>
+              <span style={{ color: '#fff', fontWeight: 800, fontSize: '1rem', letterSpacing: '-0.3px' }}>{s.label}</span>
+              <span style={{ color: `${s.color}cc`, fontSize: '0.72rem', fontWeight: 600 }}>{s.desc}</span>
+            </button>
+          ))}
+        </div>
+        <p style={{ color: T.muted, fontSize: '0.78rem', marginTop: 10, lineHeight: 1.4 }}>
+          ⚡ Start practicing free — all 4 CELPIP skills
+        </p>
         <p style={{ color: T.muted, fontSize: '0.85rem', marginTop: 10 }}>
           No credit card required. <span className="free-badge" style={{ fontWeight: 800, fontSize: '0.95rem' }}>10 FREE exercises daily</span>
         </p>

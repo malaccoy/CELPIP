@@ -1,264 +1,420 @@
 'use client';
 
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
+/* ═══ Theme ═══ */
 const T = {
-  bg: '#0a0e1a',
-  surface: '#151929',
-  text: '#ffffff',
-  muted: 'rgba(255,255,255,0.6)',
-  red: '#ff3b3b',
-  accent: '#ff3b3b',
-  positive: '#a78bfa',
-  blue: '#3b82f6',
+  bg: '#0f1523', surface: '#1b1f2a', surface2: '#232733', card: '#1e2235',
+  text: '#fff', muted: 'rgba(255,255,255,0.55)', subtle: 'rgba(255,255,255,0.08)',
+  red: '#ff3b3b', redGlow: 'rgba(255,59,59,0.35)',
+  green: '#22c55e', blue: '#3b82f6', purple: '#a78bfa', orange: '#f97316',
+  wrongBg: 'rgba(239,68,68,0.15)', wrongBorder: '#ef4444',
+  correctBg: 'rgba(34,197,94,0.15)', correctBorder: '#22c55e',
 };
 
-export default function StartLandingPage() {
+interface AudioLine { voice: string; text: string; }
+interface Exercise {
+  label: string; part: string;
+  audioLines: AudioLine[];
+  question: string; options: string[]; correct: number; explanation: string;
+}
+
+/* ═══ 2 Listening exercises — real CELPIP-style dialogues ═══ */
+const EXERCISES: Exercise[] = [
+  {
+    label: 'Listening — Part 1: Problem Solving',
+    part: 'Part 1',
+    audioLines: [
+      { voice: 'male', text: "Doctor, I've been getting terrible headaches almost every day for the past two weeks. I've tried regular painkillers but they barely help." },
+      { voice: 'female', text: "I see. Are the headaches worse at any particular time of day?" },
+      { voice: 'male', text: "Yes, they're usually worst in the morning when I wake up, and they get a bit better in the afternoon." },
+      { voice: 'female', text: "Morning headaches can be related to sleep issues. Are you getting enough sleep? And have you noticed any changes in your vision?" },
+      { voice: 'male', text: "Actually, now that you mention it, I have been staying up late working on my computer, and sometimes my vision gets blurry." },
+      { voice: 'female', text: "That could be the problem. Extended screen time, especially before bed, can cause eye strain and disrupt your sleep cycle. I'd recommend limiting screen time to no more than one hour before bed, and I'll refer you to an optometrist to check your vision. Let's also do some blood work to rule out anything else." },
+    ],
+    question: 'What does the doctor think is causing the headaches?',
+    options: [
+      'A serious brain condition',
+      'Too much screen time and poor sleep habits',
+      'An allergic reaction to medication',
+      'High blood pressure',
+    ],
+    correct: 1,
+    explanation: 'The doctor says "extended screen time, especially before bed, can cause eye strain and disrupt your sleep cycle" — pointing to screen time and sleep as the likely cause.',
+  },
+  {
+    label: 'Listening — Part 3: Information',
+    part: 'Part 3',
+    audioLines: [
+      { voice: 'female', text: "Welcome to the Toronto Public Library orientation. I'd like to tell you about some changes to our services starting next month." },
+      { voice: 'female', text: "First, we're extending our hours. Starting March first, the library will be open from eight AM to nine PM on weekdays, and ten AM to six PM on weekends. That's two extra hours on weekday evenings." },
+      { voice: 'female', text: "Second, we're launching a new digital borrowing system. You'll be able to borrow up to five e-books and three audiobooks at a time using our app. The loan period for digital items is twenty-one days with one automatic renewal." },
+      { voice: 'female', text: "Third, our study rooms can now be booked online up to seven days in advance. Each booking is limited to three hours, and you can make up to two bookings per week." },
+      { voice: 'female', text: "Finally, we're introducing free Wi-Fi printing. Library members can print up to twenty pages per day at no charge. Just connect to our Wi-Fi and use the print station on the second floor." },
+    ],
+    question: 'How many e-books can you borrow at one time with the new system?',
+    options: [
+      'Three',
+      'Five',
+      'Seven',
+      'Twenty-one',
+    ],
+    correct: 1,
+    explanation: 'The librarian says "you\'ll be able to borrow up to five e-books and three audiobooks at a time." Five is the limit for e-books.',
+  },
+];
+
+/* ═══ TTS — pass key: male/female/narrator ═══ */
+async function playLineTTS(text: string, voice: string): Promise<void> {
+  const v = voice === 'male' ? 'male' : voice === 'narrator' ? 'narrator' : 'female';
+  try {
+    const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${v}`);
+    if (!res.ok) return;
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    await new Promise<void>((resolve) => {
+      const a = new Audio(url);
+      a.onended = () => { URL.revokeObjectURL(url); resolve(); };
+      a.onerror = () => { URL.revokeObjectURL(url); resolve(); };
+      a.play().catch(() => resolve());
+    });
+  } catch {}
+}
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+const CSS = `
+@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+@keyframes glow { 0%,100%{box-shadow:0 0 20px rgba(255,59,59,.2)} 50%{box-shadow:0 0 40px rgba(255,59,59,.4)} }
+.fade-up { animation: fadeUp .5s ease-out both; }
+.btn-hover:active { transform: scale(.97) !important; }
+`;
+
+/* ══════════════════════ COMPONENT ══════════════════════ */
+export default function StartPage() {
   const router = useRouter();
-  const cta = () => router.push('/register');
+  type Step = 'intro' | 'exercise' | 'results';
+  const [step, setStep] = useState<Step>('intro');
+  const [exIdx, setExIdx] = useState(0);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [answered, setAnswered] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [score, setScore] = useState(0);
+  const [shuffledOpts, setShuffledOpts] = useState<{ text: string; origIdx: number }[]>([]);
+  const feedbackRef = useRef<HTMLDivElement>(null);
+
+  const [audioPhase, setAudioPhase] = useState<'idle' | 'playing' | 'done'>('idle');
+  const [activeLineIdx, setActiveLineIdx] = useState(-1);
+
+  const ex = EXERCISES[exIdx] || null;
+
+  useEffect(() => {
+    if (!ex) return;
+    setShuffledOpts(shuffle(ex.options.map((t, i) => ({ text: t, origIdx: i }))));
+    setSelected(null); setAnswered(false); setIsCorrect(false);
+    setAudioPhase('idle'); setActiveLineIdx(-1);
+  }, [exIdx]);
+
+  const playAudio = useCallback(async () => {
+    if (!ex || audioPhase === 'playing') return;
+    setAudioPhase('playing');
+    for (let i = 0; i < ex.audioLines.length; i++) {
+      setActiveLineIdx(i);
+      await playLineTTS(ex.audioLines[i].text, ex.audioLines[i].voice);
+    }
+    setActiveLineIdx(-1);
+    setAudioPhase('done');
+  }, [ex, audioPhase]);
+
+  const handleAnswer = (idx: number) => {
+    if (answered) return;
+    setSelected(idx); setAnswered(true);
+    const origIdx = shuffledOpts[idx]?.origIdx ?? idx;
+    const correct = ex!.correct === origIdx;
+    setIsCorrect(correct);
+    if (correct) setScore(s => s + 1);
+    setTimeout(() => feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
+  };
+
+  const handleNext = () => {
+    if (exIdx + 1 >= EXERCISES.length) setStep('results');
+    else { setExIdx(exIdx + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  };
+
+  const goSignup = () => { localStorage.setItem('redirect_after_login', '/dashboard'); router.push('/auth/register?ref=start'); };
+  const goLogin = () => { localStorage.setItem('redirect_after_login', '/dashboard'); router.push('/auth/login'); };
+
+  /* ═══ INTRO ═══ */
+  if (step === 'intro') return (
+    <>
+      <style>{CSS}</style>
+      <div style={{
+        minHeight: '100dvh', background: `linear-gradient(180deg, ${T.bg} 0%, #0d1220 50%, #131832 100%)`,
+        color: T.text, display: 'flex', flexDirection: 'column', alignItems: 'center',
+        padding: '0 16px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      }}>
+        <div style={{ width: '100%', maxWidth: 440, padding: '20px 0 8px', display: 'flex', justifyContent: 'center' }}>
+          <span style={{ fontSize: 13, fontWeight: 700, color: T.muted, letterSpacing: '0.06em', textTransform: 'uppercase' }}>🎯 CELPIP AI Coach</span>
+        </div>
+
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', maxWidth: 400, textAlign: 'center' }}>
+          <h1 className="fade-up" style={{ fontSize: 'clamp(1.7rem, 7vw, 2.4rem)', fontWeight: 900, margin: '0 0 8px', lineHeight: 1.15, letterSpacing: '-0.03em' }}>
+            Test your<br /><span style={{ background: 'linear-gradient(90deg, #3b82f6, #60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>CELPIP Listening</span>
+          </h1>
+          <p className="fade-up" style={{ color: T.muted, fontSize: 'clamp(0.85rem, 3.5vw, 0.95rem)', margin: '0 0 28px', lineHeight: 1.6, animationDelay: '.08s' }}>
+            Listen to <strong style={{ color: T.text }}>2 real conversations</strong> and answer — just like the real exam
+          </p>
+
+          {/* Feature cards */}
+          <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%', maxWidth: 360, marginBottom: 28, animationDelay: '.15s' }}>
+            {[
+              { icon: '🔊', title: 'Real voices', desc: 'Male & female speakers — just like the test', color: T.blue },
+              { icon: '🎯', title: '2 CELPIP tasks', desc: 'Part 1 (Problem Solving) + Part 3 (Information)', color: T.purple },
+              { icon: '⚡', title: 'Instant feedback', desc: 'See the correct answer with explanation', color: T.green },
+            ].map((f, i) => (
+              <div key={i} style={{
+                display: 'flex', alignItems: 'center', gap: 12, padding: '12px 14px',
+                background: `${f.color}08`, border: `1px solid ${f.color}18`, borderRadius: 14,
+              }}>
+                <div style={{ width: 40, height: 40, borderRadius: 12, background: `${f.color}15`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{f.icon}</div>
+                <div style={{ textAlign: 'left' }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 700 }}>{f.title}</div>
+                  <div style={{ fontSize: '0.75rem', color: T.muted, lineHeight: 1.4 }}>{f.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button className="btn-hover fade-up" onClick={() => setStep('exercise')} style={{
+            width: '100%', maxWidth: 360, padding: '17px 24px', borderRadius: 16, border: 'none',
+            background: `linear-gradient(135deg, ${T.blue}, #2563eb)`, color: '#fff',
+            fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer',
+            boxShadow: `0 6px 28px ${T.blue}35`, animationDelay: '.25s',
+            animation: 'fadeUp .5s ease-out .25s both',
+          }}>
+            🎧 Start Listening Practice
+          </button>
+
+          <div className="fade-up" style={{ display: 'flex', gap: 14, marginTop: 16, fontSize: 12, color: T.muted, animationDelay: '.35s' }}>
+            <span>✅ Free</span><span>⚡ 2 min</span><span>🔒 No signup</span>
+          </div>
+        </div>
+
+        <div style={{ padding: '16px 0 28px', textAlign: 'center' }}>
+          <div style={{ padding: '8px 16px', borderRadius: 10, fontSize: 12, color: T.muted, display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}>
+            {['🇨🇦','🇮🇳','🇧🇷'].map((f, i) => <span key={i} style={{ fontSize: 14, marginLeft: i ? -4 : 0 }}>{f}</span>)}
+            <span>Trusted by <strong style={{ color: T.text }}>350+</strong> students</span>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+
+  /* ═══ RESULTS ═══ */
+  if (step === 'results') {
+    const pct = score / EXERCISES.length;
+    const scoreColor = pct >= 0.8 ? T.green : pct >= 0.5 ? T.orange : T.red;
+    return (
+      <>
+        <style>{CSS}</style>
+        <div style={{
+          minHeight: '100dvh', background: `linear-gradient(180deg, ${T.bg} 0%, #131832 100%)`,
+          color: T.text, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+          padding: '24px 20px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        }}>
+          <div className="fade-up" style={{
+            width: 130, height: 130, borderRadius: '50%', margin: '0 auto 20px',
+            background: `conic-gradient(${scoreColor} ${pct * 360}deg, ${T.surface2} 0deg)`,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: `0 0 40px ${scoreColor}30`,
+          }}>
+            <div style={{ width: 104, height: 104, borderRadius: '50%', background: T.bg, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ fontSize: 30, fontWeight: 800 }}>{score}/{EXERCISES.length}</div>
+              <div style={{ fontSize: 11, color: T.muted }}>correct</div>
+            </div>
+          </div>
+
+          <h2 className="fade-up" style={{ fontSize: '1.4rem', fontWeight: 800, margin: '0 0 6px', animationDelay: '.1s' }}>
+            {pct >= 1 ? 'Perfect! 🎉' : pct >= 0.5 ? 'Good start! 👏' : 'Keep practicing! 💪'}
+          </h2>
+          <p className="fade-up" style={{ color: T.muted, margin: '0 0 6px', fontSize: '0.88rem', textAlign: 'center', animationDelay: '.15s' }}>
+            That was just 2 questions from the Listening section.
+          </p>
+          <p className="fade-up" style={{ color: T.text, margin: '0 0 24px', fontSize: '0.95rem', fontWeight: 700, textAlign: 'center', animationDelay: '.2s' }}>
+            Want to practice <span style={{ color: T.blue }}>Speaking</span>, <span style={{ color: T.purple }}>Reading</span> & <span style={{ color: T.orange }}>Writing</span> too?
+          </p>
+
+          <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 24, maxWidth: 320, width: '100%', animationDelay: '.25s' }}>
+            {[
+              ['🎯', '10 free exercises daily'],
+              ['🗣️', 'Speaking with AI feedback'],
+              ['🎧', 'Full listening with real voices'],
+              ['📖', 'Reading passages & comprehension'],
+              ['📊', 'Track your progress & rank up'],
+            ].map(([e, t], i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: '0.85rem', color: 'rgba(255,255,255,0.75)' }}>
+                <span style={{ fontSize: 16 }}>{e}</span><span>{t}</span>
+              </div>
+            ))}
+          </div>
+
+          <button className="btn-hover fade-up" onClick={goSignup} style={{
+            width: '100%', maxWidth: 320, padding: '16px', borderRadius: 14, border: 'none',
+            background: `linear-gradient(135deg, ${T.red}, #ff5252)`, color: '#fff',
+            fontSize: '1.05rem', fontWeight: 700, cursor: 'pointer',
+            boxShadow: `0 4px 20px ${T.redGlow}`, animationDelay: '.3s',
+            animation: 'glow 2.5s infinite, fadeUp .5s ease-out .3s both',
+          }}>
+            Create Free Account 🚀
+          </button>
+          <p className="fade-up" style={{ margin: '14px 0', fontSize: '0.8rem', color: T.muted, animationDelay: '.35s' }}>
+            Already have an account? <span onClick={goLogin} style={{ color: T.blue, cursor: 'pointer', textDecoration: 'underline' }}>Log in</span>
+          </p>
+        </div>
+      </>
+    );
+  }
+
+  /* ═══ EXERCISE ═══ */
+  if (!ex) return null;
+  const canAnswer = audioPhase === 'done';
+  const uniqueVoices = [...new Set(ex.audioLines.map(l => l.voice))];
 
   return (
-    <div style={{ minHeight: '100vh', background: T.bg, color: T.text, fontFamily: "'Inter','Segoe UI',sans-serif", position: 'relative', overflow: 'hidden' }}>
-      {/* Global styles */}
-      <style>{`
-        @keyframes aurora {
-          0% { transform: translate(0,0) rotate(0deg) scale(1); }
-          33% { transform: translate(30px,-50px) rotate(120deg) scale(1.1); }
-          66% { transform: translate(-20px,20px) rotate(240deg) scale(0.9); }
-          100% { transform: translate(0,0) rotate(360deg) scale(1); }
-        }
-        @keyframes ctaPulse {
-          0%,100% { box-shadow: 0 4px 20px rgba(255,59,59,0.4); transform: scale(1); }
-          50% { box-shadow: 0 8px 40px rgba(255,59,59,0.6); transform: scale(1.03); }
-        }
-        @keyframes shimmer {
-          0% { background-position: -200% center; }
-          100% { background-position: 200% center; }
-        }
-        .aurora-orb {
-          position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.12;
-          animation: aurora 15s ease-in-out infinite; pointer-events: none;
-        }
-        .cta-pulse { animation: ctaPulse 2s ease-in-out infinite; }
-        .cta-pulse:hover { animation: none; transform: scale(1.05); box-shadow: 0 8px 40px rgba(255,59,59,0.7) !important; }
-        .free-badge {
-          background: linear-gradient(90deg, #ff3b3b, #a78bfa, #3b82f6, #a78bfa, #ff3b3b);
-          background-size: 200% auto;
-          animation: shimmer 3s linear infinite;
-          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-      `}</style>
-
-      {/* Aurora orbs */}
-      <div className="aurora-orb" style={{ width: 400, height: 400, top: -100, left: -100, background: 'radial-gradient(circle, #ff3b3b, #8b5cf6)' }} />
-      <div className="aurora-orb" style={{ width: 500, height: 500, top: '40%', right: -150, background: 'radial-gradient(circle, #3b82f6, #06b6d4)', animationDelay: '-5s' }} />
-      <div className="aurora-orb" style={{ width: 350, height: 350, bottom: -50, left: '30%', background: 'radial-gradient(circle, #8b5cf6, #ec4899)', animationDelay: '-10s' }} />
-
-      {/* Sticky CTA bar */}
+    <>
+      <style>{CSS}</style>
       <div style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 50,
-        background: 'rgba(10,14,26,0.95)', backdropFilter: 'blur(10px)',
-        padding: '12px 20px', borderTop: '1px solid rgba(255,255,255,0.08)',
-        display: 'flex', justifyContent: 'center',
+        minHeight: '100dvh', background: T.bg, color: T.text,
+        padding: '16px 16px 40px', maxWidth: 520, margin: '0 auto',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
       }}>
-        <button className="cta-pulse" onClick={cta} style={{
-          background: `linear-gradient(135deg, ${T.red}, #cc2f2f)`,
-          color: '#fff', border: 'none', borderRadius: 14, padding: '14px 40px',
-          fontWeight: 800, fontSize: '1.1rem', cursor: 'pointer', maxWidth: 400, width: '100%',
-        }}>
-          START FREE — No Credit Card
-        </button>
-      </div>
-
-      {/* Hero */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '60px 20px 40px', maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
-        <div style={{
-          display: 'inline-block', background: 'rgba(255,59,59,0.15)', border: '1px solid rgba(255,59,59,0.3)',
-          borderRadius: 50, padding: '6px 16px', fontSize: '0.85rem', fontWeight: 600, color: T.red, marginBottom: 20,
-        }}>
-          279+ students already practicing
-        </div>
-        <h1 style={{ fontSize: '2.2rem', fontWeight: 900, lineHeight: 1.15, margin: '0 0 16px', letterSpacing: '-1px' }}>
-          Failed CELPIP?<br />
-          <span style={{ color: T.red }}>Score CLB 9+ in 30 Days.</span>
-        </h1>
-        <p style={{ fontSize: '1.1rem', color: T.muted, lineHeight: 1.6, margin: '0 0 28px', maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>
-          The AI coach that scores your Speaking &amp; Writing instantly. Practice all 4 skills in real CELPIP format — for free.
-        </p>
-        <button className="cta-pulse" onClick={cta} style={{
-          background: `linear-gradient(135deg, ${T.red}, #cc2f2f)`,
-          color: '#fff', border: 'none', borderRadius: 14, padding: '16px 48px',
-          fontWeight: 800, fontSize: '1.15rem', cursor: 'pointer',
-        }}>
-          Practice Free Now
-        </button>
-        <p style={{ color: T.muted, fontSize: '0.85rem', marginTop: 10 }}>
-          No credit card required. <span className="free-badge" style={{ fontWeight: 800, fontSize: '0.95rem' }}>10 FREE exercises daily</span>
-        </p>
-      </section>
-
-      {/* Pain → Solution */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px', maxWidth: 600, margin: '0 auto' }}>
-        <div style={{ background: T.surface, borderRadius: 20, padding: '28px 24px', marginBottom: 16 }}>
-          <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: '0 0 16px', color: T.red }}>
-            Sound familiar?
-          </h3>
-          {[
-            '"I studied for months but still got CLB 7"',
-            '"I paid $300 for a course with 30 students — no personal feedback"',
-            '"I don\'t know WHY I\'m losing marks in Speaking"',
-            '"My Express Entry is stuck — I need +40 CRS points"',
-          ].map((pain, i) => (
-            <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 12 }}>
-              <span style={{ color: T.red, fontSize: '1.2rem', flexShrink: 0 }}>&#10007;</span>
-              <span style={{ color: T.muted, fontSize: '0.95rem', fontStyle: 'italic' }}>{pain}</span>
-            </div>
-          ))}
+        {/* Header */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+          <span style={{ fontSize: 15, fontWeight: 800 }}>🎯 CELPIP <span style={{ color: T.red }}>AI Coach</span></span>
+          <span style={{ fontSize: 11, color: T.muted, background: T.surface2, padding: '4px 10px', borderRadius: 8 }}>Free Trial</span>
         </div>
 
-        <div style={{ background: T.surface, borderRadius: 20, padding: '28px 24px' }}>
-          <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: '0 0 16px', color: T.positive }}>
-            What if you could...
-          </h3>
-          {[
-            'Get instant AI feedback on every Speaking & Writing answer',
-            'Practice unlimited CELPIP exercises — all 4 skills',
-            'See exactly where you lose marks and how to fix it',
-            'Study 30 min/day and improve 1-2 CLB levels in a month',
-          ].map((sol, i) => (
-            <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginBottom: 12 }}>
-              <span style={{ color: T.positive, fontSize: '1.2rem', flexShrink: 0 }}>&#10003;</span>
-              <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem' }}>{sol}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px', maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '0 0 24px' }}>How It Works</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-          {[
-            { step: '1', title: 'Pick a Skill', desc: 'Listening, Reading, Writing, or Speaking', color: '#3b82f6' },
-            { step: '2', title: 'Practice', desc: 'Real CELPIP format exercises', color: '#f59e0b' },
-            { step: '3', title: 'Get AI Feedback', desc: 'Instant scores + corrections', color: '#8b5cf6' },
-            { step: '4', title: 'Improve', desc: 'Track progress, climb rankings', color: '#ff3b3b' },
-          ].map(s => (
-            <div key={s.step} style={{ background: T.surface, borderRadius: 16, padding: '20px 16px', textAlign: 'center' }}>
-              <div style={{
-                width: 36, height: 36, borderRadius: 10, background: `${s.color}20`, color: s.color,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontWeight: 900, fontSize: '1rem', margin: '0 auto 10px',
-              }}>{s.step}</div>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 4 }}>{s.title}</div>
-              <div style={{ color: T.muted, fontSize: '0.8rem' }}>{s.desc}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Social proof */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px', maxWidth: 600, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '0 0 24px', textAlign: 'center' }}>Real Results</h2>
-        {[
-          { name: 'Priya K.', flag: '\ud83c\uddee\ud83c\uddf3', text: 'I went from CLB 7 to CLB 9 in 3 weeks. The Speaking feedback is incredible — it shows exactly what to fix.', score: 'CLB 7 → 9' },
-          { name: 'Paulo M.', flag: '\ud83c\udde7\ud83c\uddf7', text: 'Paid $300 for a prep course before. This free tool is better. My Express Entry got approved last month.', score: '+50 CRS' },
-          { name: 'Amandeep S.', flag: '\ud83c\uddee\ud83c\uddf3', text: 'The daily drills kept me consistent. 30 minutes a day for a month and I passed with CLB 10.', score: 'CLB 10' },
-        ].map((t, i) => (
-          <div key={i} style={{ background: T.surface, borderRadius: 16, padding: '20px', marginBottom: 12 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ fontSize: '1.2rem' }}>{t.flag}</span>
-                <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>{t.name}</span>
-              </div>
-              <span style={{ background: `${T.positive}20`, color: T.positive, padding: '4px 10px', borderRadius: 8, fontSize: '0.8rem', fontWeight: 700 }}>
-                {t.score}
-              </span>
-            </div>
-            <p style={{ color: T.muted, fontSize: '0.9rem', margin: 0, lineHeight: 1.5, fontStyle: 'italic' }}>
-              &ldquo;{t.text}&rdquo;
-            </p>
-          </div>
-        ))}
-      </section>
-
-      {/* Price comparison */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px', maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '0 0 8px' }}>Save Thousands</h2>
-        <p style={{ color: T.muted, fontSize: '0.95rem', margin: '0 0 24px' }}>Compare us to traditional CELPIP prep</p>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-          <div style={{ background: T.surface, borderRadius: 16, padding: '24px 16px', opacity: 0.7 }}>
-            <div style={{ color: T.muted, fontSize: '0.85rem', fontWeight: 600, marginBottom: 8 }}>Others</div>
-            <div style={{ fontSize: '1.8rem', fontWeight: 900, color: T.red, marginBottom: 4 }}>CA$49.99</div>
-            <div style={{ color: T.muted, fontSize: '0.8rem' }}>/month</div>
-            <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column' as const, gap: 6, textAlign: 'left' as const }}>
-              {['Group classes', 'Limited practice', 'No AI feedback', 'Fixed schedule'].map((f, i) => (
-                <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'center', color: T.muted, fontSize: '0.8rem' }}>
-                  <span style={{ color: T.red }}>&#10007;</span>{f}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div style={{
-            background: `linear-gradient(135deg, ${T.positive}15, ${T.positive}05)`,
-            border: `2px solid ${T.positive}40`, borderRadius: 16, padding: '24px 16px', position: 'relative' as const,
-          }}>
+        {/* Progress */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+          <div style={{ flex: 1, height: 5, background: T.surface2, borderRadius: 3, overflow: 'hidden' }}>
             <div style={{
-              position: 'absolute' as const, top: -10, left: '50%', transform: 'translateX(-50%)',
-              background: T.positive, color: '#fff', padding: '3px 12px', borderRadius: 20,
-              fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase' as const,
-            }}>Best Value</div>
-            <div style={{ color: T.positive, fontSize: '0.85rem', fontWeight: 600, marginBottom: 8 }}>CELPIP AI Coach</div>
-            <div className="free-badge" style={{ fontSize: '1.8rem', fontWeight: 900, marginBottom: 4 }}>FREE</div>
-            <div style={{ color: T.muted, fontSize: '0.8rem' }}>to start</div>
-            <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column' as const, gap: 6, textAlign: 'left' as const }}>
-              {['AI feedback instantly', 'All 4 skills', 'Unlimited exercises', 'Practice anytime'].map((f, i) => (
-                <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'center', fontSize: '0.8rem' }}>
-                  <span style={{ color: T.positive }}>&#10003;</span>{f}
-                </div>
-              ))}
-            </div>
+              height: '100%', borderRadius: 3,
+              background: `linear-gradient(90deg, ${T.blue}, #60a5fa)`,
+              width: `${((exIdx + (answered ? 1 : 0)) / EXERCISES.length) * 100}%`,
+              transition: 'width .4s',
+            }} />
           </div>
+          <span style={{ fontSize: 12, color: T.muted, fontWeight: 600 }}>{exIdx + 1}/{EXERCISES.length}</span>
         </div>
-      </section>
 
-      {/* Express Entry hook */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px', maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
-        <div style={{
-          background: 'linear-gradient(135deg, #1e3a5f, #0a1628)',
-          borderRadius: 20, padding: '32px 24px', border: '1px solid rgba(59,130,246,0.2)',
+        {/* Part badge */}
+        <div className="fade-up" style={{
+          display: 'inline-flex', alignItems: 'center', gap: 5, padding: '5px 12px',
+          background: `${T.blue}15`, border: `1px solid ${T.blue}30`,
+          borderRadius: 20, fontSize: 12, fontWeight: 700, color: T.blue, marginBottom: 14,
         }}>
-          <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>&#127464;&#127462;</div>
-          <h3 style={{ fontSize: '1.3rem', fontWeight: 800, margin: '0 0 8px' }}>Stuck in Express Entry?</h3>
-          <p style={{ color: T.muted, fontSize: '0.95rem', margin: '0 0 16px', lineHeight: 1.5 }}>
-            CLB 7 → CLB 9 = <strong style={{ color: T.blue }}>+40 CRS points</strong><br />
-            That&apos;s often the difference between an ITA and 6 more months of waiting.
-          </p>
-          <button onClick={cta} style={{
-            background: T.blue, color: '#fff', border: 'none', borderRadius: 12,
-            padding: '14px 36px', fontWeight: 800, fontSize: '1rem', cursor: 'pointer',
+          🎧 {ex.label}
+        </div>
+
+        {/* Audio player */}
+        <div className="fade-up" style={{
+          background: 'linear-gradient(135deg, #0f1a3a 0%, #162044 50%, #1a2550 100%)',
+          borderRadius: 18, padding: '20px 18px', marginBottom: 16, textAlign: 'center',
+          border: `1px solid ${T.blue}15`, boxShadow: `0 4px 24px ${T.blue}10`,
+        }}>
+          {/* Speaker avatars */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 16, marginBottom: 14 }}>
+            {uniqueVoices.map((voice, i) => {
+              const isActive = activeLineIdx >= 0 && ex.audioLines[activeLineIdx]?.voice === voice;
+              const isMale = voice === 'male';
+              const color = isMale ? '#3b82f6' : '#ec4899';
+              return (
+                <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+                  <div style={{
+                    width: 48, height: 48, borderRadius: '50%',
+                    background: isActive ? `${color}30` : `${color}10`,
+                    border: `2.5px solid ${isActive ? color : `${color}25`}`,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: 24, transition: 'all .2s',
+                    boxShadow: isActive ? `0 0 20px ${color}40` : 'none',
+                    animation: isActive ? 'pulse 1s infinite' : 'none',
+                  }}>{isMale ? '👨' : '👩'}</div>
+                  <span style={{ fontSize: 10, color: isActive ? color : T.muted, fontWeight: 600 }}>
+                    {isMale ? 'Speaker 1' : 'Speaker 2'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div style={{ fontSize: '0.78rem', color: T.muted, marginBottom: 14 }}>
+            {audioPhase === 'idle' ? 'Tap play and listen carefully' : audioPhase === 'playing' ? 'Listen to both speakers...' : '✅ Audio finished — answer below'}
+          </div>
+
+          <button className="btn-hover" onClick={playAudio} disabled={audioPhase === 'playing'} style={{
+            background: audioPhase === 'done' ? 'rgba(255,255,255,0.08)' : `linear-gradient(135deg, ${T.blue}, #2563eb)`,
+            border: audioPhase === 'done' ? `1px solid rgba(255,255,255,0.12)` : 'none',
+            color: '#fff', borderRadius: 12, padding: '13px 28px', cursor: audioPhase === 'playing' ? 'default' : 'pointer',
+            fontWeight: 700, fontSize: '0.9rem', opacity: audioPhase === 'playing' ? .6 : 1,
+            boxShadow: audioPhase !== 'done' ? `0 4px 16px ${T.blue}30` : 'none',
           }}>
-            Boost Your CRS Score
+            {audioPhase === 'idle' ? '▶️  Play Audio' : audioPhase === 'playing' ? '🔊 Playing...' : '🔁 Play Again'}
           </button>
         </div>
-      </section>
 
-      {/* FAQ */}
-      <section style={{ position: 'relative', zIndex: 1, padding: '40px 20px 120px', maxWidth: 600, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: '0 0 24px', textAlign: 'center' }}>Common Questions</h2>
-        {[
-          { q: 'Is it really free?', a: 'Yes. 10 free exercises daily, no credit card needed. Pro unlocks unlimited + advanced content.' },
-          { q: 'How does AI scoring work?', a: 'Our AI analyzes your Speaking recordings and Writing answers using CELPIP criteria. You get scores, corrections, and improvement tips instantly.' },
-          { q: 'What skills are covered?', a: 'All 4 CELPIP skills: Listening, Reading, Writing, and Speaking. Real test format exercises.' },
-          { q: 'Can I use it on my phone?', a: 'Yes! Works on any device — phone, tablet, or computer. Also available on Google Play.' },
-        ].map((faq, i) => (
-          <div key={i} style={{ background: T.surface, borderRadius: 14, padding: '18px 20px', marginBottom: 10 }}>
-            <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>{faq.q}</div>
-            <div style={{ color: T.muted, fontSize: '0.88rem', lineHeight: 1.5 }}>{faq.a}</div>
+        {/* Question */}
+        <div style={{
+          background: T.card, borderRadius: 14, padding: '12px 14px', marginBottom: 12,
+          fontSize: '0.92rem', lineHeight: 1.55, fontWeight: 600, border: `1px solid ${T.subtle}`,
+          opacity: canAnswer ? 1 : .3, transition: 'opacity .3s',
+        }}>{ex.question}</div>
+
+        {/* Options */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, opacity: canAnswer ? 1 : .25, pointerEvents: canAnswer ? 'auto' : 'none', transition: 'opacity .3s' }}>
+          {shuffledOpts.map((opt, i) => {
+            const isSel = selected === i;
+            const isC = answered && opt.origIdx === ex.correct;
+            const isW = answered && isSel && !isC;
+            const L = ['A', 'B', 'C', 'D'];
+            let bg = T.surface2, bdr = T.subtle, lBg = 'rgba(255,255,255,0.06)', lC = T.muted;
+            if (isC) { bg = T.correctBg; bdr = T.correctBorder; lBg = T.green; lC = '#fff'; }
+            if (isW) { bg = T.wrongBg; bdr = T.wrongBorder; lBg = T.wrongBorder; lC = '#fff'; }
+            return (
+              <button key={i} className="btn-hover" onClick={() => handleAnswer(i)} disabled={answered} style={{
+                background: bg, border: `1.5px solid ${bdr}`, borderRadius: 12, padding: '12px 14px',
+                cursor: answered ? 'default' : 'pointer', textAlign: 'left', fontSize: '0.85rem', lineHeight: 1.5,
+                color: T.text, transition: 'all .15s', display: 'flex', alignItems: 'flex-start', gap: 10,
+              }}>
+                <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 26, height: 26, borderRadius: '50%', flexShrink: 0, background: lBg, color: lC, fontSize: 12, fontWeight: 700 }}>
+                  {isC ? '✓' : isW ? '✗' : L[i]}
+                </span>
+                <span>{opt.text}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Feedback */}
+        {answered && (
+          <div ref={feedbackRef} className="fade-up" style={{ marginTop: 14, borderRadius: 14, padding: 14, background: isCorrect ? T.correctBg : T.wrongBg, border: `1px solid ${isCorrect ? T.correctBorder : T.wrongBorder}` }}>
+            <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>{isCorrect ? '✅ Correct!' : '❌ Not quite'}</div>
+            <div style={{ fontSize: '0.84rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.6 }}>{ex.explanation}</div>
+            <button className="btn-hover" onClick={handleNext} style={{
+              marginTop: 14, background: `linear-gradient(135deg, ${T.blue}, #2563eb)`, border: 'none', color: '#fff',
+              borderRadius: 12, padding: '13px 20px', cursor: 'pointer', fontWeight: 700, fontSize: '0.9rem', width: '100%',
+              boxShadow: `0 4px 16px ${T.blue}30`,
+            }}>
+              {exIdx + 1 < EXERCISES.length ? 'Next Question →' : 'See Results 🎯'}
+            </button>
           </div>
-        ))}
-      </section>
-    </div>
+        )}
+      </div>
+    </>
   );
 }

@@ -5,6 +5,8 @@ import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ArrowRight, BookOpen, Sparkles, Trophy } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { useGuest } from '@/hooks/useGuest';
+import GuestWall from '@/components/GuestWall';
 import ExerciseOfferPopup from '@/components/ExerciseOfferPopup';
 
 const T = {
@@ -49,6 +51,7 @@ export default function UnitPage() {
   const params = useParams();
   const unitId = Number(params.unitId);
   const { isPro, loading: planLoading } = usePlan();
+  const { isGuest, guestBlocked, guardAction, showWall, setShowWall, checkDone, trackExercise } = useGuest();
 
   const [unit, setUnit] = useState<Unit | null>(null);
   const [course, setCourse] = useState<any>(null);
@@ -116,7 +119,7 @@ export default function UnitPage() {
       }
     });
     // Load daily free usage
-    fetch('/api/daily-usage?category=drills')
+    if (!isGuest) fetch('/api/daily-usage?category=drills')
       .then(r => r.json())
       .then(data => {
         if (data.isPro) return;
@@ -129,7 +132,7 @@ export default function UnitPage() {
 
   // Lock check
   const FREE_EXERCISES = freeLimit;
-  const hitPaywall = !isPro && (freeBlocked || (freeUsed + total) > FREE_EXERCISES);
+  const hitPaywall = isGuest ? guestBlocked : (!isPro && (freeBlocked || (freeUsed + total) > FREE_EXERCISES));
 
   const exercise = unit?.exercises[exerciseIdx];
 
@@ -162,14 +165,17 @@ export default function UnitPage() {
 
   // Log activity + earn XP + count daily usage
   const logExercise = useCallback(() => {
+    if (isGuest) {
+      
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
+      return;
+    }
     fetch('/api/log-activity', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ type: 'writing', count: 1 }),
     }).catch(() => {});
-    // Trigger feedback popup after 2 exercises
     if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
-    // Increment daily usage for free tier
     if (!isPro) {
       fetch('/api/daily-usage', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ category: 'drills' }) })
         .then(r => r.json())
@@ -179,7 +185,7 @@ export default function UnitPage() {
         })
         .catch(() => {});
     }
-  }, [isPro]);
+  }, [isPro, isGuest, guardAction]);
 
   const handleAnswer = useCallback((selectedIdx: number) => {
     if (answered || !exercise) return;
@@ -191,6 +197,7 @@ export default function UnitPage() {
     setIsCorrect(correct);
     setTotal(t => t + 1); logExercise();
     if (correct) setScore(s => s + 1);
+    if (isGuest) trackExercise();
     setTimeout(() => feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
   }, [answered, exercise, shuffledOpts]);
 
@@ -398,6 +405,7 @@ export default function UnitPage() {
   }
 
   // ─── PAYWALL ───
+
   if (hitPaywall) {
     // Calculate next reset (midnight Vancouver time)
     const now = new Date();
@@ -918,6 +926,7 @@ export default function UnitPage() {
           </button>
         </div>
       )}
+    {showWall && <GuestWall isLoggedIn={false} />}
     </div>
   );
 }

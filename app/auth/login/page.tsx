@@ -43,7 +43,14 @@ function LoginForm() {
         router.refresh();
         // Small delay to let middleware pick up the new session cookie
         await new Promise(r => setTimeout(r, 300));
-        router.push(redirectTo);
+        // Check for redirect from GuestWall
+        const savedRedirect = localStorage.getItem('redirect_after_login');
+        if (savedRedirect) {
+          localStorage.removeItem('redirect_after_login');
+          router.push(savedRedirect);
+        } else {
+          router.push(redirectTo);
+        }
       } else {
         // Sign up
         if (formData.password !== formData.confirmPassword) {

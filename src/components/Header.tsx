@@ -53,6 +53,8 @@ export const Header: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+    if (pathname.startsWith('/try') || pathname.startsWith('/start')) return null;
+
   const isActive = (to: string) => {
     if (to === '/writing') return pathname.startsWith('/writing');
     if (to === '/listening') return pathname.startsWith('/listening');

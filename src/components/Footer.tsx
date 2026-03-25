@@ -1,13 +1,17 @@
 'use client';
 
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, Mail, BookOpen, Headphones, PenLine, Mic, Sparkles } from 'lucide-react';
 import styles from '@/styles/Footer.module.scss';
 
 export default function Footer() {
+  const pathname = usePathname();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'done'>('idle');
+
+  if (pathname.startsWith('/try') || pathname.startsWith('/start')) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

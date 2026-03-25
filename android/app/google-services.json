@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028840923176",
+    "project_id": "jarvis-tools-489421-d207b",
+    "storage_bucket": "jarvis-tools-489421-d207b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028840923176:android:d626bb99c3141df7d4551d",
+        "android_client_info": {
+          "package_name": "com.celpipaicoach.twa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPWZI1QBqtdGSv6Cs2-3KmnDoCIBmdPYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

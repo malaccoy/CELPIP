@@ -5,6 +5,8 @@ import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, XCircle, ArrowRight, Sparkles, Trophy, Headphones, Volume2, Loader } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
+import { useGuest } from '@/hooks/useGuest';
+import GuestWall from '@/components/GuestWall';
 import ExerciseOfferPopup from '@/components/ExerciseOfferPopup';
 
 const T = {
@@ -52,6 +54,7 @@ export default function ListeningUnitPage() {
   const params = useParams();
   const unitId = Number(params.unitId);
   const { isPro, loading: planLoading } = usePlan();
+  const { isGuest, guestBlocked, guardAction, showWall, setShowWall, checkDone, trackExercise } = useGuest();
 
   const [unit, setUnit] = useState<Unit | null>(null);
   const [phase, setPhase] = useState<'listen' | 'answer' | 'result'>('listen');
@@ -67,6 +70,7 @@ export default function ListeningUnitPage() {
   const [total, setTotal] = useState(0);
   const [animateIn, setAnimateIn] = useState(true);
   const [audioPlaying, setAudioPlaying] = useState(false);
+  const [activeLineIdx, setActiveLineIdx] = useState(-1);
   const [audioPlayed, setAudioPlayed] = useState(false);
   const [audioLoading, setAudioLoading] = useState(false);
   const [shuffledOpts, setShuffledOpts] = useState<{label: string; origIdx: number}[]>([]);
@@ -109,7 +113,7 @@ export default function ListeningUnitPage() {
         setUnit({ ...u, exercises: triplets.flat() });
       }
     });
-    fetch('/api/daily-usage?category=drills')
+    if (!isGuest) fetch('/api/daily-usage?category=drills')
       .then(r => r.json())
       .then(data => {
         if (data.isPro) return;
@@ -193,10 +197,12 @@ export default function ListeningUnitPage() {
       if (idx >= audioQueueRef.current.length) {
         setAudioPlaying(false);
         setAudioPlayed(true);
+        setActiveLineIdx(-1);
         setPhase('answer');
         return;
       }
 
+      setActiveLineIdx(idx);
       const line = audioQueueRef.current[idx];
       const url = `/api/tts?voice=${encodeURIComponent(line.voice)}&text=${encodeURIComponent(line.text)}`;
       const audio = new Audio(url);
@@ -205,11 +211,11 @@ export default function ListeningUnitPage() {
       audio.oncanplaythrough = () => setAudioLoading(false);
       audio.onended = () => {
         audioIdxRef.current++;
-        setTimeout(playNext, 400);
+        setTimeout(playNext, 150);
       };
       audio.onerror = () => {
         audioIdxRef.current++;
-        setTimeout(playNext, 200);
+        setTimeout(playNext, 100);
       };
       audio.play().catch(() => {
         audioIdxRef.current++;
@@ -231,28 +237,32 @@ export default function ListeningUnitPage() {
     setAnswered(true);
     setIsCorrect(correct);
     if (correct) setScore(s => s + 1);
+    if (isGuest) trackExercise();
     setTotal(t => t + 1);
 
     // Log activity
-    fetch('/api/log-activity', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ type: 'listening', count: 1 }),
-    }).catch(() => {});
-
-    // Trigger feedback popup after 2 exercises
-    if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
-
-    // Increment daily usage for free users
-    if (!isPro) {
-      fetch('/api/daily-usage', {
+    if (isGuest) {
+      
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
+    } else {
+      fetch('/api/log-activity', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ category: 'drills' }),
-      })
-        .then(r => r.json())
-        .then(data => { if (!data.isPro) setFreeUsed(data.used || 0); })
-        .catch(() => {});
+        body: JSON.stringify({ type: 'listening', count: 1 }),
+      }).catch(() => {});
+
+      if (typeof window !== 'undefined') window.dispatchEvent(new Event('exercise-complete'));
+
+      if (!isPro) {
+        fetch('/api/daily-usage', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ category: 'drills' }),
+        })
+          .then(r => r.json())
+          .then(data => { if (!data.isPro) setFreeUsed(data.used || 0); })
+          .catch(() => {});
+      }
     }
 
     setTimeout(() => {
@@ -297,7 +307,8 @@ export default function ListeningUnitPage() {
   if (planLoading || !unit) return <div style={{ minHeight: '100vh', background: T.bg }} />;
 
   // Paywall
-  if (freeBlocked && !isPro) {
+
+  if ((isGuest ? guestBlocked : freeBlocked) && !isPro) {
     return (
       <div style={{
         minHeight: '100vh', background: T.bg, color: T.text,
@@ -428,27 +439,76 @@ export default function ListeningUnitPage() {
         border: `1px solid rgba(59,130,246,0.2)`,
         textAlign: 'center',
       }}>
-        {/* Speakers indicator */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-          {exercise.audioLines.map((line, i) => {
-            const voiceEmoji = line.voice === 'female' || line.voice === 'female2' ? '👩' : 
-                              line.voice === 'narrator' ? '📰' : '👨';
-            const voiceColor = line.voice === 'female' || line.voice === 'female2' ? '#ec4899' :
-                              line.voice === 'narrator' ? T.gold : T.blue;
-            const isActive = audioPlaying && audioIdxRef.current === i;
-            return (
-              <div key={i} style={{
-                width: 36, height: 36, borderRadius: 12,
-                background: isActive ? `${voiceColor}33` : `${voiceColor}15`,
-                border: isActive ? `2px solid ${voiceColor}` : `1px solid ${voiceColor}44`,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '1.1rem', transition: 'all 0.3s',
-                transform: isActive ? 'scale(1.15)' : 'scale(1)',
-              }}>
-                {voiceEmoji}
-              </div>
-            );
-          })}
+        {/* Speakers */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.25rem', marginBottom: '1.25rem' }}>
+          {(() => {
+            // Deduplicate voices to show unique speakers
+            const seen = new Set<string>();
+            const speakers: { voice: string; indices: number[] }[] = [];
+            exercise.audioLines.forEach((line, i) => {
+              if (!seen.has(line.voice)) {
+                seen.add(line.voice);
+                speakers.push({ voice: line.voice, indices: [i] });
+              } else {
+                speakers.find(s => s.voice === line.voice)?.indices.push(i);
+              }
+            });
+            
+            const voiceMeta: Record<string, { name: string; initials: string; color: string; gradient: string }> = {
+              female: { name: 'Ava', initials: 'A', color: '#ec4899', gradient: 'linear-gradient(135deg, #ec4899, #f472b6)' },
+              female2: { name: 'Emma', initials: 'E', color: '#f472b6', gradient: 'linear-gradient(135deg, #f472b6, #fb7185)' },
+              male: { name: 'Andrew', initials: 'A', color: '#3b82f6', gradient: 'linear-gradient(135deg, #3b82f6, #60a5fa)' },
+              male2: { name: 'Brian', initials: 'B', color: '#6366f1', gradient: 'linear-gradient(135deg, #6366f1, #818cf8)' },
+              narrator: { name: 'Narrator', initials: 'N', color: '#f59e0b', gradient: 'linear-gradient(135deg, #f59e0b, #fbbf24)' },
+            };
+            
+            return speakers.map((sp) => {
+              const meta = voiceMeta[sp.voice] || { name: sp.voice, initials: '?', color: '#888', gradient: 'linear-gradient(135deg, #888, #aaa)' };
+              const isActive = audioPlaying && sp.indices.includes(activeLineIdx);
+              
+              return (
+                <div key={sp.voice} style={{
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+                  opacity: audioPlaying && !isActive ? 0.4 : 1,
+                  transition: 'all 0.3s ease',
+                }}>
+                  <div style={{
+                    width: 52, height: 52, borderRadius: '50%',
+                    background: meta.gradient,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '1.25rem', fontWeight: 800, color: '#fff',
+                    border: isActive ? '3px solid #fff' : '3px solid transparent',
+                    boxShadow: isActive ? `0 0 20px ${meta.color}66` : 'none',
+                    transform: isActive ? 'scale(1.15)' : 'scale(1)',
+                    transition: 'all 0.3s ease',
+                    position: 'relative' as const,
+                  }}>
+                    {meta.initials}
+                    {isActive && (
+                      <div style={{
+                        position: 'absolute', bottom: -3, right: -3,
+                        width: 16, height: 16, borderRadius: '50%',
+                        background: '#22c55e', border: '2px solid #1b1f2a',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      }}>
+                        <div style={{
+                          width: 6, height: 6, borderRadius: '50%', background: '#fff',
+                          animation: 'pulse 1s ease-in-out infinite',
+                        }} />
+                      </div>
+                    )}
+                  </div>
+                  <span style={{
+                    fontSize: '0.7rem', fontWeight: 700,
+                    color: isActive ? meta.color : 'rgba(255,255,255,0.5)',
+                    transition: 'color 0.3s',
+                  }}>
+                    {meta.name}
+                  </span>
+                </div>
+              );
+            });
+          })()}
         </div>
 
         {!audioPlayed && !audioPlaying && (
@@ -603,6 +663,7 @@ export default function ListeningUnitPage() {
           to { transform: rotate(360deg); }
         }
       `}</style>
+    {showWall && <GuestWall isLoggedIn={false} />}
     </div>
   );
 }

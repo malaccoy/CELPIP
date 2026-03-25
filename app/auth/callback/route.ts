@@ -12,6 +12,7 @@ export async function GET(request: Request) {
     const supabase = await createClient()
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     if (!error) {
+      // Client-side redirect_after_login is handled by the dashboard/login page
       return NextResponse.redirect(`${SITE_URL}${next}`)
     }
   }

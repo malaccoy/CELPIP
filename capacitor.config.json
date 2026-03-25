@@ -1,0 +1,27 @@
+{
+  "appId": "com.celpipaicoach.twa",
+  "appName": "CELPIP AI Coach",
+  "webDir": "out",
+  "server": {
+    "url": "https://celpipaicoach.com",
+    "cleartext": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#1b1f2a",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#1b1f2a"
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}

@@ -6,13 +6,13 @@ import { usePathname } from 'next/navigation';
 import { Sparkles } from 'lucide-react';
 import styles from '@/styles/FAB.module.scss';
 
-const HIDE_ON = ['/ai-coach', '/mock-exam', '/writing/', '/auth/', '/dashboard'];
+const HIDE_ON = ['/ai-coach', '/mock-exam', '/writing/', '/auth/', '/dashboard', '/drills'];
 
 export default function FAB() {
   const pathname = usePathname();
   
-  // Hide on pages where AI Coach is already active
-  if (HIDE_ON.some(p => pathname.startsWith(p))) return null;
+  // Hide on home page and specific pages
+  if (pathname === '/' || pathname.startsWith('/try') || pathname.startsWith('/start') || HIDE_ON.some(p => pathname.startsWith(p))) return null;
   
   return (
     <Link href="/dashboard" className={styles.fab} aria-label="Practice">

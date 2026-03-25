@@ -17,6 +17,7 @@ const publicRoutes = [
 
 // Route prefixes that don't require authentication (SEO + free content)
 const publicPrefixes = [
+  '/start',
   '/blog',
   '/listening',
   '/reading',
@@ -29,6 +30,8 @@ const publicPrefixes = [
   '/api/battle-transcribe',
   '/api/battle-stats',
   '/api/unsubscribe',
+  '/api/tts',
+  '/api/trial-speaking',
   '/unsubscribe',
   '/battle',
 ]
