@@ -7,7 +7,7 @@ import {
   Loader2, RefreshCw, ArrowRight, Clock, FileText,
   Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus, Play, Pause, Target,
   Flame, Trophy, Lock, CheckCircle, AlertTriangle, Lightbulb, Star, BarChart3,
-  ClipboardList, Mail, PenLine, Library, MessageCircle, Building2, Square, Crosshair
+  ClipboardList, Mail, PenLine, Library, MessageCircle, Building2, Square, Crosshair, Check
 } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
@@ -22,11 +22,11 @@ const MobileTopBar = dynamic(() => import('@/components/MobileTopBar'), { ssr: f
 type Section = 'reading' | 'writing' | 'listening' | 'speaking';
 type Difficulty = 'beginner' | 'intermediate' | 'advanced';
 
-const SECTIONS: { id: Section; label: string; icon: React.ElementType; }[] = [
-  { id: 'reading', label: 'Reading', icon: BookOpen },
-  { id: 'writing', label: 'Writing', icon: PenTool },
-  { id: 'listening', label: 'Listening', icon: Headphones },
-  { id: 'speaking', label: 'Speaking', icon: Mic },
+const SECTIONS: { id: Section; label: string; icon: React.ElementType; color: string; gradient: string; desc: string }[] = [
+  { id: 'reading', label: 'Reading', icon: BookOpen, color: '#2dd4bf', gradient: 'linear-gradient(135deg, #14b8a6, #0d9488)', desc: '4 parts' },
+  { id: 'writing', label: 'Writing', icon: PenTool, color: '#c084fc', gradient: 'linear-gradient(135deg, #a855f7, #7c3aed)', desc: '2 tasks' },
+  { id: 'listening', label: 'Listening', icon: Headphones, color: '#fb923c', gradient: 'linear-gradient(135deg, #f97316, #ea580c)', desc: '6 parts' },
+  { id: 'speaking', label: 'Speaking', icon: Mic, color: '#38bdf8', gradient: 'linear-gradient(135deg, #0ea5e9, #0284c7)', desc: '8 tasks' },
 ];
 
 const PARTS: Record<Section, { id: string; label: string }[]> = {
@@ -880,10 +880,13 @@ export default function AIPracticePage() {
               className={`${isActive ? styles.sectionCardActive : styles.sectionCard} ${styles[s.id]}`}
               onClick={() => handleSectionChange(s.id)}
             >
-              <div className={styles.sectionIcon}>
-                <Icon size={20} />
+              {isActive && <div className={styles.sectionCardGlow} style={{ background: `radial-gradient(circle, ${s.color}20 0%, transparent 70%)` }} />}
+              <div className={styles.sectionIcon} style={isActive ? { background: s.gradient, boxShadow: `0 4px 16px ${s.color}40` } : undefined}>
+                <Icon size={22} />
               </div>
               <span className={styles.sectionLabel}>{s.label}</span>
+              <span className={styles.sectionDesc}>{s.desc}</span>
+              {isActive && <div className={styles.sectionActiveBar} style={{ background: s.gradient }} />}
             </div>
           );
         })}
@@ -892,18 +895,24 @@ export default function AIPracticePage() {
       {/* Part/Task selector */}
       <div className={styles.partSelector}>
         <div className={styles.partSelectorLabel}>
-          {section === 'writing' || section === 'speaking' ? 'Task' : 'Part'}
+          {section === 'writing' || section === 'speaking' ? 'TASK' : 'PART'}
         </div>
         <div className={styles.partChips}>
-          {PARTS[section].map(p => (
-            <div
-              key={p.id}
-              className={partOrTask === p.id ? styles.partChipActive : styles.partChip}
-              onClick={() => { setPartOrTask(p.id); setExercise(null); setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); setListeningPhase('listen'); setHasListened(false); setIsAudioPlaying(false); setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null); resetQuiz(); }}
-            >
-              {p.label}
-            </div>
-          ))}
+          {PARTS[section].map((p, idx) => {
+            const isPartActive = partOrTask === p.id;
+            const activeColor = SECTIONS.find(s => s.id === section)?.color || '#a5b4fc';
+            return (
+              <div
+                key={p.id}
+                className={isPartActive ? styles.partChipActive : styles.partChip}
+                style={isPartActive ? { borderColor: `${activeColor}50`, background: `${activeColor}12`, color: activeColor } : undefined}
+                onClick={() => { setPartOrTask(p.id); setExercise(null); setSpeakingPhase('prompt'); setSpeakingFeedback(null); setAudioBlob(null); setAudioUrl(null); setListeningPhase('listen'); setHasListened(false); setIsAudioPlaying(false); setAudioSrc(null); setClipAudioSrcs([]); setCurrentClipIdx(0); setImageSrc(null); resetQuiz(); }}
+              >
+                <span className={styles.partChipNumber} style={isPartActive ? { background: `${activeColor}25`, color: activeColor } : undefined}>{idx + 1}</span>
+                <span>{p.label.split(' — ')[1]}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -939,17 +948,30 @@ export default function AIPracticePage() {
         <div className={styles.difficultyOptions}>
           {DIFFICULTIES.map(d => {
             const locked = d.id === 'advanced' && !isPro;
+            const isDiffActive = difficulty === d.id;
+            const diffColors: Record<string, { color: string; gradient: string }> = {
+              beginner: { color: '#22c55e', gradient: 'linear-gradient(135deg, #22c55e, #16a34a)' },
+              intermediate: { color: '#f59e0b', gradient: 'linear-gradient(135deg, #f59e0b, #d97706)' },
+              advanced: { color: '#a855f7', gradient: 'linear-gradient(135deg, #a855f7, #7c3aed)' },
+            };
+            const dc = diffColors[d.id];
             return (
               <div
                 key={d.id}
-                className={`${difficulty === d.id ? styles.difficultyActive : styles.difficultyOption} ${locked ? styles.difficultyLocked : ''}`}
+                className={`${isDiffActive ? styles.difficultyActive : styles.difficultyOption} ${locked ? styles.difficultyLocked : ''}`}
+                style={isDiffActive && !locked ? { borderColor: `${dc.color}40`, background: `${dc.color}0a` } : undefined}
                 onClick={() => {
                   if (locked) { router.push('/pricing'); return; }
                   setAutoMode(false); setDifficulty(d.id);
                 }}
               >
-                <span className={styles.difficultyEmoji}>{locked ? <Lock size={20} /> : React.createElement(DIFFICULTY_ICONS[d.id], { size: 20 })}</span>
-                <span className={styles.difficultyLabel}>{d.label}</span>
+                {isDiffActive && !locked && <div className={styles.difficultyCheck} style={{ background: dc.gradient }}><Check size={10} strokeWidth={3} /></div>}
+                <div className={styles.difficultyIconBox} style={isDiffActive && !locked ? { background: `${dc.color}15` } : undefined}>
+                  <span className={styles.difficultyEmoji} style={isDiffActive && !locked ? { color: dc.color } : undefined}>
+                    {locked ? <Lock size={22} /> : React.createElement(DIFFICULTY_ICONS[d.id], { size: 22 })}
+                  </span>
+                </div>
+                <span className={styles.difficultyLabel} style={isDiffActive && !locked ? { color: dc.color } : undefined}>{d.label}</span>
                 <span className={styles.difficultyDesc}>{locked ? 'Pro Only' : d.desc}</span>
               </div>
             );
