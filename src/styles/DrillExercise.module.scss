@@ -1,0 +1,1601 @@
+@use 'design-system' as ds;
+
+// ============================================
+// DRILL EXERCISE — Shared Premium Styles
+// ============================================
+// Used by: drills/page, drills/*/page, drills/*/[unitId]/page
+// Replaces all inline styles with design-system tokens
+
+// ─── Page Shell ───
+.page {
+  min-height: 100vh;
+  background: ds.$bg-primary;
+  color: ds.$text-primary;
+  padding: 0 1rem 6rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pageImmersive {
+  composes: page;
+  padding-bottom: 2rem;
+}
+
+// ─── Page Header ───
+.pageHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 0;
+}
+
+.backBtn {
+  color: ds.$text-dim;
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: ds.$radius-sm;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    color: ds.$text-primary;
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+.backLink {
+  color: ds.$text-dim;
+  display: flex;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: ds.$radius-sm;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    color: ds.$text-primary;
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+.pageTitle {
+  font-family: ds.$font-display;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pageTitleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageSubtitle {
+  color: ds.$text-muted;
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+// ─── Info Banner ───
+.infoBanner {
+  border-radius: ds.$radius-xl;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid;
+
+  p {
+    color: ds.$text-secondary;
+    font-family: ds.$font-body;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  strong {
+    color: ds.$text-primary;
+  }
+}
+
+.infoBannerBlue {
+  composes: infoBanner;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.06));
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.infoBannerRed {
+  composes: infoBanner;
+  background: linear-gradient(135deg, rgba(255, 59, 59, 0.08), rgba(139, 92, 246, 0.06));
+  border-color: rgba(255, 59, 59, 0.1);
+}
+
+.infoBannerGreen {
+  composes: infoBanner;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.08));
+  border-color: rgba(34, 197, 94, 0.15);
+}
+
+.infoBannerPurple {
+  composes: infoBanner;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(99, 102, 241, 0.06));
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+.infoBannerAmber {
+  composes: infoBanner;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(251, 191, 36, 0.06));
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+// ─── Stats Grid (Test at a Glance) ───
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.statCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 0.75rem;
+  border: 1px solid ds.$border-default;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.statLabel {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-dim;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-family: ds.$font-display;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+}
+
+// ─── Daily Free Counter ───
+.dailyCounter {
+  border-radius: ds.$radius-lg;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.08));
+  border: 1px solid rgba(34, 197, 94, 0.15);
+}
+
+.dailyCounterHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.dailyCounterLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: ds.$text-primary;
+}
+
+.dailyCounterUpgrade {
+  background: linear-gradient(135deg, #8b5cf6, #ff3b3b);
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: ds.$radius-sm;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.dailyDots {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.dailyDot {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  transition: background ds.$transition-base;
+}
+
+.dailyDotActive {
+  composes: dailyDot;
+  background: linear-gradient(90deg, ds.$success, ds.$success-light);
+}
+
+.dailyDotInactive {
+  composes: dailyDot;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dailyCounterText {
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  color: ds.$text-muted;
+}
+
+// ─── Course Cards Grid (Drills Hub) ───
+.courseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-xl;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  text-decoration: none;
+  color: ds.$text-primary;
+  transition: all ds.$transition-smooth;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background: ds.$bg-card-hover;
+    transform: translateY(-2px);
+    box-shadow: ds.$shadow-lg;
+  }
+}
+
+.courseCardDisabled {
+  composes: courseCard;
+  opacity: 0.5;
+  border-color: ds.$border-default;
+  pointer-events: none;
+}
+
+.courseCardGlow {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.courseCardIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: ds.$radius-xl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  position: relative;
+  color: #fff;
+}
+
+.courseCardTitle {
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+.courseCardSubtitle {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.courseCardBadge {
+  font-family: ds.$font-display;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: ds.$radius-sm;
+  position: relative;
+}
+
+.courseCardBadgeReady {
+  composes: courseCardBadge;
+  background: ds.$success-bg;
+  color: ds.$success;
+}
+
+.courseCardBadgeSoon {
+  composes: courseCardBadge;
+  background: ds.$warning-bg;
+  color: ds.$warning;
+}
+
+.courseCardChevron {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: ds.$text-dim;
+}
+
+// ─── Unit Cards (Skill Hub) ───
+.unitCard {
+  width: 100%;
+  padding: 1.25rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-xl;
+  border: 2px solid;
+  color: ds.$text-primary;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    background: ds.$bg-card-hover;
+    transform: translateY(-2px);
+    box-shadow: ds.$shadow-lg;
+  }
+}
+
+.unitCardDecor {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.unitCardInner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.unitCardIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: ds.$radius-lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.unitCardDiffBadge {
+  font-family: ds.$font-display;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.15rem 0.4rem;
+  border-radius: 5px;
+}
+
+.unitCardTitle {
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.unitCardSubtitle {
+  font-family: ds.$font-body;
+  font-size: 0.78rem;
+  color: ds.$text-secondary;
+  margin-bottom: 0.35rem;
+}
+
+.unitCardExercises {
+  font-family: ds.$font-display;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+// ─── Steps List (7 Secret Steps) ───
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stepsTitle {
+  font-family: ds.$font-display;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: ds.$text-secondary;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 0.65rem 1rem;
+  border: 1px solid ds.$border-default;
+  border-left: 3px solid;
+}
+
+.stepNumber {
+  width: 24px;
+  height: 24px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.stepText {
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: ds.$text-secondary;
+}
+
+// ─── Score Guide Grid ───
+.scoreGuide {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  padding: 1rem;
+  border: 1px solid ds.$border-default;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.scoreCell {
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid;
+}
+
+.scoreCellValue {
+  font-family: ds.$font-display;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.scoreCellLabel {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-muted;
+}
+
+// ─── Upgrade CTA Banner ───
+.upgradeBanner {
+  margin-top: 1.5rem;
+  border-radius: ds.$radius-xl;
+  padding: 1.25rem;
+  border: 1px solid;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: ds.$shadow-lg;
+  }
+}
+
+.upgradeBannerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: ds.$text-primary;
+}
+
+.upgradeBannerDesc {
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  color: ds.$text-muted;
+  margin: 0;
+}
+
+.upgradeBannerBtn {
+  margin-top: 0.75rem;
+  border-radius: ds.$radius-md;
+  padding: 0.6rem 1.5rem;
+  display: inline-block;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+// ─── Exercise Runtime: Progress Bar ───
+.progressBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.progressTrack {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ds.$ease-smooth;
+}
+
+.progressLabel {
+  font-family: ds.$font-display;
+  font-size: 0.75rem;
+  color: ds.$text-muted;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+// ─── Exercise Runtime: Score Strip ───
+.scoreStrip {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  border: 1px solid ds.$border-default;
+}
+
+.scoreCorrect {
+  font-family: ds.$font-display;
+  font-size: 0.8rem;
+  color: ds.$success;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.scoreWrong {
+  font-family: ds.$font-display;
+  font-size: 0.8rem;
+  color: ds.$error;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.scorePct {
+  font-family: ds.$font-display;
+  font-size: 0.8rem;
+  color: ds.$text-muted;
+}
+
+// ─── Exercise Runtime: Audio Player ───
+.audioSection {
+  border-radius: ds.$radius-xl + 4px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid;
+  text-align: center;
+}
+
+.audioSectionBlue {
+  composes: audioSection;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(6, 182, 212, 0.08));
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.speakerBubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ds.$ease-smooth;
+}
+
+.speakerBubbleActive {
+  composes: speakerBubble;
+}
+
+.speakerBubbleDim {
+  composes: speakerBubble;
+  opacity: 0.4;
+}
+
+.speakerAvatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ds.$font-display;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  border: 3px solid transparent;
+  transition: all 0.3s ds.$ease-smooth;
+  position: relative;
+}
+
+.speakerAvatarActive {
+  composes: speakerAvatar;
+  border-color: #fff;
+  transform: scale(1.15);
+}
+
+.speakerPulse {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: ds.$success;
+  border: 2px solid ds.$bg-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakerPulseDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.speakerName {
+  font-family: ds.$font-display;
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.listenBtn {
+  @include ds.btn-primary;
+  padding: 1rem 2.5rem;
+  border-radius: ds.$radius-lg;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.replayBtn {
+  @include ds.btn-ghost;
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #3b82f6;
+
+  &:hover {
+    background: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+  }
+}
+
+.waveContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 32px;
+  justify-content: center;
+}
+
+.waveBar {
+  width: 4px;
+  border-radius: 2px;
+  background: #3b82f6;
+  animation: wave 0.8s ease-in-out infinite alternate;
+
+  @for $i from 1 through 7 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+      height: #{8 + random(20)}px;
+    }
+  }
+}
+
+.audioLoadingText {
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  color: #3b82f6;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+// ─── Exercise Runtime: Question ───
+.questionText {
+  font-family: ds.$font-display;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  white-space: pre-line;
+  color: ds.$text-primary;
+}
+
+// ─── Exercise Runtime: Options ───
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.optionBtn {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  border: 2px solid ds.$border-default;
+  color: ds.$text-primary;
+  cursor: pointer;
+  text-align: left;
+  font-family: ds.$font-body;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all ds.$transition-base;
+
+  &:hover:not(:disabled) {
+    background: ds.$bg-card-hover;
+    border-color: ds.$border-hover;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.optionBtnCorrect {
+  composes: optionBtn;
+  background: ds.$success-bg;
+  border-color: ds.$success;
+}
+
+.optionBtnWrong {
+  composes: optionBtn;
+  background: ds.$error-bg;
+  border-color: ds.$error;
+}
+
+.optionLetter {
+  width: 28px;
+  height: 28px;
+  border-radius: ds.$radius-sm;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ds.$font-display;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: ds.$text-muted;
+}
+
+.optionLetterCorrect {
+  composes: optionLetter;
+  background: rgba(34, 197, 94, 0.15);
+  color: ds.$success;
+}
+
+// ─── Exercise Runtime: Feedback ───
+.feedbackCard {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border-radius: ds.$radius-xl;
+  border: 1px solid;
+}
+
+.feedbackCorrect {
+  composes: feedbackCard;
+  background: rgba(34, 197, 94, 0.08);
+  border-color: ds.$success-border;
+}
+
+.feedbackWrong {
+  composes: feedbackCard;
+  background: rgba(255, 59, 59, 0.08);
+  border-color: ds.$error-border;
+}
+
+.feedbackHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.feedbackTitle {
+  font-family: ds.$font-display;
+  font-weight: 700;
+}
+
+.feedbackExplanation {
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  color: ds.$text-secondary;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.nextBtn {
+  margin-top: 1rem;
+  width: 100%;
+  @include ds.btn-primary;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+}
+
+// ─── Exercise Runtime: Passage Card ───
+.passageCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-xl;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid ds.$border-default;
+}
+
+.passageBox {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.08), rgba(59, 130, 246, 0.05));
+  border-radius: ds.$radius-xl;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  overflow: hidden;
+  transition: max-height 0.3s ds.$ease-smooth;
+  position: relative;
+}
+
+.passageHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.passageLabel {
+  font-family: ds.$font-display;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #14b8a6;
+}
+
+.passageToggle {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: ds.$text-muted;
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+
+  &:hover {
+    color: ds.$text-secondary;
+  }
+}
+
+.passageToggleLabel {
+  font-family: ds.$font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: ds.$text-secondary;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.passageText {
+  font-family: ds.$font-body;
+  font-size: 0.88rem;
+  color: ds.$text-secondary;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+// ─── Exercise Runtime: Fill Gap Sentence ───
+.fillGapSentence {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: ds.$font-body;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: ds.$text-secondary;
+  border: 1px solid ds.$border-default;
+}
+
+// ─── Exercise Runtime: Match Pairs ───
+.matchContainer {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.matchColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.matchBtn {
+  padding: 0.75rem;
+  border-radius: ds.$radius-md;
+  background: ds.$bg-card;
+  border: 2px solid ds.$border-default;
+  color: ds.$text-primary;
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.3;
+  transition: all ds.$transition-fast;
+
+  &:hover:not(:disabled) {
+    background: ds.$bg-card-hover;
+    border-color: ds.$border-hover;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.matchBtnSelected {
+  composes: matchBtn;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+}
+
+.matchBtnMatched {
+  composes: matchBtn;
+  background: ds.$success-bg;
+  border-color: ds.$success;
+}
+
+// ─── Exercise Runtime: Reorder ───
+.reorderAnswer {
+  min-height: 56px;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid ds.$border-default;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.reorderAnswerCorrect {
+  composes: reorderAnswer;
+  border-color: ds.$success;
+}
+
+.reorderAnswerWrong {
+  composes: reorderAnswer;
+  border-color: ds.$error;
+}
+
+.reorderPlaceholder {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.reorderWordBank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.reorderWord {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: ds.$bg-card;
+  border: 2px solid ds.$border-default;
+  color: ds.$text-primary;
+  font-family: ds.$font-body;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ds.$transition-fast;
+
+  &:hover:not(:disabled) {
+    background: ds.$bg-card-hover;
+    border-color: ds.$border-hover;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.reorderWordActive {
+  composes: reorderWord;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+}
+
+.reorderWordCorrect {
+  composes: reorderWord;
+  background: ds.$success-bg;
+  border-color: ds.$success;
+}
+
+.reorderWordWrong {
+  composes: reorderWord;
+  background: ds.$error-bg;
+  border-color: ds.$error;
+}
+
+.reorderCorrectHint {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(34, 197, 94, 0.08);
+  border-radius: 10px;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  color: ds.$text-secondary;
+
+  strong {
+    color: ds.$success;
+    font-weight: 600;
+  }
+}
+
+// ─── Exercise Runtime: Speak ───
+.speakPromptCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid ds.$border-default;
+  text-align: center;
+}
+
+.speakPromptLabel {
+  font-family: ds.$font-display;
+  font-size: 0.75rem;
+  color: ds.$text-muted;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.speakPromptText {
+  font-family: ds.$font-display;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: ds.$text-primary;
+}
+
+.speakListenBtn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+  color: #8b5cf6;
+  font-family: ds.$font-display;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all ds.$transition-fast;
+
+  &:hover:not(:disabled) {
+    background: rgba(139, 92, 246, 0.15);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+}
+
+.speakRecordBtn {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: ds.$radius-md;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+  }
+}
+
+.speakRecordBtnActive {
+  composes: speakRecordBtn;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  animation: pulse 1.5s infinite;
+}
+
+.speakResultCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 1rem;
+  border: 1px solid ds.$border-default;
+}
+
+.speakResultLabel {
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  color: ds.$text-muted;
+  margin-bottom: 0.5rem;
+}
+
+.speakResultText {
+  font-family: ds.$font-body;
+  font-size: 1rem;
+  color: ds.$text-primary;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.speakScoreBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.speakScoreTrack {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.speakScoreFill {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.speakScoreValue {
+  font-family: ds.$font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.speakRetryBtn {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: ds.$radius-md;
+  border: 2px solid ds.$error;
+  background: transparent;
+  color: ds.$error;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    background: ds.$error-bg;
+  }
+}
+
+// ─── Exercise Runtime: Continue Button ───
+.continueBtn {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: ds.$radius-md;
+  border: none;
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+// ─── Result Screen: Scorecard ───
+.resultScorecard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  padding: 2rem;
+  border: 1px solid ds.$border-default;
+  margin-bottom: 2rem;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resultScoreValue {
+  font-family: ds.$font-display;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.resultScorePct {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.resultProgressBar {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.resultProgressFill {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.5s ds.$ease-smooth;
+}
+
+.resultXP {
+  font-family: ds.$font-body;
+  color: ds.$text-secondary;
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+// ─── Result Screen: Action Links ───
+.resultLinkPrimary {
+  @include ds.btn-primary;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.resultLinkSecondary {
+  padding: 1rem;
+  border-radius: ds.$radius-md;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all ds.$transition-fast;
+  width: 100%;
+
+  &:hover {
+    background: rgba(139, 92, 246, 0.25);
+  }
+}
+
+.resultLinkBack {
+  padding: 0.75rem;
+  color: ds.$text-muted;
+  font-family: ds.$font-body;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+
+  &:hover {
+    color: ds.$text-secondary;
+  }
+}
+
+// ─── Paywall: Daily Dots ───
+.paywallDailyDots {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.paywallDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ds.$font-display;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.paywallDotUsed {
+  composes: paywallDot;
+  background: linear-gradient(135deg, ds.$success, #16a34a);
+  color: #fff;
+}
+
+.paywallDotRemaining {
+  composes: paywallDot;
+  background: rgba(255, 255, 255, 0.08);
+  color: ds.$text-muted;
+}
+
+.paywallUsageText {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.paywallResetText {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+
+  b {
+    color: #f59e0b;
+  }
+}
+
+.paywallScoreText {
+  font-family: ds.$font-body;
+  color: ds.$text-secondary;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+
+  b {
+    color: ds.$success;
+  }
+}
+
+.paywallUpgradeBtnLarge {
+  @include ds.btn-primary;
+  background: linear-gradient(135deg, #8b5cf6, #ff3b3b);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.9rem 2.5rem;
+  font-size: 1rem;
+}
+
+.paywallPriceHint {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+// ─── Result Screen ───
+.resultScreen {
+  min-height: 100vh;
+  background: ds.$bg-primary;
+  color: ds.$text-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.resultTitle {
+  font-family: ds.$font-display;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.resultSubtitle {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  margin-bottom: 1.5rem;
+}
+
+.resultCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.resultCircleInner {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: ds.$bg-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ds.$font-display;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.resultActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resultBtnPrimary {
+  @include ds.btn-primary;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.resultBtnGhost {
+  @include ds.btn-ghost;
+}
+
+.resultSessionBox {
+  margin-top: 1.5rem;
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  padding: 1rem;
+  border: 1px solid ds.$border-default;
+}
+
+.resultSessionText {
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  color: ds.$text-secondary;
+  margin: 0;
+}
+
+// ─── Paywall Screen ───
+.paywallScreen {
+  composes: resultScreen;
+}
+
+.paywallEmoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.paywallTitle {
+  composes: resultTitle;
+}
+
+.paywallDesc {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.paywallActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.paywallUpgradeBtn {
+  @include ds.btn-primary;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.paywallBackBtn {
+  @include ds.btn-ghost;
+  width: 100%;
+}
+
+// ─── Skeleton Loading ───
+.skeletonPage {
+  min-height: 100vh;
+  background: ds.$bg-primary;
+}
+
+// ─── Animations ───
+@keyframes wave {
+  from { height: 6px; }
+  to { height: 28px; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+// ─── Reduced Motion ───
+@media (prefers-reduced-motion: reduce) {
+  .waveBar,
+  .speakerPulseDot,
+  .spinner {
+    animation: none;
+  }
+
+  .optionBtn,
+  .courseCard,
+  .unitCard {
+    transition: none;
+  }
+}

@@ -5,7 +5,9 @@ import { useRouter } from 'next/navigation';
 import {
   Sparkles, BookOpen, PenTool, Headphones, Mic,
   Loader2, RefreshCw, ArrowRight, Clock, FileText,
-  Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus, Play, Pause, Target
+  Volume2, ChevronRight, Zap, TrendingUp, TrendingDown, Minus, Play, Pause, Target,
+  Flame, Trophy, Lock, CheckCircle, AlertTriangle, Lightbulb, Star, BarChart3,
+  ClipboardList, Mail, PenLine, Library, MessageCircle, Building2, Square, Crosshair
 } from 'lucide-react';
 import { usePlan } from '@/hooks/usePlan';
 import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
@@ -69,10 +71,16 @@ const SPEAKING_TASK_SLUGS: Record<string, string> = {
   '8': 'unusual-situation',
 };
 
-const DIFFICULTIES: { id: Difficulty; emoji: string; label: string; desc: string }[] = [
-  { id: 'beginner', emoji: '🌱', label: 'Beginner', desc: 'CLB 5-6' },
-  { id: 'intermediate', emoji: '🔥', label: 'Intermediate', desc: 'CLB 7-8' },
-  { id: 'advanced', emoji: '🏆', label: 'Advanced', desc: 'CLB 9+' },
+const DIFFICULTY_ICONS: Record<Difficulty, React.ElementType> = {
+  beginner: Sparkles,
+  intermediate: Flame,
+  advanced: Trophy,
+};
+
+const DIFFICULTIES: { id: Difficulty; label: string; desc: string }[] = [
+  { id: 'beginner', label: 'Beginner', desc: 'CLB 5-6' },
+  { id: 'intermediate', label: 'Intermediate', desc: 'CLB 7-8' },
+  { id: 'advanced', label: 'Advanced', desc: 'CLB 9+' },
 ];
 
 // ─── Component ───────────────────────────────────
@@ -765,7 +773,7 @@ export default function AIPracticePage() {
             textAlign: 'center', position: 'relative',
             boxShadow: '0 25px 60px rgba(0,0,0,0.5), 0 0 80px rgba(139,92,246,0.15)',
           }}>
-            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🔒</div>
+            <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}><Lock size={48} style={{ color: '#a78bfa' }} /></div>
             <h2 style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 700, margin: '0 0 0.5rem' }}>
               Daily Limit Reached
             </h2>
@@ -940,7 +948,7 @@ export default function AIPracticePage() {
                   setAutoMode(false); setDifficulty(d.id);
                 }}
               >
-                <span className={styles.difficultyEmoji}>{locked ? '🔒' : d.emoji}</span>
+                <span className={styles.difficultyEmoji}>{locked ? <Lock size={20} /> : React.createElement(DIFFICULTY_ICONS[d.id], { size: 20 })}</span>
                 <span className={styles.difficultyLabel}>{d.label}</span>
                 <span className={styles.difficultyDesc}>{locked ? 'Pro Only' : d.desc}</span>
               </div>
@@ -1071,7 +1079,7 @@ export default function AIPracticePage() {
                   
                   {clipAudioSrcs.length > 0 && exercise.clips && (
                     <div className={styles.clipBadge}>
-                      🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+                      <Headphones size={14} style={{ display: 'inline', verticalAlign: 'middle' }} /> Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
                     </div>
                   )}
                   
@@ -1112,7 +1120,7 @@ export default function AIPracticePage() {
                     <div className={styles.clipTabs}>
                       {clipAudioSrcs.map((_, i) => (
                         <div key={i} className={i === currentClipIdx ? styles.clipTabActive : i < currentClipIdx ? styles.clipTabDone : styles.clipTab}>
-                          {i < currentClipIdx ? '✅ ' : ''}Clip {i + 1}
+                          Clip {i + 1}
                         </div>
                       ))}
                     </div>
@@ -1124,7 +1132,7 @@ export default function AIPracticePage() {
               {section === 'listening' && listeningPhase === 'questions' && clipAudioSrcs.length > 0 && exercise.clips && (
                 <div style={{ marginBottom: '1rem' }}>
                   <div className={styles.clipBadge}>
-                    🎧 Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
+                    <Headphones size={14} style={{ display: 'inline', verticalAlign: 'middle' }} /> Clip {currentClipIdx + 1} of {clipAudioSrcs.length}
                   </div>
                 </div>
               )}
@@ -1132,7 +1140,7 @@ export default function AIPracticePage() {
               {/* Passage: hidden for listening when audio available — shown as fallback if no audio */}
               {section === 'listening' && !audioSrc && clipAudioSrcs.length === 0 && exercise.passage && (
                 <div className={styles.passageCard}>
-                  <p style={{ fontSize: '0.8rem', color: '#f59e0b', marginBottom: '0.5rem' }}>⚠️ Audio generation failed — read the passage below:</p>
+                  <p style={{ fontSize: '0.8rem', color: '#f59e0b', marginBottom: '0.5rem' }}><AlertTriangle size={14} style={{ display: 'inline', verticalAlign: 'middle', color: '#f59e0b' }} /> Audio generation failed — read the passage below:</p>
                   <p className={styles.passageText}>{exercise.passage}</p>
                 </div>
               )}
@@ -1148,7 +1156,7 @@ export default function AIPracticePage() {
                   {/* Poster / Flyer */}
                   <div style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.08), rgba(251,191,36,0.04))', borderRadius: 12, padding: '20px', border: '1px solid rgba(245,158,11,0.2)', marginBottom: '1rem' }}>
                     <h3 style={{ color: '#f59e0b', fontWeight: 800, fontSize: '1.1rem', textAlign: 'center', marginBottom: exercise.poster.subheading ? '0.2rem' : '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                      📋 {exercise.poster.heading}
+                      <ClipboardList size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> {exercise.poster.heading}
                     </h3>
                     {exercise.poster.subheading && (
                       <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>{exercise.poster.subheading}</p>
@@ -1178,7 +1186,7 @@ export default function AIPracticePage() {
                   {/* Email with blanks */}
                   {exercise.email && (
                     <div style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 10, padding: '16px', border: '1px solid rgba(255,255,255,0.08)' }}>
-                      <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', color: '#60a5fa', fontSize: '0.85rem' }}>✉️ Complete the Email</h4>
+                      <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', color: '#60a5fa', fontSize: '0.85rem' }}><Mail size={14} style={{ display: 'inline', verticalAlign: 'middle' }} /> Complete the Email</h4>
                       <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.75rem', marginBottom: '0.8rem', fontStyle: 'italic' }}>Fill in the blanks using information from the poster above.</p>
                       <div className={styles.passageText} style={{ margin: 0, lineHeight: 2.2 }}>
                         <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '0.5rem' }}>{exercise.email.greeting}</p>
@@ -1229,7 +1237,7 @@ export default function AIPracticePage() {
               {/* Part 2 new schema: Comprehension questions + Submit */}
               {section === 'reading' && exercise.poster && exercise.comprehension && (
                 <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
-                  <h4 style={{ fontWeight: 700, marginBottom: '0.8rem', color: '#a78bfa', fontSize: '0.9rem' }}>📝 Comprehension Questions</h4>
+                  <h4 style={{ fontWeight: 700, marginBottom: '0.8rem', color: '#a78bfa', fontSize: '0.9rem' }}><PenLine size={14} style={{ display: 'inline', verticalAlign: 'middle' }} /> Comprehension Questions</h4>
                   {exercise.comprehension.map((q: any, qi: number) => {
                     const key = `comp${q.id}`;
                     const isCorrect = submitted && answers[key] === q.correct;
@@ -1278,7 +1286,7 @@ export default function AIPracticePage() {
                     })()}
                     style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
                   >
-                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                    {submitted ? 'Answers Checked' : 'Check Answers'}
                   </button>
                   {submitted && (
                     <div>
@@ -1289,7 +1297,7 @@ export default function AIPracticePage() {
                             <span className={styles.scoreTotal}>/ {getScore().total}</span>
                           </div>
                           <span className={styles.scoreLabel}>
-                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                            {getScore().correct === getScore().total ? 'Perfect!' : getScore().correct >= getScore().total * 0.7 ? 'Good job!' : 'Keep practicing!'}
                           </span>
                         </div>
                       </div>
@@ -1297,7 +1305,7 @@ export default function AIPracticePage() {
                         {hasNextPart() ? (
                           <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
                         ) : (
-                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}><BarChart3 size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> See Results</button>
                         )}
                       </div>
                     </div>
@@ -1320,7 +1328,7 @@ export default function AIPracticePage() {
                     const cleanText = introLines.join(' ').trim();
                     return cleanText ? <p className={styles.passageText} style={{ marginBottom: '1rem' }}>{cleanText}</p> : null;
                   })()}
-                  <h4 style={{ fontWeight: 700, marginBottom: '0.6rem', color: '#f59e0b', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>📊 Reference Document</h4>
+                  <h4 style={{ fontWeight: 700, marginBottom: '0.6rem', color: '#f59e0b', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Reference Document</h4>
                   <div style={{ overflowX: 'auto' }}>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
                       {exercise.diagram.split('\n').filter((r: string) => r.trim() && !r.trim().match(/^[\-|]+$/)).map((row: string, ri: number) => {
@@ -1407,7 +1415,7 @@ export default function AIPracticePage() {
                     disabled={submitted || !(exercise.statements || []).every((st: any) => answers[`st${st.id}`] !== undefined)}
                     style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
                   >
-                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                    {submitted ? 'Answers Checked' : 'Check Answers'}
                   </button>
                   {submitted && (
                     <div>
@@ -1418,7 +1426,7 @@ export default function AIPracticePage() {
                             <span className={styles.scoreTotal}>/ {getScore().total}</span>
                           </div>
                           <span className={styles.scoreLabel}>
-                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                            {getScore().correct === getScore().total ? 'Perfect!' : getScore().correct >= getScore().total * 0.7 ? 'Good job!' : 'Keep practicing!'}
                           </span>
                         </div>
                       </div>
@@ -1426,7 +1434,7 @@ export default function AIPracticePage() {
                         {hasNextPart() ? (
                           <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
                         ) : (
-                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}><BarChart3 size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> See Results</button>
                         )}
                       </div>
                     </div>
@@ -1541,7 +1549,7 @@ export default function AIPracticePage() {
                       })()}
                       style={{ marginTop: '1rem', opacity: submitted ? 0.5 : 1 }}
                     >
-                      {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                      {submitted ? 'Answers Checked' : 'Check Answers'}
                     </button>
                     {submitted && (
                       <div>
@@ -1552,7 +1560,7 @@ export default function AIPracticePage() {
                               <span className={styles.scoreTotal}>/ {getScore().total}</span>
                             </div>
                             <span className={styles.scoreLabel}>
-                              {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                              {getScore().correct === getScore().total ? 'Perfect!' : getScore().correct >= getScore().total * 0.7 ? 'Good job!' : 'Keep practicing!'}
                             </span>
                           </div>
                         </div>
@@ -1560,7 +1568,7 @@ export default function AIPracticePage() {
                           {hasNextPart() ? (
                             <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
                           ) : (
-                            <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                            <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}><BarChart3 size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> See Results</button>
                           )}
                         </div>
                       </div>
@@ -1674,7 +1682,7 @@ export default function AIPracticePage() {
                       }}
                       style={{ marginTop: '0.75rem', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}
                     >
-                      Next Clip 🎧
+                      Next Clip
                     </button>
                   )}
                   {isClipMode && submitted && isLastClip && (
@@ -1687,10 +1695,10 @@ export default function AIPracticePage() {
                         </div>
                         <span className={styles.scoreLabel}>
                           {getScore().correct === getScore().total
-                            ? 'Perfect! 🎉'
+                            ? 'Perfect!'
                             : getScore().correct >= getScore().total * 0.7
-                              ? 'Good job! 👍'
-                              : 'Keep practicing! 💪'}
+                              ? 'Good job!'
+                              : 'Keep practicing!'}
                         </span>
                       </div>
                     </div>
@@ -1701,7 +1709,7 @@ export default function AIPracticePage() {
                         </button>
                       ) : (
                         <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
-                          📊 See Results
+                          See Results
                         </button>
                       )}
                     </div>
@@ -1716,7 +1724,7 @@ export default function AIPracticePage() {
                       disabled={submitted || Object.keys(answers).length < (exercise.questions?.length || 0)}
                       style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
                     >
-                      {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                      {submitted ? 'Answers Checked' : 'Check Answers'}
                     </button>
                   )}
                   {!isClipMode && !exercise.replyEmail && (
@@ -1729,10 +1737,10 @@ export default function AIPracticePage() {
                         </div>
                         <span className={styles.scoreLabel}>
                           {getScore().correct === getScore().total
-                            ? 'Perfect! 🎉'
+                            ? 'Perfect!'
                             : getScore().correct >= getScore().total * 0.7
-                              ? 'Good job! 👍'
-                              : 'Keep practicing! 💪'}
+                              ? 'Good job!'
+                              : 'Keep practicing!'}
                         </span>
                       </div>
                     </div>
@@ -1743,7 +1751,7 @@ export default function AIPracticePage() {
                         </button>
                       ) : (
                         <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
-                          📊 See Results
+                          See Results
                         </button>
                       )}
                     </div>
@@ -1804,7 +1812,7 @@ export default function AIPracticePage() {
                     disabled={submitted || Object.keys(answers).length < (exercise.questions?.length || 0)}
                     style={{ marginTop: '1rem', opacity: submitted ? 0.5 : 1 }}
                   >
-                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                    {submitted ? 'Answers Checked' : 'Check Answers'}
                   </button>
                   {submitted && (
                     <div>
@@ -1815,7 +1823,7 @@ export default function AIPracticePage() {
                             <span className={styles.scoreTotal}>/ {getScore().total}</span>
                           </div>
                           <span className={styles.scoreLabel}>
-                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                            {getScore().correct === getScore().total ? 'Perfect!' : getScore().correct >= getScore().total * 0.7 ? 'Good job!' : 'Keep practicing!'}
                           </span>
                         </div>
                       </div>
@@ -1823,7 +1831,7 @@ export default function AIPracticePage() {
                         {hasNextPart() ? (
                           <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
                         ) : (
-                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}><BarChart3 size={16} style={{ display: 'inline', verticalAlign: 'middle' }} /> See Results</button>
                         )}
                       </div>
                     </div>
@@ -1938,7 +1946,7 @@ export default function AIPracticePage() {
               {speakingPhase === 'speak' && (
                 <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
                   <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                    🔴 Recording
+                    Recording
                   </div>
                   <div style={{
                     fontSize: '4rem', fontWeight: 800, color: countdown <= 10 ? '#f87171' : '#34d399',
@@ -1953,7 +1961,7 @@ export default function AIPracticePage() {
                     marginTop: '1rem', padding: '0.8rem 2rem', background: '#ef4444',
                     border: 'none', borderRadius: 12, color: '#fff', fontWeight: 600, cursor: 'pointer',
                   }}>
-                    ⏹ Stop Early
+                    Stop Early
                   </button>
                 </div>
               )}
@@ -1972,7 +1980,7 @@ export default function AIPracticePage() {
                       cursor: feedbackLoading ? 'not-allowed' : 'pointer',
                       display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                     }}>
-                      {feedbackLoading ? '⏳ Analyzing your response...' : '📊 Get AI Feedback'}
+                      {feedbackLoading ? 'Analyzing your response...' : 'Get AI Feedback'}
                     </button>
                   )}
 
@@ -2002,19 +2010,19 @@ export default function AIPracticePage() {
                         <div style={{ position: 'relative', marginTop: '0.5rem' }}>
                           <div style={{ filter: 'blur(6px)', pointerEvents: 'none', userSelect: 'none' }}>
                             <div style={{ background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '1.2rem' }}>
-                              <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>📊 Detailed Scores</h4>
+                              <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>Detailed Scores</h4>
                               <p style={{ color: 'rgba(255,255,255,0.5)' }}>Content: 7/12 · Vocabulary: 6/12 · Fluency: 5/12 · Structure: 6/12</p>
                             </div>
                             <div style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
-                              <h4 style={{ color: '#fbbf24', margin: 0, fontSize: '0.95rem' }}>⚠️ Grammar Corrections</h4>
+                              <h4 style={{ color: '#fbbf24', margin: 0, fontSize: '0.95rem' }}>Grammar Corrections</h4>
                               <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>3 corrections found...</p>
                             </div>
                             <div style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
-                              <h4 style={{ color: '#34d399', margin: 0, fontSize: '0.95rem' }}>💡 Vocabulary Upgrades</h4>
+                              <h4 style={{ color: '#34d399', margin: 0, fontSize: '0.95rem' }}>Vocabulary Upgrades</h4>
                               <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>2 suggestions available...</p>
                             </div>
                             <div style={{ background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.2)', borderRadius: 14, padding: '1.2rem', marginTop: '0.8rem' }}>
-                              <h4 style={{ color: '#60a5fa', margin: 0, fontSize: '0.95rem' }}>🌟 Improved Version</h4>
+                              <h4 style={{ color: '#60a5fa', margin: 0, fontSize: '0.95rem' }}>Improved Version</h4>
                               <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 8 }}>See how a native speaker would answer...</p>
                             </div>
                           </div>
@@ -2023,7 +2031,7 @@ export default function AIPracticePage() {
                             alignItems: 'center', justifyContent: 'center', zIndex: 10,
                             background: 'rgba(10,14,26,0.4)', borderRadius: 14,
                           }}>
-                            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🔒</div>
+                            <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}><Lock size={40} style={{ color: '#a78bfa' }} /></div>
                             <h3 style={{ color: '#fff', fontSize: '1.1rem', margin: '0 0 0.3rem', fontWeight: 700 }}>Unlock Full Feedback</h3>
                             <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', margin: '0 0 1rem', textAlign: 'center', maxWidth: 280 }}>
                               See detailed scores, grammar corrections, vocabulary upgrades & model response
@@ -2047,11 +2055,11 @@ export default function AIPracticePage() {
                           background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
                           borderRadius: 14, padding: '1.2rem',
                         }}>
-                          <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>📊 Detailed Scores</h4>
+                          <h4 style={{ color: '#a78bfa', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>Detailed Scores</h4>
                           {['content', 'vocabulary', 'fluency', 'structure'].map((cat) => {
                             const fb = (speakingFeedback.detailedFeedback as any)[cat];
                             if (!fb) return null;
-                            const labels: any = { content: '📝 Content', vocabulary: '📚 Vocabulary', fluency: '🗣️ Fluency', structure: '🏗️ Structure' };
+                            const labels: any = { content: 'Content', vocabulary: 'Vocabulary', fluency: 'Fluency', structure: 'Structure' };
                             const score = fb.score || 0;
                             const pct = (score / 12) * 100;
                             return (
@@ -2078,13 +2086,13 @@ export default function AIPracticePage() {
                         </div>
                       )}
 
-                      {/* Your Transcript — Pro only */}
+                      {/*Your Transcript— Pro only */}
                       {isPro && speakingFeedback.transcript && (
                         <div style={{
                           background: 'rgba(30,30,40,0.6)', border: '1px solid rgba(255,255,255,0.08)',
                           borderRadius: 14, padding: '1.2rem',
                         }}>
-                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>🎙️ Your Transcript</h4>
+                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>Your Transcript</h4>
                           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: 1.6, fontStyle: 'italic' }}>
                             &ldquo;{speakingFeedback.transcript}&rdquo;
                           </p>
@@ -2097,7 +2105,7 @@ export default function AIPracticePage() {
                           background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)',
                           borderRadius: 14, padding: '1.2rem',
                         }}>
-                          <h4 style={{ color: '#fbbf24', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>⚠️ Grammar Corrections</h4>
+                          <h4 style={{ color: '#fbbf24', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>Grammar Corrections</h4>
                           {speakingFeedback.grammarErrors.map((g: any, i: number) => (
                             <div key={i} style={{ marginBottom: i < speakingFeedback.grammarErrors.length - 1 ? '0.8rem' : 0, paddingBottom: i < speakingFeedback.grammarErrors.length - 1 ? '0.8rem' : 0, borderBottom: i < speakingFeedback.grammarErrors.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none' }}>
                               <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -2125,7 +2133,7 @@ export default function AIPracticePage() {
                           background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)',
                           borderRadius: 14, padding: '1.2rem',
                         }}>
-                          <h4 style={{ color: '#34d399', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>💡 Vocabulary Upgrades</h4>
+                          <h4 style={{ color: '#34d399', margin: '0 0 0.8rem', fontSize: '0.95rem' }}>Vocabulary Upgrades</h4>
                           {speakingFeedback.vocabularySuggestions.map((v: any, i: number) => (
                             <div key={i} style={{ marginBottom: i < speakingFeedback.vocabularySuggestions.length - 1 ? '0.8rem' : 0 }}>
                               <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -2154,7 +2162,7 @@ export default function AIPracticePage() {
                             background: 'rgba(52,211,153,0.06)', border: '1px solid rgba(52,211,153,0.15)',
                             borderRadius: 14, padding: '1rem',
                           }}>
-                            <h4 style={{ color: '#34d399', margin: '0 0 0.5rem', fontSize: '0.85rem' }}>✅ Strengths</h4>
+                            <h4 style={{ color: '#34d399', margin: '0 0 0.5rem', fontSize: '0.85rem' }}><CheckCircle size={12} style={{ display: 'inline', verticalAlign: 'middle', color: '#22c55e' }} /> Strengths</h4>
                             <ul style={{ margin: 0, paddingLeft: '1rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}>
                               {speakingFeedback.strengths.map((s: string, i: number) => <li key={i} style={{ marginBottom: 4 }}>{s}</li>)}
                             </ul>
@@ -2165,7 +2173,7 @@ export default function AIPracticePage() {
                             background: 'rgba(248,113,113,0.06)', border: '1px solid rgba(248,113,113,0.15)',
                             borderRadius: 14, padding: '1rem',
                           }}>
-                            <h4 style={{ color: '#f87171', margin: '0 0 0.5rem', fontSize: '0.85rem' }}>🎯 To Improve</h4>
+                            <h4 style={{ color: '#f87171', margin: '0 0 0.5rem', fontSize: '0.85rem' }}>To Improve</h4>
                             <ul style={{ margin: 0, paddingLeft: '1rem', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}>
                               {speakingFeedback.improvements.map((s: string, i: number) => <li key={i} style={{ marginBottom: 4 }}>{s}</li>)}
                             </ul>
@@ -2179,7 +2187,7 @@ export default function AIPracticePage() {
                           background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.2)',
                           borderRadius: 14, padding: '1.2rem',
                         }}>
-                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>🌟 Improved Version</h4>
+                          <h4 style={{ color: '#60a5fa', margin: '0 0 0.5rem', fontSize: '0.95rem' }}>Improved Version</h4>
                           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: 1.6, fontStyle: 'italic' }}>
                             &ldquo;{speakingFeedback.modelResponse}&rdquo;
                           </p>
@@ -2198,7 +2206,7 @@ export default function AIPracticePage() {
                   </button>
                 ) : (
                   <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>
-                    📊 See Results
+                    See Results
                   </button>
                 )}
                 <button
@@ -2228,7 +2236,7 @@ export default function AIPracticePage() {
       {/* Session Summary */}
       {showSessionSummary && (
         <div className={styles.sessionSummary}>
-          <h2 style={{ color: '#f8fafc', marginBottom: '0.5rem' }}>📊 Session Summary</h2>
+          <h2 style={{ color: '#f8fafc', marginBottom: '0.5rem' }}>Session Summary</h2>
           <p style={{ color: 'rgba(248,250,252,0.5)', marginBottom: '1.5rem' }}>
             {section.charAt(0).toUpperCase() + section.slice(1)} Practice Results
           </p>
@@ -2278,7 +2286,7 @@ export default function AIPracticePage() {
                         {grandCorrect}/{grandTotal} correct ({Math.round(pct * 100)}%)
                       </span>
                       <span style={{ marginTop: '0.5rem', fontSize: '1.1rem' }}>
-                        {celpip >= 10 ? '🎉 Excellent!' : celpip >= 7 ? '👍 Good job!' : '💪 Keep practicing!'}
+                        {celpip >= 10 ? 'Excellent!' : celpip >= 7 ? 'Good job!' : 'Keep practicing!'}
                       </span>
                     </div>
                   );

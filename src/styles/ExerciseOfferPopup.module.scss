@@ -1,0 +1,269 @@
+@use 'design-system' as ds;
+
+// ============================================
+// EXERCISE OFFER POPUP — Premium Upsell Modal
+// ============================================
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.3s ease;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a1f2e, #0f1420);
+  border: 2px solid #f59e0b;
+  border-radius: ds.$radius-xl;
+  padding: 28px 24px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #888;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.headerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: #f59e0b;
+}
+
+.headerTitle {
+  font-family: ds.$font-display;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.headerSubtitle {
+  font-family: ds.$font-body;
+  color: #f59e0b;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.offerCard {
+  background: linear-gradient(135deg, #1e2a40, #152030);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.1), transparent);
+  animation: shine 3s ease-in-out infinite;
+}
+
+.offerRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.offerIconBox {
+  background: rgba(245, 158, 11, 0.13);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+}
+
+.offerLabel {
+  font-family: ds.$font-display;
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.offerTitle {
+  font-family: ds.$font-display;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.priceValue {
+  font-family: ds.$font-display;
+  color: #34d399;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.pricePeriod {
+  font-family: ds.$font-body;
+  color: #888;
+  font-size: 13px;
+}
+
+.offerFeatures {
+  font-family: ds.$font-body;
+  color: #aaa;
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-family: ds.$font-display;
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.timerActive {
+  composes: timer;
+  color: #f59e0b;
+}
+
+.timerUrgent {
+  composes: timer;
+  color: #f87171;
+}
+
+.timerExpired {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: ds.$font-display;
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ctaBtn {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  border: none;
+  border-radius: ds.$radius-md;
+  color: #000;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  animation: pulse 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.ctaBtnDisabled {
+  composes: ctaBtn;
+  background: #333;
+  color: #666;
+  cursor: default;
+  animation: none;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.skipBtn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  font-family: ds.$font-body;
+  color: #555;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color ds.$transition-fast;
+
+  &:hover {
+    color: #888;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay { animation: none; }
+  .ctaBtn { animation: none; }
+  .shine { animation: none; }
+}
