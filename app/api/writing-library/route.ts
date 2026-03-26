@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
       arr.slice(-10).forEach(id => served.add(id));
     }
 
-    return NextResponse.json({ prompt, source: 'library' });
+    return NextResponse.json({ prompt, source: 'library' }, { headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' } });
   } catch (error) {
     console.error('Writing library error:', error);
     return NextResponse.json({ error: 'Failed to load prompt' }, { status: 500 });

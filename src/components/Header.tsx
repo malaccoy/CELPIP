@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -118,7 +119,7 @@ export const Header: React.FC = () => {
                 <Link href="/profile" aria-label="Profile" style={{ display: 'flex', alignItems: 'center' }}>
                   <div className={styles.userInitials} style={{ width: 36, height: 36, fontSize: '0.85rem' }}>
                     {user.user_metadata?.avatar_url ? (
-                      <img src={user.user_metadata.avatar_url} alt="" className={styles.userAvatar} style={{ width: 36, height: 36 }} />
+                      <Image src={user.user_metadata.avatar_url} alt="" width={36} height={36} className={styles.userAvatar} />
                     ) : (
                       getUserName().charAt(0).toUpperCase()
                     )}

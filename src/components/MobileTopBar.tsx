@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
@@ -70,7 +71,7 @@ export default function MobileTopBar() {
           onClick={() => router.push('/dashboard')}
           style={{ width: 52, height: 52, cursor: 'pointer', flexShrink: 0 }}
         >
-          <img src="/logo-leaf.png" alt="CELPIP" width={52} height={52}
+          <Image src="/logo-leaf.png" alt="CELPIP" width={52} height={52}
             style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
         </div>
 
@@ -102,7 +103,7 @@ export default function MobileTopBar() {
             color: T.text, fontWeight: 700, fontSize: '0.9rem',
           }}>
             {userImage ? (
-              <img src={userImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <Image src={userImage} alt="" width={32} height={32} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             ) : userName ? userName.charAt(0).toUpperCase() : '👤'}
           </div>
         )}

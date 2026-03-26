@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
         clipAudioUrls: exercise.clips.map((c: any) => `/audio/listening-library/${c.audioFile}`),
         context: exercise.context,
         source: 'library',
-      });
+      }, { headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' } });
     }
     
     return NextResponse.json({
@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
       context: exercise.context,
       duration: exercise.duration,
       source: 'library',
-    });
+    }, { headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' } });
   } catch (error) {
     console.error('Listening library error:', error);
     return NextResponse.json({ error: 'Failed to load exercise' }, { status: 500 });

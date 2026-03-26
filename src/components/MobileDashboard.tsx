@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import {
@@ -173,7 +174,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
       {!desktop && (
         <div className={styles.topBar}>
           <div className={styles.topBarLogo} onClick={() => router.push('/dashboard')}>
-            <img src="/logo-leaf.png" alt="CELPIP" width={40} height={40} />
+            <Image src="/logo-leaf.png" alt="CELPIP" width={40} height={40} />
           </div>
 
           <div className={styles.topBarChips}>
@@ -199,7 +200,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
                 <NotificationBell />
                 <div className={styles.profileAvatar} onClick={() => router.push('/profile')}>
                   {userImage ? (
-                    <img src={userImage} alt="" />
+                    <Image src={userImage} alt="" width={32} height={32} style={{ objectFit: 'cover' }} />
                   ) : (userName ? userName.charAt(0).toUpperCase() : 'U')}
                 </div>
               </>

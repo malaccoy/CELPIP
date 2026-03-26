@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
       }));
     }
 
-    return NextResponse.json({ exercise, source: 'library' });
+    return NextResponse.json({ exercise, source: 'library' }, { headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' } });
   } catch (error) {
     console.error('Reading library error:', error);
     return NextResponse.json({ error: 'Failed to load exercise' }, { status: 500 });
