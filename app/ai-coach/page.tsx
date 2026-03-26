@@ -1204,25 +1204,31 @@ export default function AIPracticePage() {
                               const isCorrect = submitted && selectedVal === q.correct;
                               const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
                               return (
-                                <select
-                                  key={pi}
-                                  value={selectedVal ?? ''}
-                                  disabled={submitted}
-                                  onChange={(e) => setAnswers((prev: any) => ({ ...prev, [`eb${q.id}`]: parseInt(e.target.value) }))}
-                                  style={{
-                                    background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
-                                    color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
-                                    border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
-                                    borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
-                                    fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
-                                    minWidth: 140, display: 'inline-block',
-                                  }}
-                                >
-                                  <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum} ]</option>
-                                  {q.options.map((opt: string, oi: number) => (
-                                    <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
-                                  ))}
-                                </select>
+                                <span key={pi} style={{ display: 'inline-block', verticalAlign: 'top' }}>
+                                  <select
+                                    value={selectedVal ?? ''}
+                                    disabled={submitted}
+                                    onChange={(e) => setAnswers((prev: any) => ({ ...prev, [`eb${q.id}`]: parseInt(e.target.value) }))}
+                                    style={{
+                                      background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                                      color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                                      border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
+                                      borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                                      fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                                      minWidth: 140, display: 'inline-block',
+                                    }}
+                                  >
+                                    <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum} ]</option>
+                                    {q.options.map((opt: string, oi: number) => (
+                                      <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                                    ))}
+                                  </select>
+                                  {isWrong && (
+                                    <span style={{ display: 'block', fontSize: '0.72rem', color: '#22c55e', fontWeight: 600, marginTop: 2, paddingLeft: 4 }}>
+                                      ✓ {q.options[q.correct]}
+                                    </span>
+                                  )}
+                                </span>
                               );
                             });
                           })()}
@@ -1514,25 +1520,31 @@ export default function AIPracticePage() {
                           const isCorrect = submitted && selectedVal === q.correct;
                           const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
                           return (
-                            <select
-                              key={pi}
-                              value={selectedVal ?? ''}
-                              disabled={submitted}
-                              onChange={(e) => setAnswers((prev: any) => ({ ...prev, [key]: parseInt(e.target.value) }))}
-                              style={{
-                                background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
-                                color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
-                                border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(52,211,153,0.4)'}`,
-                                borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
-                                fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
-                                minWidth: 110,
-                              }}
-                            >
-                              <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum}...... ]</option>
-                              {q.options.map((opt: string, oi: number) => (
-                                <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
-                              ))}
-                            </select>
+                            <span key={pi} style={{ display: 'inline-block', verticalAlign: 'top' }}>
+                              <select
+                                value={selectedVal ?? ''}
+                                disabled={submitted}
+                                onChange={(e) => setAnswers((prev: any) => ({ ...prev, [key]: parseInt(e.target.value) }))}
+                                style={{
+                                  background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                                  color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                                  border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(52,211,153,0.4)'}`,
+                                  borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                                  fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                                  minWidth: 110,
+                                }}
+                              >
+                                <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum}...... ]</option>
+                                {q.options.map((opt: string, oi: number) => (
+                                  <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                                ))}
+                              </select>
+                              {isWrong && (
+                                <span style={{ display: 'block', fontSize: '0.72rem', color: '#22c55e', fontWeight: 600, marginTop: 2, paddingLeft: 4 }}>
+                                  ✓ {q.options[q.correct]}
+                                </span>
+                              )}
+                            </span>
                           );
                         });
                       })()}
@@ -1782,25 +1794,31 @@ export default function AIPracticePage() {
                         const isCorrect = submitted && selectedVal === q.correct;
                         const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
                         return (
-                          <select
-                            key={pi}
-                            value={selectedVal ?? ''}
-                            disabled={submitted}
-                            onChange={(e) => setAnswers((prev: any) => ({ ...prev, [q.id]: parseInt(e.target.value) }))}
-                            style={{
-                              background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
-                              color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
-                              border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
-                              borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
-                              fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
-                              minWidth: 140, display: 'inline-block',
-                            }}
-                          >
-                            <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankIdx + 7}...... ]</option>
-                            {q.options.map((opt: string, oi: number) => (
-                              <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
-                            ))}
-                          </select>
+                          <span key={pi} style={{ display: 'inline-block', verticalAlign: 'top' }}>
+                            <select
+                              value={selectedVal ?? ''}
+                              disabled={submitted}
+                              onChange={(e) => setAnswers((prev: any) => ({ ...prev, [q.id]: parseInt(e.target.value) }))}
+                              style={{
+                                background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                                color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                                border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
+                                borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                                fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                                minWidth: 140, display: 'inline-block',
+                              }}
+                            >
+                              <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankIdx + 7}...... ]</option>
+                              {q.options.map((opt: string, oi: number) => (
+                                <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                              ))}
+                            </select>
+                            {isWrong && (
+                              <span style={{ display: 'block', fontSize: '0.72rem', color: '#22c55e', fontWeight: 600, marginTop: 2, paddingLeft: 4 }}>
+                                ✓ {q.options[q.correct]}
+                              </span>
+                            )}
+                          </span>
                         );
                       });
                     })()}
