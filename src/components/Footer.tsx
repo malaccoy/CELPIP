@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowRight, Mail, BookOpen, Headphones, PenLine, Mic, Sparkles, CheckCircle } from 'lucide-react';
+import { ArrowRight, Mail, BookOpen, Headphones, PenLine, Mic, Sparkles, CheckCircle, Shield, Star, Users } from 'lucide-react';
 import styles from '@/styles/Footer.module.scss';
 
 export default function Footer() {
@@ -32,12 +32,35 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
+      {/* Pre-footer CTA Banner */}
+      <div className={styles.preFooterCta}>
+        <div className={styles.preFooterContent}>
+          <h3 className={styles.preFooterTitle}>Ready to pass CELPIP?</h3>
+          <p className={styles.preFooterSub}>Join 350+ students already improving their scores with AI-powered practice.</p>
+          <div className={styles.preFooterActions}>
+            <Link href="/auth/register" className={styles.preFooterBtn}>
+              Start Free Practice
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+          <div className={styles.preFooterTrust}>
+            <span><CheckCircle size={12} /> Free forever</span>
+            <span><Shield size={12} /> 30-day guarantee</span>
+            <span><Star size={12} /> 4.9/5 rating</span>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.container}>
         <div className={styles.grid}>
           {/* Brand */}
           <div className={styles.brand}>
             <h3>CELPIP AI Coach</h3>
             <p>AI-powered CELPIP preparation platform. Free practice tests, personalized feedback, and adaptive learning to help you achieve your target CLB score.</p>
+            <div className={styles.brandStats}>
+              <span><Users size={12} /> 350+ students</span>
+              <span><Star size={12} /> 15+ countries</span>
+            </div>
           </div>
 
           {/* Practice */}
@@ -66,7 +89,7 @@ export default function Footer() {
           {/* Newsletter */}
           <div className={styles.newsletter}>
             <h4>Free Study Plan</h4>
-            <p>Get a 14-day CELPIP study plan + weekly tips.</p>
+            <p>Get a 14-day CELPIP study plan + weekly tips delivered to your inbox.</p>
             {status === 'done' ? (
               <p className={styles.done}><CheckCircle size={16} /> Subscribed!</p>
             ) : (
@@ -83,16 +106,21 @@ export default function Footer() {
                 </button>
               </form>
             )}
+            <p className={styles.privacyNote}>No spam, ever. Unsubscribe anytime.</p>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <span>© {new Date().getFullYear()} CELPIP AI Coach. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} CELPIP AI Coach. All rights reserved.</span>
           <div className={styles.bottomLinks}>
             <Link href="/pricing">Pricing</Link>
-            <span>·</span>
+            <span>&middot;</span>
             <Link href="/blog">Blog</Link>
-            <span>·</span>
+            <span>&middot;</span>
+            <Link href="/privacy">Privacy</Link>
+            <span>&middot;</span>
+            <Link href="/terms">Terms</Link>
+            <span>&middot;</span>
             <a href="/support"><Mail size={14} /> Support</a>
           </div>
         </div>

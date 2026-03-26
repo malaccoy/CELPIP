@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import { X, ExternalLink, Users, Newspaper, FileText, Target, UserPlus } from 'lucide-react';
+import { usePathname, useRouter } from 'next/navigation';
+import { X, ExternalLink, Users, Newspaper, FileText, Target, UserPlus, Zap, ArrowRight } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 import styles from '@/styles/CommunityPopup.module.scss';
 
@@ -12,6 +12,7 @@ const STORAGE_KEY = 'community-popup-dismissed';
 export function CommunityPopup() {
   const [show, setShow] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     if (pathname.startsWith('/try') || pathname.startsWith('/start')) return;
@@ -22,7 +23,7 @@ export function CommunityPopup() {
     const timer = setTimeout(() => {
       setShow(true);
       analytics.communityPopupShown();
-    }, 2000);
+    }, 8000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -81,6 +82,11 @@ export function CommunityPopup() {
             <Users size={18} />
             Join Telegram Group
             <ExternalLink size={14} />
+          </button>
+
+          <button className={styles.secondaryBtn} onClick={() => { dismiss(); router.push('/auth/register'); }}>
+            <Zap size={14} />
+            Or start free practice instead
           </button>
 
           <button className={styles.skipBtn} onClick={dismiss}>

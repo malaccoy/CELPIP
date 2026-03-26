@@ -7,7 +7,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import {
   Home, Dumbbell, User, LogOut, ChevronDown, Crown,
   CreditCard, BookOpen, HelpCircle, GraduationCap, Trophy,
-  Gem, MessageCircle,
+  Gem, MessageCircle, Zap,
 } from 'lucide-react';
 import { useUser } from '@/hooks/useUser';
 import { useContentAccess } from '@/hooks/useContentAccess';
@@ -127,9 +127,15 @@ export const Header: React.FC = () => {
                 </Link>
               </div>
             ) : (
-              <Link href="/auth/login" className={styles.loginBtn}>
-                Sign In
-              </Link>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <Link href="/auth/login" className={styles.loginBtnGhost}>
+                  Sign In
+                </Link>
+                <Link href="/auth/register" className={styles.startFreeBtn}>
+                  <Zap size={14} />
+                  Start Free
+                </Link>
+              </div>
             )}
           </div>
         </header>
@@ -232,9 +238,15 @@ export const Header: React.FC = () => {
                 </div>
               </div>
             ) : !loading ? (
-              <Link href="/auth/login" className={styles.loginBtn}>
-                Sign In
-              </Link>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <Link href="/auth/login" className={styles.loginBtnGhost}>
+                  Sign In
+                </Link>
+                <Link href="/auth/register" className={styles.startFreeBtn}>
+                  <Zap size={14} />
+                  Start Free
+                </Link>
+              </div>
             ) : null}
           </nav>
         </div>

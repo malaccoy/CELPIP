@@ -149,14 +149,43 @@
   }
 }
 
+.secondaryBtn {
+  width: 100%;
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: ds.$radius-md;
+  color: ds.$text-secondary;
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  transition: all ds.$transition-smooth;
+
+  svg {
+    color: ds.$accent-primary-light;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: ds.$text-primary;
+  }
+}
+
 .skipBtn {
   background: none;
   border: none;
   color: ds.$text-dim;
   font-family: ds.$font-body;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   cursor: pointer;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   transition: color ds.$transition-fast;
 
