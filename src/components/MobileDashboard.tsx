@@ -1,13 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   Headphones, BookOpen, PenTool, Mic,
   ArrowRight, Sparkles, FileText, GraduationCap,
   Calculator, MessageCircle, Crown, Swords, ChevronRight,
-  Flame, Zap, Trophy, Star, Clock,
+  Flame, Zap, Trophy, Star, Clock, Target,
+  TrendingUp, Play, Shield, Lock, Award,
 } from 'lucide-react';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import NotificationBell from '@/components/NotificationBell';
@@ -27,6 +28,75 @@ const G = {
   cyan: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
   slate: 'linear-gradient(135deg, #475569, #334155)',
 };
+
+/* ─── Animated Counter Hook ─── */
+function useCountUp(target: number, duration: number = 1200) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    if (!ref.current || started.current || target === 0) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+          const start = performance.now();
+          const animate = (now: number) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.round(eased * target));
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+          requestAnimationFrame(animate);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return { count, ref };
+}
+
+/* ─── Circular Progress Component ─── */
+function CircularProgress({ pct, color, size = 52, strokeWidth = 4 }: { pct: number; color: string; size?: number; strokeWidth?: number }) {
+  const radius = (size - strokeWidth) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (pct / 100) * circumference;
+
+  return (
+    <svg width={size} height={size} className={styles.circularProgress}>
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={radius}
+        fill="none"
+        stroke="rgba(255,255,255,0.06)"
+        strokeWidth={strokeWidth}
+      />
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={radius}
+        fill="none"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeDasharray={circumference}
+        strokeDashoffset={offset}
+        style={{
+          transition: 'stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1)',
+          transform: 'rotate(-90deg)',
+          transformOrigin: '50% 50%',
+          filter: `drop-shadow(0 0 4px ${color}60)`,
+        }}
+      />
+    </svg>
+  );
+}
 
 export default function MobileDashboard({ desktop }: { desktop?: boolean } = {}) {
   const router = useRouter();
@@ -141,11 +211,31 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
     return 'Good evening';
   };
 
+  // Motivational message based on user state
+  const getMotivation = () => {
+    if (totalPractices === 0) return 'Start your first practice and begin your journey!';
+    if (atRisk) return 'Your streak is at risk! Practice now to keep it alive.';
+    if (streak >= 7) return `${streak}-day streak! You're building a powerful habit.`;
+    if (streak > 0) return `${streak}-day streak! Keep the momentum going.`;
+    if (totalPractices > 50) return 'Great progress! Push for the next level.';
+    return 'Every practice brings you closer to your target CLB.';
+  };
+
+  // Estimated CLB based on total practice
+  const getEstimatedCLB = () => {
+    if (totalPractices >= 200) return 10;
+    if (totalPractices >= 100) return 9;
+    if (totalPractices >= 50) return 8;
+    if (totalPractices >= 20) return 7;
+    if (totalPractices >= 5) return 6;
+    return 5;
+  };
+
   const skills = [
-    { icon: Headphones, title: 'Listening', gradient: G.blue, sessions: listening, href: '/ai-coach?skill=listening' },
-    { icon: BookOpen, title: 'Reading', gradient: G.green, sessions: reading, href: '/ai-coach?skill=reading' },
-    { icon: PenTool, title: 'Writing', gradient: G.amber, sessions: writing, href: '/ai-coach?skill=writing' },
-    { icon: Mic, title: 'Speaking', gradient: G.red, sessions: speaking, href: '/ai-coach?skill=speaking' },
+    { icon: Headphones, title: 'Listening', gradient: G.blue, color: '#60a5fa', sessions: listening, href: '/ai-coach?skill=listening' },
+    { icon: BookOpen, title: 'Reading', gradient: G.green, color: '#34d399', sessions: reading, href: '/ai-coach?skill=reading' },
+    { icon: PenTool, title: 'Writing', gradient: G.amber, color: '#fbbf24', sessions: writing, href: '/ai-coach?skill=writing' },
+    { icon: Mic, title: 'Speaking', gradient: G.red, color: '#f87171', sessions: speaking, href: '/ai-coach?skill=speaking' },
   ];
 
   const progressItems = [
@@ -168,8 +258,26 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
     return { lvl, pct, inLvl, needed, tierLabel };
   };
 
+  // Animated counters for stats
+  const totalCounter = useCountUp(totalPractices);
+  const streakCounter = useCountUp(streak);
+  const xpCounter = useCountUp(xp);
+
+  // Find weakest skill for recommendation
+  const skillSessions = [
+    { name: 'Listening', sessions: listening, href: '/ai-coach?skill=listening' },
+    { name: 'Reading', sessions: reading, href: '/ai-coach?skill=reading' },
+    { name: 'Writing', sessions: writing, href: '/ai-coach?skill=writing' },
+    { name: 'Speaking', sessions: speaking, href: '/ai-coach?skill=speaking' },
+  ];
+  const weakestSkill = skillSessions.reduce((a, b) => a.sessions <= b.sessions ? a : b);
+
   return (
     <div className={`${styles.page} ${desktop ? styles.pageDesktop : ''}`}>
+      {/* ─── Ambient Background Orbs ─── */}
+      <div className={styles.ambientOrb1} />
+      <div className={styles.ambientOrb2} />
+
       {/* ─── Top Bar ─── */}
       {!desktop && (
         <div className={styles.topBar}>
@@ -178,7 +286,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           </div>
 
           <div className={styles.topBarChips}>
-            <div className={styles.statChip} style={{ background: 'rgba(251,191,36,0.08)' }}>
+            <div className={`${styles.statChip} ${streak > 0 ? styles.statChipActive : ''}`} style={{ background: 'rgba(251,191,36,0.08)' }}>
               <Flame size={14} style={{ color: '#fbbf24' }} />
               <span className={styles.statChipValue} style={{ color: '#fbbf24' }}>{streak}</span>
             </div>
@@ -209,20 +317,53 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         </div>
       )}
 
-      {/* ─── Greeting ─── */}
-      <div className={desktop ? styles.greetingDesktop : styles.greeting}>
-        <h1 className={styles.greetingTitle}>
-          {greeting()}{userName ? `, ${userName}` : ''}
-        </h1>
-        <p className={styles.greetingSub}>
-          {isPro ? (
-            <><Star size={14} style={{ color: '#fbbf24' }} /> Pro Member</>
-          ) : streak > 0 ? (
-            <><Flame size={14} style={{ color: '#fbbf24' }} /> {streak} day streak{atRisk ? ' \u2014 practice today!' : '! Keep going'}</>
-          ) : (
-            'Start your first practice today'
-          )}
-        </p>
+      {/* ─── Welcome Banner (replaces plain greeting) ─── */}
+      <div className={desktop ? styles.welcomeBannerDesktop : styles.welcomeBanner}>
+        <div className={styles.welcomeLeft}>
+          <div className={styles.welcomeGreeting}>
+            <h1 className={styles.welcomeTitle}>
+              {greeting()}{userName ? `, ${userName}` : ''}
+            </h1>
+            {isPro && (
+              <span className={styles.proBadge}>
+                <Crown size={12} /> PRO
+              </span>
+            )}
+          </div>
+          <p className={styles.welcomeMotivation}>
+            {getMotivation()}
+          </p>
+          {/* Inline Stats Row */}
+          <div className={styles.welcomeStats}>
+            <div className={styles.welcomeStat}>
+              <Flame size={14} className={styles.welcomeStatIcon} style={{ color: '#fbbf24' }} />
+              <span className={styles.welcomeStatValue}>{streak}</span>
+              <span className={styles.welcomeStatLabel}>streak</span>
+            </div>
+            <div className={styles.welcomeStatDivider} />
+            <div className={styles.welcomeStat}>
+              <Target size={14} className={styles.welcomeStatIcon} style={{ color: '#a78bfa' }} />
+              <span className={styles.welcomeStatValue}>{totalPractices}</span>
+              <span className={styles.welcomeStatLabel}>exercises</span>
+            </div>
+            <div className={styles.welcomeStatDivider} />
+            <div className={styles.welcomeStat}>
+              <TrendingUp size={14} className={styles.welcomeStatIcon} style={{ color: '#34d399' }} />
+              <span className={styles.welcomeStatValue}>CLB {getEstimatedCLB()}</span>
+              <span className={styles.welcomeStatLabel}>est. level</span>
+            </div>
+          </div>
+        </div>
+        {/* Streak Visual (right side on desktop) */}
+        {streak > 0 && (
+          <div className={styles.streakVisual}>
+            <div className={styles.streakFlame}>
+              <Flame size={28} />
+            </div>
+            <span className={styles.streakNumber}>{streak}</span>
+            <span className={styles.streakLabel}>day{streak !== 1 ? 's' : ''}</span>
+          </div>
+        )}
       </div>
 
       {/* ─── Daily Usage (free only) ─── */}
@@ -239,7 +380,27 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
               <span className={styles.dailyCount}>{used}/{dailyLimit}</span>
               {used >= dailyLimit && <RechargeTimer />}
             </div>
-            <button className={styles.upgradeChip} onClick={() => router.push('/pricing')}>Upgrade</button>
+            <button className={styles.upgradeChip} onClick={() => router.push('/pricing')}>
+              <Crown size={10} /> Upgrade
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ─── AI Recommendation Card ─── */}
+      {totalPractices > 0 && (
+        <div className={styles.aiRecommendation}>
+          <div className={styles.aiRecCard} onClick={() => { window.location.href = weakestSkill.href; }}>
+            <div className={styles.aiRecIcon}>
+              <Sparkles size={18} />
+            </div>
+            <div className={styles.aiRecContent}>
+              <span className={styles.aiRecTitle}>AI Recommendation</span>
+              <span className={styles.aiRecText}>
+                Focus on <strong>{weakestSkill.name}</strong> — it&apos;s your area with the most room for growth.
+              </span>
+            </div>
+            <ArrowRight size={16} className={styles.aiRecArrow} />
           </div>
         </div>
       )}
@@ -247,50 +408,78 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
       {/* ─── Main Action Cards ─── */}
       <div className={styles.mainCards}>
         <div className={styles.mainCardsGrid}>
+          {/* PRIMARY: Start Practice — Full width, dominant */}
           <div className={styles.practiceCard} onClick={() => router.push('/drills')}>
             <div className={styles.practiceCardDecor1} />
             <div className={styles.practiceCardDecor2} />
+            <div className={styles.practiceCardDecor3} />
             <div className={styles.practiceCardContent}>
               <div className={styles.practiceCardHeader}>
-                <Sparkles size={22} />
-                <span className={styles.practiceCardTitle}>Start Practice</span>
+                <div className={styles.practiceCardIconBox}>
+                  <Play size={20} fill="white" />
+                </div>
+                <div>
+                  <span className={styles.practiceCardTitle}>Start Practice</span>
+                  <p className={styles.practiceCardDesc}>
+                    Continue your personalized daily drill
+                  </p>
+                </div>
               </div>
-              <p className={styles.practiceCardDesc}>
-                Speaking, Writing, Listening & Reading drills
-              </p>
+              <div className={styles.practiceCardCta}>
+                <span>Begin Session</span>
+                <ArrowRight size={16} />
+              </div>
             </div>
-            <ArrowRight size={20} className={styles.practiceCardArrow} />
           </div>
 
+          {/* SECONDARY: Battle Mode — Smaller, intriguing */}
           <div className={styles.battleCard} onClick={() => router.push('/battle')}>
             <div className={styles.battleIconBox}>
-              <Swords size={22} />
+              <Swords size={20} />
             </div>
             <div className={styles.battleContent}>
-              <span className={styles.battleTitle}>
-                <Swords size={18} /> Battle Mode
-              </span>
-              <p className={styles.battleDesc}>Challenge other students in real-time PvP!</p>
+              <span className={styles.battleTitle}>Battle Mode</span>
+              <p className={styles.battleDesc}>Challenge students in real-time PvP</p>
             </div>
-            <ArrowRight size={18} style={{ color: 'rgba(255,255,255,0.6)' }} />
+            <ChevronRight size={16} style={{ color: 'rgba(255,255,255,0.5)' }} />
           </div>
         </div>
       </div>
 
-      {/* ─── Practice by Skill ─── */}
+      {/* ─── Practice by Skill (with progress rings) ─── */}
       <div className={styles.skillsSection}>
-        <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+          <button className={styles.sectionLink} onClick={() => router.push('/drills')}>
+            View all <ChevronRight size={14} />
+          </button>
+        </div>
         <div className={styles.skillsGrid}>
           {skills.map(s => {
             const Icon = s.icon;
+            const { lvl, pct, tierLabel } = getLevel(s.sessions);
             return (
               <div key={s.title} className={styles.skillCard} onClick={() => { window.location.href = s.href; }}>
-                <div className={styles.skillIconCircle} style={{ background: s.gradient }}>
-                  <Icon size={20} />
+                <div className={styles.skillCardGlow} style={{ background: `${s.color}10` }} />
+                <div className={styles.skillCardTop}>
+                  <div className={styles.skillIconWrapper}>
+                    <CircularProgress pct={pct} color={s.color} size={52} strokeWidth={3} />
+                    <div className={styles.skillIconInner} style={{ background: s.gradient }}>
+                      <Icon size={18} />
+                    </div>
+                  </div>
+                  <div className={styles.skillLevelBadge} style={{ color: s.color, background: `${s.color}15` }}>
+                    Lvl {lvl}
+                  </div>
                 </div>
                 <div className={styles.skillCardTitle}>{s.title}</div>
-                <div className={styles.skillCardSessions}>
-                  {s.sessions} exercise{s.sessions !== 1 ? 's' : ''} done
+                <div className={styles.skillCardMeta}>
+                  <span className={styles.skillCardSessions}>{s.sessions} exercises</span>
+                  <span className={styles.skillCardTier}>{tierLabel}</span>
+                </div>
+                <div className={styles.skillCardAction}>
+                  <Play size={12} fill={s.color} style={{ color: s.color }} />
+                  <span style={{ color: s.color }}>Practice</span>
                 </div>
               </div>
             );
@@ -298,39 +487,84 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         </div>
       </div>
 
-      {/* ─── Quick Access ─── */}
+      {/* ─── Quick Access (redesigned with unique visuals) ─── */}
       <div className={styles.quickSection}>
-        <h2 className={styles.sectionTitle}>Quick Access</h2>
-        <div className={styles.quickList}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Quick Access</h2>
+        </div>
+        <div className={styles.quickGrid}>
           {[
-            { icon: FileText, gradient: G.purple, label: 'Mock Exams', sub: 'Full test simulation', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/mock-exam') },
-            { icon: GraduationCap, gradient: G.green, label: 'Study Guides', sub: 'Techniques & strategies', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/guides') },
-            { icon: Calculator, gradient: G.cyan, label: 'CRS Calculator', sub: 'Check your score', onClick: () => router.push('/tools/score-calculator') },
-            { icon: MessageCircle, gradient: G.slate, label: 'Community', sub: 'Join 200+ learners', onClick: () => window.open('https://t.me/+YcO9MfUHIjQyYjAx', '_blank') },
+            { icon: FileText, gradient: G.purple, color: '#a78bfa', label: 'Mock Exams', sub: 'Full test simulation', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/mock-exam') },
+            { icon: GraduationCap, gradient: G.green, color: '#34d399', label: 'Study Guides', sub: 'Techniques & strategies', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/guides') },
+            { icon: Calculator, gradient: G.cyan, color: '#38bdf8', label: 'CRS Calculator', sub: 'Check your score', onClick: () => router.push('/tools/score-calculator') },
+            { icon: MessageCircle, gradient: G.slate, color: '#94a3b8', label: 'Community', sub: 'Join 200+ learners', onClick: () => window.open('https://t.me/+YcO9MfUHIjQyYjAx', '_blank') },
           ].map((item, i) => {
             const Icon = item.icon;
             return (
-              <div key={i} className={styles.quickItem} onClick={item.onClick}>
-                <div className={styles.quickIconCircle} style={{ background: item.gradient }}>
+              <div key={i} className={styles.quickCard} onClick={item.onClick}>
+                <div className={styles.quickCardIcon} style={{ background: item.gradient }}>
                   <Icon size={18} />
                 </div>
-                <div className={styles.quickInfo}>
-                  <div className={styles.quickLabel}>
+                <div className={styles.quickCardInfo}>
+                  <div className={styles.quickCardLabel}>
                     {item.label}
-                    {item.badge && <span className={styles.quickBadge}>{item.badge}</span>}
+                    {item.badge && (
+                      <span className={styles.quickBadge}>
+                        <Lock size={8} /> {item.badge}
+                      </span>
+                    )}
                   </div>
-                  <div className={styles.quickSub}>{item.sub}</div>
+                  <div className={styles.quickCardSub}>{item.sub}</div>
                 </div>
-                <ChevronRight size={16} className={styles.quickArrow} />
+                <ChevronRight size={14} className={styles.quickCardArrow} />
               </div>
             );
           })}
         </div>
       </div>
 
-      {/* ─── Your Progress ─── */}
+      {/* ─── Your Progress (elevated with better visualization) ─── */}
       <div className={styles.progressSection}>
-        <h2 className={styles.sectionTitle}>Your Progress</h2>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Your Progress</h2>
+          <button className={styles.sectionLink} onClick={() => router.push('/profile')}>
+            Full stats <ChevronRight size={14} />
+          </button>
+        </div>
+
+        {/* Overall Stats Summary */}
+        <div className={styles.overallStats} ref={totalCounter.ref}>
+          <div className={styles.overallStatItem}>
+            <div className={styles.overallStatIcon} style={{ background: 'rgba(251,191,36,0.1)' }}>
+              <Flame size={18} style={{ color: '#fbbf24' }} />
+            </div>
+            <span className={styles.overallStatValue}>{streakCounter.count}</span>
+            <span className={styles.overallStatLabel}>Day Streak</span>
+          </div>
+          <div className={styles.overallStatItem}>
+            <div className={styles.overallStatIcon} style={{ background: 'rgba(167,139,250,0.1)' }}>
+              <Zap size={18} style={{ color: '#a78bfa' }} />
+            </div>
+            <span className={styles.overallStatValue}>{xpCounter.count}</span>
+            <span className={styles.overallStatLabel}>Total XP</span>
+          </div>
+          <div className={styles.overallStatItem}>
+            <div className={styles.overallStatIcon} style={{ background: 'rgba(52,211,153,0.1)' }}>
+              <Award size={18} style={{ color: '#34d399' }} />
+            </div>
+            <span className={styles.overallStatValue}>{totalCounter.count}</span>
+            <span className={styles.overallStatLabel}>Exercises</span>
+          </div>
+          <div className={styles.overallStatItem}>
+            <div className={styles.overallStatIcon} style={{ background: 'rgba(56,189,248,0.1)' }}>
+              <Trophy size={18} style={{ color: '#38bdf8' }} />
+            </div>
+            <span className={styles.overallStatValue}>{myRank ? `#${myRank}` : '—'}</span>
+            <span className={styles.overallStatLabel}>Rank</span>
+          </div>
+        </div>
+
+        {/* Per-skill progress cards */}
         <div className={styles.progressGrid}>
           {progressItems.map(p => {
             const { lvl, pct, inLvl, needed, tierLabel } = getLevel(p.sessions);
@@ -386,19 +620,27 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         </div>
       )}
 
-      {/* ─── Upgrade Banner (free only) ─── */}
+      {/* ─── Upgrade Banner (free only) — Premium redesign ─── */}
       {!isPro && (
         <div className={styles.upgradeBanner}>
           <div className={styles.upgradeBannerInner} onClick={() => router.push('/pricing')}>
-            <div>
-              <div className={styles.upgradeBannerTitle}>
-                <Crown size={16} /> Upgrade to Pro
+            <div className={styles.upgradeBannerGlow} />
+            <div className={styles.upgradeBannerContent}>
+              <div className={styles.upgradeBannerIcon}>
+                <Crown size={20} />
               </div>
-              <div className={styles.upgradeBannerDesc}>
-                Unlimited practice &bull; Mock exams &bull; AI feedback
+              <div>
+                <div className={styles.upgradeBannerTitle}>
+                  Unlock Unlimited Practice
+                </div>
+                <div className={styles.upgradeBannerDesc}>
+                  Unlimited drills &bull; Mock exams &bull; AI feedback &bull; No daily limits
+                </div>
               </div>
             </div>
-            <ArrowRight size={18} style={{ color: 'rgba(255,255,255,0.7)' }} />
+            <div className={styles.upgradeBannerCta}>
+              Upgrade <ArrowRight size={14} />
+            </div>
           </div>
         </div>
       )}

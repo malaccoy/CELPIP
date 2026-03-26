@@ -1,13 +1,55 @@
 @use 'design-system' as ds;
 
 // ============================================
-// MOBILE DASHBOARD — PREMIUM DESIGN
+// MOBILE DASHBOARD — PREMIUM REDESIGN v2
 // ============================================
 
+// ─── Animations ───
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(10px, -15px) scale(1.02); }
+  66% { transform: translate(-8px, 8px) scale(0.98); }
+}
+
+@keyframes streakPulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(251, 191, 36, 0.2); }
+  50% { box-shadow: 0 0 24px rgba(251, 191, 36, 0.4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// ─── Page ───
 .page {
   background: ds.$bg-deep;
   min-height: 100vh;
   padding: 0 0 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .pageDesktop {
@@ -16,16 +58,46 @@
   margin: 0 auto;
 }
 
+// ─── Ambient Orbs ───
+.ambientOrb1 {
+  position: fixed;
+  top: -5%;
+  left: -10%;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatOrb 20s ease-in-out infinite;
+}
+
+.ambientOrb2 {
+  position: fixed;
+  bottom: -10%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatOrb 25s ease-in-out infinite reverse;
+}
+
 // ─── Top Bar ───
 .topBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
-  background: ds.$bg-deep;
+  background: rgba(ds.$bg-deep, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
   z-index: 50;
+  border-bottom: 1px solid ds.$border-subtle;
 }
 
 .topBarLogo {
@@ -51,11 +123,20 @@
   gap: 4px;
   border-radius: ds.$radius-full;
   padding: 4px 10px;
+  transition: all ds.$transition-smooth;
 
   svg {
     width: 14px;
     height: 14px;
   }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.statChipActive {
+  animation: streakPulse 2s ease-in-out infinite;
 }
 
 .statChipValue {
@@ -105,51 +186,187 @@
   font-family: ds.$font-display;
   font-weight: 700;
   font-size: 0.85rem;
+  transition: all ds.$transition-smooth;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  &:hover {
+    border-color: ds.$accent-primary;
+    transform: scale(1.05);
+  }
 }
 
-// ─── Greeting ───
-.greeting {
-  padding: 16px 20px 12px;
+// ============================================
+// WELCOME BANNER (replaces plain greeting)
+// ============================================
+.welcomeBanner {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth both;
 }
 
-.greetingDesktop {
-  padding: 0 0 16px;
+.welcomeBannerDesktop {
+  @extend .welcomeBanner;
+  padding: 0 0 20px;
 }
 
-.greetingTitle {
+.welcomeLeft {
+  flex: 1;
+  min-width: 0;
+}
+
+.welcomeGreeting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.welcomeTitle {
   font-family: ds.$font-display;
   color: ds.$text-primary;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 0;
   letter-spacing: -0.02em;
+  line-height: 1.2;
+
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+  }
 }
 
-.greetingSub {
-  font-family: ds.$font-body;
-  color: ds.$text-secondary;
-  font-size: 0.82rem;
-  margin: 4px 0 0;
-  font-weight: 500;
-  display: flex;
+.proBadge {
+  display: inline-flex;
   align-items: center;
   gap: 4px;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #1a1a2e;
+  font-family: ds.$font-display;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: ds.$radius-full;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
 
   svg {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
+}
+
+.welcomeMotivation {
+  font-family: ds.$font-body;
+  color: ds.$text-muted;
+  font-size: 0.82rem;
+  margin: 6px 0 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.welcomeStats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 14px;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-md;
+  padding: 8px 4px;
+  animation: fadeInUp 0.6s ds.$ease-smooth 0.1s both;
+}
+
+.welcomeStat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+.welcomeStatIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.welcomeStatValue {
+  font-family: ds.$font-display;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+}
+
+.welcomeStatLabel {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-dim;
+  font-weight: 500;
+}
+
+.welcomeStatDivider {
+  width: 1px;
+  height: 20px;
+  background: ds.$border-default;
+  flex-shrink: 0;
+}
+
+// Streak Visual (right side)
+.streakVisual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px;
+  background: rgba(251, 191, 36, 0.06);
+  border: 1px solid rgba(251, 191, 36, 0.15);
+  border-radius: ds.$radius-lg;
+  animation: fadeIn 0.6s ds.$ease-smooth 0.2s both;
+  flex-shrink: 0;
+}
+
+.streakFlame {
+  color: #fbbf24;
+  animation: pulseGlow 2s ease-in-out infinite;
+
+  svg {
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5));
+  }
+}
+
+.streakNumber {
+  font-family: ds.$font-display;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fbbf24;
+  line-height: 1;
+}
+
+.streakLabel {
+  font-family: ds.$font-body;
+  font-size: 0.6rem;
+  color: rgba(251, 191, 36, 0.7);
+  font-weight: 600;
 }
 
 // ─── Daily Usage ───
 .dailyUsage {
   padding: 0 20px 12px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.15s both;
 }
 
 .dailyUsageBar {
@@ -184,11 +401,12 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  transition: background 0.2s;
+  transition: all 0.3s;
 }
 
 .dailyDotActive {
   background: ds.$accent-primary;
+  box-shadow: 0 0 6px rgba(ds.$accent-primary, 0.4);
 }
 
 .dailyDotInactive {
@@ -202,25 +420,112 @@
 }
 
 .upgradeChip {
-  font-family: ds.$font-body;
-  font-size: 0.7rem;
-  color: ds.$accent-primary;
+  font-family: ds.$font-display;
+  font-size: 0.68rem;
+  color: #fbbf24;
   font-weight: 700;
   cursor: pointer;
-  padding: 3px 10px;
-  border-radius: ds.$radius-sm;
-  background: ds.$accent-bg;
-  border: none;
+  padding: 4px 10px;
+  border-radius: ds.$radius-full;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.2);
   transition: all ds.$transition-fast;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  svg {
+    width: 10px;
+    height: 10px;
+  }
 
   &:hover {
-    background: rgba(ds.$accent-primary, 0.15);
+    background: rgba(251, 191, 36, 0.18);
+    transform: translateY(-1px);
   }
 }
 
-// ─── Main Cards ───
+// ============================================
+// AI RECOMMENDATION CARD
+// ============================================
+.aiRecommendation {
+  padding: 0 20px 14px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.2s both;
+}
+
+.aiRecCard {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(99, 102, 241, 0.04) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: ds.$radius-md;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
+    border-color: rgba(139, 92, 246, 0.25);
+    transform: translateY(-1px);
+  }
+}
+
+.aiRecIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: ds.$radius-sm;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.aiRecContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.aiRecTitle {
+  font-family: ds.$font-display;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a78bfa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.aiRecText {
+  font-family: ds.$font-body;
+  font-size: 0.78rem;
+  color: ds.$text-secondary;
+  line-height: 1.4;
+
+  strong {
+    color: ds.$text-primary;
+    font-weight: 700;
+  }
+}
+
+.aiRecArrow {
+  color: rgba(167, 139, 250, 0.5);
+  flex-shrink: 0;
+}
+
+// ============================================
+// MAIN ACTION CARDS
+// ============================================
 .mainCards {
-  padding: 0 20px 16px;
+  padding: 0 20px 18px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.25s both;
 }
 
 .mainCardsGrid {
@@ -232,32 +537,42 @@
     flex-direction: row;
     gap: 14px;
 
-    > * {
+    > *:first-child {
+      flex: 2;
+    }
+
+    > *:last-child {
       flex: 1;
     }
   }
 }
 
+// Practice Card — PRIMARY CTA
 .practiceCard {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 40%, #a855f7 100%);
   border-radius: ds.$radius-lg;
-  padding: 20px;
+  padding: 22px 20px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: transform ds.$transition-smooth;
+  transition: all ds.$transition-smooth;
 
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-1px) scale(0.99);
   }
 }
 
 .practiceCardDecor1 {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 100px;
-  height: 100px;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   pointer-events: none;
@@ -265,11 +580,22 @@
 
 .practiceCardDecor2 {
   position: absolute;
-  bottom: -30px;
-  right: 30px;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.05);
+  bottom: -40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.practiceCardDecor3 {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -277,32 +603,68 @@
 .practiceCardContent {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .practiceCardHeader {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 14px;
+  flex: 1;
+}
 
-  svg {
-    color: #fff;
-  }
+.practiceCardIconBox {
+  width: 44px;
+  height: 44px;
+  border-radius: ds.$radius-md;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
 }
 
 .practiceCardTitle {
   color: #fff;
   font-family: ds.$font-display;
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  display: block;
+  letter-spacing: -0.01em;
 }
 
 .practiceCardDesc {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.7);
   font-family: ds.$font-body;
-  font-size: 0.78rem;
-  margin: 0;
-  line-height: 1.4;
+  font-size: 0.76rem;
+  margin: 3px 0 0;
+  line-height: 1.3;
+}
+
+.practiceCardCta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: ds.$radius-full;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: ds.$font-display;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all ds.$transition-fast;
+
+  .practiceCard:hover & {
+    background: rgba(255, 255, 255, 0.28);
+  }
 }
 
 .practiceCardArrow {
@@ -313,29 +675,35 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+// Battle Card — SECONDARY
 .battleCard {
-  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
   border-radius: ds.$radius-lg;
-  padding: 16px 20px;
+  padding: 16px 18px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   gap: 14px;
-  transition: transform ds.$transition-smooth;
+  transition: all ds.$transition-smooth;
 
   &:hover {
+    border-color: rgba(249, 115, 22, 0.3);
+    background: ds.$bg-card-hover;
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.1);
   }
 }
 
 .battleIconBox {
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #f97316, #ef4444);
   border-radius: ds.$radius-sm;
   padding: 10px;
   display: flex;
   color: #fff;
+  flex-shrink: 0;
 }
 
 .battleContent {
@@ -343,40 +711,73 @@
 }
 
 .battleTitle {
-  color: #fff;
+  color: ds.$text-primary;
   font-family: ds.$font-display;
-  font-weight: 800;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.92rem;
   display: flex;
   align-items: center;
-  gap: 6px;
-
-  svg {
-    width: 18px;
-    height: 18px;
-  }
+  gap: 0;
 }
 
 .battleDesc {
-  color: rgba(255, 255, 255, 0.75);
+  color: ds.$text-dim;
   font-family: ds.$font-body;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   margin: 2px 0 0;
 }
 
-// ─── Section Title ───
+// ============================================
+// SECTION HEADERS
+// ============================================
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
 .sectionTitle {
   font-family: ds.$font-display;
   color: ds.$text-primary;
   font-size: 0.95rem;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0;
   letter-spacing: -0.01em;
 }
 
-// ─── Skills Grid ───
+.sectionLink {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: ds.$font-body;
+  font-size: 0.72rem;
+  color: ds.$text-dim;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color ds.$transition-fast;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  &:hover {
+    color: ds.$text-secondary;
+  }
+}
+
+// ============================================
+// SKILLS GRID (with progress rings)
+// ============================================
 .skillsSection {
-  padding: 0 20px 16px;
+  padding: 0 20px 18px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.3s both;
 }
 
 .skillsGrid {
@@ -397,78 +798,165 @@
   cursor: pointer;
   border: 1px solid ds.$border-default;
   transition: all ds.$transition-smooth;
+  position: relative;
+  overflow: hidden;
 
   &:hover {
     border-color: ds.$border-hover;
     background: ds.$bg-card-hover;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: ds.$shadow-lg;
+
+    .skillCardAction {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
-.skillIconCircle {
-  width: 40px;
-  height: 40px;
-  border-radius: ds.$radius-md;
+.skillCardGlow {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.skillCardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.skillIconWrapper {
+  position: relative;
+  width: 52px;
+  height: 52px;
+}
+
+.circularProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skillIconInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border-radius: ds.$radius-sm;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  flex-shrink: 0;
+}
+
+.skillLevelBadge {
+  font-family: ds.$font-display;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
 }
 
 .skillCardTitle {
   font-family: ds.$font-display;
   color: ds.$text-primary;
   font-weight: 700;
-  font-size: 0.88rem;
-  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.skillCardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
 }
 
 .skillCardSessions {
   font-family: ds.$font-body;
   color: ds.$text-dim;
+  font-size: 0.68rem;
+}
+
+.skillCardTier {
+  font-family: ds.$font-body;
+  color: ds.$text-dim;
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.skillCardAction {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  font-family: ds.$font-display;
   font-size: 0.7rem;
-  margin-top: 2px;
+  font-weight: 700;
+  opacity: 0.6;
+  transform: translateY(4px);
+  transition: all ds.$transition-smooth;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
 }
 
-// ─── Quick Access ───
+// ============================================
+// QUICK ACCESS (card-based grid)
+// ============================================
 .quickSection {
-  padding: 0 20px 16px;
+  padding: 0 20px 18px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.35s both;
 }
 
-.quickList {
-  background: ds.$bg-card;
-  border-radius: ds.$radius-lg;
-  overflow: hidden;
-  border: 1px solid ds.$border-default;
+.quickGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }
 
-.quickItem {
+.quickCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-md;
+  padding: 14px 16px;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 16px;
   cursor: pointer;
-  border-bottom: 1px solid ds.$border-subtle;
-  transition: background ds.$transition-fast;
-
-  &:last-child {
-    border-bottom: none;
-  }
+  transition: all ds.$transition-smooth;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.02);
+    background: ds.$bg-card-hover;
+    border-color: ds.$border-hover;
+    transform: translateY(-2px);
+    box-shadow: ds.$shadow-md;
   }
 }
 
-.quickIconCircle {
-  width: 36px;
-  height: 36px;
+.quickCardIcon {
+  width: 38px;
+  height: 38px;
   border-radius: ds.$radius-sm;
   display: flex;
   align-items: center;
@@ -477,12 +965,12 @@
   flex-shrink: 0;
 }
 
-.quickInfo {
+.quickCardInfo {
   flex: 1;
   min-width: 0;
 }
 
-.quickLabel {
+.quickCardLabel {
   font-family: ds.$font-display;
   color: ds.$text-primary;
   font-weight: 600;
@@ -493,34 +981,106 @@
 }
 
 .quickBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-family: ds.$font-body;
-  font-size: 0.55rem;
+  font-size: 0.52rem;
   font-weight: 800;
   padding: 2px 6px;
-  background: rgba(139, 92, 246, 0.2);
-  color: #a78bfa;
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.1));
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.2);
   border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+
+  svg {
+    width: 8px;
+    height: 8px;
+  }
 }
 
-.quickSub {
+.quickCardSub {
   font-family: ds.$font-body;
   color: ds.$text-dim;
   font-size: 0.72rem;
   margin-top: 1px;
 }
 
-.quickArrow {
-  color: rgba(255, 255, 255, 0.15);
+.quickCardArrow {
+  color: rgba(255, 255, 255, 0.12);
   flex-shrink: 0;
+  transition: all ds.$transition-fast;
+
+  .quickCard:hover & {
+    color: rgba(255, 255, 255, 0.3);
+    transform: translateX(2px);
+  }
 }
 
-// ─── Progress ───
+// ============================================
+// PROGRESS SECTION
+// ============================================
 .progressSection {
-  padding: 0 20px 16px;
+  padding: 0 20px 18px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.4s both;
 }
 
+// Overall Stats Summary
+.overallStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.overallStatItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 6px;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-md;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+    transform: translateY(-2px);
+  }
+}
+
+.overallStatIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overallStatValue {
+  font-family: ds.$font-display;
+  font-size: 1rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+  line-height: 1;
+}
+
+.overallStatLabel {
+  font-family: ds.$font-body;
+  font-size: 0.58rem;
+  color: ds.$text-dim;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+// Per-skill progress
 .progressGrid {
   display: flex;
   flex-direction: column;
@@ -545,7 +1105,8 @@
 
   &:hover {
     border-color: ds.$border-hover;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: ds.$shadow-md;
   }
 }
 
@@ -642,7 +1203,7 @@
 .progressBarFill {
   height: 100%;
   border-radius: 4px;
-  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .progressBarLabel {
@@ -653,41 +1214,100 @@
   white-space: nowrap;
 }
 
-// ─── Upgrade Banner ───
+// ============================================
+// UPGRADE BANNER (premium redesign)
+// ============================================
 .upgradeBanner {
-  padding: 0 20px 16px;
+  padding: 0 20px 20px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ds.$ease-smooth 0.45s both;
 }
 
 .upgradeBannerInner {
-  background: linear-gradient(135deg, ds.$accent-primary, #b91c1c);
+  background: ds.$bg-card;
+  border: 1px solid rgba(251, 191, 36, 0.15);
   border-radius: ds.$radius-lg;
-  padding: 16px 20px;
+  padding: 18px 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform ds.$transition-smooth;
+  gap: 14px;
+  transition: all ds.$transition-smooth;
+  position: relative;
+  overflow: hidden;
 
   &:hover {
+    border-color: rgba(251, 191, 36, 0.3);
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(251, 191, 36, 0.1);
   }
 }
 
-.upgradeBannerTitle {
-  color: #fff;
-  font-family: ds.$font-display;
-  font-weight: 800;
-  font-size: 0.95rem;
+.upgradeBannerGlow {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.upgradeBannerContent {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 14px;
+  flex: 1;
+}
+
+.upgradeBannerIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: ds.$radius-sm;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a2e;
+  flex-shrink: 0;
+}
+
+.upgradeBannerTitle {
+  color: ds.$text-primary;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 0.92rem;
 }
 
 .upgradeBannerDesc {
-  color: rgba(255, 255, 255, 0.75);
+  color: ds.$text-dim;
   font-family: ds.$font-body;
-  font-size: 0.75rem;
-  margin-top: 3px;
+  font-size: 0.72rem;
+  margin-top: 2px;
+}
+
+.upgradeBannerCta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1a1a2e;
+  font-family: ds.$font-display;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 8px 14px;
+  border-radius: ds.$radius-full;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all ds.$transition-fast;
+
+  .upgradeBannerInner:hover & {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  }
 }
 
 // ─── Recharge Timer ───
