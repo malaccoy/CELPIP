@@ -1,47 +1,128 @@
+@use 'design-system' as *;
+
+/* ─── Container ─── */
 .container {
-  max-width: 480px;
+  max-width: 520px;
   margin: 0 auto;
   padding: 24px 16px 100px;
+  position: relative;
+  overflow: hidden;
 }
 
-.loading, .empty {
+/* ─── Ambient Background ─── */
+.ambientOrb1 {
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.ambientOrb2 {
+  position: absolute;
+  top: 300px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+/* ─── Loading / Empty ─── */
+.loading {
   text-align: center;
   padding: 80px 20px;
   color: rgba(248, 250, 252, 0.5);
+  position: relative;
+  z-index: 1;
   p { margin-top: 12px; font-size: 15px; }
   h2 { margin-top: 16px; color: rgba(248, 250, 252, 0.7); }
 }
 
-/* ── Header ── */
-.hero { text-align: center; margin-bottom: 24px; }
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: rgba(248, 250, 252, 0.5);
+  position: relative;
+  z-index: 1;
+  p { margin-top: 12px; font-size: 15px; }
+  h2 { margin-top: 16px; color: rgba(248, 250, 252, 0.7); }
+}
 
-.title {
-  font-size: 24px;
-  font-weight: 800;
-  color: #f8fafc;
-  margin: 0 0 6px;
-  display: flex;
+.loadingIcon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ─── Header ─── */
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-family: $font-display;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border: 1px solid rgba(251, 191, 36, 0.15);
+}
+
+.title {
+  font-family: $font-display;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  font-size: 13px;
-  color: rgba(248, 250, 252, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: rgba(248, 250, 252, 0.4);
   margin: 0;
 }
 
-.learnerCount { display: none; } /* info moved to subtitle */
-
-/* ── Podium ── */
+/* ─── Podium ─── */
 .podium {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 24px;
   padding: 0 8px;
+  position: relative;
+  z-index: 1;
 }
 
 .podiumSlot {
@@ -49,7 +130,16 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
-  max-width: 120px;
+  max-width: 130px;
+  animation: fadeInUp 0.5s ease-out both;
+
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0s; }
+  &:nth-child(3) { animation-delay: 0.2s; }
+}
+
+.podiumFirst {
+  transform: scale(1.02);
 }
 
 .podiumCrown {
@@ -59,8 +149,20 @@
   justify-content: center;
 }
 
+.crownEmoji {
+  font-size: 28px;
+  filter: drop-shadow(0 2px 6px rgba(251, 191, 36, 0.4));
+  animation: crownBounce 2s ease-in-out infinite;
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
 .podiumName {
-  font-size: 12px;
+  font-family: $font-display;
+  font-size: 0.72rem;
   font-weight: 700;
   color: #e2e8f0;
   margin-top: 8px;
@@ -69,43 +171,74 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.podiumYou {
+  font-size: 0.5rem;
+  padding: 1px 5px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 .podiumPoints {
-  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: $font-display;
+  font-size: 0.78rem;
   font-weight: 800;
-  margin: 2px 0 8px;
+  margin: 3px 0 8px;
 }
 
 .podiumBar {
   width: 100%;
-  border-radius: 12px 12px 4px 4px;
+  border-radius: 14px 14px 6px 6px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 12px;
   position: relative;
   min-height: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .podiumRank {
-  font-size: 22px;
+  font-family: $font-display;
+  font-size: 1.3rem;
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.25);
 }
 
-/* ── Leaderboard List ── */
+/* ─── Leaderboard List ─── */
 .leaderboard {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
-.emptyBoard {
-  padding: 40px;
-  text-align: center;
-  color: rgba(248, 250, 252, 0.4);
+.leaderboardHeader {
+  display: grid;
+  grid-template-columns: 56px 1fr 70px;
+  padding: 10px 16px;
+  font-family: $font-display;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+  span:last-child { text-align: right; }
 }
 
 .rankRow {
@@ -113,24 +246,55 @@
   align-items: center;
   padding: 12px 16px;
   gap: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  transition: background 0.15s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+  animation: fadeInUp 0.4s ease-out both;
+
   &:last-child { border-bottom: none; }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
   &:active { background: rgba(255, 255, 255, 0.04); }
 }
 
 .myRow {
-  background: rgba(99, 102, 241, 0.08) !important;
+  background: rgba(99, 102, 241, 0.06) !important;
   border-left: 3px solid #818cf8;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+    border-radius: inherit;
+  }
 }
 
 .rankNum {
-  width: 28px;
+  width: 32px;
   text-align: center;
-  font-size: 15px;
+  font-family: $font-display;
+  font-size: 0.85rem;
   font-weight: 800;
-  color: rgba(248, 250, 252, 0.35);
+  color: rgba(248, 250, 252, 0.3);
   flex-shrink: 0;
+}
+
+.rankBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: rgba(248, 250, 252, 0.5);
 }
 
 .rankInfo {
@@ -139,7 +303,8 @@
 }
 
 .rankName {
-  font-size: 15px;
+  font-family: $font-body;
+  font-size: 0.88rem;
   font-weight: 600;
   color: #f1f5f9;
   display: flex;
@@ -151,97 +316,198 @@
 }
 
 .youBadge {
-  font-size: 9px;
-  padding: 2px 6px;
+  font-family: $font-display;
+  font-size: 0.55rem;
+  padding: 2px 7px;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #fff;
-  border-radius: 4px;
+  border-radius: 5px;
   font-weight: 800;
   letter-spacing: 0.5px;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
 }
 
 .rankPoints {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 14px;
+  font-family: $font-display;
+  font-size: 0.82rem;
   font-weight: 700;
   color: #fbbf24;
   flex-shrink: 0;
 }
 
-/* ── Stats ── */
+/* ─── Your Stats ─── */
 .myStats {
-  margin-top: 20px;
+  margin-top: 24px;
+  position: relative;
+  z-index: 1;
 }
 
-.myStatsTitle { display: none; }
+.myStatsTitle {
+  font-family: $font-display;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 10px;
+  text-align: center;
+}
 
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: 10px;
 }
 
 .statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
   text-align: center;
-  padding: 14px 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.statIconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
 }
 
 .statValue {
-  font-size: 22px;
+  font-family: $font-display;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #f8fafc;
-  margin: 6px 0 2px;
+  line-height: 1.2;
 }
 
 .statLabel {
-  font-size: 11px;
-  color: rgba(248, 250, 252, 0.4);
+  font-size: 0.62rem;
+  color: rgba(248, 250, 252, 0.35);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-weight: 700;
 }
 
-/* ── Scoring Guide ── */
+/* ─── Scoring Guide ─── */
 .scoringGuide {
-  margin-top: 16px;
-  padding: 16px;
+  margin-top: 20px;
+  padding: 18px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 14px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
 
   h3 {
-    font-size: 12px;
+    font-family: $font-display;
+    font-size: 0.68rem;
     font-weight: 700;
-    color: rgba(248, 250, 252, 0.4);
-    margin: 0 0 10px;
+    color: rgba(248, 250, 252, 0.3);
+    margin: 0 0 14px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.08em;
+    text-align: center;
   }
 }
 
 .scoringGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 10px;
 }
 
 .scoringItem {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  color: rgba(248, 250, 252, 0.5);
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-1px);
+  }
 }
 
-/* ── Responsive ── */
+.scoringIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.scoringText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.scoringSkill {
+  font-family: $font-display;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.scoringPts {
+  font-size: 0.62rem;
+  color: rgba(248, 250, 252, 0.35);
+  font-weight: 500;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+@keyframes crownBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* ─── Responsive ─── */
 @media (max-width: 380px) {
-  .podium { gap: 4px; }
-  .podiumName { font-size: 11px; }
-  .statValue { font-size: 18px; }
+  .podium { gap: 6px; }
+  .podiumName { font-size: 0.65rem; }
+  .statValue { font-size: 1.2rem; }
+  .title { font-size: 1.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crownEmoji { animation: none; }
+  .loadingIcon { animation: none; }
+  .podiumSlot { animation: none; }
+  .rankRow { animation: none; }
 }

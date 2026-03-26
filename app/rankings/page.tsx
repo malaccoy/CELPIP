@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Trophy, Flame, Users, TrendingUp, Zap, BookOpen, Headphones, Pencil, Mic } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Trophy, Flame, Users, TrendingUp, Zap, BookOpen, Headphones, Pencil, Mic, Medal, Crown, Target, ArrowUp } from 'lucide-react';
 import styles from '@/styles/Rankings.module.scss';
 
 interface RankEntry {
@@ -23,6 +23,8 @@ interface RankingsData {
 export default function RankingsPage() {
   const [data, setData] = useState<RankingsData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [animatedStats, setAnimatedStats] = useState(false);
+  const statsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch(`/api/rankings?_=${Date.now()}`)
@@ -31,11 +33,24 @@ export default function RankingsPage() {
       .catch(() => setLoading(false));
   }, []);
 
+  // Animate stats on scroll into view
+  useEffect(() => {
+    if (!statsRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setAnimatedStats(true); },
+      { threshold: 0.3 }
+    );
+    observer.observe(statsRef.current);
+    return () => observer.disconnect();
+  }, [data]);
+
   if (loading) {
     return (
       <div className={styles.container}>
         <div className={styles.loading}>
-          <Trophy size={32} style={{ color: '#fbbf24' }} />
+          <div className={styles.loadingIcon}>
+            <Trophy size={32} />
+          </div>
           <p>Loading rankings...</p>
         </div>
       </div>
@@ -59,42 +74,60 @@ export default function RankingsPage() {
   // Podium order: 2nd, 1st, 3rd
   const podiumOrder = [top3[1], top3[0], top3[2]].filter(Boolean);
 
-  const Avatar = ({ entry, size = 48 }: { entry: RankEntry; size?: number }) => (
-    entry.avatar ? (
-      <div style={{
-        width: size, height: size, borderRadius: '50%',
-        backgroundImage: `url(${entry.avatar})`, backgroundSize: 'cover', backgroundPosition: 'center',
-        border: entry.rank === 1 ? '3px solid #fbbf24' : entry.rank === 2 ? '3px solid #94a3b8' : entry.rank === 3 ? '3px solid #d97706' : '2px solid rgba(255,255,255,0.1)',
-        flexShrink: 0,
-      }} />
-    ) : (
-      <div style={{
-        width: size, height: size, borderRadius: '50%',
-        background: entry.rank === 1 ? 'linear-gradient(135deg, #fbbf24, #f59e0b)' : entry.rank === 2 ? 'linear-gradient(135deg, #94a3b8, #cbd5e1)' : entry.rank === 3 ? 'linear-gradient(135deg, #d97706, #f59e0b)' : 'linear-gradient(135deg, #6366f1, #8b5cf6)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontSize: size * 0.4, fontWeight: 800, color: '#fff',
-        border: entry.rank <= 3 ? `3px solid ${entry.rank === 1 ? '#fde68a' : entry.rank === 2 ? '#e2e8f0' : '#fbbf24'}` : '2px solid rgba(255,255,255,0.1)',
-        flexShrink: 0,
-      }}>
-        {entry.displayName.charAt(0).toUpperCase()}
+  const rankMedals: Record<number, { bg: string; border: string; glow: string; icon: React.ReactNode }> = {
+    1: { bg: 'linear-gradient(135deg, #fbbf24, #f59e0b)', border: '#fde68a', glow: 'rgba(251, 191, 36, 0.3)', icon: <Crown size={16} /> },
+    2: { bg: 'linear-gradient(135deg, #94a3b8, #cbd5e1)', border: '#e2e8f0', glow: 'rgba(148, 163, 184, 0.2)', icon: <Medal size={14} /> },
+    3: { bg: 'linear-gradient(135deg, #d97706, #f59e0b)', border: '#fbbf24', glow: 'rgba(217, 119, 6, 0.25)', icon: <Medal size={14} /> },
+  };
+
+  const Avatar = ({ entry, size = 48 }: { entry: RankEntry; size?: number }) => {
+    const medal = rankMedals[entry.rank];
+    return entry.avatar ? (
+      <div className={styles.avatarWrap} style={{ width: size, height: size }}>
+        <div style={{
+          width: size, height: size, borderRadius: '50%',
+          backgroundImage: `url(${entry.avatar})`, backgroundSize: 'cover', backgroundPosition: 'center',
+          border: medal ? `3px solid ${medal.border}` : '2px solid rgba(255,255,255,0.1)',
+          boxShadow: medal ? `0 0 16px ${medal.glow}` : 'none',
+          flexShrink: 0,
+        }} />
       </div>
-    )
-  );
+    ) : (
+      <div className={styles.avatarWrap} style={{ width: size, height: size }}>
+        <div style={{
+          width: size, height: size, borderRadius: '50%',
+          background: medal ? medal.bg : 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: size * 0.4, fontWeight: 800, color: '#fff',
+          border: medal ? `3px solid ${medal.border}` : '2px solid rgba(255,255,255,0.1)',
+          boxShadow: medal ? `0 0 16px ${medal.glow}` : 'none',
+          flexShrink: 0,
+        }}>
+          {entry.displayName.charAt(0).toUpperCase()}
+        </div>
+      </div>
+    );
+  };
 
   const rankColors: Record<number, string> = { 1: '#fbbf24', 2: '#94a3b8', 3: '#d97706' };
 
   return (
     <div className={styles.container}>
+      {/* Ambient background orbs */}
+      <div className={styles.ambientOrb1} />
+      <div className={styles.ambientOrb2} />
+
       {/* Header */}
       <div className={styles.hero}>
-        <h1 className={styles.title}>
-          <Trophy size={28} style={{ color: '#fbbf24', verticalAlign: 'middle', marginRight: 8 }} />
-          Leaderboard
-        </h1>
+        <div className={styles.heroBadge}>
+          <Trophy size={14} />
+          <span>Leaderboard</span>
+        </div>
+        <h1 className={styles.title}>Top Performers</h1>
         {data.totalLearners > 0 && (
           <p className={styles.subtitle}>
-            <Users size={14} style={{ verticalAlign: 'middle', marginRight: 4 }} />
-            {data.totalLearners} learner{data.totalLearners !== 1 ? 's' : ''} this month
+            <Users size={13} />
+            <span>{data.totalLearners} learner{data.totalLearners !== 1 ? 's' : ''} competing this month</span>
           </p>
         )}
       </div>
@@ -102,25 +135,25 @@ export default function RankingsPage() {
       {/* Podium - Top 3 */}
       {top3.length >= 3 && (
         <div className={styles.podium}>
-          {podiumOrder.map((entry) => {
-            const heights: Record<number, number> = { 1: 100, 2: 70, 3: 50 };
+          {podiumOrder.map((entry, idx) => {
+            const heights: Record<number, number> = { 1: 110, 2: 78, 3: 56 };
+            const medal = rankMedals[entry.rank];
             return (
-              <div key={entry.rank} className={styles.podiumSlot}>
+              <div key={entry.rank} className={`${styles.podiumSlot} ${entry.rank === 1 ? styles.podiumFirst : ''}`}>
                 <div className={styles.podiumCrown}>
-                  {entry.rank === 1 && <span style={{ fontSize: 28 }}>👑</span>}
+                  {entry.rank === 1 && <span className={styles.crownEmoji}>👑</span>}
                 </div>
-                <Avatar entry={entry} size={entry.rank === 1 ? 64 : 52} />
-                <span className={styles.podiumName}>{entry.displayName.length > 10 ? entry.displayName.slice(0, 10) + '…' : entry.displayName}</span>
+                <Avatar entry={entry} size={entry.rank === 1 ? 68 : 54} />
+                <span className={styles.podiumName}>
+                  {entry.displayName.length > 10 ? entry.displayName.slice(0, 10) + '…' : entry.displayName}
+                  {entry.isCurrentUser && <span className={styles.podiumYou}>YOU</span>}
+                </span>
                 <span className={styles.podiumPoints} style={{ color: rankColors[entry.rank] || '#fbbf24' }}>
-                  {entry.points} pts
+                  <Zap size={12} /> {entry.points} pts
                 </span>
                 <div className={styles.podiumBar} style={{
                   height: heights[entry.rank],
-                  background: entry.rank === 1
-                    ? 'linear-gradient(180deg, #fbbf24, #f59e0b)'
-                    : entry.rank === 2
-                      ? 'linear-gradient(180deg, #94a3b8, #64748b)'
-                      : 'linear-gradient(180deg, #d97706, #b45309)',
+                  background: medal?.bg || 'linear-gradient(180deg, #6366f1, #4f46e5)',
                 }}>
                   <span className={styles.podiumRank}>{entry.rank}</span>
                 </div>
@@ -132,12 +165,22 @@ export default function RankingsPage() {
 
       {/* Rest of leaderboard */}
       <div className={styles.leaderboard}>
-        {(top3.length < 3 ? data.top10 : rest).map((entry) => (
+        <div className={styles.leaderboardHeader}>
+          <span>Rank</span>
+          <span>Player</span>
+          <span>Points</span>
+        </div>
+        {(top3.length < 3 ? data.top10 : rest).map((entry, idx) => (
           <div
             key={entry.rank}
             className={`${styles.rankRow} ${entry.isCurrentUser ? styles.myRow : ''}`}
+            style={{ animationDelay: `${idx * 0.05}s` }}
           >
-            <span className={styles.rankNum}>{entry.rank}</span>
+            <span className={styles.rankNum}>
+              {entry.rank <= 10 ? (
+                <span className={styles.rankBadge}>{entry.rank}</span>
+              ) : entry.rank}
+            </span>
             <Avatar entry={entry} size={40} />
             <div className={styles.rankInfo}>
               <span className={styles.rankName}>
@@ -146,28 +189,35 @@ export default function RankingsPage() {
               </span>
             </div>
             <div className={styles.rankPoints}>
-              <Zap size={14} style={{ color: '#fbbf24' }} />
-              {entry.points.toLocaleString()}
+              <Zap size={13} />
+              <span>{entry.points.toLocaleString()}</span>
             </div>
           </div>
         ))}
       </div>
 
       {/* Your Stats */}
-      <div className={styles.myStats}>
+      <div className={styles.myStats} ref={statsRef}>
+        <h3 className={styles.myStatsTitle}>Your Stats</h3>
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
-            <TrendingUp size={18} style={{ color: '#60a5fa' }} />
+            <div className={styles.statIconBox} style={{ background: 'rgba(96, 165, 250, 0.12)' }}>
+              <TrendingUp size={18} style={{ color: '#60a5fa' }} />
+            </div>
             <div className={styles.statValue}>{data.myRank ? `#${data.myRank}` : '—'}</div>
-            <div className={styles.statLabel}>Rank</div>
+            <div className={styles.statLabel}>Your Rank</div>
           </div>
           <div className={styles.statCard}>
-            <Zap size={18} style={{ color: '#fbbf24' }} />
+            <div className={styles.statIconBox} style={{ background: 'rgba(251, 191, 36, 0.12)' }}>
+              <Zap size={18} style={{ color: '#fbbf24' }} />
+            </div>
             <div className={styles.statValue}>{data.myPoints.toLocaleString()}</div>
             <div className={styles.statLabel}>Points</div>
           </div>
           <div className={styles.statCard}>
-            <Flame size={18} style={{ color: '#f97316' }} />
+            <div className={styles.statIconBox} style={{ background: 'rgba(249, 115, 22, 0.12)' }}>
+              <Flame size={18} style={{ color: '#f97316' }} />
+            </div>
             <div className={styles.statValue}>{data.myStreak}d</div>
             <div className={styles.statLabel}>Streak</div>
           </div>
@@ -178,10 +228,34 @@ export default function RankingsPage() {
       <div className={styles.scoringGuide}>
         <h3>How Points Work</h3>
         <div className={styles.scoringGrid}>
-          <div className={styles.scoringItem}><BookOpen size={14} style={{ color: '#34d399' }} /><span>Reading = 1pt</span></div>
-          <div className={styles.scoringItem}><Headphones size={14} style={{ color: '#60a5fa' }} /><span>Listening = 1pt</span></div>
-          <div className={styles.scoringItem}><Pencil size={14} style={{ color: '#a78bfa' }} /><span>Writing = 3pts</span></div>
-          <div className={styles.scoringItem}><Mic size={14} style={{ color: '#f97316' }} /><span>Speaking = 2pts</span></div>
+          <div className={styles.scoringItem}>
+            <div className={styles.scoringIcon} style={{ background: 'rgba(52, 211, 153, 0.1)' }}><BookOpen size={14} style={{ color: '#34d399' }} /></div>
+            <div className={styles.scoringText}>
+              <span className={styles.scoringSkill}>Reading</span>
+              <span className={styles.scoringPts}>1 pt / exercise</span>
+            </div>
+          </div>
+          <div className={styles.scoringItem}>
+            <div className={styles.scoringIcon} style={{ background: 'rgba(96, 165, 250, 0.1)' }}><Headphones size={14} style={{ color: '#60a5fa' }} /></div>
+            <div className={styles.scoringText}>
+              <span className={styles.scoringSkill}>Listening</span>
+              <span className={styles.scoringPts}>1 pt / exercise</span>
+            </div>
+          </div>
+          <div className={styles.scoringItem}>
+            <div className={styles.scoringIcon} style={{ background: 'rgba(167, 139, 250, 0.1)' }}><Pencil size={14} style={{ color: '#a78bfa' }} /></div>
+            <div className={styles.scoringText}>
+              <span className={styles.scoringSkill}>Writing</span>
+              <span className={styles.scoringPts}>3 pts / exercise</span>
+            </div>
+          </div>
+          <div className={styles.scoringItem}>
+            <div className={styles.scoringIcon} style={{ background: 'rgba(249, 115, 22, 0.1)' }}><Mic size={14} style={{ color: '#f97316' }} /></div>
+            <div className={styles.scoringText}>
+              <span className={styles.scoringSkill}>Speaking</span>
+              <span className={styles.scoringPts}>2 pts / exercise</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

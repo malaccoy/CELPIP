@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { Check, X, Sparkles, Zap, Crown, Shield, ArrowRight, Star, ChevronRight } from 'lucide-react';
+import { Check, X, Sparkles, Zap, Crown, Shield, ArrowRight, Star, ChevronRight, Users, BookOpen, Clock, Award, TrendingUp } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 import styles from '@/styles/Pricing.module.scss';
 
@@ -76,6 +76,10 @@ function PricingPageInner() {
 
   return (
     <div className={styles.page}>
+      {/* Ambient background */}
+      <div className={styles.ambientOrb1} />
+      <div className={styles.ambientOrb2} />
+
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBadge}>
@@ -87,6 +91,29 @@ function PricingPageInner() {
         </p>
       </section>
 
+      {/* Social Proof — moved above pricing for trust */}
+      <section className={styles.proof}>
+        <div className={styles.proofStats}>
+          <div className={styles.proofStat}>
+            <div className={styles.proofIcon}><Users size={14} /></div>
+            <span className={styles.proofNum}>200+</span>
+            <span className={styles.proofLabel}>Active learners</span>
+          </div>
+          <div className={styles.proofDivider} />
+          <div className={styles.proofStat}>
+            <div className={styles.proofIcon}><BookOpen size={14} /></div>
+            <span className={styles.proofNum}>540+</span>
+            <span className={styles.proofLabel}>Drill exercises</span>
+          </div>
+          <div className={styles.proofDivider} />
+          <div className={styles.proofStat}>
+            <div className={styles.proofIcon}><Star size={14} /></div>
+            <span className={styles.proofNum}>4.8★</span>
+            <span className={styles.proofLabel}>User rating</span>
+          </div>
+        </div>
+      </section>
+
       {/* Plan Toggle */}
       <section className={styles.plans}>
         <div className={styles.planToggle}>
@@ -96,7 +123,7 @@ function PricingPageInner() {
               onClick={() => setSelected(p.id)}
               className={`${styles.planTab} ${selected === p.id ? styles.planTabActive : ''}`}
             >
-              {p.name}
+              <span className={styles.planTabName}>{p.name}</span>
               {p.savings && <span className={styles.planSave}>-{p.savings}%</span>}
             </button>
           ))}
@@ -105,12 +132,14 @@ function PricingPageInner() {
         {/* Selected Plan Card */}
         <div className={styles.planCard}>
           {plan.badge && <div className={styles.planCardBadge}>{plan.badge}</div>}
+
           <div className={styles.planPrice}>
             <span className={styles.planCurrency}>CA$</span>
             <span className={styles.planAmount}>{plan.price.toFixed(2).split('.')[0]}</span>
             <span className={styles.planCents}>.{plan.price.toFixed(2).split('.')[1]}</span>
             <span className={styles.planPeriod}>{plan.period}</span>
           </div>
+
           {plan.id !== 'monthly' && (
             <p className={styles.planPerMonth}>
               {plan.id === 'weekly'
@@ -122,7 +151,9 @@ function PricingPageInner() {
           <div className={styles.planFeatures}>
             {['Unlimited AI practice', 'All 4 CELPIP skills', 'Mock exams with scoring', 'Advanced difficulty levels', 'Detailed AI feedback'].map(f => (
               <div key={f} className={styles.planFeature}>
-                <Check size={16} className={styles.planFeatureCheck} />
+                <div className={styles.planFeatureCheckBox}>
+                  <Check size={12} />
+                </div>
                 <span>{f}</span>
               </div>
             ))}
@@ -139,27 +170,26 @@ function PricingPageInner() {
           </button>
 
           <p className={styles.guarantee}>
-            <Shield size={14} /> Cancel anytime · Secure Stripe checkout · All prices in CAD
+            <Shield size={13} /> Cancel anytime · Secure Stripe checkout · All prices in CAD
           </p>
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className={styles.proof}>
-        <div className={styles.proofStats}>
-          <div className={styles.proofStat}>
-            <span className={styles.proofNum}>200+</span>
-            <span className={styles.proofLabel}>Active learners</span>
+      {/* Value Comparison */}
+      <section className={styles.valueSection}>
+        <div className={styles.valueCard}>
+          <div className={styles.valueRow}>
+            <span className={styles.valueLabel}>CELPIP test retake</span>
+            <span className={styles.valuePrice}>CA$300+</span>
           </div>
-          <div className={styles.proofDivider} />
-          <div className={styles.proofStat}>
-            <span className={styles.proofNum}>540+</span>
-            <span className={styles.proofLabel}>Drill exercises</span>
+          <div className={styles.valueRow}>
+            <span className={styles.valueLabel}>Private tutor (1 month)</span>
+            <span className={styles.valuePrice}>CA$640+</span>
           </div>
-          <div className={styles.proofDivider} />
-          <div className={styles.proofStat}>
-            <span className={styles.proofNum}>4.8★</span>
-            <span className={styles.proofLabel}>User rating</span>
+          <div className={styles.valueDivider} />
+          <div className={`${styles.valueRow} ${styles.valueRowHighlight}`}>
+            <span className={styles.valueLabel}>CELPIP AI Coach Pro</span>
+            <span className={styles.valuePriceGreen}>CA${plan.price.toFixed(2)}{plan.period}</span>
           </div>
         </div>
       </section>
@@ -171,19 +201,19 @@ function PricingPageInner() {
           <div className={`${styles.compRow} ${styles.compHead}`}>
             <div />
             <div className={styles.compColFree}>Free</div>
-            <div className={styles.compColPro}><Crown size={14} /> Pro</div>
+            <div className={styles.compColPro}><Crown size={12} /> Pro</div>
           </div>
           {FEATURES.map((f, i) => (
             <div key={i} className={styles.compRow}>
               <div className={styles.compLabel}>{f.feature}</div>
               <div className={styles.compColFree}>
                 {typeof f.free === 'boolean' ? (
-                  f.free ? <Check size={16} className={styles.checkGreen} /> : <X size={16} className={styles.xGray} />
+                  f.free ? <Check size={15} className={styles.checkGreen} /> : <X size={15} className={styles.xGray} />
                 ) : <span className={styles.compLimit}>{f.free}</span>}
               </div>
               <div className={styles.compColPro}>
                 {typeof f.pro === 'boolean' ? (
-                  f.pro ? <Check size={16} className={styles.checkPurple} /> : <X size={16} className={styles.xGray} />
+                  f.pro ? <Check size={15} className={styles.checkPurple} /> : <X size={15} className={styles.xGray} />
                 ) : <span className={styles.compUnlimited}>{f.pro}</span>}
               </div>
             </div>
@@ -197,8 +227,11 @@ function PricingPageInner() {
         <div className={styles.testGrid}>
           {TESTIMONIALS.map((t, i) => (
             <div key={i} className={styles.testCard}>
-              <div className={styles.testStars}>
-                {[...Array(5)].map((_, j) => <Star key={j} size={14} fill="#fbbf24" color="#fbbf24" />)}
+              <div className={styles.testHeader}>
+                <div className={styles.testStars}>
+                  {[...Array(5)].map((_, j) => <Star key={j} size={13} fill="#fbbf24" color="#fbbf24" />)}
+                </div>
+                <span className={styles.testScore}>{t.score}</span>
               </div>
               <p className={styles.testText}>&ldquo;{t.text}&rdquo;</p>
               <div className={styles.testAuthor}>
@@ -207,7 +240,6 @@ function PricingPageInner() {
                   <span className={styles.testName}>{t.name}</span>
                   <span className={styles.testLoc}>{t.loc}</span>
                 </div>
-                <span className={styles.testScore}>{t.score}</span>
               </div>
             </div>
           ))}
@@ -216,17 +248,18 @@ function PricingPageInner() {
 
       {/* Competitor Note */}
       <div className={styles.competitor}>
-        <p>💡 <strong>Other CELPIP prep tools charge CA$49.99/month.</strong> We offer the same AI features at a fraction of the cost.</p>
+        <div className={styles.competitorIcon}><TrendingUp size={16} /></div>
+        <p><strong>Other CELPIP prep tools charge CA$49.99/month.</strong> We offer the same AI features at a fraction of the cost.</p>
       </div>
 
       {/* Sticky CTA */}
       <div className={`${styles.sticky} ${showSticky ? styles.stickyShow : ''}`}>
-        <div>
+        <div className={styles.stickyLeft}>
           <span className={styles.stickyPrice}>CA${plan.price.toFixed(2)}</span>
           <span className={styles.stickyPer}>{plan.period}</span>
         </div>
         <button className={styles.stickyBtn} onClick={() => handleCheckout(selected)} disabled={loading}>
-          {loading ? '...' : 'Get Pro'} <Zap size={15} />
+          {loading ? '...' : 'Get Pro'} <Zap size={14} />
         </button>
       </div>
     </div>

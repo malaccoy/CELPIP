@@ -6,113 +6,236 @@
   margin: 0 auto;
   padding: 2rem 1.25rem 7rem;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── Ambient Background ─── */
+.ambientOrb1 {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.ambientOrb2 {
+  position: absolute;
+  top: 500px;
+  left: -80px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+  z-index: 0;
 }
 
 /* ─── Hero ─── */
 .hero {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .heroBadge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(139, 92, 246, 0.12);
+  background: rgba(139, 92, 246, 0.1);
   color: #a78bfa;
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 0.7rem;
+  font-family: $font-display;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(139, 92, 246, 0.15);
 }
 
 .heroTitle {
-  font-size: 1.8rem;
+  font-family: $font-display;
+  font-size: 1.85rem;
   font-weight: 800;
   color: #f1f5f9;
   line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
 }
 
 .heroSub {
+  font-family: $font-body;
   font-size: 0.88rem;
   color: #94a3b8;
   margin: 0;
   line-height: 1.5;
 }
 
+/* ─── Social Proof ─── */
+.proof {
+  margin-bottom: 1.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.proofStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.proofStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.proofIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139, 92, 246, 0.08);
+  color: #a78bfa;
+  margin-bottom: 2px;
+}
+
+.proofNum {
+  font-family: $font-display;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.proofLabel {
+  font-size: 0.6rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.proofDivider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
 /* ─── Plans ─── */
 .plans {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+  position: relative;
+  z-index: 1;
 }
 
 .planToggle {
   display: flex;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
   padding: 4px;
   margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 2px;
 }
 
 .planTab {
   flex: 1;
-  padding: 10px;
+  padding: 10px 6px;
   border: none;
-  border-radius: 10px;
+  border-radius: 11px;
   background: transparent;
-  color: #94a3b8;
-  font-size: 0.85rem;
+  color: #64748b;
+  font-family: $font-display;
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 3px;
+  position: relative;
+
+  &:hover {
+    color: #94a3b8;
+    background: rgba(255, 255, 255, 0.03);
+  }
 }
 
 .planTabActive {
-  background: rgba(99, 102, 241, 0.15);
-  color: #c7d2fe;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+  background: rgba(99, 102, 241, 0.12) !important;
+  color: #c7d2fe !important;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.planTabName {
+  white-space: nowrap;
 }
 
 .planSave {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 800;
   color: #34d399;
   background: rgba(34, 211, 153, 0.12);
   padding: 2px 6px;
   border-radius: 4px;
+  letter-spacing: 0.02em;
 }
 
 .planCard {
-  background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(15, 23, 42, 0) 100%);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  border-radius: 20px;
-  padding: 28px 24px;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, rgba(15, 23, 42, 0) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 22px;
+  padding: 30px 24px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+  }
 }
 
 .planCardBadge {
   position: absolute;
-  top: -10px;
+  top: -11px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(135deg, #fbbf24, #f59e0b);
   color: #1a1d27;
-  font-size: 0.6rem;
+  font-family: $font-display;
+  font-size: 0.58rem;
   font-weight: 800;
-  padding: 4px 14px;
+  padding: 4px 16px;
   border-radius: 20px;
   letter-spacing: 0.06em;
   white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.25);
 }
 
 .planPrice {
@@ -124,15 +247,17 @@
 }
 
 .planCurrency {
+  font-family: $font-display;
   font-size: 1.1rem;
   font-weight: 700;
   color: #94a3b8;
   align-self: flex-start;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .planAmount {
-  font-size: 3.2rem;
+  font-family: $font-display;
+  font-size: 3.4rem;
   font-weight: 800;
   color: #f1f5f9;
   line-height: 1;
@@ -140,33 +265,35 @@
 }
 
 .planCents {
+  font-family: $font-display;
   font-size: 1.4rem;
   font-weight: 700;
   color: #94a3b8;
   align-self: flex-start;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .planPeriod {
   font-size: 0.85rem;
-  color: #64748b;
+  color: #475569;
   margin-left: 4px;
 }
 
 .planPerMonth {
   font-size: 0.82rem;
   color: #94a3b8;
-  margin: 4px 0 20px;
+  margin: 4px 0 22px;
 
   strong {
     color: #34d399;
+    font-weight: 700;
   }
 }
 
 .planFeatures {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 24px;
   text-align: left;
 }
@@ -174,12 +301,20 @@
 .planFeature {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
+  gap: 12px;
+  font-family: $font-body;
+  font-size: 0.88rem;
   color: #cbd5e1;
 }
 
-.planFeatureCheck {
+.planFeatureCheckBox {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: rgba(34, 211, 153, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #34d399;
   flex-shrink: 0;
 }
@@ -195,11 +330,12 @@
   border: none;
   background: linear-gradient(135deg, #dc2626, #ef4444);
   color: #fff;
+  font-family: $font-display;
   font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 24px rgba(239, 68, 68, 0.3);
   position: relative;
   overflow: hidden;
 
@@ -215,8 +351,12 @@
   }
 
   &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(239, 68, 68, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 
   &:disabled {
@@ -232,60 +372,77 @@
   justify-content: center;
   gap: 6px;
   color: #475569;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   margin-top: 14px;
+  font-weight: 500;
 }
 
-/* ─── Social Proof ─── */
-.proof {
+/* ─── Value Comparison ─── */
+.valueSection {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.proofStats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 16px;
+.valueCard {
+  padding: 16px 18px;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.02);
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.proofStat {
+.valueRow {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
-.proofNum {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: #f1f5f9;
+.valueLabel {
+  font-family: $font-body;
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.5);
 }
 
-.proofLabel {
-  font-size: 0.65rem;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 600;
+.valuePrice {
+  font-family: $font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.35);
+  text-decoration: line-through;
+  text-decoration-color: rgba(239, 68, 68, 0.5);
 }
 
-.proofDivider {
-  width: 1px;
-  height: 28px;
+.valueDivider {
+  height: 1px;
   background: rgba(255, 255, 255, 0.06);
+  margin: 2px 0;
+}
+
+.valueRowHighlight {
+  .valueLabel {
+    color: #f1f5f9;
+    font-weight: 600;
+  }
+}
+
+.valuePriceGreen {
+  font-family: $font-display;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #34d399;
 }
 
 /* ─── Comparison Table ─── */
 .comparison {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .sectionTitle {
-  font-size: 1.2rem;
+  font-family: $font-display;
+  font-size: 1.15rem;
   font-weight: 800;
   color: #f1f5f9;
   text-align: center;
@@ -294,26 +451,33 @@
 }
 
 .compTable {
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.01);
 }
 
 .compRow {
   display: grid;
   grid-template-columns: 1fr 70px 70px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.15s ease;
 
   &:last-child { border-bottom: none; }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.02);
+  }
 }
 
 .compHead {
   background: rgba(255, 255, 255, 0.03);
-  font-size: 0.75rem;
+  font-family: $font-display;
+  font-size: 0.7rem;
   font-weight: 700;
-  color: #64748b;
+  color: #475569;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 
   > div {
     padding: 10px;
@@ -325,7 +489,8 @@
 }
 
 .compLabel {
-  padding: 10px 12px;
+  padding: 10px 14px;
+  font-family: $font-body;
   font-size: 0.8rem;
   color: #cbd5e1;
   font-weight: 500;
@@ -339,21 +504,34 @@
 }
 
 .compColPro {
-  background: rgba(139, 92, 246, 0.04);
+  background: rgba(139, 92, 246, 0.03);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background: rgba(139, 92, 246, 0.08);
+  }
 }
 
 .checkGreen { color: #34d399; }
 .checkPurple { color: #a78bfa; }
-.xGray { color: #334155; }
+.xGray { color: #1e293b; }
 
 .compLimit {
-  font-size: 0.7rem;
-  color: #64748b;
+  font-family: $font-display;
+  font-size: 0.68rem;
+  color: #475569;
   font-weight: 600;
 }
 
 .compUnlimited {
-  font-size: 0.7rem;
+  font-family: $font-display;
+  font-size: 0.68rem;
   color: #a78bfa;
   font-weight: 700;
 }
@@ -361,50 +539,79 @@
 /* ─── Testimonials ─── */
 .testimonials {
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .testGrid {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .testCard {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 18px;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+  }
+}
+
+.testHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .testStars {
   display: flex;
   gap: 2px;
-  margin-bottom: 8px;
+}
+
+.testScore {
+  font-family: $font-display;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #34d399;
+  background: rgba(34, 211, 153, 0.1);
+  padding: 3px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  border: 1px solid rgba(34, 211, 153, 0.15);
 }
 
 .testText {
+  font-family: $font-body;
   font-size: 0.82rem;
   color: #94a3b8;
-  line-height: 1.55;
-  margin: 0 0 12px;
+  line-height: 1.6;
+  margin: 0 0 14px;
 }
 
 .testAuthor {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-top: 10px;
+  padding-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .testAvatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-family: $font-display;
   font-size: 0.7rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -417,43 +624,55 @@
 }
 
 .testName {
+  font-family: $font-display;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #e2e8f0;
 }
 
 .testLoc {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   color: #475569;
-}
-
-.testScore {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #34d399;
-  background: rgba(34, 211, 153, 0.1);
-  padding: 3px 8px;
-  border-radius: 6px;
-  white-space: nowrap;
 }
 
 /* ─── Competitor ─── */
 .competitor {
-  text-align: center;
-  background: rgba(251, 191, 36, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  background: rgba(251, 191, 36, 0.04);
   border: 1px solid rgba(251, 191, 36, 0.1);
-  border-radius: 14px;
-  padding: 16px 20px;
+  border-radius: 16px;
+  padding: 16px 18px;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 
   p {
+    font-family: $font-body;
     font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.55);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.55;
 
-    strong { color: #fbbf24; }
+    strong {
+      color: #fbbf24;
+      font-weight: 700;
+    }
   }
+}
+
+.competitorIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(251, 191, 36, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+  flex-shrink: 0;
 }
 
 /* ─── Sticky CTA ─── */
@@ -469,40 +688,54 @@
   padding: 10px 16px;
   background: rgba(15, 17, 23, 0.95);
   backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(99, 102, 241, 0.2);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(99, 102, 241, 0.15);
   transform: translateY(100%);
-  transition: transform 0.25s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   @media (min-width: 768px) { display: none; }
 }
 
 .stickyShow { transform: translateY(0); }
 
+.stickyLeft {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
 .stickyPrice {
+  font-family: $font-display;
   font-size: 1.15rem;
   font-weight: 800;
   color: #f1f5f9;
 }
 
 .stickyPer {
-  font-size: 0.75rem;
-  color: #64748b;
-  margin-left: 4px;
+  font-size: 0.72rem;
+  color: #475569;
 }
 
 .stickyBtn {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 10px;
   border: none;
   background: linear-gradient(135deg, #dc2626, #ef4444);
   color: #fff;
-  font-size: 0.9rem;
+  font-family: $font-display;
+  font-size: 0.88rem;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+  }
 
   &:disabled { opacity: 0.6; }
 }
@@ -516,7 +749,12 @@
 /* ─── Responsive ─── */
 @media (max-width: 400px) {
   .heroTitle { font-size: 1.5rem; }
-  .planAmount { font-size: 2.6rem; }
-  .proofStats { gap: 12px; }
-  .proofNum { font-size: 1rem; }
+  .planAmount { font-size: 2.8rem; }
+  .proofStats { gap: 10px; padding: 12px; }
+  .proofNum { font-size: 0.95rem; }
+  .planTab { padding: 8px 4px; font-size: 0.72rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ctaBtn::before { animation: none; }
 }
