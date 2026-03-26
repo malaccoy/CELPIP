@@ -1,5 +1,7 @@
+@use 'design-system' as ds;
+
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid ds.$border-subtle;
   background: rgba(0, 0, 0, 0.2);
   padding: 3rem 0 1.5rem;
   margin-top: auto;
@@ -20,28 +22,30 @@
 
 .brand {
   h3 {
-    font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+    font-family: ds.$font-display;
     font-size: 1.1rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: ds.$text-primary;
     margin-bottom: 0.5rem;
   }
 
   p {
+    font-family: ds.$font-body;
     font-size: 0.8rem;
-    color: #64748b;
-    line-height: 1.5;
+    color: ds.$text-dim;
+    line-height: 1.6;
     max-width: 280px;
   }
 }
 
 .linkGroup {
   h4 {
-    font-size: 0.8rem;
+    font-family: ds.$font-display;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: #94a3b8;
+    color: ds.$text-secondary;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     margin-bottom: 0.75rem;
   }
 
@@ -49,36 +53,41 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    font-family: ds.$font-body;
     font-size: 0.82rem;
-    color: #64748b;
+    color: ds.$text-dim;
     text-decoration: none;
     padding: 0.25rem 0;
-    transition: color 0.2s;
+    transition: color ds.$transition-fast;
 
     &:hover {
-      color: #e2e8f0;
+      color: ds.$text-primary;
     }
 
     svg {
       flex-shrink: 0;
+      opacity: 0.6;
     }
   }
 }
 
 .newsletter {
   h4 {
-    font-size: 0.8rem;
+    font-family: ds.$font-display;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: #94a3b8;
+    color: ds.$text-secondary;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     margin-bottom: 0.5rem;
   }
 
   > p {
+    font-family: ds.$font-body;
     font-size: 0.8rem;
-    color: #64748b;
+    color: ds.$text-dim;
     margin-bottom: 0.75rem;
+    line-height: 1.5;
   }
 }
 
@@ -89,36 +98,56 @@
   input {
     flex: 1;
     padding: 0.55rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: ds.$radius-sm;
+    border: 1px solid ds.$border-default;
     background: rgba(255, 255, 255, 0.05);
-    color: #f1f5f9;
+    color: ds.$text-primary;
+    font-family: ds.$font-body;
     font-size: 0.8rem;
     outline: none;
     min-width: 0;
+    transition: border-color ds.$transition-fast;
 
-    &::placeholder { color: #475569; }
-    &:focus { border-color: #ff3b3b; }
+    &::placeholder {
+      color: ds.$text-dim;
+    }
+
+    &:focus {
+      border-color: ds.$accent-primary;
+      box-shadow: 0 0 0 2px ds.$accent-glow;
+    }
   }
 
   button {
     padding: 0.55rem 0.75rem;
-    border-radius: 8px;
+    border-radius: ds.$radius-sm;
     border: none;
-    background: #ff3b3b;
+    background: ds.$accent-primary;
     color: white;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all ds.$transition-smooth;
     flex-shrink: 0;
 
-    &:hover { background: #cc0000; }
-    &:disabled { opacity: 0.5; cursor: not-allowed; }
+    &:hover {
+      background: ds.$accent-primary-dark;
+      transform: translateY(-1px);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
   }
 }
 
 .done {
+  font-family: ds.$font-body;
   font-size: 0.82rem;
-  color: #22c55e;
+  color: ds.$success;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
 }
 
 .bottom {
@@ -126,11 +155,12 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid ds.$border-subtle;
 
   span {
+    font-family: ds.$font-body;
     font-size: 0.72rem;
-    color: #475569;
+    color: ds.$text-dim;
   }
 }
 
@@ -140,16 +170,22 @@
   gap: 0.5rem;
 
   a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: ds.$font-body;
     font-size: 0.72rem;
-    color: #475569;
+    color: ds.$text-dim;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color ds.$transition-fast;
 
-    &:hover { color: #94a3b8; }
+    &:hover {
+      color: ds.$text-secondary;
+    }
   }
 
   span {
-    color: #334155;
+    color: ds.$border-default;
   }
 }
 

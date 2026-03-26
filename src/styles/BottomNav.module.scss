@@ -1,4 +1,4 @@
-// BottomNav.module.scss - App-native feel
+// BottomNav.module.scss — Premium app-native bottom navigation
 @use 'design-system' as ds;
 
 .bottomNav {
@@ -7,14 +7,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(10, 14, 26, 0.92);
+  background: rgba(ds.$bg-deep, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid ds.$border-subtle;
   padding: 6px 8px;
   padding-bottom: max(6px, env(safe-area-inset-bottom));
   z-index: 100;
-  
+
   @media (max-width: 767px) {
     display: flex;
     justify-content: space-around;
@@ -30,15 +30,15 @@
   gap: 2px;
   padding: 8px 12px;
   text-decoration: none;
-  color: rgba(248, 250, 252, 0.45);
-  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  border-radius: 16px;
+  color: ds.$text-dim;
+  transition: all 200ms ds.$ease-smooth;
+  border-radius: ds.$radius-lg;
   min-width: 56px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   position: relative;
-  
+
   &:active {
     transform: scale(0.85);
   }
@@ -51,15 +51,15 @@
   justify-content: center;
   width: 44px;
   height: 28px;
-  border-radius: 14px;
-  transition: all 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-radius: ds.$radius-md;
+  transition: all 250ms ds.$ease-smooth;
 }
 
 .activeIndicator {
   position: absolute;
   inset: -2px -8px;
-  background: rgba(255, 59, 59, 0.12);
-  border-radius: 14px;
+  background: ds.$accent-bg;
+  border-radius: ds.$radius-md;
   z-index: -1;
 }
 
@@ -73,20 +73,20 @@
 
 // Active state
 .active {
-  color: #ff6b6b;
-  
+  color: ds.$accent-primary-light;
+
   .iconWrapper {
-    color: #ff6b6b;
+    color: ds.$accent-primary-light;
     transform: scale(1.05);
   }
-  
+
   .label {
-    color: #ff6b6b;
+    color: ds.$accent-primary-light;
     font-weight: 700;
   }
 }
 
-// Subtle glow for active item
+// Subtle glow dot for active item
 .active .iconWrapper::after {
   content: '';
   position: absolute;
@@ -95,9 +95,9 @@
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  background: #ff3b3b;
+  background: ds.$accent-primary;
   border-radius: 50%;
-  box-shadow: 0 0 6px #ff3b3b;
+  box-shadow: 0 0 6px ds.$accent-primary;
 }
 
 // Ripple effect on tap
@@ -105,7 +105,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 16px;
+  border-radius: ds.$radius-lg;
   background: rgba(255, 255, 255, 0.08);
   opacity: 0;
   transition: opacity 150ms ease;

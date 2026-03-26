@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowRight, Mail, BookOpen, Headphones, PenLine, Mic, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail, BookOpen, Headphones, PenLine, Mic, Sparkles, CheckCircle } from 'lucide-react';
 import styles from '@/styles/Footer.module.scss';
 
 export default function Footer() {
@@ -68,7 +68,7 @@ export default function Footer() {
             <h4>Free Study Plan</h4>
             <p>Get a 14-day CELPIP study plan + weekly tips.</p>
             {status === 'done' ? (
-              <p className={styles.done}>✅ Subscribed!</p>
+              <p className={styles.done}><CheckCircle size={16} /> Subscribed!</p>
             ) : (
               <form onSubmit={handleSubmit} className={styles.form}>
                 <input

@@ -1,0 +1,166 @@
+@use 'design-system' as ds;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: overlayFadeIn 0.3s ds.$ease-smooth;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card {
+  background: linear-gradient(135deg, #1e293b 0%, ds.$bg-deep 100%);
+  border: 1px solid ds.$border-hover;
+  border-radius: ds.$radius-xl;
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: ds.$shadow-xl;
+  animation: cardSlideUp 0.35s ds.$ease-smooth;
+}
+
+@keyframes cardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: ds.$text-dim;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: ds.$radius-sm;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    color: ds.$text-secondary;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+.iconBox {
+  width: 56px;
+  height: 56px;
+  border-radius: ds.$radius-lg;
+  background: rgba(0, 136, 204, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  color: #38bdf8;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.title {
+  font-family: ds.$font-display;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+  margin: 0 0 0.5rem;
+}
+
+.description {
+  font-family: ds.$font-body;
+  font-size: 0.88rem;
+  color: ds.$text-muted;
+  line-height: 1.55;
+  margin: 0 0 1.5rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: ds.$font-body;
+  font-size: 0.82rem;
+  color: ds.$text-muted;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: #38bdf8;
+    flex-shrink: 0;
+  }
+}
+
+.ctaBtn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #0088cc 0%, #0066aa 100%);
+  border: none;
+  border-radius: ds.$radius-md;
+  color: white;
+  font-family: ds.$font-display;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all ds.$transition-smooth;
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.25);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 136, 204, 0.35);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+.skipBtn {
+  background: none;
+  border: none;
+  color: ds.$text-dim;
+  font-family: ds.$font-body;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  transition: color ds.$transition-fast;
+
+  &:hover {
+    color: ds.$text-muted;
+  }
+}

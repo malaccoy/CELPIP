@@ -5,32 +5,14 @@ import { useRouter } from 'next/navigation';
 import {
   Headphones, BookOpen, PenTool, Mic,
   ArrowRight, Sparkles, FileText, GraduationCap,
-  Calculator, MessageCircle, Crown, Dumbbell, ChevronRight, Swords
+  Calculator, MessageCircle, Crown, Swords, ChevronRight,
+  Flame, Zap, Trophy, Star, Clock,
 } from 'lucide-react';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import NotificationBell from '@/components/NotificationBell';
+import styles from '@/styles/MobileDashboard.module.scss';
 
-/* ─── Design Tokens ─── */
-const T = {
-  bg: '#1e1e2e',
-  surface: '#2a2a3c',
-  surfaceHover: '#32324a',
-  card: '#262638',
-  text: '#f1f5f9',
-  textSecondary: 'rgba(255,255,255,0.6)',
-  textMuted: 'rgba(255,255,255,0.35)',
-  border: 'rgba(255,255,255,0.06)',
-  borderLight: 'rgba(255,255,255,0.08)',
-  accent: '#ff3b3b',
-  gold: '#fbbf24',
-  purple: '#a78bfa',
-  blue: '#60a5fa',
-  green: '#34d399',
-  orange: '#fb923c',
-  red: '#f87171',
-  radius: 14,
-};
-
+/* ─── Gradient Tokens ─── */
 const G = {
   blue: 'linear-gradient(135deg, #3b82f6, #6366f1)',
   green: 'linear-gradient(135deg, #22c55e, #10b981)',
@@ -125,260 +107,240 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
   const dailyLimit = dailyUsage?.limit ?? 3;
 
   const greeting = () => {
-    const h = new Date().getUTCHours() - 3; // approx BRT/PST display
+    const h = new Date().getUTCHours() - 3;
     if (h < 12) return 'Good morning';
     if (h < 18) return 'Good afternoon';
     return 'Good evening';
   };
 
-  return (
-    <div style={{ background: T.bg, minHeight: '100vh', padding: desktop ? '1rem 2rem 2rem' : '0 0 100px 0', maxWidth: desktop ? 1100 : undefined, margin: desktop ? '0 auto' : undefined }}>
-      <style>{`
-        .dash-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .dash-progress { display: flex; flex-direction: column; gap: 10px; }
-        .dash-main-cards { display: flex; flex-direction: column; gap: 10px; }
-        .dash-quick { display: flex; flex-direction: column; gap: 1px; }
-        @media (min-width: 1024px) {
-          .dash-skills { grid-template-columns: repeat(4, 1fr); gap: 14px; }
-          .dash-progress { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-          .dash-main-cards { flex-direction: row; gap: 14px; }
-          .dash-main-cards > div { flex: 1; }
-          .dash-quick { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; }
-        }
-      `}</style>
+  const skills = [
+    { icon: Headphones, title: 'Listening', gradient: G.blue, sessions: listening, href: '/ai-coach?skill=listening' },
+    { icon: BookOpen, title: 'Reading', gradient: G.green, sessions: reading, href: '/ai-coach?skill=reading' },
+    { icon: PenTool, title: 'Writing', gradient: G.amber, sessions: writing, href: '/ai-coach?skill=writing' },
+    { icon: Mic, title: 'Speaking', gradient: G.red, sessions: speaking, href: '/ai-coach?skill=speaking' },
+  ];
 
+  const progressItems = [
+    { label: 'Listening', icon: Headphones, color: '#60a5fa', glow: 'rgba(96,165,250,0.12)', sessions: listening, path: '/drills/listening' },
+    { label: 'Reading', icon: BookOpen, color: '#34d399', glow: 'rgba(52,211,153,0.12)', sessions: reading, path: '/drills/reading' },
+    { label: 'Writing', icon: PenTool, color: '#fbbf24', glow: 'rgba(251,191,36,0.12)', sessions: writing, path: '/drills/writing' },
+    { label: 'Speaking', icon: Mic, color: '#f87171', glow: 'rgba(248,113,113,0.12)', sessions: speaking, path: '/drills/speaking' },
+  ];
+
+  const LEVELS = [0, 10, 25, 50, 100, 200, 350, 550, 800, 1100];
+  const getLevel = (sessions: number) => {
+    let lvl = 1;
+    for (let i = 1; i < LEVELS.length; i++) { if (sessions >= LEVELS[i]) lvl = i + 1; else break; }
+    const lvlFloor = LEVELS[lvl - 1] || 0;
+    const lvlCeil = LEVELS[lvl] || lvlFloor + 200;
+    const inLvl = sessions - lvlFloor;
+    const needed = lvlCeil - lvlFloor;
+    const pct = Math.min(100, Math.round((inLvl / needed) * 100));
+    const tierLabel = lvl >= 6 ? 'Master' : lvl >= 4 ? 'Advanced' : lvl >= 3 ? 'Intermediate' : lvl >= 2 ? 'Beginner' : 'Starter';
+    return { lvl, pct, inLvl, needed, tierLabel };
+  };
+
+  return (
+    <div className={`${styles.page} ${desktop ? styles.pageDesktop : ''}`}>
       {/* ─── Top Bar ─── */}
       {!desktop && (
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '10px 16px', background: T.bg,
-          position: 'sticky', top: 0, zIndex: 50,
-        }}>
-          <div onClick={() => router.push('/dashboard')} style={{ cursor: 'pointer', flexShrink: 0 }}>
-            <img src="/logo-leaf.png" alt="CELPIP" width={40} height={40} style={{ width: 40, height: 40, objectFit: 'contain' }} />
+        <div className={styles.topBar}>
+          <div className={styles.topBarLogo} onClick={() => router.push('/dashboard')}>
+            <img src="/logo-leaf.png" alt="CELPIP" width={40} height={40} />
           </div>
 
-          {/* Stats chips */}
-          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-            <StatChip emoji="🔥" value={streak} color={T.gold} glow="rgba(251,191,36,0.3)" />
-            <StatChip emoji="⚡" value={xp} color={T.purple} glow="rgba(167,139,250,0.3)" />
-            <div onClick={() => router.push('/rankings')} style={{ cursor: 'pointer' }}>
-              <StatChip
-                emoji={myRank === 1 ? '🥇' : myRank === 2 ? '🥈' : myRank === 3 ? '🥉' : '🏆'}
-                value={myRank ? `#${myRank}` : '—'}
-                color={T.green}
-                glow="rgba(52,211,153,0.3)"
-              />
+          <div className={styles.topBarChips}>
+            <div className={styles.statChip} style={{ background: 'rgba(251,191,36,0.08)' }}>
+              <Flame size={14} style={{ color: '#fbbf24' }} />
+              <span className={styles.statChipValue} style={{ color: '#fbbf24' }}>{streak}</span>
+            </div>
+            <div className={styles.statChip} style={{ background: 'rgba(167,139,250,0.08)' }}>
+              <Zap size={14} style={{ color: '#a78bfa' }} />
+              <span className={styles.statChipValue} style={{ color: '#a78bfa' }}>{xp}</span>
+            </div>
+            <div className={styles.statChip} style={{ background: 'rgba(52,211,153,0.08)', cursor: 'pointer' }} onClick={() => router.push('/rankings')}>
+              <Trophy size={14} style={{ color: '#34d399' }} />
+              <span className={styles.statChipValue} style={{ color: '#34d399' }}>{myRank ? `#${myRank}` : '\u2014'}</span>
             </div>
           </div>
 
-          {/* Right */}
-          {!isLoggedIn ? (
-            <button onClick={() => router.push('/auth/login')} style={{
-              background: T.accent, color: '#fff', border: 'none',
-              borderRadius: 20, padding: '8px 16px', fontWeight: 700,
-              fontSize: '0.8rem', cursor: 'pointer', flexShrink: 0,
-            }}>Sign In</button>
-          ) : (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <NotificationBell />
-              <div onClick={() => router.push('/profile')} style={{
-                width: 36, height: 36, borderRadius: '50%', overflow: 'hidden',
-                cursor: 'pointer', flexShrink: 0,
-                background: T.surface, border: `2px solid ${T.borderLight}`,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                color: T.text, fontWeight: 700, fontSize: '0.85rem',
-              }}>
-                {userImage ? (
-                  <img src={userImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                ) : (userName ? userName.charAt(0).toUpperCase() : '👤')}
-              </div>
-            </div>
-          )}
+          <div className={styles.topBarRight}>
+            {!isLoggedIn ? (
+              <button className={styles.signInBtn} onClick={() => router.push('/auth/login')}>Sign In</button>
+            ) : (
+              <>
+                <NotificationBell />
+                <div className={styles.profileAvatar} onClick={() => router.push('/profile')}>
+                  {userImage ? (
+                    <img src={userImage} alt="" />
+                  ) : (userName ? userName.charAt(0).toUpperCase() : 'U')}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       )}
 
       {/* ─── Greeting ─── */}
-      <div style={{ padding: desktop ? '0 0 16px' : '16px 20px 12px' }}>
-        <h1 style={{ color: T.text, fontSize: '1.4rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em' }}>
-          {greeting()}{userName ? `, ${userName}` : ''} 👋
+      <div className={desktop ? styles.greetingDesktop : styles.greeting}>
+        <h1 className={styles.greetingTitle}>
+          {greeting()}{userName ? `, ${userName}` : ''}
         </h1>
-        <p style={{ color: T.textSecondary, fontSize: '0.82rem', margin: '4px 0 0', fontWeight: 500 }}>
-          {isPro ? '⭐ Pro Member' : streak > 0 ? `${streak} day streak${atRisk ? ' — practice today!' : '! Keep going 🔥'}` : 'Start your first practice today'}
+        <p className={styles.greetingSub}>
+          {isPro ? (
+            <><Star size={14} style={{ color: '#fbbf24' }} /> Pro Member</>
+          ) : streak > 0 ? (
+            <><Flame size={14} style={{ color: '#fbbf24' }} /> {streak} day streak{atRisk ? ' \u2014 practice today!' : '! Keep going'}</>
+          ) : (
+            'Start your first practice today'
+          )}
         </p>
       </div>
 
       {/* ─── Daily Usage (free only) ─── */}
       {!isPro && (
-        <div style={{ padding: '0 20px 12px' }}>
-          <div style={{
-            background: T.surface, borderRadius: 12, padding: '10px 14px',
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            border: `1px solid ${T.border}`,
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ fontSize: '0.78rem', color: T.textSecondary, fontWeight: 600 }}>Today</span>
-              <div style={{ display: 'flex', gap: 3 }}>
+        <div className={styles.dailyUsage}>
+          <div className={styles.dailyUsageBar}>
+            <div className={styles.dailyUsageLeft}>
+              <span className={styles.dailyUsageLabel}>Today</span>
+              <div className={styles.dailyDots}>
                 {Array.from({ length: dailyLimit }).map((_, i) => (
-                  <div key={i} style={{
-                    width: 8, height: 8, borderRadius: '50%',
-                    background: i < used ? T.accent : 'rgba(255,255,255,0.12)',
-                    transition: 'background 0.2s',
-                  }} />
+                  <div key={i} className={`${styles.dailyDot} ${i < used ? styles.dailyDotActive : styles.dailyDotInactive}`} />
                 ))}
               </div>
-              <span style={{ fontSize: '0.72rem', color: T.textMuted }}>{used}/{dailyLimit}</span>
+              <span className={styles.dailyCount}>{used}/{dailyLimit}</span>
               {used >= dailyLimit && <RechargeTimer />}
             </div>
-            <span onClick={() => router.push('/pricing')} style={{
-              fontSize: '0.7rem', color: T.accent, fontWeight: 700, cursor: 'pointer',
-              padding: '3px 10px', borderRadius: 10,
-              background: 'rgba(255,59,59,0.08)',
-            }}>Upgrade</span>
+            <button className={styles.upgradeChip} onClick={() => router.push('/pricing')}>Upgrade</button>
           </div>
         </div>
       )}
 
-      <div style={{ padding: '0 20px 16px' }}>
-        <div className="dash-main-cards">
-        <div onClick={() => router.push('/drills')} style={{
-          background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%)',
-          borderRadius: T.radius, padding: '20px',
-          cursor: 'pointer', position: 'relative', overflow: 'hidden',
-        }}>
-          <div style={{ position: 'absolute', top: -20, right: -20, width: 100, height: 100, background: 'rgba(255,255,255,0.08)', borderRadius: '50%' }} />
-          <div style={{ position: 'absolute', bottom: -30, right: 30, width: 80, height: 80, background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }} />
-          <div style={{ position: 'relative', zIndex: 1 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-              <Sparkles size={22} color="#fff" />
-              <span style={{ color: '#fff', fontWeight: 800, fontSize: '1.1rem' }}>Start Practice</span>
+      {/* ─── Main Action Cards ─── */}
+      <div className={styles.mainCards}>
+        <div className={styles.mainCardsGrid}>
+          <div className={styles.practiceCard} onClick={() => router.push('/drills')}>
+            <div className={styles.practiceCardDecor1} />
+            <div className={styles.practiceCardDecor2} />
+            <div className={styles.practiceCardContent}>
+              <div className={styles.practiceCardHeader}>
+                <Sparkles size={22} />
+                <span className={styles.practiceCardTitle}>Start Practice</span>
+              </div>
+              <p className={styles.practiceCardDesc}>
+                Speaking, Writing, Listening & Reading drills
+              </p>
             </div>
-            <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.78rem', margin: 0, lineHeight: 1.4 }}>
-              Speaking, Writing, Listening & Reading drills
-            </p>
+            <ArrowRight size={20} className={styles.practiceCardArrow} />
           </div>
-          <ArrowRight size={20} color="rgba(255,255,255,0.6)" style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)' }} />
-        </div>
 
-        {/* Battle Mode */}
-        <div onClick={() => router.push('/battle')} style={{
-          background: 'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
-          borderRadius: T.radius, padding: '16px 20px', marginTop: 10,
-          cursor: 'pointer', position: 'relative', overflow: 'hidden',
-          display: 'flex', alignItems: 'center', gap: 14,
-        }}>
-          <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: 10, padding: 10, display: 'flex' }}>
-            <Swords size={22} color="#fff" />
+          <div className={styles.battleCard} onClick={() => router.push('/battle')}>
+            <div className={styles.battleIconBox}>
+              <Swords size={22} />
+            </div>
+            <div className={styles.battleContent}>
+              <span className={styles.battleTitle}>
+                <Swords size={18} /> Battle Mode
+              </span>
+              <p className={styles.battleDesc}>Challenge other students in real-time PvP!</p>
+            </div>
+            <ArrowRight size={18} style={{ color: 'rgba(255,255,255,0.6)' }} />
           </div>
-          <div style={{ flex: 1 }}>
-            <span style={{ color: '#fff', fontWeight: 800, fontSize: '1rem' }}>⚔️ Battle Mode</span>
-            <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.75rem', margin: '2px 0 0' }}>Challenge other students in real-time PvP!</p>
-          </div>
-          <ArrowRight size={18} color="rgba(255,255,255,0.6)" />
-        </div>
         </div>
       </div>
 
       {/* ─── Practice by Skill ─── */}
-      <div style={{ padding: '0 20px 16px' }}>
-        <SectionTitle>Practice by Skill</SectionTitle>
-        <div className="dash-skills">
-          {[
-            { icon: <Headphones size={20} />, title: 'Listening', gradient: G.blue, color: '#60a5fa', sessions: listening, href: '/ai-coach?skill=listening' },
-            { icon: <BookOpen size={20} />, title: 'Reading', gradient: G.green, color: '#34d399', sessions: reading, href: '/ai-coach?skill=reading' },
-            { icon: <PenTool size={20} />, title: 'Writing', gradient: G.amber, color: '#fbbf24', sessions: writing, href: '/ai-coach?skill=writing' },
-            { icon: <Mic size={20} />, title: 'Speaking', gradient: G.red, color: '#f87171', sessions: speaking, href: '/ai-coach?skill=speaking' },
-          ].map(s => (
-            <div key={s.title} onClick={() => window.location.href = s.href} style={{
-              background: T.surface, borderRadius: T.radius, padding: '16px',
-              cursor: 'pointer', border: `1px solid ${T.border}`,
-              transition: 'all 0.15s ease',
-            }}>
-              <IconCircle gradient={s.gradient} size={40}>{s.icon}</IconCircle>
-              <div style={{ color: T.text, fontWeight: 700, fontSize: '0.88rem', marginTop: 10 }}>{s.title}</div>
-              <div style={{ color: T.textMuted, fontSize: '0.7rem', marginTop: 2 }}>
-                {s.sessions} exercise{s.sessions !== 1 ? 's' : ''} done
+      <div className={styles.skillsSection}>
+        <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+        <div className={styles.skillsGrid}>
+          {skills.map(s => {
+            const Icon = s.icon;
+            return (
+              <div key={s.title} className={styles.skillCard} onClick={() => { window.location.href = s.href; }}>
+                <div className={styles.skillIconCircle} style={{ background: s.gradient }}>
+                  <Icon size={20} />
+                </div>
+                <div className={styles.skillCardTitle}>{s.title}</div>
+                <div className={styles.skillCardSessions}>
+                  {s.sessions} exercise{s.sessions !== 1 ? 's' : ''} done
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
       {/* ─── Quick Access ─── */}
-      <div style={{ padding: '0 20px 16px' }}>
-        <SectionTitle>Quick Access</SectionTitle>
-        <div className="dash-quick" style={{ background: T.surface, borderRadius: T.radius, overflow: 'hidden', border: `1px solid ${T.border}` }}>
-          <QuickLink icon={<FileText size={18} />} gradient={G.purple} label="Mock Exams" sub="Full test simulation" badge={!isPro ? 'PRO' : undefined} onClick={() => router.push('/mock-exam')} />
-          <QuickLink icon={<GraduationCap size={18} />} gradient={G.green} label="Study Guides" sub="Techniques & strategies" badge={!isPro ? 'PRO' : undefined} onClick={() => router.push('/guides')} />
-          <QuickLink icon={<Calculator size={18} />} gradient={G.cyan} label="CRS Calculator" sub="Check your score" onClick={() => router.push('/tools/score-calculator')} />
-          <QuickLink icon={<MessageCircle size={18} />} gradient={G.slate} label="Community" sub="Join 200+ learners" onClick={() => window.open('https://t.me/+YcO9MfUHIjQyYjAx', '_blank')} last />
+      <div className={styles.quickSection}>
+        <h2 className={styles.sectionTitle}>Quick Access</h2>
+        <div className={styles.quickList}>
+          {[
+            { icon: FileText, gradient: G.purple, label: 'Mock Exams', sub: 'Full test simulation', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/mock-exam') },
+            { icon: GraduationCap, gradient: G.green, label: 'Study Guides', sub: 'Techniques & strategies', badge: !isPro ? 'PRO' : undefined, onClick: () => router.push('/guides') },
+            { icon: Calculator, gradient: G.cyan, label: 'CRS Calculator', sub: 'Check your score', onClick: () => router.push('/tools/score-calculator') },
+            { icon: MessageCircle, gradient: G.slate, label: 'Community', sub: 'Join 200+ learners', onClick: () => window.open('https://t.me/+YcO9MfUHIjQyYjAx', '_blank') },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div key={i} className={styles.quickItem} onClick={item.onClick}>
+                <div className={styles.quickIconCircle} style={{ background: item.gradient }}>
+                  <Icon size={18} />
+                </div>
+                <div className={styles.quickInfo}>
+                  <div className={styles.quickLabel}>
+                    {item.label}
+                    {item.badge && <span className={styles.quickBadge}>{item.badge}</span>}
+                  </div>
+                  <div className={styles.quickSub}>{item.sub}</div>
+                </div>
+                <ChevronRight size={16} className={styles.quickArrow} />
+              </div>
+            );
+          })}
         </div>
       </div>
 
       {/* ─── Your Progress ─── */}
-      <div style={{ padding: '0 20px 16px' }}>
-        <SectionTitle>Your Progress</SectionTitle>
-        <div className="dash-progress">
-          {[
-            { label: 'Listening', emoji: '🎧', color: '#60a5fa', glow: 'rgba(96,165,250,0.12)', sessions: listening, path: '/drills/listening' },
-            { label: 'Reading', emoji: '📖', color: '#34d399', glow: 'rgba(52,211,153,0.12)', sessions: reading, path: '/drills/reading' },
-            { label: 'Writing', emoji: '✍️', color: '#fbbf24', glow: 'rgba(251,191,36,0.12)', sessions: writing, path: '/drills/writing' },
-            { label: 'Speaking', emoji: '🎤', color: '#f87171', glow: 'rgba(248,113,113,0.12)', sessions: speaking, path: '/drills/speaking' },
-          ].map(p => {
-            // Level system: 0-10 → Lvl 1, 11-25 → Lvl 2, 26-50 → Lvl 3, 51-100 → Lvl 4, 101-200 → Lvl 5, 200+ → Lvl 6+
-            const LEVELS = [0, 10, 25, 50, 100, 200, 350, 550, 800, 1100];
-            let lvl = 1;
-            for (let i = 1; i < LEVELS.length; i++) { if (p.sessions >= LEVELS[i]) lvl = i + 1; else break; }
-            const lvlFloor = LEVELS[lvl - 1] || 0;
-            const lvlCeil = LEVELS[lvl] || lvlFloor + 200;
-            const inLvl = p.sessions - lvlFloor;
-            const needed = lvlCeil - lvlFloor;
-            const pct = Math.min(100, Math.round((inLvl / needed) * 100));
-            const stars = lvl >= 5 ? '⭐⭐⭐' : lvl >= 3 ? '⭐⭐' : lvl >= 2 ? '⭐' : '';
-            const tierLabel = lvl >= 6 ? 'Master' : lvl >= 4 ? 'Advanced' : lvl >= 3 ? 'Intermediate' : lvl >= 2 ? 'Beginner' : 'Starter';
-
+      <div className={styles.progressSection}>
+        <h2 className={styles.sectionTitle}>Your Progress</h2>
+        <div className={styles.progressGrid}>
+          {progressItems.map(p => {
+            const { lvl, pct, inLvl, needed, tierLabel } = getLevel(p.sessions);
+            const Icon = p.icon;
             return (
-              <div key={p.label} onClick={() => router.push(p.path)} style={{
-                background: T.surface, borderRadius: T.radius, padding: '14px 16px',
-                border: `1px solid ${T.border}`, cursor: 'pointer',
-                transition: 'border-color 0.2s', position: 'relative', overflow: 'hidden',
-              }}>
-                {/* Glow accent */}
-                <div style={{ position: 'absolute', top: -10, right: -10, width: 60, height: 60, borderRadius: '50%', background: p.glow, filter: 'blur(20px)' }} />
-
-                {/* Top row: emoji + name + level badge */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, position: 'relative' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <span style={{ fontSize: 24 }}>{p.emoji}</span>
+              <div key={p.label} className={styles.progressCard} onClick={() => router.push(p.path)}>
+                <div className={styles.progressGlow} style={{ background: p.glow }} />
+                <div className={styles.progressTop}>
+                  <div className={styles.progressInfo}>
+                    <div className={styles.progressIcon} style={{ background: `${p.color}18` }}>
+                      <Icon size={16} style={{ color: p.color }} />
+                    </div>
                     <div>
-                      <span style={{ color: T.text, fontSize: '0.85rem', fontWeight: 700 }}>{p.label}</span>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginTop: 2 }}>
-                        <span style={{ fontSize: '0.65rem', color: p.color, fontWeight: 600, background: `${p.color}18`, padding: '1px 6px', borderRadius: 6 }}>
-                          Lvl {lvl} · {tierLabel}
+                      <span className={styles.progressLabel}>{p.label}</span>
+                      <div className={styles.progressLevel}>
+                        <span className={styles.progressLevelBadge} style={{ color: p.color, background: `${p.color}18` }}>
+                          Lvl {lvl} &middot; {tierLabel}
                         </span>
-                        {stars && <span style={{ fontSize: 10 }}>{stars}</span>}
                       </div>
                     </div>
                   </div>
-                  <div style={{ textAlign: 'right' }}>
-                    <span style={{ fontSize: '1.1rem', fontWeight: 800, color: T.text }}>{p.sessions}</span>
-                    <div style={{ fontSize: '0.6rem', color: T.textMuted, fontWeight: 500 }}>exercises</div>
+                  <div className={styles.progressCount}>
+                    <span className={styles.progressCountValue}>{p.sessions}</span>
+                    <div className={styles.progressCountLabel}>exercises</div>
                   </div>
                 </div>
-
-                {/* Progress bar */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <div style={{ flex: 1, height: 8, background: 'rgba(255,255,255,0.06)', borderRadius: 4, overflow: 'hidden' }}>
-                    <div style={{
-                      height: '100%', width: `${pct}%`,
-                      background: `linear-gradient(90deg, ${p.color}, ${p.color}cc)`,
-                      borderRadius: 4, transition: 'width 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-                      boxShadow: `0 0 8px ${p.color}40`,
-                    }} />
+                <div className={styles.progressBarRow}>
+                  <div className={styles.progressBarTrack}>
+                    <div
+                      className={styles.progressBarFill}
+                      style={{
+                        width: `${pct}%`,
+                        background: `linear-gradient(90deg, ${p.color}, ${p.color}cc)`,
+                        boxShadow: `0 0 8px ${p.color}40`,
+                      }}
+                    />
                   </div>
-                  <span style={{ fontSize: '0.65rem', color: T.textMuted, fontWeight: 600, whiteSpace: 'nowrap' }}>
-                    {inLvl}/{needed}
-                  </span>
+                  <span className={styles.progressBarLabel}>{inLvl}/{needed}</span>
                 </div>
               </div>
             );
@@ -388,103 +350,25 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
 
       {/* ─── Upgrade Banner (free only) ─── */}
       {!isPro && (
-        <div style={{ padding: '0 20px 16px' }}>
-          <div onClick={() => router.push('/pricing')} style={{
-            background: `linear-gradient(135deg, ${T.accent}, #b91c1c)`,
-            borderRadius: T.radius, padding: '16px 20px', cursor: 'pointer',
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          }}>
+        <div className={styles.upgradeBanner}>
+          <div className={styles.upgradeBannerInner} onClick={() => router.push('/pricing')}>
             <div>
-              <div style={{ color: '#fff', fontWeight: 800, fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <div className={styles.upgradeBannerTitle}>
                 <Crown size={16} /> Upgrade to Pro
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.75rem', marginTop: 3 }}>
-                Unlimited practice • Mock exams • AI feedback
+              <div className={styles.upgradeBannerDesc}>
+                Unlimited practice &bull; Mock exams &bull; AI feedback
               </div>
             </div>
-            <ArrowRight size={18} color="rgba(255,255,255,0.7)" />
+            <ArrowRight size={18} style={{ color: 'rgba(255,255,255,0.7)' }} />
           </div>
         </div>
       )}
-
-      {/* Desktop: Welcome header override */}
-      {desktop && (
-        <style>{`
-          /* Desktop adjustments handled by grid/flex above */
-        `}</style>
-      )}
     </div>
   );
 }
 
-/* ─── Sub Components ─── */
-
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 style={{
-      color: '#f1f5f9', fontSize: '0.95rem', fontWeight: 700,
-      margin: '0 0 10px', letterSpacing: '-0.01em',
-    }}>
-      {children}
-    </h2>
-  );
-}
-
-function StatChip({ emoji, value, color, glow }: { emoji: string; value: string | number; color: string; glow: string }) {
-  return (
-    <div style={{
-      display: 'flex', alignItems: 'center', gap: 4,
-      background: `${glow.replace('0.3', '0.08')}`,
-      borderRadius: 20, padding: '4px 10px',
-    }}>
-      <span style={{ fontSize: '1rem' }}>{emoji}</span>
-      <span style={{ color, fontWeight: 800, fontSize: '0.85rem' }}>{value}</span>
-    </div>
-  );
-}
-
-function IconCircle({ children, gradient, size = 44 }: { children: React.ReactNode; gradient: string; size?: number }) {
-  return (
-    <div style={{
-      width: size, height: size, borderRadius: size * 0.28,
-      background: gradient,
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      color: '#fff', flexShrink: 0,
-    }}>
-      {children}
-    </div>
-  );
-}
-
-function QuickLink({ icon, gradient, label, sub, badge, onClick, last }: {
-  icon: React.ReactNode; gradient: string; label: string; sub: string; badge?: string; onClick: () => void; last?: boolean;
-}) {
-  return (
-    <div onClick={onClick} style={{
-      display: 'flex', alignItems: 'center', gap: 12,
-      padding: '14px 16px', cursor: 'pointer',
-      borderBottom: last ? 'none' : '1px solid rgba(255,255,255,0.04)',
-      transition: 'background 0.1s',
-    }}>
-      <IconCircle gradient={gradient} size={36}>{icon}</IconCircle>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ color: '#f1f5f9', fontWeight: 600, fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: 8 }}>
-          {label}
-          {badge && (
-            <span style={{
-              fontSize: '0.55rem', fontWeight: 800, padding: '2px 6px',
-              background: 'rgba(139,92,246,0.2)', color: '#a78bfa',
-              borderRadius: 4, textTransform: 'uppercase', letterSpacing: '0.5px',
-            }}>{badge}</span>
-          )}
-        </div>
-        <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.72rem', marginTop: 1 }}>{sub}</div>
-      </div>
-      <ChevronRight size={16} color="rgba(255,255,255,0.15)" />
-    </div>
-  );
-}
-
+/* ─── Recharge Timer ─── */
 function RechargeTimer() {
   const [timeLeft, setTimeLeft] = useState('');
   useEffect(() => {
@@ -500,5 +384,9 @@ function RechargeTimer() {
     const t = setInterval(calc, 60000);
     return () => clearInterval(t);
   }, []);
-  return <span style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.3)' }}>⏱ {timeLeft}</span>;
+  return (
+    <span className={styles.rechargeTimer}>
+      <Clock size={12} /> {timeLeft}
+    </span>
+  );
 }

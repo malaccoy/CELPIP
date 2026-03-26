@@ -1,0 +1,706 @@
+@use 'design-system' as ds;
+
+// ============================================
+// MOBILE DASHBOARD — PREMIUM DESIGN
+// ============================================
+
+.page {
+  background: ds.$bg-deep;
+  min-height: 100vh;
+  padding: 0 0 100px 0;
+}
+
+.pageDesktop {
+  padding: 1rem 2rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+// ─── Top Bar ───
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: ds.$bg-deep;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topBarLogo {
+  cursor: pointer;
+  flex-shrink: 0;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+}
+
+.topBarChips {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.statChip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: ds.$radius-full;
+  padding: 4px 10px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.statChipValue {
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.signInBtn {
+  background: ds.$accent-primary;
+  color: #fff;
+  border: none;
+  border-radius: ds.$radius-full;
+  padding: 8px 16px;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px ds.$accent-glow;
+  }
+}
+
+.profileAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: ds.$bg-secondary;
+  border: 2px solid ds.$border-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ds.$text-primary;
+  font-family: ds.$font-display;
+  font-weight: 700;
+  font-size: 0.85rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// ─── Greeting ───
+.greeting {
+  padding: 16px 20px 12px;
+}
+
+.greetingDesktop {
+  padding: 0 0 16px;
+}
+
+.greetingTitle {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.greetingSub {
+  font-family: ds.$font-body;
+  color: ds.$text-secondary;
+  font-size: 0.82rem;
+  margin: 4px 0 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+// ─── Daily Usage ───
+.dailyUsage {
+  padding: 0 20px 12px;
+}
+
+.dailyUsageBar {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-md;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid ds.$border-default;
+}
+
+.dailyUsageLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dailyUsageLabel {
+  font-family: ds.$font-body;
+  font-size: 0.78rem;
+  color: ds.$text-secondary;
+  font-weight: 600;
+}
+
+.dailyDots {
+  display: flex;
+  gap: 3px;
+}
+
+.dailyDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.dailyDotActive {
+  background: ds.$accent-primary;
+}
+
+.dailyDotInactive {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dailyCount {
+  font-family: ds.$font-body;
+  font-size: 0.72rem;
+  color: ds.$text-dim;
+}
+
+.upgradeChip {
+  font-family: ds.$font-body;
+  font-size: 0.7rem;
+  color: ds.$accent-primary;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: ds.$radius-sm;
+  background: ds.$accent-bg;
+  border: none;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    background: rgba(ds.$accent-primary, 0.15);
+  }
+}
+
+// ─── Main Cards ───
+.mainCards {
+  padding: 0 20px 16px;
+}
+
+.mainCardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 14px;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.practiceCard {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  border-radius: ds.$radius-lg;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform ds.$transition-smooth;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.practiceCardDecor1 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.practiceCardDecor2 {
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.practiceCardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.practiceCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+
+  svg {
+    color: #fff;
+  }
+}
+
+.practiceCardTitle {
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.practiceCardDesc {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: ds.$font-body;
+  font-size: 0.78rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.practiceCardArrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.battleCard {
+  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  border-radius: ds.$radius-lg;
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform ds.$transition-smooth;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.battleIconBox {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: ds.$radius-sm;
+  padding: 10px;
+  display: flex;
+  color: #fff;
+}
+
+.battleContent {
+  flex: 1;
+}
+
+.battleTitle {
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.battleDesc {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  margin: 2px 0 0;
+}
+
+// ─── Section Title ───
+.sectionTitle {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+// ─── Skills Grid ───
+.skillsSection {
+  padding: 0 20px 16px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+}
+
+.skillCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid ds.$border-default;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+    background: ds.$bg-card-hover;
+    transform: translateY(-2px);
+  }
+}
+
+.skillIconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: ds.$radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.skillCardTitle {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-top: 10px;
+}
+
+.skillCardSessions {
+  font-family: ds.$font-body;
+  color: ds.$text-dim;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+// ─── Quick Access ───
+.quickSection {
+  padding: 0 20px 16px;
+}
+
+.quickList {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  overflow: hidden;
+  border: 1px solid ds.$border-default;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.quickItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid ds.$border-subtle;
+  transition: background ds.$transition-fast;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.02);
+  }
+}
+
+.quickIconCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.quickInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.quickLabel {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quickBadge {
+  font-family: ds.$font-body;
+  font-size: 0.55rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quickSub {
+  font-family: ds.$font-body;
+  color: ds.$text-dim;
+  font-size: 0.72rem;
+  margin-top: 1px;
+}
+
+.quickArrow {
+  color: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+// ─── Progress ───
+.progressSection {
+  padding: 0 20px 16px;
+}
+
+.progressGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
+
+.progressCard {
+  background: ds.$bg-card;
+  border-radius: ds.$radius-lg;
+  padding: 14px 16px;
+  border: 1px solid ds.$border-default;
+  cursor: pointer;
+  transition: all ds.$transition-smooth;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border-color: ds.$border-hover;
+    transform: translateY(-1px);
+  }
+}
+
+.progressGlow {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.progressTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.progressInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progressIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.progressLabel {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.progressLevel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.progressLevelBadge {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+.progressCount {
+  text-align: right;
+}
+
+.progressCountValue {
+  font-family: ds.$font-display;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+}
+
+.progressCountLabel {
+  font-family: ds.$font-body;
+  font-size: 0.6rem;
+  color: ds.$text-dim;
+  font-weight: 500;
+}
+
+.progressBarRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progressBarTrack {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progressBarLabel {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-dim;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+// ─── Upgrade Banner ───
+.upgradeBanner {
+  padding: 0 20px 16px;
+}
+
+.upgradeBannerInner {
+  background: linear-gradient(135deg, ds.$accent-primary, #b91c1c);
+  border-radius: ds.$radius-lg;
+  padding: 16px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform ds.$transition-smooth;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.upgradeBannerTitle {
+  color: #fff;
+  font-family: ds.$font-display;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.upgradeBannerDesc {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  margin-top: 3px;
+}
+
+// ─── Recharge Timer ───
+.rechargeTimer {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-dim;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
