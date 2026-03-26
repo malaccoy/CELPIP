@@ -1,0 +1,298 @@
+@use 'design-system' as ds;
+
+// ============================================
+// SKILL RADAR & ANALYTICS — Premium Design
+// ============================================
+
+.section {
+  padding: 0 20px 16px;
+}
+
+.sectionTitle {
+  font-family: ds.$font-display;
+  color: ds.$text-primary;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titleIcon {
+  color: ds.$accent-primary-light;
+}
+
+// ─── Grid Layout ───
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 14px;
+  }
+}
+
+// ─── Radar Card ───
+
+.radarCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  flex: 1;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+  }
+}
+
+.radarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.radarLabel {
+  font-family: ds.$font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+}
+
+.clbBadge {
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  background: ds.$accent-bg;
+  color: ds.$accent-primary-light;
+  border-radius: ds.$radius-full;
+  border: 1px solid ds.$accent-border;
+}
+
+.radarChart {
+  width: 100%;
+  min-height: 240px;
+}
+
+// ─── Breakdown Card ───
+
+.breakdownCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  flex: 1;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+  }
+}
+
+.breakdownLabel {
+  font-family: ds.$font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.skillRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: ds.$radius-sm;
+  cursor: pointer;
+  transition: background ds.$transition-fast;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.skillIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.skillInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.skillName {
+  display: block;
+  font-family: ds.$font-display;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+}
+
+.skillStat {
+  display: block;
+  font-family: ds.$font-body;
+  font-size: 0.68rem;
+  color: ds.$text-dim;
+  margin-top: 1px;
+}
+
+.trendBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: ds.$radius-full;
+  font-family: ds.$font-body;
+  font-size: 0.62rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+// ─── Summary Row ───
+
+.summaryRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid ds.$border-subtle;
+}
+
+.summaryItem {
+  text-align: center;
+}
+
+.summaryValue {
+  display: block;
+  font-family: ds.$font-display;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+}
+
+.summaryLabel {
+  display: block;
+  font-family: ds.$font-body;
+  font-size: 0.62rem;
+  color: ds.$text-dim;
+  margin-top: 2px;
+}
+
+// ─── Trend Card ───
+
+.trendCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+  }
+}
+
+.trendHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trendLabel {
+  font-family: ds.$font-display;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+}
+
+.trendLegend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: ds.$font-body;
+  font-size: 0.65rem;
+  color: ds.$text-muted;
+}
+
+.legendDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.trendChart {
+  width: 100%;
+  min-height: 180px;
+}
+
+// ─── Focus CTA ───
+
+.focusCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: ds.$radius-md;
+  cursor: pointer;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.25);
+    transform: translateY(-1px);
+  }
+}
+
+.focusLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: ds.$font-body;
+  font-size: 0.82rem;
+  color: ds.$text-secondary;
+
+  strong {
+    color: ds.$text-primary;
+  }
+}
+
+.focusArrow {
+  color: ds.$text-dim;
+  flex-shrink: 0;
+}

@@ -1,0 +1,182 @@
+@use 'design-system' as ds;
+
+// ============================================
+// SKELETON LOADER — Premium Shimmer
+// ============================================
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+// ─── Dashboard Skeleton ───
+
+.dashboardSkeleton {
+  padding: 16px 20px 100px;
+}
+
+.greetingRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.mainCardsRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.sectionLabel {
+  margin-bottom: 10px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skillCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quickList {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.quickItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid ds.$border-subtle;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.progressGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
+
+.progressCard {
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.progressTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+// ─── Analytics Skeleton ───
+
+.analyticsSkeleton {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.analyticsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.radarPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  padding: 24px;
+  min-height: 260px;
+
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+}
+
+.statsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-md;
+  padding: 12px 14px;
+}

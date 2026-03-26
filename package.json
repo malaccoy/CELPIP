@@ -23,6 +23,7 @@
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.95.3",
     "bcryptjs": "^3.0.3",
+    "canvas-confetti": "^1.9.4",
     "googleapis": "^171.4.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.563.0",
@@ -34,6 +35,7 @@
     "prisma": "^5.22.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "recharts": "^3.8.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "resend": "^6.9.3",
@@ -45,6 +47,7 @@
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^22.14.0",
     "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",

@@ -10,6 +10,10 @@ import {
 } from 'lucide-react';
 import { useContentAccess } from '@/hooks/useContentAccess';
 import NotificationBell from '@/components/NotificationBell';
+import SkillRadar from '@/components/SkillRadar';
+import { DashboardSkeleton } from '@/components/SkeletonLoader';
+import EmptyState from '@/components/EmptyState';
+import { checkStreakMilestone, checkPracticeMilestone } from '@/components/MilestoneCelebration';
 import styles from '@/styles/MobileDashboard.module.scss';
 
 /* ─── Gradient Tokens ─── */
@@ -96,6 +100,8 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
     });
   }, []);
 
+  const [isLoading, setIsLoading] = useState(true);
+
   const listening = stats?.listening?.sessions || 0;
   const reading = stats?.reading?.sessions || 0;
   const writing = stats?.writing?.sessions || 0;
@@ -105,6 +111,27 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
   const xp = stats?.totalPoints || (listening * 1 + reading * 1 + writing * 3 + speaking * 2);
   const used = dailyUsage?.used ?? 0;
   const dailyLimit = dailyUsage?.limit ?? 3;
+  const totalPractices = listening + reading + writing + speaking;
+
+  // Loading state management
+  useEffect(() => {
+    if (stats !== null) {
+      setIsLoading(false);
+    }
+  }, [stats]);
+
+  // Milestone checks
+  useEffect(() => {
+    if (!isLoading && streak > 0) {
+      checkStreakMilestone(streak);
+    }
+  }, [isLoading, streak]);
+
+  useEffect(() => {
+    if (!isLoading && totalPractices > 0) {
+      checkPracticeMilestone(totalPractices);
+    }
+  }, [isLoading, totalPractices]);
 
   const greeting = () => {
     const h = new Date().getUTCHours() - 3;
@@ -347,6 +374,16 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           })}
         </div>
       </div>
+
+      {/* ─── Skill Analytics (Pro or users with data) ─── */}
+      <SkillRadar />
+
+      {/* ─── Empty State for new users ─── */}
+      {!isLoading && totalPractices === 0 && (
+        <div style={{ padding: '0 20px 16px' }}>
+          <EmptyState type="no-practice" />
+        </div>
+      )}
 
       {/* ─── Upgrade Banner (free only) ─── */}
       {!isPro && (

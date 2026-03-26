@@ -1,0 +1,127 @@
+@use 'design-system' as ds;
+
+// ============================================
+// MILESTONE CELEBRATION — Premium Toast
+// ============================================
+
+@keyframes toastSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastGlow {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px ds.$border-default;
+  }
+  50% {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px ds.$accent-glow;
+  }
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: ds.$bg-elevated;
+  border: 1px solid ds.$border-hover;
+  border-radius: ds.$radius-lg;
+  min-width: 300px;
+  max-width: 420px;
+  animation:
+    toastSlideIn 0.4s ds.$ease-bounce forwards,
+    toastGlow 2s ease-in-out 0.5s 3;
+  backdrop-filter: blur(16px);
+
+  @media (max-width: 480px) {
+    left: 16px;
+    right: 16px;
+    transform: none;
+    min-width: auto;
+  }
+}
+
+.toastIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: ds.$radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  animation: iconPulse 1s ease-in-out 0.3s 2;
+}
+
+.toastContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.toastTitle {
+  display: block;
+  font-family: ds.$font-display;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: ds.$text-primary;
+  letter-spacing: -0.01em;
+}
+
+.toastDesc {
+  display: block;
+  font-family: ds.$font-body;
+  font-size: 0.75rem;
+  color: ds.$text-muted;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.toastClose {
+  background: none;
+  border: none;
+  color: ds.$text-dim;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    color: ds.$text-primary;
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+// ─── Reduced Motion ───
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: toastSlideIn 0.2s ease forwards;
+  }
+
+  .toastIcon {
+    animation: none;
+  }
+}

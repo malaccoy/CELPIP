@@ -1,0 +1,194 @@
+@use 'design-system' as ds;
+
+// ============================================
+// EMPTY STATE — Premium Design
+// ============================================
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.15; }
+  50% { transform: translateY(-8px) rotate(5deg); opacity: 0.25; }
+}
+
+// ─── Full Empty State ───
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconBox {
+  width: 72px;
+  height: 72px;
+  border-radius: ds.$radius-xl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-family: ds.$font-display;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  font-family: ds.$font-body;
+  font-size: 0.85rem;
+  color: ds.$text-muted;
+  line-height: 1.5;
+  max-width: 320px;
+  margin: 0 0 20px;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: ds.$gradient-primary;
+  border: none;
+  border-radius: ds.$radius-md;
+  font-family: ds.$font-display;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all ds.$transition-bounce;
+  box-shadow: ds.$shadow-glow;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: ds.$shadow-glow-lg;
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+.decorIcons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.decorIcon {
+  position: absolute;
+  color: ds.$text-dim;
+  animation: floatIcon 4s ease-in-out infinite;
+
+  &:nth-child(1) {
+    top: 15%;
+    left: 10%;
+  }
+
+  &:nth-child(2) {
+    top: 20%;
+    right: 12%;
+  }
+
+  &:nth-child(3) {
+    bottom: 20%;
+    left: 15%;
+  }
+
+  &:nth-child(4) {
+    bottom: 15%;
+    right: 10%;
+  }
+}
+
+// ─── Compact Empty State ───
+
+.compactContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: ds.$bg-card;
+  border: 1px solid ds.$border-default;
+  border-radius: ds.$radius-lg;
+  transition: all ds.$transition-smooth;
+
+  &:hover {
+    border-color: ds.$border-hover;
+    background: ds.$bg-card-hover;
+  }
+}
+
+.compactIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: ds.$radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.compactContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.compactTitle {
+  display: block;
+  font-family: ds.$font-display;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: ds.$text-primary;
+}
+
+.compactDesc {
+  display: block;
+  font-family: ds.$font-body;
+  font-size: 0.7rem;
+  color: ds.$text-dim;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compactCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: ds.$accent-bg;
+  border: none;
+  border-radius: ds.$radius-sm;
+  font-family: ds.$font-body;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: ds.$accent-primary-light;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all ds.$transition-fast;
+
+  &:hover {
+    background: rgba(255, 59, 59, 0.15);
+  }
+}
+
+// ─── Reduced Motion ───
+@media (prefers-reduced-motion: reduce) {
+  .decorIcon {
+    animation: none;
+    opacity: 0.15;
+  }
+}
