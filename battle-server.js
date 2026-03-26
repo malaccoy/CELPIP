@@ -52,7 +52,7 @@ const userRooms = {}; // userId → roomCode mapping
 function genCode() { return crypto.randomBytes(3).toString('hex').toUpperCase(); }
 
 function pickQuestions() {
-  const cats = ['vocabulary', 'grammar', 'reading', 'vocabulary', 'grammar', 'reading'];
+  const cats = ['vocabulary', 'grammar', 'idioms', 'collocations', 'error_spotting', 'vocabulary'];
   const picked = cats.map(cat => {
     const p = questionsByCategory[cat];
     return p[Math.floor(Math.random() * p.length)];

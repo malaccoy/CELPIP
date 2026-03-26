@@ -26,7 +26,10 @@ function RegisterPageInner() {
 
   useEffect(() => {
     const ref = searchParams.get('ref');
-    if (ref) setReferralSource(ref);
+    if (ref) {
+      setReferralSource(ref);
+      localStorage.setItem('signup_ref', ref);
+    }
   }, [searchParams]);
 
   const handleGoogleSignup = async () => {

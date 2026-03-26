@@ -238,7 +238,7 @@ export default function AIPracticePage() {
   const [dailyUsage, setDailyUsage] = useState<{ isPro: boolean; used: number; limit: number; remaining: number } | null>(null);
 
   // Quiz state (reading/listening)
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [submitted, setSubmitted] = useState(false);
   const [usedTopics, setUsedTopics] = useState<string[]>(() => {
     if (typeof window !== 'undefined') {
@@ -601,23 +601,66 @@ export default function AIPracticePage() {
     if (submitted) return;
     setSubmitted(true);
     // Record for adaptive difficulty
-    if (exercise?.questions) {
+    // Part 2 new schema: emailBlanks + comprehension
+    if (exercise?.poster && exercise?.emailBlanks) {
+      const blanks = exercise.emailBlanks || [];
+      const comp = exercise.comprehension || [];
+      const total = blanks.length + comp.length;
+      let correct = 0;
+      blanks.forEach((b: any) => { if (answers[`eb${b.id}`] === b.correct) correct++; });
+      comp.forEach((c: any) => { if (answers[`comp${c.id}`] === c.correct) correct++; });
+      recordAttempt(section, partOrTask, correct, total);
+      setSessionScores(prev => ({ ...prev, [partOrTask]: { correct, total } }));
+      analytics.exerciseCompleted(section, Math.round((correct/total)*100));
+      const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
+      localStorage.setItem('exercise-count', cnt.toString());
+      if (section !== 'speaking') {
+        fetch('/api/log-activity', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: section, count: 1 }),
+        }).catch(() => {});
+      }
+    } else if (exercise?.article && exercise?.sectionA && exercise?.sectionB) {
+      // Part 4 new schema
+      const aItems = exercise.sectionA || [];
+      const bItems = exercise.sectionB || [];
+      const total = aItems.length + bItems.length;
+      let correct = 0;
+      aItems.forEach((q: any) => { if (answers[`sa${q.id}`] === q.correct) correct++; });
+      bItems.forEach((q: any) => { if (answers[`sb${q.id}`] === q.correct) correct++; });
+      recordAttempt(section, partOrTask, correct, total);
+      setSessionScores(prev => ({ ...prev, [partOrTask]: { correct, total } }));
+      analytics.exerciseCompleted(section, Math.round((correct/total)*100));
+      const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
+      localStorage.setItem('exercise-count', cnt.toString());
+      fetch('/api/log-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: section, count: 1 }) }).catch(() => {});
+    } else if (exercise?.statements && Array.isArray(exercise.statements)) {
+      const opts = ['A', 'B', 'C', 'D', 'E'];
+      const total = exercise.statements.length;
+      const correct = exercise.statements.filter((st: any) => {
+        const sel = answers[`st${st.id}`];
+        return sel !== undefined && opts[sel] === st.correct;
+      }).length;
+      recordAttempt(section, partOrTask, correct, total);
+      setSessionScores(prev => ({ ...prev, [partOrTask]: { correct, total } }));
+      analytics.exerciseCompleted(section, Math.round((correct/total)*100));
+      const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
+      localStorage.setItem('exercise-count', cnt.toString());
+      fetch('/api/log-activity', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: section, count: 1 }) }).catch(() => {});
+    } else if (exercise?.questions) {
       const total = exercise.questions.length;
       const correct = exercise.questions.filter(
         (q: any) => answers[q.id] === q.correct
       ).length;
       recordAttempt(section, partOrTask, correct, total);
-      // Track session scores per part
       setSessionScores(prev => ({
         ...prev,
         [partOrTask]: { correct, total }
       }));
       analytics.exerciseCompleted(section, Math.round((correct/total)*100));
-      // Track exercise count for feedback modal trigger
       const cnt = parseInt(localStorage.getItem('exercise-count') || '0') + 1;
       localStorage.setItem('exercise-count', cnt.toString());
-      // Log activity for leaderboard (1 per exercise, not per question)
-      // Speaking logs in the feedback handler (line ~223), skip here to avoid double-count
       if (section !== 'speaking') {
         fetch('/api/log-activity', {
           method: 'POST',
@@ -629,6 +672,36 @@ export default function AIPracticePage() {
   };
 
   const getScore = () => {
+    // Part 2 new schema
+    if (exercise?.poster && exercise?.emailBlanks) {
+      const blanks = exercise.emailBlanks || [];
+      const comp = exercise.comprehension || [];
+      const total = blanks.length + comp.length;
+      let correct = 0;
+      blanks.forEach((b: any) => { if (answers[`eb${b.id}`] === b.correct) correct++; });
+      comp.forEach((c: any) => { if (answers[`comp${c.id}`] === c.correct) correct++; });
+      return { correct, total };
+    }
+    // Part 4 new schema
+    if (exercise?.article && exercise?.sectionA && exercise?.sectionB) {
+      const aItems = exercise.sectionA || [];
+      const bItems = exercise.sectionB || [];
+      const total = aItems.length + bItems.length;
+      let correct = 0;
+      aItems.forEach((q: any) => { if (answers[`sa${q.id}`] === q.correct) correct++; });
+      bItems.forEach((q: any) => { if (answers[`sb${q.id}`] === q.correct) correct++; });
+      return { correct, total };
+    }
+    // Part 3 new schema: statements
+    if (exercise?.statements && Array.isArray(exercise.statements)) {
+      const opts = ['A', 'B', 'C', 'D', 'E'];
+      const total = exercise.statements.length;
+      const correct = exercise.statements.filter((st: any) => {
+        const sel = answers[`st${st.id}`];
+        return sel !== undefined && opts[sel] === st.correct;
+      }).length;
+      return { correct, total };
+    }
     if (!exercise?.questions) return { correct: 0, total: 0 };
     const total = exercise.questions.length;
     const correct = exercise.questions.filter(
@@ -1063,18 +1136,475 @@ export default function AIPracticePage() {
                   <p className={styles.passageText}>{exercise.passage}</p>
                 </div>
               )}
-              {section !== 'listening' && exercise.passage && (
+              {section !== 'listening' && exercise.passage && !exercise.diagram && !exercise.poster && (
                 <div className={styles.passageCard}>
                   <p className={styles.passageText}>{exercise.passage}</p>
                 </div>
               )}
 
+              {/* Part 2: Poster/Flyer + Email with blanks + Comprehension (new schema) */}
+              {section === 'reading' && exercise.poster && (
+                <div className={styles.passageCard}>
+                  {/* Poster / Flyer */}
+                  <div style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.08), rgba(251,191,36,0.04))', borderRadius: 12, padding: '20px', border: '1px solid rgba(245,158,11,0.2)', marginBottom: '1rem' }}>
+                    <h3 style={{ color: '#f59e0b', fontWeight: 800, fontSize: '1.1rem', textAlign: 'center', marginBottom: exercise.poster.subheading ? '0.2rem' : '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      📋 {exercise.poster.heading}
+                    </h3>
+                    {exercise.poster.subheading && (
+                      <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>{exercise.poster.subheading}</p>
+                    )}
+                    <div style={{ display: 'grid', gap: '12px' }}>
+                      {exercise.poster.sections?.map((sec: any, si: number) => (
+                        <div key={si} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 10, padding: '14px', border: '1px solid rgba(255,255,255,0.08)' }}>
+                          <h4 style={{ color: '#fbbf24', fontWeight: 700, fontSize: '0.9rem', marginBottom: '0.5rem', borderBottom: '1px solid rgba(251,191,36,0.2)', paddingBottom: '0.4rem' }}>
+                            {sec.name}
+                          </h4>
+                          <div style={{ display: 'grid', gap: '4px' }}>
+                            {sec.details?.map((d: any, di: number) => (
+                              <div key={di} style={{ display: 'flex', gap: '8px', fontSize: '0.82rem' }}>
+                                <span style={{ color: 'rgba(255,255,255,0.5)', minWidth: 70, fontWeight: 600 }}>{d.label}:</span>
+                                <span style={{ color: 'rgba(255,255,255,0.85)' }}>{d.value}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    {exercise.poster.footer && (
+                      <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', fontStyle: 'italic', marginTop: '0.8rem', textAlign: 'center' }}>{exercise.poster.footer}</p>
+                    )}
+                  </div>
+
+                  {/* Email with blanks */}
+                  {exercise.email && (
+                    <div style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 10, padding: '16px', border: '1px solid rgba(255,255,255,0.08)' }}>
+                      <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', color: '#60a5fa', fontSize: '0.85rem' }}>✉️ Complete the Email</h4>
+                      <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.75rem', marginBottom: '0.8rem', fontStyle: 'italic' }}>Fill in the blanks using information from the poster above.</p>
+                      <div className={styles.passageText} style={{ margin: 0, lineHeight: 2.2 }}>
+                        <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '0.5rem' }}>{exercise.email.greeting}</p>
+                        <div style={{ whiteSpace: 'pre-wrap' }}>
+                          {(() => {
+                            const body = exercise.email.body as string;
+                            const parts = body.split(/(\[\d+\])/);
+                            return parts.map((part: string, pi: number) => {
+                              const blankMatch = part.match(/\[(\d+)\]/);
+                              if (!blankMatch) return <span key={pi}>{part}</span>;
+                              const blankNum = parseInt(blankMatch[1]);
+                              const q = exercise.emailBlanks?.find((b: any) => b.id === blankNum);
+                              if (!q) return <span key={pi} style={{ background: 'rgba(96,165,250,0.2)', padding: '2px 10px', borderRadius: 6, color: '#60a5fa', fontWeight: 700 }}>{part}</span>;
+                              const selectedVal = answers[`eb${q.id}`];
+                              const isCorrect = submitted && selectedVal === q.correct;
+                              const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
+                              return (
+                                <select
+                                  key={pi}
+                                  value={selectedVal ?? ''}
+                                  disabled={submitted}
+                                  onChange={(e) => setAnswers((prev: any) => ({ ...prev, [`eb${q.id}`]: parseInt(e.target.value) }))}
+                                  style={{
+                                    background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                                    color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                                    border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
+                                    borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                                    fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                                    minWidth: 140, display: 'inline-block',
+                                  }}
+                                >
+                                  <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum} ]</option>
+                                  {q.options.map((opt: string, oi: number) => (
+                                    <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                                  ))}
+                                </select>
+                              );
+                            });
+                          })()}
+                        </div>
+                        <p style={{ color: 'rgba(255,255,255,0.85)', marginTop: '0.5rem', whiteSpace: 'pre-wrap' }}>{exercise.email.closing}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Part 2 new schema: Comprehension questions + Submit */}
+              {section === 'reading' && exercise.poster && exercise.comprehension && (
+                <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
+                  <h4 style={{ fontWeight: 700, marginBottom: '0.8rem', color: '#a78bfa', fontSize: '0.9rem' }}>📝 Comprehension Questions</h4>
+                  {exercise.comprehension.map((q: any, qi: number) => {
+                    const key = `comp${q.id}`;
+                    const isCorrect = submitted && answers[key] === q.correct;
+                    const isWrong = submitted && answers[key] !== undefined && answers[key] !== q.correct;
+                    return (
+                      <div key={qi} style={{ marginBottom: '1rem' }}>
+                        <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 600, fontSize: '0.85rem', marginBottom: '0.4rem' }}>
+                          {q.id}. {q.question}
+                        </p>
+                        <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                          {q.options.map((opt: string, oi: number) => {
+                            const selected = answers[key] === oi;
+                            const optCorrect = submitted && oi === q.correct;
+                            const optWrong = submitted && selected && oi !== q.correct;
+                            return (
+                              <li key={oi}>
+                                <button
+                                  onClick={() => !submitted && setAnswers((prev: any) => ({ ...prev, [key]: oi }))}
+                                  disabled={submitted}
+                                  style={{
+                                    width: '100%', textAlign: 'left', padding: '10px 14px', marginBottom: 6, borderRadius: 10, fontSize: '0.85rem', cursor: submitted ? 'default' : 'pointer', transition: 'all 0.15s',
+                                    background: optCorrect ? 'rgba(34,197,94,0.15)' : optWrong ? 'rgba(239,68,68,0.15)' : selected ? 'rgba(139,92,246,0.15)' : 'rgba(255,255,255,0.04)',
+                                    border: `1.5px solid ${optCorrect ? '#22c55e' : optWrong ? '#ef4444' : selected ? '#8b5cf6' : 'rgba(255,255,255,0.08)'}`,
+                                    color: optCorrect ? '#22c55e' : optWrong ? '#ef4444' : selected ? '#c4b5fd' : 'rgba(255,255,255,0.8)',
+                                    fontWeight: selected || optCorrect ? 600 : 400,
+                                  }}
+                                >
+                                  {String.fromCharCode(65 + oi)}. {opt}
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
+
+                  {/* Submit + Score for Part 2 new schema */}
+                  <button
+                    className={styles.generateBtn}
+                    onClick={submitQuiz}
+                    disabled={submitted || (() => {
+                      const blanksAnswered = (exercise.emailBlanks || []).every((b: any) => answers[`eb${b.id}`] !== undefined);
+                      const compAnswered = (exercise.comprehension || []).every((c: any) => answers[`comp${c.id}`] !== undefined);
+                      return !blanksAnswered || !compAnswered;
+                    })()}
+                    style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
+                  >
+                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                  </button>
+                  {submitted && (
+                    <div>
+                      <div className={styles.resultsBar}>
+                        <div>
+                          <div className={styles.scoreDisplay}>
+                            <span className={styles.scoreNum}>{getScore().correct}</span>
+                            <span className={styles.scoreTotal}>/ {getScore().total}</span>
+                          </div>
+                          <span className={styles.scoreLabel}>
+                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles.nextActions}>
+                        {hasNextPart() ? (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
+                        ) : (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Part 2 OLD schema backward compat: diagram + completionEmail */}
+              {section === 'reading' && exercise.diagram && !exercise.poster && (
+                <div className={styles.passageCard}>
+                  {exercise.passage && (() => {
+                    const lines = exercise.passage.split('\n');
+                    const introLines: string[] = [];
+                    for (const l of lines) {
+                      const trimmed = l.trim();
+                      if (trimmed.match(/^[\-\*]\s+\*?\*/) || trimmed.match(/^[\|]/) || trimmed.match(/^[-|]+$/) || trimmed.match(/^\*\*.*Schedule/i)) break;
+                      const clean = trimmed.replace(/\*\*/g, '').replace(/\*/g, '').trim();
+                      if (clean) introLines.push(clean);
+                    }
+                    const cleanText = introLines.join(' ').trim();
+                    return cleanText ? <p className={styles.passageText} style={{ marginBottom: '1rem' }}>{cleanText}</p> : null;
+                  })()}
+                  <h4 style={{ fontWeight: 700, marginBottom: '0.6rem', color: '#f59e0b', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>📊 Reference Document</h4>
+                  <div style={{ overflowX: 'auto' }}>
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+                      {exercise.diagram.split('\n').filter((r: string) => r.trim() && !r.trim().match(/^[\-|]+$/)).map((row: string, ri: number) => {
+                        const cells = row.split('|').map((c: string) => c.trim()).filter(Boolean);
+                        const isHeader = ri === 0;
+                        return (
+                          <tr key={ri} style={{ background: isHeader ? 'rgba(245,158,11,0.12)' : ri % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'transparent' }}>
+                            {cells.map((cell: string, ci: number) => {
+                              const Tag = isHeader ? 'th' : 'td';
+                              return (
+                                <Tag key={ci} style={{ padding: '8px 12px', borderBottom: '1px solid rgba(255,255,255,0.08)', textAlign: 'left', fontWeight: isHeader ? 700 : 400, color: isHeader ? '#f59e0b' : 'rgba(255,255,255,0.85)', whiteSpace: 'nowrap' }}>{cell}</Tag>
+                              );
+                            })}
+                          </tr>
+                        );
+                      })}
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {/* Part 3: Paragraphs A-D + Statements with A/B/C/D/E matching */}
+              {section === 'reading' && exercise.paragraphs && Array.isArray(exercise.paragraphs) && (
+                <div className={styles.passageCard}>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', fontStyle: 'italic', marginBottom: '1rem' }}>Read the following message.</p>
+                  {exercise.paragraphs.map((para: any, i: number) => (
+                    <div key={i} style={{ marginBottom: i < exercise.paragraphs.length - 1 ? '1.2rem' : 0 }}>
+                      <h4 style={{ fontWeight: 800, marginBottom: '0.4rem', color: '#a78bfa', fontSize: '0.95rem' }}>
+                        {para.label || String.fromCharCode(65 + i)}.
+                      </h4>
+                      <p className={styles.passageText} style={{ margin: 0, lineHeight: 1.7 }}>{para.text}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Part 3 statements (new schema) */}
+              {section === 'reading' && exercise.statements && Array.isArray(exercise.statements) && (
+                <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
+                  <div style={{ background: 'rgba(167,139,250,0.08)', borderRadius: 10, padding: '14px', marginBottom: '1rem', border: '1px solid rgba(167,139,250,0.15)' }}>
+                    <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.82rem', margin: 0, lineHeight: 1.5 }}>
+                      Decide which paragraph, <strong>(A)</strong> to <strong>(D)</strong>, has the information given in each statement below.
+                      Select <strong>(E)</strong> if the information is not given in any of the paragraphs.
+                    </p>
+                  </div>
+                  {exercise.statements.map((st: any, si: number) => {
+                    const key = `st${st.id}`;
+                    const opts = ['A', 'B', 'C', 'D', 'E'];
+                    const selectedVal = answers[key];
+                    const correctIdx = opts.indexOf(st.correct);
+                    const isCorrect = submitted && selectedVal === correctIdx;
+                    const isWrong = submitted && selectedVal !== undefined && selectedVal !== correctIdx;
+                    return (
+                      <div key={si} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', marginBottom: '0.8rem', padding: '10px 12px', borderRadius: 10, background: submitted ? (isCorrect ? 'rgba(34,197,94,0.06)' : isWrong ? 'rgba(239,68,68,0.06)' : 'transparent') : 'transparent', border: `1px solid ${submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.05)') : 'rgba(255,255,255,0.05)'}` }}>
+                        <select
+                          value={selectedVal ?? ''}
+                          disabled={submitted}
+                          onChange={(e) => setAnswers((prev: any) => ({ ...prev, [key]: parseInt(e.target.value) }))}
+                          style={{
+                            background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                            color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                            border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(167,139,250,0.4)'}`,
+                            borderRadius: 8, padding: '6px 10px', fontSize: '0.85rem', fontWeight: 700,
+                            minWidth: 60, cursor: submitted ? 'default' : 'pointer', flexShrink: 0,
+                          }}
+                        >
+                          <option value="" disabled style={{ background: '#2a2a3c' }}>{st.id}...</option>
+                          {opts.map((o, oi) => (
+                            <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{o}</option>
+                          ))}
+                        </select>
+                        <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.85rem', lineHeight: 1.5, paddingTop: '4px' }}>
+                          {st.text}
+                          {submitted && isWrong && <span style={{ color: '#22c55e', fontWeight: 600, marginLeft: 8 }}>→ {st.correct}</span>}
+                        </span>
+                      </div>
+                    );
+                  })}
+
+                  {/* Submit + Score for Part 3 statements */}
+                  <button
+                    className={styles.generateBtn}
+                    onClick={submitQuiz}
+                    disabled={submitted || !(exercise.statements || []).every((st: any) => answers[`st${st.id}`] !== undefined)}
+                    style={{ marginTop: '0.75rem', opacity: submitted ? 0.5 : 1 }}
+                  >
+                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                  </button>
+                  {submitted && (
+                    <div>
+                      <div className={styles.resultsBar}>
+                        <div>
+                          <div className={styles.scoreDisplay}>
+                            <span className={styles.scoreNum}>{getScore().correct}</span>
+                            <span className={styles.scoreTotal}>/ {getScore().total}</span>
+                          </div>
+                          <span className={styles.scoreLabel}>
+                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles.nextActions}>
+                        {hasNextPart() ? (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
+                        ) : (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Part 4: Viewpoints — NEW schema (article + sectionA dropdowns + reader comment blanks) */}
+              {section === 'reading' && exercise.article && exercise.sectionA && (
+                <>
+                <div className={styles.passageCard}>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', fontStyle: 'italic', marginBottom: '0.8rem' }}>Read the following message.</p>
+                  <p className={styles.passageText} style={{ lineHeight: 1.8 }}>{exercise.article}</p>
+                </div>
+
+                {/* Section A: Statement blanks with phrase options */}
+                <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
+                  <div style={{ background: 'rgba(96,165,250,0.08)', borderRadius: 10, padding: '12px', marginBottom: '1rem', border: '1px solid rgba(96,165,250,0.15)' }}>
+                    <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.82rem', margin: 0, fontWeight: 600 }}>
+                      Choose the best option according to the information.
+                    </p>
+                  </div>
+                  {exercise.sectionA.map((q: any, qi: number) => {
+                    const key = `sa${q.id}`;
+                    const selectedVal = answers[key];
+                    const isCorrect = submitted && selectedVal === q.correct;
+                    const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
+                    return (
+                      <div key={qi} style={{ marginBottom: '1rem' }}>
+                        <div style={{ display: 'flex', gap: '6px', alignItems: 'baseline', flexWrap: 'wrap', fontSize: '0.85rem', color: 'rgba(255,255,255,0.9)', lineHeight: 2.2 }}>
+                          <span style={{ fontWeight: 600 }}>{q.id}.</span>
+                          <span>{q.text}</span>
+                          <select
+                            value={selectedVal ?? ''}
+                            disabled={submitted}
+                            onChange={(e) => setAnswers((prev: any) => ({ ...prev, [key]: parseInt(e.target.value) }))}
+                            style={{
+                              background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                              color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                              border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
+                              borderRadius: 8, padding: '4px 8px', fontSize: '0.82rem',
+                              fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                              minWidth: 180, maxWidth: '100%',
+                            }}
+                          >
+                            <option value="" disabled style={{ background: '#2a2a3c' }}>[ {q.id}...... ]</option>
+                            {q.options.map((opt: string, oi: number) => (
+                              <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Section B: Reader comment with word blanks */}
+                {exercise.readerComment && exercise.sectionB && (
+                  <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
+                    <div style={{ background: 'rgba(52,211,153,0.08)', borderRadius: 10, padding: '12px', marginBottom: '1rem', border: '1px solid rgba(52,211,153,0.15)' }}>
+                      <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.82rem', margin: 0, fontWeight: 600 }}>
+                        The following is a comment by a reader. Complete the comment by choosing the best option to fill in each blank.
+                      </p>
+                    </div>
+                    <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.85rem', lineHeight: 2.4 }}>
+                      {(() => {
+                        const text = exercise.readerComment as string;
+                        const parts = text.split(/(\[\d+(?:\.{3,}|…+)?\])/);
+                        return parts.map((part: string, pi: number) => {
+                          const blankMatch = part.match(/\[(\d+)/);
+                          if (!blankMatch) return <span key={pi}>{part}</span>;
+                          const blankNum = parseInt(blankMatch[1]);
+                          const q = exercise.sectionB.find((b: any) => b.id === blankNum);
+                          if (!q) return <span key={pi} style={{ background: 'rgba(52,211,153,0.2)', padding: '2px 10px', borderRadius: 6, color: '#34d399', fontWeight: 700 }}>{part}</span>;
+                          const key = `sb${q.id}`;
+                          const selectedVal = answers[key];
+                          const isCorrect = submitted && selectedVal === q.correct;
+                          const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
+                          return (
+                            <select
+                              key={pi}
+                              value={selectedVal ?? ''}
+                              disabled={submitted}
+                              onChange={(e) => setAnswers((prev: any) => ({ ...prev, [key]: parseInt(e.target.value) }))}
+                              style={{
+                                background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                                color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                                border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(52,211,153,0.4)'}`,
+                                borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                                fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                                minWidth: 110,
+                              }}
+                            >
+                              <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankNum}...... ]</option>
+                              {q.options.map((opt: string, oi: number) => (
+                                <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                              ))}
+                            </select>
+                          );
+                        });
+                      })()}
+                    </div>
+
+                    {/* Submit + Score for Part 4 */}
+                    <button
+                      className={styles.generateBtn}
+                      onClick={submitQuiz}
+                      disabled={submitted || (() => {
+                        const aOk = (exercise.sectionA || []).every((q: any) => answers[`sa${q.id}`] !== undefined);
+                        const bOk = (exercise.sectionB || []).every((q: any) => answers[`sb${q.id}`] !== undefined);
+                        return !aOk || !bOk;
+                      })()}
+                      style={{ marginTop: '1rem', opacity: submitted ? 0.5 : 1 }}
+                    >
+                      {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                    </button>
+                    {submitted && (
+                      <div>
+                        <div className={styles.resultsBar}>
+                          <div>
+                            <div className={styles.scoreDisplay}>
+                              <span className={styles.scoreNum}>{getScore().correct}</span>
+                              <span className={styles.scoreTotal}>/ {getScore().total}</span>
+                            </div>
+                            <span className={styles.scoreLabel}>
+                              {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                            </span>
+                          </div>
+                        </div>
+                        <div className={styles.nextActions}>
+                          {hasNextPart() ? (
+                            <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
+                          ) : (
+                            <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+                </>
+              )}
+
+              {/* Part 4 OLD schema backward compat: writers/readerResponse */}
+              {section === 'reading' && exercise.writers && Array.isArray(exercise.writers) && !exercise.article && (
+                <div className={styles.passageCard}>
+                  {exercise.writers.map((w: any, i: number) => (
+                    <div key={i} style={{ marginBottom: '1.2rem', paddingBottom: '1rem', borderBottom: i < exercise.writers.length - 1 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
+                      <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', color: '#60a5fa', fontSize: '0.95rem' }}>
+                        {w.name || `Writer ${i + 1}`}
+                      </h4>
+                      <p className={styles.passageText} style={{ margin: 0 }}>{w.text}</p>
+                    </div>
+                  ))}
+                  {exercise.readerResponse && (
+                    <div style={{ marginTop: '0.5rem', padding: '0.8rem', background: 'rgba(255,255,255,0.04)', borderRadius: '8px' }}>
+                      <h4 style={{ fontWeight: 700, marginBottom: '0.4rem', color: '#34d399', fontSize: '0.9rem' }}>Reader Response</h4>
+                      <p className={styles.passageText} style={{ margin: 0 }}>{exercise.readerResponse}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Questions */}
-              {exercise.questions && (section !== 'listening' || listeningPhase !== 'listen') && (() => {
+              {exercise.questions && !exercise.poster && !exercise.statements && !exercise.sectionA && (section !== 'listening' || listeningPhase !== 'listen') && (() => {
                 const isClipMode = !!(exercise.clips && clipAudioSrcs.length > 0);
-                const currentQuestions = isClipMode && exercise.clips?.[currentClipIdx]?.questions
+                let currentQuestions = isClipMode && exercise.clips?.[currentClipIdx]?.questions
                   ? exercise.clips[currentClipIdx].questions
                   : exercise.questions;
+                // Part 2: exclude blank-fill questions (shown inline in email)
+                if (exercise.completionEmail && exercise.diagram) {
+                  const blankCount = (exercise.completionEmail.match(/\[BLANK \d+\]/g) || []).length;
+                  if (blankCount > 0) currentQuestions = currentQuestions.slice(0, -blankCount);
+                }
+                // Part 1: exclude section B questions (shown inline in replyEmail)
+                if (exercise.replyEmail) {
+                  currentQuestions = currentQuestions.filter((q: any) => q.section !== 'B');
+                }
                 const clipAnswered = currentQuestions.every((q: any) => answers[q.id] !== undefined);
                 const isLastClip = !isClipMode || currentClipIdx >= (exercise.clips?.length || 1) - 1;
                 const allClipsDone = isClipMode && submitted && isLastClip;
@@ -1178,8 +1708,8 @@ export default function AIPracticePage() {
                     </>
                   )}
 
-                  {/* Non-clip mode: original submit/score */}
-                  {!isClipMode && (
+                  {/* Non-clip mode: original submit/score (hide if Part 1 replyEmail — submit is after blanks) */}
+                  {!isClipMode && !exercise.replyEmail && (
                     <button
                       className={styles.generateBtn}
                       onClick={submitQuiz}
@@ -1189,7 +1719,7 @@ export default function AIPracticePage() {
                       {submitted ? '✓ Answers Checked' : 'Check Answers'}
                     </button>
                   )}
-                  {!isClipMode && (
+                  {!isClipMode && !exercise.replyEmail && (
                     <div style={{ display: submitted ? 'block' : 'none' }}>
                     <div className={styles.resultsBar}>
                       <div>
@@ -1222,10 +1752,87 @@ export default function AIPracticePage() {
                 </div>
                 );
               })()}
+
+              {/* Part 1: Reply Email with blanks (questions 7-11) — AFTER section A questions */}
+              {section === 'reading' && exercise.replyEmail && (
+                <div className={styles.passageCard} style={{ marginTop: '0.5rem' }}>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8rem', fontStyle: 'italic', marginBottom: '0.8rem' }}>
+                    Here is a response to the message. Complete the response by filling in the blanks. Select the best choice for each blank.
+                  </p>
+                  <div style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 10, padding: '16px', border: '1px solid rgba(255,255,255,0.08)', lineHeight: 2.2 }}>
+                    {(() => {
+                      const email = exercise.replyEmail as string;
+                      const parts = email.split(/(\[BLANK \d+\])/);
+                      const blankQuestions = (exercise.questions || []).filter((q: any) => q.section === 'B');
+                      return parts.map((part: string, pi: number) => {
+                        const blankMatch = part.match(/\[BLANK (\d+)\]/);
+                        if (!blankMatch) return <span key={pi} style={{ color: 'rgba(255,255,255,0.85)', whiteSpace: 'pre-wrap' }}>{part}</span>;
+                        const blankIdx = parseInt(blankMatch[1]) - 1;
+                        const q = blankQuestions[blankIdx];
+                        if (!q) return <span key={pi} style={{ background: 'rgba(96,165,250,0.2)', padding: '2px 10px', borderRadius: 6, color: '#60a5fa', fontWeight: 700 }}>{part}</span>;
+                        const selectedVal = answers[q.id];
+                        const isCorrect = submitted && selectedVal === q.correct;
+                        const isWrong = submitted && selectedVal !== undefined && selectedVal !== q.correct;
+                        return (
+                          <select
+                            key={pi}
+                            value={selectedVal ?? ''}
+                            disabled={submitted}
+                            onChange={(e) => setAnswers((prev: any) => ({ ...prev, [q.id]: parseInt(e.target.value) }))}
+                            style={{
+                              background: submitted ? (isCorrect ? 'rgba(34,197,94,0.2)' : isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.08)') : 'rgba(255,255,255,0.08)',
+                              color: submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : '#fff') : '#fff',
+                              border: `1.5px solid ${submitted ? (isCorrect ? '#22c55e' : isWrong ? '#ef4444' : 'rgba(255,255,255,0.15)') : 'rgba(96,165,250,0.4)'}`,
+                              borderRadius: 8, padding: '4px 8px', fontSize: '0.85rem',
+                              fontWeight: 600, cursor: submitted ? 'default' : 'pointer',
+                              minWidth: 140, display: 'inline-block',
+                            }}
+                          >
+                            <option value="" disabled style={{ background: '#2a2a3c' }}>[ {blankIdx + 7}...... ]</option>
+                            {q.options.map((opt: string, oi: number) => (
+                              <option key={oi} value={oi} style={{ background: '#2a2a3c' }}>{opt}</option>
+                            ))}
+                          </select>
+                        );
+                      });
+                    })()}
+                  </div>
+                  {/* Submit + Score for Part 1 */}
+                  <button
+                    className={styles.generateBtn}
+                    onClick={submitQuiz}
+                    disabled={submitted || Object.keys(answers).length < (exercise.questions?.length || 0)}
+                    style={{ marginTop: '1rem', opacity: submitted ? 0.5 : 1 }}
+                  >
+                    {submitted ? '✓ Answers Checked' : 'Check Answers'}
+                  </button>
+                  {submitted && (
+                    <div>
+                      <div className={styles.resultsBar}>
+                        <div>
+                          <div className={styles.scoreDisplay}>
+                            <span className={styles.scoreNum}>{getScore().correct}</span>
+                            <span className={styles.scoreTotal}>/ {getScore().total}</span>
+                          </div>
+                          <span className={styles.scoreLabel}>
+                            {getScore().correct === getScore().total ? 'Perfect! 🎉' : getScore().correct >= getScore().total * 0.7 ? 'Good job! 👍' : 'Keep practicing! 💪'}
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles.nextActions}>
+                        {hasNextPart() ? (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>{getNextPartLabel()} →</button>
+                        ) : (
+                          <button className={styles.nextExerciseBtn} onClick={goToNextPart} disabled={generating}>📊 See Results</button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
             </>
           )}
-
-          {/* WRITING */}
           {section === 'writing' && (
             <>
               <div className={styles.exerciseHeader}>

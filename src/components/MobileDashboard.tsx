@@ -12,10 +12,10 @@ import NotificationBell from '@/components/NotificationBell';
 
 /* ─── Design Tokens ─── */
 const T = {
-  bg: '#0f1117',
-  surface: '#1a1d27',
-  surfaceHover: '#1f2231',
-  card: '#181b24',
+  bg: '#1e1e2e',
+  surface: '#2a2a3c',
+  surfaceHover: '#32324a',
+  card: '#262638',
   text: '#f1f5f9',
   textSecondary: 'rgba(255,255,255,0.6)',
   textMuted: 'rgba(255,255,255,0.35)',
@@ -132,7 +132,20 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
   };
 
   return (
-    <div style={{ background: T.bg, minHeight: '100vh', padding: desktop ? '1rem 2rem 2rem' : '0 0 100px 0', maxWidth: desktop ? 900 : undefined, margin: desktop ? '0 auto' : undefined }}>
+    <div style={{ background: T.bg, minHeight: '100vh', padding: desktop ? '1rem 2rem 2rem' : '0 0 100px 0', maxWidth: desktop ? 1100 : undefined, margin: desktop ? '0 auto' : undefined }}>
+      <style>{`
+        .dash-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .dash-progress { display: flex; flex-direction: column; gap: 10px; }
+        .dash-main-cards { display: flex; flex-direction: column; gap: 10px; }
+        .dash-quick { display: flex; flex-direction: column; gap: 1px; }
+        @media (min-width: 1024px) {
+          .dash-skills { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+          .dash-progress { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+          .dash-main-cards { flex-direction: row; gap: 14px; }
+          .dash-main-cards > div { flex: 1; }
+          .dash-quick { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; }
+        }
+      `}</style>
 
       {/* ─── Top Bar ─── */}
       {!desktop && (
@@ -226,8 +239,8 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         </div>
       )}
 
-      {/* ─── Main Action: Practice ─── */}
       <div style={{ padding: '0 20px 16px' }}>
+        <div className="dash-main-cards">
         <div onClick={() => router.push('/drills')} style={{
           background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%)',
           borderRadius: T.radius, padding: '20px',
@@ -263,12 +276,13 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           </div>
           <ArrowRight size={18} color="rgba(255,255,255,0.6)" />
         </div>
+        </div>
       </div>
 
       {/* ─── Practice by Skill ─── */}
       <div style={{ padding: '0 20px 16px' }}>
         <SectionTitle>Practice by Skill</SectionTitle>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+        <div className="dash-skills">
           {[
             { icon: <Headphones size={20} />, title: 'Listening', gradient: G.blue, color: '#60a5fa', sessions: listening, href: '/ai-coach?skill=listening' },
             { icon: <BookOpen size={20} />, title: 'Reading', gradient: G.green, color: '#34d399', sessions: reading, href: '/ai-coach?skill=reading' },
@@ -293,7 +307,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
       {/* ─── Quick Access ─── */}
       <div style={{ padding: '0 20px 16px' }}>
         <SectionTitle>Quick Access</SectionTitle>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 1, background: T.surface, borderRadius: T.radius, overflow: 'hidden', border: `1px solid ${T.border}` }}>
+        <div className="dash-quick" style={{ background: T.surface, borderRadius: T.radius, overflow: 'hidden', border: `1px solid ${T.border}` }}>
           <QuickLink icon={<FileText size={18} />} gradient={G.purple} label="Mock Exams" sub="Full test simulation" badge={!isPro ? 'PRO' : undefined} onClick={() => router.push('/mock-exam')} />
           <QuickLink icon={<GraduationCap size={18} />} gradient={G.green} label="Study Guides" sub="Techniques & strategies" badge={!isPro ? 'PRO' : undefined} onClick={() => router.push('/guides')} />
           <QuickLink icon={<Calculator size={18} />} gradient={G.cyan} label="CRS Calculator" sub="Check your score" onClick={() => router.push('/tools/score-calculator')} />
@@ -304,7 +318,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
       {/* ─── Your Progress ─── */}
       <div style={{ padding: '0 20px 16px' }}>
         <SectionTitle>Your Progress</SectionTitle>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        <div className="dash-progress">
           {[
             { label: 'Listening', emoji: '🎧', color: '#60a5fa', glow: 'rgba(96,165,250,0.12)', sessions: listening, path: '/drills/listening' },
             { label: 'Reading', emoji: '📖', color: '#34d399', glow: 'rgba(52,211,153,0.12)', sessions: reading, path: '/drills/reading' },

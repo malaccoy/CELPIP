@@ -3,9 +3,9 @@
   "categories": [
     "vocabulary",
     "grammar",
-    "reading",
-    "listening",
-    "speaking"
+    "idioms",
+    "error_spotting",
+    "collocations"
   ],
   "questions": [
     {
@@ -1047,1366 +1047,6 @@
         "My brother, whom lives in Toronto, is a doctor."
       ],
       "ans": 1
-    },
-    {
-      "id": "r1",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The community centre will be closed for renovations from March 15 to April 10. Members can use the temporary facility at 230 Oak Street during this period.' — When will the centre reopen?",
-      "opts": [
-        "March 15",
-        "April 10",
-        "After April 10",
-        "March 10"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r2",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Due to increased demand, the library has extended its weekend hours. It now opens at 9 AM instead of 10 AM on Saturdays and Sundays.' — What changed?",
-      "opts": [
-        "The library closes later",
-        "The library opens earlier on weekends",
-        "The library is now open on holidays",
-        "The library reduced weekday hours"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r3",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Employees who have completed their probation period are eligible for the dental plan. New hires must wait 90 days before enrolling.' — Who can enroll in the dental plan?",
-      "opts": [
-        "All new hires immediately",
-        "Only managers",
-        "Employees who finished probation",
-        "Employees with 1+ year"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r4",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The parking lot will be repaved next week. Staff are asked to park on the street or use public transit. A $5 daily transit subsidy will be provided.' — What will staff receive?",
-      "opts": [
-        "Free parking elsewhere",
-        "A new parking pass",
-        "A daily transit subsidy",
-        "Extra vacation days"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r5",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The potluck lunch has been moved from Friday to Thursday due to a scheduling conflict with the fire drill. Please bring your dishes by 11:30 AM.' — Why was the potluck moved?",
-      "opts": [
-        "Not enough food",
-        "A scheduling conflict",
-        "Bad weather expected",
-        "The kitchen is closed"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r6",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'All tenants must give 60 days written notice before moving out. Failure to do so may result in forfeiture of the security deposit.' — What happens without proper notice?",
-      "opts": [
-        "Rent increases",
-        "You lose your deposit",
-        "You must pay double rent",
-        "Nothing happens"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r7",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The winter clothing drive runs from November 1 to December 15. Donations can be dropped off at any fire station. Items should be clean and in good condition.' — Where can you donate?",
-      "opts": [
-        "At the community centre",
-        "At any fire station",
-        "At the mall entrance",
-        "At the town hall"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r8",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Starting January 1, plastic bags will no longer be provided at checkout. Customers are encouraged to bring reusable bags. Paper bags will be available for $0.25 each.' — What will happen to plastic bags?",
-      "opts": [
-        "They will cost more",
-        "They will be smaller",
-        "They will no longer be available",
-        "They will be free"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r9",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The company is offering a wellness program that includes free gym access, nutrition counselling, and mental health support. Enrollment opens next Monday.' — What is NOT part of the program?",
-      "opts": [
-        "Gym access",
-        "Nutrition counselling",
-        "Childcare services",
-        "Mental health support"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r10",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Flight AC 847 to Vancouver has been delayed by 3 hours due to mechanical issues. Passengers can collect meal vouchers at the service desk.' — Why is the flight delayed?",
-      "opts": [
-        "Bad weather",
-        "Mechanical issues",
-        "Crew shortage",
-        "Runway closure"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r11",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The school board has approved a new policy requiring all students to wear uniforms starting September. Parents can purchase uniforms from approved vendors listed on the school website.' — When does the uniform policy start?",
-      "opts": [
-        "Immediately",
-        "January",
-        "September",
-        "Next school year"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r12",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Residents of Maple Heights will experience a planned power outage on Saturday from 8 AM to 2 PM. This is necessary for electrical grid upgrades.' — How long will the outage last?",
-      "opts": [
-        "2 hours",
-        "4 hours",
-        "6 hours",
-        "8 hours"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r13",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The farmer's market has moved to an indoor location for the winter months. It will operate every Saturday from 9 AM to 1 PM at the recreation centre.' — What changed about the market?",
-      "opts": [
-        "It's now on Sundays",
-        "It moved indoors",
-        "It closes earlier",
-        "It's open daily"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r14",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Candidates for the management position must have at least 5 years of experience and a university degree. Bilingual candidates will be given preference.' — What gives a candidate an advantage?",
-      "opts": [
-        "10 years of experience",
-        "Being bilingual",
-        "Having a master's degree",
-        "Living nearby"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r15",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The annual block party will take place on July 1st from 2 PM to 10 PM. There will be live music, food trucks, and a fireworks display at 9:30 PM.' — When are the fireworks?",
-      "opts": [
-        "2 PM",
-        "8 PM",
-        "9:30 PM",
-        "10 PM"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r16",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Water usage restrictions are in effect from June to September. Lawn watering is only permitted on odd-numbered days for houses with odd-numbered addresses.' — When can house #43 water the lawn?",
-      "opts": [
-        "Any day",
-        "Even-numbered days",
-        "Odd-numbered days",
-        "Weekends only"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r17",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The swimming pool will close at 6 PM instead of 9 PM during the month of October due to reduced staffing. Regular hours resume in November.' — What is the reason for shorter hours?",
-      "opts": [
-        "Pool maintenance",
-        "Reduced staffing",
-        "Cold weather",
-        "Low attendance"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r18",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'To qualify for the early bird discount, registrations must be received by March 31. After that date, the regular fee of $150 applies.' — What happens after March 31?",
-      "opts": [
-        "Registration closes",
-        "You pay $150",
-        "The event is cancelled",
-        "Prices decrease"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r19",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The new express bus route connects downtown to the airport in 25 minutes, compared to the previous 45-minute local route. Service runs every 15 minutes during peak hours.' — How much time does the express save?",
-      "opts": [
-        "10 minutes",
-        "15 minutes",
-        "20 minutes",
-        "25 minutes"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r20",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Pet owners in the building must register their animals with management and pay a $200 refundable deposit. Dogs must be leashed in common areas.' — Is the pet deposit refundable?",
-      "opts": [
-        "No",
-        "Yes",
-        "Only for cats",
-        "Only after 1 year"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r21",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The company will match employee donations to registered charities up to $500 per year. Submit receipts to HR by December 15.' — What is the maximum the company will match?",
-      "opts": [
-        "$200",
-        "Any amount",
-        "$500",
-        "$1000"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r22",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The pharmacy is open Monday to Friday from 9 AM to 7 PM and Saturday from 10 AM to 4 PM. It is closed on Sundays and holidays.' — When is the pharmacy closed?",
-      "opts": [
-        "Saturday afternoons",
-        "Friday evenings",
-        "Sundays and holidays",
-        "Every other Monday"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r23",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Recycling pickup has been changed from Wednesdays to Thursdays effective immediately. Please ensure bins are placed curbside by 7 AM.' — What time should bins be out by?",
-      "opts": [
-        "6 AM",
-        "7 AM",
-        "8 AM",
-        "9 AM"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r24",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The hiking trail is rated as moderate difficulty. It is 8 km round trip and takes approximately 3 hours. Hikers should bring water and wear proper footwear.' — How long is the trail round trip?",
-      "opts": [
-        "3 km",
-        "5 km",
-        "8 km",
-        "16 km"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r25",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Free parking is available for the first two hours. After that, the rate is $3 per hour. Monthly passes are available for $80.' — How much is parking for 4 hours?",
-      "opts": [
-        "$3",
-        "$6",
-        "$9",
-        "$12"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r26",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The daycare centre accepts children aged 18 months to 5 years. A valid immunization record is required at enrollment. Spaces are limited.' — What document is needed?",
-      "opts": [
-        "Birth certificate",
-        "Immunization record",
-        "Health card",
-        "Passport"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r27",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The building's fire alarm system will be tested on Tuesday between 10 AM and 12 PM. No evacuation is necessary during the test.' — Do residents need to evacuate?",
-      "opts": [
-        "Yes, immediately",
-        "Only if the alarm is loud",
-        "No",
-        "Only ground floor"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r28",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The return policy allows exchanges within 30 days of purchase with original receipt. Items must be in unused condition with tags attached.' — What is required for a return?",
-      "opts": [
-        "Just the item",
-        "Receipt and unused item with tags",
-        "A valid ID",
-        "A store credit card"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r29",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Snow removal is the responsibility of homeowners. Sidewalks must be cleared within 24 hours after a snowfall. Failure to comply may result in a $100 fine.' — What is the fine for not clearing snow?",
-      "opts": [
-        "$50",
-        "$75",
-        "$100",
-        "$150"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r30",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The new employee orientation takes place every first Monday of the month at 9 AM in Conference Room B. Attendance is mandatory for all new hires.' — Where is the orientation?",
-      "opts": [
-        "HR office",
-        "Conference Room A",
-        "Conference Room B",
-        "The cafeteria"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r31",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Volunteers are needed for the food bank this weekend. Shifts are 4 hours long. Volunteers will receive a certificate of participation and a free lunch.' — What do volunteers get?",
-      "opts": [
-        "Payment of $50",
-        "A certificate and free lunch",
-        "Community service hours only",
-        "A gift card"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r32",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The elevator will be out of service for maintenance from 8 AM to 5 PM on Thursday. Residents on upper floors should plan accordingly.' — When will the elevator be fixed?",
-      "opts": [
-        "Wednesday evening",
-        "Thursday by 5 PM",
-        "Friday morning",
-        "Next week"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r33",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The language school offers group classes for $200/month and private tutoring for $50/hour. New students receive a free assessment test.' — How much is private tutoring?",
-      "opts": [
-        "$200/month",
-        "$50/hour",
-        "$50/month",
-        "Free"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r34",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The bus pass for seniors aged 65 and over costs $45/month, compared to the regular adult pass at $90/month. Photo ID is required.' — How much do seniors save?",
-      "opts": [
-        "$25",
-        "$35",
-        "$45",
-        "$55"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r35",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The clinic accepts walk-in patients Monday through Wednesday. Appointments are required Thursday and Friday. The clinic is closed on weekends.' — When can you walk in?",
-      "opts": [
-        "Any weekday",
-        "Monday to Wednesday",
-        "Thursday and Friday",
-        "Weekends only"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r36",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Construction on Main Street will cause lane closures until the end of August. Drivers should use Elm Street as an alternative route.' — What is the alternative route?",
-      "opts": [
-        "Oak Street",
-        "Elm Street",
-        "Pine Street",
-        "Maple Avenue"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r37",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The gym membership includes access to the pool, sauna, and fitness classes. Personal training sessions cost an additional $40 each.' — What costs extra?",
-      "opts": [
-        "Pool access",
-        "Sauna use",
-        "Fitness classes",
-        "Personal training"
-      ],
-      "ans": 3
-    },
-    {
-      "id": "r38",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The after-school program runs from 3:30 PM to 6 PM on weekdays. It includes homework help, snacks, and supervised activities. Cost is $15 per day.' — What time does the program start?",
-      "opts": [
-        "3:00 PM",
-        "3:30 PM",
-        "4:00 PM",
-        "2:30 PM"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r39",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'Guests checking in after 10 PM must use the side entrance and present their booking confirmation to the night receptionist.' — What do late guests need?",
-      "opts": [
-        "A special key",
-        "Their booking confirmation",
-        "A phone call to the manager",
-        "A valid passport"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r40",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Read: 'The company cafeteria now offers a vegetarian option daily. The meal plan costs $8/day or $35/week. Payment is by payroll deduction.' — How is the meal plan paid?",
-      "opts": [
-        "Cash only",
-        "Credit card",
-        "Payroll deduction",
-        "Monthly invoice"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "l1",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'd like to book a table for two at seven o'clock tonight.",
-      "q": "What is the speaker doing?",
-      "opts": [
-        "Ordering food",
-        "Making a reservation",
-        "Asking for directions",
-        "Cancelling a booking"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l1.mp3"
-    },
-    {
-      "id": "l2",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The next train to Union Station departs from platform three in approximately ten minutes.",
-      "q": "Where should the passenger go?",
-      "opts": [
-        "Platform one",
-        "Platform two",
-        "Platform three",
-        "The ticket office"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l2.mp3"
-    },
-    {
-      "id": "l3",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'm sorry, but we're completely sold out for tonight's show. I can put you on the waiting list if you'd like.",
-      "q": "What is being offered?",
-      "opts": [
-        "A refund",
-        "A spot on the waiting list",
-        "Tickets for tomorrow",
-        "A discount"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l3.mp3"
-    },
-    {
-      "id": "l4",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Please remember to turn off all electronic devices before the presentation begins. Thank you.",
-      "q": "What are people asked to do?",
-      "opts": [
-        "Leave the room",
-        "Take notes",
-        "Turn off devices",
-        "Ask questions"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l4.mp3"
-    },
-    {
-      "id": "l5",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The pharmacy closes at six today, but it opens at eight tomorrow morning if you need to pick up your prescription then.",
-      "q": "When can the person pick up the prescription tomorrow?",
-      "opts": [
-        "At six PM",
-        "At eight AM",
-        "At noon",
-        "It's closed tomorrow"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l5.mp3"
-    },
-    {
-      "id": "l6",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Your total comes to thirty-seven fifty. Would you like to pay by cash or card?",
-      "q": "How much does the person owe?",
-      "opts": [
-        "$7.50",
-        "$30.50",
-        "$37.50",
-        "$73.50"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l6.mp3"
-    },
-    {
-      "id": "l7",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "We'll need to reschedule your appointment because the doctor had an emergency. How does Thursday at two sound?",
-      "q": "Why is the appointment being rescheduled?",
-      "opts": [
-        "The patient is busy",
-        "The doctor had an emergency",
-        "The office is closed",
-        "Bad weather"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l7.mp3"
-    },
-    {
-      "id": "l8",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I've been working at this company for fifteen years now, and I've never seen such a big change in policy.",
-      "q": "How long has the speaker worked there?",
-      "opts": [
-        "5 years",
-        "10 years",
-        "15 years",
-        "20 years"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l8.mp3"
-    },
-    {
-      "id": "l9",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Could you please sign at the bottom of the page and date it? I also need a copy of your driver's license.",
-      "q": "What documents are needed?",
-      "opts": [
-        "Passport only",
-        "Signed form and driver's license",
-        "Bank statement",
-        "Birth certificate"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l9.mp3"
-    },
-    {
-      "id": "l10",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The flight has been overbooked. We're looking for volunteers willing to take the next flight in exchange for a two-hundred-dollar voucher.",
-      "q": "What is being offered to volunteers?",
-      "opts": [
-        "A free upgrade",
-        "A $200 voucher",
-        "A hotel room",
-        "A full refund"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l10.mp3"
-    },
-    {
-      "id": "l11",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I left my umbrella in the taxi. Is there a lost and found office where I can check?",
-      "q": "What did the speaker lose?",
-      "opts": [
-        "A wallet",
-        "A phone",
-        "An umbrella",
-        "A bag"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l11.mp3"
-    },
-    {
-      "id": "l12",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The rent includes water and heating, but electricity is separate. You'll need to set up your own account with the provider.",
-      "q": "What is NOT included in the rent?",
-      "opts": [
-        "Water",
-        "Heating",
-        "Electricity",
-        "Both water and heating"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l12.mp3"
-    },
-    {
-      "id": "l13",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'm calling to let you know that the package you ordered has been shipped and should arrive within three to five business days.",
-      "q": "When will the package arrive?",
-      "opts": [
-        "Today",
-        "Tomorrow",
-        "In 3-5 business days",
-        "Next month"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l13.mp3"
-    },
-    {
-      "id": "l14",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The meeting originally scheduled for Monday has been pushed back to Wednesday at the same time. Please update your calendars.",
-      "q": "When is the meeting now?",
-      "opts": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l14.mp3"
-    },
-    {
-      "id": "l15",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "We accept returns within thirty days, but the item must be in its original packaging. Sale items are final sale.",
-      "q": "What cannot be returned?",
-      "opts": [
-        "Items without packaging",
-        "Items over $100",
-        "Sale items",
-        "Electronics"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l15.mp3"
-    },
-    {
-      "id": "l16",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Attention shoppers, the store will be closing in fifteen minutes. Please bring your final selections to the checkout.",
-      "q": "How much time is left before the store closes?",
-      "opts": [
-        "5 minutes",
-        "10 minutes",
-        "15 minutes",
-        "30 minutes"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l16.mp3"
-    },
-    {
-      "id": "l17",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'd recommend the salmon today. It's fresh and comes with a side of roasted vegetables and rice.",
-      "q": "What is the speaker recommending?",
-      "opts": [
-        "Chicken",
-        "Steak",
-        "Salmon",
-        "Pasta"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l17.mp3"
-    },
-    {
-      "id": "l18",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The warranty covers manufacturing defects for two years from the date of purchase, but it doesn't cover accidental damage.",
-      "q": "What is NOT covered by the warranty?",
-      "opts": [
-        "Manufacturing defects",
-        "Accidental damage",
-        "Parts replacement",
-        "Electrical issues"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l18.mp3"
-    },
-    {
-      "id": "l19",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "You'll need to transfer at Bloor Station to get on the eastbound line. It's about three stops from there to your destination.",
-      "q": "Where should the person transfer?",
-      "opts": [
-        "Union Station",
-        "King Station",
-        "Bloor Station",
-        "Dundas Station"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l19.mp3"
-    },
-    {
-      "id": "l20",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'm afraid we don't have any available appointments until next Tuesday. Would you like me to add you to the cancellation list?",
-      "q": "What is offered to the caller?",
-      "opts": [
-        "An immediate appointment",
-        "A spot on the cancellation list",
-        "A referral to another clinic",
-        "A phone consultation"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l20.mp3"
-    },
-    {
-      "id": "l21",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The children's section of the library is on the second floor, next to the study rooms. Story time is every Wednesday at ten thirty.",
-      "q": "When is story time?",
-      "opts": [
-        "Monday at 10:30",
-        "Wednesday at 10:30",
-        "Friday at 10:30",
-        "Saturday at 10:30"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l21.mp3"
-    },
-    {
-      "id": "l22",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Please leave your shoes at the entrance and use the slippers provided. The floor has just been refinished.",
-      "q": "Why should shoes be removed?",
-      "opts": [
-        "For hygiene",
-        "The floor was just refinished",
-        "It's a cultural custom",
-        "The shoes are dirty"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l22.mp3"
-    },
-    {
-      "id": "l23",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The swimming pool is reserved for lap swimming from six to eight in the morning. Open swim starts at nine.",
-      "q": "When does open swim begin?",
-      "opts": [
-        "6 AM",
-        "7 AM",
-        "8 AM",
-        "9 AM"
-      ],
-      "ans": 3,
-      "audioPath": "/audio/battle/l23.mp3"
-    },
-    {
-      "id": "l24",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "You're eligible for a free eye exam if you haven't had one in the past two years. Would you like to schedule one?",
-      "q": "Who qualifies for the free exam?",
-      "opts": [
-        "Everyone",
-        "People without insurance",
-        "People who haven't had one in 2 years",
-        "Seniors only"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l24.mp3"
-    },
-    {
-      "id": "l25",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The road to the campground is gravel for the last five kilometres. I'd recommend driving slowly, especially after rain.",
-      "q": "What should drivers be careful about?",
-      "opts": [
-        "Wildlife crossing",
-        "The gravel road",
-        "Steep hills",
-        "No cell service"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l25.mp3"
-    },
-    {
-      "id": "l26",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "We're running a promotion this week — buy two get one free on all bakery items. The offer ends Sunday.",
-      "q": "When does the promotion end?",
-      "opts": [
-        "Friday",
-        "Saturday",
-        "Sunday",
-        "Monday"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l26.mp3"
-    },
-    {
-      "id": "l27",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I need to pick up my son from school at three thirty, so I'll have to leave the meeting a bit early.",
-      "q": "Why does the speaker need to leave early?",
-      "opts": [
-        "A doctor's appointment",
-        "To pick up their son",
-        "To catch a flight",
-        "To attend another meeting"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l27.mp3"
-    },
-    {
-      "id": "l28",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The heating system broke down overnight. A technician has been called and should be here by noon.",
-      "q": "When is the technician expected?",
-      "opts": [
-        "This morning",
-        "By noon",
-        "This evening",
-        "Tomorrow"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l28.mp3"
-    },
-    {
-      "id": "l29",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'd like to open a savings account. What's the minimum balance required to avoid monthly fees?",
-      "q": "What is the speaker asking about?",
-      "opts": [
-        "Closing an account",
-        "Getting a loan",
-        "Opening a savings account",
-        "Exchanging currency"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l29.mp3"
-    },
-    {
-      "id": "l30",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The fire exit is located at the end of the hallway, to the left. In case of an emergency, do not use the elevator.",
-      "q": "What should people NOT use in an emergency?",
-      "opts": [
-        "The stairs",
-        "The fire exit",
-        "The elevator",
-        "The side door"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l30.mp3"
-    },
-    {
-      "id": "l31",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I apologize for the inconvenience, but your room won't be ready until three PM. You're welcome to store your luggage with us.",
-      "q": "What time will the room be ready?",
-      "opts": [
-        "1 PM",
-        "2 PM",
-        "3 PM",
-        "4 PM"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l31.mp3"
-    },
-    {
-      "id": "l32",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The vaccination clinic is open to anyone over eighteen. No appointment is needed. Just bring your health card.",
-      "q": "What should people bring?",
-      "opts": [
-        "Their passport",
-        "A doctor's note",
-        "Their health card",
-        "Proof of address"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l32.mp3"
-    },
-    {
-      "id": "l33",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The job posting says experience with Excel is preferred but not required. Training will be provided for the right candidate.",
-      "q": "Is Excel experience required?",
-      "opts": [
-        "Yes, mandatory",
-        "No, but preferred",
-        "Only for senior roles",
-        "Not mentioned"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l33.mp3"
-    },
-    {
-      "id": "l34",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Visitors must check in at reception and wear a visitor badge at all times while on the premises.",
-      "q": "What must visitors wear?",
-      "opts": [
-        "A uniform",
-        "Safety goggles",
-        "A visitor badge",
-        "A hard hat"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l34.mp3"
-    },
-    {
-      "id": "l35",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The yoga class has been moved from Studio A to Studio C because of a plumbing issue. All other classes remain as scheduled.",
-      "q": "Why was the yoga class moved?",
-      "opts": [
-        "Instructor change",
-        "Low enrollment",
-        "Plumbing issue",
-        "Renovation"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l35.mp3"
-    },
-    {
-      "id": "l36",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "I'm calling about the apartment on Maple Street. Is it still available? And does it allow pets?",
-      "q": "What does the caller want to know?",
-      "opts": [
-        "The price only",
-        "Availability and pet policy",
-        "The neighbourhood safety",
-        "Move-in date"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l36.mp3"
-    },
-    {
-      "id": "l37",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Recycling pickup will be delayed by one day this week due to the holiday on Monday. Please leave your bins out on Wednesday instead.",
-      "q": "When should bins be out?",
-      "opts": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l37.mp3"
-    },
-    {
-      "id": "l38",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "The museum is free on the first Thursday of every month. Regular admission is twelve dollars for adults and eight for children.",
-      "q": "How much is children's admission normally?",
-      "opts": [
-        "$4",
-        "$6",
-        "$8",
-        "$12"
-      ],
-      "ans": 2,
-      "audioPath": "/audio/battle/l38.mp3"
-    },
-    {
-      "id": "l39",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Snow tires are mandatory on this highway from October fifteenth to April first. Vehicles without them may be fined.",
-      "q": "When are snow tires required?",
-      "opts": [
-        "November to March",
-        "October 15 to April 1",
-        "December to February",
-        "All winter months"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l39.mp3"
-    },
-    {
-      "id": "l40",
-      "cat": "listening",
-      "type": "choose",
-      "audio": "Your internet plan includes a hundred gigabytes per month. If you go over, additional data is charged at ten dollars per gigabyte.",
-      "q": "What is the extra data charge?",
-      "opts": [
-        "$5/GB",
-        "$10/GB",
-        "$15/GB",
-        "$20/GB"
-      ],
-      "ans": 1,
-      "audioPath": "/audio/battle/l40.mp3"
-    },
-    {
-      "id": "s1",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I would like to schedule an appointment for next Tuesday, please."
-    },
-    {
-      "id": "s2",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "Could you please tell me where the nearest bus stop is?"
-    },
-    {
-      "id": "s3",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I have been living in Canada for about three years now."
-    },
-    {
-      "id": "s4",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The weather forecast says it will rain tomorrow afternoon."
-    },
-    {
-      "id": "s5",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I need to renew my driver's license before it expires next month."
-    },
-    {
-      "id": "s6",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "She recommended a great Italian restaurant near the waterfront."
-    },
-    {
-      "id": "s7",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "We should consider taking public transit instead of driving downtown."
-    },
-    {
-      "id": "s8",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The meeting has been rescheduled to Friday at two thirty."
-    },
-    {
-      "id": "s9",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I apologize for the delay, but your order is being prepared right now."
-    },
-    {
-      "id": "s10",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "My daughter is starting kindergarten in September and she is very excited."
-    },
-    {
-      "id": "s11",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I am writing to inquire about the job posting on your website."
-    },
-    {
-      "id": "s12",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The community centre offers free English classes on Wednesday evenings."
-    },
-    {
-      "id": "s13",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "Would you mind helping me carry these boxes to the car?"
-    },
-    {
-      "id": "s14",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I think we should leave early to avoid the rush hour traffic."
-    },
-    {
-      "id": "s15",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The landlord said that the rent includes water and heating."
-    },
-    {
-      "id": "s16",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I have an appointment with Doctor Chen at ten o'clock tomorrow morning."
-    },
-    {
-      "id": "s17",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "Please make sure to bring your identification and proof of address."
-    },
-    {
-      "id": "s18",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The supermarket on the corner has a great selection of organic produce."
-    },
-    {
-      "id": "s19",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I would appreciate it if you could send me the report by Friday."
-    },
-    {
-      "id": "s20",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "We had a wonderful time at the Niagara Falls last weekend."
-    },
-    {
-      "id": "s21",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "In my opinion, volunteering is a great way to meet new people."
-    },
-    {
-      "id": "s22",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The temperature is expected to drop below zero tonight."
-    },
-    {
-      "id": "s23",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I need to find a reliable mechanic to fix my car's brakes."
-    },
-    {
-      "id": "s24",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "Could you please repeat that? I didn't quite catch what you said."
-    },
-    {
-      "id": "s25",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The registration deadline for the summer program is April fifteenth."
-    },
-    {
-      "id": "s26",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I strongly believe that education is the key to a successful career."
-    },
-    {
-      "id": "s27",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "There has been a significant increase in housing prices over the past year."
-    },
-    {
-      "id": "s28",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I would like to transfer some money from my savings to my chequing account."
-    },
-    {
-      "id": "s29",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The library is open until nine o'clock on weekdays and closes at five on Saturdays."
-    },
-    {
-      "id": "s30",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "She has been working as a nurse at the hospital for over ten years."
-    },
-    {
-      "id": "s31",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The construction work on Main Street is causing a lot of traffic congestion."
-    },
-    {
-      "id": "s32",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I think the most important quality in a coworker is reliability."
-    },
-    {
-      "id": "s33",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "We are planning to visit relatives in Montreal during the holidays."
-    },
-    {
-      "id": "s34",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The customer service representative was very helpful and resolved my issue quickly."
-    },
-    {
-      "id": "s35",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I have recently completed a certificate program in project management."
-    },
-    {
-      "id": "s36",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The parking lot behind the building is reserved for employees only."
-    },
-    {
-      "id": "s37",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "One of the biggest challenges of moving to a new country is learning the language."
-    },
-    {
-      "id": "s38",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "I prefer working from home because it saves me time on commuting."
-    },
-    {
-      "id": "s39",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "The government has announced new regulations regarding workplace safety."
-    },
-    {
-      "id": "s40",
-      "cat": "speaking",
-      "type": "speak",
-      "prompt": "Could you please let me know if there are any available appointments this week?"
     },
     {
       "id": "v41",
@@ -3969,782 +2609,1302 @@
       "ans": 3
     },
     {
-      "id": "r41",
-      "cat": "reading",
+      "id": 400,
+      "cat": "idioms",
       "type": "choose",
-      "q": "The new policy requires all employees to complete safety training within 30 days of hiring. Failure to comply may result in suspension without pay. What happens if an employee doesn't complete the training?",
+      "q": "What does 'break the ice' mean?",
       "opts": [
-        "They receive a warning letter",
-        "They may be suspended without pay",
-        "They are immediately terminated",
-        "They must pay a fine"
+        "Destroy something cold",
+        "Start a conversation",
+        "Take a break",
+        "Cool down"
       ],
       "ans": 1
     },
     {
-      "id": "r42",
-      "cat": "reading",
+      "id": 401,
+      "cat": "idioms",
       "type": "choose",
-      "q": "Canada's Express Entry system ranks candidates using the Comprehensive Ranking System (CRS). Candidates with the highest scores receive invitations to apply for permanent residency. What determines who gets invited?",
+      "q": "What does 'hit the nail on the head' mean?",
       "opts": [
-        "The date of application",
-        "The candidate's age only",
-        "The CRS score ranking",
-        "The province of residence"
+        "Hurt yourself",
+        "Build something",
+        "Be exactly right",
+        "Work hard"
       ],
       "ans": 2
     },
     {
-      "id": "r43",
-      "cat": "reading",
+      "id": 402,
+      "cat": "idioms",
       "type": "choose",
-      "q": "The community centre will be closed for renovations from March 1 to April 15. Members can use the temporary facility on Oak Street during this period. Where should members go during the closure?",
+      "q": "What does 'let the cat out of the bag' mean?",
       "opts": [
-        "To the main library",
-        "To the temporary facility on Oak Street",
-        "To another community centre",
-        "They must wait until April 15"
+        "Release an animal",
+        "Reveal a secret",
+        "Make a mistake",
+        "Start over"
       ],
       "ans": 1
     },
     {
-      "id": "r44",
-      "cat": "reading",
+      "id": 403,
+      "cat": "idioms",
       "type": "choose",
-      "q": "Tenants in Ontario must give their landlord at least 60 days' written notice before moving out. The notice must be effective on the last day of a rental period. What is the minimum notice a tenant must give?",
+      "q": "What does 'bite the bullet' mean?",
       "opts": [
-        "30 days",
-        "45 days",
-        "60 days",
-        "90 days"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r45",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The company's parental leave policy allows new parents to take up to 18 months of leave. However, only the first 12 months are paid at 55% of the employee's salary. How much of the 18-month leave is paid?",
-      "opts": [
-        "The full 18 months",
-        "The first 6 months",
-        "The first 12 months",
-        "None of it"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r46",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Studies show that bilingual individuals often have better cognitive flexibility than monolinguals. This advantage is particularly noticeable in tasks requiring switching between different rules. What benefit do bilingual people tend to have?",
-      "opts": [
-        "Higher IQ scores",
-        "Better physical health",
-        "Greater cognitive flexibility",
-        "Stronger memory only"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r47",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The transit authority announced a fare increase of 10 cents per ride starting January 1. Monthly pass holders, however, will not see any change until March. When will monthly pass prices change?",
-      "opts": [
-        "January 1",
-        "February 1",
-        "March",
-        "They will not change"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r48",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Recycling contamination occurs when non-recyclable items are placed in recycling bins. This can cause entire loads to be sent to landfill. What is the consequence of putting wrong items in recycling?",
-      "opts": [
-        "The items are sorted manually",
-        "Entire loads may go to landfill",
-        "The recycling company charges extra",
-        "Nothing significant happens"
+        "Eat something hard",
+        "Face something difficult bravely",
+        "Make a quick decision",
+        "Fight back"
       ],
       "ans": 1
     },
     {
-      "id": "r49",
-      "cat": "reading",
+      "id": 404,
+      "cat": "idioms",
       "type": "choose",
-      "q": "The Canadian Charter of Rights and Freedoms guarantees freedom of expression, but this right is not absolute. It can be limited by laws that are considered reasonable in a free and democratic society. What limits freedom of expression in Canada?",
+      "q": "What does 'cost an arm and a leg' mean?",
       "opts": [
-        "Nothing — it is an absolute right",
-        "Only criminal laws",
-        "Laws considered reasonable in a democratic society",
-        "Provincial regulations only"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r50",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Employees who work overtime on statutory holidays are entitled to 1.5 times their regular pay rate. If overtime falls on a regular workday, the rate is 1.5 times only after 44 hours in a week. When does overtime pay at 1.5x apply on regular workdays?",
-      "opts": [
-        "After 8 hours in a day",
-        "After 40 hours in a week",
-        "After 44 hours in a week",
-        "On any day the employee works overtime"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r51",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The local library is introducing a new digital lending program. Patrons can borrow up to five e-books at a time for a period of 21 days, with the option to renew once if no one else has placed a hold. How many e-books can a patron borrow at once?",
-      "opts": [
-        "Three",
-        "Five",
-        "Seven",
-        "Unlimited"
+        "Cause injury",
+        "Be very expensive",
+        "Require effort",
+        "Take a long time"
       ],
       "ans": 1
     },
     {
-      "id": "r52",
-      "cat": "reading",
+      "id": 405,
+      "cat": "idioms",
       "type": "choose",
-      "q": "Climate change has led to shorter winters in many parts of Canada, which has impacted the maple syrup industry. Warmer temperatures cause trees to bud earlier, reducing the sap collection window. What effect has climate change had on maple syrup production?",
+      "q": "What does 'piece of cake' mean?",
       "opts": [
-        "It has increased production",
-        "It has reduced the sap collection period",
-        "It has improved sap quality",
-        "It has had no effect"
+        "A dessert",
+        "Something very easy",
+        "A reward",
+        "A small amount"
       ],
       "ans": 1
     },
     {
-      "id": "r53",
-      "cat": "reading",
+      "id": 406,
+      "cat": "idioms",
       "type": "choose",
-      "q": "Under Canadian law, employers must provide employees with a 30-minute meal break after every five consecutive hours of work. This break may be paid or unpaid depending on whether the employee is free to leave the workplace. What determines whether the meal break is paid?",
+      "q": "What does 'under the weather' mean?",
       "opts": [
-        "The length of the shift",
-        "The employee's seniority",
-        "Whether the employee can leave the workplace",
-        "The employer's preference"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r54",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The settlement agency offers free language assessment tests for newcomers. Results help determine the appropriate language class level. Tests are available in English and French by appointment only. How can newcomers access the language assessment?",
-      "opts": [
-        "Walk in anytime",
-        "Online only",
-        "By appointment",
-        "Through their employer"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r55",
-      "cat": "reading",
-      "type": "choose",
-      "q": "According to the lease agreement, the landlord is responsible for major repairs such as plumbing, heating, and structural issues. Tenants are responsible for minor maintenance like replacing light bulbs and keeping the unit clean. Who handles plumbing repairs?",
-      "opts": [
-        "The tenant",
-        "The landlord",
-        "A third-party company",
-        "Either party"
+        "Outside in rain",
+        "Feeling sick",
+        "Unprepared",
+        "Depressed"
       ],
       "ans": 1
     },
     {
-      "id": "r56",
-      "cat": "reading",
+      "id": 407,
+      "cat": "idioms",
       "type": "choose",
-      "q": "A recent survey found that 67% of Canadian employers consider soft skills more important than technical skills when hiring. Communication, teamwork, and problem-solving were the most valued traits. Which soft skill was NOT mentioned as most valued?",
+      "q": "What does 'on the same page' mean?",
       "opts": [
-        "Communication",
-        "Teamwork",
-        "Problem-solving",
-        "Time management"
+        "Reading together",
+        "In agreement",
+        "At the same place",
+        "Equally smart"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 408,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'the ball is in your court' mean?",
+      "opts": [
+        "You are playing sports",
+        "It's your decision now",
+        "You lost something",
+        "You need to practice"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 409,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'burn the midnight oil' mean?",
+      "opts": [
+        "Waste resources",
+        "Work late at night",
+        "Cook dinner",
+        "Start a fire"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 410,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'cut corners' mean?",
+      "opts": [
+        "Do something carelessly to save time",
+        "Be precise",
+        "Turn around",
+        "Reduce size"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 411,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'go the extra mile' mean?",
+      "opts": [
+        "Travel far",
+        "Exercise more",
+        "Make more effort than expected",
+        "Take a detour"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 412,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'pull someone's leg' mean?",
+      "opts": [
+        "Help someone walk",
+        "Joke with someone",
+        "Hurt someone",
+        "Drag someone"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 413,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'spill the beans' mean?",
+      "opts": [
+        "Make a mess",
+        "Reveal secret information",
+        "Cook badly",
+        "Waste food"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 414,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'once in a blue moon' mean?",
+      "opts": [
+        "At night",
+        "Very rarely",
+        "When sad",
+        "Monthly"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 415,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'call it a day' mean?",
+      "opts": [
+        "Name something",
+        "Stop working for now",
+        "Start fresh",
+        "Make a phone call"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 416,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'get cold feet' mean?",
+      "opts": [
+        "Feel cold",
+        "Become nervous and hesitate",
+        "Walk barefoot",
+        "Catch a cold"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 417,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'miss the boat' mean?",
+      "opts": [
+        "Arrive late at the dock",
+        "Miss an opportunity",
+        "Feel seasick",
+        "Forget directions"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 418,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'sit on the fence' mean?",
+      "opts": [
+        "Rest outside",
+        "Be unable to decide",
+        "Guard a property",
+        "Be lazy"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 419,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'a blessing in disguise' mean?",
+      "opts": [
+        "A hidden gift",
+        "Something bad that turns out good",
+        "A religious event",
+        "A costume"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 420,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'barking up the wrong tree' mean?",
+      "opts": [
+        "Being loud",
+        "Pursuing the wrong course",
+        "Climbing",
+        "Scaring animals"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 421,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'kill two birds with one stone' mean?",
+      "opts": [
+        "Be violent",
+        "Achieve two things at once",
+        "Hunt efficiently",
+        "Be lucky"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 422,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'blow off steam' mean?",
+      "opts": [
+        "Cook something",
+        "Release built-up stress",
+        "Breathe heavily",
+        "Run fast"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 423,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'give the benefit of the doubt' mean?",
+      "opts": [
+        "Be generous",
+        "Trust someone despite uncertainty",
+        "Doubt someone",
+        "Give money"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 424,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'hit the books' mean?",
+      "opts": [
+        "Destroy books",
+        "Study hard",
+        "Go to library",
+        "Slam something"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 425,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'in hot water' mean?",
+      "opts": [
+        "Taking a bath",
+        "In serious trouble",
+        "Feeling warm",
+        "Swimming"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 426,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'the last straw' mean?",
+      "opts": [
+        "The final drink",
+        "The final thing that causes failure",
+        "The remaining item",
+        "A weak argument"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 427,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'keep your chin up' mean?",
+      "opts": [
+        "Look upward",
+        "Stay positive",
+        "Exercise your neck",
+        "Be proud"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 428,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'by the skin of your teeth' mean?",
+      "opts": [
+        "With good dental care",
+        "Just barely",
+        "With great effort",
+        "Painfully"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 429,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'throw in the towel' mean?",
+      "opts": [
+        "Do laundry",
+        "Give up",
+        "Take a shower",
+        "Clean up"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 430,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'beat around the bush' mean?",
+      "opts": [
+        "Garden work",
+        "Avoid saying something directly",
+        "Search thoroughly",
+        "Win easily"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 431,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'wrap your head around' mean?",
+      "opts": [
+        "Wear a hat",
+        "Understand something complex",
+        "Think in circles",
+        "Cover your head"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 432,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'get out of hand' mean?",
+      "opts": [
+        "Drop something",
+        "Become uncontrollable",
+        "Let go",
+        "Escape"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 433,
+      "cat": "idioms",
+      "type": "choose",
+      "q": "What does 'see eye to eye' mean?",
+      "opts": [
+        "Stand close",
+        "Agree completely",
+        "Look at each other",
+        "Have good vision"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 434,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has a grammar error?",
+      "opts": [
+        "She has been working here since 2020.",
+        "He don't like coffee.",
+        "They are going to the park.",
+        "We have finished the project."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 435,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "Me and him went to the store.",
+        "Him and I went to the store.",
+        "He and I went to the store.",
+        "Him and me went to the store."
+      ],
+      "ans": 2
+    },
+    {
+      "id": 436,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has a grammar error?",
+      "opts": [
+        "If I were you, I would study more.",
+        "She suggested that he goes early.",
+        "They have been waiting for an hour.",
+        "He asked whether she was coming."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 437,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "There going to the mall.",
+        "Their going to the mall.",
+        "They're going to the mall.",
+        "Theyre going to the mall."
+      ],
+      "ans": 2
+    },
+    {
+      "id": 438,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'Each of the students have their own locker.'",
+      "opts": [
+        "Each",
+        "have",
+        "their",
+        "own"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 439,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'The team are playing good today.'",
+      "opts": [
+        "team",
+        "are",
+        "good",
+        "today"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 440,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "She is taller than me.",
+        "I could of gone to the party.",
+        "He rarely eats out.",
+        "We need to discuss this further."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 441,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'Neither the teacher nor the students was ready.'",
+      "opts": [
+        "Neither",
+        "nor",
+        "was",
+        "ready"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 442,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "I seen him yesterday.",
+        "I saw him yesterday.",
+        "I have saw him yesterday.",
+        "I was seen him yesterday."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 443,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'She speaks English more better than before.'",
+      "opts": [
+        "speaks",
+        "more better",
+        "than",
+        "before"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 444,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "The data shows a clear trend.",
+        "He gave the book to she.",
+        "We will arrive by noon.",
+        "They completed the task on time."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 445,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'I am looking forward to hear from you.'",
+      "opts": [
+        "am looking",
+        "forward to",
+        "hear",
+        "from you"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 446,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "He did good on the test.",
+        "He did well on the test.",
+        "He done well on the test.",
+        "He did good in the test."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 447,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'She don't know nothing about it.'",
+      "opts": [
+        "don't",
+        "know",
+        "nothing",
+        "about"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 448,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "Please lay down on the bed.",
+        "Please lie down on the bed.",
+        "He has lain there all day.",
+        "She laid the book on the table."
+      ],
+      "ans": 0
+    },
+    {
+      "id": 449,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'Between you and I, this is a secret.'",
+      "opts": [
+        "Between",
+        "you and I",
+        "this is",
+        "a secret"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 450,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "Who did you give it to?",
+        "Whom did you give it to?",
+        "To who did you give it?",
+        "Who you gave it to?"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 451,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'The amount of people at the concert was huge.'",
+      "opts": [
+        "amount",
+        "people",
+        "concert",
+        "huge"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 452,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "She is less taller than her sister.",
+        "He runs faster than me.",
+        "This is the best option.",
+        "They work harder than us."
+      ],
+      "ans": 0
+    },
+    {
+      "id": 453,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'He insisted on me to come early.'",
+      "opts": [
+        "insisted",
+        "on",
+        "me to come",
+        "early"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 454,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "Its a beautiful day.",
+        "It's a beautiful day.",
+        "Its' a beautiful day.",
+        "Itsss a beautiful day."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 455,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'I wish I was taller.'",
+      "opts": [
+        "wish",
+        "I",
+        "was",
+        "taller"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 456,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "He speaks very quick.",
+        "She sings beautifully.",
+        "They arrived promptly.",
+        "We responded immediately."
+      ],
+      "ans": 0
+    },
+    {
+      "id": 457,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'The news are shocking today.'",
+      "opts": [
+        "news",
+        "are",
+        "shocking",
+        "today"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 458,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "Less people came today.",
+        "Fewer people came today.",
+        "Lesser people came today.",
+        "Little people came today."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 459,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'She was laying in bed all morning.'",
+      "opts": [
+        "was",
+        "laying",
+        "in bed",
+        "all morning"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 460,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "I could hardly wait.",
+        "She can barely see.",
+        "He can not barely walk.",
+        "They could scarcely believe it."
+      ],
+      "ans": 2
+    },
+    {
+      "id": 461,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'He gave advices about the project.'",
+      "opts": [
+        "gave",
+        "advices",
+        "about",
+        "project"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 462,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "That's a ten-minutes walk.",
+        "That's a ten-minute walk.",
+        "That's a ten minutes walk.",
+        "That's a ten-minute's walk."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 463,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'Every students must submit their homework.'",
+      "opts": [
+        "Every",
+        "students",
+        "submit",
+        "their"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 464,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence has an error?",
+      "opts": [
+        "He is more smarter than his brother.",
+        "She is the tallest in her class.",
+        "This book is better than that one.",
+        "It was the worst day of my life."
+      ],
+      "ans": 0
+    },
+    {
+      "id": 465,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Spot the error: 'She explained me the situation.'",
+      "opts": [
+        "explained",
+        "me",
+        "the",
+        "situation"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 466,
+      "cat": "error_spotting",
+      "type": "choose",
+      "q": "Which sentence is CORRECT?",
+      "opts": [
+        "I look forward to meet you.",
+        "I look forward to meeting you.",
+        "I look forward for meeting you.",
+        "I look forward meet you."
+      ],
+      "ans": 1
+    },
+    {
+      "id": 467,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'make a ___'",
+      "opts": [
+        "homework",
+        "decision",
+        "sport",
+        "fun"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 468,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'do your ___'",
+      "opts": [
+        "decision",
+        "bed",
+        "homework",
+        "suggestion"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 469,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'take a ___'",
+      "opts": [
+        "decision",
+        "photo",
+        "homework",
+        "appointment"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 470,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'pay ___'",
+      "opts": [
+        "a visit",
+        "a look",
+        "a thought",
+        "a try"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 471,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'have a ___ time'",
+      "opts": [
+        "strong",
+        "heavy",
+        "hard",
+        "big"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 472,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'make ___'",
+      "opts": [
+        "a mistake",
+        "a fault",
+        "an error check",
+        "a wrong"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 473,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'heavy ___'",
+      "opts": [
+        "cold",
+        "rain",
+        "sick",
+        "bright"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 474,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'strong ___'",
+      "opts": [
+        "rain",
+        "wind",
+        "temperature",
+        "cloud"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 475,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'catch a ___'",
+      "opts": [
+        "disease",
+        "cold",
+        "fever",
+        "pain"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 476,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'run a ___'",
+      "opts": [
+        "company",
+        "job",
+        "work",
+        "career"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 477,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'break the ___'",
+      "opts": [
+        "rule",
+        "law",
+        "record",
+        "all of these"
       ],
       "ans": 3
     },
     {
-      "id": "r57",
-      "cat": "reading",
+      "id": 478,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The pharmacy closes at 9 PM on weekdays but offers an after-hours emergency line. Prescriptions called in before 8 PM will be ready for same-day pickup. By when must prescriptions be called in for same-day service?",
+      "q": "Complete: 'keep a ___'",
       "opts": [
-        "7 PM",
-        "8 PM",
-        "9 PM",
-        "There is no deadline"
+        "silence",
+        "secret",
+        "quiet",
+        "hidden"
       ],
       "ans": 1
     },
     {
-      "id": "r58",
-      "cat": "reading",
+      "id": 479,
+      "cat": "collocations",
       "type": "choose",
-      "q": "Canada's Official Languages Act ensures that federal services are available in both English and French. However, this requirement applies only to federal institutions, not to provincial or municipal services. Which services must be bilingual under the Act?",
+      "q": "Complete: 'come to a ___'",
       "opts": [
-        "All Canadian services",
-        "Federal services only",
-        "Provincial services only",
-        "Municipal services"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r59",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The co-op board has approved a new pet policy. Residents may keep one cat or one dog under 25 kilograms. All pets must be registered with the building management within 30 days. What is the weight limit for dogs?",
-      "opts": [
-        "15 kilograms",
-        "20 kilograms",
-        "25 kilograms",
-        "30 kilograms"
+        "stop",
+        "conclusion",
+        "both A and B",
+        "none"
       ],
       "ans": 2
     },
     {
-      "id": "r60",
-      "cat": "reading",
+      "id": 480,
+      "cat": "collocations",
       "type": "choose",
-      "q": "Immigrant professionals often face credential recognition challenges in Canada. Foreign degrees may need to be assessed by a designated organization before the holder can practise in their field. What must happen before foreign professionals can work in their field?",
+      "q": "Complete: 'deeply ___'",
       "opts": [
-        "They must retake their degree",
-        "Their credentials may need assessment",
-        "They must pass a language test only",
-        "Nothing — all foreign degrees are accepted"
+        "happy",
+        "concerned",
+        "nice",
+        "good"
       ],
       "ans": 1
     },
     {
-      "id": "r61",
-      "cat": "reading",
+      "id": 481,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The school district has implemented a new anti-bullying program that includes peer mediation. Students trained as mediators help resolve conflicts before they escalate. Reports of bullying have dropped by 30% since the program began. By how much did bullying reports decrease?",
+      "q": "Complete: 'highly ___'",
       "opts": [
-        "10%",
-        "20%",
-        "30%",
-        "40%"
+        "tall",
+        "recommended",
+        "good",
+        "nice"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 482,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'utterly ___'",
+      "opts": [
+        "beautiful",
+        "ridiculous",
+        "nice",
+        "good"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 483,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'get ___ of'",
+      "opts": [
+        "free",
+        "rid",
+        "away",
+        "off"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 484,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'raise ___'",
+      "opts": [
+        "awareness",
+        "knowledge",
+        "education",
+        "learning"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 485,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'draw ___'",
+      "opts": [
+        "a result",
+        "a conclusion",
+        "an end",
+        "a finish"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 486,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'give someone a ___'",
+      "opts": [
+        "help",
+        "hand",
+        "assist",
+        "support"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 487,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'meet a ___'",
+      "opts": [
+        "date",
+        "time",
+        "deadline",
+        "schedule"
       ],
       "ans": 2
     },
     {
-      "id": "r62",
-      "cat": "reading",
+      "id": 488,
+      "cat": "collocations",
       "type": "choose",
-      "q": "Driving in Canada during winter requires special precautions. Many provinces mandate winter tires between October and March. Fines for non-compliance can range from $200 to $600. What is the maximum fine for not having winter tires where required?",
+      "q": "Complete: 'save ___'",
       "opts": [
-        "$200",
-        "$400",
-        "$500",
-        "$600"
+        "time",
+        "hours",
+        "moments",
+        "periods"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 489,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'pose a ___'",
+      "opts": [
+        "question",
+        "threat",
+        "both A and B",
+        "none"
+      ],
+      "ans": 2
+    },
+    {
+      "id": 490,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'commit a ___'",
+      "opts": [
+        "mistake",
+        "crime",
+        "fault",
+        "wrong"
+      ],
+      "ans": 1
+    },
+    {
+      "id": 491,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'take ___ in'",
+      "opts": [
+        "proud",
+        "pride",
+        "pleasure",
+        "both B and C"
       ],
       "ans": 3
     },
     {
-      "id": "r63",
-      "cat": "reading",
+      "id": 492,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The volunteer coordinator mentioned that shifts run from 9 AM to 1 PM and from 2 PM to 6 PM. Volunteers must commit to at least two shifts per week for a minimum of three months. What is the minimum commitment period?",
+      "q": "Complete: 'make ___'",
       "opts": [
-        "One month",
-        "Two months",
-        "Three months",
-        "Six months"
+        "progress",
+        "advance",
+        "improvement",
+        "development"
       ],
-      "ans": 2
+      "ans": 0
     },
     {
-      "id": "r64",
-      "cat": "reading",
+      "id": 493,
+      "cat": "collocations",
       "type": "choose",
-      "q": "Research suggests that remote work increases productivity by 13% on average. However, it can also lead to feelings of isolation among employees who lack regular social interaction. What negative effect can remote work have?",
+      "q": "Complete: 'reach an ___'",
       "opts": [
-        "Reduced productivity",
-        "Lower salaries",
-        "Feelings of isolation",
-        "Increased commuting"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r65",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The warranty covers manufacturing defects for two years from the date of purchase. Physical damage caused by misuse is not covered. Customers must retain their original receipt to make a claim. What is NOT covered by the warranty?",
-      "opts": [
-        "Manufacturing defects",
-        "Electrical malfunctions",
-        "Physical damage from misuse",
-        "Internal component failures"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r66",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The Canadian government provides a one-time grant of up to $500 through the Canada Learning Bond for children from low-income families. Additional payments of $100 per year are made until the child turns 15. When do the annual payments stop?",
-      "opts": [
-        "Age 12",
-        "Age 15",
-        "Age 18",
-        "Age 21"
+        "end",
+        "agreement",
+        "result",
+        "outcome"
       ],
       "ans": 1
     },
     {
-      "id": "r67",
-      "cat": "reading",
+      "id": 494,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The company dress code states that business casual is acceptable Monday through Thursday. On Fridays, employees may wear jeans and casual shirts. Client-facing staff must always dress in business formal. What must client-facing staff wear?",
+      "q": "Complete: 'set a ___'",
       "opts": [
-        "Business casual",
-        "Jeans on Fridays",
-        "Business formal always",
-        "Whatever they prefer"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r68",
-      "cat": "reading",
-      "type": "choose",
-      "q": "To open a bank account in Canada, newcomers typically need two pieces of identification. A passport and a permanent resident card are commonly accepted. Some banks may also require proof of address. How many IDs are usually required?",
-      "opts": [
-        "One",
-        "Two",
-        "Three",
-        "Four"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r69",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The city has introduced a composting program for all single-family homes. Green bins are collected every week between April and November, and every two weeks during winter months. How often are green bins collected in winter?",
-      "opts": [
-        "Every week",
-        "Every two weeks",
-        "Once a month",
-        "Not at all in winter"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r70",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The Employee Assistance Program (EAP) provides confidential counselling services at no cost to employees. Services include mental health support, financial advice, and legal consultation. Sessions are limited to six per issue per year. How many sessions per issue are available annually?",
-      "opts": [
-        "Three",
-        "Four",
-        "Six",
-        "Unlimited"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r71",
-      "cat": "reading",
-      "type": "choose",
-      "q": "A study from the University of British Columbia found that exposure to green spaces reduces stress hormones by up to 20%. Urban planners are now incorporating more parks into city designs. By how much can green spaces reduce stress hormones?",
-      "opts": [
-        "Up to 10%",
-        "Up to 15%",
-        "Up to 20%",
-        "Up to 25%"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r72",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The conference registration fee includes access to all keynote speeches and workshops. Meals are provided on the first day only. Participants who wish to attend the networking dinner must pay an additional $75. What costs extra?",
-      "opts": [
-        "Keynote speeches",
-        "Workshops",
-        "Meals on the first day",
-        "The networking dinner"
+        "time",
+        "date",
+        "goal",
+        "all of these"
       ],
       "ans": 3
     },
     {
-      "id": "r73",
-      "cat": "reading",
+      "id": 495,
+      "cat": "collocations",
       "type": "choose",
-      "q": "In British Columbia, employers must pay employees within 48 hours of their last day of work if they are terminated. If an employee quits, wages must be paid within six days. How soon must a terminated employee be paid?",
+      "q": "Complete: 'place an ___'",
       "opts": [
-        "Immediately",
-        "Within 24 hours",
-        "Within 48 hours",
-        "Within one week"
+        "order",
+        "ask",
+        "demand",
+        "inquiry"
+      ],
+      "ans": 0
+    },
+    {
+      "id": 496,
+      "cat": "collocations",
+      "type": "choose",
+      "q": "Complete: 'face the ___'",
+      "opts": [
+        "truth",
+        "consequences",
+        "both A and B",
+        "results"
       ],
       "ans": 2
     },
     {
-      "id": "r74",
-      "cat": "reading",
+      "id": 497,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The apartment building has implemented a quiet hours policy from 10 PM to 7 AM. Violations may result in a written warning for the first offence and a fine for subsequent offences. What happens on the first violation?",
+      "q": "Complete: 'hold a ___'",
       "opts": [
-        "A fine is issued",
-        "The tenant is evicted",
-        "A written warning is given",
-        "Nothing happens"
+        "meeting",
+        "gathering",
+        "both A and B",
+        "party"
       ],
       "ans": 2
     },
     {
-      "id": "r75",
-      "cat": "reading",
+      "id": 498,
+      "cat": "collocations",
       "type": "choose",
-      "q": "Canada Post delivers mail Monday through Friday in most areas. Saturday delivery is available only for certain express and priority services. Regular mail is not delivered on weekends or statutory holidays. When is regular mail NOT delivered?",
+      "q": "Complete: 'gain ___'",
       "opts": [
-        "Mondays",
-        "Fridays",
-        "Weekends and statutory holidays",
-        "It is delivered every day"
+        "experience",
+        "knowledge",
+        "both A and B",
+        "education"
       ],
       "ans": 2
     },
     {
-      "id": "r76",
-      "cat": "reading",
+      "id": 499,
+      "cat": "collocations",
       "type": "choose",
-      "q": "The training manual states that new hires must shadow a senior employee for their first two weeks. After shadowing, they complete an online assessment before being assigned independent tasks. What follows the two-week shadowing period?",
+      "q": "Complete: 'bear in ___'",
       "opts": [
-        "Independent work immediately",
-        "A group project",
-        "An online assessment",
-        "A performance review"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r77",
-      "cat": "reading",
-      "type": "choose",
-      "q": "According to Statistics Canada, the country's population surpassed 40 million in 2023. Immigration accounted for approximately 98% of that year's population growth. What drove most of Canada's population growth in 2023?",
-      "opts": [
-        "Birth rates",
-        "Internal migration",
-        "Immigration",
-        "Longer life expectancy"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r78",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The museum offers free admission on the first Sunday of every month. Group tours of 10 or more people receive a 20% discount at any time. Students with valid ID get 50% off. What discount do student visitors receive?",
-      "opts": [
-        "20% off",
-        "30% off",
-        "Free admission",
-        "50% off"
-      ],
-      "ans": 3
-    },
-    {
-      "id": "r79",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Water conservation measures in Calgary require residents to water their lawns only on designated days. Even-numbered addresses water on Wednesdays and Saturdays, while odd-numbered addresses water on Thursdays and Sundays. When can a house numbered 42 water its lawn?",
-      "opts": [
-        "Thursdays and Sundays",
-        "Mondays and Fridays",
-        "Wednesdays and Saturdays",
-        "Any day"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r80",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The HR department announced that performance reviews will now be conducted quarterly instead of annually. Managers must submit feedback forms within five business days of each review meeting. How often are performance reviews conducted now?",
-      "opts": [
-        "Monthly",
-        "Quarterly",
-        "Semi-annually",
-        "Annually"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r81",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The daycare centre requires children to be picked up by 6 PM. A late fee of $10 is charged for every 15 minutes past the deadline. Parents who are late three times may lose their child's spot. How much is the late fee per 15 minutes?",
-      "opts": [
-        "$5",
-        "$10",
-        "$15",
-        "$20"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r82",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Canadian banks are required to offer a basic low-cost account to all Canadians. These accounts typically have a low monthly fee or are free, and include at least 12 transactions per month. What is the minimum number of transactions included?",
-      "opts": [
-        "5",
-        "8",
-        "10",
-        "12"
-      ],
-      "ans": 3
-    },
-    {
-      "id": "r83",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The food bank distributes hampers every Tuesday and Thursday from 10 AM to 2 PM. First-time visitors must bring photo identification and proof of address. Returning clients need only their client card. What must first-time visitors bring?",
-      "opts": [
-        "Only a client card",
-        "Photo ID and proof of address",
-        "A referral letter",
-        "Nothing — just show up"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r84",
-      "cat": "reading",
-      "type": "choose",
-      "q": "A memo from the IT department warns that phishing emails have increased by 40% this quarter. Employees should not click on suspicious links and must report any unusual emails to IT immediately. By how much have phishing emails increased?",
-      "opts": [
-        "20%",
-        "30%",
-        "40%",
-        "50%"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r85",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The provincial health plan covers most medically necessary services, including doctor visits and hospital stays. Dental care, vision care, and prescription drugs are generally not covered. Which service is typically NOT covered?",
-      "opts": [
-        "Doctor visits",
-        "Hospital stays",
-        "Emergency surgery",
-        "Dental care"
-      ],
-      "ans": 3
-    },
-    {
-      "id": "r86",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The parking garage offers monthly passes at $150 or daily rates of $12. The garage is open from 6 AM to midnight. Vehicles left after midnight may be towed at the owner's expense. What happens to vehicles left after midnight?",
-      "opts": [
-        "They are charged double",
-        "They receive a ticket",
-        "They may be towed",
-        "Nothing happens"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r87",
-      "cat": "reading",
-      "type": "choose",
-      "q": "New immigrants to Canada can access free settlement services, including language training, help finding a job, and orientation to life in Canada. These services are funded by the federal government through Immigration, Refugees and Citizenship Canada. Who funds settlement services?",
-      "opts": [
-        "Provincial governments",
-        "Municipal governments",
-        "The federal government",
-        "Non-profit organizations"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r88",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The airline's carry-on policy allows one personal item and one standard bag. The standard bag must not exceed 23 cm x 40 cm x 55 cm. Items exceeding these dimensions must be checked. How many carry-on items are permitted?",
-      "opts": [
-        "One",
-        "Two",
-        "Three",
-        "No limit"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r89",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The neighbourhood watch program meets on the last Wednesday of every month at the community hall. Residents are encouraged to report suspicious activity by calling the non-emergency police line. When does the group meet?",
-      "opts": [
-        "Every Wednesday",
-        "The first Wednesday of each month",
-        "The last Wednesday of each month",
-        "Every other Wednesday"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r90",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Service Canada processes Social Insurance Number (SIN) applications at its offices across the country. Processing is immediate when done in person with proper documentation. By mail, it takes approximately 20 business days. How long does SIN processing take by mail?",
-      "opts": [
-        "5 business days",
-        "10 business days",
-        "15 business days",
-        "20 business days"
-      ],
-      "ans": 3
-    },
-    {
-      "id": "r91",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The company's travel policy reimburses economy-class airfare for domestic trips. Business class is permitted only for flights longer than six hours. All bookings must be made through the corporate travel portal. When is business class allowed?",
-      "opts": [
-        "For international trips only",
-        "For flights over four hours",
-        "For flights over six hours",
-        "Never"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r92",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The City of Toronto requires all rental properties to be registered with the municipal licensing department. Landlords who fail to register face fines of up to $10,000. Registration must be renewed annually. What is the maximum fine for not registering?",
-      "opts": [
-        "$1,000",
-        "$5,000",
-        "$10,000",
-        "$25,000"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r93",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The scholarship is available to full-time students with a GPA of 3.5 or higher. Applicants must also demonstrate financial need and community involvement. The deadline for applications is November 30. What GPA is required for the scholarship?",
-      "opts": [
-        "3.0",
-        "3.2",
-        "3.5",
-        "3.8"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r94",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Electric vehicles (EVs) are becoming increasingly popular in Canada. The federal government offers a rebate of up to $5,000 for eligible EV purchases. Some provinces provide additional incentives on top of the federal rebate. How much is the federal EV rebate?",
-      "opts": [
-        "Up to $2,500",
-        "Up to $3,000",
-        "Up to $5,000",
-        "Up to $7,500"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r95",
-      "cat": "reading",
-      "type": "choose",
-      "q": "Workplace harassment complaints must be filed within one year of the incident. The employer is required to investigate within 90 days of receiving the complaint. Both parties are entitled to confidentiality during the process. What is the investigation deadline?",
-      "opts": [
-        "30 days",
-        "60 days",
-        "90 days",
-        "120 days"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r96",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The grocery store's loyalty program awards one point for every dollar spent. Once a customer accumulates 1,000 points, they receive a $10 discount. Points expire after 12 months of inactivity. When do loyalty points expire?",
-      "opts": [
-        "After 6 months",
-        "After 12 months of inactivity",
-        "After 24 months",
-        "They never expire"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r97",
-      "cat": "reading",
-      "type": "choose",
-      "q": "A notice on the elevator states that the building's fire alarm system will be tested on Thursday between 10 AM and 12 PM. Residents do not need to evacuate during the test but should expect intermittent alarm sounds. What should residents do during the test?",
-      "opts": [
-        "Evacuate immediately",
-        "Stay home and expect alarm sounds",
-        "Call the fire department",
-        "Go to the lobby"
-      ],
-      "ans": 1
-    },
-    {
-      "id": "r98",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The Canadian Pension Plan (CPP) provides retirement income to those who have contributed during their working years. The standard age to begin receiving CPP is 65, but you can start as early as 60 with a reduced amount. What is the earliest age to receive CPP?",
-      "opts": [
-        "55",
-        "58",
-        "60",
-        "62"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r99",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The yoga studio offers a drop-in rate of $18 per class or a 10-class pass for $140. The pass is valid for 90 days from the date of purchase. First-time visitors receive one free class. How much does a 10-class pass cost?",
-      "opts": [
-        "$100",
-        "$120",
-        "$140",
-        "$160"
-      ],
-      "ans": 2
-    },
-    {
-      "id": "r100",
-      "cat": "reading",
-      "type": "choose",
-      "q": "The hiring committee reviewed 200 applications and shortlisted 15 candidates for interviews. Of those, five were invited for a second round. The successful candidate will start on May 1. How many candidates reached the second round?",
-      "opts": [
-        "Three",
-        "Five",
-        "Ten",
-        "Fifteen"
+        "head",
+        "mind",
+        "brain",
+        "thought"
       ],
       "ans": 1
     }

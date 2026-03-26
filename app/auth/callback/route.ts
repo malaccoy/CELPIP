@@ -1,6 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
+import { PrismaClient } from '@prisma/client'
 
+const prisma = new PrismaClient()
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://celpipaicoach.com'
 
 export async function GET(request: Request) {
@@ -12,8 +14,9 @@ export async function GET(request: Request) {
     const supabase = await createClient()
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     if (!error) {
-      // Client-side redirect_after_login is handled by the dashboard/login page
-      return NextResponse.redirect(`${SITE_URL}${next}`)
+      // Save referral source from localStorage via client-side redirect
+      // We redirect to /auth/callback/save-ref which reads localStorage and saves it
+      return NextResponse.redirect(`${SITE_URL}/auth/callback/save-ref?next=${encodeURIComponent(next)}`)
     }
   }
 

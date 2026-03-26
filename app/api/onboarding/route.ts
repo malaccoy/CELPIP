@@ -83,6 +83,18 @@ export async function POST(request: Request) {
       }
     });
 
+    // Send welcome email (fire-and-forget)
+    try {
+      const user = await prisma.user.findUnique({ where: { id: userId }, select: { email: true, name: true } });
+      if (user?.email) {
+        fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'https://celpipaicoach.com'}/api/welcome-email`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: user.email, name: user.name, userId }),
+        }).catch(() => {});
+      }
+    } catch (_) {}
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('POST onboarding error:', error);

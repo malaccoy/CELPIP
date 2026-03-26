@@ -3,60 +3,32 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// GET — unsubscribe via link click (token in query)
 export async function GET(req: NextRequest) {
-  const token = req.nextUrl.searchParams.get('token');
-  const email = req.nextUrl.searchParams.get('email');
-
-  if (!token && !email) {
-    return NextResponse.json({ error: 'Missing token or email' }, { status: 400 });
-  }
+  const uid = req.nextUrl.searchParams.get('uid');
+  if (!uid) return new NextResponse(html('Invalid link'), { headers: { 'Content-Type': 'text/html' } });
 
   try {
-    if (token) {
-      await prisma.$queryRawUnsafe(
-        `UPDATE email_preferences SET unsubscribed = true, unsubscribed_at = NOW() WHERE token = $1`,
-        token
-      );
-    } else if (email) {
-      await prisma.$queryRawUnsafe(
-        `UPDATE email_preferences SET unsubscribed = true, unsubscribed_at = NOW() WHERE email = $1`,
-        email
-      );
-    }
-
-    // Redirect to unsubscribe confirmation page
-    return NextResponse.redirect(new URL('/unsubscribe?success=true', req.url));
-  } catch (e: unknown) {
-    console.error('Unsubscribe error:', e);
-    return NextResponse.redirect(new URL('/unsubscribe?error=true', req.url));
+    await prisma.$queryRawUnsafe(
+      `UPDATE email_sequence SET "unsubscribed" = true, "updatedAt" = NOW() WHERE "userId" = $1`,
+      uid
+    );
+  } catch (e) {
+    // ignore — maybe no entry yet
   }
+
+  return new NextResponse(html('You have been unsubscribed from CELPIP AI Coach emails. You can still use the platform at any time.'), {
+    headers: { 'Content-Type': 'text/html' },
+  });
 }
 
-// POST — unsubscribe via form / resubscribe
-export async function POST(req: NextRequest) {
-  const { email, action } = await req.json();
-
-  if (!email) {
-    return NextResponse.json({ error: 'Email required' }, { status: 400 });
-  }
-
-  try {
-    if (action === 'resubscribe') {
-      await prisma.$queryRawUnsafe(
-        `UPDATE email_preferences SET unsubscribed = false, unsubscribed_at = NULL WHERE email = $1`,
-        email
-      );
-      return NextResponse.json({ success: true, message: 'Resubscribed' });
-    }
-
-    await prisma.$queryRawUnsafe(
-      `UPDATE email_preferences SET unsubscribed = true, unsubscribed_at = NOW() WHERE email = $1`,
-      email
-    );
-    return NextResponse.json({ success: true, message: 'Unsubscribed' });
-  } catch (e: unknown) {
-    console.error('Unsubscribe error:', e);
-    return NextResponse.json({ error: 'Server error' }, { status: 500 });
-  }
+function html(msg: string) {
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Unsubscribe</title></head>
+  <body style="font-family:system-ui,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#f5f5f5;margin:0;">
+    <div style="background:white;border-radius:16px;padding:40px;max-width:400px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.1);">
+      <p style="font-size:48px;margin:0;">📧</p>
+      <h2 style="color:#333;">Unsubscribed</h2>
+      <p style="color:#666;">${msg}</p>
+      <a href="https://celpipaicoach.com" style="color:#e53e3e;text-decoration:none;font-weight:600;">← Back to CELPIP AI Coach</a>
+    </div>
+  </body></html>`;
 }
