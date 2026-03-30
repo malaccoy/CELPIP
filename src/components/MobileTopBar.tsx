@@ -4,7 +4,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { createClient } from '@/lib/supabase/client';
+import { useCurrentUser } from '@/hooks/useCurrentUser';
 import NotificationBell from '@/components/NotificationBell';
 
 const RiveIcon = dynamic(() => import('@/components/RiveIcon'), { ssr: false });
@@ -43,11 +43,11 @@ const animStyles = `
 
 export default function MobileTopBar() {
   const router = useRouter();
+  const { displayName, avatarUrl, isLoggedIn } = useCurrentUser();
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
-  const [userName, setUserName] = useState('');
-  const [userImage, setUserImage] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const userName = displayName.split(' ')[0];
+  const userImage = avatarUrl || '';
 
   useEffect(() => {
     // Stats from server API
@@ -55,18 +55,6 @@ export default function MobileTopBar() {
       if (d?.totalPoints) setXp(d.totalPoints);
     }).catch(() => {});
     fetch('/api/streak', { credentials: 'include' }).then(r => r.ok ? r.json() : null).then(d => d && setStreak(d.currentStreak ?? 0)).catch(() => {});
-    const supabase = createClient();
-    supabase.auth.getUser().then(({ data }: any) => {
-      const u = data?.user;
-      if (u) {
-        setIsLoggedIn(true);
-        const meta = u.user_metadata || {};
-        setUserName((meta.full_name || meta.name || u.email || '').split(' ')[0]);
-        setUserImage(meta.avatar_url || meta.picture || '');
-      } else {
-        setIsLoggedIn(false);
-      }
-    });
   }, []);
 
   const league = xp >= 500 ? 'Diamond' : xp >= 200 ? 'Gold' : xp >= 50 ? 'Silver' : 'Bronze';

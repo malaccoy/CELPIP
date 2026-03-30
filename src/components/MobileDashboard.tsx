@@ -11,6 +11,7 @@ import {
   TrendingUp, Play, Shield, Lock, Award,
 } from 'lucide-react';
 import { useContentAccess } from '@/hooks/useContentAccess';
+import { useCurrentUser } from '@/hooks/useCurrentUser';
 import NotificationBell from '@/components/NotificationBell';
 import SkillRadar from '@/components/SkillRadar';
 import dynamic from 'next/dynamic';
@@ -108,9 +109,9 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
   const [stats, setStats] = useState<any>(null);
   const [streakData, setStreakData] = useState<any>(null);
   const [dailyUsage, setDailyUsage] = useState<any>(null);
-  const [userName, setUserName] = useState('');
-  const [userImage, setUserImage] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const { displayName, avatarUrl, isLoggedIn } = useCurrentUser();
+  const userName = displayName.split(' ')[0];
+  const userImage = avatarUrl || '';
   const [myRank, setMyRank] = useState<number | null>(null);
 
   useEffect(() => {
@@ -153,26 +154,6 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         if (me) setMyRank(me.rank);
       }
     }).catch(() => {});
-    fetch('/api/plan').then(r => { if (!r.ok) { setIsLoggedIn(false); return null; } return r.json(); })
-      .then(d => { if (d) setIsLoggedIn(true); }).catch(() => setIsLoggedIn(false));
-
-    import('@/lib/supabase/client').then(({ createClient }) => {
-      const supabase = createClient();
-      const loadUser = (u: any) => {
-        if (u) {
-          setIsLoggedIn(true);
-          const meta = u.user_metadata || {};
-          setUserName((meta.full_name || meta.name || u.email || '').split(' ')[0]);
-          setUserImage(meta.avatar_url || meta.picture || '');
-        }
-      };
-      supabase.auth.getUser().then(({ data }: any) => loadUser(data?.user));
-      const { data: { subscription } } = supabase.auth.onAuthStateChange((_event: string, session: any) => {
-        if (session?.user) loadUser(session.user);
-        else { setIsLoggedIn(false); setUserName(''); setUserImage(''); }
-      });
-      return () => subscription?.unsubscribe();
-    });
   }, []);
 
   const [isLoading, setIsLoading] = useState(true);

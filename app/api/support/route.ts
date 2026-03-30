@@ -1,8 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkIpRateLimit } from '@/lib/ip-rate-limit';
+import { SupportTicketSchema, parseBody } from '@/lib/validations';
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_SUPPORT_CHAT_ID || '886662847';
+
+/** Strip HTML tags to prevent Telegram HTML injection */
+function sanitizeHtml(str: string): string {
+  return str.replace(/[<>&]/g, (c) =>
+    c === '<' ? '&lt;' : c === '>' ? '&gt;' : '&amp;'
+  );
+}
 
 async function sendTelegramNotification(data: {
   name: string;
@@ -15,12 +23,12 @@ async function sendTelegramNotification(data: {
   const text = [
     '🆘 <b>New Support Ticket</b>',
     '',
-    `👤 <b>Name:</b> ${data.name || 'Not provided'}`,
-    `📧 <b>Email:</b> ${data.email}`,
-    `📌 <b>Subject:</b> ${data.subject}`,
+    `👤 <b>Name:</b> ${sanitizeHtml(data.name || 'Not provided')}`,
+    `📧 <b>Email:</b> ${sanitizeHtml(data.email)}`,
+    `📌 <b>Subject:</b> ${sanitizeHtml(data.subject)}`,
     '',
     `💬 <b>Message:</b>`,
-    data.message,
+    sanitizeHtml(data.message),
   ].join('\n');
 
   try {
@@ -44,21 +52,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
     }
 
-    const { name, email, subject, message } = await request.json();
-
-    if (!email || !subject || !message) {
-      return NextResponse.json(
-        { error: 'Email, subject and message are required.' },
-        { status: 400 }
-      );
-    }
-
-    if (message.length > 5000) {
-      return NextResponse.json(
-        { error: 'Message too long (max 5000 characters).' },
-        { status: 400 }
-      );
-    }
+    // Validate input with Zod schema
+    const result = await parseBody(request, SupportTicketSchema);
+    if (!result.success) return result.error as unknown as NextResponse;
+    const { name, email, subject, message } = result.data;
 
     // Send Telegram notification
     await sendTelegramNotification({ name, email, subject, message });

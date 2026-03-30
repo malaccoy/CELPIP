@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useBattleSocket } from '@/hooks/useBattleSocket';
+import { useCurrentUser } from '@/hooks/useCurrentUser';
 import { Users, Link2, Loader2, Copy, Check, ArrowLeft } from 'lucide-react';
-import { createClient } from '@/lib/supabase/client';
 
 
 const T = {
@@ -15,22 +15,7 @@ const T = {
 
 export default function BattleLobby() {
   const router = useRouter();
-  const [userId, setUserId] = useState<string | null>(null);
-  const [userName, setUserName] = useState<string>('Player');
-  const [userAvatar, setUserAvatar] = useState<string | null>(null);
-  const [authLoading, setAuthLoading] = useState(true);
-
-  useEffect(() => {
-    const supabase = createClient();
-    supabase.auth.getUser().then(({ data }) => {
-      if (data?.user) {
-        setUserId(data.user.id);
-        setUserName(data.user.user_metadata?.name || data.user.email?.split('@')[0] || 'Player');
-        setUserAvatar(data.user.user_metadata?.avatar_url || data.user.user_metadata?.picture || null);
-      }
-      setAuthLoading(false);
-    });
-  }, []);
+  const { userId, displayName: userName, avatarUrl: userAvatar, loading: authLoading } = useCurrentUser();
 
   const {
     connected, state, roomCode, players, question, scores, correctAnswer,

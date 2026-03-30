@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { requireProWithLimit } from '@/lib/plan';
 import { logActivity } from '@/lib/activity';
+import { AIFeedbackSchema, parseBody } from '@/lib/validations';
+import { sanitizeForAI, sanitizeInput } from '@/lib/sanitize';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -178,27 +180,12 @@ export async function POST(request: NextRequest) {
     const { allowed } = await checkRateLimit(userId, 'ai-feedback', isPro);
     if (!allowed) return rateLimitResponse() as unknown as NextResponse;
 
-    const body: AIFeedbackRequest = await request.json();
-
-    // Input size limit
-    if (body.text && body.text.length > 5000) {
-      body.text = body.text.slice(0, 5000);
-    }
-
-    // Validate
-    if (!body.task || !body.text || !body.action) {
-      return NextResponse.json(
-        { error: 'Missing required fields: task, text, and action are required' },
-        { status: 400 }
-      );
-    }
-
-    if (body.text.trim().length < 50) {
-      return NextResponse.json(
-        { error: 'Text too short for analysis. Write at least 50 words.' },
-        { status: 400 }
-      );
-    }
+    // Validate input with Zod schema
+    const result = await parseBody(request, AIFeedbackSchema);
+    if (!result.success) return result.error as unknown as NextResponse;
+    const body = result.data;
+    // Sanitize text before sending to AI
+    body.text = sanitizeForAI(sanitizeInput(body.text));
 
     const response: AIFeedbackResponse = {};
 

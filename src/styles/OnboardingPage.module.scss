@@ -1,0 +1,196 @@
+@use 'design-system' as ds;
+
+.page {
+  min-height: 100vh;
+  background: var(--bg-primary, #{ds.$bg-primary});
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading {
+  min-height: 100vh;
+  background: var(--bg-primary, #{ds.$bg-primary});
+}
+
+/* ─── Progress Header ─── */
+.progressHeader {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.75rem;
+}
+
+.progressTrack {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-secondary, #{ds.$bg-secondary});
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #{ds.$accent-primary}, #ff6b6b);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.progressLabel {
+  color: var(--text-muted, rgba(255, 255, 255, 0.5));
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ─── Content Area ─── */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  transition: all 0.2s ease;
+}
+
+.contentAnimating {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.contentVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ─── Step Header ─── */
+.stepHeader {
+  text-align: center;
+}
+
+.stepEmoji {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.stepTitle {
+  color: var(--text-primary, #ffffff);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+}
+
+.stepSub {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ─── Option Cards ─── */
+.optionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.optionCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-secondary, #{ds.$bg-secondary});
+  border: 2px solid transparent;
+  border-radius: 16px;
+  color: var(--text-primary, #ffffff);
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+.optionCardSelected {
+  background: rgba(255, 59, 59, 0.08);
+  border-color: #{ds.$accent-primary};
+  font-weight: 700;
+}
+
+.optionEmoji {
+  font-size: 1.5rem;
+}
+
+/* ─── Skill Grid (Step 3) ─── */
+.skillGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  background: var(--bg-secondary, #{ds.$bg-secondary});
+  border: 2px solid transparent;
+  border-radius: 20px;
+  color: var(--text-primary, #ffffff);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.skillEmoji {
+  font-size: 2.5rem;
+}
+
+.skillLabel {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.skillDesc {
+  color: var(--text-muted, rgba(255, 255, 255, 0.5));
+  font-size: 0.8rem;
+}
+
+.skillAccent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 0 0 20px 20px;
+}
+
+/* ─── Skip Button ─── */
+.skipBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted, rgba(255, 255, 255, 0.5));
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--text-primary, #ffffff);
+  }
+}

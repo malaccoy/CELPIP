@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import { sendWelcomeEmail } from '@/lib/email';
 import { checkIpRateLimit } from '@/lib/ip-rate-limit';
+import { EmailCaptureSchema, parseBody } from '@/lib/validations';
 
 const prisma = new PrismaClient();
 
@@ -11,23 +12,20 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
     }
 
-    const { email, name, source } = await request.json();
-
-    if (!email || !email.includes('@')) {
-      return NextResponse.json({ error: 'Invalid email' }, { status: 400 });
-    }
-
-    const normalizedEmail = email.toLowerCase().trim();
+    // Validate input with Zod schema
+    const result = await parseBody(request, EmailCaptureSchema);
+    if (!result.success) return result.error as unknown as NextResponse;
+    const { email, name, source } = result.data;
 
     // Check if already exists (don't re-send welcome email)
     const existing = await prisma.emailSubscriber.findUnique({
-      where: { email: normalizedEmail },
+      where: { email },
     });
 
     const subscriber = await prisma.emailSubscriber.upsert({
-      where: { email: normalizedEmail },
+      where: { email },
       create: {
-        email: normalizedEmail,
+        email,
         name: name || null,
         source: source || 'popup',
       },
@@ -36,7 +34,7 @@ export async function POST(request: NextRequest) {
 
     // Send welcome email only for new subscribers
     if (!existing) {
-      sendWelcomeEmail(normalizedEmail, name).catch(err =>
+      sendWelcomeEmail(email, name).catch(err =>
         console.error('Welcome email failed:', err)
       );
     }
