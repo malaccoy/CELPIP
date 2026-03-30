@@ -28,7 +28,7 @@ const safeEmail = z
 
 export const AIFeedbackSchema = z.object({
   task: z.enum(['task1', 'task2'], {
-    errorMap: () => ({ message: 'Task must be "task1" or "task2"' }),
+    error: 'Task must be "task1" or "task2"',
   }),
   text: z
     .string()
@@ -37,7 +37,7 @@ export const AIFeedbackSchema = z.object({
     .max(5000, 'Text too long. Maximum 5000 characters.')
     .transform((val) => val.slice(0, 5000)),
   action: z.enum(['score', 'make-it-real', 'corrected', 'full', 'full-enhanced'], {
-    errorMap: () => ({ message: 'Invalid action type' }),
+    error: 'Invalid action type',
   }),
   context: z
     .object({
