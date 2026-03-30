@@ -196,7 +196,7 @@ export default function ChallengePlayPage() {
           )}
 
           <div className={styles.actions}>
-            <button className={styles.backButton} onClick={() => router.push('/dashboard')}>
+            <button className={styles.backButton} onClick={() => router.push('/map')}>
               <ArrowLeft size={18} />
               Back to Dashboard
             </button>
@@ -272,7 +272,7 @@ export default function ChallengePlayPage() {
           )}
 
           <div className={styles.actions}>
-            <button className={styles.backButton} onClick={() => router.push('/dashboard')}>
+            <button className={styles.backButton} onClick={() => router.push('/map')}>
               <ArrowLeft size={18} />
               Back to Dashboard
             </button>

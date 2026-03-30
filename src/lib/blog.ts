@@ -38,7 +38,7 @@ export function getAllPosts(): BlogPost[] {
       tags: data.tags || [],
       readTime: data.readTime || Math.ceil(content.split(/\s+/).length / 200),
       image: data.image,
-      cta: data.cta || { text: 'Start Practicing Free', href: '/dashboard' },
+      cta: data.cta || { text: 'Start Practicing Free', href: '/map' },
       content,
     } as BlogPost;
   });
@@ -72,7 +72,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     tags: data.tags || [],
     readTime: data.readTime || Math.ceil(content.split(/\s+/).length / 200),
     image: data.image,
-    cta: data.cta || { text: 'Start Practicing Free', href: '/dashboard' },
+    cta: data.cta || { text: 'Start Practicing Free', href: '/map' },
     content,
     htmlContent: result.toString(),
   };

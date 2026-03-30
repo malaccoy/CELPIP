@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Sparkles } from 'lucide-react';
 import styles from '@/styles/FAB.module.scss';
 
-const HIDE_ON = ['/ai-coach', '/mock-exam', '/writing/', '/auth/', '/dashboard', '/drills'];
+const HIDE_ON = ['/ai-coach', '/mock-exam', '/writing/', '/auth/', '/map', '/drills'];
 
 export default function FAB() {
   const pathname = usePathname();

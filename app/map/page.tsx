@@ -300,6 +300,15 @@ function TaskCircle({ node, color, skill }: { node: TaskNode; color: string; ski
 export default function MapPage() {
   const router = useRouter();
   const sections = getFullMap();
+  const [usage, setUsage] = useState<{ isPro: boolean; used: number; limit: number; remaining: number } | null>(null);
+
+  // Fetch daily usage
+  useEffect(() => {
+    fetch('/api/daily-usage?category=practice')
+      .then(r => r.json())
+      .then(setUsage)
+      .catch(() => {});
+  }, []);
 
   // Remove layout padding — same approach as MobileDashboard
   useLayoutEffect(() => {
@@ -332,6 +341,61 @@ export default function MapPage() {
     }}>
       {/* Top Bar */}
       <MobileTopBar />
+
+      {/* Daily usage banner */}
+      {usage && !usage.isPro && (
+        <div style={{
+          maxWidth: 480, margin: '12px auto 0', padding: '0 20px',
+        }}>
+          <div style={{
+            background: usage.remaining > 0
+              ? 'linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.12))'
+              : 'linear-gradient(135deg, rgba(239,68,68,0.15), rgba(249,115,22,0.12))',
+            border: `1px solid ${usage.remaining > 0 ? 'rgba(59,130,246,0.2)' : 'rgba(239,68,68,0.25)'}`,
+            borderRadius: 14, padding: '14px 16px',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          }}>
+            <div>
+              <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#94a3b8', marginBottom: 4 }}>
+                Daily Free Exercises
+              </div>
+              <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+                {Array.from({ length: usage.limit }, (_, i) => (
+                  <div key={i} style={{
+                    width: 28, height: 28, borderRadius: '50%',
+                    background: i < usage.used
+                      ? 'rgba(100,116,139,0.3)'
+                      : 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    border: i < usage.used ? '1px solid rgba(100,116,139,0.2)' : 'none',
+                  }}>
+                    {i < usage.used ? (
+                      <Check size={14} color="#64748b" />
+                    ) : (
+                      <Star size={12} color="#fff" fill="#fff" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {usage.remaining === 0 ? (
+              <button onClick={() => router.push('/pricing')} style={{
+                background: 'linear-gradient(135deg, #f43f5e, #e11d48)',
+                color: '#fff', border: 'none', borderRadius: 10,
+                padding: '10px 16px', fontWeight: 700, fontSize: '0.85rem',
+                cursor: 'pointer', whiteSpace: 'nowrap',
+              }}>
+                Upgrade to Pro
+              </button>
+            ) : (
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#fff' }}>{usage.remaining}</div>
+                <div style={{ fontSize: '0.7rem', color: '#64748b' }}>remaining</div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Map — continuous scroll */}
       <div style={{

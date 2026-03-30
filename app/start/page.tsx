@@ -147,8 +147,8 @@ export default function StartPage() {
     else { setExIdx(exIdx + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   };
 
-  const goSignup = () => { localStorage.setItem('redirect_after_login', '/dashboard'); router.push('/auth/register?ref=start'); };
-  const goLogin = () => { localStorage.setItem('redirect_after_login', '/dashboard'); router.push('/auth/login'); };
+  const goSignup = () => { localStorage.setItem('redirect_after_login', '/map'); router.push('/auth/register?ref=start'); };
+  const goLogin = () => { localStorage.setItem('redirect_after_login', '/map'); router.push('/auth/login'); };
 
   /* ═══ INTRO ═══ */
   if (step === 'intro') return (

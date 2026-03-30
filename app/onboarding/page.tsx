@@ -33,13 +33,13 @@ export default function OnboardingPage() {
     if (ob) {
       try {
         const data = JSON.parse(ob);
-        if (data.completed) { router.replace('/dashboard'); return; }
+        if (data.completed) { router.replace('/map'); return; }
       } catch {}
     }
     fetch('/api/onboarding').then(r => r.json()).then(d => {
       if (d.data?.completed) {
         localStorage.setItem('celpip_onboarding', JSON.stringify({ completed: true }));
-        router.replace('/dashboard');
+        router.replace('/map');
       } else { setReady(true); }
     }).catch(() => setReady(true));
   }, [router]);
@@ -203,7 +203,7 @@ export default function OnboardingPage() {
               ))}
             </div>
             <button
-              onClick={() => router.push('/dashboard')}
+              onClick={() => router.push('/map')}
               style={{
                 background: 'none', border: 'none', color: T.textMuted,
                 fontSize: '0.95rem', cursor: 'pointer', padding: '0.75rem',

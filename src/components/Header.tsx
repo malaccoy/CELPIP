@@ -50,7 +50,7 @@ const navItems: NavItem[] = [
 /* Icon map for mobile nav strip — replaces emojis with Lucide icons */
 const mobileNavIconMap: Record<string, React.ElementType> = {
   '/': Home,
-  '/dashboard': Dumbbell,
+  '/map': Dumbbell,
   '/pricing': Gem,
   '/rankings': Trophy,
 };
@@ -117,7 +117,7 @@ export const Header: React.FC = () => {
   return (
     <>
       {/* Mobile minimal header */}
-      {pathname !== '/dashboard' && !pathname?.startsWith('/ai-coach') && !pathname?.startsWith('/map') && (
+      {pathname !== '/map' && !pathname?.startsWith('/ai-coach') && !pathname?.startsWith('/map') && (
         <header className={`${styles.header} ${styles.mobileMinimalHeader} ${headerHidden ? styles.headerHidden : ''}`}>
           <div className={styles.headerContent}>
             <Link href="/" className={styles.logoLink}>
