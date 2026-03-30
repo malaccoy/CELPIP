@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head>
+<title>Lottie Preview</title>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<style>
+body { background: #1e1e2e; color: #fff; font-family: sans-serif; padding: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.card { background: #2a2a3c; border-radius: 12px; padding: 16px; text-align: center; }
+.card h3 { margin: 8px 0 0; font-size: 14px; }
+lottie-player { margin: 0 auto; }
+</style>
+</head><body>
+<h1>Lottie Animations Preview</h1>
+<h2>Current Skill Icons</h2>
+<div class="grid">
+  <div class="card">
+    <lottie-player src="/lottie/reading.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Reading (current)</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/writing.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Writing (current)</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/listening.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Listening (current)</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/speaking.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Speaking (current)</h3>
+  </div>
+</div>
+<h2>Effects</h2>
+<div class="grid">
+  <div class="card">
+    <lottie-player src="/lottie/confetti.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Confetti</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/trophy.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Trophy (≥80%)</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/sad.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Sad (&lt;80%)</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/success.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Success</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/error.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Error</h3>
+  </div>
+  <div class="card">
+    <lottie-player src="/lottie/loading.json" background="transparent" speed="1" style="width:180px;height:180px" loop autoplay></lottie-player>
+    <h3>Loading</h3>
+  </div>
+</div>
+</body></html>

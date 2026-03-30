@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_SUPPORT_CHAT_ID || '886662847';
@@ -39,6 +40,10 @@ async function sendTelegramNotification(data: {
 
 export async function POST(request: NextRequest) {
   try {
+    if (!checkIpRateLimit(request, 'support', 3)) {
+      return NextResponse.json({ error: 'Please try again later.' }, { status: 429 });
+    }
+
     const { name, email, subject, message } = await request.json();
 
     if (!email || !subject || !message) {

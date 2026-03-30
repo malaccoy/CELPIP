@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     if (exercise.clips) {
       let qIdx = 0;
       const clips = exercise.clips.map((c: any) => ({
-        questions: (c.questions || []).map((q: any) => ({ ...q, id: q.id ?? ++qIdx })),
+        questions: (c.questions || []).map((q: any) => ({ ...q, id: ++qIdx })),
       }));
       return NextResponse.json({
         exercise: {

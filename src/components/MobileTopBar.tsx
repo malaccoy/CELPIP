@@ -1,9 +1,22 @@
 'use client';
 
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
+import NotificationBell from '@/components/NotificationBell';
+
+const RiveIcon = dynamic(() => import('@/components/RiveIcon'), { ssr: false });
+const LottieIcon = dynamic(() => import('lottie-react').then(m => {
+  const Lottie = m.default;
+  return { default: ({ src, size }: { src: string; size: number }) => {
+    const [data, setData] = React.useState<any>(null);
+    React.useEffect(() => { fetch(src).then(r => r.json()).then(setData).catch(() => {}); }, [src]);
+    if (!data) return <div style={{ width: size, height: size }} />;
+    return <Lottie animationData={data} loop autoplay style={{ width: size, height: size }} />;
+  }};
+}), { ssr: false });
 
 const T = {
   bg: '#1b1f2a',
@@ -62,13 +75,13 @@ export default function MobileTopBar() {
   return (
     <>
       <style>{animStyles}</style>
-      <div style={{
+      <div id="mobile-top-bar" style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '12px 16px', background: T.bg,
         borderBottom: `1px solid ${T.border}`,
       }}>
         <div
-          onClick={() => router.push('/dashboard')}
+          onClick={() => router.push('/map')}
           style={{ width: 52, height: 52, cursor: 'pointer', flexShrink: 0 }}
         >
           <Image src="/logo-leaf.png" alt="CELPIP" width={52} height={52}
@@ -76,16 +89,16 @@ export default function MobileTopBar() {
         </div>
 
         <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5, animation: 'pulse-glow-tb 2s ease-in-out infinite' }}>
-            <span style={{ fontSize: '1.5rem', animation: 'fire-flicker-tb 1.5s ease-in-out infinite' }}>🔥</span>
-            <span style={{ color: T.gold, fontWeight: 800, fontSize: '1.15rem' }}>{streak}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <LottieIcon src="/lottie/fire.json" size={34} />
+            <span style={{ color: T.gold, fontWeight: 800, fontSize: '1.35rem' }}>{streak}</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ fontSize: '1.5rem' }}>⚡</span>
-            <span style={{ color: T.purple, fontWeight: 800, fontSize: '1.15rem' }}>{xp}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <RiveIcon artboard="03_Flash" size={34} />
+            <span style={{ color: T.purple, fontWeight: 800, fontSize: '1.35rem' }}>{xp}</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ fontSize: '1.5rem' }}>{leagueEmoji}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <RiveIcon artboard="21_Crown" size={34} />
             <span style={{ color: T.green, fontWeight: 700, fontSize: '1rem' }}>{league}</span>
           </div>
         </div>
@@ -96,8 +109,10 @@ export default function MobileTopBar() {
             padding: '8px 16px', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', flexShrink: 0,
           }}>Sign In</button>
         ) : (
-          <div onClick={() => router.push('/profile')} style={{
-            width: 40, height: 40, borderRadius: '50%', overflow: 'hidden', cursor: 'pointer', flexShrink: 0,
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <NotificationBell />
+            <div onClick={() => router.push('/profile')} style={{
+            width: 48, height: 48, borderRadius: '50%', overflow: 'hidden', cursor: 'pointer', flexShrink: 0,
             background: T.surface, border: `2px solid ${T.border}`,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             color: T.text, fontWeight: 700, fontSize: '0.9rem',
@@ -105,6 +120,7 @@ export default function MobileTopBar() {
             {userImage ? (
               <Image src={userImage} alt="" width={32} height={32} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             ) : userName ? userName.charAt(0).toUpperCase() : '👤'}
+            </div>
           </div>
         )}
       </div>

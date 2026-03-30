@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CELPIP Skill Tree — Preview</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0e1a;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ═══════ BACKGROUND ═══════ */
+.bg-scene {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, 
+    #0a0e1a 0%, 
+    #0d1b2a 20%, 
+    #1b2a4a 40%,
+    #2d1b4e 60%, 
+    #1a3a2a 80%, 
+    #0a1a0a 100%
+  );
+}
+
+/* Aurora effect */
+.aurora {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 50vh;
+  background: 
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0,255,128,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 70% 15%, rgba(100,200,255,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 90% 60% at 50% 10%, rgba(150,100,255,0.05) 0%, transparent 60%);
+  animation: aurora-shift 8s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes aurora-shift {
+  0% { opacity: 0.6; transform: translateX(-2%); }
+  100% { opacity: 1; transform: translateX(2%); }
+}
+
+/* Mountains */
+.mountains {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 40vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.mountain {
+  position: absolute;
+  bottom: 0;
+  width: 0; height: 0;
+}
+
+.mountain-1 {
+  left: -5%;
+  border-left: 25vw solid transparent;
+  border-right: 25vw solid transparent;
+  border-bottom: 35vh solid #0f1f15;
+}
+
+.mountain-2 {
+  left: 30%;
+  border-left: 30vw solid transparent;
+  border-right: 30vw solid transparent;
+  border-bottom: 40vh solid #0a1a10;
+}
+
+.mountain-3 {
+  right: -10%;
+  border-left: 28vw solid transparent;
+  border-right: 28vw solid transparent;
+  border-bottom: 32vh solid #0d1d12;
+}
+
+/* Snow caps */
+.mountain-1::after, .mountain-2::after, .mountain-3::after {
+  content: '';
+  position: absolute;
+  top: -35vh;
+  left: -8vw;
+  width: 0; height: 0;
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  border-bottom: 8vh solid rgba(255,255,255,0.08);
+}
+
+/* Stars */
+.stars {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  width: 2px; height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  100% { opacity: 0.8; }
+}
+
+/* ═══════ LAYOUT ═══════ */
+.app {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  min-height: 100vh;
+}
+
+/* ═══════ SIDEBAR LEFT ═══════ */
+.sidebar-left {
+  padding: 24px 16px;
+  background: rgba(15, 20, 35, 0.85);
+  backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.logo-area img {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+}
+
+.logo-area span {
+  font-weight: 800;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #ff4444, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.8);
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.15));
+  color: #a5b4fc;
+  border: 1px solid rgba(99,102,241,0.2);
+}
+
+.nav-icon {
+  width: 24px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.nav-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 12px 0;
+}
+
+.mascot-area {
+  margin-top: auto;
+  text-align: center;
+  padding: 16px;
+}
+
+.mascot-area img {
+  width: 120px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+  animation: mascot-bob 3s ease-in-out infinite;
+}
+
+@keyframes mascot-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.mascot-speech {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.4;
+}
+
+/* ═══════ CENTER — SKILL TREE ═══════ */
+.center {
+  padding: 32px 48px;
+  overflow-y: auto;
+}
+
+.path-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.path-title {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+.path-subtitle {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.9rem;
+}
+
+/* Tree path */
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.tree-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.tree-row:nth-child(odd) { justify-content: flex-start; padding-left: 40px; }
+.tree-row:nth-child(even) { justify-content: flex-end; padding-right: 40px; }
+
+/* Connector lines */
+.tree-connector {
+  width: 3px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tree-connector::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+}
+
+.tree-connector.active::before {
+  background: linear-gradient(180deg, #fbbf24, rgba(251,191,36,0.2));
+  box-shadow: 0 0 8px rgba(251,191,36,0.3);
+}
+
+/* Node */
+.node {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  min-width: 280px;
+}
+
+.node-completed {
+  background: rgba(34,197,94,0.08);
+  border: 2px solid rgba(34,197,94,0.2);
+}
+
+.node-completed:hover {
+  background: rgba(34,197,94,0.12);
+  transform: scale(1.02);
+}
+
+.node-current {
+  background: rgba(99,102,241,0.1);
+  border: 2px solid rgba(99,102,241,0.4);
+  box-shadow: 0 0 30px rgba(99,102,241,0.15), 0 0 60px rgba(99,102,241,0.05);
+  animation: current-pulse 2s ease-in-out infinite;
+}
+
+@keyframes current-pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(99,102,241,0.15); }
+  50% { box-shadow: 0 0 40px rgba(99,102,241,0.25), 0 0 80px rgba(99,102,241,0.1); }
+}
+
+.node-current:hover {
+  transform: scale(1.03);
+}
+
+.node-locked {
+  background: rgba(255,255,255,0.03);
+  border: 2px solid rgba(255,255,255,0.06);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Node icon circle */
+.node-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.node-completed .node-icon {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 4px 16px rgba(34,197,94,0.3);
+}
+
+.node-current .node-icon {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  box-shadow: 0 4px 20px rgba(99,102,241,0.4);
+  animation: icon-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes icon-glow {
+  0% { box-shadow: 0 4px 20px rgba(99,102,241,0.3); }
+  100% { box-shadow: 0 4px 30px rgba(99,102,241,0.5), 0 0 40px rgba(139,92,246,0.2); }
+}
+
+.node-locked .node-icon {
+  background: rgba(255,255,255,0.06);
+}
+
+.node-check {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  background: #fbbf24;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  border: 2px solid #0a0e1a;
+}
+
+.node-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.node-info p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.node-completed .node-info h3 { color: #86efac; }
+.node-current .node-info h3 { color: #c7d2fe; }
+.node-locked .node-info h3 { color: rgba(255,255,255,0.3); }
+
+.node-stars {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+/* Continue indicator */
+.continue-node {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.continue-dots {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  animation: dots-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes dots-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+/* ═══════ SIDEBAR RIGHT ═══════ */
+.sidebar-right {
+  padding: 24px 16px;
+  background: rgba(15, 20, 35, 0.85);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.profile-name { font-weight: 700; font-size: 0.95rem; }
+.profile-level { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+
+/* Streak card */
+.streak-card {
+  background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(245,158,11,0.04));
+  border: 1px solid rgba(251,191,36,0.15);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.streak-fire {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  animation: fire-bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes fire-bounce {
+  0% { transform: scale(1) rotate(-3deg); }
+  100% { transform: scale(1.1) rotate(3deg); }
+}
+
+.streak-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.streak-label {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.streak-best {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+}
+
+/* XP Progress */
+.xp-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.xp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.xp-title { font-weight: 700; font-size: 0.9rem; }
+.xp-value { color: #c084fc; font-weight: 800; }
+
+.xp-bar-bg {
+  height: 10px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+.xp-next {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  margin-top: 6px;
+  text-align: right;
+}
+
+/* League card */
+.league-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.league-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.league-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.league-item:last-child { border-bottom: none; }
+
+.league-rank {
+  width: 24px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.league-rank.gold { color: #fbbf24; }
+.league-rank.silver { color: #94a3b8; }
+.league-rank.bronze { color: #d97706; }
+
+.league-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.league-name { flex: 1; font-size: 0.85rem; font-weight: 600; }
+.league-xp { font-size: 0.8rem; color: #c084fc; font-weight: 700; }
+
+.league-you {
+  background: rgba(99,102,241,0.08);
+  border-radius: 10px;
+  padding: 10px 8px;
+  margin: 0 -8px;
+}
+
+/* ═══════ MOBILE ═══════ */
+@media (max-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-left, .sidebar-right { display: none; }
+  .center { padding: 20px 16px; }
+  
+  /* Mobile top stats */
+  .mobile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .mobile-stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 800;
+  }
+  
+  .node { min-width: auto; }
+  .tree-row:nth-child(odd) { padding-left: 10px; }
+  .tree-row:nth-child(even) { padding-right: 10px; }
+}
+
+@media (min-width: 1025px) {
+  .mobile-stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Background -->
+<div class="bg-scene"></div>
+<div class="aurora"></div>
+<div class="mountains">
+  <div class="mountain mountain-1"></div>
+  <div class="mountain mountain-2"></div>
+  <div class="mountain mountain-3"></div>
+</div>
+<div class="stars" id="stars"></div>
+
+<div class="app">
+  <!-- ═══════ SIDEBAR LEFT ═══════ -->
+  <div class="sidebar-left">
+    <div class="logo-area">
+      <img src="/icon-512.png" alt="CELPIP" />
+      <span>CELPIP AI Coach</span>
+    </div>
+    
+    <div class="nav-item active">
+      <span class="nav-icon">🗺️</span> Skill Tree
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">🏠</span> Dashboard
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">🤖</span> AI Practice
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">⚡</span> Drills
+    </div>
+    
+    <div class="nav-divider"></div>
+    
+    <div class="nav-item">
+      <span class="nav-icon">📝</span> Mock Exam
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">⚔️</span> Battle PvP
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">📚</span> Guides
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">👥</span> Community
+    </div>
+    
+    <div class="mascot-area">
+      <img src="/mascot-beaver.webp" alt="CELPIP Mascot" />
+      <div class="mascot-speech">
+        "Keep going! You're making great progress on your CELPIP journey! 🍁"
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ CENTER ═══════ -->
+  <div class="center">
+    <!-- Mobile stats (hidden on desktop) -->
+    <div class="mobile-stats">
+      <div class="mobile-stat">
+        <span style="font-size:1.3rem">🔥</span>
+        <span style="color:#fbbf24">7</span>
+      </div>
+      <div class="mobile-stat">
+        <span style="font-size:1.3rem">⚡</span>
+        <span style="color:#c084fc">245</span>
+      </div>
+      <div class="mobile-stat">
+        <span style="font-size:1.3rem">💎</span>
+        <span style="color:#38bdf8">Diamond</span>
+      </div>
+    </div>
+
+    <div class="path-header">
+      <div class="path-title">🍁 PATH TO CANADA</div>
+      <div class="path-subtitle">Master all CELPIP skills to achieve your dream score</div>
+    </div>
+
+    <div class="tree">
+      <!-- Node 1: Speaking Task 1 — COMPLETED -->
+      <div class="tree-row">
+        <div class="node node-completed">
+          <div class="node-icon">
+            🎤
+            <div class="node-check">✓</div>
+          </div>
+          <div class="node-info">
+            <h3>Speaking Task 1</h3>
+            <p>Personal Preference</p>
+            <div class="node-stars">⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector active"></div>
+
+      <!-- Node 2: Writing Task 1 — CURRENT -->
+      <div class="tree-row">
+        <div class="node node-current">
+          <div class="node-icon">✍️</div>
+          <div class="node-info">
+            <h3>Writing Task 1</h3>
+            <p>Email Writing</p>
+            <div class="node-stars" style="color:rgba(255,255,255,0.2)">☆☆☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 3: Listening Part 1 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">🎧</div>
+          <div class="node-info">
+            <h3>Listening Part 1</h3>
+            <p>Problem Solving</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 4: Reading Part 1 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">📖</div>
+          <div class="node-info">
+            <h3>Reading Part 1</h3>
+            <p>Correspondence</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 5: Speaking Task 2 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">🎤</div>
+          <div class="node-info">
+            <h3>Speaking Task 2</h3>
+            <p>Describing an Image</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 6: Writing Task 2 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">✍️</div>
+          <div class="node-info">
+            <h3>Writing Task 2</h3>
+            <p>Survey Response</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 7: Listening Part 2 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">🎧</div>
+          <div class="node-info">
+            <h3>Listening Part 2</h3>
+            <p>Daily Life Context</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Node 8: Reading Part 2 — LOCKED -->
+      <div class="tree-row">
+        <div class="node node-locked">
+          <div class="node-icon">📖</div>
+          <div class="node-info">
+            <h3>Reading Part 2</h3>
+            <p>Poster & Email</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-connector"></div>
+
+      <!-- Continue -->
+      <div class="continue-node">
+        <div class="continue-dots">• • •</div>
+        <div style="margin-top:8px">Continue Learning</div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.2);margin-top:4px">24 tasks total · Mock Exam at the end</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ SIDEBAR RIGHT ═══════ -->
+  <div class="sidebar-right">
+    <!-- Profile -->
+    <div class="profile-card">
+      <div class="profile-avatar">C</div>
+      <div>
+        <div class="profile-name">Calaim</div>
+        <div class="profile-level">Level 15 · Wanderer</div>
+      </div>
+    </div>
+
+    <!-- Streak -->
+    <div class="streak-card">
+      <div class="streak-fire">🔥</div>
+      <div class="streak-number">7</div>
+      <div class="streak-label">Day Streak</div>
+      <div class="streak-best">Best: 21 days</div>
+    </div>
+
+    <!-- XP Progress -->
+    <div class="xp-card">
+      <div class="xp-header">
+        <span class="xp-title">⚡ XP Progress</span>
+        <span class="xp-value">245 / 500</span>
+      </div>
+      <div class="xp-bar-bg">
+        <div class="xp-bar-fill" style="width: 49%"></div>
+      </div>
+      <div class="xp-next">255 XP to Diamond League</div>
+    </div>
+
+    <!-- League -->
+    <div class="league-card">
+      <div class="league-title">🏆 Gold League</div>
+      
+      <div class="league-item">
+        <span class="league-rank gold">1</span>
+        <div class="league-avatar" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)">S</div>
+        <span class="league-name">Sarah K.</span>
+        <span class="league-xp">892 XP</span>
+      </div>
+      
+      <div class="league-item">
+        <span class="league-rank silver">2</span>
+        <div class="league-avatar" style="background:linear-gradient(135deg,#94a3b8,#64748b)">M</div>
+        <span class="league-name">Marco P.</span>
+        <span class="league-xp">756 XP</span>
+      </div>
+      
+      <div class="league-item league-you">
+        <span class="league-rank bronze">3</span>
+        <div class="league-avatar" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">C</div>
+        <span class="league-name">You</span>
+        <span class="league-xp">245 XP</span>
+      </div>
+      
+      <div class="league-item">
+        <span class="league-rank">4</span>
+        <div class="league-avatar">A</div>
+        <span class="league-name">Ahmed R.</span>
+        <span class="league-xp">198 XP</span>
+      </div>
+      
+      <div class="league-item">
+        <span class="league-rank">5</span>
+        <div class="league-avatar">P</div>
+        <span class="league-name">Priya M.</span>
+        <span class="league-xp">134 XP</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Generate stars
+const starsEl = document.getElementById('stars');
+for (let i = 0; i < 80; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.top = Math.random() * 60 + '%';
+  star.style.animationDelay = Math.random() * 3 + 's';
+  star.style.width = star.style.height = (Math.random() * 2 + 1) + 'px';
+  starsEl.appendChild(star);
+}
+</script>
+
+</body>
+</html>

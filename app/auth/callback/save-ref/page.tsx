@@ -8,16 +8,18 @@ function SaveRefInner() {
 
   useEffect(() => {
     const ref = localStorage.getItem('signup_ref');
-    const next = searchParams.get('next') || '/dashboard';
+    const referralCode = localStorage.getItem('referral_code');
+    const next = searchParams.get('next') || '/map';
 
-    if (ref) {
-      // Fire-and-forget: save ref to user record
+    if (ref || referralCode) {
+      // Fire-and-forget: save ref + referral code to user record
       fetch('/api/save-referral', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ref }),
+        body: JSON.stringify({ ref, referralCode }),
       }).catch(() => {});
       localStorage.removeItem('signup_ref');
+      localStorage.removeItem('referral_code');
     }
 
     // Redirect to destination

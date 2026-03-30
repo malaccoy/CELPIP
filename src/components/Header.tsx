@@ -16,6 +16,19 @@ import { Logo } from '@/components/Logo';
 import NotificationBell from '@/components/NotificationBell';
 import { useScrollDirection } from '@/hooks/useScrollDirection';
 import styles from '@/styles/Layout.module.scss';
+import dynamic from 'next/dynamic';
+
+const LottieIcon = dynamic(() => import('lottie-react').then(m => {
+  const Lottie = m.default;
+  return { default: ({ src, size }: { src: string; size: number }) => {
+    const [data, setData] = React.useState<any>(null);
+    React.useEffect(() => { fetch(src).then(r => r.json()).then(setData).catch(() => {}); }, [src]);
+    if (!data) return <div style={{ width: size, height: size }} />;
+    return <Lottie animationData={data} loop autoplay style={{ width: size, height: size }} />;
+  }};
+}), { ssr: false });
+
+const RiveIcon = dynamic(() => import('@/components/RiveIcon'), { ssr: false });
 
 interface NavItem {
   to: string;
@@ -26,7 +39,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
-  { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/map', icon: Dumbbell, label: 'Practice' },
   { to: '/blog', icon: BookOpen, label: 'Blog' },
   { to: '/pricing', icon: CreditCard, label: 'Pricing' },
   { to: '/rankings', icon: Trophy, label: 'Rankings' },
@@ -104,7 +117,7 @@ export const Header: React.FC = () => {
   return (
     <>
       {/* Mobile minimal header */}
-      {pathname !== '/dashboard' && !pathname?.startsWith('/ai-coach') && (
+      {pathname !== '/dashboard' && !pathname?.startsWith('/ai-coach') && !pathname?.startsWith('/map') && (
         <header className={`${styles.header} ${styles.mobileMinimalHeader} ${headerHidden ? styles.headerHidden : ''}`}>
           <div className={styles.headerContent}>
             <Link href="/" className={styles.logoLink}>
@@ -113,6 +126,21 @@ export const Header: React.FC = () => {
                 CELPIP <span className={styles.logoAI}>AI</span> Coach
               </span>
             </Link>
+            {/* Stats: fire streak, XP, league */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginLeft: 16 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <LottieIcon src="/lottie/fire.json" size={26} />
+                <span style={{ color: '#f59e0b', fontWeight: 800, fontSize: '1rem' }}>7</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <RiveIcon artboard="03_Flash" size={26} />
+                <span style={{ color: '#a78bfa', fontWeight: 800, fontSize: '1rem' }}>96</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <RiveIcon artboard="21_Crown" size={26} />
+                <span style={{ color: '#22c55e', fontWeight: 700, fontSize: '0.85rem' }}>Gold</span>
+              </div>
+            </div>
             {user ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <NotificationBell />
@@ -151,6 +179,21 @@ export const Header: React.FC = () => {
                 <span className={styles.logoText}>CELPIP <span className={styles.logoAI}>AI</span> Coach</span>
               </div>
             </Link>
+            {/* Stats: fire streak, XP, league */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginLeft: 20 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <LottieIcon src="/lottie/fire.json" size={28} />
+                <span style={{ color: '#f59e0b', fontWeight: 800, fontSize: '1.05rem' }}>7</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <RiveIcon artboard="03_Flash" size={28} />
+                <span style={{ color: '#a78bfa', fontWeight: 800, fontSize: '1.05rem' }}>96</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+                <RiveIcon artboard="21_Crown" size={28} />
+                <span style={{ color: '#22c55e', fontWeight: 700, fontSize: '0.9rem' }}>Gold</span>
+              </div>
+            </div>
           </div>
           <nav className={styles.headerNav}>
             {navItems.map((item) => {

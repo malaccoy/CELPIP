@@ -8,7 +8,7 @@ export async function GET() {
     const rows = await prisma.$queryRawUnsafe(`
       SELECT 
         bs.user_id,
-        COALESCE(u.name, u.email, 'Player') as name,
+        COALESCE(NULLIF(u.name, ''), SPLIT_PART(u.email, '@', 1), 'Player') as name,
         u.image as avatar,
         bs.rating,
         bs.wins,

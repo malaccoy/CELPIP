@@ -505,7 +505,7 @@ export default function BattleLobby() {
   return (
     <div style={{ background: T.bg, minHeight: '100vh', padding: '24px 16px' }}>
       <div style={{ maxWidth: 480, margin: '0 auto' }}>
-        <button onClick={() => router.push('/dashboard')}
+        <button onClick={() => router.push('/map')}
           style={{ background: 'transparent', border: 'none', color: T.textMuted, fontSize: 14, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 20, padding: 0 }}>
           <ArrowLeft size={16} /> Back
         </button>

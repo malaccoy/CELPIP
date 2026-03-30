@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { execFile } from 'child_process';
 import { promises as fs } from 'fs';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { randomUUID } from 'crypto';
@@ -30,6 +31,10 @@ function generateTTS(text: string, rate: string, voice: string, outPath: string)
 }
 
 export async function GET(req: NextRequest) {
+  if (!checkIpRateLimit(req, 'tts', 30)) {
+    return NextResponse.json({ error: 'Rate limit exceeded' }, { status: 429 });
+  }
+
   const text = req.nextUrl.searchParams.get('text');
   const slow = req.nextUrl.searchParams.get('slow') === '1';
   const voiceParam = req.nextUrl.searchParams.get('voice') || '';

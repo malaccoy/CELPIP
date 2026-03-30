@@ -4,12 +4,12 @@ const prisma = new PrismaClient();
 
 // Daily limits per endpoint (Pro users)
 const DAILY_LIMITS: Record<string, number> = {
-  'ai-practice': 20,
-  'ai-feedback': 10,
-  'speaking-feedback': 10,
-  'sentence-feedback': 15,
-  'mock-exam': 3,
-  'evaluate-ai': 10,
+  'ai-practice': 30,
+  'ai-feedback': 20,
+  'speaking-feedback': 30,
+  'sentence-feedback': 20,
+  'mock-exam': 5,
+  'evaluate-ai': 20,
 };
 
 // Free users get a taste (for assessment etc.)
@@ -25,12 +25,12 @@ const FREE_LIMITS: Record<string, number> = {
 // Per-minute burst limits (prevents rapid-fire spam)
 const BURST_WINDOW_MS = 60_000;
 const BURST_LIMITS: Record<string, number> = {
-  'ai-practice': 3,
-  'ai-feedback': 2,
-  'speaking-feedback': 2,
-  'sentence-feedback': 3,
-  'mock-exam': 1,
-  'evaluate-ai': 2,
+  'ai-practice': 5,
+  'ai-feedback': 5,
+  'speaking-feedback': 5,
+  'sentence-feedback': 5,
+  'mock-exam': 2,
+  'evaluate-ai': 5,
 };
 
 // In-memory burst tracker (resets on restart, intentionally lightweight)
@@ -80,7 +80,7 @@ export async function checkRateLimit(
     return { allowed: false, remaining: 0 };
   }
 
-  // Burst check (per-minute)
+  // Burst check (per-minute) — checked BEFORE incrementing daily counter
   if (!checkBurst(userId, endpoint)) {
     return { allowed: false, remaining: 0 };
   }
@@ -88,6 +88,16 @@ export async function checkRateLimit(
   const date = getToday();
 
   try {
+    // First check current count WITHOUT incrementing
+    const existing = await prisma.apiUsage.findUnique({
+      where: { userId_endpoint_date: { userId, endpoint, date } },
+    });
+
+    if (existing && existing.count >= limit) {
+      return { allowed: false, remaining: 0 };
+    }
+
+    // Only increment if we're going to allow it
     const usage = await prisma.apiUsage.upsert({
       where: {
         userId_endpoint_date: { userId, endpoint, date },
@@ -95,11 +105,6 @@ export async function checkRateLimit(
       create: { userId, endpoint, date, count: 1 },
       update: { count: { increment: 1 } },
     });
-
-    // If we just went over, it's already incremented — check against limit
-    if (usage.count > limit) {
-      return { allowed: false, remaining: 0 };
-    }
 
     return { allowed: true, remaining: limit - usage.count };
   } catch {

@@ -1,4 +1,6 @@
 'use client';
+import dynamic from 'next/dynamic';
+const LottieConfetti = dynamic(() => import('@/components/LottieConfetti'), { ssr: false });
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter, useParams } from 'next/navigation';
@@ -207,6 +209,7 @@ export default function UnitPage() {
     return (
       <div className={styles.resultScreen}>
         <ExerciseOfferPopup show={showOffer} onClose={() => setShowOffer(false)} />
+        <LottieConfetti trigger={true} />
         <Trophy size={64} color="#f59e0b" style={{ marginBottom: '1rem' }} />
         <h2 className={styles.resultTitle}>{msg}</h2>
         <p className={styles.resultSubtitle}>Unit {unitId}: {unit.title}</p>

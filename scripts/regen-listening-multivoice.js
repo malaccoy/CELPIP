@@ -10,28 +10,26 @@ const path = require('path');
 const AUDIO_DIR = path.join(__dirname, '../public/audio/listening-library');
 const LIB_DIR = path.join(__dirname, '../public/data/listening-library');
 
-const VOICE_MAP = {
-  'man': 'en-US-AndrewNeural',
-  'woman': 'en-US-AvaNeural',
+// Male names → male voice, Female names → female voice
+const MALE_NAMES = ['tom','david','james','michael','kevin','ryan','chris','brian','mark','steven',
+  'andrew','daniel','jason','matt','patrick','adam','tyler','nathan','brandon','scott',
+  'man','speaker 1','interviewer','interviewee','agent','teacher','manager','customer'];
+const FEMALE_NAMES = ['sarah','lisa','emily','jessica','amanda','nicole','rachel','laura','karen',
+  'michelle','stephanie','rebecca','ashley','jennifer','natalie','megan','samantha','heather',
+  'christina','angela','woman','speaker 2','caller','student','employee','receptionist'];
+
+const VOICE_MAP = {};
+MALE_NAMES.forEach(n => VOICE_MAP[n] = 'en-US-AndrewNeural');
+FEMALE_NAMES.forEach(n => VOICE_MAP[n] = 'en-US-AvaNeural');
+// Special roles
+Object.assign(VOICE_MAP, {
   'host': 'en-US-GuyNeural',
   'narrator': 'en-US-GuyNeural',
   'man 2': 'en-US-GuyNeural',
   'woman 2': 'en-US-AriaNeural',
-  'speaker 1': 'en-US-AndrewNeural',
-  'speaker 2': 'en-US-AvaNeural',
   'speaker 3': 'en-US-GuyNeural',
-  'interviewer': 'en-US-GuyNeural',
-  'interviewee': 'en-US-AndrewNeural',
-  'caller': 'en-US-AvaNeural',
-  'agent': 'en-US-AndrewNeural',
-  'student': 'en-US-AvaNeural',
-  'teacher': 'en-US-AndrewNeural',
-  'manager': 'en-US-AndrewNeural',
-  'employee': 'en-US-AvaNeural',
   'colleague': 'en-US-GuyNeural',
-  'receptionist': 'en-US-AvaNeural',
-  'customer': 'en-US-AndrewNeural',
-};
+});
 
 function getVoice(speaker) {
   const key = (speaker || '').toLowerCase().trim();
@@ -129,16 +127,17 @@ for (const partName of parts) {
   const filePath = path.join(LIB_DIR, `${partName}.json`);
   if (!fs.existsSync(filePath)) continue;
   
-  const exercises = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const exercises = Array.isArray(raw) ? raw : Object.values(raw);
   console.log(`\n📂 ${partName}: ${exercises.length} exercises`);
   
   for (const ex of exercises) {
     if (ex.clips && Array.isArray(ex.clips)) {
       for (const clip of ex.clips) {
-        if (clip.audioFile && clip.passage) {
+        if (clip.audioFile && (clip.passage || clip.text)) {
           total++;
           process.stdout.write(`  🔊 ${clip.audioFile}...`);
-          if (processAudioFile(clip.passage, clip.audioFile)) {
+          if (processAudioFile(clip.passage || clip.text, clip.audioFile)) {
             done++;
             console.log(' ✅');
           } else {
@@ -147,10 +146,10 @@ for (const partName of parts) {
           }
         }
       }
-    } else if (ex.audioFile && ex.passage) {
+    } else if (ex.audioFile && (ex.passage || ex.text)) {
       total++;
       process.stdout.write(`  🔊 ${ex.audioFile}...`);
-      if (processAudioFile(ex.passage, ex.audioFile)) {
+      if (processAudioFile(ex.passage || ex.text, ex.audioFile)) {
         done++;
         console.log(' ✅');
       } else {

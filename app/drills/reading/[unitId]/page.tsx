@@ -1,4 +1,6 @@
 'use client';
+import dynamic from 'next/dynamic';
+const LottieConfetti = dynamic(() => import('@/components/LottieConfetti'), { ssr: false });
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter, useParams } from 'next/navigation';
@@ -134,6 +136,7 @@ export default function ReadingUnitPage() {
     const pct = total > 0 ? Math.round((score / total) * 100) : 0;
     return (
       <div className={styles.resultScreen}>
+        <LottieConfetti trigger={true} />
         <Trophy size={64} color="#f59e0b" style={{ marginBottom: '1rem' }} />
         <h2 className={styles.resultTitle}>Unit Complete!</h2>
         <p className={styles.resultSubtitle}>You scored {score}/{total} ({pct}%)</p>

@@ -1,5 +1,7 @@
 'use client';
 
+import dynamic from 'next/dynamic';
+const LottieConfetti = dynamic(() => import('@/components/LottieConfetti'), { ssr: false });
 import React, { useState, useEffect, useRef } from 'react';
 import ContextSelector, { ContextItem } from '@/components/ContextSelector';
 import ExamTimer from '@/components/ExamTimer';
@@ -90,6 +92,7 @@ export default function Task1Page() {
   const [examModeActive, setExamModeActive] = useState(false);
   const [newAchievement, setNewAchievement] = useState<Achievement | null>(null);
   const [aiEvaluation, setAiEvaluation] = useState<any>(null);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
   const [spellCheckEnabled, setSpellCheckEnabled] = useState(false);
@@ -201,6 +204,7 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || 'Evaluation error');
       setAiEvaluation(data.evaluation);
+      setShowConfetti(true);
     } catch (err: any) { setAiError(err.message || 'Error connecting to AI'); }
     finally { setAiLoading(false); }
   };
@@ -243,6 +247,8 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
   const wcColor = wordCount < 150 ? T.yellow : wordCount <= 200 ? T.green : T.accent;
 
   return (
+    <>
+    <LottieConfetti trigger={showConfetti} />
     <div style={{ minHeight: '100vh', background: T.bg, color: T.text, fontFamily: "'Inter','Segoe UI',sans-serif", paddingBottom: 100 }}>
       <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -561,5 +567,6 @@ ${state.signOff || 'Regards,\n[My Name]'}`;
         )}
       </div>
     </div>
+    </>
   );
 }

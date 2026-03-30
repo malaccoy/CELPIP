@@ -1,5 +1,5 @@
 // Service Worker for CELPIP AI Coach PWA
-const CACHE_NAME = 'celpip-v12';
+const CACHE_NAME = 'celpip-v68';
 const OFFLINE_URL = '/offline.html';
 
 self.addEventListener('install', (event) => {
@@ -26,8 +26,9 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
-  // Never intercept API, auth, or Next.js internal requests
   const url = new URL(event.request.url);
+
+  // Never intercept API, auth, or Next.js internal requests
   if (url.pathname.startsWith('/api/') ||
       url.pathname.startsWith('/_next/') ||
       url.pathname.startsWith('/auth/')) {
@@ -42,16 +43,34 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets: cache-first
+  // Lottie, Rive, and other dynamic assets: network-first with cache fallback
+  if (url.pathname.startsWith('/lottie/') ||
+      url.pathname.startsWith('/rive/') ||
+      url.pathname.startsWith('/data/')) {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response.ok) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        }
+        return response;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Other static assets (icons, images): stale-while-revalidate
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request).then((response) => {
+      const fetchPromise = fetch(event.request).then((response) => {
         if (response.ok && !response.redirected) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
         return response;
       }).catch(() => {});
+
+      return cached || fetchPromise;
     })
   );
 });

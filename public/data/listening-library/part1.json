@@ -7,7 +7,7 @@
       {
         "audioFile": "part1-01-clip1.mp3",
         "duration": 18,
-        "passage": "Man: Have you noticed that the printer has been jamming frequently lately?\\nWoman: Yes, it seems like every time I try to print something, it gets stuck.\\nMan: Do you think it's a paper issue or something more serious?\\nWoman: I’m not sure, maybe we should check the paper types being used.",
+        "passage": "Tom: Have you noticed that the printer has been jamming frequently lately?\\nSarah: Yes, it seems like every time I try to print something, it gets stuck.\\nTom: Do you think it's a paper issue or something more serious?\\nSarah: I’m not sure, maybe we should check the paper types being used.",
         "questions": [
           {
             "id": 1,
@@ -48,7 +48,7 @@
       {
         "audioFile": "part1-01-clip2.mp3",
         "duration": 21.312,
-        "passage": "Woman: We could try using a different type of paper to see if that helps.\\nMan: That’s a good idea. What about cleaning the printer rollers?\\nWoman: Yes, that might work too. Should we check the printer settings as well?\\nMan: Definitely, maybe the settings need adjusting for the type of paper we’re using.",
+        "passage": "Sarah: We could try using a different type of paper to see if that helps.\\nTom: That’s a good idea. What about cleaning the printer rollers?\\nSarah: Yes, that might work too. Should we check the printer settings as well?\\nTom: Definitely, maybe the settings need adjusting for the type of paper we’re using.",
         "questions": [
           {
             "id": 1,
@@ -89,7 +89,7 @@
       {
         "audioFile": "part1-01-clip3.mp3",
         "duration": 16.488,
-        "passage": "Man: Let’s try the paper change first and clean the rollers after that.\\nWoman: Sounds like a plan! Should we inform IT if it doesn’t work?\\nMan: Yes, that would be wise. Let's tackle this together and see how it goes.",
+        "passage": "Tom: Let’s try the paper change first and clean the rollers after that.\\nSarah: Sounds like a plan! Should we inform IT if it doesn’t work?\\nTom: Yes, that would be wise. Let's tackle this together and see how it goes.",
         "questions": [
           {
             "id": 1,
@@ -127,7 +127,7 @@
       {
         "audioFile": "part1-02-clip1.mp3",
         "duration": 13.8,
-        "passage": "Man: I noticed the kitchen faucet has started leaking again.\nWoman: Yes, it seems to be getting worse. What should we do about it?\nMan: Should we try to fix it ourselves or call a plumber?",
+        "passage": "David: I noticed the kitchen faucet has started leaking again.\nLisa: Yes, it seems to be getting worse. What should we do about it?\nDavid: Should we try to fix it ourselves or call a plumber?",
         "questions": [
           {
             "id": 1,
@@ -168,7 +168,7 @@
       {
         "audioFile": "part1-02-clip2.mp3",
         "duration": 12.12,
-        "passage": "Woman: I think we should look up some DIY methods online.\nMan: That could work, but do we have the right tools?\nWoman: If we don't, we can always just go buy what we need.",
+        "passage": "Lisa: I think we should look up some DIY methods online.\nDavid: That could work, but do we have the right tools?\nLisa: If we don't, we can always just go buy what we need.",
         "questions": [
           {
             "id": 1,
@@ -209,7 +209,7 @@
       {
         "audioFile": "part1-02-clip3.mp3",
         "duration": 12.264,
-        "passage": "Man: Alright, let’s try to fix it ourselves first.\nWoman: Sounds good! We can tackle it this weekend.\nMan: Perfect, then we’ll know if we need a plumber.",
+        "passage": "David: Alright, let’s try to fix it ourselves first.\nLisa: Sounds good! We can tackle it this weekend.\nDavid: Perfect, then we’ll know if we need a plumber.",
         "questions": [
           {
             "id": 1,
@@ -247,7 +247,7 @@
       {
         "audioFile": "part1-03-clip1.mp3",
         "duration": 21.456,
-        "passage": "Man: Hey, we need to talk about our grocery expenses.\nWoman: I agree. It feels like I’m spending a lot more than you are.\nMan: Right? How can we make it fair for both of us?\nWoman: Should we keep track of our receipts?\nMan: Or maybe we can simply divide the total amount?",
+        "passage": "James: Hey, we need to talk about our grocery expenses.\nEmily: I agree. It feels like I’m spending a lot more than you are.\nJames: Right? How can we make it fair for both of us?\nEmily: Should we keep track of our receipts?\nJames: Or maybe we can simply divide the total amount?",
         "questions": [
           {
             "id": 1,
@@ -288,7 +288,7 @@
       {
         "audioFile": "part1-03-clip2.mp3",
         "duration": 21.24,
-        "passage": "Woman: Perhaps we can start by writing down what we each buy?\nMan: That sounds good! Should we set a budget each week?\nWoman: Yes, and if we go over, we can discuss it together.\nMan: Should we set a shopping schedule too?\nWoman: Definitely! That will help us plan better.",
+        "passage": "Emily: Perhaps we can start by writing down what we each buy?\nJames: That sounds good! Should we set a budget each week?\nEmily: Yes, and if we go over, we can discuss it together.\nJames: Should we set a shopping schedule too?\nEmily: Definitely! That will help us plan better.",
         "questions": [
           {
             "id": 1,
@@ -329,7 +329,7 @@
       {
         "audioFile": "part1-03-clip3.mp3",
         "duration": 14.88,
-        "passage": "Man: So we’ll keep track of expenses and shop together?\nWoman: Yes! That sounds fair to both of us.\nMan: Great! When should we start?\nWoman: How about next week?",
+        "passage": "James: So we’ll keep track of expenses and shop together?\nEmily: Yes! That sounds fair to both of us.\nJames: Great! When should we start?\nEmily: How about next week?",
         "questions": [
           {
             "id": 1,
@@ -367,7 +367,7 @@
       {
         "audioFile": "part1-04-clip1.mp3",
         "duration": 22.872,
-        "passage": "Man: Hey, did you see that tree that fell in the driveway? It’s completely blocking us in.\nWoman: Yes, I noticed it this morning! How did it even fall?\nMan: I think it was the strong winds last night. What are we going to do about it?\nWoman: Should we call someone to remove it, or can we manage it ourselves?",
+        "passage": "Michael: Hey, did you see that tree that fell in the driveway? It’s completely blocking us in.\nJessica: Yes, I noticed it this morning! How did it even fall?\nMichael: I think it was the strong winds last night. What are we going to do about it?\nJessica: Should we call someone to remove it, or can we manage it ourselves?",
         "questions": [
           {
             "id": 1,
@@ -408,7 +408,7 @@
       {
         "audioFile": "part1-04-clip2.mp3",
         "duration": 25.392,
-        "passage": "Woman: I think we should call a tree removal service. They have the right tools for the job.\nMan: That sounds sensible, but it might take a while for them to arrive. Should we try to clear some branches ourselves in the meantime?\nWoman: That could help. Do you have any tools we can use?\nMan: Yes, I have a chainsaw and some gloves. Do you want to use them?",
+        "passage": "Jessica: I think we should call a tree removal service. They have the right tools for the job.\nMichael: That sounds sensible, but it might take a while for them to arrive. Should we try to clear some branches ourselves in the meantime?\nJessica: That could help. Do you have any tools we can use?\nMichael: Yes, I have a chainsaw and some gloves. Do you want to use them?",
         "questions": [
           {
             "id": 1,
@@ -449,7 +449,7 @@
       {
         "audioFile": "part1-04-clip3.mp3",
         "duration": 17.736,
-        "passage": "Man: Alright, let’s call the service first and then see what we can do ourselves as well.\nWoman: Agreed, that way we can handle it more quickly.\nMan: Perfect! When should we make the call?\nWoman: Let’s do it right now before it gets too late.",
+        "passage": "Michael: Alright, let’s call the service first and then see what we can do ourselves as well.\nJessica: Agreed, that way we can handle it more quickly.\nMichael: Perfect! When should we make the call?\nJessica: Let’s do it right now before it gets too late.",
         "questions": [
           {
             "id": 1,
@@ -487,7 +487,7 @@
       {
         "audioFile": "part1-05-clip1.mp3",
         "duration": 21.72,
-        "passage": "Man: Hey, I noticed that the blender we bought is not working properly.  \nWoman: Really? What seems to be the problem with it?  \nMan: It won't turn on at all. Should we take it back?  \nWoman: Yes, but do you have the receipt?  \nMan: I think so. Where should we go first?",
+        "passage": "Kevin: Hey, I noticed that the blender we bought is not working properly.  \nAmanda: Really? What seems to be the problem with it?  \nKevin: It won't turn on at all. Should we take it back?  \nAmanda: Yes, but do you have the receipt?  \nKevin: I think so. Where should we go first?",
         "questions": [
           {
             "id": 1,
@@ -528,7 +528,7 @@
       {
         "audioFile": "part1-05-clip2.mp3",
         "duration": 21.648,
-        "passage": "Woman: We could either go to the store today or call customer service.  \nMan: I prefer going to the store so we can explain in person.  \nWoman: That makes sense. Do you remember the store's return policy?  \nMan: Yes, they have a 30-day return policy, which is good.  \nWoman: Should we bring the box too?",
+        "passage": "Amanda: We could either go to the store today or call customer service.  \nKevin: I prefer going to the store so we can explain in person.  \nAmanda: That makes sense. Do you remember the store's return policy?  \nKevin: Yes, they have a 30-day return policy, which is good.  \nAmanda: Should we bring the box too?",
         "questions": [
           {
             "id": 1,
@@ -569,7 +569,7 @@
       {
         "audioFile": "part1-05-clip3.mp3",
         "duration": 11.352,
-        "passage": "Man: Let's go to the store this afternoon then.  \nWoman: Great, I’ll grab the box and receipt.  \nMan: Perfect! Should we go together by bus?",
+        "passage": "Kevin: Let's go to the store this afternoon then.  \nAmanda: Great, I’ll grab the box and receipt.  \nKevin: Perfect! Should we go together by bus?",
         "questions": [
           {
             "id": 1,
@@ -607,7 +607,7 @@
       {
         "audioFile": "part1-06-clip1.mp3",
         "duration": 19.44,
-        "passage": "Man: Hey, I noticed the meeting room is booked at the same time for two different meetings next week.\nWoman: Really? That's a problem. Which meetings are conflicting?\nMan: We have the team presentation and the client update scheduled simultaneously. What should we do?",
+        "passage": "Ryan: Hey, I noticed the meeting room is booked at the same time for two different meetings next week.\nNicole: Really? That's a problem. Which meetings are conflicting?\nRyan: We have the team presentation and the client update scheduled simultaneously. What should we do?",
         "questions": [
           {
             "id": 1,
@@ -648,7 +648,7 @@
       {
         "audioFile": "part1-06-clip2.mp3",
         "duration": 18.6,
-        "passage": "Woman: We could ask the team to shift their presentation to a later time.\nMan: That's a good idea! Or we could let the clients know about the conflict and reschedule their meeting.\nWoman: True, but we need to make sure everyone is on board with the change. What do you think?",
+        "passage": "Nicole: We could ask the team to shift their presentation to a later time.\nRyan: That's a good idea! Or we could let the clients know about the conflict and reschedule their meeting.\nNicole: True, but we need to make sure everyone is on board with the change. What do you think?",
         "questions": [
           {
             "id": 1,
@@ -689,7 +689,7 @@
       {
         "audioFile": "part1-06-clip3.mp3",
         "duration": 17.784,
-        "passage": "Man: Let’s send an email to the team first about the presentation reschedule.\nWoman: Agreed! I’ll draft the message. When do you think we should aim for?\nMan: How about Thursday afternoon? That gives everyone time to adjust.",
+        "passage": "Ryan: Let’s send an email to the team first about the presentation reschedule.\nNicole: Agreed! I’ll draft the message. When do you think we should aim for?\nRyan: How about Thursday afternoon? That gives everyone time to adjust.",
         "questions": [
           {
             "id": 1,
@@ -725,7 +725,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been feeling overwhelmed with my workload lately. It's hard to keep up with all the deadlines.  \nWoman: I understand. Have you considered talking to your manager about it? Maybe they can adjust your responsibilities.  \nMan: That's a good idea, but I worry it might seem like I'm not capable of handling my tasks.  \nWoman: Sometimes it's better to communicate than to struggle in silence. Your well-being is important.  \nMan: True, but I also don’t want to seem like I'm not a team player.  \n",
+        "passage": "Chris: I've been feeling overwhelmed with my workload lately. It's hard to keep up with all the deadlines.  \nRachel: I understand. Have you considered talking to your manager about it? Maybe they can adjust your responsibilities.  \nChris: That's a good idea, but I worry it might seem like I'm not capable of handling my tasks.  \nRachel: Sometimes it's better to communicate than to struggle in silence. Your well-being is important.  \nChris: True, but I also don’t want to seem like I'm not a team player.  \n",
         "questions": [
           {
             "id": 1,
@@ -766,7 +766,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: I think many people experience similar feelings. It’s not uncommon.  \nMan: That makes me feel a little better. But what if my workload doesn’t decrease after I talk to my manager?  \nWoman: You could also look into time management workshops. They can provide you with helpful strategies.  \nMan: I’ve heard about those. Do you think they really help?  \nWoman: Absolutely! Learning to prioritize tasks can make a huge difference.  \nMan: That sounds promising. I might explore that option.  \n",
+        "passage": "Rachel: I think many people experience similar feelings. It’s not uncommon.  \nChris: That makes me feel a little better. But what if my workload doesn’t decrease after I talk to my manager?  \nRachel: You could also look into time management workshops. They can provide you with helpful strategies.  \nChris: I’ve heard about those. Do you think they really help?  \nRachel: Absolutely! Learning to prioritize tasks can make a huge difference.  \nChris: That sounds promising. I might explore that option.  \n",
         "questions": [
           {
             "id": 4,
@@ -807,7 +807,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I’ll definitely check out those workshops. It’s nice to know I’m not alone in this.  \nWoman: Exactly! Remember, reaching out for help is a sign of strength, not weakness.  \nMan: Thanks for your support. I feel more motivated to tackle my workload now.  \nWoman: That’s the spirit! Just take it one step at a time.  \nMan: I will! I appreciate your advice.  \n",
+        "passage": "Chris: I’ll definitely check out those workshops. It’s nice to know I’m not alone in this.  \nRachel: Exactly! Remember, reaching out for help is a sign of strength, not weakness.  \nChris: Thanks for your support. I feel more motivated to tackle my workload now.  \nRachel: That’s the spirit! Just take it one step at a time.  \nChris: I will! I appreciate your advice.  \n",
         "questions": [
           {
             "id": 7,
@@ -846,7 +846,7 @@
       {
         "audioFile": "part1-08-clip1.mp3",
         "duration": 21.912,
-        "passage": "Man: I've noticed my son has been struggling with math lately. \nWoman: Yes, I've seen that too. He seems confused during lessons. \nMan: What do you think is causing this issue? \nWoman: It might be his understanding of the basic concepts. \nMan: How can we find out what he specifically struggles with?",
+        "passage": "Brian: I've noticed my son has been struggling with math lately. \nLaura: Yes, I've seen that too. He seems confused during lessons. \nBrian: What do you think is causing this issue? \nLaura: It might be his understanding of the basic concepts. \nBrian: How can we find out what he specifically struggles with?",
         "questions": [
           {
             "id": 1,
@@ -887,7 +887,7 @@
       {
         "audioFile": "part1-08-clip2.mp3",
         "duration": 28.008,
-        "passage": "Woman: We could consider extra tutoring to help him catch up. \nMan: That sounds good! Do you have suggestions for local tutors? \nWoman: Yes, I can recommend a few. We could also try some online resources. \nMan: What about setting up a consistent study schedule at home? \nWoman: That could help him stay organized and focused. \nMan: Would you be available to discuss this with him?",
+        "passage": "Laura: We could consider extra tutoring to help him catch up. \nBrian: That sounds good! Do you have suggestions for local tutors? \nLaura: Yes, I can recommend a few. We could also try some online resources. \nBrian: What about setting up a consistent study schedule at home? \nLaura: That could help him stay organized and focused. \nBrian: Would you be available to discuss this with him?",
         "questions": [
           {
             "id": 4,
@@ -928,7 +928,7 @@
       {
         "audioFile": "part1-08-clip3.mp3",
         "duration": 16.104,
-        "passage": "Woman: I think we have a solid plan now. \nMan: Yes, I feel more confident about it. \nWoman: Should we schedule a follow-up meeting in a month? \nMan: That sounds perfect. Let’s touch base then to see how he’s progressing.",
+        "passage": "Laura: I think we have a solid plan now. \nBrian: Yes, I feel more confident about it. \nLaura: Should we schedule a follow-up meeting in a month? \nBrian: That sounds perfect. Let’s touch base then to see how he’s progressing.",
         "questions": [
           {
             "id": 7,
@@ -966,7 +966,7 @@
       {
         "audioFile": "part1-09-clip1.mp3",
         "duration": 20.28,
-        "passage": "Man: I just found out our Airbnb in Halifax is double-booked for the weekend. \nWoman: Oh no! What are we going to do? \nMan: Should we try to contact the host for a solution? \nWoman: Or is it better to find a different place altogether? \nMan: Do you think we'll get a refund for this?",
+        "passage": "Mark: I just found out our Airbnb in Halifax is double-booked for the weekend. \nKaren: Oh no! What are we going to do? \nMark: Should we try to contact the host for a solution? \nKaren: Or is it better to find a different place altogether? \nMark: Do you think we'll get a refund for this?",
         "questions": [
           {
             "id": 1,
@@ -1007,7 +1007,7 @@
       {
         "audioFile": "part1-09-clip2.mp3",
         "duration": 21.72,
-        "passage": "Woman: I think contacting the host is a start. They might have a solution. \nMan: That's true, but what if they don’t respond in time? \nWoman: We could search for nearby Airbnbs and book another one. \nMan: Should we also look at hotels as an option? \nWoman: It might be more expensive, but it's worth considering.",
+        "passage": "Karen: I think contacting the host is a start. They might have a solution. \nMark: That's true, but what if they don’t respond in time? \nKaren: We could search for nearby Airbnbs and book another one. \nMark: Should we also look at hotels as an option? \nKaren: It might be more expensive, but it's worth considering.",
         "questions": [
           {
             "id": 1,
@@ -1048,7 +1048,7 @@
       {
         "audioFile": "part1-09-clip3.mp3",
         "duration": 15.936,
-        "passage": "Man: So, what do you think we should do in the end? \nWoman: I believe we should contact the host first. \nMan: Then if that doesn’t work, we can search for another place. \nWoman: Agreed! Let’s make those calls right away.",
+        "passage": "Mark: So, what do you think we should do in the end? \nKaren: I believe we should contact the host first. \nMark: Then if that doesn’t work, we can search for another place. \nKaren: Agreed! Let’s make those calls right away.",
         "questions": [
           {
             "id": 1,
@@ -1086,7 +1086,7 @@
       {
         "audioFile": "part1-10-clip1.mp3",
         "duration": 17.88,
-        "passage": "Man: Hey, have you heard that Mike is sick and won't be able to work for a couple of weeks?\nWoman: Yes, I heard. We need to figure out how to cover his shifts.\nMan: It’s going to be tough since he worked evenings. Who do you think can take over those hours?",
+        "passage": "Steven: Hey, have you heard that Mike is sick and won't be able to work for a couple of weeks?\nMichelle: Yes, I heard. We need to figure out how to cover his shifts.\nSteven: It’s going to be tough since he worked evenings. Who do you think can take over those hours?",
         "questions": [
           {
             "id": 1,
@@ -1127,7 +1127,7 @@
       {
         "audioFile": "part1-10-clip2.mp3",
         "duration": 19.224,
-        "passage": "Woman: I think Jessica might be able to help. She has experience with evening shifts.\nMan: That’s a good point. We could also consider swapping shifts with some of our other coworkers.\nWoman: Right! But we need to make sure it doesn't overload anyone else.",
+        "passage": "Michelle: I think Jessica might be able to help. She has experience with evening shifts.\nSteven: That’s a good point. We could also consider swapping shifts with some of our other coworkers.\nMichelle: Right! But we need to make sure it doesn't overload anyone else.",
         "questions": [
           {
             "id": 1,
@@ -1168,7 +1168,7 @@
       {
         "audioFile": "part1-10-clip3.mp3",
         "duration": 13.992,
-        "passage": "Man: So, let’s reach out to Jessica and see if she can take those shifts.\nWoman: I’ll also check with the others about possible shift swaps.\nMan: Great! Let’s finalize it by the end of the day.",
+        "passage": "Steven: So, let’s reach out to Jessica and see if she can take those shifts.\nMichelle: I’ll also check with the others about possible shift swaps.\nSteven: Great! Let’s finalize it by the end of the day.",
         "questions": [
           {
             "id": 1,
@@ -1206,7 +1206,7 @@
       {
         "audioFile": "part1-11-clip1.mp3",
         "duration": 14.304,
-        "passage": "Man: Have you noticed how loud our upstairs neighbour has been lately?\nWoman: Yes, it's hard to concentrate with all that noise.\nMan: What do you think we should do about it? Should we talk to them directly?",
+        "passage": "Andrew: Have you noticed how loud our upstairs neighbour has been lately?\nStephanie: Yes, it's hard to concentrate with all that noise.\nAndrew: What do you think we should do about it? Should we talk to them directly?",
         "questions": [
           {
             "id": 1,
@@ -1247,7 +1247,7 @@
       {
         "audioFile": "part1-11-clip2.mp3",
         "duration": 13.992,
-        "passage": "Woman: Maybe we should write a letter instead of talking to them.\nMan: That's a good idea! What should we say in the letter?\nWoman: We could mention the specific times they're noisy and how it affects us.",
+        "passage": "Stephanie: Maybe we should write a letter instead of talking to them.\nAndrew: That's a good idea! What should we say in the letter?\nStephanie: We could mention the specific times they're noisy and how it affects us.",
         "questions": [
           {
             "id": 4,
@@ -1288,7 +1288,7 @@
       {
         "audioFile": "part1-11-clip3.mp3",
         "duration": 7.824,
-        "passage": "Man: So we’ve decided to write that letter, right?\nWoman: Yes, and let's make sure to keep it polite but firm.",
+        "passage": "Andrew: So we’ve decided to write that letter, right?\nStephanie: Yes, and let's make sure to keep it polite but firm.",
         "questions": [
           {
             "id": 7,
@@ -1326,7 +1326,7 @@
       {
         "audioFile": "part1-12-clip1.mp3",
         "duration": 19.464,
-        "passage": "Man: Hey, have you noticed that the heating system isn't working properly? \nWoman: Yes, it's been cold in here for a couple of days. \nMan: Do you think we should call the landlord, or is it something we can fix ourselves? \nWoman: I’m not sure. Have you looked at the thermostat at all?",
+        "passage": "Daniel: Hey, have you noticed that the heating system isn't working properly? \nRebecca: Yes, it's been cold in here for a couple of days. \nDaniel: Do you think we should call the landlord, or is it something we can fix ourselves? \nRebecca: I’m not sure. Have you looked at the thermostat at all?",
         "questions": [
           {
             "id": 1,
@@ -1367,7 +1367,7 @@
       {
         "audioFile": "part1-12-clip2.mp3",
         "duration": 22.704,
-        "passage": "Woman: Maybe we should check the radiator first to see if it’s clogged? \nMan: That sounds like a good idea. Should we also look into what it costs to hire a technician? \nWoman: Yes, but I’d rather try fixing it ourselves first—it's probably a simple problem. \nMan: Alright, let's see if we can find some online tutorials to guide us.",
+        "passage": "Rebecca: Maybe we should check the radiator first to see if it’s clogged? \nDaniel: That sounds like a good idea. Should we also look into what it costs to hire a technician? \nRebecca: Yes, but I’d rather try fixing it ourselves first—it's probably a simple problem. \nDaniel: Alright, let's see if we can find some online tutorials to guide us.",
         "questions": [
           {
             "id": 1,
@@ -1408,7 +1408,7 @@
       {
         "audioFile": "part1-12-clip3.mp3",
         "duration": 21.48,
-        "passage": "Man: After checking, it looks like it might just need bleeding. \nWoman: Great! So, do you want to try that first before calling anyone? \nMan: Yes, let’s do that. I can grab the tools we need from the garage. \nWoman: Perfect! I’ll check online for some instructions.",
+        "passage": "Daniel: After checking, it looks like it might just need bleeding. \nRebecca: Great! So, do you want to try that first before calling anyone? \nDaniel: Yes, let’s do that. I can grab the tools we need from the garage. \nRebecca: Perfect! I’ll check online for some instructions.",
         "questions": [
           {
             "id": 1,
@@ -1444,7 +1444,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been reading about the increase in mental health issues among students lately. It’s concerning.  \nWoman: Yes, especially with the pressure of exams and the pandemic's impact. We need to find a way to support them better.  \nMan: I agree. Maybe we should propose more counseling services at our college?  \nWoman: That could help, but we also need to raise awareness about these services. Many students don't even know they exist.",
+        "passage": "Jason: I've been reading about the increase in mental health issues among students lately. It’s concerning.  \nAshley: Yes, especially with the pressure of exams and the pandemic's impact. We need to find a way to support them better.  \nJason: I agree. Maybe we should propose more counseling services at our college?  \nAshley: That could help, but we also need to raise awareness about these services. Many students don't even know they exist.",
         "questions": [
           {
             "id": 1,
@@ -1485,7 +1485,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Exactly, maybe we can create a campaign to inform students about the counseling services available.  \nWoman: That sounds like a great idea! We could use social media and organize some events.  \nMan: Yes, and we should partner with student organizations to reach a larger audience.  \nWoman: I like that approach. It’s important for students to feel they’re not alone in this.",
+        "passage": "Jason: Exactly, maybe we can create a campaign to inform students about the counseling services available.  \nAshley: That sounds like a great idea! We could use social media and organize some events.  \nJason: Yes, and we should partner with student organizations to reach a larger audience.  \nAshley: I like that approach. It’s important for students to feel they’re not alone in this.",
         "questions": [
           {
             "id": 4,
@@ -1526,7 +1526,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: We should also consider how to evaluate the effectiveness of our campaign.  \nWoman: Absolutely! Maybe we can gather feedback from students after the events.  \nMan: That would be useful. If we see positive changes, we can suggest implementing permanent services.  \nWoman: Right, and if we can demonstrate the impact, it will be easier to get funding for the future.",
+        "passage": "Jason: We should also consider how to evaluate the effectiveness of our campaign.  \nAshley: Absolutely! Maybe we can gather feedback from students after the events.  \nJason: That would be useful. If we see positive changes, we can suggest implementing permanent services.  \nAshley: Right, and if we can demonstrate the impact, it will be easier to get funding for the future.",
         "questions": [
           {
             "id": 7,
@@ -1565,7 +1565,7 @@
       {
         "audioFile": "part1-14-clip1.mp3",
         "duration": 19.056,
-        "passage": "Man: It's concerning that we missed the project deadline. What happened? \nWoman: I believe we underestimated the time needed for revisions. \nMan: Do you think we need to discuss this with the manager? \nWoman: Yes, we should find out how to proceed without affecting our reputation.",
+        "passage": "Matt: It's concerning that we missed the project deadline. What happened? \nJennifer: I believe we underestimated the time needed for revisions. \nMatt: Do you think we need to discuss this with the manager? \nJennifer: Yes, we should find out how to proceed without affecting our reputation.",
         "questions": [
           {
             "id": 1,
@@ -1606,7 +1606,7 @@
       {
         "audioFile": "part1-14-clip2.mp3",
         "duration": 19.416,
-        "passage": "Woman: So how can we fix this? \nMan: I think we should prioritize the most critical tasks first. \nWoman: That makes sense. What if we set up a meeting with the team? \nMan: Great idea! We can brainstorm ideas and ensure everyone is on the same page.",
+        "passage": "Jennifer: So how can we fix this? \nMatt: I think we should prioritize the most critical tasks first. \nJennifer: That makes sense. What if we set up a meeting with the team? \nMatt: Great idea! We can brainstorm ideas and ensure everyone is on the same page.",
         "questions": [
           {
             "id": 1,
@@ -1647,7 +1647,7 @@
       {
         "audioFile": "part1-14-clip3.mp3",
         "duration": 18.816,
-        "passage": "Man: So, we agree, right? A team meeting is the best course of action? \nWoman: Absolutely! We need to get everyone involved. \nMan: I'll schedule it for tomorrow. \nWoman: Perfect! Let's hope we can resolve this quickly.",
+        "passage": "Matt: So, we agree, right? A team meeting is the best course of action? \nJennifer: Absolutely! We need to get everyone involved. \nMatt: I'll schedule it for tomorrow. \nJennifer: Perfect! Let's hope we can resolve this quickly.",
         "questions": [
           {
             "id": 1,
@@ -1685,7 +1685,7 @@
       {
         "audioFile": "part1-15-clip1.mp3",
         "duration": 20.04,
-        "passage": "Man: I just heard that the school will be closed for the next two weeks. What are we going to do about the kids?\nWoman: I know, it's a bit overwhelming. Should we take time off work or find someone to help?\nMan: That’s the question. Do we have anyone reliable we can ask for help?",
+        "passage": "Patrick: I just heard that the school will be closed for the next two weeks. What are we going to do about the kids?\nNatalie: I know, it's a bit overwhelming. Should we take time off work or find someone to help?\nPatrick: That’s the question. Do we have anyone reliable we can ask for help?",
         "questions": [
           {
             "id": 1,
@@ -1726,7 +1726,7 @@
       {
         "audioFile": "part1-15-clip2.mp3",
         "duration": 18.456,
-        "passage": "Woman: Maybe we could alternate our work schedules?\nMan: That could work! But what about the days when both of us have meetings?\nWoman: True. Should we look into hiring a babysitter for those days?\nMan: Yes, that sounds like a good backup plan.",
+        "passage": "Natalie: Maybe we could alternate our work schedules?\nPatrick: That could work! But what about the days when both of us have meetings?\nNatalie: True. Should we look into hiring a babysitter for those days?\nPatrick: Yes, that sounds like a good backup plan.",
         "questions": [
           {
             "id": 1,
@@ -1767,7 +1767,7 @@
       {
         "audioFile": "part1-15-clip3.mp3",
         "duration": 14.64,
-        "passage": "Man: So we’ll alternate our schedules and hire a babysitter on those busy days?\nWoman: Exactly, that sounds like a solid plan.\nMan: Great! Let’s start looking for a babysitter online tonight.",
+        "passage": "Patrick: So we’ll alternate our schedules and hire a babysitter on those busy days?\nNatalie: Exactly, that sounds like a solid plan.\nPatrick: Great! Let’s start looking for a babysitter online tonight.",
         "questions": [
           {
             "id": 1,
@@ -1805,7 +1805,7 @@
       {
         "audioFile": "part1-16-clip1.mp3",
         "duration": 23.232,
-        "passage": "Man: I can't believe our neighbor parked in front of my driveway again.\nWoman: It's really frustrating. Do you think they realize it's a problem?\nMan: I doubt it. What are we going to do about it?\nWoman: Should we just let it go, or should we talk to them directly?\nMan: Is there a chance they might respond well if we bring it up?",
+        "passage": "Adam: I can't believe our neighbor parked in front of my driveway again.\nMegan: It's really frustrating. Do you think they realize it's a problem?\nAdam: I doubt it. What are we going to do about it?\nMegan: Should we just let it go, or should we talk to them directly?\nAdam: Is there a chance they might respond well if we bring it up?",
         "questions": [
           {
             "id": 1,
@@ -1846,7 +1846,7 @@
       {
         "audioFile": "part1-16-clip2.mp3",
         "duration": 26.832,
-        "passage": "Woman: Maybe we should have a friendly chat with them first.\nMan: That sounds reasonable. Should we do it together or separately?\nWoman: Together might be better; it shows we’re united. What about suggesting a designated spot?\nMan: That's a good idea. Do you think they'd agree to it?\nWoman: Hopefully! But we should be prepared for any pushback.",
+        "passage": "Megan: Maybe we should have a friendly chat with them first.\nAdam: That sounds reasonable. Should we do it together or separately?\nMegan: Together might be better; it shows we’re united. What about suggesting a designated spot?\nAdam: That's a good idea. Do you think they'd agree to it?\nMegan: Hopefully! But we should be prepared for any pushback.",
         "questions": [
           {
             "id": 1,
@@ -1887,7 +1887,7 @@
       {
         "audioFile": "part1-16-clip3.mp3",
         "duration": 20.808,
-        "passage": "Man: So, we’ll talk to them this weekend.\nWoman: Yes, and stay calm during the conversation.\nMan: If all goes well, we could set up some guidelines.\nWoman: Exactly! It would help everyone feel more comfortable.\nMan: And we might even avoid this problem in the future.",
+        "passage": "Adam: So, we’ll talk to them this weekend.\nMegan: Yes, and stay calm during the conversation.\nAdam: If all goes well, we could set up some guidelines.\nMegan: Exactly! It would help everyone feel more comfortable.\nAdam: And we might even avoid this problem in the future.",
         "questions": [
           {
             "id": 1,
@@ -1925,7 +1925,7 @@
       {
         "audioFile": "part1-17-clip1.mp3",
         "duration": 21.984,
-        "passage": "Man: So, we need to figure out how to split the costs for the camping trip.\nWoman: Yes, that’s a good point. How much will the total cost be?\nMan: I think it will be around $400. How many people are going?\nWoman: I believe it's six of us. Should we divide the costs equally?",
+        "passage": "Tyler: So, we need to figure out how to split the costs for the camping trip.\nSamantha: Yes, that’s a good point. How much will the total cost be?\nTyler: I think it will be around $400. How many people are going?\nSamantha: I believe it's six of us. Should we divide the costs equally?",
         "questions": [
           {
             "id": 1,
@@ -1966,7 +1966,7 @@
       {
         "audioFile": "part1-17-clip2.mp3",
         "duration": 19.776,
-        "passage": "Woman: I think splitting it equally is fair. What do you think?\nMan: I agree, but should we also consider who’s bringing supplies?\nWoman: That's true. Maybe we can adjust for that later?\nMan: Good idea! Should we keep a list of who brings what?",
+        "passage": "Samantha: I think splitting it equally is fair. What do you think?\nTyler: I agree, but should we also consider who’s bringing supplies?\nSamantha: That's true. Maybe we can adjust for that later?\nTyler: Good idea! Should we keep a list of who brings what?",
         "questions": [
           {
             "id": 1,
@@ -2007,7 +2007,7 @@
       {
         "audioFile": "part1-17-clip3.mp3",
         "duration": 18.048,
-        "passage": "Man: So if we split the costs equally, each person will pay about $67.\nWoman: Let’s go with that. Should we write it down?\nMan: Yes, that would help us keep track of everything.\nWoman: Great! We’re all set then!",
+        "passage": "Tyler: So if we split the costs equally, each person will pay about $67.\nSamantha: Let’s go with that. Should we write it down?\nTyler: Yes, that would help us keep track of everything.\nSamantha: Great! We’re all set then!",
         "questions": [
           {
             "id": 1,
@@ -2045,7 +2045,7 @@
       {
         "audioFile": "part1-18-clip1.mp3",
         "duration": 19.248,
-        "passage": "Man: Did you notice that the internet is down again? \nWoman: Yes, it’s been a real hassle all morning. \nMan: What do you think is causing the issue this time? \nWoman: I’m not sure, but it seems like the network goes down frequently lately. \nMan: Should we report it to IT?",
+        "passage": "Nathan: Did you notice that the internet is down again? \nHeather: Yes, it’s been a real hassle all morning. \nNathan: What do you think is causing the issue this time? \nHeather: I’m not sure, but it seems like the network goes down frequently lately. \nNathan: Should we report it to IT?",
         "questions": [
           {
             "id": 1,
@@ -2086,7 +2086,7 @@
       {
         "audioFile": "part1-18-clip2.mp3",
         "duration": 22.536,
-        "passage": "Woman: I think we should call IT right away. \nMan: That could work, but what if they take too long to respond? \nWoman: We could also try resetting the router ourselves. \nMan: Good idea! But we need to check if anyone else is using the internet first. \nWoman: True, that could help us understand the extent of the issue.",
+        "passage": "Heather: I think we should call IT right away. \nNathan: That could work, but what if they take too long to respond? \nHeather: We could also try resetting the router ourselves. \nNathan: Good idea! But we need to check if anyone else is using the internet first. \nHeather: True, that could help us understand the extent of the issue.",
         "questions": [
           {
             "id": 1,
@@ -2127,7 +2127,7 @@
       {
         "audioFile": "part1-18-clip3.mp3",
         "duration": 21.072,
-        "passage": "Man: After considering our options, let’s call IT first. \nWoman: Agreed. If they don’t respond in an hour, we can try resetting it ourselves. \nMan: Sounds like a plan! Should we send out an email to the team about the situation? \nWoman: Yes, that would keep everyone informed.",
+        "passage": "Nathan: After considering our options, let’s call IT first. \nHeather: Agreed. If they don’t respond in an hour, we can try resetting it ourselves. \nNathan: Sounds like a plan! Should we send out an email to the team about the situation? \nHeather: Yes, that would keep everyone informed.",
         "questions": [
           {
             "id": 1,
@@ -2165,7 +2165,7 @@
       {
         "audioFile": "part1-19-clip1.mp3",
         "duration": 20.616,
-        "passage": "Man: I can't believe the car won't start again this winter.\nWoman: I know, it seems to happen every year. What do you think is the problem?\nMan: Maybe it's the battery. Do we even have jumper cables?\nWoman: I think they’re in the garage. Should we call a mechanic now?",
+        "passage": "Brandon: I can't believe the car won't start again this winter.\nChristina: I know, it seems to happen every year. What do you think is the problem?\nBrandon: Maybe it's the battery. Do we even have jumper cables?\nChristina: I think they’re in the garage. Should we call a mechanic now?",
         "questions": [
           {
             "id": 1,
@@ -2206,7 +2206,7 @@
       {
         "audioFile": "part1-19-clip2.mp3",
         "duration": 20.688,
-        "passage": "Woman: We could try jumping the battery before we call anyone.\nMan: That's true. If that doesn’t work, should we take it to a garage?\nWoman: Or we could look for a mobile mechanic. Do you know any nearby?\nMan: I think I’ve seen some ads online. Should we check those out?",
+        "passage": "Christina: We could try jumping the battery before we call anyone.\nBrandon: That's true. If that doesn’t work, should we take it to a garage?\nChristina: Or we could look for a mobile mechanic. Do you know any nearby?\nBrandon: I think I’ve seen some ads online. Should we check those out?",
         "questions": [
           {
             "id": 1,
@@ -2247,7 +2247,7 @@
       {
         "audioFile": "part1-19-clip3.mp3",
         "duration": 19.176,
-        "passage": "Man: I think we should just jump the battery first and see if that works.\nWoman: Agreed! If it doesn’t work, we’ll call that mobile mechanic.\nMan: Sounds like a plan. Do we have time to do that today?\nWoman: Yes, let’s do it before it gets too cold!",
+        "passage": "Brandon: I think we should just jump the battery first and see if that works.\nChristina: Agreed! If it doesn’t work, we’ll call that mobile mechanic.\nBrandon: Sounds like a plan. Do we have time to do that today?\nChristina: Yes, let’s do it before it gets too cold!",
         "questions": [
           {
             "id": 1,
@@ -2285,7 +2285,7 @@
       {
         "audioFile": "part1-20-clip1.mp3",
         "duration": 21.888,
-        "passage": "Man: Hey, did you notice the washing machine isn't working?  \nWoman: Yes, I tried to use it, but it won't turn on.  \nMan: What do you think we should do about it?  \nWoman: Should we call a repair service or perhaps check for a quick fix ourselves?  \nMan: That's a good point. Do you remember when it stopped working?",
+        "passage": "Scott: Hey, did you notice the washing machine isn't working?  \nAngela: Yes, I tried to use it, but it won't turn on.  \nScott: What do you think we should do about it?  \nAngela: Should we call a repair service or perhaps check for a quick fix ourselves?  \nScott: That's a good point. Do you remember when it stopped working?",
         "questions": [
           {
             "id": 1,
@@ -2326,7 +2326,7 @@
       {
         "audioFile": "part1-20-clip2.mp3",
         "duration": 25.536,
-        "passage": "Woman: I guess we could try to find a manual online.  \nMan: That could work! What if we don't find anything useful?  \nWoman: We should definitely have a backup plan. How about scheduling a repair for next week?  \nMan: Sounds reasonable. Should we find out the repair service's hours first?  \nWoman: Yes, that way we know when to call.",
+        "passage": "Angela: I guess we could try to find a manual online.  \nScott: That could work! What if we don't find anything useful?  \nAngela: We should definitely have a backup plan. How about scheduling a repair for next week?  \nScott: Sounds reasonable. Should we find out the repair service's hours first?  \nAngela: Yes, that way we know when to call.",
         "questions": [
           {
             "id": 1,
@@ -2367,7 +2367,7 @@
       {
         "audioFile": "part1-20-clip3.mp3",
         "duration": 15.768,
-        "passage": "Man: Alright, let's call the repair service tomorrow morning.  \nWoman: Yes, and we’ll make sure to check their hours first.  \nMan: Great, so we're all set then!  \nWoman: Exactly! Do you want me to make the call?",
+        "passage": "Scott: Alright, let's call the repair service tomorrow morning.  \nAngela: Yes, and we’ll make sure to check their hours first.  \nScott: Great, so we're all set then!  \nAngela: Exactly! Do you want me to make the call?",
         "questions": [
           {
             "id": 1,
@@ -2405,7 +2405,7 @@
       {
         "audioFile": "part1-21-clip1.mp3",
         "duration": 23.784,
-        "passage": "Man: Hey, I think we have a flat tire. Can you check the back tire? \nWoman: Sure, let me take a look. Oh no, it's completely flat! How did this happen? \nMan: I don't know, but we're in the middle of nowhere. What should we do now? \nWoman: Can we call for help, or do we have a spare tire?",
+        "passage": "Tom: Hey, I think we have a flat tire. Can you check the back tire? \nSarah: Sure, let me take a look. Oh no, it's completely flat! How did this happen? \nTom: I don't know, but we're in the middle of nowhere. What should we do now? \nSarah: Can we call for help, or do we have a spare tire?",
         "questions": [
           {
             "id": 1,
@@ -2446,7 +2446,7 @@
       {
         "audioFile": "part1-21-clip2.mp3",
         "duration": 21.24,
-        "passage": "Woman: So, what are our options for fixing this? \nMan: We could try changing the tire ourselves. Do we have the tools? \nWoman: I think we do, but I’m not sure how to do it. Should we just call for a tow? \nMan: That could take a while. Maybe we should attempt to fix it first?",
+        "passage": "Sarah: So, what are our options for fixing this? \nTom: We could try changing the tire ourselves. Do we have the tools? \nSarah: I think we do, but I’m not sure how to do it. Should we just call for a tow? \nTom: That could take a while. Maybe we should attempt to fix it first?",
         "questions": [
           {
             "id": 1,
@@ -2487,7 +2487,7 @@
       {
         "audioFile": "part1-21-clip3.mp3",
         "duration": 18.648,
-        "passage": "Man: I think it's worth trying to change the tire ourselves. \nWoman: Alright, let's do it! Do you remember how to use the jack? \nMan: Yes, I do. If we work together, we can get this done fast. \nWoman: Okay, let’s give it a shot!",
+        "passage": "Tom: I think it's worth trying to change the tire ourselves. \nSarah: Alright, let's do it! Do you remember how to use the jack? \nTom: Yes, I do. If we work together, we can get this done fast. \nSarah: Okay, let’s give it a shot!",
         "questions": [
           {
             "id": 1,
@@ -2525,7 +2525,7 @@
       {
         "audioFile": "part1-22-clip1.mp3",
         "duration": 20.352,
-        "passage": "Man: Have you seen the basement? It’s completely flooded after the rain last night.\nWoman: Yes, I noticed when I went down to get some supplies. What are we going to do about it?\nMan: We need to report it to the building manager right away. Do you think we should check the damage first?",
+        "passage": "David: Have you seen the basement? It’s completely flooded after the rain last night.\nLisa: Yes, I noticed when I went down to get some supplies. What are we going to do about it?\nDavid: We need to report it to the building manager right away. Do you think we should check the damage first?",
         "questions": [
           {
             "id": 1,
@@ -2566,7 +2566,7 @@
       {
         "audioFile": "part1-22-clip2.mp3",
         "duration": 19.872,
-        "passage": "Woman: We could start by moving important documents to a dry area to prevent further damage.\nMan: That’s a good idea. Should we also call a water removal service to help us out?\nWoman: Yes, I think that would be necessary. Maybe get some fans to speed up the drying process too?",
+        "passage": "Lisa: We could start by moving important documents to a dry area to prevent further damage.\nDavid: That’s a good idea. Should we also call a water removal service to help us out?\nLisa: Yes, I think that would be necessary. Maybe get some fans to speed up the drying process too?",
         "questions": [
           {
             "id": 1,
@@ -2607,7 +2607,7 @@
       {
         "audioFile": "part1-22-clip3.mp3",
         "duration": 17.712,
-        "passage": "Man: It sounds like we have a plan. Shall we split up the tasks?\nWoman: Yes, let’s do that. I can handle calling the service and moving documents.\nMan: Perfect, I’ll start getting fans and check with the manager about further help.",
+        "passage": "David: It sounds like we have a plan. Shall we split up the tasks?\nLisa: Yes, let’s do that. I can handle calling the service and moving documents.\nDavid: Perfect, I’ll start getting fans and check with the manager about further help.",
         "questions": [
           {
             "id": 1,
@@ -2645,7 +2645,7 @@
       {
         "audioFile": "part1-23-clip1.mp3",
         "duration": 17.352,
-        "passage": "Man: I can’t believe our flight is overbooked! What are the chances? \nWoman: I know, it’s so frustrating. What should we do next? \nMan: Should we ask the airline for assistance? Or are there other options available?",
+        "passage": "James: I can’t believe our flight is overbooked! What are the chances? \nEmily: I know, it’s so frustrating. What should we do next? \nJames: Should we ask the airline for assistance? Or are there other options available?",
         "questions": [
           {
             "id": 1,
@@ -2686,7 +2686,7 @@
       {
         "audioFile": "part1-23-clip2.mp3",
         "duration": 12.216,
-        "passage": "Woman: Maybe we could look for alternative flights? \nMan: That sounds good, or we could check for upgrades. \nWoman: True, but we should also find out if they offer any compensation.",
+        "passage": "Emily: Maybe we could look for alternative flights? \nJames: That sounds good, or we could check for upgrades. \nEmily: True, but we should also find out if they offer any compensation.",
         "questions": [
           {
             "id": 1,
@@ -2727,7 +2727,7 @@
       {
         "audioFile": "part1-23-clip3.mp3",
         "duration": 12.84,
-        "passage": "Man: After discussing, let’s see if we can switch to an earlier flight. \nWoman: Yes, and we should make sure to ask about compensation too. \nMan: Agreed, let’s go to the counter now!",
+        "passage": "James: After discussing, let’s see if we can switch to an earlier flight. \nEmily: Yes, and we should make sure to ask about compensation too. \nJames: Agreed, let’s go to the counter now!",
         "questions": [
           {
             "id": 1,
@@ -2765,7 +2765,7 @@
       {
         "audioFile": "part1-24-clip1.mp3",
         "duration": 24.864,
-        "passage": "Man: Hey, have you noticed how the raccoons keep raiding our garbage every night?\nWoman: Yes, it’s becoming a big problem! I’m tired of cleaning up the mess.\nMan: Exactly! What do you think we should do about it?\nWoman: Should we just put our garbage out earlier?\nMan: That might not work. They could still get to it, right?",
+        "passage": "Michael: Hey, have you noticed how the raccoons keep raiding our garbage every night?\nJessica: Yes, it’s becoming a big problem! I’m tired of cleaning up the mess.\nMichael: Exactly! What do you think we should do about it?\nJessica: Should we just put our garbage out earlier?\nMichael: That might not work. They could still get to it, right?",
         "questions": [
           {
             "id": 1,
@@ -2806,7 +2806,7 @@
       {
         "audioFile": "part1-24-clip2.mp3",
         "duration": 18.744,
-        "passage": "Woman: We could try using raccoon-proof bins to secure our garbage.\nMan: That sounds good! Have you seen any that are effective?\nWoman: I heard some bins are designed specifically for raccoons. Should we invest in those?\nMan: Yes, maybe it’s worth it to avoid future messes.\nWoman: Or we could also try adding a light by the garbage to scare them off.",
+        "passage": "Jessica: We could try using raccoon-proof bins to secure our garbage.\nMichael: That sounds good! Have you seen any that are effective?\nJessica: I heard some bins are designed specifically for raccoons. Should we invest in those?\nMichael: Yes, maybe it’s worth it to avoid future messes.\nJessica: Or we could also try adding a light by the garbage to scare them off.",
         "questions": [
           {
             "id": 1,
@@ -2847,7 +2847,7 @@
       {
         "audioFile": "part1-24-clip3.mp3",
         "duration": 23.232,
-        "passage": "Man: Let’s agree to buy those raccoon-proof bins this weekend.\nWoman: Sounds good! I’ll check online for local stores that have them.\nMan: Perfect! And let’s not forget to put up the light as well.\nWoman: Yes, that should definitely help.\nMan: Great! We’ll meet again after we set it all up.",
+        "passage": "Michael: Let’s agree to buy those raccoon-proof bins this weekend.\nJessica: Sounds good! I’ll check online for local stores that have them.\nMichael: Perfect! And let’s not forget to put up the light as well.\nJessica: Yes, that should definitely help.\nMichael: Great! We’ll meet again after we set it all up.",
         "questions": [
           {
             "id": 1,
@@ -2885,7 +2885,7 @@
       {
         "audioFile": "part1-25-clip1.mp3",
         "duration": 18.24,
-        "passage": "Man: Hey, did you notice our refrigerator isn't working?  \nWoman: Yes, it's been making strange noises. What should we do about it?  \nMan: Should we try fixing it ourselves or call a repair service?  \nWoman: How long can we wait before the food spoils?",
+        "passage": "Kevin: Hey, did you notice our refrigerator isn't working?  \nAmanda: Yes, it's been making strange noises. What should we do about it?  \nKevin: Should we try fixing it ourselves or call a repair service?  \nAmanda: How long can we wait before the food spoils?",
         "questions": [
           {
             "id": 1,
@@ -2926,7 +2926,7 @@
       {
         "audioFile": "part1-25-clip2.mp3",
         "duration": 20.592,
-        "passage": "Woman: I think we should call a repair service.  \nMan: But they might charge a lot! What if we simply buy a new one instead?  \nWoman: That could be more expensive. What if we check if it's under warranty?  \nMan: That's a good point. Should I look for the warranty documents now?",
+        "passage": "Amanda: I think we should call a repair service.  \nKevin: But they might charge a lot! What if we simply buy a new one instead?  \nAmanda: That could be more expensive. What if we check if it's under warranty?  \nKevin: That's a good point. Should I look for the warranty documents now?",
         "questions": [
           {
             "id": 1,
@@ -2967,7 +2967,7 @@
       {
         "audioFile": "part1-25-clip3.mp3",
         "duration": 19.104,
-        "passage": "Man: So, we’ve decided to check the warranty first.  \nWoman: Yes, that sounds like the best plan. If it’s not covered, we can buy a new one.  \nMan: Perfect! Should I search for the documents right now?  \nWoman: Yes, let's do it right away.",
+        "passage": "Kevin: So, we’ve decided to check the warranty first.  \nAmanda: Yes, that sounds like the best plan. If it’s not covered, we can buy a new one.  \nKevin: Perfect! Should I search for the documents right now?  \nAmanda: Yes, let's do it right away.",
         "questions": [
           {
             "id": 1,
@@ -3005,7 +3005,7 @@
       {
         "audioFile": "part1-26-clip1.mp3",
         "duration": 25.44,
-        "passage": "Man: I can't believe they gave us the wrong orders! I ordered the chicken, but this is a vegetarian pasta. \nWoman: I know! I asked for a burger, and they brought me a salad instead. What do you think we should do? \nMan: Should we speak to the waiter right away? Do you think they'll fix it? Or should we just eat what we have and complain later?",
+        "passage": "Ryan: I can't believe they gave us the wrong orders! I ordered the chicken, but this is a vegetarian pasta. \nNicole: I know! I asked for a burger, and they brought me a salad instead. What do you think we should do? \nRyan: Should we speak to the waiter right away? Do you think they'll fix it? Or should we just eat what we have and complain later?",
         "questions": [
           {
             "id": 1,
@@ -3046,7 +3046,7 @@
       {
         "audioFile": "part1-26-clip2.mp3",
         "duration": 21.648,
-        "passage": "Woman: I think we should definitely talk to the waiter. It's not fair to eat something we didn't order. \nMan: You're right. We should explain the situation calmly. Should we ask for our actual orders? \nWoman: Yes, and maybe we can ask for a discount as compensation. What do you think?",
+        "passage": "Nicole: I think we should definitely talk to the waiter. It's not fair to eat something we didn't order. \nRyan: You're right. We should explain the situation calmly. Should we ask for our actual orders? \nNicole: Yes, and maybe we can ask for a discount as compensation. What do you think?",
         "questions": [
           {
             "id": 1,
@@ -3087,7 +3087,7 @@
       {
         "audioFile": "part1-26-clip3.mp3",
         "duration": 18.456,
-        "passage": "Man: Alright, let's go ahead and talk to the waiter now. I really want the chicken I ordered. \nWoman: Me too! We'll ask them to fix this right away. Should we sit at the bar while we wait? \nMan: That sounds good. Let's do it!",
+        "passage": "Ryan: Alright, let's go ahead and talk to the waiter now. I really want the chicken I ordered. \nNicole: Me too! We'll ask them to fix this right away. Should we sit at the bar while we wait? \nRyan: That sounds good. Let's do it!",
         "questions": [
           {
             "id": 1,
@@ -3125,7 +3125,7 @@
       {
         "audioFile": "part1-27-clip1.mp3",
         "duration": 20.52,
-        "passage": "Man: Hey, did you hear about the files that got deleted from the server?\nWoman: I did! It's such a big issue. How could this happen?\nMan: I think someone accidentally deleted them. What do you think we should do?\nWoman: Shouldn’t we first check if there’s a backup available?",
+        "passage": "Chris: Hey, did you hear about the files that got deleted from the server?\nRachel: I did! It's such a big issue. How could this happen?\nChris: I think someone accidentally deleted them. What do you think we should do?\nRachel: Shouldn’t we first check if there’s a backup available?",
         "questions": [
           {
             "id": 1,
@@ -3166,7 +3166,7 @@
       {
         "audioFile": "part1-27-clip2.mp3",
         "duration": 20.976,
-        "passage": "Woman: Maybe we can use a recovery software to retrieve the files.\nMan: That sounds like a good idea! Have you used any before?\nWoman: Yes, I’ve heard good things about a couple of them. Should we try one?\nMan: Definitely! But do we need permission from IT?",
+        "passage": "Rachel: Maybe we can use a recovery software to retrieve the files.\nChris: That sounds like a good idea! Have you used any before?\nRachel: Yes, I’ve heard good things about a couple of them. Should we try one?\nChris: Definitely! But do we need permission from IT?",
         "questions": [
           {
             "id": 1,
@@ -3207,7 +3207,7 @@
       {
         "audioFile": "part1-27-clip3.mp3",
         "duration": 19.728,
-        "passage": "Man: So, it seems like using recovery software is our best bet.\nWoman: Agreed! Let’s get the permission and get started right away.\nMan: Perfect! I’ll send an email to IT for approval.\nWoman: Great, I'll gather the software options we discussed.",
+        "passage": "Chris: So, it seems like using recovery software is our best bet.\nRachel: Agreed! Let’s get the permission and get started right away.\nChris: Perfect! I’ll send an email to IT for approval.\nRachel: Great, I'll gather the software options we discussed.",
         "questions": [
           {
             "id": 1,
@@ -3245,7 +3245,7 @@
       {
         "audioFile": "part1-28-clip1.mp3",
         "duration": 18.648,
-        "passage": "Man: I just noticed that the bathroom pipe has burst. \nWoman: Really? That's not good. How did you find out? \nMan: I saw water pooling on the floor. What should we do? \nWoman: Should we call a plumber or try to fix it ourselves?",
+        "passage": "Brian: I just noticed that the bathroom pipe has burst. \nLaura: Really? That's not good. How did you find out? \nBrian: I saw water pooling on the floor. What should we do? \nLaura: Should we call a plumber or try to fix it ourselves?",
         "questions": [
           {
             "id": 1,
@@ -3287,7 +3287,7 @@
       {
         "audioFile": "part1-28-clip2.mp3",
         "duration": 18.072,
-        "passage": "Woman: We could call a plumber right away. \nMan: That sounds like a safe option. What if we could fix it ourselves? \nWoman: We might save some money, but do we have the tools? \nMan: Good point. I can check the garage for some supplies.",
+        "passage": "Laura: We could call a plumber right away. \nBrian: That sounds like a safe option. What if we could fix it ourselves? \nLaura: We might save some money, but do we have the tools? \nBrian: Good point. I can check the garage for some supplies.",
         "questions": [
           {
             "id": 1,
@@ -3328,7 +3328,7 @@
       {
         "audioFile": "part1-28-clip3.mp3",
         "duration": 14.784,
-        "passage": "Man: I found some tools we can use. \nWoman: That’s great! Should we attempt the repair ourselves? \nMan: Yes, let's give it a try. If it doesn't work, we can still call the plumber.",
+        "passage": "Brian: I found some tools we can use. \nLaura: That’s great! Should we attempt the repair ourselves? \nBrian: Yes, let's give it a try. If it doesn't work, we can still call the plumber.",
         "questions": [
           {
             "id": 1,
@@ -3366,7 +3366,7 @@
       {
         "audioFile": "part1-29-clip1.mp3",
         "duration": 23.04,
-        "passage": "Man: I just got a call from you. Is everything okay with Sarah?  \nWoman: No, she has a fever and seems really uncomfortable.  \nMan: How high is her temperature?  \nWoman: It's around 39 degrees Celsius.  \nMan: Has she taken any medication yet?  \nWoman: Not yet, I wasn't sure what to do.",
+        "passage": "Mark: I just got a call from you. Is everything okay with Sarah?  \nKaren: No, she has a fever and seems really uncomfortable.  \nMark: How high is her temperature?  \nKaren: It's around 39 degrees Celsius.  \nMark: Has she taken any medication yet?  \nKaren: Not yet, I wasn't sure what to do.",
         "questions": [
           {
             "id": 1,
@@ -3407,7 +3407,7 @@
       {
         "audioFile": "part1-29-clip2.mp3",
         "duration": 19.872,
-        "passage": "Man: We should consider giving her some fever-reducing medication.  \nWoman: That's a good idea. Do we have any children’s acetaminophen?  \nMan: Yes, I believe we do. Should I give her a dose now?  \nWoman: Yes, and we can also check her temperature again after that.",
+        "passage": "Mark: We should consider giving her some fever-reducing medication.  \nKaren: That's a good idea. Do we have any children’s acetaminophen?  \nMark: Yes, I believe we do. Should I give her a dose now?  \nKaren: Yes, and we can also check her temperature again after that.",
         "questions": [
           {
             "id": 1,
@@ -3448,7 +3448,7 @@
       {
         "audioFile": "part1-29-clip3.mp3",
         "duration": 16.44,
-        "passage": "Man: Let’s give her the acetaminophen now.  \nWoman: Agreed! I’ll get it. Should I also keep her hydrated?  \nMan: Yes, water is important. After that, we can monitor her condition closely.",
+        "passage": "Mark: Let’s give her the acetaminophen now.  \nKaren: Agreed! I’ll get it. Should I also keep her hydrated?  \nMark: Yes, water is important. After that, we can monitor her condition closely.",
         "questions": [
           {
             "id": 1,
@@ -3486,7 +3486,7 @@
       {
         "audioFile": "part1-30-clip1.mp3",
         "duration": 22.224,
-        "passage": "Man: I can't believe our concert tickets are fake! What are we going to do now? \nWoman: I know, it's so frustrating! Should we confront the person we bought them from? \nMan: That might not work out. Do you think we can get a refund somehow? \nWoman: Or should we just buy new tickets and hope for the best?",
+        "passage": "Steven: I can't believe our concert tickets are fake! What are we going to do now? \nMichelle: I know, it's so frustrating! Should we confront the person we bought them from? \nSteven: That might not work out. Do you think we can get a refund somehow? \nMichelle: Or should we just buy new tickets and hope for the best?",
         "questions": [
           {
             "id": 1,
@@ -3527,7 +3527,7 @@
       {
         "audioFile": "part1-30-clip2.mp3",
         "duration": 23.352,
-        "passage": "Woman: So, we have a few options. Should we try contacting the seller first? \nMan: That makes sense, but what if they refuse to refund us? \nWoman: We could also check if the venue offers ticket replacement. What do you think? \nMan: That's a good idea! Or maybe we can find someone selling real tickets online?",
+        "passage": "Michelle: So, we have a few options. Should we try contacting the seller first? \nSteven: That makes sense, but what if they refuse to refund us? \nMichelle: We could also check if the venue offers ticket replacement. What do you think? \nSteven: That's a good idea! Or maybe we can find someone selling real tickets online?",
         "questions": [
           {
             "id": 1,
@@ -3568,7 +3568,7 @@
       {
         "audioFile": "part1-30-clip3.mp3",
         "duration": 20.04,
-        "passage": "Man: I think we should try contacting the seller first. If that doesn’t work, we can search for real tickets. \nWoman: I agree! Let’s do that right now and see if we can salvage our plans. \nMan: Sounds good! Hopefully, we can still enjoy the concert together.",
+        "passage": "Steven: I think we should try contacting the seller first. If that doesn’t work, we can search for real tickets. \nMichelle: I agree! Let’s do that right now and see if we can salvage our plans. \nSteven: Sounds good! Hopefully, we can still enjoy the concert together.",
         "questions": [
           {
             "id": 1,
@@ -3601,10 +3601,10 @@
   "30": {
     "title": "Navigating Policy Changes in Urban Planning",
     "difficulty": "advanced",
-    "passage": "In the bustling city of Toronto, urban planners are grappling with recent policy changes aimed at increasing public green spaces. Man: \"So, in light of the new provincial regulations, we’ve got to seriously rethink our approach to park development. I mean, it's not entirely clear how these changes affect our existing projects, right?\" Woman: \"Exactly, and the timeline has shifted too. If we don’t adapt quickly, we might miss funding opportunities.\"\n\nMan: \"True, but I can't shake this nagging feeling that the proposed developments might not actually serve the community's needs. Maybe we should consider more stakeholder input?\" Woman: \"You could be onto something, but how do we balance that with our deadlines? We can't delay everything, can we?\"\n\nAs they ponder their options, they realize that community feedback might help in re-evaluating their priorities. Man: \"Okay, let's draft a proposal to hold community consultations. We could set up some focus groups, maybe?\" Woman: \"Yes, but we still need to keep the city council in the loop. They won’t take kindly to surprises, especially since we’ve had budget cuts recently.\"\n\nThe discussion shifts towards finding a feasible path forward while managing expectations. Woman: \"If we can show that community engagement leads to better decision-making, it might ease some of the council's concerns.\"\n\nMan: \"Fair point. Let’s also prepare a report outlining how stakeholder feedback has been beneficial in similar projects across Canada. That might just sway them. But we need to be concise. Really highlight the practical advantages. We can't just throw data at them.\"",
+    "passage": "In the bustling city of Toronto, urban planners are grappling with recent policy changes aimed at increasing public green spaces. Andrew: \"So, in light of the new provincial regulations, we’ve got to seriously rethink our approach to park development. I mean, it's not entirely clear how these changes affect our existing projects, right?\" Stephanie: \"Exactly, and the timeline has shifted too. If we don’t adapt quickly, we might miss funding opportunities.\"\n\nAndrew: \"True, but I can't shake this nagging feeling that the proposed developments might not actually serve the community's needs. Maybe we should consider more stakeholder input?\" Stephanie: \"You could be onto something, but how do we balance that with our deadlines? We can't delay everything, can we?\"\n\nAs they ponder their options, they realize that community feedback might help in re-evaluating their priorities. Andrew: \"Okay, let's draft a proposal to hold community consultations. We could set up some focus groups, maybe?\" Stephanie: \"Yes, but we still need to keep the city council in the loop. They won’t take kindly to surprises, especially since we’ve had budget cuts recently.\"\n\nThe discussion shifts towards finding a feasible path forward while managing expectations. Stephanie: \"If we can show that community engagement leads to better decision-making, it might ease some of the council's concerns.\"\n\nAndrew: \"Fair point. Let’s also prepare a report outlining how stakeholder feedback has been beneficial in similar projects across Canada. That might just sway them. But we need to be concise. Really highlight the practical advantages. We can't just throw data at them.\"",
     "clips": [
       {
-        "text": "In the bustling city of Toronto, urban planners are grappling with recent policy changes aimed at increasing public green spaces. Man: \"So, in light of the new provincial regulations, we’ve got to seriously rethink our approach to park development. I mean, it's not entirely clear how these changes affect our existing projects, right?\" Woman: \"Exactly, and the timeline has shifted too. If we don’t adapt quickly, we might miss funding opportunities.\"",
+        "text": "In the bustling city of Toronto, urban planners are grappling with recent policy changes aimed at increasing public green spaces. Andrew: \"So, in light of the new provincial regulations, we’ve got to seriously rethink our approach to park development. I mean, it's not entirely clear how these changes affect our existing projects, right?\" Stephanie: \"Exactly, and the timeline has shifted too. If we don’t adapt quickly, we might miss funding opportunities.\"",
         "questions": [
           {
             "id": 1,
@@ -3644,7 +3644,7 @@
         "audioFile": "part1-31-clip1.mp3"
       },
       {
-        "text": "As they ponder their options, they realize that community feedback might help in re-evaluating their priorities. Man: \"Okay, let's draft a proposal to hold community consultations. We could set up some focus groups, maybe?\" Woman: \"Yes, but we still need to keep the city council in the loop. They won’t take kindly to surprises, especially since we’ve had budget cuts recently.\"",
+        "text": "As they ponder their options, they realize that community feedback might help in re-evaluating their priorities. Andrew: \"Okay, let's draft a proposal to hold community consultations. We could set up some focus groups, maybe?\" Stephanie: \"Yes, but we still need to keep the city council in the loop. They won’t take kindly to surprises, especially since we’ve had budget cuts recently.\"",
         "questions": [
           {
             "id": 4,
@@ -3684,7 +3684,7 @@
         "audioFile": "part1-31-clip2.mp3"
       },
       {
-        "text": "The discussion shifts towards finding a feasible path forward while managing expectations. Woman: \"If we can show that community engagement leads to better decision-making, it might ease some of the council's concerns.\" Man: \"Fair point. Let’s also prepare a report outlining how stakeholder feedback has been beneficial in similar projects across Canada. That might just sway them. But we need to be concise. Really highlight the practical advantages. We can't just throw data at them.\"",
+        "text": "The discussion shifts towards finding a feasible path forward while managing expectations. Stephanie: \"If we can show that community engagement leads to better decision-making, it might ease some of the council's concerns.\" Andrew: \"Fair point. Let’s also prepare a report outlining how stakeholder feedback has been beneficial in similar projects across Canada. That might just sway them. But we need to be concise. Really highlight the practical advantages. We can't just throw data at them.\"",
         "questions": [
           {
             "id": 7,
@@ -3836,7 +3836,7 @@
     "passage": "In a bustling downtown Toronto café, two urban planners engage in a spirited discussion about the recent city council proposal for a new park. The Woman expresses her excitement over the potential green space, but the Man is skeptical. \"You’re not seriously considering that, are you? I mean, do we really need another park when we’ve got so many already?\" The Woman responds, \"Sure, but this one could help with community engagement and provide a space for events. The old parking lot is hardly inspiring!\" To which the Man sighs, \"I get that, but what about the funding? It seems like a stretch with the current budget cuts!\" The conversation flows as they weigh pros and cons, teetering between optimistic solutions and pragmatic constraints. As they sip their coffee, the dialogue reveals deeper issues like traffic congestion and the need for more affordable housing, leaving them pondering if a park is the best use of resources—or just a distraction from bigger problems.",
     "clips": [
       {
-        "text": "Woman: So, have you seen the proposal to turn that old parking lot into a park? I think it’s fantastic! \nMan: Fantastic? Really? I mean, do we need another park? \nWoman: It’s not just a park. Think of the community events! \nMan: True, but are events enough to justify the costs? Plus, with budget cuts looming, I’m not entirely convinced. \nWoman: I totally get your point about funding, but if we don’t invest in community, what’s the alternative? Just more concrete, right? \nMan: I suppose, but they need to keep traffic flowing—more parks might not help with that at all.",
+        "text": "Ashley: So, have you seen the proposal to turn that old parking lot into a park? I think it’s fantastic! \nJason: Fantastic? Really? I mean, do we need another park? \nAshley: It’s not just a park. Think of the community events! \nJason: True, but are events enough to justify the costs? Plus, with budget cuts looming, I’m not entirely convinced. \nAshley: I totally get your point about funding, but if we don’t invest in community, what’s the alternative? Just more concrete, right? \nJason: I suppose, but they need to keep traffic flowing—more parks might not help with that at all.",
         "questions": [
           {
             "id": 1,
@@ -3876,7 +3876,7 @@
         "audioFile": "part1-33-clip1.mp3"
       },
       {
-        "text": "Man: But, think about it: if we use funds for a park, what happens to the infrastructure? \nWoman: Are you suggesting we sacrifice quality of life for more roads? \nMan: Not exactly. But more green space won’t fix that pothole on King Street. \nWoman: True, but the park could also generate revenue through events! \nMan: Right, but that’s so unpredictable. What if attendance tanks? \nWoman: I see your point, but how often do you think people will actually show up for those boring council meetings? \nMan: Good point, still… I just wish they’d look at everything holistically! \n",
+        "text": "Jason: But, think about it: if we use funds for a park, what happens to the infrastructure? \nAshley: Are you suggesting we sacrifice quality of life for more roads? \nJason: Not exactly. But more green space won’t fix that pothole on King Street. \nAshley: True, but the park could also generate revenue through events! \nJason: Right, but that’s so unpredictable. What if attendance tanks? \nAshley: I see your point, but how often do you think people will actually show up for those boring council meetings? \nJason: Good point, still… I just wish they’d look at everything holistically! \n",
         "questions": [
           {
             "id": 4,
@@ -3916,7 +3916,7 @@
         "audioFile": "part1-33-clip2.mp3"
       },
       {
-        "text": "Woman: So, should we recommend to the council that they hire a consultant to analyze this further? \nMan: Maybe... but I also think they need to consider those potholes first. \nWoman: I can see the merit in that suggestion, we don’t want to end up with a shiny park and crumbling roads.\nMan: Exactly, it’s about balance. Any change has to be practical, not just a nice idea. \nWoman: True? It’s always easier to say what we want than to prioritize. Let’s draft a balanced proposal, then. \n",
+        "text": "Ashley: So, should we recommend to the council that they hire a consultant to analyze this further? \nJason: Maybe... but I also think they need to consider those potholes first. \nAshley: I can see the merit in that suggestion, we don’t want to end up with a shiny park and crumbling roads.\nJason: Exactly, it’s about balance. Any change has to be practical, not just a nice idea. \nAshley: True? It’s always easier to say what we want than to prioritize. Let’s draft a balanced proposal, then. \n",
         "questions": [
           {
             "id": 7,
@@ -3952,7 +3952,7 @@
     "passage": "Two colleagues from the University of Toronto are discussing the organization of their upcoming annual conference which, due to renovations at their usual venue, has become quite challenging. They initially consider moving to the downtown convention center, but one of them suggests that it might be out of their budget. The other, however, hesitates, saying, \"Well, if we factor in transportation costs, maybe the savings on catering at the downtown venue could balance it out?\" This leads to a back-and-forth as they weigh the pros and cons. They also mention the importance of securing a venue that will be accessible for all attendees, especially given the university's commitment to inclusivity this year. As they continue discussing options, they realize they need to finalize a decision by the end of the week to avoid losing their preferred dates. They agree to revisit the budget estimates before making a final call as they both feel slightly uneasy about the projections. The problem of accessibility also becomes more pressing as they consider options for attendees traveling from other provinces.",
     "clips": [
       {
-        "text": "Man: So, with the renovations at our usual venue, we really have to find a new place for the conference this year. Woman: Right, I was thinking the downtown convention center might work, but I’m not entirely convinced it's within budget. Man: True, but what if transporting everyone is more costly? Woman: That's a fair point, and if we save on catering there, who knows? It might just even out after all. Man: Absolutely, but isn't accessibility also a big deal for our attendees this year?",
+        "text": "Matt: So, with the renovations at our usual venue, we really have to find a new place for the conference this year. Jennifer: Right, I was thinking the downtown convention center might work, but I’m not entirely convinced it's within budget. Matt: True, but what if transporting everyone is more costly? Jennifer: That's a fair point, and if we save on catering there, who knows? It might just even out after all. Matt: Absolutely, but isn't accessibility also a big deal for our attendees this year?",
         "questions": [
           {
             "id": 1,
@@ -3992,7 +3992,7 @@
         "audioFile": "part1-34-clip1.mp3"
       },
       {
-        "text": "Woman: And considering the university’s emphasis on inclusivity this year, we have to ensure the venue reflects that. Man: Exactly. Have we even checked if the downtown center meets all the accessibility standards? I mean, we can't just assume it does. Woman: Good point. I think I heard it's okay, but we should probably double-check. Man: Right, and if we go with it, we need to budget for extra assistance, like sign language interpreters or physical access guides. Woman: I feel like we shouldn’t overlook potential costs that could push us over budget; we'll need to run these numbers carefully.",
+        "text": "Jennifer: And considering the university’s emphasis on inclusivity this year, we have to ensure the venue reflects that. Matt: Exactly. Have we even checked if the downtown center meets all the accessibility standards? I mean, we can't just assume it does. Jennifer: Good point. I think I heard it's okay, but we should probably double-check. Matt: Right, and if we go with it, we need to budget for extra assistance, like sign language interpreters or physical access guides. Jennifer: I feel like we shouldn’t overlook potential costs that could push us over budget; we'll need to run these numbers carefully.",
         "questions": [
           {
             "id": 4,
@@ -4032,7 +4032,7 @@
         "audioFile": "part1-34-clip2.mp3"
       },
       {
-        "text": "Man: But honestly, can we trust the cost estimates we're getting? They seem off. Woman: Yes, I noticed discrepancies too. It’s like they’re hedging on the actual costs. Man: We need something concrete before we present to the faculty. Let’s review those projections again. Woman: Absolutely, and maybe even consult someone from finance? They might give us insights that we’re missing here.",
+        "text": "Matt: But honestly, can we trust the cost estimates we're getting? They seem off. Jennifer: Yes, I noticed discrepancies too. It’s like they’re hedging on the actual costs. Matt: We need something concrete before we present to the faculty. Let’s review those projections again. Jennifer: Absolutely, and maybe even consult someone from finance? They might give us insights that we’re missing here.",
         "questions": [
           {
             "id": 7,
@@ -4529,10 +4529,10 @@
   "38": {
     "title": "Addressing Urban Infrastructure Challenges",
     "difficulty": "advanced",
-    "passage": "In downtown Toronto, a major debate is brewing over the proposed changes to the public transit system. Woman: \"I honestly think the new subway extension, while well-intentioned, might not solve the traffic issues we’re facing. I mean, do we really believe it’ll get people out of their cars?\" Man: \"Exactly! Plus, there’s the budget concern. We’re already over budget on the last project, and now they want to add this? It’s hard to see how they’re going to make it work.\"\nWoman: \"Not entirely convinced that more funding would solve the problem either. It’s almost like they’re throwing money at a wall and seeing what sticks. Wouldn’t it be smarter to focus on the current infrastructure first?\" Man: \"That could be a better use of resources, but you know how politicians are—always looking for that shiny new project to promote.\"\n",
+    "passage": "In downtown Toronto, a major debate is brewing over the proposed changes to the public transit system. Christina: \"I honestly think the new subway extension, while well-intentioned, might not solve the traffic issues we’re facing. I mean, do we really believe it’ll get people out of their cars?\" Brandon: \"Exactly! Plus, there’s the budget concern. We’re already over budget on the last project, and now they want to add this? It’s hard to see how they’re going to make it work.\"\nChristina: \"Not entirely convinced that more funding would solve the problem either. It’s almost like they’re throwing money at a wall and seeing what sticks. Wouldn’t it be smarter to focus on the current infrastructure first?\" Brandon: \"That could be a better use of resources, but you know how politicians are—always looking for that shiny new project to promote.\"\n",
     "clips": [
       {
-        "text": "Woman: \"I honestly think the new subway extension, while well-intentioned, might not solve the traffic issues we’re facing. I mean, do we really believe it’ll get people out of their cars?\" Man: \"Exactly! Plus, there’s the budget concern. We’re already over budget on the last project, and now they want to add this? It’s hard to see how they’re going to make it work.\"",
+        "text": "Christina: \"I honestly think the new subway extension, while well-intentioned, might not solve the traffic issues we’re facing. I mean, do we really believe it’ll get people out of their cars?\" Brandon: \"Exactly! Plus, there’s the budget concern. We’re already over budget on the last project, and now they want to add this? It’s hard to see how they’re going to make it work.\"",
         "questions": [
           {
             "id": 1,
@@ -4572,7 +4572,7 @@
         "audioFile": "part1-39-clip1.mp3"
       },
       {
-        "text": "Woman: \"Not entirely convinced that more funding would solve the problem either. It’s almost like they’re throwing money at a wall and seeing what sticks. Wouldn’t it be smarter to focus on the current infrastructure first?\" Man: \"That could be a better use of resources, but you know how politicians are—always looking for that shiny new project to promote.\"",
+        "text": "Christina: \"Not entirely convinced that more funding would solve the problem either. It’s almost like they’re throwing money at a wall and seeing what sticks. Wouldn’t it be smarter to focus on the current infrastructure first?\" Brandon: \"That could be a better use of resources, but you know how politicians are—always looking for that shiny new project to promote.\"",
         "questions": [
           {
             "id": 4,
@@ -4612,7 +4612,7 @@
         "audioFile": "part1-39-clip2.mp3"
       },
       {
-        "text": "Man: \"And it’s not like we’re just going to be able to wave a magic wand and fix all these issues overnight. We might actually need a well-thought-out plan, maybe even some public input. \" Woman: \"Sure, but how often do you think the public’s views are genuinely considered? If they really cared, wouldn’t they have consulted us before?\"",
+        "text": "Brandon: \"And it’s not like we’re just going to be able to wave a magic wand and fix all these issues overnight. We might actually need a well-thought-out plan, maybe even some public input. \" Christina: \"Sure, but how often do you think the public’s views are genuinely considered? If they really cared, wouldn’t they have consulted us before?\"",
         "questions": [
           {
             "id": 7,
@@ -4645,10 +4645,10 @@
   "39": {
     "title": "Navigating Urban Development Challenges in Toronto",
     "difficulty": "advanced",
-    "passage": "In Toronto, the city council is caught in a heated debate about the new urban development proposal aimed at revitalizing old neighborhoods. Man: \"Honestly, I'm not entirely convinced this plan addresses the core issues we face. We need more community input, don’t you think?\" Woman: \"Exactly! But they’re pushing it through without considering that many residents feel displaced. It’s not just about modernization; it’s about preserving our history. And then there’s the environmental impact to consider. It’s a mess!\" Man: \"Right, and while they claim it will boost the economy, I wonder if that’s just a nice way of saying it’ll attract wealthier people and gentrify the area. You see where I’m going with this?\" Woman: \"Definitely, and it’s frustrating because the timing couldn’t be worse. We also have skyrocketing living costs. It’s like they’re ignoring the big picture altogether.\"",
+    "passage": "In Toronto, the city council is caught in a heated debate about the new urban development proposal aimed at revitalizing old neighborhoods. Scott: \"Honestly, I'm not entirely convinced this plan addresses the core issues we face. We need more community input, don’t you think?\" Angela: \"Exactly! But they’re pushing it through without considering that many residents feel displaced. It’s not just about modernization; it’s about preserving our history. And then there’s the environmental impact to consider. It’s a mess!\" Scott: \"Right, and while they claim it will boost the economy, I wonder if that’s just a nice way of saying it’ll attract wealthier people and gentrify the area. You see where I’m going with this?\" Angela: \"Definitely, and it’s frustrating because the timing couldn’t be worse. We also have skyrocketing living costs. It’s like they’re ignoring the big picture altogether.\"",
     "clips": [
       {
-        "text": "In Toronto, the city council is caught in a heated debate about the new urban development proposal aimed at revitalizing old neighborhoods. Man: \"Honestly, I'm not entirely convinced this plan addresses the core issues we face. We need more community input, don’t you think?\" Woman: \"Exactly! But they’re pushing it through without considering that many residents feel displaced. It’s not just about modernization; it’s about preserving our history. And then there’s the environmental impact to consider. It’s a mess!\"",
+        "text": "In Toronto, the city council is caught in a heated debate about the new urban development proposal aimed at revitalizing old neighborhoods. Scott: \"Honestly, I'm not entirely convinced this plan addresses the core issues we face. We need more community input, don’t you think?\" Angela: \"Exactly! But they’re pushing it through without considering that many residents feel displaced. It’s not just about modernization; it’s about preserving our history. And then there’s the environmental impact to consider. It’s a mess!\"",
         "questions": [
           {
             "id": 1,
@@ -4688,7 +4688,7 @@
         "audioFile": "part1-40-clip1.mp3"
       },
       {
-        "text": "Man: \"Right, and while they claim it will boost the economy, I wonder if that’s just a nice way of saying it’ll attract wealthier people and gentrify the area. You see where I’m going with this?\" Woman: \"Definitely, and it’s frustrating because the timing couldn’t be worse. We also have skyrocketing living costs. It’s like they’re ignoring the big picture altogether.\" Man: \"And let’s not forget the public transportation issues. If they don’t improve that, it doesn’t matter how fancy the buildings are!\"",
+        "text": "Scott: \"Right, and while they claim it will boost the economy, I wonder if that’s just a nice way of saying it’ll attract wealthier people and gentrify the area. You see where I’m going with this?\" Angela: \"Definitely, and it’s frustrating because the timing couldn’t be worse. We also have skyrocketing living costs. It’s like they’re ignoring the big picture altogether.\" Scott: \"And let’s not forget the public transportation issues. If they don’t improve that, it doesn’t matter how fancy the buildings are!\"",
         "questions": [
           {
             "id": 4,
@@ -4728,7 +4728,7 @@
         "audioFile": "part1-40-clip2.mp3"
       },
       {
-        "text": "Woman: \"If they genuinely cared about the community, they’d be addressing these issues first. Instead, it feels like a quick fix that’s going to create more problems in the long run.\" Man: \"Agreed, but what’s the alternative? Just let the neighborhoods fall apart?\" Woman: \"Well, there’s a middle ground. We could prioritize community feedback and phased developments, focus on integrating existing structures rather than tearing them down. That could work, right?\"",
+        "text": "Angela: \"If they genuinely cared about the community, they’d be addressing these issues first. Instead, it feels like a quick fix that’s going to create more problems in the long run.\" Scott: \"Agreed, but what’s the alternative? Just let the neighborhoods fall apart?\" Angela: \"Well, there’s a middle ground. We could prioritize community feedback and phased developments, focus on integrating existing structures rather than tearing them down. That could work, right?\"",
         "questions": [
           {
             "id": 7,
@@ -5109,10 +5109,10 @@
   "43": {
     "title": "Debating the New Campus Sustainability Policy",
     "difficulty": "advanced",
-    "passage": "In a bustling café at the University of Toronto, two colleagues engage in a spirited discussion about the new sustainability policy that's been proposed for the campus. Man: \"I just don’t see how this new policy is supposed to actually make a difference. I mean, we already recycle, right?\" Woman: \"Well, it’s more than just recycling; it’s about reducing our overall carbon footprint. They want to phase out single-use plastics across the campus. Not entirely convinced it will work though, honestly.\" Man: \"Sure, reducing plastic is a good goal, but how are they planning to enforce that? I doubt students will comply. They hardly do now with regular rules!\" Woman: \"Exactly! And that’s the crux of the issue—it's all well and good to set ambitious targets, but without a clear implementation strategy, it's just wishful thinking. Plus, who will monitor all of this?\"",
+    "passage": "In a bustling café at the University of Toronto, two colleagues engage in a spirited discussion about the new sustainability policy that's been proposed for the campus. Michael: \"I just don’t see how this new policy is supposed to actually make a difference. I mean, we already recycle, right?\" Jessica: \"Well, it’s more than just recycling; it’s about reducing our overall carbon footprint. They want to phase out single-use plastics across the campus. Not entirely convinced it will work though, honestly.\" Michael: \"Sure, reducing plastic is a good goal, but how are they planning to enforce that? I doubt students will comply. They hardly do now with regular rules!\" Jessica: \"Exactly! And that’s the crux of the issue—it's all well and good to set ambitious targets, but without a clear implementation strategy, it's just wishful thinking. Plus, who will monitor all of this?\"",
     "clips": [
       {
-        "text": "Man: \"I just don’t see how this new policy is supposed to actually make a difference. I mean, we already recycle, right?\" Woman: \"Well, it’s more than just recycling; it’s about reducing our overall carbon footprint. They want to phase out single-use plastics across the campus. Not entirely convinced it will work though, honestly.\" Man: \"Sure, reducing plastic is a good goal, but how are they planning to enforce that? I doubt students will comply. They hardly do now with regular rules!\"",
+        "text": "Michael: \"I just don’t see how this new policy is supposed to actually make a difference. I mean, we already recycle, right?\" Jessica: \"Well, it’s more than just recycling; it’s about reducing our overall carbon footprint. They want to phase out single-use plastics across the campus. Not entirely convinced it will work though, honestly.\" Michael: \"Sure, reducing plastic is a good goal, but how are they planning to enforce that? I doubt students will comply. They hardly do now with regular rules!\"",
         "questions": [
           {
             "id": 1,
@@ -5152,7 +5152,7 @@
         "audioFile": "part1-44-clip1.mp3"
       },
       {
-        "text": "Woman: \"Exactly! And that’s the crux of the issue—it's all well and good to set ambitious targets, but without a clear implementation strategy, it's just wishful thinking. Plus, who will monitor all of this?\" Man: \"Right! If there's no framework to ensure compliance, students will just see it as another unattainable goal. Remember the last initiative on reducing energy consumption?\" Woman: \"Oh, I do! It fizzled out within months because there was no follow-up or accountability. I guess it's a classic case of 'what’s the point?' if no one’s in charge.\" Man: \"And don’t forget the backlash from students when they feel rules are imposed without their input. We need to engage them somehow.\"",
+        "text": "Jessica: \"Exactly! And that’s the crux of the issue—it's all well and good to set ambitious targets, but without a clear implementation strategy, it's just wishful thinking. Plus, who will monitor all of this?\" Michael: \"Right! If there's no framework to ensure compliance, students will just see it as another unattainable goal. Remember the last initiative on reducing energy consumption?\" Jessica: \"Oh, I do! It fizzled out within months because there was no follow-up or accountability. I guess it's a classic case of 'what’s the point?' if no one’s in charge.\" Michael: \"And don’t forget the backlash from students when they feel rules are imposed without their input. We need to engage them somehow.\"",
         "questions": [
           {
             "id": 4,
@@ -5192,7 +5192,7 @@
         "audioFile": "part1-44-clip2.mp3"
       },
       {
-        "text": "Woman: \"I mean, honestly, if we want this policy to succeed, it has to be a collaborative effort. Maybe we should suggest a student committee to oversee this?\" Man: \"That sounds like a good start, but there’s bound to be pushback on who gets to be on that committee. You know how these things go!\" Woman: \"True, but at least it’s a step towards ownership. If students feel they have a role, they might take it more seriously. Still, engagement is key!\"",
+        "text": "Jessica: \"I mean, honestly, if we want this policy to succeed, it has to be a collaborative effort. Maybe we should suggest a student committee to oversee this?\" Michael: \"That sounds like a good start, but there’s bound to be pushback on who gets to be on that committee. You know how these things go!\" Jessica: \"True, but at least it’s a step towards ownership. If students feel they have a role, they might take it more seriously. Still, engagement is key!\"",
         "questions": [
           {
             "id": 7,
@@ -5228,7 +5228,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi! I need to make a doctor's appointment. I feel unwell.  \nWoman: Sure! What day do you want to go?  \nMan: I can go on Monday or Tuesday.  \nWoman: How about Tuesday? Is there a time that works for you?  \nMan: Yes, afternoon would be good. Maybe around 2 PM.  \nWoman: Let me check. You want Tuesday at 2 PM.",
+        "passage": "Kevin: Hi! I need to make a doctor's appointment. I feel unwell.  \nAmanda: Sure! What day do you want to go?  \nKevin: I can go on Monday or Tuesday.  \nAmanda: How about Tuesday? Is there a time that works for you?  \nKevin: Yes, afternoon would be good. Maybe around 2 PM.  \nAmanda: Let me check. You want Tuesday at 2 PM.",
         "questions": [
           {
             "id": 1,
@@ -5269,7 +5269,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Great! I can book you for Tuesday at 2 PM.  \nMan: That sounds perfect!  \nWoman: Do you have the doctor's name?  \nMan: Yes, Dr. Smith.  \nWoman: Okay, let me write that down. Do you have your health card with you?  \nMan: Yes, I do. Where do I need to show it?",
+        "passage": "Amanda: Great! I can book you for Tuesday at 2 PM.  \nKevin: That sounds perfect!  \nAmanda: Do you have the doctor's name?  \nKevin: Yes, Dr. Smith.  \nAmanda: Okay, let me write that down. Do you have your health card with you?  \nKevin: Yes, I do. Where do I need to show it?",
         "questions": [
           {
             "id": 4,
@@ -5310,7 +5310,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Woman: You need to show your health card at the front desk.  \nMan: Got it! How long will the appointment be?  \nWoman: Usually about 30 minutes.  \nMan: Perfect! Thank you for your help.  \nWoman: You're welcome! Hope you feel better soon!",
+        "passage": "Amanda: You need to show your health card at the front desk.  \nKevin: Got it! How long will the appointment be?  \nAmanda: Usually about 30 minutes.  \nKevin: Perfect! Thank you for your help.  \nAmanda: You're welcome! Hope you feel better soon!",
         "questions": [
           {
             "id": 7,
@@ -5347,7 +5347,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been noticing that our team is struggling with meeting deadlines. It seems like everyone is overwhelmed with their workload.  \nWoman: I completely agree. I think we need to find a way to distribute tasks more evenly. Maybe we could hold a meeting to discuss it?  \nMan: That's a good idea. Also, we might consider setting up a shared online calendar to keep track of everyone's deadlines. What do you think?  \nWoman: Yes, that could help everyone stay informed and accountable.",
+        "passage": "Ryan: I've been noticing that our team is struggling with meeting deadlines. It seems like everyone is overwhelmed with their workload.  \nNicole: I completely agree. I think we need to find a way to distribute tasks more evenly. Maybe we could hold a meeting to discuss it?  \nRyan: That's a good idea. Also, we might consider setting up a shared online calendar to keep track of everyone's deadlines. What do you think?  \nNicole: Yes, that could help everyone stay informed and accountable.",
         "questions": [
           {
             "id": 1,
@@ -5388,7 +5388,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Another thing we could do is to implement weekly check-ins. That way, we can assess how everyone is doing with their tasks.  \nMan: I like that idea! Regular feedback could really enhance our productivity. But we should ensure that it doesn’t feel like micromanagement.  \nWoman: Absolutely! It should be supportive rather than stressful. Perhaps we could set a casual tone for those meetings?  \nMan: Yes, and we might include a segment for team members to share any challenges they're facing.",
+        "passage": "Nicole: Another thing we could do is to implement weekly check-ins. That way, we can assess how everyone is doing with their tasks.  \nRyan: I like that idea! Regular feedback could really enhance our productivity. But we should ensure that it doesn’t feel like micromanagement.  \nNicole: Absolutely! It should be supportive rather than stressful. Perhaps we could set a casual tone for those meetings?  \nRyan: Yes, and we might include a segment for team members to share any challenges they're facing.",
         "questions": [
           {
             "id": 4,
@@ -5429,7 +5429,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Finally, I think we need to foster a more collaborative atmosphere. Encouraging teamwork can make a huge difference.  \nWoman: Definitely! Team-building activities could help bridge the gaps.  \nMan: We could plan a fun outing or a workshop. What do you think about that?  \nWoman: That sounds perfect! It would not only boost morale but also strengthen our communication skills.",
+        "passage": "Ryan: Finally, I think we need to foster a more collaborative atmosphere. Encouraging teamwork can make a huge difference.  \nNicole: Definitely! Team-building activities could help bridge the gaps.  \nRyan: We could plan a fun outing or a workshop. What do you think about that?  \nNicole: That sounds perfect! It would not only boost morale but also strengthen our communication skills.",
         "questions": [
           {
             "id": 7,
@@ -5466,7 +5466,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I heard about the new community center project. We need to discuss our concerns before we move forward.  \nWoman: Yes, I think it’s a great idea, but I'm worried about how it will be funded. Do you think our local government will support it?  \nMan: They might, but we should also consider reaching out to local businesses for sponsorship.  \nWoman: That’s a good point. Collaborating with them could also promote community engagement.",
+        "passage": "Chris: I heard about the new community center project. We need to discuss our concerns before we move forward.  \nRachel: Yes, I think it’s a great idea, but I'm worried about how it will be funded. Do you think our local government will support it?  \nChris: They might, but we should also consider reaching out to local businesses for sponsorship.  \nRachel: That’s a good point. Collaborating with them could also promote community engagement.",
         "questions": [
           {
             "id": 1,
@@ -5507,7 +5507,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: We should also think about what programs to offer at the community center.  \nWoman: Right. I believe after-school programs for youth could attract many families. What do you think?  \nMan: Absolutely, and we could include fitness classes too. There’s a big demand for that in our neighborhood.  \nWoman: That’s true! But we need to ensure we have enough staff to manage these programs.",
+        "passage": "Chris: We should also think about what programs to offer at the community center.  \nRachel: Right. I believe after-school programs for youth could attract many families. What do you think?  \nChris: Absolutely, and we could include fitness classes too. There’s a big demand for that in our neighborhood.  \nRachel: That’s true! But we need to ensure we have enough staff to manage these programs.",
         "questions": [
           {
             "id": 4,
@@ -5548,7 +5548,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Lastly, we should think about how to promote the center once it opens.  \nWoman: Yes, I think social media campaigns could be effective.  \nMan: Good idea! Maybe we can also host a launch event to attract attention.  \nWoman: Exactly! It would be a great way to showcase what we'll offer and get the community excited.",
+        "passage": "Chris: Lastly, we should think about how to promote the center once it opens.  \nRachel: Yes, I think social media campaigns could be effective.  \nChris: Good idea! Maybe we can also host a launch event to attract attention.  \nRachel: Exactly! It would be a great way to showcase what we'll offer and get the community excited.",
         "questions": [
           {
             "id": 7,
@@ -5585,7 +5585,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hey, I need your help with something. I want to buy a gift for my sister's birthday. Woman: Sure! What does she like? Man: She loves jewelry, but I'm not sure what to buy. Woman: How about a necklace? Man: That sounds good. But I don’t know what style she would like. Woman: Maybe you could ask her friends for ideas?",
+        "passage": "Brian: Hey, I need your help with something. I want to buy a gift for my sister's birthday. Laura: Sure! What does she like? Brian: She loves jewelry, but I'm not sure what to buy. Laura: How about a necklace? Brian: That sounds good. But I don’t know what style she would like. Laura: Maybe you could ask her friends for ideas?",
         "questions": [
           {
             "id": 1,
@@ -5626,7 +5626,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: I like that idea, but I feel bad asking her friends. Woman: Don't worry; they will want to help! Man: Okay, but I want to keep it a surprise. Woman: You can just ask them casually. Man: That sounds good. Do you know any shops around here where I can buy jewelry? Woman: Yes, there’s a nice store downtown.",
+        "passage": "Brian: I like that idea, but I feel bad asking her friends. Laura: Don't worry; they will want to help! Brian: Okay, but I want to keep it a surprise. Laura: You can just ask them casually. Brian: That sounds good. Do you know any shops around here where I can buy jewelry? Laura: Yes, there’s a nice store downtown.",
         "questions": [
           {
             "id": 4,
@@ -5667,7 +5667,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Thanks for your help! I feel more confident now. Woman: No problem! Just remember to keep it a secret. Man: I will! I’m excited. When should I buy it? Woman: Maybe this weekend? That will give you time to plan. Man: Good idea! I’ll try to get it done then.",
+        "passage": "Brian: Thanks for your help! I feel more confident now. Laura: No problem! Just remember to keep it a secret. Brian: I will! I’m excited. When should I buy it? Laura: Maybe this weekend? That will give you time to plan. Brian: Good idea! I’ll try to get it done then.",
         "questions": [
           {
             "id": 7,
@@ -5704,7 +5704,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've noticed that our team has been struggling to meet deadlines lately. It's becoming a real issue. \nWoman: I agree. I think one of the main reasons is the lack of clear communication. Everyone seems to be working in silos. \nMan: Exactly! Maybe we should consider regular check-in meetings to share updates and align our goals. \nWoman: That sounds like a good start. We could also implement a project management tool to keep track of tasks more efficiently.",
+        "passage": "Mark: I've noticed that our team has been struggling to meet deadlines lately. It's becoming a real issue. \nKaren: I agree. I think one of the main reasons is the lack of clear communication. Everyone seems to be working in silos. \nMark: Exactly! Maybe we should consider regular check-in meetings to share updates and align our goals. \nKaren: That sounds like a good start. We could also implement a project management tool to keep track of tasks more efficiently.",
         "questions": [
           {
             "id": 1,
@@ -5745,7 +5745,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Another aspect to consider is the workload distribution. Some team members are overwhelmed while others have lighter loads. \nMan: That’s a fair point. Maybe we should have a discussion about redistributing tasks based on everyone's strengths. \nWoman: I like that idea. We could also create a system for team members to express when they're feeling overburdened. \nMan: Yes! It’s crucial to ensure that everyone feels supported and that their workload is manageable.",
+        "passage": "Karen: Another aspect to consider is the workload distribution. Some team members are overwhelmed while others have lighter loads. \nMark: That’s a fair point. Maybe we should have a discussion about redistributing tasks based on everyone's strengths. \nKaren: I like that idea. We could also create a system for team members to express when they're feeling overburdened. \nMark: Yes! It’s crucial to ensure that everyone feels supported and that their workload is manageable.",
         "questions": [
           {
             "id": 4,
@@ -5786,7 +5786,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Overall, improving our team dynamics could significantly enhance productivity. \nWoman: Definitely! It’s all about fostering an environment where communication and support are prioritized. \nMan: I believe if we implement these strategies, we’ll see a marked improvement in our performance. \nWoman: Agreed! Let’s set a timeline for these changes and monitor our progress regularly.",
+        "passage": "Mark: Overall, improving our team dynamics could significantly enhance productivity. \nKaren: Definitely! It’s all about fostering an environment where communication and support are prioritized. \nMark: I believe if we implement these strategies, we’ll see a marked improvement in our performance. \nKaren: Agreed! Let’s set a timeline for these changes and monitor our progress regularly.",
         "questions": [
           {
             "id": 7,
@@ -5823,7 +5823,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hey, I've noticed that our team meetings are becoming less effective. We often go off-topic and run out of time.\nWoman: I agree. It's frustrating because we have so much to discuss, but we end up not addressing the key issues.\nMan: Maybe we should set a clear agenda beforehand to keep us focused?\nWoman: That's a good idea! But we also need to ensure everyone has a chance to contribute without dominating the conversation.",
+        "passage": "Steven: Hey, I've noticed that our team meetings are becoming less effective. We often go off-topic and run out of time.\nMichelle: I agree. It's frustrating because we have so much to discuss, but we end up not addressing the key issues.\nSteven: Maybe we should set a clear agenda beforehand to keep us focused?\nMichelle: That's a good idea! But we also need to ensure everyone has a chance to contribute without dominating the conversation.",
         "questions": [
           {
             "id": 1,
@@ -5864,7 +5864,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Right! Perhaps we could also incorporate a roundtable format where everyone shares their thoughts at the beginning.\nWoman: That sounds helpful! It might set the tone for a more productive meeting.\nMan: Exactly! And if someone goes off-topic, we could gently steer them back by referring to the agenda.\nWoman: I like that approach. It keeps everyone accountable and focused on the main discussion points.",
+        "passage": "Steven: Right! Perhaps we could also incorporate a roundtable format where everyone shares their thoughts at the beginning.\nMichelle: That sounds helpful! It might set the tone for a more productive meeting.\nSteven: Exactly! And if someone goes off-topic, we could gently steer them back by referring to the agenda.\nMichelle: I like that approach. It keeps everyone accountable and focused on the main discussion points.",
         "questions": [
           {
             "id": 4,
@@ -5905,7 +5905,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: So, if we agree on these strategies, how should we communicate them to the rest of the team?\nWoman: We might want to send out an email summarizing our points and inviting feedback before our next meeting.\nMan: That's a great idea! This way, everyone feels included in the process.\nWoman: Exactly! It will also prepare them for a more structured meeting format.",
+        "passage": "Steven: So, if we agree on these strategies, how should we communicate them to the rest of the team?\nMichelle: We might want to send out an email summarizing our points and inviting feedback before our next meeting.\nSteven: That's a great idea! This way, everyone feels included in the process.\nMichelle: Exactly! It will also prepare them for a more structured meeting format.",
         "questions": [
           {
             "id": 7,
@@ -5942,7 +5942,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, I heard we're planning a community event next month. What do you think we should focus on?  Woman: I think we should have some fun activities for families. Maybe games for kids?  Man: That sounds great! We could also include food vendors to make it lively.  Woman: Yes, food is always a good idea. Do you think we should ask local businesses to participate?",
+        "passage": "Andrew: Hi, I heard we're planning a community event next month. What do you think we should focus on?  Stephanie: I think we should have some fun activities for families. Maybe games for kids?  Andrew: That sounds great! We could also include food vendors to make it lively.  Stephanie: Yes, food is always a good idea. Do you think we should ask local businesses to participate?",
         "questions": [
           {
             "id": 1,
@@ -5983,7 +5983,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: I think we should start by making a list of local businesses.  Woman: That’s a good idea! We can ask them if they want to set up booths.  Man: Yes, and we could also include some fun games for the children.  Woman: Right! Do you think we need to get a permit for the event?  Man: I believe so. We should check with the city hall for the requirements.",
+        "passage": "Andrew: I think we should start by making a list of local businesses.  Stephanie: That’s a good idea! We can ask them if they want to set up booths.  Andrew: Yes, and we could also include some fun games for the children.  Stephanie: Right! Do you think we need to get a permit for the event?  Andrew: I believe so. We should check with the city hall for the requirements.",
         "questions": [
           {
             "id": 4,
@@ -6024,7 +6024,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Woman: Good! Let’s plan to meet next week to discuss everything.  Man: Yes, let’s set a date. How about Wednesday?  Woman: Wednesday works for me. What time should we meet?  Man: How about 3 PM?  Woman: Perfect! I’ll bring the notes we made today.",
+        "passage": "Stephanie: Good! Let’s plan to meet next week to discuss everything.  Andrew: Yes, let’s set a date. How about Wednesday?  Stephanie: Wednesday works for me. What time should we meet?  Andrew: How about 3 PM?  Stephanie: Perfect! I’ll bring the notes we made today.",
         "questions": [
           {
             "id": 7,
@@ -6061,7 +6061,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hey, do you have any ideas for our weekend? Woman: Yes! I was thinking we could go to the zoo. It’s been a while since we visited. Man: That sounds fun! What day should we go? Woman: How about Saturday? It’s usually less crowded then. Man: Good idea. What time do you want to meet? Woman: Let’s meet at 10 AM. Does that work for you?",
+        "passage": "Daniel: Hey, do you have any ideas for our weekend? Rebecca: Yes! I was thinking we could go to the zoo. It’s been a while since we visited. Daniel: That sounds fun! What day should we go? Rebecca: How about Saturday? It’s usually less crowded then. Daniel: Good idea. What time do you want to meet? Rebecca: Let’s meet at 10 AM. Does that work for you?",
         "questions": [
           {
             "id": 1,
@@ -6102,7 +6102,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Sounds great! What should we bring? Woman: We should bring some snacks and water. Man: Good idea! Should we pack a lunch too? Woman: Yes, I think we should. It will save us time and money. Man: How about a sandwich and some fruit? Woman: Perfect! I can make the sandwiches.",
+        "passage": "Daniel: Sounds great! What should we bring? Rebecca: We should bring some snacks and water. Daniel: Good idea! Should we pack a lunch too? Rebecca: Yes, I think we should. It will save us time and money. Daniel: How about a sandwich and some fruit? Rebecca: Perfect! I can make the sandwiches.",
         "questions": [
           {
             "id": 4,
@@ -6143,7 +6143,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I’m really looking forward to this! Woman: Me too! Do you think we need to check the weather? Man: Yes, that’s a good idea. If it rains, we can always go to the aquarium instead. Woman: True! It sounds like a fun backup plan.",
+        "passage": "Daniel: I’m really looking forward to this! Rebecca: Me too! Do you think we need to check the weather? Daniel: Yes, that’s a good idea. If it rains, we can always go to the aquarium instead. Rebecca: True! It sounds like a fun backup plan.",
         "questions": [
           {
             "id": 7,
@@ -6180,7 +6180,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hey, do you remember that we need to buy groceries this week?  \nWoman: Yes, I remember. We really need to plan better.  \nMan: I agree! What day do you think we should go?  \nWoman: How about Saturday morning? The store will be less busy then.  \nMan: That sounds good. Do you have a list of what we need?  \nWoman: Yes, I have some items written down. We should check the fridge first.",
+        "passage": "Jason: Hey, do you remember that we need to buy groceries this week?  \nAshley: Yes, I remember. We really need to plan better.  \nJason: I agree! What day do you think we should go?  \nAshley: How about Saturday morning? The store will be less busy then.  \nJason: That sounds good. Do you have a list of what we need?  \nAshley: Yes, I have some items written down. We should check the fridge first.",
         "questions": [
           {
             "id": 1,
@@ -6221,7 +6221,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Should we buy anything special this time?  \nWoman: Maybe some snacks for the weekend?  \nMan: Yes! I love having snacks while watching movies.  \nWoman: Great idea! What types of snacks do you want?  \nMan: I like chips and popcorn. Do you have a favorite?  \nWoman: I really enjoy chocolate. Let’s add that to the list too.",
+        "passage": "Jason: Should we buy anything special this time?  \nAshley: Maybe some snacks for the weekend?  \nJason: Yes! I love having snacks while watching movies.  \nAshley: Great idea! What types of snacks do you want?  \nJason: I like chips and popcorn. Do you have a favorite?  \nAshley: I really enjoy chocolate. Let’s add that to the list too.",
         "questions": [
           {
             "id": 4,
@@ -6262,7 +6262,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Should we set a budget for our grocery shopping?  \nWoman: Yes, that’s a smart idea.  \nMan: How much should we spend?  \nWoman: I think $100 is a good amount.  \nMan: Agreed! That should cover our needs.  \nWoman: Let’s stick to the list to avoid overspending.",
+        "passage": "Jason: Should we set a budget for our grocery shopping?  \nAshley: Yes, that’s a smart idea.  \nJason: How much should we spend?  \nAshley: I think $100 is a good amount.  \nJason: Agreed! That should cover our needs.  \nAshley: Let’s stick to the list to avoid overspending.",
         "questions": [
           {
             "id": 7,
@@ -6299,7 +6299,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hey, I've noticed you've been struggling a bit with our recent coursework. Is everything all right?  Woman: Yeah, I'm finding it hard to keep up with the readings and assignments. It feels overwhelming at times.  Man: I get that. Have you tried breaking down the readings into smaller parts? That might help you manage it better.  Woman: That’s a good idea. I’ll definitely give that a shot. What do you do when you feel overwhelmed?  Man: I usually create a schedule to prioritize my tasks. It keeps me organized.",
+        "passage": "Matt: Hey, I've noticed you've been struggling a bit with our recent coursework. Is everything all right?  Jennifer: Yeah, I'm finding it hard to keep up with the readings and assignments. It feels overwhelming at times.  Matt: I get that. Have you tried breaking down the readings into smaller parts? That might help you manage it better.  Jennifer: That’s a good idea. I’ll definitely give that a shot. What do you do when you feel overwhelmed?  Matt: I usually create a schedule to prioritize my tasks. It keeps me organized.",
         "questions": [
           {
             "id": 1,
@@ -6340,7 +6340,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: That makes sense. I think I need to be more organized. But sometimes, I also find it hard to focus when I study.  Man: Have you thought about finding a quiet place to study? It might help with concentration.  Woman: I usually study at home, but there are too many distractions. Where do you study?  Man: I prefer the library. It’s quiet, and I can really focus there. Plus, if I need help, the librarians are great resources.",
+        "passage": "Jennifer: That makes sense. I think I need to be more organized. But sometimes, I also find it hard to focus when I study.  Matt: Have you thought about finding a quiet place to study? It might help with concentration.  Jennifer: I usually study at home, but there are too many distractions. Where do you study?  Matt: I prefer the library. It’s quiet, and I can really focus there. Plus, if I need help, the librarians are great resources.",
         "questions": [
           {
             "id": 4,
@@ -6381,7 +6381,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Woman: That sounds ideal! I’ll check out the library tomorrow. Do you want to study together?  Man: Sure, I’d love that! We can motivate each other.  Woman: Great! I feel better just talking about this. Thanks for your support!  Man: No problem! We’re in this together.",
+        "passage": "Jennifer: That sounds ideal! I’ll check out the library tomorrow. Do you want to study together?  Matt: Sure, I’d love that! We can motivate each other.  Jennifer: Great! I feel better just talking about this. Thanks for your support!  Matt: No problem! We’re in this together.",
         "questions": [
           {
             "id": 7,
@@ -6418,7 +6418,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've noticed that many of our colleagues are complaining about stress lately. It seems like the workload has increased substantially. What do you think we should do about it? Woman: I agree. I think we should propose a wellness program to management. Something that encourages mindfulness or even regular breaks could really help. Man: That sounds like a great idea! It might also promote a healthier work-life balance, which is crucial.",
+        "passage": "Patrick: I've noticed that many of our colleagues are complaining about stress lately. It seems like the workload has increased substantially. What do you think we should do about it? Natalie: I agree. I think we should propose a wellness program to management. Something that encourages mindfulness or even regular breaks could really help. Patrick: That sounds like a great idea! It might also promote a healthier work-life balance, which is crucial.",
         "questions": [
           {
             "id": 1,
@@ -6459,7 +6459,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Exactly! I think implementing short mindfulness sessions could really help people de-stress. We could even organize yoga classes after work hours. Man: That’s an excellent idea! It not only promotes physical health but also mental well-being. It might even boost morale. Woman: Yes, and we should emphasize that these sessions are voluntary to encourage participation without pressure. What's your take on that? Man: I like it! Giving people the option to participate might make them more willing to join.",
+        "passage": "Natalie: Exactly! I think implementing short mindfulness sessions could really help people de-stress. We could even organize yoga classes after work hours. Patrick: That’s an excellent idea! It not only promotes physical health but also mental well-being. It might even boost morale. Natalie: Yes, and we should emphasize that these sessions are voluntary to encourage participation without pressure. What's your take on that? Patrick: I like it! Giving people the option to participate might make them more willing to join.",
         "questions": [
           {
             "id": 4,
@@ -6500,7 +6500,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: After we finalize the proposal, should we present it to HR directly? Woman: I think that’s best. We should also gather some feedback from our colleagues to strengthen our case. If we show that many people are interested, HR might take it more seriously. Man: Good point! Let’s create a survey to gauge interest. Once we have enough support, we can approach HR with our well-prepared proposal.",
+        "passage": "Patrick: After we finalize the proposal, should we present it to HR directly? Natalie: I think that’s best. We should also gather some feedback from our colleagues to strengthen our case. If we show that many people are interested, HR might take it more seriously. Patrick: Good point! Let’s create a survey to gauge interest. Once we have enough support, we can approach HR with our well-prepared proposal.",
         "questions": [
           {
             "id": 7,
@@ -6537,7 +6537,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, I wanted to talk about our meeting next week. I have a conflict.  \nWoman: Oh no, what’s the problem?  \nMan: I have a doctor’s appointment on the same day.  \nWoman: That’s unfortunate. Can you reschedule your appointment?  \nMan: I already tried, but they are fully booked.  \nWoman: I see. We might need to change our meeting time instead.",
+        "passage": "Adam: Hi, I wanted to talk about our meeting next week. I have a conflict.  \nMegan: Oh no, what’s the problem?  \nAdam: I have a doctor’s appointment on the same day.  \nMegan: That’s unfortunate. Can you reschedule your appointment?  \nAdam: I already tried, but they are fully booked.  \nMegan: I see. We might need to change our meeting time instead.",
         "questions": [
           {
             "id": 1,
@@ -6578,7 +6578,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Do you have any other times available for the meeting?  \nWoman: Yes, we can meet on Thursday instead.  \nMan: Thursday works for me, but what time?  \nWoman: How about 2 PM?  \nMan: Sounds good! I’ll be available then.  \nWoman: Great! I’ll send out the updated invitation.",
+        "passage": "Adam: Do you have any other times available for the meeting?  \nMegan: Yes, we can meet on Thursday instead.  \nAdam: Thursday works for me, but what time?  \nMegan: How about 2 PM?  \nAdam: Sounds good! I’ll be available then.  \nMegan: Great! I’ll send out the updated invitation.",
         "questions": [
           {
             "id": 4,
@@ -6619,7 +6619,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I appreciate your help with this. It’s hard to balance everything sometimes.  \nWoman: I understand. Let’s keep communication open if more issues come up.  \nMan: Absolutely, and if I need to change again, I’ll let you know right away.  \nWoman: Perfect! Good luck with your appointment.",
+        "passage": "Adam: I appreciate your help with this. It’s hard to balance everything sometimes.  \nMegan: I understand. Let’s keep communication open if more issues come up.  \nAdam: Absolutely, and if I need to change again, I’ll let you know right away.  \nMegan: Perfect! Good luck with your appointment.",
         "questions": [
           {
             "id": 7,
@@ -6656,7 +6656,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, I think my car needs some maintenance. It's making a strange noise.  \nWoman: Oh no! Have you checked the oil level? \nMan: Not yet, but I think I should. What else could be wrong? \nWoman: It might also need a new battery if it's not starting well. \nMan: That could be it. Should I take it to a garage?  \nWoman: Yes, that's a good idea. They can check everything for you.",
+        "passage": "Tyler: Hi, I think my car needs some maintenance. It's making a strange noise.  \nSamantha: Oh no! Have you checked the oil level? \nTyler: Not yet, but I think I should. What else could be wrong? \nSamantha: It might also need a new battery if it's not starting well. \nTyler: That could be it. Should I take it to a garage?  \nSamantha: Yes, that's a good idea. They can check everything for you.",
         "questions": [
           {
             "id": 1,
@@ -6697,7 +6697,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Have you thought about how much it will cost?  \nMan: Not really. I hope it’s not too expensive.  \nWoman: You might want to call around for prices.  \nMan: That’s a good idea. I’ll check with a few places.  \nWoman: Also, ask if they have any special deals or discounts. \nMan: Right, that could save me some money!  \nWoman: Yes, and sometimes they offer free inspections too.",
+        "passage": "Samantha: Have you thought about how much it will cost?  \nTyler: Not really. I hope it’s not too expensive.  \nSamantha: You might want to call around for prices.  \nTyler: That’s a good idea. I’ll check with a few places.  \nSamantha: Also, ask if they have any special deals or discounts. \nTyler: Right, that could save me some money!  \nSamantha: Yes, and sometimes they offer free inspections too.",
         "questions": [
           {
             "id": 4,
@@ -6738,7 +6738,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I’ll make some calls today. Thank you for your help!  \nWoman: No problem! Let me know how it goes.  \nMan: I will! And if it’s too costly, I may wait.  \nWoman: That makes sense.  \nMan: I just want it safe to drive.  \nWoman: Definitely! Safety is the most important thing.",
+        "passage": "Tyler: I’ll make some calls today. Thank you for your help!  \nSamantha: No problem! Let me know how it goes.  \nTyler: I will! And if it’s too costly, I may wait.  \nSamantha: That makes sense.  \nTyler: I just want it safe to drive.  \nSamantha: Definitely! Safety is the most important thing.",
         "questions": [
           {
             "id": 7,
@@ -6775,7 +6775,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I really need to find a new apartment soon. My lease is ending next month.  \nWoman: Have you started looking?  \nMan: Yes, but it's overwhelming. There are so many options.  \nWoman: I understand. What kind of place are you looking for?  \nMan: I need one bedroom, and it should be close to the subway.  \nWoman: That makes sense. Have you checked any websites yet?  \nMan: Yes, I've looked at a few, but I need more help.",
+        "passage": "Nathan: I really need to find a new apartment soon. My lease is ending next month.  \nHeather: Have you started looking?  \nNathan: Yes, but it's overwhelming. There are so many options.  \nHeather: I understand. What kind of place are you looking for?  \nNathan: I need one bedroom, and it should be close to the subway.  \nHeather: That makes sense. Have you checked any websites yet?  \nNathan: Yes, I've looked at a few, but I need more help.",
         "questions": [
           {
             "id": 1,
@@ -6816,7 +6816,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Have you thought about your budget?  \nMan: Yes, I can spend about $1,500 a month.  \nWoman: That's a good budget for a one-bedroom in the city.  \nMan: I hope so. I also want to find a place with laundry facilities.  \nWoman: That's really important. Do you want a balcony too?  \nMan: A balcony would be nice, but it’s not a must-have.  \nWoman: You should make a list of what you want.  \nMan: That’s a great idea!",
+        "passage": "Heather: Have you thought about your budget?  \nNathan: Yes, I can spend about $1,500 a month.  \nHeather: That's a good budget for a one-bedroom in the city.  \nNathan: I hope so. I also want to find a place with laundry facilities.  \nHeather: That's really important. Do you want a balcony too?  \nNathan: A balcony would be nice, but it’s not a must-have.  \nHeather: You should make a list of what you want.  \nNathan: That’s a great idea!",
         "questions": [
           {
             "id": 4,
@@ -6857,7 +6857,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Thanks for your help! I will start looking more seriously now.  \nWoman: No problem! Let me know if you want to go see some places together.  \nMan: That would be great! I feel more confident now.  \nWoman: I'm glad to hear that. Remember to check the reviews online too.  \nMan: Yes, I will definitely do that.  \nWoman: Good luck, and keep me updated!  \nMan: I will! Thanks again.",
+        "passage": "Nathan: Thanks for your help! I will start looking more seriously now.  \nHeather: No problem! Let me know if you want to go see some places together.  \nNathan: That would be great! I feel more confident now.  \nHeather: I'm glad to hear that. Remember to check the reviews online too.  \nNathan: Yes, I will definitely do that.  \nHeather: Good luck, and keep me updated!  \nNathan: I will! Thanks again.",
         "questions": [
           {
             "id": 7,
@@ -6894,7 +6894,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, I just received a message that my package got lost in transit. What should I do? Woman: That sounds frustrating! Have you tried contacting the delivery service? Man: No, I haven't done that yet. How do I reach them? Woman: You can call their customer service number or check their website for more information.",
+        "passage": "Brandon: Hi, I just received a message that my package got lost in transit. What should I do? Christina: That sounds frustrating! Have you tried contacting the delivery service? Brandon: No, I haven't done that yet. How do I reach them? Christina: You can call their customer service number or check their website for more information.",
         "questions": [
           {
             "id": 1,
@@ -6935,7 +6935,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: If I contact them, what information do I need to provide? Woman: You should have your tracking number and the delivery address ready. Man: Okay, I’ll get those. How long does it usually take to resolve this? Woman: It can take a few days, but they will keep you updated.",
+        "passage": "Brandon: If I contact them, what information do I need to provide? Christina: You should have your tracking number and the delivery address ready. Brandon: Okay, I’ll get those. How long does it usually take to resolve this? Christina: It can take a few days, but they will keep you updated.",
         "questions": [
           {
             "id": 4,
@@ -6976,7 +6976,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: That makes sense. I guess I should do this soon. Woman: Yes, the sooner you contact them, the better. Man: Thanks for your help! I appreciate it. Woman: No problem! Good luck with your package.",
+        "passage": "Brandon: That makes sense. I guess I should do this soon. Christina: Yes, the sooner you contact them, the better. Brandon: Thanks for your help! I appreciate it. Christina: No problem! Good luck with your package.",
         "questions": [
           {
             "id": 7,
@@ -7013,7 +7013,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, Sarah! I heard you are looking for a new phone. What’s the problem with your old one?  \nWoman: Hi, Tom! Yes, my phone doesn’t charge anymore. It’s really frustrating because I need it for work.  \nMan: I understand. Have you thought about what kind of phone you want to buy?  \nWoman: I want something that lasts longer and is easy to use.  \nMan: Sounds good! Do you have a budget in mind?",
+        "passage": "Scott: Hi, Sarah! I heard you are looking for a new phone. What’s the problem with your old one?  \nAngela: Hi, Tom! Yes, my phone doesn’t charge anymore. It’s really frustrating because I need it for work.  \nScott: I understand. Have you thought about what kind of phone you want to buy?  \nAngela: I want something that lasts longer and is easy to use.  \nScott: Sounds good! Do you have a budget in mind?",
         "questions": [
           {
             "id": 1,
@@ -7054,7 +7054,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: I’m thinking about spending around $600.  \nMan: That’s a reasonable budget! Have you checked any stores yet?  \nWoman: No, not yet. I’m not sure where to go.  \nMan: You could try the big electronics store or look online.  \nWoman: Online sounds good, but I worry about shipping times.  \nMan: True, but many places have fast shipping. You can read reviews too.",
+        "passage": "Angela: I’m thinking about spending around $600.  \nScott: That’s a reasonable budget! Have you checked any stores yet?  \nAngela: No, not yet. I’m not sure where to go.  \nScott: You could try the big electronics store or look online.  \nAngela: Online sounds good, but I worry about shipping times.  \nScott: True, but many places have fast shipping. You can read reviews too.",
         "questions": [
           {
             "id": 4,
@@ -7095,7 +7095,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: That’s a valid concern. Maybe you could check for stores that offer same-day pickup?  \nWoman: That’s a great idea, Tom! I will look into it.  \nMan: Also, remember to compare different models.  \nWoman: Of course! Thanks for your help!  \nMan: You’re welcome! Good luck with your search.",
+        "passage": "Scott: That’s a valid concern. Maybe you could check for stores that offer same-day pickup?  \nAngela: That’s a great idea, Tom! I will look into it.  \nScott: Also, remember to compare different models.  \nAngela: Of course! Thanks for your help!  \nScott: You’re welcome! Good luck with your search.",
         "questions": [
           {
             "id": 7,
@@ -7132,7 +7132,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Hi, I noticed that our team is falling behind on the project deadline. What do you think we should do? Woman: I agree. We need to find a way to improve our progress. Maybe we can have more team meetings to check on everyone's tasks? Man: That's a good idea. We can also set small goals for each week to make it easier to track our progress.",
+        "passage": "Tom: Hi, I noticed that our team is falling behind on the project deadline. What do you think we should do? Sarah: I agree. We need to find a way to improve our progress. Maybe we can have more team meetings to check on everyone's tasks? Tom: That's a good idea. We can also set small goals for each week to make it easier to track our progress.",
         "questions": [
           {
             "id": 1,
@@ -7173,7 +7173,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: I think we should also check if anyone is struggling with their tasks. Maybe we can offer help. Man: That's true. Some team members might need extra support. We can pair them up with others who can help. Woman: Yes, that way everyone can stay on track and feel supported.",
+        "passage": "Sarah: I think we should also check if anyone is struggling with their tasks. Maybe we can offer help. Tom: That's true. Some team members might need extra support. We can pair them up with others who can help. Sarah: Yes, that way everyone can stay on track and feel supported.",
         "questions": [
           {
             "id": 4,
@@ -7214,7 +7214,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Great! Let’s plan our first meeting for tomorrow. We can discuss tasks and how to help each other. Woman: Sounds good! I’ll send a message to everyone to remind them. Man: Perfect! I hope this makes a difference for us.",
+        "passage": "Tom: Great! Let’s plan our first meeting for tomorrow. We can discuss tasks and how to help each other. Sarah: Sounds good! I’ll send a message to everyone to remind them. Tom: Perfect! I hope this makes a difference for us.",
         "questions": [
           {
             "id": 7,
@@ -7251,7 +7251,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I noticed that our team has been struggling with communication on recent projects. What do you think we should do? Woman: I agree. It seems like there’s a disconnect, especially with remote work. Perhaps we should implement regular check-ins? Man: That could work. Weekly meetings might help everyone stay aligned and clarify their tasks. What do you think? Woman: Yes, but we need to ensure they don’t become too long or tedious. A quick 30-minute session should suffice. ",
+        "passage": "David: I noticed that our team has been struggling with communication on recent projects. What do you think we should do? Lisa: I agree. It seems like there’s a disconnect, especially with remote work. Perhaps we should implement regular check-ins? David: That could work. Weekly meetings might help everyone stay aligned and clarify their tasks. What do you think? Lisa: Yes, but we need to ensure they don’t become too long or tedious. A quick 30-minute session should suffice. ",
         "questions": [
           {
             "id": 1,
@@ -7292,7 +7292,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: I just remember our last meeting felt rushed, and some points were left unaddressed. What if we create an agenda for each meeting? Woman: That’s a great idea! An agenda would keep us focused and make sure we cover all important topics. Man: Exactly. We could also allow team members to add points they want to discuss ahead of time. Woman: That could encourage participation and ensure everyone’s voice is heard. ",
+        "passage": "David: I just remember our last meeting felt rushed, and some points were left unaddressed. What if we create an agenda for each meeting? Lisa: That’s a great idea! An agenda would keep us focused and make sure we cover all important topics. David: Exactly. We could also allow team members to add points they want to discuss ahead of time. Lisa: That could encourage participation and ensure everyone’s voice is heard. ",
         "questions": [
           {
             "id": 4,
@@ -7333,7 +7333,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I think if we implement these changes, we’ll see a noticeable improvement. Woman: I agree. It might take some time to adjust, but I believe it will foster better teamwork. Man: True, and if we evaluate the effectiveness after a month, we can make further adjustments if needed. Woman: That sounds reasonable. Regular feedback from the team will be crucial to see what works best. ",
+        "passage": "David: I think if we implement these changes, we’ll see a noticeable improvement. Lisa: I agree. It might take some time to adjust, but I believe it will foster better teamwork. David: True, and if we evaluate the effectiveness after a month, we can make further adjustments if needed. Lisa: That sounds reasonable. Regular feedback from the team will be crucial to see what works best. ",
         "questions": [
           {
             "id": 7,
@@ -7370,7 +7370,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I’ve noticed that our project deadlines keep getting pushed back. It’s frustrating. Woman: I agree. I think part of the problem is that we’re not communicating effectively. Man: Yes, I’ve seen team members working in silos. It leads to misunderstandings. Woman: Exactly. Maybe we need to have more regular check-ins to ensure everyone is on the same page.",
+        "passage": "James: I’ve noticed that our project deadlines keep getting pushed back. It’s frustrating. Emily: I agree. I think part of the problem is that we’re not communicating effectively. James: Yes, I’ve seen team members working in silos. It leads to misunderstandings. Emily: Exactly. Maybe we need to have more regular check-ins to ensure everyone is on the same page.",
         "questions": [
           {
             "id": 1,
@@ -7411,7 +7411,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: I think we could also use a shared online tool to track progress. Man: That could help. If everyone updates their tasks in real-time, it would minimize confusion. Woman: Right! Plus, it would allow us to see who is ahead or behind. Man: And that transparency could motivate the team to stay on schedule. However, some might find it overwhelming.",
+        "passage": "Emily: I think we could also use a shared online tool to track progress. James: That could help. If everyone updates their tasks in real-time, it would minimize confusion. Emily: Right! Plus, it would allow us to see who is ahead or behind. James: And that transparency could motivate the team to stay on schedule. However, some might find it overwhelming.",
         "questions": [
           {
             "id": 4,
@@ -7452,7 +7452,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Woman: Ultimately, we need everyone to buy into these changes. Man: True, without team commitment, it won’t work. Woman: Maybe we can schedule a meeting to discuss these ideas? Man: Yes, and we should present the benefits clearly, so the team sees value.",
+        "passage": "Emily: Ultimately, we need everyone to buy into these changes. James: True, without team commitment, it won’t work. Emily: Maybe we can schedule a meeting to discuss these ideas? James: Yes, and we should present the benefits clearly, so the team sees value.",
         "questions": [
           {
             "id": 7,
@@ -7489,7 +7489,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've noticed that many students seem disengaged during our lectures. It's becoming a real issue.  \nWoman: I agree. It’s difficult to keep their attention sometimes. Maybe we need to incorporate more interactive activities.  \nMan: That's a good idea. What types of activities do you think would work best?  \nWoman: Perhaps group discussions or hands-on projects could be effective. Students often learn better when they're actively involved.",
+        "passage": "Michael: I've noticed that many students seem disengaged during our lectures. It's becoming a real issue.  \nJessica: I agree. It’s difficult to keep their attention sometimes. Maybe we need to incorporate more interactive activities.  \nMichael: That's a good idea. What types of activities do you think would work best?  \nJessica: Perhaps group discussions or hands-on projects could be effective. Students often learn better when they're actively involved.",
         "questions": [
           {
             "id": 1,
@@ -7530,7 +7530,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: I think group discussions could really boost participation.  \nMan: Absolutely! But we might face challenges in managing them.  \nWoman: True. We need to set clear guidelines to ensure everyone gets a chance to speak.  \nMan: Right. And maybe we could assign roles to encourage quieter students to join in.  \nWoman: Great suggestion! It could help create a more balanced conversation.",
+        "passage": "Jessica: I think group discussions could really boost participation.  \nMichael: Absolutely! But we might face challenges in managing them.  \nJessica: True. We need to set clear guidelines to ensure everyone gets a chance to speak.  \nMichael: Right. And maybe we could assign roles to encourage quieter students to join in.  \nJessica: Great suggestion! It could help create a more balanced conversation.",
         "questions": [
           {
             "id": 4,
@@ -7571,7 +7571,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I feel optimistic about these changes. They could make a real difference.  \nWoman: Yes! Plus, we can seek feedback from students after trying these methods.  \nMan: Exactly. Their input will help us understand what works and what doesn't.  \nWoman: I’m glad we’re addressing this. Engaged students are more likely to succeed in their studies.",
+        "passage": "Michael: I feel optimistic about these changes. They could make a real difference.  \nJessica: Yes! Plus, we can seek feedback from students after trying these methods.  \nMichael: Exactly. Their input will help us understand what works and what doesn't.  \nJessica: I’m glad we’re addressing this. Engaged students are more likely to succeed in their studies.",
         "questions": [
           {
             "id": 7,
@@ -7608,7 +7608,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've noticed that many students seem disengaged during our online classes. It's hard to keep their attention. Woman: I completely agree. I think part of the issue is that they are staring at screens for long periods. Man: Exactly! Maybe we should consider more interactive activities to break the monotony. Woman: That could help. I'm also wondering if regular check-ins would make a difference.",
+        "passage": "Kevin: I've noticed that many students seem disengaged during our online classes. It's hard to keep their attention. Amanda: I completely agree. I think part of the issue is that they are staring at screens for long periods. Kevin: Exactly! Maybe we should consider more interactive activities to break the monotony. Amanda: That could help. I'm also wondering if regular check-ins would make a difference.",
         "questions": [
           {
             "id": 1,
@@ -7649,7 +7649,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: I think incorporating group discussions could also be effective. Woman: Yes, that way students can share ideas with each other. Man: Maybe we could use breakout rooms for this? Woman: Great idea! That allows them to interact more personally. However, we need to ensure everyone participates. Man: True, we could assign specific roles in the groups to encourage involvement.",
+        "passage": "Kevin: I think incorporating group discussions could also be effective. Amanda: Yes, that way students can share ideas with each other. Kevin: Maybe we could use breakout rooms for this? Amanda: Great idea! That allows them to interact more personally. However, we need to ensure everyone participates. Kevin: True, we could assign specific roles in the groups to encourage involvement.",
         "questions": [
           {
             "id": 4,
@@ -7690,7 +7690,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: To make sure every student is engaged, we could rotate roles each session. Woman: That's smart! This way, they get to experience different perspectives. Man: And it helps develop teamwork skills. Woman: Exactly! We should also gather feedback from students after implementing these changes.",
+        "passage": "Kevin: To make sure every student is engaged, we could rotate roles each session. Amanda: That's smart! This way, they get to experience different perspectives. Kevin: And it helps develop teamwork skills. Amanda: Exactly! We should also gather feedback from students after implementing these changes.",
         "questions": [
           {
             "id": 7,
@@ -7727,7 +7727,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I’ve been feeling really tired lately. I think it might be related to my diet. Woman: Have you considered talking to a nutritionist? They could help you identify any deficiencies. Man: That’s a good idea! But I’m also concerned about the cost. It can be expensive to consult a professional. Woman: True, but many clinics offer sliding scale fees based on income. It could be more affordable than you think.",
+        "passage": "Ryan: I’ve been feeling really tired lately. I think it might be related to my diet. Nicole: Have you considered talking to a nutritionist? They could help you identify any deficiencies. Ryan: That’s a good idea! But I’m also concerned about the cost. It can be expensive to consult a professional. Nicole: True, but many clinics offer sliding scale fees based on income. It could be more affordable than you think.",
         "questions": [
           {
             "id": 1,
@@ -7768,7 +7768,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: That makes sense, but I’m still unsure about it. What if my health problems are just stress-related? Woman: Stress can definitely impact your energy levels. Have you thought about stress management techniques? Man: I’ve tried meditation, but I’m not very good at it. Woman: You could join a class or workshop. They usually provide guided sessions that can help you learn better.",
+        "passage": "Ryan: That makes sense, but I’m still unsure about it. What if my health problems are just stress-related? Nicole: Stress can definitely impact your energy levels. Have you thought about stress management techniques? Ryan: I’ve tried meditation, but I’m not very good at it. Nicole: You could join a class or workshop. They usually provide guided sessions that can help you learn better.",
         "questions": [
           {
             "id": 4,
@@ -7809,7 +7809,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: I think I’ll look into a workshop. It might be beneficial. Woman: That sounds great! And remember, alongside managing stress, keeping a balanced diet is important too. Man: Definitely! I’ll need to make some changes. Woman: Good luck! And don't hesitate to seek support from friends or family in this process.",
+        "passage": "Ryan: I think I’ll look into a workshop. It might be beneficial. Nicole: That sounds great! And remember, alongside managing stress, keeping a balanced diet is important too. Ryan: Definitely! I’ll need to make some changes. Nicole: Good luck! And don't hesitate to seek support from friends or family in this process.",
         "questions": [
           {
             "id": 7,
@@ -7846,7 +7846,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I’ve been grappling with the implications of that recent contract we discussed. The terms seem disproportionately favorable to them. Woman: Absolutely, the clauses around liability are particularly concerning. It feels like we might be risking too much. Man: We should consider consulting a legal expert to reinterpret the contract’s ambiguity. Woman: That might help, but we also need to prepare for a renegotiation. Highlighting our concerns could leverage a more balanced agreement.",
+        "passage": "Chris: I’ve been grappling with the implications of that recent contract we discussed. The terms seem disproportionately favorable to them. Rachel: Absolutely, the clauses around liability are particularly concerning. It feels like we might be risking too much. Chris: We should consider consulting a legal expert to reinterpret the contract’s ambiguity. Rachel: That might help, but we also need to prepare for a renegotiation. Highlighting our concerns could leverage a more balanced agreement.",
         "questions": [
           {
             "id": 1,
@@ -7887,7 +7887,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Given the liabilities, it might not just affect our finances but our reputation too. Woman: That's a valid point. If we end up in litigation, it could tarnish our brand. Man: Exactly. Plus, any adverse ruling might set a precedent for future dealings. Woman: So, if we approach this cautiously and involve an expert, we may be able to avoid a costly mistake. Man: Yes, maybe drafting a counterproposal could also show we're serious about equitable terms.",
+        "passage": "Chris: Given the liabilities, it might not just affect our finances but our reputation too. Rachel: That's a valid point. If we end up in litigation, it could tarnish our brand. Chris: Exactly. Plus, any adverse ruling might set a precedent for future dealings. Rachel: So, if we approach this cautiously and involve an expert, we may be able to avoid a costly mistake. Chris: Yes, maybe drafting a counterproposal could also show we're serious about equitable terms.",
         "questions": [
           {
             "id": 4,
@@ -7928,7 +7928,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Ultimately, we must be vigilant and proactive in our approach. Woman: Agreed. The stakes are too high to be reactive. Man: We should set up a timeline to finalize our strategy. Woman: Absolutely. Perhaps we can convene with the legal team next week? Man: Yes, that sounds prudent. This way, we can clarify our position and instill confidence in our partners.",
+        "passage": "Chris: Ultimately, we must be vigilant and proactive in our approach. Rachel: Agreed. The stakes are too high to be reactive. Chris: We should set up a timeline to finalize our strategy. Rachel: Absolutely. Perhaps we can convene with the legal team next week? Chris: Yes, that sounds prudent. This way, we can clarify our position and instill confidence in our partners.",
         "questions": [
           {
             "id": 7,
@@ -7965,7 +7965,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I’m really concerned about the implications of the new zoning regulations on our property investment. The last thing we need is a decrease in property value. Woman: Absolutely. I’ve been reading about the potential restrictions on short-term rentals, which could significantly impact our rental income.",
+        "passage": "Brian: I’m really concerned about the implications of the new zoning regulations on our property investment. The last thing we need is a decrease in property value. Laura: Absolutely. I’ve been reading about the potential restrictions on short-term rentals, which could significantly impact our rental income.",
         "questions": [
           {
             "id": 1,
@@ -8006,7 +8006,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: On top of that, I heard that new permits will be required for any renovation projects, which could delay our timeline. Man: Right, and if we’re not careful, we might not even get the permits we need, especially with the backlog they’re experiencing.",
+        "passage": "Laura: On top of that, I heard that new permits will be required for any renovation projects, which could delay our timeline. Brian: Right, and if we’re not careful, we might not even get the permits we need, especially with the backlog they’re experiencing.",
         "questions": [
           {
             "id": 4,
@@ -8047,7 +8047,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: We should consider consulting with a real estate lawyer to navigate these changes effectively. Woman: That sounds wise. They could help us understand not just our current options but also any potential liabilities we might face.",
+        "passage": "Brian: We should consider consulting with a real estate lawyer to navigate these changes effectively. Laura: That sounds wise. They could help us understand not just our current options but also any potential liabilities we might face.",
         "questions": [
           {
             "id": 7,
@@ -8084,7 +8084,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been reviewing the contract terms, and it seems there's a significant discrepancy regarding the deliverables. Woman: I can see why you'd be concerned. Interpreting the clauses can be quite challenging, especially with the vague language employed. Man: Exactly. If we proceed without clarification, we could expose ourselves to liability. Woman: So, what’s your proposed approach to remedy this situation? Are we considering legal counsel? Man: I think consulting with a lawyer might be prudent before we respond to their latest communication.",
+        "passage": "Mark: I've been reviewing the contract terms, and it seems there's a significant discrepancy regarding the deliverables. Karen: I can see why you'd be concerned. Interpreting the clauses can be quite challenging, especially with the vague language employed. Mark: Exactly. If we proceed without clarification, we could expose ourselves to liability. Karen: So, what’s your proposed approach to remedy this situation? Are we considering legal counsel? Mark: I think consulting with a lawyer might be prudent before we respond to their latest communication.",
         "questions": [
           {
             "id": 1,
@@ -8125,7 +8125,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: Consulting a lawyer sounds like a sensible step. However, we need to ensure we manage costs effectively. Man: Absolutely. We can schedule an initial consultation, where we outline our concerns. Then, based on the advice we receive, we can decide on the next steps. Woman: That makes sense. I also think we should gather more documentation to present a comprehensive overview of the issue. Man: Great idea! The more evidence we have, the stronger our position will be.",
+        "passage": "Karen: Consulting a lawyer sounds like a sensible step. However, we need to ensure we manage costs effectively. Mark: Absolutely. We can schedule an initial consultation, where we outline our concerns. Then, based on the advice we receive, we can decide on the next steps. Karen: That makes sense. I also think we should gather more documentation to present a comprehensive overview of the issue. Mark: Great idea! The more evidence we have, the stronger our position will be.",
         "questions": [
           {
             "id": 4,
@@ -8166,7 +8166,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: Once we have all our information consolidated, we can better understand our legal standing. Woman: I agree. It’s also crucial that we keep detailed records going forward to prevent similar disputes. Man: Exactly, proactive documentation is essential. If we can establish a clear pattern of correspondence, it will serve us well if any further issues arise. Woman: Let’s aim to have everything ready by the end of the week, then. We can reevaluate by Friday and decide how to move forward.",
+        "passage": "Mark: Once we have all our information consolidated, we can better understand our legal standing. Karen: I agree. It’s also crucial that we keep detailed records going forward to prevent similar disputes. Mark: Exactly, proactive documentation is essential. If we can establish a clear pattern of correspondence, it will serve us well if any further issues arise. Karen: Let’s aim to have everything ready by the end of the week, then. We can reevaluate by Friday and decide how to move forward.",
         "questions": [
           {
             "id": 7,
@@ -8203,7 +8203,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: Have you had a chance to review the latest contract proposal from the vendor? It seems heavily skewed in their favor. Woman: Yes, I noticed that too. The termination clauses are particularly concerning. We need to ensure our interests are protected. Man: Agreed. Perhaps we should suggest a revised clause that allows for more flexibility. Woman: That could work, but we must position it as a standard practice rather than a unique request to avoid raising red flags.",
+        "passage": "Steven: Have you had a chance to review the latest contract proposal from the vendor? It seems heavily skewed in their favor. Michelle: Yes, I noticed that too. The termination clauses are particularly concerning. We need to ensure our interests are protected. Steven: Agreed. Perhaps we should suggest a revised clause that allows for more flexibility. Michelle: That could work, but we must position it as a standard practice rather than a unique request to avoid raising red flags.",
         "questions": [
           {
             "id": 1,
@@ -8244,7 +8244,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Woman: We should also consider how we can articulate our revision. If we frame it as a common industry standard, we might meet less resistance. Man: Exactly, and we can back it up with examples from similar contracts. I believe transparency in our rationale will strengthen our position. Woman: Absolutely! Additionally, we need to prepare for potential pushback. What if they insist on keeping their original terms? Man: Then we might have to explore alternative vendors who can provide more equitable terms.",
+        "passage": "Michelle: We should also consider how we can articulate our revision. If we frame it as a common industry standard, we might meet less resistance. Steven: Exactly, and we can back it up with examples from similar contracts. I believe transparency in our rationale will strengthen our position. Michelle: Absolutely! Additionally, we need to prepare for potential pushback. What if they insist on keeping their original terms? Steven: Then we might have to explore alternative vendors who can provide more equitable terms.",
         "questions": [
           {
             "id": 4,
@@ -8285,7 +8285,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: It’s crucial we document everything as we progress. Should we draft an outline of our negotiation points? Woman: Yes, that would be beneficial. We need a clear record for future reference. And let’s also assign roles in the meeting. I can handle the initial presentation. Man: Perfect! I’ll focus on rebuttals and responses to their concerns. Woman: This collaboration appears promising; I feel optimistic about our approach.",
+        "passage": "Steven: It’s crucial we document everything as we progress. Should we draft an outline of our negotiation points? Michelle: Yes, that would be beneficial. We need a clear record for future reference. And let’s also assign roles in the meeting. I can handle the initial presentation. Steven: Perfect! I’ll focus on rebuttals and responses to their concerns. Michelle: This collaboration appears promising; I feel optimistic about our approach.",
         "questions": [
           {
             "id": 7,
@@ -8322,7 +8322,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been reviewing our investment portfolio, and I think we need to reconsider our asset allocation. The market volatility has been impacting our returns significantly. \nWoman: I agree, but are we looking at reallocating into more aggressive stocks? I’m concerned about the risk associated with that approach.\nMan: We could also diversify into bonds, but given the current interest rates, that might not yield the best returns. \nWoman: True, we may need to strike a balance that mitigates risk while still taking advantage of market opportunities.",
+        "passage": "Andrew: I've been reviewing our investment portfolio, and I think we need to reconsider our asset allocation. The market volatility has been impacting our returns significantly. \nStephanie: I agree, but are we looking at reallocating into more aggressive stocks? I’m concerned about the risk associated with that approach.\nAndrew: We could also diversify into bonds, but given the current interest rates, that might not yield the best returns. \nStephanie: True, we may need to strike a balance that mitigates risk while still taking advantage of market opportunities.",
         "questions": [
           {
             "id": 1,
@@ -8363,7 +8363,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: Have you considered the possibility of investing in real estate as an alternative strategy? Given the recent market conditions, it could provide a hedge against inflation. \nWoman: That’s a substantial commitment though, and with property taxes on the rise, I’m not sure if it’s the right time. \nMan: Certainly, but if we choose our locations wisely and understand the neighborhood dynamics, it could be quite profitable. \nWoman: It’s also essential to think about maintenance costs and potential vacancies. We need a comprehensive evaluation before diving in.",
+        "passage": "Andrew: Have you considered the possibility of investing in real estate as an alternative strategy? Given the recent market conditions, it could provide a hedge against inflation. \nStephanie: That’s a substantial commitment though, and with property taxes on the rise, I’m not sure if it’s the right time. \nAndrew: Certainly, but if we choose our locations wisely and understand the neighborhood dynamics, it could be quite profitable. \nStephanie: It’s also essential to think about maintenance costs and potential vacancies. We need a comprehensive evaluation before diving in.",
         "questions": [
           {
             "id": 4,
@@ -8404,7 +8404,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: We should also keep in mind the importance of liquidity in our financial planning. \nWoman: Absolutely. A sudden need for cash can derail our entire strategy. We should ensure we have accessible funds. \nMan: Right, this means maintaining a cash reserve while still pursuing growth. \nWoman: And reviewing our current cash flow will be critical to identify areas where we can optimize.",
+        "passage": "Andrew: We should also keep in mind the importance of liquidity in our financial planning. \nStephanie: Absolutely. A sudden need for cash can derail our entire strategy. We should ensure we have accessible funds. \nAndrew: Right, this means maintaining a cash reserve while still pursuing growth. \nStephanie: And reviewing our current cash flow will be critical to identify areas where we can optimize.",
         "questions": [
           {
             "id": 7,
@@ -8441,7 +8441,7 @@
     "clips": [
       {
         "clipIndex": 0,
-        "passage": "Man: I've been reviewing our investment portfolio, and honestly, I'm a bit concerned about the high volatility we've been experiencing lately. \nWoman: I understand your concern. The market has been unpredictable, but perhaps we should consider diversifying. \nMan: That's true, but with interest rates fluctuating, what sectors do you think we should focus on? \nWoman: I'm thinking of looking into sustainable energy and technology. They seem to have robust growth potential despite the current climate.",
+        "passage": "Daniel: I've been reviewing our investment portfolio, and honestly, I'm a bit concerned about the high volatility we've been experiencing lately. \nRebecca: I understand your concern. The market has been unpredictable, but perhaps we should consider diversifying. \nDaniel: That's true, but with interest rates fluctuating, what sectors do you think we should focus on? \nRebecca: I'm thinking of looking into sustainable energy and technology. They seem to have robust growth potential despite the current climate.",
         "questions": [
           {
             "id": 1,
@@ -8482,7 +8482,7 @@
       },
       {
         "clipIndex": 1,
-        "passage": "Man: While those sectors are promising, I'm worried about the potential impact of government policies on our investments. \nWoman: That’s a valid point. We should analyze recent policy changes and their implications on tax incentives for green technology. \nMan: Exactly, and given that the government is emphasizing climate change, we might benefit from long-term incentives. \nWoman: Right, and we should also consider how global trends might affect local markets. International regulations are crucial too.",
+        "passage": "Daniel: While those sectors are promising, I'm worried about the potential impact of government policies on our investments. \nRebecca: That’s a valid point. We should analyze recent policy changes and their implications on tax incentives for green technology. \nDaniel: Exactly, and given that the government is emphasizing climate change, we might benefit from long-term incentives. \nRebecca: Right, and we should also consider how global trends might affect local markets. International regulations are crucial too.",
         "questions": [
           {
             "id": 4,
@@ -8523,7 +8523,7 @@
       },
       {
         "clipIndex": 2,
-        "passage": "Man: So, what will be our next steps? Should we convene a meeting with our financial advisor? \nWoman: Yes, I think it would be beneficial to get their insights on our strategy and any adjustments we should make. \nMan: Agreed. They might also provide us with some forecasts that could influence our decisions. \nWoman: Exactly, and perhaps we could also do a bit of our own research ahead of time to bring to the table.",
+        "passage": "Daniel: So, what will be our next steps? Should we convene a meeting with our financial advisor? \nRebecca: Yes, I think it would be beneficial to get their insights on our strategy and any adjustments we should make. \nDaniel: Agreed. They might also provide us with some forecasts that could influence our decisions. \nRebecca: Exactly, and perhaps we could also do a bit of our own research ahead of time to bring to the table.",
         "questions": [
           {
             "id": 7,

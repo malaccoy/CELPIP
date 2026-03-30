@@ -4,10 +4,8 @@ import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
 import { EventBanner } from '@/components/EventBanner';
 import { CommunityPopup } from '@/components/CommunityPopup';
-import EmailCapturePopup from '@/components/EmailCapturePopup';
 import Footer from '@/components/Footer';
 import BottomNav from '@/components/BottomNav';
-import FAB from '@/components/FAB';
 import FeedbackPopup from '@/components/FeedbackPopup';
 import MilestoneCelebration from '@/components/MilestoneCelebration';
 import PageTransition from '@/components/PageTransition';
@@ -130,7 +128,7 @@ export default function RootLayout({
           <PlanProvider>
             {/* EventBanner removed — discount only on pricing page */}
             <CommunityPopup />
-            <EmailCapturePopup />
+
             <Header />
             <div className={styles.container}>
               <Sidebar />
@@ -142,7 +140,6 @@ export default function RootLayout({
               </main>
             </div>
             <BottomNav />
-            <FAB />
             <FeedbackPopup />
             <MilestoneCelebration />
           </PlanProvider>

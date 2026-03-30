@@ -86,7 +86,7 @@ export default function ExerciseOfferPopup({ show, onClose }: Props) {
             </div>
           </div>
           <div className={styles.priceRow}>
-            <span className={styles.priceValue}>CA$24.99</span>
+            <span className={styles.priceValue}>CA$29.99</span>
             <span className={styles.pricePeriod}>/month</span>
           </div>
           <p className={styles.offerFeatures}>

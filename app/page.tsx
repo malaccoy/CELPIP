@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import {
   Mic, PenTool, Headphones, BookOpen,
@@ -13,6 +13,11 @@ import {
   Lock, Flame, Eye, MessageSquare,
 } from 'lucide-react';
 import styles from '@/styles/Home.module.scss';
+import ShimmerButton from '@/components/ShimmerButton';
+import NumberTicker from '@/components/NumberTicker';
+import Marquee from '@/components/Marquee';
+import dynamic from 'next/dynamic';
+const LottieSkillIcon = dynamic(() => import('@/components/LottieSkillIcon'), { ssr: false });
 
 /* ─── Animated Counter Hook ─── */
 function useCountUp(target: number, duration = 2000, start = false) {
@@ -63,15 +68,31 @@ export default function HomePage() {
     createClient().auth.getUser().then(({ data }) => {
       if (data?.user) setLoggedIn(true);
     });
-    // Simulated live counter
-    setLiveCount(Math.floor(Math.random() * 18) + 12);
+    // Simulated live counter — higher during study hours (ET)
+    const getBaseCount = () => {
+      const now = new Date();
+      const etHour = (now.getUTCHours() - 4 + 24) % 24; // ET = UTC-4
+      if (etHour >= 23 || etHour < 7) return Math.floor(Math.random() * 16) + 15; // 15-30 night
+      if (etHour >= 7 && etHour < 10) return Math.floor(Math.random() * 40) + 30; // 30-70 morning
+      if (etHour >= 10 && etHour < 14) return Math.floor(Math.random() * 80) + 70; // 70-150 midday
+      if (etHour >= 14 && etHour < 18) return Math.floor(Math.random() * 70) + 60; // 60-130 afternoon
+      if (etHour >= 18 && etHour < 21) return Math.floor(Math.random() * 60) + 50; // 50-110 evening
+      return Math.floor(Math.random() * 30) + 25; // 25-55 late evening
+    };
+    setLiveCount(getBaseCount());
     const interval = setInterval(() => {
-      setLiveCount(prev => prev + (Math.random() > 0.5 ? 1 : -1));
+      setLiveCount(prev => {
+        const delta = Math.random() > 0.5 ? 1 : -1;
+        const base = getBaseCount();
+        const next = prev + delta;
+        // Keep within ±15 of base range
+        return Math.max(base - 15, Math.min(base + 15, next));
+      });
     }, 8000);
     return () => clearInterval(interval);
   }, []);
 
-  const cta = () => router.push(loggedIn ? '/dashboard' : '/auth/register');
+  const cta = () => router.push(loggedIn ? '/map' : '/auth/register');
   const tryFree = () => router.push('/writing/task-1');
 
   const skills = [
@@ -81,27 +102,36 @@ export default function HomePage() {
     { key: 'reading', icon: BookOpen, label: 'Reading', desc: '4 parts · Timed', color: '#06b6d4', className: styles.skillCardReading },
   ];
 
-  const SkillCards = ({ mobile }: { mobile?: boolean }) => (
-    <div className={mobile ? styles.heroSkillsMobile : styles.heroSkills}>
-      {skills.map((s) => {
-        const Icon = s.icon;
-        return (
-          <button
-            key={s.key}
-            onClick={cta}
-            className={`${styles.skillCard} ${s.className}`}
-            aria-label={`Practice ${s.label}`}
-          >
+  const skillCta = (key: string) => router.push(loggedIn ? '/map' : '/auth/register');
+
+  const skillCardsContent = useMemo(() => ({
+    desktop: (
+      <div className={styles.heroSkills}>
+        {skills.map((s) => (
+          <button key={s.key} onClick={() => skillCta(s.key)} className={`${styles.skillCard} ${s.className}`} aria-label={`Practice ${s.label}`}>
             <div className={styles.skillIconBox} style={{ background: s.color }}>
-              <Icon size={22} />
+              <LottieSkillIcon skill={s.key as any} size={100} />
             </div>
             <span className={styles.skillCardTitle}>{s.label}</span>
             <span className={styles.skillCardDesc}>{s.desc}</span>
           </button>
-        );
-      })}
-    </div>
-  );
+        ))}
+      </div>
+    ),
+    mobile: (
+      <div className={styles.heroSkillsMobile}>
+        {skills.map((s) => (
+          <button key={s.key} onClick={() => skillCta(s.key)} className={`${styles.skillCard} ${s.className}`} aria-label={`Practice ${s.label}`}>
+            <div className={styles.skillIconBox} style={{ background: s.color }}>
+              <LottieSkillIcon skill={s.key as any} size={100} />
+            </div>
+            <span className={styles.skillCardTitle}>{s.label}</span>
+            <span className={styles.skillCardDesc}>{s.desc}</span>
+          </button>
+        ))}
+      </div>
+    ),
+  }), []);
 
   return (
     <div className={styles.page}>
@@ -148,15 +178,11 @@ export default function HomePage() {
           </p>
 
           <div className={styles.heroCtas}>
-            <button className={styles.ctaMain} onClick={cta}>
+            <ShimmerButton onClick={cta}>
               <Zap size={18} />
               Start Free Practice
               <ArrowRight size={18} />
-            </button>
-            <button className={styles.ctaSecondary} onClick={tryFree}>
-              <Play size={16} />
-              Try a Free Exercise
-            </button>
+            </ShimmerButton>
           </div>
 
           <p className={styles.heroFreeNote}>
@@ -172,36 +198,70 @@ export default function HomePage() {
         </div>
 
         {/* Desktop skill cards */}
-        <SkillCards />
+        {skillCardsContent.desktop}
 
         {/* Mobile skill cards */}
-        <SkillCards mobile />
+        {skillCardsContent.mobile}
       </section>
 
       {/* ═══════ ANIMATED STATS BAR ═══════ */}
       <section className={styles.statsBar} ref={statsRef.ref}>
         <div className={styles.statsBarInner}>
           <div className={styles.statBlock}>
-            <span className={styles.statBlockValue}>{studentsCount}+</span>
+            <span className={styles.statBlockValue}><NumberTicker value={385} duration={2000} suffix="+" /></span>
             <span className={styles.statBlockLabel}>Active Students</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.statBlock}>
-            <span className={styles.statBlockValue}>{exercisesCount}+</span>
+            <span className={styles.statBlockValue}><NumberTicker value={1200} duration={2500} delay={200} suffix="+" /></span>
             <span className={styles.statBlockLabel}>Exercises</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.statBlock}>
-            <span className={styles.statBlockValue}>{countriesCount}+</span>
+            <span className={styles.statBlockValue}><NumberTicker value={23} duration={1500} delay={400} suffix="+" /></span>
             <span className={styles.statBlockLabel}>Countries</span>
           </div>
           <div className={styles.statDivider} />
           <div className={styles.statBlock}>
-            <span className={styles.statBlockValue}>{passRate}%</span>
+            <span className={styles.statBlockValue}><NumberTicker value={94} duration={2000} delay={600} suffix="%" /></span>
             <span className={styles.statBlockLabel}>Pass Rate</span>
           </div>
         </div>
       </section>
+
+      {/* ═══════ LIVE ACTIVITY MARQUEE ═══════ */}
+      <Marquee speed={35} style={{ padding: '12px 0', background: 'rgba(255,255,255,0.03)', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+        {[
+          '🎤 Paulo just completed Speaking Task 3',
+          '🎧 Maria scored 9 in Listening',
+          '✍️ Priya finished Writing Task 1',
+          '📖 Ahmed completed 15 Reading drills',
+          `🔥 ${liveCount} students practicing right now`,
+          '⭐ Kishan reached a 7-day streak',
+          '🎤 Chen Wei scored CLB 10 in Speaking',
+          '📖 Fatima finished all Reading Part 3',
+          '✍️ Jorge improved Writing from 6 to 8',
+          '🎧 Yana completed Listening Part 5',
+          '⚔️ Marco won 3 Battle matches in a row',
+          '🎤 Anita nailed Speaking Task 7',
+          '📖 Daniel read 20 passages today',
+          '✍️ Olga scored 9 on her survey response',
+          '🎧 Raj finished 10 Listening exercises',
+          '⭐ Sonia hit a 14-day streak!',
+          '🎤 Yuki just practiced Speaking Task 5',
+          '📖 Ali completed his first Mock Exam',
+          '✍️ Camila got CLB 9 on Writing Task 2',
+          '🎧 Deepak scored perfect on Listening Part 1',
+          '⚔️ Natasha climbed to #3 on the leaderboard',
+          '⭐ Ravi upgraded to Pro after free trial',
+          '🎤 Emily finished all 8 Speaking tasks',
+          '📖 Viktor scored 10 in Reading Part 4',
+          '✍️ Mina improved her email writing to CLB 9',
+          '🎧 Hassan completed 30 Listening drills',
+        ].map((text, i) => (
+          <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.6)', fontSize: 14, whiteSpace: 'nowrap' }}>{text}</span>
+        ))}
+      </Marquee>
 
       {/* ═══════ TRUST LOGOS ═══════ */}
       <section className={styles.trustSection}>
@@ -337,7 +397,7 @@ export default function HomePage() {
           </div>
           <div className={styles.valueYourRow}>
             <span className={styles.valueYourLabel}>Your Price</span>
-            <span className={styles.valueYourPrice}>CA$24.99/mo</span>
+            <span className={styles.valueYourPrice}>CA$29.99/mo</span>
           </div>
           <div className={styles.valueSave}>Save 93% vs buying separately</div>
         </div>
@@ -369,10 +429,10 @@ export default function HomePage() {
 
         <div className={styles.plansGrid}>
           {[
-            { name: 'Weekly', price: 'CA$9.99', per: '/week', yearly: '= CA$520/year', save: '', highlight: false },
-            { name: 'Monthly', price: 'CA$24.99', per: '/month', yearly: '= CA$300/year', save: 'Save 42%', highlight: false },
-            { name: 'Quarterly', price: 'CA$49.99', per: '/3 months', yearly: '= CA$200/year', save: 'Save 62%', highlight: false },
-            { name: 'Annual', price: 'CA$99.99', per: '/year', yearly: 'CA$8.33/month', save: 'Save 81%', highlight: true },
+            { name: 'Weekly', price: 'CA$9.99', per: '/week', yearly: '', save: '', highlight: false },
+            { name: 'Monthly', price: 'CA$29.99', per: '/month', yearly: '= CA$360/year', save: 'Save 25%', highlight: false },
+            { name: 'Quarterly', price: 'CA$69.99', per: '/3 months', yearly: '= CA$280/year', save: 'Save 42%', highlight: false },
+            { name: 'Annual', price: 'CA$149.99', per: '/year', yearly: 'CA$12.50/month', save: 'Save 69%', highlight: true },
           ].map((p) => (
             <div key={p.name} className={`${styles.planCard} ${p.highlight ? styles.planCardHighlight : ''}`}>
               {p.highlight && (
@@ -553,10 +613,7 @@ export default function HomePage() {
             Start Free Practice Now
             <ArrowRight size={18} />
           </button>
-          <button className={styles.ctaSecondary} onClick={tryFree}>
-            <Play size={16} />
-            Try a Free Exercise First
-          </button>
+          <span />
         </div>
         <p className={styles.finalNote}>
           Free forever. No credit card. Upgrade when you&apos;re ready.

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { checkIpRateLimit } from '@/lib/ip-rate-limit';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY || 're_SiSKMetP_Lq8CUt7eWMo5zHavU9ZJLrp3';
 const FROM = 'CELPIP AI Coach <noreply@celpipaicoach.com>';
@@ -6,6 +7,10 @@ const SITE = 'https://celpipaicoach.com';
 
 export async function POST(req: NextRequest) {
   try {
+    if (!checkIpRateLimit(req, 'welcome-email', 5)) {
+      return NextResponse.json({ error: 'Rate limit exceeded' }, { status: 429 });
+    }
+
     const { email, name, userId } = await req.json();
     if (!email) return NextResponse.json({ error: 'Missing email' }, { status: 400 });
 

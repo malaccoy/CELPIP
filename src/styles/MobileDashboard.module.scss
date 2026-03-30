@@ -37,7 +37,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  :global(*), :global(*::before), :global(*::after) {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
@@ -849,12 +849,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 34px;
-  height: 34px;
+  width: 60px;
+  height: 60px;
   border-radius: ds.$radius-sm;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   color: #fff;
 }
 
@@ -1136,8 +1137,8 @@
 }
 
 .progressIcon {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border-radius: ds.$radius-sm;
   display: flex;
   align-items: center;

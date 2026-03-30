@@ -1,5 +1,9 @@
 'use client';
 
+import dynamic from 'next/dynamic';
+const LottieConfetti = dynamic(() => import('@/components/LottieConfetti'), { ssr: false });
+const LottieResult = dynamic(() => import('@/components/LottieResult'), { ssr: false });
+const LottieSkillIcon = dynamic(() => import('@/components/LottieSkillIcon'), { ssr: false });
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import {
@@ -14,7 +18,6 @@ import { useAdaptiveDifficulty } from '@/hooks/useAdaptiveDifficulty';
 import { ProGate } from '@/components/ProGate';
 import styles from '@/styles/AIPractice.module.scss';
 import { analytics } from '@/lib/analytics';
-import dynamic from 'next/dynamic';
 
 const MobileTopBar = dynamic(() => import('@/components/MobileTopBar'), { ssr: false });
 
@@ -107,7 +110,9 @@ export default function AIPracticePage() {
     const skill = params.get('skill') as Section | null;
     if (skill && ['reading', 'writing', 'listening', 'speaking'].includes(skill)) {
       setSection(skill);
-      setPartOrTask(PARTS[skill][0].id);
+      const partParam = params.get('part');
+      const matchedPart = partParam && PARTS[skill].find(p => p.id === partParam);
+      setPartOrTask(matchedPart ? matchedPart.id : PARTS[skill][0].id);
     }
   }, []);
   const [difficulty, setDifficulty] = useState<Difficulty>('intermediate');
@@ -248,6 +253,7 @@ export default function AIPracticePage() {
   // Quiz state (reading/listening)
   const [answers, setAnswers] = useState<Record<string | number, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(0);
   const [usedTopics, setUsedTopics] = useState<string[]>(() => {
     if (typeof window !== 'undefined') {
       try {
@@ -281,7 +287,7 @@ export default function AIPracticePage() {
   // Reset answers when new exercise generated
   const resetQuiz = useCallback(() => {
     setAnswers({});
-    setSubmitted(false);
+    setSubmitted(false); setShowConfetti(0);
   }, []);
 
   // Change section → reset part to first option + auto-adjust difficulty
@@ -608,6 +614,8 @@ export default function AIPracticePage() {
   const submitQuiz = () => {
     if (submitted) return;
     setSubmitted(true);
+    // Trigger confetti after a short delay to let score calculate
+    setTimeout(() => setShowConfetti(c => c + 1), 300);
     // Record for adaptive difficulty
     // Part 2 new schema: emailBlanks + comprehension
     if (exercise?.poster && exercise?.emailBlanks) {
@@ -752,6 +760,7 @@ export default function AIPracticePage() {
 
   return (
     <>
+    <LottieConfetti trigger={showConfetti} />
     {isMobileView && (
       <div style={{ position: 'sticky', top: 0, zIndex: 50, background: '#1b1f2a' }}>
         <MobileTopBar />
@@ -807,9 +816,9 @@ export default function AIPracticePage() {
             {/* Plan buttons */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.8rem' }}>
               {[
-                { plan: 'weekly', label: '1 Week', price: 'CA$9.99', sub: '/week', color: '#6366f1' },
+                
                 { plan: 'monthly', label: '1 Month', price: 'CA$29.99', sub: '/month', badge: null, color: '#8b5cf6' },
-                { plan: 'quarterly', label: '3 Months', price: 'CA$59.99', sub: '/3 months', badge: 'Most Popular', color: '#7c3aed' },
+                { plan: 'quarterly', label: '3 Months', price: 'CA$69.99', sub: '/3 months', badge: 'Most Popular', color: '#7c3aed' },
                 { plan: 'annual', label: '1 Year', price: 'CA$149.99', sub: '/year', badge: 'Best Value', color: '#6d28d9' },
               ].map((p) => (
                 <button key={p.plan} onClick={async () => {
@@ -865,7 +874,7 @@ export default function AIPracticePage() {
         </div>
         <h1 className={styles.title}>Practice Generator</h1>
         <p className={styles.subtitle}>
-          {isPro ? 'Unlimited AI-generated exercises. Pick a section, choose your level, and train.' : 'AI-generated exercises — 3 free per day. Upgrade for unlimited access.'}
+          {isPro ? 'Unlimited practice exercises. Pick a section, choose your level, and train.' : 'Practice exercises — 3 free per day. Upgrade for unlimited access.'}
         </p>
       </div>
 
@@ -882,7 +891,7 @@ export default function AIPracticePage() {
             >
               {isActive && <div className={styles.sectionCardGlow} style={{ background: `radial-gradient(circle, ${s.color}20 0%, transparent 70%)` }} />}
               <div className={styles.sectionIcon} style={isActive ? { background: s.gradient, boxShadow: `0 4px 16px ${s.color}40` } : undefined}>
-                <Icon size={22} />
+                <LottieSkillIcon skill={s.id as any} size={120} />
               </div>
               <span className={styles.sectionLabel}>{s.label}</span>
               <span className={styles.sectionDesc}>{s.desc}</span>
@@ -1005,10 +1014,10 @@ export default function AIPracticePage() {
           )}
           <div className={styles.practiceCardHeader}>
             <div className={`${styles.practiceCardIcon} ${styles[section]}`}>
-              {section === 'reading' && <BookOpen size={28} />}
-              {section === 'writing' && <PenTool size={28} />}
-              {section === 'listening' && <Headphones size={28} />}
-              {section === 'speaking' && <Mic size={28} />}
+              {section === 'reading' && <LottieSkillIcon skill="reading" size={32} />}
+              {section === 'writing' && <LottieSkillIcon skill="writing" size={32} />}
+              {section === 'listening' && <LottieSkillIcon skill="listening" size={32} />}
+              {section === 'speaking' && <LottieSkillIcon skill="speaking" size={32} />}
             </div>
             <div className={styles.practiceCardTitle}>
               <span className={`${styles.practiceCardBadge} ${styles[section]}`}>
@@ -1319,6 +1328,7 @@ export default function AIPracticePage() {
                   {submitted && (
                     <div>
                       <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                         <div>
                           <div className={styles.scoreDisplay}>
                             <span className={styles.scoreNum}>{getScore().correct}</span>
@@ -1448,6 +1458,7 @@ export default function AIPracticePage() {
                   {submitted && (
                     <div>
                       <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                         <div>
                           <div className={styles.scoreDisplay}>
                             <span className={styles.scoreNum}>{getScore().correct}</span>
@@ -1588,6 +1599,7 @@ export default function AIPracticePage() {
                     {submitted && (
                       <div>
                         <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                           <div>
                             <div className={styles.scoreDisplay}>
                               <span className={styles.scoreNum}>{getScore().correct}</span>
@@ -1696,7 +1708,7 @@ export default function AIPracticePage() {
                   {isClipMode && !submitted && (
                     <button
                       className={styles.generateBtn}
-                      onClick={() => setSubmitted(true)}
+                      onClick={() => { setSubmitted(true); setTimeout(() => setShowConfetti(c => c + 1), 300); }}
                       disabled={!clipAnswered}
                       style={{ marginTop: '0.75rem' }}
                     >
@@ -1708,7 +1720,7 @@ export default function AIPracticePage() {
                       className={styles.generateBtn}
                       onClick={() => {
                         setCurrentClipIdx(prev => prev + 1);
-                        setSubmitted(false);
+                        setSubmitted(false); setShowConfetti(0);
                         // Keep answers from previous clips — don't clear
                         setListeningPhase('listen');
                         setHasListened(false);
@@ -1722,6 +1734,7 @@ export default function AIPracticePage() {
                   {isClipMode && submitted && isLastClip && (
                     <>
                     <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                       <div>
                         <div className={styles.scoreDisplay}>
                           <span className={styles.scoreNum}>{getScore().correct}</span>
@@ -1764,6 +1777,7 @@ export default function AIPracticePage() {
                   {!isClipMode && !exercise.replyEmail && (
                     <div style={{ display: submitted ? 'block' : 'none' }}>
                     <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                       <div>
                         <div className={styles.scoreDisplay}>
                           <span className={styles.scoreNum}>{getScore().correct}</span>
@@ -1857,6 +1871,7 @@ export default function AIPracticePage() {
                   {submitted && (
                     <div>
                       <div className={styles.resultsBar}>
+                        <LottieResult score={Math.round((getScore().correct / Math.max(getScore().total, 1)) * 100)} size={80} />
                         <div>
                           <div className={styles.scoreDisplay}>
                             <span className={styles.scoreNum}>{getScore().correct}</span>

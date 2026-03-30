@@ -15,7 +15,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { to: '/', icon: Home, label: 'Home' },
-  { to: '/dashboard', icon: Dumbbell, label: 'Practice' },
+  { to: '/map', icon: Dumbbell, label: 'Practice' },
   // { to: '/english', icon: (() => null) as any, label: '🍁 English for Citizenship' },
   { to: '/guides', icon: GraduationCap, label: 'Study Guides' },
   { to: '/blog', icon: GraduationCap, label: 'Blog' },

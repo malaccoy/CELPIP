@@ -1666,7 +1666,7 @@
   "26": {
     "title": "Toronto's Public Transit Revamp: A Controversial Debate",
     "difficulty": "advanced",
-    "passage": "In an effort to address the growing transit issues, Toronto's city council is deliberating on a new transportation policy. While some members argue that the focus should be on expanding bus routes and improving accessibility, others believe investing in subway infrastructure is paramount.\n\nMan: \"I mean, we’ve been saying for ages that the bus routes are overcrowded, yet the subway system continues to get all the funding. It's getting a bit ridiculous, don’t you think?\"\n\nWoman: \"Not entirely convinced that’s the case. I think it’s more about long-term strategic planning. Expanding the subway could relieve pressure on the buses in the long run.\"\n\nMan: \"Sure, but what about the immediate needs? The buses are packed to the brim at peak hours! We can’t just ignore that while waiting for subway construction to wrap up, can we?\"\n\nWoman: \"I get your point, but consider the statistics—bus ridership is on the rise, yet the subway just seems to be the shiny new toy that everyone wants to play with. If we keep pushing funds into a system that can’t keep up with demand, we might be digging into our future rather than fixing today’s issues.\"\n\nTo complicate matters further, Mayor Johnson's stance is surprisingly noncommittal. In a recent press conference, he stated, \"We absolutely need to look at all angles, but at the same time, we can't just throw money around without a clear plan in place. That would be, well, irresponsible, wouldn’t it?\"\n\nThis has left several council members frustrated and questioning his leadership. Some residents, however, are cautiously optimistic, hoping that a balanced approach will finally address their concerns.\n\nAs discussions unfold, the implications of this policy decision could determine Toronto’s transit landscape for years to come, which leaves many wondering what the city actually needs—a quick fix or a long-term solution.",
+    "passage": "In an effort to address the growing transit issues, Toronto's city council is deliberating on a new transportation policy. While some members argue that the focus should be on expanding bus routes and improving accessibility, others believe investing in subway infrastructure is paramount.\n\nChris: \"I mean, we’ve been saying for ages that the bus routes are overcrowded, yet the subway system continues to get all the funding. It's getting a bit ridiculous, don’t you think?\"\n\nRachel: \"Not entirely convinced that’s the case. I think it’s more about long-term strategic planning. Expanding the subway could relieve pressure on the buses in the long run.\"\n\nChris: \"Sure, but what about the immediate needs? The buses are packed to the brim at peak hours! We can’t just ignore that while waiting for subway construction to wrap up, can we?\"\n\nRachel: \"I get your point, but consider the statistics—bus ridership is on the rise, yet the subway just seems to be the shiny new toy that everyone wants to play with. If we keep pushing funds into a system that can’t keep up with demand, we might be digging into our future rather than fixing today’s issues.\"\n\nTo complicate matters further, Mayor Johnson's stance is surprisingly noncommittal. In a recent press conference, he stated, \"We absolutely need to look at all angles, but at the same time, we can't just throw money around without a clear plan in place. That would be, well, irresponsible, wouldn’t it?\"\n\nThis has left several council members frustrated and questioning his leadership. Some residents, however, are cautiously optimistic, hoping that a balanced approach will finally address their concerns.\n\nAs discussions unfold, the implications of this policy decision could determine Toronto’s transit landscape for years to come, which leaves many wondering what the city actually needs—a quick fix or a long-term solution.",
     "questions": [
       {
         "id": 1,
@@ -3061,7 +3061,7 @@
   "47": {
     "title": "New Park Opening",
     "difficulty": "beginner",
-    "passage": "Host: Welcome to the news report. Today we have exciting news! Man: That's right! A new park is opening downtown this Saturday. Woman: It will feature walking trails, playgrounds, and a pond. Man: The mayor will be at the opening ceremony. Woman: Yes, she will give a speech at 10 AM. Man: Families are welcome to join. Woman: There will also be free refreshments for everyone!",
+    "passage": "Host: Welcome to the news report. Today we have exciting news! Brian: That's right! A new park is opening downtown this Saturday. Laura: It will feature walking trails, playgrounds, and a pond. Brian: The mayor will be at the opening ceremony. Laura: Yes, she will give a speech at 10 AM. Brian: Families are welcome to join. Laura: There will also be free refreshments for everyone!",
     "questions": [
       {
         "question": "What is opening this Saturday?",
@@ -3122,7 +3122,7 @@
   "48": {
     "title": "Local Farmers' Market",
     "difficulty": "beginner",
-    "passage": "Host: Good evening! Today we report on the local farmers' market. Woman: Yes, it opens every Saturday morning. Man: You can find fresh fruits and vegetables there. Woman: Local artisans also sell handmade goods. Man: It's a great place to support local farmers. Woman: And you can meet your neighbors too!",
+    "passage": "Host: Good evening! Today we report on the local farmers' market. Karen: Yes, it opens every Saturday morning. Mark: You can find fresh fruits and vegetables there. Karen: Local artisans also sell handmade goods. Mark: It's a great place to support local farmers. Karen: And you can meet your neighbors too!",
     "questions": [
       {
         "question": "When does the farmers' market open?",
@@ -3183,7 +3183,7 @@
   "49": {
     "title": "Winter Safety Tips",
     "difficulty": "beginner",
-    "passage": "Host: Hello everyone! Winter is here, and we have safety tips. Woman: Yes, it is important to stay safe in the snow. Man: First, wear warm clothes and boots. Woman: Second, be careful when driving on icy roads. Man: Always clear snow off your car before driving!",
+    "passage": "Host: Hello everyone! Winter is here, and we have safety tips. Michelle: Yes, it is important to stay safe in the snow. Steven: First, wear warm clothes and boots. Michelle: Second, be careful when driving on icy roads. Steven: Always clear snow off your car before driving!",
     "questions": [
       {
         "question": "What season is it?",
@@ -3244,7 +3244,7 @@
   "50": {
     "title": "Community Clean-Up Day",
     "difficulty": "beginner",
-    "passage": "Host: Welcome back! There will be a community clean-up day next weekend. Man: Yes, everyone is invited to help clean the parks. Woman: Tools will be provided, but you can bring your own! Man: It's a great way to meet people and help the environment. Woman: There will be snacks and drinks for volunteers!",
+    "passage": "Host: Welcome back! There will be a community clean-up day next weekend. Andrew: Yes, everyone is invited to help clean the parks. Stephanie: Tools will be provided, but you can bring your own! Andrew: It's a great way to meet people and help the environment. Stephanie: There will be snacks and drinks for volunteers!",
     "questions": [
       {
         "question": "What is happening next weekend?",
@@ -3305,7 +3305,7 @@
   "51": {
     "title": "School Renovation",
     "difficulty": "beginner",
-    "passage": "Host: Let's talk about school news! Woman: Yes, the local school will begin renovations next month. Man: They will update the classrooms and library. Woman: The work will last for two months. Man: Parents can attend a meeting about the renovations on Wednesday. Woman: It is important to share ideas!",
+    "passage": "Host: Let's talk about school news! Rebecca: Yes, the local school will begin renovations next month. Daniel: They will update the classrooms and library. Rebecca: The work will last for two months. Daniel: Parents can attend a meeting about the renovations on Wednesday. Rebecca: It is important to share ideas!",
     "questions": [
       {
         "question": "What will the local school start?",
@@ -3366,7 +3366,7 @@
   "52": {
     "title": "New Library Opening",
     "difficulty": "beginner",
-    "passage": "Host: Exciting news! There will be a new library opening downtown. Man: Yes, it opens on Saturday at 1 PM. Woman: There will be story time for children, and everyone is welcome. Man: Books will be available for loan. Woman: This library will also have free internet access!",
+    "passage": "Host: Exciting news! There will be a new library opening downtown. Jason: Yes, it opens on Saturday at 1 PM. Ashley: There will be story time for children, and everyone is welcome. Jason: Books will be available for loan. Ashley: This library will also have free internet access!",
     "questions": [
       {
         "question": "What is opening downtown?",
@@ -3427,7 +3427,7 @@
   "53": {
     "title": "Canadian Winter Sports",
     "difficulty": "intermediate",
-    "passage": "Host: Welcome to today's news report. With the winter season in full swing, Canada is gearing up for various winter sports events. Woman: Yes, the country is known for its passion for sports like hockey, skiing, and snowboarding. Man: This year, we have a record number of participants in the national championships. Woman: It's great to see young athletes getting involved. Man: Absolutely! The government has also announced more funding for sports facilities across the country. Woman: This will help in promoting winter sports even further. Host: Now, let's take a look at some of the upcoming events.",
+    "passage": "Host: Welcome to today's news report. With the winter season in full swing, Canada is gearing up for various winter sports events. Jennifer: Yes, the country is known for its passion for sports like hockey, skiing, and snowboarding. Matt: This year, we have a record number of participants in the national championships. Jennifer: It's great to see young athletes getting involved. Matt: Absolutely! The government has also announced more funding for sports facilities across the country. Jennifer: This will help in promoting winter sports even further. Host: Now, let's take a look at some of the upcoming events.",
     "questions": [
       {
         "question": "What season is Canada currently experiencing?",
@@ -3488,7 +3488,7 @@
   "54": {
     "title": "Toronto's New Transit Line",
     "difficulty": "intermediate",
-    "passage": "Man: Good evening, everyone. Today, we're discussing the new transit line set to open in Toronto next month. Woman: That's right! This line will connect several major neighborhoods and is expected to reduce traffic congestion. Man: Figures show that daily commutes will be shortened by up to 20 minutes for many residents. Woman: Additionally, the city is planning to introduce more eco-friendly vehicles for this route. Man: This is part of Toronto's initiative to become a greener city. Woman: The launch will also include free rides for the first two weeks.",
+    "passage": "Patrick: Good evening, everyone. Today, we're discussing the new transit line set to open in Toronto next month. Natalie: That's right! This line will connect several major neighborhoods and is expected to reduce traffic congestion. Patrick: Figures show that daily commutes will be shortened by up to 20 minutes for many residents. Natalie: Additionally, the city is planning to introduce more eco-friendly vehicles for this route. Patrick: This is part of Toronto's initiative to become a greener city. Natalie: The launch will also include free rides for the first two weeks.",
     "questions": [
       {
         "question": "What is the main topic of the news report?",
@@ -3549,7 +3549,7 @@
   "55": {
     "title": "Vancouver's Housing Market",
     "difficulty": "intermediate",
-    "passage": "Woman: Welcome to our local news segment. Today, we're focusing on Vancouver's housing market. Man: Prices have soared over the past year, making it difficult for many to find affordable housing. Woman: Yes, and there's been a significant increase in foreign investment in the area. Man: This has raised concerns among local residents regarding affordability. Woman: The government is proposing new regulations to help manage the market. Man: The aim is to ensure that housing remains accessible for Vancouver citizens.",
+    "passage": "Megan: Welcome to our local news segment. Today, we're focusing on Vancouver's housing market. Adam: Prices have soared over the past year, making it difficult for many to find affordable housing. Megan: Yes, and there's been a significant increase in foreign investment in the area. Adam: This has raised concerns among local residents regarding affordability. Megan: The government is proposing new regulations to help manage the market. Adam: The aim is to ensure that housing remains accessible for Vancouver citizens.",
     "questions": [
       {
         "question": "What is the primary concern in Vancouver's housing market?",
@@ -3610,7 +3610,7 @@
   "56": {
     "title": "Calgary's New Environmental Initiative",
     "difficulty": "intermediate",
-    "passage": "Host: In today's news, Calgary is launching a new environmental initiative. Woman: The city aims to reduce carbon emissions by 30% over the next decade. Man: This plan includes measures such as increasing green spaces and promoting public transport. Woman: Local businesses will also play a key role in this initiative. Man: Yes, they are encouraged to adopt sustainable practices. Woman: The city is hosting workshops to help businesses transition to greener methods.",
+    "passage": "Host: In today's news, Calgary is launching a new environmental initiative. Samantha: The city aims to reduce carbon emissions by 30% over the next decade. Tyler: This plan includes measures such as increasing green spaces and promoting public transport. Samantha: Local businesses will also play a key role in this initiative. Tyler: Yes, they are encouraged to adopt sustainable practices. Samantha: The city is hosting workshops to help businesses transition to greener methods.",
     "questions": [
       {
         "question": "What is Calgary's environmental goal?",
@@ -3671,7 +3671,7 @@
   "57": {
     "title": "Ottawa's Cultural Festival",
     "difficulty": "intermediate",
-    "passage": "Woman: Welcome to the news segment about Ottawa's upcoming cultural festival. Man: The festival will feature international artists from various backgrounds. Woman: People can experience music, dance, and cuisine from around the globe. Man: This year, the festival expects record attendance. Woman: Yes, and there will be free workshops for attendees to engage in. Man: The festival begins on the 15th of next month and runs for three days. Woman: Don't miss this opportunity to celebrate diversity!",
+    "passage": "Heather: Welcome to the news segment about Ottawa's upcoming cultural festival. Nathan: The festival will feature international artists from various backgrounds. Heather: People can experience music, dance, and cuisine from around the globe. Nathan: This year, the festival expects record attendance. Heather: Yes, and there will be free workshops for attendees to engage in. Nathan: The festival begins on the 15th of next month and runs for three days. Heather: Don't miss this opportunity to celebrate diversity!",
     "questions": [
       {
         "question": "What is the topic of the news report?",
@@ -3732,7 +3732,7 @@
   "58": {
     "title": "New Law on Recycling in Quebec",
     "difficulty": "intermediate",
-    "passage": "Man 2: Today’s report highlights a new law concerning recycling in Quebec. Woman 2: Yes, the government is making it mandatory for all residents to sort their waste correctly. Man 2: This new regulation aims to increase recycling rates across the province. Woman 2: It will also help reduce landfill waste significantly. Man 2: The law takes effect next month, and there will be penalties for non-compliance. Woman 2: The province is also launching an educational campaign to inform residents about the new rules.",
+    "passage": "Brandon: Today’s report highlights a new law concerning recycling in Quebec. Christina: Yes, the government is making it mandatory for all residents to sort their waste correctly. Brandon: This new regulation aims to increase recycling rates across the province. Christina: It will also help reduce landfill waste significantly. Brandon: The law takes effect next month, and there will be penalties for non-compliance. Christina: The province is also launching an educational campaign to inform residents about the new rules.",
     "questions": [
       {
         "question": "What is the main focus of the news report?",
@@ -3793,7 +3793,7 @@
   "59": {
     "title": "Toronto's Food Security Program",
     "difficulty": "intermediate",
-    "passage": "Host: In today's segment, we will be discussing Toronto's new food security program. Woman: This program aims to reduce hunger among low-income families. Man: It will provide access to nutritious food and support local farmers. Woman: There are also plans to create community gardens across the city. Man: This initiative has received positive feedback from the residents. Woman: Yes, it's a collaborative effort between the city and various NGOs. Host: The program launches next month and will be available throughout the year.",
+    "passage": "Host: In today's segment, we will be discussing Toronto's new food security program. Angela: This program aims to reduce hunger among low-income families. Scott: It will provide access to nutritious food and support local farmers. Angela: There are also plans to create community gardens across the city. Scott: This initiative has received positive feedback from the residents. Angela: Yes, it's a collaborative effort between the city and various NGOs. Host: The program launches next month and will be available throughout the year.",
     "questions": [
       {
         "question": "What is the goal of Toronto's food security program?",
@@ -3854,7 +3854,7 @@
   "60": {
     "title": "Climate Change Initiatives",
     "difficulty": "advanced",
-    "passage": "Host: Welcome back to the morning news. Today we discuss the latest climate change initiatives in Canada. Man: Recent reports indicate that Canada is pushing for stricter emissions targets by 2030. Woman: That’s correct. The federal government aims to reduce greenhouse gas emissions by 40 to 45 percent from 2005 levels. Man: This ambitious plan includes transitioning to renewable energy sources. Woman: Exactly. Can you tell us more about the implications for industries? Man: Well, industries will need to adapt or face penalties. They are looking into innovative technologies to minimize their impact. Woman: The transition is certainly a challenge, but it presents new opportunities for green jobs as well. Host: That's right. It's a balancing act between economic growth and environmental sustainability.",
+    "passage": "Host: Welcome back to the morning news. Today we discuss the latest climate change initiatives in Canada. Tom: Recent reports indicate that Canada is pushing for stricter emissions targets by 2030. Sarah: That’s correct. The federal government aims to reduce greenhouse gas emissions by 40 to 45 percent from 2005 levels. Tom: This ambitious plan includes transitioning to renewable energy sources. Sarah: Exactly. Can you tell us more about the implications for industries? Tom: Well, industries will need to adapt or face penalties. They are looking into innovative technologies to minimize their impact. Sarah: The transition is certainly a challenge, but it presents new opportunities for green jobs as well. Host: That's right. It's a balancing act between economic growth and environmental sustainability.",
     "questions": [
       {
         "question": "What is the main goal of Canada's new climate initiative?",
@@ -3915,7 +3915,7 @@
   "61": {
     "title": "New Health Policies",
     "difficulty": "advanced",
-    "passage": "Host: In today's health segment, we are looking at new health policies in Ontario. Woman: The provincial government introduced a series of new measures aimed at improving public healthcare access. Man: These measures include extending emergency room hours and reducing wait times. Woman: Furthermore, there's an emphasis on increasing funding for mental health services. Man: That's an important facet, as mental health has often been underfunded. Woman: Exactly. There's also a plan for public awareness campaigns to educate citizens about their rights within the healthcare system. Host: It sounds like a comprehensive approach to addressing healthcare needs.",
+    "passage": "Host: In today's health segment, we are looking at new health policies in Ontario. Lisa: The provincial government introduced a series of new measures aimed at improving public healthcare access. David: These measures include extending emergency room hours and reducing wait times. Lisa: Furthermore, there's an emphasis on increasing funding for mental health services. David: That's an important facet, as mental health has often been underfunded. Lisa: Exactly. There's also a plan for public awareness campaigns to educate citizens about their rights within the healthcare system. Host: It sounds like a comprehensive approach to addressing healthcare needs.",
     "questions": [
       {
         "question": "What is a major initiative mentioned in the new health policies?",
@@ -3976,7 +3976,7 @@
   "62": {
     "title": "Indigenous Land Rights",
     "difficulty": "advanced",
-    "passage": "Host: In recent news, discussions surrounding Indigenous land rights have gained traction in British Columbia. Man: Yes, the provincial government is working with Indigenous groups to ensure their rights are recognized. Woman: This involves consultations and negotiations about land usage and conservation efforts. Man: The government acknowledges the historical injustices faced by Indigenous communities. Woman: It’s essential for both parties to come together for a sustainable future. Host: There's also a growing movement advocating for the protection of Indigenous heritage sites.",
+    "passage": "Host: In recent news, discussions surrounding Indigenous land rights have gained traction in British Columbia. James: Yes, the provincial government is working with Indigenous groups to ensure their rights are recognized. Emily: This involves consultations and negotiations about land usage and conservation efforts. James: The government acknowledges the historical injustices faced by Indigenous communities. Emily: It’s essential for both parties to come together for a sustainable future. Host: There's also a growing movement advocating for the protection of Indigenous heritage sites.",
     "questions": [
       {
         "question": "What is the focus of the discussions in British Columbia?",
@@ -4037,7 +4037,7 @@
   "63": {
     "title": "Technology in Education",
     "difficulty": "advanced",
-    "passage": "Host: Our next topic explores the growing role of technology in education across Canada. Woman: Many schools are integrating digital tools and resources to enhance learning. Man: This includes interactive software and online learning platforms. Woman: Furthermore, there is an emphasis on training teachers to effectively use these technologies. Man: The goal is not just to incorporate technology but to improve student engagement and learning outcomes. Woman: There are also concerns about the digital divide between students with and without access to these resources. Host: It’s certainly a nuanced discussion.",
+    "passage": "Host: Our next topic explores the growing role of technology in education across Canada. Jessica: Many schools are integrating digital tools and resources to enhance learning. Michael: This includes interactive software and online learning platforms. Jessica: Furthermore, there is an emphasis on training teachers to effectively use these technologies. Michael: The goal is not just to incorporate technology but to improve student engagement and learning outcomes. Jessica: There are also concerns about the digital divide between students with and without access to these resources. Host: It’s certainly a nuanced discussion.",
     "questions": [
       {
         "question": "What is being integrated into Canadian education?",
@@ -4098,7 +4098,7 @@
   "64": {
     "title": "Public Transportation Developments",
     "difficulty": "advanced",
-    "passage": "Host: Let's discuss the recent developments in public transportation in Vancouver. Man: The city council has approved a new transit plan aimed at reducing congestion. Woman: This includes the expansion of the SkyTrain network and the introduction of electric buses. Man: It's expected that these changes will also lower carbon emissions significantly. Woman: Furthermore, there will be increased accessibility for people with disabilities. Man: This plan is critical for promoting sustainable urban mobility. Host: Indeed, it seems like a holistic approach to transportation challenges.",
+    "passage": "Host: Let's discuss the recent developments in public transportation in Vancouver. Kevin: The city council has approved a new transit plan aimed at reducing congestion. Amanda: This includes the expansion of the SkyTrain network and the introduction of electric buses. Kevin: It's expected that these changes will also lower carbon emissions significantly. Amanda: Furthermore, there will be increased accessibility for people with disabilities. Kevin: This plan is critical for promoting sustainable urban mobility. Host: Indeed, it seems like a holistic approach to transportation challenges.",
     "questions": [
       {
         "question": "What is the main focus of the new transit plan?",
@@ -4159,7 +4159,7 @@
   "65": {
     "title": "Housing Market Trends",
     "difficulty": "advanced",
-    "passage": "Host: Now, let’s take a look at the current trends in the Canadian housing market. Woman: Recent analyses show that housing prices have surged in major cities. Man: Yes, Toronto and Vancouver continue to lead in price increases. Woman: In response, the government is exploring regulations to improve affordability. Man: These regulations might include rent control and increased housing supply. Woman: However, there are concerns about the potential negative impacts on developers. Host: It’s a complex issue that involves multiple stakeholders.",
+    "passage": "Host: Now, let’s take a look at the current trends in the Canadian housing market. Nicole: Recent analyses show that housing prices have surged in major cities. Ryan: Yes, Toronto and Vancouver continue to lead in price increases. Nicole: In response, the government is exploring regulations to improve affordability. Ryan: These regulations might include rent control and increased housing supply. Nicole: However, there are concerns about the potential negative impacts on developers. Host: It’s a complex issue that involves multiple stakeholders.",
     "questions": [
       {
         "question": "What trend is observed in the Canadian housing market?",

@@ -105,7 +105,7 @@ export default function NotificationBell() {
           alignItems: 'center',
         }}
       >
-        <Bell size={22} color={unreadCount > 0 ? '#f59e0b' : '#888'} />
+        <Bell size={26} color={unreadCount > 0 ? '#f59e0b' : '#888'} />
         {unreadCount > 0 && (
           <span style={{
             position: 'absolute',

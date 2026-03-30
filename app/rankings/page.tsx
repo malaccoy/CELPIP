@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Trophy, Flame, Users, TrendingUp, Zap, BookOpen, Headphones, Pencil, Mic, Medal, Crown, Target, ArrowUp } from 'lucide-react';
 import styles from '@/styles/Rankings.module.scss';
+import dynamic from 'next/dynamic';
+const RiveIcon = dynamic(() => import('@/components/RiveIcon'), { ssr: false });
 
 interface RankEntry {
   rank: number;
@@ -75,9 +77,9 @@ export default function RankingsPage() {
   const podiumOrder = [top3[1], top3[0], top3[2]].filter(Boolean);
 
   const rankMedals: Record<number, { bg: string; border: string; glow: string; icon: React.ReactNode }> = {
-    1: { bg: 'linear-gradient(135deg, #fbbf24, #f59e0b)', border: '#fde68a', glow: 'rgba(251, 191, 36, 0.3)', icon: <Crown size={16} /> },
-    2: { bg: 'linear-gradient(135deg, #94a3b8, #cbd5e1)', border: '#e2e8f0', glow: 'rgba(148, 163, 184, 0.2)', icon: <Medal size={14} /> },
-    3: { bg: 'linear-gradient(135deg, #d97706, #f59e0b)', border: '#fbbf24', glow: 'rgba(217, 119, 6, 0.25)', icon: <Medal size={14} /> },
+    1: { bg: 'linear-gradient(135deg, #fbbf24, #f59e0b)', border: '#fde68a', glow: 'rgba(251, 191, 36, 0.3)', icon: <RiveIcon artboard="21_Crown" size={22} /> },
+    2: { bg: 'linear-gradient(135deg, #94a3b8, #cbd5e1)', border: '#e2e8f0', glow: 'rgba(148, 163, 184, 0.2)', icon: <RiveIcon artboard="01_Star" size={20} /> },
+    3: { bg: 'linear-gradient(135deg, #d97706, #f59e0b)', border: '#fbbf24', glow: 'rgba(217, 119, 6, 0.25)', icon: <RiveIcon artboard="01_Star" size={20} /> },
   };
 
   const Avatar = ({ entry, size = 48 }: { entry: RankEntry; size?: number }) => {

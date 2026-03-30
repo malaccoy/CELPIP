@@ -13,10 +13,14 @@ import {
 import { useContentAccess } from '@/hooks/useContentAccess';
 import NotificationBell from '@/components/NotificationBell';
 import SkillRadar from '@/components/SkillRadar';
+import dynamic from 'next/dynamic';
+const RiveIcon = dynamic(() => import('@/components/RiveIcon'), { ssr: false });
+const LottieSkillIcon = dynamic(() => import('@/components/LottieSkillIcon'), { ssr: false });
 import { DashboardSkeleton } from '@/components/SkeletonLoader';
 import EmptyState from '@/components/EmptyState';
 import { checkStreakMilestone, checkPracticeMilestone } from '@/components/MilestoneCelebration';
 import styles from '@/styles/MobileDashboard.module.scss';
+import ReferralCard from '@/components/ReferralCard';
 
 /* ─── Gradient Tokens ─── */
 const G = {
@@ -281,21 +285,21 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
       {/* ─── Top Bar ─── */}
       {!desktop && (
         <div className={styles.topBar}>
-          <div className={styles.topBarLogo} onClick={() => router.push('/dashboard')}>
+          <div className={styles.topBarLogo} onClick={() => router.push('/map')}>
             <Image src="/logo-leaf.png" alt="CELPIP" width={40} height={40} />
           </div>
 
           <div className={styles.topBarChips}>
             <div className={`${styles.statChip} ${streak > 0 ? styles.statChipActive : ''}`} style={{ background: 'rgba(251,191,36,0.08)' }}>
-              <Flame size={14} style={{ color: '#fbbf24' }} />
+              <RiveIcon artboard="26_Fire" size={32} />
               <span className={styles.statChipValue} style={{ color: '#fbbf24' }}>{streak}</span>
             </div>
             <div className={styles.statChip} style={{ background: 'rgba(167,139,250,0.08)' }}>
-              <Zap size={14} style={{ color: '#a78bfa' }} />
+              <RiveIcon artboard="03_Flash" size={32} />
               <span className={styles.statChipValue} style={{ color: '#a78bfa' }}>{xp}</span>
             </div>
             <div className={styles.statChip} style={{ background: 'rgba(52,211,153,0.08)', cursor: 'pointer' }} onClick={() => router.push('/rankings')}>
-              <Trophy size={14} style={{ color: '#34d399' }} />
+              <RiveIcon artboard="21_Crown" size={32} />
               <span className={styles.statChipValue} style={{ color: '#34d399' }}>{myRank ? `#${myRank}` : '\u2014'}</span>
             </div>
           </div>
@@ -333,32 +337,13 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           <p className={styles.welcomeMotivation}>
             {getMotivation()}
           </p>
-          {/* Inline Stats Row */}
-          <div className={styles.welcomeStats}>
-            <div className={styles.welcomeStat}>
-              <Flame size={14} className={styles.welcomeStatIcon} style={{ color: '#fbbf24' }} />
-              <span className={styles.welcomeStatValue}>{streak}</span>
-              <span className={styles.welcomeStatLabel}>streak</span>
-            </div>
-            <div className={styles.welcomeStatDivider} />
-            <div className={styles.welcomeStat}>
-              <Target size={14} className={styles.welcomeStatIcon} style={{ color: '#a78bfa' }} />
-              <span className={styles.welcomeStatValue}>{totalPractices}</span>
-              <span className={styles.welcomeStatLabel}>exercises</span>
-            </div>
-            <div className={styles.welcomeStatDivider} />
-            <div className={styles.welcomeStat}>
-              <TrendingUp size={14} className={styles.welcomeStatIcon} style={{ color: '#34d399' }} />
-              <span className={styles.welcomeStatValue}>CLB {getEstimatedCLB()}</span>
-              <span className={styles.welcomeStatLabel}>est. level</span>
-            </div>
-          </div>
+          {/* Stats row removed — V2 redesign */}
         </div>
         {/* Streak Visual (right side on desktop) */}
         {streak > 0 && (
           <div className={styles.streakVisual}>
             <div className={styles.streakFlame}>
-              <Flame size={28} />
+              <RiveIcon artboard="26_Fire" size={56} />
             </div>
             <span className={styles.streakNumber}>{streak}</span>
             <span className={styles.streakLabel}>day{streak !== 1 ? 's' : ''}</span>
@@ -386,6 +371,47 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           </div>
         </div>
       )}
+
+      {/* ─── Practice by Skill (with progress rings) ─── */}
+      <div className={styles.skillsSection}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Practice by Skill</h2>
+          <button className={styles.sectionLink} onClick={() => router.push('/drills')}>
+            View all <ChevronRight size={14} />
+          </button>
+        </div>
+        <div className={styles.skillsGrid}>
+          {skills.map(s => {
+            const Icon = s.icon;
+            const { lvl, pct, tierLabel } = getLevel(s.sessions);
+            return (
+              <div key={s.title} className={styles.skillCard} onClick={() => { window.location.href = s.href; }}>
+                <div className={styles.skillCardGlow} style={{ background: `${s.color}10` }} />
+                <div className={styles.skillCardTop}>
+                  <div className={styles.skillIconWrapper}>
+                    <CircularProgress pct={pct} color={s.color} size={76} strokeWidth={3} />
+                    <div className={styles.skillIconInner} style={{ background: s.gradient }}>
+                      <LottieSkillIcon skill={s.title.toLowerCase() as any} size={52} />
+                    </div>
+                  </div>
+                  <div className={styles.skillLevelBadge} style={{ color: s.color, background: `${s.color}15` }}>
+                    Lvl {lvl}
+                  </div>
+                </div>
+                <div className={styles.skillCardTitle}>{s.title}</div>
+                <div className={styles.skillCardMeta}>
+                  <span className={styles.skillCardSessions}>{s.sessions} exercises</span>
+                  <span className={styles.skillCardTier}>{tierLabel}</span>
+                </div>
+                <div className={styles.skillCardAction}>
+                  <Play size={12} fill={s.color} style={{ color: s.color }} />
+                  <span style={{ color: s.color }}>Practice</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* ─── AI Recommendation Card ─── */}
       {totalPractices > 0 && (
@@ -446,45 +472,9 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         </div>
       </div>
 
-      {/* ─── Practice by Skill (with progress rings) ─── */}
-      <div className={styles.skillsSection}>
-        <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Practice by Skill</h2>
-          <button className={styles.sectionLink} onClick={() => router.push('/drills')}>
-            View all <ChevronRight size={14} />
-          </button>
-        </div>
-        <div className={styles.skillsGrid}>
-          {skills.map(s => {
-            const Icon = s.icon;
-            const { lvl, pct, tierLabel } = getLevel(s.sessions);
-            return (
-              <div key={s.title} className={styles.skillCard} onClick={() => { window.location.href = s.href; }}>
-                <div className={styles.skillCardGlow} style={{ background: `${s.color}10` }} />
-                <div className={styles.skillCardTop}>
-                  <div className={styles.skillIconWrapper}>
-                    <CircularProgress pct={pct} color={s.color} size={52} strokeWidth={3} />
-                    <div className={styles.skillIconInner} style={{ background: s.gradient }}>
-                      <Icon size={18} />
-                    </div>
-                  </div>
-                  <div className={styles.skillLevelBadge} style={{ color: s.color, background: `${s.color}15` }}>
-                    Lvl {lvl}
-                  </div>
-                </div>
-                <div className={styles.skillCardTitle}>{s.title}</div>
-                <div className={styles.skillCardMeta}>
-                  <span className={styles.skillCardSessions}>{s.sessions} exercises</span>
-                  <span className={styles.skillCardTier}>{tierLabel}</span>
-                </div>
-                <div className={styles.skillCardAction}>
-                  <Play size={12} fill={s.color} style={{ color: s.color }} />
-                  <span style={{ color: s.color }}>Practice</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+      {/* ─── Referral Card ─── */}
+      <div style={{ padding: '0 16px' }}>
+        <ReferralCard />
       </div>
 
       {/* ─── Quick Access (redesigned with unique visuals) ─── */}
@@ -536,14 +526,14 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
         <div className={styles.overallStats} ref={totalCounter.ref}>
           <div className={styles.overallStatItem}>
             <div className={styles.overallStatIcon} style={{ background: 'rgba(251,191,36,0.1)' }}>
-              <Flame size={18} style={{ color: '#fbbf24' }} />
+              <RiveIcon artboard="26_Fire" size={34} />
             </div>
             <span className={styles.overallStatValue}>{streakCounter.count}</span>
             <span className={styles.overallStatLabel}>Day Streak</span>
           </div>
           <div className={styles.overallStatItem}>
             <div className={styles.overallStatIcon} style={{ background: 'rgba(167,139,250,0.1)' }}>
-              <Zap size={18} style={{ color: '#a78bfa' }} />
+              <RiveIcon artboard="03_Flash" size={34} />
             </div>
             <span className={styles.overallStatValue}>{xpCounter.count}</span>
             <span className={styles.overallStatLabel}>Total XP</span>
@@ -557,7 +547,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
           </div>
           <div className={styles.overallStatItem}>
             <div className={styles.overallStatIcon} style={{ background: 'rgba(56,189,248,0.1)' }}>
-              <Trophy size={18} style={{ color: '#38bdf8' }} />
+              <RiveIcon artboard="21_Crown" size={34} />
             </div>
             <span className={styles.overallStatValue}>{myRank ? `#${myRank}` : '—'}</span>
             <span className={styles.overallStatLabel}>Rank</span>
@@ -575,7 +565,7 @@ export default function MobileDashboard({ desktop }: { desktop?: boolean } = {})
                 <div className={styles.progressTop}>
                   <div className={styles.progressInfo}>
                     <div className={styles.progressIcon} style={{ background: `${p.color}18` }}>
-                      <Icon size={16} style={{ color: p.color }} />
+                      <LottieSkillIcon skill={p.label.toLowerCase() as any} size={36} />
                     </div>
                     <div>
                       <span className={styles.progressLabel}>{p.label}</span>

@@ -155,6 +155,69 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   });
 
   console.log(`✅ User ${supabaseUserId} upgraded to Pro until ${expiresAt.toISOString()}`);
+
+  // --- Referral reward: give referrer 7 extra days ---
+  try {
+    const pendingRefs = await prisma.$queryRawUnsafe<any[]>(
+      `SELECT id, referrer_id FROM referrals WHERE referred_id = $1 AND status = 'registered' LIMIT 1`,
+      supabaseUserId
+    );
+    if (pendingRefs.length > 0) {
+      const ref = pendingRefs[0];
+      // Mark referral as paid
+      await prisma.$queryRawUnsafe(
+        `UPDATE referrals SET status = 'paid', days_rewarded = 7, paid_at = NOW() WHERE id = $1`,
+        ref.id
+      );
+      // Extend referrer's Pro by 7 days
+      await prisma.$queryRawUnsafe(`
+        UPDATE user_plans 
+        SET "expiresAt" = GREATEST("expiresAt", NOW()) + INTERVAL '7 days',
+            plan = 'pro'
+        WHERE "userId" = $1
+      `, ref.referrer_id);
+      console.log(`🎁 Referral reward: +7 days for referrer ${ref.referrer_id} (referred ${supabaseUserId})`);
+
+      // Notify referrer by email
+      try {
+        const referrerData = await prisma.$queryRawUnsafe<any[]>(
+          `SELECT email, referral_code FROM users WHERE id = $1`, ref.referrer_id
+        );
+        if (referrerData[0]?.email) {
+          const { Resend } = require('resend');
+          const resend = new Resend(process.env.RESEND_API_KEY);
+          const refCode = referrerData[0].referral_code || '';
+          await resend.emails.send({
+            from: 'CELPIP AI Coach <noreply@celpipaicoach.com>',
+            to: referrerData[0].email,
+            subject: '🎉 Your friend subscribed! +7 days Pro for you!',
+            html: `
+              <div style="font-family:Inter,sans-serif;max-width:500px;margin:0 auto;background:#0f0f2e;color:#fff;border-radius:16px;padding:32px">
+                <h1 style="font-size:24px;text-align:center;margin:0 0 16px">🎉 Great News!</h1>
+                <p style="font-size:16px;line-height:1.6;color:#cbd5e1">
+                  Your friend just subscribed to <strong style="color:#a855f7">CELPIP AI Coach Pro</strong>!
+                </p>
+                <div style="background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(236,72,153,0.15));border:1px solid rgba(139,92,246,0.3);border-radius:12px;padding:20px;text-align:center;margin:20px 0">
+                  <p style="font-size:32px;margin:0">+7 days</p>
+                  <p style="color:#4ade80;font-size:14px;margin:4px 0 0">added to your Pro plan</p>
+                </div>
+                <p style="font-size:14px;color:#94a3b8;line-height:1.6">
+                  Keep sharing your link to earn more free days:<br/>
+                  <a href="https://celpipaicoach.com/ref/${refCode}" style="color:#a855f7">celpipaicoach.com/ref/${refCode}</a>
+                </p>
+                <p style="font-size:12px;color:#64748b;margin-top:24px;text-align:center">CELPIP AI Coach — AI-Powered CELPIP Preparation</p>
+              </div>
+            `,
+          });
+          console.log(`📧 Referral reward email sent to ${referrerData[0].email}`);
+        }
+      } catch (emailErr) {
+        console.error('Referral email error (non-fatal):', emailErr);
+      }
+    }
+  } catch (refErr) {
+    console.error('Referral reward error (non-fatal):', refErr);
+  }
 }
 
 async function handleSubscriptionUpdate(subscription: Stripe.Subscription) {
